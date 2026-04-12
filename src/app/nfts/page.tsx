@@ -219,7 +219,6 @@ export default function NftsPage() {
               <Link
                 key={tool.href}
                 href={tool.href}
-                className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
                 <h3 className="text-[var(--color-text)] font-semibold mb-1">{tool.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">
@@ -238,7 +237,6 @@ export default function NftsPage() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >
                 <span className="text-[var(--color-text)] font-semibold">{link.title}</span>
                 <span className="block text-xs text-[var(--color-text-secondary)] mt-1">

@@ -297,7 +297,6 @@ export default function TaxOptimizerPage() {
                 }}
               />
               <input
-                type="number"
                 placeholder="Amount"
                 value={newAmount || ""}
                 onChange={e => setNewAmount(Number(e.target.value))}
@@ -312,11 +311,9 @@ export default function TaxOptimizerPage() {
                 }}
               />
               <input
-                type="number"
                 placeholder="Current Price ($)"
                 value={newCurrentPrice || ""}
                 onChange={e => setNewCurrentPrice(Number(e.target.value))}
-                step="0.01"
                 style={{
                   padding: "10px 14px",
                   borderRadius: 8,
@@ -726,10 +723,8 @@ export default function TaxOptimizerPage() {
               <rect
                 x="180"
                 y={150 - Math.min((taxMetrics.totalUnrealizedLoss / Math.max(taxMetrics.totalUnrealizedGain, taxMetrics.totalUnrealizedLoss, 1)) * 100, 100)}
-                width="50"
                 height={Math.min((taxMetrics.totalUnrealizedLoss / Math.max(taxMetrics.totalUnrealizedGain, taxMetrics.totalUnrealizedLoss, 1)) * 100, 100)}
                 fill="#ef4444"
-                opacity="0.8"
               />
 
               {/* Labels */}

@@ -514,10 +514,8 @@ export default function ExchangeFeesPage() {
           <div className="flex items-center gap-4">
             <label className="text-[var(--color-text)] font-medium whitespace-nowrap">Single Trade ($):</label>
             <input
-              type="number"
               value={tradeAmount}
               onChange={(e) => setTradeAmount(Number(e.target.value))}
-              className="flex-1 px-4 py-2 bg-gray-700 text-[var(--color-text)] rounded-lg border border-gray-600 focus:border-blue-500 focus:outline-none"
             />
             <div className="text-right">
               <div className="text-gray-400 text-sm">Monthly Volume</div>
@@ -569,8 +567,6 @@ export default function ExchangeFeesPage() {
               onClick={() => setSortBy('trust')}
               className={`px-4 py-2 rounded-lg font-medium transition-all ${
                 sortBy === 'trust'
-                  ? 'bg-blue-600 text-[var(--color-text)]'
-                  : 'bg-gray-700 text-gray-300 hover:bg-gray-600'
               }`}
             >
               Most Trusted
@@ -633,7 +629,6 @@ export default function ExchangeFeesPage() {
                         textAnchor="end"
                         fill="#fff"
                         fontSize="13"
-                        fontFamily="Arial"
                         fontWeight="bold"
                       >
                         {item.name}
@@ -642,10 +637,6 @@ export default function ExchangeFeesPage() {
                       <text
                         x={160 + barWidth}
                         y={y + 22}
-                        fill="#fff"
-                        fontSize="13"
-                        fontFamily="Arial"
-                        fontWeight="bold"
                       >
                         ${item.totalFees.toFixed(2)}
                       </text>

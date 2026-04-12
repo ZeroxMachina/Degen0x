@@ -116,19 +116,16 @@ export default function KaitoInfoFiGuidePage() {
           AI & InfoFi
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#3b82f620", color: "#3b82f6" }}
         >
           Intermediate
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#22c55e20", color: "#22c55e" }}
         >
           Updated March 2026
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#ef444420", color: "#ef4444" }}
         >
           🔥 Trending Now
@@ -210,11 +207,9 @@ export default function KaitoInfoFiGuidePage() {
 
       {/* Table of Contents */}
       <div
-        className="glass rounded-xl p-5 mb-8"
         style={{ border: "1px solid var(--color-border)" }}
       >
         <h2
-          className="text-sm font-extrabold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           📋 Table of Contents
@@ -475,7 +470,6 @@ export default function KaitoInfoFiGuidePage() {
           5. The Polymarket Partnership (March 2026)
         </h2>
         <div
-          className="glass rounded-xl p-5 mb-6"
           style={{ borderLeft: "4px solid #22c55e" }}
         >
           <p className="text-sm font-bold mb-1" style={{ color: "#22c55e" }}>📰 Breaking — March 2026</p>
@@ -574,7 +568,6 @@ export default function KaitoInfoFiGuidePage() {
           ].map((opt) => (
             <div
               key={opt.step}
-              className="glass rounded-xl p-5 flex gap-4"
               style={{ border: `1px solid ${opt.color}30` }}
             >
               <div className="text-2xl font-black shrink-0 mt-1" style={{ color: opt.color }}>
@@ -600,7 +593,6 @@ export default function KaitoInfoFiGuidePage() {
         </h2>
 
         <div
-          className="glass rounded-xl p-5 mb-6"
           style={{ borderLeft: "4px solid #f59e0b" }}
         >
           <h3 className="text-sm font-bold mb-4" style={{ color: "#f59e0b" }}>
@@ -646,7 +638,6 @@ export default function KaitoInfoFiGuidePage() {
         </div>
 
         <div
-          className="rounded-xl p-4"
           style={{ background: "#161b22", border: "1px solid #30363d" }}
         >
           <p className="text-xs" style={{ color: "#8b949e", lineHeight: "1.6" }}>
@@ -693,7 +684,6 @@ export default function KaitoInfoFiGuidePage() {
           ].map(({ q, a }) => (
             <div
               key={q}
-              className="glass rounded-xl p-5"
               style={{ border: "1px solid var(--color-border)" }}
             >
               <h3 className="font-bold text-sm mb-2" style={{ color: "var(--color-text)" }}>
@@ -780,7 +770,6 @@ export default function KaitoInfoFiGuidePage() {
           </Link>
           <Link
             href="/prices"
-            className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             Live Prices

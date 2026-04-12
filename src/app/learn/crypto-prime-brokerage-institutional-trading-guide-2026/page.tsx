@@ -159,7 +159,6 @@ export default function Page() {
               border: '1px solid #30363d',
               borderRadius: '24px',
               fontSize: '13px',
-              color: '#8b949e'
             }}
     >
               Prime Brokerage
@@ -170,7 +169,6 @@ export default function Page() {
               border: '1px solid #30363d',
               borderRadius: '24px',
               fontSize: '13px',
-              color: '#8b949e'
             }}
     >
               Trading
@@ -618,7 +616,6 @@ export default function Page() {
           border: '1px solid #30363d',
           borderRadius: '8px',
           padding: '24px',
-          marginBottom: '40px'
         }}
     >
           <h2 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '16px', color: '#e6edf3' }}>Related Reading</h2>

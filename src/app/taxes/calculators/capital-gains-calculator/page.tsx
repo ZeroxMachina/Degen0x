@@ -74,11 +74,9 @@ export default function CapitalGainsCalculatorPage() {
               Sell Price (per unit)
             </label>
             <input
-              type="number"
               value={sellPrice}
               onChange={(e) => setSellPrice(e.target.value)}
               placeholder="50000"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -87,12 +85,10 @@ export default function CapitalGainsCalculatorPage() {
               Quantity
             </label>
             <input
-              type="number"
               value={quantity}
               onChange={(e) => setQuantity(e.target.value)}
               placeholder="0.5"
               step="any"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -102,11 +98,9 @@ export default function CapitalGainsCalculatorPage() {
                 Buy Fees
               </label>
               <input
-                type="number"
                 value={buyFee}
                 onChange={(e) => setBuyFee(e.target.value)}
                 placeholder="0"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
               />
             </div>
             <div>
@@ -114,11 +108,8 @@ export default function CapitalGainsCalculatorPage() {
                 Sell Fees
               </label>
               <input
-                type="number"
                 value={sellFee}
                 onChange={(e) => setSellFee(e.target.value)}
-                placeholder="0"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
               />
             </div>
           </div>
@@ -130,7 +121,6 @@ export default function CapitalGainsCalculatorPage() {
             <select
               value={holdingPeriod}
               onChange={(e) => setHoldingPeriod(e.target.value as "short" | "long")}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             >
               <option value="short">Short-Term (under 1 year)</option>
               <option value="long">Long-Term (over 1 year)</option>
@@ -144,7 +134,6 @@ export default function CapitalGainsCalculatorPage() {
             <select
               value={taxBracket}
               onChange={(e) => setTaxBracket(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             >
               <option value="10">10%</option>
               <option value="12">12%</option>

@@ -123,13 +123,11 @@ export default function CitreaGuidePage() {
           Bitcoin
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#3b82f620", color: "#3b82f6" }}
         >
           Intermediate
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#22c55e20", color: "#22c55e" }}
         >
           Updated March 2026
@@ -208,11 +206,9 @@ export default function CitreaGuidePage() {
 
       {/* Table of Contents */}
       <div
-        className="glass rounded-xl p-5 mb-8"
         style={{ border: "1px solid var(--color-border)" }}
       >
         <h2
-          className="text-sm font-extrabold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           📋 Table of Contents
@@ -401,7 +397,6 @@ export default function CitreaGuidePage() {
         </ul>
 
         <div
-          className="rounded-xl p-5 my-6"
           style={{ background: "#161b22", border: "1px solid #30363d" }}
         >
           <h3 className="text-sm font-bold mb-2" style={{ color: "#f97316" }}>
@@ -474,7 +469,6 @@ export default function CitreaGuidePage() {
         </p>
 
         <div
-          className="rounded-xl p-5 my-6"
           style={{ background: "#161b22", border: "1px solid #30363d" }}
         >
           <h3 className="text-sm font-bold mb-2" style={{ color: "#22c55e" }}>
@@ -530,7 +524,6 @@ export default function CitreaGuidePage() {
           ].map((segment) => (
             <div
               key={segment.category}
-              className="glass rounded-xl p-5"
               style={{ border: `1px solid ${segment.color}40`, borderLeft: `4px solid ${segment.color}` }}
             >
               <h3 className="font-bold text-base mb-2" style={{ color: segment.color }}>
@@ -594,7 +587,6 @@ export default function CitreaGuidePage() {
         </div>
 
         <div
-          className="rounded-xl p-5 my-6"
           style={{ background: "#161b22", border: "1px solid #30363d" }}
         >
           <h3 className="text-sm font-bold mb-2" style={{ color: "#f97316" }}>
@@ -656,7 +648,6 @@ export default function CitreaGuidePage() {
           ].map((risk) => (
             <div
               key={risk.title}
-              className="glass rounded-xl p-5"
               style={{
                 border: "1px solid var(--color-border)",
                 borderLeft: risk.severity === "High" ? "4px solid #ef4444" : risk.severity === "Medium" ? "4px solid #f97316" : "4px solid #22c55e",
@@ -737,7 +728,6 @@ export default function CitreaGuidePage() {
           ].map(({ q, a }) => (
             <div
               key={q}
-              className="glass rounded-xl p-5"
               style={{ border: "1px solid var(--color-border)" }}
             >
               <h3 className="font-bold text-sm mb-2" style={{ color: "var(--color-text)" }}>
@@ -833,7 +823,6 @@ export default function CitreaGuidePage() {
           </Link>
           <Link
             href="/prices"
-            className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             Live Prices

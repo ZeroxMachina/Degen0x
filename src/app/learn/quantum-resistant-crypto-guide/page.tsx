@@ -562,7 +562,6 @@ export default function QuantumResistantCryptoGuide() {
 
             <Link
               href="/learn/crypto-security-masterclass-2026"
-              className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="text-[#79c0ff] font-bold mb-2">Crypto Security Masterclass 2026</h3>
               <p className="text-[#c9d1d9] text-sm">
@@ -572,7 +571,6 @@ export default function QuantumResistantCryptoGuide() {
 
             <Link
               href="/tools/wallet-analyzer"
-              className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="text-[#79c0ff] font-bold mb-2">Wallet Analyzer Tool</h3>
               <p className="text-[#c9d1d9] text-sm">
@@ -582,7 +580,6 @@ export default function QuantumResistantCryptoGuide() {
 
             <Link
               href="/tools/wallet-security-audit"
-              className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="text-[#79c0ff] font-bold mb-2">Wallet Security Audit</h3>
               <p className="text-[#c9d1d9] text-sm">
@@ -592,7 +589,6 @@ export default function QuantumResistantCryptoGuide() {
 
             <Link
               href="/learn/bitcoin-etf-guide"
-              className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="text-[#79c0ff] font-bold mb-2">Bitcoin ETF Guide 2026</h3>
               <p className="text-[#c9d1d9] text-sm">

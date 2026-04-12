@@ -691,7 +691,6 @@ export default function RegulatoryMapPage() {
                   <select
                     value={selectedStatus}
                     onChange={(e) => setSelectedStatus(e.target.value)}
-                    className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded text-gray-100 focus:outline-none focus:border-blue-500"
                   >
                     {statuses.map((status) => (
                       <option key={status} value={status}>
@@ -707,7 +706,6 @@ export default function RegulatoryMapPage() {
                   <select
                     value={selectedTaxTreatment}
                     onChange={(e) => setSelectedTaxTreatment(e.target.value)}
-                    className="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded text-gray-100 focus:outline-none focus:border-blue-500"
                   >
                     {taxTreatments.map((treatment) => (
                       <option key={treatment} value={treatment}>

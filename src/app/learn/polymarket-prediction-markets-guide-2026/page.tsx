@@ -713,21 +713,18 @@ export default function PolymarketGuidePage() {
             </a>
             <a
               href="/learn/defi-points-airdrop-farming-guide-2026"
-              className="p-4 bg-[#161b22] border border-[#30363d] rounded hover:border-[#58a6ff] transition-colors"
             >
               <div className="font-bold text-[#58a6ff] mb-2">DeFi Points & Airdrop Farming Guide</div>
               <div className="text-sm text-[#8b949e]">How to position for airdrops and token distributions</div>
             </a>
             <a
               href="/learn/crypto-risk-management-guide-2026"
-              className="p-4 bg-[#161b22] border border-[#30363d] rounded hover:border-[#58a6ff] transition-colors"
             >
               <div className="font-bold text-[#58a6ff] mb-2">Crypto Risk Management Guide 2026</div>
               <div className="text-sm text-[#8b949e]">Essential strategies for protecting your capital</div>
             </a>
             <a
               href="/learn/stablecoin-comparison"
-              className="p-4 bg-[#161b22] border border-[#30363d] rounded hover:border-[#58a6ff] transition-colors"
             >
               <div className="font-bold text-[#58a6ff] mb-2">Stablecoin Comparison Guide</div>
               <div className="text-sm text-[#8b949e]">Understanding USDC, USDT, DAI, and alternatives</div>

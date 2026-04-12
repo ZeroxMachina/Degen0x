@@ -930,9 +930,7 @@ export default function BitcoinLSTGuidePage() {
                       fontSize: 11,
                       color:
                         y.sustainable === "High"
-                          ? "#34d399"
                           : y.sustainable.startsWith("Medium–High")
-                          ? "#86efac"
                           : y.sustainable.startsWith("Medium")
                           ? "#fde68a"
                           : "#fca5a5",
@@ -1171,14 +1169,11 @@ export default function BitcoinLSTGuidePage() {
                       marginLeft: "auto",
                       color:
                         risk.severity === "High"
-                          ? "#fca5a5"
                           : risk.severity.startsWith("Medium–High")
                           ? "#fdba74"
                           : risk.severity.startsWith("Medium")
-                          ? "#fde68a"
                           : "#86efac",
                       background:
-                        risk.severity === "High"
                           ? "rgba(252,165,165,0.1)"
                           : risk.severity.startsWith("Medium–High")
                           ? "rgba(253,186,116,0.1)"

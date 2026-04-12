@@ -123,8 +123,6 @@ export default function CryptoCalendarPage() {
               onClick={() => setView('week')}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                 view === 'week'
-                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-400'
-                  : 'bg-[#30363d] text-[#8b949e] hover:bg-[#3d444d]'
               }`}
             >
               <Calendar size={18} />
@@ -134,8 +132,6 @@ export default function CryptoCalendarPage() {
               onClick={() => setView('list')}
               className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
                 view === 'list'
-                  ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-400'
-                  : 'bg-[#30363d] text-[#8b949e] hover:bg-[#3d444d]'
               }`}
             >
               <List size={18} />
@@ -182,7 +178,6 @@ export default function CryptoCalendarPage() {
               <h2 className="text-2xl font-bold text-[#e6edf3] min-w-48 text-center">{monthName}</h2>
               <button
                 onClick={() => setCurrentDate(new Date(currentDate.getFullYear(), currentDate.getMonth() + 1))}
-                className="p-2 hover:bg-[#30363d] rounded-lg transition-colors"
               >
                 <ChevronRight className="text-cyan-400" size={24} />
               </button>

@@ -124,7 +124,6 @@ export default function NewsletterWelcome() {
                 📬 Weekly Digest
               </button>
               <button type="button" onClick={() => setFrequency('daily')}
-                className="px-4 py-2 rounded-lg text-sm font-medium transition-all"
                 style={{
                   background: frequency === 'daily' ? '#6366f120' : 'transparent',
                   color: frequency === 'daily' ? '#818cf8' : '#8b949e',
@@ -210,7 +209,6 @@ export default function NewsletterWelcome() {
             placeholder="your@email.com" required
             className="flex-1 px-5 py-4 rounded-xl outline-none"
             style={{ background: '#161b22', border: '1px solid #30363d', color: '#e6edf3' }} />
-          <button type="submit"
             className="px-8 py-4 rounded-xl font-bold text-white transition-all hover:scale-105"
             style={{ background: 'linear-gradient(135deg, #6366f1, #06b6d4)' }}>
             Join Free

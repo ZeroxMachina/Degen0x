@@ -116,13 +116,11 @@ export default function TokenizedStocksGuidePage() {
             DeFi · RWA
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#3b82f620", color: "#3b82f6" }}
           >
             Intermediate
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Updated March 2026
@@ -206,7 +204,6 @@ export default function TokenizedStocksGuidePage() {
         }}
       >
         <h2
-          className="text-sm font-extrabold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           Table of Contents
@@ -285,7 +282,6 @@ export default function TokenizedStocksGuidePage() {
         {/* Section 2 */}
         <h2
           id="how-it-works"
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           2. How Tokenized Stocks Work On-Chain
@@ -328,7 +324,6 @@ export default function TokenizedStocksGuidePage() {
         {/* Section 3 */}
         <h2
           id="top-protocols"
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           3. Top Protocols for Tokenized Stocks in 2026
@@ -417,7 +412,6 @@ export default function TokenizedStocksGuidePage() {
         {/* Section 4 */}
         <h2
           id="how-to-access"
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           4. How to Access Tokenized Stocks
@@ -450,7 +444,6 @@ export default function TokenizedStocksGuidePage() {
         </ol>
 
         <div
-          className="rounded-xl p-4 my-6"
           style={{
             background: "#161b22",
             border: "1px solid #30363d",
@@ -472,7 +465,6 @@ export default function TokenizedStocksGuidePage() {
         {/* Section 5 */}
         <h2
           id="regulations"
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           5. Regulatory Landscape (March 2026)
@@ -541,7 +533,6 @@ export default function TokenizedStocksGuidePage() {
         {/* Section 6 */}
         <h2
           id="risks"
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           6. Risks to Know Before You Buy
@@ -629,7 +620,6 @@ export default function TokenizedStocksGuidePage() {
         {/* Section 7 */}
         <h2
           id="yield-opportunities"
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           7. Yield Opportunities with Tokenized Equities
@@ -668,7 +658,6 @@ export default function TokenizedStocksGuidePage() {
           ].map((s) => (
             <div
               key={s.strategy}
-              className="rounded-xl p-4"
               style={{
                 background: "var(--glass-bg)",
                 border: "1px solid var(--color-border)",
@@ -727,7 +716,6 @@ export default function TokenizedStocksGuidePage() {
           ].map((item) => (
             <div
               key={item.q}
-              className="rounded-xl p-4"
               style={{
                 background: "var(--glass-bg)",
                 border: "1px solid var(--color-border)",

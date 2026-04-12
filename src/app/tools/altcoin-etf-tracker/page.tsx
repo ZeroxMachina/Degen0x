@@ -200,7 +200,6 @@ export default function AltcoinETFTrackerPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(TOOL_SCHEMA) }}
       />
       <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(FAQ_SCHEMA) }}
       />
 

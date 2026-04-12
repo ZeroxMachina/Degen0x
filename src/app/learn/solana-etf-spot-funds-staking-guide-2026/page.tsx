@@ -1059,7 +1059,6 @@ export default function SolanaETFGuide() {
 
               <Link
                 href="/learn/bitcoin-etf-institutional-guide-2026"
-                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Bitcoin ETF Institutional Guide
@@ -1071,7 +1070,6 @@ export default function SolanaETFGuide() {
 
               <Link
                 href="/learn/crypto-staking-guide-2026"
-                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Crypto Staking Guide 2026
@@ -1083,7 +1081,6 @@ export default function SolanaETFGuide() {
 
               <Link
                 href="/learn/solana-defi-ecosystem-guide-2026"
-                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Solana DeFi Ecosystem Guide
@@ -1095,7 +1092,6 @@ export default function SolanaETFGuide() {
 
               <Link
                 href="/learn/crypto-passive-income-complete-guide-2026"
-                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Crypto Passive Income Guide

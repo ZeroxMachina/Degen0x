@@ -162,13 +162,8 @@ export default function StakingRewardsPage() {
                   Token Price (USD)
                 </label>
                 <input
-                  type="number"
                   value={tokenPrice}
                   onChange={e => setTokenPrice(e.target.value)}
-                  className="w-full p-3 rounded-xl bg-[var(--glass-bg)] border border-[var(--color-border)] text-[var(--color-text)] focus:outline-none focus:border-[var(--color-accent)]"
-                  placeholder="0.00"
-                  min="0"
-                  step="any"
                 />
               </div>
 
@@ -177,12 +172,9 @@ export default function StakingRewardsPage() {
                   Custom APY % <span className="text-[var(--color-text-secondary)] font-normal">(optional)</span>
                 </label>
                 <input
-                  type="number"
                   value={customApy}
                   onChange={e => setCustomApy(e.target.value)}
-                  className="w-full p-3 rounded-xl bg-[var(--glass-bg)] border border-[var(--color-border)] text-[var(--color-text)] focus:outline-none focus:border-[var(--color-accent)]"
                   placeholder={`Default: ${selectedAsset.baseApy}%`}
-                  min="0"
                   max="1000"
                   step="0.1"
                 />

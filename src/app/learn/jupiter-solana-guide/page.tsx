@@ -120,13 +120,11 @@ export default function JupiterSolanaGuidePage() {
             DeFi
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#a855f720", color: "#a855f7" }}
           >
             Solana
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Updated March 2026
@@ -212,7 +210,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           How Jupiter Works: The Aggregator Model
@@ -236,7 +233,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           JUP Token: Governance & Economics
@@ -269,7 +265,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           Jupiter's Core Features Explained
@@ -286,7 +281,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           2. Perpetual Futures (250x Leverage)
@@ -305,7 +299,6 @@ export default function JupiterSolanaGuidePage() {
         </ul>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           3. Limit Orders
@@ -315,7 +308,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           4. Liquid Staking
@@ -325,7 +317,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           5. Lending & Borrowing
@@ -335,7 +326,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           6. Token Launches & Dutch Auctions
@@ -345,7 +335,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           Jupiter vs. Raydium vs. Orca: The Competitive Landscape
@@ -416,14 +405,12 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           Risks: What You Need to Know Before Using Jupiter
         </h2>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           1. Solana Dependency Risk
@@ -433,7 +420,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           2. Smart Contract Risk
@@ -443,7 +429,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           3. High Leverage Risk
@@ -453,7 +438,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           4. Oracle Risk
@@ -463,7 +447,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           5. Token Dilution Risk
@@ -473,7 +456,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           6. Regulatory Risk
@@ -483,14 +465,12 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           How to Get Started on Jupiter
         </h2>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           Step 1: Set Up a Solana Wallet
@@ -500,7 +480,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           Step 2: Visit Jupiter (jup.ag)
@@ -510,7 +489,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           Step 3: Start with a Simple Swap
@@ -520,7 +498,6 @@ export default function JupiterSolanaGuidePage() {
         </p>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           Step 4: Explore Advanced Features
@@ -544,7 +521,6 @@ export default function JupiterSolanaGuidePage() {
         </ul>
 
         <h3
-          className="text-lg font-bold mt-6 mb-2"
           style={{ color: "var(--color-text)" }}
         >
           Key Tips
@@ -568,7 +544,6 @@ export default function JupiterSolanaGuidePage() {
         </ul>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           The Future of Jupiter
@@ -595,7 +570,6 @@ export default function JupiterSolanaGuidePage() {
         </ul>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           Final Thoughts: Is Jupiter Worth Using?

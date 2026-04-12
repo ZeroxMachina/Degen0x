@@ -113,13 +113,9 @@ export default function ProfitLossCalculatorPage() {
           <div>
             <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Sell Price (USD)</label>
             <input
-              type="number"
               value={sellPrice}
               onChange={(e) => setSellPrice(e.target.value)}
               placeholder="45000"
-              min="0"
-              step="any"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
             />
           </div>
 
@@ -127,12 +123,9 @@ export default function ProfitLossCalculatorPage() {
             <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Amount</label>
             <div className="flex gap-2">
               <input
-                type="number"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}
                 placeholder="1"
-                min="0"
-                step="any"
                 className="flex-1 rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
               />
               <button
@@ -151,27 +144,18 @@ export default function ProfitLossCalculatorPage() {
             <div>
               <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Buy Fee (%)</label>
               <input
-                type="number"
                 value={buyFeePercent}
                 onChange={(e) => setBuyFeePercent(e.target.value)}
                 placeholder="0.1"
-                min="0"
                 max="100"
                 step="0.01"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
             <div>
               <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Sell Fee (%)</label>
               <input
-                type="number"
                 value={sellFeePercent}
                 onChange={(e) => setSellFeePercent(e.target.value)}
-                placeholder="0.1"
-                min="0"
-                max="100"
-                step="0.01"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
           </div>
@@ -193,7 +177,6 @@ export default function ProfitLossCalculatorPage() {
                 </button>
               ))}
               <input
-                type="number"
                 value={leverage}
                 onChange={(e) => setLeverage(e.target.value)}
                 min="1"

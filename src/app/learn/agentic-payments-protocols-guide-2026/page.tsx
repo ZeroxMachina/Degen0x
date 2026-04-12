@@ -855,7 +855,6 @@ export default function AgenticPaymentsProtocolsGuide() {
               </Link>
               <Link
                 href="/learn/ai-crypto-agents-guide"
-                className="rounded-lg bg-[#161b22] p-4 border border-[#30363d] hover:border-[#58a6ff] transition-colors"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">AI Agents in Crypto</h3>
                 <p className="text-[#8b949e] text-sm">
@@ -864,7 +863,6 @@ export default function AgenticPaymentsProtocolsGuide() {
               </Link>
               <Link
                 href="/learn/ai-agent-wallets-autonomous-payments-guide-2026"
-                className="rounded-lg bg-[#161b22] p-4 border border-[#30363d] hover:border-[#58a6ff] transition-colors"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">Agent Wallets & Key Management</h3>
                 <p className="text-[#8b949e] text-sm">
@@ -873,7 +871,6 @@ export default function AgenticPaymentsProtocolsGuide() {
               </Link>
               <Link
                 href="/learn/defai-guide-2026"
-                className="rounded-lg bg-[#161b22] p-4 border border-[#30363d] hover:border-[#58a6ff] transition-colors"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">DeFAI Guide 2026</h3>
                 <p className="text-[#8b949e] text-sm">
@@ -882,7 +879,6 @@ export default function AgenticPaymentsProtocolsGuide() {
               </Link>
               <Link
                 href="/learn/ai-agent-identity-nhi-guide"
-                className="rounded-lg bg-[#161b22] p-4 border border-[#30363d] hover:border-[#58a6ff] transition-colors"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">Agent Identity & NHI</h3>
                 <p className="text-[#8b949e] text-sm">
@@ -891,7 +887,6 @@ export default function AgenticPaymentsProtocolsGuide() {
               </Link>
               <Link
                 href="/learn/solana-developer-platform-sdp-guide"
-                className="rounded-lg bg-[#161b22] p-4 border border-[#30363d] hover:border-[#58a6ff] transition-colors"
               >
                 <h3 className="font-bold text-[#58a6ff] mb-2">Solana Developer Platform (SDP)</h3>
                 <p className="text-[#8b949e] text-sm">

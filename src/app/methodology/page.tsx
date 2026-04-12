@@ -456,7 +456,6 @@ export default function MethodologyPage() {
         </section>
       
       <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",

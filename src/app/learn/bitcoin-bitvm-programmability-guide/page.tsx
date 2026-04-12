@@ -782,7 +782,6 @@ export default function BitVMProgrammabilityGuide() {
 
             <Link
               href="/learn/btcfi-bitcoin-defi-guide-2026"
-              className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 hover:border-[#58a6ff] transition-colors group"
             >
               <h3 className="text-[#58a6ff] font-semibold group-hover:text-[#06b6d4] transition-colors">
                 BTCFi: Bitcoin DeFi Guide 2026 →
@@ -794,7 +793,6 @@ export default function BitVMProgrammabilityGuide() {
 
             <Link
               href="/learn/zero-knowledge-proofs"
-              className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 hover:border-[#58a6ff] transition-colors group"
             >
               <h3 className="text-[#58a6ff] font-semibold group-hover:text-[#06b6d4] transition-colors">
                 Zero-Knowledge Proofs Guide →
@@ -806,7 +804,6 @@ export default function BitVMProgrammabilityGuide() {
 
             <Link
               href="/tools/bridge-aggregator"
-              className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 hover:border-[#58a6ff] transition-colors group"
             >
               <h3 className="text-[#58a6ff] font-semibold group-hover:text-[#06b6d4] transition-colors">
                 Bridge Aggregator Tool →

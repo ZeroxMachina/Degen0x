@@ -97,7 +97,6 @@ export default function MorphoProtocolGuidePage() {
               DeFi
             </span>
             <span
-              className="px-3 py-1 rounded-full text-sm font-medium"
               style={{ backgroundColor: '#161b22', color: '#8b949e', border: '1px solid #30363d' }}
             >
               Intermediate
@@ -230,7 +229,6 @@ export default function MorphoProtocolGuidePage() {
         {/* How Morpho Works */}
         <section id="how-morpho-works" className="mb-12">
           <h2
-            className="text-3xl font-bold mb-6"
             style={{
               background: 'linear-gradient(135deg, #79c0ff 0%, #a5d6ff 50%, #cae8ff 100%)',
               WebkitBackgroundClip: 'text',
@@ -263,7 +261,6 @@ export default function MorphoProtocolGuidePage() {
         {/* Morpho V2 */}
         <section id="morpho-v2" className="mb-12">
           <h2
-            className="text-3xl font-bold mb-6"
             style={{
               background: 'linear-gradient(135deg, #79c0ff 0%, #a5d6ff 50%, #cae8ff 100%)',
               WebkitBackgroundClip: 'text',
@@ -296,7 +293,6 @@ export default function MorphoProtocolGuidePage() {
         {/* Key Metrics */}
         <section id="key-metrics" className="mb-12">
           <h2
-            className="text-3xl font-bold mb-6"
             style={{
               background: 'linear-gradient(135deg, #79c0ff 0%, #a5d6ff 50%, #cae8ff 100%)',
               WebkitBackgroundClip: 'text',
@@ -329,7 +325,6 @@ export default function MorphoProtocolGuidePage() {
         {/* Institutional Adoption */}
         <section id="institutional-adoption" className="mb-12">
           <h2
-            className="text-3xl font-bold mb-6"
             style={{
               background: 'linear-gradient(135deg, #79c0ff 0%, #a5d6ff 50%, #cae8ff 100%)',
               WebkitBackgroundClip: 'text',
@@ -362,7 +357,6 @@ export default function MorphoProtocolGuidePage() {
         {/* Comparison */}
         <section id="comparison" className="mb-12">
           <h2
-            className="text-3xl font-bold mb-6"
             style={{
               background: 'linear-gradient(135deg, #79c0ff 0%, #a5d6ff 50%, #cae8ff 100%)',
               WebkitBackgroundClip: 'text',
@@ -395,7 +389,6 @@ export default function MorphoProtocolGuidePage() {
         {/* Risks */}
         <section id="risks" className="mb-12">
           <h2
-            className="text-3xl font-bold mb-6"
             style={{
               background: 'linear-gradient(135deg, #79c0ff 0%, #a5d6ff 50%, #cae8ff 100%)',
               WebkitBackgroundClip: 'text',
@@ -438,7 +431,6 @@ export default function MorphoProtocolGuidePage() {
         {/* FAQ */}
         <section id="faq" className="mb-12">
           <h2
-            className="text-3xl font-bold mb-6"
             style={{
               background: 'linear-gradient(135deg, #79c0ff 0%, #a5d6ff 50%, #cae8ff 100%)',
               WebkitBackgroundClip: 'text',
@@ -465,7 +457,6 @@ export default function MorphoProtocolGuidePage() {
 
             {/* FAQ 2 */}
             <div
-              className="p-6 rounded-lg border"
               style={{ backgroundColor: '#161b22', borderColor: '#30363d' }}
             >
               <h3 className="text-xl font-semibold mb-3">
@@ -478,7 +469,6 @@ export default function MorphoProtocolGuidePage() {
 
             {/* FAQ 3 */}
             <div
-              className="p-6 rounded-lg border"
               style={{ backgroundColor: '#161b22', borderColor: '#30363d' }}
             >
               <h3 className="text-xl font-semibold mb-3">
@@ -491,7 +481,6 @@ export default function MorphoProtocolGuidePage() {
 
             {/* FAQ 4 */}
             <div
-              className="p-6 rounded-lg border"
               style={{ backgroundColor: '#161b22', borderColor: '#30363d' }}
             >
               <h3 className="text-xl font-semibold mb-3">
@@ -504,7 +493,6 @@ export default function MorphoProtocolGuidePage() {
 
             {/* FAQ 5 */}
             <div
-              className="p-6 rounded-lg border"
               style={{ backgroundColor: '#161b22', borderColor: '#30363d' }}
             >
               <h3 className="text-xl font-semibold mb-3">
@@ -517,7 +505,6 @@ export default function MorphoProtocolGuidePage() {
 
             {/* FAQ 6 */}
             <div
-              className="p-6 rounded-lg border"
               style={{ backgroundColor: '#161b22', borderColor: '#30363d' }}
             >
               <h3 className="text-xl font-semibold mb-3">
@@ -553,7 +540,6 @@ export default function MorphoProtocolGuidePage() {
 
             <Link
               href="/tools/defi-yields"
-              className="p-4 rounded-lg border transition-colors"
               style={{
                 backgroundColor: '#161b22',
                 borderColor: '#30363d',
@@ -570,7 +556,6 @@ export default function MorphoProtocolGuidePage() {
 
             <Link
               href="/tools/lending-comparison"
-              className="p-4 rounded-lg border transition-colors"
               style={{
                 backgroundColor: '#161b22',
                 borderColor: '#30363d',
@@ -587,7 +572,6 @@ export default function MorphoProtocolGuidePage() {
 
             <Link
               href="/learn/advanced-defi-strategies"
-              className="p-4 rounded-lg border transition-colors"
               style={{
                 backgroundColor: '#161b22',
                 borderColor: '#30363d',

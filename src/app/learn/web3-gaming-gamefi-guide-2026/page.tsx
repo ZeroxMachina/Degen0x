@@ -178,26 +178,21 @@ export default function Web3GamingGuide() {
       border: "1px solid #30363d",
       borderRadius: "12px",
       padding: "24px",
-      marginBottom: "32px"
     },
     gameCardTitle: {
       fontSize: "20px",
       fontWeight: "700",
       color: "#58a6ff",
-      marginBottom: "12px"
     },
     gameCardMeta: {
       color: "#8b949e",
       fontSize: "13px",
-      marginBottom: "12px"
     },
     ul: {
       marginLeft: "24px",
-      marginBottom: "16px"
     },
     li: {
       marginBottom: "8px",
-      color: "#e6edf3"
     },
     statsGrid: {
       display: "grid",
@@ -228,13 +223,11 @@ export default function Web3GamingGuide() {
       border: "1px solid #30363d",
       borderRadius: "12px",
       padding: "24px",
-      marginBottom: "16px"
     },
     faqQuestion: {
       fontSize: "16px",
       fontWeight: "700",
       color: "#58a6ff",
-      marginBottom: "12px"
     },
     faqAnswer: {
       fontSize: "15px",

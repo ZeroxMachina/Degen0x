@@ -97,7 +97,6 @@ export default function MPCWalletsGuide() {
             backgroundColor: `${S.text2}20`,
             color: S.text2,
             fontSize: "12px",
-            fontWeight: "600"
           }}>Intermediate</span>
         </div>
 
@@ -430,7 +429,6 @@ export default function MPCWalletsGuide() {
           <div style={{
             display: "grid",
             gridTemplateColumns: "1fr",
-            gap: "16px"
           }}>
             {[
               {
@@ -489,7 +487,6 @@ export default function MPCWalletsGuide() {
                 border: `1px solid ${S.border}`,
                 backgroundColor: expandedFaq === idx ? `${S.primary}08` : "transparent",
                 overflow: "hidden",
-                transition: "all 0.3s ease"
               }}>
                 <button
                   onClick={() => setExpandedFaq(expandedFaq === idx ? null : idx)}

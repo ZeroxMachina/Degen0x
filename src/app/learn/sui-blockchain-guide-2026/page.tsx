@@ -99,7 +99,6 @@ export default function SuiBlockchainGuide() {
             borderRadius: '20px',
             fontSize: '12px',
             fontWeight: '600',
-            textTransform: 'uppercase'
           }}>
             Infrastructure
           </span>
@@ -376,7 +375,6 @@ export default function SuiBlockchainGuide() {
 
         <div style={{
           overflowX: 'auto',
-          margin: '24px 0'
         }}>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '14px', minWidth: '600px' }}>
             <thead>
@@ -608,7 +606,6 @@ export default function SuiBlockchainGuide() {
                 cursor: 'pointer',
                 transition: 'all 0.2s',
                 textDecoration: 'none',
-                minHeight: '44px'
               }} onMouseEnter={(e) => e.currentTarget.style.borderColor = S.cyan} onMouseLeave={(e) => e.currentTarget.style.borderColor = S.border}>
                 <p style={{ margin: '0 0 8px 0', fontSize: '14px', color: S.text2, textTransform: 'uppercase' }}>
                   Performance
@@ -627,7 +624,6 @@ export default function SuiBlockchainGuide() {
                 cursor: 'pointer',
                 transition: 'all 0.2s',
                 textDecoration: 'none',
-                minHeight: '44px'
               }} onMouseEnter={(e) => e.currentTarget.style.borderColor = S.cyan} onMouseLeave={(e) => e.currentTarget.style.borderColor = S.border}>
                 <p style={{ margin: '0 0 8px 0', fontSize: '14px', color: S.text2, textTransform: 'uppercase' }}>
                   UX
@@ -646,7 +642,6 @@ export default function SuiBlockchainGuide() {
                 cursor: 'pointer',
                 transition: 'all 0.2s',
                 textDecoration: 'none',
-                minHeight: '44px'
               }} onMouseEnter={(e) => e.currentTarget.style.borderColor = S.cyan} onMouseLeave={(e) => e.currentTarget.style.borderColor = S.border}>
                 <p style={{ margin: '0 0 8px 0', fontSize: '14px', color: S.text2, textTransform: 'uppercase' }}>
                   Risk
@@ -665,7 +660,6 @@ export default function SuiBlockchainGuide() {
                 cursor: 'pointer',
                 transition: 'all 0.2s',
                 textDecoration: 'none',
-                minHeight: '44px'
               }} onMouseEnter={(e) => e.currentTarget.style.borderColor = S.cyan} onMouseLeave={(e) => e.currentTarget.style.borderColor = S.border}>
                 <p style={{ margin: '0 0 8px 0', fontSize: '14px', color: S.text2, textTransform: 'uppercase' }}>
                   Tools

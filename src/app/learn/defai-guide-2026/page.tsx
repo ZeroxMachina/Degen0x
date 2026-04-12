@@ -107,13 +107,11 @@ export default function DeFAIGuidePage() {
           AI &amp; DeFi
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#3b82f620", color: "#3b82f6" }}
         >
           Intermediate
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#22c55e20", color: "#22c55e" }}
         >
           Updated March 2026
@@ -196,11 +194,9 @@ export default function DeFAIGuidePage() {
 
       {/* Table of Contents */}
       <div
-        className="glass rounded-xl p-5 mb-8"
         style={{ border: "1px solid var(--color-border)" }}
       >
         <h2
-          className="text-sm font-extrabold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           📋 Table of Contents
@@ -306,7 +302,6 @@ export default function DeFAIGuidePage() {
       {/* Section 2 */}
       <section id="how-defai-agents-work" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           2. How DeFAI Agents Work
@@ -399,7 +394,6 @@ export default function DeFAIGuidePage() {
       {/* Section 3 */}
       <section id="use-cases" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           3. Top DeFAI Use Cases
@@ -467,7 +461,6 @@ export default function DeFAIGuidePage() {
       {/* Section 4 */}
       <section id="top-protocols" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           4. Top DeFAI Protocols in 2026
@@ -544,7 +537,6 @@ export default function DeFAIGuidePage() {
           ].map((p) => (
             <div
               key={p.name}
-              className="glass rounded-xl p-5"
               style={{ border: `1px solid ${p.color}40` }}
             >
               <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
@@ -570,7 +562,6 @@ export default function DeFAIGuidePage() {
                     {p.tag}
                   </span>
                   <span
-                    className="text-xs px-2 py-1 rounded-full font-bold"
                     style={{ background: "var(--glass-bg)", color: "var(--color-text-secondary)", border: "1px solid var(--color-border)" }}
                   >
                     {p.tvl}
@@ -609,7 +600,6 @@ export default function DeFAIGuidePage() {
       {/* Section 5 */}
       <section id="get-started" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           5. How to Get Started with DeFAI
@@ -692,7 +682,6 @@ export default function DeFAIGuidePage() {
       {/* Section 6 — Risks */}
       <section id="risks" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           6. Risks and Limitations
@@ -760,7 +749,6 @@ export default function DeFAIGuidePage() {
 
         {/* Disclaimer */}
         <div
-          className="rounded-xl p-4"
           style={{ background: "#161b22", border: "1px solid #30363d" }}
         >
           <p className="text-xs" style={{ color: "#8b949e", lineHeight: "1.6" }}>
@@ -775,7 +763,6 @@ export default function DeFAIGuidePage() {
       {/* FAQ */}
       <section id="faq" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           7. Frequently Asked Questions
@@ -810,7 +797,6 @@ export default function DeFAIGuidePage() {
           ].map(({ q, a }) => (
             <div
               key={q}
-              className="glass rounded-xl p-5"
               style={{ border: "1px solid var(--color-border)" }}
             >
               <h3
@@ -820,7 +806,6 @@ export default function DeFAIGuidePage() {
                 {q}
               </h3>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
                 {a}
@@ -915,7 +900,6 @@ export default function DeFAIGuidePage() {
           </Link>
           <Link
             href="/defi-yields"
-            className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             DeFi Yields

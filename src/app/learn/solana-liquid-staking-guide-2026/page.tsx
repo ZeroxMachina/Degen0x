@@ -157,14 +157,12 @@ export default function SolanaLiquidStakingGuide() {
       description: "Provide LST+SOL liquidity to Orca/Raydium pools",
       expectedYield: "8-20% APY",
       risk: "High - impermanent loss if depeg",
-      complexity: "Intermediate"
     },
     {
       name: "Pure Staking (Set & Forget)",
       description: "Stake SOL, convert to LST, hold for compound rewards",
       expectedYield: "6-8.5% APY",
       risk: "Low - validator & slashing only",
-      complexity: "Beginner"
     }
   ];
 

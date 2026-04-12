@@ -89,7 +89,6 @@ export default function BestInvestingOverviewPage() {
             <Link
               key={cat.slug}
               href={`/investing/best/${cat.slug}`}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)] mb-3">{cat.description}</p>
@@ -110,7 +109,6 @@ export default function BestInvestingOverviewPage() {
             <Link
               key={cat.slug}
               href={`/investing/best/${cat.slug}`}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{cat.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)] mb-3">{cat.description}</p>

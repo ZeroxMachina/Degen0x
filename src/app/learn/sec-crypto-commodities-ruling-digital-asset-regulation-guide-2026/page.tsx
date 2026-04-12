@@ -891,7 +891,6 @@ export default function SECCFTCRulingGuide() {
 
               <Link
                 href="/learn/crypto-etfs-complete-guide-2026"
-                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Complete Crypto ETF Guide 2026
@@ -903,7 +902,6 @@ export default function SECCFTCRulingGuide() {
 
               <Link
                 href="/learn/crypto-staking-guide-2026"
-                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Crypto Staking Guide 2026
@@ -915,7 +913,6 @@ export default function SECCFTCRulingGuide() {
 
               <Link
                 href="/learn/clarity-act-stablecoin-yield-regulation-guide-2026"
-                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   CLARITY Act & Stablecoin Regulation Guide
@@ -927,7 +924,6 @@ export default function SECCFTCRulingGuide() {
 
               <Link
                 href="/learn/mica-regulation-eu-crypto-compliance-guide-2026"
-                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   MiCA EU Crypto Regulation Compliance Guide

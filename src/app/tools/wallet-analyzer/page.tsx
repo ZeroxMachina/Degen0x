@@ -806,19 +806,12 @@ export default function WalletAnalyzer() {
                             cx="60"
                             cy="60"
                             r="50"
-                            fill="none"
                             stroke="var(--color-border)"
                             strokeWidth="8"
                           />
                           <circle
-                            cx="60"
-                            cy="60"
-                            r="50"
-                            fill="none"
                             stroke={metric.color}
-                            strokeWidth="8"
                             strokeDasharray={`${(metric.score / 100) * 314} 314`}
-                            strokeLinecap="round"
                           />
                         </svg>
                         <div style={{

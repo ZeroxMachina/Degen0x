@@ -107,19 +107,16 @@ export default function EthereumL2ComparisonGuidePage() {
             Ethereum
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#6366f120", color: "#6366f1" }}
           >
             Layer 2
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Beginner
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#0ea5e920", color: "#0ea5e9" }}
           >
             Updated March 2026
@@ -297,7 +294,6 @@ export default function EthereumL2ComparisonGuidePage() {
           </p>
         </div>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The Dencun upgrade in March 2024 introduced EIP-4844 blobs, which
@@ -321,13 +317,11 @@ export default function EthereumL2ComparisonGuidePage() {
       {/* ── Section 2 ── */}
       <section className="mb-10" id="optimistic-vs-zk">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           2. Optimistic vs ZK Rollups — What&apos;s the Difference?
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Every Ethereum L2 is some form of rollup — it executes transactions off-chain
@@ -364,17 +358,14 @@ export default function EthereumL2ComparisonGuidePage() {
         </div>
 
         <div
-          className="glass rounded-xl p-5 mb-4"
           style={{ border: "1px solid var(--color-border)" }}
         >
           <h3
-            className="text-lg font-bold mb-3"
             style={{ color: "#8b5cf6" }}
           >
             ZK Rollups (zkSync Era, Starknet, Scroll, Linea)
           </h3>
           <p
-            className="mb-2"
             style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
           >
             ZK rollups generate <strong style={{ color: "var(--color-text)" }}>cryptographic proofs</strong> (called
@@ -395,13 +386,11 @@ export default function EthereumL2ComparisonGuidePage() {
       {/* ── Section 3: Comparison Table ── */}
       <section className="mb-10" id="comparison-table">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           3. The Complete L2 Comparison Table
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Here&apos;s every major Ethereum L2 compared on the metrics that matter most:
@@ -517,7 +506,6 @@ export default function EthereumL2ComparisonGuidePage() {
           </table>
         </div>
         <p
-          className="text-xs"
           style={{ color: "var(--color-text-secondary)" }}
         >
           Data from L2BEAT, DefiLlama, and official network dashboards. TVL and throughput figures are approximate and change daily.
@@ -527,13 +515,11 @@ export default function EthereumL2ComparisonGuidePage() {
       {/* ── Section 4: Arbitrum ── */}
       <section className="mb-10" id="arbitrum">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           4. Arbitrum One — The DeFi Capital
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Arbitrum is the largest general-purpose Ethereum L2 by TVL, with L2BEAT
@@ -542,7 +528,6 @@ export default function EthereumL2ComparisonGuidePage() {
           about $0.004 — making it the cheapest optimistic rollup for DeFi activity.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The ecosystem runs deep: GMX, Camelot, Radiant Capital, Pendle (Arbitrum deployment),
@@ -564,13 +549,11 @@ export default function EthereumL2ComparisonGuidePage() {
       {/* ── Section 5: Base ── */}
       <section className="mb-10" id="base">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           5. Base — Consumer Crypto&apos;s Home Chain
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Base has been the breakout L2 story. Built by Coinbase using the OP Stack, it
@@ -579,7 +562,6 @@ export default function EthereumL2ComparisonGuidePage() {
           It now runs at approximately 159 TPS, up from just 5 TPS in 2024.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           What drives Base is consumer adoption. Coinbase&apos;s distribution channel funnels
@@ -600,13 +582,11 @@ export default function EthereumL2ComparisonGuidePage() {
       {/* ── Section 6: Optimism ── */}
       <section className="mb-10" id="optimism">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           6. Optimism — The Superchain Architect
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Optimism&apos;s individual network holds around $8 billion in TVL, but the real
@@ -615,7 +595,6 @@ export default function EthereumL2ComparisonGuidePage() {
           with 3,044 active contributors and nearly 173,000 commits.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The OP Stack has become the dominant open-source rollup framework. Chains built
@@ -637,13 +616,11 @@ export default function EthereumL2ComparisonGuidePage() {
       {/* ── Section 7: zkSync ── */}
       <section className="mb-10" id="zksync">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           7. zkSync Era — ZK Meets Full EVM Compatibility
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           zkSync Era is the largest ZK rollup by activity, offering full EVM compatibility
@@ -652,7 +629,6 @@ export default function EthereumL2ComparisonGuidePage() {
           over Starknet&apos;s Cairo-first approach.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           A standout feature is native account abstraction — every account on zkSync Era
@@ -675,13 +651,11 @@ export default function EthereumL2ComparisonGuidePage() {
       {/* ── Section 8: Starknet ── */}
       <section className="mb-10" id="starknet">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           8. Starknet — The Performance Maximalist
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Starknet takes a different philosophical approach: rather than maximizing EVM
@@ -690,7 +664,6 @@ export default function EthereumL2ComparisonGuidePage() {
           payoff is theoretical throughput that can scale far beyond EVM-equivalent chains.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Starknet leads ZK rollups in TVL at approximately $500 million and has attracted
@@ -711,13 +684,11 @@ export default function EthereumL2ComparisonGuidePage() {
       {/* ── Section 9: Scroll & Linea ── */}
       <section className="mb-10" id="scroll-linea">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           9. Scroll & Linea — The EVM Equivalence Play
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Scroll and Linea represent the &quot;bytecode-equivalent&quot; approach to ZK rollups — they
@@ -726,7 +697,6 @@ export default function EthereumL2ComparisonGuidePage() {
           including the full Solidity toolchain, debugging tools, and testing frameworks.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Scroll has attracted roughly $400 million in TVL with a community-driven ethos and
@@ -748,13 +718,11 @@ export default function EthereumL2ComparisonGuidePage() {
       {/* ── Section 10: Which L2? ── */}
       <section className="mb-10" id="which-l2">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           10. Which L2 Should You Use?
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The right L2 depends on what you&apos;re doing. Here&apos;s a quick decision framework:
@@ -805,7 +773,6 @@ export default function EthereumL2ComparisonGuidePage() {
                 &quot;{item.q}&quot;
               </p>
               <p
-                className="text-sm font-bold"
                 style={{ color: item.color }}
               >
                 → {item.a}
@@ -892,7 +859,6 @@ export default function EthereumL2ComparisonGuidePage() {
 
       {/* Related Links */}
       <div
-        className="rounded-xl p-5"
         style={{
           background: "#161b22",
           border: "1px solid #30363d",
@@ -900,7 +866,6 @@ export default function EthereumL2ComparisonGuidePage() {
         }}
       >
         <h2
-          className="text-sm font-bold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           Related Guides
@@ -918,7 +883,6 @@ export default function EthereumL2ComparisonGuidePage() {
             <Link
               key={link.href}
               href={link.href}
-              className="block hover:underline"
               style={{ color: "#58a6ff" }}
             >
               {link.label}

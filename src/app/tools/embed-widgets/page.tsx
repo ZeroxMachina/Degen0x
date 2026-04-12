@@ -181,7 +181,6 @@ function MiniChartPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 flex flex-col gap-3 ${
-        config.theme === "dark" ? "bg-[#1a1a2e] border border-[#2a2a4e]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
@@ -214,7 +213,6 @@ function MarketStatsPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 space-y-3 ${
-        config.theme === "dark" ? "bg-[#1a1a2e] border border-[#2a2a4e]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
@@ -255,7 +253,6 @@ function FearGreedPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 flex flex-col items-center justify-center gap-4 ${
-        config.theme === "dark" ? "bg-[#1a1a2e] border border-[#2a2a4e]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
@@ -273,12 +270,7 @@ function FearGreedPreview({ config }: { config: WidgetConfig }) {
             strokeWidth="8"
           />
           <circle
-            cx="64"
-            cy="64"
-            r="56"
-            fill="none"
             stroke={config.accentColor}
-            strokeWidth="8"
             strokeDasharray="120 352"
             opacity="0.7"
           />
@@ -300,7 +292,6 @@ function PortfolioPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 space-y-3 ${
-        config.theme === "dark" ? "bg-[#1a1a2e] border border-[#2a2a4e]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
@@ -330,7 +321,6 @@ function PortfolioPreview({ config }: { config: WidgetConfig }) {
         </div>
         <div className="w-full bg-gray-700 rounded-full h-2">
           <div
-            className="h-2 rounded-full"
             style={{ width: "35%", backgroundColor: config.accentColor }}
           />
         </div>
@@ -349,7 +339,6 @@ function TrendingCoinsPreview({ config }: { config: WidgetConfig }) {
   return (
     <div
       className={`rounded-lg p-4 space-y-2 overflow-y-auto ${
-        config.theme === "dark" ? "bg-[#1a1a2e] border border-[#2a2a4e]" : "bg-white border border-gray-200"
       }`}
       style={{ width: config.width, height: config.height, borderRadius: `${config.borderRadius}px` }}
     >
@@ -582,12 +571,10 @@ export default function MyComponent() {
                   <div>
                     <label className="text-gray-400 text-sm">Height: {config.height}px</label>
                     <input
-                      type="range"
                       min="100"
                       max="500"
                       value={config.height}
                       onChange={(e) => setConfig((prev) => ({ ...prev, height: parseInt(e.target.value) }))}
-                      className="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer"
                     />
                   </div>
                 </div>
@@ -615,12 +602,10 @@ export default function MyComponent() {
               <div className="mb-6">
                 <label className="block text-[var(--color-text)] font-semibold mb-3">Border Radius: {config.borderRadius}px</label>
                 <input
-                  type="range"
                   min="0"
                   max="20"
                   value={config.borderRadius}
                   onChange={(e) => setConfig((prev) => ({ ...prev, borderRadius: parseInt(e.target.value) }))}
-                  className="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer"
                 />
               </div>
 

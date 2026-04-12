@@ -1077,7 +1077,6 @@ export default function CryptoMarketMakingGuide() {
 
             <Link
               href="/learn/defi-composability"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DeFi Composability
@@ -1090,7 +1089,6 @@ export default function CryptoMarketMakingGuide() {
 
             <Link
               href="/tools/impermanent-loss"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Impermanent Loss Calculator
@@ -1102,7 +1100,6 @@ export default function CryptoMarketMakingGuide() {
 
             <Link
               href="/tools/defi-yields"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DeFi Yields Tracker
@@ -1114,7 +1111,6 @@ export default function CryptoMarketMakingGuide() {
 
             <Link
               href="/tools/dex-aggregator"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DEX Aggregator

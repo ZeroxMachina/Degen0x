@@ -380,7 +380,6 @@ export default function AirdropEligibilityChecker() {
             {walletAddress && (
               <button
                 onClick={handleCopyAddress}
-                className="px-4 py-3 bg-slate-700 hover:bg-slate-600 border border-slate-600 rounded-lg transition-colors flex items-center gap-2"
               >
                 {copiedAddress ? (
                   <>
@@ -504,7 +503,6 @@ export default function AirdropEligibilityChecker() {
               <select
                 value={selectedChain}
                 onChange={(e) => setSelectedChain(e.target.value)}
-                className="w-full bg-slate-700/50 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-blue-500"
               >
                 {CHAINS.map((chain) => (
                   <option key={chain} value={chain}>
@@ -520,7 +518,6 @@ export default function AirdropEligibilityChecker() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as 'value' | 'status' | 'chain')}
-                className="w-full bg-slate-700/50 border border-slate-600 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-blue-500"
               >
                 <option value="value">Value (Highest)</option>
                 <option value="status">Status</option>

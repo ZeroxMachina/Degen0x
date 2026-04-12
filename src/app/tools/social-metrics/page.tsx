@@ -351,8 +351,6 @@ export default function SocialMetricsPage() {
             onClick={() => setActiveCategory(cat)}
             className={`px-3 py-2 rounded-lg text-sm font-semibold transition-all ${
               activeCategory === cat
-                ? "bg-[var(--color-primary)] text-[var(--color-text)]"
-                : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
             }`}
           >
             {cat}
@@ -384,8 +382,6 @@ export default function SocialMetricsPage() {
                 onClick={() => setSortBy(key)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-all ${
                   sortBy === key
-                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
-                    : "glass text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 {labels[key]}

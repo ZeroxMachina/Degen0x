@@ -212,11 +212,9 @@ export default function CryptoWrappedPage() {
                         style={{ background: "var(--color-surface)", border: "1px solid #30363d", color: "var(--color-text)", minWidth: 100 }}
                       />
                       <input
-                        type="number"
                         placeholder={`Buy price $`}
                         value={h.buyPrice}
                         onChange={e => updateHolding(i, "buyPrice", e.target.value)}
-                        className="flex-1 rounded-lg px-3 py-2 text-sm"
                         style={{ background: "var(--color-surface)", border: "1px solid #30363d", color: "var(--color-text)", minWidth: 100 }}
                       />
                       {holdings.length > 1 && (

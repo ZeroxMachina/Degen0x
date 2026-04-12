@@ -334,7 +334,6 @@ export default function IndexFundSimulator() {
               <div style={{ display: 'flex', alignItems: 'center' }}>
                 <span style={{ marginRight: 8, color: 'var(--color-text)' }}>$</span>
                 <input
-                  type="number"
                   value={investmentAmount}
                   onChange={(e) => setInvestmentAmount(parseFloat(e.target.value) || 0)}
                   min={100}

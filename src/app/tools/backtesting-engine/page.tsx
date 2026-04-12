@@ -372,7 +372,6 @@ export default function BacktestingEnginePage() {
                 End Date
               </label>
               <input
-                type="date"
                 value={params1.endDate}
                 onChange={e => setParams1({ ...params1, endDate: e.target.value })}
                 style={{
@@ -622,10 +621,6 @@ export default function BacktestingEnginePage() {
                       Initial Capital 2
                     </label>
                     <input
-                      type="range"
-                      min="1000"
-                      max="100000"
-                      step="1000"
                       value={params2.initialCapital}
                       onChange={e => setParams2({ ...params2, initialCapital: Number(e.target.value) })}
                       style={{ width: "100%", cursor: "pointer" }}

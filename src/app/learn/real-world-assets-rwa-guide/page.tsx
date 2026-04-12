@@ -421,7 +421,6 @@ export default function RWAGuide() {
           </a>
           <a
             href="/learn/ai-depin-crypto-guide"
-            className="p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">AI x DePIN Guide</h4>
             <p className="text-[#8b949e] text-sm">

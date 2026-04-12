@@ -924,7 +924,6 @@ export default function LidoV3stVaultsGuide() {
                       ? `1px solid #f8514930`
                       : `1px solid ${S.border}`,
                   borderLeft:
-                    risk.severity === 'High'
                       ? `3px solid #f85149`
                       : `3px solid ${S.yellow}`,
                   borderRadius: 8,
@@ -936,7 +935,6 @@ export default function LidoV3stVaultsGuide() {
                     fontWeight: 700,
                     marginBottom: 6,
                     color:
-                      risk.severity === 'High'
                         ? '#f85149'
                         : risk.severity === 'Medium'
                           ? S.yellow

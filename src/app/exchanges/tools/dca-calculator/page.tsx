@@ -132,14 +132,12 @@ export default function DcaCalculatorPage() {
           <div>
             <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Time Period (Years)</label>
             <input
-              type="number"
               value={timePeriod}
               onChange={(e) => setTimePeriod(e.target.value)}
               placeholder="3"
               min="0.5"
               max="30"
               step="0.5"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
             />
           </div>
 
@@ -148,7 +146,6 @@ export default function DcaCalculatorPage() {
             <select
               value={selectedReturn}
               onChange={(e) => setSelectedReturn(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
             >
               {Object.keys(HISTORICAL_RETURNS).map((key) => (
                 <option key={key} value={key}>
@@ -162,11 +159,9 @@ export default function DcaCalculatorPage() {
             <div>
               <label className="block text-sm font-medium text-[var(--color-text)] mb-2">Custom Annual Return (%)</label>
               <input
-                type="number"
                 value={customReturn}
                 onChange={(e) => setCustomReturn(e.target.value)}
                 placeholder="50"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)] px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
               />
             </div>
           )}

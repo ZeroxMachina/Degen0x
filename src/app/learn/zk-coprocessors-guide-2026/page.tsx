@@ -368,7 +368,6 @@ export default function ZKCoprocessorsGuide() {
         ].map((item) => (
           <div
             key={item.project}
-            className="rounded-xl p-5 border"
             style={{ background: "#161b22", borderColor: "#30363d" }}
           >
             <div className="mb-3">
@@ -421,7 +420,6 @@ export default function ZKCoprocessorsGuide() {
         ].map((useCase, i) => (
           <div
             key={i}
-            className="rounded-xl p-5 border"
             style={{ background: "#161b22", borderColor: "#30363d" }}
           >
             <p className="font-semibold text-[#e6edf3] mb-2">{useCase.title}</p>
@@ -481,7 +479,6 @@ export default function ZKCoprocessorsGuide() {
       </p>
 
       <div
-        className="rounded-xl p-5 mb-6 border"
         style={{ background: "#161b22", borderColor: "#30363d" }}
       >
         <ul className="text-sm text-[#8b949e] space-y-2 list-disc list-inside">
@@ -537,7 +534,6 @@ export default function ZKCoprocessorsGuide() {
         ].map((item, i) => (
           <div
             key={i}
-            className="rounded-xl p-5 border"
             style={{ background: "#161b22", borderColor: "#30363d" }}
           >
             <p className="font-semibold text-[#e6edf3] mb-2">⚠️ {item.risk}</p>
@@ -579,7 +575,6 @@ export default function ZKCoprocessorsGuide() {
         ].map((item) => (
           <div
             key={item.project}
-            className="rounded-xl p-5 border"
             style={{ background: "#161b22", borderColor: "#30363d" }}
           >
             <p className="font-semibold text-[#e6edf3] mb-1">{item.project}</p>
@@ -628,7 +623,6 @@ export default function ZKCoprocessorsGuide() {
         ].map((item, i) => (
           <div
             key={i}
-            className="rounded-xl p-5 border"
             style={{ background: "#161b22", borderColor: "#30363d" }}
           >
             <p className="font-semibold text-[#e6edf3] mb-2">{item.q}</p>

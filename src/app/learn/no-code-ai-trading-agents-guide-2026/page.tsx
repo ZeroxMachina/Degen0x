@@ -110,13 +110,11 @@ export default function NoCodeAITradingAgentsPage() {
           Trading &amp; AI
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#3b82f620", color: "#3b82f6" }}
         >
           Beginner-Friendly
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#22c55e20", color: "#22c55e" }}
         >
           Updated March 2026
@@ -199,12 +197,10 @@ export default function NoCodeAITradingAgentsPage() {
 
       {/* Table of Contents */}
       <nav
-        className="glass rounded-xl p-5 mb-8"
         style={{ border: "1px solid var(--color-border)" }}
         aria-label="Table of Contents"
       >
         <h2
-          className="text-sm font-extrabold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           📋 Table of Contents
@@ -298,7 +294,6 @@ export default function NoCodeAITradingAgentsPage() {
       {/* Section 2 */}
       <section id="how-they-work" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           2. How No-Code AI Trading Agents Work
@@ -382,7 +377,6 @@ export default function NoCodeAITradingAgentsPage() {
       {/* Section 3 */}
       <section id="top-platforms" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           3. Top No-Code AI Trading Platforms
@@ -509,7 +503,6 @@ export default function NoCodeAITradingAgentsPage() {
       {/* Section 4 */}
       <section id="building-your-first-agent" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           4. Building Your First AI Trading Agent
@@ -563,7 +556,6 @@ export default function NoCodeAITradingAgentsPage() {
           ].map((s) => (
             <div
               key={s.step}
-              className="glass rounded-xl p-5"
               style={{ border: "1px solid var(--color-border)" }}
             >
               <div
@@ -573,7 +565,6 @@ export default function NoCodeAITradingAgentsPage() {
                 {s.step}
               </div>
               <h3
-                className="font-bold text-sm mb-2"
                 style={{ color: "var(--color-text)" }}
               >
                 {s.title}
@@ -595,7 +586,6 @@ export default function NoCodeAITradingAgentsPage() {
       {/* Section 5 */}
       <section id="ai-agents-vs-bots" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           5. AI Agents vs. Traditional Trading Bots
@@ -624,7 +614,6 @@ export default function NoCodeAITradingAgentsPage() {
                     Aspect
                   </th>
                   <th
-                    className="text-left py-2 pr-4"
                     style={{ color: "#8b949e" }}
                   >
                     Traditional Bot
@@ -694,7 +683,6 @@ export default function NoCodeAITradingAgentsPage() {
       {/* Section 6 */}
       <section id="risks-and-limitations" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           6. Risks and Limitations
@@ -750,7 +738,6 @@ export default function NoCodeAITradingAgentsPage() {
                   {r.risk}
                 </p>
                 <p
-                  className="text-xs"
                   style={{ color: "var(--color-text-secondary)", lineHeight: "1.6" }}
                 >
                   {r.desc}
@@ -762,7 +749,6 @@ export default function NoCodeAITradingAgentsPage() {
 
         {/* Disclaimer */}
         <div
-          className="rounded-xl p-4"
           style={{ background: "#161b22", border: "1px solid #30363d" }}
         >
           <p className="text-xs" style={{ color: "#8b949e", lineHeight: "1.6" }}>
@@ -778,7 +764,6 @@ export default function NoCodeAITradingAgentsPage() {
       {/* Section 7 */}
       <section id="future-ai-marketplaces" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           7. The Future: AI Agent Marketplaces
@@ -837,7 +822,6 @@ export default function NoCodeAITradingAgentsPage() {
       {/* FAQ */}
       <section id="faq" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           8. Frequently Asked Questions
@@ -872,11 +856,9 @@ export default function NoCodeAITradingAgentsPage() {
           ].map(({ q, a }) => (
             <div
               key={q}
-              className="glass rounded-xl p-5"
               style={{ border: "1px solid var(--color-border)" }}
             >
               <h3
-                className="font-bold text-sm mb-2"
                 style={{ color: "var(--color-text)" }}
               >
                 {q}
@@ -981,7 +963,6 @@ export default function NoCodeAITradingAgentsPage() {
           </Link>
           <Link
             href="/defi-yields"
-            className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             Market Data

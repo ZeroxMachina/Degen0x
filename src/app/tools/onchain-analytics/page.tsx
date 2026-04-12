@@ -487,7 +487,6 @@ export default function OnChainAnalyticsDashboard() {
                     </div>
                     <div className="w-full bg-[#0d1117] rounded-full h-2 border border-gray-700 overflow-hidden">
                       <div
-                        className="h-full bg-gradient-to-r from-cyan-500 to-purple-600"
                         style={{ width: `${percentage}%` }}
                       />
                     </div>

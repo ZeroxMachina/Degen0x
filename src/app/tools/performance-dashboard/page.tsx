@@ -343,10 +343,7 @@ export default function PerformanceDashboard() {
                 />
                 {/* Gauge arc fill */}
                 <path
-                  d="M 30 170 A 100 100 0 0 1 170 170"
-                  fill="none"
                   stroke={performanceScore >= 70 ? 'var(--green)' : performanceScore >= 50 ? 'var(--blue)' : 'var(--red)'}
-                  strokeWidth="10"
                   strokeDasharray={`${(performanceScore / 100) * (Math.PI * 100)} ${Math.PI * 100}`}
                   style={{ transition: 'stroke-dasharray 0.8s ease', filter: 'drop-shadow(0 0 10px currentColor)' }}
                   strokeLinecap="round"

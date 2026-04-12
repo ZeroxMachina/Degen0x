@@ -152,7 +152,6 @@ function CompoundingCalculator({ allData }: { allData: StakingEntry[] }) {
           <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "var(--color-text-secondary)", marginBottom: 8, textTransform: "uppercase" }}>Time Horizon: {timeHorizon} years</label>
           <input
             type="range"
-            min="1"
             max="10"
             value={timeHorizon}
             onChange={e => setTimeHorizon(parseInt(e.target.value))}

@@ -96,7 +96,6 @@ export default function RestakingComparisonPage() {
               padding: "4px 12px",
               borderRadius: "12px",
               fontSize: "12px",
-              fontWeight: "600"
             }}>
               Advanced
             </span>
@@ -349,7 +348,6 @@ export default function RestakingComparisonPage() {
             border: "1px solid #30363d",
             borderRadius: "12px",
             padding: "24px",
-            marginBottom: "24px"
           }}>
             <h3 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "12px", color: "#e6edf3" }}>
               The Permissionless Challenger
@@ -408,7 +406,6 @@ export default function RestakingComparisonPage() {
             border: "1px solid #30363d",
             borderRadius: "12px",
             padding: "24px",
-            marginBottom: "24px"
           }}>
             <h3 style={{ fontSize: "20px", fontWeight: "600", marginBottom: "12px", color: "#e6edf3" }}>
               Multi-chain & Diversified Assets
@@ -492,7 +489,6 @@ export default function RestakingComparisonPage() {
             border: "1px solid #30363d",
             borderRadius: "12px",
             padding: "24px",
-            marginBottom: "24px"
           }}>
             <h3 style={{ fontSize: "18px", fontWeight: "600", marginBottom: "12px", color: "#58a6ff" }}>
               For Risk-Averse, Yield-Focused Users
@@ -507,7 +503,6 @@ export default function RestakingComparisonPage() {
             border: "1px solid #30363d",
             borderRadius: "12px",
             padding: "24px",
-            marginBottom: "24px"
           }}>
             <h3 style={{ fontSize: "18px", fontWeight: "600", marginBottom: "12px", color: "#58a6ff" }}>
               For Permissionless Advocates & ERC-20 Holders
@@ -522,7 +517,6 @@ export default function RestakingComparisonPage() {
             border: "1px solid #30363d",
             borderRadius: "12px",
             padding: "24px",
-            marginBottom: "24px"
           }}>
             <h3 style={{ fontSize: "18px", fontWeight: "600", marginBottom: "12px", color: "#58a6ff" }}>
               For Multi-chain & Diversified Asset Restakers

@@ -386,8 +386,6 @@ export default function PriceAlertsPage() {
                     onClick={() => setDirection('below')}
                     className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all ${
                       direction === 'below'
-                        ? 'bg-indigo-600 text-white shadow-lg'
-                        : 'bg-white/30 dark:bg-white/5 text-gray-900 dark:text-gray-300 border border-white/20'
                     }`}
                   >
                     ⬇ Below
@@ -405,8 +403,6 @@ export default function PriceAlertsPage() {
                     onClick={() => setAlertType('one-time')}
                     className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all text-sm ${
                       alertType === 'one-time'
-                        ? 'bg-indigo-600 text-white shadow-lg'
-                        : 'bg-white/30 dark:bg-white/5 text-gray-900 dark:text-gray-300 border border-white/20'
                     }`}
                   >
                     Once
@@ -415,8 +411,6 @@ export default function PriceAlertsPage() {
                     onClick={() => setAlertType('recurring')}
                     className={`flex-1 px-4 py-2 rounded-lg font-medium transition-all text-sm ${
                       alertType === 'recurring'
-                        ? 'bg-indigo-600 text-white shadow-lg'
-                        : 'bg-white/30 dark:bg-white/5 text-gray-900 dark:text-gray-300 border border-white/20'
                     }`}
                   >
                     Recurring
@@ -434,7 +428,6 @@ export default function PriceAlertsPage() {
                   value={note}
                   onChange={(e) => setNote(e.target.value)}
                   placeholder="e.g., 'Buy here', 'Resistance level'"
-                  className="w-full px-4 py-2 rounded-lg bg-white/50 dark:bg-white/5 border border-gray-300/50 dark:border-white/10 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 />
               </div>
 
@@ -461,7 +454,6 @@ export default function PriceAlertsPage() {
 
               <button
                 onClick={() => handleQuickAlert(TOP_20_COINS[1], 3000, 'below')}
-                className="w-full glass-hover p-4 rounded-lg text-left border border-white/20 dark:border-white/10 transition-all"
               >
                 <p className="font-semibold text-gray-900 dark:text-white">ETH below $3K</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">Dip buying opportunity</p>
@@ -469,7 +461,6 @@ export default function PriceAlertsPage() {
 
               <button
                 onClick={() => handleQuickAlert(TOP_20_COINS[2], 250, 'above')}
-                className="w-full glass-hover p-4 rounded-lg text-left border border-white/20 dark:border-white/10 transition-all"
               >
                 <p className="font-semibold text-gray-900 dark:text-white">SOL pumps 25%</p>
                 <p className="text-sm text-gray-600 dark:text-gray-400">From current $198</p>

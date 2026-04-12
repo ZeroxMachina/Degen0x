@@ -293,7 +293,6 @@ export default function ZKMLGuide2026Page() {
           </p>
 
           <div
-            className="glass rounded-xl p-5"
             style={{
               background: `${S.blue}10`,
               border: `1px solid ${S.blue}30`,
@@ -390,7 +389,6 @@ export default function ZKMLGuide2026Page() {
           </p>
 
           <div
-            className="glass rounded-xl p-5"
             style={{
               background: `${S.orange}10`,
               border: `1px solid ${S.orange}30`,
@@ -685,7 +683,6 @@ export default function ZKMLGuide2026Page() {
           </p>
 
           <div
-            className="glass rounded-xl p-5"
             style={{
               background: `${S.green}10`,
               border: `1px solid ${S.green}30`,

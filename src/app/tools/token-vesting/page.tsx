@@ -455,8 +455,6 @@ export default function TokenVestingPage() {
                     onClick={() => setSelectedToken(token.symbol)}
                     className={`p-2 rounded text-xs font-medium transition-all ${
                       selectedToken === token.symbol
-                        ? 'bg-indigo-500/20 border border-indigo-500 text-[var(--color-text)]'
-                        : 'bg-gray-800/30 border border-gray-700 text-gray-400 hover:border-gray-600'
                     }`}
                   >
                     {token.icon} {token.symbol}
@@ -568,10 +566,8 @@ export default function TokenVestingPage() {
             <div>
               <label className="block text-sm font-semibold text-[var(--color-text)] mb-2">Vesting Period (Months)</label>
               <input
-                type="number"
                 value={monthsToVest}
                 onChange={(e) => setMonthsToVest(Number(e.target.value))}
-                className="w-full px-4 py-2 bg-gray-800 border border-gray-600 rounded-lg text-[var(--color-text)] placeholder-gray-500 focus:outline-none focus:border-indigo-500"
                 min="1"
                 max="60"
               />
@@ -657,8 +653,6 @@ export default function TokenVestingPage() {
               onClick={() => setSortBy('next-unlock')}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 sortBy === 'next-unlock'
-                  ? 'bg-indigo-500 text-[var(--color-text)]'
-                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
               }`}
             >
               Next Unlock Date
@@ -667,8 +661,6 @@ export default function TokenVestingPage() {
               onClick={() => setSortBy('inflation')}
               className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
                 sortBy === 'inflation'
-                  ? 'bg-indigo-500 text-[var(--color-text)]'
-                  : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
               }`}
             >
               Inflation Rate

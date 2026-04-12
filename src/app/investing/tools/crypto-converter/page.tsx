@@ -371,7 +371,6 @@ export default function CryptoConverterPage() {
             }}
           >
             <div
-              className="glass"
               style={{
                 padding: "1.5rem",
                 borderRadius: "0.75rem",
@@ -401,7 +400,6 @@ export default function CryptoConverterPage() {
               </p>
             </div>
             <div
-              className="glass"
               style={{
                 padding: "1.5rem",
                 borderRadius: "0.75rem",
@@ -431,7 +429,6 @@ export default function CryptoConverterPage() {
               </p>
             </div>
             <div
-              className="glass"
               style={{
                 padding: "1.5rem",
                 borderRadius: "0.75rem",

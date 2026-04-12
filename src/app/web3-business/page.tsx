@@ -128,7 +128,6 @@ export default function Web3BusinessPage() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >
                 <h3 className="text-[var(--color-text)] font-semibold mb-1">{link.title}</h3>
                 <p className="text-sm text-[var(--color-text-secondary)]">

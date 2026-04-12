@@ -111,13 +111,11 @@ export default function OndoFinanceGuidePage() {
             RWA
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#6366f120", color: "#6366f1" }}
           >
             Institutional
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Updated March 2026
@@ -226,7 +224,6 @@ export default function OndoFinanceGuidePage() {
         }}
       >
         <h2
-          className="text-sm font-extrabold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           Table of Contents
@@ -288,7 +285,6 @@ export default function OndoFinanceGuidePage() {
         {/* Section 2 */}
         <h2
           id="usdy-ousg"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           2. USDY &amp; OUSG: Ondo's Core Products
@@ -380,7 +376,6 @@ export default function OndoFinanceGuidePage() {
         {/* Section 3 */}
         <h2
           id="tokenized-equities"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           3. Tokenized Equities &amp; Multi-Asset Expansion
@@ -390,7 +385,6 @@ export default function OndoFinanceGuidePage() {
         </p>
 
         <div
-          className="rounded-xl p-4 mb-6 text-sm"
           style={{
             background: "#161b22",
             border: "1px solid #30363d",
@@ -416,7 +410,6 @@ export default function OndoFinanceGuidePage() {
         {/* Section 4 */}
         <h2
           id="ondo-token"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           4. The ONDO Token: Governance &amp; Utility
@@ -453,7 +446,6 @@ export default function OndoFinanceGuidePage() {
 
         {/* Warning box */}
         <div
-          className="rounded-xl p-4 mb-6 text-sm"
           style={{
             background: "#161b22",
             border: "1px solid #f74536",
@@ -469,7 +461,6 @@ export default function OndoFinanceGuidePage() {
         {/* Section 5 */}
         <h2
           id="institutional-push"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           5. The Institutional Push: SWEEP Fund &amp; State Street
@@ -512,7 +503,6 @@ export default function OndoFinanceGuidePage() {
         {/* Section 6 */}
         <h2
           id="citadels"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           6. Citadels: Islamic Finance &amp; Shariah Compliance
@@ -528,7 +518,6 @@ export default function OndoFinanceGuidePage() {
         {/* Section 7 */}
         <h2
           id="ondo-vs-peers"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           7. Ondo vs Maple Finance vs Centrifuge
@@ -541,7 +530,6 @@ export default function OndoFinanceGuidePage() {
                 {["Metric", "Ondo", "Maple", "Centrifuge"].map((h) => (
                   <th
                     key={h}
-                    className="text-left py-3 px-3 text-xs font-bold uppercase"
                     style={{ color: "var(--color-text-secondary)" }}
                   >
                     {h}
@@ -588,7 +576,6 @@ export default function OndoFinanceGuidePage() {
         {/* Section 8 */}
         <h2
           id="risks"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           8. Risks: Regulatory, Concentration, Oracle, Counterparty
@@ -639,7 +626,6 @@ export default function OndoFinanceGuidePage() {
         {/* Section 9 */}
         <h2
           id="how-to-get-started"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           9. How to Get Started with Ondo
@@ -758,7 +744,6 @@ export default function OndoFinanceGuidePage() {
           }}
         >
           <h3
-            className="text-sm font-extrabold mb-3 uppercase tracking-wide"
             style={{ color: "var(--color-text-secondary)" }}
           >
             Related Guides

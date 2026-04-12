@@ -88,7 +88,6 @@ export default function InsuranceHubPage() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <span className="inline-block rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] text-xs font-medium px-2 py-0.5 mb-2">
                 Review
@@ -108,7 +107,6 @@ export default function InsuranceHubPage() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <span className="inline-block rounded-full bg-[var(--color-secondary)]/10 text-[var(--color-secondary)] text-xs font-medium px-2 py-0.5 mb-2">
                 Guide

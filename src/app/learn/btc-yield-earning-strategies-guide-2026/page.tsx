@@ -105,19 +105,16 @@ export default function BTCYieldStrategiesGuidePage() {
             Bitcoin
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#8b5cf620", color: "#8b5cf6" }}
           >
             DeFi
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#6366f120", color: "#6366f1" }}
           >
             Intermediate
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#0ea5e920", color: "#0ea5e9" }}
           >
             Updated March 2026
@@ -293,7 +290,6 @@ export default function BTCYieldStrategiesGuidePage() {
           </p>
         </div>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The total BTCFi TVL peaked near $11 billion in January 2025 and has
@@ -320,13 +316,11 @@ export default function BTCYieldStrategiesGuidePage() {
       {/* ── Section 2 ── */}
       <section className="mb-10" id="yield-sources">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           2. Where Does Bitcoin Yield Come From?
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Understanding where yield originates is critical for assessing risk.
@@ -392,13 +386,11 @@ export default function BTCYieldStrategiesGuidePage() {
       {/* ── Section 3 ── */}
       <section className="mb-10" id="babylon">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           3. Babylon Protocol: Native BTC Staking
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Babylon is building the foundational staking layer for Bitcoin. Instead
@@ -407,7 +399,6 @@ export default function BTCYieldStrategiesGuidePage() {
           Proof-of-Stake chains, rollups, and Actively Validated Services (AVS).
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The mechanism is elegant: BTC is locked in a self-custodial contract on
@@ -431,13 +422,11 @@ export default function BTCYieldStrategiesGuidePage() {
       {/* ── Section 4 ── */}
       <section className="mb-10" id="solv">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           4. Solv Protocol &amp; SolvBTC: Liquid Staking for Bitcoin
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Solv Protocol is the second-largest BTCFi platform by TVL at $2.4 billion,
@@ -446,7 +435,6 @@ export default function BTCYieldStrategiesGuidePage() {
           maintaining full Bitcoin price exposure.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           SolvBTC generates yield through diversified strategies: quant and basis
@@ -469,13 +457,11 @@ export default function BTCYieldStrategiesGuidePage() {
       {/* ── Section 5 ── */}
       <section className="mb-10" id="coredao">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           5. CoreDAO: The Bitcoin Power Grid
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           CoreDAO positions itself as the &quot;Proof of Stake layer for Bitcoin.&quot;
@@ -485,7 +471,6 @@ export default function BTCYieldStrategiesGuidePage() {
           custody of their Bitcoin.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The 2026 roadmap has evolved CoreDAO from a staking tool into a full
@@ -506,13 +491,11 @@ export default function BTCYieldStrategiesGuidePage() {
       {/* ── Section 6 ── */}
       <section className="mb-10" id="bouncebit">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           6. BounceBit: CeDeFi Bitcoin Yield
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           BounceBit takes a different approach by combining centralized finance (CeFi)
@@ -521,7 +504,6 @@ export default function BTCYieldStrategiesGuidePage() {
           secured by BTC and BB tokens, BounceBit targets both retail and institutional users.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The key innovation is Liquidity Custody Tokens (LCTs). When you deposit
@@ -543,7 +525,6 @@ export default function BTCYieldStrategiesGuidePage() {
       {/* ── Section 7 ── */}
       <section className="mb-10" id="comparison">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           7. Protocol Comparison Table
@@ -595,7 +576,6 @@ export default function BTCYieldStrategiesGuidePage() {
         </div>
 
         <p
-          className="text-sm"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
         >
           APY figures are approximate as of March 2026 and fluctuate based on
@@ -607,13 +587,11 @@ export default function BTCYieldStrategiesGuidePage() {
       {/* ── Section 8 ── */}
       <section className="mb-10" id="risks">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           8. Risk Framework: What Can Go Wrong
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Yield is never free. Every BTC yield strategy involves trade-offs.
@@ -655,7 +633,6 @@ export default function BTCYieldStrategiesGuidePage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="rounded-xl p-4"
               style={{
                 background: "#161b22",
                 border: "1px solid #30363d",
@@ -678,7 +655,6 @@ export default function BTCYieldStrategiesGuidePage() {
                 </span>
               </div>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
                 {item.desc}
@@ -704,7 +680,6 @@ export default function BTCYieldStrategiesGuidePage() {
       {/* ── Section 9 ── */}
       <section className="mb-10" id="strategies">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           9. Yield Strategies by Risk Tolerance
@@ -746,7 +721,6 @@ export default function BTCYieldStrategiesGuidePage() {
           ].map((tier) => (
             <div
               key={tier.level}
-              className="rounded-xl p-4"
               style={{
                 background: "#161b22",
                 border: "1px solid #30363d",
@@ -764,7 +738,6 @@ export default function BTCYieldStrategiesGuidePage() {
                 {tier.steps.map((step, i) => (
                   <li
                     key={i}
-                    className="text-sm"
                     style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
                   >
                     {i + 1}. {step}
@@ -826,7 +799,6 @@ export default function BTCYieldStrategiesGuidePage() {
           ].map((faq, i) => (
             <div
               key={i}
-              className="rounded-xl p-4"
               style={{
                 background: "#161b22",
                 border: "1px solid #30363d",
@@ -834,13 +806,11 @@ export default function BTCYieldStrategiesGuidePage() {
               }}
             >
               <h3
-                className="font-bold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
                 {faq.q}
               </h3>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
                 {faq.a}
@@ -860,7 +830,6 @@ export default function BTCYieldStrategiesGuidePage() {
         }}
       >
         <h2
-          className="text-sm font-bold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           Related Guides
@@ -876,7 +845,6 @@ export default function BTCYieldStrategiesGuidePage() {
             <Link
               key={link.href}
               href={link.href}
-              className="block hover:underline"
               style={{ color: "#58a6ff" }}
             >
               {link.label}

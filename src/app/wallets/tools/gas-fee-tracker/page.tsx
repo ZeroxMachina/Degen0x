@@ -162,7 +162,6 @@ export default function GasFeeTrackerPage() {
           <select
             value={speedFilter}
             onChange={(e) => setSpeedFilter(e.target.value as SpeedFilter)}
-            className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] text-sm focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
           >
             <option value="all">All Speeds</option>
             <option value="slow">Slow</option>

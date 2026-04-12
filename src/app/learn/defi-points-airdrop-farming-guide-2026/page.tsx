@@ -275,7 +275,6 @@ export default function DefiPointsAirdropFarmingGuide() {
           border: '2px solid #f59e0b',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#e6edf3', fontWeight: '600', marginBottom: '10px' }}>⚠️ Points ≠ Guaranteed Tokens</p>
           <p style={{ margin: 0, color: '#e6edf3', fontSize: '15px', lineHeight: '1.6' }}>
@@ -363,7 +362,6 @@ export default function DefiPointsAirdropFarmingGuide() {
           border: '2px solid #22c55e',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#e6edf3', fontWeight: '600', marginBottom: '10px' }}>💡 Tax Warning: Document Everything</p>
           <p style={{ margin: 0, color: '#e6edf3', fontSize: '15px', lineHeight: '1.6' }}>
@@ -551,7 +549,6 @@ export default function DefiPointsAirdropFarmingGuide() {
           border: '1px solid #30363d',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#8b949e', fontSize: '14px', lineHeight: '1.6' }}>
             <strong>Disclaimer:</strong> This guide is educational information only and is not financial advice. DeFi points farming is speculative and carries substantial financial risks. Airdropped tokens frequently lose 50-90% of value within weeks of launch. Points are not guaranteed to convert to tokens. Protocols can modify terms, exclude wallets, or delay launches. Smart contract exploits, hacks, and operational failures can result in loss of farmed capital. Always conduct your own research, understand specific protocol risks before deploying capital, and consult with tax and financial professionals. This guide does not guarantee airdrop success and should not be the sole basis for investing. Points farming is appropriate only for capital you can afford to lose completely.

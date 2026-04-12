@@ -62,7 +62,6 @@ export default function TriviaLeaderboardPage() {
 
       {/* Related links */}
       <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <Link href="/learn/daily-trivia"
               className="rounded-xl border border-[var(--color-border)] p-4 hover:border-[var(--color-primary)] transition-colors"
               style={{ background: "var(--color-surface)" }}>
           <div className="text-2xl mb-2">🎯</div>
@@ -70,14 +69,12 @@ export default function TriviaLeaderboardPage() {
           <div className="text-xs text-[var(--color-text-secondary)] mt-1">10 questions · New every day</div>
         </Link>
         <Link href="/learn"
-              className="rounded-xl border border-[var(--color-border)] p-4 hover:border-[var(--color-primary)] transition-colors"
               style={{ background: "var(--color-surface)" }}>
           <div className="text-2xl mb-2">📚</div>
           <div className="font-bold text-sm text-[var(--color-text)]">Learn Crypto</div>
           <div className="text-xs text-[var(--color-text-secondary)] mt-1">Guides, articles & tutorials</div>
         </Link>
         <Link href="/tools/degen-score"
-              className="rounded-xl border border-[var(--color-border)] p-4 hover:border-[var(--color-primary)] transition-colors"
               style={{ background: "var(--color-surface)" }}>
           <div className="text-2xl mb-2">🔥</div>
           <div className="font-bold text-sm text-[var(--color-text)]">Your Degen Score</div>

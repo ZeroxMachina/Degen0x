@@ -101,11 +101,9 @@ export default function FloorPriceTrackerPage() {
           <div>
             <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">SOL Price</label>
             <input
-              type="number"
               value={solPrice}
               onChange={(e) => setSolPrice(e.target.value)}
               placeholder="150"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
         </div>
@@ -127,23 +125,18 @@ export default function FloorPriceTrackerPage() {
               <div>
                 <label className="block text-xs text-[var(--color-text-secondary)] mb-1">Floor Price</label>
                 <input
-                  type="number"
                   step="0.001"
                   value={col.floorPrice}
                   onChange={(e) => updateCollection(col.id, "floorPrice", e.target.value)}
                   placeholder="15.5"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
                 <label className="block text-xs text-[var(--color-text-secondary)] mb-1">Prev Floor</label>
                 <input
-                  type="number"
-                  step="0.001"
                   value={col.previousFloor}
                   onChange={(e) => updateCollection(col.id, "previousFloor", e.target.value)}
                   placeholder="14.0"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -161,11 +154,9 @@ export default function FloorPriceTrackerPage() {
                 <div className="flex-1">
                   <label className="block text-xs text-[var(--color-text-secondary)] mb-1">Qty</label>
                   <input
-                    type="number"
                     value={col.itemsOwned}
                     onChange={(e) => updateCollection(col.id, "itemsOwned", e.target.value)}
                     placeholder="1"
-                    className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                   />
                 </div>
                 <button

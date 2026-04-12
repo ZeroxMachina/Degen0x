@@ -131,13 +131,11 @@ export default function AltcoinETFGuidePage() {
             Crypto ETFs
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#3b82f620", color: "#3b82f6" }}
           >
             Intermediate
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Updated March 2026
@@ -318,7 +316,6 @@ export default function AltcoinETFGuidePage() {
             Solana ETFs launched first on October 28, 2025, with XRP following in November 2025. As of March 2026, over 126 additional crypto ETF applications are pending — covering assets ranging from Litecoin and Hedera to DeFi protocol tokens and, yes, meme coins.
           </p>
           <div
-            className="rounded-xl p-5 mb-4"
             style={{
               background: "#f8514910",
               border: "1px solid #f8514940",
@@ -336,7 +333,6 @@ export default function AltcoinETFGuidePage() {
         {/* ── 3. Solana ETFs ────────────────────────────────────────────────── */}
         <section id="solana-etfs" className="mb-10">
           <h2
-            className="text-2xl font-extrabold mb-4"
             style={{ color: "var(--color-text)" }}
           >
             3. Solana ETFs: The Complete Comparison
@@ -467,7 +463,6 @@ export default function AltcoinETFGuidePage() {
           </p>
 
           <div
-            className="rounded-xl p-5 mb-4"
             style={{
               background: "#161b22",
               border: "1px solid #30363d",
@@ -485,7 +480,6 @@ export default function AltcoinETFGuidePage() {
         {/* ── 4. Staking ETFs ───────────────────────────────────────────────── */}
         <section id="staking-etfs" className="mb-10">
           <h2
-            className="text-2xl font-extrabold mb-4"
             style={{ color: "var(--color-text)" }}
           >
             4. Staking ETFs — A Game Changer
@@ -503,7 +497,6 @@ export default function AltcoinETFGuidePage() {
           {/* Staking yield comparison */}
           <div className="overflow-x-auto mb-6">
             <table
-              className="w-full text-sm"
               style={{ borderCollapse: "collapse" }}
             >
               <thead>
@@ -512,7 +505,6 @@ export default function AltcoinETFGuidePage() {
                     (h) => (
                       <th
                         key={h}
-                        className="text-left py-3 px-3 text-xs font-bold uppercase"
                         style={{ color: "var(--color-text-secondary)" }}
                       >
                         {h}
@@ -584,7 +576,6 @@ export default function AltcoinETFGuidePage() {
           </div>
 
           <div
-            className="rounded-xl p-5 mb-4"
             style={{
               background: "#9945ff10",
               border: "1px solid #9945ff40",
@@ -602,7 +593,6 @@ export default function AltcoinETFGuidePage() {
         {/* ── 5. XRP ETFs ───────────────────────────────────────────────────── */}
         <section id="xrp-etfs" className="mb-10">
           <h2
-            className="text-2xl font-extrabold mb-4"
             style={{ color: "var(--color-text)" }}
           >
             5. XRP ETFs: Retail vs. Institutional Demand
@@ -617,7 +607,6 @@ export default function AltcoinETFGuidePage() {
           {/* XRP ETF comparison table */}
           <div className="overflow-x-auto mb-6">
             <table
-              className="w-full text-sm"
               style={{ borderCollapse: "collapse" }}
             >
               <thead>
@@ -625,7 +614,6 @@ export default function AltcoinETFGuidePage() {
                   {["ETF Name", "Ticker", "Issuer", "Expense Ratio", "Exchange"].map((h) => (
                     <th
                       key={h}
-                      className="text-left py-3 px-3 text-xs font-bold uppercase"
                       style={{ color: "var(--color-text-secondary)" }}
                     >
                       {h}
@@ -685,7 +673,6 @@ export default function AltcoinETFGuidePage() {
                       {row.issuer}
                     </td>
                     <td
-                      className="py-3 px-3 font-medium"
                       style={{
                         color: row.fee === "2.00%" ? "#f85149" : "var(--color-text)",
                       }}
@@ -702,7 +689,6 @@ export default function AltcoinETFGuidePage() {
           </div>
 
           <div
-            className="rounded-xl p-5 mb-4"
             style={{
               background: "#f8514910",
               border: "1px solid #f8514940",
@@ -720,7 +706,6 @@ export default function AltcoinETFGuidePage() {
         {/* ── 6. Ethereum ETFs ─────────────────────────────────────────────── */}
         <section id="ethereum-etfs" className="mb-10">
           <h2
-            className="text-2xl font-extrabold mb-4"
             style={{ color: "var(--color-text)" }}
           >
             6. Ethereum ETFs: The OG Altcoin Fund
@@ -734,7 +719,6 @@ export default function AltcoinETFGuidePage() {
 
           <div className="overflow-x-auto mb-6">
             <table
-              className="w-full text-sm"
               style={{ borderCollapse: "collapse" }}
             >
               <thead>
@@ -742,7 +726,6 @@ export default function AltcoinETFGuidePage() {
                   {["ETF", "Ticker", "Issuer", "Fee", "AUM (approx)"].map((h) => (
                     <th
                       key={h}
-                      className="text-left py-3 px-3 text-xs font-bold uppercase"
                       style={{ color: "var(--color-text-secondary)" }}
                     >
                       {h}
@@ -793,7 +776,6 @@ export default function AltcoinETFGuidePage() {
         {/* ── 7. How to Buy ─────────────────────────────────────────────────── */}
         <section id="how-to-buy" className="mb-10">
           <h2
-            className="text-2xl font-extrabold mb-4"
             style={{ color: "var(--color-text)" }}
           >
             7. How to Buy an Altcoin ETF (5 Steps)
@@ -861,7 +843,6 @@ export default function AltcoinETFGuidePage() {
         {/* ── 8. Fees ───────────────────────────────────────────────────────── */}
         <section id="fees" className="mb-10">
           <h2
-            className="text-2xl font-extrabold mb-4"
             style={{ color: "var(--color-text)" }}
           >
             8. Fees, Costs & What They Don&apos;t Tell You
@@ -927,7 +908,6 @@ export default function AltcoinETFGuidePage() {
         {/* ── 9. Risks ──────────────────────────────────────────────────────── */}
         <section id="risks" className="mb-10">
           <h2
-            className="text-2xl font-extrabold mb-4"
             style={{ color: "var(--color-text)" }}
           >
             9. Risks of Altcoin ETFs
@@ -982,7 +962,6 @@ export default function AltcoinETFGuidePage() {
                   {item.risk}
                 </span>
                 <span
-                  className="text-xs px-2 py-0.5 rounded-full font-bold"
                   style={{ background: `${item.color}20`, color: item.color }}
                 >
                   {item.level} Risk
@@ -998,7 +977,6 @@ export default function AltcoinETFGuidePage() {
         {/* ── 10. Outlook ───────────────────────────────────────────────────── */}
         <section id="outlook" className="mb-10">
           <h2
-            className="text-2xl font-extrabold mb-4"
             style={{ color: "var(--color-text)" }}
           >
             10. 2026 Outlook: What&apos;s Coming Next
@@ -1031,7 +1009,6 @@ export default function AltcoinETFGuidePage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="mb-4 p-5 rounded-xl"
               style={{
                 background: "#161b22",
                 border: "1px solid #30363d",
@@ -1086,7 +1063,6 @@ export default function AltcoinETFGuidePage() {
           ].map((item, i) => (
             <div
               key={i}
-              className="mb-4 p-5 rounded-xl"
               style={{
                 background: "#161b22",
                 border: "1px solid #30363d",

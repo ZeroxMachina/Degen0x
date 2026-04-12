@@ -1642,7 +1642,6 @@ export default function BitcoinMiningGuide() {
               </Link>{' '}
               or using{' '}
               <Link
-                href="/tools/dca-calculator"
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                 dollar-cost averaging
@@ -2092,7 +2091,6 @@ export default function BitcoinMiningGuide() {
               </li>
               <li>
                 <Link
-                  href="/tools/dca-calculator"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Dollar-Cost Averaging (DCA) Calculator
@@ -2100,7 +2098,6 @@ export default function BitcoinMiningGuide() {
               </li>
               <li>
                 <Link
-                  href="/exchanges"
                   style={{ color: '#58a6ff', textDecoration: 'none' }}
     >
                   Buying Bitcoin: Exchanges & Platforms

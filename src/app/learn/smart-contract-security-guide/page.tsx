@@ -295,7 +295,6 @@ export default function SmartContractSecurityGuide() {
           border: '2px solid #f59e0b',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#e6edf3', fontWeight: '600', marginBottom: '10px' }}>⚠️ Critical Reality Check</p>
           <p style={{ margin: 0, color: '#e6edf3', fontSize: '15px', lineHeight: '1.6' }}>
@@ -336,7 +335,6 @@ export default function SmartContractSecurityGuide() {
           border: '2px solid #22c55e',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#e6edf3', fontWeight: '600', marginBottom: '10px' }}>💡 Pro Tip: How to Read an Audit Report</p>
           <p style={{ margin: 0, color: '#e6edf3', fontSize: '15px', lineHeight: '1.6' }}>
@@ -445,7 +443,6 @@ export default function SmartContractSecurityGuide() {
           border: '2px solid #06b6d4',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#e6edf3', fontWeight: '600', marginBottom: '10px' }}>🔬 Key Concept: Formal Verification</p>
           <p style={{ margin: 0, color: '#e6edf3', fontSize: '15px', lineHeight: '1.6' }}>
@@ -598,7 +595,6 @@ export default function SmartContractSecurityGuide() {
           border: '1px solid #30363d',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#8b949e', fontSize: '14px', lineHeight: '1.6' }}>
             <strong>Disclaimer:</strong> This guide is educational information only and is not financial advice. Smart contract security is complex and evolving. Always conduct your own research, read audit reports, and understand the specific risks of any protocol before investing. Even audited smart contracts can contain vulnerabilities or fail due to operational issues. This guide does not guarantee the safety of any protocol and should not be relied upon as the sole basis for investment decisions. Security evaluations are ongoing processes—what was safe yesterday might not be safe tomorrow. Consult with security professionals for critical decisions.
@@ -611,7 +607,6 @@ export default function SmartContractSecurityGuide() {
           paddingTop: '20px',
           borderTop: '1px solid #30363d',
           color: '#8b949e',
-          fontSize: '14px'
         }}>
           <p style={{ margin: '0 0 8px 0' }}>
             Written by degen0x • Last updated March 2026

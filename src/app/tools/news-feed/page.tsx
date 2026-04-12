@@ -166,8 +166,6 @@ export default function NewsFeedPage() {
             onClick={() => setSentimentFilter(s)}
             className={`text-xs font-semibold px-3 py-1.5 rounded-lg border transition-colors ${
               sentimentFilter === s
-                ? "bg-[var(--color-primary)] text-white border-[var(--color-primary)]"
-                : "bg-[var(--glass-bg)] text-[var(--color-text-secondary)] border-[var(--glass-border)] hover:border-[var(--color-primary)]"
             }`}
           >
             {s === "all" ? "Any Sentiment" : s.charAt(0).toUpperCase() + s.slice(1)}

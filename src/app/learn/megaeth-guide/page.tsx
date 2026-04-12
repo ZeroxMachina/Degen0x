@@ -656,7 +656,6 @@ export default function MegaETHGuide() {
           ].map((item) => (
             <div
               key={item.step}
-              className="flex gap-4 bg-[#161b22] border border-[#30363d] rounded-lg p-5"
             >
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#a78bfa]/20 border border-[#a78bfa]/30 flex items-center justify-center text-[#a78bfa] font-bold text-sm">
                 {item.step}

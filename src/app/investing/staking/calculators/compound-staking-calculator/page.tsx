@@ -115,11 +115,9 @@ export default function CompoundStakingCalculatorPage() {
               Gross APY (%)
             </label>
             <input
-              type="number"
               value={apy}
               onChange={(e) => setApy(e.target.value)}
               step="0.1"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
@@ -127,11 +125,9 @@ export default function CompoundStakingCalculatorPage() {
               Platform Fee (% of rewards)
             </label>
             <input
-              type="number"
               value={fee}
               onChange={(e) => setFee(e.target.value)}
               step="1"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
@@ -139,10 +135,8 @@ export default function CompoundStakingCalculatorPage() {
               Duration (months)
             </label>
             <input
-              type="number"
               value={duration}
               onChange={(e) => setDuration(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
@@ -152,7 +146,6 @@ export default function CompoundStakingCalculatorPage() {
             <select
               value={compounding}
               onChange={(e) => setCompounding(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             >
               <option value="daily">Daily (stETH rebasing)</option>
               <option value="weekly">Weekly</option>
@@ -165,10 +158,8 @@ export default function CompoundStakingCalculatorPage() {
               Monthly Contribution ($) <span className="text-[var(--color-text-secondary)] font-normal">- optional</span>
             </label>
             <input
-              type="number"
               value={monthlyAdd}
               onChange={(e) => setMonthlyAdd(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
         </div>

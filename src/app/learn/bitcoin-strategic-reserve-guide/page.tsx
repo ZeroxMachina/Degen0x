@@ -103,19 +103,16 @@ export default function BitcoinStrategicReserveGuidePage() {
             Bitcoin
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#6366f120", color: "#6366f1" }}
           >
             Macro
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Intermediate
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#0ea5e920", color: "#0ea5e9" }}
           >
             Updated March 2026
@@ -232,7 +229,6 @@ export default function BitcoinStrategicReserveGuidePage() {
         }}
       >
         <h2
-          className="text-sm font-extrabold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           Table of Contents
@@ -307,7 +303,6 @@ export default function BitcoinStrategicReserveGuidePage() {
         {/* Section 2 */}
         <h2
           id="us-reserve"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           2. The US Strategic Bitcoin Reserve
@@ -413,7 +408,6 @@ export default function BitcoinStrategicReserveGuidePage() {
         {/* Section 3 */}
         <h2
           id="other-countries"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           3. Other Countries Building Bitcoin Reserves
@@ -471,7 +465,6 @@ export default function BitcoinStrategicReserveGuidePage() {
         {/* Section 4 */}
         <h2
           id="why-bitcoin"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           4. Why Bitcoin and Not Other Crypto?
@@ -533,7 +526,6 @@ export default function BitcoinStrategicReserveGuidePage() {
         {/* Section 5 */}
         <h2
           id="market-impact"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           5. Market Impact: What Sovereign Buying Means
@@ -561,7 +553,6 @@ export default function BitcoinStrategicReserveGuidePage() {
 
         {/* Info box */}
         <div
-          className="rounded-xl p-4 mb-6 text-sm"
           style={{
             background: "#161b22",
             border: "1px solid #30363d",
@@ -587,7 +578,6 @@ export default function BitcoinStrategicReserveGuidePage() {
         {/* Section 6 */}
         <h2
           id="risks"
-          className="text-xl font-extrabold mt-10 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           6. Risks and Criticisms
@@ -598,7 +588,6 @@ export default function BitcoinStrategicReserveGuidePage() {
 
         <div className="space-y-4 mb-6">
           <div
-            className="p-4 rounded-xl"
             style={{
               background: "#161b22",
               border: "1px solid #f7453620",
@@ -616,7 +605,6 @@ export default function BitcoinStrategicReserveGuidePage() {
             </p>
           </div>
           <div
-            className="p-4 rounded-xl"
             style={{
               background: "#161b22",
               border: "1px solid #f7453620",
@@ -635,7 +623,6 @@ export default function BitcoinStrategicReserveGuidePage() {
             </p>
           </div>
           <div
-            className="p-4 rounded-xl"
             style={{
               background: "#161b22",
               border: "1px solid #f7453620",
@@ -653,7 +640,6 @@ export default function BitcoinStrategicReserveGuidePage() {
             </p>
           </div>
           <div
-            className="p-4 rounded-xl"
             style={{
               background: "#161b22",
               border: "1px solid #f7453620",
@@ -738,7 +724,6 @@ export default function BitcoinStrategicReserveGuidePage() {
           }}
         >
           <h3
-            className="text-sm font-extrabold mb-3 uppercase tracking-wide"
             style={{ color: "var(--color-text-secondary)" }}
           >
             Related Guides

@@ -708,7 +708,6 @@ export default function TaxLossHarvestingPage() {
             </li>
             <li>
               <a
-                href="/tools/portfolio-tracker"
                 style={{
                   color: darkTheme.accent,
                   textDecoration: "none",
@@ -763,7 +762,6 @@ export default function TaxLossHarvestingPage() {
             Use our portfolio tracker to identify tax loss harvesting opportunities in your holdings and generate accurate tax reports for your accountant.
           </p>
           <a
-            href="/tools/portfolio-tracker"
             style={{
               display: "inline-block",
               backgroundColor: darkTheme.accent,

@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Link from 'next/link';
-import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
@@ -90,7 +89,6 @@ export default function MEVPBSGuide() {
                 padding: '6px 12px',
                 borderRadius: '6px',
                 fontSize: '0.875rem',
-                fontWeight: '500'
               }}
     >Advanced</span>
               <span style={{
@@ -216,7 +214,6 @@ export default function MEVPBSGuide() {
                 border: '1px solid #2d5a8a',
                 borderRadius: '8px',
                 padding: '20px',
-                marginBottom: '24px'
               }}
     >
                 <p style={{ margin: 0, fontSize: '0.95rem', color: DARK_COLORS.text }}>
@@ -350,7 +347,6 @@ export default function MEVPBSGuide() {
               border: `1px solid ${DARK_COLORS.border}`,
               borderRadius: '8px',
               padding: '24px',
-              marginBottom: '24px'
             }}
     >
               <h3 style={{ marginBottom: '16px', fontWeight: '600' }}>Key Builder Insights:</h3>
@@ -396,14 +392,12 @@ export default function MEVPBSGuide() {
               borderRadius: '8px',
               padding: '24px',
               marginBottom: '24px',
-              overflowX: 'auto'
             }}
     >
               <h3 style={{ marginBottom: '16px', fontWeight: '600' }}>Relay Market Share &amp; Latency (April 2026)</h3>
               <table style={{
                 width: '100%',
                 borderCollapse: 'collapse',
-                fontSize: '0.95rem'
               }}
     >
                 <thead>
@@ -484,7 +478,6 @@ export default function MEVPBSGuide() {
               border: '1px solid #2d5a5a',
               borderRadius: '8px',
               padding: '24px',
-              marginBottom: '24px'
             }}
     >
               <h3 style={{ marginBottom: '16px', fontWeight: '600' }}>How Enshrined PBS Works:</h3>
@@ -522,7 +515,6 @@ export default function MEVPBSGuide() {
               backgroundColor: DARK_COLORS.card,
               border: `1px solid ${DARK_COLORS.border}`,
               borderRadius: '8px',
-              padding: '24px'
             }}
     >
               <h3 style={{ marginBottom: '16px', fontWeight: '600' }}>ePBS Benefits:</h3>
@@ -567,7 +559,6 @@ export default function MEVPBSGuide() {
                 backgroundColor: DARK_COLORS.card,
                 border: `1px solid ${DARK_COLORS.border}`,
                 borderRadius: '8px',
-                padding: '24px'
               }}
     >
                 <h3 style={{ marginBottom: '16px', fontWeight: '600', color: '#ff6b6b' }}>Current PBS Risks</h3>
@@ -595,7 +586,6 @@ export default function MEVPBSGuide() {
                 backgroundColor: DARK_COLORS.card,
                 border: `1px solid ${DARK_COLORS.border}`,
                 borderRadius: '8px',
-                padding: '24px'
               }}
     >
                 <h3 style={{ marginBottom: '16px', fontWeight: '600', color: '#51cf66' }}>ePBS Benefits</h3>
@@ -732,14 +722,12 @@ export default function MEVPBSGuide() {
             border: `1px solid ${DARK_COLORS.border}`,
             borderRadius: '8px',
             padding: '20px',
-            marginBottom: '40px'
           }}
     >
             <p style={{
               margin: 0,
               color: DARK_COLORS.secondary,
               fontSize: '0.9rem',
-              lineHeight: '1.6'
             }}
     >
               <strong>Disclaimer:</strong> This guide is for educational purposes only and does not constitute investment advice, financial advice, or recommendations. MEV and PBS are complex technical topics; information is current as of April 2026 and subject to change. Always conduct your own research and consult with experts before making technical or financial decisions. degen0x makes no warranties about accuracy or completeness.

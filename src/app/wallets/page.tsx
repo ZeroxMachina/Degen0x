@@ -129,7 +129,6 @@ export default function WalletsHubPage() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
@@ -146,7 +145,6 @@ export default function WalletsHubPage() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
@@ -163,7 +161,6 @@ export default function WalletsHubPage() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
@@ -180,7 +177,6 @@ export default function WalletsHubPage() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
               <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>

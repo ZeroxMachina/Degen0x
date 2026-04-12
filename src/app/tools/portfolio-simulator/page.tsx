@@ -569,7 +569,6 @@ export default function PortfolioSimulatorPage() {
             <div style={{ position: 'relative' }}>
               <span style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', color: 'var(--color-text-secondary)' }}>$</span>
               <input
-                type='number'
                 value={monthlaDCA}
                 onChange={(e) => setMonthlDCA(Math.max(0, parseFloat(e.target.value) || 0))}
                 min='0'
@@ -646,10 +645,8 @@ export default function PortfolioSimulatorPage() {
                     </button>
                   </div>
                   <input
-                    type='number'
                     value={asset.allocation}
                     onChange={(e) => updateAllocation(asset.symbol, parseFloat(e.target.value) || 0)}
-                    min='0'
                     max='100'
                     style={{
                       width: '100%',

@@ -165,7 +165,6 @@ export default function OnchainIdentityReputationGuide() {
           </p>
         </div>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             An onchain identity isn't just your wallet address (though that's part of it). It's a constellation of credentials, attestations, and verifiable claims that build up over time. Did you participate in governance? That's recorded onchain. Did you receive an attestation from a protocol you trusted? That's permanent and portable. Did you pass KYC? A privacy-preserving proof of that can live onchain without exposing your personal data.
@@ -197,19 +196,16 @@ export default function OnchainIdentityReputationGuide() {
             Soulbound Tokens (SBTs)
           </h2>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Soulbound Tokens were introduced by Vitalik Buterin, Juan Benet, and Stani Kulechov in their 2022 paper "Decentralized Society: Finding Web3's Soul." After four years of refinement, SBTs have matured into a critical identity primitive in 2026.
           </p>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             An SBT is an NFT that can't be transferred, sold, or traded. Once you receive it, it's bound to your wallet (your "soul"). Unlike regular NFTs, SBTs have no market price—their value is entirely in what they represent: a verified claim about you.
           </p>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Examples of SBTs you might hold in 2026:
@@ -234,7 +230,6 @@ export default function OnchainIdentityReputationGuide() {
 
           {/* Info Box */}
           <div
-            className="bg-[#161b22] border-l-4 rounded-lg p-6 mb-6"
             style={{ borderColor: "#58a6ff" }}
           >
             <h3 className="font-semibold mb-2" style={{ color: "#58a6ff" }}>
@@ -246,7 +241,6 @@ export default function OnchainIdentityReputationGuide() {
           </div>
 
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             The power of SBTs: they're permanent, portable, and programmable. A DeFi protocol can check if you hold an SBT proving past loan repayment, and offer you better terms. A DAO can weight voting power by how many governance SBTs you hold from respected protocols.
@@ -259,19 +253,16 @@ export default function OnchainIdentityReputationGuide() {
             Ethereum Attestation Service (EAS)
           </h2>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             EAS is the open protocol for making onchain attestations. Launched in 2023 and widely adopted by 2026, EAS is the plumbing layer that powers decentralized identity infrastructure across Ethereum and multiple L2s.
           </p>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Think of EAS as a generic, permissionless way for anyone to issue cryptographically verifiable claims about anything (or anyone). An attestation is a signed statement from an attester about a subject. The attestation is stored onchain and can be verified by anyone.
           </p>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Example flow:
@@ -286,7 +277,6 @@ export default function OnchainIdentityReputationGuide() {
 
           {/* Info Box */}
           <div
-            className="bg-[#161b22] border-l-4 rounded-lg p-6 mb-6"
             style={{ borderColor: "#58a6ff" }}
           >
             <h3 className="font-semibold mb-2" style={{ color: "#58a6ff" }}>
@@ -298,7 +288,6 @@ export default function OnchainIdentityReputationGuide() {
           </div>
 
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             EAS is deployed on Ethereum mainnet, Arbitrum, Optimism, Base, Polygon, Sepolia (testnet), and other chains. By 2026, major identity providers have standardized around EAS as the attestation layer, making identity claims interoperable across protocols and chains.
@@ -311,13 +300,11 @@ export default function OnchainIdentityReputationGuide() {
             Proof of Personhood: Biometrics & Social Proofs
           </h2>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             One of the hardest identity problems in Web3 is Sybil resistance: proving that you're one person, not many accounts controlled by the same entity. Proof of personhood is the answer.
           </p>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Several approaches have emerged by 2026:
@@ -328,7 +315,6 @@ export default function OnchainIdentityReputationGuide() {
             Worldcoin / World ID
           </h3>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Worldcoin scans your iris with a specialized hardware device (an "Orb") and creates a zero-knowledge proof that you're a unique human without revealing which human you are. You get a World ID credential that you can use onchain to prove personhood.
@@ -342,7 +328,6 @@ export default function OnchainIdentityReputationGuide() {
             Gitcoin Passport
           </h3>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Gitcoin Passport takes a different approach: it's a composable identity score built from multiple "stamps"—verified claims from different sources. Connect your GitHub, Twitter, Discord, or pass a Worldcoin scan, and each adds a stamp to your passport. The more diverse your stamps, the higher your Sybil resistance score.
@@ -356,7 +341,6 @@ export default function OnchainIdentityReputationGuide() {
             BrightID, Sproul, & Social Verification
           </h3>
           <p
-            className="mb-4 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             BrightID uses a social graph approach: you prove you're unique by connecting with friends who've already verified their uniqueness. Sproul uses AI and behavior analysis. These are less invasive than biometrics but less cryptographically certain.
@@ -367,7 +351,6 @@ export default function OnchainIdentityReputationGuide() {
 
           {/* Info Box */}
           <div
-            className="bg-[#161b22] border-l-4 rounded-lg p-6 mb-6"
             style={{ borderColor: "#58a6ff" }}
           >
             <h3 className="font-semibold mb-2" style={{ color: "#58a6ff" }}>
@@ -389,7 +372,6 @@ export default function OnchainIdentityReputationGuide() {
             Undercollateralized DeFi Lending
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Normally, DeFi lending requires you to put up collateral worth more than the loan (overcollateralization). With onchain identity, you can prove your credit history. If your SBTs show you've repaid 100 loans on Aave, a protocol might lend you 2x your collateral. Your identity is collateral.
@@ -399,7 +381,6 @@ export default function OnchainIdentityReputationGuide() {
             Sybil-Resistant Governance
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             DAOs now gate voting power by Gitcoin Passport score. You need a minimum score to vote, preventing one person from creating 100 accounts to control governance. By 2026, most governance protocols weight voting by identity strength, not just token holdings.
@@ -409,7 +390,6 @@ export default function OnchainIdentityReputationGuide() {
             Airdrop Eligibility & Community Building
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Protocols distribute airdrops only to users meeting identity thresholds (Gitcoin Passport score &gt; 20, or World ID verified). This filters bots and increases the chance the tokens go to genuine community members. By 2026, governance airdrops are nearly 100% gated by identity.
@@ -419,7 +399,6 @@ export default function OnchainIdentityReputationGuide() {
             Onchain Hiring & Resumes
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Your identity is an onchain resume. Completed a Crypto Bootcamp? SBT from the bootcamp provider. Audited 50+ smart contracts? SBT from Trail of Bits or OpenZeppelin. Passed a Solidity exam? SBT from Certora. Job-seeking developers show their identity stack to find roles; DAOs hire based on verifiable credentials instead of GitHub or resumes.
@@ -429,7 +408,6 @@ export default function OnchainIdentityReputationGuide() {
             Sanction Compliance & KYC at Scale
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Protocols issue attestations: "This address passed KYC and is not on OFAC sanctions list." One KYC check (costly) can be proven to many protocols via EAS. By 2026, institutional DeFi uses identity attestations for compliance, not sending KYC details to each protocol.
@@ -457,19 +435,16 @@ export default function OnchainIdentityReputationGuide() {
                     Protocol
                   </th>
                   <th
-                    className="border px-4 py-3 text-left font-semibold"
                     style={{ borderColor: "#30363d", color: "#58a6ff" }}
                   >
                     Type
                   </th>
                   <th
-                    className="border px-4 py-3 text-left font-semibold"
                     style={{ borderColor: "#30363d", color: "#58a6ff" }}
                   >
                     How It Works
                   </th>
                   <th
-                    className="border px-4 py-3 text-left font-semibold"
                     style={{ borderColor: "#30363d", color: "#58a6ff" }}
                   >
                     Use Cases
@@ -491,13 +466,11 @@ export default function OnchainIdentityReputationGuide() {
                     Attestation Layer
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Permissionless onchain attestations via schemas
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     All identity operations
@@ -505,25 +478,21 @@ export default function OnchainIdentityReputationGuide() {
                 </tr>
                 <tr style={{ borderColor: "#30363d", backgroundColor: "#0d1117" }}>
                   <td
-                    className="border px-4 py-3 font-semibold"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     Worldcoin / World ID
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     Biometric PoP
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Iris scanning + ZK proof
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Sybil resistance, airdrops
@@ -531,25 +500,21 @@ export default function OnchainIdentityReputationGuide() {
                 </tr>
                 <tr style={{ borderColor: "#30363d" }}>
                   <td
-                    className="border px-4 py-3 font-semibold"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     Gitcoin Passport
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     Composable Score
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Multiple verification stamps (GitHub, Twitter, biometric)
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Governance, airdrops, lending
@@ -557,25 +522,21 @@ export default function OnchainIdentityReputationGuide() {
                 </tr>
                 <tr style={{ borderColor: "#30363d", backgroundColor: "#0d1117" }}>
                   <td
-                    className="border px-4 py-3 font-semibold"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     Polygon ID
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     DID Provider
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Polygon's DID with VC support, KYC/AML
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     KYC, issuing credentials
@@ -583,25 +544,21 @@ export default function OnchainIdentityReputationGuide() {
                 </tr>
                 <tr style={{ borderColor: "#30363d" }}>
                   <td
-                    className="border px-4 py-3 font-semibold"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     Galxe / Layer3
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     Credential/Quest Platform
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Gamified identity building via quests and achievements
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Community building, airdrops
@@ -609,25 +566,21 @@ export default function OnchainIdentityReputationGuide() {
                 </tr>
                 <tr style={{ borderColor: "#30363d", backgroundColor: "#0d1117" }}>
                   <td
-                    className="border px-4 py-3 font-semibold"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     BrightID
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#c9d1d9" }}
                   >
                     Social Graph PoP
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Social connections + contextual review
                   </td>
                   <td
-                    className="border px-4 py-3"
                     style={{ borderColor: "#30363d", color: "#8b949e" }}
                   >
                     Sybil resistance via social
@@ -638,7 +591,6 @@ export default function OnchainIdentityReputationGuide() {
           </div>
 
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             In 2026, best practice is to combine these. Use EAS as your attestation infrastructure, Gitcoin Passport + World ID for Sybil resistance, and Polygon ID for institutional KYC. Galxe for engagement and community identity-building.
@@ -655,7 +607,6 @@ export default function OnchainIdentityReputationGuide() {
             Privacy Concerns
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Even with zero-knowledge proofs, storing identity attestations onchain creates a permanent record. If you prove you're in a sanctioned country or failed KYC, that could be used against you in the future. Privacy-preserving tech is improving (ZK proofs, encrypted attestations) but is still immature. Balance identity utility with privacy risk.
@@ -665,7 +616,6 @@ export default function OnchainIdentityReputationGuide() {
             Centralization of Identity Providers
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Worldcoin, Gitcoin, and Polygon ID are still centralized companies. If Worldcoin's iris database is breached, millions of users' biometric data could be exposed. If Gitcoin Passport goes down, DAOs can't verify members. Decentralized alternatives exist but lack scale. Diversify your identity across providers.
@@ -675,7 +625,6 @@ export default function OnchainIdentityReputationGuide() {
             Attestation Spam & Manipulation
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Since anyone can issue EAS attestations, bad actors can create fake credentials. "Alice passed security audit"—said by a bot, not a real auditor. Applications need careful off-chain verification of attesters and inclusion of trusted attesters in their logic. By 2026, protocols maintain "trusted attester lists" onchain, but this reintroduces centralization.
@@ -685,7 +634,6 @@ export default function OnchainIdentityReputationGuide() {
             Composability Challenges
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             If you use your Gitcoin Passport for governance voting, what happens when the scoring algorithm changes? Your "identity" becomes unstable. Cross-protocol identity composition is still fragile. Revocations of attestations can break downstream applications. Standards and best practices are still being defined in 2026.
@@ -695,7 +643,6 @@ export default function OnchainIdentityReputationGuide() {
             Adoption & Friction
           </h3>
           <p
-            className="mb-6 leading-relaxed"
             style={{ color: "#c9d1d9" }}
           >
             Onchain identity still requires significant user friction. Getting World ID verified requires finding an Orb. Connecting Gitcoin stamps takes effort. By 2026, adoption is 50M+ users (mostly in governance and airdrop use cases) but is still far from mainstream. Many crypto users still haven't set up an identity.
@@ -703,7 +650,6 @@ export default function OnchainIdentityReputationGuide() {
 
           {/* Info Box */}
           <div
-            className="bg-[#161b22] border-l-4 rounded-lg p-6 mb-6"
             style={{ borderColor: "#58a6ff" }}
           >
             <h3 className="font-semibold mb-2" style={{ color: "#58a6ff" }}>
@@ -737,7 +683,6 @@ export default function OnchainIdentityReputationGuide() {
 
             {/* FAQ 2 */}
             <div
-              className="bg-[#161b22] border rounded-lg p-6"
               style={{ borderColor: "#30363d" }}
             >
               <h3 className="font-semibold mb-3 text-lg" style={{ color: "#58a6ff" }}>
@@ -750,7 +695,6 @@ export default function OnchainIdentityReputationGuide() {
 
             {/* FAQ 3 */}
             <div
-              className="bg-[#161b22] border rounded-lg p-6"
               style={{ borderColor: "#30363d" }}
             >
               <h3 className="font-semibold mb-3 text-lg" style={{ color: "#58a6ff" }}>
@@ -763,7 +707,6 @@ export default function OnchainIdentityReputationGuide() {
 
             {/* FAQ 4 */}
             <div
-              className="bg-[#161b22] border rounded-lg p-6"
               style={{ borderColor: "#30363d" }}
             >
               <h3 className="font-semibold mb-3 text-lg" style={{ color: "#58a6ff" }}>
@@ -776,7 +719,6 @@ export default function OnchainIdentityReputationGuide() {
 
             {/* FAQ 5 */}
             <div
-              className="bg-[#161b22] border rounded-lg p-6"
               style={{ borderColor: "#30363d" }}
             >
               <h3 className="font-semibold mb-3 text-lg" style={{ color: "#58a6ff" }}>
@@ -809,7 +751,6 @@ export default function OnchainIdentityReputationGuide() {
             </a>
             <a
               href="/learn/zero-knowledge-proofs"
-              className="bg-[#161b22] border rounded-lg p-6 hover:border-[#58a6ff] transition"
               style={{ borderColor: "#30363d" }}
             >
               <h3 className="font-semibold mb-2 text-lg" style={{ color: "#58a6ff" }}>
@@ -821,7 +762,6 @@ export default function OnchainIdentityReputationGuide() {
             </a>
             <a
               href="/tools/degen-score"
-              className="bg-[#161b22] border rounded-lg p-6 hover:border-[#58a6ff] transition"
               style={{ borderColor: "#30363d" }}
             >
               <h3 className="font-semibold mb-2 text-lg" style={{ color: "#58a6ff" }}>
@@ -846,7 +786,6 @@ export default function OnchainIdentityReputationGuide() {
             By 2026, onchain identity is no longer theoretical. It's built, deployed, and being used by millions of people for governance, lending, and airdrops. Soulbound Tokens are a standard primitive. Ethereum Attestation Service is the infrastructure. Proof of personhood is practical.
           </p>
           <p
-            className="leading-relaxed mb-4"
             style={{ color: "#c9d1d9" }}
           >
             What's not yet mature: cross-chain identity, privacy-preserving computation at scale, regulatory clarity, and truly decentralized identity providers. But the foundation is solid.

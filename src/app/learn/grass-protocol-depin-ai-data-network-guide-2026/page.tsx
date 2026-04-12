@@ -110,7 +110,6 @@ export default function GrassProtocolGuide() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
       <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">

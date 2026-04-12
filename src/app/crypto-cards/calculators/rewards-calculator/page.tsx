@@ -79,22 +79,18 @@ export default function RewardsCalculatorPage() {
                   Cashback Rate (%)
                 </label>
                 <input
-                  type="number"
                   min={0}
                   max={10}
                   step={0.1}
                   value={cashbackRate}
                   onChange={(e) => setCashbackRate(Math.max(0, Math.min(10, Number(e.target.value))))}
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-3 text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                 />
                 <input
-                  type="range"
                   min={0}
                   max={10}
                   step={0.1}
                   value={cashbackRate}
                   onChange={(e) => setCashbackRate(Number(e.target.value))}
-                  className="w-full mt-2 accent-[var(--color-primary)]"
                 />
                 <div className="flex justify-between text-xs text-[var(--color-text-secondary)] mt-1">
                   <span>0%</span>
@@ -110,7 +106,6 @@ export default function RewardsCalculatorPage() {
                 <select
                   value={selectedCrypto}
                   onChange={(e) => setSelectedCrypto(Number(e.target.value))}
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-3 text-[var(--color-text)] focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                 >
                   {CRYPTO_OPTIONS.map((c, i) => (
                     <option key={c.symbol} value={i}>

@@ -337,7 +337,6 @@ export default function AccountAbstractionPage() {
                               padding: "12px 14px",
                               fontWeight: j === 0 ? 700 : 400,
                               color: j === 0 ? S.primary : S.text2,
-                              whiteSpace: "nowrap"
                             }}
                           >
                             {cell}

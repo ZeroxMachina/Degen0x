@@ -327,12 +327,8 @@ function CircularGauge({ score }: { score: number }) {
           strokeWidth="3"
         />
         <circle
-          cx="100"
-          cy="100"
           r={radius}
-          fill="none"
           stroke={risk.color}
-          strokeWidth="3"
           strokeDasharray={circumference}
           strokeDashoffset={offset}
           strokeLinecap="round"
@@ -395,8 +391,6 @@ function RadarChart({ dimensions, protocol }: { dimensions: RiskDimensions; prot
         cx={centerX}
         cy={centerY}
         r={gridRadius}
-        fill="none"
-        stroke="var(--glass-border)"
         strokeWidth="1"
         opacity="0.5"
       />
@@ -410,8 +404,6 @@ function RadarChart({ dimensions, protocol }: { dimensions: RiskDimensions; prot
       y1={centerY}
       x2={point[0]}
       y2={point[1]}
-      stroke="var(--glass-border)"
-      strokeWidth="1"
       opacity="0.3"
     />
   ));
@@ -446,7 +438,6 @@ function RadarChart({ dimensions, protocol }: { dimensions: RiskDimensions; prot
               r="4"
               fill="var(--color-primary)"
               stroke="var(--color-bg)"
-              strokeWidth="2"
             />
           );
         })}
@@ -620,7 +611,6 @@ export default function DeFiRiskScorer() {
                       </p>
                     </div>
                     <div
-                      className="px-2 py-1 rounded text-xs font-semibold"
                       style={{ color: risk.color, backgroundColor: risk.bgColor }}
                     >
                       {risk.tier}
@@ -686,7 +676,6 @@ export default function DeFiRiskScorer() {
                   <div key={protocol.id} className="space-y-6">
                     {/* Header */}
                     <div
-                      className="p-6 rounded-lg border backdrop-blur-sm"
                       style={{
                         backgroundColor: 'var(--glass-bg)',
                         borderColor: 'var(--glass-border)',
@@ -734,7 +723,6 @@ export default function DeFiRiskScorer() {
                         <CircularGauge score={overallRisk} />
                       </div>
                       <div
-                        className="p-6 rounded-lg border backdrop-blur-sm"
                         style={{
                           backgroundColor: 'var(--glass-bg)',
                           borderColor: 'var(--glass-border)',
@@ -764,7 +752,6 @@ export default function DeFiRiskScorer() {
 
                     {/* Risk Summary */}
                     <div
-                      className="p-6 rounded-lg border backdrop-blur-sm"
                       style={{
                         backgroundColor: 'var(--glass-bg)',
                         borderColor: 'var(--glass-border)',

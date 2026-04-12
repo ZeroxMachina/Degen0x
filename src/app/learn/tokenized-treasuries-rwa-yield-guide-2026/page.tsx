@@ -27,7 +27,6 @@ export default function TokenizedTreasuriesGuidePage() {
             RWA
           </span>
           <span
-            className="inline-block px-3 py-1 text-xs font-semibold rounded-full"
             style={{
               background: "rgba(34, 197, 94, 0.1)",
               color: "#22c55e",
@@ -37,7 +36,6 @@ export default function TokenizedTreasuriesGuidePage() {
             Yield
           </span>
           <span
-            className="inline-block px-3 py-1 text-xs font-semibold rounded-full"
             style={{
               background: "rgba(34, 197, 94, 0.1)",
               color: "#22c55e",
@@ -93,7 +91,6 @@ export default function TokenizedTreasuriesGuidePage() {
 
           <div>
             <div
-              className="text-sm font-medium mb-1"
               style={{ color: "var(--color-text-secondary)" }}
             >
               Total RWA On-Chain
@@ -102,7 +99,6 @@ export default function TokenizedTreasuriesGuidePage() {
           </div>
           <div>
             <div
-              className="text-sm font-medium mb-1"
               style={{ color: "var(--color-text-secondary)" }}
             >
               Average Yield
@@ -111,7 +107,6 @@ export default function TokenizedTreasuriesGuidePage() {
           </div>
           <div>
             <div
-              className="text-sm font-medium mb-1"
               style={{ color: "var(--color-text-secondary)" }}
             >
               Stablecoin Market
@@ -255,25 +250,21 @@ export default function TokenizedTreasuriesGuidePage() {
                   Product
                 </th>
                 <th
-                  className="text-left p-3 font-semibold"
                   style={{ color: "var(--color-text)" }}
                 >
                   Issuer
                 </th>
                 <th
-                  className="text-left p-3 font-semibold"
                   style={{ color: "var(--color-text)" }}
                 >
                   Underlying
                 </th>
                 <th
-                  className="text-left p-3 font-semibold"
                   style={{ color: "var(--color-text)" }}
                 >
                   Yield
                 </th>
                 <th
-                  className="text-left p-3 font-semibold"
                   style={{ color: "var(--color-text)" }}
                 >
                   Min Investment
@@ -398,7 +389,6 @@ export default function TokenizedTreasuriesGuidePage() {
           >
             <div className="flex items-start gap-4">
               <div
-                className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-bold"
                 style={{ background: "rgba(168, 85, 247, 0.2)", color: "#a855f7" }}
               >
                 2
@@ -426,7 +416,6 @@ export default function TokenizedTreasuriesGuidePage() {
           >
             <div className="flex items-start gap-4">
               <div
-                className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center font-bold"
                 style={{ background: "rgba(168, 85, 247, 0.2)", color: "#a855f7" }}
               >
                 3
@@ -639,31 +628,26 @@ export default function TokenizedTreasuriesGuidePage() {
 
         <div className="overflow-x-auto">
           <table
-            className="w-full border-collapse text-sm"
             style={{ borderCollapse: "collapse" }}
           >
             <thead>
               <tr style={{ borderBottom: "2px solid var(--color-border)" }}>
                 <th
-                  className="text-left p-3 font-semibold"
                   style={{ color: "var(--color-text)" }}
                 >
                   Feature
                 </th>
                 <th
-                  className="text-left p-3 font-semibold"
                   style={{ color: "var(--color-text)" }}
                 >
                   Tokenized Treasuries
                 </th>
                 <th
-                  className="text-left p-3 font-semibold"
                   style={{ color: "var(--color-text)" }}
                 >
                   Traditional Bonds
                 </th>
                 <th
-                  className="text-left p-3 font-semibold"
                   style={{ color: "var(--color-text)" }}
                 >
                   Stablecoins
@@ -910,7 +894,6 @@ export default function TokenizedTreasuriesGuidePage() {
             >
               <h3 className="font-semibold mb-2">Stablecoins Guide</h3>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)" }}
               >
                 Understand USDC, USDT, PYUSD, and the broader stablecoin
@@ -940,7 +923,6 @@ export default function TokenizedTreasuriesGuidePage() {
             >
               <h3 className="font-semibold mb-2">DeFi Yield Farming Guide</h3>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)" }}
               >
                 Learn how to earn yield through liquidity pools and lending
@@ -970,7 +952,6 @@ export default function TokenizedTreasuriesGuidePage() {
             >
               <h3 className="font-semibold mb-2">Staking Guide</h3>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)" }}
               >
                 Discover how to earn rewards by staking crypto on PoS networks.
@@ -999,7 +980,6 @@ export default function TokenizedTreasuriesGuidePage() {
             >
               <h3 className="font-semibold mb-2">DCA Calculator</h3>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)" }}
               >
                 Plan your dollar-cost averaging strategy for long-term investing.

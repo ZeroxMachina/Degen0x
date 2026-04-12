@@ -185,7 +185,6 @@ export default function FrenchLandingPage() {
               <div className="text-xs text-[var(--color-text-secondary)] mb-3">{ex.note}</div>
               <div className="flex items-center justify-between">
                 <span className="text-sm font-bold" style={{ color: "#3fb950" }}>{ex.rating}</span>
-                <Link href="/exchanges/best"
                       className="text-xs px-3 py-1 rounded-lg font-bold text-[var(--color-text)]"
                       style={{ background: "var(--color-primary)" }}>
                   Voir avis →

@@ -135,7 +135,6 @@ export default function LeveragedTokensGuide() {
             <li>
               <a
                 href="#platforms"
-                className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#6366f1] rounded-sm"
               >
                 6. Top Leveraged Token Platforms 2026
               </a>
@@ -863,7 +862,6 @@ export default function LeveragedTokensGuide() {
             </a>
             <a
               href="/learn/crypto-trading-bots-guide-2026"
-              className="block p-4 bg-[#0d1117] border border-[#30363d] rounded hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="text-[#58a6ff] font-semibold mb-2">
                 Crypto Trading Bots Guide 2026
@@ -874,7 +872,6 @@ export default function LeveragedTokensGuide() {
             </a>
             <a
               href="/tools/pnl-calculator"
-              className="block p-4 bg-[#0d1117] border border-[#30363d] rounded hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="text-[#58a6ff] font-semibold mb-2">
                 P&L Calculator
@@ -885,7 +882,6 @@ export default function LeveragedTokensGuide() {
             </a>
             <a
               href="/tools/options-calculator"
-              className="block p-4 bg-[#0d1117] border border-[#30363d] rounded hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="text-[#58a6ff] font-semibold mb-2">
                 Options Calculator

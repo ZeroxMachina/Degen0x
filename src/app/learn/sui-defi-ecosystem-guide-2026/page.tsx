@@ -97,13 +97,11 @@ export default function SuiDeFiEcosystemPage() {
           DeFi Ecosystem
         </span>
         <span
-          className="px-3 py-1 rounded-full text-xs font-medium"
           style={{ background: 'var(--glass-bg)', border: '1px solid #6fbcf0' }}
         >
           Intermediate
         </span>
         <span
-          className="px-3 py-1 rounded-full text-xs font-medium"
           style={{ background: 'var(--glass-bg)', border: '1px solid #6fbcf0' }}
         >
           March 2026
@@ -466,7 +464,6 @@ export default function SuiDeFiEcosystemPage() {
         </p>
 
         <div
-          className="rounded-xl p-6 mb-6"
           style={{ background: '#161b22', border: '1px solid #30363d' }}
         >
           <h4 className="font-semibold mb-4" style={{ color: '#6fbcf0' }}>
@@ -664,7 +661,6 @@ export default function SuiDeFiEcosystemPage() {
         </h2>
 
         <div
-          className="rounded-xl p-6 mb-6"
           style={{ background: '#161b22', border: '1px solid #30363d' }}
         >
           <h4 className="font-semibold mb-4" style={{ color: '#f85149' }}>
@@ -767,7 +763,6 @@ export default function SuiDeFiEcosystemPage() {
 
           <Link href="/learn/stablecoin-yield-strategies-2026">
             <div
-              className="rounded-xl p-6 cursor-pointer hover:border-[#58a6ff] transition-colors"
               style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
             >
               <h3 className="font-semibold mb-2" style={{ color: '#6fbcf0' }}>
@@ -781,7 +776,6 @@ export default function SuiDeFiEcosystemPage() {
 
           <Link href="/tools/defi-yields">
             <div
-              className="rounded-xl p-6 cursor-pointer hover:border-[#58a6ff] transition-colors"
               style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
             >
               <h3 className="font-semibold mb-2" style={{ color: '#6fbcf0' }}>
@@ -795,7 +789,6 @@ export default function SuiDeFiEcosystemPage() {
 
           <Link href="/learn">
             <div
-              className="rounded-xl p-6 cursor-pointer hover:border-[#58a6ff] transition-colors"
               style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
             >
               <h3 className="font-semibold mb-2" style={{ color: '#6fbcf0' }}>
@@ -811,7 +804,6 @@ export default function SuiDeFiEcosystemPage() {
 
       {/* CTA Box */}
       <div
-        className="rounded-xl p-8 mb-12"
         style={{
           background: 'linear-gradient(135deg, rgba(111,188,240,0.1) 0%, rgba(88,166,255,0.1) 100%)',
           border: '1px solid #6fbcf0',
@@ -843,7 +835,6 @@ export default function SuiDeFiEcosystemPage() {
           </Link>
           <Link href="/tools/bridge-aggregator">
             <button
-              className="px-6 py-3 rounded-lg font-semibold"
               style={{
                 background: 'var(--glass-bg)',
                 border: '1px solid var(--color-border)',

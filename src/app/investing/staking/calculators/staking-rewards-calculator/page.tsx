@@ -104,11 +104,9 @@ export default function StakingRewardsCalculatorPage() {
               Gross APY (%) <span className="text-[var(--color-text-secondary)] font-normal">- before fees</span>
             </label>
             <input
-              type="number"
               value={apy}
               onChange={(e) => { setApy(e.target.value); setSelectedPreset("Custom"); }}
               step="0.1"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
@@ -116,20 +114,16 @@ export default function StakingRewardsCalculatorPage() {
               Platform Fee (%) <span className="text-[var(--color-text-secondary)] font-normal">- % of rewards taken</span>
             </label>
             <input
-              type="number"
               value={fee}
               onChange={(e) => { setFee(e.target.value); setSelectedPreset("Custom"); }}
               step="1"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
             <label className="block text-sm font-medium text-[var(--color-text)] mb-1">Duration (months)</label>
             <input
-              type="number"
               value={duration}
               onChange={(e) => setDuration(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
@@ -137,10 +131,8 @@ export default function StakingRewardsCalculatorPage() {
               Token Price ($) <span className="text-[var(--color-text-secondary)] font-normal">- optional</span>
             </label>
             <input
-              type="number"
               value={tokenPrice}
               onChange={(e) => setTokenPrice(e.target.value)}
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
         </div>

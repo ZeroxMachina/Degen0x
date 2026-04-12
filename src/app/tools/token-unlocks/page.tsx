@@ -690,7 +690,6 @@ export default function TokenUnlocksPage() {
               <select
                 value={filterRisk}
                 onChange={(e) => setFilterRisk(e.target.value as any)}
-                className="bg-gray-700 text-[var(--color-text)] rounded px-3 py-2 border border-gray-600 text-sm"
               >
                 <option value="all">All Risk Levels</option>
                 <option value="critical">Critical (&gt;5%)</option>

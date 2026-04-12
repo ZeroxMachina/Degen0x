@@ -131,7 +131,6 @@ export default function TaxesHubPage() {
             <Link
               key={calc.href}
               href={calc.href}
-              className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6 card-hover"
             >
               <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">{calc.name}</h3>
               <p className="text-sm text-[var(--color-text-secondary)]">{calc.description}</p>
@@ -169,13 +168,11 @@ export default function TaxesHubPage() {
           </Link>
           <Link
             href="/taxes/compare/taxbit-vs-cointracker"
-            className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
             <span className="text-sm font-medium text-[var(--color-text)]">TaxBit vs CoinTracker</span>
           </Link>
           <Link
             href="/taxes/compare/koinly-vs-cryptotaxcalculator"
-            className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
             <span className="text-sm font-medium text-[var(--color-text)]">Koinly vs CryptoTaxCalculator</span>
           </Link>

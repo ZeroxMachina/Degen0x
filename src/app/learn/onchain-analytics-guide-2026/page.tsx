@@ -937,7 +937,6 @@ export default function OnChainAnalyticsGuide() {
 
             <Link
               href="/learn/defi-safety-guide-2026"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DeFi Safety Guide
@@ -949,7 +948,6 @@ export default function OnChainAnalyticsGuide() {
 
             <Link
               href="/learn/mev-guide-2026"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 MEV Guide 2026
@@ -961,7 +959,6 @@ export default function OnChainAnalyticsGuide() {
 
             <Link
               href="/tools/defi-yields"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 DeFi Yields Tracker
@@ -973,7 +970,6 @@ export default function OnChainAnalyticsGuide() {
 
             <Link
               href="/learn/crypto-market-cycles-guide-2026"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Crypto Market Cycles Guide
@@ -985,7 +981,6 @@ export default function OnChainAnalyticsGuide() {
 
             <Link
               href="/learn/technical-analysis-guide-2026"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Technical Analysis Guide
@@ -997,7 +992,6 @@ export default function OnChainAnalyticsGuide() {
 
             <Link
               href="/learn/crypto-arbitrage-strategies-guide-2026"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Crypto Arbitrage Strategies 2026

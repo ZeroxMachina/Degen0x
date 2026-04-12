@@ -407,15 +407,12 @@ export default function NewsletterPage() {
             <form onSubmit={handleSubmit} className="max-w-md mx-auto">
               <div className="flex gap-2">
                 <input
-                  type="email"
-                  placeholder="your@email.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
                   className="flex-1 rounded-xl border border-[var(--color-border)] px-4 py-3 text-sm bg-[var(--color-bg)] text-[var(--color-text)] focus:border-[var(--color-primary)] outline-none"
                 />
                 <button
-                  type="submit"
                   className="px-6 py-3 rounded-xl font-bold text-[var(--color-text)]"
                   style={{ background: "#f7931a" }}
                 >

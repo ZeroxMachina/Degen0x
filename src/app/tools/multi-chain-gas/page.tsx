@@ -189,17 +189,11 @@ export default function MultiChainGasDashboard() {
                     : 0.1;
 
       const variance =
-        chain.chainId === "ethereum"
           ? 15
-          : chain.chainId === "solana"
             ? 0.000002
-            : chain.chainId === "polygon"
               ? 25
-              : chain.chainId === "avalanche"
                 ? 15
-                : chain.chainId === "bsc"
                   ? 2
-                  : chain.chainId === "fantom"
                     ? 40
                     : 0.05;
 

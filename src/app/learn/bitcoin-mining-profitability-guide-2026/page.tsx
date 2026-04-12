@@ -72,7 +72,6 @@ export default function MiningProfitabilityPage() {
               Mining
             </span>
             <span
-              className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium"
               style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}
             >
               Intermediate
@@ -313,7 +312,6 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
-                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(34, 197, 94, 0.1)', color: '#22c55e' }}
                       >
                         A
@@ -335,7 +333,6 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
-                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(34, 197, 94, 0.1)', color: '#22c55e' }}
                       >
                         A-
@@ -357,7 +354,6 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
-                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}
                       >
                         B+
@@ -379,7 +375,6 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
-                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}
                       >
                         B
@@ -401,7 +396,6 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
-                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(241, 65, 108, 0.1)', color: '#f14170' }}
                       >
                         C+
@@ -461,7 +455,6 @@ export default function MiningProfitabilityPage() {
                 <span className="font-semibold">$50-100/mo</span>
               </div>
               <div
-                className="flex justify-between border-t pt-3"
                 style={{ color: '#e6edf3', borderColor: '#30363d' }}
               >
                 <span className="font-semibold">Total monthly cost @ $0.12/kWh</span>
@@ -490,7 +483,6 @@ export default function MiningProfitabilityPage() {
 
           {/* Calculator Card */}
           <div
-            className="mb-8 rounded-lg p-6 sm:p-8"
             style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
           >
             <h3 className="mb-6 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -604,7 +596,6 @@ export default function MiningProfitabilityPage() {
 
             {/* Solo Mining Card */}
             <div
-              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-4 text-lg font-semibold" style={{ color: '#06b6d4' }}>
@@ -659,7 +650,6 @@ export default function MiningProfitabilityPage() {
 
           {/* Info Box */}
           <div
-            className="mb-8 rounded-lg border-l-4 p-6"
             style={{
               backgroundColor: '#161b22',
               borderColor: '#06b6d4',
@@ -727,7 +717,6 @@ export default function MiningProfitabilityPage() {
 
           {/* Risk Alert Box */}
           <div
-            className="mb-8 rounded-lg border-l-4 p-6"
             style={{
               backgroundColor: '#161b22',
               borderColor: '#f14170',
@@ -794,7 +783,6 @@ export default function MiningProfitabilityPage() {
           <div className="space-y-6">
             {/* FAQ Item 1 */}
             <div
-              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -807,7 +795,6 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 2 */}
             <div
-              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -820,7 +807,6 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 3 */}
             <div
-              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -833,7 +819,6 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 4 */}
             <div
-              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -846,7 +831,6 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 5 */}
             <div
-              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -859,7 +843,6 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 6 */}
             <div
-              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -899,7 +882,6 @@ export default function MiningProfitabilityPage() {
 
             <Link
               href="/learn/bitcoin-layer-2-guide"
-              className="group rounded-lg p-4 transition-all hover:scale-105"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
@@ -918,7 +900,6 @@ export default function MiningProfitabilityPage() {
 
             <Link
               href="/learn/bitcoin-supply-shock-guide-2026"
-              className="group rounded-lg p-4 transition-all hover:scale-105"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
@@ -937,7 +918,6 @@ export default function MiningProfitabilityPage() {
 
             <Link
               href="/learn/advanced-defi-strategies"
-              className="group rounded-lg p-4 transition-all hover:scale-105"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">

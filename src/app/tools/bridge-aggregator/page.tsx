@@ -258,7 +258,6 @@ export default function BridgeAggregator() {
               <select
                 value={destChain}
                 onChange={(e) => setDestChain(e.target.value)}
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-[var(--color-text)] hover:border-cyan-400 transition"
               >
                 {chains.map((c) => (
                   <option key={c.id} value={c.id} disabled={c.id === sourceChain}>
@@ -280,7 +279,6 @@ export default function BridgeAggregator() {
               <select
                 value={selectedToken}
                 onChange={(e) => setSelectedToken(e.target.value)}
-                className="w-full bg-gray-700 border border-gray-600 rounded-lg p-3 text-[var(--color-text)] hover:border-cyan-400 transition"
               >
                 {tokens.map((t) => (
                   <option key={t} value={t}>

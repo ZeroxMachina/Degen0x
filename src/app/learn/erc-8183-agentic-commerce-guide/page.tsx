@@ -956,7 +956,6 @@ export default function ERC8183GuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="erc-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 X402 Agent Payments Guide
@@ -976,7 +975,6 @@ export default function ERC8183GuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="erc-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 ERC-8004 Identity & Reputation
@@ -996,7 +994,6 @@ export default function ERC8183GuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="erc-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 Agent Payment Protocols 2026
@@ -1007,7 +1004,6 @@ export default function ERC8183GuidePage() {
             </Link>
 
             <Link
-              href="/learn/ai-crypto-agents-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -1016,7 +1012,6 @@ export default function ERC8183GuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="erc-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 AI Crypto Agents Guide
@@ -1027,7 +1022,6 @@ export default function ERC8183GuidePage() {
             </Link>
 
             <Link
-              href="/learn/ai-agent-identity-nhi-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -1036,7 +1030,6 @@ export default function ERC8183GuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="erc-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 AI Agent Identity &amp; NHI Guide

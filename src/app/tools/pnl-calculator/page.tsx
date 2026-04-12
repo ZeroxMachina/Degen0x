@@ -230,7 +230,6 @@ export default function PnLCalculatorPage() {
                 Sell Price ($)
               </label>
               <input
-                type="number"
                 value={sellPrice}
                 onChange={e => setSellPrice(Number(e.target.value))}
                 style={{
@@ -253,7 +252,6 @@ export default function PnLCalculatorPage() {
               </label>
               <div style={{ display: "flex", gap: 6 }}>
                 <input
-                  type="number"
                   value={useQuantity ? quantity : investAmount}
                   onChange={e => (useQuantity ? setQuantity(Number(e.target.value)) : setInvestAmount(Number(e.target.value)))}
                   style={{
@@ -292,7 +290,6 @@ export default function PnLCalculatorPage() {
                 Fee %
               </label>
               <input
-                type="number"
                 value={feePercent}
                 onChange={e => setFeePercent(Number(e.target.value))}
                 step="0.1"
@@ -315,7 +312,6 @@ export default function PnLCalculatorPage() {
                 Leverage (1-100x)
               </label>
               <input
-                type="number"
                 value={leverage}
                 onChange={e => setLeverage(Math.min(100, Math.max(1, Number(e.target.value))))}
                 min="1"
@@ -460,7 +456,6 @@ export default function PnLCalculatorPage() {
                   }}
                 />
                 <input
-                  type="number"
                   placeholder="Buy price"
                   value={multiBuyPrice || ""}
                   onChange={e => setMultiBuyPrice(Number(e.target.value))}
@@ -474,7 +469,6 @@ export default function PnLCalculatorPage() {
                   }}
                 />
                 <input
-                  type="number"
                   placeholder="Sell price"
                   value={multiSellPrice || ""}
                   onChange={e => setMultiSellPrice(Number(e.target.value))}
@@ -488,7 +482,6 @@ export default function PnLCalculatorPage() {
                   }}
                 />
                 <input
-                  type="number"
                   placeholder="Amount"
                   value={multiAmount || ""}
                   onChange={e => setMultiAmount(Number(e.target.value))}
@@ -503,11 +496,9 @@ export default function PnLCalculatorPage() {
                   }}
                 />
                 <input
-                  type="number"
                   placeholder="Fees %"
                   value={multiTradeFees || ""}
                   onChange={e => setMultiTradeFees(Number(e.target.value))}
-                  step="0.1"
                   style={{
                     padding: "10px 14px",
                     borderRadius: 8,
@@ -640,7 +631,6 @@ export default function PnLCalculatorPage() {
                 Capital Gain ($)
               </label>
               <input
-                type="number"
                 value={taxGain}
                 onChange={e => setTaxGain(Number(e.target.value))}
                 style={{

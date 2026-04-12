@@ -466,7 +466,6 @@ export default function WhaleAlertTracker() {
                       className={`text-xs px-3 py-1 rounded transition ${
                         selectedChain === chain
                           ? "bg-purple-600 text-white"
-                          : "bg-gray-800 text-gray-400 hover:bg-gray-700"
                       }`}
                     >
                       {chain}

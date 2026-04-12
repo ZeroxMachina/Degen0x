@@ -646,7 +646,6 @@ const TokenLaunchRadar = () => {
             <select
               value={categoryFilter}
               onChange={(e) => setCategoryFilter(e.target.value)}
-              className="w-full px-3 py-2 rounded bg-[#0d1117] border border-[#30363d] text-[#e6edf3] text-sm focus:outline-none focus:border-[#484f58]"
             >
               <option value="all">All Categories</option>
               <option value="DeFi">DeFi</option>
@@ -664,7 +663,6 @@ const TokenLaunchRadar = () => {
             <select
               value={chainFilter}
               onChange={(e) => setChainFilter(e.target.value)}
-              className="w-full px-3 py-2 rounded bg-[#0d1117] border border-[#30363d] text-[#e6edf3] text-sm focus:outline-none focus:border-[#484f58]"
             >
               <option value="all">All Chains</option>
               <option value="Ethereum">Ethereum</option>
@@ -681,7 +679,6 @@ const TokenLaunchRadar = () => {
             <select
               value={platformFilter}
               onChange={(e) => setPlatformFilter(e.target.value)}
-              className="w-full px-3 py-2 rounded bg-[#0d1117] border border-[#30363d] text-[#e6edf3] text-sm focus:outline-none focus:border-[#484f58]"
             >
               <option value="all">All Platforms</option>
               <option value="Binance Launchpad">Binance Launchpad</option>
@@ -711,8 +708,6 @@ const TokenLaunchRadar = () => {
           onClick={() => setViewMode('calendar')}
           className={`flex items-center gap-2 px-4 py-2 rounded transition-all ${
             viewMode === 'calendar'
-              ? 'bg-blue-500 text-white'
-              : 'bg-[#161b22] text-[#8b949e] border border-[#30363d] hover:border-[#484f58]'
           }`}
         >
           <CalendarDays size={16} />

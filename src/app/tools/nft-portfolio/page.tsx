@@ -710,7 +710,6 @@ export default function NFTPortfolioTracker() {
                       <div key={r} className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
                           <div
-                            className="w-3 h-3 rounded-full"
                             style={{ backgroundColor: rarityBgColor(r) }}
                           />
                           <span className="text-[#8b949e] capitalize">{r}</span>
@@ -809,7 +808,6 @@ export default function NFTPortfolioTracker() {
                 <select
                   value={rarityFilter}
                   onChange={(e) => setRarityFilter(e.target.value as RarityFilter)}
-                  className="w-full bg-[#0d1117] border border-[#30363d] rounded-lg px-4 py-2 text-[#e6edf3] focus:border-[#58a6ff] focus:outline-none transition-colors"
                 >
                   <option value="all">All Rarities</option>
                   <option value="common">Common</option>
@@ -855,8 +853,6 @@ export default function NFTPortfolioTracker() {
                   onClick={() => setViewMode("list")}
                   className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     viewMode === "list"
-                      ? "bg-[#58a6ff] text-[#0d1117]"
-                      : "bg-[#0d1117] border border-[#30363d] text-[#e6edf3] hover:border-[#58a6ff]"
                   }`}
                 >
                   List
@@ -873,7 +869,6 @@ export default function NFTPortfolioTracker() {
                 </button>
                 <button
                   onClick={exportAsCSV}
-                  className="px-4 py-2 rounded-lg text-sm font-medium bg-[#238636] text-[var(--color-text)] hover:bg-[#2ea043] transition-colors"
                 >
                   Export CSV
                 </button>
@@ -973,7 +968,6 @@ export default function NFTPortfolioTracker() {
                         >
                           <p className="text-xs text-[#8b949e] mb-1">Total P&L</p>
                           <p
-                            className="font-bold"
                             style={{ color: pctColor(col.pnl) }}
                           >
                             {formatUSD(Math.abs(col.pnl))}
@@ -1025,7 +1019,6 @@ export default function NFTPortfolioTracker() {
                                   </div>
                                   <div className="text-right">
                                     <p
-                                      className="font-bold"
                                       style={{
                                         color: pctColor(
                                           nft.currentPrice - nft.purchasePrice
@@ -1156,13 +1149,11 @@ export default function NFTPortfolioTracker() {
                           {formatUSD(col.value)}
                         </td>
                         <td
-                          className="px-6 py-4 text-right text-sm font-semibold"
                           style={{ color: pctColor(col.pnl) }}
                         >
                           {formatUSD(Math.abs(col.pnl))}
                         </td>
                         <td
-                          className="px-6 py-4 text-right text-sm font-semibold"
                           style={{ color: pctColor(col.pnlPct) }}
                         >
                           {pctLabel(col.pnlPct)}
@@ -1213,7 +1204,6 @@ export default function NFTPortfolioTracker() {
                     <tr
                       key={nft.id}
                       className={`border-b border-[#30363d] hover:bg-[#0d1117] transition-colors ${
-                        idx % 2 === 0 ? "bg-[#161b22]" : ""
                       }`}
                     >
                       <td className="px-6 py-4">
@@ -1248,7 +1238,6 @@ export default function NFTPortfolioTracker() {
                         {formatUSD(nft.gasFeePaid)}
                       </td>
                       <td
-                        className="px-6 py-4 text-right text-sm font-semibold"
                         style={{
                           color: pctColor(
                             nft.currentPrice - nft.purchasePrice - nft.gasFeePaid

@@ -788,7 +788,6 @@ export default function ScrollGuide() {
 
             <a
               href="/learn/zero-knowledge-proofs"
-              className="p-4 rounded-lg border border-[#30363d] hover:border-[#fbbf24]/50 hover:bg-[#0d1117] transition-colors"
             >
               <h4 className="font-bold text-[#58a6ff] mb-2">Zero-Knowledge Proofs Explained</h4>
               <p className="text-sm text-[#8b949e]">Deep dive into ZK tech and why it matters</p>
@@ -796,7 +795,6 @@ export default function ScrollGuide() {
 
             <a
               href="/learn/zksync-era-guide"
-              className="p-4 rounded-lg border border-[#30363d] hover:border-[#fbbf24]/50 hover:bg-[#0d1117] transition-colors"
             >
               <h4 className="font-bold text-[#58a6ff] mb-2">zkSync Era Comparison</h4>
               <p className="text-sm text-[#8b949e]">How zkSync compares to Scroll</p>
@@ -804,7 +802,6 @@ export default function ScrollGuide() {
 
             <a
               href="/learn/cross-chain-bridges-guide"
-              className="p-4 rounded-lg border border-[#30363d] hover:border-[#fbbf24]/50 hover:bg-[#0d1117] transition-colors"
             >
               <h4 className="font-bold text-[#58a6ff] mb-2">Cross-Chain Bridges Guide</h4>
               <p className="text-sm text-[#8b949e]">Bridge security and best practices</p>

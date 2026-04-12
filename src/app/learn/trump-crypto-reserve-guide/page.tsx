@@ -21,7 +21,6 @@ export default function TrumpCryptoReserveGuidePage() {
             Policy & Regulation
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Updated March 2026
@@ -97,7 +96,6 @@ export default function TrumpCryptoReserveGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           Which Crypto Assets Are Included?
@@ -115,7 +113,6 @@ export default function TrumpCryptoReserveGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           Market Impact: What Happened to Bitcoin Price?
@@ -134,7 +131,6 @@ export default function TrumpCryptoReserveGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           The Geopolitical Angle: Nation-State Bitcoin Race
@@ -152,7 +148,6 @@ export default function TrumpCryptoReserveGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           Criticisms and Counterarguments
@@ -170,7 +165,6 @@ export default function TrumpCryptoReserveGuidePage() {
         </p>
 
         <h2
-          className="text-xl font-extrabold mt-8 mb-3"
           style={{ color: "var(--color-text)" }}
         >
           What Investors Should Know for 2026

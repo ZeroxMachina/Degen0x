@@ -204,7 +204,6 @@ export default function EIP7702SmartAccountsPage() {
                               padding: "12px 14px",
                               fontWeight: j === 0 ? 700 : 400,
                               color: j === 0 ? S.primary : S.text2,
-                              whiteSpace: "nowrap"
                             }}
                           >
                             {cell}
@@ -469,7 +468,6 @@ export default function EIP7702SmartAccountsPage() {
                     "Multi-sig social recovery",
                     "In-app DApp browser with 0x04 support",
                   ],
-                  status: "✓ Fully Supported"
                 },
                 {
                   name: "Trust Wallet",
@@ -481,7 +479,6 @@ export default function EIP7702SmartAccountsPage() {
                     "Multi-chain support",
                     "Mobile-first account abstraction",
                   ],
-                  status: "✓ Fully Supported"
                 },
                 {
                   name: "OKX Wallet",
@@ -493,7 +490,6 @@ export default function EIP7702SmartAccountsPage() {
                     "Multi-token gas payment",
                     "Enterprise smart account features",
                   ],
-                  status: "✓ Fully Supported"
                 },
               ].map((wallet, i) => (
                 <div key={i} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 24, marginBottom: 20 }}>

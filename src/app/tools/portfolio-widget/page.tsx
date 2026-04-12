@@ -124,10 +124,7 @@ function PieChart({ holdings }: PieChartProps) {
             {holdings.length}
           </text>
           <text
-            x="50"
             y="58"
-            textAnchor="middle"
-            dominantBaseline="middle"
             style={{ fontSize: "10px", fill: "#8b949e" }}
           >
             assets
@@ -306,8 +303,6 @@ function HoldingForm({ onAdd }: HoldingFormProps) {
             Purchase Price (USD)
           </label>
           <input
-            type="number"
-            placeholder="0.00"
             value={purchasePrice}
             onChange={(e) => setPurchasePrice(e.target.value)}
             step="0.01"

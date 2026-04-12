@@ -137,12 +137,10 @@ export default function CorrelationMatrixPage() {
           </div>
 
           <div
-            className="p-6 rounded-lg"
             style={{ backgroundColor: 'var(--color-surface)' }}
           >
             <p
               style={{ color: 'var(--color-text-secondary)' }}
-              className="text-sm font-medium mb-2"
             >
               Most Correlated Pair
             </p>
@@ -155,12 +153,10 @@ export default function CorrelationMatrixPage() {
           </div>
 
           <div
-            className="p-6 rounded-lg"
             style={{ backgroundColor: 'var(--color-surface)' }}
           >
             <p
               style={{ color: 'var(--color-text-secondary)' }}
-              className="text-sm font-medium mb-2"
             >
               Least Correlated Pair
             </p>
@@ -173,12 +169,10 @@ export default function CorrelationMatrixPage() {
           </div>
 
           <div
-            className="p-6 rounded-lg"
             style={{ backgroundColor: 'var(--color-surface)' }}
           >
             <p
               style={{ color: 'var(--color-text-secondary)' }}
-              className="text-sm font-medium mb-2"
             >
               Diversification Score
             </p>
@@ -332,7 +326,6 @@ export default function CorrelationMatrixPage() {
             </div>
             <div>
               <h3
-                className="text-lg font-semibold mb-2"
                 style={{ color: 'var(--color-primary)' }}
               >
                 Why Low Correlation Matters
@@ -347,7 +340,6 @@ export default function CorrelationMatrixPage() {
             </div>
             <div>
               <h3
-                className="text-lg font-semibold mb-2"
                 style={{ color: 'var(--color-primary)' }}
               >
                 Your Diversification Score
@@ -410,7 +402,6 @@ export default function CorrelationMatrixPage() {
 
             {/* Portfolio 2 - Balanced */}
             <div
-              className="p-6 rounded-lg border"
               style={{
                 backgroundColor: 'var(--color-surface)',
                 borderColor: 'var(--color-border)',
@@ -421,7 +412,6 @@ export default function CorrelationMatrixPage() {
               </h3>
               <p
                 style={{ color: 'var(--color-text-secondary)' }}
-                className="text-sm mb-4"
               >
                 Mixed correlation strategy
               </p>
@@ -437,7 +427,6 @@ export default function CorrelationMatrixPage() {
                   <li
                     key={item}
                     style={{ color: 'var(--color-text)' }}
-                    className="text-sm"
                   >
                     • {item}
                   </li>
@@ -450,7 +439,6 @@ export default function CorrelationMatrixPage() {
 
             {/* Portfolio 3 - Aggressive */}
             <div
-              className="p-6 rounded-lg border"
               style={{
                 backgroundColor: 'var(--color-surface)',
                 borderColor: 'var(--color-border)',
@@ -461,7 +449,6 @@ export default function CorrelationMatrixPage() {
               </h3>
               <p
                 style={{ color: 'var(--color-text-secondary)' }}
-                className="text-sm mb-4"
               >
                 Maximum variety approach
               </p>
@@ -477,7 +464,6 @@ export default function CorrelationMatrixPage() {
                   <li
                     key={item}
                     style={{ color: 'var(--color-text)' }}
-                    className="text-sm"
                   >
                     • {item}
                   </li>

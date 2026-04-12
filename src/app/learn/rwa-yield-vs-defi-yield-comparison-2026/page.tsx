@@ -143,7 +143,6 @@ export default function RWAVsDeFiYieldComparison() {
       tvl: "$8B+ (Uniswap alone)",
       riskLevel: "High",
       minInvestment: "Dust",
-      accessibility: "Fully permissionless"
     },
     {
       product: "Liquid Staking (JitoSOL/mSOL)",
@@ -152,7 +151,6 @@ export default function RWAVsDeFiYieldComparison() {
       tvl: "$15B+",
       riskLevel: "Medium",
       minInvestment: "Dust",
-      accessibility: "Fully permissionless"
     }
   ];
 

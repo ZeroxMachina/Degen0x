@@ -445,7 +445,6 @@ export default function OptionsCalculatorPage() {
                 x2={scalePrice(underlyingPrice)}
                 y2={svgHeight - padding.bottom}
                 stroke="#22c55e"
-                strokeWidth="2"
                 opacity="0.6"
               />
 
@@ -482,8 +481,6 @@ export default function OptionsCalculatorPage() {
                     x={scalePrice(price)}
                     y={svgHeight - 10}
                     textAnchor="middle"
-                    fontSize="11"
-                    fill="var(--color-text-secondary)"
                   >
                     ${price.toFixed(0)}
                   </text>
@@ -597,7 +594,6 @@ export default function OptionsCalculatorPage() {
                       Strike
                     </label>
                     <input
-                      type="number"
                       value={leg.strike}
                       onChange={e => {
                         const newLegs = [...legs];
@@ -620,7 +616,6 @@ export default function OptionsCalculatorPage() {
                       Premium
                     </label>
                     <input
-                      type="number"
                       value={leg.premium}
                       onChange={e => {
                         const newLegs = [...legs];

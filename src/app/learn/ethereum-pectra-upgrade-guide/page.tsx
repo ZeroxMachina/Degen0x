@@ -301,7 +301,6 @@ export default function EthereumPectraUpgradeGuide() {
       </p>
 
       <div
-        className="rounded-xl p-5 mb-6 border"
         style={{ background: "#161b22", borderColor: "#30363d" }}
       >
         <p className="text-sm font-semibold text-[#e6edf3] mb-3">📊 Blob Capacity: Before vs. After</p>
@@ -433,7 +432,6 @@ export default function EthereumPectraUpgradeGuide() {
         ].map((group) => (
           <div
             key={group.audience}
-            className="rounded-xl p-5 border"
             style={{ background: "#161b22", borderColor: "#30363d" }}
           >
             <p className="text-sm font-semibold text-[#e6edf3] mb-3">
@@ -557,7 +555,6 @@ export default function EthereumPectraUpgradeGuide() {
         ].map((item, i) => (
           <div
             key={i}
-            className="rounded-xl p-5 border"
             style={{ background: "#161b22", borderColor: "#30363d" }}
           >
             <p className="font-semibold text-[#e6edf3] mb-2">{item.q}</p>

@@ -295,7 +295,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
           border: '1px solid #30363d',
           borderRadius: '12px',
           padding: '24px',
-          marginBottom: '40px'
         }}>
           <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '16px', color: '#e6edf3' }}>
             Seal Framework Key Capabilities
@@ -363,7 +362,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
                     textAlign: 'left',
                     color: '#e6edf3',
                     fontWeight: 600,
-                    fontSize: '14px'
                   }}>
                     Approach
                   </th>
@@ -372,7 +370,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
                     textAlign: 'left',
                     color: '#e6edf3',
                     fontWeight: 600,
-                    fontSize: '14px'
                   }}>
                     Performance
                   </th>
@@ -381,7 +378,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
                     textAlign: 'left',
                     color: '#e6edf3',
                     fontWeight: 600,
-                    fontSize: '14px'
                   }}>
                     Compliance
                   </th>
@@ -390,7 +386,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
                     textAlign: 'left',
                     color: '#e6edf3',
                     fontWeight: 600,
-                    fontSize: '14px'
                   }}>
                     Ecosystem
                   </th>
@@ -518,7 +513,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
           border: '1px solid #30363d',
           borderRadius: '12px',
           padding: '24px',
-          marginBottom: '40px'
         }}>
           <h3 style={{ fontSize: '18px', fontWeight: 600, marginBottom: '12px', color: '#e6edf3' }}>
             Disclaimer
@@ -602,7 +596,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
               padding: '16px',
               textDecoration: 'none',
               color: '#58a6ff',
-              transition: 'all 0.2s'
             }}>
               <h3 style={{ fontSize: '15px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>
                 Sui DeFi Ecosystem Guide 2026
@@ -616,7 +609,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
               padding: '16px',
               textDecoration: 'none',
               color: '#58a6ff',
-              transition: 'all 0.2s'
             }}>
               <h3 style={{ fontSize: '15px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>
                 Zero Knowledge Proofs Guide
@@ -630,7 +622,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
               padding: '16px',
               textDecoration: 'none',
               color: '#58a6ff',
-              transition: 'all 0.2s'
             }}>
               <h3 style={{ fontSize: '15px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>
                 On-Chain Privacy Infrastructure Guide 2026
@@ -644,7 +635,6 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
               padding: '16px',
               textDecoration: 'none',
               color: '#58a6ff',
-              transition: 'all 0.2s'
             }}>
               <h3 style={{ fontSize: '15px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>
                 FHE (Fully Homomorphic Encryption) Guide 2026

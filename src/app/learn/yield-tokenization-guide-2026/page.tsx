@@ -605,7 +605,6 @@ export default function YieldTokenizationGuide() {
 
               <a
                 href="/tools/staking-apy"
-                className="bg-[#161b22] border border-[#30363d] rounded-xl p-4 hover:border-[#58a6ff] transition-colors group"
               >
                 <h3 className="font-bold text-[#58a6ff] group-hover:text-cyan-300 transition-colors mb-2">
                   Staking APY Tracker
@@ -617,7 +616,6 @@ export default function YieldTokenizationGuide() {
 
               <a
                 href="/tools/yield-farming-calculator"
-                className="bg-[#161b22] border border-[#30363d] rounded-xl p-4 hover:border-[#58a6ff] transition-colors group"
               >
                 <h3 className="font-bold text-[#58a6ff] group-hover:text-cyan-300 transition-colors mb-2">
                   Yield Farming Calculator
@@ -629,7 +627,6 @@ export default function YieldTokenizationGuide() {
 
               <a
                 href="/learn/advanced-defi-strategies"
-                className="bg-[#161b22] border border-[#30363d] rounded-xl p-4 hover:border-[#58a6ff] transition-colors group"
               >
                 <h3 className="font-bold text-[#58a6ff] group-hover:text-cyan-300 transition-colors mb-2">
                   Advanced DeFi Strategies
@@ -641,7 +638,6 @@ export default function YieldTokenizationGuide() {
 
               <a
                 href="/learn/stablecoin-yield-strategies-2026"
-                className="bg-[#161b22] border border-[#30363d] rounded-xl p-4 hover:border-[#58a6ff] transition-colors group"
               >
                 <h3 className="font-bold text-[#58a6ff] group-hover:text-cyan-300 transition-colors mb-2">
                   Stablecoin Yield Strategies 2026

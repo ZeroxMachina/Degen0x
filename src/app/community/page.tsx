@@ -272,7 +272,6 @@ export default function CommunityPage() {
                             {e.expert}
                           </span>
                           <span
-                            className="text-xs"
                             style={{ color: "var(--color-text-secondary)" }}
                           >
                             {e.role}
@@ -333,13 +332,11 @@ export default function CommunityPage() {
                       {/* Upvote */}
                       <div className="flex flex-col items-center gap-0.5 flex-shrink-0 min-w-[40px]">
                         <button
-                          className="text-sm"
                           style={{ color: "var(--color-text-secondary)" }}
                         >
                           ▲
                         </button>
                         <span
-                          className="text-sm font-bold"
                           style={{ color: "var(--color-primary)" }}
                         >
                           {t.upvotes}
@@ -433,7 +430,6 @@ export default function CommunityPage() {
             {/* Top Members */}
             <section className="glass rounded-xl p-5">
               <h3
-                className="text-sm font-bold mb-4 uppercase tracking-wide"
                 style={{ color: "var(--color-text-secondary)" }}
               >
                 🏆 Top Members This Month
@@ -464,7 +460,6 @@ export default function CommunityPage() {
                         {m.name}
                       </div>
                       <div
-                        className="text-xs"
                         style={{ color: "var(--color-text-secondary)" }}
                       >
                         {m.posts.toLocaleString()} posts
@@ -508,7 +503,6 @@ export default function CommunityPage() {
             {/* Quick Links */}
             <section className="glass rounded-xl p-5">
               <h3
-                className="text-sm font-bold mb-3"
                 style={{ color: "var(--color-text)" }}
               >
                 🔗 Useful Resources

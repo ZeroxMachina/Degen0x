@@ -231,7 +231,6 @@ export default function SmartContractSecurityAuditPage() {
               width: '100%',
               borderCollapse: 'collapse',
               fontSize: '14px',
-              marginBottom: '20px'
             }}>
               <thead>
                 <tr style={{ borderBottom: '2px solid #30363d' }}>
@@ -247,14 +246,12 @@ export default function SmartContractSecurityAuditPage() {
                     textAlign: 'left',
                     fontWeight: 600,
                     color: '#e6edf3',
-                    borderBottom: '2px solid #30363d'
                   }}>Description</th>
                   <th style={{
                     padding: '12px 16px',
                     textAlign: 'left',
                     fontWeight: 600,
                     color: '#e6edf3',
-                    borderBottom: '2px solid #30363d'
                   }}>Risk Level</th>
                 </tr>
               </thead>
@@ -318,7 +315,6 @@ export default function SmartContractSecurityAuditPage() {
             background: '#161b22',
             border: '1px solid #30363d',
             borderRadius: '12px',
-            marginBottom: '20px'
           }}>
             <p style={{ margin: '0', fontSize: '16px', lineHeight: '1.6' }}>
               <strong>Faulty input validation</strong> caused 34.6% of 2025 exploits. Access control issues remain the #1 loss category at $953M. These aren't theoretical—they're actively exploited vulnerabilities that audits are specifically designed to prevent.
@@ -371,7 +367,6 @@ export default function SmartContractSecurityAuditPage() {
               width: '100%',
               borderCollapse: 'collapse',
               fontSize: '14px',
-              marginBottom: '20px'
             }}>
               <thead>
                 <tr style={{ borderBottom: '2px solid #30363d' }}>
@@ -380,28 +375,24 @@ export default function SmartContractSecurityAuditPage() {
                     textAlign: 'left',
                     fontWeight: 600,
                     color: '#e6edf3',
-                    borderBottom: '2px solid #30363d'
                   }}>Firm</th>
                   <th style={{
                     padding: '12px 16px',
                     textAlign: 'left',
                     fontWeight: 600,
                     color: '#e6edf3',
-                    borderBottom: '2px solid #30363d'
                   }}>Specialties</th>
                   <th style={{
                     padding: '12px 16px',
                     textAlign: 'left',
                     fontWeight: 600,
                     color: '#e6edf3',
-                    borderBottom: '2px solid #30363d'
                   }}>Reputation</th>
                   <th style={{
                     padding: '12px 16px',
                     textAlign: 'left',
                     fontWeight: 600,
                     color: '#e6edf3',
-                    borderBottom: '2px solid #30363d'
                   }}>Cost</th>
                 </tr>
               </thead>
@@ -445,7 +436,6 @@ export default function SmartContractSecurityAuditPage() {
             background: '#161b22',
             border: '1px solid #30363d',
             borderRadius: '12px',
-            marginBottom: '20px'
           }}>
             <p style={{ margin: '0', fontSize: '16px', lineHeight: '1.6' }}>
               <strong>Pro Tip:</strong> Don't assume "bigger firm" = "safer protocol." Sherlock's community audits often catch issues bigger firms miss. Always read the actual audit report and check severity counts, not just firm name.
@@ -465,7 +455,6 @@ export default function SmartContractSecurityAuditPage() {
             background: '#161b22',
             border: '1px solid #30363d',
             borderRadius: '12px',
-            marginBottom: '20px'
           }}>
             <p style={{ margin: '0 0 12px 0', fontSize: '16px', lineHeight: '1.6' }}>
               <strong>Simple ERC20 Tokens:</strong> $5K-$15K | 1-2 weeks
@@ -514,7 +503,6 @@ export default function SmartContractSecurityAuditPage() {
             background: '#161b22',
             border: '1px solid #30363d',
             borderRadius: '12px',
-            marginBottom: '20px'
           }}>
             <p style={{ margin: '0', fontSize: '16px', lineHeight: '1.6' }}>
               <strong>Pattern:</strong> All three exploits were caused by vulnerabilities that proper audits would have caught. None involved novel attack vectors or 0-days. This is why audits remain critical—they prevent obvious-in-hindsight mistakes that lead to billions in losses.
@@ -576,7 +564,6 @@ export default function SmartContractSecurityAuditPage() {
             background: '#161b22',
             border: '1px solid #30363d',
             borderRadius: '12px',
-            marginBottom: '20px'
           }}>
             <p style={{ margin: '0', fontSize: '16px', lineHeight: '1.6' }}>
               <strong>Red Flag:</strong> If a protocol claims to be audited but provides no link to the report, or the report is behind a paywall, something is wrong. Reputable audits are public.
@@ -639,7 +626,6 @@ export default function SmartContractSecurityAuditPage() {
             background: '#161b22',
             border: '1px solid #30363d',
             borderRadius: '12px',
-            marginBottom: '20px'
           }}>
             <p style={{ margin: '0', fontSize: '16px', lineHeight: '1.6' }}>
               <strong>Bottom Line:</strong> An audit is necessary but not sufficient. It significantly reduces risk but doesn't eliminate it. Never invest more than you can afford to lose, even in audited protocols.
@@ -711,7 +697,6 @@ export default function SmartContractSecurityAuditPage() {
                 borderRadius: '12px',
                 color: '#58a6ff',
                 textDecoration: 'none',
-                transition: 'all 0.2s'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = '#0d1117';
@@ -734,7 +719,6 @@ export default function SmartContractSecurityAuditPage() {
                 borderRadius: '12px',
                 color: '#58a6ff',
                 textDecoration: 'none',
-                transition: 'all 0.2s'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = '#0d1117';
@@ -757,7 +741,6 @@ export default function SmartContractSecurityAuditPage() {
                 borderRadius: '12px',
                 color: '#58a6ff',
                 textDecoration: 'none',
-                transition: 'all 0.2s'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = '#0d1117';
@@ -780,7 +763,6 @@ export default function SmartContractSecurityAuditPage() {
                 borderRadius: '12px',
                 color: '#58a6ff',
                 textDecoration: 'none',
-                transition: 'all 0.2s'
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.background = '#0d1117';

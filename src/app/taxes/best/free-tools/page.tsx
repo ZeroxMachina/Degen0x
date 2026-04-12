@@ -164,7 +164,6 @@ export default function BestFreeToolsPage() {
           </Link>
           <Link
             href="/taxes/calculators/capital-gains-calculator"
-            className="rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover"
           >
             <h3 className="text-sm font-semibold text-[var(--color-text)] mb-1">Capital Gains Calculator</h3>
             <p className="text-xs text-[var(--color-text-secondary)]">Calculate capital gains on crypto trades</p>

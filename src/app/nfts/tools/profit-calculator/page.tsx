@@ -132,12 +132,9 @@ export default function ProfitCalculatorPage() {
             <div>
               <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">Gas Fee (buy)</label>
               <input
-                type="number"
-                step="0.001"
                 value={buyGas}
                 onChange={(e) => setBuyGas(e.target.value)}
                 placeholder="0.01"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
               />
             </div>
             <div>
@@ -145,11 +142,9 @@ export default function ProfitCalculatorPage() {
                 {buyCurrency} Price at Buy (USD)
               </label>
               <input
-                type="number"
                 value={buyCurrency === "ETH" ? ethPriceAtBuy : solPriceAtBuy}
                 onChange={(e) => buyCurrency === "ETH" ? setEthPriceAtBuy(e.target.value) : setSolPriceAtBuy(e.target.value)}
                 placeholder="3000"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
               />
             </div>
           </div>
@@ -162,12 +157,9 @@ export default function ProfitCalculatorPage() {
               <div>
                 <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">Sell Price</label>
                 <input
-                  type="number"
-                  step="0.001"
                   value={sellPrice}
                   onChange={(e) => setSellPrice(e.target.value)}
                   placeholder="3.0"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -175,7 +167,6 @@ export default function ProfitCalculatorPage() {
                 <select
                   value={sellCurrency}
                   onChange={(e) => setSellCurrency(e.target.value)}
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] focus:border-[var(--color-primary)] focus:outline-none"
                 >
                   <option value="ETH">ETH</option>
                   <option value="SOL">SOL</option>
@@ -185,12 +176,8 @@ export default function ProfitCalculatorPage() {
             <div>
               <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">Gas Fee (sell)</label>
               <input
-                type="number"
-                step="0.001"
                 value={sellGas}
                 onChange={(e) => setSellGas(e.target.value)}
-                placeholder="0.01"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
               />
             </div>
             <div>
@@ -198,11 +185,8 @@ export default function ProfitCalculatorPage() {
                 {sellCurrency} Price at Sell (USD)
               </label>
               <input
-                type="number"
                 value={sellCurrency === "ETH" ? ethPriceAtSell : solPriceAtSell}
                 onChange={(e) => sellCurrency === "ETH" ? setEthPriceAtSell(e.target.value) : setSolPriceAtSell(e.target.value)}
-                placeholder="3000"
-                className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
               />
             </div>
           </div>
@@ -215,23 +199,18 @@ export default function ProfitCalculatorPage() {
           <div>
             <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">Marketplace Fee (%)</label>
             <input
-              type="number"
               step="0.1"
               value={marketplaceFee}
               onChange={(e) => setMarketplaceFee(e.target.value)}
               placeholder="2.5"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
           <div>
             <label className="block text-sm font-medium text-[var(--color-text-secondary)] mb-2">Creator Royalty (%)</label>
             <input
-              type="number"
-              step="0.1"
               value={royaltyFee}
               onChange={(e) => setRoyaltyFee(e.target.value)}
               placeholder="5"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-4 py-2 text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
             />
           </div>
         </div>

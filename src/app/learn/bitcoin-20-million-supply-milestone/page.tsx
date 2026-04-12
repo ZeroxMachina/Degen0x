@@ -566,7 +566,6 @@ export default function Bitcoin20MillionGuide() {
           </a>
           <a
             href="/learn/bitcoin-layer-2-guide"
-            className="p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">Bitcoin Layer 2 Guide</h4>
             <p className="text-[#8b949e] text-sm">
@@ -575,7 +574,6 @@ export default function Bitcoin20MillionGuide() {
           </a>
           <a
             href="/tools/dca-calculator"
-            className="p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">DCA Calculator</h4>
             <p className="text-[#8b949e] text-sm">
@@ -584,7 +582,6 @@ export default function Bitcoin20MillionGuide() {
           </a>
           <a
             href="/learn/tokenomics-protocol-revenue-guide"
-            className="p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors"
           >
             <h4 className="text-[#58a6ff] font-semibold mb-2">Tokenomics 2.0 Guide</h4>
             <p className="text-[#8b949e] text-sm">

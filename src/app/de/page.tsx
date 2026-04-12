@@ -224,7 +224,6 @@ export default function GermanLandingPage() {
                   {ex.rating}
                 </span>
                 <Link
-                  href="/exchanges/best"
                   className="text-xs px-3 py-1 rounded-lg font-bold text-[var(--color-text)]"
                   style={{ background: "var(--color-primary)" }}
                 >

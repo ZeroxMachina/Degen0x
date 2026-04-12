@@ -270,9 +270,6 @@ const MarketDominancePage = () => {
                 <path
                   d={ethPath}
                   fill={hoveredSegment === 'eth' ? '#627EEA' : '#5B6BEF'}
-                  stroke="var(--color-bg)"
-                  strokeWidth="2"
-                  className="cursor-pointer transition-all duration-300"
                   onMouseEnter={() => setHoveredSegment('eth')}
                   onMouseLeave={() => setHoveredSegment(null)}
                   style={{
@@ -284,9 +281,6 @@ const MarketDominancePage = () => {
                 <path
                   d={altcoinsPath}
                   fill={hoveredSegment === 'altcoins' ? '#10B981' : '#059669'}
-                  stroke="var(--color-bg)"
-                  strokeWidth="2"
-                  className="cursor-pointer transition-all duration-300"
                   onMouseEnter={() => setHoveredSegment('altcoins')}
                   onMouseLeave={() => setHoveredSegment(null)}
                   style={{
@@ -309,7 +303,6 @@ const MarketDominancePage = () => {
                 <text
                   x={chartWidth / 2}
                   y={chartHeight / 2 + 15}
-                  textAnchor="middle"
                   className="text-lg"
                   fill="var(--color-text-secondary)"
                 >
@@ -349,14 +342,12 @@ const MarketDominancePage = () => {
 
           {/* Historical Trend */}
           <div
-            className="p-8 rounded-lg backdrop-blur-md border"
             style={{
               backgroundColor: 'var(--glass-bg)',
               borderColor: 'var(--color-border)',
             }}
           >
             <h2
-              className="text-2xl font-bold mb-6"
               style={{ color: 'var(--color-text)' }}
             >
               30-Day Trend
@@ -381,7 +372,6 @@ const MarketDominancePage = () => {
                 points={btcLine}
                 fill="none"
                 stroke="#F59E0B"
-                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
@@ -389,11 +379,7 @@ const MarketDominancePage = () => {
               {/* ETH Line */}
               <polyline
                 points={ethLine}
-                fill="none"
                 stroke="#5B6BEF"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
               />
 
               {/* Y-axis labels */}
@@ -404,7 +390,6 @@ const MarketDominancePage = () => {
                   y={yScale(y) + 5}
                   textAnchor="end"
                   fontSize="12"
-                  fill="var(--color-text-secondary)"
                 >
                   {y}%
                 </text>
@@ -432,7 +417,6 @@ const MarketDominancePage = () => {
           }}
         >
           <h2
-            className="text-2xl font-bold mb-6"
             style={{ color: 'var(--color-text)' }}
           >
             Dominance Shifts (24h)
@@ -448,13 +432,11 @@ const MarketDominancePage = () => {
                       ? 'rgba(16, 185, 129, 0.1)'
                       : 'rgba(239, 68, 68, 0.1)',
                   borderColor:
-                    shift.status === 'up'
                       ? 'rgba(16, 185, 129, 0.3)'
                       : 'rgba(239, 68, 68, 0.3)',
                 }}
               >
                 <p
-                  className="text-sm font-medium mb-2"
                   style={{ color: 'var(--color-text-secondary)' }}
                 >
                   {shift.sector}
@@ -485,7 +467,6 @@ const MarketDominancePage = () => {
 
         {/* Educational Section */}
         <div
-          className="p-8 rounded-lg backdrop-blur-md border"
           style={{
             backgroundColor: 'var(--glass-bg)',
             borderColor: 'var(--color-border)',
@@ -511,7 +492,6 @@ const MarketDominancePage = () => {
             </div>
             <div>
               <h3
-                className="text-lg font-semibold mb-2"
                 style={{ color: 'var(--color-primary)' }}
               >
                 Why It Matters
@@ -522,7 +502,6 @@ const MarketDominancePage = () => {
             </div>
             <div>
               <h3
-                className="text-lg font-semibold mb-2"
                 style={{ color: 'var(--color-primary)' }}
               >
                 Altseason Index
@@ -533,7 +512,6 @@ const MarketDominancePage = () => {
             </div>
             <div>
               <h3
-                className="text-lg font-semibold mb-2"
                 style={{ color: 'var(--color-primary)' }}
               >
                 Trading Strategy

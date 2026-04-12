@@ -131,7 +131,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* Feature 2: Honeypot Detection */}
             <div
-              className="glass p-6 rounded-lg border border-[var(--glass-border)]"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -148,7 +147,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* Feature 3: Liquidity Analysis */}
             <div
-              className="glass p-6 rounded-lg border border-[var(--glass-border)]"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -165,7 +163,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* Feature 4: Contract Audit */}
             <div
-              className="glass p-6 rounded-lg border border-[var(--glass-border)]"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -226,7 +223,6 @@ export default function TokenSecurityScannerPage() {
             {/* Step 2 */}
             <div className="relative">
               <div
-                className="glass p-6 rounded-lg border border-[var(--glass-border)] min-h-[200px] flex flex-col justify-between"
                 style={{
                   background: "var(--glass-bg)",
                   backdropFilter: "var(--glass-blur)",
@@ -250,7 +246,6 @@ export default function TokenSecurityScannerPage() {
             {/* Step 3 */}
             <div className="relative">
               <div
-                className="glass p-6 rounded-lg border border-[var(--glass-border)] min-h-[200px] flex flex-col justify-between"
                 style={{
                   background: "var(--glass-bg)",
                   backdropFilter: "var(--glass-blur)",
@@ -303,7 +298,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* FAQ 2 */}
             <details
-              className="glass p-6 rounded-lg border border-[var(--glass-border)] cursor-pointer group"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -323,7 +317,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* FAQ 3 */}
             <details
-              className="glass p-6 rounded-lg border border-[var(--glass-border)] cursor-pointer group"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -343,7 +336,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* FAQ 4 */}
             <details
-              className="glass p-6 rounded-lg border border-[var(--glass-border)] cursor-pointer group"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -363,7 +355,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* FAQ 5 */}
             <details
-              className="glass p-6 rounded-lg border border-[var(--glass-border)] cursor-pointer group"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -383,7 +374,6 @@ export default function TokenSecurityScannerPage() {
 
             {/* FAQ 6 */}
             <details
-              className="glass p-6 rounded-lg border border-[var(--glass-border)] cursor-pointer group"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -431,7 +421,6 @@ export default function TokenSecurityScannerPage() {
             {/* Related Tool 2 */}
             <a
               href="/tools/defi-risk-scanner"
-              className="glass p-4 rounded-lg border border-[var(--glass-border)] hover:border-[var(--color-primary)] transition-colors group"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -449,7 +438,6 @@ export default function TokenSecurityScannerPage() {
             {/* Related Tool 3 */}
             <a
               href="/tools/smart-money-tracker"
-              className="glass p-4 rounded-lg border border-[var(--glass-border)] hover:border-[var(--color-primary)] transition-colors group"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -467,7 +455,6 @@ export default function TokenSecurityScannerPage() {
             {/* Related Tool 4 */}
             <a
               href="/tools/token-screener"
-              className="glass p-4 rounded-lg border border-[var(--glass-border)] hover:border-[var(--color-primary)] transition-colors group"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",
@@ -485,7 +472,6 @@ export default function TokenSecurityScannerPage() {
             {/* Related Tool 5 */}
             <a
               href="/learn/common-crypto-scams"
-              className="glass p-4 rounded-lg border border-[var(--glass-border)] hover:border-[var(--color-primary)] transition-colors group"
               style={{
                 background: "var(--glass-bg)",
                 backdropFilter: "var(--glass-blur)",

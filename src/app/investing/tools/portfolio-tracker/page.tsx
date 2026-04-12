@@ -288,12 +288,9 @@ export default function PortfolioTrackerPage() {
                 <div>
                   <label style={{ display: "block", fontSize: "0.75rem", color: "#8b949e", marginBottom: "0.3rem", textTransform: "uppercase", letterSpacing: "0.05em" }}>Buy Price (USD)</label>
                   <input
-                    type="number"
                     value={formBuyPrice}
                     onChange={(e) => setFormBuyPrice(e.target.value)}
                     placeholder="e.g. 60000"
-                    min="0"
-                    step="any"
                     style={{ width: "100%", padding: "0.6rem 0.75rem", background: "#161b22", border: "1px solid #30363d", borderRadius: "8px", color: "#e6edf3", fontSize: "0.9rem" }}
                   />
                 </div>

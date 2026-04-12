@@ -367,7 +367,6 @@ export default function DCACalculatorPage() {
               <div style={{ position: "relative" }}>
                 <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "var(--color-text-secondary)" }}>$</span>
                 <input
-                  type="number"
                   value={useOverride ? overridePrice : currentPrice}
                   onChange={(e) => {
                     setUseOverride(true);
@@ -447,7 +446,6 @@ export default function DCACalculatorPage() {
                     fontSize: 12,
                     fontWeight: 700,
                     marginTop: 2,
-                    color: stats.pnl >= 0 ? "#22c55e" : "#f85149"
                   }}>
                     {stats.pnl >= 0 ? "+" : ""}{stats.pnlPercent.toFixed(1)}%
                   </div>

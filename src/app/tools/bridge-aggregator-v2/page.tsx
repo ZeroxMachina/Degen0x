@@ -378,7 +378,6 @@ export default function BridgeAggregatorV2Page() {
                 <select
                   value={destChain}
                   onChange={(e) => setDestChain(e.target.value)}
-                  className="w-full p-3 rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--color-text)] font-semibold focus:outline-none focus:border-[#3b82f6]"
                 >
                   {CHAINS.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
                 </select>
@@ -389,7 +388,6 @@ export default function BridgeAggregatorV2Page() {
                 <select
                   value={token}
                   onChange={(e) => setToken(e.target.value)}
-                  className="w-full p-3 rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--color-text)] font-semibold focus:outline-none focus:border-[#3b82f6]"
                 >
                   {["USDC", "USDT", "ETH", "DAI", "ARB", "OP"].map(t => <option key={t} value={t}>{t}</option>)}
                 </select>
@@ -401,7 +399,6 @@ export default function BridgeAggregatorV2Page() {
                   type="number"
                   value={amount}
                   onChange={(e) => setAmount(parseFloat(e.target.value) || 0)}
-                  className="w-full p-3 rounded-lg bg-[var(--glass-bg)] border border-[var(--glass-border)] text-[var(--color-text)] font-semibold focus:outline-none focus:border-[#3b82f6]"
                 />
               </div>
             </div>

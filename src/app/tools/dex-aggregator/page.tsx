@@ -189,7 +189,6 @@ export default function DexAggregator() {
                 <select
                   value={toToken}
                   onChange={e => setToToken(e.target.value)}
-                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-[var(--color-text)]"
                 >
                   {availableToTokens.map(t => (
                     <option key={t} value={t}>{t}</option>
@@ -202,7 +201,6 @@ export default function DexAggregator() {
                   type="number"
                   value={amount}
                   onChange={e => setAmount(e.target.value)}
-                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-[var(--color-text)]"
                   placeholder="1.0"
                   step="0.01"
                 />
@@ -212,7 +210,6 @@ export default function DexAggregator() {
                 <select
                   value={selectedChain}
                   onChange={e => setSelectedChain(e.target.value as Chain)}
-                  className="w-full bg-slate-700 border border-slate-600 rounded-lg px-4 py-2 text-[var(--color-text)]"
                 >
                   {CHAINS.map(c => (
                     <option key={c} value={c}>{c}</option>
@@ -451,7 +448,6 @@ export default function DexAggregator() {
                     <div>
                       <label className="block text-sm font-medium mb-2">Swap Amount (USD)</label>
                       <input
-                        type="number"
                         defaultValue="1000"
                         className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-[var(--color-text)] text-sm"
                         placeholder="1000"
@@ -470,9 +466,7 @@ export default function DexAggregator() {
                     <div>
                       <label className="block text-sm font-medium mb-2">Gas Price (Gwei)</label>
                       <input
-                        type="number"
                         defaultValue="45"
-                        className="w-full bg-slate-700 border border-slate-600 rounded-lg px-3 py-2 text-[var(--color-text)] text-sm"
                         placeholder="45"
                       />
                     </div>

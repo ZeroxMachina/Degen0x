@@ -311,12 +311,9 @@ export default function FeeCalculatorPage() {
               Trades / Month
             </label>
             <input
-              type="number"
               value={tradesPerMonth}
               onChange={(e) => setTradesPerMonth(e.target.value)}
               placeholder="10"
-              min="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] px-4 py-2.5 text-lg font-bold focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] mb-2"
             />
             <div className="flex flex-wrap gap-1.5">
               {TRADE_PRESETS.map(p => (
@@ -325,8 +322,6 @@ export default function FeeCalculatorPage() {
                   onClick={() => setTradesPerMonth(String(p.value))}
                   className={`text-xs px-2 py-1 rounded-md transition-colors ${
                     parseInt(tradesPerMonth) === p.value
-                      ? "bg-[var(--color-primary)] text-[var(--color-text)]"
-                      : "bg-[var(--color-bg)] border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                   }`}
                 >
                   {p.label}
@@ -345,7 +340,6 @@ export default function FeeCalculatorPage() {
                 onClick={() => setOrderType("taker")}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   orderType === "taker"
-                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
                     : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
@@ -355,8 +349,6 @@ export default function FeeCalculatorPage() {
                 onClick={() => setOrderType("maker")}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   orderType === "maker"
-                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
-                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 Maker
@@ -379,8 +371,6 @@ export default function FeeCalculatorPage() {
                 onClick={() => setVipMode(false)}
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   !vipMode
-                    ? "bg-[var(--color-primary)] text-[var(--color-text)]"
-                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 Base
@@ -390,7 +380,6 @@ export default function FeeCalculatorPage() {
                 className={`flex-1 rounded-lg px-3 py-2.5 text-sm font-semibold transition-colors ${
                   vipMode
                     ? "bg-amber-500 text-[var(--color-text)]"
-                    : "border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]"
                 }`}
               >
                 ⚡ VIP
@@ -659,7 +648,6 @@ export default function FeeCalculatorPage() {
           },
         ].map((scenario) => {
           const cheapestForScenario = EXCHANGES.map(ex => {
-            const rate = orderType === "maker"
               ? (vipMode ? ex.makerVIP : ex.makerBase)
               : (vipMode ? ex.takerVIP : ex.takerBase);
             return {

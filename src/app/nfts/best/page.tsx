@@ -196,7 +196,6 @@ export default function BestNftMarketplacesPage() {
                       {marketplace.cons.map((con, i) => (
                         <li
                           key={i}
-                          className="text-sm text-[var(--color-text-secondary)] flex items-start gap-2"
                         >
                           <span className="text-[var(--color-danger)] mt-0.5">-</span>
                           {con}

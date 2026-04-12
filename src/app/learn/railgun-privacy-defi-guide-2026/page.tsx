@@ -112,13 +112,11 @@ export default function RailgunPrivacyGuidePage() {
           Privacy &amp; DeFi
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#3b82f620", color: "#3b82f6" }}
         >
           Intermediate
         </span>
         <span
-          className="text-xs px-3 py-1 rounded-full font-bold"
           style={{ background: "#22c55e20", color: "#22c55e" }}
         >
           Updated March 2026
@@ -202,12 +200,10 @@ export default function RailgunPrivacyGuidePage() {
 
       {/* Table of Contents */}
       <nav
-        className="glass rounded-xl p-5 mb-8"
         style={{ border: "1px solid var(--color-border)" }}
         aria-label="Table of Contents"
       >
         <h2
-          className="text-sm font-extrabold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           📋 Table of Contents
@@ -275,7 +271,6 @@ export default function RailgunPrivacyGuidePage() {
       {/* Section 2 */}
       <section id="how-railgun-works" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           2. How Railgun Works
@@ -387,7 +382,6 @@ export default function RailgunPrivacyGuidePage() {
       {/* Section 3 */}
       <section id="comparisons" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           3. Railgun vs. Privacy Coins vs. Mixers
@@ -448,7 +442,6 @@ export default function RailgunPrivacyGuidePage() {
       {/* Section 4 */}
       <section id="use-cases" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           4. Key Use Cases
@@ -515,7 +508,6 @@ export default function RailgunPrivacyGuidePage() {
       {/* Section 5 */}
       <section id="ecosystem" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           5. Privacy DeFi Ecosystem Beyond Railgun
@@ -550,17 +542,14 @@ export default function RailgunPrivacyGuidePage() {
           ].map((protocol) => (
             <div
               key={protocol.name}
-              className="glass rounded-xl p-5"
               style={{ border: "1px solid var(--color-border)" }}
             >
               <h3
-                className="font-bold text-base mb-2"
                 style={{ color: "#10b981" }}
               >
                 {protocol.name}
               </h3>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
                 {protocol.desc}
@@ -593,7 +582,6 @@ export default function RailgunPrivacyGuidePage() {
       {/* Section 6 */}
       <section id="risks" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           6. Risks and Limitations
@@ -661,7 +649,6 @@ export default function RailgunPrivacyGuidePage() {
 
         {/* Disclaimer */}
         <div
-          className="rounded-xl p-4"
           style={{ background: "#161b22", border: "1px solid #30363d" }}
         >
           <p className="text-xs" style={{ color: "#8b949e", lineHeight: "1.6" }}>
@@ -677,7 +664,6 @@ export default function RailgunPrivacyGuidePage() {
       {/* Section 7 */}
       <section id="get-started" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           7. How to Get Started with Railgun
@@ -738,7 +724,6 @@ export default function RailgunPrivacyGuidePage() {
                   {opt.title}
                 </h3>
                 <p
-                  className="text-sm"
                   style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
                 >
                   {opt.desc}
@@ -763,7 +748,6 @@ export default function RailgunPrivacyGuidePage() {
       {/* FAQ */}
       <section id="faq" className="mb-10">
         <h2
-          className="text-2xl font-extrabold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           8. Frequently Asked Questions
@@ -798,7 +782,6 @@ export default function RailgunPrivacyGuidePage() {
           ].map(({ q, a }) => (
             <div
               key={q}
-              className="glass rounded-xl p-5"
               style={{ border: "1px solid var(--color-border)" }}
             >
               <h3
@@ -808,7 +791,6 @@ export default function RailgunPrivacyGuidePage() {
                 {q}
               </h3>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
                 {a}
@@ -912,7 +894,6 @@ export default function RailgunPrivacyGuidePage() {
           </Link>
           <Link
             href="/learn"
-            className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             More Guides

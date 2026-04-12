@@ -108,19 +108,16 @@ export default function OnchainCLOBDexGuidePage() {
             DeFi
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#f9731620", color: "#f97316" }}
           >
             Trading
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Intermediate
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#0ea5e920", color: "#0ea5e9" }}
           >
             Updated March 2026
@@ -297,7 +294,6 @@ export default function OnchainCLOBDexGuidePage() {
           </p>
         </div>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           A <strong style={{ color: "var(--color-text)" }}>CLOB DEX</strong> brings
@@ -322,7 +318,6 @@ export default function OnchainCLOBDexGuidePage() {
       {/* ── Section 2 ── */}
       <section className="mb-10" id="clob-vs-amm">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           2. CLOB vs AMM — Why Order Books Are Winning
@@ -380,7 +375,6 @@ export default function OnchainCLOBDexGuidePage() {
       {/* ── Section 3: Comparison Table ── */}
       <section className="mb-10" id="comparison">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           3. The CLOB DEX Comparison Table
@@ -394,7 +388,6 @@ export default function OnchainCLOBDexGuidePage() {
                   (h) => (
                     <th
                       key={h}
-                      className="px-4 py-3 text-left font-bold text-xs uppercase tracking-wide"
                       style={{ color: "var(--color-text-secondary)" }}
                     >
                       {h}
@@ -468,7 +461,6 @@ export default function OnchainCLOBDexGuidePage() {
           </table>
         </div>
         <p
-          className="text-xs"
           style={{ color: "var(--color-text-secondary)" }}
         >
           Fee tiers shown are base rates. Most platforms offer lower fees at higher 30-day volume tiers. Data as of March 2026.
@@ -478,13 +470,11 @@ export default function OnchainCLOBDexGuidePage() {
       {/* ── Section 4: Hyperliquid ── */}
       <section className="mb-10" id="hyperliquid">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           4. Hyperliquid — The Perp DEX King
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Hyperliquid is the undisputed leader of onchain CLOB trading. It runs a
@@ -494,7 +484,6 @@ export default function OnchainCLOBDexGuidePage() {
           volume exceeds $3.35 trillion.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           What sets Hyperliquid apart is its HyperCore architecture: every order
@@ -505,7 +494,6 @@ export default function OnchainCLOBDexGuidePage() {
           that interact natively with the exchange&apos;s spot and perpetual markets.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The HIP-3 upgrade brought permissionless perpetual market creation, enabling
@@ -528,13 +516,11 @@ export default function OnchainCLOBDexGuidePage() {
       {/* ── Section 5: dYdX ── */}
       <section className="mb-10" id="dydx">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           5. dYdX v4 — The Decentralization Purist
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           dYdX took a fundamentally different architectural path: rather than building
@@ -544,7 +530,6 @@ export default function OnchainCLOBDexGuidePage() {
           level — no single team controls the sequencer.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The tradeoff is throughput: dYdX claims up to 2,000 transactions per second,
@@ -566,13 +551,11 @@ export default function OnchainCLOBDexGuidePage() {
       {/* ── Section 6: Vertex ── */}
       <section className="mb-10" id="vertex">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           6. Vertex Protocol — The Fee Optimizer
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Vertex Protocol runs on Arbitrum and is the go-to choice for cost-sensitive
@@ -581,7 +564,6 @@ export default function OnchainCLOBDexGuidePage() {
           venues in all of crypto, centralized or decentralized.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The architecture uses an off-chain sequencer for fast order matching
@@ -603,13 +585,11 @@ export default function OnchainCLOBDexGuidePage() {
       {/* ── Section 7: Drift ── */}
       <section className="mb-10" id="drift">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           7. Drift Protocol — Solana&apos;s Hybrid Answer
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Drift takes an innovative hybrid approach on Solana, combining a
@@ -619,7 +599,6 @@ export default function OnchainCLOBDexGuidePage() {
           prices than a pure AMM while maintaining the liquidity depth of one.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Solana&apos;s sub-second block times make Drift feel nearly instant. The
@@ -641,13 +620,11 @@ export default function OnchainCLOBDexGuidePage() {
       {/* ── Section 8: Emerging ── */}
       <section className="mb-10" id="emerging">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           8. Emerging Players: Lighter, EdgeX & Aster
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The CLOB DEX landscape is still evolving rapidly. By the end of 2025,
@@ -657,7 +634,6 @@ export default function OnchainCLOBDexGuidePage() {
           dominance by any single platform.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           <strong style={{ color: "var(--color-text)" }}>Lighter</strong> runs on
@@ -680,13 +656,11 @@ export default function OnchainCLOBDexGuidePage() {
       {/* ── Section 9: Institutional ── */}
       <section className="mb-10" id="institutional">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           9. The Institutional Convergence
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           2026 marks the year CLOB DEXes begin converging toward institutional-grade
@@ -696,7 +670,6 @@ export default function OnchainCLOBDexGuidePage() {
           TradFi and DeFi derivatives.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The key advantages CLOB DEXes offer institutions are 24/7 trading, global
@@ -779,7 +752,6 @@ export default function OnchainCLOBDexGuidePage() {
 
       {/* Related Links */}
       <div
-        className="rounded-xl p-5"
         style={{
           background: "#161b22",
           border: "1px solid #30363d",
@@ -787,7 +759,6 @@ export default function OnchainCLOBDexGuidePage() {
         }}
       >
         <h2
-          className="text-sm font-bold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           Related Guides
@@ -806,7 +777,6 @@ export default function OnchainCLOBDexGuidePage() {
             <Link
               key={link.href}
               href={link.href}
-              className="block hover:underline"
               style={{ color: "#58a6ff" }}
             >
               {link.label}

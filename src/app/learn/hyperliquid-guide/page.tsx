@@ -21,7 +21,6 @@ export default function HyperLiquidGuidePage() {
             DeFi
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Updated March 2026

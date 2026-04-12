@@ -191,12 +191,8 @@ const ScoreBadge = ({ score }: { score: number }) => {
             strokeWidth="6"
           />
           <circle
-            cx="60"
-            cy="60"
             r={radius}
-            fill="none"
             stroke="currentColor"
-            strokeWidth="6"
             strokeDasharray={circumference}
             strokeDashoffset={offset}
             className={`${color} transition-all duration-700`}

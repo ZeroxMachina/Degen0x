@@ -193,7 +193,6 @@ export default function EthereumBlobSpaceGuide() {
           border: '2px solid #22c55e',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#e6edf3', fontWeight: '600', marginBottom: '10px' }}>💡 Key Insight: Two Fee Markets Now Exist</p>
           <p style={{ margin: 0, color: '#e6edf3', fontSize: '15px', lineHeight: '1.6' }}>
@@ -253,7 +252,6 @@ export default function EthereumBlobSpaceGuide() {
           border: '2px solid #06b6d4',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#e6edf3', fontWeight: '600', marginBottom: '10px' }}>📊 Before vs After EIP-4844</p>
           <div style={{ margin: '10px 0 0 0', color: '#e6edf3', fontSize: '15px', lineHeight: '1.8' }}>
@@ -339,7 +337,6 @@ export default function EthereumBlobSpaceGuide() {
           border: '2px solid #f59e0b',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#e6edf3', fontWeight: '600', marginBottom: '10px' }}>⚠️ The L1 Revenue Question</p>
           <p style={{ margin: 0, color: '#e6edf3', fontSize: '15px', lineHeight: '1.6' }}>
@@ -468,7 +465,6 @@ export default function EthereumBlobSpaceGuide() {
           border: '1px solid #30363d',
           borderRadius: '8px',
           padding: '20px',
-          marginBottom: '40px'
         }}>
           <p style={{ margin: 0, color: '#8b949e', fontSize: '14px', lineHeight: '1.6' }}>
             <strong>Disclaimer:</strong> This guide is educational information only and is not financial or technical advice. Ethereum's roadmap and protocol specifications are complex and subject to change. Layer 2 designs vary—not all L2s use blobs or have identical economics. Always conduct your own research into specific L2s before using them. While blob space has dramatically reduced L2 costs, fees can fluctuate based on demand. This guide does not guarantee fee levels and should not be the sole basis for technology or investment decisions. Consult with technical professionals for critical implementation questions.

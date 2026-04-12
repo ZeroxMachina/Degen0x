@@ -163,7 +163,6 @@ export default function WhereToSpendCryptoPage() {
                       merchant.type === "Direct"
                         ? "bg-[var(--color-success)]/10 text-[var(--color-success)]"
                         : merchant.type.startsWith("Direct")
-                        ? "bg-[var(--color-success)]/10 text-[var(--color-success)]"
                         : "bg-[var(--color-accent)]/10 text-[var(--color-accent)]"
                     }`}
                   >

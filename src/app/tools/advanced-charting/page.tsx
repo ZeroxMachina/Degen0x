@@ -418,7 +418,6 @@ export default function AdvancedChartingPage() {
           x2={canvasWidth - padding.right}
           y2={canvasHeight - padding.bottom}
           stroke={COLORS.border}
-          strokeWidth="2"
         />
 
         {/* Y-axis labels and grid lines */}
@@ -433,7 +432,6 @@ export default function AdvancedChartingPage() {
                 x2={canvasWidth - padding.right}
                 y2={y}
                 stroke={COLORS.border}
-                strokeWidth="0.5"
                 opacity="0.3"
               />
               <text
@@ -465,7 +463,6 @@ export default function AdvancedChartingPage() {
                 x={x}
                 y={canvasHeight - padding.bottom + 20}
                 textAnchor="middle"
-                fontSize="12"
                 fill={COLORS.textSecondary}
               >
                 {formatTime(ohlcvData[idx].timestamp)}
@@ -509,7 +506,6 @@ export default function AdvancedChartingPage() {
                 })
                 .filter(Boolean)
                 .join(" ")}
-              fill="none"
               stroke={COLORS.bb}
               strokeWidth="1"
               opacity="0.5"
@@ -526,9 +522,7 @@ export default function AdvancedChartingPage() {
                 })
                 .filter(Boolean)
                 .join(" ")}
-              fill="none"
               stroke={COLORS.bb}
-              strokeWidth="1"
             />
             {/* Lower band */}
             <polyline
@@ -541,11 +535,7 @@ export default function AdvancedChartingPage() {
                 })
                 .filter(Boolean)
                 .join(" ")}
-              fill="none"
               stroke={COLORS.bb}
-              strokeWidth="1"
-              opacity="0.5"
-              strokeDasharray="4,4"
             />
           </>
         )}
@@ -562,7 +552,6 @@ export default function AdvancedChartingPage() {
               })
               .filter(Boolean)
               .join(" ")}
-            fill="none"
             stroke={COLORS.sma200}
             strokeWidth="1.5"
             opacity="0.7"
@@ -581,10 +570,7 @@ export default function AdvancedChartingPage() {
               })
               .filter(Boolean)
               .join(" ")}
-            fill="none"
             stroke={COLORS.sma50}
-            strokeWidth="1.5"
-            opacity="0.7"
           />
         )}
 
@@ -600,10 +586,7 @@ export default function AdvancedChartingPage() {
               })
               .filter(Boolean)
               .join(" ")}
-            fill="none"
             stroke={COLORS.sma20}
-            strokeWidth="1.5"
-            opacity="0.7"
           />
         )}
 
@@ -619,9 +602,7 @@ export default function AdvancedChartingPage() {
               })
               .filter(Boolean)
               .join(" ")}
-            fill="none"
             stroke={COLORS.ema}
-            strokeWidth="2"
             opacity="0.8"
           />
         )}
@@ -652,7 +633,6 @@ export default function AdvancedChartingPage() {
                 x2={x}
                 y2={yLow}
                 stroke={color}
-                strokeWidth="1"
               />
               {/* Body */}
               <rect
@@ -662,7 +642,6 @@ export default function AdvancedChartingPage() {
                 height={bodyHeight}
                 fill={color}
                 stroke={color}
-                strokeWidth="1"
               />
             </g>
           );
@@ -677,7 +656,6 @@ export default function AdvancedChartingPage() {
               x2={canvasWidth - padding.right + 10}
               y2={scaleY(ohlcvData[selectedCandle].open)}
               stroke={COLORS.text}
-              strokeWidth="1"
             />
             <text
               x={canvasWidth - padding.right + 15}
@@ -694,12 +672,10 @@ export default function AdvancedChartingPage() {
               x2={canvasWidth - padding.right + 10}
               y2={scaleY(ohlcvData[selectedCandle].close)}
               stroke={COLORS.text}
-              strokeWidth="1"
             />
             <text
               x={canvasWidth - padding.right + 15}
               y={scaleY(ohlcvData[selectedCandle].close) + 4}
-              fontSize="11"
               fill={COLORS.text}
             >
               C: {formatPrice(ohlcvData[selectedCandle].close)}
@@ -716,7 +692,6 @@ export default function AdvancedChartingPage() {
               x2={crosshair.x}
               y2={canvasHeight - padding.bottom}
               stroke={COLORS.border}
-              strokeWidth="1"
               strokeDasharray="3,3"
               pointerEvents="none"
             />
@@ -726,9 +701,6 @@ export default function AdvancedChartingPage() {
               x2={canvasWidth - padding.right}
               y2={crosshair.y}
               stroke={COLORS.border}
-              strokeWidth="1"
-              strokeDasharray="3,3"
-              pointerEvents="none"
             />
 
             {/* Price tooltip */}
@@ -747,8 +719,6 @@ export default function AdvancedChartingPage() {
                   <text
                     x={canvasWidth - padding.right + 40}
                     y={crosshair.y + 2}
-                    textAnchor="middle"
-                    fontSize="12"
                     fontWeight="bold"
                     fill={COLORS.text}
                   >
@@ -930,13 +900,10 @@ export default function AdvancedChartingPage() {
                 x2={canvasWidth - padding.right}
                 y2={y}
                 stroke={COLORS.border}
-                strokeWidth="0.5"
-                opacity="0.3"
               />
               <text
                 x={padding.left - 5}
                 y={y + 3}
-                textAnchor="end"
                 fontSize="9"
                 fill={COLORS.textSecondary}
               >
@@ -958,16 +925,13 @@ export default function AdvancedChartingPage() {
             })
             .filter(Boolean)
             .join(" ")}
-          fill="none"
           stroke={COLORS.rsi}
-          strokeWidth="1.5"
         />
 
         {/* Labels */}
         <text
           x={canvasWidth / 2}
           y={canvasHeight - 5}
-          textAnchor="middle"
           fontSize="10"
           fill={COLORS.textSecondary}
         >
@@ -1013,8 +977,6 @@ export default function AdvancedChartingPage() {
           x2={canvasWidth - padding.right}
           y2={padding.top + chartHeight / 2}
           stroke={COLORS.border}
-          strokeWidth="0.5"
-          opacity="0.3"
         />
 
         {/* Histogram */}
@@ -1035,7 +997,6 @@ export default function AdvancedChartingPage() {
               width={candleWidth * 0.6}
               height={height}
               fill={color}
-              opacity="0.3"
             />
           );
         })}
@@ -1051,9 +1012,7 @@ export default function AdvancedChartingPage() {
             })
             .filter(Boolean)
             .join(" ")}
-          fill="none"
           stroke={COLORS.macdLine}
-          strokeWidth="1.5"
         />
 
         {/* Signal line */}
@@ -1067,18 +1026,13 @@ export default function AdvancedChartingPage() {
             })
             .filter(Boolean)
             .join(" ")}
-          fill="none"
           stroke={COLORS.macdSignal}
-          strokeWidth="1.5"
-          strokeDasharray="3,3"
         />
 
         {/* Labels */}
         <text
           x={canvasWidth / 2}
           y={canvasHeight - 5}
-          textAnchor="middle"
-          fontSize="10"
           fill={COLORS.textSecondary}
         >
           MACD

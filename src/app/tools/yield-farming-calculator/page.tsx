@@ -275,7 +275,6 @@ export default function YieldFarmingCalculatorPage() {
               </label>
               <div style={{ position: "relative" }}>
                 <input
-                  type="number"
                   value={apr}
                   onChange={(e) => setApr(Math.max(0, parseFloat(e.target.value) || 0))}
                   style={{
@@ -328,7 +327,6 @@ export default function YieldFarmingCalculatorPage() {
               </label>
               <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr", gap: 8 }}>
                 <input
-                  type="number"
                   value={duration}
                   onChange={(e) => setDuration(Math.max(1, parseFloat(e.target.value) || 1))}
                   style={{
@@ -370,7 +368,6 @@ export default function YieldFarmingCalculatorPage() {
                 Token Price Change (%)
               </label>
               <input
-                type="number"
                 value={tokenPriceChange}
                 onChange={(e) => setTokenPriceChange(parseFloat(e.target.value) || 0)}
                 style={{
@@ -392,7 +389,6 @@ export default function YieldFarmingCalculatorPage() {
                 Protocol Fee (%)
               </label>
               <input
-                type="number"
                 value={protocolFee}
                 onChange={(e) => setProtocolFee(Math.max(0, parseFloat(e.target.value) || 0))}
                 style={{
@@ -454,7 +450,6 @@ export default function YieldFarmingCalculatorPage() {
                       Price Change (%)
                     </label>
                     <input
-                      type="number"
                       value={token1PriceChange}
                       onChange={(e) => setToken1PriceChange(parseFloat(e.target.value) || 0)}
                       style={{
@@ -474,7 +469,6 @@ export default function YieldFarmingCalculatorPage() {
                       Token 2: {token2Name}
                     </label>
                     <input
-                      type="text"
                       value={token2Name}
                       onChange={(e) => setToken2Name(e.target.value)}
                       style={{
@@ -491,7 +485,6 @@ export default function YieldFarmingCalculatorPage() {
                       Price Change (%)
                     </label>
                     <input
-                      type="number"
                       value={token2PriceChange}
                       onChange={(e) => setToken2PriceChange(parseFloat(e.target.value) || 0)}
                       style={{

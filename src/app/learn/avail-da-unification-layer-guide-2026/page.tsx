@@ -115,7 +115,6 @@ const AvailGuide = () => {
         }}
       />
       <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
@@ -1091,7 +1090,6 @@ const AvailGuide = () => {
               </Link>
               <Link
                 href="/learn/data-availability-modular-blockchains-guide-2026"
-                className="block rounded bg-[#0d1117] p-4 border border-[#30363d] hover:border-[#58a6ff] transition"
               >
                 <h3 className="font-semibold text-[#58a6ff] mb-2">
                   Data Availability & Modular Blockchains
@@ -1102,7 +1100,6 @@ const AvailGuide = () => {
               </Link>
               <Link
                 href="/learn/restaking-eigenlayer-guide-2026"
-                className="block rounded bg-[#0d1117] p-4 border border-[#30363d] hover:border-[#58a6ff] transition"
               >
                 <h3 className="font-semibold text-[#58a6ff] mb-2">
                   Restaking & EigenLayer Security
@@ -1113,7 +1110,6 @@ const AvailGuide = () => {
               </Link>
               <Link
                 href="/learn/chain-abstraction-multichain-ux-guide-2026"
-                className="block rounded bg-[#0d1117] p-4 border border-[#30363d] hover:border-[#58a6ff] transition"
               >
                 <h3 className="font-semibold text-[#58a6ff] mb-2">
                   Chain Abstraction & Multichain UX

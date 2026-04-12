@@ -941,7 +941,6 @@ export default function CryptoRetirementIRAGuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="crypto-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 Tax-Loss Harvesting Guide
@@ -961,7 +960,6 @@ export default function CryptoRetirementIRAGuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="crypto-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 DCA Strategy Guide
@@ -981,7 +979,6 @@ export default function CryptoRetirementIRAGuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="crypto-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 Portfolio Rebalancing Guide

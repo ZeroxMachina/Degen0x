@@ -640,14 +640,12 @@ export default function DexScreener() {
             <div>
               <label className="block text-sm text-slate-400 mb-2">Min Holders: {minHolders}</label>
               <input
-                type="range"
                 min="100"
                 max="10000"
                 step="100"
                 value={minHolders}
                 onChange={(e) => setMinHolders(Number(e.target.value))}
                 aria-label={`Minimum holders: ${minHolders}`}
-                className="w-full"
               />
             </div>
           </div>

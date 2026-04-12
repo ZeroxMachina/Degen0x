@@ -331,12 +331,10 @@ export default function PortfolioTracker() {
             <div>
               <label className="block text-sm text-[#8b949e] mb-2">Buy Price</label>
               <input
-                type="number"
                 step="0.01"
                 value={newHolding.buyPrice}
                 onChange={e => setNewHolding({ ...newHolding, buyPrice: e.target.value })}
                 placeholder="35000"
-                className="w-full bg-[#0d1117] border border-[#30363d] rounded px-3 py-2 text-[var(--color-text)] placeholder-[#6e7681] focus:outline-none focus:border-blue-500 transition"
               />
             </div>
 

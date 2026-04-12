@@ -282,7 +282,6 @@ export default function RetirementCalculatorPage() {
                 Target Retirement Age: {retirementAge}
               </label>
               <input
-                type="range"
                 min={currentAge + 1}
                 max="100"
                 value={retirementAge}
@@ -331,7 +330,6 @@ export default function RetirementCalculatorPage() {
               <div style={{ position: "relative" }}>
                 <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "var(--color-text-secondary)" }}>$</span>
                 <input
-                  type="number"
                   value={cryptoPortfolioValue}
                   onChange={(e) => setCryptoPortfolioValue(Math.max(0, parseFloat(e.target.value) || 0))}
                   style={{
@@ -356,7 +354,6 @@ export default function RetirementCalculatorPage() {
               <div style={{ position: "relative" }}>
                 <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "var(--color-text-secondary)" }}>$</span>
                 <input
-                  type="number"
                   value={monthlyIncome}
                   onChange={(e) => setMonthlyIncome(Math.max(0, parseFloat(e.target.value) || 0))}
                   style={{
@@ -379,9 +376,7 @@ export default function RetirementCalculatorPage() {
                 Monthly Savings Rate: {monthlySavingsRate}% ({monthlyContributionToPhrase}/month)
               </label>
               <input
-                type="range"
                 min="0"
-                max="100"
                 value={monthlySavingsRate}
                 onChange={(e) => setMonthlySavingsRate(parseInt(e.target.value))}
                 style={{
@@ -401,9 +396,6 @@ export default function RetirementCalculatorPage() {
                 Crypto Allocation: {cryptoAllocation}% (Traditional: {100 - cryptoAllocation}%)
               </label>
               <input
-                type="range"
-                min="0"
-                max="100"
                 value={cryptoAllocation}
                 onChange={(e) => setCryptoAllocation(parseInt(e.target.value))}
                 style={{
@@ -423,9 +415,7 @@ export default function RetirementCalculatorPage() {
                 Expected Annual Crypto Return: {cryptoReturn}%
               </label>
               <input
-                type="range"
                 min="5"
-                max="100"
                 value={cryptoReturn}
                 onChange={(e) => setCryptoReturn(parseInt(e.target.value))}
                 style={{
@@ -445,7 +435,6 @@ export default function RetirementCalculatorPage() {
                 Expected Annual Traditional Return: {traditionalReturn}%
               </label>
               <input
-                type="range"
                 min="2"
                 max="15"
                 value={traditionalReturn}
@@ -469,7 +458,6 @@ export default function RetirementCalculatorPage() {
               <div style={{ position: "relative" }}>
                 <span style={{ position: "absolute", left: 14, top: "50%", transform: "translateY(-50%)", color: "var(--color-text-secondary)" }}>$</span>
                 <input
-                  type="number"
                   value={monthlyExpenses}
                   onChange={(e) => setMonthlyExpenses(Math.max(0, parseFloat(e.target.value) || 0))}
                   style={{

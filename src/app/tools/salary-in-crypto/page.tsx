@@ -207,7 +207,6 @@ export default function SalaryInCryptoPage() {
                       key={y}
                       onClick={() => hasData && setStartYear(Number(y))}
                       disabled={!hasData}
-                      className="px-3 py-1.5 rounded-lg text-sm font-bold"
                       style={{
                         background: startYear === Number(y) ? "#6366f1" : "var(--color-surface)",
                         color: !hasData ? "#555" : startYear === Number(y) ? "white" : "var(--color-text-secondary)",
@@ -297,7 +296,6 @@ export default function SalaryInCryptoPage() {
                   </div>
                   <div className="rounded-full h-4 overflow-hidden" style={{ background: "#30363d" }}>
                     <div
-                      className="h-full rounded-full"
                       style={{
                         width: `${Math.min(100, (results.inflationAdjustedCash / (results.cryptoPortfolioValue + results.totalSalaryEarned * (1 - allocation / 100))) * 100)}%`,
                         background: "linear-gradient(90deg, #d29922, #f59e0b)",

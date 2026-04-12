@@ -486,7 +486,6 @@ export default function SonicBlockchainGuide() {
               ].map((row, i) => (
                 <tr
                   key={i}
-                  className="border-b border-[#30363d] hover:bg-[#161b22] transition-colors"
                 >
                   {row.map((cell, j) => (
                     <td

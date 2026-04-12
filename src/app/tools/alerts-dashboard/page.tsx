@@ -469,7 +469,6 @@ export default function AlertsDashboardPage() {
             <div style={{ marginTop: 12 }}>
               <label style={labelStyle}>Target Value</label>
               <input
-                type="text"
                 value={formData.targetValue}
                 onChange={e => setFormData({ ...formData, targetValue: e.target.value })}
                 placeholder="e.g., $90,000 or 5% or >1M ETH"
@@ -633,9 +632,7 @@ export default function AlertsDashboardPage() {
                     ? "#f85149"
                     : "#3fb950";
               const stateIcon =
-                alert.state === "triggered"
                   ? "🎯"
-                  : alert.state === "snoozed"
                     ? "⏸"
                     : "✅";
               const typeIcon =

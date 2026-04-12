@@ -332,7 +332,6 @@ export default function PartnersPage() {
 
       {/* ── Application Form ── */}
       <section id="apply" className="mb-10">
-        <div className="rounded-2xl border border-[var(--color-border)] overflow-hidden"
              style={{ background: "var(--color-surface)" }}>
           <div className="p-6 border-b border-[var(--color-border)]"
                style={{ background: "linear-gradient(135deg, #f7931a08, #6366f108)" }}>

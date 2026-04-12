@@ -292,7 +292,6 @@ function AddPositionModal({ isOpen, onClose, onAdd }: AddPositionModalProps) {
                   Borrowed Amount (USD)
                 </label>
                 <input
-                  type="number"
                   placeholder="0"
                   value={borrowed}
                   onChange={(e) => setBorrowed(e.target.value)}
@@ -316,7 +315,6 @@ function AddPositionModal({ isOpen, onClose, onAdd }: AddPositionModalProps) {
                 Pool Value (USD)
               </label>
               <input
-                type="number"
                 placeholder="5000"
                 value={lpValue}
                 onChange={(e) => setLpValue(e.target.value)}
@@ -339,7 +337,6 @@ function AddPositionModal({ isOpen, onClose, onAdd }: AddPositionModalProps) {
                 Staking Value (USD)
               </label>
               <input
-                type="number"
                 placeholder="2000"
                 value={stakingValue}
                 onChange={(e) => setStakingValue(e.target.value)}
@@ -380,7 +377,6 @@ function AddPositionModal({ isOpen, onClose, onAdd }: AddPositionModalProps) {
             </button>
 
             <button
-              type="button"
               onClick={onClose}
               style={{
                 padding: "0.75rem",

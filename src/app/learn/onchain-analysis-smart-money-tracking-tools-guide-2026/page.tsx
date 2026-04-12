@@ -1912,7 +1912,6 @@ export default function OnchainAnalysisGuide() {
         }}
       />
       <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(faqSchema),
         }}

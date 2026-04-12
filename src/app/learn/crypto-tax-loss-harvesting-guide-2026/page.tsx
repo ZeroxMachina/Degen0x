@@ -958,7 +958,6 @@ export default function CryptoTaxLossHarvestingGuide() {
 
             <Link
               href="/tools/pnl-calculator"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 P&L Calculator
@@ -970,7 +969,6 @@ export default function CryptoTaxLossHarvestingGuide() {
 
             <Link
               href="/learn/crypto-regulations-2026"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Crypto Regulations Guide 2026
@@ -982,7 +980,6 @@ export default function CryptoTaxLossHarvestingGuide() {
 
             <Link
               href="/taxes"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Crypto Taxes Hub
@@ -994,7 +991,6 @@ export default function CryptoTaxLossHarvestingGuide() {
 
             <Link
               href="/tools/portfolio-tracker"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Portfolio Tracker
@@ -1006,7 +1002,6 @@ export default function CryptoTaxLossHarvestingGuide() {
 
             <Link
               href="/learn/common-crypto-scams"
-              className="bg-[#161b22] border border-[#30363d] rounded-xl p-6 hover:border-[#58a6ff] transition-colors"
             >
               <h3 className="font-semibold text-[#58a6ff] mb-2">
                 Common Crypto Scams

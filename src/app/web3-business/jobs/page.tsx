@@ -373,7 +373,6 @@ export default function CryptoJobsPage() {
                             {job.salary}
                           </div>
                           <div
-                            className="text-xs"
                             style={{ color: "var(--color-text-secondary)" }}
                           >
                             {job.posted}
@@ -402,7 +401,6 @@ export default function CryptoJobsPage() {
                         {job.tags.map((tag) => (
                           <span
                             key={tag}
-                            className="text-xs px-2 py-0.5 rounded-full"
                             style={{
                               background: "var(--color-primary)" + "15",
                               color: "var(--color-primary)",
@@ -503,7 +501,6 @@ export default function CryptoJobsPage() {
             {/* Resources */}
             <section className="glass rounded-xl p-5">
               <h3
-                className="text-sm font-bold mb-4 uppercase tracking-wide"
                 style={{ color: "var(--color-text-secondary)" }}
               >
                 📚 Career Resources
@@ -528,7 +525,6 @@ export default function CryptoJobsPage() {
                         {r.title}
                       </div>
                       <div
-                        className="text-xs"
                         style={{ color: "var(--color-text-secondary)" }}
                       >
                         {r.desc}
@@ -542,7 +538,6 @@ export default function CryptoJobsPage() {
             {/* Alert signup */}
             <section className="glass rounded-xl p-5">
               <h3
-                className="text-sm font-bold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
                 🔔 Job Alerts

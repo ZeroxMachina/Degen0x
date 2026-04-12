@@ -495,7 +495,6 @@ export default function PerpFundingPage() {
             label="Total Open Interest"
             value={`$${(stats.totalOI / 1000).toFixed(1)}B`}
             subtext={`${filteredData.length} markets`}
-            color="blue"
           />
         </div>
 
@@ -528,7 +527,6 @@ export default function PerpFundingPage() {
           </div>
           <div>
             <label
-              className="block text-sm font-medium"
               style={{ color: 'var(--color-text-secondary)' }}
             >
               Filter by Exchange
@@ -536,7 +534,6 @@ export default function PerpFundingPage() {
             <select
               value={selectedExchange}
               onChange={(e) => setSelectedExchange(e.target.value)}
-              className="mt-1 rounded-lg border px-3 py-2 text-sm"
               style={{
                 backgroundColor: 'var(--color-surface)',
                 borderColor: 'var(--color-border)',
@@ -578,7 +575,6 @@ export default function PerpFundingPage() {
                   Asset <SortIcon field="asset" />
                 </th>
                 <th
-                  className="cursor-pointer select-none px-4 py-3 text-left font-semibold transition-colors hover:opacity-70"
                   style={{ color: 'var(--color-text-secondary)' }}
                   onClick={() => handleSort('exchange')}
                 >
@@ -592,7 +588,6 @@ export default function PerpFundingPage() {
                   Funding Rate (8h) <SortIcon field="fundingRate" />
                 </th>
                 <th
-                  className="cursor-pointer select-none px-4 py-3 text-right font-semibold transition-colors hover:opacity-70"
                   style={{ color: 'var(--color-text-secondary)' }}
                   onClick={() => handleSort('annualizedRate')}
                 >
@@ -605,14 +600,12 @@ export default function PerpFundingPage() {
                   Next Funding
                 </th>
                 <th
-                  className="cursor-pointer select-none px-4 py-3 text-right font-semibold transition-colors hover:opacity-70"
                   style={{ color: 'var(--color-text-secondary)' }}
                   onClick={() => handleSort('openInterest')}
                 >
                   Open Interest <SortIcon field="openInterest" />
                 </th>
                 <th
-                  className="px-4 py-3 text-center font-semibold"
                   style={{ color: 'var(--color-text-secondary)' }}
                 >
                   History (7 periods)
@@ -709,20 +702,17 @@ export default function PerpFundingPage() {
             </div>
 
             <div
-              className="rounded-lg border p-6"
               style={{
                 backgroundColor: 'var(--color-surface)',
                 borderColor: 'var(--color-border)',
               }}
             >
               <h3
-                className="mb-3 text-lg font-semibold"
                 style={{ color: 'var(--color-primary)' }}
               >
                 Why They Matter
               </h3>
               <p
-                className="leading-relaxed"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
                 High positive rates indicate bullish sentiment and can signal potential reversals. They represent real yield opportunities for traders taking counter-positions. Annualized rates compound the 8-hour rates over 365 days with 3 funding periods per day (8h cycles).
@@ -730,20 +720,17 @@ export default function PerpFundingPage() {
             </div>
 
             <div
-              className="rounded-lg border p-6"
               style={{
                 backgroundColor: 'var(--color-surface)',
                 borderColor: 'var(--color-border)',
               }}
             >
               <h3
-                className="mb-3 text-lg font-semibold"
                 style={{ color: 'var(--color-primary)' }}
               >
                 Trading Opportunities
               </h3>
               <p
-                className="leading-relaxed"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
                 High positive rates reward short sellers. Extreme rates often precede trend reversals. Compare rates across exchanges—arbitrage opportunities exist when rates diverge significantly. Use funding rates with technical analysis for better entries.
@@ -751,20 +738,17 @@ export default function PerpFundingPage() {
             </div>
 
             <div
-              className="rounded-lg border p-6"
               style={{
                 backgroundColor: 'var(--color-surface)',
                 borderColor: 'var(--color-border)',
               }}
             >
               <h3
-                className="mb-3 text-lg font-semibold"
                 style={{ color: 'var(--color-primary)' }}
               >
                 Risk Management
               </h3>
               <p
-                className="leading-relaxed"
                 style={{ color: 'var(--color-text-secondary)' }}
               >
                 Never trade funding rates alone. High rates can persist during strong trends. Use stop losses and position sizing. Monitor margin ratios and liquidation prices. Funding rates are a signal, not a guarantee—always combine with fundamental and technical analysis.

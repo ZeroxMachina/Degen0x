@@ -278,7 +278,6 @@ export default function LendingComparisonPage() {
                   <select
                     value={selectedAsset}
                     onChange={(e) => setSelectedAsset(e.target.value)}
-                    className="w-full px-4 py-2.5 bg-[var(--glass-bg)] border border-[var(--color-border)] rounded-lg text-[var(--color-text)] font-medium focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                   >
                     {ASSETS.map((asset) => (
                       <option key={asset.symbol} value={asset.symbol}>
@@ -293,7 +292,6 @@ export default function LendingComparisonPage() {
                   <select
                     value={selectedChain}
                     onChange={(e) => setSelectedChain(e.target.value)}
-                    className="w-full px-4 py-2.5 bg-[var(--glass-bg)] border border-[var(--color-border)] rounded-lg text-[var(--color-text)] font-medium focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                   >
                     <option value="All">All Chains</option>
                     {CHAINS.map((chain) => (
@@ -309,7 +307,6 @@ export default function LendingComparisonPage() {
                   <select
                     value={selectedProtocol}
                     onChange={(e) => setSelectedProtocol(e.target.value)}
-                    className="w-full px-4 py-2.5 bg-[var(--glass-bg)] border border-[var(--color-border)] rounded-lg text-[var(--color-text)] font-medium focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)]"
                   >
                     <option value="All">All Protocols</option>
                     {LENDING_PROTOCOLS.map((p) => (
@@ -348,7 +345,6 @@ export default function LendingComparisonPage() {
                         Supply APY {sortColumn === "supplyAPY" && (sortDirection === "asc" ? "↑" : "↓")}
                       </th>
                       <th
-                        className="px-4 py-3 text-right text-xs font-bold text-[var(--color-text-secondary)] uppercase cursor-pointer hover:text-[var(--color-text)]"
                         onClick={() => {
                           setSortColumn("borrowAPY");
                           setSortDirection(sortDirection === "asc" ? "desc" : "asc");

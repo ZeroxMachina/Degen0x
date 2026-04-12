@@ -364,10 +364,7 @@ export default function NFTRarityChecker() {
                 fill="none"
               />
               <path
-                d="M 30 100 A 70 70 0 0 1 170 100"
                 stroke={rarityTier.color}
-                strokeWidth="8"
-                fill="none"
                 strokeDasharray={`${(rarityScore / 100) * 220} 220`}
                 style={{ transition: 'stroke-dasharray 0.3s' }}
               />

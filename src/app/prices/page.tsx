@@ -122,7 +122,6 @@ export default function PricesPage() {
                 <Link
                   key={token.slug}
                   href={`/prices/${token.slug}`}
-                  className="flex items-center justify-between py-1.5 hover:opacity-80 transition-opacity group"
                 >
                   <div className="flex items-center gap-3">
                     <span className="text-xs text-[var(--color-text-secondary)] w-5">{token.rank}</span>

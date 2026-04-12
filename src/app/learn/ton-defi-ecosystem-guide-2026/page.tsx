@@ -760,7 +760,6 @@ export default function TONDeFiGuide() {
 
           <Link
             href="/learn/stablecoin-yield-strategies-2026"
-            className="p-6 glass rounded-xl hover:border-[#0088CC] transition-all"
             style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
           >
             <h3 className="font-semibold mb-2" style={{ color: '#0088CC' }}>
@@ -773,7 +772,6 @@ export default function TONDeFiGuide() {
 
           <Link
             href="/tools/defi-yields"
-            className="p-6 glass rounded-xl hover:border-[#0088CC] transition-all"
             style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
           >
             <h3 className="font-semibold mb-2" style={{ color: '#0088CC' }}>
@@ -786,7 +784,6 @@ export default function TONDeFiGuide() {
 
           <Link
             href="/learn"
-            className="p-6 glass rounded-xl hover:border-[#0088CC] transition-all"
             style={{ background: 'var(--glass-bg)', border: '1px solid var(--color-border)' }}
           >
             <h3 className="font-semibold mb-2" style={{ color: '#0088CC' }}>
@@ -809,7 +806,6 @@ export default function TONDeFiGuide() {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
-            href="/tools/defi-yields"
             className="affiliate-cta px-6 py-3 rounded-lg font-semibold transition-all"
             style={{ background: '#0088CC', color: 'white' }}
           >
@@ -817,14 +813,12 @@ export default function TONDeFiGuide() {
           </Link>
           <Link
             href="/prices"
-            className="affiliate-cta px-6 py-3 rounded-lg font-semibold transition-all"
             style={{ background: 'transparent', border: '2px solid #0088CC', color: '#0088CC' }}
           >
             Monitor Prices
           </Link>
           <Link
             href="/tools/bridge-aggregator"
-            className="affiliate-cta px-6 py-3 rounded-lg font-semibold transition-all"
             style={{ background: 'transparent', border: '2px solid #0088CC', color: '#0088CC' }}
           >
             Bridge Tokens

@@ -947,7 +947,6 @@ export default function ERC7683GuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="erc-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 Intent-Based Trading Guide
@@ -967,7 +966,6 @@ export default function ERC7683GuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="erc-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 Bridge Aggregator Tool
@@ -987,7 +985,6 @@ export default function ERC7683GuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="erc-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 Advanced DeFi Strategies
@@ -1007,7 +1004,6 @@ export default function ERC7683GuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              className="erc-related-card"
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 DEX Aggregator Comparison

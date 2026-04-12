@@ -213,31 +213,26 @@ export default function LearnHubPage() {
           </Link>
           <Link
             href="/wallets"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Find the Best Wallets &rarr;
           </Link>
           <Link
             href="/defi-lending"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Explore DeFi Lending &rarr;
           </Link>
           <Link
             href="/investing"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Crypto Investing Guides &rarr;
           </Link>
           <Link
             href="/taxes"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Crypto Tax Help &rarr;
           </Link>
           <Link
             href="/spending"
-            className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
           >
             Spend Your Crypto &rarr;
           </Link>

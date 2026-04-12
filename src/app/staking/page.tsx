@@ -83,7 +83,6 @@ export default function StakingPage() {
 
               <Link
                 href="/learn/what-is-blockchain"
-                className="bg-gray-800/50 border border-gray-700 rounded-xl p-5 hover:border-blue-500 transition-colors"
               >
                 <span className="inline-block text-blue-400 text-xs font-medium px-3 py-1 mb-2 rounded-full bg-blue-500/20 border border-blue-500/30">
                   Learning
@@ -93,7 +92,6 @@ export default function StakingPage() {
 
               <Link
                 href="/defi-yields"
-                className="bg-gray-800/50 border border-gray-700 rounded-xl p-5 hover:border-blue-500 transition-colors"
               >
                 <span className="inline-block text-blue-400 text-xs font-medium px-3 py-1 mb-2 rounded-full bg-blue-500/20 border border-blue-500/30">
                   DeFi
@@ -289,7 +287,6 @@ export default function StakingPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/defi-yields"
                 className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-colors"
               >
                 Explore DeFi Yields

@@ -82,7 +82,6 @@ export default function DAOGovernanceVotingGuide() {
                 padding: '0.375rem 0.875rem',
                 borderRadius: '6px',
                 fontSize: '0.875rem',
-                fontWeight: '600'
               }}
             >
               DAOs
@@ -317,7 +316,6 @@ export default function DAOGovernanceVotingGuide() {
               borderLeft: `4px solid ${S.yellow}`,
               borderRadius: '8px',
               padding: '1.5rem',
-              marginBottom: '1.5rem'
             }}
           >
             <h3 style={{ color: S.yellow, marginBottom: '1rem', fontSize: '1.1rem' }}>How Delegation Works</h3>
@@ -349,7 +347,6 @@ export default function DAOGovernanceVotingGuide() {
               overflowX: 'auto',
               marginBottom: '2rem',
               border: `1px solid ${S.border}`,
-              borderRadius: '8px'
             }}
           >
             <table aria-label="Top DAOs by treasury and influence" style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.9rem' }}>
@@ -423,7 +420,6 @@ export default function DAOGovernanceVotingGuide() {
               borderLeft: `4px solid ${S.orange}`,
               borderRadius: '8px',
               padding: '1.5rem',
-              marginBottom: '1.5rem'
             }}
           >
             <h3 style={{ color: S.orange, marginBottom: '1rem', fontSize: '1.1rem' }}>Real Examples in 2026</h3>
@@ -488,14 +484,12 @@ export default function DAOGovernanceVotingGuide() {
             ].map((tool, idx) => (
               <div
                 key={idx}
-                role="listitem"
                 aria-label={tool.name}
                 style={{
                   backgroundColor: S.bg,
                   border: `1px solid ${S.border}`,
                   borderLeft: `4px solid ${tool.color}`,
                   borderRadius: '8px',
-                  padding: '1.5rem'
                 }}
               >
                 <h3 style={{ color: tool.color, marginBottom: '0.75rem', fontSize: '1rem', fontWeight: '600' }}>
@@ -553,14 +547,12 @@ export default function DAOGovernanceVotingGuide() {
             ].map((innovation, idx) => (
               <div
                 key={idx}
-                role="listitem"
                 aria-label={innovation.title}
                 style={{
                   backgroundColor: S.bg,
                   border: `1px solid ${S.border}`,
                   borderLeft: `4px solid ${innovation.color || S.orange}`,
                   borderRadius: '8px',
-                  padding: '1.5rem'
                 }}
               >
                 <h3 style={{ color: innovation.color || S.orange, marginBottom: '0.5rem', fontSize: '1rem', fontWeight: '600' }}>

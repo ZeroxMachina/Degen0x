@@ -137,11 +137,9 @@ export default function RarityCheckerPage() {
               <div>
                 <label className="block text-xs text-[var(--color-text-secondary)] mb-1">Trait Value</label>
                 <input
-                  type="text"
                   value={trait.traitValue}
                   onChange={(e) => updateTrait(trait.id, "traitValue", e.target.value)}
                   placeholder="e.g., Gold"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <div>
@@ -149,11 +147,9 @@ export default function RarityCheckerPage() {
                   Items with Trait
                 </label>
                 <input
-                  type="number"
                   value={trait.traitCount}
                   onChange={(e) => updateTrait(trait.id, "traitCount", e.target.value)}
                   placeholder="e.g., 50"
-                  className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg)] px-3 py-2 text-sm text-[var(--color-text)] placeholder-gray-500 focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
               <button

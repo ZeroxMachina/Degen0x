@@ -179,7 +179,6 @@ const pStyle: React.CSSProperties = {
   fontSize: '16px',
   lineHeight: '1.6',
   margin: '16px 0',
-  color: '#e6edf3'
 }
 const infoBoxStyle: React.CSSProperties = {
   backgroundColor: '#161b22',
@@ -194,7 +193,6 @@ const ulStyle: React.CSSProperties = {
   paddingLeft: '24px',
   fontSize: '16px',
   lineHeight: '1.6',
-  color: '#e6edf3'
 }
 const liStyle: React.CSSProperties = {
   margin: '8px 0'
@@ -219,7 +217,6 @@ const tdStyle: React.CSSProperties = {
   border: '1px solid #30363d',
   padding: '12px',
   color: '#8b949e',
-  fontSize: '14px'
 }
 const tableWrapperStyle: React.CSSProperties = {
   overflowX: 'auto',
@@ -236,7 +233,6 @@ const highlightStyle: React.CSSProperties = {
 }
 const linkStyle: React.CSSProperties = {
   color: '#58a6ff',
-  textDecoration: 'none'
 }
 const tocStyle: React.CSSProperties = {
   backgroundColor: '#161b22',
@@ -244,7 +240,6 @@ const tocStyle: React.CSSProperties = {
   borderRadius: '12px',
   padding: '20px',
   margin: '32px 0',
-  fontSize: '14px'
 }
 const tocItemStyle: React.CSSProperties = {
   margin: '8px 0',
@@ -255,7 +250,6 @@ const faqItemStyle: React.CSSProperties = {
   border: '1px solid #30363d',
   borderRadius: '12px',
   padding: '20px',
-  marginBottom: '16px'
 }
 const faqQuestionStyle: React.CSSProperties = {
   fontSize: '18px',

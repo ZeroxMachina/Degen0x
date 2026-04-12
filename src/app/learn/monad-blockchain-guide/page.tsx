@@ -584,7 +584,6 @@ export default function MonadBlockchainGuide() {
               key={i}
               role="listitem"
               aria-label={`${item.date}: ${item.milestone}`}
-              className="flex gap-4 bg-[#161b22] border border-[#30363d] rounded-lg p-5"
             >
               <div className="flex-shrink-0 min-w-[120px]">
                 <p className="text-[#836EF9] font-semibold text-sm">{item.date}</p>
@@ -649,7 +648,6 @@ export default function MonadBlockchainGuide() {
           ].map((item) => (
             <div
               key={item.title}
-              role="listitem"
               aria-label={`${item.title} — ${item.severity} severity`}
               className="bg-[#161b22] border border-[#30363d] rounded-lg p-5"
             >
@@ -712,7 +710,6 @@ export default function MonadBlockchainGuide() {
           ].map((item) => (
             <div
               key={item.step}
-              className="flex gap-4 bg-[#161b22] border border-[#30363d] rounded-lg p-5"
             >
               <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#836EF9]/20 border border-[#836EF9]/30 flex items-center justify-center text-[#836EF9] font-bold text-sm">
                 {item.step}

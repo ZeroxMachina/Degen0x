@@ -171,7 +171,6 @@ export default function CryptocurrencyForDummiesGuide() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
       />
 
@@ -1259,7 +1258,6 @@ export default function CryptocurrencyForDummiesGuide() {
             </li>
             <li>
               <Link
-                href="/learn/how-blockchain-works-simple-explanation"
                 style={{ color: darkColors.link, textDecoration: "underline" }}
               >
                 How Blockchain Works
@@ -1324,7 +1322,6 @@ export default function CryptocurrencyForDummiesGuide() {
           }}
         >
           <Link
-            href="/learn/what-is-bitcoin"
             style={{
               ...infoBoxStyle,
               textDecoration: "none",
@@ -1349,7 +1346,6 @@ export default function CryptocurrencyForDummiesGuide() {
           </Link>
 
           <Link
-            href="/learn/what-is-ethereum"
             style={{
               ...infoBoxStyle,
               textDecoration: "none",
@@ -1374,7 +1370,6 @@ export default function CryptocurrencyForDummiesGuide() {
           </Link>
 
           <Link
-            href="/learn/crypto-wallet-types-explained"
             style={{
               ...infoBoxStyle,
               textDecoration: "none",

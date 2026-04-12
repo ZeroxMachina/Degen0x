@@ -183,7 +183,6 @@ export default function BestAccountantsPage() {
             </Link>
             <Link
               href="/taxes/learn/how-to-file"
-              className="text-sm text-[var(--color-primary)] hover:underline"
             >
               How to File Crypto Taxes &#8594;
             </Link>

@@ -131,8 +131,6 @@ export default function AchievementsPage() {
             onClick={() => setFilterCategory('exploration')}
             className={`px-4 py-2 rounded-full transition-all font-semibold text-sm ${
               filterCategory === 'exploration'
-                ? 'glass-elevated border-transparent text-[#6366f1]'
-                : 'glass-subtle border border-[var(--glass-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]'
             }`}
           >
             Exploration
@@ -141,8 +139,6 @@ export default function AchievementsPage() {
             onClick={() => setFilterCategory('learning')}
             className={`px-4 py-2 rounded-full transition-all font-semibold text-sm ${
               filterCategory === 'learning'
-                ? 'glass-elevated border-transparent text-[#6366f1]'
-                : 'glass-subtle border border-[var(--glass-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]'
             }`}
           >
             Learning
@@ -151,8 +147,6 @@ export default function AchievementsPage() {
             onClick={() => setFilterCategory('tools')}
             className={`px-4 py-2 rounded-full transition-all font-semibold text-sm ${
               filterCategory === 'tools'
-                ? 'glass-elevated border-transparent text-[#6366f1]'
-                : 'glass-subtle border border-[var(--glass-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]'
             }`}
           >
             Tools
@@ -161,8 +155,6 @@ export default function AchievementsPage() {
             onClick={() => setFilterCategory('interaction')}
             className={`px-4 py-2 rounded-full transition-all font-semibold text-sm ${
               filterCategory === 'interaction'
-                ? 'glass-elevated border-transparent text-[#6366f1]'
-                : 'glass-subtle border border-[var(--glass-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)]'
             }`}
           >
             Interaction

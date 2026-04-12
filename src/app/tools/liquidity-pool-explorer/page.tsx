@@ -426,7 +426,6 @@ export default function LiquidityPoolExplorerPage() {
             <select
               value={selectedAMM}
               onChange={(e) => setSelectedAMM(e.target.value)}
-              className="w-full px-3 py-2 bg-[#161b22] border border-[#30363d] rounded text-[var(--color-text)] text-sm focus:outline-none focus:border-[#58a6ff]"
             >
               {amms.map((amm) => (
                 <option key={amm} value={amm}>
@@ -447,7 +446,6 @@ export default function LiquidityPoolExplorerPage() {
               step="10"
               value={minTVL / 1000000}
               onChange={(e) => setMinTVL(parseInt(e.target.value || '0') * 1000000)}
-              className="w-full px-3 py-2 bg-[#161b22] border border-[#30363d] rounded text-[var(--color-text)] text-sm focus:outline-none focus:border-[#58a6ff]"
             />
           </div>
 
@@ -459,7 +457,6 @@ export default function LiquidityPoolExplorerPage() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="w-full px-3 py-2 bg-[#161b22] border border-[#30363d] rounded text-[var(--color-text)] text-sm focus:outline-none focus:border-[#58a6ff]"
             >
               <option value="tvl">TVL (High)</option>
               <option value="apr">APR (High)</option>
@@ -488,8 +485,6 @@ export default function LiquidityPoolExplorerPage() {
                 onClick={() => setViewMode('table')}
                 className={`flex-1 px-3 py-2 rounded text-sm font-medium transition ${
                   viewMode === 'table'
-                    ? 'bg-[#58a6ff] text-[#0d1117]'
-                    : 'bg-[#161b22] border border-[#30363d] text-[var(--color-text)] hover:border-[#58a6ff]'
                 }`}
               >
                 Table
@@ -681,7 +676,6 @@ export default function LiquidityPoolExplorerPage() {
                   Token A Price Change (%)
                 </label>
                 <input
-                  type="number"
                   value={ilInput.tokenAChange}
                   onChange={(e) =>
                     setIlInput({
@@ -702,7 +696,6 @@ export default function LiquidityPoolExplorerPage() {
                   Token B Price Change (%)
                 </label>
                 <input
-                  type="number"
                   value={ilInput.tokenBChange}
                   onChange={(e) =>
                     setIlInput({
@@ -710,7 +703,6 @@ export default function LiquidityPoolExplorerPage() {
                       tokenBChange: parseFloat(e.target.value) || 0,
                     })
                   }
-                  className="w-full px-4 py-3 bg-[#0d1117] border border-[#30363d] rounded text-[var(--color-text)] focus:outline-none focus:border-[#58a6ff]"
                   placeholder="e.g., 20 for +20%"
                 />
                 <p className="text-xs text-[var(--color-text-secondary)] mt-2">

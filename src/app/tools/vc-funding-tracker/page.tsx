@@ -187,7 +187,6 @@ export default function VCFundingTracker() {
         <select
           value={roundFilter}
           onChange={(e) => setRoundFilter(e.target.value)}
-          className="glass px-3 py-2 text-sm text-[var(--color-text)] bg-transparent rounded-lg border border-[var(--glass-border)]"
         >
           {ROUNDS.map(r => <option key={r} value={r}>{r}</option>)}
         </select>

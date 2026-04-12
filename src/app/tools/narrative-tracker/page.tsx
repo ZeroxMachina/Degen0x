@@ -458,7 +458,6 @@ export default function NarrativeTracker() {
             <select
               value={rotationFilter}
               onChange={(e) => setRotationFilter(e.target.value as RotationFilter)}
-              className="bg-slate-800 border border-slate-700 rounded px-3 py-2 text-sm text-slate-100"
             >
               <option value="all">All Phases</option>
               <option value="early">Early</option>

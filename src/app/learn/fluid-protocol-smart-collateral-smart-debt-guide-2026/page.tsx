@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Link from "next/link";
 
 export const metadata: Metadata = {
   title: 'Fluid Protocol: Smart Collateral & Smart Debt DeFi Guide 2026 | Degen0x',
@@ -128,7 +127,6 @@ export default function FluidProtocolGuide2026() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <article className="mx-auto max-w-3xl px-4 py-10 text-slate-200">

@@ -183,7 +183,6 @@ const badgeStyle = (bgColor: string, textColor: string): React.CSSProperties => 
   marginBottom: 12,
 });
 
-const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16, display: 'inline-block' };
 
 
 export default function AvalancheEcosystemPage() {

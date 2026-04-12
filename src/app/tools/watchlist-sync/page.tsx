@@ -746,7 +746,6 @@ export default function WatchlistSyncPage() {
                         {idx < watchlist.length - 1 && (
                           <button
                             onClick={() => handleReorderWatchlist(idx, idx + 1)}
-                            className="flex-1 px-2 py-2 rounded text-xs font-medium bg-[var(--color-primary)]/20 text-[var(--color-primary)] hover:bg-[var(--color-primary)]/30 transition-colors"
                           >
                             ↓
                           </button>
@@ -818,7 +817,6 @@ export default function WatchlistSyncPage() {
                 <select
                   value={alertForm.tokenId}
                   onChange={(e) => setAlertForm({ ...alertForm, tokenId: e.target.value })}
-                  className="px-3 py-2 rounded border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] focus:outline-none focus:border-[var(--color-primary)]"
                 >
                   <option value="">Select Token</option>
                   {DEFAULT_TOKENS.map((token) => (
@@ -830,7 +828,6 @@ export default function WatchlistSyncPage() {
                 <select
                   value={alertForm.type}
                   onChange={(e) => setAlertForm({ ...alertForm, type: e.target.value as any })}
-                  className="px-3 py-2 rounded border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] focus:outline-none focus:border-[var(--color-primary)]"
                 >
                   <option value="above">Price Above</option>
                   <option value="below">Price Below</option>
@@ -841,7 +838,6 @@ export default function WatchlistSyncPage() {
                   placeholder="Value"
                   value={alertForm.value}
                   onChange={(e) => setAlertForm({ ...alertForm, value: parseFloat(e.target.value) || 0 })}
-                  className="px-3 py-2 rounded border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] placeholder-[var(--color-text-secondary)] focus:outline-none focus:border-[var(--color-primary)]"
                 />
                 <button
                   onClick={() => setAlertForm({ ...alertForm, isPercentage: !alertForm.isPercentage })}
@@ -869,7 +865,6 @@ export default function WatchlistSyncPage() {
                 <select
                   value={volumeAlertForm.tokenId}
                   onChange={(e) => setVolumeAlertForm({ ...volumeAlertForm, tokenId: e.target.value })}
-                  className="px-3 py-2 rounded border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] focus:outline-none focus:border-[var(--color-primary)]"
                 >
                   <option value="">Select Token</option>
                   {DEFAULT_TOKENS.map((token) => (
@@ -879,16 +874,13 @@ export default function WatchlistSyncPage() {
                   ))}
                 </select>
                 <input
-                  type="number"
                   placeholder="% increase"
                   value={volumeAlertForm.percentageIncrease}
                   onChange={(e) => setVolumeAlertForm({ ...volumeAlertForm, percentageIncrease: parseFloat(e.target.value) || 0 })}
-                  className="px-3 py-2 rounded border border-[var(--color-border)] bg-[var(--color-bg)] text-[var(--color-text)] placeholder-[var(--color-text-secondary)] focus:outline-none focus:border-[var(--color-primary)]"
                 />
                 <div className="flex items-center text-sm text-[var(--color-text-secondary)]">Volume increase alert</div>
                 <button
                   onClick={handleAddVolumeAlert}
-                  className="px-4 py-2 rounded font-medium bg-green-500/20 text-green-400 hover:bg-green-500/30 transition-colors text-sm"
                 >
                   + Add Alert
                 </button>
@@ -962,21 +954,17 @@ export default function WatchlistSyncPage() {
                             onClick={() => handleToggleVolumeAlert(alert.id)}
                             className={`px-3 py-1 rounded text-xs font-medium transition-colors ${
                               alert.active
-                                ? 'bg-green-500/20 text-green-400 hover:bg-green-500/30'
-                                : 'bg-gray-500/20 text-gray-400 hover:bg-gray-500/30'
                             }`}
                           >
                             {alert.active ? 'Active' : 'Paused'}
                           </button>
                           <button
                             onClick={() => handleSimulateAlert(alert.tokenId)}
-                            className="px-3 py-1 rounded text-xs font-medium bg-blue-500/20 text-blue-400 hover:bg-blue-500/30 transition-colors"
                           >
                             Test
                           </button>
                           <button
                             onClick={() => handleDeleteVolumeAlert(alert.id)}
-                            className="px-3 py-1 rounded text-xs font-medium bg-red-500/20 text-red-400 hover:bg-red-500/30 transition-colors"
                           >
                             Delete
                           </button>
@@ -1040,7 +1028,6 @@ export default function WatchlistSyncPage() {
                     <p className="text-sm text-[var(--color-text-secondary)] mb-2">Share this link:</p>
                     <div className="flex gap-2">
                       <input
-                        type="text"
                         value={exportUrl}
                         readOnly
                         className="flex-1 px-3 py-2 rounded text-xs border border-[var(--color-border)] bg-[var(--color-bg-card)] text-[var(--color-text)]"

@@ -242,7 +242,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '700',
             marginBottom: '20px',
             paddingBottom: '16px',
-            borderBottom: '1px solid var(--glass-border, #21262d)'
           }}>
             What Is a Parallel EVM?
           </h2>
@@ -270,7 +269,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Think of it like upgrading from a single-lane road to a multi-lane highway. On Ethereum, every transaction must wait its turn in the mempool and be processed in sequence. A parallel EVM identifies which transactions can safely run side-by-side and executes them together, only serializing when necessary.
           </p>
@@ -289,7 +287,6 @@ export default function ParallelEVMGuidePage() {
             border: '1px solid var(--glass-border, #30363d)',
             borderRadius: '12px',
             padding: '20px',
-            marginBottom: '24px'
           }}>
             <p style={{
               fontSize: '15px',
@@ -309,7 +306,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '700',
             marginBottom: '20px',
             paddingBottom: '16px',
-            borderBottom: '1px solid var(--glass-border, #21262d)'
           }}>
             Why Parallelization Matters
           </h2>
@@ -318,7 +314,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Ethereum's throughput is fundamentally constrained. The network processes approximately 15 transactions per second (TPS). During peak usage—like during an NFT drop or protocol launch—gas fees spike to hundreds or thousands of dollars per transaction. Users face impossible choices: pay exorbitant fees or wait in the mempool for hours.
           </p>
@@ -327,7 +322,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Layer 2 solutions (Arbitrum, Optimism, Polygon zkEVM) have helped dramatically. They batch transactions off-chain and post them to Ethereum, achieving 100-1000 TPS depending on design. But here's the catch: most L2s still process transactions sequentially internally. They inherit Ethereum's sequential processing model, just with more throughput.
           </p>
@@ -336,7 +330,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Parallel execution is the next evolution. Instead of stacking more solutions on top of sequential execution, parallel EVMs solve the core problem: the sequential processing model itself. By enabling true concurrent execution, these systems can reach 10,000+ TPS on Layer 1 without requiring L2 complexity.
           </p>
@@ -345,7 +338,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '24px'
           }}>
             The implications are profound. Lower fees enable new use cases: high-frequency trading, real-time gaming, micro-transactions. Users experience the decentralization of Ethereum with the throughput of centralized systems. DeFi protocols can handle more volume. NFT marketplaces clear orders at scale without congestion.
           </p>
@@ -358,7 +350,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '700',
             marginBottom: '20px',
             paddingBottom: '16px',
-            borderBottom: '1px solid var(--glass-border, #21262d)'
           }}>
             How Parallel Execution Works
           </h2>
@@ -367,7 +358,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Parallel execution requires two key decisions: how to assign transactions to parallel workers and what to do when conflicts are detected.
           </p>
@@ -377,7 +367,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Optimistic Parallelization
           </h3>
@@ -386,7 +375,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Optimistic parallelization executes all transactions concurrently, then checks if conflicts occurred. If two transactions accessed the same state, the execution is rolled back, and conflicting transactions are re-executed serially. This approach assumes most transactions won't conflict, so the rollback cost is negligible.
           </p>
@@ -395,7 +383,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Monad uses this approach. It executes transactions in parallel, detects conflicts through state access tracking, and re-executes conflicts serially. The strategy works because in practice, most transactions on a blockchain don't interfere with each other.
           </p>
@@ -405,7 +392,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Pessimistic Parallelization
           </h3>
@@ -414,7 +400,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Pessimistic parallelization analyzes transaction dependencies before execution. The system examines which state each transaction will access (its "read set" and "write set") and groups non-conflicting transactions. Only transactions in the same group execute in parallel, eliminating the need for rollbacks.
           </p>
@@ -423,7 +408,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Sei uses optimistic parallelization combined with dependency analysis. It pre-validates state access patterns and ensures that transactions grouped for parallel execution won't conflict.
           </p>
@@ -433,7 +417,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             State Access Lists
           </h3>
@@ -442,7 +425,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '24px'
           }}>
             Both approaches rely on state access lists—metadata indicating which accounts and storage slots a transaction will read and write. Some systems require developers to declare state access upfront (like Solana). Others infer it dynamically during execution. EVM compatibility favors dynamic inference since existing smart contracts can't predict their state access perfectly.
           </p>
@@ -455,7 +437,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '700',
             marginBottom: '20px',
             paddingBottom: '16px',
-            borderBottom: '1px solid var(--glass-border, #21262d)'
           }}>
             The Big Three: Monad vs Sei vs MegaETH
           </h2>
@@ -464,7 +445,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '24px'
           }}>
             Three projects have emerged as leaders in the parallel EVM space, each with distinct architectures and tradeoffs.
           </p>
@@ -487,28 +467,24 @@ export default function ParallelEVMGuidePage() {
                     textAlign: 'left',
                     fontWeight: '600',
                     borderBottom: '1px solid var(--glass-border, #30363d)',
-                    color: 'var(--color-text, #e6edf3)'
                   }}>Metric</th>
                   <th style={{
                     padding: '12px',
                     textAlign: 'left',
                     fontWeight: '600',
                     borderBottom: '1px solid var(--glass-border, #30363d)',
-                    color: 'var(--color-text, #e6edf3)'
                   }}>Monad</th>
                   <th style={{
                     padding: '12px',
                     textAlign: 'left',
                     fontWeight: '600',
                     borderBottom: '1px solid var(--glass-border, #30363d)',
-                    color: 'var(--color-text, #e6edf3)'
                   }}>Sei</th>
                   <th style={{
                     padding: '12px',
                     textAlign: 'left',
                     fontWeight: '600',
                     borderBottom: '1px solid var(--glass-border, #30363d)',
-                    color: 'var(--color-text, #e6edf3)'
                   }}>MegaETH</th>
                 </tr>
               </thead>
@@ -564,7 +540,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '32px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Monad
           </h3>
@@ -573,7 +548,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Monad is a Layer 1 blockchain that raised $244M in funding and launched mainnet in November 2025. It's built from scratch specifically for parallel execution, featuring three core components:
           </p>
@@ -595,7 +569,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Monad maintains full EVM compatibility. Existing Ethereum contracts deploy without modification. As of March 2026, Monad has attracted approximately $153M in TVL, with major protocols like Aave, Curve, and various DEXs deployed on mainnet.
           </p>
@@ -605,7 +578,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '32px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Sei
           </h3>
@@ -614,7 +586,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Sei is a Cosmos-based Layer 1 that takes a unique approach to parallelization. Rather than being EVM-native, Sei runs an EVM execution layer on top of its Cosmos SDK foundation. It launched in August 2023 and has become one of the fastest blockchains in the ecosystem.
           </p>
@@ -623,7 +594,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Key features:
           </p>
@@ -633,7 +603,6 @@ export default function ParallelEVMGuidePage() {
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
             marginBottom: '16px',
-            paddingLeft: '24px'
           }}>
             <li style={{ marginBottom: '8px' }}><strong>Twin Turbo Consensus:</strong> An optimized consensus protocol achieving 390ms finality and supporting 28,300 TPS in batched mode.</li>
             <li style={{ marginBottom: '8px' }}><strong>Optimistic Parallelization:</strong> Executes transactions concurrently with conflict detection and re-execution.</li>
@@ -644,7 +613,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Sei has raised over $76M and maintains approximately $180M TVL. It's particularly popular with trading-focused applications due to its low latency and MEV minimization features.
           </p>
@@ -654,7 +622,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '32px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             MegaETH
           </h3>
@@ -663,7 +630,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             MegaETH is fundamentally different from Monad and Sei. It's an Ethereum Layer 2, not a Layer 1, but with an unprecedented focus on specialized hardware. MegaETH targets 100,000+ TPS with 10-millisecond blocks.
           </p>
@@ -672,7 +638,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             The architecture uses three node types:
           </p>
@@ -682,7 +647,6 @@ export default function ParallelEVMGuidePage() {
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
             marginBottom: '16px',
-            paddingLeft: '24px'
           }}>
             <li style={{ marginBottom: '8px' }}><strong>Sequencer Nodes:</strong> Accept transactions, batch them, and produce blocks.</li>
             <li style={{ marginBottom: '8px' }}><strong>Prover Nodes:</strong> Generate zero-knowledge proofs of execution. These require GPUs and significant computational power.</li>
@@ -693,7 +657,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '24px'
           }}>
             MegaETH's specialized hardware requirement is both a feature and limitation. It enables extreme throughput but raises questions about decentralization and validator accessibility. As of March 2026, MegaETH is in testnet with mainnet launch expected later in the year.
           </p>
@@ -706,7 +669,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '700',
             marginBottom: '20px',
             paddingBottom: '16px',
-            borderBottom: '1px solid var(--glass-border, #21262d)'
           }}>
             Other Parallel EVM Projects
           </h2>
@@ -715,7 +677,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             While Monad, Sei, and MegaETH lead the space, several other projects are building parallel execution systems.
           </p>
@@ -725,7 +686,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Neon EVM
           </h3>
@@ -734,7 +694,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Neon EVM is an Ethereum-compatible execution environment on Solana. It leverages Solana's native parallel processing (Sealevel) to execute EVM transactions. Neon bridges the gap between Solana's speed and EVM compatibility, allowing Ethereum dApps to run on Solana's infrastructure.
           </p>
@@ -744,7 +703,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Polygon
           </h3>
@@ -753,7 +711,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Polygon is evolving beyond its rollup roots. The Polygon 2.0 roadmap includes parallel processing improvements and a modular architecture supporting multiple execution environments. Future Polygon chains may incorporate parallel EVM execution.
           </p>
@@ -763,7 +720,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Scroll
           </h3>
@@ -772,7 +728,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Scroll is an Ethereum ZK-rollup focused on compatibility and performance. While primarily sequential, Scroll's roadmap includes parallelization improvements to increase throughput beyond current zkEVM limitations.
           </p>
@@ -782,7 +737,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Movement Labs
           </h3>
@@ -791,7 +745,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '24px'
           }}>
             Movement Labs is building parallel execution for Move (Aptos/Sui's language) with EVM compatibility. It combines the parallelism of Move with EVM tooling, creating an interesting hybrid approach.
           </p>
@@ -804,7 +757,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '700',
             marginBottom: '20px',
             paddingBottom: '16px',
-            borderBottom: '1px solid var(--glass-border, #21262d)'
           }}>
             Parallel EVM vs Solana
           </h2>
@@ -813,7 +765,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Solana has used parallel execution from day one through its Sealevel runtime. Transactions declare their state access upfront, allowing Solana to execute non-conflicting transactions in parallel. Why, then, are parallel EVMs necessary?
           </p>
@@ -822,7 +773,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             The core difference is <strong>explicit vs implicit state declaration</strong>. Solana requires developers to explicitly declare which accounts a transaction will access. Parallel EVMs infer state access dynamically, maintaining Ethereum's developer experience.
           </p>
@@ -831,7 +781,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             This has profound implications:
           </p>
@@ -841,7 +790,6 @@ export default function ParallelEVMGuidePage() {
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
             marginBottom: '16px',
-            paddingLeft: '24px'
           }}>
             <li style={{ marginBottom: '8px' }}><strong>EVM Compatibility:</strong> Parallel EVMs run existing smart contracts unchanged. Solana requires rewrites.</li>
             <li style={{ marginBottom: '8px' }}><strong>Developer Friction:</strong> Solana developers must manually optimize state access. EVM developers benefit from automatic optimization.</li>
@@ -853,7 +801,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             However, Solana has advantages too. Since state access is declared upfront, Solana avoids the cost of conflict detection and re-execution. Its design is theoretically simpler and potentially more efficient for well-optimized applications.
           </p>
@@ -862,7 +809,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '24px'
           }}>
             The verdict: Parallel EVMs and Solana represent different tradeoffs. Parallel EVMs prioritize compatibility and ease-of-use. Solana prioritizes theoretical efficiency but requires developer discipline. Both approaches are valid and serve different markets.
           </p>
@@ -875,7 +821,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '700',
             marginBottom: '20px',
             paddingBottom: '16px',
-            borderBottom: '1px solid var(--glass-border, #21262d)'
           }}>
             Risks & Limitations
           </h2>
@@ -884,7 +829,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Parallel EVM technology is powerful but not without risks.
           </p>
@@ -894,7 +838,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             State Conflicts and Re-execution
           </h3>
@@ -903,7 +846,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             High state contention can reduce parallelization benefits. If most transactions conflict, the system resorts to serial re-execution, negating the parallelism advantage. Applications with hot state (like popular DEX pools or NFT contracts) may see diminished returns from parallelization.
           </p>
@@ -913,7 +855,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             MEV Complexity
           </h3>
@@ -922,7 +863,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Parallel execution changes MEV dynamics. Transaction ordering within parallel sets is less predictable, reducing some MEV opportunities but creating new ones. Flash loans, sandwich attacks, and other MEV tactics may need rethinking for parallel systems. The ecosystem is still learning how MEV behaves.
           </p>
@@ -932,7 +872,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Hardware Requirements
           </h3>
@@ -941,7 +880,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             MegaETH requires specialized hardware (GPUs) for prover nodes, raising barriers to entry and centralization concerns. Even Monad and Sei benefit from high-spec validators, potentially concentrating validation power among well-capitalized operators. This contrasts with Ethereum's design, which aims for lower hardware requirements.
           </p>
@@ -951,7 +889,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             New Attack Surfaces
           </h3>
@@ -960,7 +897,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '16px'
           }}>
             Parallel execution introduces new attack vectors. Exploiting state conflicts to force re-execution, manipulating transaction assignment to parallel workers, or crafting transactions to maximize re-execution cost are all theoretical concerns. The security community is still auditing and discovering vulnerabilities in parallel systems.
           </p>
@@ -970,7 +906,6 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '600',
             marginTop: '24px',
             marginBottom: '12px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Ecosystem Maturity
           </h3>
@@ -979,7 +914,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '16.5px',
             lineHeight: '1.8',
             color: 'var(--color-text-secondary, #c9d1d9)',
-            marginBottom: '24px'
           }}>
             Parallel EVM networks are new. Monad launched mainnet in late 2025, Sei in 2023 but with ongoing optimizations, and MegaETH is still in testnet. The long-term reliability of these systems hasn't been proven at scale. Bugs, consensus failures, or unexpected edge cases could emerge as TVL grows.
           </p>
@@ -992,19 +926,16 @@ export default function ParallelEVMGuidePage() {
             fontWeight: '700',
             marginBottom: '20px',
             paddingBottom: '16px',
-            borderBottom: '1px solid var(--glass-border, #21262d)'
           }}>
             FAQ
           </h2>
 
           <div style={{
-            marginBottom: '24px'
           }}>
             <h3 style={{
               fontSize: '1.05rem',
               fontWeight: '600',
               marginBottom: '12px',
-              color: 'var(--color-text, #e6edf3)'
             }}>
               What is a parallel EVM?
             </h3>
@@ -1019,13 +950,11 @@ export default function ParallelEVMGuidePage() {
           </div>
 
           <div style={{
-            marginBottom: '24px'
           }}>
             <h3 style={{
               fontSize: '1.05rem',
               fontWeight: '600',
               marginBottom: '12px',
-              color: 'var(--color-text, #e6edf3)'
             }}>
               How is MegaETH different from Monad and Sei?
             </h3>
@@ -1033,20 +962,17 @@ export default function ParallelEVMGuidePage() {
               fontSize: '16.5px',
               lineHeight: '1.8',
               color: 'var(--color-text-secondary, #c9d1d9)',
-              marginBottom: '0'
             }}>
               MegaETH is a Layer 2 solution with specialized hardware requirements targeting 100K+ TPS, while Monad and Sei are Layer 1 blockchains. Monad is 10K TPS, Sei is 28.3K TPS. MegaETH uses sequencer/prover/full node architecture with custom hardware, whereas Monad uses MonadBFT consensus and Sei uses Cosmos-based consensus.
             </p>
           </div>
 
           <div style={{
-            marginBottom: '24px'
           }}>
             <h3 style={{
               fontSize: '1.05rem',
               fontWeight: '600',
               marginBottom: '12px',
-              color: 'var(--color-text, #e6edf3)'
             }}>
               Can I run a parallel EVM validator on standard hardware?
             </h3>
@@ -1054,20 +980,17 @@ export default function ParallelEVMGuidePage() {
               fontSize: '16.5px',
               lineHeight: '1.8',
               color: 'var(--color-text-secondary, #c9d1d9)',
-              marginBottom: '0'
             }}>
               Monad and Sei can run on standard server hardware, though higher specs help. MegaETH requires specialized hardware nodes including GPUs for proving, making it more hardware-intensive. Validator economics and staking requirements vary significantly between each platform.
             </p>
           </div>
 
           <div style={{
-            marginBottom: '24px'
           }}>
             <h3 style={{
               fontSize: '1.05rem',
               fontWeight: '600',
               marginBottom: '12px',
-              color: 'var(--color-text, #e6edf3)'
             }}>
               Is parallel execution compatible with EVM smart contracts?
             </h3>
@@ -1075,20 +998,17 @@ export default function ParallelEVMGuidePage() {
               fontSize: '16.5px',
               lineHeight: '1.8',
               color: 'var(--color-text-secondary, #c9d1d9)',
-              marginBottom: '0'
             }}>
               Yes, parallel EVMs maintain EVM compatibility, meaning existing smart contracts work without modification. However, smart contracts that don't properly isolate state access may cause conflicts in parallel execution, potentially triggering re-execution or delays. Well-written contracts see maximum parallelization benefits.
             </p>
           </div>
 
           <div style={{
-            marginBottom: '24px'
           }}>
             <h3 style={{
               fontSize: '1.05rem',
               fontWeight: '600',
               marginBottom: '12px',
-              color: 'var(--color-text, #e6edf3)'
             }}>
               How does parallel execution affect MEV?
             </h3>
@@ -1096,20 +1016,17 @@ export default function ParallelEVMGuidePage() {
               fontSize: '16.5px',
               lineHeight: '1.8',
               color: 'var(--color-text-secondary, #c9d1d9)',
-              marginBottom: '0'
             }}>
               Parallel execution changes MEV dynamics significantly. Transaction ordering within non-conflicting sets is less predictable, which can reduce certain MEV opportunities. However, MEV doesn't disappear—it transforms. Block builders and sequencers still have advantages, and new MEV extraction methods emerge in parallel systems.
             </p>
           </div>
 
           <div style={{
-            marginBottom: '24px'
           }}>
             <h3 style={{
               fontSize: '1.05rem',
               fontWeight: '600',
               marginBottom: '12px',
-              color: 'var(--color-text, #e6edf3)'
             }}>
               When will Monad mainnet launch?
             </h3>
@@ -1117,7 +1034,6 @@ export default function ParallelEVMGuidePage() {
               fontSize: '16.5px',
               lineHeight: '1.8',
               color: 'var(--color-text-secondary, #c9d1d9)',
-              marginBottom: '0'
             }}>
               Monad mainnet launched in November 2025. As of March 2026, the network has ~$153M TVL and continues scaling. It operates with 0.4-second blocks and 0.8-second finality, with approximately 10,000 TPS capacity.
             </p>
@@ -1136,7 +1052,6 @@ export default function ParallelEVMGuidePage() {
             fontSize: '14px',
             fontWeight: '700',
             marginBottom: '16px',
-            color: 'var(--color-text, #e6edf3)'
           }}>
             Related Reading
           </h3>

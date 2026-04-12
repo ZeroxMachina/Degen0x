@@ -106,19 +106,16 @@ export default function BitcoinSafeHavenGuidePage() {
             Bitcoin
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#6366f120", color: "#6366f1" }}
           >
             Macro
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#22c55e20", color: "#22c55e" }}
           >
             Intermediate
           </span>
           <span
-            className="text-xs px-3 py-1 rounded-full font-bold"
             style={{ background: "#0ea5e920", color: "#0ea5e9" }}
           >
             Updated March 2026
@@ -293,7 +290,6 @@ export default function BitcoinSafeHavenGuidePage() {
           </p>
         </div>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           For Bitcoin to qualify as a safe haven, it would need to show non-correlation or
@@ -313,7 +309,6 @@ export default function BitcoinSafeHavenGuidePage() {
       {/* ── Section 2 ── */}
       <section className="mb-10" id="btc-vs-gold">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           2. Bitcoin vs Gold: The 2026 Scoreboard
@@ -372,13 +367,11 @@ export default function BitcoinSafeHavenGuidePage() {
       {/* ── Section 3 ── */}
       <section className="mb-10" id="iran-crisis">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           3. The Iran Crisis Stress Test
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           When the US escalated military action against Iranian energy infrastructure in
@@ -388,7 +381,6 @@ export default function BitcoinSafeHavenGuidePage() {
           BTC behaves more like a high-beta tech stock than a store of value.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The derivatives market amplified the selloff. Over $400 million in leveraged
@@ -410,13 +402,11 @@ export default function BitcoinSafeHavenGuidePage() {
       {/* ── Section 4 ── */}
       <section className="mb-10" id="etf-flows">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           4. What Spot ETF Flows Tell Us
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           ETF flow data tells a more nuanced story than spot price alone. March 2026 saw
@@ -425,7 +415,6 @@ export default function BitcoinSafeHavenGuidePage() {
           $521 million flowed in, breaking a five-week outflow streak of $4 billion.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The institutional story gets more interesting when you look at who&apos;s entering.
@@ -477,13 +466,11 @@ export default function BitcoinSafeHavenGuidePage() {
       {/* ── Section 5 ── */}
       <section className="mb-10" id="strategic-reserve">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           5. The US Strategic Bitcoin Reserve Factor
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The US government holds an estimated 328,000 BTC in its Strategic Reserve,
@@ -492,7 +479,6 @@ export default function BitcoinSafeHavenGuidePage() {
           how the US treats its gold reserves at Fort Knox.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The BITCOIN Act of 2025 proposes going further: acquiring 200,000 BTC per year
@@ -517,13 +503,11 @@ export default function BitcoinSafeHavenGuidePage() {
       {/* ── Section 6 ── */}
       <section className="mb-10" id="correlation">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           6. Correlation Data: What the Numbers Say
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           The trailing 12-month correlation between Bitcoin and gold sits near zero (0.01),
@@ -532,7 +516,6 @@ export default function BitcoinSafeHavenGuidePage() {
           as gold surged while BTC fell.
         </p>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Bitcoin&apos;s correlation with the S&P 500 remains elevated at approximately 0.65.
@@ -553,7 +536,6 @@ export default function BitcoinSafeHavenGuidePage() {
       {/* ── Section 7 ── */}
       <section className="mb-10" id="framework">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           7. A Better Framework: Crisis Hedge vs Debasement Hedge
@@ -568,13 +550,11 @@ export default function BitcoinSafeHavenGuidePage() {
           }}
         >
           <p
-            className="text-sm font-bold mb-2"
             style={{ color: "#fbbf24" }}
           >
             The Key Distinction
           </p>
           <p
-            className="text-sm"
             style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
           >
             <strong style={{ color: "var(--color-text)" }}>Gold is the crisis hedge</strong>{" "}
@@ -586,7 +566,6 @@ export default function BitcoinSafeHavenGuidePage() {
         </div>
 
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           This distinction matters for how you think about portfolio construction. If you
@@ -611,13 +590,11 @@ export default function BitcoinSafeHavenGuidePage() {
       {/* ── Section 8 ── */}
       <section className="mb-10" id="portfolio">
         <h2
-          className="text-2xl font-bold mb-4"
           style={{ color: "var(--color-text)" }}
         >
           8. How to Position BTC in Your Portfolio
         </h2>
         <p
-          className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
         >
           Given the evidence, here&apos;s how many crypto-aware investors are thinking
@@ -626,7 +603,6 @@ export default function BitcoinSafeHavenGuidePage() {
 
         <div className="overflow-x-auto mb-6">
           <table
-            className="w-full text-sm"
             style={{
               borderCollapse: "collapse",
               border: "1px solid #30363d",
@@ -726,7 +702,6 @@ export default function BitcoinSafeHavenGuidePage() {
                 {faq.q}
               </h3>
               <p
-                className="text-sm"
                 style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}
               >
                 {faq.a}
@@ -746,7 +721,6 @@ export default function BitcoinSafeHavenGuidePage() {
         }}
       >
         <h2
-          className="text-sm font-bold mb-3 uppercase tracking-wide"
           style={{ color: "var(--color-text-secondary)" }}
         >
           Related Guides
@@ -762,7 +736,6 @@ export default function BitcoinSafeHavenGuidePage() {
             <Link
               key={link.href}
               href={link.href}
-              className="block hover:underline"
               style={{ color: "#58a6ff" }}
             >
               {link.label}

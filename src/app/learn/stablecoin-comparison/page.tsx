@@ -258,7 +258,6 @@ export default function StablecoinComparison() {
                   <th className="px-4 py-3 text-left">Chains</th>
                   <th className="px-4 py-3 text-left">Current Yield</th>
                   <th
-                    className="px-4 py-3 text-left cursor-pointer hover:bg-[#0d1117]"
                     onClick={() => setSortBy('riskRating')}
                   >
                     <div className="flex items-center gap-2">
@@ -266,7 +265,6 @@ export default function StablecoinComparison() {
                     </div>
                   </th>
                   <th
-                    className="px-4 py-3 text-left cursor-pointer hover:bg-[#0d1117]"
                     onClick={() => setSortBy('pegStability')}
                   >
                     <div className="flex items-center gap-2">

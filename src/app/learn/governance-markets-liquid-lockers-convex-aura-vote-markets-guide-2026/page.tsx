@@ -148,7 +148,6 @@ export default function GovernanceMarketsPage() {
               DeFi
             </span>
             <span
-              className="rounded-full px-3 py-1 text-sm font-semibold"
               style={{ backgroundColor: '#a855f7', color: '#fff' }}
     >
               Advanced

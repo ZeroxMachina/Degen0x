@@ -431,7 +431,6 @@ export default function WhaleTrackerPage() {
               <select
                 value={filterType}
                 onChange={(e) => setFilterType(e.target.value as 'All' | TransactionType)}
-                className="w-full px-3 py-2 rounded-lg bg-gray-900 border border-gray-700 text-gray-100 text-sm focus:outline-none focus:border-blue-500"
               >
                 <option value="All">All</option>
                 <option value="exchange_deposit">Exchange Deposit</option>
@@ -446,7 +445,6 @@ export default function WhaleTrackerPage() {
               <select
                 value={filterMinValue}
                 onChange={(e) => setFilterMinValue(parseInt(e.target.value) as 1 | 5 | 10 | 50)}
-                className="w-full px-3 py-2 rounded-lg bg-gray-900 border border-gray-700 text-gray-100 text-sm focus:outline-none focus:border-blue-500"
               >
                 <option value={1}>$1M+</option>
                 <option value={5}>$5M+</option>
@@ -461,7 +459,6 @@ export default function WhaleTrackerPage() {
               <select
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value as 'time' | 'value')}
-                className="w-full px-3 py-2 rounded-lg bg-gray-900 border border-gray-700 text-gray-100 text-sm focus:outline-none focus:border-blue-500"
               >
                 <option value="time">Time (Newest)</option>
                 <option value="value">Value (Largest)</option>

@@ -161,11 +161,9 @@ export default function TaxCalculatorPage() {
               Crypto Income (staking, mining, airdrops)
             </label>
             <input
-              type="number"
               value={cryptoIncome}
               onChange={(e) => setCryptoIncome(e.target.value)}
               placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -174,11 +172,8 @@ export default function TaxCalculatorPage() {
               Short-Term Capital Gains (held &lt; 1 year)
             </label>
             <input
-              type="number"
               value={shortTermGains}
               onChange={(e) => setShortTermGains(e.target.value)}
-              placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -187,11 +182,8 @@ export default function TaxCalculatorPage() {
               Long-Term Capital Gains (held &gt; 1 year)
             </label>
             <input
-              type="number"
               value={longTermGains}
               onChange={(e) => setLongTermGains(e.target.value)}
-              placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -200,11 +192,8 @@ export default function TaxCalculatorPage() {
               Short-Term Capital Losses
             </label>
             <input
-              type="number"
               value={shortTermLosses}
               onChange={(e) => setShortTermLosses(e.target.value)}
-              placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
 
@@ -213,11 +202,8 @@ export default function TaxCalculatorPage() {
               Long-Term Capital Losses
             </label>
             <input
-              type="number"
               value={longTermLosses}
               onChange={(e) => setLongTermLosses(e.target.value)}
-              placeholder="0"
-              className="w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-bg-card)] px-4 py-2 text-[var(--color-text)]"
             />
           </div>
         </div>

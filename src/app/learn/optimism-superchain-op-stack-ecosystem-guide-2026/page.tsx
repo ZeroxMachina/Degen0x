@@ -364,7 +364,6 @@ export default function OptimismSuperchanPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(BreadcrumbSchema) }}
       />
       <script
-        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ArticleSchema) }}
       />
 

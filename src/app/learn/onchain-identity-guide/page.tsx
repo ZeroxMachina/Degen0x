@@ -284,7 +284,6 @@ export default function OnchainIdentityGuide() {
 
           {/* Warning Box */}
           <div
-            className="rounded-lg p-6 mb-6 border-l-4"
             style={{ backgroundColor: '#161b22', borderColor: '#f85149', borderLeftWidth: '4px' }}
           >
             <h4 className="font-bold mb-2" style={{ color: '#f85149' }}>⚠️ Privacy Warning: SBTs Are Public</h4>
@@ -318,7 +317,6 @@ export default function OnchainIdentityGuide() {
 
           {/* Info Box */}
           <div
-            className="rounded-lg p-6 mb-6 border-l-4"
             style={{ backgroundColor: '#161b22', borderColor: '#a855f7', borderLeftWidth: '4px' }}
           >
             <h4 className="font-bold mb-2" style={{ color: '#58a6ff' }}>📊 What Is an Attestation?</h4>
@@ -375,7 +373,6 @@ export default function OnchainIdentityGuide() {
 
           {/* Pro Tip Box */}
           <div
-            className="rounded-lg p-6 mb-6 border-l-4"
             style={{ backgroundColor: '#161b22', borderColor: '#3fb950', borderLeftWidth: '4px' }}
           >
             <h4 className="font-bold mb-2" style={{ color: '#3fb950' }}>💡 Pro Tip: Build Your Onchain Identity Now</h4>

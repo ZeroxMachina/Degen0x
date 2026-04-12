@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 
 export const metadata: Metadata = {

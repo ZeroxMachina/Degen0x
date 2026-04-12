@@ -122,19 +122,16 @@ export default function BitcoinSupplyShockGuidePage() {
               Bitcoin
             </span>
             <span
-              className="text-xs px-3 py-1 rounded-full font-bold"
               style={{ background: "#6366f120", color: "#6366f1" }}
             >
               On-Chain Analysis
             </span>
             <span
-              className="text-xs px-3 py-1 rounded-full font-bold"
               style={{ background: "#06b6d420", color: "#06b6d4" }}
             >
               Intermediate
             </span>
             <span
-              className="text-xs px-3 py-1 rounded-full font-bold"
               style={{ background: "#22c55e20", color: "#22c55e" }}
             >
               Updated March 2026
@@ -330,7 +327,6 @@ export default function BitcoinSupplyShockGuidePage() {
             </p>
 
             <div
-              className="glass rounded-xl p-5 my-6"
               style={{ borderLeft: "3px solid #22c55e" }}
             >
               <h3 className="text-sm font-bold mb-2" style={{ color: "#22c55e" }}>
@@ -389,7 +385,6 @@ export default function BitcoinSupplyShockGuidePage() {
             </p>
 
             <div
-              className="glass rounded-xl p-5 my-6"
               style={{ borderLeft: "3px solid #ef4444" }}
             >
               <h3 className="text-sm font-bold mb-2" style={{ color: "#ef4444" }}>
