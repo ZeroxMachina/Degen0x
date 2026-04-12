@@ -13,7 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 // Export metadata for server-side rendering
 export const metadata: Metadata = {
   title: "AI Agent Identity (NHI) Guide 2026: Non-Human Identities &",
-  description: "Master AI agent identity infrastructure. Learn about Non-Human Identities (NHI), Decentralized Identifiers, World AgentKit, Coinbase x402, and Know Your Agent"s essential guide to agent-backed identity, cryptographic credentials, and machine-to-machine payments.",
+  description: "Master AI agent identity infrastructure. Learn about Non-Human Identities (NHI), Decentralized Identifiers, World AgentKit, Coinbase x402, and Know Your Agent.",
   keywords: "AI agents, non-human identities, NHI, cryptographic identity, DID, Decentralized Identifiers, World AgentKit, World ID, Coinbase x402, Know Your Agent, KYA, verifiable credentials, ZK proofs, agent economy, stablecoin payments, agent identity infrastructure",
   openGraph: {
     title: "AI Agent Identity (NHI) Guide 2026: Non-Human Identities &",

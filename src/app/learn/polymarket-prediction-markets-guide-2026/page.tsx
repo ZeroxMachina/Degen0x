@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       'DeFi',
       'Polymarket'
     ]
-  }
+  },
   alternates: { canonical: "/learn/polymarket-prediction-markets-guide-2026" }};
 
 const structuredDataSchema = {

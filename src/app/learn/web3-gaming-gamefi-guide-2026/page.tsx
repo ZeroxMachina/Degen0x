@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games &",
     description: "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games, and how to start earning."
-  }
+  },
   alternates: { canonical: "/learn/web3-gaming-gamefi-guide-2026" }};
 
 const articleSchema = generateArticleSchema({

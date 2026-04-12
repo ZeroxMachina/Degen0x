@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "Sui Private Transactions & Seal Framework: Compliant",
     description: "Learn how Sui Network's protocol-level private transactions and Seal framework enable compliant privacy using ZK proofs and threshold encryption. Complete guide to Sui's 2026 privacy upgrade.",
     images: ['https://degen0x.com/og-sui-private-transactions-seal-framework-guide-2026.svg']
-  }
+  },
   alternates: { canonical: "/learn/sui-private-transactions-seal-framework-guide-2026" }};
 
 const articleSchema = generateArticleSchema({
