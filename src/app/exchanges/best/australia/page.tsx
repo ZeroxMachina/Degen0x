@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { exchanges } from "@/data/exchanges";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto Exchanges in Australia (${CURRENT_YEAR})`,
@@ -119,6 +121,16 @@ export default function AustraliaExchangesPage() {
 
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Payment Methods for Australian Users</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1500', border: '1px solid #3d2e0a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔍</span>
+            <strong style={{ color: '#f59e0b', fontSize: 15 }}>Our Testing Notes</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We evaluate exchanges by actually using them — not just reading their marketing materials. Some surprises, both good and bad.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="p-4 rounded-lg bg-[var(--color-bg)]/50">
             <h3 className="text-[var(--color-text)] font-semibold mb-2">PayID / Osko</h3>
@@ -137,6 +149,16 @@ export default function AustraliaExchangesPage() {
             <p className="text-sm text-[var(--color-text-secondary)]">Instant purchase. 2-3.5% fee. Visa and Mastercard accepted on major exchanges.</p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
       </section>
 
       <FAQSection faqs={faqs} />

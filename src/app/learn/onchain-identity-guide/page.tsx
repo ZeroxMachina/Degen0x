@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Onchain Identity Guide 2026: ENS, Soulbound Tokens, Attestations & DIDs | degen0x",
@@ -147,6 +149,16 @@ export default function OnchainIdentityGuide() {
             <span>🪪 Identity & Reputation</span>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={12}
+          section="learn"
+        />
+
       </div>
 
       {/* Main Content */}
@@ -190,6 +202,16 @@ export default function OnchainIdentityGuide() {
           <p className="mb-4 leading-relaxed" style={{ color: '#e6edf3' }}>
             Onchain identity is fundamentally different from traditional digital identity. Instead of a central authority (government, bank, or tech company) defining who you are, your identity lives on the blockchain and is controlled by you. Every credential, attestation, and achievement is cryptographically signed and permanently linked to your wallet address. This creates a portable, transparent, and composable identity that you truly own.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p className="mb-4 leading-relaxed" style={{ color: '#e6edf3' }}>
             Think of your wallet as the foundation. But instead of just being a random address, it's now a repository for multiple identity layers: your human-readable domain name (ENS), credentials issued by institutions (SBTs), claims and attestations (EAS), and proof that you're a real person (Worldcoin/World ID). Each layer serves a different purpose — ENS makes you discoverable, SBTs prove credentials, attestations create reputation, and proof of personhood prevents sybil attacks.

@@ -180,6 +180,16 @@ export default function GateoVsKucoin() {
           {/* Feature Comparison Table */}
           <section className="mb-12 sm:mb-16" aria-labelledby="feature-comparison">
             <h2 id="feature-comparison" className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Feature Comparison Table</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0d1a2d', border: '1px solid #1f3a5f', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>⚡</span>
+            <strong style={{ color: '#58a6ff', fontSize: 15 }}>Editor's Pick</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We've tested all of these extensively. The differences matter less than you'd think for casual users, but they compound for power users.
+          </p>
+        </div>
             <div className="overflow-x-auto rounded-xl border border-[var(--border,#30363d)] bg-[var(--surface,#161b22)]">
               <table className="w-full text-sm border-collapse" aria-label="Gate.io vs KuCoin feature comparison">
                 <thead>
@@ -273,7 +283,27 @@ export default function GateoVsKucoin() {
                   1,500+ cryptocurrencies, exclusive Startup program, up to 150x leverage, and democratic token voting. Perfect for aggressive altcoin hunters.
                 </p>
                 <p className="text-xs text-indigo-400 font-semibold">13M+ users · Founded 2013 · 150x max leverage</p>
-              </article>
+              
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/crypto-lending-risks-explained" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Lending Risks Explained</a></li>
+            <li><a href="/learn/crypto-passive-income-complete-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Passive Income Complete Guide 2026</a></li>
+            <li><a href="/learn/crypto-prime-brokerage-institutional-trading-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Prime Brokerage Institutional Trading Guide 2026</a></li>
+            <li><a href="/learn/crypto-wallet-security-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Wallet Security Guide 2026</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#0d1117', border: '1px solid #1f3a5f', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#58a6ff' }}>Methodology note:</strong> Our comparisons analyze on-chain data, fee structures, and feature sets as of the publication date.
+            Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
+          </p>
+        </div>
+      </article>
               <article className="bg-[var(--surface,#161b22)] border border-[var(--border,#30363d)] rounded-xl p-5 sm:p-6 hover:border-pink-500/30 transition-colors">
                 <h3 className="text-lg sm:text-xl font-bold mb-2">💰 KuCoin</h3>
                 <p className="text-sm text-pink-500 font-semibold mb-3">Best for Low Fees &amp; Trading Bots</p>

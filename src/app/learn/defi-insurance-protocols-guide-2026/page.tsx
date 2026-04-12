@@ -157,6 +157,16 @@ export default function DeFiInsuranceGuide() {
           <p style={{ color: S.text2, fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             DeFi insurance is a protection mechanism that compensates you when a covered smart contract exploit, protocol hack, exchange failure, or stablecoin depeg occurs. Unlike traditional insurance with centralized underwriters, DeFi insurance protocols are decentralized—capital is provided by token holders, claims are assessed by token holders or automated oracles, and payouts are made directly from the insurance pool.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The core premise: DeFi TVL exceeds $1 trillion, but an estimated $3.8 billion has been lost to hacks and exploits since 2020. Less than 2% of DeFi TVL is currently insured, representing a massive market opportunity and an underserved need for protection.
           </p>
@@ -399,6 +409,26 @@ export default function DeFiInsuranceGuide() {
         </div>
       </div>
       <BackToTop />
-    </article>
+    
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/compare/uniswap-vs-sushiswap-vs-curve" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Uniswap Vs Sushiswap Vs Curve</a></li>
+            <li><a href="/courses/solidity-smart-contract-course" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Solidity Smart Contract Course</a></li>
+            <li><a href="/investing/best-defi-tokens-to-buy-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Defi Tokens To Buy 2026</a></li>
+            <li><a href="/investing/best-perpetual-dex-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Perpetual Dex Tokens</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

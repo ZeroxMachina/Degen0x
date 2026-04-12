@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Best Perpetual DEXs 2026: Compare Hyperliquid, dYdX & More | degen0x",
@@ -116,12 +118,32 @@ export default function PerpDEXGuidePage() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={13}
+          section="learn"
+        />
+
+
         {/* Section 1: What Are Perpetual DEXs? */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">What Are Perpetual DEXs?</h2>
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             Perpetual futures, or "perps," are derivative contracts that let you trade cryptocurrencies with leverage without an expiration date. Unlike standard futures on centralized exchanges, perpetual DEXs operate entirely on-chain, giving you direct control over your funds and eliminating intermediaries. You can go long or short, trade with 5x, 10x, or even 100x+ leverage depending on the protocol, and your position stays open indefinitely.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             The key difference from CEX perps is decentralization. On a perpetual DEX, there's no central counterparty holding your assets. Instead, liquidity comes from either an order book (where traders take the other side) or an automated market maker (AMM) that algorithmically prices trades. This means lower counterparty risk, but higher transaction costs and sometimes wider spreads compared to centralized venues.
           </p>
@@ -600,6 +622,14 @@ export default function PerpDEXGuidePage() {
             This guide is educational only and does not constitute financial advice. Perpetual DEX trading involves substantial risk, including liquidation of your entire position and potential losses exceeding your initial investment. Past performance is not indicative of future results. Cryptocurrency markets are highly volatile and speculative. Only trade with capital you can afford to lose completely. Always conduct your own research, understand the specific risks of each protocol, and consider consulting a financial advisor before engaging in derivatives trading. degen0x and its authors assume no liability for trading losses or smart contract risks.
           </p>
         </section>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
       <BackToTop />
     </main>

@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import CryptoConverter from "@/components/CryptoConverter";
 import Breadcrumb from "@/components/Breadcrumb";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -223,6 +225,16 @@ export default function ConverterPage() {
             ))}
           </div>
         </div>
+
+        <AuthorAttribution
+          author="0xMachina"
+          role="Founder"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="tools"
+        />
+
 
         {/* ── Info Section ── */}
         <div

@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `eToro vs Coinbase: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -45,6 +47,16 @@ export default function EtoroVsCoinbasePage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Coinbase if</strong> you want the widest coin selection, lowest fees, most advanced crypto tools, and a platform built specifically for cryptocurrency trading and investing.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Is eToro or Coinbase better for beginners?", answer: "Both are beginner-friendly but in different ways. eToro's CopyTrader lets beginners follow expert traders automatically. Coinbase Learn educates users about crypto fundamentals. Choose eToro for guided investing, Coinbase for self-directed learning." },

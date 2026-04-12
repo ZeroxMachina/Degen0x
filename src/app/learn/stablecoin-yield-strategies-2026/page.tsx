@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -154,6 +156,16 @@ export default function StablecoinYieldStrategiesPage() {
           <div style={{ fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 11 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={3}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of Contents" style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 40 }}>
           <h2 style={{ fontSize: 13, fontWeight: 700, marginBottom: 12, color: "#58a6ff", textTransform: "uppercase", letterSpacing: "0.05em" }}>
@@ -181,6 +193,16 @@ export default function StablecoinYieldStrategiesPage() {
             protocol incentives, and innovative yield structures. Stablecoin yield isn&apos;t one monolithic market — it&apos;s a stack of different
             engines, each with its own risk/return profile:
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <div style={{ overflowX: "auto", WebkitOverflowScrolling: "touch", marginBottom: 20 }}>
             <table style={{ width: "100%", minWidth: 560, borderCollapse: "collapse", fontSize: 14 }}>
@@ -489,6 +511,14 @@ export default function StablecoinYieldStrategiesPage() {
           <p style={{ color: "#8b949e", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
             ⚠️ This guide is for informational purposes only. It is not financial advice. DeFi protocols carry smart contract risk
             and stablecoins can lose their peg. Always do your own research, understand the risks, and never invest more than you can afford to lose.
+          </p>
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
       </article>

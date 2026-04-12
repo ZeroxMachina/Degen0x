@@ -103,6 +103,16 @@ export default function WalletProtectionPage() {
       </div>
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Security Best Practices Beyond Insurance</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0f1a08', border: '1px solid #365314', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔒</span>
+            <strong style={{ color: '#a3e635', fontSize: 15 }}>Coverage Analysis</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Crypto insurance is still immature. Most policies have exclusions that would surprise you. We highlight what's actually covered, not just what's marketed.
+          </p>
+        </div>
         <div className="space-y-3 text-[var(--color-text-secondary)]">
           <p>While insurance provides financial protection, prevention is always the first line of defense. Here are essential wallet security practices:</p>
           <ul className="list-disc pl-6 space-y-2">

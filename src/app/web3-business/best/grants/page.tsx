@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Web3 Grants Programs of ${CURRENT_YEAR} - Funding for Builders | ${SITE_NAME}`,
@@ -149,6 +151,16 @@ export default function GrantsPage() {
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Grants Programs</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0808', border: '1px solid #5c1818', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🏗️</span>
+            <strong style={{ color: '#ef4444', fontSize: 15 }}>Builder Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We've been building in crypto since before 'Web3' was a term. These guides reflect hard-earned lessons from shipping products in this space.
+          </p>
+        </div>
         <div className="space-y-4">
           {products.map((product, index) => (
             <ProductCard
@@ -171,6 +183,16 @@ export default function GrantsPage() {
               <p className="text-sm">Applications with working prototypes or prior contributions are significantly more competitive than ideas alone. Ship a minimum viable product before seeking grant funding.</p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="0xMachina"
+          role="Founder"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="web3-business"
+        />
+
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>

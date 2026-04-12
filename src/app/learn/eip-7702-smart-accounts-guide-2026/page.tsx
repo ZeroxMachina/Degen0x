@@ -114,6 +114,16 @@ export default function EIP7702SmartAccountsPage() {
               <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
                 EIP-7702 introduces a new transaction type (0x04) that allows Externally Owned Accounts (EOAs) to temporarily delegate their execution to smart contracts. This is a paradigm shift for Ethereum account security and UX. Unlike ERC-4337 which requires full account abstraction and a parallel bundler network, EIP-7702 is a lightweight upgrade that adds smart contract capabilities directly to EOAs at the protocol level.
               </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
               <h3 style={{ fontSize: 18, fontWeight: 800, marginBottom: 16, marginTop: 32 }}>The Problem EIP-7702 Solves</h3>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 16, marginBottom: 24 }}>
@@ -704,6 +714,14 @@ export default function EIP7702SmartAccountsPage() {
         {/* Disclaimer */}
         <div style={{ marginTop: 32, padding: 16, background: S.surface, border: `1px solid ${S.border}`, borderRadius: 8, fontSize: 13, color: S.text2, lineHeight: 1.6 }}>
           <strong style={{ color: S.red }}>Disclaimer:</strong> This content is for educational purposes only. EIP-7702 and smart account technology involve smart contract risks, delegation risks, and potential security vulnerabilities. Always audit contracts before delegating, test with small amounts first, and never invest more than you can afford to lose. Understand the risks of delegating execution to smart contracts. Consult security experts and conduct thorough research before using smart account features with significant assets.
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
 

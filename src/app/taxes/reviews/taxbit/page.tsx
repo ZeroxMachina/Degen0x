@@ -6,6 +6,8 @@ import StarRating from "@/components/StarRating";
 import TableOfContents from "@/components/TableOfContents";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `TaxBit Review (${CURRENT_YEAR}) - Free Crypto Tax Reports | ${SITE_NAME}`,
@@ -65,6 +67,16 @@ export default function TaxBitReviewPage() {
             tax reports to their users. The platform supports all IRS-approved cost basis methods
             and generates Form 8949, Schedule D, and other required tax documents.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Every jurisdiction has different rules, and they're changing fast. We note when guidance is US-specific vs. internationally applicable.
+          </p>
+        </div>
           <p className="text-[var(--color-text-secondary)]">
             TaxBit's enterprise focus means its accuracy is trusted at the institutional level.
             The company also provides tax reporting solutions to the IRS itself, which gives
@@ -123,6 +135,16 @@ export default function TaxBitReviewPage() {
               </ul>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="taxes"
+        />
+
         </section>
 
         <section id="verdict" className="mb-10">

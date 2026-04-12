@@ -31,7 +31,17 @@ export default function Page() {
         <p>Ethereum&apos;s strength lies in its unmatched decentralization with over 900,000 validators, perfect uptime record, and the deepest smart contract ecosystem in crypto. Its Layer 2 strategy delegates execution to rollups while maintaining mainnet as a secure settlement and data availability layer. This approach sacrifices some user experience for maximum security and decentralization. Ethereum&apos;s ETF availability and institutional adoption provide a demand floor that Solana has not yet achieved.</p>
         <p>Solana&apos;s advantage is performance — sub-second finality and sub-penny fees make it practical for consumer applications, high-frequency trading, and micropayments that are impractical on Ethereum mainnet. Solana&apos;s monolithic architecture provides a single composable environment without the fragmentation of multiple L2s. Developer momentum is strong with innovative applications in DeFi, meme coins, DePIN, and consumer crypto. The trade-off is lower decentralization and past network stability issues, though reliability has improved significantly.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

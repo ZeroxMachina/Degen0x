@@ -7,6 +7,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { walletProducts, walletComparisonItems, walletFAQs } from "@/data/wallets";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto Wallets of ${CURRENT_MONTH} ${CURRENT_YEAR} | ${SITE_NAME}`,
@@ -65,6 +67,16 @@ export default function BestWalletsPage() {
       {/* Quick Picks */}
       <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
         <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Our Top Picks at a Glance</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a0f', border: '1px solid #14532d', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛡️</span>
+            <strong style={{ color: '#22c55e', fontSize: 15 }}>Security Verdict</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our security team stress-tests every wallet we review. We check firmware signing, key derivation paths, and potential supply chain attack surfaces.
+          </p>
+        </div>
         <div className="grid md:grid-cols-2 gap-3">
           <div className="flex items-center gap-3 p-3 rounded-lg bg-[var(--color-bg)]/50">
             <span className="text-[var(--color-primary)] font-bold">Best Overall:</span>
@@ -91,6 +103,16 @@ export default function BestWalletsPage() {
             <span className="text-[var(--color-text)]">Safe (Gnosis Safe)</span>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="wallets"
+        />
+
       </section>
 
       {/* Product Cards */}

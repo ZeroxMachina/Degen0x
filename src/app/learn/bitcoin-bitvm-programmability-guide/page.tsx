@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Bitcoin BitVM & Programmability Guide 2026 — Smart Contracts on BTC | degen0x",
@@ -98,6 +100,16 @@ export default function BitVMProgrammabilityGuide() {
             <span>14 min read</span>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={13}
+          section="learn"
+        />
+
       </section>
 
       {/* Content */}
@@ -161,6 +173,16 @@ export default function BitVMProgrammabilityGuide() {
           <p className="text-[#c9d1d9] leading-relaxed mb-4">
             BitVM represents a fundamental shift in how we think about Bitcoin's programmability. Unlike traditional blockchain upgrades that modify consensus rules, BitVM achieves complex computation through clever use of Bitcoin's existing Script capabilities. The paradigm operates on a simple principle: push heavy computation off-chain and use Bitcoin's blockchain only as a settlement and verification layer.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p className="text-[#c9d1d9] leading-relaxed mb-4">
             Robin Linus introduced BitVM in October 2023, proposing a method to transform Bitcoin's Script language into a tool capable of executing arbitrary programs. The key insight is that you don't need to execute programs directly on Bitcoin—you only need to verify whether an execution was correct. This distinction is powerful because verification is fundamentally simpler than execution.

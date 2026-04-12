@@ -62,6 +62,16 @@ export default function OneInchGuidePage() {
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             1inch is the leading DEX aggregator, routing swaps intelligently across 300+ decentralized exchanges and liquidity sources to guarantee users get the best price and lowest slippage. A single swap might split across Uniswap, Curve, Balancer, and 50+ other sources simultaneously.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             In 2026, 1inch Fusion+ is live in production. This revolutionary mode uses professional "resolvers" who compete in real-time to fill swaps with MEV protection. Users submit intents (swap requests) without specifying the exact execution, and resolvers execute them at the best possible price without front-running or sandwich attacks.
           </p>

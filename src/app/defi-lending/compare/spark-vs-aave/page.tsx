@@ -44,6 +44,16 @@ export default function SparkVsAavePage() {
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0f2e', border: '1px solid #3b1f5e', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>⚠️</span>
+            <strong style={{ color: '#c084fc', fontSize: 15 }}>Risk Assessment</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our DeFi researchers monitor governance proposals and treasury health, not just headline rates. A protocol's governance decisions reveal more than its TVL.
+          </p>
+        </div>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Ecosystem Integration</h3>
         <p className="text-[var(--color-text-secondary)]">Spark&apos;s deepest advantage is its integration with MakerDAO/Sky. The DAI Savings Rate (DSR) or Sky Savings Rate (SSR) provides yield directly from Maker&apos;s protocol revenue, independent of lending market utilization. This means Spark can offer consistent stablecoin yields even during low-demand periods. Aave operates independently, which provides neutrality but means yields depend entirely on market-driven supply and demand dynamics.</p>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Multi-Chain Strategy</h3>

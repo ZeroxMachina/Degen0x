@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Memecoin Trading Strategy: Risk Management Guide",
@@ -44,6 +46,16 @@ export default function MemecoinTradingGuide() {
           derive value purely from community belief and network effects. This creates both
           tremendous opportunity and substantial risk.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           The memecoin phenomenon has evolved significantly. What started with Dogecoin as a
           literal joke has become a multi-billion dollar market segment. Projects like Shiba Inu
@@ -275,6 +287,16 @@ export default function MemecoinTradingGuide() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={4}
+          section="learn"
+        />
+
 
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           The worst mistake in memecoin trading is holding through a 10x expecting 100x. Most

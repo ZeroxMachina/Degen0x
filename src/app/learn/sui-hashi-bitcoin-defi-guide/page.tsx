@@ -3,8 +3,10 @@ import Link from 'next/link';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import StructuredData from '@/components/StructuredData';
 import BackToTop from '@/components/BackToTop';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
-const metadata: Metadata = {
+
+export const metadata: Metadata = {
   title: 'Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on Sui | degen0x',
   description: 'Comprehensive guide to Hashi protocol on Sui blockchain. Native Bitcoin DeFi without wrappers. BTC lending, borrowing, yield generation with institutional backing.',
   keywords: [
@@ -24,11 +26,18 @@ const metadata: Metadata = {
     publishedTime: '2026-03-25T00:00:00Z',
     authors: ['degen0x'],
     tags: ['DeFi', 'Bitcoin', 'Sui', 'BTCFi'],
+    images: [{
+      url: 'https://degen0x.com/og-sui-hashi-bitcoin-defi-guide.svg',
+      width: 1200,
+      height: 630,
+      alt: 'Sui Hashi Bitcoin DeFi Guide 2026',
+    }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Sui Hashi Bitcoin DeFi Guide 2026',
     description: 'Master native Bitcoin DeFi on Sui with Hashi protocol',
+    images: ['https://degen0x.com/og-sui-hashi-bitcoin-defi-guide.svg'],
   },
 };
 
@@ -148,6 +157,16 @@ export default function HashiBitcoinDefiGuide() {
             </div>
           </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-25"
+          updatedDate="2026-04-12"
+          readingTime={9}
+          section="learn"
+        />
+
+
           {/* Table of Contents */}
           <div
             style={{
@@ -209,6 +228,16 @@ export default function HashiBitcoinDefiGuide() {
             <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '16px', color: '#e6edf3' }}>
               Hashi is a native Bitcoin DeFi protocol launched on Sui blockchain in March 2026. It enables direct Bitcoin lending, borrowing, and yield generation without wrapping or bridging. Hashi uses institutional-grade multi-party computation (MPC) custody through BitGo combined with Sui smart contracts to bring actual Bitcoin into DeFi primitives.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
             <div
               style={{

@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -25,7 +27,10 @@ export const metadata: Metadata = {
     title: 'Stablecoins Explained 2026: USDT, USDC, USDe & Beyond',
     description: 'Complete stablecoins guide for 2026. Compare USDT, USDC, USDe, USDS — fees, risks, yield, and regulation.',
   },
-};
+,
+  alternates: {
+    canonical: 'https://degen0x.com/learn/stablecoins-explained-guide-2026',
+  }};
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -131,6 +136,16 @@ export default function StablecoinsExplainedGuidePage() {
           <div style={{ marginTop: 12, fontSize: 13, color: '#8b949e' }}>Updated April 2026 · 13 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-02"
+          updatedDate="2026-04-02"
+          readingTime={6}
+          section="learn"
+        />
+
+
         {/* ── Table of Contents ── */}
         <nav aria-label="Table of Contents" style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 32 }}>
           <h2 style={{ fontSize: 14, fontWeight: 700, marginBottom: 12, color: '#58a6ff' }}>Table of Contents</h2>
@@ -153,6 +168,16 @@ export default function StablecoinsExplainedGuidePage() {
           <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             A stablecoin is a cryptocurrency designed to maintain a fixed value — almost always pegged 1:1 to the US dollar. Unlike Bitcoin or Ethereum, whose prices can swing 10%+ in a day, stablecoins give you the programmability and speed of blockchain without the rollercoaster ride.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Think of stablecoins as digital dollars that live on-chain. You can send $10,000 worth of USDC from New York to Tokyo in under a minute for pennies in gas fees, use it as collateral on <Link href="/learn/crypto-lending-borrowing-defi-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none' }}>lending protocols like Aave</Link>, swap it for any token on a DEX, or simply park it in a wallet as a safe haven during market downturns.
           </p>
@@ -420,6 +445,22 @@ export default function StablecoinsExplainedGuidePage() {
         <div style={{ marginTop: 48, padding: 20, background: '#161b22', border: '1px solid #d2992240', borderRadius: 12 }}>
           <p style={{ color: '#d29922', fontSize: 13, lineHeight: 1.7 }}>
             ⚠️ This guide is for informational purposes only. It is not financial advice. Stablecoin yields and market data are approximate and subject to change. Always do your own research before making investment decisions.
+          </p>
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
       </article>

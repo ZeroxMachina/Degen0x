@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Impermanent Loss & Liquidity Providing Guide 2026 | degen0x',
@@ -45,7 +47,10 @@ export const metadata: Metadata = {
       'Master impermanent loss: understand the mechanics, calculate IL at scale, deploy concentrated liquidity strategies, and stay profitable as an LP.',
     images: ['https://degen0x.com/og-impermanent-loss-2026.svg'],
   },
-};
+,
+  alternates: {
+    canonical: 'https://degen0x.com/learn/impermanent-loss-liquidity-providing-guide-2026',
+  }};
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -126,6 +131,7 @@ export default function ImpermanentLossPage() {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     lineHeight: '1.6',
+    scrollBehavior: 'smooth',
   };
 
   const containerStyle: React.CSSProperties = {
@@ -289,7 +295,7 @@ export default function ImpermanentLossPage() {
             Learn
           </Link>
           <span style={{ margin: '0 6px' }}>›</span>
-          <span style={{ color: '#c9d1d9' }}>Impermanent Loss & Liquidity Providing</span>
+          <span style={{ color: '#c9d1d9' }}>Impermanent Loss &amp; Liquidity Providing</span>
         </nav>
 
         {/* Badges & Metadata */}
@@ -299,21 +305,21 @@ export default function ImpermanentLossPage() {
         </div>
 
         {/* Main Title */}
-        <h1 style={h1Style}>Impermanent Loss & Liquidity Providing Guide 2026</h1>
+        <h1 style={h1Style}>Impermanent Loss &amp; Liquidity Providing Guide 2026</h1>
 
         <div style={metaStyle}>
           Published: April 3, 2026 | Reading Time: 18 min
         </div>
 
         <p style={pStyle}>
-          Impermanent loss is the elephant in every liquidity provider's portfolio. You deposit two
+          Impermanent loss is the elephant in every liquidity provider&apos;s portfolio. You deposit two
           tokens into a pool, the market price moves dramatically, and suddenly you have fewer total
-          assets than if you'd simply held your original tokens. This is impermanent loss, and it's
+          assets than if you&apos;d simply held your original tokens. This is impermanent loss, and it&apos;s
           the primary risk that separates profitable from unprofitable liquidity providing. Yet
           thousands of DeFi farmers generate strong returns—6-25%+ APY—despite impermanent loss.
           This guide reveals how they do it: understanding the math, choosing the right pools, deploying
           concentrated liquidity strategically, and profiting from fees even as prices diverge. Whether
-          you're new to liquidity providing or optimizing existing positions, mastering impermanent
+          you&apos;re new to liquidity providing or optimizing existing positions, mastering impermanent
           loss separates sustainable yield farming from account-draining mistakes.
         </p>
 
@@ -370,23 +376,23 @@ export default function ImpermanentLossPage() {
         <p style={pStyle}>
           Impermanent loss (IL) is the difference between holding tokens versus providing them as
           liquidity. When you deposit two tokens into an automated market maker (AMM) and prices
-          diverge, you end up with fewer tokens than if you'd simply held them. Think of it like
+          diverge, you end up with fewer tokens than if you&apos;d simply held them. Think of it like
           this: you deposit 1 ETH + $3000 USDC into a 50-50 pool when ETH costs $3000. The pool is
           now balanced: total value = $6000. Three months later, ETH rallies to $6000. The AMM has
           automatically rebalanced your position to maintain the constant product formula. You now
           hold approximately 1.41 ETH and $2121 USDC. Your position is worth ~$10,606 total. But
-          if you'd simply held your original 1 ETH + 3000 USDC outside a pool, you'd have $6000 +
-          $3000 = $9000 total. Wait—the LP position is worth MORE ($10,606 vs $9000). Where's the loss?
+          if you&apos;d simply held your original 1 ETH + 3000 USDC outside a pool, you&apos;d have $6000 +
+          $3000 = $9000 total. Wait—the LP position is worth MORE ($10,606 vs $9000). Where&apos;s the loss?
         </p>
 
         <p style={pStyle}>
           The problem is your comparison baseline. The LP position gained $4606 in absolute value.
-          But a pure ETH position would have gained $3000 ($6000 - $3000 = +$3000 for ETH). If you'd
-          held 1 ETH + 3000 USDC, you'd have $15,000 total ($6000 for ETH + $3000 USDC, plus the
+          But a pure ETH position would have gained $3000 ($6000 - $3000 = +$3000 for ETH). If you&apos;d
+          held 1 ETH + 3000 USDC, you&apos;d have $15,000 total ($6000 for ETH + $3000 USDC, plus the
           original $6000 grows with ETH). Actually, let me clarify: if you hold 1 ETH at $6000 + 3000
           USDC at $1, you have 1 * $6000 + 3000 * $1 = $9000. If you provide liquidity, you have
-          1.41 * $6000 + $2121 * $1 = $10,606. The difference is NOT a loss in this example—it's a
-          gain. But this assumes ETH stays at $6000. Let's restart with a clearer example.
+          1.41 * $6000 + $2121 * $1 = $10,606. The difference is NOT a loss in this example—it&apos;s a
+          gain. But this assumes ETH stays at $6000. Let&apos;s restart with a clearer example.
         </p>
 
         <p style={pStyle}>
@@ -396,7 +402,7 @@ export default function ImpermanentLossPage() {
           non-LP holdings would be: 1 ETH + 3000 USDC = $2000 + $3000 = $5000. The LP position is
           worth more! But if ETH had RALLIED to $4500, your LP position would have ~0.82 ETH + $2682
           USDC = $3690 + $2682 = $6372. Meanwhile, holding would give you 1 ETH + 3000 USDC = $4500
-          + $3000 = $7500. Here's the impermanent loss: $7500 (hold) vs $6372 (LP) = $1128 loss for
+          + $3000 = $7500. Here&apos;s the impermanent loss: $7500 (hold) vs $6372 (LP) = $1128 loss for
           providing liquidity when prices diverged upward.
         </p>
 
@@ -411,9 +417,9 @@ export default function ImpermanentLossPage() {
           Why is it called "impermanent"? Because if prices reconverge to your entry point, your IL
           disappears. If ETH rallied to $4500 (causing $1128 IL) but then crashed back to $3000
           (your original price), your position returns to 1 ETH + 3000 USDC. Any trading fees earned
-          during the price movement are pure profit. The "impermanent" label means IL isn't permanent
+          during the price movement are pure profit. The "impermanent" label means IL isn&apos;t permanent
           unless you withdraw while prices are diverged. This distinction is critical: successful LPs
-          don't "avoid" IL—they profit from fees enough to overcome it, then hold through price
+          don&apos;t "avoid" IL—they profit from fees enough to overcome it, then hold through price
           reconvergence.
         </p>
 
@@ -439,17 +445,17 @@ export default function ImpermanentLossPage() {
           33,333 USDC to get 10 ETH. The trader received an average price of 3,333 USDC/ETH, which
           is worse than the 3,000 USDC/ETH before the trade. This slippage is expected and increases
           as trade size grows. But the key mechanism: as y increased and x decreased, the ratio x/y
-          increased, implying ETH's price (in USDC terms) increased.
+          increased, implying ETH&apos;s price (in USDC terms) increased.
         </p>
 
         <p style={pStyle}>
           Now, as a liquidity provider: you own a proportional share of the pool. If you owned 1% of
-          the pool initially, you owned 1 ETH and 3,000 USDC. After the trader's purchase, you still
+          the pool initially, you owned 1 ETH and 3,000 USDC. After the trader&apos;s purchase, you still
           own 1% of the pool: 0.99 ETH and 3,333 USDC. Your position now has 0.99 * (new ETH price) +
           3,333 USDC. If new ETH price is 3,333 USDC/ETH, your position is worth 0.99 * 3,333 + 3,333
           = 6,633 USDC. Your original 1 ETH + 3,000 USDC at the old 3,000 USDC/ETH price = 6,000
-          USDC. Gain! But this ignores the fact that ETH's price increased only because of the specific
-          trade. In a market where ETH's price genuinely rose, you'd underperform.
+          USDC. Gain! But this ignores the fact that ETH&apos;s price increased only because of the specific
+          trade. In a market where ETH&apos;s price genuinely rose, you&apos;d underperform.
         </p>
 
         <h3 style={h3Style}>Concrete ETH-USDC Example</h3>
@@ -467,7 +473,7 @@ export default function ImpermanentLossPage() {
 
         <p style={pStyle}>
           Arbitrageurs act: A trader buys ETH from the pool (buying at the old 3,000 USDC/ETH) and
-          sells on other markets at 6,000 USDC/ETH. They'll keep buying until the pool price matches
+          sells on other markets at 6,000 USDC/ETH. They&apos;ll keep buying until the pool price matches
           the market price. Math: if they buy y ETH from the pool, the pool maintains (100 - y) * x =
           30,000,000. When pool price = 6,000 USDC/ETH: (100 - y) * [30,000,000 / (100 - y)] / y =
           6,000. Solving: y ≈ 41.42 ETH. The pool trades 41.42 ETH for USDC, and the pool becomes
@@ -476,7 +482,7 @@ export default function ImpermanentLossPage() {
 
         <p style={pStyle}>
           Your position now: 0.5858 ETH + 5,122 USDC = 0.5858 * 6,000 + 5,122 = 3,515 + 5,122 =
-          8,637 USDC. But if you'd held your original 1 ETH + 3,000 USDC: 1 * 6,000 + 3,000 = 9,000
+          8,637 USDC. But if you&apos;d held your original 1 ETH + 3,000 USDC: 1 * 6,000 + 3,000 = 9,000
           USDC. The difference: 9,000 - 8,637 = 363 USDC loss. This is impermanent loss of ~4%, even
           though your LP position gained 44% in absolute value. You gained $8,637 - $6,000 = $2,637,
           but you left $363 on the table by providing liquidity instead of holding.
@@ -517,12 +523,13 @@ export default function ImpermanentLossPage() {
           borderRadius: '8px',
           border: '1px solid #30363d',
           marginBottom: '20px',
-        }}>
+        }}
+    >
           IL = 2√(price_ratio) / (1 + price_ratio) - 1
         </p>
 
         <p style={pStyle}>
-          Where price_ratio = new_price / original_price. Let's calculate IL for different price
+          Where price_ratio = new_price / original_price. Let&apos;s calculate IL for different price
           movements:
         </p>
 
@@ -581,7 +588,7 @@ export default function ImpermanentLossPage() {
           Notice the non-linear acceleration: a 2x price move causes 5.73% IL, but a 5x move causes
           25.5% IL. This is why volatile pairs are dangerous—IL compounds dramatically as prices
           diverge. Also note: IL is symmetric. A 2x increase and a 2x decrease (to 0.5x) both cause
-          ~5.73% IL. The direction doesn't matter; magnitude does.
+          ~5.73% IL. The direction doesn&apos;t matter; magnitude does.
         </p>
 
         <h3 style={h3Style}>When IL Becomes Permanent</h3>
@@ -630,15 +637,15 @@ export default function ImpermanentLossPage() {
           (50-50) and earn fees on all price movements. With v3 concentrated to $3,000-$4,000, you
           deposit 0.5 ETH + 1,500 USDC but earn the same fees on all trades within your range. Your
           capital efficiency increased 3.3x. But if ETH crashes to $2,500 (outside your range), your
-          entire position becomes 0 ETH + $2,500 USDC. You're now 100% USDC while ETH is rallying—IL
-          is maximized. Worse, you're not earning any fees because trading in your range has stopped.
+          entire position becomes 0 ETH + $2,500 USDC. You&apos;re now 100% USDC while ETH is rallying—IL
+          is maximized. Worse, you&apos;re not earning any fees because trading in your range has stopped.
         </p>
 
         <p style={pStyle}>
           Concentrated liquidity concentrated to narrow ranges (e.g., $3,400-$3,600 on a $3,500 ETH
           price) can experience IL of 5-10% if prices move even 5-10%, compared to ~0.6% IL in v2.
           However, the fee amplification (5-20x more fee income in your range) might offset this if
-          volatility remains moderate. The trade-off: higher fees if you're right about the price
+          volatility remains moderate. The trade-off: higher fees if you&apos;re right about the price
           range, catastrophic IL if prices move beyond your range.
         </p>
 
@@ -675,7 +682,7 @@ export default function ImpermanentLossPage() {
 
         <p style={pStyle}>
           The most direct path: deposit to pools where prices stay pegged. USDC-USDT, USDC-DAI,
-          USDC-FRAX all maintain price pegs because they're asset-backed stablecoins. IL is
+          USDC-FRAX all maintain price pegs because they&apos;re asset-backed stablecoins. IL is
           theoretically zero. In practice, minor depeg events (USDC-USDT spreads of 0.1%) cause
           negligible IL. Curve Finance dominates stablecoin farming with 70% market share, offering
           4Pool (USDC, USDT, DAI, FRAX), which yields 6-8% in pure trading fees. This is the
@@ -696,7 +703,7 @@ export default function ImpermanentLossPage() {
 
         <p style={pStyle}>
           For concentrated liquidity positions on volatile pairs (ETH-USDC, BTC-USDC), actively
-          manage your price range. If ETH is at $3,500 and you've concentrated $3,000-$4,000, monitor
+          manage your price range. If ETH is at $3,500 and you&apos;ve concentrated $3,000-$4,000, monitor
           daily. If prices trend toward $4,000, move your range to $3,500-$4,500. If prices crash to
           $3,200, rebalance to $3,000-$3,800. Active management requires discipline but can maintain
           fee generation while minimizing IL. Automated rebalancing bots (like those on Arrakis or
@@ -727,7 +734,7 @@ export default function ImpermanentLossPage() {
         <p style={pStyle}>
           Some protocols (Pendle, Balancer) allow asymmetric deposits: you deposit 80% USDC and 20%
           ETH instead of 50-50. This reduces your exposure to the token that might appreciate (ETH).
-          If you're bullish on USDC yield and neutral on ETH, an 80-20 deposit reduces IL on the ETH
+          If you&apos;re bullish on USDC yield and neutral on ETH, an 80-20 deposit reduces IL on the ETH
           side while maximizing your allocation to the yield-bearing asset.
         </p>
 
@@ -753,9 +760,9 @@ export default function ImpermanentLossPage() {
         <p style={pStyle}>
           Scenario 1: Uniswap ETH-USDC on Ethereum. Daily volume: $2 billion+. Fee tier: 0.05%
           (0.05% of trading volume). Your position: $100,000. Daily fee earned: ($2B * 0.05%) / (total
-          pool size) * your_share. If the pool is $10B total and you're 0.001% of it, you earn roughly
+          pool size) * your_share. If the pool is $10B total and you&apos;re 0.001% of it, you earn roughly
           ($2B * 0.0005) / $10B * 0.00001 = $0.01/day (rough estimate). Over a month: $0.30. But if
-          ETH experiences 5% daily volatility, IL could be 2-3% monthly. Over a year, you'd need
+          ETH experiences 5% daily volatility, IL could be 2-3% monthly. Over a year, you&apos;d need
           sustained trading fees to offset IL.
         </p>
 
@@ -773,7 +780,7 @@ export default function ImpermanentLossPage() {
           High-volume pools (Uniswap v3 ETH-USDC on Ethereum, Curve stablecoin pools, Uniswap v4
           pools on Arbitrum) process billions in daily volume. This volume generates fees that clearly
           exceed IL for most time periods. A $10,000 position in Curve 4Pool will earn $600-1,000
-          annually in fees, while IL on stablecoins is under $10. Even if prices diverge 50% on a shitcoin
+          annually in fees, while IL on stablecoins is &lt;$10. Even if prices diverge 50% on a shitcoin
           pair with $10M daily volume, your position might earn $50/month in fees but incur $200 IL.
           Unprofitable after one month if divergence persists.
         </p>
@@ -784,19 +791,19 @@ export default function ImpermanentLossPage() {
           Many pools offer governance incentives that boost APY: Uniswap distributes UNI tokens,
           Curve distributes CRV, Balancer distributes BAL. These incentives can easily 2-3x your fee
           earnings. If base fees earn 2%, incentives might add another 4-6%, totaling 6-8% yield.
-          Even with 3-5% IL on volatile pairs, you're profitable. The key: evaluate total yield
+          Even with 3-5% IL on volatile pairs, you&apos;re profitable. The key: evaluate total yield
           (fees + incentives) vs. expected IL before deploying capital.
         </p>
 
         <div style={infoBoxStyle}>
-          <strong>Profitability checklist:</strong> Before depositing LP capital, ask: (1) What's
-          the daily trading volume? (2) What's the fee yield (base + incentives)? (3) What's the
-          token pair volatility? (4) How long do I plan to hold? (5) What's my expected IL over that
-          period? If fee yield {'>='} expected IL * 1.5, deploy. If fee yield {'<'} expected IL, avoid.
+          <strong>Profitability checklist:</strong> Before depositing LP capital, ask: (1) What&apos;s
+          the daily trading volume? (2) What&apos;s the fee yield (base + incentives)? (3) What&apos;s the
+          token pair volatility? (4) How long do I plan to hold? (5) What&apos;s my expected IL over that
+          period? If fee yield &gt;= expected IL * 1.5, deploy. If fee yield &lt; expected IL, avoid.
         </div>
 
         <p style={pStyle}>
-          Example decision framework: USDC-USDT on Curve. Fee yield: 8% annually, IL: under 0.5% annually.
+          Example decision framework: USDC-USDT on Curve. Fee yield: 8% annually, IL: &lt;0.5% annually.
           Ratio: 16x. Deploy $100,000. Expected return: $8,000 annually. ETH-DOGE (hypothetical).
           Fee yield: 2% annually, IL: 8% annually. Ratio: 0.25x. Expected net return: -6%. Avoid.
         </p>
@@ -817,7 +824,7 @@ export default function ImpermanentLossPage() {
           APY.vision (Ethereum): Aggregates fee yields, incentives, and IL estimates across pools.
           You can filter by protocol, token pair, and fee tier. Shows historical APY and IL. Uniswap
           Analytics (uniswap.org/app/pools): Official Uniswap dashboard. Shows per-pool fee APY, TVL,
-          volume, and (estimated) IL. Updated real-time. Curve Analytics (curve.fi/pools): Curve's
+          volume, and (estimated) IL. Updated real-time. Curve Analytics (curve.fi/pools): Curve&apos;s
           dashboard for all pools. Shows historical APY broken down by trading fees and incentives.
         </p>
 
@@ -874,7 +881,7 @@ export default function ImpermanentLossPage() {
         <p style={pStyle}>
           Yes, if you hold until prices reconverge. If ETH rallies to $6,000 (causing IL) and then
           crashes back to $3,000 (your entry), your IL disappears. Meanwhile, any fees earned during
-          the price movements are profit. This is why IL is "impermanent"—it's only permanent if you
+          the price movements are profit. This is why IL is "impermanent"—it&apos;s only permanent if you
           withdraw while prices are diverged. For many LPs, holding through short-term volatility
           yields strong results as fees accumulate and prices reconverge.
         </p>
@@ -887,20 +894,20 @@ export default function ImpermanentLossPage() {
           management. Avoid volatile pairs until you understand IL mechanics.
         </p>
 
-        <h3 style={h3Style}>What's the minimum position size to make LP profitable?</h3>
+        <h3 style={h3Style}>What&apos;s the minimum position size to make LP profitable?</h3>
         <p style={pStyle}>
           It depends on gas costs. On Ethereum, gas costs for deposit/withdrawal are $20-100. On
           Arbitrum/Optimism, $0.50-2. For profitable farming, your fee earnings should exceed gas
           costs. On Ethereum, a $1,000 position earning 8% yield = $80/year = less than a deposit
-          transaction's gas cost. Recommendation: $10,000+ on Ethereum, $1,000+ on L2s. For smaller
+          transaction&apos;s gas cost. Recommendation: $10,000+ on Ethereum, $1,000+ on L2s. For smaller
           positions, use auto-compounding vaults (Beefy, Yearn) to batch gas costs across many users.
         </p>
 
         <h3 style={h3Style}>Should I use concentrated liquidity?</h3>
         <p style={pStyle}>
-          Only if you're actively managing or using an automated bot. Concentrated liquidity amplifies
+          Only if you&apos;re actively managing or using an automated bot. Concentrated liquidity amplifies
           both fees and IL. If you concentrate on ETH-USDC $3,000-$4,000 and prices crash to $2,500,
-          you're 100% USDC and not earning fees. Passive LPs should stick with v2-style or Curve
+          you&apos;re 100% USDC and not earning fees. Passive LPs should stick with v2-style or Curve
           stablecoin pairs. Active LPs and traders should learn concentrated liquidity; the fee
           amplification can be 5-20x if managed well.
         </p>
@@ -908,7 +915,7 @@ export default function ImpermanentLossPage() {
         <h3 style={h3Style}>How do I exit an LP position with IL losses?</h3>
         <p style={pStyle}>
           Exit when IL + opportunity cost exceeds expected fee recovery. If your position has 10% IL
-          and is earning 2% annually, it'll take 5 years to break even (if IL doesn't worsen). You're
+          and is earning 2% annually, it&apos;ll take 5 years to break even (if IL doesn&apos;t worsen). You&apos;re
           opportunity costs: deploy that capital to 8% yield elsewhere. Better to exit, realize the
           loss, and redeploy to higher-yield positions than hold underwater positions hoping for
           recovery. Use loss harvesting (sell the LP tokens, capture the tax loss) and reinvest in
@@ -961,17 +968,27 @@ export default function ImpermanentLossPage() {
 
           <p style={pStyle}>
             <strong>Summary:</strong> Impermanent loss is the core risk of liquidity providing—when
-            prices diverge, you underperform holding. But it's manageable through strategy selection,
+            prices diverge, you underperform holding. But it&apos;s manageable through strategy selection,
             active management, and understanding the math. Stablecoin pairs on Curve (6-12% yield,
             near-zero IL) are the safest path. High-volume volatile pairs (ETH-USDC, BTC-USDC) with
             sufficient fee income can be profitable despite IL. Concentrated liquidity amplifies both
             fees and IL—use only with active management. The formula is simple: if fees exceed IL,
-            you're profitable. If IL exceeds fees, exit. Track your positions weekly, understand the
+            you&apos;re profitable. If IL exceeds fees, exit. Track your positions weekly, understand the
             math, choose the right pools, and adapt as markets change. Success as an LP requires
             discipline, not just capital.
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-03"
+          updatedDate="2026-04-03"
+          readingTime={16}
+          section="learn"
+        />
+
           <BackToTop />
     </main>
   );

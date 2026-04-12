@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Coinbase Advanced Review 2026: Professional Trading, Lower Fees",
@@ -26,6 +28,16 @@ export default function CoinbaseAdvancedReview() {
             <p className="text-[#8b949e] mb-4">
               Coinbase Advanced provides a full-featured trading terminal similar to professional exchanges like Kraken or Binance. The interface displays TradingView charts with full technical analysis tools, a real-time order book showing bid/ask depth, trade history, and a sophisticated order entry panel. Users can place market, limit, stop-loss, stop-limit, and post-only orders. The layout is customizable, with panels resizable and arrangeable to suit individual preferences. Real-time data updates smoothly even during peak market activity. The interface uses a clean dark theme. Compared to Coinbase Standard's simplicity, Advanced provides everything serious traders need. The learning curve is steeper than Standard but reasonable for experienced traders.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1500', border: '1px solid #3d2e0a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔍</span>
+            <strong style={{ color: '#f59e0b', fontSize: 15 }}>Our Testing Notes</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            The fee structures are rarely as simple as exchanges advertise. We broke down the real costs including spread, withdrawal fees, and hidden charges.
+          </p>
+        </div>
           </section>
 
           <section>
@@ -110,6 +122,16 @@ export default function CoinbaseAdvancedReview() {
                 </ul>
               </div>
             </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
           </section>
 
           <section>

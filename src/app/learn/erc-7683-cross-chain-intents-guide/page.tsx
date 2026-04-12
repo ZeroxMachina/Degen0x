@@ -5,6 +5,8 @@ import BackToTop from '@/components/BackToTop';
 import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'ERC-7683 Guide 2026: The Cross-Chain Intents Standard Explained',
@@ -210,6 +212,16 @@ export default function ERC7683GuidePage() {
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>
             ERC-7683 is an Ethereum standard that creates a universal framework for cross-chain intents. Co-authored by Uniswap Labs and Across Protocol with endorsement from Vitalik Buterin, ERC-7683 represents a fundamental shift in how assets move between blockchains.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>
             Instead of forcing users to manually bridge assets through traditional lock-and-mint mechanisms, ERC-7683 allows users to simply declare what they want to achieve. For example: "I want to swap 1,000 USDC on Ethereum for WETH on Base." The user specifies the source chain, destination chain, input token, output token, and deadline. They don't care who fulfills this order—only that it happens as cheaply and quickly as possible.
@@ -1011,5 +1023,15 @@ export default function ERC7683GuidePage() {
         <BackToTop />
       </div>
     </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={13}
+          section="learn"
+        />
+
   );
 }

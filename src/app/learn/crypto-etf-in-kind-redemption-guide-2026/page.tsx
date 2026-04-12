@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto ETF In-Kind Redemptions Guide 2026: How They Work & Why They Matter | degen0x",
@@ -119,6 +121,16 @@ export default function CryptoETFInKindRedemptionGuidePage() {
           <div style={{ marginTop: 12, fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 11 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-03-28"
+          readingTime={5}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 32 }}>
           <h2 style={{ fontSize: 14, fontWeight: 700, marginBottom: 12, color: "#58a6ff" }}>Table of Contents</h2>
@@ -141,6 +153,16 @@ export default function CryptoETFInKindRedemptionGuidePage() {
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             In-kind redemptions are the mechanism by which <strong>authorized participants (APs)</strong> — large financial institutions that maintain ETF liquidity — exchange ETF shares directly for the underlying asset, rather than receiving cash.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             For <Link href="/learn/bitcoin-etf-guide" style={{ color: "#58a6ff", textDecoration: "none" }}>Bitcoin ETFs</Link>, this means an authorized participant can redeem a block of IBIT shares and receive actual Bitcoin instead of USD. The reverse (in-kind creation) means depositing Bitcoin to receive new ETF shares. This is how virtually every traditional ETF (SPY, QQQ, etc.) already works — crypto was the exception until mid-2025.
           </p>
@@ -362,6 +384,14 @@ export default function CryptoETFInKindRedemptionGuidePage() {
           </div>
         </section>
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

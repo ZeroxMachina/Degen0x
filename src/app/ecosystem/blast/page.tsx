@@ -87,6 +87,16 @@ export default function BlastPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Blast is an Ethereum Layer 2 that fundamentally reimagines how L2 depositors earn. Unlike standard L2s where your deposits are idle, Blast generates native yield on ETH and stablecoins through yield farming partnerships and auto-rebasing. Your balance automatically increases over time without requiring any additional action.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Blast uses the Blast protocol to route user assets into yield-generating positions while maintaining full L2 liquidity. ETH is staked through Lido and other protocols, while stablecoins are lent through AAVE and Compound. All yield flows back to users as auto-rebasing tokens.
           </p>

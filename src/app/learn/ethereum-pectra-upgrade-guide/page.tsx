@@ -9,6 +9,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -199,6 +201,16 @@ export default function EthereumPectraUpgradeGuide() {
           ))}
         </div>
       </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={6}
+          section="learn"
+        />
+
 
       {/* ─── Section 2 ──────────────────────────────────────────────────────────── */}
       <h2 id="eip-7702" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">

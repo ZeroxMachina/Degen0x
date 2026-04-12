@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 
 interface MarketEvent {
   time: string;
@@ -94,22 +93,13 @@ export default function MarketRecapClient() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
-      {/* Breadcrumb */}
-      <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-8">
-        <Link href="/" className="hover:text-[var(--color-text)]">Home</Link>
-        <span aria-hidden="true">/</span>
-        <Link href="/tools" className="hover:text-[var(--color-text)]">Tools</Link>
-        <span aria-hidden="true">/</span>
-        <span className="text-[var(--color-text)]" aria-current="page">Market Recap</span>
-      </nav>
-
       <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
         <div>
           <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-2">
             Daily Market Recap
           </h1>
           <p className="text-[var(--color-text-secondary)]">
-            March 12, 2026 — Everything that moved the crypto market today.
+            {new Date().toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })} — Everything that moved the crypto market today.
           </p>
         </div>
         <div className="mt-4 md:mt-0 flex items-center gap-2 text-sm">

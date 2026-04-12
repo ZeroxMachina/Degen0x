@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "NFTFi Guide 2026: NFT Lending, Fractionalization & DeFi for NFTs | degen0x",
@@ -110,6 +112,16 @@ export default function NFTFiGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 2026 · 14 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-23"
+          updatedDate="2026-03-23"
+          readingTime={4}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -132,6 +144,16 @@ export default function NFTFiGuide() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             NFTFi sits at the intersection of NFTs and decentralized finance. While DeFi has always been about making assets productive—lending, borrowing, staking, trading—NFTs have historically been static. You buy one, it sits in your wallet, and its value is locked until you sell. NFTFi changes this by treating NFTs as financial assets with collateral value, yield potential, and tradeable exposure.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The core problem NFTFi solves is <strong>liquidity</strong>. A CryptoPunk worth 50 ETH represents significant capital, but it's completely illiquid until sold. NFTFi lets that holder borrow 25 ETH against the Punk, deploy that capital in DeFi, and still retain ownership. This capital efficiency is what makes NFTFi transformative.
           </p>

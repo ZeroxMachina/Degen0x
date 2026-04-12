@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'AI Agent Wallets & Autonomous Crypto Payments Guide 2026 | degen0x',
@@ -150,6 +152,16 @@ export default function Page() {
             </div>
           </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={15}
+          section="learn"
+        />
+
+
           {/* Quick Summary Box */}
           <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
             <h2 className="text-lg font-bold text-[#58a6ff] mb-3">Quick Summary</h2>
@@ -202,6 +214,16 @@ export default function Page() {
               <p className="text-[#e6edf3] mb-4 leading-relaxed">
                 An <strong>AI agent wallet</strong> is a blockchain wallet designed to grant autonomous AI systems the ability to hold, manage, and spend cryptocurrencies independently. Unlike traditional cryptocurrency wallets that require human users to manually approve and execute transactions, agentic wallets are programmable accounts that allow AI agents to make autonomous decisions, transact with services, and participate in blockchain networks without requiring human intervention for every action.
               </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
               <p className="text-[#e6edf3] mb-4 leading-relaxed">
                 This is a fundamental shift in how AI systems interact with financial infrastructure. Historically, AI has been limited to making recommendations or processing information. With agentic wallets, AI can now directly execute financial transactions&mdash;purchasing compute resources, accessing blockchain data, buying services, and even paying other agents.
@@ -860,7 +882,15 @@ export default function Page() {
 
           {/* Back to Top */}
           <BackToTop />
-        </article>
+        
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
       </div>
     </>
   );

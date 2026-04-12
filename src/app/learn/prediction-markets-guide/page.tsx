@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Prediction Markets: The Complete Guide to Event Trading",
@@ -41,6 +43,16 @@ export default function PredictionMarketsGuide() {
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           Prediction markets are platforms where you trade on the outcome of real-world events. Instead of buying a stock or a token, you buy shares that pay out if a specific event happens. If the event occurs, your shares are worth $1. If it doesn't, they're worth $0.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)] mb-4 leading-relaxed">
           This creates a market-driven probability for any event: elections, sports, economic data, regulatory decisions, and more. The price of a share directly reflects the crowd's estimate of how likely that event is.
         </p>
@@ -89,6 +101,16 @@ export default function PredictionMarketsGuide() {
               <span className="text-[var(--color-text-secondary)]">Settlement: USDC</span>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
 
           <div className="bg-[var(--glass-bg)] border border-[var(--glass-border)] rounded-lg p-6">
             <h3 className="text-xl font-bold text-[var(--color-text)] mb-2">Kalshi</h3>

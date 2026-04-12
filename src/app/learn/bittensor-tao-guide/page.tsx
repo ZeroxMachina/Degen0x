@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -152,6 +154,16 @@ export default function BittensorGuide() {
           <div style={{ fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={3}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of Contents" style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 40 }}>
           <h2 style={{ fontSize: 13, fontWeight: 700, marginBottom: 12, color: "#58a6ff", textTransform: "uppercase", letterSpacing: "0.05em" }}>
@@ -180,6 +192,16 @@ export default function BittensorGuide() {
             to trading signals to image creation. Think of it as the App Store of AI, except it&apos;s decentralized and the developers
             are AI miners competing to produce the best outputs with real money on the line.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <h3 style={{ fontSize: 18, fontWeight: 700, color: "#e6edf3", marginBottom: 12, marginTop: 28 }}>Subnets — The Building Blocks</h3>
           <p style={{ color: "#c9d1d9", lineHeight: 1.8, marginBottom: 16 }}>
@@ -447,6 +469,14 @@ export default function BittensorGuide() {
           <p style={{ color: "#8b949e", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
             ⚠️ This guide is for informational purposes only. It is not financial advice. Always do your own research before making
             investment decisions. Crypto markets are highly volatile and past performance does not guarantee future results.
+          </p>
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
       </article>

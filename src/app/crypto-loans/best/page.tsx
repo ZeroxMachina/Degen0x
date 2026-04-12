@@ -27,6 +27,16 @@ export default function BestCryptoLoansPage() {
       </div>
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Rankings</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0f0a1e', border: '1px solid #2e1065', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🏦</span>
+            <strong style={{ color: '#8b5cf6', fontSize: 15 }}>Lending Insight</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Crypto-backed loans can be tax-efficient, but liquidation risk is real. We calculate the buffer needed at various volatility levels for each platform.
+          </p>
+        </div>
         <div className="space-y-4">{ranked.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       </section>
       <section className="mb-12">

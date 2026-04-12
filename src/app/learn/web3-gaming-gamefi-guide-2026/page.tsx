@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games & Tokens | degen0x",
@@ -304,6 +306,16 @@ export default function Web3GamingGuide() {
             <p style={styles.p}>
               Web3 gaming merges blockchain technology with traditional game design. Instead of playing on centralized servers where the developer controls everything, you play on decentralized networks where smart contracts govern the rules and your assets are truly yours.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
             <p style={styles.p}>
               Here are the defining characteristics:
             </p>
@@ -377,6 +389,16 @@ export default function Web3GamingGuide() {
                   <div style={styles.statValue}>27M+</div>
                   <div style={styles.statLabel}>On-chain Transactions</div>
                 </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-25"
+          updatedDate="2026-04-12"
+          readingTime={11}
+          section="learn"
+        />
+
                 <div style={styles.statBox}>
                   <div style={styles.statValue}>$4.3B</div>
                   <div style={styles.statLabel}>Lifetime Sales</div>
@@ -842,7 +864,27 @@ export default function Web3GamingGuide() {
               ⚠️ This guide is for informational purposes only. It is not financial advice. Web3 gaming investments carry significant risks including token price volatility, NFT value fluctuation, smart contract vulnerabilities, and regulatory uncertainty. Game economies can collapse if player counts drop. Always conduct thorough research, never invest more than you can afford to lose, and treat game earnings as supplementary income.
             </p>
           </div>
-        </article>
+        
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/crypto-pair-correlation-finder" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Pair Correlation Finder</a></li>
+            <li><a href="/tools/defi-yield-optimizer" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Defi Yield Optimizer</a></li>
+            <li><a href="/tools/nft-floor-price-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Nft Floor Price Tracker</a></li>
+            <li><a href="/compare/aave-vs-maker-vs-compound" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Aave Vs Maker Vs Compound</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
       </div>
       <BackToTop />
     </>

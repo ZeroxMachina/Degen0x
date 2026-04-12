@@ -188,6 +188,16 @@ export default function WorldChainProofOfPersonhoodGuidePage() {
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: S.text }}>
             World Chain is a Layer 2 blockchain built on the OP Stack and purpose-built for World ID-verified humans. Launched in 2024 and achieving mainstream adoption throughout 2026, World Chain represents a unique L2 thesis: blockspace reserved for humans, with sybil resistance and bot-filtering built into the protocol itself. Unlike other Layer 2s that are general-purpose chains open to anyone, World Chain actively restricts transaction priority and benefits to humans verified through iris biometric scanning.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: S.text }}>
             Sam Altman (OpenAI CEO) co-founded World with the ambitious vision of creating a global human identity layer and basic income protocol. While controversial for its biometric data collection and centralized hardware, World Chain represents perhaps the most concrete attempt to solve sybil resistance at scale—currently serving 18+ million verified humans globally as of March 2026.

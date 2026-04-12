@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 const pageTitle = "AI Crypto Agent Frameworks Comparison 2026: Eliza vs Virtuals vs Rig vs ZerePy";
 const pageDescription = "Complete comparison of leading AI agent frameworks for crypto. Analyze Eliza, Virtuals Protocol, Rig, ZerePy, and Autonolas. Find the right framework for your AI agent project.";
@@ -139,6 +141,16 @@ export default function AIAgentFrameworksComparison() {
               <div className="text-2xl font-extrabold" style={{ color: "#8b5cf6" }}>5</div>
               <div className="text-xs" style={{ color: "var(--color-text-secondary)" }}>Frameworks Compared</div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={7}
+          section="learn"
+        />
+
             <div>
               <div className="text-2xl font-extrabold" style={{ color: "#3b82f6" }}>$1.7B+</div>
               <div className="text-xs" style={{ color: "var(--color-text-secondary)" }}>Total Market</div>
@@ -160,6 +172,16 @@ export default function AIAgentFrameworksComparison() {
           <p className="mb-4" style={{ color: "var(--color-text)", lineHeight: "1.8" }}>
             AI agent frameworks are development platforms that handle the core infrastructure for autonomous agents—systems that perceive their environment, make decisions, and take action without human intervention. In the crypto space, these frameworks power everything from trading bots to NFT creators to DAOs that manage millions of dollars.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p className="mb-4" style={{ color: "var(--color-text)", lineHeight: "1.8" }}>
             A good framework abstracts away complexity like memory management, wallet integration, multi-chain communication, and decision-making logic. Instead of building these from scratch, you focus on your agent's unique behavior and business logic.
           </p>
@@ -533,6 +555,14 @@ export default function AIAgentFrameworksComparison() {
         </div>
 
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </>
   );

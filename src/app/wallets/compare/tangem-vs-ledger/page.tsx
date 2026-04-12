@@ -35,7 +35,17 @@ export default function TangemVsLedgerPage() {
         <p>Tangem excels for users who want simplicity and portability above all else. The tap-to-sign experience is the fastest hardware wallet interaction available. Ledger excels for users who want maximum control with on-device transaction verification, broader DeFi integration, and the Ledger Live ecosystem. For everyday spending and mobile-first users, Tangem wins. For comprehensive portfolio management and DeFi power use, Ledger has the edge.</p>
       </div>
       <FAQSection faqs={faqs} />
-      <section className="mt-12"><h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Related Content</h2><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/hardware" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Hardware Wallets</h3></Link><Link href="/wallets/compare/software-vs-hardware" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Compare</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Software vs Hardware Wallets</h3></Link></div></section>
+      <section className="mt-12"><h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a0f', border: '1px solid #14532d', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛡️</span>
+            <strong style={{ color: '#22c55e', fontSize: 15 }}>Security Verdict</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
+          </p>
+        </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/hardware" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Hardware Wallets</h3></Link><Link href="/wallets/compare/software-vs-hardware" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Compare</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Software vs Hardware Wallets</h3></Link></div></section>
     </div>
   );
 }

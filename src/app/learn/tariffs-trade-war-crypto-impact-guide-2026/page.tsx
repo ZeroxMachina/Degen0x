@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Tariffs & Trade Wars: Impact on Crypto Markets 2026 | degen0x",
@@ -237,6 +239,16 @@ export default function TariffsTradeWarGuide() {
           <div>Published: March 28, 2026 • 13 min read • Updated March 28, 2026</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={12}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <div style={S.toc}>
           <div style={S.tocTitle}>Contents</div>
@@ -298,6 +310,16 @@ export default function TariffsTradeWarGuide() {
             15% import tax announced in early 2026—they trigger a cascade of economic effects that
             ripple through asset markets, including cryptocurrency.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p style={S.p}>
             Unlike traditional tariff discussions focused on trade deficits and manufacturing,

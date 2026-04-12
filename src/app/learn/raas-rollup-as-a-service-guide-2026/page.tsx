@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Rollup-as-a-Service (RaaS) Guide 2026 — Conduit, Caldera, Gelato & AltLayer Compared | degen0x",
@@ -144,6 +146,16 @@ export default function RaasGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-03-24"
+          readingTime={6}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of contents" style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -164,6 +176,16 @@ export default function RaasGuide() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Rollup-as-a-Service (RaaS) is a managed infrastructure platform that enables teams to deploy custom Layer 2 or Layer 3 rollup chains without building infrastructure from scratch. Think of it as AWS for blockchains: you describe what you want (throughput, data availability layer, execution framework), and the provider handles the operational complexity—sequencers, RPC nodes, bridge infrastructure, state storage, and upgrades.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The RaaS market has grown explosively. In 2024, the RaaS market was valued at approximately $75 million; projections show it reaching $354 million by 2032—a 4.7x CAGR. This reflects the industry's shift from "teams build their own chains" to "teams deploy managed chains in minutes." With over 100 rollup chains now live on Ethereum alone, the infrastructure commoditization is complete.
           </p>

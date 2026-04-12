@@ -3,6 +3,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import StructuredData from '@/components/StructuredData'
 import Breadcrumb from '@/components/Breadcrumb'
 import BackToTop from '@/components/BackToTop'
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Stablecoin Payments Guide 2026 — GENIUS Act & Cross-Border | degen0x',
@@ -138,6 +140,16 @@ export default function StablecoinPaymentsGuidePage() {
         <p className="text-gray-300 mb-4">
           A stablecoin is a cryptocurrency pegged to a stable asset — almost always the US dollar, though euro-pegged coins like <strong>EURC</strong> are growing fast. Unlike Bitcoin or Ethereum, a stablecoin&apos;s value doesn&apos;t swing 10% overnight. 1 USDC is always worth ~$1.00.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
         <p className="text-gray-300 mb-4">
           That price stability is what makes them useful for payments. If you&apos;re paying a supplier $50,000 and your payment token drops 15% in transit, you&apos;ve got a problem. With stablecoins, what you send is what arrives.
         </p>
@@ -159,6 +171,16 @@ export default function StablecoinPaymentsGuidePage() {
               <span>Maintain peg via yield mechanisms or on-chain arbitrage. Example: USDe (Ethena). Higher yield potential but higher risk.</span>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={4}
+          section="learn"
+        />
+
         </div>
         <p className="text-gray-300">
           For payment use cases, <strong>fiat-backed stablecoins</strong> (USDC, USDT) are the dominant choice because they&apos;re simple, widely accepted, and now regulated under the GENIUS Act.
@@ -544,7 +566,27 @@ export default function StablecoinPaymentsGuidePage() {
       <div className="bg-gray-900 border border-gray-700 rounded-xl p-4 text-center">
         <p className="text-gray-500 text-xs">⚠️ This guide is for educational purposes only. It does not constitute financial, legal, or tax advice. Cryptocurrency regulations and market conditions change rapidly. Always conduct your own research and consult qualified professionals for decisions that affect your finances.</p>
       </div>
-    </article>
+    
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/courses/best-crypto-trading-course-online" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Crypto Trading Course Online</a></li>
+            <li><a href="/courses/web3-product-management-course" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Web3 Product Management Course</a></li>
+            <li><a href="/investing/best-depin-tokens-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Depin Tokens 2026</a></li>
+            <li><a href="/investing/best-privacy-coins-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Privacy Coins 2026</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
     <BackToTop />
     </>
   )

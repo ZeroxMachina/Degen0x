@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -176,6 +178,16 @@ export default function OmnichainDeFiGuide() {
           <div style={{ fontSize: 13, color: "#8b949e" }}>Updated April 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-01"
+          updatedDate="2026-04-01"
+          readingTime={13}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of Contents" style={s.toc}>
           <h2 style={s.tocTitle}>Table of Contents</h2>
@@ -198,6 +210,16 @@ export default function OmnichainDeFiGuide() {
           <p style={s.p}>
             Omnichain DeFi represents a fundamental shift in how decentralized finance operates across blockchains. Instead of the traditional model where a protocol is deployed separately on multiple chains (Ethereum, Arbitrum, Polygon, Optimism, Base, etc.), omnichain protocols exist as a <strong style={s.strong}>single unified entity across all chains simultaneously</strong>.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={s.p}>
             The best way to understand omnichain is to contrast it with the evolution that came before it. For years, DeFi operated in phases:
           </p>
@@ -610,6 +632,14 @@ export default function OmnichainDeFiGuide() {
         </div>
 
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

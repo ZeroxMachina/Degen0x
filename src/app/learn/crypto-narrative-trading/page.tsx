@@ -57,6 +57,16 @@ export default function NarrativeTrading() {
         <p className="text-gray-300 mb-4">
           Narrative trading in crypto is the practice of identifying and profiting from emerging stories, themes, or "narratives" that drive investor sentiment and capital allocation. Rather than focusing purely on fundamentals or technical analysis, narrative traders recognize that crypto markets are primarily driven by sentiment and attention during bull markets.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
         <p className="text-gray-300 mb-4">
           A narrative might be: "AI will revolutionize crypto," "Real-world assets are coming on-chain," or "Modular blockchains will replace monoliths." Traders who identify these themes early can position themselves ahead of institutional adoption and retail FOMO.
         </p>
@@ -277,6 +287,14 @@ export default function NarrativeTrading() {
           <li><a href="/learn/dex-aggregators-guide" className="hover:text-blue-300">DEX Aggregators Explained</a></li>
         </ul>
       </div>
-    </article>
+    
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   )
 }

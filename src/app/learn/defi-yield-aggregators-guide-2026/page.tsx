@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "DeFi Yield Aggregators Guide 2026: Yearn, Beefy, Pendle & Auto-Compounding | degen0x",
@@ -138,6 +140,16 @@ export default function DeFiYieldAggregatorsGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 27, 2026 · 11 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-27"
+          updatedDate="2026-03-27"
+          readingTime={8}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={s.toc} aria-label="Table of Contents">
           <h2 style={s.tocTitle}>Table of Contents</h2>
@@ -162,6 +174,16 @@ export default function DeFiYieldAggregatorsGuide() {
           <p style={s.p}>
             DeFi yield aggregators are protocols that automatically optimize yield farming strategies for you. Instead of manually hopping between yield opportunities, managing complicated multi-step transactions, and tracking farming opportunities across dozens of protocols, aggregators pool user deposits, allocate capital across DeFi protocols intelligently, and automatically reinvest earned rewards. Think of them as <strong style={s.strong}>robo-advisors for DeFi</strong>.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={s.p}>
             The core value proposition of yield aggregators comes from three mechanisms:
           </p>
@@ -530,6 +552,26 @@ export default function DeFiYieldAggregatorsGuide() {
         <div style={{ ...s.box, marginTop: '32px' }}>
           <p style={{ color: '#8b949e', fontSize: '12px', lineHeight: 1.6, marginBottom: 0 }}>
             ⚠️ This guide is for informational purposes only. It is not financial advice. Yield aggregators carry smart contract risk, underlying protocol risk, and strategy risk. Always do your own research and never commit more than you can afford to lose. DeFi yields can change dramatically and are not guaranteed.
+          </p>
+        </div>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/crypto-exchange-fee-comparison-tool" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Exchange Fee Comparison Tool</a></li>
+            <li><a href="/tools/crypto-tax-calculator-free" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Tax Calculator Free</a></li>
+            <li><a href="/tools/ethereum-gas-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Ethereum Gas Tracker</a></li>
+            <li><a href="/tools/staking-rewards-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Staking Rewards Calculator</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
       </article>

@@ -17,6 +17,8 @@ import {
   getCategoryMeta,
 } from "@/lib/blog";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -227,6 +229,16 @@ export default async function BlogPostPage({ params }: Props) {
                 {post.author.role}
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="blog"
+        />
+
           </div>
         </header>
 
@@ -292,6 +304,17 @@ export default async function BlogPostPage({ params }: Props) {
             </div>
           </div>
         )}
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/uniswap-v4-hooks-amm-innovation-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Uniswap V4 Hooks Amm Innovation Guide 2026</a></li>
+            <li><a href="/learn/what-is-a-crypto-airdrop" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>What Is A Crypto Airdrop</a></li>
+            <li><a href="/learn/what-is-liquid-staking" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>What Is Liquid Staking</a></li>
+            <li><a href="/learn/wrapped-tokens-explained" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Wrapped Tokens Explained</a></li>
+          </ul>
+        </nav>
       </article>
     </div>
   );

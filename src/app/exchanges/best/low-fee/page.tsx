@@ -85,6 +85,16 @@ export default function LowFeeExchangesPage() {
       {/* Fee Comparison Table */}
       <section className="mb-12 overflow-x-auto">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Fee Comparison Table</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1500', border: '1px solid #3d2e0a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔍</span>
+            <strong style={{ color: '#f59e0b', fontSize: 15 }}>Our Testing Notes</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We evaluate exchanges by actually using them — not just reading their marketing materials. Some surprises, both good and bad.
+          </p>
+        </div>
         <div className="rounded-xl border border-[var(--color-border)]">
           <table className="w-full">
             <thead>

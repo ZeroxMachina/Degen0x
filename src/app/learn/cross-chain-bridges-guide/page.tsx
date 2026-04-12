@@ -28,6 +28,16 @@ export default function CrossChainBridgesGuidePage() {
         </header>
         <section style={{marginBottom:40}}>
           <h2 style={{fontSize:"1.5rem",fontWeight:800,marginBottom:12,color:S.cyan}}>How Bridges Work: 3 Models</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           {[
             {model:"Lock & Mint",desc:"You lock Token A on Chain 1. The bridge mints a wrapped version (e.g. wBTC) on Chain 2. Risk: the locked pool is a honeypot — if hacked, wrapped tokens become worthless. Used by: early Ethereum ↔ BSC bridges.",color:S.yellow},
             {model:"Liquidity Pool (Native)",desc:"Liquidity providers fund pools on each chain. You deposit on Chain 1, an LP fronts native assets on Chain 2 and is reimbursed. No wrapped tokens. Used by: Hop, Stargate.",color:S.green},
@@ -66,6 +76,26 @@ export default function CrossChainBridgesGuidePage() {
           <h3 style={{fontWeight:800,marginBottom:8,color:S.text}}>🌉 Key takeaway</h3>
           <p style={{color:S.text2,lineHeight:1.8,fontSize:14}}>For most users: use <strong style={{color:S.text}}>Across</strong> for fast ETH L2 transfers, <strong style={{color:S.text}}>Stargate</strong> for multi-chain native assets, and <strong style={{color:S.text}}>Axelar</strong> for non-EVM chains. Never bridge more than you can afford to lose. Prefer bridges audited by multiple firms, with a track record of 12+ months without exploits. Avoid new bridges with large TVLs and small security teams.</p>
         </section>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/crypto-tax-calculator-free" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Tax Calculator Free</a></li>
+            <li><a href="/tools/ethereum-gas-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Ethereum Gas Tracker</a></li>
+            <li><a href="/tools/staking-rewards-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Staking Rewards Calculator</a></li>
+            <li><a href="/compare/centralized-vs-decentralized-exchange" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Centralized Vs Decentralized Exchange</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </main>
   );

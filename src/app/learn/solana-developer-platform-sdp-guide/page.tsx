@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Solana Developer Platform (SDP) Guide 2026 — Enterprise APIs for Stablecoins & RWAs | degen0x",
@@ -146,6 +148,16 @@ export default function SolanaDeveloperPlatformGuide() {
             <div className="text-2xl font-bold text-[#e6edf3]">3+</div>
             <div className="text-sm text-[#8b949e]">Enterprise Partners</div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={9}
+          section="learn"
+        />
+
           <div>
             <div className="text-2xl font-bold text-[#e6edf3]">3</div>
             <div className="text-sm text-[#8b949e]">API Modules</div>
@@ -178,6 +190,16 @@ export default function SolanaDeveloperPlatformGuide() {
           <p className="mb-4 text-[#c9d1d9]">
             The Solana Developer Platform (SDP) is an enterprise-grade API toolkit launched on <span className="text-[#e6edf3]">March 24, 2026</span>, by the Solana Foundation. It consolidates infrastructure from 20+ technology partners into a unified, developer-friendly interface. Think of it as an abstraction layer that hides the complexity of Solana's blockchain from enterprise teams, letting them focus on building financial applications instead of wrestling with crypto primitives.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p className="mb-4 text-[#c9d1d9]">
             SDP is built for companies that want to leverage Solana's speed and cost efficiency—65,000+ transactions per second, sub-cent fees—without needing in-house blockchain expertise. It's the bridge between traditional finance infrastructure and blockchain technology.
           </p>

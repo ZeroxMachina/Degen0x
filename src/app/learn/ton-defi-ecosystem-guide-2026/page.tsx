@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'TON Blockchain DeFi Ecosystem Guide 2026 | degen0x',
@@ -180,6 +182,16 @@ export default function TONDeFiGuide() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-03-28"
+          readingTime={7}
+          section="learn"
+        />
+
       </div>
 
       {/* Table of Contents */}
@@ -237,6 +249,16 @@ export default function TONDeFiGuide() {
         <p className="mb-4" style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8' }}>
           TON (The Open Network) is a blockchain ecosystem originally developed by Telegram and now operated by a decentralized community. In 2025, Telegram officially announced TON as the exclusive blockchain for Telegram Mini Apps, marking a watershed moment for Web3 mainstream adoption.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p className="mb-4" style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8' }}>
           With 1 billion+ Telegram users and 100M+ already managing digital assets, TON represents the largest addressable market for DeFi. The network features sharding architecture for scalability, instant finality blocks, and native integration with Telegram's messaging platform.
         </p>

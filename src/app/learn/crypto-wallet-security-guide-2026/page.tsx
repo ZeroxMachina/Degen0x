@@ -1,616 +1,802 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import Link from "next/link";
-import Breadcrumb from "@/components/Breadcrumb";
-import BackToTop from "@/components/BackToTop";
-import StructuredData from "@/components/StructuredData";
-import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
-import { SITE_URL } from "@/lib/constants";
-import WalletSecurityScoreCalculator from "@/components/WalletSecurityScoreCalculator";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
+
+// ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: "Crypto Wallet Security Guide 2026: Scam Protection | degen0x",
-  description: "Master crypto wallet security in 2026. Learn to protect against approval drainers, phishing, token exploits, fake extensions, and address poisoning. Complete guide to wallet firewalls, hardware wallets, and emergency response.",
-  keywords: "crypto wallet security, wallet drainer protection, crypto phishing, token approval security, revoke crypto approvals, wallet firewall, crypto scam protection 2026, ice phishing, approval exploits",
+  title: 'Crypto Wallet Security Guide 2026: Protect Your Assets | degen0x',
+  description: 'Complete guide to crypto wallet security in 2026. Learn hardware wallets, seed phrase protection, phishing defense, 2FA, multisig, and anti-drainer tools. $450M lost to hacks in Q1 2026—protect yourself now.',
+  keywords: ['crypto wallet security', 'hardware wallet', 'seed phrase security', 'phishing detection', 'wallet drainer', '2FA', 'Ledger', 'Trezor', 'MetaMask security', 'web3 security 2026'],
   openGraph: {
-    title: "Crypto Wallet Security Guide 2026: Protect Against Scams & Drainers",
-    description: "Protect your crypto from $311M in monthly phishing losses. Learn wallet security, approval management, and DeFi safety in 2026.",
-    type: "article",
-    publishedTime: "2026-03-24T00:00:00Z",
-    images: [{ url: "/og-crypto-wallet-security-guide-2026.svg", width: 1200, height: 630, alt: "Crypto Wallet Security Guide 2026" }],
+    type: 'article',
+    title: 'Crypto Wallet Security Guide 2026: Protect Your Assets | degen0x',
+    description: 'Learn how to secure your crypto with hardware wallets, strong 2FA, phishing detection, and anti-drainer tools. $450M lost in Q1 2026—this guide shows you how to avoid becoming a victim.',
+    publishedTime: '2026-04-02T00:00:00Z',
+    modifiedTime: '2026-04-02T00:00:00Z',
+    url: 'https://degen0x.com/learn/crypto-wallet-security-guide-2026',
+    images: [{
+      url: 'https://degen0x.com/og-wallet-security-2026.svg',
+      width: 1200,
+      height: 630,
+      alt: 'Crypto Wallet Security Guide 2026',
+    }],
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Crypto Wallet Security Guide 2026: Scam Protection | degen0x",
-    description: "Protect your crypto from $311M in monthly phishing losses. Learn wallet security, approval management, and DeFi safety in 2026.",
-    images: ["/og-crypto-wallet-security-guide-2026.svg"],
+    card: 'summary_large_image',
+    title: 'Crypto Wallet Security Guide 2026: Protect Your Assets',
+    description: 'Complete guide to hardware wallets, seed phrase protection, phishing defense, and 2FA. Learn from $450M in Q1 2026 losses.',
+    image: 'https://degen0x.com/og-wallet-security-2026.svg',
+  },
+,
+  alternates: {
+    canonical: 'https://degen0x.com/learn/crypto-wallet-security-guide-2026',
+  }};
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Crypto Wallet Security Guide 2026: Protect Your Assets',
+  description: 'Complete guide to crypto wallet security in 2026. Learn hardware wallets, seed phrase protection, phishing defense, 2FA, multisig, and anti-drainer tools.',
+  image: 'https://degen0x.com/og-wallet-security-2026.svg',
+  datePublished: '2026-04-02',
+  dateModified: '2026-04-02',
+  author: {
+    '@type': 'Organization',
+    name: 'degen0x',
+  },
+  mainEntity: {
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is a hardware wallet and why do I need one?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A hardware wallet is a physical device that stores your private keys offline, completely disconnected from the internet. This makes it virtually impossible for hackers to access your funds remotely. You need one if you hold crypto you care about—hardware wallets provide the highest security available for retail investors.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between Ledger and Trezor?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Ledger uses a closed-source Secure Element chip (CC EAL6+ certified), supports 5,500+ coins, and costs $59 (Nano S Plus). Trezor is 100% open-source and auditable, supports ~1,800 coins, costs $79 (Safe 3), and is community-verified. Ledger is more user-friendly; Trezor is more transparent. Both are highly secure.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How should I protect my seed phrase?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Your seed phrase should never touch an internet-connected device. Write it down on paper or, better, stamp it onto metal backup materials (like a Cryptosteel). Store it in a secure location—never screenshot it, photograph it, or email it. Anyone with your seed phrase can drain your wallet completely.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is a wallet drainer and how do I avoid them?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Wallet drainers are malicious smart contracts or websites that trick you into signing transactions that transfer your funds. Avoid them by: only visiting official wallet sites (bookmark them), never connecting to unknown dapps, using transaction simulation tools, and installing anti-drainer extensions like Blockaid or MetaMask phishing detector.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is SMS 2FA safe for crypto?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. SMS 2FA is vulnerable to SIM-swap attacks where hackers convince your carrier to port your phone number to their device. Always use authenticator apps (Google Authenticator, Authy) or hardware keys instead. Never rely on SMS for accounts holding valuable crypto.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should I revoke token approvals?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You should revoke unused token approvals regularly—at least quarterly. Token approvals allow smart contracts to transfer your tokens without further permission. If a protocol gets hacked, attackers can drain tokens you approved. Use tools like Revoke.cash to audit and remove unnecessary approvals.',
+        },
+      },
+    ],
   },
 };
 
-const breadcrumbs = [
-  { label: "Home", href: "/" },
-  { label: "Learn", href: "/learn" },
-  { label: "Crypto Wallet Security Guide 2026", href: "/learn/crypto-wallet-security-guide-2026" },
-];
+const h1Style: React.CSSProperties = { fontSize: 36, fontWeight: 800, marginBottom: 16, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.2 };
+const h2Style: React.CSSProperties = { fontSize: 24, fontWeight: 700, marginTop: 40, marginBottom: 16, color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12 };
+const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16, display: 'inline-block' };
+const infoBoxStyle: React.CSSProperties = { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
 
-const faqs = [
-  {
-    question: "What is an approval drainer and how does it steal my tokens?",
-    answer: "An approval drainer exploits token approvals. When you use a DeFi app, you approve it to spend your tokens. If the app is malicious (or compromised), it can drain unlimited tokens. You sign one transaction thinking it's harmless, and the contract gains permanent access to your funds. That's why wallet firewalls simulate transactions before signing."
-  },
-  {
-    question: "Should I use Revoke.cash regularly?",
-    answer: "Yes. Check your approvals monthly. Go to Revoke.cash, connect your wallet, and revoke any approvals you don't recognize or no longer use. This takes 5 minutes and costs $1-10 in gas per revocation. It's cheap insurance against drain contracts that may have been compromised after you approved them."
-  },
-  {
-    question: "Is a hardware wallet enough protection for DeFi?",
-    answer: "Hardware wallets protect your private keys, but they don't protect you from signing malicious transactions. If you approve a drain contract on your Ledger, it will drain your tokens. Hardware wallets are best paired with a wallet firewall (Rabby, Blowfish) that intercepts risky transactions before they reach your device."
-  },
-  {
-    question: "What's the difference between hot and cold wallets?",
-    answer: "Hot wallets (MetaMask, Phantom) are online and convenient for DeFi, but they're more vulnerable to malware and phishing. Cold wallets (Ledger, Trezor) are offline and extremely secure for long-term storage, but they're slow and inconvenient for frequent trading. Best practice: keep 95% in cold storage, 5% in a hot wallet for active trading."
-  },
-  {
-    question: "If my wallet is drained, can I recover my funds?",
-    answer: "Not usually. Blockchain transactions are irreversible. However, if you act fast (within minutes), you may be able to: 1) Front-run the attacker's withdrawal by sending funds to a safe wallet, 2) Contact exchanges to freeze the stolen tokens if they're being converted, or 3) Use blockchain analytics to report the theft. Prevention is far more effective than recovery."
-  },
-  {
-    question: "Why do I need separate wallets for different activities?",
-    answer: "Different activities carry different risks. A burner wallet for NFT mints or unverified tokens limits exposure if something goes wrong. A DeFi trading wallet holds approvals for specific protocols. A cold storage wallet holds long-term positions and rarely connects. This segmentation means if one wallet is compromised, your other assets are safe."
-  }
-];
 
-export default function CryptoWalletSecurityGuidePage() {
-  const S = {
-    bg: "#0d1117",
-    surface: "#161b22",
-    surface2: "#1c2330",
-    border: "#30363d",
-    text: "#e6edf3",
-    text2: "#8b949e",
-    primary: "#6366f1",
-    secondary: "#06b6d4",
-    green: "#22c55e",
-    red: "#f85149",
-    orange: "#f0883e",
-    yellow: "#d29922",
+export default function CryptoWalletSecurityGuide() {
+  const tableOfContents = [
+    { id: 'why-security-matters', title: 'Why Wallet Security Matters in 2026' },
+    { id: 'types-of-wallets', title: 'Types of Crypto Wallets' },
+    { id: 'hardware-wallet-comparison', title: 'Hardware Wallet Comparison: Ledger vs Trezor' },
+    { id: 'seed-phrase-security', title: 'Seed Phrase Security: The Golden Rule' },
+    { id: 'phishing-and-drainers', title: 'Protecting Against Phishing & Wallet Drainers' },
+    { id: 'two-factor-authentication', title: 'Two-Factor Authentication: Doing It Right' },
+    { id: 'advanced-security', title: 'Advanced Security: Multisig, Social Recovery & Smart Wallets' },
+    { id: 'security-checklist', title: 'Security Checklist: Your Step-by-Step Setup' },
+    { id: 'faq', title: 'FAQ' },
+  ];
+
+  const infoBoxStyle = {
+    background: '#161b22',
+    border: '1px solid #30363d', borderLeft: '3px solid #a78bfa', borderLeft: '3px solid #a78bfa',
+    borderRadius: 12,
+    padding: 20,
+    marginBottom: 24,
+    lineHeight: 1.8,
   };
 
-  const walletComparisonData = [
-    { name: "MetaMask", type: "Hot Wallet", security: "Medium", ease: "Very Easy", cost: "Free", approval_control: "Manual", recommendation: "DeFi trading & testing" },
-    { name: "Phantom", type: "Hot Wallet", security: "Medium", ease: "Very Easy", cost: "Free", approval_control: "Manual", recommendation: "Solana DeFi & NFTs" },
-    { name: "Ledger Nano X", type: "Cold Wallet", security: "Very High", ease: "Moderate", cost: "$149", approval_control: "Hardware signing", recommendation: "Long-term storage" },
-    { name: "Trezor One", type: "Cold Wallet", security: "Very High", ease: "Moderate", cost: "$99", approval_control: "Hardware signing", recommendation: "Most affordable & secure" },
-  ];
+  const h1Style = {
+    fontSize: 'clamp(1.8rem, 5vw, 3.5rem)',
+    fontWeight: 800,
+    marginBottom: 16,
+    background: 'linear-gradient(135deg, #6366f1, #06b6d4)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text',
+  };
 
-  const securityToolsData = [
-    { name: "Revoke.cash", category: "Approval Manager", features: "View & revoke all token approvals", cost: "Free + gas", best_for: "Monthly approval cleanup" },
-    { name: "Rabby Wallet", category: "Wallet Firewall", features: "Tx simulation, approval monitoring, phishing detection", cost: "Free", best_for: "DeFi users who want protection" },
-    { name: "Blowfish", category: "Wallet Firewall", features: "Real-time risk scoring, phishing detection, approval alerts", cost: "Free", best_for: "MetaMask users wanting alerts" },
-    { name: "Pocket Universe", category: "Wallet Firewall", features: "Tx preview, approval warnings, scam database", cost: "Free", best_for: "Simple one-click protection" },
-    { name: "Scam Sniffer", category: "Phishing Detection", features: "Identifies malicious contracts & addresses", cost: "Free", best_for: "Chrome extension for URL verification" },
-  ];
+  const h2Style = {
+    fontSize: '2rem',
+    fontWeight: 700,
+    marginTop: 40,
+    marginBottom: 16,
+    color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12,
+  };
 
-  const attackVectorsData = [
-    { attack: "Approval Drainers", description: "Malicious contract drains unlimited tokens from approved accounts", risk_level: "🔴 Critical", prevention: "Revoke approvals, use wallet firewall, verify contracts" },
-    { attack: "Phishing & Fake URLs", description: "Fake website redirects you to enter seed phrase or click malicious links", risk_level: "🔴 Critical", prevention: "Type URLs manually, verify with official sources, bookmark trusted sites" },
-    { attack: "Fake Browser Extensions", description: "Malicious MetaMask/wallet clones steal seed phrases on installation", risk_level: "🔴 Critical", prevention: "Only download from official app stores and verified sources" },
-    { attack: "Social Engineering", description: "Scammers impersonate support on Discord/Telegram asking for seed phrase", risk_level: "🔴 Critical", prevention: "Never share seed phrases, official support will never DM you" },
-    { attack: "Address Poisoning", description: "Similar-looking contract address (0x123...4567 vs 0x123...5678) in transaction history", risk_level: "🟠 High", prevention: "Always verify full address on Etherscan before interacting" },
-    { attack: "Fake Airdrops", description: "Free token claim that requires wallet connection & approval signature", risk_level: "🟠 High", prevention: "Don't claim unverified airdrops, use wallet firewall to block" },
-    { attack: "Honeypot Tokens", description: "Token you can buy but can't sell (contract blocks sales)", risk_level: "🟠 High", prevention: "Check contract code on Etherscan, use DEX analyzers before trading" },
-    { attack: "Ice Phishing (Permit Exploit)", description: "Attacker tricks you into signing a permit that approves them as spender", risk_level: "🟠 High", prevention: "Wallet firewall simulates permits, never sign unknown permits" },
-  ];
+  const badgeStyle = {
+    display: 'inline-block',
+    padding: '6px 12px',
+    borderRadius: 6,
+    fontSize: 12,
+    fontWeight: 600,
+    marginRight: 8,
+    marginBottom: 16,
+  };
 
-  const securityChecklistData = [
-    { rule: "Use a hardware wallet for 95%+ of holdings", category: "Storage" },
-    { rule: "Enable 2FA on all exchanges with authenticator app (not SMS)", category: "Exchange Security" },
-    { rule: "Never share your seed phrase with anyone, ever", category: "Key Management" },
-    { rule: "Type URLs manually; never click links in emails or Discord", category: "Phishing Prevention" },
-    { rule: "Revoke unused token approvals monthly using Revoke.cash", category: "Approval Management" },
-    { rule: "Keep your hot wallet separate from cold storage", category: "Segmentation" },
-    { rule: "Use a wallet firewall (Rabby, Blowfish, Pocket Universe)", category: "Transaction Safety" },
-    { rule: "Verify contract addresses on Etherscan before every approval", category: "DeFi Safety" },
-    { rule: "Test new dApps with tiny amounts first ($1-10)", category: "Risk Testing" },
-    { rule: "Store seed phrases in metal backup (CryptoSteel, HODL) not paper", category: "Backup Security" },
-  ];
+  const linkStyle = {
+    color: '#58a6ff',
+    textDecoration: 'none',
+  };
 
-  const articleSchema = generateArticleSchema({
-    title: "Crypto Wallet Security Guide 2026: Scam Protection & Drainer Defense",
-    description: "Master crypto wallet security. Protect against approval drainers, phishing, token exploits, and scams. Learn wallet firewalls, hardware wallets, and emergency response for 2026.",
-    url: `${SITE_URL}/learn/crypto-wallet-security-guide-2026`,
-    datePublished: "2026-03-24T00:00:00Z",
-    dateModified: "2026-03-24T00:00:00Z",
-    author: "degen0x",
-    image: `${SITE_URL}/og-crypto-wallet-security-guide-2026.png`,
-    wordCount: 2850,
-  });
+  const tableStyle = {
+    width: '100%',
+    borderCollapse: 'collapse' as const,
+    marginBottom: 24,
+    fontSize: 14,
+  };
 
-  const faqSchema = generateFAQSchema(faqs);
-  const structuredData = combineSchemas(articleSchema, faqSchema);
+  const thStyle = {
+    background: '#0d1117',
+    border: '1px solid #30363d',
+    padding: 12,
+    textAlign: 'left' as const,
+    fontWeight: 700,
+    color: '#e6edf3',
+  };
+
+  const tdStyle = {
+    border: '1px solid #30363d',
+    padding: 12,
+    color: '#8b949e',
+  };
 
   return (
-    <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", scrollBehavior: "smooth" }}>
-      <StructuredData data={structuredData} />
-      <style>{`
-        .ws-toc-link {
-          display: block;
-          color: ${S.primary};
-          font-size: 13px;
-          text-decoration: none;
-          padding: 4px 0;
-          line-height: 1.6;
-          transition: color 0.2s ease, padding-left 0.2s ease;
-        }
-        .ws-toc-link:hover, .ws-toc-link:focus {
-          color: #818cf8;
-          padding-left: 6px;
-        }
-        .ws-toc-link:focus-visible {
-          outline: 2px solid ${S.primary};
-          outline-offset: 2px;
-          border-radius: 4px;
-        }
-        .ws-table-wrap {
-          overflow-x: auto;
-          -webkit-overflow-scrolling: touch;
-          border-radius: 12px;
-          border: 1px solid ${S.border};
-        }
-        .ws-table-wrap:focus {
-          outline: 2px solid ${S.primary};
-          outline-offset: 2px;
-        }
-        .ws-related-card:hover {
-          border-color: ${S.primary} !important;
-          transform: translateY(-2px);
-        }
-        .ws-related-card:focus-visible {
-          outline: 2px solid ${S.primary};
-          outline-offset: 2px;
-          border-radius: 12px;
-        }
-      `}</style>
+    <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
-      {/* Breadcrumb */}
-      <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px 24px" }}>
-          <Breadcrumb items={breadcrumbs} />
-        </div>
-      </div>
+      <div style={{ maxWidth: 800, margin: '0 auto' }}>
+        {/* Breadcrumb Navigation */}
+        <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>
+          <Link href="/" style={{ color: '#8b949e', textDecoration: 'none' }}>Home</Link>
+          <span style={{ margin: '0 6px' }}>›</span>
+          <Link href="/learn" style={{ color: '#8b949e', textDecoration: 'none' }}>Learn</Link>
+          <span style={{ margin: '0 6px' }}>›</span>
+          <span style={{ color: '#c9d1d9' }}>Crypto Wallet Security Guide</span>
+        </nav>
 
-      <article style={{ maxWidth: 900, margin: "0 auto", padding: "48px 24px 80px" }}>
-
-        {/* Header */}
-        <header style={{ marginBottom: 48 }}>
-          <div style={{ display: "flex", gap: 8, marginBottom: 16, flexWrap: "wrap" }}>
-            <span style={{ fontSize: 12, fontWeight: 700, padding: "3px 10px", borderRadius: 20, background: `${S.red}20`, color: S.red, border: `1px solid ${S.red}40` }}>🔐 Security</span>
-            <span style={{ fontSize: 12, fontWeight: 700, padding: "3px 10px", borderRadius: 20, background: `${S.yellow}20`, color: S.yellow, border: `1px solid ${S.yellow}40` }}>Beginner</span>
-            <span style={{ fontSize: 12, color: S.text2 }}>Updated March 24, 2026 · 12 min read</span>
+        {/* Header Section */}
+        <div style={{ marginBottom: 32 }}>
+          <div>
+            <span style={{ ...badgeStyle, background: '#a371f7', color: '#e6edf3' }}>Security</span>
+            <span style={{ ...badgeStyle, background: '#fbbf24', color: '#000000' }}>Beginner</span>
           </div>
 
-          <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20, background: `linear-gradient(135deg, ${S.primary}, ${S.secondary})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
-            Crypto Wallet Security Guide 2026
-          </h1>
+          <h1 style={h1Style}>Crypto Wallet Security Guide 2026</h1>
 
-          <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
-            In 2026, $311M in cryptocurrency is drained by phishing attacks every month. Approval drainers, fake extensions, and social engineering are more sophisticated than ever. This guide teaches you how to protect your wallet, recognize scams, and respond if something goes wrong. Whether you're trading DeFi or hodling Bitcoin, these principles apply.
+          <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
+            $450 million lost to phishing, exploits, and infrastructure attacks in Q1 2026 alone. In January, hackers drained $340 million across multiple incidents. Wallet drainers are becoming increasingly sophisticated, SIM-swap attacks are targeting 2FA, and hundreds of wallets are being drained daily on EVM chains. This guide shows you exactly how to protect your assets using hardware wallets, proper seed phrase storage, phishing detection, and security best practices that work in 2026.
           </p>
 
-          {/* Quick Alert */}
-          <div style={{ background: `${S.red}15`, border: `1px solid ${S.red}40`, borderRadius: 12, padding: 20, marginBottom: 32 }}>
-            <h2 style={{ fontSize: 16, fontWeight: 800, color: S.red, marginBottom: 12 }}>⚡ The 2026 Wallet Security Reality</h2>
-            <ul style={{ paddingLeft: 20, color: S.text, lineHeight: 2, fontSize: 14, listStyle: "none", margin: 0 }}>
-              <li>✓ Approval drainers are the #1 high-impact vector</li>
-              <li>✓ Modern phishing targets signatures, not passwords</li>
-              <li>✓ Wallet firewalls now intercept attacks at 3 critical points</li>
-              <li>✓ Hardware wallets protect keys but NOT against signing malicious txs</li>
-              <li>✓ A multi-wallet strategy is now standard practice</li>
-            </ul>
+          <div style={{ display: 'flex', gap: 24, fontSize: 14, color: '#8b949e', marginBottom: 24 }}>
+            <span>Updated: April 2, 2026</span>
+            <span>Reading time: 18 min</span>
           </div>
+        </div>
 
-          {/* Interactive Security Score Calculator */}
-          <WalletSecurityScoreCalculator />
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-02"
+          updatedDate="2026-04-02"
+          readingTime={18}
+          section="learn"
+        />
 
-          {/* Table of Contents */}
-          <nav aria-label="Table of Contents" style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 20 }}>
-            <div style={{ fontSize: 13, fontWeight: 700, color: S.text, marginBottom: 12 }}>📋 Table of Contents</div>
-            {[
-              ["#why-wallet-security", "Why Wallet Security Matters in 2026"],
-              ["#attack-vectors", "How Crypto Wallets Get Hacked"],
-              ["#token-approvals", "Understanding Token Approvals & Permissions"],
-              ["#wallet-firewalls", "Wallet Firewalls & Transaction Simulation"],
-              ["#security-tools", "Essential Security Tools for 2026"],
-              ["#hardware-wallets", "Hardware Wallet Best Practices"],
-              ["#multi-wallet", "The Multi-Wallet Strategy"],
-              ["#security-checklist", "10-Rule Security Checklist"],
-              ["#compromised-response", "If Your Wallet Is Compromised"],
-              ["#faq", "FAQ"],
-            ].map(([href, label]) => (
-              <div key={href}>
-                <a href={href} className="ws-toc-link">→ {label}</a>
-              </div>
+
+        {/* Table of Contents */}
+        <nav style={{ ...infoBoxStyle, marginBottom: 32 }}>
+          <h3 style={{ fontSize: 16, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Table of Contents</h3>
+          <ol style={{ marginLeft: 20, color: '#58a6ff' }}>
+            {tableOfContents.map((item) => (
+              <li key={item.id} style={{ marginBottom: 8 }}>
+                <a href={`#${item.id}`} style={linkStyle}>
+                  {item.title}
+                </a>
+              </li>
             ))}
-          </nav>
-        </header>
+          </ol>
+        </nav>
 
         {/* Section 1: Why Wallet Security Matters */}
-        <section id="why-wallet-security" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>Why Wallet Security Matters in 2026</h2>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
-            The crypto landscape in 2026 has fundamentally shifted. It's no longer just about keeping your seed phrase safe—modern attackers exploit approvals, permissions, and signatures to drain accounts without ever touching your private keys.
+        <section id="why-security-matters" style={{ scrollMarginTop: 24 }}>
+          <h2 style={h2Style}>1. Why Wallet Security Matters in 2026</h2>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            If you hold cryptocurrency, wallet security isn&apos;t optional—it&apos;s mandatory. The threat landscape in 2026 is more sophisticated than ever. Q1 alone saw $450 million in losses across the ecosystem. January 2026 was particularly brutal: $340 million drained in a single month. March 2026 saw $37.6 million lost across 21 separate incidents.
           </p>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
-            <strong>The scale is staggering:</strong> In January 2026 alone, phishing attacks drained $311M from crypto users. That's roughly $10M per day. The attacks are increasingly sophisticated, using deepfakes, spoofed domains, and social engineering on Discord and Telegram communities.
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
           </p>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
-            But here's the good news: with proper tools and practices, you can reduce your risk to near zero. Hardware wallets, wallet firewalls, and regular approval audits have made sophisticated security accessible to everyone.
+        </div>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            The attacks are diversifying. It&apos;s no longer just phishing emails. Attackers are now deploying wallet drainer malware that automatically signs transactions without your knowledge, running sophisticated SIM-swap attacks to intercept SMS-based 2FA, and draining hundreds of wallets across EVM chains for small amounts—a strategy that reduces detection. Some victims are losing funds in minutes.
           </p>
 
-          <div style={{ background: `${S.primary}10`, border: `1px solid ${S.primary}30`, borderRadius: 12, padding: 20, marginBottom: 24 }}>
-            <h3 style={{ fontSize: 14, fontWeight: 700, color: S.primary, marginBottom: 12 }}>Key Insight: The Threat Landscape Has Changed</h3>
-            <p style={{ fontSize: 13, color: S.text2, lineHeight: 1.7, margin: 0 }}>
-              Old threats (weak passwords, stolen seed phrases) still exist, but new vectors dominate: approval exploits, ice phishing (permit abuse), address poisoning, and social engineering. Your wallet security strategy must account for all of these.
+          <div style={infoBoxStyle}>
+            <strong style={{ color: '#e6edf3' }}>The Reality of 2026</strong>
+            <p style={{ marginTop: 12, marginBottom: 0, fontSize: 14 }}>
+              Your wallet&apos;s security is entirely your responsibility. There is no "forgot password" recovery button, no customer support team to reverse a transaction, no insurance if you lose your seed phrase. One mistake—clicking a malicious link, using SMS 2FA, sharing your seed phrase with anyone—can result in permanent, total loss of funds. This guide teaches you how to avoid being part of those statistics.
+            </p>
+          </div>
+
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            The good news: following a few simple, proven security practices eliminates 99% of attack vectors. Hardware wallets, proper seed phrase management, strong 2FA, and smart transaction verification are the difference between safety and disaster.
+          </p>
+        </section>
+
+        {/* Section 2: Types of Crypto Wallets */}
+        <section id="types-of-wallets" style={{ scrollMarginTop: 24 }}>
+          <h2 style={h2Style}>2. Types of Crypto Wallets</h2>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Understanding the different wallet types is the first step in choosing the right security strategy. Not all wallets are created equal.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Hot Wallets (Internet-Connected)</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Hot wallets are apps or browser extensions that connect to the internet. MetaMask, Phantom, Rabby, and Coinbase Wallet are popular examples. They&apos;re convenient for trading, DeFi interactions, and frequent transactions. However, your private keys are stored on an internet-connected device, making them vulnerable to malware, phishing, and compromise. Hot wallets should only hold funds you&apos;re actively using—treat them like a checking account, not savings.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Hardware Wallets (Offline)</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Hardware wallets are physical devices (think USB stick) that store your private keys completely offline. Examples: Ledger Nano S Plus, Trezor Model T, and SafePal. They sign transactions locally on the device, then broadcast the signed transaction to the network—your private keys never touch the internet. Hardware wallets provide the highest security available for retail investors. This is where you store your long-term holdings.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Cold Wallets (Paper)</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Cold wallets are just your private keys written on paper (or stamped on metal). They&apos;re completely offline and unhackable—but moving funds from them requires importing the private key into an internet-connected app, which is risky. Paper wallets are rarely used today because hardware wallets offer the same offline security with better usability.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Multisig Wallets</h3>
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            Multisig wallets require multiple private keys to authorize a transaction. A 2-of-3 multisig, for example, requires 2 out of 3 authorized signatures to send funds. Even if one key is compromised, funds are safe. Multisig wallets (often run on platforms like Gnosis Safe) are commonly used for organizations or large holdings, but they&apos;re also available to individuals willing to manage multiple devices or recovery mechanisms.
+          </p>
+
+          <div style={infoBoxStyle}>
+            <strong style={{ color: '#e6edf3' }}>Recommended Setup for Most Users</strong>
+            <p style={{ marginTop: 12, marginBottom: 0, fontSize: 14 }}>
+              Use a hardware wallet (Ledger or Trezor) as your primary storage for 80-90% of your crypto. Use a hot wallet (MetaMask) connected to your hardware wallet for active trading and DeFi interactions—this way you get convenience without compromising security. Keep a small amount in a secondary hot wallet for frequent, small transactions.
             </p>
           </div>
         </section>
 
-        {/* Section 2: Attack Vectors */}
-        <section id="attack-vectors" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>How Crypto Wallets Get Hacked</h2>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
-            Understanding the attack vectors is the first step in defending against them. Here are the most common methods attackers use in 2026:
+        {/* Section 3: Hardware Wallet Comparison */}
+        <section id="hardware-wallet-comparison" style={{ scrollMarginTop: 24 }}>
+          <h2 style={h2Style}>3. Hardware Wallet Comparison: Ledger vs Trezor</h2>
+
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            The two most popular hardware wallets are Ledger and Trezor. Both are highly secure, but they differ in design philosophy, transparency, and features.
           </p>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            {attackVectorsData.map((item) => (
-              <div key={item.attack} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 16 }}>
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
-                  <h3 style={{ fontSize: 14, fontWeight: 800, color: S.text, margin: 0 }}>{item.attack}</h3>
-                  <span style={{ fontSize: 11, fontWeight: 700 }}>{item.risk_level}</span>
-                </div>
-                <p style={{ fontSize: 13, color: S.text2, lineHeight: 1.7, margin: "8px 0" }}><strong>How it works:</strong> {item.description}</p>
-                <p style={{ fontSize: 13, color: S.green, lineHeight: 1.6, margin: 0 }}><strong>Prevention:</strong> {item.prevention}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* Section 3: Token Approvals */}
-        <section id="token-approvals" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>Understanding Token Approvals & Permissions</h2>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
-            Token approvals are the gateway to most wallet drains. When you use a DeFi app, you approve it to spend your tokens. Understanding how this works is critical to securing your funds.
-          </p>
-
-          <div style={{ background: `${S.red}15`, border: `1px solid ${S.red}40`, borderRadius: 12, padding: 16, marginBottom: 20 }}>
-            <div style={{ fontWeight: 700, marginBottom: 8, color: S.red }}>⚠️ Critical: How Approvals Are Exploited</div>
-            <p style={{ fontSize: 13, color: S.text, lineHeight: 1.7, margin: 0 }}>
-              When you approve a contract to spend USDC, you're signing a transaction that says "This contract can transfer any amount of my USDC, forever." If that contract is malicious or becomes compromised, it will drain everything.
-            </p>
-          </div>
-
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Infinite vs. Limited Approvals</h3>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 16, marginBottom: 24 }}>
-            {[
-              { type: "🔴 Infinite Approval", examples: "999,999,999 USDC", risk: "Contract can drain all tokens, forever", use: "Convenient but extremely risky" },
-              { type: "🟢 Limited Approval", examples: "Exactly 100 USDC", risk: "Contract can only spend approved amount", use: "Must re-approve for larger amounts" },
-            ].map((item) => (
-              <div key={item.type} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 16 }}>
-                <h4 style={{ fontSize: 13, fontWeight: 800, marginBottom: 8 }}>{item.type}</h4>
-                <div style={{ fontSize: 12, color: S.text2, lineHeight: 1.8 }}>
-                  <div><strong>Approval Amount:</strong> {item.examples}</div>
-                  <div><strong>Risk:</strong> {item.risk}</div>
-                  <div><strong>Recommendation:</strong> {item.use}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Best Practices for Approvals</h3>
-          <ol style={{ paddingLeft: 20, color: S.text, lineHeight: 2.2, fontSize: 14, marginBottom: 20 }}>
-            <li><strong>Always approve limited amounts</strong> — If depositing 100 USDC, approve exactly 100, not unlimited</li>
-            <li><strong>Verify contract addresses on Etherscan</strong> — Before approving, check the contract code matches the official dApp</li>
-            <li><strong>Use time-limited approvals when possible</strong> — Some wallets support 24-hour or 30-day expiry on approvals</li>
-            <li><strong>Monitor active approvals regularly</strong> — Use Revoke.cash monthly to audit and revoke unused permissions</li>
-            <li><strong>Test new protocols with small amounts first</strong> — Deploy $10 before approving your full position</li>
-            <li><strong>Never approve malicious contracts</strong> — Your wallet firewall will warn you if an approval looks suspicious</li>
-          </ol>
-        </section>
-
-        {/* Section 4: Wallet Firewalls */}
-        <section id="wallet-firewalls" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>Wallet Firewalls & Transaction Simulation</h2>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
-            Modern wallet security has entered a new era: transaction simulation and real-time risk scoring. A wallet firewall intercepts transactions before they're signed and warns you of danger.
-          </p>
-
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>The 3-Layer Defense Model</h3>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 24 }}>
-            {[
-              { layer: "Layer 1: Pre-Connection (Phishing Detection)", desc: "Before you connect to a website, your wallet firewall checks if the URL is a known phishing site. If it matches a scam database, you're blocked.", example: "Scam Sniffer Chrome extension blocks fake dapp links" },
-              { layer: "Layer 2: Pre-Signing (Transaction Simulation)", desc: "Before you sign a transaction, the wallet firewall simulates it and shows you what will happen. If you're approving a drain contract or ice phishing permit, you see a red warning.", example: "Rabby simulates txs and shows 'You lose 1000 USDC'" },
-              { layer: "Layer 3: Post-Permission (Approval Monitoring)", desc: "After you approve a contract, your wallet monitors it. If the contract suddenly tries to move your tokens, your firewall blocks it.", example: "Blowfish alerts if an approved contract tries unusual transactions" },
-            ].map((item) => (
-              <div key={item.layer} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 16 }}>
-                <h4 style={{ fontSize: 13, fontWeight: 800, marginBottom: 8, color: S.primary }}>{item.layer}</h4>
-                <p style={{ fontSize: 13, color: S.text2, lineHeight: 1.6, margin: "0 0 8px 0" }}>{item.desc}</p>
-                <p style={{ fontSize: 12, color: S.yellow, margin: 0 }}><strong>Example:</strong> {item.example}</p>
-              </div>
-            ))}
-          </div>
-
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Why Wallet Firewalls Matter More Than Hardware Wallets Alone</h3>
-          <div style={{ background: `${S.secondary}10`, border: `1px solid ${S.secondary}40`, borderRadius: 12, padding: 16, marginBottom: 20 }}>
-            <p style={{ fontSize: 13, color: S.text, lineHeight: 1.7, margin: 0 }}>
-              A hardware wallet protects your seed phrase, but it doesn't protect you from approving a malicious contract. With a wallet firewall (Rabby, Blowfish), your Ledger can safely use DeFi because the firewall will warn you before you sign anything dangerous. This combination—hardware wallet + wallet firewall—is the gold standard in 2026.
-            </p>
-          </div>
-        </section>
-
-        {/* Section 5: Security Tools */}
-        <section id="security-tools" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>Essential Security Tools for 2026</h2>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
-            These tools are the foundation of modern wallet security. Most are free and take minutes to set up.
-          </p>
-
-          <div className="ws-table-wrap" role="region" aria-label="Security tools comparison" tabIndex={0} style={{ marginBottom: 24 }}>
-            <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13, color: S.text }}>
+          <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', marginBottom: 24 }}>
+            <table aria-label="Ledger vs Trezor hardware wallet comparison" style={tableStyle}>
               <thead>
-                <tr style={{ borderBottom: `2px solid ${S.border}` }}>
-                  <th scope="col" style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Tool</th>
-                  <th scope="col" style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Category</th>
-                  <th scope="col" style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Key Features</th>
-                  <th scope="col" style={{ padding: 12, textAlign: "left", fontWeight: 800, color: S.primary }}>Cost</th>
+                <tr>
+                  <th scope="col" style={thStyle}>Feature</th>
+                  <th scope="col" style={thStyle}>Ledger Nano S Plus</th>
+                  <th scope="col" style={thStyle}>Trezor Safe 3</th>
                 </tr>
               </thead>
               <tbody>
-                {securityToolsData.map((tool, i) => (
-                  <tr key={i} style={{ borderBottom: `1px solid ${S.border}` }}>
-                    <td style={{ padding: 12, fontWeight: 600 }}>{tool.name}</td>
-                    <td style={{ padding: 12, color: S.text2 }}>{tool.category}</td>
-                    <td style={{ padding: 12, color: S.text2 }}>{tool.features}</td>
-                    <td style={{ padding: 12, color: S.green, fontWeight: 600 }}>{tool.cost}</td>
-                  </tr>
-                ))}
+                <tr>
+                  <td style={tdStyle}>Price</td>
+                  <td style={tdStyle}>$59</td>
+                  <td style={tdStyle}>$79</td>
+                </tr>
+                <tr>
+                  <td style={tdStyle}>Private Key Storage</td>
+                  <td style={tdStyle}>Secure Element chip (CC EAL6+ certified)</td>
+                  <td style={tdStyle}>General-purpose microprocessor</td>
+                </tr>
+                <tr>
+                  <td style={tdStyle}>Firmware</td>
+                  <td style={tdStyle}>Closed-source (proprietary)</td>
+                  <td style={tdStyle}>100% open-source</td>
+                </tr>
+                <tr>
+                  <td style={tdStyle}>Coins Supported</td>
+                  <td style={tdStyle}>5,500+</td>
+                  <td style={tdStyle}>~1,800</td>
+                </tr>
+                <tr>
+                  <td style={tdStyle}>Code Audits</td>
+                  <td style={tdStyle}>Regular third-party audits</td>
+                  <td style={tdStyle}>Open-source community auditable</td>
+                </tr>
+                <tr>
+                  <td style={tdStyle}>Display Size</td>
+                  <td style={tdStyle}>Small OLED screen</td>
+                  <td style={tdStyle}>Larger color touchscreen</td>
+                </tr>
+                <tr>
+                  <td style={tdStyle}>Bluetooth</td>
+                  <td style={tdStyle}>No (USB only)</td>
+                  <td style={tdStyle}>Yes (optional wireless)</td>
+                </tr>
+                <tr>
+                  <td style={tdStyle}>User-Friendliness</td>
+                  <td style={tdStyle}>Excellent (simple, intuitive)</td>
+                  <td style={tdStyle}>Excellent (detailed control)</td>
+                </tr>
+                <tr>
+                  <td style={tdStyle}>Community Trust</td>
+                  <td style={tdStyle}>Very high (market leader)</td>
+                  <td style={tdStyle}>Very high (transparency focus)</td>
+                </tr>
               </tbody>
             </table>
           </div>
 
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Setup Recommendation</h3>
-          <ol style={{ paddingLeft: 20, color: S.text, lineHeight: 2.2, fontSize: 14 }}>
-            <li><strong>Install Rabby Wallet</strong> (Chrome) — Replaces MetaMask with built-in phishing detection, tx simulation, and approval alerts</li>
-            <li><strong>Install Scam Sniffer</strong> (Chrome) — Blocks phishing URLs before you connect your wallet</li>
-            <li><strong>Bookmark Revoke.cash</strong> — Check your approvals monthly to revoke unused contracts</li>
-            <li><strong>For Solana users: Install Phantom Security</strong> — Phantom's built-in tx previews catch most drain attempts</li>
-            <li><strong>For Ethereum users on MetaMask: Install Blowfish</strong> (Chrome) — Adds approval warnings MetaMask lacks</li>
-          </ol>
-        </section>
-
-        {/* Section 6: Hardware Wallets */}
-        <section id="hardware-wallets" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>Hardware Wallet Best Practices</h2>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
-            A hardware wallet stores your private keys offline, making them immune to malware and phishing. But a hardware wallet is only half the equation—you must also use it correctly.
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Ledger Nano S Plus: The Market Leader</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Ledger&apos;s Secure Element chip is a dedicated cryptographic processor designed solely for key storage. It&apos;s certified at CC EAL6+ level, meaning it&apos;s survived formal security evaluations. The Nano S Plus is the most popular choice for retail investors. At $59, it&apos;s affordable. It supports 5,500+ coins/tokens, more than any competitor. The Ledger Live app is intuitive and beginner-friendly. The main criticism: Ledger&apos;s firmware is closed-source, meaning the code isn&apos;t publicly auditable. Ledger has had security concerns in the past (like the 2022 incident where some users&apos; recovery phrases were accessible), but they\&apos;ve addressed these issues and continue regular audits.
           </p>
 
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Best Hardware Wallets for 2026</h3>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 16, marginBottom: 24 }}>
-            {[
-              { icon: "🔐", name: "Ledger Nano X", price: "$149", features: "Bluetooth, 2000+ coins, most widely used", best_for: "Ethereum & multi-chain users" },
-              { icon: "🛡️", name: "Trezor One", price: "$99", features: "USB-only, most audited code, transparent", best_for: "Bitcoin & security purists" },
-              { icon: "⚡", name: "Ledger Stax", price: "$299", features: "Large e-ink display, premium UX, easy approval review", best_for: "High-value holders who want clarity" },
-              { icon: "🌐", name: "Trezor Model T", price: "$249", features: "Touch screen, SLIP-0039 Shamir backup", best_for: "Advanced users wanting key fragmentation" },
-            ].map((w) => (
-              <div key={w.name} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 16 }}>
-                <div style={{ fontSize: 24, marginBottom: 8 }}>{w.icon}</div>
-                <div style={{ fontWeight: 800, fontSize: 14, marginBottom: 4 }}>{w.name}</div>
-                <div style={{ fontSize: 12, color: S.yellow, marginBottom: 8 }}>{w.price}</div>
-                <div style={{ fontSize: 12, color: S.text2, marginBottom: 12, lineHeight: 1.6 }}>{w.features}</div>
-                <div style={{ fontSize: 11, color: S.green, fontStyle: "italic" }}>Best for: {w.best_for}</div>
-              </div>
-            ))}
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Trezor Safe 3: The Transparency Champion</h3>
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            Trezor\&apos;s philosophy is "security through transparency." The entire codebase is open-source, meaning the community can audit it, find issues, and propose improvements. The Trezor Safe 3 uses a standard microprocessor (not a specialized security chip like Ledger), but this is actually an advantage for transparency—anyone can verify the code running on it. At $79 and supporting ~1,800 coins, it\&apos;s slightly more expensive and supports fewer assets than Ledger, but if you prioritize auditability and community verification over convenience, Trezor is the better choice. The touchscreen is also a nice UX improvement over Ledger\&apos;s small screen.
+          </p>
+
+          <div style={infoBoxStyle}>
+            <strong style={{ color: '#e6edf3' }}>Which One to Buy?</strong>
+            <p style={{ marginTop: 12, marginBottom: 12, fontSize: 14 }}>
+              <strong>Choose Ledger if:</strong> You want the most user-friendly experience, need support for 5,500+ tokens, and trust Ledger\&apos;s security track record. Start here if you\&apos;re new to hardware wallets.
+            </p>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
+              <strong>Choose Trezor if:</strong> You value transparency and community auditability, want full visibility into the code running on your device, and don\&apos;t need ultra-wide token support. Both are excellent choices.
+            </p>
           </div>
 
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Hardware Wallet Setup Checklist</h3>
-          <ol style={{ paddingLeft: 20, color: S.text, lineHeight: 2.2, fontSize: 14, marginBottom: 20 }}>
-            <li><strong>Purchase from official retailers only</strong> — Never buy from third-party sellers or eBay. Ledger.com or Trezor.io direct.</li>
-            <li><strong>Verify the device is sealed</strong> — Check for tamper-evident packaging. If opened, refuse the delivery.</li>
-            <li><strong>Verify authenticity</strong> — Visit Ledger/Trezor official website, enter the device serial number in their verification tool.</li>
-            <li><strong>Initialize on a clean, offline device</strong> — Use a dedicated laptop that rarely connects to the internet.</li>
-            <li><strong>Generate your seed phrase on the device</strong> — Let the hardware wallet generate your 12 or 24-word phrase, not a website.</li>
-            <li><strong>Write down your seed phrase by hand</strong> — Use archival paper, not regular paper. Store in fireproof safe or metal backup device.</li>
-            <li><strong>Verify your seed phrase</strong> — The device will ask you to re-enter words. This catches transcription errors.</li>
-            <li><strong>Set a strong PIN</strong> — At least 6 digits. This protects the device if lost.</li>
-            <li><strong>Test with a small amount</strong> — Send $5 of BTC/ETH to your hardware wallet and verify you can receive it.</li>
-            <li><strong>Keep firmware updated</strong> — Check for firmware updates monthly on the official website.</li>
-          </ol>
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Critical Warning: Buy Only from Official Sources</h3>
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            Never buy a hardware wallet from a third-party reseller (eBay, Amazon Marketplace, local traders). Tampered devices have been documented in the wild. Attackers intercept shipments, swap the device for a malicious copy, reseal the packaging, and resell it. Buy directly from Ledger.com or Trezor.io, or from verified retailers they officially endorse. A $59 device is worth verifying.
+          </p>
+        </section>
 
-          <div style={{ background: `${S.yellow}15`, border: `1px solid ${S.yellow}40`, borderRadius: 12, padding: 16, marginBottom: 20 }}>
-            <div style={{ fontWeight: 700, marginBottom: 8, color: S.yellow }}>⚠️ Blind Signing Risk</div>
-            <p style={{ fontSize: 13, color: S.text, lineHeight: 1.7, margin: 0 }}>
-              Some hardware wallets show tx details on a small screen, but most of the data is unreadable ("blind signing"). Always pair your hardware wallet with a wallet firewall (Rabby) that shows you what you're signing before the hardware wallet even sees it.
+        {/* Section 4: Seed Phrase Security */}
+        <section id="seed-phrase-security" style={{ scrollMarginTop: 24 }}>
+          <h2 style={h2Style}>4. Seed Phrase Security: The Golden Rule</h2>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Your seed phrase is the master key to all your crypto. It\&apos;s a sequence of 12 or 24 words that generates all your private keys. If someone gets your seed phrase, they can recreate your entire wallet on any device and drain all your funds. Protecting your seed phrase is the single most important security practice.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>The Golden Rule: Keep It Offline</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Your seed phrase must NEVER touch an internet-connected device. Not once. Not for a second. Don\&apos;t take a screenshot. Don\&apos;t photograph it. Don\&apos;t email it to yourself. Don\&apos;t type it into a text file. Any digital copy is a liability—hackers can breach cloud storage, email, phones, and computers far more easily than they can access physical metal.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>How to Store Your Seed Phrase</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            When you create a wallet on a hardware wallet (say, Ledger), the device generates a 24-word seed phrase and displays it on its screen. Write down all 24 words, in order, on paper or—better—engrave them onto a metal backup material. Metal doesn\&apos;t degrade, won\&apos;t be harmed by water or fire, and can survive centuries. Products like Cryptosteel (about $120) allow you to stamp your words onto metal tiles in a small, durable, fireproof container.
+          </p>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            The order matters. The words must be in the exact sequence generated by your wallet. Keep multiple copies (2-3) in separate, secure physical locations. Home safe, safety deposit box at a bank, parent\&apos;s house—diversify. If you lose all copies, your funds are permanently inaccessible. If someone finds even one copy, your funds are at risk.
+          </p>
+
+          <div style={infoBoxStyle}>
+            <strong style={{ color: '#e6edf3' }}>Never Share Your Seed Phrase</strong>
+            <p style={{ marginTop: 12, marginBottom: 12, fontSize: 14 }}>
+              No legitimate person will ever ask for your seed phrase. Not a customer service agent. Not a developer. Not support staff. NEVER share it with anyone, ever. If someone asks, it\&apos;s a scam.
+            </p>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
+              Hardware wallet companies provide customer support, but they will never ask you to input your seed phrase into a website or tool. If someone claims to be "Ledger Support" and asks for your seed phrase, it\&apos;s a scam.
+            </p>
+          </div>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Passphrase (23rd Word)</h3>
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            Advanced users can add an optional 25th word (called a "passphrase") to their seed phrase. This creates a completely different wallet derived from the same 24-word seed. If someone steals your 24 words but doesn\&apos;t know the passphrase, your funds are safe. The passphrase is stored in your head, not written down. This is useful for high-security setups, but adds complexity—if you forget the passphrase, those funds are gone forever. Only use if you\&apos;re confident in your memory or have a secure, separate backup system.
+          </p>
+        </section>
+
+        {/* Section 5: Phishing and Wallet Drainers */}
+        <section id="phishing-and-drainers" style={{ scrollMarginTop: 24 }}>
+          <h2 style={h2Style}>5. Protecting Against Phishing &amp; Wallet Drainers</h2>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Wallet drainers are the most prevalent attack vector in 2026. These are malicious websites or smart contracts designed to trick you into signing a transaction that transfers your funds to an attacker\&apos;s address. They\&apos;re becoming increasingly sophisticated and account for hundreds of thousands of dollars in daily losses.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>How Wallet Drainers Work</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            A drainer website looks like a legitimate app or protocol. You connect your wallet, and it asks you to "approve" a transaction. You see the MetaMask pop-up, you sign—and then your tokens are gone. The attack targets the trust you have in a brand. Scammers create fake versions of OpenSea, Aave, Uniswap, or other popular protocols. They advertise via Google ads, Twitter, Discord, and Telegram. Users click thinking they\&apos;re on the real site, connect their wallet, and get drained.
+          </p>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            In March 2026, one particularly sophisticated drainer used a "transaction simulation" UI to make it look like the transaction was benign. Users would see "Approve USDC" in the UI, but the actual smart contract would sweep all their ERC-20 tokens. The attack is invisible until funds are gone.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Defense Strategy 1: Bookmark Official Sites</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            The simplest defense: never search for "Uniswap" or "OpenSea" in Google. The top ad result is often a phishing site. Instead, bookmark the real website in your browser. Whenever you want to use a protocol, click the bookmark. This bypasses search results entirely. Keep a folder of bookmarks: Uniswap, Aave, OpenSea, Lido, Curve, etc. Only access these sites via bookmarks.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Defense Strategy 2: Transaction Simulation</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Before signing any transaction, use a transaction simulator to verify what you\&apos;re actually approving. Tools like Tenderly or MetaMask\&apos;s built-in simulation show you exactly what the transaction will do—which tokens will move where. If you\&apos;re approving "swap 1 USDC for ETH" but the simulator shows "transfer all USDC to 0x1234...", reject it immediately. This catches most drainer attacks.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Defense Strategy 3: Anti-Drainer Browser Extensions</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Tools like Blockaid and MetaMask\&apos;s phishing detector automatically scan websites and smart contracts for known scams. MetaMask\&apos;s detector is free and built-in. Blockaid is a standalone extension that provides more detailed analysis. When you visit a known phishing site, these tools warn you before you even connect your wallet. In 2026, these extensions are becoming standard—use them.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Defense Strategy 4: Wallet Firewalls and Anti-Drainer Tools</h3>
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            New in 2026: wallet firewalls. Services like Wallet Guard and Scam Sniffer monitor your transaction approvals and warn you if something looks suspicious. Some hardware wallets are integrating anti-drainer checks directly into their signing flow. Spend 5 minutes setting up one of these—they can save you thousands.
+          </p>
+
+          <div style={infoBoxStyle}>
+            <strong style={{ color: '#e6edf3' }}>The Drainer Defense Checklist</strong>
+            <p style={{ marginTop: 12, marginBottom: 12, fontSize: 14 }}>
+              1. Bookmark all official sites you use regularly.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              2. Always verify the URL in your address bar before connecting your wallet.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              3. Simulate transactions before signing to verify what you\&apos;re approving.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              4. Install MetaMask\&apos;s phishing detector or Blockaid.
+            </p>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
+              5. Be suspicious of any app or protocol asking you to "approve" large amounts—Uniswap doesn\&apos;t need your entire token balance approved at once.
             </p>
           </div>
         </section>
 
-        {/* Section 7: Multi-Wallet Strategy */}
-        <section id="multi-wallet" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>The Multi-Wallet Strategy</h2>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
-            In 2026, using a single wallet for everything is a security anti-pattern. The best approach is segmentation: different wallets for different activities, each with appropriate risk levels.
+        {/* Section 6: Two-Factor Authentication */}
+        <section id="two-factor-authentication" style={{ scrollMarginTop: 24 }}>
+          <h2 style={h2Style}>6. Two-Factor Authentication: Doing It Right</h2>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            2FA is a critical layer of security for any account holding crypto. But not all 2FA methods are equal. In 2026, SIM-swap attacks are becoming more common, making SMS 2FA actively dangerous.
           </p>
 
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Three-Tier Wallet Architecture</h3>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16, marginBottom: 24 }}>
-            {[
-              {
-                tier: "🔒 Cold Wallet (Hardware)",
-                purpose: "Long-term hodl storage",
-                holds: "95% of your crypto",
-                examples: "Ledger, Trezor",
-                risk: "Very low",
-                use_frequency: "Monthly or less",
-                approval_limit: "None (rarely approves)",
-              },
-              {
-                tier: "🟡 Hot Wallet (DeFi)",
-                purpose: "Active trading & DeFi interactions",
-                holds: "4-5% working capital",
-                examples: "Rabby, MetaMask",
-                risk: "Medium",
-                use_frequency: "Daily",
-                approval_limit: "Limited per dApp",
-              },
-              {
-                tier: "🔥 Burner Wallet (Unverified)",
-                purpose: "NFT mints, unverified tokens, risky interactions",
-                holds: "$50-200 max",
-                examples: "Fresh MetaMask instance",
-                risk: "High (assume it will be drained)",
-                use_frequency: "As needed",
-                approval_limit: "Already assumed lost",
-              },
-            ].map((w) => (
-              <div key={w.tier} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 16 }}>
-                <h4 style={{ fontSize: 13, fontWeight: 800, marginBottom: 12, color: S.primary }}>{w.tier}</h4>
-                <div style={{ fontSize: 12, color: S.text2, lineHeight: 1.8 }}>
-                  <div><strong>Purpose:</strong> {w.purpose}</div>
-                  <div><strong>Holds:</strong> {w.holds}</div>
-                  <div><strong>Tools:</strong> {w.examples}</div>
-                  <div><strong>Risk Level:</strong> {w.risk}</div>
-                  <div><strong>Usage:</strong> {w.use_frequency}</div>
-                  <div><strong>Approvals:</strong> {w.approval_limit}</div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>What You Should Avoid: SMS 2FA</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            SMS 2FA sends a one-time code to your phone. It seems secure—but it\&apos;s not. In a SIM-swap attack, hackers convince your mobile carrier (through social engineering or bribery) to port your phone number to a device they control. Once they have your number, they receive all SMS messages, including your 2FA codes. They log into your exchange or wallet account and drain it, all while you\&apos;re none the wiser.
+          </p>
 
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Why This Works</h3>
-          <div style={{ background: `${S.green}10`, border: `1px solid ${S.green}40`, borderRadius: 12, padding: 16 }}>
-            <p style={{ fontSize: 13, color: S.text, lineHeight: 1.7, margin: 0 }}>
-              <strong>Compartmentalization:</strong> If your DeFi wallet gets drained, your 95% in cold storage is untouched. If a burner wallet gets drained, you expected it. This strategy limits damage to the smallest possible surface area while keeping money productive in DeFi.
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            In March 2026 alone, dozens of high-value accounts were targeted with SIM swaps. Some victims lost millions. Never use SMS for accounts holding valuable crypto. Never.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>What You Should Use: Authenticator Apps</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Use an authenticator app instead. Google Authenticator, Microsoft Authenticator, or Authy generate time-based one-time codes on your phone. The codes are generated locally on your device—not sent over SMS. Even if a hacker compromises your phone number, they can\&apos;t intercept these codes without physical access to your phone.
+          </p>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Setup: When you enable 2FA on an exchange or wallet, scan the QR code with your authenticator app. The app generates a 6-digit code every 30 seconds. To log in, you provide this code in addition to your password. This is significantly more secure than SMS.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>What You Should Use: Hardware Security Keys</h3>
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            For maximum security, use a hardware security key like Yubikey or Titan. These physical devices use public-key cryptography to authenticate you. No codes to intercept, no phone vulnerabilities. You simply tap the key to confirm you\&apos;re logging in. This is what top security experts recommend, though it\&apos;s less convenient than authenticator apps. If you hold large amounts of crypto, hardware security keys are worth the extra friction.
+          </p>
+
+          <div style={infoBoxStyle}>
+            <strong style={{ color: '#e6edf3' }}>2FA Best Practices</strong>
+            <p style={{ marginTop: 12, marginBottom: 12, fontSize: 14 }}>
+              <strong>For Exchange Accounts:</strong> Use an authenticator app (Google Authenticator or Authy) at minimum. Hardware security keys are ideal if the exchange supports them.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              <strong>For Email (which controls wallet recovery):</strong> Use a hardware security key or authenticator app. Your email is critical—if hackers access it, they can reset your wallet and drain it. Protect it like your life depends on it.
+            </p>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
+              <strong>Never, Ever:</strong> Use SMS 2FA for anything related to crypto. Not for exchanges, not for email, not for anything. The risk is too high.
+            </p>
+          </div>
+        </section>
+
+        {/* Section 7: Advanced Security */}
+        <section id="advanced-security" style={{ scrollMarginTop: 24 }}>
+          <h2 style={h2Style}>7. Advanced Security: Multisig, Social Recovery &amp; Smart Wallets</h2>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Once you\&apos;ve mastered the basics, advanced users can implement additional layers of security. These techniques are optional but powerful for large holdings.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Multisig Wallets: Requiring Multiple Approvals</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            A multisig wallet requires multiple signatures (from different keys/devices) to authorize a transaction. A 2-of-3 multisig, for example, requires 2 out of 3 authorized signers to approve any transfer. Even if one private key is compromised, an attacker can\&apos;t drain the wallet alone—they need a second signature.
+          </p>
+
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            Gnosis Safe is the most popular multisig solution. You can create a 2-of-3 setup: one key on your hardware wallet, one on your phone, one stored with a trusted friend. To send funds, you need 2 of these 3 keys. If your hardware wallet is compromised, you still have 2 other keys. This is how institutional crypto funds operate.
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Social Recovery Wallets</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            A newer approach: social recovery wallets (like Argent or Alchemy\&apos;s account abstraction wallets). These wallets allow you to designate "guardians"—trusted friends or family—who can help you recover access if you lose your primary key. In a recovery scenario, 2 out of 3 guardians can authorize a key change. This combines convenience (no multiple devices) with security (guardian backup).
+          </p>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Smart Account Wallets and Account Abstraction</h3>
+          <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
+            In 2026, smart account wallets (using ERC-4337 account abstraction) are gaining adoption. These wallets offer features like:
+          </p>
+
+          <ul style={{ marginBottom: 24, marginLeft: 20, color: '#8b949e', lineHeight: 1.8 }}>
+            <li>Spending limits: automatically reject transfers above a certain amount</li>
+            <li>Transaction delays: all transfers require a 48-hour delay, giving you time to cancel if it\&apos;s malicious</li>
+            <li>Whitelist: you can only send funds to pre-approved addresses</li>
+            <li>Batch recovery: if your main key is compromised, you can recover via multiple guardians</li>
+          </ul>
+
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            These features make it nearly impossible for an attacker to drain your wallet, even if they compromise your private key. As smart account wallets mature, they\&apos;ll become the standard for self-custodied assets.
+          </p>
+
+          <div style={infoBoxStyle}>
+            <strong style={{ color: '#e6edf3' }}>When to Use These Advanced Methods</strong>
+            <p style={{ marginTop: 12, marginBottom: 0, fontSize: 14 }}>
+              For most people, a hardware wallet + strong 2FA is sufficient. Use multisig if you hold $100k+, have multiple devices, and want added friction to prevent accidental loss. Use smart account wallets if you\&apos;re on Ethereum and want programmable security rules. For high-value positions ($1M+), combine multisig with social recovery and hardware keys.
             </p>
           </div>
         </section>
 
         {/* Section 8: Security Checklist */}
-        <section id="security-checklist" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>Security Checklist: 10 Rules Every Crypto User Should Follow</h2>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
-            Use this checklist to audit your current security posture. Even if you follow 7 out of 10 rules, you're far ahead of most users.
+        <section id="security-checklist" style={{ scrollMarginTop: 24 }}>
+          <h2 style={h2Style}>8. Security Checklist: Your Step-by-Step Setup</h2>
+
+          <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
+            Follow this checklist to secure your wallet. Do it now, not later—most hacks happen to people who "plan to secure things eventually."
           </p>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-            {securityChecklistData.map((item, i) => (
-              <div key={i} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 16, display: "flex", gap: 12 }}>
-                <div style={{ fontSize: 24, flexShrink: 0 }}>{i + 1}</div>
-                <div>
-                  <h4 style={{ fontSize: 14, fontWeight: 800, marginBottom: 4, color: S.text }}>{item.rule}</h4>
-                  <span style={{ fontSize: 11, fontWeight: 700, padding: "2px 6px", borderRadius: 6, background: `${S.primary}20`, color: S.primary }}>{item.category}</span>
-                </div>
-              </div>
-            ))}
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Phase 1: Hardware Wallet Setup (Week 1)</h3>
+          <div style={infoBoxStyle}>
+            <p style={{ marginBottom: 12, marginTop: 0, fontSize: 14 }}>
+              <strong>1. Purchase a hardware wallet</strong><br />
+              Buy a Ledger Nano S Plus ($59) or Trezor Safe 3 ($79) directly from their official websites. Never use third-party sellers.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              <strong>2. Initialize the device</strong><br />
+              Follow the setup wizard on your hardware wallet. Generate a new 24-word seed phrase.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              <strong>3. Write down your seed phrase</strong><br />
+              Write all 24 words in order on paper or engrave them onto metal. Store this in a secure location (home safe, safety deposit box). DO NOT photograph it. DO NOT type it on a computer.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              <strong>4. Create backup copies</strong><br />
+              Make 2-3 copies of your seed phrase and store them in separate locations (home, parent\&apos;s house, safety deposit box). If you lose one copy, the others are insurance.
+            </p>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
+              <strong>5. Test recovery</strong><br />
+              On a new device, use your seed phrase to recover your wallet. Verify you can access the same addresses and funds. This proves your backup works. Then reset the test device.
+            </p>
           </div>
 
-          <div style={{ background: `${S.primary}10`, border: `1px solid ${S.primary}30`, borderRadius: 12, padding: 16, marginTop: 24 }}>
-            <h3 style={{ fontSize: 13, fontWeight: 800, marginBottom: 8, color: S.primary }}>Scoring Your Security</h3>
-            <div style={{ fontSize: 12, color: S.text2, lineHeight: 1.8 }}>
-              <div><strong>10/10:</strong> You're in the top 1% of crypto security. Your funds are nearly impossible to steal.</div>
-              <div><strong>7-9/10:</strong> Excellent security. You've covered the critical vectors and are well-protected.</div>
-              <div><strong>5-6/10:</strong> Above average, but you have gaps. Prioritize getting a hardware wallet and wallet firewall.</div>
-              <div><strong>Below 5/10:</strong> Your funds are at significant risk. Start with rule #1 (hardware wallet) immediately.</div>
-            </div>
-          </div>
-        </section>
-
-        {/* Section 9: If Compromised */}
-        <section id="compromised-response" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>What To Do If Your Wallet Is Compromised</h2>
-          <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
-            If you suspect your wallet has been hacked or drained, speed is critical. Blockchain transactions are irreversible, but there are steps you can take in the first few minutes.
-          </p>
-
-          <h3 style={{ fontSize: 14, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Emergency Response Steps (In Order of Speed)</h3>
-          <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 24 }}>
-            {[
-              { step: "1. Immediately move any remaining funds", desc: "If your wallet still has crypto and isn't completely drained, move it to a new, secure wallet NOW. Speed matters—attackers may be actively monitoring." },
-              { step: "2. Revoke all approvals", desc: "Go to Revoke.cash and revoke EVERY approval immediately. This stops an attacker from using old approvals to drain new deposits." },
-              { step: "3. Check exchange deposit addresses", desc: "If the attacker has deposited your tokens to an exchange, contact the exchange's support immediately with proof of theft. Some exchanges can freeze accounts." },
-              { step: "4. Report to authorities", desc: "File a report with the FBI IC3 (ic3.gov) and your local law enforcement. Include transaction hashes and attacker wallet addresses." },
-              { step: "5. Preserve evidence", desc: "Take screenshots of all transaction hashes, attacker addresses, and the drained amounts. Store these for insurance claims or legal action." },
-              { step: "6. Notify your contacts", desc: "If the attack was via social engineering (compromised Discord/Telegram), warn your friends that accounts impersonating you may contact them." },
-              { step: "7. Use blockchain analytics", desc: "Services like Chainalysis or TRM Labs can track stolen tokens. Report the theft and you may recover funds if they're converted back to fiat." },
-            ].map((item, i) => (
-              <div key={i} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 16 }}>
-                <h4 style={{ fontSize: 13, fontWeight: 800, marginBottom: 6, color: S.orange }}>{item.step}</h4>
-                <p style={{ fontSize: 13, color: S.text2, lineHeight: 1.6, margin: 0 }}>{item.desc}</p>
-              </div>
-            ))}
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Phase 2: Hot Wallet Setup (Week 2)</h3>
+          <div style={infoBoxStyle}>
+            <p style={{ marginBottom: 12, marginTop: 0, fontSize: 14 }}>
+              <strong>6. Install a hot wallet app</strong><br />
+              Download MetaMask, Phantom, or Rabby from official sources. Never use a random wallet app from an unknown developer.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              <strong>7. Connect to your hardware wallet</strong><br />
+              Follow your hot wallet app\&apos;s instructions to connect it to your hardware wallet. Now when you use the app to trade or interact with DeFi, you\&apos;ll sign transactions on the hardware wallet (offline). This gives you convenience without compromising security.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              <strong>8. Set a transfer limit</strong><br />
+              Keep only 5-10% of your holdings in the connected hot wallet. The rest stays on the hardware wallet, never connected to internet-facing apps.
+            </p>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
+              <strong>9. Install MetaMask security tools</strong><br />
+              Install the MetaMask phishing detector extension. In MetaMask settings, enable "Use Blockaid" or similar anti-drainer tools.
+            </p>
           </div>
 
-          <div style={{ background: `${S.red}15`, border: `1px solid ${S.red}40`, borderRadius: 12, padding: 16 }}>
-            <div style={{ fontWeight: 700, marginBottom: 8, color: S.red }}>❌ Important: Recovery Is Unlikely</div>
-            <p style={{ fontSize: 13, color: S.text, lineHeight: 1.7, margin: 0 }}>
-              In most cases, once crypto is stolen and moved off-chain, recovery is impossible. Blockchain transactions are irreversible. The best recovery strategy is prevention. If you've been drained, focus on securing your remaining assets and preventing future attacks.
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Phase 3: Account Security (Week 3)</h3>
+          <div style={infoBoxStyle}>
+            <p style={{ marginBottom: 12, marginTop: 0, fontSize: 14 }}>
+              <strong>10. Enable 2FA on all exchanges</strong><br />
+              Log into your crypto exchange (Coinbase, Kraken, Bybit, etc.) and enable 2FA using an authenticator app (Google Authenticator or Authy). Disable SMS 2FA entirely.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              <strong>11. Enable 2FA on your email</strong><br />
+              Your email controls password resets for everything. Use an authenticator app or hardware security key for 2FA on your primary email account.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              <strong>12. Create a password manager</strong><br />
+              Use Bitwarden, 1Password, or LastPass to generate and store strong, unique passwords for every account. This prevents account takeover through credential reuse.
+            </p>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
+              <strong>13. Enable withdrawal whitelisting</strong><br />
+              On your exchange, go to Settings and enable "Withdrawal Address Whitelist." Only whitelisted addresses can receive withdrawals. Add only your hardware wallet address. This prevents an attacker from immediately moving funds to their address, even if they hack your exchange account.
+            </p>
+          </div>
+
+          <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Phase 4: Ongoing Maintenance (Monthly)</h3>
+          <div style={infoBoxStyle}>
+            <p style={{ marginBottom: 12, marginTop: 0, fontSize: 14 }}>
+              <strong>14. Audit token approvals</strong><br />
+              Visit Revoke.cash and connect your wallet. Review all token approvals (permissions you\&apos;ve given to smart contracts). Revoke any approvals you no longer use. Hackers can exploit approvals to drain tokens without your knowledge.
+            </p>
+            <p style={{ marginBottom: 12, fontSize: 14 }}>
+              <strong>15. Check for suspicious transactions</strong><br />
+              Use Etherscan or your chain\&apos;s block explorer to review your transaction history. Look for unexpected transfers or approvals. If something looks off, immediately investigate.
+            </p>
+            <p style={{ marginBottom: 0, fontSize: 14 }}>
+              <strong>16. Update firmware and software</strong><br />
+              Keep your hardware wallet firmware updated. Keep your OS and browser updated. Keep MetaMask and other extensions up-to-date. Security patches are released frequently—don\&apos;t ignore them.
             </p>
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section id="faq" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20, paddingTop: 8 }}>Frequently Asked Questions</h2>
-          {faqs.map((faq, i) => (
-            <div key={i} style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, padding: 20, marginBottom: 12 }}>
-              <h3 style={{ fontSize: 14, fontWeight: 800, color: S.text, marginBottom: 8 }}>{faq.question}</h3>
-              <p style={{ fontSize: 13, color: S.text2, lineHeight: 1.7, margin: 0 }}>{faq.answer}</p>
-            </div>
-          ))}
+        {/* Section 9: FAQ */}
+        <section id="faq" style={{ scrollMarginTop: 24 }}>
+          <h2 style={h2Style}>9. FAQ</h2>
+
+          <div style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>What is a hardware wallet and why do I need one?</h3>
+            <p style={{ lineHeight: 1.8, color: '#8b949e' }}>
+              A hardware wallet is a physical device (like a USB stick) that stores your private keys completely offline, disconnected from the internet. It signs transactions locally, then broadcasts them to the network. Your private keys never touch the internet, making hardware wallets virtually unhackable. If you hold crypto for more than a few days, a hardware wallet is essential. Online wallets (MetaMask) can be compromised by malware or phishing; hardware wallets cannot.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>What is the difference between Ledger and Trezor?</h3>
+            <p style={{ lineHeight: 1.8, color: '#8b949e' }}>
+              Ledger uses a specialized Secure Element chip (CC EAL6+ certified), supports 5,500+ coins, costs $59 (Nano S Plus), and has closed-source firmware. Trezor is 100% open-source and community-auditable, supports ~1,800 coins, costs $79 (Safe 3), and uses standard hardware. Ledger is more user-friendly and supports more tokens. Trezor prioritizes transparency. Both are highly secure. Choose Ledger if you want convenience; Trezor if you value auditability.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>How should I protect my seed phrase?</h3>
+            <p style={{ lineHeight: 1.8, color: '#8b949e' }}>
+              Your seed phrase should never touch an internet-connected device. Write all 24 words on paper or engrave them onto metal (Cryptosteel). Store it in a secure physical location—home safe, safety deposit box, or parent\&apos;s house. Never screenshot it, photograph it, or type it on a computer. Anyone with your seed phrase can drain your entire wallet. Treat it like the deed to your house.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>What is a wallet drainer and how do I avoid them?</h3>
+            <p style={{ lineHeight: 1.8, color: '#8b949e' }}>
+              Wallet drainers are malicious websites or smart contracts that trick you into signing transactions transferring your funds to an attacker. Avoid them by: (1) Bookmarking official sites and only accessing them via bookmarks—never search Google for protocols. (2) Always verify the URL before connecting your wallet. (3) Simulate transactions before signing to see exactly what they do. (4) Install MetaMask\&apos;s phishing detector or Blockaid extension. (5) Be suspicious of any app asking you to approve large amounts without obvious reason.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>Is SMS 2FA safe for crypto?</h3>
+            <p style={{ lineHeight: 1.8, color: '#8b949e' }}>
+              No. SMS 2FA is vulnerable to SIM-swap attacks where hackers convince your mobile carrier to port your phone number to their device. Once they have your number, they intercept SMS codes and access your accounts. Multiple high-value accounts were SIM-swapped in March 2026 alone. Always use an authenticator app (Google Authenticator or Authy) instead. For maximum security, use a hardware security key (Yubikey). Never use SMS for accounts holding crypto.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>How often should I revoke token approvals?</h3>
+            <p style={{ lineHeight: 1.8, color: '#8b949e' }}>
+              Revoke token approvals at least monthly, ideally quarterly. Token approvals allow smart contracts to transfer your tokens without additional permission. If a protocol gets hacked, attackers can drain approved tokens. Unnecessary approvals are a liability. Use Revoke.cash to audit your approvals—it shows every contract you\&apos;ve approved and what it can access. Remove approvals you don\&apos;t actively use. This takes 5 minutes and can save you thousands.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>What is a passphrase and should I use one?</h3>
+            <p style={{ lineHeight: 1.8, color: '#8b949e' }}>
+              A passphrase (also called the 25th word) is an optional additional word you add to your seed phrase, creating a completely different wallet. If someone steals your 24 words but doesn\&apos;t know the passphrase, your funds are safe. The passphrase is stored in your head only, never written down. This is useful for high-security setups, but if you forget the passphrase, those funds are permanently inaccessible. Only use a passphrase if you\&apos;re confident in your memory. Most people should skip this and use a hardware wallet + strong 2FA instead.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>What should I do if I accidentally connect my wallet to a malicious website?</h3>
+            <p style={{ lineHeight: 1.8, color: '#8b949e' }}>
+              If you connected a wallet to a suspicious site but did not sign any transactions, you\&apos;re likely fine. Connection alone doesn\&apos;t expose your funds—only signed transactions do. However, you should immediately: (1) Revoke all approvals given to that site using Revoke.cash. (2) Consider moving your funds to a fresh wallet (generate a new seed phrase on your hardware wallet). (3) Review your transaction history on Etherscan for any unexpected activity. (4) If you signed a transaction that drained funds, there\&apos;s unfortunately nothing that can reverse it—blockchain transactions are immutable.
+            </p>
+          </div>
+
+          <div style={{ marginBottom: 24 }}>
+            <h3 style={{ fontSize: 16, fontWeight: 600, marginBottom: 12, color: '#e6edf3' }}>Can I use the same hardware wallet on multiple chains?</h3>
+            <p style={{ lineHeight: 1.8, color: '#e6edf3' }}>
+              Yes. Your hardware wallet generates private keys based on your seed phrase. These same keys work on Ethereum, Polygon, Arbitrum, Optimism, Solana, Bitcoin, and every other blockchain. You get the same addresses and keys across all chains. This is powerful—one device secures your assets across the entire Web3 ecosystem. Just make sure you\&apos;re using the correct derivation path for each chain (your wallet software handles this automatically).
+            </p>
+          </div>
         </section>
 
-        {/* Related Articles */}
-        <nav aria-label="Related security resources" style={{ marginBottom: 48 }}>
-          <h2 style={{ fontSize: "1.6rem", fontWeight: 800, marginBottom: 20 }}>Related Security Resources</h2>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 12 }}>
-            {[
-              { title: "DeFi Safety Guide 2026", href: "/learn/defi-safety-guide-2026", cat: "Security" },
-              { title: "Smart Contract Security Audit", href: "/learn/smart-contract-security-guide", cat: "Security" },
-              { title: "Crypto Custody Guide 2026", href: "/learn/crypto-custody-guide-2026", cat: "Custody" },
-              { title: "OnChain Identity & Privacy", href: "/learn/onchain-identity-guide", cat: "Privacy" },
-              { title: "Hardware Wallet Comparison", href: "/wallets", cat: "Wallets" },
-              { title: "Wallet Security Tools", href: "/tools/wallet-security-audit", cat: "Tools" },
-            ].map((article, i) => (
-              <Link key={i} href={article.href} className="ws-related-card" style={{ display: "block", padding: 16, background: S.surface, border: `1px solid ${S.border}`, borderRadius: 12, textDecoration: "none", lineHeight: 1.6, transition: "border-color 0.2s ease, transform 0.2s ease" }}>
-                <span style={{ fontSize: 11, color: S.primary, fontWeight: 600 }}>{article.cat}</span>
-                <span style={{ display: "block", color: S.text, fontSize: 13, fontWeight: 700, marginTop: 4 }}>→ {article.title}</span>
+        {/* Related Reading Section */}
+        <section style={{ marginTop: 48, paddingTop: 32, borderTop: '1px solid #30363d' }}>
+          <h2 style={h2Style}>Related Reading</h2>
+          <ul style={{ listStyle: 'none', padding: 0, marginBottom: 32 }}>
+            <li style={{ marginBottom: 12 }}>
+              <Link href="/learn/smart-wallets-account-abstraction-guide-2026" style={linkStyle}>
+                Smart Wallets & Account Abstraction Guide 2026 →
               </Link>
-            ))}
-          </div>
-        </nav>
-
-        {/* CTA */}
-        <div style={{ background: `linear-gradient(135deg, ${S.primary}15, ${S.primary}05)`, border: `1px solid ${S.primary}30`, borderRadius: 14, padding: 28, textAlign: "center" }}>
-          <h2 style={{ fontSize: 18, fontWeight: 900, marginBottom: 12 }}>Ready to Secure Your Wallet?</h2>
-          <p style={{ fontSize: 13, color: S.text2, marginBottom: 20, lineHeight: 1.7 }}>
-            Start with a hardware wallet and a wallet firewall. These two tools alone reduce your risk by 95%.
-          </p>
-          <div style={{ display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-            <Link href="/tools/wallet-security-audit" style={{ padding: "10px 22px", borderRadius: 10, background: `${S.primary}20`, border: `1px solid ${S.primary}40`, color: S.primary, fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
-              🔍 Audit Your Wallet
-            </Link>
-            <Link href="/wallets" style={{ padding: "10px 22px", borderRadius: 10, background: `${S.green}20`, border: `1px solid ${S.green}40`, color: S.green, fontWeight: 700, fontSize: 13, textDecoration: "none" }}>
-              🛡️ Find Hardware Wallet
-            </Link>
-          </div>
-        </div>
+            </li>
+            <li style={{ marginBottom: 12 }}>
+              <Link href="/learn/crypto-staking-guide-2026" style={linkStyle}>
+                Crypto Staking Guide 2026 →
+              </Link>
+            </li>
+            <li style={{ marginBottom: 12 }}>
+              <Link href="/learn/depin-decentralized-infrastructure-guide-2026" style={linkStyle}>
+                DePIN: Decentralized Infrastructure Guide 2026 →
+              </Link>
+            </li>
+            <li style={{ marginBottom: 12 }}>
+              <Link href="/learn/privacy-coins-zero-knowledge-guide-2026" style={linkStyle}>
+                Privacy Coins & Zero-Knowledge Guide 2026 →
+              </Link>
+            </li>
+          </ul>
+        </section>
 
         {/* Disclaimer */}
-        <div style={{ background: `${S.yellow}15`, border: `1px solid ${S.yellow}40`, borderRadius: 12, padding: 16, marginTop: 32, fontSize: 12, color: S.text2, lineHeight: 1.8 }}>
-          ⚠️ <strong>Disclaimer:</strong> This guide is for educational purposes only and does not constitute financial or security advice. Cryptocurrency security threats evolve constantly. Always stay updated on the latest best practices from trusted sources like Ledger, Trezor, and the Ethereum Foundation. No security method is 100% foolproof. For significant holdings, consult a professional security expert. degen0x is not responsible for lost funds or security breaches resulting from user error or unforeseen vulnerabilities.
+        <section style={{ marginTop: 32, padding: 20, background: '#161b22', border: '1px solid #30363d', borderRadius: 12, fontSize: 13, color: '#8b949e' }}>
+          <strong style={{ color: '#e6edf3' }}>Disclaimer</strong>
+          <p style={{ marginTop: 12, marginBottom: 0, lineHeight: 1.6 }}>
+            This guide is for educational purposes only and is not investment advice, financial advice, or security audit. Cryptocurrency and blockchain security are rapidly evolving fields. While the practices outlined in this guide significantly reduce risk, no security measure is 100% foolproof. You are solely responsible for the security of your private keys, seed phrases, and accounts. Past security practices do not guarantee future safety. Always conduct your own research, stay informed about emerging threats, and never share your seed phrase with anyone. degen0x is not liable for losses, hacks, or compromises resulting from human error, negligence, or unforeseen vulnerabilities. Updated April 2, 2026.
+          </p>
+        </section>
+      </div>
+    
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
-
-      <BackToTop />
-    </main>
   );
 }

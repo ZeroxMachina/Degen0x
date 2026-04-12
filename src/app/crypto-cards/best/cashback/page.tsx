@@ -6,6 +6,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { cryptoCards } from "@/data/crypto-cards";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto Cashback Cards of ${CURRENT_YEAR} - Earn Up to 8% Back`,
@@ -118,6 +120,16 @@ export default function BestCashbackCardsPage() {
               <p className="text-sm">Maximum tier requiring significant token staking (600+ BNB or high WXT holdings). Achievable for large portfolio holders.</p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="crypto-cards"
+        />
+
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg shrink-0">5%</span>
             <div>
@@ -156,6 +168,16 @@ export default function BestCashbackCardsPage() {
           For cashback-focused rankings, we weight our evaluation criteria to prioritize
           effective reward rates and the real-world value of the rewards earned:
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a1a', border: '1px solid #134e4a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💳</span>
+            <strong style={{ color: '#2dd4bf', fontSize: 15 }}>Spending Smart</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We actually use these cards daily. The rewards rate advertised is rarely what you end up getting after fees, conversion spreads, and tier requirements.
+          </p>
+        </div>
         <ul className="space-y-2 text-[var(--color-text-secondary)]">
           <li className="flex items-start gap-2">
             <span className="text-[var(--color-primary)]">&#8226;</span>

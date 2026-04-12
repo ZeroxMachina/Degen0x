@@ -41,6 +41,16 @@ export default function SoneiumGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Sony Group controls a vast entertainment empire: PlayStation Network (100M+ monthly users), Sony Music (thousands of artists), Sony Pictures, and Aniplex (anime). The challenge: digital ownership across these platforms is fragmented, non-interoperable, and controlled centrally. Soneium provides a public blockchain layer for Sony to experiment with NFT-based ownership, fan tokens, cross-game items, and creator royalties.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: 12 }}>
             {[
               { label: "PlayStation Users", value: "100M+", color: "#4d9bff" },
@@ -115,6 +125,26 @@ export default function SoneiumGuidePage() {
             </div>
           ))}
         </section>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/compare/hot-wallet-vs-cold-wallet" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Hot Wallet Vs Cold Wallet</a></li>
+            <li><a href="/courses/crypto-security-certification-course" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Security Certification Course</a></li>
+            <li><a href="/investing/best-altcoins-to-buy-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Altcoins To Buy 2026</a></li>
+            <li><a href="/investing/best-infrastructure-crypto-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Infrastructure Crypto Tokens</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </main>
   );

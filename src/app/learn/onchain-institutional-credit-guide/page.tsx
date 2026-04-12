@@ -9,6 +9,8 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -166,6 +168,16 @@ export default function OnchainInstitutionalCreditGuidePage() {
           <div style={{ fontSize: 13, color: C.muted }}>Updated March 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-17"
+          updatedDate="2026-03-17"
+          readingTime={3}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of Contents" style={{ background: C.surface, border: `1px solid ${C.border}`, borderRadius: 12, padding: 20, marginBottom: 40 }}>
           <h2 style={{ fontSize: 13, fontWeight: 700, marginBottom: 12, color: C.blue, textTransform: "uppercase", letterSpacing: "0.05em" }}>
@@ -191,6 +203,16 @@ export default function OnchainInstitutionalCreditGuidePage() {
           <p style={{ color: C.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Most DeFi lending you know — Aave, Compound, MakerDAO — is <strong style={{ color: C.text }}>overcollateralized</strong>. You want to borrow $10,000? You deposit $15,000 in ETH first. It works, it&apos;s safe, but it&apos;s capital-inefficient and only useful for crypto-native purposes like leveraged trading.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ color: C.text2, lineHeight: 1.8, marginBottom: 16 }}>
             On-chain institutional credit flips this model. It brings <strong style={{ color: C.text }}>traditional credit underwriting on-chain</strong> — assessing borrowers based on their financial health, reputation, and track record rather than requiring them to lock up more than they borrow. This unlocks real-world use cases: a trading firm borrowing working capital, a fintech funding loans in emerging markets, or an asset manager financing real estate.
           </p>
@@ -496,6 +518,26 @@ export default function OnchainInstitutionalCreditGuidePage() {
         </div>
 
         <BackToTop />
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/crypto-tax-calculator-free" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Tax Calculator Free</a></li>
+            <li><a href="/tools/ethereum-gas-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Ethereum Gas Tracker</a></li>
+            <li><a href="/tools/staking-rewards-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Staking Rewards Calculator</a></li>
+            <li><a href="/compare/centralized-vs-decentralized-exchange" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Centralized Vs Decentralized Exchange</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

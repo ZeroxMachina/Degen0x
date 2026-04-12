@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Robinhood vs Coinbase: Which Is Better for Crypto? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -46,6 +48,16 @@ export default function RobinhoodVsCoinbasePage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Coinbase if</strong> crypto is your primary focus and you want access to hundreds of coins, advanced trading tools, staking, and a dedicated crypto wallet. Best for anyone who takes crypto investing seriously.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Is Robinhood or Coinbase cheaper for crypto?", answer: "For occasional small purchases of Bitcoin or Ethereum, Robinhood may be slightly cheaper due to zero commissions and tighter spreads. For active trading, Coinbase Advanced offers lower fees through its maker-taker model, especially at higher volume tiers." },

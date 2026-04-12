@@ -3,6 +3,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import StructuredData from '@/components/StructuredData'
 import Breadcrumb from '@/components/Breadcrumb'
 import BackToTop from '@/components/BackToTop'
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Crypto Index Funds Guide 2026 — DeFi Indexes, ETFs & Onchain Baskets | degen0x',
@@ -138,6 +140,16 @@ export default function CryptoIndexFundsGuidePage() {
         <p className="text-gray-300 mb-4">
           A crypto index fund provides <strong>diversified exposure to a basket of digital assets</strong> through a single token or fund product, similar to how an S&P 500 ETF tracks 500 stocks. Instead of buying 15 different tokens individually, researching each one, and rebalancing every month, you buy one index token and let smart contracts (or a fund manager) handle the heavy lifting.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
         <p className="text-gray-300 mb-4">
           The core value proposition is simple: <strong>diversification without the research burden</strong>. If you want broad DeFi exposure, you buy DPI instead of manually assembling Uniswap + Aave + Lido + Maker + Convex. The index handles rebalancing, concentration limits, and sector allocation automatically.
         </p>
@@ -163,6 +175,16 @@ export default function CryptoIndexFundsGuidePage() {
               <span>Crypto ETFs charge 0.5–1.5% annually; DeFi indexes 0.95%; traditional managed funds 2.5%+. Lower than individual token management.</span>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={4}
+          section="learn"
+        />
+
         </div>
         <p className="text-gray-300">
           Crypto index funds work best for investors who want <strong>passive exposure to entire sectors</strong> (DeFi, Layer-1s, metaverse) rather than picking individual winners and losers.
@@ -665,7 +687,27 @@ export default function CryptoIndexFundsGuidePage() {
       <div className="bg-gray-900 border border-gray-700 rounded-xl p-4 text-center">
         <p className="text-gray-500 text-xs">⚠️ This guide is for educational purposes only. It does not constitute financial, legal, or investment advice. Cryptocurrency regulations and market conditions change rapidly. Always conduct your own research and consult a qualified financial advisor for decisions that affect your portfolio.</p>
       </div>
-    </article>
+    
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/liquidity-pool-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Liquidity Pool Calculator</a></li>
+            <li><a href="/tools/whale-wallet-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Whale Wallet Tracker</a></li>
+            <li><a href="/compare/hot-wallet-vs-cold-wallet" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Hot Wallet Vs Cold Wallet</a></li>
+            <li><a href="/courses/crypto-security-certification-course" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Security Certification Course</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
     <BackToTop />
     </>
   )

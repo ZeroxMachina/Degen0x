@@ -43,6 +43,16 @@ export default function WormholeGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Wormhole is a generic cross-chain messaging protocol connecting 30+ blockchains including Ethereum, Solana, Sui, Aptos, Cosmos, and all major EVM chains. Originally built as a token bridge, it evolved into a full messaging infrastructure. <strong style={{ color: S.text }}>19 Guardian nodes</strong> (run by top validators like Everstake, Figment, P2P) observe and sign messages using a 2/3 supermajority threshold. Wormhole V2 introduced <strong style={{ color: S.text }}>Native Token Transfers (NTT)</strong> — letting protocols move tokens without wrapped assets.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -80,6 +90,17 @@ export default function WormholeGuidePage() {
           <TradingViewChart symbol="BINANCE:WUSDT" height={420} />
         </section>
 
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/tee-trusted-execution-environments-crypto-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Tee Trusted Execution Environments Crypto Guide 2026</a></li>
+            <li><a href="/learn/ton-telegram-mini-apps-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Ton Telegram Mini Apps Guide 2026</a></li>
+            <li><a href="/learn/virtuals-protocol-ai-agent-launchpads-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Virtuals Protocol Ai Agent Launchpads Guide 2026</a></li>
+            <li><a href="/learn/what-is-a-dex-aggregator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>What Is A Dex Aggregator</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

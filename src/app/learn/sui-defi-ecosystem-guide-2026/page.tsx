@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Sui DeFi Ecosystem Guide 2026: Complete Platform Overview | degen0x',
@@ -187,6 +189,16 @@ export default function SuiDeFiEcosystemPage() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-03-28"
+          readingTime={6}
+          section="learn"
+        />
+
       </div>
 
       {/* Table of Contents */}
@@ -250,6 +262,16 @@ export default function SuiDeFiEcosystemPage() {
           revolutionary parallelized, DAG-based consensus mechanism that delivers unprecedented performance and
           developer experience.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p style={{ color: 'var(--color-text-secondary)', lineHeight: '1.8', marginBottom: '1rem' }}>
           Unlike traditional blockchains that process transactions sequentially, Sui uses a novel consensus model
           called Narwhal-Bullshark that enables parallel transaction execution. This architectural innovation allows

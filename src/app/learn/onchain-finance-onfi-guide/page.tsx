@@ -4,6 +4,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "On-Chain Finance (OnFi) Guide 2026 — What It Is & How It Works | degen0x",
@@ -147,6 +149,16 @@ export default function OnChainFinanceGuide() {
           financial infrastructure — one that fits inside existing legal and regulatory frameworks
           while running on public blockchain rails.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           Think of it this way: DeFi was built by crypto-natives for crypto-natives. OnFi is DeFi
           rebuilt to let a JPMorgan, a pension fund, or a Fortune 500 treasury department
@@ -293,6 +305,16 @@ export default function OnChainFinanceGuide() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={7}
+          section="learn"
+        />
+
       </section>
 
       {/* Section 4 */}

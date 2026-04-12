@@ -4,6 +4,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Stablecoin Payments Infrastructure Guide 2026: From BVNK to Global Settlement | degen0x",
@@ -122,6 +124,16 @@ export default function StablecoinPaymentsGuide() {
           <div style={{ marginTop: "12px", fontSize: "13px", color: "#8b949e" }}>Published April 1, 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-01"
+          updatedDate="2026-04-01"
+          readingTime={7}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of Contents" style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: "12px", padding: "20px", marginBottom: "40px" }}>
           <h2 style={{ fontSize: "14px", fontWeight: 700, marginBottom: "12px", color: "#58a6ff" }}>Table of Contents</h2>
@@ -142,6 +154,16 @@ export default function StablecoinPaymentsGuide() {
           <p style={{ color: "#c9d1d9", fontSize: "15px", lineHeight: 1.8, marginBottom: "16px" }}>
             Stablecoin payment infrastructure is the ecosystem of on-chain rails, off-ramps, liquidity networks, and settlement systems that enable stablecoins (USDT, USDC, etc.) to function as practical, real-time payment networks. Unlike traditional cryptocurrencies like Bitcoin and Ethereum, stablecoins maintain a fixed peg to fiat currencies—usually 1 USDC = 1 USD. This price stability is essential for merchants and users who need predictable, reliable payments.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ color: "#c9d1d9", fontSize: "15px", lineHeight: 1.8, marginBottom: "16px" }}>
             The stablecoin market cap has grown to $230B+ (as of early 2026), with USDT and USDC dominating by volume and adoption. But market cap alone doesn&apos;t tell the story—what matters is infrastructure. How fast can you convert fiat to stablecoins? Which countries can access on-ramps? How deep is liquidity for moving large amounts? The answers determine whether stablecoins can truly replace SWIFT and bank transfers.
           </p>

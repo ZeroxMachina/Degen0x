@@ -106,6 +106,16 @@ export default function CryptoTechnicalAnalysisGuidePage() {
           <p style={{color:"#c9d1d9",fontSize:15,lineHeight:1.8,marginBottom:16}}>
             Technical analysis is the study of price action — the idea that all known information about an asset is already reflected in its price. Instead of evaluating a crypto project&apos;s fundamentals (team, technology, tokenomics), TA practitioners analyze candlestick charts, volume data, and mathematical indicators to identify patterns that tend to repeat across market cycles.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{color:"#c9d1d9",fontSize:15,lineHeight:1.8,marginBottom:16}}>
             The core principles of TA are straightforward: the market discounts everything (price reflects all available information), prices move in trends (once established, trends tend to continue), and history tends to repeat itself (human psychology creates recurring patterns). These principles apply to crypto just as they do to stocks, forex, and commodities — though crypto&apos;s 24/7 trading and higher volatility require some adjustments.
           </p>
@@ -474,6 +484,14 @@ export default function CryptoTechnicalAnalysisGuidePage() {
             ))}
           </div>
         </section>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
 
       <BackToTop />

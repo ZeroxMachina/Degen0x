@@ -81,6 +81,16 @@ export default function BestLongTermPage() {
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How We Evaluate Long-Term Crypto Providers</h2>
         <p className="text-[var(--color-text-secondary)] mb-4">Our evaluation criteria for long-term investing platforms focuses on factors that matter most over extended holding periods:</p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1000', border: '1px solid #422006', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🏔️</span>
+            <strong style={{ color: '#eab308', fontSize: 15 }}>Long-Term View</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Time in the market beats timing the market — especially in crypto. Our long-term analysis focuses on fundamentals that compound over years, not months.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {[
             { title: "Security & Custody (30%)", desc: "Cold storage practices, insurance coverage, audit history, custody solutions, and track record of protecting user funds over time." },

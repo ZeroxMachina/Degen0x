@@ -55,6 +55,16 @@ export default function TurbosGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Turbos Finance is a <strong style={{ color: S.text }}>yield optimization</strong> protocol on Sui that aggregates trading fees, staking rewards, and arbitrage opportunities into managed vaults. Unlike simple DEXs, Turbos automates yield strategies, allowing users to deposit assets once and earn optimized returns as the protocol compounds fees and incentives.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Built natively on Sui's Move language, Turbos leverages the chain's high throughput and low costs to provide best-in-class yield farming and liquidity management tools. It's part of the broader Sui DeFi ecosystem alongside Cetus and other protocols.
           </p>

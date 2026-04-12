@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -187,6 +189,16 @@ export default function MegaETHGuide() {
           Ethereum finalizes a block roughly every 12 seconds. MegaETH aims to produce over a
           thousand blocks in that same window.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           The project is incubated by <strong className="text-[#e6edf3]">Paradigm</strong> — one
           of crypto&apos;s most respected research-driven VCs — and raised a $20 million seed round
@@ -230,6 +242,16 @@ export default function MegaETHGuide() {
               <p className="text-[#e6edf3] font-bold text-lg">$1.4B (20x OS)</p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={5}
+          section="learn"
+        />
+
           <p className="text-[#8b949e] text-xs mt-4">
             Source: DefiLlama, CoinDesk, ICO Drops — March 2026 (data subject to change)
           </p>

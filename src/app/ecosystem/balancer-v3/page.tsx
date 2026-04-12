@@ -54,6 +54,16 @@ export default function BalancerV3GuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Balancer V3 is the most flexible AMM infrastructure in DeFi, launched in late 2024. Unlike Uniswap's fixed-curve model, Balancer lets anyone create custom weighted pools with up to 8 tokens in arbitrary ratios — enabling index-like portfolios that auto-rebalance via arbitrage. V3 introduced a revamped vault architecture with <strong style={{ color: S.text }}>hooks</strong> (programmable logic that fires on swaps), <strong style={{ color: S.text }}>boosted pools</strong> (idle capital earns yield from Aave/Morpho), and <strong style={{ color: S.text }}>ERC-4626 support</strong> natively.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -113,6 +123,17 @@ export default function BalancerV3GuidePage() {
           <div style={{ fontSize: 14, color: S.text2, marginBottom: 12 }}>Ready to provide liquidity on Balancer V3?</div>
           <a href="https://app.balancer.fi" target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: S.accent, color: "#fff", fontWeight: 700, padding: "12px 28px", borderRadius: 10, textDecoration: "none", fontSize: 14 }}>Launch Balancer App →</a>
         </div>
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/monad-parallel-evm-layer-1-blockchain-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Monad Parallel Evm Layer 1 Blockchain Guide 2026</a></li>
+            <li><a href="/learn/onchain-analytics-blockchain-data-intelligence-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Onchain Analytics Blockchain Data Intelligence Guide 2026</a></li>
+            <li><a href="/learn/payfi-crypto-payments-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Payfi Crypto Payments Guide 2026</a></li>
+            <li><a href="/learn/polymarket-vs-kalshi-prediction-markets-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Polymarket Vs Kalshi Prediction Markets Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

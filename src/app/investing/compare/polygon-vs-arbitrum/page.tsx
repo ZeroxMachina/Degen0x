@@ -31,7 +31,17 @@ export default function Page() {
         <p>Polygon has evolved from a single PoS sidechain into a comprehensive scaling ecosystem. The Polygon CDK allows projects to launch custom ZK-powered chains, while Polygon zkEVM provides a fully EVM-compatible ZK rollup with Ethereum-level security. Polygon&apos;s enterprise partnerships are unmatched in crypto — Starbucks, Nike, Reddit, and Disney have built on Polygon. The POL token upgrade from MATIC expands token utility across the entire multi-chain ecosystem. This breadth makes Polygon a diversified bet on Ethereum scaling rather than a single technology play.</p>
         <p>Arbitrum&apos;s focused approach has made it the undisputed leader in DeFi-focused Layer 2 scaling. By inheriting Ethereum&apos;s security through optimistic rollups, Arbitrum provides the strongest security guarantees among scaling solutions, which is why major DeFi protocols chose it for deployment. GMX&apos;s success on Arbitrum demonstrated that L2-native applications can become category leaders. Arbitrum Orbit extends this model to Layer 3 application-specific chains. For investors, the choice reflects a preference: Polygon for enterprise adoption and multi-chain scaling breadth, or Arbitrum for DeFi dominance and Ethereum security inheritance.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/arbitrum-vs-optimism" className="text-blue-600 hover:underline">Arbitrum vs Optimism</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/arbitrum-vs-optimism" className="text-blue-600 hover:underline">Arbitrum vs Optimism</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

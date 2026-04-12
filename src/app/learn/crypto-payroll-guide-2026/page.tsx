@@ -3,6 +3,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -98,6 +100,16 @@ export default function CryptoPayrollGuide() {
               <div style={{ fontSize: "2rem", fontWeight: "700", color: S.primary, marginBottom: "0.5rem" }}>{stat.label}</div>
               <div style={{ color: S.text2, fontSize: "0.9rem" }}>{stat.desc}</div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-17"
+          updatedDate="2026-03-17"
+          readingTime={3}
+          section="learn"
+        />
+
           ))}
         </div>
 

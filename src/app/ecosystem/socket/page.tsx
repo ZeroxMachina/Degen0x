@@ -43,6 +43,16 @@ export default function SocketGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Socket is the infrastructure layer for cross-chain interoperability — a <strong style={{ color: S.text }}>bridge aggregator and developer toolkit</strong> that connects to 20+ bridges and routes through the best path for any given transfer. Bungee Exchange is Socket's consumer product. Developers integrate Socket's API/SDK to give their users seamless bridging without managing multiple bridge integrations. Socket also provides <strong style={{ color: S.text }}>Socket DL (Data Layer)</strong> for generalized cross-chain messaging.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -71,6 +81,17 @@ export default function SocketGuidePage() {
           <TradingViewChart symbol="BINANCE:SOCKETUSDT" height={420} />
         </section>
 
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/institutional-defi-onchain-finance-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Institutional Defi Onchain Finance Guide 2026</a></li>
+            <li><a href="/learn/layer-2-crypto-explained" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Layer 2 Crypto Explained</a></li>
+            <li><a href="/learn/lombard-finance-lbtc-bitcoin-liquid-staking-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Lombard Finance Lbtc Bitcoin Liquid Staking Guide 2026</a></li>
+            <li><a href="/learn/merkle-tree-blockchain-explained" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Merkle Tree Blockchain Explained</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

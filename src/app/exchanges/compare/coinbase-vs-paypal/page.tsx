@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Coinbase vs PayPal: Which Is Better for Crypto? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -45,6 +47,16 @@ export default function CoinbaseVsPayPalPage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Coinbase if</strong> you want lower fees, 250+ cryptocurrencies, advanced trading tools, staking, and a platform purpose-built for cryptocurrency. Coinbase is the right choice for anyone who takes crypto seriously.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Is PayPal or Coinbase better for buying Bitcoin?", answer: "Coinbase is objectively better for buying Bitcoin in terms of fees, features, and flexibility. PayPal is more convenient for existing PayPal users who want minimal friction. Coinbase charges 0%-0.60% versus PayPal's 1.8%-2.5%." },

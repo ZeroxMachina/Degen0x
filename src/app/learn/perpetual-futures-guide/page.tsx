@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Perpetual Futures Trading Guide 2026 — How Perps Work | degen0x",
@@ -40,6 +42,16 @@ export default function PerpetualFuturesGuidePage() {
           <div style={{ marginTop: 12, fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 15 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 32 }}>
           <h2 style={{ fontSize: 14, fontWeight: 700, marginBottom: 12, color: "#58a6ff" }}>Table of Contents</h2>
@@ -59,6 +71,16 @@ export default function PerpetualFuturesGuidePage() {
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Perpetual futures are derivative contracts that let you speculate on the price of an asset without an expiry date. Unlike traditional futures that settle on a specific date, perps can be held indefinitely. The price of a perp contract stays tethered to the spot price through a mechanism called the funding rate.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             When you open a long position, you profit when the price goes up. A short position profits when the price falls. You can use leverage to amplify your exposure — for example, 10x leverage on $1,000 gives you $10,000 of exposure.
           </p>
@@ -197,6 +219,14 @@ export default function PerpetualFuturesGuidePage() {
         {/* Disclaimer */}
         <div style={{ marginTop: 32, padding: 16, background: "#161b22", border: "1px solid #30363d", borderRadius: 8, fontSize: 12, color: "#8b949e", lineHeight: 1.6 }}>
           <strong>Disclaimer:</strong> This content is for educational purposes only and does not constitute financial advice. Perpetual futures trading involves substantial risk of loss. Never trade with money you cannot afford to lose.
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
     </div>

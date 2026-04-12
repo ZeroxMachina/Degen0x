@@ -214,6 +214,16 @@ export default function BestInsurancePage() {
         <p className="text-[var(--color-text-secondary)] mb-4">
           Our insurance protocol ratings are based on extensive analysis of several key factors. We assess capital pool adequacy to ensure protocols can pay out large claims. We review historical claim handling to evaluate how effectively protocols have resolved past incidents. We analyze premium pricing relative to the risk covered, community governance mechanisms, smart contract audit status, and the diversity of coverage options offered.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#0f1a08', border: '1px solid #365314', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔒</span>
+            <strong style={{ color: '#a3e635', fontSize: 15 }}>Coverage Analysis</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Crypto insurance is still immature. Most policies have exclusions that would surprise you. We highlight what's actually covered, not just what's marketed.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)]">
           Each protocol is tested firsthand by our team, who purchases coverage and evaluates the user experience from quoting to claim filing. We update these rankings monthly to reflect changes in protocol performance and market conditions.
         </p>

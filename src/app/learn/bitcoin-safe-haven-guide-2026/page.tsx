@@ -8,6 +8,8 @@ import {
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Bitcoin Safe Haven 2026: Is BTC a Hedge Against Geopolitical Risk?",
@@ -194,6 +196,16 @@ export default function BitcoinSafeHavenGuidePage() {
                 {s.value}
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-25"
+          updatedDate="2026-03-25"
+          readingTime={5}
+          section="learn"
+        />
+
           ))}
         </div>
       </div>
@@ -269,6 +281,16 @@ export default function BitcoinSafeHavenGuidePage() {
           example — it&apos;s been a crisis hedge for thousands of years. US Treasury bonds,
           the Swiss franc, and the Japanese yen have traditionally filled this role as well.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
         <p
           className="mb-4"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.8" }}
@@ -749,6 +771,14 @@ export default function BitcoinSafeHavenGuidePage() {
       </div>
 
       <BackToTop />
-    </article>
+    
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

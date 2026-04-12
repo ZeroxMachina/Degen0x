@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { exchangeDetailedComparisons, exchangeComparisonFeatures } from "@/data/exchanges";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Coinbase vs Binance: Detailed Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -86,6 +88,16 @@ export default function CoinbaseVsBinancePage() {
               <h2 className="text-2xl font-bold text-[var(--color-text)]">Coinbase</h2>
               <div className="text-3xl font-bold text-blue-400">{coinbase.rating}/5</div>
             </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
             <ul className="space-y-2 text-[var(--color-text-secondary)]">
               <li className="flex items-start gap-2">
                 <span className="text-green-400 mt-1">✓</span>

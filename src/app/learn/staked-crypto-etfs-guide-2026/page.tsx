@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -177,6 +179,16 @@ export default function StakedCryptoETFsGuidePage() {
                 <div style={{ fontSize: 14, fontWeight: 700, color: stat.color }}>{stat.value}</div>
                 <div style={{ fontSize: 11, color: S.text2, marginTop: 6 }}>{stat.label}</div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={6}
+          section="learn"
+        />
+
             ))}
           </div>
 
@@ -209,6 +221,16 @@ export default function StakedCryptoETFsGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             A staked crypto ETF is an exchange-traded fund that holds a proof-of-stake cryptocurrency (like Ethereum or Solana) and stakes a portion of its holdings on the blockchain network to earn staking rewards. These rewards flow back to the fund, increasing the net asset value (NAV) for shareholders—essentially giving you crypto price exposure <em>plus</em> yield, all within a traditional brokerage account.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Before March 2026, most crypto ETFs were &quot;spot&quot; products—they just held the asset and tracked its price. You got exposure to ETH or BTC but missed out on staking rewards that native holders earned. That changed when the SEC began approving staking within ETF wrappers, following the GENIUS Act (July 2025), which established a regulatory framework for yield-generating crypto products.
@@ -542,6 +564,14 @@ export default function StakedCryptoETFsGuidePage() {
             ))}
           </div>
         </section>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </main>
   );

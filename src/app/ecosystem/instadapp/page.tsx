@@ -48,6 +48,16 @@ export default function InstadappGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Instadapp is the DeFi Smart Layer — a unified management platform for all your crypto positions. Instead of juggling separate wallets for Aave, Compound, MakerDAO, and others, Instadapp lets you manage everything in one account with automation and one-click refinancing.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Core technology: <strong style={{ color: S.text }}>DeFi Smart Accounts (DSA)</strong>. A DSA is a programmable account that can interact with multiple DeFi protocols simultaneously. You can automate repayments, optimize borrowing rates, and rebalance positions without manual intervention.
           </p>

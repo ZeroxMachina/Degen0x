@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Restaking & EigenLayer: The Complete Guide",
@@ -44,6 +46,16 @@ export default function RestakingGuide() {
           validators, restaking allows you to recursively commit that same capital to other
           protocols that need validation and economic security.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           This creates a fundamental shift in how Ethereum's security budget is monetized. Rather
           than that security budget being monopolized by Ethereum itself, it becomes available to
@@ -120,6 +132,16 @@ export default function RestakingGuide() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={5}
+          section="learn"
+        />
+
       </section>
 
       {/* Actively Validated Services (AVS) */}

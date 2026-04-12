@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Coinbase vs Cash App: Which Is Better for Bitcoin? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -45,6 +47,16 @@ export default function CoinbaseVsCashAppPage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Coinbase if</strong> you want access to 250+ cryptocurrencies, advanced trading tools, staking, and a comprehensive crypto platform. Coinbase is better for anyone whose crypto interest extends beyond Bitcoin.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Is Cash App cheaper than Coinbase for Bitcoin?", answer: "No, Cash App charges approximately 1.5% to 2.5% per transaction, while Coinbase Advanced charges 0% to 0.60%. However, Cash App offers free Bitcoin withdrawals, which can offset some of the fee difference for users who regularly move Bitcoin off-platform." },

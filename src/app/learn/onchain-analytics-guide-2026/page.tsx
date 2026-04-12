@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "On-Chain Analytics Guide 2026 — Data Tools | degen0x",
@@ -179,6 +181,16 @@ export default function OnChainAnalyticsGuide() {
             analysis studies the actual transactions happening on the blockchain: which wallets are moving tokens, how much they're
             moving, where they're moving them, and when. This data is immutable, transparent, and reveals truths that can't be hidden.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             Every bitcoin, ethereum, or token movement is recorded on-chain. When a whale buys on a centralized exchange, that purchase
@@ -879,6 +891,16 @@ export default function OnChainAnalyticsGuide() {
               </p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={14}
+          section="learn"
+        />
+
         </section>
 
         {/* Disclaimer */}
@@ -987,6 +1009,14 @@ export default function OnChainAnalyticsGuide() {
           </div>
         </section>
 
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
       <BackToTop />
     </div>

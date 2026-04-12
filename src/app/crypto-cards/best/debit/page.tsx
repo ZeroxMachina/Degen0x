@@ -6,6 +6,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { cryptoCards } from "@/data/crypto-cards";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto Debit Cards of ${CURRENT_YEAR} - Spend Your Crypto`,
@@ -131,6 +133,16 @@ export default function BestDebitCardsPage() {
             <p className="text-sm">Daily and monthly spending caps vary by card and tier. Higher tiers generally offer higher limits. Check that your card supports your expected spending volume.</p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="crypto-cards"
+        />
+
       </section>
 
       {/* Methodology */}
@@ -143,6 +155,16 @@ export default function BestDebitCardsPage() {
           card management experience (10%). We test actual transactions including in-store
           purchases, online orders, and ATM withdrawals to verify real-world performance.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a1a', border: '1px solid #134e4a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💳</span>
+            <strong style={{ color: '#2dd4bf', fontSize: 15 }}>Spending Smart</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We actually use these cards daily. The rewards rate advertised is rarely what you end up getting after fees, conversion spreads, and tier requirements.
+          </p>
+        </div>
       </section>
 
       {/* Related Links */}

@@ -56,6 +56,16 @@ export default function SyncSwapGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             SyncSwap is the leading decentralized exchange on <strong style={{ color: S.text }}>zkSync Era</strong>, Matter Labs' high-performance Ethereum Layer 2 using zero-knowledge proofs. It combines concentrated liquidity pools with low fees to serve zkSync's rapidly growing ecosystem, offering swap volumes and TVL that dominate the network.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             SyncSwap pioneered the 2-token concentrated liquidity model on zkSync, allowing LPs to maximize capital efficiency while traders enjoy deep liquidity and minimal slippage. The native <strong style={{ color: S.text }}>$SYNC</strong> token enables governance and fee rewards.
           </p>

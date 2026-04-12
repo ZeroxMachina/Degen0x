@@ -4,6 +4,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Stablecoins ${CURRENT_YEAR}: Top Picks Ranked & Compared`,
@@ -292,6 +294,16 @@ export default function BestStablecoinsPage() {
               <div className="text-2xl font-black text-[var(--color-primary)]">{stat.value}</div>
               <div className="text-xs text-[var(--color-text-secondary)] mt-1">{stat.label}</div>
             </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
           ))}
         </div>
       </header>

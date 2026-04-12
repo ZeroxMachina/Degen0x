@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Tokenized Real Estate Guide 2026 — Invest in Property with Crypto | degen0x",
@@ -164,6 +166,16 @@ export default function TokenizedRealEstateGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 2026 · 15 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-25"
+          updatedDate="2026-03-25"
+          readingTime={6}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of contents" style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -186,6 +198,16 @@ export default function TokenizedRealEstateGuide() {
           <p style={{ color: '#e6edf3', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Tokenized real estate represents fractional ownership of physical properties through blockchain-based tokens. Instead of requiring $500,000+ to purchase an entire property, tokenization allows investors to purchase $50 worth of a token that represents a fractional stake in that property. This democratizes real estate investment, historically reserved for wealthy individuals and institutions.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ color: '#e6edf3', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The fundamental problem tokenization solves is <strong>accessibility</strong>. Real estate has always been an effective wealth-building tool, but entry barriers are enormous: you need hundreds of thousands of dollars, deal with complex financing, navigate local regulations, and handle property management. Tokenized real estate platforms abstract away these friction points, letting anyone with $50 and a crypto wallet own a fractional stake in a diversified property portfolio across multiple continents.
           </p>
@@ -580,6 +602,26 @@ export default function TokenizedRealEstateGuide() {
         </div>
       </div>
       <BackToTop />
-    </article>
+    
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/bitcoin-halving-countdown" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Bitcoin Halving Countdown</a></li>
+            <li><a href="/tools/crypto-exchange-fee-comparison-tool" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Exchange Fee Comparison Tool</a></li>
+            <li><a href="/tools/crypto-tax-calculator-free" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Tax Calculator Free</a></li>
+            <li><a href="/tools/ethereum-gas-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Ethereum Gas Tracker</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

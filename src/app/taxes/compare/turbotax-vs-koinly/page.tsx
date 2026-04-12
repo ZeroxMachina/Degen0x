@@ -42,6 +42,16 @@ export default function TurboTaxVsKoinlyPage() {
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Every jurisdiction has different rules, and they're changing fast. We note when guidance is US-specific vs. internationally applicable.
+          </p>
+        </div>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Different Tools for Different Jobs</h3>
         <p className="text-[var(--color-text-secondary)]">It is important to understand that TurboTax and Koinly serve different purposes. TurboTax is a complete tax preparation and filing solution that handles all aspects of your tax return. Its crypto features are one component of a larger product. Koinly is a specialized tool focused exclusively on crypto tax calculations that produces reports for use in your tax filing process. Many users use both tools together for the best results.</p>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Exchange and DeFi Coverage</h3>

@@ -6,6 +6,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { cryptoCards } from "@/data/crypto-cards";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto Cards for Travel in ${CURRENT_YEAR} - No Foreign Fees`,
@@ -119,6 +121,16 @@ export default function BestTravelCardsPage() {
               <p className="text-sm">Icy White and Obsidian tiers include complimentary LoungeKey access at 1,000+ airport lounges worldwide. A premium perk typically found only on high-end traditional travel cards.</p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="crypto-cards"
+        />
+
           <div className="flex items-start gap-3">
             <span className="text-[var(--color-primary)] font-bold text-lg">2.</span>
             <div>
@@ -154,6 +166,16 @@ export default function BestTravelCardsPage() {
           international purchases (10%). We test each card during actual international travel
           to verify real-world performance.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a1a', border: '1px solid #134e4a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💳</span>
+            <strong style={{ color: '#2dd4bf', fontSize: 15 }}>Spending Smart</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We actually use these cards daily. The rewards rate advertised is rarely what you end up getting after fees, conversion spreads, and tier requirements.
+          </p>
+        </div>
       </section>
 
       {/* Related Links */}

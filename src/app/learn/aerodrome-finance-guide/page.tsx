@@ -9,6 +9,8 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AerodromeVeCalculator from "@/components/AerodromeVeCalculator";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -222,6 +224,16 @@ export default function AerodromeFinanceGuide() {
           Aerodrome was purpose-built to be Base&apos;s central liquidity layer — the protocol that
           everything else plugs into when it needs deep, efficient trading markets.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           In just over two years, it has delivered on that mandate. By March 2026, Aerodrome
           commands approximately <strong className="text-[#e6edf3]">68% of Base&apos;s DEX
@@ -268,6 +280,16 @@ export default function AerodromeFinanceGuide() {
               <p className="text-[#e6edf3] font-bold text-lg">Aug 2023</p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-17"
+          updatedDate="2026-03-17"
+          readingTime={9}
+          section="learn"
+        />
+
           <p className="text-[#8b949e] text-xs mt-4">
             Source: DefiLlama, CoinGecko — March 2026 (approximate, data changes daily)
           </p>

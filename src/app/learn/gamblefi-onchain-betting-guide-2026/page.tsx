@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -159,6 +161,16 @@ export default function GambleFiGuide() {
           <div style={{ fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-27"
+          updatedDate="2026-03-27"
+          readingTime={3}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <style dangerouslySetInnerHTML={{ __html: `
           .toc-link { color: #58a6ff; text-decoration: none; transition: color 0.2s, padding-left 0.2s; }
@@ -194,6 +206,16 @@ export default function GambleFiGuide() {
             controlling odds and holding user funds in escrow, GambleFi protocols use decentralized liquidity pools
             and autonomous settlement to create trustless, permissionless betting markets.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ color: "#c9d1d9", lineHeight: 1.8, marginBottom: 16 }}>
             The market is already massive: crypto casinos account for <strong style={{ color: "#e6edf3" }}>~17% of all
             iGaming bets globally</strong>, and the crypto casino industry generates <strong style={{ color: "#e6edf3" }}>$81B in
@@ -552,6 +574,26 @@ export default function GambleFiGuide() {
         </nav>
 
         <BackToTop />
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/investing/crypto-momentum-trading-strategy" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Momentum Trading Strategy</a></li>
+            <li><a href="/investing/crypto-whale-watching-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Whale Watching Guide</a></li>
+            <li><a href="/tools/bitcoin-mempool-visualizer" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Bitcoin Mempool Visualizer</a></li>
+            <li><a href="/tools/crypto-fear-greed-index-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Fear Greed Index Live</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, generateHowToSchema, combineS
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import Hip3FundingCalculator from "@/components/Hip3FundingCalculator";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 const PAGE_URL = `${SITE_URL}/learn/hyperliquid-hip3-tokenized-futures-guide`;
 const DATE_PUBLISHED = "2026-03-16T00:00:00Z";
@@ -136,6 +138,16 @@ export default function HyperliquidHip3TokenizedFuturesGuidePage() {
           <div style={{ fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={5}
+          section="learn"
+        />
+
+
         {/* Quick Stats Box */}
         <div style={{ background: "#161b22", border: "1px solid #06b6d440", borderRadius: 12, padding: 20, marginBottom: 32 }}>
           <h2 style={{ fontSize: 13, fontWeight: 700, color: "#06b6d4", marginBottom: 14, textTransform: "uppercase", letterSpacing: "0.05em" }}>
@@ -185,6 +197,16 @@ export default function HyperliquidHip3TokenizedFuturesGuidePage() {
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.85, marginBottom: 16 }}>
             HIP-3 (Hyperliquid Improvement Proposal 3) is the protocol upgrade that turned Hyperliquid from a crypto-only perp DEX into something much more radical: a permissionless futures exchange for <em>any</em> asset in the world — stocks, commodities, indices, and beyond.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.85, marginBottom: 16 }}>
             Before HIP-3, Hyperliquid listed new markets through a centralized governance process — the team decided which assets got perpetuals. HIP-3 flipped the model entirely. Now, anyone who stakes 500,000 HYPE tokens can permissionlessly launch a perpetual futures market for any underlying asset. No approval required. No waiting. Deploy and go.
           </p>
@@ -484,6 +506,26 @@ export default function HyperliquidHip3TokenizedFuturesGuidePage() {
           ))}
         </div>
 
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/bitcoin-dominance-chart-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Bitcoin Dominance Chart Live</a></li>
+            <li><a href="/tools/crypto-correlation-matrix" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Correlation Matrix</a></li>
+            <li><a href="/tools/crypto-profit-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Profit Calculator</a></li>
+            <li><a href="/tools/eth-burn-tracker-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Eth Burn Tracker Live</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

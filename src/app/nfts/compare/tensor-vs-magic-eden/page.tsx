@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Tensor vs Magic Eden: Which Solana NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -70,6 +72,16 @@ export default function TensorVsMagicEdenPage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="nfts"
+        />
+
       <FAQSection faqs={[
         { question: "Can I use both Tensor and Magic Eden?", answer: "Yes, many Solana traders use both. Tensor for active trading and portfolio management, and Magic Eden for browsing new collections and accessing the Launchpad. Both platforms index the same Solana NFTs, so your collection is accessible on either." },
         { question: "Which has more Solana NFT listings?", answer: "Both platforms index all Solana NFTs, so the collection coverage is essentially identical. The difference is in the trading experience, tools, and features each platform wraps around that shared collection data." },

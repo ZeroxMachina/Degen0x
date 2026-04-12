@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import MoveTokenUnlockTracker from "@/components/MoveTokenUnlockTracker";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -146,6 +148,16 @@ export default function MovementNetworkGuidePage() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={4}
+          section="learn"
+        />
+
+
         {/* ── Disclaimer ── */}
         <div style={{
           background: "#161b22", border: "1px solid #f8514940",
@@ -185,6 +197,16 @@ export default function MovementNetworkGuidePage() {
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Movement Network is a standalone Layer 1 blockchain that brings the <strong style={{ color: "#e6edf3" }}>Move programming language</strong> to the broadest possible developer audience. Originally conceived as an Ethereum Layer 2, Movement pivoted to an independent L1 after recognizing that the Move Virtual Machine&apos;s security and performance advantages were best expressed at the base layer.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             The chain launched mainnet in November 2025. By early 2026, it had onboarded over 160 projects and crossed $200M in total value locked — making it one of the fastest ecosystem ramp-ups since Aptos launched in 2022.
           </p>
@@ -647,6 +669,14 @@ export default function MovementNetworkGuidePage() {
 
         <BackToTop />
 
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

@@ -6,6 +6,8 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `MetaMask vs Phantom (${CURRENT_YEAR}) - Which Wallet Is Better? | ${SITE_NAME}`,
@@ -108,6 +110,16 @@ export default function MetaMaskVsPhantomPage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="wallets"
+        />
+
 
       <section className="mb-12 mt-10">
         <div className="grid md:grid-cols-2 gap-4">

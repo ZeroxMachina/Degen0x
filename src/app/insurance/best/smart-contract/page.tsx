@@ -144,6 +144,16 @@ export default function SmartContractCoverPage() {
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How to Choose Smart Contract Cover</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0f1a08', border: '1px solid #365314', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔒</span>
+            <strong style={{ color: '#a3e635', fontSize: 15 }}>Coverage Analysis</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Crypto insurance is still immature. Most policies have exclusions that would surprise you. We highlight what's actually covered, not just what's marketed.
+          </p>
+        </div>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <p>
             When selecting smart contract insurance, start by identifying which protocols you have funds deposited in and check which insurance providers offer coverage for those specific protocols. Consider the following factors:

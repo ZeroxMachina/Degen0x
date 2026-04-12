@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `eToro vs Robinhood: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -45,6 +47,16 @@ export default function EtoroVsRobinhoodPage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Robinhood if</strong> you are a US-based investor who wants the lowest-cost crypto and stock trading with a clean, simple interface. Best for cost-conscious US users who also want options trading.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Is eToro available in the US?", answer: "Yes, eToro is available in the US, though some features like certain CopyPortfolios may be restricted for US users. Both crypto and stock trading are available for US accounts." },

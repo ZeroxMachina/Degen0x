@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Agentic Payments Protocols Compared 2026: x402 vs ACP vs AP2 vs ERC-8183 | degen0x",
@@ -147,6 +149,16 @@ export default function AgenticPaymentsProtocolsGuide() {
               <div className="text-2xl font-bold text-[#e6edf3]">5+</div>
               <div className="text-sm text-[#8b949e]">Major Protocols</div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={11}
+          section="learn"
+        />
+
             <div>
               <div className="text-2xl font-bold text-[#e6edf3]">115M+</div>
               <div className="text-sm text-[#8b949e]">x402 Transactions</div>
@@ -816,6 +828,16 @@ export default function AgenticPaymentsProtocolsGuide() {
               agents with real funds. The creators of these protocols (Coinbase, OpenAI, Google,
               Virtuals, MoonPay) actively develop and iterate on their designs.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           </section>
 
           {/* Related Articles */}

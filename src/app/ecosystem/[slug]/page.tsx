@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { DAPPS, CHAINS_META, CATEGORIES_META, getDApp } from '@/data/dapps';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Static Params ─────────────────────────────────────────────────────────
 export async function generateStaticParams() {
@@ -154,6 +156,16 @@ export default async function DAppPage({
                       <span className="text-[#636366] text-sm">({dapp.reviewCount.toLocaleString()} reviews)</span>
                     </div>
                   </div>
+
+        <AuthorAttribution
+          author="0xMachina"
+          role="Founder"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="ecosystem"
+        />
+
                 </div>
 
                 {/* Chain badges */}

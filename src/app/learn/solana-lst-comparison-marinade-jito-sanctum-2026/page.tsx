@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Marinade vs Jito vs Sanctum: Solana LST Comparison 2026",
@@ -172,6 +174,16 @@ export default function LSTComparison() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 28, 2026 · 15 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-03-28"
+          readingTime={8}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -195,6 +207,16 @@ export default function LSTComparison() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The Solana liquid staking landscape has matured dramatically since 2024. What once was a duopoly—Jito and Marinade commanding 95%+ of market share—has evolved into a competitive ecosystem. Three protocols now dominate for good reason: they offer distinct value propositions, architectural choices, and risk profiles. Understanding the differences isn't academic; it directly impacts your yield, risk exposure, and portfolio efficiency.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             As of March 2026, the Solana staking market has reached a critical inflection point. Over 60.5M SOL is delegated to liquid staking protocols—representing approximately 14% of all staked SOL on the network. This concentration of capital creates both opportunity and risk. A single protocol failure or validator misbehavior could cascade across the ecosystem. Conversely, competition between Jito, Marinade, and Sanctum has driven innovation in yield generation, validator decentralization, and risk mitigation.
           </p>

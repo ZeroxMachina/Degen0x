@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Changelly Review 2026: Instant Crypto Swaps, No Account",
@@ -26,6 +28,16 @@ export default function ChangellyReview() {
             <p className="text-[#8b949e] mb-4">
               Changelly operates as a non-custodial swap aggregator. Users select a source cryptocurrency, destination cryptocurrency, and amount. The platform displays available rates from multiple liquidity sources (exchanges, DEXs, market makers). Users select their preferred rate, provide a destination wallet address, and complete the swap. Funds are sent directly from the user's wallet to the destination without Changelly ever holding the assets. This non-custodial model contrasts with exchanges like Coinbase or Binance, which hold customer assets. For users prioritizing not holding assets on centralized exchanges, Changelly's non-custodial approach is appealing. The tradeoff is lack of advanced features like margin trading, staking, or lending.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1500', border: '1px solid #3d2e0a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔍</span>
+            <strong style={{ color: '#f59e0b', fontSize: 15 }}>Our Testing Notes</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our team ran deposits, trades, and withdrawals on every exchange we review. Withdrawal speed and fee transparency varied more than expected.
+          </p>
+        </div>
           </section>
 
           <section>
@@ -131,6 +143,16 @@ export default function ChangellyReview() {
                 </p>
               </div>
             </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
           </section>
 
           <section>

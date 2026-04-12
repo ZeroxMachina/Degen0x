@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Tokenomics 2.0: DeFi Protocol Revenue & Fee Switches 2026 | degen0x",
@@ -159,6 +161,16 @@ export default function TokenomicsProtocolRevenueGuide() {
           The token was primarily a governance instrument — useful for voting, occasionally for
           speculation, but structurally disconnected from protocol revenues.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           Tokenomics 2.0 breaks that model. It's the shift toward tokens that have a direct,
           enforceable claim on protocol cash flows. The mechanism varies by protocol — some burn
@@ -191,6 +203,16 @@ export default function TokenomicsProtocolRevenueGuide() {
               </ul>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-14"
+          updatedDate="2026-03-14"
+          readingTime={7}
+          section="learn"
+        />
+
         </div>
       </section>
 

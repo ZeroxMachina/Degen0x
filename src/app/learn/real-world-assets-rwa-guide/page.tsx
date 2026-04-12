@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Real World Assets (RWA) in Crypto: Complete Guide",
@@ -44,6 +46,16 @@ export default function RWAGuide() {
           real estate, commodities, bonds, receivables, carbon credits, and other tangible
           assets that previously had limited accessibility or were difficult to fractionalize.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           The RWA market represents one of the most significant opportunities for blockchain
           adoption, as it bridges the gap between traditional finance and decentralized systems.
@@ -340,6 +352,16 @@ export default function RWAGuide() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={4}
+          section="learn"
+        />
+
       </section>
 
       {/* Key Takeaways */}

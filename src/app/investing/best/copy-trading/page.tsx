@@ -66,6 +66,16 @@ export default function BestCopyTradingPage() {
           same trade. Most platforms let you set maximum position sizes, stop-loss limits, and
           choose which types of trades to copy.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We are long-term Bitcoin and Ethereum believers. Our analysis of other assets applies the same rigorous framework regardless of personal conviction.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)]">
           Platforms typically charge a profit-sharing fee (8-10% of profits) that goes to the
           trader you follow. This aligns incentives since traders only earn when you profit.

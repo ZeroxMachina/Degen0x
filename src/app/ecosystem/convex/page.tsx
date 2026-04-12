@@ -87,6 +87,16 @@ export default function ConvexPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Convex Finance is a yield booster for Curve Finance. Curve offers up to a 2.5x boost on liquidity provider rewards if you lock CRV tokens for 4 years (veCRV). Most LP providers don't want to commit for that long, so Convex accumulates massive amounts of veCRV and applies that max boost to all deposited LP tokens automatically.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             This is called the "Curve Wars" — Convex competes with other protocols (Yearn, Aura, others) to accumulate veCRV voting power. In 2026, Convex controls over 50% of all Curve's voting power, making it the dominant force in Curve governance.
           </p>

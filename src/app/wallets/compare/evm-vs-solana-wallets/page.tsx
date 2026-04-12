@@ -35,7 +35,17 @@ export default function EvmVsSolanaWalletsPage() {
         <p>Solana wallets offer sub-second transactions and fees below one cent. The Solana DeFi ecosystem has grown rapidly with Jupiter, Raydium, and Marinade leading the way. NFTs on Solana are vibrant with compressed NFTs enabling mass distribution at minimal cost. The limitation is ecosystem scope — Solana wallets primarily access Solana applications, though some like Phantom now support EVM chains as well.</p>
       </div>
       <FAQSection faqs={faqs} />
-      <section className="mt-12"><h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Related Content</h2><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/ethereum" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Ethereum Wallets</h3></Link><Link href="/wallets/best/solana" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Solana Wallets</h3></Link></div></section>
+      <section className="mt-12"><h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a0f', border: '1px solid #14532d', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛡️</span>
+            <strong style={{ color: '#22c55e', fontSize: 15 }}>Security Verdict</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
+          </p>
+        </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/ethereum" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Ethereum Wallets</h3></Link><Link href="/wallets/best/solana" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Solana Wallets</h3></Link></div></section>
     </div>
   );
 }

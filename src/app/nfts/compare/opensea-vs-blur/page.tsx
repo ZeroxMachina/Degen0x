@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `OpenSea vs Blur: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -66,6 +68,16 @@ export default function OpenSeaVsBlurPage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="nfts"
+        />
+
       <FAQSection faqs={[
         { question: "Can I use both OpenSea and Blur?", answer: "Yes, and many traders do. Since Blur aggregates OpenSea listings, you can buy OpenSea-listed NFTs through Blur's interface at zero marketplace fees. You might use OpenSea for browsing and discovery and Blur for actual trading execution." },
         { question: "Which has more NFT listings?", answer: "OpenSea has more total listings across all chains. However, on Ethereum specifically, Blur and OpenSea have similar collection coverage since Blur indexes all Ethereum NFTs. Blur does not support other chains." },

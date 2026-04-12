@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Know Your Agent (KYA): AI Agent Identity & Verification Guide 2026 | degen0x",
@@ -128,6 +130,16 @@ export default function KYAGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated April 2026 · 14 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-01"
+          updatedDate="2026-04-12"
+          readingTime={12}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of Contents" style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -151,6 +163,16 @@ export default function KYAGuide() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Know Your Agent (KYA) is an identity, verification, and governance framework designed specifically for AI agents that operate autonomously on blockchain networks. If you've interacted with any DeFi protocol, you're familiar with KYC — the process where an exchange verifies your identity before you can trade. KYA applies the same concept to AI agents, but the challenge is fundamentally different: you're not verifying a person with a passport, you're verifying a piece of software that can spawn copies of itself, operate across multiple chains simultaneously, and execute thousands of transactions per hour.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The framework was first articulated by a16z crypto in their 2026 Big Ideas report, where they predicted that the bottleneck for the agentic economy would shift from intelligence to identity. The logic is straightforward: AI models are already good enough to manage DeFi positions, execute arbitrage, and handle portfolio rebalancing. What's missing is a standardized way for protocols, regulators, and other agents to verify who they're dealing with and hold someone accountable when things go wrong.
           </p>

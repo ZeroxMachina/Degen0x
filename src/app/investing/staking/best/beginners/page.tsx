@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { stakingPlatforms } from "@/data/staking";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Staking Platforms for Beginners in ${CURRENT_YEAR}`,
@@ -91,6 +93,16 @@ export default function BestStakingBeginnersPage() {
 
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Our Recommendations</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our investment research is opinionated by design — we believe conviction backed by on-chain data beats diversification into projects you don't understand.
+          </p>
+        </div>
           <div className="space-y-4">
             {beginnerPlatforms.map((platform, index) => (
               <ProductCard
@@ -121,6 +133,16 @@ export default function BestStakingBeginnersPage() {
                   <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
                 </div>
               </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
             ))}
           </div>
         </section>

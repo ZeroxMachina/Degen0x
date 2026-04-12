@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Decentralized Exchanges (DEXs) in ${CURRENT_YEAR}`,
@@ -144,6 +146,16 @@ export default function DecentralizedExchangesPage() {
                   <p className="text-sm text-[var(--color-text-secondary)]">{dex.chain}</p>
                 </div>
               </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
             </div>
             <p className="text-[var(--color-text-secondary)] mb-4">{dex.description}</p>
             <div className="flex flex-wrap gap-2 mb-4">

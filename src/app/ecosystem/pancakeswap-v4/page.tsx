@@ -56,6 +56,16 @@ export default function PancakeSwapV4GuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             PancakeSwap V4 is the next-generation DEX from PancakeSwap Labs, built on <strong style={{ color: S.text }}>Uniswap V4's advanced hook architecture</strong>. V4 introduces customizable liquidity pools that leverage smart contract hooks — callbacks that trigger before and after swaps — enabling developers to build custom features like dynamic fees, MEV protection, limit orders, and oracle integration directly into pools.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Operating on 10+ blockchains including BNB Chain, Ethereum, Arbitrum, Base, and Avalanche, PancakeSwap V4 unifies trading across ecosystems with superior capital efficiency through concentrated liquidity and hooks-based customization.
           </p>

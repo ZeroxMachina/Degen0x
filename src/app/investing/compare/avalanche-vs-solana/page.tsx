@@ -31,7 +31,17 @@ export default function Page() {
         <p>Avalanche&apos;s key differentiator is its Subnet architecture, which enables projects and enterprises to launch customized blockchains with their own consensus rules, virtual machines, and validator sets while remaining connected to the broader Avalanche ecosystem. This makes Avalanche particularly attractive for institutional and enterprise use cases that require regulatory compliance, permissioned access, or specific performance characteristics. The C-Chain provides EVM compatibility, allowing seamless porting of Ethereum DeFi applications, while Subnets like DFK Chain and Dexalot demonstrate purpose-built blockchain capabilities.</p>
         <p>Solana&apos;s monolithic approach delivers the lowest latency and highest raw throughput of any major blockchain, making it ideal for latency-sensitive applications like order-book trading, real-time gaming, and high-frequency DeFi. The single composable state means all applications on Solana can interact without bridging, avoiding the fragmentation inherent in multi-chain architectures. Solana&apos;s ecosystem has stronger consumer and retail momentum with meme coins, NFTs, and mobile-first applications. For investors, AVAX offers exposure to enterprise blockchain adoption and the multi-chain thesis, while SOL bets on consumer crypto adoption and monolithic chain performance superiority.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/solana-vs-ethereum" className="text-blue-600 hover:underline">Solana vs Ethereum</Link></li><li><Link href="/investing/compare/cardano-vs-solana" className="text-blue-600 hover:underline">Cardano vs Solana</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/solana-vs-ethereum" className="text-blue-600 hover:underline">Solana vs Ethereum</Link></li><li><Link href="/investing/compare/cardano-vs-solana" className="text-blue-600 hover:underline">Cardano vs Solana</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

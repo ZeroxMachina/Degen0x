@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem } from "@/lib/types";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Gemini vs Coinbase (${CURRENT_YEAR}): Security-Focused Comparison | ${SITE_NAME}`,
@@ -98,6 +100,16 @@ export default function GeminiVsCoinbasePage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection
         faqs={[

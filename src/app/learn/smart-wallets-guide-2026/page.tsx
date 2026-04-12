@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -232,6 +234,16 @@ export default function SmartWalletsGuide2026Page() {
             Smart wallets replace that with programmable logic: who can sign, how gas is paid, what
             happens if you lose access, and what limits apply.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12, marginBottom: 20 }}>
             <div style={{ background: "#161b22", border: "1px solid #f8514930", borderRadius: 12, padding: 18 }}>
               <h3 style={{ fontSize: 15, fontWeight: 700, color: "#f85149", marginBottom: 8 }}>Traditional Wallet (EOA)</h3>
@@ -251,6 +263,16 @@ export default function SmartWalletsGuide2026Page() {
               </p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={3}
+          section="learn"
+        />
+
           <div style={{ background: "#161b2280", border: "1px solid #6366f140", borderRadius: 12, padding: 16 }}>
             <p style={{ color: "#818cf8", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
               💡 <strong>Key insight:</strong> Smart wallets don&apos;t change what you can do on-chain —
@@ -613,6 +635,26 @@ export default function SmartWalletsGuide2026Page() {
           </div>
         </section>
 
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/investing/crypto-narrative-trading-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Narrative Trading Guide</a></li>
+            <li><a href="/investing/crypto-with-most-staking-rewards" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto With Most Staking Rewards</a></li>
+            <li><a href="/tools/bitcoin-rainbow-chart" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Bitcoin Rainbow Chart</a></li>
+            <li><a href="/tools/crypto-heatmap-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Heatmap Live</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
 
       <BackToTop />

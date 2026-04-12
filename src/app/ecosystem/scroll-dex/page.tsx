@@ -55,6 +55,16 @@ export default function ScrollDexGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Scroll DEX (also known as Ambient or CrocSwap) is the native decentralized exchange built on <strong style={{ color: S.text }}>Scroll</strong>, an Ethereum-compatible zkEVM Layer 2 that enables cheap, fast swaps without sacrificing EVM compatibility. It brings concentrated liquidity to Scroll users at a fraction of the cost of Ethereum-based DEXs.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Unlike traditional DEXs, Scroll DEX uses a single unified pool for each token pair, reducing fragmentation and improving capital efficiency through concentrated liquidity mechanisms inspired by Uniswap V3.
           </p>

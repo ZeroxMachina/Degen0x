@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Jupiter vs Uniswap: Best DEX Aggregator? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -45,6 +47,16 @@ export default function JupiterVsUniswapPage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose Uniswap if</strong> you want access to the Ethereum DeFi ecosystem with the deepest liquidity for established tokens. Best for Ethereum-native users and those trading ERC-20 tokens.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Is Jupiter cheaper than Uniswap?", answer: "Yes, significantly. Jupiter swaps on Solana cost less than $0.01 in gas, while Uniswap on Ethereum mainnet can cost $5-$50+. Even on L2s, Uniswap is typically more expensive than Jupiter." },

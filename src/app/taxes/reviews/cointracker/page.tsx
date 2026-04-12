@@ -6,6 +6,8 @@ import StarRating from "@/components/StarRating";
 import TableOfContents from "@/components/TableOfContents";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `CoinTracker Review (${CURRENT_YEAR}) - Pricing, Features & TurboTax Integration | ${SITE_NAME}`,
@@ -70,6 +72,16 @@ export default function CoinTrackerReviewPage() {
             generate tax-ready forms. Its partnership with Intuit (TurboTax) gives it a unique
             competitive advantage in the US market.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Every jurisdiction has different rules, and they're changing fast. We note when guidance is US-specific vs. internationally applicable.
+          </p>
+        </div>
           <p className="text-[var(--color-text-secondary)]">
             The platform excels in user experience, offering one of the cleanest interfaces in
             the crypto tax space. Portfolio tracking is a core feature, providing real-time
@@ -175,6 +187,16 @@ export default function CoinTrackerReviewPage() {
               </ul>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="taxes"
+        />
+
         </section>
 
         <section id="verdict" className="mb-10">

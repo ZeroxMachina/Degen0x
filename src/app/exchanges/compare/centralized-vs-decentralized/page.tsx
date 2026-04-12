@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Centralized vs Decentralized Exchanges: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -47,6 +49,16 @@ export default function CentralizedVsDecentralizedPage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Best approach:</strong> Use both. Buy crypto with fiat on a CEX, then transfer to your wallet for DEX trading and DeFi participation.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Are DEXs safer than CEXs?", answer: "Neither is categorically safer. DEXs eliminate exchange counterparty risk but introduce smart contract risk and personal key management responsibility. CEXs can be hacked or go bankrupt, but offer account recovery and regulatory protections. The safest approach uses both and minimizes funds held on any single platform." },

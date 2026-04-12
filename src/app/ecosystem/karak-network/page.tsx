@@ -86,6 +86,16 @@ export default function KarakNetworkPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Karak Network is the first universal restaking layer, extending beyond ETH to enable any crypto asset to provide cryptoeconomic security to any blockchain. While EigenLayer focused on ETH restaking, Karak enables SOL, stablecoins, alternative L1 tokens, and other assets to become validators.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Karak uses Distributed Security Subnetworks (DSS) to coordinate asset restaking. Instead of a single restaking pool, each DSS is a specialized validator network securing a specific application or rollup. Users deposit any supported asset and choose which DSS networks to participate in based on their risk/reward preferences.
           </p>

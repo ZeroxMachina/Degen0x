@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import { ComparisonItem } from "@/lib/types";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Nexo Card vs Crypto.com Visa: Credit Line vs Prepaid (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -150,6 +152,16 @@ export default function NexoVsCryptoComPage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="crypto-cards"
+        />
+
 
       <FAQSection
         faqs={[

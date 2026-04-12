@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "FOMC & Crypto: How Fed Rates Impact Bitcoin 2026 | degen0x",
@@ -116,12 +118,32 @@ export default function FOMCCryptoGuidePage() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={13}
+          section="learn"
+        />
+
+
         {/* Section 1: What Is the FOMC and Why Should Crypto Traders Care? */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">What Is the FOMC and Why Should Crypto Traders Care?</h2>
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             The Federal Open Market Committee (FOMC) is the policy-setting body of the U.S. Federal Reserve. Eight times per year, a group of twelve officials (five permanent Fed governors plus seven regional Fed presidents) gather to decide on <span className="text-[#58a6ff]">interest rates, inflation targets, and quantitative easing policies</span>. Their decisions ripple through global markets in seconds.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             For crypto traders, FOMC meetings are critical macro events. Unlike stocks or commodities, Bitcoin and altcoins lack intrinsic cash flows or dividends to justify valuations. Instead, crypto valuations are driven almost entirely by <span className="text-[#58a6ff]">sentiment, leverage availability, and macro liquidity conditions</span>. When the Fed signals rate cuts, investors pull money from bonds and search for yield in riskier assets—including crypto. When the Fed signals rate hikes, they move toward safer assets, and crypto crashes.
           </p>
@@ -549,6 +571,14 @@ export default function FOMCCryptoGuidePage() {
             This guide is educational only and does not constitute financial advice, investment recommendations, or trading signals. The analysis of FOMC meetings, Fed policy, and crypto market implications is based on historical data and current market conditions as of March 2026, but past performance is not indicative of future results. Cryptocurrency markets are highly volatile, and Fed policy impacts are unpredictable. All price targets and scenarios are estimates and should not be relied upon for trading decisions. Trading and investing in crypto involve substantial risk, including loss of principal, liquidation of leveraged positions, and smart contract risks. Only trade with capital you can afford to lose completely. Always conduct your own research, consult a financial advisor, and understand the specific risks of each trading strategy or protocol before deploying capital. degen0x and its authors assume no liability for trading losses, portfolio drawdowns, or adverse market outcomes related to FOMC events or Fed policy changes.
           </p>
         </section>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
       <BackToTop />
     </main>

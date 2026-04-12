@@ -6,6 +6,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { nftMarketplaces, nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `10 Best NFT Marketplaces of ${CURRENT_YEAR} (Ranked & Reviewed)`,
@@ -125,6 +127,16 @@ export default function BestNftMarketplacesPage() {
             We evaluate each NFT marketplace across six key categories, each weighted based on importance
             to the average user:
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d1e', border: '1px solid #5b2141', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🎨</span>
+            <strong style={{ color: '#f472b6', fontSize: 15 }}>NFT Reality</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            The NFT market has matured significantly. We focus on utility and community value rather than floor price speculation.
+          </p>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Fees (25%)", desc: "Marketplace fees, creator royalties, gas costs, and hidden charges." },
@@ -193,6 +205,16 @@ export default function BestNftMarketplacesPage() {
                     </ul>
                   </div>
                 </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="nfts"
+        />
+
                 <div className="mt-4 flex gap-3">
                   <a
                     href={marketplace.affiliateUrl}

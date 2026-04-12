@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Uphold Review 2026: Multi-Asset Trading, Crypto & Fiat",
@@ -26,6 +28,16 @@ export default function UpholdReview() {
             <p className="text-[#8b949e] mb-4">
               Uphold's core differentiation is its multi-asset ecosystem. Users can trade not just cryptocurrencies but also stocks, bonds, precious metals (gold, silver), and fiat currencies—all in one account with instant settlement. Want to buy Bitcoin, then immediately swap it for Apple stock, then convert to euros? Uphold enables this in seconds without leaving the platform. This integrated approach appeals to traders seeking broad portfolio exposure without managing multiple accounts. Real-time settlement between assets (no T+2 delays found in traditional stock markets) is a significant advantage. However, for traders focused exclusively on crypto, the multi-asset features add complexity without value.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1500', border: '1px solid #3d2e0a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔍</span>
+            <strong style={{ color: '#f59e0b', fontSize: 15 }}>Our Testing Notes</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We evaluate exchanges by actually using them — not just reading their marketing materials. Some surprises, both good and bad.
+          </p>
+        </div>
           </section>
 
           <section>
@@ -103,6 +115,16 @@ export default function UpholdReview() {
                 </ul>
               </div>
             </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
           </section>
 
           <section>

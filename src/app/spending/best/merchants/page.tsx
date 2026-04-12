@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Where to Spend Crypto in ${CURRENT_YEAR} - 100+ Merchants & Services | ${SITE_NAME}`,
@@ -138,6 +140,16 @@ export default function WhereToSpendCryptoPage() {
       {merchantCategories.map((category) => (
         <section key={category.name} className="mb-10">
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">{category.name}</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0a1e', border: '1px solid #4a1259', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛒</span>
+            <strong style={{ color: '#d946ef', fontSize: 15 }}>Spending Reality</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Spending crypto should be a conscious choice, not a default. We cover the tax implications and opportunity costs that most spending guides ignore.
+          </p>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {category.merchants.map((merchant) => (
               <div
@@ -191,6 +203,16 @@ export default function WhereToSpendCryptoPage() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="spending"
+        />
+
       </section>
 
       <FAQSection faqs={faqs} />

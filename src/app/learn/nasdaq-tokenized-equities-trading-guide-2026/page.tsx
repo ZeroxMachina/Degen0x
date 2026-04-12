@@ -151,6 +151,16 @@ export default function NasdaqTokenizedEquitiesGuide() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             The Securities and Exchange Commission (SEC) approved Nasdaq&apos;s request to operate a pilot program for trading tokenized equities on blockchain infrastructure. This is a watershed moment for the convergence of traditional finance and blockchain technology.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Specifically, Nasdaq filed a proposed rule change with the SEC to trade certain eligible securities—Russell 1000 stocks plus ETFs tracking major indices—in tokenized form on blockchain rails. The DTC (Depository Trust Company), the backbone of US stock settlement, will manage the clearing and settlement infrastructure using LedgerScan software. On March 18, the SEC said yes, clearing the path for institutional tokenized equity trading to begin.
           </p>

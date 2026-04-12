@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -164,6 +166,16 @@ export default function GrassProtocolGuide() {
           <div style={{ fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 10 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-27"
+          updatedDate="2026-03-27"
+          readingTime={3}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of Contents" style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 40 }}>
           <h2 style={{ fontSize: 13, fontWeight: 700, marginBottom: 12, color: "#58a6ff", textTransform: "uppercase", letterSpacing: "0.05em" }}>
@@ -191,6 +203,16 @@ export default function GrassProtocolGuide() {
             pays users to share their unused internet bandwidth. The network uses that bandwidth to scrape public web data,
             clean it, and sell structured datasets to AI companies for model training.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: "#c9d1d9", lineHeight: 1.8, marginBottom: 16 }}>
             Think of it as the <strong style={{ color: "#e6edf3" }}>Airbnb of internet bandwidth</strong>: you have spare bandwidth sitting idle,
             GRASS puts it to work fetching public web pages, and you get paid in crypto. The AI companies get diverse,
@@ -481,6 +503,26 @@ export default function GrassProtocolGuide() {
         </div>
 
         <BackToTop />
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/investing/crypto-bear-market-strategy" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Bear Market Strategy</a></li>
+            <li><a href="/investing/crypto-sector-rotation-strategy" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Sector Rotation Strategy</a></li>
+            <li><a href="/tools/altcoin-season-index" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Altcoin Season Index</a></li>
+            <li><a href="/tools/crypto-airdrop-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Airdrop Tracker</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

@@ -87,6 +87,16 @@ export default function MorphoPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Morpho is a peer-to-peer lending protocol built on top of existing protocols like Aave and Compound. Rather than forcing all lenders and borrowers into a single pool, Morpho matches them directly with each other — lenders get higher APY, borrowers get lower rates, and excess value is captured by the users instead of middleman pools.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Morpho Blue (launched in 2026) takes this further with a standalone lending primitive that allows anyone to create isolated lending markets with custom collateral and oracle configurations. This permissionless approach unlocked 200+ unique markets across Ethereum and Base.
           </p>

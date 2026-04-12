@@ -1,53 +1,56 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsVisible(window.scrollY > 400);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+  const handleScroll = useCallback(() => {
+    setIsVisible(window.scrollY > 400);
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
+
+  const scrollToTop = useCallback(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   if (!isVisible) return null;
 
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-[#161b22] border border-[#30363d] hover:border-[#6366f1] transition-all duration-300 flex items-center justify-center z-40 group hover:shadow-lg"
+      aria-label="Scroll to top"
       style={{
-        boxShadow: 'inset 0 0 20px rgba(99, 102, 241, 0)',
-        transition: 'all 300ms ease-out',
+        position: 'fixed',
+        bottom: 32,
+        right: 32,
+        width: 48,
+        height: 48,
+        borderRadius: 12,
+        background: 'rgba(99, 102, 241, 0.85)',
+        backdropFilter: 'blur(12px)',
+        WebkitBackdropFilter: 'blur(12px)',
+        border: '1px solid rgba(255, 255, 255, 0.12)',
+        color: '#fff',
+        fontSize: 20,
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        boxShadow: '0 4px 16px rgba(0, 0, 0, 0.4)',
+        transition: 'opacity 0.3s ease, transform 0.3s ease',
+        opacity: isVisible ? 1 : 0,
+        transform: isVisible ? 'translateY(0)' : 'translateY(12px)',
+        zIndex: 50,
       }}
-      onMouseEnter={(e) => {
-        e.currentTarget.style.boxShadow = 'inset 0 0 20px rgba(99, 102, 241, 0.2), 0 0 20px rgba(99, 102, 241, 0.3)';
-        e.currentTarget.style.borderColor = '#6366f1';
-      }}
-      onMouseLeave={(e) => {
-        e.currentTarget.style.boxShadow = 'inset 0 0 20px rgba(99, 102, 241, 0)';
-        e.currentTarget.style.borderColor = '#30363d';
-      }}
-      aria-label="Back to top"
     >
-      <svg
-        className="w-5 h-5 text-[#e6edf3] group-hover:text-[#6366f1] transition-colors duration-300"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 15l7-7 7 7" />
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M10 16V4" />
+        <path d="M4 10l6-6 6 6" />
       </svg>
     </button>
   );

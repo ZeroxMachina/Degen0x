@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Tempo Blockchain & MPP Guide 2026: Stripe's Machine Payments Protocol | degen0x",
@@ -122,6 +124,16 @@ export default function TempoBlockchainMPPGuide() {
               <div className="text-sm" style={{ color: "var(--color-text-secondary)" }}>{stat.label}</div>
               <div className="text-xl font-extrabold" style={{ color: "#06b6d4" }}>{stat.value}</div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-22"
+          updatedDate="2026-03-22"
+          readingTime={13}
+          section="learn"
+        />
+
           ))}
         </div>
       </div>
@@ -462,7 +474,15 @@ export default function TempoBlockchainMPPGuide() {
 
       </div>
       <BackToTop />
-    </article>
+    
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
     </>
   );
 }

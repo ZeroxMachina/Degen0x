@@ -54,6 +54,16 @@ export default function EthenaGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Ethena is a synthetic dollar protocol that creates <strong style={{ color: S.text }}>USDe</strong> — a dollar-pegged stablecoin backed by a delta-neutral strategy using staked ETH and perpetual futures short positions. Unlike USDC (centralized) or DAI (overcollateralized), USDe uses derivatives to remain dollar-pegged while capturing the funding rate yield paid by long traders.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Users who stake USDe receive <strong style={{ color: S.text }}>sUSDe</strong> — an interest-bearing token earning 15–30% APY sourced from perpetual futures funding rates and ETH staking rewards. Ethena calls this yield the <strong style={{ color: S.text }}>"Internet Bond."</strong>
           </p>
@@ -124,6 +134,17 @@ export default function EthenaGuidePage() {
             Open Ethena App →
           </a>
         </div>
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/morpho-protocol-defi-lending-innovation-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Morpho Protocol Defi Lending Innovation Guide 2026</a></li>
+            <li><a href="/learn/onchain-order-books-clob-dex-trading-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Onchain Order Books Clob Dex Trading Guide 2026</a></li>
+            <li><a href="/learn/perpetual-dex-onchain-perps-trading-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Perpetual Dex Onchain Perps Trading Guide 2026</a></li>
+            <li><a href="/learn/post-quantum-cryptography-quantum-resistant-crypto-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Post Quantum Cryptography Quantum Resistant Crypto Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

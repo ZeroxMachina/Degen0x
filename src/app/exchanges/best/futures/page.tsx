@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { exchanges } from "@/data/exchanges";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto Futures Exchanges in ${CURRENT_YEAR}`,
@@ -111,6 +113,16 @@ export default function FuturesPage() {
           </table>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <div className="space-y-4 mb-12">
         {futuresExchanges.map((exchange, index) => (

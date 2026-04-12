@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL, SITE_NAME } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto Market Cycles Guide 2026: Bull & Bear Phases | degen0x",
@@ -141,6 +143,16 @@ export default function CryptoMarketCyclesPage() {
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Crypto markets move in distinct cycles — periods of accumulation, explosive growth, euphoric peaks, corrections, and bear lows before restarting. Unlike traditional markets, crypto cycles are compressed and more violent due to 24/7 trading, leverage, and sentiment-driven flows. Understanding where you are in the cycle is essential for risk management.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             A complete crypto market cycle typically lasts 3-4 years, tied closely to Bitcoin's halving schedule. Each halving reduces the supply of new Bitcoin, historically followed by a bull market 12-18 months later and a bear market in the subsequent years. However, this pattern is not guaranteed — macro conditions, Fed policy, and institutional adoption now play major roles alongside hard supply mechanics.
@@ -190,6 +202,16 @@ export default function CryptoMarketCyclesPage() {
                   </ul>
                 </div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={9}
+          section="learn"
+        />
+
             </div>
 
             {/* Markup */}
@@ -784,6 +806,14 @@ export default function CryptoMarketCyclesPage() {
         {/* Disclaimer */}
         <div style={{ background: `${S.amber}15`, border: `1px solid ${S.amber}40`, borderRadius: 12, padding: 16, fontSize: 12, color: S.amber, lineHeight: 1.7 }}>
           ⚠️ <strong>Disclaimer:</strong> This guide is for educational purposes only. Crypto market cycles are probabilistic, not deterministic. Past performance does not guarantee future results. Always do your own research (DYOR), never invest more than you can afford to lose, and consult with a financial advisor before making major decisions. {SITE_NAME} is not responsible for trading losses or decisions made based on this guide. Markets are unpredictable. Prepare for tail risks.
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
 

@@ -54,6 +54,16 @@ export default function OndoGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Ondo Finance is the leading <strong style={{ color: S.text }}>Real-World Asset (RWA)</strong> protocol, tokenizing US Treasury bills and money market funds on blockchain. This allows crypto-native investors and DAOs to hold yield-bearing, dollar-denominated assets without leaving on-chain rails.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Ondo's flagship products — <strong style={{ color: S.text }}>OUSG</strong> (short-term US Treasuries) and <strong style={{ color: S.text }}>USDY</strong> (yield-bearing stablecoin) — have attracted over $2.8B in AUM, making Ondo the largest tokenized Treasury protocol. BlackRock's BUIDL fund is a core backing asset.
           </p>
@@ -101,6 +111,17 @@ export default function OndoGuidePage() {
             Explore Ondo →
           </a>
         </div>
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/pumpfun-pumpswap-memecoin-launchpads-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Pumpfun Pumpswap Memecoin Launchpads Guide 2026</a></li>
+            <li><a href="/learn/restaking-wars-eigenlayer-symbiotic-karak-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Restaking Wars Eigenlayer Symbiotic Karak Guide 2026</a></li>
+            <li><a href="/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Sec Crypto Commodities Ruling Digital Asset Regulation Guide 2026</a></li>
+            <li><a href="/learn/smart-wallets-account-abstraction-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Smart Wallets Account Abstraction Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

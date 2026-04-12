@@ -48,6 +48,16 @@ export default function GearboxGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Gearbox Protocol is the leading composable leverage protocol. It lets you open a Credit Account (an isolated margin account) with up to 10x leverage, then deploy that leverage across any integrated DeFi protocol — Curve, Uniswap, Convex, Yearn, and more.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             The key insight: <strong style={{ color: S.text }}>isolated leverage accounts</strong>. Instead of fragmented margin across protocols, Gearbox provides a single Credit Account that you can use to access leverage from Gearbox's lending pools, then invest it anywhere in DeFi. Lenders earn yield on the borrowed assets; borrowers pay interest but get exponential upside.
           </p>

@@ -54,6 +54,16 @@ export default function KaminoGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Kamino Finance is Solana's leading DeFi platform combining lending, automated liquidity management, and leverage products. Starting as a CLMM liquidity vault optimizer (auto-compounding Orca/Raydium CLMM positions), Kamino expanded into <strong style={{ color: S.text }}>Kamino Lend</strong> — now the largest lending market on Solana with $1.8B TVL.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -82,6 +92,17 @@ export default function KaminoGuidePage() {
             Open Kamino →
           </a>
         </div>
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/story-protocol-ip-tokenization-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Story Protocol Ip Tokenization Guide 2026</a></li>
+            <li><a href="/learn/tokenized-treasuries-t-bills-on-chain-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Tokenized Treasuries T Bills On Chain Guide 2026</a></li>
+            <li><a href="/learn/usual-protocol-usd0-rwa-stablecoin-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Usual Protocol Usd0 Rwa Stablecoin Guide 2026</a></li>
+            <li><a href="/learn/what-is-a-crypto-faucet" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>What Is A Crypto Faucet</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

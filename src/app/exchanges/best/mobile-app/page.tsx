@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { exchanges } from "@/data/exchanges";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto Exchange Apps in ${CURRENT_YEAR} - Mobile Trading`,
@@ -80,6 +82,16 @@ export default function MobileAppPage() {
             <p className="text-sm text-[var(--color-text-secondary)]">Charting tools, order types, portfolio tracking, price alerts, and biometric security.</p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
       </div>
 
       <div className="space-y-4 mb-12">

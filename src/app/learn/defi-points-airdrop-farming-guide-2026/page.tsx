@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "DeFi Points & Airdrop Farming Guide 2026: How Points Work, Top Protocols & Risks | degen0x",
@@ -96,6 +98,16 @@ export default function DefiPointsAirdropFarmingGuide() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={17}
+          section="learn"
+        />
+
+
         <hr style={{ borderColor: '#30363d', marginBottom: '40px' }} />
 
         {/* Table of Contents */}
@@ -128,6 +140,16 @@ export default function DefiPointsAirdropFarmingGuide() {
           <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '16px', color: '#e6edf3' }}>
             DeFi points are a relatively recent innovation that changed how protocols launch and distribute tokens. Instead of an immediate Token Generation Event (TGE) where a protocol instantly creates billions of tokens and begins trading, modern protocols use points: off-chain, non-transferable loyalty mechanisms that accumulate as users interact with the protocol. By February 2024, projects had distributed over $115 billion in equivalent value through points programs. This shift represents one of the most significant changes in crypto distribution strategy in a decade.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
           <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '16px', color: '#e6edf3' }}>
             Why do protocols use points instead of immediate tokens? The answer is strategic. Points create a powerful incentive structure: users earn rewards for using the protocol, but those rewards are locked until the protocol is ready to launch its actual token. This solves several problems simultaneously. First, it extends community engagement over months or years instead of a single event. Second, it prevents the classic "farm and dump" dynamic where users rapidly accumulate tokens at launch and immediately sell, crashing the price. Third, it signals which activities protocols genuinely value—points are allocated to activities that build real protocol value, not random behavior.

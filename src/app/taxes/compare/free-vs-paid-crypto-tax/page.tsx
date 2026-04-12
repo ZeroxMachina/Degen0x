@@ -42,6 +42,16 @@ export default function FreeVsPaidCryptoTaxPage() {
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Every jurisdiction has different rules, and they're changing fast. We note when guidance is US-specific vs. internationally applicable.
+          </p>
+        </div>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Transaction Limits</h3>
         <p className="text-[var(--color-text-secondary)]">The most immediate limitation of free tools is transaction count. Most free tiers support only 25 to 100 transactions. Active traders can exceed this in a single day. Even occasional traders may have more transactions than they realize when counting all trades, conversions, and transfers. Paid tools typically start at 1,000 transactions and scale to unlimited. Exceeding your free tier limit means losing access to reports until you upgrade.</p>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">DeFi and Advanced Features</h3>

@@ -4,6 +4,8 @@ import Breadcrumb from '@/components/Breadcrumb';
 import StructuredData from '@/components/StructuredData';
 import BackToTop from '@/components/BackToTop';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Sui Private Transactions & Seal Framework: Compliant Privacy Guide 2026 | degen0x",
@@ -204,6 +206,16 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Every transaction you make on a public blockchain is visible to everyone, forever. Your wallet balance, your trading history, your DeFi positions, the amount you paid someone — all of it sits on a public ledger that anyone can query. For a technology that was supposed to give people financial sovereignty, this radical transparency creates serious problems.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Businesses can't operate on a blockchain where competitors can see every supplier payment, every payroll transaction, and every strategic acquisition. Individuals face real safety risks when their wealth is publicly visible — crypto holders have been physically targeted after attackers traced on-chain balances to real-world identities. And the simple expectation of financial privacy that every bank customer takes for granted simply doesn't exist in public blockchain's default state.
           </p>
@@ -645,5 +657,15 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
         <BackToTop />
       </div>
     </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-01"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
   );
 }

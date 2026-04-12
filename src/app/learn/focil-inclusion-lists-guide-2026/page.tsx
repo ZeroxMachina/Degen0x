@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/learn/focil-inclusion-lists-guide-2026`,
     images: [
       {
-        url: `${SITE_URL}/og-focil-inclusion-lists-guide.svg`,
+        url: `${SITE_URL}/og-focil-inclusion-lists-guide-2026.svg`,
         width: 1200,
         height: 630,
         alt: "FOCIL & Inclusion Lists on Ethereum Guide 2026",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "FOCIL & Inclusion Lists on Ethereum Guide 2026",
     description:
       "How EIP-7805 FOCIL protects Ethereum from censorship without breaking MEV-Boost.",
-    images: [`${SITE_URL}/og-focil-inclusion-lists-guide.svg`],
+    images: [`${SITE_URL}/og-focil-inclusion-lists-guide-2026.svg`],
   },
   alternates: {
     canonical: `${SITE_URL}/learn/focil-inclusion-lists-guide-2026`,
@@ -142,6 +142,16 @@ export default function FocilInclusionListsGuide() {
                 in the mempool for hours. Inclusion lists are the answer: a simple rule that says
                 &ldquo;the next block MUST contain these transactions, or it is invalid.&rdquo;
               </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
               <p className="text-[#c9d1d9] leading-relaxed">
                 Earlier designs, like EIP-7547, gave that power to the slot proposer. But a
                 proposer is a single actor that can be bribed, coerced, or compromised. FOCIL
@@ -250,6 +260,28 @@ export default function FocilInclusionListsGuide() {
             </section>
 
             <section className="mb-10">
+              <h2 className="text-2xl font-semibold text-white mb-4">Frequently asked questions</h2>
+              <div className="space-y-4">
+                {[
+                  { q: "What is FOCIL in one sentence?", a: "FOCIL (Fork-Choice enforced Inclusion Lists, EIP-7805) lets a randomly selected committee of validators each propose transactions that the next block MUST include, so a single builder cannot silently censor users." },
+                  { q: "Is FOCIL live on Ethereum mainnet?", a: "Not yet. As of April 2026, FOCIL is specified as EIP-7805 and is a leading candidate for Ethereum\u2019s Glamsterdam hard fork, targeted for late 2026. It has been tested on devnets and is undergoing client implementation review." },
+                  { q: "How is FOCIL different from normal inclusion lists?", a: "Earlier designs relied on a single proposer to name transactions the next block must include. FOCIL spreads that power across a committee of 16 validators per slot, and the fork-choice rule penalizes blocks that ignore their lists." },
+                  { q: "Does FOCIL break MEV-Boost or PBS?", a: "No. FOCIL coexists with proposer-builder separation and MEV-Boost. Builders still compete on tip extraction, but they must satisfy non-conflicting transactions named by the committee." },
+                  { q: "Why does FOCIL matter for ordinary users?", a: "If your transaction touches anything some builders dislike, today it can sit unmined for hours. With FOCIL, at least one of 16 committee members is likely to name it, and the following block is forced to include it or lose fork-choice weight." },
+                  { q: "How does FOCIL relate to based rollups?", a: "Based rollups inherit L1 censorship resistance. A strong FOCIL on Ethereum directly upgrades the censorship resistance of every based rollup and of any L2 that uses force-inclusion via L1 calldata." },
+                ].map((faq, i) => (
+                  <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
+                    <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">
+                      {faq.q}
+                      <span className="text-[#8b949e] ml-2 group-open:rotate-180 transition-transform">&#9660;</span>
+                    </summary>
+                    <p className="px-5 pb-4 text-[#c9d1d9] leading-relaxed">{faq.a}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+
+            <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Related reading</h2>
               <ul className="list-disc list-inside text-purple-300 space-y-2">
                 <li>
@@ -274,7 +306,15 @@ export default function FocilInclusionListsGuide() {
                 </li>
               </ul>
             </section>
-          </article>
+          
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
 
           <BackToTop />
         </div>

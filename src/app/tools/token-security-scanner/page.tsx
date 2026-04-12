@@ -3,6 +3,8 @@ import TokenSecurityScanner from "@/components/TokenSecurityScanner";
 import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import { generateToolPageSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ── SEO Metadata ────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -178,6 +180,16 @@ export default function TokenSecurityScannerPage() {
               </p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="0xMachina"
+          role="Founder"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="tools"
+        />
+
         </section>
 
         {/* ────── How to Use Section ────── */}

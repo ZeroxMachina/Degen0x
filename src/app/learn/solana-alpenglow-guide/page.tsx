@@ -4,6 +4,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Solana Alpenglow Guide 2026 — 150ms Finality Explained | degen0x",
@@ -145,6 +147,16 @@ export default function SolanaAlpenglowGuide() {
           <strong className="text-[#e6edf3]"> Votor</strong> (voting and finalization) and
           <strong className="text-[#e6edf3]"> Rotor</strong> (data propagation).
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           The goal is dramatic: reduce block finality from roughly 12.8 seconds today to somewhere
           between <strong className="text-[#14f195]">100–150 milliseconds</strong>. That's a ~100x
@@ -190,6 +202,16 @@ export default function SolanaAlpenglowGuide() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={6}
+          section="learn"
+        />
+
 
         <p className="text-[#c9d1d9] leading-relaxed">
           Both issues compound during network stress — exactly when you need the chain to perform

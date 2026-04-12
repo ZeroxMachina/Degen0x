@@ -103,6 +103,16 @@ export default function BestRestakingPage() {
             availability layers, cross-chain bridges, and other infrastructure that benefits from
             economic security.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our investment research is opinionated by design — we believe conviction backed by on-chain data beats diversification into projects you don't understand.
+          </p>
+        </div>
           <p className="text-[var(--color-text-secondary)] mb-4">
             When you restake, you opt-in to specific AVS that your operator supports. Each AVS has its
             own slashing conditions, meaning your restaked ETH could be partially slashed if the operator

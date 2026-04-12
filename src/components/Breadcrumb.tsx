@@ -1,42 +1,73 @@
-import Link from "next/link";
-import { BreadcrumbItem } from "@/lib/types";
+import Link from 'next/link';
 
-interface Props {
+interface BreadcrumbItem {
+  label: string;
+  href?: string;
+}
+
+interface BreadcrumbProps {
   items: BreadcrumbItem[];
 }
 
-export default function Breadcrumb({ items }: Props) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.label,
-      item: `https://degen0x.com${item.href ?? ""}`,
-    })),
-  };
-
+export default function Breadcrumb({ items }: BreadcrumbProps) {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-6">
-        {items.map((item, index) => (
-          <span key={item.href ?? index} className="flex items-center gap-2">
-            {index > 0 && <span>/</span>}
-            {index === items.length - 1 ? (
-              <span className="text-[var(--color-text)]">{item.label}</span>
-            ) : (
-              <Link href={item.href ?? "#"} className="hover:text-[var(--color-text)] transition-colors">
+    <nav aria-label="Breadcrumb" style={{ marginBottom: 24 }}>
+      <ol
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          gap: 6,
+          listStyle: 'none',
+          margin: 0,
+          padding: 0,
+          fontSize: 14,
+          color: '#8b949e',
+        }}
+      >
+        {items.map((item, i) => (
+          <li key={i} style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+            {i > 0 && (
+              <span aria-hidden="true" style={{ color: '#6e7681' }}>/</span>
+            )}
+            {item.href ? (
+              <Link
+                href={item.href}
+                style={{
+                  color: '#58a6ff',
+                  textDecoration: 'none',
+                  padding: '4px 2px',
+                  borderRadius: 4,
+                  transition: 'color 0.2s',
+                }}
+              >
                 {item.label}
               </Link>
+            ) : (
+              <span style={{ color: '#e6edf3' }}>{item.label}</span>
             )}
-          </span>
+          </li>
         ))}
-      </nav>
-    </>
+      </ol>
+
+      {/* BreadcrumbList structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: items
+              .filter((item) => item.href)
+              .map((item, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                name: item.label,
+                item: `https://degen0x.com${item.href}`,
+              })),
+          }),
+        }}
+      />
+    </nav>
   );
 }

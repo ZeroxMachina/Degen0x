@@ -112,6 +112,16 @@ export default function WalletComparisonsHub() {
           <p style={styles.ctaText}>
             Click on any comparison card above to see detailed feature breakdowns, security analysis, pricing, and user ratings.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#0d1a2d', border: '1px solid #1f3a5f', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>⚡</span>
+            <strong style={{ color: '#58a6ff', fontSize: 15 }}>Editor's Pick</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We've tested all of these extensively. The differences matter less than you'd think for casual users, but they compound for power users.
+          </p>
+        </div>
         </section>
       </div>
     </>

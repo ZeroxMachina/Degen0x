@@ -54,6 +54,16 @@ export default function AerodromeGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Aerodrome is a fork of Velodrome V2, deployed on <strong style={{ color: S.text }}>Base</strong> (Coinbase's L2). It quickly became Base's #1 DEX by TVL and volume, serving as the primary liquidity layer for the exploding Base ecosystem. Aerodrome uses the same <strong style={{ color: S.text }}>ve(3,3) tokenomic model</strong> — lock AERO for veAERO, vote on emissions, earn trading fees and bribes.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             As Base became the home of Coinbase's onchain activity (cbBTC, cbETH, USDC) and the memecoin supercycle (BRETT, DEGEN, TOSHI), Aerodrome's volumes surged — at peak exceeding $1B daily and generating millions in weekly fees for veAERO holders.
           </p>
@@ -100,6 +110,17 @@ export default function AerodromeGuidePage() {
             Open Aerodrome →
           </a>
         </div>
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Fhe Fully Homomorphic Encryption Crypto Guide 2026</a></li>
+            <li><a href="/learn/grass-protocol-depin-ai-data-network-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Grass Protocol Depin Ai Data Network Guide 2026</a></li>
+            <li><a href="/learn/how-to-stake-ethereum-complete-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>How To Stake Ethereum Complete Guide</a></li>
+            <li><a href="/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Initia Interwoven Rollups Modular Ecosystem Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

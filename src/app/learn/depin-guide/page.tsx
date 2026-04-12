@@ -58,6 +58,16 @@ export default function DePINGuidePage() {
             (4) Operators earn token rewards proportional to their contribution. (5) Token value rises as demand for the
             network's services grows, attracting more operators — the flywheel spins.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 10, marginTop: 8 }}>
             {["Deploy hardware", "Network verifies", "Earn tokens", "Demand drives value"].map((step, i) => (
               <div key={step} style={{ background: "#161b22", border: `1px solid ${S.border}`, borderRadius: 10, padding: "12px 14px", textAlign: "center" }}>
@@ -135,6 +145,26 @@ export default function DePINGuidePage() {
             demand beyond token speculation and (b) token emission schedules are sustainable.
           </p>
         </section>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/bitcoin-dominance-chart-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Bitcoin Dominance Chart Live</a></li>
+            <li><a href="/tools/crypto-correlation-matrix" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Correlation Matrix</a></li>
+            <li><a href="/tools/crypto-profit-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Profit Calculator</a></li>
+            <li><a href="/tools/eth-burn-tracker-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Eth Burn Tracker Live</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </main>
   );

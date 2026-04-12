@@ -3,6 +3,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Distributed Validator Technology (DVT) Guide | degen0x',
@@ -38,6 +40,7 @@ export const metadata: Metadata = {
     title: 'Distributed Validator Technology (DVT) Guide',
     description: 'Complete guide to DVT, Obol, SSV, and solving Ethereum validator centralization.',
     images: ['https://degen0x.com/og-distributed-validator-technology-dvt-guide.svg'],
+    image: 'https://degen0x.com/og-distributed-validator-technology-dvt-guide.svg',
   },
 };
 
@@ -305,6 +308,16 @@ export default function DVTGuidePage() {
           <p style={pStyle}>
             An Ethereum validator is a node that proposes and attests to blocks. To do this, it holds a private key that cryptographically signs transactions. Traditionally, this entire private key lives on a single machine. If that machine is compromised, hacked, or goes offline during critical duties, the validator faces catastrophic risk: it can lose its 32 ETH stake or be slashed for misbehavior it didn't intend.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
           <p style={pStyle}>
             Distributed Validator Technology changes this. Instead of storing one private key on one machine, DVT splits that key into multiple cryptographic shares (like pieces of a puzzle) and distributes them across different machines, operators, or data centers. None of these machines individually holds the complete private key. To sign a block, the cluster uses threshold signing—for example, "any 3 out of 4 nodes must agree"—to create a valid signature without ever reassembling the full key.
@@ -320,6 +333,16 @@ export default function DVTGuidePage() {
               A validator running 3-of-4 DVT requires three out of four nodes to agree before signing. Even if one node is compromised or offline, the validator remains secure and functional. The mathematical magic: threshold cryptography ensures that even if an attacker captures three shares, they can't forge valid signatures without also capturing a fourth share.
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-23"
+          updatedDate="2026-04-12"
+          readingTime={14}
+          section="learn"
+        />
+
         </section>
 
         {/* Section 2: Why DVT is Needed */}
@@ -939,58 +962,54 @@ export default function DVTGuidePage() {
         <section id="faq" style={sectionStyle}>
           <h2 style={h2Style}>Frequently Asked Questions</h2>
 
-          <div style={infoBox}>
-            <h3 style={{ ...h3Style, marginTop: 0 }}>
-              What exactly is a distributed validator?
-            </h3>
-            <p style={infoText}>
-              A distributed validator splits a single Ethereum validator's private key into multiple cryptographic shares across different machines or nodes. These nodes collaborate using threshold signing—requiring a minimum number to sign transactions—so no single machine holds the full key.
-            </p>
-          </div>
-
-          <div style={infoBox}>
-            <h3 style={{ ...h3Style, marginTop: 0 }}>
-              How does DVT reduce slashing risk?
-            </h3>
-            <p style={infoText}>
-              Because no single node controls the validator, a rogue or compromised node can't unilaterally sign conflicting blocks. Threshold signing (e.g., 3-of-4) requires consensus, preventing double-signing or other slashable offenses.
-            </p>
-          </div>
-
-          <div style={infoBox}>
-            <h3 style={{ ...h3Style, marginTop: 0 }}>
-              What's the difference between Obol and SSV Network?
-            </h3>
-            <p style={infoText}>
-              Obol uses a cluster-based approach where nodes collaborate as a group and must reach consensus. SSV (Secret Shared Validator) distributes shares using Shamir's Secret Sharing and relies on a network of independent operators. Obol favors smaller, tightly coordinated clusters; SSV scales across many independent operators.
-            </p>
-          </div>
-
-          <div style={infoBox}>
-            <h3 style={{ ...h3Style, marginTop: 0 }}>
-              Can I stake via DVT without technical expertise?
-            </h3>
-            <p style={infoText}>
-              Yes. Platforms like EtherFi provide user-friendly interfaces for DVT staking without requiring you to run infrastructure. You stake your ETH, and the platform handles DVT validation across its network.
-            </p>
-          </div>
-
-          <div style={infoBox}>
-            <h3 style={{ ...h3Style, marginTop: 0 }}>
-              Is DVT staking more profitable or less?
-            </h3>
-            <p style={infoText}>
-              Staking rewards are roughly comparable. However, DVT services typically charge operator fees and may include insurance coverage. Rewards vs. fees depends on the platform and current network conditions.
-            </p>
-          </div>
-
-          <div style={infoBox}>
-            <h3 style={{ ...h3Style, marginTop: 0 }}>
-              Will Ethereum implement DVT natively in the protocol?
-            </h3>
-            <p style={infoText}>
-              Vitalik Buterin has proposed integrating DVT at the consensus layer, but it's not yet a roadmap item. Current DVT solutions operate at the application layer, and native integration would require significant research and development.
-            </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+            {[
+              {
+                q: 'What exactly is a distributed validator?',
+                a: "A distributed validator splits a single Ethereum validator's private key into multiple cryptographic shares across different machines or nodes. These nodes collaborate using threshold signing—requiring a minimum number to sign transactions—so no single machine holds the full key.",
+              },
+              {
+                q: 'How does DVT reduce slashing risk?',
+                a: "Because no single node controls the validator, a rogue or compromised node can't unilaterally sign conflicting blocks. Threshold signing (e.g., 3-of-4) requires consensus, preventing double-signing or other slashable offenses.",
+              },
+              {
+                q: 'What\'s the difference between Obol and SSV Network?',
+                a: "Obol uses a cluster-based approach where nodes collaborate as a group and must reach consensus. SSV (Secret Shared Validator) distributes shares using Shamir's Secret Sharing and relies on a network of independent operators. Obol favors smaller, tightly coordinated clusters; SSV scales across many independent operators.",
+              },
+              {
+                q: 'Can I stake via DVT without technical expertise?',
+                a: 'Yes. Platforms like EtherFi provide user-friendly interfaces for DVT staking without requiring you to run infrastructure. You stake your ETH, and the platform handles DVT validation across its network.',
+              },
+              {
+                q: 'Is DVT staking more profitable or less?',
+                a: 'Staking rewards are roughly comparable. However, DVT services typically charge operator fees and may include insurance coverage. Rewards vs. fees depends on the platform and current network conditions.',
+              },
+              {
+                q: 'Will Ethereum implement DVT natively in the protocol?',
+                a: "Vitalik Buterin has proposed integrating DVT at the consensus layer, but it's not yet a roadmap item. Current DVT solutions operate at the application layer, and native integration would require significant research and development.",
+              },
+            ].map((faq, i) => (
+              <details key={i} style={{ backgroundColor: '#161b22', border: '1px solid #30363d', borderRadius: '8px', overflow: 'hidden' }}>
+                <summary style={{
+                  cursor: 'pointer',
+                  padding: '1.25rem 1.5rem',
+                  color: '#e6edf3',
+                  fontWeight: 500,
+                  listStyle: 'none',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  minHeight: '44px',
+                  userSelect: 'none',
+                }}>
+                  {faq.q}
+                  <span style={{ color: '#8b949e', marginLeft: '1rem', flexShrink: 0 }}>▼</span>
+                </summary>
+                <p style={{ ...pStyle, padding: '0 1.5rem 1.25rem 1.5rem', marginBottom: 0 }}>
+                  {faq.a}
+                </p>
+              </details>
+            ))}
           </div>
         </section>
 
@@ -1047,6 +1066,14 @@ export default function DVTGuidePage() {
 
         {/* Back to Top */}
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </main>
   );

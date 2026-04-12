@@ -5,6 +5,8 @@ import BackToTop from '@/components/BackToTop';
 import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Crypto IRA Guide 2026: Bitcoin & Crypto Retirement Accounts',
@@ -219,6 +221,16 @@ export default function CryptoRetirementIRAGuidePage() {
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>
             A crypto IRA is an Individual Retirement Account designed to hold cryptocurrency assets like Bitcoin, Ethereum, and other digital assets. Instead of traditional investments like stocks and bonds, your IRA holds digital assets that you believe will grow over time. The account structure remains exactly the same as a traditional IRA—you get tax advantages, contribution limits, and withdrawal rules—but the underlying assets are cryptocurrencies.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>
             The key innovation is that a qualified crypto custodian holds your digital assets on your behalf. Unlike self-custody where you hold your own private keys, a crypto custodian maintains professional-grade security infrastructure including cold storage, insurance, and regulatory compliance. This allows IRAs to hold crypto without you needing to manage private keys yourself.
@@ -985,5 +997,15 @@ export default function CryptoRetirementIRAGuidePage() {
         <BackToTop />
       </div>
     </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={11}
+          section="learn"
+        />
+
   );
 }

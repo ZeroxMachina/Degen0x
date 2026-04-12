@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `How to Invest in Monero (XMR) ${CURRENT_YEAR} - Complete Guide`,
@@ -46,6 +48,16 @@ export default function MoneroPage() {
           <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">No hard cap (tail emission: 0.6 XMR/block)</p></div>
           <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Proof of Work (RandomX)</p></div>
         </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
       </div>
 
       <section className="mb-12">
@@ -58,6 +70,16 @@ export default function MoneroPage() {
           Ring Confidential Transactions (RingCT). This makes Monero fungible, meaning every XMR
           is interchangeable and cannot be tainted by its transaction history.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We are long-term Bitcoin and Ethereum believers. Our analysis of other assets applies the same rigorous framework regardless of personal conviction.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)]">
           Monero uses the RandomX proof-of-work algorithm, specifically designed to be efficient on
           consumer CPUs and resistant to ASIC mining. This promotes mining decentralization, as

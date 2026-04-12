@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "DeFi Liquidation Protection Guide 2026: Tools & Strategies | degen0x",
@@ -120,6 +122,16 @@ export default function LiquidationProtectionPage() {
               </span>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={8}
+          section="learn"
+        />
+
         </div>
       </div>
 
@@ -134,6 +146,16 @@ export default function LiquidationProtectionPage() {
           <p className="text-[#8b949e] mb-4 leading-relaxed">
             A DeFi liquidation is the forced closure of a borrowing position when collateral value falls below the protocol's required threshold. Unlike traditional finance where humans decide liquidations, blockchain-based protocols execute them automatically through smart contracts — no mercy, no exceptions, just code.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
           <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-6">
             <h3 className="font-semibold text-[#e6edf3] mb-4">The Health Factor: Your Safety Metric</h3>

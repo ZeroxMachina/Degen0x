@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -26,7 +28,10 @@ export const metadata: Metadata = {
     description: 'Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS risks.',
     image: 'https://degen0x.com/og-restaking-eigenlayer.svg',
   },
-};
+,
+  alternates: {
+    canonical: 'https://degen0x.com/learn/restaking-eigenlayer-guide-2026',
+  }};
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -95,6 +100,12 @@ const structuredData = {
   },
 };
 
+const h1Style: React.CSSProperties = { fontSize: 36, fontWeight: 800, marginBottom: 16, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.2 };
+const h2Style: React.CSSProperties = { fontSize: 24, fontWeight: 700, marginTop: 40, marginBottom: 16, color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12 };
+const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16, display: 'inline-block' };
+const infoBoxStyle: React.CSSProperties = { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
+
+
 export default function RestakingEigenLayerGuide() {
   const tableOfContents = [
     { id: 'what-is-restaking', title: 'What Is Restaking?' },
@@ -110,7 +121,7 @@ export default function RestakingEigenLayerGuide() {
 
   const infoBoxStyle = {
     background: '#161b22',
-    border: '1px solid #30363d',
+    border: '1px solid #30363d', borderLeft: '3px solid #a78bfa', borderLeft: '3px solid #a78bfa',
     borderRadius: 12,
     padding: 20,
     marginBottom: 24,
@@ -132,7 +143,7 @@ export default function RestakingEigenLayerGuide() {
     fontWeight: 700,
     marginTop: 40,
     marginBottom: 16,
-    color: '#e6edf3',
+    color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12,
   };
 
   const badgeStyle = {
@@ -183,7 +194,7 @@ export default function RestakingEigenLayerGuide() {
           <span style={{ margin: '0 6px' }}>›</span>
           <a href="/learn" style={{ color: '#8b949e', textDecoration: 'none' }}>Learn</a>
           <span style={{ margin: '0 6px' }}>›</span>
-          <span style={{ color: '#c9d1d9' }}>Restaking & EigenLayer Guide</span>
+          <span style={{ color: '#c9d1d9' }}>Restaking &amp; EigenLayer Guide</span>
         </nav>
 
         {/* Header Section */}
@@ -193,7 +204,7 @@ export default function RestakingEigenLayerGuide() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           </div>
 
-          <h1 style={h1Style}>Restaking & EigenLayer Guide 2026</h1>
+          <h1 style={h1Style}>Restaking &amp; EigenLayer Guide 2026</h1>
 
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Restaking transforms Ethereum staking from a passive operation into a multi-layer yield strategy. By April 2026, the restaking ecosystem has grown to over $28.6 billion in total value locked, with EigenLayer dominating at 93.9% market share. This guide explains how restaking works, compares the major platforms (EigenLayer, Symbiotic, Karak), and walks you through the risks and opportunities of turning your stake into a security resource for emerging protocols.
@@ -204,6 +215,16 @@ export default function RestakingEigenLayerGuide() {
             <span>Reading time: 14 min</span>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-01"
+          updatedDate="2026-04-01"
+          readingTime={14}
+          section="learn"
+        />
+
 
         {/* Table of Contents */}
         <nav aria-label="Table of Contents" style={{ ...infoBoxStyle, marginBottom: 32 }}>
@@ -224,8 +245,18 @@ export default function RestakingEigenLayerGuide() {
           <h2 style={h2Style}>1. What Is Restaking?</h2>
 
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            Restaking is the process of taking ETH that you've already staked on Ethereum (or staking derivatives you hold) and locking it again to provide security to additional protocols called Actively Validated Services (AVSs). Instead of your staked ETH only securing the Ethereum network, restaking lets it secure multiple services simultaneously—earning additional yield in the process.
+            Restaking is the process of taking ETH that you&apos;ve already staked on Ethereum (or staking derivatives you hold) and locking it again to provide security to additional protocols called Actively Validated Services (AVSs). Instead of your staked ETH only securing the Ethereum network, restaking lets it secure multiple services simultaneously—earning additional yield in the process.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
             Think of it like renting out collateral. Your 32 ETH (or equivalent in liquid staking tokens) earns base Ethereum staking rewards (~2.8-3.2% APY). Through restaking, that same collateral also provides security services to an oracle network, a bridge, or a transaction sequencer. For this additional security service, you earn a security premium on top of base staking rewards—bringing total yields to 3.8-6% depending on which AVS you choose.
@@ -234,7 +265,7 @@ export default function RestakingEigenLayerGuide() {
           <div style={infoBoxStyle}>
             <strong style={{ color: '#e6edf3' }}>Why This Matters</strong>
             <p style={{ marginTop: 12, marginBottom: 0, fontSize: 14 }}>
-              Ethereum's security is an underutilized asset. Before restaking, staked ETH only validated Ethereum blocks. Restaking unleashes this security to protect other protocols—creating new revenue streams for stakers and solving a capital efficiency problem for AVSs that need external security. This creates a win-win: stakers earn more, AVSs get secure infrastructure faster.
+              Ethereum&apos;s security is an underutilized asset. Before restaking, staked ETH only validated Ethereum blocks. Restaking unleashes this security to protect other protocols—creating new revenue streams for stakers and solving a capital efficiency problem for AVSs that need external security. This creates a win-win: stakers earn more, AVSs get secure infrastructure faster.
             </p>
           </div>
 
@@ -253,17 +284,17 @@ export default function RestakingEigenLayerGuide() {
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Native Restaking</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            If you're running your own Ethereum validator, you can point your validator credentials directly at EigenLayer. Your validator simultaneously validates Ethereum blocks and AVS consensus. This is the most direct form of restaking but requires running validator infrastructure. You assume full responsibility for double slashing if an AVS commits malfeasance.
+            If you&apos;re running your own Ethereum validator, you can point your validator credentials directly at EigenLayer. Your validator simultaneously validates Ethereum blocks and AVS consensus. This is the most direct form of restaking but requires running validator infrastructure. You assume full responsibility for double slashing if an AVS commits malfeasance.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Liquid Staking Token (LST) Restaking</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            More commonly, people restake via liquid staking tokens. Deposit your stETH (Lido), cbETH (Coinbase), or other LST into EigenLayer's smart contracts. You receive eETH (via ether.fi) or other receipt tokens representing your restaked position. EigenLayer operators run the validation software on your behalf. You earn base LST yields plus restaking yields, but you're trusting the operator with your stake.
+            More commonly, people restake via liquid staking tokens. Deposit your stETH (Lido), cbETH (Coinbase), or other LST into EigenLayer&apos;s smart contracts. You receive eETH (via ether.fi) or other receipt tokens representing your restaked position. EigenLayer operators run the validation software on your behalf. You earn base LST yields plus restaking yields, but you&apos;re trusting the operator with your stake.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Liquid Restaking Token (LRT) Path</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            The newest and most accessible path: deposit ETH into an LRT like ether.fi's eETH, KelpDAO's rsETH, or Puffer's pufETH. These protocols bundle your ETH with others, deposit into EigenLayer, delegate across multiple operators and AVSs, and you receive a liquid token. You can use this token in DeFi (lending, liquidity pools, derivatives) while earning restaking yield passively. This abstracts away operator selection and maximizes composability.
+            The newest and most accessible path: deposit ETH into an LRT like ether.fi&apos;s eETH, KelpDAO&apos;s rsETH, or Puffer&apos;s pufETH. These protocols bundle your ETH with others, deposit into EigenLayer, delegate across multiple operators and AVSs, and you receive a liquid token. You can use this token in DeFi (lending, liquidity pools, derivatives) while earning restaking yield passively. This abstracts away operator selection and maximizes composability.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>The Operator Delegation Model</h3>
@@ -274,7 +305,7 @@ export default function RestakingEigenLayerGuide() {
           <div style={infoBoxStyle}>
             <strong style={{ color: '#e6edf3' }}>The Operator Risk Tradeoff</strong>
             <p style={{ marginTop: 12, marginBottom: 0, fontSize: 14 }}>
-              By delegating to an operator, you're outsourcing validation to a professional. This lowers your operational burden—you don't run infrastructure. But you're trusting the operator's competence and reliability. Large, established operators (like Coinbase's validators or professional staking pools) are lower-risk, though they may take larger commission. Smaller operators might offer higher yields if you bet on their uptime.
+              By delegating to an operator, you&apos;re outsourcing validation to a professional. This lowers your operational burden—you don&apos;t run infrastructure. But you&apos;re trusting the operator&apos;s competence and reliability. Large, established operators (like Coinbase&apos;s validators or professional staking pools) are lower-risk, though they may take larger commission. Smaller operators might offer higher yields if you bet on their uptime.
             </p>
           </div>
         </section>
@@ -284,7 +315,7 @@ export default function RestakingEigenLayerGuide() {
           <h2 style={h2Style}>3. The 2026 Restaking Market Landscape</h2>
 
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            Restaking has matured dramatically in 2026. The ecosystem now supports over $28.6 billion in total value locked across three major platforms, with hundreds of AVSs competing for security. Here's the current market share breakdown:
+            Restaking has matured dramatically in 2026. The ecosystem now supports over $28.6 billion in total value locked across three major platforms, with hundreds of AVSs competing for security. Here&apos;s the current market share breakdown:
           </p>
 
           <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', marginBottom: 24 }}>
@@ -321,17 +352,17 @@ export default function RestakingEigenLayerGuide() {
           </div>
 
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            EigenLayer's dominance reflects its first-mover advantage and mature ecosystem. It launched restaking in 2023, built institutional-grade infrastructure, and established relationships with the largest Ethereum operators and AVSs. The EIGEN token, issued in 2024, incentivizes further adoption and operator participation.
+            EigenLayer&apos;s dominance reflects its first-mover advantage and mature ecosystem. It launched restaking in 2023, built institutional-grade infrastructure, and established relationships with the largest Ethereum operators and AVSs. The EIGEN token, issued in 2024, incentivizes further adoption and operator participation.
           </p>
 
           <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
-            Symbiotic and Karak are challengers with differentiated approaches. Symbiotic emphasizes modularity and permissionlessness—anyone can launch an AVS with custom slashing conditions. Karak focuses on multi-chain restaking, allowing stakers to secure protocols on Solana, Polygon, and other chains. Competition is healthy; it's driving innovation and pushing yields higher as platforms compete for stake.
+            Symbiotic and Karak are challengers with differentiated approaches. Symbiotic emphasizes modularity and permissionlessness—anyone can launch an AVS with custom slashing conditions. Karak focuses on multi-chain restaking, allowing stakers to secure protocols on Solana, Polygon, and other chains. Competition is healthy; it&apos;s driving innovation and pushing yields higher as platforms compete for stake.
           </p>
 
           <div style={infoBoxStyle}>
             <strong style={{ color: '#e6edf3' }}>Why EigenLayer Dominates</strong>
             <p style={{ marginTop: 12, marginBottom: 0, fontSize: 14 }}>
-              Network effects are powerful. More restakers attract more AVSs. More AVSs attract more developers building infrastructure. EigenLayer's lead is self-reinforcing, but not insurmountable. Symbiotic's permissionless model could attract AVSs frustrated with EigenLayer's governance, and Karak's multi-chain angle appeals to protocols wanting security across chains. By end-of-2026, expect this market to grow to $60B+ TVL.
+              Network effects are powerful. More restakers attract more AVSs. More AVSs attract more developers building infrastructure. EigenLayer&apos;s lead is self-reinforcing, but not insurmountable. Symbiotic&apos;s permissionless model could attract AVSs frustrated with EigenLayer&apos;s governance, and Karak&apos;s multi-chain angle appeals to protocols wanting security across chains. By end-of-2026, expect this market to grow to $60B+ TVL.
             </p>
           </div>
         </section>
@@ -341,22 +372,22 @@ export default function RestakingEigenLayerGuide() {
           <h2 style={h2Style}>4. EigenLayer Deep Dive</h2>
 
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            EigenLayer pioneered restaking and remains the ecosystem leader. Understanding EigenLayer's architecture is critical to evaluating restaking opportunities.
+            EigenLayer pioneered restaking and remains the ecosystem leader. Understanding EigenLayer&apos;s architecture is critical to evaluating restaking opportunities.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Native vs LST Restaking</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            EigenLayer supports both paths. Native restakers point their Ethereum validator credentials to EigenLayer's contracts, directly exposing their stake to AVS slashing. LST restakers deposit stETH, cbETH, or other liquid staking tokens. LST restaking is more popular (70%+ of EigenLayer TVL) because it requires no validator infrastructure—you can start with as little as 0.01 ETH worth of tokens.
+            EigenLayer supports both paths. Native restakers point their Ethereum validator credentials to EigenLayer&apos;s contracts, directly exposing their stake to AVS slashing. LST restakers deposit stETH, cbETH, or other liquid staking tokens. LST restaking is more popular (70%+ of EigenLayer TVL) because it requires no validator infrastructure—you can start with as little as 0.01 ETH worth of tokens.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, margintop: 20, marginBottom: 12, color: '#e6edf3' }}>AVS Ecosystem Growth</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            EigenLayer's AVS ecosystem has expanded dramatically. Early AVSs like EigenDA (a data availability service for rollups) prove the model works. Oracle networks (bringing price feeds on-chain), bridges (cross-chain communication), sequencers (ordering transactions), and verification services are all building AVSs. By April 2026, over 400 registered AVSs are live or in testnet, covering consensus, data availability, light client, and other service types.
+            EigenLayer&apos;s AVS ecosystem has expanded dramatically. Early AVSs like EigenDA (a data availability service for rollups) prove the model works. Oracle networks (bringing price feeds on-chain), bridges (cross-chain communication), sequencers (ordering transactions), and verification services are all building AVSs. By April 2026, over 400 registered AVSs are live or in testnet, covering consensus, data availability, light client, and other service types.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>ELIP-12 and the Incentives Committee (Q1 2026)</h3>
           <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
-            EigenLayer's governance voted in Q1 2026 to launch an Incentives Committee via ELIP-12. This committee will direct EIGEN token emissions toward fee-generating AVSs, moving away from pure incentive-driven growth toward sustainable, fee-based models. AVSs generating real revenue from users—through data services, oracle fees, or sequencer rewards—will receive EIGEN incentives to bootstrap operators. This shift is crucial: it means high-quality, revenue-generating AVSs will increasingly compete for stake based on real economics, not just token emissions.
+            EigenLayer&apos;s governance voted in Q1 2026 to launch an Incentives Committee via ELIP-12. This committee will direct EIGEN token emissions toward fee-generating AVSs, moving away from pure incentive-driven growth toward sustainable, fee-based models. AVSs generating real revenue from users—through data services, oracle fees, or sequencer rewards—will receive EIGEN incentives to bootstrap operators. This shift is crucial: it means high-quality, revenue-generating AVSs will increasingly compete for stake based on real economics, not just token emissions.
           </p>
 
           <div style={infoBoxStyle}>
@@ -372,7 +403,7 @@ export default function RestakingEigenLayerGuide() {
           <h2 style={h2Style}>5. EigenLayer vs Symbiotic vs Karak</h2>
 
           <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
-            Three major restaking platforms dominate the market, each with distinct philosophies and strengths. Here's how they compare:
+            Three major restaking platforms dominate the market, each with distinct philosophies and strengths. Here&apos;s how they compare:
           </p>
 
           <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', marginBottom: 24 }}>
@@ -433,7 +464,7 @@ export default function RestakingEigenLayerGuide() {
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Symbiotic: The Permissionless Challenger</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            Symbiotic takes a radical permissionless approach: anyone can launch an AVS with custom slashing conditions. This enables faster AVS innovation but increases risk—you might restake to an AVS designed by a team you've never heard of. Symbiotic is building broader asset support (not just ETH LSTs). Yields are slightly higher (4.2-5.8%) due to higher risk. Best for sophisticated restakers willing to research each AVS.
+            Symbiotic takes a radical permissionless approach: anyone can launch an AVS with custom slashing conditions. This enables faster AVS innovation but increases risk—you might restake to an AVS designed by a team you&apos;ve never heard of. Symbiotic is building broader asset support (not just ETH LSTs). Yields are slightly higher (4.2-5.8%) due to higher risk. Best for sophisticated restakers willing to research each AVS.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Karak: Multi-Chain Focus</h3>
@@ -444,14 +475,14 @@ export default function RestakingEigenLayerGuide() {
           <div style={infoBoxStyle}>
             <strong style={{ color: '#e6edf3' }}>Platform Selection Strategy</strong>
             <p style={{ marginTop: 12, marginBottom: 0, fontSize: 14 }}>
-              Conservative investors: start with EigenLayer's major AVSs (EigenDA, high-reputation oracle networks). Aggressive investors: diversify across EigenLayer (core), Symbiotic (emerging AVSs), and Karak (multi-chain). Yields vary by platform and AVS, but competitive dynamics are pushing average restaking yields toward 5% as market matures.
+              Conservative investors: start with EigenLayer&apos;s major AVSs (EigenDA, high-reputation oracle networks). Aggressive investors: diversify across EigenLayer (core), Symbiotic (emerging AVSs), and Karak (multi-chain). Yields vary by platform and AVS, but competitive dynamics are pushing average restaking yields toward 5% as market matures.
             </p>
           </div>
         </section>
 
         {/* Section 6: Yield & Economics */}
         <section id="yield-economics" style={{ scrollMarginTop: 24 }}>
-          <h2 style={h2Style}>6. Yield & Economics of Restaking</h2>
+          <h2 style={h2Style}>6. Yield &amp; Economics of Restaking</h2>
 
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
             Understanding restaking yields requires breaking down the component parts:
@@ -459,7 +490,7 @@ export default function RestakingEigenLayerGuide() {
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Base Ethereum Staking Yield</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            All restaking strategies earn base Ethereum staking rewards: 2.8-3.2% APY. This comes from Ethereum block proposals and attestations. As Ethereum's MEV (maximal extractable value) environment changes, base staking rewards fluctuate. Higher network activity increases base yield; lower activity decreases it. This is your "floor" return.
+            All restaking strategies earn base Ethereum staking rewards: 2.8-3.2% APY. This comes from Ethereum block proposals and attestations. As Ethereum&apos;s MEV (maximal extractable value) environment changes, base staking rewards fluctuate. Higher network activity increases base yield; lower activity decreases it. This is your "floor" return.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>AVS Fees and Token Emissions</h3>
@@ -500,7 +531,7 @@ export default function RestakingEigenLayerGuide() {
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Operator Risk</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            By delegating to an operator, you're trusting their technical competence, uptime, and integrity. A poorly-run operator might fail to submit attestations, triggering AVS slashing. Or an operator might lose their private keys, freezing your stake. Research operators thoroughly—look at validator history, infrastructure redundancy, team reputation. Centralized operators (Coinbase, Lido) are lower-risk but more competitive on yield.
+            By delegating to an operator, you&apos;re trusting their technical competence, uptime, and integrity. A poorly-run operator might fail to submit attestations, triggering AVS slashing. Or an operator might lose their private keys, freezing your stake. Research operators thoroughly—look at validator history, infrastructure redundancy, team reputation. Centralized operators (Coinbase, Lido) are lower-risk but more competitive on yield.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Smart Contract Risk</h3>
@@ -536,19 +567,19 @@ export default function RestakingEigenLayerGuide() {
           <h2 style={h2Style}>8. Getting Started with Restaking</h2>
 
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            Ready to restake? Here's the step-by-step path based on your comfort level:
+            Ready to restake? Here&apos;s the step-by-step path based on your comfort level:
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Step 1: Choose Your Path</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            <strong>Conservative (Recommended for newcomers):</strong> Use a Liquid Restaking Token (LRT) like ether.fi's eETH or KelpDAO's rsETH. Deposit ETH, receive eETH/rsETH, and earn yield passively. The LRT protocol handles operator selection and AVS diversification. Fees are baked in, but you get professional management.<br/>
+            <strong>Conservative (Recommended for newcomers):</strong> Use a Liquid Restaking Token (LRT) like ether.fi&apos;s eETH or KelpDAO&apos;s rsETH. Deposit ETH, receive eETH/rsETH, and earn yield passively. The LRT protocol handles operator selection and AVS diversification. Fees are baked in, but you get professional management.<br/>
             <strong>Intermediate:</strong> Restake your existing stETH (Lido) or cbETH (Coinbase) directly into EigenLayer. Access a wider AVS ecosystem but manage operator delegation yourself.<br/>
             <strong>Advanced:</strong> Run a solo validator and native restake. Full control, full responsibility. Only suitable if you understand validator infrastructure and slashing mechanics.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Step 2: Choose Your Platform</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            <strong>EigenLayer:</strong> Go to https://www.eigenlayer.xyz/. If using an LST, deposit into EigenLayer's staking contracts. Select operators (Coinbase, Lido, Blockdaemon, Stakefish). Optionally select specific AVSs or auto-delegate to the platform's recommended set.<br/>
+            <strong>EigenLayer:</strong> Go to https://www.eigenlayer.xyz/. If using an LST, deposit into EigenLayer&apos;s staking contracts. Select operators (Coinbase, Lido, Blockdaemon, Stakefish). Optionally select specific AVSs or auto-delegate to the platform&apos;s recommended set.<br/>
             <strong>Symbiotic:</strong> Go to https://symbiotic.fi/. Deposit LST tokens, choose operators, select from 50+ permissionless AVSs. Higher expected yields but requires more research.<br/>
             <strong>Karak:</strong> Go to https://karak.io/. Deposit cross-chain assets, select multi-chain operators. Best if you want exposure to Solana, Polygon, or other chain validators.
           </p>
@@ -560,12 +591,12 @@ export default function RestakingEigenLayerGuide() {
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Step 4: Diversify Across Operators and AVSs</h3>
           <p style={{ marginBottom: 16, lineHeight: 1.8 }}>
-            Don't put 100% of your restake with one operator or AVS. Spread across 3-5 operators (e.g., Coinbase, Lido, Stakefish, Blockdaemon, Consensys). Monitor which AVSs are generating real revenue (EigenDA is proven; newer AVSs are riskier). Use tools like https://www.staking.rewards or your platform's dashboard to track operator and AVS returns.
+            Don&apos;t put 100% of your restake with one operator or AVS. Spread across 3-5 operators (e.g., Coinbase, Lido, Stakefish, Blockdaemon, Consensys). Monitor which AVSs are generating real revenue (EigenDA is proven; newer AVSs are riskier). Use tools like https://www.staking.rewards or your platform&apos;s dashboard to track operator and AVS returns.
           </p>
 
           <h3 style={{ fontSize: 18, fontWeight: 600, marginTop: 20, marginBottom: 12, color: '#e6edf3' }}>Step 5: Consider DeFi Composability</h3>
           <p style={{ marginBottom: 24, lineHeight: 1.8 }}>
-            If you're using an LRT, explore DeFi opportunities. Deposit eETH into Aave or Compound to earn lending yield (2-3% APY) on top of restaking yield. Or provide liquidity on Uniswap (eETH/ETH pair) for swap fees. These add 0.5-2% APY but introduce smart contract risk. Calculate the fee-to-yield ratio carefully before adding complexity.
+            If you&apos;re using an LRT, explore DeFi opportunities. Deposit eETH into Aave or Compound to earn lending yield (2-3% APY) on top of restaking yield. Or provide liquidity on Uniswap (eETH/ETH pair) for swap fees. These add 0.5-2% APY but introduce smart contract risk. Calculate the fee-to-yield ratio carefully before adding complexity.
           </p>
 
           <div style={infoBoxStyle}>
@@ -683,6 +714,22 @@ export default function RestakingEigenLayerGuide() {
           </p>
         </section>
       </div>
-    </article>
+    
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

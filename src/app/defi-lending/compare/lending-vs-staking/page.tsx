@@ -42,6 +42,16 @@ export default function LendingVsStakingPage() {
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0f2e', border: '1px solid #3b1f5e', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>⚠️</span>
+            <strong style={{ color: '#c084fc', fontSize: 15 }}>Risk Assessment</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our DeFi researchers monitor governance proposals and treasury health, not just headline rates. A protocol's governance decisions reveal more than its TVL.
+          </p>
+        </div>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Yield Sources</h3>
         <p className="text-[var(--color-text-secondary)]">Lending yields come from borrower interest payments, which are driven by demand for leverage and liquidity. These yields fluctuate with market activity. Staking yields come from blockchain validation rewards, which are more predictable and tied to network monetary policy. ETH staking currently yields around 3-4% APY from protocol issuance plus tips. The stability of staking yields versus the variability of lending yields makes them complementary in a portfolio.</p>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Liquid Staking Synergy</h3>

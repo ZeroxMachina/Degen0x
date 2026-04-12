@@ -86,6 +86,16 @@ export default function EtherfiCashPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Ether.fi Cash is a unique financial product combining a Visa/Mastercard debit card with restaking yield. You deposit ETH into Ether.fi's restaking protocol, which generates yield that funds cashback rewards on card transactions. Spend crypto anywhere cards are accepted while your staked ETH earns returns.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Ether.fi Cash bridges CeFi payment UX with DeFi yield generation. No separate banking account needed—your ETH is always accessible, and any rewards from restaking are channeled into your cashback rewards, creating a virtuous cycle of spending and earning.
           </p>

@@ -1,34 +1,42 @@
 [
   {
-    "id": "feed-2026-04-10-012",
+    "id": "feed-2026-04-12-001",
     "type": "news",
-    "title": "New: Aave vs Compound & Morpho Comparisons",
-    "message": "Side-by-side comparisons of the top DeFi lending protocols — rates, risks, and features.",
-    "actionUrl": "/defi-lending/compare/aave-vs-compound",
+    "title": "\ud83d\udcf0 Anthropic's Mythos AI Exposes Critical DeFi Security Flaws",
+    "message": "Anthropic's unreleased Mythos AI model discovered thousands of zero-day vulnerabilities in critical crypto infrastructure, prompting an emergency meeting between Treasury Secretary Bessent and bank CEOs.",
+    "actionUrl": "/news",
+    "date": "2026-04-12"
+  },
+  {
+    "id": "feed-2026-04-10-015",
+    "type": "news",
+    "title": "New: Best Crypto Presales 2026",
+    "message": "Our curated list of the most promising new crypto presales — vetted for legitimacy and upside potential.",
+    "actionUrl": "/investing/best-new-crypto-presales-2026",
     "date": "2026-04-10"
   },
   {
-    "id": "feed-2026-04-10-013",
+    "id": "feed-2026-04-10-016",
     "type": "news",
-    "title": "New: CeFi vs DeFi Lending Guide",
-    "message": "Understand the trade-offs between centralized and decentralized lending platforms.",
-    "actionUrl": "/defi-lending/compare/cefi-vs-defi-lending",
+    "title": "New: DCA vs Lump Sum Guide",
+    "message": "Dollar-cost averaging or lump sum? We break down when each crypto investing strategy wins.",
+    "actionUrl": "/investing/crypto-dollar-cost-averaging-vs-lump-sum",
+    "date": "2026-04-10"
+  },
+  {
+    "id": "feed-2026-04-10-017",
+    "type": "system",
+    "title": "5 New Investing Guides Published",
+    "message": "Presales, DCA vs lump sum, infrastructure tokens, DePIN, and restaking guides now live.",
+    "actionUrl": "/investing/best-new-crypto-presales-2026",
     "date": "2026-04-10"
   },
   {
     "id": "feed-2026-04-10-014",
-    "type": "news",
-    "title": "New: MakerDAO Loans Review",
-    "message": "Full review of MakerDAO's crypto lending — collateral types, rates, and governance.",
-    "actionUrl": "/crypto-loans/reviews/makerdao",
-    "date": "2026-04-10"
-  },
-  {
-    "id": "feed-2026-04-10-015",
     "type": "system",
-    "title": "Crypto.com vs Bybit Card Comparison",
-    "message": "New head-to-head comparison of two popular crypto debit cards.",
-    "actionUrl": "/crypto-cards/compare/crypto-com-vs-bybit-card",
+    "title": "5 More Investing Guides Live",
+    "message": "AI crypto, undervalued tokens, gaming tokens, RWA picks, and whale watching guides now published.",
+    "actionUrl": "/investing/best-ai-crypto-projects-2026",
     "date": "2026-04-10"
   }
 ]

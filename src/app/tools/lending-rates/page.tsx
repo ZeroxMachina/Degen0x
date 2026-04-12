@@ -4,6 +4,8 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH, SITE_URL } from "@/lib/constant
 import LendingRatesClient from "./LendingRatesClient";
 import LendingCalculator from "./LendingCalculator";
 import ProtocolOverview from "./ProtocolOverview";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Crypto Lending Rates Comparison | DeFi & CeFi Yields | ${SITE_NAME}`,
@@ -69,6 +71,16 @@ export default function LendingRatesPage() {
                 <div className="text-sm text-[var(--color-text-secondary)]">{stat.label}</div>
                 <div className="text-lg font-bold text-[var(--color-text)]">{stat.value}</div>
               </div>
+
+        <AuthorAttribution
+          author="0xMachina"
+          role="Founder"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="tools"
+        />
+
             ))}
           </div>
         </div>

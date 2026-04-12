@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH, SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best DeFi Yield Aggregators of ${CURRENT_YEAR} — Top APY Protocols Compared`,
@@ -310,11 +312,31 @@ export default function YieldAggregatorsPage() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="defi-lending"
+        />
+
+
         <AffiliateDisclosure />
 
         {/* Quick Comparison Table */}
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Quick Comparison Table</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0f2e', border: '1px solid #3b1f5e', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>⚠️</span>
+            <strong style={{ color: '#c084fc', fontSize: 15 }}>Risk Assessment</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            APY is the bait, but smart contract risk is the hook. We prioritize protocols with multiple independent audits and active bug bounty programs.
+          </p>
+        </div>
           <div className="overflow-x-auto rounded-xl border border-[var(--color-border)]">
             <table className="w-full text-sm">
               <thead>

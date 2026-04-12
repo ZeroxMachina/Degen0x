@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Fully Onchain Gaming & Autonomous Worlds Guide 2026 | degen0x",
@@ -186,6 +188,16 @@ export default function FullyOnchainGamingGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: S.text2 }}>Updated March 2026 · 11 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-25"
+          updatedDate="2026-03-25"
+          readingTime={7}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: S.blue }}>Table of Contents</h2>
@@ -209,6 +221,16 @@ export default function FullyOnchainGamingGuide() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             A fully onchain game (FOCG) is a game where both the <strong>game state and game logic</strong> live entirely on the blockchain. Every action—character movement, resource gathering, combat calculations, inventory changes—is recorded and executed as transactions on-chain. The rules of the game are enforced by smart contracts, making them immutable and auditable. The entire game world is public, transparent, and tamper-proof.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             This differs fundamentally from traditional blockchain games (like early NFT games), where the game logic runs on centralized servers and only assets are tokenized onchain. In a FOCG, there is no central server dictating game rules. The blockchain itself is the game engine.
           </p>

@@ -1,7 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import BackToTop from '@/components/BackToTop';
-import Breadcrumb from '@/components/Breadcrumb';
+import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Flash Loans in DeFi Guide 2026 — How They Work | degen0x',
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     type: 'article',
     images: [
       {
-        url: 'https://degen0x.com/og-flash-loans-guide-2026.svg',
+        url: 'https://degen0x.com/og-flash-loans-2026.svg',
         width: 1200,
         height: 630,
         alt: 'Flash Loans in DeFi Guide 2026',
@@ -41,16 +42,19 @@ export const metadata: Metadata = {
     title: 'Flash Loans in DeFi Guide 2026 — How They Work',
     description:
       'Master flash loans: uncollateralized lending, atomic transactions, arbitrage opportunities, and security risks in 2026.',
-    images: ['https://degen0x.com/og-flash-loans-guide-2026.svg'],
+    images: ['https://degen0x.com/og-flash-loans-2026.svg'],
   },
-};
+,
+  alternates: {
+    canonical: 'https://degen0x.com/learn/flash-loans-defi-guide-2026',
+  }};
 
 const structuredData = {
   '@context': 'https://schema.org',
   '@type': ['Article', 'FAQPage'],
   headline: 'Flash Loans in DeFi Guide 2026 — Uncollateralized Lending Explained',
   description: 'Comprehensive guide to flash loans, atomic transactions, flash loan protocols, use cases, attacks, fees, and economics in decentralized finance 2026.',
-  image: 'https://degen0x.com/og-flash-loans-guide-2026.svg',
+  image: 'https://degen0x.com/og-flash-loans-2026.svg',
   author: {
     '@type': 'Organization',
     name: 'Degen0x',
@@ -133,7 +137,7 @@ export default function FlashLoansPage() {
   };
 
   const h1Style: React.CSSProperties = {
-    fontSize: '3.5rem',
+    fontSize: 'clamp(1.8rem, 5vw, 3.5rem)',
     fontWeight: 700,
     marginBottom: '20px',
     background: 'linear-gradient(135deg, #f59e0b, #ef4444)',
@@ -249,8 +253,11 @@ export default function FlashLoansPage() {
   const tocItemStyle: React.CSSProperties = {
     color: '#58a6ff',
     cursor: 'pointer',
-    marginBottom: '8px',
-    paddingLeft: '20px',
+    marginBottom: '4px',
+    padding: '8px 0 8px 20px',
+    minHeight: '44px',
+    display: 'flex',
+    alignItems: 'center',
   };
 
   const pStyle: React.CSSProperties = {
@@ -269,7 +276,7 @@ export default function FlashLoansPage() {
   };
 
   return (
-    <main style={pageStyle}>
+    <main id="top" style={pageStyle}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -277,11 +284,15 @@ export default function FlashLoansPage() {
 
       <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
-        <Breadcrumb items={[
-          { label: 'Home', href: '/' },
-          { label: 'Learn', href: '/learn' },
-          { label: 'Flash Loans in DeFi Guide' },
-        ]} />
+        <nav aria-label="Breadcrumb" style={breadcrumbStyle}>
+          <Link href="/" style={linkStyle}>Home</Link>
+          <span style={{ margin: '0 6px' }}>›</span>
+          <Link href="/learn" style={linkStyle}>
+            Learn
+          </Link>
+          <span style={{ margin: '0 6px' }}>›</span>
+          <span style={{ color: '#c9d1d9' }}>Flash Loans in DeFi Guide</span>
+        </nav>
 
         {/* Badges & Metadata */}
         <div>
@@ -297,7 +308,7 @@ export default function FlashLoansPage() {
         </div>
 
         <p style={pStyle}>
-          Flash loans represent one of DeFi's most powerful and contentious innovations: the ability to borrow
+          Flash loans represent one of DeFi&apos;s most powerful and contentious innovations: the ability to borrow
           any amount of capital without collateral, execute trades, and repay everything in a single atomic
           transaction block. Pioneered by Aave in 2020, flash loans have processed over $1 trillion in cumulative volume
           and enabled sophisticated arbitrage, liquidation, and refinancing strategies that generate billions in value
@@ -388,8 +399,8 @@ export default function FlashLoansPage() {
         </p>
 
         <div style={infoBoxStyle}>
-          <strong>Flash Loan Origins:</strong> Aave's Ethan Buchman published the idea in 2018. Implementation took two years
-          of careful design to ensure atomicity couldn't be exploited. The first flash loan transaction on Aave occurred
+          <strong>Flash Loan Origins:</strong> Aave&apos;s Ethan Buchman published the idea in 2018. Implementation took two years
+          of careful design to ensure atomicity couldn&apos;t be exploited. The first flash loan transaction on Aave occurred
           February 18, 2020, borrowing 7,500 ETH. Early use cases were niche (oracle manipulation research); by 2025, millions
           of flash loans executed daily for arbitrage and liquidations.
         </div>
@@ -417,14 +428,14 @@ export default function FlashLoansPage() {
             <strong>Initiate:</strong> Borrower calls the flash loan function, specifying the token and amount.
           </li>
           <li style={liStyle}>
-            <strong>Transfer:</strong> The protocol transfers the full amount to the borrower's contract.
+            <strong>Transfer:</strong> The protocol transfers the full amount to the borrower&apos;s contract.
           </li>
           <li style={liStyle}>
-            <strong>Execute:</strong> The borrower's contract executes arbitrary operations: trades, swaps, liquidations,
+            <strong>Execute:</strong> The borrower&apos;s contract executes arbitrary operations: trades, swaps, liquidations,
             collateral swaps, etc.
           </li>
           <li style={liStyle}>
-            <strong>Repay:</strong> The borrower's contract must call the repayment function, sending back the original amount
+            <strong>Repay:</strong> The borrower&apos;s contract must call the repayment function, sending back the original amount
             plus the fee (e.g., 0.05% for Aave).
           </li>
           <li style={liStyle}>
@@ -442,9 +453,9 @@ export default function FlashLoansPage() {
         <h3 style={h3Style}>Why Atomicity Matters</h3>
 
         <p style={pStyle}>
-          Atomicity is what makes flash loans safe for protocols. If flash loans didn't revert atomically, a borrower could take
+          Atomicity is what makes flash loans safe for protocols. If flash loans didn&apos;t revert atomically, a borrower could take
           funds and never repay them. But because of atomicity, there are only two outcomes: either the borrower repays (and keeps
-          any profit), or the transaction fails and everyone's state reverts. This eliminates default risk entirely. The protocol
+          any profit), or the transaction fails and everyone&apos;s state reverts. This eliminates default risk entirely. The protocol
           receives its fee only if the borrower successfully repays, ensuring alignment.
         </p>
 
@@ -502,7 +513,7 @@ export default function FlashLoansPage() {
 
         <div style={infoBoxStyle}>
           <strong>Protocol Choice:</strong> For arbitrage and liquidations targeting most tokens, Aave is the default. For large
-          Ethereum-specific loans, dYdX's zero fee is attractive. For Balancer users, Balancer pools offer zero fees. For Uniswap
+          Ethereum-specific loans, dYdX&apos;s zero fee is attractive. For Balancer users, Balancer pools offer zero fees. For Uniswap
           ecosystem plays, flash swaps integrate natively. Most profitable arbitragers use all four, selecting the cheapest source
           for each token.
         </div>
@@ -540,7 +551,7 @@ export default function FlashLoansPage() {
         <h3 style={h3Style}>Liquidations</h3>
 
         <p style={pStyle}>
-          When a borrower's collateral value drops below the required ratio, liquidators can execute liquidations. Traditionally, this
+          When a borrower&apos;s collateral value drops below the required ratio, liquidators can execute liquidations. Traditionally, this
           requires capital: liquidate $100,000 in collateral, receive a 5% bonus. Flash loans enable zero-capital liquidations. A
           liquidator borrows $100,000 via flash loan, performs the liquidation, receives $105,000 in collateral plus the 5% bonus, repays
           the $100,000 loan, and keeps the $5,000 profit. In 2026, most professional liquidations use flash loans, and flash loan liquidators
@@ -559,7 +570,7 @@ export default function FlashLoansPage() {
           <strong>Flash Loan Value:</strong> In 2026, flash loans generate estimated $50-100 billion in annual profit through arbitrage,
           liquidations, and refinancing. These profits flow to sophisticated traders and bots, not to the protocols offering flash loans
           (who capture only fees). This creates an incentive to support flash loans: protocols benefit from increased usage and TVL even
-          if they don't directly capture arbitrage profits.
+          if they don&apos;t directly capture arbitrage profits.
         </div>
 
         {/* Section 5: Flash Loan Attacks & Exploits */}
@@ -597,7 +608,7 @@ export default function FlashLoansPage() {
             The attacker borrows an excessive amount of another token (e.g., USDC) against the inflated Token X collateral.
           </li>
           <li style={liStyle}>
-            The attacker sells the Token X back on Uniswap at lower prices (doesn't matter, they keep the borrowed USDC).
+            The attacker sells the Token X back on Uniswap at lower prices (doesn&apos;t matter, they keep the borrowed USDC).
           </li>
           <li style={liStyle}>
             Repays the original $100 million flash loan and keeps the extra USDC.
@@ -666,7 +677,7 @@ export default function FlashLoansPage() {
         <div style={infoBoxStyle}>
           <strong>Flash Loans and Systemic Risk:</strong> Flash loan attacks are largely contained to poorly-designed protocols. Well-designed
           protocols in 2026 assume flash loans are possible and defend accordingly. The real systemic risk is not flash loans themselves but
-          the fragility of protocols that haven't accounted for them. As DeFi matures, flash-loan-resistant design becomes baseline security.
+          the fragility of protocols that haven&apos;t accounted for them. As DeFi matures, flash-loan-resistant design becomes baseline security.
         </div>
 
         {/* Section 6: Fees and Economics */}
@@ -683,11 +694,11 @@ export default function FlashLoansPage() {
           <table style={tableStyle} aria-label="Flash Loan Fees & Economics Comparison">
             <thead>
               <tr>
-                <th style={thStyle}>Protocol</th>
-                <th style={thStyle}>Fee</th>
-                <th style={thStyle}>$1M Loan Cost</th>
-                <th style={thStyle}>Liquidity</th>
-                <th style={thStyle}>Chains</th>
+                <th scope="col" style={thStyle}>Protocol</th>
+                <th scope="col" style={thStyle}>Fee</th>
+                <th scope="col" style={thStyle}>$1M Loan Cost</th>
+                <th scope="col" style={thStyle}>Liquidity</th>
+                <th scope="col" style={thStyle}>Chains</th>
               </tr>
             </thead>
             <tbody>
@@ -800,7 +811,7 @@ export default function FlashLoansPage() {
         <div style={{ ...infoBoxStyle, fontFamily: 'monospace', fontSize: '0.9rem' }}>
           <p style={{ margin: 0, marginBottom: '10px' }}>
             1. Call lendingPool.flashLoan(token, amount, receiver, params)<br />
-            2. LendingPool sends 'amount' to receiver contract<br />
+            2. LendingPool sends &apos;amount&apos; to receiver contract<br />
             3. LendingPool calls receiver.executeOperation(token, amount, fee, data)<br />
             4. In executeOperation:<br />
             &nbsp;&nbsp;a. Buy token on DEX-A<br />
@@ -838,7 +849,7 @@ export default function FlashLoansPage() {
         </ul>
 
         <div style={infoBoxStyle}>
-          <strong>Implementation Recommendation:</strong> Implementing flash loans from scratch is high-risk. Use audited templates, libraries (Aave's
+          <strong>Implementation Recommendation:</strong> Implementing flash loans from scratch is high-risk. Use audited templates, libraries (Aave&apos;s
           FlashLoanReceiverBase), or protocol-specific SDKs. Many projects outsource flash loan arbitrage to specialized bots (like 1inch, MEV-Protect)
           that handle complexity and security.
         </div>
@@ -849,7 +860,7 @@ export default function FlashLoansPage() {
         </h2>
 
         <p style={pStyle}>
-          Flash loans are likely to expand and deepen in DeFi's future. Several trends point to increased usage and sophistication.
+          Flash loans are likely to expand and deepen in DeFi&apos;s future. Several trends point to increased usage and sophistication.
         </p>
 
         <h3 style={h3Style}>Cross-Chain Flash Loans</h3>
@@ -885,7 +896,7 @@ export default function FlashLoansPage() {
         </p>
 
         <div style={infoBoxStyle}>
-          <strong>Flash Loan Future:</strong> Flash loans are unlikely to disappear; they're too valuable for arbitrage, liquidations, and refinancing.
+          <strong>Flash Loan Future:</strong> Flash loans are unlikely to disappear; they&apos;re too valuable for arbitrage, liquidations, and refinancing.
           Instead, expect flash loans to become more sophisticated: cross-chain, integrated into protocol infrastructure, subject to MEV protection,
           and potentially regulated. The fundamental power—enabling capital-free access to liquidity—is too valuable to abandon.
         </div>
@@ -1004,7 +1015,17 @@ export default function FlashLoansPage() {
           </p>
         </div>
       </div>
-      <BackToTop />
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={16}
+          section="learn"
+        />
+
+          <BackToTop />
     </main>
   );
 }

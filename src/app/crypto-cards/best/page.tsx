@@ -6,6 +6,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { cryptoCards } from "@/data/crypto-cards";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `15 Best Crypto Cards of ${CURRENT_YEAR} (Ranked & Reviewed)`,
@@ -158,6 +160,16 @@ export default function BestCryptoCardsPage() {
                     </ul>
                   </div>
                 </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="crypto-cards"
+        />
+
                 <div className="mt-4 flex gap-3">
                   <a
                     href={card.affiliateUrl}
@@ -186,6 +198,16 @@ export default function BestCryptoCardsPage() {
             We evaluate each crypto card across six key categories, each weighted based on
             importance to the average cardholder:
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a1a', border: '1px solid #134e4a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💳</span>
+            <strong style={{ color: '#2dd4bf', fontSize: 15 }}>Spending Smart</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We actually use these cards daily. The rewards rate advertised is rarely what you end up getting after fees, conversion spreads, and tier requirements.
+          </p>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Rewards Rate (30%)", desc: "Cashback percentage, reward token value, and consistency of earning rates across purchase categories." },

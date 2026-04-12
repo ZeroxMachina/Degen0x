@@ -31,7 +31,17 @@ export default function Page() {
         <p>Cardano&apos;s strength lies in its methodical, research-driven development process. Every protocol change undergoes peer review and formal verification before deployment. This approach results in fewer bugs and more predictable behavior but significantly slower feature delivery. Cardano&apos;s EUTXO model provides deterministic transaction outcomes — users know exactly what a transaction will cost and whether it will succeed before submitting it. The network boasts over 3,200 stake pools with on-chain governance through Project Catalyst, giving ADA holders direct voting power over treasury allocation and development priorities.</p>
         <p>Solana&apos;s advantage is execution speed in both technology and ecosystem growth. Sub-second finality and sub-penny fees enable applications impossible on slower chains — order-book DEXs, high-frequency trading, and real-time gaming. Solana&apos;s developer ecosystem has grown rapidly with strong momentum in DeFi, meme coins, DePIN, and consumer applications. The trade-off is occasional network instability and a more centralized validator set. For investors, Solana represents a higher-beta bet on smart contract platform adoption, while Cardano offers exposure to a more conservative, governance-focused approach with potentially slower but more sustainable growth.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/solana-vs-ethereum" className="text-blue-600 hover:underline">Solana vs Ethereum</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/solana-vs-ethereum" className="text-blue-600 hover:underline">Solana vs Ethereum</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

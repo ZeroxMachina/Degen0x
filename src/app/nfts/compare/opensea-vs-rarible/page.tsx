@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `OpenSea vs Rarible: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -68,6 +70,16 @@ export default function OpenSeaVsRariblePage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="nfts"
+        />
+
       <FAQSection faqs={[
         { question: "Does Rarible aggregate OpenSea listings?", answer: "Rarible does aggregate listings from other marketplaces including OpenSea, allowing you to browse and purchase cross-platform listings. This means you can access OpenSea's inventory through Rarible's interface while benefiting from Rarible's features." },
         { question: "Which has better multi-chain support?", answer: "OpenSea supports more blockchains overall, including Ethereum, Polygon, Solana, Arbitrum, Avalanche, BNB Chain, and Base. Rarible supports Ethereum, Polygon, and Tezos. If you need broad chain coverage, OpenSea has the advantage." },

@@ -6,6 +6,8 @@ import {
 } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "GENIUS Act Stablecoin Guide 2026: USDC, USDT & DeFi Impact",
@@ -144,6 +146,16 @@ export default function GeniusActStablecoinGuide() {
           <strong className="text-[#e6edf3]">July 17, 2025</strong>, ending years of regulatory
           ambiguity around the $200B+ stablecoin market.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           Before the GENIUS Act, stablecoin issuers operated in a patchwork of state-level
           regulations with no unified federal standard. The law changes that by establishing clear
@@ -235,6 +247,16 @@ export default function GeniusActStablecoinGuide() {
                 <span className="text-xs text-[#3fb950] font-medium">GENIUS Act Compliant</span>
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={6}
+          section="learn"
+        />
+
             <ul className="text-[#c9d1d9] text-sm space-y-2">
               <li>• Backed 1:1 by cash and short-term Treasuries</li>
               <li>• Circle has applied for federal nonbank status</li>

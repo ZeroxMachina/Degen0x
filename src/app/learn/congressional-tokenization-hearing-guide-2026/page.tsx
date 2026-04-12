@@ -105,6 +105,16 @@ export default function CongressionalTokenizationHearingPage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             On March 25, 2026, at 10:00 AM EDT in Room 2128 of the Rayburn House Office Building, Congress will hear directly from industry experts, regulators, and technologists about how blockchain can modernize capital markets. This isn&apos;t a theoretical discussion — it&apos;s about turning regulatory clarity into law.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Why now? Three catalysts converge: (1) the SEC/CFTC joint ruling on March 17, 2026 classified 16 digital commodities, removing a major regulatory bottleneck; (2) Nasdaq filed a proposed rule change in January 2026 to enable tokenized securities trading; (3) the tokenized RWA market has grown to $26.5B in on-chain value in just 18 months, proving demand for blockchain-native securities infrastructure.
           </p>
@@ -447,6 +457,26 @@ export default function CongressionalTokenizationHearingPage() {
         {/* ── Disclaimer ── */}
         <div style={{ background: `${S.yellow}08`, border: `1px solid ${S.yellow}25`, borderRadius: 12, padding: 20, fontSize: 13, color: S.text2, lineHeight: 1.7 }}>
           ⚠️ This guide is for informational purposes only. It is not legal or financial advice. Congressional hearings, proposed legislation, and regulatory actions are subject to change. Always conduct your own research before making investment decisions. Data sourced from public congressional records, SEC/CFTC announcements, and on-chain metrics as of March 25, 2026.
+        </div>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/bitcoin-dominance-chart-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Bitcoin Dominance Chart Live</a></li>
+            <li><a href="/tools/crypto-correlation-matrix" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Correlation Matrix</a></li>
+            <li><a href="/tools/crypto-profit-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Profit Calculator</a></li>
+            <li><a href="/tools/eth-burn-tracker-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Eth Burn Tracker Live</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
       <BackToTop />

@@ -7,6 +7,8 @@ import TableOfContents from "@/components/TableOfContents";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { STAKING_PLATFORMS, PASSIVE_INCOME_FAQS } from "@/data/investing";
 import { Product } from "@/lib/types";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto Passive Income Strategies ${CURRENT_YEAR} - Earn Yield`,
@@ -118,6 +120,16 @@ export default function BestPassiveIncomePage() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
       </section>
 
       <section id="risk-reward" className="mb-12">
@@ -129,6 +141,16 @@ export default function BestPassiveIncomePage() {
           risks including impermanent loss, token devaluation, and smart contract exploits.
           Be skeptical of any platform promising unusually high yields with no apparent risk.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We are long-term Bitcoin and Ethereum believers. Our analysis of other assets applies the same rigorous framework regardless of personal conviction.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)]">
           Start with the safest options and only move to higher-risk strategies as your
           understanding of DeFi grows. Never allocate more than you can afford to lose to

@@ -86,6 +86,16 @@ export default function LorenzoProtocolPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Lorenzo Protocol is a Bitcoin liquid staking infrastructure that brings Bitcoin into the DeFi ecosystem. Users deposit Bitcoin and receive stBTC, a liquid token representing their Bitcoin staking position. Unlike Babylon's native Bitcoin staking, Lorenzo creates a wrapped staking asset that can be used across DeFi platforms.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Lorenzo's stBTC is designed to be composable with DeFi protocols—you can use it as collateral, provide liquidity, or earn additional yield on layer 2 platforms. The underlying Bitcoin is secured through a combination of restaking and distributed validator networks.
           </p>

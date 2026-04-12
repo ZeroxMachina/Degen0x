@@ -237,6 +237,16 @@ export default function PeaqDeginRoboticsGuidePage() {
           <p style={{ fontSize: "16.5px", color: S.text, lineHeight: 1.8, marginBottom: 16 }}>
             The machine economy is a paradigm where machines, vehicles, robots, and IoT devices transact autonomously without human intermediaries. A delivery drone pays landing fees. A solar panel sells excess energy to the grid. A warehouse robot compensates another robot for shared tooling. All in real time, trustlessly, on-chain.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
           <p style={{ fontSize: "16.5px", color: S.text, lineHeight: 1.8, marginBottom: 16 }}>
             This wasn't possible before crypto. Traditional payment systems require intermediaries — banks, payment processors — that charge fees, introduce latency, and demand KYC procedures. A micropayment of $0.001 for a robot accessing sensor data gets destroyed by processing fees. The transaction never makes economic sense.
@@ -707,6 +717,26 @@ export default function PeaqDeginRoboticsGuidePage() {
           >
             ↑ Back to Top
           </a>
+        </div>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/crypto-fear-greed-index-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Fear Greed Index Live</a></li>
+            <li><a href="/tools/crypto-volatility-index" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Volatility Index</a></li>
+            <li><a href="/tools/gas-price-estimator-multi-chain" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Gas Price Estimator Multi Chain</a></li>
+            <li><a href="/tools/token-unlocks-calendar" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Token Unlocks Calendar</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
     </main>

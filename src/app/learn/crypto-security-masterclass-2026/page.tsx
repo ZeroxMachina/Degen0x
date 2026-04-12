@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto Security Masterclass 2026: Complete Guide to Protecting Your Assets",
@@ -105,6 +107,16 @@ export default function CryptoSecurityMasterclassPage() {
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             A hardware wallet is a physical device that stores your private keys offline, making it immune to remote hacks, malware, and phishing attacks. For anyone holding more than $5,000 in crypto, a hardware wallet is non-negotiable.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <h3 style={{ fontSize: 16, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Top Hardware Wallets in 2026</h3>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
@@ -120,6 +132,16 @@ export default function CryptoSecurityMasterclassPage() {
                 <div style={{ fontSize: 12, color: S.text2, marginBottom: 8 }}>{w.price}</div>
                 <div style={{ fontSize: 12, color: S.text2 }}>{w.features}</div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-13"
+          updatedDate="2026-04-12"
+          readingTime={7}
+          section="learn"
+        />
+
             ))}
           </div>
 
@@ -631,6 +653,14 @@ export default function CryptoSecurityMasterclassPage() {
         {/* Disclaimer */}
         <div style={{ background: "#d2992215", border: "1px solid #d2992240", borderRadius: 10, padding: 14, marginTop: 32, fontSize: 12, color: S.yellow, lineHeight: 1.7 }}>
           ⚠️ <strong>Disclaimer:</strong> This guide is for educational purposes only. Cryptocurrency security is constantly evolving. Always stay updated on best practices. No security method is 100% foolproof. {SITE_NAME} is not responsible for lost funds or security breaches. When in doubt, consult a security expert.
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
     </main>

@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto ETF Options Trading Guide 2026: Regulatory Changes, Strategies & ETFs",
@@ -104,6 +106,16 @@ export default function CryptoETFOptionsTradingGuidePage() {
                 Institutional-grade hedging tools
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-23"
+          updatedDate="2026-04-12"
+          readingTime={9}
+          section="learn"
+        />
+
           </div>
 
           {/* Table of Contents */}
@@ -133,6 +145,16 @@ export default function CryptoETFOptionsTradingGuidePage() {
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             A crypto ETF option is a contract that gives you the right (but not obligation) to buy or sell shares of a cryptocurrency ETF at a predetermined price by a specific date. Options on crypto ETFs are identical to traditional equity options, but the underlying asset is a crypto fund instead of a tech stock.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
           <h3 style={{ fontSize: 16, fontWeight: 800, marginBottom: 12, marginTop: 24 }}>Why Crypto ETF Options Matter</h3>
           <div style={{ background: S.surface, border: `1px solid ${S.border}`, borderRadius: 10, padding: 16, marginBottom: 20 }}>
@@ -696,6 +718,14 @@ export default function CryptoETFOptionsTradingGuidePage() {
         {/* Disclaimer */}
         <div style={{ background: "#d2992215", border: "1px solid #d2992240", borderRadius: 10, padding: 14, fontSize: 12, color: S.yellow, lineHeight: 1.7 }}>
           ⚠️ <strong>Disclaimer:</strong> This guide is for educational purposes only. Options trading involves significant risk, including the potential loss of principal. Past performance does not guarantee future results. Crypto ETF options are leveraged instruments—understand the Greeks (delta, gamma, theta, vega) before trading. Always paper trade before risking real capital. {SITE_NAME} is not a financial advisor and does not provide investment recommendations. Consult a qualified financial advisor or options specialist before trading. Regulatory environment for crypto continues to evolve.
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
       <BackToTop />

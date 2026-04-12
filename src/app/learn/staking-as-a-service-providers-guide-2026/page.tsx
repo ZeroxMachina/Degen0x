@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Staking-as-a-Service Providers Compared 2026 — Lido, Kiln, Figment, P2P & More | degen0x",
@@ -161,6 +163,16 @@ export default function StakingServiceProvidersGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 2026 · 14 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-03-24"
+          readingTime={16}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav aria-label="Table of contents" style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -182,6 +194,16 @@ export default function StakingServiceProvidersGuide() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Staking-as-a-service is a managed infrastructure service that allows anyone to earn staking rewards without running validators themselves. Instead of managing hardware, maintaining uptime, monitoring exit queues, and handling all the operational complexity, you deposit your assets with a provider. They handle validator operations, claim rewards, and return earnings to you—minus their fee.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The staking landscape breaks down into three main models: <strong>Solo staking</strong> (you run your own validator—requires 32 ETH, technical knowledge, and constant monitoring), <strong>Liquid staking</strong> (deposit assets, receive a liquid token that accrues rewards automatically—Lido exemplifies this), and <strong>Staking services</strong> (deposit with a provider, they manage everything, you receive rewards directly or via a token).
           </p>

@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Onchain Forex & Stablecoin Diversity Guide 2026 — EURC, PYUSD, GHO & More | degen0x",
@@ -56,6 +58,16 @@ export default function OnchainForexStablecoinDiversityGuidePage() {
           <div style={{ marginTop: 12, fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 14 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-03-28"
+          readingTime={4}
+          section="learn"
+        />
+
+
         {/* Key Stats */}
         <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 32 }}>
           <h2 style={{ fontSize: 14, fontWeight: 700, marginBottom: 12, color: "#818cf8" }}>
@@ -104,6 +116,16 @@ export default function OnchainForexStablecoinDiversityGuidePage() {
             <p style={{ marginBottom: 16 }}>
               Stablecoins have evolved from a crypto niche to a backbone of global finance. In 2024, they settled more than $27 trillion in transaction value. By early 2026, that figure has nearly doubled to $52.9 trillion — surpassing both Visa and Mastercard combined. The total stablecoin market cap more than doubled between January 2023 and January 2026, crossing $308 billion.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
             <p style={{ marginBottom: 16 }}>
               USDT (Tether) and USDC (Circle) still dominate, commanding roughly 85% of total supply. But beneath that headline, the market is fragmenting in interesting ways. New categories have emerged: yield-bearing stablecoins that pay you just for holding them, protocol-native stablecoins issued by DeFi protocols, bank-issued stablecoins from traditional finance, and a growing wave of non-USD stablecoins pegged to euros, yen, and other currencies.
             </p>
@@ -407,6 +429,26 @@ export default function OnchainForexStablecoinDiversityGuidePage() {
           <div style={{ marginTop: 48, padding: 16, background: "#161b22", border: "1px solid #30363d", borderRadius: 8, fontSize: 12, color: "#8b949e", lineHeight: 1.6 }}>
             <strong>Disclaimer:</strong> This guide is for educational purposes only and does not constitute financial advice. Stablecoins carry risks including smart contract vulnerabilities, issuer insolvency, regulatory changes, and de-pegging events. Always do your own research and consider your risk tolerance before holding or using any stablecoin.
           </div>
+        </div>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/investing/best-defi-tokens-to-buy-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Defi Tokens To Buy 2026</a></li>
+            <li><a href="/investing/best-perpetual-dex-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Perpetual Dex Tokens</a></li>
+            <li><a href="/investing/crypto-60-40-portfolio-strategy" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto 60 40 Portfolio Strategy</a></li>
+            <li><a href="/investing/crypto-options-strategies-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Options Strategies Guide</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
     </div>

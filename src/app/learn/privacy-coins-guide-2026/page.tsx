@@ -6,6 +6,8 @@ import {
 } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Privacy Coins Guide 2026: Monero, Zcash & How They Work",
@@ -145,6 +147,16 @@ export default function PrivacyCoinsGuide2026() {
           transaction is permanently visible to anyone who checks the blockchain. Privacy coins break
           that link.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           This isn't about criminal activity — though that's the narrative that dominates headlines.
           It's about the same kind of financial privacy you take for granted when you pay cash: your
@@ -241,6 +253,16 @@ export default function PrivacyCoinsGuide2026() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={9}
+          section="learn"
+        />
+
 
         <div className="overflow-x-auto mb-6">
           <table className="w-full text-sm border-collapse">

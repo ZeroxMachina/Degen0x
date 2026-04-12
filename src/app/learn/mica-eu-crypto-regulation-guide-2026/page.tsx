@@ -3,6 +3,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'MiCA EU Crypto Regulation Guide 2026 | degen0x',
@@ -39,6 +41,7 @@ export const metadata: Metadata = {
     description:
       'Everything you need to know about EU MiCA regulation: stablecoin requirements, CASP licensing, USDT implications, and compliance timeline.',
     images: ['https://degen0x.com/og-mica-eu-crypto-regulation-guide-2026.svg'],
+    image: 'https://degen0x.com/og-mica-eu-crypto-regulation-guide-2026.svg',
   },
 };
 
@@ -341,6 +344,16 @@ export default function MiCAGuide() {
               protecting consumers through standardized capital requirements, custody
               safeguards, and operational standards.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
             <p style={pStyle}>
               The regulation was designed with three core objectives: financial stability,
               consumer protection, and market integrity. It applies to anyone offering
@@ -423,6 +436,16 @@ export default function MiCAGuide() {
                 by this date will be unable to legally operate in the EU.
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-23"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
           </section>
 
           <section id="stablecoin-rules" style={sectionStyle}>
@@ -1177,6 +1200,86 @@ export default function MiCAGuide() {
           </section>
 
           <section style={sectionStyle}>
+            <h2 style={h2Style}>FAQ Accordion</h2>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              {[
+                {
+                  q: 'What is MiCA and when did it come into effect?',
+                  a: 'MiCA (Markets in Crypto-Assets) is the EU\'s comprehensive crypto regulation framework. It fully came into application on December 30, 2024, completing a two-stage rollout that started with stablecoin rules in June 2024.',
+                },
+                {
+                  q: 'Why was USDT delisted from EU exchanges?',
+                  a: 'Tether did not seek CASP authorization in the EU and did not comply with stablecoin reserve requirements (60% must be held in European banks). Major exchanges including Coinbase, Binance, and Kraken delisted USDT to maintain compliance.',
+                },
+                {
+                  q: 'What are the main compliance deadlines for 2026?',
+                  a: 'By July 1, 2026, all CASPs (Crypto-Asset Service Providers) must maintain full compliance. Member states have varying grandfathering periods, with France, Malta, and Luxembourg offering 18-month transitions, while others like Germany, Austria, and Ireland have 12-month periods.',
+                },
+                {
+                  q: 'What alternatives to USDT are MiCA-compliant?',
+                  a: 'MiCA-compliant alternatives include USDC (Circle), EURC, and stasis EURS. These stablecoins meet all requirements including reserve backing, E-money token authorization, or credit institution licensing.',
+                },
+                {
+                  q: 'What exactly must stablecoin issuers do to comply?',
+                  a: 'Stablecoin issuers must publish detailed white papers, maintain full reserve assets backing all issued tokens, guarantee timely redemption at par value, and hold 60% of reserves in European banks or authorized European institutions.',
+                },
+                {
+                  q: 'Which exchanges have received CASP authorization?',
+                  a: '14 exchanges have received full CASP authorization including Binance France, Kraken Ireland, Coinbase Ireland, Bitstamp Luxembourg, and others. This authorization is essential for operating legally within the EU.',
+                },
+              ].map((faq, i) => (
+                <details
+                  key={i}
+                  style={{
+                    backgroundColor: '#161b22',
+                    border: '1px solid #30363d',
+                    borderRadius: '8px',
+                  }}
+                >
+                  <summary
+                    style={{
+                      cursor: 'pointer',
+                      padding: '20px',
+                      color: '#e6edf3',
+                      fontWeight: '600',
+                      fontSize: '15px',
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                      alignItems: 'center',
+                      minHeight: '44px',
+                      userSelect: 'none',
+                    }}
+                  >
+                    {faq.q}
+                    <span
+                      style={{
+                        color: '#8b949e',
+                        marginLeft: '16px',
+                        flexShrink: 0,
+                        transition: 'transform 0.2s ease',
+                      }}
+                    >
+                      ▼
+                    </span>
+                  </summary>
+                  <p
+                    style={{
+                      padding: '0 20px 20px 20px',
+                      color: '#c9d1d9',
+                      fontSize: '15px',
+                      lineHeight: '1.6',
+                      margin: '0',
+                      borderTop: '1px solid #30363d',
+                    }}
+                  >
+                    {faq.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </section>
+
+          <section style={sectionStyle}>
             <h2 style={h2Style}>Key Takeaways</h2>
             <ul style={ulStyle}>
               <li style={liStyle}>
@@ -1249,7 +1352,15 @@ export default function MiCAGuide() {
               </li>
             </ul>
           </section>
-        </article>
+        
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
       </div>
       <BackToTop />
     </>

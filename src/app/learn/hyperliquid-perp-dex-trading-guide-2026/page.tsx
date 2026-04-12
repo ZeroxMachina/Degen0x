@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Hyperliquid Guide 2026 — Perp DEX Trading & HYPE Token | degen0x',
@@ -47,7 +49,10 @@ export const metadata: Metadata = {
       'Trade perpetuals on Hyperliquid: 150+ markets, 50x leverage, zero-fee spot, sub-second finality, and HYPE token staking.',
     images: ['https://degen0x.com/og-hyperliquid-2026.svg'],
   },
-};
+,
+  alternates: {
+    canonical: 'https://degen0x.com/learn/hyperliquid-perp-dex-trading-guide-2026',
+  }};
 
 const structuredData = {
   '@context': 'https://schema.org',
@@ -128,6 +133,7 @@ export default function HyperliquidPage() {
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
     lineHeight: '1.6',
+    scrollBehavior: 'smooth',
   };
 
   const containerStyle: React.CSSProperties = {
@@ -331,7 +337,7 @@ export default function HyperliquidPage() {
         </div>
 
         <p style={pStyle}>
-          Hyperliquid has fundamentally changed crypto trading. Built as a dedicated L1 blockchain with sub-second finality and 200K+ transactions per second, it powers the fastest, most liquid perpetual futures exchange in crypto. With 150+ markets, zero-fee spot trading, 50x leverage across the board, and a native HYPE token that captures 97% of exchange fees, Hyperliquid has attracted 314K monthly active traders and controls 70%+ of the decentralized perp DEX market's open interest—totaling $4.17 trillion in cumulative volume. Whether you're a scalper hunting funding rates, a trend trader leveraging high-liquidity markets, or a yield farmer compounding HYPE staking rewards, Hyperliquid offers tools and scale that rival centralized exchanges while maintaining decentralized ownership. This guide walks you through protocol mechanics, trading strategies, tokenomics, and the ecosystem building on top of it.
+          Hyperliquid has fundamentally changed crypto trading. Built as a dedicated L1 blockchain with sub-second finality and 200K+ transactions per second, it powers the fastest, most liquid perpetual futures exchange in crypto. With 150+ markets, zero-fee spot trading, 50x leverage across the board, and a native HYPE token that captures 97% of exchange fees, Hyperliquid has attracted 314K monthly active traders and controls 70%+ of the decentralized perp DEX market&apos;s open interest—totaling $4.17 trillion in cumulative volume. Whether you&apos;re a scalper hunting funding rates, a trend trader leveraging high-liquidity markets, or a yield farmer compounding HYPE staking rewards, Hyperliquid offers tools and scale that rival centralized exchanges while maintaining decentralized ownership. This guide walks you through protocol mechanics, trading strategies, tokenomics, and the ecosystem building on top of it.
         </p>
 
         {/* Table of Contents */}
@@ -403,7 +409,7 @@ export default function HyperliquidPage() {
         </ul>
 
         <p style={pStyle}>
-          Hyperliquid competes directly with dYdX (which moved to its own Cosmos chain in late 2024) and Arbitrum-based perp protocols like GMX and Vertex. The key difference: Hyperliquid's own consensus layer eliminates the need for a parent chain's security model, giving it lower latency and higher throughput.
+          Hyperliquid competes directly with dYdX (which moved to its own Cosmos chain in late 2024) and Arbitrum-based perp protocols like GMX and Vertex. The key difference: Hyperliquid&apos;s own consensus layer eliminates the need for a parent chain&apos;s security model, giving it lower latency and higher throughput.
         </p>
 
         <div style={infoBoxStyle}>
@@ -416,7 +422,7 @@ export default function HyperliquidPage() {
         <h3 style={h3Style}>HyperBFT Consensus</h3>
 
         <p style={pStyle}>
-          HyperBFT is Hyperliquid's consensus mechanism, a variant of Byzantine Fault Tolerant (BFT) consensus optimized for trading. Instead of relying on energy-intensive Proof of Work (like Bitcoin) or staking-based consensus (like Ethereum), HyperBFT uses a validator set to produce blocks and finalize transactions. Key properties:
+          HyperBFT is Hyperliquid&apos;s consensus mechanism, a variant of Byzantine Fault Tolerant (BFT) consensus optimized for trading. Instead of relying on energy-intensive Proof of Work (like Bitcoin) or staking-based consensus (like Ethereum), HyperBFT uses a validator set to produce blocks and finalize transactions. Key properties:
         </p>
 
         <ul style={ulStyle}>
@@ -447,7 +453,7 @@ export default function HyperliquidPage() {
           The order book approach is familiar to traditional finance traders and crypto veterans (similar to Binance or FTX in 2023), providing a seamless experience. Sub-second finality means the order book updates and finalizes trades extremely quickly, reducing latency-sensitive trading risks.
         </p>
 
-        <h3 style={h3Style}>Cross-Margin & Unified Liquidity Pool</h3>
+        <h3 style={h3Style}>Cross-Margin &amp; Unified Liquidity Pool</h3>
 
         <p style={pStyle}>
           Your Hyperliquid account has a single collateral pool used across all markets. Deposit USDC, ETH, or other assets once—your entire balance serves as margin for perps and spot trading across 150+ markets. This is different from isolated margin (where each position has separate collateral) and allows for:
@@ -466,7 +472,7 @@ export default function HyperliquidPage() {
         </ul>
 
         <div style={infoBoxStyle}>
-          <strong>Throughput & Performance:</strong> Hyperliquid handles 200K+ TPS and settles trades with sub-second finality—roughly 10x faster than Ethereum and 2x faster than Arbitrum. This speed is critical for competitive trading where order latency directly impacts profitability.
+          <strong>Throughput &amp; Performance:</strong> Hyperliquid handles 200K+ TPS and settles trades with sub-second finality—roughly 10x faster than Ethereum and 2x faster than Arbitrum. This speed is critical for competitive trading where order latency directly impacts profitability.
         </div>
 
         {/* Section 3: Trading on Hyperliquid */}
@@ -574,30 +580,30 @@ export default function HyperliquidPage() {
         </div>
 
         {/* Section 4: HYPE Token & Tokenomics */}
-        <h2 id="hype-token-tokenomics" style={h2Style}>4. HYPE Token & Tokenomics</h2>
+        <h2 id="hype-token-tokenomics" style={h2Style}>4. HYPE Token &amp; Tokenomics</h2>
 
         <p style={pStyle}>
-          HYPE is Hyperliquid's native token, serving as the economic engine that aligns protocol incentives with users. Understanding HYPE tokenomics is critical for long-term value capture.
+          HYPE is Hyperliquid&apos;s native token, serving as the economic engine that aligns protocol incentives with users. Understanding HYPE tokenomics is critical for long-term value capture.
         </p>
 
-        <h3 style={h3Style}>Supply & Distribution</h3>
+        <h3 style={h3Style}>Supply &amp; Distribution</h3>
 
         <ul style={ulStyle}>
           <li style={liStyle}>
-            <strong>Max Supply</strong> — 1 billion HYPE tokens (hard cap, similar to BTC's 21M).
+            <strong>Max Supply</strong> — 1 billion HYPE tokens (hard cap, similar to BTC&apos;s 21M).
           </li>
           <li style={liStyle}>
             <strong>Contributor Allocation</strong> — 23.8% (238 million HYPE) distributed to core team and early contributors. These are locked for 1 year and vest until 2028, preventing mass dumping.
           </li>
           <li style={liStyle}>
-            <strong>Community & Public</strong> — The remaining ~76% available through trading rewards, staking, builder programs, and public market sales.
+            <strong>Community &amp; Public</strong> — The remaining ~76% available through trading rewards, staking, builder programs, and public market sales.
           </li>
         </ul>
 
-        <h3 style={h3Style}>Fee Capture & Buybacks</h3>
+        <h3 style={h3Style}>Fee Capture &amp; Buybacks</h3>
 
         <p style={pStyle}>
-          This is where HYPE becomes valuable: 97% of all trading fees collected by Hyperliquid are burned or used for buybacks. Here's the flow:
+          This is where HYPE becomes valuable: 97% of all trading fees collected by Hyperliquid are burned or used for buybacks. Here&apos;s the flow:
         </p>
 
         <ul style={ulStyle}>
@@ -619,7 +625,7 @@ export default function HyperliquidPage() {
           Practically, this means HYPE holders benefit from a portion of the $9B+ daily trading volume. As Hyperliquid scales, so does the fee revenue flowing back to HYPE.
         </p>
 
-        <h3 style={h3Style}>HYPE Staking & Fee Discounts</h3>
+        <h3 style={h3Style}>HYPE Staking &amp; Fee Discounts</h3>
 
         <p style={pStyle}>
           You can stake HYPE tokens to earn fee discounts and protocol revenue allocation:
@@ -666,28 +672,28 @@ export default function HyperliquidPage() {
         </ul>
 
         <p style={pStyle}>
-          HYPE's valuation reflects both the token's underlying fee capture mechanism and speculation about Hyperliquid's future growth. Unlike speculative tokens with no fundamentals, HYPE's value is directly tied to exchange revenue.
+          HYPE&apos;s valuation reflects both the token&apos;s underlying fee capture mechanism and speculation about Hyperliquid&apos;s future growth. Unlike speculative tokens with no fundamentals, HYPE&apos;s value is directly tied to exchange revenue.
         </p>
 
         <div style={infoBoxStyle}>
-          <strong>Valuation Framework:</strong> Compare HYPE's market cap to exchange revenue. If Hyperliquid captures $3.28B in fees annually ($9B volume × 0.2% avg fee × 365 days), and 97% flows to token holders, that's ~$3.18B in annual revenue. HYPE at $8.4B market cap implies ~2.6x earnings—reasonable for a high-growth crypto exchange.
+          <strong>Valuation Framework:</strong> Compare HYPE&apos;s market cap to exchange revenue. If Hyperliquid captures $3.28B in fees annually ($9B volume × 0.2% avg fee × 365 days), and 97% flows to token holders, that&apos;s ~$3.18B in annual revenue. HYPE at $8.4B market cap implies ~2.6x earnings—reasonable for a high-growth crypto exchange.
         </div>
 
         {/* Section 5: Hyperliquid Ecosystem */}
-        <h2 id="hyperliquid-ecosystem" style={h2Style}>5. Hyperliquid Ecosystem — HyperEVM & Builder Codes</h2>
+        <h2 id="hyperliquid-ecosystem" style={h2Style}>5. Hyperliquid Ecosystem — HyperEVM &amp; Builder Codes</h2>
 
         <h3 style={h3Style}>HyperEVM: Expanding Beyond Trading</h3>
 
         <p style={pStyle}>
-          While Hyperliquid's L1 consensus is native, the protocol is building HyperEVM—an EVM-compatible execution layer that allows developers to build DeFi applications, lending protocols, derivatives, and other contracts on top of Hyperliquid's fast, low-cost infrastructure. HyperEVM is designed to:
+          While Hyperliquid&apos;s L1 consensus is native, the protocol is building HyperEVM—an EVM-compatible execution layer that allows developers to build DeFi applications, lending protocols, derivatives, and other contracts on top of Hyperliquid&apos;s fast, low-cost infrastructure. HyperEVM is designed to:
         </p>
 
         <ul style={ulStyle}>
           <li style={liStyle}>
-            <strong>Enable DeFi Composability</strong> — Lend, borrow, trade, and yield farm without leaving Hyperliquid's ecosystem.
+            <strong>Enable DeFi Composability</strong> — Lend, borrow, trade, and yield farm without leaving Hyperliquid&apos;s ecosystem.
           </li>
           <li style={liStyle}>
-            <strong>Inherit Speed & Cost</strong> — Sub-second finality and low fees inherited from L1.
+            <strong>Inherit Speed &amp; Cost</strong> — Sub-second finality and low fees inherited from L1.
           </li>
           <li style={liStyle}>
             <strong>Attract Dev Talent</strong> — Solidity-compatible so Ethereum devs can port projects easily.
@@ -698,7 +704,7 @@ export default function HyperliquidPage() {
           Early projects on HyperEVM include lending protocols (e.g., Hyperlend), DEXs, and derivates platforms that leverage perps as collateral. As HyperEVM matures, expect a full DeFi stack—potentially rivaling Arbitrum or Optimism in ecosystem richness.
         </p>
 
-        <h3 style={h3Style}>Builder Codes & Referral Program</h3>
+        <h3 style={h3Style}>Builder Codes &amp; Referral Program</h3>
 
         <p style={pStyle}>
           Hyperliquid incentivizes ecosystem builders through builder codes:
@@ -712,12 +718,12 @@ export default function HyperliquidPage() {
             <strong>Fee Share Model</strong> — Builders earning 15-20% of fees from their referred cohort, aligning incentives long-term.
           </li>
           <li style={liStyle}>
-            <strong>Bot & Algorithm Rewards</strong> — Developers building trading bots, algorithms, and tools can participate in affiliate programs.
+            <strong>Bot &amp; Algorithm Rewards</strong> — Developers building trading bots, algorithms, and tools can participate in affiliate programs.
           </li>
         </ul>
 
         <p style={pStyle}>
-          This creates a viral loop: builders bring users → users trade → fees fund buybacks and builder rewards → more builders join. It's similar to the strategies that made Binance dominant in the early 2010s.
+          This creates a viral loop: builders bring users → users trade → fees fund buybacks and builder rewards → more builders join. It&apos;s similar to the strategies that made Binance dominant in the early 2010s.
         </p>
 
         <div style={infoBoxStyle}>
@@ -725,10 +731,10 @@ export default function HyperliquidPage() {
         </div>
 
         {/* Section 6: Key Metrics & Market Position */}
-        <h2 id="metrics-market-position" style={h2Style}>6. Key Metrics & Market Position</h2>
+        <h2 id="metrics-market-position" style={h2Style}>6. Key Metrics &amp; Market Position</h2>
 
         <p style={pStyle}>
-          Hyperliquid has grown into one of crypto's largest trading venues. Here are the metrics that matter:
+          Hyperliquid has grown into one of crypto&apos;s largest trading venues. Here are the metrics that matter:
         </p>
 
         <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', marginBottom: 20 }}>
@@ -778,7 +784,7 @@ export default function HyperliquidPage() {
         <h3 style={h3Style}>Why These Metrics Matter</h3>
 
         <p style={pStyle}>
-          <strong>$4.9B TVL</strong> means $4.9B is locked in Hyperliquid's smart contracts, generating daily trading volume. This is capital actively being traded, not passive staking. Growth in TVL signals more traders and bigger average position sizes.
+          <strong>$4.9B TVL</strong> means $4.9B is locked in Hyperliquid&apos;s smart contracts, generating daily trading volume. This is capital actively being traded, not passive staking. Growth in TVL signals more traders and bigger average position sizes.
         </p>
 
         <p style={pStyle}>
@@ -786,19 +792,19 @@ export default function HyperliquidPage() {
         </p>
 
         <p style={pStyle}>
-          <strong>314K monthly active users</strong> demonstrates sustainable product-market fit. For comparison, Uniswap has ~4M users, but many are inactive. Hyperliquid's 314K are actively trading, indicating a concentrated, dedicated user base.
+          <strong>314K monthly active users</strong> demonstrates sustainable product-market fit. For comparison, Uniswap has ~4M users, but many are inactive. Hyperliquid&apos;s 314K are actively trading, indicating a concentrated, dedicated user base.
         </p>
 
         <p style={pStyle}>
-          <strong>$4.17T cumulative volume</strong> shows the protocol has facilitated trillions in trades. This is a measure of both scale and trustworthiness—traders wouldn't commit capital if the protocol was unreliable.
+          <strong>$4.17T cumulative volume</strong> shows the protocol has facilitated trillions in trades. This is a measure of both scale and trustworthiness—traders wouldn&apos;t commit capital if the protocol was unreliable.
         </p>
 
         <p style={pStyle}>
-          <strong>70%+ open interest share</strong> among decentralized perp DEXs is dominant. The only larger perp exchange is Binance (centralized). This concentration means Hyperliquid sets the market—when Hyperliquid's perp funding rates move, it influences the entire space.
+          <strong>70%+ open interest share</strong> among decentralized perp DEXs is dominant. The only larger perp exchange is Binance (centralized). This concentration means Hyperliquid sets the market—when Hyperliquid&apos;s perp funding rates move, it influences the entire space.
         </p>
 
         {/* Section 7: Risks & Considerations */}
-        <h2 id="risks-considerations" style={h2Style}>7. Risks & Considerations</h2>
+        <h2 id="risks-considerations" style={h2Style}>7. Risks &amp; Considerations</h2>
 
         <p style={pStyle}>
           While Hyperliquid is remarkable, it carries risks. Understanding these is critical for responsible trading.
@@ -807,7 +813,7 @@ export default function HyperliquidPage() {
         <h3 style={h3Style}>Smart Contract Risk</h3>
 
         <p style={pStyle}>
-          Despite audits, Hyperliquid's contracts could contain bugs. A critical vulnerability could result in fund loss, exploits, or exploits allowing bad actors to drain the protocol. While Hyperliquid has not experienced a major hack since launch, the risk is non-zero.
+          Despite audits, Hyperliquid&apos;s contracts could contain bugs. A critical vulnerability could result in fund loss, exploits, or exploits allowing bad actors to drain the protocol. While Hyperliquid has not experienced a major hack since launch, the risk is non-zero.
         </p>
 
         <h3 style={h3Style}>Validator Centralization</h3>
@@ -821,7 +827,7 @@ export default function HyperliquidPage() {
             <strong>Censorship</strong> — Validators could theoretically collude to censor specific transactions or users.
           </li>
           <li style={liStyle}>
-            <strong>Network Halt</strong> — If enough validators go offline, the network stops (similar to Solana's consensus challenges in 2021-2023).
+            <strong>Network Halt</strong> — If enough validators go offline, the network stops (similar to Solana&apos;s consensus challenges in 2021-2023).
           </li>
           <li style={liStyle}>
             <strong>Regulatory Capture</strong> — Validators are identifiable and geographically concentrated; governments could pressure them.
@@ -832,7 +838,7 @@ export default function HyperliquidPage() {
           Hyperliquid is working to decentralize the validator set, but this is an active risk today.
         </p>
 
-        <h3 style={h3Style}>Liquidation Cascades & High Leverage</h3>
+        <h3 style={h3Style}>Liquidation Cascades &amp; High Leverage</h3>
 
         <p style={pStyle}>
           50x leverage amplifies both gains and losses. In a market panic (e.g., a sudden 10% flash crash), thousands of leveraged positions liquidate simultaneously. This can trigger:
@@ -851,13 +857,13 @@ export default function HyperliquidPage() {
         </ul>
 
         <p style={pStyle}>
-          Mitigation: Use conservative leverage (2-5x), set stop-losses, and size positions such that even 20% moves don't threaten liquidation.
+          Mitigation: Use conservative leverage (2-5x), set stop-losses, and size positions such that even 20% moves don&apos;t threaten liquidation.
         </p>
 
         <h3 style={h3Style}>March 2025 JELLY Incident</h3>
 
         <p style={pStyle}>
-          In March 2025, a token called JELLY was exploited on Hyperliquid's perp markets, resulting in significant losses for some traders who held large long positions. The exploit highlighted:
+          In March 2025, a token called JELLY was exploited on Hyperliquid&apos;s perp markets, resulting in significant losses for some traders who held large long positions. The exploit highlighted:
         </p>
 
         <ul style={ulStyle}>
@@ -865,7 +871,7 @@ export default function HyperliquidPage() {
             <strong>Micro-Cap Risk</strong> — Hyperliquid allows trading in 150+ markets, including extremely low-liquidity altcoins and microcaps. These are susceptible to manipulation, exploits, and flash crashes.
           </li>
           <li style={liStyle}>
-            <strong>Smart Contract Vulnerabilities</strong> — The issue stemmed from issues with the token's contract, not Hyperliquid itself, but traders using perps to gain leveraged exposure were liquidated.
+            <strong>Smart Contract Vulnerabilities</strong> — The issue stemmed from issues with the token&apos;s contract, not Hyperliquid itself, but traders using perps to gain leveraged exposure were liquidated.
           </li>
         </ul>
 
@@ -892,7 +898,7 @@ export default function HyperliquidPage() {
         </ul>
 
         <p style={pStyle}>
-          Stay informed on regulatory developments and diversify geographic exposure if you're a large trader.
+          Stay informed on regulatory developments and diversify geographic exposure if you&apos;re a large trader.
         </p>
 
         <h3 style={h3Style}>Competition from dYdX, GMX, and Layer-2 Perps</h3>
@@ -914,7 +920,7 @@ export default function HyperliquidPage() {
         </ul>
 
         <p style={pStyle}>
-          Hyperliquid's advantage is its L1 consensus and liquidity concentration, but technology can be copied. Maintain portfolio diversification if you're deeply exposed to Hyperliquid's dominance.
+          Hyperliquid&apos;s advantage is its L1 consensus and liquidity concentration, but technology can be copied. Maintain portfolio diversification if you&apos;re deeply exposed to Hyperliquid&apos;s dominance.
         </p>
 
         <div style={disclaimerStyle}>
@@ -931,27 +937,37 @@ export default function HyperliquidPage() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-03"
+          updatedDate="2026-04-03"
+          readingTime={14}
+          section="learn"
+        />
+
+
         <div style={faqItemStyle}>
-          <div style={faqQuestionStyle}>What's the difference between funding rates and fees?</div>
+          <div style={faqQuestionStyle}>What&apos;s the difference between funding rates and fees?</div>
           <div style={faqAnswerStyle}>
             <strong>Trading Fees (Taker/Maker)</strong> — You pay this when you trade. Taker (market order) fees are 0.2-0.5% depending on your HYPE stake; Maker (limit order) fees are lower or negative (earning rebates).
             <br />
             <br />
-            <strong>Funding Rates</strong> — Paid every 1 hour between longs and shorts to keep the perpetual price near spot price. If funding is positive (more longs than shorts), long holders pay short holders. You earn funding if you're on the profitable side. Example: If you're long BTC at 2% positive funding, you earn ~2% of your position size per hour (before fees).
+            <strong>Funding Rates</strong> — Paid every 1 hour between longs and shorts to keep the perpetual price near spot price. If funding is positive (more longs than shorts), long holders pay short holders. You earn funding if you&apos;re on the profitable side. Example: If you&apos;re long BTC at 2% positive funding, you earn ~2% of your position size per hour (before fees).
           </div>
         </div>
 
         <div style={faqItemStyle}>
           <div style={faqQuestionStyle}>Can I day trade on Hyperliquid without triggering tax issues?</div>
           <div style={faqAnswerStyle}>
-            Consult a tax professional. In most jurisdictions, every trade (long or short) is a taxable event. Frequent day trading can generate significant tax liability. Hyperliquid doesn't report trades to tax authorities, so you're responsible for accurate reporting. Consider using tax-advantaged strategies like washsales or long-term holding. Some traders use derivatives to hedge tax liability, but this is complex—get advice.
+            Consult a tax professional. In most jurisdictions, every trade (long or short) is a taxable event. Frequent day trading can generate significant tax liability. Hyperliquid doesn&apos;t report trades to tax authorities, so you&apos;re responsible for accurate reporting. Consider using tax-advantaged strategies like washsales or long-term holding. Some traders use derivatives to hedge tax liability, but this is complex—get advice.
           </div>
         </div>
 
         <div style={faqItemStyle}>
-          <div style={faqQuestionStyle}>What's the best leverage for a beginner?</div>
+          <div style={faqQuestionStyle}>What&apos;s the best leverage for a beginner?</div>
           <div style={faqAnswerStyle}>
-            Start with 2-5x leverage on major pairs (BTC, ETH). At 5x leverage, a 20% move in the underlying asset moves your account by 100%—enough to teach the power of leverage without blowing your account immediately. Most pros use 3-8x for directional plays and 5-20x for funding rate harvesting (lower risk because you're not betting on price direction). Avoid leverage above 10x until you have at least 3-6 months of profitable trading experience.
+            Start with 2-5x leverage on major pairs (BTC, ETH). At 5x leverage, a 20% move in the underlying asset moves your account by 100%—enough to teach the power of leverage without blowing your account immediately. Most pros use 3-8x for directional plays and 5-20x for funding rate harvesting (lower risk because you&apos;re not betting on price direction). Avoid leverage above 10x until you have at least 3-6 months of profitable trading experience.
           </div>
         </div>
 
@@ -965,7 +981,7 @@ export default function HyperliquidPage() {
         <div style={faqItemStyle}>
           <div style={faqQuestionStyle}>Is Hyperliquid regulated or legal in my country?</div>
           <div style={faqAnswerStyle}>
-            Hyperliquid is decentralized and doesn't block users by geography, but many countries regulate derivatives trading. The US, EU, and UK are increasing scrutiny of unregistered derivatives exchanges. Trading perps on Hyperliquid carries regulatory risk—derivatives may be banned or restricted in your jurisdiction. Research local regulations or use a VPN carefully (though this has legal gray areas). The safest approach: Trade small amounts, avoid leverage, and check with local regulators or a lawyer.
+            Hyperliquid is decentralized and doesn&apos;t block users by geography, but many countries regulate derivatives trading. The US, EU, and UK are increasing scrutiny of unregistered derivatives exchanges. Trading perps on Hyperliquid carries regulatory risk—derivatives may be banned or restricted in your jurisdiction. Research local regulations or use a VPN carefully (though this has legal gray areas). The safest approach: Trade small amounts, avoid leverage, and check with local regulators or a lawyer.
           </div>
         </div>
 
@@ -987,7 +1003,7 @@ export default function HyperliquidPage() {
             <Link href="/learn/mev-protection-fair-trading-guide-2026" style={linkStyle}>
               MEV Protection & Fair Trading Guide 2026
             </Link>
-            — Understand maximal extractable value (MEV), front-running protection, and how Hyperliquid's HyperBFT mitigates MEV.
+            — Understand maximal extractable value (MEV), front-running protection, and how Hyperliquid&apos;s HyperBFT mitigates MEV.
           </li>
           <li style={liStyle}>
             <Link href="/learn/crypto-trading-bots-telegram-guide-2026" style={linkStyle}>

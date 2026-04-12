@@ -31,7 +31,17 @@ export default function Page() {
         <p>Aave has established itself as the dominant DeFi lending protocol through aggressive multi-chain expansion and continuous innovation. Flash loans — uncollateralized loans that must be repaid within a single transaction — were an Aave innovation that created entirely new DeFi strategies. The GHO stablecoin generates additional protocol revenue while deepening Aave&apos;s ecosystem moat. Aave&apos;s Safety Module requires AAVE stakers to backstop protocol shortfalls, creating real demand for the token beyond governance. The protocol&apos;s revenue from interest rate spreads across multiple chains generates meaningful income that is increasingly directed toward AAVE token value accrual through buyback mechanisms.</p>
         <p>Compound&apos;s historical significance cannot be overstated — it essentially invented the token-incentivized lending market model that the entire DeFi sector adopted. Compound III represents a thoughtful redesign that prioritizes simplicity and capital efficiency over feature breadth. Each Compound III market isolates risk around a single borrowable asset, which appeals to institutional users and risk-conscious capital. Compound&apos;s approach is more conservative but potentially more sustainable. For investors, AAVE offers exposure to the established DeFi lending leader with multiple revenue streams and growing value accrual. COMP is a contrarian bet on whether Compound III&apos;s focused design and institutional appeal can recapture market share at a lower relative valuation.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/uniswap-vs-pancakeswap" className="text-blue-600 hover:underline">Uniswap vs PancakeSwap</Link></li><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/uniswap-vs-pancakeswap" className="text-blue-600 hover:underline">Uniswap vs PancakeSwap</Link></li><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

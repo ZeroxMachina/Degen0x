@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import Link from "next/link";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { generateArticleSchema } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 const S = {
     bg: "var(--color-bg, #0d1117)",
@@ -196,6 +198,16 @@ export default function Page() {
                             ~120M to 56.88M DOT/year
                         </div>
                     </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-03"
+          updatedDate="2026-04-12"
+          readingTime={8}
+          section="learn"
+        />
+
                     <div>
                         <div style={{ color: S.text2, fontSize: "12px", textTransform: "uppercase", marginBottom: "8px" }}>
                             Hard Supply Cap

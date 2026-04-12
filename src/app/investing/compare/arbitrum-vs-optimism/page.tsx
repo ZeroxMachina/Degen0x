@@ -31,7 +31,17 @@ export default function Page() {
         <p>Arbitrum&apos;s dominance in DeFi TVL reflects its strong technical execution and early mover advantage in attracting blue-chip DeFi protocols. GMX pioneered the decentralized perpetual exchange model on Arbitrum, generating substantial real revenue and attracting billions in liquidity. Arbitrum Orbit extends this success by enabling Layer 3 application-specific chains that settle to Arbitrum, creating a vertical scaling stack. The Arbitrum DAO controls a significant treasury, and governance proposals increasingly focus on ecosystem incentives, revenue distribution, and protocol upgrades that could add value accrual mechanisms to the ARB token.</p>
         <p>Optimism&apos;s strategic advantage is the OP Stack and Superchain vision. By open-sourcing its rollup technology, Optimism attracted Coinbase (Base), Worldcoin, Sony, and dozens of other projects to build chains using OP Stack. This creates a network effect where every new OP Stack chain strengthens the Superchain ecosystem and contributes revenue back to the Optimism Collective. The dual governance model with Token House and Citizens House enables both token-weighted and reputation-based governance. For investors, ARB offers exposure to the leading DeFi L2 by current metrics, while OP offers exposure to the thesis that rollup-as-a-service and Superchain interoperability will define the future of Ethereum scaling.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/polygon-vs-arbitrum" className="text-blue-600 hover:underline">Polygon vs Arbitrum</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/polygon-vs-arbitrum" className="text-blue-600 hover:underline">Polygon vs Arbitrum</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

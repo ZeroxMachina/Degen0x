@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -176,6 +178,16 @@ export default function CryptoTradingBotsGuidePage() {
                 <div style={{ fontSize: 14, fontWeight: 700, color: stat.color }}>{stat.value}</div>
                 <div style={{ fontSize: 11, color: S.text2, marginTop: 6 }}>{stat.label}</div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={6}
+          section="learn"
+        />
+
             ))}
           </div>
 
@@ -209,6 +221,16 @@ export default function CryptoTradingBotsGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             A crypto trading bot is a software program that connects to a crypto exchange via API and automatically executes buy and sell orders based on predetermined rules. Instead of manually placing trades 24/7, a bot monitors price, volume, and technical indicators, then executes trades without human intervention.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Why are bots so dominant in crypto? Three reasons:
@@ -664,6 +686,26 @@ export default function CryptoTradingBotsGuidePage() {
             Start small, backtest rigorously, monitor daily, and always ask: "Is my bot earning more than it costs in fees?" If not, pause it and revisit your strategy. The crypto market rewards discipline, and bots are just another tool in your trading arsenal.
           </p>
         </section>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/crypto-heatmap-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Heatmap Live</a></li>
+            <li><a href="/tools/defi-portfolio-dashboard" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Defi Portfolio Dashboard</a></li>
+            <li><a href="/tools/impermanent-loss-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Impermanent Loss Calculator</a></li>
+            <li><a href="/tools/token-vesting-schedule-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Token Vesting Schedule Tracker</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </main>
   );

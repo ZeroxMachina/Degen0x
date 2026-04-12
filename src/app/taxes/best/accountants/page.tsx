@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto CPAs & Tax Accountants (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -98,6 +100,16 @@ export default function BestAccountantsPage() {
 
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Top Crypto Tax Professionals</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Crypto tax compliance is a mess, but ignoring it is worse. We focus on practical approaches that balance accuracy with the reality that most exchanges have incomplete records.
+          </p>
+        </div>
         <div className="grid gap-6">
           {cpas.map((cpa, index) => (
             <div key={cpa.name} className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
@@ -111,6 +123,16 @@ export default function BestAccountantsPage() {
                     <p className="text-sm text-[var(--color-primary)]">{cpa.specialty}</p>
                   </div>
                 </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="taxes"
+        />
+
                 <a
                   href={cpa.url}
                   target="_blank"

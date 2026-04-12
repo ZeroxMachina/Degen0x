@@ -31,7 +31,17 @@ export default function Page() {
         <p>Active crypto investing appeals to those who believe they can time market movements, identify undervalued assets early, and rotate between sectors as narratives shift. In theory, crypto&apos;s volatility creates abundant opportunities. In practice, cognitive biases, emotional decision-making, transaction costs, tax implications, and the difficulty of consistently timing entries and exits cause most active traders to underperform. The 24/7 nature of crypto markets amplifies these challenges — there is no market close to enforce breaks from screen time. Successful active traders typically specialize in specific strategies, maintain strict risk management rules, and treat trading as a full-time profession rather than a side activity.</p>
         <p>Passive crypto investing leverages the most powerful force in investing: time in the market rather than timing the market. A simple dollar-cost averaging strategy into Bitcoin has outperformed the vast majority of active traders over any multi-year period in Bitcoin&apos;s history. Passive strategies succeed because they eliminate emotional selling during crashes, avoid the tax drag of frequent trading, and capture the full upside of crypto&apos;s secular growth trend. Staking adds yield on top of price appreciation without active management. The key discipline is maintaining your DCA schedule during bear markets when prices are lowest and accumulation is most valuable. For most investors, a passive core with a small active satellite allocation provides the best balance of returns, risk management, and quality of life.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/dca-vs-timing-market" className="text-blue-600 hover:underline">DCA vs Timing the Market</Link></li><li><Link href="/investing/learn/crypto-portfolio-strategies" className="text-blue-600 hover:underline">Crypto Portfolio Strategies</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/dca-vs-timing-market" className="text-blue-600 hover:underline">DCA vs Timing the Market</Link></li><li><Link href="/investing/learn/crypto-portfolio-strategies" className="text-blue-600 hover:underline">Crypto Portfolio Strategies</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

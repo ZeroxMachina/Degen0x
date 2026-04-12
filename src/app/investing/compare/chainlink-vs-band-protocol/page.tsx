@@ -31,7 +31,17 @@ export default function Page() {
         <p>Chainlink has established itself as essential DeFi infrastructure, providing price feeds that secure billions of dollars in lending protocols, derivatives platforms, and stablecoin systems. Its node operator network includes Deutsche Telekom, Swisscom, and other institutional entities that provide enterprise-grade data delivery. Beyond basic price feeds, Chainlink has expanded into verifiable randomness (VRF) for gaming and NFTs, smart contract automation (Keepers/Automation), and most significantly, CCIP — a cross-chain interoperability protocol that positions Chainlink as infrastructure for the entire multi-chain ecosystem. LINK staking adds deflationary mechanics and aligns token holder incentives with network security.</p>
         <p>Band Protocol takes a leaner approach built on Cosmos SDK with its own BandChain blockchain. This architecture provides fast data request processing and native IBC integration, making it attractive for Cosmos ecosystem projects. Band&apos;s delegated proof-of-stake model with approximately 100 validators is simpler than Chainlink&apos;s node network but less decentralized. For investors, LINK represents a bet on the dominant oracle infrastructure play with expanding product surface area and growing revenue potential. BAND is a higher-risk bet on an alternative oracle capturing niche market share, particularly within the Cosmos ecosystem, at a significantly smaller market capitalization with more upside potential but greater execution risk.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li><li><Link href="/investing/learn/crypto-valuation-methods" className="text-blue-600 hover:underline">Crypto Valuation Methods</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li><li><Link href="/investing/learn/crypto-valuation-methods" className="text-blue-600 hover:underline">Crypto Valuation Methods</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

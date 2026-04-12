@@ -47,6 +47,16 @@ export default function LayerZeroGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             LayerZero is the dominant omnichain messaging protocol — the communication layer that lets smart contracts on one blockchain send arbitrary data to contracts on any other blockchain. It's not a bridge itself; it's the <strong style={{ color: S.text }}>infrastructure that bridges, DeFi protocols, and NFT projects build on</strong>. LayerZero V2 introduced a configurable security model where each OApp (omnichain app) can choose its own DVN (Decentralized Verifier Network) for message verification — trading off security, speed, and cost.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -94,6 +104,17 @@ export default function LayerZeroGuidePage() {
           <TradingViewChart symbol="BINANCE:ZROUSDT" height={420} />
         </section>
 
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/defi-yield-optimizer" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Defi Yield Optimizer</a></li>
+            <li><a href="/tools/nft-floor-price-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Nft Floor Price Tracker</a></li>
+            <li><a href="/trading/algorithmic-crypto-trading-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Algorithmic Crypto Trading Guide</a></li>
+            <li><a href="/trading/crypto-options-trading-strategies" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Options Trading Strategies</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

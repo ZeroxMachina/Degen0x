@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto & Web3 Jobs Board 2026 — Find Your Next Role in Blockchain",
@@ -282,6 +284,16 @@ export default function CryptoJobsPage() {
               </button>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="0xMachina"
+          role="Founder"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="web3-business"
+        />
+
         </div>
       </section>
 

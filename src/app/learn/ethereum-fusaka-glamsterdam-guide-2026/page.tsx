@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Ethereum Fusaka & Glamsterdam Upgrade Guide 2026 | Degen0x',
@@ -186,6 +188,16 @@ export default function FusakaGlamsterdamGuide() {
               <p className="text-[#e6edf3] leading-relaxed mb-4">
                 Fusaka is a major Ethereum upgrade that went live on <strong>December 3, 2025</strong>. It represents the convergence of two parallel protocol improvements: Fulu on the consensus layer and Osaka on the execution layer. The name combines these two upgrades to reflect Ethereum&rsquo;s continued emphasis on coordination between consensus and execution improvements.
               </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
               <p className="text-[#e6edf3] leading-relaxed mb-6">
                 Fusaka is the third major upgrade in Ethereum&rsquo;s current roadmap, following Dencun (March 2024) and Pectra (May 2025). It contains 12 Ethereum Improvement Proposals (EIPs) focused on scaling, data availability, and network efficiency. The upgrade underwent three successful testnet deployments before launching on mainnet, ensuring stability and security.
@@ -550,6 +562,16 @@ export default function FusakaGlamsterdamGuide() {
                   </p>
                 </div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={10}
+          section="learn"
+        />
+
             </section>
 
             {/* Related Reading Section */}
@@ -585,7 +607,27 @@ export default function FusakaGlamsterdamGuide() {
                 This guide is educational and reflects the state of Ethereum knowledge as of March 2026. While we strive for accuracy, blockchain technology is rapidly evolving. Always verify information from official Ethereum research sources and do your own research before making decisions based on this content. This is not financial advice.
               </p>
             </div>
-          </article>
+          
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/crypto-fear-greed-index-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Fear Greed Index Live</a></li>
+            <li><a href="/tools/crypto-volatility-index" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Volatility Index</a></li>
+            <li><a href="/tools/gas-price-estimator-multi-chain" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Gas Price Estimator Multi Chain</a></li>
+            <li><a href="/tools/token-unlocks-calendar" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Token Unlocks Calendar</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
 
           <BackToTop />
         </div>

@@ -48,6 +48,16 @@ export default function PanopticGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Panoptic is the first perpetual options protocol built directly on top of Uniswap V3. It enables truly decentralized, oracle-free options trading with no expiry dates and no counterparties. Options are synthetic and backed by the underlying Uniswap V3 liquidity.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Key innovation: <strong style={{ color: S.text }}>LP positions as options</strong>. Instead of traditional options desks, Panoptic lets you convert Uniswap V3 LP positions into panoptions (perpetual put/call options). No oracle manipulation, no counterparty risk — just pure on-chain mechanics.
           </p>

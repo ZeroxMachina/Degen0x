@@ -31,7 +31,17 @@ export default function Page() {
         <p>CeFi platforms provide the easiest entry point to crypto investing with familiar interfaces, fiat on-ramps, customer support, and tax reporting tools. Regulated exchanges in the US and Europe offer deposit insurance and compliance with financial regulations that provide some investor protection. However, the collapses of FTX, Celsius, Voyager, and BlockFi demonstrated that CeFi counterparty risk is the single largest risk factor in crypto investing — users lost billions when centralized platforms failed. CeFi yields tend to be lower than DeFi because platforms take a margin, but the simplicity and regulatory protections are valuable for less technical investors and for portfolio management integration.</p>
         <p>DeFi&apos;s fundamental advantage is self-custody — assets remain in your wallet, controlled by your private keys, with no centralized entity that can freeze, lose, or misappropriate funds. DeFi protocols operate transparently on-chain with auditable code and real-time balance verification. Yields can be significantly higher because there is no intermediary margin, and innovative yield strategies (liquidity provision, farming, leveraged staking) are accessible to anyone. The trade-offs are real: smart contract exploits, impermanent loss, oracle failures, and governance attacks have caused significant losses. Tax reporting is complex and largely self-managed. The optimal approach for most investors combines CeFi for simplicity where needed and DeFi for yield generation and self-custody where the user has sufficient technical understanding to manage the risks.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/staking-vs-lending" className="text-blue-600 hover:underline">Staking vs Lending</Link></li><li><Link href="/investing/learn/crypto-investment-risks" className="text-blue-600 hover:underline">Crypto Investment Risks</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/staking-vs-lending" className="text-blue-600 hover:underline">Staking vs Lending</Link></li><li><Link href="/investing/learn/crypto-investment-risks" className="text-blue-600 hover:underline">Crypto Investment Risks</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

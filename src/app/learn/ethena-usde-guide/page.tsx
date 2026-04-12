@@ -9,6 +9,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 // Title: 65 chars — primary keyword first, year included
@@ -190,6 +192,16 @@ export default function EthenaUsdeGuide() {
           protocol launched publicly in February 2024 and reached a peak TVL of nearly{" "}
           <strong className="text-[#e6edf3]">$15 billion</strong> by October 2025.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           The core insight is straightforward: you can create a dollar-equivalent asset using crypto
           collateral plus a perfectly offsetting derivatives position. No banks. No Treasuries. No
@@ -224,6 +236,16 @@ export default function EthenaUsdeGuide() {
               <p className="text-[#e6edf3] font-bold text-lg">#3</p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={5}
+          section="learn"
+        />
+
           <p className="text-[#8b949e] text-xs mt-4">
             Source: DefiLlama, CoinMarketCap — March 2026 (approximate)
           </p>

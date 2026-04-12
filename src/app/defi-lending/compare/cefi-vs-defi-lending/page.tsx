@@ -42,6 +42,16 @@ export default function CefiVsDefiLendingPage() {
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0f2e', border: '1px solid #3b1f5e', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>⚠️</span>
+            <strong style={{ color: '#c084fc', fontSize: 15 }}>Risk Assessment</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our DeFi researchers monitor governance proposals and treasury health, not just headline rates. A protocol's governance decisions reveal more than its TVL.
+          </p>
+        </div>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Custody and Control</h3>
         <p className="text-[var(--color-text-secondary)]">The fundamental difference is custody. In DeFi, you maintain control of your assets through your own wallet and interact directly with smart contracts. In CeFi, you deposit assets into a platform that holds them in custodial wallets. The collapses of Celsius, BlockFi, and Voyager in 2022 demonstrated the catastrophic risk of custodial lending when billions in user funds became locked in bankruptcy proceedings. DeFi's self-custody model means your funds remain accessible as long as the smart contracts function correctly.</p>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">User Experience</h3>

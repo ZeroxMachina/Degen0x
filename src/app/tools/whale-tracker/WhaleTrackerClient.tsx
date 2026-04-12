@@ -103,6 +103,19 @@ export default function WhaleTrackerClient() {
   const [minValue, setMinValue] = useState(100000);
   const [liveCount, setLiveCount] = useState(0);
 
+  const [flowData] = useState(() => ({
+    ethereum: { inflow: Math.random() * 100000000, outflow: Math.random() * 100000000 },
+    solana: { inflow: Math.random() * 100000000, outflow: Math.random() * 100000000 },
+    bitcoin: { inflow: Math.random() * 100000000, outflow: Math.random() * 100000000 },
+  }));
+  const [tokenMovements] = useState(() =>
+    ["BTC", "ETH", "USDC", "USDT", "SOL", "LINK"].map((token) => ({
+      token,
+      vol: Math.random() * 500000000 + 10000000,
+      txCount: Math.floor(Math.random() * 200) + 10,
+    }))
+  );
+
   useEffect(() => {
     const interval = setInterval(() => {
       setLiveCount((c) => c + Math.floor(Math.random() * 3) + 1);
@@ -157,7 +170,7 @@ export default function WhaleTrackerClient() {
         </div>
 
         {/* Tabs */}
-        <div className="flex gap-2 mb-6">
+        <div className="flex gap-2 mb-6" role="tablist" aria-label="Whale tracker views">
           {[
             { id: "feed" as const, label: "Live Feed", icon: "📡" },
             { id: "wallets" as const, label: "Tracked Wallets", icon: "👁" },
@@ -166,6 +179,9 @@ export default function WhaleTrackerClient() {
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
+              role="tab"
+              aria-selected={activeTab === tab.id}
+              aria-controls={`panel-${tab.id}`}
               className="px-4 py-2 rounded-lg text-sm font-semibold transition-colors"
               style={{
                 background: activeTab === tab.id ? "#6366f120" : "#161b22",
@@ -314,10 +330,9 @@ export default function WhaleTrackerClient() {
             <div className="rounded-xl p-6" style={{ background: "#161b22", border: "1px solid #30363d" }}>
               <h3 className="font-bold text-lg mb-4">Net Exchange Flow (24h)</h3>
               <div className="space-y-4">
-                {["ethereum", "solana", "bitcoin"].map((chain) => {
+                {(["ethereum", "solana", "bitcoin"] as const).map((chain) => {
                   const c = CHAIN_COLORS[chain];
-                  const inflow = Math.random() * 100000000;
-                  const outflow = Math.random() * 100000000;
+                  const { inflow, outflow } = flowData[chain];
                   const net = outflow - inflow;
                   return (
                     <div key={chain} className="p-3 rounded-lg" style={{ background: "#0d1117" }}>
@@ -342,9 +357,7 @@ export default function WhaleTrackerClient() {
             <div className="rounded-xl p-6" style={{ background: "#161b22", border: "1px solid #30363d" }}>
               <h3 className="font-bold text-lg mb-4">Top Token Movements (24h)</h3>
               <div className="space-y-3">
-                {["BTC", "ETH", "USDC", "USDT", "SOL", "LINK"].map((token) => {
-                  const vol = Math.random() * 500000000 + 10000000;
-                  const txCount = Math.floor(Math.random() * 200) + 10;
+                {tokenMovements.map(({ token, vol, txCount }) => {
                   return (
                     <div key={token} className="flex items-center justify-between p-3 rounded-lg" style={{ background: "#0d1117" }}>
                       <div>

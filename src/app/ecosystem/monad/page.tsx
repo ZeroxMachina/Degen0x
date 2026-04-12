@@ -86,6 +86,16 @@ export default function MonadPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Monad is a groundbreaking L1 blockchain that achieves 10,000+ TPS through parallel-execution EVM architecture. Unlike traditional blockchains that execute transactions sequentially (one after another), Monad identifies independent transactions and executes them in parallel on multiple cores, dramatically increasing throughput while maintaining full EVM compatibility.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Monad's novel consensus mechanism combines fast finality with efficient security. By leveraging parallel execution, Monad reduces the need for Layer 2 solutions for many DeFi applications, offering mainnet-like security with L2-like throughput. Every Ethereum contract runs unchanged on Monad.
           </p>

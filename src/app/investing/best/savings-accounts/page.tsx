@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto Savings Accounts ${CURRENT_YEAR} — Highest APY Rates Compared`,
@@ -310,6 +312,16 @@ export default function CryptoSavingsAccountsPage() {
             </table>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
 
         {/* Full Reviews */}
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">In-Depth Platform Reviews</h2>

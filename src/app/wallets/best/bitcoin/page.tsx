@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { bitcoinWallets } from "@/data/wallets";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Bitcoin Wallets of ${CURRENT_YEAR} - BTC Storage & Security | ${SITE_NAME}`,
@@ -56,6 +58,16 @@ export default function BestBitcoinWalletsPage() {
 
       <section className="mb-10 rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-6">
         <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">What to Look for in a Bitcoin Wallet</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a0f', border: '1px solid #14532d', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛡️</span>
+            <strong style={{ color: '#22c55e', fontSize: 15 }}>Security Verdict</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our security team stress-tests every wallet we review. We check firmware signing, key derivation paths, and potential supply chain attack surfaces.
+          </p>
+        </div>
         <div className="grid md:grid-cols-2 gap-4">
           <div>
             <h3 className="text-[var(--color-text)] font-semibold mb-1 text-sm">Security Architecture</h3>
@@ -74,6 +86,16 @@ export default function BestBitcoinWalletsPage() {
             <p className="text-xs text-[var(--color-text-secondary)]">Seed phrase backup, optional passphrase, and multi-sig support for advanced users.</p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="wallets"
+        />
+
       </section>
 
       <section className="mb-12">

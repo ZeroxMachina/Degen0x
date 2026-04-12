@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { exchangeDetailedComparisons, exchangeComparisonFeatures } from "@/data/exchanges";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Crypto.com vs Coinbase: Which Exchange Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -117,6 +119,16 @@ export default function CryptoComVsCoinbasePage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection
         faqs={[

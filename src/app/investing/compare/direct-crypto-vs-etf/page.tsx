@@ -31,7 +31,17 @@ export default function Page() {
         <p>Direct cryptocurrency purchase gives you full ownership and control of your digital assets. You can move them to self-custody, stake them for protocol-native yields, participate in DeFi, and trade 24/7 including weekends and holidays when market-moving events often occur. There are no ongoing expense ratios eating into your returns, and the spread between buy and sell prices on major exchanges has narrowed to institutional levels. The trade-offs are operational complexity — managing wallets, securing private keys, and handling tax reporting require knowledge and discipline. For investors comfortable with self-custody, direct purchase is strictly superior for long-term holding due to zero ongoing costs and the ability to earn staking yields of 3-8% annually.</p>
         <p>Crypto ETFs democratized access to cryptocurrency exposure through the familiar infrastructure of traditional brokerage accounts. The most compelling advantage is tax-advantaged account access — holding Bitcoin in a Roth IRA means all future appreciation is potentially tax-free, a benefit unavailable through direct crypto purchase without specialized and expensive crypto IRA providers. ETFs eliminate custody concerns, private key management, and wallet security — the fund custodian handles everything. The SEC regulatory framework provides investor protections unavailable in crypto-native markets. The costs are ongoing expense ratios that compound over decades, restricted trading hours that miss weekend volatility, no staking yield, and no DeFi participation. The optimal strategy for many investors is to maximize ETF holdings in tax-advantaged retirement accounts while purchasing crypto directly in taxable accounts for self-custody, staking, and full market access.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/learn/bitcoin-etf-complete-guide" className="text-blue-600 hover:underline">Bitcoin ETF Complete Guide</Link></li><li><Link href="/investing/learn/ethereum-etf-guide" className="text-blue-600 hover:underline">Ethereum ETF Guide</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/learn/bitcoin-etf-complete-guide" className="text-blue-600 hover:underline">Bitcoin ETF Complete Guide</Link></li><li><Link href="/investing/learn/ethereum-etf-guide" className="text-blue-600 hover:underline">Ethereum ETF Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

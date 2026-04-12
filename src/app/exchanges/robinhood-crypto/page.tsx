@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import { Metadata as NextMetadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: NextMetadata = {
   title: "Robinhood Crypto Review 2026: Zero Fees, Beginner-Friendly Trading",
@@ -27,6 +29,16 @@ export default function RobinhoodCryptoReview() {
             <p className="text-[#8b949e] mb-4">
               Robinhood Crypto integrates seamlessly into the main Robinhood app, which is known for its elegant simplicity and user-friendly design. The crypto trading interface presents a clean buy/sell view with real-time price charts powered by TradingView. Placing an order is straightforward: select a cryptocurrency, enter an amount in dollars or quantity, and confirm the purchase or sale. The app has no order book, advanced order types, or professional trading tools, maintaining Robinhood's philosophy of maximum simplicity. Navigation between stocks, options, and crypto is intuitive via a bottom tab bar. The UI uses dark mode with green accents, maintaining visual consistency with Robinhood's branding. For absolute beginners, Robinhood's interface is unmatched in simplicity; for traders wanting advanced features, the lack of options is restrictive.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1500', border: '1px solid #3d2e0a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔍</span>
+            <strong style={{ color: '#f59e0b', fontSize: 15 }}>Our Testing Notes</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            The fee structures are rarely as simple as exchanges advertise. We broke down the real costs including spread, withdrawal fees, and hidden charges.
+          </p>
+        </div>
           </section>
 
           <section>
@@ -81,6 +93,16 @@ export default function RobinhoodCryptoReview() {
                 <div className="flex justify-between"><span>Crypto Withdrawal</span><span>Free (on-platform transfers)</span></div>
                 <div className="flex justify-between"><span>Bank Transfer</span><span>Free (via ACH)</span></div>
               </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
             </div>
           </section>
 

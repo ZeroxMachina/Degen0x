@@ -21,6 +21,16 @@ export default function MEVGuide2026Page() {
         <section style={{marginBottom:40}}>
           <h2 style={{fontSize:"1.5rem",fontWeight:800,marginBottom:12,color:S.purple}}>What is MEV?</h2>
           <p style={{color:S.text2,lineHeight:1.8,marginBottom:16}}>Before a transaction is confirmed, it sits in the public mempool — visible to everyone including sophisticated bots. MEV bots scan pending txs and either (1) front-run by inserting a tx before yours, (2) back-run by inserting a tx after yours to capture the price impact, or (3) sandwich by doing both simultaneously. Validators can also reorder txs in a block to maximise their own profit.</p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
         </section>
         <section style={{marginBottom:40}}>
           <h2 style={{fontSize:"1.5rem",fontWeight:800,marginBottom:12,color:S.purple}}>The 3 Main MEV Strategies</h2>
@@ -68,6 +78,26 @@ export default function MEVGuide2026Page() {
           <h3 style={{fontWeight:800,marginBottom:8,color:S.text}}>⚡ Key takeaway</h3>
           <p style={{color:S.text2,lineHeight:1.8,fontSize:14}}>MEV is a hidden tax on DeFi users — but understanding it lets you opt out. For most users: use MEV Blocker RPC + CoW Swap for large trades, and trade on L2s where possible. MEV is also a legitimate profit opportunity for sophisticated searchers, and MEV revenue to validators is a crucial part of Ethereum's security economics post-merge. This is a deep rabbit hole worth understanding if you're serious about DeFi.</p>
         </section>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/investing/best-crypto-savings-accounts-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Crypto Savings Accounts 2026</a></li>
+            <li><a href="/investing/best-layer-2-tokens-to-invest" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Layer 2 Tokens To Invest</a></li>
+            <li><a href="/investing/best-solana-ecosystem-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Solana Ecosystem Tokens</a></li>
+            <li><a href="/investing/crypto-momentum-trading-strategy" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Momentum Trading Strategy</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </main>
   );

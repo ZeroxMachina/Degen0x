@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Solana Blinks & Actions Guide 2026: Shareable Blockchain Links Explained | degen0x",
@@ -103,6 +105,16 @@ export default function SolanaBlinksActionsGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-23"
+          updatedDate="2026-03-23"
+          readingTime={5}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -125,6 +137,16 @@ export default function SolanaBlinksActionsGuide() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Blinks—short for <strong>Blockchain Links</strong>—are shareable URLs that encode a specific onchain intent on Solana. Think of them as "deep links" for the blockchain. A Blink might represent "Tip @alice 0.05 SOL," "Mint CoolNFT #42," or "Swap 10 USDC for SOL on Jupiter." When an Action-aware client (like a wallet browser extension or a Discord bot) detects a Blink URL, it unfurls the link into a rich, interactive card with a transaction preview and a "Sign" button.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The key insight is that <strong>Blinks work everywhere URLs work</strong>. Post one on Twitter/X, and anyone with Phantom or another Action-aware wallet sees a live transaction card instead of a plain link. Drop one in Discord, and a bot can render it as an interactive button. Embed one in an email, and it becomes a one-click payment flow. The dApp's UI is no longer the bottleneck—any surface that displays URLs becomes a potential transaction origin.
           </p>

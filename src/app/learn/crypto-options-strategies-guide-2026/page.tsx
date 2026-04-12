@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto Options Strategies 2026: Calls, Spreads & More | degen0x",
@@ -177,6 +179,16 @@ export default function CryptoOptionsStrategiesGuide() {
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Crypto's implied volatility—typically 60-120% annualized—is 4-8x higher than equities (15-30%). This extreme volatility is a feature, not a bug: it creates massive opportunities for options traders. High IV means option premiums are fat, spreads wider, and leverage more accessible. Both buyers and sellers of options can profit, but only if they deploy the right strategy at the right time.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             A covered call seller during extreme bullishness can collect 30-50% annualized yield. A straddle buyer before a major ETF decision can 3x their money in days. A bear put spread seller during a panic can lock in consistent income. Options let you monetize any market view: bullish, bearish, or flat. Learn the basics in our <Link href="/learn/defi-options-trading-guide-2026" style={{ color: S.link, textDecoration: "underline" }}>DeFi Options Trading Guide</Link>, then come back here to master advanced strategies.
           </p>
@@ -198,6 +210,16 @@ export default function CryptoOptionsStrategiesGuide() {
                 <div style={{ fontWeight: 700, marginBottom: 8, color: S.green }}>✓ Price stays $48k</div>
                 <div style={{ color: S.text2 }}>Keep 1 BTC + $2k premium = +$2k profit</div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-01"
+          updatedDate="2026-03-25"
+          readingTime={7}
+          section="learn"
+        />
+
               <div>
                 <div style={{ fontWeight: 700, marginBottom: 8, color: S.yellow }}>⚡ Price hits $50k exactly</div>
                 <div style={{ color: S.text2 }}>Sell 1 BTC + $2k premium = $52k total</div>
@@ -484,6 +506,14 @@ export default function CryptoOptionsStrategiesGuide() {
           <div style={{ fontSize: 14, fontWeight: 700, color: S.orange, marginBottom: 8 }}>⚠️ Disclaimer</div>
           <p style={{ fontSize: 13, color: S.text2, lineHeight: 1.8, margin: 0 }}>
             This guide is for informational and educational purposes only. It does not constitute financial advice, investment recommendations, or an offer to buy or sell any financial instrument. Options trading involves substantial risk of loss and is not suitable for all investors. Past performance does not guarantee future results. Crypto assets are volatile and speculative. Always do your own research, consult a financial advisor, and never risk more than you can afford to lose.
+          </p>
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
       </article>

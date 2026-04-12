@@ -30,6 +30,16 @@ export default function LiFiGuidePage(){return(<main style={{backgroundColor:S.b
 <section style={{marginBottom:36}}>
 <h2 style={{fontSize:"1.5rem",fontWeight:800,marginBottom:12,color:C}}>What is Li.Fi?</h2>
 <p style={{color:S.text2,lineHeight:1.8,marginBottom:14}}>Li.Fi is a <strong style={{color:S.text}}>cross-chain bridge and DEX aggregator</strong> that finds the optimal route to swap and bridge tokens across 30+ blockchain networks in a single transaction. Instead of manually choosing bridges (Across, Stargate, Connext, etc.), Li.Fi's smart routing algorithm automatically selects the fastest and cheapest path.</p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
 <p style={{color:S.text2,lineHeight:1.8}}>No wrapped assets, no fragmented liquidity—just one wallet connection to the entire multichain ecosystem.</p>
 </section>
 

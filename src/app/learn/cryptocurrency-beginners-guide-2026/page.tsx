@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Cryptocurrency for Beginners: Complete Guide 2026 | degen0x",
@@ -121,6 +123,16 @@ export default function CryptocurrencyBeginnersGuide() {
           <div style={{ marginTop: 12, fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 13 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-29"
+          updatedDate="2026-03-29"
+          readingTime={7}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 32 }}>
           <h2 style={{ fontSize: 14, fontWeight: 700, marginBottom: 12, color: "#58a6ff" }}>Table of Contents</h2>
@@ -145,6 +157,16 @@ export default function CryptocurrencyBeginnersGuide() {
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Cryptocurrency is digital money secured by cryptography and blockchain technology. Unlike traditional currencies issued and controlled by governments (fiat money like USD or EUR), cryptocurrencies are decentralized, peer-to-peer, and transparent. Bitcoin, created in 2009, was the first cryptocurrency and remains the most valuable, with a market cap of ~$1.4 trillion as of early 2026.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Cryptocurrencies enable instant, low-cost transactions globally without banks, governments, or intermediaries. You control your coins with a private key (your wallet). Every transaction is recorded on a public ledger (the blockchain) that anyone can verify. This transparency and immutability make cryptocurrencies ideal for remittances, cross-border payments, and programmable money.
           </p>
@@ -536,6 +558,14 @@ export default function CryptocurrencyBeginnersGuide() {
         </section>
 
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

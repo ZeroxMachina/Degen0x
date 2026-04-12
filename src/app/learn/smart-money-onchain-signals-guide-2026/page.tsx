@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -248,6 +250,16 @@ export default function SmartMoneyOnchainSignalsGuide2026() {
           <div style={S.meta}>Updated March 2026 · 15 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-03-28"
+          readingTime={8}
+          section="learn"
+        />
+
+
         {/* ── Table of Contents ── */}
         <nav style={S.toc} aria-label="Table of Contents">
           <h2 style={S.tocTitle}>📋 Table of Contents</h2>
@@ -270,6 +282,16 @@ export default function SmartMoneyOnchainSignalsGuide2026() {
           <p style={S.p}>
             Smart money refers to capital controlled by entities that consistently outperform the market — institutional investors, venture capital funds, experienced whale traders, and protocol treasuries. Unlike traditional finance where this activity is hidden behind opaque brokerage accounts, crypto&apos;s public blockchain means you can watch these players move in real time.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={S.p}>
             On-chain analytics platforms like Nansen and Arkham Intelligence have categorized thousands of wallet addresses by entity type: VCs, market makers, exchange hot wallets, MEV bots, early DeFi farmers, and more. When five whale wallets independently reach the same conclusion — say, all going long BTC within a 24-hour window — that convergence is a meaningful signal.
           </p>
@@ -656,6 +678,14 @@ export default function SmartMoneyOnchainSignalsGuide2026() {
         </section>
 
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

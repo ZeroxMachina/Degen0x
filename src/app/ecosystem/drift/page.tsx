@@ -54,6 +54,16 @@ export default function DriftGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Drift Protocol is the most comprehensive decentralized exchange on Solana, offering perpetual futures, spot trading, lending/borrowing, and yield vaults — all in one platform. Drift uses a <strong style={{ color: S.text }}>virtual AMM (vAMM)</strong> backed by a backstop liquidity pool, enabling deep liquidity for 50+ perpetual markets.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -82,6 +92,17 @@ export default function DriftGuidePage() {
             Trade on Drift →
           </a>
         </div>
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/cross-chain-bridges-interoperability-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Cross Chain Bridges Interoperability Guide 2026</a></li>
+            <li><a href="/learn/crypto-custody-solutions-institutional-mpc-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Custody Solutions Institutional Mpc Guide 2026</a></li>
+            <li><a href="/learn/crypto-kyc-aml-compliance-travel-rule-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Kyc Aml Compliance Travel Rule Guide 2026</a></li>
+            <li><a href="/learn/crypto-order-types-explained" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Order Types Explained</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

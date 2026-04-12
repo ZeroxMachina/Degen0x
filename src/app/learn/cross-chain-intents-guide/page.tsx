@@ -82,6 +82,16 @@ export default function CrossChainIntentsGuidePage() {
           <p style={{fontSize:15,color:"#c9d1d9",lineHeight:1.8,marginBottom:16}}>
             An <strong style={{color:S.text}}>intent</strong> is a signed message that describes a desired outcome rather than a specific execution path. Instead of telling a blockchain <em>"call this bridge contract, lock these tokens, wait for confirmation, then release on the other side,"</em> you simply declare: <em>"I have 1 ETH on Arbitrum and I want USDC on Base."</em>
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{fontSize:15,color:"#c9d1d9",lineHeight:1.8,marginBottom:16}}>
             A network of third-party <strong style={{color:S.text}}>fillers</strong> (also called solvers or relayers) competes to execute your intent. The fastest filler fronts their own capital to give you USDC on Base immediately, then gets reimbursed through a settlement layer. You get native assets — no wrapped tokens, no multi-step UX, and typically sub-minute execution.
           </p>
@@ -259,6 +269,14 @@ export default function CrossChainIntentsGuidePage() {
         {/* ── Disclaimer ── */}
         <div style={{background:`${S.yellow}10`,border:`1px solid ${S.yellow}30`,borderRadius:10,padding:"14px 18px",fontSize:13,color:S.yellow,lineHeight:1.7}}>
           ⚠️ This guide is for informational purposes only. It is not financial advice. Cross-chain transactions carry inherent smart contract and oracle risks. Always do your own research before interacting with any protocol.
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
       <BackToTop />

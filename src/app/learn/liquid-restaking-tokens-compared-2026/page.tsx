@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_NAME } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Liquid Restaking Tokens Compared 2026: weETH vs rsETH vs ezETH — Best LRT Guide | degen0x",
@@ -141,6 +143,16 @@ export default function LiquidRestakingTokensPage() {
                 <div style={{ fontWeight: 700, marginBottom: 4 }}>Total LRT TVL</div>
                 <div style={{ color: S.text2 }}>~$6B+ (as of March 2026)</div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-17"
+          updatedDate="2026-03-17"
+          readingTime={7}
+          section="learn"
+        />
+
               <div>
                 <div style={{ fontWeight: 700, marginBottom: 4 }}>Largest Protocol</div>
                 <div style={{ color: S.text2 }}>Ether.fi (weETH) — $2.8B+</div>
@@ -184,6 +196,16 @@ export default function LiquidRestakingTokensPage() {
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Liquid Restaking Tokens (LRTs) are a relatively new primitive in crypto that stacks yield on top of yield. Here's how it works:
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 24 }}>
             When you deposit ETH (or an Ethereum LST like stETH, rETH, cbETH) into an LRT protocol, your deposit is automatically restaked on EigenLayer. In return, you receive a liquid token (like weETH, rsETH, or ezETH) that you can trade, use as collateral, or provide as liquidity. While your capital is restaked earning yield, your LRT token can work in other DeFi protocols simultaneously—you get double-duty capital efficiency.
           </p>
@@ -832,6 +854,26 @@ export default function LiquidRestakingTokensPage() {
         {/* Disclaimer */}
         <div style={{ background: "#d2992215", border: "1px solid #d2992240", borderRadius: 10, padding: 14, marginTop: 32, fontSize: 12, color: S.yellow, lineHeight: 1.7 }}>
           ⚠️ <strong>Disclaimer:</strong> This guide is for educational purposes only. Liquid restaking is a nascent, high-risk strategy. Slashing, smart contract bugs, and operator misconduct can result in permanent capital loss. Cryptocurrency markets are volatile and unpredictable. Always conduct your own research (DYOR), never invest more than you can afford to lose, and consult a financial advisor if necessary. {SITE_NAME} is not responsible for investment losses, hacks, or slashing events. Past yields do not guarantee future returns.
+        </div>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/courses/blockchain-developer-course-free" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Blockchain Developer Course Free</a></li>
+            <li><a href="/investing/best-ai-crypto-projects-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Ai Crypto Projects 2026</a></li>
+            <li><a href="/investing/best-gaming-crypto-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Gaming Crypto Tokens</a></li>
+            <li><a href="/investing/best-restaking-tokens-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Restaking Tokens 2026</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
 

@@ -43,6 +43,16 @@ export default function HopGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Hop Protocol is one of the original rollup-to-rollup bridges, built specifically for the Ethereum L2 ecosystem. It uses a novel <strong style={{ color: S.text }}>hToken (hop token)</strong> system: instead of waiting for Ethereum settlement, Hop uses intermediate AMMs and "bonders" who front liquidity. Users bridge ETH → Arbitrum and immediately receive ETH on Arbitrum — the bonder is reimbursed later when the canonical bridge settles. Hop is optimized for ETH and stablecoins across Optimism, Arbitrum, Polygon, Base, and Gnosis.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -82,6 +92,17 @@ export default function HopGuidePage() {
           <TradingViewChart symbol="BINANCE:HOPUSDT" height={420} />
         </section>
 
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/privacy-coins-zero-knowledge-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Privacy Coins Zero Knowledge Guide 2026</a></li>
+            <li><a href="/learn/real-yield-defi-protocol-revenue-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Real Yield Defi Protocol Revenue Guide 2026</a></li>
+            <li><a href="/learn/rwa-real-world-assets-tokenization" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Rwa Real World Assets Tokenization</a></li>
+            <li><a href="/learn/sky-protocol-usds-makerdao-rebrand-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Sky Protocol Usds Makerdao Rebrand Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -177,6 +179,16 @@ export default function CryptoCopyTradingGuidePage() {
                 <div style={{ fontSize: 14, fontWeight: 700, color: stat.color }}>{stat.value}</div>
                 <div style={{ fontSize: 11, color: S.text2, marginTop: 6 }}>{stat.label}</div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={5}
+          section="learn"
+        />
+
             ))}
           </div>
 
@@ -209,6 +221,16 @@ export default function CryptoCopyTradingGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Copy trading is a mechanism that automatically replicates the trades of a professional trader (called a "lead trader" or "signal provider") to your own account. When the trader opens a position, your account opens a proportional position. When they close, you close. All execution happens automatically—you don't have to analyze charts, manage risk, or time entries yourself.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
             In crypto markets, copy trading has exploded because:
@@ -677,6 +699,26 @@ export default function CryptoCopyTradingGuidePage() {
             Start small, diversify across traders, monitor weekly, and be ruthless about cutting underperformers. Use our 7-step framework to choose traders wisely. Set strict risk limits (position sizing, leverage caps, stop losses). Track taxes carefully. Only invest capital you can afford to lose. Copy trading can be powerful—if done right.
           </p>
         </section>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/bitcoin-halving-countdown" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Bitcoin Halving Countdown</a></li>
+            <li><a href="/tools/crypto-exchange-fee-comparison-tool" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Exchange Fee Comparison Tool</a></li>
+            <li><a href="/tools/crypto-tax-calculator-free" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Tax Calculator Free</a></li>
+            <li><a href="/tools/ethereum-gas-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Ethereum Gas Tracker</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </main>
   );

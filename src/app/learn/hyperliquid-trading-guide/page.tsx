@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Hyperliquid Trading Guide 2026: Master the #1 Perpetual DEX | degen0x",
@@ -116,12 +118,32 @@ export default function HyperliquidTradingGuidePage() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={16}
+          section="learn"
+        />
+
+
         {/* Section 1: What Is Hyperliquid? */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">What Is Hyperliquid?</h2>
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             Hyperliquid is the market-leading perpetual derivatives exchange in 2026, controlling over 70% of the decentralized perpetual futures market. It operates on its own custom blockchain infrastructure—HyperCore—rather than relying on Ethereum or other existing layer-1s. With $45B+ daily volume peaks, $178B monthly volume, and $4.5B+ total value locked, Hyperliquid has become the de facto standard for on-chain derivatives trading.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             Unlike traditional perpetual DEXs that exist as smart contracts on a shared blockchain, Hyperliquid is a vertical stack optimized from the ground up for high-performance perpetual trading. This architectural choice gives it significant advantages: sub-second finality (~0.2 seconds), 200,000+ orders processed per second, and negligible slippage even on large orders.
           </p>
@@ -698,6 +720,14 @@ export default function HyperliquidTradingGuidePage() {
             This guide is educational only and does not constitute financial advice. Trading perpetual futures on Hyperliquid or any platform involves substantial risk, including liquidation of your entire position and potential losses exceeding your initial investment. Past performance is not indicative of future results. Cryptocurrency and derivatives markets are highly volatile and speculative. Only trade with capital you can afford to lose completely. The regulatory status of perpetual DEXs is uncertain and may change. Always conduct your own research, understand the specific risks of Hyperliquid, test with small positions first, and consider consulting a financial advisor before engaging in derivatives trading. degen0x and its authors assume no liability for trading losses, smart contract risks, liquidations, or regulatory complications.
           </p>
         </section>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
       <BackToTop />
     </main>

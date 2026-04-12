@@ -35,7 +35,17 @@ export default function CustodialVsNonCustodialPage() {
         <p>Non-custodial wallets like MetaMask, Phantom, and Ledger give you sole control through a seed phrase. No third party can freeze your funds or deny access. The responsibility is entirely yours — lose your seed phrase and no one can help you recover. Non-custodial wallets provide full DeFi access, require no personal information, and represent the core crypto principle of financial self-sovereignty. For anyone serious about crypto, learning non-custodial is essential.</p>
       </div>
       <FAQSection faqs={faqs} />
-      <section className="mt-12"><h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Related Content</h2><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/custodial" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Custodial Wallets</h3></Link><Link href="/wallets/learn/what-is-a-crypto-wallet" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Guide</span><h3 className="text-sm font-semibold text-[var(--color-text)]">What Is a Crypto Wallet?</h3></Link></div></section>
+      <section className="mt-12"><h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a0f', border: '1px solid #14532d', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛡️</span>
+            <strong style={{ color: '#22c55e', fontSize: 15 }}>Security Verdict</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
+          </p>
+        </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/custodial" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Custodial Wallets</h3></Link><Link href="/wallets/learn/what-is-a-crypto-wallet" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Guide</span><h3 className="text-sm font-semibold text-[var(--color-text)]">What Is a Crypto Wallet?</h3></Link></div></section>
     </div>
   );
 }

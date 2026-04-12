@@ -31,7 +31,17 @@ export default function Page() {
         <p>Cosmos&apos;s Hub-and-Zone architecture treats each blockchain as a sovereign entity that voluntarily connects to others through IBC. This design philosophy has attracted major projects that want full control over their security, governance, and economic models — dYdX migrated from Ethereum to a sovereign Cosmos chain specifically for this independence. The Cosmos SDK has become one of the most popular blockchain development frameworks, and IBC has facilitated billions in cross-chain transfers. The challenge for ATOM investors is that IBC success does not directly require ATOM, though Interchain Security allows smaller chains to rent security from the Cosmos Hub&apos;s validator set, creating ATOM demand.</p>
         <p>Polkadot&apos;s relay chain model provides shared security to all parachains, meaning new chains benefit immediately from the economic security of DOT stakers without building their own validator sets. This is advantageous for smaller projects that cannot bootstrap sufficient security independently. Parachain auctions create direct demand for DOT as projects lock tokens for slot access, though this model has evolved toward more flexible coretime purchases. The XCM messaging protocol enables tighter integration between parachains than IBC offers between Cosmos zones. For investors, the choice between ATOM and DOT reflects a bet on which interoperability model will dominate — sovereign chains with optional security sharing, or a unified security umbrella with tighter cross-chain integration.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/solana-vs-ethereum" className="text-blue-600 hover:underline">Solana vs Ethereum</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/solana-vs-ethereum" className="text-blue-600 hover:underline">Solana vs Ethereum</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

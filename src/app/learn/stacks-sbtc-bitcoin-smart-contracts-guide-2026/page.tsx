@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Stacks & sBTC Guide 2026: Bitcoin Smart Contracts, DeFi & the Satoshi Upgrades | degen0x",
@@ -150,6 +152,16 @@ export default function StacksSBTCGuidePage() {
                   <div style={{ fontSize: 12, color: S.text2, marginBottom: 4 }}>{item.label}</div>
                   <div style={{ fontSize: 16, fontWeight: 800, color: item.color }}>{item.val}</div>
                 </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-17"
+          updatedDate="2026-03-17"
+          readingTime={8}
+          section="learn"
+        />
+
               ))}
             </div>
           </div>
@@ -183,6 +195,16 @@ export default function StacksSBTCGuidePage() {
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Stacks (STX) is a Layer 2 blockchain that enables smart contracts and DeFi applications to run on Bitcoin. Launched in 2021, Stacks has grown to become the dominant platform for Bitcoin programmability. Unlike Ethereum or other smart contract chains, Stacks is <strong style={{ color: S.text }}>anchored to Bitcoin itself</strong> — meaning every Stacks block references and settles to Bitcoin, inheriting Bitcoin's security.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             The core insight: Bitcoin has intentionally limited functionality for security. Satoshi designed Bitcoin to be a simple value transfer network, not a programmable platform. Stacks unlocks Bitcoin's locked capital and enables complex smart contracts — loans, swaps, yield farming, NFTs — while anchoring all settlement to Bitcoin's immutable ledger.
@@ -820,6 +842,14 @@ export default function StacksSBTCGuidePage() {
         {/* Disclaimer */}
         <div style={{ background: "#d2992215", border: "1px solid #d2992240", borderRadius: 10, padding: 14, marginTop: 32, fontSize: 12, color: S.yellow, lineHeight: 1.7 }}>
           ⚠️ <strong>Disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice. Cryptocurrency investments are highly volatile and risky. You could lose all invested capital. Stacks and sBTC are emerging technologies with significant execution and market risks. Always DYOR (Do Your Own Research), consult a financial advisor before investing, and only invest what you can afford to lose. degen0x does not provide investment advice or guarantee returns on stacking, lending, or DeFi yield.
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
       <BackToTop />

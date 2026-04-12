@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import PayFiYieldCalculator from "@/components/PayFiYieldCalculator";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "PayFi Guide 2026: What Is Payment Finance and How Does It Work? | degen0x",
@@ -175,6 +177,16 @@ export default function PayFiGuidePage() {
         <p className="mb-4" style={{ color: "var(--color-text-secondary)" }}>
           <strong style={{ color: "var(--color-text)" }}>PayFi (Payment Finance)</strong> is an emerging crypto category where payment infrastructure merges with DeFi yield generation. The core insight is simple: in traditional finance, money sits completely idle for 1–3 days during settlement. PayFi captures that idle value by routing settlement funds through lending pools, liquidity protocols, or stablecoin yield strategies — so your money works while it travels.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p className="mb-4" style={{ color: "var(--color-text-secondary)" }}>
           The term was coined by <strong style={{ color: "var(--color-text)" }}>Lily Liu</strong>, President of the Solana Foundation, who framed it around the concept of the <em>time value of money</em>. Her argument: capital locked in archaic settlement systems loses value through opportunity cost. Blockchain can change that by enabling near-instant settlements and deploying idle capital productively, all on-chain and without intermediaries.
         </p>
@@ -371,6 +383,16 @@ export default function PayFiGuidePage() {
                 <p className="text-sm" style={{ color: "var(--color-text-secondary)" }}>{body}</p>
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={5}
+          section="learn"
+        />
+
           ))}
         </div>
       </section>
@@ -501,6 +523,14 @@ export default function PayFiGuidePage() {
           <li><Link href="/learn/onchain-finance-onfi-guide" className="hover:underline">OnFi Guide — On-chain finance and the future of DeFi infrastructure</Link></li>
         </ul>
       </div>
-    </article>
+    
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

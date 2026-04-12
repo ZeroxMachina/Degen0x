@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "SocialFi Guide 2026: Creator Tokens & Farcaster | degen0x",
@@ -110,6 +112,16 @@ export default function SocialfiCreatorTokensGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-01"
+          updatedDate="2026-03-25"
+          readingTime={6}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -133,6 +145,16 @@ export default function SocialfiCreatorTokensGuide() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             SocialFi (Social Finance) is the intersection of social media and decentralized finance. It flips the Web2 model on its head: instead of Big Tech companies owning your social graph and controlling monetization, SocialFi puts you in charge. Your followers, posts, and reputation become on-chain assets you can monetize, trade, or transfer to other platforms.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The SocialFi sector is booming—protocols and apps are accumulating $2.4 billion in market cap as users demand alternatives to Twitter, Instagram, and TikTok. Creators can launch tokens, share revenue with communities, and build loyalty without relying on algorithm overlords. The movement represents a fundamental shift: social networks becoming programmable, transparent, and user-owned.
           </p>

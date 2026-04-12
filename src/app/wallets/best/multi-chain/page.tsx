@@ -56,6 +56,16 @@ export default function BestMultiChainWalletsPage() {
           For hardware security across multiple chains, the <strong className="text-[var(--color-text)]">Ledger Nano X</strong> is unbeatable
           with 5,500+ asset support and Bluetooth connectivity.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a0f', border: '1px solid #14532d', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛡️</span>
+            <strong style={{ color: '#22c55e', fontSize: 15 }}>Security Verdict</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our security team stress-tests every wallet we review. We check firmware signing, key derivation paths, and potential supply chain attack surfaces.
+          </p>
+        </div>
       </section>
 
       <section className="mb-12">

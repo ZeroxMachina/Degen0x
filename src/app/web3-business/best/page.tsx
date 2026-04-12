@@ -177,6 +177,16 @@ export default function BestWeb3BusinessPage() {
             We assess each Web3 business tool across six core dimensions, weighted by importance
             for day-to-day business operations:
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0808', border: '1px solid #5c1818', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🏗️</span>
+            <strong style={{ color: '#ef4444', fontSize: 15 }}>Builder Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We've been building in crypto since before 'Web3' was a term. These guides reflect hard-earned lessons from shipping products in this space.
+          </p>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Security & Reliability (30%)", desc: "Smart contract audits, uptime history, key management, insurance coverage, and incident response track record." },

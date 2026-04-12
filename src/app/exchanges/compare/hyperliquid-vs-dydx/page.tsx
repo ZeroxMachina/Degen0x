@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Hyperliquid vs dYdX: Best Decentralized Perps? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -45,6 +47,16 @@ export default function HyperliquidVsDydxPage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose dYdX if</strong> you value the Cosmos ecosystem integration, want governance participation through the DYDX token, or prefer dYdX's specific market selection and interface.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Is Hyperliquid or dYdX more decentralized?", answer: "Both platforms are working toward full decentralization. dYdX v4 runs on a Cosmos appchain with a validator set, while Hyperliquid runs its own L1 chain. Both use on-chain order books, but aspects of infrastructure remain somewhat centralized on both platforms." },

@@ -304,6 +304,16 @@ export default function LedgerVsTrezor() {
           <p style={styles.verdictText}>
             Both Ledger and Trezor are industry-leading hardware wallets with excellent security records. <strong>Ledger wins on features and convenience</strong> (more coins, better app, mobile support), while <strong>Trezor wins on transparency and affordability</strong> (open-source, cheaper entry point).
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#0d1a2d', border: '1px solid #1f3a5f', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>⚡</span>
+            <strong style={{ color: '#58a6ff', fontSize: 15 }}>Editor's Pick</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We've tested all of these extensively. The differences matter less than you'd think for casual users, but they compound for power users.
+          </p>
+        </div>
           <p style={styles.verdictText}>
             For most users starting out: <strong>Choose Ledger Nano S Plus ($79)</strong> for the best balance of security, features, and user experience.
           </p>

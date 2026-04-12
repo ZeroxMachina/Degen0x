@@ -81,6 +81,16 @@ export default function BestCryptoAppsPage() {
           portfolio tracking. Supported payment methods matter as well. The best apps accept bank
           transfers, debit cards, and digital wallets like Apple Pay for funding.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We are long-term Bitcoin and Ethereum believers. Our analysis of other assets applies the same rigorous framework regardless of personal conviction.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)]">
           Security features are non-negotiable. Biometric login (Face ID or fingerprint), two-factor
           authentication, withdrawal confirmations, and session timeouts protect your account on

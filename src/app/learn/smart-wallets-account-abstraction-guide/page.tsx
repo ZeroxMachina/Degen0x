@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 const title = "Smart Wallets & Account Abstraction Guide";
 const description = "Learn how smart wallets work, the difference between account abstraction and EOAs, and why EIP-7702 is changing crypto forever. Complete beginner guide.";
@@ -279,6 +281,16 @@ export default function SmartWalletsPage() {
             <p className="text-[#c9d1d9] mb-6">
               Smart wallets unlock capabilities that were impossible with traditional EOAs. Here are the key features transforming the wallet landscape:
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6" role="list" aria-label="Smart wallet key features">
               <div role="listitem" className="bg-[#0d1117] border border-[#30363d] rounded-lg p-6">
@@ -323,6 +335,16 @@ export default function SmartWalletsPage() {
                 </p>
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-17"
+          updatedDate="2026-03-17"
+          readingTime={12}
+          section="learn"
+        />
+
 
             <p className="text-[#c9d1d9]">
               These features represent the future of wallet security and UX. They transform wallets from passive keys into active security systems. Instead of "don&apos;t lose your key," the philosophy becomes "even if you lose access, you can recover."
@@ -620,7 +642,15 @@ export default function SmartWalletsPage() {
           </section>
 
           {/* Related Guides */}
-          </article>
+          
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
           <nav aria-label="Related wallet and security guides" className="mb-12 pt-8 border-t border-[#30363d]">
             <h2 className="text-3xl font-bold text-[#e6edf3] mb-6">Related Guides</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

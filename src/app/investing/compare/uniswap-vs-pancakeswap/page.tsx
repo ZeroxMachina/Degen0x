@@ -31,7 +31,17 @@ export default function Page() {
         <p>Uniswap&apos;s dominance stems from pioneering innovations that defined the DEX category. The v3 concentrated liquidity model dramatically improved capital efficiency, and UniswapX introduced intent-based trading that routes orders across multiple liquidity sources including private market makers for optimal execution. Uniswap&apos;s deployment on every major Ethereum L2 ensures it captures volume wherever Ethereum ecosystem users trade. The UNI token governs a substantial treasury and the protocol, with the unactivated fee switch representing latent value — if activated, it would direct a portion of the billions in annual trading fees to UNI holders, representing one of the largest potential value unlocks in DeFi.</p>
         <p>PancakeSwap&apos;s competitive advantage is its value-first approach for everyday traders. No frontend fees, active CAKE buybacks from protocol revenue, and consistent feature delivery have built strong user loyalty on BNB Chain and beyond. PancakeSwap&apos;s multi-chain expansion to Ethereum, Arbitrum, Base, and zkSync demonstrates ambition beyond its BNB Chain roots. The CAKE tokenomics model with regular burns and staking rewards provides immediate, tangible value to token holders — a contrast with UNI&apos;s governance-only utility. For investors, UNI is a bet on the DEX category leader with enormous latent value if the fee switch activates. CAKE is a bet on a profitable, value-accruing DEX token at a lower market capitalization with active revenue distribution.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/aave-vs-compound" className="text-blue-600 hover:underline">Aave vs Compound</Link></li><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/aave-vs-compound" className="text-blue-600 hover:underline">Aave vs Compound</Link></li><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

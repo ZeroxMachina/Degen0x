@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best No-KYC Crypto Exchanges in ${CURRENT_YEAR}`,
@@ -123,6 +125,16 @@ export default function NoKycPage() {
                 <span className="text-sm text-[var(--color-primary)]">{option.type}</span>
               </div>
             </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
             <p className="text-[var(--color-text-secondary)] mb-4">{option.description}</p>
             <div className="flex flex-wrap gap-2 mb-3">
               {option.features.map((feature) => (

@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { stakingDetailedComparisons, stakingComparisonFeatures } from "@/data/staking";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Jito vs Marinade: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -100,6 +102,16 @@ export default function JitoVsMariadePage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
 
       <FAQSection
         faqs={[

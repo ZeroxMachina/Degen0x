@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // Metadata configuration
 export const metadata: Metadata = {
@@ -117,6 +119,16 @@ export default function CryptoCustodyGuidePage() {
               <span>10 min read</span>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={9}
+          section="learn"
+        />
+
         </div>
       </section>
 
@@ -143,6 +155,16 @@ export default function CryptoCustodyGuidePage() {
           <p className="text-[#e6edf3] leading-relaxed mb-4">
             Custody—the safekeeping and control of digital assets—is foundational to crypto adoption. The right custody solution protects your capital, ensures compliance, enables institutional participation, and provides peace of mind in an ecosystem where mistakes are permanent and irreversible.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
           <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 my-6">
             <h3 className="font-semibold text-[#58a6ff] mb-3">Why Custody is Critical:</h3>

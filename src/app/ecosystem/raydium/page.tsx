@@ -54,6 +54,16 @@ export default function RaydiumGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Raydium is the dominant AMM and liquidity hub on Solana. Unlike standard AMMs, Raydium's pools share liquidity with Solana's OpenBook (formerly Serum) central limit order book, enabling tighter spreads and better execution. Raydium powers the majority of memecoin launches on Solana through its <strong style={{ color: S.text }}>LaunchLab</strong> integration with pump.fun.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -81,6 +91,17 @@ export default function RaydiumGuidePage() {
             Open Raydium →
           </a>
         </div>
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/crypto-options-onchain-derivatives-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Options Onchain Derivatives Guide 2026</a></li>
+            <li><a href="/learn/crypto-portfolio-construction-position-sizing-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Portfolio Construction Position Sizing Guide 2026</a></li>
+            <li><a href="/learn/crypto-staking-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Staking Guide 2026</a></li>
+            <li><a href="/learn/dao-governance-onchain-voting-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Dao Governance Onchain Voting Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

@@ -35,7 +35,17 @@ export default function MultisigVsSingleKeyPage() {
         <p>Single-key wallets offer simplicity and speed — one person, one key, instant signing. They are practical for everyday DeFi, trading, and moderate holdings. The risk is concentration: your entire security depends on one seed phrase. For individuals with good seed phrase practices, single-key works well. For organizations or large portfolios, multisig security is worth the added complexity and cost.</p>
       </div>
       <FAQSection faqs={faqs} />
-      <section className="mt-12"><h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Related Content</h2><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/learn/multisig-setup-guide" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Guide</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Multisig Setup Guide</h3></Link><Link href="/wallets/reviews/safe-wallet" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Review</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Safe Wallet Review</h3></Link></div></section>
+      <section className="mt-12"><h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a0f', border: '1px solid #14532d', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛡️</span>
+            <strong style={{ color: '#22c55e', fontSize: 15 }}>Security Verdict</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
+          </p>
+        </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/learn/multisig-setup-guide" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Guide</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Multisig Setup Guide</h3></Link><Link href="/wallets/reviews/safe-wallet" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Review</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Safe Wallet Review</h3></Link></div></section>
     </div>
   );
 }

@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Protocol Cover Insurance ${CURRENT_YEAR} - DeFi Protocol Protection`,
@@ -105,6 +107,16 @@ export default function ProtocolCoverPage() {
       </div>
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Types of Protocol Risks Covered</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0f1a08', border: '1px solid #365314', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔒</span>
+            <strong style={{ color: '#a3e635', fontSize: 15 }}>Coverage Analysis</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Crypto insurance is still immature. Most policies have exclusions that would surprise you. We highlight what's actually covered, not just what's marketed.
+          </p>
+        </div>
         <div className="grid md:grid-cols-2 gap-6 text-[var(--color-text-secondary)]">
           <div>
             <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">Governance Attacks</h3>
@@ -123,6 +135,16 @@ export default function ProtocolCoverPage() {
             <p>The most straightforward category: code bugs that allow attackers to drain funds. Protocol cover includes all forms of smart contract exploits including reentrancy, integer overflow, and access control issues.</p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="insurance"
+        />
+
       </section>
       <FAQSection faqs={faqs} />
     </div>

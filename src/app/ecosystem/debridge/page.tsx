@@ -43,6 +43,16 @@ export default function DebridgeGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             deBridge is a high-performance cross-chain interoperability protocol that enables zero-slippage asset transfers using an <strong style={{ color: S.text }}>intent-based model</strong> with professional market makers (takers). Users post an order, takers compete to fill it at the best rate, and settlement is atomic. deBridge is one of the few protocols supporting <strong style={{ color: S.text }}>Solana ↔ EVM</strong> transfers with true native assets — no wrapped token intermediaries.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -77,6 +87,17 @@ export default function DebridgeGuidePage() {
           <TradingViewChart symbol="BINANCE:DBRUSDT" height={420} />
         </section>
 
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/crypto-portfolio-construction-position-sizing-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Portfolio Construction Position Sizing Guide 2026</a></li>
+            <li><a href="/learn/crypto-staking-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Staking Guide 2026</a></li>
+            <li><a href="/learn/dao-governance-onchain-voting-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Dao Governance Onchain Voting Guide 2026</a></li>
+            <li><a href="/learn/decentralized-storage-filecoin-arweave-ipfs-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Decentralized Storage Filecoin Arweave Ipfs Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

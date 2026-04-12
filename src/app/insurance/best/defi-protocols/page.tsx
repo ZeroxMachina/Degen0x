@@ -144,6 +144,16 @@ export default function DefiProtocolsInsurancePage() {
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">How DeFi Protocol Insurance Works</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0f1a08', border: '1px solid #365314', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔒</span>
+            <strong style={{ color: '#a3e635', fontSize: 15 }}>Coverage Analysis</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Crypto insurance is still immature. Most policies have exclusions that would surprise you. We highlight what's actually covered, not just what's marketed.
+          </p>
+        </div>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <p>
             DeFi protocol insurance creates a financial safety net for your deposited funds. When you purchase cover, you pay a premium (typically 2-6% annually) for a specific coverage amount and duration. If the covered protocol suffers a qualifying event, you can file a claim to recover your losses.

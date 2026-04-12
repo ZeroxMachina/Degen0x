@@ -31,7 +31,17 @@ export default function Page() {
         <p>Bitcoin&apos;s investment case has strengthened enormously with spot ETF approval, growing institutional adoption, and increasing recognition as a legitimate macro asset alongside gold and equities. Bitcoin&apos;s network effect is unassailable — it has the most miners, the most nodes, the deepest liquidity, and the strongest brand recognition of any cryptocurrency. The Lightning Network addresses Bitcoin&apos;s payment limitations by enabling instant, near-free transactions on Layer 2, which diminishes one of Litecoin&apos;s original advantages. Bitcoin&apos;s fixed 21 million supply with quadrennial halvings creates a clear, predictable monetary policy that institutional investors appreciate.</p>
         <p>Litecoin&apos;s value proposition has narrowed but not disappeared. It remains one of the most widely supported cryptocurrencies across exchanges, payment processors, and crypto ATMs globally. Faster 2.5-minute blocks provide quicker on-chain confirmation for merchants and users who prefer base-layer transactions. Litecoin often serves as a testing ground for Bitcoin upgrades — it adopted SegWit and the Lightning Network before Bitcoin. Potential ETF approval could serve as a price catalyst. However, Litecoin faces existential questions about long-term relevance as Bitcoin&apos;s Layer 2 ecosystem matures and newer chains offer vastly superior technology. For most investors, Bitcoin provides a strictly better risk-adjusted investment, though Litecoin&apos;s low valuation relative to its network longevity presents a speculative opportunity.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li><li><Link href="/investing/learn/bitcoin-etf-complete-guide" className="text-blue-600 hover:underline">Bitcoin ETF Complete Guide</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li><li><Link href="/investing/learn/bitcoin-etf-complete-guide" className="text-blue-600 hover:underline">Bitcoin ETF Complete Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

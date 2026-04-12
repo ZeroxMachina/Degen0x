@@ -30,6 +30,16 @@ export default function RenzoGuidePage(){return(<main style={{backgroundColor:S.
 <section style={{marginBottom:36}}>
 <h2 style={{fontSize:"1.5rem",fontWeight:800,marginBottom:12,color:C}}>What is Renzo?</h2>
 <p style={{color:S.text2,lineHeight:1.8,marginBottom:14}}>Renzo is a <strong style={{color:S.text}}>liquid restaking protocol</strong> that abstracts the complexity of EigenLayer. Instead of navigating EigenLayer's operator sets and AVS selection directly, Renzo lets you deposit ETH or other liquid staking tokens (LSTs) and receive <strong style={{color:S.text}}>ezETH</strong>—a liquid token earning restaking rewards automatically.</p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
 <p style={{color:S.text2,lineHeight:1.8}}>Renzo simplifies restaking for everyday users while optimizing operator and AVS selection behind the scenes.</p>
 </section>
 

@@ -75,6 +75,16 @@ export default function BestDefiLendingPage() {
         <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Our Methodology</h2>
           <p className="text-[var(--color-text-secondary)] mb-4">We evaluate each DeFi protocol across six key categories:</p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0f2e', border: '1px solid #3b1f5e', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>⚠️</span>
+            <strong style={{ color: '#c084fc', fontSize: 15 }}>Risk Assessment</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            APY is the bait, but smart contract risk is the hook. We prioritize protocols with multiple independent audits and active bug bounty programs.
+          </p>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Security (30%)", desc: "Audit history, bug bounty programs, exploit track record, and code maturity." },

@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `LooksRare vs X2Y2: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -69,6 +71,16 @@ export default function LooksRareVsX2Y2Page() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="nfts"
+        />
+
       <FAQSection faqs={[
         { question: "Are LooksRare and X2Y2 still active?", answer: "Both platforms continue to operate, though their trading volumes have declined significantly from their peaks. The launch of Blur with zero fees captured much of the active Ethereum trading market. Both platforms maintain their token reward programs and core features." },
         { question: "Is wash trading a concern on these platforms?", answer: "Both LooksRare and X2Y2 experienced significant wash trading during their initial token reward phases, as traders executed fake trades to farm token rewards. Both platforms have implemented measures to reduce wash trading, including adjusted reward calculations and volume requirements." },

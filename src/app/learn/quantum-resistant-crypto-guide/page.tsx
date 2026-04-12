@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Quantum-Resistant Crypto: Protect Your Holdings 2026 | degen0x",
@@ -121,6 +123,16 @@ export default function QuantumResistantCryptoGuide() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={9}
+          section="learn"
+        />
+
+
         {/* Section 1: What Is the Quantum Threat? */}
         <section className="mb-12">
           <h2 className="text-3xl font-bold text-[#e6edf3] mb-4">
@@ -130,6 +142,16 @@ export default function QuantumResistantCryptoGuide() {
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             Bitcoin, Ethereum, and most existing blockchains rely on cryptographic algorithms that are mathematically secure against classical computers. The problem? They're vulnerable to quantum computers. This vulnerability doesn't come from a flaw in the design—it comes from fundamental mathematical shortcuts that quantum computers can exploit.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             Your crypto's security depends on two main algorithms: <span className="text-[#58a6ff]">ECDSA (Elliptic Curve Digital Signature Algorithm)</span> for signing transactions and <span className="text-[#58a6ff]">SHA-256</span> for hashing. Both are at risk. Here's why:

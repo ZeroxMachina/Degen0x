@@ -152,6 +152,16 @@ export default function BusinessBankingPage() {
           Before applying for a business bank account, prepare the following to improve your chances
           of approval and speed up the onboarding process:
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0808', border: '1px solid #5c1818', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🏗️</span>
+            <strong style={{ color: '#ef4444', fontSize: 15 }}>Builder Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We've been building in crypto since before 'Web3' was a term. These guides reflect hard-earned lessons from shipping products in this space.
+          </p>
+        </div>
         <ul className="space-y-2 text-[var(--color-text-secondary)]">
           <li className="flex items-start gap-2"><span className="text-[var(--color-primary)]">&#10003;</span> Legal entity formation documents (Articles of Organization, Certificate of Formation)</li>
           <li className="flex items-start gap-2"><span className="text-[var(--color-primary)]">&#10003;</span> EIN or equivalent tax identification number</li>

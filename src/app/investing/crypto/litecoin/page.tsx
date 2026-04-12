@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `How to Invest in Litecoin (LTC) ${CURRENT_YEAR} - Complete Guide`,
@@ -46,6 +48,16 @@ export default function LitecoinPage() {
           <div><p className="text-xs text-[var(--color-text-secondary)]">Max Supply</p><p className="text-sm font-semibold text-[var(--color-text)]">84,000,000 LTC</p></div>
           <div><p className="text-xs text-[var(--color-text-secondary)]">Consensus</p><p className="text-sm font-semibold text-[var(--color-text)]">Proof of Work (Scrypt)</p></div>
         </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
       </div>
 
       <section className="mb-12">
@@ -57,6 +69,16 @@ export default function LitecoinPage() {
           uses the memory-hard Scrypt mining algorithm, and has a maximum supply of 84 million coins.
           It has operated continuously for over a decade with near-perfect uptime.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We are long-term Bitcoin and Ethereum believers. Our analysis of other assets applies the same rigorous framework regardless of personal conviction.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)]">
           Litecoin has historically served as a testbed for Bitcoin upgrades, being the first major
           cryptocurrency to activate Segregated Witness (SegWit) and one of the first to implement

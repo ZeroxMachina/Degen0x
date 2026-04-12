@@ -1,0 +1,118 @@
+// ─── Learn Pages: April 4, 2026 (Build v4) ─────────────────────────────────
+// Topics: Post-Quantum Cryptography & Quantum-Resistant Crypto, Token Unlocks & Vesting Schedules
+
+import { PageData } from "@/lib/types";
+
+export const postQuantumCryptographyGuide2026Page: PageData = {
+  slug: "/learn/post-quantum-cryptography-quantum-resistant-crypto-guide-2026",
+  title: "Post-Quantum Cryptography Guide 2026 — Quantum-Resistant Crypto | degen0x",
+  description:
+    "Complete guide to post-quantum cryptography in crypto for 2026. Learn how quantum computers threaten blockchain security, NIST post-quantum standards (Dilithium, Falcon, SPHINCS+), quantum-resistant projects like Naoris Protocol, QRL, and Cellframe, and how to prepare your portfolio for Q-Day.",
+  category: "learn",
+  subcategory: "security",
+  tags: [
+    "post-quantum",
+    "quantum-resistant",
+    "cryptography",
+    "nist",
+    "dilithium",
+    "falcon",
+    "sphincs",
+    "naoris-protocol",
+    "qrl",
+    "cellframe",
+    "algorand",
+    "ethereum",
+    "q-day",
+    "blockchain-security",
+    "encryption",
+  ],
+  publishedAt: "2026-04-04T00:00:00Z",
+  updatedAt: "2026-04-04T00:00:00Z",
+  difficulty: "intermediate",
+  readingTime: 14,
+  wordCount: 3000,
+  status: "queued",
+  seo: {
+    targetKeyword: "post quantum cryptography crypto guide 2026",
+    titleTag: "Post-Quantum Cryptography Guide 2026 — Quantum-Resistant Crypto | degen0x",
+    metaDescription:
+      "Complete post-quantum cryptography guide for 2026. NIST standards, quantum-resistant blockchains (Naoris, QRL, Cellframe), Q-Day timeline, and how to protect your crypto portfolio from quantum threats.",
+    schemas: ["Article", "FAQPage", "BreadcrumbList"],
+    internalLinks: [
+      "/learn/zero-knowledge-proofs-zkp-complete-guide-2026",
+      "/learn/crypto-wallet-security-guide-2026",
+      "/learn/ethereum-glamsterdam-upgrade-guide-2026",
+      "/learn/smart-contract-security-audits-defi-safety-guide-2026",
+      "/learn/decentralized-identity-did-verifiable-credentials-guide-2026",
+    ],
+  },
+  toc: [
+    { id: "what-is-post-quantum", title: "What Is Post-Quantum Cryptography?" },
+    { id: "quantum-threat", title: "The Quantum Threat to Crypto" },
+    { id: "nist-standards", title: "NIST Post-Quantum Standards" },
+    { id: "quantum-resistant-projects", title: "Quantum-Resistant Blockchain Projects" },
+    { id: "major-chains-preparing", title: "How Major Chains Are Preparing" },
+    { id: "algorithms-explained", title: "Post-Quantum Algorithms Explained" },
+    { id: "timeline", title: "Timeline: When Does This Matter?" },
+    { id: "prepare-portfolio", title: "How to Prepare Your Crypto Portfolio" },
+    { id: "faq", title: "FAQ" },
+  ],
+};
+
+export const tokenUnlocksVestingSchedulesGuide2026Page: PageData = {
+  slug: "/learn/token-unlocks-vesting-schedules-guide-2026",
+  title: "Token Unlocks & Vesting Schedules Guide 2026 | degen0x",
+  description:
+    "Complete guide to token unlocks and vesting schedules in 2026. Learn how cliff, linear, and milestone vesting work, who gets locked tokens, how unlocks affect prices, major upcoming unlocks (Hyperliquid, Sui, Ethena), tracking tools, and trading strategies around token unlock events.",
+  category: "learn",
+  subcategory: "tokenomics",
+  tags: [
+    "token-unlocks",
+    "vesting-schedules",
+    "cliff-vesting",
+    "linear-vesting",
+    "tokenomics",
+    "token-supply",
+    "sell-pressure",
+    "hyperliquid",
+    "sui",
+    "ethena",
+    "tokenomist",
+    "cryptorank",
+    "tge",
+    "circulating-supply",
+    "trading-strategy",
+  ],
+  publishedAt: "2026-04-04T00:00:00Z",
+  updatedAt: "2026-04-04T00:00:00Z",
+  difficulty: "beginner",
+  readingTime: 12,
+  wordCount: 3000,
+  status: "queued",
+  seo: {
+    targetKeyword: "token unlocks vesting schedule guide 2026",
+    titleTag: "Token Unlocks & Vesting Schedules Guide 2026 | degen0x",
+    metaDescription:
+      "Complete token unlocks guide for 2026. Cliff vs linear vesting, who gets locked tokens, price impact analysis, major April 2026 unlocks ($600M+), tracking tools, and trading strategies.",
+    schemas: ["Article", "FAQPage", "BreadcrumbList"],
+    internalLinks: [
+      "/learn/tokenomics-crypto-token-economics-guide-2026",
+      "/learn/crypto-airdrops-farming-guide-2026",
+      "/learn/crypto-staking-guide-2026",
+      "/learn/hyperliquid-perp-dex-trading-guide-2026",
+      "/learn/crypto-points-programs-pre-token-loyalty-guide-2026",
+    ],
+  },
+  toc: [
+    { id: "what-are-token-unlocks", title: "What Are Token Unlocks?" },
+    { id: "how-vesting-works", title: "How Vesting Schedules Work" },
+    { id: "types-of-unlocks", title: "Types of Token Unlocks" },
+    { id: "who-gets-locked-tokens", title: "Who Gets Locked Tokens?" },
+    { id: "price-impact", title: "How Token Unlocks Affect Price" },
+    { id: "major-unlocks-2026", title: "Major Token Unlocks in 2026" },
+    { id: "tracking-tools", title: "Tools for Tracking Token Unlocks" },
+    { id: "trading-strategies", title: "Trading Strategies Around Token Unlocks" },
+    { id: "faq", title: "FAQ" },
+  ],
+};

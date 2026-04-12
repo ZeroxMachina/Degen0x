@@ -119,6 +119,16 @@ export default function SeiNetworkGuide() {
           <p style={{ color: "var(--color-text-secondary)", lineHeight: 1.6, marginBottom: "1rem" }}>
             Sei Network is a Layer 1 blockchain specifically optimized for trading and decentralized finance (DeFi). Launched in August 2023 and significantly upgraded to Sei V2 in mid-2024, it&apos;s the first blockchain to implement parallelized EVM execution across all transaction types.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: "var(--color-text-secondary)", lineHeight: 1.6, marginBottom: "1rem" }}>
             While most blockchains execute transactions sequentially, Sei processes multiple transactions in parallel when they don&apos;t conflict, dramatically increasing throughput. This innovation makes Sei ideal for high-frequency trading, AMMs, and complex DeFi compositions.
           </p>
@@ -476,6 +486,14 @@ export default function SeiNetworkGuide() {
         </section>
 
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </>
   );

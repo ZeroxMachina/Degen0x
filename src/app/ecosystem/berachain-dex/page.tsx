@@ -87,6 +87,16 @@ export default function BerchainBexPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Berachain Bex is the native decentralized exchange on the Berachain L1 blockchain, introducing Proof of Liquidity (PoL)—a groundbreaking concept where liquidity providers earn protocol rewards based on their contribution. Unlike traditional DEX governance that prioritizes traders, Bex directly incentivizes and rewards LPs as core protocol participants.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Bex integrates natively with Berachain's consensus economics. Liquidity providers who contribute to deep pools earn PoL rewards, which can be used to vote in governance or stake in validators. This creates a virtuous cycle where deep liquidity is rewarded, improving trading execution for all users.
           </p>

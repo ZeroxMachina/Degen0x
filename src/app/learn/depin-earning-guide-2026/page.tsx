@@ -3,6 +3,8 @@ import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "How to Earn Crypto with DePIN Nodes in 2026 — Complete Guide | degen0x",
@@ -154,6 +156,16 @@ export default function DepinEarningGuide2026() {
           networks. Instead of Amazon, Google, or AT&T owning the infrastructure, you do. And you get paid
           in tokens for your contribution.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           The DePIN sector hit record revenue of $2.6M in January 2026, with protocols like Helium and XNET
           posting 600%+ year-over-year revenue growth. Analysts project the broader DePIN market could reach
@@ -488,6 +500,16 @@ export default function DepinEarningGuide2026() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-03-24"
+          readingTime={6}
+          section="learn"
+        />
+
       </section>
 
       {/* Risks */}

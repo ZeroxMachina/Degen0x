@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { Product } from "@/lib/types";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Ways to Spend Crypto in ${CURRENT_YEAR} - Cards, Apps & More | ${SITE_NAME}`,
@@ -178,6 +180,16 @@ export default function BestSpendingPage() {
                         {product.rating}/5
                       </div>
                     </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="spending"
+        />
+
                   </div>
                   <a
                     href={product.affiliateUrl}
@@ -251,6 +263,16 @@ export default function BestSpendingPage() {
           <p className="text-[var(--color-text-secondary)] mb-4">
             We evaluate each crypto spending product across five key categories:
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0a1e', border: '1px solid #4a1259', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛒</span>
+            <strong style={{ color: '#d946ef', fontSize: 15 }}>Spending Reality</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Spending crypto should be a conscious choice, not a default. We cover the tax implications and opportunity costs that most spending guides ignore.
+          </p>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Rewards & Cashback (30%)", desc: "Cashback rates, reward currencies, bonus categories, and overall earning potential." },

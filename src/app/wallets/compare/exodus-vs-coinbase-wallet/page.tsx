@@ -6,6 +6,8 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem } from "@/lib/types";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Exodus vs Coinbase Wallet (${CURRENT_YEAR}): Self-Custody Wallet Comparison | ${SITE_NAME}`,
@@ -92,6 +94,16 @@ export default function ExodusVsCoinbaseWalletPage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="CipherPunk_42"
+          role="Security & QA"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="wallets"
+        />
+
 
       <section className="mb-12 mt-10">
         <div className="grid md:grid-cols-2 gap-4">

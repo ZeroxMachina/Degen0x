@@ -62,6 +62,16 @@ export default function BalancerGuidePage() {
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             Balancer is a generalized Automated Market Maker (AMM) enabling LPs to create pools with custom token combinations and weights. While Uniswap limits you to 50/50 pools (e.g., 50% ETH / 50% USDC), Balancer allows 80/20, 60/30/10, or any custom weights across up to 8 tokens in a single pool.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             In 2026, Balancer V3 introduces "Hooks"—similar to Uniswap V4—enabling developers to inject custom logic into pools. Swap hooks, fee structures, liquidity mechanisms, and even entirely new AMM curves can be programmed. This transforms Balancer into a platform for any liquidity mechanism.
           </p>

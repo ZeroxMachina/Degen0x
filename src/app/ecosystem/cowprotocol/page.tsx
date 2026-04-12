@@ -87,6 +87,16 @@ export default function CoWProtocolPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             CoW Protocol (Coincidence of Wants) is a DEX aggregator that revolutionizes how trades are executed by settling orders in batches through a competitive solver mechanism. Instead of executing trades immediately against liquidity pools, CoW Protocol treats every order as a signed intent and allows multiple "solvers" to compete for the best execution path.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7 }}>
             The magic happens in the batch: when multiple orders arrive, solvers look for Coincidences of Wants (COWs) — direct peer-to-peer matches between traders that require zero liquidity pool interaction. Unmatched amounts fall back to the best AMM route. This approach eliminates MEV, reduces slippage, and returns excess value directly to users.
           </p>

@@ -3,6 +3,8 @@ import StructuredData from "@/components/StructuredData";
 import DALayerComparison from "@/components/DALayerComparison";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Data Availability Layer Guide 2026: Celestia vs EigenDA vs Avail",
@@ -146,6 +148,16 @@ export default function DataAvailabilityGuide() {
           process millions of transactions per second, it's the critical bottleneck between today's fragmented
           L2 ecosystem and a future where blockchain can scale to billions of users.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           When a rollup posts a transaction batch, someone needs to store that raw transaction data and make
           it available for fraud proofs or ZK verification. If the data disappears — even briefly — users
@@ -543,6 +555,16 @@ export default function DataAvailabilityGuide() {
             </ul>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={8}
+          section="learn"
+        />
+
 
         <div className="bg-[#0d1117] border border-[#f85149]/30 rounded-lg p-6 mt-6">
           <h4 className="text-[#f85149] font-semibold mb-3">⚠️ Disclaimer</h4>

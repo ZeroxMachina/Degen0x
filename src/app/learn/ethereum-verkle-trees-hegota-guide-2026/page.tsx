@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Ethereum Verkle Trees & Hegota Guide 2026 — Stateless Clients Explained | degen0x",
@@ -240,6 +242,16 @@ export default function VerkleTreesHegotaGuide() {
             <p style={{ lineHeight: 1.7, marginBottom: "1rem", color: "#8b949e" }}>
               The name "Verkle" comes from "Vector commitment" + "Merkle trees." Verkle Trees are a cryptographic data structure designed to represent Ethereum's state (all account balances, smart contract code, storage) with dramatically smaller proof sizes than the current Merkle Patricia Trie (MPT) system.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
             <p style={{ lineHeight: 1.7, marginBottom: "1rem", color: "#8b949e" }}>
               Today, Ethereum uses Merkle Patricia Tries to organize state. When a validator needs to prove that an account has a certain balance or that smart contract storage contains a value, the proof can be 1MB or larger. This forces every Ethereum node to either maintain the full state database (~100GB+) or wait for these large proofs to arrive over the network.
@@ -270,6 +282,16 @@ export default function VerkleTreesHegotaGuide() {
                 </p>
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-25"
+          updatedDate="2026-04-12"
+          readingTime={10}
+          section="learn"
+        />
+
 
             <p style={{ lineHeight: 1.7, color: "#8b949e" }}>
               The key innovation is that Verkle Trees shift from proving "this path through the tree exists" (hash chains) to proving "this value satisfies a polynomial equation at this evaluation point" (vector commitments). The math is different, but the result is the same: cryptographic proof of correctness, just much smaller.
@@ -1095,6 +1117,14 @@ export default function VerkleTreesHegotaGuide() {
 
           {/* Back to Top */}
           <BackToTop />
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
     </>

@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -164,6 +166,16 @@ export default function BitcoinSupplyShockGuidePage() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-23"
+          updatedDate="2026-03-23"
+          readingTime={5}
+          section="learn"
+        />
+
+
         {/* ── Table of Contents ── */}
         <nav
           className="glass rounded-xl p-5 mb-8"
@@ -203,6 +215,16 @@ export default function BitcoinSupplyShockGuidePage() {
               increases, you get a <strong style={{ color: "var(--color-text)" }}>supply shock</strong> — a structural
               imbalance that historically precedes sharp price increases.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
             <p className="mb-4">
               In March 2026, multiple converging forces are creating what on-chain analysts describe as the most
               pronounced supply squeeze in Bitcoin&rsquo;s history. Centralized exchange reserves have plunged to levels

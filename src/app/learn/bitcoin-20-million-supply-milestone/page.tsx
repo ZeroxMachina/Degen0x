@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 import BitcoinSupplyTracker from "@/components/BitcoinSupplyTracker";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Bitcoin 20 Million Coins Mined: Era of Scarcity 2026 | degen0x",
@@ -153,6 +155,16 @@ export default function Bitcoin20MillionGuide() {
           any company, government, or foundation — it was a predictable mathematical milestone baked
           into Bitcoin's code since Satoshi Nakamoto wrote the original whitepaper in 2008.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           The market reacted with a wave of commentary. Bitcoin was trading in the $66,000–$69,000
           range at the time, with a total market cap near <strong className="text-[#e6edf3]">$1.39 trillion</strong> and Bitcoin
@@ -181,6 +193,16 @@ export default function Bitcoin20MillionGuide() {
               <p className="text-[#e6edf3] font-bold text-lg">~114 (year 2140)</p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-14"
+          updatedDate="2026-03-14"
+          readingTime={6}
+          section="learn"
+        />
+
         </div>
       </section>
 

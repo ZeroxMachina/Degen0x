@@ -3,6 +3,8 @@ import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "BTCFi Yield Strategies 2026 — How to Earn Yield on Bitcoin | degen0x",
@@ -153,6 +155,16 @@ export default function BtcfiYieldStrategiesGuide2026() {
           For years, Bitcoin sat idle in wallets while ETH holders earned staking rewards, lending
           interest, and liquidity fees. BTCFi changes that equation.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           The numbers tell the story: BTCFi&apos;s total value locked exploded from $304M in January 2024
           to over $8.6B by mid-2025 — a 28x increase in 18 months. In 2026, institutional players like
@@ -198,6 +210,16 @@ export default function BtcfiYieldStrategiesGuide2026() {
             </p>
             <div className="text-xs text-[#8b949e]">Tokens: BABY | Chain: Bitcoin (native)</div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-03-24"
+          readingTime={5}
+          section="learn"
+        />
+
 
           <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6">
             <div className="flex items-center gap-3 mb-3">

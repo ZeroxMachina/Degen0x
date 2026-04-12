@@ -3,6 +3,8 @@ import StructuredData from "@/components/StructuredData";
 import OptionsPayoffCalculator from "@/components/OptionsPayoffCalculator";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "DeFi Options Trading Guide 2026: Derive, Stryke & Panoptic",
@@ -146,6 +148,16 @@ export default function DefiOptionsGuide() {
           obligation</strong>, to buy or sell a cryptocurrency at a specific price (the strike price) before
           or on a specific date (the expiry). You pay a premium upfront for this right.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           Options are the most flexible derivatives in finance. Unlike perpetual futures — where you have
           unlimited upside and downside — options let you precisely define your risk. The most you can lose
@@ -173,6 +185,16 @@ export default function DefiOptionsGuide() {
               </p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={8}
+          section="learn"
+        />
+
         </div>
 
         <h3 className="text-xl font-semibold text-[#e6edf3] mt-6 mb-4">Key Options Vocabulary</h3>

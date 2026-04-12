@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Crypto to Buy for Beginners in ${CURRENT_YEAR} (10 Picks Ranked)`,
@@ -412,6 +414,16 @@ export default function BestCryptoForBeginnersPage() {
                           {p.symbol}
                         </div>
                       </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
                     </div>
                   </td>
                   <td style={{ padding: "12px 16px" }}>

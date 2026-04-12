@@ -8,6 +8,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -248,6 +250,16 @@ export default function CryptoBearMarketInvestingGuide2026() {
           <div style={S.meta}>Updated March 2026 · 14 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-03-28"
+          readingTime={7}
+          section="learn"
+        />
+
+
         {/* ── Table of Contents ── */}
         <nav style={S.toc} aria-label="Table of Contents">
           <h2 style={S.tocTitle}>📋 Table of Contents</h2>
@@ -270,6 +282,16 @@ export default function CryptoBearMarketInvestingGuide2026() {
           <p style={S.p}>
             Warren Buffett&apos;s most famous advice — &quot;be greedy when others are fearful&quot; — applies to crypto more than any other asset class. Crypto bear markets are brutal: 50-80% drawdowns from all-time highs are routine, not exceptions. Bitcoin has experienced drawdowns of 80%+ three separate times in its history and recovered to new highs every single time.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={S.p}>
             The emotional math is simple but powerful. When Bitcoin drops from $100K to $70K, the same $500 monthly DCA buys significantly more satoshis. Those extra sats compound dramatically when the next bull cycle arrives. Investors who consistently accumulated during the 2022 bear market saw returns exceeding 300% by mid-2024.
           </p>
@@ -676,6 +698,14 @@ export default function CryptoBearMarketInvestingGuide2026() {
         </section>
 
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

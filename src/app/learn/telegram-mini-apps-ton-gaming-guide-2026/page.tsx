@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Telegram Mini Apps & TON Gaming Guide 2026 — Tap-to-Earn & Beyond | degen0x",
@@ -56,6 +58,16 @@ export default function TelegramMiniAppsTonGamingGuidePage() {
           <div style={{ marginTop: 12, fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-03-28"
+          readingTime={4}
+          section="learn"
+        />
+
+
         {/* Key Stats */}
         <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 32 }}>
           <h2 style={{ fontSize: 14, fontWeight: 700, marginBottom: 12, color: "#818cf8" }}>
@@ -104,6 +116,16 @@ export default function TelegramMiniAppsTonGamingGuidePage() {
             <p style={{ marginBottom: 16 }}>
               Telegram Mini Apps (TMAs) are lightweight web applications that run directly inside Telegram chats. Think of them as mini websites — but instead of opening a browser, you interact with them without ever leaving the messaging app. They can handle everything from games and payments to DeFi protocols and NFT marketplaces.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
             <p style={{ marginBottom: 16 }}>
               What makes them powerful is distribution. Telegram has over 1 billion monthly active users, and a mini app can be shared with a single link in any chat. There&apos;s no app store approval, no downloads, no sign-ups. You tap a link, the app loads instantly, and your Telegram account serves as your identity. When combined with TON wallet integration, you have a seamless path from &quot;never used crypto&quot; to &quot;on-chain user&quot; in about 30 seconds.
             </p>
@@ -357,6 +379,26 @@ export default function TelegramMiniAppsTonGamingGuidePage() {
           <div style={{ marginTop: 48, padding: 16, background: "#161b22", border: "1px solid #30363d", borderRadius: 8, fontSize: 12, color: "#8b949e", lineHeight: 1.6 }}>
             <strong>Disclaimer:</strong> This guide is for educational purposes only and does not constitute financial advice. Telegram mini apps and tap-to-earn games carry significant risk — including total loss of time invested and potential scams. Always do your own research before interacting with any crypto application.
           </div>
+        </div>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/crypto-correlation-matrix" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Correlation Matrix</a></li>
+            <li><a href="/tools/crypto-profit-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Profit Calculator</a></li>
+            <li><a href="/tools/eth-burn-tracker-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Eth Burn Tracker Live</a></li>
+            <li><a href="/tools/stablecoin-yield-comparison" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Stablecoin Yield Comparison</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
     </div>

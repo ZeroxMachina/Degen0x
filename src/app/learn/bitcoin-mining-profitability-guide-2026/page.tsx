@@ -3,6 +3,8 @@ import Link from 'next/link'
 import Breadcrumb from '@/components/Breadcrumb'
 import BackToTop from '@/components/BackToTop'
 import { ArrowRight, TrendingUp, Zap, HardDrive, AlertCircle, Info } from 'lucide-react'
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Bitcoin Mining Profitability Guide 2026 | Degen0x Learn',
@@ -103,6 +105,16 @@ export default function MiningProfitabilityPage() {
         </div>
       </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={9}
+          section="learn"
+        />
+
+
       {/* Main Content */}
       <div className="mx-auto max-w-4xl px-6 py-12 sm:px-8 sm:py-16">
         {/* Table of Contents */}
@@ -165,6 +177,16 @@ export default function MiningProfitabilityPage() {
           <p className="mb-4 text-base leading-relaxed" style={{ color: '#8b949e' }}>
             Bitcoin mining is the process of validating transactions and securing the network by solving complex cryptographic puzzles. Miners compete to solve these puzzles, and the first to solve it gets to add a new block to the blockchain and receives a reward consisting of newly minted Bitcoin (block subsidy) plus transaction fees.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p className="mb-4 text-base leading-relaxed" style={{ color: '#8b949e' }}>
             The mining process serves two critical functions: it creates a computational cost to attacking the network, ensuring security through proof-of-work, and it distributes new Bitcoin supply to miners who maintain the network. As mining difficulty increases and block rewards halve periodically, mining economics become increasingly dependent on operational efficiency and electricity costs.
           </p>

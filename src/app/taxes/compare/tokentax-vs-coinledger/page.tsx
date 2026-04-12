@@ -42,6 +42,16 @@ export default function TokenTaxVsCoinLedgerPage() {
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Every jurisdiction has different rules, and they're changing fast. We note when guidance is US-specific vs. internationally applicable.
+          </p>
+        </div>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">User Experience</h3>
         <p className="text-[var(--color-text-secondary)]">CoinLedger excels in user experience with a clean, guided interface that walks users through each step of the tax reporting process. Clear explanations and minimal jargon make it accessible for first-time crypto tax filers. TokenTax has a more utilitarian interface that prioritizes functionality over simplicity, which benefits power users but may overwhelm beginners.</p>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Advanced Trading Support</h3>

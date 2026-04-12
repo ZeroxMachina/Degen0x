@@ -7,6 +7,8 @@ import TableOfContents from "@/components/TableOfContents";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { CRYPTO_TOKENS, INVESTING_FAQS } from "@/data/investing";
 import { Product } from "@/lib/types";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Cryptos to Buy in ${CURRENT_YEAR} - Top Picks for ${CURRENT_MONTH}`,
@@ -80,6 +82,16 @@ export default function BestCryptosToBuyPage() {
           Market capitalization provides a baseline for stability, but we weigh technology
           innovation, developer ecosystem health, and real-world adoption equally.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We are long-term Bitcoin and Ethereum believers. Our analysis of other assets applies the same rigorous framework regardless of personal conviction.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)] mb-4">
           We analyze on-chain metrics including daily active addresses, transaction volume,
           and TVL (Total Value Locked) for smart contract platforms. Developer activity on
@@ -149,6 +161,16 @@ export default function BestCryptosToBuyPage() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
       </section>
 
       <section id="risks" className="mb-12">

@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto Gaming 2026: The Best Play-to-Earn & Web3 Games Right Now",
@@ -45,6 +47,16 @@ export default function CryptoGamingGuidePage() {
               <div className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{s.label}</div>
               <div className="text-sm font-bold" style={{ color: "var(--color-text)" }}>{s.value}</div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
           ))}
         </div>
       </div>
@@ -181,6 +193,26 @@ export default function CryptoGamingGuidePage() {
           ))}
         </div>
       </div>
-    </article>
+    
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/investing/crypto-60-40-portfolio-strategy" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto 60 40 Portfolio Strategy</a></li>
+            <li><a href="/investing/crypto-options-strategies-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Options Strategies Guide</a></li>
+            <li><a href="/investing/when-to-take-profits-crypto" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>When To Take Profits Crypto</a></li>
+            <li><a href="/tools/compound-interest-crypto-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Compound Interest Crypto Calculator</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

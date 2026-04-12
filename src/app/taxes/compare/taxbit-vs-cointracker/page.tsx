@@ -51,6 +51,16 @@ export default function TaxBitVsCoinTrackerPage() {
           provides a more feature-rich experience with better portfolio tracking and wider
           integration coverage.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Every jurisdiction has different rules, and they're changing fast. We note when guidance is US-specific vs. internationally applicable.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)]">
           CoinTracker has significantly more integrations (500+ vs 100+) and supports more
           advanced scenarios through its broader data import capabilities. For users with

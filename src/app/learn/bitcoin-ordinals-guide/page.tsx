@@ -21,6 +21,16 @@ export default function BitcoinOrdinalsGuidePage() {
         <section style={{marginBottom:40}}>
           <h2 style={{fontSize:"1.5rem",fontWeight:800,marginBottom:12,color:S.orange}}>What Are Ordinals?</h2>
           <p style={{color:S.text2,lineHeight:1.8,marginBottom:16}}>Ordinals (developed by Casey Rodarmor) assign a unique serial number to each of Bitcoin's 2.1 quadrillion satoshis (1 BTC = 100M sats). Rare sats get special numbers based on the Ordinals numbering theory (e.g. the first sat of each block, the first sat of each epoch). "Inscriptions" attach arbitrary data — images, text, code — to a specific sat. That sat+inscription combo is essentially a Bitcoin-native NFT.</p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           {[
             {title:"How inscriptions work technically",body:"Inscriptions use Bitcoin's Taproot upgrade (activated Nov 2021) to store data in the 'witness' field of a transaction. This data is cheaper to store than regular transaction data. The inscription is permanently stored on Bitcoin's blockchain — fully on-chain, immutable, censorship-resistant."},
             {title:"Sat rarity tiers",body:"Ordinals defines 6 rarity classes: Common (any regular sat), Uncommon (first sat of each block), Rare (first sat of each difficulty adjustment), Epic (first sat of each halving), Legendary (first sat of each cycle), and Mythic (the genesis sat — sat #0). Rare sats command premiums in secondary markets."},
@@ -73,6 +83,26 @@ export default function BitcoinOrdinalsGuidePage() {
           <h3 style={{fontWeight:800,marginBottom:8,color:S.text}}>₿ Key takeaway</h3>
           <p style={{color:S.text2,lineHeight:1.8,fontSize:14}}>Ordinals, BRC-20, and Runes have proven that Bitcoin holders want more than just store-of-value utility. The Bitcoin ecosystem is developing its own NFT culture, token economy, and DeFi layer — without changing Bitcoin's base layer. The big opportunity: as Bitcoin's security budget faces long-term pressure from declining block subsidies, fees from Ordinals/Runes activity provide an alternative revenue source for miners — aligning ecosystem incentives.</p>
         </section>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/tools/token-vesting-schedule-tracker" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Token Vesting Schedule Tracker</a></li>
+            <li><a href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Coinbase Vs Kraken Vs Gemini</a></li>
+            <li><a href="/courses/blockchain-developer-course-free" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Blockchain Developer Course Free</a></li>
+            <li><a href="/investing/best-ai-crypto-projects-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Ai Crypto Projects 2026</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </main>
   );

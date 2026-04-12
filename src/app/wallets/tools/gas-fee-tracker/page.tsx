@@ -234,6 +234,16 @@ export default function GasFeeTrackerPage() {
       {/* Cost Comparison Table */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Transaction Cost Comparison</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#0a1a0f', border: '1px solid #14532d', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🛡️</span>
+            <strong style={{ color: '#22c55e', fontSize: 15 }}>Security Verdict</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We evaluate wallet security by examining the code, the team, the supply chain, and the recovery options. Marketing claims get zero weight.
+          </p>
+        </div>
         <div className="overflow-x-auto rounded-xl border border-[var(--color-border)]">
           <table className="w-full">
             <thead>

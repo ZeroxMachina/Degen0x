@@ -105,6 +105,16 @@ export default function KatanaPerpsGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             On March 23, 2026, Katana announced it had completed the acquisition of IDEX, a decentralized exchange that&apos;s been operating since 2017. The move wasn&apos;t just about adding a trading product — it was about owning a critical piece of DeFi infrastructure at the chain level.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             IDEX brought three key assets to Katana: a battle-tested order book matching engine, a team with deep expertise in decentralized trading infrastructure, and years of regulatory and operational experience. Rather than building a perps platform from scratch or relying on third-party apps for trading volume, Katana chose to acquire and integrate.
           </p>
@@ -349,6 +359,14 @@ export default function KatanaPerpsGuidePage() {
         {/* ── Disclaimer ── */}
         <div style={{ background: `${S.yellow}08`, border: `1px solid ${S.yellow}25`, borderRadius: 12, padding: 20, fontSize: 13, color: S.text2, lineHeight: 1.7 }}>
           ⚠️ This guide is for informational purposes only. It is not financial advice. Perpetual futures trading involves significant risk of loss. Always do your own research before making investment decisions. Data sourced from public announcements and on-chain metrics as of March 2026.
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
       <BackToTop />

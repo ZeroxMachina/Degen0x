@@ -81,6 +81,16 @@ export default function BestForCreatorsPage() {
 
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Platforms for NFT Creators</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d1e', border: '1px solid #5b2141', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🎨</span>
+            <strong style={{ color: '#f472b6', fontSize: 15 }}>NFT Reality</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            The NFT market has matured significantly. We focus on utility and community value rather than floor price speculation.
+          </p>
+        </div>
           <div className="space-y-4">
             {filtered.map((marketplace, index) => (
               <ProductCard

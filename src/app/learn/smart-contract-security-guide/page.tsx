@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Smart Contract Security Guide 2026: Audits, Vulnerabilities & How to Stay Safe | degen0x",
@@ -167,6 +169,16 @@ export default function SmartContractSecurityGuide() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={14}
+          section="learn"
+        />
+
+
         <hr style={{ borderColor: '#30363d', marginBottom: '40px' }} />
 
         {/* Table of Contents */}
@@ -199,6 +211,16 @@ export default function SmartContractSecurityGuide() {
           <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '16px', color: '#e6edf3' }}>
             2025 was the worst year on record for crypto security. The industry lost $17 billion to hacks, exploits, and operational failures—a sobering reminder that smart contract security isn't abstract theoretical concerns. It's real money, real users, and real damage. Yet here's the surprise: only 19.5% of those losses came from actual code exploits. The vast majority—80.5%—came from operational failures, key management failures, and off-chain vulnerabilities. This shifts the narrative significantly. Smart contract security isn't just about writing bulletproof code; it's about the entire system protecting assets.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
           <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '16px', color: '#e6edf3' }}>
             Why does this matter for you as a user or builder? Because it means vulnerability patterns have evolved. The days of simple, obvious code bugs causing billion-dollar hacks are largely behind us (though they still happen). What's replacing them are sophisticated attacks targeting business logic, edge cases in protocol interactions, and operational security gaps. Understanding these modern threats is the difference between deploying a protocol that gets exploited and one that secures billions safely.

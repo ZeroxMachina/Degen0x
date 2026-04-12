@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import Breadcrumb from "@/components/Breadcrumb";
 import { newsArticles, getArticleBySlug, getLatestArticles } from "@/data/news";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -181,6 +183,16 @@ export default async function ArticlePage({ params }: Props) {
                   <div className="font-semibold text-[var(--color-text)] text-sm">{article.author}</div>
                   <div className="text-xs text-[var(--color-text-secondary)]">{article.authorTitle}</div>
                 </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="news"
+        />
+
                 <div className="ml-auto text-right">
                   <div className="text-sm text-[var(--color-text-secondary)]">
                     Published {formatDate(article.publishedAt)}
@@ -239,7 +251,18 @@ export default async function ArticlePage({ params }: Props) {
               Cryptocurrency investments carry significant risk. Always do your own research before
               making investment decisions.
             </div>
-          </article>
+          
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/liquid-staking-tokens-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Liquid Staking Tokens Guide 2026</a></li>
+            <li><a href="/learn/memecoins-trading-strategies-risk-management-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Memecoins Trading Strategies Risk Management Guide 2026</a></li>
+            <li><a href="/learn/monad-parallel-evm-layer-1-blockchain-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Monad Parallel Evm Layer 1 Blockchain Guide 2026</a></li>
+            <li><a href="/learn/onchain-analytics-blockchain-data-intelligence-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Onchain Analytics Blockchain Data Intelligence Guide 2026</a></li>
+          </ul>
+        </nav>
+      </article>
 
           {/* Sidebar */}
           <aside className="space-y-6">

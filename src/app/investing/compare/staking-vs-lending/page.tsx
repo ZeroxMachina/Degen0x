@@ -31,7 +31,17 @@ export default function Page() {
         <p>Staking provides yield from the blockchain protocol itself — validators and delegators receive newly minted tokens and transaction fees for securing the network. This makes staking yields relatively predictable and sustainable, as they are backed by the economic security model of the blockchain. The introduction of liquid staking through protocols like Lido and Rocket Pool has largely solved the liquidity problem — stakers receive liquid tokens representing their staked position that can be used elsewhere in DeFi. The primary risks are slashing penalties for validator misbehavior and the opportunity cost of lock-up periods for chains that require unstaking delays. Native staking carries minimal smart contract risk, though liquid staking introduces additional protocol risk.</p>
         <p>Lending generates yield from borrower demand — users pay interest to borrow assets for trading, liquidity provision, or leverage. DeFi lending through Aave and Compound offers transparency and permissionless access, but carries smart contract risk and the possibility of bad debt during extreme market conditions when liquidations fail. Stablecoin lending provides dollar-denominated yields without exposure to crypto price volatility, making it attractive for risk-averse yield seekers. The collapse of centralized lending platforms like Celsius and BlockFi demonstrated the importance of counterparty risk assessment. For most investors, staking should form the foundation of a crypto yield strategy due to its lower risk profile, with lending used selectively for stablecoins or to enhance returns on assets that cannot be staked.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li><li><Link href="/investing/learn/crypto-lending-as-investment" className="text-blue-600 hover:underline">Crypto Lending as Investment</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li><li><Link href="/investing/learn/crypto-lending-as-investment" className="text-blue-600 hover:underline">Crypto Lending as Investment</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

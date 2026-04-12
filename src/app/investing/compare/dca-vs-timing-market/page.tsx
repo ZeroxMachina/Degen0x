@@ -31,7 +31,17 @@ export default function Page() {
         <p>Dollar-cost averaging works because it transforms the hardest problem in investing — knowing when to buy — into a solved problem through systematic execution. By investing a fixed dollar amount at regular intervals regardless of price, you automatically buy more units when prices are low and fewer when prices are high, resulting in a naturally advantageous average cost. In Bitcoin&apos;s history, a simple weekly DCA strategy starting at almost any point in time has been profitable within a 3-4 year horizon. The psychological benefits are equally important: DCA eliminates the paralysis of waiting for the perfect entry, the regret of buying before a crash, and the anxiety of deciding when to invest large sums. Most major exchanges now offer automated recurring purchases that make DCA implementation effortless.</p>
         <p>Market timing in crypto is extraordinarily difficult despite seeming intuitive. Missing just the ten best trading days in a multi-year period can reduce returns by 50% or more, and those best days often occur during the most fearful periods when market timers are typically sitting on the sidelines. Crypto&apos;s 24/7 markets mean significant moves happen at all hours, and narrative shifts can reverse trends within hours. Even professional fund managers with sophisticated tools and dedicated research teams rarely outperform simple passive strategies consistently. The rare investors who successfully time markets typically operate with strict rules-based systems rather than discretionary judgment. For most people, the optimal approach is a consistent DCA strategy with optional value-averaging enhancements — increasing purchases during significant drawdowns and modestly reducing amounts during euphoric peaks, while never stopping entirely regardless of market conditions.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/active-vs-passive-crypto" className="text-blue-600 hover:underline">Active vs Passive Crypto Investing</Link></li><li><Link href="/investing/learn/crypto-accumulation-strategy" className="text-blue-600 hover:underline">Crypto Accumulation Strategy</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/active-vs-passive-crypto" className="text-blue-600 hover:underline">Active vs Passive Crypto Investing</Link></li><li><Link href="/investing/learn/crypto-accumulation-strategy" className="text-blue-600 hover:underline">Crypto Accumulation Strategy</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

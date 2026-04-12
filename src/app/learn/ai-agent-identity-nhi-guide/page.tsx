@@ -7,6 +7,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import InteractiveTOC from "./InteractiveTOC";
 import InteractiveCards from "./InteractiveCards";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // Export metadata for server-side rendering
 export const metadata: Metadata = {
@@ -158,6 +160,16 @@ export default function AIAgentIdentityPage() {
                   <div style={{ fontSize: 16, fontWeight: 800, color: S.cyan, marginBottom: 2 }}>{m.value}</div>
                   <div style={{ fontSize: 11, color: S.text2 }}>{m.desc}</div>
                 </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-23"
+          updatedDate="2026-04-12"
+          readingTime={7}
+          section="learn"
+        />
+
               ))}
             </div>
           </div>
@@ -177,6 +189,16 @@ export default function AIAgentIdentityPage() {
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
             Non-Human Identities (NHIs) are digital identities representing autonomous AI agents, smart contracts, and bots that can execute transactions and interact with systems independently. Unlike traditional user accounts controlled by humans, NHIs operate autonomously, making decisions, transacting, and managing assets without real-time human supervision.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
             In 2026, the scale of NHIs has become staggering. Financial institutions report a 96-to-1 ratio of AI agents to human employees. These agents handle everything from algorithmic trading to portfolio rebalancing, risk assessment, and transaction settlement. However, autonomous operation creates a critical problem: how do you verify the agent is trustworthy? How do you hold it accountable? How do you know it's backed by a legitimate human or organization?
@@ -719,6 +741,26 @@ export default function AIAgentIdentityPage() {
           </div>
         </section>
 
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/investing/best-solana-ecosystem-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Solana Ecosystem Tokens</a></li>
+            <li><a href="/investing/crypto-momentum-trading-strategy" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Momentum Trading Strategy</a></li>
+            <li><a href="/investing/crypto-whale-watching-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Whale Watching Guide</a></li>
+            <li><a href="/tools/bitcoin-mempool-visualizer" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Bitcoin Mempool Visualizer</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
 
       {/* Back to Top Button */}

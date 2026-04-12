@@ -51,6 +51,16 @@ export default function KoinlyVsCoinTrackerPage() {
           data transfer. Koinly requires exporting a CSV and importing it into TurboTax manually,
           which works but adds an extra step.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Every jurisdiction has different rules, and they're changing fast. We note when guidance is US-specific vs. internationally applicable.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Koinly wins on integrations (800+ vs 500+), pricing (cheaper at every tier), international
           support (20+ countries vs 10+), and DeFi tracking depth. For users outside the US or

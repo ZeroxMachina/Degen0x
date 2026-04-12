@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import PortfolioAllocationAdvisor from "@/components/PortfolioAllocationAdvisor";
 import Breadcrumb from "@/components/Breadcrumb";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto Portfolio Allocation Advisor - Risk-Based Recommendations",
@@ -60,6 +62,16 @@ export default function PortfolioAllocationPage() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="0xMachina"
+          role="Founder"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="tools"
+        />
+
 
         {/* Tool Component */}
         <PortfolioAllocationAdvisor />

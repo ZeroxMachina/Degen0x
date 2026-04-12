@@ -31,7 +31,17 @@ export default function Page() {
         <p>Bitcoin has delivered dramatically higher returns than the S&amp;P 500 over most timeframes since its inception, but with extreme volatility that includes multiple 70-80% drawdowns. The S&amp;P 500 provides consistent compounding with dividends, far lower volatility, and exposure to the earnings power of America&apos;s largest companies. Bitcoin ETFs now make it possible to hold both assets in the same brokerage or retirement account with similar convenience.</p>
         <p>The optimal approach for most investors is holding both: the S&amp;P 500 as a portfolio foundation providing steady growth and income, with a Bitcoin allocation providing asymmetric upside and portfolio diversification due to its imperfect correlation with equities. During market stress, correlations can temporarily increase as all risk assets sell off together, but over longer periods, Bitcoin&apos;s unique supply dynamics and adoption curve provide genuine diversification value alongside traditional equity exposure.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/learn/crypto-vs-stocks" className="text-blue-600 hover:underline">Crypto vs Stocks</Link></li><li><Link href="/investing/learn/bitcoin-etf-complete-guide" className="text-blue-600 hover:underline">Bitcoin ETF Complete Guide</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/learn/crypto-vs-stocks" className="text-blue-600 hover:underline">Crypto vs Stocks</Link></li><li><Link href="/investing/learn/bitcoin-etf-complete-guide" className="text-blue-600 hover:underline">Bitcoin ETF Complete Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

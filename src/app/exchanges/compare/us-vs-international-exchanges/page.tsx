@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `US vs International Crypto Exchanges: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -45,6 +47,16 @@ export default function UsVsInternationalExchangesPage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">International exchanges are best for</strong> non-US residents who want the lowest fees, widest coin selection, highest leverage, and most advanced features. Binance, OKX, and Bybit lead in this category.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Can US residents use international exchanges?", answer: "Most major international exchanges like Binance.com, OKX, and Bybit are not available to US residents. Using VPNs to circumvent geographic restrictions violates terms of service and may result in frozen accounts. US residents should use US-regulated exchanges." },

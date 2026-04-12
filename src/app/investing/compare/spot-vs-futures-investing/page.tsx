@@ -31,7 +31,17 @@ export default function Page() {
         <p>Spot investing is the foundation of sound cryptocurrency portfolio management. When you buy Bitcoin or Ethereum on spot markets, you own the actual asset — you can transfer it to self-custody, stake it for yield, use it in DeFi, or hold indefinitely with no ongoing costs. There is no liquidation risk, no funding payments, and no contract expiry to manage. The maximum loss is your invested capital (if the asset goes to zero), but there is no leverage that can amplify losses beyond your investment. Dollar-cost averaging into spot positions has historically been the most reliable strategy for building crypto wealth over multi-year timeframes. Spot investing also provides the clearest tax treatment with straightforward capital gains calculations.</p>
         <p>Futures trading is a professional tool that most retail investors misuse. Leverage amplifies both gains and losses — a 10x leveraged position is liquidated by just a 10% adverse price movement, which is routine in crypto markets. Perpetual futures contracts carry ongoing funding rate costs that can erode positions over time, particularly during trending markets when funding rates spike. The primary legitimate uses of futures are hedging existing spot positions against downside risk, executing market-neutral strategies, and expressing short-term directional views with defined risk parameters. Statistics from exchanges consistently show that 70-90% of leveraged traders lose money. For the vast majority of investors, spot investing with proper position sizing and dollar-cost averaging will produce better risk-adjusted returns than leveraged futures trading.</p>
       </div>
-      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2><ul className="space-y-2"><li><Link href="/investing/compare/active-vs-passive-crypto" className="text-blue-600 hover:underline">Active vs Passive Crypto Investing</Link></li><li><Link href="/investing/learn/crypto-investment-risks" className="text-blue-600 hover:underline">Crypto Investment Risks</Link></li></ul></section>
+      <section className="mb-10"><h2 className="text-2xl font-bold mb-4">Related Content</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Tokenomics analysis is our edge. Most retail investors skip the vesting schedule and supply inflation data that often determines long-term price action.
+          </p>
+        </div><ul className="space-y-2"><li><Link href="/investing/compare/active-vs-passive-crypto" className="text-blue-600 hover:underline">Active vs Passive Crypto Investing</Link></li><li><Link href="/investing/learn/crypto-investment-risks" className="text-blue-600 hover:underline">Crypto Investment Risks</Link></li></ul></section>
       <FAQSection faqs={faqs} />
     </div>
   );

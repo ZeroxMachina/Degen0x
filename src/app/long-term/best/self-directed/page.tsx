@@ -5,6 +5,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best Self-Directed Crypto Retirement Accounts ${CURRENT_YEAR}`,
@@ -118,6 +120,16 @@ export default function SelfDirectedPage() {
 
       <section className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-8 mb-12">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Self-Directed vs Standard Crypto IRA</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1000', border: '1px solid #422006', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🏔️</span>
+            <strong style={{ color: '#eab308', fontSize: 15 }}>Long-Term View</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Time in the market beats timing the market — especially in crypto. Our long-term analysis focuses on fundamentals that compound over years, not months.
+          </p>
+        </div>
         <div className="space-y-4 text-[var(--color-text-secondary)]">
           <p>Understanding the key differences helps you choose the right structure for your retirement crypto investing:</p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
@@ -142,6 +154,16 @@ export default function SelfDirectedPage() {
               </ul>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="long-term"
+        />
+
         </div>
       </section>
 

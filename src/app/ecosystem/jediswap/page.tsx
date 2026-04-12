@@ -55,6 +55,16 @@ export default function JediSwapGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             JediSwap is the flagship decentralized exchange on <strong style={{ color: S.text }}>Starknet</strong>, a StarkWare Layer 2 scaling solution for Ethereum powered by cryptographic proofs. It's an automated market maker (AMM) DEX that enables fast, cost-effective token swaps while leveraging Cairo's powerful smart contract capabilities for advanced trading features.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             JediSwap differentiates itself with both volatile and stable pair pools, optimized for different trading scenarios. The protocol's focus on developer experience and DeFi composability makes it the central hub for Starknet's trading ecosystem.
           </p>

@@ -62,6 +62,16 @@ export default function ChainlinkGuidePage() {
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             Chainlink is the largest decentralized oracle network, solving blockchain's biggest problem: how to access trustworthy real-world data. Smart contracts are deterministic—they can't directly fetch external APIs or fetch data from the internet. Chainlink bridges this gap by connecting blockchain to the real world.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             In 2026, Chainlink powers data feeds for DeFi, insurance, gaming, and enterprise blockchains. The Cross-Chain Interoperability Protocol (CCIP) is live in production, enabling secure message and token transfers across different blockchains without bridges.
           </p>

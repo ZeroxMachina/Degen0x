@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto Arbitrage Strategies 2026 — CEX/DEX, Cross-Chain & Funding | degen0x",
@@ -33,6 +35,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Crypto Arbitrage Strategies 2026 | degen0x",
     description: "Master CEX-DEX, cross-chain, and funding rate arbitrage strategies.",
+    images: ["https://degen0x.com/og-crypto-arbitrage-strategies-guide-2026.svg"],
+    image: "https://degen0x.com/og-crypto-arbitrage-strategies-guide-2026.svg",
   },
 };
 
@@ -176,6 +180,16 @@ export default function CryptoArbitrageStrategiesGuide() {
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             Arbitrage is a market-neutral trading strategy that exploits price discrepancies. Unlike directional trading (betting that Bitcoin will go up or down), arbitrage profits from differences—regardless of market direction. If ETH trades at $2,000 on Uniswap and $2,050 on Kraken, you can buy $100 worth on Uniswap and sell on Kraken for a $2.50 profit (ignoring fees for simplicity). Scale this across $100K and your profit is $2,500.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             The appeal of arbitrage is clear: profits with minimal directional risk. But there's a catch—in 2026, most obvious arbitrage opportunities are eliminated instantly by algorithms and bots. The market has become far more efficient. Typical spreads have compressed to 0.1-2%, down from 5-10% in earlier bull markets. Yet inefficiencies persist because crypto's landscape is fragmented.
@@ -887,6 +901,16 @@ export default function CryptoArbitrageStrategiesGuide() {
               </p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={15}
+          section="learn"
+        />
+
         </section>
 
         {/* Related Articles */}
@@ -963,6 +987,14 @@ export default function CryptoArbitrageStrategiesGuide() {
             Last updated: March 2026. Market conditions change rapidly—always verify current spreads, fees, and funding rates before executing trades.
           </p>
         </footer>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
       <BackToTop />
     </div>

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Bitcoin Layer 2 Solutions: Lightning, Stacks & Beyond",
@@ -44,6 +46,16 @@ export default function BitcoinLayer2Guide() {
           like Visa handle thousands per second. This fundamental constraint makes Bitcoin
           impractical for everyday payments at scale.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           Layer 2 solutions solve this by moving transactions off the main blockchain while
           leveraging Bitcoin's security. These solutions batch transactions, settle periodically
@@ -132,6 +144,16 @@ export default function BitcoinLayer2Guide() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={4}
+          section="learn"
+        />
+
 
         <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 my-6">
           <h4 className="text-[#58a6ff] font-semibold mb-4">Lightning Network Characteristics</h4>

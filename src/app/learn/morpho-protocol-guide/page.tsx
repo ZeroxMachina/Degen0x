@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import MorphoVaultExplorer from "@/components/MorphoVaultExplorer";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 // Title: 58 chars — primary keyword first, year included, under 60-char limit
@@ -166,6 +168,16 @@ export default function MorphoProtocolGuidePage() {
           <p style={{ lineHeight: 1.8, color: "#c9d1d9", marginBottom: 16 }}>
             Morpho is a decentralized, modular lending protocol built primarily on Ethereum. At its core, it lets anyone create a permissionless lending market between any two assets — without asking a DAO for permission, without waiting for a governance vote, and without relying on a single shared risk pool.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ lineHeight: 1.8, color: "#c9d1d9", marginBottom: 16 }}>
             The protocol started in 2022 as a &ldquo;P2P optimizer&rdquo; layered on top of Aave and Compound — matching lenders and borrowers directly for better rates. But the real paradigm shift came with <strong style={{ color: "#e6edf3" }}>Morpho Blue</strong>, launched in January 2024. Blue reimagined lending from scratch: minimal, immutable, and modular.
           </p>
@@ -260,6 +272,16 @@ export default function MorphoProtocolGuidePage() {
               ))}
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={6}
+          section="learn"
+        />
+
 
           <p style={{ lineHeight: 1.8, color: "#c9d1d9", marginBottom: 24 }}>
             The vault model abstracts away complexity while preserving Morpho Blue&apos;s capital efficiency advantages. By March 2026, MetaMorpho vaults collectively manage over $7B of Morpho&apos;s total TVL, with dozens of active vaults spanning ETH, stablecoin, and RWA strategies.

@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AaveV4SpokesExplorer from "@/components/AaveV4SpokesExplorer";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -166,6 +168,16 @@ export default function AaveV4GuidePage() {
           <p style={{ fontSize: 16, lineHeight: 1.8, color: "#c9d1d9", marginBottom: 16 }}>
             Aave is a decentralized lending and borrowing protocol — the largest in DeFi by total value locked (<code style={{ background: "#161b22", padding: "2px 6px", borderRadius: 4, fontSize: 14 }}>TVL</code>). You deposit crypto assets and earn yield, or you post collateral and borrow against it, all without handing your funds to a bank, a company, or any single third party.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ fontSize: 16, lineHeight: 1.8, color: "#c9d1d9", marginBottom: 16 }}>
             Originally called ETHLend and launched in 2017, Aave has processed trillions of dollars in loan volume across dozens of blockchains. At its 2025 peak, Aave held over <strong style={{ color: "#e6edf3" }}>$75 billion</strong> in total deposits — a figure that would rank it among the top 50 banks in the United States if it were a traditional institution.
           </p>
@@ -234,6 +246,16 @@ export default function AaveV4GuidePage() {
                 ))}
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={4}
+          section="learn"
+        />
+
           </div>
 
           <p style={{ fontSize: 16, lineHeight: 1.8, color: "#c9d1d9", marginBottom: 16 }}>

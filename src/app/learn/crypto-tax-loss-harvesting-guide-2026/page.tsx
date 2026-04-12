@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto Tax-Loss Harvesting Guide 2026 — IRS Rules & Strategy | degen0x",
@@ -171,6 +173,16 @@ export default function CryptoTaxLossHarvestingGuide() {
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             Tax-loss harvesting (TLH) is the practice of deliberately selling an investment at a loss to offset capital gains or reduce ordinary income for tax purposes. When you sell a cryptocurrency for less than you paid, you realize a capital loss. This loss can be used to offset capital gains from other profitable investments, reducing your overall tax liability.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
           <p className="text-[#c9d1d9] mb-4 leading-relaxed">
             For example: You bought Bitcoin at $35,000 and sold at $30,000, realizing a $5,000 loss. You also sold Ethereum at $40,000 that you bought at $30,000, realizing a $10,000 gain. Your net capital gain is $5,000 ($10,000 gain - $5,000 loss), reducing your tax liability compared to reporting the $10,000 gain alone.
@@ -903,6 +915,16 @@ export default function CryptoTaxLossHarvestingGuide() {
               </p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={17}
+          section="learn"
+        />
+
         </section>
 
         {/* Disclaimer */}
@@ -998,6 +1020,14 @@ export default function CryptoTaxLossHarvestingGuide() {
 
         {/* Back to Top Button */}
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </div>
   );

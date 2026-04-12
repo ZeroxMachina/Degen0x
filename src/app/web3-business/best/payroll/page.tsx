@@ -154,6 +154,16 @@ export default function PayrollPage() {
         <p className="text-[var(--color-text-secondary)] mb-4">
           If you are paying team members in crypto, ensure you have these bases covered:
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0808', border: '1px solid #5c1818', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🏗️</span>
+            <strong style={{ color: '#ef4444', fontSize: 15 }}>Builder Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We've been building in crypto since before 'Web3' was a term. These guides reflect hard-earned lessons from shipping products in this space.
+          </p>
+        </div>
         <ul className="space-y-2 text-[var(--color-text-secondary)]">
           <li className="flex items-start gap-2"><span className="text-[var(--color-primary)]">&#10003;</span> Proper worker classification (employee vs. contractor) in each jurisdiction</li>
           <li className="flex items-start gap-2"><span className="text-[var(--color-primary)]">&#10003;</span> Fair market value documentation at the time of each payment</li>

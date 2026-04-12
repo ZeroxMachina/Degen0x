@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Bitcoin ETF Guide 2026: Spot BTC ETFs, Performance & How to Invest",
@@ -48,6 +50,16 @@ export default function BitcoinETFGuidePage() {
               <div className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{s.label}</div>
               <div className="text-sm font-bold" style={{ color: "var(--color-text)" }}>{s.value}</div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
           ))}
         </div>
       </div>
@@ -176,6 +188,14 @@ export default function BitcoinETFGuidePage() {
           </div>
         </div>
       </div>
-    </article>
+    
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

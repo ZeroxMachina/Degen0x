@@ -118,6 +118,16 @@ export default function PasskeyEmbeddedWalletsPage() {
               <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 20 }}>
                 Passkey wallets eliminate seed phrases by using WebAuthn/FIDO2 biometric authentication and device-bound keys. Instead of writing down a 12-word seed phrase, you authenticate with your fingerprint, face, or security key. This represents a fundamental UX shift: crypto becomes as easy as using your phone.
               </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
               <h3 style={{ fontSize: 18, fontWeight: 800, marginBottom: 16, marginTop: 32 }}>Traditional vs. Modern Wallet Types</h3>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 16, marginBottom: 24 }}>
@@ -851,6 +861,26 @@ export default function PasskeyEmbeddedWalletsPage() {
         {/* Disclaimer */}
         <div style={{ marginTop: 32, padding: 16, background: S.surface, border: `1px solid ${S.border}`, borderRadius: 8, fontSize: 13, color: S.text2, lineHeight: 1.6 }}>
           <strong style={{ color: S.red }}>Disclaimer:</strong> This content is for educational purposes only. Passkey wallets are more secure than seed phrases but carry risks including device loss, provider lock-in, smart contract vulnerabilities, and regulatory changes. Always test with small amounts first, use multiple backup devices, and never commit more capital than you can afford to lose. Consult security experts before storing large amounts in any wallet. Past performance and security audits do not guarantee future safety.
+        </div>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/compare/aave-vs-maker-vs-compound" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Aave Vs Maker Vs Compound</a></li>
+            <li><a href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Polygon Vs Arbitrum Vs Optimism</a></li>
+            <li><a href="/courses/crypto-tax-accounting-course" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Tax Accounting Course</a></li>
+            <li><a href="/investing/best-crypto-savings-accounts-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Crypto Savings Accounts 2026</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
 

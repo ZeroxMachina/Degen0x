@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Bitcoin Lightning Network Explained (${CURRENT_YEAR}): How It Works, Wallets & Use Cases`,
@@ -172,6 +174,16 @@ export default function LightningNetworkGuidePage() {
               <div className="text-2xl font-black" style={{ color: "#F7931A" }}>{stat.value}</div>
               <div className="text-xs text-[var(--color-text-secondary)] mt-1">{stat.label}</div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
           ))}
         </div>
       </header>
@@ -187,6 +199,16 @@ export default function LightningNetworkGuidePage() {
           Bitcoin&apos;s fundamental scalability challenge: the base layer can only process ~7 transactions per second,
           making it impractical for everyday payments like buying coffee.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)] mb-4">
           Lightning solves this by allowing users to open <strong className="text-[var(--color-text)]">payment channels</strong> with each
           other — essentially locking Bitcoin in a 2-of-2 multisig smart contract. Once a channel is open, the two parties

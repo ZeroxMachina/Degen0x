@@ -5,6 +5,8 @@ import BackToTop from '@/components/BackToTop';
 import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Unichain Guide 2026: What Is Uniswap\'s Layer 2 and How It Works',
@@ -201,6 +203,16 @@ export default function UniChainGuidePage() {
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>
             Unichain is a Layer 2 blockchain developed by Uniswap Labs, officially launched on February 11, 2025. Built on the OP Stack (the same foundation as Optimism), Unichain is specifically designed to be a DeFi-optimized chain that combines the security of Ethereum with significantly faster transactions and lower costs.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>
             Unlike previous Uniswap versions that lived on Ethereum and other chains, Uniswap Labs decided to create their own blockchain to optimize the entire protocol stack for DeFi. This means Unichain's architecture, sequencer, and smart contract systems are all designed with decentralized finance as the primary use case.
@@ -585,6 +597,16 @@ export default function UniChainGuidePage() {
               <span style={{ color: '#e6edf3', marginLeft: '8px' }}>https://uniscan.xyz</span>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-23"
+          updatedDate="2026-04-12"
+          readingTime={7}
+          section="learn"
+        />
+
         </section>
 
         {/* Section 7 */}

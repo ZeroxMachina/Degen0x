@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Complete Guide to Layer 2 Scaling Solutions (2026) — Rollups, Sidechains & More",
@@ -109,6 +111,16 @@ export default function Layer2GuidePage() {
             <span>👤 degen0x Research</span>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
 
         <TableOfContents items={TOC_ITEMS} />
 

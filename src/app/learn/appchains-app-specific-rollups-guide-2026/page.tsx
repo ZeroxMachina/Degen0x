@@ -927,6 +927,14 @@ export default function AppChainsGuide() {
             Appchains represent a paradigm shift from "one blockchain to rule them all" to specialized, application-specific infrastructure. While they create liquidity fragmentation and interoperability challenges, the performance, sovereignty, and economic benefits are compelling enough that major protocols are adopting this model. The 2026 landscape will feature a thriving multi-chain ecosystem where users, developers, and protocols leverage appropriate infrastructure for their specific needs. Understanding appchains is essential for navigating the future of blockchain technology.
           </p>
         </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
 
       <BackToTop />

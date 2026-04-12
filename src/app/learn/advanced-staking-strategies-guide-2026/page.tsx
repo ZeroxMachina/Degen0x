@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Advanced Staking Strategies Guide 2026: LST, LRT & Real Yield Optimization | degen0x",
@@ -97,6 +99,16 @@ export default function AdvancedStakingStrategiesGuide() {
           <p className="mb-4" style={{ color: "var(--color-text-secondary)" }}>
             Staking has evolved from a simple "lock and earn" mechanic to a complex ecosystem offering multiple yield layers, efficiency trade-offs, and risk profiles. While basic staking provides steady income, advanced strategies unlock additional returns through liquid staking tokens (LSTs), liquid restaking tokens (LRTs), validator optimization, and compounding techniques.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p className="mb-4" style={{ color: "var(--color-text-secondary)" }}>
             The difference between a casual staker and an advanced one isn&apos;t just returns—it&apos;s understanding the trade-offs between liquidity, yield, risk, and tax efficiency. This guide covers the strategic layers that separates baseline staking from optimized yield generation.
           </p>
@@ -350,6 +362,16 @@ export default function AdvancedStakingStrategiesGuide() {
               </p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
         </section>
 
         <section className="mb-12 pb-12 border-t" style={{ borderColor: "var(--color-text-secondary)" }}>
@@ -402,6 +424,14 @@ export default function AdvancedStakingStrategiesGuide() {
         </section>
 
         <BackToTop />
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
     </>
   );

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import { ArticleStructuredData, FAQStructuredData } from "@/components/StructuredData";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token Explained | degen0x",
@@ -228,6 +230,16 @@ export default function SuiBlockchainGuide() {
               </p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-17"
+          updatedDate="2026-03-17"
+          readingTime={7}
+          section="learn"
+        />
+
         </div>
 
         <p style={{ fontSize: '14px', color: S.text2, margin: '16px 0', fontStyle: 'italic' }}>
@@ -665,6 +677,14 @@ export default function SuiBlockchainGuide() {
             </Link>
           </div>
         </nav>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
       <BackToTop />
     </div>

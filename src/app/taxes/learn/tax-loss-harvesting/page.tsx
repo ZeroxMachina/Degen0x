@@ -249,6 +249,16 @@ export default function TaxLossHarvestingPage() {
           >
             Tax loss harvesting (TLH) is the deliberate strategy of selling cryptocurrency positions at a loss to generate realized losses that offset taxable capital gains. Unlike unrealized losses—which exist on paper but provide no tax benefit—realized losses are recognized by the IRS when you sell the asset. These losses directly reduce your overall tax liability.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Crypto tax compliance is a mess, but ignoring it is worse. We focus on practical approaches that balance accuracy with the reality that most exchanges have incomplete records.
+          </p>
+        </div>
           <p
             style={{
               marginBottom: "16px",

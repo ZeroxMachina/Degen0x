@@ -3,6 +3,8 @@ import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -169,6 +171,16 @@ export default function AsterChainGuidePage() {
           <p style={{ fontSize: 16, lineHeight: 1.8, color: "#c9d1d9", marginBottom: 16 }}>
             Aster Chain is a Layer-1 blockchain built specifically for institutional-grade perpetual futures trading. Launched in March 2026, it&apos;s backed by Changpeng Zhao (CZ), the co-founder of Binance, and developed under YZi Labs. The chain positions itself as the privacy-focused alternative to Hyperliquid — combining on-chain orderbook matching with zero-knowledge encryption to hide trader positions and P&L data.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <p style={{ fontSize: 16, lineHeight: 1.8, color: "#c9d1d9", marginBottom: 16 }}>
             Key metrics paint an impressive picture. As of March 2026, Aster Chain has processed over <strong style={{ color: "#e6edf3" }}>$12 trillion in cumulative trading volume</strong>, holds approximately <strong style={{ color: "#e6edf3" }}>$655 million in TVL</strong> (down from a peak of $2B), and trades perpetuals on hundreds of asset pairs including BTC, ETH, stocks (24/7 perpetual stock exposure), and altcoins. The native <code style={{ background: "#161b22", padding: "2px 6px", borderRadius: 4, fontSize: 14 }}>ASTER</code> token trades in the $0.70–$0.72 range with a circulating market cap of roughly $1.7 billion.
@@ -185,6 +197,16 @@ export default function AsterChainGuidePage() {
               <strong style={{ color: "#e6edf3" }}>Finality</strong><span>Sub-second</span>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={6}
+          section="learn"
+        />
+
 
           <p style={{ fontSize: 16, lineHeight: 1.8, color: "#c9d1d9" }}>
             Why does CZ back this? Aster Chain fills a niche: traders who want blazing-fast on-chain execution, privacy protection from market surveillance, and institutional-grade infrastructure. It&apos;s less focused on retail-friendly AMMs and more on the perp DeFi arms race where speed and opacity are competitive advantages.

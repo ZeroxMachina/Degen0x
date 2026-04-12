@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Magic Eden vs OpenSea: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -69,6 +71,16 @@ export default function MagicEdenVsOpenSeaPage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="nfts"
+        />
+
       <FAQSection faqs={[
         { question: "Can I use both Magic Eden and OpenSea?", answer: "Yes, many collectors use both. Magic Eden for Solana and Ordinals trading, and OpenSea for Ethereum collections and broader browsing. Since your NFTs are in your wallet, you can list and buy on either platform freely." },
         { question: "Which has better Solana NFT support?", answer: "Magic Eden is the leader for Solana NFTs with the deepest collection coverage, Launchpad for new mints, and enforced creator royalties. OpenSea supports Solana but has a smaller selection and fewer Solana-specific features." },

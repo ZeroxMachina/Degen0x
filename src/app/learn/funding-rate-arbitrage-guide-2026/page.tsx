@@ -202,6 +202,16 @@ export default function FundingRateArbitrageGuide() {
           <p style={{ lineHeight: 1.6, marginBottom: 12, color: S.text }}>
             Funding rate arbitrage exploits periodic payments between long and short traders on perpetual futures markets. When funding rates are positive, shorts pay longs; when negative, longs pay shorts. By maintaining delta-neutral positions (long spot + short perp, or vice versa), you capture this rate spread without directional risk.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ lineHeight: 1.6, color: S.text }}>
             This is one of the highest-conviction, lowest-volatility strategies in crypto. Even in bear markets, consistent 2-4% annual returns are achievable. In bull markets with high leverage demand, rates spike to 12-15% APY.
           </p>
@@ -499,6 +509,14 @@ export default function FundingRateArbitrageGuide() {
             </div>
           </div>
         </section>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
       <BackToTop />
     </main>

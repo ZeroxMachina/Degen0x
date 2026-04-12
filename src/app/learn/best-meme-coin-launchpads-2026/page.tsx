@@ -7,6 +7,8 @@ import {
 } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Best Meme Coin Launchpads 2026: Pump.fun, Clanker, LetsBonk",
@@ -134,6 +136,16 @@ export default function BestMemeCoinLaunchpads2026() {
             <div className="text-2xl font-bold text-[#f472b6]">{stat.value}</div>
             <div className="text-xs text-[#8b949e] mt-1">{stat.label}</div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-15"
+          updatedDate="2026-03-15"
+          readingTime={6}
+          section="learn"
+        />
+
         ))}
       </div>
 
@@ -164,6 +176,16 @@ export default function BestMemeCoinLaunchpads2026() {
           image, write a description, and hit deploy. The platform handles the smart contract, the
           initial liquidity curve, and the trading interface.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <p className="text-[#c9d1d9] mb-4 leading-relaxed">
           Most launchpads use a <strong className="text-[#e6edf3]">bonding curve</strong> model: tokens
           start cheap and get more expensive as people buy in. Once the token hits a market cap

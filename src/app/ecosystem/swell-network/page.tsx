@@ -87,6 +87,16 @@ export default function SwellNetworkPage() {
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             Swell Network is a sophisticated staking protocol offering two complementary liquid staking products: swETH for standard Ethereum staking, and rswETH for EigenLayer restaking. By combining both products, Swell users earn both traditional staking rewards and additional restaking yields.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ color: S.text2, fontSize: '1rem', lineHeight: 1.7, marginBottom: 12 }}>
             When you deposit ETH into Swell, you receive swETH, which accrues Ethereum staking rewards daily. You can also convert swETH to rswETH to participate in EigenLayer restaking for additional AVS earnings. This dual-token approach gives users flexibility: earn base staking rewards only, or layer on restaking yields.
           </p>

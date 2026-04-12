@@ -28,6 +28,16 @@ export default function DydxGuidePage(){return(<main style={{backgroundColor:S.b
 <section style={{marginBottom:36}}>
 <h2 style={{fontSize:"1.5rem",fontWeight:800,marginBottom:12,color:C}}>What is dYdX?</h2>
 <p style={{color:S.text2,lineHeight:1.8,marginBottom:14}}>dYdX is a decentralized perpetual futures exchange that migrated from Ethereum to its own <strong style={{color:S.text}}>Cosmos SDK-based blockchain</strong> (dYdX Chain) in late 2023. This enables fully on-chain order matching, validator-operated order books, and near-zero gas fees while maintaining non-custodial asset control.</p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
 <p style={{color:S.text2,lineHeight:1.8}}>dYdX V4 is fully decentralized: no central servers, all fees go to validators and $DYDX stakers, and the token secures the network via PoS.</p>
 </section>
 <section style={{marginBottom:36}}>

@@ -54,6 +54,16 @@ export default function VelodromeGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 14 }}>
             Velodrome is the central liquidity layer for the Optimism ecosystem, built on the <strong style={{ color: S.text }}>ve(3,3) tokenomic model</strong> pioneered by Andre Cronje. It combines an AMM (for swaps) with a governance system where <strong style={{ color: S.text }}>veVELO</strong> holders vote weekly to direct VELO emissions to pools — incentivizing deep liquidity for any protocol willing to bribe voters.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -82,6 +92,17 @@ export default function VelodromeGuidePage() {
             Open Velodrome →
           </a>
         </div>
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/crypto-rug-pull-how-to-avoid" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Rug Pull How To Avoid</a></li>
+            <li><a href="/learn/crypto-yield-aggregators-vaults-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Yield Aggregators Vaults Guide 2026</a></li>
+            <li><a href="/learn/decentralized-identity-did-verifiable-credentials-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Decentralized Identity Did Verifiable Credentials Guide 2026</a></li>
+            <li><a href="/learn/defi-insurance-risk-protection-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Defi Insurance Risk Protection Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

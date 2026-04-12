@@ -43,6 +43,16 @@ export default function AxelarGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Axelar is a Cosmos-based blockchain that specializes in cross-chain communication — its validator set (75+ nodes staking $AXL) collectively signs and relays messages between 65+ chains including all major EVMs, Cosmos chains (IBC), Solana, Sui, and Aptos. Axelar's key product is <strong style={{ color: S.text }}>General Message Passing (GMP)</strong> — which lets any contract on chain A call any contract on chain B with arbitrary data and token transfers in a single transaction. Squid Router, Satellite Bridge, and dozens of DeFi protocols are built on Axelar GMP.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -71,6 +81,17 @@ export default function AxelarGuidePage() {
           <TradingViewChart symbol="COINBASE:AXLUSD" height={420} />
         </section>
 
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/ethereum-layer-2-ecosystem-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Ethereum Layer 2 Ecosystem Guide 2026</a></li>
+            <li><a href="/learn/flash-loans-defi-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Flash Loans Defi Guide 2026</a></li>
+            <li><a href="/learn/hip-3-hyperliquid-permissionless-perps-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Hip 3 Hyperliquid Permissionless Perps Guide 2026</a></li>
+            <li><a href="/learn/how-to-stake-polkadot-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>How To Stake Polkadot Guide</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );

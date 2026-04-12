@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import DailyTrivia from "@/components/DailyTrivia";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Daily Crypto Trivia Quiz | Test Your Knowledge — degen0x",
@@ -77,6 +79,16 @@ export default function DailyTriviaPage() {
       {/* Related tools */}
       <section className="mt-12">
         <h2 className="text-xl font-bold text-[var(--color-text)] mb-4">Keep Learning</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {[
             { title: "Crypto Glossary", href: "/learn/glossary", icon: "📖", desc: "223 crypto terms explained" },
@@ -92,6 +104,16 @@ export default function DailyTriviaPage() {
                 <div className="font-semibold text-sm text-[var(--color-text)]">{item.title}</div>
                 <div className="text-xs text-[var(--color-text-secondary)]">{item.desc}</div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
             </Link>
           ))}
         </div>

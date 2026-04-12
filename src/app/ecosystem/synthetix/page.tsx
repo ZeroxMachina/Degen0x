@@ -62,6 +62,16 @@ export default function SynthetixGuidePage() {
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             Synthetix is the derivatives liquidity protocol for blockchain. Instead of order books, Synthetix uses pooled liquidity—SNX stakers deposit capital as collateral, and traders trade against the pool. In 2026, Synthetix V3 is a completely rewritten protocol that separates liquidity from market mechanics.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             V3's innovation: liquidity pools are generic and modular. On top, different "markets" can be built—perpetual futures, options, spot synthetic assets—all renting liquidity from the same pool. This enables rapid innovation in derivatives with shared, efficient liquidity.
           </p>

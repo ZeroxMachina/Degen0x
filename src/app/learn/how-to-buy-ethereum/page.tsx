@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "How to Buy Ethereum (ETH) in 2026: Step-by-Step Guide",
@@ -109,6 +111,16 @@ export default function HowToBuyEthereumPage() {
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Ethereum is a decentralized blockchain platform launched in 2015 by Vitalik Buterin. Unlike Bitcoin — which is primarily a store of value — Ethereum is a programmable blockchain that allows developers to build <strong style={{ color: S.text }}>decentralized applications (dApps)</strong>.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ fontSize: 15, color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             ETH (Ether) is the native currency of the Ethereum network. You need ETH to pay for transaction fees (called &quot;gas&quot;) and to interact with smart contracts. Since Ethereum&apos;s &quot;Merge&quot; upgrade in 2022, ETH is also used in <strong style={{ color: S.text }}>staking</strong> to secure the network, earning holders roughly 3–4% annually.
           </p>
@@ -124,6 +136,16 @@ export default function HowToBuyEthereumPage() {
                 <div style={{ fontWeight: 800, fontSize: 16, color: S.text }}>{c.val}</div>
                 <div style={{ fontSize: 11, color: S.text2, marginTop: 2 }}>{c.sub}</div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
             ))}
           </div>
         </section>
@@ -386,6 +408,14 @@ export default function HowToBuyEthereumPage() {
         {/* Disclaimer */}
         <div style={{ background: "#d2992215", border: "1px solid #d2992240", borderRadius: 10, padding: 14, marginTop: 32, fontSize: 12, color: S.yellow, lineHeight: 1.7 }}>
           ⚠️ <strong>Disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice. Cryptocurrency investments are highly volatile and risky. You could lose all invested capital. Always consult a financial advisor before investing. degen0x may earn a commission from affiliate links above.
+        </div>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
         </div>
       </article>
     </main>

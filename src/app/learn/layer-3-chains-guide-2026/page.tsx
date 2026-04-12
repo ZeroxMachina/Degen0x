@@ -174,6 +174,16 @@ export default function Layer3ChainsGuide() {
           <p style={{ fontSize: "1.05rem", lineHeight: "1.6", color: S.text, marginBottom: "1.5rem" }}>
             Layer 3 chains are application-specific blockchains built on top of Layer 2 rollups (Arbitrum, Base, Optimism, etc.), which themselves settle on Ethereum Layer 1. This creates a three-tier stack: <strong>L1 (Ethereum) → L2 (rollup) → L3 (app-specific chain)</strong>.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
           <div style={{
             background: `${S.primary}12`,

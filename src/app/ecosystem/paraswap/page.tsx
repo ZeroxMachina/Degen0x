@@ -52,6 +52,16 @@ export default function ParaSwapGuidePage() {
 
         <section style={{ marginBottom: 36 }}>
           <h2 style={{ fontSize: "1.5rem", fontWeight: 800, marginBottom: 12, color: S.accent }}>What is ParaSwap?</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8 }} dangerouslySetInnerHTML={{ __html: "ParaSwap is a meta-DEX aggregator that routes your swap across 100+ liquidity sources — DEXes, lending protocols, and PMMs — to find the best rate. Its proprietary Augustus algorithm splits trades across multiple routes, often saving 0.3-1%+ on large swaps versus trading on a single DEX." }} />
         </section>
 

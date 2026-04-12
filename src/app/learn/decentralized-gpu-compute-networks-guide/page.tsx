@@ -3,6 +3,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 const S = {
   bg: "var(--color-bg, #0d1117)", surface: "var(--color-surface, #161b22)",
@@ -88,6 +90,16 @@ export default function DecentralizedGPUComputeGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             AI demand has created a GPU shortage that centralized cloud providers can't keep up with. AWS and Azure have massive waitlists for high-end GPUs (H100, A100). Meanwhile, millions of GPUs sit idle in personal computers, gaming rigs, and data centers worldwide. DePIN (Decentralized Physical Infrastructure Networks) solve this by incentivizing GPU owners to share spare compute capacity.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: S.text2, lineHeight: 1.8, marginBottom: 16 }}>
             Decentralized networks aren't just cheaper — they address centralization risks. A single outage at AWS can take down thousands of services. Distributed compute redundancy and censorship resistance make these networks essential for resilient AI infrastructure.
           </p>
@@ -101,6 +113,16 @@ export default function DecentralizedGPUComputeGuidePage() {
                 <div style={{ fontSize: 20, fontWeight: 900, color: s.color }}>{s.stat}</div>
                 <div style={{ fontSize: 13, color: S.text2, marginTop: 4 }}>{s.label}</div>
               </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-17"
+          updatedDate="2026-03-17"
+          readingTime={3}
+          section="learn"
+        />
+
             ))}
           </div>
         </section>
@@ -259,6 +281,14 @@ export default function DecentralizedGPUComputeGuidePage() {
             </div>
           ))}
         </section>
+      
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
       <BackToTop />
     </main>

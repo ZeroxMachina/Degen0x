@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "RWA Platforms Comparison 2026: Ondo vs Centrifuge vs Maple vs Goldfinch | degen0x",
@@ -140,6 +142,16 @@ export default function RWAPlatformsComparison() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 2026 · 15 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-25"
+          updatedDate="2026-03-25"
+          readingTime={6}
+          section="learn"
+        />
+
+
         {/* Stats Box */}
         <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '24px', marginBottom: '40px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '16px' }}>
@@ -185,6 +197,16 @@ export default function RWAPlatformsComparison() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             RWA tokenization is the process of converting real-world assets—Treasury bonds, corporate loans, real estate, commodities, invoices—into blockchain-based ERC-20 tokens. These tokens represent fractional ownership or claims on the underlying asset, held in custody by a regulated custodian or verified by smart contracts.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Here's the power: a crypto holder in their wallet can now own a claim on a U.S. Treasury note (via Ondo's USDY), participate in a diversified loan fund (via Centrifuge), lend to an emerging-market coffee exporter (via Goldfinch), or earn yield from institutional credit (via Maple)—all without going through a bank, broker, or bureaucratic process. Settlement happens in minutes on Ethereum, not T+2 in traditional finance.
           </p>

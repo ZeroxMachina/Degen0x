@@ -7,6 +7,8 @@ import TableOfContents from "@/components/TableOfContents";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { DEFI_TOKEN_FAQS } from "@/data/investing";
 import { Product } from "@/lib/types";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Best DeFi Tokens ${CURRENT_YEAR} - Top Decentralized Finance Investments`,
@@ -125,6 +127,16 @@ export default function BestDeFiTokensPage() {
           helps identify undervalued or overvalued tokens. Token distribution and vesting schedules
           reveal potential selling pressure from insiders.
         </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#041a12', border: '1px solid #064e3b', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📈</span>
+            <strong style={{ color: '#10b981', fontSize: 15 }}>Research Perspective</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We are long-term Bitcoin and Ethereum believers. Our analysis of other assets applies the same rigorous framework regardless of personal conviction.
+          </p>
+        </div>
         <p className="text-[var(--color-text-secondary)]">
           Governance participation rates, security audit history, developer activity, and
           competitive positioning within the specific DeFi sector all contribute to the
@@ -155,6 +167,16 @@ export default function BestDeFiTokensPage() {
             </p>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="SatoshiGhost"
+          role="Lead Researcher"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="investing"
+        />
+
       </section>
 
       <section id="risks" className="mb-12">

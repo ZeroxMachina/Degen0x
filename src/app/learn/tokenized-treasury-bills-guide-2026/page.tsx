@@ -312,6 +312,16 @@ export default function TokenizedTreasuryBillsGuide() {
           <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#e6edf3", marginBottom: "16px" }}>
             Tokenized Treasury bills are blockchain-native representations of US Treasury bills. Each token is backed by actual T-bills held in custody by traditional financial institutions. When you buy a tokenized T-bill like BUIDL or USDY, you're purchasing a claim on real Treasury securities held off-chain.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
           <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#e6edf3", marginBottom: "16px" }}>
             Here's how it works: A financial institution (like BlackRock or Franklin Templeton) purchases US Treasury bills from the government. They then issue tokens on blockchain—one token per underlying dollar of Treasuries. These tokens can be transferred, traded, and used in smart contracts while the actual Treasuries remain in secure custody.

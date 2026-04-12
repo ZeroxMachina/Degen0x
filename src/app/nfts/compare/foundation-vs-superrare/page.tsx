@@ -5,6 +5,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Foundation vs SuperRare: Which Art NFT Platform Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -71,6 +73,16 @@ export default function FoundationVsSuperRarePage() {
           </p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="nfts"
+        />
+
       <FAQSection faqs={[
         { question: "Which platform has higher-quality art?", answer: "SuperRare's stricter curation generally results in a more consistently premium selection. Foundation has broader access, which means more variety in quality but also more opportunities to discover emerging talent before they reach premium price levels." },
         { question: "Can I list on both platforms?", answer: "Yes, artists approved on both platforms can list different works on each. However, listing the same piece on both simultaneously is not typically done since both platforms focus on unique, curated presentations. Many artists strategically choose which works go to which platform." },

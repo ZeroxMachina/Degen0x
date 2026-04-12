@@ -5,6 +5,8 @@ import BackToTop from '@/components/BackToTop';
 import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'ERC-8183 Guide 2026: The Agentic Commerce Standard Explained',
@@ -219,6 +221,16 @@ export default function ERC8183GuidePage() {
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>
             ERC-8183, officially titled the "Agentic Commerce Protocol," is a new Ethereum standard for enabling trustless transactions between AI agents. Proposed on February 25, 2026, and officially announced March 10, 2026, ERC-8183 was co-developed by Ethereum Foundation's dAI (distributed AI) team and Virtuals Protocol to solve a critical gap in the agent economy.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: '#e6edf3' }}>
             At its core, ERC-8183 defines a framework where AI agents can hire other agents, commission work, and pay for services with built-in escrow, delivery verification, and automatic fund recovery. An AI agent can create a job with a specific budget, another agent can complete that job, and a third-party evaluator can verify the work was done correctly. Only when verification is confirmed does payment release.
@@ -1040,5 +1052,15 @@ export default function ERC8183GuidePage() {
         <BackToTop />
       </div>
     </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-24"
+          updatedDate="2026-04-12"
+          readingTime={11}
+          section="learn"
+        />
+
   );
 }

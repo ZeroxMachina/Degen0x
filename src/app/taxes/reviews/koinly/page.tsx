@@ -87,6 +87,16 @@ export default function KoinlyReviewPage() {
             capital gains and losses, and generates tax reports compliant with tax authorities
             in over 20 countries.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0d14', border: '1px solid #4c1d2a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>📋</span>
+            <strong style={{ color: '#fb7185', fontSize: 15 }}>Tax Reality Check</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Every jurisdiction has different rules, and they're changing fast. We note when guidance is US-specific vs. internationally applicable.
+          </p>
+        </div>
           <p className="text-[var(--color-text-secondary)] mb-4">
             What sets Koinly apart is its balance of power and simplicity. While it handles
             complex scenarios like DeFi yield farming, NFT trades, and multi-wallet tracking,
@@ -187,6 +197,8 @@ export default function KoinlyReviewPage() {
             transactions that need attention, making it easy to fix issues before generating
             your tax report. For most users with standard exchange activity, the process from
             import to tax report takes less than 30 minutes.
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
           </p>
         </section>
 
@@ -216,6 +228,16 @@ export default function KoinlyReviewPage() {
               </ul>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="taxes"
+        />
+
         </section>
 
         <section id="who-is-it-for" className="mb-10">

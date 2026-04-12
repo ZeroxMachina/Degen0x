@@ -5,6 +5,8 @@ import BackToTop from '@/components/BackToTop';
 import Link from 'next/link';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { generateArticleSchema } from '@/lib/structured-data';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Drift Protocol $285M Hack Analysis: What Went Wrong & How to Stay Safe',
@@ -205,6 +207,16 @@ export default function DriftProtocolHackAnalysis() {
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: S.text }}>
             Drift Protocol is one of Solana's largest decentralized perpetuals exchanges, letting traders go long or short on crypto assets with leverage. On April 1, 2026, an attacker used a four-step process to drain $285M in assets from the protocol—making it the largest DeFi exploit of 2026 and the second-largest in Solana history.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
 
           <p style={{ fontSize: '16px', lineHeight: '1.7', marginBottom: '16px', color: S.text }}>
             The attack was technically unsophisticated but operationally brilliant. It exploited not a code flaw, but three interconnected weaknesses in how Drift was architected:
@@ -261,6 +273,16 @@ export default function DriftProtocolHackAnalysis() {
               </p>
             </div>
           </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-03"
+          updatedDate="2026-04-12"
+          readingTime={9}
+          section="learn"
+        />
+
         </section>
 
         {/* SECTION: Timeline with Visual */}

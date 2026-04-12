@@ -2,6 +2,7 @@
 
 "use client";
 
+import { Metadata } from 'next';
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
 
@@ -393,6 +394,29 @@ function EligibilityModal({ airdrop, isOpen, onClose }: EligibilityModalProps) {
     </div>
   );
 }
+
+export const metadata: Metadata = {
+  title: 'Crypto Airdrop Tracker | degen0x',
+  description: 'Track upcoming, live, and claimable crypto airdrops across all major chains. Monitor eligibility criteria, estimated values, and snapshot dates for the latest token distributions.',
+  openGraph: {
+    title: 'Airdrop Tracker',
+    description: 'Never miss a crypto airdrop again',
+    images: [
+      {
+        url: 'https://degen0x.com/og-airdrop-tracker.svg',
+        width: 1200,
+        height: 630,
+        alt: 'Airdrop Tracker Tool',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Airdrop Tracker',
+    description: 'Never miss a crypto airdrop again',
+    images: ['https://degen0x.com/og-airdrop-tracker.svg'],
+  },
+};
 
 export default function AirdropTrackerPage() {
   const [searchQuery, setSearchQuery] = useState("");

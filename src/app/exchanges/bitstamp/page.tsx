@@ -1,4 +1,6 @@
 import { Metadata } from "next";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Bitstamp Review 2026: Legacy Exchange, Security, Trading",
@@ -26,6 +28,16 @@ export default function BitstampReview() {
             <p className="text-[#8b949e] mb-4">
               Bitstamp's age (founded 2011) is a significant advantage in an industry prone to hacks and failures. The exchange has operated for 13+ years without a major security breach affecting customer funds, which is a remarkable achievement. During the chaotic early years of cryptocurrency (2011–2015), exchanges frequently experienced hacks and closures. Bitstamp's survival and growth through this period demonstrates technical competence and commitment to security. Institutional investors and conservative traders value this longevity, seeing it as validation of the platform's ability to survive market cycles and adversity.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1500', border: '1px solid #3d2e0a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔍</span>
+            <strong style={{ color: '#f59e0b', fontSize: 15 }}>Our Testing Notes</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We evaluate exchanges by actually using them — not just reading their marketing materials. Some surprises, both good and bad.
+          </p>
+        </div>
           </section>
 
           <section>
@@ -75,6 +87,16 @@ export default function BitstampReview() {
                 <div className="flex justify-between"><span>Crypto Deposit</span><span>Free</span></div>
                 <div className="flex justify-between"><span>Crypto Withdrawal</span><span>Network fee varies</span></div>
               </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
             </div>
             <p className="text-[#8b949e]">
               Bitstamp charges a flat 0.25% maker and taker fee, which is higher than Kraken's (0%–0.26%) and Binance's (0.1%–0.075% with BNB) but competitive with mid-tier exchanges. Volume-based discounts are not offered, keeping the fee structure simple. For large trades, the 0.25% fee is meaningful relative to Binance's discounted rates.

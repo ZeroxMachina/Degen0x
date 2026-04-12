@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Yield Tokenization Guide 2026 — PT/YT Tokens & Best Protocols | degen0x',
@@ -163,6 +165,16 @@ export default function YieldTokenizationGuide() {
             <p className="text-[#8b949e] mb-6 leading-relaxed">
               Yield tokenization is the process of decomposing yield-bearing assets into separate, tradeable tokens that represent different components: principal and yield. This innovation allows investors to separately manage exposure to underlying assets and the returns they generate.
             </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
 
             <p className="text-[#8b949e] mb-6 leading-relaxed">
               Instead of holding a liquid staking token (like stETH) or other yield-bearing asset as a monolithic whole, yield tokenization lets you split it into two tokens: Principal Tokens (PT) for fixed principal exposure and Yield Tokens (YT) for pure yield exposure. This unlock flexibility, enabling sophisticated strategies previously impossible in traditional DeFi.
@@ -231,6 +243,16 @@ export default function YieldTokenizationGuide() {
                 </p>
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-04-12"
+          readingTime={7}
+          section="learn"
+        />
+
           </section>
 
           {/* Section 3: The SY Standard */}

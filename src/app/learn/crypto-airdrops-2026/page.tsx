@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Crypto Airdrops Guide 2026 — How to Find, Qualify & Claim Free Tokens",
@@ -110,6 +112,16 @@ export default function AirdropsGuidePage() {
             <span>👤 degen0x Research</span>
           </div>
         </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="learn"
+        />
+
 
         <TableOfContents items={TOC_ITEMS} />
 

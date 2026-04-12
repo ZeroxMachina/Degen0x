@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { COURSES, LEVEL_META, THEME_META, getCourse } from '@/data/courses';
 import CourseViewer from '@/components/CourseViewer';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export async function generateStaticParams() {
   return COURSES.map((c) => ({ slug: c.slug }));
@@ -95,6 +97,16 @@ export default async function CoursePage({
                     <p className="text-[#8e8e93]">{course.subtitle}</p>
                   </div>
                 </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="courses"
+        />
+
 
                 <p className="text-[#aeaeb2] leading-relaxed mt-4">{course.description}</p>
 

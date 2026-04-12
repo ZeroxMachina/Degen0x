@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "How to Read a Crypto Whitepaper: A Complete 2026 Guide for Investors",
@@ -48,6 +50,16 @@ export default function HowToReadWhitepaperPage() {
               <div className="text-xs" style={{ color: "var(--color-text-secondary)" }}>{s.label}</div>
               <div className="text-sm font-bold" style={{ color: "var(--color-text)" }}>{s.value}</div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={4}
+          section="learn"
+        />
+
           ))}
         </div>
       </div>
@@ -220,6 +232,26 @@ export default function HowToReadWhitepaperPage() {
           ))}
         </div>
       </div>
-    </article>
+    
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/investing/crypto-narrative-trading-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Narrative Trading Guide</a></li>
+            <li><a href="/investing/crypto-with-most-staking-rewards" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto With Most Staking Rewards</a></li>
+            <li><a href="/tools/bitcoin-rainbow-chart" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Bitcoin Rainbow Chart</a></li>
+            <li><a href="/tools/crypto-heatmap-live" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Heatmap Live</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

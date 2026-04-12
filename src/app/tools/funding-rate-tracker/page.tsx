@@ -3,6 +3,8 @@ import FundingRateTracker from "@/components/FundingRateTracker";
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateToolPageSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -224,6 +226,16 @@ export default function FundingRateTrackerPage() {
             ))}
           </div>
         </div>
+
+        <AuthorAttribution
+          author="0xMachina"
+          role="Founder"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="tools"
+        />
+
 
         {/* ── FAQ Section ── */}
         <div style={{ marginTop: 48 }}>

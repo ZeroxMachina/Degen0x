@@ -6,6 +6,8 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { exchanges, exchangeDetailedComparisons, exchangeComparisonFeatures } from "@/data/exchanges";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `10 Best Crypto Exchanges of ${CURRENT_YEAR} (Ranked & Reviewed)`,
@@ -126,6 +128,16 @@ export default function BestExchangesPage() {
             We evaluate each exchange across six key categories, each weighted based on importance
             to the average user:
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1500', border: '1px solid #3d2e0a', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🔍</span>
+            <strong style={{ color: '#f59e0b', fontSize: 15 }}>Our Testing Notes</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We evaluate exchanges by actually using them — not just reading their marketing materials. Some surprises, both good and bad.
+          </p>
+        </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               { title: "Fees (25%)", desc: "Trading fees, deposit/withdrawal fees, spread costs, and hidden charges." },
@@ -194,6 +206,16 @@ export default function BestExchangesPage() {
                     </ul>
                   </div>
                 </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
                 <div className="mt-4 flex gap-3">
                   <a
                     href={exchange.affiliateUrl}

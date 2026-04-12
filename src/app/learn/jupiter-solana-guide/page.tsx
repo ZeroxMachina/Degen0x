@@ -8,6 +8,8 @@ import {
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -176,6 +178,16 @@ export default function JupiterSolanaGuidePage() {
                 {s.value}
               </div>
             </div>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-16"
+          updatedDate="2026-03-16"
+          readingTime={8}
+          section="learn"
+        />
+
           ))}
         </div>
       </div>
@@ -652,6 +664,26 @@ export default function JupiterSolanaGuidePage() {
       </div>
 
       <BackToTop />
-    </article>
+    
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Coinbase Vs Kraken Vs Gemini</a></li>
+            <li><a href="/courses/blockchain-developer-course-free" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Blockchain Developer Course Free</a></li>
+            <li><a href="/investing/best-ai-crypto-projects-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Ai Crypto Projects 2026</a></li>
+            <li><a href="/investing/best-gaming-crypto-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Gaming Crypto Tokens</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

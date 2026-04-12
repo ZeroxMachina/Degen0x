@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Restaking Compared: EigenLayer vs Symbiotic vs Karak 2026 | degen0x",
@@ -191,6 +193,16 @@ export default function RestakingComparisonPage() {
           <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#c9d1d9", marginBottom: "16px" }}>
             Restaking is the practice of utilizing already-staked ETH or liquid staking tokens (LSTs) to validate additional services and networks beyond Ethereum mainnet. Instead of keeping your staked assets idle after earning standard Ethereum staking rewards, restaking protocols allow you to deploy that same collateral to secure other applications, known as Actively Validated Services (AVS).
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+          </p>
+        </div>
           <p style={{ fontSize: "16px", lineHeight: "1.6", color: "#c9d1d9", marginBottom: "16px" }}>
             The appeal is straightforward: higher yields. By restaking, you can earn additional rewards from AVS on top of your base staking APY. However, this comes with increased risk. If an AVS you're securing fails or is exploited, you're subject to slashing—a loss of a portion of your collateral as penalty.
           </p>
@@ -626,6 +638,24 @@ export default function RestakingComparisonPage() {
           </p>
         </div>
       </div>
-    </article>
+
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-29"
+          updatedDate="2026-04-12"
+          readingTime={6}
+          section="learn"
+        />
+
+    
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
+      </article>
   );
 }

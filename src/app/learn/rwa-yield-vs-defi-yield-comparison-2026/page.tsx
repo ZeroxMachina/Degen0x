@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "RWA Yield vs DeFi Yield: Where to Earn in 2026",
@@ -31,6 +33,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "RWA Yield vs DeFi Yield: Where to Earn in 2026",
     description: "Compare tokenized treasuries vs DeFi lending yields with risk-adjusted returns.",
+    images: ["https://degen0x.com/og-rwa-defi-yield-comparison-2026.svg"],
+    image: "https://degen0x.com/og-rwa-defi-yield-comparison-2026.svg",
   },
   alternates: {
     canonical: `${SITE_URL}/learn/rwa-yield-vs-defi-yield-comparison-2026`,
@@ -219,6 +223,16 @@ export default function RWAVsDeFiYieldComparison() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 2026 · 15 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-28"
+          updatedDate="2026-03-28"
+          readingTime={12}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -242,6 +256,16 @@ export default function RWAVsDeFiYieldComparison() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             In 2026, the boundary between traditional finance yields and decentralized finance returns has blurred completely. Real-world assets (RWAs)—US Treasury bonds, corporate debt, and real estate-backed securities—are now tokenized and accessible via blockchain. Simultaneously, DeFi lending protocols have matured, offering yields that compete with traditional banking while maintaining composability and innovation.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             The crypto market reached $12.4 billion in total on-chain RWA value by March 2026, up 140% from December 2024. This explosion is not speculation—it's institutional capital reallocating from traditional bonds into tokenized versions. BlackRock's BUIDL ($1.9B AUM), Franklin Templeton's BENJI, and Ondo's USDY represent a fundamental shift: crypto is no longer just about speculation or scaling payments, but capturing real yield from the real economy.
           </p>

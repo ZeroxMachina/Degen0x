@@ -3,6 +3,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: 'Flash Loans Guide 2026 — How DeFi Instant Loans Work',
@@ -92,7 +94,7 @@ const h2Style = {
   fontSize: 24,
   fontWeight: 700 as const,
   marginBottom: 16,
-  color: '#e6edf3',
+  color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12,
 };
 const pStyle = {
   color: '#c9d1d9',
@@ -117,7 +119,7 @@ const ulStyle = {
 const liStyle = { marginBottom: 12 };
 const infoBox = {
   background: '#161b22',
-  border: '1px solid #30363d',
+  border: '1px solid #30363d', borderLeft: '3px solid #a78bfa',
   borderRadius: 12,
   padding: 20,
   marginBottom: 16,
@@ -231,6 +233,16 @@ export default function FlashLoansGuidePage() {
           </div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-23"
+          updatedDate="2026-04-12"
+          readingTime={13}
+          section="learn"
+        />
+
+
         {/* Section 1: What Are Flash Loans? */}
         <section style={sectionStyle}>
           <h2 style={h2Style}>What Are Flash Loans?</h2>
@@ -238,6 +250,16 @@ export default function FlashLoansGuidePage() {
           <p style={pStyle}>
             Flash loans represent one of the most innovative and unique mechanisms in decentralized finance (DeFi). Unlike traditional lending, where borrowers must provide collateral and go through a lengthy approval process, flash loans allow users to borrow any amount of cryptocurrency instantaneously — with zero collateral required. The catch? The entire loan must be borrowed and repaid within a single blockchain transaction.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
 
           <p style={pStyle}>
             Invented by Aave in February 2020, flash loans leverage the atomic nature of blockchain transactions to eliminate counterparty risk. If a borrower cannot repay the loan plus a small fee within the same transaction, the entire transaction reverts automatically. This means the lending protocol never loses funds, and borrowers get instant access to massive capital without proving creditworthiness or providing collateral.
@@ -925,6 +947,26 @@ export default function FlashLoansGuidePage() {
             </div>
           </div>
         </section>
+      
+        
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/investing/crypto-60-40-portfolio-strategy" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto 60 40 Portfolio Strategy</a></li>
+            <li><a href="/investing/crypto-options-strategies-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Options Strategies Guide</a></li>
+            <li><a href="/investing/when-to-take-profits-crypto" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>When To Take Profits Crypto</a></li>
+            <li><a href="/tools/compound-interest-crypto-calculator" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Compound Interest Crypto Calculator</a></li>
+          </ul>
+        </nav>
+
+        {/* section-footer */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+          </p>
+        </div>
       </article>
 
       <BackToTop />

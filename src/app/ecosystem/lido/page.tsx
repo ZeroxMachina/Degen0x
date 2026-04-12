@@ -31,6 +31,16 @@ export default function LidoGuidePage(){return(<main style={{backgroundColor:S.b
 <section style={{marginBottom:36}}>
 <h2 style={{fontSize:"1.5rem",fontWeight:800,marginBottom:12,color:C}}>What is Lido?</h2>
 <p style={{color:S.text2,lineHeight:1.8,marginBottom:14}}>Lido Finance is the largest liquid staking protocol for Ethereum. Instead of locking 32 ETH to run your own validator (the traditional staking requirement), Lido lets you stake any amount of ETH and receive <strong style={{color:S.text}}>stETH</strong> (staked ETH) — a liquid token that represents your staked ETH plus daily accruing rewards.</p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
 <p style={{color:S.text2,lineHeight:1.8}}>stETH is widely used as collateral across DeFi (Aave, MakerDAO, Curve) while still earning Ethereum consensus layer rewards. This is the core value proposition: <strong style={{color:S.text}}>stake and earn + stay liquid</strong>.</p>
 </section>
 
@@ -67,5 +77,16 @@ export default function LidoGuidePage(){return(<main style={{backgroundColor:S.b
           <TradingViewChart symbol="COINBASE:LDOUSD" height={420} />
         </section>
 
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/crypto-trading-bots-telegram-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Trading Bots Telegram Guide 2026</a></li>
+            <li><a href="/learn/data-availability-sampling-explained" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Data Availability Sampling Explained</a></li>
+            <li><a href="/learn/defi-aggregators-explained-1inch" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Defi Aggregators Explained 1Inch</a></li>
+            <li><a href="/learn/depin-decentralized-infrastructure-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Depin Decentralized Infrastructure Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
 </main>);}

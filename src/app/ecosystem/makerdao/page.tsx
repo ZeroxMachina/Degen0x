@@ -62,6 +62,16 @@ export default function MakerDAOGuidePage() {
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             MakerDAO created DAI, the first and most battle-tested decentralized stablecoin. Since 2015, DAI has maintained its $1 peg without a central authority holding cash reserves. Instead, it's backed by diversified crypto collateral (ETH, WBTC, staking tokens, real-world assets) and algorithmic incentives.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Ecosystem strength is the best leading indicator of L1/L2 value. We track developer activity, unique addresses, and TVL growth — not just token price.
+          </p>
+        </div>
           <p style={{ fontSize: "1rem", color: S.text2, lineHeight: 1.8, marginBottom: 12 }}>
             In 2026, MakerDAO rebranded to Sky, introducing a major upgrade. The new $SKY governance token works alongside $MKR. The protocol now features the DAI Savings Rate (DSR) at 5%, allowing anyone to deposit DAI and earn yield without locking it up or taking smart contract risk.
           </p>

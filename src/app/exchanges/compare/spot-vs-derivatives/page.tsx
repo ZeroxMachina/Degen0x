@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: `Spot vs Derivatives Trading: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -46,6 +48,16 @@ export default function SpotVsDerivativesPage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed mt-4"><strong className="text-[var(--color-text)]">Choose derivatives if</strong> you are an experienced trader who wants leverage, short selling, hedging, or capital-efficient speculation. Always use proper risk management and never risk more than you can afford to lose.</p>
         </div>
       </div>
+
+        <AuthorAttribution
+          author="NullPointer"
+          role="Data Engineer"
+          publishedDate="2026-04-10"
+          updatedDate="2026-04-12"
+          readingTime={3}
+          section="exchanges"
+        />
+
 
       <FAQSection faqs={[
         { question: "Can I lose more than my investment with derivatives?", answer: "On most crypto exchanges, you cannot lose more than your margin deposit due to liquidation mechanisms. However, in extreme cases of flash crashes or exchange outages, losses can exceed deposited margin. Always use stop losses and appropriate position sizing." },

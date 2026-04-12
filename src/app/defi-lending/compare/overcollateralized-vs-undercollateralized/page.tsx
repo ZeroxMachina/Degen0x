@@ -42,6 +42,16 @@ export default function OverVsUndercollateralizedPage() {
       </section>
       <section className="mb-12 prose prose-invert max-w-none">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-4">Detailed Analysis</h2>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a0f2e', border: '1px solid #3b1f5e', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>⚠️</span>
+            <strong style={{ color: '#c084fc', fontSize: 15 }}>Risk Assessment</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            Our DeFi researchers monitor governance proposals and treasury health, not just headline rates. A protocol's governance decisions reveal more than its TVL.
+          </p>
+        </div>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Risk Profiles</h3>
         <p className="text-[var(--color-text-secondary)]">Overcollateralized lending has near-zero credit risk because the liquidation mechanism ensures lenders are repaid even if borrowers abandon their positions. The primary risks are smart contract vulnerabilities and extreme market conditions where liquidations fail to execute properly. Undercollateralized lending introduces genuine credit risk where borrower default can result in partial or total loss of principal. This risk is managed through borrower vetting, diversification across loans, and loss reserves, but defaults are a real possibility as demonstrated by multiple protocol incidents.</p>
         <h3 className="text-xl font-bold text-[var(--color-text)] mt-6 mb-3">Yield Comparison</h3>

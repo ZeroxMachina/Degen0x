@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import SolanaLSTCalculator from "@/components/SolanaLSTCalculator";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+
 
 export const metadata: Metadata = {
   title: "Solana Liquid Staking Guide 2026: LST Yields & APY",
@@ -195,6 +197,16 @@ export default function SolanaLiquidStakingGuide() {
           <div style={{ marginTop: '12px', fontSize: '13px', color: '#8b949e' }}>Updated March 2026 · 12 min read</div>
         </div>
 
+        <AuthorAttribution
+          author="DegenSensei"
+          role="Content Lead"
+          publishedDate="2026-03-25"
+          updatedDate="2026-03-25"
+          readingTime={4}
+          section="learn"
+        />
+
+
         {/* Table of Contents */}
         <nav style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', marginBottom: '40px' }}>
           <h2 style={{ fontSize: '14px', fontWeight: 700, marginBottom: '12px', color: '#58a6ff' }}>Table of Contents</h2>
@@ -215,6 +227,16 @@ export default function SolanaLiquidStakingGuide() {
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Solana liquid staking is a DeFi primitive that lets you stake SOL and receive a liquid staking token (LST) in return—without locking your capital. When you stake SOL through traditional validators, your SOL is locked for an epoch (roughly 3 days), and unstaking takes another epoch. This means capital is stuck, unable to participate in other DeFi opportunities.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>💡</span>
+            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          </p>
+        </div>
           <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '16px' }}>
             Liquid staking protocols solve this by pooling deposits from many users and delegating to validators. In return, you receive an LST—a token that represents your staked SOL. The LST is immediately tradeable and usable across DeFi, while the underlying SOL earns staking rewards. This unlocks massive capital efficiency: your SOL generates staking yield while you deploy the LST into yield farms, lending protocols, or liquidity pools.
           </p>

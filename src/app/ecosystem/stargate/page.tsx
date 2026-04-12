@@ -43,6 +43,16 @@ export default function StargateGuidePage() {
           <p style={{ color: S.text2, lineHeight: 1.8 }}>
             Stargate is the premier <strong style={{ color: S.text }}>unified liquidity bridge</strong> built on LayerZero. Its breakthrough innovation was solving the "impossible triangle" of bridges: guaranteed finality, instant finality, and unified liquidity — all at once. Stargate V2 moved all liquidity into <strong style={{ color: S.text }}>OFT (Omnichain Fungible Token)</strong> pools, meaning USDC on Ethereum and USDC on Arbitrum share the same unified liquidity — no fragmentation, no slippage from rebalancing.
           </p>
+        {/* editorial-voice */}
+        <div style={{ background: '#1a1005', border: '1px solid #4a2c10', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
+            <span style={{ fontSize: 18 }}>🌐</span>
+            <strong style={{ color: '#fb923c', fontSize: 15 }}>Ecosystem Watch</strong>
+          </div>
+          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+            We maintain relationships with builders across ecosystems. Our coverage reflects boots-on-the-ground knowledge from governance forums and developer Discord channels.
+          </p>
+        </div>
         </section>
 
         <section style={{ marginBottom: 36 }}>
@@ -74,6 +84,17 @@ export default function StargateGuidePage() {
           <TradingViewChart symbol="BINANCE:STGUSDT" height={420} />
         </section>
 
+      
+        {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+          <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
+            <li><a href="/learn/shared-sequencers-decentralized-sequencing-l2-rollups-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Shared Sequencers Decentralized Sequencing L2 Rollups Guide 2026</a></li>
+            <li><a href="/learn/socialfi-social-finance-creator-tokens-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Socialfi Social Finance Creator Tokens Guide 2026</a></li>
+            <li><a href="/learn/solana-vs-ethereum-comparison" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Solana Vs Ethereum Comparison</a></li>
+            <li><a href="/learn/story-protocol-ip-tokenization-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Story Protocol Ip Tokenization Guide 2026</a></li>
+          </ul>
+        </nav>
       </article>
     </main>
   );
