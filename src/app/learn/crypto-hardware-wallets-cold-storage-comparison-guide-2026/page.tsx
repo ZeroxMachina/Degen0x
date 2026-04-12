@@ -354,7 +354,7 @@ export default function HardwareWalletsGuide() {
       }}>
         <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
-          <Link href="/learn" style={
+          <Link href="/learn" style={{
             padding: "12px 16px",
             backgroundColor: "#1f2937",
             borderRadius: "8px",
@@ -364,10 +364,10 @@ export default function HardwareWalletsGuide() {
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
-          }>
+          }}>
             All Learning Guides
           </Link>
-          <Link href="/tools" style={
+          <Link href="/tools" style={{
             padding: "12px 16px",
             backgroundColor: "#1f2937",
             borderRadius: "8px",
@@ -377,10 +377,10 @@ export default function HardwareWalletsGuide() {
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
-          }>
+          }}>
             Crypto Tools
           </Link>
-          <Link href="/compare" style={
+          <Link href="/compare" style={{
             padding: "12px 16px",
             backgroundColor: "#1f2937",
             borderRadius: "8px",
@@ -390,7 +390,7 @@ export default function HardwareWalletsGuide() {
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
-          }>
+          }}>
             Compare Projects
           </Link>
         </div>

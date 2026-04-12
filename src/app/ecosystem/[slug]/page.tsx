@@ -376,7 +376,7 @@ export default async function DAppPage({
       }}>
         <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
-          <Link href="/ecosystem" style={
+          <Link href="/ecosystem" style={{
             padding: "12px 16px",
             backgroundColor: "#1f2937",
             borderRadius: "8px",
@@ -386,10 +386,10 @@ export default async function DAppPage({
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
-          }>
+          }}>
             Ecosystem Projects
           </Link>
-          <Link href="/learn" style={
+          <Link href="/learn" style={{
             padding: "12px 16px",
             backgroundColor: "#1f2937",
             borderRadius: "8px",
@@ -399,10 +399,10 @@ export default async function DAppPage({
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
-          }>
+          }}>
             Learn About Projects
           </Link>
-          <Link href="/compare" style={
+          <Link href="/compare" style={{
             padding: "12px 16px",
             backgroundColor: "#1f2937",
             borderRadius: "8px",
@@ -412,7 +412,7 @@ export default async function DAppPage({
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
-          }>
+          }}>
             Compare Projects
           </Link>
         </div>
