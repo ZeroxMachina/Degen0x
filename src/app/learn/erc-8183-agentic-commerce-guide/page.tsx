@@ -1004,6 +1004,7 @@ export default function ERC8183GuidePage() {
             </Link>
 
             <Link
+              href="/learn/ai-crypto-agents-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',
@@ -1022,6 +1023,7 @@ export default function ERC8183GuidePage() {
             </Link>
 
             <Link
+              href="/learn/ai-agent-identity-guide"
               style={{
                 backgroundColor: '#161b22',
                 border: '1px solid #30363d',

@@ -1258,6 +1258,7 @@ export default function CryptocurrencyForDummiesGuide() {
             </li>
             <li>
               <Link
+                href="/learn/how-blockchain-works"
                 style={{ color: darkColors.link, textDecoration: "underline" }}
               >
                 How Blockchain Works
@@ -1322,6 +1323,7 @@ export default function CryptocurrencyForDummiesGuide() {
           }}
         >
           <Link
+            href="/learn/what-is-bitcoin"
             style={{
               ...infoBoxStyle,
               textDecoration: "none",
@@ -1346,6 +1348,7 @@ export default function CryptocurrencyForDummiesGuide() {
           </Link>
 
           <Link
+            href="/learn/what-is-ethereum"
             style={{
               ...infoBoxStyle,
               textDecoration: "none",
@@ -1370,6 +1373,7 @@ export default function CryptocurrencyForDummiesGuide() {
           </Link>
 
           <Link
+            href="/learn/wallet-types-explained"
             style={{
               ...infoBoxStyle,
               textDecoration: "none",

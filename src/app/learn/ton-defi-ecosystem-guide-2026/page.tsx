@@ -806,6 +806,7 @@ export default function TONDeFiGuide() {
         </p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link
+            href="/tools/defi-yields"
             className="affiliate-cta px-6 py-3 rounded-lg font-semibold transition-all"
             style={{ background: '#0088CC', color: 'white' }}
           >
