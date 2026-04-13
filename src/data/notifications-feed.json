@@ -1,9 +1,25 @@
 [
   {
+    "id": "feed-2026-04-13-001",
+    "type": "system",
+    "title": "Full Catalog Launch: 1,797 Pages Live",
+    "message": "Every page on degen0x is now indexed — tools, guides, reviews, and comparisons across 74 categories.",
+    "actionUrl": "/learn",
+    "date": "2026-04-13"
+  },
+  {
+    "id": "feed-2026-04-13-002",
+    "type": "news",
+    "title": "SEO Upgrade: Structured Data on All Pages",
+    "message": "Every page now has JSON-LD schema, canonical URLs, and optimized metadata for better search visibility.",
+    "actionUrl": "/tools",
+    "date": "2026-04-13"
+  },
+  {
     "id": "feed-2026-04-12-001",
     "type": "news",
-    "title": "\ud83d\udcf0 Anthropic's Mythos AI Exposes Critical DeFi Security Flaws",
-    "message": "Anthropic's unreleased Mythos AI model discovered thousands of zero-day vulnerabilities in critical crypto infrastructure, prompting an emergency meeting between Treasury Secretary Bessent and bank CEOs.",
+    "title": "Anthropic's Mythos AI Exposes DeFi Security Flaws",
+    "message": "Anthropic's unreleased Mythos AI model discovered thousands of zero-day vulnerabilities in critical crypto infrastructure.",
     "actionUrl": "/news",
     "date": "2026-04-12"
   },
@@ -13,30 +29,6 @@
     "title": "New: Best Crypto Presales 2026",
     "message": "Our curated list of the most promising new crypto presales — vetted for legitimacy and upside potential.",
     "actionUrl": "/investing/best-new-crypto-presales-2026",
-    "date": "2026-04-10"
-  },
-  {
-    "id": "feed-2026-04-10-016",
-    "type": "news",
-    "title": "New: DCA vs Lump Sum Guide",
-    "message": "Dollar-cost averaging or lump sum? We break down when each crypto investing strategy wins.",
-    "actionUrl": "/investing/crypto-dollar-cost-averaging-vs-lump-sum",
-    "date": "2026-04-10"
-  },
-  {
-    "id": "feed-2026-04-10-017",
-    "type": "system",
-    "title": "5 New Investing Guides Published",
-    "message": "Presales, DCA vs lump sum, infrastructure tokens, DePIN, and restaking guides now live.",
-    "actionUrl": "/investing/best-new-crypto-presales-2026",
-    "date": "2026-04-10"
-  },
-  {
-    "id": "feed-2026-04-10-014",
-    "type": "system",
-    "title": "5 More Investing Guides Live",
-    "message": "AI crypto, undervalued tokens, gaming tokens, RWA picks, and whale watching guides now published.",
-    "actionUrl": "/investing/best-ai-crypto-projects-2026",
     "date": "2026-04-10"
   }
 ]
