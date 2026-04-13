@@ -78,7 +78,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/under 10 Dollars", "description": "Leading Ethereum scaling ecosystem with zkEVM, CDK for custom chains, and AggLayer for cross-chain interoperability. Major partnership network including Disney", "url": "https://degen0x.com/investing/best/under-10-dollars"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/under 10 Dollars", "description": "Leading Ethereum scaling ecosystem with zkEVM, CDK for custom chains, and AggLayer for cross-chain interoperability. Major partnership network including Disney", "url": "https://degen0x.com/investing/best/under-10-dollars", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

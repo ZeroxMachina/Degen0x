@@ -61,7 +61,7 @@ export default function XPAttestationPage() {
       <div style={{ maxWidth: 760, margin: "40px auto", padding: "0 16px 80px" }}>
         <EASXPAttestation xpAmount={3750} completedCourse="Intermediate DeFi" />
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-chain XP Attestation \u2014 degen0x | Verify Your Crypto", "description": "Mint a verifiable on-chain credential via Ethereum Attestation Service (EAS). Prove your crypto education, XP earned, and course completions \u2014 permanently on", "url": "https://degen0x.com/xp-attestation"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-chain XP Attestation \u2014 degen0x | Verify Your Crypto", "description": "Mint a verifiable on-chain credential via Ethereum Attestation Service (EAS). Prove your crypto education, XP earned, and course completions \u2014 permanently on", "url": "https://degen0x.com/xp-attestation", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

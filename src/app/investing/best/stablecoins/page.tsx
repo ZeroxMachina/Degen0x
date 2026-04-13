@@ -700,7 +700,7 @@ export default function BestStablecoinsPage() {
           Compare DeFi Lending Rates →
         </a>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Stablecoins 2026", "description": "Backed 1:1 by real US dollars and short-term US Treasury bills held in regulated bank accounts. The issuer holds reserves equal to (or greater than) the total", "url": "https://degen0x.com/investing/best/stablecoins"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Stablecoins 2026", "description": "Backed 1:1 by real US dollars and short-term US Treasury bills held in regulated bank accounts. The issuer holds reserves equal to (or greater than) the total", "url": "https://degen0x.com/investing/best/stablecoins", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -79,7 +79,7 @@ export default function BestAndroidWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/android", "description": "The most feature-complete Android wallet with 100+ chain support, built-in dApp browser, staking, and WalletConnect integration.", "url": "https://degen0x.com/wallets/best/android"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/android", "description": "The most feature-complete Android wallet with 100+ chain support, built-in dApp browser, staking, and WalletConnect integration.", "url": "https://degen0x.com/wallets/best/android", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

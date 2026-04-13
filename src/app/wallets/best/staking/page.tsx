@@ -197,7 +197,7 @@ export default function BestStakingWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/staking", "description": "Stake ETH, SOL, DOT, ATOM, and more through Ledger Live while keeping private keys on the secure element chip. Supports staking for 10+ proof-of-stake networks.", "url": "https://degen0x.com/wallets/best/staking"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/staking", "description": "Stake ETH, SOL, DOT, ATOM, and more through Ledger Live while keeping private keys on the secure element chip. Supports staking for 10+ proof-of-stake networks.", "url": "https://degen0x.com/wallets/best/staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

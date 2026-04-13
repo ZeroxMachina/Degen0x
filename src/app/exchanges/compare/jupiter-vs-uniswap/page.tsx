@@ -78,7 +78,7 @@ export default function JupiterVsUniswapPage() {
         { question: "Can I use both Jupiter and Uniswap?", answer: "Yes, many DeFi users maintain wallets on both Solana and Ethereum to access different token ecosystems. You would need a Solana wallet (like Phantom) for Jupiter and an Ethereum wallet (like MetaMask) for Uniswap." },
         { question: "Which has more tokens available?", answer: "Both have thousands of tokens, but in different ecosystems. Uniswap provides access to Ethereum-based tokens (ERC-20), while Jupiter provides access to Solana-based tokens (SPL). The choice depends on which ecosystem's tokens you want to trade." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/jupiter Vs Uniswap", "description": "Detailed comparison of Jupiter (Solana) vs Uniswap (Ethereum). Compare fees, speed, token selection, and features of the two leading DEXs.", "url": "https://degen0x.com/exchanges/compare/jupiter-vs-uniswap"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/jupiter Vs Uniswap", "description": "Detailed comparison of Jupiter (Solana) vs Uniswap (Ethereum). Compare fees, speed, token selection, and features of the two leading DEXs.", "url": "https://degen0x.com/exchanges/compare/jupiter-vs-uniswap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

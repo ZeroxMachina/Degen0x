@@ -88,7 +88,7 @@ export default function BestTaxSolutionsPage() {
           </Link>
         ))}
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/best", "description": "Full-featured tax software for calculating, tracking, and filing your crypto taxes. Supports hundreds of exchanges, DeFi protocols, and NFT platforms.", "url": "https://degen0x.com/taxes/best"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/best", "description": "Full-featured tax software for calculating, tracking, and filing your crypto taxes. Supports hundreds of exchanges, DeFi protocols, and NFT platforms.", "url": "https://degen0x.com/taxes/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

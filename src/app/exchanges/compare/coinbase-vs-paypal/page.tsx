@@ -78,7 +78,7 @@ export default function CoinbaseVsPayPalPage() {
         { question: "Can I move crypto from PayPal to Coinbase?", answer: "PayPal now supports limited crypto transfers to external wallets. You could withdraw crypto from PayPal and deposit it to your Coinbase address, though the process is not as seamless as transfers between dedicated exchanges." },
         { question: "What is PYUSD?", answer: "PYUSD is PayPal's US dollar-pegged stablecoin issued by Paxos. It can be used for payments within PayPal, transferred on-chain, and used in DeFi. Coinbase supports USDC as its primary stablecoin." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/coinbase Vs Paypal", "description": "Detailed comparison of Coinbase vs PayPal for crypto. Compare fees, coin selection, features, and which platform is best for buying cryptocurrency.", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-paypal"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/coinbase Vs Paypal", "description": "Detailed comparison of Coinbase vs PayPal for crypto. Compare fees, coin selection, features, and which platform is best for buying cryptocurrency.", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-paypal", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

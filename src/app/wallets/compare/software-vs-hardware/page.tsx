@@ -68,7 +68,7 @@ export default function SoftwareVsHardwarePage() {
             The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
           </p>
         </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/hardware" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Hardware Wallets</h3></Link><Link href="/wallets/best/software" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Software Wallets</h3></Link></div></section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/software Vs Hardware", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/software-vs-hardware"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/software Vs Hardware", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/software-vs-hardware", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

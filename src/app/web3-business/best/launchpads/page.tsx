@@ -208,7 +208,7 @@ export default function LaunchpadsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security (30%)", "description": "A leading fair launch platform that specializes in Liquidity Bootstrapping Pools (LBPs). Projects set a starting price that decays over time, allowing the", "url": "https://degen0x.com/web3-business/best/launchpads"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security (30%)", "description": "A leading fair launch platform that specializes in Liquidity Bootstrapping Pools (LBPs). Projects set a starting price that decays over time, allowing the", "url": "https://degen0x.com/web3-business/best/launchpads", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -212,7 +212,7 @@ export default function BestAICryptoPage() {
       <section id="faq">
         <FAQSection faqs={AI_CRYPTO_FAQS} />
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top AI Crypto Tokens", "description": "A decentralized GPU rendering network connecting artists and studios needing GPU power with providers who have idle capacity. Expanding into AI compute and", "url": "https://degen0x.com/investing/best/ai-crypto"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top AI Crypto Tokens", "description": "A decentralized GPU rendering network connecting artists and studios needing GPU power with providers who have idle capacity. Expanding into AI compute and", "url": "https://degen0x.com/investing/best/ai-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

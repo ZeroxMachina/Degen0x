@@ -57,7 +57,7 @@ export default function OnChainPortfolioPage() {
         <OnChainPortfolioAnalytics />
       </div>
       <Footer />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-Chain Portfolio Analytics \u2014 Multi-Chain, DeFi & NFT Tracker | degen0x", "description": "Track your crypto portfolio across Ethereum, Arbitrum, Base, Polygon & more. See DeFi positions, P&L history, risk scores, and on-chain data in real time.", "url": "https://degen0x.com/portfolio-onchain"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-Chain Portfolio Analytics \u2014 Multi-Chain, DeFi & NFT Tracker | degen0x", "description": "Track your crypto portfolio across Ethereum, Arbitrum, Base, Polygon & more. See DeFi positions, P&L history, risk scores, and on-chain data in real time.", "url": "https://degen0x.com/portfolio-onchain", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

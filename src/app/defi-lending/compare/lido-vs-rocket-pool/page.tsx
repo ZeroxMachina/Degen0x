@@ -64,7 +64,7 @@ export default function LidoVsRocketPoolPage() {
         <ComparisonTable items={items} features={features} title="Lido vs Rocket Pool Comparison" />
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/lido Vs Rocket Pool", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/lido-vs-rocket-pool"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/lido Vs Rocket Pool", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/lido-vs-rocket-pool", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

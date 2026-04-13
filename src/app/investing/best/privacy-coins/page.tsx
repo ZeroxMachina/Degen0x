@@ -78,7 +78,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/privacy Coins", "description": "The gold standard of privacy coins with mandatory privacy for all transactions. Ring signatures, stealth addresses, and RingCT make transactions untraceable by", "url": "https://degen0x.com/investing/best/privacy-coins"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/privacy Coins", "description": "The gold standard of privacy coins with mandatory privacy for all transactions. Ring signatures, stealth addresses, and RingCT make transactions untraceable by", "url": "https://degen0x.com/investing/best/privacy-coins", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

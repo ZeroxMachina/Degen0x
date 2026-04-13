@@ -206,7 +206,7 @@ export default function FoldVsCoinbaseCardPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/fold Vs Coinbase Card", "description": "Fold Card vs Coinbase Card compared for Bitcoin rewards, cashback rates, fees, and features. Find out which US crypto debit card earns you the most BTC.", "url": "https://degen0x.com/crypto-cards/compare/fold-vs-coinbase-card"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/fold Vs Coinbase Card", "description": "Fold Card vs Coinbase Card compared for Bitcoin rewards, cashback rates, fees, and features. Find out which US crypto debit card earns you the most BTC.", "url": "https://degen0x.com/crypto-cards/compare/fold-vs-coinbase-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

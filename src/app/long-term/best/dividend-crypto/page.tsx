@@ -191,7 +191,7 @@ export default function DividendCryptoPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/dividend Crypto", "description": "Ethereum staking is the gold standard for crypto passive income. By staking ETH (directly or through liquid staking providers), you earn approximately 3-5% APR", "url": "https://degen0x.com/long-term/best/dividend-crypto"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/dividend Crypto", "description": "Ethereum staking is the gold standard for crypto passive income. By staking ETH (directly or through liquid staking providers), you earn approximately 3-5% APR", "url": "https://degen0x.com/long-term/best/dividend-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

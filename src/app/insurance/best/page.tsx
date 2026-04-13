@@ -249,7 +249,7 @@ export default function BestInsurancePage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Contract Cover", "description": "Compare the best crypto insurance protocols. Expert analysis of Nexus Mutual, InsurAce, Unslashed, and more. Find the right coverage for smart contracts,", "url": "https://degen0x.com/insurance/best"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Contract Cover", "description": "Compare the best crypto insurance protocols. Expert analysis of Nexus Mutual, InsurAce, Unslashed, and more. Find the right coverage for smart contracts,", "url": "https://degen0x.com/insurance/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

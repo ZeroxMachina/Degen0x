@@ -138,7 +138,7 @@ export default function RabbyVsMetamaskPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/rabby Vs Metamask", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/rabby-vs-metamask"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/rabby Vs Metamask", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/rabby-vs-metamask", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

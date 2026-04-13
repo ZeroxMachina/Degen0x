@@ -98,7 +98,7 @@ export default function Layer2Page() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/layer 2", "description": "Aave V3 on Arbitrum offers the same battle-tested lending experience as Ethereum mainnet at dramatically lower gas costs. Arbitrum", "url": "https://degen0x.com/defi-lending/best/layer-2"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/layer 2", "description": "Aave V3 on Arbitrum offers the same battle-tested lending experience as Ethereum mainnet at dramatically lower gas costs. Arbitrum", "url": "https://degen0x.com/defi-lending/best/layer-2", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

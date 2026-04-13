@@ -269,7 +269,7 @@ export default function BestTravelCardsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending/best/travel", "description": "The best crypto card for travelers. Zero foreign transaction fees, free airport lounge access via LoungeKey (Jade Green and above), 3-5% cashback worldwide,", "url": "https://degen0x.com/spending/best/travel"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending/best/travel", "description": "The best crypto card for travelers. Zero foreign transaction fees, free airport lounge access via LoungeKey (Jade Green and above), 3-5% cashback worldwide,", "url": "https://degen0x.com/spending/best/travel", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

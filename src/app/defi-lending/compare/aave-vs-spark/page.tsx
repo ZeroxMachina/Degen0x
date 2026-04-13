@@ -83,7 +83,7 @@ export default function AaveVsSparkPage() {
         <p className="text-[var(--color-text-secondary)]">Both protocols use similar risk management approaches since they share the Aave V3 codebase. However, they make different parameter decisions through their separate governance processes. Spark tends to be more conservative in asset listings, supporting fewer assets but with parameters tuned specifically for the MakerDAO ecosystem. Aave's governance manages a much larger and more diverse set of assets across multiple markets and chains.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/aave Vs Spark", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/aave-vs-spark"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/aave Vs Spark", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/aave-vs-spark", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

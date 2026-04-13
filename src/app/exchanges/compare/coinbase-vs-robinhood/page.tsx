@@ -144,7 +144,7 @@ export default function CoinbaseVsRobinhoodPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/coinbase Vs Robinhood", "description": "Crypto content on degen0x", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-robinhood"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/coinbase Vs Robinhood", "description": "Crypto content on degen0x", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-robinhood", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

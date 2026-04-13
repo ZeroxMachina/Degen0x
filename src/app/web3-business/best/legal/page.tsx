@@ -223,7 +223,7 @@ export default function LegalPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/legal", "description": "One of the earliest law firms to establish a dedicated blockchain and cryptocurrency practice. Known for representing policyholders and blockchain companies in", "url": "https://degen0x.com/web3-business/best/legal"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/legal", "description": "One of the earliest law firms to establish a dedicated blockchain and cryptocurrency practice. Known for representing policyholders and blockchain companies in", "url": "https://degen0x.com/web3-business/best/legal", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

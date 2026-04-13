@@ -56,7 +56,7 @@ export default function StablecoinLoansPage() {
       </div>
       <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/stablecoin", "description": "Aave offers stablecoin borrowing across USDC, USDT, DAI, and other stablecoins on 10+ chains. Multi-chain availability means you can find the best rates for", "url": "https://degen0x.com/crypto-loans/best/stablecoin"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/stablecoin", "description": "Aave offers stablecoin borrowing across USDC, USDT, DAI, and other stablecoins on 10+ chains. Multi-chain availability means you can find the best rates for", "url": "https://degen0x.com/crypto-loans/best/stablecoin", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

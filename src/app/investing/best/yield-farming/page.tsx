@@ -78,7 +78,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/yield Farming", "description": "The dominant stablecoin DEX and yield farming hub. Curve pools offer swap fees plus CRV rewards, with the ve-tokenomics model creating deep liquidity", "url": "https://degen0x.com/investing/best/yield-farming"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/yield Farming", "description": "The dominant stablecoin DEX and yield farming hub. Curve pools offer swap fees plus CRV rewards, with the ve-tokenomics model creating deep liquidity", "url": "https://degen0x.com/investing/best/yield-farming", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

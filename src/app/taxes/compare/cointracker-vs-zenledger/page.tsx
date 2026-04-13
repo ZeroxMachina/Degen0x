@@ -83,7 +83,7 @@ export default function CoinTrackerVsZenLedgerPage() {
         <p className="text-[var(--color-text-secondary)]">Both platforms offer free tiers for up to 25 transactions. ZenLedger's paid plans start at $49 per year, slightly cheaper than CoinTracker's $59 starting price. At higher tiers, ZenLedger's unlimited plan at $399 includes CPA access, while CoinTracker's top tier at $599 focuses on unlimited transaction support and priority features. Choose based on which features matter most for your situation.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/cointracker Vs Zenledger", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/cointracker-vs-zenledger"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/cointracker Vs Zenledger", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/cointracker-vs-zenledger", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

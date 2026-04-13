@@ -37,7 +37,7 @@ export default function QuizPage() {
       />      <div style={{ maxWidth: 600, margin: '0 auto' }}>
         <AdaptiveQuizEngine userXP={1500} maxQuestions={10} />
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Adaptive Crypto Quiz \u2014 Earn XP | degen0x", "description": "Test your crypto knowledge with our adaptive quiz engine. Questions adjust to your skill level \u2014 from novice to Chain God. Earn XP and unlock badges.", "url": "https://degen0x.com/quiz"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Adaptive Crypto Quiz \u2014 Earn XP | degen0x", "description": "Test your crypto knowledge with our adaptive quiz engine. Questions adjust to your skill level \u2014 from novice to Chain God. Earn XP and unlock badges.", "url": "https://degen0x.com/quiz", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

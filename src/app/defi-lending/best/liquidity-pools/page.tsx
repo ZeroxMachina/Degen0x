@@ -113,7 +113,7 @@ export default function LiquidityPoolsPage() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/liquidity Pools", "description": "Curve Finance dominates stablecoin and pegged-asset liquidity pools with its specialized AMM design that minimizes slippage. LPs earn trading fees plus CRV", "url": "https://degen0x.com/defi-lending/best/liquidity-pools"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/liquidity Pools", "description": "Curve Finance dominates stablecoin and pegged-asset liquidity pools with its specialized AMM design that minimizes slippage. LPs earn trading fees plus CRV", "url": "https://degen0x.com/defi-lending/best/liquidity-pools", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

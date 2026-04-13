@@ -437,7 +437,7 @@ export default function GermanLandingPage() {
         <Link href="/pt-br" className="text-[var(--color-primary)] hover:underline">🇧🇷 Português</Link>
         <Link href="/fr" className="text-[var(--color-primary)] hover:underline">🇫🇷 Français</Link>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x auf Deutsch \u2014 Krypto Exchanges, Wallets & DeFi", "description": "degen0x ist Ihr vertrauensw\u00fcrdiger Krypto-Ratgeber auf Deutsch. Vergleichen Sie Exchanges, Wallets und DeFi-Protokolle. Expertenbewertungen, kostenlose Tools", "url": "https://degen0x.com/de"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x auf Deutsch \u2014 Krypto Exchanges, Wallets & DeFi", "description": "degen0x ist Ihr vertrauensw\u00fcrdiger Krypto-Ratgeber auf Deutsch. Vergleichen Sie Exchanges, Wallets und DeFi-Protokolle. Expertenbewertungen, kostenlose Tools", "url": "https://degen0x.com/de", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </main>
   );
 }

@@ -186,7 +186,7 @@ export default function BestRWAPage() {
       <section id="faq">
         <FAQSection faqs={RWA_FAQS} />
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top RWA Tokens", "description": "A leading RWA protocol offering tokenized US Treasury products and institutional-grade yield on-chain. Backed by major investors and growing rapidly in TVL.", "url": "https://degen0x.com/investing/best/rwa"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top RWA Tokens", "description": "A leading RWA protocol offering tokenized US Treasury products and institutional-grade yield on-chain. Backed by major investors and growing rapidly in TVL.", "url": "https://degen0x.com/investing/best/rwa", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

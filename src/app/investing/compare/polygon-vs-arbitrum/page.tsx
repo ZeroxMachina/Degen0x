@@ -66,7 +66,7 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/arbitrum-vs-optimism" className="text-blue-600 hover:underline">Arbitrum vs Optimism</Link></li><li><Link href="/investing/learn/layer-2-investing-guide" className="text-blue-600 hover:underline">Layer 2 Investing Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/polygon Vs Arbitrum", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/polygon-vs-arbitrum"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/polygon Vs Arbitrum", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/polygon-vs-arbitrum", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

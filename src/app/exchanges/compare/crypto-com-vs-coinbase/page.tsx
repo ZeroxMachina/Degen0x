@@ -164,7 +164,7 @@ export default function CryptoComVsCoinbasePage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/crypto Com Vs Coinbase", "description": "Crypto.com vs Coinbase compared: fees, Visa cards, mobile experience, coin selection, and features. Discover which exchange is the best choice for your needs.", "url": "https://degen0x.com/exchanges/compare/crypto-com-vs-coinbase"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/crypto Com Vs Coinbase", "description": "Crypto.com vs Coinbase compared: fees, Visa cards, mobile experience, coin selection, and features. Discover which exchange is the best choice for your needs.", "url": "https://degen0x.com/exchanges/compare/crypto-com-vs-coinbase", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -204,7 +204,7 @@ export default function CoinbaseVsGeminiCardPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/coinbase Card Vs Gemini Card", "description": "Coinbase Card vs Gemini Credit Card: debit vs credit, cashback structures, fees, and rewards compared. Find out which US crypto card fits your spending style.", "url": "https://degen0x.com/crypto-cards/compare/coinbase-card-vs-gemini-card"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/coinbase Card Vs Gemini Card", "description": "Coinbase Card vs Gemini Credit Card: debit vs credit, cashback structures, fees, and rewards compared. Find out which US crypto card fits your spending style.", "url": "https://degen0x.com/crypto-cards/compare/coinbase-card-vs-gemini-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

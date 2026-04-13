@@ -44,7 +44,7 @@ export default function GamificationPage() {
         ]}
       />
       <GamificationSystem />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Gamification & Rewards | degen0x \u2014 XP, Badges, Leaderboard", "description": "Earn XP, unlock rare badges, maintain daily streaks, and climb the global leaderboard. Level up your degen status on degen0x.", "url": "https://degen0x.com/gamification"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Gamification & Rewards | degen0x \u2014 XP, Badges, Leaderboard", "description": "Earn XP, unlock rare badges, maintain daily streaks, and climb the global leaderboard. Level up your degen status on degen0x.", "url": "https://degen0x.com/gamification", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

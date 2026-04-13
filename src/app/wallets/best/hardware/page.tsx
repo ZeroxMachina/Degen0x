@@ -342,7 +342,7 @@ export default function BestHardwareWalletsPage() {
       </section>
 
       <FAQSection faqs={hardwareWalletFAQs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Dual Secure Element Chips", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/hardware"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Dual Secure Element Chips", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/hardware", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

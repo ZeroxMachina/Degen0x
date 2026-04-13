@@ -182,7 +182,7 @@ export default function SelfDirectedPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/self Directed", "description": "Rocket Dollar offers true self-directed IRA and Solo 401(k) accounts with checkbook control, meaning you manage your own LLC that holds the retirement assets.", "url": "https://degen0x.com/long-term/best/self-directed"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/self Directed", "description": "Rocket Dollar offers true self-directed IRA and Solo 401(k) accounts with checkbook control, meaning you manage your own LLC that holds the retirement assets.", "url": "https://degen0x.com/long-term/best/self-directed", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

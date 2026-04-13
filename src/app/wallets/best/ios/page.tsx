@@ -79,7 +79,7 @@ export default function BestIOSWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/ios", "description": "Feature-rich iOS wallet supporting 10M+ tokens across 100+ blockchains with built-in dApp browser, staking, and swap features.", "url": "https://degen0x.com/wallets/best/ios"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/ios", "description": "Feature-rich iOS wallet supporting 10M+ tokens across 100+ blockchains with built-in dApp browser, staking, and swap features.", "url": "https://degen0x.com/wallets/best/ios", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

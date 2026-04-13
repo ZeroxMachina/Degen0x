@@ -79,7 +79,7 @@ export default function MetaMaskVsCoinbaseWalletPage() {
           <Link href="/wallets/learn/how-to-choose-crypto-wallet" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Guide</span><h3 className="text-sm font-semibold text-[var(--color-text)]">How to Choose a Crypto Wallet</h3></Link>
         </div>
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/metamask Vs Coinbase Wallet", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/metamask-vs-coinbase-wallet"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/metamask Vs Coinbase Wallet", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/metamask-vs-coinbase-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

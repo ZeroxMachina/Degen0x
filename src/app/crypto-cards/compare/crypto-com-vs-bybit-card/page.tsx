@@ -202,7 +202,7 @@ export default function CryptoComVsBybitCardPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/crypto Com Vs Bybit Card", "description": "Crypto.com Visa vs Bybit Card compared on cashback, fees, features, staking, and availability. Find out which exchange-linked crypto debit card is best for you.", "url": "https://degen0x.com/crypto-cards/compare/crypto-com-vs-bybit-card"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/crypto Com Vs Bybit Card", "description": "Crypto.com Visa vs Bybit Card compared on cashback, fees, features, staking, and availability. Find out which exchange-linked crypto debit card is best for you.", "url": "https://degen0x.com/crypto-cards/compare/crypto-com-vs-bybit-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

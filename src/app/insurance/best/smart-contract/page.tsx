@@ -190,7 +190,7 @@ export default function SmartContractCoverPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Insurance/best/smart Contract", "description": "Compare the best smart contract insurance options. Protect your DeFi positions against exploits, bugs, and vulnerabilities with coverage from top insurance", "url": "https://degen0x.com/insurance/best/smart-contract"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Insurance/best/smart Contract", "description": "Compare the best smart contract insurance options. Protect your DeFi positions against exploits, bugs, and vulnerabilities with coverage from top insurance", "url": "https://degen0x.com/insurance/best/smart-contract", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -432,7 +432,7 @@ export default function GasTrackerPage() {
           </div>
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Gas Tracker - Real-Time Ethereum & Multi-Chain Gas Prices", "description": "Monitor real-time gas prices across Ethereum, Solana, Arbitrum, Polygon, BSC, Base, and Optimism. Get transaction cost estimates and find the best time to", "url": "https://degen0x.com/gas-tracker"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Gas Tracker - Real-Time Ethereum & Multi-Chain Gas Prices", "description": "Monitor real-time gas prices across Ethereum, Solana, Arbitrum, Polygon, BSC, Base, and Optimism. Get transaction cost estimates and find the best time to", "url": "https://degen0x.com/gas-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

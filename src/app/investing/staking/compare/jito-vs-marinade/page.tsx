@@ -147,7 +147,7 @@ export default function JitoVsMariadePage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/staking/compare/jito Vs Marinade", "description": "Detailed comparison of Jito vs Marinade for Solana staking. Compare MEV yields, decentralization, liquid staking tokens, and fees to choose the right SOL", "url": "https://degen0x.com/investing/staking/compare/jito-vs-marinade"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/staking/compare/jito Vs Marinade", "description": "Detailed comparison of Jito vs Marinade for Solana staking. Compare MEV yields, decentralization, liquid staking tokens, and fees to choose the right SOL", "url": "https://degen0x.com/investing/staking/compare/jito-vs-marinade", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

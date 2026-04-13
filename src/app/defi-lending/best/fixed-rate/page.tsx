@@ -101,7 +101,7 @@ export default function FixedRatePage() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/fixed Rate", "description": "Pendle Finance enables fixed-rate yield through yield tokenization. By splitting yield-bearing assets into principal tokens (PT) and yield tokens (YT), users", "url": "https://degen0x.com/defi-lending/best/fixed-rate"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/fixed Rate", "description": "Pendle Finance enables fixed-rate yield through yield tokenization. By splitting yield-bearing assets into principal tokens (PT) and yield tokens (YT), users", "url": "https://degen0x.com/defi-lending/best/fixed-rate", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

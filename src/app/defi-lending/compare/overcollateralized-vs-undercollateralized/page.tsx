@@ -83,7 +83,7 @@ export default function OverVsUndercollateralizedPage() {
         <p className="text-[var(--color-text-secondary)]">The DeFi industry is gradually developing infrastructure to support more undercollateralized lending safely. On-chain credit scoring, reputation systems, and real-world asset integration are creating middle ground between fully overcollateralized and unsecured lending. This evolution could unlock significant capital efficiency and bring DeFi lending closer to the scale of traditional credit markets while maintaining the transparency and accessibility advantages of decentralized infrastructure.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/overcollateralized Vs Undercollateralized", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/overcollateralized-vs-undercollateralized"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/overcollateralized Vs Undercollateralized", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/overcollateralized-vs-undercollateralized", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

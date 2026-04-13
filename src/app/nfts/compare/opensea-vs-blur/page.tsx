@@ -98,7 +98,7 @@ export default function OpenSeaVsBlurPage() {
         { question: "Which has more NFT listings?", answer: "OpenSea has more total listings across all chains. However, on Ethereum specifically, Blur and OpenSea have similar collection coverage since Blur indexes all Ethereum NFTs. Blur does not support other chains." },
         { question: "Which is better for selling NFTs?", answer: "For maximum exposure, list on both. OpenSea reaches a broader audience including beginners and multi-chain users. Blur reaches professional traders who may be willing to pay higher prices but expect zero marketplace fees on their end." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/opensea Vs Blur", "description": "Detailed comparison of OpenSea vs Blur. Compare fees, features, trading tools, and user experience to find which NFT marketplace is right for you.", "url": "https://degen0x.com/nfts/compare/opensea-vs-blur"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/opensea Vs Blur", "description": "Detailed comparison of OpenSea vs Blur. Compare fees, features, trading tools, and user experience to find which NFT marketplace is right for you.", "url": "https://degen0x.com/nfts/compare/opensea-vs-blur", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

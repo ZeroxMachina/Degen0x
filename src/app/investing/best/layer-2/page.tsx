@@ -186,7 +186,7 @@ export default function BestLayer2Page() {
       <section id="faq">
         <FAQSection faqs={LAYER2_FAQS} />
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Layer 2 Tokens", "description": "The leading Ethereum Layer 2 by TVL using optimistic rollup technology. Home to the largest DeFi ecosystem among L2s with hundreds of protocols deployed.", "url": "https://degen0x.com/investing/best/layer-2"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Layer 2 Tokens", "description": "The leading Ethereum Layer 2 by TVL using optimistic rollup technology. Home to the largest DeFi ecosystem among L2s with hundreds of protocols deployed.", "url": "https://degen0x.com/investing/best/layer-2", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

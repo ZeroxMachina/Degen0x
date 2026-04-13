@@ -37,7 +37,7 @@ export default function XPSyncPage() {
       />      <div style={{ maxWidth: 560, margin: '0 auto' }}>
         <WalletXPSync />
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallet XP Sync \u2014 On-Chain Identity | degen0x", "description": "Sync your degen0x XP with your Solana wallet. On-chain proof of your crypto learning journey.", "url": "https://degen0x.com/xp-sync"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallet XP Sync \u2014 On-Chain Identity | degen0x", "description": "Sync your degen0x XP with your Solana wallet. On-chain proof of your crypto learning journey.", "url": "https://degen0x.com/xp-sync", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

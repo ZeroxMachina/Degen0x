@@ -102,7 +102,7 @@ export default function TensorVsMagicEdenPage() {
         { question: "Which has more Solana NFT listings?", answer: "Both platforms index all Solana NFTs, so the collection coverage is essentially identical. The difference is in the trading experience, tools, and features each platform wraps around that shared collection data." },
         { question: "Is Tensor the Blur of Solana?", answer: "The comparison is apt. Tensor brings professional trading tools and competitive fees to Solana, similar to how Blur disrupted the Ethereum NFT market. Both prioritize trader experience and speed over casual browsing and visual discovery." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/tensor Vs Magic Eden", "description": "Detailed comparison of Tensor vs Magic Eden for Solana NFTs. Compare fees, trading tools, analytics, token rewards, and features to find the best Solana NFT", "url": "https://degen0x.com/nfts/compare/tensor-vs-magic-eden"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/tensor Vs Magic Eden", "description": "Detailed comparison of Tensor vs Magic Eden for Solana NFTs. Compare fees, trading tools, analytics, token rewards, and features to find the best Solana NFT", "url": "https://degen0x.com/nfts/compare/tensor-vs-magic-eden", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

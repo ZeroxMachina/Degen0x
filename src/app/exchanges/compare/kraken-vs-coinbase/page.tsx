@@ -145,7 +145,7 @@ export default function KrakenVsCoinbasePage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/kraken Vs Coinbase", "description": "Crypto content on degen0x", "url": "https://degen0x.com/exchanges/compare/kraken-vs-coinbase"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/kraken Vs Coinbase", "description": "Crypto content on degen0x", "url": "https://degen0x.com/exchanges/compare/kraken-vs-coinbase", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

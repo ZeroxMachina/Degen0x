@@ -79,7 +79,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/crypto Index Funds", "description": "Tracks the 10 largest cryptocurrencies by market cap, rebalancing monthly. The most established crypto index fund with institutional-grade custody and", "url": "https://degen0x.com/investing/best/crypto-index-funds"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/crypto Index Funds", "description": "Tracks the 10 largest cryptocurrencies by market cap, rebalancing monthly. The most established crypto index fund with institutional-grade custody and", "url": "https://degen0x.com/investing/best/crypto-index-funds", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

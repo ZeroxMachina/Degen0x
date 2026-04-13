@@ -202,7 +202,7 @@ export default function BitPayVsCryptoComPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/bitpay Vs Crypto Com", "description": "BitPay Card vs Crypto.com Visa compared on rewards, fees, features, and usability. Find out whether simple spending or premium rewards suits you better.", "url": "https://degen0x.com/crypto-cards/compare/bitpay-vs-crypto-com"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/bitpay Vs Crypto Com", "description": "BitPay Card vs Crypto.com Visa compared on rewards, fees, features, and usability. Find out whether simple spending or premium rewards suits you better.", "url": "https://degen0x.com/crypto-cards/compare/bitpay-vs-crypto-com", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

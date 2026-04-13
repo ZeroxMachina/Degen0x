@@ -78,7 +78,7 @@ export default function EtoroVsRobinhoodPage() {
         { question: "Which has more crypto?", answer: "eToro supports approximately 80 cryptocurrencies compared to Robinhood's approximately 20. eToro offers a broader selection of altcoins and DeFi tokens." },
         { question: "Can I do copy trading on Robinhood?", answer: "No, Robinhood does not offer copy trading or social trading features. This is exclusive to eToro through its CopyTrader and Smart Portfolios features." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/etoro Vs Robinhood", "description": "Detailed comparison of eToro vs Robinhood for crypto and stock trading. Compare fees, copy trading, coin selection, and platform features.", "url": "https://degen0x.com/exchanges/compare/etoro-vs-robinhood"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/etoro Vs Robinhood", "description": "Detailed comparison of eToro vs Robinhood for crypto and stock trading. Compare fees, copy trading, coin selection, and platform features.", "url": "https://degen0x.com/exchanges/compare/etoro-vs-robinhood", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

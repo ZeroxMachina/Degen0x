@@ -85,7 +85,7 @@ export default function SparkVsAavePage() {
         <p className="text-[var(--color-text-secondary)]">Both protocols have native stablecoin strategies. Spark is the primary venue for DAI minting and the savings rate, making it the gateway to MakerDAO&apos;s stablecoin ecosystem. Aave facilitates GHO minting with unique features like borrowing rate discounts for AAVE stakers. Using both stablecoins across both platforms provides diversification in your stablecoin exposure and access to different yield mechanisms.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/spark Vs Aave", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/spark-vs-aave"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/spark Vs Aave", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/spark-vs-aave", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

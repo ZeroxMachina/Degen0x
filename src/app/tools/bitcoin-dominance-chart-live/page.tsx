@@ -581,7 +581,7 @@ export default function BitcoinDominanceChartPage() {
               "url": "https://degen0x.com/tools/bitcoin-dominance-chart-live",
               "applicationCategory": "FinanceApplication",
               "operatingSystem": "Web",
-              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" , "datePublished": "2026-04-13", "dateModified": "2026-04-13"}
             })
           }}
         />

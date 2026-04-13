@@ -202,7 +202,7 @@ export default function NexoVsCryptoComPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/nexo Vs Crypto Com", "description": "Nexo Card vs Crypto.com Visa compared. Credit-line spending vs prepaid debit, cashback rates, staking, global availability, and which card is best for HODLers.", "url": "https://degen0x.com/crypto-cards/compare/nexo-vs-crypto-com"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/nexo Vs Crypto Com", "description": "Nexo Card vs Crypto.com Visa compared. Credit-line spending vs prepaid debit, cashback rates, staking, global availability, and which card is best for HODLers.", "url": "https://degen0x.com/crypto-cards/compare/nexo-vs-crypto-com", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

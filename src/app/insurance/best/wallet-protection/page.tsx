@@ -148,7 +148,7 @@ export default function WalletProtectionPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Insurance/best/wallet Protection", "description": "Compare the best crypto wallet protection insurance. Coverage against wallet hacks, phishing attacks, and private key compromise from leading providers.", "url": "https://degen0x.com/insurance/best/wallet-protection"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Insurance/best/wallet Protection", "description": "Compare the best crypto wallet protection insurance. Coverage against wallet hacks, phishing attacks, and private key compromise from leading providers.", "url": "https://degen0x.com/insurance/best/wallet-protection", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

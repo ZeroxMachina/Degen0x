@@ -92,7 +92,7 @@ export default function StakingLongTermPage() {
       </div>
       <div className="space-y-6 mb-12">{products.map((product, index) => (<ProductCard key={product.slug} product={product} rank={index + 1} categorySlug="long-term" />))}</div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/staking Long Term", "description": "Compare the best staking platforms and protocols for long-term crypto investors. Earn passive income while holding your assets securely.", "url": "https://degen0x.com/long-term/best/staking-long-term"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/staking Long Term", "description": "Compare the best staking platforms and protocols for long-term crypto investors. Earn passive income while holding your assets securely.", "url": "https://degen0x.com/long-term/best/staking-long-term", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

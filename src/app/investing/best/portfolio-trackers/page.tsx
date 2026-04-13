@@ -79,7 +79,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/portfolio Trackers", "description": "The most comprehensive crypto data platform with portfolio tracking across unlimited wallets, price alerts, and detailed token analytics. Free tier covers most", "url": "https://degen0x.com/investing/best/portfolio-trackers"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/portfolio Trackers", "description": "The most comprehensive crypto data platform with portfolio tracking across unlimited wallets, price alerts, and detailed token analytics. Free tier covers most", "url": "https://degen0x.com/investing/best/portfolio-trackers", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

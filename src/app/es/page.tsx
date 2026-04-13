@@ -152,7 +152,7 @@ export default function EspanolLandingPage() {
           <Link href="/es" style={{ color: "var(--color-primary)" }}>Aviso legal completo</Link>
         </p>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x en Espa\u00f1ol \u2014 Comparar Exchanges, Wallets y DeFi", "description": "degen0x es tu gu\u00eda de confianza para cripto en espa\u00f1ol. Compara exchanges, wallets, protocolos DeFi y m\u00e1s. Rese\u00f1as de expertos, herramientas interactivas y", "url": "https://degen0x.com/es"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x en Espa\u00f1ol \u2014 Comparar Exchanges, Wallets y DeFi", "description": "degen0x es tu gu\u00eda de confianza para cripto en espa\u00f1ol. Compara exchanges, wallets, protocolos DeFi y m\u00e1s. Rese\u00f1as de expertos, herramientas interactivas y", "url": "https://degen0x.com/es", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

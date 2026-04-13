@@ -273,7 +273,7 @@ export default function BestRewardsCardsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending/best/rewards", "description": "The most comprehensive crypto rewards program available. Beyond cashback, cardholders earn CRO staking rewards, subscription rebates worth up to $167/month", "url": "https://degen0x.com/spending/best/rewards"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending/best/rewards", "description": "The most comprehensive crypto rewards program available. Beyond cashback, cardholders earn CRO staking rewards, subscription rebates worth up to $167/month", "url": "https://degen0x.com/spending/best/rewards", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

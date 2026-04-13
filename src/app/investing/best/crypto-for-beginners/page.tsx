@@ -781,7 +781,7 @@ export default function BestCryptoForBeginnersPage() {
           ))}
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top 10 Cryptos for Beginners", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/best/crypto-for-beginners"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top 10 Cryptos for Beginners", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/best/crypto-for-beginners", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

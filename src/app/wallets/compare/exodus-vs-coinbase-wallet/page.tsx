@@ -133,7 +133,7 @@ export default function ExodusVsCoinbaseWalletPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/exodus Vs Coinbase Wallet", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/exodus-vs-coinbase-wallet"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/exodus Vs Coinbase Wallet", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/exodus-vs-coinbase-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

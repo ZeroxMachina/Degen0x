@@ -486,21 +486,21 @@ export default function MethodologyPage() {
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "degen0x evaluates exchanges across eight dimensions: fees (maker/taker spreads), assets (breadth and stablecoin offerings), security (cold storage, insurance, audit history), UX (interface clarity, mobile quality), support (response times and resolution quality), compliance (regulatory status, KYC standards), ramps (fiat deposit options), and features (staking, advanced orders, API access). We test hands-on and disclose all evaluation criteria."
-        }
+        , "datePublished": "2026-04-13", "dateModified": "2026-04-13"}
       },      {
         "@type": "Question",
         "name": "What methodology does degen0x use for wallets?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "For wallets, we assess chain support (Ethereum, Solana, Polygon, etc.), security model (MPC vs seed phrase), recovery mechanisms, dApp integration quality, token/NFT visualization, swap functionality, and gas estimation accuracy. We prioritize self-custody wallets and evaluate based on actual UX testing, not marketing claims."
-        }
+        , "datePublished": "2026-04-13", "dateModified": "2026-04-13"}
       },      {
         "@type": "Question",
         "name": "How does degen0x test DeFi protocols?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "DeFi protocol evaluation includes TVL trends, audit coverage and scope, team transparency and track record, governance token functionality, token distribution fairness, historical exploit responses, insurance coverage, and composability with other protocols. We view each protocol through the lens of risk-adjusted returns and long-term sustainability."
-        }
+        , "datePublished": "2026-04-13", "dateModified": "2026-04-13"}
       }
             ]
           })

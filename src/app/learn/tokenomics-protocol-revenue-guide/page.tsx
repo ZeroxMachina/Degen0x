@@ -7,6 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Tokenomics 2.0: DeFi Protocol Revenue & Fee Switches 2026",
   description: "Uniswap burned $591M & activated its fee switch. Aave runs buybacks from protocol revenue. Learn how Tokenomics 2.0 works, how to evaluate DeFi P/E ratios, and",
+  alternates: { canonical: "/learn/tokenomics-protocol-revenue-guide" },
   openGraph: {
     title: "Tokenomics 2.0: From Governance Tokens to Cash-Flow Tokens",
     description:

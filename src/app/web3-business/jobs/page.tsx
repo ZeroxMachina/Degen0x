@@ -580,7 +580,7 @@ export default function CryptoJobsPage() {
           </div>
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto & Web3 Jobs Board 2026 \u2014 Find Your Next Role in", "description": "Browse the top crypto, DeFi, and Web3 jobs in 2026. Find roles at leading exchanges, DAOs, Layer 1s, and DeFi protocols. Remote & on-site positions.", "url": "https://degen0x.com/web3-business/jobs"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto & Web3 Jobs Board 2026 \u2014 Find Your Next Role in", "description": "Browse the top crypto, DeFi, and Web3 jobs in 2026. Find roles at leading exchanges, DAOs, Layer 1s, and DeFi protocols. Remote & on-site positions.", "url": "https://degen0x.com/web3-business/jobs", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

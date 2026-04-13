@@ -33,7 +33,7 @@ export default function WatchlistsPage() {
         updatedDate="2026-04-13"
         section="watchlists"
       />      <SavedWatchlists />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Watchlists", "description": "Create and manage custom crypto watchlists. Track prices, 24h changes, market caps, and sparkline charts for your favorite tokens.", "url": "https://degen0x.com/watchlists"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Watchlists", "description": "Create and manage custom crypto watchlists. Track prices, 24h changes, market caps, and sparkline charts for your favorite tokens.", "url": "https://degen0x.com/watchlists", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

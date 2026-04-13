@@ -66,7 +66,7 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/staking-vs-lending" className="text-blue-600 hover:underline">Staking vs Lending</Link></li><li><Link href="/investing/learn/crypto-investment-risks" className="text-blue-600 hover:underline">Crypto Investment Risks</Link></li></ul></section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/cefi Vs Defi Investing", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/cefi-vs-defi-investing"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/cefi Vs Defi Investing", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/cefi-vs-defi-investing", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

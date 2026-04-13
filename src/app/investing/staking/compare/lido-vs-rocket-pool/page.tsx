@@ -152,7 +152,7 @@ export default function LidoVsRocketPoolPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/staking/compare/lido Vs Rocket Pool", "description": "Detailed comparison of Lido vs Rocket Pool. Compare fees, decentralization, liquid staking tokens, DeFi integrations, and more to find which ETH staking", "url": "https://degen0x.com/investing/staking/compare/lido-vs-rocket-pool"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/staking/compare/lido Vs Rocket Pool", "description": "Detailed comparison of Lido vs Rocket Pool. Compare fees, decentralization, liquid staking tokens, DeFi integrations, and more to find which ETH staking", "url": "https://degen0x.com/investing/staking/compare/lido-vs-rocket-pool", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

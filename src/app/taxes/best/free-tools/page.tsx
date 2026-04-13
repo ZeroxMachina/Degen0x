@@ -197,7 +197,7 @@ export default function BestFreeToolsPage() {
       </section>
 
       <FAQSection faqs={freeFaqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Free Tools \u2014 Crypto Tools", "description": "Explore Free Tools on degen0x. Free crypto tools and in-depth analysis.", "url": "https://degen0x.com/taxes/best/free-tools"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Free Tools \u2014 Crypto Tools", "description": "Explore Free Tools on degen0x. Free crypto tools and in-depth analysis.", "url": "https://degen0x.com/taxes/best/free-tools", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

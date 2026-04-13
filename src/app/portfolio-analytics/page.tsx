@@ -36,7 +36,7 @@ export default function PortfolioAnalyticsPage() {
         <PortfolioAnalytics />
       </div>
       <Footer />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Portfolio Analytics \u2014 P&L, Tax Estimates & Risk Metrics", "description": "Deep-dive into your crypto portfolio with advanced analytics, P&L tracking, tax estimation, risk metrics, and diversification scoring.", "url": "https://degen0x.com/portfolio-analytics"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Portfolio Analytics \u2014 P&L, Tax Estimates & Risk Metrics", "description": "Deep-dive into your crypto portfolio with advanced analytics, P&L tracking, tax estimation, risk metrics, and diversification scoring.", "url": "https://degen0x.com/portfolio-analytics", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

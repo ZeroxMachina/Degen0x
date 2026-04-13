@@ -66,7 +66,7 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/aave-vs-compound" className="text-blue-600 hover:underline">Aave vs Compound</Link></li><li><Link href="/investing/learn/yield-farming-vs-staking" className="text-blue-600 hover:underline">Yield Farming vs Staking</Link></li></ul></section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/uniswap Vs Pancakeswap", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/uniswap-vs-pancakeswap"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/uniswap Vs Pancakeswap", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/uniswap-vs-pancakeswap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

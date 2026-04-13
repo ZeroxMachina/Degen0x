@@ -54,7 +54,7 @@ export default function MakerdaoVsCompoundPage() {
       </div>
       <section className="mb-12"><ComparisonTable items={items} features={features} title="MakerDAO vs Compound" /></section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/compare/makerdao Vs Compound", "description": "Crypto content on degen0x", "url": "https://degen0x.com/crypto-loans/compare/makerdao-vs-compound"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/compare/makerdao Vs Compound", "description": "Crypto content on degen0x", "url": "https://degen0x.com/crypto-loans/compare/makerdao-vs-compound", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

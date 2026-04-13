@@ -100,7 +100,7 @@ export default function OpenSeaVsRariblePage() {
         { question: "Which has better multi-chain support?", answer: "OpenSea supports more blockchains overall, including Ethereum, Polygon, Solana, Arbitrum, Avalanche, BNB Chain, and Base. Rarible supports Ethereum, Polygon, and Tezos. If you need broad chain coverage, OpenSea has the advantage." },
         { question: "What is the RARI token used for?", answer: "RARI is Rarible's governance token that allows holders to vote on platform decisions, feature proposals, and protocol parameters. It gives the community a direct say in how the platform evolves, which distinguishes Rarible from OpenSea's centralized governance model." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/opensea Vs Rarible", "description": "Detailed comparison of OpenSea vs Rarible. Compare fees, creator tools, governance, chain support, and features to find the best NFT marketplace for you.", "url": "https://degen0x.com/nfts/compare/opensea-vs-rarible"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/opensea Vs Rarible", "description": "Detailed comparison of OpenSea vs Rarible. Compare fees, creator tools, governance, chain support, and features to find the best NFT marketplace for you.", "url": "https://degen0x.com/nfts/compare/opensea-vs-rarible", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

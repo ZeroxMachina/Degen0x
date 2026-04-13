@@ -191,7 +191,7 @@ export default function DefiProtocolsInsurancePage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Insurance/best/defi Protocols", "description": "Compare the best DeFi protocol insurance options. Protect your deposits in Aave, Uniswap, Curve, and other DeFi protocols against exploits and failures.", "url": "https://degen0x.com/insurance/best/defi-protocols"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Insurance/best/defi Protocols", "description": "Compare the best DeFi protocol insurance options. Protect your deposits in Aave, Uniswap, Curve, and other DeFi protocols against exploits and failures.", "url": "https://degen0x.com/insurance/best/defi-protocols", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

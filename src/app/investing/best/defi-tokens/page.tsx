@@ -207,7 +207,7 @@ export default function BestDeFiTokensPage() {
       <section id="faq">
         <FAQSection faqs={DEFI_TOKEN_FAQS} />
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top DeFi Tokens", "description": "The governance token of the largest decentralized exchange by volume. Uniswap pioneered the AMM model and processes billions in weekly trading volume across", "url": "https://degen0x.com/investing/best/defi-tokens"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top DeFi Tokens", "description": "The governance token of the largest decentralized exchange by volume. Uniswap pioneered the AMM model and processes billions in weekly trading volume across", "url": "https://degen0x.com/investing/best/defi-tokens", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

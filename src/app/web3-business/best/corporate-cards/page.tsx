@@ -199,7 +199,7 @@ export default function CorporateCardsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto-Native Teams", "description": "Corporate card platform designed specifically for Web3 companies. Spend directly from USDC and stablecoin balances, set granular team spending controls, and", "url": "https://degen0x.com/web3-business/best/corporate-cards"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto-Native Teams", "description": "Corporate card platform designed specifically for Web3 companies. Spend directly from USDC and stablecoin balances, set granular team spending controls, and", "url": "https://degen0x.com/web3-business/best/corporate-cards", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

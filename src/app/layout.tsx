@@ -66,6 +66,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE_URL,
+    languages: { "en": "https://degen0x.com", "x-default": "https://degen0x.com" }
   },
 };
 

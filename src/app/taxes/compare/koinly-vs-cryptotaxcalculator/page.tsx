@@ -108,7 +108,7 @@ export default function KoinlyVsCryptoTaxCalculatorPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/koinly Vs Cryptotaxcalculator", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/koinly-vs-cryptotaxcalculator"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/koinly Vs Cryptotaxcalculator", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/koinly-vs-cryptotaxcalculator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

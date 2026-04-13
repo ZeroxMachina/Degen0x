@@ -77,7 +77,7 @@ export default function BestInstitutionalWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/institutional", "description": "The industry-standard multisig wallet securing over $100B in assets for DAOs, protocols, and institutional treasuries across 15+ EVM chains.", "url": "https://degen0x.com/wallets/best/institutional"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/institutional", "description": "The industry-standard multisig wallet securing over $100B in assets for DAOs, protocols, and institutional treasuries across 15+ EVM chains.", "url": "https://degen0x.com/wallets/best/institutional", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

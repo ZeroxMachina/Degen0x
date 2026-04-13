@@ -203,7 +203,7 @@ export default function WirexVsPlutusPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/wirex Vs Plutus", "description": "Wirex Card vs Plutus Card compared for European users. Cashback rates, token staking, subscription plans, perks, and which card is best for UK and EEA", "url": "https://degen0x.com/crypto-cards/compare/wirex-vs-plutus"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/wirex Vs Plutus", "description": "Wirex Card vs Plutus Card compared for European users. Cashback rates, token staking, subscription plans, perks, and which card is best for UK and EEA", "url": "https://degen0x.com/crypto-cards/compare/wirex-vs-plutus", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

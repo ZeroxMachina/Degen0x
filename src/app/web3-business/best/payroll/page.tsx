@@ -198,7 +198,7 @@ export default function PayrollPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/payroll", "description": "Leading global payroll and compliance platform with robust crypto payment support. Hire and pay employees and contractors in over 150 countries with the option", "url": "https://degen0x.com/web3-business/best/payroll"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/payroll", "description": "Leading global payroll and compliance platform with robust crypto payment support. Hire and pay employees and contractors in over 150 countries with the option", "url": "https://degen0x.com/web3-business/best/payroll", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -208,7 +208,7 @@ export default function TreasuryToolsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security (35%)", "description": "The industry-standard multi-signature wallet used by the majority of DAOs and crypto organizations. Supports multiple chains, customizable signing thresholds,", "url": "https://degen0x.com/web3-business/best/treasury-tools"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security (35%)", "description": "The industry-standard multi-signature wallet used by the majority of DAOs and crypto organizations. Supports multiple chains, customizable signing thresholds,", "url": "https://degen0x.com/web3-business/best/treasury-tools", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

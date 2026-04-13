@@ -79,7 +79,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/high Yield", "description": "The largest liquid staking protocol offering ETH staking yield (3-5% APY) while maintaining liquidity. stETH can be used across DeFi for additional yield.", "url": "https://degen0x.com/investing/best/high-yield"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/high Yield", "description": "The largest liquid staking protocol offering ETH staking yield (3-5% APY) while maintaining liquidity. stETH can be used across DeFi for additional yield.", "url": "https://degen0x.com/investing/best/high-yield", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

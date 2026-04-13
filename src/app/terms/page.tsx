@@ -74,7 +74,7 @@ export default function TermsPage() {
           For questions about these Terms, please contact us at legal@degen0x.com.
         </p>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Terms", "description": "Crypto content on degen0x", "url": "https://degen0x.com/terms"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Terms", "description": "Crypto content on degen0x", "url": "https://degen0x.com/terms", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

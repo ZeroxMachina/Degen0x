@@ -135,7 +135,7 @@ export default function BestTaxSoftwarePage() {
       </section>
 
       <FAQSection faqs={TAX_FAQS} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/best/software", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/best/software"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/best/software", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/best/software", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

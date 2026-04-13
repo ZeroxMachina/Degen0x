@@ -37,7 +37,7 @@ export default function TokenComparisonPage() {
         <TokenComparison />
       </div>
       <Footer />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Comparison Tool \u2014 Side-by-Side Crypto Analysis", "description": "Compare any two cryptocurrencies side-by-side. Analyze price, fundamentals, performance, social metrics, and more with our radar chart visualization.", "url": "https://degen0x.com/compare/tokens"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Comparison Tool \u2014 Side-by-Side Crypto Analysis", "description": "Compare any two cryptocurrencies side-by-side. Analyze price, fundamentals, performance, social metrics, and more with our radar chart visualization.", "url": "https://degen0x.com/compare/tokens", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

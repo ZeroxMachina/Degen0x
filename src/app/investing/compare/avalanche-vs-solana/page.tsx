@@ -66,7 +66,7 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/solana-vs-ethereum" className="text-blue-600 hover:underline">Solana vs Ethereum</Link></li><li><Link href="/investing/compare/cardano-vs-solana" className="text-blue-600 hover:underline">Cardano vs Solana</Link></li></ul></section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/avalanche Vs Solana", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/avalanche-vs-solana"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/avalanche Vs Solana", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/avalanche-vs-solana", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

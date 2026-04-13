@@ -214,7 +214,7 @@ export default function BestCryptosToBuyPage() {
       <section id="faq">
         <FAQSection faqs={INVESTING_FAQS} />
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Crypto Picks", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/best/cryptos-to-buy"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Crypto Picks", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/best/cryptos-to-buy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

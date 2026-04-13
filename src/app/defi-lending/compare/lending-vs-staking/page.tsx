@@ -83,7 +83,7 @@ export default function LendingVsStakingPage() {
         <p className="text-[var(--color-text-secondary)]">Lending supports any token listed on lending protocols, including stablecoins, governance tokens, and wrapped assets. Staking is limited to proof-of-stake native tokens like ETH, SOL, ATOM, and DOT. If you hold stablecoins or non-PoS tokens, lending is your only option for earning yield on those assets. If you hold ETH or other PoS tokens long-term, staking provides a natural yield source that does not depend on external borrowing demand.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/lending Vs Staking", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/lending-vs-staking"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/lending Vs Staking", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/lending-vs-staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -186,7 +186,7 @@ export default function CryptoIraPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/crypto Ira", "description": "iTrustCapital is the leading crypto IRA platform, offering tax-advantaged retirement investing with support for 30+ cryptocurrencies and precious metals. With", "url": "https://degen0x.com/long-term/best/crypto-ira"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/crypto Ira", "description": "iTrustCapital is the leading crypto IRA platform, offering tax-advantaged retirement investing with support for 30+ cryptocurrencies and precious metals. With", "url": "https://degen0x.com/long-term/best/crypto-ira", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

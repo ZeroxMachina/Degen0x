@@ -186,7 +186,7 @@ export default function AdvisorsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/advisors", "description": "Bitwise is one of the largest crypto asset managers, providing institutional-grade index funds and advisory services for investors and financial advisors.", "url": "https://degen0x.com/long-term/best/advisors"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/advisors", "description": "Bitwise is one of the largest crypto asset managers, providing institutional-grade index funds and advisory services for investors and financial advisors.", "url": "https://degen0x.com/long-term/best/advisors", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

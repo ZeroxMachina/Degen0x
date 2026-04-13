@@ -114,7 +114,7 @@ export default function ColdStorageStrategiesPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/cold Storage Strategies", "description": "Compare the best cold storage solutions for long-term crypto security. Hardware wallets, multi-sig setups, and institutional custody options reviewed.", "url": "https://degen0x.com/long-term/best/cold-storage-strategies"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/cold Storage Strategies", "description": "Compare the best cold storage solutions for long-term crypto security. Hardware wallets, multi-sig setups, and institutional custody options reviewed.", "url": "https://degen0x.com/long-term/best/cold-storage-strategies", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

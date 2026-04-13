@@ -78,7 +78,7 @@ export default function BestCustodialWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/custodial", "description": "The largest US-regulated exchange with custodial wallet services, insurance on custodied assets, FDIC-insured USD balances, and institutional-grade security.", "url": "https://degen0x.com/wallets/best/custodial"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/custodial", "description": "The largest US-regulated exchange with custodial wallet services, insurance on custodied assets, FDIC-insured USD balances, and institutional-grade security.", "url": "https://degen0x.com/wallets/best/custodial", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

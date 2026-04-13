@@ -58,7 +58,7 @@ export default function DefiLoansPage() {
       </div>
       <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/defi", "description": "Aave is the largest DeFi lending protocol offering permissionless borrowing across 10+ chains. No KYC, no credit checks, no monthly payments. Variable and", "url": "https://degen0x.com/crypto-loans/best/defi"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/defi", "description": "Aave is the largest DeFi lending protocol offering permissionless borrowing across 10+ chains. No KYC, no credit checks, no monthly payments. Variable and", "url": "https://degen0x.com/crypto-loans/best/defi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

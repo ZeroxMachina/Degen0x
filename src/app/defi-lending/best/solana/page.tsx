@@ -101,7 +101,7 @@ export default function SolanaPage() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/solana", "description": "Kamino Finance is Solana", "url": "https://degen0x.com/defi-lending/best/solana"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/solana", "description": "Kamino Finance is Solana", "url": "https://degen0x.com/defi-lending/best/solana", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

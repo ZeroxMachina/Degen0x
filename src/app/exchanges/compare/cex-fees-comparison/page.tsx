@@ -71,7 +71,7 @@ export default function CexFeesComparisonPage() {
         { question: "Are zero-commission platforms really free?", answer: "No. Platforms like Robinhood and eToro that advertise zero commissions earn revenue through spread markups — the difference between the buy and sell price they quote you. This spread often results in higher total costs than exchanges with explicit but low fees." },
         { question: "What is the difference between maker and taker fees?", answer: "Maker fees apply when your order adds liquidity to the order book (limit orders that rest on the book). Taker fees apply when your order removes liquidity (market orders or immediately matching limit orders). Makers typically pay lower fees as a reward for providing liquidity." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/cex Fees Comparison", "description": "Compare trading fees across all major crypto exchanges. Side-by-side fee tables for Binance, Coinbase, Kraken, Bybit, OKX, and more.", "url": "https://degen0x.com/exchanges/compare/cex-fees-comparison"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/cex Fees Comparison", "description": "Compare trading fees across all major crypto exchanges. Side-by-side fee tables for Binance, Coinbase, Kraken, Bybit, OKX, and more.", "url": "https://degen0x.com/exchanges/compare/cex-fees-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

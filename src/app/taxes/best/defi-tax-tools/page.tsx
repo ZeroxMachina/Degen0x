@@ -173,7 +173,7 @@ export default function BestDefiTaxToolsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Swaps (DEX)", "description": "CryptoTaxCalculator leads the market in DeFi tax support with automatic detection and categorization of complex DeFi transactions across hundreds of protocols", "url": "https://degen0x.com/taxes/best/defi-tax-tools"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Swaps (DEX)", "description": "CryptoTaxCalculator leads the market in DeFi tax support with automatic detection and categorization of complex DeFi transactions across hundreds of protocols", "url": "https://degen0x.com/taxes/best/defi-tax-tools", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -139,7 +139,7 @@ export default function StakingRewardsPage() {
       </div>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/best/staking Rewards", "description": "Crypto content on degen0x", "url": "https://degen0x.com/exchanges/best/staking-rewards"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/best/staking Rewards", "description": "Crypto content on degen0x", "url": "https://degen0x.com/exchanges/best/staking-rewards", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

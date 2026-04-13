@@ -48,7 +48,7 @@ export default function BadgesPage() {
         ]} />
         <NFTBadgeSystem userXP={1500} walletConnected={true} />
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Achievement Badges \u2014 Mint Soulbound NFTs | degen0x", "description": "Earn crypto achievement badges and mint them as soulbound NFTs on Solana. Prove your Web3 knowledge on-chain with degen0x.", "url": "https://degen0x.com/badges"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Achievement Badges \u2014 Mint Soulbound NFTs | degen0x", "description": "Earn crypto achievement badges and mint them as soulbound NFTs on Solana. Prove your Web3 knowledge on-chain with degen0x.", "url": "https://degen0x.com/badges", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

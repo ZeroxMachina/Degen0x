@@ -79,7 +79,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/buy Today", "description": "The foundational crypto asset with the strongest network effect, institutional adoption, and proven track record. Bitcoin ETFs have opened access to", "url": "https://degen0x.com/investing/best/buy-today"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/buy Today", "description": "The foundational crypto asset with the strongest network effect, institutional adoption, and proven track record. Bitcoin ETFs have opened access to", "url": "https://degen0x.com/investing/best/buy-today", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -496,7 +496,7 @@ export default function TurkishPage() {
           <Link href="/" style={{ color: "#8b949e", textDecoration: "none" }}>🌐 English</Link>
         </p>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x T\u00fcrk\u00e7e \u2014 Kripto Para Borsalar\u0131, C\u00fczdanlar ve DeFi", "description": "degen0x, T\u00fcrkiye i\u00e7in kapsaml\u0131 kripto para kar\u015f\u0131la\u015ft\u0131rma platformudur. Borsalar\u0131, c\u00fczdanlar\u0131, DeFi protokollerini kar\u015f\u0131la\u015ft\u0131r\u0131n; T\u00fcrkiye", "url": "https://degen0x.com/tr"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x T\u00fcrk\u00e7e \u2014 Kripto Para Borsalar\u0131, C\u00fczdanlar ve DeFi", "description": "degen0x, T\u00fcrkiye i\u00e7in kapsaml\u0131 kripto para kar\u015f\u0131la\u015ft\u0131rma platformudur. Borsalar\u0131, c\u00fczdanlar\u0131, DeFi protokollerini kar\u015f\u0131la\u015ft\u0131r\u0131n; T\u00fcrkiye", "url": "https://degen0x.com/tr", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

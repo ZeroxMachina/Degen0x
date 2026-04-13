@@ -199,7 +199,7 @@ export default function CryptoComVsBinanceCardPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/crypto Com Vs Binance Card", "description": "Crypto.com Visa vs Binance Card compared. Cashback rates, staking requirements, availability, fees, and perks analyzed to find the best crypto debit card for", "url": "https://degen0x.com/crypto-cards/compare/crypto-com-vs-binance-card"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/crypto Com Vs Binance Card", "description": "Crypto.com Visa vs Binance Card compared. Cashback rates, staking requirements, availability, fees, and perks analyzed to find the best crypto debit card for", "url": "https://degen0x.com/crypto-cards/compare/crypto-com-vs-binance-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

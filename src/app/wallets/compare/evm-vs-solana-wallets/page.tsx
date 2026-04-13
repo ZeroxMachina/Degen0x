@@ -68,7 +68,7 @@ export default function EvmVsSolanaWalletsPage() {
             The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
           </p>
         </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/ethereum" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Ethereum Wallets</h3></Link><Link href="/wallets/best/solana" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Solana Wallets</h3></Link></div></section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/evm Vs Solana Wallets", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/evm-vs-solana-wallets"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/evm Vs Solana Wallets", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/evm-vs-solana-wallets", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

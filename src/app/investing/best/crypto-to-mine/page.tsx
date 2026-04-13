@@ -78,7 +78,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/crypto To Mine", "description": "The original proof-of-work cryptocurrency and largest by market cap. Requires specialized ASIC hardware but offers the most liquid and established mining", "url": "https://degen0x.com/investing/best/crypto-to-mine"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/crypto To Mine", "description": "The original proof-of-work cryptocurrency and largest by market cap. Requires specialized ASIC hardware but offers the most liquid and established mining", "url": "https://degen0x.com/investing/best/crypto-to-mine", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

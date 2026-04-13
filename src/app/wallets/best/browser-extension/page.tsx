@@ -79,7 +79,7 @@ export default function BestBrowserExtensionWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/browser Extension", "description": "The industry standard browser extension wallet with near-universal dApp compatibility across Chrome, Firefox, Brave, and Edge browsers.", "url": "https://degen0x.com/wallets/best/browser-extension"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/browser Extension", "description": "The industry standard browser extension wallet with near-universal dApp compatibility across Chrome, Firefox, Brave, and Edge browsers.", "url": "https://degen0x.com/wallets/best/browser-extension", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

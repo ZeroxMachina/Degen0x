@@ -83,7 +83,7 @@ export default function EthereumVsSolanaDefiPage() {
         <p className="text-[var(--color-text-secondary)]">Ethereum's deep composability enables more sophisticated strategies through extensive protocol integrations. Yield optimizers, structured products, and complex multi-protocol strategies are more developed on Ethereum. Solana's DeFi ecosystem is growing rapidly with innovative protocols like Kamino for automated liquidity management and Jupiter for swap aggregation, but the total range of composable strategies is still narrower than Ethereum's mature ecosystem.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/ethereum Vs Solana Defi", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/ethereum-vs-solana-defi"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/ethereum Vs Solana Defi", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/ethereum-vs-solana-defi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

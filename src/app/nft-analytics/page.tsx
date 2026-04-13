@@ -41,7 +41,7 @@ export default function NFTAnalyticsPage() {
         updatedDate="2026-04-13"
         section="nft-analytics"
       />        <NFTRarityAnalytics />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Collection Analytics & Rarity Tools | degen0x", "description": "Analyze NFT rarity scores, trait distributions, and estimated prices for top collections including CryptoPunks, BAYC, Azuki, DeGods, and more.", "url": "https://degen0x.com/nft-analytics"}) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Collection Analytics & Rarity Tools | degen0x", "description": "Analyze NFT rarity scores, trait distributions, and estimated prices for top collections including CryptoPunks, BAYC, Azuki, DeGods, and more.", "url": "https://degen0x.com/nft-analytics", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

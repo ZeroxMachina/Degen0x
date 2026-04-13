@@ -56,7 +56,7 @@ export default function FlashLoansPage() {
       </div>
       <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/flash Loans", "description": "Aave pioneered flash loans and remains the dominant provider. Borrow any amount of available liquidity with zero collateral, provided the loan is repaid within", "url": "https://degen0x.com/crypto-loans/best/flash-loans"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/flash Loans", "description": "Aave pioneered flash loans and remains the dominant provider. Borrow any amount of available liquidity with zero collateral, provided the loan is repaid within", "url": "https://degen0x.com/crypto-loans/best/flash-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -55,7 +55,7 @@ export default function MarginLendingPage() {
       </div>
       <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/margin Lending", "description": "Aave enables leveraged DeFi positions through recursive borrowing loops. Deposit collateral, borrow, redeposit, and repeat to create leveraged exposure. eMode", "url": "https://degen0x.com/crypto-loans/best/margin-lending"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/margin Lending", "description": "Aave enables leveraged DeFi positions through recursive borrowing loops. Deposit collateral, borrow, redeposit, and repeat to create leveraged exposure. eMode", "url": "https://degen0x.com/crypto-loans/best/margin-lending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

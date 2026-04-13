@@ -83,7 +83,7 @@ export default function FreeVsPaidCryptoTaxPage() {
         <p className="text-[var(--color-text-secondary)]">Most free tools default to FIFO cost basis and do not offer alternatives. Paid tools allow you to compare different methods like HIFO, LIFO, and specific identification. Choosing the optimal cost basis method can reduce your tax liability by thousands of dollars. This single feature alone often justifies the cost of paid software. Some paid tools let you preview your tax liability under each method before choosing, making the optimization process straightforward.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/free Vs Paid Crypto Tax", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/free-vs-paid-crypto-tax"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/free Vs Paid Crypto Tax", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/free-vs-paid-crypto-tax", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

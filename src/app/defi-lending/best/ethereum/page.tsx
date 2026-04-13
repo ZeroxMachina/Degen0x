@@ -125,7 +125,7 @@ export default function EthereumPage() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/ethereum", "description": "Aave V3 on Ethereum mainnet remains the gold standard for DeFi lending, with the deepest liquidity pools and widest asset selection. The protocol supports over", "url": "https://degen0x.com/defi-lending/best/ethereum"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/ethereum", "description": "Aave V3 on Ethereum mainnet remains the gold standard for DeFi lending, with the deepest liquidity pools and widest asset selection. The protocol supports over", "url": "https://degen0x.com/defi-lending/best/ethereum", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

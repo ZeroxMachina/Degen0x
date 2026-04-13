@@ -203,7 +203,7 @@ export default function CryptoComVsCoinbaseCardPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/crypto Com Vs Coinbase Card", "description": "Compare the Crypto.com Visa card and Coinbase Card side by side. We analyze cashback rates, fees, staking requirements, and more to help you pick the best", "url": "https://degen0x.com/crypto-cards/compare/crypto-com-vs-coinbase-card"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards/compare/crypto Com Vs Coinbase Card", "description": "Compare the Crypto.com Visa card and Coinbase Card side by side. We analyze cashback rates, fees, staking requirements, and more to help you pick the best", "url": "https://degen0x.com/crypto-cards/compare/crypto-com-vs-coinbase-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -85,7 +85,7 @@ export default function AaveVsMorphoPage() {
         <p className="text-[var(--color-text-secondary)]">Aave&apos;s shared pool model means a problem with any single asset could theoretically affect all depositors. Aave mitigates this with conservative listing criteria, eMode for correlated assets, and isolation mode for riskier tokens. Morpho Blue&apos;s isolated markets mean risk is contained: a bad oracle or collateral issue in one market cannot affect others. This makes Morpho more flexible in supporting riskier assets while protecting users in other markets.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/aave Vs Morpho", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/aave-vs-morpho"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/aave Vs Morpho", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/aave-vs-morpho", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

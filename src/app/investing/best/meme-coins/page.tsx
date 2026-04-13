@@ -194,7 +194,7 @@ export default function BestMemeCoinsPage() {
       <section id="faq">
         <FAQSection faqs={MEME_COIN_FAQS} />
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Meme Coins", "description": "The original meme coin created in 2013, Dogecoin has become one of the most recognized cryptocurrencies with a massive community and endorsements from", "url": "https://degen0x.com/investing/best/meme-coins"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Meme Coins", "description": "The original meme coin created in 2013, Dogecoin has become one of the most recognized cryptocurrencies with a massive community and endorsements from", "url": "https://degen0x.com/investing/best/meme-coins", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

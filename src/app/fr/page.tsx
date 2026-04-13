@@ -345,7 +345,7 @@ export default function FrenchLandingPage() {
         <Link href="/es" className="text-[var(--color-primary)] hover:underline">🇪🇸 Español</Link>
         <Link href="/pt-br" className="text-[var(--color-primary)] hover:underline">🇧🇷 Português</Link>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x en Fran\u00e7ais \u2014 Comparer Exchanges, Wallets et DeFi", "description": "degen0x est votre guide de confiance pour les cryptomonnaies en fran\u00e7ais. Comparez les exchanges, wallets et protocoles DeFi. Avis d", "url": "https://degen0x.com/fr"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x en Fran\u00e7ais \u2014 Comparer Exchanges, Wallets et DeFi", "description": "degen0x est votre guide de confiance pour les cryptomonnaies en fran\u00e7ais. Comparez les exchanges, wallets et protocoles DeFi. Avis d", "url": "https://degen0x.com/fr", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

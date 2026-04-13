@@ -88,7 +88,7 @@ export default function CryptoTaxSoftwareComparisonPage() {
         <p className="text-[var(--color-text-secondary)]">For non-US users, international support is critical. Koinly and CryptoTaxCalculator both support over 20 countries with country-specific tax calculations and forms. CoinPanda supports 65 countries. CoinTracker, CoinLedger, and ZenLedger are primarily US-focused. International users should verify that their specific country's tax rules are implemented, not just listed as a supported export format.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/crypto Tax Software Comparison", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/crypto-tax-software-comparison"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/crypto Tax Software Comparison", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/crypto-tax-software-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

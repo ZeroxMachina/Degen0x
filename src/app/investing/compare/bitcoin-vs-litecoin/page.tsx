@@ -66,7 +66,7 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li><li><Link href="/investing/learn/bitcoin-etf-complete-guide" className="text-blue-600 hover:underline">Bitcoin ETF Complete Guide</Link></li></ul></section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/bitcoin Vs Litecoin", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/bitcoin-vs-litecoin"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/bitcoin Vs Litecoin", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/bitcoin-vs-litecoin", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -79,7 +79,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/blue Chip Crypto", "description": "The original and largest cryptocurrency with unmatched network security, institutional adoption, and brand recognition. Bitcoin ETFs have cemented its position", "url": "https://degen0x.com/investing/best/blue-chip-crypto"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/blue Chip Crypto", "description": "The original and largest cryptocurrency with unmatched network security, institutional adoption, and brand recognition. Bitcoin ETFs have cemented its position", "url": "https://degen0x.com/investing/best/blue-chip-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

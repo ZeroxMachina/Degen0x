@@ -73,7 +73,7 @@ export default function PrivacyPage() {
           If you have questions about this Privacy Policy, please contact us at privacy@degen0x.com.
         </p>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Privacy", "description": "Crypto content on degen0x", "url": "https://degen0x.com/privacy"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Privacy", "description": "Crypto content on degen0x", "url": "https://degen0x.com/privacy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

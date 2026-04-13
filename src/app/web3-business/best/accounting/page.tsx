@@ -199,7 +199,7 @@ export default function AccountingPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Tracking", "description": "Enterprise-grade crypto accounting and tax platform for businesses. Automatically tracks and categorizes on-chain transactions across hundreds of wallets and", "url": "https://degen0x.com/web3-business/best/accounting"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Tracking", "description": "Enterprise-grade crypto accounting and tax platform for businesses. Automatically tracks and categorizes on-chain transactions across hundreds of wallets and", "url": "https://degen0x.com/web3-business/best/accounting", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -83,7 +83,7 @@ export default function TokenTaxVsCoinLedgerPage() {
         <p className="text-[var(--color-text-secondary)]">TokenTax's VIP plan is unique in offering full-service tax preparation where their in-house CPAs handle your entire tax return. This is ideal for users with complex tax situations involving crypto alongside traditional income, investments, and deductions. No other major crypto tax tool offers comparable full-service filing. CoinLedger focuses solely on generating the crypto tax reports, leaving the actual filing to the user or their accountant.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/tokentax Vs Coinledger", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/tokentax-vs-coinledger"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/tokentax Vs Coinledger", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/tokentax-vs-coinledger", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

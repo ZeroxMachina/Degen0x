@@ -79,7 +79,7 @@ export default function SpotVsDerivativesPage() {
         { question: "What are funding rates?", answer: "Funding rates are periodic payments between long and short traders on perpetual contracts that keep the contract price aligned with the spot price. When funding is positive, longs pay shorts. When negative, shorts pay longs." },
         { question: "Should beginners trade derivatives?", answer: "No, beginners should start with spot trading to learn market fundamentals before considering derivatives. Statistics show that 70-80% of retail derivative traders lose money. Master spot trading first." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/spot Vs Derivatives", "description": "Complete comparison of spot trading vs derivatives (futures, options, perpetuals) in crypto. Understand risks, fees, leverage, and which suits your strategy.", "url": "https://degen0x.com/exchanges/compare/spot-vs-derivatives"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/spot Vs Derivatives", "description": "Complete comparison of spot trading vs derivatives (futures, options, perpetuals) in crypto. Understand risks, fees, leverage, and which suits your strategy.", "url": "https://degen0x.com/exchanges/compare/spot-vs-derivatives", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

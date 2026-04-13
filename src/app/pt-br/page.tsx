@@ -364,7 +364,7 @@ export default function PortuguesLandingPage() {
           <Link href="/terms" style={{ color: "var(--color-primary)" }}>Termos de Uso</Link>
         </p>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x em Portugu\u00eas \u2014 Comparar Exchanges, Wallets e DeFi", "description": "degen0x \u00e9 seu guia confi\u00e1vel para cripto em portugu\u00eas. Compare exchanges, wallets, protocolos DeFi e mais. Avalia\u00e7\u00f5es de especialistas, ferramentas interativas", "url": "https://degen0x.com/pt-br"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x em Portugu\u00eas \u2014 Comparar Exchanges, Wallets e DeFi", "description": "degen0x \u00e9 seu guia confi\u00e1vel para cripto em portugu\u00eas. Compare exchanges, wallets, protocolos DeFi e mais. Avalia\u00e7\u00f5es de especialistas, ferramentas interativas", "url": "https://degen0x.com/pt-br", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

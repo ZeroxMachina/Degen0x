@@ -105,7 +105,7 @@ export default function BlueChipCryptoPage() {
       </div>
       <div className="space-y-6 mb-12">{products.map((product, index) => (<ProductCard key={product.slug} product={product} rank={index + 1} categorySlug="long-term" />))}</div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/blue Chip Crypto", "description": "Discover the safest blue-chip cryptocurrencies for long-term investment. Analysis of BTC, ETH, and other established digital assets with proven track records.", "url": "https://degen0x.com/long-term/best/blue-chip-crypto"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/blue Chip Crypto", "description": "Discover the safest blue-chip cryptocurrencies for long-term investment. Analysis of BTC, ETH, and other established digital assets with proven track records.", "url": "https://degen0x.com/long-term/best/blue-chip-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

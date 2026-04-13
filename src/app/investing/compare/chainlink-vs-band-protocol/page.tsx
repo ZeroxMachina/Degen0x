@@ -66,7 +66,7 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/bitcoin-vs-ethereum" className="text-blue-600 hover:underline">Bitcoin vs Ethereum</Link></li><li><Link href="/investing/learn/crypto-valuation-methods" className="text-blue-600 hover:underline">Crypto Valuation Methods</Link></li></ul></section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/chainlink Vs Band Protocol", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/chainlink-vs-band-protocol"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/chainlink Vs Band Protocol", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/chainlink-vs-band-protocol", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

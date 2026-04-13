@@ -126,7 +126,7 @@ export default function StablecoinYieldPage() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/stablecoin Yield", "description": "Aave offers competitive stablecoin supply rates across multiple chains. USDC and USDT deposits earn variable APY that typically ranges from 3-8% depending on", "url": "https://degen0x.com/defi-lending/best/stablecoin-yield"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/stablecoin Yield", "description": "Aave offers competitive stablecoin supply rates across multiple chains. USDC and USDT deposits earn variable APY that typically ranges from 3-8% depending on", "url": "https://degen0x.com/defi-lending/best/stablecoin-yield", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

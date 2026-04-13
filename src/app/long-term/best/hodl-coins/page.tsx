@@ -183,7 +183,7 @@ export default function HodlCoinsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Network Effects (25%)", "description": "Bitcoin remains the undisputed king for long-term crypto holding. As the first and largest cryptocurrency with a fixed supply of 21 million coins, Bitcoin has", "url": "https://degen0x.com/long-term/best/hodl-coins"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Network Effects (25%)", "description": "Bitcoin remains the undisputed king for long-term crypto holding. As the first and largest cryptocurrency with a fixed supply of 21 million coins, Bitcoin has", "url": "https://degen0x.com/long-term/best/hodl-coins", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

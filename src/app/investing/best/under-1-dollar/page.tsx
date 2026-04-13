@@ -78,7 +78,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/under 1 Dollar", "description": "The original meme coin with the largest community and strongest brand recognition. Accepted as payment by multiple companies and backed by high-profile", "url": "https://degen0x.com/investing/best/under-1-dollar"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/under 1 Dollar", "description": "The original meme coin with the largest community and strongest brand recognition. Accepted as payment by multiple companies and backed by high-profile", "url": "https://degen0x.com/investing/best/under-1-dollar", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

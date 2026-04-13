@@ -233,7 +233,7 @@ export default function GrantsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/grants", "description": "The largest and most established grants program in Web3, funding research, development, and community initiatives across the Ethereum ecosystem. Supports", "url": "https://degen0x.com/web3-business/best/grants"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/grants", "description": "The largest and most established grants program in Web3, funding research, development, and community initiatives across the Ethereum ecosystem. Supports", "url": "https://degen0x.com/web3-business/best/grants", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

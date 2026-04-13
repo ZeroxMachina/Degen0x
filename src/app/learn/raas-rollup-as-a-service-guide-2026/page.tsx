@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Rollup-as-a-Service (RaaS) Guide 2026 — Conduit, Caldera,",
   description: "Compare the top RaaS providers in 2026: Conduit, Caldera, Gelato, and AltLayer. Learn how to deploy your own rollup chain without writing infrastructure code.",
+  alternates: { canonical: "/learn/raas-rollup-as-a-service-guide-2026" },
   keywords: ["raas", "rollup as a service", "conduit raas", "caldera blockchain", "gelato raas", "altlayer restaked rollups", "deploy rollup", "custom blockchain", "appchain", "rollup deployment"],
   openGraph: {
     title: "Rollup-as-a-Service (RaaS) Guide 2026 — Conduit, Caldera,",

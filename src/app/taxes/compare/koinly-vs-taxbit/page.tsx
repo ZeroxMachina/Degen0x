@@ -83,7 +83,7 @@ export default function KoinlyVsTaxBitPage() {
         <p className="text-[var(--color-text-secondary)]">TaxBit's free consumer offering is its biggest advantage for budget-conscious users. However, the free tier has limitations in DeFi tracking and international support. Koinly's paid plans start at $49 per year and scale based on transaction count. For users who need DeFi support or international tax reports, Koinly provides better value despite the cost.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/koinly Vs Taxbit", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/koinly-vs-taxbit"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/koinly Vs Taxbit", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/koinly-vs-taxbit", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

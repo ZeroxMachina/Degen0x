@@ -83,7 +83,7 @@ export default function FixedVsVariableRatePage() {
         <p className="text-[var(--color-text-secondary)]">For yield farmers running leveraged strategies, the spread between borrowing cost and farming return determines profitability. Variable borrowing rates can compress or eliminate this spread unpredictably. Fixing borrowing costs locks in the spread for the term, providing more predictable strategy returns. For passive lenders, fixed rates guarantee a minimum return while variable rates may outperform during high-demand periods. Consider your strategy's sensitivity to rate changes when choosing between fixed and variable.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/fixed Vs Variable Rate", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/fixed-vs-variable-rate"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/fixed Vs Variable Rate", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/fixed-vs-variable-rate", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

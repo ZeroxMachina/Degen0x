@@ -166,7 +166,7 @@ export default function NoKycPage() {
       </div>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/best/no Kyc", "description": "The largest decentralized exchange on Ethereum. Trade ERC-20 tokens directly from your wallet with no KYC, no account creation, and no withdrawal limits.", "url": "https://degen0x.com/exchanges/best/no-kyc"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/best/no Kyc", "description": "The largest decentralized exchange on Ethereum. Trade ERC-20 tokens directly from your wallet with no KYC, no account creation, and no withdrawal limits.", "url": "https://degen0x.com/exchanges/best/no-kyc", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

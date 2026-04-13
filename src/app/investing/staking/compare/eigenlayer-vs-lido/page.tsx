@@ -153,7 +153,7 @@ export default function EigenLayerVsLidoPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/staking/compare/eigenlayer Vs Lido", "description": "Detailed comparison of EigenLayer vs Lido. Compare restaking yields, risks, composability, and fees to understand how these protocols complement each other.", "url": "https://degen0x.com/investing/staking/compare/eigenlayer-vs-lido"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/staking/compare/eigenlayer Vs Lido", "description": "Detailed comparison of EigenLayer vs Lido. Compare restaking yields, risks, composability, and fees to understand how these protocols complement each other.", "url": "https://degen0x.com/investing/staking/compare/eigenlayer-vs-lido", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

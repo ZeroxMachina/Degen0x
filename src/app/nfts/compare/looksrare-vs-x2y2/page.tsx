@@ -101,7 +101,7 @@ export default function LooksRareVsX2Y2Page() {
         { question: "Is wash trading a concern on these platforms?", answer: "Both LooksRare and X2Y2 experienced significant wash trading during their initial token reward phases, as traders executed fake trades to farm token rewards. Both platforms have implemented measures to reduce wash trading, including adjusted reward calculations and volume requirements." },
         { question: "Should I use Blur instead of either platform?", answer: "For most active Ethereum NFT traders, Blur offers superior tools and zero fees. However, LooksRare and X2Y2 may be worthwhile if you value their specific token reward programs or niche features like X2Y2's NFT loans." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/looksrare Vs X2y2", "description": "Detailed comparison of LooksRare vs X2Y2. Compare fees, token rewards, trading features, and community governance to find the best Ethereum NFT marketplace.", "url": "https://degen0x.com/nfts/compare/looksrare-vs-x2y2"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/looksrare Vs X2y2", "description": "Detailed comparison of LooksRare vs X2Y2. Compare fees, token rewards, trading features, and community governance to find the best Ethereum NFT marketplace.", "url": "https://degen0x.com/nfts/compare/looksrare-vs-x2y2", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -85,7 +85,7 @@ export default function LidoVsEigenlayerPage() {
         <p className="text-[var(--color-text-secondary)]">The optimal stacking strategy depends on your risk tolerance. Conservative: stake on Lido, hold stETH, earn ~3-4% APR. Moderate: deposit stETH into Aave as collateral, borrow stablecoins, lend them for additional yield. Aggressive: deposit stETH into EigenLayer, select high-reward AVSs, and layer on additional DeFi strategies. Each layer adds yield potential but also adds complexity and risk. Start conservative and add layers as you gain experience and understanding.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/lido Vs Eigenlayer", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/lido-vs-eigenlayer"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/lido Vs Eigenlayer", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/lido-vs-eigenlayer", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

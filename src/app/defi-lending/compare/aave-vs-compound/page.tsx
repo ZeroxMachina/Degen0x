@@ -83,7 +83,7 @@ export default function AaveVsCompoundPage() {
         <p className="text-[var(--color-text-secondary)]">Aave V3 uses a pool-based model where all assets share liquidity within a market. Compound V3 uses isolated single-asset markets where each base asset has its own separate market. Compound's approach provides better risk isolation but less capital efficiency. Aave's approach provides more flexibility and composability.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/aave Vs Compound", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/aave-vs-compound"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/aave Vs Compound", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/aave-vs-compound", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

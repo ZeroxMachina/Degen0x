@@ -79,7 +79,7 @@ export default function BestOpenSourceWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/open Source", "description": "The most popular open-source Ethereum wallet with millions of users, extensive third-party auditing, and full source code on GitHub.", "url": "https://degen0x.com/wallets/best/open-source"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/open Source", "description": "The most popular open-source Ethereum wallet with millions of users, extensive third-party auditing, and full source code on GitHub.", "url": "https://degen0x.com/wallets/best/open-source", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

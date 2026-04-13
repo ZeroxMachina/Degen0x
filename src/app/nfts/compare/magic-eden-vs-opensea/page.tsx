@@ -101,7 +101,7 @@ export default function MagicEdenVsOpenSeaPage() {
         { question: "Which has better Solana NFT support?", answer: "Magic Eden is the leader for Solana NFTs with the deepest collection coverage, Launchpad for new mints, and enforced creator royalties. OpenSea supports Solana but has a smaller selection and fewer Solana-specific features." },
         { question: "Which marketplace is more beginner-friendly?", answer: "Both offer approachable interfaces, but OpenSea is generally considered more beginner-friendly due to its simpler layout and more extensive help documentation. Magic Eden's multi-chain interface can feel slightly more complex for newcomers." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/magic Eden Vs Opensea", "description": "Detailed comparison of Magic Eden vs OpenSea. Compare fees, supported chains, features, and user experience to find which NFT marketplace is right for you.", "url": "https://degen0x.com/nfts/compare/magic-eden-vs-opensea"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nfts/compare/magic Eden Vs Opensea", "description": "Detailed comparison of Magic Eden vs OpenSea. Compare fees, supported chains, features, and user experience to find which NFT marketplace is right for you.", "url": "https://degen0x.com/nfts/compare/magic-eden-vs-opensea", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

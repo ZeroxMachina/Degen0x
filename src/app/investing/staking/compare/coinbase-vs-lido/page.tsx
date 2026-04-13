@@ -154,7 +154,7 @@ export default function CoinbaseVsLidoPage() {
           },
         ]}
       />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/staking/compare/coinbase Vs Lido", "description": "Detailed comparison of Coinbase Staking vs Lido. Compare fees, ease of use, DeFi integrations, and regulatory status to choose the right ETH staking option.", "url": "https://degen0x.com/investing/staking/compare/coinbase-vs-lido"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/staking/compare/coinbase Vs Lido", "description": "Detailed comparison of Coinbase Staking vs Lido. Compare fees, ease of use, DeFi integrations, and regulatory status to choose the right ETH staking option.", "url": "https://degen0x.com/investing/staking/compare/coinbase-vs-lido", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

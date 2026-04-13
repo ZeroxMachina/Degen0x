@@ -78,7 +78,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/low Market Cap", "description": "Yield tokenization protocol enabling trading of future yield and fixed-rate strategies. Innovative DeFi primitive with growing TVL and unique market position.", "url": "https://degen0x.com/investing/best/low-market-cap"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/low Market Cap", "description": "Yield tokenization protocol enabling trading of future yield and fixed-rate strategies. Innovative DeFi primitive with growing TVL and unique market position.", "url": "https://degen0x.com/investing/best/low-market-cap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

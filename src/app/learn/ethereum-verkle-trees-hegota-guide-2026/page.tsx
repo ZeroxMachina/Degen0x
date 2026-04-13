@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Ethereum Verkle Trees & Hegota Guide 2026 — Stateless",
   description: "Understand Verkle Trees, the cryptographic innovation enabling stateless Ethereum clients. Learn how Hegota (H2 2026) reduces node storage by 90% and what it",
+  alternates: { canonical: "/learn/ethereum-verkle-trees-hegota-guide-2026" },
   keywords: [
     "verkle trees ethereum",
     "ethereum hegota upgrade",

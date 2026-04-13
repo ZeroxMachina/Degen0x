@@ -37,7 +37,7 @@ export default function SearchPage() {
           <h1 className="text-4xl font-bold text-[var(--color-text)] mb-3">Search degen0x</h1>
           <p className="text-lg text-[var(--color-text-secondary)]">Loading search...</p>
         </div>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Search \u2014 Crypto Tools", "description": "Explore Search on degen0x. Free crypto tools and in-depth analysis.", "url": "https://degen0x.com/search"}) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Search \u2014 Crypto Tools", "description": "Explore Search on degen0x. Free crypto tools and in-depth analysis.", "url": "https://degen0x.com/search", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

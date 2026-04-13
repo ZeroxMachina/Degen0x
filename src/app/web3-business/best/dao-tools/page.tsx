@@ -210,7 +210,7 @@ export default function DaoToolsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/dao Tools", "description": "The most widely used off-chain voting platform for DAOs. Enables gasless voting through signed messages, supports multiple voting strategies, and integrates", "url": "https://degen0x.com/web3-business/best/dao-tools"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/dao Tools", "description": "The most widely used off-chain voting platform for DAOs. Enables gasless voting through signed messages, supports multiple voting strategies, and integrates", "url": "https://degen0x.com/web3-business/best/dao-tools", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

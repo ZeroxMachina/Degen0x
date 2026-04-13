@@ -56,7 +56,7 @@ export default function NoKycPage() {
       </div>
       <div className="space-y-4 mb-12">{products.map((p, i) => (<ProductCard key={p.slug} product={p} rank={i + 1} categorySlug="crypto-loans" />))}</div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/no Kyc", "description": "Aave is fully permissionless with no KYC, no account creation, and no identity verification of any kind. Simply connect your wallet, deposit collateral, and", "url": "https://degen0x.com/crypto-loans/best/no-kyc"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans/best/no Kyc", "description": "Aave is fully permissionless with no KYC, no account creation, and no identity verification of any kind. Simply connect your wallet, deposit collateral, and", "url": "https://degen0x.com/crypto-loans/best/no-kyc", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

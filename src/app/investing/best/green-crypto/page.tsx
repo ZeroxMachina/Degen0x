@@ -78,7 +78,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/green Crypto", "description": "Since transitioning to proof-of-stake in September 2022, Ethereum reduced its energy consumption by over 99.95%. The most impactful green transition in crypto", "url": "https://degen0x.com/investing/best/green-crypto"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/green Crypto", "description": "Since transitioning to proof-of-stake in September 2022, Ethereum reduced its energy consumption by over 99.95%. The most impactful green transition in crypto", "url": "https://degen0x.com/investing/best/green-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

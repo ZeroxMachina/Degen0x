@@ -36,7 +36,7 @@ export default function CopyTradingPage() {
       />      <CopyTradingLeaderboard />
       <hr className="border-[var(--color-border)]" />
       <SocialTradingFeed />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Copy Trading", "description": "Follow and copy the best crypto traders. Real-time PnL rankings, strategy analysis, risk scores, and one-click copy trading across Solana, Ethereum, and L2s.", "url": "https://degen0x.com/copy-trading"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Copy Trading", "description": "Follow and copy the best crypto traders. Real-time PnL rankings, strategy analysis, risk scores, and one-click copy trading across Solana, Ethereum, and L2s.", "url": "https://degen0x.com/copy-trading", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

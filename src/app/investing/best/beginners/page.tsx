@@ -182,7 +182,7 @@ export default function BestForBeginnersPage() {
       <section id="faq">
         <FAQSection faqs={BEGINNER_FAQS} />
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Platforms for Beginners", "description": "An all-in-one crypto platform with a simple mobile app, crypto debit card, learn-to-earn rewards, and competitive fees for new investors.", "url": "https://degen0x.com/investing/best/beginners"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Platforms for Beginners", "description": "An all-in-one crypto platform with a simple mobile app, crypto debit card, learn-to-earn rewards, and competitive fees for new investors.", "url": "https://degen0x.com/investing/best/beginners", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

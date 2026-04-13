@@ -142,7 +142,7 @@ export default function AaveTokenPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/crypto/aave Token", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/crypto/aave-token"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/crypto/aave Token", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/crypto/aave-token", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

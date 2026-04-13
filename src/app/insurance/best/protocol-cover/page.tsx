@@ -161,7 +161,7 @@ export default function ProtocolCoverPage() {
 
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Insurance/best/protocol Cover", "description": "Compare the best DeFi protocol cover insurance. Protect against governance attacks, oracle manipulation, and protocol-level failures across major DeFi", "url": "https://degen0x.com/insurance/best/protocol-cover"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Insurance/best/protocol Cover", "description": "Compare the best DeFi protocol cover insurance. Protect against governance attacks, oracle manipulation, and protocol-level failures across major DeFi", "url": "https://degen0x.com/insurance/best/protocol-cover", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

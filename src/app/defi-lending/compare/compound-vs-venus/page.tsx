@@ -83,7 +83,7 @@ export default function CompoundVsVenusPage() {
         <p className="text-[var(--color-text-secondary)]">Compound benefits from the deep Ethereum DeFi ecosystem with countless integrations across yield optimizers, aggregators, and strategy platforms. Venus has growing BNB Chain integrations but the ecosystem is smaller. If composability and integration with other DeFi protocols is important to your strategy, Compound's Ethereum positioning provides more options.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/compound Vs Venus", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/compound-vs-venus"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/compound Vs Venus", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/compound-vs-venus", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

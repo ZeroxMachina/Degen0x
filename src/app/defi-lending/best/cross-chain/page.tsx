@@ -98,7 +98,7 @@ export default function CrossChainPage() {
         ))}
       </div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/cross Chain", "description": "Aave leads cross-chain DeFi lending with deployments on 10+ networks including Ethereum, Arbitrum, Optimism, Polygon, Avalanche, Base, and more. Each", "url": "https://degen0x.com/defi-lending/best/cross-chain"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/best/cross Chain", "description": "Aave leads cross-chain DeFi lending with deployments on 10+ networks including Ethereum, Arbitrum, Optimism, Polygon, Avalanche, Base, and more. Each", "url": "https://degen0x.com/defi-lending/best/cross-chain", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

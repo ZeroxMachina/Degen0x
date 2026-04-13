@@ -83,7 +83,7 @@ export default function MapleVsGoldfinchPage() {
         <p className="text-[var(--color-text-secondary)]">Maple pools generally offer more liquidity flexibility with periodic withdrawal windows. Goldfinch positions can be less liquid as underlying loans have fixed terms that may extend months or years. Goldfinch does have a senior pool that provides some liquidity, and secondary markets exist for some positions. Evaluate your liquidity needs carefully before committing to either platform, as early exit may not always be possible at favorable terms.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/maple Vs Goldfinch", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/maple-vs-goldfinch"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/maple Vs Goldfinch", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/maple-vs-goldfinch", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

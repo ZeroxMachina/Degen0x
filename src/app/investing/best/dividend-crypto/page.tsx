@@ -78,7 +78,7 @@ export default function Page() {
         </ul>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/dividend Crypto", "description": "Staking ETH earns 3-5% annually from network validation rewards and priority fees. With ETH", "url": "https://degen0x.com/investing/best/dividend-crypto"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/best/dividend Crypto", "description": "Staking ETH earns 3-5% annually from network validation rewards and priority fees. With ETH", "url": "https://degen0x.com/investing/best/dividend-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

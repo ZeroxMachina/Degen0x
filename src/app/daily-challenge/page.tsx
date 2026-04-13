@@ -51,7 +51,7 @@ export default function DailyChallengePage() {
         ]}
       />
       <DailyChallenge />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Crypto Challenge \u2014 Earn XP Every Day | degen0x", "description": "One crypto question every day. Answer correctly to earn XP, build your streak, and unlock badges. The fastest way to level up your crypto knowledge.", "url": "https://degen0x.com/daily-challenge"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Crypto Challenge \u2014 Earn XP Every Day | degen0x", "description": "One crypto question every day. Answer correctly to earn XP, build your streak, and unlock badges. The fastest way to level up your crypto knowledge.", "url": "https://degen0x.com/daily-challenge", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

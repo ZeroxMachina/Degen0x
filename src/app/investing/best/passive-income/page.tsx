@@ -187,7 +187,7 @@ export default function BestPassiveIncomePage() {
       <section id="faq">
         <FAQSection faqs={PASSIVE_INCOME_FAQS} />
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Passive Income Options", "description": "The largest DeFi lending protocol where you can earn interest by supplying crypto assets to liquidity pools used by borrowers.", "url": "https://degen0x.com/investing/best/passive-income"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Top Passive Income Options", "description": "The largest DeFi lending protocol where you can earn interest by supplying crypto assets to liquidity pools used by borrowers.", "url": "https://degen0x.com/investing/best/passive-income", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

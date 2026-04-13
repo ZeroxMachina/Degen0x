@@ -66,7 +66,7 @@ export default function Page() {
           </p>
         </div><ul className="space-y-2"><li><Link href="/investing/compare/dca-vs-timing-market" className="text-blue-600 hover:underline">DCA vs Timing the Market</Link></li><li><Link href="/investing/learn/crypto-portfolio-strategies" className="text-blue-600 hover:underline">Crypto Portfolio Strategies</Link></li></ul></section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/active Vs Passive Crypto", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/active-vs-passive-crypto"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/compare/active Vs Passive Crypto", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/compare/active-vs-passive-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

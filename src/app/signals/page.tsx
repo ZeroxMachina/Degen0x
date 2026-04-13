@@ -33,7 +33,7 @@ export default function SignalsPage() {
         updatedDate="2026-04-13"
         section="signals"
       />      <TradingSignals />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Signals", "description": "AI-powered crypto trading signals combining technical analysis, on-chain data, and social sentiment. Entry points, targets, stop losses, and risk/reward ratios.", "url": "https://degen0x.com/signals"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Signals", "description": "AI-powered crypto trading signals combining technical analysis, on-chain data, and social sentiment. Entry points, targets, stop losses, and risk/reward ratios.", "url": "https://degen0x.com/signals", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

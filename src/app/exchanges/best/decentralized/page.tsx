@@ -213,7 +213,7 @@ export default function DecentralizedExchangesPage() {
       </div>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/best/decentralized", "description": "The largest and most established DEX, pioneering the AMM model. Uniswap V3 introduced concentrated liquidity, dramatically improving capital efficiency.", "url": "https://degen0x.com/exchanges/best/decentralized"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/best/decentralized", "description": "The largest and most established DEX, pioneering the AMM model. Uniswap V3 introduced concentrated liquidity, dramatically improving capital efficiency.", "url": "https://degen0x.com/exchanges/best/decentralized", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -270,7 +270,7 @@ export default function BestPaymentAppsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending/best/payment Apps", "description": "The most established crypto payment app with over a decade of history. BitPay processes payments for thousands of merchants, offers a prepaid Mastercard, and", "url": "https://degen0x.com/spending/best/payment-apps"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending/best/payment Apps", "description": "The most established crypto payment app with over a decade of history. BitPay processes payments for thousands of merchants, offers a prepaid Mastercard, and", "url": "https://degen0x.com/spending/best/payment-apps", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

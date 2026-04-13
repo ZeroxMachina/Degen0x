@@ -85,7 +85,7 @@ export default function CurveVsUniswapPage() {
         <p className="text-[var(--color-text-secondary)]">CRV&apos;s vote-locking mechanism (veCRV) creates strong incentive alignment. Locking CRV for up to 4 years boosts LP rewards and grants voting power over emission allocations. This created the Curve Wars ecosystem where protocols compete for veCRV influence. UNI governance is more straightforward, with token holders voting on protocol changes. Uniswap has significant protocol fee revenue potential that has not yet been fully activated through governance.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/curve Vs Uniswap", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/curve-vs-uniswap"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/curve Vs Uniswap", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/curve-vs-uniswap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

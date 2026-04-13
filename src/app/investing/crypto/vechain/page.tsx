@@ -141,7 +141,7 @@ export default function VeChainPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/crypto/vechain", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/crypto/vechain"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Investing/crypto/vechain", "description": "Crypto content on degen0x", "url": "https://degen0x.com/investing/crypto/vechain", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

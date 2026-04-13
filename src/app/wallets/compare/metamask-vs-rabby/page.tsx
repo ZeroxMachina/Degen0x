@@ -68,7 +68,7 @@ export default function MetaMaskVsRabbyPage() {
             The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
           </p>
         </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/ethereum" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Ethereum Wallets</h3></Link><Link href="/wallets/learn/phishing-protection-guide" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Guide</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Phishing Protection Guide</h3></Link></div></section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/metamask Vs Rabby", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/metamask-vs-rabby"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/compare/metamask Vs Rabby", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/compare/metamask-vs-rabby", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

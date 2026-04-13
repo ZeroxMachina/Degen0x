@@ -181,7 +181,7 @@ export default function CanadaWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/canada", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/canada"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/canada", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/canada", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

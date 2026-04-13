@@ -126,7 +126,7 @@ export default function BestBeginnersWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/beginners", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/beginners"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallets/best/beginners", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/beginners", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

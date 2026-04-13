@@ -196,7 +196,7 @@ export default function BusinessBankingPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/business Banking", "description": "The leading banking platform for startups and tech companies, with a strong track record of serving crypto and Web3 businesses. Offers FDIC-insured accounts,", "url": "https://degen0x.com/web3-business/best/business-banking"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Business/best/business Banking", "description": "The leading banking platform for startups and tech companies, with a strong track record of serving crypto and Web3 businesses. Offers FDIC-insured accounts,", "url": "https://degen0x.com/web3-business/best/business-banking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

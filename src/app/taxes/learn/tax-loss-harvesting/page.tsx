@@ -796,7 +796,7 @@ export default function TaxLossHarvestingPage() {
   <a href="/taxes/wash-sale-rule-crypto-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Wash Sale Rule Crypto Explained</a>
 </nav>
       </article>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/learn/tax Loss Harvesting", "description": "Learn crypto tax loss harvesting strategies for 2026. Understand how to offset capital gains, reduce your tax liability, and take advantage of crypto", "url": "https://degen0x.com/taxes/learn/tax-loss-harvesting"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/learn/tax Loss Harvesting", "description": "Learn crypto tax loss harvesting strategies for 2026. Understand how to offset capital gains, reduce your tax liability, and take advantage of crypto", "url": "https://degen0x.com/taxes/learn/tax-loss-harvesting", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

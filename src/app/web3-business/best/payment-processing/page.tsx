@@ -201,7 +201,7 @@ export default function PaymentProcessingPage() {
       </section>
 
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "E-Commerce Stores", "description": "One of the oldest and most established crypto payment processors, serving businesses since 2011. Supports Bitcoin, Ethereum, and major stablecoins with", "url": "https://degen0x.com/web3-business/best/payment-processing"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "E-Commerce Stores", "description": "One of the oldest and most established crypto payment processors, serving businesses since 2011. Supports Bitcoin, Ethereum, and major stablecoins with", "url": "https://degen0x.com/web3-business/best/payment-processing", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -83,7 +83,7 @@ export default function TurboTaxVsKoinlyPage() {
         <p className="text-[var(--color-text-secondary)]">The most common and effective approach for crypto-active taxpayers is to use Koinly for all crypto tax calculations, then export the Form 8949 data and import it into TurboTax for filing your complete tax return. This gives you the best of both worlds: Koinly's comprehensive crypto tracking and TurboTax's reliable tax filing with all other income sources, deductions, and credits handled properly.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/turbotax Vs Koinly", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/turbotax-vs-koinly"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/compare/turbotax Vs Koinly", "description": "Crypto content on degen0x", "url": "https://degen0x.com/taxes/compare/turbotax-vs-koinly", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

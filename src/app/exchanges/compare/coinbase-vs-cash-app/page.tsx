@@ -78,7 +78,7 @@ export default function CoinbaseVsCashAppPage() {
         { question: "Does Cash App support Lightning Network?", answer: "Yes, Cash App supports Bitcoin Lightning Network for instant, low-cost Bitcoin payments. This is a significant advantage over Coinbase, which does not currently support Lightning." },
         { question: "Can I buy Ethereum on Cash App?", answer: "No, Cash App only supports Bitcoin. For Ethereum and other cryptocurrencies, you need to use a platform like Coinbase." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/coinbase Vs Cash App", "description": "Detailed comparison of Coinbase vs Cash App for buying Bitcoin. Compare fees, features, and capabilities to find the right platform for you.", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-cash-app"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/coinbase Vs Cash App", "description": "Detailed comparison of Coinbase vs Cash App for buying Bitcoin. Compare fees, features, and capabilities to find the right platform for you.", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-cash-app", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

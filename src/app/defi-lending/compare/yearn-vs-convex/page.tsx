@@ -85,7 +85,7 @@ export default function YearnVsConvexPage() {
         <p className="text-[var(--color-text-secondary)]">YFI has a fixed supply of 36,666 tokens, making it one of the scarcest DeFi governance tokens. CVX&apos;s value proposition is tied to its ability to control CRV emissions through vlCVX voting. Both tokens grant governance power, but CVX additionally provides direct economic utility in the Curve Wars ecosystem. CVX holders can vote on which Curve pools receive boosted emissions, making it attractive to protocols seeking liquidity.</p>
       </section>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/yearn Vs Convex", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/yearn-vs-convex"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Defi Lending/compare/yearn Vs Convex", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/compare/yearn-vs-convex", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

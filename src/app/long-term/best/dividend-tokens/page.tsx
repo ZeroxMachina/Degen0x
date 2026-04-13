@@ -92,7 +92,7 @@ export default function DividendTokensPage() {
       </div>
       <div className="space-y-6 mb-12">{products.map((product, index) => (<ProductCard key={product.slug} product={product} rank={index + 1} categorySlug="long-term" />))}</div>
       <FAQSection faqs={faqs} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/dividend Tokens", "description": "Discover the best crypto tokens that pay dividends or share revenue with holders. Compare yield, sustainability, and long-term potential.", "url": "https://degen0x.com/long-term/best/dividend-tokens"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Long Term/best/dividend Tokens", "description": "Discover the best crypto tokens that pay dividends or share revenue with holders. Compare yield, sustainability, and long-term potential.", "url": "https://degen0x.com/long-term/best/dividend-tokens", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

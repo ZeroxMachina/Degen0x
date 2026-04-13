@@ -551,7 +551,7 @@ export default function CommunityPage() {
           </div>
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x Community \u2014 Ask, Discuss, Learn with Fellow Degens", "description": "Join the degen0x community. Ask questions, share alpha, follow expert discussions, and connect with thousands of crypto traders, investors, and builders.", "url": "https://degen0x.com/community"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x Community \u2014 Ask, Discuss, Learn with Fellow Degens", "description": "Join the degen0x community. Ask questions, share alpha, follow expert discussions, and connect with thousands of crypto traders, investors, and builders.", "url": "https://degen0x.com/community", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

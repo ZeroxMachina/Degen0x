@@ -61,7 +61,7 @@ export default function RiskScorePage() {
               "url": "https://degen0x.com/tools/risk-score",
               "applicationCategory": "FinanceApplication",
               "operatingSystem": "Web",
-              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" , "datePublished": "2026-04-13", "dateModified": "2026-04-13"}
             })
           }}
         />

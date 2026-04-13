@@ -124,7 +124,7 @@ export default function BestDefiLendingPage() {
         </section>
 
         <FAQSection faqs={DEFI_FAQS} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Yield", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/best"}) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Yield", "description": "Crypto content on degen0x", "url": "https://degen0x.com/defi-lending/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

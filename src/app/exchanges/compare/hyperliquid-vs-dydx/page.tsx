@@ -78,7 +78,7 @@ export default function HyperliquidVsDydxPage() {
         { question: "Which has better liquidity?", answer: "Hyperliquid currently has deeper liquidity and higher trading volume than dYdX, particularly on major perpetual pairs like BTC and ETH." },
         { question: "Do I need KYC for Hyperliquid or dYdX?", answer: "Neither platform currently requires KYC for trading. You connect a wallet and can begin trading immediately. However, both have geographical restrictions and may implement compliance measures in the future." },
       ]} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/hyperliquid Vs Dydx", "description": "Detailed comparison of Hyperliquid vs dYdX for decentralized perpetual futures trading. Compare fees, speed, liquidity, and features.", "url": "https://degen0x.com/exchanges/compare/hyperliquid-vs-dydx"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Exchanges/compare/hyperliquid Vs Dydx", "description": "Detailed comparison of Hyperliquid vs dYdX for decentralized perpetual futures trading. Compare fees, speed, liquidity, and features.", "url": "https://degen0x.com/exchanges/compare/hyperliquid-vs-dydx", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

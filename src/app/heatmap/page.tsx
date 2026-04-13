@@ -36,7 +36,7 @@ export default function HeatmapPage() {
         <MarketHeatmap />
       </div>
       <Footer />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Live Crypto Market Heatmap \u2014 Real-Time Sector Analysis", "description": "Visualize the entire crypto market at a glance with our interactive heatmap. Filter by sector, time range, and sort by market cap, volume, or performance.", "url": "https://degen0x.com/heatmap"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Live Crypto Market Heatmap \u2014 Real-Time Sector Analysis", "description": "Visualize the entire crypto market at a glance with our interactive heatmap. Filter by sector, time range, and sort by market cap, volume, or performance.", "url": "https://degen0x.com/heatmap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

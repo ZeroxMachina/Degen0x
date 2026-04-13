@@ -50,7 +50,7 @@ export default function WhaleWatchPage() {
         ]} />
       </div>
       <WhaleWatchClient />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Whale Watch \u2014 Real-time Crypto Transaction Tracking", "description": "Monitor large whale transactions across ETH, SOL, BTC, and ARB in real-time. Track accumulation zones and top whale activity with advanced filtering.", "url": "https://degen0x.com/whale-watch"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Whale Watch \u2014 Real-time Crypto Transaction Tracking", "description": "Monitor large whale transactions across ETH, SOL, BTC, and ARB in real-time. Track accumulation zones and top whale activity with advanced filtering.", "url": "https://degen0x.com/whale-watch", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",
