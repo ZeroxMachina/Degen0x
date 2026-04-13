@@ -1118,7 +1118,9 @@ export default function SolanaETFGuide() {
   <a href="/learn/sui-blockchain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Sui Blockchain Guide 2026</a>
   <a href="/learn/cross-chain-intents-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Cross Chain Intents Guide</a>
   <a href="/learn/ai-agent-frameworks-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ai Agent Frameworks Comparison 2026</a>
-</nav>
+
+          <a href="/learn/sui-private-transactions-seal-framework-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Sui Private Transactions Seal Framework Guide 2026</a>
+        </nav>
       </article>
 
         {/* Sidebar - TOC */}

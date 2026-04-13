@@ -59,6 +59,7 @@ export default function CompoundPage() {
     <>
       <CompoundGuidePage />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Compound Finance Guide 2026: DeFi Lending & Borrowing", "description": "Complete guide to Compound Finance — the pioneering DeFi lending protocol. Learn how to lend, borrow, and earn interest on crypto with Compound V3 in 2026.", "url": "https://degen0x.com/ecosystem/compound", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

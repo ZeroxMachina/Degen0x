@@ -173,7 +173,13 @@ export default function CryptoTaxesFiling() {
   <a href="/taxes/reviews/accointing" style={{ color: "#fb923c", marginRight: "1rem" }}>Accointing</a>
   <a href="/taxes/reviews/koinly" style={{ color: "#fb923c", marginRight: "1rem" }}>Koinly</a>
   <a href="/taxes/reviews/zenledger" style={{ color: "#fb923c", marginRight: "1rem" }}>Zenledger</a>
-</nav>
+
+          <a href="/taxes/crypto-staking-tax-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Staking Tax Guide</a>
+        
+          <a href="/taxes/crypto-day-trading-tax-implications" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Day Trading Tax Implications</a>
+        
+          <a href="/taxes/crypto-gift-tax-rules" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Gift Tax Rules</a>
+        </nav>
     </article>
   );
 }

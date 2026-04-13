@@ -93,6 +93,7 @@ export default function BitPayAppReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallet Features", "description": "BitPay is a veteran crypto payments platform offering a wallet app, Visa debit card, bill pay, and merchant payment processing for Bitcoin, Ethereum, and", "url": "https://degen0x.com/spending/reviews/bitpay-app", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

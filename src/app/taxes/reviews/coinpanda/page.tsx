@@ -59,6 +59,7 @@ export default function CoinPandaReview() {
       relatedGuides={[{ title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }, { title: "Cost Basis Methods", href: "/taxes/learn/cost-basis-methods" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "CoinPanda offers affordable crypto tax reporting with strong DeFi support and international tax compliance.", "url": "https://degen0x.com/taxes/reviews/coinpanda", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

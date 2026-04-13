@@ -192,7 +192,7 @@ export default function TaxesHubPage() {
       </section>
 
       <FAQSection faqs={TAX_FAQS} />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes", "description": "Top-rated crypto tax software compared", "url": "https://degen0x.com/taxes"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes", "description": "Top-rated crypto tax software compared", "url": "https://degen0x.com/taxes", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",
@@ -243,6 +243,15 @@ export default function TaxesHubPage() {
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/offline" style={{ color: "#fb923c", marginRight: "1rem" }}>Offline</a>
+        
+          <a href="/referral" style={{ color: "#fb923c", marginRight: "1rem" }}>Referral</a>
+        
+          <a href="/pricing" style={{ color: "#fb923c", marginRight: "1rem" }}>Pricing</a>
+        </nav>
     </main>
   );
 }

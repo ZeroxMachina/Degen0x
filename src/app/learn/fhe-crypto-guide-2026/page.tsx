@@ -465,7 +465,9 @@ export default function FHECryptoGuide2026() {
   <a href="/learn/trivia-leaderboard" style={{ color: "#fb923c", marginRight: "1rem" }}>Trivia Leaderboard</a>
   <a href="/learn/passive-income-crypto-strategies-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Passive Income Crypto Strategies 2026</a>
   <a href="/learn/ethereum-gas-fees-how-to-save" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Gas Fees How To Save</a>
-</nav>
+
+          <a href="/learn/crypto-index-funds-onchain-basket-investing-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Index Funds Onchain Basket Investing Guide 2026</a>
+        </nav>
       </article>
     
         <script

@@ -438,6 +438,17 @@ export default function NewsletterPage() {
         <Link href="/partners" className="text-[var(--color-primary)] hover:underline">🤝 Affiliate Program</Link>
         <Link href="/community" className="text-[var(--color-primary)] hover:underline">💬 Community</Link>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/nft-analytics" style={{ color: "#fb923c", marginRight: "1rem" }}>Nft Analytics</a>
+        
+          <a href="/copy-trading" style={{ color: "#fb923c", marginRight: "1rem" }}>Copy Trading</a>
+        
+          <a href="/xp-attestation" style={{ color: "#fb923c", marginRight: "1rem" }}>Xp Attestation</a>
+        
+          <a href="/newsletter/welcome" style={{ color: "#fb923c", marginRight: "1rem" }}>Welcome</a>
+        </nav>
     </main>
   );
 }

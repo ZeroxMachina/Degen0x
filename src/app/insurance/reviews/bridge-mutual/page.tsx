@@ -63,6 +63,7 @@ export default function BridgeMutualReviewPage() {
       relatedGuides={[{ title: "Insurance Protocols Compared", href: "/insurance/learn/insurance-protocols-compared" }, { title: "Complete Crypto Insurance Guide", href: "/insurance/learn/crypto-insurance-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Permissionless Pool Creation", "description": "Bridge Mutual is a decentralized discretionary coverage platform that allows anyone to create and manage insurance pools for smart contracts, stablecoins, and", "url": "https://degen0x.com/insurance/reviews/bridge-mutual", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

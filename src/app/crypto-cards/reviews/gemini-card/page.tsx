@@ -149,6 +149,7 @@ Because the Gemini Credit Card is a real credit card issued by WebBank, it repor
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Gemini Credit Card Review 2026: Crypto Rewards, No Annual", "description": "Our in-depth Gemini Credit Card review covers crypto rewards in 60+ tokens, no annual fee, dining cashback rates, credit-building potential, and APR details.", "url": "https://degen0x.com/crypto-cards/reviews/gemini-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

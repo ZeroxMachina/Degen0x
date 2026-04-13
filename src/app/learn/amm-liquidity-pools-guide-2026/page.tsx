@@ -1767,7 +1767,9 @@ const AMMGuide = () => {
   <a href="/learn/bonding-curves-token-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Bonding Curves Token Explained</a>
   <a href="/learn/uniswap-v4-hooks-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Uniswap V4 Hooks Guide</a>
   <a href="/learn/world-chain-proof-of-personhood-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>World Chain Proof Of Personhood Guide 2026</a>
-</nav>
+
+          <a href="/learn/unichain-uniswap-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Unichain Uniswap Layer 2 Guide 2026</a>
+        </nav>
     </article>
   );
 };

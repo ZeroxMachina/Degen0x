@@ -360,7 +360,13 @@ export default function LiquidityPoolCalculator() {
   <a href="/tools/news-feed" style={{ color: "#fb923c", marginRight: "1rem" }}>News Feed</a>
   <a href="/tools/performance-dashboard" style={{ color: "#fb923c", marginRight: "1rem" }}>Performance Dashboard</a>
   <a href="/tools/defi-risk-scorer" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Risk Scorer</a>
-</nav>
+
+          <a href="/tools/token-vesting" style={{ color: "#fb923c", marginRight: "1rem" }}>Token Vesting</a>
+        
+          <a href="/tools/watchlist-sync" style={{ color: "#fb923c", marginRight: "1rem" }}>Watchlist Sync</a>
+        
+          <a href="/tools/market-movers" style={{ color: "#fb923c", marginRight: "1rem" }}>Market Movers</a>
+        </nav>
       </article>
   );
 }

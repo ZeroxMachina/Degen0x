@@ -429,7 +429,9 @@ export default function BestBlastProjectsExpanded() {
   <a href="/ecosystem/curve" style={{ color: "#fb923c", marginRight: "1rem" }}>Curve</a>
   <a href="/ecosystem/sommelier" style={{ color: "#fb923c", marginRight: "1rem" }}>Sommelier</a>
   <a href="/ecosystem/karak-network" style={{ color: "#fb923c", marginRight: "1rem" }}>Karak Network</a>
-</nav>
+
+          <a href="/ecosystem/symbiosis" style={{ color: "#fb923c", marginRight: "1rem" }}>Symbiosis</a>
+        </nav>
 
 </article>
   );

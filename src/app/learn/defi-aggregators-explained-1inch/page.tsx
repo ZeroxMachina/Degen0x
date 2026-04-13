@@ -524,7 +524,9 @@ export default function DefiAggregatorsExplained1inch() {
   <a href="/learn/crypto-hardware-wallets-cold-storage-comparison-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Hardware Wallets Cold Storage Comparison Guide 2026</a>
   <a href="/learn/solana-etf-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Etf Guide 2026</a>
   <a href="/learn/how-to-convert-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>How To Convert Crypto</a>
-</nav>
+
+          <a href="/learn/defi-composability-what-it-means" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Composability What It Means</a>
+        </nav>
       </article>
   );
 }

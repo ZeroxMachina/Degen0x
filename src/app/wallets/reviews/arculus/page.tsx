@@ -79,6 +79,7 @@ export default function ArculusReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Card Form Factor", "description": "Arculus cold storage card review covering NFC-based security, credit card form factor, multi-chain support, and three-factor authentication.", "url": "https://degen0x.com/wallets/reviews/arculus", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

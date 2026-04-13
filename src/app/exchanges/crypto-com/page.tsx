@@ -167,6 +167,7 @@ Unlike pure exchanges like Binance, Crypto.com positions itself as an all-in-one
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto.com Review 2026: Debit Card, Fees, Features & More", "description": "Complete Crypto.com review covering Visa debit card rewards, trading platform, staking, and all-in-one crypto features. Updated March 2026.", "url": "https://degen0x.com/exchanges/crypto-com", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

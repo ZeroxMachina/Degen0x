@@ -102,6 +102,7 @@ export default function BlueWalletReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lightning Network Support", "description": "BlueWallet review covering Lightning Network support, Bitcoin features, multi-wallet management, and user experience on iOS and Android.", "url": "https://degen0x.com/wallets/reviews/blue-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

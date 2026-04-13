@@ -6,8 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: NextMetadata = {
   title: "Robinhood Crypto Review 2026: Zero Fees, Beginner-Friendly",
-  description:
-    "Complete Robinhood Crypto review covering zero commission crypto trading, user-friendly interface, limited features, and security. Updated March 2026.",
+  description: "Complete Robinhood Crypto review covering zero commission crypto trading, user-friendly interface, limited features, and security. Updated March 2026.",
+  alternates: { canonical: "/exchanges/robinhood-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};
 
@@ -169,7 +169,7 @@ export default function RobinhoodCryptoReview() {
           </section>
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Robinhood Crypto Review 2026: Zero Fees, Beginner-Friendly", "description": "Complete Robinhood Crypto review covering zero commission crypto trading, user-friendly interface, limited features, and security. Updated March 2026.", "url": "https://degen0x.com/exchanges/robinhood-crypto"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Robinhood Crypto Review 2026: Zero Fees, Beginner-Friendly", "description": "Complete Robinhood Crypto review covering zero commission crypto trading, user-friendly interface, limited features, and security. Updated March 2026.", "url": "https://degen0x.com/exchanges/robinhood-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

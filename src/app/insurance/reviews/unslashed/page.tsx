@@ -63,6 +63,7 @@ export default function UnslashedReviewPage() {
       relatedGuides={[{ title: "Complete Crypto Insurance Guide", href: "/insurance/learn/crypto-insurance-guide" }, { title: "Insurance Protocols Compared", href: "/insurance/learn/insurance-protocols-compared" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coverage Types", "description": "Unslashed Finance is a decentralized insurance protocol offering coverage for DeFi exploits, exchange hacks, stablecoin depegging, and validator slashing with", "url": "https://degen0x.com/insurance/reviews/unslashed", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

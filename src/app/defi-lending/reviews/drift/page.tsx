@@ -134,6 +134,7 @@ export default function DriftReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Perpetual Futures Trading", "description": "Complete Drift Protocol review covering perpetual futures, spot lending, insurance fund, and how this Solana trading platform compares to competitors.", "url": "https://degen0x.com/defi-lending/reviews/drift", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -212,6 +212,7 @@ export default function LongTermPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto IRA Providers", "description": "Master long-term crypto investing. Crypto IRAs, HODL strategies, passive income, retirement planning, estate planning, and FIRE with cryptocurrency. Expert", "url": "https://degen0x.com/long-term", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -86,4 +86,11 @@ export default function KelpGuidePage(){return(<main style={{backgroundColor:S.b
 </section>
 
 </article>
-</main>);}
+
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/renzo" style={{ color: "#fb923c", marginRight: "1rem" }}>Renzo</a>
+        
+          <a href="/insurance/best/smart-contract" style={{ color: "#fb923c", marginRight: "1rem" }}>Smart Contract</a>
+        </nav>
+    </main>);}

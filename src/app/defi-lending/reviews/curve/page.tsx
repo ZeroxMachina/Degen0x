@@ -51,6 +51,7 @@ export default function CurveReview() {
       relatedGuides={[{ title: "Liquidity Pools Explained", href: "/defi-lending/learn/liquidity-pools-explained" }, { title: "Impermanent Loss", href: "/defi-lending/learn/impermanent-loss" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Curve Finance Review 2026: LP Yields, CRV Rewards & Analysis", "description": "In-depth Curve Finance review covering stablecoin pools, CRV tokenomics, LP yields, security, and whether Curve is right for your DeFi strategy. Updated March", "url": "https://degen0x.com/defi-lending/reviews/curve", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

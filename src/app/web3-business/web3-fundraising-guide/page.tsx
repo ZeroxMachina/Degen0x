@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Raise capital from VCs, conduct IDOs, design tokenomics. Complete playbook.",
     image: "https://degen0x.com/og-web3-business.svg",
   },
-  alternates: { canonical: "https://degen0x.com/web3-business/web3-fundraising-guide" },
+  alternates: { canonical: "/web3-business/web3-fundraising-guide" },
 };
 
 const structuredData = {

@@ -134,6 +134,7 @@ Lolli has distributed millions of dollars in Bitcoin rewards since its launch an
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Browser Extension Experience", "description": "Complete Lolli review covering Bitcoin cashback rewards, supported retailers, browser extension, mobile app, and how to earn free Bitcoin while shopping online.", "url": "https://degen0x.com/spending/reviews/lolli", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -59,6 +59,7 @@ export default function LiquityReview() {
       relatedGuides={[{ title: "Overcollateralization Explained", href: "/crypto-loans/learn/overcollateralization-explained" }, { title: "Liquidation Risk", href: "/crypto-loans/learn/liquidation-risk" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "0% Interest Borrowing", "description": "Liquity offers 0% interest ETH-backed loans with its LUSD stablecoin through an immutable, governance-free protocol.", "url": "https://degen0x.com/crypto-loans/reviews/liquity", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

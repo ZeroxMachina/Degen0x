@@ -471,6 +471,7 @@ export default function LaunchCryptoProject() {
           </Link>
         </div>
       </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Launch a Crypto Project: Complete 2026 Guide", "description": "Step-by-step guide to launching a crypto project. Cover tokenomics, legal structure, team building, and mainnet launch strategy.", "url": "https://degen0x.com/web3-business/how-to-launch-a-crypto-project", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
 
   );

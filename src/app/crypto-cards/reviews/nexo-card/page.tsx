@@ -51,6 +51,7 @@ export default function NexoCardReviewPage() {
       relatedGuides={[{ title: "Crypto Card Security Tips", href: "/crypto-cards/learn/crypto-card-security" }, { title: "Crypto Card Tax Implications", href: "/crypto-cards/learn/crypto-card-taxes" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Credit Line Model", "description": "In-depth Nexo Card review covering crypto-backed credit lines, cashback rewards, spending without selling, and whether it is right for long-term HODLers.", "url": "https://degen0x.com/crypto-cards/reviews/nexo-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

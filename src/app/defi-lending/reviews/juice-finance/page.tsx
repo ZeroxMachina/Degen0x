@@ -79,6 +79,7 @@ export default function JuiceFinanceReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blast Native Yield Integration", "description": "Complete Juice Finance review covering lending on Blast L2, points farming, leveraged strategies, yield opportunities, and risk analysis.", "url": "https://degen0x.com/defi-lending/reviews/juice-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

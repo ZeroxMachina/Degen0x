@@ -149,6 +149,7 @@ The card is available in select markets across Europe and Southeast Asia but is 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bybit Card Review 2026: Exchange-Linked Spending, Cashback", "description": "Our in-depth Bybit Card review covers exchange-linked spending, cashback tier system, supported cryptocurrencies, convert-and-spend functionality, and regional", "url": "https://degen0x.com/crypto-cards/reviews/bybit-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -763,7 +763,9 @@ export default function CryptoCommunityBuildingGuide() {
   <a href="/web3-business/web3-fundraising-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Web3 Fundraising Guide</a>
   <a href="/web3-business/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
   <a href="/web3-business/best/payment-processing" style={{ color: "#fb923c", marginRight: "1rem" }}>Payment Processing</a>
-</nav>
+
+          <a href="/web3-business/tokenization-business-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenization Business Guide</a>
+        </nav>
     </article>
   );
 }

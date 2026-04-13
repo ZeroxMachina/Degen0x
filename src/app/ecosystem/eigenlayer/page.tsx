@@ -61,6 +61,7 @@ export default function EigenLayerPage() {
     <>
       <EigenLayerClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "EigenLayer: Restaking & AVS Guide 2026 — $15B ETH Restaked", "description": "Complete guide to EigenLayer — the Ethereum restaking protocol with $15B+ ETH restaked, 30+ Active Validated Services (AVS), and 500+ operators. How restaking", "url": "https://degen0x.com/ecosystem/eigenlayer", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

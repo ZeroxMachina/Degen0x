@@ -68,6 +68,7 @@ Element Market has found particular traction in the Asian NFT market, where mult
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Marketplace Aggregation", "description": "Complete Element Market review covering multi-chain NFT aggregation, supported networks, fees, trading features, and how it compares to other NFT marketplaces.", "url": "https://degen0x.com/nfts/reviews/element-market", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

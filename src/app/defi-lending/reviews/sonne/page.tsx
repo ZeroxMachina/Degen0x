@@ -47,6 +47,7 @@ export default function SonneReview() {
       relatedGuides={[{ title: "DeFi on Optimism", href: "/defi-lending/learn/defi-on-optimism" }, { title: "Real Yield vs Emissions", href: "/defi-lending/learn/real-yield-vs-emissions" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending & Borrowing", "description": "Complete Sonne Finance review covering Compound-style lending on Optimism and Base, yield rates, SONNE token incentives, and protocol risk analysis.", "url": "https://degen0x.com/defi-lending/reviews/sonne", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -129,6 +129,7 @@ Lido's stETH uses a rebasing mechanism, meaning your stETH balance increases aut
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lido Review 2026: Fees, Yields, Pros & Cons", "description": "Our in-depth Lido review covers staking yields, fees, stETH mechanics, DeFi integrations, and whether it's the right liquid staking protocol for you. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/lido", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -320,6 +320,7 @@ export default function StakingHubPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Staking Platforms", "description": "Cryptocurrency staking guide: Earn rewards on Bitcoin, Ethereum, Solana, and 100+ coins. Compare staking options, APY, risks, and strategies.", "url": "https://degen0x.com/investing/staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

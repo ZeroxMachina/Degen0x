@@ -669,6 +669,11 @@ await particle.sendTransaction(callData, txOptions);`}</div>
           to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/drift-protocol-285m-hack-analysis-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Drift Protocol 285M Hack Analysis 2026</a>
+        </nav>
     </main>
   );
 }

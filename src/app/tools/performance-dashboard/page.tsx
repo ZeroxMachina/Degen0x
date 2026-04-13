@@ -410,7 +410,16 @@ export default function PerformanceDashboard() {
             </p>
           </div>
         </div>
-      </main>
+      
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/tools/retirement-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Retirement Calculator</a>
+        
+          <a href="/tools/research-assistant" style={{ color: "#fb923c", marginRight: "1rem" }}>Research Assistant</a>
+        
+          <a href="/tools/salary-in-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Salary In Crypto</a>
+        </nav>
+    </main>
     
         <script
           type="application/ld+json"

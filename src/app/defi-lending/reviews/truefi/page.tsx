@@ -58,6 +58,7 @@ export default function TrueFiReview() {
       relatedGuides={[{ title: "DeFi Credit Scoring", href: "/defi-lending/learn/defi-credit-scoring" }, { title: "Undercollateralized Lending", href: "/defi-lending/learn/undercollateralized-lending" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-Chain Credit Scoring", "description": "In-depth TrueFi review covering uncollateralized institutional lending, TRU token staking, on-chain credit scoring, and managed portfolio products.", "url": "https://degen0x.com/defi-lending/reviews/truefi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -409,7 +409,8 @@ export default function BestCryptoPresales2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Presales 2026 | Guide", "description": "Crypto presales guide: how they work, top launchpads (Binance, DAO Maker, Seedify), due diligence framework, and risk management for early investments.", "url": "https://degen0x.com/investing/best-new-crypto-presales-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </div>
     </article>
   );
 }

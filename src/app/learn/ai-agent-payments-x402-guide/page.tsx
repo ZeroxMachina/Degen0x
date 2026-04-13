@@ -427,7 +427,9 @@ export default function AIAgentPaymentsGuide() {
   <a href="/learn/linea-zkevm-consensys-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Linea Zkevm Consensys Layer 2 Guide 2026</a>
   <a href="/learn/what-is-a-blockchain-oracle" style={{ color: "#fb923c", marginRight: "1rem" }}>What Is A Blockchain Oracle</a>
   <a href="/learn/crypto-debit-cards-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Debit Cards Guide 2026</a>
-</nav>
+
+          <a href="/learn/what-is-restaking-eigenlayer" style={{ color: "#fb923c", marginRight: "1rem" }}>What Is Restaking Eigenlayer</a>
+        </nav>
       </article>
     
         <script

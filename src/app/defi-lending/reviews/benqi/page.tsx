@@ -63,6 +63,7 @@ export default function BenqiReview() {
       relatedGuides={[{ title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }, { title: "Impermanent Loss Guide", href: "/defi-lending/learn/impermanent-loss" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending & Borrowing Markets", "description": "BENQI is the leading lending and liquid staking protocol on Avalanche, offering competitive rates for lending and borrowing plus sAVAX liquid staking for", "url": "https://degen0x.com/defi-lending/reviews/benqi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

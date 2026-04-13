@@ -217,7 +217,89 @@ export default function BestMultiChainWallet() {
   <a href="/wallets/learn/wallet-backup-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Wallet Backup Guide</a>
   <a href="/wallets/learn/custodial-vs-non-custodial" style={{ color: "#fb923c", marginRight: "1rem" }}>Custodial Vs Non Custodial</a>
   <a href="/wallets/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
-</nav>
+
+          <a href="/wallets/best/canada" style={{ color: "#fb923c", marginRight: "1rem" }}>Canada</a>
+        
+          <a href="/wallets/best/browser-extension" style={{ color: "#fb923c", marginRight: "1rem" }}>Browser Extension</a>
+        
+          <a href="/wallets/best/staking" style={{ color: "#fb923c", marginRight: "1rem" }}>Staking</a>
+        
+          <a href="/wallets/best/uk" style={{ color: "#fb923c", marginRight: "1rem" }}>Uk</a>
+        
+          <a href="/wallets/best/multi-chain" style={{ color: "#fb923c", marginRight: "1rem" }}>Multi Chain</a>
+        
+          <a href="/wallets/best/europe" style={{ color: "#fb923c", marginRight: "1rem" }}>Europe</a>
+        
+          <a href="/wallets/best/institutional" style={{ color: "#fb923c", marginRight: "1rem" }}>Institutional</a>
+        
+          <a href="/wallets/reviews/bitbox" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitbox</a>
+        
+          <a href="/wallets/reviews/tangem" style={{ color: "#fb923c", marginRight: "1rem" }}>Tangem</a>
+        
+          <a href="/wallets/reviews/ellipal" style={{ color: "#fb923c", marginRight: "1rem" }}>Ellipal</a>
+        
+          <a href="/wallets/reviews/bitget-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitget Wallet</a>
+        
+          <a href="/wallets/reviews/keplr" style={{ color: "#fb923c", marginRight: "1rem" }}>Keplr</a>
+        
+          <a href="/wallets/reviews/gridplus" style={{ color: "#fb923c", marginRight: "1rem" }}>Gridplus</a>
+        
+          <a href="/wallets/reviews/electrum" style={{ color: "#fb923c", marginRight: "1rem" }}>Electrum</a>
+        
+          <a href="/wallets/reviews/okx-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Okx Wallet</a>
+        
+          <a href="/wallets/reviews/xdefi" style={{ color: "#fb923c", marginRight: "1rem" }}>Xdefi</a>
+        
+          <a href="/wallets/reviews/rainbow" style={{ color: "#fb923c", marginRight: "1rem" }}>Rainbow</a>
+        
+          <a href="/wallets/reviews/binance-web3-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Binance Web3 Wallet</a>
+        
+          <a href="/wallets/reviews/jade" style={{ color: "#fb923c", marginRight: "1rem" }}>Jade</a>
+        
+          <a href="/wallets/reviews/coldcard" style={{ color: "#fb923c", marginRight: "1rem" }}>Coldcard</a>
+        
+          <a href="/wallets/reviews/jade-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Jade Wallet</a>
+        
+          <a href="/wallets/reviews/zerion" style={{ color: "#fb923c", marginRight: "1rem" }}>Zerion</a>
+        
+          <a href="/wallets/reviews/arculus" style={{ color: "#fb923c", marginRight: "1rem" }}>Arculus</a>
+        
+          <a href="/wallets/reviews/keepkey" style={{ color: "#fb923c", marginRight: "1rem" }}>Keepkey</a>
+        
+          <a href="/wallets/reviews/atomic" style={{ color: "#fb923c", marginRight: "1rem" }}>Atomic</a>
+        
+          <a href="/wallets/reviews/argent" style={{ color: "#fb923c", marginRight: "1rem" }}>Argent</a>
+        
+          <a href="/wallets/reviews/rabby" style={{ color: "#fb923c", marginRight: "1rem" }}>Rabby</a>
+        
+          <a href="/wallets/reviews/zengo" style={{ color: "#fb923c", marginRight: "1rem" }}>Zengo</a>
+        
+          <a href="/wallets/compare/phantom-vs-backpack" style={{ color: "#fb923c", marginRight: "1rem" }}>Phantom Vs Backpack</a>
+        
+          <a href="/wallets/compare/ledger-vs-keystone" style={{ color: "#fb923c", marginRight: "1rem" }}>Ledger Vs Keystone</a>
+        
+          <a href="/wallets/compare/tangem-vs-ledger" style={{ color: "#fb923c", marginRight: "1rem" }}>Tangem Vs Ledger</a>
+        
+          <a href="/wallets/compare/trezor-vs-coldcard" style={{ color: "#fb923c", marginRight: "1rem" }}>Trezor Vs Coldcard</a>
+        
+          <a href="/wallets/compare/mobile-vs-desktop" style={{ color: "#fb923c", marginRight: "1rem" }}>Mobile Vs Desktop</a>
+        
+          <a href="/wallets/compare/exodus-vs-coinbase-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Exodus Vs Coinbase Wallet</a>
+        
+          <a href="/wallets/compare/metamask-vs-rabby" style={{ color: "#fb923c", marginRight: "1rem" }}>Metamask Vs Rabby</a>
+        
+          <a href="/wallets/compare/trust-wallet-vs-metamask" style={{ color: "#fb923c", marginRight: "1rem" }}>Trust Wallet Vs Metamask</a>
+        
+          <a href="/wallets/compare/multisig-vs-single-key" style={{ color: "#fb923c", marginRight: "1rem" }}>Multisig Vs Single Key</a>
+        
+          <a href="/wallets/compare/evm-vs-solana-wallets" style={{ color: "#fb923c", marginRight: "1rem" }}>Evm Vs Solana Wallets</a>
+        
+          <a href="/wallets/compare/phantom-vs-solflare" style={{ color: "#fb923c", marginRight: "1rem" }}>Phantom Vs Solflare</a>
+        
+          <a href="/wallets/compare/metamask-vs-coinbase-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Metamask Vs Coinbase Wallet</a>
+        
+          <a href="/wallets/ledger-vs-trezor-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ledger Vs Trezor Comparison 2026</a>
+        </nav>
       </article>
   );
 }

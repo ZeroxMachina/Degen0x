@@ -91,6 +91,7 @@ export default function CryptoGlossaryPage() {
         }}
       />
       <CryptoGlossaryClient />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Glossary - degen0x", "description": "Complete glossary of 200+ cryptocurrency and blockchain terms with detailed definitions and examples.", "url": "https://degen0x.com/learn/crypto-glossary", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

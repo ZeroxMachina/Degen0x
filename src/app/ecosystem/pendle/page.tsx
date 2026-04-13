@@ -85,4 +85,11 @@ export default function PendleGuidePage(){return(<main style={{backgroundColor:S
         </section>
 
       </article>
-</main>);}
+
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/ton-blockchain-ecosystem-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Ton Blockchain Ecosystem Guide</a>
+        
+          <a href="/insurance/reviews/risk-harbor" style={{ color: "#fb923c", marginRight: "1rem" }}>Risk Harbor</a>
+        </nav>
+    </main>);}

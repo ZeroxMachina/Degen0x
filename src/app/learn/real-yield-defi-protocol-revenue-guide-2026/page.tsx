@@ -812,6 +812,11 @@ export default function RealYieldDeFiGuidePage() {
         />
 
           <BackToTop />
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/parallel-evm-explained-monad-sei" style={{ color: "#fb923c", marginRight: "1rem" }}>Parallel Evm Explained Monad Sei</a>
+        </nav>
     </main>
   );
 }

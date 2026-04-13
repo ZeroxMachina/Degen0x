@@ -129,7 +129,9 @@ export default function Layer2CryptoExplained() {
   <a href="/learn/pump-fun-memecoins" style={{ color: "#fb923c", marginRight: "1rem" }}>Pump Fun Memecoins</a>
   <a href="/learn/raas-rollup-as-a-service-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Raas Rollup As A Service Guide 2026</a>
   <a href="/learn/story-protocol-ip-tokenization-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Story Protocol Ip Tokenization Guide</a>
-</nav>
+
+          <a href="/learn/aster-chain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Aster Chain Guide</a>
+        </nav>
       </article>
   );
 }

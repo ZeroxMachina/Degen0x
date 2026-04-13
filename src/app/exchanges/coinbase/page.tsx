@@ -161,6 +161,7 @@ The Coinbase ecosystem extends beyond just the core exchange. Coinbase offers a 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Review 2026: Fees, Security, Pros & Cons", "description": "Comprehensive Coinbase review covering its beginner-friendly interface, regulatory compliance, insurance coverage, fees, and security. Is Coinbase right for", "url": "https://degen0x.com/exchanges/coinbase", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -51,6 +51,7 @@ export default function LidoReview() {
       relatedGuides={[{ title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }, { title: "TVL Explained", href: "/defi-lending/learn/tvl-explained" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lido Review 2026: Liquid Staking, stETH Yield & Analysis", "description": "In-depth Lido review covering liquid staking, stETH mechanics, yields, decentralization, and whether Lido is right for your ETH staking needs. Updated March", "url": "https://degen0x.com/defi-lending/reviews/lido", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

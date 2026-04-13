@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Kim Exchange, Ionic Protocol, SupSwap on Mode Network. OP Stack + sequencer fee sharing.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-  alternates: { canonical: "https://degen0x.com/ecosystem/best-projects-on-mode-network" },
+  alternates: { canonical: "/ecosystem/best-projects-on-mode-network" },
 };
 
 const structuredData = {

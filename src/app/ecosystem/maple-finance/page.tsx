@@ -36,6 +36,7 @@ export default function MapleFinancePage() {
     <>
       <MapleFinanceClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Maple Finance: Institutional On-Chain Credit", "description": "Maple Finance: Institutional on-chain credit on Ethereum and Arbitrum. Decentralized lending with $3.2B TVL, 4.7% USDC yield, and institutional borrowing.", "url": "https://degen0x.com/ecosystem/maple-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -47,6 +47,7 @@ export default function YeiFinanceReview() {
       relatedGuides={[{ title: "DeFi on Sei", href: "/defi-lending/learn/defi-on-sei" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending on Sei Network", "description": "In-depth Yei Finance review covering lending and borrowing on Sei network, yield rates, protocol features, and the emerging Sei DeFi ecosystem.", "url": "https://degen0x.com/defi-lending/reviews/yei-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

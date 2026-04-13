@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Astroport, DragonSwap, Silo, Yei Finance on Sei V2 with 600K TPS.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-  alternates: { canonical: "https://degen0x.com/ecosystem/best-projects-on-sei" },
+  alternates: { canonical: "/ecosystem/best-projects-on-sei" },
 };
 
 const structuredData = {

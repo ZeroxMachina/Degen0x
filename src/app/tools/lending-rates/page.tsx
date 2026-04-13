@@ -601,6 +601,7 @@ export default function LendingRatesPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Risk Management", "description": "Interactive tool to compare crypto lending rates across 20+ DeFi and CeFi platforms with real-time APY, TVL, and risk metrics", "url": "https://degen0x.com/tools/lending-rates", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

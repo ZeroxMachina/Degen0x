@@ -61,6 +61,7 @@ export default function AavePage() {
     <>
       <AaveClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave: DeFi Lending & Borrowing Guide 2026 | degen0x", "description": "Complete guide to Aave — the largest DeFi lending protocol. Multi-chain lending, flash loans, GHO stablecoin, safety module staking, and how to earn yield on", "url": "https://degen0x.com/ecosystem/aave", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

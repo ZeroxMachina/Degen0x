@@ -102,6 +102,7 @@ export default function NgraveReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security Certification", "description": "NGRAVE ZERO hardware wallet review covering EAL7 security certification, air-gapped QR signing, biometric authentication, and premium build quality.", "url": "https://degen0x.com/wallets/reviews/ngrave", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

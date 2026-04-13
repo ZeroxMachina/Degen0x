@@ -79,6 +79,7 @@ export default function GridPlusReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SafeCard System", "description": "GridPlus Lattice1 hardware wallet review covering SafeCards, large touchscreen, MetaMask integration, and enterprise-grade security.", "url": "https://degen0x.com/wallets/reviews/gridplus", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

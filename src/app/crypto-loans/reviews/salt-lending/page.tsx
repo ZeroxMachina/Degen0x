@@ -89,6 +89,7 @@ export default function SaltLendingReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Loan Terms", "description": "In-depth SALT Lending review covering loan terms, supported collateral, rates, security, and whether SALT is right for your crypto borrowing needs.", "url": "https://degen0x.com/crypto-loans/reviews/salt-lending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

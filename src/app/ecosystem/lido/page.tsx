@@ -89,4 +89,11 @@ export default function LidoGuidePage(){return(<main style={{backgroundColor:S.b
           </ul>
         </nav>
       </article>
-</main>);}
+
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/gearbox" style={{ color: "#fb923c", marginRight: "1rem" }}>Gearbox</a>
+        
+          <a href="/insurance/reviews/bridge-mutual" style={{ color: "#fb923c", marginRight: "1rem" }}>Bridge Mutual</a>
+        </nav>
+    </main>);}

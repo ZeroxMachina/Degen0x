@@ -1443,7 +1443,9 @@ export default function BasedRollupsGuide() {
   <a href="/learn/data-availability-celestia-eigenda-avail-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Data Availability Celestia Eigenda Avail Comparison 2026</a>
   <a href="/learn/virtuals-protocol-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Virtuals Protocol Guide</a>
   <a href="/learn/bitcoin-supply-shock-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Supply Shock Guide 2026</a>
-</nav>
+
+          <a href="/learn/mpc-wallets-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Mpc Wallets Guide 2026</a>
+        </nav>
       </article>
   );
 }

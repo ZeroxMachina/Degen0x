@@ -62,6 +62,7 @@ export default function JitoPage() {
     <>
       <JitoClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Jito: Solana Liquid Staking & MEV Guide 2026 | degen0x", "description": "Complete guide to Jito — Solana's leading liquid staking protocol with MEV-powered yields. JitoSOL, MEV tips, validator staking, JTO governance, and how to earn enhanced staking rewards.", "url": "https://degen0x.com/ecosystem/jito", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

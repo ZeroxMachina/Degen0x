@@ -443,7 +443,13 @@ export default function StablecoinYieldComparison() {
   <a href="/tools/market-dominance" style={{ color: "#fb923c", marginRight: "1rem" }}>Market Dominance</a>
   <a href="/tools/portfolio-simulator" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Simulator</a>
   <a href="/tools/vc-funding-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Vc Funding Tracker</a>
-</nav>
+
+          <a href="/tools/nft-portfolio" style={{ color: "#fb923c", marginRight: "1rem" }}>Nft Portfolio</a>
+        
+          <a href="/tools/risk-score" style={{ color: "#fb923c", marginRight: "1rem" }}>Risk Score</a>
+        
+          <a href="/tools/wallet-profiler" style={{ color: "#fb923c", marginRight: "1rem" }}>Wallet Profiler</a>
+        </nav>
       </article>
   );
 }

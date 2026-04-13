@@ -155,6 +155,7 @@ Beyond trading, Coinbase has expanded into a comprehensive crypto ecosystem. The
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Review 2026: Fees, Features, Pros & Cons", "description": "Our in-depth Coinbase review covers fees, security, supported coins, pros and cons, and whether it's the right exchange for you. Updated March 2026.", "url": "https://degen0x.com/exchanges/reviews/coinbase", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

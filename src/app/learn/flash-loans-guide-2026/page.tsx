@@ -1000,7 +1000,9 @@ export default function FlashLoansGuidePage() {
   <a href="/learn/perp-dex-wars-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Perp Dex Wars Comparison 2026</a>
   <a href="/learn/ethereum-gas-fees-optimization-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Gas Fees Optimization Guide 2026</a>
   <a href="/learn/defi-insurance-how-it-works" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Insurance How It Works</a>
-</nav>
+
+          <a href="/learn/crypto-arbitrage-strategies-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Arbitrage Strategies Guide 2026</a>
+        </nav>
       </article>
 
       <BackToTop />

@@ -899,7 +899,9 @@ export default function LiquidRestakingTokensPage() {
   <a href="/learn/onchain-forex-stablecoin-diversity-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Forex Stablecoin Diversity Guide 2026</a>
   <a href="/learn/starknet-stark-validity-rollups-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Starknet Stark Validity Rollups Guide 2026</a>
   <a href="/learn/dao-governance-voting-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Dao Governance Voting Guide 2026</a>
-</nav>
+
+          <a href="/learn/defi-points-airdrop-farming-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Points Airdrop Farming Guide 2026</a>
+        </nav>
       </article>
 
       <BackToTop />

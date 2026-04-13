@@ -167,6 +167,7 @@ export default function CryptoLoansPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Loan Platforms", "description": "Compare the best crypto loan platforms. Borrow against your Bitcoin and crypto without selling. CeFi and DeFi options with expert reviews and guides.", "url": "https://degen0x.com/crypto-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

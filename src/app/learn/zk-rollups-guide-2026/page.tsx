@@ -697,7 +697,9 @@ export default function ZKRollupsGuide() {
   <a href="/learn/web3-gaming-gamefi-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Web3 Gaming Gamefi Guide 2026</a>
   <a href="/learn/know-your-agent-kya-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Know Your Agent Kya Guide 2026</a>
   <a href="/learn/modular-vs-monolithic-blockchains" style={{ color: "#fb923c", marginRight: "1rem" }}>Modular Vs Monolithic Blockchains</a>
-</nav>
+
+          <a href="/learn/omnichain-defi-unified-liquidity-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Omnichain Defi Unified Liquidity Guide 2026</a>
+        </nav>
       </article>
   );
 }

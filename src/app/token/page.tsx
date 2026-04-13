@@ -365,6 +365,7 @@ export default function TokenPage() {
           </p>
         </div>
       </section>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Degen Mode", "description": "Unlock premium features across the entire site. Advanced analytics, real-time yield comparisons, portfolio tracking tools, and exclusive content.", "url": "https://degen0x.com/token", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

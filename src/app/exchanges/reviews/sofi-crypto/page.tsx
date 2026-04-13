@@ -82,6 +82,7 @@ As a national bank holding company, SoFi operates under significant regulatory o
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth SoFi Crypto review covering trading fees, supported coins, banking integration, and whether this all-in-one finance app suits your crypto needs.", "url": "https://degen0x.com/exchanges/reviews/sofi-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

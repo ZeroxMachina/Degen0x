@@ -163,6 +163,7 @@ The native PHEMEX token provides additional fee discounts and staking rewards. P
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Phemex Review 2026: Derivatives Trading, Zero Fees, Pros &", "description": "Complete Phemex review covering zero-fee trading, derivatives platform, fast execution, and security. Is Phemex right for you? Updated March 2026.", "url": "https://degen0x.com/exchanges/phemex", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

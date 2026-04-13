@@ -47,6 +47,7 @@ export default function AureliusReview() {
       relatedGuides={[{ title: "DeFi on Mantle", href: "/defi-lending/learn/defi-on-mantle" }, { title: "Fixed vs Variable Lending", href: "/defi-lending/compare/fixed-vs-variable-lending" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "CDP Borrowing Mechanism", "description": "Complete Aurelius Finance review covering lending on Mantle network, CDP mechanics, yield strategies, and how this protocol serves the Mantle DeFi ecosystem.", "url": "https://degen0x.com/defi-lending/reviews/aurelius", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

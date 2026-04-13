@@ -460,7 +460,9 @@ export default function WhatIsTokenBurning() {
   <a href="/learn/tokenized-treasury-bills-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Treasury Bills Guide 2026</a>
   <a href="/learn/crypto-liquidations-defi-leverage-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Liquidations Defi Leverage Guide 2026</a>
   <a href="/learn/crypto-copy-trading-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Copy Trading Guide</a>
-</nav>
+
+          <a href="/learn/farcaster-socialfi-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Farcaster Socialfi Guide 2026</a>
+        </nav>
       </article>
   );
 }

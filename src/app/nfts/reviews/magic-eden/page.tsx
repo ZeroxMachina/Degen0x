@@ -158,6 +158,7 @@ Backed by over $130 million in funding from investors including Paradigm and Ele
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience and Interface", "description": "Magic Eden is the dominant multi-chain NFT marketplace, originally built on Solana and now supporting Ethereum, Bitcoin Ordinals, Polygon, and Base. It is the", "url": "https://degen0x.com/nfts/reviews/magic-eden", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

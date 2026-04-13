@@ -156,6 +156,7 @@ It is important to understand that Crypto.com operates two separate products for
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto.com Review 2026: Fees, Features, Pros & Cons", "description": "Our detailed Crypto.com review covers the Visa card, exchange fees, CRO staking tiers, DeFi wallet, and more. See if Crypto.com fits your needs. Updated March", "url": "https://degen0x.com/exchanges/reviews/crypto-com", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

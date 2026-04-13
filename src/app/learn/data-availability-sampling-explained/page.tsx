@@ -442,7 +442,9 @@ export default function DataAvailabilitySamplingExplained() {
   <a href="/learn/eip-4844-proto-danksharding-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Eip 4844 Proto Danksharding Explained</a>
   <a href="/learn/distributed-validator-technology-dvt-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Distributed Validator Technology Dvt Guide</a>
   <a href="/learn/leveraged-tokens-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Leveraged Tokens Guide 2026</a>
-</nav>
+
+          <a href="/learn/fair-token-launches-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Fair Token Launches Guide 2026</a>
+        </nav>
       </article>
   );
 }

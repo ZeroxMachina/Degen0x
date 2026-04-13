@@ -94,6 +94,7 @@ The simplicity of integration makes it accessible to businesses of all sizes. Pa
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Coinbase Commerce review: Accept crypto payments for your business. Compare fees, features, settlement times, and alternative payment processors.", "url": "https://degen0x.com/web3-business/reviews/coinbase-commerce", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

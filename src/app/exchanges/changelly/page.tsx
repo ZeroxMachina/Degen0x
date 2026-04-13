@@ -177,7 +177,7 @@ export default function ChangellyReview() {
           </section>
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Changelly Review 2026: Instant Crypto Swaps, No Account", "description": "Complete Changelly review covering instant cryptocurrency swaps, no-account trading, competitive rates, and security. Updated March 2026.", "url": "https://degen0x.com/exchanges/changelly"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Changelly Review 2026: Instant Crypto Swaps, No Account", "description": "Complete Changelly review covering instant cryptocurrency swaps, no-account trading, competitive rates, and security. Updated March 2026.", "url": "https://degen0x.com/exchanges/changelly", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

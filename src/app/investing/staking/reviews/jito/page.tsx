@@ -129,6 +129,7 @@ Jito's approach to MEV has been both praised for improving staker returns and de
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Jito Review 2026: SOL Staking, MEV Yields, Pros & Cons", "description": "Our in-depth Jito review covers JitoSOL, MEV reward sharing, staking yields, and whether it's the best Solana staking protocol. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/jito", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

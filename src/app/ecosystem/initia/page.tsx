@@ -36,6 +36,7 @@ export default function InitiaPage() {
     <>
       <InitiaClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Initia: Cosmos-based L1 for Modular Rollups", "description": "Initia is a Cosmos-based L1 orchestrating modular rollups (Minitias) with $300M+ TVL and multi-VM support (MoveVM, EVM, WasmVM).", "url": "https://degen0x.com/ecosystem/initia", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

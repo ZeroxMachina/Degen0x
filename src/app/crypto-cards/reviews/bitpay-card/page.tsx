@@ -51,6 +51,7 @@ export default function BitPayCardReviewPage() {
       relatedGuides={[{ title: "Prepaid vs Debit Crypto Cards", href: "/crypto-cards/learn/prepaid-vs-debit-crypto" }, { title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Loading and Spending", "description": "In-depth BitPay Card review covering crypto-to-fiat conversion, supported cryptocurrencies, fees, and whether this prepaid Mastercard is right for you.", "url": "https://degen0x.com/crypto-cards/reviews/bitpay-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

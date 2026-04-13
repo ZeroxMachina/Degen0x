@@ -88,6 +88,15 @@ export default function QuizPage() {
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/achievements" style={{ color: "#fb923c", marginRight: "1rem" }}>Achievements</a>
+        
+          <a href="/notifications" style={{ color: "#fb923c", marginRight: "1rem" }}>Notifications</a>
+        
+          <a href="/signals" style={{ color: "#fb923c", marginRight: "1rem" }}>Signals</a>
+        </nav>
     </main>
   );
 }

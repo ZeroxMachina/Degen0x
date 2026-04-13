@@ -82,6 +82,7 @@ Block Inc. is a publicly traded company on the NYSE, and Cash App operates as a 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Cash App Bitcoin review covering fees, Lightning Network support, security, and whether Cash App is the right way to buy Bitcoin.", "url": "https://degen0x.com/exchanges/reviews/cash-app", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

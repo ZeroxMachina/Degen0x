@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Helix DEX, Hydro Protocol, DojoSwap on Injective. Orderbook trading, institutional focus.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-  alternates: { canonical: "https://degen0x.com/ecosystem/best-projects-on-injective" },
+  alternates: { canonical: "/ecosystem/best-projects-on-injective" },
 };
 
 const structuredData = {
@@ -417,7 +417,9 @@ export default function BestInjectiveProjectsExpanded() {
   <a href="/ecosystem/best-projects-on-starknet" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Projects On Starknet</a>
   <a href="/ecosystem/zora" style={{ color: "#fb923c", marginRight: "1rem" }}>Zora</a>
   <a href="/ecosystem/across" style={{ color: "#fb923c", marginRight: "1rem" }}>Across</a>
-</nav>
+
+          <a href="/ecosystem/odos" style={{ color: "#fb923c", marginRight: "1rem" }}>Odos</a>
+        </nav>
 
 </article>
   );

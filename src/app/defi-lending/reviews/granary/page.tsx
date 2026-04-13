@@ -47,6 +47,7 @@ export default function GranaryReview() {
       relatedGuides={[{ title: "Real Yield vs Emissions", href: "/defi-lending/learn/real-yield-vs-emissions" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave V2 Architecture", "description": "Detailed Granary Finance review covering multi-chain lending, Aave V2 architecture, yield rates, and risk analysis across supported networks.", "url": "https://degen0x.com/defi-lending/reviews/granary", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

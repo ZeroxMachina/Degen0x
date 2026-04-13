@@ -352,6 +352,7 @@ export default function BestSpendingPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Debit Cards", "description": "The leading crypto debit card with up to 5% cashback in CRO, free Spotify and Netflix rebates on higher tiers, and no annual fee on the base card. Accepted", "url": "https://degen0x.com/spending/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

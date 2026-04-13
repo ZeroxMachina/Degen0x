@@ -164,6 +164,7 @@ export default function BingXReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Copy Trading Platform", "description": "BingX is a global crypto exchange specializing in copy trading and derivatives, serving over 10 million users with competitive fees and social trading features.", "url": "https://degen0x.com/exchanges/reviews/bingx", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

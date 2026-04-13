@@ -54,6 +54,7 @@ Rarible has also positioned itself as a marketplace infrastructure provider thro
       relatedGuides={[ { title: "Best for Creators", href: "/nfts/best/creators" }, { title: "How to Create NFTs", href: "/nfts/learn/how-to-create-nfts" } ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rarible Review 2026: Fees, Features, Pros & Cons", "description": "Our in-depth Rarible review covers multi-chain support, creator tools, RARI governance, and whether it's the right NFT marketplace for you. Updated March 2026.", "url": "https://degen0x.com/nfts/reviews/rarible", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

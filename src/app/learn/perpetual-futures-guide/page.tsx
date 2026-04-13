@@ -262,7 +262,9 @@ export default function PerpetualFuturesGuidePage() {
   <a href="/learn/layer-3-chains-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Layer 3 Chains Guide 2026</a>
   <a href="/learn/solana-blinks-actions-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Blinks Actions Guide 2026</a>
   <a href="/learn/tradfi-defi-convergence-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tradfi Defi Convergence Guide 2026</a>
-</nav>
+
+          <a href="/learn/what-is-a-dao-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>What Is A Dao Explained</a>
+        </nav>
       </article>
           <div style={{
         marginTop: "32px",

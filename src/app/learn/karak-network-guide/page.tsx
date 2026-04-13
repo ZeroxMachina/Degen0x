@@ -544,6 +544,11 @@ export default function KarakNetworkGuidePage() {
         />
       </article>
       <BackToTop />
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/verifiable-random-function-vrf" style={{ color: "#fb923c", marginRight: "1rem" }}>Verifiable Random Function Vrf</a>
+        </nav>
     </main>
   );
 }

@@ -270,7 +270,7 @@ export default function ComparePage() {
       </section>
 
       <Footer />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Exchange Comparison Tool | degen0x", "description": "Compare top cryptocurrency exchanges side-by-side. Analyze fees, security, features, and user experience. Find the best exchange for your trading needs.", "url": "https://degen0x.com/compare"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Exchange Comparison Tool | degen0x", "description": "Compare top cryptocurrency exchanges side-by-side. Analyze fees, security, features, and user experience. Find the best exchange for your trading needs.", "url": "https://degen0x.com/compare", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",
@@ -321,6 +321,15 @@ export default function ComparePage() {
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/staking" style={{ color: "#fb923c", marginRight: "1rem" }}>Staking</a>
+        
+          <a href="/token" style={{ color: "#fb923c", marginRight: "1rem" }}>Token</a>
+        
+          <a href="/defi-yields" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Yields</a>
+        </nav>
     </main>
   );
 }

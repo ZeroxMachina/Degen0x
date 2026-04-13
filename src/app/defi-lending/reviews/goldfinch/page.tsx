@@ -63,6 +63,7 @@ export default function GoldfinchReview() {
       relatedGuides={[{ title: "Real Yield Explained", href: "/defi-lending/learn/real-yield-explained" }, { title: "Lending Risks Guide", href: "/defi-lending/learn/lending-risks-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real-World Lending Model", "description": "Goldfinch is a decentralized credit protocol that provides crypto loans to real-world businesses in emerging markets, offering DeFi lenders exposure to", "url": "https://degen0x.com/defi-lending/reviews/goldfinch", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

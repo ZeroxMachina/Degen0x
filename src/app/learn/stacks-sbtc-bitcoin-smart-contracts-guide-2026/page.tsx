@@ -881,6 +881,11 @@ export default function StacksSBTCGuidePage() {
         />
       </article>
       <BackToTop />
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/social-recovery-wallet-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Social Recovery Wallet Explained</a>
+        </nav>
     </main>
   );
 }

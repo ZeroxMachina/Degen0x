@@ -516,7 +516,9 @@ export default function FundingRatesCryptoExplained() {
   <a href="/learn/onchain-identity-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Identity Guide</a>
   <a href="/learn/sec-cftc-mou-crypto-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Sec Cftc Mou Crypto Guide</a>
   <a href="/learn/solana-token-extensions-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Token Extensions Guide 2026</a>
-</nav>
+
+          <a href="/learn/plume-network-rwa-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Plume Network Rwa Layer 2 Guide 2026</a>
+        </nav>
       </article>
   );
 }

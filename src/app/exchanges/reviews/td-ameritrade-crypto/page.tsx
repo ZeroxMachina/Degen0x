@@ -82,6 +82,7 @@ As part of the Schwab family, TD Ameritrade accounts benefit from SIPC protectio
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth TD Ameritrade crypto review covering Bitcoin futures, thinkorswim platform, fees, and how the Schwab integration affects crypto trading.", "url": "https://degen0x.com/exchanges/reviews/td-ameritrade-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

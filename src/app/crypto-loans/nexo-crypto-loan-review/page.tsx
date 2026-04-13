@@ -521,7 +521,23 @@ export default function NexoReview() {
   <a href="/crypto-loans/celsius-alternative-lending-platforms" style={{ color: "#fb923c", marginRight: "1rem" }}>Celsius Alternative Lending Platforms</a>
   <a href="/crypto-loans/best/flash-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Flash Loans</a>
   <a href="/crypto-loans/best/margin-lending" style={{ color: "#fb923c", marginRight: "1rem" }}>Margin Lending</a>
-</nav>
+
+          <a href="/crypto-loans/reviews/celsius" style={{ color: "#fb923c", marginRight: "1rem" }}>Celsius</a>
+        
+          <a href="/crypto-loans/reviews/salt-lending" style={{ color: "#fb923c", marginRight: "1rem" }}>Salt Lending</a>
+        
+          <a href="/crypto-loans/reviews/nexo" style={{ color: "#fb923c", marginRight: "1rem" }}>Nexo</a>
+        
+          <a href="/crypto-loans/reviews/ledn" style={{ color: "#fb923c", marginRight: "1rem" }}>Ledn</a>
+        
+          <a href="/crypto-loans/reviews/makerdao" style={{ color: "#fb923c", marginRight: "1rem" }}>Makerdao</a>
+        
+          <a href="/crypto-loans/reviews/abracadabra" style={{ color: "#fb923c", marginRight: "1rem" }}>Abracadabra</a>
+        
+          <a href="/crypto-loans/reviews/youhodler" style={{ color: "#fb923c", marginRight: "1rem" }}>Youhodler</a>
+        
+          <a href="/crypto-loans/reviews/compound-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Compound Loans</a>
+        </nav>
     </article>
   );
 }

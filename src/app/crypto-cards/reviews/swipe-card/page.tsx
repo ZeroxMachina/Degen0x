@@ -149,6 +149,7 @@ For current SXP holders or users already within the Swipe ecosystem, the card st
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Swipe Card Review 2026: SXP Token Staking, Multi-Crypto &", "description": "Our in-depth Swipe Card review covers SXP token staking tiers, multi-crypto funding, Visa partnership, historical context, current status, and whether it's still worth using. Updated March 2026.", "url": "https://degen0x.com/crypto-cards/reviews/swipe-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

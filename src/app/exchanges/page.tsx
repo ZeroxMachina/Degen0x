@@ -327,6 +327,7 @@ export default function ExchangesPage() {
         </div>
       </section>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Exchanges Overall", "description": "Best cryptocurrency exchanges 2026. Compare spot trading, DEX, futures. Kyc requirements, fees, security, and which exchange is best for you.", "url": "https://degen0x.com/exchanges", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -112,6 +112,59 @@ export default function XPAttestationPage() {
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/admin/course-creator-v2" style={{ color: "#fb923c", marginRight: "1rem" }}>Course Creator V2</a>
+        
+          <a href="/admin/pages" style={{ color: "#fb923c", marginRight: "1rem" }}>Pages</a>
+        
+          <a href="/admin/courses" style={{ color: "#fb923c", marginRight: "1rem" }}>Courses</a>
+        
+          <a href="/insurance/crypto-custody-insurance-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Custody Insurance Guide</a>
+        
+          <a href="/insurance/best" style={{ color: "#fb923c", marginRight: "1rem" }}>Best</a>
+        
+          <a href="/insurance/defi-insurance-protocols-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Insurance Protocols Comparison</a>
+        
+          <a href="/insurance/best-crypto-insurance-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Crypto Insurance 2026</a>
+        
+          <a href="/insurance/smart-contract-cover-nexus-mutual" style={{ color: "#fb923c", marginRight: "1rem" }}>Smart Contract Cover Nexus Mutual</a>
+        
+          <a href="/insurance/defi-hack-insurance-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Hack Insurance Comparison</a>
+        
+          <a href="/portfolio/multi-chain" style={{ color: "#fb923c", marginRight: "1rem" }}>Multi Chain</a>
+        
+          <a href="/spending/where-to-spend-bitcoin-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Where To Spend Bitcoin 2026</a>
+        
+          <a href="/spending/bitcoin-travel-booking-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Travel Booking Guide</a>
+        
+          <a href="/spending/bitcoin-lightning-payments-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Lightning Payments Guide</a>
+        
+          <a href="/spending/crypto-gift-card-options-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Gift Card Options Comparison</a>
+        
+          <a href="/spending/crypto-payroll-services-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Payroll Services Guide</a>
+        
+          <a href="/spending/crypto-merchant-acceptance-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Merchant Acceptance Guide</a>
+        
+          <a href="/spending/crypto-payment-processors-for-business" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Payment Processors For Business</a>
+        
+          <a href="/alerts/whale-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Whale Tracker</a>
+        
+          <a href="/profile/[address]" style={{ color: "#fb923c", marginRight: "1rem" }}>[Address]</a>
+        
+          <a href="/status/api-health" style={{ color: "#fb923c", marginRight: "1rem" }}>Api Health</a>
+        
+          <a href="/settings/notifications" style={{ color: "#fb923c", marginRight: "1rem" }}>Notifications</a>
+        
+          <a href="/news/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[Slug]</a>
+        
+          <a href="/news/market-recap" style={{ color: "#fb923c", marginRight: "1rem" }}>Market Recap</a>
+        
+          <a href="/news/live" style={{ color: "#fb923c", marginRight: "1rem" }}>Live</a>
+        
+          <a href="/blog/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[Slug]</a>
+        </nav>
     </main>
   );
 }

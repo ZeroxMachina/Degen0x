@@ -425,6 +425,7 @@ export default function DegenScorePage() {
             })
           }}
         />
-      </div>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cautious Crypto Curious", "description": "You dip your toes into crypto but keep your sanity intact. You probably sleep 8 hours and have a diversified portfolio. NPC investors fear you; your financial advisor loves you.", "url": "https://degen0x.com/tools/degen-score", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </div>
   );
 }

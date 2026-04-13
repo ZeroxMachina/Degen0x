@@ -666,7 +666,51 @@ export default function CryptoMostStakingRewards() {
   <a href="/investing/crypto/uniswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Uniswap</a>
   <a href="/investing/crypto/optimism" style={{ color: "#fb923c", marginRight: "1rem" }}>Optimism</a>
   <a href="/investing/crypto/xrp" style={{ color: "#fb923c", marginRight: "1rem" }}>Xrp</a>
-</nav>
+
+          <a href="/investing/crypto/avalanche" style={{ color: "#fb923c", marginRight: "1rem" }}>Avalanche</a>
+        
+          <a href="/investing/crypto/hedera" style={{ color: "#fb923c", marginRight: "1rem" }}>Hedera</a>
+        
+          <a href="/investing/crypto/aave-token" style={{ color: "#fb923c", marginRight: "1rem" }}>Aave Token</a>
+        
+          <a href="/investing/compare/direct-crypto-vs-etf" style={{ color: "#fb923c", marginRight: "1rem" }}>Direct Crypto Vs Etf</a>
+        
+          <a href="/investing/compare/spot-vs-futures-investing" style={{ color: "#fb923c", marginRight: "1rem" }}>Spot Vs Futures Investing</a>
+        
+          <a href="/investing/compare/bitcoin-vs-litecoin" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Vs Litecoin</a>
+        
+          <a href="/investing/compare/cosmos-vs-polkadot" style={{ color: "#fb923c", marginRight: "1rem" }}>Cosmos Vs Polkadot</a>
+        
+          <a href="/investing/compare/cefi-vs-defi-investing" style={{ color: "#fb923c", marginRight: "1rem" }}>Cefi Vs Defi Investing</a>
+        
+          <a href="/investing/compare/chainlink-vs-band-protocol" style={{ color: "#fb923c", marginRight: "1rem" }}>Chainlink Vs Band Protocol</a>
+        
+          <a href="/investing/compare/bitcoin-vs-sp500" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Vs Sp500</a>
+        
+          <a href="/investing/compare/ethereum-vs-bnb-chain" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Vs Bnb Chain</a>
+        
+          <a href="/investing/compare/bitcoin-vs-gold" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Vs Gold</a>
+        
+          <a href="/investing/compare/avalanche-vs-solana" style={{ color: "#fb923c", marginRight: "1rem" }}>Avalanche Vs Solana</a>
+        
+          <a href="/investing/staking/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[Slug]</a>
+        
+          <a href="/investing/calculators/staking-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Staking Calculator</a>
+        
+          <a href="/investing/calculators/roi-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Roi Calculator</a>
+        
+          <a href="/investing/calculators/profit-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Profit Calculator</a>
+        
+          <a href="/investing/staking/reviews/eigenlayer" style={{ color: "#fb923c", marginRight: "1rem" }}>Eigenlayer</a>
+        
+          <a href="/investing/staking/reviews/jito" style={{ color: "#fb923c", marginRight: "1rem" }}>Jito</a>
+        
+          <a href="/investing/staking/reviews/kraken-staking" style={{ color: "#fb923c", marginRight: "1rem" }}>Kraken Staking</a>
+        
+          <a href="/investing/staking/reviews/lido" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido</a>
+        
+          <a href="/investing/staking/reviews/stakewise" style={{ color: "#fb923c", marginRight: "1rem" }}>Stakewise</a>
+        </nav>
     </article>
   );
 }

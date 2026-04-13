@@ -1635,7 +1635,9 @@ const DeltaNeutralGuide = () => {
   <a href="/learn/hyperliquid-hip3-tokenized-futures-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Hyperliquid Hip3 Tokenized Futures Guide</a>
   <a href="/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
   <a href="/learn/defi-vaults-structured-products-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Vaults Structured Products Guide 2026</a>
-</nav>
+
+          <a href="/learn/crypto-tax-loss-harvesting-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax Loss Harvesting Guide 2026</a>
+        </nav>
       </article>
   );
 };

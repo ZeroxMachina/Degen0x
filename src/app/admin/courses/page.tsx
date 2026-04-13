@@ -430,6 +430,7 @@ export default function CourseCreatorDashboard() {
           )}
         </div>
       </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Fundamentals", "description": "Understand how Bitcoin works from first principles — mining, UTXO model, halvings, and self-custody.", "url": "https://degen0x.com/admin/courses", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </main>
   );
 }

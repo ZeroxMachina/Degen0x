@@ -220,7 +220,7 @@ export default function WalletsHubPage() {
           </p>
         </div>
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Wallets Overall", "description": "Compare the best crypto wallets for security, ease of use, and features. Expert reviews of hardware wallets, software wallets, and more. Find the perfect", "url": "https://degen0x.com/wallets"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Wallets Overall", "description": "Compare the best crypto wallets for security, ease of use, and features. Expert reviews of hardware wallets, software wallets, and more. Find the perfect", "url": "https://degen0x.com/wallets", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

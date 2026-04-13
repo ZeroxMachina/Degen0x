@@ -51,6 +51,7 @@ export default function BinanceCardReviewPage() {
       relatedGuides={[{ title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }, { title: "Best Crypto Card Rewards", href: "/crypto-cards/learn/best-crypto-card-rewards" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cashback Tiers", "description": "In-depth Binance Card review covering BNB-tiered cashback, zero transaction fees, supported cryptocurrencies, and regional availability.", "url": "https://degen0x.com/crypto-cards/reviews/binance-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

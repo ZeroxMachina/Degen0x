@@ -269,6 +269,7 @@ export default function BestWeb3BusinessPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DAO Treasury Tools", "description": "Multi-signature wallets, treasury dashboards, and on-chain fund management platforms for DAOs and crypto-native organizations. Control spending, track balances", "url": "https://degen0x.com/web3-business/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     images: ["https://degen0x.com/og-tokenized-treasury-bills-guide-2026.svg"],
   },
   alternates: {
-    canonical: "https://degen0x.com/learn/tokenized-treasury-bills-guide-2026",
+    canonical: "/learn/tokenized-treasury-bills-guide-2026",
   },
 };
 
@@ -784,7 +784,12 @@ export default function TokenizedTreasuryBillsGuide() {
         >
           <strong style={{ color: "#e6edf3" }}>Disclaimer:</strong> This guide is educational only and not investment advice. Tokenized Treasury bills carry risks including smart contract vulnerabilities, regulatory changes, and liquidity constraints. Always conduct your own research and consult with qualified financial advisors before investing. Past performance and yield rates are not guarantees of future results. Cryptocurrency and tokenized assets are highly volatile and may not be suitable for all investors.
         </div>
-      </main>
+      
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/crypto-technical-analysis-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Technical Analysis Guide 2026</a>
+        </nav>
+    </main>
     
         <script
           type="application/ld+json"

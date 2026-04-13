@@ -162,6 +162,7 @@ export default function SafePalReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "S1 Air-Gapped Hardware Wallet", "description": "SafePal offers both a $49.99 air-gapped hardware wallet (S1) and a software wallet app, supporting 100+ blockchains and 10M+ tokens. Backed by Binance Labs.", "url": "https://degen0x.com/wallets/reviews/safepal", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

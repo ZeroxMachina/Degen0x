@@ -81,6 +81,7 @@ eToro operates under regulatory oversight in multiple jurisdictions. In the US, 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth eToro review covering crypto trading fees, copy trading, supported assets, security, and whether this social trading platform is right for you.", "url": "https://degen0x.com/exchanges/reviews/etoro", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

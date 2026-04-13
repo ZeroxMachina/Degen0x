@@ -341,7 +341,9 @@ export default function HyperLiquidGuidePage() {
   <a href="/learn/polymarket-prediction-markets-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Polymarket Prediction Markets Guide 2026</a>
   <a href="/learn/intent-based-dex-trading-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Intent Based Dex Trading Guide</a>
   <a href="/learn/tokenized-gold-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Gold Guide 2026</a>
-</nav>
+
+          <a href="/learn/thorchain-cross-chain-native-swaps-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Thorchain Cross Chain Native Swaps Guide 2026</a>
+        </nav>
     </article>
   );
 }

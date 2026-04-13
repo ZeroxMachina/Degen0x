@@ -94,6 +94,7 @@ The protocol emphasizes simplicity and reliability, with a clean interface that 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Sablier review: Streamlined crypto payroll and salary payments. Compare real-time payment streams, Web3 payroll, and salary distribution tools.", "url": "https://degen0x.com/web3-business/reviews/sablier", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -224,6 +224,11 @@ export default function AdvancedDeFiStrategiesPage() {
           }}
         />
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/bittensor-tao-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bittensor Tao Guide</a>
+        </nav>
     </main>
   );
 }

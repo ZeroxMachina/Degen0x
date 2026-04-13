@@ -106,6 +106,13 @@ export default function DriftGuidePage() {
           </ul>
         </nav>
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/pancakeswap-v4" style={{ color: "#fb923c", marginRight: "1rem" }}>Pancakeswap V4</a>
+        
+          <a href="/spending/reviews/fold-app" style={{ color: "#fb923c", marginRight: "1rem" }}>Fold App</a>
+        </nav>
     </main>
   );
 }

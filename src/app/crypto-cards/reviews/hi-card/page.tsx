@@ -149,6 +149,7 @@ The Hi Card targets the intersection of crypto enthusiasts who value passive inc
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hi Card Review 2026: Hi Dollar Rewards, Membership Tiers &", "description": "Our in-depth Hi Card review covers Hi Dollar daily rewards, membership tier system, cashback rates, HI token staking, and the hi.com ecosystem integration.", "url": "https://degen0x.com/crypto-cards/reviews/hi-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

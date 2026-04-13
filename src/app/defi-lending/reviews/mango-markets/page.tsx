@@ -134,6 +134,7 @@ export default function MangoMarketsReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "The V4 Rebuild", "description": "In-depth Mango Markets review covering spot and perp trading, lending features, the V4 rebuild, and how this Solana DEX has evolved after its exploit.", "url": "https://degen0x.com/defi-lending/reviews/mango-markets", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

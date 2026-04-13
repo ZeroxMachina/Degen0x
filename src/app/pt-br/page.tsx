@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "degen0x em Português — Comparar Exchanges, Wallets e DeFi",
   description: "degen0x é seu guia confiável para cripto em português. Compare exchanges, wallets, protocolos DeFi e mais. Avaliações de especialistas, ferramentas interativas",
-  alternates: { canonical: "https://degen0x.com/pt-br" },
+  alternates: { canonical: "/pt-br" },
   openGraph: {
     title: "degen0x em Português — Seu Guia de Cripto no Brasil",
     description: "Compare as melhores exchanges, wallets e protocolos DeFi. Tudo em português, feito para o mercado brasileiro.",

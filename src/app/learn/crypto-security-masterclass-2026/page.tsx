@@ -697,7 +697,9 @@ export default function CryptoSecurityMasterclassPage() {
   <a href="/learn/passkey-embedded-wallets-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Passkey Embedded Wallets Guide 2026</a>
   <a href="/learn/tempo-blockchain-machine-payments-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Tempo Blockchain Machine Payments Guide</a>
   <a href="/learn/onchain-credit-scoring-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Credit Scoring Guide 2026</a>
-</nav>
+
+          <a href="/learn/sei-network-parallelized-evm-defi-chain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Sei Network Parallelized Evm Defi Chain Guide 2026</a>
+        </nav>
       </article>
           <div style={{
         marginTop: "32px",

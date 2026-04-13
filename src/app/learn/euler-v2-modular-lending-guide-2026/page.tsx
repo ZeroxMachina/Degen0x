@@ -1296,6 +1296,11 @@ export default function EulerV2Guide() {
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/shared-sequencing-decentralized-sequencers-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Shared Sequencing Decentralized Sequencers Guide 2026</a>
+        </nav>
     </main>
   );
 }

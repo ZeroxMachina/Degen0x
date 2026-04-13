@@ -139,6 +139,15 @@ export default function BestTaxSolutionsPage() {
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/taxes/nft-tax-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Nft Tax Guide 2026</a>
+        
+          <a href="/taxes/crypto-tax-by-state-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax By State Comparison</a>
+        
+          <a href="/taxes/crypto-tax-software-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax Software Comparison 2026</a>
+        </nav>
     </main>
   );
 }

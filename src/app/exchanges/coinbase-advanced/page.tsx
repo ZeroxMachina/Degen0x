@@ -192,7 +192,7 @@ export default function CoinbaseAdvancedReview() {
           </section>
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Advanced Review 2026: Professional Trading, Lower", "description": "Complete Coinbase Advanced review covering professional trading interface, competitive fees, and advanced features. Updated March 2026.", "url": "https://degen0x.com/exchanges/coinbase-advanced"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Advanced Review 2026: Professional Trading, Lower", "description": "Complete Coinbase Advanced review covering professional trading interface, competitive fees, and advanced features. Updated March 2026.", "url": "https://degen0x.com/exchanges/coinbase-advanced", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Master volume profile trading techniques.",
     image: "https://degen0x.com/og-trading.svg",
   },
-  alternates: { canonical: "https://degen0x.com/trading/volume-profile-trading-crypto" },
+  alternates: { canonical: "/trading/volume-profile-trading-crypto" },
 };
 
 const structuredData = {

@@ -52,6 +52,7 @@ export default function SparkReview() {
       relatedGuides={[{ title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SparkLend Markets", "description": "In-depth Spark Protocol review covering DAI lending, SparkLend markets, DSR integration, sDAI, and the protocol's relationship with Sky (formerly MakerDAO).", "url": "https://degen0x.com/defi-lending/reviews/spark", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

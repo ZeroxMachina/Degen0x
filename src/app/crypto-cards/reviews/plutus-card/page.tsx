@@ -51,6 +51,7 @@ export default function PlutusCardReviewPage() {
       relatedGuides={[{ title: "Best Crypto Card Rewards", href: "/crypto-cards/learn/best-crypto-card-rewards" }, { title: "Crypto Card Security Tips", href: "/crypto-cards/learn/crypto-card-security" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized Reward Model", "description": "In-depth Plutus Card review covering PLU token rewards, selectable perks, decentralized cashback model, and whether it is the best crypto card for European", "url": "https://degen0x.com/crypto-cards/reviews/plutus-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

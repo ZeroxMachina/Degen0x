@@ -13,7 +13,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "degen0x النسخة العربية — مقارنة منصات العملات الرقمية",
   description: "degen0x هي منصة شاملة لمقارنة العملات الرقمية باللغة العربية. قارن منصات التداول والمحافظ وبروتوكولات DeFi، وتعرف على التنظيم في منطقة MENA والضرائب والأدوات",
-  alternates: { canonical: "https://degen0x.com/ar" },
+  alternates: { canonical: "/ar" },
   openGraph: {
     title: "degen0x النسخة العربية — مقارنة العملات الرقمية والاستثمار",
     description:

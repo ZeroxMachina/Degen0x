@@ -133,6 +133,13 @@ export default function LidoV2GuidePage() {
         </section>
 
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/cetus" style={{ color: "#fb923c", marginRight: "1rem" }}>Cetus</a>
+        
+          <a href="/insurance/reviews/insurace" style={{ color: "#fb923c", marginRight: "1rem" }}>Insurace</a>
+        </nav>
     </main>
   );
 }

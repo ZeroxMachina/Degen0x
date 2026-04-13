@@ -82,6 +82,7 @@ The exchange has gained traction quickly, particularly among Solana community me
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Backpack Exchange review covering this Solana-native exchange's fees, features, regulatory approach, and whether it suits your crypto trading needs.", "url": "https://degen0x.com/exchanges/reviews/backpack-exchange", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

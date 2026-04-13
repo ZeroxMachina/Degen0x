@@ -1102,6 +1102,11 @@ export default function DVTGuidePage() {
           }}
         />
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/erc-20-token-standard-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Erc 20 Token Standard Explained</a>
+        </nav>
     </main>
   );
 }

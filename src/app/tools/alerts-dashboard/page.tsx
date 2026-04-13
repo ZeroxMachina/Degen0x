@@ -874,7 +874,8 @@ export default function AlertsDashboardPage() {
             })
           }}
         />
-      </div>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Above $85,000", "description": "Alert when BTC price exceeds $85,000", "url": "https://degen0x.com/tools/alerts-dashboard", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </div>
   );
 }
 

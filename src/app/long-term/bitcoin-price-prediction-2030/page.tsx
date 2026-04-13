@@ -270,7 +270,8 @@ export default function BitcoinPrice2030() {
             <li><Link href="/long-term/ethereum-price-prediction-2030" style={{ color: '#58a6ff', textDecoration: 'none' }}>→ Ethereum Price Prediction 2030</Link></li>
           </ul>
         </section>
-      </main>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Price Prediction 2030 Models", "description": "Expert Bitcoin price forecasts for 2030 using S2F, adoption curves, and macro cycles. Real data-driven models for long-term BTC valuation.", "url": "https://degen0x.com/long-term/bitcoin-price-prediction-2030", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </main>
 
       <script
         type="application/ld+json"

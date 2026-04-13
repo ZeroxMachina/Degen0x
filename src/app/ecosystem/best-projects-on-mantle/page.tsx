@@ -458,7 +458,9 @@ export default function BestProjectsOnMantle() {
   <a href="/ecosystem/usual" style={{ color: "#fb923c", marginRight: "1rem" }}>Usual</a>
   <a href="/ecosystem/best-projects-on-solana" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Projects On Solana</a>
   <a href="/ecosystem/layerzero" style={{ color: "#fb923c", marginRight: "1rem" }}>Layerzero</a>
-</nav>
+
+          <a href="/ecosystem/paraswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Paraswap</a>
+        </nav>
 
 </article>
   );

@@ -82,6 +82,7 @@ As one of the most heavily regulated brokerages globally, IBKR provides a level 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Interactive Brokers crypto review covering trading fees, supported assets, professional tools, and whether IBKR suits your crypto needs.", "url": "https://degen0x.com/exchanges/reviews/interactive-brokers-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

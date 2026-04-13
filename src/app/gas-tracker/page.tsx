@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     images: ["https://degen0x.com/og-gas-tracker.png"],
   },
   alternates: {
-    canonical: "https://degen0x.com/gas-tracker",
+    canonical: "/gas-tracker",
   },
 };
 

@@ -900,7 +900,9 @@ export default function CryptoDCAStrategyGuide2026() {
   <a href="/learn/megaeth-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Megaeth Guide 2026</a>
   <a href="/learn/initia-blockchain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Initia Blockchain Guide 2026</a>
   <a href="/learn/crypto-market-making-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Market Making Guide 2026</a>
-</nav>
+
+          <a href="/learn/cross-chain-interoperability-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Cross Chain Interoperability Guide</a>
+        </nav>
       </article>
     </div>
   );

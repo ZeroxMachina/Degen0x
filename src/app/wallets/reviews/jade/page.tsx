@@ -101,6 +101,7 @@ export default function JadeReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security Model", "description": "Blockstream Jade hardware wallet review covering security model, air-gapped signing, Liquid Network support, and value proposition.", "url": "https://degen0x.com/wallets/reviews/jade", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

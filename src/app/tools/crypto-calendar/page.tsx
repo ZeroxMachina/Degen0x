@@ -323,6 +323,7 @@ function EventListItem({ event }: { event: CryptoEvent }) {
             })
           }}
         />
-      </div>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Halving Event", "description": "Block reward reduction from 3.125 to 1.5625 BTC", "url": "https://degen0x.com/tools/crypto-calendar", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </div>
   );
 }

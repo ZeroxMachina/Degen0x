@@ -104,6 +104,11 @@ export default function KaminoGuidePage() {
           </ul>
         </nav>
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/insurance/best/exchange-cover" style={{ color: "#fb923c", marginRight: "1rem" }}>Exchange Cover</a>
+        </nav>
     </main>
   );
 }

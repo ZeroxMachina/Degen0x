@@ -46,6 +46,7 @@ export default function MakerDAOReview() {
       relatedGuides={[{ title: "What Are Crypto-Backed Loans?", href: "/crypto-loans/learn/what-are-crypto-backed-loans" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MakerDAO Review 2026: DAI Borrowing, Vaults & Analysis", "description": "In-depth MakerDAO review covering DAI borrowing, Vault mechanics, stability fees, and whether Maker is right for your DeFi lending needs. Updated March 2026.", "url": "https://degen0x.com/crypto-loans/reviews/makerdao", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

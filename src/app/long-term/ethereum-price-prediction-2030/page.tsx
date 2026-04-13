@@ -271,7 +271,8 @@ export default function EthereumPrice2030() {
             <li><Link href="/long-term/crypto-generational-wealth-guide" style={{ color: '#58a6ff', textDecoration: 'none' }}>→ Generational Wealth Building</Link></li>
           </ul>
         </section>
-      </main>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Price Prediction 2030 Analysis", "description": "ETH price forecasts for 2030 using DeFi adoption, L2 scaling, staking yields, and smart contract utility metrics. Expert projections from $1.5K to $15K+.", "url": "https://degen0x.com/long-term/ethereum-price-prediction-2030", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </main>
 
       <script
         type="application/ld+json"

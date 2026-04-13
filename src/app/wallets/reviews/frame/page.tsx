@@ -143,6 +143,7 @@ export default function FrameReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "System-Level Architecture", "description": "Frame is a privacy-focused, system-level Ethereum wallet that runs as a native OS application rather than a browser extension, offering superior hardware", "url": "https://degen0x.com/wallets/reviews/frame", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

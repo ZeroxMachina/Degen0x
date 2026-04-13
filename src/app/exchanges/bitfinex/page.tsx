@@ -162,6 +162,7 @@ The platform's history includes the 2016 hack that resulted in $72 million in lo
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitfinex Review 2026: Trading Platform, Fees, Features &", "description": "In-depth Bitfinex review covering professional trading platform, margin trading, lending, fees, and security. Is Bitfinex right for you? Updated March 2026.", "url": "https://degen0x.com/exchanges/bitfinex", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

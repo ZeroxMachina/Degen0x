@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize",
   keywords: ["altcoin season", "alt season index", "BTC dominance", "capital rotation", "altcoin cycle"],
   alternates: {
-    canonical: "https://degen0x.com/tools/altcoin-season-index",
+    canonical: "/tools/altcoin-season-index",
   },
   openGraph: {
     type: "article",
@@ -440,7 +440,15 @@ export default function AltcoinSeasonIndex() {
   <a href="/tools/backtesting-engine" style={{ color: "#fb923c", marginRight: "1rem" }}>Backtesting Engine</a>
   <a href="/tools/portfolio-allocator" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Allocator</a>
   <a href="/tools/market-recap" style={{ color: "#fb923c", marginRight: "1rem" }}>Market Recap</a>
-</nav>
+
+          <a href="/tools/dao-treasury-dashboard" style={{ color: "#fb923c", marginRight: "1rem" }}>Dao Treasury Dashboard</a>
+        
+          <a href="/tools/portfolio-widget" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Widget</a>
+        
+          <a href="/tools/whale-alert-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Whale Alert Tracker</a>
+        
+          <a href="/tools/risk-analyzer" style={{ color: "#fb923c", marginRight: "1rem" }}>Risk Analyzer</a>
+        </nav>
       </article>
   );
 }

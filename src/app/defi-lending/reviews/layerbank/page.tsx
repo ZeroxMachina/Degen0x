@@ -47,6 +47,7 @@ export default function LayerBankReview() {
       relatedGuides={[{ title: "DeFi on Scroll", href: "/defi-lending/learn/defi-on-scroll" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Deployments", "description": "Detailed LayerBank review covering lending on Scroll, Linea, zkSync, and other L2s, with yield rates, security analysis, and feature comparison.", "url": "https://degen0x.com/defi-lending/reviews/layerbank", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

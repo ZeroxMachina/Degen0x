@@ -132,6 +132,13 @@ export default function RocketPoolGuidePage() {
         </section>
 
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/etherfi-cash" style={{ color: "#fb923c", marginRight: "1rem" }}>Etherfi Cash</a>
+        
+          <a href="/insurance/reviews/nexus-mutual" style={{ color: "#fb923c", marginRight: "1rem" }}>Nexus Mutual</a>
+        </nav>
     </main>
   );
 }

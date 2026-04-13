@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Liquidswap, Thala, Aries, Pontem, Econia on Aptos. Move language, 160K TPS.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-  alternates: { canonical: "https://degen0x.com/ecosystem/best-projects-on-aptos" },
+  alternates: { canonical: "/ecosystem/best-projects-on-aptos" },
 };
 
 const structuredData = {
@@ -514,7 +514,9 @@ export default function BestAptosProjects() {
   <a href="/ecosystem/aerodrome" style={{ color: "#fb923c", marginRight: "1rem" }}>Aerodrome</a>
   <a href="/ecosystem/makerdao" style={{ color: "#fb923c", marginRight: "1rem" }}>Makerdao</a>
   <a href="/ecosystem/velodrome" style={{ color: "#fb923c", marginRight: "1rem" }}>Velodrome</a>
-</nav>
+
+          <a href="/ecosystem/puffer-finance" style={{ color: "#fb923c", marginRight: "1rem" }}>Puffer Finance</a>
+        </nav>
 
 </article>
   );

@@ -59,6 +59,7 @@ export default function AbracadabraReview() {
       relatedGuides={[{ title: "How Crypto Loans Work", href: "/crypto-loans/learn/how-to-get-crypto-loan" }, { title: "Liquidation Risk", href: "/crypto-loans/learn/liquidation-risk" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How Cauldrons Work", "description": "Abracadabra allows borrowing the MIM stablecoin against interest-bearing collateral like yield-bearing tokens.", "url": "https://degen0x.com/crypto-loans/reviews/abracadabra", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

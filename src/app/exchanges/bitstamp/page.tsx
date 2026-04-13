@@ -188,7 +188,7 @@ export default function BitstampReview() {
           </section>
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitstamp Review 2026: Legacy Exchange, Security, Trading", "description": "In-depth Bitstamp review covering one of the oldest crypto exchanges, security track record, regulatory compliance, and trading features. Updated March 2026.", "url": "https://degen0x.com/exchanges/bitstamp"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitstamp Review 2026: Legacy Exchange, Security, Trading", "description": "In-depth Bitstamp review covering one of the oldest crypto exchanges, security track record, regulatory compliance, and trading features. Updated March 2026.", "url": "https://degen0x.com/exchanges/bitstamp", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

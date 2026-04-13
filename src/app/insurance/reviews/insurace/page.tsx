@@ -63,6 +63,7 @@ export default function InsurAceReviewPage() {
       relatedGuides={[{ title: "Complete Crypto Insurance Guide", href: "/insurance/learn/crypto-insurance-guide" }, { title: "Insurance Protocols Compared", href: "/insurance/learn/insurance-protocols-compared" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Coverage", "description": "InsurAce is a multi-chain DeFi insurance protocol offering coverage across 10+ networks with portfolio bundling discounts and no KYC requirement, making it the", "url": "https://degen0x.com/insurance/reviews/insurace", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

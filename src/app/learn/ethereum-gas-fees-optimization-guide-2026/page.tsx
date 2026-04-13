@@ -1071,6 +1071,11 @@ export default function EthereumGasFeesPage() {
         />
 
       <BackToTop />
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/lido-v3-stvaults-modular-ethereum-staking-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido V3 Stvaults Modular Ethereum Staking Guide 2026</a>
+        </nav>
     </main>
   );
 }

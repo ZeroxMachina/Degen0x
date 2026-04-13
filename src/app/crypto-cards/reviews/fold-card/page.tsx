@@ -149,6 +149,7 @@ Fold has built a passionate community around the idea that every purchase is an 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fold Card Review 2026: Bitcoin Rewards, Spin the Wheel &", "description": "Our in-depth Fold Card review covers Bitcoin-only rewards, the spin-the-wheel mechanic, Fold+ subscription tiers, Lightning Network integration, and daily BTC", "url": "https://degen0x.com/crypto-cards/reviews/fold-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

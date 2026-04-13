@@ -899,6 +899,11 @@ export default function DeFiInsurancePage() {
         />
       </div>
           <BackToTop />
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/quantum-resistant-crypto-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Quantum Resistant Crypto Guide</a>
+        </nav>
     </main>
   );
 }

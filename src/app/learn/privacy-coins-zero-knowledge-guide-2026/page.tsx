@@ -552,7 +552,9 @@ export default function PrivacyCoinsZKGuidePage() {
   <a href="/learn/farcaster-decentralized-social-protocol-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Farcaster Decentralized Social Protocol Guide 2026</a>
   <a href="/learn/distributed-validator-technology-dvt-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Distributed Validator Technology Dvt Guide 2026</a>
   <a href="/learn/solver-networks-order-flow-auctions-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solver Networks Order Flow Auctions Guide 2026</a>
-</nav>
+
+          <a href="/learn/crypto-portfolio-allocation-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Portfolio Allocation Guide 2026</a>
+        </nav>
       </article>
     </div>
   );

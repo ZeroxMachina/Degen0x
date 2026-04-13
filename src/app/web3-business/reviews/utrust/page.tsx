@@ -94,6 +94,7 @@ Integration with popular e-commerce platforms and a straightforward API make UTr
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Utrust review: Accept and settle crypto payments without conversion. Compare payment processing fees, features, and Web3 business payment solutions.", "url": "https://degen0x.com/web3-business/reviews/utrust", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

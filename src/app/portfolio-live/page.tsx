@@ -28,6 +28,7 @@ export default function PortfolioLivePage() {
     <>
       <PortfolioLiveDashboard />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Live Portfolio Dashboard — Real-Time P&L | degen0x", "description": "Real-time crypto portfolio tracker with WebSocket live prices.", "url": "https://degen0x.com/portfolio-live", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

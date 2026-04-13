@@ -143,6 +143,7 @@ export default function ZerionReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Portfolio Tracking & DeFi Integration", "description": "Zerion is a multi-chain DeFi wallet and portfolio tracker that aggregates positions across hundreds of protocols and chains into a single unified dashboard.", "url": "https://degen0x.com/wallets/reviews/zerion", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

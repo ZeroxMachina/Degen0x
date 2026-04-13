@@ -156,6 +156,7 @@ Foundation enforces a 10% creator royalty on all secondary sales and charges a 5
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Gallery-Quality Browsing Experience", "description": "Foundation is a curated NFT marketplace that has built its reputation as the premier destination for digital art. The platform features gallery-quality", "url": "https://degen0x.com/nfts/reviews/foundation", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

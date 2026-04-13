@@ -101,6 +101,7 @@ export default function WasabiReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "CoinJoin Privacy", "description": "Wasabi Wallet review covering CoinJoin privacy features, Tor integration, coin control, and Bitcoin privacy best practices.", "url": "https://degen0x.com/wallets/reviews/wasabi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

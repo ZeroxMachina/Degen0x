@@ -432,6 +432,15 @@ export default function PartnersPage() {
           ))}
         </div>
       </section>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/badges" style={{ color: "#fb923c", marginRight: "1rem" }}>Badges</a>
+        
+          <a href="/portfolio-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Tracker</a>
+        
+          <a href="/xp-sync" style={{ color: "#fb923c", marginRight: "1rem" }}>Xp Sync</a>
+        </nav>
     </main>
   );
 }

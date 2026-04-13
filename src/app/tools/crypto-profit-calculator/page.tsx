@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description: "Calculate crypto profits with trading fees and taxes. Track ROI, gain/loss %, and cost basis. Essential tool for crypto traders and investors.",
   keywords: ["crypto profit calculator", "calculate crypto gains", "ROI calculator", "crypto tax", "trading fees"],
   alternates: {
-    canonical: "https://degen0x.com/tools/crypto-profit-calculator",
+    canonical: "/tools/crypto-profit-calculator",
   },
   openGraph: {
     type: "website",

@@ -102,6 +102,7 @@ export default function AtomicWalletReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Key Features", "description": "Comprehensive Atomic Wallet review covering features, security, atomic swaps, staking, and supported assets. Is Atomic Wallet right for you?", "url": "https://degen0x.com/wallets/reviews/atomic", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

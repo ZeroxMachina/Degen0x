@@ -163,6 +163,7 @@ As a non-US-regulated exchange not available to US residents, MEXC operates with
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MEXC Review 2026: Trading Platform, Fees, Features & More", "description": "Comprehensive MEXC review covering crypto trading platform, altcoin selection, trading features, fees, and security. Updated March 2026.", "url": "https://degen0x.com/exchanges/mexc", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

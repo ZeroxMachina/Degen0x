@@ -566,7 +566,9 @@ export default function AccountAbstractionERC4337Guide() {
   <a href="/learn/btcfi-yield-strategies-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Btcfi Yield Strategies Guide 2026</a>
   <a href="/learn/resolv-usr-delta-neutral-stablecoin-exploit-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Resolv Usr Delta Neutral Stablecoin Exploit Guide 2026</a>
   <a href="/learn/fluid-protocol-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Fluid Protocol Guide</a>
-</nav>
+
+          <a href="/learn/prediction-markets-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Prediction Markets Guide</a>
+        </nav>
       </article>
   );
 }

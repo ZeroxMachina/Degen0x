@@ -163,6 +163,7 @@ Kraken's strategic focus centers on security, professional trading features, and
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Kraken Review 2026: Fees, Security Features, Pros & Cons", "description": "In-depth Kraken review covering security track record, regulatory compliance, advanced trading features, and competitive fees. Is Kraken right for you? Updated", "url": "https://degen0x.com/exchanges/kraken", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -79,6 +79,7 @@ export default function EllipalReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Air-Gapped Security", "description": "ELLIPAL Titan hardware wallet review covering air-gapped QR code security, large touchscreen, multi-chain support, and anti-tamper design.", "url": "https://degen0x.com/wallets/reviews/ellipal", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

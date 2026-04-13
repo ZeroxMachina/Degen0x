@@ -79,6 +79,7 @@ export default function XdefiReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Support", "description": "XDEFI wallet review covering multi-chain DeFi support, cross-chain swaps, NFT management, and browser extension features.", "url": "https://degen0x.com/wallets/reviews/xdefi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

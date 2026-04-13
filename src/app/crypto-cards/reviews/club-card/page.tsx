@@ -65,6 +65,7 @@ export default function ClubCardReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Currency Support", "description": "Club Card is a crypto-powered debit card that allows users to spend crypto assets directly with competitive exchange rates and multi-currency support.", "url": "https://degen0x.com/crypto-cards/reviews/club-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -51,6 +51,7 @@ export default function GnosisCardReviewPage() {
       relatedGuides={[{ title: "Crypto Card Security Tips", href: "/crypto-cards/learn/crypto-card-security" }, { title: "Prepaid vs Debit Crypto Cards", href: "/crypto-cards/learn/prepaid-vs-debit-crypto" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Self-Custody Spending", "description": "In-depth Gnosis Pay card review covering on-chain spending from Safe wallets, DeFi integration, progressive decentralization, and whether it suits DeFi-native", "url": "https://degen0x.com/crypto-cards/reviews/gnosis-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

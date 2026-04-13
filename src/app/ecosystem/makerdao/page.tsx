@@ -204,6 +204,13 @@ export default function MakerDAOGuidePage() {
         </section>
 
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/jediswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Jediswap</a>
+        
+          <a href="/spending/reviews/coingate" style={{ color: "#fb923c", marginRight: "1rem" }}>Coingate</a>
+        </nav>
     </main>
   );
 }

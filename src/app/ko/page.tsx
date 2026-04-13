@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "degen0x 한국어판 — 암호화폐 거래소·지갑·DeFi 비교",
   description:
     "degen0x은 한국어로 이용할 수 있는 암호화폐 종합 비교 플랫폼입니다. 거래소, 지갑, DeFi 프로토콜을 비교하고, 전문가 리뷰, 무료 도구, 한국의 규제에 대응한 포괄적 가이드로 현명한 암호화폐 투자를 지원합니다.",
-  alternates: { canonical: "https://degen0x.com/ko" },
+  alternates: { canonical: "/ko" },
   openGraph: {
     title: "degen0x 한국어판 — 암호화폐 비교·투자 가이드",
     description:

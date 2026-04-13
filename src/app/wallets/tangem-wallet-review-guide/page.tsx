@@ -631,7 +631,8 @@ export default function TangemWalletReview() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+              <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tangem Wallet Review: NFC Card Hardware Wallet", "description": "Tangem wallet review: 7.5/10 rating. NFC card hardware wallet, no seed phrase, 3-card backup, $54, EAL6+ chip. vs Ledger Nano S Plus. Security analysis.", "url": "https://degen0x.com/wallets/tangem-wallet-review-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </div>
       </article>
   );
 }

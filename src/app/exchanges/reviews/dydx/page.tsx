@@ -90,6 +90,7 @@ export default function DYdXReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Features", "description": "Complete dYdX review covering perpetual futures, fees, governance, and decentralized trading features. Is dYdX the best DEX for derivatives?", "url": "https://degen0x.com/exchanges/reviews/dydx", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

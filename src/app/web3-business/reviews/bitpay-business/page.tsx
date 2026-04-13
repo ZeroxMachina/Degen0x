@@ -94,6 +94,7 @@ BitPay's experience and longevity provide confidence for businesses entering the
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "BitPay Business provides enterprise-grade crypto payment processing with fiat settlement, invoicing, and compliance tools.", "url": "https://degen0x.com/web3-business/reviews/bitpay-business", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

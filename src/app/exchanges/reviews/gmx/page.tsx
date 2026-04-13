@@ -161,6 +161,7 @@ export default function GMXReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "GLP/GM Liquidity Pool Model", "description": "GMX is a decentralized perpetual and spot exchange on Arbitrum and Avalanche, known for its unique GLP liquidity pool model, zero price-impact trades, and high", "url": "https://degen0x.com/exchanges/reviews/gmx", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

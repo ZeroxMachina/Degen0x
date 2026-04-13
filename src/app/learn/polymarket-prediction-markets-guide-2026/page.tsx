@@ -786,7 +786,12 @@ export default function PolymarketGuidePage() {
             </a>
           </div>
         </section>
-      </main>
+      
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/aptos-blockchain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Aptos Blockchain Guide 2026</a>
+        </nav>
+    </main>
 
       <BackToTop />
           <div style={{

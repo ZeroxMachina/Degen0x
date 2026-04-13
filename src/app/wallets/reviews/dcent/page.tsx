@@ -79,6 +79,7 @@ export default function DcentReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Biometric Authentication", "description": "D'CENT hardware wallet review covering biometric security, multi-chain support, built-in dApp browser, and fingerprint authentication.", "url": "https://degen0x.com/wallets/reviews/dcent", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

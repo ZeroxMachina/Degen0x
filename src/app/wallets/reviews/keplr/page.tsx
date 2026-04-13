@@ -79,6 +79,7 @@ export default function KeplrReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cosmos Ecosystem Support", "description": "Keplr wallet review covering Cosmos ecosystem support, IBC transfers, staking, governance, and inter-chain account management.", "url": "https://degen0x.com/wallets/reviews/keplr", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -92,6 +92,7 @@ export default function CoinGateReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Merchant Tools", "description": "CoinGate is a Lithuanian crypto payment gateway offering merchant processing, gift card purchases, and crypto billing solutions supporting 70+ cryptocurrencies.", "url": "https://degen0x.com/spending/reviews/coingate", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -130,6 +130,7 @@ EigenLayer has spawned an entire ecosystem of Liquid Restaking Token (LRT) proto
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "EigenLayer Review 2026: Restaking, Yields, Pros & Cons", "description": "Our in-depth EigenLayer review covers restaking mechanics, AVS rewards, risks, and whether it's the right protocol for boosting your staking yields. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/eigenlayer", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

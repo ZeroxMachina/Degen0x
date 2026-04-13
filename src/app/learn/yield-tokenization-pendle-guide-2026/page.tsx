@@ -1215,6 +1215,11 @@ export default function YieldTokenizationPendlePage() {
         />
 
           <BackToTop />
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/soneium-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Soneium Guide</a>
+        </nav>
     </main>
   );
 }

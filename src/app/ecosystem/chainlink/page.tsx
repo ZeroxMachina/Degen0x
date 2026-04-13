@@ -195,6 +195,13 @@ export default function ChainlinkGuidePage() {
         </section>
 
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/cosmos-ecosystem-map" style={{ color: "#fb923c", marginRight: "1rem" }}>Cosmos Ecosystem Map</a>
+        
+          <a href="/spending/reviews/lolli" style={{ color: "#fb923c", marginRight: "1rem" }}>Lolli</a>
+        </nav>
     </main>
   );
 }

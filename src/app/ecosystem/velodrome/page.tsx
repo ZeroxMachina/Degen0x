@@ -104,6 +104,13 @@ export default function VelodromeGuidePage() {
           </ul>
         </nav>
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/hop" style={{ color: "#fb923c", marginRight: "1rem" }}>Hop</a>
+        
+          <a href="/spending/reviews/crypto-com-pay" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com Pay</a>
+        </nav>
     </main>
   );
 }

@@ -142,6 +142,7 @@ export default function RainbowReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Design & User Experience", "description": "Rainbow is a mobile-first Ethereum wallet known for its beautiful design, excellent NFT experience, and intuitive token swap functionality across EVM chains.", "url": "https://degen0x.com/wallets/reviews/rainbow", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

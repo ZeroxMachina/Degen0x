@@ -858,6 +858,15 @@ export default function WalletAnalyzer() {
           }}
         />
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/tools/leaderboard" style={{ color: "#fb923c", marginRight: "1rem" }}>Leaderboard</a>
+        
+          <a href="/tools/memecoin-index" style={{ color: "#fb923c", marginRight: "1rem" }}>Memecoin Index</a>
+        
+          <a href="/tools/multi-chain-gas" style={{ color: "#fb923c", marginRight: "1rem" }}>Multi Chain Gas</a>
+        </nav>
     </main>
   );
 }

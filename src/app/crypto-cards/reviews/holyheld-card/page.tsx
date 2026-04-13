@@ -65,6 +65,7 @@ export default function HolyheldCardReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Non-Custodial Design", "description": "Holyheld is a non-custodial crypto spending card that connects to your DeFi wallet and lets you spend directly from on-chain positions.", "url": "https://degen0x.com/crypto-cards/reviews/holyheld-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -315,6 +315,7 @@ export default function PricesPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Cryptos to Buy", "description": "Live cryptocurrency prices and market data. Bitcoin, Ethereum, Solana, and 5,000+ altcoins. Real-time charts, technical analysis, and tracking.", "url": "https://degen0x.com/prices", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

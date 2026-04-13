@@ -94,6 +94,7 @@ export default function NOWPaymentsReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Integrations &amp; Plugins", "description": "NOWPayments is a non-custodial crypto payment gateway supporting 200+ cryptocurrencies with simple API integration, e-commerce plugins, and subscription", "url": "https://degen0x.com/spending/reviews/nowpayments", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

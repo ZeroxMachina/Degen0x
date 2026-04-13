@@ -61,6 +61,7 @@ export default function BabylonProtocolPage() {
     <>
       <BabylonClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Babylon Protocol: Bitcoin Staking Guide 2026 — $4.2B TVL", "description": "Complete guide to Babylon Protocol — the first native Bitcoin staking solution with $4.2B TVL, 180K+ BTC staked, and 5-9% APR. How Bitcoin staking works, BABY", "url": "https://degen0x.com/ecosystem/babylon-protocol", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

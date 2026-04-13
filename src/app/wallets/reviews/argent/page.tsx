@@ -144,6 +144,7 @@ export default function ArgentReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Social Recovery & Guardian System", "description": "Argent is a smart contract wallet pioneering account abstraction with social recovery, no seed phrase requirement, and native Starknet Layer 2 integration.", "url": "https://degen0x.com/wallets/reviews/argent", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

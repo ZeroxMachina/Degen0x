@@ -68,7 +68,7 @@ export default function StreakPage() {
       <div style={{ maxWidth: 740, margin: "40px auto", padding: "0 16px 80px" }}>
         <DailyStreakSystem />
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Streak \u2014 degen0x | Earn XP Every Day", "description": "Check in daily to maintain your streak and earn XP multipliers. 7-day \u2192 1.0\u00d7, 30-day \u2192 1.5\u00d7, 100-day \u2192 2.0\u00d7 XP. Streaks up to 3\u00d7 for 365-day legends.", "url": "https://degen0x.com/streak"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Streak \u2014 degen0x | Earn XP Every Day", "description": "Check in daily to maintain your streak and earn XP multipliers. 7-day \u2192 1.0\u00d7, 30-day \u2192 1.5\u00d7, 100-day \u2192 2.0\u00d7 XP. Streaks up to 3\u00d7 for 365-day legends.", "url": "https://degen0x.com/streak", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",
@@ -119,6 +119,17 @@ export default function StreakPage() {
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/gas-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Gas Tracker</a>
+        
+          <a href="/search" style={{ color: "#fb923c", marginRight: "1rem" }}>Search</a>
+        
+          <a href="/glossary" style={{ color: "#fb923c", marginRight: "1rem" }}>Glossary</a>
+        
+          <a href="/streak/leaderboard" style={{ color: "#fb923c", marginRight: "1rem" }}>Leaderboard</a>
+        </nav>
     </main>
   );
 }

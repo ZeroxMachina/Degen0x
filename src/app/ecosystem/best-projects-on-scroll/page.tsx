@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Ambient Finance, NURI Exchange, Cog Finance on Scroll. Type 2 zkEVM with EVM equivalence.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-  alternates: { canonical: "https://degen0x.com/ecosystem/best-projects-on-scroll" },
+  alternates: { canonical: "/ecosystem/best-projects-on-scroll" },
 };
 
 const structuredData = {

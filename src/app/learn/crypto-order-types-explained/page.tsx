@@ -810,7 +810,9 @@ export default function CryptoOrderTypesGuide() {
   <a href="/learn/what-are-soulbound-tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>What Are Soulbound Tokens</a>
   <a href="/learn/how-to-buy-bitcoin-step-by-step" style={{ color: "#fb923c", marginRight: "1rem" }}>How To Buy Bitcoin Step By Step</a>
   <a href="/learn/ethereum-fusaka-peerdas-upgrade-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Fusaka Peerdas Upgrade Guide 2026</a>
-</nav>
+
+          <a href="/learn/btc-yield-earning-strategies-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Btc Yield Earning Strategies Guide 2026</a>
+        </nav>
       </article>
   );
 }

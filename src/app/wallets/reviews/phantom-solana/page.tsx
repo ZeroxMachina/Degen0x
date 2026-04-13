@@ -144,6 +144,7 @@ export default function PhantomSolanaReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana DeFi & dApp Integration", "description": "Phantom is the dominant Solana wallet offering the best SPL token management, Solana DeFi integration, NFT gallery, and staking experience in the ecosystem.", "url": "https://degen0x.com/wallets/reviews/phantom-solana", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -885,7 +885,9 @@ Access-Control-Allow-Headers: Content-Type`}
   <a href="/learn/unichain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Unichain Guide 2026</a>
   <a href="/learn/crypto-wallet-types-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Wallet Types Explained</a>
   <a href="/learn/intents-based-trading-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Intents Based Trading Explained</a>
-</nav>
+
+          <a href="/learn/crypto-leverage-trading-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Leverage Trading Guide 2026</a>
+        </nav>
       </article>
   );
 }

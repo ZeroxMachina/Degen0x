@@ -59,6 +59,7 @@ export default function CoinLedgerReview() {
       relatedGuides={[{ title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }, { title: "IRS Form 8949", href: "/taxes/learn/irs-form-8949" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "CoinLedger (formerly CryptoTrader.Tax) offers simple, beginner-friendly crypto tax reporting with TurboTax integration.", "url": "https://degen0x.com/taxes/reviews/coinledger", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

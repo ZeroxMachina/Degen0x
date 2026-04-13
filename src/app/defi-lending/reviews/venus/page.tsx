@@ -63,6 +63,7 @@ export default function VenusReview() {
       relatedGuides={[{ title: "Smart Contract Risks", href: "/defi-lending/learn/smart-contract-risks" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending & Borrowing Markets", "description": "Venus Protocol is the largest lending and borrowing platform on BNB Chain, offering money markets for dozens of assets plus a decentralized stablecoin (VAI)", "url": "https://degen0x.com/defi-lending/reviews/venus", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

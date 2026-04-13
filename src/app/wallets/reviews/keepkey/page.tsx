@@ -79,6 +79,7 @@ export default function KeepKeyReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Design & Display", "description": "KeepKey hardware wallet review: Security, supported coins, setup guide. Compare with Ledger, Trezor, and other top hardware wallet options.", "url": "https://degen0x.com/wallets/reviews/keepkey", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

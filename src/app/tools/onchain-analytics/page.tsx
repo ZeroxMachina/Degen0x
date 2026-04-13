@@ -566,6 +566,15 @@ export default function OnChainAnalyticsDashboard() {
           }}
         />
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/tools/sentiment-heatmap" style={{ color: "#fb923c", marginRight: "1rem" }}>Sentiment Heatmap</a>
+        
+          <a href="/tools/crypto-wrapped" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Wrapped</a>
+        
+          <a href="/tools/tax-optimizer" style={{ color: "#fb923c", marginRight: "1rem" }}>Tax Optimizer</a>
+        </nav>
     </main>
   );
 }

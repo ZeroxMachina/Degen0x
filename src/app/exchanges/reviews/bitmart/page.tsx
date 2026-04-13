@@ -162,6 +162,7 @@ export default function BitMartReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Selection & Listings", "description": "BitMart is a centralized crypto exchange offering 1,000+ tokens with a focus on altcoin variety, futures trading, and fiat on-ramp accessibility across 180+", "url": "https://degen0x.com/exchanges/reviews/bitmart", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

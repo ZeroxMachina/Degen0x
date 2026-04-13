@@ -46,6 +46,7 @@ export default function AaveLoansReview() {
       relatedGuides={[{ title: "Liquidation Risk", href: "/crypto-loans/learn/liquidation-risk" }, { title: "LTV Explained", href: "/crypto-loans/learn/ltv-ratio-explained" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave Loans Review 2026: DeFi Borrowing Guide", "description": "In-depth review of borrowing on Aave. Covers rates, collateral options, liquidation mechanics, multi-chain availability, and borrowing tips. Updated March 2026.", "url": "https://degen0x.com/crypto-loans/reviews/aave-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

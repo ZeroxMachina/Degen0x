@@ -501,7 +501,9 @@ export default function BestProjectsArbitrum() {
   <a href="/ecosystem/chainlink" style={{ color: "#fb923c", marginRight: "1rem" }}>Chainlink</a>
   <a href="/ecosystem/convex" style={{ color: "#fb923c", marginRight: "1rem" }}>Convex</a>
   <a href="/ecosystem/best-projects-on-zksync" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Projects On Zksync</a>
-</nav>
+
+          <a href="/ecosystem/thala" style={{ color: "#fb923c", marginRight: "1rem" }}>Thala</a>
+        </nav>
 
 </article>
   );

@@ -568,7 +568,9 @@ export default function TEEVerifiableComputeGuide() {
   <a href="/learn/smart-contract-security-audit-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Smart Contract Security Audit Guide 2026</a>
   <a href="/learn/layer-0-blockchain-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Layer 0 Blockchain Explained</a>
   <a href="/learn/embed-widgets-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Embed Widgets Crypto</a>
-</nav>
+
+          <a href="/learn/solana-token-extensions-token-2022-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Token Extensions Token 2022 Guide 2026</a>
+        </nav>
       </article>
     <BackToTop />
     

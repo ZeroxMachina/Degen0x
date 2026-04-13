@@ -518,6 +518,7 @@ export default function BestColdWalletUnder100() {
           })),
         }),
       }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Cold Wallets Under $100 in 2026", "description": "Top 5 secure hardware wallets under $100: Ledger Nano S Plus, Trezor One, SafePal S1, Tangem, Keystone Essential. Compare features, security, and value.", "url": "https://degen0x.com/wallets/best-cold-wallet-under-100", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

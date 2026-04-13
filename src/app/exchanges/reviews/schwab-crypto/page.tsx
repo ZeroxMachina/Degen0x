@@ -82,6 +82,7 @@ As a publicly traded company (SCHW) and one of the most heavily regulated financ
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Charles Schwab crypto review covering Bitcoin ETF access, trading options, fees, and whether Schwab is right for crypto investors.", "url": "https://degen0x.com/exchanges/reviews/schwab-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -148,6 +148,7 @@ For merchants, BitPay processes over one billion dollars in crypto payments annu
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BitPay Debit Card Experience", "description": "Comprehensive BitPay review covering crypto payment processing, debit card features, supported currencies, fees, and whether BitPay is the right crypto", "url": "https://degen0x.com/spending/reviews/bitpay", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

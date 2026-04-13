@@ -132,6 +132,7 @@ Moon targets Bitcoin users who prefer not to maintain a separate crypto debit ca
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How Moon Works", "description": "Detailed Moon browser extension review covering crypto checkout at online retailers, Lightning Network payments, supported stores, and how to spend Bitcoin", "url": "https://degen0x.com/spending/reviews/moon-browser", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

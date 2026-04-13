@@ -813,7 +813,9 @@ export default function CryptoWalletSecurityGuide() {
   <a href="/learn/crypto-gas-fees-transaction-costs-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Gas Fees Transaction Costs Guide 2026</a>
   <a href="/learn/smart-contract-security-audit-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Smart Contract Security Audit Guide</a>
   <a href="/learn/sonic-chain-fantom-defi-ecosystem-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Sonic Chain Fantom Defi Ecosystem Guide 2026</a>
-</nav>
+
+          <a href="/learn/tokenized-funds-institutional-defi-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Funds Institutional Defi Guide</a>
+        </nav>
       </article>
   );
 }

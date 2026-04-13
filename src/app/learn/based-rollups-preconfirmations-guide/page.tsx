@@ -908,7 +908,9 @@ export default function BasedRollupsGuide() {
   <a href="/learn/ethereum-layer-2-comparison-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Layer 2 Comparison Guide 2026</a>
   <a href="/learn/ethereum-verkle-trees-hegota-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Verkle Trees Hegota Guide 2026</a>
   <a href="/learn/hyperlane-permissionless-interoperability-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Hyperlane Permissionless Interoperability Guide 2026</a>
-</nav>
+
+          <a href="/learn/grayscale-hype-etf-defi-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Grayscale Hype Etf Defi Guide</a>
+        </nav>
       </article>
           <div style={{
         marginTop: "32px",

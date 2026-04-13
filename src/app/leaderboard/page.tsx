@@ -29,6 +29,7 @@ export default function LeaderboardPage() {
     <>
       <XPLeaderboard />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "XP Leaderboard — Top Degens on degen0x", "description": "Top degens ranked by XP. Complete courses, quizzes and daily challenges to earn XP and appear on the global leaderboard.", "url": "https://degen0x.com/leaderboard", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

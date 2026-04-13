@@ -452,6 +452,15 @@ export default function DominanceTrackerPage() {
           }}
         />
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/tools/exchange-cashback" style={{ color: "#fb923c", marginRight: "1rem" }}>Exchange Cashback</a>
+        
+          <a href="/tools/index-fund-simulator" style={{ color: "#fb923c", marginRight: "1rem" }}>Index Fund Simulator</a>
+        
+          <a href="/tools/social-sentiment" style={{ color: "#fb923c", marginRight: "1rem" }}>Social Sentiment</a>
+        </nav>
     </main>
   );
 }

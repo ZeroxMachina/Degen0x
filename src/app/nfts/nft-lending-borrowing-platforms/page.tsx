@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Borrow USDC against NFTs. Compare platforms, rates, and liquidation risks.",
     image: "https://degen0x.com/og-nfts.svg",
   },
-  alternates: { canonical: "https://degen0x.com/nfts/nft-lending-borrowing-platforms" },
+  alternates: { canonical: "/nfts/nft-lending-borrowing-platforms" },
 };
 
 const structuredData = {

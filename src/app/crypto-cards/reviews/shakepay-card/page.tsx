@@ -65,6 +65,7 @@ export default function ShakepayCardReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Cashback Rewards", "description": "Shakepay Card is a Canadian crypto Visa card that earns Bitcoin cashback on all purchases with no fees or minimum balance requirements.", "url": "https://degen0x.com/crypto-cards/reviews/shakepay-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

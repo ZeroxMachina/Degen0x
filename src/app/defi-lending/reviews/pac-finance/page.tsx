@@ -47,6 +47,7 @@ export default function PacFinanceReview() {
       relatedGuides={[{ title: "Points Farming in DeFi", href: "/defi-lending/learn/points-farming-defi" }, { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending & Borrowing", "description": "In-depth Pac Finance review covering lending on Blast, points farming, yield strategies, and risk analysis for this Blast-native lending protocol.", "url": "https://degen0x.com/defi-lending/reviews/pac-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

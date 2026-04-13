@@ -163,6 +163,7 @@ The platform is not available to US residents, positioning itself as a global al
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bybit Review 2026: Derivatives Trading, Fees, Pros & Cons", "description": "Complete Bybit review covering fast execution, derivatives trading engine, copy trading, fees, and security. Is Bybit right for you? Updated March 2026.", "url": "https://degen0x.com/exchanges/bybit", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

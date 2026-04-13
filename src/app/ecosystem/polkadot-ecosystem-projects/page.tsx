@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "Complete guide to Polkadot parachains.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-  alternates: { canonical: "https://degen0x.com/ecosystem/polkadot-ecosystem-projects" },
+  alternates: { canonical: "/ecosystem/polkadot-ecosystem-projects" },
 };
 
 const structuredData = {

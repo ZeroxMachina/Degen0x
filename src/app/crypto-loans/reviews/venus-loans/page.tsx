@@ -59,6 +59,7 @@ export default function VenusLoansReview() {
       relatedGuides={[{ title: "How to Get a Crypto Loan", href: "/crypto-loans/learn/how-to-get-crypto-loan" }, { title: "Loan Risks Guide", href: "/crypto-loans/learn/loan-risks-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending and Borrowing", "description": "Venus Protocol is the leading lending and borrowing platform on BNB Chain with its own VAI stablecoin.", "url": "https://degen0x.com/crypto-loans/reviews/venus-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

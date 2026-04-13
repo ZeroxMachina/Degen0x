@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: `Crypto News — Latest Crypto & Web3 News | ${SITE_NAME}`,
   description: `Stay up to date with the latest crypto news, DeFi updates, exchange announcements, regulatory changes, and market analysis. Curated by the ${SITE_NAME} editorial team.`,
   keywords: "crypto news, bitcoin news, ethereum news, DeFi news, blockchain updates, web3 news, regulatory updates, market analysis",
-  alternates: { canonical: "https://degen0x.com/news" },
+  alternates: { canonical: "/news" },
   openGraph: {
     title: `Crypto News — Latest Crypto & Web3 News | ${SITE_NAME}`,
     description: "Crypto news and market updates from degen0x. Protocol launches, regulation news, DeFi announcements, and daily briefings on Bitcoin, Ethereum, Web3.",

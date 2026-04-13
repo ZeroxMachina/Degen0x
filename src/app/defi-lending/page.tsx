@@ -236,6 +236,7 @@ export default function DefiLendingPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DeFi Lending Protocols", "description": "Compare the best DeFi lending protocols. Earn yield on your crypto, borrow against your assets, and explore liquidity pools. Expert reviews, guides, and tools.", "url": "https://degen0x.com/defi-lending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

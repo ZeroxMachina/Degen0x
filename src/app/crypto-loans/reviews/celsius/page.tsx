@@ -46,6 +46,7 @@ export default function CelsiusReview() {
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Celsius Review 2026: Lessons From the CeFi Collapse", "description": "Analysis of Celsius Network's collapse, what went wrong, and lessons for crypto lending users. Why platform due diligence matters more than ever.", "url": "https://degen0x.com/crypto-loans/reviews/celsius", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

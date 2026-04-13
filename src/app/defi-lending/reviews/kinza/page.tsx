@@ -47,6 +47,7 @@ export default function KinzaReview() {
       relatedGuides={[{ title: "DeFi on BNB Chain", href: "/defi-lending/learn/defi-on-bnb-chain" }, { title: "Yield Optimizer Guide", href: "/defi-lending/learn/yield-optimizer-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave V3 Features on BNB Chain", "description": "Comprehensive Kinza Finance review covering Aave V3-based lending on BNB Chain, yield rates, KZA token rewards, and protocol risk analysis.", "url": "https://degen0x.com/defi-lending/reviews/kinza", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

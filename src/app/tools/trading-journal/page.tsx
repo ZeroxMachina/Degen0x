@@ -739,6 +739,15 @@ export default function TradingJournalPage() {
           }}
         />
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/tools/token-compare" style={{ color: "#fb923c", marginRight: "1rem" }}>Token Compare</a>
+        
+          <a href="/tools/regulatory-map" style={{ color: "#fb923c", marginRight: "1rem" }}>Regulatory Map</a>
+        
+          <a href="/tools/robo-advisor" style={{ color: "#fb923c", marginRight: "1rem" }}>Robo Advisor</a>
+        </nav>
     </main>
   );
 }

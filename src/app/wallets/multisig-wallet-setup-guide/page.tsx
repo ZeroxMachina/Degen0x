@@ -770,7 +770,8 @@ export default function MultisigWalletSetupGuide() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+              <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multisig Wallet Setup Guide: M-of-N Signing Explained", "description": "Complete multisig wallet setup guide. Learn M-of-N signing, top wallets (Gnosis Safe, Squads, Caravan), costs, use cases, and step-by-step Safe{Wallet} setup.", "url": "https://degen0x.com/wallets/multisig-wallet-setup-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/wallets/best-wallet-for-cosmos-ecosystem" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Wallet For Cosmos Ecosystem</a>

@@ -103,6 +103,7 @@ export default function SparrowReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Transaction Analysis", "description": "Sparrow Wallet review covering Bitcoin transaction analysis, PSBT support, hardware wallet integration, and privacy features for power users.", "url": "https://degen0x.com/wallets/reviews/sparrow", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

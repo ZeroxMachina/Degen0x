@@ -134,6 +134,7 @@ export default function SolendReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Main Pool & Isolated Pools", "description": "Detailed Solend review covering lending rates, isolated pools, governance, and how this OG Solana lending protocol compares to newer alternatives.", "url": "https://degen0x.com/defi-lending/reviews/solend", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

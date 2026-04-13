@@ -43,6 +43,7 @@ export default function PortfolioTrackerPage() {
     <>
       <PortfolioTrackerClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Portfolio Tracker — Multi-Chain Crypto Portfolio | degen0x", "description": "Track your multi-chain crypto portfolio — tokens, LP positions, staking rewards, and performance charts.", "url": "https://degen0x.com/portfolio-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

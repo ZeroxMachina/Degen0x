@@ -63,6 +63,7 @@ export default function EulerReview() {
       relatedGuides={[{ title: "Smart Contract Risks", href: "/defi-lending/learn/smart-contract-risks" }, { title: "Lending Risks Guide", href: "/defi-lending/learn/lending-risks-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Euler V2 Vault Architecture", "description": "Euler Finance is a permissionless lending protocol that relaunched as Euler V2 with a modular vault architecture, allowing anyone to create customized lending", "url": "https://degen0x.com/defi-lending/reviews/euler", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

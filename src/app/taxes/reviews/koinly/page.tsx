@@ -348,6 +348,23 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/taxes/reviews/coinledger" style={{ color: "#fb923c", marginRight: "1rem" }}>Coinledger</a>
+        
+          <a href="/taxes/reviews/hr-block-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Hr Block Crypto</a>
+        
+          <a href="/taxes/reviews/cryptotaxcalculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Cryptotaxcalculator</a>
+        
+          <a href="/taxes/reviews/tokentax" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokentax</a>
+        
+          <a href="/taxes/reviews/cointracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Cointracker</a>
+        
+          <a href="/taxes/reviews/taxbit" style={{ color: "#fb923c", marginRight: "1rem" }}>Taxbit</a>
+        
+          <a href="/taxes/reviews/coinpanda" style={{ color: "#fb923c", marginRight: "1rem" }}>Coinpanda</a>
+        </nav>
     </main>
   );
 }

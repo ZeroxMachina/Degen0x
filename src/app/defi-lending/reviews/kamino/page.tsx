@@ -132,6 +132,7 @@ export default function KaminoReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Automated Liquidity Vaults", "description": "In-depth Kamino Finance review covering automated liquidity vaults, lending markets, yield strategies, and whether it is the right Solana DeFi protocol for you.", "url": "https://degen0x.com/defi-lending/reviews/kamino", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

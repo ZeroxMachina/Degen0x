@@ -544,7 +544,9 @@ export default function HowToTransferCryptoBetweenWallets() {
   <a href="/learn/ethereum-sharding-roadmap-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Sharding Roadmap Explained</a>
   <a href="/learn/nftfi-nft-finance-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Nftfi Nft Finance Guide 2026</a>
   <a href="/learn/what-is-a-stablecoin-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>What Is A Stablecoin Guide</a>
-</nav>
+
+          <a href="/learn/solana-developer-platform-sdp-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Developer Platform Sdp Guide</a>
+        </nav>
       </article>
   );
 }

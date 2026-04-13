@@ -43,6 +43,7 @@ export default function NotificationsPage() {
     <>
       <NotificationsClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Notifications | degen0x", "description": "Real-time crypto notifications — price alerts, whale moves, streak reminders, and more.", "url": "https://degen0x.com/notifications", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

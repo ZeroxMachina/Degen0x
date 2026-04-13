@@ -68,6 +68,7 @@ As the Bitcoin NFT ecosystem matures, Ordinals Market competes with Magic Eden, 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Inscription Trading Experience", "description": "In-depth Ordinals Market review covering Bitcoin inscription trading, BRC-20 tokens, fees, features, and whether it is the right platform for Bitcoin NFTs.", "url": "https://degen0x.com/nfts/reviews/ordinals-market", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

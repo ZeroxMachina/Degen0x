@@ -104,6 +104,7 @@ export default function ColdcardReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Air-Gapped Operation", "description": "Coldcard hardware wallet review covering air-gapped security, advanced Bitcoin features, seed management, and why it is the gold standard for Bitcoin cold", "url": "https://degen0x.com/wallets/reviews/coldcard", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

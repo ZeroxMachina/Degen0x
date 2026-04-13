@@ -216,7 +216,7 @@ export default function BlogPage() {
           })}
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blog", "description": "Stay ahead with degen0x blog. Market analysis, DeFi updates, regulation news, and expert guides for crypto investors.", "url": "https://degen0x.com/blog"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blog", "description": "Stay ahead with degen0x blog. Market analysis, DeFi updates, regulation news, and expert guides for crypto investors.", "url": "https://degen0x.com/blog", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

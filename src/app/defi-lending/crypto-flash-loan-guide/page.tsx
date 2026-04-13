@@ -396,7 +396,67 @@ export default function CryptoFlashLoanGuide() {
   <a href="/defi-lending/compound-v3-usdc-lending" style={{ color: "#fb923c", marginRight: "1rem" }}>Compound V3 Usdc Lending</a>
   <a href="/defi-lending/defi-credit-scoring-protocols" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Credit Scoring Protocols</a>
   <a href="/defi-lending/best/cross-chain" style={{ color: "#fb923c", marginRight: "1rem" }}>Cross Chain</a>
-</nav>
+
+          <a href="/defi-lending/reviews/centrifuge" style={{ color: "#fb923c", marginRight: "1rem" }}>Centrifuge</a>
+        
+          <a href="/defi-lending/reviews/granary" style={{ color: "#fb923c", marginRight: "1rem" }}>Granary</a>
+        
+          <a href="/defi-lending/reviews/euler" style={{ color: "#fb923c", marginRight: "1rem" }}>Euler</a>
+        
+          <a href="/defi-lending/reviews/compound" style={{ color: "#fb923c", marginRight: "1rem" }}>Compound</a>
+        
+          <a href="/defi-lending/reviews/maple-finance" style={{ color: "#fb923c", marginRight: "1rem" }}>Maple Finance</a>
+        
+          <a href="/defi-lending/reviews/yearn" style={{ color: "#fb923c", marginRight: "1rem" }}>Yearn</a>
+        
+          <a href="/defi-lending/reviews/yei-finance" style={{ color: "#fb923c", marginRight: "1rem" }}>Yei Finance</a>
+        
+          <a href="/defi-lending/reviews/sonne" style={{ color: "#fb923c", marginRight: "1rem" }}>Sonne</a>
+        
+          <a href="/defi-lending/reviews/truefi" style={{ color: "#fb923c", marginRight: "1rem" }}>Truefi</a>
+        
+          <a href="/defi-lending/reviews/extra-finance" style={{ color: "#fb923c", marginRight: "1rem" }}>Extra Finance</a>
+        
+          <a href="/defi-lending/reviews/tarot" style={{ color: "#fb923c", marginRight: "1rem" }}>Tarot</a>
+        
+          <a href="/defi-lending/reviews/clearpool" style={{ color: "#fb923c", marginRight: "1rem" }}>Clearpool</a>
+        
+          <a href="/defi-lending/reviews/radiant" style={{ color: "#fb923c", marginRight: "1rem" }}>Radiant</a>
+        
+          <a href="/defi-lending/reviews/solend" style={{ color: "#fb923c", marginRight: "1rem" }}>Solend</a>
+        
+          <a href="/defi-lending/reviews/mendi" style={{ color: "#fb923c", marginRight: "1rem" }}>Mendi</a>
+        
+          <a href="/defi-lending/reviews/impermax" style={{ color: "#fb923c", marginRight: "1rem" }}>Impermax</a>
+        
+          <a href="/defi-lending/reviews/spark" style={{ color: "#fb923c", marginRight: "1rem" }}>Spark</a>
+        
+          <a href="/defi-lending/reviews/seamless" style={{ color: "#fb923c", marginRight: "1rem" }}>Seamless</a>
+        
+          <a href="/defi-lending/reviews/kinza" style={{ color: "#fb923c", marginRight: "1rem" }}>Kinza</a>
+        
+          <a href="/defi-lending/reviews/benqi" style={{ color: "#fb923c", marginRight: "1rem" }}>Benqi</a>
+        
+          <a href="/defi-lending/reviews/sturdy" style={{ color: "#fb923c", marginRight: "1rem" }}>Sturdy</a>
+        
+          <a href="/defi-lending/reviews/lendle" style={{ color: "#fb923c", marginRight: "1rem" }}>Lendle</a>
+        
+          <a href="/defi-lending/reviews/layerbank" style={{ color: "#fb923c", marginRight: "1rem" }}>Layerbank</a>
+        
+          <a href="/defi-lending/reviews/credix" style={{ color: "#fb923c", marginRight: "1rem" }}>Credix</a>
+        
+          <a href="/defi-lending/reviews/mango-markets" style={{ color: "#fb923c", marginRight: "1rem" }}>Mango Markets</a>
+        
+          <a href="/defi-lending/reviews/moonwell" style={{ color: "#fb923c", marginRight: "1rem" }}>Moonwell</a>
+        
+          <a href="/defi-lending/reviews/marginfi" style={{ color: "#fb923c", marginRight: "1rem" }}>Marginfi</a>
+        
+          <a href="/defi-lending/reviews/fraxlend" style={{ color: "#fb923c", marginRight: "1rem" }}>Fraxlend</a>
+        
+          <a href="/defi-lending/reviews/juice-finance" style={{ color: "#fb923c", marginRight: "1rem" }}>Juice Finance</a>
+        
+          <a href="/defi-lending/reviews/aurelius" style={{ color: "#fb923c", marginRight: "1rem" }}>Aurelius</a>
+        </nav>
       </article>
   );
 }

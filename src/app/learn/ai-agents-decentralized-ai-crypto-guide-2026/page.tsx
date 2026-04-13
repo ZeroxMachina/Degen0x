@@ -841,7 +841,9 @@ export default function AIAgentsGuide() {
   <a href="/learn/bitcoin-lightning-network" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Lightning Network</a>
   <a href="/learn/magic-eden-nft-marketplace-me-token-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Magic Eden Nft Marketplace Me Token Guide 2026</a>
   <a href="/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Restaking Comparison Eigenlayer Symbiotic Karak 2026</a>
-</nav>
+
+          <a href="/learn/crypto-custody-solutions-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Custody Solutions Explained</a>
+        </nav>
       </article>
   );
 }

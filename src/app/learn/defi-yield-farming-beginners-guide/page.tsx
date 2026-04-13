@@ -615,7 +615,9 @@ export default function DeFiYieldFarmingBeginnersGuide() {
   <a href="/learn/glossary/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
   <a href="/learn/flash-loans-explained-how-they-work" style={{ color: "#fb923c", marginRight: "1rem" }}>Flash Loans Explained How They Work</a>
   <a href="/learn/zk-rollups-vs-optimistic-rollups" style={{ color: "#fb923c", marginRight: "1rem" }}>Zk Rollups Vs Optimistic Rollups</a>
-</nav>
+
+          <a href="/learn/aztec-network-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Aztec Network Guide</a>
+        </nav>
       </article>
   );
 }

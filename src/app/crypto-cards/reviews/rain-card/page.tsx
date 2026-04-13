@@ -150,6 +150,7 @@ The Rain Card fills a specific niche: it is the Bitcoin on-ramp for people who d
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rain Card Review 2026: Bitcoin Rewards Credit Card,", "description": "Our in-depth Rain Card review covers automatic Bitcoin cashback, credit-building benefits, no annual fee, mainstream-friendly design, and how it compares to", "url": "https://degen0x.com/crypto-cards/reviews/rain-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -144,6 +144,7 @@ export default function SafeWalletReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Signature Security Model", "description": "Safe is the industry-standard multisig wallet securing over $100 billion in digital assets, used by DAOs, protocols, and institutions for shared treasury", "url": "https://degen0x.com/wallets/reviews/safe-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

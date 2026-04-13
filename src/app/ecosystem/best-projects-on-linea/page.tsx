@@ -463,7 +463,9 @@ export default function BestProjectsOnLinea() {
   <a href="/ecosystem/lido-v2" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido V2</a>
   <a href="/ecosystem/rocketpool" style={{ color: "#fb923c", marginRight: "1rem" }}>Rocketpool</a>
   <a href="/ecosystem/pendle" style={{ color: "#fb923c", marginRight: "1rem" }}>Pendle</a>
-</nav>
+
+          <a href="/ecosystem/polkadot-ecosystem-projects" style={{ color: "#fb923c", marginRight: "1rem" }}>Polkadot Ecosystem Projects</a>
+        </nav>
 
 </article>
   );

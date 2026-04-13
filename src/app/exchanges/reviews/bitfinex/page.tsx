@@ -91,6 +91,7 @@ export default function BitfinexReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Features", "description": "Detailed Bitfinex review covering margin trading, fees, security, and advanced features. Everything you need to know about Bitfinex.", "url": "https://degen0x.com/exchanges/reviews/bitfinex", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

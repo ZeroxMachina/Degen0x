@@ -296,6 +296,7 @@ export default function Web3JobsGuide() {
           </Link>
         </div>
       </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Jobs Guide 2026: Careers, Salaries, Skills Required", "description": "Web3 jobs: developer, DAO operations, community management, product. Salaries, skills, hiring trends, remote work.", "url": "https://degen0x.com/web3-business/web3-jobs-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
 
   );

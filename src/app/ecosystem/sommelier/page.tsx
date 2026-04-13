@@ -128,6 +128,13 @@ export default function SommelierGuidePage() {
         </section>
 
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/etherfi" style={{ color: "#fb923c", marginRight: "1rem" }}>Etherfi</a>
+        
+          <a href="/spending/compare/crypto-com-pay-vs-bitpay" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com Pay Vs Bitpay</a>
+        </nav>
     </main>
   );
 }

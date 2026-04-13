@@ -58,6 +58,7 @@ export default function CredixReview() {
       relatedGuides={[{ title: "Real World Asset Lending", href: "/defi-lending/learn/real-world-asset-lending" }, { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Emerging Market Credit Strategy", "description": "In-depth Credix review covering emerging market lending on Solana, fintech borrower network, tranched credit pools, and risk-adjusted yields.", "url": "https://degen0x.com/defi-lending/reviews/credix", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

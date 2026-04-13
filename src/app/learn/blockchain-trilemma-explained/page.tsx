@@ -390,7 +390,9 @@ export default function BlockchainTrilemma() {
   <a href="/learn/bitcoin-taproot-upgrade-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Taproot Upgrade Explained</a>
   <a href="/learn/gamblefi-onchain-betting-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Gamblefi Onchain Betting Guide 2026</a>
   <a href="/learn/how-blockchain-works-simple-explanation" style={{ color: "#fb923c", marginRight: "1rem" }}>How Blockchain Works Simple Explanation</a>
-</nav>
+
+          <a href="/learn/crypto-inheritance-planning" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Inheritance Planning</a>
+        </nav>
       </article>
   );
 }

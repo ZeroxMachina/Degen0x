@@ -1086,6 +1086,11 @@ export default function PumpfunPumpswapLaunchpadsPage() {
           }}
         />
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/stablechains-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Stablechains Guide 2026</a>
+        </nav>
     </main>
   );
 }

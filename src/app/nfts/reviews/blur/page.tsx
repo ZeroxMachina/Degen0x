@@ -133,6 +133,7 @@ Beyond trading, Blur introduced Blend, an NFT lending protocol that allows users
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blur Review 2026: Fees, Features, Pros & Cons", "description": "Our in-depth Blur review covers zero fees, trading tools, BLUR token rewards, pros and cons, and whether it's the right NFT marketplace for you. Updated March 2026.", "url": "https://degen0x.com/nfts/reviews/blur", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

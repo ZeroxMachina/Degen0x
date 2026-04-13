@@ -35,6 +35,7 @@ export default function EcosystemPage() {
     <>
       <EcosystemStore />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "dApp Ecosystem — Every Protocol on Every Chain | degen0x", "description": "Every dApp across every chain. Filter, compare, and learn about protocols — DeFi, NFTs, gaming, bridges, wallets and more.", "url": "https://degen0x.com/ecosystem", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

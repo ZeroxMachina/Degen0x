@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "DeFi 2026",
   ],
   alternates: {
-    canonical: "https://degen0x.com/learn/etherfi-weeth-liquid-restaking-guide-2026",
+    canonical: "/learn/etherfi-weeth-liquid-restaking-guide-2026",
   },
   openGraph: {
     type: "article",

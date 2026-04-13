@@ -123,6 +123,7 @@ export default function WalletComparisonsHub() {
         </div>
         </section>
       </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ledger vs Trezor", "description": "Hardware wallet comparison: Ledger Nano S/X vs Trezor One/T models. Features, price, and security analysis.", "url": "https://degen0x.com/compare/wallets", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 };

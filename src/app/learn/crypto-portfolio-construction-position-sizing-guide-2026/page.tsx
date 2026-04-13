@@ -722,7 +722,9 @@ export default function CryptoPortfolioConstructionGuide() {
   <a href="/learn/paradex-zk-perpetuals-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Paradex Zk Perpetuals Guide 2026</a>
   <a href="/learn/sonic-blockchain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Sonic Blockchain Guide</a>
   <a href="/learn/chainlink-ccip-cross-chain-interoperability-link-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Chainlink Ccip Cross Chain Interoperability Link Guide 2026</a>
-</nav>
+
+          <a href="/learn/protocol-owned-liquidity-pol-treasury-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Protocol Owned Liquidity Pol Treasury Guide 2026</a>
+        </nav>
       </article>
   );
 }

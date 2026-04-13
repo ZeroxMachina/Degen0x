@@ -63,6 +63,7 @@ export default function RadiantReview() {
       relatedGuides={[{ title: "DeFi Risks Guide", href: "/defi-lending/learn/lending-risks-guide" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cross-Chain Lending Architecture", "description": "Radiant Capital is an omnichain lending protocol built on LayerZero that enables users to deposit collateral on one chain and borrow against it on another,", "url": "https://degen0x.com/defi-lending/reviews/radiant", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

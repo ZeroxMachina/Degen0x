@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "degen0x Türkçe — Kripto Para Borsaları, Cüzdanlar ve DeFi",
   description:
     "degen0x, Türkiye için kapsamlı kripto para karşılaştırma platformudur. Borsaları, cüzdanları, DeFi protokollerini karşılaştırın; Türkiye'de vergi, düzenleme ve ücretsiz araçlar hakkında bilgi alın.",
-  alternates: { canonical: "https://degen0x.com/tr" },
+  alternates: { canonical: "/tr" },
   openGraph: {
     title: "degen0x Türkçe — Kripto Para Borsaları ve Yatırım Rehberi",
     description:

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "degen0x 日本語版 — 暗号資産取引所・ウォレット・DeFiを比較",
   description:
     "degen0x日本語版: 暗号資産総合比較プラットフォーム。DeFi、DEX、ウォレット比較、ステーキング戦略、無料ツール、2026年収益戦略。",
-  alternates: { canonical: "https://degen0x.com/ja" },
+  alternates: { canonical: "/ja" },
   openGraph: {
     title: "degen0x 日本語版 — 暗号資産比較・투資ガイド",
     description:

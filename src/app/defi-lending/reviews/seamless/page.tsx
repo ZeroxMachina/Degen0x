@@ -79,6 +79,7 @@ export default function SeamlessReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Integrated Liquidity Markets (ILMs)", "description": "Detailed Seamless Protocol review covering integrated lending loops, ILM strategies, yield rates, and how this Base-native lending protocol works.", "url": "https://degen0x.com/defi-lending/reviews/seamless", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

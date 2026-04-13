@@ -513,7 +513,13 @@ export default function StablecoinSpendingCardGuide() {
   <a href="/crypto-cards/best/prepaid" style={{ color: "#fb923c", marginRight: "1rem" }}>Prepaid</a>
   <a href="/crypto-cards/best/staking-rewards" style={{ color: "#fb923c", marginRight: "1rem" }}>Staking Rewards</a>
   <a href="/crypto-cards/best/no-annual-fee" style={{ color: "#fb923c", marginRight: "1rem" }}>No Annual Fee</a>
-</nav>
+
+          <a href="/crypto-cards/reviews/crypto-com-visa" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com Visa</a>
+        
+          <a href="/crypto-cards/reviews/swipe-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Swipe Card</a>
+        
+          <a href="/crypto-cards/reviews/shakepay-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Shakepay Card</a>
+        </nav>
 
 </article>
   );

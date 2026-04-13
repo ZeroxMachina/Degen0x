@@ -46,6 +46,7 @@ export default function NexoReview() {
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }, { title: "LTV Ratio Explained", href: "/crypto-loans/learn/ltv-ratio-explained" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nexo Review 2026: Rates, Security, Pros & Cons", "description": "In-depth Nexo review covering loan rates, earning products, security, and whether Nexo is the right crypto lending platform for you. Updated March 2026.", "url": "https://degen0x.com/crypto-loans/reviews/nexo", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

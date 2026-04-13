@@ -738,7 +738,9 @@ export default function CryptoTradingBotsGuidePage() {
   <a href="/learn/public-key-vs-private-key-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Public Key Vs Private Key Crypto</a>
   <a href="/learn/avail-da-unification-layer-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Avail Da Unification Layer Guide 2026</a>
   <a href="/learn/bitcoin-vs-gold-comparison-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Vs Gold Comparison Guide</a>
-</nav>
+
+          <a href="/learn/aerodrome-finance-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Aerodrome Finance Guide</a>
+        </nav>
       </article>
     </main>
   );

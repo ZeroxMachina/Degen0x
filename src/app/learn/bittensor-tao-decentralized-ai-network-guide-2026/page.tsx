@@ -908,7 +908,9 @@ export default function BittensorTAOGuide() {
   <a href="/learn/telegram-mini-apps-ton-gaming-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Telegram Mini Apps Ton Gaming Guide 2026</a>
   <a href="/learn/crypto-index-funds-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Index Funds Guide 2026</a>
   <a href="/learn/bitcoin-halving-explained-history" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Halving Explained History</a>
-</nav>
+
+          <a href="/learn/bitcoin-bitvm-programmability-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Bitvm Programmability Guide</a>
+        </nav>
       </article>
   );
 }

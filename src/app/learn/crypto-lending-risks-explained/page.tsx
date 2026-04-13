@@ -608,7 +608,9 @@ export default function CryptoLendingRisksGuide() {
   <a href="/learn/bitcoin-covenants-opcat-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Covenants Opcat Guide 2026</a>
   <a href="/learn/unichain-uniswap-layer-2-ecosystem-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Unichain Uniswap Layer 2 Ecosystem Guide 2026</a>
   <a href="/learn/abstract-chain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Abstract Chain Guide</a>
-</nav>
+
+          <a href="/learn/taiko-based-zk-rollup-ethereum-l2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Taiko Based Zk Rollup Ethereum L2 Guide 2026</a>
+        </nav>
       </article>
   );
 }

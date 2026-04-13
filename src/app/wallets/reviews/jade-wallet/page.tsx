@@ -144,6 +144,7 @@ export default function JadeWalletReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Air-Gapped QR Code Signing", "description": "Blockstream Jade is a fully open-source Bitcoin hardware wallet featuring air-gapped QR code signing, a virtual secure element, and native Liquid Network", "url": "https://degen0x.com/wallets/reviews/jade-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

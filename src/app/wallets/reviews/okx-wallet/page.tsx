@@ -161,6 +161,7 @@ export default function OKXWalletReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DEX Aggregator & Cross-Chain Swaps", "description": "OKX Wallet is a multi-chain self-custody wallet supporting 80+ blockchains with a built-in DEX aggregator, cross-chain bridge, NFT marketplace, and integration", "url": "https://degen0x.com/wallets/reviews/okx-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -192,7 +192,15 @@ export default function TokenUnlocksCalendar() {
   <a href="/tools/liquidity-pool-explorer" style={{ color: "#fb923c", marginRight: "1rem" }}>Liquidity Pool Explorer</a>
   <a href="/tools/wallet-pnl-breakdown" style={{ color: "#fb923c", marginRight: "1rem" }}>Wallet Pnl Breakdown</a>
   <a href="/tools/nft-rarity-checker" style={{ color: "#fb923c", marginRight: "1rem" }}>Nft Rarity Checker</a>
-</nav>
+
+          <a href="/tools/stablecoin-yield-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Stablecoin Yield Tracker</a>
+        
+          <a href="/tools/news-aggregator" style={{ color: "#fb923c", marginRight: "1rem" }}>News Aggregator</a>
+        
+          <a href="/tools/token-launch-radar" style={{ color: "#fb923c", marginRight: "1rem" }}>Token Launch Radar</a>
+        
+          <a href="/tools/token-radar" style={{ color: "#fb923c", marginRight: "1rem" }}>Token Radar</a>
+        </nav>
       </article>
   );
 }

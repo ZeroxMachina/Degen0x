@@ -52,6 +52,7 @@ export default function MorphoReview() {
       relatedGuides={[{ title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How P2P Matching Works", "description": "In-depth Morpho review covering P2P matching, Morpho Blue permissionless markets, rate improvements, security model, and token economics.", "url": "https://degen0x.com/defi-lending/reviews/morpho", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

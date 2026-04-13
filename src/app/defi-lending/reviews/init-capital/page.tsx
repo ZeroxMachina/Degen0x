@@ -79,6 +79,7 @@ export default function InitCapitalReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hooks-Based Architecture", "description": "In-depth Init Capital review covering composable lending hooks, position management, yield strategies, and protocol design on Mantle network.", "url": "https://degen0x.com/defi-lending/reviews/init-capital", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

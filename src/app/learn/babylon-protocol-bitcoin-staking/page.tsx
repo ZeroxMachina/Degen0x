@@ -1026,7 +1026,9 @@ export default function BabylonProtocolGuidePage() {
   <a href="/learn/token-vesting-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Token Vesting Explained</a>
   <a href="/learn/solana-firedancer-validator-client-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Firedancer Validator Client Guide 2026</a>
   <a href="/learn/stablechains-stablecoin-optimized-blockchains-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Stablechains Stablecoin Optimized Blockchains Guide 2026</a>
-</nav>
+
+          <a href="/learn/starknet-validity-rollup-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Starknet Validity Rollup Guide 2026</a>
+        </nav>
       </article>
     </div>
   );

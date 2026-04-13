@@ -161,6 +161,7 @@ export default function BitgetWalletReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "100+ Blockchain Support", "description": "Bitget Wallet (formerly BitKeep) is a multi-chain Web3 wallet supporting 100+ blockchains with built-in swap aggregation, launchpad access, and integration", "url": "https://degen0x.com/wallets/reviews/bitget-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

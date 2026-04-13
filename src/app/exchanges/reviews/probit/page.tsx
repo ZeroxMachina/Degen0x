@@ -161,6 +161,7 @@ export default function ProBitReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "IEO Launchpad", "description": "ProBit Global is a South Korean crypto exchange offering 800+ trading pairs, IEO launchpad, and staking with a focus on listing emerging projects early.", "url": "https://degen0x.com/exchanges/reviews/probit", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

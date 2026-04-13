@@ -382,7 +382,15 @@ export default function EthereumGasTracker() {
   <a href="/tools/price-alerts" style={{ color: "#fb923c", marginRight: "1rem" }}>Price Alerts</a>
   <a href="/tools/embed-widgets" style={{ color: "#fb923c", marginRight: "1rem" }}>Embed Widgets</a>
   <a href="/tools/mev-protection-dashboard" style={{ color: "#fb923c", marginRight: "1rem" }}>Mev Protection Dashboard</a>
-</nav>
+
+          <a href="/tools/screener" style={{ color: "#fb923c", marginRight: "1rem" }}>Screener</a>
+        
+          <a href="/tools/volatility-scanner" style={{ color: "#fb923c", marginRight: "1rem" }}>Volatility Scanner</a>
+        
+          <a href="/tools/tokenized-stocks-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Stocks Tracker</a>
+        
+          <a href="/tools/tax-loss-harvester" style={{ color: "#fb923c", marginRight: "1rem" }}>Tax Loss Harvester</a>
+        </nav>
       </article>
   );
 }

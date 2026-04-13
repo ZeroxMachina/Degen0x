@@ -126,6 +126,7 @@ export default function MapleFinanceReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Pool Delegates & Managed Pools", "description": "In-depth Maple Finance review covering institutional lending pools, Pool Delegates, MPL token, and the protocol's recovery and expansion into real-world credit markets.", "url": "https://degen0x.com/defi-lending/reviews/maple-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

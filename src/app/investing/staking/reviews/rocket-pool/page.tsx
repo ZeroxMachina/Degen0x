@@ -129,6 +129,7 @@ The protocol's dual-token system uses RPL as both a governance token and node op
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rocket Pool Review 2026: Fees, Yields, Pros & Cons", "description": "Our in-depth Rocket Pool review covers rETH, decentralized node operation, fees, yields, and whether it's the right staking protocol for you. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/rocket-pool", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

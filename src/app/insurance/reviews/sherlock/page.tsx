@@ -95,6 +95,7 @@ Sherlock's staking mechanism allows anyone to provide capital to the coverage po
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Audit Marketplace", "description": "Sherlock Protocol review: Smart contract security insurance. Coverage, claims, premiums. Compare crypto insurance and smart contract audit services.", "url": "https://degen0x.com/insurance/reviews/sherlock", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

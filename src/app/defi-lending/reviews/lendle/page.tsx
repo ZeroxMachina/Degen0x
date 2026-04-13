@@ -47,6 +47,7 @@ export default function LendleReview() {
       relatedGuides={[{ title: "DeFi on Mantle", href: "/defi-lending/learn/defi-on-mantle" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending on Mantle", "description": "In-depth Lendle review covering Aave V2-based lending on Mantle, yield rates, LEND token incentives, and the protocol's role in Mantle DeFi ecosystem.", "url": "https://degen0x.com/defi-lending/reviews/lendle", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

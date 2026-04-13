@@ -132,6 +132,7 @@ Purse.io also offers an escrow service to protect both parties in the transactio
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How Purse.io Works", "description": "In-depth Purse.io review covering Bitcoin-to-Amazon shopping discounts, peer-to-peer marketplace mechanics, fees, and how to save on Amazon purchases with", "url": "https://degen0x.com/spending/reviews/purse-io", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

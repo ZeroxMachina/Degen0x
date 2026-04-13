@@ -60,6 +60,7 @@ export default function CurvePage() {
     <>
       <CurveGuidePage />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Curve Finance Guide 2026: Stablecoin DEX & Liquidity", "description": "Complete guide to Curve Finance — the leading stablecoin DEX and liquidity protocol. Learn about veCRV, crvUSD, Curve pools, and yield strategies in 2026.", "url": "https://degen0x.com/ecosystem/curve", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -61,6 +61,7 @@ export default function YearnPage() {
     <>
       <YearnClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Yearn Finance: Automated Yield Optimizer Guide 2026 — $500M", "description": "Complete guide to Yearn Finance — the original DeFi yield optimizer with $500M+ TVL, 200+ active vaults, and V3 modular architecture. How vaults work, YFI", "url": "https://degen0x.com/ecosystem/yearn", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

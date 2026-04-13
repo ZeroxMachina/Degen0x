@@ -783,7 +783,9 @@ export default function BitcoinSafeHavenGuidePage() {
   <a href="/learn/rwa-platforms-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Rwa Platforms Comparison 2026</a>
   <a href="/learn/cross-chain-messaging-protocols-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Cross Chain Messaging Protocols Guide 2026</a>
   <a href="/learn/berachain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Berachain Guide</a>
-</nav>
+
+          <a href="/learn/erc-8183-agentic-commerce-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Erc 8183 Agentic Commerce Guide</a>
+        </nav>
       </article>
   );
 }

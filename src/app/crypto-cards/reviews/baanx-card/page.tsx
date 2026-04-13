@@ -51,6 +51,7 @@ export default function BaanxCardReviewPage() {
       relatedGuides={[{ title: "Prepaid vs Debit Crypto Cards", href: "/crypto-cards/learn/prepaid-vs-debit-crypto" }, { title: "Crypto Card Security Tips", href: "/crypto-cards/learn/crypto-card-security" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Debit and Credit Options", "description": "In-depth Baanx Card review covering crypto-native banking features, white-label infrastructure, credit line options, and regional availability.", "url": "https://degen0x.com/crypto-cards/reviews/baanx-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

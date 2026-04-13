@@ -136,6 +136,7 @@ The Fold+ premium subscription unlocks enhanced reward rates, additional daily s
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fold Visa Debit Card", "description": "Complete Fold App review covering Bitcoin rewards debit card, daily spin wheel, Lightning Network integration, and how to earn Bitcoin on everyday purchases.", "url": "https://degen0x.com/spending/reviews/fold-app", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -79,6 +79,7 @@ export default function FoundationReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Open-Source Philosophy", "description": "Foundation Passport hardware wallet review covering open-source design, air-gapped QR signing, premium build quality, and Bitcoin-focused features.", "url": "https://degen0x.com/wallets/reviews/foundation", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

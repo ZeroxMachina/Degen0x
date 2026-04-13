@@ -79,6 +79,7 @@ export default function MoonwellReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Base Deployment & Growth", "description": "Complete Moonwell review covering lending markets on Base and Moonbeam, yield rates, governance, safety features, and how it compares to alternatives.", "url": "https://degen0x.com/defi-lending/reviews/moonwell", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

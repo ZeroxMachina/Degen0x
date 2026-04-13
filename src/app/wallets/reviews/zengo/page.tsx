@@ -161,6 +161,7 @@ export default function ZenGoReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MPC Threshold Signature Technology", "description": "ZenGo is a keyless crypto wallet using MPC (multi-party computation) technology to eliminate seed phrases. Supports 120+ assets with built-in swaps, staking,", "url": "https://degen0x.com/wallets/reviews/zengo", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

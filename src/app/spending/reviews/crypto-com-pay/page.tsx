@@ -91,6 +91,7 @@ export default function CryptoComPayReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "CRO Cashback Rewards", "description": "Crypto.com Pay is a payment solution that lets users pay merchants with crypto while earning CRO cashback rewards, integrated within the Crypto.com ecosystem.", "url": "https://degen0x.com/spending/reviews/crypto-com-pay", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

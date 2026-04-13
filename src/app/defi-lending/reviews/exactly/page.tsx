@@ -47,6 +47,7 @@ export default function ExactlyReview() {
       relatedGuides={[{ title: "Fixed-Rate Yield Guide", href: "/defi-lending/learn/fixed-rate-yield-guide" }, { title: "DeFi on Optimism", href: "/defi-lending/learn/defi-on-optimism" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fixed-Rate Markets", "description": "In-depth Exactly Protocol review covering fixed-rate lending, variable markets, the EXA token, and how this Optimism protocol enables predictable DeFi yields.", "url": "https://degen0x.com/defi-lending/reviews/exactly", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

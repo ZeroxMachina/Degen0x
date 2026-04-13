@@ -727,7 +727,9 @@ export default function RestakingAVSEcosystemGuidePage() {
   <a href="/learn/l2-bridges-rollups-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>L2 Bridges Rollups Guide</a>
   <a href="/learn/nft-explained-complete-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Nft Explained Complete Guide</a>
   <a href="/learn/crypto-etf-in-kind-redemption-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Etf In Kind Redemption Guide 2026</a>
-</nav>
+
+          <a href="/learn/bitcoin-runes-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Runes Guide 2026</a>
+        </nav>
       </article>
 
       <BackToTop />

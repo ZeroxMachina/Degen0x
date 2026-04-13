@@ -155,6 +155,7 @@ Beyond trading, Gemini offers the Gemini Credit Card with crypto cashback reward
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Gemini Review 2026: Fees, Features, Pros & Cons", "description": "Our comprehensive Gemini review covers its SOC 2 certification, regulatory compliance, Gemini Earn, credit card, and more. Is Gemini right for you? Updated", "url": "https://degen0x.com/exchanges/reviews/gemini", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

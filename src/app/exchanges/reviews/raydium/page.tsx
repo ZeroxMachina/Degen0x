@@ -161,6 +161,7 @@ export default function RaydiumReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hybrid AMM + Order Book Model", "description": "Raydium is the leading AMM and liquidity hub on Solana, combining automated market-making with OpenBook's central limit order book for hybrid liquidity and efficient trading.", "url": "https://degen0x.com/exchanges/reviews/raydium", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

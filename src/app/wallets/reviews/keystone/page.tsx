@@ -161,6 +161,7 @@ export default function KeystoneReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Air-Gapped QR Code Communication", "description": "Keystone is an air-gapped hardware wallet using QR code communication instead of USB/Bluetooth. Features a large touchscreen, open-source firmware, and", "url": "https://degen0x.com/wallets/reviews/keystone", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

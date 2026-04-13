@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     description: "STON.fi, DeDust, Evaa, Telegram Mini Apps on TON. 900M Telegram users.",
     image: "https://degen0x.com/og-ecosystem.svg",
   },
-  alternates: { canonical: "https://degen0x.com/ecosystem/ton-blockchain-ecosystem-guide" },
+  alternates: { canonical: "/ecosystem/ton-blockchain-ecosystem-guide" },
 };
 
 const structuredData = {

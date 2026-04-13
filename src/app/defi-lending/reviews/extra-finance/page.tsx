@@ -79,6 +79,7 @@ export default function ExtraFinanceReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Leveraged Farming Mechanics", "description": "Complete Extra Finance review covering leveraged yield farming, lending markets, strategy vaults, and risk analysis on Optimism and Base networks.", "url": "https://degen0x.com/defi-lending/reviews/extra-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

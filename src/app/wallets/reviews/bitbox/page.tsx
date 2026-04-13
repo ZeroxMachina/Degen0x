@@ -103,6 +103,7 @@ export default function BitBoxReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security Model", "description": "BitBox02 hardware wallet review covering Swiss security, open-source firmware, minimalist design, and Bitcoin-only edition features.", "url": "https://degen0x.com/wallets/reviews/bitbox", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

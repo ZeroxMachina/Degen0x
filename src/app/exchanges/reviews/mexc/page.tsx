@@ -91,6 +91,7 @@ export default function MEXCReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Features", "description": "In-depth MEXC exchange review covering fees, features, security, and supported assets. Is MEXC the right exchange for you?", "url": "https://degen0x.com/exchanges/reviews/mexc", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

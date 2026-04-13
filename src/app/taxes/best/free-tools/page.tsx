@@ -11,7 +11,7 @@ import { Product } from "@/lib/types";
 export const metadata: Metadata = {
   title: "Free Tools — Crypto Tools",
   description: "Free crypto tax software and tools. Calculate taxes without paying fees. DeFi, staking, NFTs. Find the best free tax calculator for your needs.",
-  alternates: { canonical: "https://degen0x.com/taxes/best/free-tools" },
+  alternates: { canonical: "/taxes/best/free-tools" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};
 

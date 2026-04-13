@@ -94,6 +94,7 @@ Superfluid's programmable nature allows developers to build complex payment logi
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Superfluid review: Money streaming on blockchain. Real-time payments, subscriptions, payroll. Compare token streams and payment automation tools.", "url": "https://degen0x.com/web3-business/reviews/superfluid", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

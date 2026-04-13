@@ -82,6 +82,7 @@ Uphold operates as a licensed money services business in the US and holds regula
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Uphold review covering multi-asset trading, fees, supported cryptocurrencies, Anything-to-Anything feature, and whether Uphold suits your needs.", "url": "https://degen0x.com/exchanges/reviews/uphold", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

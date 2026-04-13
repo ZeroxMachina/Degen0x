@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description:
     "degen0x est votre guide de confiance pour les cryptomonnaies en français. Comparez les exchanges, wallets et protocoles DeFi. Avis d'experts, outils interactifs et guides complets pour investir dans la crypto.",
   alternates: {
-    canonical: "https://degen0x.com/fr",
+    canonical: "/fr",
     languages: {
       "fr": "https://degen0x.com/fr",
       "de": "https://degen0x.com/de",
@@ -396,6 +396,15 @@ export default function FrenchLandingPage() {
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/airdrops" style={{ color: "#fb923c", marginRight: "1rem" }}>Airdrops</a>
+        
+          <a href="/portfolio-analytics" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Analytics</a>
+        
+          <a href="/start" style={{ color: "#fb923c", marginRight: "1rem" }}>Start</a>
+        </nav>
     </main>
   );
 }

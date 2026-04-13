@@ -79,6 +79,7 @@ export default function FluidReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Collateral & Smart Debt", "description": "Comprehensive Fluid review covering smart debt and collateral, DEX integration, lending rates, and how Instadapp's lending protocol innovates on Ethereum.", "url": "https://degen0x.com/defi-lending/reviews/fluid", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

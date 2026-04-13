@@ -641,7 +641,12 @@ export default function FusakaGlamsterdamGuide() {
 
           <BackToTop />
         </div>
-      </main>
+      
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/hyperliquid-dex-hype-chain-perpetual-futures-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Hyperliquid Dex Hype Chain Perpetual Futures Guide 2026</a>
+        </nav>
+    </main>
     
         <script
           type="application/ld+json"

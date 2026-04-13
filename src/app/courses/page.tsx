@@ -51,7 +51,7 @@ export default function CoursesPage() {
         ]}
       />
       <CoursesHub />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Free Crypto Courses \u2014 Earn XP & Badges | degen0x", "description": "The most comprehensive free crypto curriculum. Learn Bitcoin, DeFi, Solana, Layer 2s, security, and more. Earn XP and badges as you progress. No signup", "url": "https://degen0x.com/courses"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Free Crypto Courses \u2014 Earn XP & Badges | degen0x", "description": "The most comprehensive free crypto curriculum. Learn Bitcoin, DeFi, Solana, Layer 2s, security, and more. Earn XP and badges as you progress. No signup", "url": "https://degen0x.com/courses", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

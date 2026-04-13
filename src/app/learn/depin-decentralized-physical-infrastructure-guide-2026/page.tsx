@@ -734,7 +734,9 @@ export default function DePINGuide() {
   <a href="/learn/monad-blockchain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Monad Blockchain Guide</a>
   <a href="/learn/dyor-token-research-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Dyor Token Research Guide 2026</a>
   <a href="/learn/rollup-as-a-service-raas-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Rollup As A Service Raas Explained</a>
-</nav>
+
+          <a href="/learn/sei-network-parallel-evm-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Sei Network Parallel Evm Guide</a>
+        </nav>
       </article>
   );
 }

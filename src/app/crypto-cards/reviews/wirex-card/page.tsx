@@ -51,6 +51,7 @@ export default function WirexCardReviewPage() {
       relatedGuides={[{ title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }, { title: "Traveling with Crypto", href: "/spending/learn/crypto-travel-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Currency Support", "description": "In-depth Wirex Card review covering multi-currency support, cryptoback rewards, X-Accounts yield, and whether it is the best card for global travelers.", "url": "https://degen0x.com/crypto-cards/reviews/wirex-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

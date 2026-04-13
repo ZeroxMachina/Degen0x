@@ -94,6 +94,7 @@ Integration is straightforward with well-documented APIs, SDKs for popular langu
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Stripe crypto payments review. Accept Bitcoin and crypto payments for your business. Compare payment processor features, fees, and requirements.", "url": "https://degen0x.com/web3-business/reviews/stripe-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

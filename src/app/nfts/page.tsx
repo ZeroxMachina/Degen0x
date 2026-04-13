@@ -323,6 +323,7 @@ export default function NftsPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best NFT Marketplaces", "description": "NFT guide: Marketplaces, collections, MEV, gas optimization. Learn buying, selling, trading NFTs on Ethereum, Solana, Polygon, and Arbitrum.", "url": "https://degen0x.com/nfts", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

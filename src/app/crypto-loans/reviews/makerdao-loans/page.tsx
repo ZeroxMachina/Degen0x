@@ -59,6 +59,7 @@ export default function MakerDAOLoansReview() {
       relatedGuides={[{ title: "Overcollateralization Explained", href: "/crypto-loans/learn/overcollateralization-explained" }, { title: "Stablecoin Lending", href: "/crypto-loans/learn/stablecoin-lending" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Vault System", "description": "MakerDAO enables borrowing DAI stablecoin against crypto collateral through the original DeFi lending protocol.", "url": "https://degen0x.com/crypto-loans/reviews/makerdao-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

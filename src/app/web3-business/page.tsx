@@ -218,6 +218,7 @@ export default function Web3BusinessPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DAO Treasury Tools", "description": "Web3 payment solutions for business: Accept crypto payments, convert to fiat instantly, payroll solutions. Coinbase, Stripe, Sablier, and more.", "url": "https://degen0x.com/web3-business", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

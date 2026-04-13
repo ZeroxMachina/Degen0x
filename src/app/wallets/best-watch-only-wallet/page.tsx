@@ -768,7 +768,8 @@ export default function BestWatchOnlyWallet() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+              <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Watch-Only Crypto Wallet: Portfolio Tracking Guide", "description": "Best watch-only wallets: Zerion (multi-chain), DeBank (DeFi tracking), Zapper (yield), Step Finance (Solana), Nansen (whale watching). Track coldware securely.", "url": "https://degen0x.com/wallets/best-watch-only-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </div>
       </article>
   );
 }

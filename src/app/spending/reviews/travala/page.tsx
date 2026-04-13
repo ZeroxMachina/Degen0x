@@ -134,6 +134,7 @@ The AVA token powers Travala's loyalty ecosystem. By staking AVA tokens, users u
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Booking Experience", "description": "Detailed Travala review covering crypto travel booking, supported cryptocurrencies, loyalty rewards, hotel and flight options, and whether Travala is the best", "url": "https://degen0x.com/spending/reviews/travala", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

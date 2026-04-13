@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "degen0x auf Deutsch — Krypto Exchanges, Wallets & DeFi",
   description: "degen0x ist Ihr vertrauenswürdiger Krypto-Ratgeber auf Deutsch. Vergleichen Sie Exchanges, Wallets und DeFi-Protokolle. Expertenbewertungen, kostenlose Tools",
   alternates: {
-    canonical: "https://degen0x.com/de",
+    canonical: "/de",
     languages: {
       "fr": "https://degen0x.com/fr",
       "de": "https://degen0x.com/de",
@@ -438,6 +438,15 @@ export default function GermanLandingPage() {
         <Link href="/fr" className="text-[var(--color-primary)] hover:underline">🇫🇷 Français</Link>
       </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x auf Deutsch \u2014 Krypto Exchanges, Wallets & DeFi", "description": "degen0x ist Ihr vertrauensw\u00fcrdiger Krypto-Ratgeber auf Deutsch. Vergleichen Sie Exchanges, Wallets und DeFi-Protokolle. Expertenbewertungen, kostenlose Tools", "url": "https://degen0x.com/de", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/portfolio-onchain" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Onchain</a>
+        
+          <a href="/portfolio-live" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Live</a>
+        
+          <a href="/daily-challenge" style={{ color: "#fb923c", marginRight: "1rem" }}>Daily Challenge</a>
+        </nav>
     </main>
   );
 }

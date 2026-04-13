@@ -59,6 +59,7 @@ export default function AccointingReview() {
       relatedGuides={[{ title: "Crypto Tax Guide", href: "/taxes/learn/crypto-tax-guide" }, { title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tax Reporting", "description": "Accointing (now part of Glassnode) offers crypto tax reporting and portfolio tracking with strong international support.", "url": "https://degen0x.com/taxes/reviews/accointing", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

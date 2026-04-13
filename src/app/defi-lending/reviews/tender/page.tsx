@@ -47,6 +47,7 @@ export default function TenderReview() {
       relatedGuides={[{ title: "DeFi on Arbitrum", href: "/defi-lending/learn/defi-on-arbitrum" }, { title: "Yield Risk Assessment", href: "/defi-lending/learn/yield-risk-assessment" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending Markets", "description": "Complete Tender.fi review covering lending on Arbitrum, oracle-based pricing, yield rates, and the protocol's position in the Arbitrum DeFi ecosystem.", "url": "https://degen0x.com/defi-lending/reviews/tender", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

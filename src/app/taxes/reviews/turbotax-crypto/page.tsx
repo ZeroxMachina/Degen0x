@@ -59,6 +59,7 @@ export default function TurboTaxCryptoReview() {
       relatedGuides={[{ title: "IRS Form 8949", href: "/taxes/learn/irs-form-8949" }, { title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tax Features", "description": "TurboTax's built-in crypto tax features offer basic crypto reporting integrated directly into the most popular US tax filing software.", "url": "https://degen0x.com/taxes/reviews/turbotax-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

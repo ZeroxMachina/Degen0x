@@ -115,6 +115,11 @@ export default function MEVGuide2026Page() {
           }}
         />
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/walrus-decentralized-storage-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Walrus Decentralized Storage Guide 2026</a>
+        </nav>
     </main>
   );
 }

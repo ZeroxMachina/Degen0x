@@ -30,6 +30,7 @@ export default function MultiChainPortfolioPage() {
     <>
       <MultiChainPortfolio />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Portfolio — ETH, SOL, Arbitrum, Optimism, Base", "description": "Track your entire crypto portfolio across Ethereum, Solana, Arbitrum, Optimism, and Base in one unified dashboard. Tokens, staked positions, and LP tracking.", "url": "https://degen0x.com/portfolio/multi-chain", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -47,6 +47,7 @@ export default function OrbitReview() {
       relatedGuides={[{ title: "Points Farming in DeFi", href: "/defi-lending/learn/points-farming-defi" }, { title: "Yield Risk Assessment", href: "/defi-lending/learn/yield-risk-assessment" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blast Native Yield Integration", "description": "Detailed Orbit Protocol review covering lending on Blast L2, native yield integration, borrowing markets, and risk assessment for this Blast-native protocol.", "url": "https://degen0x.com/defi-lending/reviews/orbit", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

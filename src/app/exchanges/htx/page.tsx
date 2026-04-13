@@ -163,6 +163,7 @@ The platform is not available to US residents but offers comprehensive features 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Huobi Global Review 2026: Trading Platform, Fees & Features", "description": "Complete Huobi Global (HTX) review covering trading features, derivatives, spot trading, and security. Is HTX right for you? Updated March 2026.", "url": "https://degen0x.com/exchanges/htx", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

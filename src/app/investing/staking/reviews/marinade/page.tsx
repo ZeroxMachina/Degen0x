@@ -130,6 +130,7 @@ The protocol is governed by the MNDE token, which allows holders to participate 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Marinade Review 2026: SOL Staking, mSOL, Pros & Cons", "description": "Our in-depth Marinade review covers mSOL, native staking, decentralization focus, and whether it's the right Solana staking protocol for you. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/marinade", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

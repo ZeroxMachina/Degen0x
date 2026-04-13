@@ -133,6 +133,7 @@ SPEDN supports a variety of cryptocurrencies including Bitcoin, Ethereum, Liteco
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "In-Store Payment Experience", "description": "Full SPEDN app review covering Flexa-powered crypto payments at retail stores, supported cryptocurrencies, merchant network, and in-store spending experience.", "url": "https://degen0x.com/spending/reviews/spedn", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

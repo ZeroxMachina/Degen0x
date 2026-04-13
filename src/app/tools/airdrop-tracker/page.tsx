@@ -714,6 +714,7 @@ export default function AirdropTrackerPage() {
             })
           }}
         />
-      </div>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Act Early", "description": "Omnichain liquidity protocol enabling seamless cross-chain communication", "url": "https://degen0x.com/tools/airdrop-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+    </div>
   );
 }

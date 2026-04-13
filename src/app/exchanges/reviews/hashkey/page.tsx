@@ -82,6 +82,7 @@ The exchange serves both retail and professional investors, offering spot tradin
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth HashKey Exchange review covering this licensed Hong Kong crypto exchange's fees, supported assets, security, and regulatory compliance.", "url": "https://degen0x.com/exchanges/reviews/hashkey", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

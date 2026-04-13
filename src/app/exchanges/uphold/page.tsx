@@ -185,7 +185,7 @@ export default function UpholdReview() {
           </section>
         </div>
       </div>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Uphold Review 2026: Multi-Asset Trading, Crypto & Fiat", "description": "Complete Uphold review covering multi-asset trading platform, crypto and fiat support, fees, and security. Updated March 2026.", "url": "https://degen0x.com/exchanges/uphold"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Uphold Review 2026: Multi-Asset Trading, Crypto & Fiat", "description": "Complete Uphold review covering multi-asset trading platform, crypto and fiat support, fees, and security. Updated March 2026.", "url": "https://degen0x.com/exchanges/uphold", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

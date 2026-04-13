@@ -1557,7 +1557,9 @@ const RealYieldGuide = () => {
   <a href="/learn/bridging-crypto-across-chains-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bridging Crypto Across Chains Guide</a>
   <a href="/learn/euler-v2-modular-lending-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Euler V2 Modular Lending Guide 2026</a>
   <a href="/learn/worldcoin-world-id-proof-of-personhood-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Worldcoin World Id Proof Of Personhood Guide 2026</a>
-</nav>
+
+          <a href="/learn/mev-maximal-extractable-value-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Mev Maximal Extractable Value Explained</a>
+        </nav>
       </article>
   );
 };

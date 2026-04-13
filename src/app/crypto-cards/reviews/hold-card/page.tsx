@@ -59,6 +59,7 @@ export default function HoldCardReviewPage() {
       relatedGuides={[{ title: "Prepaid vs Debit Crypto Cards", href: "/crypto-cards/learn/prepaid-vs-debit-crypto" }, { title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending Features", "description": "In-depth Hold Card review covering crypto spending features, cashback rewards, supported currencies, and whether this card suits everyday crypto users.", "url": "https://degen0x.com/crypto-cards/reviews/hold-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

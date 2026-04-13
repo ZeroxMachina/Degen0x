@@ -79,6 +79,7 @@ export default function BcVaultReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Non-Deterministic Key Generation", "description": "BC Vault hardware wallet review covering non-deterministic key generation, FeRAM storage, multiple backup methods, and unique security approach.", "url": "https://degen0x.com/wallets/reviews/bc-vault", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

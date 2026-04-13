@@ -47,6 +47,7 @@ export default function ZerolendReview() {
       relatedGuides={[{ title: "DeFi on zkSync", href: "/defi-lending/learn/defi-on-zksync" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Strategy", "description": "Complete ZeroLend review covering multi-chain lending on zkSync, Linea, Blast, and other L2s, with yield analysis, fees, and risk assessment.", "url": "https://degen0x.com/defi-lending/reviews/zerolend", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

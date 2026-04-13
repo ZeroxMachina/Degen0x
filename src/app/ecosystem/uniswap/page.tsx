@@ -61,6 +61,7 @@ export default function UniswapPage() {
     <>
       <UniswapClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Uniswap: The Original DEX Guide 2026 — Multi-Chain AMM", "description": "Complete guide to Uniswap — the pioneering decentralized exchange. Concentrated liquidity (v3), Uniswap v4 hooks, UNI governance, multi-chain deployment, and", "url": "https://degen0x.com/ecosystem/uniswap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

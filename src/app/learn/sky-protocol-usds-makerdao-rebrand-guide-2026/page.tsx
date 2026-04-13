@@ -264,7 +264,12 @@ export default function SkyProtocolGuide2026() {
           <li><Link className="text-sky-400 hover:underline" href="/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026">Ondo Finance tokenized Treasuries</Link></li>
           <li><Link className="text-sky-400 hover:underline" href="/learn/morpho-protocol-defi-lending-innovation-guide-2026">Morpho lending protocol</Link></li>
         </ul>
-      </main>
+      
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/learn/solana-lst-comparison-marinade-jito-sanctum-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Lst Comparison Marinade Jito Sanctum 2026</a>
+        </nav>
+    </main>
     </>
   );
 }

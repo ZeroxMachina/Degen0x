@@ -79,6 +79,7 @@ export default function BastionReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending & Borrowing Markets", "description": "In-depth Bastion Protocol review covering lending markets on Aurora/NEAR, yield rates, stableswap features, and protocol risk analysis.", "url": "https://degen0x.com/defi-lending/reviews/bastion", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

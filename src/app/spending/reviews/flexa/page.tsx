@@ -135,6 +135,7 @@ Flexa partners with multiple wallet providers to bring the payment capability to
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AMP Token Collateralization", "description": "In-depth Flexa review covering the AMP-powered payment network, merchant integration, supported wallets, instant crypto payments at retail, and the Flexa", "url": "https://degen0x.com/spending/reviews/flexa", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

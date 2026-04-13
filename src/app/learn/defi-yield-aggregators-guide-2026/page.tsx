@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: "Complete guide to DeFi yield aggregators. Auto-compounding, strategies, risks, and protocol comparison.",
   },
   alternates: {
-    canonical: "https://degen0x.com/learn/defi-yield-aggregators-guide-2026",
+    canonical: "/learn/defi-yield-aggregators-guide-2026",
   },
 };
 

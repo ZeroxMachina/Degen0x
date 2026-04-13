@@ -161,6 +161,7 @@ export default function TangemReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFC Card Design & Hardware", "description": "Tangem is a card-shaped hardware wallet using NFC technology and a secure chip (EAL6+). No batteries, no cables - just tap your phone to sign transactions.", "url": "https://degen0x.com/wallets/reviews/tangem", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

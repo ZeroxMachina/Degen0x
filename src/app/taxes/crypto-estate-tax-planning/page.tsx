@@ -545,7 +545,27 @@ export default function CryptoEstateTaxPlanning() {
   <a href="/taxes/international-crypto-tax-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>International Crypto Tax Comparison</a>
   <a href="/taxes/crypto-tax-loss-harvesting-complete-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax Loss Harvesting Complete Guide</a>
   <a href="/taxes/best/free-tools" style={{ color: "#fb923c", marginRight: "1rem" }}>Free Tools</a>
-</nav>
+
+          <a href="/taxes/crypto-tax-reporting-requirements-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax Reporting Requirements 2026</a>
+        
+          <a href="/taxes/crypto-mining-tax-implications" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Mining Tax Implications</a>
+        
+          <a href="/taxes/crypto-business-expense-deductions" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Business Expense Deductions</a>
+        
+          <a href="/taxes/calculators/capital-gains-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Capital Gains Calculator</a>
+        
+          <a href="/taxes/compare/crypto-tax-software-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax Software Comparison</a>
+        
+          <a href="/taxes/compare/tokentax-vs-coinledger" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokentax Vs Coinledger</a>
+        
+          <a href="/taxes/compare/koinly-vs-taxbit" style={{ color: "#fb923c", marginRight: "1rem" }}>Koinly Vs Taxbit</a>
+        
+          <a href="/taxes/compare/free-vs-paid-crypto-tax" style={{ color: "#fb923c", marginRight: "1rem" }}>Free Vs Paid Crypto Tax</a>
+        
+          <a href="/taxes/compare/cointracker-vs-zenledger" style={{ color: "#fb923c", marginRight: "1rem" }}>Cointracker Vs Zenledger</a>
+        
+          <a href="/taxes/compare/turbotax-vs-koinly" style={{ color: "#fb923c", marginRight: "1rem" }}>Turbotax Vs Koinly</a>
+        </nav>
     </article>
   );
 }

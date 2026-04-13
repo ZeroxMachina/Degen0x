@@ -163,6 +163,7 @@ export default function JupiterExchangeReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DEX Aggregation Engine", "description": "Jupiter is Solana's leading DEX aggregator, routing swaps across all Solana liquidity sources for the best prices. Also offers limit orders, DCA, and perpetual futures.", "url": "https://degen0x.com/exchanges/reviews/jupiter-exchange", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

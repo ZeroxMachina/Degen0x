@@ -578,6 +578,7 @@ export default function AboutPage() {
           </Link>
         </div>
       </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "About degen0x | Built by Degens, for Degens", "description": "Built by Degens, for Degens — Free, transparent, permissionless crypto infrastructure.", "url": "https://degen0x.com/about", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
   );
 }

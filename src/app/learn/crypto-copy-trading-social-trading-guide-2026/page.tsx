@@ -658,7 +658,9 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
   <a href="/learn/tokenized-treasuries-rwa-yield-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Treasuries Rwa Yield Guide 2026</a>
   <a href="/learn/scroll-zkevm-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Scroll Zkevm Guide 2026</a>
   <a href="/learn/glossary" style={{ color: "#fb923c", marginRight: "1rem" }}>Glossary</a>
-</nav>
+
+          <a href="/learn/plasma-xpl-stablecoin-chain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Plasma Xpl Stablecoin Chain Guide 2026</a>
+        </nav>
       </article>
   );
 }

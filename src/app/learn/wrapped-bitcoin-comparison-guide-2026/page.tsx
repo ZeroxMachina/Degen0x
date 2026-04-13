@@ -645,7 +645,9 @@ export default function WrappedBitcoinComparisonGuide() {
   <a href="/learn/eclipse-svm-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Eclipse Svm Layer 2 Guide 2026</a>
   <a href="/learn/ton-blockchain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Ton Blockchain Guide</a>
   <a href="/learn/cryptocurrency-beginners-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Cryptocurrency Beginners Guide 2026</a>
-</nav>
+
+          <a href="/learn/socialfi-creator-tokens-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Socialfi Creator Tokens Guide 2026</a>
+        </nav>
       </article>
     </div>
   );

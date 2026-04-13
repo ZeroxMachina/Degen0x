@@ -126,6 +126,7 @@ export default function NotionalReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fixed-Rate Lending Mechanics", "description": "In-depth Notional Finance review covering fixed-rate lending, fCash tokens, leveraged vaults, and the protocol's unique approach to predictable DeFi yields.", "url": "https://degen0x.com/defi-lending/reviews/notional", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

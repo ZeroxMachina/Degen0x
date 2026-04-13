@@ -63,6 +63,7 @@ export default function RiskHarborReviewPage() {
       relatedGuides={[{ title: "Insurance Protocols Compared", href: "/insurance/learn/insurance-protocols-compared" }, { title: "Complete Crypto Insurance Guide", href: "/insurance/learn/crypto-insurance-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Algorithmic Claim Assessment", "description": "Risk Harbor is an algorithmic DeFi insurance protocol that uses automated, trustless claim assessment for stablecoin depegging and yield-bearing asset", "url": "https://degen0x.com/insurance/reviews/risk-harbor", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

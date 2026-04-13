@@ -642,7 +642,9 @@ export default function RWATokenizationGuide() {
   <a href="/learn/cryptocurrency-for-dummies-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Cryptocurrency For Dummies Guide</a>
   <a href="/learn/l3-networks-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>L3 Networks Guide</a>
   <a href="/learn/focil-inclusion-lists-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Focil Inclusion Lists Guide 2026</a>
-</nav>
+
+          <a href="/learn/dydx-chain-cosmos-perpetual-futures-dex-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Dydx Chain Cosmos Perpetual Futures Dex Guide 2026</a>
+        </nav>
       </article>
   );
 }

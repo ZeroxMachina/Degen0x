@@ -126,6 +126,7 @@ export default function ClearpoolReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Single-Borrower Pool Model", "description": "In-depth Clearpool review covering permissionless unsecured lending pools, institutional borrowers, CPOOL token, and risk-adjusted yields for DeFi lenders.", "url": "https://degen0x.com/defi-lending/reviews/clearpool", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

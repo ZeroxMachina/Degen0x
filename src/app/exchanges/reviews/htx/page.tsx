@@ -91,6 +91,7 @@ export default function HTXReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Features", "description": "Comprehensive HTX (formerly Huobi) exchange review. Fees, security, features, and trading experience analyzed in detail.", "url": "https://degen0x.com/exchanges/reviews/htx", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

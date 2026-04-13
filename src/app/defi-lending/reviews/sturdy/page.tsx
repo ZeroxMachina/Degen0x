@@ -47,6 +47,7 @@ export default function SturdyReview() {
       relatedGuides={[{ title: "DeFi on Ethereum", href: "/defi-lending/learn/defi-on-ethereum" }, { title: "Yield Optimizer Guide", href: "/defi-lending/learn/yield-optimizer-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Isolated Lending Pairs", "description": "Complete Sturdy Finance review covering isolated lending pairs, yield aggregation, vault strategies, and the protocol's V2 redesign after its exploit.", "url": "https://degen0x.com/defi-lending/reviews/sturdy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

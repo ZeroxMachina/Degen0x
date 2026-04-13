@@ -184,6 +184,13 @@ export default function JupiterGuidePage() {
           </ul>
         </nav>
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/sudoswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Sudoswap</a>
+        
+          <a href="/spending/reviews/bitpay" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitpay</a>
+        </nav>
     </main>
   );
 }

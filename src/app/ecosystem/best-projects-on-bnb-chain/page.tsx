@@ -455,7 +455,9 @@ export default function BestProjectsOnBNBChain2026() {
   <a href="/ecosystem/jito" style={{ color: "#fb923c", marginRight: "1rem" }}>Jito</a>
   <a href="/ecosystem/uniswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Uniswap</a>
   <a href="/ecosystem/liquidswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Liquidswap</a>
-</nav>
+
+          <a href="/ecosystem/instadapp" style={{ color: "#fb923c", marginRight: "1rem" }}>Instadapp</a>
+        </nav>
 
 </article>
   );

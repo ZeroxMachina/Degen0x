@@ -162,6 +162,7 @@ export default function HyperliquidReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Custom L1 Blockchain Architecture", "description": "Hyperliquid is a decentralized perpetual futures exchange built on its own L1 blockchain, offering CEX-level performance with on-chain transparency, zero gas", "url": "https://degen0x.com/exchanges/reviews/hyperliquid", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

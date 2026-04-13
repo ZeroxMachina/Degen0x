@@ -540,6 +540,7 @@ export default function ProofOfReservesPage() {
           }}
         />
       </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Exchange Proof of Reserves Comparison", "description": "Compare PoR audits across Binance, Kraken, OKX, Bybit & Coinbase. Learn Merkle tree verification, audit frequencies & how to verify holdings.", "url": "https://degen0x.com/exchanges/crypto-exchange-proof-of-reserves-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </main>
   );
 }

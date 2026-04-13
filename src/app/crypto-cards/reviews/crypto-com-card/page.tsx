@@ -59,6 +59,7 @@ export default function CryptoComCardReviewPage() {
       relatedGuides={[{ title: "Best Crypto Card Rewards", href: "/crypto-cards/learn/best-crypto-card-rewards" }, { title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Card Tiers Explained", "description": "In-depth Crypto.com Visa card review covering tiered cashback rewards, CRO staking requirements, premium perks, and whether it is worth the investment.", "url": "https://degen0x.com/crypto-cards/reviews/crypto-com-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

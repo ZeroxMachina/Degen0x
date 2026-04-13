@@ -438,6 +438,15 @@ export default function MarketHeatmapPage() {
           }}
         />
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/tools/risk-assessment" style={{ color: "#fb923c", marginRight: "1rem" }}>Risk Assessment</a>
+        
+          <a href="/tools/price-ticker" style={{ color: "#fb923c", marginRight: "1rem" }}>Price Ticker</a>
+        
+          <a href="/tools/token-security-scanner" style={{ color: "#fb923c", marginRight: "1rem" }}>Token Security Scanner</a>
+        </nav>
     </main>
   );
 }

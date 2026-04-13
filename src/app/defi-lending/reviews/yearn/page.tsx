@@ -51,6 +51,7 @@ export default function YearnReview() {
       relatedGuides={[{ title: "Yield Farming Guide", href: "/defi-lending/learn/yield-farming-guide" }, { title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Yearn Finance Review 2026: Vault Yields, Fees & Analysis", "description": "In-depth Yearn Finance review covering vault strategies, yield performance, fees, security, and whether it is the right yield aggregator for you. Updated March", "url": "https://degen0x.com/defi-lending/reviews/yearn", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

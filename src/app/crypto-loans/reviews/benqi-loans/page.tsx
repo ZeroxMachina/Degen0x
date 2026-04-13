@@ -59,6 +59,7 @@ export default function BenqiLoansReview() {
       relatedGuides={[{ title: "How to Borrow Against Crypto", href: "/crypto-loans/learn/how-to-borrow-against-crypto" }, { title: "Interest Rates Comparison", href: "/crypto-loans/learn/interest-rates-comparison" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending Markets", "description": "BENQI offers DeFi lending and borrowing on Avalanche with low fees and liquid staking integration.", "url": "https://degen0x.com/crypto-loans/reviews/benqi-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

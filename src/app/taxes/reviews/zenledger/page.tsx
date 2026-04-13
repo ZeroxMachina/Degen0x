@@ -59,6 +59,7 @@ export default function ZenLedgerReview() {
       relatedGuides={[{ title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }, { title: "Tax Loss Harvesting", href: "/taxes/learn/tax-loss-harvesting" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Key Features", "description": "ZenLedger is a crypto tax software that supports a wide range of exchanges and DeFi protocols with CPA-friendly reporting.", "url": "https://degen0x.com/taxes/reviews/zenledger", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -479,7 +479,9 @@ export default function GenerationalWealthGuide() {
   <a href="/long-term/crypto-inheritance-planning-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Inheritance Planning Guide</a>
   <a href="/long-term/best-crypto-for-long-term-hold-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Crypto For Long Term Hold 2026</a>
   <a href="/long-term/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
-</nav>
+
+          <a href="/long-term/best/staking-long-term" style={{ color: "#fb923c", marginRight: "1rem" }}>Staking Long Term</a>
+        </nav>
     </article>
   );
 }

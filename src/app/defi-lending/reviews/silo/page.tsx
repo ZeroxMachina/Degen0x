@@ -63,6 +63,7 @@ export default function SiloReview() {
       relatedGuides={[{ title: "Lending Risks Guide", href: "/defi-lending/learn/lending-risks-guide" }, { title: "Smart Contract Risks", href: "/defi-lending/learn/smart-contract-risks" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Risk Isolation Architecture", "description": "Silo Finance is a risk-isolated lending protocol where each token pair has its own isolated market, preventing bad debt contagion between assets while enabling", "url": "https://degen0x.com/defi-lending/reviews/silo", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

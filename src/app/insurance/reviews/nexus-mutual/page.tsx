@@ -63,6 +63,7 @@ export default function NexusMutualReviewPage() {
       relatedGuides={[{ title: "Complete Crypto Insurance Guide", href: "/insurance/learn/crypto-insurance-guide" }, { title: "Insurance Protocols Compared", href: "/insurance/learn/insurance-protocols-compared" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Protocol Cover", "description": "Nexus Mutual is the largest and most established decentralized insurance protocol, offering smart contract cover for 100+ DeFi protocols with the deepest", "url": "https://degen0x.com/insurance/reviews/nexus-mutual", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

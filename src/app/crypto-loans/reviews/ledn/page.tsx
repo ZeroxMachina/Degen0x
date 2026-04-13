@@ -59,6 +59,7 @@ export default function LednReview() {
       relatedGuides={[{ title: "Bitcoin-Backed Loans", href: "/crypto-loans/learn/bitcoin-backed-loans" }, { title: "LTV Ratio Guide", href: "/crypto-loans/learn/ltv-ratio-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin-Backed Loans", "description": "Ledn offers Bitcoin-backed loans and yield products with a focus on transparency and proof of reserves.", "url": "https://degen0x.com/crypto-loans/reviews/ledn", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

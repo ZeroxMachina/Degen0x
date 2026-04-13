@@ -158,7 +158,7 @@ export default function InsuranceHubPage() {
           </div>
         </div>
       </section>
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Insurance", "description": "Compare the best crypto insurance protocols. Protect your assets with smart contract cover, exchange insurance, DeFi protocol coverage, and stablecoin depeg", "url": "https://degen0x.com/insurance"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Insurance", "description": "Compare the best crypto insurance protocols. Protect your assets with smart contract cover, exchange insurance, DeFi protocol coverage, and stablecoin depeg", "url": "https://degen0x.com/insurance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",

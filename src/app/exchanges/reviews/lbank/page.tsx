@@ -163,6 +163,7 @@ export default function LBankReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coin Selection & Listings", "description": "LBank is a global crypto exchange founded in 2015, offering 800+ cryptocurrencies with a focus on altcoin discovery, low fees, and copy trading features.", "url": "https://degen0x.com/exchanges/reviews/lbank", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

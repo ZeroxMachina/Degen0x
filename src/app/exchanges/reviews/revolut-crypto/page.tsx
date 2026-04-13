@@ -82,6 +82,7 @@ Revolut holds banking licenses in multiple jurisdictions including a European ba
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Revolut Crypto review covering trading fees, 200+ supported tokens, exchange feature, and whether this super-app suits your crypto needs.", "url": "https://degen0x.com/exchanges/reviews/revolut-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -316,7 +316,9 @@ export default function Page() {
   <a href="/learn/bitcoin-etf-explained-how-to-invest" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Etf Explained How To Invest</a>
   <a href="/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitvm Bitcoin Smart Contracts Programmability Guide 2026</a>
   <a href="/learn/erc-7683-cross-chain-intents-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Erc 7683 Cross Chain Intents Guide</a>
-</nav>
+
+          <a href="/learn/kite-ai-payment-blockchain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Kite Ai Payment Blockchain Guide 2026</a>
+        </nav>
       </article>
     </div>
   );

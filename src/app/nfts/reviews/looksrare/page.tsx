@@ -155,6 +155,7 @@ While LooksRare attracted significant volume in its early months, much of the in
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Trading Interface and Experience", "description": "LooksRare is a community-first Ethereum NFT marketplace that rewards users with LOOKS tokens for trading activity. It focuses on competitive fees and token", "url": "https://degen0x.com/nfts/reviews/looksrare", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

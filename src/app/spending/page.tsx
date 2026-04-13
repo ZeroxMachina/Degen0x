@@ -256,6 +256,7 @@ export default function SpendingPage() {
         </div>
       </div>
     </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Debit Cards", "description": "Spend crypto and manage your blockchain wealth. DeFi analytics, portfolio tracking, tax management, spending insights, and financial planning tools.", "url": "https://degen0x.com/spending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

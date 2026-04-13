@@ -94,6 +94,7 @@ Ramp handles all compliance, KYC, payment processing, and conversion logistics b
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Ramp Network review: Crypto on-ramps for businesses and users. Buy crypto with fiat in 100+ countries. Compare fees, methods, speed to competitors.", "url": "https://degen0x.com/web3-business/reviews/ramp-network", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -1425,7 +1425,9 @@ export default function BitcoinLSTGuidePage() {
   <a href="/learn/tariffs-trade-war-crypto-impact-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tariffs Trade War Crypto Impact Guide 2026</a>
   <a href="/learn/chain-abstraction" style={{ color: "#fb923c", marginRight: "1rem" }}>Chain Abstraction</a>
   <a href="/learn/crypto-gaming-2026-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Gaming 2026 Guide</a>
-</nav>
+
+          <a href="/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Mantle Network Mnt Layer 2 Ecosystem Guide 2026</a>
+        </nav>
       </article>
       <BackToTop />
     </div>

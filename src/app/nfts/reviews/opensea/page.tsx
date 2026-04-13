@@ -141,6 +141,7 @@ OpenSea has evolved significantly over the years, introducing features like Open
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "OpenSea Review 2026: Fees, Features, Pros & Cons", "description": "Our in-depth OpenSea review covers fees, supported chains, creator tools, pros and cons, and whether it's the right NFT marketplace for you. Updated March 2026.", "url": "https://degen0x.com/nfts/reviews/opensea", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

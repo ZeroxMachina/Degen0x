@@ -63,6 +63,7 @@ export default function FraxlendReview() {
       relatedGuides={[{ title: "What is DeFi Lending", href: "/defi-lending/learn/what-is-defi-lending" }, { title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Isolated Pair Lending", "description": "Fraxlend is the lending component of the Frax ecosystem, offering isolated pair lending markets with dynamic interest rates and deep integration with FRAX", "url": "https://degen0x.com/defi-lending/reviews/fraxlend", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

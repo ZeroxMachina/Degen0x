@@ -62,6 +62,7 @@ export default function HyperliquidPage() {
     <>
       <HyperliquidClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hyperliquid: The #1 Perp DEX Guide 2026 — $2.9T Volume, 70%", "description": "Complete guide to Hyperliquid — the dominant perpetual futures DEX with $2.9T cumulative volume, 1.4M users, and 70%+ perp DEX market share. HYPE tokenomics,", "url": "https://degen0x.com/ecosystem/hyperliquid", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -79,6 +79,7 @@ export default function AlpacaFinanceReview() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Leveraged Yield Farming", "description": "Complete Alpaca Finance review covering leveraged yield farming, lending vaults, automated strategies, and risk analysis on BNB Chain and Fantom.", "url": "https://degen0x.com/defi-lending/reviews/alpaca-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

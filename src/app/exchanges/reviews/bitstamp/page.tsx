@@ -91,6 +91,7 @@ export default function BitstampReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Features", "description": "Full Bitstamp review covering fees, features, security, and supported countries. One of the oldest crypto exchanges analyzed.", "url": "https://degen0x.com/exchanges/reviews/bitstamp", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

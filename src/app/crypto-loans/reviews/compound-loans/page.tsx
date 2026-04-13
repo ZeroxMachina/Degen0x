@@ -45,6 +45,7 @@ export default function CompoundLoansReview() {
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Compound Loans Review 2026: DeFi Borrowing Analysis", "description": "Review of borrowing on Compound V3. Covers isolated markets, rates, collateral, COMP rewards, and comparison to alternatives. Updated March 2026.", "url": "https://degen0x.com/crypto-loans/reviews/compound-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

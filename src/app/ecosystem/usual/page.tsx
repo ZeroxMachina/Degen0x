@@ -61,6 +61,7 @@ export default function UsualPage() {
     <>
       <UsualClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Usual Money: USD0 Revenue-Sharing Stablecoin Guide 2026 —", "description": "Complete guide to Usual Money — the RWA-backed stablecoin protocol with $1.4B USD0 supply, ~12% APY on USD0++, and 100% revenue sharing to $USUAL holders. How", "url": "https://degen0x.com/ecosystem/usual", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

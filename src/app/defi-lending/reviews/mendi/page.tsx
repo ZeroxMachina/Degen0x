@@ -47,6 +47,7 @@ export default function MendiReview() {
       relatedGuides={[{ title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }, { title: "Real Yield vs Emissions", href: "/defi-lending/learn/real-yield-vs-emissions" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending on Linea", "description": "Detailed Mendi Finance review covering Compound-style lending on Linea, yield rates, MENDI token rewards, and the protocol's role in the Linea ecosystem.", "url": "https://degen0x.com/defi-lending/reviews/mendi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

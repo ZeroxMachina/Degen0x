@@ -63,6 +63,7 @@ export default function MapleReview() {
       relatedGuides={[{ title: "Real Yield Explained", href: "/defi-lending/learn/real-yield-explained" }, { title: "Lending Risks Guide", href: "/defi-lending/learn/lending-risks-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How Institutional Lending Works", "description": "Maple Finance is an institutional lending protocol that connects corporate borrowers with DeFi lenders through managed lending pools run by professional credit", "url": "https://degen0x.com/defi-lending/reviews/maple", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

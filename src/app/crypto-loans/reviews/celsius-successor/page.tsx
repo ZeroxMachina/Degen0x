@@ -59,6 +59,7 @@ export default function CelsiusSuccessorReview() {
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }, { title: "Loan Risks Guide", href: "/crypto-loans/learn/loan-risks-guide" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Happened to Celsius", "description": "Analysis of what emerged from Celsius Network's bankruptcy and the state of its successor entities.", "url": "https://degen0x.com/crypto-loans/reviews/celsius-successor", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

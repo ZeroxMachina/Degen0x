@@ -32,7 +32,7 @@ export default function OnboardingPage() {
         updatedDate="2026-04-13"
         section="onboarding"
       />      <OnboardingWizard />
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Get Started | degen0x", "description": "Set up your degen0x profile, choose your risk tolerance, and customize your crypto dashboard in minutes.", "url": "https://degen0x.com/onboarding"}) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Get Started | degen0x", "description": "Set up your degen0x profile, choose your risk tolerance, and customize your crypto dashboard in minutes.", "url": "https://degen0x.com/onboarding", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
           <div style={{
         marginTop: "32px",
         padding: "24px",
@@ -83,6 +83,17 @@ export default function OnboardingPage() {
           </Link>
         </div>
       </div>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/contact" style={{ color: "#fb923c", marginRight: "1rem" }}>Contact</a>
+        
+          <a href="/watchlists" style={{ color: "#fb923c", marginRight: "1rem" }}>Watchlists</a>
+        
+          <a href="/heatmap" style={{ color: "#fb923c", marginRight: "1rem" }}>Heatmap</a>
+        
+          <a href="/onboarding/email-drip" style={{ color: "#fb923c", marginRight: "1rem" }}>Email Drip</a>
+        </nav>
     </main>
   );
 }

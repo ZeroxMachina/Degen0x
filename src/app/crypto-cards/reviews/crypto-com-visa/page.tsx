@@ -148,6 +148,7 @@ Despite several rounds of reward reductions in 2022 and 2023 that frustrated ear
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto.com Visa Card Review 2026: Tiers, Cashback, Staking", "description": "Our in-depth Crypto.com Visa card review covers CRO staking tiers from Midnight Blue to Obsidian, cashback rates, airport lounge access, Spotify/Netflix", "url": "https://degen0x.com/crypto-cards/reviews/crypto-com-visa", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

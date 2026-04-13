@@ -130,6 +130,7 @@ While StakeWise has a smaller market share compared to Lido or Rocket Pool, its 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "StakeWise Review 2026: Vaults, osETH, Pros & Cons", "description": "Our in-depth StakeWise review covers vault-based staking, osETH mechanics, fees, and whether it's the right ETH staking protocol for you. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/stakewise", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

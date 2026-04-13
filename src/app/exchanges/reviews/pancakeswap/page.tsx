@@ -163,6 +163,7 @@ export default function PancakeSwapReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Deployment", "description": "PancakeSwap is the largest DEX on BNB Chain, offering token swaps, yield farming, lottery, NFT marketplace, and perpetual futures across multiple chains.", "url": "https://degen0x.com/exchanges/reviews/pancakeswap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

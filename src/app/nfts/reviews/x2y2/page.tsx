@@ -156,6 +156,7 @@ X2Y2 also differentiated itself by introducing an NFT lending feature, allowing 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Trading Experience", "description": "X2Y2 is an Ethereum NFT marketplace focused on ultra-low fees and decentralized governance. It offers bulk trading tools, NFT lending, and competitive 0.5%", "url": "https://degen0x.com/nfts/reviews/x2y2", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

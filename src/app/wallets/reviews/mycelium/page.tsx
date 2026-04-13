@@ -101,6 +101,7 @@ export default function MyceliumReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Detailed Mycelium wallet review covering Bitcoin features, local trader marketplace, hardware wallet support, and privacy features.", "url": "https://degen0x.com/wallets/reviews/mycelium", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

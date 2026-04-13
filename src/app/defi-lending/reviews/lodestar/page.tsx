@@ -47,6 +47,7 @@ export default function LodestarReview() {
       relatedGuides={[{ title: "DeFi on Arbitrum", href: "/defi-lending/learn/defi-on-arbitrum" }, { title: "Yield Risk Assessment", href: "/defi-lending/learn/yield-risk-assessment" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending Markets", "description": "In-depth Lodestar Finance review covering lending on Arbitrum, yield rates, supported assets, and how this Compound-style protocol serves the Arbitrum", "url": "https://degen0x.com/defi-lending/reviews/lodestar", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

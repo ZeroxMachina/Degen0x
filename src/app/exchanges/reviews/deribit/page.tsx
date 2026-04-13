@@ -82,6 +82,7 @@ Deribit operates under a license in Panama and has implemented comprehensive KYC
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Deribit review covering crypto options trading, futures, fees, liquidity, and whether this derivatives exchange suits your trading needs.", "url": "https://degen0x.com/exchanges/reviews/deribit", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "Real-time crypto heatmap tools (Coin360, CoinGecko, TradingView). Color-coded market performance by sector: DeFi, L1, L2, meme coins. Identify sector rotation",
   keywords: ['crypto heatmap', 'live heatmap', 'coin360', 'coingecko heatmap', 'market performance', 'sector rotation', 'trading tools', 'heatmap analysis'],
   alternates: {
-    canonical: "https://degen0x.com/tools/crypto-heatmap-live",
+    canonical: "/tools/crypto-heatmap-live",
   },
   openGraph: {
     type: "article",

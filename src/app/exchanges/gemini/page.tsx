@@ -162,6 +162,7 @@ For US-based investors prioritizing regulatory clarity, institutional backing, a
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Gemini Review 2026: Security, Compliance, Fees & Features", "description": "Complete Gemini review covering SOC 2 security, regulatory compliance, Gemini Earn rewards, and trading features. Is Gemini right for you? Updated March 2026.", "url": "https://degen0x.com/exchanges/gemini", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

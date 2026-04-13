@@ -95,6 +95,7 @@ Solace's underwriting model pools risk across all covered protocols, enabling mo
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Portfolio Coverage Model", "description": "Solace is a decentralized insurance protocol offering portfolio-level coverage for DeFi positions, protecting users against smart contract exploits.", "url": "https://degen0x.com/insurance/reviews/solace", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

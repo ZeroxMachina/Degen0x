@@ -788,7 +788,9 @@ export default function SharedSequencersGuide() {
   <a href="/learn/decentralized-gpu-compute-networks-render-akash-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Decentralized Gpu Compute Networks Render Akash Guide 2026</a>
   <a href="/learn/megaeth-real-time-blockchain-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Megaeth Real Time Blockchain Layer 2 Guide 2026</a>
   <a href="/learn/crypto-regulation-by-country-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Regulation By Country Guide</a>
-</nav>
+
+          <a href="/learn/solana-firedancer-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Firedancer Guide 2026</a>
+        </nav>
       </article>
   );
 }

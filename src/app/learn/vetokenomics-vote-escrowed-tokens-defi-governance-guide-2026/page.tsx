@@ -731,7 +731,9 @@ export default function VeTokenomicsGuide() {
   <a href="/learn/zk-coprocessors-verifiable-compute-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Zk Coprocessors Verifiable Compute Guide 2026</a>
   <a href="/learn/ton-defi-ecosystem-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ton Defi Ecosystem Guide 2026</a>
   <a href="/learn/fluent-blended-execution-rwasm-l2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Fluent Blended Execution Rwasm L2 Guide 2026</a>
-</nav>
+
+          <a href="/learn/crypto-passive-income-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Passive Income Guide 2026</a>
+        </nav>
       </article>
   );
 }

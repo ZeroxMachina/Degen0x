@@ -418,6 +418,7 @@ export default function NFTUtility() {
           </Link>
         </div>
       </div>
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Utility Beyond Art | Access, Ticketing, Identity", "description": "NFT utility guide: token-gated access, ticketing, domain names, credentials. Real use cases beyond collectible art and speculation.", "url": "https://degen0x.com/nfts/nft-utility-beyond-art-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </main>
   );
 }

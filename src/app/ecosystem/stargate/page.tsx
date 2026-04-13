@@ -96,6 +96,13 @@ export default function StargateGuidePage() {
           </ul>
         </nav>
       </article>
+    
+        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+          <span style={{ color: "#8b949e" }}>Related: </span>
+          <a href="/ecosystem/swell-network" style={{ color: "#fb923c", marginRight: "1rem" }}>Swell Network</a>
+        
+          <a href="/spending/best/debit-cards" style={{ color: "#fb923c", marginRight: "1rem" }}>Debit Cards</a>
+        </nav>
     </main>
   );
 }

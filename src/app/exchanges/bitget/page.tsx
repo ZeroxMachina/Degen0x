@@ -163,6 +163,7 @@ The platform is not available to US residents but holds Money Services Business 
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitget Review 2026: Copy Trading, Derivatives, Fees & Pros", "description": "Complete Bitget review covering copy trading platform, derivatives engine, fast-growing selection, and security. Is Bitget right for you? Updated March 2026.", "url": "https://degen0x.com/exchanges/bitget", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

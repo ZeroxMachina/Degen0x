@@ -29,6 +29,7 @@ export default function PortfolioPage() {
     <>
       <PortfolioTracker />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Portfolio Tracker — Track Your PnL | degen0x", "description": "Track your crypto portfolio performance in real-time. See PnL across BTC, ETH, SOL and more. Free portfolio tracker with no signup required.", "url": "https://degen0x.com/portfolio", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

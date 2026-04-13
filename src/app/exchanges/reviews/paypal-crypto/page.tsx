@@ -82,6 +82,7 @@ PayPal is regulated as a money transmitter in the US and operates its crypto ser
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth PayPal Crypto review covering trading fees, PYUSD stablecoin, supported coins, security, and whether PayPal is right for buying crypto.", "url": "https://degen0x.com/exchanges/reviews/paypal-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

@@ -79,6 +79,7 @@ export default function BackpackWalletReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "xNFT Platform", "description": "Backpack Wallet review covering xNFT app platform, Solana and Ethereum support, built-in exchange features, and developer ecosystem.", "url": "https://degen0x.com/wallets/reviews/backpack-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

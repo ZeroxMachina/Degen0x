@@ -130,6 +130,7 @@ Coinbase Staking is the most accessible staking option for beginners, particular
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Staking Review 2026: Fees, Yields, Pros & Cons", "description": "Our in-depth Coinbase Staking review covers yields, fees, cbETH, supported assets, and whether it's the right staking service for you. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/coinbase-staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

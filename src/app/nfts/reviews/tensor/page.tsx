@@ -157,6 +157,7 @@ Tensor was also an early adopter of compressed NFT technology on Solana, enablin
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Trading Terminal Interface", "description": "Tensor is the leading professional NFT trading platform on Solana, offering real-time analytics, advanced order types, compressed NFT support, and DeFi-style", "url": "https://degen0x.com/nfts/reviews/tensor", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

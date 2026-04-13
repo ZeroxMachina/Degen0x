@@ -90,6 +90,7 @@ export default function YouHodlerReviewPage() {
       ]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loans", "description": "In-depth YouHodler review covering crypto loans, Multi HODL feature, turbocharge loans, rates, and whether YouHodler is right for your needs.", "url": "https://degen0x.com/crypto-loans/reviews/youhodler", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

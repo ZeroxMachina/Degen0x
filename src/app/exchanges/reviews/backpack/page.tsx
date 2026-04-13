@@ -162,6 +162,7 @@ export default function BackpackReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Team & Background", "description": "Backpack Exchange is a regulated crypto exchange built by the team behind the Backpack Wallet and Mad Lads NFT collection, offering spot and futures trading", "url": "https://degen0x.com/exchanges/reviews/backpack", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

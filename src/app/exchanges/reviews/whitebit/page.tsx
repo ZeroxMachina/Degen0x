@@ -163,6 +163,7 @@ export default function WhiteBITReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fiat Support & European Focus", "description": "WhiteBIT is a European crypto exchange with 600+ trading pairs, competitive fees, and strong fiat support for EUR and UAH. Popular in Eastern Europe with", "url": "https://degen0x.com/exchanges/reviews/whitebit", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

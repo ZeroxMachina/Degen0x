@@ -59,6 +59,7 @@ export default function HRBlockCryptoReview() {
       relatedGuides={[{ title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }, { title: "Reporting Requirements", href: "/taxes/learn/reporting-requirements" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Online Crypto Filing", "description": "H&R Block offers crypto tax filing support through its online platform and in-person tax professionals.", "url": "https://degen0x.com/taxes/reviews/hr-block-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }

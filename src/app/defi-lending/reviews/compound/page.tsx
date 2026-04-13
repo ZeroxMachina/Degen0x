@@ -51,6 +51,7 @@ export default function CompoundReview() {
       relatedGuides={[{ title: "What Is DeFi Lending?", href: "/defi-lending/learn/what-is-defi-lending" }, { title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }]}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Compound Review 2026: Rates, Security, Pros & Cons", "description": "In-depth Compound Finance review covering yield rates, V3 architecture, security, governance, and whether it is the right DeFi protocol for you. Updated March", "url": "https://degen0x.com/defi-lending/reviews/compound", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </>
   );
 }
