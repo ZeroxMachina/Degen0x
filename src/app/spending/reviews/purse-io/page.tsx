@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Purse.io Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Purse.io Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Purse.io review covering Bitcoin-to-Amazon shopping discounts, peer-to-peer marketplace mechanics, fees, and how to save on Amazon purchases with",
   alternates: { canonical: "/spending/reviews/purse-io" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

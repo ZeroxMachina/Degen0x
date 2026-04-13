@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `MetaMask vs Coinbase Wallet (${CURRENT_YEAR}) - Which Is Better? | ${SITE_NAME}`,
+  title: `MetaMask vs Coinbase Wallet (2026) - Which Is Better? | degen0x`,
   description: `MetaMask vs Coinbase Wallet side-by-side comparison for ${CURRENT_YEAR}. Features, fees, security, dApp support, and cloud backup compared.`,
   alternates: { canonical: "/wallets/compare/metamask-vs-coinbase-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

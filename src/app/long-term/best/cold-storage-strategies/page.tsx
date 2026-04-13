@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Cold Storage Strategies for Crypto ${CURRENT_YEAR}`,
+  title: `Best Cold Storage Strategies for Crypto 2026`,
   description: "Compare the best cold storage solutions for long-term crypto security. Hardware wallets, multi-sig setups, and institutional custody options reviewed.",
   alternates: { canonical: "/long-term/best/cold-storage-strategies" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best AI Crypto Tokens ${CURRENT_YEAR} - Top AI & Machine Learning Coins`,
+  title: `Best AI Crypto Tokens 2026 - Top AI & Machine Learning Coins`,
   description: `Discover the best AI crypto tokens for ${CURRENT_YEAR}. Analysis of decentralized compute, AI agents, and data marketplace tokens at the intersection of AI and blockchain.`,
   alternates: { canonical: "/investing/best/ai-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

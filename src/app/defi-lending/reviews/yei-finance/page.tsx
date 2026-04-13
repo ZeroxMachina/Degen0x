@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Yei Finance Review ${CURRENT_YEAR}: Sei Network Lending Protocol`,
+  title: `Yei Finance Review 2026: Sei Network Lending Protocol`,
   description: "In-depth Yei Finance review covering lending and borrowing on Sei network, yield rates, protocol features, and the emerging Sei DeFi ecosystem.",
   alternates: { canonical: "/defi-lending/reviews/yei-finance" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

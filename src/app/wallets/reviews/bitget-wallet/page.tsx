@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Bitget Wallet Review (${CURRENT_YEAR}) - Multi-Chain Web3 Wallet | ${SITE_NAME}`,
+  title: `Bitget Wallet Review (2026) - Multi-Chain Web3 Wallet | degen0x`,
   description: `Complete Bitget Wallet review for ${CURRENT_YEAR}. Covers 100+ chain support, swap aggregation, launchpad, security, and Bitget exchange integration.`,
   alternates: { canonical: "/wallets/reviews/bitget-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

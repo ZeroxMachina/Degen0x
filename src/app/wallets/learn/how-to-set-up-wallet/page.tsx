@@ -5,7 +5,7 @@ import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `How to Set Up a Crypto Wallet - Step by Step Guide (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `How to Set Up a Crypto Wallet - Step by Step Guide (2026) | degen0x`,
   description: `Step-by-step guide to setting up your first crypto wallet in ${CURRENT_YEAR}. Covers MetaMask, Phantom, Ledger, Trezor, and more. Includes security tips for beginners.`,
   alternates: { canonical: "/wallets/learn/how-to-set-up-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

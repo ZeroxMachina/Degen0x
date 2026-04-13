@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Atomic Wallet Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Atomic Wallet Review (2026) | degen0x`,
   description: "Comprehensive Atomic Wallet review covering features, security, atomic swaps, staking, and supported assets. Is Atomic Wallet right for you?",
   alternates: { canonical: "/wallets/reviews/atomic" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

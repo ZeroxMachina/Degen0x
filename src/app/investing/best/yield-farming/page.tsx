@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Yield Farming Protocols (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Yield Farming Protocols (2026) | degen0x`,
   description: `Top yield farming platforms and protocols in ${CURRENT_YEAR}. Compare Curve, Convex, Yearn, and other DeFi yield opportunities with risk analysis.`,
   alternates: { canonical: "/investing/best/yield-farming" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

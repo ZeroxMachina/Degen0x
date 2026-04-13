@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Cash App Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Cash App Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Cash App Bitcoin review covering fees, Lightning Network support, security, and whether Cash App is the right way to buy Bitcoin.",
   alternates: { canonical: "/exchanges/reviews/cash-app" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

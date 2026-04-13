@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Mobile Crypto Wallets of ${CURRENT_YEAR} - iOS & Android | ${SITE_NAME}`,
+  title: `Best Mobile Crypto Wallets of 2026 - iOS & Android | degen0x`,
   description: `The best mobile crypto wallets for iPhone and Android in ${CURRENT_YEAR}. Compare Phantom, Trust Wallet, Exodus, MetaMask mobile, and more for on-the-go crypto management.`,
   alternates: { canonical: "/wallets/best/mobile" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

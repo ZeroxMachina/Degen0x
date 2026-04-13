@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `PayPal Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `PayPal Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth PayPal Crypto review covering trading fees, PYUSD stablecoin, supported coins, security, and whether PayPal is right for buying crypto.",
   alternates: { canonical: "/exchanges/reviews/paypal-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

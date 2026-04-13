@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Frame Wallet Review (${CURRENT_YEAR}) - Best Desktop System-Level Wallet? | ${SITE_NAME}`,
+  title: `Frame Wallet Review (2026) - Best Desktop System-Level Wallet? | degen0x`,
   description: `Detailed Frame wallet review for ${CURRENT_YEAR}. Covers system-level OS integration, hardware wallet support, multi-chain management, and privacy features.`,
   alternates: { canonical: "/wallets/reviews/frame" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

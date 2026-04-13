@@ -29,7 +29,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Raydium Review (${CURRENT_YEAR}) - Solana's Leading AMM & Liquidity Hub | ${SITE_NAME}`,
+  title: "Raydium Review (2026) - Solanas Leading AMM & Liquidity Hub | ${SITE_NAME}",
   description: `Complete Raydium review for ${CURRENT_YEAR}. Covers the hybrid AMM model, CLMM pools, swap fees, liquidity provision, and Solana ecosystem integration.`,
   alternates: { canonical: "/exchanges/reviews/raydium" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

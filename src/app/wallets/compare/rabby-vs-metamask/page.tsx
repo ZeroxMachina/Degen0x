@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Rabby vs MetaMask (${CURRENT_YEAR}): DeFi Power User Wallet Comparison | ${SITE_NAME}`,
+  title: `Rabby vs MetaMask (2026): DeFi Power User Wallet Comparison | degen0x`,
   description: `Rabby vs MetaMask comparison for ${CURRENT_YEAR}. Compare transaction simulation, multi-chain UX, security features, and DeFi usability.`,
   alternates: { canonical: "/wallets/compare/rabby-vs-metamask" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

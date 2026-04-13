@@ -8,11 +8,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Bitcoin Lightning Network Explained (${CURRENT_YEAR}): How It Works, Wallets & Use Cases`,
+  title: `Bitcoin Lightning Network Explained (2026): How It Works, Wallets & Use Cases`,
   description: `A complete guide to the Bitcoin Lightning Network for ${CURRENT_YEAR}. Learn how Lightning channels work, the best Lightning wallets, top use cases, and how to send Bitcoin instantly for near-zero fees.`,
   alternates: { canonical: "/learn/bitcoin-lightning-network" },
   openGraph: {
-    title: `Bitcoin Lightning Network Guide ${CURRENT_YEAR}`,
+    title: `Bitcoin Lightning Network Guide 2026`,
     description: "Bitcoin Lightning Network guide: Instant payments, zero fees, scalability. Learn channels, routing, privacy, and the future of Bitcoin payments.",
   },
   twitter: { card: "summary_large_image" }};

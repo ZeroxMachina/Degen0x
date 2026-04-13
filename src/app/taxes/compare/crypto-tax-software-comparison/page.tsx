@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Tax Software Compared (${CURRENT_YEAR}): Complete Comparison`,
+  title: `Best Crypto Tax Software Compared (2026): Complete Comparison`,
   description: `Compare all major crypto tax software platforms side by side. Koinly, CoinTracker, CryptoTaxCalculator, TokenTax, ZenLedger, CoinLedger, and more rated and ranked.`,
   alternates: { canonical: "/taxes/compare/crypto-tax-software-comparison" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

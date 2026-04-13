@@ -7,7 +7,7 @@ import { tokens, TOKEN_CATEGORIES } from "@/data/tokens";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Prices — Bitcoin, Ethereum & Top Tokens | ${SITE_NAME}`,
+  title: `Crypto Prices — Bitcoin, Ethereum & Top Tokens | degen0x`,
   description: `Track crypto prices, market caps, and 24h changes for Bitcoin, Ethereum, Solana, and 100+ top cryptocurrencies. Expert analysis and investment guides for every major asset class.`,
   alternates: { canonical: `${SITE_URL}/prices` },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

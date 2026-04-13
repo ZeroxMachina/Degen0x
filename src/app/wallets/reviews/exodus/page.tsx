@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 const product = walletProducts.find((p) => p.slug === "exodus")!;
 
 export const metadata: Metadata = {
-  title: `Exodus Wallet Review (${CURRENT_YEAR}) - Best for Beginners? | ${SITE_NAME}`,
+  title: `Exodus Wallet Review (2026) - Best for Beginners? | degen0x`,
   description: `Detailed Exodus wallet review for ${CURRENT_YEAR}. Covers the desktop, mobile, and browser experience, built-in exchange, Trezor integration, and portfolio tracking.`,
   alternates: { canonical: "/wallets/reviews/exodus" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

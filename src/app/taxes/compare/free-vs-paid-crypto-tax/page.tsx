@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Free vs Paid Crypto Tax Software (${CURRENT_YEAR}): Is Free Good Enough?`,
+  title: `Free vs Paid Crypto Tax Software (2026): Is Free Good Enough?`,
   description: `Compare free and paid crypto tax software options. Understand the limitations of free tools and when it is worth paying for premium crypto tax reporting in ${CURRENT_YEAR}.`,
   alternates: { canonical: "/taxes/compare/free-vs-paid-crypto-tax" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `CoinPanda Review (${CURRENT_YEAR}): Affordable Crypto Tax Software | ${SITE_NAME}`,
+  title: `CoinPanda Review (2026): Affordable Crypto Tax Software | degen0x`,
   description: "In-depth CoinPanda review covering pricing, DeFi support, international tax compliance, and how it compares to Koinly and CoinTracker.",
   alternates: { canonical: "/taxes/reviews/coinpanda" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

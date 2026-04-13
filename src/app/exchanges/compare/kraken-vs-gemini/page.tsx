@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Kraken vs Gemini: Detailed Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Kraken vs Gemini: Detailed Comparison (2026) | degen0x`,
   description:
     "Compare Kraken and Gemini - two secure US crypto exchanges. Analyze fees, features, security, and find which is best for your trading needs.",
   keywords: "Kraken vs Gemini, US crypto exchange, security-focused, comparison",

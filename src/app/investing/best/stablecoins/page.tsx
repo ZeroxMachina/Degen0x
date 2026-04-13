@@ -9,11 +9,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Stablecoins ${CURRENT_YEAR}: Top Picks Ranked & Compared`,
+  title: `Best Stablecoins 2026: Top Picks Ranked & Compared`,
   description: `Discover the best stablecoins for ${CURRENT_YEAR}. We rank USDT, USDC, DAI, FDUSD, and more by market cap, backing, yield, and safety for crypto investors.`,
   alternates: { canonical: "/investing/best/stablecoins" },
   openGraph: {
-    title: `Best Stablecoins ${CURRENT_YEAR}: Top Picks Ranked & Compared`,
+    title: `Best Stablecoins 2026: Top Picks Ranked & Compared`,
     description: `Compare the top stablecoins by market cap, peg stability, backing, and DeFi integrations.`,
   },
   twitter: { card: "summary_large_image" }};

@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Where to Spend Crypto in ${CURRENT_YEAR} - 100+ Merchants & Services | ${SITE_NAME}`,
+  title: `Where to Spend Crypto in 2026 - 100+ Merchants & Services | degen0x`,
   description: `Discover where you can spend cryptocurrency in ${CURRENT_YEAR}. Major retailers, online services, travel, food, gaming, and more. The complete guide to crypto-accepting merchants.`,
   alternates: { canonical: "/spending/best/merchants" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

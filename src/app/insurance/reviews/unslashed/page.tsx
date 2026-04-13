@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Unslashed Finance Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Unslashed Finance Review (2026) | degen0x`,
   description: "In-depth Unslashed Finance review covering insurance coverage types, capital efficiency, claim process, and comparison with other DeFi insurance protocols.",
   alternates: { canonical: "/insurance/reviews/unslashed" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

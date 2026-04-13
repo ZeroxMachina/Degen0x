@@ -10,7 +10,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { COPY_TRADING_PLATFORMS, COPY_TRADING_FAQS } from "@/data/investing";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Copy Trading Platforms ${CURRENT_YEAR} - Follow Top Traders`,
+  title: `Best Crypto Copy Trading Platforms 2026 - Follow Top Traders`,
   description: `Compare the best crypto copy trading platforms for ${CURRENT_YEAR}. Automatically replicate trades from experienced traders on Bybit, OKX, eToro, and more.`,
   alternates: { canonical: "/investing/best/copy-trading" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -11,7 +11,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Wallets of ${CURRENT_MONTH} ${CURRENT_YEAR} | ${SITE_NAME}`,
+  title: `Best Crypto Wallets of April 2026 | degen0x`,
   description: `Compare the best crypto wallets of ${CURRENT_YEAR}. Expert-tested reviews of Ledger, Trezor, MetaMask, Phantom, and more. Find the most secure wallet for your needs.`,
   alternates: { canonical: "/wallets/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

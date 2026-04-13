@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in TRON (TRX) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in TRON (TRX) 2026 - Complete Guide`,
   description: `Complete TRON investment guide for ${CURRENT_YEAR}. Learn about TRX fundamentals, stablecoin dominance, staking, risks, and how to buy TRON.`,
   alternates: { canonical: "/investing/crypto/tron" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `DCA vs Timing the Market (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Dollar-cost averaging vs market timing comparison for ${CURRENT_YEAR}. Which crypto investment strategy produces better returns with less stress and risk.` ,
+export const metadata: Metadata = { title: `DCA vs Timing the Market (2026) | degen0x`, description: `Dollar-cost averaging vs market timing comparison for ${CURRENT_YEAR}. Which crypto investment strategy produces better returns with less stress and risk.` ,
   alternates: { canonical: "/investing/compare/dca-vs-timing-market" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

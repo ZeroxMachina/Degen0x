@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Juice Finance Review ${CURRENT_YEAR}: Blast Lending & Points`,
+  title: `Juice Finance Review 2026: Blast Lending & Points`,
   description:
     "Complete Juice Finance review covering lending on Blast L2, points farming, leveraged strategies, yield opportunities, and risk analysis.",
   alternates: { canonical: "/defi-lending/reviews/juice-finance" },

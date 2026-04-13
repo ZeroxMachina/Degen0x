@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Coinbase Staking vs Lido: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Coinbase Staking vs Lido: Which Is Better? (2026) | degen0x`,
   description:
     "Detailed comparison of Coinbase Staking vs Lido. Compare fees, ease of use, DeFi integrations, and regulatory status to choose the right ETH staking option.",
   alternates: { canonical: "/investing/staking/compare/coinbase-vs-lido" },

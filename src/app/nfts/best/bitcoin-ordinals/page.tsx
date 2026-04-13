@@ -9,7 +9,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Bitcoin Ordinals Marketplaces in ${CURRENT_YEAR} | degen0x`,
+  title: `Best Bitcoin Ordinals Marketplaces in 2026 | degen0x`,
   description: `Compare the best marketplaces for Bitcoin Ordinals and BRC-20 tokens in ${CURRENT_YEAR}. Trade inscriptions, Runes, and Bitcoin-native NFTs on top platforms.`,
   alternates: { canonical: "/nfts/best/bitcoin-ordinals" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

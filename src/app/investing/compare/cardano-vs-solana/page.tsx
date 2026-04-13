@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Cardano vs Solana (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Cardano vs Solana comparison for ${CURRENT_YEAR}. Research-driven development vs high-performance execution compared across speed, fees, ecosystem, and investment potential.` ,
+export const metadata: Metadata = { title: `Cardano vs Solana (2026) | degen0x`, description: `Cardano vs Solana comparison for ${CURRENT_YEAR}. Research-driven development vs high-performance execution compared across speed, fees, ecosystem, and investment potential.` ,
   alternates: { canonical: "/investing/compare/cardano-vs-solana" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

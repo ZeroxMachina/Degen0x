@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Monero (XMR) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Monero (XMR) 2026 - Complete Guide`,
   description: `Complete Monero investment guide for ${CURRENT_YEAR}. Learn about XMR fundamentals, privacy technology, ring signatures, risks, and how to buy Monero.`,
   alternates: { canonical: "/investing/crypto/monero" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

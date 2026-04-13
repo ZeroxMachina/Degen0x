@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Tarot Review ${CURRENT_YEAR}: Leveraged LP & Lending Protocol`,
+  title: `Tarot Review 2026: Leveraged LP & Lending Protocol`,
   description:
     "Comprehensive Tarot review covering leveraged liquidity provision, lending pairs, yield strategies, and risk analysis across Fantom and other chains.",
   alternates: { canonical: "/defi-lending/reviews/tarot" },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Exchange Cover Insurance ${CURRENT_YEAR} - Protect Your Exchange Holdings`,
+  title: `Best Exchange Cover Insurance 2026 - Protect Your Exchange Holdings`,
   description:
     "Compare the best crypto exchange insurance options. Protect against exchange hacks, insolvency, and withdrawal freezes with top coverage providers.",
   alternates: { canonical: "/insurance/best/exchange-cover" },

@@ -8,7 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
-export const metadata: Metadata = { title: `Best Stablecoin Loans ${CURRENT_YEAR} - Borrow USDC, DAI, USDT`, description: `Compare the best platforms for borrowing stablecoins against crypto in ${CURRENT_YEAR}. Get USDC, DAI, or USDT without selling your holdings.` ,
+export const metadata: Metadata = { title: `Best Stablecoin Loans 2026 - Borrow USDC, DAI, USDT`, description: `Compare the best platforms for borrowing stablecoins against crypto in ${CURRENT_YEAR}. Get USDC, DAI, or USDT without selling your holdings.` ,
   alternates: { canonical: "/crypto-loans/best/stablecoin" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};
@@ -50,7 +50,10 @@ export default function StablecoinLoansPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "Stablecoin Loans", href: "/crypto-loans/best/stablecoin" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Stablecoin Loans ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Stablecoin loans enable collateral-free or low-collateral borrowing against stablecoin deposits, common on protocols like MakerDAO. Over $8B in stablecoins are locked in lending contracts generating 2–5% APY.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">Borrowing stablecoins against your crypto collateral is one of the most popular use cases for crypto-backed loans. Stablecoins give you dollar-denominated liquidity without selling your holdings, and can be used for expenses, DeFi yield strategies, or conversion to fiat. We compared the best platforms for stablecoin borrowing based on available stablecoins, rates, and user experience.</p>
       </div>

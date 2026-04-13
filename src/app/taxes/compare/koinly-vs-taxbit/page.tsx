@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Koinly vs TaxBit ${CURRENT_YEAR}: Which Crypto Tax Software Is Better?`,
+  title: `Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?`,
   description: `Compare Koinly vs TaxBit side by side. Pricing, features, DeFi support, exchange integrations, and which is better for your crypto tax needs in ${CURRENT_YEAR}.`,
   alternates: { canonical: "/taxes/compare/koinly-vs-taxbit" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

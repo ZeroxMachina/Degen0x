@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Uniswap vs PancakeSwap (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Uniswap vs PancakeSwap DEX comparison for ${CURRENT_YEAR}. Trading volume, fees, supported chains, liquidity, and governance token investment compared.` ,
+export const metadata: Metadata = { title: `Uniswap vs PancakeSwap (2026) | degen0x`, description: `Uniswap vs PancakeSwap DEX comparison for ${CURRENT_YEAR}. Trading volume, fees, supported chains, liquidity, and governance token investment compared.` ,
   alternates: { canonical: "/investing/compare/uniswap-vs-pancakeswap" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

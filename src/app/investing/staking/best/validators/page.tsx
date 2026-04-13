@@ -9,7 +9,7 @@ import { stakingPlatforms } from "@/data/staking";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Staking Validators of ${CURRENT_YEAR} (Compared)`,
+  title: `Best Staking Validators of 2026 (Compared)`,
   description: `Compare the best staking validators and validator services in ${CURRENT_YEAR}. Find top-performing validators for Ethereum and Solana staking.`,
   alternates: { canonical: "/investing/staking/best/validators" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

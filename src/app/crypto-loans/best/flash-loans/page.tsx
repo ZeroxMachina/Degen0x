@@ -8,7 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
-export const metadata: Metadata = { title: `Best Flash Loan Platforms ${CURRENT_YEAR} - Zero-Collateral DeFi Loans`, description: `Compare flash loan platforms in ${CURRENT_YEAR}. Borrow any amount without collateral in a single transaction for arbitrage, liquidations, and more.` ,
+export const metadata: Metadata = { title: `Best Flash Loan Platforms 2026 - Zero-Collateral DeFi Loans`, description: `Compare flash loan platforms in ${CURRENT_YEAR}. Borrow any amount without collateral in a single transaction for arbitrage, liquidations, and more.` ,
   alternates: { canonical: "/crypto-loans/best/flash-loans" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};
@@ -50,7 +50,10 @@ export default function FlashLoansPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "Flash Loans", href: "/crypto-loans/best/flash-loans" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Flash Loan Platforms ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Flash loans enable zero-collateral borrowing within a single transaction, revolutionizing DeFi composability. Over 90% of flash loans repay instantly on arbitrage or liquidation opportunities, with $500M+ daily volume across Aave and dYdX.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">Flash loans are one of DeFi's most innovative financial primitives: borrow any amount of crypto with zero collateral, as long as you repay within the same blockchain transaction. If the loan is not repaid, the entire transaction reverts as if nothing happened. Flash loans enable arbitrage, efficient liquidations, collateral swaps, and sophisticated DeFi operations that would otherwise require massive capital.</p>
       </div>

@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Accointing Review (${CURRENT_YEAR}): Tax Reporting & Portfolio Tracking | ${SITE_NAME}`,
+  title: `Accointing Review (2026): Tax Reporting & Portfolio Tracking | degen0x`,
   description: "In-depth Accointing review covering tax reporting, portfolio tracking, international support, and its integration with Glassnode.",
   alternates: { canonical: "/taxes/reviews/accointing" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

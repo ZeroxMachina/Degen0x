@@ -8,7 +8,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 const product = cryptoCards.find((c) => c.slug === "coinbase-card")!;
 
 export const metadata: Metadata = {
-  title: `Coinbase Card Review (${CURRENT_YEAR}): Fees, Rewards & Pros/Cons | degen0x`,
+  title: `Coinbase Card Review (2026): Fees, Rewards & Pros/Cons | degen0x`,
   description: "In-depth Coinbase Card review covering crypto rewards, spending features, fees, and whether it is the right crypto debit card for you. Updated for " + CURRENT_YEAR + ".",
   alternates: { canonical: "/crypto-cards/reviews/coinbase-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Kamino Finance Review ${CURRENT_YEAR}: Yield, Fees & Pros/Cons`,
+  title: `Kamino Finance Review 2026: Yield, Fees & Pros/Cons`,
   description:
     "In-depth Kamino Finance review covering automated liquidity vaults, lending markets, yield strategies, and whether it is the right Solana DeFi protocol for you.",
   alternates: { canonical: "/defi-lending/reviews/kamino" },

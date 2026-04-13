@@ -11,7 +11,7 @@ import { LAYER2_FAQS } from "@/data/investing";
 import { Product } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Best Layer 2 Crypto Tokens ${CURRENT_YEAR} - Top L2 Scaling Solutions`,
+  title: `Best Layer 2 Crypto Tokens 2026 - Top L2 Scaling Solutions`,
   description: `Discover the best Layer 2 tokens for ${CURRENT_YEAR}. Analysis of Arbitrum, Optimism, Base, and other L2 scaling solutions by TVL, adoption, and technology.`,
   alternates: { canonical: "/investing/best/layer-2" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

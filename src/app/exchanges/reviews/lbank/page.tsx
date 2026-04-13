@@ -29,7 +29,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `LBank Review (${CURRENT_YEAR}) - 800+ Altcoins & Copy Trading | ${SITE_NAME}`,
+  title: `LBank Review (2026) - 800+ Altcoins & Copy Trading | degen0x`,
   description: `Complete LBank review for ${CURRENT_YEAR}. Covers fees, 800+ supported coins, copy trading, grid bots, security, and how it compares to top exchanges.`,
   alternates: { canonical: "/exchanges/reviews/lbank" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

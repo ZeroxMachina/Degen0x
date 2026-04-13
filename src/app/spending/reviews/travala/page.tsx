@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Travala Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Travala Review 2026: Fees, Features, Pros & Cons`,
   description: "Detailed Travala review covering crypto travel booking, supported cryptocurrencies, loyalty rewards, hotel and flight options, and whether Travala is the best",
   alternates: { canonical: "/spending/reviews/travala" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

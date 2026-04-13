@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `DeFi Lending vs Staking ${CURRENT_YEAR}: Which Earns More?`,
+  title: `DeFi Lending vs Staking 2026: Which Earns More?`,
   description: `Compare DeFi lending vs staking in ${CURRENT_YEAR}. Analyze yields, risks, lock-up periods, and which passive income strategy is better for your portfolio.`,
   alternates: { canonical: "/defi-lending/compare/lending-vs-staking" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

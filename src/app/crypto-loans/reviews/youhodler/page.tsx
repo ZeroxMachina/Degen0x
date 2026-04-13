@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `YouHodler Review (${CURRENT_YEAR}) | degen0x`,
+  title: `YouHodler Review (2026) | degen0x`,
   description: "In-depth YouHodler review covering crypto loans, Multi HODL feature, turbocharge loans, rates, and whether YouHodler is right for your needs.",
   alternates: { canonical: "/crypto-loans/reviews/youhodler" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

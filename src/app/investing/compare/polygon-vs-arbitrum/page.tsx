@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Polygon vs Arbitrum (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Polygon vs Arbitrum comparison for ${CURRENT_YEAR}. Two leading Ethereum scaling solutions compared on speed, fees, DeFi ecosystem, and token investment thesis.` ,
+export const metadata: Metadata = { title: `Polygon vs Arbitrum (2026) | degen0x`, description: `Polygon vs Arbitrum comparison for ${CURRENT_YEAR}. Two leading Ethereum scaling solutions compared on speed, fees, DeFi ecosystem, and token investment thesis.` ,
   alternates: { canonical: "/investing/compare/polygon-vs-arbitrum" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

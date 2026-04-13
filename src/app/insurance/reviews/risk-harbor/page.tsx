@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Risk Harbor Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Risk Harbor Review (2026) | degen0x`,
   description: "In-depth Risk Harbor review covering algorithmic insurance, automated claims, stablecoin depeg coverage, and how it compares to discretionary insurance protocols.",
   alternates: { canonical: "/insurance/reviews/risk-harbor" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

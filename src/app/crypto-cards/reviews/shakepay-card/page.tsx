@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Shakepay Card Review (${CURRENT_YEAR}): Bitcoin Cashback for Canadians | ${SITE_NAME}`,
+  title: `Shakepay Card Review (2026): Bitcoin Cashback for Canadians | degen0x`,
   description: "In-depth Shakepay Card review covering Bitcoin cashback rewards, fees, features, and how it compares to other Canadian crypto cards.",
   alternates: { canonical: "/crypto-cards/reviews/shakepay-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

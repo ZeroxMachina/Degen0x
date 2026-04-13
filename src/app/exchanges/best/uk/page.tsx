@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in the UK (${CURRENT_YEAR})`,
+  title: `Best Crypto Exchanges in the UK (2026)`,
   description: `Compare the best crypto exchanges for UK residents in ${CURRENT_YEAR}. FCA-registered platforms with GBP deposits via Faster Payments, competitive fees, and full regulatory compliance.`,
   keywords: [
     "best crypto exchanges UK",

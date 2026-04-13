@@ -5,7 +5,7 @@ import TradingSignals from "@/components/TradingSignals";
 import { SITE_NAME } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Trading Signals — ${SITE_NAME}`,
+  title: `Trading Signals — degen0x`,
   description: "AI-powered crypto trading signals combining technical analysis, on-chain data, and social sentiment. Entry points, targets, stop losses, and risk/reward ratios.",
   keywords: ["trading signals", "crypto signals", "technical analysis", "on-chain analysis", "trading alerts"],
   alternates: { canonical: "/signals" },

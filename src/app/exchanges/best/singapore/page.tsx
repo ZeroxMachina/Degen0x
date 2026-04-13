@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Singapore (${CURRENT_YEAR})`,
+  title: `Best Crypto Exchanges in Singapore (2026)`,
   description: `Compare the best crypto exchanges for Singapore residents in ${CURRENT_YEAR}. MAS-licensed platforms with SGD deposits via FAST/PayNow, no capital gains tax, and strong regulatory compliance.`,
   keywords: [
     "best crypto exchanges Singapore",

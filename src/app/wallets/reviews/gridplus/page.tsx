@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `GridPlus Lattice1 Review (${CURRENT_YEAR}) | degen0x`,
+  title: `GridPlus Lattice1 Review (2026) | degen0x`,
   description: "GridPlus Lattice1 hardware wallet review covering SafeCards, large touchscreen, MetaMask integration, and enterprise-grade security.",
   alternates: { canonical: "/wallets/reviews/gridplus" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

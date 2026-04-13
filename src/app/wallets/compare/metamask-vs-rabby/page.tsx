@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `MetaMask vs Rabby (${CURRENT_YEAR}) - Which Wallet Is Better? | ${SITE_NAME}`,
+  title: `MetaMask vs Rabby (2026) - Which Wallet Is Better? | degen0x`,
   description: `MetaMask vs Rabby wallet comparison for ${CURRENT_YEAR}. Transaction simulation, security features, multi-chain support, and dApp compatibility compared.`,
   alternates: { canonical: "/wallets/compare/metamask-vs-rabby" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

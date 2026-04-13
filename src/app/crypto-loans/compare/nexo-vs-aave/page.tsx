@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
-export const metadata: Metadata = { title: `Nexo vs Aave ${CURRENT_YEAR}: CeFi vs DeFi Lending Compared`, description: `Compare Nexo (CeFi) vs Aave (DeFi) for crypto loans in ${CURRENT_YEAR}. Analyze rates, KYC requirements, security models, and which is better for your needs.` ,
+export const metadata: Metadata = { title: `Nexo vs Aave 2026: CeFi vs DeFi Lending Compared`, description: `Compare Nexo (CeFi) vs Aave (DeFi) for crypto loans in ${CURRENT_YEAR}. Analyze rates, KYC requirements, security models, and which is better for your needs.` ,
   alternates: { canonical: "/crypto-loans/compare/nexo-vs-aave" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

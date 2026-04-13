@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Element Market Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Element Market Review 2026: Fees, Features, Pros & Cons`,
   description: "Complete Element Market review covering multi-chain NFT aggregation, supported networks, fees, trading features, and how it compares to other NFT marketplaces.",
   alternates: { canonical: "/nfts/reviews/element-market" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

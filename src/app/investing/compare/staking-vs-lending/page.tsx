@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Staking vs Lending (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Staking vs lending crypto comparison for ${CURRENT_YEAR}. Yields, risks, lock-up periods, and which passive income strategy is better for your crypto portfolio.` ,
+export const metadata: Metadata = { title: `Staking vs Lending (2026) | degen0x`, description: `Staking vs lending crypto comparison for ${CURRENT_YEAR}. Yields, risks, lock-up periods, and which passive income strategy is better for your crypto portfolio.` ,
   alternates: { canonical: "/investing/compare/staking-vs-lending" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

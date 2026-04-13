@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Bitcoin Wallets of ${CURRENT_YEAR} - BTC Storage & Security | ${SITE_NAME}`,
+  title: `Best Bitcoin Wallets of 2026 - BTC Storage & Security | degen0x`,
   description: `The best Bitcoin wallets for ${CURRENT_YEAR}. Compare hardware and software BTC wallets for security, privacy, and ease of use. Ledger, Trezor, Exodus, and more.`,
   alternates: { canonical: "/wallets/best/bitcoin" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

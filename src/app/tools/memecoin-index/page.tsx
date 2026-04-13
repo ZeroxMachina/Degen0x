@@ -5,7 +5,7 @@ import MemecoinIndexClient from "./MemecoinIndexClient";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Meme Coin Index & Tracker ${CURRENT_YEAR} — Live Prices, Volume & Trends | ${SITE_NAME}`,
+  title: `Meme Coin Index & Tracker 2026 — Live Prices, Volume & Trends | degen0x`,
   description: `Track meme coins in real-time. Compare DOGE, SHIB, PEPE, WIF, BONK and more by price, volume, market cap, and social sentiment. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.`,
   keywords: ["meme coin tracker", "meme coin index", "DOGE price", "PEPE price", "meme coin list", "best meme coins"],
   alternates: { canonical: "/tools/memecoin-index" },

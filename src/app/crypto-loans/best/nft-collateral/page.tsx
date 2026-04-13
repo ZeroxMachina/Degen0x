@@ -8,7 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
-export const metadata: Metadata = { title: `Best NFT-Collateral Loans ${CURRENT_YEAR} - Borrow Against NFTs`, description: `Compare platforms for borrowing against NFTs in ${CURRENT_YEAR}. Use your CryptoPunks, BAYC, and other NFTs as loan collateral.` ,
+export const metadata: Metadata = { title: `Best NFT-Collateral Loans 2026 - Borrow Against NFTs`, description: `Compare platforms for borrowing against NFTs in ${CURRENT_YEAR}. Use your CryptoPunks, BAYC, and other NFTs as loan collateral.` ,
   alternates: { canonical: "/crypto-loans/best/nft-collateral" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};
@@ -50,7 +50,10 @@ export default function NftCollateralPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "NFT Collateral", href: "/crypto-loans/best/nft-collateral" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best NFT-Collateral Loans ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          NFT-collateral loans are emerging but volatile, with rates of 10–30% annually due to unpredictable collateral valuations. Platforms like BendDAO and Blur Lending process $50M+ in NFT-backed borrowing.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">NFT lending allows you to borrow crypto (typically ETH) by using your NFTs as collateral. This unlocks liquidity from illiquid assets without forcing a sale. Whether you hold blue-chip PFPs or niche collections, there are platforms that can help you access the value locked in your NFTs.</p>
       </div>

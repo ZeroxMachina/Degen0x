@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 const token = CRYPTO_TOKENS[1];
 
 export const metadata: Metadata = {
-  title: `How to Invest in Ethereum (ETH) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Ethereum (ETH) 2026 - Complete Guide`,
   description: `Complete Ethereum investment guide for ${CURRENT_YEAR}. Learn about ETH fundamentals, staking, DeFi ecosystem, risks, and how to buy Ethereum.`,
   alternates: { canonical: "/investing/crypto/ethereum" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

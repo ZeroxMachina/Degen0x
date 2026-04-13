@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Euler Finance Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Euler Finance Review (2026) | degen0x`,
   description: "In-depth Euler Finance review covering the V2 modular vault architecture, permissionless lending, security improvements after the V1 exploit, and yield opportunities.",
   alternates: { canonical: "/defi-lending/reviews/euler" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

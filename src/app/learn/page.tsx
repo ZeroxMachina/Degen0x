@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Learn Crypto: Complete Guides & Tutorials (${CURRENT_YEAR})`,
+  title: `Learn Crypto: Complete Guides & Tutorials (2026)`,
   description: "Start your crypto education here. Beginner guides, blockchain basics, Bitcoin and Ethereum explainers, DeFi, NFTs, security tips, and a comprehensive crypto",
   alternates: { canonical: "/learn" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

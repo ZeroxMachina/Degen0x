@@ -9,7 +9,7 @@ import { exchanges } from "@/data/exchanges";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Cheapest Crypto Exchanges in ${CURRENT_YEAR} - Lowest Fee Comparison`,
+  title: `Cheapest Crypto Exchanges in 2026 - Lowest Fee Comparison`,
   description: `Find the crypto exchanges with the lowest trading fees in ${CURRENT_YEAR}. Compare maker/taker fees, withdrawal costs, and hidden charges across top platforms.`,
   alternates: { canonical: "/exchanges/best/low-fee" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

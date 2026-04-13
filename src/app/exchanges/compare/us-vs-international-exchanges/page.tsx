@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `US vs International Crypto Exchanges: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `US vs International Crypto Exchanges: Full Comparison (2026) | degen0x`,
   description: "Compare US-regulated crypto exchanges vs international platforms. Understand differences in features, fees, coin selection, regulation, and risks.",
   alternates: { canonical: "/exchanges/compare/us-vs-international-exchanges" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

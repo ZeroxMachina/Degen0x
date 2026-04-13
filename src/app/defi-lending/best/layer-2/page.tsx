@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Layer 2 DeFi Lending Protocols ${CURRENT_YEAR} - Low-Cost Lending`,
+  title: `Best Layer 2 DeFi Lending Protocols 2026 - Low-Cost Lending`,
   description: `Compare the best DeFi lending protocols on Layer 2 networks in ${CURRENT_YEAR}. Earn yield on Arbitrum, Optimism, Base, and other L2s at a fraction of Ethereum mainnet costs.`,
   alternates: { canonical: "/defi-lending/best/layer-2" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -86,7 +86,10 @@ export default function Layer2Page() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Layer 2", href: "/defi-lending/best/layer-2" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Layer 2 DeFi Lending Protocols ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Layer 2 lending on Arbitrum, Optimism, and Base offers sub-$1 transaction costs and yields matching Ethereum, with $2B+ combined TVL. Caution: newer ecosystems carry smart contract and bridge risk.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Layer 2 networks have transformed DeFi lending by making it accessible to everyone, not just whales who can afford Ethereum mainnet gas costs. With transaction fees under $0.10 and the same battle-tested protocols you know from mainnet, L2 lending offers the best of both worlds: Ethereum security with dramatically lower costs. We compared the top L2 lending options across Arbitrum, Optimism, Base, and other networks.

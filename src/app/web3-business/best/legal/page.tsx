@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Web3 Law Firms of ${CURRENT_YEAR} - Crypto & Blockchain Legal | ${SITE_NAME}`,
+  title: `Best Web3 Law Firms of 2026 - Crypto & Blockchain Legal | degen0x`,
   description: `Compare the best Web3 and crypto law firms of ${CURRENT_YEAR}. Token offerings, DAO structuring, regulatory compliance, and blockchain IP specialists ranked by expertise and client satisfaction.`,
   alternates: { canonical: "/web3-business/best/legal" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

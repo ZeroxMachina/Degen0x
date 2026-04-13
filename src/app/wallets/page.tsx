@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Wallets of ${new Date().getFullYear()} - Reviews, Comparisons & Guides | ${SITE_NAME}`,
+  title: `Best Crypto Wallets of 2026 - Reviews, Comparisons & Guides | degen0x`,
   description: "Compare the best crypto wallets for security, ease of use, and features. Expert reviews of hardware wallets, software wallets, and more. Find the perfect",
   alternates: { canonical: "/wallets" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

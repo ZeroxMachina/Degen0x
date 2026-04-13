@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Ledger vs Keystone (${CURRENT_YEAR}): Air-Gapped vs Connected Wallet | ${SITE_NAME}`,
+  title: `Ledger vs Keystone (2026): Air-Gapped vs Connected Wallet | degen0x`,
   description: `Ledger vs Keystone hardware wallet comparison for ${CURRENT_YEAR}. Compare air-gapped QR signing, multi-chain support, DeFi access, and security.`,
   alternates: { canonical: "/wallets/compare/ledger-vs-keystone" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

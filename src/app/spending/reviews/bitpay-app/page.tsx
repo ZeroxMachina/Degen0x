@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `BitPay App Review (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `BitPay App Review (2026) | degen0x`,
   description: `In-depth BitPay app review for ${CURRENT_YEAR}. Wallet features, bill pay, Visa card, merchant payments, supported cryptocurrencies, fees, and security.`,
   alternates: { canonical: "/spending/reviews/bitpay-app" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

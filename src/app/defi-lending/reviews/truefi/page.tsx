@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `TrueFi Review (${CURRENT_YEAR}): Uncollateralized DeFi Lending | degen0x`,
+  title: `TrueFi Review (2026): Uncollateralized DeFi Lending | degen0x`,
   description: "In-depth TrueFi review covering uncollateralized institutional lending, TRU token staking, on-chain credit scoring, and managed portfolio products.",
   alternates: { canonical: "/defi-lending/reviews/truefi" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

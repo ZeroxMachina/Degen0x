@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Free Crypto Cards (No Annual Fee) of ${CURRENT_YEAR}`,
+  title: `Best Free Crypto Cards (No Annual Fee) of 2026`,
   description: `Compare the best crypto cards with no annual fee in ${CURRENT_YEAR}. Earn crypto rewards without paying yearly charges. Expert-tested free crypto card rankings.`,
   alternates: { canonical: "/crypto-cards/best/no-annual-fee" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Pionex Review (${CURRENT_YEAR}) - Best Free Crypto Trading Bots | ${SITE_NAME}`,
+  title: `Pionex Review (2026) - Best Free Crypto Trading Bots | degen0x`,
   description: `Complete Pionex review for ${CURRENT_YEAR}. Covers 16+ free trading bots, 0.05% fees, grid bot strategies, DCA automation, and user experience.`,
   alternates: { canonical: "/exchanges/reviews/pionex" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -6,7 +6,7 @@ import SocialTradingFeed from "@/components/SocialTradingFeed";
 import { SITE_NAME } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Copy Trading Leaderboard — ${SITE_NAME}`,
+  title: `Copy Trading Leaderboard — degen0x`,
   description: "Follow and copy the best crypto traders. Real-time PnL rankings, strategy analysis, risk scores, and one-click copy trading across Solana, Ethereum, and L2s.",
   keywords: ["copy trading", "crypto traders", "social trading", "trading leaderboard", "mirror trading"],
   alternates: { canonical: "/copy-trading" },

@@ -8,7 +8,7 @@ import { FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Long-Term Crypto Platforms & Providers ${CURRENT_YEAR} - Complete Guide`,
+  title: `Best Long-Term Crypto Platforms & Providers 2026 - Complete Guide`,
   description: `Compare the best platforms for long-term cryptocurrency investing in ${CURRENT_YEAR}. Crypto IRAs, financial advisors, HODL coins, dividend crypto, and self-directed retirement solutions reviewed and ranked.`,
   alternates: { canonical: "/long-term/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

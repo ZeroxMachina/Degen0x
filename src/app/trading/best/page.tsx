@@ -4,7 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import LearnPageLayout from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
-export const metadata: Metadata = { title: `Best Crypto Trading Platforms & Tools (${CURRENT_YEAR}) | ${SITE_NAME}`, description: "Compare the best crypto trading platforms, tools, and strategies. Find the right trading platform for day trading, swing trading, scalping, bots, signals, and" ,
+export const metadata: Metadata = { title: `Best Crypto Trading Platforms & Tools (2026) | degen0x`, description: "Compare the best crypto trading platforms, tools, and strategies. Find the right trading platform for day trading, swing trading, scalping, bots, signals, and" ,
   alternates: { canonical: "/trading/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

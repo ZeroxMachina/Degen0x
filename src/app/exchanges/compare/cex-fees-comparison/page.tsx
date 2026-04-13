@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Exchange Fees Compared: Complete Guide (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Crypto Exchange Fees Compared: Complete Guide (2026) | degen0x`,
   description: "Compare trading fees across all major crypto exchanges. Side-by-side fee tables for Binance, Coinbase, Kraken, Bybit, OKX, and more.",
   alternates: { canonical: "/exchanges/compare/cex-fees-comparison" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

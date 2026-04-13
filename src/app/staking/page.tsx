@@ -7,13 +7,13 @@ import { SITE_NAME, SITE_URL } from '@/lib/constants';
 
 // Metadata for SEO
 export const metadata: Metadata = {
-  title: `Staking Dashboard | Compare Staking Yields & APY | ${SITE_NAME}`,
+  title: `Staking Dashboard | Compare Staking Yields & APY | degen0x`,
   description: `Compare staking yields across major blockchains. Find the best APY for Ethereum (Lido, Rocket Pool), Solana (Marinade, Jito), Cosmos, and Polkadot. Staking calculator, risk analysis, and expert guides.`,
   alternates: {
     canonical: `${SITE_URL}/staking`,
   },
   openGraph: {
-    title: `Staking Dashboard | Compare Staking Yields & APY | ${SITE_NAME}`,
+    title: `Staking Dashboard | Compare Staking Yields & APY | degen0x`,
     description: `Compare staking yields across major blockchains. Find the best APY for Ethereum, Solana, Cosmos, and Polkadot staking protocols.`,
     url: `${SITE_URL}/staking`,
     siteName: SITE_NAME,
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Staking Dashboard | ${SITE_NAME}`,
+    title: `Staking Dashboard | degen0x`,
     description: `Compare staking yields and APY across top protocols. Ethereum, Solana, Cosmos, Polkadot staking analysis.`,
   },
 };

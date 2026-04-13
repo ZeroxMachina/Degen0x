@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Crypto.com vs Coinbase: Which Exchange Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Crypto.com vs Coinbase: Which Exchange Is Better? (2026) | degen0x`,
   description:
     "Crypto.com vs Coinbase compared: fees, Visa cards, mobile experience, coin selection, and features. Discover which exchange is the best choice for your needs.",
   alternates: { canonical: "/exchanges/compare/crypto-com-vs-coinbase" },

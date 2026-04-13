@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Curve vs Uniswap ${CURRENT_YEAR}: Which DEX Is Better?`,
+  title: `Curve vs Uniswap 2026: Which DEX Is Better?`,
   description: `Detailed comparison of Curve vs Uniswap in ${CURRENT_YEAR}. Compare liquidity, fees, stablecoin trading, concentrated liquidity, and which DEX is right for your needs.`,
   alternates: { canonical: "/defi-lending/compare/curve-vs-uniswap" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

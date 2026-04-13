@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Phemex Review (${CURRENT_YEAR}) - Professional Derivatives Exchange | ${SITE_NAME}`,
+  title: `Phemex Review (2026) - Professional Derivatives Exchange | degen0x`,
   description: `Complete Phemex review for ${CURRENT_YEAR}. Covers derivatives trading, fees, Wall Street team background, mobile app, security, and features.`,
   alternates: { canonical: "/exchanges/reviews/phemex" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

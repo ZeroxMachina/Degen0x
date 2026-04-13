@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Web3 Business Tools of ${CURRENT_YEAR} - Complete Rankings | ${SITE_NAME}`,
+  title: `Best Web3 Business Tools of 2026 - Complete Rankings | degen0x`,
   description: `Compare the best Web3 business tools of ${CURRENT_YEAR}. DAO treasury platforms, crypto banking, payroll, accounting, governance tools, grants programs, and more ranked by our expert team.`,
   alternates: { canonical: "/web3-business/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

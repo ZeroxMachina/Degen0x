@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in BNB (BNB) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in BNB (BNB) 2026 - Complete Guide`,
   description: `Complete BNB investment guide for ${CURRENT_YEAR}. Learn about BNB fundamentals, the Binance ecosystem, BNB Chain, risks, and how to buy BNB.`,
   alternates: { canonical: "/investing/crypto/bnb" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

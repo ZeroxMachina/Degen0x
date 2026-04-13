@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Fantom (FTM) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Fantom (FTM) 2026 - Complete Guide`,
   description: `Complete Fantom investment guide for ${CURRENT_YEAR}. Learn about FTM fundamentals, Sonic upgrade, DeFi ecosystem, risks, and how to buy Fantom.`,
   alternates: { canonical: "/investing/crypto/fantom" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Coinbase vs Kraken: Detailed Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Coinbase vs Kraken: Detailed Comparison (2026) | degen0x`,
   description:
     "Compare Coinbase and Kraken: security, fees, features, and more. Find the best US-based crypto exchange for your trading needs.",
   keywords: "Coinbase vs Kraken, US crypto exchange, comparison, security, fees",

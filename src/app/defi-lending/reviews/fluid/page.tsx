@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Fluid (Instadapp) Review ${CURRENT_YEAR}: Smart Lending Protocol`,
+  title: `Fluid (Instadapp) Review 2026: Smart Lending Protocol`,
   description:
     "Comprehensive Fluid review covering smart debt and collateral, DEX integration, lending rates, and how Instadapp's lending protocol innovates on Ethereum.",
   alternates: { canonical: "/defi-lending/reviews/fluid" },

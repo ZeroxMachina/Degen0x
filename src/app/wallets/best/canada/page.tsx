@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Wallets in Canada (${CURRENT_YEAR})`,
+  title: `Best Crypto Wallets in Canada (2026)`,
   description: `Compare the best crypto wallets for Canadians in ${CURRENT_YEAR}. Secure self-custody wallets with CAD on-ramp support, CRA-compatible tax exports, and multi-currency support.`,
   keywords: [
     "best crypto wallets Canada",

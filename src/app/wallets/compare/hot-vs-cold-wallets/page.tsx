@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Hot vs Cold Wallets (${CURRENT_YEAR}) - Which Should You Use? | ${SITE_NAME}`,
+  title: `Hot vs Cold Wallets (2026) - Which Should You Use? | degen0x`,
   description: `Hot wallet vs cold wallet comparison for ${CURRENT_YEAR}. Security, convenience, cost, and best use cases for each wallet type explained.`,
   alternates: { canonical: "/wallets/compare/hot-vs-cold-wallets" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

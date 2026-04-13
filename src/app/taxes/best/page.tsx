@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Tax Solutions (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto Tax Solutions (2026) | degen0x`,
   description: `Explore the best crypto tax solutions for ${CURRENT_YEAR}. From tax software and free tools to crypto CPAs and DeFi-specific tax solutions.`,
   alternates: { canonical: "/taxes/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Long-Term Crypto Investments ${CURRENT_YEAR} - HODL Picks`,
+  title: `Best Long-Term Crypto Investments 2026 - HODL Picks`,
   description: `The best cryptocurrencies to hold long-term. Expert analysis of fundamentals, adoption trends, and growth potential for patient crypto investors.`,
   alternates: { canonical: "/investing/best/long-term" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

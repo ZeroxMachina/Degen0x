@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `BitMart Review (${CURRENT_YEAR}) - 1,000+ Tokens & Altcoin Access | ${SITE_NAME}`,
+  title: `BitMart Review (2026) - 1,000+ Tokens & Altcoin Access | degen0x`,
   description: `Complete BitMart review for ${CURRENT_YEAR}. Covers trading fees, 1,000+ supported tokens, security history, futures trading, and user experience.`,
   alternates: { canonical: "/exchanges/reviews/bitmart" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

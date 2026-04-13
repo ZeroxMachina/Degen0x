@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Fixed vs Variable Rate DeFi Lending ${CURRENT_YEAR}: Comparison`,
+  title: `Fixed vs Variable Rate DeFi Lending 2026: Comparison`,
   description: `Compare fixed and variable rate lending in DeFi in ${CURRENT_YEAR}. Analyze rate mechanics, protocols, risk profiles, and when each is the better choice.`,
   alternates: { canonical: "/defi-lending/compare/fixed-vs-variable-rate" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

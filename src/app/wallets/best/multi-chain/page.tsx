@@ -10,7 +10,7 @@ import { multiChainWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Multi-Chain Wallets of ${CURRENT_YEAR} - Cross-Chain Wallet Reviews | ${SITE_NAME}`,
+  title: `Best Multi-Chain Wallets of 2026 - Cross-Chain Wallet Reviews | degen0x`,
   description: `Compare the best multi-chain crypto wallets of ${CURRENT_YEAR}. Trust Wallet, Exodus, Phantom and more. Manage assets across multiple blockchains from one wallet.`,
   alternates: { canonical: "/wallets/best/multi-chain" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

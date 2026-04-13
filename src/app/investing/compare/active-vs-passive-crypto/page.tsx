@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Active vs Passive Crypto Investing (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Active vs passive crypto investing comparison for ${CURRENT_YEAR}. Trading vs HODL, time commitment, returns, stress levels, and which strategy wins long-term.` ,
+export const metadata: Metadata = { title: `Active vs Passive Crypto Investing (2026) | degen0x`, description: `Active vs passive crypto investing comparison for ${CURRENT_YEAR}. Trading vs HODL, time commitment, returns, stress levels, and which strategy wins long-term.` ,
   alternates: { canonical: "/investing/compare/active-vs-passive-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

@@ -8,7 +8,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "morpho")!;
 
 export const metadata: Metadata = {
-  title: `Morpho Review (${CURRENT_YEAR}): P2P Rate Optimization | degen0x`,
+  title: `Morpho Review (2026): P2P Rate Optimization | degen0x`,
   description: "In-depth Morpho review covering P2P matching, Morpho Blue permissionless markets, rate improvements, security model, and token economics.",
   alternates: { canonical: "/defi-lending/reviews/morpho" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

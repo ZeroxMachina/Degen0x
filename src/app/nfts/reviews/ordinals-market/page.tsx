@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Ordinals Market Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Ordinals Market Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Ordinals Market review covering Bitcoin inscription trading, BRC-20 tokens, fees, features, and whether it is the right platform for Bitcoin NFTs.",
   alternates: { canonical: "/nfts/reviews/ordinals-market" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

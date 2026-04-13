@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Dividend & Revenue-Sharing Crypto Tokens ${CURRENT_YEAR}`,
+  title: `Best Dividend & Revenue-Sharing Crypto Tokens 2026`,
   description: "Discover the best crypto tokens that pay dividends or share revenue with holders. Compare yield, sustainability, and long-term potential.",
   alternates: { canonical: "/long-term/best/dividend-tokens" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -87,7 +87,10 @@ export default function DividendTokensPage() {
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Dividend & Revenue-Sharing Tokens ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
-        <p className="text-xl text-[var(--color-text-secondary)] mb-6">Some crypto tokens distribute real protocol revenue to holders, creating a dividend-like income stream. For long-term investors, these tokens offer both price appreciation potential and regular yield from actual usage-based revenue.</p>
+        
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Dividend-paying protocols like Aave, Uniswap, and Curve return 5–15% annually to token holders through fees and buybacks. Revenue-generating protocols have proven more durable than pure speculation during crypto downturns.
+        </p><p className="text-xl text-[var(--color-text-secondary)] mb-6">Some crypto tokens distribute real protocol revenue to holders, creating a dividend-like income stream. For long-term investors, these tokens offer both price appreciation potential and regular yield from actual usage-based revenue.</p>
         <p className="text-[var(--color-text-secondary)]">We evaluated tokens based on revenue sustainability, distribution transparency, yield consistency, and the fundamental strength of the underlying protocol. The best dividend tokens generate revenue from real user demand rather than inflationary token emissions.</p>
       </div>
       <div className="space-y-6 mb-12">{products.map((product, index) => (<ProductCard key={product.slug} product={product} rank={index + 1} categorySlug="long-term" />))}</div>

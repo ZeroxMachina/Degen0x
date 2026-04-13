@@ -29,7 +29,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `ProBit Global Review (${CURRENT_YEAR}) - IEO Launchpad & Altcoin Trading | ${SITE_NAME}`,
+  title: `ProBit Global Review (2026) - IEO Launchpad & Altcoin Trading | degen0x`,
   description: `Complete ProBit Global review for ${CURRENT_YEAR}. Covers IEO launchpad, 800+ trading pairs, fees, security, and trading experience.`,
   alternates: { canonical: "/exchanges/reviews/probit" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Solana NFT Marketplaces in ${CURRENT_YEAR} | degen0x`,
+  title: `Best Solana NFT Marketplaces in 2026 | degen0x`,
   description: `Compare the best Solana NFT marketplaces in ${CURRENT_YEAR}. Fast transactions, low fees, and vibrant collections on the Solana blockchain.`,
   alternates: { canonical: "/nfts/best/solana" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

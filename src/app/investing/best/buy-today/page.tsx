@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Crypto to Buy Today (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto to Buy Today (2026) | degen0x`,
   description: `Top cryptocurrencies to buy in ${CURRENT_YEAR}. Expert picks based on fundamentals, growth potential, and risk-adjusted value across market cap tiers.`,
   alternates: { canonical: "/investing/best/buy-today" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `TurboTax vs Koinly ${CURRENT_YEAR}: Built-In Crypto vs Dedicated Tax Software`,
+  title: `TurboTax vs Koinly 2026: Built-In Crypto vs Dedicated Tax Software`,
   description: `Compare TurboTax's built-in crypto features vs Koinly's dedicated crypto tax platform. Which approach is better for crypto tax reporting in ${CURRENT_YEAR}?`,
   alternates: { canonical: "/taxes/compare/turbotax-vs-koinly" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

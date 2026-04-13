@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto-Friendly Business Banks of ${CURRENT_YEAR} | ${SITE_NAME}`,
+  title: `Best Crypto-Friendly Business Banks of 2026 | degen0x`,
   description: `Compare the best crypto-friendly business banks of ${CURRENT_YEAR}. Banking partners that welcome Web3 companies with fiat on/off ramps, stablecoin support, and no surprise account closures.`,
   alternates: { canonical: "/web3-business/best/business-banking" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

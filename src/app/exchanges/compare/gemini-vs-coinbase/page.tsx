@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Gemini vs Coinbase (${CURRENT_YEAR}): Security-Focused Comparison | ${SITE_NAME}`,
+  title: `Gemini vs Coinbase (2026): Security-Focused Comparison | degen0x`,
   description: `Gemini vs Coinbase security comparison for ${CURRENT_YEAR}. Compare custody, compliance, insurance, and institutional features for security-conscious investors.`,
   alternates: { canonical: "/exchanges/compare/gemini-vs-coinbase" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

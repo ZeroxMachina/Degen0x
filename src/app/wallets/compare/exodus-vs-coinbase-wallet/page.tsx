@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Exodus vs Coinbase Wallet (${CURRENT_YEAR}): Self-Custody Wallet Comparison | ${SITE_NAME}`,
+  title: `Exodus vs Coinbase Wallet (2026): Self-Custody Wallet Comparison | degen0x`,
   description: `Exodus vs Coinbase Wallet comparison for ${CURRENT_YEAR}. Compare multi-chain support, DeFi features, staking, swap fees, and beginner experience.`,
   alternates: { canonical: "/wallets/compare/exodus-vs-coinbase-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

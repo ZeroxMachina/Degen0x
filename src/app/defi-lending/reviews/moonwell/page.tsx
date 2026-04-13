@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Moonwell Review ${CURRENT_YEAR}: Base & Moonbeam Lending Protocol`,
+  title: `Moonwell Review 2026: Base & Moonbeam Lending Protocol`,
   description:
     "Complete Moonwell review covering lending markets on Base and Moonbeam, yield rates, governance, safety features, and how it compares to alternatives.",
   alternates: { canonical: "/defi-lending/reviews/moonwell" },

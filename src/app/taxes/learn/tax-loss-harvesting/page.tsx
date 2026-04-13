@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Tax Loss Harvesting: How to Reduce Your ${CURRENT_YEAR} Tax Bill`,
+  title: `Crypto Tax Loss Harvesting: How to Reduce Your 2026 Tax Bill`,
   description:
     "Learn crypto tax loss harvesting strategies for 2026. Understand how to offset capital gains, reduce your tax liability, and take advantage of crypto's unique tax benefits. Step-by-step guide with no-wash-sale rules.",
   alternates: {

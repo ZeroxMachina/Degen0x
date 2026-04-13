@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Revolut Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Revolut Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Revolut Crypto review covering trading fees, 200+ supported tokens, exchange feature, and whether this super-app suits your crypto needs.",
   alternates: { canonical: "/exchanges/reviews/revolut-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

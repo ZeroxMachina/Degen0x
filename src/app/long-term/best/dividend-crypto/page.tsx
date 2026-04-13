@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Dividend & Yield Earning Crypto ${CURRENT_YEAR} - Passive Income Tokens`,
+  title: `Best Dividend & Yield Earning Crypto 2026 - Passive Income Tokens`,
   description: `Find the best dividend-paying and yield-earning cryptocurrencies in ${CURRENT_YEAR}. Compare staking yields, real yield protocols, and passive income tokens for long-term crypto investors.`,
   alternates: { canonical: "/long-term/best/dividend-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

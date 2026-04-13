@@ -9,7 +9,7 @@ import { stakingPlatforms } from "@/data/staking";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Restaking Platforms of ${CURRENT_YEAR} (Compared)`,
+  title: `Best Restaking Platforms of 2026 (Compared)`,
   description: `Compare the best restaking platforms in ${CURRENT_YEAR}. EigenLayer and restaking protocols reviewed for additional yield, risks, and AVS opportunities.`,
   alternates: { canonical: "/investing/staking/best/restaking" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

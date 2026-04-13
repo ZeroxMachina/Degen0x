@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Impermax Review ${CURRENT_YEAR}: Leveraged LP Farming Protocol`,
+  title: `Impermax Review 2026: Leveraged LP Farming Protocol`,
   description:
     "Detailed Impermax review covering leveraged liquidity provision, lending markets, multi-chain support, and how this protocol compares to similar platforms.",
   alternates: { canonical: "/defi-lending/reviews/impermax" },

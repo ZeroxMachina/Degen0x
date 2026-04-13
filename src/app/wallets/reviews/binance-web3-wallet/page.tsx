@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Binance Web3 Wallet Review (${CURRENT_YEAR}) - Best CEX-Integrated Wallet? | ${SITE_NAME}`,
+  title: `Binance Web3 Wallet Review (2026) - Best CEX-Integrated Wallet? | degen0x`,
   description: `Detailed Binance Web3 Wallet review for ${CURRENT_YEAR}. Covers MPC key management, multi-chain support, built-in earn features, and Binance app integration.`,
   alternates: { canonical: "/wallets/reviews/binance-web3-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

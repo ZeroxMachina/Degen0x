@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Pac Finance Review ${CURRENT_YEAR}: Blast L2 Lending & Points`,
+  title: `Pac Finance Review 2026: Blast L2 Lending & Points`,
   description: "In-depth Pac Finance review covering lending on Blast, points farming, yield strategies, and risk analysis for this Blast-native lending protocol.",
   alternates: { canonical: "/defi-lending/reviews/pac-finance" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

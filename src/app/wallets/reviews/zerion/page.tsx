@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Zerion Wallet Review (${CURRENT_YEAR}) - Best DeFi Portfolio Wallet? | ${SITE_NAME}`,
+  title: `Zerion Wallet Review (2026) - Best DeFi Portfolio Wallet? | degen0x`,
   description: `Detailed Zerion wallet review for ${CURRENT_YEAR}. Covers multi-chain DeFi tracking, swap aggregation, NFT management, and portfolio analytics.`,
   alternates: { canonical: "/wallets/reviews/zerion" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

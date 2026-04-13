@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Deribit Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Deribit Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Deribit review covering crypto options trading, futures, fees, liquidity, and whether this derivatives exchange suits your trading needs.",
   alternates: { canonical: "/exchanges/reviews/deribit" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

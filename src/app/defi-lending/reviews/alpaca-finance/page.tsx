@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Alpaca Finance Review ${CURRENT_YEAR}: Leveraged Yield Farming`,
+  title: `Alpaca Finance Review 2026: Leveraged Yield Farming`,
   description:
     "Complete Alpaca Finance review covering leveraged yield farming, lending vaults, automated strategies, and risk analysis on BNB Chain and Fantom.",
   alternates: { canonical: "/defi-lending/reviews/alpaca-finance" },

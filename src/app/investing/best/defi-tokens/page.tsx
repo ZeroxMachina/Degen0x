@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best DeFi Tokens ${CURRENT_YEAR} - Top Decentralized Finance Investments`,
+  title: `Best DeFi Tokens 2026 - Top Decentralized Finance Investments`,
   description: `Discover the best DeFi tokens for ${CURRENT_YEAR}. Analysis of top decentralized finance protocols by TVL, revenue, governance, and growth potential.`,
   alternates: { canonical: "/investing/best/defi-tokens" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

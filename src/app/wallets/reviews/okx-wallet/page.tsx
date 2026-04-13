@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `OKX Wallet Review (${CURRENT_YEAR}) - Multi-Chain Web3 Wallet | ${SITE_NAME}`,
+  title: `OKX Wallet Review (2026) - Multi-Chain Web3 Wallet | degen0x`,
   description: `Complete OKX Wallet review for ${CURRENT_YEAR}. Covers 80+ chain support, DEX aggregator, MPC wallet option, NFT marketplace, and OKX integration.`,
   alternates: { canonical: "/wallets/reviews/okx-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

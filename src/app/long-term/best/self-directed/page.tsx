@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Self-Directed Crypto Retirement Accounts ${CURRENT_YEAR}`,
+  title: `Best Self-Directed Crypto Retirement Accounts 2026`,
   description: `Compare the best self-directed IRA and Solo 401(k) providers for cryptocurrency investing in ${CURRENT_YEAR}. Take full control of your crypto retirement portfolio with checkbook control and expanded asset options.`,
   alternates: { canonical: "/long-term/best/self-directed" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

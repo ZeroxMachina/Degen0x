@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Protocol Cover Insurance ${CURRENT_YEAR} - DeFi Protocol Protection`,
+  title: `Best Protocol Cover Insurance 2026 - DeFi Protocol Protection`,
   description: "Compare the best DeFi protocol cover insurance. Protect against governance attacks, oracle manipulation, and protocol-level failures across major DeFi",
   alternates: { canonical: "/insurance/best/protocol-cover" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

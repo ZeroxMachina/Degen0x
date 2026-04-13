@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Under $1 (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto Under $1 (2026) | degen0x`,
   description: `Top cryptocurrencies under $1 in ${CURRENT_YEAR}. Promising low-priced tokens with genuine utility, strong teams, and growth potential.`,
   alternates: { canonical: "/investing/best/under-1-dollar" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `UTrust Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `UTrust Review 2026: Fees, Features, Pros & Cons`,
   description: "Utrust review: Accept and settle crypto payments without conversion. Compare payment processing fees, features, and Web3 business payment solutions.",
   alternates: { canonical: "/web3-business/reviews/utrust" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

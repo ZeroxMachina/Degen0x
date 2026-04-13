@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Aave vs Compound ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
+  title: `Aave vs Compound 2026: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Aave vs Compound in ${CURRENT_YEAR}. Compare yields, features, security, supported assets, and multi-chain availability.`,
   alternates: { canonical: "/defi-lending/compare/aave-vs-compound" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

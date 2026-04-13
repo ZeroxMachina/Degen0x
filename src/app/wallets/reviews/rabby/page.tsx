@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 const product = walletProducts.find((p) => p.slug === "rabby")!;
 
 export const metadata: Metadata = {
-  title: `Rabby Wallet Review (${CURRENT_YEAR}) - Security-First EVM Wallet | ${SITE_NAME}`,
+  title: `Rabby Wallet Review (2026) - Security-First EVM Wallet | degen0x`,
   description: `Complete Rabby wallet review for ${CURRENT_YEAR}. Covers transaction simulation, auto chain detection, multi-chain EVM support, and DeFi security features.`,
   alternates: { canonical: "/wallets/reviews/rabby" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

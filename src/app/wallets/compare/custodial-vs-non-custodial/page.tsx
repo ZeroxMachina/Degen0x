@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Custodial vs Non-Custodial Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Custodial vs Non-Custodial Wallets (2026) | degen0x`,
   description: `Custodial vs non-custodial wallet comparison for ${CURRENT_YEAR}. Key ownership, security, recovery options, DeFi access, and privacy compared.`,
   alternates: { canonical: "/wallets/compare/custodial-vs-non-custodial" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

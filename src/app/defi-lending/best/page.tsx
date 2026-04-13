@@ -10,7 +10,7 @@ import { DEFI_LENDING_PRODUCTS, DEFI_COMPARISON_ITEMS, DEFI_COMPARISON_FEATURES,
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `7 Best DeFi Lending Protocols of ${CURRENT_YEAR} (Ranked & Reviewed)`,
+  title: `7 Best DeFi Lending Protocols of 2026 (Ranked & Reviewed)`,
   description: `Compare the top DeFi lending protocols of ${CURRENT_YEAR}. We tested yield rates, security, TVL, and user experience. Find the best protocol for earning yield and borrowing.`,
   alternates: { canonical: "/defi-lending/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

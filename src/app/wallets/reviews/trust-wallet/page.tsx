@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 const product = walletProducts.find((p) => p.slug === "trust-wallet")!;
 
 export const metadata: Metadata = {
-  title: `Trust Wallet Review (${CURRENT_YEAR}) - Multi-Chain Mobile Wallet | ${SITE_NAME}`,
+  title: `Trust Wallet Review (2026) - Multi-Chain Mobile Wallet | degen0x`,
   description: `Full Trust Wallet review for ${CURRENT_YEAR}. Covers 100+ blockchain support, dApp browser, staking, security, and Binance integration.`,
   alternates: { canonical: "/wallets/reviews/trust-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

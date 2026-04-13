@@ -10,7 +10,7 @@ import { privacyWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Privacy Crypto Wallets of ${CURRENT_YEAR} - Anonymous Wallet Reviews | ${SITE_NAME}`,
+  title: `Best Privacy Crypto Wallets of 2026 - Anonymous Wallet Reviews | degen0x`,
   description: `Compare the best privacy-focused crypto wallets of ${CURRENT_YEAR}. Trezor, Rabby, MetaMask and more. CoinJoin, Tor support, no KYC, and private transactions.`,
   alternates: { canonical: "/wallets/best/privacy" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

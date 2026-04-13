@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Avalanche vs Solana (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Avalanche vs Solana comparison for ${CURRENT_YEAR}. Subnet architecture vs monolithic performance — speed, fees, DeFi, and investment potential compared.` ,
+export const metadata: Metadata = { title: `Avalanche vs Solana (2026) | degen0x`, description: `Avalanche vs Solana comparison for ${CURRENT_YEAR}. Subnet architecture vs monolithic performance — speed, fees, DeFi, and investment potential compared.` ,
   alternates: { canonical: "/investing/compare/avalanche-vs-solana" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

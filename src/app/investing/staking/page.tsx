@@ -9,7 +9,7 @@ import { stakingPlatforms } from "@/data/staking";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Staking Platforms of ${CURRENT_YEAR} - Compare & Review`,
+  title: `Best Crypto Staking Platforms of 2026 - Compare & Review`,
   description: `Compare the best crypto staking platforms of ${CURRENT_YEAR}. Expert reviews of liquid staking, restaking, and validator services. Find the best staking yields and lowest fees.`,
   alternates: { canonical: "/investing/staking" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Cosmos (ATOM) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Cosmos (ATOM) 2026 - Complete Guide`,
   description: `Complete Cosmos investment guide for ${CURRENT_YEAR}. Learn about ATOM fundamentals, IBC protocol, appchains, staking, risks, and how to buy ATOM.`,
   alternates: { canonical: "/investing/crypto/cosmos" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

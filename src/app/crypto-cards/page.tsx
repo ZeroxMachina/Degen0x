@@ -9,7 +9,7 @@ import { cryptoCards } from "@/data/crypto-cards";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Credit Cards & Debit Cards of ${CURRENT_MONTH} ${CURRENT_YEAR}`,
+  title: `Best Crypto Credit Cards & Debit Cards of April 2026`,
   description: `Compare the best crypto cards of ${CURRENT_YEAR}. Expert reviews of crypto credit cards, debit cards, and rewards cards. Earn Bitcoin, ETH, and cashback on every purchase.`,
   alternates: { canonical: "/crypto-cards" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

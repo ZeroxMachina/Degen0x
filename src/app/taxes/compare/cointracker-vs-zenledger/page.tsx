@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `CoinTracker vs ZenLedger ${CURRENT_YEAR}: Which Crypto Tax Software Is Better?`,
+  title: `CoinTracker vs ZenLedger 2026: Which Crypto Tax Software Is Better?`,
   description: `Compare CoinTracker vs ZenLedger for crypto tax reporting. Pricing, features, DeFi support, and TurboTax integration compared in ${CURRENT_YEAR}.`,
   alternates: { canonical: "/taxes/compare/cointracker-vs-zenledger" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

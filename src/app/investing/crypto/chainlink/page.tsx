@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 const token = CRYPTO_TOKENS[6];
 
 export const metadata: Metadata = {
-  title: `How to Invest in Chainlink (LINK) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Chainlink (LINK) 2026 - Complete Guide`,
   description: `Complete Chainlink investment guide for ${CURRENT_YEAR}. Learn about LINK fundamentals, oracle networks, CCIP, staking, and how to buy Chainlink.`,
   alternates: { canonical: "/investing/crypto/chainlink" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

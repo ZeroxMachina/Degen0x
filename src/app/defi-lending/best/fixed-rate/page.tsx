@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Fixed Rate DeFi Lending ${CURRENT_YEAR} - Predictable Yield`,
+  title: `Best Fixed Rate DeFi Lending 2026 - Predictable Yield`,
   description: `Compare the best fixed-rate DeFi lending protocols in ${CURRENT_YEAR}. Lock in predictable yields without worrying about rate volatility.`,
   alternates: { canonical: "/defi-lending/best/fixed-rate" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -86,7 +86,10 @@ export default function FixedRatePage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Fixed Rate", href: "/defi-lending/best/fixed-rate" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Fixed Rate DeFi Lending ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Fixed-rate lending protocols like Notional and Yield Protocol lock interest rates for specific durations, eliminating rate risk. Fixed-rate volume has grown to $500M+ as traders hedge against rate volatility.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Variable DeFi yields can swing wildly with market conditions, making it difficult to plan around expected returns. Fixed-rate protocols solve this by allowing you to lock in a guaranteed yield for a specific period. Whether you are managing treasury funds, planning for known expenses, or simply want peace of mind, fixed-rate DeFi lending provides the predictability that variable-rate protocols cannot match.

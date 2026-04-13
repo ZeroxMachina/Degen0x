@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Maple vs Goldfinch ${CURRENT_YEAR}: Institutional DeFi Lending Compared`,
+  title: `Maple vs Goldfinch 2026: Institutional DeFi Lending Compared`,
   description: `Compare Maple Finance vs Goldfinch in ${CURRENT_YEAR}. Analyze institutional lending approaches, yields, risk profiles, and borrower types.`,
   alternates: { canonical: "/defi-lending/compare/maple-vs-goldfinch" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `OpenSea vs Rarible: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `OpenSea vs Rarible: Which NFT Marketplace Is Better? (2026) | degen0x`,
   description: "Detailed comparison of OpenSea vs Rarible. Compare fees, creator tools, governance, chain support, and features to find the best NFT marketplace for you.",
   alternates: { canonical: "/nfts/compare/opensea-vs-rarible" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

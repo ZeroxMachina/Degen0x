@@ -11,7 +11,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `8 Best Crypto Staking Platforms of ${CURRENT_YEAR} (Ranked & Reviewed)`,
+  title: `8 Best Crypto Staking Platforms of 2026 (Ranked & Reviewed)`,
   description: `Compare the top crypto staking platforms of ${CURRENT_YEAR}. We tested yields, fees, security, and decentralization. Find the best platform for liquid staking, restaking, and more.`,
   alternates: { canonical: "/investing/staking/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

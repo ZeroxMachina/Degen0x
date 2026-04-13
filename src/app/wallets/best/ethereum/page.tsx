@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Ethereum Wallets of ${CURRENT_YEAR} - ETH & ERC-20 | ${SITE_NAME}`,
+  title: `Best Ethereum Wallets of 2026 - ETH & ERC-20 | degen0x`,
   description: `The best Ethereum wallets for ${CURRENT_YEAR}. Compare MetaMask, Rabby, Ledger, and more for ETH, ERC-20 tokens, DeFi, and NFTs.`,
   alternates: { canonical: "/wallets/best/ethereum" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

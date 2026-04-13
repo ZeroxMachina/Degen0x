@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Kraken vs Coinbase (${CURRENT_YEAR}): Fees, Security & Features Compared | ${SITE_NAME}`,
+  title: `Kraken vs Coinbase (2026): Fees, Security & Features Compared | degen0x`,
   description: `Kraken vs Coinbase in-depth comparison for ${CURRENT_YEAR}. We compare fees, staking, security, and pro trading tools from Kraken's perspective.`,
   alternates: { canonical: "/exchanges/compare/kraken-vs-coinbase" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

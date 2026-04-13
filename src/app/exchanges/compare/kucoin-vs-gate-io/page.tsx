@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `KuCoin vs Gate.io (${CURRENT_YEAR}): Altcoin Exchange Comparison | ${SITE_NAME}`,
+  title: `KuCoin vs Gate.io (2026): Altcoin Exchange Comparison | degen0x`,
   description: `KuCoin vs Gate.io comparison for ${CURRENT_YEAR}. Compare altcoin listings, fees, features, and security for the two leading altcoin exchanges.`,
   alternates: { canonical: "/exchanges/compare/kucoin-vs-gate-io" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

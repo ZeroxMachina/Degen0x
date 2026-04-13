@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Coinbase Wallet vs MetaMask (${CURRENT_YEAR}) - Which Wallet Is Better? | ${SITE_NAME}`,
+  title: `Coinbase Wallet vs MetaMask (2026) - Which Wallet Is Better? | degen0x`,
   description: `Coinbase Wallet vs MetaMask detailed comparison for ${CURRENT_YEAR}. Features, chain support, DeFi access, security, and ease of use compared side by side.`,
   alternates: { canonical: "/wallets/compare/coinbase-wallet-vs-metamask" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

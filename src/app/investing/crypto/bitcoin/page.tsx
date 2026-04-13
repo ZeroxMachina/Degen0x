@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 const token = CRYPTO_TOKENS[0];
 
 export const metadata: Metadata = {
-  title: `How to Invest in Bitcoin (BTC) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Bitcoin (BTC) 2026 - Complete Guide`,
   description: `Complete Bitcoin investment guide for ${CURRENT_YEAR}. Learn about BTC fundamentals, price history, risks, use cases, and how to buy Bitcoin.`,
   alternates: { canonical: "/investing/crypto/bitcoin" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Software vs Hardware Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Software vs Hardware Wallets (2026) | degen0x`,
   description: `Software wallet vs hardware wallet comparison for ${CURRENT_YEAR}. Security, cost, convenience, DeFi access, and portability compared side by side.`,
   alternates: { canonical: "/wallets/compare/software-vs-hardware" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

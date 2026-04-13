@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Dividend-Like Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Dividend-Like Crypto (2026) | degen0x`,
   description: `Top cryptocurrencies that distribute revenue to holders in ${CURRENT_YEAR}. Real yield from staking, fee sharing, and protocol revenue distribution.`,
   alternates: { canonical: "/investing/best/dividend-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

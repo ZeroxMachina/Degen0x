@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Coinbase Commerce Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Coinbase Commerce Review 2026: Fees, Features, Pros & Cons`,
   description: "Coinbase Commerce review: Accept crypto payments for your business. Compare fees, features, settlement times, and alternative payment processors.",
   alternates: { canonical: "/web3-business/reviews/coinbase-commerce" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

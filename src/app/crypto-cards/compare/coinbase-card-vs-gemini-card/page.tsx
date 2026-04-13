@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Coinbase Card vs Gemini Credit Card: Compared (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Coinbase Card vs Gemini Credit Card: Compared (2026) | degen0x`,
   description:
     "Coinbase Card vs Gemini Credit Card: debit vs credit, cashback structures, fees, and rewards compared. Find out which US crypto card fits your spending style.",
   alternates: { canonical: "/crypto-cards/compare/coinbase-card-vs-gemini-card" },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best DAO Governance Tools of ${CURRENT_YEAR} - Voting & Proposals | ${SITE_NAME}`,
+  title: `Best DAO Governance Tools of 2026 - Voting & Proposals | degen0x`,
   description: `Compare the best DAO governance tools of ${CURRENT_YEAR}. On-chain and off-chain voting, proposal management, delegation systems, and governance frameworks for decentralized organizations.`,
   alternates: { canonical: "/web3-business/best/dao-tools" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

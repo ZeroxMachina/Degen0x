@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Nexus Mutual Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Nexus Mutual Review (2026) | degen0x`,
   description: "In-depth Nexus Mutual review covering smart contract cover, claim process, NXM staking, pricing, and how it compares to other DeFi insurance protocols.",
   alternates: { canonical: "/insurance/reviews/nexus-mutual" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

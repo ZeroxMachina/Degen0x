@@ -5,7 +5,7 @@ import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Wallet Backup Guide (${CURRENT_YEAR}) - Protect Your Recovery Phrase | ${SITE_NAME}`,
+  title: `Crypto Wallet Backup Guide (2026) - Protect Your Recovery Phrase | degen0x`,
   description: `Complete guide to backing up your crypto wallet in ${CURRENT_YEAR}. Seed phrase storage, metal backups, Shamir Backup, multi-location strategies, and disaster recovery.`,
   alternates: { canonical: "/wallets/learn/wallet-backup-guide" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { TAX_PRODUCTS, TAX_FAQS } from "@/data/taxes";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Tax Software & Guides (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto Tax Software & Guides (2026) | degen0x`,
   description: `Navigate crypto taxes with confidence. Compare the best crypto tax software, read expert reviews, use free calculators, and learn how cryptocurrency is taxed in ${CURRENT_YEAR}.`,
   alternates: { canonical: "/taxes" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

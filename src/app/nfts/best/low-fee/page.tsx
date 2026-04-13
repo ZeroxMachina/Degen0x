@@ -9,7 +9,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Lowest Fee NFT Marketplaces in ${CURRENT_YEAR} | degen0x`,
+  title: `Lowest Fee NFT Marketplaces in 2026 | degen0x`,
   description: `Compare the NFT marketplaces with the lowest fees in ${CURRENT_YEAR}. Find platforms with zero or minimal marketplace fees to maximize your NFT trading profits.`,
   alternates: { canonical: "/nfts/best/low-fee" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

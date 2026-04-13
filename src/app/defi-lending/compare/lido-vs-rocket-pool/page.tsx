@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Lido vs Rocket Pool ${CURRENT_YEAR}: Which Liquid Staking Protocol Is Better?`,
+  title: `Lido vs Rocket Pool 2026: Which Liquid Staking Protocol Is Better?`,
   description: `Compare Lido vs Rocket Pool for ETH liquid staking in ${CURRENT_YEAR}. Analyze yields, decentralization, fees, DeFi integration, and which is right for you.`,
   alternates: { canonical: "/defi-lending/compare/lido-vs-rocket-pool" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

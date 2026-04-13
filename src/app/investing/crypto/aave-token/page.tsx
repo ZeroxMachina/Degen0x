@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Aave (AAVE) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Aave (AAVE) 2026 - Complete Guide`,
   description: `Complete Aave token investment guide for ${CURRENT_YEAR}. Learn about AAVE fundamentals, DeFi lending, governance, revenue sharing, risks, and how to buy AAVE.`,
   alternates: { canonical: "/investing/crypto/aave-token" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

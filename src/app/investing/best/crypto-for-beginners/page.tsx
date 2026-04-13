@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto to Buy for Beginners in ${CURRENT_YEAR} (10 Picks Ranked)`,
+  title: `Best Crypto to Buy for Beginners in 2026 (10 Picks Ranked)`,
   description: `The 10 best cryptocurrencies for beginners in ${CURRENT_YEAR}. Ranked by risk level, ease of buying, long-term potential, and beginner-friendliness. Start your crypto journey with confidence.`,
   alternates: { canonical: "/investing/best/crypto-for-beginners" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

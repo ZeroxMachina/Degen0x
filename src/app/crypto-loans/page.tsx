@@ -9,7 +9,7 @@ import { CRYPTO_LOAN_PRODUCTS, LOAN_FAQS } from "@/data/crypto-loans";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Loans - Compare Crypto-Backed Lending Platforms ${CURRENT_YEAR}`,
+  title: `Crypto Loans - Compare Crypto-Backed Lending Platforms 2026`,
   description: "Compare the best crypto loan platforms. Borrow against your Bitcoin and crypto without selling. CeFi and DeFi options with expert reviews and guides.",
   alternates: { canonical: "/crypto-loans" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

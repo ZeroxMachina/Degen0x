@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto.com Pay Review (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Crypto.com Pay Review (2026) | degen0x`,
   description: `Crypto.com Pay review for ${CURRENT_YEAR}. Merchant payments, supported cryptos, CRO cashback, integration options, fees, and user experience.`,
   alternates: { canonical: "/spending/reviews/crypto-com-pay" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

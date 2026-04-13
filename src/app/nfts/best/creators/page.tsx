@@ -9,7 +9,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best NFT Marketplaces for Creators in ${CURRENT_YEAR} | degen0x`,
+  title: `Best NFT Marketplaces for Creators in 2026 | degen0x`,
   description: `Find the best NFT marketplaces for creators in ${CURRENT_YEAR}. Platforms with the best minting tools, royalty support, custom contracts, and creator-focused features.`,
   alternates: { canonical: "/nfts/best/creators" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `KuCoin vs Binance (${CURRENT_YEAR}): Which Exchange Is Better? | ${SITE_NAME}`,
+  title: `KuCoin vs Binance (2026): Which Exchange Is Better? | degen0x`,
   description: `KuCoin vs Binance comparison for ${CURRENT_YEAR}. Compare altcoin selection, trading bots, fees, liquidity, and features to choose the best exchange for your needs.`,
   alternates: { canonical: "/exchanges/kucoin-vs-binance" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

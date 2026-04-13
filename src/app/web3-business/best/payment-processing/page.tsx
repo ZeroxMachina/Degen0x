@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Payment Processors of ${CURRENT_YEAR} - Accept Crypto Payments | ${SITE_NAME}`,
+  title: `Best Crypto Payment Processors of 2026 - Accept Crypto Payments | degen0x`,
   description: `Compare the best crypto payment processors in ${CURRENT_YEAR}. Accept Bitcoin, Ethereum, and stablecoins for your business with e-commerce plugins, invoicing, and instant fiat settlement.`,
   alternates: { canonical: "/web3-business/best/payment-processing" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

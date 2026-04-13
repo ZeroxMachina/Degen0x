@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Orca DEX Review (${CURRENT_YEAR}) - Solana's User-Friendly DEX | ${SITE_NAME}`,
+  title: "Orca DEX Review (2026) - Solanas User-Friendly DEX | ${SITE_NAME}",
   description: `Complete Orca review for ${CURRENT_YEAR}. Covers Whirlpool concentrated liquidity, swap UX, fees, liquidity provision, and comparison with Raydium.`,
   alternates: { canonical: "/exchanges/reviews/orca" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

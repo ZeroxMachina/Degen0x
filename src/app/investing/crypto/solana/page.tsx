@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 const token = CRYPTO_TOKENS[2];
 
 export const metadata: Metadata = {
-  title: `How to Invest in Solana (SOL) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Solana (SOL) 2026 - Complete Guide`,
   description: `Complete Solana investment guide for ${CURRENT_YEAR}. Learn about SOL fundamentals, ecosystem growth, staking, risks, and how to buy Solana.`,
   alternates: { canonical: "/investing/crypto/solana" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

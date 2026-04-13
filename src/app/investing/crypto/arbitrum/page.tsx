@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 const token = CRYPTO_TOKENS[9];
 
 export const metadata: Metadata = {
-  title: `How to Invest in Arbitrum (ARB) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Arbitrum (ARB) 2026 - Complete Guide`,
   description: `Complete Arbitrum investment guide for ${CURRENT_YEAR}. Learn about ARB fundamentals, L2 dominance, DeFi ecosystem, Orbit chains, and how to buy Arbitrum.`,
   alternates: { canonical: "/investing/crypto/arbitrum" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `CoinTracker Review (${CURRENT_YEAR}) - Pricing, Features & TurboTax Integration | ${SITE_NAME}`,
+  title: `CoinTracker Review (2026) - Pricing, Features & TurboTax Integration | degen0x`,
   description: `Detailed CoinTracker review for ${CURRENT_YEAR}. Analysis of pricing, TurboTax integration, portfolio tracking, DeFi support, and how it compares to Koinly.`,
   alternates: { canonical: "/taxes/reviews/cointracker" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

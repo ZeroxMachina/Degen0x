@@ -30,7 +30,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Foundation Review: Premium NFT Art Marketplace (${CURRENT_YEAR}) | degen0x`,
+  title: `Foundation Review: Premium NFT Art Marketplace (2026) | degen0x`,
   description:
     "In-depth Foundation review covering its curated art focus, auction system, creator tools, fees, and whether it's the right NFT marketplace for art collectors.",
   alternates: { canonical: "/nfts/reviews/foundation" },

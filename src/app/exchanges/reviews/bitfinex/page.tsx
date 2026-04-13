@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bitfinex Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Bitfinex Review (2026) | degen0x`,
   description:
     "Detailed Bitfinex review covering margin trading, fees, security, and advanced features. Everything you need to know about Bitfinex.",
   alternates: { canonical: "/exchanges/reviews/bitfinex" },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 const token = CRYPTO_TOKENS[4];
 
 export const metadata: Metadata = {
-  title: `How to Invest in Polkadot (DOT) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Polkadot (DOT) 2026 - Complete Guide`,
   description: `Complete Polkadot investment guide for ${CURRENT_YEAR}. Learn about DOT fundamentals, parachains, interoperability, staking, and how to buy Polkadot.`,
   alternates: { canonical: "/investing/crypto/polkadot" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

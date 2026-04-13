@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Backpack Wallet Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Backpack Wallet Review (2026) | degen0x`,
   description: "Backpack Wallet review covering xNFT app platform, Solana and Ethereum support, built-in exchange features, and developer ecosystem.",
   alternates: { canonical: "/wallets/reviews/backpack-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

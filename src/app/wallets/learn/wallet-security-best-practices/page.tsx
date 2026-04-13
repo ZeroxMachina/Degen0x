@@ -5,7 +5,7 @@ import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Wallet Security Best Practices (${CURRENT_YEAR}) - Protect Your Crypto | ${SITE_NAME}`,
+  title: `Wallet Security Best Practices (2026) - Protect Your Crypto | degen0x`,
   description: `Essential crypto wallet security best practices for ${CURRENT_YEAR}. Seed phrase protection, phishing defense, approval management, and hardware wallet recommendations.`,
   alternates: { canonical: "/wallets/learn/wallet-security-best-practices" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

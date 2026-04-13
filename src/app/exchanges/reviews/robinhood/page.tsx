@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Robinhood Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Robinhood Crypto Review 2026: Fees, Features, Pros & Cons`,
   description:
     "Our in-depth Robinhood Crypto review covers fees, security, supported coins, pros and cons, and whether it's the right exchange for you.",
   alternates: { canonical: "/exchanges/reviews/robinhood" },

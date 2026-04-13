@@ -10,7 +10,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { CRYPTO_ETFS, ETF_FAQS } from "@/data/investing";
 
 export const metadata: Metadata = {
-  title: `Best Crypto ETFs ${CURRENT_YEAR} - Top Bitcoin & Ethereum ETFs`,
+  title: `Best Crypto ETFs 2026 - Top Bitcoin & Ethereum ETFs`,
   description: `Compare the best cryptocurrency ETFs for ${CURRENT_YEAR}. Expert analysis of spot Bitcoin ETFs, Ethereum ETFs, expense ratios, and performance for investors.`,
   alternates: { canonical: "/investing/best/crypto-etfs" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Cards for Travel in ${CURRENT_YEAR} - No Foreign Fees`,
+  title: `Best Crypto Cards for Travel in 2026 - No Foreign Fees`,
   description: `Compare the best crypto cards for international travel in ${CURRENT_YEAR}. Zero foreign transaction fees, airport lounge access, and multi-currency spending.`,
   alternates: { canonical: "/crypto-cards/best/travel" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

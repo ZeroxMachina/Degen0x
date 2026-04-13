@@ -9,7 +9,7 @@ import { stakingPlatforms } from "@/data/staking";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Liquid Staking Protocols of ${CURRENT_YEAR} (Compared)`,
+  title: `Best Liquid Staking Protocols of 2026 (Compared)`,
   description: `Compare the best liquid staking protocols in ${CURRENT_YEAR}. Lido, Rocket Pool, Jito, Marinade, and StakeWise reviewed for yields, security, and DeFi composability.`,
   alternates: { canonical: "/investing/staking/best/liquid-staking" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

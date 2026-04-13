@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Passive Income Strategies ${CURRENT_YEAR} - Earn Yield`,
+  title: `Best Crypto Passive Income Strategies 2026 - Earn Yield`,
   description: `Discover the best ways to earn passive income with crypto in ${CURRENT_YEAR}. Staking, lending, yield farming, and more strategies for earning yield on your holdings.`,
   alternates: { canonical: "/investing/best/passive-income" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

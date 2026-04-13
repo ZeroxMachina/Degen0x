@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Abracadabra Review (${CURRENT_YEAR}): MIM Borrowing & Cauldrons | ${SITE_NAME}`,
+  title: `Abracadabra Review (2026): MIM Borrowing & Cauldrons | degen0x`,
   description: "In-depth Abracadabra review covering MIM stablecoin borrowing, cauldron mechanics, yield-bearing collateral, and risk assessment.",
   alternates: { canonical: "/crypto-loans/reviews/abracadabra" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

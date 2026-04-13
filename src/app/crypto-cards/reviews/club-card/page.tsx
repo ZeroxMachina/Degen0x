@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Club Card Review (${CURRENT_YEAR}): Multi-Crypto Spending Card | ${SITE_NAME}`,
+  title: `Club Card Review (2026): Multi-Crypto Spending Card | degen0x`,
   description: "In-depth Club Card review covering multi-currency support, fees, exchange rates, and how it compares to other crypto debit cards.",
   alternates: { canonical: "/crypto-cards/reviews/club-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

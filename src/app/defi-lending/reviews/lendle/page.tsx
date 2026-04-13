@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Lendle Review ${CURRENT_YEAR}: Mantle Lending Protocol`,
+  title: `Lendle Review 2026: Mantle Lending Protocol`,
   description: "In-depth Lendle review covering Aave V2-based lending on Mantle, yield rates, LEND token incentives, and the protocol's role in Mantle DeFi ecosystem.",
   alternates: { canonical: "/defi-lending/reviews/lendle" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

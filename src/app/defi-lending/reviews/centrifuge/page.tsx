@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Centrifuge Review (${CURRENT_YEAR}): Real-World Asset DeFi Lending | degen0x`,
+  title: `Centrifuge Review (2026): Real-World Asset DeFi Lending | degen0x`,
   description: "In-depth Centrifuge review covering real-world asset tokenization, Tinlake pools, CFG token, and bridging traditional finance with DeFi lending.",
   alternates: { canonical: "/defi-lending/reviews/centrifuge" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Wallets for Staking (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto Wallets for Staking (2026) | degen0x`,
   description: `The best crypto wallets for staking in ${CURRENT_YEAR}. Compare Phantom, Exodus, Ledger, and more for earning staking rewards on SOL, ETH, ADA, and ATOM.`,
   alternates: { canonical: "/wallets/best/staking" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Wallets for iPhone & iOS (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto Wallets for iPhone & iOS (2026) | degen0x`,
   description: `The best iOS crypto wallets for ${CURRENT_YEAR}. Compare Trust Wallet, Phantom, Coinbase Wallet, Rainbow, and Exodus for iPhone and iPad.`,
   alternates: { canonical: "/wallets/best/ios" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

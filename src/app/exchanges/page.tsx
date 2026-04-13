@@ -9,7 +9,7 @@ import { exchanges } from "@/data/exchanges";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges of ${CURRENT_YEAR} - Compare & Review`,
+  title: `Best Crypto Exchanges of 2026 - Compare & Review`,
   description: `Compare the best cryptocurrency exchanges of ${CURRENT_YEAR}. Expert reviews, fee comparisons, security analysis, and tools to help you find the right exchange for your needs.`,
   alternates: { canonical: "/exchanges" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

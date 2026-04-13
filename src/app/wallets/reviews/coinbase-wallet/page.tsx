@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 const product = walletProducts.find((p) => p.slug === "coinbase-wallet")!;
 
 export const metadata: Metadata = {
-  title: `Coinbase Wallet Review (${CURRENT_YEAR}) - Self-Custody from Coinbase | ${SITE_NAME}`,
+  title: `Coinbase Wallet Review (2026) - Self-Custody from Coinbase | degen0x`,
   description: `In-depth Coinbase Wallet review for ${CURRENT_YEAR}. Covers self-custody features, multi-chain support, dApp browser, Coinbase integration, and security.`,
   alternates: { canonical: "/wallets/reviews/coinbase-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

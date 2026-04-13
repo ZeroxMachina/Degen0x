@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Ethereum DeFi Lending Protocols ${CURRENT_YEAR} - ETH Mainnet`,
+  title: `Best Ethereum DeFi Lending Protocols 2026 - ETH Mainnet`,
   description: `Compare the best DeFi lending protocols on Ethereum mainnet in ${CURRENT_YEAR}. Earn yield and borrow on the most battle-tested DeFi ecosystem.`,
   alternates: { canonical: "/defi-lending/best/ethereum" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -110,7 +110,10 @@ export default function EthereumPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Ethereum", href: "/defi-lending/best/ethereum" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Ethereum DeFi Lending Protocols ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Ethereum DeFi lending dominates with $6B+ TVL on Aave, Compound, and Morpho. Mainnet gas costs ($50–500 per transaction) make Ethereum unsuitable for small positions, but highest yields and deepest liquidity remain on ETH.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Ethereum remains the home of DeFi lending. The original blockchain for decentralized finance hosts the most mature, battle-tested, and liquid lending protocols in the ecosystem. While gas costs on mainnet are higher than Layer 2 alternatives, the security guarantees, composability options, and protocol maturity of Ethereum mainnet DeFi are unmatched.

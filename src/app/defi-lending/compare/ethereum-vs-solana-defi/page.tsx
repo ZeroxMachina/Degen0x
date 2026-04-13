@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Ethereum vs Solana DeFi Lending ${CURRENT_YEAR}: Chain Comparison`,
+  title: `Ethereum vs Solana DeFi Lending 2026: Chain Comparison`,
   description: `Compare Ethereum and Solana DeFi lending ecosystems in ${CURRENT_YEAR}. Analyze protocols, fees, speed, TVL, and which chain is better for lending.`,
   alternates: { canonical: "/defi-lending/compare/ethereum-vs-solana-defi" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best DAO Treasury Tools of ${CURRENT_YEAR} - Multi-Sig & Fund Management | ${SITE_NAME}`,
+  title: `Best DAO Treasury Tools of 2026 - Multi-Sig & Fund Management | degen0x`,
   description: `Compare the best DAO treasury management tools of ${CURRENT_YEAR}. Multi-signature wallets, spending controls, on-chain accounting, and fund management platforms ranked by security, features, and ease of use.`,
   alternates: { canonical: "/web3-business/best/treasury-tools" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

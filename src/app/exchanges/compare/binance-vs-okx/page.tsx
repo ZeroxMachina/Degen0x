@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Binance vs OKX (${CURRENT_YEAR}): Which Exchange Is Better? | ${SITE_NAME}`,
+  title: `Binance vs OKX (2026): Which Exchange Is Better? | degen0x`,
   description: `Binance vs OKX comparison for ${CURRENT_YEAR}. Compare trading fees, futures, coin selection, and features to choose the best global crypto exchange.`,
   alternates: { canonical: "/exchanges/compare/binance-vs-okx" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

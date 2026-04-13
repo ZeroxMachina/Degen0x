@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Hold Card Review (${CURRENT_YEAR}): Features, Fees & Pros/Cons | degen0x`,
+  title: `Hold Card Review (2026): Features, Fees & Pros/Cons | degen0x`,
   description: "In-depth Hold Card review covering crypto spending features, cashback rewards, supported currencies, and whether this card suits everyday crypto users.",
   alternates: { canonical: "/crypto-cards/reviews/hold-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

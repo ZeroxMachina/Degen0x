@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Compound vs Venus ${CURRENT_YEAR}: DeFi Lending Protocol Comparison`,
+  title: `Compound vs Venus 2026: DeFi Lending Protocol Comparison`,
   description: `Compare Compound vs Venus in ${CURRENT_YEAR}. Analyze yields, security, multi-chain support, and which protocol is better for different DeFi strategies.`,
   alternates: { canonical: "/defi-lending/compare/compound-vs-venus" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

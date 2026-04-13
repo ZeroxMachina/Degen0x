@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Goldfinch Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Goldfinch Review (2026) | degen0x`,
   description: "In-depth Goldfinch review covering real-world lending, emerging market credit, trust through consensus model, yield opportunities, and credit risk considerations.",
   alternates: { canonical: "/defi-lending/reviews/goldfinch" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

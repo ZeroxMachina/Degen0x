@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `CryptoTaxCalculator Review (${CURRENT_YEAR}) - Best for DeFi Taxes | ${SITE_NAME}`,
+  title: `CryptoTaxCalculator Review (2026) - Best for DeFi Taxes | degen0x`,
   description: `In-depth CryptoTaxCalculator review for ${CURRENT_YEAR}. The best crypto tax software for DeFi and NFT traders with advanced transaction tracking.`,
   alternates: { canonical: "/taxes/reviews/cryptotaxcalculator" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

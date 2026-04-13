@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Bitget vs Bybit (${CURRENT_YEAR}): Copy Trading Exchange Comparison | ${SITE_NAME}`,
+  title: `Bitget vs Bybit (2026): Copy Trading Exchange Comparison | degen0x`,
   description: `Bitget vs Bybit comparison for ${CURRENT_YEAR}. Compare copy trading features, futures fees, coin listings, and trading tools for active traders.`,
   alternates: { canonical: "/exchanges/compare/bitget-vs-bybit" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

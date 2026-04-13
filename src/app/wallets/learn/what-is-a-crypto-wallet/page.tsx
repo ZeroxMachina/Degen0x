@@ -5,7 +5,7 @@ import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `What Is a Crypto Wallet? Complete Guide (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `What Is a Crypto Wallet? Complete Guide (2026) | degen0x`,
   description: `Learn what a crypto wallet is, how it works, and the different types available. A beginner-friendly guide to understanding cryptocurrency wallets in ${CURRENT_YEAR}.`,
   alternates: { canonical: "/wallets/learn/what-is-a-crypto-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

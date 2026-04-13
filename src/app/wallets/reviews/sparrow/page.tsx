@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Sparrow Wallet Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Sparrow Wallet Review (2026) | degen0x`,
   description: "Sparrow Wallet review covering Bitcoin transaction analysis, PSBT support, hardware wallet integration, and privacy features for power users.",
   alternates: { canonical: "/wallets/reviews/sparrow" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

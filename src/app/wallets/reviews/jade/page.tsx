@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Blockstream Jade Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Blockstream Jade Review (2026) | degen0x`,
   description: "Blockstream Jade hardware wallet review covering security model, air-gapped signing, Liquid Network support, and value proposition.",
   alternates: { canonical: "/wallets/reviews/jade" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

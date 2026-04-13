@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Open-Source Crypto Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Open-Source Crypto Wallets (2026) | degen0x`,
   description: `The best open-source crypto wallets for ${CURRENT_YEAR}. Compare MetaMask, Rabby, Electrum, Frame, and Blockstream Jade for code transparency and security.`,
   alternates: { canonical: "/wallets/best/open-source" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

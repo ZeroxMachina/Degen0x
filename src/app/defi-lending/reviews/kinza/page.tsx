@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Kinza Finance Review ${CURRENT_YEAR}: BNB Chain Lending Protocol`,
+  title: `Kinza Finance Review 2026: BNB Chain Lending Protocol`,
   description: "Comprehensive Kinza Finance review covering Aave V3-based lending on BNB Chain, yield rates, KZA token rewards, and protocol risk analysis.",
   alternates: { canonical: "/defi-lending/reviews/kinza" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

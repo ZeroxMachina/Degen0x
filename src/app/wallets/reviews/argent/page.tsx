@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Argent Wallet Review (${CURRENT_YEAR}) - Best Smart Contract Wallet? | ${SITE_NAME}`,
+  title: `Argent Wallet Review (2026) - Best Smart Contract Wallet? | degen0x`,
   description: `Detailed Argent wallet review for ${CURRENT_YEAR}. Covers smart contract security, social recovery, Starknet Layer 2, and seedless onboarding.`,
   alternates: { canonical: "/wallets/reviews/argent" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

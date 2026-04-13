@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Browser Extension Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto Browser Extension Wallets (2026) | degen0x`,
   description: `The best crypto browser extension wallets for ${CURRENT_YEAR}. Compare MetaMask, Rabby, Phantom, and more for DeFi, dApp access, and security.`,
   alternates: { canonical: "/wallets/best/browser-extension" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

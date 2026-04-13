@@ -29,7 +29,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Jupiter Exchange Review (${CURRENT_YEAR}) - Solana's Top DEX Aggregator | ${SITE_NAME}`,
+  title: "Jupiter Exchange Review (2026) - Solanas Top DEX Aggregator | ${SITE_NAME}",
   description: `Complete Jupiter review for ${CURRENT_YEAR}. Covers DEX aggregation, perpetual futures, limit orders, DCA, JUP token, and the Solana trading experience.`,
   alternates: { canonical: "/exchanges/reviews/jupiter-exchange" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

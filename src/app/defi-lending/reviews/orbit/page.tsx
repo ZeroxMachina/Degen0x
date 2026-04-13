@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Orbit Protocol Review ${CURRENT_YEAR}: Blast Lending Platform`,
+  title: `Orbit Protocol Review 2026: Blast Lending Platform`,
   description: "Detailed Orbit Protocol review covering lending on Blast L2, native yield integration, borrowing markets, and risk assessment for this Blast-native protocol.",
   alternates: { canonical: "/defi-lending/reviews/orbit" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

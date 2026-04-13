@@ -9,7 +9,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { AIRDROP_FAQS } from "@/data/investing";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Airdrops ${CURRENT_YEAR} - Upcoming Free Token Drops`,
+  title: `Best Crypto Airdrops 2026 - Upcoming Free Token Drops`,
   description: `Find the best crypto airdrops for ${CURRENT_YEAR}. Guide to qualifying for upcoming token distributions, retroactive airdrops, and airdrop farming strategies.`,
   alternates: { canonical: "/investing/best/airdrops" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best DeFi Protocol Insurance ${CURRENT_YEAR} - Cover Your Positions`,
+  title: `Best DeFi Protocol Insurance 2026 - Cover Your Positions`,
   description:
     "Compare the best DeFi protocol insurance options. Protect your deposits in Aave, Uniswap, Curve, and other DeFi protocols against exploits and failures.",
   alternates: { canonical: "/insurance/best/defi-protocols" },

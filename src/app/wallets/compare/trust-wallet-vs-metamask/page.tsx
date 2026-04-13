@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Trust Wallet vs MetaMask (${CURRENT_YEAR}): Multi-Chain Wallet Comparison | ${SITE_NAME}`,
+  title: `Trust Wallet vs MetaMask (2026): Multi-Chain Wallet Comparison | degen0x`,
   description: `Trust Wallet vs MetaMask comparison for ${CURRENT_YEAR}. Compare from the multi-chain perspective: native chain support, mobile UX, staking, and security.`,
   alternates: { canonical: "/wallets/compare/trust-wallet-vs-metamask" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

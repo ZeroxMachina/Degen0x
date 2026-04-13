@@ -5,7 +5,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto.com Pay vs BitPay (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Crypto.com Pay vs BitPay (2026) | degen0x`,
   description: `Crypto.com Pay vs BitPay comparison for ${CURRENT_YEAR}. Compare cashback rewards, merchant acceptance, fees, supported cryptos, and consumer features.`,
   alternates: { canonical: "/spending/compare/crypto-com-pay-vs-bitpay" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

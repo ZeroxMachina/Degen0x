@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `H&R Block Crypto Review (${CURRENT_YEAR}): Tax Filing for Crypto | ${SITE_NAME}`,
+  title: `H&R Block Crypto Review (2026): Tax Filing for Crypto | degen0x`,
   description: "Review of H&R Block's crypto tax capabilities. Understand when professional tax preparation makes sense and the limitations of H&R Block for crypto users.",
   alternates: { canonical: "/taxes/reviews/hr-block-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

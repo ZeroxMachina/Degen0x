@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Stellar (XLM) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Stellar (XLM) 2026 - Complete Guide`,
   description: `Complete Stellar investment guide for ${CURRENT_YEAR}. Learn about XLM fundamentals, cross-border payments, Soroban smart contracts, risks, and how to buy Stellar.`,
   alternates: { canonical: "/investing/crypto/stellar" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

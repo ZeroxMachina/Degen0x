@@ -11,7 +11,7 @@ import { MEME_COIN_FAQS } from "@/data/investing";
 import { Product } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Best Meme Coins ${CURRENT_YEAR} - Top Meme Cryptocurrencies`,
+  title: `Best Meme Coins 2026 - Top Meme Cryptocurrencies`,
   description: `Discover the top meme coins for ${CURRENT_YEAR}. Analysis of DOGE, SHIB, PEPE, and other meme cryptocurrencies by market cap, community, and momentum.`,
   alternates: { canonical: "/investing/best/meme-coins" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

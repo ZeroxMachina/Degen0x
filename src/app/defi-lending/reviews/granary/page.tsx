@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Granary Finance Review ${CURRENT_YEAR}: Multi-Chain Aave Fork`,
+  title: `Granary Finance Review 2026: Multi-Chain Aave Fork`,
   description: "Detailed Granary Finance review covering multi-chain lending, Aave V2 architecture, yield rates, and risk analysis across supported networks.",
   alternates: { canonical: "/defi-lending/reviews/granary" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

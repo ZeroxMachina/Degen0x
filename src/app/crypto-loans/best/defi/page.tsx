@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best DeFi Loan Platforms ${CURRENT_YEAR} - Decentralized Borrowing`,
+  title: `Best DeFi Loan Platforms 2026 - Decentralized Borrowing`,
   description: `Compare the best DeFi loan platforms in ${CURRENT_YEAR}. Borrow against crypto without KYC through decentralized lending protocols.`,
   alternates: { canonical: "/crypto-loans/best/defi" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -52,7 +52,10 @@ export default function DefiLoansPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "DeFi Loans", href: "/crypto-loans/best/defi" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best DeFi Loan Platforms ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          DeFi-specific loans target protocol users with native asset collateral, offering yields of 5–15% on lending. Platforms like Aave and Compound have processed $100B+ in borrowing, making DeFi the dominant lending category by volume.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">DeFi loans offer a fundamentally different borrowing experience than traditional finance. No applications, no credit checks, no KYC, and no waiting periods. You simply deposit crypto collateral into a smart contract and borrow instantly. These permissionless protocols operate 24/7 on blockchain networks and are accessible to anyone with a Web3 wallet. We compared the top DeFi lending protocols to help you find the best option for your borrowing needs.</p>
       </div>

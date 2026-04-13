@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Rainbow Wallet Review (${CURRENT_YEAR}) - Best Ethereum Mobile Wallet? | ${SITE_NAME}`,
+  title: `Rainbow Wallet Review (2026) - Best Ethereum Mobile Wallet? | degen0x`,
   description: `Detailed Rainbow wallet review for ${CURRENT_YEAR}. Covers Ethereum and L2 support, NFT experience, swap features, and mobile-first design.`,
   alternates: { canonical: "/wallets/reviews/rainbow" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

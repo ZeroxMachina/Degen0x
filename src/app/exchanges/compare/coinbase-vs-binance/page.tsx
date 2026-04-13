@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Coinbase vs Binance: Detailed Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Coinbase vs Binance: Detailed Comparison (2026) | degen0x`,
   description: "Comprehensive Coinbase vs Binance comparison. Analyze fees, security, coin selection, trading features, and find which exchange is best for your crypto trading",
   keywords: "Coinbase vs Binance, cryptocurrency exchange comparison, crypto trading platform, best exchange 2026",
   openGraph: {

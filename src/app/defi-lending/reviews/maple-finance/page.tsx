@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Maple Finance Review (${CURRENT_YEAR}): Institutional DeFi Lending | degen0x`,
+  title: `Maple Finance Review (2026): Institutional DeFi Lending | degen0x`,
   description:
     "In-depth Maple Finance review covering institutional lending pools, Pool Delegates, MPL token, and the protocol's recovery and expansion into real-world credit markets.",
   alternates: { canonical: "/defi-lending/reviews/maple-finance" },

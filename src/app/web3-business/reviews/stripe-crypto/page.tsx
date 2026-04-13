@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Stripe Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Stripe Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "Stripe crypto payments review. Accept Bitcoin and crypto payments for your business. Compare payment processor features, fees, and requirements.",
   alternates: { canonical: "/web3-business/reviews/stripe-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

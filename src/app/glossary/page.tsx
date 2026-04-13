@@ -7,7 +7,7 @@ import ClientContent from './ClientContent';
 export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
-  title: `Crypto & Blockchain Glossary | ${SITE_NAME}`,
+  title: `Crypto & Blockchain Glossary | degen0x`,
   description: 'Comprehensive glossary of cryptocurrency and blockchain terms. Learn DeFi, NFTs, trading, security, and advanced concepts with clear definitions.',
   alternates: { canonical: `${SITE_URL}/glossary` },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

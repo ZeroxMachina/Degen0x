@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Coinbase vs Cash App: Which Is Better for Bitcoin? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Coinbase vs Cash App: Which Is Better for Bitcoin? (2026) | degen0x`,
   description: "Detailed comparison of Coinbase vs Cash App for buying Bitcoin. Compare fees, features, and capabilities to find the right platform for you.",
   alternates: { canonical: "/exchanges/compare/coinbase-vs-cash-app" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

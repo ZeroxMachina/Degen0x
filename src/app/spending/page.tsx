@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Spending Guide ${CURRENT_YEAR} - Debit Cards, Payment Apps & More | ${SITE_NAME}`,
+  title: `Crypto Spending Guide 2026 - Debit Cards, Payment Apps & More | degen0x`,
   description: `Everything you need to spend cryptocurrency in the real world. Compare the best crypto debit cards, payment apps, cashback cards, and discover where to spend your crypto in ${CURRENT_YEAR}.`,
   alternates: { canonical: "/spending" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

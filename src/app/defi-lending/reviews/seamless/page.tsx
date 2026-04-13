@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Seamless Protocol Review ${CURRENT_YEAR}: Base Native Lending`,
+  title: `Seamless Protocol Review 2026: Base Native Lending`,
   description:
     "Detailed Seamless Protocol review covering integrated lending loops, ILM strategies, yield rates, and how this Base-native lending protocol works.",
   alternates: { canonical: "/defi-lending/reviews/seamless" },

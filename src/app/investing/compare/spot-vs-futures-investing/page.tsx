@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Spot vs Futures Crypto Investing (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Spot vs futures crypto investing comparison for ${CURRENT_YEAR}. Direct ownership vs leveraged contracts — risk, returns, strategies, and which is right for you.` ,
+export const metadata: Metadata = { title: `Spot vs Futures Crypto Investing (2026) | degen0x`, description: `Spot vs futures crypto investing comparison for ${CURRENT_YEAR}. Direct ownership vs leveraged contracts — risk, returns, strategies, and which is right for you.` ,
   alternates: { canonical: "/investing/compare/spot-vs-futures-investing" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

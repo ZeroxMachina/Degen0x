@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Metaverse Crypto Tokens (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Metaverse Crypto Tokens (2026) | degen0x`,
   description: `Top metaverse and virtual world crypto tokens in ${CURRENT_YEAR}. Compare Decentraland, The Sandbox, Axie Infinity, and other virtual world investments.`,
   alternates: { canonical: "/investing/best/metaverse" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

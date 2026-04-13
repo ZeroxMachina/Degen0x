@@ -10,7 +10,7 @@ import { nftWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best NFT Wallets of ${CURRENT_YEAR} - Top Wallets for NFTs | ${SITE_NAME}`,
+  title: `Best NFT Wallets of 2026 - Top Wallets for NFTs | degen0x`,
   description: `Compare the best wallets for NFTs in ${CURRENT_YEAR}. Phantom, MetaMask, Rabby and more. Expert-tested for NFT display, minting, trading, and multi-chain collections.`,
   alternates: { canonical: "/wallets/best/nft" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

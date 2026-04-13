@@ -8,7 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
-export const metadata: Metadata = { title: `Best No-KYC Crypto Loans ${CURRENT_YEAR} - Borrow Without ID`, description: `Find the best no-KYC crypto loan platforms in ${CURRENT_YEAR}. Borrow against your crypto without identity verification through DeFi protocols.` ,
+export const metadata: Metadata = { title: `Best No-KYC Crypto Loans 2026 - Borrow Without ID`, description: `Find the best no-KYC crypto loan platforms in ${CURRENT_YEAR}. Borrow against your crypto without identity verification through DeFi protocols.` ,
   alternates: { canonical: "/crypto-loans/best/no-kyc" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};
@@ -50,7 +50,10 @@ export default function NoKycPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "No KYC", href: "/crypto-loans/best/no-kyc" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best No-KYC Crypto Loans ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Non-KYC crypto loans use on-chain reputation and collateral for underwriting, eliminating identity verification. Decentralized protocols like Aave and Compound remain the largest no-KYC lenders with $11B+ in outstanding loans.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">DeFi lending protocols offer crypto-backed loans without any identity verification, credit checks, or personal information. These permissionless platforms operate entirely through smart contracts, ensuring your privacy while providing instant access to liquidity. All you need is a Web3 wallet and sufficient collateral.</p>
       </div>

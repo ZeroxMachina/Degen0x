@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Venus Protocol Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Venus Protocol Review (2026) | degen0x`,
   description: "In-depth Venus Protocol review covering BNB Chain lending, VAI stablecoin, governance, security improvements, and yield opportunities.",
   alternates: { canonical: "/defi-lending/reviews/venus" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

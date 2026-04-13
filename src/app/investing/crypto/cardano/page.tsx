@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 const token = CRYPTO_TOKENS[3];
 
 export const metadata: Metadata = {
-  title: `How to Invest in Cardano (ADA) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Cardano (ADA) 2026 - Complete Guide`,
   description: `Complete Cardano investment guide for ${CURRENT_YEAR}. Learn about ADA fundamentals, peer-reviewed development, staking, risks, and how to buy Cardano.`,
   alternates: { canonical: "/investing/crypto/cardano" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

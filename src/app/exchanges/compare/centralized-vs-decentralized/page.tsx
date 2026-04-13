@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Centralized vs Decentralized Exchanges: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Centralized vs Decentralized Exchanges: Full Comparison (2026) | degen0x`,
   description: "Complete comparison of centralized (CEX) vs decentralized (DEX) crypto exchanges. Understand fees, security, custody, and which type is right for you.",
   alternates: { canonical: "/exchanges/compare/centralized-vs-decentralized" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

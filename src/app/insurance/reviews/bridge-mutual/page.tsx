@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Bridge Mutual Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Bridge Mutual Review (2026) | degen0x`,
   description: "In-depth Bridge Mutual review covering community-driven insurance, permissionless pool creation, coverage options, and comparison with larger DeFi insurance protocols.",
   alternates: { canonical: "/insurance/reviews/bridge-mutual" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

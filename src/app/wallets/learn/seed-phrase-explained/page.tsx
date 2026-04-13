@@ -5,7 +5,7 @@ import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Seed Phrase Explained - What It Is & How to Protect It (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Seed Phrase Explained - What It Is & How to Protect It (2026) | degen0x`,
   description: `Everything you need to know about crypto seed phrases (recovery phrases) in ${CURRENT_YEAR}. What they are, how they work, and the best practices for keeping them safe.`,
   alternates: { canonical: "/wallets/learn/seed-phrase-explained" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

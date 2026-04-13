@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Terms of Service - ${SITE_NAME}`,
+  title: `Terms of Service - degen0x`,
   description: `${SITE_NAME} terms of service. Read our terms and conditions for using the website.`,
   alternates: { canonical: "/terms" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

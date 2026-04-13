@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Binance vs Kraken: Detailed Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Binance vs Kraken: Detailed Comparison (2026) | degen0x`,
   description:
     "Compare Binance and Kraken exchanges. Analyze fees, coin selection, trading features, security, and determine which global exchange is best for your needs.",
   keywords: "Binance vs Kraken, global crypto exchange, comparison, fees, trading features",

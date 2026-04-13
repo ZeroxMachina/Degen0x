@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Ways to Spend Crypto in ${CURRENT_YEAR} - Cards, Apps & More | ${SITE_NAME}`,
+  title: `Best Ways to Spend Crypto in 2026 - Cards, Apps & More | degen0x`,
   description: `Compare the best crypto debit cards, payment apps, and spending options in ${CURRENT_YEAR}. Expert reviews of Crypto.com Visa, Coinbase Card, BitPay, and more.`,
   alternates: { canonical: "/spending/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Unchained Review (${CURRENT_YEAR}): Bitcoin Loans with Key Control | ${SITE_NAME}`,
+  title: `Unchained Review (2026): Bitcoin Loans with Key Control | degen0x`,
   description: "In-depth Unchained review covering collaborative custody Bitcoin loans, multisig security, rates, and how it compares to custodial crypto lenders.",
   alternates: { canonical: "/crypto-loans/reviews/unchained" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

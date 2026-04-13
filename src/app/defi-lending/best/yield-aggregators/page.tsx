@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best DeFi Yield Aggregators of ${CURRENT_YEAR} — Top APY Protocols Compared`,
+  title: `Best DeFi Yield Aggregators of 2026 — Top APY Protocols Compared`,
   description: `Compare the best DeFi yield aggregators of ${CURRENT_YEAR}. We rank protocols by APY, TVL, security, supported chains, and strategy complexity. Find the highest safe yields for your crypto.`,
   alternates: { canonical: `${SITE_URL}/defi-lending/best/yield-aggregators` },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

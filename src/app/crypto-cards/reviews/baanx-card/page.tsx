@@ -8,7 +8,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 const product = cryptoCards.find((c) => c.slug === "baanx-card")!;
 
 export const metadata: Metadata = {
-  title: `Baanx Card Review (${CURRENT_YEAR}): Crypto Banking & Pros/Cons | degen0x`,
+  title: `Baanx Card Review (2026): Crypto Banking & Pros/Cons | degen0x`,
   description: "In-depth Baanx Card review covering crypto-native banking features, white-label infrastructure, credit line options, and regional availability.",
   alternates: { canonical: "/crypto-cards/reviews/baanx-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Green & Sustainable Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Green & Sustainable Crypto (2026) | degen0x`,
   description: `Top environmentally sustainable cryptocurrencies in ${CURRENT_YEAR}. Energy-efficient blockchains and carbon-focused crypto projects.`,
   alternates: { canonical: "/investing/best/green-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

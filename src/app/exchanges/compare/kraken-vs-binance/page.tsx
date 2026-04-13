@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Kraken vs Binance (${CURRENT_YEAR}): Global Exchange Comparison | ${SITE_NAME}`,
+  title: `Kraken vs Binance (2026): Global Exchange Comparison | degen0x`,
   description: `Kraken vs Binance comparison for ${CURRENT_YEAR}. Compare fees, regulation, staking, futures trading, and global availability.`,
   alternates: { canonical: "/exchanges/compare/kraken-vs-binance" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

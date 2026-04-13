@@ -7,7 +7,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { BEST_OF_CATEGORIES, LEARN_ARTICLES, CALCULATORS, CRYPTO_TOKENS, INVESTING_FAQS } from "@/data/investing";
 
 export const metadata: Metadata = {
-  title: `Crypto Investing Guide ${CURRENT_YEAR} - Best Tokens, Strategies & Tools`,
+  title: `Crypto Investing Guide 2026 - Best Tokens, Strategies & Tools`,
   description: `Your complete crypto investing resource. Compare top cryptocurrencies, staking platforms, ETFs, trading bots, and learn proven investment strategies. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.`,
   alternates: { canonical: "/investing" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

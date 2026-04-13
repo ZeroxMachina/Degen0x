@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `BitMEX Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `BitMEX Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth BitMEX review covering perpetual futures, leverage trading, fees, security, and whether this pioneer derivatives exchange suits your trading needs.",
   alternates: { canonical: "/exchanges/reviews/bitmex" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

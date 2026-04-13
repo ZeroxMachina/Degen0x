@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Web3 Grants Programs of ${CURRENT_YEAR} - Funding for Builders | ${SITE_NAME}`,
+  title: `Best Web3 Grants Programs of 2026 - Funding for Builders | degen0x`,
   description: `Discover the best Web3 grants programs in ${CURRENT_YEAR}. Get non-dilutive funding from Ethereum, Solana, Optimism, and other major ecosystems. Grant sizes, requirements, and application tips.`,
   alternates: { canonical: "/web3-business/best/grants" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

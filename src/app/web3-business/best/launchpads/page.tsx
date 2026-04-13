@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Token Launchpads of ${CURRENT_YEAR} - IDO & Fair Launch Platforms | ${SITE_NAME}`,
+  title: `Best Token Launchpads of 2026 - IDO & Fair Launch Platforms | degen0x`,
   description: `Compare the best token launchpads and IDO platforms of ${CURRENT_YEAR}. Launch your token with trusted platforms ranked by security, community reach, and success rate.`,
   alternates: { canonical: "/web3-business/best/launchpads" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

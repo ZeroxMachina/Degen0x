@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `ZenLedger Review (${CURRENT_YEAR}): Features, Pricing & Comparison | ${SITE_NAME}`,
+  title: `ZenLedger Review (2026): Features, Pricing & Comparison | degen0x`,
   description: "In-depth ZenLedger review covering features, pricing, DeFi support, tax-loss harvesting, and how it compares to other crypto tax software.",
   alternates: { canonical: "/taxes/reviews/zenledger" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

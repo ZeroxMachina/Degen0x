@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Hedera (HBAR) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Hedera (HBAR) 2026 - Complete Guide`,
   description: `Complete Hedera investment guide for ${CURRENT_YEAR}. Learn about HBAR fundamentals, hashgraph technology, enterprise adoption, risks, and how to buy HBAR.`,
   alternates: { canonical: "/investing/crypto/hedera" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

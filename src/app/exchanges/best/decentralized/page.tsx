@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Decentralized Exchanges (DEXs) in ${CURRENT_YEAR}`,
+  title: `Best Decentralized Exchanges (DEXs) in 2026`,
   description: `Compare the top decentralized exchanges (DEXs) of ${CURRENT_YEAR}. Trade directly from your wallet with no intermediaries. Uniswap, dYdX, Jupiter, and more.`,
   alternates: { canonical: "/exchanges/best/decentralized" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Desktop Crypto Wallets of ${CURRENT_YEAR} | ${SITE_NAME}`,
+  title: `Best Desktop Crypto Wallets of 2026 | degen0x`,
   description: `The best desktop crypto wallets for Windows, Mac, and Linux in ${CURRENT_YEAR}. Compare Exodus, MetaMask, Rabby, and more for managing crypto on your computer.`,
   alternates: { canonical: "/wallets/best/desktop" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

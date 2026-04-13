@@ -9,7 +9,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { TAX_COMPARISON_ITEMS, TAX_COMPARISON_FEATURES } from "@/data/taxes";
 
 export const metadata: Metadata = {
-  title: `Koinly vs CoinTracker ${CURRENT_YEAR} - Which Crypto Tax Software Is Better?`,
+  title: `Koinly vs CoinTracker 2026 - Which Crypto Tax Software Is Better?`,
   description: `Compare Koinly vs CoinTracker side by side. Pricing, features, DeFi support, integrations, and which is better for your crypto tax needs.`,
   alternates: { canonical: "/taxes/compare/koinly-vs-cointracker" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

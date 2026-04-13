@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `GMX Review (${CURRENT_YEAR}) - Decentralized Perps on Arbitrum | ${SITE_NAME}`,
+  title: `GMX Review (2026) - Decentralized Perps on Arbitrum | degen0x`,
   description: `Complete GMX review for ${CURRENT_YEAR}. Covers decentralized perpetual trading, GLP liquidity model, fees, real yield, and risk considerations.`,
   alternates: { canonical: "/exchanges/reviews/gmx" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

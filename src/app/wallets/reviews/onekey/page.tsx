@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `OneKey Wallet Review (${CURRENT_YEAR}) - Open-Source Hardware Wallet | ${SITE_NAME}`,
+  title: `OneKey Wallet Review (2026) - Open-Source Hardware Wallet | degen0x`,
   description: `Complete OneKey wallet review for ${CURRENT_YEAR}. Covers open-source design, hardware models, supported chains, security architecture, and value proposition.`,
   alternates: { canonical: "/wallets/reviews/onekey" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

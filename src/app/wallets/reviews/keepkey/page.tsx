@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `KeepKey Review (${CURRENT_YEAR}) | degen0x`,
+  title: `KeepKey Review (2026) | degen0x`,
   description: "KeepKey hardware wallet review: Security, supported coins, setup guide. Compare with Ledger, Trezor, and other top hardware wallet options.",
   alternates: { canonical: "/wallets/reviews/keepkey" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -7,12 +7,12 @@ import { newsArticles, getFeaturedArticles, getLatestArticles, NEWS_CATEGORIES }
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto News — Latest Crypto & Web3 News | ${SITE_NAME}`,
+  title: `Crypto News — Latest Crypto & Web3 News | degen0x`,
   description: `Stay up to date with the latest crypto news, DeFi updates, exchange announcements, regulatory changes, and market analysis. Curated by the ${SITE_NAME} editorial team.`,
   keywords: "crypto news, bitcoin news, ethereum news, DeFi news, blockchain updates, web3 news, regulatory updates, market analysis",
   alternates: { canonical: "/news" },
   openGraph: {
-    title: `Crypto News — Latest Crypto & Web3 News | ${SITE_NAME}`,
+    title: `Crypto News — Latest Crypto & Web3 News | degen0x`,
     description: "Crypto news and market updates from degen0x. Protocol launches, regulation news, DeFi announcements, and daily briefings on Bitcoin, Ethereum, Web3.",
     url: "https://degen0x.com/news",
     type: "website",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `Crypto News — Latest Crypto & Web3 News | ${SITE_NAME}`,
+    title: `Crypto News — Latest Crypto & Web3 News | degen0x`,
     description: "Expert analysis, breaking news, and in-depth coverage of Bitcoin, Ethereum, DeFi, and the broader Web3 ecosystem.",
   },
 };

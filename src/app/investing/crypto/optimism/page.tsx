@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Optimism (OP) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Optimism (OP) 2026 - Complete Guide`,
   description: `Complete Optimism investment guide for ${CURRENT_YEAR}. Learn about OP fundamentals, Superchain vision, governance, risks, and how to buy Optimism.`,
   alternates: { canonical: "/investing/crypto/optimism" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

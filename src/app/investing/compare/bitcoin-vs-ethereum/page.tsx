@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Bitcoin vs Ethereum (${CURRENT_YEAR}) - Complete Comparison | ${SITE_NAME}`,
+  title: `Bitcoin vs Ethereum (2026) - Complete Comparison | degen0x`,
   description: `Bitcoin vs Ethereum in ${CURRENT_YEAR}. Compare investment thesis, technology, returns, staking, and which is better for your portfolio.`,
   alternates: { canonical: "/investing/compare/bitcoin-vs-ethereum" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

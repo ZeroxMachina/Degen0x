@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Fold App Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Fold App Review 2026: Fees, Features, Pros & Cons`,
   description:
     "Complete Fold App review covering Bitcoin rewards debit card, daily spin wheel, Lightning Network integration, and how to earn Bitcoin on everyday purchases.",
   alternates: { canonical: "/spending/reviews/fold-app" },

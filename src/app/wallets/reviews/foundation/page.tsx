@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Foundation Passport Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Foundation Passport Review (2026) | degen0x`,
   description: "Foundation Passport hardware wallet review covering open-source design, air-gapped QR signing, premium build quality, and Bitcoin-focused features.",
   alternates: { canonical: "/wallets/reviews/foundation" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best NFT Marketplaces for Music in ${CURRENT_YEAR} | degen0x`,
+  title: `Best NFT Marketplaces for Music in 2026 | degen0x`,
   description: `Discover the best platforms for music NFTs in ${CURRENT_YEAR}. Buy, sell, and collect music NFTs from independent and established artists on top marketplaces.`,
   alternates: { canonical: "/nfts/best/music" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

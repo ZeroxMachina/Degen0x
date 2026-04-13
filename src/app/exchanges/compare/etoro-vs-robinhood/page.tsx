@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `eToro vs Robinhood: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `eToro vs Robinhood: Which Is Better? (2026) | degen0x`,
   description: "Detailed comparison of eToro vs Robinhood for crypto and stock trading. Compare fees, copy trading, coin selection, and platform features.",
   alternates: { canonical: "/exchanges/compare/etoro-vs-robinhood" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

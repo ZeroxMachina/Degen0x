@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Trading Bots ${CURRENT_YEAR} - Portfolio Automation Tools`,
+  title: `Best Crypto Trading Bots 2026 - Portfolio Automation Tools`,
   description: `Compare the best crypto trading bots and portfolio automation tools for ${CURRENT_YEAR}. DCA bots, grid bots, rebalancing tools, and automated strategies reviewed.`,
   alternates: { canonical: "/investing/best/portfolio-bots" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

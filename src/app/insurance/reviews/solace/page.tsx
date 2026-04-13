@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Solace Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Solace Review 2026: Fees, Features, Pros & Cons`,
   description: "Solace is a decentralized insurance protocol offering portfolio-level coverage for DeFi positions, protecting users against smart contract exploits.",
   alternates: { canonical: "/insurance/reviews/solace" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `dYdX Review (${CURRENT_YEAR}) | degen0x`,
+  title: `dYdX Review (2026) | degen0x`,
   description:
     "Complete dYdX review covering perpetual futures, fees, governance, and decentralized trading features. Is dYdX the best DEX for derivatives?",
   alternates: { canonical: "/exchanges/reviews/dydx" },

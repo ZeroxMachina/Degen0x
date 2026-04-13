@@ -5,7 +5,7 @@ import LearnPageLayout from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `BitPay vs CoinGate (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `BitPay vs CoinGate (2026) | degen0x`,
   description: `BitPay vs CoinGate comparison for ${CURRENT_YEAR}. Compare fees, supported cryptocurrencies, merchant tools, and features of these leading crypto payment processors.`,
   alternates: { canonical: "/spending/compare/bitpay-vs-coingate" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

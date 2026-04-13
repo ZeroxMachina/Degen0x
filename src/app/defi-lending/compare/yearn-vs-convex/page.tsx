@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Yearn vs Convex ${CURRENT_YEAR}: Which Yield Aggregator Is Better?`,
+  title: `Yearn vs Convex 2026: Which Yield Aggregator Is Better?`,
   description: `Detailed comparison of Yearn vs Convex in ${CURRENT_YEAR}. Compare yield strategies, CRV incentives, risk profiles, and which yield aggregator maximizes your DeFi returns.`,
   alternates: { canonical: "/defi-lending/compare/yearn-vs-convex" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

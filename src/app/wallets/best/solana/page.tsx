@@ -11,7 +11,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Solana Wallets of ${CURRENT_YEAR} - SOL Wallet Reviews | ${SITE_NAME}`,
+  title: `Best Solana Wallets of 2026 - SOL Wallet Reviews | degen0x`,
   description: `Compare the best Solana wallets of ${CURRENT_YEAR}. Phantom, Trust Wallet, Coinbase Wallet and more. Expert picks for SOL staking, DeFi, and NFTs.`,
   alternates: { canonical: "/wallets/best/solana" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

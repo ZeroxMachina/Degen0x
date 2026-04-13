@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Foundation vs SuperRare: Which Art NFT Platform Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Foundation vs SuperRare: Which Art NFT Platform Is Better? (2026) | degen0x`,
   description: "Detailed comparison of Foundation vs SuperRare for NFT art. Compare curation, fees, artist access, auction formats, and collecting experience on both platforms.",
   alternates: { canonical: "/nfts/compare/foundation-vs-superrare" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

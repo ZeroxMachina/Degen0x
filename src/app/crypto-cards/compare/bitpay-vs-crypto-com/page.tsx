@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `BitPay Card vs Crypto.com Visa: Simple vs Premium (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `BitPay Card vs Crypto.com Visa: Simple vs Premium (2026) | degen0x`,
   description:
     "BitPay Card vs Crypto.com Visa compared on rewards, fees, features, and usability. Find out whether simple spending or premium rewards suits you better.",
   alternates: { canonical: "/crypto-cards/compare/bitpay-vs-crypto-com" },

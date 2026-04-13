@@ -9,7 +9,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Insurance Protocols of ${CURRENT_YEAR} - Compare Coverage`,
+  title: `Best Crypto Insurance Protocols of 2026 - Compare Coverage`,
   description: "Compare the best crypto insurance protocols. Expert analysis of Nexus Mutual, InsurAce, Unslashed, and more. Find the right coverage for smart contracts,",
   alternates: { canonical: "/insurance/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

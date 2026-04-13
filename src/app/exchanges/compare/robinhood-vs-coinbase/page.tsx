@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Robinhood vs Coinbase: Which Is Better for Crypto? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Robinhood vs Coinbase: Which Is Better for Crypto? (2026) | degen0x`,
   description: "Detailed comparison of Robinhood vs Coinbase for crypto trading. Compare fees, coin selection, features, and security to find the right platform.",
   alternates: { canonical: "/exchanges/compare/robinhood-vs-coinbase" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

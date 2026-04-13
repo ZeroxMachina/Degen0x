@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `ZenGo Wallet Review (${CURRENT_YEAR}) - Keyless MPC Wallet | ${SITE_NAME}`,
+  title: `ZenGo Wallet Review (2026) - Keyless MPC Wallet | degen0x`,
   description: `Complete ZenGo wallet review for ${CURRENT_YEAR}. Covers MPC technology, seedless recovery, supported assets, Web3 features, and security model.`,
   alternates: { canonical: "/wallets/reviews/zengo" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

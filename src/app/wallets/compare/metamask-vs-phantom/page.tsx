@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `MetaMask vs Phantom (${CURRENT_YEAR}) - Which Wallet Is Better? | ${SITE_NAME}`,
+  title: `MetaMask vs Phantom (2026) - Which Wallet Is Better? | degen0x`,
   description: `MetaMask vs Phantom side-by-side comparison for ${CURRENT_YEAR}. Chain support, DeFi features, NFTs, fees, and user experience compared.`,
   alternates: { canonical: "/wallets/compare/metamask-vs-phantom" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

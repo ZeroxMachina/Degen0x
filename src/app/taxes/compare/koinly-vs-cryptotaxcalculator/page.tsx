@@ -9,7 +9,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { TAX_COMPARISON_ITEMS, TAX_COMPARISON_FEATURES } from "@/data/taxes";
 
 export const metadata: Metadata = {
-  title: `Koinly vs CryptoTaxCalculator ${CURRENT_YEAR} - Which Is Better for DeFi?`,
+  title: `Koinly vs CryptoTaxCalculator 2026 - Which Is Better for DeFi?`,
   description: `Compare Koinly vs CryptoTaxCalculator. Side-by-side analysis of DeFi support, pricing, integrations, and which crypto tax software is right for you.`,
   alternates: { canonical: "/taxes/compare/koinly-vs-cryptotaxcalculator" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

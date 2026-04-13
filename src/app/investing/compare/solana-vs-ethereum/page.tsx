@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Solana vs Ethereum (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Solana vs Ethereum comparison for ${CURRENT_YEAR}. Speed, fees, DeFi ecosystem, developer activity, and investment thesis compared.` ,
+export const metadata: Metadata = { title: `Solana vs Ethereum (2026) | degen0x`, description: `Solana vs Ethereum comparison for ${CURRENT_YEAR}. Speed, fees, DeFi ecosystem, developer activity, and investment thesis compared.` ,
   alternates: { canonical: "/investing/compare/solana-vs-ethereum" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

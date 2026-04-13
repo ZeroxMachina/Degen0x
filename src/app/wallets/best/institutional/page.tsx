@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Institutional Crypto Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Institutional Crypto Wallets (2026) | degen0x`,
   description: `The best institutional crypto wallets for ${CURRENT_YEAR}. Compare Safe, Ledger Enterprise, and GridPlus for DAO treasuries, fund management, and enterprise custody.`,
   alternates: { canonical: "/wallets/best/institutional" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

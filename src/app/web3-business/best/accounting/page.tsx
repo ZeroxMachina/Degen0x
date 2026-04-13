@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Accounting Software of ${CURRENT_YEAR} - On-Chain Bookkeeping | ${SITE_NAME}`,
+  title: `Best Crypto Accounting Software of 2026 - On-Chain Bookkeeping | degen0x`,
   description: `Compare the best crypto accounting software for businesses in ${CURRENT_YEAR}. Track on-chain transactions, reconcile DeFi activity, generate tax reports, and stay audit-ready.`,
   alternates: { canonical: "/web3-business/best/accounting" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

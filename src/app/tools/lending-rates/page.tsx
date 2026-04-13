@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Crypto Lending Rates Comparison | DeFi & CeFi Yields | ${SITE_NAME}`,
+  title: `Crypto Lending Rates Comparison | DeFi & CeFi Yields | degen0x`,
   description: `Compare real-time lending rates across 20+ DeFi and CeFi platforms including Aave, Compound, MakerDAO, Morpho, Spark, JustLend, Venus, and more. Find the best APY for USDC, USDT, ETH, WBTC, and 10+ crypto assets. Interactive comparison table, lending calculator, and risk analysis.`,
   alternates: { canonical: `${SITE_URL}/tools/lending-rates` },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

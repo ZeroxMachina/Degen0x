@@ -30,7 +30,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Magic Eden Review: Multi-Chain NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
+  title: `Magic Eden Review: Multi-Chain NFT Marketplace (2026) | degen0x`,
   description:
     "In-depth Magic Eden review covering fees, multi-chain support, Bitcoin Ordinals, Launchpad features, and whether it's the right NFT marketplace for you.",
   alternates: { canonical: "/nfts/reviews/magic-eden" },

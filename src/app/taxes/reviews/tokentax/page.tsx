@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `TokenTax Review (${CURRENT_YEAR}) - CPA Services & Tax Software | ${SITE_NAME}`,
+  title: `TokenTax Review (2026) - CPA Services & Tax Software | degen0x`,
   description: `In-depth TokenTax review for ${CURRENT_YEAR}. The only crypto tax platform offering full-service CPA filing alongside software tools. Pricing, features, and analysis.`,
   alternates: { canonical: "/taxes/reviews/tokentax" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

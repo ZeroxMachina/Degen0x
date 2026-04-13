@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in VeChain (VET) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in VeChain (VET) 2026 - Complete Guide`,
   description: `Complete VeChain investment guide for ${CURRENT_YEAR}. Learn about VET fundamentals, supply chain tracking, sustainability, risks, and how to buy VeChain.`,
   alternates: { canonical: "/investing/crypto/vechain" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

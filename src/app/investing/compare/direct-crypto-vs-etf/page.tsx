@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Direct Crypto vs ETF (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Direct crypto purchase vs crypto ETF comparison for ${CURRENT_YEAR}. Self-custody vs brokerage access — fees, flexibility, tax advantages, and which is better for you.` ,
+export const metadata: Metadata = { title: `Direct Crypto vs ETF (2026) | degen0x`, description: `Direct crypto purchase vs crypto ETF comparison for ${CURRENT_YEAR}. Self-custody vs brokerage access — fees, flexibility, tax advantages, and which is better for you.` ,
   alternates: { canonical: "/investing/compare/direct-crypto-vs-etf" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

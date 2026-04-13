@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `CoinGate Review (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `CoinGate Review (2026) | degen0x`,
   description: `CoinGate review for ${CURRENT_YEAR}. Payment processing, gift cards, supported cryptocurrencies, merchant tools, fees, and platform comparison.`,
   alternates: { canonical: "/spending/reviews/coingate" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

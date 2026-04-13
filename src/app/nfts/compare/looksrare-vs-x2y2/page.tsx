@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `LooksRare vs X2Y2: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `LooksRare vs X2Y2: Which NFT Marketplace Is Better? (2026) | degen0x`,
   description: "Detailed comparison of LooksRare vs X2Y2. Compare fees, token rewards, trading features, and community governance to find the best Ethereum NFT marketplace.",
   alternates: { canonical: "/nfts/compare/looksrare-vs-x2y2" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

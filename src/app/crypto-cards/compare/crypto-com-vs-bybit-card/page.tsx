@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Crypto.com vs Bybit Card: Established vs Newcomer (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Crypto.com vs Bybit Card: Established vs Newcomer (2026) | degen0x`,
   description:
     "Crypto.com Visa vs Bybit Card compared on cashback, fees, features, staking, and availability. Find out which exchange-linked crypto debit card is best for you.",
   alternates: { canonical: "/crypto-cards/compare/crypto-com-vs-bybit-card" },

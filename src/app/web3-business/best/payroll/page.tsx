@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Payroll Platforms of ${CURRENT_YEAR} - Pay Teams in Crypto | ${SITE_NAME}`,
+  title: `Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto | degen0x`,
   description: `Compare the best crypto payroll platforms in ${CURRENT_YEAR}. Pay employees and contractors in stablecoins, Bitcoin, or other crypto. Tax compliance, global coverage, and DAO-friendly solutions.`,
   alternates: { canonical: "/web3-business/best/payroll" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

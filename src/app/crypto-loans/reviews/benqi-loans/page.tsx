@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `BENQI Loans Review (${CURRENT_YEAR}): Avalanche DeFi Lending | ${SITE_NAME}`,
+  title: `BENQI Loans Review (2026): Avalanche DeFi Lending | degen0x`,
   description: "In-depth BENQI review covering Avalanche lending, sAVAX liquid staking, borrowing rates, and how BENQI compares to other DeFi lending protocols.",
   alternates: { canonical: "/crypto-loans/reviews/benqi-loans" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

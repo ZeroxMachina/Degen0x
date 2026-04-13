@@ -10,7 +10,7 @@ import { securityWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Most Secure Crypto Wallets of ${CURRENT_YEAR} - Security-Focused Reviews | ${SITE_NAME}`,
+  title: `Most Secure Crypto Wallets of 2026 - Security-Focused Reviews | degen0x`,
   description: `The most secure crypto wallets of ${CURRENT_YEAR}. Ledger, Trezor, Safe, Rabby and more. Expert analysis of hardware security, open-source code, and multi-sig protection.`,
   alternates: { canonical: "/wallets/best/security" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

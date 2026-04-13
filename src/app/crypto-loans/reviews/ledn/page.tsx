@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Ledn Review (${CURRENT_YEAR}): Rates, Features & Pros/Cons | ${SITE_NAME}`,
+  title: `Ledn Review (2026): Rates, Features & Pros/Cons | degen0x`,
   description: "In-depth Ledn review covering Bitcoin-backed loans, yield products, proof of reserves, and how Ledn compares to other crypto lending platforms.",
   alternates: { canonical: "/crypto-loans/reviews/ledn" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { TRADING_PLATFORMS, TRADING_PLATFORM_FAQS } from "@/data/investing";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Trading Platforms ${CURRENT_YEAR} - Top Exchanges Compared`,
+  title: `Best Crypto Trading Platforms 2026 - Top Exchanges Compared`,
   description: `Compare the best crypto trading platforms for ${CURRENT_YEAR}. Expert reviews of fees, security, features, and supported assets across top exchanges.`,
   alternates: { canonical: "/investing/best/trading-platforms" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

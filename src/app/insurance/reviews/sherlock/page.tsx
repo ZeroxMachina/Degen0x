@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Sherlock Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Sherlock Review 2026: Fees, Features, Pros & Cons`,
   description: "Sherlock Protocol review: Smart contract security insurance. Coverage, claims, premiums. Compare crypto insurance and smart contract audit services.",
   alternates: { canonical: "/insurance/reviews/sherlock" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

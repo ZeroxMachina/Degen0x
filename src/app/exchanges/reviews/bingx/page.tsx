@@ -29,7 +29,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `BingX Review (${CURRENT_YEAR}) - Best Copy Trading Exchange? | ${SITE_NAME}`,
+  title: `BingX Review (2026) - Best Copy Trading Exchange? | degen0x`,
   description: `Complete BingX review for ${CURRENT_YEAR}. Covers copy trading features, futures trading, fees, security, and user experience.`,
   alternates: { canonical: "/exchanges/reviews/bingx" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -11,7 +11,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `10 Best NFT Marketplaces of ${CURRENT_YEAR} (Ranked & Reviewed)`,
+  title: `10 Best NFT Marketplaces of 2026 (Ranked & Reviewed)`,
   description: `Compare the top 10 NFT marketplaces of ${CURRENT_YEAR}. We tested fees, creator tools, security, and user experience. Find the best platform for buying, selling, and creating NFTs.`,
   alternates: { canonical: "/nfts/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

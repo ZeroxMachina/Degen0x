@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Blue-Chip Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Blue-Chip Crypto (2026) | degen0x`,
   description: `Top blue-chip cryptocurrencies for ${CURRENT_YEAR}. The most established, reliable crypto assets with proven track records and institutional adoption.`,
   alternates: { canonical: "/investing/best/blue-chip-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

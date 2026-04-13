@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Crypto.com Visa vs Coinbase Card: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Crypto.com Visa vs Coinbase Card: Full Comparison (2026) | degen0x`,
   description: "Compare the Crypto.com Visa card and Coinbase Card side by side. We analyze cashback rates, fees, staking requirements, and more to help you pick the best",
   alternates: { canonical: "/crypto-cards/compare/crypto-com-vs-coinbase-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

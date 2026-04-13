@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `SPEDN App Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `SPEDN App Review 2026: Fees, Features, Pros & Cons`,
   description:
     "Full SPEDN app review covering Flexa-powered crypto payments at retail stores, supported cryptocurrencies, merchant network, and in-store spending experience.",
   alternates: { canonical: "/spending/reviews/spedn" },

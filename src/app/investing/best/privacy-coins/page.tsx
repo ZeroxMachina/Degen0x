@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Privacy Coins (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Privacy Coins (2026) | degen0x`,
   description: `Top privacy-focused cryptocurrencies in ${CURRENT_YEAR}. Compare Monero, Zcash, and other privacy coins for transaction privacy and fungibility.`,
   alternates: { canonical: "/investing/best/privacy-coins" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

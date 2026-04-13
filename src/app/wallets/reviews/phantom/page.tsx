@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 const product = walletProducts.find((p) => p.slug === "phantom")!;
 
 export const metadata: Metadata = {
-  title: `Phantom Wallet Review (${CURRENT_YEAR}) - Best Solana Wallet? | ${SITE_NAME}`,
+  title: `Phantom Wallet Review (2026) - Best Solana Wallet? | degen0x`,
   description: `Complete Phantom wallet review for ${CURRENT_YEAR}. Covers multi-chain support, NFT features, staking, swaps, security, and the user experience.`,
   alternates: { canonical: "/wallets/reviews/phantom" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

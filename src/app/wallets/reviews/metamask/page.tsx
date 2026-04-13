@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 const product = walletProducts.find((p) => p.slug === "metamask")!;
 
 export const metadata: Metadata = {
-  title: `MetaMask Review (${CURRENT_YEAR}) - Best Ethereum Wallet? | ${SITE_NAME}`,
+  title: `MetaMask Review (2026) - Best Ethereum Wallet? | degen0x`,
   description: `Detailed MetaMask review for ${CURRENT_YEAR}. We cover MetaMask's features, swap fees, security, multi-chain support, and how it compares to alternatives.`,
   alternates: { canonical: "/wallets/reviews/metamask" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `TaxBit Review (${CURRENT_YEAR}) - Free Crypto Tax Reports | ${SITE_NAME}`,
+  title: `TaxBit Review (2026) - Free Crypto Tax Reports | degen0x`,
   description: `In-depth TaxBit review for ${CURRENT_YEAR}. Enterprise-grade crypto tax compliance with free tax reports through partner exchanges. Pricing, features, and accuracy.`,
   alternates: { canonical: "/taxes/reviews/taxbit" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

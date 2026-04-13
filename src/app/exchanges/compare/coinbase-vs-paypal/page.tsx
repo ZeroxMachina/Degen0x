@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Coinbase vs PayPal: Which Is Better for Crypto? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Coinbase vs PayPal: Which Is Better for Crypto? (2026) | degen0x`,
   description: "Detailed comparison of Coinbase vs PayPal for crypto. Compare fees, coin selection, features, and which platform is best for buying cryptocurrency.",
   alternates: { canonical: "/exchanges/compare/coinbase-vs-paypal" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `InsurAce Review (${CURRENT_YEAR}) | degen0x`,
+  title: `InsurAce Review (2026) | degen0x`,
   description: "In-depth InsurAce review covering multi-chain coverage, portfolio bundling, claim process, pricing model, and comparison with other DeFi insurance protocols.",
   alternates: { canonical: "/insurance/reviews/insurace" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

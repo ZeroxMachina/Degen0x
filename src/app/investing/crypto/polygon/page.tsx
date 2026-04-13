@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 const token = CRYPTO_TOKENS[7];
 
 export const metadata: Metadata = {
-  title: `How to Invest in Polygon (POL) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Polygon (POL) 2026 - Complete Guide`,
   description: `Complete Polygon investment guide for ${CURRENT_YEAR}. Learn about POL fundamentals, zkEVM, enterprise adoption, and how to buy Polygon.`,
   alternates: { canonical: "/investing/crypto/polygon" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Privacy Policy - ${SITE_NAME}`,
+  title: `Privacy Policy - degen0x`,
   description: `${SITE_NAME} privacy policy. Learn how we collect, use, and protect your personal information.`,
   alternates: { canonical: "/privacy" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

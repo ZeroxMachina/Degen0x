@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Software Wallets of ${CURRENT_YEAR} - Hot Wallet Reviews | ${SITE_NAME}`,
+  title: `Best Software Wallets of 2026 - Hot Wallet Reviews | degen0x`,
   description: `Compare the best software crypto wallets of ${CURRENT_YEAR}. MetaMask, Phantom, Trust Wallet, and more. Expert reviews of browser, mobile, and desktop wallets.`,
   alternates: { canonical: "/wallets/best/software" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

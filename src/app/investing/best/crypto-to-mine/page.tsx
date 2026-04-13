@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Crypto to Mine (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto to Mine (2026) | degen0x`,
   description: `The most profitable cryptocurrencies to mine in ${CURRENT_YEAR}. Compare Bitcoin, Litecoin, Kaspa, and other mineable coins by profitability and hardware requirements.`,
   alternates: { canonical: "/investing/best/crypto-to-mine" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Tensor vs Magic Eden: Which Solana NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Tensor vs Magic Eden: Which Solana NFT Marketplace Is Better? (2026) | degen0x`,
   description: "Detailed comparison of Tensor vs Magic Eden for Solana NFTs. Compare fees, trading tools, analytics, token rewards, and features to find the best Solana NFT",
   alternates: { canonical: "/nfts/compare/tensor-vs-magic-eden" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

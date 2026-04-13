@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Spark vs Aave ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
+  title: `Spark vs Aave 2026: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Spark Protocol vs Aave in ${CURRENT_YEAR}. Compare DAI savings rate, lending features, yield opportunities, and which protocol suits your strategy.`,
   alternates: { canonical: "/defi-lending/compare/spark-vs-aave" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

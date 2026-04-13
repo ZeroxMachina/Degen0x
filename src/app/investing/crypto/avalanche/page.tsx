@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 const token = CRYPTO_TOKENS[5];
 
 export const metadata: Metadata = {
-  title: `How to Invest in Avalanche (AVAX) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Avalanche (AVAX) 2026 - Complete Guide`,
   description: `Complete Avalanche investment guide for ${CURRENT_YEAR}. Learn about AVAX fundamentals, subnets, DeFi ecosystem, and how to buy Avalanche.`,
   alternates: { canonical: "/investing/crypto/avalanche" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Lido vs EigenLayer ${CURRENT_YEAR}: Staking vs Restaking Compared`,
+  title: `Lido vs EigenLayer 2026: Staking vs Restaking Compared`,
   description: `Detailed comparison of Lido vs EigenLayer in ${CURRENT_YEAR}. Compare liquid staking, restaking, yields, risk profiles, and how each protocol fits your staking strategy.`,
   alternates: { canonical: "/defi-lending/compare/lido-vs-eigenlayer" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

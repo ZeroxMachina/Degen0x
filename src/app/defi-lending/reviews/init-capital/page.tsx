@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Init Capital Review ${CURRENT_YEAR}: Composable Lending on Mantle`,
+  title: `Init Capital Review 2026: Composable Lending on Mantle`,
   description:
     "In-depth Init Capital review covering composable lending hooks, position management, yield strategies, and protocol design on Mantle network.",
   alternates: { canonical: "/defi-lending/reviews/init-capital" },

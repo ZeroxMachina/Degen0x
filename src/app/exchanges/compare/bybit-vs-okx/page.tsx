@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Bybit vs OKX (${CURRENT_YEAR}): Derivatives Exchange Comparison | ${SITE_NAME}`,
+  title: `Bybit vs OKX (2026): Derivatives Exchange Comparison | degen0x`,
   description: `Bybit vs OKX comparison for ${CURRENT_YEAR}. Compare futures fees, leverage, copy trading, Web3 wallets, and features for derivatives traders.`,
   alternates: { canonical: "/exchanges/compare/bybit-vs-okx" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

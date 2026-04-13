@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Backpack Exchange Review (${CURRENT_YEAR}) - Solana-Native CEX | ${SITE_NAME}`,
+  title: `Backpack Exchange Review (2026) - Solana-Native CEX | degen0x`,
   description: `Complete Backpack Exchange review for ${CURRENT_YEAR}. Covers Solana integration, trading features, fees, regulation, security, and the team's FTX heritage.`,
   alternates: { canonical: "/exchanges/reviews/backpack" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Cards for Beginners in ${CURRENT_YEAR}`,
+  title: `Best Crypto Cards for Beginners in 2026`,
   description: `New to crypto cards? Compare the most beginner-friendly crypto cards of ${CURRENT_YEAR}. Simple setup, no staking required, and easy-to-understand rewards.`,
   alternates: { canonical: "/crypto-cards/best/beginners" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `SoFi Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `SoFi Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth SoFi Crypto review covering trading fees, supported coins, banking integration, and whether this all-in-one finance app suits your crypto needs.",
   alternates: { canonical: "/exchanges/reviews/sofi-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

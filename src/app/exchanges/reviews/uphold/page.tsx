@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Uphold Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Uphold Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Uphold review covering multi-asset trading, fees, supported cryptocurrencies, Anything-to-Anything feature, and whether Uphold suits your needs.",
   alternates: { canonical: "/exchanges/reviews/uphold" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -12,7 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Cryptos to Buy in ${CURRENT_YEAR} - Top Picks for ${CURRENT_MONTH}`,
+  title: `Best Cryptos to Buy in 2026 - Top Picks for April`,
   description: `Discover the best cryptocurrencies to buy right now. Our experts analyze fundamentals, technology, and market potential to identify top crypto picks for ${CURRENT_YEAR}.`,
   alternates: { canonical: "/investing/best/cryptos-to-buy" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

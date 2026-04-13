@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Webull Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Webull Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Webull Crypto review covering trading fees, supported coins, advanced charting, and whether this brokerage platform is right for crypto.",
   alternates: { canonical: "/exchanges/reviews/webull-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Cross-Chain Lending Protocols ${CURRENT_YEAR} - Multi-Chain DeFi`,
+  title: `Best Cross-Chain Lending Protocols 2026 - Multi-Chain DeFi`,
   description: `Compare the best cross-chain DeFi lending protocols of ${CURRENT_YEAR}. Lend and borrow across Ethereum, Arbitrum, Optimism, Polygon, Base, and more.`,
   alternates: { canonical: "/defi-lending/best/cross-chain" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -86,7 +86,10 @@ export default function CrossChainPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Cross-Chain", href: "/defi-lending/best/cross-chain" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Cross-Chain Lending Protocols ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Cross-chain lending protocols enable collateral on one chain to back borrowing on another, leveraging Stargate, Wormhole, and LayerZero bridges. Interoperable lending accounts for 5–10% of total DeFi lending TVL and enables novel arbitrage strategies.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           As DeFi expands across multiple blockchains, the ability to lend and borrow across chains has become increasingly important. Cross-chain lending protocols enable users to access the best yields regardless of which network they are on, supply collateral on one chain while borrowing on another, and manage unified positions across the multi-chain ecosystem. We evaluated the top cross-chain lending options based on chain coverage, security, and user experience.

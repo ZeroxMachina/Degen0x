@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Lido vs Rocket Pool: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Lido vs Rocket Pool: Which Is Better? (2026) | degen0x`,
   description: "Detailed comparison of Lido vs Rocket Pool. Compare fees, decentralization, liquid staking tokens, DeFi integrations, and more to find which ETH staking",
   alternates: { canonical: "/investing/staking/compare/lido-vs-rocket-pool" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

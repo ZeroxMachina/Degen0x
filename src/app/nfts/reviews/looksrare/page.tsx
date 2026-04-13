@@ -30,7 +30,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `LooksRare Review: Community-First NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
+  title: `LooksRare Review: Community-First NFT Marketplace (2026) | degen0x`,
   description:
     "In-depth LooksRare review covering LOOKS token rewards, staking, trading features, fees, and whether this community-governed marketplace is right for you.",
   alternates: { canonical: "/nfts/reviews/looksrare" },

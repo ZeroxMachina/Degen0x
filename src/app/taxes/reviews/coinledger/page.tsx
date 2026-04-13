@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `CoinLedger Review (${CURRENT_YEAR}): Simple Crypto Tax Software | ${SITE_NAME}`,
+  title: `CoinLedger Review (2026): Simple Crypto Tax Software | degen0x`,
   description: "In-depth CoinLedger review covering its beginner-friendly approach, TurboTax integration, pricing, and suitability for different trader types.",
   alternates: { canonical: "/taxes/reviews/coinledger" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

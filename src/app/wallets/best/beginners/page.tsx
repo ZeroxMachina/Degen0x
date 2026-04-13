@@ -10,7 +10,7 @@ import { beginnerWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Wallets for Beginners (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto Wallets for Beginners (2026) | degen0x`,
   description: `The easiest crypto wallets for beginners in ${CURRENT_YEAR}. Exodus, Coinbase Wallet, Phantom and more. Simple setup, intuitive interfaces, and step-by-step guides.`,
   alternates: { canonical: "/wallets/best/beginners" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Hyperliquid vs dYdX: Best Decentralized Perps? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Hyperliquid vs dYdX: Best Decentralized Perps? (2026) | degen0x`,
   description: "Detailed comparison of Hyperliquid vs dYdX for decentralized perpetual futures trading. Compare fees, speed, liquidity, and features.",
   alternates: { canonical: "/exchanges/compare/hyperliquid-vs-dydx" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

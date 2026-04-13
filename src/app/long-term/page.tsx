@@ -7,7 +7,7 @@ import { FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Long-Term Crypto Strategies - Build Generational Wealth ${CURRENT_YEAR}`,
+  title: `Long-Term Crypto Strategies - Build Generational Wealth 2026`,
   description: "Master long-term crypto investing. Crypto IRAs, HODL strategies, passive income, retirement planning, estate planning, and FIRE with cryptocurrency. Expert",
   alternates: { canonical: "/long-term" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

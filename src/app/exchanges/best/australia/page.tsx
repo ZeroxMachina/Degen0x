@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Australia (${CURRENT_YEAR})`,
+  title: `Best Crypto Exchanges in Australia (2026)`,
   description: `Compare the best crypto exchanges for Australians in ${CURRENT_YEAR}. AUSTRAC-registered platforms with AUD deposits via PayID and bank transfer, low fees, and strong security.`,
   keywords: [
     "best crypto exchanges Australia",

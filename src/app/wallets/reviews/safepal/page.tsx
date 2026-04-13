@@ -29,7 +29,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `SafePal Wallet Review (${CURRENT_YEAR}) - Affordable Air-Gapped Hardware Wallet | ${SITE_NAME}`,
+  title: `SafePal Wallet Review (2026) - Affordable Air-Gapped Hardware Wallet | degen0x`,
   description: `Complete SafePal wallet review for ${CURRENT_YEAR}. Covers the S1 air-gapped hardware wallet, software wallet, 100+ chain support, and Binance Labs backing.`,
   alternates: { canonical: "/wallets/reviews/safepal" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

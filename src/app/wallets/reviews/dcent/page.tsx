@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `D'CENT Wallet Review (${CURRENT_YEAR}) | degen0x`,
+  title: "D'CENT Wallet Review (${CURRENT_YEAR}) | degen0x",
   description: "D'CENT hardware wallet review covering biometric security, multi-chain support, built-in dApp browser, and fingerprint authentication.",
   alternates: { canonical: "/wallets/reviews/dcent" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 const product = cryptoCards.find((c) => c.slug === "nexo-card")!;
 
 export const metadata: Metadata = {
-  title: `Nexo Card Review (${CURRENT_YEAR}): Credit Line, Rewards & Pros/Cons | degen0x`,
+  title: `Nexo Card Review (2026): Credit Line, Rewards & Pros/Cons | degen0x`,
   description: "In-depth Nexo Card review covering crypto-backed credit lines, cashback rewards, spending without selling, and whether it is right for long-term HODLers.",
   alternates: { canonical: "/crypto-cards/reviews/nexo-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

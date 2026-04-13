@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Ethereum vs BNB Chain (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Ethereum vs BNB Chain comparison for ${CURRENT_YEAR}. Decentralization vs low-cost performance, DeFi ecosystems, and investment thesis for ETH and BNB compared.` ,
+export const metadata: Metadata = { title: `Ethereum vs BNB Chain (2026) | degen0x`, description: `Ethereum vs BNB Chain comparison for ${CURRENT_YEAR}. Decentralization vs low-cost performance, DeFi ecosystems, and investment thesis for ETH and BNB compared.` ,
   alternates: { canonical: "/investing/compare/ethereum-vs-bnb-chain" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

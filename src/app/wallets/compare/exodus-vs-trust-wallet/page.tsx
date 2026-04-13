@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Exodus vs Trust Wallet (${CURRENT_YEAR}) - Multi-Chain Wallet Comparison | ${SITE_NAME}`,
+  title: `Exodus vs Trust Wallet (2026) - Multi-Chain Wallet Comparison | degen0x`,
   description: `Exodus vs Trust Wallet comparison for ${CURRENT_YEAR}. Chain support, design, staking, DeFi, exchange features, and mobile experience compared.`,
   alternates: { canonical: "/wallets/compare/exodus-vs-trust-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

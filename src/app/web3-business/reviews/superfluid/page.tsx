@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Superfluid Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Superfluid Review 2026: Fees, Features, Pros & Cons`,
   description: "Superfluid review: Money streaming on blockchain. Real-time payments, subscriptions, payroll. Compare token streams and payment automation tools.",
   alternates: { canonical: "/web3-business/reviews/superfluid" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

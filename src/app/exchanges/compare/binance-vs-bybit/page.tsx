@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Binance vs Bybit: Detailed Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Binance vs Bybit: Detailed Comparison (2026) | degen0x`,
   description:
     "Compare Binance and Bybit for derivatives trading. Analyze futures, leverage, fees, and find the best exchange for advanced crypto traders.",
   keywords: "Binance vs Bybit, derivatives trading, futures, crypto exchange comparison",

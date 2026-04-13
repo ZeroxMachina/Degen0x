@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Jito vs Marinade: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Jito vs Marinade: Which Is Better? (2026) | degen0x`,
   description: "Detailed comparison of Jito vs Marinade for Solana staking. Compare MEV yields, decentralization, liquid staking tokens, and fees to choose the right SOL",
   alternates: { canonical: "/investing/staking/compare/jito-vs-marinade" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

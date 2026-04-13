@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Tangem Wallet Review (${CURRENT_YEAR}) - NFC Card Hardware Wallet | ${SITE_NAME}`,
+  title: `Tangem Wallet Review (2026) - NFC Card Hardware Wallet | degen0x`,
   description: `Complete Tangem wallet review for ${CURRENT_YEAR}. Covers the NFC card design, EAL6+ secure chip, backup system, supported chains, and mobile experience.`,
   alternates: { canonical: "/wallets/reviews/tangem" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

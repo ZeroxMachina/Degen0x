@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Moon Browser Extension Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Moon Browser Extension Review 2026: Fees, Features, Pros & Cons`,
   description: "Detailed Moon browser extension review covering crypto checkout at online retailers, Lightning Network payments, supported stores, and how to spend Bitcoin",
   alternates: { canonical: "/spending/reviews/moon-browser" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

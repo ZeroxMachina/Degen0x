@@ -5,7 +5,7 @@ import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Multi-Sig Wallets Explained (${CURRENT_YEAR}) - How They Work | ${SITE_NAME}`,
+  title: `Multi-Sig Wallets Explained (2026) - How They Work | degen0x`,
   description: `Learn how multi-signature wallets work in ${CURRENT_YEAR}. Covers multi-sig setup, use cases for DAOs and teams, Safe (Gnosis Safe), and security benefits.`,
   alternates: { canonical: "/wallets/learn/multi-sig-wallets" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

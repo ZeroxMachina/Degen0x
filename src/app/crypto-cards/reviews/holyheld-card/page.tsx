@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Holyheld Card Review (${CURRENT_YEAR}): Non-Custodial DeFi Spending | ${SITE_NAME}`,
+  title: `Holyheld Card Review (2026): Non-Custodial DeFi Spending | degen0x`,
   description: "In-depth Holyheld Card review covering non-custodial spending, DeFi wallet integration, fees, and how it compares to other crypto cards.",
   alternates: { canonical: "/crypto-cards/reviews/holyheld-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 const product = cryptoCards.find((c) => c.slug === "gnosis-card")!;
 
 export const metadata: Metadata = {
-  title: `Gnosis Pay Card Review (${CURRENT_YEAR}): DeFi Spending & Pros/Cons | degen0x`,
+  title: `Gnosis Pay Card Review (2026): DeFi Spending & Pros/Cons | degen0x`,
   description: "In-depth Gnosis Pay card review covering on-chain spending from Safe wallets, DeFi integration, progressive decentralization, and whether it suits DeFi-native",
   alternates: { canonical: "/crypto-cards/reviews/gnosis-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

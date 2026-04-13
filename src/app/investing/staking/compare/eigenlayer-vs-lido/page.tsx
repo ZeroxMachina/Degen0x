@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `EigenLayer vs Lido: Restaking vs Liquid Staking (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `EigenLayer vs Lido: Restaking vs Liquid Staking (2026) | degen0x`,
   description:
     "Detailed comparison of EigenLayer vs Lido. Compare restaking yields, risks, composability, and fees to understand how these protocols complement each other.",
   alternates: { canonical: "/investing/staking/compare/eigenlayer-vs-lido" },

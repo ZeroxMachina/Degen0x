@@ -9,7 +9,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { Product } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Best DeFi Tax Tools (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best DeFi Tax Tools (2026) | degen0x`,
   description: `Compare the best DeFi tax tools for ${CURRENT_YEAR}. Track yield farming, liquidity pools, staking rewards, token swaps, and complex DeFi transactions for tax reporting.`,
   alternates: { canonical: "/taxes/best/defi-tax-tools" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

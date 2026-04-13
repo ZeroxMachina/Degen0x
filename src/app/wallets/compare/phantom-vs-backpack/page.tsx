@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Phantom vs Backpack (${CURRENT_YEAR}) - Which Solana Wallet Is Better? | ${SITE_NAME}`,
+  title: `Phantom vs Backpack (2026) - Which Solana Wallet Is Better? | degen0x`,
   description: `Phantom vs Backpack Solana wallet comparison for ${CURRENT_YEAR}. Features, xNFT support, DeFi access, and ecosystem integration compared.`,
   alternates: { canonical: "/wallets/compare/phantom-vs-backpack" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

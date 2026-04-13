@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Nigeria (${CURRENT_YEAR})`,
+  title: `Best Crypto Exchanges in Nigeria (2026)`,
   description: `Compare the best crypto exchanges for Nigerian residents in ${CURRENT_YEAR}. SEC-licensed platforms with NGN deposits via bank transfer, P2P trading, and mobile money options.`,
   keywords: [
     "best crypto exchanges Nigeria",

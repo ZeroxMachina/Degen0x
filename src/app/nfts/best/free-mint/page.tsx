@@ -9,7 +9,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best NFT Marketplaces for Free Minting in ${CURRENT_YEAR} | degen0x`,
+  title: `Best NFT Marketplaces for Free Minting in 2026 | degen0x`,
   description: `Find the best NFT marketplaces with free minting in ${CURRENT_YEAR}. Create and list NFTs without upfront gas costs using lazy minting and low-cost chains.`,
   alternates: { canonical: "/nfts/best/free-mint" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

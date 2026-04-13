@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in XRP (XRP) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in XRP (XRP) 2026 - Complete Guide`,
   description: `Complete XRP investment guide for ${CURRENT_YEAR}. Learn about XRP fundamentals, Ripple payments, legal history, risks, and how to buy XRP.`,
   alternates: { canonical: "/investing/crypto/xrp" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

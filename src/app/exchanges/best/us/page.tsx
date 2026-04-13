@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in the US (${CURRENT_YEAR})`,
+  title: `Best Crypto Exchanges in the US (2026)`,
   description: `Compare the best crypto exchanges available to US residents in ${CURRENT_YEAR}. Fully regulated, SEC-compliant platforms with dollar deposits and tax reporting.`,
   alternates: { canonical: "/exchanges/best/us" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

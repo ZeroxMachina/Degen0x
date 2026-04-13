@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Stacks (STX) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Stacks (STX) 2026 - Complete Guide`,
   description: `Complete Stacks investment guide for ${CURRENT_YEAR}. Learn about STX fundamentals, Bitcoin smart contracts, Nakamoto upgrade, risks, and how to buy Stacks.`,
   alternates: { canonical: "/investing/crypto/stacks" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

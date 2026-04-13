@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 const product = walletProducts.find((p) => p.slug === "safe")!;
 
 export const metadata: Metadata = {
-  title: `Safe (Gnosis Safe) Review (${CURRENT_YEAR}) - Best Multi-Sig Wallet | ${SITE_NAME}`,
+  title: `Safe (Gnosis Safe) Review (2026) - Best Multi-Sig Wallet | degen0x`,
   description: `Complete Safe wallet review for ${CURRENT_YEAR}. Covers multi-signature security, DAO treasury management, Safe Apps, and enterprise features.`,
   alternates: { canonical: "/wallets/reviews/safe" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

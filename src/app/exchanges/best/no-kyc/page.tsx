@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best No-KYC Crypto Exchanges in ${CURRENT_YEAR}`,
+  title: `Best No-KYC Crypto Exchanges in 2026`,
   description: `Trade crypto without identity verification. Compare the best no-KYC exchanges and DEXs in ${CURRENT_YEAR}. Privacy-focused trading options reviewed.`,
   alternates: { canonical: "/exchanges/best/no-kyc" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

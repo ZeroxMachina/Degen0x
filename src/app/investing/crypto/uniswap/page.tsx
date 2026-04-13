@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Uniswap (UNI) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Uniswap (UNI) 2026 - Complete Guide`,
   description: `Complete Uniswap investment guide for ${CURRENT_YEAR}. Learn about UNI fundamentals, DEX dominance, governance, fee switch, risks, and how to buy UNI.`,
   alternates: { canonical: "/investing/crypto/uniswap" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

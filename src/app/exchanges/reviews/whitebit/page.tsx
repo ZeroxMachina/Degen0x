@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `WhiteBIT Review (${CURRENT_YEAR}) - European Exchange with Low Fees | ${SITE_NAME}`,
+  title: `WhiteBIT Review (2026) - European Exchange with Low Fees | degen0x`,
   description: `Complete WhiteBIT review for ${CURRENT_YEAR}. Covers trading fees, fiat support, 600+ trading pairs, security, and the European user experience.`,
   alternates: { canonical: "/exchanges/reviews/whitebit" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Credix Review (${CURRENT_YEAR}): Emerging Market DeFi Credit | degen0x`,
+  title: `Credix Review (2026): Emerging Market DeFi Credit | degen0x`,
   description: "In-depth Credix review covering emerging market lending on Solana, fintech borrower network, tranched credit pools, and risk-adjusted yields.",
   alternates: { canonical: "/defi-lending/reviews/credix" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

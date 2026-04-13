@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Bitcoin-Backed Loans ${CURRENT_YEAR} - Borrow Against BTC`,
+  title: `Best Bitcoin-Backed Loans 2026 - Borrow Against BTC`,
   description: `Compare the best Bitcoin-backed loan platforms in ${CURRENT_YEAR}. Get cash against your BTC without selling. Compare rates, LTV ratios, and terms.`,
   alternates: { canonical: "/crypto-loans/best/bitcoin-loans" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -52,7 +52,10 @@ export default function BitcoinLoansPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "Bitcoin Loans", href: "/crypto-loans/best/bitcoin-loans" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Bitcoin-Backed Loans ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Bitcoin-backed loans enable holders to access capital without selling holdings, with interest rates of 2–6% annually depending on lender and collateral quality. Bitcoin lending volume exceeds $5B, with major players offering rates 3–4% lower than 2023 due to increased competition.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">Bitcoin holders who need liquidity but do not want to sell their BTC can use crypto-backed loans to borrow against their holdings. This preserves your long-term Bitcoin position while giving you access to cash, stablecoins, or other assets for immediate needs. We compared the top platforms for Bitcoin-backed lending based on rates, LTV ratios, and security.</p>
       </div>

@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Venus Protocol Loans Review (${CURRENT_YEAR}): BNB Chain Lending | ${SITE_NAME}`,
+  title: `Venus Protocol Loans Review (2026): BNB Chain Lending | degen0x`,
   description: "In-depth Venus Protocol review covering BNB Chain lending, VAI stablecoin, borrowing rates, risk management improvements, and feature comparison.",
   alternates: { canonical: "/crypto-loans/reviews/venus-loans" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

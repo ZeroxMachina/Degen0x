@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `OpenSea vs Blur: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `OpenSea vs Blur: Which NFT Marketplace Is Better? (2026) | degen0x`,
   description: "Detailed comparison of OpenSea vs Blur. Compare fees, features, trading tools, and user experience to find which NFT marketplace is right for you.",
   alternates: { canonical: "/nfts/compare/opensea-vs-blur" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

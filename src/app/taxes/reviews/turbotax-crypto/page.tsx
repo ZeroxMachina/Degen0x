@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `TurboTax Crypto Review (${CURRENT_YEAR}): Built-In Crypto Tax Filing | ${SITE_NAME}`,
+  title: `TurboTax Crypto Review (2026): Built-In Crypto Tax Filing | degen0x`,
   description: "Review of TurboTax's crypto tax features. Understand its capabilities, limitations, and when dedicated crypto tax software is a better choice.",
   alternates: { canonical: "/taxes/reviews/turbotax-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { stakingPlatforms } from "@/data/staking";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Ethereum Staking Platforms of ${CURRENT_YEAR} (Compared)`,
+  title: `Best Ethereum Staking Platforms of 2026 (Compared)`,
   description: `Compare the best Ethereum staking platforms in ${CURRENT_YEAR}. Liquid staking with Lido, Rocket Pool, StakeWise, and centralized options from Coinbase and Kraken.`,
   alternates: { canonical: "/investing/staking/best/ethereum" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

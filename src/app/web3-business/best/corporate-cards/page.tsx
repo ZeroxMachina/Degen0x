@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Corporate Cards of ${CURRENT_YEAR} - Spend Stablecoins & Crypto | ${SITE_NAME}`,
+  title: `Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto | degen0x`,
   description: `Compare the best crypto corporate cards of ${CURRENT_YEAR}. Spend directly from stablecoin and crypto balances, set team spending limits, and streamline expense management for Web3 teams.`,
   alternates: { canonical: "/web3-business/best/corporate-cards" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { hotWallets } from "@/data/wallets";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Hot Wallets of ${CURRENT_YEAR} - Internet-Connected Wallets | ${SITE_NAME}`,
+  title: `Best Hot Wallets of 2026 - Internet-Connected Wallets | degen0x`,
   description: `The best hot wallets for crypto in ${CURRENT_YEAR}. Compare MetaMask, Phantom, Trust Wallet, and more. Find the most secure internet-connected wallet for trading, DeFi, and NFTs.`,
   alternates: { canonical: "/wallets/best/hot-wallets" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

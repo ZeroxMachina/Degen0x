@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Investments of ${CURRENT_YEAR} - Top Picks & Strategies`,
+  title: `Best Crypto Investments of 2026 - Top Picks & Strategies`,
   description: `Discover the best crypto investments for ${CURRENT_YEAR}. Expert-rated picks across tokens, staking, ETFs, trading platforms, DeFi, and more. Updated ${CURRENT_MONTH}.`,
   alternates: { canonical: "/investing/best" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Mendi Finance Review ${CURRENT_YEAR}: Linea Lending Protocol`,
+  title: `Mendi Finance Review 2026: Linea Lending Protocol`,
   description: "Detailed Mendi Finance review covering Compound-style lending on Linea, yield rates, MENDI token rewards, and the protocol's role in the Linea ecosystem.",
   alternates: { canonical: "/defi-lending/reviews/mendi" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

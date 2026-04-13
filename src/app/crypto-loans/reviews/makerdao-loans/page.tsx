@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `MakerDAO Loans Review (${CURRENT_YEAR}): DAI Vaults Guide | ${SITE_NAME}`,
+  title: `MakerDAO Loans Review (2026): DAI Vaults Guide | degen0x`,
   description: "In-depth MakerDAO review covering DAI borrowing, vault types, stability fees, liquidation mechanics, and the Sky protocol transition.",
   alternates: { canonical: "/crypto-loans/reviews/makerdao-loans" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

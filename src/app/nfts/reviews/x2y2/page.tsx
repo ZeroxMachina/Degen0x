@@ -30,7 +30,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `X2Y2 Review: Low-Fee Ethereum NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
+  title: `X2Y2 Review: Low-Fee Ethereum NFT Marketplace (2026) | degen0x`,
   description:
     "In-depth X2Y2 review covering its ultra-low 0.5% fees, NFT lending, token rewards, bulk trading tools, and whether it's the right marketplace for cost-conscious traders.",
   alternates: { canonical: "/nfts/reviews/x2y2" },

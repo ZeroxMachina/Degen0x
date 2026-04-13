@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Phantom vs Solflare (${CURRENT_YEAR}): Solana Wallet Comparison | ${SITE_NAME}`,
+  title: `Phantom vs Solflare (2026): Solana Wallet Comparison | degen0x`,
   description: `Phantom vs Solflare comparison for ${CURRENT_YEAR}. Compare features, staking, NFT support, multi-chain capabilities, and security for Solana wallets.`,
   alternates: { canonical: "/wallets/compare/phantom-vs-solflare" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

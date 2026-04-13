@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Keystone Wallet Review (${CURRENT_YEAR}) - Air-Gapped QR Code Hardware Wallet | ${SITE_NAME}`,
+  title: `Keystone Wallet Review (2026) - Air-Gapped QR Code Hardware Wallet | degen0x`,
   description: `Complete Keystone wallet review for ${CURRENT_YEAR}. Covers air-gapped QR code signing, touchscreen interface, open-source firmware, and MetaMask integration.`,
   alternates: { canonical: "/wallets/reviews/keystone" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

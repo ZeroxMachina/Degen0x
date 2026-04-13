@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Coldcard Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Coldcard Review (2026) | degen0x`,
   description: "Coldcard hardware wallet review covering air-gapped security, advanced Bitcoin features, seed management, and why it is the gold standard for Bitcoin cold",
   alternates: { canonical: "/wallets/reviews/coldcard" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

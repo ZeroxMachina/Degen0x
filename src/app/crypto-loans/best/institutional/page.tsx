@@ -8,7 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
-export const metadata: Metadata = { title: `Best Institutional Crypto Lending ${CURRENT_YEAR}`, description: `Compare institutional crypto lending platforms in ${CURRENT_YEAR}. Large-scale borrowing and lending for funds, treasuries, and businesses.` ,
+export const metadata: Metadata = { title: `Best Institutional Crypto Lending 2026`, description: `Compare institutional crypto lending platforms in ${CURRENT_YEAR}. Large-scale borrowing and lending for funds, treasuries, and businesses.` ,
   alternates: { canonical: "/crypto-loans/best/institutional" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};
@@ -49,7 +49,10 @@ export default function InstitutionalPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Best", href: "/crypto-loans/best" }, { label: "Institutional", href: "/crypto-loans/best/institutional" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Institutional Crypto Lending ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Institutional crypto lending serves funds, exchanges, and treasuries with $100M+ loans at 1–3% rates. Custody-grade security and legal frameworks now compete with traditional lending for enterprise capital deployment.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">Institutional crypto lending serves funds, corporate treasuries, market makers, and other large-scale participants who need professional lending infrastructure with compliance, security, and customized terms. We compared the top platforms offering institutional-grade crypto borrowing and lending services.</p>
       </div>

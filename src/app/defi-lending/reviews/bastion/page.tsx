@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Bastion Protocol Review ${CURRENT_YEAR}: NEAR Lending & Borrowing`,
+  title: `Bastion Protocol Review 2026: NEAR Lending & Borrowing`,
   description:
     "In-depth Bastion Protocol review covering lending markets on Aurora/NEAR, yield rates, stableswap features, and protocol risk analysis.",
   alternates: { canonical: "/defi-lending/reviews/bastion" },

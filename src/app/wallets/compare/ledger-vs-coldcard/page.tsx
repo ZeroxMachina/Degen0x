@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Ledger vs Coldcard (${CURRENT_YEAR}): Bitcoin Hardware Wallet Comparison | ${SITE_NAME}`,
+  title: `Ledger vs Coldcard (2026): Bitcoin Hardware Wallet Comparison | degen0x`,
   description: `Ledger vs Coldcard comparison for ${CURRENT_YEAR}. Compare security, Bitcoin features, air-gapped signing, and multi-coin support for hardware wallets.`,
   alternates: { canonical: "/wallets/compare/ledger-vs-coldcard" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

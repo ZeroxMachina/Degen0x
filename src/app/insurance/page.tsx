@@ -5,7 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Crypto Insurance - Compare DeFi & Smart Contract Coverage ${CURRENT_YEAR}`,
+  title: `Crypto Insurance - Compare DeFi & Smart Contract Coverage 2026`,
   description: "Compare the best crypto insurance protocols. Protect your assets with smart contract cover, exchange insurance, DeFi protocol coverage, and stablecoin depeg",
   alternates: { canonical: "/insurance" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

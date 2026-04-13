@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Sonne Finance Review ${CURRENT_YEAR}: Optimism & Base Lending`,
+  title: `Sonne Finance Review 2026: Optimism & Base Lending`,
   description: "Complete Sonne Finance review covering Compound-style lending on Optimism and Base, yield rates, SONNE token incentives, and protocol risk analysis.",
   alternates: { canonical: "/defi-lending/reviews/sonne" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

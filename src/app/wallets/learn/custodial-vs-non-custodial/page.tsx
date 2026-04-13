@@ -5,7 +5,7 @@ import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Custodial vs Non-Custodial Wallets (${CURRENT_YEAR}) - Key Differences | ${SITE_NAME}`,
+  title: `Custodial vs Non-Custodial Wallets (2026) - Key Differences | degen0x`,
   description: `Custodial vs non-custodial wallets explained for ${CURRENT_YEAR}. Learn who holds your keys, the security trade-offs, and which type is right for you.`,
   alternates: { canonical: "/wallets/learn/custodial-vs-non-custodial" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

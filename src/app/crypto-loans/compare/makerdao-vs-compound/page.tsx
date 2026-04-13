@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
-export const metadata: Metadata = { title: `MakerDAO vs Compound ${CURRENT_YEAR}: DeFi Borrowing Compared`, description: `Compare MakerDAO vs Compound for crypto borrowing in ${CURRENT_YEAR}. Analyze DAI minting vs pool-based borrowing, rates, collateral, and more.` ,
+export const metadata: Metadata = { title: `MakerDAO vs Compound 2026: DeFi Borrowing Compared`, description: `Compare MakerDAO vs Compound for crypto borrowing in ${CURRENT_YEAR}. Analyze DAI minting vs pool-based borrowing, rates, collateral, and more.` ,
   alternates: { canonical: "/crypto-loans/compare/makerdao-vs-compound" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

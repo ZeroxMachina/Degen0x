@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `7 Best Crypto Debit Cards of ${CURRENT_YEAR} (Ranked & Compared) | ${SITE_NAME}`,
+  title: `7 Best Crypto Debit Cards of 2026 (Ranked & Compared) | degen0x`,
   description: `Compare the best crypto debit cards of ${CURRENT_YEAR}. We tested Crypto.com Visa, Coinbase Card, Binance Card, BitPay, Fold, and more. Find the right card for your needs.`,
   alternates: { canonical: "/spending/best/debit-cards" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

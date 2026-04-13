@@ -7,7 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
-export const metadata: Metadata = { title: `Bitcoin vs S&P 500 (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Compare Bitcoin and S&P 500 index investment performance, risk, volatility, and portfolio allocation strategies for ${CURRENT_YEAR}.` ,
+export const metadata: Metadata = { title: `Bitcoin vs S&P 500 (2026) | degen0x`, description: `Compare Bitcoin and S&P 500 index investment performance, risk, volatility, and portfolio allocation strategies for ${CURRENT_YEAR}.` ,
   alternates: { canonical: "/investing/compare/bitcoin-vs-sp500" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

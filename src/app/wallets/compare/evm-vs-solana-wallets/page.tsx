@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `EVM vs Solana Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `EVM vs Solana Wallets (2026) | degen0x`,
   description: `EVM wallet vs Solana wallet comparison for ${CURRENT_YEAR}. Ecosystem size, fees, transaction speed, DeFi access, and NFT differences explained.`,
   alternates: { canonical: "/wallets/compare/evm-vs-solana-wallets" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

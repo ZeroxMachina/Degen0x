@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Wallets in the UK (${CURRENT_YEAR})`,
+  title: `Best Crypto Wallets in the UK (2026)`,
   description: `Compare the best crypto wallets for UK residents in ${CURRENT_YEAR}. Secure hardware and software wallets with GBP on-ramp support, HMRC-compatible tax exports, and strong security.`,
   keywords: [
     "best crypto wallets UK",

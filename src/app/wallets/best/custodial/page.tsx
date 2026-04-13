@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Custodial Crypto Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Custodial Crypto Wallets (2026) | degen0x`,
   description: `The best custodial crypto wallets for ${CURRENT_YEAR}. Compare managed wallet solutions from Coinbase, Binance, OKX, and Bitget for ease of use and recovery options.`,
   alternates: { canonical: "/wallets/best/custodial" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

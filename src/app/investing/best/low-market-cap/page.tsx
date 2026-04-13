@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best Low Market Cap Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Low Market Cap Crypto (2026) | degen0x`,
   description: `Top low market cap cryptocurrencies with high growth potential in ${CURRENT_YEAR}. Small-cap gems with strong fundamentals and active development.`,
   alternates: { canonical: "/investing/best/low-market-cap" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

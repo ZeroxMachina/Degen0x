@@ -28,7 +28,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Hyperliquid Review (${CURRENT_YEAR}) - On-Chain Perps with CEX Speed | ${SITE_NAME}`,
+  title: `Hyperliquid Review (2026) - On-Chain Perps with CEX Speed | degen0x`,
   description: `Complete Hyperliquid review for ${CURRENT_YEAR}. Covers its custom L1 blockchain, on-chain perpetual futures, zero gas fees, liquidity, and trading experience.`,
   alternates: { canonical: "/exchanges/reviews/hyperliquid" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

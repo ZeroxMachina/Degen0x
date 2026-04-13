@@ -8,7 +8,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 const product = cryptoCards.find((c) => c.slug === "bitpay-card")!;
 
 export const metadata: Metadata = {
-  title: `BitPay Card Review (${CURRENT_YEAR}): Features, Fees & Pros/Cons | degen0x`,
+  title: `BitPay Card Review (2026): Features, Fees & Pros/Cons | degen0x`,
   description: "In-depth BitPay Card review covering crypto-to-fiat conversion, supported cryptocurrencies, fees, and whether this prepaid Mastercard is right for you.",
   alternates: { canonical: "/crypto-cards/reviews/bitpay-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -11,7 +11,7 @@ import { RWA_FAQS } from "@/data/investing";
 import { Product } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Best RWA Crypto Tokens ${CURRENT_YEAR} - Real World Asset Investments`,
+  title: `Best RWA Crypto Tokens 2026 - Real World Asset Investments`,
   description: `Discover the best Real World Asset (RWA) crypto tokens for ${CURRENT_YEAR}. Tokenized treasuries, real estate, and commodities bridging TradFi and DeFi.`,
   alternates: { canonical: "/investing/best/rwa" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `NOWPayments Review (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `NOWPayments Review (2026) | degen0x`,
   description: `NOWPayments review for ${CURRENT_YEAR}. Crypto payment gateway with 200+ coins, merchant tools, subscription billing, and API integration options.`,
   alternates: { canonical: "/spending/reviews/nowpayments" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

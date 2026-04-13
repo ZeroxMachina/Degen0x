@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Savings Accounts ${CURRENT_YEAR} — Highest APY Rates Compared`,
+  title: `Best Crypto Savings Accounts 2026 — Highest APY Rates Compared`,
   description: `Compare the best crypto savings accounts of ${CURRENT_YEAR}. Earn up to 12% APY on Bitcoin, Ethereum, and stablecoins. Expert-reviewed rates, safety scores, and platform comparisons.`,
   alternates: { canonical: "/investing/best/savings-accounts" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

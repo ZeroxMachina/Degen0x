@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Dogecoin (DOGE) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Dogecoin (DOGE) 2026 - Complete Guide`,
   description: `Complete Dogecoin investment guide for ${CURRENT_YEAR}. Learn about DOGE fundamentals, community, meme coin status, risks, and how to buy Dogecoin.`,
   alternates: { canonical: "/investing/crypto/dogecoin" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Bitcoin vs Gold (${CURRENT_YEAR}) - Investment Comparison | ${SITE_NAME}`,
+  title: `Bitcoin vs Gold (2026) - Investment Comparison | degen0x`,
   description: `Bitcoin vs Gold as a store of value in ${CURRENT_YEAR}. Compare scarcity, returns, volatility, and portfolio diversification benefits.`,
   alternates: { canonical: "/investing/compare/bitcoin-vs-gold" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

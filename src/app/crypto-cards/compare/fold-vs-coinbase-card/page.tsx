@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Fold Card vs Coinbase Card: Bitcoin Rewards Showdown (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Fold Card vs Coinbase Card: Bitcoin Rewards Showdown (2026) | degen0x`,
   description:
     "Fold Card vs Coinbase Card compared for Bitcoin rewards, cashback rates, fees, and features. Find out which US crypto debit card earns you the most BTC.",
   alternates: { canonical: "/crypto-cards/compare/fold-vs-coinbase-card" },

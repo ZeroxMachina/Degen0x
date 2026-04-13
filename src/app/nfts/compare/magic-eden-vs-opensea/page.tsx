@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Magic Eden vs OpenSea: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Magic Eden vs OpenSea: Which NFT Marketplace Is Better? (2026) | degen0x`,
   description: "Detailed comparison of Magic Eden vs OpenSea. Compare fees, supported chains, features, and user experience to find which NFT marketplace is right for you.",
   alternates: { canonical: "/nfts/compare/magic-eden-vs-opensea" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

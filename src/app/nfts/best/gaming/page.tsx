@@ -9,7 +9,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best NFT Marketplaces for Gaming in ${CURRENT_YEAR} | degen0x`,
+  title: `Best NFT Marketplaces for Gaming in 2026 | degen0x`,
   description: `Find the best NFT marketplaces for gaming assets in ${CURRENT_YEAR}. Trade in-game items, virtual land, characters, and gaming collectibles on top platforms.`,
   alternates: { canonical: "/nfts/best/gaming" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

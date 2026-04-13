@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Maple Finance Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Maple Finance Review (2026) | degen0x`,
   description: "In-depth Maple Finance review covering institutional lending, credit delegation, pool management, yield opportunities, and lessons from past defaults.",
   alternates: { canonical: "/defi-lending/reviews/maple" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

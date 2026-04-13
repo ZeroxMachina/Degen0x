@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Jupiter vs Uniswap: Best DEX Aggregator? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Jupiter vs Uniswap: Best DEX Aggregator? (2026) | degen0x`,
   description: "Detailed comparison of Jupiter (Solana) vs Uniswap (Ethereum). Compare fees, speed, token selection, and features of the two leading DEXs.",
   alternates: { canonical: "/exchanges/compare/jupiter-vs-uniswap" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

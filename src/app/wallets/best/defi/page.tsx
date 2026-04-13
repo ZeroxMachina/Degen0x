@@ -10,7 +10,7 @@ import { defiWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best DeFi Wallets of ${CURRENT_YEAR} - Top Wallets for DeFi | ${SITE_NAME}`,
+  title: `Best DeFi Wallets of 2026 - Top Wallets for DeFi | degen0x`,
   description: `Compare the best wallets for DeFi in ${CURRENT_YEAR}. MetaMask, Rabby, Phantom, Safe and more. Expert picks for lending, swapping, yield farming, and dApp access.`,
   alternates: { canonical: "/wallets/best/defi" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

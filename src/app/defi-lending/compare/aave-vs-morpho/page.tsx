@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Aave vs Morpho ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
+  title: `Aave vs Morpho 2026: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Aave vs Morpho in ${CURRENT_YEAR}. Compare yields, architecture, risk models, supported assets, and which protocol optimizes your DeFi lending returns.`,
   alternates: { canonical: "/defi-lending/compare/aave-vs-morpho" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

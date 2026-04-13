@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 const product = walletProducts.find((p) => p.slug === "ledger")!;
 
 export const metadata: Metadata = {
-  title: `Ledger Nano X Review (${CURRENT_YEAR}) - Fees, Security & Features | ${SITE_NAME}`,
+  title: `Ledger Nano X Review (2026) - Fees, Security & Features | degen0x`,
   description: `In-depth Ledger Nano X review for ${CURRENT_YEAR}. We tested Ledger's Bluetooth hardware wallet covering security, supported coins, Ledger Live app, fees, and ease of use.`,
   alternates: { canonical: "/wallets/reviews/ledger" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

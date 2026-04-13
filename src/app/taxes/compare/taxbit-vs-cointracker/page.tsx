@@ -9,7 +9,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { TAX_COMPARISON_ITEMS, TAX_COMPARISON_FEATURES } from "@/data/taxes";
 
 export const metadata: Metadata = {
-  title: `TaxBit vs CoinTracker ${CURRENT_YEAR} - Crypto Tax Software Comparison`,
+  title: `TaxBit vs CoinTracker 2026 - Crypto Tax Software Comparison`,
   description: `Compare TaxBit vs CoinTracker for crypto tax reporting. Side-by-side comparison of pricing, features, integrations, and which is right for you.`,
   alternates: { canonical: "/taxes/compare/taxbit-vs-cointracker" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

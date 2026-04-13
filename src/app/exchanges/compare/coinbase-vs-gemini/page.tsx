@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Coinbase vs Gemini: Detailed Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Coinbase vs Gemini: Detailed Comparison (2026) | degen0x`,
   description:
     "Compare Coinbase and Gemini exchanges for US-based traders. Analyze security, fees, regulation, and features to find the best exchange for you.",
   keywords: "Coinbase vs Gemini, US crypto exchange, comparison, security, regulated",

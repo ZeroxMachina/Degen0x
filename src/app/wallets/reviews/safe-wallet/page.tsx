@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Safe (Gnosis Safe) Wallet Review (${CURRENT_YEAR}) - Best Multisig Wallet? | ${SITE_NAME}`,
+  title: `Safe (Gnosis Safe) Wallet Review (2026) - Best Multisig Wallet? | degen0x`,
   description: `Detailed Safe wallet review for ${CURRENT_YEAR}. Covers multi-signature security, DAO treasury management, spending policies, and institutional features.`,
   alternates: { canonical: "/wallets/reviews/safe-wallet" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

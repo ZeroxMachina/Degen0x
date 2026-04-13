@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Overcollateralized vs Undercollateralized DeFi Lending ${CURRENT_YEAR}`,
+  title: `Overcollateralized vs Undercollateralized DeFi Lending 2026`,
   description: `Compare overcollateralized and undercollateralized DeFi lending in ${CURRENT_YEAR}. Understand risk profiles, yields, use cases, and protocol examples.`,
   alternates: { canonical: "/defi-lending/compare/overcollateralized-vs-undercollateralized" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

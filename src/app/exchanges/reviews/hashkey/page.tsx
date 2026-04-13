@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `HashKey Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `HashKey Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth HashKey Exchange review covering this licensed Hong Kong crypto exchange's fees, supported assets, security, and regulatory compliance.",
   alternates: { canonical: "/exchanges/reviews/hashkey" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

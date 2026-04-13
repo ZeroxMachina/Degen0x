@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto IRA Providers ${CURRENT_YEAR} - Tax-Advantaged Bitcoin Retirement`,
+  title: `Best Crypto IRA Providers 2026 - Tax-Advantaged Bitcoin Retirement`,
   description: `Compare the best crypto IRA providers for ${CURRENT_YEAR}. Reviews of Bitcoin IRA, iTrustCapital, Alto Crypto, BitcoinIRA, and more. Tax-advantaged retirement investing in Bitcoin, Ethereum, and 200+ cryptocurrencies.`,
   alternates: { canonical: "/long-term/best/crypto-ira" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

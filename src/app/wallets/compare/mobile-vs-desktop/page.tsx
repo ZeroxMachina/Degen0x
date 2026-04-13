@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Mobile vs Desktop Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Mobile vs Desktop Wallets (2026) | degen0x`,
   description: `Mobile wallet vs desktop wallet comparison for ${CURRENT_YEAR}. Portability, security, features, dApp access, and hardware wallet support compared.`,
   alternates: { canonical: "/wallets/compare/mobile-vs-desktop" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

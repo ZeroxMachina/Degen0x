@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Liquity Review (${CURRENT_YEAR}): 0% Interest ETH Loans | ${SITE_NAME}`,
+  title: `Liquity Review (2026): 0% Interest ETH Loans | degen0x`,
   description: "In-depth Liquity review covering 0% interest ETH-backed loans, LUSD stablecoin, stability pool, and how Liquity's immutable protocol works.",
   alternates: { canonical: "/crypto-loans/reviews/liquity" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

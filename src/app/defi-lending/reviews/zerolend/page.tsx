@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `ZeroLend Review ${CURRENT_YEAR}: Multi-Chain Lending on zkSync & More`,
+  title: `ZeroLend Review 2026: Multi-Chain Lending on zkSync & More`,
   description: "Complete ZeroLend review covering multi-chain lending on zkSync, Linea, Blast, and other L2s, with yield analysis, fees, and risk assessment.",
   alternates: { canonical: "/defi-lending/reviews/zerolend" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

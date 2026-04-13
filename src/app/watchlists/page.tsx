@@ -5,7 +5,7 @@ import SavedWatchlists from "@/components/SavedWatchlists";
 import { SITE_NAME } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `My Watchlists — ${SITE_NAME}`,
+  title: `My Watchlists — degen0x`,
   description: "Create and manage custom crypto watchlists. Track prices, 24h changes, market caps, and sparkline charts for your favorite tokens.",
   keywords: ["crypto watchlist", "token tracker", "price alerts", "portfolio tracker", "crypto dashboard"],
   alternates: { canonical: "/watchlists" },

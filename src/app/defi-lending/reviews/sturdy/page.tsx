@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Sturdy Finance Review ${CURRENT_YEAR}: Isolated Lending Vaults`,
+  title: `Sturdy Finance Review 2026: Isolated Lending Vaults`,
   description: "Complete Sturdy Finance review covering isolated lending pairs, yield aggregation, vault strategies, and the protocol's V2 redesign after its exploit.",
   alternates: { canonical: "/defi-lending/reviews/sturdy" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

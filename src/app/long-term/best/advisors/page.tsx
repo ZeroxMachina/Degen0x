@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Financial Advisors ${CURRENT_YEAR} - Expert Wealth Management`,
+  title: `Best Crypto Financial Advisors 2026 - Expert Wealth Management`,
   description: `Find the best financial advisors specializing in cryptocurrency in ${CURRENT_YEAR}. Compare crypto-savvy RIAs, robo-advisors, and wealth managers for portfolio allocation, tax optimization, and retirement planning with digital assets.`,
   alternates: { canonical: "/long-term/best/advisors" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

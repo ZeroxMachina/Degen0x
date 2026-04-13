@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Staking Platforms for Beginners in ${CURRENT_YEAR}`,
+  title: `Best Staking Platforms for Beginners in 2026`,
   description: `Find the easiest crypto staking platforms for beginners in ${CURRENT_YEAR}. Simple staking with no technical knowledge required. Compare Coinbase, Lido, and more.`,
   alternates: { canonical: "/investing/staking/best/beginners" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

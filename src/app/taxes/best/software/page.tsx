@@ -11,7 +11,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Tax Software (${CURRENT_MONTH} ${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto Tax Software (April 2026) | degen0x`,
   description: `Compare the best crypto tax software of ${CURRENT_YEAR}. Expert reviews of Koinly, CoinTracker, TaxBit, CryptoTaxCalculator, and TokenTax with pricing, features, and DeFi support.`,
   alternates: { canonical: "/taxes/best/software" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

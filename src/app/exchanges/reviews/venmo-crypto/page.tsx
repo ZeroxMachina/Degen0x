@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Venmo Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Venmo Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Venmo Crypto review covering fees, supported coins, transfer options, security, and whether Venmo is a good way to buy cryptocurrency.",
   alternates: { canonical: "/exchanges/reviews/venmo-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

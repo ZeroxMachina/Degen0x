@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Wirex vs Plutus: Best European Crypto Card (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Wirex vs Plutus: Best European Crypto Card (2026) | degen0x`,
   description: "Wirex Card vs Plutus Card compared for European users. Cashback rates, token staking, subscription plans, perks, and which card is best for UK and EEA",
   alternates: { canonical: "/crypto-cards/compare/wirex-vs-plutus" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

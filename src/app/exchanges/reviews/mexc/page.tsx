@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MEXC Review (${CURRENT_YEAR}) | degen0x`,
+  title: `MEXC Review (2026) | degen0x`,
   description:
     "In-depth MEXC exchange review covering fees, features, security, and supported assets. Is MEXC the right exchange for you?",
   alternates: { canonical: "/exchanges/reviews/mexc" },

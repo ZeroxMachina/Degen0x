@@ -9,7 +9,7 @@ import { stakingPlatforms } from "@/data/staking";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Highest Staking APY Platforms of ${CURRENT_YEAR} (Best Yields)`,
+  title: `Highest Staking APY Platforms of 2026 (Best Yields)`,
   description: `Find the highest staking APY platforms in ${CURRENT_YEAR}. Compare yields across Ethereum, Solana, and restaking protocols to maximize your staking returns.`,
   alternates: { canonical: "/investing/staking/best/highest-apy" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

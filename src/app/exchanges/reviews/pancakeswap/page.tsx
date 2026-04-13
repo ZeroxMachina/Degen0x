@@ -29,7 +29,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `PancakeSwap Review (${CURRENT_YEAR}) - BNB Chain's Biggest DEX | ${SITE_NAME}`,
+  title: "PancakeSwap Review (2026) - BNB Chains Biggest DEX | ${SITE_NAME}",
   description: `Complete PancakeSwap review for ${CURRENT_YEAR}. Covers BNB Chain trading, yield farming, V3 concentrated liquidity, CAKE token, and multi-chain expansion.`,
   alternates: { canonical: "/exchanges/reviews/pancakeswap" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

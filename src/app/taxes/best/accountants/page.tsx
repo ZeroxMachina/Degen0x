@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto CPAs & Tax Accountants (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best Crypto CPAs & Tax Accountants (2026) | degen0x`,
   description: `Find the best crypto-specialized CPAs and tax accountants for ${CURRENT_YEAR}. Expert accountants who understand DeFi, NFTs, staking, and complex crypto tax situations.`,
   alternates: { canonical: "/taxes/best/accountants" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

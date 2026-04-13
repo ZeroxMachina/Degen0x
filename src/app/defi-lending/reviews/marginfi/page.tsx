@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `MarginFi Review ${CURRENT_YEAR}: Yield, Fees & Pros/Cons`,
+  title: `MarginFi Review 2026: Yield, Fees & Pros/Cons`,
   description:
     "Comprehensive MarginFi review covering lending rates, borrowing features, points system, and whether this Solana lending protocol fits your DeFi strategy.",
   alternates: { canonical: "/defi-lending/reviews/marginfi" },

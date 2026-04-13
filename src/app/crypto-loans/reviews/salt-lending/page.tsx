@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `SALT Lending Review (${CURRENT_YEAR}) | degen0x`,
+  title: `SALT Lending Review (2026) | degen0x`,
   description: "In-depth SALT Lending review covering loan terms, supported collateral, rates, security, and whether SALT is right for your crypto borrowing needs.",
   alternates: { canonical: "/crypto-loans/reviews/salt-lending" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Wallet Protection ${CURRENT_YEAR} - Insurance for Wallet Security`,
+  title: `Best Crypto Wallet Protection 2026 - Insurance for Wallet Security`,
   description:
     "Compare the best crypto wallet protection insurance. Coverage against wallet hacks, phishing attacks, and private key compromise from leading providers.",
   alternates: { canonical: "/insurance/best/wallet-protection" },

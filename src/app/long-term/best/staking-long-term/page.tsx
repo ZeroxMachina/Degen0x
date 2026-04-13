@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Staking for Long-Term Investors ${CURRENT_YEAR}`,
+  title: `Best Staking for Long-Term Investors 2026`,
   description: "Compare the best staking platforms and protocols for long-term crypto investors. Earn passive income while holding your assets securely.",
   alternates: { canonical: "/long-term/best/staking-long-term" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -87,7 +87,10 @@ export default function StakingLongTermPage() {
       <AffiliateDisclosure />
       <div className="max-w-4xl mb-12">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Staking for Long-Term Investors ({CURRENT_MONTH} {CURRENT_YEAR})</h1>
-        <p className="text-xl text-[var(--color-text-secondary)] mb-6">Staking turns idle crypto holdings into yield-generating assets. For long-term investors, staking provides a way to earn passive income on tokens you plan to hold for years, with the power of compounding working in your favor over time.</p>
+        
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Long-term staking on Ethereum (3–4% APY), Solana (5–8%), and Polygon (5–10%) compounds to 3–8% annual wealth generation with minimal effort. Staking rewards exceed inflation on all major PoS networks, making long-term holders net positive.
+        </p><p className="text-xl text-[var(--color-text-secondary)] mb-6">Staking turns idle crypto holdings into yield-generating assets. For long-term investors, staking provides a way to earn passive income on tokens you plan to hold for years, with the power of compounding working in your favor over time.</p>
         <p className="text-[var(--color-text-secondary)]">We compared staking platforms and protocols on yield rates, fee structures, liquidity, security, and suitability for multi-year holding periods. The best options let you earn rewards while maintaining flexibility and security.</p>
       </div>
       <div className="space-y-6 mb-12">{products.map((product, index) => (<ProductCard key={product.slug} product={product} rank={index + 1} categorySlug="long-term" />))}</div>

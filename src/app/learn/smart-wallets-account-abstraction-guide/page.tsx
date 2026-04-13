@@ -27,7 +27,7 @@ const canonicalUrl = `${SITE_URL}/learn/smart-wallets-account-abstraction-guide`
 const ogImage = `${SITE_URL}/api/og?title=Smart+Wallets+Guide&category=Learn&type=learn`;
 
 export const metadata: Metadata = {
-  title: `${title} | degen0x Learn`,
+  title: `| degen0x Learn`,
   description,
   keywords,
   openGraph: {

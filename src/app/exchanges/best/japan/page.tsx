@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Exchanges in Japan (${CURRENT_YEAR})`,
+  title: `Best Crypto Exchanges in Japan (2026)`,
   description: `Compare the best crypto exchanges for Japanese residents in ${CURRENT_YEAR}. JFSA-licensed platforms with JPY deposits, cold wallet custody requirements, and investor protection.`,
   keywords: [
     "best crypto exchanges Japan",

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Crypto.com vs Binance (${CURRENT_YEAR}): Which Exchange Should You Use? | ${SITE_NAME}`,
+  title: `Crypto.com vs Binance (2026): Which Exchange Should You Use? | degen0x`,
   description: `Crypto.com vs Binance comparison for ${CURRENT_YEAR}. Compare trading fees, card rewards, staking, coin selection, and ecosystem features.`,
   alternates: { canonical: "/exchanges/compare/crypto-com-vs-binance" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

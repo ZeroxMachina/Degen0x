@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `OKX vs Coinbase (${CURRENT_YEAR}): Which Exchange Is Better? | ${SITE_NAME}`,
+  title: `OKX vs Coinbase (2026): Which Exchange Is Better? | degen0x`,
   description: `OKX vs Coinbase comparison for ${CURRENT_YEAR}. Compare features, fees, security, derivatives access, and Web3 integration to choose the best exchange.`,
   alternates: { canonical: "/exchanges/okx-vs-coinbase" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

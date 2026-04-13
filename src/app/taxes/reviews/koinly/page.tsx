@@ -8,7 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Koinly Review (${CURRENT_YEAR}) - Fees, Features, Pros & Cons | ${SITE_NAME}`,
+  title: `Koinly Review (2026) - Fees, Features, Pros & Cons | degen0x`,
   description: `In-depth Koinly review for ${CURRENT_YEAR}. We tested Koinly's crypto tax software covering pricing, exchange integrations, DeFi support, accuracy, and ease of use.`,
   alternates: { canonical: "/taxes/reviews/koinly" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

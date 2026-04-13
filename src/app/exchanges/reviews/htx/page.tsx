@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `HTX Review (${CURRENT_YEAR}) | degen0x`,
+  title: `HTX Review (2026) | degen0x`,
   description:
     "Comprehensive HTX (formerly Huobi) exchange review. Fees, security, features, and trading experience analyzed in detail.",
   alternates: { canonical: "/exchanges/reviews/htx" },

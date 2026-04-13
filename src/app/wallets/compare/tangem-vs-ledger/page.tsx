@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Tangem vs Ledger (${CURRENT_YEAR}) - NFC Cards vs USB Hardware Wallet | ${SITE_NAME}`,
+  title: `Tangem vs Ledger (2026) - NFC Cards vs USB Hardware Wallet | degen0x`,
   description: `Tangem vs Ledger hardware wallet comparison for ${CURRENT_YEAR}. NFC cards vs USB devices, security models, ease of use, and coin support compared.`,
   alternates: { canonical: "/wallets/compare/tangem-vs-ledger" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

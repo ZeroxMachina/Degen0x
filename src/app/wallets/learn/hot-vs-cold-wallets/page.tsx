@@ -5,7 +5,7 @@ import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Hot vs Cold Wallets Explained (${CURRENT_YEAR}) - Key Differences | ${SITE_NAME}`,
+  title: `Hot vs Cold Wallets Explained (2026) - Key Differences | degen0x`,
   description: `Hot wallet vs cold wallet: understand the key differences in ${CURRENT_YEAR}. Security, convenience, cost, and which type you need for your crypto strategy.`,
   alternates: { canonical: "/wallets/learn/hot-vs-cold-wallets" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

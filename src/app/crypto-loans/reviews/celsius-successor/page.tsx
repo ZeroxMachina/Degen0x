@@ -17,7 +17,7 @@ const product = {
 };
 
 export const metadata: Metadata = {
-  title: `Celsius Successor Analysis (${CURRENT_YEAR}): What Happened & Lessons | ${SITE_NAME}`,
+  title: `Celsius Successor Analysis (2026): What Happened & Lessons | degen0x`,
   description: "Analysis of Celsius Network's collapse, successor entities, creditor recovery, and lessons learned for crypto lending safety.",
   alternates: { canonical: "/crypto-loans/reviews/celsius-successor" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

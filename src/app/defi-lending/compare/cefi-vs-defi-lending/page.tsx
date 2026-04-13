@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `CeFi vs DeFi Lending ${CURRENT_YEAR}: Complete Comparison`,
+  title: `CeFi vs DeFi Lending 2026: Complete Comparison`,
   description: `Compare centralized vs decentralized lending in ${CURRENT_YEAR}. Analyze yields, security, custody, KYC requirements, and which approach suits your needs.`,
   alternates: { canonical: "/defi-lending/compare/cefi-vs-defi-lending" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

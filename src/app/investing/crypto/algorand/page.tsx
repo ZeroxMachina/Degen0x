@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Algorand (ALGO) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Algorand (ALGO) 2026 - Complete Guide`,
   description: `Complete Algorand investment guide for ${CURRENT_YEAR}. Learn about ALGO fundamentals, Pure Proof of Stake, institutional adoption, risks, and how to buy Algorand.`,
   alternates: { canonical: "/investing/crypto/algorand" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

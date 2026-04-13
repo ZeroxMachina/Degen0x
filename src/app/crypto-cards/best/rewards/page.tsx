@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Rewards Cards of ${CURRENT_YEAR} - Maximize Your Earnings`,
+  title: `Best Crypto Rewards Cards of 2026 - Maximize Your Earnings`,
   description: `Compare the best crypto rewards cards of ${CURRENT_YEAR}. Earn Bitcoin, ETH, and more on every purchase. We tested reward programs, perks, and earning potential.`,
   alternates: { canonical: "/crypto-cards/best/rewards" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

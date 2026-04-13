@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Wasabi Wallet Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Wasabi Wallet Review (2026) | degen0x`,
   description: "Wasabi Wallet review covering CoinJoin privacy features, Tor integration, coin control, and Bitcoin privacy best practices.",
   alternates: { canonical: "/wallets/reviews/wasabi" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

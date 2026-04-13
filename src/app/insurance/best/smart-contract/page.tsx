@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Smart Contract Insurance ${CURRENT_YEAR} - Protect Against Exploits`,
+  title: `Best Smart Contract Insurance 2026 - Protect Against Exploits`,
   description: "Compare the best smart contract insurance options. Protect your DeFi positions against exploits, bugs, and vulnerabilities with coverage from top insurance",
   alternates: { canonical: "/insurance/best/smart-contract" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

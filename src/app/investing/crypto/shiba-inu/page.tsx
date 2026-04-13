@@ -7,7 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `How to Invest in Shiba Inu (SHIB) ${CURRENT_YEAR} - Complete Guide`,
+  title: `How to Invest in Shiba Inu (SHIB) 2026 - Complete Guide`,
   description: `Complete Shiba Inu investment guide for ${CURRENT_YEAR}. Learn about SHIB fundamentals, Shibarium L2, token burns, risks, and how to buy Shiba Inu.`,
   alternates: { canonical: "/investing/crypto/shiba-inu" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

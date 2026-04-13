@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Ledger vs Trezor (${CURRENT_YEAR}) - Hardware Wallet Comparison | ${SITE_NAME}`,
+  title: `Ledger vs Trezor (2026) - Hardware Wallet Comparison | degen0x`,
   description: `Ledger vs Trezor detailed comparison for ${CURRENT_YEAR}. Security, supported coins, open-source, pricing, and features compared side by side.`,
   alternates: { canonical: "/wallets/compare/ledger-vs-trezor" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

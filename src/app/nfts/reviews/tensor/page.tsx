@@ -30,7 +30,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Tensor Review: Professional Solana NFT Trading (${CURRENT_YEAR}) | degen0x`,
+  title: `Tensor Review: Professional Solana NFT Trading (2026) | degen0x`,
   description:
     "In-depth Tensor review covering Solana NFT trading tools, TNSR rewards, compressed NFT support, advanced analytics, and whether it's the right platform for you.",
   alternates: { canonical: "/nfts/reviews/tensor" },

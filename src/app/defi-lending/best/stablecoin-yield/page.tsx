@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Stablecoin Yield Platforms ${CURRENT_YEAR} - Earn on USDC, USDT, DAI`,
+  title: `Best Stablecoin Yield Platforms 2026 - Earn on USDC, USDT, DAI`,
   description: `Compare the best stablecoin yield opportunities in ${CURRENT_YEAR}. Earn up to 15% APY on USDC, USDT, DAI, and other stablecoins through DeFi lending protocols.`,
   alternates: { canonical: "/defi-lending/best/stablecoin-yield" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -111,7 +111,10 @@ export default function StablecoinYieldPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Stablecoin Yield", href: "/defi-lending/best/stablecoin-yield" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Stablecoin Yield Platforms ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Stablecoin lending yields 4–8% APY across Aave, Compound, and Curve, making USDC/USDT deposits the largest lending category by volume. $12B+ in stablecoins generate $1B+ in annual lending revenue.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Stablecoin yield is one of the most popular entry points into DeFi. By depositing stablecoins like USDC, USDT, or DAI into lending protocols or liquidity pools, you can earn significantly higher interest rates than traditional savings accounts while avoiding the price volatility of other crypto assets. We have tested and compared the top platforms to help you find the best stablecoin yields available today.

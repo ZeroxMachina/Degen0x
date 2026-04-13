@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `BitBox02 Review (${CURRENT_YEAR}) | degen0x`,
+  title: `BitBox02 Review (2026) | degen0x`,
   description: "BitBox02 hardware wallet review covering Swiss security, open-source firmware, minimalist design, and Bitcoin-only edition features.",
   alternates: { canonical: "/wallets/reviews/bitbox" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

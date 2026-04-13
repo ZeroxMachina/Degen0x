@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `ELLIPAL Review (${CURRENT_YEAR}) | degen0x`,
+  title: `ELLIPAL Review (2026) | degen0x`,
   description: "ELLIPAL Titan hardware wallet review covering air-gapped QR code security, large touchscreen, multi-chain support, and anti-tamper design.",
   alternates: { canonical: "/wallets/reviews/ellipal" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

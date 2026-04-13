@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Mycelium Wallet Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Mycelium Wallet Review (2026) | degen0x`,
   description: "Detailed Mycelium wallet review covering Bitcoin features, local trader marketplace, hardware wallet support, and privacy features.",
   alternates: { canonical: "/wallets/reviews/mycelium" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

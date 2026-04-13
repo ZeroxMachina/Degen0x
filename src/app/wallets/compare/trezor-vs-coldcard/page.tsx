@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Trezor vs Coldcard (${CURRENT_YEAR}): Open-Source Wallet Showdown | ${SITE_NAME}`,
+  title: `Trezor vs Coldcard (2026): Open-Source Wallet Showdown | degen0x`,
   description: `Trezor vs Coldcard comparison for ${CURRENT_YEAR}. Two open-source hardware wallets compared on Bitcoin features, security, multi-coin support, and price.`,
   alternates: { canonical: "/wallets/compare/trezor-vs-coldcard" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

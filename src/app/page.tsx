@@ -5,7 +5,7 @@ import { SITE_NAME } from "@/lib/constants";
 import HomeContent from "@/components/HomeContent";
 
 export const metadata: Metadata = {
-  title: `${SITE_NAME} - Onboarding the Next 1 Billion to Web3`,
+  title: `degen0x - Onboarding the Next 1 Billion to Web3`,
   description: "The crypto world is powerful but intimidating. Free tools, honest reviews, and clear explanations. No account needed. No paywall. Ever.",
   alternates: { canonical: "/" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

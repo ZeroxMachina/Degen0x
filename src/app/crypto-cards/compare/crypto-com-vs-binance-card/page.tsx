@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Crypto.com vs Binance Card: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Crypto.com vs Binance Card: Which Is Better? (2026) | degen0x`,
   description: "Crypto.com Visa vs Binance Card compared. Cashback rates, staking requirements, availability, fees, and perks analyzed to find the best crypto debit card for",
   alternates: { canonical: "/crypto-cards/compare/crypto-com-vs-binance-card" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

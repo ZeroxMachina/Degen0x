@@ -9,7 +9,7 @@ import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best NFT Marketplaces for Photography in ${CURRENT_YEAR} | degen0x`,
+  title: `Best NFT Marketplaces for Photography in 2026 | degen0x`,
   description: `Find the best NFT marketplaces for photographers in ${CURRENT_YEAR}. Sell and collect photography NFTs on curated platforms with gallery-quality presentation.`,
   alternates: { canonical: "/nfts/best/photography" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

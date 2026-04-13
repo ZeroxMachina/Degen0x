@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Prepaid Cards of ${CURRENT_YEAR} - Load & Spend`,
+  title: `Best Crypto Prepaid Cards of 2026 - Load & Spend`,
   description: `Compare the best crypto prepaid cards of ${CURRENT_YEAR}. Load your card with Bitcoin or other crypto and spend anywhere. No credit check, no bank account needed.`,
   alternates: { canonical: "/crypto-cards/best/prepaid" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

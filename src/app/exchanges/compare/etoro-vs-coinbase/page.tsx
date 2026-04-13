@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `eToro vs Coinbase: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `eToro vs Coinbase: Which Is Better? (2026) | degen0x`,
   description: "Detailed comparison of eToro vs Coinbase. Compare fees, copy trading, coin selection, and features to find which crypto platform is right for you.",
   alternates: { canonical: "/exchanges/compare/etoro-vs-coinbase" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

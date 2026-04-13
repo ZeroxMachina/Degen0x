@@ -8,7 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `TokenTax vs CoinLedger ${CURRENT_YEAR}: Which Crypto Tax Software Is Better?`,
+  title: `TokenTax vs CoinLedger 2026: Which Crypto Tax Software Is Better?`,
   description: `Compare TokenTax vs CoinLedger for crypto tax reporting. Pricing, features, DeFi support, full-service filing, and beginner-friendliness compared in ${CURRENT_YEAR}.`,
   alternates: { canonical: "/taxes/compare/tokentax-vs-coinledger" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -8,7 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Spot vs Derivatives Trading: Full Comparison (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Spot vs Derivatives Trading: Full Comparison (2026) | degen0x`,
   description: "Complete comparison of spot trading vs derivatives (futures, options, perpetuals) in crypto. Understand risks, fees, leverage, and which suits your strategy.",
   alternates: { canonical: "/exchanges/compare/spot-vs-derivatives" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

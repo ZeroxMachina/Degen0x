@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Radiant Capital Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Radiant Capital Review (2026) | degen0x`,
   description: "In-depth Radiant Capital review covering cross-chain lending, LayerZero integration, dLP tokenomics, security concerns, and yield opportunities.",
   alternates: { canonical: "/defi-lending/reviews/radiant" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -9,7 +9,7 @@ import { DEFI_LENDING_PRODUCTS, DEFI_FAQS } from "@/data/defi-lending";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `DeFi Lending - Compare Protocols, Earn Yield & Borrow Crypto ${CURRENT_YEAR}`,
+  title: `DeFi Lending - Compare Protocols, Earn Yield & Borrow Crypto 2026`,
   description:
     "Compare the best DeFi lending protocols. Earn yield on your crypto, borrow against your assets, and explore liquidity pools. Expert reviews, guides, and tools.",
   alternates: { canonical: "/defi-lending" },

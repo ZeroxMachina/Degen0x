@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Cryptocurrencies for Long-Term Holding ${CURRENT_YEAR} - Top HODL Picks`,
+  title: `Best Cryptocurrencies for Long-Term Holding 2026 - Top HODL Picks`,
   description: `Discover the best cryptocurrencies to hold long-term in ${CURRENT_YEAR}. Expert analysis of Bitcoin, Ethereum, and top altcoins with strong fundamentals for multi-year holding strategies.`,
   alternates: { canonical: "/long-term/best/hodl-coins" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Nexo Card vs Crypto.com Visa: Credit Line vs Prepaid (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Nexo Card vs Crypto.com Visa: Credit Line vs Prepaid (2026) | degen0x`,
   description:
     "Nexo Card vs Crypto.com Visa compared. Credit-line spending vs prepaid debit, cashback rates, staking, global availability, and which card is best for HODLers.",
   alternates: { canonical: "/crypto-cards/compare/nexo-vs-crypto-com" },

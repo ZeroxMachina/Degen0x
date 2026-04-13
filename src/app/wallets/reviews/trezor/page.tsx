@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 const product = walletProducts.find((p) => p.slug === "trezor")!;
 
 export const metadata: Metadata = {
-  title: `Trezor Review (${CURRENT_YEAR}) - Open-Source Hardware Wallet | ${SITE_NAME}`,
+  title: `Trezor Review (2026) - Open-Source Hardware Wallet | degen0x`,
   description: `Complete Trezor review for ${CURRENT_YEAR}. Covers the Model T and Safe 3, including open-source security, Shamir Backup, Trezor Suite, and pricing.`,
   alternates: { canonical: "/wallets/reviews/trezor" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

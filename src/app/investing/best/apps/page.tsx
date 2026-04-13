@@ -11,7 +11,7 @@ import { CRYPTO_APPS } from "@/data/investing";
 import { FAQ } from "@/lib/types";
 
 export const metadata: Metadata = {
-  title: `Best Crypto Apps ${CURRENT_YEAR} - Top Mobile Investment Apps`,
+  title: `Best Crypto Apps 2026 - Top Mobile Investment Apps`,
   description: `Compare the best crypto apps for ${CURRENT_YEAR}. Expert reviews of mobile crypto trading, portfolio tracking, and wallet apps for iOS and Android.`,
   alternates: { canonical: "/investing/best/apps" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

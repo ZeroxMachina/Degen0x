@@ -19,7 +19,7 @@ const product: Product = {
 };
 
 export const metadata: Metadata = {
-  title: `Fraxlend Review (${CURRENT_YEAR}) | degen0x`,
+  title: `Fraxlend Review (2026) | degen0x`,
   description: "In-depth Fraxlend review covering isolated pair lending, Frax ecosystem integration, dynamic interest rates, frxETH collateral, and yield opportunities.",
   alternates: { canonical: "/defi-lending/reviews/fraxlend" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

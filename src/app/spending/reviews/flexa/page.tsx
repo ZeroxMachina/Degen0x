@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Flexa Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Flexa Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Flexa review covering the AMP-powered payment network, merchant integration, supported wallets, instant crypto payments at retail, and the Flexa",
   alternates: { canonical: "/spending/reviews/flexa" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

@@ -12,11 +12,11 @@ import { getAllPosts, getFeaturedPosts, getCategoryMeta, type BlogCategory } fro
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Blog — Crypto News, Analysis & Guides | ${SITE_NAME}`,
+  title: `Blog — Crypto News, Analysis & Guides | degen0x`,
   description:
     "degen0x blog: Crypto market analysis, DeFi protocol updates, regulation news, token launches, advanced trading strategies, and trader insights.",
   openGraph: {
-    title: `Blog — Crypto News & Analysis | ${SITE_NAME}`,
+    title: `Blog — Crypto News & Analysis | degen0x`,
     description: "Market analysis, DeFi updates, regulation news, and expert guides.",
     url: `${SITE_URL}/blog`,
     images: [{ url: `${SITE_URL}/api/og?title=Blog+-+Crypto+News+%26+Analysis&category=Blog&type=page` }],

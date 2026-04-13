@@ -10,7 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Stablecoin Depeg Cover ${CURRENT_YEAR} - Protect Against Depegging`,
+  title: `Best Stablecoin Depeg Cover 2026 - Protect Against Depegging`,
   description: "Compare the best stablecoin depeg insurance options. Protect your stablecoin holdings against depegging events with coverage from leading crypto insurance",
   alternates: { canonical: "/insurance/best/depeg-cover" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

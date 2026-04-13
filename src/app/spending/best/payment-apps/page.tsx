@@ -9,7 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 
 export const metadata: Metadata = {
-  title: `Best Crypto Payment Apps of ${CURRENT_YEAR} - Pay With Crypto Anywhere | ${SITE_NAME}`,
+  title: `Best Crypto Payment Apps of 2026 - Pay With Crypto Anywhere | degen0x`,
   description: `Compare the best crypto payment apps of ${CURRENT_YEAR}. BitPay, CoinGate, Strike, and more. Send, receive, and spend crypto from your phone.`,
   alternates: { canonical: "/spending/best/payment-apps" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

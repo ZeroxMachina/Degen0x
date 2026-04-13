@@ -5,7 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Lolli Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
+  title: `Lolli Review 2026: Fees, Features, Pros & Cons`,
   description:
     "Complete Lolli review covering Bitcoin cashback rewards, supported retailers, browser extension, mobile app, and how to earn free Bitcoin while shopping online.",
   alternates: { canonical: "/spending/reviews/lolli" },

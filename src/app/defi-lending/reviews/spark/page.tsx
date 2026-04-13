@@ -8,7 +8,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "spark")!;
 
 export const metadata: Metadata = {
-  title: `Spark Protocol Review (${CURRENT_YEAR}): MakerDAO's Lending Platform | degen0x`,
+  title: "Spark Protocol Review (2026): MakerDAO Lending Platform | degen0x",
   description: "In-depth Spark Protocol review covering DAI lending, SparkLend markets, DSR integration, sDAI, and the protocol's relationship with Sky (formerly MakerDAO).",
   alternates: { canonical: "/defi-lending/reviews/spark" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

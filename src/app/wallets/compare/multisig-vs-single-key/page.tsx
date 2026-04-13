@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Multisig vs Single-Key Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Multisig vs Single-Key Wallets (2026) | degen0x`,
   description: `Multi-signature vs single-key wallet comparison for ${CURRENT_YEAR}. Security models, use cases, costs, and setup complexity compared.`,
   alternates: { canonical: "/wallets/compare/multisig-vs-single-key" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

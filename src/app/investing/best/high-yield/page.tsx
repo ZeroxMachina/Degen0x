@@ -8,7 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: `Best High-Yield Crypto Investments (${CURRENT_YEAR}) | ${SITE_NAME}`,
+  title: `Best High-Yield Crypto Investments (2026) | degen0x`,
   description: `Top high-yield cryptocurrency opportunities in ${CURRENT_YEAR}. Compare staking, lending, and DeFi yield options with risk-adjusted analysis.`,
   alternates: { canonical: "/investing/best/high-yield" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },

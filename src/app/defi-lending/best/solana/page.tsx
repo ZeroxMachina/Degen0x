@@ -9,7 +9,7 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: `Best Solana DeFi Lending Protocols ${CURRENT_YEAR} - Earn Yield on SOL`,
+  title: `Best Solana DeFi Lending Protocols 2026 - Earn Yield on SOL`,
   description: `Compare the best DeFi lending protocols on Solana in ${CURRENT_YEAR}. Earn yield with near-zero transaction fees and sub-second finality.`,
   alternates: { canonical: "/defi-lending/best/solana" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -86,7 +86,10 @@ export default function SolanaPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Best", href: "/defi-lending/best" }, { label: "Solana", href: "/defi-lending/best/solana" }]} />
       <AffiliateDisclosure />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Best Solana DeFi Lending Protocols ({CURRENT_YEAR})</h1>
-      <p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
+      
+        <p style={{ color: "#9CA3AF", lineHeight: "1.7", marginBottom: "1.5rem" }}>
+          Solana lending has grown to $400M+ TVL on Lend and Mango, with yields 5–10% above Ethereum despite lower collateral quality. Transaction costs below $0.01 enable micro-strategies.
+        </p><p className="text-sm text-[var(--color-text-secondary)] mb-6">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">
           Solana has emerged as the second-largest DeFi ecosystem by activity, offering lightning-fast transactions at near-zero cost. The Solana lending landscape has matured significantly, with several protocols now managing billions in total value locked. For users who want to earn yield on SOL and SPL tokens without the gas costs of Ethereum, these Solana-native protocols offer compelling alternatives.
