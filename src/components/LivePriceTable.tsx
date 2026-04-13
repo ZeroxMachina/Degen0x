@@ -279,7 +279,7 @@ const LivePriceTable: React.FC<LivePriceTableProps> = ({ compact = false }) => {
                       {coin.image && (
                         <img
                           src={coin.image}
-                          alt={coin.name}
+                          alt={`${coin.name} cryptocurrency icon`}
                           className="w-8 h-8 rounded-full flex-shrink-0"
                           loading="lazy"
                         />

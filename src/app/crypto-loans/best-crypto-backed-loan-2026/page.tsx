@@ -181,6 +181,8 @@ export default function BestCryptoBackedLoan() {
             <li><a href="/exchanges/no-kyc-crypto-exchange" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>No Kyc Crypto Exchange</a></li>
             <li><a href="/investing/best-defi-tokens-to-buy-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Defi Tokens To Buy 2026</a></li>
             <li><a href="/investing/best-perpetual-dex-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Perpetual Dex Tokens</a></li>
+                      <li><a href="/crypto-loans/best-crypto-backed-loan-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Backed Loan 2026</a></li>
+            <li><a href="/crypto-loans/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
             <div style={{

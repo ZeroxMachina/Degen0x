@@ -338,6 +338,10 @@ export default function BestCryptoPresales2026() {
             <li><Link href="/trading/crypto-pairs-trading-strategy" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Pairs Trading Strategy</Link></li>
             <li><Link href="/trading/crypto-scalping-strategy-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Scalping Strategy</Link></li>
             <li><Link href="/trading/algorithmic-crypto-trading-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Algorithmic Crypto Trading</Link></li>
+                      <li><a href="/investing/best/beginners" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Beginners</a></li>
+            <li><a href="/investing/best/stablecoins" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Stablecoins</a></li>
+                      <li><a href="/investing/best/staking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Staking</a></li>
+            <li><a href="/investing/calculators/dca-calculator" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Dca Calculator</a></li>
           </ul>
         </nav>
 

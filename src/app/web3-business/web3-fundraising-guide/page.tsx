@@ -449,6 +449,8 @@ export default function Web3FundraisingGuideExpanded() {
             <li><Link href="/ecosystem/best-projects-on-mode-network" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Mode Network</Link></li>
             <li><Link href="/ecosystem/best-projects-on-aptos" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Aptos</Link></li>
             <li><Link href="/ecosystem/best-projects-on-arbitrum" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Arbitrum</Link></li>
+                      <li><a href="/web3-business/jobs" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Jobs</a></li>
+            <li><a href="/web3-business/reviews/utrust" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Utrust</a></li>
           </ul>
         </nav>
 

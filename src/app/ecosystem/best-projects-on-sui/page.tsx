@@ -433,6 +433,8 @@ export default function BestProjectsOnSui2026() {
             <li><Link href="/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Abstract Chain Consumer Crypto Zk Rollup</Link></li>
             <li><Link href="/learn/account-abstraction-erc-4337-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Account Abstraction Erc 4337</Link></li>
             <li><Link href="/learn/aerodrome-finance-base-dex-liquidity-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aerodrome Finance Base Dex Liquidity</Link></li>
+                      <li><a href="/ecosystem/1inch" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>1inch</a></li>
+            <li><a href="/ecosystem/babylon-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Babylon Protocol</a></li>
           </ul>
         </nav>
 

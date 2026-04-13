@@ -543,6 +543,8 @@ export default function CryptoDayTradingTaxImplications() {
             <li><Link href="/investing/best-altcoins-to-buy-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Altcoins To Buy</Link></li>
             <li><Link href="/investing/best-crypto-savings-accounts-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Savings Accounts</Link></li>
             <li><Link href="/investing/best-crypto-to-invest-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto To Invest</Link></li>
+                      <li><a href="/taxes/best" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best</a></li>
+            <li><a href="/taxes/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
 

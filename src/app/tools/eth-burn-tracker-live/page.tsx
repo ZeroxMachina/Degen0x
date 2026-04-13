@@ -482,6 +482,10 @@ export default function ETHBurnTracker() {
             <li><Link href="/compare/bitcoin-vs-ethereum-investment" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Vs Ethereum Investment</Link></li>
             <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Centralized Vs Decentralized Exchange</Link></li>
             <li><Link href="/compare/chainlink-vs-pyth-vs-band" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Chainlink Vs Pyth Vs Band</Link></li>
+                      <li><a href="/tools/airdrop-eligibility" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Airdrop Eligibility</a></li>
+            <li><a href="/tools/airdrop-tracker" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Airdrop Tracker</a></li>
+                      <li><a href="/tools/bridge-aggregator-v2" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bridge Aggregator V2</a></li>
+            <li><a href="/tools/crypto-watchlist" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Watchlist</a></li>
           </ul>
         </nav>
 

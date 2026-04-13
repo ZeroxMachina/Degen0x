@@ -367,6 +367,10 @@ export default function BestExchangeForInstitutionalTrading() {
             <li><Link href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Coinbase Vs Kraken Vs Gemini</Link></li>
             <li><Link href="/compare/hot-wallet-vs-cold-wallet" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Hot Wallet Vs Cold Wallet</Link></li>
             <li><Link href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Polygon Vs Arbitrum Vs Optimism</Link></li>
+                      <li><a href="/exchanges/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
+            <li><a href="/exchanges/compare/crypto-com-vs-binance" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Com Vs Binance</a></li>
+                      <li><a href="/exchanges/compare/crypto-com-vs-coinbase" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Com Vs Coinbase</a></li>
+            <li><a href="/exchanges/compare/etoro-vs-robinhood" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Etoro Vs Robinhood</a></li>
           </ul>
         </nav>
 

@@ -419,6 +419,10 @@ export default function HardwareWalletSetupGuide() {
             <li><Link href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Coinbase Vs Kraken Vs Gemini</Link></li>
             <li><Link href="/compare/hot-wallet-vs-cold-wallet" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Hot Wallet Vs Cold Wallet</Link></li>
             <li><Link href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Polygon Vs Arbitrum Vs Optimism</Link></li>
+                      <li><a href="/wallets/best-wallet-for-mpc-security" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Wallet For Mpc Security</a></li>
+            <li><a href="/wallets/best-wallet-for-near-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Wallet For Near Protocol</a></li>
+                      <li><a href="/wallets/best/australia" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Australia</a></li>
+            <li><a href="/wallets/best/bitcoin" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin</a></li>
           </ul>
         </nav>
 

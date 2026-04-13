@@ -528,6 +528,8 @@ export default function BitcoinIRAGuide2026() {
             <li><Link href="/investing/best-crypto-savings-accounts-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Savings Accounts</Link></li>
             <li><Link href="/investing/best-crypto-to-invest-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto To Invest</Link></li>
             <li><Link href="/investing/best-crypto-under-1-dollar" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Under 1 Dollar</Link></li>
+                      <li><a href="/long-term/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
+            <li><a href="/long-term/best/cold-storage-strategies" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Cold Storage Strategies</a></li>
           </ul>
         </nav>
 

@@ -684,6 +684,17 @@ export default function AIGeneratedNFTGuide() {
   <a href="/nfts/how-to-mint-nft-step-by-step" style={{ color: "#fb923c", marginRight: "1rem" }}>How To Mint Nft Step By Step</a>
   <a href="/nfts/music-nft-platforms-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Music Nft Platforms Comparison</a>
 </nav>
-    </article>
+            {/* related-guides */}
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Related Articles</h3>
+          <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "grid", gap: 12 }}>
+            <li><a href="/nfts/compare/tensor-vs-magic-eden" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Tensor Vs Magic Eden</a></li>
+            <li><a href="/nfts/reviews/looksrare" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Looksrare</a></li>
+            <li><a href="/nfts/reviews/opensea" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Opensea</a></li>
+                      <li><a href="/nfts/reviews/tensor" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Tensor</a></li>
+          </ul>
+        </nav>
+
+</article>
   );
 }

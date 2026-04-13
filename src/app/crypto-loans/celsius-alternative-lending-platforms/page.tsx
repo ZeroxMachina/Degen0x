@@ -388,6 +388,8 @@ export default function CelsiusAlternatives() {
             <li><a href="/exchanges/binance-alternatives-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Binance Alternatives 2026</a></li>
             <li><a href="/exchanges/crypto-exchange-staking-comparison" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Exchange Staking Comparison</a></li>
             <li><a href="/investing/best-ai-crypto-projects-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Ai Crypto Projects 2026</a></li>
+                      <li><a href="/crypto-loans/best-crypto-backed-loan-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Backed Loan 2026</a></li>
+            <li><a href="/crypto-loans/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
       </article>

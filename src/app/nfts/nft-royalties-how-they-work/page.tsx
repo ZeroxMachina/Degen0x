@@ -547,6 +547,8 @@ export default function NFTRoyalties() {
             <li><Link href="/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Abstract Chain Consumer Crypto Zk Rollup</Link></li>
             <li><Link href="/learn/account-abstraction-erc-4337-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Account Abstraction Erc 4337</Link></li>
             <li><Link href="/learn/aerodrome-finance-base-dex-liquidity-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aerodrome Finance Base Dex Liquidity</Link></li>
+                      <li><a href="/nfts/compare/tensor-vs-magic-eden" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Tensor Vs Magic Eden</a></li>
+            <li><a href="/nfts/reviews/looksrare" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Looksrare</a></li>
           </ul>
         </nav>
 

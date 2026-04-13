@@ -437,6 +437,8 @@ export default function SmartContractAuditBusinessGuide() {
             <li><Link href="/ecosystem/best-projects-on-aptos" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Aptos</Link></li>
             <li><Link href="/ecosystem/best-projects-on-arbitrum" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Arbitrum</Link></li>
             <li><Link href="/ecosystem/best-projects-on-avalanche" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Avalanche</Link></li>
+                      <li><a href="/web3-business/jobs" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Jobs</a></li>
+            <li><a href="/web3-business/reviews/utrust" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Utrust</a></li>
           </ul>
         </nav>
 

@@ -477,6 +477,8 @@ export default function CryptoPayrollServicesGuide() {
             <li><Link href="/crypto-cards/crypto-card-rewards-tax-implications" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Card Rewards Tax Implications</Link></li>
             <li><Link href="/crypto-cards/crypto-card-vs-traditional-credit-card" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Card Vs Traditional Credit Card</Link></li>
             <li><Link href="/crypto-cards/crypto-card-with-no-foreign-fees" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Card With No Foreign Fees</Link></li>
+                      <li><a href="/spending/best" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best</a></li>
+            <li><a href="/spending/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
 

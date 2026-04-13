@@ -90,6 +90,12 @@ export default function AxelarGuidePage() {
             <li><a href="/learn/flash-loans-defi-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Flash Loans Defi Guide 2026</a></li>
             <li><a href="/learn/hip-3-hyperliquid-permissionless-perps-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Hip 3 Hyperliquid Permissionless Perps Guide 2026</a></li>
             <li><a href="/learn/how-to-stake-polkadot-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>How To Stake Polkadot Guide</a></li>
+                      <li><a href="/ecosystem/1inch" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>1inch</a></li>
+            <li><a href="/ecosystem/babylon-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Babylon Protocol</a></li>
+                      <li><a href="/ecosystem/balancer" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Balancer</a></li>
+            <li><a href="/ecosystem/berachain-dex" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Berachain Dex</a></li>
+                      <li><a href="/ecosystem/best-projects-on-sei" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Sei</a></li>
+            <li><a href="/ecosystem/best-projects-on-sui" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Sui</a></li>
           </ul>
         </nav>
       </article>

@@ -476,6 +476,8 @@ export default function DeFiProtocolGovernanceGuide() {
             <li><Link href="/ecosystem/best-projects-on-avalanche" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Avalanche</Link></li>
             <li><Link href="/ecosystem/best-projects-on-base-chain" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Base Chain</Link></li>
             <li><Link href="/ecosystem/best-projects-on-blast" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Blast</Link></li>
+                      <li><a href="/web3-business/jobs" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Jobs</a></li>
+            <li><a href="/web3-business/reviews/utrust" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Utrust</a></li>
           </ul>
         </nav>
 

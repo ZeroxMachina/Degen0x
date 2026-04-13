@@ -501,6 +501,8 @@ export default function DeFiTaxReportingGuide() {
             <li><Link href="/investing/best-gaming-crypto-tokens" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Gaming Crypto Tokens</Link></li>
             <li><Link href="/investing/best-infrastructure-crypto-tokens" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Infrastructure Crypto Tokens</Link></li>
             <li><Link href="/investing/best-layer-2-tokens-to-invest" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Layer 2 Tokens To Invest</Link></li>
+                      <li><a href="/taxes/best" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best</a></li>
+            <li><a href="/taxes/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
 

@@ -502,6 +502,8 @@ export default function StablecoinSpendingCardGuide() {
             <li><Link href="/exchanges/best-crypto-exchange-for-nft-trading" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Exchange For Nft Trading</Link></li>
             <li><Link href="/exchanges/best-crypto-exchange-for-privacy" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Exchange For Privacy</Link></li>
             <li><Link href="/exchanges/best-crypto-exchange-for-staking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Exchange For Staking</Link></li>
+                      <li><a href="/crypto-cards/prepaid-crypto-card-no-kyc" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Prepaid Crypto Card No Kyc</a></li>
+            <li><a href="/crypto-cards/reviews/coinbase-card" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Coinbase Card</a></li>
           </ul>
         </nav>
 

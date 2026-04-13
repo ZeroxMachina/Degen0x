@@ -367,6 +367,10 @@ export default function RadiantCapitalCrossChainLending() {
             <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave Vs Maker Vs Compound</Link></li>
             <li><Link href="/compare/arbitrum-vs-optimism-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Arbitrum Vs Optimism</Link></li>
             <li><Link href="/compare/bitcoin-vs-ethereum-investment" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Vs Ethereum Investment</Link></li>
+                      <li><a href="/defi-lending/best-stablecoin-lending-rates-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Stablecoin Lending Rates 2026</a></li>
+            <li><a href="/defi-lending/compare/ethereum-vs-solana-defi" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ethereum Vs Solana Defi</a></li>
+                      <li><a href="/defi-lending/compare/lending-vs-staking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Lending Vs Staking</a></li>
+            <li><a href="/defi-lending/reviews/aave" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave</a></li>
           </ul>
         </nav>
 

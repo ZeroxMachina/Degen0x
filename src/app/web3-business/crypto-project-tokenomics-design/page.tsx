@@ -497,6 +497,8 @@ export default function TokenomicsDesignGuide() {
             <li><Link href="/ecosystem/best-projects-on-injective" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Injective</Link></li>
             <li><Link href="/ecosystem/best-projects-on-linea" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Linea</Link></li>
             <li><Link href="/ecosystem/best-projects-on-mantle" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Mantle</Link></li>
+                      <li><a href="/web3-business/jobs" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Jobs</a></li>
+            <li><a href="/web3-business/reviews/utrust" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Utrust</a></li>
           </ul>
         </nav>
 

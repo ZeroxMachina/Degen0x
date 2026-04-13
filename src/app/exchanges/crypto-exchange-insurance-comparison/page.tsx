@@ -367,6 +367,8 @@ export default function CryptoExchangeInsuranceComparison() {
             <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Proof Of Work Vs Proof Of Stake</Link></li>
             <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Solana Vs Avalanche</Link></li>
             <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave Vs Maker Vs Compound</Link></li>
+                      <li><a href="/exchanges/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
+            <li><a href="/exchanges/compare/crypto-com-vs-binance" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Com Vs Binance</a></li>
           </ul>
         </nav>
 

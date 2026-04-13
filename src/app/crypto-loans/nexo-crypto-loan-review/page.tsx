@@ -460,6 +460,8 @@ export default function NexoReview() {
             <li><a href="/investing/crypto-onchain-analysis-investing" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Onchain Analysis Investing</a></li>
             <li><a href="/investing/undervalued-crypto-tokens-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Undervalued Crypto Tokens 2026</a></li>
             <li><a href="/defi-lending/cefi-vs-defi-lending-comparison" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Cefi Vs Defi Lending Comparison</a></li>
+                      <li><a href="/crypto-loans/best-crypto-backed-loan-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Backed Loan 2026</a></li>
+            <li><a href="/crypto-loans/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
             <div style={{

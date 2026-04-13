@@ -367,6 +367,10 @@ export default function BestCryptoExchangeForLowFees() {
             <li><Link href="/compare/arbitrum-vs-optimism-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Arbitrum Vs Optimism</Link></li>
             <li><Link href="/compare/bitcoin-vs-ethereum-investment" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Vs Ethereum Investment</Link></li>
             <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Centralized Vs Decentralized Exchange</Link></li>
+                      <li><a href="/exchanges/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
+            <li><a href="/exchanges/compare/crypto-com-vs-binance" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Com Vs Binance</a></li>
+                      <li><a href="/exchanges/compare/crypto-com-vs-coinbase" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Com Vs Coinbase</a></li>
+            <li><a href="/exchanges/compare/etoro-vs-robinhood" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Etoro Vs Robinhood</a></li>
           </ul>
         </nav>
 

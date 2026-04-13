@@ -135,6 +135,12 @@ export default function AcrossGuidePage() {
             <li><a href="/learn/crypto-market-cap-explained" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Market Cap Explained</a></li>
             <li><a href="/learn/crypto-points-programs-pre-token-loyalty-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Points Programs Pre Token Loyalty Guide 2026</a></li>
             <li><a href="/learn/crypto-rug-pull-how-to-avoid" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Rug Pull How To Avoid</a></li>
+                      <li><a href="/ecosystem/1inch" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>1inch</a></li>
+            <li><a href="/ecosystem/babylon-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Babylon Protocol</a></li>
+                      <li><a href="/ecosystem/balancer" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Balancer</a></li>
+            <li><a href="/ecosystem/berachain-dex" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Berachain Dex</a></li>
+                      <li><a href="/ecosystem/best-projects-on-sei" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Sei</a></li>
+            <li><a href="/ecosystem/best-projects-on-sui" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Sui</a></li>
           </ul>
         </nav>
       </article>

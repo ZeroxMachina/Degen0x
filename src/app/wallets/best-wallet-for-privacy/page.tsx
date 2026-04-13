@@ -356,6 +356,10 @@ export default function BestWalletForPrivacy() {
             <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Centralized Vs Decentralized Exchange</Link></li>
             <li><Link href="/compare/chainlink-vs-pyth-vs-band" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Chainlink Vs Pyth Vs Band</Link></li>
             <li><Link href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Coinbase Vs Kraken Vs Gemini</Link></li>
+                      <li><a href="/wallets/best-wallet-for-mpc-security" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Wallet For Mpc Security</a></li>
+            <li><a href="/wallets/best-wallet-for-near-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Wallet For Near Protocol</a></li>
+                      <li><a href="/wallets/best/australia" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Australia</a></li>
+            <li><a href="/wallets/best/bitcoin" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin</a></li>
           </ul>
         </nav>
 

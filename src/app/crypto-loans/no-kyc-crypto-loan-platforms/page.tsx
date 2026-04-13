@@ -368,6 +368,8 @@ export default function NoKycCryptoLoanPlatforms() {
             <li><a href="/defi-lending/best-defi-lending-platform-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Defi Lending Platform 2026</a></li>
             <li><a href="/defi-lending/defi-lending-risk-assessment" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Defi Lending Risk Assessment</a></li>
             <li><a href="/defi-lending/silo-finance-isolated-lending" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Silo Finance Isolated Lending</a></li>
+                      <li><a href="/crypto-loans/best-crypto-backed-loan-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Backed Loan 2026</a></li>
+            <li><a href="/crypto-loans/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
       </article>

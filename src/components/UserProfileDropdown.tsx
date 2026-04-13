@@ -80,7 +80,7 @@ export default function UserProfileDropdown({
       >
         <img
           src={generateIdenticon(address)}
-          alt="Profile"
+          alt="Wallet address avatar"
           className="w-6 h-6 rounded-full"
         />
         <span className="text-sm font-medium hidden sm:inline">
@@ -105,7 +105,7 @@ export default function UserProfileDropdown({
             <div className="flex items-center gap-3 mb-3">
               <img
                 src={generateIdenticon(address)}
-                alt="Profile"
+                alt="Connected wallet avatar"
                 className="w-8 h-8 rounded-full"
               />
               <div className="flex-1 min-w-0">

@@ -368,6 +368,8 @@ export default function CryptoLoanForRealEstate() {
             <li><a href="/defi-lending/crypto-flash-loan-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Flash Loan Guide</a></li>
             <li><a href="/defi-lending/morpho-protocol-lending-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Morpho Protocol Lending Guide</a></li>
             <li><a href="/defi-lending/venus-protocol-bsc-lending" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Venus Protocol Bsc Lending</a></li>
+                      <li><a href="/crypto-loans/best-crypto-backed-loan-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Backed Loan 2026</a></li>
+            <li><a href="/crypto-loans/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
       </article>

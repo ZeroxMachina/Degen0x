@@ -490,6 +490,8 @@ export default function CryptoCardVsTraditionalCreditCard() {
             <li><Link href="/exchanges/best-exchange-for-algorithmic-trading" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Exchange For Algorithmic Trading</Link></li>
             <li><Link href="/exchanges/best-crypto-exchange-for-altcoins" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Exchange For Altcoins</Link></li>
             <li><Link href="/exchanges/best-crypto-exchange-for-api-trading" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Exchange For Api Trading</Link></li>
+                      <li><a href="/crypto-cards/prepaid-crypto-card-no-kyc" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Prepaid Crypto Card No Kyc</a></li>
+            <li><a href="/crypto-cards/reviews/coinbase-card" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Coinbase Card</a></li>
           </ul>
         </nav>
 

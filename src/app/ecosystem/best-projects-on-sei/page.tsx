@@ -579,6 +579,8 @@ export default function BestSeiProjects() {
             <li><Link href="/learn/ai-crypto-tokens-complete-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Crypto Tokens Complete</Link></li>
             <li><Link href="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Altlayer Restaked Rollups Alt Token Raas</Link></li>
             <li><Link href="/learn/appchains-application-specific-blockchains" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
+                      <li><a href="/ecosystem/1inch" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>1inch</a></li>
+            <li><a href="/ecosystem/babylon-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Babylon Protocol</a></li>
           </ul>
         </nav>
 

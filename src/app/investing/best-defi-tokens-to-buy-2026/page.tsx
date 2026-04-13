@@ -389,6 +389,10 @@ export default function BestDeFiTokens2026() {
             <li><Link href="/trading/best-crypto-trading-platform-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Trading Platform</Link></li>
             <li><Link href="/trading/crypto-arbitrage-strategies-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Arbitrage Strategies</Link></li>
             <li><Link href="/trading/crypto-day-trading-strategies-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Day Trading Strategies</Link></li>
+                      <li><a href="/investing/best/beginners" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Beginners</a></li>
+            <li><a href="/investing/best/stablecoins" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Stablecoins</a></li>
+                      <li><a href="/investing/best/staking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Staking</a></li>
+            <li><a href="/investing/calculators/dca-calculator" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Dca Calculator</a></li>
           </ul>
         </nav>
 

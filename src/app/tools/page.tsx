@@ -730,6 +730,45 @@ export default function ToolsPage() {
           }}>
             Compare Tools
           </Link>
+          <Link href="/dashboard" style={{
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }}>
+            Dashboard
+          </Link>
+          <Link href="/portfolio" style={{
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }}>
+            Portfolio
+          </Link>
+          <Link href="/alerts" style={{
+            padding: "12px 16px",
+            backgroundColor: "#1f2937",
+            borderRadius: "8px",
+            color: "#60a5fa",
+            textDecoration: "none",
+            border: "1px solid #374151",
+            display: "block",
+            textAlign: "center",
+            transition: "all 0.2s"
+          }}>
+            Price Alerts
+          </Link>
         </div>
       </div>
     </div>

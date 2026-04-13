@@ -418,6 +418,8 @@ export default function StablecoinYieldComparison() {
             <li><Link href="/compare/arbitrum-vs-optimism-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Arbitrum Vs Optimism</Link></li>
             <li><Link href="/compare/bitcoin-vs-ethereum-investment" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Vs Ethereum Investment</Link></li>
             <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Centralized Vs Decentralized Exchange</Link></li>
+                      <li><a href="/tools/airdrop-eligibility" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Airdrop Eligibility</a></li>
+            <li><a href="/tools/airdrop-tracker" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Airdrop Tracker</a></li>
           </ul>
         </nav>
 

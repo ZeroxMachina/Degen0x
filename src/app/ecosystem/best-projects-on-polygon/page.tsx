@@ -430,6 +430,8 @@ export default function BestProjectsOnPolygon2026() {
             <li><Link href="/learn/ai-agents-decentralized-ai-crypto-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Agents Decentralized Ai Crypto</Link></li>
             <li><Link href="/learn/ai-crypto-agents-autonomous-defi-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Crypto Agents Autonomous Defi</Link></li>
             <li><Link href="/learn/ai-crypto-tokens-complete-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Crypto Tokens Complete</Link></li>
+                      <li><a href="/ecosystem/1inch" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>1inch</a></li>
+            <li><a href="/ecosystem/babylon-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Babylon Protocol</a></li>
           </ul>
         </nav>
 

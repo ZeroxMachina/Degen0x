@@ -367,6 +367,8 @@ export default function BestExchangeForMemecoinTrading() {
             <li><Link href="/compare/chainlink-vs-pyth-vs-band" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Chainlink Vs Pyth Vs Band</Link></li>
             <li><Link href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Coinbase Vs Kraken Vs Gemini</Link></li>
             <li><Link href="/compare/hot-wallet-vs-cold-wallet" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Hot Wallet Vs Cold Wallet</Link></li>
+                      <li><a href="/exchanges/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
+            <li><a href="/exchanges/compare/crypto-com-vs-binance" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Com Vs Binance</a></li>
           </ul>
         </nav>
 

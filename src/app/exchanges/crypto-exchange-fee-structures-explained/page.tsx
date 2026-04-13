@@ -367,6 +367,8 @@ export default function CryptoExchangeFeeStructuresExplained() {
             <li><Link href="/compare/bitcoin-vs-ethereum-investment" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Vs Ethereum Investment</Link></li>
             <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Centralized Vs Decentralized Exchange</Link></li>
             <li><Link href="/compare/chainlink-vs-pyth-vs-band" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Chainlink Vs Pyth Vs Band</Link></li>
+                      <li><a href="/exchanges/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
+            <li><a href="/exchanges/compare/crypto-com-vs-binance" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Com Vs Binance</a></li>
           </ul>
         </nav>
 

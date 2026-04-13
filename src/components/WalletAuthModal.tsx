@@ -567,7 +567,7 @@ function AuthenticatedView({
       <div className="flex justify-center mb-4">
         <img
           src={generateIdenticon(address)}
-          alt="Avatar"
+          alt="Connected wallet address avatar"
           className="w-20 h-20 rounded-full border-2 border-blue-500 shadow-lg"
         />
       </div>

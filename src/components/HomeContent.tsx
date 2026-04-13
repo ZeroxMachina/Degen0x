@@ -184,7 +184,7 @@ function DAppLogo({ dapp, size = 40 }: { dapp: DApp; size?: number }) {
       >
         <img
           src={logoUrl}
-          alt={dapp.name}
+          alt={`${dapp.name} app logo`}
           width={size}
           height={size}
           className="w-full h-full object-contain p-1"

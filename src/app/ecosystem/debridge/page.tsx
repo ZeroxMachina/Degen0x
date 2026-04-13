@@ -96,6 +96,8 @@ export default function DebridgeGuidePage() {
             <li><a href="/learn/crypto-staking-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Staking Guide 2026</a></li>
             <li><a href="/learn/dao-governance-onchain-voting-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Dao Governance Onchain Voting Guide 2026</a></li>
             <li><a href="/learn/decentralized-storage-filecoin-arweave-ipfs-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Decentralized Storage Filecoin Arweave Ipfs Guide 2026</a></li>
+                      <li><a href="/ecosystem/1inch" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>1inch</a></li>
+            <li><a href="/ecosystem/babylon-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Babylon Protocol</a></li>
           </ul>
         </nav>
       </article>

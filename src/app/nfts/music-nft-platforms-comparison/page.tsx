@@ -447,6 +447,8 @@ export default function MusicNFTPlatformsComparison() {
             <li><Link href="/learn/ai-agents-decentralized-ai-crypto-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Agents Decentralized Ai Crypto</Link></li>
             <li><Link href="/learn/ai-crypto-agents-autonomous-defi-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Crypto Agents Autonomous Defi</Link></li>
             <li><Link href="/learn/ai-crypto-tokens-complete-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Crypto Tokens Complete</Link></li>
+                      <li><a href="/nfts/compare/tensor-vs-magic-eden" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Tensor Vs Magic Eden</a></li>
+            <li><a href="/nfts/reviews/looksrare" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Looksrare</a></li>
           </ul>
         </nav>
 

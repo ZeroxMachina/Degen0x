@@ -513,6 +513,8 @@ export default function CryptoStakingTaxGuide() {
             <li><Link href="/investing/best-depin-tokens-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Depin Tokens</Link></li>
             <li><Link href="/investing/best-gaming-crypto-tokens" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Gaming Crypto Tokens</Link></li>
             <li><Link href="/investing/best-infrastructure-crypto-tokens" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Infrastructure Crypto Tokens</Link></li>
+                      <li><a href="/taxes/best" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best</a></li>
+            <li><a href="/taxes/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
 

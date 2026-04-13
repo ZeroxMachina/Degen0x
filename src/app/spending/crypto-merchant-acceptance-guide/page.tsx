@@ -515,6 +515,8 @@ export default function CryptoMerchantAcceptanceGuide() {
             <li><Link href="/crypto-cards/crypto-card-with-no-foreign-fees" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Card With No Foreign Fees</Link></li>
             <li><Link href="/crypto-cards/crypto-cashback-card-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Cashback Card</Link></li>
             <li><Link href="/crypto-cards/crypto-debit-card-with-staking-rewards" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Debit Card With Staking Rewards</Link></li>
+                      <li><a href="/spending/best" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best</a></li>
+            <li><a href="/spending/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
 

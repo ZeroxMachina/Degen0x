@@ -167,6 +167,8 @@ export default function TokenUnlocksCalendar() {
             <li><Link href="/compare/centralized-vs-decentralized-exchange" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Centralized Vs Decentralized Exchange</Link></li>
             <li><Link href="/compare/chainlink-vs-pyth-vs-band" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Chainlink Vs Pyth Vs Band</Link></li>
             <li><Link href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Coinbase Vs Kraken Vs Gemini</Link></li>
+                      <li><a href="/tools/airdrop-eligibility" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Airdrop Eligibility</a></li>
+            <li><a href="/tools/airdrop-tracker" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Airdrop Tracker</a></li>
           </ul>
         </nav>
 

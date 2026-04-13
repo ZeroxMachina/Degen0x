@@ -368,6 +368,8 @@ export default function CryptoMarginLoanComparison() {
             <li><a href="/investing/best-infrastructure-crypto-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Infrastructure Crypto Tokens</a></li>
             <li><a href="/investing/best-rwa-crypto-tokens-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Rwa Crypto Tokens 2026</a></li>
             <li><a href="/investing/crypto-index-fund-guide" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Index Fund Guide</a></li>
+                      <li><a href="/crypto-loans/best-crypto-backed-loan-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Backed Loan 2026</a></li>
+            <li><a href="/crypto-loans/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
             <div style={{

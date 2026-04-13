@@ -368,6 +368,8 @@ export default function GasPriceEstimatorMultiChain() {
             <li><Link href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Polygon Vs Arbitrum Vs Optimism</Link></li>
             <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Proof Of Work Vs Proof Of Stake</Link></li>
             <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Solana Vs Avalanche</Link></li>
+                      <li><a href="/tools/airdrop-eligibility" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Airdrop Eligibility</a></li>
+            <li><a href="/tools/airdrop-tracker" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Airdrop Tracker</a></li>
           </ul>
         </nav>
 

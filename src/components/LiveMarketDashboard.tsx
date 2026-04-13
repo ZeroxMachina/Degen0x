@@ -218,7 +218,7 @@ const LiveMarketDashboard = () => {
               <div className="flex items-center gap-3 mb-3">
                 <img
                   src={coin.image}
-                  alt={coin.name}
+                  alt={`${coin.name} cryptocurrency icon`}
                   className="w-8 h-8 rounded-full"
                   onError={(e) => {
                     e.currentTarget.src = '';

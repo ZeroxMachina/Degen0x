@@ -235,6 +235,8 @@ const toc = [{ id: 'intro', t: 'Overview' }, { id: 'cold', t: 'Cold Storage' }, 
             <li><Link href="/compare/hot-wallet-vs-cold-wallet" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Hot Wallet Vs Cold Wallet</Link></li>
             <li><Link href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Polygon Vs Arbitrum Vs Optimism</Link></li>
             <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Proof Of Work Vs Proof Of Stake</Link></li>
+                      <li><a href="/exchanges/compare/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
+            <li><a href="/exchanges/compare/crypto-com-vs-binance" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Com Vs Binance</a></li>
           </ul>
         </nav>
 

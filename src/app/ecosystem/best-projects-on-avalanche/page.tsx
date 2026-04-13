@@ -617,6 +617,12 @@ export default function BestProjectsOnAvalanche() {
             <li><Link href="/learn/account-abstraction-erc-4337-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Account Abstraction Erc 4337</Link></li>
             <li><Link href="/learn/aerodrome-finance-base-dex-liquidity-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aerodrome Finance Base Dex Liquidity</Link></li>
             <li><Link href="/learn/ai-agents-decentralized-ai-crypto-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ai Agents Decentralized Ai Crypto</Link></li>
+                      <li><a href="/ecosystem/1inch" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>1inch</a></li>
+            <li><a href="/ecosystem/babylon-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Babylon Protocol</a></li>
+                      <li><a href="/ecosystem/balancer" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Balancer</a></li>
+            <li><a href="/ecosystem/berachain-dex" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Berachain Dex</a></li>
+                      <li><a href="/ecosystem/best-projects-on-sei" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Sei</a></li>
+            <li><a href="/ecosystem/best-projects-on-sui" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Projects On Sui</a></li>
           </ul>
         </nav>
 

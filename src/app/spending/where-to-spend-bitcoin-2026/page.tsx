@@ -186,6 +186,8 @@ export default function WhereToSpendBitcoin() {
             <li><Link href="/crypto-cards/crypto-debit-card-with-staking-rewards" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Debit Card With Staking Rewards</Link></li>
             <li><Link href="/crypto-cards/best-card-for-bitcoin-cashback" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Card For Bitcoin Cashback</Link></li>
             <li><Link href="/crypto-cards/best-card-for-crypto-rewards-stacking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Card For Crypto Rewards Stacking</Link></li>
+                      <li><a href="/spending/best" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best</a></li>
+            <li><a href="/spending/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
 

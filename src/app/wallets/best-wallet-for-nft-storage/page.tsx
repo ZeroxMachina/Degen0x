@@ -433,6 +433,10 @@ export default function BestWalletForNFTStorage() {
             <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Proof Of Work Vs Proof Of Stake</Link></li>
             <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Solana Vs Avalanche</Link></li>
             <li><Link href="/compare/aave-vs-maker-vs-compound" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave Vs Maker Vs Compound</Link></li>
+                      <li><a href="/wallets/best-wallet-for-mpc-security" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Wallet For Mpc Security</a></li>
+            <li><a href="/wallets/best-wallet-for-near-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Wallet For Near Protocol</a></li>
+                      <li><a href="/wallets/best/australia" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Australia</a></li>
+            <li><a href="/wallets/best/bitcoin" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin</a></li>
           </ul>
         </nav>
 

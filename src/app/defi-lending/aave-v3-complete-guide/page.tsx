@@ -366,6 +366,10 @@ export default function AaveV3CompleteGuide() {
             <li><Link href="/compare/coinbase-vs-kraken-vs-gemini" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Coinbase Vs Kraken Vs Gemini</Link></li>
             <li><Link href="/compare/hot-wallet-vs-cold-wallet" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Hot Wallet Vs Cold Wallet</Link></li>
             <li><Link href="/compare/polygon-vs-arbitrum-vs-optimism" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Polygon Vs Arbitrum Vs Optimism</Link></li>
+                      <li><a href="/defi-lending/best-stablecoin-lending-rates-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Stablecoin Lending Rates 2026</a></li>
+            <li><a href="/defi-lending/compare/ethereum-vs-solana-defi" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Ethereum Vs Solana Defi</a></li>
+                      <li><a href="/defi-lending/compare/lending-vs-staking" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Lending Vs Staking</a></li>
+            <li><a href="/defi-lending/reviews/aave" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave</a></li>
           </ul>
         </nav>
 

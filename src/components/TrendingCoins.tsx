@@ -193,7 +193,7 @@ const CoinCard: React.FC<CoinCardProps> = ({ coin }) => {
             {coin.thumb ? (
               <img
                 src={coin.thumb}
-                alt={coin.name}
+                alt={`${coin.name} trending cryptocurrency`}
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   (e.target as HTMLImageElement).style.display = 'none';

@@ -573,6 +573,8 @@ export default function CryptoBearMarketStrategy2026() {
             <li><Link href="/trading/algorithmic-crypto-trading-guide" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Algorithmic Crypto Trading</Link></li>
             <li><Link href="/trading/best-crypto-technical-indicators" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Technical Indicators</Link></li>
             <li><Link href="/trading/best-crypto-trading-platform-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Trading Platform</Link></li>
+                      <li><a href="/investing/best/beginners" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Beginners</a></li>
+            <li><a href="/investing/best/stablecoins" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Stablecoins</a></li>
           </ul>
         </nav>
 

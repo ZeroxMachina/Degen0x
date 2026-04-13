@@ -101,6 +101,8 @@ export default function DriftGuidePage() {
             <li><a href="/learn/crypto-custody-solutions-institutional-mpc-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Custody Solutions Institutional Mpc Guide 2026</a></li>
             <li><a href="/learn/crypto-kyc-aml-compliance-travel-rule-guide-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Kyc Aml Compliance Travel Rule Guide 2026</a></li>
             <li><a href="/learn/crypto-order-types-explained" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Crypto Order Types Explained</a></li>
+                      <li><a href="/ecosystem/1inch" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>1inch</a></li>
+            <li><a href="/ecosystem/babylon-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Babylon Protocol</a></li>
           </ul>
         </nav>
       </article>

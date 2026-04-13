@@ -459,6 +459,8 @@ export default function NFTLendingBorrowingExpanded() {
             <li><Link href="/learn/appchains-application-specific-blockchains" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
             <li><Link href="/learn/appchains-application-specific-blockchains-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
             <li><Link href="/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave V4 Gho Stablecoin Defi Lending</Link></li>
+                      <li><a href="/nfts/compare/tensor-vs-magic-eden" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Tensor Vs Magic Eden</a></li>
+            <li><a href="/nfts/reviews/looksrare" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Looksrare</a></li>
           </ul>
         </nav>
 

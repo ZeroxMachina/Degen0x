@@ -419,6 +419,8 @@ export default function GenerationalWealthGuide() {
             <li><Link href="/investing/best-crypto-to-invest-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto To Invest</Link></li>
             <li><Link href="/investing/best-crypto-under-1-dollar" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Under 1 Dollar</Link></li>
             <li><Link href="/investing/best-defi-tokens-to-buy-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Defi Tokens To Buy</Link></li>
+                      <li><a href="/long-term/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
+            <li><a href="/long-term/best/cold-storage-strategies" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Cold Storage Strategies</a></li>
           </ul>
         </nav>
 

@@ -344,6 +344,8 @@ export default function CosmosEcosystemMap() {
             <li><Link href="/learn/appchains-application-specific-blockchains-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
             <li><Link href="/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Aave V4 Gho Stablecoin Defi Lending</Link></li>
             <li><Link href="/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Abstract Chain Consumer Crypto Zk Rollup</Link></li>
+                      <li><a href="/ecosystem/1inch" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>1inch</a></li>
+            <li><a href="/ecosystem/babylon-protocol" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Babylon Protocol</a></li>
           </ul>
         </nav>
 

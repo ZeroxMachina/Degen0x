@@ -501,6 +501,8 @@ export default function InternationalCryptoTaxComparison() {
             <li><Link href="/investing/best-layer-2-tokens-to-invest" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Layer 2 Tokens To Invest</Link></li>
             <li><Link href="/investing/best-ai-crypto-projects-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Ai Crypto Projects</Link></li>
             <li><Link href="/investing/best-altcoins-to-buy-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Altcoins To Buy</Link></li>
+                      <li><a href="/taxes/best" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best</a></li>
+            <li><a href="/taxes/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
 

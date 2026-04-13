@@ -433,6 +433,8 @@ export default function CryptoGiftCardComparison() {
             <li><Link href="/crypto-cards/best-crypto-debit-card-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best Crypto Debit Card</Link></li>
             <li><Link href="/crypto-cards/bitcoin-rewards-credit-card-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Bitcoin Rewards Credit Card</Link></li>
             <li><Link href="/crypto-cards/crypto-card-for-business-expenses" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Crypto Card For Business Expenses</Link></li>
+                      <li><a href="/spending/best" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Best</a></li>
+            <li><a href="/spending/best/[slug]" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>[slug]</a></li>
           </ul>
         </nav>
 

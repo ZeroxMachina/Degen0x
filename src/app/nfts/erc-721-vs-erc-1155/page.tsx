@@ -581,6 +581,8 @@ export default function ERC721vs1155() {
             <li><Link href="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Altlayer Restaked Rollups Alt Token Raas</Link></li>
             <li><Link href="/learn/appchains-application-specific-blockchains" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
             <li><Link href="/learn/appchains-application-specific-blockchains-guide-2026" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Appchains Application Specific Blockchains</Link></li>
+                      <li><a href="/nfts/compare/tensor-vs-magic-eden" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Tensor Vs Magic Eden</a></li>
+            <li><a href="/nfts/reviews/looksrare" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Looksrare</a></li>
           </ul>
         </nav>
 
