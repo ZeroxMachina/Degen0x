@@ -976,6 +976,12 @@ export default function CryptoRiskManagementGuide2026() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/peaq-depin-robotics-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Peaq Depin Robotics Guide 2026</a>
+  <a href="/learn/base-chain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Base Chain Guide</a>
+  <a href="/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Governance Markets Liquid Lockers Convex Aura Vote Markets Guide 2026</a>
+</nav>
       </article>
         <BackToTop />
       </div>

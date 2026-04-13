@@ -780,6 +780,12 @@ export default function BestWalletForStakingPage() {
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/wallets/reviews/dcent" style={{ color: "#fb923c", marginRight: "1rem" }}>Dcent</a>
+  <a href="/wallets/reviews/ngrave" style={{ color: "#fb923c", marginRight: "1rem" }}>Ngrave</a>
+  <a href="/wallets/reviews/wasabi" style={{ color: "#fb923c", marginRight: "1rem" }}>Wasabi</a>
+</nav>
       </article>
   );
 }

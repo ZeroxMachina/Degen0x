@@ -369,6 +369,13 @@ export default function HowToValueNftGuide() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/tools/profit-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Profit Calculator</a>
+  <a href="/nfts/tools/rarity-checker" style={{ color: "#fb923c", marginRight: "1rem" }}>Rarity Checker</a>
+  <a href="/nfts/nft-photography-marketplace-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Nft Photography Marketplace Guide</a>
+</nav>
+
 </article>
   );
 }

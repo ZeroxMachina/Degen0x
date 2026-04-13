@@ -653,6 +653,12 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/tokenized-treasuries-rwa-yield-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Treasuries Rwa Yield Guide 2026</a>
+  <a href="/learn/scroll-zkevm-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Scroll Zkevm Guide 2026</a>
+  <a href="/learn/glossary" style={{ color: "#fb923c", marginRight: "1rem" }}>Glossary</a>
+</nav>
       </article>
   );
 }

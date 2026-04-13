@@ -519,6 +519,12 @@ export default function DefiAggregatorsExplained1inch() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/crypto-hardware-wallets-cold-storage-comparison-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Hardware Wallets Cold Storage Comparison Guide 2026</a>
+  <a href="/learn/solana-etf-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Etf Guide 2026</a>
+  <a href="/learn/how-to-convert-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>How To Convert Crypto</a>
+</nav>
       </article>
   );
 }

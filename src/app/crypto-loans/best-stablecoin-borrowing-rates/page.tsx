@@ -440,6 +440,14 @@ export default function BestStablecoinBorrowingRates() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-loans/best/bitcoin-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Loans</a>
+  <a href="/crypto-loans/best/institutional" style={{ color: "#fb923c", marginRight: "1rem" }}>Institutional</a>
+  <a href="/crypto-loans/best/no-kyc" style={{ color: "#fb923c", marginRight: "1rem" }}>No Kyc</a>
+  <a href="/crypto-loans/best/low-interest" style={{ color: "#fb923c", marginRight: "1rem" }}>Low Interest</a>
+  <a href="/crypto-loans/best/nft-collateral" style={{ color: "#fb923c", marginRight: "1rem" }}>Nft Collateral</a>
+</nav>
     </article>
   );
 }

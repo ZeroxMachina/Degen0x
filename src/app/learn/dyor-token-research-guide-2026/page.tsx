@@ -786,14 +786,6 @@ export default function DYORTokenResearchGuidePage() {
                   color: '#58a6ff',
                   transition: 'all 0.2s',
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#58a6ff';
-                  e.currentTarget.style.backgroundColor = '#0d1117';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.backgroundColor = '#161b22';
-                }}
               >
                 <h3 style={{ fontSize: '16px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>
                   Common Crypto Scams
@@ -812,14 +804,6 @@ export default function DYORTokenResearchGuidePage() {
                   textDecoration: 'none',
                   color: '#58a6ff',
                   transition: 'all 0.2s',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#58a6ff';
-                  e.currentTarget.style.backgroundColor = '#0d1117';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.backgroundColor = '#161b22';
                 }}
               >
                 <h3 style={{ fontSize: '16px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>
@@ -840,14 +824,6 @@ export default function DYORTokenResearchGuidePage() {
                   color: '#58a6ff',
                   transition: 'all 0.2s',
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#58a6ff';
-                  e.currentTarget.style.backgroundColor = '#0d1117';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.backgroundColor = '#161b22';
-                }}
               >
                 <h3 style={{ fontSize: '16px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>
                   Tokenomics & Protocol Revenue Guide
@@ -866,14 +842,6 @@ export default function DYORTokenResearchGuidePage() {
                   textDecoration: 'none',
                   color: '#58a6ff',
                   transition: 'all 0.2s',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#58a6ff';
-                  e.currentTarget.style.backgroundColor = '#0d1117';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.backgroundColor = '#161b22';
                 }}
               >
                 <h3 style={{ fontSize: '16px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>
@@ -894,14 +862,6 @@ export default function DYORTokenResearchGuidePage() {
                   color: '#58a6ff',
                   transition: 'all 0.2s',
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#58a6ff';
-                  e.currentTarget.style.backgroundColor = '#0d1117';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.backgroundColor = '#161b22';
-                }}
               >
                 <h3 style={{ fontSize: '16px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>
                   Token Screener Tool
@@ -920,14 +880,6 @@ export default function DYORTokenResearchGuidePage() {
                   textDecoration: 'none',
                   color: '#58a6ff',
                   transition: 'all 0.2s',
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#58a6ff';
-                  e.currentTarget.style.backgroundColor = '#0d1117';
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.backgroundColor = '#161b22';
                 }}
               >
                 <h3 style={{ fontSize: '16px', fontWeight: 600, marginBottom: '8px', color: '#e6edf3' }}>

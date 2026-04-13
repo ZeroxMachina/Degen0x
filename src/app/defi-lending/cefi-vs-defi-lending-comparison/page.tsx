@@ -622,6 +622,14 @@ export default function CeFiVsDeFiComparison() {
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/defi-lending/best/fixed-rate" style={{ color: "#fb923c", marginRight: "1rem" }}>Fixed Rate</a>
+  <a href="/defi-lending/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/defi-lending/best/ethereum" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum</a>
+  <a href="/defi-lending/defi-fixed-rate-lending-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Fixed Rate Lending Guide</a>
+  <a href="/defi-lending/spark-protocol-maker-lending" style={{ color: "#fb923c", marginRight: "1rem" }}>Spark Protocol Maker Lending</a>
+</nav>
       </article>
   );
 }

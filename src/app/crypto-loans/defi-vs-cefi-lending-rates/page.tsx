@@ -471,6 +471,11 @@ export default function DeFiVsCeFiLendingRates() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-loans/reviews/celsius-successor" style={{ color: "#fb923c", marginRight: "1rem" }}>Celsius Successor</a>
+  <a href="/crypto-loans/reviews/benqi-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Benqi Loans</a>
+</nav>
     </article>
   );
 }

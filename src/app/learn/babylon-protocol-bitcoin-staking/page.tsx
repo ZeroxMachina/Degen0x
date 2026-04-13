@@ -1021,6 +1021,12 @@ export default function BabylonProtocolGuidePage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/token-vesting-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Token Vesting Explained</a>
+  <a href="/learn/solana-firedancer-validator-client-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Firedancer Validator Client Guide 2026</a>
+  <a href="/learn/stablechains-stablecoin-optimized-blockchains-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Stablechains Stablecoin Optimized Blockchains Guide 2026</a>
+</nav>
       </article>
     </div>
   );

@@ -447,6 +447,15 @@ export default function BestProjectsOnMantle() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/balancer-v3" style={{ color: "#fb923c", marginRight: "1rem" }}>Balancer V3</a>
+  <a href="/ecosystem/stargate" style={{ color: "#fb923c", marginRight: "1rem" }}>Stargate</a>
+  <a href="/ecosystem/usual" style={{ color: "#fb923c", marginRight: "1rem" }}>Usual</a>
+  <a href="/ecosystem/best-projects-on-solana" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Projects On Solana</a>
+  <a href="/ecosystem/layerzero" style={{ color: "#fb923c", marginRight: "1rem" }}>Layerzero</a>
+</nav>
+
 </article>
   );
 }

@@ -889,7 +889,7 @@ export default function EthereumL2ComparisonGuidePage() {
             { href: "/learn/data-availability-layer-guide-2026", label: "Data Availability Layers 2026" },
             { href: "/tools/gas-tracker", label: "Gas Tracker Tool" },
             { href: "/tools/bridge-aggregator", label: "Bridge Aggregator Tool" },
-          ].map((link) => (
+          ].map((item) => (
             <Link href={item.href}
               key={link.href}
               style={{ color: "#58a6ff" }}

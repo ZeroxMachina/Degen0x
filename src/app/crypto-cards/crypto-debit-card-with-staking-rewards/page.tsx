@@ -430,6 +430,13 @@ export default function StakingRewardsCards() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/compare/wirex-vs-plutus" style={{ color: "#fb923c", marginRight: "1rem" }}>Wirex Vs Plutus</a>
+  <a href="/crypto-cards/compare/coinbase-card-vs-gemini-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Coinbase Card Vs Gemini Card</a>
+  <a href="/crypto-cards/compare/bitpay-vs-crypto-com" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitpay Vs Crypto Com</a>
+  <a href="/crypto-cards/compare/crypto-com-vs-coinbase-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com Vs Coinbase Card</a>
+</nav>
     </article>
   );
 }

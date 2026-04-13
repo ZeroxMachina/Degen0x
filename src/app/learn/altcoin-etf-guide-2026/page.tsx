@@ -253,8 +253,6 @@ export default function AltcoinETFGuidePage() {
             <li key={id}>
               <a
                 style={{ color: "#58a6ff", textDecoration: "none" }}
-                onMouseEnter={e => { (e.target as HTMLElement).style.textDecoration = 'underline'; }}
-                onMouseLeave={e => { (e.target as HTMLElement).style.textDecoration = 'none'; }}
               >
                 {label}
               </a>

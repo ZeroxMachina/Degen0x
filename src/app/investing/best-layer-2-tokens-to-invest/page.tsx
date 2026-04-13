@@ -448,6 +448,12 @@ export default function BestLayer2Tokens2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/crypto/cardano" style={{ color: "#fb923c", marginRight: "1rem" }}>Cardano</a>
+  <a href="/investing/crypto/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/investing/crypto/polkadot" style={{ color: "#fb923c", marginRight: "1rem" }}>Polkadot</a>
+</nav>
     </article>
   );
 }

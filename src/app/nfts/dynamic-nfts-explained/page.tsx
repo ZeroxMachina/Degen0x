@@ -628,6 +628,12 @@ export default function DynamicNFTsGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/compare/opensea-vs-blur" style={{ color: "#fb923c", marginRight: "1rem" }}>Opensea Vs Blur</a>
+  <a href="/nfts/compare/magic-eden-vs-opensea" style={{ color: "#fb923c", marginRight: "1rem" }}>Magic Eden Vs Opensea</a>
+  <a href="/nfts/compare/looksrare-vs-x2y2" style={{ color: "#fb923c", marginRight: "1rem" }}>Looksrare Vs X2y2</a>
+</nav>
     </article>
   );
 }

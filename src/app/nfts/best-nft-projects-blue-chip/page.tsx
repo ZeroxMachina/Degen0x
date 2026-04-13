@@ -370,6 +370,13 @@ export default function BestNftProjectsBlueChip() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/best-nft-marketplace-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Nft Marketplace Comparison 2026</a>
+  <a href="/nfts/best/music" style={{ color: "#fb923c", marginRight: "1rem" }}>Music</a>
+  <a href="/nfts/best/gaming" style={{ color: "#fb923c", marginRight: "1rem" }}>Gaming</a>
+</nav>
+
 </article>
   );
 }

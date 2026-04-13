@@ -598,6 +598,13 @@ export default function CryptoCardWithNoForeignFees() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/compare/crypto-com-vs-binance-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com Vs Binance Card</a>
+  <a href="/crypto-cards/compare/nexo-vs-crypto-com" style={{ color: "#fb923c", marginRight: "1rem" }}>Nexo Vs Crypto Com</a>
+  <a href="/crypto-cards/compare/crypto-com-vs-bybit-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com Vs Bybit Card</a>
+  <a href="/crypto-cards/crypto-travel-card-best-options" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Travel Card Best Options</a>
+</nav>
     </article>
   );
 }

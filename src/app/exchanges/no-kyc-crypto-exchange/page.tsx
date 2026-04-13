@@ -337,6 +337,12 @@ export default function NoKycCryptoExchange() {
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/exchanges/gate-io" style={{ color: "#fb923c", marginRight: "1rem" }}>Gate Io</a>
+  <a href="/exchanges/kucoin" style={{ color: "#fb923c", marginRight: "1rem" }}>Kucoin</a>
+  <a href="/exchanges/compare/kucoin-vs-gate-io" style={{ color: "#fb923c", marginRight: "1rem" }}>Kucoin Vs Gate Io</a>
+</nav>
       </article>
   );
 }

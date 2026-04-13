@@ -14,7 +14,7 @@ import { SITE_NAME, SITE_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Blog — Crypto News, Analysis & Guides | ${SITE_NAME}`,
   description:
-    "Stay ahead with degen0x blog. Market analysis, DeFi updates, regulation news, and expert guides for crypto investors.",
+    "degen0x blog: Crypto market analysis, DeFi protocol updates, regulation news, token launches, advanced trading strategies, and trader insights.",
   openGraph: {
     title: `Blog — Crypto News & Analysis | ${SITE_NAME}`,
     description: "Market analysis, DeFi updates, regulation news, and expert guides.",

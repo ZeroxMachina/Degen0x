@@ -474,6 +474,13 @@ export default function NFTGamingPlayToEarn2026() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/compare/foundation-vs-superrare" style={{ color: "#fb923c", marginRight: "1rem" }}>Foundation Vs Superrare</a>
+  <a href="/nfts/compare/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/nfts/compare/opensea-vs-rarible" style={{ color: "#fb923c", marginRight: "1rem" }}>Opensea Vs Rarible</a>
+</nav>
+
 </article>
   );
 }

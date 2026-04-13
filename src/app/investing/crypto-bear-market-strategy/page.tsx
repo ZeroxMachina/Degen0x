@@ -641,6 +641,12 @@ export default function CryptoBearMarketStrategy2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/staking/compare/lido-vs-rocket-pool" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido Vs Rocket Pool</a>
+  <a href="/investing/staking/compare/eigenlayer-vs-lido" style={{ color: "#fb923c", marginRight: "1rem" }}>Eigenlayer Vs Lido</a>
+  <a href="/investing/staking/compare/coinbase-vs-lido" style={{ color: "#fb923c", marginRight: "1rem" }}>Coinbase Vs Lido</a>
+</nav>
     </article>
   );
 }

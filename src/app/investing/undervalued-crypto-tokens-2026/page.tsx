@@ -518,6 +518,12 @@ export default function UndervaluedCryptoTokens2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/best/trading-platforms" style={{ color: "#fb923c", marginRight: "1rem" }}>Trading Platforms</a>
+  <a href="/investing/best/long-term" style={{ color: "#fb923c", marginRight: "1rem" }}>Long Term</a>
+  <a href="/investing/best/passive-income" style={{ color: "#fb923c", marginRight: "1rem" }}>Passive Income</a>
+</nav>
     </article>
   );
 }

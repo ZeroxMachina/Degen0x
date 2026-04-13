@@ -166,7 +166,7 @@ export default function AsterChainGuidePage() {
               ["9", "faq", "FAQ"],
             ].map(([num, anchor, label]) => (
               <li key={anchor} style={{ fontSize: 14 }}>
-                <a href={`#${anchor}`} style={{ color: "#58a6ff", textDecoration: "none", transition: "text-decoration 0.15s" }} onMouseEnter={(e) => (e.currentTarget.style.textDecoration = "underline")} onMouseLeave={(e) => (e.currentTarget.style.textDecoration = "none")}>
+                <a href={`#${anchor}`} style={{ color: "#58a6ff", textDecoration: "none", transition: "text-decoration 0.15s" }}>
                   {num}. {label}
                 </a>
               </li>

@@ -537,6 +537,13 @@ export default function CryptoEstateTaxPlanning() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/taxes/defi-tax-reporting-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Tax Reporting Guide</a>
+  <a href="/taxes/international-crypto-tax-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>International Crypto Tax Comparison</a>
+  <a href="/taxes/crypto-tax-loss-harvesting-complete-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax Loss Harvesting Complete Guide</a>
+  <a href="/taxes/best/free-tools" style={{ color: "#fb923c", marginRight: "1rem" }}>Free Tools</a>
+</nav>
     </article>
   );
 }

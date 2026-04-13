@@ -5,7 +5,7 @@ import MapleFinanceClient from "./MapleFinanceClient";
 
 export const metadata: Metadata = {
   title: "Maple Finance: Institutional On-Chain Credit",
-  description: "DeFi lending for institutions. Decentralized institutional credit marketplace with $3.2B TVL and ~4.7% syrupUSDC APY.",
+  description: "Maple Finance: Institutional on-chain credit on Ethereum and Arbitrum. Decentralized lending with $3.2B TVL, 4.7% USDC yield, and institutional borrowing.",
   openGraph: {
     title: "Maple Finance: Institutional On-Chain Credit",
     description: "DeFi lending for institutions. Decentralized institutional credit marketplace with $3.2B TVL and ~4.7% syrupUSDC APY.",

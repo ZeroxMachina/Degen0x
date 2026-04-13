@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Polkadot JAM Protocol Guide 2026 — Coretime & Supercomputer",
   description:
-    "Polkadot JAM protocol guide. Join-Accumulate-Machine, coretime, supercomputer scaling, PvD parachains.",
+    "Polkadot JAM protocol guide: Join-Accumulate-Machine architecture, coretime blockspace model, supercomputer scaling, parachain design, validators.",
   keywords: ["Polkadot", "JAM", "coretime", "supercomputer", "parachains", "Web3", "scaling"],
   openGraph: {
     type: "article",

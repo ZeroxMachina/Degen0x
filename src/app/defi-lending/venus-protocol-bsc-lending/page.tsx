@@ -385,6 +385,14 @@ export default function VenusProtocolBscLending() {
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/defi-lending/compare/cefi-vs-defi-lending" style={{ color: "#fb923c", marginRight: "1rem" }}>Cefi Vs Defi Lending</a>
+  <a href="/defi-lending/compare/spark-vs-aave" style={{ color: "#fb923c", marginRight: "1rem" }}>Spark Vs Aave</a>
+  <a href="/defi-lending/compare/fixed-vs-variable-rate" style={{ color: "#fb923c", marginRight: "1rem" }}>Fixed Vs Variable Rate</a>
+  <a href="/defi-lending/compare/curve-vs-uniswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Curve Vs Uniswap</a>
+  <a href="/defi-lending/compare/maple-vs-goldfinch" style={{ color: "#fb923c", marginRight: "1rem" }}>Maple Vs Goldfinch</a>
+</nav>
       </article>
   );
 }

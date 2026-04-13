@@ -44,6 +44,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/amm-liquidity-pools-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'AMM & Liquidity Pools Guide 2026' },
+  ],
+};
+
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "AMM & Liquidity Pools Guide 2026 — How DEX Trading Works",
@@ -102,6 +112,7 @@ const AMMGuide = () => {
         padding: "40px 20px",
       }}
     >
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
       <div
         style={{
@@ -251,8 +262,6 @@ const AMMGuide = () => {
                     gap: "8px",
                     transition: "color 0.2s",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#79c0ff")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff")}
                 >
                   <ChevronRight size={16} />
                   {item.label}
@@ -1633,8 +1642,6 @@ const AMMGuide = () => {
                       alignItems: "center",
                       gap: "8px",
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = "#79c0ff")}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff")}
                   >
                     <ChevronRight size={14} />
                     {link.label}
@@ -1755,6 +1762,12 @@ const AMMGuide = () => {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/bonding-curves-token-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Bonding Curves Token Explained</a>
+  <a href="/learn/uniswap-v4-hooks-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Uniswap V4 Hooks Guide</a>
+  <a href="/learn/world-chain-proof-of-personhood-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>World Chain Proof Of Personhood Guide 2026</a>
+</nav>
     </article>
   );
 };

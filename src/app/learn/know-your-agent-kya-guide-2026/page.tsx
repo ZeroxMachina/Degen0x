@@ -474,7 +474,7 @@ export default function KYAGuide() {
               { title: "Account Abstraction Guide", href: "/learn/account-abstraction" },
             ].map((article, i) => (
               <Link key={i} href={article.href} style={{ textDecoration: 'none' }}>
-                <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', cursor: 'pointer', transition: 'all 0.2s ease', height: '100%' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#58a6ff'; e.currentTarget.style.backgroundColor = '#0d1117'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#30363d'; e.currentTarget.style.backgroundColor = '#161b22'; }}>
+                <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', cursor: 'pointer', transition: 'all 0.2s ease', height: '100%' }}>
                   <h3 style={{ color: '#58a6ff', fontSize: '15px', fontWeight: 600, marginBottom: '8px' }}>{article.title}</h3>
                   <p style={{ color: '#8b949e', fontSize: '13px' }}>Learn more about this topic →</p>
                 </div>

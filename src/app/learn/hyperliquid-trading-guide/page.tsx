@@ -755,6 +755,12 @@ export default function HyperliquidTradingGuidePage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Pyth Network Oracle Cross Chain Price Feeds Guide 2026</a>
+  <a href="/learn/fully-onchain-gaming-autonomous-worlds-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Fully Onchain Gaming Autonomous Worlds Guide 2026</a>
+  <a href="/learn/solayer-solana-restaking-layer-infinisvm-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solayer Solana Restaking Layer Infinisvm Guide 2026</a>
+</nav>
       </article>
       <BackToTop />
     </main>

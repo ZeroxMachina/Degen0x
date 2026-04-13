@@ -442,6 +442,15 @@ export default function BestProjectsOnBNBChain2026() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/yearn" style={{ color: "#fb923c", marginRight: "1rem" }}>Yearn</a>
+  <a href="/ecosystem/best-projects-on-scroll" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Projects On Scroll</a>
+  <a href="/ecosystem/jito" style={{ color: "#fb923c", marginRight: "1rem" }}>Jito</a>
+  <a href="/ecosystem/uniswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Uniswap</a>
+  <a href="/ecosystem/liquidswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Liquidswap</a>
+</nav>
+
 </article>
   );
 }

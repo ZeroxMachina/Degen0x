@@ -600,6 +600,12 @@ export default function DAOToolsGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/web3-business/reviews/ramp-network" style={{ color: "#fb923c", marginRight: "1rem" }}>Ramp Network</a>
+  <a href="/web3-business/reviews/bitpay-business" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitpay Business</a>
+  <a href="/web3-business/reviews/sablier" style={{ color: "#fb923c", marginRight: "1rem" }}>Sablier</a>
+</nav>
     </article>
   );
 }

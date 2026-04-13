@@ -465,6 +465,13 @@ export default function NFTRarityToolsHowToUse() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/best/free-mint" style={{ color: "#fb923c", marginRight: "1rem" }}>Free Mint</a>
+  <a href="/nfts/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/nfts/best/bitcoin-ordinals" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Ordinals</a>
+</nav>
+
 </article>
   );
 }

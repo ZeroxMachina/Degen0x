@@ -461,6 +461,15 @@ export default function BestProjectsBase() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/lorenzo-protocol" style={{ color: "#fb923c", marginRight: "1rem" }}>Lorenzo Protocol</a>
+  <a href="/ecosystem/near-protocol-ecosystem-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Near Protocol Ecosystem Guide</a>
+  <a href="/ecosystem/synthetix" style={{ color: "#fb923c", marginRight: "1rem" }}>Synthetix</a>
+  <a href="/ecosystem/compound" style={{ color: "#fb923c", marginRight: "1rem" }}>Compound</a>
+  <a href="/ecosystem/syncswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Syncswap</a>
+</nav>
+
 </article>
   );
 }

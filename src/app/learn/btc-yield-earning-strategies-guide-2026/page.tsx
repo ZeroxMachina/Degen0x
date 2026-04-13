@@ -851,7 +851,7 @@ export default function BTCYieldStrategiesGuidePage() {
             { href: "/learn/bitcoin-liquid-staking-tokens-guide-2026", label: "Bitcoin Liquid Staking Tokens Guide" },
             { href: "/learn/stablecoin-yield-strategies-2026", label: "Stablecoin Yield Strategies 2026" },
             { href: "/learn/bitcoin-safe-haven-guide-2026", label: "Bitcoin as a Safe Haven: Geopolitical Hedge Guide" },
-          ].map((link) => (
+          ].map((item) => (
             <Link href={item.href}
               key={link.href}
               style={{ color: "#58a6ff" }}

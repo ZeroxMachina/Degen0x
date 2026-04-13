@@ -6,7 +6,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Sablier Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
-  description: "Sablier is a token streaming and vesting protocol enabling linear and dynamic token distribution schedules.",
+  description: "Sablier review: Streamlined crypto payroll and salary payments. Compare real-time payment streams, Web3 payroll, and salary distribution tools.",
   alternates: { canonical: "/web3-business/reviews/sablier" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
-  { title: "Best Exchanges Overall", href: "/exchanges/best", description: "Our top-rated exchanges across all categories" },
+  { title: "Best Exchanges Overall", href: "/exchanges/best", description: "Best cryptocurrency exchanges 2026. Compare spot trading, DEX, futures. Kyc requirements, fees, security, and which exchange is best for you." },
   { title: "Best for Beginners", href: "/exchanges/best/beginners", description: "Easy-to-use platforms for crypto newcomers" },
   { title: "Lowest Fee Exchanges", href: "/exchanges/best/low-fee", description: "Save money with the cheapest trading fees" },
   { title: "Best for Advanced Traders", href: "/exchanges/best/advanced-traders", description: "Professional tools and deep liquidity" },

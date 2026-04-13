@@ -451,6 +451,12 @@ export default function BestWalletForNFTStorage() {
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/wallets/reviews/foundation" style={{ color: "#fb923c", marginRight: "1rem" }}>Foundation</a>
+  <a href="/wallets/reviews/blue-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Blue Wallet</a>
+  <a href="/wallets/reviews/keystone" style={{ color: "#fb923c", marginRight: "1rem" }}>Keystone</a>
+</nav>
       </article>
   );
 }

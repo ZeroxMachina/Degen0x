@@ -550,6 +550,13 @@ export default function NFTRoyalties() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/reviews/blur" style={{ color: "#fb923c", marginRight: "1rem" }}>Blur</a>
+  <a href="/nfts/reviews/rarible" style={{ color: "#fb923c", marginRight: "1rem" }}>Rarible</a>
+  <a href="/nfts/reviews/magic-eden" style={{ color: "#fb923c", marginRight: "1rem" }}>Magic Eden</a>
+</nav>
+
 </article>
   );
 }

@@ -454,6 +454,12 @@ export default function CryptoScalpingStrategyGuide() {
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/trading/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/trading/tools/liquidation-map" style={{ color: "#fb923c", marginRight: "1rem" }}>Liquidation Map</a>
+  <a href="/trading/crypto-trading-bots-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Trading Bots Comparison 2026</a>
+</nav>
       </article>
   );
 }

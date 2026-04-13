@@ -604,6 +604,12 @@ export default function BestPrivacyCoins2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/investing/tools/staking-apy" style={{ color: "#fb923c", marginRight: "1rem" }}>Staking Apy</a>
+  <a href="/investing/tools/portfolio-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Tracker</a>
+</nav>
     </article>
   );
 }

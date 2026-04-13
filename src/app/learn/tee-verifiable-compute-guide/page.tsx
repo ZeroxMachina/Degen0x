@@ -563,6 +563,12 @@ export default function TEEVerifiableComputeGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/smart-contract-security-audit-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Smart Contract Security Audit Guide 2026</a>
+  <a href="/learn/layer-0-blockchain-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Layer 0 Blockchain Explained</a>
+  <a href="/learn/embed-widgets-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Embed Widgets Crypto</a>
+</nav>
       </article>
     <BackToTop />
     

@@ -354,6 +354,12 @@ export default function BestHardwareWallet2026() {
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/wallets/reviews/phantom-solana" style={{ color: "#fb923c", marginRight: "1rem" }}>Phantom Solana</a>
+  <a href="/wallets/reviews/backpack-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Backpack Wallet</a>
+  <a href="/wallets/reviews/safepal" style={{ color: "#fb923c", marginRight: "1rem" }}>Safepal</a>
+</nav>
       </article>
   );
 }

@@ -385,6 +385,14 @@ export default function CryptoFlashLoanGuide() {
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/defi-lending/justlend-tron-lending-platform" style={{ color: "#fb923c", marginRight: "1rem" }}>Justlend Tron Lending Platform</a>
+  <a href="/defi-lending/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/defi-lending/compound-v3-usdc-lending" style={{ color: "#fb923c", marginRight: "1rem" }}>Compound V3 Usdc Lending</a>
+  <a href="/defi-lending/defi-credit-scoring-protocols" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Credit Scoring Protocols</a>
+  <a href="/defi-lending/best/cross-chain" style={{ color: "#fb923c", marginRight: "1rem" }}>Cross Chain</a>
+</nav>
       </article>
   );
 }

@@ -493,6 +493,14 @@ export default function CryptoCardVsTraditionalCreditCard() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/best/rewards" style={{ color: "#fb923c", marginRight: "1rem" }}>Rewards</a>
+  <a href="/crypto-cards/best/business" style={{ color: "#fb923c", marginRight: "1rem" }}>Business</a>
+  <a href="/crypto-cards/best/beginners" style={{ color: "#fb923c", marginRight: "1rem" }}>Beginners</a>
+  <a href="/crypto-cards/best/debit" style={{ color: "#fb923c", marginRight: "1rem" }}>Debit</a>
+</nav>
+
 </article>
   );
 }

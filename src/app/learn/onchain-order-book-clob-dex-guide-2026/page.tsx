@@ -783,7 +783,7 @@ export default function OnchainCLOBDexGuidePage() {
             { href: "/learn/amm-liquidity-pools-guide-2026", label: "AMM Liquidity Pools Explained" },
             { href: "/tools/dex-screener", label: "DEX Screener Tool" },
             { href: "/tools/funding-rates", label: "Funding Rates Tracker" },
-          ].map((link) => (
+          ].map((item) => (
             <Link href={item.href}
               key={link.href}
               style={{ color: "#58a6ff" }}

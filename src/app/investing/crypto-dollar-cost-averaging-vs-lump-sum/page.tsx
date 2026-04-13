@@ -654,6 +654,12 @@ export default function DCAvLumpSumInvesting() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/crypto/solana" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana</a>
+  <a href="/investing/crypto/polygon" style={{ color: "#fb923c", marginRight: "1rem" }}>Polygon</a>
+  <a href="/investing/crypto/chainlink" style={{ color: "#fb923c", marginRight: "1rem" }}>Chainlink</a>
+</nav>
     </article>
   );
 }

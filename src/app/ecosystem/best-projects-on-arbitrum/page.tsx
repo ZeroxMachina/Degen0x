@@ -488,6 +488,15 @@ export default function BestProjectsArbitrum() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/fluid" style={{ color: "#fb923c", marginRight: "1rem" }}>Fluid</a>
+  <a href="/ecosystem/drift" style={{ color: "#fb923c", marginRight: "1rem" }}>Drift</a>
+  <a href="/ecosystem/chainlink" style={{ color: "#fb923c", marginRight: "1rem" }}>Chainlink</a>
+  <a href="/ecosystem/convex" style={{ color: "#fb923c", marginRight: "1rem" }}>Convex</a>
+  <a href="/ecosystem/best-projects-on-zksync" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Projects On Zksync</a>
+</nav>
+
 </article>
   );
 }

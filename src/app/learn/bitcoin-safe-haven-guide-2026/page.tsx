@@ -742,7 +742,7 @@ export default function BitcoinSafeHavenGuidePage() {
             { href: "/learn/tokenized-gold-guide-2026", label: "Tokenized Gold Guide: XAUT, PAXG & Digital Gold" },
             { href: "/learn/crypto-risk-management-guide-2026", label: "Crypto Risk Management Guide" },
             { href: "/learn/btc-yield-earning-strategies-guide-2026", label: "BTC Yield & BTCFi Earning Strategies 2026" },
-          ].map((link) => (
+          ].map((item) => (
             <Link href={item.href}
               key={link.href}
               style={{ color: "#58a6ff" }}
@@ -778,6 +778,12 @@ export default function BitcoinSafeHavenGuidePage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/rwa-platforms-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Rwa Platforms Comparison 2026</a>
+  <a href="/learn/cross-chain-messaging-protocols-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Cross Chain Messaging Protocols Guide 2026</a>
+  <a href="/learn/berachain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Berachain Guide</a>
+</nav>
       </article>
   );
 }

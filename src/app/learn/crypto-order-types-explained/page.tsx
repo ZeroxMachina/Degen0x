@@ -805,6 +805,12 @@ export default function CryptoOrderTypesGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/what-are-soulbound-tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>What Are Soulbound Tokens</a>
+  <a href="/learn/how-to-buy-bitcoin-step-by-step" style={{ color: "#fb923c", marginRight: "1rem" }}>How To Buy Bitcoin Step By Step</a>
+  <a href="/learn/ethereum-fusaka-peerdas-upgrade-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Fusaka Peerdas Upgrade Guide 2026</a>
+</nav>
       </article>
   );
 }

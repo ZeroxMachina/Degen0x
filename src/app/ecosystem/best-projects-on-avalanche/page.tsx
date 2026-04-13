@@ -620,6 +620,15 @@ export default function BestProjectsOnAvalanche() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/blast" style={{ color: "#fb923c", marginRight: "1rem" }}>Blast</a>
+  <a href="/ecosystem/dydx" style={{ color: "#fb923c", marginRight: "1rem" }}>Dydx</a>
+  <a href="/ecosystem/initia" style={{ color: "#fb923c", marginRight: "1rem" }}>Initia</a>
+  <a href="/ecosystem/scroll-dex" style={{ color: "#fb923c", marginRight: "1rem" }}>Scroll Dex</a>
+  <a href="/ecosystem/maple-finance" style={{ color: "#fb923c", marginRight: "1rem" }}>Maple Finance</a>
+</nav>
+
 </article>
   );
 }

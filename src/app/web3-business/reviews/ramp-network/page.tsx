@@ -6,7 +6,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Ramp Network Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
-  description: "Ramp Network provides fiat-to-crypto on-ramp and off-ramp infrastructure that businesses can embed in their apps.",
+  description: "Ramp Network review: Crypto on-ramps for businesses and users. Buy crypto with fiat in 100+ countries. Compare fees, methods, speed to competitors.",
   alternates: { canonical: "/web3-business/reviews/ramp-network" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

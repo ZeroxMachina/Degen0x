@@ -611,6 +611,14 @@ export default function KaminoFinanceGuide() {
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/defi-lending/reviews/exactly" style={{ color: "#fb923c", marginRight: "1rem" }}>Exactly</a>
+  <a href="/defi-lending/reviews/silo" style={{ color: "#fb923c", marginRight: "1rem" }}>Silo</a>
+  <a href="/defi-lending/reviews/kamino" style={{ color: "#fb923c", marginRight: "1rem" }}>Kamino</a>
+  <a href="/defi-lending/reviews/orbit" style={{ color: "#fb923c", marginRight: "1rem" }}>Orbit</a>
+  <a href="/defi-lending/reviews/pac-finance" style={{ color: "#fb923c", marginRight: "1rem" }}>Pac Finance</a>
+</nav>
       </article>
   );
 }

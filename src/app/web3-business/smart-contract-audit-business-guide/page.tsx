@@ -490,6 +490,12 @@ export default function SmartContractAuditBusinessGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/web3-business/best/launchpads" style={{ color: "#fb923c", marginRight: "1rem" }}>Launchpads</a>
+  <a href="/web3-business/best/grants" style={{ color: "#fb923c", marginRight: "1rem" }}>Grants</a>
+  <a href="/web3-business/best/treasury-tools" style={{ color: "#fb923c", marginRight: "1rem" }}>Treasury Tools</a>
+</nav>
     </article>
   );
 }

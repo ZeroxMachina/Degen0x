@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
-  { title: "Best Staking Platforms", href: "/investing/staking/best", description: "Our top-rated staking platforms across all categories" },
+  { title: "Best Staking Platforms", href: "/investing/staking/best", description: "Cryptocurrency staking guide: Earn rewards on Bitcoin, Ethereum, Solana, and 100+ coins. Compare staking options, APY, risks, and strategies." },
   { title: "Best Ethereum Staking", href: "/investing/staking/best/ethereum", description: "Top platforms for staking ETH" },
   { title: "Best Solana Staking", href: "/investing/staking/best/solana", description: "Top platforms for staking SOL" },
   { title: "Best Liquid Staking", href: "/investing/staking/best/liquid-staking", description: "Stake and keep your assets liquid" },

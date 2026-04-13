@@ -455,6 +455,14 @@ export default function BestCardForBitcoinCashback() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/reviews/gemini-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Gemini Card</a>
+  <a href="/crypto-cards/reviews/hi-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Hi Card</a>
+  <a href="/crypto-cards/reviews/hold-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Hold Card</a>
+  <a href="/crypto-cards/reviews/nexo-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Nexo Card</a>
+</nav>
+
 </article>
   );
 }

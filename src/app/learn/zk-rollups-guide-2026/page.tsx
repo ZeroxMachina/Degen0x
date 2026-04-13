@@ -692,6 +692,12 @@ export default function ZKRollupsGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/web3-gaming-gamefi-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Web3 Gaming Gamefi Guide 2026</a>
+  <a href="/learn/know-your-agent-kya-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Know Your Agent Kya Guide 2026</a>
+  <a href="/learn/modular-vs-monolithic-blockchains" style={{ color: "#fb923c", marginRight: "1rem" }}>Modular Vs Monolithic Blockchains</a>
+</nav>
       </article>
   );
 }

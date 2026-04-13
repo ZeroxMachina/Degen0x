@@ -187,10 +187,6 @@ export default function AppChainsGuide() {
             <li style={{ marginBottom: '8px' }}>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
               >
                 1. What Are Appchains?
               </a>
@@ -198,10 +194,6 @@ export default function AppChainsGuide() {
             <li style={{ marginBottom: '8px' }}>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
               >
                 2. Why Protocols Are Launching Their Own Chains
               </a>
@@ -209,10 +201,6 @@ export default function AppChainsGuide() {
             <li style={{ marginBottom: '8px' }}>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
               >
                 3. Appchain Frameworks & Implementation
               </a>
@@ -220,10 +208,6 @@ export default function AppChainsGuide() {
             <li style={{ marginBottom: '8px' }}>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
               >
                 4. Major Appchain Case Studies
               </a>
@@ -231,10 +215,6 @@ export default function AppChainsGuide() {
             <li style={{ marginBottom: '8px' }}>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
               >
                 5. Rollups-as-a-Service (RaaS)
               </a>
@@ -242,10 +222,6 @@ export default function AppChainsGuide() {
             <li style={{ marginBottom: '8px' }}>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
               >
                 6. Appchains vs. Shared Rollups
               </a>
@@ -253,10 +229,6 @@ export default function AppChainsGuide() {
             <li style={{ marginBottom: '8px' }}>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
               >
                 7. The Interoperability Challenge
               </a>
@@ -264,10 +236,6 @@ export default function AppChainsGuide() {
             <li style={{ marginBottom: '8px' }}>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
               >
                 8. The Future of Appchains in 2026
               </a>
@@ -275,10 +243,6 @@ export default function AppChainsGuide() {
             <li style={{ marginBottom: '0px' }}>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
               >
                 9. Frequently Asked Questions
               </a>
@@ -802,8 +766,6 @@ export default function AppChainsGuide() {
             <li>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
               >
                 → Unichain: The DEX-Specific Rollup
               </a>
@@ -811,8 +773,6 @@ export default function AppChainsGuide() {
             <li>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
               >
                 → Base Chain & Consumer Platforms
               </a>
@@ -820,8 +780,6 @@ export default function AppChainsGuide() {
             <li>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
               >
                 → Modular Blockchain Architecture
               </a>
@@ -829,8 +787,6 @@ export default function AppChainsGuide() {
             <li>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
               >
                 → Cross-Chain Interoperability Solutions
               </a>
@@ -838,8 +794,6 @@ export default function AppChainsGuide() {
             <li>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
               >
                 → L3 Networks & Nested Rollups
               </a>
@@ -847,8 +801,6 @@ export default function AppChainsGuide() {
             <li>
               <a
                 style={{ color: '#58a6ff', textDecoration: 'none' }}
-                onMouseEnter={(e) => { e.currentTarget.style.textDecoration = 'underline'; e.currentTarget.style.backgroundColor = 'rgba(88, 166, 255, 0.08)'; e.currentTarget.style.borderRadius = '6px'; e.currentTarget.style.padding = '4px 8px'; e.currentTarget.style.margin = '-4px -8px'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.textDecoration = 'none'; e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.padding = '0'; e.currentTarget.style.margin = '0'; }}
               >
                 → Chain Comparison Tool
               </a>

@@ -448,6 +448,12 @@ export default function CryptoPairsTradingStrategyExpanded() {
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/trading/leverage-trading-crypto-beginners-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Leverage Trading Crypto Beginners Guide</a>
+  <a href="/trading/crypto-swing-trading-strategy" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Swing Trading Strategy</a>
+  <a href="/trading/grid-trading-bot-crypto-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Grid Trading Bot Crypto Guide</a>
+</nav>
       </article>
   );
 }

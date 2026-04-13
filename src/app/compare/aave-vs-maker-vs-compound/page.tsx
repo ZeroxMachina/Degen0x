@@ -376,6 +376,12 @@ export default function AaveVsMakerVsCompound() {
           </p>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/compare/exchanges/bybit-vs-binance" style={{ color: "#fb923c", marginRight: "1rem" }}>Bybit Vs Binance</a>
+  <a href="/compare/exchanges/gate-io-vs-kucoin" style={{ color: "#fb923c", marginRight: "1rem" }}>Gate Io Vs Kucoin</a>
+  <a href="/compare/wallets/metamask-vs-phantom" style={{ color: "#fb923c", marginRight: "1rem" }}>Metamask Vs Phantom</a>
+</nav>
     </article>
   );
 }

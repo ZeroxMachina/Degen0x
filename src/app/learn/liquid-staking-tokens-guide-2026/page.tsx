@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Liquid Staking Tokens Guide 2026",
   description:
-    "Master liquid staking in DeFi: Lido, Rocket Pool, TVL analysis, stETH vs rETH, risks, and yield strategies.",
+    "Master liquid staking tokens: Lido, Rocket Pool, Kelp, Puffer. Compare stETH, rETH, yields, risks, strategies for earning ETH staking rewards.",
   keywords: [
     "liquid staking",
     "LST",

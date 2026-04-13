@@ -208,6 +208,14 @@ export default function BestDefiLendingPlatform() {
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/defi-lending/calculators/yield-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Yield Calculator</a>
+  <a href="/defi-lending/benqi-avalanche-lending-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Benqi Avalanche Lending Guide</a>
+  <a href="/defi-lending/compare/overcollateralized-vs-undercollateralized" style={{ color: "#fb923c", marginRight: "1rem" }}>Overcollateralized Vs Undercollateralized</a>
+  <a href="/defi-lending/compare/compound-vs-venus" style={{ color: "#fb923c", marginRight: "1rem" }}>Compound Vs Venus</a>
+  <a href="/defi-lending/compare/lido-vs-eigenlayer" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido Vs Eigenlayer</a>
+</nav>
       </article>
   );
 }

@@ -603,6 +603,12 @@ export default function CryptoLendingRisksGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/bitcoin-covenants-opcat-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Covenants Opcat Guide 2026</a>
+  <a href="/learn/unichain-uniswap-layer-2-ecosystem-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Unichain Uniswap Layer 2 Ecosystem Guide 2026</a>
+  <a href="/learn/abstract-chain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Abstract Chain Guide</a>
+</nav>
       </article>
   );
 }

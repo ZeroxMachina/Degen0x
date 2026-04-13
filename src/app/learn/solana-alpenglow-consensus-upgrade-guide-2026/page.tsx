@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV",
-  description: "Solana Alpenglow consensus upgrade guide 2026. MEV resistance, state compression, validator performance improvements.",
+  description: "Solana Alpenglow consensus upgrade: MEV resistance, state compression, validator performance, scalability improvements, and network enhancements 2026.",
   keywords: ["Solana", "Alpenglow", "consensus", "MEV", "state compression"],
   openGraph: {
     type: "article",

@@ -573,6 +573,13 @@ export default function MetalCryptoCardComparison() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/best/high-spenders" style={{ color: "#fb923c", marginRight: "1rem" }}>High Spenders</a>
+  <a href="/crypto-cards/best/cashback" style={{ color: "#fb923c", marginRight: "1rem" }}>Cashback</a>
+  <a href="/crypto-cards/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/crypto-cards/best/travel" style={{ color: "#fb923c", marginRight: "1rem" }}>Travel</a>
+</nav>
     </article>
   );
 }

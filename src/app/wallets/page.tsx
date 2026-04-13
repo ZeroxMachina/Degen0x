@@ -126,7 +126,7 @@ export default function WalletsHubPage() {
       <section className="mb-16">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Best Crypto Wallets by Category</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {BEST_OF_LINKS.map((link) => (
+          {BEST_OF_LINKS.map((item) => (
             <Link href={item.href}
               key={link.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
@@ -142,7 +142,7 @@ export default function WalletsHubPage() {
       <section id="reviews" className="mb-16">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Reviews</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {REVIEW_LINKS.map((link) => (
+          {REVIEW_LINKS.map((item) => (
             <Link href={item.href}
               key={link.href}
             >
@@ -157,7 +157,7 @@ export default function WalletsHubPage() {
       <section id="comparisons" className="mb-16">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Comparisons</h2>
         <div className="grid md:grid-cols-2 gap-4">
-          {COMPARISON_LINKS.map((link) => (
+          {COMPARISON_LINKS.map((item) => (
             <Link href={item.href}
               key={link.href}
             >
@@ -172,7 +172,7 @@ export default function WalletsHubPage() {
       <section id="guides" className="mb-16">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Guides & Education</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {LEARN_LINKS.map((link) => (
+          {LEARN_LINKS.map((item) => (
             <Link href={item.href}
               key={link.href}
             >
@@ -187,7 +187,7 @@ export default function WalletsHubPage() {
       <section className="mb-16">
         <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Wallet Tools</h2>
         <div className="grid md:grid-cols-2 gap-4">
-          {TOOL_LINKS.map((link) => (
+          {TOOL_LINKS.map((item) => (
             <Link href={item.href}
               key={link.href}
             >

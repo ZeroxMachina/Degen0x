@@ -91,7 +91,7 @@ export default function MorphoProtocolGuidePage() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117', color: '#e6edf3' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-      <StructuredData schema={schemas} />
+      <StructuredData data={schemas} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Learn", href: "/learn" },
@@ -540,8 +540,6 @@ export default function MorphoProtocolGuidePage() {
                 borderColor: '#30363d',
                 color: '#58a6ff',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1f2937')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#161b22')}
             >
               <h3 className="font-semibold mb-2">Aave V4 Guide</h3>
               <p style={{ color: '#8b949e', fontSize: '0.875rem' }}>
@@ -555,8 +553,6 @@ export default function MorphoProtocolGuidePage() {
                 borderColor: '#30363d',
                 color: '#58a6ff',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1f2937')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#161b22')}
             >
               <h3 className="font-semibold mb-2">DeFi Yields Tool</h3>
               <p style={{ color: '#8b949e', fontSize: '0.875rem' }}>
@@ -570,8 +566,6 @@ export default function MorphoProtocolGuidePage() {
                 borderColor: '#30363d',
                 color: '#58a6ff',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1f2937')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#161b22')}
             >
               <h3 className="font-semibold mb-2">Lending Protocol Comparison</h3>
               <p style={{ color: '#8b949e', fontSize: '0.875rem' }}>
@@ -585,8 +579,6 @@ export default function MorphoProtocolGuidePage() {
                 borderColor: '#30363d',
                 color: '#58a6ff',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#1f2937')}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#161b22')}
             >
               <h3 className="font-semibold mb-2">Advanced DeFi Strategies</h3>
               <p style={{ color: '#8b949e', fontSize: '0.875rem' }}>

@@ -667,6 +667,12 @@ export default function NFTTicketingGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/reviews/x2y2" style={{ color: "#fb923c", marginRight: "1rem" }}>X2y2</a>
+  <a href="/nfts/reviews/element-market" style={{ color: "#fb923c", marginRight: "1rem" }}>Element Market</a>
+  <a href="/nfts/reviews/ordinals-market" style={{ color: "#fb923c", marginRight: "1rem" }}>Ordinals Market</a>
+</nav>
     </article>
   );
 }

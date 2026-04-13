@@ -584,6 +584,13 @@ export default function ERC721vs1155() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/reviews/foundation" style={{ color: "#fb923c", marginRight: "1rem" }}>Foundation</a>
+  <a href="/nfts/reviews/superrare" style={{ color: "#fb923c", marginRight: "1rem" }}>Superrare</a>
+  <a href="/nfts/reviews/zora" style={{ color: "#fb923c", marginRight: "1rem" }}>Zora</a>
+</nav>
+
 </article>
   );
 }

@@ -692,6 +692,12 @@ export default function CryptoSecurityMasterclassPage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/passkey-embedded-wallets-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Passkey Embedded Wallets Guide 2026</a>
+  <a href="/learn/tempo-blockchain-machine-payments-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Tempo Blockchain Machine Payments Guide</a>
+  <a href="/learn/onchain-credit-scoring-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Credit Scoring Guide 2026</a>
+</nav>
       </article>
           <div style={{
         marginTop: "32px",

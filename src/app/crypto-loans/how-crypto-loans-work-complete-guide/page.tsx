@@ -453,6 +453,14 @@ export default function HowCryptoLoansWork() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-loans/reviews/venus-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Venus Loans</a>
+  <a href="/crypto-loans/reviews/aave-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Aave Loans</a>
+  <a href="/crypto-loans/reviews/liquity" style={{ color: "#fb923c", marginRight: "1rem" }}>Liquity</a>
+  <a href="/crypto-loans/reviews/makerdao-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Makerdao Loans</a>
+  <a href="/crypto-loans/reviews/unchained" style={{ color: "#fb923c", marginRight: "1rem" }}>Unchained</a>
+</nav>
     </article>
   );
 }

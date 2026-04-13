@@ -385,6 +385,14 @@ export default function SiloFinanceIsolatedLending() {
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/defi-lending/reviews/lido" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido</a>
+  <a href="/defi-lending/reviews/notional" style={{ color: "#fb923c", marginRight: "1rem" }}>Notional</a>
+  <a href="/defi-lending/reviews/morpho" style={{ color: "#fb923c", marginRight: "1rem" }}>Morpho</a>
+  <a href="/defi-lending/reviews/zerolend" style={{ color: "#fb923c", marginRight: "1rem" }}>Zerolend</a>
+  <a href="/defi-lending/reviews/tender" style={{ color: "#fb923c", marginRight: "1rem" }}>Tender</a>
+</nav>
       </article>
   );
 }

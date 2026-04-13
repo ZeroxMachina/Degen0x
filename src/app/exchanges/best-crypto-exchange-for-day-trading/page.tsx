@@ -353,6 +353,12 @@ export default function BestDayTradingExchange() {
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/exchanges/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/exchanges/tools/profit-loss-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Profit Loss Calculator</a>
+  <a href="/exchanges/tools/dca-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Dca Calculator</a>
+</nav>
       </article>
   );
 }

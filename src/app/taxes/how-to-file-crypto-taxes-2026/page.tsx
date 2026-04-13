@@ -165,6 +165,13 @@ export default function CryptoTaxesFiling() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/taxes/reviews/turbotax-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Turbotax Crypto</a>
+  <a href="/taxes/reviews/accointing" style={{ color: "#fb923c", marginRight: "1rem" }}>Accointing</a>
+  <a href="/taxes/reviews/koinly" style={{ color: "#fb923c", marginRight: "1rem" }}>Koinly</a>
+  <a href="/taxes/reviews/zenledger" style={{ color: "#fb923c", marginRight: "1rem" }}>Zenledger</a>
+</nav>
     </article>
   );
 }

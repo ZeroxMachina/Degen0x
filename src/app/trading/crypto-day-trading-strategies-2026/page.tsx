@@ -216,6 +216,12 @@ export default function DayTradingStrategies2026() {
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/trading/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/trading/volume-profile-trading-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Volume Profile Trading Crypto</a>
+  <a href="/trading/dca-bot-strategy-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Dca Bot Strategy Comparison</a>
+</nav>
       </article>
   );
 }

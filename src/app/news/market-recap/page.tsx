@@ -7,7 +7,7 @@ import MarketRecapClient from "./MarketRecapClient";
 export const metadata: Metadata = {
   title: "Daily Market Recap | degen0x AI",
   description:
-    "AI-powered daily crypto market analysis, sentiment tracking, and on-chain signals",
+    "Daily crypto market recap: Price analysis, volume tracking, sentiment signals, on-chain metrics, whale activity tracking, and DEX patterns.",
   keywords: [
     "crypto market recap",
     "Bitcoin",

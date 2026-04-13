@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Usual Protocol USD0 RWA Stablecoin Guide 2026",
-  description: "Learn Usual Protocol USD0: Real World Assets stablecoin backed by US Treasury, bonds, cash. Earn yield on stablecoins.",
+  description: "Usual Protocol USD0: Real-World Assets stablecoin backed by US Treasury bonds. Learn mechanics, yield generation, tokenomics, and risks in 2026.",
   openGraph: {
     title: "Usual Protocol USD0 RWA Stablecoin Guide 2026",
     description: "Usual Protocol USD0 backed by US Treasuries. 5%+ yield on stablecoins."

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
-  { title: "Best Crypto Debit Cards", href: "/spending/best/debit-cards", description: "Top debit cards that let you spend crypto anywhere Visa or Mastercard is accepted" },
+  { title: "Best Crypto Debit Cards", href: "/spending/best/debit-cards", description: "Spend crypto and manage your blockchain wealth. DeFi analytics, portfolio tracking, tax management, spending insights, and financial planning tools." },
   { title: "Best Crypto Cashback Cards", href: "/spending/best/cashback", description: "Earn crypto rewards every time you make a purchase" },
   { title: "Best Crypto Cards for Travel", href: "/spending/best/travel", description: "No foreign transaction fees and worldwide acceptance" },
   { title: "Best Crypto Rewards Cards", href: "/spending/best/rewards", description: "Maximize your rewards in Bitcoin, Ethereum, and more" },

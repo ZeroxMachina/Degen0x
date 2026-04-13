@@ -385,6 +385,12 @@ export default function BestExchangeForCopyTrading() {
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/exchanges/okx" style={{ color: "#fb923c", marginRight: "1rem" }}>Okx</a>
+  <a href="/exchanges/htx" style={{ color: "#fb923c", marginRight: "1rem" }}>Htx</a>
+  <a href="/exchanges/crypto-exchange-security-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Exchange Security Comparison</a>
+</nav>
       </article>
   );
 }

@@ -418,6 +418,12 @@ export default function BestCryptoToInvest2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/best/portfolio-trackers" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Trackers</a>
+  <a href="/investing/best/low-market-cap" style={{ color: "#fb923c", marginRight: "1rem" }}>Low Market Cap</a>
+  <a href="/investing/best/layer-2" style={{ color: "#fb923c", marginRight: "1rem" }}>Layer 2</a>
+</nav>
     </article>
   );
 }

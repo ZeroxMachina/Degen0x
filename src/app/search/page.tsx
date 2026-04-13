@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Search — Crypto Tools",
-  description: "Explore Search on degen0x. Free crypto tools and in-depth analysis.",
+  description: "Search degen0x: Free crypto analysis tools, protocol research, yield trackers, DeFi calculators, governance voting, and blockchain analytics.",
   alternates: { canonical: "https://degen0x.com/search" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

@@ -580,6 +580,12 @@ export default function CryptoIndexFundGuide2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/crypto/stacks" style={{ color: "#fb923c", marginRight: "1rem" }}>Stacks</a>
+  <a href="/investing/crypto/stellar" style={{ color: "#fb923c", marginRight: "1rem" }}>Stellar</a>
+  <a href="/investing/crypto/arbitrum" style={{ color: "#fb923c", marginRight: "1rem" }}>Arbitrum</a>
+</nav>
     </article>
   );
 }

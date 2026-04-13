@@ -477,6 +477,12 @@ export default function NFTDomainNamesGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/floor-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Floor Tracker</a>
+  <a href="/nfts/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/nfts/tools/floor-price-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Floor Price Tracker</a>
+</nav>
     </article>
   );
 }

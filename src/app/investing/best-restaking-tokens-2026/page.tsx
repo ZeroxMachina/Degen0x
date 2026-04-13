@@ -471,6 +471,12 @@ export default function BestRestakingTokens2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/crypto/bitcoin" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin</a>
+  <a href="/investing/crypto/tron" style={{ color: "#fb923c", marginRight: "1rem" }}>Tron</a>
+  <a href="/investing/crypto/monero" style={{ color: "#fb923c", marginRight: "1rem" }}>Monero</a>
+</nav>
     </article>
   );
 }

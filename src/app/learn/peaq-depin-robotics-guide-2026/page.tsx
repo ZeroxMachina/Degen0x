@@ -720,10 +720,6 @@ export default function PeaqDeginRoboticsGuidePage() {
         {/* Back to Top */}
         <div style={{ textAlign: "center", paddingTop: 24 }}>
           <a
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
             style={{
               fontSize: 13,
               color: S.primary,

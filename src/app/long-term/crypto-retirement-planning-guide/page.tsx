@@ -459,6 +459,12 @@ export default function CryptoRetirementPlanningGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/long-term/best/dividend-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Dividend Crypto</a>
+  <a href="/long-term/best/hodl-coins" style={{ color: "#fb923c", marginRight: "1rem" }}>Hodl Coins</a>
+  <a href="/long-term/best/crypto-ira" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Ira</a>
+</nav>
     </article>
   );
 }

@@ -536,6 +536,13 @@ export default function CryptoCashbackComparison() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/reviews/crypto-com-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com Card</a>
+  <a href="/crypto-cards/reviews/wirex-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Wirex Card</a>
+  <a href="/crypto-cards/reviews/plutus-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Plutus Card</a>
+  <a href="/crypto-cards/reviews/bitpay-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitpay Card</a>
+</nav>
     </article>
   );
 }

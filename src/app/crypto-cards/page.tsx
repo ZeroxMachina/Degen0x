@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
-  { title: "Best Crypto Cards Overall", href: "/crypto-cards/best", description: "Our top-rated crypto cards across all categories" },
+  { title: "Best Crypto Cards Overall", href: "/crypto-cards/best", description: "Best crypto debit and credit cards 2026. Compare features, fees, rewards, cashback programs. Spend crypto instantly or earn rewards on purchases." },
   { title: "Best Cashback Cards", href: "/crypto-cards/best/cashback", description: "Cards with the highest crypto cashback rates" },
   { title: "Best Rewards Cards", href: "/crypto-cards/best/rewards", description: "Earn the most crypto rewards on spending" },
   { title: "Best Free Cards (No Annual Fee)", href: "/crypto-cards/best/no-annual-fee", description: "Top crypto cards with zero annual fees" },

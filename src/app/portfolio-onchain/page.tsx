@@ -7,6 +7,20 @@ import Link from 'next/link';
 export const metadata = {
   title: 'On-Chain Portfolio Analytics — Multi-Chain, DeFi & NFT Tracker | degen0x',
   description: 'Track your crypto portfolio across Ethereum, Arbitrum, Base, Polygon & more. See DeFi positions, P&L history, risk scores, and on-chain data in real time.',
+  openGraph: {
+    title: 'On-Chain Portfolio Analytics — Multi-Chain DeFi & NFT Tracker',
+    description: 'Real-time crypto portfolio tracking across Ethereum, Arbitrum, Base, Polygon. See DeFi positions, P&L history, risk scores, and on-chain metrics.',
+    type: 'website',
+    url: 'https://degen0x.com/portfolio-onchain',
+    images: [
+      {
+        url: 'https://degen0x.com/api/og?title=Portfolio+Analytics&category=Tools&type=page',
+        width: 1200,
+        height: 630,
+        alt: 'On-Chain Portfolio Analytics Tracker',
+      },
+    ],
+  },
   alternates: { canonical: "/portfolio-onchain" }};
 
 const breadcrumbData = {

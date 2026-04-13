@@ -640,6 +640,14 @@ export default function MorphoProtocolLendingGuide() {
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/defi-lending/reviews/curve" style={{ color: "#fb923c", marginRight: "1rem" }}>Curve</a>
+  <a href="/defi-lending/reviews/lodestar" style={{ color: "#fb923c", marginRight: "1rem" }}>Lodestar</a>
+  <a href="/defi-lending/reviews/alpaca-finance" style={{ color: "#fb923c", marginRight: "1rem" }}>Alpaca Finance</a>
+  <a href="/defi-lending/reviews/fluid" style={{ color: "#fb923c", marginRight: "1rem" }}>Fluid</a>
+  <a href="/defi-lending/reviews/drift" style={{ color: "#fb923c", marginRight: "1rem" }}>Drift</a>
+</nav>
       </article>
   );
 }

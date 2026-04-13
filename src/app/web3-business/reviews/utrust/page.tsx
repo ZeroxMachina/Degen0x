@@ -6,7 +6,7 @@ import { CURRENT_YEAR } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `UTrust Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
-  description: "UTrust provides crypto payment processing for merchants with buyer protection, instant fiat settlement.",
+  description: "Utrust review: Accept and settle crypto payments without conversion. Compare payment processing fees, features, and Web3 business payment solutions.",
   alternates: { canonical: "/web3-business/reviews/utrust" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

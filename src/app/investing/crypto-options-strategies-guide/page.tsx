@@ -558,6 +558,12 @@ export default function CryptoOptionsStrategiesGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/crypto/fantom" style={{ color: "#fb923c", marginRight: "1rem" }}>Fantom</a>
+  <a href="/investing/crypto/vechain" style={{ color: "#fb923c", marginRight: "1rem" }}>Vechain</a>
+  <a href="/investing/crypto/cosmos" style={{ color: "#fb923c", marginRight: "1rem" }}>Cosmos</a>
+</nav>
     </article>
   );
 }

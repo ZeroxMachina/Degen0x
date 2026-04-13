@@ -427,6 +427,12 @@ export default function BestRWACryptoTokens2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/best/defi-tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Tokens</a>
+  <a href="/investing/best/green-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Green Crypto</a>
+  <a href="/investing/best/crypto-etfs" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Etfs</a>
+</nav>
     </article>
   );
 }

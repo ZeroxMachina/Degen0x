@@ -431,6 +431,14 @@ export default function CryptoLoanWithoutLiquidation() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-loans/calculators/loan-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Loan Calculator</a>
+  <a href="/crypto-loans/calculators/ltv-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Ltv Calculator</a>
+  <a href="/crypto-loans/calculators/liquidation-price-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Liquidation Price Calculator</a>
+  <a href="/crypto-loans/compare/nexo-vs-aave" style={{ color: "#fb923c", marginRight: "1rem" }}>Nexo Vs Aave</a>
+  <a href="/crypto-loans/compare/makerdao-vs-compound" style={{ color: "#fb923c", marginRight: "1rem" }}>Makerdao Vs Compound</a>
+</nav>
     </article>
   );
 }

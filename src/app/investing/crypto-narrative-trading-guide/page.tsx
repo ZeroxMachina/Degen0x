@@ -576,6 +576,12 @@ export default function CryptoNarrativeTradingGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/best/depin-tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>Depin Tokens</a>
+  <a href="/investing/best/airdrops" style={{ color: "#fb923c", marginRight: "1rem" }}>Airdrops</a>
+  <a href="/investing/best/under-1-dollar" style={{ color: "#fb923c", marginRight: "1rem" }}>Under 1 Dollar</a>
+</nav>
     </article>
   );
 }

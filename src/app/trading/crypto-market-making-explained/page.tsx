@@ -463,6 +463,12 @@ export default function CryptoMarketMakingExplainedExpanded() {
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/trading/crypto-trading-psychology-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Trading Psychology Guide</a>
+  <a href="/trading/order-flow-trading-crypto-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Order Flow Trading Crypto Guide</a>
+  <a href="/trading/best" style={{ color: "#fb923c", marginRight: "1rem" }}>Best</a>
+</nav>
       </article>
   );
 }

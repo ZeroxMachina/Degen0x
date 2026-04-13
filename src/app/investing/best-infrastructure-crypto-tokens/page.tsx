@@ -471,6 +471,12 @@ export default function BestInfrastructureCryptoTokens() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/best/yield-farming" style={{ color: "#fb923c", marginRight: "1rem" }}>Yield Farming</a>
+  <a href="/investing/best/privacy-coins" style={{ color: "#fb923c", marginRight: "1rem" }}>Privacy Coins</a>
+  <a href="/investing/best/crypto-index-funds" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Index Funds</a>
+</nav>
     </article>
   );
 }

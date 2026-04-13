@@ -460,6 +460,10 @@ export default function SoliditySmartContractCourse() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/courses/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+</nav>
     </article>
   );
 }

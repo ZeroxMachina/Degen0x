@@ -729,6 +729,12 @@ export default function DePINGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/monad-blockchain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Monad Blockchain Guide</a>
+  <a href="/learn/dyor-token-research-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Dyor Token Research Guide 2026</a>
+  <a href="/learn/rollup-as-a-service-raas-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Rollup As A Service Raas Explained</a>
+</nav>
       </article>
   );
 }

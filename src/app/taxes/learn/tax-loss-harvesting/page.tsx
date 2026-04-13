@@ -788,6 +788,13 @@ export default function TaxLossHarvestingPage() {
             Start Tracking Your Portfolio
           </a>
         </section>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/taxes/crypto-airdrop-tax-treatment" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Airdrop Tax Treatment</a>
+  <a href="/taxes/irs-crypto-reporting-rules-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Irs Crypto Reporting Rules 2026</a>
+  <a href="/taxes/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/taxes/wash-sale-rule-crypto-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Wash Sale Rule Crypto Explained</a>
+</nav>
       </article>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Taxes/learn/tax Loss Harvesting", "description": "Learn crypto tax loss harvesting strategies for 2026. Understand how to offset capital gains, reduce your tax liability, and take advantage of crypto", "url": "https://degen0x.com/taxes/learn/tax-loss-harvesting"}) }} />
           <div style={{

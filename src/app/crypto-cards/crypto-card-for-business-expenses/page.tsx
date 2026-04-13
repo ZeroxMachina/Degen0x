@@ -539,6 +539,13 @@ export default function CryptoCoinCardForBusinessExpenses() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/reviews/club-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Club Card</a>
+  <a href="/crypto-cards/reviews/fold-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Fold Card</a>
+  <a href="/crypto-cards/reviews/baanx-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Baanx Card</a>
+  <a href="/crypto-cards/reviews/rain-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Rain Card</a>
+</nav>
     </article>
   );
 }

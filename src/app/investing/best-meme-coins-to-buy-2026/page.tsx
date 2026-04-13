@@ -166,6 +166,12 @@ export default function BestMemeCoins2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/best/apps" style={{ color: "#fb923c", marginRight: "1rem" }}>Apps</a>
+  <a href="/investing/staking/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/investing/staking/best/restaking" style={{ color: "#fb923c", marginRight: "1rem" }}>Restaking</a>
+</nav>
     </article>
   );
 }

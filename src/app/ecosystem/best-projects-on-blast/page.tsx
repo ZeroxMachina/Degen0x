@@ -416,6 +416,15 @@ export default function BestBlastProjectsExpanded() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/axelar" style={{ color: "#fb923c", marginRight: "1rem" }}>Axelar</a>
+  <a href="/ecosystem/ethena" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethena</a>
+  <a href="/ecosystem/curve" style={{ color: "#fb923c", marginRight: "1rem" }}>Curve</a>
+  <a href="/ecosystem/sommelier" style={{ color: "#fb923c", marginRight: "1rem" }}>Sommelier</a>
+  <a href="/ecosystem/karak-network" style={{ color: "#fb923c", marginRight: "1rem" }}>Karak Network</a>
+</nav>
+
 </article>
   );
 }

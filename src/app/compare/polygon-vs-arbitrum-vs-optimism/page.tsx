@@ -570,6 +570,12 @@ export default function PolygonArbitrumOptimism() {
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/compare/wallets/ledger-vs-trezor" style={{ color: "#fb923c", marginRight: "1rem" }}>Ledger Vs Trezor</a>
+  <a href="/compare/wallets/exodus-vs-trust-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Exodus Vs Trust Wallet</a>
+  <a href="/compare/wallets" style={{ color: "#fb923c", marginRight: "1rem" }}>Wallets</a>
+</nav>
       </article>
   );
 }

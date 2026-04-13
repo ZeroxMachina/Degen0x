@@ -292,6 +292,12 @@ export default function BitcoinETFComparison() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/best/meme-coins" style={{ color: "#fb923c", marginRight: "1rem" }}>Meme Coins</a>
+  <a href="/investing/best/high-yield" style={{ color: "#fb923c", marginRight: "1rem" }}>High Yield</a>
+  <a href="/investing/best" style={{ color: "#fb923c", marginRight: "1rem" }}>Best</a>
+</nav>
     </article>
   );
 }

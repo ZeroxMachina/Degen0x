@@ -462,6 +462,13 @@ export default function NFTLendingBorrowingExpanded() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/best/art" style={{ color: "#fb923c", marginRight: "1rem" }}>Art</a>
+  <a href="/nfts/best/photography" style={{ color: "#fb923c", marginRight: "1rem" }}>Photography</a>
+  <a href="/nfts/best/low-fee" style={{ color: "#fb923c", marginRight: "1rem" }}>Low Fee</a>
+</nav>
+
 </article>
   );
 }

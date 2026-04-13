@@ -99,7 +99,7 @@ export default function CryptoMarketCyclesPage() {
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", scrollBehavior: "smooth" }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-      <StructuredData schema={combinedSchema} />
+      <StructuredData data={combinedSchema} />
 
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
@@ -793,14 +793,6 @@ export default function CryptoMarketCyclesPage() {
                   padding: 20,
                   textDecoration: "none",
                   transition: "all 0.3s",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = S.blue;
-                  e.currentTarget.style.backgroundColor = S.surface2;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = S.border;
-                  e.currentTarget.style.backgroundColor = S.surface;
                 }}
               >
                 <h3 style={{ fontSize: 15, fontWeight: 700, marginTop: 0, marginBottom: 8, color: S.blue }}>

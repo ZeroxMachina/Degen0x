@@ -45,6 +45,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/delta-neutral-yield-strategies-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Delta-Neutral Yield Strategies Guide 2026' },
+  ],
+};
+
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "Delta-Neutral Yield Strategies Guide 2026 — Basis Trading & Funding Rate Arbitrage",
@@ -96,6 +106,7 @@ const DeltaNeutralGuide = () => {
         padding: "40px 20px",
       }}
     >
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
       <div
         style={{
@@ -242,8 +253,6 @@ const DeltaNeutralGuide = () => {
                     gap: "8px",
                     transition: "color 0.2s",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#79c0ff")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff")}
                 >
                   <ChevronRight size={16} />
                   {item.label}
@@ -1621,6 +1630,12 @@ const DeltaNeutralGuide = () => {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/hyperliquid-hip3-tokenized-futures-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Hyperliquid Hip3 Tokenized Futures Guide</a>
+  <a href="/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/learn/defi-vaults-structured-products-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Vaults Structured Products Guide 2026</a>
+</nav>
       </article>
   );
 };

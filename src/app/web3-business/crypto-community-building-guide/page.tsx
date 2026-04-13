@@ -756,6 +756,12 @@ export default function CryptoCommunityBuildingGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/web3-business/web3-fundraising-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Web3 Fundraising Guide</a>
+  <a href="/web3-business/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/web3-business/best/payment-processing" style={{ color: "#fb923c", marginRight: "1rem" }}>Payment Processing</a>
+</nav>
     </article>
   );
 }

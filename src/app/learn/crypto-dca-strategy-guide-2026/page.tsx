@@ -895,6 +895,12 @@ export default function CryptoDCAStrategyGuide2026() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/megaeth-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Megaeth Guide 2026</a>
+  <a href="/learn/initia-blockchain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Initia Blockchain Guide 2026</a>
+  <a href="/learn/crypto-market-making-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Market Making Guide 2026</a>
+</nav>
       </article>
     </div>
   );

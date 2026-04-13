@@ -726,6 +726,12 @@ export default function VeTokenomicsGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/zk-coprocessors-verifiable-compute-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Zk Coprocessors Verifiable Compute Guide 2026</a>
+  <a href="/learn/ton-defi-ecosystem-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ton Defi Ecosystem Guide 2026</a>
+  <a href="/learn/fluent-blended-execution-rwasm-l2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Fluent Blended Execution Rwasm L2 Guide 2026</a>
+</nav>
       </article>
   );
 }

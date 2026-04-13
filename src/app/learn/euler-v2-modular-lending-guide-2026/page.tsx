@@ -79,7 +79,7 @@ export default function EulerV2Guide() {
         publishedDate="2026-04-13"
         updatedDate="2026-04-13"
         section="learn"
-      />      <StructuredData schema={combinedSchemas} />
+      />      <StructuredData data={combinedSchemas} />
       <div style={{ maxWidth: 820, margin: '0 auto', padding: '40px 20px' }}>
         {/* Breadcrumb */}
         <Breadcrumb
@@ -1219,23 +1219,6 @@ export default function EulerV2Guide() {
                   minHeight: '44px',
                   display: 'block',
                   transition: 'border-color 0.2s, transform 0.2s',
-                }}
-                onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#6366f1';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-                onFocus={(e: React.FocusEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#6366f1';
-                  e.currentTarget.style.outline = '2px solid #6366f1';
-                  e.currentTarget.style.outlineOffset = '2px';
-                }}
-                onBlur={(e: React.FocusEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.outline = 'none';
                 }}
               >
                 {item.label}

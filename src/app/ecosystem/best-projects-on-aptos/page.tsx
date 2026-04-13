@@ -501,6 +501,15 @@ export default function BestAptosProjects() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/jupiter" style={{ color: "#fb923c", marginRight: "1rem" }}>Jupiter</a>
+  <a href="/ecosystem/best-projects-on-optimism" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Projects On Optimism</a>
+  <a href="/ecosystem/aerodrome" style={{ color: "#fb923c", marginRight: "1rem" }}>Aerodrome</a>
+  <a href="/ecosystem/makerdao" style={{ color: "#fb923c", marginRight: "1rem" }}>Makerdao</a>
+  <a href="/ecosystem/velodrome" style={{ color: "#fb923c", marginRight: "1rem" }}>Velodrome</a>
+</nav>
+
 </article>
   );
 }

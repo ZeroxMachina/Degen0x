@@ -783,6 +783,12 @@ export default function SharedSequencersGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/decentralized-gpu-compute-networks-render-akash-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Decentralized Gpu Compute Networks Render Akash Guide 2026</a>
+  <a href="/learn/megaeth-real-time-blockchain-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Megaeth Real Time Blockchain Layer 2 Guide 2026</a>
+  <a href="/learn/crypto-regulation-by-country-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Regulation By Country Guide</a>
+</nav>
       </article>
   );
 }

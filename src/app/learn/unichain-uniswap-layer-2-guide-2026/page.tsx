@@ -406,7 +406,7 @@ export default function UnichainGuide() {
               { title: 'DEX Screener', href: '/tools/dex-screener', desc: 'Monitor DEX trading activity across chains in real-time.' },
             ].map((link, i) => (
               <Link key={i} href={link.href} style={{ textDecoration: 'none' }}>
-                <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', cursor: 'pointer', transition: 'all 0.2s', height: '100%' }} onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#58a6ff'; e.currentTarget.style.backgroundColor = '#0d1117'; }} onMouseLeave={(e) => { e.currentTarget.style.borderColor = '#30363d'; e.currentTarget.style.backgroundColor = '#161b22'; }}>
+                <div style={{ background: '#161b22', border: '1px solid #30363d', borderRadius: '12px', padding: '20px', cursor: 'pointer', transition: 'all 0.2s', height: '100%' }}>
                   <h3 style={{ fontSize: '16px', fontWeight: 700, color: '#58a6ff', marginBottom: '8px' }}>{link.title}</h3>
                   <p style={{ color: '#8b949e', fontSize: '13px', lineHeight: 1.6 }}>{link.desc}</p>
                 </div>

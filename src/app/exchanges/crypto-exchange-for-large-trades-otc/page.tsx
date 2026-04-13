@@ -385,6 +385,12 @@ export default function CryptoExchangeForLargeTradesOtc() {
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/exchanges/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/exchanges/crypto-com" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com</a>
+  <a href="/exchanges/uphold" style={{ color: "#fb923c", marginRight: "1rem" }}>Uphold</a>
+</nav>
       </article>
   );
 }

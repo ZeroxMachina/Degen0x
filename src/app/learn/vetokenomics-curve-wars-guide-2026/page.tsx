@@ -48,6 +48,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/vetokenomics-curve-wars-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'veTokenomics & Curve Wars Guide 2026' },
+  ],
+};
+
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "veTokenomics & Curve Wars Guide 2026 — Vote-Escrow DeFi Strategies",
@@ -99,6 +109,7 @@ const VeTokenomicsGuide = () => {
         padding: "40px 20px",
       }}
     >
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
       <div
         style={{
@@ -243,8 +254,6 @@ const VeTokenomicsGuide = () => {
                     gap: "8px",
                     transition: "color 0.2s",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#79c0ff")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff")}
                 >
                   <ChevronRight size={16} />
                   {item.label}

@@ -526,6 +526,13 @@ export default function BitcoinRewardsComparison() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/calculators/cashback-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Cashback Calculator</a>
+  <a href="/crypto-cards/calculators/rewards-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Rewards Calculator</a>
+  <a href="/crypto-cards/calculators/card-comparison-tool" style={{ color: "#fb923c", marginRight: "1rem" }}>Card Comparison Tool</a>
+  <a href="/crypto-cards/compare/fold-vs-coinbase-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Fold Vs Coinbase Card</a>
+</nav>
     </article>
   );
 }

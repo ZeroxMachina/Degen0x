@@ -607,6 +607,12 @@ export default function BestWalletForLayer2() {
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/wallets/reviews/onekey" style={{ color: "#fb923c", marginRight: "1rem" }}>Onekey</a>
+  <a href="/wallets/reviews/bc-vault" style={{ color: "#fb923c", marginRight: "1rem" }}>Bc Vault</a>
+  <a href="/wallets/reviews/mycelium" style={{ color: "#fb923c", marginRight: "1rem" }}>Mycelium</a>
+</nav>
       </article>
   );
 }

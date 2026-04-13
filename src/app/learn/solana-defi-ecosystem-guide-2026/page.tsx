@@ -6,7 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Solana DeFi Ecosystem Guide 2026 — Protocols & Trading",
   description:
-    "Complete Solana DeFi guide for 2026. Jupiter, Raydium, Magic Eden. DeFi TVL, MEV, validators, and Firedancer upgrade.",
+    "Complete Solana DeFi ecosystem guide 2026: Jupiter DEX aggregator, Raydium AMM, Magic Eden NFTs, TVL analysis, MEV mechanisms, validators, and staking.",
   keywords: [
     "Solana DeFi",
     "Jupiter DEX",

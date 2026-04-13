@@ -409,6 +409,14 @@ export default function OvercollateralizedCryptoLoansGuide() {
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/defi-lending/solend-solana-lending-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Solend Solana Lending Guide</a>
+  <a href="/defi-lending/radiant-capital-cross-chain-lending" style={{ color: "#fb923c", marginRight: "1rem" }}>Radiant Capital Cross Chain Lending</a>
+  <a href="/defi-lending/aave-vs-compound-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Aave Vs Compound Comparison</a>
+  <a href="/defi-lending/fraxlend-lending-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Fraxlend Lending Guide</a>
+  <a href="/defi-lending/calculators/impermanent-loss-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Impermanent Loss Calculator</a>
+</nav>
       </article>
   );
 }

@@ -611,6 +611,12 @@ export default function WhenToTakeProfitsCrypto() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/best/cryptos-to-buy" style={{ color: "#fb923c", marginRight: "1rem" }}>Cryptos To Buy</a>
+  <a href="/investing/best/dividend-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Dividend Crypto</a>
+  <a href="/investing/best/savings-accounts" style={{ color: "#fb923c", marginRight: "1rem" }}>Savings Accounts</a>
+</nav>
     </article>
   );
 }

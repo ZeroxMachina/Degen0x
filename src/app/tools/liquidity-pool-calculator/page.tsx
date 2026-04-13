@@ -355,6 +355,12 @@ export default function LiquidityPoolCalculator() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/tools/news-feed" style={{ color: "#fb923c", marginRight: "1rem" }}>News Feed</a>
+  <a href="/tools/performance-dashboard" style={{ color: "#fb923c", marginRight: "1rem" }}>Performance Dashboard</a>
+  <a href="/tools/defi-risk-scorer" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Risk Scorer</a>
+</nav>
       </article>
   );
 }

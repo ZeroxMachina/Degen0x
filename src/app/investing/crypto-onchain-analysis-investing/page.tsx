@@ -588,6 +588,12 @@ export default function CryptoOnChainAnalysisInvesting() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/staking/reviews/marinade" style={{ color: "#fb923c", marginRight: "1rem" }}>Marinade</a>
+  <a href="/investing/staking/reviews/rocket-pool" style={{ color: "#fb923c", marginRight: "1rem" }}>Rocket Pool</a>
+  <a href="/investing/staking/reviews/coinbase-staking" style={{ color: "#fb923c", marginRight: "1rem" }}>Coinbase Staking</a>
+</nav>
     </article>
   );
 }

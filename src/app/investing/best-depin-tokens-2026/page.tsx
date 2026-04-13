@@ -453,6 +453,12 @@ export default function BestDePINTokens2026() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/best/buy-today" style={{ color: "#fb923c", marginRight: "1rem" }}>Buy Today</a>
+  <a href="/investing/best/portfolio-bots" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Bots</a>
+  <a href="/investing/best/under-10-dollars" style={{ color: "#fb923c", marginRight: "1rem" }}>Under 10 Dollars</a>
+</nav>
     </article>
   );
 }

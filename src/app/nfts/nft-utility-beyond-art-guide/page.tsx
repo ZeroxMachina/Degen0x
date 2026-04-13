@@ -361,6 +361,12 @@ export default function NFTUtility() {
           </p>
         </div>
         </section>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/nfts/best/solana" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana</a>
+  <a href="/nfts/best/beginners" style={{ color: "#fb923c", marginRight: "1rem" }}>Beginners</a>
+  <a href="/nfts/best/creators" style={{ color: "#fb923c", marginRight: "1rem" }}>Creators</a>
+</nav>
       </article>
           <div style={{
         marginTop: "32px",

@@ -13,7 +13,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "degen0x 日本語版 — 暗号資産取引所・ウォレット・DeFiを比較",
   description:
-    "degen0x は日本語で利用できる暗号資産の総合比較プラットフォームです。取引所、ウォレット、DeFiプロトコルを比較し、専門家のレビュー、無料ツール、網羅的なガイドで賢い暗号資産投資をサポートします。",
+    "degen0x日本語版: 暗号資産総合比較プラットフォーム。DeFi、DEX、ウォレット比較、ステーキング戦略、無料ツール、2026年収益戦略。",
   alternates: { canonical: "https://degen0x.com/ja" },
   openGraph: {
     title: "degen0x 日本語版 — 暗号資産比較・투資ガイド",

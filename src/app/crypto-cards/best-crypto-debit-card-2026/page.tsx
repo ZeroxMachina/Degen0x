@@ -186,6 +186,14 @@ export default function BestCryptoDebitCard() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/reviews/holyheld-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Holyheld Card</a>
+  <a href="/crypto-cards/reviews/bybit-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Bybit Card</a>
+  <a href="/crypto-cards/reviews/binance-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Binance Card</a>
+  <a href="/crypto-cards/reviews/gnosis-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Gnosis Card</a>
+</nav>
+
 </article>
   );
 }

@@ -385,6 +385,12 @@ export default function BlockchainTrilemma() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/bitcoin-taproot-upgrade-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Taproot Upgrade Explained</a>
+  <a href="/learn/gamblefi-onchain-betting-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Gamblefi Onchain Betting Guide 2026</a>
+  <a href="/learn/how-blockchain-works-simple-explanation" style={{ color: "#fb923c", marginRight: "1rem" }}>How Blockchain Works Simple Explanation</a>
+</nav>
       </article>
   );
 }

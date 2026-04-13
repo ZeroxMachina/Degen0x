@@ -610,6 +610,12 @@ export default function DeFiYieldFarmingBeginnersGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/glossary/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/learn/flash-loans-explained-how-they-work" style={{ color: "#fb923c", marginRight: "1rem" }}>Flash Loans Explained How They Work</a>
+  <a href="/learn/zk-rollups-vs-optimistic-rollups" style={{ color: "#fb923c", marginRight: "1rem" }}>Zk Rollups Vs Optimistic Rollups</a>
+</nav>
       </article>
   );
 }

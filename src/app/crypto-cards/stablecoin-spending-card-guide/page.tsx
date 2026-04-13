@@ -505,6 +505,14 @@ export default function StablecoinSpendingCardGuide() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-cards/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/crypto-cards/best/prepaid" style={{ color: "#fb923c", marginRight: "1rem" }}>Prepaid</a>
+  <a href="/crypto-cards/best/staking-rewards" style={{ color: "#fb923c", marginRight: "1rem" }}>Staking Rewards</a>
+  <a href="/crypto-cards/best/no-annual-fee" style={{ color: "#fb923c", marginRight: "1rem" }}>No Annual Fee</a>
+</nav>
+
 </article>
   );
 }

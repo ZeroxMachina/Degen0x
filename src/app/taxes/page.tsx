@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const subcategories = [
-  { name: "Best Tax Software", href: "/taxes/best/software", description: "Top-rated crypto tax software compared" },
+  { name: "Best Tax Software", href: "/taxes/best/software", description: "Crypto tax guide and calculator tools. Calculate tax liabilities on Bitcoin, Ethereum, DeFi, staking, NFTs. Compare tax strategies and US tax software." },
   { name: "Free Tax Tools", href: "/taxes/best/free-tools", description: "Best free crypto tax tools and calculators" },
   { name: "Crypto CPAs", href: "/taxes/best/accountants", description: "Find crypto-specialized accountants" },
   { name: "DeFi Tax Tools", href: "/taxes/best/defi-tax-tools", description: "Best tools for DeFi tax reporting" },

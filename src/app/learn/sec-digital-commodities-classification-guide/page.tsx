@@ -597,14 +597,6 @@ export default function SECDigitalCommoditiesPage() {
                     textDecoration: "none",
                     transition: "all 0.2s",
                   }}
-                  onMouseEnter={e => {
-                    (e.currentTarget as HTMLElement).style.background = S.surface2;
-                    (e.currentTarget as HTMLElement).style.borderColor = S.primary;
-                  }}
-                  onMouseLeave={e => {
-                    (e.currentTarget as HTMLElement).style.background = S.surface;
-                    (e.currentTarget as HTMLElement).style.borderColor = S.border;
-                  }}
                 >
                   <h3 style={{ fontSize: 14, fontWeight: 700, color: S.primary, margin: "0 0 8px 0" }}>{article.title}</h3>
                   <p style={{ fontSize: 12, color: S.text2, margin: 0 }}>Learn more about this topic →</p>

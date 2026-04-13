@@ -836,6 +836,12 @@ export default function AIAgentsGuide() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/bitcoin-lightning-network" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Lightning Network</a>
+  <a href="/learn/magic-eden-nft-marketplace-me-token-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Magic Eden Nft Marketplace Me Token Guide 2026</a>
+  <a href="/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Restaking Comparison Eigenlayer Symbiotic Karak 2026</a>
+</nav>
       </article>
   );
 }

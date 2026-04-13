@@ -123,7 +123,7 @@ export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-      <StructuredData schema={combinedSchema} />
+      <StructuredData data={combinedSchema} />
 
       <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
         <Breadcrumb

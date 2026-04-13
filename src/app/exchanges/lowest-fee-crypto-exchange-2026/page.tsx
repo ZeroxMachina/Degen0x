@@ -620,6 +620,12 @@ export default function LowestFeeCryptoExchange2026() {
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/exchanges/tools/fee-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Fee Calculator</a>
+  <a href="/exchanges/crypto-exchange-proof-of-reserves-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Exchange Proof Of Reserves Comparison</a>
+  <a href="/exchanges/gemini" style={{ color: "#fb923c", marginRight: "1rem" }}>Gemini</a>
+</nav>
       </article>
   );
 }

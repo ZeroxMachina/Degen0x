@@ -539,6 +539,12 @@ export default function HowToTransferCryptoBetweenWallets() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/ethereum-sharding-roadmap-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Sharding Roadmap Explained</a>
+  <a href="/learn/nftfi-nft-finance-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Nftfi Nft Finance Guide 2026</a>
+  <a href="/learn/what-is-a-stablecoin-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>What Is A Stablecoin Guide</a>
+</nav>
       </article>
   );
 }

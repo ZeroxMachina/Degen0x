@@ -107,7 +107,7 @@ export default function MSBTGuide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-      <StructuredData schema={schemas} />
+      <StructuredData data={schemas} />
       <article style={{ background: S.bg, color: S.text, minHeight: "100vh", paddingBottom: "4rem" }}>
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "40px 20px" }}>
         <Breadcrumb items={breadcrumbs} />

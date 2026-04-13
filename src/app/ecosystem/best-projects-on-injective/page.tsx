@@ -406,6 +406,15 @@ export default function BestInjectiveProjectsExpanded() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/turbos" style={{ color: "#fb923c", marginRight: "1rem" }}>Turbos</a>
+  <a href="/ecosystem/manifold" style={{ color: "#fb923c", marginRight: "1rem" }}>Manifold</a>
+  <a href="/ecosystem/best-projects-on-starknet" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Projects On Starknet</a>
+  <a href="/ecosystem/zora" style={{ color: "#fb923c", marginRight: "1rem" }}>Zora</a>
+  <a href="/ecosystem/across" style={{ color: "#fb923c", marginRight: "1rem" }}>Across</a>
+</nav>
+
 </article>
   );
 }

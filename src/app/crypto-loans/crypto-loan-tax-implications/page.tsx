@@ -734,6 +734,14 @@ export default function CryptoLoanTaxGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-loans/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/crypto-loans/best/defi" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi</a>
+  <a href="/crypto-loans/best/stablecoin" style={{ color: "#fb923c", marginRight: "1rem" }}>Stablecoin</a>
+  <a href="/crypto-loans/crypto-margin-loan-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Margin Loan Comparison</a>
+  <a href="/crypto-loans/no-kyc-crypto-loan-platforms" style={{ color: "#fb923c", marginRight: "1rem" }}>No Kyc Crypto Loan Platforms</a>
+</nav>
     </article>
   );
 }

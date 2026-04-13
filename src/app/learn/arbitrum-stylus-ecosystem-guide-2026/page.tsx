@@ -673,6 +673,12 @@ export default function ArbitrumStylusEcosystemGuide2026() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/maple-finance-syrup-institutional-defi-credit-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Maple Finance Syrup Institutional Defi Credit Guide 2026</a>
+  <a href="/learn/mica-eu-crypto-regulation-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Mica Eu Crypto Regulation Guide 2026</a>
+  <a href="/learn/bitgo-ipo-crypto-infrastructure-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitgo Ipo Crypto Infrastructure Guide</a>
+</nav>
       </article>
     
         <script

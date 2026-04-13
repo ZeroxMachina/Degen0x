@@ -628,6 +628,12 @@ export default function BitcoinTreasuryCompaniesGuidePage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Etf Staking Yield Earning Etfs Guide 2026</a>
+  <a href="/learn/story-protocol-ip-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Story Protocol Ip Guide</a>
+  <a href="/learn/tokenized-real-estate-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Real Estate Guide 2026</a>
+</nav>
       </article>
   );
 }

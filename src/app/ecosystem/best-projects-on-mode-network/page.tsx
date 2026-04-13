@@ -489,6 +489,15 @@ export default function BestModeNetworkProjects() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/dedust" style={{ color: "#fb923c", marginRight: "1rem" }}>Dedust</a>
+  <a href="/ecosystem/best-projects-on-polygon" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Projects On Polygon</a>
+  <a href="/ecosystem/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/ecosystem/lifi" style={{ color: "#fb923c", marginRight: "1rem" }}>Lifi</a>
+  <a href="/ecosystem/panoptic" style={{ color: "#fb923c", marginRight: "1rem" }}>Panoptic</a>
+</nav>
+
 </article>
   );
 }

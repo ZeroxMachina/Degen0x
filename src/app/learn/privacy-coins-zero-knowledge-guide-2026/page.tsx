@@ -547,6 +547,12 @@ export default function PrivacyCoinsZKGuidePage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/farcaster-decentralized-social-protocol-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Farcaster Decentralized Social Protocol Guide 2026</a>
+  <a href="/learn/distributed-validator-technology-dvt-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Distributed Validator Technology Dvt Guide 2026</a>
+  <a href="/learn/solver-networks-order-flow-auctions-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solver Networks Order Flow Auctions Guide 2026</a>
+</nav>
       </article>
     </div>
   );

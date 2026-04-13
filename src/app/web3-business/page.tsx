@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
-  { title: "Best DAO Treasury Tools", href: "/web3-business/best/treasury-tools", description: "Manage multi-sig wallets and on-chain treasuries" },
+  { title: "Best DAO Treasury Tools", href: "/web3-business/best/treasury-tools", description: "Web3 payment solutions for business: Accept crypto payments, convert to fiat instantly, payroll solutions. Coinbase, Stripe, Sablier, and more." },
   { title: "Best Web3 Grants", href: "/web3-business/best/grants", description: "Funding programs from top protocols and ecosystems" },
   { title: "Crypto-Friendly Banks", href: "/web3-business/best/business-banking", description: "Business banking that actually works with crypto" },
   { title: "Crypto Corporate Cards", href: "/web3-business/best/corporate-cards", description: "Spend crypto and stablecoins with corporate cards" },

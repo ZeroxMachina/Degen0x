@@ -716,6 +716,12 @@ export default function Web3MarketingGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/web3-business/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/web3-business/web3-jobs-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Web3 Jobs Guide 2026</a>
+  <a href="/web3-business/dao-legal-structure-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Dao Legal Structure Guide</a>
+</nav>
     </article>
   );
 }

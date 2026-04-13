@@ -733,6 +733,12 @@ export default function CryptoTradingBotsGuidePage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/public-key-vs-private-key-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Public Key Vs Private Key Crypto</a>
+  <a href="/learn/avail-da-unification-layer-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Avail Da Unification Layer Guide 2026</a>
+  <a href="/learn/bitcoin-vs-gold-comparison-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Vs Gold Comparison Guide</a>
+</nav>
       </article>
     </main>
   );

@@ -512,6 +512,14 @@ export default function NexoReview() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/crypto-loans/crypto-loan-for-real-estate" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Loan For Real Estate</a>
+  <a href="/crypto-loans/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+  <a href="/crypto-loans/celsius-alternative-lending-platforms" style={{ color: "#fb923c", marginRight: "1rem" }}>Celsius Alternative Lending Platforms</a>
+  <a href="/crypto-loans/best/flash-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Flash Loans</a>
+  <a href="/crypto-loans/best/margin-lending" style={{ color: "#fb923c", marginRight: "1rem" }}>Margin Lending</a>
+</nav>
     </article>
   );
 }

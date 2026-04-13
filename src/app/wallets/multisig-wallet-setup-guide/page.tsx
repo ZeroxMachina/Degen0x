@@ -771,6 +771,12 @@ export default function MultisigWalletSetupGuide() {
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/wallets/best-wallet-for-cosmos-ecosystem" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Wallet For Cosmos Ecosystem</a>
+  <a href="/wallets/best/usa" style={{ color: "#fb923c", marginRight: "1rem" }}>Usa</a>
+  <a href="/wallets/best/open-source" style={{ color: "#fb923c", marginRight: "1rem" }}>Open Source</a>
+</nav>
       </article>
   );
 }

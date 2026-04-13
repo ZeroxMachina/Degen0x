@@ -572,6 +572,12 @@ export default function StablecoinYieldStrategy() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/long-term/best/advisors" style={{ color: "#fb923c", marginRight: "1rem" }}>Advisors</a>
+  <a href="/long-term/best/self-directed" style={{ color: "#fb923c", marginRight: "1rem" }}>Self Directed</a>
+  <a href="/long-term/best/blue-chip-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Blue Chip Crypto</a>
+</nav>
     </article>
   );
 }

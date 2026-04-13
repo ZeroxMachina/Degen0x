@@ -373,6 +373,12 @@ export default function EthereumGasTracker() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/tools/price-alerts" style={{ color: "#fb923c", marginRight: "1rem" }}>Price Alerts</a>
+  <a href="/tools/embed-widgets" style={{ color: "#fb923c", marginRight: "1rem" }}>Embed Widgets</a>
+  <a href="/tools/mev-protection-dashboard" style={{ color: "#fb923c", marginRight: "1rem" }}>Mev Protection Dashboard</a>
+</nav>
       </article>
   );
 }

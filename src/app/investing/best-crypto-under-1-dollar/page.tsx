@@ -404,6 +404,12 @@ export default function BestCryptoUnder1Dollar() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/investing/staking/best/beginners" style={{ color: "#fb923c", marginRight: "1rem" }}>Beginners</a>
+  <a href="/investing/staking/best/validators" style={{ color: "#fb923c", marginRight: "1rem" }}>Validators</a>
+  <a href="/investing/staking/best/ethereum" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum</a>
+</nav>
     </article>
   );
 }

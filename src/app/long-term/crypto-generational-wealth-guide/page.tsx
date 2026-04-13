@@ -472,6 +472,12 @@ export default function GenerationalWealthGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/long-term/crypto-inheritance-planning-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Inheritance Planning Guide</a>
+  <a href="/long-term/best-crypto-for-long-term-hold-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Best Crypto For Long Term Hold 2026</a>
+  <a href="/long-term/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>
+</nav>
     </article>
   );
 }

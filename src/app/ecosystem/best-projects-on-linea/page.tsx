@@ -452,6 +452,15 @@ export default function BestProjectsOnLinea() {
           </ul>
         </nav>
 
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/ecosystem/kelp" style={{ color: "#fb923c", marginRight: "1rem" }}>Kelp</a>
+  <a href="/ecosystem/gmx" style={{ color: "#fb923c", marginRight: "1rem" }}>Gmx</a>
+  <a href="/ecosystem/lido-v2" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido V2</a>
+  <a href="/ecosystem/rocketpool" style={{ color: "#fb923c", marginRight: "1rem" }}>Rocketpool</a>
+  <a href="/ecosystem/pendle" style={{ color: "#fb923c", marginRight: "1rem" }}>Pendle</a>
+</nav>
+
 </article>
   );
 }

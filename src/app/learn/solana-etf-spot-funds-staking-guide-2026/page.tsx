@@ -1113,6 +1113,12 @@ export default function SolanaETFGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/sui-blockchain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Sui Blockchain Guide 2026</a>
+  <a href="/learn/cross-chain-intents-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Cross Chain Intents Guide</a>
+  <a href="/learn/ai-agent-frameworks-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ai Agent Frameworks Comparison 2026</a>
+</nav>
       </article>
 
         {/* Sidebar - TOC */}

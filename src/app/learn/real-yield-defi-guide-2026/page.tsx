@@ -44,6 +44,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/real-yield-defi-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Real Yield in DeFi Guide 2026' },
+  ],
+};
+
 // ─── Structured Data ──────────────────────────────────────────────────────────
 const articleSchema = generateArticleSchema({
   title: "Real Yield in DeFi Guide 2026 — Sustainable vs Emission Yields",
@@ -66,6 +76,7 @@ const RealYieldGuide = () => {
         padding: "40px 20px",
       }}
     >
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={articleSchema} />
       <div
         style={{
@@ -223,8 +234,6 @@ const RealYieldGuide = () => {
                     gap: "8px",
                     transition: "color 0.2s",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#79c0ff")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff")}
                 >
                   <ChevronRight size={16} />
                   {item.label}
@@ -1479,8 +1488,6 @@ const RealYieldGuide = () => {
                       alignItems: "center",
                       gap: "8px",
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = "#79c0ff")}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff")}
                   >
                     <ChevronRight size={14} />
                     {link.label}
@@ -1545,6 +1552,12 @@ const RealYieldGuide = () => {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/bridging-crypto-across-chains-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bridging Crypto Across Chains Guide</a>
+  <a href="/learn/euler-v2-modular-lending-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Euler V2 Modular Lending Guide 2026</a>
+  <a href="/learn/worldcoin-world-id-proof-of-personhood-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Worldcoin World Id Proof Of Personhood Guide 2026</a>
+</nav>
       </article>
   );
 };

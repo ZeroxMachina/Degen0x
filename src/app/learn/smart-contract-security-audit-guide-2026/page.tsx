@@ -687,14 +687,6 @@ export default function SmartContractSecurityAuditPage() {
                 textDecoration: 'none',
                 transition: 'all 0.2s'
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#0d1117';
-                e.currentTarget.style.borderColor = '#58a6ff';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#161b22';
-                e.currentTarget.style.borderColor = '#30363d';
-              }}
             >
               → Common Crypto Scams & How to Avoid Them
             </Link>
@@ -707,14 +699,6 @@ export default function SmartContractSecurityAuditPage() {
                 borderRadius: '12px',
                 color: '#58a6ff',
                 textDecoration: 'none',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#0d1117';
-                e.currentTarget.style.borderColor = '#58a6ff';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#161b22';
-                e.currentTarget.style.borderColor = '#30363d';
               }}
             >
               → Flash Loans: Complete Guide 2026
@@ -729,14 +713,6 @@ export default function SmartContractSecurityAuditPage() {
                 color: '#58a6ff',
                 textDecoration: 'none',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#0d1117';
-                e.currentTarget.style.borderColor = '#58a6ff';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#161b22';
-                e.currentTarget.style.borderColor = '#30363d';
-              }}
             >
               → DeFi Liquidation Protection Guide 2026
             </Link>
@@ -750,14 +726,6 @@ export default function SmartContractSecurityAuditPage() {
                 color: '#58a6ff',
                 textDecoration: 'none',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#0d1117';
-                e.currentTarget.style.borderColor = '#58a6ff';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#161b22';
-                e.currentTarget.style.borderColor = '#30363d';
-              }}
             >
               → MEV Protection Guide
             </Link>
@@ -770,14 +738,6 @@ export default function SmartContractSecurityAuditPage() {
                 borderRadius: '12px',
                 color: '#58a6ff',
                 textDecoration: 'none',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#0d1117';
-                e.currentTarget.style.borderColor = '#58a6ff';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#161b22';
-                e.currentTarget.style.borderColor = '#30363d';
               }}
             >
               → Zero-Knowledge Proofs Guide

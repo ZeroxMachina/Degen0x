@@ -257,6 +257,12 @@ export default function PerpetualFuturesGuidePage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/layer-3-chains-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Layer 3 Chains Guide 2026</a>
+  <a href="/learn/solana-blinks-actions-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Blinks Actions Guide 2026</a>
+  <a href="/learn/tradfi-defi-convergence-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tradfi Defi Convergence Guide 2026</a>
+</nav>
       </article>
           <div style={{
         marginTop: "32px",

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/learn/bitcoin-lightning-network" },
   openGraph: {
     title: `Bitcoin Lightning Network Guide ${CURRENT_YEAR}`,
-    description: "Understand how Lightning Network enables instant, near-zero fee Bitcoin payments.",
+    description: "Bitcoin Lightning Network guide: Instant payments, zero fees, scalability. Learn channels, routing, privacy, and the future of Bitcoin payments.",
   },
   twitter: { card: "summary_large_image" }};
 

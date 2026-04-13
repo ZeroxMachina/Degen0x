@@ -827,14 +827,6 @@ export default function LiquidRestakingTokensPage() {
                   textDecoration: "none",
                   transition: "all 0.2s",
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = S.primary;
-                  e.currentTarget.style.background = `${S.primary}10`;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = S.border;
-                  e.currentTarget.style.background = S.surface;
-                }}
               >
                 <div style={{ fontWeight: 800, fontSize: 14, color: S.accent, marginBottom: 4 }}>📖 {link.title}</div>
                 <div style={{ fontSize: 12, color: S.text2, lineHeight: 1.6 }}>{link.desc}</div>
@@ -902,6 +894,12 @@ export default function LiquidRestakingTokensPage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/onchain-forex-stablecoin-diversity-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Forex Stablecoin Diversity Guide 2026</a>
+  <a href="/learn/starknet-stark-validity-rollups-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Starknet Stark Validity Rollups Guide 2026</a>
+  <a href="/learn/dao-governance-voting-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Dao Governance Voting Guide 2026</a>
+</nav>
       </article>
 
       <BackToTop />

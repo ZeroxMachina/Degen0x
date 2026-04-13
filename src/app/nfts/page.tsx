@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
-  { title: "Best NFT Marketplaces", href: "/nfts/best", description: "Our top-rated NFT marketplaces across all categories" },
+  { title: "Best NFT Marketplaces", href: "/nfts/best", description: "NFT guide: Marketplaces, collections, MEV, gas optimization. Learn buying, selling, trading NFTs on Ethereum, Solana, Polygon, and Arbitrum." },
   { title: "Best for Beginners", href: "/nfts/best/beginners", description: "Easy-to-use platforms for NFT newcomers" },
   { title: "Best for Art", href: "/nfts/best/art", description: "Top platforms for digital art NFTs" },
   { title: "Best for Gaming", href: "/nfts/best/gaming", description: "Leading gaming NFT marketplaces" },

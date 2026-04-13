@@ -1420,6 +1420,12 @@ export default function BitcoinLSTGuidePage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/tariffs-trade-war-crypto-impact-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tariffs Trade War Crypto Impact Guide 2026</a>
+  <a href="/learn/chain-abstraction" style={{ color: "#fb923c", marginRight: "1rem" }}>Chain Abstraction</a>
+  <a href="/learn/crypto-gaming-2026-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Gaming 2026 Guide</a>
+</nav>
       </article>
       <BackToTop />
     </div>

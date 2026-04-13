@@ -225,12 +225,6 @@ export default function SolanaTokenExtensionsGuide() {
                     fontSize: '0.95rem',
                     transition: 'color 0.2s',
                   }}
-                  onMouseEnter={(e) =>
-                    ((e.target as HTMLAnchorElement).style.color = '#79c0ff')
-                  }
-                  onMouseLeave={(e) =>
-                    ((e.target as HTMLAnchorElement).style.color = '#58a6ff')
-                  }
                 >
                   {item.label}
                 </a>

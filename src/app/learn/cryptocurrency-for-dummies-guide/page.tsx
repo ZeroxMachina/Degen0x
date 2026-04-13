@@ -1333,14 +1333,6 @@ export default function CryptocurrencyForDummiesGuide() {
               color: darkColors.text,
               transition: "all 0.2s",
             }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = darkColors.link;
-              e.currentTarget.style.background = "rgba(88, 166, 255, 0.05)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = darkColors.border;
-              e.currentTarget.style.background = darkColors.card;
-            }}
           >
             <h4 style={{ marginTop: 0, marginBottom: 8, color: darkColors.link }}>
               What Is Bitcoin?
@@ -1357,14 +1349,6 @@ export default function CryptocurrencyForDummiesGuide() {
               color: darkColors.text,
               transition: "all 0.2s",
             }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = darkColors.link;
-              e.currentTarget.style.background = "rgba(88, 166, 255, 0.05)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = darkColors.border;
-              e.currentTarget.style.background = darkColors.card;
-            }}
           >
             <h4 style={{ marginTop: 0, marginBottom: 8, color: darkColors.link }}>
               What Is Ethereum?
@@ -1380,14 +1364,6 @@ export default function CryptocurrencyForDummiesGuide() {
               textDecoration: "none",
               color: darkColors.text,
               transition: "all 0.2s",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = darkColors.link;
-              e.currentTarget.style.background = "rgba(88, 166, 255, 0.05)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = darkColors.border;
-              e.currentTarget.style.background = darkColors.card;
             }}
           >
             <h4 style={{ marginTop: 0, marginBottom: 8, color: darkColors.link }}>

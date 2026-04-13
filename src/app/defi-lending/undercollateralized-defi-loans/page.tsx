@@ -507,6 +507,14 @@ export default function UndercollateralizedDefiLoansGuide() {
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/defi-lending/best/stablecoin-yield" style={{ color: "#fb923c", marginRight: "1rem" }}>Stablecoin Yield</a>
+  <a href="/defi-lending/best/solana" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana</a>
+  <a href="/defi-lending/best/liquidity-pools" style={{ color: "#fb923c", marginRight: "1rem" }}>Liquidity Pools</a>
+  <a href="/defi-lending/best/yield-aggregators" style={{ color: "#fb923c", marginRight: "1rem" }}>Yield Aggregators</a>
+  <a href="/defi-lending/best/layer-2" style={{ color: "#fb923c", marginRight: "1rem" }}>Layer 2</a>
+</nav>
       </article>
   );
 }

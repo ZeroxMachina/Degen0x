@@ -722,6 +722,12 @@ export default function RestakingAVSEcosystemGuidePage() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/l2-bridges-rollups-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>L2 Bridges Rollups Guide</a>
+  <a href="/learn/nft-explained-complete-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Nft Explained Complete Guide</a>
+  <a href="/learn/crypto-etf-in-kind-redemption-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Etf In Kind Redemption Guide 2026</a>
+</nav>
       </article>
 
       <BackToTop />

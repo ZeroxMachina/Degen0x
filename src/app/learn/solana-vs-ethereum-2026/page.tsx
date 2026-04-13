@@ -5,7 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 export const metadata: Metadata = {
   title: "Solana vs Ethereum 2026: Which Blockchain Wins?",
-  description: "An honest, data-driven comparison of Solana vs Ethereum in 2026.",
+  description: "Solana vs Ethereum 2026: Honest comparison of speed, costs, security, DeFi ecosystems, validators, staking, MEV, and which blockchain wins best.",
   alternates: { canonical: "/learn/solana-vs-ethereum-2026" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
   twitter: { card: "summary_large_image" }};

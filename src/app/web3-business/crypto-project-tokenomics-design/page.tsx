@@ -550,6 +550,12 @@ export default function TokenomicsDesignGuide() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/web3-business/best/business-banking" style={{ color: "#fb923c", marginRight: "1rem" }}>Business Banking</a>
+  <a href="/web3-business/best/accounting" style={{ color: "#fb923c", marginRight: "1rem" }}>Accounting</a>
+  <a href="/web3-business/best/corporate-cards" style={{ color: "#fb923c", marginRight: "1rem" }}>Corporate Cards</a>
+</nav>
     </article>
   );
 }

@@ -185,6 +185,12 @@ export default function TokenUnlocksCalendar() {
             })
           }}
         />
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/tools/liquidity-pool-explorer" style={{ color: "#fb923c", marginRight: "1rem" }}>Liquidity Pool Explorer</a>
+  <a href="/tools/wallet-pnl-breakdown" style={{ color: "#fb923c", marginRight: "1rem" }}>Wallet Pnl Breakdown</a>
+  <a href="/tools/nft-rarity-checker" style={{ color: "#fb923c", marginRight: "1rem" }}>Nft Rarity Checker</a>
+</nav>
       </article>
   );
 }

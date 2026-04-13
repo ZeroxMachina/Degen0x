@@ -983,12 +983,6 @@ export default function VerkleTreesHegotaGuide() {
                     cursor: "pointer",
                     transition: "border-color 0.2s",
                   }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "#58a6ff";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "#30363d";
-                  }}
                 >
                   <h3 style={{ color: "#58a6ff", marginBottom: "0.5rem" }}>
                     Ethereum 2026 Upgrade Roadmap
@@ -1009,12 +1003,6 @@ export default function VerkleTreesHegotaGuide() {
                     textDecoration: "none",
                     cursor: "pointer",
                     transition: "border-color 0.2s",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "#58a6ff";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "#30363d";
                   }}
                 >
                   <h3 style={{ color: "#58a6ff", marginBottom: "0.5rem" }}>
@@ -1037,12 +1025,6 @@ export default function VerkleTreesHegotaGuide() {
                     cursor: "pointer",
                     transition: "border-color 0.2s",
                   }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "#58a6ff";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "#30363d";
-                  }}
                 >
                   <h3 style={{ color: "#58a6ff", marginBottom: "0.5rem" }}>
                     Glamsterdam & Fusaka Guide 2026
@@ -1064,12 +1046,6 @@ export default function VerkleTreesHegotaGuide() {
                     cursor: "pointer",
                     transition: "border-color 0.2s",
                   }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "#58a6ff";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "#30363d";
-                  }}
                 >
                   <h3 style={{ color: "#58a6ff", marginBottom: "0.5rem" }}>
                     Layer 2 Scaling Guide
@@ -1090,12 +1066,6 @@ export default function VerkleTreesHegotaGuide() {
                     textDecoration: "none",
                     cursor: "pointer",
                     transition: "border-color 0.2s",
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "#58a6ff";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "#30363d";
                   }}
                 >
                   <h3 style={{ color: "#58a6ff", marginBottom: "0.5rem" }}>

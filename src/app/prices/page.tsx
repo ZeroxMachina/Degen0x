@@ -49,7 +49,7 @@ export default function PricesPage() {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
     name: `Crypto Prices — ${SITE_NAME}`,
-    description: "Track cryptocurrency prices, market caps, and analysis.",
+    description: "Live cryptocurrency prices and market data. Bitcoin, Ethereum, Solana, and 5,000+ altcoins. Real-time charts, technical analysis, and tracking.",
     url: `${SITE_URL}/prices`,
     isPartOf: { "@type": "WebSite", name: SITE_NAME },
   };

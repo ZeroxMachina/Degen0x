@@ -637,6 +637,12 @@ export default function RWATokenizationGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/learn/cryptocurrency-for-dummies-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Cryptocurrency For Dummies Guide</a>
+  <a href="/learn/l3-networks-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>L3 Networks Guide</a>
+  <a href="/learn/focil-inclusion-lists-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Focil Inclusion Lists Guide 2026</a>
+</nav>
       </article>
   );
 }

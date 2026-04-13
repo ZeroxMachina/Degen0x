@@ -485,6 +485,12 @@ export default function Web3DeveloperToolsComparisonExpanded() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/web3-business/best/dao-tools" style={{ color: "#fb923c", marginRight: "1rem" }}>Dao Tools</a>
+  <a href="/web3-business/best/payroll" style={{ color: "#fb923c", marginRight: "1rem" }}>Payroll</a>
+  <a href="/web3-business/best/legal" style={{ color: "#fb923c", marginRight: "1rem" }}>Legal</a>
+</nav>
     </article>
   );
 }

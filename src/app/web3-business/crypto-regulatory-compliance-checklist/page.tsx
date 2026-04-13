@@ -513,6 +513,12 @@ export default function CryptoComplianceChecklist() {
           </Link>
         </div>
       </div>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <span style={{ color: "#8b949e" }}>Related: </span>
+  <a href="/web3-business/reviews/coinbase-commerce" style={{ color: "#fb923c", marginRight: "1rem" }}>Coinbase Commerce</a>
+  <a href="/web3-business/reviews/stripe-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Stripe Crypto</a>
+  <a href="/web3-business/reviews/superfluid" style={{ color: "#fb923c", marginRight: "1rem" }}>Superfluid</a>
+</nav>
     </article>
   );
 }
