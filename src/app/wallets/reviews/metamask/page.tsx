@@ -154,6 +154,7 @@ export default function MetaMaskReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain & Network Support", "description": "Detailed MetaMask review for ${CURRENT_YEAR}. We cover MetaMask's features, swap fees, security, multi-chain support, and how it compares to alternatives.", "url": "https://degen0x.com/wallets/reviews/metamask", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -546,6 +546,7 @@ export default function DePINEcosystemGuidePage() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DePIN Ecosystem Guide 2026: 650+ Projects & $9B TVL", "description": "Complete DePIN (Decentralized Physical Infrastructure Networks) guide for 2026. 650+ active projects, $9B market cap (up 270% YoY), compute, storage, wireless,", "url": "https://degen0x.com/learn/depin-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

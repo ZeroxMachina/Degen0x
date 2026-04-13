@@ -493,7 +493,8 @@ export default function BondingCurvesTokenExplained() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bonding Curves for Tokens Explained | Linear, Exponential &", "description": "Master bonding curves: linear, exponential, sigmoid models used in Pump.fun, Friend.tech, Bancor. Fair token launch mechanics, rugpull prevention, and curve", "url": "https://degen0x.com/learn/bonding-curves-token-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

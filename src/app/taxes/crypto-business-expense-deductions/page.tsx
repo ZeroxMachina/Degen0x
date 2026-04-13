@@ -551,7 +551,8 @@ export default function CryptoBusinessExpenseDeductions() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Business Expense Deductions 2026 | Mining Equipment,", "description": "Deductible crypto business expenses: hardware wallets, mining equipment, electricity, software subscriptions, conference travel, education, Section 179, home", "url": "https://degen0x.com/taxes/crypto-business-expense-deductions", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

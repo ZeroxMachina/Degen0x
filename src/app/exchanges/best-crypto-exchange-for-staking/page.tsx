@@ -321,7 +321,8 @@ export default function BestExchangeForStaking() {
             <strong style={{ color: '#f59e0b' }}>Disclosure:</strong> Exchange reviews reflect our team&apos;s independent testing. We may earn referral fees from some exchanges, which never influence our ratings.
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Exchange for Staking 2026: Coinbase, Kraken, OKX", "description": "Complete staking guide: Coinbase ETH 3.2%, Kraken ETH 3.5%, Solana 5.1%, OKX, Bybit. APY comparison, lock-up periods, minimum stake, tax treatment.", "url": "https://degen0x.com/exchanges/best-crypto-exchange-for-staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

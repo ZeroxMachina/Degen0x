@@ -27,6 +27,7 @@ export default function ETFTrackerPage() {
     <>
       <ETFTrackerClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin & Crypto ETF Tracker 2026 \u2014 Live Flows, AUM & Performance | degen0x", "description": "Track Bitcoin spot ETF inflows, outflows, and AUM in real-time. Compare all crypto ETFs by performance, fees, and assets under management. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.", "url": "https://degen0x.com/tools/etf-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

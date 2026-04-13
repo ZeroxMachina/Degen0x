@@ -603,6 +603,7 @@ export default function DeFiYieldAggregatorsGuide() {
         />
       </article>
       <BackToTop />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Yield Aggregators Guide 2026: Yearn, Beefy, Pendle &", "description": "Complete guide to DeFi yield aggregators in 2026. Compare Yearn V3, Beefy Finance, Pendle, Sommelier, and more. How auto-compounding works, strategies, risks,", "url": "https://degen0x.com/learn/defi-yield-aggregators-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

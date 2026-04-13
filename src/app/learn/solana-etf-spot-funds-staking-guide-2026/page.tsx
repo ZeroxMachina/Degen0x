@@ -1267,6 +1267,7 @@ export default function SolanaETFGuide() {
           </Link>
         </div>
       </div>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana ETF Spot Funds Staking Guide 2026 \u2014 Complete Fee", "description": "Complete guide to SEC-approved Solana spot ETFs trading 2026. Compare 16 ETFs, staking yields, fees, and regulatory changes from the March 2026 digital", "url": "https://degen0x.com/learn/solana-etf-spot-funds-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

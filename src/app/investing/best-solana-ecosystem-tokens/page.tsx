@@ -614,7 +614,8 @@ export default function BestSolanaTokens2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Solana Ecosystem Tokens 2026: JUP, MNDE, RAY, JTO, PYTH", "description": "Complete guide to best Solana ecosystem tokens. Compare Jupiter (JUP), Marinade (MNDE), Raydium (RAY), Jito (JTO), Pyth (PYTH), Drift (DRIFT). TVL, catalysts,", "url": "https://degen0x.com/investing/best-solana-ecosystem-tokens", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/staking/calculators/staking-rewards-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Staking Rewards Calculator</a>

@@ -639,6 +639,7 @@ export default function CoinbaseVsKrakenPage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase vs Kraken: Detailed Comparison (2026) | degen0x", "description": "Compare Coinbase and Kraken: security, fees, features, and more. Find the best US-based crypto exchange for your trading needs.", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-kraken", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

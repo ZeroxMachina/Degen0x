@@ -709,6 +709,7 @@ export default function SuiBlockchainGuide() {
         />
       </article>
       <BackToTop />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token", "description": "Complete Sui blockchain guide covering object-centric architecture, Move language, ecosystem, tokenomics, and how SUI compares to Solana. Updated March 2026.", "url": "https://degen0x.com/learn/sui-blockchain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

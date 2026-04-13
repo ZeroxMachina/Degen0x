@@ -368,7 +368,8 @@ export default function VolumeProfileTradingCryptoExpanded() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Volume Profile Trading Crypto 2026: VWAP, POC, Value Area,", "description": "Master volume profile trading in crypto. Point of Control (POC), Value Area High/Low (VAH/VAL), VWAP, naked POCs, high volume nodes. TradingView setup, trading", "url": "https://degen0x.com/trading/volume-profile-trading-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

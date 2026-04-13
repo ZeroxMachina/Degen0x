@@ -174,7 +174,8 @@ export default function BestCryptoDebitCard() {
         <div style={{ ...s.box, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> Not financial advice. Tax implications complex. Consult tax pro. Cards have spend/ATM limits. Check terms.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Debit Card 2026: Coinbase Card vs Crypto.com", "description": "Compare crypto debit cards: Coinbase (4% cash back), Crypto.com Visa (cashback tiers), Gnosis Pay, Bybit, Nexo. Auto-convert, no KYC options.", "url": "https://degen0x.com/crypto-cards/best-crypto-debit-card-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

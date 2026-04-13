@@ -491,7 +491,8 @@ export default function SmartContractAuditBusinessGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Contract Audit Business Guide 2026: Career, Pricing,", "description": "Start a smart contract audit firm. Compare Trail of Bits, OpenZeppelin, Certik, Spearbit, Code4rena. Learn pricing ($5K-$500K), methodology, formal", "url": "https://degen0x.com/web3-business/smart-contract-audit-business-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/web3-business/best/launchpads" style={{ color: "#fb923c", marginRight: "1rem" }}>Launchpads</a>

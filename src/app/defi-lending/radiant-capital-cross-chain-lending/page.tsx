@@ -388,7 +388,8 @@ export default function RadiantCapitalCrossChainLending() {
             <strong style={{ color: '#c084fc' }}>DeFi risk warning:</strong> Lending protocols carry smart contract risk, liquidation risk, and oracle risk.
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Radiant Capital Cross Chain Lending | degen0x", "description": "Radiant Capital Cross Chain Lending guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.", "url": "https://degen0x.com/defi-lending/radiant-capital-cross-chain-lending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

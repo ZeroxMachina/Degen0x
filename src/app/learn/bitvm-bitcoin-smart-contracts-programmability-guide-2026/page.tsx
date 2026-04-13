@@ -679,6 +679,7 @@ export default function BitVMPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/decentralized-gpu-compute-networks-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Decentralized Gpu Compute Networks Guide</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BitVM Guide 2026: Bitcoin Smart Contracts | degen0x", "description": "Complete guide to BitVM: how Bitcoin enables Turing-complete smart contracts without consensus changes. Learn off-chain computation, fraud proofs, OP_CAT, and", "url": "https://degen0x.com/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

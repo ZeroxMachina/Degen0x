@@ -476,7 +476,8 @@ export default function NFTDomainNamesGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Domain Names 2026: ENS, Unstoppable Domains, .sol Guide", "description": "Complete NFT domain guide: ENS .eth domains ($5-50K annual), Unstoppable Domains .crypto ($6-10K one-time), Solana .sol ($1-5). Pricing, investment potential,", "url": "https://degen0x.com/nfts/nft-domain-names-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/nfts/floor-tracker" style={{ color: "#fb923c", marginRight: "1rem" }}>Floor Tracker</a>

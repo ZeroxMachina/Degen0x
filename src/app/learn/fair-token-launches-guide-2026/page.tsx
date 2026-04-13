@@ -1271,6 +1271,7 @@ export default function FairTokenLaunchesGuide2026() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fair Token Launch Mechanisms Guide 2026 | degen0x", "description": "How fair token launches work in 2026: bonding curves, anti-sniper protection, batch auctions, and reputation systems. Evaluate any launch with our practical", "url": "https://degen0x.com/learn/fair-token-launches-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

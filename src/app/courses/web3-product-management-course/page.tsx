@@ -752,7 +752,8 @@ export default function Web3ProductManagementGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Product Management Courses 2026: Complete Guide to", "description": "Master Web3 product management with comprehensive courses, tokenomics strategies, governance frameworks, and real DeFi protocol case studies. Learn to", "url": "https://degen0x.com/courses/web3-product-management-course", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

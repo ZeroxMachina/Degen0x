@@ -984,7 +984,8 @@ export default function EthereumL2ComparisonGuidePage() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Layer 2 Comparison 2026: Arbitrum vs Base vs", "description": "Compare every major Ethereum L2 \u2014 Arbitrum, Base, Optimism, zkSync Era, Starknet, Scroll and more. TVL, fees, TPS, ecosystem size, and which rollup fits your", "url": "https://degen0x.com/learn/ethereum-layer-2-comparison-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

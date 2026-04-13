@@ -1023,6 +1023,7 @@ export default function THORChainNativeSwapsPage() {
         />
 
       <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "THORChain & Cross-Chain Native Swaps Guide 2026 | degen0x", "description": "Complete THORChain guide: native cross-chain swaps without bridges, Continuous Liquidity Pools, RUNE tokenomics, streaming swaps, node security, 2026 expansion", "url": "https://degen0x.com/learn/thorchain-cross-chain-native-swaps-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

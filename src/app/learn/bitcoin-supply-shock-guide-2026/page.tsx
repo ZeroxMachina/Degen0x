@@ -631,6 +631,7 @@ export default function BitcoinSupplyShockGuidePage() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Supply Shock 2026: Exchange Reserves, ETF Custody &", "description": "Bitcoin exchange reserves hit 7-year lows while ETFs hold 1.3M BTC. Explore the 2026 supply shock thesis \u2014 who holds what, what", "url": "https://degen0x.com/learn/bitcoin-supply-shock-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

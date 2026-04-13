@@ -476,7 +476,8 @@ export default function StablecoinTypesComparison() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026", "description": "Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks,", "url": "https://degen0x.com/learn/stablecoin-types-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

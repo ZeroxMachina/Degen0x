@@ -838,6 +838,7 @@ export default function BitVMProgrammabilityGuide() {
         />
       </div>
       <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin BitVM & Programmability Guide 2026 \u2014 Smart", "description": "Explore how BitVM enables smart contracts on Bitcoin without protocol changes. Learn about BitVM2, Citrea, Bitlayer, BOB Network, and the Bitcoin", "url": "https://degen0x.com/learn/bitcoin-bitvm-programmability-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -634,6 +634,7 @@ export default function StakingRewardsCalculatorPage() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Staking Rewards Calculator | APY & Compound Calculator", "description": "Calculate crypto staking rewards with our APY calculator. Compare yields across ETH, SOL, DOT, ATOM, and other assets. Calculate compound interest.", "url": "https://degen0x.com/tools/staking-rewards-calculator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

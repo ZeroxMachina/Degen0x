@@ -1119,6 +1119,7 @@ export default function TariffsTradeWarGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tariffs & Trade Wars: Impact on Crypto Markets 2026", "description": "Comprehensive guide on how US tariffs and trade wars impact Bitcoin, crypto markets, and trading strategies in 2026. Includes tariff timeline, transmission", "url": "https://degen0x.com/learn/tariffs-trade-war-crypto-impact-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

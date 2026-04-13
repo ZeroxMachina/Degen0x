@@ -154,6 +154,7 @@ export default function TrustWalletReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "100+ Blockchain Support", "description": "Full Trust Wallet review for ${CURRENT_YEAR}. Covers 100+ blockchain support, dApp browser, staking, security, and Binance integration.", "url": "https://degen0x.com/wallets/reviews/trust-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

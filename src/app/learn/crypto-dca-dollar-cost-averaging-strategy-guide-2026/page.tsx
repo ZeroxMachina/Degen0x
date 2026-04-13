@@ -279,7 +279,8 @@ export default function CryptoDCAPage() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto DCA Strategy Guide 2026: Dollar-Cost Averaging", "description": "Master dollar-cost averaging in crypto: mechanics, vs lump-sum, optimal intervals, tax implications, and 2026 portfolio strategies.", "url": "https://degen0x.com/learn/crypto-dca-dollar-cost-averaging-strategy-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

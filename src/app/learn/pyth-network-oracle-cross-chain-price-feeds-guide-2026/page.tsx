@@ -441,7 +441,8 @@ export default function PythNetworkGuide() {
           section="learn"
         />
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Pyth Network Guide 2026 \u2014 Cross-Chain Oracle, Price Feeds &", "description": "Complete guide to Pyth Network: pull-based oracle architecture, 2,800+ price feeds across 50+ chains, Oracle Integrity Staking, PYTH tokenomics, and how it", "url": "https://degen0x.com/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
 
   );
 }

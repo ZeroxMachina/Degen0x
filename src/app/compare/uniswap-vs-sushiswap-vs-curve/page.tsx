@@ -379,7 +379,8 @@ export default function UniswapVsSushiSwapVsCurve() {
             <strong style={{ color: '#58a6ff' }}>Methodology note:</strong> Our comparisons analyze on-chain data, fee structures, and feature sets as of the publication date.
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Uniswap vs SushiSwap vs Curve: DEX Comparison 2026", "description": "Compare Uniswap, SushiSwap, and Curve: AMM models, fees, TVL, token utility, multi-chain support. Which DEX wins?", "url": "https://degen0x.com/compare/uniswap-vs-sushiswap-vs-curve", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

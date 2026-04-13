@@ -1016,6 +1016,7 @@ export default function ImpermanentLossPage() {
         />
 
           <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Impermanent Loss & Liquidity Providing Guide 2026 | degen0x", "description": "Master impermanent loss in DeFi: understand the math, calculate IL, concentrated liquidity strategies, and profit despite price divergence with proven LP", "url": "https://degen0x.com/learn/impermanent-loss-liquidity-providing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

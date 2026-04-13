@@ -419,7 +419,8 @@ export default function AltcoinSeasonIndex() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered financial advice. Alt season cycles are historical patterns—not guaranteed to repeat identically. Past cycles don&apos;t guarantee future performance. Altcoins carry extreme risk and volatility. Always do your own research (DYOR), diversify, and never invest more than you can afford to lose. degen0x does not endorse any specific altcoin or investment strategy.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Altcoin Season Index | Alt Season Tracker", "description": "Real-time altcoin season indicator measuring BTC dominance decline and alt performance. Identify alt season cycles, track capital rotation, and optimize", "url": "https://degen0x.com/tools/altcoin-season-index", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         <script
           type="application/ld+json"

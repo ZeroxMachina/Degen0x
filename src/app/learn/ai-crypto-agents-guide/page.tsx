@@ -267,7 +267,8 @@ export default function AICryptoAgentsGuidePage() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI Crypto Agents Guide 2026: Autonomous Trading, DeFi &", "description": "Complete guide to AI agents in crypto \u2014 autonomous trading bots, DeFi yield optimizers, on-chain analysts, and the tokens powering the AI agent economy in 2026.", "url": "https://degen0x.com/learn/ai-crypto-agents-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

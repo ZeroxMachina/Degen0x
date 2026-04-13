@@ -464,7 +464,8 @@ export default function BestAICryptoProjects2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best AI Crypto Projects 2026", "description": "Top AI crypto projects: FET, RNDR, TAO, NEAR. Market caps, use cases, teams, tokenomics. April 2026 analysis.", "url": "https://degen0x.com/investing/best-ai-crypto-projects-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

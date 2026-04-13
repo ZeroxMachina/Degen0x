@@ -460,7 +460,8 @@ export default function CryptoRetirementPlanningGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Retirement Planning Guide 2026: Portfolio Allocation", "description": "Complete crypto retirement strategy. Portfolio allocation by age (20s: 10-20%, 40s: 5-10%, 60s: 1-5%), Bitcoin IRA options, Roth conversions, 4% rule adjusted", "url": "https://degen0x.com/long-term/crypto-retirement-planning-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/long-term/best/dividend-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Dividend Crypto</a>

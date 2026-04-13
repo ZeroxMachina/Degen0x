@@ -240,7 +240,8 @@ export default function WhereToSpendBitcoin() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Where to Spend Bitcoin 2026: Microsoft, AT&T, Bitrefill, El", "description": "Bitcoin spending guide: Microsoft (cloud), AT&T (utilities), Bitcoin debit cards, Bitrefill, Travala, Lightning payments, El Salvador adoption. Real-world", "url": "https://degen0x.com/spending/where-to-spend-bitcoin-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

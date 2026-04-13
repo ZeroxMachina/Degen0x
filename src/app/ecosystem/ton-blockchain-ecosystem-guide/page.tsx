@@ -416,7 +416,8 @@ export default function TONEcosystemGuideExpanded() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. TON&apos;s success depends on Telegram&apos;s regulatory status, which is uncertain. Mini App hype cycles are volatile. DYOR on regulatory risks, centralization concerns, and Mini App sustainability before investing. Not financial advice.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,", "description": "Complete TON ecosystem guide: STON.fi DEX ($120M TVL), DeDust ($60M TVL), Evaa lending ($40M TVL). Telegram Mini Apps: Notcoin (35M users), Hamster Kombat", "url": "https://degen0x.com/ecosystem/ton-blockchain-ecosystem-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

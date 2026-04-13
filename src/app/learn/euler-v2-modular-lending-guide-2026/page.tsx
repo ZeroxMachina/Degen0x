@@ -1301,6 +1301,7 @@ export default function EulerV2Guide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/shared-sequencing-decentralized-sequencers-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Shared Sequencing Decentralized Sequencers Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Euler V2 Modular Lending Guide 2026 \u2014 Vaults & EVK | degen0x", "description": "Master Euler V2\\", "url": "https://degen0x.com/learn/euler-v2-modular-lending-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

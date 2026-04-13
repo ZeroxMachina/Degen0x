@@ -314,7 +314,8 @@ export default function CryptoProfitCalculatorPage() {
             <li><Link href="/taxes/how-to-file-crypto-taxes-2026" style={linkStyle}>How to File Crypto Taxes 2026</Link> — Taxation compliance</li>
           </ul>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Profit Calculator | Calculate Gains & ROI", "description": "Calculate crypto profits with trading fees and taxes. Track ROI, gain/loss %, and cost basis. Essential tool for crypto traders and investors.", "url": "https://degen0x.com/tools/crypto-profit-calculator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         <script
           type="application/ld+json"

@@ -370,6 +370,7 @@ export default function SuiMoveGuide() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sui & Move Blockchain Guide 2026 \u2014 Ecosystem & DeFi", "description": "Complete Sui blockchain & Move language guide for 2026. Layer 1 with object-centric model, 300K+ TPS, $580M TVL. NAVI, Scallop, Cetus protocols.", "url": "https://degen0x.com/learn/sui-move-blockchain-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

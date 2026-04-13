@@ -495,7 +495,8 @@ export default function CryptoMomentumStrategy() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Momentum Trading Strategy 2026 | Moving Averages RSI", "description": "Momentum trading guide: 50/200 MA golden cross, RSI 30-70 signals, ROC trend strength, ADX filtering. BTC/ETH backtests, win rates, risk management.", "url": "https://degen0x.com/investing/crypto-momentum-trading-strategy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

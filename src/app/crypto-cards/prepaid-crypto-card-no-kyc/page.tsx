@@ -551,7 +551,8 @@ export default function PrepaidCryptoCardNoKYC() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Prepaid Crypto Cards with Minimal KYC | 2026 Guide", "description": "Best prepaid crypto cards requiring minimal KYC in 2026: anonymous options, prepaid debit cards, and light-verification platforms. Low-friction crypto spending.", "url": "https://degen0x.com/crypto-cards/prepaid-crypto-card-no-kyc", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

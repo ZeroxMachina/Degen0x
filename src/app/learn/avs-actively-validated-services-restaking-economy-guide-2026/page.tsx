@@ -1010,6 +1010,7 @@ export default function AVSRestakingEconomyPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/onchain-institutional-credit-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Institutional Credit Guide</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Actively Validated Services (AVS) & Restaking Economy Guide", "description": "Master Actively Validated Services and the restaking economy in 2026: EigenLayer, EigenCloud, AVS protocols like EigenDA, AltLayer, Omni Network, Brevis. Learn", "url": "https://degen0x.com/learn/avs-actively-validated-services-restaking-economy-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

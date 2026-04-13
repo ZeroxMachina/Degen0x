@@ -961,7 +961,8 @@ npx hardhat run scripts/deploy.js --network linea`}
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Linea zkEVM Guide 2026 \u2014 Consensys Layer 2 Deep Dive", "description": "Complete guide to Linea zkEVM, the Consensys-built Layer 2 for Ethereum. Learn how Type 2 zkEVM works, ecosystem metrics, MetaMask integration, DeFi protocols,", "url": "https://degen0x.com/learn/linea-zkevm-consensys-layer-2-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

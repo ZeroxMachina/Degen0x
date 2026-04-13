@@ -1421,7 +1421,8 @@ export default function BasedRollupsGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Based Rollups & Ethereum L1 Sequencing Guide 2026 | Degen0x", "description": "Master based rollups with L1 sequencing, preconfirmations, and synchronous composability. Learn about Taiko, Gwyneth, Surge, and the future of Ethereum scaling.", "url": "https://degen0x.com/learn/based-rollups-ethereum-l1-sequencing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       
         <script
           type="application/ld+json"

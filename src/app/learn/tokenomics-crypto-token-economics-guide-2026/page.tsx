@@ -873,6 +873,7 @@ export default function TokenomicsGuidePage() {
         />
 
           <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenomics Guide 2026 \u2014 How to Evaluate Crypto Token", "description": "Master crypto tokenomics: token supply, distribution, vesting, inflation mechanisms, utility, governance, red flags, and evaluation frameworks for 2026.", "url": "https://degen0x.com/learn/tokenomics-crypto-token-economics-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

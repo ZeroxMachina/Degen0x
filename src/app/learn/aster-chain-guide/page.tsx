@@ -651,6 +651,7 @@ export default function AsterChainGuidePage() {
         </div>
       </div>
     </main>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aster Chain Guide 2026 \u2014 CZ-Backed Privacy Derivatives L1", "description": "Master Aster Chain, the CZ-backed privacy-focused perpetual futures Layer 1. Learn about zero-knowledge proofs, orderbook matching, 100x leverage, and how it", "url": "https://degen0x.com/learn/aster-chain-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

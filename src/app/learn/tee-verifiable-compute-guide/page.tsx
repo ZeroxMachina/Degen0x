@@ -589,6 +589,7 @@ export default function TEEVerifiableComputeGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "TEE & Verifiable Compute Guide 2026 \u2014 Trusted Execution", "description": "Learn how Trusted Execution Environments (TEEs) enable private smart contracts, MEV protection, and confidential AI in crypto. Covers Flashbots, Phala, Oasis,", "url": "https://degen0x.com/learn/tee-verifiable-compute-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

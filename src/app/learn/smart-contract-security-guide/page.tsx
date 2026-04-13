@@ -680,6 +680,7 @@ export default function SmartContractSecurityGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Contract Security Guide 2026: Audits, Vulnerabilities", "description": "Learn how smart contract audits work, the most common DeFi vulnerabilities in 2026, top audit firms, and how to evaluate protocol safety before investing.", "url": "https://degen0x.com/learn/smart-contract-security-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

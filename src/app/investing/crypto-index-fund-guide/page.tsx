@@ -579,7 +579,8 @@ export default function CryptoIndexFundGuide2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Index Fund Guide 2026: Bitwise, Grayscale, DPI,", "description": "Complete crypto index fund guide 2026. Compare Bitwise 10 Index, Grayscale funds, Hashdex, Index Coop DPI, Galaxy Digital. Learn AUM, fees, minimums,", "url": "https://degen0x.com/investing/crypto-index-fund-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/crypto/stacks" style={{ color: "#fb923c", marginRight: "1rem" }}>Stacks</a>

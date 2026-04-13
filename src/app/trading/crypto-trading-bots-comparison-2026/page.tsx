@@ -324,7 +324,8 @@ export default function CryptoTradingBotsComparison() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Trading Bots Comparison 2026: 3Commas, Pionex,", "description": "Compare top crypto trading bots 2026. See 3Commas vs Pionex vs Cryptohopper vs Bitsgap vs HaasOnline. Pricing, strategies (DCA, grid, arbitrage), backtesting,", "url": "https://degen0x.com/trading/crypto-trading-bots-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

@@ -1107,6 +1107,7 @@ export default function DVTGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/erc-20-token-standard-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Erc 20 Token Standard Explained</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Distributed Validator Technology (DVT) Guide | degen0x", "description": "Master DVT: how key splitting, threshold signing, and Obol/SSV solve Ethereum staking centralization. Including setup guide.", "url": "https://degen0x.com/learn/distributed-validator-technology-dvt-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

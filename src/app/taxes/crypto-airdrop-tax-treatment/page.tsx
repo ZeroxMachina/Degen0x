@@ -540,7 +540,8 @@ export default function CryptoAirdropTaxTreatment() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Airdrop Tax Treatment 2026: Ordinary Income, Cost", "description": "Complete crypto airdrop tax guide 2026: ordinary income at FMV receipt, cost basis establishment, Uniswap UNI airdrop example, hard fork IRS Rev. Rul.,", "url": "https://degen0x.com/taxes/crypto-airdrop-tax-treatment", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

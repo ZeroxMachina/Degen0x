@@ -479,7 +479,8 @@ export default function GridTradingBotCryptoGuide() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Grid Trading Bot Crypto Guide 2026: Passive 0.5-2% Daily", "description": "Master grid trading bots with arithmetic vs geometric grids. Learn optimal spacing, ranging markets, and comparison of Pionex, 3Commas, Bybit, KuCoin platforms", "url": "https://degen0x.com/trading/grid-trading-bot-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

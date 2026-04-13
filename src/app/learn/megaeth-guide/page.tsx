@@ -767,6 +767,7 @@ export default function MegaETHGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is MegaETH? Real-Time Ethereum L2 Explained 2026", "description": "MegaETH launched mainnet Feb 2026 with 100,000 TPS and 10ms blocks. Learn how its Streaming EVM, MEGA tokenomics, and parallel execution work \u2014 plus risks and", "url": "https://degen0x.com/learn/megaeth-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

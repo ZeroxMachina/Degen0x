@@ -504,6 +504,7 @@ export default function HowToConvertCryptoPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/depin-earning-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Depin Earning Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Convert Cryptocurrency: Complete 2026 Guide", "description": "Learn how to convert crypto easily and safely. Step-by-step guide covering CEX, DEX, fees, taxes, and the best rates for crypto conversion.", "url": "https://degen0x.com/learn/how-to-convert-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -955,6 +955,7 @@ export default function LiquidRestakingTokensPage() {
           </Link>
         </div>
       </div>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Liquid Restaking Tokens Compared 2026: weETH vs rsETH vs", "description": "Complete guide to Liquid Restaking Tokens (LRTs) comparing weETH (Ether.fi), rsETH (Kelp/KernelDAO), ezETH (Renzo), and others. Learn how LRTs work, TVL,", "url": "https://degen0x.com/learn/liquid-restaking-tokens-compared-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

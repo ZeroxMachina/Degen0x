@@ -453,7 +453,8 @@ export default function CryptoScalpingStrategyGuide() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Scalping Strategy Guide 2026: 1-5 Min Timeframes,", "description": "Crypto scalping guide: 1-5 minute timeframes, order flow analysis, tight stops 0.5-1%, RSI + VWAP, Bybit vs Binance. Win rate vs R:R targeting.", "url": "https://degen0x.com/trading/crypto-scalping-strategy-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/trading/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>

@@ -236,7 +236,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DePIN Networks: Decentralized Physical Infrastructure 2026", "description": "Master DePIN (Decentralized Physical Infrastructure Networks). Learn how crypto incentives power real-world networks: IoT, compute, mobile, storage", "url": "https://degen0x.com/learn/depin-decentralized-physical-infrastructure-networks-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

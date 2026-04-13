@@ -452,7 +452,8 @@ export default function HowCryptoLoansWork() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How Crypto Loans Work: Complete 2026 Guide", "description": "Complete guide to crypto loans explained. Learn collateral requirements, liquidation risks, APR rates, CeFi vs DeFi platforms, and best practices for 2026.", "url": "https://degen0x.com/crypto-loans/how-crypto-loans-work-complete-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-loans/reviews/venus-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Venus Loans</a>

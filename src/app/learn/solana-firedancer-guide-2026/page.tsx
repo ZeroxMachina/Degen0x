@@ -898,6 +898,7 @@ export default function SolanaFiredancerGuidePage() {
       </article>
 
       <BackToTop />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Firedancer Validator Client Guide 2026: Performance,", "description": "Complete guide to Solana Firedancer validator client. Understand Jump Crypto", "url": "https://degen0x.com/learn/solana-firedancer-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

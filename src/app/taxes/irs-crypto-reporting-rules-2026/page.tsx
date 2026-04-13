@@ -528,7 +528,8 @@ export default function IRSCryptoReportingRules2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "IRS Crypto Reporting Rules 2026: Form 1099-DA, Form 8949 &", "description": "Complete guide to IRS crypto reporting 2026: Form 1099-DA (new), broker reporting, Form 1040 digital asset question, Form 8949, Schedule D, FBAR/FATCA", "url": "https://degen0x.com/taxes/irs-crypto-reporting-rules-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

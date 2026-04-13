@@ -430,7 +430,8 @@ export default function BlockchainExplorerTool() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. degen0x is not responsible for explorer accuracy or uptime. Always verify critical transactions on multiple explorers or nodes. Do your own research before making financial decisions.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Blockchain Explorers 2026: Etherscan, Solscan,", "description": "Complete guide to blockchain explorers: Etherscan, Solscan, Blockchair, Arbiscan. Read transactions, verify contracts, APIs. Comparison table with features and", "url": "https://degen0x.com/tools/blockchain-explorer-tool", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

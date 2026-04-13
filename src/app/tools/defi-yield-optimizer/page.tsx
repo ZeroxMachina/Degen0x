@@ -496,7 +496,8 @@ export default function DeFiYieldOptimizer() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Yield farming and optimizer protocols carry risks including smart contract exploits, impermanent loss, and farm collapse. This is not financial advice. Always DYOR and start with small amounts. Past yields do not guarantee future returns.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Yield Optimizer Guide: Yearn, Beefy, Convex & Pendle", "description": "Compare top yield optimizers: Yearn Finance, Beefy Finance, Convex, Pendle, Sommelier. Auto-compound strategies, multi-chain yields, TVL data, governance", "url": "https://degen0x.com/tools/defi-yield-optimizer", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

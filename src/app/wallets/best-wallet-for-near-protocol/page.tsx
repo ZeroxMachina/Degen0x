@@ -542,7 +542,8 @@ export default function BestWalletNearProtocol() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Wallet for NEAR Protocol 2026: NEAR Wallet, Meteor,", "description": "Best NEAR wallet 2026: NEAR Wallet (official web, named accounts alice.near), Meteor (DeFi-focused, Ref Finance), Sender (mobile+extension), HERE Wallet", "url": "https://degen0x.com/wallets/best-wallet-for-near-protocol", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

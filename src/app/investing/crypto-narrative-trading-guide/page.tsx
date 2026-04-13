@@ -575,7 +575,8 @@ export default function CryptoNarrativeTradingGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Narrative Trading Guide: AI, RWA, DePIN, Memecoins", "description": "Master narrative trading with 2024-2026 themes: AI tokens, RWA, DePIN, restaking, memecoins, BTCFi. Track lifecycle from discovery to mania to collapse with", "url": "https://degen0x.com/investing/crypto-narrative-trading-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/best/depin-tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>Depin Tokens</a>

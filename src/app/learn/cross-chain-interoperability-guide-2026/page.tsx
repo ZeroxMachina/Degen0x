@@ -885,6 +885,7 @@ export default function CrossChainInteroperabilityGuidePage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cross-chain Interoperability Guide 2026: LayerZero,", "description": "Complete guide to cross-chain messaging and interoperability in 2026. Understand LayerZero, Wormhole, Chainlink CCIP, Axelar, and Hyperlane. Compare", "url": "https://degen0x.com/learn/cross-chain-interoperability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

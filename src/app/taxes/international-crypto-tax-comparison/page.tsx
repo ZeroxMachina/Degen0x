@@ -555,7 +555,8 @@ export default function InternationalCryptoTaxComparison() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "International Crypto Tax Comparison 2026: US vs Portugal vs", "description": "Compare crypto tax rates globally. US (37%), Portugal (0%), Singapore (0% gains), Germany (0% after 1 year), UAE (0%). OECD CARF reporting framework and tax", "url": "https://degen0x.com/taxes/international-crypto-tax-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

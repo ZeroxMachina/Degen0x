@@ -2229,6 +2229,7 @@ export default function BitcoinMiningGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Mining Guide 2026: Hardware, Costs & Profitability", "description": "Complete guide to Bitcoin mining in 2026. Compare ASIC miners, calculate profitability, understand electricity costs, and learn if mining BTC is still worth it.", "url": "https://degen0x.com/learn/bitcoin-mining-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

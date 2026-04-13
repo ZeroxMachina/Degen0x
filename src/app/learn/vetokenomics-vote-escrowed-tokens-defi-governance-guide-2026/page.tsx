@@ -725,7 +725,8 @@ export default function VeTokenomicsGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "veTokenomics & Vote-Escrowed Tokens Guide 2026 \u2014 DeFi", "description": "Complete guide to veTokenomics (vote-escrowed tokens) in 2026. Learn how Curve, Balancer, Velodrome, and others use lock-based governance. Curve Wars, bribe", "url": "https://degen0x.com/learn/vetokenomics-vote-escrowed-tokens-defi-governance-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/learn/zk-coprocessors-verifiable-compute-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Zk Coprocessors Verifiable Compute Guide 2026</a>

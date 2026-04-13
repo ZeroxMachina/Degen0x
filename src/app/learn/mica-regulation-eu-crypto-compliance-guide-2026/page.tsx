@@ -922,6 +922,7 @@ export default function MiCARegulationPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/lido-v3-stvaults-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido V3 Stvaults Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MiCA Regulation Guide 2026 \u2014 EU Crypto Compliance Explained", "description": "Complete guide to MiCA (Markets in Crypto-Assets Regulation). Learn EU crypto compliance requirements, stablecoin rules, CASP licensing, penalties, and what it", "url": "https://degen0x.com/learn/mica-regulation-eu-crypto-compliance-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -368,7 +368,8 @@ export default function Layer0BlockchainsPage() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Layer 0 Blockchains Explained: Cosmos, Polkadot, Avalanche,", "description": "Master Layer 0 blockchains in 2026. Compare Cosmos IBC (80+ chains), Polkadot parachains (30+), Avalanche subnets (100+), LayerZero omnichain ($8B TVL).", "url": "https://degen0x.com/learn/layer-0-blockchain-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

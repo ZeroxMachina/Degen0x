@@ -229,7 +229,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Raydium Solana AMM: Automated Market Maker & Liquidity Guide", "description": "Master Raydium AMM on Solana. Learn liquidity provision, yield farming, impermanent loss, and market making strategies for DeFi traders and LPs.", "url": "https://degen0x.com/learn/raydium-solana-amm-dex-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

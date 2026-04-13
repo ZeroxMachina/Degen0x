@@ -606,7 +606,8 @@ export default function BestWalletForLayer2() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Wallet for Layer 2 | degen0x", "description": "Best wallets for Layer 2 in 2026. Compare MetaMask, Rabby, Coinbase, Phantom, OKX. Multi-chain support, bridging, gas optimization guide.", "url": "https://degen0x.com/wallets/best-wallet-for-layer-2", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/wallets/reviews/onekey" style={{ color: "#fb923c", marginRight: "1rem" }}>Onekey</a>

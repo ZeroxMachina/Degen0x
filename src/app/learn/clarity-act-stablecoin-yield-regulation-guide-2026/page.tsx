@@ -594,6 +594,7 @@ export default function CLARITYActGuidePage() {
           </p>
         </div>
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "CLARITY Act & Stablecoin Yield Regulation 2026 Guide", "description": "Complete guide to the CLARITY Act\\", "url": "https://degen0x.com/learn/clarity-act-stablecoin-yield-regulation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

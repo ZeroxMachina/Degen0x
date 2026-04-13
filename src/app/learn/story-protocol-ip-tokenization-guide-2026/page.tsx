@@ -1270,6 +1270,7 @@ export default function StoryProtocolGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Story Protocol Guide 2026: IP Tokenization & Programmable IP", "description": "Complete Story Protocol guide 2026: IP tokenization, Programmable IP Licenses (PIL), IP Assets, AI agents, ATCP/IP protocol, $IP token economics, and", "url": "https://degen0x.com/learn/story-protocol-ip-tokenization-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

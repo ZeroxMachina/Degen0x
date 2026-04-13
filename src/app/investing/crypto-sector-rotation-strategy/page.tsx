@@ -508,7 +508,8 @@ export default function CryptoSectorRotationStrategy() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Sector Rotation Strategy: 2024-2026 Cycle Analysis", "description": "Master crypto sector rotation across BTC \u2192 ETH \u2192 L1s \u2192 DeFi \u2192 memes. Track BTC dominance, cycle phases, and narrative-driven allocation models with real", "url": "https://degen0x.com/investing/crypto-sector-rotation-strategy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

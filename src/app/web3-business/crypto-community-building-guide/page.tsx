@@ -757,7 +757,8 @@ export default function CryptoCommunityBuildingGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Community Building Guide 2026: Discord, Governance,", "description": "Build engaged crypto communities with Discord strategy, token-gating (Collab.Land), ambassador programs (Arbitrum, Optimism model), governance participation,", "url": "https://degen0x.com/web3-business/crypto-community-building-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/web3-business/web3-fundraising-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Web3 Fundraising Guide</a>

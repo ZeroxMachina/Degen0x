@@ -824,7 +824,8 @@ export default function YieldAggregatorsVaultsGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Yield Aggregators & DeFi Vaults Guide 2026 | degen0x", "description": "Complete guide to yield aggregators and DeFi vaults in 2026. Learn how Yearn, Beefy, Convex, and Sommelier optimize yields, ERC-4626 vault standard,", "url": "https://degen0x.com/learn/crypto-yield-aggregators-vaults-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

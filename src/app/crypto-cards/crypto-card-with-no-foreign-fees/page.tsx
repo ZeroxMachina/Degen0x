@@ -597,7 +597,8 @@ export default function CryptoCardWithNoForeignFees() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards With No Foreign Transaction Fees | Travel", "description": "Best crypto cards with zero foreign transaction fees: no FX markup, no ATM charges, international travel optimization. Compare 2026 options.", "url": "https://degen0x.com/crypto-cards/crypto-card-with-no-foreign-fees", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-cards/compare/crypto-com-vs-binance-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com Vs Binance Card</a>

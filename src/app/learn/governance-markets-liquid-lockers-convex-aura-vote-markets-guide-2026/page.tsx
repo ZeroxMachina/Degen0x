@@ -798,6 +798,7 @@ export default function GovernanceMarketsPage() {
           </Link>
         </div>
       </div>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Governance Markets & Liquid Lockers (Convex, Aura, Vote", "description": "Master governance markets, liquid lockers, Convex, Aura, and vote markets in DeFi. Learn how veTokenomics, Convex\\", "url": "https://degen0x.com/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

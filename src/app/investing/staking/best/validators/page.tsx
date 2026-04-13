@@ -191,6 +191,7 @@ export default function BestValidatorsPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Uptime", "description": "Compare the best staking validators and validator services in ${CURRENT_YEAR}. Find top-performing validators for Ethereum and Solana staking.", "url": "https://degen0x.com/investing/staking/best/validators", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

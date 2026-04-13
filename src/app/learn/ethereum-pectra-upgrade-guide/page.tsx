@@ -615,6 +615,7 @@ export default function EthereumPectraUpgradeGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Pectra Upgrade 2026: EIP-7702 & Changes | degen0x", "description": "Full guide to Ethereum", "url": "https://degen0x.com/learn/ethereum-pectra-upgrade-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

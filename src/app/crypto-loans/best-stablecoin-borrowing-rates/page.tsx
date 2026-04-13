@@ -439,7 +439,8 @@ export default function BestStablecoinBorrowingRates() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Stablecoin Borrowing Rates 2026: USDC, USDT Loans", "description": "Best stablecoin borrowing rates 2026. Compare USDC USDT loan APR 6-9%. Aave Compound Nexo. 85-95% LTV. No liquidation risk.", "url": "https://degen0x.com/crypto-loans/best-stablecoin-borrowing-rates", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-loans/best/bitcoin-loans" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Loans</a>

@@ -188,6 +188,7 @@ export default function BestForArtPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Curation Quality", "description": "Discover the best NFT marketplaces for digital art in ${CURRENT_YEAR}. Curated platforms for artists and collectors featuring galleries, auctions, and premium art curation.", "url": "https://degen0x.com/nfts/best/art", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

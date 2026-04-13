@@ -440,7 +440,8 @@ export default function BestProjectsOnLinea() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and is not financial or investment advice. Linea is emerging technology with meaningful risks. Do your own research on security audits, team, and roadmap before investing. Only allocate capital you can afford to lose.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Projects on Linea: SyncSwap, Velocore, Mendi Finance", "description": "Top DeFi projects on Linea zkEVM. SyncSwap DEX, Velocore, Mendi Finance lending. ConsenSys zkEVM, Surge points program, decentralization roadmap.", "url": "https://degen0x.com/ecosystem/best-projects-on-linea", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

@@ -1683,7 +1683,8 @@ const TokenizedGoldGuide = () => {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenized Gold Guide 2026 \u2014 XAUT, PAXG & Gold-Backed Crypto", "description": "Learn about tokenized gold and gold-backed crypto tokens. Understand XAUT vs PAXG, market structure, use cases in DeFi, and how to buy. March 2026 edition.", "url": "https://degen0x.com/learn/tokenized-gold-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 };

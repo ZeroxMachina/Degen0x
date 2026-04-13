@@ -481,7 +481,8 @@ export default function CryptoComplianceGuideBusiness() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Compliance Guide for Business 2026: Legal, AML/KYC,", "description": "Complete crypto compliance framework for businesses: AML/KYC implementation, money transmitter licensing, securities law, tax obligations, regulatory roadmap", "url": "https://degen0x.com/web3-business/crypto-compliance-guide-business", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

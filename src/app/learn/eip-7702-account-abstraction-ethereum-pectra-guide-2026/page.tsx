@@ -258,6 +258,7 @@ export default function Eip7702Guide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "EIP-7702: Ethereum Account Abstraction After Pectra Guide", "description": "How EIP-7702 transforms every Ethereum EOA into a smart account. Learn delegation, batching, sponsored gas, session keys, security trade-offs, and what the", "url": "https://degen0x.com/learn/eip-7702-account-abstraction-ethereum-pectra-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

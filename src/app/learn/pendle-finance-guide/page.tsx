@@ -901,6 +901,7 @@ export default function PendleFinanceGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Pendle Finance Guide 2026: Yield Tokenization | degen0x", "description": "Master Pendle Finance: how yield tokenization splits assets into PT and YT tokens, lock in fixed DeFi yields, and use Boros for funding rate trading. Updated", "url": "https://degen0x.com/learn/pendle-finance-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

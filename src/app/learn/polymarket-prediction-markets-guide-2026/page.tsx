@@ -844,6 +844,7 @@ export default function PolymarketGuidePage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Polymarket Guide 2026: How to Trade Prediction Markets", "description": "Complete guide to Polymarket prediction markets. Learn how to trade YES/NO shares, understand market mechanics, explore strategies, and discover the potential", "url": "https://degen0x.com/learn/polymarket-prediction-markets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   )
 }

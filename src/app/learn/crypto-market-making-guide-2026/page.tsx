@@ -1151,6 +1151,7 @@ export default function CryptoMarketMakingGuide() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Market Making Guide 2026 \u2014 AMMs, LPs & Order Books", "description": "Master crypto market making in 2026. Learn how AMMs work, how to be a liquidity provider, manage impermanent loss, and understand order book market making on", "url": "https://degen0x.com/learn/crypto-market-making-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

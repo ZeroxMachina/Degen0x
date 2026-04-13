@@ -764,6 +764,7 @@ export default function DAOGovernanceVotingGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DAO Governance & On-Chain Voting Guide 2026: How DAOs Work", "description": "Learn how DAO governance works in 2026 \u2014 $13.6B in treasuries, 50K+ DAOs, on-chain vs off-chain voting, delegate mechanics, top DAOs (Uniswap, Maker, Aave),", "url": "https://degen0x.com/learn/dao-governance-voting-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

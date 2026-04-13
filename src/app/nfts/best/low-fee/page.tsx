@@ -190,6 +190,7 @@ export default function LowestFeeMarketplacesPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lowest Fee NFT Marketplaces in 2026 | degen0x", "description": "Compare the NFT marketplaces with the lowest fees in ${CURRENT_YEAR}. Find platforms with zero or minimal marketplace fees to maximize your NFT trading profits.", "url": "https://degen0x.com/nfts/best/low-fee", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

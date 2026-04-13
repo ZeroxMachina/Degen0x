@@ -597,7 +597,8 @@ export default function CryptoDayTradingTaxImplications() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Day Trading Tax Implications | Short-Term Capital", "description": "Understand crypto day trading taxes: short-term capital gains taxed up to 37%, wash sale rules, Mark-to-Market election, Schedule C vs D reporting, quarterly", "url": "https://degen0x.com/taxes/crypto-day-trading-tax-implications", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

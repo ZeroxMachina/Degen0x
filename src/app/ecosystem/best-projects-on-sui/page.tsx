@@ -424,7 +424,8 @@ export default function BestProjectsOnSui2026() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only, not financial advice. Crypto is volatile and risky. TVL and APY figures current as of April 2026, subject to change. Smart contract risk exists even for audited protocols. Move language is maturing; ecosystem smaller than Ethereum/Solana. Never invest more than you can afford to lose. Always DYOR and consult a qualified financial advisor. Sui ecosystem is high-risk/high-reward: suitable for crypto-native users comfortable with emerging technology.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Projects on Sui 2026: Cetus, Turbos, Scallop, NAVI", "description": "Top Sui DeFi projects 2026. Compare Cetus ($300M+ TVL), Turbos Finance, Scallop lending, NAVI Protocol. Move language, parallel execution, object model.", "url": "https://degen0x.com/ecosystem/best-projects-on-sui", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

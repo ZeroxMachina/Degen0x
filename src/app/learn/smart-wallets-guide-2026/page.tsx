@@ -685,6 +685,7 @@ export default function SmartWalletsGuide2026Page() {
       </article>
 
       <BackToTop />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Wallets Guide 2026: Account Abstraction, Passkeys &", "description": "Learn how smart wallets work in 2026. Understand account abstraction (ERC-4337), passkey authentication, gas sponsorship, session keys, and how wallets like", "url": "https://degen0x.com/learn/smart-wallets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

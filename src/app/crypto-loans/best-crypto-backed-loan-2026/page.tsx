@@ -234,7 +234,8 @@ export default function BestCryptoBackedLoan() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Backed Loan 2026: Aave vs MakerDAO vs Nexo vs", "description": "Compare crypto loans: Aave DeFi (3-5% rates), MakerDAO (borrow DAI), Nexo CeFi (up to $100k), BlockFi, Salt.", "url": "https://degen0x.com/crypto-loans/best-crypto-backed-loan-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

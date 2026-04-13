@@ -342,7 +342,8 @@ export default function PolkadotEcosystemGuideExpanded() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Crypto carries significant risk. Parachains are subject to network risk, validator slashing, and liquidation. DYOR on tokenomics, team, roadmap, and security audits. Not financial advice. Consult a financial advisor before investing.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Polkadot Ecosystem 2026: Acala, Moonbeam, Astar, Phala,", "description": "Complete guide to Polkadot parachains 2026. Acala DeFi ($300M TVL), Moonbeam EVM ($180M TVL), Astar multi-VM ($150M TVL), Phala privacy, Hydration AMM. DOT", "url": "https://degen0x.com/ecosystem/polkadot-ecosystem-projects", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

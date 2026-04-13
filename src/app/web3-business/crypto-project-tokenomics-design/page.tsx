@@ -551,7 +551,8 @@ export default function TokenomicsDesignGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tokenomics Design Guide 2026 | Supply Allocation", "description": "Design sustainable tokenomics: supply models (fixed vs inflationary), allocation benchmarks, vesting schedules, emission curves, token utility framework.", "url": "https://degen0x.com/web3-business/crypto-project-tokenomics-design", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/web3-business/best/business-banking" style={{ color: "#fb923c", marginRight: "1rem" }}>Business Banking</a>

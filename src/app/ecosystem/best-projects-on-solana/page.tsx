@@ -188,7 +188,8 @@ export default function BestProjectsOnSolana() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational. Solana ecosystem projects carry risk. DYOR on tokenomics, team, roadmap. Not financial advice.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Projects on Solana 2026: Jupiter, Marinade, Raydium,", "description": "Top Solana ecosystem projects: Jupiter (DEX, $800M daily), Marinade (liquid staking $10B), Raydium (AMM $5B TVL), Tensor (NFT), Helium (IoT), Jito (MEV),", "url": "https://degen0x.com/ecosystem/best-projects-on-solana", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

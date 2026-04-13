@@ -408,7 +408,8 @@ export default function BitcoinVsEthereumInvestment() {
             <strong style={{ color: '#58a6ff' }}>Methodology note:</strong> Our comparisons analyze on-chain data, fee structures, and feature sets as of the publication date.
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin vs Ethereum: Which to Buy? 2026 Guide", "description": "Bitcoin vs Ethereum comparison: store of value vs DeFi utility. Compare market cap, supply, consensus, and investment thesis. April 2026.", "url": "https://degen0x.com/compare/bitcoin-vs-ethereum-investment", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

@@ -742,6 +742,7 @@ export default function CryptoTradingBotsGuidePage() {
           <a href="/learn/aerodrome-finance-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Aerodrome Finance Guide</a>
         </nav>
       </article>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Trading Bots Guide 2026 \u2014 Grid, DCA & AI | degen0x", "description": "Complete guide to crypto trading bots. Learn grid bots, DCA bots, arbitrage bots, and AI-powered trading. Compare Pionex, 3Commas, Bybit, and more with 2026", "url": "https://degen0x.com/learn/crypto-trading-bots-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

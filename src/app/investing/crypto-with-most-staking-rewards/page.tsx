@@ -660,7 +660,8 @@ export default function CryptoMostStakingRewards() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto with Most Staking Rewards 2026: ATOM, DOT, SOL, ETH", "description": "Highest staking yields in crypto: Cosmos (ATOM 15-20% APY), Polkadot (DOT 14-16%), Solana (6-8%), Ethereum (3.5-4.5%). Compare APY, minimum stake, lockup", "url": "https://degen0x.com/investing/crypto-with-most-staking-rewards", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/crypto/uniswap" style={{ color: "#fb923c", marginRight: "1rem" }}>Uniswap</a>

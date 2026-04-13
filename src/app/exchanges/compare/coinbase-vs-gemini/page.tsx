@@ -570,6 +570,7 @@ export default function CoinbaseVsGeminiPage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase vs Gemini: Detailed Comparison (2026) | degen0x", "description": "Compare Coinbase and Gemini exchanges for US-based traders. Analyze security, fees, regulation, and features to find the best exchange for you.", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-gemini", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

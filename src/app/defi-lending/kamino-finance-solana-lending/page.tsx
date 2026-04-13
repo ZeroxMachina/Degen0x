@@ -610,7 +610,8 @@ export default function KaminoFinanceGuide() {
             <strong style={{ color: '#c084fc' }}>DeFi risk warning:</strong> Lending protocols carry smart contract risk, liquidation risk, and oracle risk.
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Kamino Finance Solana Lending Guide 2026: Automated Vaults", "description": "Complete guide to Kamino Finance on Solana. Master automated lending vaults, auto-compounding yields, 10-15% APY strategies, and risk management for DeFi", "url": "https://degen0x.com/defi-lending/kamino-finance-solana-lending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/defi-lending/reviews/exactly" style={{ color: "#fb923c", marginRight: "1rem" }}>Exactly</a>

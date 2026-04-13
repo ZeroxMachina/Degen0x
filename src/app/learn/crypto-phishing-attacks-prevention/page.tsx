@@ -222,7 +222,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Phishing Attacks & Prevention: Security 2026", "description": "Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft.", "url": "https://degen0x.com/learn/crypto-phishing-attacks-prevention", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

@@ -140,6 +140,7 @@ export default function MarketRecapPage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Crypto Market Recap \u2014 Today", "description": "Get a daily snapshot of what moved the crypto market \u2014 top gainers, losers, sector performance, and key events. Updated live with market data from CoinGecko", "url": "https://degen0x.com/tools/market-recap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

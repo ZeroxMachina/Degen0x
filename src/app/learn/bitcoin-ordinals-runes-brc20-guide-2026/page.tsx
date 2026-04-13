@@ -830,6 +830,7 @@ export default function BitcoinOrdinalRunesPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/how-to-buy-ethereum-for-beginners" style={{ color: "#fb923c", marginRight: "1rem" }}>How To Buy Ethereum For Beginners</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Ordinals & Runes Guide 2026: NFTs & Tokens on BTC", "description": "Complete guide to Bitcoin Ordinals, BRC-20, and Runes in 2026. Learn how NFTs and fungible tokens work on Bitcoin, compare standards, and understand the risks.", "url": "https://degen0x.com/learn/bitcoin-ordinals-runes-brc20-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -1024,6 +1024,7 @@ export default function ZKCoprocessorsPage() {
           section="learn"
         />
 
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ZK Coprocessors & Verifiable Compute Guide 2026", "description": "Comprehensive guide to ZK coprocessors and verifiable compute. Learn how protocols like Axiom, Brevis, RISC Zero, and Lagrange enable off-chain computation", "url": "https://degen0x.com/learn/zk-coprocessors-verifiable-compute-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

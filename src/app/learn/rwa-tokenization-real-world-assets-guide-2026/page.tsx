@@ -636,7 +636,8 @@ export default function RWATokenizationGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "RWA Tokenization: Real-World Assets On-Chain Guide 2026", "description": "Complete guide to Real-World Asset tokenization in 2026. Learn how BlackRock BUIDL, Ondo Finance, and institutional protocols are bringing $12B+ of assets", "url": "https://degen0x.com/learn/rwa-tokenization-real-world-assets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/learn/cryptocurrency-for-dummies-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Cryptocurrency For Dummies Guide</a>

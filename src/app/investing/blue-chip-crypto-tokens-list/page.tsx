@@ -632,7 +632,8 @@ export default function BlueChipCryptoTokens2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blue Chip Crypto Tokens 2026: BTC, ETH, SOL, BNB, AVAX, LINK", "description": "Complete blue chip crypto guide 2026. Compare BTC, ETH, SOL, BNB, AVAX, LINK, AAVE, UNI by market cap, sector, yield. Institutional adoption metrics and", "url": "https://degen0x.com/investing/blue-chip-crypto-tokens-list", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

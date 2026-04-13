@@ -667,7 +667,8 @@ export default function DecentralizedGPUComputeGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized GPU Compute Networks: Render, Akash & io.net", "description": "Complete guide to decentralized GPU compute networks. Learn about Render Network, Akash, io.net, DePIN infrastructure, AI compute marketplace, and how to", "url": "https://degen0x.com/learn/decentralized-gpu-compute-networks-render-akash-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       
         <script
           type="application/ld+json"

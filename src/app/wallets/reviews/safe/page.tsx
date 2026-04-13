@@ -154,6 +154,7 @@ export default function SafeReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Signature Security", "description": "Complete Safe wallet review for ${CURRENT_YEAR}. Covers multi-signature security, DAO treasury management, Safe Apps, and enterprise features.", "url": "https://degen0x.com/wallets/reviews/safe", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -974,6 +974,7 @@ export default function MiningProfitabilityPage() {
         />
       </div>
       <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Mining Profitability Guide 2026 | Degen0x Learn", "description": "Comprehensive guide to Bitcoin mining profitability in 2026. Learn about post-halving economics, top ASIC hardware, electricity costs, and mining strategies", "url": "https://degen0x.com/learn/bitcoin-mining-profitability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   )
 }

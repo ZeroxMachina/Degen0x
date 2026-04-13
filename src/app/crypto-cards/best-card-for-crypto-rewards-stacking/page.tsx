@@ -610,7 +610,8 @@ export default function BestCardForCryptoRewardsStacking() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Cards for Rewards Stacking | Multi-Card", "description": "Stack crypto card rewards using multiple cards. Compare reward rates, maximize cashback, and optimize multi-card strategies. Real yield from spending.", "url": "https://degen0x.com/crypto-cards/best-card-for-crypto-rewards-stacking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

@@ -642,7 +642,8 @@ export default function CryptoBearMarketStrategy2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Bear Market Strategy 2026: DCA, Accumulation, Yield", "description": "Complete bear market strategy guide 2026. DCA during downturns, accumulation zones, quality assessment (revenue, TVL, dev activity), stablecoin yield farming.", "url": "https://degen0x.com/investing/crypto-bear-market-strategy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/staking/compare/lido-vs-rocket-pool" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido Vs Rocket Pool</a>

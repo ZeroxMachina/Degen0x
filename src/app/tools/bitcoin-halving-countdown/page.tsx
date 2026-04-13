@@ -400,7 +400,8 @@ export default function BitcoinHalvingCountdown() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only, not financial advice. Bitcoin halving patterns are historical; future results may differ. Macroeconomic conditions, regulation, and adoption are critical variables. Never invest more than you can afford to lose. degen0x is not responsible for investment losses.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Halving Countdown 2026: 2028 Halving & Miner", "description": "Track Bitcoin halving cycle countdown. 2028 halving cuts block reward from 3.125 to 1.5625 BTC. Understand historical halving impact, miner economics, and", "url": "https://degen0x.com/tools/bitcoin-halving-countdown", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

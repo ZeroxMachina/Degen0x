@@ -592,7 +592,8 @@ export default function Crypto6040Portfolio() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto 60/40 Portfolio Strategy 2026: BTC/ETH Allocation &", "description": "Crypto 60/40 portfolio: 60% BTC (stability) + 40% ETH (growth) + alts (0-40%). Rebalancing framework, risk management, tax-efficient strategies. Real", "url": "https://degen0x.com/investing/crypto-60-40-portfolio-strategy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

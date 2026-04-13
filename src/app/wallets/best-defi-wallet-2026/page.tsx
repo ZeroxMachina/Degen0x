@@ -241,7 +241,8 @@ export default function BestDeFiWallet2026() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DeFi Wallet 2026: MetaMask, Rabby, Rainbow, Zerion |", "description": "Best DeFi wallet: MetaMask 30M users, Rabby ($0 unlimited chains), Rainbow ($0 Ethereum), Zerion portfolio dashboard, Phantom (Solana). Swap, staking, dApp", "url": "https://degen0x.com/wallets/best-defi-wallet-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

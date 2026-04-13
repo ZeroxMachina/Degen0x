@@ -312,6 +312,7 @@ export default function BestCryptoCardsPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rewards Rate (30%)", "description": "Compare the top 15 crypto cards of ${CURRENT_YEAR}. We tested rewards, fees, perks, and availability. Find the best crypto credit card, debit card, or prepaid card for your needs.", "url": "https://degen0x.com/crypto-cards/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

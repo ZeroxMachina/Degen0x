@@ -503,7 +503,8 @@ export default function Web3FundraisingGuideExpanded() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Fundraising Guide 2026: VCs, IDOs, Token Sales,", "description": "Complete crypto fundraising guide. Seed rounds SAFE/SAFT, Series A equity, private token sales, IDOs, public sales. Top VCs: a16z, Polychain, Paradigm, Galaxy", "url": "https://degen0x.com/web3-business/web3-fundraising-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

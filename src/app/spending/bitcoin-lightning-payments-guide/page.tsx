@@ -496,7 +496,8 @@ export default function LightningPaymentsGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Lightning Network Payments Guide 2026 | Instant", "description": "Complete Lightning Network guide. Instant BTC payments, 1M+ TPS capacity, 4 wallets compared, channel management, routing fees. Buy coffee, books with sats.", "url": "https://degen0x.com/spending/bitcoin-lightning-payments-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

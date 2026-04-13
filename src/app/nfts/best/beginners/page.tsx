@@ -185,6 +185,7 @@ export default function BestForBeginnersPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Simple Interface", "description": "Discover the best NFT marketplaces for beginners in ${CURRENT_YEAR}. Easy-to-use platforms with simple minting, intuitive browsing, and helpful onboarding for first-time NFT buyers and creators.", "url": "https://degen0x.com/nfts/best/beginners", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -926,6 +926,7 @@ export default function HyperlaneGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/katana-perps-idex-acquisition-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Katana Perps Idex Acquisition Guide</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hyperlane Guide 2026 \u2014 Permissionless Interop & HYPER", "description": "Complete guide to Hyperlane", "url": "https://degen0x.com/learn/hyperlane-permissionless-interoperability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

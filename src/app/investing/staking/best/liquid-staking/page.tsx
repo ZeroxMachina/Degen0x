@@ -199,6 +199,7 @@ export default function BestLiquidStakingPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Liquid Staking Protocols of 2026 (Compared)", "description": "Compare the best liquid staking protocols in ${CURRENT_YEAR}. Lido, Rocket Pool, Jito, Marinade, and StakeWise reviewed for yields, security, and DeFi composability.", "url": "https://degen0x.com/investing/staking/best/liquid-staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

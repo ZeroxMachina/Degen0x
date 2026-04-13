@@ -1141,6 +1141,7 @@ export default function BTCFiGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BTCFi Guide 2026: Bitcoin DeFi, Staking & Ordinals Explained", "description": "Complete BTCFi guide 2026: Bitcoin DeFi protocols, native staking with Babylon, liquid staking (LBTC), Ordinals, Runes, BRC-20 tokens, and top protocols like", "url": "https://degen0x.com/learn/btcfi-bitcoin-defi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

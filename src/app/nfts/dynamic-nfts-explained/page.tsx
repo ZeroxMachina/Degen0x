@@ -627,7 +627,8 @@ export default function DynamicNFTsGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Dynamic NFTs Explained 2026: On-Chain Updates, Real-Time", "description": "Complete guide to dynamic NFTs: on-chain updates, real-time data feeds, Chainlink oracles, evolving metadata, gaming NFTs, and comparison to static NFTs. Full", "url": "https://degen0x.com/nfts/dynamic-nfts-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/nfts/compare/opensea-vs-blur" style={{ color: "#fb923c", marginRight: "1rem" }}>Opensea Vs Blur</a>

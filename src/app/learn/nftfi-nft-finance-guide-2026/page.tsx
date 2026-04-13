@@ -448,6 +448,7 @@ export default function NFTFiGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFTFi Guide 2026: NFT Lending, Fractionalization & DeFi for", "description": "Complete guide to NFT finance (NFTFi) in 2026. Learn about NFT lending on Blend and BendDAO, fractionalization, perpetuals, and how to unlock liquidity from", "url": "https://degen0x.com/learn/nftfi-nft-finance-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

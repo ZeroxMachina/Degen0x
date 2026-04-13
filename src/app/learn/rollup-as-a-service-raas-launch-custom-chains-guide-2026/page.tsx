@@ -896,6 +896,7 @@ export default function RaaSOxPage() {
           }}
         />
       </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rollup-as-a-Service (RaaS): Launch Custom Chains in 2026", "description": "Complete guide to Rollup-as-a-Service platforms. Learn how RaaS simplifies custom chain deployment, compare top providers (Caldera, Conduit, AltLayer, Gelato),", "url": "https://degen0x.com/learn/rollup-as-a-service-raas-launch-custom-chains-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

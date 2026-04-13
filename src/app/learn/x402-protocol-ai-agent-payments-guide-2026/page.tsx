@@ -965,6 +965,7 @@ export default function X402ProtocolPage() {
           section="learn"
         />
 
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "x402 Protocol: HTTP Payment Standard for AI Agent Payments", "description": "Complete guide to x402 Protocol \u2014 the HTTP 402 payment standard for autonomous AI agents to pay for API access using crypto and stablecoins. Learn", "url": "https://degen0x.com/learn/x402-protocol-ai-agent-payments-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

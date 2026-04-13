@@ -615,6 +615,7 @@ export default function KiteAIGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Kite AI (KITE) Guide 2026: The First AI Payment Blockchain", "description": "Kite AI explained: how the first AI payment blockchain works, KITE tokenomics, Agent Passport identity system, agentic economy infrastructure, and 2026 mainnet", "url": "https://degen0x.com/learn/kite-ai-payment-blockchain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

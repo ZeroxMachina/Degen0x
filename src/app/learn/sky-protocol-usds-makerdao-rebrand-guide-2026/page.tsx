@@ -270,6 +270,7 @@ export default function SkyProtocolGuide2026() {
           <a href="/learn/solana-lst-comparison-marinade-jito-sanctum-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Lst Comparison Marinade Jito Sanctum 2026</a>
         </nav>
     </main>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sky Protocol Guide 2026 \u2014 USDS, SKY Token & MakerDAO Rebrand", "description": "Complete guide to Sky Protocol in 2026 \u2014 the MakerDAO rebrand. Learn how USDS replaces DAI, the Sky Savings Rate, SubDAOs (Stars), SKY vs MKR tokenomics, and", "url": "https://degen0x.com/learn/sky-protocol-usds-makerdao-rebrand-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

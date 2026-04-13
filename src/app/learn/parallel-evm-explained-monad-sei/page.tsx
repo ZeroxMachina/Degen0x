@@ -486,7 +486,8 @@ export default function ParallelEVMExplained() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Parallel EVM Explained: Monad, Sei V2 & Neon | degen0x", "description": "Learn how parallel EVM chains execute transactions concurrently. Compare Monad (10,000 TPS), Sei V2, and Neon with detailed technical deep-dive.", "url": "https://degen0x.com/learn/parallel-evm-explained-monad-sei", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

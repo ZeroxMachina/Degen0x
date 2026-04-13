@@ -386,6 +386,7 @@ export default function FundingRateTrackerPage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Funding Rate Tracker - Compare Perp Rates Across", "description": "Track real-time perpetual futures funding rates across Binance, Bybit, OKX, Bitget, dYdX & Hyperliquid. Compare 8h and annualized rates for BTC, ETH, SOL &", "url": "https://degen0x.com/tools/funding-rate-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

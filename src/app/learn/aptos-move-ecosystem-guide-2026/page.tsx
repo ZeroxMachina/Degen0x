@@ -1024,7 +1024,8 @@ export default function AptosMoveguide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aptos Blockchain & Move Ecosystem Guide 2026 | degen0x", "description": "Complete guide to Aptos blockchain and the Move programming language in 2026. Learn about sub-50ms block times, DeFi ecosystem (Thala, Amnis, LiquidSwap,", "url": "https://degen0x.com/learn/aptos-move-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       
         <script
           type="application/ld+json"

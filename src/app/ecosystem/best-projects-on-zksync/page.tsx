@@ -487,7 +487,8 @@ export default function BestProjectsZkSync() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute financial advice. Cryptocurrency investments carry substantial risk. zkSync Era is a newer L2 network with emerging protocols—conduct own research before depositing significant capital. Smart contract risks, bridge security, and market volatility may impact returns. None of the protocols mentioned are endorsed or audited by degen0x. Do your own due diligence and use hardware wallets for large positions.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Projects on zkSync Era 2026 | degen0x", "description": "Top zkSync projects: ZigZag (DEX), SyncSwap ($100M TVL), Mute.io, Space.fi, Holdstation, Tevaera gaming. ZK rollup advantages, ZK token airdrop info, and", "url": "https://degen0x.com/ecosystem/best-projects-on-zksync", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

@@ -1124,6 +1124,7 @@ export default function VerkleTreesHegotaGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Verkle Trees & Hegota Guide 2026 \u2014 Stateless", "description": "Understand Verkle Trees, the cryptographic innovation enabling stateless Ethereum clients. Learn how Hegota (H2 2026) reduces node storage by 90% and what it", "url": "https://degen0x.com/learn/ethereum-verkle-trees-hegota-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

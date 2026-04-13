@@ -248,7 +248,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Launchpads & IDO Platforms Guide 2026", "description": "Master token launchpad platforms for crypto investments. Learn about Pinksale, Unicrypt, DAO Maker, and how to evaluate IDO opportunities with token economics", "url": "https://degen0x.com/learn/token-launchpads-ido-platforms-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

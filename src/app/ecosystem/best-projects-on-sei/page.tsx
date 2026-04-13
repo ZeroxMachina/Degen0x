@@ -570,7 +570,8 @@ export default function BestSeiProjects() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Crypto carries risk. DYOR on tokenomics, smart contract audits, and team credentials. Not financial advice. Sei ecosystem rapidly evolving; TVL and metrics subject to change.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Sei Projects 2026: Astroport, DragonSwap, Silo, Yei", "description": "Top Sei ecosystem projects: Astroport DEX, DragonSwap, Silo Protocol lending, Yei Finance. Sei V2 parallelized EVM, twin-turbo consensus. Comparison with", "url": "https://degen0x.com/ecosystem/best-projects-on-sei", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

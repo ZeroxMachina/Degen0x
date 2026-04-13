@@ -736,6 +736,7 @@ export default function CryptoIndexFundsGuidePage() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Index Funds Guide 2026 \u2014 DeFi Indexes, ETFs &", "description": "Complete guide to crypto index funds: DeFi indexes (DPI, MVI), crypto ETFs, and onchain basket investing. Compare DeFi Pulse Index, Bitwise, Hashdex, and more.", "url": "https://degen0x.com/learn/crypto-index-funds-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   )
 }

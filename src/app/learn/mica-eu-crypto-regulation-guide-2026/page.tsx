@@ -1391,6 +1391,7 @@ export default function MiCAGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MiCA EU Crypto Regulation Guide 2026 | degen0x", "description": "Complete guide to Markets in Crypto-Assets (MiCA) regulation in EU. Understand stablecoin rules, CASP licensing, USDT impact, and compliance requirements.", "url": "https://degen0x.com/learn/mica-eu-crypto-regulation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

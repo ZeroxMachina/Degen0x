@@ -389,7 +389,8 @@ export default function CryptoSeedPhraseSecurity() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Seed Phrase Security: BIP-39, Backup & Recovery 2026", "description": "Master seed phrase security: BIP-39 12/24 words, entropy math (2^128/2^256), metal backups (Cryptosteel, Billfodl), Shamir Secret Sharing, and multi-sig", "url": "https://degen0x.com/learn/crypto-seed-phrase-security-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

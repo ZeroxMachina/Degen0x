@@ -716,7 +716,8 @@ export default function CryptoPortfolioConstructionGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Portfolio Construction & Position Sizing Guide 2026", "description": "Master crypto portfolio construction with Kelly criterion, risk parity, correlation analysis, and position sizing strategies. Learn allocation frameworks,", "url": "https://degen0x.com/learn/crypto-portfolio-construction-position-sizing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/learn/paradex-zk-perpetuals-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Paradex Zk Perpetuals Guide 2026</a>

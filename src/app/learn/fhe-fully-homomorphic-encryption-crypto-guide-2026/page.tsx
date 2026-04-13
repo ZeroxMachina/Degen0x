@@ -963,6 +963,7 @@ export default function FHECryptoGuidePage() {
         />
 
           <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fully Homomorphic Encryption (FHE) in Crypto Guide 2026", "description": "Master Fully Homomorphic Encryption in 2026: Zama, Fhenix, Inco. Learn how FHE enables confidential smart contracts, encrypted MEV protection, and", "url": "https://degen0x.com/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

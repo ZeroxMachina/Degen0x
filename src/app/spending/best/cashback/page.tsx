@@ -346,6 +346,7 @@ export default function BestCashbackCardsPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Cashback Cards of 2026 - Earn Crypto on Every Purchase | degen0x", "description": "Offers the most well-rounded cashback program with five tiers. The entry-level Midnight Blue earns 1% CRO back, while the top-tier Obsidian earns 5%.", "url": "https://degen0x.com/spending/best/cashback", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

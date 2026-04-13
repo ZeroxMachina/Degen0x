@@ -680,6 +680,7 @@ export default function SonicBlockchainGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is Sonic? Fantom", "description": "Sonic (ex-Fantom) achieves 400K TPS with 720ms finality. Learn how SonicVM, the FeeM revenue model, and S tokenomics work \u2014 plus real TVL data and ecosystem", "url": "https://degen0x.com/learn/sonic-blockchain-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

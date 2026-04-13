@@ -473,7 +473,8 @@ export default function ETHBurnTracker() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute investment advice. ETH burn data is calculated from blockchain transactions and may vary between sources. Past deflation patterns do not guarantee future price appreciation. Consult a financial advisor before making investment decisions based on burn analytics.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply", "description": "Track Ethereum EIP-1559 burns in real-time with ultrasound.money. Monitor daily burn rates, deflationary periods, top gas burners (Uniswap, OpenSea), and ETH", "url": "https://degen0x.com/tools/eth-burn-tracker-live", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

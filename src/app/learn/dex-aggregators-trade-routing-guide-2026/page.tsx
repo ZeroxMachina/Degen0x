@@ -472,6 +472,7 @@ export default function DexAggregatorsGuidePage() {
           </p>
         </div>
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DEX Aggregators Guide 2026: Jupiter, 1inch, CowSwap", "description": "Complete guide to DEX aggregators in 2026. Learn how Jupiter, 1inch, CowSwap, and Odos find the best trade routes, reduce slippage, and protect you from MEV.", "url": "https://degen0x.com/learn/dex-aggregators-trade-routing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

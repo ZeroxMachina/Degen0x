@@ -610,7 +610,8 @@ export default function WhenToTakeProfitsCrypto() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "When to Take Profits in Crypto: Strategies & Tax-Efficient", "description": "Master crypto profit-taking with DCA-out, percentage-based scaling, trailing stops, and cycle analysis. Learn tax-lot optimization, 2x/3x/10x exit rules, and", "url": "https://degen0x.com/investing/when-to-take-profits-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/best/cryptos-to-buy" style={{ color: "#fb923c", marginRight: "1rem" }}>Cryptos To Buy</a>

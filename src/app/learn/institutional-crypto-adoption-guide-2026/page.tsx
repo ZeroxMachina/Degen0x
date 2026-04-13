@@ -1515,6 +1515,7 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/crypto-market-making-liquidity-provision-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Market Making Liquidity Provision Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Institutional Crypto Adoption 2026 Guide | degen0x", "description": "BlackRock", "url": "https://degen0x.com/learn/institutional-crypto-adoption-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

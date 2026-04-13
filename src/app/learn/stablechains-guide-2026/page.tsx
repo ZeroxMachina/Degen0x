@@ -652,6 +652,7 @@ export default function StablechainsGuidePage() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablechains Guide 2026: Circle Arc, Plasma & Stripe Tempo", "description": "What are stablechains? Deep dive into Circle Arc, Plasma, and Stripe Tempo \u2014 Layer 1 blockchains built for stablecoin payments with sub-second finality. 13 min", "url": "https://degen0x.com/learn/stablechains-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   )
 }

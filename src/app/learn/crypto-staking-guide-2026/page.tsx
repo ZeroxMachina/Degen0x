@@ -1214,6 +1214,7 @@ export default function CryptoStakingGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/intent-based-trading" style={{ color: "#fb923c", marginRight: "1rem" }}>Intent Based Trading</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Staking Guide 2026 \u2014 Earn Passive Income | degen0x", "description": "Master crypto staking in 2026: PoS blockchains, ATOM, Polkadot, Solana, Ethereum staking, liquid staking, delegation, exchange staking, and risk management for", "url": "https://degen0x.com/learn/crypto-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -761,7 +761,8 @@ export default function BitcoinSafeHavenGuidePage() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Safe Haven 2026: Is BTC a Hedge Against", "description": "Bitcoin dropped 47% from its ATH while gold hit $5,000. Explore the data on whether BTC is a safe-haven asset, how it performs during crises, and what the US", "url": "https://degen0x.com/learn/bitcoin-safe-haven-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       
         <script
           type="application/ld+json"

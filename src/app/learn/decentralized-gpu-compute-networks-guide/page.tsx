@@ -371,6 +371,7 @@ export default function DecentralizedGPUComputeGuidePage() {
           </Link>
         </div>
       </div>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized GPU Compute Networks 2026 \u2014 Akash, Render,", "description": "Compare decentralized GPU networks like Akash, Render, io.net and Grass. Learn how DePIN competes with AWS at 60-80% lower cost for AI compute in 2026.", "url": "https://degen0x.com/learn/decentralized-gpu-compute-networks-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -625,6 +625,7 @@ export default function GeniusActStablecoinGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "GENIUS Act Stablecoin Guide 2026: USDC, USDT & DeFi Impact", "description": "The GENIUS Act became US law in July 2025. Learn what stablecoin regulation means for USDC, USDT, DeFi protocols, and your crypto in 2026. Compliance timeline", "url": "https://degen0x.com/learn/genius-act-stablecoin-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

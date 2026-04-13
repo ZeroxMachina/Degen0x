@@ -362,6 +362,7 @@ export default function SolanaDeFiGuide() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana DeFi Ecosystem Guide 2026 \u2014 Protocols & Trading", "description": "Complete Solana DeFi ecosystem guide 2026: Jupiter DEX aggregator, Raydium AMM, Magic Eden NFTs, TVL analysis, MEV mechanisms, validators, and staking.", "url": "https://degen0x.com/learn/solana-defi-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

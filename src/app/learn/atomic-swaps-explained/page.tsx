@@ -449,7 +449,8 @@ export default function AtomicSwapsExplained() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Atomic Swaps Explained: Trustless Cross-Chain Trading", "description": "Learn how atomic swaps enable trustless cross-chain trading using HTLCs. Explore Thorchain, AtomicDEX, and submarine swaps.", "url": "https://degen0x.com/learn/atomic-swaps-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

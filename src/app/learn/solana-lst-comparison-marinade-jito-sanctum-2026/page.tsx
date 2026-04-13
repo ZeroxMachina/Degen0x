@@ -671,6 +671,7 @@ export default function LSTComparison() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Marinade vs Jito vs Sanctum: Solana LST Comparison 2026", "description": "Compare Marinade mSOL, Jito JitoSOL, and Sanctum INF head-to-head. APY, TVL, validators, fees, and strategies for choosing the best Solana liquid staking token", "url": "https://degen0x.com/learn/solana-lst-comparison-marinade-jito-sanctum-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

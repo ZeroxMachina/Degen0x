@@ -463,7 +463,8 @@ export default function NFTCreationCourseExpanded() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best NFT Creation Courses 2026: Art, Minting, Smart", "description": "Complete NFT creation guide: art design, smart contracts (ERC721), minting on Ethereum/Solana, OpenSea listing, community building, marketing strategies.", "url": "https://degen0x.com/courses/nft-creation-course", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

@@ -188,6 +188,7 @@ export default function BestForBitcoinOrdinalsPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fully On-Chain", "description": "Compare the best marketplaces for Bitcoin Ordinals and BRC-20 tokens in ${CURRENT_YEAR}. Trade inscriptions, Runes, and Bitcoin-native NFTs on top platforms.", "url": "https://degen0x.com/nfts/best/bitcoin-ordinals", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -443,7 +443,8 @@ export default function BestCardForBitcoinCashback() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute financial advice or tax guidance. Bitcoin cashback card rewards and tax treatment vary by jurisdiction and individual circumstances. Verify current platform terms, reward rates, and tax policies before applying. Consult a qualified CPA for personalized tax advice before accumulating substantial Bitcoin rewards. Cryptocurrency and card reward programs change frequently—check provider websites for current details.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Bitcoin Cashback Cards 2026: Fold, Unchained, Strike", "description": "Compare Bitcoin cashback cards: Fold Card (sats back), Unchained Card, Cash App Bitcoin, Strike Card. Earning sats passively, auto-DCA, tax treatment, spending", "url": "https://degen0x.com/crypto-cards/best-card-for-bitcoin-cashback", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

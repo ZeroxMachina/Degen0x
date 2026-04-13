@@ -565,7 +565,8 @@ export default function PublicPrivateKeyCryptoGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Public vs Private Key Cryptography Explained 2026: ECDSA,", "description": "Master public/private key cryptography: asymmetric encryption, elliptic curves (secp256k1), key derivation (HD wallets BIP-32/44), digital signatures (ECDSA),", "url": "https://degen0x.com/learn/public-key-vs-private-key-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

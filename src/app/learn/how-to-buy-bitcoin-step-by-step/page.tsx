@@ -941,7 +941,8 @@ export default function HowToBuyBitcoin() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Buy Bitcoin Step by Step \u2014 Beginner Guide 2026", "description": "Learn how to buy Bitcoin in 2026 with our step-by-step guide. Compare exchanges, set up wallets, place your first order, and store BTC safely.", "url": "https://degen0x.com/learn/how-to-buy-bitcoin-step-by-step", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

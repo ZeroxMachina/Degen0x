@@ -514,7 +514,8 @@ export default function BestProjectsOnStarkNet() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute investment advice. StarkNet is an emerging ecosystem with higher risk than established L2s like Arbitrum or Optimism. Cairo smart contracts are newer and less battle-tested than Solidity. Always conduct thorough due diligence, understand the risks of ZK technology, and never invest more than you can afford to lose. By April 2026, while StarkNet has proven the validity of STARK proofs, the ecosystem remains an early-stage bet on long-term cryptography trends.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best StarkNet Projects 2026: JediSwap, mySwap, zkLend,", "description": "Complete guide to top StarkNet DeFi projects. Learn about DEXs (JediSwap, mySwap, 10KSwap), lending (zkLend, Nostra), wallets (Argent, Braavos), and StarkNet", "url": "https://degen0x.com/ecosystem/best-projects-on-starknet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

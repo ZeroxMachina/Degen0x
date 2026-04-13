@@ -629,6 +629,7 @@ export default function DataAvailabilityComparisonPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/zk-coprocessors-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Zk Coprocessors Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Celestia vs EigenDA vs Avail: DA Layer Comparison 2026", "description": "Compare Celestia, EigenDA, and Avail data availability layers. Throughput, cost, security models, and which DA solution fits your rollup. Updated March 2026.", "url": "https://degen0x.com/learn/data-availability-celestia-eigenda-avail-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -281,6 +281,7 @@ export default function AlpenglowGuide() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Alpenglow Guide 2026 \u2014 Consensus Upgrade & MEV", "description": "Solana Alpenglow consensus upgrade: MEV resistance, state compression, validator performance, scalability improvements, and network enhancements 2026.", "url": "https://degen0x.com/learn/solana-alpenglow-consensus-upgrade-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

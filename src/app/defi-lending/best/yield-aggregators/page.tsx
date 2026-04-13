@@ -652,6 +652,7 @@ export default function YieldAggregatorsPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Prioritize Security First", "description": "Compare the best DeFi yield aggregators of ${CURRENT_YEAR}. We rank protocols by APY, TVL, security, supported chains, and strategy complexity. Find the highest safe yields for your crypto.", "url": "https://degen0x.com/defi-lending/best/yield-aggregators", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

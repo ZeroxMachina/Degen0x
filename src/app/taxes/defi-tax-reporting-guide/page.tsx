@@ -555,7 +555,8 @@ export default function DeFiTaxReportingGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Tax Reporting Guide 2026: LP Tokens, Yield,", "description": "Complete DeFi tax guide 2026: LP token entry/exit, yield farming income, governance rewards, liquidity mining, wrapping events, impermanent loss, Aave/Compound", "url": "https://degen0x.com/taxes/defi-tax-reporting-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

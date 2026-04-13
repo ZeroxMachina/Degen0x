@@ -362,6 +362,7 @@ export default function DeFiSafetyGuide2026() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Safety Guide 2026: How to Protect Your Crypto in", "description": "Master DeFi safety in 2026. Learn how to avoid scams, rug pulls, smart contract risks, phishing attacks, and protect your crypto wallet and investments in", "url": "https://degen0x.com/learn/defi-safety-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

@@ -506,7 +506,8 @@ export default function UndercollateralizedDefiLoansGuide() {
             <strong style={{ color: '#c084fc' }}>DeFi risk warning:</strong> Lending protocols carry smart contract risk, liquidation risk, and oracle risk.
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Undercollateralized DeFi Loans Guide 2026: Maple,", "description": "Complete guide to undercollateralized lending: Maple (8-12% APY), Goldfinch (10-20% APY), TrueFi. Enterprise credit on-chain with higher yields and default", "url": "https://degen0x.com/defi-lending/undercollateralized-defi-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/defi-lending/best/stablecoin-yield" style={{ color: "#fb923c", marginRight: "1rem" }}>Stablecoin Yield</a>

@@ -547,6 +547,7 @@ export default function CryptoOptionsStrategiesGuide() {
       </article>
 
       <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Options Strategies 2026: Calls, Spreads & More", "description": "Master crypto options strategies in 2026. Learn covered calls, protective puts, bull/bear spreads, straddles, strangles, iron condors, and where to trade DeFi", "url": "https://degen0x.com/learn/crypto-options-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

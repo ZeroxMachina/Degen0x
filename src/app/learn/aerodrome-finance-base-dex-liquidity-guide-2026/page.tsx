@@ -563,7 +563,8 @@ export default function AerodromeFinanceGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aerodrome Finance Guide 2026 \u2014 Base Chain DEX & ve(3,3)", "description": "Complete guide to Aerodrome Finance: Base", "url": "https://degen0x.com/learn/aerodrome-finance-base-dex-liquidity-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
 
   );
 }

@@ -454,7 +454,8 @@ export default function BestWalletForNFTStorage() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Wallet for NFT Storage 2026: MetaMask, Phantom,", "description": "Best NFT wallet: MetaMask (widest marketplace support), Phantom (Solana NFTs, beautiful gallery), Coinbase (NFT tab, social), Trust Wallet (multi-chain),", "url": "https://degen0x.com/wallets/best-wallet-for-nft-storage", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/wallets/reviews/foundation" style={{ color: "#fb923c", marginRight: "1rem" }}>Foundation</a>

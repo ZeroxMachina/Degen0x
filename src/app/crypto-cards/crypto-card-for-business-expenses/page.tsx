@@ -538,7 +538,8 @@ export default function CryptoCoinCardForBusinessExpenses() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards for Business Expenses | B2B Solutions 2026", "description": "Crypto cards for business expenses: corporate accounts, expense tracking, team multi-sig, and accounting integration. Compare business crypto cards.", "url": "https://degen0x.com/crypto-cards/crypto-card-for-business-expenses", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-cards/reviews/club-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Club Card</a>

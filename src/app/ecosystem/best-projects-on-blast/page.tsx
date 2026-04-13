@@ -404,7 +404,8 @@ export default function BestBlastProjectsExpanded() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Blast is a new L2 (launched early 2024) dependent on Ethereum staking yields. Smart contract risk remains despite audits. Do your own research on audits, team, regulatory risks, and token economics. Not financial advice. Consult a financial advisor.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Blast Projects 2026: Thruster DEX, Juice Finance,", "description": "Top Blast L2 ecosystem projects: Thruster ($40M TVL), Juice Finance stablecoin DEX, Orbit Protocol lending, Particle derivatives. Native 3.4% ETH + 5% USDB", "url": "https://degen0x.com/ecosystem/best-projects-on-blast", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

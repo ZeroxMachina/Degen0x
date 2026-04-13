@@ -265,6 +265,7 @@ export default function LearnHubPage() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto for Complete Beginners", "description": "Start your crypto education here. Beginner guides, blockchain basics, Bitcoin and Ethereum explainers, DeFi, NFTs, security tips, and a comprehensive crypto", "url": "https://degen0x.com/learn", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

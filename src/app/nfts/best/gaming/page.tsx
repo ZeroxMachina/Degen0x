@@ -188,6 +188,7 @@ export default function BestForGamingPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Chain Compatibility", "description": "Find the best NFT marketplaces for gaming assets in ${CURRENT_YEAR}. Trade in-game items, virtual land, characters, and gaming collectibles on top platforms.", "url": "https://degen0x.com/nfts/best/gaming", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

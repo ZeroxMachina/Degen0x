@@ -468,7 +468,8 @@ export default function CryptoSecurityCertificationExpanded() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Security Certification Courses 2026: CESD, OSCP,", "description": "Complete crypto security guide: CESD, OSCP, CEH certifications. Smart contract auditing, ethical hacking, bug bounty programs (Immunefi, HackerOne). Salary", "url": "https://degen0x.com/courses/crypto-security-certification-course", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

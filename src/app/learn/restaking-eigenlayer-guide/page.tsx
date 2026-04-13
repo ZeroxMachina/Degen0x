@@ -563,6 +563,7 @@ export default function RestakingGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Restaking & EigenLayer: The Complete Guide", "description": "Master restaking with EigenLayer. Learn how AVS protocols work, explore liquid restaking tokens, understand risks, and discover top projects reshaping Ethereum", "url": "https://degen0x.com/learn/restaking-eigenlayer-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

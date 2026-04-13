@@ -578,7 +578,8 @@ export default function CryptoTaxLossHarvestingGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tax Loss Harvesting 2026: Strategy Guide & Wash Sale", "description": "Complete guide to crypto tax loss harvesting. Learn wash sale rule status (not yet applied), substantially identical property debate, real dollar examples, and", "url": "https://degen0x.com/taxes/crypto-tax-loss-harvesting-complete-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

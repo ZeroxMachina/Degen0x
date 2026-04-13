@@ -1146,6 +1146,7 @@ export default function ParallelEVMGuidePage() {
       </article>
 
       <BackToTop />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are", "description": "Deep dive into parallel EVM blockchains. Learn how Monad, Sei, and MegaETH execute transactions concurrently to achieve 10K-100K+ TPS while maintaining EVM", "url": "https://degen0x.com/learn/parallel-evm-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

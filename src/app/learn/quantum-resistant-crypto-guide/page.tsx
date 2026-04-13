@@ -660,6 +660,7 @@ export default function QuantumResistantCryptoGuide() {
         />
       </div>
       <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Quantum-Resistant Crypto: Protect Your Holdings 2026", "description": "Learn how quantum computing threatens Bitcoin & Ethereum. NIST post-quantum standards, quantum-resistant projects (QRL, Abelian, QANplatform), and steps to", "url": "https://degen0x.com/learn/quantum-resistant-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

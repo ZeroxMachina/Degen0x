@@ -454,7 +454,8 @@ export default function WhatIsTokenBurning() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Burning Explained: Deflation in Cryptocurrency", "description": "Complete guide to crypto token burning mechanisms, from Ethereum EIP-1559 to SHIB burn portal. Learn how deflationary tokenomics work.", "url": "https://degen0x.com/learn/what-is-token-burning", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/learn/tokenized-treasury-bills-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Treasury Bills Guide 2026</a>

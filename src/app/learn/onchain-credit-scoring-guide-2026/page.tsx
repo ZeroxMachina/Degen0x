@@ -745,6 +745,7 @@ export default function OnchaincreditScoringGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Credit Scoring Guide 2026 \u2014 DeFi Credit Ratings", "description": "How onchain credit scoring works in 2026. Compare Credora, Spectral & Cred Protocol. Learn how DeFi credit ratings enable undercollateralized lending and", "url": "https://degen0x.com/learn/onchain-credit-scoring-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

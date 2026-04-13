@@ -487,7 +487,8 @@ export default function CryptoGiftCardComparison() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Gift Card Comparison 2026: Bitrefill, CoinGate,", "description": "Compare crypto gift card platforms: Bitrefill (4000+ brands), CoinGate (180+ countries), Fold (Bitcoin rewards), Purse.io (5-33% Amazon discount). Buy with", "url": "https://degen0x.com/spending/crypto-gift-card-options-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

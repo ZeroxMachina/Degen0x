@@ -348,7 +348,8 @@ export default function CryptoCorrelationMatrix() {
             <li><Link href="/tools/crypto-pair-correlation-finder" style={linkStyle}>Crypto Pair Correlation Finder</Link></li>
           </ul>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Correlation Matrix | degen0x", "description": "Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling", "url": "https://degen0x.com/tools/crypto-correlation-matrix", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         <script
           type="application/ld+json"

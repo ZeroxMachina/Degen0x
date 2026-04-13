@@ -449,6 +449,7 @@ export default function StablecoinPaymentsGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Payments Infrastructure Guide 2026: From BVNK to", "description": "Comprehensive guide to stablecoin payment infrastructure in 2026. Learn about Mastercard", "url": "https://degen0x.com/learn/stablecoin-payments-infrastructure-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

@@ -328,6 +328,7 @@ export default function LombardFinanceLBTCGuide() {
       </div>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lombard Finance Guide 2026 \u2014 LBTC Bitcoin Liquid Staking", "description": "Complete Lombard Finance guide 2026: LBTC bitcoin liquid staking token, Babylon integration, Security Consortium, BARD tokenomics, multi-chain DeFi", "url": "https://degen0x.com/learn/lombard-finance-lbtc-bitcoin-liquid-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

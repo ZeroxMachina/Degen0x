@@ -511,7 +511,8 @@ export default function DEXAggregatorGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DEX Aggregators Explained 2026: 1inch, Jupiter, Paraswap,", "description": "Complete guide to DEX aggregators. Compare 1inch ($300B+ volume), Jupiter Solana #1, Paraswap, 0x Protocol, CowSwap (MEV-protected), Odos multi-hop. Learn", "url": "https://degen0x.com/learn/what-is-a-dex-aggregator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

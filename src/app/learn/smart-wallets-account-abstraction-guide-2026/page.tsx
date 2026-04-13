@@ -722,7 +722,8 @@ export default function SmartWalletsAccountAbstractionGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Wallets & Account Abstraction Guide 2026 | degen0x", "description": "Complete guide to smart wallets and account abstraction in 2026. Learn how ERC-4337 and EIP-7702 enable gasless onboarding, multi-sig recovery, and", "url": "https://degen0x.com/learn/smart-wallets-account-abstraction-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

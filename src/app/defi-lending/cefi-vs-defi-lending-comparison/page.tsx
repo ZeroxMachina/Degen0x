@@ -621,7 +621,8 @@ export default function CeFiVsDeFiComparison() {
             <strong style={{ color: '#c084fc' }}>DeFi risk warning:</strong> Lending protocols carry smart contract risk, liquidation risk, and oracle risk.
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "CeFi vs DeFi Lending Comparison 2026: Rates, Risks, Custody", "description": "Complete comparison of centralized vs decentralized lending: interest rates, risks, security models, custody, withdrawals, and tax implications. Choose the", "url": "https://degen0x.com/defi-lending/cefi-vs-defi-lending-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/defi-lending/best/fixed-rate" style={{ color: "#fb923c", marginRight: "1rem" }}>Fixed Rate</a>

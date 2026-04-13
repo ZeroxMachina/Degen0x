@@ -358,7 +358,8 @@ export default function CryptoLoanForRealEstate() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered financial advice. Cryptocurrency is volatile and carries significant risk. Always do your own research (DYOR) and consult a qualified financial advisor before making investment decisions. degen0x does not endorse any specific investment or protocol.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loan For Real Estate | degen0x", "description": "Crypto Loan For Real Estate guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.", "url": "https://degen0x.com/crypto-loans/crypto-loan-for-real-estate", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>

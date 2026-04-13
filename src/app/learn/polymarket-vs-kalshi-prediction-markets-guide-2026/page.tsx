@@ -320,6 +320,7 @@ export default function Page() {
           <a href="/learn/kite-ai-payment-blockchain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Kite Ai Payment Blockchain Guide 2026</a>
         </nav>
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Polymarket vs Kalshi: Prediction Markets Comparison Guide", "description": "In-depth comparison of Polymarket and Kalshi in 2026 \u2014 fees, liquidity, regulation, US access, crypto vs USD rails, and which prediction market platform is", "url": "https://degen0x.com/learn/polymarket-vs-kalshi-prediction-markets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

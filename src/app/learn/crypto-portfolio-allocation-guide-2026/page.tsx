@@ -1030,6 +1030,7 @@ export default function CryptoPortfolioAllocationGuide() {
         />
       </article>
       <BackToTop />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Portfolio Allocation Guide 2026 \u2014 Model Portfolios &", "description": "Learn how to build a diversified crypto portfolio in 2026. Model portfolios for conservative, balanced, and aggressive investors with BTC, ETH, SOL, and", "url": "https://degen0x.com/learn/crypto-portfolio-allocation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

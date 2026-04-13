@@ -396,6 +396,7 @@ export default function HardwareWalletsGuide() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hardware Wallets Guide 2026 \u2014 Cold Storage Comparison", "description": "Complete hardware wallet comparison for 2026. Ledger, Trezor, Keystone Pro, Tangem. Cold storage security, seed phrases, post-quantum cryptography.", "url": "https://degen0x.com/learn/crypto-hardware-wallets-cold-storage-comparison-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

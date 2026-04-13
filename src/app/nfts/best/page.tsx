@@ -299,6 +299,7 @@ export default function BestNftMarketplacesPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fees (25%)", "description": "Compare the top 10 NFT marketplaces of ${CURRENT_YEAR}. We tested fees, creator tools, security, and user experience. Find the best platform for buying, selling, and creating NFTs.", "url": "https://degen0x.com/nfts/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

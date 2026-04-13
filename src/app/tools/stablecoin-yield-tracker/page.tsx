@@ -190,6 +190,7 @@ export default function StablecoinYieldTrackerPage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Yield Tracker - Best Stablecoin APY Rates", "description": "Compare yield-bearing stablecoin rates across sDAI, USDY, sUSDe, and 15+ yield sources. Find safe, high-yield stablecoin opportunities.", "url": "https://degen0x.com/tools/stablecoin-yield-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

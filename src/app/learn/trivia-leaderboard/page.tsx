@@ -120,6 +120,7 @@ export default function TriviaLeaderboardPage() {
           }}
         />
       </div>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Trivia Leaderboard | Compete Globally \u2014 degen0x", "description": "See who tops the crypto trivia leaderboard this week. Earn league ranks from Bronze to Diamond. Play daily, grow your streak, and climb the all-time rankings.", "url": "https://degen0x.com/learn/trivia-leaderboard", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

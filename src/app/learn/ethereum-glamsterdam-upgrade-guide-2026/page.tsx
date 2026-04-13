@@ -846,7 +846,8 @@ export default function EthereumGlamsterdamUpgradeGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Glamsterdam Upgrade Guide 2026 \u2014 ePBS, 10K TPS &", "description": "Complete guide to Ethereum Glamsterdam 2026: EIP-7732 (ePBS), EIP-7928 (BALs), 10,000 TPS, gas repricing, MEV protection, and L1 scaling. H1 2026 timeline.", "url": "https://degen0x.com/learn/ethereum-glamsterdam-upgrade-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

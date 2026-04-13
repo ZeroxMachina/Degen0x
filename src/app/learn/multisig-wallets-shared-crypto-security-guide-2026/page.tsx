@@ -665,6 +665,7 @@ export default function MultisigWalletGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multisig Wallets & Shared Crypto Security Guide 2026", "description": "Complete guide to multisig wallets, threshold signatures, and shared security solutions for crypto. Learn how to secure assets with multiple signers in 2026.", "url": "https://degen0x.com/learn/multisig-wallets-shared-crypto-security-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

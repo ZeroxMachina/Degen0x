@@ -555,7 +555,8 @@ export default function CryptoMiningTaxGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Mining Tax Implications 2026: ASIC Depreciation &", "description": "Complete guide to mining tax. Hobby vs business mining classification, self-employment tax, equipment depreciation (Section 179), electricity deductions, pool", "url": "https://degen0x.com/taxes/crypto-mining-tax-implications", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

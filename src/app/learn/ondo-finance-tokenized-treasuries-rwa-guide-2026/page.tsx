@@ -707,6 +707,7 @@ export default function OndoFinanceGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ondo Finance Guide 2026 \u2014 Tokenized Treasuries & RWA", "description": "Complete guide to Ondo Finance: $2.7B+ TVL, USDY, OUSG, Ondo Global Markets, and ONDO token. The largest provider of tokenized US Treasuries and stocks in 2026.", "url": "https://degen0x.com/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

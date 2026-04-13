@@ -872,6 +872,7 @@ export default function DeFiVaultsPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/crypto-oracles-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Oracles Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Vaults Guide 2026 \u2014 Automated Yield, ERC-4626 &", "description": "Master DeFi vaults and automated yield strategies in 2026. Learn ERC-4626 standard, compare Yearn vs Beefy vs Morpho, understand risk frameworks, and optimize", "url": "https://degen0x.com/learn/defi-vaults-automated-yield-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

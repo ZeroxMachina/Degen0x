@@ -502,7 +502,8 @@ export default function ZKVsOptimisticRollups() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ZK Rollups vs Optimistic Rollups | degen0x", "description": "Compare validity proofs vs fraud proofs. Analyze finality time, proving costs, ZK vs Optimistic trade-offs: zkSync, StarkNet, Arbitrum, Optimism.", "url": "https://degen0x.com/learn/zk-rollups-vs-optimistic-rollups", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

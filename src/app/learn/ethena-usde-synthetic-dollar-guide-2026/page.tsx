@@ -615,6 +615,7 @@ export default function EthenaUSDeSyntheticDollarGuide2026() {
           </p>
         </div>
       </article>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethena USDe Guide 2026 \u2014 Synthetic Dollar, sUSDe Yield &", "description": "Complete guide to Ethena\\", "url": "https://degen0x.com/learn/ethena-usde-synthetic-dollar-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -430,7 +430,8 @@ export default function BestProjectsOnBNBChain2026() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only, not financial advice. Crypto is volatile and risky. TVL, APY, and other metrics current as of April 2026, subject to change. Smart contract risk exists even for audited protocols. BNB Chain centralization (20 validators, Binance-heavy) is material risk. Leverage farming is high-risk (liquidation risk, leverage cascade). Never invest more than you can afford to lose. Always DYOR and consult a qualified financial advisor. Impermanent loss can exceed farming rewards on volatile pairs. Perpetual futures require advanced trading skills; most retail traders lose money.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Projects on BNB Chain 2026: PancakeSwap, Venus,", "description": "Top BNB Chain DeFi projects 2026. Compare PancakeSwap ($2B+ TVL), Venus Protocol ($3B lending), Alpaca Finance, Thena, BiSwap. opBNB L2, MEV protection, BNB", "url": "https://degen0x.com/ecosystem/best-projects-on-bnb-chain", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

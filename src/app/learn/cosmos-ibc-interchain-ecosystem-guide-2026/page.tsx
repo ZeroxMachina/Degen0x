@@ -256,7 +256,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cosmos IBC: Interchain Communication & Liquidity 2026", "description": "Master Cosmos IBC protocol. Learn interchain composability, hub economics, and how IBC enables true blockchain interoperability across 50+ chains.", "url": "https://degen0x.com/learn/cosmos-ibc-interchain-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

@@ -863,7 +863,8 @@ export default function TokenizedTreasuriesGuidePage() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain", "description": "Over $25B in US Treasury bonds now live on-chain. Learn how BlackRock BUIDL, Ondo Finance, and Franklin Templeton work, what yield to expect, and how to access", "url": "https://degen0x.com/learn/tokenized-treasuries-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

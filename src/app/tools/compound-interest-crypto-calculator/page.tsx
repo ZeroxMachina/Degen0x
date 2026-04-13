@@ -360,7 +360,8 @@ export default function CompoundInterestCryptoCalculator() {
             <li><Link href="/exchanges/best-crypto-exchange-for-staking" style={linkStyle}>Best Crypto Exchange for Staking</Link></li>
           </ul>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Compound Interest Crypto Calculator | degen0x", "description": "Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations", "url": "https://degen0x.com/tools/compound-interest-crypto-calculator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         <script
           type="application/ld+json"

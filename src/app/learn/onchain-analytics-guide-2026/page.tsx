@@ -1034,6 +1034,7 @@ export default function OnChainAnalyticsGuide() {
         />
       </article>
       <BackToTop />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-Chain Analytics Guide 2026 \u2014 Data Tools | degen0x", "description": "Master on-chain analytics in 2026. Learn Dune, Glassnode, Nansen, and more to track whales, TVL, smart money, and make data-driven crypto trading decisions.", "url": "https://degen0x.com/learn/onchain-analytics-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

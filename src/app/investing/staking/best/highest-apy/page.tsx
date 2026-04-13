@@ -196,6 +196,7 @@ export default function HighestAPYStakingPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Highest Staking APY Platforms of 2026 (Best Yields)", "description": "Find the highest staking APY platforms in ${CURRENT_YEAR}. Compare yields across Ethereum, Solana, and restaking protocols to maximize your staking returns.", "url": "https://degen0x.com/investing/staking/best/highest-apy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

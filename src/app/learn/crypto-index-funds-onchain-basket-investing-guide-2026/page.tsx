@@ -524,7 +524,8 @@ export default function CryptoIndexFundsOnchainkBasketInvestingGuide2026() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Index Funds & On-Chain Basket Investing Guide 2026", "description": "Complete guide to crypto index funds, on-chain basket investing, Index Coop, Enzyme Finance, Set Protocol, and tokenized indices. Learn DPI, MVI, and how to", "url": "https://degen0x.com/learn/crypto-index-funds-onchain-basket-investing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

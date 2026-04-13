@@ -414,7 +414,8 @@ export default function BitcoinSavingsPlanGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Savings Plan 2026: Long-Term DCA Strategy,", "description": "Complete Bitcoin savings plan guide: dollar-cost averaging, accumulation targets, cold storage security, tax-efficient strategies, wealth projections. Build", "url": "https://degen0x.com/long-term/bitcoin-savings-plan-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

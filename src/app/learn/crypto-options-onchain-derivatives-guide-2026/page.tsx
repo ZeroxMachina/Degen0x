@@ -1043,6 +1043,7 @@ export default function CryptoOptionsDerivativesPage() {
         />
       </div>
           <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Options & On-Chain Derivatives 2026", "description": "Master crypto options and on-chain derivatives in 2026. Learn about calls, puts, Greeks, AMM-based protocols like Aevo, Derive, Hegic, and Premia. Compare CeFi", "url": "https://degen0x.com/learn/crypto-options-onchain-derivatives-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

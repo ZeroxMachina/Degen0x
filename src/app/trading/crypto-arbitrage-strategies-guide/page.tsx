@@ -389,7 +389,8 @@ export default function CryptoArbitrageStrategies() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Arbitrage Strategies 2026 | CEX-CEX, Triangular,", "description": "Master crypto arbitrage: exchange arbitrage (CEX-CEX), triangular, cross-chain, DEX-CEX, flash loan strategies. Real examples, capital requirements, profit", "url": "https://degen0x.com/trading/crypto-arbitrage-strategies-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

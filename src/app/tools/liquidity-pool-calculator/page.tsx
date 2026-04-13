@@ -339,7 +339,8 @@ export default function LiquidityPoolCalculator() {
             <li><Link href="/defi-lending/aave-v3-complete-guide" style={linkStyle}>Aave V3 Complete Guide</Link></li>
           </ul>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Liquidity Pool Calculator | degen0x", "description": "Calculate liquidity pool returns. IL (impermanent loss) simulation, fee revenue estimation, concentrated vs full-range, TVL/APR analysis. Uniswap v3 & v2", "url": "https://degen0x.com/tools/liquidity-pool-calculator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         <script
           type="application/ld+json"

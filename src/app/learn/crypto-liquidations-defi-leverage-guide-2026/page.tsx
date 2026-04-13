@@ -1263,6 +1263,7 @@ export default function CryptoLiquidationsPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/zero-knowledge-proofs-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Zero Knowledge Proofs Explained</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Liquidations in DeFi & Leverage Trading Guide 2026", "description": "Master crypto liquidations: understand DeFi liquidation mechanics (Aave, Compound), perpetual exchanges (Hyperliquid, dYdX), health factor, cascading", "url": "https://degen0x.com/learn/crypto-liquidations-defi-leverage-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

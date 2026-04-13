@@ -474,7 +474,8 @@ export default function BestRestakingTokens2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Restaking Tokens 2026 | EIGEN, ETHFI, PUFFER, rsETH,", "description": "Invest in liquid restaking tokens. EigenLayer EIGEN ($15B TVL), Ether.fi ETHFI, Puffer Finance, Kelp DAO, Renzo. AVS incentives, slashing risk.", "url": "https://degen0x.com/investing/best-restaking-tokens-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/crypto/bitcoin" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin</a>

@@ -722,6 +722,7 @@ export default function PrivacyCoinsGuide2026() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Privacy Coins Guide 2026: Monero, Zcash & How They Work", "description": "Privacy coins surged 288% in 2025. Learn how Monero, Zcash, and privacy blockchains work, plus their regulatory risks and outlook for 2026.", "url": "https://degen0x.com/learn/privacy-coins-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

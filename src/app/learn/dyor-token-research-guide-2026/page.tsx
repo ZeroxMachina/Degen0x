@@ -934,6 +934,7 @@ export default function DYORTokenResearchGuidePage() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DYOR Crypto: How to Research Any Token Before Buying (2026)", "description": "Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and how to evaluate tokenomics and", "url": "https://degen0x.com/learn/dyor-token-research-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -561,7 +561,8 @@ export default function BitcoinVsGoldComparisonGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin vs Gold Comparison 2026: Supply, Returns,", "description": "Bitcoin vs gold: supply (21M BTC vs 200K tons Au), portability, 1yr/5yr/10yr returns, volatility, Sharpe ratio, digital scarcity vs physical store of value.", "url": "https://degen0x.com/learn/bitcoin-vs-gold-comparison-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

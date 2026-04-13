@@ -553,7 +553,8 @@ export default function CryptoGiftTaxRules() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Gift Tax Rules 2026: Annual Exclusion, Step-Up Basis", "description": "Complete crypto gift tax guide 2026: $18,000 annual exclusion, lifetime $13.61M exemption, step-up basis inheritance, gifting to charity, donor-advised funds,", "url": "https://degen0x.com/taxes/crypto-gift-tax-rules", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

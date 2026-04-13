@@ -547,7 +547,8 @@ export default function BestAltcoinsToBuy2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Altcoins to Buy 2026: Layer 1s, Layer 2s, DeFi, AI", "description": "Best altcoins to invest in 2026: Layer 1s (Solana $201, Avalanche $95, Sui $4.2), Layer 2s (Arbitrum $1.8, Optimism $5.8), DeFi (Aave $450, Uniswap $15), AI", "url": "https://degen0x.com/investing/best-altcoins-to-buy-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/crypto/bnb" style={{ color: "#fb923c", marginRight: "1rem" }}>Bnb</a>

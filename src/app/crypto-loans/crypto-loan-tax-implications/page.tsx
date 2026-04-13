@@ -733,7 +733,8 @@ export default function CryptoLoanTaxGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Loan Tax Guide 2026: Interest Deductibility, Capital", "description": "Complete crypto loan tax guide: interest deductibility rules, capital gains on collateral, Form 1099-INT reporting, stablecoins, and tax-efficient borrowing", "url": "https://degen0x.com/crypto-loans/crypto-loan-tax-implications", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-loans/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>

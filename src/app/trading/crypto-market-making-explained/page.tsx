@@ -462,7 +462,8 @@ export default function CryptoMarketMakingExplainedExpanded() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Market Making 2026: Bid-Ask Spreads, Hummingbot,", "description": "Master crypto market making: bid-ask spreads, inventory risk, Hummingbot bots, Wintermute ($200M AUM), Jump Crypto HFT, AMM vs orderbook strategies, 10-30% APY", "url": "https://degen0x.com/trading/crypto-market-making-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/trading/crypto-trading-psychology-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Trading Psychology Guide</a>

@@ -551,6 +551,7 @@ export default function KYAGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Know Your Agent (KYA): AI Agent Identity & Verification", "description": "Learn how Know Your Agent (KYA) frameworks verify AI agent identity on-chain. Covers Digital Agent Passports, agent wallets, KYA vs KYC, key protocols, and", "url": "https://degen0x.com/learn/know-your-agent-kya-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

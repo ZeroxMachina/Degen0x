@@ -523,6 +523,7 @@ export default function CryptoSavingsAccountsPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Savings Accounts 2026 \u2014 Highest APY Rates Compared", "description": "Compare the best crypto savings accounts of ${CURRENT_YEAR}. Earn up to 12% APY on Bitcoin, Ethereum, and stablecoins. Expert-reviewed rates, safety scores, and platform comparisons.", "url": "https://degen0x.com/investing/best/savings-accounts", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

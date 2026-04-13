@@ -308,6 +308,7 @@ export default function StakingPage() {
           </section>
         </div>
       </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Staking Dashboard | Compare Staking Yields & APY | degen0x", "description": "Compare staking yields across Ethereum, Solana, Cosmos, and Polkadot. Find the best APY for major staking protocols.", "url": "https://degen0x.com/staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

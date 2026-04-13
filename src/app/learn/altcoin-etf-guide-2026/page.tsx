@@ -1230,7 +1230,8 @@ export default function AltcoinETFGuidePage() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Altcoin ETF Guide 2026: Solana, XRP & Beyond", "description": "Complete guide to altcoin ETFs in 2026 \u2014 SOL, XRP, and ETH spot ETFs explained. Compare fees, AUM, staking yields, and how to invest through your brokerage", "url": "https://degen0x.com/learn/altcoin-etf-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

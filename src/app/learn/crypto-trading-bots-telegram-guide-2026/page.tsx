@@ -229,7 +229,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Trading Bots: Telegram Automation & Strategy Guide", "description": "Master crypto trading bots and Telegram automation. Learn bot security, strategy selection, profitability analysis, and how to automate trading safely.", "url": "https://degen0x.com/learn/crypto-trading-bots-telegram-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

@@ -878,6 +878,7 @@ export default function PostQuantumCryptographyGuide() {
       </div>
 
       <BackToTop />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Post-Quantum Cryptography Guide 2026 \u2014 Quantum-Resistant Crypto | degen0x", "description": "Comprehensive guide to post-quantum cryptography, quantum-resistant blockchains, and NIST standards. Learn how Ethereum, Algorand, and new PQ protocols are preparing for Q-Day.", "url": "https://degen0x.com/learn/post-quantum-cryptography-quantum-resistant-crypto-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

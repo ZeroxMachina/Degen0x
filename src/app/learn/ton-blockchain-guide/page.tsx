@@ -426,6 +426,7 @@ export default function TonBlockchainGuidePage() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "TON Blockchain & Telegram Mini Apps Guide 2026 | degen0x", "description": "Complete guide to TON blockchain and Telegram Mini Apps in 2026. Learn how TON works, its DeFi ecosystem, top dApps, and why 950M+ Telegram users make it crypto", "url": "https://degen0x.com/learn/ton-blockchain-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

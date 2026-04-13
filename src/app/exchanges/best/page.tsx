@@ -300,6 +300,7 @@ export default function BestExchangesPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fees (25%)", "description": "Compare the top 10 crypto exchanges of ${CURRENT_YEAR}. We tested fees, security, features, and ease of use. Find the best exchange for beginners, advanced traders, and everyone in between.", "url": "https://degen0x.com/exchanges/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

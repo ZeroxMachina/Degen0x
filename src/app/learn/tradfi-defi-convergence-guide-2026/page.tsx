@@ -796,6 +796,7 @@ export default function TradFiDeFiConvergenceGuide2026() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "TradFi-DeFi Convergence 2026: How Institutions Are Going", "description": "The definitive guide to TradFi-DeFi convergence in 2026. $50B+ in tokenized RWAs, JPMorgan", "url": "https://degen0x.com/learn/tradfi-defi-convergence-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

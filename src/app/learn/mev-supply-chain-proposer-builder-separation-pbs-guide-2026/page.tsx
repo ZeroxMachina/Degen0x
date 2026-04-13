@@ -805,6 +805,7 @@ export default function MEVPBSGuide() {
           <a href="/learn/crypto-airdrops-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Airdrops 2026</a>
         </nav>
     </main>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MEV Supply Chain & Proposer-Builder Separation (PBS) Learn", "description": "Comprehensive guide to MEV supply chain, PBS infrastructure, builder/relay markets, and enshrined PBS (EIP-7732). Understand the future of block production on", "url": "https://degen0x.com/learn/mev-supply-chain-proposer-builder-separation-pbs-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

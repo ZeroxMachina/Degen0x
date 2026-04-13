@@ -196,6 +196,7 @@ export default function BestEthereumStakingPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Ethereum Staking Platforms of 2026 (Compared)", "description": "Compare the best Ethereum staking platforms in ${CURRENT_YEAR}. Liquid staking with Lido, Rocket Pool, StakeWise, and centralized options from Coinbase and Kraken.", "url": "https://degen0x.com/investing/staking/best/ethereum", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -169,7 +169,8 @@ export default function BestMemeCoins2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Meme Coins to Buy 2026: DOGE, SHIB, PEPE, WIF | degen0x", "description": "Meme coin guide 2026: DOGE ($0.25), SHIB ($0.000015), PEPE ($0.0000085), WIF ($1.80), BONK, FLOKI, BRETT. Market cap, community, utility, risks, rug pull", "url": "https://degen0x.com/investing/best-meme-coins-to-buy-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/best/apps" style={{ color: "#fb923c", marginRight: "1rem" }}>Apps</a>

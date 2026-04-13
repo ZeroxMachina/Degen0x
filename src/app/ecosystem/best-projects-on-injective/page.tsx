@@ -394,7 +394,8 @@ export default function BestInjectiveProjectsExpanded() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Injective caters to advanced traders. High leverage (50x) carries extreme risk of total loss. DYOR on liquidation mechanics, smart contract audits, and operational risks. Not financial advice. Trade with demo first. Consult a professional before risking capital.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Injective Projects 2026: Helix DEX, Hydro, DojoSwap,", "description": "Complete Injective ecosystem guide: Helix DEX ($70M TVL), Hydro derivatives ($30M TVL), DojoSwap, Talis NFTs. Orderbook-based trading, 0.05% fees,", "url": "https://degen0x.com/ecosystem/best-projects-on-injective", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

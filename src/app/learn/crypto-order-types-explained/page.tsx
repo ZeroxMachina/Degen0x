@@ -804,7 +804,8 @@ export default function CryptoOrderTypesGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Order Types Explained 2026: Market, Limit,", "description": "Master all crypto order types: market, limit, stop-loss, stop-limit, trailing stop, OCO, TWAP, iceberg orders. Compare execution, slippage, and fees. Learn", "url": "https://degen0x.com/learn/crypto-order-types-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/learn/what-are-soulbound-tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>What Are Soulbound Tokens</a>

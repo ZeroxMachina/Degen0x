@@ -556,7 +556,8 @@ export default function NFTTaxGuide2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Tax Guide 2026: Capital Gains, Royalties & Collectibles", "description": "Complete NFT tax guide for 2026: capital gains, creator royalties, minting events, NFT swaps, collectibles 28% rate, gas fees, wash sales, charitable donations.", "url": "https://degen0x.com/taxes/nft-tax-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

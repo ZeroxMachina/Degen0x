@@ -336,6 +336,7 @@ export default function CryptoPayrollGuide() {
           </Link>
         </div>
       </div>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Payroll Guide 2026 \u2014 Get Paid in Crypto | degen0x", "description": "Complete guide to crypto payroll in 2026. Compare Bitwage, Request Finance, Deel, Franklin & Rise. Learn how to get paid in BTC, ETH, USDC, and stablecoins.", "url": "https://degen0x.com/learn/crypto-payroll-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -495,6 +495,7 @@ export default function SocialfiCreatorTokensGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SocialFi Guide 2026: Creator Tokens & Farcaster | degen0x", "description": "Complete guide to SocialFi in 2026. Learn about decentralized social media, creator tokens, Farcaster, Lens Protocol, and how users are monetizing their social", "url": "https://degen0x.com/learn/socialfi-creator-tokens-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

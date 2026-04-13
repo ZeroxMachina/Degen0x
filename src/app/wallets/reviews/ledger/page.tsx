@@ -155,6 +155,7 @@ export default function LedgerReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Supported Assets & Chains", "description": "In-depth Ledger Nano X review for ${CURRENT_YEAR}. We tested Ledger's Bluetooth hardware wallet covering security, supported coins, Ledger Live app, fees, and ease of use.", "url": "https://degen0x.com/wallets/reviews/ledger", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -514,7 +514,8 @@ export default function CryptoComplianceChecklist() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Regulatory Compliance Checklist 2026 | KYC AML MSB", "description": "Crypto compliance guide: KYC/AML requirements, FinCEN MSB registration, state money transmitter licenses, Howey test, travel rule. Penalties & timelines.", "url": "https://degen0x.com/web3-business/crypto-regulatory-compliance-checklist", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/web3-business/reviews/coinbase-commerce" style={{ color: "#fb923c", marginRight: "1rem" }}>Coinbase Commerce</a>

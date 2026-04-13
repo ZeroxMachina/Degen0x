@@ -222,7 +222,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Perpetual Futures Trading: Leverage & Risk Guide 2026", "description": "Master perpetual futures trading mechanics. Learn leverage trading, risk management, funding rates, liquidation, and how to trade perpetuals profitably.", "url": "https://degen0x.com/learn/what-is-perpetual-futures-trading", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

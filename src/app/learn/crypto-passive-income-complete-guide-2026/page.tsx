@@ -1119,6 +1119,7 @@ export default function CryptoPassiveIncomeGuide() {
           </p>
         </div>
       </article>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Passive Income Complete Guide 2026 | degen0x", "description": "Master crypto passive income strategies in 2026: staking, liquid staking, DeFi lending, yield farming, restaking, real yield protocols, and more. Real APY", "url": "https://degen0x.com/learn/crypto-passive-income-complete-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

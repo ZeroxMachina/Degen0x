@@ -390,7 +390,8 @@ export default function CryptoOptionsStrategies() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Options Trading Strategies 2026 | Deribit, Lyra,", "description": "Master crypto options strategies: call/put buying, premium selling, straddles, iron condors on Deribit (90% market share), Lyra V2, Premia V3, and Aevo.", "url": "https://degen0x.com/trading/crypto-options-trading-strategies", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

@@ -567,7 +567,8 @@ export default function CryptoStakingTaxGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Staking Tax Guide: IRS Reporting, Cost Basis,", "description": "Master crypto staking taxes: IRS guidance on ordinary income at FMV, cost basis establishment, validator vs delegation rewards. Jarrett v. IRS case, liquid", "url": "https://degen0x.com/taxes/crypto-staking-tax-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

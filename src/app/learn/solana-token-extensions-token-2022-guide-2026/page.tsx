@@ -945,7 +945,8 @@ await initializeTransferHook(
           section="learn"
         />
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Token Extensions & Token-2022 Guide 2026 | degen0x", "description": "Complete guide to Solana Token Extensions and Token-2022 SPL program. Learn about confidential transfers, transfer hooks, transfer fees, and real-world token", "url": "https://degen0x.com/learn/solana-token-extensions-token-2022-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
 
   );
 }

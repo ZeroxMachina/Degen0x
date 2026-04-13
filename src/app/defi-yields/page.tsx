@@ -25,6 +25,7 @@ export default function DeFiYieldsPage() {
     <>
       <ClientContent />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Yield Aggregator | Compare APY & Yields | degen0x", "description": "Compare DeFi yields across Ethereum, Solana, Arbitrum and more. Find the best APY for lending, staking, LPs and yield vaults. Analyze TVL, risk levels, and earn with confidence.", "url": "https://degen0x.com/defi-yields", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -1090,7 +1090,8 @@ export default function TokenizedTreasuriesGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenized Treasuries & T-Bills On-Chain Guide 2026 | degen0x", "description": "Complete guide to tokenized US Treasuries and T-bills on-chain in 2026. Learn how $11B+ market works, major products (BUIDL, USYC, USDY, BENJI), yield", "url": "https://degen0x.com/learn/tokenized-treasuries-t-bills-on-chain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       
         <script
           type="application/ld+json"

@@ -715,7 +715,8 @@ export default function Web3MarketingGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Marketing Strategies 2026: Growth Playbook for Crypto", "description": "Complete web3 marketing playbook: community growth, content strategy, token incentives, partnerships, and budget allocation for crypto projects. Proven tactics", "url": "https://degen0x.com/web3-business/web3-marketing-strategies", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/web3-business/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>

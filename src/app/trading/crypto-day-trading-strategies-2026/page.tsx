@@ -215,7 +215,8 @@ export default function DayTradingStrategies2026() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Day Trading Strategies 2026: Scalping, Range,", "description": "Day trading strategies: scalping (1-5min, $10-100/trade), range trading ($1K support/resistance), breakout (volume confirmation), momentum (80+ RSI). Risk", "url": "https://degen0x.com/trading/crypto-day-trading-strategies-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/trading/best/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>

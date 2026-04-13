@@ -578,6 +578,7 @@ export default function OnchainIdentityGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/nasdaq-tokenized-equities-trading-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Nasdaq Tokenized Equities Trading Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Identity Guide 2026: ENS, Soulbound Tokens,", "description": "Explore the onchain identity stack in 2026 \u2014 ENS domains, Soulbound Tokens (SBTs), Ethereum Attestation Service (EAS), proof of personhood, and decentralized", "url": "https://degen0x.com/learn/onchain-identity-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

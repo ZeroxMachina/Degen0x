@@ -137,6 +137,7 @@ export default function WhaleTrackerPage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Whale Wallet Tracker \u2014 Monitor Smart Money Moves | degen0x", "description": "Track whale wallets, smart money flows, and large crypto transactions in real-time. Monitor top holders across Ethereum, Solana, and Bitcoin with our free", "url": "https://degen0x.com/tools/whale-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

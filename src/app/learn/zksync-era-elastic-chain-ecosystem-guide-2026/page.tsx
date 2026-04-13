@@ -239,7 +239,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "zkSync Era Elastic Chain Ecosystem Guide 2026", "description": "Master zkSync Era", "url": "https://degen0x.com/learn/zksync-era-elastic-chain-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

@@ -474,7 +474,8 @@ export default function BestInfrastructureCryptoTokens() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Infrastructure Crypto Tokens 2026 | LINK, FIL, GRT,", "description": "Invest in infrastructure crypto tokens: Chainlink ($15B TVL), Filecoin storage, The Graph indexing, Arweave, Render GPU compute. Revenue-generating protocols.", "url": "https://degen0x.com/investing/best-infrastructure-crypto-tokens", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/best/yield-farming" style={{ color: "#fb923c", marginRight: "1rem" }}>Yield Farming</a>

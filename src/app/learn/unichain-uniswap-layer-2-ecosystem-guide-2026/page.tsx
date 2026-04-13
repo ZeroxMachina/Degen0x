@@ -301,6 +301,7 @@ export default function UnichainGuidePage() {
           </p>
         </div>
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Unichain Guide 2026 \u2014 Uniswap Layer 2, UNI Staking & DeFi", "description": "Complete guide to Unichain in 2026: the Uniswap-built Layer 2 optimized for DeFi. Learn about UNI staking, 1-second blocks, cross-chain liquidity, and", "url": "https://degen0x.com/learn/unichain-uniswap-layer-2-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

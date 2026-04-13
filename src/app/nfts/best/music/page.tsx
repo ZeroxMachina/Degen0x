@@ -188,6 +188,7 @@ export default function BestForMusicPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Audio Playback", "description": "Discover the best platforms for music NFTs in ${CURRENT_YEAR}. Buy, sell, and collect music NFTs from independent and established artists on top marketplaces.", "url": "https://degen0x.com/nfts/best/music", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

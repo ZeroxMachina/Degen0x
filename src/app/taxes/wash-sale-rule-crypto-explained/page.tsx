@@ -515,7 +515,8 @@ export default function WashSaleRuleCryptoExplained() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wash Sale Rule & Crypto 2026: Current Status, Risks &", "description": "Complete guide to wash sale rules for crypto in 2026. Learn why crypto currently avoids wash sales, proposed legislation risks, and tax-loss harvesting", "url": "https://degen0x.com/taxes/wash-sale-rule-crypto-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

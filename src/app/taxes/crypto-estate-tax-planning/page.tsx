@@ -538,7 +538,8 @@ export default function CryptoEstateTaxPlanning() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Estate Tax Planning: Trusts, Gifting & Step-Up Basis", "description": "Comprehensive guide to crypto estate planning including $13.61M exemption, IRATrust strategies, step-up basis, GRATs, and digital asset probate avoidance.", "url": "https://degen0x.com/taxes/crypto-estate-tax-planning", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/taxes/defi-tax-reporting-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Tax Reporting Guide</a>

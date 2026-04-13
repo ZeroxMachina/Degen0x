@@ -781,6 +781,7 @@ export default function DefiOptionsGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Options Trading Guide 2026: Derive, Stryke & Panoptic", "description": "Learn DeFi options trading in 2026. Compare Derive (Lyra), Stryke (Dopex), and Panoptic \u2014 how on-chain options work, core strategies, platform fees, and risks.", "url": "https://degen0x.com/learn/defi-options-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

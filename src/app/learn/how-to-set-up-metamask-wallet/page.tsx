@@ -571,7 +571,8 @@ export default function MetaMaskWalletSetup() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Set Up MetaMask Wallet: Complete Step-by-Step Guide", "description": "Complete MetaMask setup guide: download, create wallet, secure seed phrase, add networks (Ethereum, Polygon, Arbitrum, Base), connect dApps, and manage gas", "url": "https://degen0x.com/learn/how-to-set-up-metamask-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

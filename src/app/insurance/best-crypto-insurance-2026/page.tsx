@@ -179,7 +179,8 @@ export default function CryptoInsurance2026() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> Insurance is probabilistic. Claims may be denied, payouts delayed. Not financial advice. DYOR on protocol risks. Insurance complements, doesn&apos;t replace, due diligence.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Insurance 2026: Nexus Mutual, InsurAce, Bridge", "description": "Crypto insurance guide: Nexus Mutual (smart contract cover), InsurAce (DeFi), Bridge Mutual, Coincover (exchange). Coverage, premiums, claims, comparison table", "url": "https://degen0x.com/insurance/best-crypto-insurance-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

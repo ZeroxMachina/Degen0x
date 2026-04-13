@@ -323,6 +323,7 @@ export default function DeFiInsuranceGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/slippage-crypto-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Slippage Crypto Explained</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Insurance Guide 2026 \u2014 Protect Against Hacks & Exploits", "description": "Learn how DeFi insurance works. Compare Nexus Mutual, OpenCover, Neptune Mutual & InsurAce. Protect your crypto from smart contract hacks, depegs & exploits.", "url": "https://degen0x.com/learn/defi-insurance-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

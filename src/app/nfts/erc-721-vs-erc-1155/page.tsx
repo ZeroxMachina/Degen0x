@@ -572,7 +572,8 @@ export default function ERC721vs1155() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is informational only. ERC-721 and ERC-1155 have distinct technical profiles; neither is universally "better." Choose based on your specific use case, ecosystem goals, and cost constraints. Consult developers experienced in token standards before minting. degen0x provides analysis, not recommendations.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ERC-721 vs ERC-1155: NFT Standards Compared | Gas, Use", "description": "ERC-721 for unique NFTs vs ERC-1155 for fungible + non-fungible tokens. Gas savings 40-60%, gaming use cases, ERC-6551 token-bound accounts, OpenSea/Rarible", "url": "https://degen0x.com/nfts/erc-721-vs-erc-1155", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

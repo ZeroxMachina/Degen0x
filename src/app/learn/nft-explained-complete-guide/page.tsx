@@ -463,7 +463,8 @@ export default function NFTExplainedCompleteGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Explained: Complete Guide to Digital Assets | degen0x", "description": "Learn about NFTs: ERC-721, ERC-1155, use cases (art, gaming, music), OpenSea vs Blur vs Magic Eden, blue chip collections, rarity evaluation, and utility NFTs", "url": "https://degen0x.com/learn/nft-explained-complete-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

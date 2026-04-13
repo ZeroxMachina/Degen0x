@@ -348,7 +348,8 @@ export default function NftFloorPriceTracker() {
             <li><Link href="/tools/crypto-heatmap-live" style={linkStyle}>Crypto Heatmap Live</Link></li>
           </ul>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Floor Price Tracker | degen0x", "description": "Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea", "url": "https://degen0x.com/tools/nft-floor-price-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         <script
           type="application/ld+json"

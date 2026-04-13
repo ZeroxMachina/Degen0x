@@ -623,6 +623,7 @@ export default function MemecoinTradingGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Memecoin Trading Strategy: Risk Management Guide", "description": "Master memecoin trading with expert risk management strategies. Learn to identify opportunities, manage risk, set entry/exit points, and avoid red flags.", "url": "https://degen0x.com/learn/memecoin-trading-strategy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

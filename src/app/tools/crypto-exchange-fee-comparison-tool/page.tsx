@@ -342,7 +342,8 @@ export default function CryptoExchangeFeeComparison() {
             <li><Link href="/exchanges/best-exchange-for-spot-trading" style={linkStyle}>Best Exchange for Spot Trading</Link></li>
           </ul>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Exchange Fee Comparison | degen0x", "description": "Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange", "url": "https://degen0x.com/tools/crypto-exchange-fee-comparison-tool", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         <script
           type="application/ld+json"

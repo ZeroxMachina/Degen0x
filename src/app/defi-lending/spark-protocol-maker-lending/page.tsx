@@ -682,7 +682,8 @@ export default function SparkProtocolMakerLendingGuide() {
             <strong style={{ color: '#c084fc' }}>DeFi risk warning:</strong> Lending protocols carry smart contract risk, liquidation risk, and oracle risk.
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spark Protocol MakerDAO Lending Guide 2026: DAI Savings Rate", "description": "Complete Spark Protocol guide. Learn about Spark Lend (Aave V3 fork), DAI Savings Rate (DSR 5%), sDAI yield token, MakerDAO integration, and real-world assets", "url": "https://degen0x.com/defi-lending/spark-protocol-maker-lending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

@@ -608,6 +608,7 @@ export default function FOMCCryptoGuidePage() {
         />
       </article>
       <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "FOMC & Crypto: How Fed Rates Impact Bitcoin 2026 | degen0x", "description": "How do FOMC meetings and Fed interest rate decisions affect Bitcoin and crypto? March 2026 FOMC analysis, rate scenarios, and crypto market impact with price", "url": "https://degen0x.com/learn/fomc-fed-rate-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

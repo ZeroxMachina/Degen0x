@@ -464,7 +464,8 @@ export default function RWARealWorldAssetsTokenization() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "RWA Real-World Assets Tokenization 2026: Ondo Finance,", "description": "RWA tokenization 2026: Ondo ($2B TVL, US Treasuries), Franklin Templeton FTTC, RealT (real estate), Maple (credit), BlackRock BUIDL. Market size, use cases,", "url": "https://degen0x.com/learn/rwa-real-world-assets-tokenization", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

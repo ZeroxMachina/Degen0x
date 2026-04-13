@@ -976,6 +976,7 @@ export default function AerodromeFinanceGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aerodrome Finance Guide 2026: Base", "description": "Aerodrome Finance guide 2026: ve(3,3) model, veAERO locking, pool types, tokenomics. How Aerodrome dominates Base with 68% DEX share and $500M TVL.", "url": "https://degen0x.com/learn/aerodrome-finance-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

@@ -473,7 +473,8 @@ export default function GenerationalWealthGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty", "description": "Build multi-generational crypto wealth: BTC accumulation ($0.01\u2192$100K history), trust structures, family office setup, estate planning, tax-efficient transfer.", "url": "https://degen0x.com/long-term/crypto-generational-wealth-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/long-term/crypto-inheritance-planning-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Inheritance Planning Guide</a>

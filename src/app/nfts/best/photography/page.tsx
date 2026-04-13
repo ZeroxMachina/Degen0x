@@ -188,6 +188,7 @@ export default function BestForPhotographyPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Image Quality", "description": "Find the best NFT marketplaces for photographers in ${CURRENT_YEAR}. Sell and collect photography NFTs on curated platforms with gallery-quality presentation.", "url": "https://degen0x.com/nfts/best/photography", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

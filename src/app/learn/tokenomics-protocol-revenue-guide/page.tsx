@@ -749,6 +749,7 @@ export default function TokenomicsProtocolRevenueGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenomics 2.0: DeFi Protocol Revenue & Fee Switches 2026", "description": "Uniswap burned $591M & activated its fee switch. Aave runs buybacks from protocol revenue. Learn how Tokenomics 2.0 works, how to evaluate DeFi P/E ratios, and", "url": "https://degen0x.com/learn/tokenomics-protocol-revenue-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

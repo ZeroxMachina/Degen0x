@@ -653,7 +653,8 @@ export default function DCAvLumpSumInvesting() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DCA vs Lump Sum Investing: Crypto Backtesting & Strategy", "description": "Bitcoin and Ethereum DCA vs lump sum backtests (2015-2025). Compare returns, drawdowns, frequency. Learn value averaging and automated DCA tools (Coinbase,", "url": "https://degen0x.com/investing/crypto-dollar-cost-averaging-vs-lump-sum", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/crypto/solana" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana</a>

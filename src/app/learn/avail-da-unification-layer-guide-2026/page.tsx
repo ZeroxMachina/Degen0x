@@ -1185,7 +1185,8 @@ const AvailGuide = () => {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Avail DA Unification Layer Guide 2026 - degen0x", "description": "Complete guide to Avail: modular DA layer, cross-chain coordination via Nexus, shared security through Fusion. Architecture, tokenomics, partnerships.", "url": "https://degen0x.com/learn/avail-da-unification-layer-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

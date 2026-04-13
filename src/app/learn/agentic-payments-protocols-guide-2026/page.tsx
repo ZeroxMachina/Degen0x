@@ -921,6 +921,7 @@ export default function AgenticPaymentsProtocolsGuide() {
           }}
         />
       </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Agentic Payments Protocols Compared 2026: x402 vs ACP vs", "description": "Compare the 5 major agentic payment protocols shaping AI agent commerce in 2026. x402, ACP, AP2, ERC-8183, and Open Wallet Standard explained.", "url": "https://degen0x.com/learn/agentic-payments-protocols-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

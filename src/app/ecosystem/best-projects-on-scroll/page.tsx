@@ -544,7 +544,8 @@ export default function BestScrollProjects() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Crypto carries risk. DYOR on tokenomics, team, roadmap, and smart contract security audits. Not financial advice. Scroll is in active development; features and TVL figures subject to rapid change.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Scroll Projects 2026: Ambient Finance, NURI Exchange,", "description": "Top Scroll (zkEVM) ecosystem projects: Ambient Finance, NURI Exchange, Cog Finance, Aave V3. Compare Scroll vs zkSync vs StarkNet L2s. Type 2 zkEVM, Scroll", "url": "https://degen0x.com/ecosystem/best-projects-on-scroll", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

@@ -1011,6 +1011,7 @@ export default function CryptoMarketMakingPage() {
 
         <BackToTop />
       </main>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Market Making Guide 2026: CEX, DEX & Automated", "description": "Complete guide to crypto market making and liquidity provision. Learn CEX order book strategies, DEX AMM mechanics, impermanent loss management, market making", "url": "https://degen0x.com/learn/crypto-market-making-liquidity-provision-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

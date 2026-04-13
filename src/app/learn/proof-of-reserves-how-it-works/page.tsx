@@ -441,7 +441,8 @@ export default function ProofOfReservesExplained() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Proof of Reserves Explained: How It Works | degen0x", "description": "Learn Proof of Reserves using Merkle trees, Chainlink PoR, and third-party audits. Compare Binance, Kraken, Kraken with limitations and post-FTX adoption.", "url": "https://degen0x.com/learn/proof-of-reserves-how-it-works", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

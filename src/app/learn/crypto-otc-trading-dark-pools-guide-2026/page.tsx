@@ -950,6 +950,7 @@ export default function CryptoOTCTradingDarkPoolsPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/decentralized-identity-did-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Decentralized Identity Did Explained</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto OTC Trading & Dark Pools Guide 2026 | degen0x", "description": "Complete guide to crypto OTC trading, dark pools, and block trades. Learn how OTC desks work, top platforms like Wintermute, Cumberland, and FalconX,", "url": "https://degen0x.com/learn/crypto-otc-trading-dark-pools-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

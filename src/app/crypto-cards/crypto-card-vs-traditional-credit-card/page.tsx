@@ -481,7 +481,8 @@ export default function CryptoCardVsTraditionalCreditCard() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute financial, tax, or legal advice. Crypto card rewards and tax treatment vary by jurisdiction and individual circumstances. Consult a CPA for personalized tax guidance and a financial advisor before making investment decisions. Crypto assets are volatile; rewards received may lose value. Card terms, fees, and rewards rates change frequently—verify current details on provider websites before applying.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Card vs Traditional Credit Card: Rewards Comparison", "description": "Compare crypto debit/credit cards vs traditional cards. 4% crypto rewards, no credit check, foreign fees, tax implications, and credit building explained.", "url": "https://degen0x.com/crypto-cards/crypto-card-vs-traditional-credit-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

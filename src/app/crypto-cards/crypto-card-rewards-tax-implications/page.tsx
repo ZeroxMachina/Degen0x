@@ -560,7 +560,8 @@ export default function CryptoCardRewardsTaxImplications() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Card Rewards Tax Guide | Capital Gains & Reporting", "description": "Crypto card rewards tax implications: when rewards are taxable, capital gains on selling rewards, income reporting, and tax-efficient strategies in 2026.", "url": "https://degen0x.com/crypto-cards/crypto-card-rewards-tax-implications", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

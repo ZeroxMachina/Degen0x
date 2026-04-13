@@ -166,7 +166,8 @@ export default function CryptoTaxesFiling() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to File Crypto Taxes 2026: Complete US Tax Guide", "description": "Crypto tax guide 2026: US IRS rules, short-term vs long-term capital gains, staking/mining/airdrop income, DeFi tax implications, Form 8949, Schedule D,", "url": "https://degen0x.com/taxes/how-to-file-crypto-taxes-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/taxes/reviews/turbotax-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Turbotax Crypto</a>

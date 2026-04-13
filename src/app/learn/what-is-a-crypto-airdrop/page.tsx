@@ -244,7 +244,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Airdrops Explained: Strategy & Yield Farming", "description": "Master airdrop strategy. Learn how to identify real opportunities, avoid scams, and systematically farm airdrops for passive income in crypto.", "url": "https://degen0x.com/learn/what-is-a-crypto-airdrop", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

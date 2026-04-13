@@ -1056,6 +1056,7 @@ export default function PayFiGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/jupiter-solana-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Jupiter Solana Guide</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "PayFi & Crypto Payments Guide 2026 | degen0x", "description": "Comprehensive guide to PayFi and crypto payments infrastructure in 2026. Learn Stripe Tempo, Circle Arc, stablecoin adoption, Machine Payments Protocol, and", "url": "https://degen0x.com/learn/payfi-crypto-payments-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -473,7 +473,8 @@ export default function RealYieldDeFiProtocolsGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real Yield DeFi Protocols 2026: GMX, dYdX, Synthetix, Aave", "description": "Guide to real yield DeFi. Compare GMX ($150M+ fees distributed), dYdX, Gains Network, Synthetix, Aave, Lido staking rewards. Real yield vs inflationary yield.", "url": "https://degen0x.com/learn/real-yield-defi-protocols-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

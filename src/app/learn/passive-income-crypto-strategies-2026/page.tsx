@@ -451,7 +451,8 @@ export default function PassiveIncomeCryptoStrategies2026() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Passive Income Crypto Strategies 2026: Staking, Yield", "description": "Crypto passive income 2026: Staking (3.5-10% APY), LP fees (5-40% APY), Lending (3-8% APY), Real Yield (2-6% APY). Comparison table, risks, and strategies.", "url": "https://degen0x.com/learn/passive-income-crypto-strategies-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

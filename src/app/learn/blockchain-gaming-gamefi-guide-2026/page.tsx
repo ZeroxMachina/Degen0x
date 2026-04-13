@@ -784,6 +784,7 @@ export default function BlockchainGamingGameFiPage() {
         />
 
           <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blockchain Gaming & GameFi Guide 2026: Play-to-Own, NFTs &", "description": "Complete guide to blockchain gaming and GameFi in 2026. Learn how play-to-own models work, explore top games like Illuvium and Big Time, understand gaming", "url": "https://degen0x.com/learn/blockchain-gaming-gamefi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

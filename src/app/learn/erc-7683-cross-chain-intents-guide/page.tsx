@@ -1047,7 +1047,8 @@ export default function ERC7683GuidePage() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ERC-7683 Guide 2026: The Cross-Chain Intents Standard", "description": "Complete guide to ERC-7683 cross-chain intents standard co-authored by Uniswap Labs and Across Protocol. Learn how cross-chain intents work, the filler", "url": "https://degen0x.com/learn/erc-7683-cross-chain-intents-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
 
   );
 }

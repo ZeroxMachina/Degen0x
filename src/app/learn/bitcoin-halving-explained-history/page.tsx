@@ -854,6 +854,7 @@ export default function BitcoinHalvingPage() {
           section="learn"
         />
 
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Halving Explained: History, Dates & Price Impact", "description": "Complete guide to Bitcoin halving: how it works, historical halvings (2012, 2016, 2020, 2024), next halving in 2028, price impact, and what it means for miners", "url": "https://degen0x.com/learn/bitcoin-halving-explained-history", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

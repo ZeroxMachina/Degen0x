@@ -340,6 +340,7 @@ export default async function ArticlePage({ params }: Props) {
           </aside>
         </div>
       </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://degen0x.com/"}, {"@type": "ListItem", "position": 2, "name": "News", "item": "https://degen0x.com/news/[slug]"}, {"@type": "ListItem", "position": 3, "name": "[Slug]"}]}) }} />
+</>
   );
 }

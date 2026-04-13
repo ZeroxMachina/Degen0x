@@ -813,6 +813,7 @@ export default function DeFiVaultsGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Vaults Guide 2026 \u2014 Structured Products & Yield", "description": "DeFi vaults automate yield strategies across lending, liquidity, and options. Explore Morpho, Yearn, Pendle, and Sommelier vaults with $12B+ TVL in 2026.", "url": "https://degen0x.com/learn/defi-vaults-structured-products-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

@@ -485,6 +485,7 @@ export default function FHECryptoGuide2026() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "FHE Crypto Guide 2026: Fully Homomorphic Encryption", "description": "Fully Homomorphic Encryption lets blockchains compute on encrypted data without decrypting it. Complete 2026 guide to Zama, Fhenix, Inco, confidential DeFi,", "url": "https://degen0x.com/learn/fhe-crypto-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

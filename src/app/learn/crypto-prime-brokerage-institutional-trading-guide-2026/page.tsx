@@ -691,6 +691,7 @@ export default function Page() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/movement-network-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Movement Network Guide</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Prime Brokerage: Institutional Trading Guide 2026", "description": "Complete guide to crypto prime brokerage services for institutions. Learn how FalconX, Coinbase Prime, Hidden Road, and Anchorage compete in the prime", "url": "https://degen0x.com/learn/crypto-prime-brokerage-institutional-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

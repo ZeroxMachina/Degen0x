@@ -663,6 +663,7 @@ export default function FusakaGlamsterdamGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Fusaka & Glamsterdam Upgrade Guide 2026 | Degen0x", "description": "Complete guide to Ethereum&rsquo;s Fusaka upgrade (live Dec 2025) and Glamsterdam (2026). Learn about PeerDAS, EIPs, impact on L2 costs, and the path to full", "url": "https://degen0x.com/learn/ethereum-fusaka-glamsterdam-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

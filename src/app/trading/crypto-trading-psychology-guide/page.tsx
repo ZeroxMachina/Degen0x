@@ -401,7 +401,8 @@ export default function CryptoTradingPsychologyGuide() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Trading Psychology Guide 2026 | FOMO, Revenge", "description": "Master trading psychology: identify FOMO, revenge trading, loss aversion, overtrading, anchoring bias. Use journaling (TraderSync, Edgewonk) and discipline for", "url": "https://degen0x.com/trading/crypto-trading-psychology-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

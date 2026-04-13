@@ -662,6 +662,7 @@ export default function AaveV4GuidePage() {
         </nav>
     </main>
       <BackToTop />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave v4 Explained 2026 \u2014 Hub & Spoke Architecture | degen0x", "description": "Aave v4 rewrites DeFi", "url": "https://degen0x.com/learn/aave-v4-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

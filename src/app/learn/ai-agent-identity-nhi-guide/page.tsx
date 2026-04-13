@@ -849,6 +849,7 @@ export default function AIAgentIdentityPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/crypto-bear-market-recovery-survival-strategies-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Bear Market Recovery Survival Strategies Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI Agent Identity (NHI) Guide 2026: Non-Human Identities &", "description": "Master AI agent identity infrastructure. Learn about Non-Human Identities (NHI), Decentralized Identifiers, World AgentKit, Coinbase x402, and Know Your Agent.", "url": "https://degen0x.com/learn/ai-agent-identity-nhi-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -886,6 +886,7 @@ export default function CryptoLendingBorrowingPage() {
         />
 
           <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Lending & Borrowing Guide 2026 | DeFi Protocols", "description": "Complete guide to DeFi lending and borrowing in 2026. Learn how Aave, Morpho, and Compound work, overcollateralized loans, liquidation mechanics, and lending", "url": "https://degen0x.com/learn/crypto-lending-borrowing-defi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

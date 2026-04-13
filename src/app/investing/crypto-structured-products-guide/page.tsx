@@ -558,7 +558,8 @@ export default function CryptoStructuredProductsGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Structured Products Guide 2026: Dual Investment,", "description": "Complete guide to crypto structured products: dual investment (8-12% APY), shark fin products (70-150% participation), principal-protected yields (3-5%).", "url": "https://degen0x.com/investing/crypto-structured-products-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/best/crypto-for-beginners" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto For Beginners</a>

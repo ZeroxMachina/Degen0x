@@ -359,6 +359,7 @@ export default function FocilInclusionListsGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "FOCIL & Inclusion Lists on Ethereum Guide 2026 | Degen0x", "description": "Plain-English guide to FOCIL (EIP-7805), Ethereum", "url": "https://degen0x.com/learn/focil-inclusion-lists-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

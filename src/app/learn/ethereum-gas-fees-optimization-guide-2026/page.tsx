@@ -1076,6 +1076,7 @@ export default function EthereumGasFeesPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/lido-v3-stvaults-modular-ethereum-staking-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Lido V3 Stvaults Modular Ethereum Staking Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Gas Fees Optimization Guide 2026 \u2014 Save on Gas", "description": "Master Ethereum gas fees in 2026: EIP-1559, EIP-4844 blobs, L2 optimization, Layer 2 cost comparison, gas timing strategies, MEV protection, and 80%+ gas", "url": "https://degen0x.com/learn/ethereum-gas-fees-optimization-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

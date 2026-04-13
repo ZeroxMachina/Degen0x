@@ -621,7 +621,8 @@ export default function CryptoSentimentAnalysisInvesting() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Sentiment Analysis for Investing | Fear, Greed &", "description": "Master crypto sentiment: Fear & Greed Index (0-100 scale), LunarCrush social signals, Santiment NLP, funding rates, whale behavior & contrarian investing", "url": "https://degen0x.com/investing/crypto-sentiment-analysis-investing", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

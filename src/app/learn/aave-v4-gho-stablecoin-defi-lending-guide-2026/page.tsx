@@ -895,6 +895,7 @@ export default function AaveV4GHOPage() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave V4 & GHO Stablecoin DeFi Lending Guide 2026", "description": "Complete guide to Aave V4 launch, hub-and-spoke architecture, GHO stablecoin ecosystem, tokenomics, and multichain strategy. Learn how Aave dominates DeFi", "url": "https://degen0x.com/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -976,7 +976,8 @@ export default function CryptoKYCAMLComplianceGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto KYC, AML & Travel Rule Compliance Guide 2026", "description": "Complete guide to KYC, AML, and FATF Travel Rule compliance in crypto 2026. Learn VASP regulations, MiCA enforcement, regulatory fines, and how to stay", "url": "https://degen0x.com/learn/crypto-kyc-aml-compliance-travel-rule-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

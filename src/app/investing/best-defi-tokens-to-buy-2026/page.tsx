@@ -460,7 +460,8 @@ export default function BestDeFiTokens2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DeFi Tokens to Buy 2026", "description": "Top DeFi tokens: UNI, AAVE, MKR, LDO, PENDLE. Revenue, TVL, utility analysis.", "url": "https://degen0x.com/investing/best-defi-tokens-to-buy-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/staking/best/liquid-staking" style={{ color: "#fb923c", marginRight: "1rem" }}>Liquid Staking</a>

@@ -698,6 +698,7 @@ export default function ArbitrumStylusEcosystemGuide2026() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Arbitrum Ecosystem & Stylus Guide 2026 \u2014 L2 DeFi Leader", "description": "Complete guide to Arbitrum in 2026. Learn about Stylus (Rust/C++ smart contracts), GMX, Camelot, Pendle, Orbit chains, and why Arbitrum leads Ethereum L2 DeFi", "url": "https://degen0x.com/learn/arbitrum-stylus-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

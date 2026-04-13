@@ -590,7 +590,8 @@ export default function CryptoTaxAccountingCourse() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Tax Accounting Courses 2026: Master IRS", "description": "Crypto tax accounting courses 2026: Learn IRS Form 8949, Schedule D, DeFi taxation, NFT reporting. Free resources (IRS Pub 525, CryptoSlate) and paid courses", "url": "https://degen0x.com/courses/crypto-tax-accounting-course", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

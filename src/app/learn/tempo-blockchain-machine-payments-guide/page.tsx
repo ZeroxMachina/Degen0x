@@ -512,6 +512,7 @@ export default function TempoBlockchainMPPGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tempo Blockchain & MPP Guide 2026: Stripe", "description": "Complete guide to Tempo blockchain, the $5B payments Layer 1 backed by Stripe and Paradigm. Learn how Machine Payments Protocol (MPP) enables AI agents and", "url": "https://degen0x.com/learn/tempo-blockchain-machine-payments-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

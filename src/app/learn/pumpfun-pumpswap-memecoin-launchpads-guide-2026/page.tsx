@@ -1091,6 +1091,7 @@ export default function PumpfunPumpswapLaunchpadsPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/stablechains-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Stablechains Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Pump.fun, PumpSwap & Memecoin Launchpads Guide 2026", "description": "Complete guide to Pump.fun and PumpSwap: how bonding curves work, token graduation, DEX features, PUMP tokenomics, competitor analysis, and how to launch", "url": "https://degen0x.com/learn/pumpfun-pumpswap-memecoin-launchpads-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

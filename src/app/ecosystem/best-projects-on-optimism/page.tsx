@@ -456,7 +456,8 @@ export default function BestProjectsOnOptimism2026() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only, not financial advice. Crypto is volatile and risky. TVL and APY figures are current as of April 2026 and subject to change. Smart contract risk exists even for audited protocols. Never invest more than you can afford to lose. Always conduct your own research (DYOR) and consult a qualified financial advisor. OP Stack L2s are in active development; Superchain interop is experimental (launching Q4 2026). Regulatory risk: L2 sequencers may face regulatory pressure.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Projects on Optimism 2026: Velodrome, Synthetix, Aave", "description": "Top Optimism projects 2026. Compare Velodrome ($300M+ TVL), Synthetix ($800M+ TVL), Aave V3, Sonne Finance. OP Stack, RetroPGF funding, Bedrock upgrade.", "url": "https://degen0x.com/ecosystem/best-projects-on-optimism", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

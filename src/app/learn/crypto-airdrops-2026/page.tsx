@@ -409,6 +409,7 @@ export default function AirdropsGuidePage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Airdrops Guide 2026 \u2014 How to Find, Qualify & Claim", "description": "Complete guide to crypto airdrops in 2026. Learn how to find upcoming airdrops, qualify through protocol interaction, avoid scams, and maximize your airdrop", "url": "https://degen0x.com/learn/crypto-airdrops-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

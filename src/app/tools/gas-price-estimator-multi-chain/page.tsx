@@ -359,7 +359,8 @@ export default function GasPriceEstimatorMultiChain() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Gas prices fluctuate hourly. Never transact based on outdated estimates. Always check real-time gas tracker before executing. degen0x is not liable for gas overpayment or failed transactions.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Gas Price Estimator 2026 | Ethereum, Arbitrum,", "description": "Compare gas fees across Ethereum, Arbitrum, Polygon, Optimism, Solana. EIP-1559 base + priority fee, L2 blob costs, real-time tracker.", "url": "https://degen0x.com/tools/gas-price-estimator-multi-chain", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

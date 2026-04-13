@@ -315,6 +315,7 @@ export default async function BlogPostPage({ params }: Props) {
           </ul>
         </nav>
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://degen0x.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://degen0x.com/blog/[slug]"}, {"@type": "ListItem", "position": 3, "name": "[Slug]"}]}) }} />
+</div>
   );
 }

@@ -513,7 +513,8 @@ export default function IntentsBasedTradingExplained() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Intent-Based Trading Explained | UniswapX, CowSwap, Across", "description": "Master intent-based trading: solver networks, order flow auctions, MEV protection via UniswapX, CowSwap batch auctions, Across Protocol, and ERC-7683 standard.", "url": "https://degen0x.com/learn/intents-based-trading-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

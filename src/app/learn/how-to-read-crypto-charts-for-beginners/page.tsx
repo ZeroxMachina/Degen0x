@@ -982,6 +982,7 @@ export default function HowToReadCryptoChartsPage() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Read Crypto Charts for Beginners | Degen0x", "description": "Learn candlestick charts, chart patterns, and technical indicators. Complete guide for reading crypto charts without experience.", "url": "https://degen0x.com/learn/how-to-read-crypto-charts-for-beginners", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

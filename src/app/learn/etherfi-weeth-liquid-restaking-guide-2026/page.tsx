@@ -385,6 +385,7 @@ export default function EtherfiWeethLiquidRestakingGuide2026() {
           </p>
         </div>
       </article>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ether.fi Guide 2026 \u2014 weETH, Liquid Restaking & Cash Card", "description": "Complete 2026 guide to ether.fi: how weETH became the dominant liquid restaking token (LRT), native restaking on EigenLayer, the Liquid vault, Cash debit card,", "url": "https://degen0x.com/learn/etherfi-weeth-liquid-restaking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

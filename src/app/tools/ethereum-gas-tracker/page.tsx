@@ -346,7 +346,8 @@ export default function EthereumGasTracker() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is informational only, not financial advice. Gas prices fluctuate; estimates are approximate. Always verify fees in your wallet before confirming transactions. degen0x is not responsible for overpaid fees.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Gas Tracker 2026: Real-Time Gwei Prices & Fee", "description": "Track Ethereum gas fees in real-time. Understand gwei pricing, EIP-1559 mechanics, best times to transact, and L2 alternatives. View gas costs for swaps, NFT", "url": "https://degen0x.com/tools/ethereum-gas-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

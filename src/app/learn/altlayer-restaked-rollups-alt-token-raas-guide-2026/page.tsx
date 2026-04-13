@@ -365,6 +365,7 @@ export default function AltLayerGuide() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AltLayer Restaked Rollups Guide 2026 \u2014 RaaS & ALT Token", "description": "Complete AltLayer rollup-as-a-service (RaaS) guide for 2026. Restaked rollups, shared sequencers, ALT token economics, security, and DeFi ecosystem.", "url": "https://degen0x.com/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

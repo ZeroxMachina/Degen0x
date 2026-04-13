@@ -608,7 +608,8 @@ export default function BestProjectsOnAvalanche() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered investment advice. Avalanche projects and protocols carry smart contract risk, market risk, and regulatory risk. Always conduct your own research before depositing funds. Rates, TVLs, and token prices change frequently; this reflects April 2026 conditions. Yield farming is high-risk and unsuitable for conservative investors.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Avalanche Projects 2026: Trader Joe, AAVE, Benqi & More", "description": "Complete guide to top Avalanche projects. Explore Trader Joe ($500M TVL), AAVE V3, Benqi lending, GMX, Platypus Finance, subnets, Warp Messaging, and AVAX", "url": "https://degen0x.com/ecosystem/best-projects-on-avalanche", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

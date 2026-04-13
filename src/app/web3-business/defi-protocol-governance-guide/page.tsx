@@ -530,7 +530,8 @@ export default function DeFiProtocolGovernanceGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Protocol Governance Guide 2026 | Token Voting, ve-Model", "description": "DeFi governance frameworks: token-weighted voting (Uniswap), ve-model (Curve), delegation (Arbitrum), optimistic (Nouns), Moloch. Governance attacks, Snapshot", "url": "https://degen0x.com/web3-business/defi-protocol-governance-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

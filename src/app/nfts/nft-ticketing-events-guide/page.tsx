@@ -666,7 +666,8 @@ export default function NFTTicketingGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Ticketing Events Guide 2026: GET Protocol, YellowHeart,", "description": "Complete guide to NFT event ticketing: anti-scalping with GET Protocol, creator royalties, YellowHeart for artists, and Ticketmaster integration. Prevent", "url": "https://degen0x.com/nfts/nft-ticketing-events-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/nfts/reviews/x2y2" style={{ color: "#fb923c", marginRight: "1rem" }}>X2y2</a>

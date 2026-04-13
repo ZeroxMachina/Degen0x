@@ -629,7 +629,8 @@ export default function CryptoSwingTradingStrategy() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Swing Trading Strategy 2026: 4H/Daily Setup Guide", "description": "Master crypto swing trading with 4H and daily chart setups. Learn support/resistance, moving average trends, breakout patterns, and position sizing with real", "url": "https://degen0x.com/trading/crypto-swing-trading-strategy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

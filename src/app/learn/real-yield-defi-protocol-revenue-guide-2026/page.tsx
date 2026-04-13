@@ -817,6 +817,7 @@ export default function RealYieldDeFiGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/parallel-evm-explained-monad-sei" style={{ color: "#fb923c", marginRight: "1rem" }}>Parallel Evm Explained Monad Sei</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real Yield in DeFi 2026: Protocol Revenue vs Token Emissions", "description": "Understand real yield in DeFi \u2014 how protocols like Aave, GMX, Ethena, and Pendle generate sustainable returns from actual revenue, not inflationary token", "url": "https://degen0x.com/learn/real-yield-defi-protocol-revenue-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

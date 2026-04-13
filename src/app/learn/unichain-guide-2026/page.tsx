@@ -910,6 +910,7 @@ export default function UniChainGuidePage() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Unichain Guide 2026: What Is Uniswap\\", "description": "Complete guide to Unichain, Uniswap\\", "url": "https://degen0x.com/learn/unichain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

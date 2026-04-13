@@ -996,6 +996,7 @@ export default function LayerZeroProtocolPage() {
           section="learn"
         />
 
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "LayerZero Omnichain Interoperability Protocol Guide 2026", "description": "Complete guide to LayerZero V2 architecture, DVNs, OFT standards, and omnichain messaging across 120+ blockchains. Learn ZRO tokenomics, ecosystem", "url": "https://degen0x.com/learn/layerzero-omnichain-interoperability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

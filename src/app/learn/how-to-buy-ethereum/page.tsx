@@ -448,6 +448,7 @@ export default function HowToBuyEthereumPage() {
           }}
         />
       </article>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Buy Ethereum (ETH) in 2026: Step-by-Step Guide", "description": "Learn how to buy Ethereum step by step. Compare the best exchanges, set up a wallet, and stay safe. Updated for 2026 \u2014 beginner-friendly guide.", "url": "https://degen0x.com/learn/how-to-buy-ethereum", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

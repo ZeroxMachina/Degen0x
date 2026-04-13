@@ -506,7 +506,8 @@ export default function BitcoinTaprootGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Taproot Upgrade Explained 2026: Schnorr, MAST,", "description": "Complete Taproot guide 2026: Schnorr signatures 65 bytes, MAST smart contracts, privacy improvements, Ordinals, 25% adoption, Lightning Network, BIP", "url": "https://degen0x.com/learn/bitcoin-taproot-upgrade-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

@@ -579,6 +579,7 @@ export default function BaseChainEcosystemGuide2026() {
           </p>
         </div>
       </article>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Base Chain Ecosystem Guide 2026 \u2014 Coinbase Layer 2 Explained", "description": "Complete guide to Base, Coinbase\\", "url": "https://degen0x.com/learn/base-chain-coinbase-layer-2-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

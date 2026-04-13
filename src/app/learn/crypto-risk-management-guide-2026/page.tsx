@@ -987,6 +987,7 @@ export default function CryptoRiskManagementGuide2026() {
       </article>
         <BackToTop />
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Risk Management Guide 2026 \u2014 Protect Your Portfolio", "description": "Master crypto risk management in 2026. Learn position sizing, portfolio diversification, DeFi liquidation protection, smart contract risk assessment, and", "url": "https://degen0x.com/learn/crypto-risk-management-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

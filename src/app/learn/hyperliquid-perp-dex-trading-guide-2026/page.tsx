@@ -1055,6 +1055,7 @@ export default function HyperliquidPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/rwa-yield-vs-defi-yield-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Rwa Yield Vs Defi Yield Comparison 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hyperliquid Guide 2026 \u2014 Perp DEX Trading & HYPE Token", "description": "Master Hyperliquid Protocol: 150+ perp markets, 50x leverage, zero-fee spot trading, HYPE tokenomics, HyperEVM, and L1 blockchain trading\u2014with sub-second", "url": "https://degen0x.com/learn/hyperliquid-perp-dex-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

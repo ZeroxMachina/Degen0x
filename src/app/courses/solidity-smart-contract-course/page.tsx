@@ -459,7 +459,8 @@ export default function SoliditySmartContractCourse() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Solidity Smart Contract Courses 2026: From Beginner to", "description": "Complete Solidity courses 2026: CryptoZombies, Udemy, Coursera. Learn Ethereum smart contracts, ERC20/ERC721, gas optimization, security auditing. Beginner to", "url": "https://degen0x.com/courses/solidity-smart-contract-course", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/courses/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>

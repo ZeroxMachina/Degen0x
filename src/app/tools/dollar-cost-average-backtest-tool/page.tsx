@@ -480,7 +480,8 @@ export default function DCABacktestTool() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute investment advice. DCA backtests are historical simulations that do not guarantee future results. Cryptocurrency markets are highly volatile; past performance does not indicate future gains. Consult a financial advisor before implementing DCA strategies with real money.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DCA Backtest Tool Guide: Bitcoin & Ethereum Historical", "description": "Backtest dollar-cost averaging strategies on BTC and ETH with historical data. Compare daily vs weekly vs monthly DCA returns, analyze lump sum vs DCA", "url": "https://degen0x.com/tools/dollar-cost-average-backtest-tool", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

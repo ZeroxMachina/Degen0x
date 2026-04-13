@@ -596,7 +596,8 @@ export default function CryptoMarketCapGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Market Cap Explained 2026: Calculation, Circulating", "description": "Master crypto market cap: calculation formula, circulating vs total vs fully diluted valuation (FDV), market cap tiers (large >$10B, mid $1-10B, small <$1B).", "url": "https://degen0x.com/learn/crypto-market-cap-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

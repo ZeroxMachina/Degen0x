@@ -336,7 +336,8 @@ export default function NoKycCryptoExchange() {
             <strong style={{ color: '#f59e0b' }}>Disclosure:</strong> Exchange reviews reflect our team&apos;s independent testing. We may earn referral fees from some exchanges, which never influence our ratings.
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "No KYC Crypto Exchange Guide 2026: DEX, P2P & Privacy CEX", "description": "Discover no-KYC crypto exchanges: Uniswap, dYdX, Jupiter DEXs, Bisq, HodlHodl P2P platforms. Compare features, fees, liquidity, privacy levels. Trade", "url": "https://degen0x.com/exchanges/no-kyc-crypto-exchange", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/exchanges/gate-io" style={{ color: "#fb923c", marginRight: "1rem" }}>Gate Io</a>

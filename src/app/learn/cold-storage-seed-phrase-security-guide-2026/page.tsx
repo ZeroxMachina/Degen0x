@@ -698,6 +698,7 @@ export default function ColdStorageSeedPhraseSecurityGuidePage() {
           }}
         />
       </article>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cold Storage & Seed Phrase Security Guide 2026: Hardware", "description": "Complete guide to cold storage, hardware wallets, and seed phrase security in 2026. Learn Ledger vs Trezor, backup strategies, multi-sig setups, and", "url": "https://degen0x.com/learn/cold-storage-seed-phrase-security-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

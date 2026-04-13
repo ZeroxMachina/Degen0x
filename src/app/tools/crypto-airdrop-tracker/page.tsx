@@ -459,7 +459,8 @@ export default function CryptoAirdropTracker() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute investment or financial advice. Airdrops are speculative; past airdrop values do not guarantee future results. Farming airdrops carries risks: smart contract vulnerabilities, impermanent loss, sybil detection bans, and token value collapse. Never invest more than you can afford to lose. Verify all claims and links directly from official project sources. Consult a financial advisor before executing airdrop farming strategies with significant capital.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker", "description": "Track eligible crypto airdrops with Earni.fi, DeBank, and airdrop.io. Check LayerZero, Arbitrum, Optimism eligibility. Qualify for airdrops: bridge, swap,", "url": "https://degen0x.com/tools/crypto-airdrop-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

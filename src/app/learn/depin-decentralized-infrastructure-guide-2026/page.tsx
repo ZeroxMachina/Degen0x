@@ -568,6 +568,7 @@ export default function DePINGuidePage() {
           </p>
         </div>
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DePIN: Decentralized Infrastructure Guide 2026 | degen0x", "description": "Complete guide to DePIN (Decentralized Physical Infrastructure Networks) \u2014 $10-19B market, 250+ projects, Filecoin, Render, Helium, Hivemapper, and earning", "url": "https://degen0x.com/learn/depin-decentralized-infrastructure-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

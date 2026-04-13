@@ -541,7 +541,8 @@ export default function CryptoTaxByStateComparison() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tax by State Comparison 2026 | No-Tax States vs", "description": "State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining", "url": "https://degen0x.com/taxes/crypto-tax-by-state-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

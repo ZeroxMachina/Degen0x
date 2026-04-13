@@ -447,6 +447,7 @@ export default function AIAgentPaymentsGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "x402 Protocol & AI Agent Payments Guide 2026: How Agents", "description": "How AI agents pay for services using the x402 protocol, USDC, and Coinbase Agentic Wallets. Complete 2026 guide to autonomous payments, ERC-8004 identity, and", "url": "https://degen0x.com/learn/ai-agent-payments-x402-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

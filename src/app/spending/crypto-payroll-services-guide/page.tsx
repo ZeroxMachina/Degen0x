@@ -531,7 +531,8 @@ export default function CryptoPayrollServicesGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Payroll Services Guide: Bitwage, Deel, Request", "description": "Compare crypto payroll platforms for employer payments, contractor compensation, tax withholding, and IRS reporting. Bitwage, Deel, Request Finance reviewed.", "url": "https://degen0x.com/spending/crypto-payroll-services-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

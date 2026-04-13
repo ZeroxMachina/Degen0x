@@ -694,7 +694,8 @@ export default function CompoundV3UsedcLendingGuide() {
             <strong style={{ color: '#c084fc' }}>DeFi risk warning:</strong> Lending protocols carry smart contract risk, liquidation risk, and oracle risk.
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Compound V3 USDC Lending Guide 2026: Comet, Rates & Rewards", "description": "Complete Compound V3 (Comet) guide for USDC lending. Learn about single-asset model, collateral assets (WETH, WBTC, COMP), supply rates, cross-chain deployment.", "url": "https://degen0x.com/defi-lending/compound-v3-usdc-lending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

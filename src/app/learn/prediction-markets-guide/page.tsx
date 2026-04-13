@@ -279,6 +279,7 @@ export default function PredictionMarketsGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Prediction Markets: The Complete Guide to Event Trading", "description": "Learn how crypto prediction markets work, explore top platforms like Polymarket, understand strategies for trading on real-world events, and manage risk", "url": "https://degen0x.com/learn/prediction-markets-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

@@ -587,7 +587,8 @@ export default function CryptoOnChainAnalysisInvesting() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-Chain Analysis for Crypto Investing: Glassnode, Nansen,", "description": "Master on-chain investing metrics: MVRV ratio, SOPR, NVT, exchange flows, whale tracking. Use Glassnode, Nansen, Dune Analytics for cycle tops/bottoms and", "url": "https://degen0x.com/investing/crypto-onchain-analysis-investing", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/staking/reviews/marinade" style={{ color: "#fb923c", marginRight: "1rem" }}>Marinade</a>

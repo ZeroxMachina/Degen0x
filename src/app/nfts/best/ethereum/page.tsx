@@ -185,6 +185,7 @@ export default function BestForEthereumPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "For Professional Traders", "description": "Compare the best Ethereum NFT marketplaces in ${CURRENT_YEAR}. Trade blue-chip collections, digital art, and more on the most established NFT blockchain.", "url": "https://degen0x.com/nfts/best/ethereum", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -1009,6 +1009,7 @@ export default function JitoGuide() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Jito Protocol Guide 2026 \u2014 Solana MEV & Liquid Staking", "description": "Comprehensive guide to Jito Protocol: MEV optimization, liquid staking with JitoSOL, JTO governance token, and institutional adoption on Solana.", "url": "https://degen0x.com/learn/jito-solana-mev-liquid-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

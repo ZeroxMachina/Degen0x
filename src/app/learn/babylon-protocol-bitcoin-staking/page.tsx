@@ -1030,6 +1030,7 @@ export default function BabylonProtocolGuidePage() {
           <a href="/learn/starknet-validity-rollup-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Starknet Validity Rollup Guide 2026</a>
         </nav>
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Babylon Protocol: Bitcoin Staking Guide 2026 | degen0x", "description": "How to stake Bitcoin natively with Babylon Protocol \u2014 no bridges, no wrapping, full self-custody. Covers BABY token rewards, risks, and step-by-step", "url": "https://degen0x.com/learn/babylon-protocol-bitcoin-staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

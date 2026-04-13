@@ -451,7 +451,8 @@ export default function HowToMintNFTStepByStep() {
             </p>
           </div>
         </section>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Mint NFT Step-by-Step 2026: Prepare Artwork, Choose", "description": "Mint NFT guide: prepare artwork (PNG/GIF/video), choose blockchain (Ethereum $50-500 gas, Solana <$1, Polygon $1-5), select marketplace (OpenSea, Magic Eden),", "url": "https://degen0x.com/nfts/how-to-mint-nft-step-by-step", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

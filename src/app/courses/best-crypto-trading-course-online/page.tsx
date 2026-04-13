@@ -462,7 +462,8 @@ export default function BestCryptoTradingCourse() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute financial or investment advice. Cryptocurrency trading is highly risky and most retail traders lose money. Educational courses teach strategies but cannot guarantee profits. Only trade with capital you can afford to lose. Consult a financial advisor before trading. degen0x is not liable for losses from cryptocurrency trading.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Trading Courses Online 2026 | degen0x", "description": "Compare crypto trading courses: Investopedia Academy, Udemy, Coursera, Ivan on Tech Academy, CryptoCred. Technical analysis, fundamental analysis, paper", "url": "https://degen0x.com/courses/best-crypto-trading-course-online", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

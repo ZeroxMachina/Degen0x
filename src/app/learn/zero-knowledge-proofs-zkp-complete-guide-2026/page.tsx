@@ -973,6 +973,7 @@ export default function ZeroKnowledgeProofsGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Zero-Knowledge Proofs Guide 2026: ZKP, SNARKs & STARKs", "description": "Complete Zero-Knowledge Proofs (ZKP) guide 2026: zk-SNARKs vs zk-STARKs, ZK rollups, Starknet, zkSync, Polygon zkEVM, Scroll, Linea, privacy in DeFi, ZK-ID", "url": "https://degen0x.com/learn/zero-knowledge-proofs-zkp-complete-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

@@ -623,6 +623,7 @@ export default function BtcfiYieldStrategiesGuide2026() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BTCFi Yield Strategies 2026 \u2014 How to Earn Yield on Bitcoin", "description": "Explore the best strategies to earn yield on your Bitcoin in 2026. Compare Babylon staking, Lombard LBTC, SolvBTC, BounceBit, and more with real TVL and APY", "url": "https://degen0x.com/learn/btcfi-yield-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

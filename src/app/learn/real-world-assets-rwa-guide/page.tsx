@@ -506,6 +506,7 @@ export default function RWAGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real World Assets (RWA) in Crypto: Complete Guide", "description": "Learn how real-world assets are being tokenized on blockchain. Explore RWA protocols, treasury tokenization, and the regulatory landscape shaping this emerging", "url": "https://degen0x.com/learn/real-world-assets-rwa-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

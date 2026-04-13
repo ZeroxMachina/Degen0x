@@ -1061,6 +1061,7 @@ export default function MorphoProtocolPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Morpho Protocol DeFi Lending Innovation Guide 2026", "description": "Complete guide to Morpho Protocol - the 2nd largest DeFi lending platform with $6.9B+ TVL. Learn about Morpho Blue, MetaMorpho vaults, institutional adoption,", "url": "https://degen0x.com/learn/morpho-protocol-defi-lending-innovation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

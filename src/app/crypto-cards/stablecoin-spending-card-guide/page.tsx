@@ -493,7 +493,8 @@ export default function StablecoinSpendingCardGuide() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute financial, tax, or investment advice. Stablecoin card features, fees, and limits change frequently. Verify current terms with each provider before opening an account. Tax treatment of rewards and conversions varies by jurisdiction—consult a tax professional. All information is accurate as of April 2026.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Spending Card Guide 2026: Crypto.com, Nexo,", "description": "Best crypto spending cards for stablecoins: Crypto.com Visa, Nexo card, Wirex USDC card. Auto-conversion at POS, rewards, fees, ATM limits, and tax", "url": "https://degen0x.com/crypto-cards/stablecoin-spending-card-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

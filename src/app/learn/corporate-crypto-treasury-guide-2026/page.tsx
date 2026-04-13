@@ -1524,6 +1524,7 @@ export default function CorporatoCryptoTreasuryGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Corporate Crypto Treasury Guide 2026", "description": "Explore digital asset treasury companies (DATCos) in 2026. Compare top BTC and ETH treasury companies, business models, NAV premiums, and risks.", "url": "https://degen0x.com/learn/corporate-crypto-treasury-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

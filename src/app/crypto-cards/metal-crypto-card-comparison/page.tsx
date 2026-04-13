@@ -572,7 +572,8 @@ export default function MetalCryptoCardComparison() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Premium Metal Crypto Cards: Obsidian vs Coinbase One vs", "description": "Compare premium metal crypto cards in 2026: Crypto.com Obsidian, Coinbase One, Gemini Card. See rewards, fees, cashback rates, and tier benefits.", "url": "https://degen0x.com/crypto-cards/metal-crypto-card-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-cards/best/high-spenders" style={{ color: "#fb923c", marginRight: "1rem" }}>High Spenders</a>

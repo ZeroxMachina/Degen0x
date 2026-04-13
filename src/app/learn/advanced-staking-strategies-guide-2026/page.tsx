@@ -462,6 +462,7 @@ export default function AdvancedStakingStrategiesGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Advanced Staking Strategies Guide 2026: LST, LRT & Real", "description": "Master advanced staking strategies including LST/LRT optimization, real yield vs headline APY, validator diversification, and compounding techniques for", "url": "https://degen0x.com/learn/advanced-staking-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -602,6 +602,7 @@ export default function BitcoinLayer2Guide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Layer 2 Solutions: Lightning, Stacks & Beyond", "description": "Understand why Bitcoin needs L2s, explore Lightning Network, Stacks, RSK, and emerging solutions. Compare solutions and their use cases.", "url": "https://degen0x.com/learn/bitcoin-layer-2-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

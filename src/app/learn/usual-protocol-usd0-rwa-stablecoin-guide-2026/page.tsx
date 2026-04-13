@@ -260,6 +260,7 @@ export default function UsualProtocolGuide() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Usual Protocol USD0 RWA Stablecoin Guide 2026", "description": "Usual Protocol USD0: Real-World Assets stablecoin backed by US Treasury bonds. Learn mechanics, yield generation, tokenomics, and risks in 2026.", "url": "https://degen0x.com/learn/usual-protocol-usd0-rwa-stablecoin-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

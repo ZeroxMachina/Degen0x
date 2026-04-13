@@ -413,7 +413,8 @@ export default function BitcoinRainbowChart() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only, not financial advice. The Bitcoin Rainbow Chart is a tool, not a guarantee. Past performance does not predict future results. Always conduct your own research and consult financial advisors. degen0x is not responsible for trading losses.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Rainbow Chart 2026: Trading Guide & Historical", "description": "Understand the Bitcoin Rainbow Chart logarithmic regression bands. Learn how traders use it for DCA timing, market cycles, and when to buy/sell in 2026.", "url": "https://degen0x.com/tools/bitcoin-rainbow-chart", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

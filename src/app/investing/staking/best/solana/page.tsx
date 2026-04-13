@@ -193,6 +193,7 @@ export default function BestSolanaStakingPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Solana Staking Platforms of 2026 (Compared)", "description": "Compare the best Solana staking platforms in ${CURRENT_YEAR}. Jito, Marinade, and Coinbase compared for yields, fees, and DeFi composability.", "url": "https://degen0x.com/investing/staking/best/solana", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

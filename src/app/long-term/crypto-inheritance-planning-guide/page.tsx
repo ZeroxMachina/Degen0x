@@ -472,7 +472,8 @@ export default function CryptoInheritancePlanningGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Inheritance Planning Guide 2026: Seed Phrases,", "description": "Plan crypto inheritance: seed phrase inheritance (dead mans switch, Shamir Secret Sharing), multi-sig trusts, Casa, Unchained Capital, step-up in cost basis,", "url": "https://degen0x.com/long-term/crypto-inheritance-planning-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

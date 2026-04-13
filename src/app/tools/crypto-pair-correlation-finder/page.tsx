@@ -354,7 +354,8 @@ export default function CryptoPairCorrelationFinder() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only. Correlation data is subject to change hourly. Historical correlations do not predict future relationships. Never rely solely on correlation for portfolio decisions. Always conduct independent research and consult a financial advisor.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Pair Correlation Finder 2026 | BTC ETH Correlation", "description": "Analyze cryptocurrency correlation matrices. BTC/ETH correlation ~0.85, altcoin clusters, portfolio diversification. Tools: IntoTheBlock, CoinMetrics, Messari.", "url": "https://degen0x.com/tools/crypto-pair-correlation-finder", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

@@ -828,6 +828,7 @@ export default function MonadBlockchainGuide() {
         />
       </article>
       <BackToTop />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Monad Blockchain Guide: 10,000 TPS EVM L1 Explained 2026", "description": "Monad mainnet launched November 2025 with 10,000 TPS and 0.8s finality. Learn how its optimistic parallel execution works, MON token tokenomics, DeFi", "url": "https://degen0x.com/learn/monad-blockchain-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

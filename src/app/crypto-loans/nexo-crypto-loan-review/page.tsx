@@ -513,7 +513,8 @@ export default function NexoReview() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nexo Crypto Loan Review 2026 | 0% with NEXO, 13.9% Standard", "description": "Nexo crypto loans: 0% APR with NEXO token, 5.9-13.9% standard, 15-50% LTV, 40+ collateral assets, instant credit line. Lloyds insured.", "url": "https://degen0x.com/crypto-loans/nexo-crypto-loan-review", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-loans/crypto-loan-for-real-estate" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Loan For Real Estate</a>

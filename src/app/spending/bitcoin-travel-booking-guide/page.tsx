@@ -550,7 +550,8 @@ export default function BitcoinTravelBookingGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Travel Booking Guide: Book Hotels & Flights with", "description": "Book travel with Bitcoin and stablecoins. Travala, CheapAir, Booking.com integration. Compare crypto travel platforms and learn tax implications.", "url": "https://degen0x.com/spending/bitcoin-travel-booking-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

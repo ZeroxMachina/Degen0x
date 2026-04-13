@@ -553,7 +553,8 @@ export default function CryptoTravelCardGuide() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and does not constitute financial advice. Crypto cards come with tax, custody, and regulatory risks. Consult a tax professional regarding spending crypto abroad (taxable event). degen0x is not liable for tax consequences or financial losses from crypto travel card usage.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Travel Cards 2026: Zero FX Fees, Lounge Access &", "description": "Best crypto travel cards: Crypto.com Visa (airport lounges, no FX fees), Coinbase Card, Binance Card, Wirex, Nexo. Compare rewards, ATM limits, and travel", "url": "https://degen0x.com/crypto-cards/crypto-travel-card-best-options", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

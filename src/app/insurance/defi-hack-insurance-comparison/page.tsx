@@ -350,7 +350,8 @@ export default function DeFiHackInsuranceComparison() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and is not investment, insurance, or financial advice. DeFi hack insurance does not cover all risk types and claim approval varies by protocol. Claims processing takes 1-3 weeks minimum. Past hack frequency does not guarantee future claims will be approved. Payouts may be pro-rated if claim volume exceeds protocol capacity. Do your own research (DYOR) and read insurance terms carefully before purchasing. Consult a licensed insurance advisor for personalized recommendations.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Hack Insurance Comparison 2026 | Nexus Mutual,", "description": "DeFi hack insurance: Nexus Mutual exploit cover, InsurAce protection, Neptune Mutual parametric claims, Unslashed. Compare coverage, payouts, claim speed,", "url": "https://degen0x.com/insurance/defi-hack-insurance-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

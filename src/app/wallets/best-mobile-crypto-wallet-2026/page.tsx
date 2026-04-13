@@ -212,7 +212,8 @@ export default function BestMobileCryptoWallet() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Mobile Crypto Wallet 2026: Trust Wallet, MetaMask,", "description": "Compare mobile wallets: Trust Wallet (70M users), MetaMask Mobile, Phantom, Coinbase Wallet, Zerion, Rainbow, Exodus.", "url": "https://degen0x.com/wallets/best-mobile-crypto-wallet-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

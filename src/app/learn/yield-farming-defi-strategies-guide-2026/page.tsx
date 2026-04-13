@@ -1025,6 +1025,7 @@ export default function YieldFarmingPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/kaito-ai-infofi-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Kaito Ai Infofi Guide</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Yield Farming & DeFi Strategies Guide 2026 | degen0x", "description": "Master DeFi yield farming in 2026: Curve, Lido, Pendle, Beefy, Yearn, stablecoin strategies, auto-compounding vaults, cross-chain farming, and risk management.", "url": "https://degen0x.com/learn/yield-farming-defi-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

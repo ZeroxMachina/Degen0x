@@ -593,6 +593,7 @@ export default function InitiaBlockchainGuide() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Initia (INIT) Guide 2026: Modular Blockchain With", "description": "Initia explained: how the Interwoven Stack, Minitias (L2 rollups), and Omnitia architecture unify modular blockchains. INIT tokenomics, ecosystem, and 2026", "url": "https://degen0x.com/learn/initia-blockchain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

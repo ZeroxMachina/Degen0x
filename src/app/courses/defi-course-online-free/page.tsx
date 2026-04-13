@@ -437,7 +437,8 @@ export default function DeFiCourseOnlineFreeExpanded() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Free DeFi Courses 2026: Uniswap, Aave, Yield Farming,", "description": "Free DeFi courses 2026. Master decentralized finance: AMM mechanics, Uniswap V4, Aave lending, MakerDAO stablecoins, yield farming, liquidity pools, risk", "url": "https://degen0x.com/courses/defi-course-online-free", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

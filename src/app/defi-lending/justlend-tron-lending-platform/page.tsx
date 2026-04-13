@@ -388,7 +388,8 @@ export default function JustlendTronLendingPlatform() {
             <strong style={{ color: '#c084fc' }}>DeFi risk warning:</strong> Lending protocols carry smart contract risk, liquidation risk, and oracle risk.
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Justlend Tron Lending Platform | degen0x", "description": "Justlend Tron Lending Platform guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.", "url": "https://degen0x.com/defi-lending/justlend-tron-lending-platform", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

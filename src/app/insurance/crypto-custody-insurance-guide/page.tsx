@@ -730,7 +730,8 @@ export default function CryptoCustodyInsuranceGuide() {
           audit reports before selecting a custodian. Past coverage does not guarantee future solvency or
           coverage availability.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Custody Insurance Guide 2026: Coinbase, Fireblocks", "description": "Complete crypto custody insurance guide. Institutional custody (Coinbase $320B+ AUM, Fireblocks $4B+ insured), Lloyd\\", "url": "https://degen0x.com/insurance/crypto-custody-insurance-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

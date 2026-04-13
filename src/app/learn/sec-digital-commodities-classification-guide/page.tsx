@@ -708,6 +708,7 @@ export default function SECDigitalCommoditiesPage() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SEC Digital Commodities List 2026: All 16 Crypto Assets", "description": "The SEC & CFTC joint interpretation (March 2026) classified 16 digital commodities: Bitcoin, Ethereum, Solana, and 13 others. Learn the 5-category token", "url": "https://degen0x.com/learn/sec-digital-commodities-classification-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -731,6 +731,7 @@ export default function YieldTokenizationGuide() {
         </div>
       </div>
     </main>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Yield Tokenization Guide 2026 \u2014 PT/YT Tokens & Best", "description": "Master yield tokenization: PT/YT tokens, Pendle Finance, fixed yield strategies & leveraged yield exposure in 2026. Complete DeFi guide.", "url": "https://degen0x.com/learn/yield-tokenization-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

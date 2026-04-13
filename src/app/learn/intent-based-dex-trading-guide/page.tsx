@@ -791,6 +791,7 @@ export default function IntentBasedDexTradingGuidePage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Intent-Based DEX Trading Guide 2026: UniswapX, CoW Swap &", "description": "Learn how intent-based DEX trading works in 2026. Understand solver auctions, MEV protection, and how CoW Swap, UniswapX, and 1inch Fusion deliver better", "url": "https://degen0x.com/learn/intent-based-dex-trading-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

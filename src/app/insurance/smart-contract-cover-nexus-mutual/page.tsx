@@ -373,7 +373,8 @@ export default function NexusMutualSmartContractCover() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and is not insurance, investment, or financial advice. Nexus Mutual smart contract cover is provided by a decentralized community, not a licensed insurance company. Claims are decided by member voting, not professional underwriters. Cover may be denied for reasons unclear upfront. Claims processing takes 2-3 weeks minimum. Staking NXM involves capital risk and potential loss. Do your own research (DYOR) and understand cover terms before purchasing or staking. Consult a licensed insurance advisor for personalized insurance needs.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nexus Mutual Smart Contract Cover 2026 | NXM Staking,", "description": "Complete guide to Nexus Mutual: $500M+ active smart contract cover, NXM staking, member voting claims, pricing models, cover types for DeFi.", "url": "https://degen0x.com/insurance/smart-contract-cover-nexus-mutual", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

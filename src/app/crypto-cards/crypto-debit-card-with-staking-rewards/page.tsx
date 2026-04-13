@@ -429,7 +429,8 @@ export default function StakingRewardsCards() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Debit Cards with Staking Rewards 2026 | Lido, Rocket", "description": "Crypto debit cards with integrated staking: earn while spending. Lido stETH, Rocket Pool rETH, and staking-enabled cards. Rewards rates, APY, and best options.", "url": "https://degen0x.com/crypto-cards/crypto-debit-card-with-staking-rewards", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-cards/compare/wirex-vs-plutus" style={{ color: "#fb923c", marginRight: "1rem" }}>Wirex Vs Plutus</a>

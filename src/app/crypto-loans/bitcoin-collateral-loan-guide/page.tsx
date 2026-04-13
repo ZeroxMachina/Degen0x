@@ -440,7 +440,8 @@ export default function BitcoinCollateralLoanGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Collateral Loans 2026: Nexo, Ledn, Unchained", "description": "Bitcoin collateral loan guide. Compare Nexo vs BlockFi vs Ledn. BTC loan rates 5.9-7.5%, LTV 50-60%, fast approval, no credit check required.", "url": "https://degen0x.com/crypto-loans/bitcoin-collateral-loan-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

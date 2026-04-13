@@ -934,6 +934,7 @@ export default function CryptoPortfolioRebalancingGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/corporate-crypto-treasury-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Corporate Crypto Treasury Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Portfolio Rebalancing Guide 2026 \u2014 Strategies & Tools", "description": "Master crypto portfolio rebalancing: time-based vs threshold strategies, diversification framework, automated tools, tax implications, and proven 1-3% annual", "url": "https://degen0x.com/learn/crypto-portfolio-rebalancing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

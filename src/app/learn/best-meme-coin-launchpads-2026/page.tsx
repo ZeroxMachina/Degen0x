@@ -690,6 +690,7 @@ export default function BestMemeCoinLaunchpads2026() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Meme Coin Launchpads 2026: Pump.fun, Clanker, LetsBonk", "description": "Compare the top meme coin launchpad platforms in 2026. Pump.fun vs LetsBonk vs Clanker and more \u2014 fees, chains, features, and which platform to use.", "url": "https://degen0x.com/learn/best-meme-coin-launchpads-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

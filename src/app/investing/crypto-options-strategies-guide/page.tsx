@@ -557,7 +557,8 @@ export default function CryptoOptionsStrategiesGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Options Strategies Guide: Covered Calls, Puts &", "description": "Master crypto options strategies on Deribit, Lyra, and Premia. Real BTC/ETH examples, strike prices, and when to use covered calls, puts, straddles, and iron", "url": "https://degen0x.com/investing/crypto-options-strategies-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/crypto/fantom" style={{ color: "#fb923c", marginRight: "1rem" }}>Fantom</a>

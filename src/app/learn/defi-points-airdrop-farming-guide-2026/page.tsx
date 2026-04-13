@@ -650,6 +650,7 @@ export default function DefiPointsAirdropFarmingGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Points & Airdrop Farming Guide 2026: How Points Work,", "description": "Master DeFi points farming in 2026. Learn how protocol points work, the best airdrop farming strategies, anti-Sybil detection, SEC guidance on airdrops, and", "url": "https://degen0x.com/learn/defi-points-airdrop-farming-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

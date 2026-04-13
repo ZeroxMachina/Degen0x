@@ -696,6 +696,7 @@ export default function DataAvailabilityGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Data Availability Layer Guide 2026: Celestia vs EigenDA vs", "description": "Compare Celestia, EigenDA, and Avail \u2014 the three DA layers powering Ethereum", "url": "https://degen0x.com/learn/data-availability-layer-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

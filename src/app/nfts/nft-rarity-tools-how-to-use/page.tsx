@@ -453,7 +453,8 @@ export default function NFTRarityToolsHowToUse() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> Rarity tool data is estimates; blockchain data may lag. Sniping involves risk: capital loss, illiquid positions, market collapse. Past profitability doesn&apos;t guarantee future results. Use tools for analysis only, not financial advice.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Rarity Tools 2026: Rarity.tools, HowRare, IcyTools", "description": "NFT rarity tools comparison: Rarity.tools, Trait Sniper, HowRare.is (Solana), IcyTools, NFTGo. Rarity scoring, sniping strategies, floor price correlation.", "url": "https://degen0x.com/nfts/nft-rarity-tools-how-to-use", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

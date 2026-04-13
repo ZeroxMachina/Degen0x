@@ -631,6 +631,7 @@ export default function SolanaAlpenglowGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Alpenglow Guide 2026 \u2014 150ms Finality Explained", "description": "Solana", "url": "https://degen0x.com/learn/solana-alpenglow-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

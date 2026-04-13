@@ -389,7 +389,8 @@ export default function BestBitcoinOnlyWallet() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Bitcoin-Only Wallets 2026 | Coldcard, BitBox02, Sparrow", "description": "Compare Bitcoin-only wallets: Coldcard Mk4 ($157), BitBox02 ($139), Blockstream Jade ($65), Sparrow, Blue Wallet. PSBT support, CoinJoin, BIP-47 PayNyms, UTXO", "url": "https://degen0x.com/wallets/best-bitcoin-only-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

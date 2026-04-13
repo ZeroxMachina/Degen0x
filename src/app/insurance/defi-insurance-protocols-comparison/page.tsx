@@ -636,7 +636,8 @@ export default function DeFiInsuranceProtocolsComparison() {
           limitations. Always review protocol documentation, claim conditions, and audit reports before
           purchasing cover. Past claim payouts do not guarantee future solvency.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Insurance Protocol Comparison 2026: Nexus Mutual vs", "description": "Compare DeFi insurance protocols with active cover amounts, claims data, and pricing. Nexus Mutual ($500M+ cover, NXM staking), InsurAce (20+ chains), Neptune", "url": "https://degen0x.com/insurance/defi-insurance-protocols-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

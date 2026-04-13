@@ -247,7 +247,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Analytics: Master Blockchain Data Intelligence", "description": "Complete guide to onchain analytics tools like Dune, Nansen, and Glassnode. Track whale wallets, smart money flows, and DeFi metrics for informed crypto", "url": "https://degen0x.com/learn/onchain-analytics-blockchain-data-intelligence-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

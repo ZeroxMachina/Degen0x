@@ -908,7 +908,8 @@ contract MyToken is ERC20 {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Monad Blockchain Guide 2026 \u2014 Parallel EVM Layer 1 Explained", "description": "Complete guide to Monad: a 10,000 TPS, fully EVM-compatible Layer 1 blockchain. Learn MonadBFT consensus, parallel execution, architecture, ecosystem, MON", "url": "https://degen0x.com/learn/monad-parallel-evm-layer-1-blockchain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

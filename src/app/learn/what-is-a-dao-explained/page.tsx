@@ -653,7 +653,8 @@ export default function WhatIsADAOExplained2026() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is a DAO Explained 2026: Governance, Treasury & Real", "description": "Complete guide to DAOs in 2026. Learn governance structures, voting mechanisms, real examples (MakerDAO $8B+, Uniswap, Aave, Lido, Nouns), treasury management,", "url": "https://degen0x.com/learn/what-is-a-dao-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

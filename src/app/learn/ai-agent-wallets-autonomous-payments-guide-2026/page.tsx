@@ -918,6 +918,7 @@ export default function Page() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI Agent Wallets & Autonomous Crypto Payments Guide 2026", "description": "Complete guide to AI agent wallets, x402 protocol, and autonomous cryptocurrency payments. Learn about Alchemy Agentic Wallets, World AgentKit, identity", "url": "https://degen0x.com/learn/ai-agent-wallets-autonomous-payments-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

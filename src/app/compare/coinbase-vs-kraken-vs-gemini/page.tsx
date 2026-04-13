@@ -624,7 +624,8 @@ export default function CoinbaseKrakenGemini() {
             <strong style={{ color: '#58a6ff' }}>Methodology note:</strong> Our comparisons analyze on-chain data, fee structures, and feature sets as of the publication date.
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase vs Kraken vs Gemini: Crypto Exchange Comparison", "description": "Compare exchanges: Coinbase ($0.4-0.6% fees, 150+ coins), Kraken ($0.16-0.26%, advanced trading), Gemini ($0.2-0.4%, regulatory focus). Security, staking,", "url": "https://degen0x.com/compare/coinbase-vs-kraken-vs-gemini", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/compare/tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokens</a>

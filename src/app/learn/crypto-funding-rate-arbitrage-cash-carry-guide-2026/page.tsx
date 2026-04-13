@@ -214,7 +214,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Funding Rate Arbitrage: Cash & Carry Trading Guide 2026", "description": "Master funding rate arbitrage and cash-and-carry strategies. Learn delta-neutral trading, spot-future spreads, and 5-20% annual risk-free returns.", "url": "https://degen0x.com/learn/crypto-funding-rate-arbitrage-cash-carry-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

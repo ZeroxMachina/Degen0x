@@ -774,6 +774,7 @@ export default function SolanaDeveloperPlatformGuide() {
       </div>
 
       <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Developer Platform (SDP) Guide 2026 \u2014 Enterprise", "description": "Master the Solana Developer Platform: enterprise APIs for tokenized deposits, stablecoins, RWAs, and payments. Used by Mastercard, Worldpay, and Western Union.", "url": "https://degen0x.com/learn/solana-developer-platform-sdp-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

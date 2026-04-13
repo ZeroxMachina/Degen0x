@@ -476,7 +476,8 @@ export default function TokenizationBusinessGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real-World Asset Tokenization Business Guide 2026: RWA", "description": "Complete guide to RWA tokenization business. Cover Polymath, Securitize, tZERO, RealT ($100M+ tokenized). Learn STOs, Reg D/S/A+, fractional ownership,", "url": "https://degen0x.com/web3-business/tokenization-business-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

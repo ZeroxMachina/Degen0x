@@ -659,7 +659,8 @@ export default function PerpetualDexGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Perpetual DEX Trading Guide 2026: Hyperliquid, dYdX & Beyond", "description": "Complete guide to perpetual DEX trading in 2026. Compare Hyperliquid, dYdX, and GMX \u2014 $26B+ daily volume, up to 50x leverage, zero gas fees. Learn how perp", "url": "https://degen0x.com/learn/perpetual-dex-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

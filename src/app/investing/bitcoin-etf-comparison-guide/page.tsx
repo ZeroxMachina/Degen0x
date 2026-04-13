@@ -293,7 +293,8 @@ export default function BitcoinETFComparison() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin ETF Comparison 2026: IBIT, FBTC, GBTC, ARKB, HODL", "description": "Bitcoin ETF guide: IBIT (BlackRock $50B AUM), FBTC (Fidelity), GBTC (Grayscale highest fee), ARKB, BITB, HODL. Comparison: AUM, expense ratio, custody, volume", "url": "https://degen0x.com/investing/bitcoin-etf-comparison-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/best/meme-coins" style={{ color: "#fb923c", marginRight: "1rem" }}>Meme Coins</a>

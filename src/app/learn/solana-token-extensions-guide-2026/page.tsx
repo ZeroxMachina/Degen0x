@@ -1452,6 +1452,7 @@ export default function SolanaTokenExtensionsGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Token Extensions Guide 2026 \u2014 Token-2022 Explained", "description": "Complete guide to Solana Token Extensions (Token-2022): confidential transfers, transfer fees, interest-bearing tokens, permanent delegates, and more. Updated", "url": "https://degen0x.com/learn/solana-token-extensions-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

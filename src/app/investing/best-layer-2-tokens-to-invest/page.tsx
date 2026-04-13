@@ -451,7 +451,8 @@ export default function BestLayer2Tokens2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Layer 2 Tokens 2026", "description": "Top L2 tokens: ARB, OP, MATIC, STRK, ZK. TVL, daily txs, ecosystem growth.", "url": "https://degen0x.com/investing/best-layer-2-tokens-to-invest", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/crypto/cardano" style={{ color: "#fb923c", marginRight: "1rem" }}>Cardano</a>

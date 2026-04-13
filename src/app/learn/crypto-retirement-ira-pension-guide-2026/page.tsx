@@ -1023,7 +1023,8 @@ export default function CryptoRetirementIRAGuidePage() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto IRA Guide 2026: Bitcoin & Crypto Retirement Accounts", "description": "Complete guide to crypto IRAs, 401(k)s, and retirement accounts. Learn about Roth vs Traditional IRAs, top providers, fees, and tax benefits for cryptocurrency", "url": "https://degen0x.com/learn/crypto-retirement-ira-pension-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
 
   );
 }

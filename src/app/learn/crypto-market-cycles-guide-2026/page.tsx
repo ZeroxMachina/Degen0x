@@ -837,6 +837,7 @@ export default function CryptoMarketCyclesPage() {
       </article>
 
       <BackToTop />
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Market Cycles Guide 2026: Bull & Bear Phases", "description": "Master crypto market cycles in 2026. Understand accumulation, bull runs, distribution, bear markets, Bitcoin halving cycles, on-chain indicators (MVRV, NUPL,", "url": "https://degen0x.com/learn/crypto-market-cycles-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

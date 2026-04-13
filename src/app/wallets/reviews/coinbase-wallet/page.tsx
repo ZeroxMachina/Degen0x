@@ -154,6 +154,7 @@ export default function CoinbaseWalletReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Exchange Integration", "description": "In-depth Coinbase Wallet review for ${CURRENT_YEAR}. Covers self-custody features, multi-chain support, dApp browser, Coinbase integration, and security.", "url": "https://degen0x.com/wallets/reviews/coinbase-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -409,7 +409,8 @@ export default function StablecoinYieldComparison() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and not financial advice. Yields and APY figures are subject to change and were accurate as of April 11, 2026. DeFi carries smart contract risk; CeFi carries counterparty risk. Never supply funds you cannot afford to lose. Always conduct independent research before deploying capital.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Yield Comparison Tool 2026 | Best USDC, USDT,", "description": "Compare stablecoin yields across Aave, Compound, MorphoBlue, Spark DSR, and Nexo. Find USDC APY 4-8%, real-time rates, and risk assessment.", "url": "https://degen0x.com/tools/stablecoin-yield-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

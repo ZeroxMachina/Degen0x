@@ -470,7 +470,8 @@ export default function DeFiVsCeFiLendingRates() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi vs CeFi Lending Rates 2026: Aave vs Nexo", "description": "DeFi vs CeFi lending rates comparison. Aave 5% vs Nexo 6%, Compound vs BlockFi. Risk analysis, liquidation comparison, best for your strategy.", "url": "https://degen0x.com/crypto-loans/defi-vs-cefi-lending-rates", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-loans/reviews/celsius-successor" style={{ color: "#fb923c", marginRight: "1rem" }}>Celsius Successor</a>

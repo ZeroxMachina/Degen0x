@@ -1107,6 +1107,7 @@ export default function HashiBitcoinDefiGuide() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sui Hashi Bitcoin DeFi Guide 2026 \u2014 BTC Lending & Yield on", "description": "Comprehensive guide to Hashi protocol on Sui blockchain. Native Bitcoin DeFi without wrappers. BTC lending, borrowing, yield generation with institutional", "url": "https://degen0x.com/learn/sui-hashi-bitcoin-defi-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -760,6 +760,7 @@ export default function CryptoOnRampsGuide() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto On-Ramps & Off-Ramps Guide 2026 \u2014 Cheapest Ways to", "description": "Compare the best crypto on-ramp and off-ramp providers in 2026. MoonPay, Transak, Ramp Network, Coinbase & more \u2014 fees, speed, payment methods, and geo", "url": "https://degen0x.com/learn/crypto-on-ramps-off-ramps-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

@@ -486,7 +486,8 @@ export default function Web3DeveloperToolsComparisonExpanded() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Developer Tools Comparison 2026: Hardhat, Foundry,", "description": "Complete comparison of blockchain development tools: Hardhat (JavaScript), Foundry (Solidity), Remix (browser), Alchemy (RPC), testing frameworks, and", "url": "https://degen0x.com/web3-business/web3-developer-tools-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/web3-business/best/dao-tools" style={{ color: "#fb923c", marginRight: "1rem" }}>Dao Tools</a>

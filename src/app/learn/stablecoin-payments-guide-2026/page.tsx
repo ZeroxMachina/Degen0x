@@ -665,6 +665,7 @@ export default function StablecoinPaymentsGuidePage() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Payments Guide 2026 \u2014 GENIUS Act & Cross-Border", "description": "How stablecoins work as payment rails in 2026: GENIUS Act explained, USDC vs USDT for cross-border transfers, and which use cases are gaining real traction. 12", "url": "https://degen0x.com/learn/stablecoin-payments-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   )
 }

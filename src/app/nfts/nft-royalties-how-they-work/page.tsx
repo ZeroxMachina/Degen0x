@@ -538,7 +538,8 @@ export default function NFTRoyalties() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong style={{ color: '#e6edf3' }}>Disclaimer:</strong> This content is for informational purposes only and does not constitute legal or financial advice. Royalty enforcement and marketplace policies are rapidly evolving; terms described here reflect April 2026 state and may change. EIP-2981, ERC-721C, and Manifold registry adoption varies by marketplace and region. Tax implications of royalty income vary by jurisdiction—consult tax counsel. NFT markets are volatile; royalty revenue depends on secondary trading volume and floor price appreciation, which are unpredictable. Past royalty earnings do not guarantee future results.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools", "description": "Complete guide to NFT royalties. Learn EIP-2981 royalty standard, marketplace enforcement (OpenSea vs Blur royalty wars), creator earnings dashboards, and", "url": "https://degen0x.com/nfts/nft-royalties-how-they-work", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

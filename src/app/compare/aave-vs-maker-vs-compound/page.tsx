@@ -375,7 +375,8 @@ export default function AaveVsMakerVsCompound() {
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave vs Maker vs Compound: DeFi Lending 2026 Comparison", "description": "Compare Aave, Maker, and Compound: TVL, lending rates, governance, stablecoin (DAI), collateral options. Which DeFi lending protocol wins?", "url": "https://degen0x.com/compare/aave-vs-maker-vs-compound", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/compare/exchanges/bybit-vs-binance" style={{ color: "#fb923c", marginRight: "1rem" }}>Bybit Vs Binance</a>

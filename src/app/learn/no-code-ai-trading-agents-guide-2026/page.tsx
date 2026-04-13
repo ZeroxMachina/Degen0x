@@ -1049,7 +1049,8 @@ export default function NoCodeAITradingAgentsPage() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "No-Code AI Trading Agents Guide 2026: Build Crypto Trading", "description": "Build autonomous AI trading agents without coding. Learn how Walbi, CodakAI, and 3Commas use LLMs to interpret trading strategies in plain English. Create your", "url": "https://degen0x.com/learn/no-code-ai-trading-agents-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

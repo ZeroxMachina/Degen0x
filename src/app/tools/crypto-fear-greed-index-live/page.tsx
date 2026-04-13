@@ -576,6 +576,7 @@ export default function CryptoFearGreedIndexPage() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Fear & Greed Index Live | Market Sentiment Tracker", "description": "Track live crypto fear and greed index. Understand calculation, historical signals, and trading strategies with real-time market sentiment data.", "url": "https://degen0x.com/tools/crypto-fear-greed-index-live", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

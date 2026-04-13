@@ -319,6 +319,7 @@ export default function NewsPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto News \u2014 Latest Crypto & Web3 News | degen0x", "description": "Crypto news and market updates from degen0x. Protocol launches, regulation news, DeFi announcements, and daily briefings on Bitcoin, Ethereum, Web3.", "url": "https://degen0x.com/news", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

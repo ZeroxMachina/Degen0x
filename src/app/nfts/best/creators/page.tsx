@@ -188,6 +188,7 @@ export default function BestForCreatorsPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Minting Tools", "description": "Find the best NFT marketplaces for creators in ${CURRENT_YEAR}. Platforms with the best minting tools, royalty support, custom contracts, and creator-focused features.", "url": "https://degen0x.com/nfts/best/creators", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

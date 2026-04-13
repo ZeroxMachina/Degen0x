@@ -1526,7 +1526,8 @@ const VeTokenomicsGuide = () => {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "veTokenomics & Curve Wars Guide 2026 \u2014 Vote-Escrow DeFi", "description": "Master veTokenomics in 2026: how vote-escrow tokens, Curve Wars, bribe markets, and protocols like Convex & Aerodrome shape DeFi liquidity. Updated March 2026.", "url": "https://degen0x.com/learn/vetokenomics-curve-wars-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 };

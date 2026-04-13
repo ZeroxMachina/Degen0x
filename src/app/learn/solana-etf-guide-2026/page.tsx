@@ -372,6 +372,7 @@ export default function SolanaETFGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/how-to-read-crypto-whitepaper" style={{ color: "#fb923c", marginRight: "1rem" }}>How To Read Crypto Whitepaper</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana ETF Guide 2026 \u2014 Spot SOL ETF Status, How to Invest", "description": "Everything you need to know about the Solana ETF in 2026. Track approval status, compare SOL ETF issuers (VanEck, 21Shares, Grayscale), understand fees, and", "url": "https://degen0x.com/learn/solana-etf-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -571,7 +571,8 @@ export default function StablecoinYieldStrategy() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Yield Long-Term Strategy 2026: 5-8% APY on USDC,", "description": "Earn 5-8% sustainable yield on stablecoins (USDC, USDT, DAI) via Aave, Curve, Lido. Build passive income, capital preservation, and compounding strategies.", "url": "https://degen0x.com/long-term/stablecoin-yield-long-term-strategy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/long-term/best/advisors" style={{ color: "#fb923c", marginRight: "1rem" }}>Advisors</a>

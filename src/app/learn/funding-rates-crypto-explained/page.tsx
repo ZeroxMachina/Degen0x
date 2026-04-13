@@ -510,7 +510,8 @@ export default function FundingRatesCryptoExplained() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Funding Rates Crypto Explained | Perpetual Swaps & Arbitrage", "description": "Master funding rates: 8-hour intervals, positive/negative rates, cash-and-carry arbitrage. Delta-neutral farming 15-30% APY, funding rate sentiment indicator,", "url": "https://degen0x.com/learn/funding-rates-crypto-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/learn/onchain-identity-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Identity Guide</a>

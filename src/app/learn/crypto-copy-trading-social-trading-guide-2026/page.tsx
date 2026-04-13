@@ -636,7 +636,8 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Copy Trading & Social Trading Platforms Guide 2026", "description": "Complete guide to crypto copy trading and social trading platforms in 2026. Learn how copy trading works, compare top platforms like Bitget, Bybit, and eToro,", "url": "https://degen0x.com/learn/crypto-copy-trading-social-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       
         <script
           type="application/ld+json"

@@ -421,7 +421,8 @@ export default function CryptoMarginLoanComparison() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Margin Loan Comparison | degen0x", "description": "Crypto Margin Loan Comparison guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.", "url": "https://degen0x.com/crypto-loans/crypto-margin-loan-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

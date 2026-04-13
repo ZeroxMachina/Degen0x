@@ -955,6 +955,7 @@ export default function RestakingWarsGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/defi-liquidation-protection-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Liquidation Protection Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Restaking Wars 2026 \u2014 EigenLayer vs Symbiotic vs Karak", "description": "Compare EigenLayer, Symbiotic, and Karak: TVL, features, tokenomics, and strategy. Which restaking protocol fits your yield farming goals? Complete 2026 guide.", "url": "https://degen0x.com/learn/restaking-wars-eigenlayer-symbiotic-karak-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

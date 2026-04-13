@@ -1761,7 +1761,8 @@ const AMMGuide = () => {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AMM & Liquidity Pools Guide 2026 \u2014 How DEX Trading Works", "description": "Learn how Automated Market Makers and liquidity pools power decentralized trading. Understand the constant product formula, concentrated liquidity, Uniswap V4,", "url": "https://degen0x.com/learn/amm-liquidity-pools-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/learn/bonding-curves-token-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Bonding Curves Token Explained</a>

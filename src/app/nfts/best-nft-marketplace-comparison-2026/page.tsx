@@ -401,7 +401,8 @@ export default function BestNFTMarketplaceComparison2026() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> NFT trading is highly speculative. Platform choice does not affect investment risk. Always verify contract addresses before buying. Do not risk funds you can&apos;t afford to lose. Past NFT valuations do not predict future prices. This is informational only, not investment advice.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best NFT Marketplace Comparison 2026: OpenSea vs Blur vs", "description": "Compare top NFT marketplaces: OpenSea (2.5% fee, multi-chain), Blur (0% fee, pro traders), Magic Eden (Solana + Bitcoin), Rarible, SuperRare. Volume, fees,", "url": "https://degen0x.com/nfts/best-nft-marketplace-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

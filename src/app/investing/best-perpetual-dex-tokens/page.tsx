@@ -523,7 +523,8 @@ export default function BestPerpetualDexTokens() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Perpetual DEX Tokens 2024-2026: GMX, dYdX, Synthetix,", "description": "Compare perpetual DEX tokens by volume, real yield, and staker APY. GMX, dYdX, Synthetix, Drift, Gains, Hyperliquid with fee revenue and liquidity provider", "url": "https://degen0x.com/investing/best-perpetual-dex-tokens", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

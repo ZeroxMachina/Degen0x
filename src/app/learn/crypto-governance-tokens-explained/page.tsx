@@ -229,7 +229,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Governance Tokens: Voting Rights & Protocol Economics", "description": "Master crypto governance tokens. Learn voting mechanisms, token economics, protocol participation, and how to evaluate governance token investments.", "url": "https://degen0x.com/learn/crypto-governance-tokens-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

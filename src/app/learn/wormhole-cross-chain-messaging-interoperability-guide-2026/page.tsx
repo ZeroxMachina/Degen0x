@@ -834,6 +834,7 @@ export default function WormholeCrossChainPage() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wormhole Cross-Chain Messaging & Interoperability Guide 2026", "description": "Complete guide to Wormhole cross-chain messaging protocol. Learn how Guardian Network secures 40+ blockchains, NTT framework for native tokens, W token", "url": "https://degen0x.com/learn/wormhole-cross-chain-messaging-interoperability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

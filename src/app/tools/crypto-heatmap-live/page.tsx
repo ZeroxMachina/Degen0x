@@ -486,7 +486,8 @@ export default function CryptoHeatmapLive() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: "#8b949e" }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered financial advice. Cryptocurrency is volatile and carries significant risk. Heatmaps show price performance, not value. Always do your own research (DYOR) and consult a qualified financial advisor before making investment decisions. degen0x does not endorse any specific investment or protocol.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Live Crypto Heatmap Tools: Sector Rotation, Market", "description": "Real-time crypto heatmap tools (Coin360, CoinGecko, TradingView). Color-coded market performance by sector: DeFi, L1, L2, meme coins. Identify sector rotation", "url": "https://degen0x.com/tools/crypto-heatmap-live", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         <script
           type="application/ld+json"

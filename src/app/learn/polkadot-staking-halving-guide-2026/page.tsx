@@ -984,6 +984,7 @@ export default function Page() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Polkadot Staking & Halving Guide 2026 | Earn DOT Rewards", "description": "Complete guide to Polkadot", "url": "https://degen0x.com/learn/polkadot-staking-halving-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     );
 }

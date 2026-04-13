@@ -376,7 +376,8 @@ export default function SolanaVsAvalanche() {
             <strong style={{ color: '#58a6ff' }}>Methodology note:</strong> Our comparisons analyze on-chain data, fee structures, and feature sets as of the publication date.
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana vs Avalanche: Layer 1 Comparison 2026", "description": "Compare Solana and Avalanche: TPS, fees, DeFi TVL, ecosystem, consensus mechanisms. Which L1 blockchain wins?", "url": "https://degen0x.com/compare/solana-vs-avalanche-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

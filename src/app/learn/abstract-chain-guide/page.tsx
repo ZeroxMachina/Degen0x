@@ -798,6 +798,7 @@ export default function AbstractChainGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is Abstract Chain? Consumer Crypto L2 Explained 2026", "description": "Abstract is Pudgy Penguins", "url": "https://degen0x.com/learn/abstract-chain-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

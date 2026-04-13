@@ -171,6 +171,7 @@ export default function FluentBlendedExecutionL2Guide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fluent: Blended Execution rWASM L2 Guide 2026 | Degen0x", "description": "Complete guide to Fluent, the blended execution Layer 2 unifying EVM, Wasm, and SVM contracts atomically via rWASM. Learn architecture, use cases, and how", "url": "https://degen0x.com/learn/fluent-blended-execution-rwasm-l2-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

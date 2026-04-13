@@ -554,6 +554,7 @@ export default function NFTLendingNFTfiGuidePage() {
           </p>
         </div>
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Lending & NFTFi Guide 2026: Protocols, Models & Risks", "description": "Master NFT-backed lending in 2026. Compare NFTfi, Blend, BendDAO & Drops. Learn P2P vs pool models, how to get a loan, liquidation risks, and the $2.3B market", "url": "https://degen0x.com/learn/nft-lending-nftfi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

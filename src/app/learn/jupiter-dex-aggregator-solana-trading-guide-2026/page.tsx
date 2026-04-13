@@ -229,7 +229,8 @@ const page = () => {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Jupiter DEX Aggregator: Master Solana Trading 2026", "description": "Complete guide to Jupiter DEX aggregator on Solana. Learn routing logic, swap optimization, yield farming, and how to trade like institutional traders.", "url": "https://degen0x.com/learn/jupiter-dex-aggregator-solana-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 };
 

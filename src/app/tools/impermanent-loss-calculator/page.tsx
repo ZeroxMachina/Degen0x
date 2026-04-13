@@ -647,6 +647,7 @@ export default function ImpermanentLossCalculatorPage() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Impermanent Loss Calculator | IL & LP Profit Tool", "description": "Calculate impermanent loss on liquidity pools. Understand IL formula, fee breakeven analysis, and strategies to minimize losses on DEX farming.", "url": "https://degen0x.com/tools/impermanent-loss-calculator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

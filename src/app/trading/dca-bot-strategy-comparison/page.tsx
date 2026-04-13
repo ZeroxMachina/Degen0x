@@ -500,7 +500,8 @@ export default function DCABotStrategyComparison() {
             <strong style={{ color: '#06b6d4' }}>Trading risk:</strong> Leveraged trading can result in total loss of funds. Past performance does not indicate future results.
             This content is educational — never trade more than you can afford to lose. Read our <a href="/methodology" style={{ color: '#06b6d4' }}>editorial standards</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DCA Bot Strategy Comparison: 3Commas, Pionex, Bitsgap", "description": "Compare DCA bots for automated Bitcoin investing. Dollar-cost averaging strategy, backtesting, fees, and best practices for passive accumulation.", "url": "https://degen0x.com/trading/dca-bot-strategy-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

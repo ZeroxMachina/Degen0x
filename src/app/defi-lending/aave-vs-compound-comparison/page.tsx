@@ -206,7 +206,8 @@ export default function AaveVsCompoundComparison() {
             <strong style={{ color: '#c084fc' }}>DeFi risk warning:</strong> Lending protocols carry smart contract risk, liquidation risk, and oracle risk.
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave V3 vs Compound V3 Comparison 2026: TVL, Governance,", "description": "Deep comparison: Aave V3 ($12B, 8 chains, e-mode, flash loans) vs Compound V3 ($8B, Ethereum+Base, simple, safe).", "url": "https://degen0x.com/defi-lending/aave-vs-compound-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

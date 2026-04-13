@@ -27,6 +27,7 @@ export default function MemecoinIndexPage() {
     <>
       <MemecoinIndexClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Meme Coin Index & Tracker 2026 \u2014 Live Prices, Volume & Trends | degen0x", "description": "Track meme coins in real-time. Compare DOGE, SHIB, PEPE, WIF, BONK and more by price, volume, market cap, and social sentiment. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.", "url": "https://degen0x.com/tools/memecoin-index", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

@@ -1194,6 +1194,7 @@ export default function BearMarketGuide() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Bear Market Survival & Recovery Strategies Guide", "description": "Master bear market survival strategies with proven DCA tactics, staking yields, and institutional-grade portfolio management. Historical data shows 500-2,056%", "url": "https://degen0x.com/learn/crypto-bear-market-recovery-survival-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

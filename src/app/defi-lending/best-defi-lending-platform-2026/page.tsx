@@ -211,7 +211,8 @@ export default function BestDefiLendingPlatform() {
             <strong style={{ color: '#c084fc' }}>DeFi risk warning:</strong> Lending protocols carry smart contract risk, liquidation risk, and oracle risk.
             APY figures fluctuate constantly — verify current rates on-chain before depositing. Read our <a href="/methodology" style={{ color: '#c084fc' }}>protocol evaluation framework</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DeFi Lending Platform 2026: Aave V3 ($12B TVL),", "description": "Compare DeFi lending: Aave V3 ($12B, 8+ chains), Compound V3, MakerDAO/Spark, Morpho, Euler, Venus.", "url": "https://degen0x.com/defi-lending/best-defi-lending-platform-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/defi-lending/calculators/yield-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Yield Calculator</a>

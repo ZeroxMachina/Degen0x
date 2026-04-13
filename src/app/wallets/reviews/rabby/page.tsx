@@ -154,6 +154,7 @@ export default function RabbyReviewPage() {
       relatedGuides={relatedGuides}
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Pre-Transaction Risk Scanning", "description": "Complete Rabby wallet review for ${CURRENT_YEAR}. Covers transaction simulation, auto chain detection, multi-chain EVM support, and DeFi security features.", "url": "https://degen0x.com/wallets/reviews/rabby", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

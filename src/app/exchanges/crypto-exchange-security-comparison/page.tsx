@@ -254,7 +254,8 @@ const toc = [{ id: 'intro', t: 'Overview' }, { id: 'cold', t: 'Cold Storage' }, 
             <strong style={{ color: '#f59e0b' }}>Disclosure:</strong> Exchange reviews reflect our team&apos;s independent testing. We may earn referral fees from some exchanges, which never influence our ratings.
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Exchange Security Comparison 2026: Coinbase vs", "description": "Compare cold storage, insurance, SOC 2, and proof of reserves across Coinbase (98%), Kraken (95%), Binance SAFU ($1B), Gemini, Crypto.com.", "url": "https://degen0x.com/exchanges/crypto-exchange-security-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

@@ -581,6 +581,7 @@ export default function DAOGovernanceVotingGuidePage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DAO Governance & Onchain Voting 2026: Snapshot, Tally,", "description": "Complete DAO governance guide for 2026. Learn how onchain voting works, compare Snapshot, Tally, Aragon. Cover token voting, quadratic voting, decision", "url": "https://degen0x.com/learn/dao-governance-onchain-voting-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

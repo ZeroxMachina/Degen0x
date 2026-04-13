@@ -536,6 +536,7 @@ export default function CryptoOptionsGuidePage() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Options Trading Guide 2026 \u2014 Calls, Puts & DeFi", "description": "Learn how crypto options work in 2026: calls, puts, strike prices, expiry, Greeks, and the top on-chain options protocols like Derive, Premia, and Panoptic.", "url": "https://degen0x.com/learn/crypto-options-trading-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

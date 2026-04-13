@@ -398,6 +398,7 @@ export default function BestDebitCardsPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "7 Best Crypto Debit Cards of 2026 (Ranked & Compared) | degen0x", "description": "The gold standard of crypto debit cards. Five card tiers ranging from the free Midnight Blue to the exclusive Obsidian, each offering progressively better", "url": "https://degen0x.com/spending/best/debit-cards", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

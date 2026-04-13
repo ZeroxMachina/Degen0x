@@ -279,6 +279,7 @@ export default function KaminoFinanceGuide() {
       </div>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Kamino Finance Guide 2026 \u2014 Solana Lending, Liquidity &", "description": "Comprehensive guide to Kamino Finance: automated concentrated liquidity vaults, Kamino Lend, multiply leverage loops, KMNO tokenomics, and risks on Solana.", "url": "https://degen0x.com/learn/kamino-finance-solana-lending-liquidity-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

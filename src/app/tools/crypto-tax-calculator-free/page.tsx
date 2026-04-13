@@ -162,7 +162,8 @@ export default function BestCryptoTaxCalculator() {
         <div style={{ ...s.box, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> Not tax advice. Consult accountant. Laws vary by country. Calculators organize data only.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Free Crypto Tax Calculator 2026: Koinly, CoinTracker,", "description": "Compare free crypto tax tools: Koinly (25 txns free), CoinTracker (25), CryptoTaxCalculator, TokenTax, CoinLedger. FIFO, LIFO, HIFO cost basis.", "url": "https://degen0x.com/tools/crypto-tax-calculator-free", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

@@ -581,7 +581,8 @@ export default function NFTPhotographyMarketplaceGuide() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong style={{ color: '#e6edf3' }}>Disclaimer:</strong> This content is for informational purposes only and does not constitute investment, legal, or financial advice. Photography NFT markets are volatile; past performance of creators like Justin Aversano does not guarantee future results. Copyright, licensing, and royalty terms vary by platform and photographer—verify all terms before purchasing or listing. Always conduct independent research and consult legal counsel regarding copyright and licensing implications.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Photography Marketplaces 2026: SuperRare, Foundation,", "description": "Complete guide to NFT photography marketplaces. Compare SuperRare, Foundation, Quantum Art, Sloika. Learn 1/1 editions, pricing strategies, and copyright.", "url": "https://degen0x.com/nfts/nft-photography-marketplace-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

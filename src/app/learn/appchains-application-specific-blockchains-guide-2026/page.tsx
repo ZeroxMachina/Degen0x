@@ -886,6 +886,7 @@ export default function AppChainsPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/movement-network-move-ethereum-l2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Movement Network Move Ethereum L2 Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Appchains & Application-Specific Blockchains Guide 2026", "description": "Complete guide to appchains and application-specific blockchains in 2026. Learn Cosmos SDK, Arbitrum Orbit, OP Stack, Avalanche Subnets, and Substrate. Compare", "url": "https://degen0x.com/learn/appchains-application-specific-blockchains-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

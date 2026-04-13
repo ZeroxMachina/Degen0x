@@ -399,7 +399,8 @@ export default function ArbitrumVsOptimism() {
             <strong style={{ color: '#58a6ff' }}>Methodology note:</strong> Our comparisons analyze on-chain data, fee structures, and feature sets as of the publication date.
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Arbitrum vs Optimism: L2 Comparison 2026 Guide", "description": "Compare Arbitrum and Optimism Layer 2 solutions: TVL, fees, ecosystems, fraud proofs, governance. Which Ethereum L2 wins?", "url": "https://degen0x.com/compare/arbitrum-vs-optimism-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

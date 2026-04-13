@@ -386,7 +386,8 @@ export default function CryptoExchangeInsuranceComparison() {
             <strong style={{ color: '#f59e0b' }}>Disclosure:</strong> Exchange reviews reflect our team&apos;s independent testing. We may earn referral fees from some exchanges, which never influence our ratings.
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Exchange Insurance Comparison | degen0x", "description": "Crypto Exchange Insurance Comparison guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.", "url": "https://degen0x.com/exchanges/crypto-exchange-insurance-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

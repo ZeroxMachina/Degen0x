@@ -886,6 +886,7 @@ export default function StacksSBTCGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/social-recovery-wallet-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Social Recovery Wallet Explained</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stacks & sBTC Guide 2026: Bitcoin Smart Contracts, DeFi &", "description": "Master Stacks and sBTC in 2026. Learn how Stacks brings smart contracts to Bitcoin, how 1:1 sBTC works, Clarity language, Satoshi Upgrades (ZK minting, Dual", "url": "https://degen0x.com/learn/stacks-sbtc-bitcoin-smart-contracts-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -151,7 +151,8 @@ export default function WhaleWalletTracker() {
         <div style={{ ...s.box, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> Not investment advice. Whale tracking is supplementary only. Do your own research. Whales can be wrong.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Whale Wallet Tracker 2026: Nansen, Arkham Intelligence vs", "description": "Track whale wallets: Nansen (10+ chains), Arkham Intelligence (labeled), Whale Alert, Lookonchain, DeBank. Follow smart money.", "url": "https://degen0x.com/tools/whale-wallet-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

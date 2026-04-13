@@ -428,7 +428,8 @@ export default function BestRWACryptoTokens2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best RWA Crypto Tokens 2026", "description": "Top RWA tokens: ONDO, MKR, CPOOL, MPL, CFG. Tokenized treasuries, real estate, credit. TVL by protocol.", "url": "https://degen0x.com/investing/best-rwa-crypto-tokens-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/best/defi-tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Tokens</a>

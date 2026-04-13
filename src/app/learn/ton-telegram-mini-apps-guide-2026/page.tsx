@@ -763,7 +763,8 @@ export default function TONTelegramMiniAppsGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "TON & Telegram Mini Apps Guide 2026: Build, Play & Earn on", "description": "Complete guide to TON blockchain and Telegram Mini Apps in 2026. Learn how 950M+ Telegram users access Web3 through Mini Apps, explore tap-to-earn games", "url": "https://degen0x.com/learn/ton-telegram-mini-apps-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

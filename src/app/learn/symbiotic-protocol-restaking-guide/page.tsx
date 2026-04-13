@@ -573,6 +573,7 @@ export default function SymbioticProtocolRestakingGuidePage() {
           }}
         />
       </article>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Symbiotic Protocol Guide 2026 \u2014 Permissionless Restaking", "description": "Symbiotic is the leading permissionless restaking protocol with $1.6B+ TVL and 70+ secured networks. Learn how it works, compare Symbiotic vs EigenLayer, and", "url": "https://degen0x.com/learn/symbiotic-protocol-restaking-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

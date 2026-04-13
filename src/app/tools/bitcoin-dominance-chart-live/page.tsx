@@ -585,6 +585,7 @@ export default function BitcoinDominanceChartPage() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Dominance Chart Live | BTC Dominance Tracker", "description": "Track live Bitcoin dominance. Understand BTC dominance trends, alt season signals, market cycles, and trading strategies based on dominance shifts.", "url": "https://degen0x.com/tools/bitcoin-dominance-chart-live", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

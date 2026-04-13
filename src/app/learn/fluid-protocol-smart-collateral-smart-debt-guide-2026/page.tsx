@@ -255,6 +255,7 @@ export default function FluidProtocolGuide2026() {
           </p>
         </div>
       </article>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fluid Protocol: Smart Collateral & Smart Debt DeFi Guide", "description": "Complete guide to Fluid Protocol by Instadapp \u2014 the unified DeFi liquidity layer combining lending, borrowing, and DEX. Learn how Smart Collateral and Smart", "url": "https://degen0x.com/learn/fluid-protocol-smart-collateral-smart-debt-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

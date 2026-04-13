@@ -677,7 +677,8 @@ export default function AIGeneratedNFTGuide() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI-Generated NFTs 2026: Complete Guide to Copyright,", "description": "Comprehensive guide to AI-generated NFTs: Midjourney, DALL-E, Stable Diffusion licensing. Copyright risks, legal status, market valuation, IP insurance, and", "url": "https://degen0x.com/nfts/ai-generated-nft-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/nfts/best/ethereum" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum</a>

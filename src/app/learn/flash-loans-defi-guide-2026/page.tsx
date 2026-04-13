@@ -1057,6 +1057,7 @@ export default function FlashLoansPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/crypto-options-strategies-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Options Strategies Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Flash Loans in DeFi Guide 2026 \u2014 How They Work | degen0x", "description": "Master flash loans: Aave, dYdX, Balancer, Uniswap. Learn uncollateralized lending, atomic transactions, arbitrage, oracle attacks, MEV, and flash loan", "url": "https://degen0x.com/learn/flash-loans-defi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

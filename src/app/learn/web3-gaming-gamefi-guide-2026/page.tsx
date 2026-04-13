@@ -907,6 +907,7 @@ export default function Web3GamingGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Web3 Gaming & GameFi Guide 2026 \u2014 Play-to-Earn, Top Games &", "description": "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games like Axie Infinity and Illuvium, gaming blockchains, and how to start earning", "url": "https://degen0x.com/learn/web3-gaming-gamefi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

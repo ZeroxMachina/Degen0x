@@ -265,7 +265,8 @@ export default function ProofOfWorkVsProofOfStake() {
             <strong style={{ color: '#58a6ff' }}>Methodology note:</strong> Our comparisons analyze on-chain data, fee structures, and feature sets as of the publication date.
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Proof of Work vs Proof of Stake 2026: Energy, Security,", "description": "PoW vs PoS comparison: Bitcoin 150 TWh/year vs Ethereum 0.01 TWh (staking). Security, decentralization, finality, 51% attack cost. Comparison table.", "url": "https://degen0x.com/compare/proof-of-work-vs-proof-of-stake", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

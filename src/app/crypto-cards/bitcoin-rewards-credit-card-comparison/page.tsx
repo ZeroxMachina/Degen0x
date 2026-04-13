@@ -525,7 +525,8 @@ export default function BitcoinRewardsComparison() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Rewards Cards 2026 | Fold, Coinbase, BlockFi", "description": "Compare Bitcoin rewards credit cards: Fold 2% BTC, Coinbase 4% stablecoin, BlockFi 1.5% APY. Real rates, annual fees, earning limits, and best use cases.", "url": "https://degen0x.com/crypto-cards/bitcoin-rewards-credit-card-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-cards/calculators/cashback-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Cashback Calculator</a>

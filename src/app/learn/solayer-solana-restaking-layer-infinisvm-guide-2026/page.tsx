@@ -540,6 +540,7 @@ export default function SolayerGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solayer Guide 2026 \u2014 Solana Restaking, sSOL, sUSD &", "description": "Complete guide to Solayer, Solana&rsquo;s restaking protocol. Learn about sSOL liquid restaking, sUSD stablecoin, InfiniSVM L1, and LAYER tokenomics.", "url": "https://degen0x.com/learn/solayer-solana-restaking-layer-infinisvm-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

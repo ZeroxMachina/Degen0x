@@ -345,7 +345,8 @@ export default function TokenVestingScheduleTracker() {
             <li><Link href="/tools/crypto-heatmap-live" style={linkStyle}>Crypto Heatmap Live</Link></li>
           </ul>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Vesting Schedule Tracker | degen0x", "description": "Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events.", "url": "https://degen0x.com/tools/token-vesting-schedule-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         <script
           type="application/ld+json"

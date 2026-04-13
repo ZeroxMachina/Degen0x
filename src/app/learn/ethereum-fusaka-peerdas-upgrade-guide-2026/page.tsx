@@ -244,6 +244,7 @@ export default function FusakaPeerdasGuide() {
             })
           }}
         />
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Fusaka & PeerDAS Upgrade Guide 2026 | Degen0x", "description": "Everything you need to know about Fusaka \u2014 Ethereum\\u2019s next hardfork after Pectra. PeerDAS, blob scaling, EOF, and what it means for L2 costs, rollups, and DA throughput in 2026.", "url": "https://degen0x.com/learn/ethereum-fusaka-peerdas-upgrade-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

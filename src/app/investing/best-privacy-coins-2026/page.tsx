@@ -607,7 +607,8 @@ export default function BestPrivacyCoins2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Privacy Coins 2026: Monero, Zcash, Secret Network", "description": "Complete guide to privacy coins 2026. Compare Monero (XMR), Zcash (ZEC), Secret Network, Oasis Network. Discover privacy technologies, regulatory challenges,", "url": "https://degen0x.com/investing/best-privacy-coins-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem" }}>[slug]</a>

@@ -763,6 +763,7 @@ export default function MantleNetworkGuide() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Mantle Network Guide 2026 \u2014 MNT Token & L2", "description": "Comprehensive guide to Mantle Network: $2.8B TVL, ZK rollup migration, MNT tokenomics, mETH/cmETH staking, DeFi ecosystem & institutional partnerships.", "url": "https://degen0x.com/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

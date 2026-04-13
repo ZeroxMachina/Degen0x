@@ -549,6 +549,7 @@ export default function KarakNetworkGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/verifiable-random-function-vrf" style={{ color: "#fb923c", marginRight: "1rem" }}>Verifiable Random Function Vrf</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Karak Network Guide 2026 \u2014 Universal Restaking Explained", "description": "Karak is the second-largest restaking protocol with $1B+ TVL. Learn how multi-chain, multi-asset restaking works, compare Karak vs EigenLayer, and how to earn.", "url": "https://degen0x.com/learn/karak-network-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

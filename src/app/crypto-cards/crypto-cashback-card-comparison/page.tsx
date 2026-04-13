@@ -535,7 +535,8 @@ export default function CryptoCashbackComparison() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cashback Card Comparison 2026 | Coinbase,", "description": "Compare Coinbase Card, Crypto.com Visa, Gemini rewards cards: 4% stablecoin, travel benefits, fee structures, and earning limits. Expert rankings April 2026.", "url": "https://degen0x.com/crypto-cards/crypto-cashback-card-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/crypto-cards/reviews/crypto-com-card" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com Card</a>

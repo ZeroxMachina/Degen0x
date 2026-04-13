@@ -531,6 +531,7 @@ export default function SeiNetworkGuide() {
             })
           }}
         />
-      </>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sei Network Guide 2026: The First Parallelized EVM", "description": "Learn about Sei Network, the first parallelized EVM blockchain with 400ms finality, parallel execution, and a thriving DeFi ecosystem. Complete technical guide.", "url": "https://degen0x.com/learn/sei-network-parallel-evm-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

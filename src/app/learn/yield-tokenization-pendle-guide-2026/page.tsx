@@ -1220,6 +1220,7 @@ export default function YieldTokenizationPendlePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/soneium-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Soneium Guide</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Yield Tokenization & Pendle Guide 2026: Fixed DeFi Yield", "description": "Master yield tokenization with Pendle Finance in 2026. Learn how PT/YT tokens work, lock in fixed DeFi yields, and explore the Ethena-Pendle-Aave flywheel.", "url": "https://degen0x.com/learn/yield-tokenization-pendle-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

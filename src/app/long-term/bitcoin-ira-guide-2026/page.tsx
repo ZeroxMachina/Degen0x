@@ -582,7 +582,8 @@ export default function BitcoinIRAGuide2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin IRA Guide 2026: Self-Directed Crypto Retirement", "description": "Complete Bitcoin IRA setup guide. Compare iTrustCapital, BitcoinIRA, Alto CryptoIRA, Choice. Traditional vs Roth, $7,000 limits, UBIT risks, 401k rollover", "url": "https://degen0x.com/long-term/bitcoin-ira-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

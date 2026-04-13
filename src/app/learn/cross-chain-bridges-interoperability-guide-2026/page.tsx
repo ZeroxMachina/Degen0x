@@ -695,6 +695,7 @@ export default function CrossChainBridgesPage() {
           }}
         />
       </div>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cross-Chain Bridges & Interoperability Guide 2026 | degen0x", "description": "Master cross-chain bridges and blockchain interoperability: LayerZero, Wormhole, Chainlink CCIP, Axelar protocols, security models, bridge hacks ($2.8B+),", "url": "https://degen0x.com/learn/cross-chain-bridges-interoperability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

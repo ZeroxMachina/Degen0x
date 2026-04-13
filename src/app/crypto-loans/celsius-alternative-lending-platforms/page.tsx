@@ -378,7 +378,8 @@ export default function CelsiusAlternatives() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only and is not investment, lending, or financial advice. Crypto lending carries counterparty and smart contract risks. Regulated CeFi may still fail (Celsius collapsed despite being "licensed"). DeFi smart contracts can have bugs. Past returns do not guarantee future results. Only lend what you can afford to lose. Do your own research (DYOR) and consult a licensed financial advisor before crypto lending.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Celsius Alternatives 2026 | Nexo, YouHodler, Ledn, Aave,", "description": "Safe Celsius alternatives: Nexo, YouHodler, Ledn, Aave, Compound, MakerDAO. Compare rates, insurance, minimum deposits, proof of reserves after CeFi collapse.", "url": "https://degen0x.com/crypto-loans/celsius-alternative-lending-platforms", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>

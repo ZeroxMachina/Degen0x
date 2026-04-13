@@ -752,6 +752,7 @@ export default function CryptoCopyTradingGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/blast-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Blast Guide</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Copy Trading Guide 2026 \u2014 Platforms & Risks | degen0x", "description": "Complete guide to crypto copy trading. Learn how it works, best platforms (Bitget, Bybit, eToro), risks, and how to choose traders to copy. Social trading", "url": "https://degen0x.com/learn/crypto-copy-trading-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

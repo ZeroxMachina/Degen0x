@@ -211,7 +211,8 @@ export default function BestMultiChainWallet() {
             <strong style={{ color: '#22c55e' }}>Security note:</strong> Wallet security depends on your own practices. Hardware wallets reduce risk but aren&apos;t foolproof.
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Multi-Chain Wallet 2026: Rabby (50+ Chains), MetaMask,", "description": "Multi-chain wallets: Rabby (50+ chains, auto-detect), MetaMask (custom RPCs), Zerion (15+ chains), Trust Wallet (100+).", "url": "https://degen0x.com/wallets/best-multi-chain-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/wallets/learn/wallet-backup-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Wallet Backup Guide</a>

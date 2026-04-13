@@ -807,7 +807,8 @@ export default function CryptoWalletSecurityGuide() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Wallet Security Guide 2026: Protect Your Assets", "description": "Complete guide to crypto wallet security in 2026. Learn hardware wallets, seed phrase protection, phishing defense, 2FA, multisig, and anti-drainer tools.", "url": "https://degen0x.com/learn/crypto-wallet-security-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/learn/crypto-gas-fees-transaction-costs-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Gas Fees Transaction Costs Guide 2026</a>

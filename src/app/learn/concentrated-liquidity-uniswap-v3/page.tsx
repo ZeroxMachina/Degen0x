@@ -512,7 +512,8 @@ export default function ConcentratedLiquidityUniswapV3() {
             <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
-        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Concentrated Liquidity Uniswap V3 Guide | LP Strategy &", "description": "Master Uniswap V3 concentrated liquidity: tick ranges, 4000x capital efficiency vs V2, IL risk, fee tiers 0.01%-1%. Arrakis, Gamma, Merkl rewards, JIT attacks,", "url": "https://degen0x.com/learn/concentrated-liquidity-uniswap-v3", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
       </article>
   );
 }

@@ -1111,6 +1111,7 @@ export default function SECCFTCRulingGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/defi-yield-aggregators-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Yield Aggregators Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SEC/CFTC Crypto Commodities Ruling March 2026 \u2014 Digital", "description": "Complete guide to the March 17, 2026 SEC/CFTC joint ruling classifying 16 digital commodities including ETH, SOL, XRP, and more. Learn how the 68-page", "url": "https://degen0x.com/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

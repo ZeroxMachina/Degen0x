@@ -665,6 +665,7 @@ export default function PerpDEXGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/decentralized-gpu-compute-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Decentralized Gpu Compute Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Perpetual DEXs 2026: Compare Hyperliquid, dYdX & More", "description": "Compare top perpetual DEXs in 2026. Hyperliquid, dYdX, Lighter, GRVT, GMX \u2014 fees, leverage, volume, and how to start trading on-chain derivatives.", "url": "https://degen0x.com/learn/best-perpetual-dex-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

@@ -456,7 +456,8 @@ export default function BestDePINTokens2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DePIN Tokens 2026 | HNT Helium, RNDR, HONEY, GEOD, IO", "description": "Invest in DePIN (Decentralized Physical Infrastructure Network) tokens. Helium HNT (6M+ hotspots), Render RNDR GPU, Hivemapper HONEY, Geodnet, io.net.", "url": "https://degen0x.com/investing/best-depin-tokens-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/investing/best/buy-today" style={{ color: "#fb923c", marginRight: "1rem" }}>Buy Today</a>

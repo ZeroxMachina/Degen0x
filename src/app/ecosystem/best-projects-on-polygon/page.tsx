@@ -421,7 +421,8 @@ export default function BestProjectsOnPolygon2026() {
         <div style={{ ...infoBoxStyle, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> This content is for informational purposes only, not financial advice. Crypto is volatile and risky. TVL, APY, and other metrics current as of April 2026, subject to change. Smart contract risk exists even for audited protocols. Polygon 2.0 transition is experimental; risks of migration issues exist. POL token migration untested; liquidity risks in early stages. Never invest more than you can afford to lose. Always DYOR and consult a qualified financial advisor. Concentrated liquidity strategies require active management; impermanent loss risks are significant.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Projects on Polygon 2026: QuickSwap, Aave, Uniswap,", "description": "Top Polygon projects 2026. Compare QuickSwap ($1.8B TVL), Aave V3 ($3.5B), Uniswap V3, Balancer, Beefy Finance, Gains Network. Polygon 2.0 transition,", "url": "https://degen0x.com/ecosystem/best-projects-on-polygon", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

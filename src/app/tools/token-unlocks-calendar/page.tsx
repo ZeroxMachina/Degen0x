@@ -158,7 +158,8 @@ export default function TokenUnlocksCalendar() {
         <div style={{ ...s.box, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> Not trading advice. Unlocks are volatility events. Do your own research. Long-term fundamentals more important than unlock volatility.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Unlocks Calendar 2026: Vesting Schedule Tracker", "description": "Track token unlocks (cliff vs linear vesting). Major 2026 unlocks: ARB, OP, APT, SUI, STRK. Trading strategy for supply shock.", "url": "https://degen0x.com/tools/token-unlocks-calendar", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

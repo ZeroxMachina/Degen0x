@@ -188,6 +188,7 @@ export default function BestForSolanaPage() {
         </div>
       </div>
     </div>
-    </>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Near-Zero Fees", "description": "Compare the best Solana NFT marketplaces in ${CURRENT_YEAR}. Fast transactions, low fees, and vibrant collections on the Solana blockchain.", "url": "https://degen0x.com/nfts/best/solana", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</>
   );
 }

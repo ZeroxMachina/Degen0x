@@ -956,6 +956,7 @@ export default function ChainAbstractionPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/crypto-retirement-ira-pension-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Retirement Ira Pension Guide 2026</a>
         </nav>
-    </main>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Chain Abstraction & Multi-Chain UX Guide 2026 | degen0x", "description": "Master chain abstraction in 2026: Particle Network, NEAR Protocol, Socket, Polygon AggLayer, Omni Network. Learn one wallet, any chain\u2014no bridging, no", "url": "https://degen0x.com/learn/chain-abstraction-multichain-ux-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</main>
   );
 }

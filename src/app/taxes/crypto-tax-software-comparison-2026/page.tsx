@@ -548,7 +548,8 @@ export default function CryptoTaxSoftwareComparison2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Tax Software 2026: Koinly vs CoinTracker vs", "description": "Compare crypto tax software 2026: Koinly ($49-$279), CoinTracker ($59-$199), TokenTax ($65-$3,499). DeFi support, exchange integration, TurboTax exports, NFT", "url": "https://degen0x.com/taxes/crypto-tax-software-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }

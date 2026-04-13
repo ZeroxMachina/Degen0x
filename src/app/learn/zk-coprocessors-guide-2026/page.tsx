@@ -732,6 +732,7 @@ export default function ZKCoprocessorsGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ZK Coprocessors Guide 2026: Offchain Compute, Onchain Proof", "description": "Complete guide to zero-knowledge coprocessors \u2014 Axiom, Brevis, Herodotus, RISC Zero, and Succinct. How ZK proofs enable smart contracts to compute offchain", "url": "https://degen0x.com/learn/zk-coprocessors-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

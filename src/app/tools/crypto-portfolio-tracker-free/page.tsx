@@ -157,7 +157,8 @@ export default function BestCryptoPortfolioTracker() {
         <div style={{ ...s.box, marginTop: 48, fontSize: 13, color: '#8b949e' }}>
           <strong>Disclaimer:</strong> Portfolio trackers show unrealized P&L only. Use tax calculators for realized gains. Privacy: don&apos;t share wallet addresses publicly if value sensitive.
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Portfolio Tracker Free 2026: CoinGecko, DeBank,", "description": "Compare portfolio trackers: CoinGecko (free, 15+ chains), DeBank (DeFi), Zapper, Zerion, CoinStats. Track holdings, yield, P&L.", "url": "https://degen0x.com/tools/crypto-portfolio-tracker-free", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
         {/* related-guides */}
         <nav aria-label="Related guides" style={{ marginTop: 48, padding: "24px", background: "#161b22", border: "1px solid #30363d", borderRadius: 12 }}>
           <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>Continue Reading</h3>

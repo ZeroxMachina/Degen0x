@@ -566,6 +566,7 @@ export default function EthereumBlobSpaceGuide() {
           </Link>
         </div>
       </div>
-    </div>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Blob Space Guide 2026: EIP-4844, Data Availability", "description": "Understand how Ethereum", "url": "https://degen0x.com/learn/ethereum-blob-space-economics-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
   );
 }

@@ -412,7 +412,8 @@ export default function CryptoTaxReporting2026() {
             Compare Projects
           </Link>
         </div>
-      </div>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tax Reporting 2026: IRS Form 8949 & Schedule D", "description": "Master IRS Form 8949, Schedule D, cost basis methods (FIFO/LIFO/HIFO), Form 1099-DA, and tax software for crypto. Real examples with DeFi/staking treatment.", "url": "https://degen0x.com/taxes/crypto-tax-reporting-requirements-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+</div>
     </article>
   );
 }
