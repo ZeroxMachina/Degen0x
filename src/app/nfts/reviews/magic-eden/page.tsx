@@ -159,6 +159,17 @@ Backed by over $130 million in funding from investors including Paradigm and Ele
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience and Interface", "description": "Magic Eden is the dominant multi-chain NFT marketplace, originally built on Solana and now supporting Ethereum, Bitcoin Ordinals, Polygon, and Base. It is the", "url": "https://degen0x.com/nfts/reviews/magic-eden", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/nfts/reviews/blur" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Blur</a>
+  <a href="/nfts/reviews/element-market" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Element Market</a>
+  <a href="/nfts/reviews/foundation" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Foundation</a>
+  <a href="/nfts/reviews/looksrare" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Looksrare</a>
+  <a href="/nfts/reviews/opensea" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Opensea</a>
+  <a href="/nfts/reviews/ordinals-market" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Ordinals Market</a>
+  <a href="/nfts/reviews/rarible" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rarible</a>
+  <a href="/nfts/reviews/superrare" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Superrare</a>
+</nav>
+      </>
   );
 }

@@ -40,3 +40,12 @@ export default async function DynamicPage({ params }: Props) {
       />    </LearnPageLayout>
   );
 }
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/insurance/best/defi-protocols" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Defi Protocols</a>
+  <a href="/insurance/best/depeg-cover" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Depeg Cover</a>
+  <a href="/insurance/best/exchange-cover" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Exchange Cover</a>
+  <a href="/insurance/best/protocol-cover" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Protocol Cover</a>
+  <a href="/insurance/best/smart-contract" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Smart Contract</a>
+  <a href="/insurance/best/wallet-protection" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Wallet Protection</a>
+</nav>

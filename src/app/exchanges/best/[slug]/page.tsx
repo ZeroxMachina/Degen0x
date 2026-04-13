@@ -48,3 +48,14 @@ export default async function DynamicPage({ params }: Props) {
       />    </LearnPageLayout>
   );
 }
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/exchanges/best/advanced-traders" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Advanced Traders</a>
+  <a href="/exchanges/best/altcoins" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Altcoins</a>
+  <a href="/exchanges/best/australia" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Australia</a>
+  <a href="/exchanges/best/beginners" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Beginners</a>
+  <a href="/exchanges/best/bitcoin" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitcoin</a>
+  <a href="/exchanges/best/brazil" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Brazil</a>
+  <a href="/exchanges/best/canada" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Canada</a>
+  <a href="/exchanges/best/decentralized" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Decentralized</a>
+</nav>

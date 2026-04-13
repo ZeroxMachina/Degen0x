@@ -131,6 +131,16 @@ EigenLayer has spawned an entire ecosystem of Liquid Restaking Token (LRT) proto
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "EigenLayer Review 2026: Restaking, Yields, Pros & Cons", "description": "Our in-depth EigenLayer review covers restaking mechanics, AVS rewards, risks, and whether it's the right protocol for boosting your staking yields. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/eigenlayer", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/investing/staking/reviews/coinbase-staking" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Coinbase Staking</a>
+  <a href="/investing/staking/reviews/jito" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Jito</a>
+  <a href="/investing/staking/reviews/kraken-staking" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Kraken Staking</a>
+  <a href="/investing/staking/reviews/lido" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Lido</a>
+  <a href="/investing/staking/reviews/marinade" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Marinade</a>
+  <a href="/investing/staking/reviews/rocket-pool" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rocket Pool</a>
+  <a href="/investing/staking/reviews/stakewise" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Stakewise</a>
+</nav>
+      </>
   );
 }

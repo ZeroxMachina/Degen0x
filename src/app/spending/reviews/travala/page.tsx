@@ -135,6 +135,17 @@ The AVA token powers Travala's loyalty ecosystem. By staking AVA tokens, users u
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Booking Experience", "description": "Detailed Travala review covering crypto travel booking, supported cryptocurrencies, loyalty rewards, hotel and flight options, and whether Travala is the best", "url": "https://degen0x.com/spending/reviews/travala", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/spending/reviews/bitpay" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitpay</a>
+  <a href="/spending/reviews/bitpay-app" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitpay App</a>
+  <a href="/spending/reviews/coingate" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Coingate</a>
+  <a href="/spending/reviews/crypto-com-pay" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Pay</a>
+  <a href="/spending/reviews/flexa" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Flexa</a>
+  <a href="/spending/reviews/fold-app" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Fold App</a>
+  <a href="/spending/reviews/lolli" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Lolli</a>
+  <a href="/spending/reviews/moon-browser" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Moon Browser</a>
+</nav>
+      </>
   );
 }

@@ -122,3 +122,14 @@ export default function MultiSigWalletsPage() {
     </LearnPage>
   );
 }
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/wallets/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>[Slug]</a>
+  <a href="/wallets/learn/custodial-vs-non-custodial" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Custodial Vs Non Custodial</a>
+  <a href="/wallets/learn/hot-vs-cold-wallets" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Hot Vs Cold Wallets</a>
+  <a href="/wallets/learn/how-to-set-up-wallet" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>How To Set Up Wallet</a>
+  <a href="/wallets/learn/how-to-transfer-crypto" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>How To Transfer Crypto</a>
+  <a href="/wallets/learn/seed-phrase-explained" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Seed Phrase Explained</a>
+  <a href="/wallets/learn/wallet-backup-guide" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Wallet Backup Guide</a>
+  <a href="/wallets/learn/wallet-security-best-practices" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Wallet Security Best Practices</a>
+</nav>

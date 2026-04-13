@@ -28,6 +28,17 @@ export default function MemecoinIndexPage() {
       <MemecoinIndexClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Meme Coin Index & Tracker 2026 \u2014 Live Prices, Volume & Trends | degen0x", "description": "Track meme coins in real-time. Compare DOGE, SHIB, PEPE, WIF, BONK and more by price, volume, market cap, and social sentiment. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.", "url": "https://degen0x.com/tools/memecoin-index", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-</>
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/tools/advanced-charting" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Advanced Charting</a>
+  <a href="/tools/ai-trading-signals" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Ai Trading Signals</a>
+  <a href="/tools/airdrop-eligibility" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Airdrop Eligibility</a>
+  <a href="/tools/airdrop-tracker" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Airdrop Tracker</a>
+  <a href="/tools/alerts-dashboard" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Alerts Dashboard</a>
+  <a href="/tools/altcoin-etf-tracker" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Altcoin Etf Tracker</a>
+  <a href="/tools/altcoin-season-index" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Altcoin Season Index</a>
+  <a href="/tools/backtesting-engine" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Backtesting Engine</a>
+</nav>
+      </>
   );
 }

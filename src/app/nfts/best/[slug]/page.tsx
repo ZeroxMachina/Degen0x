@@ -40,3 +40,14 @@ export default async function DynamicPage({ params }: Props) {
       />    </LearnPageLayout>
   );
 }
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/nfts/best/art" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Art</a>
+  <a href="/nfts/best/beginners" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Beginners</a>
+  <a href="/nfts/best/bitcoin-ordinals" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitcoin Ordinals</a>
+  <a href="/nfts/best/creators" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Creators</a>
+  <a href="/nfts/best/ethereum" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Ethereum</a>
+  <a href="/nfts/best/free-mint" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Free Mint</a>
+  <a href="/nfts/best/gaming" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Gaming</a>
+  <a href="/nfts/best/low-fee" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Low Fee</a>
+</nav>

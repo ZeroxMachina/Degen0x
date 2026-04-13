@@ -163,6 +163,17 @@ export default function BitMartReviewPage() {
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Selection & Listings", "description": "BitMart is a centralized crypto exchange offering 1,000+ tokens with a focus on altcoin variety, futures trading, and fiat on-ramp accessibility across 180+", "url": "https://degen0x.com/exchanges/reviews/bitmart", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/exchanges/reviews/backpack" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Backpack</a>
+  <a href="/exchanges/reviews/backpack-exchange" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Backpack Exchange</a>
+  <a href="/exchanges/reviews/binance" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Binance</a>
+  <a href="/exchanges/reviews/bingx" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bingx</a>
+  <a href="/exchanges/reviews/bitfinex" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitfinex</a>
+  <a href="/exchanges/reviews/bitget" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitget</a>
+  <a href="/exchanges/reviews/bitmex" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitmex</a>
+  <a href="/exchanges/reviews/bitstamp" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitstamp</a>
+</nav>
+      </>
   );
 }

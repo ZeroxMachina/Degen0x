@@ -60,6 +60,17 @@ export default function ZenLedgerReview() {
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Key Features", "description": "ZenLedger is a crypto tax software that supports a wide range of exchanges and DeFi protocols with CPA-friendly reporting.", "url": "https://degen0x.com/taxes/reviews/zenledger", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/taxes/reviews/accointing" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Accointing</a>
+  <a href="/taxes/reviews/coinledger" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Coinledger</a>
+  <a href="/taxes/reviews/coinpanda" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Coinpanda</a>
+  <a href="/taxes/reviews/cointracker" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Cointracker</a>
+  <a href="/taxes/reviews/cryptotaxcalculator" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Cryptotaxcalculator</a>
+  <a href="/taxes/reviews/hr-block-crypto" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Hr Block Crypto</a>
+  <a href="/taxes/reviews/koinly" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Koinly</a>
+  <a href="/taxes/reviews/taxbit" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Taxbit</a>
+</nav>
+      </>
   );
 }

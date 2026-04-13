@@ -95,6 +95,15 @@ Ramp handles all compliance, KYC, payment processing, and conversion logistics b
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Ramp Network review: Crypto on-ramps for businesses and users. Buy crypto with fiat in 100+ countries. Compare fees, methods, speed to competitors.", "url": "https://degen0x.com/web3-business/reviews/ramp-network", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/web3-business/reviews/bitpay-business" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitpay Business</a>
+  <a href="/web3-business/reviews/coinbase-commerce" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Coinbase Commerce</a>
+  <a href="/web3-business/reviews/sablier" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Sablier</a>
+  <a href="/web3-business/reviews/stripe-crypto" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Stripe Crypto</a>
+  <a href="/web3-business/reviews/superfluid" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Superfluid</a>
+  <a href="/web3-business/reviews/utrust" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Utrust</a>
+</nav>
+      </>
   );
 }

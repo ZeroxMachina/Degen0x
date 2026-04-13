@@ -935,6 +935,17 @@ export default function DYORTokenResearchGuidePage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DYOR Crypto: How to Research Any Token Before Buying (2026)", "description": "Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and how to evaluate tokenomics and", "url": "https://degen0x.com/learn/dyor-token-research-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-</>
+<nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/learn/[slug]" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>[Slug]</a>
+  <a href="/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Aave V4 Gho Stablecoin Defi Lending Guide 2026</a>
+  <a href="/learn/aave-v4-guide" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Aave V4 Guide</a>
+  <a href="/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Abstract Chain Consumer Crypto Zk Rollup Guide 2026</a>
+  <a href="/learn/abstract-chain-guide" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Abstract Chain Guide</a>
+  <a href="/learn/account-abstraction" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Account Abstraction</a>
+  <a href="/learn/account-abstraction-erc-4337-guide" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Account Abstraction Erc 4337 Guide</a>
+  <a href="/learn/advanced-defi-strategies" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Advanced Defi Strategies</a>
+</nav>
+      </>
   );
 }

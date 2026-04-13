@@ -40,3 +40,12 @@ export default async function DynamicPage({ params }: Props) {
       />    </LearnPageLayout>
   );
 }
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/spending/best/cashback" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Cashback</a>
+  <a href="/spending/best/debit-cards" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Debit Cards</a>
+  <a href="/spending/best/merchants" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Merchants</a>
+  <a href="/spending/best/payment-apps" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Payment Apps</a>
+  <a href="/spending/best/rewards" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rewards</a>
+  <a href="/spending/best/travel" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Travel</a>
+</nav>

@@ -103,3 +103,7 @@ export default function BitPayVsCoinGatePage() {
     </LearnPageLayout>
   );
 }
+      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/spending/compare/crypto-com-pay-vs-bitpay" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Pay Vs Bitpay</a>
+</nav>

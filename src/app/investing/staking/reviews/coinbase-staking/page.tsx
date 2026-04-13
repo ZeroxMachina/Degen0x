@@ -131,6 +131,16 @@ Coinbase Staking is the most accessible staking option for beginners, particular
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Staking Review 2026: Fees, Yields, Pros & Cons", "description": "Our in-depth Coinbase Staking review covers yields, fees, cbETH, supported assets, and whether it's the right staking service for you. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/coinbase-staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/investing/staking/reviews/eigenlayer" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Eigenlayer</a>
+  <a href="/investing/staking/reviews/jito" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Jito</a>
+  <a href="/investing/staking/reviews/kraken-staking" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Kraken Staking</a>
+  <a href="/investing/staking/reviews/lido" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Lido</a>
+  <a href="/investing/staking/reviews/marinade" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Marinade</a>
+  <a href="/investing/staking/reviews/rocket-pool" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rocket Pool</a>
+  <a href="/investing/staking/reviews/stakewise" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Stakewise</a>
+</nav>
+      </>
   );
 }

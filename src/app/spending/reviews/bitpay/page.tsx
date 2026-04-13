@@ -149,6 +149,17 @@ For merchants, BitPay processes over one billion dollars in crypto payments annu
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BitPay Debit Card Experience", "description": "Comprehensive BitPay review covering crypto payment processing, debit card features, supported currencies, fees, and whether BitPay is the right crypto", "url": "https://degen0x.com/spending/reviews/bitpay", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/spending/reviews/bitpay-app" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitpay App</a>
+  <a href="/spending/reviews/coingate" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Coingate</a>
+  <a href="/spending/reviews/crypto-com-pay" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Pay</a>
+  <a href="/spending/reviews/flexa" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Flexa</a>
+  <a href="/spending/reviews/fold-app" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Fold App</a>
+  <a href="/spending/reviews/lolli" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Lolli</a>
+  <a href="/spending/reviews/moon-browser" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Moon Browser</a>
+  <a href="/spending/reviews/nowpayments" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Nowpayments</a>
+</nav>
+      </>
   );
 }

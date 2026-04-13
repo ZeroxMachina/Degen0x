@@ -47,6 +47,17 @@ export default function AaveLoansReview() {
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave Loans Review 2026: DeFi Borrowing Guide", "description": "In-depth review of borrowing on Aave. Covers rates, collateral options, liquidation mechanics, multi-chain availability, and borrowing tips. Updated March 2026.", "url": "https://degen0x.com/crypto-loans/reviews/aave-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/crypto-loans/reviews/abracadabra" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Abracadabra</a>
+  <a href="/crypto-loans/reviews/benqi-loans" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Benqi Loans</a>
+  <a href="/crypto-loans/reviews/celsius" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Celsius</a>
+  <a href="/crypto-loans/reviews/celsius-successor" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Celsius Successor</a>
+  <a href="/crypto-loans/reviews/compound-loans" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Compound Loans</a>
+  <a href="/crypto-loans/reviews/ledn" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Ledn</a>
+  <a href="/crypto-loans/reviews/liquity" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Liquity</a>
+  <a href="/crypto-loans/reviews/makerdao" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Makerdao</a>
+</nav>
+      </>
   );
 }

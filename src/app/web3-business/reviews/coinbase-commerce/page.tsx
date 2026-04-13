@@ -95,6 +95,15 @@ The simplicity of integration makes it accessible to businesses of all sizes. Pa
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Coinbase Commerce review: Accept crypto payments for your business. Compare fees, features, settlement times, and alternative payment processors.", "url": "https://degen0x.com/web3-business/reviews/coinbase-commerce", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/web3-business/reviews/bitpay-business" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitpay Business</a>
+  <a href="/web3-business/reviews/ramp-network" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Ramp Network</a>
+  <a href="/web3-business/reviews/sablier" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Sablier</a>
+  <a href="/web3-business/reviews/stripe-crypto" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Stripe Crypto</a>
+  <a href="/web3-business/reviews/superfluid" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Superfluid</a>
+  <a href="/web3-business/reviews/utrust" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Utrust</a>
+</nav>
+      </>
   );
 }

@@ -64,6 +64,15 @@ export default function BridgeMutualReviewPage() {
     />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Permissionless Pool Creation", "description": "Bridge Mutual is a decentralized discretionary coverage platform that allows anyone to create and manage insurance pools for smart contracts, stablecoins, and", "url": "https://degen0x.com/insurance/reviews/bridge-mutual", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-    </>
+    <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
+  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
+  <a href="/insurance/reviews/insurace" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Insurace</a>
+  <a href="/insurance/reviews/nexus-mutual" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Nexus Mutual</a>
+  <a href="/insurance/reviews/risk-harbor" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Risk Harbor</a>
+  <a href="/insurance/reviews/sherlock" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Sherlock</a>
+  <a href="/insurance/reviews/solace" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Solace</a>
+  <a href="/insurance/reviews/unslashed" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Unslashed</a>
+</nav>
+      </>
   );
 }
