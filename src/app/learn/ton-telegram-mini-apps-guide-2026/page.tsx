@@ -106,6 +106,16 @@ const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, 
 const infoBoxStyle: React.CSSProperties = { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
 
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Ton Telegram Mini Apps Guide 2026', },
+  ],
+};
+
 export default function TONTelegramMiniAppsGuide() {
   const tableOfContents = [
     { id: 'what-is-ton', title: 'What Is TON (The Open Network)?' },
@@ -188,6 +198,7 @@ export default function TONTelegramMiniAppsGuide() {
 
   return (
     <article id="top" style={{ background: '#080d1c', color: '#e6edf3', minHeight: '100vh', padding: 'clamp(20px, 4vw, 40px) 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style dangerouslySetInnerHTML={{ __html: `
         .degen-link:hover { color: #6366f1 !important; text-decoration: underline !important; }
         .degen-link:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; border-radius: 2px; }

@@ -11,7 +11,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Ways to Spend Crypto in ${CURRENT_YEAR} - Cards, Apps & More | ${SITE_NAME}`,
   description: `Compare the best crypto debit cards, payment apps, and spending options in ${CURRENT_YEAR}. Expert reviews of Crypto.com Visa, Coinbase Card, BitPay, and more.`,
-  alternates: { canonical: "/spending/best" }};
+  alternates: { canonical: "/spending/best" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const topSpendingProducts: Product[] = [
   {
@@ -110,6 +112,16 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', },
+  ],
+};
+
 export default function BestSpendingPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -121,6 +133,7 @@ export default function BestSpendingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

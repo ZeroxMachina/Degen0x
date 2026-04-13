@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Fixed Rate DeFi Lending ${CURRENT_YEAR} - Predictable Yield`,
   description: `Compare the best fixed-rate DeFi lending protocols in ${CURRENT_YEAR}. Lock in predictable yields without worrying about rate volatility.`,
-  alternates: { canonical: "/defi-lending/best/fixed-rate" }};
+  alternates: { canonical: "/defi-lending/best/fixed-rate" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -59,9 +61,21 @@ const faqs: FAQ[] = [
   { question: "What happens if I need my funds before the fixed term ends?", answer: "Most fixed-rate protocols allow early exit through secondary markets, but you may receive less than expected if market rates have changed. Pendle allows selling PT tokens on their AMM, while Notional allows unwinding positions before maturity with a potential penalty or bonus depending on rate movements." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/defi-lending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Fixed Rate', },
+  ],
+};
+
 export default function FixedRatePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

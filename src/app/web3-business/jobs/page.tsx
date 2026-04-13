@@ -7,7 +7,9 @@ export const metadata: Metadata = {
   title: "Crypto & Web3 Jobs Board 2026 — Find Your Next Role in",
   description:
     "Browse the top crypto, DeFi, and Web3 jobs in 2026. Find roles at leading exchanges, DAOs, Layer 1s, and DeFi protocols. Remote & on-site positions.",
-  alternates: { canonical: "/web3-business/jobs" }};
+  alternates: { canonical: "/web3-business/jobs" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const JOB_LISTINGS = [
   {
@@ -229,9 +231,20 @@ const FEATURED_COMPANIES = [
   { name: "Paradigm", color: "#6366f1", logo: "PDM", openRoles: 5 },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Web3 Business', item: 'https://degen0x.com/web3-business' },
+    { '@type': 'ListItem', position: 3, name: 'Jobs', },
+  ],
+};
+
 export default function CryptoJobsPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--color-bg)" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Hero */}
       <section
         className="relative overflow-hidden"

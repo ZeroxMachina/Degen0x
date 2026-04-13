@@ -10,11 +10,25 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `eToro vs Coinbase: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of eToro vs Coinbase. Compare fees, copy trading, coin selection, and features to find which crypto platform is right for you.",
-  alternates: { canonical: "/exchanges/compare/etoro-vs-coinbase" }};
+  alternates: { canonical: "/exchanges/compare/etoro-vs-coinbase" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/exchanges/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Etoro Vs Coinbase', },
+  ],
+};
 
 export default function EtoroVsCoinbasePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "eToro vs Coinbase", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">eToro vs Coinbase: Which Crypto Platform Is Better in {CURRENT_YEAR}?</h1>

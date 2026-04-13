@@ -93,6 +93,16 @@ const structuredData = {
   },
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Insurance', item: 'https://degen0x.com/insurance' },
+    { '@type': 'ListItem', position: 3, name: 'Defi Insurance Protocols Comparison', },
+  ],
+};
+
 export default function DeFiInsuranceProtocolsComparison() {
   const infoBoxStyle = {
     background: "#161b22",
@@ -184,6 +194,7 @@ export default function DeFiInsuranceProtocolsComparison() {
         scrollBehavior: "smooth",
       }}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

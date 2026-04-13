@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `KuCoin vs Binance (${CURRENT_YEAR}): Which Exchange Is Better? | ${SITE_NAME}`,
   description: `KuCoin vs Binance comparison for ${CURRENT_YEAR}. Compare altcoin selection, trading bots, fees, liquidity, and features to choose the best exchange for your needs.`,
-  alternates: { canonical: "/exchanges/kucoin-vs-binance" }};
+  alternates: { canonical: "/exchanges/kucoin-vs-binance" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "KuCoin", slug: "kucoin", rating: 4.5, affiliateUrl: "https://degen0x.com/go/kucoin", features: { "Trading Fees": "0.1% spot (0.08% with KCS)", "Coins Listed": "800+", "Futures": "Up to 100x leverage", "Trading Bots": "Yes (built-in)", "Token Variety": "Best in class", "Daily Volume": "$2B+", "Founded": "2017", "Headquarters": "Seychelles / Hong Kong" } },
@@ -21,9 +23,20 @@ const items: ComparisonItem[] = [
 
 const features = ["Trading Fees", "Coins Listed", "Futures", "Trading Bots", "Token Variety", "Daily Volume", "Founded", "Headquarters"];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Kucoin Vs Binance', },
+  ],
+};
+
 export default function KuCoinVsBinancePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

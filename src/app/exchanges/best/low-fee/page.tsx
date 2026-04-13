@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Cheapest Crypto Exchanges in ${CURRENT_YEAR} - Lowest Fee Comparison`,
   description: `Find the crypto exchanges with the lowest trading fees in ${CURRENT_YEAR}. Compare maker/taker fees, withdrawal costs, and hidden charges across top platforms.`,
-  alternates: { canonical: "/exchanges/best/low-fee" }};
+  alternates: { canonical: "/exchanges/best/low-fee" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const lowFeeExchanges = [
   exchanges.find((e) => e.slug === "binance")!,
@@ -45,9 +47,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/exchanges/best' },
+    { '@type': 'ListItem', position: 4, name: 'Low Fee', },
+  ],
+};
+
 export default function LowFeeExchangesPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -88,6 +88,16 @@ const structuredData = {
   ],
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best Wallet For Staking', },
+  ],
+};
+
 export default function BestWalletForStakingPage() {
   const containerStyle: React.CSSProperties = {
     background: '#0d1117',
@@ -199,6 +209,7 @@ export default function BestWalletForStakingPage() {
 
   return (
     <article id="top" style={containerStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <div style={contentWrapperStyle}>

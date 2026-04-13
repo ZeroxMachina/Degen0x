@@ -10,11 +10,22 @@ export const metadata: Metadata = {
   title: `Crypto Investing Guide ${CURRENT_YEAR} - Best Tokens, Strategies & Tools`,
   description: `Your complete crypto investing resource. Compare top cryptocurrencies, staking platforms, ETFs, trading bots, and learn proven investment strategies. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.`,
   alternates: { canonical: "/investing" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', },
+  ],
 };
 
 export default function InvestingHubPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

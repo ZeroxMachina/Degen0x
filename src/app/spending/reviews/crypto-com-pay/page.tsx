@@ -8,11 +8,24 @@ export const metadata: Metadata = {
   title: `Crypto.com Pay Review (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Crypto.com Pay review for ${CURRENT_YEAR}. Merchant payments, supported cryptos, CRO cashback, integration options, fees, and user experience.`,
   alternates: { canonical: "/spending/reviews/crypto-com-pay" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Crypto Com Pay', },
+  ],
 };
 
 export default function CryptoComPayReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Crypto.com Pay",
         slug: "crypto-com-pay",
@@ -77,5 +90,7 @@ export default function CryptoComPayReviewPage() {
         { title: "Stablecoin Payments", href: "/spending/learn/stablecoin-payments" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

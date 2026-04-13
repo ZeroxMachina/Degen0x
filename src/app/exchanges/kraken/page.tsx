@@ -9,11 +9,24 @@ const product = exchanges.find((e) => e.slug === "kraken")!;
 export const metadata: Metadata = {
   title: "Kraken Review 2026: Fees, Security Features, Pros & Cons",
   description: "In-depth Kraken review covering security track record, regulatory compliance, advanced trading features, and competitive fees. Is Kraken right for you? Updated",
-  alternates: { canonical: "/exchanges/kraken" }};
+  alternates: { canonical: "/exchanges/kraken" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Kraken', },
+  ],
+};
 
 export default function KrakenReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -149,5 +162,7 @@ Kraken's strategic focus centers on security, professional trading features, and
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

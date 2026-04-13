@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Polkadot (DOT) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Polkadot investment guide for ${CURRENT_YEAR}. Learn about DOT fundamentals, parachains, interoperability, staking, and how to buy Polkadot.`,
   alternates: { canonical: "/investing/crypto/polkadot" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What is Polkadot used for?", answer: "Polkadot enables cross-blockchain interoperability through its parachain architecture. It allows specialized blockchains to connect and share security while maintaining their own governance and functionality. DOT is used for governance, staking, and bonding for parachain slots." },
@@ -21,9 +22,21 @@ const faqs = [
   { question: "Is Polkadot still relevant?", answer: "Polkadot continues to innovate with features like asynchronous backing and the transition from parachain auctions to on-demand coretime. However, it faces strong competition from cross-chain bridges and messaging protocols. Its relevance depends on ecosystem growth and developer adoption of the parachain model." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Polkadot', },
+  ],
+};
+
 export default function PolkadotPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `Club Card Review (${CURRENT_YEAR}): Multi-Crypto Spending Card | ${SITE_NAME}`,
   description: "In-depth Club Card review covering multi-currency support, fees, exchange rates, and how it compares to other crypto debit cards.",
-  alternates: { canonical: "/crypto-cards/reviews/club-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/club-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Club Card', },
+  ],
+};
 
 export default function ClubCardReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -50,5 +64,7 @@ export default function ClubCardReview() {
         { title: "Crypto Card Fees Explained", href: "/crypto-cards/learn/crypto-card-fees-explained" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

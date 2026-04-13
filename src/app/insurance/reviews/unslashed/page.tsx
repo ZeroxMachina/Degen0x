@@ -21,11 +21,25 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Unslashed Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Unslashed Finance review covering insurance coverage types, capital efficiency, claim process, and comparison with other DeFi insurance protocols.",
-  alternates: { canonical: "/insurance/reviews/unslashed" }};
+  alternates: { canonical: "/insurance/reviews/unslashed" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Insurance', item: 'https://degen0x.com/insurance' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/insurance/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Unslashed', },
+  ],
+};
 
 export default function UnslashedReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Insurance"
       categorySlug="insurance"
@@ -48,5 +62,7 @@ export default function UnslashedReviewPage() {
       relatedReviews={[{ name: "Nexus Mutual", slug: "/insurance/reviews/nexus-mutual" }, { name: "InsurAce", slug: "/insurance/reviews/insurace" }]}
       relatedGuides={[{ title: "Complete Crypto Insurance Guide", href: "/insurance/learn/crypto-insurance-guide" }, { title: "Insurance Protocols Compared", href: "/insurance/learn/insurance-protocols-compared" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Shiba Inu (SHIB) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Shiba Inu investment guide for ${CURRENT_YEAR}. Learn about SHIB fundamentals, Shibarium L2, token burns, risks, and how to buy Shiba Inu.`,
   alternates: { canonical: "/investing/crypto/shiba-inu" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Shiba Inu a good investment?", answer: "Shiba Inu is a highly speculative meme coin. While it has built a large community and is developing real utility through Shibarium (its Layer 2 network), the token's value is still heavily driven by social media sentiment and speculative trading. The massive circulating supply means significant price appreciation requires enormous capital inflows. Keep SHIB exposure small." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "How does the SHIB burn mechanism work?", answer: "SHIB tokens are burned (permanently removed from circulation) through multiple mechanisms: Shibarium transaction fee burns, community burn events, and partner burn programs. While the total supply started at 1 quadrillion tokens, trillions have been burned. However, the burn rate relative to total supply means it would take many years for burns to significantly impact the per-token price." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Shiba Inu', },
+  ],
+};
+
 export default function ShibaInuPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

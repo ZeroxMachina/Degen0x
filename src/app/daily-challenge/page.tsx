@@ -24,9 +24,19 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/daily-challenge" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Daily Challenge', },
+  ],
+};
+
 export default function DailyChallengePage() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

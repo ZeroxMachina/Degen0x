@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Moonwell Review ${CURRENT_YEAR}: Base & Moonbeam Lending Protocol`,
   description:
     "Complete Moonwell review covering lending markets on Base and Moonbeam, yield rates, governance, safety features, and how it compares to alternatives.",
-  alternates: { canonical: "/defi-lending/reviews/moonwell" }};
+  alternates: { canonical: "/defi-lending/reviews/moonwell" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Moonwell', },
+  ],
+};
 
 export default function MoonwellReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Moonwell",
         slug: "moonwell",
@@ -64,5 +78,7 @@ export default function MoonwellReview() {
         { title: "DeFi on Polkadot", href: "/defi-lending/learn/defi-on-polkadot" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

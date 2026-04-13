@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto to Buy Today (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top cryptocurrencies to buy in ${CURRENT_YEAR}. Expert picks based on fundamentals, growth potential, and risk-adjusted value across market cap tiers.`,
-  alternates: { canonical: "/investing/best/buy-today" }};
+  alternates: { canonical: "/investing/best/buy-today" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.9, description: "The foundational crypto asset with the strongest network effect, institutional adoption, and proven track record. Bitcoin ETFs have opened access to", pros: ["Strongest brand and network effect", "ETF-driven institutional demand", "Fixed 21M supply cap"], cons: ["Lower growth potential than smaller assets", "No smart contract functionality", "Energy-intensive mining"], bestFor: "Core portfolio holding for all crypto investors", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "How much should I invest in crypto?", answer: "Most financial advisors recommend 5-10% of your investment portfolio for moderate risk tolerance, with never more than you can afford to lose entirely. Start small, learn the market dynamics, and increase allocation as your understanding grows. Always maintain emergency savings in fiat before investing in volatile assets." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Buy Today', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

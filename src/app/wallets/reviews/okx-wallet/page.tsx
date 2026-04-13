@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `OKX Wallet Review (${CURRENT_YEAR}) - Multi-Chain Web3 Wallet | ${SITE_NAME}`,
   description: `Complete OKX Wallet review for ${CURRENT_YEAR}. Covers 80+ chain support, DEX aggregator, MPC wallet option, NFT marketplace, and OKX integration.`,
-  alternates: { canonical: "/wallets/reviews/okx-wallet" }};
+  alternates: { canonical: "/wallets/reviews/okx-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "OKX Wallet is the self-custody wallet arm of OKX, one of the world's largest cryptocurrency exchanges. The wallet has evolved into a comprehensive Web3 gateway supporting 80+ blockchains, with a built-in DEX aggregator, cross-chain bridge, NFT marketplace, and inscription tools. OKX Wallet is available as a mobile app (iOS and Android) and a browser extension.\n\nWhat sets OKX Wallet apart is its combination of breadth and depth. The DEX aggregator checks prices across hundreds of liquidity sources across all supported chains. The wallet offers both traditional seed phrase accounts and MPC (multi-party computation) wallet accounts for seedless recovery. The deep integration with OKX exchange allows seamless movement between self-custody and centralized exchange trading.";
@@ -131,9 +133,21 @@ const relatedGuides = [
   { title: "Custodial vs Non-Custodial", href: "/wallets/learn/custodial-vs-non-custodial" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Okx Wallet', },
+  ],
+};
+
 export default function OKXWalletReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -146,5 +160,7 @@ export default function OKXWalletReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Dogecoin (DOGE) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Dogecoin investment guide for ${CURRENT_YEAR}. Learn about DOGE fundamentals, community, meme coin status, risks, and how to buy Dogecoin.`,
   alternates: { canonical: "/investing/crypto/dogecoin" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Dogecoin a good investment?", answer: "Dogecoin is a high-risk, speculative investment driven primarily by community sentiment and social media attention rather than technological fundamentals. It has one of the strongest brand recognitions in crypto and benefits from celebrity endorsements. However, its unlimited supply and lack of smart contract functionality make it riskier than utility-driven tokens." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "Why does Elon Musk support Dogecoin?", answer: "Elon Musk has publicly endorsed Dogecoin on multiple occasions, calling it 'the people's crypto.' His tweets have historically caused significant price movements. Musk's support appears rooted in Dogecoin's community-driven nature and its origins as a lighthearted alternative to Bitcoin. Tesla briefly accepted DOGE for merchandise, demonstrating real commercial utility." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Dogecoin', },
+  ],
+};
+
 export default function DogecoinPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

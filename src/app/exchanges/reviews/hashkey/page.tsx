@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `HashKey Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth HashKey Exchange review covering this licensed Hong Kong crypto exchange's fees, supported assets, security, and regulatory compliance.",
-  alternates: { canonical: "/exchanges/reviews/hashkey" }};
+  alternates: { canonical: "/exchanges/reviews/hashkey" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Hashkey', },
+  ],
+};
 
 export default function HashKeyReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "HashKey Exchange",
         slug: "hashkey",
@@ -67,5 +81,7 @@ The exchange serves both retail and professional investors, offering spot tradin
         { title: "KYC Verification Guide", href: "/exchanges/learn/kyc-verification-guide" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

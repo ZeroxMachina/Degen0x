@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Hot vs Cold Wallets (${CURRENT_YEAR}) - Which Should You Use? | ${SITE_NAME}`,
   description: `Hot wallet vs cold wallet comparison for ${CURRENT_YEAR}. Security, convenience, cost, and best use cases for each wallet type explained.`,
-  alternates: { canonical: "/wallets/compare/hot-vs-cold-wallets" }};
+  alternates: { canonical: "/wallets/compare/hot-vs-cold-wallets" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Hot Wallets", slug: "hot-wallets", rating: 4.0, affiliateUrl: "#", features: { "Internet Connection": "Always connected", "Key Storage": "Device or browser", Cost: "Free", "Setup Time": "Minutes", "Transaction Speed": "Instant signing", "DeFi Access": "Seamless", "Security Level": "Moderate", Recovery: "Seed phrase", "Best For": "Daily use, DeFi, trading", Examples: "MetaMask, Phantom, Trust Wallet" } },
@@ -23,9 +25,21 @@ const faqs = [
   { question: "How much crypto should I keep in a hot wallet?", answer: "Only what you need for active trading and DeFi. A guideline is no more than 10-20% of your total portfolio or an amount you would be comfortable losing entirely. Anything held long-term should be in cold storage." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Hot Vs Cold Wallets', },
+  ],
+};
+
 export default function HotVsColdWalletsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

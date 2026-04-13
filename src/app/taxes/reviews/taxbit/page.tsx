@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `TaxBit Review (${CURRENT_YEAR}) - Free Crypto Tax Reports | ${SITE_NAME}`,
   description: `In-depth TaxBit review for ${CURRENT_YEAR}. Enterprise-grade crypto tax compliance with free tax reports through partner exchanges. Pricing, features, and accuracy.`,
-  alternates: { canonical: "/taxes/reviews/taxbit" }};
+  alternates: { canonical: "/taxes/reviews/taxbit" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "overview", title: "Overview", level: 2 },
@@ -28,9 +30,21 @@ const faqs = [
   { question: "Does TaxBit support DeFi?", answer: "TaxBit has basic DeFi support but it is not as comprehensive as Koinly or CryptoTaxCalculator. For heavy DeFi users, consider alternatives. TaxBit is strongest for standard exchange-based trading and is trusted by major exchanges for their built-in tax reporting." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/taxes/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Taxbit', },
+  ],
+};
+
 export default function TaxBitReviewPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Taxes", href: "/taxes" },

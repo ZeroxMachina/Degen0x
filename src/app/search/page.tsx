@@ -8,13 +8,24 @@ export const metadata: Metadata = {
   title: "Search — Crypto Tools",
   description: "Explore Search on degen0x. Free crypto tools and in-depth analysis.",
   alternates: { canonical: "https://degen0x.com/search" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Search', },
+  ],
+};
 
 export default function SearchPage() {
   return (
     <Suspense fallback={
       <div className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

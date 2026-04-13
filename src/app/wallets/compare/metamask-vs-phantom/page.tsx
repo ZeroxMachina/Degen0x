@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `MetaMask vs Phantom (${CURRENT_YEAR}) - Which Wallet Is Better? | ${SITE_NAME}`,
   description: `MetaMask vs Phantom side-by-side comparison for ${CURRENT_YEAR}. Chain support, DeFi features, NFTs, fees, and user experience compared.`,
-  alternates: { canonical: "/wallets/compare/metamask-vs-phantom" }};
+  alternates: { canonical: "/wallets/compare/metamask-vs-phantom" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Should I use MetaMask or Phantom?", answer: "If you primarily use Ethereum and EVM chains, MetaMask has the broadest dApp compatibility. If you use Solana or want the best NFT experience, Phantom is the better choice. If you use both ecosystems, you can install both wallets in the same browser and use them for their respective strengths." },
@@ -21,6 +23,17 @@ const faqs = [
   { question: "Which is more secure?", answer: "MetaMask is fully open-source, which provides transparency for security auditing. Phantom includes transaction simulation that previews outcomes before signing. Both support hardware wallet integration. Neither is objectively more secure than the other, but their security approaches differ." },
   { question: "Does Phantom support Ethereum?", answer: "Yes. Phantom added Ethereum and Polygon support, making it a multi-chain wallet. However, MetaMask has deeper EVM integration with more extensive dApp compatibility, custom RPC support, and the MetaMask Snaps extension system for additional functionality." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Metamask Vs Phantom', },
+  ],
+};
 
 export default function MetaMaskVsPhantomPage() {
   const items = [
@@ -35,6 +48,7 @@ export default function MetaMaskVsPhantomPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

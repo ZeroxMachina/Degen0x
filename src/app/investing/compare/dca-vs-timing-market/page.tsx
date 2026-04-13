@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `DCA vs Timing the Market (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Dollar-cost averaging vs market timing comparison for ${CURRENT_YEAR}. Which crypto investment strategy produces better returns with less stress and risk.` ,
-  alternates: { canonical: "/investing/compare/dca-vs-timing-market" }};
+  alternates: { canonical: "/investing/compare/dca-vs-timing-market" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Dollar-Cost Averaging (DCA)", slug: "dca", rating: 4.7, affiliateUrl: "#", features: { "Strategy": "Fixed amount at fixed intervals", "Timing Skill Required": "None", "Emotional Discipline": "Low (automated decisions)", "Entry Price": "Average of all purchase prices", "Best Market For": "Works in all market conditions", "Risk of Mistiming": "None (systematic buying)", "Time Commitment": "Minimal (set and forget)", "Historical Performance": "Strong risk-adjusted returns", "Psychological Benefit": "Reduces decision fatigue and regret", "Implementation": "Easy (most exchanges offer auto-buy)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Can you combine DCA with market timing?", answer: "Yes, a hybrid approach called value averaging or enhanced DCA can work well. Maintain your regular DCA schedule as the baseline, but increase purchase amounts when prices drop significantly below moving averages, and reduce amounts (but don't stop) when prices are at extreme highs. This disciplined approach captures the reliability of DCA while adding modest timing benefits without requiring perfect timing ability." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Dca Vs Timing Market', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

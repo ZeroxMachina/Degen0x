@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: `Best Crypto Trading Platforms ${CURRENT_YEAR} - Top Exchanges Compared`,
   description: `Compare the best crypto trading platforms for ${CURRENT_YEAR}. Expert reviews of fees, security, features, and supported assets across top exchanges.`,
   alternates: { canonical: "/investing/best/trading-platforms" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "top-picks", title: "Top Trading Platforms", level: 2 },
@@ -24,9 +25,21 @@ const toc = [
   { id: "faq", title: "FAQ", level: 2 },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Trading Platforms', },
+  ],
+};
+
 export default function BestTradingPlatformsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

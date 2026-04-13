@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: `Best Crypto Copy Trading Platforms ${CURRENT_YEAR} - Follow Top Traders`,
   description: `Compare the best crypto copy trading platforms for ${CURRENT_YEAR}. Automatically replicate trades from experienced traders on Bybit, OKX, eToro, and more.`,
   alternates: { canonical: "/investing/best/copy-trading" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "top-picks", title: "Top Copy Trading Platforms", level: 2 },
@@ -23,9 +24,21 @@ const toc = [
   { id: "faq", title: "FAQ", level: 2 },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Copy Trading', },
+  ],
+};
+
 export default function BestCopyTradingPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

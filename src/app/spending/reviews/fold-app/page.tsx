@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Fold App Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description:
     "Complete Fold App review covering Bitcoin rewards debit card, daily spin wheel, Lightning Network integration, and how to earn Bitcoin on everyday purchases.",
-  alternates: { canonical: "/spending/reviews/fold-app" }};
+  alternates: { canonical: "/spending/reviews/fold-app" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Fold App', },
+  ],
+};
 
 export default function FoldAppReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Fold App",
         slug: "fold-app",
@@ -121,5 +135,7 @@ The Fold+ premium subscription unlocks enhanced reward rates, additional daily s
         { title: "Where to Spend Crypto", href: "/spending/learn/where-to-spend-crypto" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

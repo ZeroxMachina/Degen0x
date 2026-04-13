@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Cosmos vs Polkadot (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Cosmos vs Polkadot comparison for ${CURRENT_YEAR}. Two leading interoperability protocols compared on architecture, ecosystem, staking, and investment thesis.` ,
-  alternates: { canonical: "/investing/compare/cosmos-vs-polkadot" }};
+  alternates: { canonical: "/investing/compare/cosmos-vs-polkadot" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Cosmos (ATOM)", slug: "cosmos", rating: 4.3, affiliateUrl: "#", features: { "Architecture": "Hub-and-Zone (sovereign chains)", "Interoperability": "IBC (Inter-Blockchain Communication)", "Consensus": "Tendermint BFT / CometBFT", "Chain Sovereignty": "Full (each chain governs itself)", "Development Framework": "Cosmos SDK", "Staking Yield": "15-20%", "Notable Chains": "Osmosis, Celestia, dYdX, Injective", "Shared Security": "Optional (Interchain Security)", "Token Utility": "Hub staking, governance, ICS security", "Cross-Chain Speed": "~30 seconds (IBC transfers)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Is ATOM or DOT a better investment?", answer: "ATOM has faced criticism for unclear value accrual — IBC works without requiring ATOM, though Interchain Security and ATOM as a hub staking token address this. DOT has clearer value accrual through parachain auctions that lock DOT. However, both face the challenge of token value accrual in interoperability protocol investing. Consider ecosystem growth, staking yields, and the success of their respective chain ecosystems." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Cosmos Vs Polkadot', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

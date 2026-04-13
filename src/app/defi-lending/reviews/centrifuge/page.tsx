@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Centrifuge Review (${CURRENT_YEAR}): Real-World Asset DeFi Lending | degen0x`,
   description: "In-depth Centrifuge review covering real-world asset tokenization, Tinlake pools, CFG token, and bridging traditional finance with DeFi lending.",
-  alternates: { canonical: "/defi-lending/reviews/centrifuge" }};
+  alternates: { canonical: "/defi-lending/reviews/centrifuge" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Centrifuge', },
+  ],
+};
 
 export default function CentrifugeReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Centrifuge",
         slug: "centrifuge",
@@ -43,5 +57,7 @@ export default function CentrifugeReview() {
       relatedReviews={[{ name: "Goldfinch", slug: "/defi-lending/reviews/goldfinch" }, { name: "Maple Finance", slug: "/defi-lending/reviews/maple-finance" }]}
       relatedGuides={[{ title: "Real World Asset Lending", href: "/defi-lending/learn/real-world-asset-lending" }, { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

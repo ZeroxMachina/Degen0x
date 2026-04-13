@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Staking vs Lending (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Staking vs lending crypto comparison for ${CURRENT_YEAR}. Yields, risks, lock-up periods, and which passive income strategy is better for your crypto portfolio.` ,
-  alternates: { canonical: "/investing/compare/staking-vs-lending" }};
+  alternates: { canonical: "/investing/compare/staking-vs-lending" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Crypto Staking", slug: "staking", rating: 4.5, affiliateUrl: "#", features: { "Income Source": "Block rewards + transaction fees", "Typical APY": "3-15% (chain dependent)", "Risk Type": "Slashing, validator downtime", "Lock-up Period": "Variable (0 days to months)", "Capital Requirement": "Varies (32 ETH for solo, or any amount via liquid staking)", "Smart Contract Risk": "Low for native staking, moderate for liquid staking", "Supported Assets": "PoS tokens only (ETH, SOL, ADA, DOT, ATOM)", "Tax Treatment": "Income on receipt (US)", "Liquid Options": "Liquid staking tokens (stETH, mSOL)", "Counterparty Risk": "Low (protocol level)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "What yields should I expect?", answer: "Staking yields are typically more predictable: ETH yields 3-5%, SOL 5-8%, ATOM 15-20%. These rates change slowly based on staking participation. Lending yields are more variable, driven by borrowing demand — stablecoin lending might pay 2-8% depending on market conditions, while volatile asset lending can spike during high demand periods. Be skeptical of yields significantly above market averages as they usually indicate higher hidden risks." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Staking Vs Lending', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

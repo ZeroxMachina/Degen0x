@@ -9,11 +9,25 @@ const product = cryptoCards.find((c) => c.slug === "crypto-com-visa")!;
 export const metadata: Metadata = {
   title: "Crypto.com Visa Card Review 2026: Tiers, Cashback, Staking",
   description: "Our in-depth Crypto.com Visa card review covers CRO staking tiers from Midnight Blue to Obsidian, cashback rates, airport lounge access, Spotify/Netflix",
-  alternates: { canonical: "/crypto-cards/reviews/crypto-com-visa" }};
+  alternates: { canonical: "/crypto-cards/reviews/crypto-com-visa" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Crypto Com Visa', },
+  ],
+};
 
 export default function CryptoComVisaReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -133,5 +147,7 @@ Despite several rounds of reward reductions in 2022 and 2023 that frustrated ear
         { title: "How to Spend Crypto", href: "/spending/learn/spending-crypto" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

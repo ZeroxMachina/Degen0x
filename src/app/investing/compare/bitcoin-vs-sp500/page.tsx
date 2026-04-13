@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Bitcoin vs S&P 500 (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Compare Bitcoin and S&P 500 index investment performance, risk, volatility, and portfolio allocation strategies for ${CURRENT_YEAR}.` ,
-  alternates: { canonical: "/investing/compare/bitcoin-vs-sp500" }};
+  alternates: { canonical: "/investing/compare/bitcoin-vs-sp500" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.7, affiliateUrl: "#", features: { "Asset Class": "Cryptocurrency", "10-Year Avg Return": "~100%+ (highly variable)", "Dividend Yield": "None", "Max Drawdown": "~80%", "Trading Hours": "24/7/365", "Expense Ratio (ETF)": "0.20-0.25%", "Tax Treatment": "Property (capital gains)", "Correlation to Stocks": "Low-moderate", "Inflation Hedge": "Fixed supply thesis", "Minimum Investment": "Any amount" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "What is the optimal Bitcoin allocation alongside stocks?", answer: "Academic research suggests 1-5% Bitcoin allocation in a traditional portfolio improves risk-adjusted returns without significantly increasing drawdowns. More aggressive investors allocate 5-15%. Above 20% Bitcoin, portfolio volatility increases substantially. The optimal allocation depends on your risk tolerance and investment horizon." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Bitcoin Vs Sp500', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

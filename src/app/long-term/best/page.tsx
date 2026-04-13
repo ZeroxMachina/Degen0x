@@ -10,7 +10,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Long-Term Crypto Platforms & Providers ${CURRENT_YEAR} - Complete Guide`,
   description: `Compare the best platforms for long-term cryptocurrency investing in ${CURRENT_YEAR}. Crypto IRAs, financial advisors, HODL coins, dividend crypto, and self-directed retirement solutions reviewed and ranked.`,
-  alternates: { canonical: "/long-term/best" }};
+  alternates: { canonical: "/long-term/best" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const subCategories = [
   { title: "Best Crypto IRA Providers", href: "/long-term/best/crypto-ira", desc: "Tax-advantaged retirement accounts for Bitcoin, Ethereum, and other cryptocurrencies. Compare iTrustCapital, Bitcoin IRA, Alto, and more." },
@@ -43,9 +45,20 @@ const faqs: FAQ[] = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Long Term', item: 'https://degen0x.com/long-term' },
+    { '@type': 'ListItem', position: 3, name: 'Best', },
+  ],
+};
+
 export default function BestLongTermPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

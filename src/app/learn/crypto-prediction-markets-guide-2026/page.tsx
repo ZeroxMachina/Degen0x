@@ -269,9 +269,20 @@ const internalLinksStyle: React.CSSProperties = {
   padding: '20px',
   margin: '32px 0'
 }
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Prediction Markets Guide 2026', },
+  ],
+};
+
 export default function CryptoPredictionMarketsGuide() {
   return (
     <article id="top" style={containerStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}

@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `CoinTracker Review (${CURRENT_YEAR}) - Pricing, Features & TurboTax Integration | ${SITE_NAME}`,
   description: `Detailed CoinTracker review for ${CURRENT_YEAR}. Analysis of pricing, TurboTax integration, portfolio tracking, DeFi support, and how it compares to Koinly.`,
-  alternates: { canonical: "/taxes/reviews/cointracker" }};
+  alternates: { canonical: "/taxes/reviews/cointracker" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "overview", title: "Overview", level: 2 },
@@ -30,9 +32,21 @@ const faqs = [
   { question: "Is CoinTracker better than Koinly?", answer: "CoinTracker is better if you use TurboTax and want direct integration. Koinly is better for international users, DeFi-heavy portfolios, and those who want more exchange integrations at a lower price point. Both are excellent tools." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/taxes/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Cointracker', },
+  ],
+};
+
 export default function CoinTrackerReviewPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

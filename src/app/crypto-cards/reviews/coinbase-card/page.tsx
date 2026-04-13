@@ -10,11 +10,25 @@ const product = cryptoCards.find((c) => c.slug === "coinbase-card")!;
 export const metadata: Metadata = {
   title: `Coinbase Card Review (${CURRENT_YEAR}): Fees, Rewards & Pros/Cons | degen0x`,
   description: "In-depth Coinbase Card review covering crypto rewards, spending features, fees, and whether it is the right crypto debit card for you. Updated for " + CURRENT_YEAR + ".",
-  alternates: { canonical: "/crypto-cards/reviews/coinbase-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/coinbase-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Coinbase Card', },
+  ],
+};
 
 export default function CoinbaseCardReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -36,5 +50,7 @@ export default function CoinbaseCardReviewPage() {
       relatedReviews={[{ name: "Crypto.com Visa", slug: "crypto-com-visa" }, { name: "BitPay Card", slug: "bitpay-card" }, { name: "Fold Card", slug: "fold-card" }]}
       relatedGuides={[{ title: "Best Crypto Card Rewards", href: "/crypto-cards/learn/best-crypto-card-rewards" }, { title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

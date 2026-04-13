@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Yearn vs Convex ${CURRENT_YEAR}: Which Yield Aggregator Is Better?`,
   description: `Detailed comparison of Yearn vs Convex in ${CURRENT_YEAR}. Compare yield strategies, CRV incentives, risk profiles, and which yield aggregator maximizes your DeFi returns.`,
-  alternates: { canonical: "/defi-lending/compare/yearn-vs-convex" }};
+  alternates: { canonical: "/defi-lending/compare/yearn-vs-convex" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Yearn Finance", slug: "yearn", rating: 4.6, affiliateUrl: "https://degen0x.com/go/yearn", features: { "TVL": "$1B+", "Strategy Type": "Multi-protocol yield vaults", "Chains": "Ethereum, Arbitrum, Polygon", "Complexity": "Simple (deposit & earn)", "Fee Structure": "20% performance + 2% mgmt", "Governance Token": "YFI", "Best For": "Passive yield on many assets", "Unique Feature": "Auto-compounding multi-strategy vaults" } },
@@ -27,9 +29,21 @@ const faqs: FAQ[] = [
   { question: "Are Yearn vault fees worth it?", answer: "Yearn charges a 20% performance fee and 2% management fee, which is significant. However, the vaults auto-compound rewards, automatically shift between strategies to optimize returns, and save you gas costs from manual harvesting. For small to medium portfolios, the gas savings alone can justify the fees. For very large deposits, direct protocol interaction may be more cost-efficient." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Yearn Vs Convex', },
+  ],
+};
+
 export default function YearnVsConvexPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

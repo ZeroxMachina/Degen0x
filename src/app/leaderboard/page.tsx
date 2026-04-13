@@ -12,8 +12,23 @@ export const metadata: Metadata = {
       'Top degens ranked by XP. Complete courses, quizzes and daily challenges to earn XP and appear on the global leaderboard.',
   },
 
-  alternates: { canonical: "/leaderboard" }};
+  alternates: { canonical: "/leaderboard" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Leaderboard', },
+  ],
+};
 
 export default function LeaderboardPage() {
-  return <XPLeaderboard />;
+  return (
+    <>
+      <XPLeaderboard />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

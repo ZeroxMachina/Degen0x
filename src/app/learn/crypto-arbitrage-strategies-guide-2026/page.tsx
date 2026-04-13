@@ -60,9 +60,20 @@ const faqSchema = generateFAQSchema([
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Arbitrage Strategies Guide 2026', },
+  ],
+};
+
 export default function CryptoArbitrageStrategiesGuide() {
   return (
     <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <StructuredData data={combinedSchema} />
         {/* Breadcrumb */}

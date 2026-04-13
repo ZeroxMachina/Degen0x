@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Alpaca Finance Review ${CURRENT_YEAR}: Leveraged Yield Farming`,
   description:
     "Complete Alpaca Finance review covering leveraged yield farming, lending vaults, automated strategies, and risk analysis on BNB Chain and Fantom.",
-  alternates: { canonical: "/defi-lending/reviews/alpaca-finance" }};
+  alternates: { canonical: "/defi-lending/reviews/alpaca-finance" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Alpaca Finance', },
+  ],
+};
 
 export default function AlpacaFinanceReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Alpaca Finance",
         slug: "alpaca-finance",
@@ -64,5 +78,7 @@ export default function AlpacaFinanceReview() {
         { title: "DeFi on BNB Chain", href: "/defi-lending/learn/defi-on-bnb-chain" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Exchanges for Margin Trading (${CURRENT_YEAR})`,
   description: `Compare margin trading features across top crypto exchanges in ${CURRENT_YEAR}. Leverage limits, margin rates, liquidation policies, and cross vs isolated margin.`,
-  alternates: { canonical: "/exchanges/best/margin-trading" }};
+  alternates: { canonical: "/exchanges/best/margin-trading" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const marginExchanges = [
   exchanges.find((e) => e.slug === "binance")!,
@@ -42,9 +44,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/exchanges/best' },
+    { '@type': 'ListItem', position: 4, name: 'Margin Trading', },
+  ],
+};
+
 export default function MarginTradingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

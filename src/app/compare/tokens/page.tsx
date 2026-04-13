@@ -8,11 +8,24 @@ export const metadata: Metadata = {
   title: "Token Comparison Tool — Side-by-Side Crypto Analysis",
   description: 'Compare any two cryptocurrencies side-by-side. Analyze price, fundamentals, performance, social metrics, and more with our radar chart visualization.',
   keywords: ['crypto comparison', 'token comparison', 'BTC vs ETH', 'cryptocurrency analysis', 'coin comparison tool'],
-  alternates: { canonical: "/compare/tokens" }};
+  alternates: { canonical: "/compare/tokens" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Compare', item: 'https://degen0x.com/compare' },
+    { '@type': 'ListItem', position: 3, name: 'Tokens', },
+  ],
+};
 
 export default function TokenComparisonPage() {
   return (
     <main className="min-h-screen bg-gray-950">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -13,7 +13,9 @@ export const metadata: Metadata = {
   title: `BitPay Card vs Crypto.com Visa: Simple vs Premium (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description:
     "BitPay Card vs Crypto.com Visa compared on rewards, fees, features, and usability. Find out whether simple spending or premium rewards suits you better.",
-  alternates: { canonical: "/crypto-cards/compare/bitpay-vs-crypto-com" }};
+  alternates: { canonical: "/crypto-cards/compare/bitpay-vs-crypto-com" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   {
@@ -64,9 +66,21 @@ const features = [
   "Best For",
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/crypto-cards/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Bitpay Vs Crypto Com', },
+  ],
+};
+
 export default function BitPayVsCryptoComPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

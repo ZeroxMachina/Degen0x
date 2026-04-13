@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Dividend & Revenue-Sharing Crypto Tokens ${CURRENT_YEAR}`,
   description: "Discover the best crypto tokens that pay dividends or share revenue with holders. Compare yield, sustainability, and long-term potential.",
-  alternates: { canonical: "/long-term/best/dividend-tokens" }};
+  alternates: { canonical: "/long-term/best/dividend-tokens" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -59,9 +61,21 @@ const faqs: FAQ[] = [
   { question: "What makes a sustainable crypto dividend?", answer: "Sustainable crypto dividends come from real protocol revenue (trading fees, interest income) rather than inflationary token emissions. Look for protocols with consistent fee revenue, transparent distribution mechanisms, and proven demand for their services. Avoid tokens offering unsustainably high yields from inflation." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Long Term', item: 'https://degen0x.com/long-term' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/long-term/best' },
+    { '@type': 'ListItem', position: 4, name: 'Dividend Tokens', },
+  ],
+};
+
 export default function DividendTokensPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

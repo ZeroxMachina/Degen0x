@@ -108,9 +108,20 @@ const faqSchema = generateFAQSchema([
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Virtuals Protocol Guide', },
+  ],
+};
+
 export default function VirtualsProtocolGuide() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style>{`
         .toc-link:hover, .toc-link:focus-visible { text-decoration: underline !important; outline: 2px solid #6366f1; outline-offset: 2px; border-radius: 2px; }
         .related-link:hover { background: #1f2937 !important; border-color: #58a6ff !important; transform: translateY(-1px); }

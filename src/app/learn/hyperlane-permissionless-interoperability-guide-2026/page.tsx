@@ -19,7 +19,8 @@ export const metadata: Metadata = {
     url: 'https://degen0x.com/learn/hyperlane-permissionless-interoperability-guide-2026',
   },
 
-  alternates: { canonical: "/learn/hyperlane-permissionless-interoperability-guide-2026" }};
+  alternates: { canonical: "/learn/hyperlane-permissionless-interoperability-guide-2026" },
+  twitter: { card: "summary_large_image" }};
 
 const articleSchema = generateArticleSchema({
   headline: 'Hyperlane Guide 2026 — Permissionless Interop & HYPER',
@@ -67,9 +68,20 @@ const faqSchema = generateFAQSchema([
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Hyperlane Permissionless Interoperability Guide 2026', },
+  ],
+};
+
 export default function HyperlaneGuide() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117', color: '#e6edf3' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

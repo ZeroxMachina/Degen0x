@@ -26,6 +26,16 @@ export const metadata: Metadata = {
   }
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Web3 Business', item: 'https://degen0x.com/web3-business' },
+    { '@type': 'ListItem', position: 3, name: 'How To Launch A Crypto Project', },
+  ],
+};
+
 export default function LaunchCryptoProject() {
   const faqData = {
     '@context': 'https://schema.org',
@@ -97,6 +107,7 @@ export default function LaunchCryptoProject() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>

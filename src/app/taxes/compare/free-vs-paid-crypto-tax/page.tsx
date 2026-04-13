@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Free vs Paid Crypto Tax Software (${CURRENT_YEAR}): Is Free Good Enough?`,
   description: `Compare free and paid crypto tax software options. Understand the limitations of free tools and when it is worth paying for premium crypto tax reporting in ${CURRENT_YEAR}.`,
-  alternates: { canonical: "/taxes/compare/free-vs-paid-crypto-tax" }};
+  alternates: { canonical: "/taxes/compare/free-vs-paid-crypto-tax" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Free Crypto Tax Tools", slug: "free-tools", rating: 3.5, affiliateUrl: "#", features: { "Transaction Limit": "25-100 typically", "DeFi Support": "Limited or none", "Exchange Support": "Major exchanges only", "Cost Basis Methods": "FIFO only usually", "Customer Support": "Community forums", "Tax Forms": "Basic (8949, Schedule D)", "Historical Reports": "Limited", "Accuracy": "Good for simple portfolios" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Is it worth paying for crypto tax software?", answer: "If you have more than 100 transactions, use DeFi protocols, trade on multiple exchanges, or want to optimize your cost basis method, paid software is almost certainly worth the cost. The tax savings from HIFO cost basis selection alone often exceeds the software cost. Errors from inadequate tools can be much more expensive." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/taxes/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Free Vs Paid Crypto Tax', },
+  ],
+};
+
 export default function FreeVsPaidCryptoTaxPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

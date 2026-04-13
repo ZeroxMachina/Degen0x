@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `UTrust Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "UTrust provides crypto payment processing for merchants with buyer protection, instant fiat settlement.",
-  alternates: { canonical: "/web3-business/reviews/utrust" }};
+  alternates: { canonical: "/web3-business/reviews/utrust" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Web3 Business', item: 'https://degen0x.com/web3-business' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/web3-business/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Utrust', },
+  ],
+};
 
 export default function UtrustReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "UTrust",
         slug: "utrust",
@@ -79,5 +93,7 @@ Integration with popular e-commerce platforms and a straightforward API make UTr
         { title: "Web3 Legal Considerations", href: "/web3-business/learn/web3-legal-considerations" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Rabby vs MetaMask (${CURRENT_YEAR}): DeFi Power User Wallet Comparison | ${SITE_NAME}`,
   description: `Rabby vs MetaMask comparison for ${CURRENT_YEAR}. Compare transaction simulation, multi-chain UX, security features, and DeFi usability.`,
-  alternates: { canonical: "/wallets/compare/rabby-vs-metamask" }};
+  alternates: { canonical: "/wallets/compare/rabby-vs-metamask" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Rabby Wallet", slug: "rabby", rating: 4.6, affiliateUrl: "https://degen0x.com/go/rabby", features: { "Type": "Browser extension + mobile", "Transaction Simulation": "Yes (built-in)", "Auto Chain Switch": "Yes", "Security Alerts": "Yes (pre-sign checks)", "Multi-Chain": "EVM chains auto-detect", "Open Source": "Yes (fully)", "Hardware Support": "Ledger, Trezor, Keystone", "Built By": "DeBank team" } },
@@ -27,9 +29,21 @@ const faqs = [
   { question: "Why does Rabby switch chains automatically?", answer: "Rabby detects which chain a dApp requires and switches automatically. MetaMask requires manual chain switching or dApp-initiated chain switch requests. This quality-of-life feature saves time and prevents common errors from being on the wrong chain." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Rabby Vs Metamask', },
+  ],
+};
+
 export default function RabbyVsMetamaskPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

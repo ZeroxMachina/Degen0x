@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: "Free Tools — Crypto Tools",
   description: "Explore Free Tools on degen0x. Free crypto tools and in-depth analysis.",
   alternates: { canonical: "https://degen0x.com/taxes/best/free-tools" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 
 const freeToolProducts: Product[] = [
@@ -82,9 +83,21 @@ const freeFaqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/taxes/best' },
+    { '@type': 'ListItem', position: 4, name: 'Free Tools', },
+  ],
+};
+
 export default function BestFreeToolsPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

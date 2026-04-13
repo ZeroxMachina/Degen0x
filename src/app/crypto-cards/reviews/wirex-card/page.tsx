@@ -10,11 +10,25 @@ const product = cryptoCards.find((c) => c.slug === "wirex-card")!;
 export const metadata: Metadata = {
   title: `Wirex Card Review (${CURRENT_YEAR}): Multi-Currency, Rewards & Pros/Cons | degen0x`,
   description: "In-depth Wirex Card review covering multi-currency support, cryptoback rewards, X-Accounts yield, and whether it is the best card for global travelers.",
-  alternates: { canonical: "/crypto-cards/reviews/wirex-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/wirex-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Wirex Card', },
+  ],
+};
 
 export default function WirexCardReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -36,5 +50,7 @@ export default function WirexCardReviewPage() {
       relatedReviews={[{ name: "Plutus Card", slug: "plutus-card" }, { name: "Crypto.com Visa", slug: "crypto-com-visa" }, { name: "Baanx Card", slug: "baanx-card" }]}
       relatedGuides={[{ title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }, { title: "Traveling with Crypto", href: "/spending/learn/crypto-travel-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

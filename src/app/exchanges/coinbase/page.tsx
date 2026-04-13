@@ -9,11 +9,24 @@ const product = exchanges.find((e) => e.slug === "coinbase")!;
 export const metadata: Metadata = {
   title: "Coinbase Review 2026: Fees, Security, Pros & Cons",
   description: "Comprehensive Coinbase review covering its beginner-friendly interface, regulatory compliance, insurance coverage, fees, and security. Is Coinbase right for",
-  alternates: { canonical: "/exchanges/coinbase" }};
+  alternates: { canonical: "/exchanges/coinbase" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Coinbase', },
+  ],
+};
 
 export default function CoinbaseReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -147,5 +160,7 @@ The Coinbase ecosystem extends beyond just the core exchange. Coinbase offers a 
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

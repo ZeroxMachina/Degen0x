@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Extra Finance Review ${CURRENT_YEAR}: Leveraged Farming on Optimism & Base`,
   description:
     "Complete Extra Finance review covering leveraged yield farming, lending markets, strategy vaults, and risk analysis on Optimism and Base networks.",
-  alternates: { canonical: "/defi-lending/reviews/extra-finance" }};
+  alternates: { canonical: "/defi-lending/reviews/extra-finance" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Extra Finance', },
+  ],
+};
 
 export default function ExtraFinanceReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Extra Finance",
         slug: "extra-finance",
@@ -64,5 +78,7 @@ export default function ExtraFinanceReview() {
         { title: "Leveraged Yield Farming", href: "/defi-lending/learn/leveraged-yield-farming" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

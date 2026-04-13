@@ -109,9 +109,20 @@ const thStyle: React.CSSProperties = { textAlign: 'left' as const, padding: '10p
 const tdStyle: React.CSSProperties = { padding: '10px 14px', borderBottom: '1px solid #21262d', color: '#c9d1d9' };
 
 // ─── Component ───────────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Unichain Uniswap Layer 2 Ecosystem Guide 2026', },
+  ],
+};
+
 export default function UnichainGuidePage() {
   return (
     <div style={{ minHeight: '100vh', background: '#0d1117', color: '#e6edf3' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <article id="top" style={{ maxWidth: 820, margin: '0 auto', padding: '40px 20px' }}>

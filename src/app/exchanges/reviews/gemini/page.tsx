@@ -9,11 +9,25 @@ const product = exchanges.find((e) => e.slug === "gemini")!;
 export const metadata: Metadata = {
   title: "Gemini Review 2026: Fees, Features, Pros & Cons",
   description: "Our comprehensive Gemini review covers its SOC 2 certification, regulatory compliance, Gemini Earn, credit card, and more. Is Gemini right for you? Updated",
-  alternates: { canonical: "/exchanges/reviews/gemini" }};
+  alternates: { canonical: "/exchanges/reviews/gemini" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Gemini', },
+  ],
+};
 
 export default function GeminiReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -140,5 +154,7 @@ Beyond trading, Gemini offers the Gemini Credit Card with crypto cashback reward
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

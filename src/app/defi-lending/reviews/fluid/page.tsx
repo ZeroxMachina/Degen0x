@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Fluid (Instadapp) Review ${CURRENT_YEAR}: Smart Lending Protocol`,
   description:
     "Comprehensive Fluid review covering smart debt and collateral, DEX integration, lending rates, and how Instadapp's lending protocol innovates on Ethereum.",
-  alternates: { canonical: "/defi-lending/reviews/fluid" }};
+  alternates: { canonical: "/defi-lending/reviews/fluid" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Fluid', },
+  ],
+};
 
 export default function FluidReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Fluid",
         slug: "fluid",
@@ -64,5 +78,7 @@ export default function FluidReview() {
         { title: "Real Yield vs Emissions", href: "/defi-lending/learn/real-yield-vs-emissions" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

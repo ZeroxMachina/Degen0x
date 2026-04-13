@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   title: `DeFi Lending - Compare Protocols, Earn Yield & Borrow Crypto ${CURRENT_YEAR}`,
   description:
     "Compare the best DeFi lending protocols. Earn yield on your crypto, borrow against your assets, and explore liquidity pools. Expert reviews, guides, and tools.",
-  alternates: { canonical: "/defi-lending" }};
+  alternates: { canonical: "/defi-lending" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
   { title: "Best DeFi Lending Protocols", href: "/defi-lending/best", desc: "Top-rated protocols compared side by side" },
@@ -57,6 +59,15 @@ const toolLinks = [
   { title: "Impermanent Loss Calculator", href: "/defi-lending/calculators/impermanent-loss-calculator", desc: "Estimate impermanent loss on LP positions" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', },
+  ],
+};
+
 export default function DefiLendingPage() {
   const topProtocols = [...DEFI_LENDING_PRODUCTS].sort((a, b) => b.rating - a.rating).slice(0, 5);
 
@@ -71,6 +82,7 @@ export default function DefiLendingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }]} />

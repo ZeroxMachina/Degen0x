@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Custodial vs Non-Custodial Wallets (${CURRENT_YEAR}) - Key Differences | ${SITE_NAME}`,
   description: `Custodial vs non-custodial wallets explained for ${CURRENT_YEAR}. Learn who holds your keys, the security trade-offs, and which type is right for you.`,
-  alternates: { canonical: "/wallets/learn/custodial-vs-non-custodial" }};
+  alternates: { canonical: "/wallets/learn/custodial-vs-non-custodial" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "overview", title: "Custodial vs Non-Custodial: Overview", level: 2 },
@@ -29,6 +31,17 @@ const relatedArticles = [
   { title: "Best Wallets for Beginners", href: "/wallets/best/beginners", category: "Wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/wallets/learn' },
+    { '@type': 'ListItem', position: 4, name: 'Custodial Vs Non Custodial', },
+  ],
+};
+
 export default function CustodialVsNonCustodialPage() {
   return (
     <LearnPage
@@ -41,6 +54,7 @@ export default function CustodialVsNonCustodialPage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="overview">Custodial vs Non-Custodial: Overview</h2>
       <p>
         The key difference is simple: in a custodial wallet, a third party (usually an exchange) holds your

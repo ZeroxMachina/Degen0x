@@ -12,7 +12,9 @@ export const metadata: Metadata = {
   title: `Best Crypto Wallet Protection ${CURRENT_YEAR} - Insurance for Wallet Security`,
   description:
     "Compare the best crypto wallet protection insurance. Coverage against wallet hacks, phishing attacks, and private key compromise from leading providers.",
-  alternates: { canonical: "/insurance/best/wallet-protection" }};
+  alternates: { canonical: "/insurance/best/wallet-protection" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -76,9 +78,21 @@ const faqs: FAQ[] = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Insurance', item: 'https://degen0x.com/insurance' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/insurance/best' },
+    { '@type': 'ListItem', position: 4, name: 'Wallet Protection', },
+  ],
+};
+
 export default function WalletProtectionPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -33,11 +33,25 @@ export const metadata: Metadata = {
   title: `Magic Eden Review: Multi-Chain NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth Magic Eden review covering fees, multi-chain support, Bitcoin Ordinals, Launchpad features, and whether it's the right NFT marketplace for you.",
-  alternates: { canonical: "/nfts/reviews/magic-eden" }};
+  alternates: { canonical: "/nfts/reviews/magic-eden" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/nfts/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Magic Eden', },
+  ],
+};
 
 export default function MagicEdenReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
       categorySlug="nfts"
@@ -143,5 +157,7 @@ Backed by over $130 million in funding from investors including Paradigm and Ele
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

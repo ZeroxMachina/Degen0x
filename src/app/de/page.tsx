@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     locale: "de_DE",
     type: "website",
   },
-};
+  twitter: { card: "summary_large_image" }};
 
 const KATEGORIEN = [
   {
@@ -158,9 +158,19 @@ const DACH_TOOLS = [
   { name: "Exchange Gebühren Vergleich", desc: "Vergleichen Sie Maker/Taker-Gebühren aller großen Exchanges auf einen Blick", href: "/tools/exchange-fees", emoji: "💱" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'De', },
+  ],
+};
+
 export default function GermanLandingPage() {
   return (
     <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

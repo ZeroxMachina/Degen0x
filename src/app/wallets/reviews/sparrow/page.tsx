@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Sparrow Wallet Review (${CURRENT_YEAR}) | degen0x`,
   description: "Sparrow Wallet review covering Bitcoin transaction analysis, PSBT support, hardware wallet integration, and privacy features for power users.",
-  alternates: { canonical: "/wallets/reviews/sparrow" }};
+  alternates: { canonical: "/wallets/reviews/sparrow" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Sparrow', },
+  ],
+};
 
 export default function SparrowReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Sparrow Wallet",
         slug: "sparrow",
@@ -88,5 +102,7 @@ export default function SparrowReviewPage() {
         { title: "Best Privacy Wallets", href: "/wallets/best/privacy" }
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

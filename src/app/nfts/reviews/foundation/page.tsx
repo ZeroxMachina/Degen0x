@@ -33,11 +33,25 @@ export const metadata: Metadata = {
   title: `Foundation Review: Premium NFT Art Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth Foundation review covering its curated art focus, auction system, creator tools, fees, and whether it's the right NFT marketplace for art collectors.",
-  alternates: { canonical: "/nfts/reviews/foundation" }};
+  alternates: { canonical: "/nfts/reviews/foundation" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/nfts/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Foundation', },
+  ],
+};
 
 export default function FoundationReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
       categorySlug="nfts"
@@ -141,5 +155,7 @@ Foundation enforces a 10% creator royalty on all secondary sales and charges a 5
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

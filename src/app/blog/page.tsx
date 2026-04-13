@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     images: [{ url: `${SITE_URL}/api/og?title=Blog+-+Crypto+News+%26+Analysis&category=Blog&type=page` }],
   },
 
-  alternates: { canonical: "/blog" }};
+  alternates: { canonical: "/blog" },
+  twitter: { card: "summary_large_image" }};
 
 function formatDate(dateStr: string) {
   return new Date(dateStr).toLocaleDateString("en-US", {
@@ -31,6 +32,15 @@ function formatDate(dateStr: string) {
     day: "numeric",
   });
 }
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', },
+  ],
+};
 
 export default function BlogPage() {
   const allPosts = getAllPosts();
@@ -48,6 +58,7 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#0d1117" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

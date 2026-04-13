@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Ethereum DeFi Lending Protocols ${CURRENT_YEAR} - ETH Mainnet`,
   description: `Compare the best DeFi lending protocols on Ethereum mainnet in ${CURRENT_YEAR}. Earn yield and borrow on the most battle-tested DeFi ecosystem.`,
-  alternates: { canonical: "/defi-lending/best/ethereum" }};
+  alternates: { canonical: "/defi-lending/best/ethereum" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -83,9 +85,21 @@ const faqs: FAQ[] = [
   { question: "What is the safest way to earn yield on ETH?", answer: "The safest approach is liquid staking through Lido (stETH) or staking directly through the Ethereum network. For lending, depositing into Aave or Compound on Ethereum mainnet represents the most battle-tested option. Always diversify across protocols to reduce single-protocol risk." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/defi-lending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Ethereum', },
+  ],
+};
+
 export default function EthereumPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

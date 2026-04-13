@@ -14,11 +14,22 @@ export const metadata: Metadata = {
     images: [{ url: 'https://degen0x.com/og-gamification.png', width: 1200, height: 630, alt: 'Gamification and Rewards on degen0x' }],
   },
 
-  alternates: { canonical: "/gamification" }};
+  alternates: { canonical: "/gamification" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Gamification', },
+  ],
+};
 
 export default function GamificationPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -20,7 +20,19 @@ export const metadata: Metadata = {
     type: "article",
   },
 
-  alternates: { canonical: "/exchanges/compare/coinbase-vs-gemini" }};
+  alternates: { canonical: "/exchanges/compare/coinbase-vs-gemini" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/exchanges/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Coinbase Vs Gemini', },
+  ],
+};
 
 export default function CoinbaseVsGeminiPage() {
   const coinbase = exchangeDetailedComparisons["coinbase"];
@@ -57,6 +69,7 @@ export default function CoinbaseVsGeminiPage() {
 
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-12">

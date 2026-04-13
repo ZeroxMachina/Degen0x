@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Koinly vs TaxBit ${CURRENT_YEAR}: Which Crypto Tax Software Is Better?`,
   description: `Compare Koinly vs TaxBit side by side. Pricing, features, DeFi support, exchange integrations, and which is better for your crypto tax needs in ${CURRENT_YEAR}.`,
-  alternates: { canonical: "/taxes/compare/koinly-vs-taxbit" }};
+  alternates: { canonical: "/taxes/compare/koinly-vs-taxbit" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Koinly", slug: "koinly", rating: 4.5, affiliateUrl: "https://degen0x.com/go/koinly", features: { "Free Tier": "Up to 10,000 transactions", "Paid Plans": "From $49/year", "Exchanges": "800+", "DeFi Support": "Excellent", "International": "20+ countries", "Tax Filing": "CSV export, TurboTax CSV", "Cost Basis Methods": "FIFO, LIFO, HIFO, ACB", "NFT Support": "Good" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Which has better international support?", answer: "Koinly is far superior for international users, supporting tax calculations and reports for over 20 countries including UK, Australia, Canada, Germany, and more. TaxBit is primarily focused on US tax reporting, making Koinly the clear choice for non-US users." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/taxes/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Koinly Vs Taxbit', },
+  ],
+};
+
 export default function KoinlyVsTaxBitPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

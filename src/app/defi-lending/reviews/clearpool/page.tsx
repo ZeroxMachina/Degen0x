@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Clearpool Review (${CURRENT_YEAR}): Institutional Unsecured Lending | degen0x`,
   description:
     "In-depth Clearpool review covering permissionless unsecured lending pools, institutional borrowers, CPOOL token, and risk-adjusted yields for DeFi lenders.",
-  alternates: { canonical: "/defi-lending/reviews/clearpool" }};
+  alternates: { canonical: "/defi-lending/reviews/clearpool" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Clearpool', },
+  ],
+};
 
 export default function ClearpoolReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Clearpool",
         slug: "clearpool",
@@ -111,5 +125,7 @@ export default function ClearpoolReview() {
         { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

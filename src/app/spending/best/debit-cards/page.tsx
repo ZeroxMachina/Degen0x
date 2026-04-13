@@ -11,7 +11,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `7 Best Crypto Debit Cards of ${CURRENT_YEAR} (Ranked & Compared) | ${SITE_NAME}`,
   description: `Compare the best crypto debit cards of ${CURRENT_YEAR}. We tested Crypto.com Visa, Coinbase Card, Binance Card, BitPay, Fold, and more. Find the right card for your needs.`,
-  alternates: { canonical: "/spending/best/debit-cards" }};
+  alternates: { canonical: "/spending/best/debit-cards" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const debitCards: Product[] = [
   {
@@ -129,6 +131,17 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/spending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Debit Cards', },
+  ],
+};
+
 export default function BestDebitCardsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -140,6 +153,7 @@ export default function BestDebitCardsPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

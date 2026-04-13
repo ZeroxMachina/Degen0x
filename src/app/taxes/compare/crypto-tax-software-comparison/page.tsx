@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Best Crypto Tax Software Compared (${CURRENT_YEAR}): Complete Comparison`,
   description: `Compare all major crypto tax software platforms side by side. Koinly, CoinTracker, CryptoTaxCalculator, TokenTax, ZenLedger, CoinLedger, and more rated and ranked.`,
-  alternates: { canonical: "/taxes/compare/crypto-tax-software-comparison" }};
+  alternates: { canonical: "/taxes/compare/crypto-tax-software-comparison" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Koinly", slug: "koinly", rating: 4.5, affiliateUrl: "https://degen0x.com/go/koinly", features: { "Price": "From $49/yr", "Exchanges": "800+", "DeFi": "Excellent", "International": "20+ countries", "Best For": "International users, DeFi", "TurboTax": "CSV export" } },
@@ -30,9 +32,21 @@ const faqs: FAQ[] = [
   { question: "Do I need crypto tax software if I use a CPA?", answer: "Even with a CPA, crypto tax software is valuable. It automates the complex calculations your CPA would otherwise do manually. Many CPAs prefer receiving organized reports from crypto tax tools rather than raw exchange data. Some platforms like ZenLedger and TokenTax offer CPA access features for seamless collaboration." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/taxes/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Crypto Tax Software Comparison', },
+  ],
+};
+
 export default function CryptoTaxSoftwareComparisonPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

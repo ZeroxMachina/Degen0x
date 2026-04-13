@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Aave V3 vs Compound V3 Comparison 2026', description: 'Deep comparison', image: 'https://degen0x.com/og-defi.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Aave or Compound better?', acceptedAnswer: { '@type': 'Answer', text: 'Aave: more features, multi-chain, higher yield potential. Compound: simpler, safer, single-token markets. Choose based on experience level.' } }, { '@type': 'Question', name: 'Aave: 8 chains vs Compound: 2?', acceptedAnswer: { '@type': 'Answer', text: 'Aave multi-chain (Ethereum, Arbitrum, Optimism, Polygon, Base, etc). Compound just Ethereum + Base. Aave flexibility, Compound simplicity.' } }, { '@type': 'Question', name: 'What is e-mode vs isolation?', acceptedAnswer: { '@type': 'Answer', text: 'Aave e-mode: 97% LTV correlated assets (USDC/USDT). Compound: isolated markets (single token = safer). E-mode riskier, isolation safer.' } }, { '@type': 'Question', name: 'Flash loans: Aave only?', acceptedAnswer: { '@type': 'Answer', text: 'Aave has flash loans (borrow unlimited, repay same block). Compound no. Unique Aave feature for advanced users.' } }, { '@type': 'Question', name: 'AAVE vs COMP token?', acceptedAnswer: { '@type': 'Answer', text: 'AAVE: ~$500 price, governance token, value from protocol fees. COMP: ~$100, governance, more limited fee accrual.' } }, { '@type': 'Question', name: 'Which for $50K deposit?', acceptedAnswer: { '@type': 'Answer', text: 'Aave: better rates, more options, e-mode if know risk. Compound: safer for beginners, sleep soundly. Both excellent.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Aave Vs Compound Comparison', },
+  ],
+};
+
 export default function AaveVsCompoundComparison() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #c084fc', borderLeft: '3px solid #c084fc', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -31,6 +41,7 @@ export default function AaveVsCompoundComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

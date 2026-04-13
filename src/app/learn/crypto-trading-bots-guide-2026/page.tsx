@@ -112,6 +112,16 @@ const breadcrumbs = [
   { label: "Crypto Trading Bots Guide", href: "/learn/crypto-trading-bots-guide-2026" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Trading Bots Guide 2026', },
+  ],
+};
+
 export default function CryptoTradingBotsGuidePage() {
   const S = {
     bg: "var(--color-bg, #0d1117)",
@@ -130,6 +140,7 @@ export default function CryptoTradingBotsGuidePage() {
 
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={schemas} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>

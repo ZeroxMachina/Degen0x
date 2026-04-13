@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Coinbase Wallet vs MetaMask (${CURRENT_YEAR}) - Which Wallet Is Better? | ${SITE_NAME}`,
   description: `Coinbase Wallet vs MetaMask detailed comparison for ${CURRENT_YEAR}. Features, chain support, DeFi access, security, and ease of use compared side by side.`,
-  alternates: { canonical: "/wallets/compare/coinbase-wallet-vs-metamask" }};
+  alternates: { canonical: "/wallets/compare/coinbase-wallet-vs-metamask" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Coinbase Wallet better than MetaMask?", answer: "Neither is objectively better; they serve different strengths. MetaMask has broader dApp compatibility and the Snaps extension system. Coinbase Wallet has easier onboarding for Coinbase users, multi-ecosystem support (Solana + EVM), and cloud backup for seed phrases. MetaMask is better for DeFi power users; Coinbase Wallet is better for ease of use." },
@@ -21,6 +23,17 @@ const faqs = [
   { question: "Which supports more chains?", answer: "Coinbase Wallet supports Ethereum, Solana, Bitcoin, and EVM chains, giving it broader ecosystem coverage. MetaMask supports Ethereum and all EVM chains but does not natively support Solana or Bitcoin. For multi-ecosystem users, Coinbase Wallet is more versatile." },
   { question: "Which is cheaper to use?", answer: "Both wallets are free to download and use. Neither charges for basic transactions beyond network gas fees. MetaMask charges 0.875% on built-in swaps. Coinbase Wallet's swap fees vary by DEX aggregator. For the cheapest experience, use either wallet to access DEXs directly rather than using built-in swap features." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Coinbase Wallet Vs Metamask', },
+  ],
+};
 
 export default function CoinbaseWalletVsMetaMaskPage() {
   const items = [
@@ -35,6 +48,7 @@ export default function CoinbaseWalletVsMetaMaskPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

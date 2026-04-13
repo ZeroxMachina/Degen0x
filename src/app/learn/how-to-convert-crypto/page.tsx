@@ -14,7 +14,8 @@ export const metadata: Metadata = {
     publishedTime: '2026-03-10T00:00:00Z',
   },
 
-  alternates: { canonical: "/learn/how-to-convert-crypto" }};
+  alternates: { canonical: "/learn/how-to-convert-crypto" },
+  twitter: { card: "summary_large_image" }};
 
 const breadcrumbs = [
   { label: 'Home', href: '/' },
@@ -22,9 +23,20 @@ const breadcrumbs = [
   { label: 'How to Convert Crypto', href: '/learn/how-to-convert-crypto' },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'How To Convert Crypto', },
+  ],
+};
+
 export default function HowToConvertCryptoPage() {
   return (
     <main style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb Navigation */}
       <div style={{ borderBottom: '1px solid #30363d', paddingTop: '24px' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '0 24px 24px' }}>

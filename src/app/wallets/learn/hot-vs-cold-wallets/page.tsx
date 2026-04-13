@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Hot vs Cold Wallets Explained (${CURRENT_YEAR}) - Key Differences | ${SITE_NAME}`,
   description: `Hot wallet vs cold wallet: understand the key differences in ${CURRENT_YEAR}. Security, convenience, cost, and which type you need for your crypto strategy.`,
-  alternates: { canonical: "/wallets/learn/hot-vs-cold-wallets" }};
+  alternates: { canonical: "/wallets/learn/hot-vs-cold-wallets" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "overview", title: "Hot vs Cold: The Core Difference", level: 2 },
@@ -29,6 +31,17 @@ const relatedArticles = [
   { title: "Wallet Security Best Practices", href: "/wallets/learn/wallet-security-best-practices", category: "Wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/wallets/learn' },
+    { '@type': 'ListItem', position: 4, name: 'Hot Vs Cold Wallets', },
+  ],
+};
+
 export default function HotVsColdWalletsPage() {
   return (
     <LearnPage
@@ -41,6 +54,7 @@ export default function HotVsColdWalletsPage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="overview">Hot vs Cold: The Core Difference</h2>
       <p>
         The fundamental difference between hot and cold wallets is internet connectivity. A hot wallet is any

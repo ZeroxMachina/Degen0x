@@ -263,6 +263,16 @@ const faqs = [
 ];
 
 // ─── Page ──────────────────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Bitcoin Liquid Staking Tokens Guide 2026', },
+  ],
+};
+
 export default function BitcoinLSTGuidePage() {
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -272,6 +282,7 @@ export default function BitcoinLSTGuidePage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
       <Breadcrumb items={breadcrumbItems} />
 

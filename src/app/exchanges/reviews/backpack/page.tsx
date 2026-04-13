@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `Backpack Exchange Review (${CURRENT_YEAR}) - Solana-Native CEX | ${SITE_NAME}`,
   description: `Complete Backpack Exchange review for ${CURRENT_YEAR}. Covers Solana integration, trading features, fees, regulation, security, and the team's FTX heritage.`,
-  alternates: { canonical: "/exchanges/reviews/backpack" }};
+  alternates: { canonical: "/exchanges/reviews/backpack" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Backpack Exchange is a centralized cryptocurrency exchange launched in 2023 by the team behind the Backpack Wallet and the popular Mad Lads NFT collection. The founding team includes former FTX engineers who leveraged their experience to build what they describe as a next-generation regulated exchange. Backpack holds a VASP (Virtual Asset Service Provider) license in Dubai and has been expanding its regulatory footprint.\n\nThe exchange offers spot trading, perpetual futures with leverage, and has rapidly built out its feature set since launch. Backpack has a particularly strong connection to the Solana ecosystem, often being among the first to list Solana-native tokens and providing deep liquidity for SPL assets. The platform has quickly gained traction through a combination of its team's reputation, strategic token listing partnerships, and a clean, modern trading interface.\n\nWhile Backpack is newer than most competitors, the team's proven track record in building crypto infrastructure and their regulatory-first approach have helped establish credibility rapidly. The exchange is best suited for traders who are active in the Solana ecosystem and value a modern platform built by experienced crypto engineers.";
@@ -132,9 +134,21 @@ const relatedGuides = [
   { title: "Exchange Security Tips", href: "/exchanges/learn/exchange-security-tips" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Backpack', },
+  ],
+};
+
 export default function BackpackReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -147,5 +161,7 @@ export default function BackpackReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

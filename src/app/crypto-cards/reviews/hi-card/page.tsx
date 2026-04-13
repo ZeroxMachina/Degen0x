@@ -9,11 +9,25 @@ const product = cryptoCards.find((c) => c.slug === "hi-card")!;
 export const metadata: Metadata = {
   title: "Hi Card Review 2026: Hi Dollar Rewards, Membership Tiers &",
   description: "Our in-depth Hi Card review covers Hi Dollar daily rewards, membership tier system, cashback rates, HI token staking, and the hi.com ecosystem integration.",
-  alternates: { canonical: "/crypto-cards/reviews/hi-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/hi-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Hi Card', },
+  ],
+};
 
 export default function HiCardReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -134,5 +148,7 @@ The Hi Card targets the intersection of crypto enthusiasts who value passive inc
         { title: "How to Spend Crypto", href: "/spending/learn/spending-crypto" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

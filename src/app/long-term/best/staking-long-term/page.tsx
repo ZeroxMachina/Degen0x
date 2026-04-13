@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Staking for Long-Term Investors ${CURRENT_YEAR}`,
   description: "Compare the best staking platforms and protocols for long-term crypto investors. Earn passive income while holding your assets securely.",
-  alternates: { canonical: "/long-term/best/staking-long-term" }};
+  alternates: { canonical: "/long-term/best/staking-long-term" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -59,9 +61,21 @@ const faqs: FAQ[] = [
   { question: "Should I use liquid staking or traditional staking?", answer: "Liquid staking (Lido, Rocket Pool) is generally better for long-term investors because your staked assets remain usable. You can use stETH or rETH as collateral in DeFi, sell if needed, or simply hold and accumulate rewards. Traditional staking locks your tokens but may offer slightly higher yields in some cases." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Long Term', item: 'https://degen0x.com/long-term' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/long-term/best' },
+    { '@type': 'ListItem', position: 4, name: 'Staking Long Term', },
+  ],
+};
+
 export default function StakingLongTermPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

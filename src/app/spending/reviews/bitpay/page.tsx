@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `BitPay Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Comprehensive BitPay review covering crypto payment processing, debit card features, supported currencies, fees, and whether BitPay is the right crypto",
-  alternates: { canonical: "/spending/reviews/bitpay" }};
+  alternates: { canonical: "/spending/reviews/bitpay" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bitpay', },
+  ],
+};
 
 export default function BitPayReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "BitPay",
         slug: "bitpay",
@@ -133,5 +147,7 @@ For merchants, BitPay processes over one billion dollars in crypto payments annu
         { title: "Crypto Payment Apps Guide", href: "/spending/learn/crypto-payment-apps-guide" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

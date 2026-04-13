@@ -48,9 +48,20 @@ export const metadata: Metadata = {
   alternates: { canonical: "/learn/crypto-options-trading-guide" }};
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Options Trading Guide', },
+  ],
+};
+
 export default function CryptoOptionsGuidePage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px" }}>
 
         {/* ── Header ── */}

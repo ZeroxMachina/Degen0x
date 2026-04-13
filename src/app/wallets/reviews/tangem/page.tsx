@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `Tangem Wallet Review (${CURRENT_YEAR}) - NFC Card Hardware Wallet | ${SITE_NAME}`,
   description: `Complete Tangem wallet review for ${CURRENT_YEAR}. Covers the NFC card design, EAL6+ secure chip, backup system, supported chains, and mobile experience.`,
-  alternates: { canonical: "/wallets/reviews/tangem" }};
+  alternates: { canonical: "/wallets/reviews/tangem" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Tangem is a hardware cryptocurrency wallet that takes a radically different approach to cold storage. Instead of a USB device with a screen, Tangem wallets are thin, credit-card-sized NFC cards that communicate with your smartphone via tap. Each card contains an EAL6+ certified secure element chip that generates and stores your private key, which never leaves the card. The wallet ships as a set of 2 or 3 cards: one primary and one or two backup cards that mirror the key.\n\nTangem's approach eliminates several pain points of traditional hardware wallets: there are no batteries to charge, no cables to carry, no firmware updates to install, and by default no seed phrase to manage (the backup cards serve as your recovery method). The companion mobile app provides the wallet interface, supporting 6,000+ tokens across 30+ blockchains. Transactions are signed by tapping the Tangem card to your NFC-enabled phone.";
@@ -131,9 +133,21 @@ const relatedGuides = [
   { title: "Wallet Security Best Practices", href: "/wallets/learn/wallet-security-best-practices" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Tangem', },
+  ],
+};
+
 export default function TangemReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -146,5 +160,7 @@ export default function TangemReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Phantom vs Solflare (${CURRENT_YEAR}): Solana Wallet Comparison | ${SITE_NAME}`,
   description: `Phantom vs Solflare comparison for ${CURRENT_YEAR}. Compare features, staking, NFT support, multi-chain capabilities, and security for Solana wallets.`,
-  alternates: { canonical: "/wallets/compare/phantom-vs-solflare" }};
+  alternates: { canonical: "/wallets/compare/phantom-vs-solflare" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Phantom", slug: "phantom", rating: 4.7, affiliateUrl: "https://degen0x.com/go/phantom", features: { "Chains": "Solana, Ethereum, Polygon, Bitcoin", "Staking": "Yes (native SOL staking)", "NFT Gallery": "Yes (rich display)", "Built-in Swap": "Yes", "Browser Extension": "Chrome, Firefox, Brave, Edge", "Mobile App": "iOS & Android", "Hardware Wallet": "Ledger support", "Token Burn": "Yes (close empty accounts)" } },
@@ -27,9 +29,21 @@ const faqs = [
   { question: "Does Phantom support Bitcoin?", answer: "Yes, Phantom has added Bitcoin support alongside Solana, Ethereum, and Polygon. This makes Phantom a versatile multi-chain wallet that started from Solana roots." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Phantom Vs Solflare', },
+  ],
+};
+
 export default function PhantomVsSolflarePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

@@ -23,6 +23,16 @@ export const metadata: Metadata = {
   }
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Long Term', item: 'https://degen0x.com/long-term' },
+    { '@type': 'ListItem', position: 3, name: 'Ethereum Price Prediction 2030', },
+  ],
+};
+
 export default function EthereumPrice2030() {
   const faqs = [
     {
@@ -53,6 +63,7 @@ export default function EthereumPrice2030() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <header style={{ borderBottom: '1px solid #30363d', padding: '2rem 1rem' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold', marginBottom: '0.5rem', background: 'linear-gradient(90deg, #10b981, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>

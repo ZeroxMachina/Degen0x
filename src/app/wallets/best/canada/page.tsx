@@ -19,7 +19,9 @@ export const metadata: Metadata = {
     "best bitcoin wallet Canada",
     "hardware wallet Canada",
   ],
-  alternates: { canonical: "/wallets/best/canada" }};
+  alternates: { canonical: "/wallets/best/canada" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const canadaWallets = [
   walletProducts[0], // Ledger Nano X
@@ -62,9 +64,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Canada', },
+  ],
+};
+
 export default function CanadaWalletsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

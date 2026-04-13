@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Bitcoin (BTC) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Bitcoin investment guide for ${CURRENT_YEAR}. Learn about BTC fundamentals, price history, risks, use cases, and how to buy Bitcoin.`,
   alternates: { canonical: "/investing/crypto/bitcoin" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Bitcoin a good investment?", answer: "Bitcoin has been the best-performing asset class over the past decade, but past performance does not guarantee future returns. As the most established cryptocurrency with institutional adoption through ETFs, Bitcoin is considered the lowest-risk crypto investment. Most financial advisors suggest allocating 1-5% of a portfolio to Bitcoin." },
@@ -21,9 +22,21 @@ const faqs = [
   { question: "How should I store my Bitcoin?", answer: "For small amounts, a reputable exchange like Coinbase is convenient. For significant holdings, a hardware wallet like Ledger or Trezor provides the best security through self-custody. Never share your private keys or seed phrase with anyone." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Bitcoin', },
+  ],
+};
+
 export default function BitcoinPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

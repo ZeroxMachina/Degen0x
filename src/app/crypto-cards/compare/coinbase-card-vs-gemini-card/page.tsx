@@ -13,7 +13,9 @@ export const metadata: Metadata = {
   title: `Coinbase Card vs Gemini Credit Card: Compared (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description:
     "Coinbase Card vs Gemini Credit Card: debit vs credit, cashback structures, fees, and rewards compared. Find out which US crypto card fits your spending style.",
-  alternates: { canonical: "/crypto-cards/compare/coinbase-card-vs-gemini-card" }};
+  alternates: { canonical: "/crypto-cards/compare/coinbase-card-vs-gemini-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   {
@@ -64,9 +66,21 @@ const features = [
   "Best For",
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/crypto-cards/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Coinbase Card Vs Gemini Card', },
+  ],
+};
+
 export default function CoinbaseVsGeminiCardPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

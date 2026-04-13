@@ -9,11 +9,25 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "curve")!;
 export const metadata: Metadata = {
   title: "Curve Finance Review 2026: LP Yields, CRV Rewards & Analysis",
   description: "In-depth Curve Finance review covering stablecoin pools, CRV tokenomics, LP yields, security, and whether Curve is right for your DeFi strategy. Updated March",
-  alternates: { canonical: "/defi-lending/reviews/curve" }};
+  alternates: { canonical: "/defi-lending/reviews/curve" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Curve', },
+  ],
+};
 
 export default function CurveReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="DeFi Lending"
       categorySlug="defi-lending"
@@ -36,5 +50,7 @@ export default function CurveReview() {
       relatedReviews={[{ name: "Yearn", slug: "yearn" }, { name: "Aave", slug: "aave" }]}
       relatedGuides={[{ title: "Liquidity Pools Explained", href: "/defi-lending/learn/liquidity-pools-explained" }, { title: "Impermanent Loss", href: "/defi-lending/learn/impermanent-loss" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

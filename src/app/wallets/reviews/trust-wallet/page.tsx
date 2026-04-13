@@ -10,7 +10,9 @@ const product = walletProducts.find((p) => p.slug === "trust-wallet")!;
 export const metadata: Metadata = {
   title: `Trust Wallet Review (${CURRENT_YEAR}) - Multi-Chain Mobile Wallet | ${SITE_NAME}`,
   description: `Full Trust Wallet review for ${CURRENT_YEAR}. Covers 100+ blockchain support, dApp browser, staking, security, and Binance integration.`,
-  alternates: { canonical: "/wallets/reviews/trust-wallet" }};
+  alternates: { canonical: "/wallets/reviews/trust-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Trust Wallet is one of the most versatile multi-chain crypto wallets available, supporting over 100 blockchains and millions of tokens. Originally acquired by Binance in 2018, it has since become an independent company while maintaining its reputation as a reliable self-custody solution. Trust Wallet is available on iOS, Android, and as a browser extension, offering a built-in dApp browser, staking for multiple assets, NFT management, and seamless access to decentralized applications across virtually every major blockchain network.";
@@ -124,9 +126,21 @@ const relatedGuides = [
   { title: "Wallet Backup Guide", href: "/wallets/learn/wallet-backup-guide" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Trust Wallet', },
+  ],
+};
+
 export default function TrustWalletReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -139,5 +153,7 @@ export default function TrustWalletReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

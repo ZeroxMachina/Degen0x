@@ -6,16 +6,28 @@ import EASXPAttestation from "@/components/EASXPAttestation";
 export const metadata: Metadata = {
   title: "On-chain XP Attestation — degen0x | Verify Your Crypto",
   description: "Mint a verifiable on-chain credential via Ethereum Attestation Service (EAS). Prove your crypto education, XP earned, and course completions — permanently on",
-  alternates: { canonical: "/xp-attestation" }};
+  alternates: { canonical: "/xp-attestation" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const S = {
   bg: "#0d1117", surface: "#161b22", border: "#30363d",
   text: "#e6edf3", text2: "#8b949e",
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Xp Attestation', },
+  ],
+};
+
 export default function XPAttestationPage() {
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

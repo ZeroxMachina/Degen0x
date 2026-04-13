@@ -10,7 +10,9 @@ const product = walletProducts.find((p) => p.slug === "ledger")!;
 export const metadata: Metadata = {
   title: `Ledger Nano X Review (${CURRENT_YEAR}) - Fees, Security & Features | ${SITE_NAME}`,
   description: `In-depth Ledger Nano X review for ${CURRENT_YEAR}. We tested Ledger's Bluetooth hardware wallet covering security, supported coins, Ledger Live app, fees, and ease of use.`,
-  alternates: { canonical: "/wallets/reviews/ledger" }};
+  alternates: { canonical: "/wallets/reviews/ledger" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Ledger is the world's most popular hardware wallet brand, trusted by millions of users to secure their cryptocurrency offline. The Ledger Nano X, the company's flagship device, combines a certified Secure Element chip (CC EAL5+) with Bluetooth connectivity so you can manage your portfolio on the go via the Ledger Live mobile app. With support for over 5,500 cryptocurrencies, built-in staking, DeFi access, and NFT management, the Ledger ecosystem covers virtually every use case a crypto investor might need. The device itself is compact, battery-powered, and features a small OLED screen for verifying transactions directly on the hardware.";
@@ -125,9 +127,21 @@ const relatedGuides = [
   { title: "Wallet Security Best Practices", href: "/wallets/learn/wallet-security-best-practices" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Ledger', },
+  ],
+};
+
 export default function LedgerReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -140,5 +154,7 @@ export default function LedgerReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

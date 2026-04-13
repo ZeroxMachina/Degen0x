@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Cross-Chain Lending Protocols ${CURRENT_YEAR} - Multi-Chain DeFi`,
   description: `Compare the best cross-chain DeFi lending protocols of ${CURRENT_YEAR}. Lend and borrow across Ethereum, Arbitrum, Optimism, Polygon, Base, and more.`,
-  alternates: { canonical: "/defi-lending/best/cross-chain" }};
+  alternates: { canonical: "/defi-lending/best/cross-chain" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -59,9 +61,21 @@ const faqs: FAQ[] = [
   { question: "Which chain has the best DeFi lending rates?", answer: "Rates vary based on supply and demand on each chain. Layer 2 networks like Arbitrum and Base often offer slightly higher yields due to lower supply, while Ethereum mainnet has the deepest liquidity. Check rates across chains before depositing, as differences can be significant." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/defi-lending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Cross Chain', },
+  ],
+};
+
 export default function CrossChainPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

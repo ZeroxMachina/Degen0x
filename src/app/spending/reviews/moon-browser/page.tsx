@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Moon Browser Extension Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Detailed Moon browser extension review covering crypto checkout at online retailers, Lightning Network payments, supported stores, and how to spend Bitcoin",
-  alternates: { canonical: "/spending/reviews/moon-browser" }};
+  alternates: { canonical: "/spending/reviews/moon-browser" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Moon Browser', },
+  ],
+};
 
 export default function MoonBrowserReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Moon",
         slug: "moon-browser",
@@ -117,5 +131,7 @@ Moon targets Bitcoin users who prefer not to maintain a separate crypto debit ca
         { title: "Best Crypto Online Shopping", href: "/spending/best/online-shopping" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

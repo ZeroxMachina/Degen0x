@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Green & Sustainable Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top environmentally sustainable cryptocurrencies in ${CURRENT_YEAR}. Energy-efficient blockchains and carbon-focused crypto projects.`,
-  alternates: { canonical: "/investing/best/green-crypto" }};
+  alternates: { canonical: "/investing/best/green-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Ethereum (ETH)", slug: "ethereum", rating: 4.8, description: "Since transitioning to proof-of-stake in September 2022, Ethereum reduced its energy consumption by over 99.95%. The most impactful green transition in crypto", pros: ["99.95% energy reduction after The Merge", "Largest ecosystem on proof-of-stake", "Proven environmental commitment"], cons: ["Previously proof-of-work history", "Validator hardware still consumes some energy", "Indirect energy use from L2 infrastructure"], bestFor: "Sustainable smart contract platform investment", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Can I invest in crypto carbon credits?", answer: "Yes. Protocols like Toucan Protocol and KlimaDAO tokenize carbon credits on blockchain. However, the quality and legitimacy of tokenized carbon credits varies, and the carbon credit market itself faces criticism about effectiveness. Research specific projects carefully before investing." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Green Crypto', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

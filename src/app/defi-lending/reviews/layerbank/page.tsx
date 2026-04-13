@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `LayerBank Review ${CURRENT_YEAR}: Multi-Chain L2 Lending Protocol`,
   description: "Detailed LayerBank review covering lending on Scroll, Linea, zkSync, and other L2s, with yield rates, security analysis, and feature comparison.",
-  alternates: { canonical: "/defi-lending/reviews/layerbank" }};
+  alternates: { canonical: "/defi-lending/reviews/layerbank" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Layerbank', },
+  ],
+};
 
 export default function LayerBankReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "LayerBank", slug: "layerbank", rating: 3.8, description: "LayerBank is a multi-chain lending protocol deployed across numerous L2 networks including Scroll, Linea, Manta, Mode, and others, offering Compound-style lending markets with ecosystem-specific optimizations.", pros: ["Deployed on many emerging L2 networks for broad access", "Simple Compound-style interface familiar to DeFi users", "Low gas costs across all supported L2 networks", "Early deployment captures ecosystem incentives", "Growing TVL with multi-chain strategy"], cons: ["Liquidity fragmented across many chain deployments", "Some deployments have minimal TVL and activity", "Less innovation compared to newer lending designs", "Team and governance transparency could be improved", "Points speculation drives much of the TVL"], bestFor: "Multi-chain DeFi users seeking lending access across emerging L2 networks", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="LayerBank follows a similar strategy to ZeroLend, deploying lending markets across emerging Layer 2 networks to capture early-mover advantage. The protocol uses a Compound-style architecture that provides familiar lending mechanics including supply, borrow, and collateral management. LayerBank has deployed on Scroll, Linea, Manta, Mode, Bsquared, and other networks, making it one of the most broadly deployed lending protocols across the L2 landscape. While individual deployments may have limited liquidity, the aggregate TVL across all chains has grown significantly. The protocol benefits from ecosystem partnerships and incentive programs from the L2 networks themselves."
@@ -32,5 +46,7 @@ export default function LayerBankReview() {
       relatedReviews={[{ name: "ZeroLend", slug: "zerolend" }, { name: "Mendi", slug: "mendi" }, { name: "Lodestar", slug: "lodestar" }]}
       relatedGuides={[{ title: "DeFi on Scroll", href: "/defi-lending/learn/defi-on-scroll" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

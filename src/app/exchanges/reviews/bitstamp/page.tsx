@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Bitstamp Review (${CURRENT_YEAR}) | degen0x`,
   description:
     "Full Bitstamp review covering fees, features, security, and supported countries. One of the oldest crypto exchanges analyzed.",
-  alternates: { canonical: "/exchanges/reviews/bitstamp" }};
+  alternates: { canonical: "/exchanges/reviews/bitstamp" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bitstamp', },
+  ],
+};
 
 export default function BitstampReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Bitstamp",
         slug: "bitstamp",
@@ -76,5 +90,7 @@ export default function BitstampReviewPage() {
         { title: "Crypto Order Types", href: "/exchanges/learn/crypto-order-types" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

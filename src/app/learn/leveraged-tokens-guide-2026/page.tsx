@@ -50,6 +50,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/leveraged-tokens-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Leveraged Tokens Guide 2026', },
+  ],
+};
+
 export default function LeveragedTokensGuide() {
   const articleSchema = generateArticleSchema({
     title: "Leveraged Tokens Guide 2026 | Amplified Crypto Exposure",
@@ -63,6 +73,7 @@ export default function LeveragedTokensGuide() {
 
   return (
     <article className="min-h-screen bg-[#0d1117] text-[#c9d1d9]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={articleSchema} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },

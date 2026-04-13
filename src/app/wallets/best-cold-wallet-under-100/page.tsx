@@ -20,6 +20,16 @@ export const metadata: Metadata = {
     canonical: 'https://degen0x.com/wallets/best-cold-wallet-under-100',
   }
 };
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best Cold Wallet Under 100', },
+  ],
+};
+
 export default function BestColdWalletUnder100() {
   const faqs = [
     {
@@ -50,6 +60,7 @@ export default function BestColdWalletUnder100() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={{ maxWidth: '900px', margin: '0 auto' }}>
         {/* Header */}
         <div style={{ marginBottom: '40px' }}>

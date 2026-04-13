@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `Orca DEX Review (${CURRENT_YEAR}) - Solana's User-Friendly DEX | ${SITE_NAME}`,
   description: `Complete Orca review for ${CURRENT_YEAR}. Covers Whirlpool concentrated liquidity, swap UX, fees, liquidity provision, and comparison with Raydium.`,
-  alternates: { canonical: "/exchanges/reviews/orca" }};
+  alternates: { canonical: "/exchanges/reviews/orca" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Orca is a decentralized exchange on the Solana blockchain that has earned a reputation for having the most user-friendly interface in Solana DeFi. Launched in 2021, Orca takes a design-first approach to decentralized trading, making swaps and liquidity provision accessible to users who might find other DeFi protocols intimidating. The protocol's Whirlpool concentrated liquidity pools are its flagship product, enabling capital-efficient liquidity provision.\n\nOrca consistently ranks among the top DEXs on Solana by volume, with much of its volume coming through Jupiter's aggregation. The protocol has been recognized for its fair-launch approach, transparent governance, and commitment to building a sustainable DeFi protocol without excessive token emissions. The ORCA governance token powers community decision-making and fee distribution.\n\nWhile Raydium may capture more new token launches and overall volume, Orca has established itself as the preferred platform for serious liquidity providers who want concentrated liquidity tools and for users who value a clean, intuitive swapping experience. Orca's Whirlpools SDK has also been adopted by other Solana projects for their liquidity needs.";
@@ -129,9 +131,21 @@ const relatedGuides = [
   { title: "CEX vs DEX", href: "/exchanges/learn/cex-vs-dex" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Orca', },
+  ],
+};
+
 export default function OrcaReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -144,5 +158,7 @@ export default function OrcaReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

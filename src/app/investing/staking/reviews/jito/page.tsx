@@ -10,11 +10,26 @@ export const metadata: Metadata = {
   title: "Jito Review 2026: SOL Staking, MEV Yields, Pros & Cons",
   description:
     "Our in-depth Jito review covers JitoSOL, MEV reward sharing, staking yields, and whether it's the best Solana staking protocol. Updated March 2026.",
-  alternates: { canonical: "/investing/staking/reviews/jito" }};
+  alternates: { canonical: "/investing/staking/reviews/jito" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Reviews', item: 'https://degen0x.com/investing/staking/reviews' },
+    { '@type': 'ListItem', position: 5, name: 'Jito', },
+  ],
+};
 
 export default function JitoReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Staking"
       categorySlug="investing/staking"
@@ -113,5 +128,7 @@ Jito's approach to MEV has been both praised for improving staker returns and de
         { title: "Best Solana Staking", href: "/investing/staking/best/solana" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

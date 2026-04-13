@@ -6,11 +6,24 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "RWA Tokenization Guide 2026: How Real-World Assets Are",
   description: "A complete guide to real-world asset (RWA) tokenization in 2026. How it works, the top protocols, risks, yield opportunities, and which assets are going",
-  alternates: { canonical: "/learn/rwa-tokenization-guide-2026" }};
+  alternates: { canonical: "/learn/rwa-tokenization-guide-2026" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Rwa Tokenization Guide 2026', },
+  ],
+};
 
 export default function RWATokenizationGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
           <span className="text-xs px-3 py-1 rounded-full font-bold" style={{ background: "#f59e0b20", color: "#f59e0b" }}>

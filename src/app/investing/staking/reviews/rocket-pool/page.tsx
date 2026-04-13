@@ -10,11 +10,26 @@ export const metadata: Metadata = {
   title: "Rocket Pool Review 2026: Fees, Yields, Pros & Cons",
   description:
     "Our in-depth Rocket Pool review covers rETH, decentralized node operation, fees, yields, and whether it's the right staking protocol for you. Updated March 2026.",
-  alternates: { canonical: "/investing/staking/reviews/rocket-pool" }};
+  alternates: { canonical: "/investing/staking/reviews/rocket-pool" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Reviews', item: 'https://degen0x.com/investing/staking/reviews' },
+    { '@type': 'ListItem', position: 5, name: 'Rocket Pool', },
+  ],
+};
 
 export default function RocketPoolReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Staking"
       categorySlug="investing/staking"
@@ -113,5 +128,7 @@ The protocol's dual-token system uses RPL as both a governance token and node op
         { title: "Liquid Staking Explained", href: "/investing/staking/learn/liquid-staking-explained" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

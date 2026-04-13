@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Purse.io Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Purse.io review covering Bitcoin-to-Amazon shopping discounts, peer-to-peer marketplace mechanics, fees, and how to save on Amazon purchases with",
-  alternates: { canonical: "/spending/reviews/purse-io" }};
+  alternates: { canonical: "/spending/reviews/purse-io" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Purse Io', },
+  ],
+};
 
 export default function PurseIoReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Purse.io",
         slug: "purse-io",
@@ -117,5 +131,7 @@ Purse.io also offers an escrow service to protect both parties in the transactio
         { title: "Bitcoin Lightning Payments", href: "/spending/learn/bitcoin-lightning-payments" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

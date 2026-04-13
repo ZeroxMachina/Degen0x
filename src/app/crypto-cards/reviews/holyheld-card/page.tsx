@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `Holyheld Card Review (${CURRENT_YEAR}): Non-Custodial DeFi Spending | ${SITE_NAME}`,
   description: "In-depth Holyheld Card review covering non-custodial spending, DeFi wallet integration, fees, and how it compares to other crypto cards.",
-  alternates: { canonical: "/crypto-cards/reviews/holyheld-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/holyheld-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Holyheld Card', },
+  ],
+};
 
 export default function HolyheldCardReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -50,5 +64,7 @@ export default function HolyheldCardReview() {
         { title: "Crypto Card Security", href: "/crypto-cards/learn/crypto-card-security" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

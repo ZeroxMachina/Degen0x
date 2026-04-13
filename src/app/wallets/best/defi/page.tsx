@@ -12,13 +12,26 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best DeFi Wallets of ${CURRENT_YEAR} - Top Wallets for DeFi | ${SITE_NAME}`,
   description: `Compare the best wallets for DeFi in ${CURRENT_YEAR}. MetaMask, Rabby, Phantom, Safe and more. Expert picks for lending, swapping, yield farming, and dApp access.`,
-  alternates: { canonical: "/wallets/best/defi" }};
+  alternates: { canonical: "/wallets/best/defi" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What is the best wallet for DeFi?", answer: "MetaMask is the most widely compatible DeFi wallet, supported by virtually every Ethereum-based dApp. Rabby is the safest choice for DeFi with its pre-transaction simulation. Phantom is best for Solana DeFi. Safe is essential for teams managing DeFi positions collectively." },
   { question: "Do I need a special wallet for DeFi?", answer: "You need a self-custody wallet that can connect to decentralized applications. Browser extension wallets like MetaMask, Rabby, and Phantom are designed for dApp connectivity. Exchange wallets (like the Coinbase exchange app) cannot directly interact with DeFi protocols." },
   { question: "How do I stay safe using DeFi?", answer: "Use a wallet with transaction simulation (like Rabby), verify website URLs before connecting, regularly revoke unused token approvals, start with small amounts on new protocols, and consider using a hardware wallet for signing DeFi transactions. Never approve unlimited token spending on unverified contracts." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Defi', },
+  ],
+};
 
 export default function BestDeFiWalletsPage() {
   const comparisonItems = [
@@ -30,6 +43,7 @@ export default function BestDeFiWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

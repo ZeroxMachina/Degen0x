@@ -9,11 +9,25 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "aave")!;
 export const metadata: Metadata = {
   title: "Aave Review 2026: Fees, Yield, Security & Pros/Cons",
   description: "In-depth Aave review covering yield rates, security, supported chains, governance, and whether it is the right DeFi lending protocol for you. Updated March",
-  alternates: { canonical: "/defi-lending/reviews/aave" }};
+  alternates: { canonical: "/defi-lending/reviews/aave" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Aave', },
+  ],
+};
 
 export default function AaveReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="DeFi Lending"
       categorySlug="defi-lending"
@@ -37,5 +51,7 @@ export default function AaveReview() {
       relatedReviews={[{ name: "Compound", slug: "compound" }, { name: "Morpho", slug: "morpho" }, { name: "Spark", slug: "spark" }]}
       relatedGuides={[{ title: "What Is DeFi Lending?", href: "/defi-lending/learn/what-is-defi-lending" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

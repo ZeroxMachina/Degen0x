@@ -62,9 +62,20 @@ const faqSchema = generateFAQSchema([
 
 const schemas = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Solana Etf Guide 2026', },
+  ],
+};
+
 export default function SolanaETFGuide() {
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", paddingBottom: "4rem" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Learn", href: "/learn" },

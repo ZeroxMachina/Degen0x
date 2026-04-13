@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Crypto.com vs Binance (${CURRENT_YEAR}): Which Exchange Should You Use? | ${SITE_NAME}`,
   description: `Crypto.com vs Binance comparison for ${CURRENT_YEAR}. Compare trading fees, card rewards, staking, coin selection, and ecosystem features.`,
-  alternates: { canonical: "/exchanges/compare/crypto-com-vs-binance" }};
+  alternates: { canonical: "/exchanges/compare/crypto-com-vs-binance" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Crypto.com", slug: "crypto-com", rating: 4.4, affiliateUrl: "https://degen0x.com/go/crypto-com", features: { "Trading Fees": "0.075% maker / 0.075% taker", "Coins Listed": "350+", "Visa Card": "Yes (tiered rewards)", "Staking": "Yes (CRO staking)", "DeFi Wallet": "Yes", "NFT Marketplace": "Yes", "US Available": "Yes", "Earn Products": "Yes (Crypto Earn)" } },
@@ -21,9 +23,21 @@ const items: ComparisonItem[] = [
 
 const features = ["Trading Fees", "Coins Listed", "Visa Card", "Staking", "DeFi Wallet", "NFT Marketplace", "US Available", "Earn Products"];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/exchanges/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Crypto Com Vs Binance', },
+  ],
+};
+
 export default function CryptoComVsBinancePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

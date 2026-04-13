@@ -21,11 +21,25 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Fraxlend Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Fraxlend review covering isolated pair lending, Frax ecosystem integration, dynamic interest rates, frxETH collateral, and yield opportunities.",
-  alternates: { canonical: "/defi-lending/reviews/fraxlend" }};
+  alternates: { canonical: "/defi-lending/reviews/fraxlend" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Fraxlend', },
+  ],
+};
 
 export default function FraxlendReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="DeFi Lending"
       categorySlug="defi-lending"
@@ -48,5 +62,7 @@ export default function FraxlendReview() {
       relatedReviews={[{ name: "Spark Protocol", slug: "/defi-lending/reviews/spark" }, { name: "Aave", slug: "/defi-lending/reviews/aave" }]}
       relatedGuides={[{ title: "What is DeFi Lending", href: "/defi-lending/learn/what-is-defi-lending" }, { title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

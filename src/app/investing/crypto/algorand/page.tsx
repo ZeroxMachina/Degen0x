@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Algorand (ALGO) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Algorand investment guide for ${CURRENT_YEAR}. Learn about ALGO fundamentals, Pure Proof of Stake, institutional adoption, risks, and how to buy Algorand.`,
   alternates: { canonical: "/investing/crypto/algorand" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Algorand a good investment?", answer: "Algorand was designed by Turing Award-winning cryptographer Silvio Micali and offers fast, secure, and carbon-negative blockchain infrastructure. It has strong institutional partnerships in tokenization and central bank digital currencies. However, ALGO has underperformed many competitors in market cycles, the DeFi ecosystem is smaller than peers, and the large token supply and early distribution have been headwinds." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "How does Algorand staking work?", answer: "Algorand transitioned from automatic participation rewards to a governance-based reward system. ALGO holders commit tokens to governance periods (typically quarterly) and vote on proposals to earn governance rewards. This requires keeping committed tokens in your wallet for the full period and participating in at least one governance vote. Rewards vary by period but typically offer 5-8% annualized returns." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Algorand', },
+  ],
+};
+
 export default function AlgorandPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

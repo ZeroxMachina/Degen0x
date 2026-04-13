@@ -7,11 +7,24 @@ export const metadata: Metadata = {
   title: "Trump Crypto Strategic Reserve: What It Means for Bitcoin &",
   description:
     "A complete guide to the US government's strategic crypto reserve, which coins are included, what it means for Bitcoin price, and the geopolitical implications for 2026 and beyond.",
-  alternates: { canonical: "/learn/trump-crypto-reserve-guide" }};
+  alternates: { canonical: "/learn/trump-crypto-reserve-guide" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Trump Crypto Reserve Guide', },
+  ],
+};
 
 export default function TrumpCryptoReserveGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
           <span

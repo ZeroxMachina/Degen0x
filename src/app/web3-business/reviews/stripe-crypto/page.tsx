@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Stripe Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Stripe Crypto enables businesses to accept cryptocurrency payments through Stripe's established payment infrastructure.",
-  alternates: { canonical: "/web3-business/reviews/stripe-crypto" }};
+  alternates: { canonical: "/web3-business/reviews/stripe-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Web3 Business', item: 'https://degen0x.com/web3-business' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/web3-business/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Stripe Crypto', },
+  ],
+};
 
 export default function StripeCryptoReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Stripe Crypto",
         slug: "stripe-crypto",
@@ -79,5 +93,7 @@ Integration is straightforward with well-documented APIs, SDKs for popular langu
         { title: "Web3 Legal Considerations", href: "/web3-business/learn/web3-legal-considerations" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

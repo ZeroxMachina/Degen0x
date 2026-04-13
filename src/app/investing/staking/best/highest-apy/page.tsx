@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Highest Staking APY Platforms of ${CURRENT_YEAR} (Best Yields)`,
   description: `Find the highest staking APY platforms in ${CURRENT_YEAR}. Compare yields across Ethereum, Solana, and restaking protocols to maximize your staking returns.`,
-  alternates: { canonical: "/investing/staking/best/highest-apy" }};
+  alternates: { canonical: "/investing/staking/best/highest-apy" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -32,6 +34,18 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Best', item: 'https://degen0x.com/investing/staking/best' },
+    { '@type': 'ListItem', position: 5, name: 'Highest Apy', },
+  ],
+};
+
 export default function HighestAPYStakingPage() {
   const sortedPlatforms = [...stakingPlatforms].sort((a, b) => b.rating - a.rating);
 
@@ -45,6 +59,7 @@ export default function HighestAPYStakingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb

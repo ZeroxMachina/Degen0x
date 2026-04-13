@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `TurboTax vs Koinly ${CURRENT_YEAR}: Built-In Crypto vs Dedicated Tax Software`,
   description: `Compare TurboTax's built-in crypto features vs Koinly's dedicated crypto tax platform. Which approach is better for crypto tax reporting in ${CURRENT_YEAR}?`,
-  alternates: { canonical: "/taxes/compare/turbotax-vs-koinly" }};
+  alternates: { canonical: "/taxes/compare/turbotax-vs-koinly" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "TurboTax Crypto", slug: "turbotax-crypto", rating: 3.7, affiliateUrl: "https://degen0x.com/go/turbotax", features: { "Type": "General tax software", "Crypto Integration": "Built-in for select exchanges", "Exchange Support": "20+", "DeFi Support": "Minimal", "Cost Basis Methods": "FIFO, LIFO, HIFO", "International": "US only", "Filing": "Complete tax return filing", "Price": "$89+ (Premier tier)" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Which is better for DeFi users?", answer: "Koinly is dramatically better for DeFi users. TurboTax has minimal DeFi support and cannot automatically parse on-chain DeFi transactions. Koinly supports hundreds of DeFi protocols and can categorize complex transactions automatically. DeFi users should use Koinly or a similar dedicated tool." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/taxes/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Turbotax Vs Koinly', },
+  ],
+};
+
 export default function TurboTaxVsKoinlyPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

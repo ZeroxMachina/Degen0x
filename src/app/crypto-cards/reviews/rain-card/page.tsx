@@ -9,11 +9,25 @@ const product = cryptoCards.find((c) => c.slug === "rain-card")!;
 export const metadata: Metadata = {
   title: "Rain Card Review 2026: Bitcoin Rewards Credit Card,",
   description: "Our in-depth Rain Card review covers automatic Bitcoin cashback, credit-building benefits, no annual fee, mainstream-friendly design, and how it compares to",
-  alternates: { canonical: "/crypto-cards/reviews/rain-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/rain-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Rain Card', },
+  ],
+};
 
 export default function RainCardReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -135,5 +149,7 @@ The Rain Card fills a specific niche: it is the Bitcoin on-ramp for people who d
         { title: "Best Crypto Cards for Beginners", href: "/crypto-cards/best/beginners" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `KuCoin vs Gate.io (${CURRENT_YEAR}): Altcoin Exchange Comparison | ${SITE_NAME}`,
   description: `KuCoin vs Gate.io comparison for ${CURRENT_YEAR}. Compare altcoin listings, fees, features, and security for the two leading altcoin exchanges.`,
-  alternates: { canonical: "/exchanges/compare/kucoin-vs-gate-io" }};
+  alternates: { canonical: "/exchanges/compare/kucoin-vs-gate-io" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "KuCoin", slug: "kucoin", rating: 4.4, affiliateUrl: "https://degen0x.com/go/kucoin", features: { "Trading Fees": "0.1% maker / 0.1% taker", "Coins Listed": "700+", "Futures": "Yes (up to 100x)", "Trading Bots": "Yes (built-in)", "Lending": "Yes (KuCoin Earn)", "KYC Required": "Optional (limits apply)", "Launchpad": "Yes (Spotlight)", "Mobile App": "iOS & Android" } },
@@ -21,9 +23,21 @@ const items: ComparisonItem[] = [
 
 const features = ["Trading Fees", "Coins Listed", "Futures", "Trading Bots", "Lending", "KYC Required", "Launchpad", "Mobile App"];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/exchanges/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Kucoin Vs Gate Io', },
+  ],
+};
+
 export default function KucoinVsGateIoPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Fixed vs Variable Rate DeFi Lending ${CURRENT_YEAR}: Comparison`,
   description: `Compare fixed and variable rate lending in DeFi in ${CURRENT_YEAR}. Analyze rate mechanics, protocols, risk profiles, and when each is the better choice.`,
-  alternates: { canonical: "/defi-lending/compare/fixed-vs-variable-rate" }};
+  alternates: { canonical: "/defi-lending/compare/fixed-vs-variable-rate" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Variable Rate", slug: "defi-lending", rating: 4.5, affiliateUrl: "https://degen0x.com/go/aave", features: { "Rate Predictability": "Low (changes every block)", "Average Rates": "Often lower than fixed", "Liquidity": "Instant entry/exit", "Protocols": "Aave, Compound, Morpho", "Lock-up Required": "None", "Best Market": "Stable or declining rates", "Complexity": "Simple", "Risk": "Rate volatility" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Which is better for borrowing?", answer: "Variable rates are better for short-term borrowing where flexibility matters. Fixed rates are better when you need cost predictability for longer-term positions. If you are borrowing to fund a strategy with a known return, fixing your borrowing cost eliminates rate risk." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Fixed Vs Variable Rate', },
+  ],
+};
+
 export default function FixedVsVariableRatePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Dividend-Like Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top cryptocurrencies that distribute revenue to holders in ${CURRENT_YEAR}. Real yield from staking, fee sharing, and protocol revenue distribution.`,
-  alternates: { canonical: "/investing/best/dividend-crypto" }};
+  alternates: { canonical: "/investing/best/dividend-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Ethereum (ETH)", slug: "ethereum", rating: 4.8, description: "Staking ETH earns 3-5% annually from network validation rewards and priority fees. With ETH's deflationary dynamics during high usage, stakers benefit from both yield and potential supply reduction.", pros: ["Reliable staking yield", "Deflationary during high usage", "Largest smart contract ecosystem"], cons: ["Yield varies with network activity", "Requires liquid staking for DeFi use", "Lower yield than some competitors"], bestFor: "Reliable protocol-level yield on the largest platform", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "How is real yield taxed?", answer: "Revenue distributions and staking rewards are typically taxed as ordinary income at the fair market value when received. If you later sell the received tokens at a different price, capital gains or losses apply to the difference. Consult a tax professional for your specific situation." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Dividend Crypto', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

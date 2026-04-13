@@ -65,6 +65,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/solana-token-extensions-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Solana Token Extensions Guide 2026', },
+  ],
+};
+
 export default function SolanaTokenExtensionsGuide() {
   const tableOfContents = [
     { id: 'introduction', label: 'Introduction' },
@@ -87,6 +97,7 @@ export default function SolanaTokenExtensionsGuide() {
         paddingBottom: '4rem',
       }}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

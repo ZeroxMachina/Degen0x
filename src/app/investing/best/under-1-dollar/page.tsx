@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Under $1 (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top cryptocurrencies under $1 in ${CURRENT_YEAR}. Promising low-priced tokens with genuine utility, strong teams, and growth potential.`,
-  alternates: { canonical: "/investing/best/under-1-dollar" }};
+  alternates: { canonical: "/investing/best/under-1-dollar" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Dogecoin (DOGE)", slug: "dogecoin", rating: 4.3, description: "The original meme coin with the largest community and strongest brand recognition. Accepted as payment by multiple companies and backed by high-profile", pros: ["Largest meme coin community", "High liquidity and exchange availability", "Real-world payment adoption"], cons: ["Unlimited supply creates inflation", "No smart contract functionality", "Price heavily influenced by social media"], bestFor: "Community-driven crypto with mainstream recognition", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Why do investors like low-priced crypto?", answer: "Psychological bias makes people feel they are getting more value buying 10,000 tokens at $0.01 than 0.001 Bitcoin at $60,000, even though the investment amount is the same. This unit bias drives demand for low-priced tokens but is not a rational investment criterion." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Under 1 Dollar', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

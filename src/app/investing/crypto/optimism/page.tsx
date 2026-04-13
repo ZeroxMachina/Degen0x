@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Optimism (OP) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Optimism investment guide for ${CURRENT_YEAR}. Learn about OP fundamentals, Superchain vision, governance, risks, and how to buy Optimism.`,
   alternates: { canonical: "/investing/crypto/optimism" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Optimism a good investment?", answer: "Optimism is a leading Ethereum Layer 2 with the Superchain vision powering multiple chains including Coinbase's Base, Worldcoin, and Sony's Soneium. The OP Stack is becoming a standard for launching new L2 chains, which could drive significant value to the OP ecosystem. However, OP token's value accrual depends on Superchain revenue sharing and governance utility, which are still developing." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "How does Optimism governance work?", answer: "Optimism uses a bicameral governance system with the Token House (OP token holders vote on protocol upgrades and incentive allocation) and the Citizens' House (distributes retroactive public goods funding). This dual structure aims to balance token-holder interests with broader ecosystem public goods. OP is used for voting in the Token House governance process." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Optimism', },
+  ],
+};
+
 export default function OptimismPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

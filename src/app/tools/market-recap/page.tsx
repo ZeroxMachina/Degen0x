@@ -44,9 +44,20 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/tools/market-recap" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Market Recap', },
+  ],
+};
+
 export default function MarketRecapPage() {
   return (
     <div style={{ background: "var(--color-bg)" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

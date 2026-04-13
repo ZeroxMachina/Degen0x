@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: `Koinly vs CoinTracker ${CURRENT_YEAR} - Which Crypto Tax Software Is Better?`,
   description: `Compare Koinly vs CoinTracker side by side. Pricing, features, DeFi support, integrations, and which is better for your crypto tax needs.`,
   alternates: { canonical: "/taxes/compare/koinly-vs-cointracker" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = TAX_COMPARISON_ITEMS.filter(i => ["koinly", "cointracker"].includes(i.slug));
 
@@ -22,9 +23,21 @@ const faqs = [
   { question: "Which integrates with TurboTax?", answer: "CoinTracker has a direct one-click TurboTax integration, which is its biggest advantage. Koinly generates TurboTax-compatible CSV files that must be imported manually. If seamless TurboTax filing is your top priority, CoinTracker wins this comparison." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/taxes/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Koinly Vs Cointracker', },
+  ],
+};
+
 export default function KoinlyVsCoinTrackerPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

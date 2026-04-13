@@ -8,7 +8,8 @@ export const metadata: Metadata = {
   title: `BitPay vs CoinGate (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `BitPay vs CoinGate comparison for ${CURRENT_YEAR}. Compare fees, supported cryptocurrencies, merchant tools, and features of these leading crypto payment processors.`,
   alternates: { canonical: "/spending/compare/bitpay-vs-coingate" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "overview", title: "Comparison Overview", level: 2 },
@@ -30,6 +31,17 @@ const relatedArticles = [
   { title: "Merchant Adoption Guide", href: "/spending/learn/merchant-adoption-guide", category: "Spending" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/spending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Bitpay Vs Coingate', },
+  ],
+};
+
 export default function BitPayVsCoinGatePage() {
   return (
     <LearnPageLayout
@@ -42,6 +54,7 @@ export default function BitPayVsCoinGatePage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="overview">Comparison Overview</h2>
       <p>
         BitPay, founded in 2011, is the oldest and most recognized crypto payment processor in the US market.

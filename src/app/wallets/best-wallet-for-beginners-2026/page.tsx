@@ -96,6 +96,16 @@ const structuredData = {
   ],
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best Wallet For Beginners 2026', },
+  ],
+};
+
 export default function BestWalletForBeginners2026() {
   const styles = {
     article: {
@@ -225,6 +235,7 @@ export default function BestWalletForBeginners2026() {
 
   return (
     <article style={styles.article}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

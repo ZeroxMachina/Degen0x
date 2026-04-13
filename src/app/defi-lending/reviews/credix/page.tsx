@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Credix Review (${CURRENT_YEAR}): Emerging Market DeFi Credit | degen0x`,
   description: "In-depth Credix review covering emerging market lending on Solana, fintech borrower network, tranched credit pools, and risk-adjusted yields.",
-  alternates: { canonical: "/defi-lending/reviews/credix" }};
+  alternates: { canonical: "/defi-lending/reviews/credix" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Credix', },
+  ],
+};
 
 export default function CredixReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Credix",
         slug: "credix",
@@ -43,5 +57,7 @@ export default function CredixReview() {
       relatedReviews={[{ name: "Goldfinch", slug: "/defi-lending/reviews/goldfinch" }, { name: "Centrifuge", slug: "/defi-lending/reviews/centrifuge" }]}
       relatedGuides={[{ title: "Real World Asset Lending", href: "/defi-lending/learn/real-world-asset-lending" }, { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

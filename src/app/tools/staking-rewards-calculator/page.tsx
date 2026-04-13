@@ -63,9 +63,20 @@ const structuredData = {
   })),
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Staking Rewards Calculator', },
+  ],
+};
+
 export default function StakingRewardsCalculatorPage() {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#0d1117', color: '#e6edf3' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

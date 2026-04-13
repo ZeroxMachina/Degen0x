@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Ledger vs Keystone (${CURRENT_YEAR}): Air-Gapped vs Connected Wallet | ${SITE_NAME}`,
   description: `Ledger vs Keystone hardware wallet comparison for ${CURRENT_YEAR}. Compare air-gapped QR signing, multi-chain support, DeFi access, and security.`,
-  alternates: { canonical: "/wallets/compare/ledger-vs-keystone" }};
+  alternates: { canonical: "/wallets/compare/ledger-vs-keystone" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Ledger Nano X", slug: "ledger-nano-x", rating: 4.7, affiliateUrl: "https://degen0x.com/go/ledger", features: { "Type": "Connected hardware wallet", "Price": "$149", "Connection": "USB-C + Bluetooth", "Air-Gapped": "No", "Supported Coins": "5,500+", "Display": "128x64 OLED", "Open Source": "Partial", "DeFi Access": "Ledger Live + browser" } },
@@ -27,9 +29,21 @@ const faqs = [
   { question: "Is Keystone as secure as Ledger?", answer: "Both offer strong security through different approaches. Ledger uses a certified Secure Element with USB/Bluetooth connectivity. Keystone eliminates all wired connections via air-gapped QR signing and is fully open-source. The air-gapped design removes certain attack vectors that connected devices face." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Ledger Vs Keystone', },
+  ],
+};
+
 export default function LedgerVsKeystonePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

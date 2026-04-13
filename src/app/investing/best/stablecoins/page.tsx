@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: `Best Stablecoins ${CURRENT_YEAR}: Top Picks Ranked & Compared`,
     description: `Compare the top stablecoins by market cap, peg stability, backing, and DeFi integrations.`,
   },
-};
+  twitter: { card: "summary_large_image" }};
 
 const STABLECOINS = [
   {
@@ -258,9 +258,21 @@ const toc = [
   { id: "faq", title: "FAQ", level: 2 },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Stablecoins', },
+  ],
+};
+
 export default function BestStablecoinsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Exchange Apps in ${CURRENT_YEAR} - Mobile Trading`,
   description: `Compare the best crypto trading apps for iPhone and Android in ${CURRENT_YEAR}. User-friendly interfaces, fast execution, and full-featured mobile trading.`,
-  alternates: { canonical: "/exchanges/best/mobile-app" }};
+  alternates: { canonical: "/exchanges/best/mobile-app" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const mobileExchanges = [
   exchanges.find((e) => e.slug === "crypto-com")!,
@@ -39,9 +41,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/exchanges/best' },
+    { '@type': 'ListItem', position: 4, name: 'Mobile App', },
+  ],
+};
+
 export default function MobileAppPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in BNB (BNB) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete BNB investment guide for ${CURRENT_YEAR}. Learn about BNB fundamentals, the Binance ecosystem, BNB Chain, risks, and how to buy BNB.`,
   alternates: { canonical: "/investing/crypto/bnb" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is BNB a good investment?", answer: "BNB is the native token of the Binance ecosystem, the world's largest crypto exchange by trading volume. Its value is closely tied to Binance's success, fee discounts, and the growing BNB Chain ecosystem. BNB benefits from regular token burns that reduce supply, but regulatory risk around Binance is a key concern." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "Can I use BNB outside of Binance?", answer: "Yes. BNB is the native gas token for BNB Chain (formerly Binance Smart Chain), which hosts thousands of DeFi protocols, NFT marketplaces, and gaming applications. You can use BNB for transaction fees, staking, governance, and as collateral across the BNB Chain ecosystem. It is also accepted by various merchants and payment services." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Bnb', },
+  ],
+};
+
 export default function BNBPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

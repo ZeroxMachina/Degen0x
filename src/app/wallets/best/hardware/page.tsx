@@ -14,7 +14,9 @@ export const metadata: Metadata = {
   title: `Best Hardware Wallets 2026 — Cold Storage Reviews & Rankings | ${SITE_NAME}`,
   description: `The best hardware wallets of 2026, ranked and tested. Ledger Nano X vs Trezor Model T vs Coldcard Mk4 vs Foundation Passport 2. Expert cold storage reviews with up-to-date pricing.`,
   keywords: "best hardware wallet 2026, cold wallet, ledger vs trezor, coldcard, foundation passport, crypto cold storage",
-  alternates: { canonical: "/wallets/best/hardware" }};
+  alternates: { canonical: "/wallets/best/hardware" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const WHATS_NEW_2026 = [
   {
@@ -39,6 +41,17 @@ const WHATS_NEW_2026 = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Hardware', },
+  ],
+};
+
 export default function BestHardwareWalletsPage() {
   const comparisonItems = [
     walletComparisonItems["ledger-nano-x"],
@@ -51,6 +64,7 @@ export default function BestHardwareWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

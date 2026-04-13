@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `BitMart Review (${CURRENT_YEAR}) - 1,000+ Tokens & Altcoin Access | ${SITE_NAME}`,
   description: `Complete BitMart review for ${CURRENT_YEAR}. Covers trading fees, 1,000+ supported tokens, security history, futures trading, and user experience.`,
-  alternates: { canonical: "/exchanges/reviews/bitmart" }};
+  alternates: { canonical: "/exchanges/reviews/bitmart" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "BitMart is a centralized cryptocurrency exchange founded in 2017, headquartered in the Cayman Islands with offices globally. The platform has grown to serve millions of users across 180+ countries, offering access to over 1,000 cryptocurrencies. BitMart is particularly known for its aggressive approach to listing new tokens, making it a popular destination for traders seeking early access to small-cap and emerging projects.\n\nThe exchange provides spot trading, perpetual futures with up to 100x leverage, an earn section for passive income, and a launchpad for new project token sales. BitMart supports fiat purchases through credit/debit cards and third-party payment providers, making it accessible to users who want to enter the crypto market without first owning cryptocurrency.\n\nBitMart's primary challenge has been its security reputation following a significant $196 million hack in December 2021, which affected its hot wallets for Ethereum and Binance Smart Chain. The exchange committed to reimbursing all affected users and has since upgraded its security infrastructure. Despite this incident, BitMart continues to attract users with its wide token selection and accessible fiat on-ramps.";
@@ -132,9 +134,21 @@ const relatedGuides = [
   { title: "How to Buy Crypto", href: "/exchanges/learn/how-to-buy-crypto" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bitmart', },
+  ],
+};
+
 export default function BitMartReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -147,5 +161,7 @@ export default function BitMartReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

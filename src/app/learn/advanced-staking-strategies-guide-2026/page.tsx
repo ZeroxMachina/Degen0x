@@ -17,7 +17,8 @@ export const metadata: Metadata = {
     url: "https://degen0x.com/learn/advanced-staking-strategies-guide-2026",
   },
 
-  alternates: { canonical: "/learn/advanced-staking-strategies-guide-2026" }};
+  alternates: { canonical: "/learn/advanced-staking-strategies-guide-2026" },
+  twitter: { card: "summary_large_image" }};
 
 const articleSchema = generateArticleSchema({
   headline: "Advanced Staking Strategies Guide 2026: LST, LRT & Real Yield Optimization",
@@ -57,9 +58,20 @@ const faqSchema = generateFAQSchema([
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Advanced Staking Strategies Guide 2026', },
+  ],
+};
+
 export default function AdvancedStakingStrategiesGuide() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
         <Breadcrumb

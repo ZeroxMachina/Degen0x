@@ -10,7 +10,9 @@ const product = walletProducts.find((p) => p.slug === "phantom")!;
 export const metadata: Metadata = {
   title: `Phantom Wallet Review (${CURRENT_YEAR}) - Best Solana Wallet? | ${SITE_NAME}`,
   description: `Complete Phantom wallet review for ${CURRENT_YEAR}. Covers multi-chain support, NFT features, staking, swaps, security, and the user experience.`,
-  alternates: { canonical: "/wallets/reviews/phantom" }};
+  alternates: { canonical: "/wallets/reviews/phantom" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Phantom has quickly established itself as one of the most popular crypto wallets, originally built for the Solana ecosystem and now supporting Ethereum, Polygon, and Bitcoin. Known for its stunning user interface, fast performance, and rich feature set, Phantom combines the simplicity of a beginner-friendly wallet with the power tools that DeFi and NFT enthusiasts demand. It is available as a browser extension for Chrome, Firefox, Brave, and Edge, plus a mobile app for iOS and Android. With built-in token swaps, SOL staking, NFT galleries, and transaction simulation, Phantom offers one of the most complete wallet experiences available.";
@@ -124,9 +126,21 @@ const relatedGuides = [
   { title: "How to Transfer Crypto", href: "/wallets/learn/how-to-transfer-crypto" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Phantom', },
+  ],
+};
+
 export default function PhantomReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -139,5 +153,7 @@ export default function PhantomReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

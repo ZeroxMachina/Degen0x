@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Futures Exchanges in ${CURRENT_YEAR}`,
   description: `Compare the top crypto futures and derivatives exchanges in ${CURRENT_YEAR}. Leverage, liquidation engines, funding rates, and contract types compared.`,
-  alternates: { canonical: "/exchanges/best/futures" }};
+  alternates: { canonical: "/exchanges/best/futures" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const futuresExchanges = [
   exchanges.find((e) => e.slug === "bybit")!,
@@ -42,9 +44,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/exchanges/best' },
+    { '@type': 'ListItem', position: 4, name: 'Futures', },
+  ],
+};
+
 export default function FuturesPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

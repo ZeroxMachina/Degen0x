@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `Phemex Review (${CURRENT_YEAR}) - Professional Derivatives Exchange | ${SITE_NAME}`,
   description: `Complete Phemex review for ${CURRENT_YEAR}. Covers derivatives trading, fees, Wall Street team background, mobile app, security, and features.`,
-  alternates: { canonical: "/exchanges/reviews/phemex" }};
+  alternates: { canonical: "/exchanges/reviews/phemex" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Phemex is a cryptocurrency derivatives exchange launched in 2019 by a team of eight former Morgan Stanley executives. Based in Singapore, the platform was built to bring institutional-grade trading infrastructure to the crypto market, with a focus on speed, reliability, and professional execution. Phemex supports spot trading for 300+ cryptocurrencies and perpetual futures with up to 100x leverage on major pairs.\n\nThe exchange is known for its performance-focused trading engine, which can process up to 300,000 transactions per second with sub-millisecond latency. This makes Phemex particularly attractive for high-frequency and algorithmic traders who need reliable execution during volatile market conditions. The platform also offers spot trading, earn products, and a copy trading feature.\n\nPhemex has grown steadily since its launch, serving millions of users across multiple countries. The founding team's Wall Street background informs the platform's emphasis on risk management, order execution quality, and institutional-grade infrastructure. While Phemex may lack the sheer volume and coin selection of Binance or OKX, it competes strongly on execution quality and derivatives-specific features.";
@@ -133,9 +135,21 @@ const relatedGuides = [
   { title: "Best Exchanges for Futures", href: "/exchanges/best/futures" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Phemex', },
+  ],
+};
+
 export default function PhemexReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -148,5 +162,7 @@ export default function PhemexReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

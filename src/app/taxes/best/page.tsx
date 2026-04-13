@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Tax Solutions (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Explore the best crypto tax solutions for ${CURRENT_YEAR}. From tax software and free tools to crypto CPAs and DeFi-specific tax solutions.`,
-  alternates: { canonical: "/taxes/best" }};
+  alternates: { canonical: "/taxes/best" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const subcategories = [
   {
@@ -32,9 +34,20 @@ const subcategories = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Best', },
+  ],
+};
+
 export default function BestTaxSolutionsPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

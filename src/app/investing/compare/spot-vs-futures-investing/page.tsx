@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Spot vs Futures Crypto Investing (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Spot vs futures crypto investing comparison for ${CURRENT_YEAR}. Direct ownership vs leveraged contracts — risk, returns, strategies, and which is right for you.` ,
-  alternates: { canonical: "/investing/compare/spot-vs-futures-investing" }};
+  alternates: { canonical: "/investing/compare/spot-vs-futures-investing" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Spot Investing", slug: "spot", rating: 4.6, affiliateUrl: "#", features: { "Ownership": "Direct asset ownership", "Leverage": "None (1x)", "Max Loss": "100% of investment", "Holding Period": "Unlimited", "Funding Costs": "None", "Complexity": "Low", "Tax Treatment": "Capital gains on sale", "Staking/Yield": "Yes (can stake held assets)", "Liquidation Risk": "None", "Best For": "Long-term investors and HODLers" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Can futures be used for hedging?", answer: "Yes, this is one of the most legitimate uses of crypto futures. If you hold significant crypto positions, you can open short futures positions to hedge against price declines without selling your spot holdings (and triggering taxable events). Institutions frequently use Bitcoin and Ethereum futures to manage portfolio risk. Hedging with futures requires careful position sizing and risk management." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Spot Vs Futures Investing', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

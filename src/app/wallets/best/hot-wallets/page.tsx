@@ -11,7 +11,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Hot Wallets of ${CURRENT_YEAR} - Internet-Connected Wallets | ${SITE_NAME}`,
   description: `The best hot wallets for crypto in ${CURRENT_YEAR}. Compare MetaMask, Phantom, Trust Wallet, and more. Find the most secure internet-connected wallet for trading, DeFi, and NFTs.`,
-  alternates: { canonical: "/wallets/best/hot-wallets" }};
+  alternates: { canonical: "/wallets/best/hot-wallets" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -31,9 +33,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Hot Wallets', },
+  ],
+};
+
 export default function BestHotWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

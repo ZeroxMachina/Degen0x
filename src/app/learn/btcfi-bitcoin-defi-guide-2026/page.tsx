@@ -124,6 +124,16 @@ const structuredData = {
 const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16, display: 'inline-block' };
 
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Btcfi Bitcoin Defi Guide 2026', },
+  ],
+};
+
 export default function BTCFiGuide() {
   // Global styles
   const pageStyle: React.CSSProperties = {
@@ -303,6 +313,7 @@ export default function BTCFiGuide() {
 
   return (
     <div style={pageStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: '0.85rem', color: '#8b949e' }}>

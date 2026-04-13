@@ -85,6 +85,16 @@ const faqs = [
 const faqSchema = generateFAQSchema(faqs);
 const schemas = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Web3 Gaming Gamefi Guide 2026', },
+  ],
+};
+
 export default function Web3GamingGuide() {
   const styles = {
     container: {
@@ -247,6 +257,7 @@ export default function Web3GamingGuide() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={schemas} />
       <div style={styles.container}>
         <article style={styles.wrapper}>

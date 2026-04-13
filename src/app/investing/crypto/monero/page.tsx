@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Monero (XMR) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Monero investment guide for ${CURRENT_YEAR}. Learn about XMR fundamentals, privacy technology, ring signatures, risks, and how to buy Monero.`,
   alternates: { canonical: "/investing/crypto/monero" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Monero a good investment?", answer: "Monero is the leading privacy-focused cryptocurrency with proven technology and a dedicated community. Its strong privacy guarantees make it uniquely positioned in an era of increasing financial surveillance. However, regulatory risk is the primary concern, as several exchanges have delisted XMR due to compliance requirements. This limits liquidity and accessibility." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "How does Monero privacy work?", answer: "Monero uses three main privacy technologies: ring signatures (hide the sender among a group of possible signers), stealth addresses (create one-time addresses for each transaction so the receiver's real address is never on the blockchain), and RingCT (hides transaction amounts). Together, these make Monero transactions virtually untraceable by default." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Monero', },
+  ],
+};
+
 export default function MoneroPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

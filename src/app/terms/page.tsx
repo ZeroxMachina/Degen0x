@@ -7,11 +7,23 @@ import { SITE_NAME } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Terms of Service - ${SITE_NAME}`,
   description: `${SITE_NAME} terms of service. Read our terms and conditions for using the website.`,
-  alternates: { canonical: "/terms" }};
+  alternates: { canonical: "/terms" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Terms', },
+  ],
+};
 
 export default function TermsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

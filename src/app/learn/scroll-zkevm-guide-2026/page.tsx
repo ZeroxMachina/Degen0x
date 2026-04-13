@@ -33,7 +33,8 @@ export const metadata: Metadata = {
     publishedTime: '2026-03-24T00:00:00Z',
   },
 
-  alternates: { canonical: "/learn/scroll-zkevm-guide-2026" }};
+  alternates: { canonical: "/learn/scroll-zkevm-guide-2026" },
+  twitter: { card: "summary_large_image" }};
 
 const articleSchema = {
   '@context': 'https://schema.org',
@@ -237,11 +238,22 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => (
   </details>
 );
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Scroll Zkevm Guide 2026', },
+  ],
+};
+
 export default function ScrollGuide() {
   const structuredData = [articleSchema, faqSchema, howToSchema];
 
   return (
     <main className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={structuredData} />
       <Breadcrumb
         items={[

@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Crypto Exchange Security Comparison 2026', description: 'Compare security features across major exchanges', image: 'https://degen0x.com/og-exchanges.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'What does 98% cold storage at Coinbase mean?', acceptedAnswer: { '@type': 'Answer', text: 'Coinbase stores 98% offline in vaults. 2% hot wallets for withdrawals. Eliminates network hacking. Kraken 95%, smaller exchanges 50-70%.' } }, { '@type': 'Question', name: 'Is Binance SAFU ($1B) better than insurance?', acceptedAnswer: { '@type': 'Answer', text: 'Reserve fund (not insurance). Funded by fees. 2024 used for payouts. Insurance better (third-party underwritten).' } }, { '@type': 'Question', name: 'What is SOC 2 Type 2?', acceptedAnswer: { '@type': 'Answer', text: 'Audit standard verifying security over 6+ months. Coinbase/Gemini passed. Validates processes, not zero hacks.' } }, { '@type': 'Question', name: 'Why does Kraken publish proof of reserves?', acceptedAnswer: { '@type': 'Answer', text: 'Cryptographic proof of holdings. Monthly published. Addresses fractional reserves. Incomplete without liability proof.' } }, { '@type': 'Question', name: 'Have major exchanges been hacked?', acceptedAnswer: { '@type': 'Answer', text: 'Gemini 2022 supply chain, Crypto.com 2021 ($34M), Binance 2022 freeze. Even cold storage faces insider risk.' } }, { '@type': 'Question', name: 'Should I keep crypto on exchange or self-custody?', acceptedAnswer: { '@type': 'Answer', text: 'Active trading: regulated exchange. Long-term: hardware wallet. Best: both.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Exchange Security Comparison', },
+  ],
+};
+
 export default function CryptoExchangeSecurityComparison() {
   const infoBoxStyle = { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #f59e0b', borderLeft: '3px solid #f59e0b', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
 
@@ -39,6 +49,7 @@ const toc = [{ id: 'intro', t: 'Overview' }, { id: 'cold', t: 'Cold Storage' }, 
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

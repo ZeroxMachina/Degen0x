@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Binance Web3 Wallet Review (${CURRENT_YEAR}) - Best CEX-Integrated Wallet? | ${SITE_NAME}`,
   description: `Detailed Binance Web3 Wallet review for ${CURRENT_YEAR}. Covers MPC key management, multi-chain support, built-in earn features, and Binance app integration.`,
-  alternates: { canonical: "/wallets/reviews/binance-web3-wallet" }};
+  alternates: { canonical: "/wallets/reviews/binance-web3-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const product = {
   name: "Binance Web3 Wallet",
@@ -114,9 +116,21 @@ const relatedGuides = [
   { title: "Custodial vs Non-Custodial Wallets", href: "/wallets/compare/custodial-vs-non-custodial" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Binance Web3 Wallet', },
+  ],
+};
+
 export default function BinanceWeb3WalletReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -129,5 +143,7 @@ export default function BinanceWeb3WalletReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

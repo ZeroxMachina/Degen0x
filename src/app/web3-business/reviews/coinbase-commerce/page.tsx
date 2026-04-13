@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Coinbase Commerce Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Coinbase Commerce allows businesses to accept crypto payments directly with no processing fees.",
-  alternates: { canonical: "/web3-business/reviews/coinbase-commerce" }};
+  alternates: { canonical: "/web3-business/reviews/coinbase-commerce" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Web3 Business', item: 'https://degen0x.com/web3-business' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/web3-business/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Coinbase Commerce', },
+  ],
+};
 
 export default function CoinbaseCommerceReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Coinbase Commerce",
         slug: "coinbase-commerce",
@@ -79,5 +93,7 @@ The simplicity of integration makes it accessible to businesses of all sizes. Pa
         { title: "Web3 Legal Considerations", href: "/web3-business/learn/web3-legal-considerations" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

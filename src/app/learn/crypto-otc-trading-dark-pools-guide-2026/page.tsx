@@ -116,6 +116,16 @@ const structuredData = {
   },
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Otc Trading Dark Pools Guide 2026', },
+  ],
+};
+
 export default function CryptoOTCTradingDarkPoolsPage() {
   // Global styles
   const pageStyle: React.CSSProperties = {
@@ -274,6 +284,7 @@ export default function CryptoOTCTradingDarkPoolsPage() {
 
   return (
     <main id="top" aria-label="Guide: Crypto OTC Trading & Dark Pools" style={pageStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style dangerouslySetInnerHTML={{ __html: `
         .degen-link:hover { color: #6366f1 !important; text-decoration: underline !important; }
         .degen-link:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; border-radius: 2px; }

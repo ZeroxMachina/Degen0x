@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Polygon vs Arbitrum (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Polygon vs Arbitrum comparison for ${CURRENT_YEAR}. Two leading Ethereum scaling solutions compared on speed, fees, DeFi ecosystem, and token investment thesis.` ,
-  alternates: { canonical: "/investing/compare/polygon-vs-arbitrum" }};
+  alternates: { canonical: "/investing/compare/polygon-vs-arbitrum" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Polygon (POL)", slug: "polygon", rating: 4.4, affiliateUrl: "#", features: { "Scaling Type": "Multi-solution (PoS, zkEVM, CDK)", "Technology": "PoS sidechain + ZK rollups", "TPS": "~7,000 (PoS chain)", "Avg Transaction Fee": "$0.001-0.01", "EVM Compatibility": "Full", "TVL": "Top 5 L2 ecosystem", "Token": "POL (upgraded from MATIC)", "Security Model": "Own validator set (PoS) + Ethereum (zkEVM)", "Major Partners": "Starbucks, Nike, Disney, Reddit", "Development Kit": "Polygon CDK for app-chains" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Which token is a better investment?", answer: "ARB is primarily a governance token for the Arbitrum DAO treasury and protocol decisions. POL (formerly MATIC) has broader utility across Polygon's multi-chain ecosystem including staking, gas fees, and governance. POL benefits from Polygon's enterprise partnerships and diverse product suite, while ARB benefits from being the governance token of the highest-TVL L2 with strong DeFi activity." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Polygon Vs Arbitrum', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

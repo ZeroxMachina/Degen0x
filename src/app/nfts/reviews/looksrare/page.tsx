@@ -33,11 +33,25 @@ export const metadata: Metadata = {
   title: `LooksRare Review: Community-First NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth LooksRare review covering LOOKS token rewards, staking, trading features, fees, and whether this community-governed marketplace is right for you.",
-  alternates: { canonical: "/nfts/reviews/looksrare" }};
+  alternates: { canonical: "/nfts/reviews/looksrare" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/nfts/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Looksrare', },
+  ],
+};
 
 export default function LooksRareReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
       categorySlug="nfts"
@@ -140,5 +154,7 @@ While LooksRare attracted significant volume in its early months, much of the in
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

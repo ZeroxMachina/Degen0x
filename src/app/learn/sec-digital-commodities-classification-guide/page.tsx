@@ -88,6 +88,16 @@ const faqSchema = generateFAQSchema([
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
 // ─── Page Component ───────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Sec Digital Commodities Classification Guide', },
+  ],
+};
+
 export default function SECDigitalCommoditiesPage() {
   const S = {
     bg: "var(--color-bg, #0d1117)",
@@ -111,6 +121,7 @@ export default function SECDigitalCommoditiesPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
 
       <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh" }}>

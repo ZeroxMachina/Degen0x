@@ -11,11 +11,22 @@ export const metadata: Metadata = {
     description: 'Link your wallet, sync your XP on-chain, prove your crypto knowledge.',
   },
 
-  alternates: { canonical: "/xp-sync" }};
+  alternates: { canonical: "/xp-sync" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Xp Sync', },
+  ],
+};
 
 export default function XPSyncPage() {
   return (
     <main style={{ minHeight: '100vh', background: '#0d1117', padding: '24px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

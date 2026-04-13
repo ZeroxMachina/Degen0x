@@ -11,7 +11,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Payment Apps of ${CURRENT_YEAR} - Pay With Crypto Anywhere | ${SITE_NAME}`,
   description: `Compare the best crypto payment apps of ${CURRENT_YEAR}. BitPay, CoinGate, Strike, and more. Send, receive, and spend crypto from your phone.`,
-  alternates: { canonical: "/spending/best/payment-apps" }};
+  alternates: { canonical: "/spending/best/payment-apps" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const paymentApps: Product[] = [
   {
@@ -113,9 +115,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/spending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Payment Apps', },
+  ],
+};
+
 export default function BestPaymentAppsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

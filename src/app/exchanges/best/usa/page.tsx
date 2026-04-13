@@ -19,7 +19,9 @@ export const metadata: Metadata = {
     "regulated crypto exchanges US",
     "buy crypto USA",
   ],
-  alternates: { canonical: "/exchanges/best/usa" }};
+  alternates: { canonical: "/exchanges/best/usa" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const usaExchanges = [
   exchanges.find((e) => e.slug === "coinbase")!,
@@ -62,9 +64,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/exchanges/best' },
+    { '@type': 'ListItem', position: 4, name: 'Usa', },
+  ],
+};
+
 export default function USAExchangesPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

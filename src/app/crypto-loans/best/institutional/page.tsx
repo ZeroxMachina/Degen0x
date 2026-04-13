@@ -9,7 +9,9 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = { title: `Best Institutional Crypto Lending ${CURRENT_YEAR}`, description: `Compare institutional crypto lending platforms in ${CURRENT_YEAR}. Large-scale borrowing and lending for funds, treasuries, and businesses.` ,
-  alternates: { canonical: "/crypto-loans/best/institutional" }};
+  alternates: { canonical: "/crypto-loans/best/institutional" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   { name: "Nexo Prime", slug: "nexo", rating: 4.6, description: "Nexo Prime serves institutional clients with OTC lending, borrowing, and trading. Features include dedicated account management, customized lending terms,", pros: ["Dedicated institutional team", "Customized loan terms", "Regulatory compliance", "Segregated custody"], cons: ["Minimum requirements", "CeFi counterparty risk", "Longer onboarding process"], fees: "Negotiated institutional rates", bestFor: "Institutional CeFi borrowing", affiliateUrl: "https://degen0x.com/go/nexo", category: "crypto-loans", featured: true },
@@ -22,9 +24,21 @@ const faqs: FAQ[] = [
   { question: "How do institutional platforms differ from retail?", answer: "Institutional platforms offer dedicated account management, customized loan terms, segregated custody, regulatory compliance frameworks, OTC execution for large trades, and specialized reporting. They are designed for participants who need compliance, security, and scale." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/crypto-loans/best' },
+    { '@type': 'ListItem', position: 4, name: 'Institutional', },
+  ],
+};
+
 export default function InstitutionalPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

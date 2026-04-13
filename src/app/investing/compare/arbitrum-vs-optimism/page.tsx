@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Arbitrum vs Optimism (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Arbitrum vs Optimism comparison for ${CURRENT_YEAR}. The two leading optimistic rollups compared on TVL, DeFi ecosystem, governance, and investment potential.` ,
-  alternates: { canonical: "/investing/compare/arbitrum-vs-optimism" }};
+  alternates: { canonical: "/investing/compare/arbitrum-vs-optimism" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Arbitrum (ARB)", slug: "arbitrum", rating: 4.5, affiliateUrl: "#", features: { "Rollup Type": "Optimistic Rollup", "Fraud Proof": "Multi-round interactive", "TPS": "~40,000 (theoretical)", "Avg Transaction Fee": "$0.01-0.10", "TVL": "#1 L2 by TVL", "Governance": "Arbitrum DAO", "Token Utility": "Governance", "Notable DApps": "GMX, Camelot, Radiant, Pendle", "Expansion Strategy": "Arbitrum Orbit (L3 chains)", "Revenue Model": "Sequencer fees to DAO treasury" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Which L2 token is better to invest in?", answer: "ARB benefits from being the governance token of the highest-TVL L2 with deep DeFi activity and DAO treasury. OP benefits from the Superchain thesis — as more chains adopt the OP Stack (Base, Zora, Mode), value accrues to the Optimism ecosystem through revenue sharing. OP has a clearer path to protocol-level revenue through Superchain fees, while ARB has stronger current DeFi metrics." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Arbitrum Vs Optimism', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -123,6 +123,16 @@ const structuredData = {
   },
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Bitvm Bitcoin Smart Contracts Programmability Guide 2026', },
+  ],
+};
+
 export default function BitVMPage() {
   const pageStyle: React.CSSProperties = {
     background: '#0d1117',
@@ -286,6 +296,7 @@ export default function BitVMPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

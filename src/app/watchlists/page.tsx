@@ -8,11 +8,23 @@ export const metadata: Metadata = {
   title: `My Watchlists — ${SITE_NAME}`,
   description: "Create and manage custom crypto watchlists. Track prices, 24h changes, market caps, and sparkline charts for your favorite tokens.",
   keywords: ["crypto watchlist", "token tracker", "price alerts", "portfolio tracker", "crypto dashboard"],
-  alternates: { canonical: "/watchlists" }};
+  alternates: { canonical: "/watchlists" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Watchlists', },
+  ],
+};
 
 export default function WatchlistsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

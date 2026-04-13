@@ -11,7 +11,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Credit Cards & Debit Cards of ${CURRENT_MONTH} ${CURRENT_YEAR}`,
   description: `Compare the best crypto cards of ${CURRENT_YEAR}. Expert reviews of crypto credit cards, debit cards, and rewards cards. Earn Bitcoin, ETH, and cashback on every purchase.`,
-  alternates: { canonical: "/crypto-cards" }};
+  alternates: { canonical: "/crypto-cards" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
   { title: "Best Crypto Cards Overall", href: "/crypto-cards/best", description: "Our top-rated crypto cards across all categories" },
@@ -58,6 +60,15 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', },
+  ],
+};
+
 export default function CryptoCardsPage() {
   const topCards = [...cryptoCards].sort((a, b) => b.rating - a.rating).slice(0, 3);
 
@@ -72,6 +83,7 @@ export default function CryptoCardsPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

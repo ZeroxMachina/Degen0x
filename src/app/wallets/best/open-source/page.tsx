@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Open-Source Crypto Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best open-source crypto wallets for ${CURRENT_YEAR}. Compare MetaMask, Rabby, Electrum, Frame, and Blockstream Jade for code transparency and security.`,
-  alternates: { canonical: "/wallets/best/open-source" }};
+  alternates: { canonical: "/wallets/best/open-source" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "MetaMask", slug: "metamask", rating: 4.5, description: "The most popular open-source Ethereum wallet with millions of users, extensive third-party auditing, and full source code on GitHub.", pros: ["Fully open source on GitHub", "Massive community review and auditing", "Regular professional security audits"], cons: ["Default RPC has privacy concerns", "Browser extension attack surface"], bestFor: "Open-source Ethereum wallet with broadest dApp compatibility", affiliateUrl: "#", category: "wallets" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Can I verify the wallet code myself?", answer: "Yes. All open-source wallets publish their source code on platforms like GitHub. If you are a developer, you can read the code, build from source, and verify the published version matches. Even non-developers benefit from the thousands of others who can and do review the code, providing security through community oversight." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Open Source', },
+  ],
+};
+
 export default function BestOpenSourceWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

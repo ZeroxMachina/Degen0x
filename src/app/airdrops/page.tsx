@@ -16,6 +16,20 @@ export const metadata = {
 
   alternates: { canonical: "/airdrops" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Airdrops', },
+  ],
+};
+
 export default function AirdropsPage() {
-  return <ClientContent />;
+  return (
+    <>
+      <ClientContent />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

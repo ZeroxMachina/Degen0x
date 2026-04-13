@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Mango Markets Review ${CURRENT_YEAR}: Trading, Lending & Pros/Cons`,
   description:
     "In-depth Mango Markets review covering spot and perp trading, lending features, the V4 rebuild, and how this Solana DEX has evolved after its exploit.",
-  alternates: { canonical: "/defi-lending/reviews/mango-markets" }};
+  alternates: { canonical: "/defi-lending/reviews/mango-markets" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Mango Markets', },
+  ],
+};
 
 export default function MangoMarketsReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Mango Markets",
         slug: "mango-markets",
@@ -119,5 +133,7 @@ export default function MangoMarketsReview() {
         { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

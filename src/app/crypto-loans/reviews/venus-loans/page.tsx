@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `Venus Protocol Loans Review (${CURRENT_YEAR}): BNB Chain Lending | ${SITE_NAME}`,
   description: "In-depth Venus Protocol review covering BNB Chain lending, VAI stablecoin, borrowing rates, risk management improvements, and feature comparison.",
-  alternates: { canonical: "/crypto-loans/reviews/venus-loans" }};
+  alternates: { canonical: "/crypto-loans/reviews/venus-loans" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Venus Loans', },
+  ],
+};
 
 export default function VenusLoansReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Loans"
       categorySlug="crypto-loans"
@@ -44,5 +58,7 @@ export default function VenusLoansReview() {
       relatedReviews={[{ name: "BENQI Loans", slug: "benqi-loans" }, { name: "Compound Loans", slug: "compound-loans" }]}
       relatedGuides={[{ title: "How to Get a Crypto Loan", href: "/crypto-loans/learn/how-to-get-crypto-loan" }, { title: "Loan Risks Guide", href: "/crypto-loans/learn/loan-risks-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -29,6 +29,16 @@ const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, 
 const infoBoxStyle: React.CSSProperties = { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
 
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Layer 2 Crypto Explained', },
+  ],
+};
+
 export default function Layer2CryptoExplained() {
   const tableOfContents = [ { id: 'what-are-l2s', title: 'What Are Layer 2s?' }, { id: 'optimistic-rollups', title: 'Optimistic Rollups' }, { id: 'zk-rollups', title: 'ZK Rollups' }, { id: 'comparison', title: 'Comparison Table' }, { id: 'getting-started', title: 'Getting Started' }, { id: 'risks', title: 'Risks & Considerations' }, { id: 'faq', title: 'FAQ' } ];
 
@@ -44,6 +54,7 @@ export default function Layer2CryptoExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}><Link href="/" style={{ color: '#8b949e', textDecoration: 'none' }}>Home</Link><span style={{ margin: '0 6px' }}>›</span><Link href="/learn" style={{ color: '#8b949e', textDecoration: 'none' }}>Learn</Link><span style={{ margin: '0 6px' }}>›</span><span style={{ color: '#c9d1d9' }}>Layer 2</span></nav>

@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Bastion Protocol Review ${CURRENT_YEAR}: NEAR Lending & Borrowing`,
   description:
     "In-depth Bastion Protocol review covering lending markets on Aurora/NEAR, yield rates, stableswap features, and protocol risk analysis.",
-  alternates: { canonical: "/defi-lending/reviews/bastion" }};
+  alternates: { canonical: "/defi-lending/reviews/bastion" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bastion', },
+  ],
+};
 
 export default function BastionReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Bastion Protocol",
         slug: "bastion",
@@ -64,5 +78,7 @@ export default function BastionReview() {
         { title: "Yield Risk Assessment", href: "/defi-lending/learn/yield-risk-assessment" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

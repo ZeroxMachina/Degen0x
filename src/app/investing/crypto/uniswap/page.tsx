@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Uniswap (UNI) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Uniswap investment guide for ${CURRENT_YEAR}. Learn about UNI fundamentals, DEX dominance, governance, fee switch, risks, and how to buy UNI.`,
   alternates: { canonical: "/investing/crypto/uniswap" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Uniswap a good investment?", answer: "Uniswap is the leading decentralized exchange by trading volume across Ethereum and multiple L2 chains. The UNI token gives holders governance rights over the protocol. The potential activation of a fee switch that would direct protocol revenue to UNI holders is a significant potential catalyst. However, the fee switch has been debated for years without implementation, and competition from other DEXs is intense." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "How does Uniswap make money?", answer: "Uniswap Labs (the company) generates revenue through the Uniswap front-end interface fee of 0.15-0.25% on swaps. The Uniswap protocol itself charges trading fees (0.01%-1% depending on the pool) that go entirely to liquidity providers. UNI token holders currently do not receive protocol fees, though governance could change this via the fee switch." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Uniswap', },
+  ],
+};
+
 export default function UniswapPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

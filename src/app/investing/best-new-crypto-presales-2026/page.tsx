@@ -95,6 +95,16 @@ const structuredData = {
   ],
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best New Crypto Presales 2026', },
+  ],
+};
+
 export default function BestCryptoPresales2026() {
   const infoBoxStyle = {
     background: '#161b22',
@@ -136,6 +146,7 @@ export default function BestCryptoPresales2026() {
 
   return (
     <article style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Cosmos (ATOM) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Cosmos investment guide for ${CURRENT_YEAR}. Learn about ATOM fundamentals, IBC protocol, appchains, staking, risks, and how to buy ATOM.`,
   alternates: { canonical: "/investing/crypto/cosmos" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Cosmos a good investment?", answer: "Cosmos pioneered the appchain thesis and Inter-Blockchain Communication (IBC) protocol, which connects over 50 sovereign blockchains. The ecosystem includes major projects like Celestia, dYdX, Injective, and Osmosis. However, ATOM's value accrual mechanism has been debated, as appchains can use Cosmos SDK without needing ATOM, which limits the token's direct utility." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "How does ATOM staking work?", answer: "ATOM can be staked with validators on the Cosmos Hub to earn approximately 15-20% APY. Staking ATOM also grants governance voting rights and helps secure the network. There is a 21-day unbonding period when unstaking. Liquid staking options like Stride's stATOM allow you to stake while maintaining liquidity for DeFi use." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Cosmos', },
+  ],
+};
+
 export default function CosmosPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

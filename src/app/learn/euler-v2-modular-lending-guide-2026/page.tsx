@@ -17,7 +17,8 @@ export const metadata: Metadata = {
     authors: ['degen0x'],
   },
   keywords: ['Euler V2', 'modular lending', 'EVK', 'EVC', 'DeFi', 'vaults', 'RWA collateral', '2026'],
-  alternates: { canonical: "/learn/euler-v2-modular-lending-guide-2026" }};
+  alternates: { canonical: "/learn/euler-v2-modular-lending-guide-2026" },
+  twitter: { card: "summary_large_image" }};
 
 const articleSchema = generateArticleSchema({
   headline: 'Euler V2 Modular Lending Guide 2026 — Vaults & EVK',
@@ -57,9 +58,20 @@ const faqSchema = generateFAQSchema([
 
 const combinedSchemas = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Euler V2 Modular Lending Guide 2026', },
+  ],
+};
+
 export default function EulerV2Guide() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117', color: '#e6edf3' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

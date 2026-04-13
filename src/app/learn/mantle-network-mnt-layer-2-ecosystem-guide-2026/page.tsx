@@ -112,6 +112,16 @@ const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, 
 const infoBoxStyle: React.CSSProperties = { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
 
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Mantle Network Mnt Layer 2 Ecosystem Guide 2026', },
+  ],
+};
+
 export default function MantleNetworkGuide() {
   const pageStyle = {
     background: '#0d1117',
@@ -268,6 +278,7 @@ export default function MantleNetworkGuide() {
 
   return (
     <div style={pageStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -128,6 +128,16 @@ const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, 
 const infoBoxStyle: React.CSSProperties = { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
 
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Copy Trading Social Trading Guide 2026', },
+  ],
+};
+
 export default function CryptoCopyTradingSocialTradingGuide2026() {
   const tableOfContents = [
     { id: 'what-is-copy-trading', title: 'What Is Copy Trading?' },
@@ -207,6 +217,7 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
   }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <BackToTop />
 

@@ -94,9 +94,20 @@ const stats = [
   { label: "Avg Fee", value: "Sub-cent" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Ai Agent Payments X402 Guide', },
+  ],
+};
+
 export default function AIAgentPaymentsGuide() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <StructuredData data={combinedSchema} />
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
       <Breadcrumb items={[

@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: `TaxBit vs CoinTracker ${CURRENT_YEAR} - Crypto Tax Software Comparison`,
   description: `Compare TaxBit vs CoinTracker for crypto tax reporting. Side-by-side comparison of pricing, features, integrations, and which is right for you.`,
   alternates: { canonical: "/taxes/compare/taxbit-vs-cointracker" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = TAX_COMPARISON_ITEMS.filter(i => ["taxbit", "cointracker"].includes(i.slug));
 
@@ -22,9 +23,21 @@ const faqs = [
   { question: "Can I use both TaxBit and CoinTracker?", answer: "You could, but it adds complexity. Some users get free reports from TaxBit through their exchange and verify against another tool. However, using one comprehensive platform is generally simpler and reduces the risk of discrepancies between different software calculations." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/taxes/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Taxbit Vs Cointracker', },
+  ],
+};
+
 export default function TaxBitVsCoinTrackerPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

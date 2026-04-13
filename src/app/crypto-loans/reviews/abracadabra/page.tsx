@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `Abracadabra Review (${CURRENT_YEAR}): MIM Borrowing & Cauldrons | ${SITE_NAME}`,
   description: "In-depth Abracadabra review covering MIM stablecoin borrowing, cauldron mechanics, yield-bearing collateral, and risk assessment.",
-  alternates: { canonical: "/crypto-loans/reviews/abracadabra" }};
+  alternates: { canonical: "/crypto-loans/reviews/abracadabra" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Abracadabra', },
+  ],
+};
 
 export default function AbracadabraReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Loans"
       categorySlug="crypto-loans"
@@ -44,5 +58,7 @@ export default function AbracadabraReview() {
       relatedReviews={[{ name: "MakerDAO", slug: "makerdao" }, { name: "Liquity", slug: "liquity" }]}
       relatedGuides={[{ title: "How Crypto Loans Work", href: "/crypto-loans/learn/how-to-get-crypto-loan" }, { title: "Liquidation Risk", href: "/crypto-loans/learn/liquidation-risk" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

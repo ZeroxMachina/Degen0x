@@ -9,7 +9,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Crypto Spending Guide ${CURRENT_YEAR} - Debit Cards, Payment Apps & More | ${SITE_NAME}`,
   description: `Everything you need to spend cryptocurrency in the real world. Compare the best crypto debit cards, payment apps, cashback cards, and discover where to spend your crypto in ${CURRENT_YEAR}.`,
-  alternates: { canonical: "/spending" }};
+  alternates: { canonical: "/spending" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
   { title: "Best Crypto Debit Cards", href: "/spending/best/debit-cards", description: "Top debit cards that let you spend crypto anywhere Visa or Mastercard is accepted" },
@@ -51,6 +53,15 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', },
+  ],
+};
+
 export default function SpendingPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -63,6 +74,7 @@ export default function SpendingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

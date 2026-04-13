@@ -46,6 +46,21 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/ecosystem/babylon-protocol" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Ecosystem', item: 'https://degen0x.com/ecosystem' },
+    { '@type': 'ListItem', position: 3, name: 'Babylon Protocol', },
+  ],
+};
+
 export default function BabylonProtocolPage() {
-  return <BabylonClient />;
+  return (
+    <>
+      <BabylonClient />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

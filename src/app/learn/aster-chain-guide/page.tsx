@@ -99,9 +99,20 @@ const faqSchema = generateFAQSchema([
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
 // ─── Page Component ───────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Aster Chain Guide', },
+  ],
+};
+
 export default function AsterChainGuidePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
 
       <main style={{ maxWidth: 800, margin: "0 auto", padding: "40px 24px", color: "#e6edf3", fontFamily: "system-ui, sans-serif" }}>

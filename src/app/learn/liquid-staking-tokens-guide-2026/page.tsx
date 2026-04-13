@@ -113,6 +113,16 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Liquid Staking Tokens Guide 2026', },
+  ],
+};
+
 export default function LSTGuide() {
   const containerStyle: React.CSSProperties = {
     minHeight: "100vh",
@@ -334,6 +344,7 @@ export default function LSTGuide() {
 
   return (
     <div style={containerStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

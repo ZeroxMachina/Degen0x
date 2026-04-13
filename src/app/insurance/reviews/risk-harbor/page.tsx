@@ -21,11 +21,25 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Risk Harbor Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Risk Harbor review covering algorithmic insurance, automated claims, stablecoin depeg coverage, and how it compares to discretionary insurance protocols.",
-  alternates: { canonical: "/insurance/reviews/risk-harbor" }};
+  alternates: { canonical: "/insurance/reviews/risk-harbor" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Insurance', item: 'https://degen0x.com/insurance' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/insurance/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Risk Harbor', },
+  ],
+};
 
 export default function RiskHarborReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Insurance"
       categorySlug="insurance"
@@ -48,5 +62,7 @@ export default function RiskHarborReviewPage() {
       relatedReviews={[{ name: "Nexus Mutual", slug: "/insurance/reviews/nexus-mutual" }, { name: "InsurAce", slug: "/insurance/reviews/insurace" }]}
       relatedGuides={[{ title: "Insurance Protocols Compared", href: "/insurance/learn/insurance-protocols-compared" }, { title: "Complete Crypto Insurance Guide", href: "/insurance/learn/crypto-insurance-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -60,9 +60,20 @@ const FAQ_DATA = [
   }
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Sui Blockchain Guide 2026', },
+  ],
+};
+
 export default function SuiBlockchainGuide() {
   return (
     <div style={{ color: S.text, minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <ArticleStructuredData
         title="Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token Explained"
         description="Complete guide to Sui's object-centric architecture, Move language, ecosystem, DeFi platforms, and SUI tokenomics with March 2026 updates."

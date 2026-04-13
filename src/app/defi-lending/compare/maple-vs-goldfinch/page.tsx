@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Maple vs Goldfinch ${CURRENT_YEAR}: Institutional DeFi Lending Compared`,
   description: `Compare Maple Finance vs Goldfinch in ${CURRENT_YEAR}. Analyze institutional lending approaches, yields, risk profiles, and borrower types.`,
-  alternates: { canonical: "/defi-lending/compare/maple-vs-goldfinch" }};
+  alternates: { canonical: "/defi-lending/compare/maple-vs-goldfinch" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Maple Finance", slug: "maple", rating: 4.1, affiliateUrl: "https://degen0x.com/go/maple", features: { "TVL": "$100M+", "Focus": "Institutional credit", "Borrowers": "Crypto-native institutions", "Collateral": "Over + undercollateralized", "KYC Required": "For borrowers", "Chains": "Ethereum, Solana, Base", "Governance": "MPL token", "Unique Feature": "Pool delegates curate loans" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Do I need KYC to lend?", answer: "Goldfinch requires UID verification for all participants. Maple allows permissionless lending to some pools but may require KYC for others depending on pool delegate requirements. Check specific pool requirements before committing funds." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Maple Vs Goldfinch', },
+  ],
+};
+
 export default function MapleVsGoldfinchPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

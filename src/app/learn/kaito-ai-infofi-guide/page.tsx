@@ -47,6 +47,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/kaito-ai-infofi-guide" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Kaito Ai Infofi Guide', },
+  ],
+};
+
 export default function KaitoInfoFiGuidePage() {
   const articleSchema = generateArticleSchema({
     title: "Kaito AI & InfoFi Explained 2026: Attention as a Crypto Asset",
@@ -97,6 +107,7 @@ export default function KaitoInfoFiGuidePage() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchemas} />
 
       {/* Breadcrumb */}

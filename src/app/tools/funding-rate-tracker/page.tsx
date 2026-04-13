@@ -84,9 +84,20 @@ const faqSchema = generateFAQSchema([
 const schemas = combineSchemas([toolSchema, faqSchema]);
 
 // ─── Component ───────────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Funding Rate Tracker', },
+  ],
+};
+
 export default function FundingRateTrackerPage() {
   return (
     <div style={{ background: "var(--color-bg)" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={schemas} />
       <div
         style={{ maxWidth: 1200, margin: "0 auto", padding: "2rem 1rem 4rem" }}

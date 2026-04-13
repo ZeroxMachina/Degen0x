@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `Shakepay Card Review (${CURRENT_YEAR}): Bitcoin Cashback for Canadians | ${SITE_NAME}`,
   description: "In-depth Shakepay Card review covering Bitcoin cashback rewards, fees, features, and how it compares to other Canadian crypto cards.",
-  alternates: { canonical: "/crypto-cards/reviews/shakepay-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/shakepay-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Shakepay Card', },
+  ],
+};
 
 export default function ShakepayCardReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -50,5 +64,7 @@ export default function ShakepayCardReview() {
         { title: "Best Crypto Cards Canada", href: "/crypto-cards/best/canada" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -10,11 +10,26 @@ export const metadata: Metadata = {
   title: "EigenLayer Review 2026: Restaking, Yields, Pros & Cons",
   description:
     "Our in-depth EigenLayer review covers restaking mechanics, AVS rewards, risks, and whether it's the right protocol for boosting your staking yields. Updated March 2026.",
-  alternates: { canonical: "/investing/staking/reviews/eigenlayer" }};
+  alternates: { canonical: "/investing/staking/reviews/eigenlayer" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Reviews', item: 'https://degen0x.com/investing/staking/reviews' },
+    { '@type': 'ListItem', position: 5, name: 'Eigenlayer', },
+  ],
+};
 
 export default function EigenLayerReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Staking"
       categorySlug="investing/staking"
@@ -114,5 +129,7 @@ EigenLayer has spawned an entire ecosystem of Liquid Restaking Token (LRT) proto
         { title: "Staking Risks", href: "/investing/staking/learn/staking-risks" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

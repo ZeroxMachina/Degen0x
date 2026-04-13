@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Staking Platforms for Beginners in ${CURRENT_YEAR}`,
   description: `Find the easiest crypto staking platforms for beginners in ${CURRENT_YEAR}. Simple staking with no technical knowledge required. Compare Coinbase, Lido, and more.`,
-  alternates: { canonical: "/investing/staking/best/beginners" }};
+  alternates: { canonical: "/investing/staking/best/beginners" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -32,6 +34,18 @@ const faqs = [
     answer: "While uncommon, there are risks. Slashing can cause loss of staked funds (more common with small, unreliable validators). Smart contract bugs in DeFi protocols are another risk. Centralized platforms like Coinbase typically absorb slashing losses on behalf of users, making them safer for beginners.",
   },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Best', item: 'https://degen0x.com/investing/staking/best' },
+    { '@type': 'ListItem', position: 5, name: 'Beginners', },
+  ],
+};
 
 export default function BestStakingBeginnersPage() {
   const beginnerPlatforms = stakingPlatforms.filter(
@@ -56,6 +70,7 @@ export default function BestStakingBeginnersPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb

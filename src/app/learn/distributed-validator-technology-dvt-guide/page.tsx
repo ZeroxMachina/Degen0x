@@ -222,9 +222,20 @@ const faqSchema = generateFAQSchema([
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Distributed Validator Technology Dvt Guide', },
+  ],
+};
+
 export default function DVTGuidePage() {
   return (
     <main style={{ minHeight: '100vh', backgroundColor: '#0d1117', color: '#e6edf3' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
 
       <article style={{ maxWidth: '820px', margin: '0 auto', padding: 'clamp(20px, 4vw, 40px) clamp(16px, 3vw, 20px)' }}>

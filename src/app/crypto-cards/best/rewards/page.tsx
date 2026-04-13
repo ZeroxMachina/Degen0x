@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Rewards Cards of ${CURRENT_YEAR} - Maximize Your Earnings`,
   description: `Compare the best crypto rewards cards of ${CURRENT_YEAR}. Earn Bitcoin, ETH, and more on every purchase. We tested reward programs, perks, and earning potential.`,
-  alternates: { canonical: "/crypto-cards/best/rewards" }};
+  alternates: { canonical: "/crypto-cards/best/rewards" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const rewardsCards = [
   cryptoCards.find((c) => c.slug === "crypto-com-visa")!,
@@ -51,9 +53,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/crypto-cards/best' },
+    { '@type': 'ListItem', position: 4, name: 'Rewards', },
+  ],
+};
+
 export default function BestRewardsCardsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

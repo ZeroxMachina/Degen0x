@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Lendle Review ${CURRENT_YEAR}: Mantle Lending Protocol`,
   description: "In-depth Lendle review covering Aave V2-based lending on Mantle, yield rates, LEND token incentives, and the protocol's role in Mantle DeFi ecosystem.",
-  alternates: { canonical: "/defi-lending/reviews/lendle" }};
+  alternates: { canonical: "/defi-lending/reviews/lendle" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Lendle', },
+  ],
+};
 
 export default function LendleReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Lendle", slug: "lendle", rating: 3.7, description: "Lendle is an Aave V2-based lending protocol on Mantle network offering lending and borrowing markets with LEND token incentives, positioning itself as a core DeFi infrastructure provider for the Mantle ecosystem.", pros: ["Leading lending protocol on Mantle network", "Aave V2 proven architecture for reliable lending", "LEND token rewards enhance effective yields", "Mantle ecosystem grant support", "Low gas costs on Mantle network"], cons: ["Mantle ecosystem still growing and developing", "Aave V2 architecture lacks V3 improvements", "LEND token has limited trading liquidity", "Competing for attention against Mantle's own ecosystem initiatives", "Lower TVL than lending protocols on established L2s"], bestFor: "DeFi users seeking lending opportunities on Mantle network with token incentives", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Lendle has established itself as one of the primary lending protocols on Mantle network, providing Aave V2-based lending and borrowing markets for the growing Mantle DeFi ecosystem. The protocol supports major Mantle assets and benefits from the network's ecosystem development grants and incentive programs. LEND token rewards boost lending yields, helping attract TVL during the ecosystem's growth phase. Lendle serves as essential DeFi infrastructure that enables composable strategies and capital efficiency for Mantle users. The protocol's Aave V2 foundation provides proven reliability, though the older architecture lacks some modern features found in V3-based alternatives."
@@ -32,5 +46,7 @@ export default function LendleReview() {
       relatedReviews={[{ name: "Mendi", slug: "mendi" }, { name: "Aurelius", slug: "aurelius" }, { name: "Init Capital", slug: "init-capital" }]}
       relatedGuides={[{ title: "DeFi on Mantle", href: "/defi-lending/learn/defi-on-mantle" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

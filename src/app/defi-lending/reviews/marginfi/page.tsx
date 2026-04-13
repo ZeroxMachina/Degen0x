@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `MarginFi Review ${CURRENT_YEAR}: Yield, Fees & Pros/Cons`,
   description:
     "Comprehensive MarginFi review covering lending rates, borrowing features, points system, and whether this Solana lending protocol fits your DeFi strategy.",
-  alternates: { canonical: "/defi-lending/reviews/marginfi" }};
+  alternates: { canonical: "/defi-lending/reviews/marginfi" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Marginfi', },
+  ],
+};
 
 export default function MarginfiReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "MarginFi",
         slug: "marginfi",
@@ -119,5 +133,7 @@ export default function MarginfiReview() {
         { title: "Points Farming in DeFi", href: "/defi-lending/learn/points-farming-defi" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

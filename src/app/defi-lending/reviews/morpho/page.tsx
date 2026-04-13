@@ -10,11 +10,25 @@ const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "morpho")!;
 export const metadata: Metadata = {
   title: `Morpho Review (${CURRENT_YEAR}): P2P Rate Optimization | degen0x`,
   description: "In-depth Morpho review covering P2P matching, Morpho Blue permissionless markets, rate improvements, security model, and token economics.",
-  alternates: { canonical: "/defi-lending/reviews/morpho" }};
+  alternates: { canonical: "/defi-lending/reviews/morpho" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Morpho', },
+  ],
+};
 
 export default function MorphoReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="DeFi Lending"
       categorySlug="defi-lending"
@@ -37,5 +51,7 @@ export default function MorphoReview() {
       relatedReviews={[{ name: "Aave", slug: "/defi-lending/reviews/aave" }, { name: "Compound", slug: "/defi-lending/reviews/compound" }]}
       relatedGuides={[{ title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `SPEDN App Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description:
     "Full SPEDN app review covering Flexa-powered crypto payments at retail stores, supported cryptocurrencies, merchant network, and in-store spending experience.",
-  alternates: { canonical: "/spending/reviews/spedn" }};
+  alternates: { canonical: "/spending/reviews/spedn" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Spedn', },
+  ],
+};
 
 export default function SpednReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "SPEDN",
         slug: "spedn",
@@ -118,5 +132,7 @@ SPEDN supports a variety of cryptocurrencies including Bitcoin, Ethereum, Liteco
         { title: "Where to Spend Crypto", href: "/spending/learn/where-to-spend-crypto" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

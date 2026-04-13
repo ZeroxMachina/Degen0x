@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `SALT Lending Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth SALT Lending review covering loan terms, supported collateral, rates, security, and whether SALT is right for your crypto borrowing needs.",
-  alternates: { canonical: "/crypto-loans/reviews/salt-lending" }};
+  alternates: { canonical: "/crypto-loans/reviews/salt-lending" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Salt Lending', },
+  ],
+};
 
 export default function SaltLendingReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "SALT Lending",
         slug: "salt-lending",
@@ -74,5 +88,7 @@ export default function SaltLendingReviewPage() {
         { title: "Loan Risks Guide", href: "/crypto-loans/learn/loan-risks-guide" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

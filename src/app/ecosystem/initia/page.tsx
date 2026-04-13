@@ -21,6 +21,21 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/ecosystem/initia" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Ecosystem', item: 'https://degen0x.com/ecosystem' },
+    { '@type': 'ListItem', position: 3, name: 'Initia', },
+  ],
+};
+
 export default function InitiaPage() {
-  return <InitiaClient />;
+  return (
+    <>
+      <InitiaClient />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

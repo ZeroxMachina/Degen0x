@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Sonne Finance Review ${CURRENT_YEAR}: Optimism & Base Lending`,
   description: "Complete Sonne Finance review covering Compound-style lending on Optimism and Base, yield rates, SONNE token incentives, and protocol risk analysis.",
-  alternates: { canonical: "/defi-lending/reviews/sonne" }};
+  alternates: { canonical: "/defi-lending/reviews/sonne" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Sonne', },
+  ],
+};
 
 export default function SonneReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Sonne Finance", slug: "sonne", rating: 3.7, description: "Sonne Finance is a Compound V2-style lending protocol on Optimism and Base offering standard lending and borrowing with SONNE token incentive rewards to boost yields.", pros: ["Established lending protocol on Optimism ecosystem", "Compound V2 architecture provides proven and familiar mechanics", "SONNE token rewards enhance base lending yields", "Expanded to Base for multi-chain presence", "Active in Optimism governance and ecosystem grants"], cons: ["Compound V2 architecture lacks newer features like eMode", "Competition from Aave V3 on Optimism is significant", "SONNE token has limited liquidity and utility", "TVL is modest compared to major protocols", "V2 architecture may feel outdated"], bestFor: "Optimism and Base users seeking straightforward lending with token incentives", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Sonne Finance is one of the native lending protocols on Optimism, offering a Compound V2-style lending and borrowing platform with additional SONNE token incentives. The protocol has expanded to Base to broaden its reach and serves as a community-oriented alternative to Aave V3 on Optimism. While Sonne does not offer the advanced features of Aave V3 such as efficiency mode or isolation mode, it provides a straightforward lending experience with additional token rewards that can boost overall yields. The protocol has been active in the Optimism ecosystem, receiving grants and participating in governance initiatives."
@@ -32,5 +46,7 @@ export default function SonneReview() {
       relatedReviews={[{ name: "Exactly", slug: "exactly" }, { name: "Lodestar", slug: "lodestar" }, { name: "Granary", slug: "granary" }]}
       relatedGuides={[{ title: "DeFi on Optimism", href: "/defi-lending/learn/defi-on-optimism" }, { title: "Real Yield vs Emissions", href: "/defi-lending/learn/real-yield-vs-emissions" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

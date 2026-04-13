@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Multi-Sig Wallets Explained (${CURRENT_YEAR}) - How They Work | ${SITE_NAME}`,
   description: `Learn how multi-signature wallets work in ${CURRENT_YEAR}. Covers multi-sig setup, use cases for DAOs and teams, Safe (Gnosis Safe), and security benefits.`,
-  alternates: { canonical: "/wallets/learn/multi-sig-wallets" }};
+  alternates: { canonical: "/wallets/learn/multi-sig-wallets" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "what-is-multisig", title: "What Is a Multi-Sig Wallet?", level: 2 },
@@ -29,6 +31,17 @@ const relatedArticles = [
   { title: "Best Security Wallets", href: "/wallets/best/security", category: "Wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/wallets/learn' },
+    { '@type': 'ListItem', position: 4, name: 'Multi Sig Wallets', },
+  ],
+};
+
 export default function MultiSigWalletsPage() {
   return (
     <LearnPage
@@ -41,6 +54,7 @@ export default function MultiSigWalletsPage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="what-is-multisig">What Is a Multi-Sig Wallet?</h2>
       <p>
         A multi-signature wallet is a crypto wallet that requires more than one private key to authorize a

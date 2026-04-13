@@ -8,7 +8,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = { title: `Nexo vs Aave ${CURRENT_YEAR}: CeFi vs DeFi Lending Compared`, description: `Compare Nexo (CeFi) vs Aave (DeFi) for crypto loans in ${CURRENT_YEAR}. Analyze rates, KYC requirements, security models, and which is better for your needs.` ,
-  alternates: { canonical: "/crypto-loans/compare/nexo-vs-aave" }};
+  alternates: { canonical: "/crypto-loans/compare/nexo-vs-aave" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Nexo", slug: "nexo", rating: 4.7, affiliateUrl: "https://degen0x.com/go/nexo", features: { "Type": "CeFi (Centralized)", "KYC Required": "Yes", "Interest Rates": "0-13.9% APR", "Collateral Assets": "60+", "Fiat Borrowing": "Yes (USD, EUR, GBP)", "Insurance": "$775M coverage", "Liquidation Model": "Margin call + auto-sell", "Best For": "Simple, regulated borrowing" } },
@@ -23,9 +25,21 @@ const faqs: FAQ[] = [
   { question: "Can I use both?", answer: "Yes. Many users split between CeFi and DeFi to diversify their risk. You might use Nexo for convenience and fiat access, and Aave for larger DeFi-native positions where you want on-chain transparency." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/crypto-loans/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Nexo Vs Aave', },
+  ],
+};
+
 export default function NexoVsAavePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -10,7 +10,9 @@ const product = walletProducts.find((p) => p.slug === "exodus")!;
 export const metadata: Metadata = {
   title: `Exodus Wallet Review (${CURRENT_YEAR}) - Best for Beginners? | ${SITE_NAME}`,
   description: `Detailed Exodus wallet review for ${CURRENT_YEAR}. Covers the desktop, mobile, and browser experience, built-in exchange, Trezor integration, and portfolio tracking.`,
-  alternates: { canonical: "/wallets/reviews/exodus" }};
+  alternates: { canonical: "/wallets/reviews/exodus" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Exodus is a beautifully designed multi-platform crypto wallet that prioritizes simplicity and visual appeal. Available on desktop (Windows, Mac, Linux), mobile (iOS, Android), and as a browser extension, Exodus supports over 300 cryptocurrencies with a built-in exchange, portfolio tracking, and staking features. Its standout strength is the user experience, which makes managing crypto feel intuitive even for complete beginners. Exodus also integrates with Trezor hardware wallets for users who want enhanced security without sacrificing the polished interface.";
@@ -124,9 +126,21 @@ const relatedGuides = [
   { title: "How to Set Up a Wallet", href: "/wallets/learn/how-to-set-up-wallet" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Exodus', },
+  ],
+};
+
 export default function ExodusReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -139,5 +153,7 @@ export default function ExodusReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

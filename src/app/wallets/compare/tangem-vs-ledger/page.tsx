@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Tangem vs Ledger (${CURRENT_YEAR}) - NFC Cards vs USB Hardware Wallet | ${SITE_NAME}`,
   description: `Tangem vs Ledger hardware wallet comparison for ${CURRENT_YEAR}. NFC cards vs USB devices, security models, ease of use, and coin support compared.`,
-  alternates: { canonical: "/wallets/compare/tangem-vs-ledger" }};
+  alternates: { canonical: "/wallets/compare/tangem-vs-ledger" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Tangem", slug: "tangem", rating: 4.3, affiliateUrl: "#", features: { "Form Factor": "NFC smart cards", Price: "From $55 (3 cards)", Connection: "NFC tap", Coins: "7,000+", "Secure Element": "Yes (EAL6+)", Battery: "None needed", Screen: "Phone display", Backup: "Backup cards", "Open Source": "Partially", "Mobile App": "Required" } },
@@ -23,9 +25,21 @@ const faqs = [
   { question: "Which is better for DeFi?", answer: "Ledger has better DeFi support through Ledger Live's dApp access and integration with browser wallets like MetaMask and Rabby. Tangem connects to dApps via WalletConnect but the experience is less mature. For heavy DeFi use, Ledger is better." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Tangem Vs Ledger', },
+  ],
+};
+
 export default function TangemVsLedgerPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

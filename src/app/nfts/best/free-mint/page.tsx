@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best NFT Marketplaces for Free Minting in ${CURRENT_YEAR} | degen0x`,
   description: `Find the best NFT marketplaces with free minting in ${CURRENT_YEAR}. Create and list NFTs without upfront gas costs using lazy minting and low-cost chains.`,
-  alternates: { canonical: "/nfts/best/free-mint" }};
+  alternates: { canonical: "/nfts/best/free-mint" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -32,6 +34,17 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/nfts/best' },
+    { '@type': 'ListItem', position: 4, name: 'Free Mint', },
+  ],
+};
+
 export default function BestForFreeMintPage() {
   const recommended = ["opensea", "zora", "magic-eden", "rarible", "tensor"];
   const filtered = nftMarketplaces
@@ -51,6 +64,7 @@ export default function BestForFreeMintPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb

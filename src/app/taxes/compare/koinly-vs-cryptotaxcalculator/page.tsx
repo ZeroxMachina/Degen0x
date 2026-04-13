@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: `Koinly vs CryptoTaxCalculator ${CURRENT_YEAR} - Which Is Better for DeFi?`,
   description: `Compare Koinly vs CryptoTaxCalculator. Side-by-side analysis of DeFi support, pricing, integrations, and which crypto tax software is right for you.`,
   alternates: { canonical: "/taxes/compare/koinly-vs-cryptotaxcalculator" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = TAX_COMPARISON_ITEMS.filter(i => ["koinly", "cryptotaxcalculator"].includes(i.slug));
 
@@ -22,9 +23,21 @@ const faqs = [
   { question: "Which is better for international users?", answer: "Both support international users well. CryptoTaxCalculator supports 40+ countries while Koinly supports 20+. For users in less common tax jurisdictions, CryptoTaxCalculator may have better coverage. Both support major markets like US, UK, Australia, and Canada." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/taxes/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Koinly Vs Cryptotaxcalculator', },
+  ],
+};
+
 export default function KoinlyVsCryptoTaxCalculatorPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `SoFi Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth SoFi Crypto review covering trading fees, supported coins, banking integration, and whether this all-in-one finance app suits your crypto needs.",
-  alternates: { canonical: "/exchanges/reviews/sofi-crypto" }};
+  alternates: { canonical: "/exchanges/reviews/sofi-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Sofi Crypto', },
+  ],
+};
 
 export default function SoFiCryptoReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "SoFi Crypto",
         slug: "sofi-crypto",
@@ -67,5 +81,7 @@ As a national bank holding company, SoFi operates under significant regulatory o
         { title: "Exchange vs Wallet", href: "/exchanges/learn/exchange-vs-wallet" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

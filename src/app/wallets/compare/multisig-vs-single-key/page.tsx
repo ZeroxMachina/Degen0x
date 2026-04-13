@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Multisig vs Single-Key Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Multi-signature vs single-key wallet comparison for ${CURRENT_YEAR}. Security models, use cases, costs, and setup complexity compared.`,
-  alternates: { canonical: "/wallets/compare/multisig-vs-single-key" }};
+  alternates: { canonical: "/wallets/compare/multisig-vs-single-key" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Multisig Wallets", slug: "safe-wallet", rating: 4.5, affiliateUrl: "#", features: { "Keys Required": "M-of-N (e.g. 2-of-3)", "Setup Complexity": "High", "Tx Cost": "Higher (smart contract)", "Recovery Options": "Redundant key holders", Coordination: "Multiple signers", "Single Point of Failure": "No", "Best For": "Teams, DAOs, high-value", Examples: "Safe, Electrum multisig", "Key Storage": "Distributed", Speed: "Slower" } },
@@ -23,9 +25,21 @@ const faqs = [
   { question: "Can I convert single-key to multisig?", answer: "You cannot convert an existing wallet. Instead, create a new multisig (like Safe), designate signers, then transfer assets from your old wallet to the new multisig address." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Multisig Vs Single Key', },
+  ],
+};
+
 export default function MultisigVsSingleKeyPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

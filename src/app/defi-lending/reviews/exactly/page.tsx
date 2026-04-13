@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Exactly Protocol Review ${CURRENT_YEAR}: Fixed-Rate DeFi Lending`,
   description: "In-depth Exactly Protocol review covering fixed-rate lending, variable markets, the EXA token, and how this Optimism protocol enables predictable DeFi yields.",
-  alternates: { canonical: "/defi-lending/reviews/exactly" }};
+  alternates: { canonical: "/defi-lending/reviews/exactly" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Exactly', },
+  ],
+};
 
 export default function ExactlyReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Exactly Protocol", slug: "exactly", rating: 4.1, description: "Exactly Protocol is a decentralized lending platform on Optimism that uniquely offers both fixed-rate and variable-rate lending markets, enabling users to lock in predictable yields and borrowing costs.", pros: ["Fixed-rate lending provides predictable yields and borrowing costs", "Dual market system offers flexibility between fixed and variable rates", "Built on Optimism with low transaction costs", "Strong tokenomics with EXA staking and revenue sharing", "Innovative approach to a genuine DeFi need for rate certainty"], cons: ["Fixed-rate markets may have limited liquidity for specific maturities", "More complex than simple variable-rate protocols", "Limited to Optimism ecosystem", "Newer protocol with growing but still modest TVL", "Fixed rates may be less competitive during certain market conditions"], bestFor: "DeFi users seeking predictable fixed-rate yields and borrowing costs", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Exactly Protocol addresses one of DeFi's persistent challenges: the lack of predictable interest rates. While most lending protocols offer only variable rates that fluctuate constantly, Exactly provides both fixed-rate and variable-rate lending markets on Optimism. The fixed-rate markets allow lenders to lock in yields and borrowers to lock in costs for specific time periods, bringing a level of financial planning capability that is standard in traditional finance but rare in DeFi. The protocol has gained traction among users who value rate predictability, institutional-minded participants, and those looking to hedge against rate volatility. The EXA governance token provides staking rewards and protocol revenue sharing."
@@ -32,5 +46,7 @@ export default function ExactlyReview() {
       relatedReviews={[{ name: "Sonne", slug: "sonne" }, { name: "Sturdy", slug: "sturdy" }, { name: "Granary", slug: "granary" }]}
       relatedGuides={[{ title: "Fixed-Rate Yield Guide", href: "/defi-lending/learn/fixed-rate-yield-guide" }, { title: "DeFi on Optimism", href: "/defi-lending/learn/defi-on-optimism" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

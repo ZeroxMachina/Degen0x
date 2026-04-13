@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Kinza Finance Review ${CURRENT_YEAR}: BNB Chain Lending Protocol`,
   description: "Comprehensive Kinza Finance review covering Aave V3-based lending on BNB Chain, yield rates, KZA token rewards, and protocol risk analysis.",
-  alternates: { canonical: "/defi-lending/reviews/kinza" }};
+  alternates: { canonical: "/defi-lending/reviews/kinza" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Kinza', },
+  ],
+};
 
 export default function KinzaReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Kinza Finance", slug: "kinza", rating: 3.8, description: "Kinza Finance is an Aave V3-based lending protocol on BNB Chain offering competitive yields, KZA token incentives, and features like eMode for correlated asset pairs in the BNB Chain ecosystem.", pros: ["Built on proven Aave V3 architecture with modern features", "Competitive yields on BNB Chain assets", "KZA token rewards boost effective APY", "Efficiency mode for correlated asset pairs", "Growing TVL in BNB Chain DeFi ecosystem"], cons: ["BNB Chain has lower DeFi composability than Ethereum", "Competing against Venus, the established BNB Chain lending protocol", "KZA token value and sustainability is uncertain", "Less battle-tested than Venus on BNB Chain", "Team background and transparency could be improved"], bestFor: "BNB Chain users seeking modern Aave V3 lending features with token incentives", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Kinza Finance brings Aave V3 architecture to BNB Chain, offering a modern lending platform with features like efficiency mode, isolation mode, and supply caps that older BNB Chain lending protocols lack. The protocol has attracted TVL through competitive yields enhanced by KZA token rewards, positioning itself as a next-generation alternative to Venus, BNB Chain's established lending protocol. Kinza supports major BNB Chain assets and provides a familiar Aave-style experience for users who prefer the modern V3 feature set over Venus's Compound V2-style approach."
@@ -32,5 +46,7 @@ export default function KinzaReview() {
       relatedReviews={[{ name: "Alpaca Finance", slug: "alpaca-finance" }, { name: "Mendi", slug: "mendi" }, { name: "Lendle", slug: "lendle" }]}
       relatedGuides={[{ title: "DeFi on BNB Chain", href: "/defi-lending/learn/defi-on-bnb-chain" }, { title: "Yield Optimizer Guide", href: "/defi-lending/learn/yield-optimizer-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

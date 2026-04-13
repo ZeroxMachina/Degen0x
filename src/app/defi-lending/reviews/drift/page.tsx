@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Drift Protocol Review ${CURRENT_YEAR}: Perps, Lending & Pros/Cons`,
   description:
     "Complete Drift Protocol review covering perpetual futures, spot lending, insurance fund, and how this Solana trading platform compares to competitors.",
-  alternates: { canonical: "/defi-lending/reviews/drift" }};
+  alternates: { canonical: "/defi-lending/reviews/drift" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Drift', },
+  ],
+};
 
 export default function DriftReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Drift Protocol",
         slug: "drift",
@@ -119,5 +133,7 @@ export default function DriftReview() {
         { title: "Kamino vs Drift", href: "/defi-lending/compare/kamino-vs-drift" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

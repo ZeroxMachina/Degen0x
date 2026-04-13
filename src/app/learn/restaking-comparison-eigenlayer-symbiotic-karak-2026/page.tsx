@@ -64,9 +64,20 @@ const faqSchema = generateFAQSchema([
 
 const combinedSchemas = combineSchemas(articleSchema, faqSchema);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Restaking Comparison Eigenlayer Symbiotic Karak 2026', },
+  ],
+};
+
 export default function RestakingComparisonPage() {
   return (
     <article style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", paddingTop: "40px", paddingBottom: "80px" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchemas} />
 
       <div style={{ maxWidth: "820px", margin: "0 auto", paddingLeft: "20px", paddingRight: "20px" }}>

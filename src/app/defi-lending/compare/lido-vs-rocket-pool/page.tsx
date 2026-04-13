@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Lido vs Rocket Pool ${CURRENT_YEAR}: Which Liquid Staking Protocol Is Better?`,
   description: `Compare Lido vs Rocket Pool for ETH liquid staking in ${CURRENT_YEAR}. Analyze yields, decentralization, fees, DeFi integration, and which is right for you.`,
-  alternates: { canonical: "/defi-lending/compare/lido-vs-rocket-pool" }};
+  alternates: { canonical: "/defi-lending/compare/lido-vs-rocket-pool" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Lido", slug: "lido", rating: 4.7, affiliateUrl: "https://degen0x.com/go/lido", features: { "TVL": "$20B+", "Staking Token": "stETH / wstETH", "Fee": "10% of rewards", "Net APR": "~3.5-4.5%", "Min Deposit": "Any amount", "Node Operators": "30+ curated", "Decentralization": "Moderate (working on DVT)", "DeFi Integration": "Deepest (100+ protocols)" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Can I use both Lido and Rocket Pool?", answer: "Yes. Many users split their ETH between both protocols to diversify liquid staking provider risk. This approach reduces your exposure to any single protocol's smart contract risk, operator risk, or governance risk." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Lido Vs Rocket Pool', },
+  ],
+};
+
 export default function LidoVsRocketPoolPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

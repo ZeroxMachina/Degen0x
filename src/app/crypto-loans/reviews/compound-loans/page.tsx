@@ -7,11 +7,25 @@ import ReviewPage from "@/components/ReviewPage";
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "compound-loans")!;
 
 export const metadata: Metadata = { title: "Compound Loans Review 2026: DeFi Borrowing Analysis", description: "Review of borrowing on Compound V3. Covers isolated markets, rates, collateral, COMP rewards, and comparison to alternatives. Updated March 2026." ,
-  alternates: { canonical: "/crypto-loans/reviews/compound-loans" }};
+  alternates: { canonical: "/crypto-loans/reviews/compound-loans" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Compound Loans', },
+  ],
+};
 
 export default function CompoundLoansReview() {
   return (
-    <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
+    <>
+      <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="Compound V3 offers decentralized borrowing through its innovative isolated market architecture. Each market centers around a single borrowable base asset (like USDC or ETH) with multiple approved collateral types. This isolated design means a failure in one market cannot cascade to others, providing cleaner risk separation than pooled lending models. Since pioneering DeFi lending in 2018, Compound has processed billions in loans with a strong security track record. COMP governance token rewards provide additional incentives for both borrowers and lenders."
       sections={[
         { id: "v3-markets", title: "V3 Isolated Markets", content: "Compound V3 operates through isolated markets, each focused on one borrowable asset. The USDC market on Ethereum accepts ETH, WBTC, wstETH, and other approved tokens as collateral for borrowing USDC. The ETH market accepts similar collateral for ETH borrowing. This isolation means risk is contained within each market, a significant improvement over V2's shared-pool model where all assets shared liquidity and risk." },
@@ -30,5 +44,7 @@ export default function CompoundLoansReview() {
       relatedReviews={[{ name: "Aave", slug: "aave-loans" }, { name: "MakerDAO", slug: "makerdao" }]}
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

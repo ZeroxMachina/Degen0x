@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `Celsius Successor Analysis (${CURRENT_YEAR}): What Happened & Lessons | ${SITE_NAME}`,
   description: "Analysis of Celsius Network's collapse, successor entities, creditor recovery, and lessons learned for crypto lending safety.",
-  alternates: { canonical: "/crypto-loans/reviews/celsius-successor" }};
+  alternates: { canonical: "/crypto-loans/reviews/celsius-successor" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Celsius Successor', },
+  ],
+};
 
 export default function CelsiusSuccessorReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Loans"
       categorySlug="crypto-loans"
@@ -44,5 +58,7 @@ export default function CelsiusSuccessorReview() {
       relatedReviews={[{ name: "Nexo", slug: "nexo" }, { name: "Ledn", slug: "ledn" }]}
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }, { title: "Loan Risks Guide", href: "/crypto-loans/learn/loan-risks-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Metaverse Crypto Tokens (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top metaverse and virtual world crypto tokens in ${CURRENT_YEAR}. Compare Decentraland, The Sandbox, Axie Infinity, and other virtual world investments.`,
-  alternates: { canonical: "/investing/best/metaverse" }};
+  alternates: { canonical: "/investing/best/metaverse" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "The Sandbox (SAND)", slug: "sandbox", rating: 4.2, description: "Virtual world platform enabling users to build, own, and monetize gaming experiences. Major brand partnerships with Adidas, Gucci, and Warner Music for virtual", pros: ["Strong brand partnerships", "User-generated content platform", "Active virtual land economy"], cons: ["Declining active users from peak", "High virtual land prices", "Competing with traditional gaming"], bestFor: "Brand-partnered virtual world exposure", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "What is the future of metaverse crypto?", answer: "The sector is likely to consolidate around platforms with genuine user engagement and sustainable business models. Infrastructure plays (Immutable X, Render) may outperform individual virtual worlds because they benefit from multiple projects succeeding regardless of which specific worlds attract users." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Metaverse', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

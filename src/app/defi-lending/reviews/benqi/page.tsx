@@ -21,11 +21,25 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `BENQI Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth BENQI review covering Avalanche lending, sAVAX liquid staking, rates, security, and how it compares to other DeFi lending protocols.",
-  alternates: { canonical: "/defi-lending/reviews/benqi" }};
+  alternates: { canonical: "/defi-lending/reviews/benqi" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Benqi', },
+  ],
+};
 
 export default function BenqiReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="DeFi Lending"
       categorySlug="defi-lending"
@@ -48,5 +62,7 @@ export default function BenqiReview() {
       relatedReviews={[{ name: "Aave", slug: "/defi-lending/reviews/aave" }, { name: "Venus Protocol", slug: "/defi-lending/reviews/venus" }]}
       relatedGuides={[{ title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }, { title: "Impermanent Loss Guide", href: "/defi-lending/learn/impermanent-loss" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

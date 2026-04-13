@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Layer 2 DeFi Lending Protocols ${CURRENT_YEAR} - Low-Cost Lending`,
   description: `Compare the best DeFi lending protocols on Layer 2 networks in ${CURRENT_YEAR}. Earn yield on Arbitrum, Optimism, Base, and other L2s at a fraction of Ethereum mainnet costs.`,
-  alternates: { canonical: "/defi-lending/best/layer-2" }};
+  alternates: { canonical: "/defi-lending/best/layer-2" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -59,9 +61,21 @@ const faqs: FAQ[] = [
   { question: "Which L2 is best for DeFi lending?", answer: "Arbitrum currently has the deepest DeFi liquidity among L2s, making it the best overall choice. Base is growing rapidly with strong Coinbase integration. Optimism offers a mature DeFi ecosystem. Your choice should depend on where your assets already are and which ecosystem you prefer." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/defi-lending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Layer 2', },
+  ],
+};
+
 export default function Layer2Page() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

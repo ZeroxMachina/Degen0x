@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Granary Finance Review ${CURRENT_YEAR}: Multi-Chain Aave Fork`,
   description: "Detailed Granary Finance review covering multi-chain lending, Aave V2 architecture, yield rates, and risk analysis across supported networks.",
-  alternates: { canonical: "/defi-lending/reviews/granary" }};
+  alternates: { canonical: "/defi-lending/reviews/granary" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Granary', },
+  ],
+};
 
 export default function GranaryReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Granary Finance", slug: "granary", rating: 3.5, description: "Granary Finance is a multi-chain lending protocol built on Aave V2 architecture, deployed across Ethereum, Optimism, Arbitrum, and other networks, offering lending and borrowing with protocol-specific incentives.", pros: ["Multi-chain deployment across major networks", "Built on proven Aave V2 lending architecture", "Familiar interface for Aave users", "GRAIN token incentives add yield on top of base rates", "Supports assets on multiple ecosystems"], cons: ["Using older Aave V2 rather than V3 architecture", "Competing directly with Aave's own multi-chain deployments", "Lower TVL and liquidity than Aave itself", "GRAIN token has experienced significant price decline", "Limited differentiation from the protocol it forked"], bestFor: "Multi-chain DeFi users seeking Aave-style lending with additional token incentives", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Granary Finance is an Aave V2 fork deployed across multiple networks including Ethereum, Optimism, Arbitrum, Base, and Fantom. The protocol offers standard lending and borrowing mechanics inherited from Aave V2 with additional GRAIN token incentives. While Granary provides a functional lending platform, it faces the fundamental challenge of competing with Aave's own multi-chain deployments which offer deeper liquidity and the more advanced V3 architecture. Granary has carved a niche by deploying on chains where Aave was slower to arrive and by offering GRAIN rewards that temporarily boost yields above Aave's base rates. However, the sustainability of this approach depends on the GRAIN token maintaining value and the protocol finding lasting differentiation."
@@ -32,5 +46,7 @@ export default function GranaryReview() {
       relatedReviews={[{ name: "Lodestar", slug: "lodestar" }, { name: "Sonne", slug: "sonne" }, { name: "Sturdy", slug: "sturdy" }]}
       relatedGuides={[{ title: "Real Yield vs Emissions", href: "/defi-lending/learn/real-yield-vs-emissions" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

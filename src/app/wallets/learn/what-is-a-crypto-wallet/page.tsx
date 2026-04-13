@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `What Is a Crypto Wallet? Complete Guide (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Learn what a crypto wallet is, how it works, and the different types available. A beginner-friendly guide to understanding cryptocurrency wallets in ${CURRENT_YEAR}.`,
-  alternates: { canonical: "/wallets/learn/what-is-a-crypto-wallet" }};
+  alternates: { canonical: "/wallets/learn/what-is-a-crypto-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "what-is-wallet", title: "What Is a Crypto Wallet?", level: 2 },
@@ -30,6 +32,17 @@ const relatedArticles = [
   { title: "Custodial vs Non-Custodial Wallets", href: "/wallets/learn/custodial-vs-non-custodial", category: "Wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/wallets/learn' },
+    { '@type': 'ListItem', position: 4, name: 'What Is A Crypto Wallet', },
+  ],
+};
+
 export default function WhatIsACryptoWalletPage() {
   return (
     <LearnPage
@@ -42,6 +55,7 @@ export default function WhatIsACryptoWalletPage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="what-is-wallet">What Is a Crypto Wallet?</h2>
       <p>
         A crypto wallet is a tool that allows you to send, receive, and manage cryptocurrency. Despite the name,

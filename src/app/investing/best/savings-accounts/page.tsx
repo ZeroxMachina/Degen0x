@@ -10,7 +10,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Savings Accounts ${CURRENT_YEAR} — Highest APY Rates Compared`,
   description: `Compare the best crypto savings accounts of ${CURRENT_YEAR}. Earn up to 12% APY on Bitcoin, Ethereum, and stablecoins. Expert-reviewed rates, safety scores, and platform comparisons.`,
-  alternates: { canonical: "/investing/best/savings-accounts" }};
+  alternates: { canonical: "/investing/best/savings-accounts" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const PLATFORMS = [
   {
@@ -218,6 +220,17 @@ function TrustScoreBar({ score }: { score: number }) {
   );
 }
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Savings Accounts', },
+  ],
+};
+
 export default function CryptoSavingsAccountsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -229,6 +242,7 @@ export default function CryptoSavingsAccountsPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

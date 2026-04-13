@@ -9,7 +9,9 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = { title: `Best Stablecoin Loans ${CURRENT_YEAR} - Borrow USDC, DAI, USDT`, description: `Compare the best platforms for borrowing stablecoins against crypto in ${CURRENT_YEAR}. Get USDC, DAI, or USDT without selling your holdings.` ,
-  alternates: { canonical: "/crypto-loans/best/stablecoin" }};
+  alternates: { canonical: "/crypto-loans/best/stablecoin" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   { name: "Aave", slug: "aave-loans", rating: 4.8, description: "Aave offers stablecoin borrowing across USDC, USDT, DAI, and other stablecoins on 10+ chains. Multi-chain availability means you can find the best rates for", pros: ["Multiple stablecoin options", "Multi-chain rate shopping", "Deep stablecoin liquidity", "No KYC"], cons: ["Variable rates fluctuate", "Gas costs on mainnet", "DeFi knowledge required"], fees: "Variable borrow rates", bestFor: "Multi-stablecoin borrowers", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans", featured: true },
@@ -23,9 +25,21 @@ const faqs: FAQ[] = [
   { question: "Is borrowing stablecoins a taxable event?", answer: "In most jurisdictions, borrowing against crypto collateral is not a taxable event because you are not selling assets. However, if your position is liquidated, that may be treated as a sale. Interest paid on loans may be deductible in some cases. Consult a tax professional." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/crypto-loans/best' },
+    { '@type': 'ListItem', position: 4, name: 'Stablecoin', },
+  ],
+};
+
 export default function StablecoinLoansPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

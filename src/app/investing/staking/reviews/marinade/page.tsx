@@ -10,11 +10,26 @@ export const metadata: Metadata = {
   title: "Marinade Review 2026: SOL Staking, mSOL, Pros & Cons",
   description:
     "Our in-depth Marinade review covers mSOL, native staking, decentralization focus, and whether it's the right Solana staking protocol for you. Updated March 2026.",
-  alternates: { canonical: "/investing/staking/reviews/marinade" }};
+  alternates: { canonical: "/investing/staking/reviews/marinade" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Reviews', item: 'https://degen0x.com/investing/staking/reviews' },
+    { '@type': 'ListItem', position: 5, name: 'Marinade', },
+  ],
+};
 
 export default function MarinadeReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Staking"
       categorySlug="investing/staking"
@@ -114,5 +129,7 @@ The protocol is governed by the MNDE token, which allows holders to participate 
         { title: "What Is Staking?", href: "/investing/staking/learn/what-is-staking" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

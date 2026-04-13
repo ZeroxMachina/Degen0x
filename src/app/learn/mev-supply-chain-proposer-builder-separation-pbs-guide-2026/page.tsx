@@ -45,9 +45,20 @@ const DARK_COLORS = {
 };
 const GRADIENT_H1 = 'linear-gradient(135deg, #6366f1, #06b6d4)';
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Mev Supply Chain Proposer Builder Separation Pbs Guide 2026', },
+  ],
+};
+
 export default function MEVPBSGuide() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style>{`
         html { scroll-behavior: smooth; }
         ::-webkit-scrollbar { width: 8px; }

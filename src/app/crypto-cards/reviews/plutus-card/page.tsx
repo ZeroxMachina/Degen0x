@@ -10,11 +10,25 @@ const product = cryptoCards.find((c) => c.slug === "plutus-card")!;
 export const metadata: Metadata = {
   title: `Plutus Card Review (${CURRENT_YEAR}): Decentralized Rewards & Pros/Cons | degen0x`,
   description: "In-depth Plutus Card review covering PLU token rewards, selectable perks, decentralized cashback model, and whether it is the best crypto card for European",
-  alternates: { canonical: "/crypto-cards/reviews/plutus-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/plutus-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Plutus Card', },
+  ],
+};
 
 export default function PlutusCardReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -36,5 +50,7 @@ export default function PlutusCardReviewPage() {
       relatedReviews={[{ name: "Wirex Card", slug: "wirex-card" }, { name: "Crypto.com Visa", slug: "crypto-com-visa" }, { name: "Gnosis Pay Card", slug: "gnosis-card" }]}
       relatedGuides={[{ title: "Best Crypto Card Rewards", href: "/crypto-cards/learn/best-crypto-card-rewards" }, { title: "Crypto Card Security Tips", href: "/crypto-cards/learn/crypto-card-security" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

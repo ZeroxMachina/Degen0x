@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Blue-Chip Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top blue-chip cryptocurrencies for ${CURRENT_YEAR}. The most established, reliable crypto assets with proven track records and institutional adoption.`,
-  alternates: { canonical: "/investing/best/blue-chip-crypto" }};
+  alternates: { canonical: "/investing/best/blue-chip-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.9, description: "The original and largest cryptocurrency with unmatched network security, institutional adoption, and brand recognition. Bitcoin ETFs have cemented its position", pros: ["Largest market cap and liquidity", "ETF access for traditional investors", "15+ year track record", "Strongest network security"], cons: ["Limited smart contract functionality", "Lower growth potential than altcoins", "Energy-intensive mining"], bestFor: "Core portfolio foundation and digital gold thesis", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Can blue-chip crypto still deliver high returns?", answer: "While percentage returns will be lower than early-stage tokens, blue-chip crypto can still deliver meaningful returns. Bitcoin's appreciation from $30K to $70K represents a 130% gain — significant by any standard. Blue-chip crypto offers a better risk-adjusted return profile than speculative altcoins for most investors." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Blue Chip Crypto', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

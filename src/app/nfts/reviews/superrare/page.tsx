@@ -9,11 +9,25 @@ const product = nftMarketplaces.find((m) => m.slug === "superrare")!;
 export const metadata: Metadata = {
   title: "SuperRare Review 2026: Fees, Features, Pros & Cons",
   description: "Our in-depth SuperRare review covers premium art curation, RARE governance, 1-of-1 focus, and whether it's worth the premium fees. Updated March 2026.",
-  alternates: { canonical: "/nfts/reviews/superrare" }};
+  alternates: { canonical: "/nfts/reviews/superrare" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/nfts/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Superrare', },
+  ],
+};
 
 export default function SuperRareReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
       categorySlug="nfts"
@@ -39,5 +53,7 @@ In 2021, SuperRare introduced the RARE governance token and transitioned toward 
       relatedReviews={[ { name: "Foundation", slug: "foundation" }, { name: "Zora", slug: "zora" }, { name: "OpenSea", slug: "opensea" } ]}
       relatedGuides={[ { title: "Best for Art", href: "/nfts/best/art" }, { title: "NFT Art Guide", href: "/nfts/learn/nft-art-guide" } ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

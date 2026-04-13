@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `Unchained Review (${CURRENT_YEAR}): Bitcoin Loans with Key Control | ${SITE_NAME}`,
   description: "In-depth Unchained review covering collaborative custody Bitcoin loans, multisig security, rates, and how it compares to custodial crypto lenders.",
-  alternates: { canonical: "/crypto-loans/reviews/unchained" }};
+  alternates: { canonical: "/crypto-loans/reviews/unchained" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Unchained', },
+  ],
+};
 
 export default function UnchainedReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Loans"
       categorySlug="crypto-loans"
@@ -44,5 +58,7 @@ export default function UnchainedReview() {
       relatedReviews={[{ name: "Ledn", slug: "ledn" }, { name: "Nexo", slug: "nexo" }]}
       relatedGuides={[{ title: "Bitcoin-Backed Loans", href: "/crypto-loans/learn/bitcoin-backed-loans" }, { title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

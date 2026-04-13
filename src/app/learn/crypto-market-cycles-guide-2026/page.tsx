@@ -71,6 +71,16 @@ const faqSchema = generateFAQSchema([
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Market Cycles Guide 2026', },
+  ],
+};
+
 export default function CryptoMarketCyclesPage() {
   const S = {
     bg: "#0d1117",
@@ -88,6 +98,7 @@ export default function CryptoMarketCyclesPage() {
 
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", scrollBehavior: "smooth" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData schema={combinedSchema} />
 
       {/* Breadcrumb */}

@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for iPhone & iOS (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best iOS crypto wallets for ${CURRENT_YEAR}. Compare Trust Wallet, Phantom, Coinbase Wallet, Rainbow, and Exodus for iPhone and iPad.`,
-  alternates: { canonical: "/wallets/best/ios" }};
+  alternates: { canonical: "/wallets/best/ios" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Trust Wallet", slug: "trust-wallet", rating: 4.4, description: "Feature-rich iOS wallet supporting 10M+ tokens across 100+ blockchains with built-in dApp browser, staking, and swap features.", pros: ["Massive multi-chain support", "Built-in dApp browser", "Face ID integration"], cons: ["Owned by Binance", "Interface can feel crowded"], bestFor: "Broadest multi-chain iOS wallet experience", affiliateUrl: "#", category: "wallets" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Should I backup my wallet to iCloud?", answer: "iCloud backup is convenient but involves trade-offs. Wallets like Coinbase Wallet encrypt your key before storing it in iCloud. However, if someone gains access to your Apple ID and wallet password, they could recover your wallet. For maximum security, use an offline seed phrase backup. For convenience with moderate balances, encrypted cloud backup is reasonable." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Ios', },
+  ],
+};
+
 export default function BestIOSWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

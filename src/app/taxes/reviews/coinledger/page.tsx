@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `CoinLedger Review (${CURRENT_YEAR}): Simple Crypto Tax Software | ${SITE_NAME}`,
   description: "In-depth CoinLedger review covering its beginner-friendly approach, TurboTax integration, pricing, and suitability for different trader types.",
-  alternates: { canonical: "/taxes/reviews/coinledger" }};
+  alternates: { canonical: "/taxes/reviews/coinledger" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/taxes/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Coinledger', },
+  ],
+};
 
 export default function CoinLedgerReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Taxes"
       categorySlug="taxes"
@@ -44,5 +58,7 @@ export default function CoinLedgerReview() {
       relatedReviews={[{ name: "Koinly", slug: "koinly" }, { name: "TurboTax Crypto", slug: "turbotax-crypto" }]}
       relatedGuides={[{ title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }, { title: "IRS Form 8949", href: "/taxes/learn/irs-form-8949" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

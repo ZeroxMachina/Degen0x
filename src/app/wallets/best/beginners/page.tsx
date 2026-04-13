@@ -12,13 +12,26 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for Beginners (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The easiest crypto wallets for beginners in ${CURRENT_YEAR}. Exodus, Coinbase Wallet, Phantom and more. Simple setup, intuitive interfaces, and step-by-step guides.`,
-  alternates: { canonical: "/wallets/best/beginners" }};
+  alternates: { canonical: "/wallets/best/beginners" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What is the easiest crypto wallet to use?", answer: "Exodus is the easiest crypto wallet for beginners thanks to its intuitive design, built-in exchange, and multi-platform support. Coinbase Wallet is also excellent for beginners, especially those already using Coinbase exchange. Both offer straightforward setup processes and clean interfaces that do not overwhelm new users." },
   { question: "Do I need a crypto wallet if I use an exchange?", answer: "Using a self-custody wallet is strongly recommended for anyone holding crypto long-term. Exchange wallets (custodial) mean the exchange holds your keys, which exposes you to exchange hacks and insolvency risks. A self-custody wallet gives you full control of your assets. You can start with an exchange and gradually move funds to your own wallet." },
   { question: "How much crypto should I have before getting a hardware wallet?", answer: "There is no strict threshold, but many experts recommend a hardware wallet once you hold more than $500-$1,000 in crypto. The cost of a hardware wallet ($79-$149) is a small price for security. Even with smaller amounts, a hardware wallet is worthwhile if you plan to accumulate over time." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Beginners', },
+  ],
+};
 
 export default function BestBeginnersWalletsPage() {
   const comparisonItems = [
@@ -30,6 +43,7 @@ export default function BestBeginnersWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

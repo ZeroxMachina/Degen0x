@@ -9,11 +9,25 @@ const product = nftMarketplaces.find((m) => m.slug === "zora")!;
 export const metadata: Metadata = {
   title: "Zora Review 2026: Fees, Features, Pros & Cons",
   description: "Our in-depth Zora review covers zero fees, decentralized minting, Zora Network L2, and whether it's the right platform for creators. Updated March 2026.",
-  alternates: { canonical: "/nfts/reviews/zora" }};
+  alternates: { canonical: "/nfts/reviews/zora" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/nfts/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Zora', },
+  ],
+};
 
 export default function ZoraReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
       categorySlug="nfts"
@@ -39,5 +53,7 @@ The Zora protocol is open-source, meaning any developer can build marketplace ex
       relatedReviews={[ { name: "Rarible", slug: "rarible" }, { name: "Foundation", slug: "foundation" }, { name: "OpenSea", slug: "opensea" } ]}
       relatedGuides={[ { title: "Best for Creators", href: "/nfts/best/creators" }, { title: "How to Create NFTs", href: "/nfts/learn/how-to-create-nfts" } ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

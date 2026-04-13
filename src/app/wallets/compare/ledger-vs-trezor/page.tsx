@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Ledger vs Trezor (${CURRENT_YEAR}) - Hardware Wallet Comparison | ${SITE_NAME}`,
   description: `Ledger vs Trezor detailed comparison for ${CURRENT_YEAR}. Security, supported coins, open-source, pricing, and features compared side by side.`,
-  alternates: { canonical: "/wallets/compare/ledger-vs-trezor" }};
+  alternates: { canonical: "/wallets/compare/ledger-vs-trezor" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Which is better, Ledger or Trezor?", answer: "Both are excellent. Ledger is better for mobile users (Bluetooth), broader coin support (5,500+), and has a certified Secure Element chip. Trezor is better for open-source transparency, Bitcoin privacy (CoinJoin), and Shamir Backup. Most security experts consider both brands to be equally trustworthy." },
@@ -21,6 +23,17 @@ const faqs = [
   { question: "Which should a beginner buy?", answer: "For beginners, the Ledger Nano S Plus ($79) offers the easiest setup experience with Ledger Live and supports 5,500+ coins. The Trezor Safe 3 ($79) is equally good at the same price with the added benefit of open-source transparency and a Secure Element chip. Either is an excellent first hardware wallet." },
   { question: "Do Ledger and Trezor support the same coins?", answer: "Ledger supports significantly more coins (5,500+) than Trezor Model T (1,800+), though the Trezor Safe 3 supports 8,000+. Both support all major cryptocurrencies including Bitcoin, Ethereum, and most popular altcoins. The difference mainly matters for obscure tokens." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Ledger Vs Trezor', },
+  ],
+};
 
 export default function LedgerVsTrezorPage() {
   const items = [
@@ -36,6 +49,7 @@ export default function LedgerVsTrezorPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

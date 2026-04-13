@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Fantom (FTM) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Fantom investment guide for ${CURRENT_YEAR}. Learn about FTM fundamentals, Sonic upgrade, DeFi ecosystem, risks, and how to buy Fantom.`,
   alternates: { canonical: "/investing/crypto/fantom" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Fantom a good investment?", answer: "Fantom is an EVM-compatible Layer 1 with a loyal DeFi community and the involvement of DeFi pioneer Andre Cronje. The upcoming Sonic upgrade promises massive performance improvements. However, Fantom's DeFi TVL declined significantly from its 2022 peaks, and competition from other high-performance EVM chains is intense. The Multichain bridge exploit in 2023 also damaged ecosystem confidence." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "Who is Andre Cronje?", answer: "Andre Cronje is a prominent DeFi developer known as the creator of Yearn Finance and a key architect of the Fantom ecosystem. His involvement has been a major draw for DeFi developers and users. Cronje serves as a director at the Fantom Foundation and has driven the development of Sonic and other core infrastructure. His reputation in DeFi brings both credibility and community attention to Fantom." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Fantom', },
+  ],
+};
+
 export default function FantomPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

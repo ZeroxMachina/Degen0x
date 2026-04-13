@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Solana Wallet 2026', description: 'Compare Solana wallets for staking, swaps, NFTs', image: 'https://degen0x.com/og-wallets.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Phantom the best Solana wallet?', acceptedAnswer: { '@type': 'Answer', text: 'Phantom #1 by market share (80%+ Solana dApps). Hot wallet, supports staking, token swaps, NFT gallery, priority fees. Not hardware security. For holding, use Ledger.' } }, { '@type': 'Question', name: 'What is Jupiter integration?', acceptedAnswer: { '@type': 'Answer', text: 'Jupiter is Solana DEX. Built into Phantom/Solflare. In-wallet swaps without leaving app. Best rates via routing algorithm.' } }, { '@type': 'Question', name: 'Does Ledger work with Solana?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Ledger Nano X/S with Solana app. Hardware security. Works with Phantom, Solflare frontends. Best for long-term.' } }, { '@type': 'Question', name: 'What are priority fees?', acceptedAnswer: { '@type': 'Answer', text: 'Solana tip to validators for faster execution. Phantom 1.8.0+ has priority fee selector. Network congestion = higher tips needed.' } }, { '@type': 'Question', name: 'Can I stake SOL in wallet?', acceptedAnswer: { '@type': 'Answer', text: 'Phantom: yes, built-in staking to validators. Solflare: yes, same. In-wallet staking convenient but risks validator centralization.' } }, { '@type': 'Question', name: 'Compressed NFTs support?', acceptedAnswer: { '@type': 'Answer', text: 'Solana Saga phone native. Phantom/Solflare adding support 2026. Compresses NFT on-chain size 99%, cheaper minting.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best Solana Wallet 2026', },
+  ],
+};
+
 export default function BestSolanaWallet2026() {
   const styles = {
     infoBox: { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -31,6 +41,7 @@ export default function BestSolanaWallet2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

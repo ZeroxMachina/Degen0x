@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Lolli Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description:
     "Complete Lolli review covering Bitcoin cashback rewards, supported retailers, browser extension, mobile app, and how to earn free Bitcoin while shopping online.",
-  alternates: { canonical: "/spending/reviews/lolli" }};
+  alternates: { canonical: "/spending/reviews/lolli" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Lolli', },
+  ],
+};
 
 export default function LolliReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Lolli",
         slug: "lolli",
@@ -119,5 +133,7 @@ Lolli has distributed millions of dollars in Bitcoin rewards since its launch an
         { title: "Best Crypto for Online Shopping", href: "/spending/best/online-shopping" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

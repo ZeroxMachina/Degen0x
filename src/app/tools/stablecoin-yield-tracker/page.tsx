@@ -46,6 +46,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/tools/stablecoin-yield-tracker" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Stablecoin Yield Tracker', },
+  ],
+};
+
 export default function StablecoinYieldTrackerPage() {
   // Generate structured data
   const toolSchema = generateToolPageSchema({
@@ -96,6 +106,7 @@ export default function StablecoinYieldTrackerPage() {
 
   return (
     <div style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `ELLIPAL Review (${CURRENT_YEAR}) | degen0x`,
   description: "ELLIPAL Titan hardware wallet review covering air-gapped QR code security, large touchscreen, multi-chain support, and anti-tamper design.",
-  alternates: { canonical: "/wallets/reviews/ellipal" }};
+  alternates: { canonical: "/wallets/reviews/ellipal" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Ellipal', },
+  ],
+};
 
 export default function EllipalReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "ELLIPAL",
         slug: "ellipal",
@@ -64,5 +78,7 @@ export default function EllipalReviewPage() {
         { title: "Best Multi-Chain Wallets", href: "/wallets/best/multi-chain" }
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

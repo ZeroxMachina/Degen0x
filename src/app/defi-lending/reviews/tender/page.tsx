@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Tender.fi Review ${CURRENT_YEAR}: Arbitrum Lending Protocol`,
   description: "Complete Tender.fi review covering lending on Arbitrum, oracle-based pricing, yield rates, and the protocol's position in the Arbitrum DeFi ecosystem.",
-  alternates: { canonical: "/defi-lending/reviews/tender" }};
+  alternates: { canonical: "/defi-lending/reviews/tender" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Tender', },
+  ],
+};
 
 export default function TenderReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Tender.fi", slug: "tender", rating: 3.4, description: "Tender.fi is a lending and borrowing protocol on Arbitrum offering Compound-style markets with GMX-integrated pricing oracles and support for Arbitrum DeFi ecosystem tokens.", pros: ["Arbitrum-native lending protocol with ecosystem focus", "GMX oracle integration for price feeds", "Supports GLP and other Arbitrum DeFi tokens as collateral", "Low gas costs on Arbitrum network", "Niche asset support not found on larger protocols"], cons: ["Very small TVL and limited liquidity", "Protocol experienced a white-hat exploit incident", "Limited development activity recently", "Competing against Aave V3 on Arbitrum", "Token incentives have diminished significantly"], bestFor: "Arbitrum users seeking to borrow against GLP and niche DeFi tokens", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Tender.fi is an Arbitrum-native lending protocol that differentiates by supporting Arbitrum ecosystem tokens like GLP as collateral and integrating with GMX's oracle infrastructure for price feeds. The protocol experienced a notable white-hat exploit incident where a researcher demonstrated a vulnerability by borrowing against inflated collateral, then returned the funds and was paid a bounty. This event highlighted both the protocol's vulnerabilities and the community's ability to resolve security issues constructively. Tender.fi serves a niche in the Arbitrum ecosystem by offering lending markets for assets that larger protocols may not support, though its TVL remains small."
@@ -32,5 +46,7 @@ export default function TenderReview() {
       relatedReviews={[{ name: "Lodestar", slug: "lodestar" }, { name: "Sonne", slug: "sonne" }, { name: "Granary", slug: "granary" }]}
       relatedGuides={[{ title: "DeFi on Arbitrum", href: "/defi-lending/learn/defi-on-arbitrum" }, { title: "Yield Risk Assessment", href: "/defi-lending/learn/yield-risk-assessment" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

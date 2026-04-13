@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Index Funds (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top crypto index funds and diversified crypto investment products in ${CURRENT_YEAR}. Compare Bitwise, Grayscale, and DeFi index protocols.`,
-  alternates: { canonical: "/investing/best/crypto-index-funds" }};
+  alternates: { canonical: "/investing/best/crypto-index-funds" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Bitwise 10 Crypto Index Fund", slug: "bitwise-10", rating: 4.5, description: "Tracks the 10 largest cryptocurrencies by market cap, rebalancing monthly. The most established crypto index fund with institutional-grade custody and", pros: ["Diversified top-10 crypto exposure", "Professional management and rebalancing", "Institutional-grade custody"], cons: ["Higher expense ratio than buying directly", "OTC shares may trade at premium/discount", "Limited to top 10 by market cap"], bestFor: "Passive diversified crypto exposure for traditional investors", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Can I create my own crypto index?", answer: "Yes. You can manually construct a crypto portfolio that mirrors an index methodology — for example, holding the top 10 tokens by market cap in proportion to their market cap weight. This eliminates management fees but requires manual rebalancing and more active management." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Crypto Index Funds', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

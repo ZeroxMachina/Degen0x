@@ -29,6 +29,20 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/notifications" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Notifications', },
+  ],
+};
+
 export default function NotificationsPage() {
-  return <NotificationsClient />;
+  return (
+    <>
+      <NotificationsClient />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

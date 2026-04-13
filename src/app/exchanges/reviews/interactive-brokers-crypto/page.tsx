@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Interactive Brokers Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Interactive Brokers crypto review covering trading fees, supported assets, professional tools, and whether IBKR suits your crypto needs.",
-  alternates: { canonical: "/exchanges/reviews/interactive-brokers-crypto" }};
+  alternates: { canonical: "/exchanges/reviews/interactive-brokers-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Interactive Brokers Crypto', },
+  ],
+};
 
 export default function InteractiveBrokersCryptoReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Interactive Brokers Crypto",
         slug: "interactive-brokers-crypto",
@@ -67,5 +81,7 @@ As one of the most heavily regulated brokerages globally, IBKR provides a level 
         { title: "Order Types Explained", href: "/exchanges/learn/order-types-explained" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -16,13 +16,24 @@ export const metadata: Metadata = {
     publishedTime: "2026-03-13T00:00:00Z",
   },
 
-  alternates: { canonical: "/learn/crypto-security-masterclass-2026" }};
+  alternates: { canonical: "/learn/crypto-security-masterclass-2026" },
+  twitter: { card: "summary_large_image" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
   { label: "Learn", href: "/learn" },
   { label: "Crypto Security Masterclass 2026", href: "/learn/crypto-security-masterclass-2026" },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Security Masterclass 2026', },
+  ],
+};
 
 export default function CryptoSecurityMasterclassPage() {
   const S = {
@@ -41,6 +52,7 @@ export default function CryptoSecurityMasterclassPage() {
 
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px 24px" }}>

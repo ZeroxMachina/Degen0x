@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Browser Extension Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best crypto browser extension wallets for ${CURRENT_YEAR}. Compare MetaMask, Rabby, Phantom, and more for DeFi, dApp access, and security.`,
-  alternates: { canonical: "/wallets/best/browser-extension" }};
+  alternates: { canonical: "/wallets/best/browser-extension" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "MetaMask", slug: "metamask", rating: 4.5, description: "The industry standard browser extension wallet with near-universal dApp compatibility across Chrome, Firefox, Brave, and Edge browsers.", pros: ["Universal dApp compatibility", "Snaps extensibility system", "Custom RPC network support"], cons: ["Can be slow with many networks", "Default RPC privacy concerns"], bestFor: "Broadest dApp compatibility across all browsers", affiliateUrl: "#", category: "wallets" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Should I use a browser extension or mobile wallet?", answer: "Browser extensions are best for desktop DeFi and dApp interactions. Mobile wallets are better for on-the-go transactions and casual portfolio checking. Many wallets like MetaMask and Phantom offer both, letting you sync accounts across platforms." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Browser Extension', },
+  ],
+};
+
 export default function BestBrowserExtensionWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

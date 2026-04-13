@@ -10,11 +10,25 @@ const product = cryptoCards.find((c) => c.slug === "nexo-card")!;
 export const metadata: Metadata = {
   title: `Nexo Card Review (${CURRENT_YEAR}): Credit Line, Rewards & Pros/Cons | degen0x`,
   description: "In-depth Nexo Card review covering crypto-backed credit lines, cashback rewards, spending without selling, and whether it is right for long-term HODLers.",
-  alternates: { canonical: "/crypto-cards/reviews/nexo-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/nexo-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Nexo Card', },
+  ],
+};
 
 export default function NexoCardReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -36,5 +50,7 @@ export default function NexoCardReviewPage() {
       relatedReviews={[{ name: "Crypto.com Visa", slug: "crypto-com-visa" }, { name: "Coinbase Card", slug: "coinbase-card" }, { name: "Plutus Card", slug: "plutus-card" }]}
       relatedGuides={[{ title: "Crypto Card Security Tips", href: "/crypto-cards/learn/crypto-card-security" }, { title: "Crypto Card Tax Implications", href: "/crypto-cards/learn/crypto-card-taxes" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

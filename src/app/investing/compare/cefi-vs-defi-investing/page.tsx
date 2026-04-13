@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `CeFi vs DeFi Investing (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `CeFi vs DeFi investing comparison for ${CURRENT_YEAR}. Centralized exchanges vs decentralized protocols — convenience, yields, risk, and self-custody compared.` ,
-  alternates: { canonical: "/investing/compare/cefi-vs-defi-investing" }};
+  alternates: { canonical: "/investing/compare/cefi-vs-defi-investing" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "CeFi (Centralized Finance)", slug: "cefi", rating: 4.3, affiliateUrl: "#", features: { "Custody": "Exchange holds your assets", "KYC Required": "Yes (identity verification)", "User Experience": "Familiar (similar to traditional brokerage)", "Yield Sources": "Exchange lending, staking-as-a-service", "Typical Yields": "2-8% (platform dependent)", "Insurance/Protection": "Some platforms have insurance funds", "Regulatory Status": "Regulated in most jurisdictions", "Smart Contract Risk": "None (centralized infrastructure)", "Counterparty Risk": "High (exchange can fail — FTX, Celsius)", "Tax Reporting": "Provided by platform (1099s)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Where should I keep most of my crypto?", answer: "The safest approach for significant holdings is self-custody with a hardware wallet, which eliminates both CeFi counterparty risk and DeFi smart contract risk. Keep only what you actively need on exchanges for trading, and only deploy capital in DeFi that you can afford to lose to smart contract risk. A common allocation: 60-70% in self-custody cold storage, 15-20% in DeFi earning yield, and 10-15% on exchanges for active trading." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Cefi Vs Defi Investing', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

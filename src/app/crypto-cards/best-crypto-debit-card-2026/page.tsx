@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Debit Card 2026', description: 'Crypto card comparison', image: 'https://degen0x.com/og-cards.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Coinbase Card best?', acceptedAnswer: { '@type': 'Answer', text: '4% cash back. Auto-converts crypto to USD instantly. No KYC for limits. Visa support everywhere. US only. Best for convenience.' } }, { '@type': 'Question', name: 'How does auto-conversion work?', acceptedAnswer: { '@type': 'Answer', text: 'Spend crypto directly. Card processor auto-converts to USD immediately. Merchant sees USD. You get cashback in crypto (or stable).' } }, { '@type': 'Question', name: 'Crypto.com Visa tiers?', acceptedAnswer: { '@type': 'Answer', text: '1-5% cashback. Tiers by CRO stake (Ruby $400, Jade $4k, Obsidian $40k). Lower tier = 2%, higher = 5% + perks.' } }, { '@type': 'Question', name: 'Tax implications of spending crypto?', acceptedAnswer: { '@type': 'Answer', text: 'Each transaction = taxable event (cost basis vs conversion price = gain/loss). Crypto.com/Coinbase provide tax forms. Track all transactions.' } }, { '@type': 'Question', name: 'Gnosis Pay: no KYC?', acceptedAnswer: { '@type': 'Answer', text: 'Yes, no KYC limits (€200/month for unverified). Requires Gnosis Safe multisig. Unique, privacy-focused.' } }, { '@type': 'Question', name: 'ATM withdrawals?', acceptedAnswer: { '@type': 'Answer', text: 'Coinbase: $2-3 ATM fee. Crypto.com: unlimited free (Jade+). Bybit: $1.50 fee. Check your card.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Best Crypto Debit Card 2026', },
+  ],
+};
+
 export default function BestCryptoDebitCard() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #2dd4bf', borderLeft: '3px solid #2dd4bf', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -31,6 +41,7 @@ export default function BestCryptoDebitCard() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

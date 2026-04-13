@@ -6,7 +6,8 @@ export const metadata: Metadata = {
   title: "degen0x en Español — Comparar Exchanges, Wallets y DeFi",
   description: "degen0x es tu guía de confianza para cripto en español. Compara exchanges, wallets, protocolos DeFi y más. Reseñas de expertos, herramientas interactivas y",
   alternates: { canonical: "https://degen0x.com/es" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const CATEGORIAS = [
   { nombre: "Exchanges de Cripto", desc: "Compara los mejores exchanges por comisiones, seguridad y monedas disponibles", href: "/exchanges/best", emoji: "🔀", color: "#6366f1" },
@@ -26,9 +27,19 @@ const GUIAS_POPULARES = [
   { titulo: "Calculadora DCA para Bitcoin", href: "/tools/dca-calculator" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Es', },
+  ],
+};
+
 export default function EspanolLandingPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--color-bg)" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

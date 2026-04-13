@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `How to Transfer Crypto Between Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Step-by-step guide to transferring cryptocurrency between wallets in ${CURRENT_YEAR}. Covers sending, receiving, network selection, fees, and avoiding common mistakes.`,
-  alternates: { canonical: "/wallets/learn/how-to-transfer-crypto" }};
+  alternates: { canonical: "/wallets/learn/how-to-transfer-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "basics", title: "Transfer Basics", level: 2 },
@@ -29,6 +31,17 @@ const relatedArticles = [
   { title: "Wallet Security Best Practices", href: "/wallets/learn/wallet-security-best-practices", category: "Wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/wallets/learn' },
+    { '@type': 'ListItem', position: 4, name: 'How To Transfer Crypto', },
+  ],
+};
+
 export default function HowToTransferCryptoPage() {
   return (
     <LearnPage
@@ -41,6 +54,7 @@ export default function HowToTransferCryptoPage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="basics">Transfer Basics</h2>
       <p>
         Every crypto transfer involves three elements: a sender address, a recipient address, and the blockchain

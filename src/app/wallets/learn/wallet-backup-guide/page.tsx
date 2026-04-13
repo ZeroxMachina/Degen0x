@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Crypto Wallet Backup Guide (${CURRENT_YEAR}) - Protect Your Recovery Phrase | ${SITE_NAME}`,
   description: `Complete guide to backing up your crypto wallet in ${CURRENT_YEAR}. Seed phrase storage, metal backups, Shamir Backup, multi-location strategies, and disaster recovery.`,
-  alternates: { canonical: "/wallets/learn/wallet-backup-guide" }};
+  alternates: { canonical: "/wallets/learn/wallet-backup-guide" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "why-backup", title: "Why Backup Matters", level: 2 },
@@ -29,6 +31,17 @@ const relatedArticles = [
   { title: "Best Hardware Wallets", href: "/wallets/best/hardware", category: "Wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/wallets/learn' },
+    { '@type': 'ListItem', position: 4, name: 'Wallet Backup Guide', },
+  ],
+};
+
 export default function WalletBackupGuidePage() {
   return (
     <LearnPage
@@ -41,6 +54,7 @@ export default function WalletBackupGuidePage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="why-backup">Why Backup Matters</h2>
       <p>
         Your seed phrase is the only way to restore access to your wallet if your device fails. Unlike bank

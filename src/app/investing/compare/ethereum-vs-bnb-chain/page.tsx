@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Ethereum vs BNB Chain (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Ethereum vs BNB Chain comparison for ${CURRENT_YEAR}. Decentralization vs low-cost performance, DeFi ecosystems, and investment thesis for ETH and BNB compared.` ,
-  alternates: { canonical: "/investing/compare/ethereum-vs-bnb-chain" }};
+  alternates: { canonical: "/investing/compare/ethereum-vs-bnb-chain" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Ethereum (ETH)", slug: "ethereum", rating: 4.8, affiliateUrl: "#", features: { "Consensus": "Proof-of-Stake", "Validator Count": "~900,000+", "Block Time": "~12 seconds", "Avg Transaction Fee": "$1-50 (mainnet)", "TVL": "Largest in crypto", "Decentralization": "Highly decentralized", "Smart Contract Language": "Solidity / Vyper", "EVM Compatible": "Is the EVM", "Backing Entity": "Ethereum Foundation (non-profit)", "ETF Available": "Yes (Spot)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Is ETH or BNB a better investment?", answer: "ETH benefits from the largest developer ecosystem, deepest DeFi liquidity, ETF availability, and strongest decentralization narrative. BNB benefits from Binance's massive user base, lower fees attracting retail users, and BNB's utility across the Binance ecosystem (exchange discounts, launchpad access). ETH is generally considered the safer long-term investment; BNB offers Binance ecosystem exposure with more concentrated counterparty risk." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Ethereum Vs Bnb Chain', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -12,13 +12,26 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Privacy Crypto Wallets of ${CURRENT_YEAR} - Anonymous Wallet Reviews | ${SITE_NAME}`,
   description: `Compare the best privacy-focused crypto wallets of ${CURRENT_YEAR}. Trezor, Rabby, MetaMask and more. CoinJoin, Tor support, no KYC, and private transactions.`,
-  alternates: { canonical: "/wallets/best/privacy" }};
+  alternates: { canonical: "/wallets/best/privacy" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Which crypto wallet is most private?", answer: "Trezor offers the strongest privacy features with built-in CoinJoin for Bitcoin transaction mixing, Tor network connectivity, and passphrase-protected hidden wallets. All transactions are handled locally without transmitting data to third-party servers. Trezor is also fully open-source so you can verify its privacy claims." },
   { question: "Can I use a crypto wallet without KYC?", answer: "Yes. Self-custody wallets like Trezor, MetaMask, Rabby, Phantom, and Exodus do not require any identity verification to create or use. You download the app, generate a wallet, and start using it immediately. KYC is only required when using centralized exchanges or fiat on-ramp services within wallets." },
   { question: "What is CoinJoin?", answer: "CoinJoin is a Bitcoin privacy technique that combines multiple transactions from different users into a single transaction, making it difficult to trace which inputs correspond to which outputs. Trezor Suite supports CoinJoin natively through the Wasabi Wallet coordinator, charging a 0.3% fee for the privacy service." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Privacy', },
+  ],
+};
 
 export default function BestPrivacyWalletsPage() {
   const comparisonItems = [
@@ -30,6 +43,7 @@ export default function BestPrivacyWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

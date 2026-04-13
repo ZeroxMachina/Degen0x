@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `CoinTracker vs ZenLedger ${CURRENT_YEAR}: Which Crypto Tax Software Is Better?`,
   description: `Compare CoinTracker vs ZenLedger for crypto tax reporting. Pricing, features, DeFi support, and TurboTax integration compared in ${CURRENT_YEAR}.`,
-  alternates: { canonical: "/taxes/compare/cointracker-vs-zenledger" }};
+  alternates: { canonical: "/taxes/compare/cointracker-vs-zenledger" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "CoinTracker", slug: "cointracker", rating: 4.3, affiliateUrl: "https://degen0x.com/go/cointracker", features: { "Free Tier": "Up to 25 transactions", "Paid Plans": "From $59/year", "Exchanges": "500+", "DeFi Support": "Good", "TurboTax Integration": "Direct one-click", "Portfolio Tracking": "Excellent real-time", "Tax Forms": "8949, Schedule D", "CPA Access": "No" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Which handles DeFi better?", answer: "Both tools have improved their DeFi support significantly. CoinTracker has a slight edge in automatic DeFi transaction categorization, particularly for Ethereum-based protocols. ZenLedger handles DeFi well but may require more manual categorization for complex transactions." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/taxes/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Cointracker Vs Zenledger', },
+  ],
+};
+
 export default function CoinTrackerVsZenLedgerPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Tarot Review ${CURRENT_YEAR}: Leveraged LP & Lending Protocol`,
   description:
     "Comprehensive Tarot review covering leveraged liquidity provision, lending pairs, yield strategies, and risk analysis across Fantom and other chains.",
-  alternates: { canonical: "/defi-lending/reviews/tarot" }};
+  alternates: { canonical: "/defi-lending/reviews/tarot" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Tarot', },
+  ],
+};
 
 export default function TarotReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Tarot",
         slug: "tarot",
@@ -64,5 +78,7 @@ export default function TarotReview() {
         { title: "DeFi on Fantom", href: "/defi-lending/learn/defi-on-fantom" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

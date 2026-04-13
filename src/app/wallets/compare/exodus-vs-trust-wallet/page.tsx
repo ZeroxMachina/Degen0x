@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Exodus vs Trust Wallet (${CURRENT_YEAR}) - Multi-Chain Wallet Comparison | ${SITE_NAME}`,
   description: `Exodus vs Trust Wallet comparison for ${CURRENT_YEAR}. Chain support, design, staking, DeFi, exchange features, and mobile experience compared.`,
-  alternates: { canonical: "/wallets/compare/exodus-vs-trust-wallet" }};
+  alternates: { canonical: "/wallets/compare/exodus-vs-trust-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Exodus or Trust Wallet better for beginners?", answer: "Exodus is better for beginners due to its visually stunning interface, clear portfolio tracking, and straightforward exchange feature. Trust Wallet has more features but can feel cluttered with its massive chain support. Exodus makes managing crypto feel simple, while Trust Wallet is better for users who need access to many chains." },
@@ -21,6 +23,17 @@ const faqs = [
   { question: "Can I use both on my phone?", answer: "Yes. Both Exodus and Trust Wallet have mobile apps for iOS and Android. You can install both and use Exodus for portfolio management and Trust Wallet for accessing dApps and chains that Exodus does not support." },
   { question: "Which has better exchange rates?", answer: "Trust Wallet typically offers better rates through its DEX aggregator, which sources from decentralized exchanges. Exodus's built-in exchange includes a larger spread (typically 2-5%). For the best rates, using a dedicated DEX like Uniswap is cheaper than either wallet's built-in exchange." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Exodus Vs Trust Wallet', },
+  ],
+};
 
 export default function ExodusVsTrustWalletPage() {
   const items = [
@@ -35,6 +48,7 @@ export default function ExodusVsTrustWalletPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

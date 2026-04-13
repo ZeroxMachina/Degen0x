@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Zerion Wallet Review (${CURRENT_YEAR}) - Best DeFi Portfolio Wallet? | ${SITE_NAME}`,
   description: `Detailed Zerion wallet review for ${CURRENT_YEAR}. Covers multi-chain DeFi tracking, swap aggregation, NFT management, and portfolio analytics.`,
-  alternates: { canonical: "/wallets/reviews/zerion" }};
+  alternates: { canonical: "/wallets/reviews/zerion" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const product = {
   name: "Zerion",
@@ -113,9 +115,21 @@ const relatedGuides = [
   { title: "Best Multi-Chain Wallets", href: "/wallets/best/multi-chain" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Zerion', },
+  ],
+};
+
 export default function ZerionReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -128,5 +142,7 @@ export default function ZerionReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

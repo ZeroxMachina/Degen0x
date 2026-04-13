@@ -8,8 +8,25 @@ export const metadata: Metadata = {
   title: `Bitcoin & Crypto ETF Tracker ${CURRENT_YEAR} — Live Flows, AUM & Performance | ${SITE_NAME}`,
   description: `Track Bitcoin spot ETF inflows, outflows, and AUM in real-time. Compare all crypto ETFs by performance, fees, and assets under management. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.`,
   keywords: ["bitcoin ETF", "crypto ETF tracker", "spot bitcoin ETF", "ETF inflows", "IBIT", "GBTC", "crypto ETF comparison"],
-  alternates: { canonical: "/tools/etf-tracker" }};
+  alternates: { canonical: "/tools/etf-tracker" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Etf Tracker', },
+  ],
+};
 
 export default function ETFTrackerPage() {
-  return <ETFTrackerClient />;
+  return (
+    <>
+      <ETFTrackerClient />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

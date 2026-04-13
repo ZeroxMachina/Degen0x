@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Aave vs Compound ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Aave vs Compound in ${CURRENT_YEAR}. Compare yields, features, security, supported assets, and multi-chain availability.`,
-  alternates: { canonical: "/defi-lending/compare/aave-vs-compound" }};
+  alternates: { canonical: "/defi-lending/compare/aave-vs-compound" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Aave", slug: "aave", rating: 4.8, affiliateUrl: "https://degen0x.com/go/aave", features: { "TVL": "$15B+", "Chains": "10+", "Supported Assets": "100+", "Rate Options": "Variable + Stable", "Flash Loans": "Yes (0.05% fee)", "Governance Token": "AAVE", "Architecture": "Pool-based V3", "Unique Feature": "eMode, Isolation Mode" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Can I use both Aave and Compound?", answer: "Absolutely. Many DeFi users diversify across both protocols to spread smart contract risk and access the best rates for different assets. Using Morpho can optimize rates across both simultaneously." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Aave Vs Compound', },
+  ],
+};
+
 export default function AaveVsCompoundPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

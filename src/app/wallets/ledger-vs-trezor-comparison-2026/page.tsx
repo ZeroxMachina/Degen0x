@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Ledger vs Trezor Comparison 2026', description: 'Compare hardware wallets', image: 'https://degen0x.com/og-wallets.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Which has more coin support?', acceptedAnswer: { '@type': 'Answer', text: 'Ledger: 5,000+ coins. Trezor: 1,800+ coins. Ledger wider, Trezor focuses on quality.' } }, { '@type': 'Question', name: 'Is Trezor more open source?', acceptedAnswer: { '@type': 'Answer', text: 'Trezor firmware open source. Ledger proprietary (security concern). But Ledger has Secure Element chip (more secure).' } }, { '@type': 'Question', name: 'Which has Bluetooth?', acceptedAnswer: { '@type': 'Answer', text: 'Ledger Nano X/Stax have Bluetooth. Trezor Safe 3 wired USB-C only. Bluetooth more convenient but debate on security.' } }, { '@type': 'Question', name: 'What is Secure Element?', acceptedAnswer: { '@type': 'Answer', text: 'Chip isolating key operations. Only Ledger has it (ST-made). Adds security layer vs pure software. Trezor argues not necessary.' } }, { '@type': 'Question', name: 'Price difference?', acceptedAnswer: { '@type': 'Answer', text: 'Nano X $149, Safe 3 $99, Stax $299, Model T $249. Trezor cheaper, Ledger premium for features.' } }, { '@type': 'Question', name: 'Which for long-term holding?', acceptedAnswer: { '@type': 'Answer', text: 'Both excellent. Ledger Nano X if want Bluetooth + more coins. Trezor Safe 3 if want open source + cheaper. Functionally equivalent.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Ledger Vs Trezor Comparison 2026', },
+  ],
+};
+
 export default function LedgerVsTrezorComparison() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #22c55e', borderLeft: '3px solid #22c55e', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -31,6 +41,7 @@ export default function LedgerVsTrezorComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

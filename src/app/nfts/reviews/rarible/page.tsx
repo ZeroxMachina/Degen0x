@@ -9,11 +9,25 @@ const product = nftMarketplaces.find((m) => m.slug === "rarible")!;
 export const metadata: Metadata = {
   title: "Rarible Review 2026: Fees, Features, Pros & Cons",
   description: "Our in-depth Rarible review covers multi-chain support, creator tools, RARI governance, and whether it's the right NFT marketplace for you. Updated March 2026.",
-  alternates: { canonical: "/nfts/reviews/rarible" }};
+  alternates: { canonical: "/nfts/reviews/rarible" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/nfts/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Rarible', },
+  ],
+};
 
 export default function RaribleReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
       categorySlug="nfts"
@@ -39,5 +53,7 @@ Rarible has also positioned itself as a marketplace infrastructure provider thro
       relatedReviews={[ { name: "OpenSea", slug: "opensea" }, { name: "Zora", slug: "zora" }, { name: "Foundation", slug: "foundation" } ]}
       relatedGuides={[ { title: "Best for Creators", href: "/nfts/best/creators" }, { title: "How to Create NFTs", href: "/nfts/learn/how-to-create-nfts" } ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

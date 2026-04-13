@@ -14,7 +14,8 @@ export const metadata: Metadata = {
     description: "The definitive guide to L2 scaling solutions. Compare rollups, understand the tech, and find the best L2 for your needs.",
   },
 
-  alternates: { canonical: "/learn/layer-2-scaling-guide" }};
+  alternates: { canonical: "/learn/layer-2-scaling-guide" },
+  twitter: { card: "summary_large_image" }};
 
 const TOC_ITEMS = [
   { id: "what-are-layer-2s", title: "What Are Layer 2s?", level: 2 },
@@ -68,6 +69,16 @@ const L2_COMPARISON = [
   { name: "Polygon PoS", type: "Sidechain", tps: "~7,000", avgFee: "$0.001", tvl: "$3.8B", ecosystem: "1,000+", finality: "~2 min", evm: "Full" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Layer 2 Scaling Guide', },
+  ],
+};
+
 export default function Layer2GuidePage() {
   const sectionStyle: React.CSSProperties = {
     marginBottom: 48,
@@ -91,6 +102,7 @@ export default function Layer2GuidePage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-bg, #0d1117)" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 80px" }}>
         <Breadcrumb items={[{ label: "Learn", href: "/learn" }, { label: "Layer 2 Scaling Guide", href: "/learn/layer-2-scaling-guide" }]} />
 

@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: `Best Crypto to Buy for Beginners in ${CURRENT_YEAR} (10 Picks Ranked)`,
   description: `The 10 best cryptocurrencies for beginners in ${CURRENT_YEAR}. Ranked by risk level, ease of buying, long-term potential, and beginner-friendliness. Start your crypto journey with confidence.`,
   alternates: { canonical: "/investing/best/crypto-for-beginners" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const PICKS = [
   {
@@ -317,9 +318,21 @@ const RISK_BG: Record<string, string> = {
   High: "rgba(248,81,73,0.12)",
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Crypto For Beginners', },
+  ],
+};
+
 export default function BestCryptoForBeginnersPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

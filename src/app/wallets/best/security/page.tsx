@@ -12,13 +12,26 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Most Secure Crypto Wallets of ${CURRENT_YEAR} - Security-Focused Reviews | ${SITE_NAME}`,
   description: `The most secure crypto wallets of ${CURRENT_YEAR}. Ledger, Trezor, Safe, Rabby and more. Expert analysis of hardware security, open-source code, and multi-sig protection.`,
-  alternates: { canonical: "/wallets/best/security" }};
+  alternates: { canonical: "/wallets/best/security" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What is the most secure crypto wallet?", answer: "For individual users, the Ledger Nano X with its CC EAL5+ Secure Element chip offers the strongest hardware security. Trezor Model T provides the highest transparency with fully open-source code. For organizations, Safe (Gnosis Safe) provides the best security through multi-signature approval requiring multiple parties to authorize transactions." },
   { question: "Is a hardware wallet really necessary?", answer: "If you hold any meaningful amount of crypto (generally over $500), a hardware wallet is strongly recommended. Hardware wallets keep your private keys offline on a dedicated device, protecting against malware, phishing, remote hacking, and keyloggers. The $79-$219 cost is minimal compared to the potential loss from a compromised hot wallet." },
   { question: "What is the difference between a Secure Element chip and regular encryption?", answer: "A Secure Element chip is a dedicated, tamper-resistant hardware component specifically designed to store cryptographic keys. It provides physical security against extraction attempts, while regular software encryption relies on your computer or phone's general-purpose processor. Secure Elements are the same technology used in bank cards and passports for a reason." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Security', },
+  ],
+};
 
 export default function BestSecurityWalletsPage() {
   const comparisonItems = [
@@ -30,6 +43,7 @@ export default function BestSecurityWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

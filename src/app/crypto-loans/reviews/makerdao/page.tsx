@@ -7,11 +7,25 @@ import ReviewPage from "@/components/ReviewPage";
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "makerdao")!;
 
 export const metadata: Metadata = { title: "MakerDAO Review 2026: DAI Borrowing, Vaults & Analysis", description: "In-depth MakerDAO review covering DAI borrowing, Vault mechanics, stability fees, and whether Maker is right for your DeFi lending needs. Updated March 2026." ,
-  alternates: { canonical: "/crypto-loans/reviews/makerdao" }};
+  alternates: { canonical: "/crypto-loans/reviews/makerdao" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Makerdao', },
+  ],
+};
 
 export default function MakerDAOReview() {
   return (
-    <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
+    <>
+      <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="MakerDAO is the protocol behind DAI, one of the most important decentralized stablecoins in crypto. Founded in 2015 and launched on Ethereum mainnet in 2017, MakerDAO pioneered the concept of overcollateralized stablecoin lending. Users open Vaults (formerly CDPs) by depositing crypto collateral and minting DAI against it. The protocol has rebranded to Sky, though the core functionality remains the same. MakerDAO has processed billions in DAI loans since inception, maintained DAI's peg through multiple market crashes, and built one of the most battle-tested protocols in all of DeFi."
       sections={[
         { id: "vault-mechanics", title: "Vault Mechanics", content: "MakerDAO Vaults allow users to lock crypto collateral and generate (mint) DAI stablecoins. Each collateral type has specific parameters: the liquidation ratio determines how much collateral you need relative to the DAI minted, and the stability fee is the annual interest rate on your borrowed DAI. Unlike lending protocols where you borrow from a pool, MakerDAO creates new DAI tokens when you borrow, which means there is no liquidity constraint on borrowing." },
@@ -31,5 +45,7 @@ export default function MakerDAOReview() {
       relatedReviews={[{ name: "Aave", slug: "aave-loans" }, { name: "Compound", slug: "compound-loans" }]}
       relatedGuides={[{ title: "What Are Crypto-Backed Loans?", href: "/crypto-loans/learn/what-are-crypto-backed-loans" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

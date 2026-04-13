@@ -11,7 +11,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Crypto Loans - Compare Crypto-Backed Lending Platforms ${CURRENT_YEAR}`,
   description: "Compare the best crypto loan platforms. Borrow against your Bitcoin and crypto without selling. CeFi and DeFi options with expert reviews and guides.",
-  alternates: { canonical: "/crypto-loans" }};
+  alternates: { canonical: "/crypto-loans" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
   { title: "Best Crypto Loan Platforms", href: "/crypto-loans/best", desc: "Top-rated platforms compared" },
@@ -47,12 +49,22 @@ const toolLinks = [
   { title: "Liquidation Price Calculator", href: "/crypto-loans/calculators/liquidation-price-calculator", desc: "Find your liquidation price" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', },
+  ],
+};
+
 export default function CryptoLoansPage() {
   const topPlatforms = CRYPTO_LOAN_PRODUCTS.filter((p) => p.slug !== "celsius").sort((a, b) => b.rating - a.rating).slice(0, 4);
   const jsonLd = { "@context": "https://schema.org", "@type": "CollectionPage", name: `Crypto Loans Hub ${CURRENT_YEAR}`, url: "https://degen0x.com/crypto-loans", isPartOf: { "@type": "WebSite", name: SITE_NAME } };
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }]} />

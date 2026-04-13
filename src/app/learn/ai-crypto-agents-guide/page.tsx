@@ -7,11 +7,24 @@ export const metadata: Metadata = {
   title: "AI Crypto Agents Guide 2026: Autonomous Trading, DeFi &",
   description:
     "Complete guide to AI agents in crypto — autonomous trading bots, DeFi yield optimizers, on-chain analysts, and the tokens powering the AI agent economy in 2026.",
-  alternates: { canonical: "/learn/ai-crypto-agents-guide" }};
+  alternates: { canonical: "/learn/ai-crypto-agents-guide" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Ai Crypto Agents Guide', },
+  ],
+};
 
 export default function AICryptoAgentsGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
           <span className="text-xs px-3 py-1 rounded-full font-bold" style={{ background: "#8b5cf620", color: "#8b5cf6" }}>

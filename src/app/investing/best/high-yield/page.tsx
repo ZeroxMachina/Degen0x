@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best High-Yield Crypto Investments (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top high-yield cryptocurrency opportunities in ${CURRENT_YEAR}. Compare staking, lending, and DeFi yield options with risk-adjusted analysis.`,
-  alternates: { canonical: "/investing/best/high-yield" }};
+  alternates: { canonical: "/investing/best/high-yield" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Lido Staked ETH (stETH)", slug: "lido", rating: 4.7, description: "The largest liquid staking protocol offering ETH staking yield (3-5% APY) while maintaining liquidity. stETH can be used across DeFi for additional yield.", pros: ["Largest liquid staking TVL", "Ethereum staking rewards with liquidity", "Composable across DeFi"], cons: ["Smart contract risk", "Staking reward rate varies", "Slight depeg risk in extreme markets"], bestFor: "Passive ETH staking with DeFi composability", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Can I lose money chasing yield?", answer: "Yes. Smart contract exploits, stablecoin depegs, impermanent loss, and protocol failures can result in losing deposited capital. The 2022 CeFi lending collapse (Celsius, BlockFi) showed that high yields can mask fatal risks. Never invest more than you can afford to lose in yield strategies." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'High Yield', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

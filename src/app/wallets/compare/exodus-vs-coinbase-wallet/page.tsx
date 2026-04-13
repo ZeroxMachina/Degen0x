@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Exodus vs Coinbase Wallet (${CURRENT_YEAR}): Self-Custody Wallet Comparison | ${SITE_NAME}`,
   description: `Exodus vs Coinbase Wallet comparison for ${CURRENT_YEAR}. Compare multi-chain support, DeFi features, staking, swap fees, and beginner experience.`,
-  alternates: { canonical: "/wallets/compare/exodus-vs-coinbase-wallet" }};
+  alternates: { canonical: "/wallets/compare/exodus-vs-coinbase-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Exodus", slug: "exodus", rating: 4.4, affiliateUrl: "https://degen0x.com/go/exodus", features: { "Type": "Desktop + Mobile", "Chains": "50+ blockchains", "Built-in Exchange": "Yes", "Swap Fees": "Spread markup (2-5%)", "Staking": "Yes (multi-chain)", "Hardware Wallet": "Trezor integration", "Open Source": "No", "Customer Support": "Email + live chat" } },
@@ -27,9 +29,21 @@ const faqs = [
   { question: "Which has cheaper swaps?", answer: "Coinbase Wallet charges only network gas fees for swaps with no additional service fee. Exodus charges a spread markup of 2-5% on built-in exchanges, making it significantly more expensive for swapping. For cost-effective trading, Coinbase Wallet or a DEX is cheaper." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Exodus Vs Coinbase Wallet', },
+  ],
+};
+
 export default function ExodusVsCoinbaseWalletPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

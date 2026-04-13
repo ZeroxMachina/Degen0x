@@ -7,11 +7,23 @@ export const metadata: Metadata = {
   title: 'Get Started | degen0x',
   description: 'Set up your degen0x profile, choose your risk tolerance, and customize your crypto dashboard in minutes.',
   keywords: ['crypto onboarding', 'portfolio setup', 'risk profile', 'degen0x setup'],
-  alternates: { canonical: "/onboarding" }};
+  alternates: { canonical: "/onboarding" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Onboarding', },
+  ],
+};
 
 export default function OnboardingPage() {
   return (
     <main className="min-h-screen bg-gray-950">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

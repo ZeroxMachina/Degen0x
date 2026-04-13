@@ -90,9 +90,20 @@ const stats = [
   { label: "2025 Security Attacks", value: "Battering RAM, Wiretap" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Tee Verifiable Compute Guide', },
+  ],
+};
+
 export default function TEEVerifiableComputeGuide() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <StructuredData data={combinedSchema} />
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
       <Breadcrumb items={[

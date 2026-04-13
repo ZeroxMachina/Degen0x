@@ -310,9 +310,20 @@ const pageStyles = {
   } as React.CSSProperties,
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Zk Coprocessors Verifiable Compute Guide 2026', },
+  ],
+};
+
 export default function ZKCoprocessorsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ ...pageStyles.container, scrollBehavior: 'smooth' as const }}>
         <nav style={{ marginBottom: '24px', fontSize: '14px' }} aria-label="Breadcrumb">

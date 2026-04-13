@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Privacy Coins (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top privacy-focused cryptocurrencies in ${CURRENT_YEAR}. Compare Monero, Zcash, and other privacy coins for transaction privacy and fungibility.`,
-  alternates: { canonical: "/investing/best/privacy-coins" }};
+  alternates: { canonical: "/investing/best/privacy-coins" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Monero (XMR)", slug: "monero", rating: 4.6, description: "The gold standard of privacy coins with mandatory privacy for all transactions. Ring signatures, stealth addresses, and RingCT make transactions untraceable by", pros: ["Privacy by default on all transactions", "Proven technology with years of use", "Active development community", "CPU mineable for decentralization"], cons: ["Delisted from some major exchanges", "Regulatory pressure increasing", "Not usable in most DeFi"], bestFor: "Maximum transaction privacy", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Will privacy coins be banned?", answer: "Complete bans are unlikely in democratic countries, but increased regulation and exchange delisting pressure is the more probable outcome. Privacy coins may need to develop compliance tools (like Zcash's optional transparency) to maintain exchange access while preserving privacy features." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Privacy Coins', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

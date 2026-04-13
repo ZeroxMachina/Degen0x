@@ -11,7 +11,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Cashback Cards of ${CURRENT_YEAR} - Earn Crypto on Every Purchase | ${SITE_NAME}`,
   description: `Compare the best crypto cashback cards of ${CURRENT_YEAR}. Earn Bitcoin, Ethereum, and other crypto rewards on everyday spending. Up to 8% back on purchases.`,
-  alternates: { canonical: "/spending/best/cashback" }};
+  alternates: { canonical: "/spending/best/cashback" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const cashbackCards: Product[] = [
   {
@@ -112,6 +114,17 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/spending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Cashback', },
+  ],
+};
+
 export default function BestCashbackCardsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -123,6 +136,7 @@ export default function BestCashbackCardsPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

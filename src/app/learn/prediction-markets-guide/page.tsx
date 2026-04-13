@@ -5,11 +5,24 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Prediction Markets: The Complete Guide to Event Trading",
   description: "Learn how crypto prediction markets work, explore top platforms like Polymarket, understand strategies for trading on real-world events, and manage risk",
-  alternates: { canonical: "/learn/prediction-markets-guide" }};
+  alternates: { canonical: "/learn/prediction-markets-guide" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Prediction Markets Guide', },
+  ],
+};
 
 export default function PredictionMarketsGuide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8">
         <a href="/learn" className="text-[var(--color-primary)] hover:underline">

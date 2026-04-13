@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Yield Farming Protocols (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top yield farming platforms and protocols in ${CURRENT_YEAR}. Compare Curve, Convex, Yearn, and other DeFi yield opportunities with risk analysis.`,
-  alternates: { canonical: "/investing/best/yield-farming" }};
+  alternates: { canonical: "/investing/best/yield-farming" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Curve Finance (CRV)", slug: "curve", rating: 4.6, description: "The dominant stablecoin DEX and yield farming hub. Curve pools offer swap fees plus CRV rewards, with the ve-tokenomics model creating deep liquidity", pros: ["Deepest stablecoin liquidity", "Established ve-tokenomics model", "Foundation of DeFi yield ecosystem"], cons: ["Complex gauge voting system", "CRV emissions sustainability", "Smart contract complexity risk"], bestFor: "Stablecoin yield farming with minimal impermanent loss", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "How do I get started with yield farming?", answer: "Start with stablecoin pools on Curve or lending on Aave for the lowest risk entry. Use yield aggregators like Yearn for automated strategies. Begin with small amounts on Ethereum L2s (Arbitrum, Base) where gas fees are low. Graduate to more complex strategies as you gain experience and comfort with DeFi." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Yield Farming', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Wallets of ${new Date().getFullYear()} - Reviews, Comparisons & Guides | ${SITE_NAME}`,
   description: "Compare the best crypto wallets for security, ease of use, and features. Expert reviews of hardware wallets, software wallets, and more. Find the perfect",
-  alternates: { canonical: "/wallets" }};
+  alternates: { canonical: "/wallets" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const BEST_OF_LINKS = [
   { title: "Best Crypto Wallets Overall", href: "/wallets/best", description: "Our top picks across all wallet types" },
@@ -63,9 +65,19 @@ const TOOL_LINKS = [
   { title: "Wallet Comparison Tool", href: "/wallets/tools/wallet-comparison", description: "Compare wallets side by side" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', },
+  ],
+};
+
 export default function WalletsHubPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

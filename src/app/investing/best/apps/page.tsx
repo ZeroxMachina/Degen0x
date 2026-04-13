@@ -14,7 +14,8 @@ export const metadata: Metadata = {
   title: `Best Crypto Apps ${CURRENT_YEAR} - Top Mobile Investment Apps`,
   description: `Compare the best crypto apps for ${CURRENT_YEAR}. Expert reviews of mobile crypto trading, portfolio tracking, and wallet apps for iOS and Android.`,
   alternates: { canonical: "/investing/best/apps" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs: FAQ[] = [
   {
@@ -39,9 +40,21 @@ const toc = [
   { id: "faq", title: "FAQ", level: 2 },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Apps', },
+  ],
+};
+
 export default function BestCryptoAppsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Software vs Hardware Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Software wallet vs hardware wallet comparison for ${CURRENT_YEAR}. Security, cost, convenience, DeFi access, and portability compared side by side.`,
-  alternates: { canonical: "/wallets/compare/software-vs-hardware" }};
+  alternates: { canonical: "/wallets/compare/software-vs-hardware" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Software Wallets", slug: "software", rating: 4.2, affiliateUrl: "#", features: { "Form Factor": "App or extension", Cost: "Free", "Key Storage": "Encrypted on device", "Internet Exposure": "Always online", "DeFi Ease": "Seamless", "Tx Speed": "Instant", Portability: "Any device", "Setup Difficulty": "Easy", "Attack Surface": "Larger", "Best For": "Active DeFi use" } },
@@ -23,9 +25,21 @@ const faqs = [
   { question: "Are software wallets safe for large amounts?", answer: "For large amounts, software wallets alone are not recommended. They store keys on internet-connected devices with inherent risk. Hardware wallets add a critical security layer. Use hardware for any amount that would be painful to lose." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Software Vs Hardware', },
+  ],
+};
+
 export default function SoftwareVsHardwarePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

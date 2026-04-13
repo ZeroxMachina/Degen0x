@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `CryptoTaxCalculator Review (${CURRENT_YEAR}) - Best for DeFi Taxes | ${SITE_NAME}`,
   description: `In-depth CryptoTaxCalculator review for ${CURRENT_YEAR}. The best crypto tax software for DeFi and NFT traders with advanced transaction tracking.`,
-  alternates: { canonical: "/taxes/reviews/cryptotaxcalculator" }};
+  alternates: { canonical: "/taxes/reviews/cryptotaxcalculator" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "overview", title: "Overview", level: 2 },
@@ -28,9 +30,21 @@ const faqs = [
   { question: "Does CryptoTaxCalculator support international taxes?", answer: "Yes. CryptoTaxCalculator supports tax reports for over 40 countries including the US, UK, Australia, Canada, Germany, and more. It generates country-specific tax forms and supports local cost basis methods for each jurisdiction." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/taxes/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Cryptotaxcalculator', },
+  ],
+};
+
 export default function CryptoTaxCalculatorReviewPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Taxes", href: "/taxes" },

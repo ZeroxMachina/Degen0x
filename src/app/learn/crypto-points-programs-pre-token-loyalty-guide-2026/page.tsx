@@ -157,6 +157,16 @@ const disclaimerStyle: React.CSSProperties = {
   color: '#e6edf3',
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Points Programs Pre Token Loyalty Guide 2026', },
+  ],
+};
+
 export default function CryptoPointsPage() {
   const faqSchema = {
     '@context': 'https://schema.org',
@@ -223,6 +233,7 @@ export default function CryptoPointsPage() {
 
   return (
     <div id="top" style={containerStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

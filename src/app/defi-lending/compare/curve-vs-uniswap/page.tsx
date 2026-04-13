@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Curve vs Uniswap ${CURRENT_YEAR}: Which DEX Is Better?`,
   description: `Detailed comparison of Curve vs Uniswap in ${CURRENT_YEAR}. Compare liquidity, fees, stablecoin trading, concentrated liquidity, and which DEX is right for your needs.`,
-  alternates: { canonical: "/defi-lending/compare/curve-vs-uniswap" }};
+  alternates: { canonical: "/defi-lending/compare/curve-vs-uniswap" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Curve Finance", slug: "curve", rating: 4.7, affiliateUrl: "https://degen0x.com/go/curve", features: { "TVL": "$3B+", "Chains": "10+", "Specialization": "Stablecoins & pegged assets", "Fee Model": "0.01-0.04% swap fees", "AMM Type": "StableSwap + CryptoSwap", "Governance Token": "CRV (vote-locking)", "LP Experience": "Passive, gauge rewards", "Unique Feature": "Lowest slippage for stable pairs" } },
@@ -27,9 +29,21 @@ const faqs: FAQ[] = [
   { question: "Can I use both Curve and Uniswap?", answer: "Absolutely, and most DeFi users do. Use Curve for stablecoin swaps and earning yield on stable pools. Use Uniswap for trading volatile token pairs and accessing newly launched tokens. DEX aggregators like 1inch and Paraswap automatically route your swaps through whichever DEX offers the best price, often splitting across both." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Curve Vs Uniswap', },
+  ],
+};
+
 export default function CurveVsUniswapPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

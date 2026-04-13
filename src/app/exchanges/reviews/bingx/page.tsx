@@ -31,7 +31,9 @@ const product = {
 export const metadata: Metadata = {
   title: `BingX Review (${CURRENT_YEAR}) - Best Copy Trading Exchange? | ${SITE_NAME}`,
   description: `Complete BingX review for ${CURRENT_YEAR}. Covers copy trading features, futures trading, fees, security, and user experience.`,
-  alternates: { canonical: "/exchanges/reviews/bingx" }};
+  alternates: { canonical: "/exchanges/reviews/bingx" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "BingX is a centralized cryptocurrency exchange founded in 2018, primarily known for its copy trading capabilities and derivatives offerings. The platform has grown to serve over 10 million registered users across more than 100 countries. BingX positions itself at the intersection of social trading and crypto derivatives, making it particularly appealing to traders who want to follow experienced professionals or share their own strategies for profit.\n\nThe exchange supports spot trading, perpetual futures with up to 150x leverage, standard futures, and a grid trading bot. Its copy trading marketplace is one of the most feature-rich in the industry, allowing users to discover, evaluate, and automatically replicate the strategies of lead traders. BingX also provides a demo trading mode that lets newcomers practice without risking real funds.\n\nBingX has invested in regulatory compliance, obtaining licenses in multiple jurisdictions and implementing proof-of-reserves reporting. The platform offers competitive fees, especially for futures trading, and a clean interface that balances functionality with accessibility. While it may not match the sheer scale of Binance or OKX, BingX carves out a strong niche for social and derivatives trading.";
@@ -134,9 +136,21 @@ const relatedGuides = [
   { title: "How to Read Charts", href: "/exchanges/learn/how-to-read-charts" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bingx', },
+  ],
+};
+
 export default function BingXReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -149,5 +163,7 @@ export default function BingXReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

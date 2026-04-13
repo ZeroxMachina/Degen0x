@@ -7,11 +7,25 @@ import ReviewPage from "@/components/ReviewPage";
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "nexo")!;
 
 export const metadata: Metadata = { title: "Nexo Review 2026: Rates, Security, Pros & Cons", description: "In-depth Nexo review covering loan rates, earning products, security, and whether Nexo is the right crypto lending platform for you. Updated March 2026." ,
-  alternates: { canonical: "/crypto-loans/reviews/nexo" }};
+  alternates: { canonical: "/crypto-loans/reviews/nexo" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Nexo', },
+  ],
+};
 
 export default function NexoReview() {
   return (
-    <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
+    <>
+      <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="Nexo is one of the leading centralized crypto lending platforms, offering both borrowing and earning services. Founded in 2018 and based in Switzerland, Nexo serves over 6 million users worldwide. The platform allows users to borrow against 60+ cryptocurrencies at rates starting from 0% APR for top-tier loyalty members, while also offering competitive yield on crypto deposits. Nexo operates under a tiered loyalty system based on NEXO token holdings, with Platinum members receiving the best rates and highest yields. The platform emphasizes regulatory compliance, holding licenses in multiple jurisdictions and maintaining insurance coverage for custodied assets."
       sections={[
         { id: "borrowing", title: "Borrowing Experience", content: "Nexo's borrowing process is straightforward: deposit crypto collateral, and instantly access a credit line. There are no monthly payments required, and interest accrues until you choose to repay. You can borrow fiat (USD, EUR, GBP) or stablecoins against your crypto holdings with LTV ratios up to 90% depending on the collateral type. The instant credit line model means you only pay interest on what you actually withdraw, not your total credit limit. Repayment is flexible and can be made at any time in crypto or fiat." },
@@ -31,5 +45,7 @@ export default function NexoReview() {
       relatedReviews={[{ name: "MakerDAO", slug: "makerdao" }, { name: "Aave", slug: "aave-loans" }]}
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }, { title: "LTV Ratio Explained", href: "/crypto-loans/learn/ltv-ratio-explained" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

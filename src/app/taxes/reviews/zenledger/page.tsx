@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `ZenLedger Review (${CURRENT_YEAR}): Features, Pricing & Comparison | ${SITE_NAME}`,
   description: "In-depth ZenLedger review covering features, pricing, DeFi support, tax-loss harvesting, and how it compares to other crypto tax software.",
-  alternates: { canonical: "/taxes/reviews/zenledger" }};
+  alternates: { canonical: "/taxes/reviews/zenledger" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/taxes/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Zenledger', },
+  ],
+};
 
 export default function ZenLedgerReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Taxes"
       categorySlug="taxes"
@@ -44,5 +58,7 @@ export default function ZenLedgerReview() {
       relatedReviews={[{ name: "Koinly", slug: "koinly" }, { name: "CoinTracker", slug: "cointracker" }]}
       relatedGuides={[{ title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }, { title: "Tax Loss Harvesting", href: "/taxes/learn/tax-loss-harvesting" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

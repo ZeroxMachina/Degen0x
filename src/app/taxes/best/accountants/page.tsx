@@ -10,7 +10,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto CPAs & Tax Accountants (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Find the best crypto-specialized CPAs and tax accountants for ${CURRENT_YEAR}. Expert accountants who understand DeFi, NFTs, staking, and complex crypto tax situations.`,
-  alternates: { canonical: "/taxes/best/accountants" }};
+  alternates: { canonical: "/taxes/best/accountants" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const cpas = [
   {
@@ -70,9 +72,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/taxes/best' },
+    { '@type': 'ListItem', position: 4, name: 'Accountants', },
+  ],
+};
+
 export default function BestAccountantsPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best DePIN Tokens (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top Decentralized Physical Infrastructure Network tokens in ${CURRENT_YEAR}. Compare Helium, Render, Filecoin, and other DePIN projects.`,
-  alternates: { canonical: "/investing/best/depin-tokens" }};
+  alternates: { canonical: "/investing/best/depin-tokens" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Helium (HNT)", slug: "helium", rating: 4.4, description: "Decentralized wireless network with the largest DePIN deployment globally. Helium Mobile offers cellular service powered by community-operated hotspots and 5G", pros: ["Largest DePIN network by nodes", "Real wireless coverage deployment", "Mobile carrier partnerships"], cons: ["Revenue growth needs acceleration", "Hardware investment required for mining", "Competition from traditional carriers"], bestFor: "Decentralized wireless infrastructure exposure", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "How can I participate in DePIN beyond buying tokens?", answer: "You can operate DePIN hardware — run Helium hotspots, provide GPU rendering through Render, offer storage through Filecoin, or contribute mapping data through Hivemapper. Operating hardware earns token rewards and contributes to network growth. Evaluate hardware costs against expected rewards before investing." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Depin Tokens', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -33,11 +33,25 @@ export const metadata: Metadata = {
   title: `X2Y2 Review: Low-Fee Ethereum NFT Marketplace (${CURRENT_YEAR}) | degen0x`,
   description:
     "In-depth X2Y2 review covering its ultra-low 0.5% fees, NFT lending, token rewards, bulk trading tools, and whether it's the right marketplace for cost-conscious traders.",
-  alternates: { canonical: "/nfts/reviews/x2y2" }};
+  alternates: { canonical: "/nfts/reviews/x2y2" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/nfts/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'X2Y2', },
+  ],
+};
 
 export default function X2Y2ReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
       categorySlug="nfts"
@@ -141,5 +155,7 @@ X2Y2 also differentiated itself by introducing an NFT lending feature, allowing 
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

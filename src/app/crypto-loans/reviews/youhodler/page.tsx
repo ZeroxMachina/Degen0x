@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `YouHodler Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth YouHodler review covering crypto loans, Multi HODL feature, turbocharge loans, rates, and whether YouHodler is right for your needs.",
-  alternates: { canonical: "/crypto-loans/reviews/youhodler" }};
+  alternates: { canonical: "/crypto-loans/reviews/youhodler" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Youhodler', },
+  ],
+};
 
 export default function YouHodlerReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "YouHodler",
         slug: "youhodler",
@@ -75,5 +89,7 @@ export default function YouHodlerReviewPage() {
         { title: "Overcollateralization Explained", href: "/crypto-loans/learn/overcollateralization-explained" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

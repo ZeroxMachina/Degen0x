@@ -9,11 +9,25 @@ const product = cryptoCards.find((c) => c.slug === "bybit-card")!;
 export const metadata: Metadata = {
   title: "Bybit Card Review 2026: Exchange-Linked Spending, Cashback",
   description: "Our in-depth Bybit Card review covers exchange-linked spending, cashback tier system, supported cryptocurrencies, convert-and-spend functionality, and regional",
-  alternates: { canonical: "/crypto-cards/reviews/bybit-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/bybit-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bybit Card', },
+  ],
+};
 
 export default function BybitCardReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -134,5 +148,7 @@ The card is available in select markets across Europe and Southeast Asia but is 
         { title: "How to Spend Crypto", href: "/spending/learn/spending-crypto" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Solend Review ${CURRENT_YEAR}: Yield, Fees & Pros/Cons`,
   description:
     "Detailed Solend review covering lending rates, isolated pools, governance, and how this OG Solana lending protocol compares to newer alternatives.",
-  alternates: { canonical: "/defi-lending/reviews/solend" }};
+  alternates: { canonical: "/defi-lending/reviews/solend" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Solend', },
+  ],
+};
 
 export default function SolendReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Solend",
         slug: "solend",
@@ -119,5 +133,7 @@ export default function SolendReview() {
         { title: "Solend vs MarginFi", href: "/defi-lending/compare/solend-vs-marginfi" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

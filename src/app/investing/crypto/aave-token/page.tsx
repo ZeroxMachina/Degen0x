@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Aave (AAVE) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Aave token investment guide for ${CURRENT_YEAR}. Learn about AAVE fundamentals, DeFi lending, governance, revenue sharing, risks, and how to buy AAVE.`,
   alternates: { canonical: "/investing/crypto/aave-token" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is AAVE a good investment?", answer: "Aave is the largest DeFi lending protocol by total value locked, deployed across Ethereum, Arbitrum, Polygon, Optimism, and other chains. The protocol generates significant revenue from borrowing fees, and AAVE token holders benefit from governance rights and the Safety Module staking mechanism. Recent governance proposals to share protocol revenue with AAVE stakers could significantly enhance the token's value proposition." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "What is the AAVE Safety Module?", answer: "The Safety Module is a staking mechanism where AAVE holders can stake their tokens to backstop the protocol against potential shortfall events (like bad debt from liquidation failures). In return, stakers earn AAVE rewards and a share of protocol fees. Staked AAVE has a 10-day cooldown period for unstaking. The Safety Module creates demand for AAVE while providing insurance-like protection for the protocol." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Aave Token', },
+  ],
+};
+
 export default function AaveTokenPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

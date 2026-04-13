@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Portfolio Trackers (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best crypto portfolio trackers in ${CURRENT_YEAR}. Compare CoinGecko, Delta, CoinStats, and more for tracking your crypto investments across wallets and exchanges.`,
-  alternates: { canonical: "/investing/best/portfolio-trackers" }};
+  alternates: { canonical: "/investing/best/portfolio-trackers" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "CoinGecko", slug: "coingecko", rating: 4.7, description: "The most comprehensive crypto data platform with portfolio tracking across unlimited wallets, price alerts, and detailed token analytics. Free tier covers most needs.", pros: ["Free comprehensive portfolio tracking", "Deepest token coverage", "Price alerts and watchlists"], cons: ["Manual entry required for DeFi positions", "No direct exchange API sync on free plan"], bestFor: "Comprehensive crypto data and portfolio tracking", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Can portfolio trackers help with taxes?", answer: "Some portfolio trackers integrate with or export to crypto tax software. CoinStats offers built-in tax reporting. For comprehensive tax calculation, dedicated tools like Koinly, CoinTracker, or TaxBit provide more complete coverage with proper cost basis and gain/loss calculations." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Portfolio Trackers', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

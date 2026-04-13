@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Seed Phrase Explained - What It Is & How to Protect It (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Everything you need to know about crypto seed phrases (recovery phrases) in ${CURRENT_YEAR}. What they are, how they work, and the best practices for keeping them safe.`,
-  alternates: { canonical: "/wallets/learn/seed-phrase-explained" }};
+  alternates: { canonical: "/wallets/learn/seed-phrase-explained" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "what-is-seed", title: "What Is a Seed Phrase?", level: 2 },
@@ -29,6 +31,17 @@ const relatedArticles = [
   { title: "How to Set Up a Wallet", href: "/wallets/learn/how-to-set-up-wallet", category: "Wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/wallets/learn' },
+    { '@type': 'ListItem', position: 4, name: 'Seed Phrase Explained', },
+  ],
+};
+
 export default function SeedPhraseExplainedPage() {
   return (
     <LearnPage
@@ -41,6 +54,7 @@ export default function SeedPhraseExplainedPage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="what-is-seed">What Is a Seed Phrase?</h2>
       <p>
         A seed phrase is a human-readable representation of your wallet&apos;s master private key. When you create

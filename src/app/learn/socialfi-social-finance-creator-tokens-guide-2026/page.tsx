@@ -237,9 +237,20 @@ export const metadata: Metadata = {
     canonical: 'https://degen0x.com/learn/socialfi-social-finance-creator-tokens-guide-2026',
   }
 };
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Socialfi Social Finance Creator Tokens Guide 2026', },
+  ],
+};
+
 export default function SocialFiGuidePage() {
   return (
     <main style={pageStyles.container}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Structured Data */}
       <script
         type="application/ld+json"

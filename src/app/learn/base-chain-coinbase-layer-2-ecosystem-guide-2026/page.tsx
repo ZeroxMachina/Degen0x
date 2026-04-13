@@ -100,9 +100,20 @@ const structuredData = {
 };
 
 // ─── Page Component ──────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Base Chain Coinbase Layer 2 Ecosystem Guide 2026', },
+  ],
+};
+
 export default function BaseChainEcosystemGuide2026() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Structured Data */}
       <script
         type="application/ld+json"

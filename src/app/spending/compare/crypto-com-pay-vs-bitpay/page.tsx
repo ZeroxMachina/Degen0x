@@ -8,7 +8,8 @@ export const metadata: Metadata = {
   title: `Crypto.com Pay vs BitPay (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Crypto.com Pay vs BitPay comparison for ${CURRENT_YEAR}. Compare cashback rewards, merchant acceptance, fees, supported cryptos, and consumer features.`,
   alternates: { canonical: "/spending/compare/crypto-com-pay-vs-bitpay" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "overview", title: "Comparison Overview", level: 2 },
@@ -30,6 +31,17 @@ const relatedArticles = [
   { title: "Best Crypto Cashback", href: "/spending/best/cashback", category: "Spending" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/spending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Crypto Com Pay Vs Bitpay', },
+  ],
+};
+
 export default function CryptoComPayVsBitPayPage() {
   return (
     <LearnPageLayout
@@ -42,6 +54,7 @@ export default function CryptoComPayVsBitPayPage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="overview">Comparison Overview</h2>
       <p>
         Crypto.com Pay is part of the larger Crypto.com ecosystem that includes an exchange, DeFi wallet,

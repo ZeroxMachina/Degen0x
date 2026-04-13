@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `ZenGo Wallet Review (${CURRENT_YEAR}) - Keyless MPC Wallet | ${SITE_NAME}`,
   description: `Complete ZenGo wallet review for ${CURRENT_YEAR}. Covers MPC technology, seedless recovery, supported assets, Web3 features, and security model.`,
-  alternates: { canonical: "/wallets/reviews/zengo" }};
+  alternates: { canonical: "/wallets/reviews/zengo" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "ZenGo is a cryptocurrency wallet that eliminates the traditional seed phrase through its implementation of MPC (multi-party computation) threshold signature technology. Instead of a single private key stored on your device, ZenGo splits the cryptographic key into two shares: one stored on your phone and one on ZenGo's servers. Both shares are needed to sign transactions, but neither party can access funds alone. Recovery is handled through biometric verification (face scan) and email, making it impossible to lose access through a forgotten or lost seed phrase.\n\nThis innovative approach addresses one of the biggest pain points in crypto: the fear of losing a seed phrase and permanently losing access to funds. ZenGo supports 120+ cryptocurrencies across multiple chains, offers built-in token swaps, staking, an NFT gallery, and a Web3 browser for dApp interaction. The wallet is available as a mobile app on iOS and Android.";
@@ -131,9 +133,21 @@ const relatedGuides = [
   { title: "Wallet Security Best Practices", href: "/wallets/learn/wallet-security-best-practices" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Zengo', },
+  ],
+};
+
 export default function ZenGoReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -146,5 +160,7 @@ export default function ZenGoReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

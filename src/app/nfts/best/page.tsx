@@ -13,7 +13,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `10 Best NFT Marketplaces of ${CURRENT_YEAR} (Ranked & Reviewed)`,
   description: `Compare the top 10 NFT marketplaces of ${CURRENT_YEAR}. We tested fees, creator tools, security, and user experience. Find the best platform for buying, selling, and creating NFTs.`,
-  alternates: { canonical: "/nfts/best" }};
+  alternates: { canonical: "/nfts/best" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -42,6 +44,16 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Best', },
+  ],
+};
+
 export default function BestNftMarketplacesPage() {
   const rankedMarketplaces = [...nftMarketplaces].sort((a, b) => b.rating - a.rating);
   const comparisonItems = rankedMarketplaces.slice(0, 5).map((m) => nftDetailedComparisons[m.slug]);
@@ -56,6 +68,7 @@ export default function BestNftMarketplacesPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

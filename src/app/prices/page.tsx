@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `Crypto Prices — Bitcoin, Ethereum & Top Tokens | ${SITE_NAME}`,
   description: `Track crypto prices, market caps, and 24h changes for Bitcoin, Ethereum, Solana, and 100+ top cryptocurrencies. Expert analysis and investment guides for every major asset class.`,
   alternates: { canonical: `${SITE_URL}/prices` },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 function PriceChange({ change }: { change: number }) {
   const isPositive = change >= 0;
@@ -31,6 +32,15 @@ const CATEGORY_COLORS: Record<string, string> = {
   meme: "#f59e0b", ai: "#ec4899", infrastructure: "#64748b", gaming: "#d946ef",
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Prices', },
+  ],
+};
+
 export default function PricesPage() {
   const topGainers = [...tokens].sort((a, b) => b.change24h - a.change24h).slice(0, 5);
   const topLosers = [...tokens].sort((a, b) => a.change24h - b.change24h).slice(0, 5);
@@ -46,6 +56,7 @@ export default function PricesPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

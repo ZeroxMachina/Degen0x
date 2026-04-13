@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   },
   keywords:
     "crypto tax loss harvesting, tax loss harvesting cryptocurrency, crypto tax strategy, capital gains offset, crypto taxes 2026",
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const breadcrumbItems = [
   { label: "Home", href: "/" },
@@ -54,6 +55,17 @@ const darkTheme = {
   borderColor: "#30363d",
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/taxes/learn' },
+    { '@type': 'ListItem', position: 4, name: 'Tax Loss Harvesting', },
+  ],
+};
+
 export default function TaxLossHarvestingPage() {
   return (
     <main
@@ -63,6 +75,7 @@ export default function TaxLossHarvestingPage() {
       }}
       className="min-h-screen"
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

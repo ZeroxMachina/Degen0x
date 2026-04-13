@@ -6,7 +6,9 @@ export const metadata: Metadata = {
   title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens",
   description:
     "Join the degen0x community. Ask questions, share alpha, follow expert discussions, and connect with thousands of crypto traders, investors, and builders.",
-  alternates: { canonical: "/community" }};
+  alternates: { canonical: "/community" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const TRENDING_THREADS = [
   {
@@ -167,9 +169,19 @@ const FEATURED_MEMBERS = [
   { name: "YieldFarmerX", posts: 1102, badge: "DeFi Expert", color: "#06b6d4" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Community', },
+  ],
+};
+
 export default function CommunityPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--color-bg)" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

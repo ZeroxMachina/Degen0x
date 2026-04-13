@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Restaking Platforms of ${CURRENT_YEAR} (Compared)`,
   description: `Compare the best restaking platforms in ${CURRENT_YEAR}. EigenLayer and restaking protocols reviewed for additional yield, risks, and AVS opportunities.`,
-  alternates: { canonical: "/investing/staking/best/restaking" }};
+  alternates: { canonical: "/investing/staking/best/restaking" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -32,6 +34,18 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Best', item: 'https://degen0x.com/investing/staking/best' },
+    { '@type': 'ListItem', position: 5, name: 'Restaking', },
+  ],
+};
+
 export default function BestRestakingPage() {
   const restakingPlatforms = stakingPlatforms.filter(
     (p) => p.slug === "eigenlayer" || p.slug === "lido"
@@ -47,6 +61,7 @@ export default function BestRestakingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb

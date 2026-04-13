@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Trust Wallet vs MetaMask (${CURRENT_YEAR}): Multi-Chain Wallet Comparison | ${SITE_NAME}`,
   description: `Trust Wallet vs MetaMask comparison for ${CURRENT_YEAR}. Compare from the multi-chain perspective: native chain support, mobile UX, staking, and security.`,
-  alternates: { canonical: "/wallets/compare/trust-wallet-vs-metamask" }};
+  alternates: { canonical: "/wallets/compare/trust-wallet-vs-metamask" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Trust Wallet", slug: "trust-wallet", rating: 4.4, affiliateUrl: "https://degen0x.com/go/trust-wallet", features: { "Native Chains": "100+", "Bitcoin Support": "Yes (native)", "Solana Support": "Yes (native)", "Cosmos Support": "Yes (native)", "Mobile-First": "Yes", "dApp Browser": "Built-in (mobile)", "Staking": "Multi-chain staking", "Backed By": "Binance-affiliated" } },
@@ -27,9 +29,21 @@ const faqs = [
   { question: "Which is better for DeFi?", answer: "MetaMask is better for Ethereum-based DeFi due to its deep integration with virtually every EVM dApp. Trust Wallet is better for multi-chain DeFi across Solana, Cosmos, and other ecosystems. Your choice depends on which chains you use most." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Trust Wallet Vs Metamask', },
+  ],
+};
+
 export default function TrustWalletVsMetamaskPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

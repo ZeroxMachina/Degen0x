@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Cold Storage Strategies for Crypto ${CURRENT_YEAR}`,
   description: "Compare the best cold storage solutions for long-term crypto security. Hardware wallets, multi-sig setups, and institutional custody options reviewed.",
-  alternates: { canonical: "/long-term/best/cold-storage-strategies" }};
+  alternates: { canonical: "/long-term/best/cold-storage-strategies" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -59,9 +61,21 @@ const faqs: FAQ[] = [
   { question: "What happens if my hardware wallet breaks?", answer: "Your crypto is safe as long as you have your recovery seed phrase (12 or 24 words). You can restore your wallet on a new device using this seed. Store your seed phrase on durable material (steel plates are recommended) in a secure location separate from the device." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Long Term', item: 'https://degen0x.com/long-term' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/long-term/best' },
+    { '@type': 'ListItem', position: 4, name: 'Cold Storage Strategies', },
+  ],
+};
+
 export default function ColdStorageStrategiesPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

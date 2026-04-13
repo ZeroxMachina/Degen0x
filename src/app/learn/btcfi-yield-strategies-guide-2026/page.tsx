@@ -51,6 +51,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/btcfi-yield-strategies-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Btcfi Yield Strategies Guide 2026', },
+  ],
+};
+
 export default function BtcfiYieldStrategiesGuide2026() {
   const articleSchema = generateArticleSchema({
     title: "BTCFi Yield Strategies 2026 — How to Earn Yield on Bitcoin",
@@ -91,6 +101,7 @@ export default function BtcfiYieldStrategiesGuide2026() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combineSchemas(articleSchema, faqSchema)} />
 
       {/* Breadcrumb */}

@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Liquid Staking Protocols of ${CURRENT_YEAR} (Compared)`,
   description: `Compare the best liquid staking protocols in ${CURRENT_YEAR}. Lido, Rocket Pool, Jito, Marinade, and StakeWise reviewed for yields, security, and DeFi composability.`,
-  alternates: { canonical: "/investing/staking/best/liquid-staking" }};
+  alternates: { canonical: "/investing/staking/best/liquid-staking" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -31,6 +33,18 @@ const faqs = [
     answer: "Yes, most major lending protocols accept liquid staking tokens as collateral. For example, you can deposit stETH on Aave to borrow stablecoins. This strategy is called leveraged staking and can amplify returns, but also increases risk significantly.",
   },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Best', item: 'https://degen0x.com/investing/staking/best' },
+    { '@type': 'ListItem', position: 5, name: 'Liquid Staking', },
+  ],
+};
 
 export default function BestLiquidStakingPage() {
   const liquidPlatforms = stakingPlatforms.filter(
@@ -53,6 +67,7 @@ export default function BestLiquidStakingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb

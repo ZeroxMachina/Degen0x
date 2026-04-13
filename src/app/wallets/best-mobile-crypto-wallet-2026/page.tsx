@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Mobile Crypto Wallet 2026', description: 'Compare mobile wallets', image: 'https://degen0x.com/og-wallets.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Trust Wallet the best?', acceptedAnswer: { '@type': 'Answer', text: 'Trust Wallet 70M+ users. Best multi-chain (100+ supported). Built into Binance ecosystem. Good for diverse portfolios. But centralized (Binance-owned).' } }, { '@type': 'Question', name: 'Does MetaMask Mobile work offline?', acceptedAnswer: { '@type': 'Answer', text: 'No. Needs internet. But can use hardware wallet (Ledger) via BLE. Good for Ethereum ecosystem.' } }, { '@type': 'Question', name: 'Can I stake with mobile wallet?', acceptedAnswer: { '@type': 'Answer', text: 'Phantom/MetaMask yes. Stake to validators directly. Trust Wallet limited. Mobile staking practical 2026.' } }, { '@type': 'Question', name: 'What is dApp browser?', acceptedAnswer: { '@type': 'Answer', text: 'In-wallet browser for Uniswap, Magic Eden, etc. Avoids leaving wallet. All major mobile wallets have it 2026.' } }, { '@type': 'Question', name: 'Is mobile more secure than desktop?', acceptedAnswer: { '@type': 'Answer', text: 'No. Both are hot wallets. Mobile has app isolation (OS prevents theft). Desktop has phishing risk (browser extensions).' } }, { '@type': 'Question', name: 'Can I use hardware wallet on mobile?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Ledger Nano X has Bluetooth. Phantom/MetaMask Mobile support hardware signing.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best Mobile Crypto Wallet 2026', },
+  ],
+};
+
 export default function BestMobileCryptoWallet() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #22c55e', borderLeft: '3px solid #22c55e', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -31,6 +41,7 @@ export default function BestMobileCryptoWallet() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

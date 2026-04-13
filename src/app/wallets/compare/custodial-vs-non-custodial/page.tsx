@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Custodial vs Non-Custodial Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Custodial vs non-custodial wallet comparison for ${CURRENT_YEAR}. Key ownership, security, recovery options, DeFi access, and privacy compared.`,
-  alternates: { canonical: "/wallets/compare/custodial-vs-non-custodial" }};
+  alternates: { canonical: "/wallets/compare/custodial-vs-non-custodial" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Custodial Wallets", slug: "custodial", rating: 3.8, affiliateUrl: "#", features: { "Key Ownership": "Provider holds keys", "Account Recovery": "Password reset", "KYC Required": "Yes", "DeFi Access": "Limited", "Counterparty Risk": "High", "Regulatory Protection": "Some", "Ease of Use": "Very easy", Privacy: "Low (KYC required)", Control: "Provider controls", Examples: "Coinbase, Binance" } },
@@ -23,9 +25,21 @@ const faqs = [
   { question: "What does 'not your keys, not your coins' mean?", answer: "This means if you do not hold private keys, you do not truly own your crypto. In custodial arrangements, the custodian controls the assets and could restrict access. Only non-custodial wallets give cryptographic proof of ownership that no third party can revoke." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Custodial Vs Non Custodial', },
+  ],
+};
+
 export default function CustodialVsNonCustodialPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

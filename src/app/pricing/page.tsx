@@ -12,8 +12,23 @@ export const metadata: Metadata = {
     description: "Real-time crypto API with free, pro, and enterprise tiers.",
   },
 
-  alternates: { canonical: "/pricing" }};
+  alternates: { canonical: "/pricing" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Pricing', },
+  ],
+};
 
 export default function PricingPage() {
-  return <APIPricing />;
+  return (
+    <>
+      <APIPricing />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

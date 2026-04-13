@@ -6,7 +6,9 @@ import Breadcrumb from "@/components/Breadcrumb";
 export const metadata: Metadata = {
   title: "104+ Free Crypto Tools — Bridge Aggregator v2, Watchlist",
   description: "Free crypto tools including multi-chain bridge aggregator v2 with route optimization, watchlist sync with localStorage, MEV protection dashboard, token unlock",
-  alternates: { canonical: "/tools" }};
+  alternates: { canonical: "/tools" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const TOOLS = [
   {
@@ -574,9 +576,19 @@ const COMING_SOON = [
   { icon: "📊", title: "On-Chain Analytics Dashboard", description: "Deep on-chain metrics: active addresses, NVT ratio, exchange flows, miner revenue, and more.", color: "#8B5CF6" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', },
+  ],
+};
+
 export default function ToolsPage() {
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-bg)" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -10,7 +10,9 @@ const product = walletProducts.find((p) => p.slug === "coinbase-wallet")!;
 export const metadata: Metadata = {
   title: `Coinbase Wallet Review (${CURRENT_YEAR}) - Self-Custody from Coinbase | ${SITE_NAME}`,
   description: `In-depth Coinbase Wallet review for ${CURRENT_YEAR}. Covers self-custody features, multi-chain support, dApp browser, Coinbase integration, and security.`,
-  alternates: { canonical: "/wallets/reviews/coinbase-wallet" }};
+  alternates: { canonical: "/wallets/reviews/coinbase-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Coinbase Wallet is a self-custody crypto wallet developed by Coinbase, the largest US-based cryptocurrency exchange. It is a separate product from the Coinbase exchange app and gives users full control of their private keys. Coinbase Wallet supports Ethereum, Solana, Bitcoin, and several other blockchain networks. It features a built-in dApp browser, NFT management, and seamless integration with the Coinbase exchange for easy fund transfers. Available on iOS, Android, and as a Chrome browser extension, it bridges the gap between centralized exchange convenience and self-custody sovereignty.";
@@ -124,9 +126,21 @@ const relatedGuides = [
   { title: "Seed Phrase Explained", href: "/wallets/learn/seed-phrase-explained" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Coinbase Wallet', },
+  ],
+};
+
 export default function CoinbaseWalletReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -139,5 +153,7 @@ export default function CoinbaseWalletReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

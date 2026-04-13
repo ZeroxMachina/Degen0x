@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Stellar (XLM) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Stellar investment guide for ${CURRENT_YEAR}. Learn about XLM fundamentals, cross-border payments, Soroban smart contracts, risks, and how to buy Stellar.`,
   alternates: { canonical: "/investing/crypto/stellar" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Stellar a good investment?", answer: "Stellar focuses on financial inclusion and cross-border payments, with notable partnerships including MoneyGram integration. The launch of Soroban smart contracts expands Stellar's utility beyond payments into DeFi and tokenization. However, XLM faces intense competition from XRP, stablecoins, and newer payment networks. Its low transaction volume relative to competitors is a concern." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "What are Soroban smart contracts?", answer: "Soroban is Stellar's smart contract platform, launched in 2024. It brings programmable, Rust-based smart contracts to the Stellar network, enabling DeFi protocols, token issuance, decentralized applications, and more complex financial products. Soroban is designed to be developer-friendly while maintaining Stellar's low fees and fast transaction speeds." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Stellar', },
+  ],
+};
+
 export default function StellarPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

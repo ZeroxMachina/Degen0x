@@ -11,7 +11,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best NFT Marketplaces of ${CURRENT_YEAR} - Compare & Review`,
   description: `Compare the best NFT marketplaces of ${CURRENT_YEAR}. Expert reviews, fee comparisons, creator tools analysis, and guides to help you find the right platform for buying, selling, and creating NFTs.`,
-  alternates: { canonical: "/nfts" }};
+  alternates: { canonical: "/nfts" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
   { title: "Best NFT Marketplaces", href: "/nfts/best", description: "Our top-rated NFT marketplaces across all categories" },
@@ -94,6 +96,15 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', },
+  ],
+};
+
 export default function NftsPage() {
   const topMarketplaces = [...nftMarketplaces].sort((a, b) => b.rating - a.rating).slice(0, 5);
 
@@ -108,6 +119,7 @@ export default function NftsPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

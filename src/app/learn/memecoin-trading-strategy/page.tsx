@@ -7,11 +7,24 @@ export const metadata: Metadata = {
   title: "Memecoin Trading Strategy: Risk Management Guide",
   description:
     "Master memecoin trading with expert risk management strategies. Learn to identify opportunities, manage risk, set entry/exit points, and avoid red flags.",
-  alternates: { canonical: "/learn/memecoin-trading-strategy" }};
+  alternates: { canonical: "/learn/memecoin-trading-strategy" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Memecoin Trading Strategy', },
+  ],
+};
 
 export default function MemecoinTradingGuide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8">
         <a href="/learn" className="text-[#58a6ff] hover:underline">

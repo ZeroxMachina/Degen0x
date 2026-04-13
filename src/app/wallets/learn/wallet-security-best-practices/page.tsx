@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Wallet Security Best Practices (${CURRENT_YEAR}) - Protect Your Crypto | ${SITE_NAME}`,
   description: `Essential crypto wallet security best practices for ${CURRENT_YEAR}. Seed phrase protection, phishing defense, approval management, and hardware wallet recommendations.`,
-  alternates: { canonical: "/wallets/learn/wallet-security-best-practices" }};
+  alternates: { canonical: "/wallets/learn/wallet-security-best-practices" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "seed-phrase", title: "Seed Phrase Security", level: 2 },
@@ -30,6 +32,17 @@ const relatedArticles = [
   { title: "Wallet Backup Guide", href: "/wallets/learn/wallet-backup-guide", category: "Wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/wallets/learn' },
+    { '@type': 'ListItem', position: 4, name: 'Wallet Security Best Practices', },
+  ],
+};
+
 export default function WalletSecurityBestPracticesPage() {
   return (
     <LearnPage
@@ -42,6 +55,7 @@ export default function WalletSecurityBestPracticesPage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="seed-phrase">Seed Phrase Security</h2>
       <p>
         Your seed phrase is the master key to your wallet. Never store it digitally in any form: no screenshots,

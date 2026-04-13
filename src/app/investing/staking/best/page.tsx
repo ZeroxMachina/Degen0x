@@ -13,7 +13,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `8 Best Crypto Staking Platforms of ${CURRENT_YEAR} (Ranked & Reviewed)`,
   description: `Compare the top crypto staking platforms of ${CURRENT_YEAR}. We tested yields, fees, security, and decentralization. Find the best platform for liquid staking, restaking, and more.`,
-  alternates: { canonical: "/investing/staking/best" }};
+  alternates: { canonical: "/investing/staking/best" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -38,6 +40,17 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Best', },
+  ],
+};
+
 export default function BestStakingPage() {
   const rankedPlatforms = [...stakingPlatforms].sort((a, b) => b.rating - a.rating);
   const comparisonItems = rankedPlatforms.slice(0, 5).map((p) => stakingDetailedComparisons[p.slug]);
@@ -52,6 +65,7 @@ export default function BestStakingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

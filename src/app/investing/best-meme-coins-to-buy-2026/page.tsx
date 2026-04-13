@@ -23,6 +23,16 @@ const structuredData = { '@context': 'https://schema.org', '@type': 'Article', h
   { '@type': 'Question', name: 'How much should I invest in meme coins?', acceptedAnswer: { '@type': 'Answer', text: 'Risk rule: never more than 5% of portfolio, money you can afford to lose. Meme coins: extreme volatility, 90% crash risk within 2 years. $1,000 investment: realistic outcomes are $0 (rugpull) or $50,000 (10,000x pump) or $100 (90% crash). Bet sizing: $20-50 test bets into emerging coins, $100-500 into established (DOGE, SHIB). Keep gains: sell 50% at 5x, lock in profits.' } },
 ] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best Meme Coins To Buy 2026', },
+  ],
+};
+
 export default function BestMemeCoins2026() {
   const tableOfContents = [ { id: 'what-are-meme-coins', title: 'What Are Meme Coins?' }, { id: 'top-meme-coins', title: 'Top Meme Coins 2026' }, { id: 'comparison-table', title: 'Comparison Table' }, { id: 'pump-dynamics', title: 'Pump Dynamics & Cycles' }, { id: 'spotting-rugs', title: 'How to Spot Rug Pulls' }, { id: 'strategy', title: 'Investment Strategy' }, { id: 'faq', title: 'FAQ' } ];
 
@@ -38,6 +48,7 @@ export default function BestMemeCoins2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}><Link href="/" style={{ color: '#8b949e', textDecoration: 'none' }}>Home</Link><span style={{ margin: '0 6px' }}>›</span><Link href="/investing" style={{ color: '#8b949e', textDecoration: 'none' }}>Investing</Link><span style={{ margin: '0 6px' }}>›</span><span style={{ color: '#c9d1d9' }}>Best Meme Coins</span></nav>

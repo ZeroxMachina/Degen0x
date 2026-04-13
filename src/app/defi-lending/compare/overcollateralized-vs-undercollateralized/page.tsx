@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Overcollateralized vs Undercollateralized DeFi Lending ${CURRENT_YEAR}`,
   description: `Compare overcollateralized and undercollateralized DeFi lending in ${CURRENT_YEAR}. Understand risk profiles, yields, use cases, and protocol examples.`,
-  alternates: { canonical: "/defi-lending/compare/overcollateralized-vs-undercollateralized" }};
+  alternates: { canonical: "/defi-lending/compare/overcollateralized-vs-undercollateralized" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Overcollateralized", slug: "defi-lending", rating: 4.6, affiliateUrl: "https://degen0x.com/go/aave", features: { "Collateral Required": "100-150%+ of loan", "Default Risk": "Near zero (auto-liquidation)", "KYC Required": "No", "Typical Yields": "3-8% stablecoins", "Access": "Permissionless", "Protocols": "Aave, Compound, Maker", "Capital Efficiency": "Low", "Best For": "Trustless, permissionless lending" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Which yields are more sustainable?", answer: "Overcollateralized yields are generally more sustainable since they come from organic borrowing demand. Undercollateralized yields include a credit risk premium that may not be fully compensated if defaults exceed expectations, as seen during the 2022 credit crisis." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Overcollateralized Vs Undercollateralized', },
+  ],
+};
+
 export default function OverVsUndercollateralizedPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

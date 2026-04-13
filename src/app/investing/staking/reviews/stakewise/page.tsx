@@ -10,11 +10,26 @@ export const metadata: Metadata = {
   title: "StakeWise Review 2026: Vaults, osETH, Pros & Cons",
   description:
     "Our in-depth StakeWise review covers vault-based staking, osETH mechanics, fees, and whether it's the right ETH staking protocol for you. Updated March 2026.",
-  alternates: { canonical: "/investing/staking/reviews/stakewise" }};
+  alternates: { canonical: "/investing/staking/reviews/stakewise" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Reviews', item: 'https://degen0x.com/investing/staking/reviews' },
+    { '@type': 'ListItem', position: 5, name: 'Stakewise', },
+  ],
+};
 
 export default function StakeWiseReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Staking"
       categorySlug="investing/staking"
@@ -114,5 +129,7 @@ While StakeWise has a smaller market share compared to Lido or Rocket Pool, its 
         { title: "Validator Guide", href: "/investing/staking/learn/validator-guide" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

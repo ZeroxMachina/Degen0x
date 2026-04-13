@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Stablecoin Yield Platforms ${CURRENT_YEAR} - Earn on USDC, USDT, DAI`,
   description: `Compare the best stablecoin yield opportunities in ${CURRENT_YEAR}. Earn up to 15% APY on USDC, USDT, DAI, and other stablecoins through DeFi lending protocols.`,
-  alternates: { canonical: "/defi-lending/best/stablecoin-yield" }};
+  alternates: { canonical: "/defi-lending/best/stablecoin-yield" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -84,9 +86,21 @@ const faqs: FAQ[] = [
   { question: "What is the difference between lending APY and LP yield?", answer: "Lending APY comes from borrowers paying interest on supplied stablecoins. LP yield comes from earning trading fees (and sometimes token incentives) by providing liquidity to decentralized exchanges. LP yield can be higher but carries impermanent loss risk, though this is minimal for stablecoin-only pools." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/defi-lending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Stablecoin Yield', },
+  ],
+};
+
 export default function StablecoinYieldPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

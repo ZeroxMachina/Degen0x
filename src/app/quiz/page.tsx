@@ -11,11 +11,22 @@ export const metadata: Metadata = {
     description: 'Dynamic difficulty crypto quiz. Earn XP, climb the leaderboard.',
   },
 
-  alternates: { canonical: "/quiz" }};
+  alternates: { canonical: "/quiz" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Quiz', },
+  ],
+};
 
 export default function QuizPage() {
   return (
     <main style={{ minHeight: '100vh', background: '#0d1117', padding: '24px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

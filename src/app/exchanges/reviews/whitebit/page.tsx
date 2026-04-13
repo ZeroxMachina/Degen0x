@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `WhiteBIT Review (${CURRENT_YEAR}) - European Exchange with Low Fees | ${SITE_NAME}`,
   description: `Complete WhiteBIT review for ${CURRENT_YEAR}. Covers trading fees, fiat support, 600+ trading pairs, security, and the European user experience.`,
-  alternates: { canonical: "/exchanges/reviews/whitebit" }};
+  alternates: { canonical: "/exchanges/reviews/whitebit" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "WhiteBIT is a European cryptocurrency exchange founded in 2018 and headquartered in Vilnius, Lithuania. The platform has grown to over 5 million registered users, with particular strength in Eastern Europe and the CIS region. WhiteBIT offers access to 600+ trading pairs, competitive fees, and robust fiat on-ramp support for European currencies, especially EUR and UAH.\n\nThe exchange provides spot trading, margin trading, perpetual futures, and a range of earn products. WhiteBIT holds regulatory registrations in multiple European jurisdictions and has positioned itself as a compliant platform that bridges traditional finance and crypto. The platform also offers unique features like a crypto debit card, P2P trading, and integrations with European banking systems via SEPA transfers.\n\nWhileBIT is best suited for European traders who value fiat accessibility, regulatory compliance, and competitive fees. Its main limitations are lower global brand recognition and liquidity compared to tier-one exchanges, particularly on altcoin pairs. For traders in the EU and neighboring regions, WhiteBIT offers a localized experience that many global exchanges cannot match.";
@@ -133,9 +135,21 @@ const relatedGuides = [
   { title: "Exchange Fees Explained", href: "/exchanges/learn/exchange-fees-explained" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Whitebit', },
+  ],
+};
+
 export default function WhiteBITReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -148,5 +162,7 @@ export default function WhiteBITReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -10,11 +10,25 @@ export const metadata: Metadata = {
   title: "Bybit Review 2026: Fees, Derivatives, Copy Trading & More",
   description:
     "In-depth Bybit review covering futures trading, competitive fees (0.02% maker, 0.055% taker), copy trading, security, and why it's a top choice for derivatives traders. Updated March 2026.",
-  alternates: { canonical: "/exchanges/reviews/bybit" }};
+  alternates: { canonical: "/exchanges/reviews/bybit" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bybit', },
+  ],
+};
 
 export default function BybitReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -147,5 +161,7 @@ Security has been a cornerstone of Bybit's operations, with no major exploits in
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

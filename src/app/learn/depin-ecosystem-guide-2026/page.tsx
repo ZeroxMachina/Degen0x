@@ -48,6 +48,16 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Depin Ecosystem Guide 2026', },
+  ],
+};
+
 export default function DePINEcosystemGuidePage() {
   const articleSchema = generateArticleSchema({
     title: "DePIN Ecosystem Guide 2026: Decentralized Physical Infrastructure Networks",
@@ -98,6 +108,7 @@ export default function DePINEcosystemGuidePage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px" }}>
         {/* Breadcrumb */}

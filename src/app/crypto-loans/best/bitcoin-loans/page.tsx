@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Bitcoin-Backed Loans ${CURRENT_YEAR} - Borrow Against BTC`,
   description: `Compare the best Bitcoin-backed loan platforms in ${CURRENT_YEAR}. Get cash against your BTC without selling. Compare rates, LTV ratios, and terms.`,
-  alternates: { canonical: "/crypto-loans/best/bitcoin-loans" }};
+  alternates: { canonical: "/crypto-loans/best/bitcoin-loans" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   { name: "Nexo", slug: "nexo", rating: 4.7, description: "Nexo offers instant Bitcoin-backed loans with rates starting at 0% APR for Platinum-tier users. Borrow up to 90% LTV against your BTC with no monthly", pros: ["Rates as low as 0% APR", "Up to 90% LTV on Bitcoin", "No monthly payment requirements", "Instant loan approval"], cons: ["Best rates require NEXO token holdings", "CeFi counterparty risk", "Not available in all US states"], fees: "From 0% APR", bestFor: "CeFi Bitcoin borrowers", affiliateUrl: "https://degen0x.com/go/nexo", category: "crypto-loans", featured: true },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "What happens if Bitcoin price drops while I have a loan?", answer: "If Bitcoin's price drops enough that your collateral value falls below the liquidation threshold, your position may be liquidated. The platform sells your BTC to repay the loan. To avoid this, maintain a healthy LTV ratio, set up price alerts, and keep additional collateral ready." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/crypto-loans/best' },
+    { '@type': 'ListItem', position: 4, name: 'Bitcoin Loans', },
+  ],
+};
+
 export default function BitcoinLoansPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

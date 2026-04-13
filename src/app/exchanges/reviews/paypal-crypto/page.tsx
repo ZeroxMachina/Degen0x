@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `PayPal Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth PayPal Crypto review covering trading fees, PYUSD stablecoin, supported coins, security, and whether PayPal is right for buying crypto.",
-  alternates: { canonical: "/exchanges/reviews/paypal-crypto" }};
+  alternates: { canonical: "/exchanges/reviews/paypal-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Paypal Crypto', },
+  ],
+};
 
 export default function PayPalCryptoReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "PayPal Crypto",
         slug: "paypal-crypto",
@@ -67,5 +81,7 @@ PayPal is regulated as a money transmitter in the US and operates its crypto ser
         { title: "What Is a Crypto Broker", href: "/exchanges/learn/what-is-a-crypto-broker" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

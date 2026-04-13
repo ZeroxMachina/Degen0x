@@ -7,11 +7,24 @@ export const metadata: Metadata = {
   title: "Crypto Gaming 2026: The Best Play-to-Earn & Web3 Games",
   description:
     "A complete guide to crypto gaming in 2026. The best P2E games, how GameFi works, which games actually make money, NFT gaming explained, and what to watch next.",
-  alternates: { canonical: "/learn/crypto-gaming-2026-guide" }};
+  alternates: { canonical: "/learn/crypto-gaming-2026-guide" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Gaming 2026 Guide', },
+  ],
+};
 
 export default function CryptoGamingGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
           <span className="text-xs px-3 py-1 rounded-full font-bold" style={{ background: "#8b5cf620", color: "#8b5cf6" }}>

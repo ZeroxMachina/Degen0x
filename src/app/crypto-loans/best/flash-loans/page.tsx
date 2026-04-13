@@ -9,7 +9,9 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = { title: `Best Flash Loan Platforms ${CURRENT_YEAR} - Zero-Collateral DeFi Loans`, description: `Compare flash loan platforms in ${CURRENT_YEAR}. Borrow any amount without collateral in a single transaction for arbitrage, liquidations, and more.` ,
-  alternates: { canonical: "/crypto-loans/best/flash-loans" }};
+  alternates: { canonical: "/crypto-loans/best/flash-loans" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   { name: "Aave", slug: "aave-loans", rating: 4.8, description: "Aave pioneered flash loans and remains the dominant provider. Borrow any amount of available liquidity with zero collateral, provided the loan is repaid within", pros: ["Largest flash loan liquidity", "0.05% fee (reduced from 0.09%)", "Multi-chain availability", "Extensive developer documentation"], cons: ["Requires smart contract development skills", "Not for regular borrowing", "Transaction reverts if not repaid"], fees: "0.05% per flash loan", bestFor: "Developers and arbitrageurs", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans", featured: true },
@@ -23,9 +25,21 @@ const faqs: FAQ[] = [
   { question: "Are flash loans risky?", answer: "Flash loans are atomically safe for the borrower: if the loan cannot be repaid within the transaction, the entire transaction reverts as if it never happened. The borrower only loses the gas cost of the failed transaction. However, flash loans have been used as tools in DeFi exploits targeting vulnerable protocols." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/crypto-loans/best' },
+    { '@type': 'ListItem', position: 4, name: 'Flash Loans', },
+  ],
+};
+
 export default function FlashLoansPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

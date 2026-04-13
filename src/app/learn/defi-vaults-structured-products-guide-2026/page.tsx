@@ -26,6 +26,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/defi-vaults-structured-products-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Defi Vaults Structured Products Guide 2026', },
+  ],
+};
+
 export default function DeFiVaultsGuide() {
   // Structured data schemas
   const articleSchema = generateArticleSchema({
@@ -80,6 +90,7 @@ export default function DeFiVaultsGuide() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={schemas} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px" }}>
         <Breadcrumb

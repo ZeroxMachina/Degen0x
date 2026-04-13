@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Ethereum vs Solana DeFi Lending ${CURRENT_YEAR}: Chain Comparison`,
   description: `Compare Ethereum and Solana DeFi lending ecosystems in ${CURRENT_YEAR}. Analyze protocols, fees, speed, TVL, and which chain is better for lending.`,
-  alternates: { canonical: "/defi-lending/compare/ethereum-vs-solana-defi" }};
+  alternates: { canonical: "/defi-lending/compare/ethereum-vs-solana-defi" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Ethereum DeFi", slug: "defi-lending", rating: 4.7, affiliateUrl: "https://degen0x.com/go/aave", features: { "Total DeFi TVL": "$50B+", "Top Protocols": "Aave, Compound, Morpho", "Transaction Fees": "$1-50+", "Block Time": "12 seconds", "Composability": "Deepest ecosystem", "Security Track Record": "Longest in DeFi", "L2 Options": "Arbitrum, Optimism, Base", "Unique Advantage": "Maximum liquidity and composability" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Can I bridge assets between Ethereum and Solana DeFi?", answer: "Yes, bridges like Wormhole and deBridge enable cross-chain transfers. However, bridging introduces additional smart contract risk. Consider keeping native assets on each chain rather than bridging large amounts. Many DeFi users operate on both chains independently." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Ethereum Vs Solana Defi', },
+  ],
+};
+
 export default function EthereumVsSolanaDefiPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

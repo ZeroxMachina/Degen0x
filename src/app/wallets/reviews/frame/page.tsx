@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Frame Wallet Review (${CURRENT_YEAR}) - Best Desktop System-Level Wallet? | ${SITE_NAME}`,
   description: `Detailed Frame wallet review for ${CURRENT_YEAR}. Covers system-level OS integration, hardware wallet support, multi-chain management, and privacy features.`,
-  alternates: { canonical: "/wallets/reviews/frame" }};
+  alternates: { canonical: "/wallets/reviews/frame" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const product = {
   name: "Frame",
@@ -113,9 +115,21 @@ const relatedGuides = [
   { title: "Wallet Apps vs Browser Extensions", href: "/wallets/learn/wallet-apps-vs-browser-extensions" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Frame', },
+  ],
+};
+
 export default function FrameReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -128,5 +142,7 @@ export default function FrameReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

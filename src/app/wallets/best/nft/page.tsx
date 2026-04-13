@@ -12,13 +12,26 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best NFT Wallets of ${CURRENT_YEAR} - Top Wallets for NFTs | ${SITE_NAME}`,
   description: `Compare the best wallets for NFTs in ${CURRENT_YEAR}. Phantom, MetaMask, Rabby and more. Expert-tested for NFT display, minting, trading, and multi-chain collections.`,
-  alternates: { canonical: "/wallets/best/nft" }};
+  alternates: { canonical: "/wallets/best/nft" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What is the best wallet for NFTs?", answer: "Phantom offers the best NFT experience with its beautiful gallery display, collection grouping, floor price data, and spam NFT detection. It supports NFTs on Solana, Ethereum, Polygon, and Bitcoin (Ordinals). MetaMask is the most widely compatible for Ethereum NFT marketplaces like OpenSea and Blur." },
   { question: "Can I view my NFTs in my wallet?", answer: "Yes. Most modern wallets automatically detect and display your NFTs. Phantom, MetaMask, Trust Wallet, and Coinbase Wallet all show NFT galleries. The quality of the display varies: Phantom has the richest NFT interface, while others provide basic image previews with collection information." },
   { question: "Should I use a hardware wallet for NFTs?", answer: "If you hold valuable NFTs, using a hardware wallet adds significant security. You can connect a Ledger to MetaMask or Phantom to sign NFT transactions while keeping your keys offline. This protects against phishing attacks that target NFT collectors." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Nft', },
+  ],
+};
 
 export default function BestNFTWalletsPage() {
   const comparisonItems = [
@@ -30,6 +43,7 @@ export default function BestNFTWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -7,11 +7,24 @@ export const metadata: Metadata = {
   title: "DeFi Safety Guide 2026: How to Protect Your Crypto in",
   description: "Master DeFi safety in 2026. Learn how to avoid scams, rug pulls, smart contract risks, phishing attacks, and protect your crypto wallet and investments in",
   keywords: ["defi safety", "crypto security", "rug pull protection", "smart contract risk", "defi scams", "wallet security", "crypto safety 2026"],
-  alternates: { canonical: "/learn/defi-safety-guide-2026" }};
+  alternates: { canonical: "/learn/defi-safety-guide-2026" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Defi Safety Guide 2026', },
+  ],
+};
 
 export default function DeFiSafetyGuide2026() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <article style={{ maxWidth: "800px", margin: "0 auto", padding: "40px 24px" }}>
         {/* Hero */}
         <div style={{ marginBottom: "40px" }}>

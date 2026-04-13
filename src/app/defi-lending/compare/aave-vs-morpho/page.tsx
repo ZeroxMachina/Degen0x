@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Aave vs Morpho ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Aave vs Morpho in ${CURRENT_YEAR}. Compare yields, architecture, risk models, supported assets, and which protocol optimizes your DeFi lending returns.`,
-  alternates: { canonical: "/defi-lending/compare/aave-vs-morpho" }};
+  alternates: { canonical: "/defi-lending/compare/aave-vs-morpho" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Aave", slug: "aave", rating: 4.8, affiliateUrl: "https://degen0x.com/go/aave", features: { "TVL": "$15B+", "Chains": "10+", "Architecture": "Pool-based V3", "Rate Model": "Variable + Stable", "Risk Approach": "Shared pool risk", "Governance Token": "AAVE", "Yield Optimization": "Manual", "Unique Feature": "Flash loans, eMode" } },
@@ -27,9 +29,21 @@ const faqs: FAQ[] = [
   { question: "Which protocol has better multi-chain support?", answer: "Aave has significantly broader multi-chain support with deployments on 10+ chains including Ethereum, Arbitrum, Optimism, Base, Polygon, and Avalanche. Morpho is currently available on Ethereum and Base. If you need to lend or borrow on chains beyond those two, Aave is the more accessible choice." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Aave Vs Morpho', },
+  ],
+};
+
 export default function AaveVsMorphoPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

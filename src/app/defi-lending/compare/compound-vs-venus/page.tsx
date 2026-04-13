@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Compound vs Venus ${CURRENT_YEAR}: DeFi Lending Protocol Comparison`,
   description: `Compare Compound vs Venus in ${CURRENT_YEAR}. Analyze yields, security, multi-chain support, and which protocol is better for different DeFi strategies.`,
-  alternates: { canonical: "/defi-lending/compare/compound-vs-venus" }};
+  alternates: { canonical: "/defi-lending/compare/compound-vs-venus" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Compound", slug: "compound", rating: 4.6, affiliateUrl: "https://degen0x.com/go/compound", features: { "TVL": "$3B+", "Primary Chain": "Ethereum", "Chains": "3", "Architecture": "Isolated markets V3", "Governance Token": "COMP", "Supported Assets": "20+", "Rate Model": "Variable only", "Unique Feature": "Single-asset risk isolation" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Which protocol has better security?", answer: "Compound has a longer security track record on Ethereum with no major exploits of its core V3 contracts. Venus had early security issues but has since undergone extensive auditing and risk parameter improvements. Both are considered reputable within their respective ecosystems." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Compound Vs Venus', },
+  ],
+};
+
 export default function CompoundVsVenusPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

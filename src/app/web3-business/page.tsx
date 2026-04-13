@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Web3 Business Tools & Guides (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Everything you need to build and manage a Web3 business in ${CURRENT_YEAR}. Compare DAO tools, crypto banking, payroll solutions, grants, and more. Expert guides on formation, compliance, and treasury management.`,
-  alternates: { canonical: "/web3-business" }};
+  alternates: { canonical: "/web3-business" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
   { title: "Best DAO Treasury Tools", href: "/web3-business/best/treasury-tools", description: "Manage multi-sig wallets and on-chain treasuries" },
@@ -58,6 +60,15 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Web3 Business', },
+  ],
+};
+
 export default function Web3BusinessPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -70,6 +81,7 @@ export default function Web3BusinessPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

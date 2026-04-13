@@ -32,7 +32,8 @@ export const metadata: Metadata = {
     ],
   },
 
-  alternates: { canonical: "/learn/tariffs-trade-war-crypto-impact-guide-2026" }};
+  alternates: { canonical: "/learn/tariffs-trade-war-crypto-impact-guide-2026" },
+  twitter: { card: "summary_large_image" }};
 
 const S = {
   page: { minHeight: "100vh", background: "#0d1117", color: "#e6edf3" } as const,
@@ -206,9 +207,20 @@ const faqSchema = generateFAQSchema([
 
 const schema = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Tariffs Trade War Crypto Impact Guide 2026', },
+  ],
+};
+
 export default function TariffsTradeWarGuide() {
   return (
     <div style={S.page}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={S.article}>
         <Breadcrumb
           items={[

@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Institutional Crypto Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best institutional crypto wallets for ${CURRENT_YEAR}. Compare Safe, Ledger Enterprise, and GridPlus for DAO treasuries, fund management, and enterprise custody.`,
-  alternates: { canonical: "/wallets/best/institutional" }};
+  alternates: { canonical: "/wallets/best/institutional" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Safe (Gnosis Safe)", slug: "safe-wallet", rating: 4.6, description: "The industry-standard multisig wallet securing over $100B in assets for DAOs, protocols, and institutional treasuries across 15+ EVM chains.", pros: ["Battle-tested with $100B+ secured", "Highly configurable governance rules", "Open source and multiply audited"], cons: ["EVM chains only", "Higher gas costs per transaction", "Requires technical setup knowledge"], bestFor: "DAO treasuries and on-chain institutional governance", affiliateUrl: "#", category: "wallets" },
@@ -24,9 +26,21 @@ const faqs = [
   { question: "How much does institutional custody cost?", answer: "Costs vary widely. Safe is free to use beyond gas fees. Managed custody platforms typically charge setup fees, monthly platform fees, and basis-point fees on assets under custody. Enterprise solutions can cost tens of thousands annually, justified by security, compliance, and governance features." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Institutional', },
+  ],
+};
+
 export default function BestInstitutionalWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Aurelius Finance Review ${CURRENT_YEAR}: Mantle Lending Protocol`,
   description: "Complete Aurelius Finance review covering lending on Mantle network, CDP mechanics, yield strategies, and how this protocol serves the Mantle DeFi ecosystem.",
-  alternates: { canonical: "/defi-lending/reviews/aurelius" }};
+  alternates: { canonical: "/defi-lending/reviews/aurelius" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Aurelius', },
+  ],
+};
 
 export default function AureliusReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Aurelius Finance", slug: "aurelius", rating: 3.5, description: "Aurelius Finance is a lending and borrowing protocol on Mantle network offering CDP-style borrowing alongside standard lending markets, designed specifically for the Mantle DeFi ecosystem.", pros: ["Mantle-native protocol with deep ecosystem integration", "CDP mechanics enable stablecoin minting against collateral", "Low gas costs on Mantle network", "Supports Mantle-native assets including MNT", "Combined lending and CDP model offers flexibility"], cons: ["Mantle ecosystem is still developing", "Limited TVL and user base", "Minimal track record and battle-testing", "CDP model adds complexity and liquidation risk", "Competing against larger multi-chain protocols"], bestFor: "DeFi users seeking CDP-style borrowing and lending on Mantle network", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Aurelius Finance provides lending and CDP (Collateralized Debt Position) services on Mantle network, allowing users to deposit Mantle-native assets and either lend them for yield or mint stablecoins against their collateral. The protocol serves as DeFi infrastructure for the growing Mantle ecosystem, offering both traditional lending markets and a MakerDAO-inspired CDP mechanism. Aurelius benefits from Mantle network's growing ecosystem incentives and developer grants, though it faces the challenge of building user adoption on a relatively new network. The protocol's combined lending and CDP approach provides flexibility for users seeking different yield and borrowing strategies within the Mantle ecosystem."
@@ -32,5 +46,7 @@ export default function AureliusReview() {
       relatedReviews={[{ name: "Init Capital", slug: "init-capital" }, { name: "Mendi", slug: "mendi" }, { name: "Lendle", slug: "lendle" }]}
       relatedGuides={[{ title: "DeFi on Mantle", href: "/defi-lending/learn/defi-on-mantle" }, { title: "Fixed vs Variable Lending", href: "/defi-lending/compare/fixed-vs-variable-lending" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

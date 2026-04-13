@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Juice Finance Review ${CURRENT_YEAR}: Blast Lending & Points`,
   description:
     "Complete Juice Finance review covering lending on Blast L2, points farming, leveraged strategies, yield opportunities, and risk analysis.",
-  alternates: { canonical: "/defi-lending/reviews/juice-finance" }};
+  alternates: { canonical: "/defi-lending/reviews/juice-finance" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Juice Finance', },
+  ],
+};
 
 export default function JuiceFinanceReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Juice Finance",
         slug: "juice-finance",
@@ -64,5 +78,7 @@ export default function JuiceFinanceReview() {
         { title: "Leveraged Yield Farming", href: "/defi-lending/learn/leveraged-yield-farming" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

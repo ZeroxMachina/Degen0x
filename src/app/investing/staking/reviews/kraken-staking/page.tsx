@@ -10,11 +10,26 @@ export const metadata: Metadata = {
   title: "Kraken Staking Review 2026: Fees, Yields, Pros & Cons",
   description:
     "Our in-depth Kraken Staking review covers supported assets, yields, regulatory status, and whether it's the right staking service for you. Updated March 2026.",
-  alternates: { canonical: "/investing/staking/reviews/kraken-staking" }};
+  alternates: { canonical: "/investing/staking/reviews/kraken-staking" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Reviews', item: 'https://degen0x.com/investing/staking/reviews' },
+    { '@type': 'ListItem', position: 5, name: 'Kraken Staking', },
+  ],
+};
 
 export default function KrakenStakingReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Staking"
       categorySlug="investing/staking"
@@ -115,5 +130,7 @@ For non-US customers, Kraken continues to offer a robust staking service with co
         { title: "What Is Staking?", href: "/investing/staking/learn/what-is-staking" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

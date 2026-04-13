@@ -38,6 +38,16 @@ export const metadata: Metadata = {
     canonical: 'https://degen0x.com/learn/crypto-tax-guide-2026',
   }
 };
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Tax Guide 2026', },
+  ],
+};
+
 export default function CryptoTaxGuide2026() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -109,6 +119,7 @@ export default function CryptoTaxGuide2026() {
 
   return (
     <div id="top" style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Disclaimer Banner */}
       <div
         style={{

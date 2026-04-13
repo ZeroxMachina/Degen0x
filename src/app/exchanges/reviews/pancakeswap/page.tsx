@@ -31,7 +31,9 @@ const product = {
 export const metadata: Metadata = {
   title: `PancakeSwap Review (${CURRENT_YEAR}) - BNB Chain's Biggest DEX | ${SITE_NAME}`,
   description: `Complete PancakeSwap review for ${CURRENT_YEAR}. Covers BNB Chain trading, yield farming, V3 concentrated liquidity, CAKE token, and multi-chain expansion.`,
-  alternates: { canonical: "/exchanges/reviews/pancakeswap" }};
+  alternates: { canonical: "/exchanges/reviews/pancakeswap" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "PancakeSwap is the largest decentralized exchange on the BNB Chain (formerly Binance Smart Chain) and one of the biggest DEXs in all of DeFi. Launched in 2020, PancakeSwap quickly rose to prominence by offering Uniswap-style automated market making with much lower gas fees on BNB Chain. The platform has since expanded to Ethereum, Arbitrum, Base, zkSync, and other chains, becoming a true multi-chain DEX.\n\nPancakeSwap offers far more than simple token swaps. The platform includes yield farming with CAKE token rewards, a prediction market, lottery, NFT marketplace, IFO (Initial Farm Offering) launchpad, and perpetual futures trading. This breadth of features makes PancakeSwap a comprehensive DeFi hub, particularly for users in the BNB Chain ecosystem.\n\nThe CAKE token is central to PancakeSwap's ecosystem, serving as the governance token, farming reward, and utility token across all platform features. PancakeSwap V3 introduced concentrated liquidity pools (similar to Uniswap V3), improving capital efficiency for liquidity providers. While the platform's association with BNB Chain raises centralization concerns for some DeFi purists, PancakeSwap's low fees, deep liquidity, and extensive feature set have made it a staple of the DeFi landscape.";
@@ -133,9 +135,21 @@ const relatedGuides = [
   { title: "CEX vs DEX", href: "/exchanges/learn/cex-vs-dex" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Pancakeswap', },
+  ],
+};
+
 export default function PancakeSwapReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -148,5 +162,7 @@ export default function PancakeSwapReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

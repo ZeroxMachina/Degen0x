@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Arculus Review (${CURRENT_YEAR}) | degen0x`,
   description: "Arculus cold storage card review covering NFC-based security, credit card form factor, multi-chain support, and three-factor authentication.",
-  alternates: { canonical: "/wallets/reviews/arculus" }};
+  alternates: { canonical: "/wallets/reviews/arculus" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Arculus', },
+  ],
+};
 
 export default function ArculusReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Arculus",
         slug: "arculus",
@@ -64,5 +78,7 @@ export default function ArculusReviewPage() {
         { title: "Best Wallets for Beginners", href: "/wallets/best/beginners" }
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

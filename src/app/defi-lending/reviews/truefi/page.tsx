@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `TrueFi Review (${CURRENT_YEAR}): Uncollateralized DeFi Lending | degen0x`,
   description: "In-depth TrueFi review covering uncollateralized institutional lending, TRU token staking, on-chain credit scoring, and managed portfolio products.",
-  alternates: { canonical: "/defi-lending/reviews/truefi" }};
+  alternates: { canonical: "/defi-lending/reviews/truefi" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Truefi', },
+  ],
+};
 
 export default function TrueFiReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "TrueFi",
         slug: "truefi",
@@ -43,5 +57,7 @@ export default function TrueFiReview() {
       relatedReviews={[{ name: "Maple Finance", slug: "/defi-lending/reviews/maple-finance" }, { name: "Clearpool", slug: "/defi-lending/reviews/clearpool" }]}
       relatedGuides={[{ title: "DeFi Credit Scoring", href: "/defi-lending/learn/defi-credit-scoring" }, { title: "Undercollateralized Lending", href: "/defi-lending/learn/undercollateralized-lending" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

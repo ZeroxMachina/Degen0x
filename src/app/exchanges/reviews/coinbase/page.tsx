@@ -10,11 +10,25 @@ export const metadata: Metadata = {
   title: "Coinbase Review 2026: Fees, Features, Pros & Cons",
   description:
     "Our in-depth Coinbase review covers fees, security, supported coins, pros and cons, and whether it's the right exchange for you. Updated March 2026.",
-  alternates: { canonical: "/exchanges/reviews/coinbase" }};
+  alternates: { canonical: "/exchanges/reviews/coinbase" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Coinbase', },
+  ],
+};
 
 export default function CoinbaseReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -140,5 +154,7 @@ Beyond trading, Coinbase has expanded into a comprehensive crypto ecosystem. The
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

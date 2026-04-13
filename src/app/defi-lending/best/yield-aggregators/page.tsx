@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   title: `Best DeFi Yield Aggregators of ${CURRENT_YEAR} — Top APY Protocols Compared`,
   description: `Compare the best DeFi yield aggregators of ${CURRENT_YEAR}. We rank protocols by APY, TVL, security, supported chains, and strategy complexity. Find the highest safe yields for your crypto.`,
   alternates: { canonical: `${SITE_URL}/defi-lending/best/yield-aggregators` },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 interface YieldProtocol {
   rank: number;
@@ -256,6 +257,17 @@ function RiskBadge({ level }: { level: RiskLevel }) {
   );
 }
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/defi-lending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Yield Aggregators', },
+  ],
+};
+
 export default function YieldAggregatorsPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -268,6 +280,7 @@ export default function YieldAggregatorsPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

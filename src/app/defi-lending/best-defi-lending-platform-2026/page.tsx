@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best DeFi Lending Platform 2026', description: 'DeFi lending comparison', image: 'https://degen0x.com/og-defi.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Is Aave V3 the best DeFi lending?', acceptedAnswer: { '@type': 'Answer', text: '$12B TVL. 8+ chains (Ethereum, Arbitrum, Optimism, Polygon, Base, etc). Supply 3-5% APY, borrow 6-8%. Governance token AAVE. Audited.' } }, { '@type': 'Question', name: 'What is flash loan?', acceptedAnswer: { '@type': 'Answer', text: 'Aave-only feature. Borrow unlimited, repay same block. No interest. Enables arbitrage, liquidation bots. Flashbots use.' } }, { '@type': 'Question', name: 'What is e-mode in Aave?', acceptedAnswer: { '@type': 'Answer', text: 'Efficiency mode. Correlated assets (stablecoins, ETH) = higher LTV. USDC/USDT: 97% LTV vs 80% normal. Liquidation risk higher.' } }, { '@type': 'Question', name: 'Compound V3 vs Aave V3?', acceptedAnswer: { '@type': 'Answer', text: 'Compound: Ethereum + Base only. Simpler, safer (single token per market). Aave: multi-chain, more features. Aave dominant.' } }, { '@type': 'Question', name: 'Is MakerDAO lending?', acceptedAnswer: { '@type': 'Answer', text: 'MakerDAO: over-collateralized loans (deposit ETH, borrow DAI). Spark protocol (new). Similar to Aave but DAI-focused.' } }, { '@type': 'Question', name: 'What is liquidation risk?', acceptedAnswer: { '@type': 'Answer', text: 'If collateral price drops, loan liquidated. Lose collateral. Aave max 80% LTV for safety. Flash crashes = liquidation cascade.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best Defi Lending Platform 2026', },
+  ],
+};
+
 export default function BestDefiLendingPlatform() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #c084fc', borderLeft: '3px solid #c084fc', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -31,6 +41,7 @@ export default function BestDefiLendingPlatform() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

@@ -12,7 +12,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `7 Best DeFi Lending Protocols of ${CURRENT_YEAR} (Ranked & Reviewed)`,
   description: `Compare the top DeFi lending protocols of ${CURRENT_YEAR}. We tested yield rates, security, TVL, and user experience. Find the best protocol for earning yield and borrowing.`,
-  alternates: { canonical: "/defi-lending/best" }};
+  alternates: { canonical: "/defi-lending/best" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const subCategories = [
   { title: "Stablecoin Yield", href: "/defi-lending/best/stablecoin-yield", desc: "Highest stablecoin yields" },
@@ -25,11 +27,22 @@ const subCategories = [
   { title: "Fixed Rate", href: "/defi-lending/best/fixed-rate", desc: "Predictable returns" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', },
+  ],
+};
+
 export default function BestDefiLendingPage() {
   const ranked = [...DEFI_LENDING_PRODUCTS].sort((a, b) => b.rating - a.rating);
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
 
       <AuthorAttribution

@@ -13,7 +13,21 @@ export const metadata: Metadata = {
   title: `Coinbase Staking vs Lido: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description:
     "Detailed comparison of Coinbase Staking vs Lido. Compare fees, ease of use, DeFi integrations, and regulatory status to choose the right ETH staking option.",
-  alternates: { canonical: "/investing/staking/compare/coinbase-vs-lido" }};
+  alternates: { canonical: "/investing/staking/compare/coinbase-vs-lido" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Compare', item: 'https://degen0x.com/investing/staking/compare' },
+    { '@type': 'ListItem', position: 5, name: 'Coinbase Vs Lido', },
+  ],
+};
 
 export default function CoinbaseVsLidoPage() {
   const coinbase = stakingDetailedComparisons["coinbase-staking"];
@@ -21,6 +35,7 @@ export default function CoinbaseVsLidoPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

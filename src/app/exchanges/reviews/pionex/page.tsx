@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `Pionex Review (${CURRENT_YEAR}) - Best Free Crypto Trading Bots | ${SITE_NAME}`,
   description: `Complete Pionex review for ${CURRENT_YEAR}. Covers 16+ free trading bots, 0.05% fees, grid bot strategies, DCA automation, and user experience.`,
-  alternates: { canonical: "/exchanges/reviews/pionex" }};
+  alternates: { canonical: "/exchanges/reviews/pionex" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Pionex is a unique cryptocurrency exchange that differentiates itself by offering 16+ free built-in trading bots as its primary value proposition. Founded in 2019 and based in Singapore, Pionex has attracted over 5 million users by making automated trading strategies accessible to everyone, regardless of experience level. The platform charges just 0.05% for both maker and taker trades, making it one of the cheapest exchanges in the industry.\n\nPionex aggregates liquidity from Binance and HTX (formerly Huobi), which means users benefit from the deep order books and tight spreads of these major exchanges while using Pionex's bot-focused interface. The platform supports 350+ trading pairs and offers a range of bots including grid trading, DCA (dollar-cost averaging), arbitrage, rebalancing, and trailing buy/sell strategies.\n\nThe exchange holds FinCEN MSB (Money Services Business) registration in the United States, making it one of the few bot-focused platforms that serves US users. Pionex is best suited for traders who want to automate their strategies without paying for third-party bot services, and for beginners who want to implement proven trading strategies without deep market knowledge.";
@@ -132,9 +134,21 @@ const relatedGuides = [
   { title: "Exchange Fees Explained", href: "/exchanges/learn/exchange-fees-explained" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Pionex', },
+  ],
+};
+
 export default function PionexReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -147,5 +161,7 @@ export default function PionexReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

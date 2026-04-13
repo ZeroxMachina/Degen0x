@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Arbitrum (ARB) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Arbitrum investment guide for ${CURRENT_YEAR}. Learn about ARB fundamentals, L2 dominance, DeFi ecosystem, Orbit chains, and how to buy Arbitrum.`,
   alternates: { canonical: "/investing/crypto/arbitrum" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What is Arbitrum?", answer: "Arbitrum is the leading Ethereum Layer 2 network using optimistic rollup technology. It processes transactions off the Ethereum mainnet at much lower costs while inheriting Ethereum's security. Arbitrum has the highest TVL among all L2s and hosts the largest L2 DeFi ecosystem." },
@@ -21,9 +22,21 @@ const faqs = [
   { question: "What are Orbit chains?", answer: "Orbit chains are Layer 3 networks built on top of Arbitrum using the Arbitrum Orbit framework. They allow projects to launch their own dedicated chains that settle to Arbitrum, creating a multi-layered scaling architecture. Gaming and application-specific chains are primary use cases." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Arbitrum', },
+  ],
+};
+
 export default function ArbitrumPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

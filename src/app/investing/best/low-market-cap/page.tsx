@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Low Market Cap Crypto (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top low market cap cryptocurrencies with high growth potential in ${CURRENT_YEAR}. Small-cap gems with strong fundamentals and active development.`,
-  alternates: { canonical: "/investing/best/low-market-cap" }};
+  alternates: { canonical: "/investing/best/low-market-cap" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Pendle (PENDLE)", slug: "pendle", rating: 4.5, description: "Yield tokenization protocol enabling trading of future yield and fixed-rate strategies. Innovative DeFi primitive with growing TVL and unique market position.", pros: ["Unique yield trading mechanism", "Growing TVL and revenue", "Strong product-market fit"], cons: ["Complex product for average users", "DeFi sector-specific risk", "Dependent on DeFi yield demand"], bestFor: "DeFi innovation with revenue fundamentals", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "How do I find low market cap gems?", answer: "Research projects with active development (GitHub activity), growing usage metrics (TVL, transactions, active users), reputable teams and backers, and clear competitive advantages. Use platforms like DeFi Llama for TVL data, Token Terminal for revenue metrics, and CoinGecko for market data." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Low Market Cap', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best NFT Marketplaces for Art in ${CURRENT_YEAR} | degen0x`,
   description: `Discover the best NFT marketplaces for digital art in ${CURRENT_YEAR}. Curated platforms for artists and collectors featuring galleries, auctions, and premium art curation.`,
-  alternates: { canonical: "/nfts/best/art" }};
+  alternates: { canonical: "/nfts/best/art" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -32,6 +34,17 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/nfts/best' },
+    { '@type': 'ListItem', position: 4, name: 'Art', },
+  ],
+};
+
 export default function BestForArtPage() {
   const recommended = ["superrare", "foundation", "opensea", "rarible", "zora"];
   const filtered = nftMarketplaces
@@ -51,6 +64,7 @@ export default function BestForArtPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb

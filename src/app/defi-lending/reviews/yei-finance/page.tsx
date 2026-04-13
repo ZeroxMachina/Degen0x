@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Yei Finance Review ${CURRENT_YEAR}: Sei Network Lending Protocol`,
   description: "In-depth Yei Finance review covering lending and borrowing on Sei network, yield rates, protocol features, and the emerging Sei DeFi ecosystem.",
-  alternates: { canonical: "/defi-lending/reviews/yei-finance" }};
+  alternates: { canonical: "/defi-lending/reviews/yei-finance" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Yei Finance', },
+  ],
+};
 
 export default function YeiFinanceReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Yei Finance", slug: "yei-finance", rating: 3.6, description: "Yei Finance is a lending and borrowing protocol on Sei network, offering Aave-inspired lending markets for Sei-native assets with competitive yields in the emerging Sei DeFi ecosystem.", pros: ["Leading lending protocol on Sei network", "Aave-inspired architecture with modern features", "First-mover advantage in the Sei DeFi ecosystem", "Very fast transactions leveraging Sei's speed", "Growing alongside the broader Sei ecosystem"], cons: ["Sei ecosystem is still very early stage", "Low TVL compared to lending protocols on established chains", "Limited asset selection due to smaller ecosystem", "Protocol track record is minimal", "Sei network adoption is still uncertain"], bestFor: "DeFi users seeking early lending opportunities on Sei network", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Yei Finance is positioning itself as the primary lending protocol on Sei network, one of the newer Layer 1 blockchains focused on trading speed and DeFi optimization. The protocol offers Aave-inspired lending and borrowing markets for Sei-native assets, providing essential DeFi infrastructure for the growing Sei ecosystem. Yei benefits from first-mover advantage on Sei but also carries the risks inherent in building on a newer, less established network. The protocol's growth is closely tied to the broader adoption of the Sei blockchain, which is still in its early stages of DeFi ecosystem development."
@@ -32,5 +46,7 @@ export default function YeiFinanceReview() {
       relatedReviews={[{ name: "LayerBank", slug: "layerbank" }, { name: "ZeroLend", slug: "zerolend" }, { name: "Kinza", slug: "kinza" }]}
       relatedGuides={[{ title: "DeFi on Sei", href: "/defi-lending/learn/defi-on-sei" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

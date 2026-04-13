@@ -27,6 +27,15 @@ export const metadata: Metadata = {
 };
 
 // Staking Page Component
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Staking', },
+  ],
+};
+
 export default function StakingPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -43,6 +52,7 @@ export default function StakingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <div className="min-h-screen bg-gray-900">

@@ -43,6 +43,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/tokenized-stocks-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Tokenized Stocks Guide 2026', },
+  ],
+};
+
 export default function TokenizedStocksGuidePage() {
   const articleSchema = generateArticleSchema({
     title: "Tokenized Stocks 2026: The Complete Guide to On-Chain Equities",
@@ -99,6 +109,7 @@ export default function TokenizedStocksGuidePage() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },

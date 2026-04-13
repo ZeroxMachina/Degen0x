@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Ledger vs Coldcard (${CURRENT_YEAR}): Bitcoin Hardware Wallet Comparison | ${SITE_NAME}`,
   description: `Ledger vs Coldcard comparison for ${CURRENT_YEAR}. Compare security, Bitcoin features, air-gapped signing, and multi-coin support for hardware wallets.`,
-  alternates: { canonical: "/wallets/compare/ledger-vs-coldcard" }};
+  alternates: { canonical: "/wallets/compare/ledger-vs-coldcard" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Ledger Nano X", slug: "ledger-nano-x", rating: 4.7, affiliateUrl: "https://degen0x.com/go/ledger", features: { "Type": "Multi-coin hardware wallet", "Price": "$149", "Supported Coins": "5,500+", "Bitcoin-Only Mode": "No", "Air-Gapped": "No (USB + Bluetooth)", "Secure Element": "Yes (CC EAL5+)", "Open Source": "Partial", "Display": "128x64 OLED" } },
@@ -27,9 +29,21 @@ const faqs = [
   { question: "What does air-gapped mean?", answer: "An air-gapped device never connects to the internet or any computer directly. Coldcard can sign transactions using a microSD card or NFC, meaning it never needs to be plugged into a potentially compromised computer. This eliminates USB-based attack vectors." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Ledger Vs Coldcard', },
+  ],
+};
+
 export default function LedgerVsColdcardPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

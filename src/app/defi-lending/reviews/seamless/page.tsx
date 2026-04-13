@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Seamless Protocol Review ${CURRENT_YEAR}: Base Native Lending`,
   description:
     "Detailed Seamless Protocol review covering integrated lending loops, ILM strategies, yield rates, and how this Base-native lending protocol works.",
-  alternates: { canonical: "/defi-lending/reviews/seamless" }};
+  alternates: { canonical: "/defi-lending/reviews/seamless" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Seamless', },
+  ],
+};
 
 export default function SeamlessReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Seamless Protocol",
         slug: "seamless",
@@ -64,5 +78,7 @@ export default function SeamlessReview() {
         { title: "Recursive Lending Strategy", href: "/defi-lending/learn/recursive-lending-strategy" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

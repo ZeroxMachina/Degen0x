@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `TokenTax vs CoinLedger ${CURRENT_YEAR}: Which Crypto Tax Software Is Better?`,
   description: `Compare TokenTax vs CoinLedger for crypto tax reporting. Pricing, features, DeFi support, full-service filing, and beginner-friendliness compared in ${CURRENT_YEAR}.`,
-  alternates: { canonical: "/taxes/compare/tokentax-vs-coinledger" }};
+  alternates: { canonical: "/taxes/compare/tokentax-vs-coinledger" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "TokenTax", slug: "tokentax", rating: 4.2, affiliateUrl: "https://degen0x.com/go/tokentax", features: { "Paid Plans": "From $65/year", "Exchanges": "100+", "DeFi Support": "Excellent", "Full-Service Filing": "Yes (VIP plan)", "Margin/Futures": "Yes", "International": "10+ countries", "TurboTax Integration": "CSV export", "CPA Support": "Yes" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Is TokenTax's full-service filing worth it?", answer: "TokenTax's VIP plan includes full-service tax filing where their CPAs prepare and file your entire tax return, not just the crypto portion. This is valuable for users with complex tax situations who want professional preparation. The cost is significantly higher than self-filing but saves considerable time and reduces error risk." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/taxes/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Tokentax Vs Coinledger', },
+  ],
+};
+
 export default function TokenTaxVsCoinLedgerPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

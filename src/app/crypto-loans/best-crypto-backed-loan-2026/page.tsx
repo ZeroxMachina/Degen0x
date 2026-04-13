@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Backed Loan 2026', description: 'Crypto loan comparison', image: 'https://degen0x.com/og-loans.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'What is crypto backed loan?', acceptedAnswer: { '@type': 'Answer', text: 'Deposit crypto as collateral, borrow fiat/stablecoin. Aave DeFi: borrow against holdings. Nexo CeFi: borrow cash up to $100k. Over-collateralized.' } }, { '@type': 'Question', name: 'Aave vs MakerDAO loans?', acceptedAnswer: { '@type': 'Answer', text: 'Aave: flexible (deposit any token, borrow any, rates vary). MakerDAO: deposit ETH, borrow DAI stablecoin only, fixed stability fee.' } }, { '@type': 'Question', name: 'What is LTV ratio?', acceptedAnswer: { '@type': 'Answer', text: 'Loan-to-Value. Borrow 50% ETH value = 50% LTV. Higher LTV = riskier (liquidation closer). Aave 60-80%, Nexo 50-90%.' } }, { '@type': 'Question', name: 'Why borrow crypto instead of selling?', acceptedAnswer: { '@type': 'Answer', text: 'Avoid tax event. Hold for long-term appreciation. Borrow fiat = liquidity without selling. Borrow costs 3-8% APY vs selling taxes.' } }, { '@type': 'Question', name: 'Auto-liquidation risk?', acceptedAnswer: { '@type': 'Answer', text: 'Collateral drops below LTV = liquidated. Lose collateral. Flash crashes trigger cascades. Always keep 20%+ buffer.' } }, { '@type': 'Question', name: 'Tax benefits of borrowing?', acceptedAnswer: { '@type': 'Answer', text: 'Borrowing not taxable (debt, not sale). Interest deductible if used for business. Hold forever if don\'t sell collateral.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Best Crypto Backed Loan 2026', },
+  ],
+};
+
 export default function BestCryptoBackedLoan() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderLeft: '3px solid #8b5cf6', borderLeft: '3px solid #8b5cf6', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -31,6 +41,7 @@ export default function BestCryptoBackedLoan() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

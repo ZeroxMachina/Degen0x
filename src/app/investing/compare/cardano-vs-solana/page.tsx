@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Cardano vs Solana (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Cardano vs Solana comparison for ${CURRENT_YEAR}. Research-driven development vs high-performance execution compared across speed, fees, ecosystem, and investment potential.` ,
-  alternates: { canonical: "/investing/compare/cardano-vs-solana" }};
+  alternates: { canonical: "/investing/compare/cardano-vs-solana" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Cardano (ADA)", slug: "cardano", rating: 4.2, affiliateUrl: "#", features: { "Consensus": "Ouroboros Proof-of-Stake", "TPS (Current)": "~250", "Block Time": "~20 seconds", "Avg Transaction Fee": "<$0.10", "Smart Contract Language": "Plutus (Haskell-based)", "Development Approach": "Peer-reviewed academic research", "TVL": "Growing but smaller", "Staking Yield": "3-5%", "Validator Count": "~3,200 stake pools", "Governance": "On-chain (Project Catalyst)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Which is a better investment?", answer: "Solana has shown stronger price performance and ecosystem momentum recently, with growing DeFi TVL and developer activity. Cardano appeals to investors who value rigorous development methodology, decentralization with over 3,200 stake pools, and on-chain governance. Both carry significant risk as alt-L1 investments competing with Ethereum." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Cardano Vs Solana', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

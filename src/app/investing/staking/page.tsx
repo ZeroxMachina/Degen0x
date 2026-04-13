@@ -11,7 +11,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Staking Platforms of ${CURRENT_YEAR} - Compare & Review`,
   description: `Compare the best crypto staking platforms of ${CURRENT_YEAR}. Expert reviews of liquid staking, restaking, and validator services. Find the best staking yields and lowest fees.`,
-  alternates: { canonical: "/investing/staking" }};
+  alternates: { canonical: "/investing/staking" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
   { title: "Best Staking Platforms", href: "/investing/staking/best", description: "Our top-rated staking platforms across all categories" },
@@ -79,6 +81,16 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', },
+  ],
+};
+
 export default function StakingHubPage() {
   const topPlatforms = [...stakingPlatforms].sort((a, b) => b.rating - a.rating).slice(0, 5);
 
@@ -93,6 +105,7 @@ export default function StakingHubPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

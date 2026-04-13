@@ -94,9 +94,20 @@ const stats = [
   { label: "2026 Target TPS", value: "1,000+" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Fhe Crypto Guide 2026', },
+  ],
+};
+
 export default function FHECryptoGuide2026() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <StructuredData data={combinedSchema} />
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
       <Breadcrumb items={[

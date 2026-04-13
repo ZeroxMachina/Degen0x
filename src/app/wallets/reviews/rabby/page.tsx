@@ -10,7 +10,9 @@ const product = walletProducts.find((p) => p.slug === "rabby")!;
 export const metadata: Metadata = {
   title: `Rabby Wallet Review (${CURRENT_YEAR}) - Security-First EVM Wallet | ${SITE_NAME}`,
   description: `Complete Rabby wallet review for ${CURRENT_YEAR}. Covers transaction simulation, auto chain detection, multi-chain EVM support, and DeFi security features.`,
-  alternates: { canonical: "/wallets/reviews/rabby" }};
+  alternates: { canonical: "/wallets/reviews/rabby" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Rabby is a security-focused browser extension wallet for Ethereum and EVM-compatible chains, developed by the DeBank team. Its standout feature is pre-transaction risk scanning, which simulates every transaction before you sign it and shows you exactly what will happen to your balances. Rabby also automatically detects which chain a dApp is using and switches networks accordingly, eliminating one of the most common pain points of EVM wallet usage. It is open-source, free to use, and has become a favorite among experienced DeFi users who prioritize security and transparency.";
@@ -124,9 +126,21 @@ const relatedGuides = [
   { title: "Hot vs Cold Wallets", href: "/wallets/learn/hot-vs-cold-wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Rabby', },
+  ],
+};
+
 export default function RabbyReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -139,5 +153,7 @@ export default function RabbyReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

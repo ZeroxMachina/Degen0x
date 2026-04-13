@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Whale Wallet Tracker 2026', description: 'Whale tracking tools', image: 'https://degen0x.com/og-tools.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'What is whale watching?', acceptedAnswer: { '@type': 'Answer', text: 'Follow large wallet movements (>$1M). Large buys = bullish signal. Large sells = bearish. Whale activity indicates smart money.' } }, { '@type': 'Question', name: 'Is Nansen best?', acceptedAnswer: { '@type': 'Answer', text: 'Nansen best for advanced users. 10+ chains, portfolio tracking, smart money signals. $200+/month (expensive). Best for hedge funds.' } }, { '@type': 'Question', name: 'Arkham labeled wallets?', acceptedAnswer: { '@type': 'Answer', text: 'Arkham labels whale wallets (Grayscale, Three Arrows Capital, etc). Enables tracking by fund. Crowdsourced labels.' } }, { '@type': 'Question', name: 'Free whale tracking?', acceptedAnswer: { '@type': 'Answer', text: 'Etherscan labels, Whale Alert alerts, Lookonchain free tier. Nansen/Arkham paid. Free options good for casual.' } }, { '@type': 'Question', name: 'Exchange flow analysis?', acceptedAnswer: { '@type': 'Answer', text: 'Track Bitcoin flow into/out of exchanges. Large outflow = hodling (bullish). Large inflow = selling (bearish).' } }, { '@type': 'Question', name: 'Follow blindly?', acceptedAnswer: { '@type': 'Answer', text: 'No. Whales wrong sometimes. Don\'t copy trades. Use signals as context. Your analysis + whale data = better.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Whale Wallet Tracker', },
+  ],
+};
+
 export default function WhaleWalletTracker() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -31,6 +41,7 @@ export default function WhaleWalletTracker() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

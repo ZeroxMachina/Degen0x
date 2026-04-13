@@ -22,9 +22,19 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/whale-watch" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Whale Watch', },
+  ],
+};
+
 export default function WhaleWatchPage() {
   return (
     <div style={{ background: 'var(--color-bg)' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

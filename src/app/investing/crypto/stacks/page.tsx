@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Stacks (STX) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Stacks investment guide for ${CURRENT_YEAR}. Learn about STX fundamentals, Bitcoin smart contracts, Nakamoto upgrade, risks, and how to buy Stacks.`,
   alternates: { canonical: "/investing/crypto/stacks" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Stacks a good investment?", answer: "Stacks is the leading smart contract platform built on Bitcoin, enabling DeFi, NFTs, and dApps that settle on the Bitcoin blockchain. The Nakamoto upgrade significantly improved performance with fast blocks and 100% Bitcoin finality. Growing interest in Bitcoin DeFi (BTCFi) is a strong tailwind, but competition from other Bitcoin L2 solutions and the relatively small ecosystem compared to Ethereum are risks." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "What is sBTC?", answer: "sBTC is a decentralized, programmable Bitcoin on the Stacks network. Users can deposit BTC and receive sBTC, which can then be used in DeFi protocols, lending, trading, and other smart contract applications on Stacks. sBTC aims to be the most trust-minimized way to use Bitcoin in DeFi, backed 1:1 by BTC and managed through a decentralized signer set." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Stacks', },
+  ],
+};
+
 export default function StacksPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

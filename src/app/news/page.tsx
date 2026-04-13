@@ -53,6 +53,15 @@ const CATEGORY_LABELS: Record<string, string> = {
   wallets: "Security",
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'News', },
+  ],
+};
+
 export default function NewsPage() {
   const featured = getFeaturedArticles();
   const latest = getLatestArticles(10);
@@ -70,6 +79,7 @@ export default function NewsPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

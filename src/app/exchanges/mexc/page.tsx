@@ -10,11 +10,24 @@ export const metadata: Metadata = {
   title: "MEXC Review 2026: Trading Platform, Fees, Features & More",
   description:
     "Comprehensive MEXC review covering crypto trading platform, altcoin selection, trading features, fees, and security. Updated March 2026.",
-  alternates: { canonical: "/exchanges/mexc" }};
+  alternates: { canonical: "/exchanges/mexc" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Mexc', },
+  ],
+};
 
 export default function MEXCReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -149,5 +162,7 @@ As a non-US-regulated exchange not available to US residents, MEXC operates with
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

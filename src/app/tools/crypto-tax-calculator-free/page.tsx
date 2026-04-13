@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Best Crypto Tax Calculator 2026', description: 'Tax calculator tools', image: 'https://degen0x.com/og-tools.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Do I need crypto tax calculator?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every trade = taxable event. 100+ transactions = spreadsheet nightmare. Calculators auto-aggregate, track cost basis, generate tax forms.' } }, { '@type': 'Question', name: 'What is cost basis method?', acceptedAnswer: { '@type': 'Answer', text: 'FIFO (first-in-first-out): earliest purchases = costs. LIFO (last-in): newest = costs. HIFO (highest-in): highest cost = less tax. US mostly FIFO.' } }, { '@type': 'Question', name: 'Can I change cost basis method?', acceptedAnswer: { '@type': 'Answer', text: 'US: pick method first year, consistent after. Changing = audit risk. Most people stuck with FIFO unless early adopter.' } }, { '@type': 'Question', name: 'Do DeFi transactions count?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Swaps, liquidity pools, staking rewards = taxable. Calculators handle DeFi if provided transaction data.' } }, { '@type': 'Question', name: 'What do calculators cost?', acceptedAnswer: { '@type': 'Answer', text: 'Koinly: 25 free, ~$50/year for 500. CoinTracker: 25 free. TokenTax: tiered. Most free tiers sufficient for casual traders.' } }, { '@type': 'Question', name: 'Can I use calculator for other countries?', acceptedAnswer: { '@type': 'Answer', text: 'Most US-focused. UK: CryptoTaxCalculator. EU: varies by country. Check country support before purchasing.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Tax Calculator Free', },
+  ],
+};
+
 export default function BestCryptoTaxCalculator() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -31,6 +41,7 @@ export default function BestCryptoTaxCalculator() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

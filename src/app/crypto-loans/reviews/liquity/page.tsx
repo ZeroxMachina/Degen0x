@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `Liquity Review (${CURRENT_YEAR}): 0% Interest ETH Loans | ${SITE_NAME}`,
   description: "In-depth Liquity review covering 0% interest ETH-backed loans, LUSD stablecoin, stability pool, and how Liquity's immutable protocol works.",
-  alternates: { canonical: "/crypto-loans/reviews/liquity" }};
+  alternates: { canonical: "/crypto-loans/reviews/liquity" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Liquity', },
+  ],
+};
 
 export default function LiquityReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Loans"
       categorySlug="crypto-loans"
@@ -44,5 +58,7 @@ export default function LiquityReview() {
       relatedReviews={[{ name: "MakerDAO", slug: "makerdao" }, { name: "Abracadabra", slug: "abracadabra" }]}
       relatedGuides={[{ title: "Overcollateralization Explained", href: "/crypto-loans/learn/overcollateralization-explained" }, { title: "Liquidation Risk", href: "/crypto-loans/learn/liquidation-risk" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

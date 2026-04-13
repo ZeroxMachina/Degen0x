@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Solana DeFi Lending Protocols ${CURRENT_YEAR} - Earn Yield on SOL`,
   description: `Compare the best DeFi lending protocols on Solana in ${CURRENT_YEAR}. Earn yield with near-zero transaction fees and sub-second finality.`,
-  alternates: { canonical: "/defi-lending/best/solana" }};
+  alternates: { canonical: "/defi-lending/best/solana" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -59,9 +61,21 @@ const faqs: FAQ[] = [
   { question: "Can I earn yield on SOL?", answer: "Yes. You can earn yield on SOL through liquid staking (JitoSOL, mSOL, bSOL), lending SOL on protocols like Kamino and Marginfi, or providing SOL liquidity on DEXs like Raydium and Orca. Staking yields are typically 6-8% APY, while lending yields vary by demand." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/defi-lending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Solana', },
+  ],
+};
+
 export default function SolanaPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

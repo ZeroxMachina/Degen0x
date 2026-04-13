@@ -112,9 +112,20 @@ const C = {
 };
 
 // ─── Page ─────────────────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Onchain Institutional Credit Guide', },
+  ],
+};
+
 export default function OnchainInstitutionalCreditGuidePage() {
   return (
     <div style={{ minHeight: "100vh", background: C.bg, color: C.text }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
 
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px 80px" }}>

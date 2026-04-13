@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Avalanche vs Solana (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Avalanche vs Solana comparison for ${CURRENT_YEAR}. Subnet architecture vs monolithic performance — speed, fees, DeFi, and investment potential compared.` ,
-  alternates: { canonical: "/investing/compare/avalanche-vs-solana" }};
+  alternates: { canonical: "/investing/compare/avalanche-vs-solana" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Avalanche (AVAX)", slug: "avalanche", rating: 4.3, affiliateUrl: "#", features: { "Consensus": "Avalanche Consensus (PoS)", "Architecture": "Multi-chain (Subnets)", "TPS (C-Chain)": "~4,500", "Block Time": "~2 seconds", "Avg Transaction Fee": "$0.01-0.10", "Smart Contract Language": "Solidity (EVM-compatible)", "TVL": "Top 10 in DeFi", "Staking Yield": "7-10%", "Subnet Customization": "Full control over VM and rules", "Institutional Focus": "Strong (Spruce, Evergreen)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Which is better for enterprise use?", answer: "Avalanche has stronger enterprise positioning through its Subnet architecture, which allows institutions to create compliant, customizable blockchains. Avalanche's partnerships with Deloitte, institutional DeFi through Spruce, and the Evergreen subnet framework specifically target enterprise needs. Solana focuses more on consumer applications and retail-facing products." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Avalanche Vs Solana', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

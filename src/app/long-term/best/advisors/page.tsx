@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Crypto Financial Advisors ${CURRENT_YEAR} - Expert Wealth Management`,
   description: `Find the best financial advisors specializing in cryptocurrency in ${CURRENT_YEAR}. Compare crypto-savvy RIAs, robo-advisors, and wealth managers for portfolio allocation, tax optimization, and retirement planning with digital assets.`,
-  alternates: { canonical: "/long-term/best/advisors" }};
+  alternates: { canonical: "/long-term/best/advisors" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -101,9 +103,21 @@ const faqs: FAQ[] = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Long Term', item: 'https://degen0x.com/long-term' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/long-term/best' },
+    { '@type': 'ListItem', position: 4, name: 'Advisors', },
+  ],
+};
+
 export default function AdvisorsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Advisors", href: "/long-term/best/advisors" }]} />
       <AffiliateDisclosure />
 

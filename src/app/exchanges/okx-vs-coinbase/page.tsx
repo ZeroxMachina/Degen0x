@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `OKX vs Coinbase (${CURRENT_YEAR}): Which Exchange Is Better? | ${SITE_NAME}`,
   description: `OKX vs Coinbase comparison for ${CURRENT_YEAR}. Compare features, fees, security, derivatives access, and Web3 integration to choose the best exchange.`,
-  alternates: { canonical: "/exchanges/okx-vs-coinbase" }};
+  alternates: { canonical: "/exchanges/okx-vs-coinbase" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "OKX", slug: "okx", rating: 4.6, affiliateUrl: "https://degen0x.com/go/okx", features: { "Trading Fees": "0.08% maker / 0.1% taker", "Coins Listed": "350+", "Futures": "Up to 125x leverage", "Web3 Wallet": "Yes (80+ chains)", "Options": "Yes", "Margin": "Yes (up to 10x)", "Headquarters": "Seychelles / Dubai", "US Available": "No" } },
@@ -21,9 +23,20 @@ const items: ComparisonItem[] = [
 
 const features = ["Trading Fees", "Coins Listed", "Futures", "Web3 Wallet", "Options", "Margin", "Headquarters", "US Available"];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Okx Vs Coinbase', },
+  ],
+};
+
 export default function OKXVsCoinbasePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

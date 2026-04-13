@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Crypto.com Visa Card Review (${CURRENT_YEAR}): Cashback, Tiers & Pros/Cons | degen0x`,
   description: "In-depth Crypto.com Visa card review covering tiered cashback rewards, CRO staking requirements, premium perks, and whether it is worth the investment.",
-  alternates: { canonical: "/crypto-cards/reviews/crypto-com-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/crypto-com-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Crypto Com Card', },
+  ],
+};
 
 export default function CryptoComCardReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Crypto.com Visa",
         slug: "crypto-com-card",
@@ -44,5 +58,7 @@ export default function CryptoComCardReviewPage() {
       relatedReviews={[{ name: "Coinbase Card", slug: "coinbase-card" }, { name: "Binance Card", slug: "binance-card" }, { name: "Nexo Card", slug: "nexo-card" }]}
       relatedGuides={[{ title: "Best Crypto Card Rewards", href: "/crypto-cards/learn/best-crypto-card-rewards" }, { title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

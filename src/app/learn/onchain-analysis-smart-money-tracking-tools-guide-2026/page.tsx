@@ -117,9 +117,20 @@ const faqSchema = {
   ],
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Onchain Analysis Smart Money Tracking Tools Guide 2026', },
+  ],
+};
+
 export default function OnchainAnalysisGuide() {
   return (
     <div style={{ backgroundColor: '#0d1117', minHeight: '100vh', paddingTop: 0 }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <main
         style={{
           maxWidth: '900px',

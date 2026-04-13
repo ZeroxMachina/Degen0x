@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `OneKey Wallet Review (${CURRENT_YEAR}) - Open-Source Hardware Wallet | ${SITE_NAME}`,
   description: `Complete OneKey wallet review for ${CURRENT_YEAR}. Covers open-source design, hardware models, supported chains, security architecture, and value proposition.`,
-  alternates: { canonical: "/wallets/reviews/onekey" }};
+  alternates: { canonical: "/wallets/reviews/onekey" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "OneKey is a fully open-source hardware wallet brand that has gained significant traction, particularly in Asian markets. The company offers multiple hardware wallet form factors including the Classic (affordable entry-level), Mini (compact card-like design), Pro (professional with large screen), and Touch (premium touchscreen). All OneKey devices feature open-source firmware and are paired with an open-source companion app.\n\nOneKey supports 1,000+ tokens across major blockchains including Bitcoin, Ethereum, Solana, Polygon, and many others. The company emphasizes transparency, security, and affordability as its core values. Every component of the OneKey ecosystem, from hardware schematics to firmware code, is publicly available on GitHub for independent audit and verification. This open-source approach distinguishes OneKey from Ledger (closed-source firmware) and positions it alongside Trezor as a transparency-first option.";
@@ -132,9 +134,21 @@ const relatedGuides = [
   { title: "Wallet Security Best Practices", href: "/wallets/learn/wallet-security-best-practices" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Onekey', },
+  ],
+};
+
 export default function OneKeyReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -147,5 +161,7 @@ export default function OneKeyReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

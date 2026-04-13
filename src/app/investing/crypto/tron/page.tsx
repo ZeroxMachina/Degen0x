@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in TRON (TRX) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete TRON investment guide for ${CURRENT_YEAR}. Learn about TRX fundamentals, stablecoin dominance, staking, risks, and how to buy TRON.`,
   alternates: { canonical: "/investing/crypto/tron" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is TRON a good investment?", answer: "TRON has established itself as the dominant blockchain for USDT (Tether) transfers, processing more stablecoin volume than any other network. Its revenue generation from transaction fees is among the highest in crypto. However, centralization concerns around founder Justin Sun and a smaller developer ecosystem compared to Ethereum are risks to consider." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "How does TRON staking work?", answer: "TRX holders can stake their tokens by voting for Super Representatives (validators) on the TRON network. Staking earns approximately 4-5% APY in TRX rewards. Staking also provides bandwidth and energy resources needed to execute transactions on the network without paying fees directly." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Tron', },
+  ],
+};
+
 export default function TRONPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

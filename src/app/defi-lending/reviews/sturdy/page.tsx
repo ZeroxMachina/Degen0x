@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Sturdy Finance Review ${CURRENT_YEAR}: Isolated Lending Vaults`,
   description: "Complete Sturdy Finance review covering isolated lending pairs, yield aggregation, vault strategies, and the protocol's V2 redesign after its exploit.",
-  alternates: { canonical: "/defi-lending/reviews/sturdy" }};
+  alternates: { canonical: "/defi-lending/reviews/sturdy" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Sturdy', },
+  ],
+};
 
 export default function SturdyReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Sturdy Finance", slug: "sturdy", rating: 3.6, description: "Sturdy Finance is a DeFi lending protocol that pivoted to isolated lending pairs and yield vault strategies after a V1 exploit, offering an aggregation layer that connects lenders with the highest-yield borrowing demand.", pros: ["Isolated lending pairs provide granular risk management", "Yield aggregation optimizes lender returns across vaults", "V2 redesign incorporates lessons from V1 exploit", "Supports diverse collateral types including LP tokens", "Innovative approach to matching lending supply with yield demand"], cons: ["V1 exploit history may deter risk-averse users", "Lower TVL compared to major lending protocols", "Complex vault system has steeper learning curve", "Some vaults have limited liquidity", "Governance token has limited trading volume"], bestFor: "DeFi users seeking isolated lending pairs with exotic collateral support", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Sturdy Finance has undergone a significant transformation after suffering an exploit in its V1 iteration. The protocol's V2 redesign introduces isolated lending pairs and yield vault aggregation, a fundamentally different architecture from its original design. Sturdy V2 creates individual lending markets where lenders supply assets and borrowers put up specific collateral types, with each pair isolated from others. The aggregation layer connects lenders to the best-yielding vaults automatically, optimizing returns while maintaining risk isolation. This approach allows Sturdy to support exotic collateral types like LP tokens and yield-bearing assets that would be too risky for shared-pool protocols. The protocol operates primarily on Ethereum mainnet and represents an innovative approach to DeFi lending architecture."
@@ -32,5 +46,7 @@ export default function SturdyReview() {
       relatedReviews={[{ name: "Exactly", slug: "exactly" }, { name: "Sonne", slug: "sonne" }, { name: "Granary", slug: "granary" }]}
       relatedGuides={[{ title: "DeFi on Ethereum", href: "/defi-lending/learn/defi-on-ethereum" }, { title: "Yield Optimizer Guide", href: "/defi-lending/learn/yield-optimizer-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

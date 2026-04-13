@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Mendi Finance Review ${CURRENT_YEAR}: Linea Lending Protocol`,
   description: "Detailed Mendi Finance review covering Compound-style lending on Linea, yield rates, MENDI token rewards, and the protocol's role in the Linea ecosystem.",
-  alternates: { canonical: "/defi-lending/reviews/mendi" }};
+  alternates: { canonical: "/defi-lending/reviews/mendi" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Mendi', },
+  ],
+};
 
 export default function MendiReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Mendi Finance", slug: "mendi", rating: 3.7, description: "Mendi Finance is the leading Compound-style lending protocol on Linea (ConsenSys L2), offering lending and borrowing markets with MENDI token incentives for the growing Linea ecosystem.", pros: ["Leading lending protocol on Linea network", "Built on proven Compound V2 architecture", "MENDI token rewards boost effective yields", "Low gas costs on Linea L2", "Ecosystem support from ConsenSys/Linea foundation"], cons: ["Linea ecosystem is still developing and maturing", "Compound V2 lacks modern features like eMode", "TVL is modest compared to multi-chain protocols", "MENDI token liquidity is limited", "Competing against potential Aave deployment on Linea"], bestFor: "DeFi users seeking lending opportunities on Linea with early-mover incentives", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Mendi Finance has established itself as the primary lending protocol on Linea, ConsenSys's zkEVM Layer 2 network. Using Compound V2 architecture, Mendi offers familiar lending and borrowing mechanics for Linea-native and bridged assets. The protocol benefits from Linea's ecosystem development programs and ConsenSys's broader support for DeFi infrastructure. MENDI token rewards incentivize early adoption and provide additional yield on top of base lending rates. As Linea continues to grow its DeFi ecosystem, Mendi's first-mover advantage positions it as a key infrastructure provider, though it faces the risk of larger protocols eventually deploying on the network."
@@ -32,5 +46,7 @@ export default function MendiReview() {
       relatedReviews={[{ name: "Lendle", slug: "lendle" }, { name: "ZeroLend", slug: "zerolend" }, { name: "LayerBank", slug: "layerbank" }]}
       relatedGuides={[{ title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }, { title: "Real Yield vs Emissions", href: "/defi-lending/learn/real-yield-vs-emissions" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

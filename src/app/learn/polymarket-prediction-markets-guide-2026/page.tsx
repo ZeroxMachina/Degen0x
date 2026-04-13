@@ -33,7 +33,8 @@ export const metadata: Metadata = {
       'Polymarket'
     ]
   },
-  alternates: { canonical: "/learn/polymarket-prediction-markets-guide-2026" }};
+  alternates: { canonical: "/learn/polymarket-prediction-markets-guide-2026" },
+  twitter: { card: "summary_large_image" }};
 
 const structuredDataSchema = {
   '@context': 'https://schema.org',
@@ -149,6 +150,16 @@ const structuredDataSchema = {
   }
 }
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Polymarket Prediction Markets Guide 2026', },
+  ],
+};
+
 export default function PolymarketGuidePage() {
   const tableOfContents = [
     { id: 'what-is-polymarket', title: 'What Is Polymarket?' },
@@ -259,6 +270,7 @@ export default function PolymarketGuidePage() {
 
   return (
     <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={structuredDataSchema} />
 
       {/* Navigation */}

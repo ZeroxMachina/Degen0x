@@ -39,6 +39,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/railgun-privacy-defi-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Railgun Privacy Defi Guide 2026', },
+  ],
+};
+
 export default function RailgunPrivacyGuidePage() {
   const articleSchema = generateArticleSchema({
     title: "Railgun & Privacy DeFi Guide 2026: Private Transactions Without Leaving DeFi",
@@ -89,6 +99,7 @@ export default function RailgunPrivacyGuidePage() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchemas} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8" aria-label="Breadcrumb">

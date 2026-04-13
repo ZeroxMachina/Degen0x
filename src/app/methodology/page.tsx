@@ -54,6 +54,15 @@ const darkTheme = {
   }
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Methodology', },
+  ],
+};
+
 export default function MethodologyPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
@@ -94,6 +103,7 @@ export default function MethodologyPage() {
 
   return (
     <div style={{ backgroundColor: darkTheme.bg, color: darkTheme.text, minHeight: '100vh' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

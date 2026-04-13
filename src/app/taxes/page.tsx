@@ -11,7 +11,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Tax Software & Guides (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Navigate crypto taxes with confidence. Compare the best crypto tax software, read expert reviews, use free calculators, and learn how cryptocurrency is taxed in ${CURRENT_YEAR}.`,
-  alternates: { canonical: "/taxes" }};
+  alternates: { canonical: "/taxes" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const subcategories = [
   { name: "Best Tax Software", href: "/taxes/best/software", description: "Top-rated crypto tax software compared" },
@@ -42,9 +44,19 @@ const calculators = [
   { name: "Capital Gains Calculator", href: "/taxes/calculators/capital-gains-calculator", description: "Calculate short and long-term capital gains" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', },
+  ],
+};
+
 export default function TaxesHubPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Cash App Crypto Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Cash App Bitcoin review covering fees, Lightning Network support, security, and whether Cash App is the right way to buy Bitcoin.",
-  alternates: { canonical: "/exchanges/reviews/cash-app" }};
+  alternates: { canonical: "/exchanges/reviews/cash-app" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Cash App', },
+  ],
+};
 
 export default function CashAppReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Cash App",
         slug: "cash-app",
@@ -67,5 +81,7 @@ Block Inc. is a publicly traded company on the NYSE, and Cash App operates as a 
         { title: "Exchange vs Wallet", href: "/exchanges/learn/exchange-vs-wallet" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

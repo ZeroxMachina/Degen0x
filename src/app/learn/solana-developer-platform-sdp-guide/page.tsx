@@ -93,6 +93,16 @@ const faqSchema = generateFAQSchema([
 
 const schemas = combineSchemas(articleSchema, faqSchema);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Solana Developer Platform Sdp Guide', },
+  ],
+};
+
 export default function SolanaDeveloperPlatformGuide() {
   const breadcrumbItems = [
     { label: "Home", href: "/" },
@@ -114,6 +124,7 @@ export default function SolanaDeveloperPlatformGuide() {
 
   return (
     <main className="bg-[#0d1117] text-[#c9d1d9] min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={schemas} />
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

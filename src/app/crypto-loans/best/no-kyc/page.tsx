@@ -9,7 +9,9 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = { title: `Best No-KYC Crypto Loans ${CURRENT_YEAR} - Borrow Without ID`, description: `Find the best no-KYC crypto loan platforms in ${CURRENT_YEAR}. Borrow against your crypto without identity verification through DeFi protocols.` ,
-  alternates: { canonical: "/crypto-loans/best/no-kyc" }};
+  alternates: { canonical: "/crypto-loans/best/no-kyc" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   { name: "Aave", slug: "aave-loans", rating: 4.8, description: "Aave is fully permissionless with no KYC, no account creation, and no identity verification of any kind. Simply connect your wallet, deposit collateral, and", pros: ["Completely permissionless", "No account needed", "10+ chain availability", "Deepest DeFi liquidity"], cons: ["Requires DeFi knowledge", "Variable interest rates", "Self-custody responsibility"], fees: "Variable borrow rates", bestFor: "Privacy-conscious DeFi borrowers", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans", featured: true },
@@ -23,9 +25,21 @@ const faqs: FAQ[] = [
   { question: "Can I borrow fiat without KYC?", answer: "DeFi protocols only lend crypto assets (including stablecoins like USDC and DAI). To convert to fiat, you would need to use an exchange or service that may require KYC. However, stablecoins can be used directly for many of the same purposes as fiat." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/crypto-loans/best' },
+    { '@type': 'ListItem', position: 4, name: 'No Kyc', },
+  ],
+};
+
 export default function NoKycPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

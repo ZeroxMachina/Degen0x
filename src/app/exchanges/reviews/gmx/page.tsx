@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `GMX Review (${CURRENT_YEAR}) - Decentralized Perps on Arbitrum | ${SITE_NAME}`,
   description: `Complete GMX review for ${CURRENT_YEAR}. Covers decentralized perpetual trading, GLP liquidity model, fees, real yield, and risk considerations.`,
-  alternates: { canonical: "/exchanges/reviews/gmx" }};
+  alternates: { canonical: "/exchanges/reviews/gmx" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "GMX is a decentralized exchange (DEX) for perpetual futures and spot swaps, deployed on Arbitrum and Avalanche. Launched in 2021, GMX pioneered a unique liquidity model where liquidity providers deposit assets into a multi-asset pool (GLP in V1, GM pools in V2) that serves as the counterparty for all trades. This model eliminates the need for traditional order books and enables zero price-impact trades on supported assets.\n\nGMX has become one of the most popular DeFi protocols for derivatives trading, consistently ranking among the top decentralized perpetual exchanges by volume and total value locked (TVL). The protocol generates real yield for liquidity providers from trading fees and trader losses, which has made it a favorite among yield-seeking DeFi participants. GMX V2 introduced isolated liquidity pools (GM pools) that improve capital efficiency and risk management.\n\nThe protocol supports leveraged trading up to 100x on major assets including BTC, ETH, and select altcoins. GMX's fully decentralized nature means users maintain self-custody of their funds, there is no KYC requirement, and the protocol operates transparently on-chain. The GMX governance token allows holders to participate in protocol decisions and earn a share of platform fees.";
@@ -131,9 +133,21 @@ const relatedGuides = [
   { title: "CEX vs DEX", href: "/exchanges/learn/cex-vs-dex" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Gmx', },
+  ],
+};
+
 export default function GMXReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -146,5 +160,7 @@ export default function GMXReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

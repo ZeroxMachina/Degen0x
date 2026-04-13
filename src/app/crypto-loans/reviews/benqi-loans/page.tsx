@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `BENQI Loans Review (${CURRENT_YEAR}): Avalanche DeFi Lending | ${SITE_NAME}`,
   description: "In-depth BENQI review covering Avalanche lending, sAVAX liquid staking, borrowing rates, and how BENQI compares to other DeFi lending protocols.",
-  alternates: { canonical: "/crypto-loans/reviews/benqi-loans" }};
+  alternates: { canonical: "/crypto-loans/reviews/benqi-loans" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Benqi Loans', },
+  ],
+};
 
 export default function BenqiLoansReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Loans"
       categorySlug="crypto-loans"
@@ -44,5 +58,7 @@ export default function BenqiLoansReview() {
       relatedReviews={[{ name: "Aave Loans", slug: "aave-loans" }, { name: "Venus Loans", slug: "venus-loans" }]}
       relatedGuides={[{ title: "How to Borrow Against Crypto", href: "/crypto-loans/learn/how-to-borrow-against-crypto" }, { title: "Interest Rates Comparison", href: "/crypto-loans/learn/interest-rates-comparison" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

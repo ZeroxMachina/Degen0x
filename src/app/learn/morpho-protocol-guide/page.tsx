@@ -103,9 +103,20 @@ const faqSchema = generateFAQSchema([
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
 // ─── Page Component ───────────────────────────────────────────────────────────
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Morpho Protocol Guide', },
+  ],
+};
+
 export default function MorphoProtocolGuidePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
 
       <div style={{ maxWidth: 800, margin: "0 auto", padding: "24px 24px 0" }}>

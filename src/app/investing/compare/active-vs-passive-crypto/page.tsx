@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Active vs Passive Crypto Investing (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Active vs passive crypto investing comparison for ${CURRENT_YEAR}. Trading vs HODL, time commitment, returns, stress levels, and which strategy wins long-term.` ,
-  alternates: { canonical: "/investing/compare/active-vs-passive-crypto" }};
+  alternates: { canonical: "/investing/compare/active-vs-passive-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Active Crypto Investing", slug: "active", rating: 4.0, affiliateUrl: "#", features: { "Strategy": "Frequent trading based on analysis", "Time Commitment": "High (daily monitoring required)", "Typical Methods": "Technical analysis, swing trading, momentum", "Rebalancing": "Frequent (weekly to daily)", "Tax Complexity": "High (many taxable events)", "Emotional Stress": "High", "Outperformance Rate": "Low (most underperform passive)", "Best Market For": "Ranging or volatile markets", "Tools Required": "Charts, alerts, portfolio trackers, news feeds", "Skill Required": "High (years of experience helps)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "When does active management make sense?", answer: "Active management can add value in specific situations: rotating between crypto sectors during narrative shifts, taking profits near cycle tops, managing tax-loss harvesting, or rebalancing between overweight and underweight positions. A hybrid approach works well — maintain a passive core portfolio (70-80%) while actively managing a smaller allocation (20-30%) for tactical opportunities. This captures most passive benefits while allowing active upside." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Active Vs Passive Crypto', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

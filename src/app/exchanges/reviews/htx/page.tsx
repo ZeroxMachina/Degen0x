@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `HTX Review (${CURRENT_YEAR}) | degen0x`,
   description:
     "Comprehensive HTX (formerly Huobi) exchange review. Fees, security, features, and trading experience analyzed in detail.",
-  alternates: { canonical: "/exchanges/reviews/htx" }};
+  alternates: { canonical: "/exchanges/reviews/htx" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Htx', },
+  ],
+};
 
 export default function HTXReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "HTX",
         slug: "htx",
@@ -76,5 +90,7 @@ export default function HTXReviewPage() {
         { title: "Exchange Insurance Funds", href: "/exchanges/learn/exchange-insurance-funds" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

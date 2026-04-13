@@ -79,6 +79,16 @@ const faqSchema = generateFAQSchema([
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Erc 7683 Cross Chain Intents Guide', },
+  ],
+};
+
 export default function ERC7683GuidePage() {
   const breadcrumbItems = [
     { label: 'Home', href: '/' },
@@ -102,6 +112,7 @@ export default function ERC7683GuidePage() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style>{`
         .erc-toc-link:hover { text-decoration: underline; }
         .erc-toc-link:focus { outline: 2px solid #6366f1; outline-offset: 2px; }

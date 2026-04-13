@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Kraken vs Binance (${CURRENT_YEAR}): Global Exchange Comparison | ${SITE_NAME}`,
   description: `Kraken vs Binance comparison for ${CURRENT_YEAR}. Compare fees, regulation, staking, futures trading, and global availability.`,
-  alternates: { canonical: "/exchanges/compare/kraken-vs-binance" }};
+  alternates: { canonical: "/exchanges/compare/kraken-vs-binance" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Kraken", slug: "kraken", rating: 4.7, affiliateUrl: "https://degen0x.com/go/kraken", features: { "Trading Fees": "0.16% maker / 0.26% taker", "Coins Listed": "200+", "Futures": "Yes (up to 50x)", "Staking": "Yes (20+ assets)", "Regulation": "US FinCEN, multi-country", "Proof of Reserves": "Yes (cryptographic audit)", "US Available": "Yes", "Fiat Support": "7+ currencies" } },
@@ -21,9 +23,21 @@ const items: ComparisonItem[] = [
 
 const features = ["Trading Fees", "Coins Listed", "Futures", "Staking", "Regulation", "Proof of Reserves", "US Available", "Fiat Support"];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/exchanges/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Kraken Vs Binance', },
+  ],
+};
+
 export default function KrakenVsBinancePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

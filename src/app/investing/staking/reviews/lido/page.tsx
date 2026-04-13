@@ -10,11 +10,26 @@ export const metadata: Metadata = {
   title: "Lido Review 2026: Fees, Yields, Pros & Cons",
   description:
     "Our in-depth Lido review covers staking yields, fees, stETH mechanics, DeFi integrations, and whether it's the right liquid staking protocol for you. Updated March 2026.",
-  alternates: { canonical: "/investing/staking/reviews/lido" }};
+  alternates: { canonical: "/investing/staking/reviews/lido" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Reviews', item: 'https://degen0x.com/investing/staking/reviews' },
+    { '@type': 'ListItem', position: 5, name: 'Lido', },
+  ],
+};
 
 export default function LidoReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Staking"
       categorySlug="investing/staking"
@@ -113,5 +128,7 @@ Lido's stETH uses a rebasing mechanism, meaning your stETH balance increases aut
         { title: "Liquid Staking Explained", href: "/investing/staking/learn/liquid-staking-explained" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

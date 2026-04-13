@@ -12,7 +12,20 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `OpenSea vs Rarible: Which NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of OpenSea vs Rarible. Compare fees, creator tools, governance, chain support, and features to find the best NFT marketplace for you.",
-  alternates: { canonical: "/nfts/compare/opensea-vs-rarible" }};
+  alternates: { canonical: "/nfts/compare/opensea-vs-rarible" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/nfts/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Opensea Vs Rarible', },
+  ],
+};
 
 export default function OpenSeaVsRariblePage() {
   const opensea = nftDetailedComparisons["opensea"];
@@ -20,6 +33,7 @@ export default function OpenSeaVsRariblePage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "OpenSea vs Rarible", href: "#" } ]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">OpenSea vs Rarible: Which NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>

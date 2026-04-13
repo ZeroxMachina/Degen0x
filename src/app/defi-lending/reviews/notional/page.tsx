@@ -8,11 +8,25 @@ export const metadata: Metadata = {
   title: `Notional Finance Review (${CURRENT_YEAR}): Fixed-Rate DeFi Lending | degen0x`,
   description:
     "In-depth Notional Finance review covering fixed-rate lending, fCash tokens, leveraged vaults, and the protocol's unique approach to predictable DeFi yields.",
-  alternates: { canonical: "/defi-lending/reviews/notional" }};
+  alternates: { canonical: "/defi-lending/reviews/notional" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Notional', },
+  ],
+};
 
 export default function NotionalReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Notional Finance",
         slug: "notional",
@@ -111,5 +125,7 @@ export default function NotionalReview() {
         { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

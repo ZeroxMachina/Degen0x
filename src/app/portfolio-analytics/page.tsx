@@ -8,11 +8,23 @@ export const metadata: Metadata = {
   title: "Portfolio Analytics — P&L, Tax Estimates & Risk Metrics",
   description: 'Deep-dive into your crypto portfolio with advanced analytics, P&L tracking, tax estimation, risk metrics, and diversification scoring.',
   keywords: ['crypto portfolio analytics', 'P&L tracker', 'crypto tax estimation', 'risk metrics', 'Sharpe ratio crypto'],
-  alternates: { canonical: "/portfolio-analytics" }};
+  alternates: { canonical: "/portfolio-analytics" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Portfolio Analytics', },
+  ],
+};
 
 export default function PortfolioAnalyticsPage() {
   return (
     <main className="min-h-screen bg-gray-950">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Solana vs Ethereum (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Solana vs Ethereum comparison for ${CURRENT_YEAR}. Speed, fees, DeFi ecosystem, developer activity, and investment thesis compared.` ,
-  alternates: { canonical: "/investing/compare/solana-vs-ethereum" }};
+  alternates: { canonical: "/investing/compare/solana-vs-ethereum" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Solana (SOL)", slug: "solana", rating: 4.6, affiliateUrl: "#", features: { "Consensus": "Proof-of-History + PoS", "TPS (Theoretical)": "65,000+", "Block Time": "~400ms", "Avg Transaction Fee": "<$0.01", "TVL": "Growing rapidly", "Smart Contract Language": "Rust / Anchor", "Staking Yield": "5-8%", "Network Uptime": "Improving (past outages)", "Validator Count": "~2,000", "ETF Available": "Not yet" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Should I invest in both?", answer: "Many investors hold both. Ethereum provides established platform exposure with ETF access, while Solana offers higher growth potential as a faster-growing challenger. A common approach is heavier Ethereum allocation (as part of core holdings) with smaller Solana exposure for growth." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Solana Vs Ethereum', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

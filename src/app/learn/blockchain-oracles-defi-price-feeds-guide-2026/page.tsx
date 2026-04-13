@@ -111,6 +111,16 @@ const linkStyle: React.CSSProperties = { color: '#58a6ff', textDecoration: 'none
 const tdStyle: React.CSSProperties = { padding: '12px', borderBottom: '1px solid #30363d' };
 const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse' };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Blockchain Oracles Defi Price Feeds Guide 2026', },
+  ],
+};
+
 export default function BlockchainOraclesGuide() {
   const tableOfContents = [
     { id: 'what-are-oracles', title: 'What Are Blockchain Oracles?' },
@@ -196,6 +206,7 @@ export default function BlockchainOraclesGuide() {
 
   return (
     <article style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

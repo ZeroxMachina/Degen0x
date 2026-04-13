@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Gemini vs Coinbase (${CURRENT_YEAR}): Security-Focused Comparison | ${SITE_NAME}`,
   description: `Gemini vs Coinbase security comparison for ${CURRENT_YEAR}. Compare custody, compliance, insurance, and institutional features for security-conscious investors.`,
-  alternates: { canonical: "/exchanges/compare/gemini-vs-coinbase" }};
+  alternates: { canonical: "/exchanges/compare/gemini-vs-coinbase" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Gemini", slug: "gemini", rating: 4.5, affiliateUrl: "https://degen0x.com/go/gemini", features: { "Regulation": "NYDFS Trust Company", "SOC Certification": "SOC 2 Type 2", "Insurance": "Hot wallet + FDIC on USD", "Custody": "Gemini Custody", "Cold Storage": "Air-gapped, multi-sig", "Security Audits": "Regular third-party", "2FA Options": "Hardware key, authenticator", "Compliance": "Full AML/KYC" } },
@@ -21,9 +23,21 @@ const items: ComparisonItem[] = [
 
 const features = ["Regulation", "SOC Certification", "Insurance", "Custody", "Cold Storage", "Security Audits", "2FA Options", "Compliance"];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/exchanges/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Gemini Vs Coinbase', },
+  ],
+};
+
 export default function GeminiVsCoinbasePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

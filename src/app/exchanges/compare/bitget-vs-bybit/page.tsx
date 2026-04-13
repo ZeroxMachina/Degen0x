@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Bitget vs Bybit (${CURRENT_YEAR}): Copy Trading Exchange Comparison | ${SITE_NAME}`,
   description: `Bitget vs Bybit comparison for ${CURRENT_YEAR}. Compare copy trading features, futures fees, coin listings, and trading tools for active traders.`,
-  alternates: { canonical: "/exchanges/compare/bitget-vs-bybit" }};
+  alternates: { canonical: "/exchanges/compare/bitget-vs-bybit" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Bitget", slug: "bitget", rating: 4.3, affiliateUrl: "https://degen0x.com/go/bitget", features: { "Trading Fees": "0.1% spot / 0.02% futures maker", "Coins Listed": "600+", "Copy Trading": "Yes (largest community)", "Max Leverage": "125x", "Trading Bots": "Yes", "Proof of Reserves": "Yes", "Protection Fund": "$300M+ (BGB fund)", "Launchpad": "Yes (Launchpool)" } },
@@ -21,9 +23,21 @@ const items: ComparisonItem[] = [
 
 const features = ["Trading Fees", "Coins Listed", "Copy Trading", "Max Leverage", "Trading Bots", "Proof of Reserves", "Protection Fund", "Launchpad"];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/exchanges/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Bitget Vs Bybit', },
+  ],
+};
+
 export default function BitgetVsBybitPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

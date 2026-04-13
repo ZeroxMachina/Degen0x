@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Ethereum (ETH) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Ethereum investment guide for ${CURRENT_YEAR}. Learn about ETH fundamentals, staking, DeFi ecosystem, risks, and how to buy Ethereum.`,
   alternates: { canonical: "/investing/crypto/ethereum" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Ethereum a good investment?", answer: "Ethereum is the leading smart contract platform with the largest DeFi and NFT ecosystem. Its deflationary tokenomics post-merge, growing L2 ecosystem, and institutional adoption through spot ETFs make it a strong long-term investment candidate. However, it faces competition from faster chains and regulatory uncertainty." },
@@ -21,9 +22,21 @@ const faqs = [
   { question: "What is the difference between Ethereum and Bitcoin?", answer: "Bitcoin is primarily a store of value and payment network, while Ethereum is a programmable blockchain enabling smart contracts, DeFi, NFTs, and decentralized applications. Ethereum has moved to proof-of-stake while Bitcoin uses proof-of-work. Both serve different roles in a diversified crypto portfolio." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Ethereum', },
+  ],
+};
+
 export default function EthereumPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `How to Set Up a Crypto Wallet - Step by Step Guide (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Step-by-step guide to setting up your first crypto wallet in ${CURRENT_YEAR}. Covers MetaMask, Phantom, Ledger, Trezor, and more. Includes security tips for beginners.`,
-  alternates: { canonical: "/wallets/learn/how-to-set-up-wallet" }};
+  alternates: { canonical: "/wallets/learn/how-to-set-up-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "before-you-start", title: "Before You Start", level: 2 },
@@ -29,6 +31,17 @@ const relatedArticles = [
   { title: "How to Transfer Crypto", href: "/wallets/learn/how-to-transfer-crypto", category: "Wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Learn', item: 'https://degen0x.com/wallets/learn' },
+    { '@type': 'ListItem', position: 4, name: 'How To Set Up Wallet', },
+  ],
+};
+
 export default function HowToSetUpWalletPage() {
   return (
     <LearnPage
@@ -41,6 +54,7 @@ export default function HowToSetUpWalletPage() {
       faqs={faqs}
       relatedArticles={relatedArticles}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <h2 id="before-you-start">Before You Start</h2>
       <p>
         Before creating a wallet, decide which type you need. If you want to interact with DeFi or dApps, start

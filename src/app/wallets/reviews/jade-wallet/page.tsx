@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Blockstream Jade Wallet Review (${CURRENT_YEAR}) - Best Budget Hardware Wallet? | ${SITE_NAME}`,
   description: `Detailed Blockstream Jade review for ${CURRENT_YEAR}. Covers air-gapped signing, virtual secure element, Bitcoin-focused features, and Liquid Network support.`,
-  alternates: { canonical: "/wallets/reviews/jade-wallet" }};
+  alternates: { canonical: "/wallets/reviews/jade-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const product = {
   name: "Blockstream Jade",
@@ -114,9 +116,21 @@ const relatedGuides = [
   { title: "Hardware Wallet Firmware Updates", href: "/wallets/learn/hardware-wallet-firmware-updates" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Jade Wallet', },
+  ],
+};
+
 export default function JadeWalletReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -129,5 +143,7 @@ export default function JadeWalletReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

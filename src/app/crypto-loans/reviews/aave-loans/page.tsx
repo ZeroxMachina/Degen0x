@@ -7,11 +7,25 @@ import ReviewPage from "@/components/ReviewPage";
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "aave-loans")!;
 
 export const metadata: Metadata = { title: "Aave Loans Review 2026: DeFi Borrowing Guide", description: "In-depth review of borrowing on Aave. Covers rates, collateral options, liquidation mechanics, multi-chain availability, and borrowing tips. Updated March 2026." ,
-  alternates: { canonical: "/crypto-loans/reviews/aave-loans" }};
+  alternates: { canonical: "/crypto-loans/reviews/aave-loans" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Aave Loans', },
+  ],
+};
 
 export default function AaveLoansReview() {
   return (
-    <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
+    <>
+      <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="Aave is the leading platform for decentralized crypto borrowing, enabling permissionless loans across 10+ blockchain networks. Unlike CeFi lenders, Aave requires no KYC, no credit checks, and no applications. You simply deposit collateral and borrow against it instantly. The protocol supports over 100 assets for collateral and borrowing, with variable and stable rate options, flash loans, and advanced features like efficiency mode for correlated assets. With over $15 billion in TVL, Aave offers the deepest liquidity and most reliable borrowing experience in DeFi."
       sections={[
         { id: "borrowing-mechanics", title: "How Borrowing Works", content: "To borrow on Aave, you first deposit supported crypto assets as collateral. Your borrowing capacity is determined by the loan-to-value (LTV) ratio of your deposited assets. For example, with 80% LTV on ETH, depositing $10,000 of ETH allows you to borrow up to $8,000. You can borrow any supported asset against your collateral. Interest accrues continuously and can be repaid at any time. There are no fixed repayment schedules or monthly payments." },
@@ -31,5 +45,7 @@ export default function AaveLoansReview() {
       relatedReviews={[{ name: "Compound", slug: "compound-loans" }, { name: "Nexo", slug: "nexo" }]}
       relatedGuides={[{ title: "Liquidation Risk", href: "/crypto-loans/learn/liquidation-risk" }, { title: "LTV Explained", href: "/crypto-loans/learn/ltv-ratio-explained" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

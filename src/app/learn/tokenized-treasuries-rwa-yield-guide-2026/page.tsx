@@ -6,11 +6,24 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Tokenized Treasuries Guide 2026: RWA Yield, BUIDL, USDY &",
   description: "Complete guide to tokenized U.S. Treasuries in 2026. Compare BlackRock BUIDL, Ondo USDY, Circle USYC yields. Learn how to earn 4-5% APY on-chain with",
-  alternates: { canonical: "/learn/tokenized-treasuries-rwa-yield-guide-2026" }};
+  alternates: { canonical: "/learn/tokenized-treasuries-rwa-yield-guide-2026" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Tokenized Treasuries Rwa Yield Guide 2026', },
+  ],
+};
 
 export default function TokenizedTreasuriesGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Header Section */}
       <div className="mb-8">
         <div className="mb-4 flex flex-wrap gap-2">

@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Flexa Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Flexa review covering the AMP-powered payment network, merchant integration, supported wallets, instant crypto payments at retail, and the Flexa",
-  alternates: { canonical: "/spending/reviews/flexa" }};
+  alternates: { canonical: "/spending/reviews/flexa" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Flexa', },
+  ],
+};
 
 export default function FlexaReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Flexa",
         slug: "flexa",
@@ -120,5 +134,7 @@ Flexa partners with multiple wallet providers to bring the payment capability to
         { title: "Merchant Crypto Adoption", href: "/spending/learn/merchant-crypto-adoption" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

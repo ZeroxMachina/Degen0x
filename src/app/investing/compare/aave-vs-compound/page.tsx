@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Aave vs Compound (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Aave vs Compound DeFi lending comparison for ${CURRENT_YEAR}. Interest rates, supported assets, multi-chain presence, governance, and token investment thesis compared.` ,
-  alternates: { canonical: "/investing/compare/aave-vs-compound" }};
+  alternates: { canonical: "/investing/compare/aave-vs-compound" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Aave (AAVE)", slug: "aave", rating: 4.7, affiliateUrl: "#", features: { "Protocol Type": "Decentralized lending & borrowing", "TVL": "Largest lending protocol", "Chains Deployed": "Ethereum, Arbitrum, Polygon, Optimism, Avalanche, Base +", "Supported Assets": "200+ across all deployments", "Flash Loans": "Yes (pioneered the concept)", "Interest Rate Model": "Variable + stable rates", "Safety Module": "AAVE staking for protocol insurance", "GHO Stablecoin": "Yes (native overcollateralized stablecoin)", "Governance": "AAVE token voting", "Revenue": "Protocol fees from interest spread" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Which DeFi token is better to hold?", answer: "AAVE has stronger current fundamentals: larger TVL, more chain deployments, GHO stablecoin revenue, and the Safety Module providing protocol insurance. The AAVE buyback and distribute mechanism from protocol revenue adds direct value accrual. COMP offers a turnaround thesis — if Compound III gains traction and the protocol captures more market share, COMP's lower valuation relative to fundamentals could provide outsized returns. AAVE is the safer DeFi blue-chip; COMP is the value play." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Aave Vs Compound', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

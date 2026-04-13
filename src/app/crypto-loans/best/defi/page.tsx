@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best DeFi Loan Platforms ${CURRENT_YEAR} - Decentralized Borrowing`,
   description: `Compare the best DeFi loan platforms in ${CURRENT_YEAR}. Borrow against crypto without KYC through decentralized lending protocols.`,
-  alternates: { canonical: "/crypto-loans/best/defi" }};
+  alternates: { canonical: "/crypto-loans/best/defi" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   { name: "Aave", slug: "aave-loans", rating: 4.8, description: "Aave is the largest DeFi lending protocol offering permissionless borrowing across 10+ chains. No KYC, no credit checks, no monthly payments. Variable and", pros: ["Fully permissionless, no KYC", "10+ chain deployments", "Variable and stable rates", "Flash loan capabilities"], cons: ["Requires Web3 wallet knowledge", "Gas costs on Ethereum", "Liquidation risk in volatile markets"], fees: "Variable borrow rates", bestFor: "DeFi-native borrowers", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans", featured: true },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Can I get a DeFi loan in the US?", answer: "Yes. DeFi protocols are permissionless and accessible from anywhere with an internet connection. However, the regulatory landscape is evolving. Users should stay informed about any regulatory changes that may affect DeFi usage in their jurisdiction." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/crypto-loans/best' },
+    { '@type': 'ListItem', position: 4, name: 'Defi', },
+  ],
+};
+
 export default function DefiLoansPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

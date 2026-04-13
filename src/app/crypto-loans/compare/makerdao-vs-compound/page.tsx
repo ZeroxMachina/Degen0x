@@ -8,7 +8,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 
 export const metadata: Metadata = { title: `MakerDAO vs Compound ${CURRENT_YEAR}: DeFi Borrowing Compared`, description: `Compare MakerDAO vs Compound for crypto borrowing in ${CURRENT_YEAR}. Analyze DAI minting vs pool-based borrowing, rates, collateral, and more.` ,
-  alternates: { canonical: "/crypto-loans/compare/makerdao-vs-compound" }};
+  alternates: { canonical: "/crypto-loans/compare/makerdao-vs-compound" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "MakerDAO", slug: "makerdao", rating: 4.6, affiliateUrl: "https://degen0x.com/go/makerdao", features: { "Model": "Stablecoin minting", "Borrowable Assets": "DAI only", "Collateral Types": "30+ (including RWAs)", "Rate Type": "Governance-set stability fee", "Liquidation": "Dutch auction system", "Governance": "MKR token", "Unique Feature": "Creates new DAI (no liquidity constraint)" } },
@@ -22,9 +24,21 @@ const faqs: FAQ[] = [
   { question: "Which has lower rates?", answer: "It depends on the current governance decisions for MakerDAO and market conditions for Compound. MakerDAO stability fees can be very competitive when governance sets favorable terms. Compound rates are market-driven and can be lower during low-demand periods." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/crypto-loans/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Makerdao Vs Compound', },
+  ],
+};
+
 export default function MakerdaoVsCompoundPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

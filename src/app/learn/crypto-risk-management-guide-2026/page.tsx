@@ -94,6 +94,16 @@ const faqSchema = generateFAQSchema([
 
 const schemas = combineSchemas([articleSchema, faqSchema]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Risk Management Guide 2026', },
+  ],
+};
+
 export default function CryptoRiskManagementGuide2026() {
   return (
     <div
@@ -104,6 +114,7 @@ export default function CryptoRiskManagementGuide2026() {
         fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
       }}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={schemas} />
       <div style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px" }}>
         <Breadcrumb

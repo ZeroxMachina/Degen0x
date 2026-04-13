@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Liquidity Pools ${CURRENT_YEAR} - Top LP Opportunities in DeFi`,
   description: `Compare the best liquidity pools for earning yield in ${CURRENT_YEAR}. Earn trading fees and token rewards by providing liquidity on top DEXs and DeFi protocols.`,
-  alternates: { canonical: "/defi-lending/best/liquidity-pools" }};
+  alternates: { canonical: "/defi-lending/best/liquidity-pools" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -71,9 +73,21 @@ const faqs: FAQ[] = [
   { question: "How much can you earn from liquidity pools?", answer: "Returns vary widely depending on the pool, trading volume, and incentives. Stablecoin pools typically yield 2-10% APY from trading fees. Volatile pairs can yield 20-100%+ but carry higher impermanent loss risk. Incentivized pools with token rewards can offer even higher returns temporarily." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/defi-lending/best' },
+    { '@type': 'ListItem', position: 4, name: 'Liquidity Pools', },
+  ],
+};
+
 export default function LiquidityPoolsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

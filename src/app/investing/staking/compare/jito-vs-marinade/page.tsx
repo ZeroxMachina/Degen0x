@@ -12,7 +12,21 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Jito vs Marinade: Which Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of Jito vs Marinade for Solana staking. Compare MEV yields, decentralization, liquid staking tokens, and fees to choose the right SOL",
-  alternates: { canonical: "/investing/staking/compare/jito-vs-marinade" }};
+  alternates: { canonical: "/investing/staking/compare/jito-vs-marinade" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Compare', item: 'https://degen0x.com/investing/staking/compare' },
+    { '@type': 'ListItem', position: 5, name: 'Jito Vs Marinade', },
+  ],
+};
 
 export default function JitoVsMariadePage() {
   const jito = stakingDetailedComparisons["jito"];
@@ -20,6 +34,7 @@ export default function JitoVsMariadePage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

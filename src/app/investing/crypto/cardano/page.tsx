@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Cardano (ADA) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Cardano investment guide for ${CURRENT_YEAR}. Learn about ADA fundamentals, peer-reviewed development, staking, risks, and how to buy Cardano.`,
   alternates: { canonical: "/investing/crypto/cardano" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Cardano a good investment?", answer: "Cardano takes a research-first approach with peer-reviewed academic development. While this makes it slower to ship features than competitors, it aims for more robust and secure implementations. ADA staking provides approximately 4-5% APY. The project has a dedicated community, but faces strong competition from faster-moving ecosystems." },
@@ -21,9 +22,21 @@ const faqs = [
   { question: "Can I stake Cardano?", answer: "Yes. Cardano staking is non-custodial and has no lock-up period, meaning you can stake and unstake at any time. Staking rewards are approximately 4-5% APY. You can delegate to stake pools directly from wallets like Yoroi or Daedalus without losing custody of your ADA." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Cardano', },
+  ],
+};
+
 export default function CardanoPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

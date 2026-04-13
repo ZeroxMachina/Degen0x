@@ -42,6 +42,16 @@ export const metadata: Metadata = {
     canonical: 'https://degen0x.com/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026',
   }
 };
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Initia Interwoven Rollups Modular Ecosystem Guide 2026', },
+  ],
+};
+
 export default function InitiaGuidePage() {
   // Define all styles as React.CSSProperties objects
   const pageStyle: React.CSSProperties = {
@@ -392,6 +402,7 @@ export default function InitiaGuidePage() {
 
   return (
     <div style={pageStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={containerStyle}>
         <div style={headerStyle}>
           <nav style={breadcrumbStyle}>

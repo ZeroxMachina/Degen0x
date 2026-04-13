@@ -12,13 +12,26 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Multi-Chain Wallets of ${CURRENT_YEAR} - Cross-Chain Wallet Reviews | ${SITE_NAME}`,
   description: `Compare the best multi-chain crypto wallets of ${CURRENT_YEAR}. Trust Wallet, Exodus, Phantom and more. Manage assets across multiple blockchains from one wallet.`,
-  alternates: { canonical: "/wallets/best/multi-chain" }};
+  alternates: { canonical: "/wallets/best/multi-chain" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What is a multi-chain wallet?", answer: "A multi-chain wallet supports multiple blockchain networks from a single application. Instead of using separate wallets for Ethereum, Solana, Bitcoin, and other chains, a multi-chain wallet lets you manage all your assets in one place. This simplifies portfolio management and reduces the number of seed phrases you need to secure." },
   { question: "Which wallet supports the most blockchains?", answer: "Trust Wallet supports over 100 blockchains and millions of tokens, making it the most broadly compatible multi-chain wallet. Ledger hardware wallets support 5,500+ assets across many chains. Exodus supports 300+ assets across major chains with a focus on user experience." },
   { question: "Are multi-chain wallets less secure?", answer: "Multi-chain wallets are not inherently less secure than single-chain wallets. The security depends on the wallet's architecture: how keys are stored, whether it is open-source, and the quality of its codebase. Using a hardware wallet like Ledger with a multi-chain software interface gives you the best of both worlds." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Multi Chain', },
+  ],
+};
 
 export default function BestMultiChainWalletsPage() {
   const comparisonItems = [
@@ -30,6 +43,7 @@ export default function BestMultiChainWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -13,7 +13,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `10 Best Crypto Exchanges of ${CURRENT_YEAR} (Ranked & Reviewed)`,
   description: `Compare the top 10 crypto exchanges of ${CURRENT_YEAR}. We tested fees, security, features, and ease of use. Find the best exchange for beginners, advanced traders, and everyone in between.`,
-  alternates: { canonical: "/exchanges/best" }};
+  alternates: { canonical: "/exchanges/best" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -42,6 +44,16 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Best', },
+  ],
+};
+
 export default function BestExchangesPage() {
   const rankedExchanges = [...exchanges].sort((a, b) => b.rating - a.rating);
   const comparisonItems = rankedExchanges.slice(0, 5).map((e) => exchangeDetailedComparisons[e.slug]);
@@ -56,6 +68,7 @@ export default function BestExchangesPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

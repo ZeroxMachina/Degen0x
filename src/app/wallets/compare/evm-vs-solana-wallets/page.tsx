@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `EVM vs Solana Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `EVM wallet vs Solana wallet comparison for ${CURRENT_YEAR}. Ecosystem size, fees, transaction speed, DeFi access, and NFT differences explained.`,
-  alternates: { canonical: "/wallets/compare/evm-vs-solana-wallets" }};
+  alternates: { canonical: "/wallets/compare/evm-vs-solana-wallets" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "EVM Wallets", slug: "metamask", rating: 4.5, affiliateUrl: "#", features: { "Primary Chains": "ETH + L2s, BSC, Polygon", Speed: "12s (ETH) to instant (L2)", "Gas Fees": "$0.01-$50+", "Token Standard": "ERC-20", "NFT Standard": "ERC-721/1155", "DeFi TVL": "Largest", "dApp Count": "10,000+", "Top Wallet": "MetaMask", "Multi-Chain": "Any EVM chain", "Account Model": "Account-based" } },
@@ -23,9 +25,21 @@ const faqs = [
   { question: "Which has lower fees?", answer: "Solana consistently has sub-cent fees. EVM fees vary — Ethereum mainnet can cost $5-$50+, but L2 networks like Arbitrum and Base offer fees comparable to Solana at $0.01-$0.10. On L2s, the fee difference is minimal." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Evm Vs Solana Wallets', },
+  ],
+};
+
 export default function EvmVsSolanaWalletsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

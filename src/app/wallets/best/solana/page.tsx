@@ -13,13 +13,26 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Solana Wallets of ${CURRENT_YEAR} - SOL Wallet Reviews | ${SITE_NAME}`,
   description: `Compare the best Solana wallets of ${CURRENT_YEAR}. Phantom, Trust Wallet, Coinbase Wallet and more. Expert picks for SOL staking, DeFi, and NFTs.`,
-  alternates: { canonical: "/wallets/best/solana" }};
+  alternates: { canonical: "/wallets/best/solana" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What is the best Solana wallet?", answer: "Phantom is widely considered the best Solana wallet due to its native SOL support, built-in staking, excellent NFT display, and fast performance. It was originally built for Solana and offers the deepest integration with the Solana ecosystem including Jupiter-powered swaps and comprehensive dApp connectivity." },
   { question: "Can I stake SOL in a wallet?", answer: "Yes. Phantom and several other wallets support native SOL staking. You can delegate your SOL to validators directly from the wallet and earn staking rewards. Current SOL staking APY is typically 6-8%. Rewards are earned each epoch (approximately every 2-3 days)." },
   { question: "Do hardware wallets support Solana?", answer: "Yes. The Ledger Nano X and Nano S Plus support Solana natively through the Ledger Live app. You can also connect your Ledger to Phantom for the best combination of hardware security and software convenience. Trezor has limited Solana support through third-party integrations." },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Solana', },
+  ],
+};
 
 export default function BestSolanaWalletsPage() {
   const comparisonItems = [
@@ -31,6 +44,7 @@ export default function BestSolanaWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

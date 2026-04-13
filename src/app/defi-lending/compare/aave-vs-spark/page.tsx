@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Aave vs Spark ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Aave vs Spark in ${CURRENT_YEAR}. Compare yields, features, DAI integration, multi-chain support, and risk management approaches.`,
-  alternates: { canonical: "/defi-lending/compare/aave-vs-spark" }};
+  alternates: { canonical: "/defi-lending/compare/aave-vs-spark" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Aave", slug: "aave", rating: 4.8, affiliateUrl: "https://degen0x.com/go/aave", features: { "TVL": "$15B+", "Chains": "10+", "Supported Assets": "100+", "Rate Options": "Variable + Stable", "Flash Loans": "Yes (0.05%)", "Governance": "AAVE token", "Architecture": "Pool-based V3", "Unique Feature": "eMode, GHO stablecoin" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Can I use both protocols?", answer: "Yes. Many users deposit assets on Aave for broader asset selection and multi-chain access while using Spark specifically for DAI-related strategies and sDAI yield. The two protocols complement each other well in a diversified DeFi strategy." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Aave Vs Spark', },
+  ],
+};
+
 export default function AaveVsSparkPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

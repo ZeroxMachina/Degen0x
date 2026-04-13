@@ -10,7 +10,9 @@ const product = walletProducts.find((p) => p.slug === "metamask")!;
 export const metadata: Metadata = {
   title: `MetaMask Review (${CURRENT_YEAR}) - Best Ethereum Wallet? | ${SITE_NAME}`,
   description: `Detailed MetaMask review for ${CURRENT_YEAR}. We cover MetaMask's features, swap fees, security, multi-chain support, and how it compares to alternatives.`,
-  alternates: { canonical: "/wallets/reviews/metamask" }};
+  alternates: { canonical: "/wallets/reviews/metamask" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "MetaMask is the most widely used self-custody wallet for Ethereum and EVM-compatible blockchains. With over 30 million monthly active users, it serves as the primary gateway to DeFi, NFT marketplaces, and thousands of decentralized applications. Available as a browser extension for Chrome, Firefox, Brave, and Edge, as well as a mobile app for iOS and Android, MetaMask provides a seamless interface for managing your Ethereum assets, interacting with smart contracts, and swapping tokens. It is open-source, well-audited, and backed by ConsenSys, one of the largest companies in the Ethereum ecosystem.";
@@ -124,9 +126,21 @@ const relatedGuides = [
   { title: "Wallet Security Best Practices", href: "/wallets/learn/wallet-security-best-practices" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Metamask', },
+  ],
+};
+
 export default function MetaMaskReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -139,5 +153,7 @@ export default function MetaMaskReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

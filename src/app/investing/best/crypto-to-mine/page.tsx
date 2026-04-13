@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto to Mine (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The most profitable cryptocurrencies to mine in ${CURRENT_YEAR}. Compare Bitcoin, Litecoin, Kaspa, and other mineable coins by profitability and hardware requirements.`,
-  alternates: { canonical: "/investing/best/crypto-to-mine" }};
+  alternates: { canonical: "/investing/best/crypto-to-mine" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.8, description: "The original proof-of-work cryptocurrency and largest by market cap. Requires specialized ASIC hardware but offers the most liquid and established mining", pros: ["Most valuable and liquid mined coin", "Established mining infrastructure", "Predictable halving schedule"], cons: ["High ASIC hardware costs", "Dominated by large mining operations", "High electricity requirements"], bestFor: "Serious miners with capital for ASIC hardware", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "What about mining pools?", answer: "Mining pools combine hashpower from many miners to find blocks more frequently, distributing rewards proportionally. Solo mining is impractical for most miners due to the time between finding blocks. Major pools include Foundry, Antpool, and F2Pool for Bitcoin, with similar options for other coins." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Crypto To Mine', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

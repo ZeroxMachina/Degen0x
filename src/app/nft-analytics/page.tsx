@@ -15,11 +15,22 @@ export const metadata: Metadata = {
     type: 'website',
   },
 
-  alternates: { canonical: "/nft-analytics" }};
+  alternates: { canonical: "/nft-analytics" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nft Analytics', },
+  ],
+};
 
 export default function NFTAnalyticsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Header />
       <main className="min-h-screen bg-[#0d1117]">
 

@@ -11,8 +11,23 @@ export const metadata: Metadata = {
     description: 'Real-time crypto portfolio tracker with WebSocket live prices.',
   },
 
-  alternates: { canonical: "/portfolio-live" }};
+  alternates: { canonical: "/portfolio-live" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Portfolio Live', },
+  ],
+};
 
 export default function PortfolioLivePage() {
-  return <PortfolioLiveDashboard />;
+  return (
+    <>
+      <PortfolioLiveDashboard />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

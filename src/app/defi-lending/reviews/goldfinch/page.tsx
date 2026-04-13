@@ -21,11 +21,25 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Goldfinch Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Goldfinch review covering real-world lending, emerging market credit, trust through consensus model, yield opportunities, and credit risk considerations.",
-  alternates: { canonical: "/defi-lending/reviews/goldfinch" }};
+  alternates: { canonical: "/defi-lending/reviews/goldfinch" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Goldfinch', },
+  ],
+};
 
 export default function GoldfinchReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="DeFi Lending"
       categorySlug="defi-lending"
@@ -48,5 +62,7 @@ export default function GoldfinchReview() {
       relatedReviews={[{ name: "Maple Finance", slug: "/defi-lending/reviews/maple" }, { name: "Aave", slug: "/defi-lending/reviews/aave" }]}
       relatedGuides={[{ title: "Real Yield Explained", href: "/defi-lending/learn/real-yield-explained" }, { title: "Lending Risks Guide", href: "/defi-lending/learn/lending-risks-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

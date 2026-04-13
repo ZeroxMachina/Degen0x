@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Lido vs EigenLayer ${CURRENT_YEAR}: Staking vs Restaking Compared`,
   description: `Detailed comparison of Lido vs EigenLayer in ${CURRENT_YEAR}. Compare liquid staking, restaking, yields, risk profiles, and how each protocol fits your staking strategy.`,
-  alternates: { canonical: "/defi-lending/compare/lido-vs-eigenlayer" }};
+  alternates: { canonical: "/defi-lending/compare/lido-vs-eigenlayer" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Lido", slug: "lido", rating: 4.8, affiliateUrl: "https://degen0x.com/go/lido", features: { "TVL": "$25B+", "Type": "Liquid staking", "Primary Asset": "stETH", "Base Yield": "~3-4% APR", "Additional Yield": "DeFi composability", "Risk Level": "Low-moderate", "Governance Token": "LDO", "Unique Feature": "Largest liquid staking protocol" } },
@@ -27,9 +29,21 @@ const faqs: FAQ[] = [
   { question: "What yields can I expect from EigenLayer?", answer: "EigenLayer yields depend on which AVS services your restaked ETH secures and the demand for those services. Early restaking rewards came primarily from EIGEN token distributions and points programs. As more AVSs launch and generate real revenue, restaking yields should become more predictable. Current additional yields above base staking vary widely and are still maturing." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Lido Vs Eigenlayer', },
+  ],
+};
+
 export default function LidoVsEigenlayerPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

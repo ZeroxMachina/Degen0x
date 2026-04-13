@@ -74,9 +74,20 @@ const faqSchema = generateFAQSchema([
 
 const schema = combineSchemas(articleSchema, faqSchema);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Dyor Token Research Guide 2026', },
+  ],
+};
+
 export default function DYORTokenResearchGuidePage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={schema} />
       <article className="min-h-screen" style={{ backgroundColor: '#0d1117', color: '#e6edf3' }}>
 

@@ -12,6 +12,17 @@ export const metadata: Metadata = {
   title: `Crypto Lending Rates Comparison | DeFi & CeFi Yields | ${SITE_NAME}`,
   description: `Compare real-time lending rates across 20+ DeFi and CeFi platforms including Aave, Compound, MakerDAO, Morpho, Spark, JustLend, Venus, and more. Find the best APY for USDC, USDT, ETH, WBTC, and 10+ crypto assets. Interactive comparison table, lending calculator, and risk analysis.`,
   alternates: { canonical: `${SITE_URL}/tools/lending-rates` },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Lending Rates', },
+  ],
 };
 
 export default function LendingRatesPage() {
@@ -35,6 +46,7 @@ export default function LendingRatesPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

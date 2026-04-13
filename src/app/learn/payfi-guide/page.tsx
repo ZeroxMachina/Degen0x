@@ -42,6 +42,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/payfi-guide" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Payfi Guide', },
+  ],
+};
+
 export default function PayFiGuidePage() {
   const articleSchema = generateArticleSchema({
     title: "PayFi Guide 2026: What Is Payment Finance and How Does It Work?",
@@ -92,6 +102,7 @@ export default function PayFiGuidePage() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchemas} />
 
       {/* Breadcrumb */}

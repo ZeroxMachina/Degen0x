@@ -8,11 +8,24 @@ export const metadata: Metadata = {
   title: `NOWPayments Review (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `NOWPayments review for ${CURRENT_YEAR}. Crypto payment gateway with 200+ coins, merchant tools, subscription billing, and API integration options.`,
   alternates: { canonical: "/spending/reviews/nowpayments" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Nowpayments', },
+  ],
 };
 
 export default function NOWPaymentsReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "NOWPayments",
         slug: "nowpayments",
@@ -80,5 +93,7 @@ export default function NOWPaymentsReviewPage() {
         { title: "Layer 2 Payments", href: "/spending/learn/layer-2-payments" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

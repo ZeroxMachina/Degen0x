@@ -9,7 +9,9 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = { title: `Best Crypto Margin Lending Platforms ${CURRENT_YEAR}`, description: `Compare the best crypto margin lending platforms in ${CURRENT_YEAR}. Leverage your positions with borrowed funds for amplified trading returns.` ,
-  alternates: { canonical: "/crypto-loans/best/margin-lending" }};
+  alternates: { canonical: "/crypto-loans/best/margin-lending" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   { name: "Aave", slug: "aave-loans", rating: 4.7, description: "Aave enables leveraged DeFi positions through recursive borrowing loops. Deposit collateral, borrow, redeposit, and repeat to create leveraged exposure. eMode", pros: ["High LTV with eMode", "Multi-chain options", "No account or KYC", "Flash loans for efficient leverage"], cons: ["Manual loop creation", "Liquidation risk amplified", "Gas costs for each loop"], fees: "Variable borrow rates", bestFor: "DeFi leverage strategies", affiliateUrl: "https://degen0x.com/go/aave", category: "crypto-loans", featured: true },
@@ -22,9 +24,21 @@ const faqs: FAQ[] = [
   { question: "What is the biggest risk of margin lending?", answer: "Liquidation. When the market moves against your leveraged position, losses are amplified. If your position value drops below the maintenance margin, it is forcibly closed at a loss. Higher leverage means a smaller adverse price move can trigger liquidation." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/crypto-loans/best' },
+    { '@type': 'ListItem', position: 4, name: 'Margin Lending', },
+  ],
+};
+
 export default function MarginLendingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

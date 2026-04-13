@@ -31,7 +31,9 @@ const product = {
 export const metadata: Metadata = {
   title: `Jupiter Exchange Review (${CURRENT_YEAR}) - Solana's Top DEX Aggregator | ${SITE_NAME}`,
   description: `Complete Jupiter review for ${CURRENT_YEAR}. Covers DEX aggregation, perpetual futures, limit orders, DCA, JUP token, and the Solana trading experience.`,
-  alternates: { canonical: "/exchanges/reviews/jupiter-exchange" }};
+  alternates: { canonical: "/exchanges/reviews/jupiter-exchange" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Jupiter is the dominant DEX aggregator on the Solana blockchain, processing the majority of all Solana swap volume by routing trades across every available liquidity source on the network. Launched in 2021, Jupiter evolved from a simple swap aggregator into a comprehensive trading platform offering limit orders, dollar-cost averaging (DCA), perpetual futures, and a token launch platform (LFG Launchpad).\n\nJupiter's core value is finding the best swap price by splitting and routing trades across Raydium, Orca, Meteora, and dozens of other Solana DEXs simultaneously. The aggregator's routing engine analyzes all possible paths and splits trades across multiple pools to minimize price impact and maximize output. For Solana users, Jupiter has become the default frontend for all token swaps.\n\nThe JUP governance token was distributed through one of the largest airdrops in crypto history and powers the protocol's decentralized governance. Jupiter's team, led by pseudonymous founder Meow, has been recognized for consistent execution and rapid feature development. The protocol is open-source and has established itself as essential Solana infrastructure.";
@@ -133,9 +135,21 @@ const relatedGuides = [
   { title: "CEX vs DEX", href: "/exchanges/learn/cex-vs-dex" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Jupiter Exchange', },
+  ],
+};
+
 export default function JupiterExchangeReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -148,5 +162,7 @@ export default function JupiterExchangeReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

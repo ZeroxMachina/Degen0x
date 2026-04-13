@@ -10,7 +10,9 @@ const product = walletProducts.find((p) => p.slug === "trezor")!;
 export const metadata: Metadata = {
   title: `Trezor Review (${CURRENT_YEAR}) - Open-Source Hardware Wallet | ${SITE_NAME}`,
   description: `Complete Trezor review for ${CURRENT_YEAR}. Covers the Model T and Safe 3, including open-source security, Shamir Backup, Trezor Suite, and pricing.`,
-  alternates: { canonical: "/wallets/reviews/trezor" }};
+  alternates: { canonical: "/wallets/reviews/trezor" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Trezor is the original hardware wallet brand, founded in 2014 by SatoshiLabs. It pioneered the concept of offline private key storage and remains the gold standard for open-source crypto security. The Trezor Model T features a full-color touchscreen and supports 1,800+ cryptocurrencies, while the newer Trezor Safe 3 adds a Secure Element chip at a budget-friendly price point. Both models are fully open-source, meaning anyone can audit the firmware and hardware designs for backdoors or vulnerabilities. Trezor Suite, the companion desktop and web app, provides portfolio management, built-in exchange, and a clean interface for managing your assets.";
@@ -125,9 +127,21 @@ const relatedGuides = [
   { title: "Wallet Backup Guide", href: "/wallets/learn/wallet-backup-guide" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Trezor', },
+  ],
+};
+
 export default function TrezorReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -140,5 +154,7 @@ export default function TrezorReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

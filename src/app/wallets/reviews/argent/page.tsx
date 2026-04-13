@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Argent Wallet Review (${CURRENT_YEAR}) - Best Smart Contract Wallet? | ${SITE_NAME}`,
   description: `Detailed Argent wallet review for ${CURRENT_YEAR}. Covers smart contract security, social recovery, Starknet Layer 2, and seedless onboarding.`,
-  alternates: { canonical: "/wallets/reviews/argent" }};
+  alternates: { canonical: "/wallets/reviews/argent" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const product = {
   name: "Argent",
@@ -114,9 +116,21 @@ const relatedGuides = [
   { title: "Social Recovery Wallets", href: "/wallets/learn/social-recovery-wallets" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Argent', },
+  ],
+};
+
 export default function ArgentReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -129,5 +143,7 @@ export default function ArgentReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

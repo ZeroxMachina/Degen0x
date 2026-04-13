@@ -31,7 +31,9 @@ const product = {
 export const metadata: Metadata = {
   title: `ProBit Global Review (${CURRENT_YEAR}) - IEO Launchpad & Altcoin Trading | ${SITE_NAME}`,
   description: `Complete ProBit Global review for ${CURRENT_YEAR}. Covers IEO launchpad, 800+ trading pairs, fees, security, and trading experience.`,
-  alternates: { canonical: "/exchanges/reviews/probit" }};
+  alternates: { canonical: "/exchanges/reviews/probit" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "ProBit Global is a cryptocurrency exchange headquartered in South Korea, launched in 2018. The platform has positioned itself as a gateway for emerging blockchain projects to reach the market, offering an active IEO (Initial Exchange Offering) launchpad alongside standard spot trading services. ProBit lists over 800 trading pairs, many of which are micro-cap tokens unavailable on larger exchanges.\n\nThe exchange operates with a relatively simple product offering focused primarily on spot trading and its launchpad. Unlike many competitors, ProBit does not offer futures, margin trading, or complex derivative products. This simplicity can be an advantage for users who want a straightforward trading experience without the complexity of leveraged products, but it limits the platform's appeal for advanced traders.\n\nProBit's PROB utility token provides fee discounts and access to exclusive launchpad events. The exchange serves users in most countries and maintains a policy of minimal KYC requirements for basic trading. While ProBit fills a niche for IEO participation and micro-cap trading, its lower liquidity, dated interface, and limited feature set place it below larger competitors for most trading needs.";
@@ -131,9 +133,21 @@ const relatedGuides = [
   { title: "How to Choose an Exchange", href: "/exchanges/learn/how-to-choose-exchange" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Probit', },
+  ],
+};
+
 export default function ProBitReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -146,5 +160,7 @@ export default function ProBitReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

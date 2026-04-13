@@ -34,12 +34,23 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/onchain-identity-reputation-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Onchain Identity Reputation Guide 2026', },
+  ],
+};
+
 export default function OnchainIdentityReputationGuide() {
   return (
     <article
       className="min-h-screen bg-[#0d1117]"
       style={{ color: "#e6edf3" }}
     >
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb Navigation */}
       <nav className="border-b" style={{ borderColor: "#30363d" }} aria-label="Breadcrumb">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">

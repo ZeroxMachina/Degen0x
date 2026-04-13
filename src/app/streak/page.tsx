@@ -11,16 +11,27 @@ export const metadata: Metadata = {
     description: "Earn XP multipliers by checking in daily. The longer the streak, the bigger the boost.",
   },
 
-  alternates: { canonical: "/streak" }};
+  alternates: { canonical: "/streak" },
+  twitter: { card: "summary_large_image" }};
 
 const S = {
   bg: "#0d1117", surface: "#161b22", border: "#30363d",
   text: "#e6edf3", text2: "#8b949e", orange: "#f0883e",
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Streak', },
+  ],
+};
+
 export default function StreakPage() {
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

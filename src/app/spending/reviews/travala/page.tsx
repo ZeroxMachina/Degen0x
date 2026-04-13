@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Travala Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Detailed Travala review covering crypto travel booking, supported cryptocurrencies, loyalty rewards, hotel and flight options, and whether Travala is the best",
-  alternates: { canonical: "/spending/reviews/travala" }};
+  alternates: { canonical: "/spending/reviews/travala" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Travala', },
+  ],
+};
 
 export default function TravalaReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Travala",
         slug: "travala",
@@ -119,5 +133,7 @@ The AVA token powers Travala's loyalty ecosystem. By staking AVA tokens, users u
         { title: "Best Crypto for Travel", href: "/spending/best/travel" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

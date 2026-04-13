@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Spark vs Aave ${CURRENT_YEAR}: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Spark Protocol vs Aave in ${CURRENT_YEAR}. Compare DAI savings rate, lending features, yield opportunities, and which protocol suits your strategy.`,
-  alternates: { canonical: "/defi-lending/compare/spark-vs-aave" }};
+  alternates: { canonical: "/defi-lending/compare/spark-vs-aave" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Spark Protocol", slug: "spark", rating: 4.6, affiliateUrl: "https://degen0x.com/go/spark", features: { "TVL": "$5B+", "Chains": "Ethereum, Gnosis", "Parent Ecosystem": "MakerDAO / Sky", "Stablecoin": "DAI / USDS", "Savings Rate": "DSR / SSR (variable)", "Rate Options": "Variable", "Governance": "MKR / SKY holders", "Unique Feature": "Direct DAI savings rate access" } },
@@ -27,9 +29,21 @@ const faqs: FAQ[] = [
   { question: "What is GHO and how does it compare to DAI?", answer: "GHO is Aave's native stablecoin minted by borrowers using collateral on Aave. DAI is MakerDAO's stablecoin backed by a diversified set of collateral types. Both are decentralized stablecoins, but DAI has a longer track record and larger market cap. GHO benefits from Aave's ecosystem and discount mechanisms for AAVE stakers. Each protocol's stablecoin strengthens its respective lending platform." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Spark Vs Aave', },
+  ],
+};
+
 export default function SparkVsAavePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

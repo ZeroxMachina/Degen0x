@@ -10,11 +10,25 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Hyperliquid vs dYdX: Best Decentralized Perps? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of Hyperliquid vs dYdX for decentralized perpetual futures trading. Compare fees, speed, liquidity, and features.",
-  alternates: { canonical: "/exchanges/compare/hyperliquid-vs-dydx" }};
+  alternates: { canonical: "/exchanges/compare/hyperliquid-vs-dydx" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/exchanges/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Hyperliquid Vs Dydx', },
+  ],
+};
 
 export default function HyperliquidVsDydxPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Hyperliquid vs dYdX", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Hyperliquid vs dYdX: Which Decentralized Perps Platform Is Better in {CURRENT_YEAR}?</h1>

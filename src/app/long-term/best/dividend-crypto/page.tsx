@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Dividend & Yield Earning Crypto ${CURRENT_YEAR} - Passive Income Tokens`,
   description: `Find the best dividend-paying and yield-earning cryptocurrencies in ${CURRENT_YEAR}. Compare staking yields, real yield protocols, and passive income tokens for long-term crypto investors.`,
-  alternates: { canonical: "/long-term/best/dividend-crypto" }};
+  alternates: { canonical: "/long-term/best/dividend-crypto" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -102,9 +104,21 @@ const faqs: FAQ[] = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Long Term', item: 'https://degen0x.com/long-term' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/long-term/best' },
+    { '@type': 'ListItem', position: 4, name: 'Dividend Crypto', },
+  ],
+};
+
 export default function DividendCryptoPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Dividend Crypto", href: "/long-term/best/dividend-crypto" }]} />
       <AffiliateDisclosure />
 

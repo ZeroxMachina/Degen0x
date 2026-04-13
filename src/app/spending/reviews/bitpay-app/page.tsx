@@ -8,11 +8,24 @@ export const metadata: Metadata = {
   title: `BitPay App Review (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `In-depth BitPay app review for ${CURRENT_YEAR}. Wallet features, bill pay, Visa card, merchant payments, supported cryptocurrencies, fees, and security.`,
   alternates: { canonical: "/spending/reviews/bitpay-app" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Spending', item: 'https://degen0x.com/spending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/spending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bitpay App', },
+  ],
 };
 
 export default function BitPayAppReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "BitPay",
         slug: "bitpay-app",
@@ -79,5 +92,7 @@ export default function BitPayAppReviewPage() {
         { title: "Bitcoin Payments Guide", href: "/spending/learn/bitcoin-payments-guide" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

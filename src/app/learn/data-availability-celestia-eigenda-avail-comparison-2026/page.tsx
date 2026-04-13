@@ -135,6 +135,16 @@ const schema = combineSchemas([
   generateFAQSchema(faqs),
 ]);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Data Availability Celestia Eigenda Avail Comparison 2026', },
+  ],
+};
+
 export default function DataAvailabilityComparisonPage() {
   const tableOfContents = [
     "What Is Data Availability and Why It Matters",
@@ -151,6 +161,7 @@ export default function DataAvailabilityComparisonPage() {
 
   return (
     <main style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

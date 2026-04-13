@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `Accointing Review (${CURRENT_YEAR}): Tax Reporting & Portfolio Tracking | ${SITE_NAME}`,
   description: "In-depth Accointing review covering tax reporting, portfolio tracking, international support, and its integration with Glassnode.",
-  alternates: { canonical: "/taxes/reviews/accointing" }};
+  alternates: { canonical: "/taxes/reviews/accointing" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/taxes/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Accointing', },
+  ],
+};
 
 export default function AccointingReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Taxes"
       categorySlug="taxes"
@@ -44,5 +58,7 @@ export default function AccointingReview() {
       relatedReviews={[{ name: "Koinly", slug: "koinly" }, { name: "CoinTracker", slug: "cointracker" }]}
       relatedGuides={[{ title: "Crypto Tax Guide", href: "/taxes/learn/crypto-tax-guide" }, { title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

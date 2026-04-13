@@ -69,9 +69,20 @@ const faqSchema = generateFAQSchema([
 
 const combinedSchemas = combineSchemas(toolSchema, faqSchema);
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Token Security Scanner', },
+  ],
+};
+
 export default function TokenSecurityScannerPage() {
   return (
     <div style={{ backgroundColor: "var(--color-bg)" }} className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchemas} />
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8">

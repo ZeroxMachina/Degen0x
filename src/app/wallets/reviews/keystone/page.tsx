@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `Keystone Wallet Review (${CURRENT_YEAR}) - Air-Gapped QR Code Hardware Wallet | ${SITE_NAME}`,
   description: `Complete Keystone wallet review for ${CURRENT_YEAR}. Covers air-gapped QR code signing, touchscreen interface, open-source firmware, and MetaMask integration.`,
-  alternates: { canonical: "/wallets/reviews/keystone" }};
+  alternates: { canonical: "/wallets/reviews/keystone" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Keystone (formerly Cobo Vault) is a hardware wallet that prioritizes maximum security through a fully air-gapped design. Unlike Ledger and Trezor devices that connect to computers via USB (and sometimes Bluetooth), Keystone communicates exclusively through QR codes. Transaction data is displayed as a QR code on your phone, scanned by Keystone's camera, signed offline, and the signed result is displayed as a QR code scanned back by your phone. This air-gap ensures the device never has a wired or wireless connection that could be exploited.\n\nKeystone features a large 4-inch touchscreen display for clear transaction verification, open-source firmware, and support for multiple blockchains. The device can be paired with MetaMask, Rabby, and other software wallets as a signing device, making it compatible with the broader DeFi ecosystem. Keystone offers multiple models including the Essential (entry-level) and Pro (premium with fingerprint sensor and additional security features).";
@@ -131,9 +133,21 @@ const relatedGuides = [
   { title: "Wallet Security Best Practices", href: "/wallets/learn/wallet-security-best-practices" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Keystone', },
+  ],
+};
+
 export default function KeystoneReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -146,5 +160,7 @@ export default function KeystoneReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

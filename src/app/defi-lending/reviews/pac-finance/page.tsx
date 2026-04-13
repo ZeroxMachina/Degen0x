@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Pac Finance Review ${CURRENT_YEAR}: Blast L2 Lending & Points`,
   description: "In-depth Pac Finance review covering lending on Blast, points farming, yield strategies, and risk analysis for this Blast-native lending protocol.",
-  alternates: { canonical: "/defi-lending/reviews/pac-finance" }};
+  alternates: { canonical: "/defi-lending/reviews/pac-finance" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Pac Finance', },
+  ],
+};
 
 export default function PacFinanceReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "Pac Finance", slug: "pac-finance", rating: 3.5, description: "Pac Finance is a lending protocol on Blast L2 offering lending and borrowing markets with integration into Blast's native yield and points ecosystem for enhanced return opportunities.", pros: ["Blast native yield integration boosts deposit returns", "Participation in Blast ecosystem points programs", "Low gas costs on Blast L2", "Standard lending mechanics familiar to DeFi users", "Growing presence in Blast DeFi ecosystem"], cons: ["Had a controversial parameter change that triggered unexpected liquidations", "Completely dependent on Blast ecosystem success", "Small TVL and limited track record", "Points value is speculative and uncertain", "Blast network still proving long-term viability"], bestFor: "Blast ecosystem users seeking lending with native yield and points integration", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Pac Finance is a lending protocol operating on Blast L2 that offers standard lending and borrowing markets enhanced by Blast's native yield features. The protocol gained attention during the Blast ecosystem's growth period, attracting depositors seeking to maximize their Blast points and yield exposure. However, Pac Finance also became known for a controversial incident where a collateral parameter change triggered unexpected liquidations for users, raising concerns about governance and parameter management practices. Despite this controversy, the protocol continues to operate within the Blast ecosystem, serving users who seek lending markets with Blast-specific yield advantages."
@@ -32,5 +46,7 @@ export default function PacFinanceReview() {
       relatedReviews={[{ name: "Orbit", slug: "orbit" }, { name: "Juice Finance", slug: "juice-finance" }, { name: "ZeroLend", slug: "zerolend" }]}
       relatedGuides={[{ title: "Points Farming in DeFi", href: "/defi-lending/learn/points-farming-defi" }, { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

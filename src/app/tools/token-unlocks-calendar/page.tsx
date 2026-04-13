@@ -16,6 +16,16 @@ export const metadata: Metadata = {
 
 const structuredData = { '@context': 'https://schema.org', '@type': 'Article', headline: 'Token Unlocks Calendar 2026', description: 'Token unlock tracking', image: 'https://degen0x.com/og-tools.svg', datePublished: '2026-04-10', dateModified: '2026-04-10', author: { '@type': 'Organization', name: 'degen0x' }, mainEntity: { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'What are token unlocks?', acceptedAnswer: { '@type': 'Answer', text: 'Vested tokens released on schedule. Founders, investors, employees locked for 1-4 years. Unlock = potential supply increase = price pressure.' } }, { '@type': 'Question', name: 'Cliff vs linear vesting?', acceptedAnswer: { '@type': 'Answer', text: 'Cliff: all tokens locked until date, then released. Linear: gradual release (e.g., 1% monthly). Cliff = sudden supply shock.' } }, { '@type': 'Question', name: 'Why do unlocks matter?', acceptedAnswer: { '@type': 'Answer', text: 'Sell pressure. Founders getting liquid tokens = selling pressure. Large unlocks = price drops historically. Market prices in expectations.' } }, { '@type': 'Question', name: 'Major unlocks 2026?', acceptedAnswer: { '@type': 'Answer', text: 'ARB (Arbitrum): $500M+ locked, releases linearly. OP (Optimism): $250M+. APT, SUI, STRK: significant unlocks. Check token-unlocks.app.' } }, { '@type': 'Question', name: 'How to trade around unlocks?', acceptedAnswer: { '@type': 'Answer', text: 'Sell before unlock (avoid pressure). Buy after panic selling (bottom). Or ignore short-term volatility (long-term holders).' } }, { '@type': 'Question', name: 'Historical price impact?', acceptedAnswer: { '@type': 'Answer', text: 'Varies. Some tokens drop 20-40% pre-unlock. Some ignore. Market prices in unlock risk. Check historical data per token.' } }] } };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://degen0x.com/tools' },
+    { '@type': 'ListItem', position: 3, name: 'Token Unlocks Calendar', },
+  ],
+};
+
 export default function TokenUnlocksCalendar() {
   const s = {
     box: { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 },
@@ -28,6 +38,7 @@ export default function TokenUnlocksCalendar() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>

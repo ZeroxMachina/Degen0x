@@ -24,6 +24,16 @@ export const metadata: Metadata = {
     canonical: 'https://degen0x.com/exchanges/crypto-exchange-proof-of-reserves-comparison',
   }
 };
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Exchange Proof Of Reserves Comparison', },
+  ],
+};
+
 export default function ProofOfReservesPage() {
   const containerStyle = {
     backgroundColor: '#0d1117',
@@ -142,6 +152,7 @@ export default function ProofOfReservesPage() {
 
   return (
     <main style={containerStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={headerStyle}>
         <h1 style={titleStyle}>Crypto Exchange Proof of Reserves Comparison</h1>
         <p style={subtitleStyle}>

@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `Hyperliquid Review (${CURRENT_YEAR}) - On-Chain Perps with CEX Speed | ${SITE_NAME}`,
   description: `Complete Hyperliquid review for ${CURRENT_YEAR}. Covers its custom L1 blockchain, on-chain perpetual futures, zero gas fees, liquidity, and trading experience.`,
-  alternates: { canonical: "/exchanges/reviews/hyperliquid" }};
+  alternates: { canonical: "/exchanges/reviews/hyperliquid" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Hyperliquid is a decentralized perpetual futures exchange that has emerged as one of the most significant innovations in DeFi trading. Built on its own purpose-built Layer 1 blockchain (Hyperliquid L1), the platform delivers trading performance that rivals centralized exchanges while maintaining the transparency and self-custody benefits of decentralized finance. Hyperliquid has rapidly grown to become the largest on-chain derivatives platform by volume.\n\nThe platform features a fully on-chain central limit order book (CLOB) that processes trades with sub-second finality and zero gas fees. This combination of speed, cost efficiency, and on-chain transparency has attracted a significant portion of crypto derivatives traders away from both centralized exchanges and competing DEXs. Hyperliquid supports perpetual futures on 100+ assets with up to 50x leverage, plus a growing spot market.\n\nHyperliquid's custom L1 blockchain was designed specifically for high-frequency trading, using a consensus mechanism optimized for order matching rather than general-purpose computation. The HYPE token serves as the native token of the ecosystem. The platform has achieved remarkable traction, processing billions of dollars in daily volume and establishing itself as a serious competitor to centralized derivatives exchanges.";
@@ -132,9 +134,21 @@ const relatedGuides = [
   { title: "CEX vs DEX", href: "/exchanges/learn/cex-vs-dex" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Hyperliquid', },
+  ],
+};
+
 export default function HyperliquidReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -147,5 +161,7 @@ export default function HyperliquidReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

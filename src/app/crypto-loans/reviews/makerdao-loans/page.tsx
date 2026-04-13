@@ -19,11 +19,25 @@ const product = {
 export const metadata: Metadata = {
   title: `MakerDAO Loans Review (${CURRENT_YEAR}): DAI Vaults Guide | ${SITE_NAME}`,
   description: "In-depth MakerDAO review covering DAI borrowing, vault types, stability fees, liquidation mechanics, and the Sky protocol transition.",
-  alternates: { canonical: "/crypto-loans/reviews/makerdao-loans" }};
+  alternates: { canonical: "/crypto-loans/reviews/makerdao-loans" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Makerdao Loans', },
+  ],
+};
 
 export default function MakerDAOLoansReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Loans"
       categorySlug="crypto-loans"
@@ -44,5 +58,7 @@ export default function MakerDAOLoansReview() {
       relatedReviews={[{ name: "Liquity", slug: "liquity" }, { name: "Aave Loans", slug: "aave-loans" }]}
       relatedGuides={[{ title: "Overcollateralization Explained", href: "/crypto-loans/learn/overcollateralization-explained" }, { title: "Stablecoin Lending", href: "/crypto-loans/learn/stablecoin-lending" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

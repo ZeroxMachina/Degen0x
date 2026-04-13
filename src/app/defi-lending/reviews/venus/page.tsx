@@ -21,11 +21,25 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Venus Protocol Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Venus Protocol review covering BNB Chain lending, VAI stablecoin, governance, security improvements, and yield opportunities.",
-  alternates: { canonical: "/defi-lending/reviews/venus" }};
+  alternates: { canonical: "/defi-lending/reviews/venus" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Venus', },
+  ],
+};
 
 export default function VenusReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="DeFi Lending"
       categorySlug="defi-lending"
@@ -48,5 +62,7 @@ export default function VenusReview() {
       relatedReviews={[{ name: "BENQI", slug: "/defi-lending/reviews/benqi" }, { name: "Aave", slug: "/defi-lending/reviews/aave" }]}
       relatedGuides={[{ title: "Smart Contract Risks", href: "/defi-lending/learn/smart-contract-risks" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

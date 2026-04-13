@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Bybit vs OKX (${CURRENT_YEAR}): Derivatives Exchange Comparison | ${SITE_NAME}`,
   description: `Bybit vs OKX comparison for ${CURRENT_YEAR}. Compare futures fees, leverage, copy trading, Web3 wallets, and features for derivatives traders.`,
-  alternates: { canonical: "/exchanges/compare/bybit-vs-okx" }};
+  alternates: { canonical: "/exchanges/compare/bybit-vs-okx" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "Bybit", slug: "bybit", rating: 4.5, affiliateUrl: "https://degen0x.com/go/bybit", features: { "Trading Fees": "0.1% spot / 0.02% futures maker", "Coins Listed": "500+", "Max Leverage": "100x", "Copy Trading": "Yes", "Trading Bots": "Yes", "Web3 Wallet": "Yes", "Launchpad": "Yes (Bybit Launchpad)", "Unified Account": "Yes" } },
@@ -21,9 +23,21 @@ const items: ComparisonItem[] = [
 
 const features = ["Trading Fees", "Coins Listed", "Max Leverage", "Copy Trading", "Trading Bots", "Web3 Wallet", "Launchpad", "Unified Account"];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/exchanges/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Bybit Vs Okx', },
+  ],
+};
+
 export default function BybitVsOkxPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

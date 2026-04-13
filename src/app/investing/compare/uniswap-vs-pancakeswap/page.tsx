@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Uniswap vs PancakeSwap (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Uniswap vs PancakeSwap DEX comparison for ${CURRENT_YEAR}. Trading volume, fees, supported chains, liquidity, and governance token investment compared.` ,
-  alternates: { canonical: "/investing/compare/uniswap-vs-pancakeswap" }};
+  alternates: { canonical: "/investing/compare/uniswap-vs-pancakeswap" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Uniswap (UNI)", slug: "uniswap", rating: 4.6, affiliateUrl: "#", features: { "DEX Type": "Automated Market Maker (AMM)", "Trading Volume": "Largest DEX by volume", "Chains": "Ethereum, Arbitrum, Polygon, Optimism, Base, BNB +", "Concentrated Liquidity": "Yes (v3/v4)", "Swap Fees": "0.01% - 1% (pool-dependent)", "Frontend Fee": "0.25% (on app.uniswap.org)", "Governance": "UNI token voting", "Fee Switch": "Proposed but not activated", "UniswapX": "Intent-based routing for better prices", "Token Pairs": "Thousands (permissionless)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Which DEX should I use?", answer: "Use Uniswap for trading on Ethereum mainnet and major L2s, especially for large trades where deep liquidity matters. PancakeSwap offers lower fees on BNB Chain and competitive rates on other chains. For casual traders, PancakeSwap's no-frontend-fee model saves 0.25% per trade compared to using the Uniswap web interface. For best execution on large trades, Uniswap's deeper liquidity and UniswapX routing generally wins." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Uniswap Vs Pancakeswap', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

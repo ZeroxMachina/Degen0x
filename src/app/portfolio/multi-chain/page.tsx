@@ -12,8 +12,24 @@ export const metadata: Metadata = {
     description: "Unified multi-chain portfolio tracker for DeFi degens.",
   },
 
-  alternates: { canonical: "/portfolio/multi-chain" }};
+  alternates: { canonical: "/portfolio/multi-chain" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Portfolio', item: 'https://degen0x.com/portfolio' },
+    { '@type': 'ListItem', position: 3, name: 'Multi Chain', },
+  ],
+};
 
 export default function MultiChainPortfolioPage() {
-  return <MultiChainPortfolio />;
+  return (
+    <>
+      <MultiChainPortfolio />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

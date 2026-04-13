@@ -48,6 +48,16 @@ const articleSchema = generateArticleSchema({
   wordCount: 3200,
 });
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Rwa Platforms Comparison 2026', },
+  ],
+};
+
 export default function RWAPlatformsComparison() {
   const faqs = [
     {
@@ -120,6 +130,7 @@ export default function RWAPlatformsComparison() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={structuredData} />
       <div style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px' }}>
         <Breadcrumb items={[

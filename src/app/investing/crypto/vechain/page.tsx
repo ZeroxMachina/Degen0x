@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in VeChain (VET) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete VeChain investment guide for ${CURRENT_YEAR}. Learn about VET fundamentals, supply chain tracking, sustainability, risks, and how to buy VeChain.`,
   alternates: { canonical: "/investing/crypto/vechain" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is VeChain a good investment?", answer: "VeChain has established real enterprise partnerships with major companies for supply chain management and sustainability tracking. Its dual-token model separates governance from transaction costs. However, enterprise blockchain adoption has been slower than initially expected, and VET faces competition from both other blockchains and traditional supply chain solutions. Real-world usage metrics should be closely monitored." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "Which companies use VeChain?", answer: "VeChain has partnerships with Walmart China (food traceability), BMW (vehicle data), DNV (sustainability reporting), LVMH (luxury goods authentication), and many other enterprises. These partnerships use VeChain's blockchain for supply chain tracking, anti-counterfeiting, carbon footprint monitoring, and product lifecycle management. The VeChain ToolChain platform makes it easy for enterprises to integrate blockchain without deep technical expertise." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Vechain', },
+  ],
+};
+
 export default function VeChainPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

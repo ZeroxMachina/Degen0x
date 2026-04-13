@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: `Best Crypto Airdrops ${CURRENT_YEAR} - Upcoming Free Token Drops`,
   description: `Find the best crypto airdrops for ${CURRENT_YEAR}. Guide to qualifying for upcoming token distributions, retroactive airdrops, and airdrop farming strategies.`,
   alternates: { canonical: "/investing/best/airdrops" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "upcoming", title: "Potential Upcoming Airdrops", level: 2 },
@@ -31,9 +32,21 @@ const potentialAirdrops = [
   { name: "Monad", category: "L1 Blockchain", action: "Engage with testnet when available", risk: "Low" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Airdrops', },
+  ],
+};
+
 export default function BestAirdropsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

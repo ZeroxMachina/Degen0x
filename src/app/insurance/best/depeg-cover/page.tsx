@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Stablecoin Depeg Cover ${CURRENT_YEAR} - Protect Against Depegging`,
   description: "Compare the best stablecoin depeg insurance options. Protect your stablecoin holdings against depegging events with coverage from leading crypto insurance",
-  alternates: { canonical: "/insurance/best/depeg-cover" }};
+  alternates: { canonical: "/insurance/best/depeg-cover" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -76,9 +78,21 @@ const faqs: FAQ[] = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Insurance', item: 'https://degen0x.com/insurance' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/insurance/best' },
+    { '@type': 'ListItem', position: 4, name: 'Depeg Cover', },
+  ],
+};
+
 export default function DepegCoverPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Insurance", href: "/insurance" },

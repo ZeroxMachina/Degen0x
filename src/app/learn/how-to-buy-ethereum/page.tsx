@@ -15,7 +15,8 @@ export const metadata: Metadata = {
     publishedTime: "2026-03-10T00:00:00Z",
   },
 
-  alternates: { canonical: "/learn/how-to-buy-ethereum" }};
+  alternates: { canonical: "/learn/how-to-buy-ethereum" },
+  twitter: { card: "summary_large_image" }};
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -29,6 +30,16 @@ const EXCHANGES = [
   { name: "Binance", fee: "0.10%", min: "$10", pros: "Lowest trading fees, huge selection", cons: "Regulatory issues in US, complex UI", rating: 8.5, badge: "Lowest Fees" },
   { name: "Gemini", fee: "0.5%", min: "$1", pros: "US-regulated, SOC 2 certified, NYDFS licensed", cons: "Higher fees, smaller selection", rating: 8.8, badge: "Best Security" },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'How To Buy Ethereum', },
+  ],
+};
 
 export default function HowToBuyEthereumPage() {
   const S = {
@@ -48,6 +59,7 @@ export default function HowToBuyEthereumPage() {
 
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px 24px" }}>

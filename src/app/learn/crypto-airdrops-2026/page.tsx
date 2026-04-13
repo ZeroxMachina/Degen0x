@@ -14,7 +14,8 @@ export const metadata: Metadata = {
     description: "How to find, qualify for, and claim crypto airdrops. Complete strategy guide with safety tips.",
   },
 
-  alternates: { canonical: "/learn/crypto-airdrops-2026" }};
+  alternates: { canonical: "/learn/crypto-airdrops-2026" },
+  twitter: { card: "summary_large_image" }};
 
 const TOC_ITEMS = [
   { id: "what-are-airdrops", title: "What Are Airdrops?", level: 2 },
@@ -78,6 +79,16 @@ const POTENTIAL_AIRDROPS = [
   { name: "Abstract", category: "L2 (ZK)", status: "Mainnet", strategy: "Consumer-facing ZK chain. Use native social apps, create & trade on-chain content, engage with Abstract Global Wallet.", color: "#00FF85" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto Airdrops 2026', },
+  ],
+};
+
 export default function AirdropsGuidePage() {
   const sectionStyle: React.CSSProperties = { marginBottom: 48 };
   const headingStyle: React.CSSProperties = { fontSize: 26, fontWeight: 800, color: "var(--color-text, #e6edf3)", marginBottom: 16, scrollMarginTop: 80 };
@@ -92,6 +103,7 @@ export default function AirdropsGuidePage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-bg, #0d1117)" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 80px" }}>
         <Breadcrumb items={[{ label: "Learn", href: "/learn" }, { label: "Crypto Airdrops Guide 2026", href: "/learn/crypto-airdrops-2026" }]} />
 

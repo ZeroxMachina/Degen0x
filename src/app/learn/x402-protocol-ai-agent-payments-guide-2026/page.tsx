@@ -305,9 +305,20 @@ const pageStyles = {
   } as React.CSSProperties,
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'X402 Protocol Ai Agent Payments Guide 2026', },
+  ],
+};
+
 export default function X402ProtocolPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>

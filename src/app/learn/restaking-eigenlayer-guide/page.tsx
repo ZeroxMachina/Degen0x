@@ -6,11 +6,24 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: "Restaking & EigenLayer: The Complete Guide",
   description: "Master restaking with EigenLayer. Learn how AVS protocols work, explore liquid restaking tokens, understand risks, and discover top projects reshaping Ethereum",
-  alternates: { canonical: "/learn/restaking-eigenlayer-guide" }};
+  alternates: { canonical: "/learn/restaking-eigenlayer-guide" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Restaking Eigenlayer Guide', },
+  ],
+};
 
 export default function RestakingGuide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8">
         <a href="/learn" className="text-[#58a6ff] hover:underline">

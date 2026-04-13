@@ -12,8 +12,23 @@ export const metadata: Metadata = {
     description: 'Track your crypto holdings and PnL. Free, fast, no signup required.',
   },
 
-  alternates: { canonical: "/portfolio" }};
+  alternates: { canonical: "/portfolio" },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Portfolio', },
+  ],
+};
 
 export default function PortfolioPage() {
-  return <PortfolioTracker />;
+  return (
+    <>
+      <PortfolioTracker />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

@@ -30,7 +30,9 @@ const product = {
 export const metadata: Metadata = {
   title: `Bitget Wallet Review (${CURRENT_YEAR}) - Multi-Chain Web3 Wallet | ${SITE_NAME}`,
   description: `Complete Bitget Wallet review for ${CURRENT_YEAR}. Covers 100+ chain support, swap aggregation, launchpad, security, and Bitget exchange integration.`,
-  alternates: { canonical: "/wallets/reviews/bitget-wallet" }};
+  alternates: { canonical: "/wallets/reviews/bitget-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "Bitget Wallet (formerly known as BitKeep) is a multi-chain Web3 wallet that supports over 100 blockchains, making it one of the most chain-comprehensive wallets available. Rebranded and integrated with the Bitget exchange ecosystem, the wallet combines self-custody functionality with access to DeFi protocols, NFT marketplaces, and a swap aggregator that checks multiple decentralized exchanges for the best prices.\n\nThe wallet is available as a mobile app (iOS and Android) and a browser extension for Chrome. It features a built-in dApp browser, launchpad for new project token sales, staking products, and an NFT marketplace. The integration with Bitget exchange allows users to easily move assets between the self-custody wallet and the centralized exchange, bridging the CeFi-DeFi divide.";
@@ -131,9 +133,21 @@ const relatedGuides = [
   { title: "Wallet Security Best Practices", href: "/wallets/learn/wallet-security-best-practices" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Bitget Wallet', },
+  ],
+};
+
 export default function BitgetWalletReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -146,5 +160,7 @@ export default function BitgetWalletReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Ordinals Market Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Ordinals Market review covering Bitcoin inscription trading, BRC-20 tokens, fees, features, and whether it is the right platform for Bitcoin NFTs.",
-  alternates: { canonical: "/nfts/reviews/ordinals-market" }};
+  alternates: { canonical: "/nfts/reviews/ordinals-market" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/nfts/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Ordinals Market', },
+  ],
+};
 
 export default function OrdinalsMarketReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Ordinals Market",
         slug: "ordinals-market",
@@ -53,5 +67,7 @@ As the Bitcoin NFT ecosystem matures, Ordinals Market competes with Magic Eden, 
         { title: "How NFTs Work", href: "/nfts/learn/how-nfts-work" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

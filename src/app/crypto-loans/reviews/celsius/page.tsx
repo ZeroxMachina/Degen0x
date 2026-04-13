@@ -7,11 +7,25 @@ import ReviewPage from "@/components/ReviewPage";
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "celsius")!;
 
 export const metadata: Metadata = { title: "Celsius Review 2026: Lessons From the CeFi Collapse", description: "Analysis of Celsius Network's collapse, what went wrong, and lessons for crypto lending users. Why platform due diligence matters more than ever." ,
-  alternates: { canonical: "/crypto-loans/reviews/celsius" }};
+  alternates: { canonical: "/crypto-loans/reviews/celsius" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Loans', item: 'https://degen0x.com/crypto-loans' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-loans/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Celsius', },
+  ],
+};
 
 export default function CelsiusReview() {
   return (
-    <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
+    <>
+      <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="Celsius Network was one of the largest centralized crypto lending platforms before it filed for Chapter 11 bankruptcy in July 2022, freezing billions of dollars in customer deposits. What was once a platform serving over 1.7 million users with competitive lending and earning rates became a cautionary tale about centralized counterparty risk, opaque asset management, and the dangers of chasing high yields without understanding the underlying risks. This review serves as a historical analysis and warning for crypto lending users about the importance of due diligence and risk management."
       sections={[
         { id: "what-happened", title: "What Happened to Celsius", content: "Celsius attracted users with above-market interest rates on crypto deposits, claiming to generate yield through institutional lending and DeFi strategies. However, the company took excessive risks with customer funds, including leveraged DeFi positions, illiquid investments, and lending to high-risk counterparties. When the crypto market crashed in 2022 and the Terra/Luna ecosystem collapsed, Celsius could not meet withdrawal demands and froze customer accounts. The company filed for bankruptcy shortly after, revealing a massive hole in its balance sheet." },
@@ -31,5 +45,7 @@ export default function CelsiusReview() {
       relatedReviews={[{ name: "Nexo", slug: "nexo" }, { name: "Aave", slug: "aave-loans" }]}
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

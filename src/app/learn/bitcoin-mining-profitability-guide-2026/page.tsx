@@ -44,9 +44,20 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/bitcoin-mining-profitability-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Bitcoin Mining Profitability Guide 2026', },
+  ],
+};
+
 export default function MiningProfitabilityPage() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: '1px solid #30363d', paddingTop: 24 }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px 24px' }}>

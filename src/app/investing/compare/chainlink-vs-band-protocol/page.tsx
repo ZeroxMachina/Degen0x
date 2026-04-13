@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Chainlink vs Band Protocol (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Chainlink vs Band Protocol oracle comparison for ${CURRENT_YEAR}. Data feeds, security, adoption, cross-chain support, and investment thesis compared.` ,
-  alternates: { canonical: "/investing/compare/chainlink-vs-band-protocol" }};
+  alternates: { canonical: "/investing/compare/chainlink-vs-band-protocol" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Chainlink (LINK)", slug: "chainlink", rating: 4.7, affiliateUrl: "#", features: { "Oracle Type": "Decentralized oracle network", "Data Feeds": "1,000+ price feeds", "Chains Supported": "20+ blockchains", "Node Operators": "Hundreds (including institutional)", "Security Model": "Decentralized node network + staking", "CCIP": "Cross-chain interoperability protocol", "Revenue Model": "Node operator fees + premium services", "Market Share": "~80%+ of DeFi oracle market", "Notable Clients": "Aave, Synthetix, Compound, dYdX", "Additional Services": "VRF, Automation, Functions, CCIP" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Is LINK a good investment?", answer: "LINK benefits from being the dominant infrastructure token in one of crypto's most critical services — without oracles, DeFi cannot function. LINK staking adds token utility, and CCIP positions Chainlink as cross-chain infrastructure. Risks include potential competition from chain-native oracles, token unlock pressure, and the challenge of transitioning from LINK subsidies to sustainable fee-based revenue." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Chainlink Vs Band Protocol', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -12,7 +12,20 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Tensor vs Magic Eden: Which Solana NFT Marketplace Is Better? (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: "Detailed comparison of Tensor vs Magic Eden for Solana NFTs. Compare fees, trading tools, analytics, token rewards, and features to find the best Solana NFT",
-  alternates: { canonical: "/nfts/compare/tensor-vs-magic-eden" }};
+  alternates: { canonical: "/nfts/compare/tensor-vs-magic-eden" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/nfts/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Tensor Vs Magic Eden', },
+  ],
+};
 
 export default function TensorVsMagicEdenPage() {
   const tensor = nftDetailedComparisons["tensor"];
@@ -20,6 +33,7 @@ export default function TensorVsMagicEdenPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "Tensor vs Magic Eden", href: "#" } ]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Tensor vs Magic Eden: Which Solana NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>

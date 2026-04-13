@@ -21,11 +21,25 @@ const product: Product = {
 export const metadata: Metadata = {
   title: `Euler Finance Review (${CURRENT_YEAR}) | degen0x`,
   description: "In-depth Euler Finance review covering the V2 modular vault architecture, permissionless lending, security improvements after the V1 exploit, and yield opportunities.",
-  alternates: { canonical: "/defi-lending/reviews/euler" }};
+  alternates: { canonical: "/defi-lending/reviews/euler" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Euler', },
+  ],
+};
 
 export default function EulerReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="DeFi Lending"
       categorySlug="defi-lending"
@@ -48,5 +62,7 @@ export default function EulerReview() {
       relatedReviews={[{ name: "Morpho", slug: "/defi-lending/reviews/morpho" }, { name: "Silo Finance", slug: "/defi-lending/reviews/silo" }]}
       relatedGuides={[{ title: "Smart Contract Risks", href: "/defi-lending/learn/smart-contract-risks" }, { title: "Lending Risks Guide", href: "/defi-lending/learn/lending-risks-guide" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

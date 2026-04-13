@@ -21,9 +21,19 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/badges" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Badges', },
+  ],
+};
+
 export default function BadgesPage() {
   return (
     <main style={{ minHeight: '100vh', background: 'var(--color-bg)', padding: '24px' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

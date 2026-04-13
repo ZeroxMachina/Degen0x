@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Ramp Network Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "Ramp Network provides fiat-to-crypto on-ramp and off-ramp infrastructure that businesses can embed in their apps.",
-  alternates: { canonical: "/web3-business/reviews/ramp-network" }};
+  alternates: { canonical: "/web3-business/reviews/ramp-network" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Web3 Business', item: 'https://degen0x.com/web3-business' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/web3-business/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Ramp Network', },
+  ],
+};
 
 export default function RampNetworkReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Ramp Network",
         slug: "ramp-network",
@@ -79,5 +93,7 @@ Ramp handles all compliance, KYC, payment processing, and conversion logistics b
         { title: "Web3 Legal Considerations", href: "/web3-business/learn/web3-legal-considerations" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

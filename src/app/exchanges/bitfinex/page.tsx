@@ -10,11 +10,24 @@ export const metadata: Metadata = {
   title: "Bitfinex Review 2026: Trading Platform, Fees, Features &",
   description:
     "In-depth Bitfinex review covering professional trading platform, margin trading, lending, fees, and security. Is Bitfinex right for you? Updated March 2026.",
-  alternates: { canonical: "/exchanges/bitfinex" }};
+  alternates: { canonical: "/exchanges/bitfinex" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Bitfinex', },
+  ],
+};
 
 export default function BitfinexReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
       categorySlug="exchanges"
@@ -148,5 +161,7 @@ The platform's history includes the 2016 hack that resulted in $72 million in lo
         },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

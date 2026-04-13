@@ -61,6 +61,16 @@ const articleSchema = generateArticleSchema({
   wordCount: 2800,
 });
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Fully Onchain Gaming Autonomous Worlds Guide 2026', },
+  ],
+};
+
 export default function FullyOnchainGamingGuide() {
   const faqs = [
     {
@@ -165,6 +175,7 @@ export default function FullyOnchainGamingGuide() {
 
   return (
     <div style={{ backgroundColor: S.bg, color: S.text, minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={structuredData} />
       <div style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px' }}>
         <Breadcrumb items={[

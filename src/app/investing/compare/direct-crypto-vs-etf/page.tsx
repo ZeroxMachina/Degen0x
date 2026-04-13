@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Direct Crypto vs ETF (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Direct crypto purchase vs crypto ETF comparison for ${CURRENT_YEAR}. Self-custody vs brokerage access — fees, flexibility, tax advantages, and which is better for you.` ,
-  alternates: { canonical: "/investing/compare/direct-crypto-vs-etf" }};
+  alternates: { canonical: "/investing/compare/direct-crypto-vs-etf" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Direct Crypto Purchase", slug: "direct-crypto", rating: 4.5, affiliateUrl: "#", features: { "Ownership": "Direct asset ownership (self-custody possible)", "Access Method": "Crypto exchange or DEX", "Annual Fees": "None (after purchase)", "Trading Hours": "24/7/365", "DeFi Access": "Full (staking, lending, yield farming)", "Staking Yield": "Yes (3-8% depending on asset)", "Tax-Advantaged Accounts": "Limited (crypto IRAs with higher fees)", "Regulatory Protection": "Varies by exchange", "Minimum Investment": "Any amount (fractional)", "Complexity": "Moderate (wallet management, security)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Can I hold crypto ETFs in my IRA?", answer: "Yes, this is one of the biggest advantages of crypto ETFs. Bitcoin and Ethereum spot ETFs can be held in Traditional IRAs, Roth IRAs, 401(k)s (if your plan allows), and HSAs through standard brokerage accounts. This enables tax-deferred or tax-free crypto exposure. A Roth IRA with Bitcoin ETF means all future gains are potentially tax-free — a significant advantage for long-term crypto investors." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Direct Crypto Vs Etf', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

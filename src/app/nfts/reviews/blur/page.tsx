@@ -10,11 +10,25 @@ export const metadata: Metadata = {
   title: "Blur Review 2026: Fees, Features, Pros & Cons",
   description:
     "Our in-depth Blur review covers zero fees, trading tools, BLUR token rewards, pros and cons, and whether it's the right NFT marketplace for you. Updated March 2026.",
-  alternates: { canonical: "/nfts/reviews/blur" }};
+  alternates: { canonical: "/nfts/reviews/blur" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Nfts', item: 'https://degen0x.com/nfts' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/nfts/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Blur', },
+  ],
+};
 
 export default function BlurReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
       categorySlug="nfts"
@@ -118,5 +132,7 @@ Beyond trading, Blur introduced Blend, an NFT lending protocol that allows users
         { title: "Best NFT Marketplaces", href: "/nfts/best" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

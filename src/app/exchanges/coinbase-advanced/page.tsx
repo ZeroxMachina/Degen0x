@@ -7,11 +7,24 @@ export const metadata: Metadata = {
   title: "Coinbase Advanced Review 2026: Professional Trading, Lower",
   description:
     "Complete Coinbase Advanced review covering professional trading interface, competitive fees, and advanced features. Updated March 2026.",
-  alternates: { canonical: "/exchanges/coinbase-advanced" }};
+  alternates: { canonical: "/exchanges/coinbase-advanced" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Coinbase Advanced', },
+  ],
+};
 
 export default function CoinbaseAdvancedReview() {
   return (
     <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-4">Coinbase Advanced Review 2026</h1>

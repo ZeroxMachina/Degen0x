@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Rainbow Wallet Review (${CURRENT_YEAR}) - Best Ethereum Mobile Wallet? | ${SITE_NAME}`,
   description: `Detailed Rainbow wallet review for ${CURRENT_YEAR}. Covers Ethereum and L2 support, NFT experience, swap features, and mobile-first design.`,
-  alternates: { canonical: "/wallets/reviews/rainbow" }};
+  alternates: { canonical: "/wallets/reviews/rainbow" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const product = {
   name: "Rainbow",
@@ -112,9 +114,21 @@ const relatedGuides = [
   { title: "Best NFT Wallets", href: "/wallets/best/nft" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Rainbow', },
+  ],
+};
+
 export default function RainbowReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -127,5 +141,7 @@ export default function RainbowReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

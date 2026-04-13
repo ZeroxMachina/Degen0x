@@ -54,6 +54,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/bitcoin-treasury-companies-guide" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Bitcoin Treasury Companies Guide', },
+  ],
+};
+
 export default function BitcoinTreasuryCompaniesGuidePage() {
   const articleSchema = generateArticleSchema({
     title: "Bitcoin Treasury Companies 2026: Strategy, Metaplanet & Who's Buying BTC",
@@ -114,6 +124,7 @@ export default function BitcoinTreasuryCompaniesGuidePage() {
 
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Learn", href: "/learn" }, { label: "Bitcoin Treasury Companies" }]} />
 

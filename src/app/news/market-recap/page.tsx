@@ -26,6 +26,21 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/news/market-recap" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'News', item: 'https://degen0x.com/news' },
+    { '@type': 'ListItem', position: 3, name: 'Market Recap', },
+  ],
+};
+
 export default function MarketRecapPage() {
-  return <MarketRecapClient />;
+  return (
+    <>
+      <MarketRecapClient />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

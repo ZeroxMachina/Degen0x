@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Phantom Solana Wallet Review (${CURRENT_YEAR}) - Best Solana Wallet? | ${SITE_NAME}`,
   description: `Detailed Phantom review focused on its Solana experience for ${CURRENT_YEAR}. Covers SPL tokens, Solana DeFi, NFT management, staking, and transaction speed.`,
-  alternates: { canonical: "/wallets/reviews/phantom-solana" }};
+  alternates: { canonical: "/wallets/reviews/phantom-solana" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const product = {
   name: "Phantom (Solana)",
@@ -114,9 +116,21 @@ const relatedGuides = [
   { title: "NFT Storage Guide", href: "/wallets/learn/nft-storage-guide" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Phantom Solana', },
+  ],
+};
+
 export default function PhantomSolanaReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -129,5 +143,7 @@ export default function PhantomSolanaReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

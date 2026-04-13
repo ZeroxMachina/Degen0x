@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `Best Web3 Grants Programs of ${CURRENT_YEAR} - Funding for Builders | ${SITE_NAME}`,
   description: `Discover the best Web3 grants programs in ${CURRENT_YEAR}. Get non-dilutive funding from Ethereum, Solana, Optimism, and other major ecosystems. Grant sizes, requirements, and application tips.`,
-  alternates: { canonical: "/web3-business/best/grants" }};
+  alternates: { canonical: "/web3-business/best/grants" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -113,9 +115,21 @@ const faqs: FAQ[] = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Web3 Business', item: 'https://degen0x.com/web3-business' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/web3-business/best' },
+    { '@type': 'ListItem', position: 4, name: 'Grants', },
+  ],
+};
+
 export default function GrantsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

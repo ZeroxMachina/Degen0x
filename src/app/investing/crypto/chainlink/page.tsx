@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Chainlink (LINK) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Chainlink investment guide for ${CURRENT_YEAR}. Learn about LINK fundamentals, oracle networks, CCIP, staking, and how to buy Chainlink.`,
   alternates: { canonical: "/investing/crypto/chainlink" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What problem does Chainlink solve?", answer: "Blockchains cannot natively access external data. Chainlink's oracle network provides tamper-proof data feeds (price data, weather, sports results, etc.) to smart contracts, enabling DeFi protocols, insurance products, and any application that needs real-world data on-chain." },
@@ -21,9 +22,21 @@ const faqs = [
   { question: "What is CCIP?", answer: "Cross-Chain Interoperability Protocol (CCIP) is Chainlink's cross-chain messaging and token transfer standard. It enables smart contracts on different blockchains to communicate securely. CCIP is considered a major revenue driver for Chainlink and is being adopted by traditional institutions like SWIFT." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Chainlink', },
+  ],
+};
+
 export default function ChainlinkPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

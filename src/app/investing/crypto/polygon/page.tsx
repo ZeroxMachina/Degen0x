@@ -13,7 +13,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Polygon (POL) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Polygon investment guide for ${CURRENT_YEAR}. Learn about POL fundamentals, zkEVM, enterprise adoption, and how to buy Polygon.`,
   alternates: { canonical: "/investing/crypto/polygon" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "What happened to MATIC?", answer: "MATIC was migrated to POL as part of Polygon 2.0, a major protocol upgrade. POL serves as the native token for the unified Polygon ecosystem including the PoS chain, zkEVM, and CDK chains. Existing MATIC holders were able to convert their tokens to POL." },
@@ -21,9 +22,21 @@ const faqs = [
   { question: "Can I stake POL?", answer: "Yes. POL can be staked on the Polygon PoS chain to earn rewards. The staking process involves delegating to validators through the Polygon staking portal. Yields are variable but typically range from 4-6% APY. POL staking also plays a role in securing future Polygon 2.0 chains." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Polygon', },
+  ],
+};
+
 export default function PolygonPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

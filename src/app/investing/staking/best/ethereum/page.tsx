@@ -11,7 +11,9 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Ethereum Staking Platforms of ${CURRENT_YEAR} (Compared)`,
   description: `Compare the best Ethereum staking platforms in ${CURRENT_YEAR}. Liquid staking with Lido, Rocket Pool, StakeWise, and centralized options from Coinbase and Kraken.`,
-  alternates: { canonical: "/investing/staking/best/ethereum" }};
+  alternates: { canonical: "/investing/staking/best/ethereum" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   {
@@ -31,6 +33,18 @@ const faqs = [
     answer: "Most liquid staking tokens (stETH, rETH, cbETH) can be swapped on decentralized exchanges at any time. Direct unstaking through the protocol involves a withdrawal queue that typically takes 1-5 days depending on network demand. Centralized platforms may have their own processing times.",
   },
 ];
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Staking', item: 'https://degen0x.com/investing/staking' },
+    { '@type': 'ListItem', position: 4, name: 'Best', item: 'https://degen0x.com/investing/staking/best' },
+    { '@type': 'ListItem', position: 5, name: 'Ethereum', },
+  ],
+};
 
 export default function BestEthereumStakingPage() {
   const ethPlatforms = stakingPlatforms.filter(
@@ -55,6 +69,7 @@ export default function BestEthereumStakingPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb

@@ -45,6 +45,16 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Cryptocurrency Beginners Guide 2026', },
+  ],
+};
+
 export default function CryptocurrencyBeginnersGuide() {
   const articleSchema = generateArticleSchema({
     title: "Cryptocurrency for Beginners: Complete Guide 2026",
@@ -95,6 +105,7 @@ export default function CryptocurrencyBeginnersGuide() {
 
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchema} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px" }}>
         {/* Breadcrumb */}

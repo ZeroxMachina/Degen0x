@@ -15,7 +15,8 @@ export const metadata: Metadata = {
   title: `Best Long-Term Crypto Investments ${CURRENT_YEAR} - HODL Picks`,
   description: `The best cryptocurrencies to hold long-term. Expert analysis of fundamentals, adoption trends, and growth potential for patient crypto investors.`,
   alternates: { canonical: "/investing/best/long-term" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const longTermPicks: Product[] = [
   { ...makeProduct(CRYPTO_TOKENS[0]), pros: ["Scarcity with 21M cap", "Institutional adoption via ETFs", "15+ year track record"], cons: ["No smart contracts", "Slower transaction speed", "Energy-intensive mining"] },
@@ -37,9 +38,21 @@ const toc = [
   { id: "faq", title: "FAQ", level: 2 },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Long Term', },
+  ],
+};
+
 export default function BestLongTermPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

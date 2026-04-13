@@ -12,7 +12,9 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 export const metadata: Metadata = {
   title: `TokenTax Review (${CURRENT_YEAR}) - CPA Services & Tax Software | ${SITE_NAME}`,
   description: `In-depth TokenTax review for ${CURRENT_YEAR}. The only crypto tax platform offering full-service CPA filing alongside software tools. Pricing, features, and analysis.`,
-  alternates: { canonical: "/taxes/reviews/tokentax" }};
+  alternates: { canonical: "/taxes/reviews/tokentax" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "overview", title: "Overview", level: 2 },
@@ -28,9 +30,21 @@ const faqs = [
   { question: "Is TokenTax worth the price?", answer: "For users who need CPA assistance with complex crypto tax situations (margin trading, DeFi, international filing), TokenTax's CPA services can be worth the premium. For straightforward tax needs, Koinly or CryptoTaxCalculator offer better value. TokenTax is best for those who want professional handling of their crypto taxes." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/taxes/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Tokentax', },
+  ],
+};
+
 export default function TokenTaxReviewPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Taxes", href: "/taxes" },

@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `NGRAVE Review (${CURRENT_YEAR}) | degen0x`,
   description: "NGRAVE ZERO hardware wallet review covering EAL7 security certification, air-gapped QR signing, biometric authentication, and premium build quality.",
-  alternates: { canonical: "/wallets/reviews/ngrave" }};
+  alternates: { canonical: "/wallets/reviews/ngrave" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Ngrave', },
+  ],
+};
 
 export default function NgraveReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "NGRAVE",
         slug: "ngrave",
@@ -87,5 +101,7 @@ export default function NgraveReviewPage() {
         { title: "Best Bitcoin Wallets", href: "/wallets/best/bitcoin" }
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

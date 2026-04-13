@@ -27,6 +27,16 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/learn/defi-points-airdrop-farming-guide-2026" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Defi Points Airdrop Farming Guide 2026', },
+  ],
+};
+
 export default function DefiPointsAirdropFarmingGuide() {
   const faqs = [
     {
@@ -57,6 +67,7 @@ export default function DefiPointsAirdropFarmingGuide() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style>{`
         .related-article-card {
           transition: all 0.2s ease;

@@ -103,9 +103,20 @@ const breadcrumbItems = [
   { label: "AI Agent Frameworks Comparison 2026", href: "/learn/ai-agent-frameworks-comparison-2026" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Ai Agent Frameworks Comparison 2026', },
+  ],
+};
+
 export default function AIAgentFrameworksComparison() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={schemas} />
       <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
         <Breadcrumb items={breadcrumbItems} />

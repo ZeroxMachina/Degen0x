@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `ZeroLend Review ${CURRENT_YEAR}: Multi-Chain Lending on zkSync & More`,
   description: "Complete ZeroLend review covering multi-chain lending on zkSync, Linea, Blast, and other L2s, with yield analysis, fees, and risk assessment.",
-  alternates: { canonical: "/defi-lending/reviews/zerolend" }};
+  alternates: { canonical: "/defi-lending/reviews/zerolend" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/defi-lending/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Zerolend', },
+  ],
+};
 
 export default function ZerolendReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{ name: "ZeroLend", slug: "zerolend", rating: 3.9, description: "ZeroLend is a multi-chain lending protocol built on Aave V3 architecture, deployed across zkSync, Linea, Blast, Manta, and other emerging Layer 2 networks, aiming to be the primary lending market on next-generation L2s.", pros: ["Multi-chain deployment across numerous emerging L2 networks", "Built on proven Aave V3 architecture", "Early mover advantage on newer L2 ecosystems", "Points system incentivizes participation", "Very low gas costs on supported L2 networks"], cons: ["Spread across many chains can fragment liquidity", "Some deployments have very low TVL and activity", "Points system creates speculative rather than organic demand", "Newer L2 networks carry additional infrastructure risk", "Less audited customizations on top of Aave V3 base"], bestFor: "DeFi users seeking Aave V3 lending on emerging L2 networks like zkSync and Linea", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="ZeroLend has positioned itself as the go-to lending protocol for emerging Layer 2 networks by deploying Aave V3-based lending markets across zkSync, Linea, Blast, Manta, and other new chains. The protocol's strategy is to establish lending infrastructure early on new networks, capturing first-mover advantage before larger protocols deploy. ZeroLend has attracted TVL through points-based incentive programs and ecosystem partnerships with the L2 networks themselves. While the protocol benefits from the proven Aave V3 architecture, its rapid multi-chain expansion means that some deployments have limited liquidity and user activity. The ZERO token governance system aims to unify the protocol across all deployments."
@@ -32,5 +46,7 @@ export default function ZerolendReview() {
       relatedReviews={[{ name: "LayerBank", slug: "layerbank" }, { name: "Mendi", slug: "mendi" }, { name: "Lendle", slug: "lendle" }]}
       relatedGuides={[{ title: "DeFi on zkSync", href: "/defi-lending/learn/defi-on-zksync" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

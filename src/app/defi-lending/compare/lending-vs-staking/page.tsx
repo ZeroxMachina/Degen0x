@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `DeFi Lending vs Staking ${CURRENT_YEAR}: Which Earns More?`,
   description: `Compare DeFi lending vs staking in ${CURRENT_YEAR}. Analyze yields, risks, lock-up periods, and which passive income strategy is better for your portfolio.`,
-  alternates: { canonical: "/defi-lending/compare/lending-vs-staking" }};
+  alternates: { canonical: "/defi-lending/compare/lending-vs-staking" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "DeFi Lending", slug: "defi-lending", rating: 4.5, affiliateUrl: "https://degen0x.com/go/aave", features: { "Typical Yields": "3-8% stablecoins", "Lock-up Period": "None (instant withdrawal)", "Risk Type": "Smart contract, utilization", "Assets Supported": "Any listed token", "Complexity": "Low to moderate", "Composability": "High (receipt tokens)", "Reward Source": "Borrower interest payments", "Best For": "Stablecoin yield, flexibility" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Which offers higher yields?", answer: "It depends on market conditions. During high borrowing demand, lending rates can spike above staking returns. During calm markets, staking provides more consistent yields. Combining both through liquid staking and lending typically provides the highest total yield with manageable risk." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Lending Vs Staking', },
+  ],
+};
+
 export default function LendingVsStakingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

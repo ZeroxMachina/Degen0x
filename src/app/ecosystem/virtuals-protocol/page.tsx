@@ -47,6 +47,21 @@ export const metadata: Metadata = {
 
   alternates: { canonical: "/ecosystem/virtuals-protocol" }};
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Ecosystem', item: 'https://degen0x.com/ecosystem' },
+    { '@type': 'ListItem', position: 3, name: 'Virtuals Protocol', },
+  ],
+};
+
 export default function VirtualsProtocolPage() {
-  return <VirtualsProtocolClient />;
+  return (
+    <>
+      <VirtualsProtocolClient />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
+  );
 }

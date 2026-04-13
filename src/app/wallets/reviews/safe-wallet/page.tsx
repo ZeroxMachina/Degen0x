@@ -7,7 +7,9 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Safe (Gnosis Safe) Wallet Review (${CURRENT_YEAR}) - Best Multisig Wallet? | ${SITE_NAME}`,
   description: `Detailed Safe wallet review for ${CURRENT_YEAR}. Covers multi-signature security, DAO treasury management, spending policies, and institutional features.`,
-  alternates: { canonical: "/wallets/reviews/safe-wallet" }};
+  alternates: { canonical: "/wallets/reviews/safe-wallet" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const product = {
   name: "Safe (Gnosis Safe)",
@@ -114,9 +116,21 @@ const relatedGuides = [
   { title: "Best Security Wallets", href: "/wallets/best/security" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Safe Wallet', },
+  ],
+};
+
 export default function SafeWalletReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -129,5 +143,7 @@ export default function SafeWalletReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

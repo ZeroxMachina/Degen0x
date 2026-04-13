@@ -8,11 +8,23 @@ export const metadata: Metadata = {
   title: "Live Crypto Market Heatmap — Real-Time Sector Analysis",
   description: 'Visualize the entire crypto market at a glance with our interactive heatmap. Filter by sector, time range, and sort by market cap, volume, or performance.',
   keywords: ['crypto heatmap', 'market heatmap', 'crypto sectors', 'market visualization', 'treemap crypto'],
-  alternates: { canonical: "/heatmap" }};
+  alternates: { canonical: "/heatmap" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Heatmap', },
+  ],
+};
 
 export default function HeatmapPage() {
   return (
     <main className="min-h-screen bg-gray-950">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

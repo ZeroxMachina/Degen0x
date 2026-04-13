@@ -31,7 +31,9 @@ const product = {
 export const metadata: Metadata = {
   title: `SafePal Wallet Review (${CURRENT_YEAR}) - Affordable Air-Gapped Hardware Wallet | ${SITE_NAME}`,
   description: `Complete SafePal wallet review for ${CURRENT_YEAR}. Covers the S1 air-gapped hardware wallet, software wallet, 100+ chain support, and Binance Labs backing.`,
-  alternates: { canonical: "/wallets/reviews/safepal" }};
+  alternates: { canonical: "/wallets/reviews/safepal" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const overview =
   "SafePal is a cryptocurrency wallet ecosystem that offers both a hardware wallet (S1) and a software wallet app. The S1 hardware wallet is notable for being one of the most affordable air-gapped hardware wallets on the market, using QR code communication rather than USB or Bluetooth. SafePal was the first hardware wallet project backed by Binance Labs, giving it credibility and integration advantages within the Binance ecosystem.\n\nThe SafePal ecosystem supports 100+ blockchains and over 10 million tokens. The software wallet app (available on iOS and Android) serves as both a standalone hot wallet and the companion app for the S1 hardware wallet. The SFP token is the platform's utility token, providing fee discounts and exclusive features. SafePal positions itself as an accessible entry point for users who want hardware-level security without the premium price tag of Ledger or Trezor.";
@@ -132,9 +134,21 @@ const relatedGuides = [
   { title: "Wallet Backup Strategies", href: "/wallets/learn/wallet-backup-strategies" },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/wallets/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Safepal', },
+  ],
+};
+
 export default function SafePalReviewPage() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
       categorySlug="wallets"
@@ -147,5 +161,7 @@ export default function SafePalReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

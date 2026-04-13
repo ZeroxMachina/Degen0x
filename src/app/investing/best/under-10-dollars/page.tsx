@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Crypto Under $10 (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Top cryptocurrencies under $10 in ${CURRENT_YEAR}. Quality projects with strong fundamentals, active development, and room for growth.`,
-  alternates: { canonical: "/investing/best/under-10-dollars" }};
+  alternates: { canonical: "/investing/best/under-10-dollars" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Polygon (POL)", slug: "polygon", rating: 4.5, description: "Leading Ethereum scaling ecosystem with zkEVM, CDK for custom chains, and AggLayer for cross-chain interoperability. Major partnership network including Disney", pros: ["Leading Ethereum scaling solution", "Major enterprise partnerships", "Multiple scaling technologies"], cons: ["Transitioning from MATIC to POL tokenomics", "Competition from Arbitrum and Optimism", "Complex multi-product strategy"], bestFor: "Ethereum scaling ecosystem exposure", affiliateUrl: "#", category: "investing" },
@@ -26,9 +28,21 @@ const faqs = [
   { question: "Should I diversify across price ranges?", answer: "Diversify across quality projects regardless of token price. Focus on market cap tiers instead — large-cap for stability, mid-cap for growth, and small-cap for speculation. A well-diversified portfolio will naturally include tokens at various price points." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/investing/best' },
+    { '@type': 'ListItem', position: 4, name: 'Under 10 Dollars', },
+  ],
+};
+
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Phantom vs Backpack (${CURRENT_YEAR}) - Which Solana Wallet Is Better? | ${SITE_NAME}`,
   description: `Phantom vs Backpack Solana wallet comparison for ${CURRENT_YEAR}. Features, xNFT support, DeFi access, and ecosystem integration compared.`,
-  alternates: { canonical: "/wallets/compare/phantom-vs-backpack" }};
+  alternates: { canonical: "/wallets/compare/phantom-vs-backpack" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Phantom", slug: "phantom", rating: 4.7, affiliateUrl: "#", features: { "Primary Chain": "Solana", "Multi-Chain": "ETH, Polygon", "NFT Support": "Excellent gallery", "Built-in Swap": "Yes (0.85%)", "xNFT Apps": "No", "Exchange Integration": "No", Staking: "Yes (SOL)", "Open Source": "No", "Mobile App": "Yes", "User Base": "Largest on Solana" } },
@@ -23,9 +25,21 @@ const faqs = [
   { question: "Can I use both Phantom and Backpack?", answer: "Yes, both can be installed simultaneously as separate browser extensions. They create separate wallet instances unless you import the same seed phrase. Many Solana users install both for full ecosystem access." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/wallets/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Phantom Vs Backpack', },
+  ],
+};
+
 export default function PhantomVsBackpackPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

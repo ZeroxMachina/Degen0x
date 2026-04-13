@@ -7,11 +7,25 @@ import { CURRENT_YEAR } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Backpack Exchange Review ${CURRENT_YEAR}: Fees, Features, Pros & Cons`,
   description: "In-depth Backpack Exchange review covering this Solana-native exchange's fees, features, regulatory approach, and whether it suits your crypto trading needs.",
-  alternates: { canonical: "/exchanges/reviews/backpack-exchange" }};
+  alternates: { canonical: "/exchanges/reviews/backpack-exchange" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Exchanges', item: 'https://degen0x.com/exchanges' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/exchanges/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Backpack Exchange', },
+  ],
+};
 
 export default function BackpackExchangeReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={{
         name: "Backpack Exchange",
         slug: "backpack-exchange",
@@ -67,5 +81,7 @@ The exchange has gained traction quickly, particularly among Solana community me
         { title: "How Exchange Listings Work", href: "/exchanges/learn/how-exchange-listings-work" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

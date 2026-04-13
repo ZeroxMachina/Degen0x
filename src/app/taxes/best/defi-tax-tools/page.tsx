@@ -11,7 +11,9 @@ import { Product } from "@/lib/types";
 export const metadata: Metadata = {
   title: `Best DeFi Tax Tools (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `Compare the best DeFi tax tools for ${CURRENT_YEAR}. Track yield farming, liquidity pools, staking rewards, token swaps, and complex DeFi transactions for tax reporting.`,
-  alternates: { canonical: "/taxes/best/defi-tax-tools" }};
+  alternates: { canonical: "/taxes/best/defi-tax-tools" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const defiTaxProducts: Product[] = [
   {
@@ -75,9 +77,21 @@ const faqs = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/taxes/best' },
+    { '@type': 'ListItem', position: 4, name: 'Defi Tax Tools', },
+  ],
+};
+
 export default function BestDefiTaxToolsPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

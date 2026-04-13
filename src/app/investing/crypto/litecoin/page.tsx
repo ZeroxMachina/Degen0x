@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Litecoin (LTC) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Litecoin investment guide for ${CURRENT_YEAR}. Learn about LTC fundamentals, halving cycles, MimbleWimble privacy, risks, and how to buy Litecoin.`,
   alternates: { canonical: "/investing/crypto/litecoin" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Litecoin a good investment?", answer: "Litecoin is one of the oldest and most battle-tested cryptocurrencies, often described as the silver to Bitcoin's gold. Its consistent uptime, proven security, and growing payment adoption make it a relatively lower-risk crypto investment. However, it faces stiff competition from newer payment-focused blockchains and has seen declining developer mindshare." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "How does Litecoin compare to Bitcoin?", answer: "Litecoin produces blocks four times faster than Bitcoin (2.5 minutes vs 10 minutes), has four times the supply cap (84 million vs 21 million), and uses the Scrypt mining algorithm instead of SHA-256. Litecoin also implemented MimbleWimble Extension Blocks for optional transaction privacy, a feature Bitcoin lacks. Both share similar UTXO-based architectures." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Litecoin', },
+  ],
+};
+
 export default function LitecoinPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

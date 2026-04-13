@@ -10,7 +10,9 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 export const metadata: Metadata = {
   title: `CeFi vs DeFi Lending ${CURRENT_YEAR}: Complete Comparison`,
   description: `Compare centralized vs decentralized lending in ${CURRENT_YEAR}. Analyze yields, security, custody, KYC requirements, and which approach suits your needs.`,
-  alternates: { canonical: "/defi-lending/compare/cefi-vs-defi-lending" }};
+  alternates: { canonical: "/defi-lending/compare/cefi-vs-defi-lending" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items: ComparisonItem[] = [
   { name: "DeFi Lending", slug: "defi-lending", rating: 4.5, affiliateUrl: "https://degen0x.com/go/aave", features: { "Custody": "Self-custody (your keys)", "KYC": "None required", "Transparency": "Fully on-chain", "Accessibility": "Global, 24/7", "Typical Yields": "3-8% stablecoins", "Counterparty Risk": "Smart contract risk", "Regulation": "Minimal", "Insurance": "DeFi insurance optional" } },
@@ -25,9 +27,21 @@ const faqs: FAQ[] = [
   { question: "Which offers better yields?", answer: "DeFi generally offers competitive or better yields because there is no intermediary taking a spread. CeFi platforms typically earn DeFi yields behind the scenes and pass a portion to users while keeping a margin. However, CeFi occasionally offers promotional rates that exceed DeFi." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Defi Lending', item: 'https://degen0x.com/defi-lending' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/defi-lending/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Cefi Vs Defi Lending', },
+  ],
+};
+
 export default function CefiVsDefiLendingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

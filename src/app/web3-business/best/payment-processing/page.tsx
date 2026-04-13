@@ -11,7 +11,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Best Crypto Payment Processors of ${CURRENT_YEAR} - Accept Crypto Payments | ${SITE_NAME}`,
   description: `Compare the best crypto payment processors in ${CURRENT_YEAR}. Accept Bitcoin, Ethereum, and stablecoins for your business with e-commerce plugins, invoicing, and instant fiat settlement.`,
-  alternates: { canonical: "/web3-business/best/payment-processing" }};
+  alternates: { canonical: "/web3-business/best/payment-processing" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products: Product[] = [
   {
@@ -100,9 +102,21 @@ const faqs: FAQ[] = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Web3 Business', item: 'https://degen0x.com/web3-business' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/web3-business/best' },
+    { '@type': 'ListItem', position: 4, name: 'Payment Processing', },
+  ],
+};
+
 export default function PaymentProcessingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

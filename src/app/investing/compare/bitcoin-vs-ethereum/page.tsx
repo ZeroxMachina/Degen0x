@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Bitcoin vs Ethereum (${CURRENT_YEAR}) - Complete Comparison | ${SITE_NAME}`,
   description: `Bitcoin vs Ethereum in ${CURRENT_YEAR}. Compare investment thesis, technology, returns, staking, and which is better for your portfolio.`,
-  alternates: { canonical: "/investing/compare/bitcoin-vs-ethereum" }};
+  alternates: { canonical: "/investing/compare/bitcoin-vs-ethereum" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.9, affiliateUrl: "#", features: { "Primary Use Case": "Digital gold / Store of value", "Consensus": "Proof-of-Work", "Max Supply": "21 million", "Smart Contracts": "Limited (Bitcoin Script)", "Staking Yield": "N/A (PoW)", "Annual Inflation": "~1.7% (post-halving)", "ETF Available": "Yes (Spot)", "Transaction Speed": "~10 min blocks", "Energy Usage": "High", "Institutional Adoption": "Highest in crypto" } },
@@ -23,9 +25,21 @@ const faqs = [
   { question: "Is Ethereum more risky than Bitcoin?", answer: "Yes. Ethereum faces more competitive risk from alternative smart contract platforms like Solana, technical execution risk from its complex upgrade roadmap, and regulatory uncertainty around its staking and DeFi ecosystem. Bitcoin's simpler design and narrower use case make it relatively less risky." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Bitcoin Vs Ethereum', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

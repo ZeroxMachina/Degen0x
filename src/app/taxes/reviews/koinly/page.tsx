@@ -10,7 +10,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Koinly Review (${CURRENT_YEAR}) - Fees, Features, Pros & Cons | ${SITE_NAME}`,
   description: `In-depth Koinly review for ${CURRENT_YEAR}. We tested Koinly's crypto tax software covering pricing, exchange integrations, DeFi support, accuracy, and ease of use.`,
-  alternates: { canonical: "/taxes/reviews/koinly" }};
+  alternates: { canonical: "/taxes/reviews/koinly" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const toc = [
   { id: "overview", title: "Overview", level: 2 },
@@ -32,9 +34,21 @@ const faqs = [
   { question: "Can I use Koinly with TurboTax?", answer: "Koinly generates tax reports that can be imported into TurboTax. It exports IRS Form 8949 as a CSV or PDF that can be uploaded to TurboTax. However, it does not have the same direct integration that CoinTracker offers." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Taxes', item: 'https://degen0x.com/taxes' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/taxes/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Koinly', },
+  ],
+};
+
 export default function KoinlyReviewPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
           { label: "Home", href: "/" },

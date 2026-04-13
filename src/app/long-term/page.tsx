@@ -9,7 +9,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Long-Term Crypto Strategies - Build Generational Wealth ${CURRENT_YEAR}`,
   description: "Master long-term crypto investing. Crypto IRAs, HODL strategies, passive income, retirement planning, estate planning, and FIRE with cryptocurrency. Expert",
-  alternates: { canonical: "/long-term" }};
+  alternates: { canonical: "/long-term" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
   { title: "Best Crypto IRA Providers", href: "/long-term/best/crypto-ira", desc: "Tax-advantaged retirement accounts for Bitcoin and crypto" },
@@ -65,6 +67,15 @@ const faqs: FAQ[] = [
   },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Long Term', },
+  ],
+};
+
 export default function LongTermPage() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -77,6 +88,7 @@ export default function LongTermPage() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term Strategies", href: "/long-term" }]} />

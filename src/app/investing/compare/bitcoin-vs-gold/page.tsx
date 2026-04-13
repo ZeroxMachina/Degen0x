@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Bitcoin vs Gold (${CURRENT_YEAR}) - Investment Comparison | ${SITE_NAME}`,
   description: `Bitcoin vs Gold as a store of value in ${CURRENT_YEAR}. Compare scarcity, returns, volatility, and portfolio diversification benefits.`,
-  alternates: { canonical: "/investing/compare/bitcoin-vs-gold" }};
+  alternates: { canonical: "/investing/compare/bitcoin-vs-gold" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.8, affiliateUrl: "#", features: { "Asset Type": "Digital / Cryptocurrency", "Supply Cap": "21 million (mathematically fixed)", "Annual Returns (10yr avg)": "~100%+ (highly variable)", "Volatility": "High (50-80% drawdowns)", "Portability": "Instant global transfer", "Divisibility": "100 million satoshis per BTC", "Storage Cost": "Near zero (self-custody)", "Regulatory Status": "Commodity (US)", "ETF Available": "Yes", "Track Record": "15+ years" } },
@@ -23,9 +25,21 @@ const faqs = [
   { question: "Will Bitcoin replace gold?", answer: "Bitcoin is unlikely to fully replace gold due to gold's deep cultural and industrial use. However, Bitcoin is capturing an increasing share of the store-of-value market, particularly among younger investors. The two assets may coexist serving similar but not identical portfolio functions." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Bitcoin Vs Gold', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

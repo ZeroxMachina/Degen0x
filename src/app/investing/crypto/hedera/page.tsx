@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: `How to Invest in Hedera (HBAR) ${CURRENT_YEAR} - Complete Guide`,
   description: `Complete Hedera investment guide for ${CURRENT_YEAR}. Learn about HBAR fundamentals, hashgraph technology, enterprise adoption, risks, and how to buy HBAR.`,
   alternates: { canonical: "/investing/crypto/hedera" },
-};
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const faqs = [
   { question: "Is Hedera a good investment?", answer: "Hedera stands out for its enterprise-grade governance council, which includes major corporations like Google, IBM, Boeing, and LG. Its hashgraph consensus achieves high throughput with low, predictable fees. However, the governing council's centralized control, limited DeFi ecosystem compared to Ethereum, and the large supply of HBAR yet to be released are concerns for investors." },
@@ -18,9 +19,21 @@ const faqs = [
   { question: "Who governs Hedera?", answer: "Hedera is governed by a council of up to 39 multinational organizations, each serving limited terms. Current members include Google, IBM, Boeing, LG, Tata Communications, Dell, ServiceNow, and others. The council manages network governance, treasury decisions, and platform development. While this structure provides stability and enterprise credibility, it makes Hedera more centralized than most public blockchains." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Crypto', item: 'https://degen0x.com/investing/crypto' },
+    { '@type': 'ListItem', position: 4, name: 'Hedera', },
+  ],
+};
+
 export default function HederaPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
         { label: "Crypto Investing", href: "/investing" },

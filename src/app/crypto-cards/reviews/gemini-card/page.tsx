@@ -9,11 +9,25 @@ const product = cryptoCards.find((c) => c.slug === "gemini-card")!;
 export const metadata: Metadata = {
   title: "Gemini Credit Card Review 2026: Crypto Rewards, No Annual",
   description: "Our in-depth Gemini Credit Card review covers crypto rewards in 60+ tokens, no annual fee, dining cashback rates, credit-building potential, and APR details.",
-  alternates: { canonical: "/crypto-cards/reviews/gemini-card" }};
+  alternates: { canonical: "/crypto-cards/reviews/gemini-card" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
+
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Crypto Cards', item: 'https://degen0x.com/crypto-cards' },
+    { '@type': 'ListItem', position: 3, name: 'Reviews', item: 'https://degen0x.com/crypto-cards/reviews' },
+    { '@type': 'ListItem', position: 4, name: 'Gemini Card', },
+  ],
+};
 
 export default function GeminiCardReview() {
   return (
-    <ReviewPage
+    <>
+      <ReviewPage
       product={product}
       categoryName="Crypto Cards"
       categorySlug="crypto-cards"
@@ -134,5 +148,7 @@ Because the Gemini Credit Card is a real credit card issued by WebBank, it repor
         { title: "Best Crypto Cards for Beginners", href: "/crypto-cards/best/beginners" },
       ]}
     />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+    </>
   );
 }

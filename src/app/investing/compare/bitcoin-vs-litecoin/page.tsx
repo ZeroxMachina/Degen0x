@@ -8,7 +8,9 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
 export const metadata: Metadata = { title: `Bitcoin vs Litecoin (${CURRENT_YEAR}) | ${SITE_NAME}`, description: `Bitcoin vs Litecoin comparison for ${CURRENT_YEAR}. The original cryptocurrency vs its silver counterpart — technology, adoption, investment thesis compared.` ,
-  alternates: { canonical: "/investing/compare/bitcoin-vs-litecoin" }};
+  alternates: { canonical: "/investing/compare/bitcoin-vs-litecoin" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const items = [
   { name: "Bitcoin (BTC)", slug: "bitcoin", rating: 4.9, affiliateUrl: "#", features: { "Launch Year": "2009", "Max Supply": "21 million", "Block Time": "~10 minutes", "Consensus": "Proof-of-Work (SHA-256)", "Transaction Fees": "$1-20 (variable)", "Lightning Network": "Yes (Layer 2 payments)", "Market Cap Rank": "#1", "Mining Algorithm": "SHA-256 (ASIC-dominated)", "Halving Cycle": "Every ~4 years (210,000 blocks)", "ETF Available": "Yes (Spot)" } },
@@ -21,9 +23,21 @@ const faqs = [
   { question: "Should I invest in Litecoin over Bitcoin?", answer: "Bitcoin is the safer investment with stronger institutional adoption, ETF access, network effects, and store-of-value narrative. Litecoin may offer value as a lower market cap play with potential ETF approval catalysts and consistent payment network utility. However, most investors would benefit more from allocating to Bitcoin first. Litecoin makes more sense as a small speculative position alongside a core Bitcoin holding." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Investing', item: 'https://degen0x.com/investing' },
+    { '@type': 'ListItem', position: 3, name: 'Compare', item: 'https://degen0x.com/investing/compare' },
+    { '@type': 'ListItem', position: 4, name: 'Bitcoin Vs Litecoin', },
+  ],
+};
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

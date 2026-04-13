@@ -10,7 +10,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: `Best Custodial Crypto Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
   description: `The best custodial crypto wallets for ${CURRENT_YEAR}. Compare managed wallet solutions from Coinbase, Binance, OKX, and Bitget for ease of use and recovery options.`,
-  alternates: { canonical: "/wallets/best/custodial" }};
+  alternates: { canonical: "/wallets/best/custodial" },
+  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
+  twitter: { card: "summary_large_image" }};
 
 const products = [
   { name: "Coinbase", slug: "coinbase-wallet", rating: 4.3, description: "The largest US-regulated exchange with custodial wallet services, insurance on custodied assets, FDIC-insured USD balances, and institutional-grade security.", pros: ["Publicly traded regulated company", "Insurance on custodied assets", "Easy fiat on and off ramps"], cons: ["They control your private keys", "KYC required", "Can freeze accounts"], bestFor: "US-based users wanting regulated custodial storage", affiliateUrl: "#", category: "wallets" },
@@ -25,9 +27,21 @@ const faqs = [
   { question: "When should I use a custodial wallet?", answer: "Custodial wallets are appropriate for active trading where you need assets on an exchange, for beginners still learning about crypto security, and for amounts that would not be devastating to lose. They offer convenience, account recovery, and customer support that self-custody wallets cannot provide." },
 ];
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Wallets', item: 'https://degen0x.com/wallets' },
+    { '@type': 'ListItem', position: 3, name: 'Best', item: 'https://degen0x.com/wallets/best' },
+    { '@type': 'ListItem', position: 4, name: 'Custodial', },
+  ],
+};
+
 export default function BestCustodialWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"

@@ -88,6 +88,16 @@ const structuredData = {
   ],
 };
 
+const breadcrumbData = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Learn', item: 'https://degen0x.com/learn' },
+    { '@type': 'ListItem', position: 3, name: 'Eip 7702 Account Abstraction Ethereum Pectra Guide 2026', },
+  ],
+};
+
 export default function Eip7702Guide() {
   const containerStyle: React.CSSProperties = {
     maxWidth: '900px',
@@ -115,6 +125,7 @@ export default function Eip7702Guide() {
 
   return (
     <div style={containerStyle}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
         author="degen0x"
