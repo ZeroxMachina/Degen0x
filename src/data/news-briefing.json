@@ -1,126 +1,109 @@
 {
-  "generated_at": "2026-04-12T14:00:00Z",
-  "briefing_id": "briefing-2026-04-12-14",
-  "story_count": 7,
+  "generated_at": "2026-04-14T08:10:00Z",
+  "briefing_id": "briefing-2026-04-14-08",
+  "story_count": 6,
   "stories": [
     {
-      "id": "story-2026-04-12-14-001",
-      "headline": "Anthropic's Mythos AI Exposes Critical DeFi Security Flaws",
-      "slug": "anthropic-mythos-ai-exposes-critical-defi-security-flaws",
-      "tldr": "Anthropic's unreleased Mythos AI model discovered thousands of zero-day vulnerabilities in critical crypto infrastructure, prompting an emergency meeting between Treasury Secretary Bessent and bank CEOs.",
-      "why_it_matters": "Why it matters: If AI can find and exploit vulnerabilities in TLS, AES-GCM, and SSH at near-zero cost, every DeFi protocol built on these foundations is at risk — and the industry's security model needs a fundamental rethink.",
+      "id": "story-2026-04-14-08-001",
+      "headline": "Bitcoin Anchors Near $70K as Hormuz Blockade Keeps Crypto on Edge",
+      "slug": "bitcoin-anchors-70k-hormuz-blockade",
+      "tldr": "BTC is hovering near $70,000 and ether is down 4% after U.S.-Iran peace talks collapsed and Trump ordered a blockade of the Strait of Hormuz.",
+      "why_it_matters": "Why it matters: Crypto is now trading as a geopolitical risk asset, not a hedge — CME bitcoin futures activity just hit a 14-month low and the Fear & Greed Index is at 12, signaling extreme fear heading into a U.S. Senate week packed with policy catalysts.",
       "the_details": [
-        "Mythos found a 27-year-old bug in OpenBSD for under $50 in compute and a 16-year-old flaw in FFmpeg missed by 5M automated scans",
-        "Project Glasswing launched with 12 partner orgs for defensive security — Anthropic has no plans to publicly release the model",
-        "Treasury Secretary Bessent and Fed Chair Powell convened an urgent meeting with bank CEOs over the systemic implications"
+        "BTC ~3.2% below Sunday's open; ETH ~4.1% lower as oil spiked back over $100",
+        "Crypto Fear & Greed Index at 12 — 'Extreme Fear' territory not seen since late 2024",
+        "CME bitcoin futures open interest has dropped to a 14-month low as macro funds de-risk"
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/08/move-over-bitcoin-and-quantum-risks-anthropic-s-mythos-ai-changes-everything-for-defi",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-08T12:00:00Z"
-    },
-    {
-      "id": "story-2026-04-12-14-002",
-      "headline": "Bitcoin Hits $73K as Core CPI Cools Despite 3.3% Headline",
-      "slug": "bitcoin-hits-73k-core-cpi-cools-despite-headline-inflation",
-      "tldr": "Bitcoin climbed to $73,000 after March core CPI came in at 0.2% — below the 0.3% forecast — even as headline inflation hit 3.3% driven by war-related oil prices.",
-      "why_it_matters": "Why it matters: The split between hot headline CPI (energy-driven) and cool core CPI gives the Fed room to hold rates steady, which is bullish for risk assets including crypto.",
-      "the_details": [
-        "Headline CPI rose 0.9% in March with gasoline up 21.2% due to Strait of Hormuz disruptions from the Iran conflict",
-        "Core CPI (ex-food/energy) rose just 0.2% MoM and 2.6% YoY, both below consensus",
-        "BTC rallied from $68K to $73K in four days spanning the ceasefire announcement and CPI release"
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/10/bitcoin-rises-after-core-cpi-rose-a-less-than-forecast-0-2-in-march",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/13/bitcoin-anchors-near-usd70-000-as-rave-s-3-400-surge-signals-speculative-froth",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-11T10:00:00Z"
+      "timestamp": "2026-04-14T06:00:00Z"
     },
     {
-      "id": "story-2026-04-12-14-003",
-      "headline": "SEC Sends 'Regulation Crypto' Safe Harbor to White House",
-      "slug": "sec-sends-regulation-crypto-safe-harbor-to-white-house",
-      "tldr": "SEC Chair Paul Atkins confirmed the commission's crypto safe harbor proposal — including startup exemptions and a decentralization path out of securities law — has been sent to the White House for review.",
-      "why_it_matters": "Why it matters: This is the most concrete step yet toward a federal regulatory framework for crypto, and the safe harbor could let token projects raise funds legally without full securities registration.",
+      "id": "story-2026-04-14-08-002",
+      "headline": "White House Crypto Adviser Says CLARITY Act Hurdles Are Clearing",
+      "slug": "white-house-witt-clarity-act-hurdles-clearing",
+      "tldr": "Top White House crypto adviser Patrick Witt says talks are resolving the remaining sticking points on the CLARITY Act ahead of a late-April Senate Banking markup.",
+      "why_it_matters": "Why it matters: If the compromise holds, the U.S. gets its first comprehensive crypto market structure law before the November midterms — miss the window and the bill slips into 2027 political uncertainty.",
       "the_details": [
-        "Three components: startup fundraising exemption, broader capital-raising flexibility, and investment contract safe harbor for decentralized tokens",
-        "OIRA (White House regulatory review office) must sign off before formal publication",
-        "CLARITY Act also advancing — SEC roundtable scheduled for April 16, Banking Committee markup deadline end of April"
-      ],
-      "source": "PYMNTS",
-      "source_url": "https://www.pymnts.com/cryptocurrency/2026/sec-sends-regulation-crypto-proposal-to-white-house/",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-07T14:00:00Z"
-    },
-    {
-      "id": "story-2026-04-12-14-004",
-      "headline": "Japan Reclassifies Crypto as Financial Instruments in Historic Shift",
-      "slug": "japan-reclassifies-crypto-financial-instruments-historic-shift",
-      "tldr": "Japan's cabinet approved legislation moving crypto from the Payment Services Act to the Financial Instruments and Exchange Act, bringing digital assets under the same framework as stocks and bonds.",
-      "why_it_matters": "Why it matters: Japan's third-largest economy treating crypto like traditional securities opens the door to institutional capital, enables a flat ~20% crypto tax rate, and sets a regulatory template other Asian nations may follow.",
-      "the_details": [
-        "Insider trading on non-public crypto information now banned; mandatory annual disclosures required from issuers",
-        "Penalties for unregistered operations jump from 3 to 10 years prison and fines up to 10M yen",
-        "If passed by the Diet, reforms take effect fiscal 2027 — crypto tax drops to flat ~20% aligned with equities"
-      ],
-      "source": "Bitcoin Magazine",
-      "source_url": "https://bitcoinmagazine.com/news/japan-moves-to-classify-bitcoin-and-crypto",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-10T06:00:00Z"
-    },
-    {
-      "id": "story-2026-04-12-14-005",
-      "headline": "Bitmine Hits 4.8M ETH, Uplists to NYSE With $4B Buyback",
-      "slug": "bitmine-4-8m-eth-nyse-uplisting-4b-buyback",
-      "tldr": "Bitmine Immersion Technologies now holds 4.8 million ETH worth over $10 billion — 3.98% of circulating supply — and began trading on the NYSE with an expanded $4 billion share buyback program.",
-      "why_it_matters": "Why it matters: Bitmine is doing for ETH what Strategy did for BTC, but with a yield advantage — 3.33M staked ETH generates ~$196M in annual staking revenue, a recurring income stream Strategy's bitcoin treasury lacks.",
-      "the_details": [
-        "Total crypto and cash holdings: $11.4B including $864M cash, 198 BTC, and 4.803M ETH",
-        "Staking through Mavan validator network launched this week at 2.78% yield",
-        "Shares uplisted from NYSE American to full NYSE on April 10; buyback expanded from $1B to $4B"
+        "Stablecoin yield language remains the biggest unresolved fight; Coinbase and Stripe have objected to the current bank-friendly text",
+        "Senate Banking Committee markup targeted for late April; bill must clear committee before May to stay on track",
+        "White House Council of Economic Advisers says banning crypto stablecoin rewards would lift bank lending only 0.02%"
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/06/bitmine-s-ether-treasury-hits-4-8-million-eth-as-stock-listing-moves-to-nyse",
-      "category": "markets",
+      "source_url": "https://www.coindesk.com/policy/2026/04/13/white-house-s-top-crypto-adviser-witt-says-talks-clearing-other-points-on-clarity-act",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-13T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-14-08-003",
+      "headline": "Bitmine Now Holds 4% of All Ether Ever Issued",
+      "slug": "bitmine-holds-4-percent-ether-supply",
+      "tldr": "BitMine Immersion bought another 71,524 ETH last week, pushing its treasury to 4.87 million ether — roughly 4.04% of circulating supply — in its biggest weekly haul since December.",
+      "why_it_matters": "Why it matters: A single Nasdaq-listed treasury now controls enough ETH to move the market, and its management says they view ether as nearing the end of a 'mini-crypto winter' — a concentration story with real float implications.",
+      "the_details": [
+        "BMNR disclosed 4,874,858 ETH holdings worth ~$10.75B at $2,206 per ETH as of April 12",
+        "Total crypto and cash position now $11.8B; company uplisted from NYSE American to NYSE on April 9",
+        "Last week's 71,524 ETH buy is the largest single-week accumulation since Dec. 22, 2025"
+      ],
+      "source": "BitcoinEthereumNews",
+      "source_url": "https://bitcoinethereumnews.com/ethereum/bitmine-immersion-technologies-bmnr-announces-eth-holdings-reach-4-875-million-tokens-and-total-crypto-and-total-cash-holdings-of-11-8-billion/",
+      "category": "ethereum",
+      "impact": "high",
+      "timestamp": "2026-04-13T14:00:00Z"
+    },
+    {
+      "id": "story-2026-04-14-08-004",
+      "headline": "RAVE's 6,000% Rally Draws Manipulation Scrutiny",
+      "slug": "rave-6000-percent-rally-manipulation-scrutiny",
+      "tldr": "RaveDAO's RAVE token has exploded from about $0.25 to over $14 in a week, vaulting into the top 50 by market cap — but on-chain data shows the supply is extremely concentrated.",
+      "why_it_matters": "Why it matters: The move looks less like Web3 music adoption and more like a short squeeze on paper-thin float, and it's the kind of speculative blowoff that historically marks late-cycle behavior.",
+      "the_details": [
+        "Market cap jumped ~33x in 7 days, from ~$60M to ~$2B",
+        "Roughly 90% of supply sits in 3 wallets and 98%+ in the top 10, per chain analysts",
+        "Project markets itself as on-chain ticketing and artist payments for EDM events, claims exchange partnerships"
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/13/this-little-known-token-just-posted-a-6-000-rally-and-traders-are-trying-to-figure-out-why",
+      "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-10T13:00:00Z"
+      "timestamp": "2026-04-13T18:00:00Z"
     },
     {
-      "id": "story-2026-04-12-14-006",
-      "headline": "Strategy Reports $14.5B Unrealized Loss on Bitcoin in Q1",
-      "slug": "strategy-reports-14-5b-unrealized-loss-bitcoin-q1",
-      "tldr": "Strategy (formerly MicroStrategy) disclosed a $14.5 billion unrealized loss on its 766,970 BTC holdings for Q1 2026, as bitcoin traded well below its average cost basis.",
-      "why_it_matters": "Why it matters: The massive paper loss highlights the risk of corporate bitcoin treasury strategies during prolonged drawdowns, even as Strategy continues buying — adding 4,871 BTC in early April alone.",
+      "id": "story-2026-04-14-08-005",
+      "headline": "Securitize Expands to TRON for Real-World Asset Tokenization",
+      "slug": "securitize-tron-rwa-tokenization",
+      "tldr": "Securitize is bringing tokenized funds and securities to TRON, plugging into a network with over 373M accounts, $26B TVL, and $7.9T in annual transfer volume.",
+      "why_it_matters": "Why it matters: TRON is the largest dollar-settlement rail outside the U.S. banking system; putting Securitize-grade tokenized treasuries and funds on it is a serious step in the RWA race, and a signal that the U.S.-led RWA stack now needs global distribution to scale.",
       "the_details": [
-        "Total holdings: 766,970 BTC with an average cost basis of ~$75,644 per coin",
-        "BTC trading around $73K puts the entire position underwater on average",
-        "Riot Platforms also sold $290M in BTC during Q1; MARA sold $1.1B worth in March pivoting toward AI compute"
+        "Securitize CEO Carlos Domingo and TRON founder Justin Sun jointly announced the integration",
+        "A new RWA product is slated to debut on TRON with details to follow",
+        "Securitize's SPAC combination with Cantor Equity Partners II is expected to close in H1 2026"
       ],
       "source": "The Block",
-      "source_url": "https://www.theblock.co/post/396408/strategy-14-5-billion-unrealized-loss-bitcoin-holdings-q1-2026",
-      "category": "markets",
+      "source_url": "https://finance.yahoo.com/markets/crypto/articles/securitize-expands-tron-tokenized-asset-142059937.html",
+      "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-11T15:00:00Z"
+      "timestamp": "2026-04-10T14:00:00Z"
     },
     {
-      "id": "story-2026-04-12-14-007",
-      "headline": "Institutional DeFi Accelerates: Repo Markets Move On-Chain",
-      "slug": "institutional-defi-accelerates-repo-markets-move-on-chain",
-      "tldr": "Major banks including BNP Paribas, Societe Generale, and UBS are actively migrating segments of the $12.5 trillion repo market onto Ethereum's public blockchain.",
-      "why_it_matters": "Why it matters: Repo markets are the plumbing of global finance — moving them on-chain validates Ethereum as institutional-grade infrastructure and could drive massive TVL growth in DeFi protocols.",
+      "id": "story-2026-04-14-08-006",
+      "headline": "Binance Turns On Price Range Execution Rule to Curb Bad Fills",
+      "slug": "binance-price-range-execution-rule-live",
+      "tldr": "Binance's new Spot Price Range Execution Rule (PRER) goes live April 14, blocking user orders from executing at abnormal prices during extreme volatility.",
+      "why_it_matters": "Why it matters: The guardrail is a direct response to flash-dislocation losses retail traders took during recent macro-driven selloffs, and it moves Binance's spot venue closer to the protections derivatives venues have offered for years.",
       "the_details": [
-        "Tokenized U.S. Treasuries crossed $12.88B in distributed asset value, up 31% in 30 days",
-        "Apollo Global signed a deal to acquire up to 9% of Morpho governance tokens over 4 years for DeFi lending infrastructure",
-        "Ethereum Foundation completed its 70,000 ETH staking target; ERC-8211 standard published for AI agent DeFi execution"
+        "Rule activates April 14 across Binance spot pairs",
+        "Orders that would fill significantly outside recent price ranges will be blocked rather than partially executed",
+        "Comes as retail flow has stayed thin through the Iran/Hormuz-driven drawdown"
       ],
-      "source": "p2p.org",
-      "source_url": "https://p2p.org/economy/defi-dispatch-defi-news-april-2026-issue-1/",
-      "category": "defi",
+      "source": "KuCoin Daily Market Report",
+      "source_url": "https://www.kucoin.com/news/articles/crypto-daily-market-report-april-13-2026",
+      "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-11T09:00:00Z"
+      "timestamp": "2026-04-14T00:00:00Z"
     }
   ]
 }

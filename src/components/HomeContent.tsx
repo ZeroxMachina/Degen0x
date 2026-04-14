@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { COURSES, type Course } from "@/data/courses";
 import { DAPPS, DAPP_LOGO_URLS, getHomepageDApps, type DApp, type Category, CATEGORIES_META } from "@/data/dapps";
+import HomeNewsSection from "@/components/HomeNewsSection";
 
 type Level = "newbie" | "intermediate" | "degen";
 type PlatformTab = "learn" | "courses" | "ecosystem" | "tools";
@@ -184,7 +185,7 @@ function DAppLogo({ dapp, size = 40 }: { dapp: DApp; size?: number }) {
       >
         <img
           src={logoUrl}
-          alt={`${dapp.name} app logo`}
+          alt={dapp.name}
           width={size}
           height={size}
           className="w-full h-full object-contain p-1"
@@ -684,6 +685,9 @@ export default function HomeContent() {
           CONTENT SECTIONS
       ══════════════════════════════════════════════════════════════════════ */}
       <div className={`transition-opacity duration-300 ${mounted ? "opacity-100" : "opacity-0"}`} aria-busy={!mounted}>
+
+        {/* ── SECTION: NEWS ── */}
+        <HomeNewsSection />
 
         {/* ── SECTION: LEARN ── */}
         <div
