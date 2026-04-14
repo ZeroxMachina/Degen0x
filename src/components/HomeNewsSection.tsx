@@ -136,10 +136,10 @@ export default function HomeNewsSection() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            The crypto hour, in smart brevity
+            Hourly alpha. Zero fluff.
           </h2>
           <p className="text-[#8e8e93] mt-2 max-w-lg">
-            Refreshed every hour with the {briefing.story_count} stories actually moving the market. No filler.
+            The {briefing.story_count} stories moving the market right now, updated every hour. Tap any card to read the source.
           </p>
         </div>
         <Link
@@ -187,6 +187,7 @@ export default function HomeNewsSection() {
 
           <h3 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight group-hover:text-[#f59e0b] transition-colors">
             {top.headline}
+            <span className="inline-block ml-2 text-[#636366] text-lg align-middle" aria-hidden="true">↗</span>
           </h3>
 
           <p className="text-[#adadad] mt-3 text-base leading-relaxed">{top.tldr}</p>
@@ -208,7 +209,7 @@ export default function HomeNewsSection() {
 
           <div className="mt-6 flex items-center gap-2 text-[#f59e0b] text-sm font-semibold">
             Read on {top.source}
-            <span className="transition-transform group-hover:translate-x-0.5">→</span>
+            <span className="transition-transform group-hover:translate-x-0.5">↗</span>
           </div>
         </a>
 
@@ -238,6 +239,7 @@ export default function HomeNewsSection() {
               </div>
               <h4 className="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-[#818cf8] transition-colors">
                 {s.headline}
+                <span className="inline-block ml-1.5 text-[#636366] text-xs align-middle" aria-hidden="true">↗</span>
               </h4>
               <p className="text-xs text-[#8e8e93] mt-1.5 line-clamp-2 leading-relaxed">
                 {s.tldr}

@@ -8,7 +8,7 @@ import { DAPPS, DAPP_LOGO_URLS, getHomepageDApps, type DApp, type Category, CATE
 import HomeNewsSection from "@/components/HomeNewsSection";
 
 type Level = "newbie" | "intermediate" | "degen";
-type PlatformTab = "learn" | "courses" | "ecosystem" | "tools";
+type PlatformTab = "news" | "learn" | "courses" | "ecosystem" | "tools";
 
 /* ════════════════════════════════════════════════════════════════════════════
    LEVEL CONTENT DATA
@@ -424,6 +424,7 @@ const PLATFORM_TABS: {
   accent: string;
   isNew?: boolean;
 }[] = [
+  { key: "news",      label: "News",      emoji: "📰", accent: "#f59e0b", isNew: true },
   { key: "learn",     label: "Learn",     emoji: "📖", accent: "#22c55e" },
   { key: "courses",   label: "Courses",   emoji: "🎓", accent: "#818cf8", isNew: true },
   { key: "ecosystem", label: "Ecosystem", emoji: "🌐", accent: "#06b6d4", isNew: true },
@@ -436,12 +437,13 @@ const PLATFORM_TABS: {
 
 export default function HomeContent() {
   const [level, setLevel] = useState<Level>("newbie");
-  const [activeTab, setActiveTab] = useState<PlatformTab>("learn");
+  const [activeTab, setActiveTab] = useState<PlatformTab>("news");
   const [mounted, setMounted] = useState(false);
   const [xp, setXp] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
 
   // Section refs for scroll-spy
+  const newsRef     = useRef<HTMLDivElement>(null);
   const learnRef    = useRef<HTMLDivElement>(null);
   const coursesRef  = useRef<HTMLDivElement>(null);
   const ecosystemRef = useRef<HTMLDivElement>(null);
@@ -472,6 +474,7 @@ export default function HomeContent() {
 
     const observers: IntersectionObserver[] = [];
     const sectionMap: { ref: React.RefObject<HTMLDivElement>; tab: PlatformTab }[] = [
+      { ref: newsRef,     tab: "news" },
       { ref: learnRef,    tab: "learn" },
       { ref: coursesRef,  tab: "courses" },
       { ref: ecosystemRef, tab: "ecosystem" },
@@ -497,6 +500,7 @@ export default function HomeContent() {
 
   const scrollToSection = useCallback((tab: PlatformTab) => {
     const refMap: Record<PlatformTab, React.RefObject<HTMLDivElement>> = {
+      news:      newsRef,
       learn:     learnRef,
       courses:   coursesRef,
       ecosystem: ecosystemRef,
@@ -687,7 +691,9 @@ export default function HomeContent() {
       <div className={`transition-opacity duration-300 ${mounted ? "opacity-100" : "opacity-0"}`} aria-busy={!mounted}>
 
         {/* ── SECTION: NEWS ── */}
-        <HomeNewsSection />
+        <div ref={newsRef}>
+          <HomeNewsSection />
+        </div>
 
         {/* ── SECTION: LEARN ── */}
         <div
