@@ -7,6 +7,12 @@ import { COURSES, type Course } from "@/data/courses";
 import { DAPPS, DAPP_LOGO_URLS, getHomepageDApps, type DApp, type Category, CATEGORIES_META } from "@/data/dapps";
 import HomeNewsSection from "@/components/HomeNewsSection";
 
+// Shape of the hourly news briefing payload we forward from the server
+// component so the news section renders with fresh data on first paint.
+interface HomeContentProps {
+  initialBriefing?: React.ComponentProps<typeof HomeNewsSection>["initialBriefing"];
+}
+
 type Level = "newbie" | "intermediate" | "degen";
 type PlatformTab = "news" | "learn" | "courses" | "ecosystem" | "tools";
 
@@ -435,7 +441,7 @@ const PLATFORM_TABS: {
    MAIN COMPONENT
 ════════════════════════════════════════════════════════════════════════════ */
 
-export default function HomeContent() {
+export default function HomeContent({ initialBriefing }: HomeContentProps = {}) {
   const [level, setLevel] = useState<Level>("newbie");
   const [activeTab, setActiveTab] = useState<PlatformTab>("news");
   const [mounted, setMounted] = useState(false);
@@ -692,7 +698,7 @@ export default function HomeContent() {
 
         {/* ── SECTION: NEWS ── */}
         <div ref={newsRef}>
-          <HomeNewsSection />
+          <HomeNewsSection initialBriefing={initialBriefing} />
         </div>
 
         {/* ── SECTION: LEARN ── */}

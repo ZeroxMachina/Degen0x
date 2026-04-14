@@ -4,6 +4,14 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import briefingData from "@/data/news-briefing.json";
 
+// ── Props ──────────────────────────────────────────────────
+// A server component can pass a freshly-read briefing as `initialBriefing`
+// to avoid the stale-flash on first paint. Falls back to the bundled JSON
+// (updated only on deploy) if no prop is supplied.
+interface HomeNewsSectionProps {
+  initialBriefing?: NewsBriefing;
+}
+
 // ── Types ──────────────────────────────────────────────────
 interface NewsStory {
   id: string;
@@ -77,10 +85,10 @@ function categoryColor(cat: string): string {
 }
 
 // ── Component ──────────────────────────────────────────────
-export default function HomeNewsSection() {
-  const initial = briefingData as unknown as NewsBriefing;
+export default function HomeNewsSection({ initialBriefing }: HomeNewsSectionProps = {}) {
+  const initial = initialBriefing ?? (briefingData as unknown as NewsBriefing);
   const [briefing, setBriefing] = useState<NewsBriefing>(initial);
-  const [isLive, setIsLive] = useState<boolean>(false);
+  const [isLive, setIsLive] = useState<boolean>(Boolean(initialBriefing));
 
   // Try to pull a fresher briefing from the API on mount + every 5 min.
   useEffect(() => {

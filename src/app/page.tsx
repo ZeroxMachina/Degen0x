@@ -1,30 +1,34 @@
 import { Metadata } from "next";
-import Link from "next/link";
-import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import { promises as fs } from "fs";
+import path from "path";
 import { SITE_NAME } from "@/lib/constants";
 import HomeContent from "@/components/HomeContent";
 
 export const metadata: Metadata = {
-  title: `degen0x - Onboarding the Next 1 Billion to Web3`,
+  title: `${SITE_NAME} - Onboarding the Next 1 Billion to Web3`,
   description: "The crypto world is powerful but intimidating. Free tools, honest reviews, and clear explanations. No account needed. No paywall. Ever.",
-  alternates: { canonical: "/" },
-  openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
-  twitter: { card: "summary_large_image" }};
-
-const breadcrumbData = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://degen0x.com/' },
-  ],
 };
 
-export default function HomePage() {
-  return (
-    <>
-      <HomeContent />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "degen0x - Onboarding the Next 1 Billion to Web3", "description": "The crypto world is powerful but intimidating. Free tools, honest reviews, and clear explanations. No account needed. No paywall. Ever.", "url": "https://degen0x.com/", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-</>
-  );
+// Regenerate the homepage at most once per minute so fresh hourly briefings
+// propagate quickly without waiting for a full redeploy.
+export const revalidate = 60;
+
+// Read the latest briefing from disk at request time. Using a static `import`
+// snapshots the JSON at build time, which is why the homepage news widget
+// was rendering stale stories until the next deploy.
+const BRIEFING_PATH = path.join(process.cwd(), "src", "data", "news-briefing.json");
+
+async function loadBriefing() {
+  try {
+    const raw = await fs.readFile(BRIEFING_PATH, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    // Fall through — HomeNewsSection has its own client-side fetch fallback.
+    return undefined;
+  }
+}
+
+export default async function HomePage() {
+  const initialBriefing = await loadBriefing();
+  return <HomeContent initialBriefing={initialBriefing} />;
 }

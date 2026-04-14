@@ -1,25 +1,105 @@
 [
   {
-    "id": "feed-2026-04-13-001",
-    "type": "system",
-    "title": "Full Catalog Launch: 1,797 Pages Live",
-    "message": "Every page on degen0x is now indexed — tools, guides, reviews, and comparisons across 74 categories.",
-    "actionUrl": "/learn",
-    "date": "2026-04-13"
+    "id": "feed-2026-04-14-038",
+    "type": "news",
+    "title": "📰 HSBC Completes Tokenized Deposit Pilot on Canton Network",
+    "message": "HSBC successfully ran its first public-blockchain tokenized deposit pilot on Canton, simulating atomic settlement against other digital assets in USD, GBP, EUR, HKD and SGD.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
   },
   {
-    "id": "feed-2026-04-13-002",
+    "id": "feed-2026-04-14-037",
     "type": "news",
-    "title": "SEO Upgrade: Structured Data on All Pages",
-    "message": "Every page now has JSON-LD schema, canonical URLs, and optimized metadata for better search visibility.",
-    "actionUrl": "/tools",
-    "date": "2026-04-13"
+    "title": "📰 White House Says CLARITY Act Deal Is 'Very Close'",
+    "message": "Top Trump crypto adviser Patrick Witt said outstanding hurdles on the CLARITY Act are clearing, signaling Senate passage could come within weeks.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-036",
+    "type": "news",
+    "title": "📰 Ether Outpaces Bitcoin as ETF Flows Split",
+    "message": "ETH jumped 8% in 24 hours while spot bitcoin ETFs bled $325M on April 13, the clearest sign yet of capital rotation into Ethereum.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-035",
+    "type": "news",
+    "title": "📰 Bitcoin Anchors Near $70K as Hormuz Blockade Keeps Crypto on Edge",
+    "message": "BTC is hovering near $70,000 and ether is down 4% after U.S.-Iran peace talks collapsed and Trump ordered a blockade of the Strait of Hormuz.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-034",
+    "type": "news",
+    "title": "📰 Ether Outpaces Bitcoin as ETF Flows Split",
+    "message": "Spot BTC ETFs bled $326M on April 13 while ether funds added $7.7M, as on-chain Ethereum activity jumped 41% week-over-week.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-033",
+    "type": "news",
+    "title": "📰 Ether Outpaces Bitcoin as ETF Flows Split, On-Chain Activity Jumps 41%",
+    "message": "Capital is rotating from spot BTC ETFs into ether funds as Ethereum's daily transactions surge 41% week-over-week to 3.6 million.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-032",
+    "type": "news",
+    "title": "📰 Bitcoin Reclaims $73,400 as Oil Retreats Below $100",
+    "message": "Bitcoin erased the weekend's Hormuz-blockade selloff and pushed back above $73,000 as crude oil slipped under $100 and U.S. stocks advanced.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-031",
+    "type": "news",
+    "title": "📰 Kraken Refuses Extortion Demand Over Insider Data Leak",
+    "message": "Kraken confirmed an extortion attempt tied to two insider-access incidents affecting about 2,000 accounts, but says no systems were breached and no client funds are at risk.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-030",
+    "type": "news",
+    "title": "📰 Hyperbridge Hacker Mints 1B Fake DOT, Walks With $237K",
+    "message": "An attacker forged a cross-chain message on Hyperbridge's Ethereum gateway, minted 1 billion bridged DOT, and dumped them for just $237K in ETH.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-029",
+    "type": "news",
+    "title": "📰 CLARITY Act Heads to Senate Banking Markup This Week",
+    "message": "The Digital Asset Market CLARITY Act returns to the Senate this week, with Banking Committee markup expected before month-end or crypto legislation slips past the midterms.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-028",
+    "type": "news",
+    "title": "📰 Hyperbridge Exploit Mints 1B Fake DOT, Nets Hacker Just $237K",
+    "message": "An attacker forged a cross-chain message to seize admin control of Hyperbridge's Ethereum DOT contract and dumped 1 billion minted tokens for $237,000 in ETH.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
+  },
+  {
+    "id": "feed-2026-04-14-027",
+    "type": "news",
+    "title": "📰 BlackRock Q1 Earnings Land Today With IBIT Flows in Focus",
+    "message": "BlackRock reports Q1 earnings Tuesday morning, and its IBIT Bitcoin ETF disclosures are the most-watched institutional crypto signal of the week.",
+    "actionUrl": "/news",
+    "date": "2026-04-14"
   },
   {
     "id": "feed-2026-04-12-001",
     "type": "news",
-    "title": "Anthropic's Mythos AI Exposes DeFi Security Flaws",
-    "message": "Anthropic's unreleased Mythos AI model discovered thousands of zero-day vulnerabilities in critical crypto infrastructure.",
+    "title": "📰 Anthropic's Mythos AI Exposes Critical DeFi Security Flaws",
+    "message": "Anthropic's unreleased Mythos AI model discovered thousands of zero-day vulnerabilities in critical crypto infrastructure, prompting an emergency meeting between Treasury Secretary Bessent and bank CEOs.",
     "actionUrl": "/news",
     "date": "2026-04-12"
   },
@@ -29,6 +109,30 @@
     "title": "New: Best Crypto Presales 2026",
     "message": "Our curated list of the most promising new crypto presales — vetted for legitimacy and upside potential.",
     "actionUrl": "/investing/best-new-crypto-presales-2026",
+    "date": "2026-04-10"
+  },
+  {
+    "id": "feed-2026-04-10-016",
+    "type": "news",
+    "title": "New: DCA vs Lump Sum Guide",
+    "message": "Dollar-cost averaging or lump sum? We break down when each crypto investing strategy wins.",
+    "actionUrl": "/investing/crypto-dollar-cost-averaging-vs-lump-sum",
+    "date": "2026-04-10"
+  },
+  {
+    "id": "feed-2026-04-10-017",
+    "type": "system",
+    "title": "5 New Investing Guides Published",
+    "message": "Presales, DCA vs lump sum, infrastructure tokens, DePIN, and restaking guides now live.",
+    "actionUrl": "/investing/best-new-crypto-presales-2026",
+    "date": "2026-04-10"
+  },
+  {
+    "id": "feed-2026-04-10-014",
+    "type": "system",
+    "title": "5 More Investing Guides Live",
+    "message": "AI crypto, undervalued tokens, gaming tokens, RWA picks, and whale watching guides now published.",
+    "actionUrl": "/investing/best-ai-crypto-projects-2026",
     "date": "2026-04-10"
   }
 ]

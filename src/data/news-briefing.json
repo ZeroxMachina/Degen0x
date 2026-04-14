@@ -1,127 +1,109 @@
 {
-  "generated_at": "2026-04-14T10:08:00Z",
-  "briefing_id": "briefing-2026-04-14-10",
-  "story_count": 7,
+  "generated_at": "2026-04-14T11:10:00Z",
+  "briefing_id": "briefing-2026-04-14-11",
+  "story_count": 6,
   "stories": [
     {
-      "id": "story-2026-04-14-10-001",
-      "headline": "White House Says CLARITY Act Deal Is 'Very Close'",
-      "slug": "white-house-clarity-act-very-close",
-      "tldr": "Top Trump crypto adviser Patrick Witt said outstanding hurdles on the CLARITY Act are clearing, signaling Senate passage could come within weeks.",
-      "why_it_matters": "Why it matters: CLARITY would split crypto oversight between the SEC and CFTC and finally give exchanges, DeFi protocols, and token issuers a U.S. rulebook — the single biggest regulatory unlock the industry has chased since 2022.",
+      "id": "story-2026-04-14-11-001",
+      "headline": "HSBC Completes Tokenized Deposit Pilot on Canton Network",
+      "slug": "hsbc-tokenized-deposit-pilot-canton-network",
+      "tldr": "HSBC successfully ran its first public-blockchain tokenized deposit pilot on Canton, simulating atomic settlement against other digital assets in USD, GBP, EUR, HKD and SGD.",
+      "why_it_matters": "Why it matters: One of the world's largest banks just validated that bank deposits can settle atomically against tokenized assets on a public chain — the core building block institutions have been waiting on before moving real client balances on-chain.",
       "the_details": [
-        "Witt said negotiations 'made considerable progress in the background' and 'we're very close to closing them out'",
-        "Senate returns from recess this week with CLARITY back on the agenda alongside the National Credit Union Administration's stablecoin issuer comment window closing",
-        "Bank earnings (BlackRock, JPM, C) hit the same week, putting institutional crypto exposure under fresh scrutiny"
+        "Pilot ran via HSBC's Global Payments Solutions unit on April 13 using its Tokenised Deposit Service (TDS)",
+        "Demonstrated interoperability by bridging HSBC's deposit ledger to an external public blockchain for the first time",
+        "Canton Coin (CC) jumped ~3.8% on the news; HSBC says this is step one toward cross-border deposit interoperability"
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/13/white-house-s-top-crypto-adviser-witt-says-talks-clearing-other-points-on-clarity-act",
+      "source": "Disruption Banking",
+      "source_url": "https://www.disruptionbanking.com/2026/04/13/hsbc-announces-successful-tokenised-deposit-pilot-on-the-canton-network/",
+      "category": "infrastructure",
+      "impact": "high",
+      "timestamp": "2026-04-13T14:00:00Z"
+    },
+    {
+      "id": "story-2026-04-14-11-002",
+      "headline": "SEC Exempts Crypto Interface Operators From Broker Registration",
+      "slug": "sec-exempts-crypto-interfaces-broker-registration",
+      "tldr": "The SEC said it will not object to operators of crypto asset user interfaces offering those services without registering as broker-dealers, effective for the next five years.",
+      "why_it_matters": "Why it matters: This removes one of the industry's biggest regulatory chokepoints — front-end developers and wallet UIs can now operate without SEC broker-dealer licensure, clearing a structural overhang that's hung over DeFi since 2022.",
+      "the_details": [
+        "Guidance issued April 13 by SEC staff under Chair Paul Atkins",
+        "Statement is time-limited — considered withdrawn five years from April 13, 2031",
+        "Pairs with the 'Reg Crypto' fundraising framework now sitting at the White House OIRA awaiting publication"
+      ],
+      "source": "PYMNTS",
+      "source_url": "https://www.pymnts.com/cryptocurrency/2026/sec-exempts-crypto-interfaces-from-broker-registration",
       "category": "regulation",
       "impact": "high",
       "timestamp": "2026-04-13T18:00:00Z"
     },
     {
-      "id": "story-2026-04-14-10-002",
-      "headline": "PARITY Act Returns to Rewrite U.S. Crypto Tax Rules",
-      "slug": "parity-act-crypto-tax-bill-returns",
-      "tldr": "Reps. Steven Horsford (D) and Max Miller (R) re-introduced the PARITY Act, a bipartisan bill that would defer staking and mining taxes and exempt small stablecoin payments.",
-      "why_it_matters": "Why it matters: The bill would close the wash-sale loophole that crypto traders have used since 2014 — but in exchange, gives stakers, miners, and everyday stablecoin users meaningful relief U.S. lawmakers have refused for years.",
+      "id": "story-2026-04-14-11-003",
+      "headline": "Ether ETFs Log Best Week of 2026 as Flows Rotate From BTC",
+      "slug": "ether-etfs-best-week-2026-flows-rotate",
+      "tldr": "Spot ether ETFs pulled in $187M last week — the strongest showing of 2026 — while spot BTC ETFs shed $325M on April 13 as capital rotates into ETH.",
+      "why_it_matters": "Why it matters: Cumulative ETH ETF inflows just hit a record $11.68 billion, reversing three weeks of outflows. If the rotation holds, it resets the ETH/BTC ratio narrative that dominated 2025's 'Bitcoin-dominance' trade.",
       "the_details": [
-        "Staking and mining rewards taxed only at sale, not at receipt — a major win for validators and pools",
-        "No gain or loss recognized on stablecoin payments where cost basis is within 1% of redemption value",
-        "30-day wash-sale rule would now apply to crypto, ending instant tax-loss harvesting strategies",
-        "Bill text was re-released March 26 and is targeted for formal introduction this spring"
+        "ETH up ~8% in 24 hours vs. BTC's ~5% gain; Ethereum daily transactions +41% week-over-week to 3.6M",
+        "Three prior weeks had seen ~$308M in ether ETF outflows — now fully reversed",
+        "Fees and stablecoin transfer volume on Ethereum are both down ~45-50% despite the activity spike, suggesting smaller, retail-sized transactions"
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/13/u-s-lawmakers-take-another-swing-at-crypto-tax-policy-with-revised-bill",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-13T16:30:00Z"
-    },
-    {
-      "id": "story-2026-04-14-10-003",
-      "headline": "Bitmine Hits NYSE With 4.8M ETH and $4B Buyback",
-      "slug": "bitmine-nyse-uplist-eth-treasury",
-      "tldr": "Tom Lee's Bitmine Immersion uplisted from NYSE American to the main NYSE board, now holding 4.8 million ETH worth over $10 billion plus a $4B share buyback.",
-      "why_it_matters": "Why it matters: Bitmine has quietly become the world's largest ETH treasury — roughly 4% of all ether ever issued — and is openly targeting 5%. That's MicroStrategy-scale concentration, but for Ethereum.",
-      "the_details": [
-        "Added 71,252 ETH in the week ending April 5, lifting holdings to 4.803M tokens",
-        "Board lifted 2025 share repurchase authorization from $1B to $4B — among the 10 largest buybacks announced in 2026",
-        "Uplist to the senior NYSE board took effect April 9, opening the door to broader institutional and index inclusion"
-      ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/396865/tom-lees-bitmine-uplists-nyse-eth-4-billion-buyback-authorization",
-      "category": "ethereum",
-      "impact": "high",
-      "timestamp": "2026-04-09T13:30:00Z"
-    },
-    {
-      "id": "story-2026-04-14-10-004",
-      "headline": "Anthropic's Mythos AI Spooks DeFi Security Stack",
-      "slug": "anthropic-mythos-ai-defi-security",
-      "tldr": "Anthropic's withheld Mythos Preview model autonomously found zero-days in TLS, AES-GCM and SSH — the same primitives DeFi, exchanges, and bridges depend on.",
-      "why_it_matters": "Why it matters: Friction-based defenses crypto leans on — multisig, timelocks, audit reports — get materially weaker when adversaries can run an AI that out-hacks human researchers. Quantum was theoretical; this is shipping now.",
-      "the_details": [
-        "Anthropic deemed Mythos too dangerous to release; access limited to a small group of major tech firms",
-        "Vulnerabilities span every major OS, browser, and core cryptography library used by HTTPS, exchanges, and DeFi node infrastructure",
-        "Anthropic explicitly warned that 'mitigations whose security value comes primarily from friction rather than hard barriers may become considerably weaker'"
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/08/move-over-bitcoin-and-quantum-risks-anthropic-s-mythos-ai-changes-everything-for-defi",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-08T14:00:00Z"
-    },
-    {
-      "id": "story-2026-04-14-10-005",
-      "headline": "Securitize Brings Tokenized RWAs to TRON",
-      "slug": "securitize-tron-tokenized-rwa-integration",
-      "tldr": "Securitize, the BlackRock-backed RWA platform with $4B+ AUM, integrated with TRON to expand its tokenized funds onto the network with $7.9T in annual transfer volume.",
-      "why_it_matters": "Why it matters: TRON's stablecoin rails dwarf most chains in real-world payment volume — putting Apollo, BlackRock, and Hamilton Lane tokenized funds where actual dollars already move accelerates the on-chain TradFi flywheel.",
-      "the_details": [
-        "Tokenized funds and securities issued via Securitize will be available on TRON's 373M-account network with $26B TVL",
-        "A new RWA product purpose-built for TRON is in the works; details to come 'in the near future'",
-        "Adds to Securitize's multichain footprint alongside Ethereum, Avalanche, Polygon, and Aptos"
-      ],
-      "source": "Bitcoin.com News",
-      "source_url": "https://news.bitcoin.com/securitize-integrates-with-tron-to-bring-tokenized-real-world-assets-to-one-of-the-worlds-largest-blockchains/",
-      "category": "defi",
-      "impact": "medium",
-      "timestamp": "2026-04-10T13:00:00Z"
-    },
-    {
-      "id": "story-2026-04-14-10-006",
-      "headline": "Bitcoin Steadies Near $73K as Hormuz Risk Eases",
-      "slug": "bitcoin-steadies-73k-hormuz-risk-eases",
-      "tldr": "BTC has clawed back to $73,400 and crude slipped under $100 as markets digest a fragile Middle East stand-down after last weekend's Trump blockade order.",
-      "why_it_matters": "Why it matters: Crypto is still trading as a macro-risk asset tethered to oil and Middle East headlines. Until that link breaks, every Hormuz tweet is a price catalyst — including in the wrong direction.",
-      "the_details": [
-        "BTC briefly slipped below $71,000 on April 12 after Trump ordered a Strait of Hormuz blockade",
-        "Vance said U.S.–Iran negotiators failed to extend their two-week ceasefire, knocking majors 2–4%",
-        "Spot bitcoin ETFs bled $325.8M on April 13 — Fidelity's FBTC alone shed $229M"
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/13/clarity-act-returns-to-u-s-senate-bank-earnings-crypto-week-ahead",
+      "source_url": "https://www.coindesk.com/markets/2026/04/14/ether-outpaces-bitcoin-as-etf-flows-split-and-ethereum-activity-jumps-41-on-week",
       "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-14T09:30:00Z"
+    },
+    {
+      "id": "story-2026-04-14-11-004",
+      "headline": "X Money Launch Imminent; Product Head Teases Crypto Move",
+      "slug": "x-money-launch-imminent-crypto-tease",
+      "tldr": "With X Money set to go live this month, X head of product Nikita Bier posted that 'crypto has had a rough year — maybe we should launch something to fix it,' pulling 677K views.",
+      "why_it_matters": "Why it matters: X Money rolls out in 40+ U.S. states with Visa-backed peer-to-peer, debit, and deposits — but the crypto tease signals Musk may wire blockchain rails beneath what's officially a fiat product, putting a ~600M-user distribution channel in play.",
+      "the_details": [
+        "Officially fiat-only at launch: P2P, bank deposits, Visa debit card, cashback, 6% APY claim",
+        "Licensed subsidiary operational in 40+ U.S. states via Visa partnership",
+        "DOGE briefly popped ~8% on the Bier comment before fading; no official crypto feature confirmed"
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/14/crypto-has-had-a-rough-year-x-s-nikita-bier-hints-as-x-money-launch-nears",
+      "category": "adoption",
       "impact": "medium",
       "timestamp": "2026-04-14T08:00:00Z"
     },
     {
-      "id": "story-2026-04-14-10-007",
-      "headline": "Riot Sold $290M of Bitcoin in Q1 to Fund Hashrate",
-      "slug": "riot-platforms-q1-bitcoin-sales",
-      "tldr": "Riot Platforms unloaded $289.5M of BTC in Q1 2026 to fund operations as deployed hashrate hit 42.5 EH/s, up 26% year-over-year.",
-      "why_it_matters": "Why it matters: Public miners are increasingly net sellers, not HODLers — quietly redirecting freshly mined BTC from corporate treasury into rig expansion and AI/HPC pivots. That changes the post-halving sell pressure picture.",
+      "id": "story-2026-04-14-11-005",
+      "headline": "Tillis to Release Stablecoin Yield Draft as CLARITY Markup Nears",
+      "slug": "tillis-stablecoin-yield-draft-clarity-markup",
+      "tldr": "Sen. Thom Tillis plans to publish revised stablecoin yield language this week, clearing one of the last roadblocks before a late-April Senate Banking Committee markup of the CLARITY Act.",
+      "why_it_matters": "Why it matters: The Tillis-Alsobrooks compromise bans passive yield on stablecoin balances but allows activity-based rewards — a split that sets the rules of the road for a ~$321B stablecoin market and shapes how Circle, Paxos, and banks can compete.",
       "the_details": [
-        "Average operating hashrate climbed 23% YoY to 36.4 EH/s",
-        "Sales offset capex on rig deployments and grid-scale infrastructure",
-        "Continues a trend across listed miners (CleanSpark, Marathon) of rotating BTC into operational growth rather than accumulating"
+        "Markup targeted for second half of April, after Easter recess ended April 13",
+        "Three issues still open: DeFi provisions, ethics language on officials' crypto holdings, and community bank deregulatory attachments",
+        "If CLARITY doesn't reach the Senate floor by May, it likely slips past the midterm cycle"
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/396289/riot-platforms-sells-290-million-usd-bitcoin",
-      "category": "bitcoin",
+      "source": "Unchained",
+      "source_url": "https://unchainedcrypto.com/tillis-plans-to-release-stablecoin-yield-draft-this-week-with-clarity-act-markup-targeted-for-late-april-unchained/",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-13T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-14-11-006",
+      "headline": "Lawmakers Re-Up Crypto Tax Overhaul With PARITY Act",
+      "slug": "lawmakers-re-up-crypto-tax-parity-act",
+      "tldr": "Reps. Steven Horsford (D-NV) and Max Miller (R-OH) reintroduced the PARITY Act, a bipartisan bill that would rewrite how the IRS treats digital assets.",
+      "why_it_matters": "Why it matters: Current IRS treatment creates tax drag on everyday crypto use — swapping, staking rewards, and DeFi transactions all trigger events. PARITY is the most serious bipartisan attempt yet to fix that without waiting on Treasury guidance.",
+      "the_details": [
+        "Full name: Digital Asset Protection, Accountability, Regulation, Innovation, Taxation and Yields Act",
+        "Revised version re-introduced April 13 after stalling in prior Congress",
+        "Filed alongside — but separate from — the CLARITY Act market structure push"
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/13/u-s-lawmakers-take-another-swing-at-crypto-tax-policy-with-revised-bill",
+      "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-11T15:00:00Z"
+      "timestamp": "2026-04-13T16:00:00Z"
     }
   ]
 }

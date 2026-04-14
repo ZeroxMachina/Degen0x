@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { promises as fs } from "fs";
+import path from "path";
 import Breadcrumb from "@/components/Breadcrumb";
-import briefingData from "@/data/news-briefing.json";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 
 // ── Types ──────────────────────────────────────────────────
@@ -27,7 +28,15 @@ interface Briefing {
   stories: BriefingStory[];
 }
 
-const briefing = briefingData as unknown as Briefing;
+// Read the briefing JSON from disk at request time. Using a static `import`
+// snapshots the file at build time, which is why stories stopped updating
+// between hourly cron runs without a redeploy.
+const BRIEFING_PATH = path.join(process.cwd(), "src", "data", "news-briefing.json");
+
+async function loadBriefing(): Promise<Briefing> {
+  const raw = await fs.readFile(BRIEFING_PATH, "utf8");
+  return JSON.parse(raw) as Briefing;
+}
 
 const CATEGORY_COLORS: Record<string, string> = {
   regulation: "#ef4444",
@@ -73,13 +82,18 @@ interface Props {
 }
 
 // ── Static params (regenerated on each deploy) ─────────────
-export function generateStaticParams() {
+export async function generateStaticParams() {
+  const briefing = await loadBriefing();
   return briefing.stories.map((s) => ({ slug: s.slug }));
 }
+
+// New slugs that appear in the JSON after deploy should still render via ISR.
+export const dynamicParams = true;
 
 // ── SEO metadata ───────────────────────────────────────────
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
+  const briefing = await loadBriefing();
   const story = briefing.stories.find((s) => s.slug === slug);
   if (!story) return { title: "Not Found" };
 
@@ -110,6 +124,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 // ── Page ───────────────────────────────────────────────────
 export default async function BriefingStoryPage({ params }: Props) {
   const { slug } = await params;
+  const briefing = await loadBriefing();
   const story = briefing.stories.find((s) => s.slug === slug);
   if (!story) notFound();
 
@@ -262,5 +277,7 @@ export default async function BriefingStoryPage({ params }: Props) {
   );
 }
 
-// Revalidate hourly so fresh briefings show up without a rebuild if ISR kicks in.
-export const revalidate = 3600;
+// ISR: regenerate these pages at most once a minute so fresh hourly briefings
+// propagate quickly without rebuilding the whole site. Actual data reads
+// happen from disk in `loadBriefing`.
+export const revalidate = 60;
