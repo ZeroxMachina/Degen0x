@@ -139,7 +139,7 @@ export default function HomeNewsSection() {
             Hourly alpha. Zero fluff.
           </h2>
           <p className="text-[#8e8e93] mt-2 max-w-lg">
-            The {briefing.story_count} stories moving the market right now, updated every hour. Tap any card to read the source.
+            The {briefing.story_count} stories moving the market right now, distilled and updated every hour.
           </p>
         </div>
         <Link
@@ -153,10 +153,8 @@ export default function HomeNewsSection() {
       {/* Layout: 1 hero + 4 stacked */}
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
         {/* Hero (top story) */}
-        <a
-          href={top.source_url}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href={`/news/briefing/${top.slug}`}
           className="lg:col-span-3 group relative overflow-hidden rounded-2xl bg-[#0f1013] border border-[#1c1c1e] p-6 sm:p-8 hover:border-[#f59e0b]/60 transition-all flex flex-col"
         >
           {/* Top meta */}
@@ -187,7 +185,6 @@ export default function HomeNewsSection() {
 
           <h3 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight group-hover:text-[#f59e0b] transition-colors">
             {top.headline}
-            <span className="inline-block ml-2 text-[#636366] text-lg align-middle" aria-hidden="true">↗</span>
           </h3>
 
           <p className="text-[#adadad] mt-3 text-base leading-relaxed">{top.tldr}</p>
@@ -208,19 +205,17 @@ export default function HomeNewsSection() {
           )}
 
           <div className="mt-6 flex items-center gap-2 text-[#f59e0b] text-sm font-semibold">
-            Read on {top.source}
-            <span className="transition-transform group-hover:translate-x-0.5">↗</span>
+            Read full briefing
+            <span className="transition-transform group-hover:translate-x-0.5">→</span>
           </div>
-        </a>
+        </Link>
 
         {/* Stacked: 4 shorter stories */}
         <div className="lg:col-span-2 flex flex-col gap-3">
           {rest.map((s) => (
-            <a
+            <Link
               key={s.id}
-              href={s.source_url}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`/news/briefing/${s.slug}`}
               className="group relative rounded-2xl bg-[#0f1013] border border-[#1c1c1e] p-4 hover:border-[#6366f1]/50 transition-all flex flex-col"
             >
               <div className="flex items-center gap-2 mb-2 flex-wrap">
@@ -239,12 +234,11 @@ export default function HomeNewsSection() {
               </div>
               <h4 className="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-[#818cf8] transition-colors">
                 {s.headline}
-                <span className="inline-block ml-1.5 text-[#636366] text-xs align-middle" aria-hidden="true">↗</span>
               </h4>
               <p className="text-xs text-[#8e8e93] mt-1.5 line-clamp-2 leading-relaxed">
                 {s.tldr}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
