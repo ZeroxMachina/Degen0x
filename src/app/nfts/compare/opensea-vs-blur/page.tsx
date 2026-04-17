@@ -8,6 +8,7 @@ import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -150,6 +151,12 @@ export default function OpenSeaVsBlurPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Opensea vs Blur — degen0x"
+        url="/nfts/compare/opensea-vs-blur"
+        description="A head-to-head look at Opensea and Blur: product, fees, risk, and who each one is built for."
+        items={["Opensea", "Blur"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

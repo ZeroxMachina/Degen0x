@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -188,6 +189,12 @@ export default function CryptoComVsBinancePage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Crypto Com vs Binance — degen0x"
+        url="/exchanges/compare/crypto-com-vs-binance"
+        description="A head-to-head look at Crypto Com and Binance: product, fees, risk, and who each one is built for."
+        items={["Crypto Com", "Binance"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/crypto-com-vs-binance" />
     </div>

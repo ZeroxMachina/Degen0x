@@ -9,6 +9,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -189,6 +190,12 @@ export default function TrezorVsColdcardPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Trezor vs Coldcard — degen0x"
+        url="/wallets/compare/trezor-vs-coldcard"
+        description="A head-to-head look at Trezor and Coldcard: product, fees, risk, and who each one is built for."
+        items={["Trezor", "Coldcard"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/trezor-vs-coldcard" />
     </div>

@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `CoinTracker vs ZenLedger 2026: Which Crypto Tax Software Is Better?`,
@@ -135,6 +136,12 @@ export default function CoinTrackerVsZenLedgerPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Cointracker vs Zenledger — degen0x"
+        url="/taxes/compare/cointracker-vs-zenledger"
+        description="A head-to-head look at Cointracker and Zenledger: product, fees, risk, and who each one is built for."
+        items={["Cointracker", "Zenledger"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

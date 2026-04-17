@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -417,6 +418,12 @@ export default function HotWalletVsColdWallet() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hot Wallet vs Cold Wallet: Security vs Convenience Guide", "description": "Compare hot and cold wallets: security, convenience, use cases. Learn when to use each for managing crypto assets safely.", "url": "https://degen0x.com/compare/hot-wallet-vs-cold-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <CompareSchema
+        title="Hot Wallet vs Cold Wallet — degen0x"
+        url="/compare/hot-wallet-vs-cold-wallet"
+        description="A head-to-head look at Hot Wallet and Cold Wallet: product, fees, risk, and who each one is built for."
+        items={["Hot Wallet", "Cold Wallet"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/hot-wallet-vs-cold-wallet" />
       </article>

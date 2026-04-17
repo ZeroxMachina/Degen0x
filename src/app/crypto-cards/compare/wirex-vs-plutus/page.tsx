@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -256,6 +257,12 @@ export default function WirexVsPlutusPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Wirex vs Plutus — degen0x"
+        url="/crypto-cards/compare/wirex-vs-plutus"
+        description="A head-to-head look at Wirex and Plutus: product, fees, risk, and who each one is built for."
+        items={["Wirex", "Plutus"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/crypto-cards/compare/wirex-vs-plutus" />
     </div>

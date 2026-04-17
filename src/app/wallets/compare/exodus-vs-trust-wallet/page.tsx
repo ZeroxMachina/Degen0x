@@ -9,6 +9,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -205,6 +206,12 @@ export default function ExodusVsTrustWalletPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Exodus vs Trust Wallet — degen0x"
+        url="/wallets/compare/exodus-vs-trust-wallet"
+        description="A head-to-head look at Exodus and Trust Wallet: product, fees, risk, and who each one is built for."
+        items={["Exodus", "Trust Wallet"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/exodus-vs-trust-wallet" />
     </div>

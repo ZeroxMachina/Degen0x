@@ -7,6 +7,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -131,6 +132,12 @@ export default function CoinbaseVsCashAppPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Coinbase vs Cash App — degen0x"
+        url="/exchanges/compare/coinbase-vs-cash-app"
+        description="A head-to-head look at Coinbase and Cash App: product, fees, risk, and who each one is built for."
+        items={["Coinbase", "Cash App"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/coinbase-vs-cash-app" />
     </div>

@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `EVM vs Solana Wallets (2026) | degen0x`,
@@ -121,6 +122,12 @@ export default function EvmVsSolanaWalletsPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Evm vs Solana Wallets — degen0x"
+        url="/wallets/compare/evm-vs-solana-wallets"
+        description="A head-to-head look at Evm and Solana Wallets: product, fees, risk, and who each one is built for."
+        items={["Evm", "Solana Wallets"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/evm-vs-solana-wallets" />
     </div>

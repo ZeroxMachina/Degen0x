@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Aave vs Compound 2026: Which DeFi Lending Protocol Is Better?`,
@@ -135,6 +136,12 @@ export default function AaveVsCompoundPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Aave vs Compound — degen0x"
+        url="/defi-lending/compare/aave-vs-compound"
+        description="A head-to-head look at Aave and Compound: product, fees, risk, and who each one is built for."
+        items={["Aave", "Compound"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

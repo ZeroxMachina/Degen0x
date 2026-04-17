@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `Solana vs Ethereum (2026) | degen0x`, description: `Solana vs Ethereum comparison for ${CURRENT_YEAR}. Speed, fees, DeFi ecosystem, developer activity, and investment thesis compared.` ,
   alternates: { canonical: "/investing/compare/solana-vs-ethereum" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Solana vs Ethereum — degen0x"
+        url="/investing/compare/solana-vs-ethereum"
+        description="A head-to-head look at Solana and Ethereum: product, fees, risk, and who each one is built for."
+        items={["Solana", "Ethereum"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

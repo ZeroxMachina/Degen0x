@@ -8,6 +8,7 @@ import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -154,6 +155,12 @@ export default function TensorVsMagicEdenPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Tensor vs Magic Eden — degen0x"
+        url="/nfts/compare/tensor-vs-magic-eden"
+        description="A head-to-head look at Tensor and Magic Eden: product, fees, risk, and who each one is built for."
+        items={["Tensor", "Magic Eden"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

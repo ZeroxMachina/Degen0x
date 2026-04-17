@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -199,6 +200,12 @@ export default function KrakenVsCoinbasePage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Kraken vs Coinbase — degen0x"
+        url="/exchanges/compare/kraken-vs-coinbase"
+        description="A head-to-head look at Kraken and Coinbase: product, fees, risk, and who each one is built for."
+        items={["Kraken", "Coinbase"]}
+      />
       <AuthoritySources url="/exchanges/compare/kraken-vs-coinbase" />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/kraken-vs-coinbase" />

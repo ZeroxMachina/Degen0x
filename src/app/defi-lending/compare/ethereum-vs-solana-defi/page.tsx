@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Ethereum vs Solana DeFi Lending 2026: Chain Comparison`,
@@ -135,6 +136,12 @@ export default function EthereumVsSolanaDefiPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Ethereum vs Solana DEFI — degen0x"
+        url="/defi-lending/compare/ethereum-vs-solana-defi"
+        description="A head-to-head look at Ethereum and Solana DEFI: product, fees, risk, and who each one is built for."
+        items={["Ethereum", "Solana DEFI"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

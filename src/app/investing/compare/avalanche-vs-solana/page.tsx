@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `Avalanche vs Solana (2026) | degen0x`, description: `Avalanche vs Solana comparison for ${CURRENT_YEAR}. Subnet architecture vs monolithic performance — speed, fees, DeFi, and investment potential compared.` ,
   alternates: { canonical: "/investing/compare/avalanche-vs-solana" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Avalanche vs Solana — degen0x"
+        url="/investing/compare/avalanche-vs-solana"
+        description="A head-to-head look at Avalanche and Solana: product, fees, risk, and who each one is built for."
+        items={["Avalanche", "Solana"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

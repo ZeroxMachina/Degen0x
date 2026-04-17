@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -194,6 +195,12 @@ export default function BitgetVsBybitPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Bitget vs Bybit — degen0x"
+        url="/exchanges/compare/bitget-vs-bybit"
+        description="A head-to-head look at Bitget and Bybit: product, fees, risk, and who each one is built for."
+        items={["Bitget", "Bybit"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/bitget-vs-bybit" />
     </div>

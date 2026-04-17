@@ -9,6 +9,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -203,6 +204,12 @@ export default function CoinbaseWalletVsMetaMaskPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Coinbase Wallet vs Metamask — degen0x"
+        url="/wallets/compare/coinbase-wallet-vs-metamask"
+        description="A head-to-head look at Coinbase Wallet and Metamask: product, fees, risk, and who each one is built for."
+        items={["Coinbase Wallet", "Metamask"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/coinbase-wallet-vs-metamask" />
     </div>

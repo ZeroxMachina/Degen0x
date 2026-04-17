@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -195,6 +196,12 @@ export default function BinanceVsOkxPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Binance vs Okx — degen0x"
+        url="/exchanges/compare/binance-vs-okx"
+        description="A head-to-head look at Binance and Okx: product, fees, risk, and who each one is built for."
+        items={["Binance", "Okx"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/binance-vs-okx" />
     </div>

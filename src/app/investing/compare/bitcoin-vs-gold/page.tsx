@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Bitcoin vs Gold (2026) - Investment Comparison | degen0x`,
@@ -131,6 +132,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Bitcoin vs Gold — degen0x"
+        url="/investing/compare/bitcoin-vs-gold"
+        description="A head-to-head look at Bitcoin and Gold: product, fees, risk, and who each one is built for."
+        items={["Bitcoin", "Gold"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

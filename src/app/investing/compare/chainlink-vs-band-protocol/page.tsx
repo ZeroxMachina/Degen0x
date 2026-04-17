@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `Chainlink vs Band Protocol (2026) | degen0x`, description: `Chainlink vs Band Protocol oracle comparison for ${CURRENT_YEAR}. Data feeds, security, adoption, cross-chain support, and investment thesis compared.` ,
   alternates: { canonical: "/investing/compare/chainlink-vs-band-protocol" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Chainlink vs Band Protocol — degen0x"
+        url="/investing/compare/chainlink-vs-band-protocol"
+        description="A head-to-head look at Chainlink and Band Protocol: product, fees, risk, and who each one is built for."
+        items={["Chainlink", "Band Protocol"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

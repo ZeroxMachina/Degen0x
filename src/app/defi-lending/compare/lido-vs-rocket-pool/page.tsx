@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Lido vs Rocket Pool 2026: Which Liquid Staking Protocol Is Better?`,
@@ -116,6 +117,12 @@ export default function LidoVsRocketPoolPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Lido vs Rocket Pool — degen0x"
+        url="/defi-lending/compare/lido-vs-rocket-pool"
+        description="A head-to-head look at Lido and Rocket Pool: product, fees, risk, and who each one is built for."
+        items={["Lido", "Rocket Pool"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

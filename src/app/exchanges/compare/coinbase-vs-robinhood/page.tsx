@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -197,6 +198,12 @@ export default function CoinbaseVsRobinhoodPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Coinbase vs Robinhood — degen0x"
+        url="/exchanges/compare/coinbase-vs-robinhood"
+        description="A head-to-head look at Coinbase and Robinhood: product, fees, risk, and who each one is built for."
+        items={["Coinbase", "Robinhood"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/coinbase-vs-robinhood" />
     </div>

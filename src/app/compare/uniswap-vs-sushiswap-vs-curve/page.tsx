@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -387,6 +388,12 @@ export default function UniswapVsSushiSwapVsCurve() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Uniswap vs SushiSwap vs Curve: DEX Comparison 2026", "description": "Compare Uniswap, SushiSwap, and Curve: AMM models, fees, TVL, token utility, multi-chain support. Which DEX wins?", "url": "https://degen0x.com/compare/uniswap-vs-sushiswap-vs-curve", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <CompareSchema
+        title="Sushiswap vs Curve — degen0x"
+        url="/compare/uniswap-vs-sushiswap-vs-curve"
+        description="A head-to-head look at Sushiswap and Curve: product, fees, risk, and who each one is built for."
+        items={["Sushiswap", "Curve"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/uniswap-vs-sushiswap-vs-curve" />
       </article>

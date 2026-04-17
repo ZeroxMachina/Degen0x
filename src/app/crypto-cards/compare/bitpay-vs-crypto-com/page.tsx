@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -255,6 +256,12 @@ export default function BitPayVsCryptoComPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Bitpay vs Crypto Com — degen0x"
+        url="/crypto-cards/compare/bitpay-vs-crypto-com"
+        description="A head-to-head look at Bitpay and Crypto Com: product, fees, risk, and who each one is built for."
+        items={["Bitpay", "Crypto Com"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/crypto-cards/compare/bitpay-vs-crypto-com" />
     </div>

@@ -7,6 +7,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -132,6 +133,12 @@ export default function SpotVsDerivativesPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Spot vs Derivatives — degen0x"
+        url="/exchanges/compare/spot-vs-derivatives"
+        description="A head-to-head look at Spot and Derivatives: product, fees, risk, and who each one is built for."
+        items={["Spot", "Derivatives"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/spot-vs-derivatives" />
     </div>

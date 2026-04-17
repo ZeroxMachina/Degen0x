@@ -9,6 +9,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -190,6 +191,12 @@ export default function MetamaskVsTrustWalletPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Metamask vs Trust Wallet — degen0x"
+        url="/wallets/compare/metamask-vs-trust-wallet"
+        description="A head-to-head look at Metamask and Trust Wallet: product, fees, risk, and who each one is built for."
+        items={["Metamask", "Trust Wallet"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/metamask-vs-trust-wallet" />
     </div>

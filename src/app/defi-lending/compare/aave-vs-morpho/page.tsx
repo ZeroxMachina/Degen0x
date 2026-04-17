@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Aave vs Morpho 2026: Which DeFi Lending Protocol Is Better?`,
@@ -137,6 +138,12 @@ export default function AaveVsMorphoPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Aave vs Morpho — degen0x"
+        url="/defi-lending/compare/aave-vs-morpho"
+        description="A head-to-head look at Aave and Morpho: product, fees, risk, and who each one is built for."
+        items={["Aave", "Morpho"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

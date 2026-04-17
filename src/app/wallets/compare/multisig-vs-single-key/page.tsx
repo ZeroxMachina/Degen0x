@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Multisig vs Single-Key Wallets (2026) | degen0x`,
@@ -121,6 +122,12 @@ export default function MultisigVsSingleKeyPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Multisig vs Single Key — degen0x"
+        url="/wallets/compare/multisig-vs-single-key"
+        description="A head-to-head look at Multisig and Single Key: product, fees, risk, and who each one is built for."
+        items={["Multisig", "Single Key"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/multisig-vs-single-key" />
     </div>

@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `Cosmos vs Polkadot (2026) | degen0x`, description: `Cosmos vs Polkadot comparison for ${CURRENT_YEAR}. Two leading interoperability protocols compared on architecture, ecosystem, staking, and investment thesis.` ,
   alternates: { canonical: "/investing/compare/cosmos-vs-polkadot" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Cosmos vs Polkadot — degen0x"
+        url="/investing/compare/cosmos-vs-polkadot"
+        description="A head-to-head look at Cosmos and Polkadot: product, fees, risk, and who each one is built for."
+        items={["Cosmos", "Polkadot"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

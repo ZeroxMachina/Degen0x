@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -407,6 +408,12 @@ export default function ArbitrumVsOptimism() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Arbitrum vs Optimism: L2 Comparison 2026 Guide", "description": "Compare Arbitrum and Optimism Layer 2 solutions: TVL, fees, ecosystems, fraud proofs, governance. Which Ethereum L2 wins?", "url": "https://degen0x.com/compare/arbitrum-vs-optimism-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <CompareSchema
+        title="Arbitrum vs Optimism Comparison — degen0x"
+        url="/compare/arbitrum-vs-optimism-comparison"
+        description="A head-to-head look at Arbitrum and Optimism Comparison: product, fees, risk, and who each one is built for."
+        items={["Arbitrum", "Optimism Comparison"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/arbitrum-vs-optimism-comparison" />
       </article>

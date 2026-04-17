@@ -8,6 +8,7 @@ import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -153,6 +154,12 @@ export default function LooksRareVsX2Y2Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Looksrare vs X2y2 — degen0x"
+        url="/nfts/compare/looksrare-vs-x2y2"
+        description="A head-to-head look at Looksrare and X2y2: product, fees, risk, and who each one is built for."
+        items={["Looksrare", "X2y2"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

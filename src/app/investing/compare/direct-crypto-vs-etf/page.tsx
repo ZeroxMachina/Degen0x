@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `Direct Crypto vs ETF (2026) | degen0x`, description: `Direct crypto purchase vs crypto ETF comparison for ${CURRENT_YEAR}. Self-custody vs brokerage access — fees, flexibility, tax advantages, and which is better for you.` ,
   alternates: { canonical: "/investing/compare/direct-crypto-vs-etf" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Direct Crypto vs ETF — degen0x"
+        url="/investing/compare/direct-crypto-vs-etf"
+        description="A head-to-head look at Direct Crypto and ETF: product, fees, risk, and who each one is built for."
+        items={["Direct Crypto", "ETF"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

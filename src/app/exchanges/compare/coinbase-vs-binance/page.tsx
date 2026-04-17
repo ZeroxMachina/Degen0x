@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -595,6 +596,12 @@ export default function CoinbaseVsBinancePage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase vs Binance: Detailed Comparison (2026) | degen0x", "description": "Comprehensive Coinbase vs Binance comparison. Analyze fees, security, coin selection, trading features, and find which exchange is best for your crypto trading", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-binance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <CompareSchema
+        title="Coinbase vs Binance — degen0x"
+        url="/exchanges/compare/coinbase-vs-binance"
+        description="A head-to-head look at Coinbase and Binance: product, fees, risk, and who each one is built for."
+        items={["Coinbase", "Binance"]}
+      />
       <AuthoritySources url="/exchanges/compare/coinbase-vs-binance" />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/coinbase-vs-binance" />

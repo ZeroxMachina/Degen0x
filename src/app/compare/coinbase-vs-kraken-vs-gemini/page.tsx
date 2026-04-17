@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -636,6 +637,12 @@ export default function CoinbaseKrakenGemini() {
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/compare/tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokens</a>
 </nav>
+      <CompareSchema
+        title="Kraken vs Gemini — degen0x"
+        url="/compare/coinbase-vs-kraken-vs-gemini"
+        description="A head-to-head look at Kraken and Gemini: product, fees, risk, and who each one is built for."
+        items={["Kraken", "Gemini"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/coinbase-vs-kraken-vs-gemini" />
       </article>

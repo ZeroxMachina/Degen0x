@@ -8,6 +8,7 @@ import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -155,6 +156,12 @@ export default function FoundationVsSuperRarePage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Foundation vs Superrare — degen0x"
+        url="/nfts/compare/foundation-vs-superrare"
+        description="A head-to-head look at Foundation and Superrare: product, fees, risk, and who each one is built for."
+        items={["Foundation", "Superrare"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

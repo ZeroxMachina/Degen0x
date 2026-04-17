@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -203,6 +204,12 @@ export default function LedgerVsTrezorPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Ledger vs Trezor — degen0x"
+        url="/wallets/compare/ledger-vs-trezor"
+        description="A head-to-head look at Ledger and Trezor: product, fees, risk, and who each one is built for."
+        items={["Ledger", "Trezor"]}
+      />
       <AuthoritySources url="/wallets/compare/ledger-vs-trezor" />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/ledger-vs-trezor" />

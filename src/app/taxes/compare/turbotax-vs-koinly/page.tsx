@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `TurboTax vs Koinly 2026: Built-In Crypto vs Dedicated Tax Software`,
@@ -135,6 +136,12 @@ export default function TurboTaxVsKoinlyPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Turbotax vs Koinly — degen0x"
+        url="/taxes/compare/turbotax-vs-koinly"
+        description="A head-to-head look at Turbotax and Koinly: product, fees, risk, and who each one is built for."
+        items={["Turbotax", "Koinly"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

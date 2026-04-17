@@ -8,6 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { TAX_COMPARISON_ITEMS, TAX_COMPARISON_FEATURES } from "@/data/taxes";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Koinly vs CryptoTaxCalculator 2026 - Which Is Better for DeFi?`,
@@ -160,6 +161,12 @@ export default function KoinlyVsCryptoTaxCalculatorPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Koinly vs Cryptotaxcalculator — degen0x"
+        url="/taxes/compare/koinly-vs-cryptotaxcalculator"
+        description="A head-to-head look at Koinly and Cryptotaxcalculator: product, fees, risk, and who each one is built for."
+        items={["Koinly", "Cryptotaxcalculator"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

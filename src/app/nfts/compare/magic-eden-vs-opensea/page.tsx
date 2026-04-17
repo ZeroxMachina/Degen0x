@@ -8,6 +8,7 @@ import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -153,6 +154,12 @@ export default function MagicEdenVsOpenSeaPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Magic Eden vs Opensea — degen0x"
+        url="/nfts/compare/magic-eden-vs-opensea"
+        description="A head-to-head look at Magic Eden and Opensea: product, fees, risk, and who each one is built for."
+        items={["Magic Eden", "Opensea"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

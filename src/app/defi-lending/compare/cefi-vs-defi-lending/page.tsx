@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `CeFi vs DeFi Lending 2026: Complete Comparison`,
@@ -135,6 +136,12 @@ export default function CefiVsDefiLendingPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Cefi vs DEFI Lending — degen0x"
+        url="/defi-lending/compare/cefi-vs-defi-lending"
+        description="A head-to-head look at Cefi and DEFI Lending: product, fees, risk, and who each one is built for."
+        items={["Cefi", "DEFI Lending"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

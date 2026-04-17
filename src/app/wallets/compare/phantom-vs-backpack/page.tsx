@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Phantom vs Backpack (2026) - Which Solana Wallet Is Better? | degen0x`,
@@ -121,6 +122,12 @@ export default function PhantomVsBackpackPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Phantom vs Backpack — degen0x"
+        url="/wallets/compare/phantom-vs-backpack"
+        description="A head-to-head look at Phantom and Backpack: product, fees, risk, and who each one is built for."
+        items={["Phantom", "Backpack"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/phantom-vs-backpack" />
     </div>

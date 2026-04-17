@@ -9,6 +9,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -185,6 +186,12 @@ export default function PhantomVsSolflarePage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Phantom vs Solflare — degen0x"
+        url="/wallets/compare/phantom-vs-solflare"
+        description="A head-to-head look at Phantom and Solflare: product, fees, risk, and who each one is built for."
+        items={["Phantom", "Solflare"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/phantom-vs-solflare" />
     </div>

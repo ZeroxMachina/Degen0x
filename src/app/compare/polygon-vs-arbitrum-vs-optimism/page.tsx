@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -583,6 +584,12 @@ export default function PolygonArbitrumOptimism() {
   <a href="/compare/wallets/exodus-vs-trust-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Exodus Vs Trust Wallet</a>
   <a href="/compare/wallets" style={{ color: "#fb923c", marginRight: "1rem" }}>Wallets</a>
 </nav>
+      <CompareSchema
+        title="Arbitrum vs Optimism — degen0x"
+        url="/compare/polygon-vs-arbitrum-vs-optimism"
+        description="A head-to-head look at Arbitrum and Optimism: product, fees, risk, and who each one is built for."
+        items={["Arbitrum", "Optimism"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/polygon-vs-arbitrum-vs-optimism" />
       </article>

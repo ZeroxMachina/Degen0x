@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `Polygon vs Arbitrum (2026) | degen0x`, description: `Polygon vs Arbitrum comparison for ${CURRENT_YEAR}. Two leading Ethereum scaling solutions compared on speed, fees, DeFi ecosystem, and token investment thesis.` ,
   alternates: { canonical: "/investing/compare/polygon-vs-arbitrum" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Polygon vs Arbitrum — degen0x"
+        url="/investing/compare/polygon-vs-arbitrum"
+        description="A head-to-head look at Polygon and Arbitrum: product, fees, risk, and who each one is built for."
+        items={["Polygon", "Arbitrum"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

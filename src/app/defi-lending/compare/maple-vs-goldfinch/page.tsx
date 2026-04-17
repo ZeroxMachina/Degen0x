@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Maple vs Goldfinch 2026: Institutional DeFi Lending Compared`,
@@ -135,6 +136,12 @@ export default function MapleVsGoldfinchPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Maple vs Goldfinch — degen0x"
+        url="/defi-lending/compare/maple-vs-goldfinch"
+        description="A head-to-head look at Maple and Goldfinch: product, fees, risk, and who each one is built for."
+        items={["Maple", "Goldfinch"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

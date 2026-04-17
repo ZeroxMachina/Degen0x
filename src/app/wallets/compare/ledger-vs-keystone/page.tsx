@@ -9,6 +9,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -191,6 +192,12 @@ export default function LedgerVsKeystonePage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Ledger vs Keystone — degen0x"
+        url="/wallets/compare/ledger-vs-keystone"
+        description="A head-to-head look at Ledger and Keystone: product, fees, risk, and who each one is built for."
+        items={["Ledger", "Keystone"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/ledger-vs-keystone" />
     </div>

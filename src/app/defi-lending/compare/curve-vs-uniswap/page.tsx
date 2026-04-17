@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Curve vs Uniswap 2026: Which DEX Is Better?`,
@@ -137,6 +138,12 @@ export default function CurveVsUniswapPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Curve vs Uniswap — degen0x"
+        url="/defi-lending/compare/curve-vs-uniswap"
+        description="A head-to-head look at Curve and Uniswap: product, fees, risk, and who each one is built for."
+        items={["Curve", "Uniswap"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

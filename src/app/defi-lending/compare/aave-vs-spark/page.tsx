@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Aave vs Spark 2026: Which DeFi Lending Protocol Is Better?`,
@@ -135,6 +136,12 @@ export default function AaveVsSparkPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Aave vs Spark — degen0x"
+        url="/defi-lending/compare/aave-vs-spark"
+        description="A head-to-head look at Aave and Spark: product, fees, risk, and who each one is built for."
+        items={["Aave", "Spark"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

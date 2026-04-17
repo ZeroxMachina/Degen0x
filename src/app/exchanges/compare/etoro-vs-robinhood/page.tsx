@@ -7,6 +7,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -131,6 +132,12 @@ export default function EtoroVsRobinhoodPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Etoro vs Robinhood — degen0x"
+        url="/exchanges/compare/etoro-vs-robinhood"
+        description="A head-to-head look at Etoro and Robinhood: product, fees, risk, and who each one is built for."
+        items={["Etoro", "Robinhood"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/etoro-vs-robinhood" />
     </div>

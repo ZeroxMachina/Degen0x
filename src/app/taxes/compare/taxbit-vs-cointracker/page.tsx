@@ -8,6 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { TAX_COMPARISON_ITEMS, TAX_COMPARISON_FEATURES } from "@/data/taxes";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `TaxBit vs CoinTracker 2026 - Crypto Tax Software Comparison`,
@@ -155,6 +156,12 @@ export default function TaxBitVsCoinTrackerPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Taxbit vs Cointracker — degen0x"
+        url="/taxes/compare/taxbit-vs-cointracker"
+        description="A head-to-head look at Taxbit and Cointracker: product, fees, risk, and who each one is built for."
+        items={["Taxbit", "Cointracker"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

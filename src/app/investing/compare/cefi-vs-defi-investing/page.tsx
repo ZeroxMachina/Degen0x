@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `CeFi vs DeFi Investing (2026) | degen0x`, description: `CeFi vs DeFi investing comparison for ${CURRENT_YEAR}. Centralized exchanges vs decentralized protocols — convenience, yields, risk, and self-custody compared.` ,
   alternates: { canonical: "/investing/compare/cefi-vs-defi-investing" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Cefi vs DEFI Investing — degen0x"
+        url="/investing/compare/cefi-vs-defi-investing"
+        description="A head-to-head look at Cefi and DEFI Investing: product, fees, risk, and who each one is built for."
+        items={["Cefi", "DEFI Investing"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

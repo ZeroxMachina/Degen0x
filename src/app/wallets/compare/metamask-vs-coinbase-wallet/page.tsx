@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `MetaMask vs Coinbase Wallet (2026) - Which Is Better? | degen0x`,
@@ -132,6 +133,12 @@ export default function MetaMaskVsCoinbaseWalletPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Metamask vs Coinbase Wallet — degen0x"
+        url="/wallets/compare/metamask-vs-coinbase-wallet"
+        description="A head-to-head look at Metamask and Coinbase Wallet: product, fees, risk, and who each one is built for."
+        items={["Metamask", "Coinbase Wallet"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/metamask-vs-coinbase-wallet" />
     </div>

@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Free vs Paid Crypto Tax Software (2026): Is Free Good Enough?`,
@@ -135,6 +136,12 @@ export default function FreeVsPaidCryptoTaxPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Free vs Paid Crypto Tax — degen0x"
+        url="/taxes/compare/free-vs-paid-crypto-tax"
+        description="A head-to-head look at Free and Paid Crypto Tax: product, fees, risk, and who each one is built for."
+        items={["Free", "Paid Crypto Tax"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

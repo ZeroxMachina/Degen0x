@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `DeFi Lending vs Staking 2026: Which Earns More?`,
@@ -135,6 +136,12 @@ export default function LendingVsStakingPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Lending vs Staking — degen0x"
+        url="/defi-lending/compare/lending-vs-staking"
+        description="A head-to-head look at Lending and Staking: product, fees, risk, and who each one is built for."
+        items={["Lending", "Staking"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

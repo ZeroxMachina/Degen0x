@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -257,6 +258,12 @@ export default function CoinbaseVsGeminiCardPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Coinbase Card vs Gemini Card — degen0x"
+        url="/crypto-cards/compare/coinbase-card-vs-gemini-card"
+        description="A head-to-head look at Coinbase Card and Gemini Card: product, fees, risk, and who each one is built for."
+        items={["Coinbase Card", "Gemini Card"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/crypto-cards/compare/coinbase-card-vs-gemini-card" />
     </div>

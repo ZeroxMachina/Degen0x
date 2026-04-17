@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Fixed vs Variable Rate DeFi Lending 2026: Comparison`,
@@ -135,6 +136,12 @@ export default function FixedVsVariableRatePage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Fixed vs Variable Rate — degen0x"
+        url="/defi-lending/compare/fixed-vs-variable-rate"
+        description="A head-to-head look at Fixed and Variable Rate: product, fees, risk, and who each one is built for."
+        items={["Fixed", "Variable Rate"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

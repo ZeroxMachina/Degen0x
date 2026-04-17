@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -198,6 +199,12 @@ export default function KucoinVsGateIoPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Kucoin vs Gate Io — degen0x"
+        url="/exchanges/compare/kucoin-vs-gate-io"
+        description="A head-to-head look at Kucoin and Gate Io: product, fees, risk, and who each one is built for."
+        items={["Kucoin", "Gate Io"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/kucoin-vs-gate-io" />
     </div>

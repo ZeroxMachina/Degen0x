@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -407,6 +408,12 @@ export default function CentralizedVsDecentralizedExchange() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Centralized vs Decentralized Exchange 2026: CEX vs DEX", "description": "CEX (Binance, Coinbase) vs DEX (Uniswap, Jupiter): custody, KYC, fees, liquidity, speed, listings. Head-to-head comparison and when to use each.", "url": "https://degen0x.com/compare/centralized-vs-decentralized-exchange", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <CompareSchema
+        title="Centralized vs Decentralized Exchange — degen0x"
+        url="/compare/centralized-vs-decentralized-exchange"
+        description="A head-to-head look at Centralized and Decentralized Exchange: product, fees, risk, and who each one is built for."
+        items={["Centralized", "Decentralized Exchange"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/centralized-vs-decentralized-exchange" />
       </article>

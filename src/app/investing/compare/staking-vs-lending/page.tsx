@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `Staking vs Lending (2026) | degen0x`, description: `Staking vs lending crypto comparison for ${CURRENT_YEAR}. Yields, risks, lock-up periods, and which passive income strategy is better for your crypto portfolio.` ,
   alternates: { canonical: "/investing/compare/staking-vs-lending" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Staking vs Lending — degen0x"
+        url="/investing/compare/staking-vs-lending"
+        description="A head-to-head look at Staking and Lending: product, fees, risk, and who each one is built for."
+        items={["Staking", "Lending"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -389,6 +390,12 @@ export default function AaveVsMakerVsCompound() {
   <a href="/compare/exchanges/gate-io-vs-kucoin" style={{ color: "#fb923c", marginRight: "1rem" }}>Gate Io Vs Kucoin</a>
   <a href="/compare/wallets/metamask-vs-phantom" style={{ color: "#fb923c", marginRight: "1rem" }}>Metamask Vs Phantom</a>
 </nav>
+      <CompareSchema
+        title="Maker vs Compound — degen0x"
+        url="/compare/aave-vs-maker-vs-compound"
+        description="A head-to-head look at Maker and Compound: product, fees, risk, and who each one is built for."
+        items={["Maker", "Compound"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/aave-vs-maker-vs-compound" />
     </article>

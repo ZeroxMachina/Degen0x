@@ -9,6 +9,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -573,6 +574,12 @@ export default function CoinbaseVsGeminiPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase vs Gemini: Detailed Comparison (2026) | degen0x", "description": "Compare Coinbase and Gemini exchanges for US-based traders. Analyze security, fees, regulation, and features to find the best exchange for you.", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-gemini", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <CompareSchema
+        title="Coinbase vs Gemini — degen0x"
+        url="/exchanges/compare/coinbase-vs-gemini"
+        description="A head-to-head look at Coinbase and Gemini: product, fees, risk, and who each one is built for."
+        items={["Coinbase", "Gemini"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/coinbase-vs-gemini" />
 </div>

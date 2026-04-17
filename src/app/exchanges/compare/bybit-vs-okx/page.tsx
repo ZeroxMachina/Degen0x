@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -189,6 +190,12 @@ export default function BybitVsOkxPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Bybit vs Okx — degen0x"
+        url="/exchanges/compare/bybit-vs-okx"
+        description="A head-to-head look at Bybit and Okx: product, fees, risk, and who each one is built for."
+        items={["Bybit", "Okx"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/bybit-vs-okx" />
     </div>

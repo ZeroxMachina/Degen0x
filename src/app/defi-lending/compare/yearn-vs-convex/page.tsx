@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Yearn vs Convex 2026: Which Yield Aggregator Is Better?`,
@@ -137,6 +138,12 @@ export default function YearnVsConvexPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Yearn vs Convex — degen0x"
+        url="/defi-lending/compare/yearn-vs-convex"
+        description="A head-to-head look at Yearn and Convex: product, fees, risk, and who each one is built for."
+        items={["Yearn", "Convex"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

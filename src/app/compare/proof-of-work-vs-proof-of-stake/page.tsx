@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -273,6 +274,12 @@ export default function ProofOfWorkVsProofOfStake() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Proof of Work vs Proof of Stake 2026: Energy, Security,", "description": "PoW vs PoS comparison: Bitcoin 150 TWh/year vs Ethereum 0.01 TWh (staking). Security, decentralization, finality, 51% attack cost. Comparison table.", "url": "https://degen0x.com/compare/proof-of-work-vs-proof-of-stake", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <CompareSchema
+        title="Proof Of Work vs Proof Of Stake — degen0x"
+        url="/compare/proof-of-work-vs-proof-of-stake"
+        description="A head-to-head look at Proof Of Work and Proof Of Stake: product, fees, risk, and who each one is built for."
+        items={["Proof Of Work", "Proof Of Stake"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/proof-of-work-vs-proof-of-stake" />
       </article>

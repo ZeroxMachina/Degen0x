@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -203,6 +204,12 @@ export default function MetaMaskVsPhantomPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Metamask vs Phantom — degen0x"
+        url="/wallets/compare/metamask-vs-phantom"
+        description="A head-to-head look at Metamask and Phantom: product, fees, risk, and who each one is built for."
+        items={["Metamask", "Phantom"]}
+      />
       <AuthoritySources url="/wallets/compare/metamask-vs-phantom" />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/metamask-vs-phantom" />

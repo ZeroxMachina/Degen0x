@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?`,
@@ -135,6 +136,12 @@ export default function KoinlyVsTaxBitPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Koinly vs Taxbit — degen0x"
+        url="/taxes/compare/koinly-vs-taxbit"
+        description="A head-to-head look at Koinly and Taxbit: product, fees, risk, and who each one is built for."
+        items={["Koinly", "Taxbit"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

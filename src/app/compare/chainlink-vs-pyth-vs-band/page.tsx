@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import CompareSchema from '@/components/CompareSchema';
 
 
 export const metadata: Metadata = {
@@ -597,6 +598,12 @@ export default function ChainlinkPythBand() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Chainlink vs Pyth vs Band: Crypto Oracle Comparison", "description": "Compare oracle networks: Chainlink (decentralized node network, $150B TVL), Pyth (first-party data, 350+ feeds), Band (delegated staking). Latency, chains,", "url": "https://degen0x.com/compare/chainlink-vs-pyth-vs-band", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <CompareSchema
+        title="Pyth vs Band — degen0x"
+        url="/compare/chainlink-vs-pyth-vs-band"
+        description="A head-to-head look at Pyth and Band: product, fees, risk, and who each one is built for."
+        items={["Pyth", "Band"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/chainlink-vs-pyth-vs-band" />
       </article>

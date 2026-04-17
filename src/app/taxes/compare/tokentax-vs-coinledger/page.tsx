@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `TokenTax vs CoinLedger 2026: Which Crypto Tax Software Is Better?`,
@@ -135,6 +136,12 @@ export default function TokenTaxVsCoinLedgerPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Tokentax vs Coinledger — degen0x"
+        url="/taxes/compare/tokentax-vs-coinledger"
+        description="A head-to-head look at Tokentax and Coinledger: product, fees, risk, and who each one is built for."
+        items={["Tokentax", "Coinledger"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

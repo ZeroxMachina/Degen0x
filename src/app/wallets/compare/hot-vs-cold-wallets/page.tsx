@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Hot vs Cold Wallets (2026) - Which Should You Use? | degen0x`,
@@ -121,6 +122,12 @@ export default function HotVsColdWalletsPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Hot vs Cold Wallets — degen0x"
+        url="/wallets/compare/hot-vs-cold-wallets"
+        description="A head-to-head look at Hot and Cold Wallets: product, fees, risk, and who each one is built for."
+        items={["Hot", "Cold Wallets"]}
+      />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/hot-vs-cold-wallets" />
     </div>

@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `Uniswap vs PancakeSwap (2026) | degen0x`, description: `Uniswap vs PancakeSwap DEX comparison for ${CURRENT_YEAR}. Trading volume, fees, supported chains, liquidity, and governance token investment compared.` ,
   alternates: { canonical: "/investing/compare/uniswap-vs-pancakeswap" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Uniswap vs Pancakeswap — degen0x"
+        url="/investing/compare/uniswap-vs-pancakeswap"
+        description="A head-to-head look at Uniswap and Pancakeswap: product, fees, risk, and who each one is built for."
+        items={["Uniswap", "Pancakeswap"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

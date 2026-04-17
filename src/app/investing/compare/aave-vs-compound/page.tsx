@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = { title: `Aave vs Compound (2026) | degen0x`, description: `Aave vs Compound DeFi lending comparison for ${CURRENT_YEAR}. Interest rates, supported assets, multi-chain presence, governance, and token investment thesis compared.` ,
   alternates: { canonical: "/investing/compare/aave-vs-compound" },
@@ -118,6 +119,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Aave vs Compound — degen0x"
+        url="/investing/compare/aave-vs-compound"
+        description="A head-to-head look at Aave and Compound: product, fees, risk, and who each one is built for."
+        items={["Aave", "Compound"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Compound vs Venus 2026: DeFi Lending Protocol Comparison`,
@@ -135,6 +136,12 @@ export default function CompoundVsVenusPage() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Compound vs Venus — degen0x"
+        url="/defi-lending/compare/compound-vs-venus"
+        description="A head-to-head look at Compound and Venus: product, fees, risk, and who each one is built for."
+        items={["Compound", "Venus"]}
+      />
       <MethodologyBlock variant="compare" />
     </div>
   );

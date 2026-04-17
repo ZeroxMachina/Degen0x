@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
+import CompareSchema from '@/components/CompareSchema';
 
 export const metadata: Metadata = {
   title: `Bitcoin vs Ethereum (2026) - Complete Comparison | degen0x`,
@@ -133,6 +134,12 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <CompareSchema
+        title="Bitcoin vs Ethereum — degen0x"
+        url="/investing/compare/bitcoin-vs-ethereum"
+        description="A head-to-head look at Bitcoin and Ethereum: product, fees, risk, and who each one is built for."
+        items={["Bitcoin", "Ethereum"]}
+      />
       <AuthoritySources url="/investing/compare/bitcoin-vs-ethereum" />
       <MethodologyBlock variant="compare" />
     </div>
