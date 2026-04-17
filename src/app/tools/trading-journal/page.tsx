@@ -12,6 +12,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ─── Types ─── */
 interface Trade {
@@ -748,6 +749,7 @@ export default function TradingJournalPage() {
         
           <a href="/tools/robo-advisor" style={{ color: "#fb923c", marginRight: "1rem" }}>Robo Advisor</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/trading-journal" />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -243,6 +244,7 @@ export default function BestDeFiWallet2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DeFi Wallet 2026: MetaMask, Rabby, Rainbow, Zerion |", "description": "Best DeFi wallet: MetaMask 30M users, Rabby ($0 unlimited chains), Rainbow ($0 Ethereum), Zerion portfolio dashboard, Phantom (Solana). Swap, staking, dApp", "url": "https://degen0x.com/wallets/best-defi-wallet-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-defi-wallet-2026" />
       </article>
   );
 }

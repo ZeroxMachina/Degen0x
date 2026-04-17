@@ -6,6 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -248,6 +249,7 @@ export default function BestStakingWalletsPage() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best/staking" />
     </div>
   );
 }

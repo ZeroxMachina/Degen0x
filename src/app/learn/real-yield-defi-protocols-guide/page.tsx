@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -475,6 +476,7 @@ export default function RealYieldDeFiProtocolsGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real Yield DeFi Protocols 2026: GMX, dYdX, Synthetix, Aave", "description": "Guide to real yield DeFi. Compare GMX ($150M+ fees distributed), dYdX, Gains Network, Synthetix, Aave, Lido staking rewards. Real yield vs inflationary yield.", "url": "https://degen0x.com/learn/real-yield-defi-protocols-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/real-yield-defi-protocols-guide" />
       </article>
   );
 }

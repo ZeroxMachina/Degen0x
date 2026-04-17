@@ -128,6 +128,18 @@ export default function AuthorAttribution({
           </div>
         </>
       )}
+
+      {/* Methodology link — E-E-A-T signal, ramp-to-8 Phase 0d */}
+      <span style={{ color: '#484f58' }}>·</span>
+      <div style={{ color: '#8b949e', flexShrink: 0 }}>
+        Reviewed against our{' '}
+        <a
+          href="/methodology"
+          style={{ color: '#58a6ff', textDecoration: 'none' }}
+        >
+          methodology
+        </a>
+      </div>
     </div>
   );
 }

@@ -11,6 +11,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -1232,6 +1233,7 @@ export default function AltcoinETFGuidePage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Altcoin ETF Guide 2026: Solana, XRP & Beyond", "description": "Complete guide to altcoin ETFs in 2026 \u2014 SOL, XRP, and ETH spot ETFs explained. Compare fees, AUM, staking yields, and how to invest through your brokerage", "url": "https://degen0x.com/learn/altcoin-etf-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/altcoin-etf-guide-2026" />
     </article>
   );
 }

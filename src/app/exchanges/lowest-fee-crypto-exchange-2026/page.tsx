@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -627,6 +628,7 @@ export default function LowestFeeCryptoExchange2026() {
   <a href="/exchanges/crypto-exchange-proof-of-reserves-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Exchange Proof Of Reserves Comparison</a>
   <a href="/exchanges/gemini" style={{ color: "#fb923c", marginRight: "1rem" }}>Gemini</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/exchanges/lowest-fee-crypto-exchange-2026" />
       </article>
   );
 }

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { ArrowUpDown, TrendingUp, Shield, AlertCircle, Check } from 'lucide-react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 interface Stablecoin {
   name: string;
@@ -586,6 +587,7 @@ export default function StablecoinComparison() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/stablecoin-comparison" />
       </div>
   );
 }

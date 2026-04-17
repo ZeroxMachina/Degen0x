@@ -7,6 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { ToolStructuredData } from "@/components/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RelatedContent from '@/components/RelatedContent';
 
 interface LendingPosition {
   id: string;
@@ -1075,6 +1076,7 @@ export default function DefiPositionManagerPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/defi-position-manager" />
       </div>
   );
 }

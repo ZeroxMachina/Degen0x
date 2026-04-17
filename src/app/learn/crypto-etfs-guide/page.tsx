@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 const S = { bg:"#0d1117",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"Crypto ETFs Guide",href:"/learn/crypto-etfs-guide"}];
 const ETF_TABLE = [
@@ -125,6 +126,7 @@ export default function CryptoETFsGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/how-to-buy-ethereum" style={{ color: "#fb923c", marginRight: "1rem" }}>How To Buy Ethereum</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-etfs-guide" />
     </main>
   );
 }

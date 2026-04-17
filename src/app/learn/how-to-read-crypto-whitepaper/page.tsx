@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -331,6 +332,7 @@ export default function HowToReadWhitepaperPage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Read a Crypto Whitepaper: A Complete 2026 Guide for", "description": "Learn how to analyze crypto whitepapers like a pro. Our 2026 guide covers tokenomics, technical architecture, red flags, and a step-by-step framework for", "url": "https://degen0x.com/learn/how-to-read-crypto-whitepaper", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/how-to-read-crypto-whitepaper" />
     </article>
   );
 }

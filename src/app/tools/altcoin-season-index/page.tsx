@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -450,6 +451,7 @@ export default function AltcoinSeasonIndex() {
         
           <a href="/tools/risk-analyzer" style={{ color: "#fb923c", marginRight: "1rem" }}>Risk Analyzer</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/altcoin-season-index" />
       </article>
   );
 }

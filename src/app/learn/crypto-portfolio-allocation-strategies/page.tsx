@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -460,6 +461,7 @@ export default function CryptoPortfolioAllocationGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Portfolio Allocation Strategies 2026: Conservative,", "description": "Master portfolio allocation: Conservative (70% BTC/ETH, 20% large-cap, 10% stables), Moderate (50/30/20), Aggressive (30/40/30). Learn rebalancing (time-based", "url": "https://degen0x.com/learn/crypto-portfolio-allocation-strategies", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-portfolio-allocation-strategies" />
       </article>
   );
 }

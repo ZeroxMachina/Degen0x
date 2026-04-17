@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -752,6 +753,7 @@ export default function CryptoSecurityMasterclassPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Security Masterclass 2026: Complete Guide to", "description": "Master crypto security in 2026. Hardware wallets, seed phrase management, phishing protection, smart contract audits, multi-sig strategies, and DeFi safety", "url": "https://degen0x.com/learn/crypto-security-masterclass-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-security-masterclass-2026" />
 </main>
   );
 }

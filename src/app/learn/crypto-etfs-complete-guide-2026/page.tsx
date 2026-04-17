@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Crypto ETFs Complete Guide 2026: Bitcoin, Ethereum, Solana,",
@@ -946,6 +947,7 @@ export default function CryptoETFsPage() {
           <a href="/learn/staking-as-a-service-providers-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Staking As A Service Providers Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto ETFs Complete Guide 2026: Bitcoin, Ethereum, Solana,", "description": "Comprehensive guide to crypto ETFs in 2026. Learn about Bitcoin, Ethereum, Solana, XRP, and altcoin ETFs, staking yields, institutional adoption, and", "url": "https://degen0x.com/learn/crypto-etfs-complete-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-etfs-complete-guide-2026" />
 </main>
   );
 }

@@ -4,6 +4,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -624,6 +625,7 @@ export default function BtcfiYieldStrategiesGuide2026() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BTCFi Yield Strategies 2026 \u2014 How to Earn Yield on Bitcoin", "description": "Explore the best strategies to earn yield on your Bitcoin in 2026. Compare Babylon staking, Lombard LBTC, SolvBTC, BounceBit, and more with real TVL and APY", "url": "https://degen0x.com/learn/btcfi-yield-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/btcfi-yield-strategies-guide-2026" />
 </div>
   );
 }

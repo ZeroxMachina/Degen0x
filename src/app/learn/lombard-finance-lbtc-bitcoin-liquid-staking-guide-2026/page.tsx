@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Lombard Finance Guide 2026 — LBTC Bitcoin Liquid Staking",
@@ -329,6 +330,7 @@ export default function LombardFinanceLBTCGuide() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lombard Finance Guide 2026 \u2014 LBTC Bitcoin Liquid Staking", "description": "Complete Lombard Finance guide 2026: LBTC bitcoin liquid staking token, Babylon integration, Security Consortium, BARD tokenomics, multi-chain DeFi", "url": "https://degen0x.com/learn/lombard-finance-lbtc-bitcoin-liquid-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/lombard-finance-lbtc-bitcoin-liquid-staking-guide-2026" />
 </div>
   );
 }

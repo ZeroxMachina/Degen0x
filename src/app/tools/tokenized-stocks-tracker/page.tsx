@@ -6,6 +6,7 @@ import { ChevronUp, ChevronDown, TrendingUp, TrendingDown, ExternalLink, SearchX
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import { SITE_URL } from '@/lib/constants';
+import RelatedContent from '@/components/RelatedContent';
 
 // Metadata is exported from the layout sibling — tool pages use a metadata.ts pattern
 // (see e.g. src/app/tools/dca-calculator/metadata.ts)
@@ -790,6 +791,7 @@ export default function TokenizedStocksTrackerPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/tokenized-stocks-tracker" />
       </div>
   );
 }

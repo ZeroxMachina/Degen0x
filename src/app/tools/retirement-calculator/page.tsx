@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 function formatCurrency(num: number): string {
@@ -777,6 +778,7 @@ export default function RetirementCalculatorPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/retirement-calculator" />
       </div>
   );
 }

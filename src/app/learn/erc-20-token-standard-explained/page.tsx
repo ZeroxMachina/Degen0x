@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -576,6 +577,7 @@ contract USDC is ERC20 {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ERC-20 Token Standard Explained 2026: Functions, Approvals", "description": "Complete guide to ERC-20 token standard. Learn 6 required functions (transfer, approve, balanceOf), events, decimal precision. Compare ERC-20 vs ERC-721 vs", "url": "https://degen0x.com/learn/erc-20-token-standard-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/erc-20-token-standard-explained" />
       </article>
   );
 }

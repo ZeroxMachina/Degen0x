@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
@@ -964,6 +965,7 @@ export default function StablechainsPage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablechains: Stablecoin-Optimized Blockchains Guide 2026", "description": "Complete guide to stablechains\u2014purpose-built blockchains optimized for stablecoin payments, compliance, and zero volatile fees. Covers Plasma, Arc, Tempo, and", "url": "https://degen0x.com/learn/stablechains-stablecoin-optimized-blockchains-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/stablechains-stablecoin-optimized-blockchains-guide-2026" />
 </div>
   );
 }

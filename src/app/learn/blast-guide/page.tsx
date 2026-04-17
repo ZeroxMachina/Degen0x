@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", surface: "var(--color-surface, #161b22)",
@@ -181,6 +182,7 @@ export default function BlastGuidePage() {
           }}
         />
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/blast-guide" />
     </main>
   );
 }

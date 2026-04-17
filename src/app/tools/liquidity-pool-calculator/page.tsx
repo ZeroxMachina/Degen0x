@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -368,6 +369,7 @@ export default function LiquidityPoolCalculator() {
         
           <a href="/tools/market-movers" style={{ color: "#fb923c", marginRight: "1rem" }}>Market Movers</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/liquidity-pool-calculator" />
       </article>
   );
 }

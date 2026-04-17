@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -637,6 +638,7 @@ export default function DecentralizedSocialMediaGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized Social Media Guide 2026: Farcaster, Lens &", "description": "Complete DeSoc/SocialFi guide for 2026. Explore Farcaster ($1B valuation, 20K-60K DAU), Lens Protocol (650K migrated profiles, ZK chain), SocialFi economics,", "url": "https://degen0x.com/learn/decentralized-social-media-desoc-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/decentralized-social-media-desoc-guide-2026" />
       </article>
   );
 }

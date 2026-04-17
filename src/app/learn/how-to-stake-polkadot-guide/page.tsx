@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -487,6 +488,7 @@ export default function HowToStakePolkadotGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Stake Polkadot (DOT) 2026: NPoS, Pools, Liquid", "description": "Complete guide to Polkadot staking. Learn nominated Proof of Stake (NPoS), minimum stake (500 DOT), validator selection, nomination pools (0 DOT minimum),", "url": "https://degen0x.com/learn/how-to-stake-polkadot-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/how-to-stake-polkadot-guide" />
       </article>
   );
 }

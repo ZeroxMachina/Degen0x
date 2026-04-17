@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -570,6 +571,7 @@ export default function SecCftcMouCryptoGuidePage() {
           <a href="/learn/zkml-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Zkml Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SEC-CFTC MOU Explained: Crypto Regulation Landmark 2026", "description": "The SEC and CFTC signed a historic MOU on March 11, 2026, ending the crypto regulatory turf war. Learn what it means for Bitcoin, Ethereum, DeFi, stablecoins,", "url": "https://degen0x.com/learn/sec-cftc-mou-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/sec-cftc-mou-crypto-guide" />
 </main>
   );
 }

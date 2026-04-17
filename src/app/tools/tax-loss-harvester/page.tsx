@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
+import RelatedContent from '@/components/RelatedContent';
 
 interface Holding {
   id: string;
@@ -313,6 +314,7 @@ export default function TaxLossHarvester() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/tax-loss-harvester" />
       </div>
   );
 }

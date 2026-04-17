@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -514,6 +515,7 @@ export default function BlockchainOracleGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blockchain Oracles Explained: Chainlink, Pyth, Band &", "description": "Deep dive into blockchain oracles in 2026. Compare Chainlink ($15B+ TVL), Pyth, Band Protocol, API3, UMA, and Chronicle. Learn oracle attacks, TWAP, and", "url": "https://degen0x.com/learn/what-is-a-blockchain-oracle", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/what-is-a-blockchain-oracle" />
       </article>
   );
 }

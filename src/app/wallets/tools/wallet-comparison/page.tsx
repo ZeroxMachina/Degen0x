@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
 import StarRating from "@/components/StarRating";
+import RelatedContent from '@/components/RelatedContent';
 
 interface WalletFeature {
   name: string;
@@ -391,6 +392,7 @@ export default function WalletComparisonToolPage() {
           </div>
         </div>
       </section>
+      <RelatedContent category="tools" currentSlug="/wallets/tools/wallet-comparison" />
     </div>
   );
 }

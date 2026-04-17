@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -840,6 +841,7 @@ export default function GridPlusLatticeWalletReview() {
           </p>
               <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "GridPlus Lattice1 review: enterprise hardware wallet", "description": "GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs", "url": "https://degen0x.com/wallets/gridplus-lattice-wallet-review", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
+      <RelatedContent category="tools" currentSlug="/wallets/gridplus-lattice-wallet-review" />
       </article>
   );
 }

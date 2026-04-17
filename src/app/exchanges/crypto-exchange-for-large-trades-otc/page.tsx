@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -394,6 +395,7 @@ export default function CryptoExchangeForLargeTradesOtc() {
   <a href="/exchanges/crypto-com" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Com</a>
   <a href="/exchanges/uphold" style={{ color: "#fb923c", marginRight: "1rem" }}>Uphold</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/exchanges/crypto-exchange-for-large-trades-otc" />
       </article>
   );
 }

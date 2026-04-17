@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 interface NetworkGas {
   name: string;
@@ -314,6 +315,7 @@ export default function GasFeeTrackerPage() {
           </div>
         </div>
       </section>
+      <RelatedContent category="tools" currentSlug="/wallets/tools/gas-fee-tracker" />
     </div>
   );
 }

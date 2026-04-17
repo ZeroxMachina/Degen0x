@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -612,6 +613,7 @@ export default function DeFiComposability() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Composability Explained: Money Legos & Protocol", "description": "Deep dive into DeFi composability. Learn flash loans, yield strategies, Aave+Uniswap+Yearn stacking, Curve wars, EigenLayer restaking, and composability risks.", "url": "https://degen0x.com/learn/defi-composability-what-it-means", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/defi-composability-what-it-means" />
       </article>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -495,6 +496,7 @@ export default function BondingCurvesTokenExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bonding Curves for Tokens Explained | Linear, Exponential &", "description": "Master bonding curves: linear, exponential, sigmoid models used in Pump.fun, Friend.tech, Bancor. Fair token launch mechanics, rugpull prevention, and curve", "url": "https://degen0x.com/learn/bonding-curves-token-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/bonding-curves-token-explained" />
       </article>
   );
 }

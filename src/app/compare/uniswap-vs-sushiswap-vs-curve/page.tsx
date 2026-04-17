@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -381,6 +382,7 @@ export default function UniswapVsSushiSwapVsCurve() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Uniswap vs SushiSwap vs Curve: DEX Comparison 2026", "description": "Compare Uniswap, SushiSwap, and Curve: AMM models, fees, TVL, token utility, multi-chain support. Which DEX wins?", "url": "https://degen0x.com/compare/uniswap-vs-sushiswap-vs-curve", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="compare" currentSlug="/compare/uniswap-vs-sushiswap-vs-curve" />
       </article>
   );
 }

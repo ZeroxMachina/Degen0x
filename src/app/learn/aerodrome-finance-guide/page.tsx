@@ -11,6 +11,7 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AerodromeVeCalculator from "@/components/AerodromeVeCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -977,6 +978,7 @@ export default function AerodromeFinanceGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aerodrome Finance Guide 2026: Base", "description": "Aerodrome Finance guide 2026: ve(3,3) model, veAERO locking, pool types, tokenomics. How Aerodrome dominates Base with 68% DEX share and $500M TVL.", "url": "https://degen0x.com/learn/aerodrome-finance-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/aerodrome-finance-guide" />
 </div>
   );
 }

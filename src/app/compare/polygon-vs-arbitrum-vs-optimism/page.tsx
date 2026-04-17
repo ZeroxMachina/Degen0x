@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -577,6 +578,7 @@ export default function PolygonArbitrumOptimism() {
   <a href="/compare/wallets/exodus-vs-trust-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Exodus Vs Trust Wallet</a>
   <a href="/compare/wallets" style={{ color: "#fb923c", marginRight: "1rem" }}>Wallets</a>
 </nav>
+      <RelatedContent category="compare" currentSlug="/compare/polygon-vs-arbitrum-vs-optimism" />
       </article>
   );
 }

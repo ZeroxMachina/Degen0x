@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -386,6 +387,7 @@ export default function CryptoExchangeTaxReportingFeatures() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Exchange Tax Reporting Features | degen0x", "description": "Crypto Exchange Tax Reporting Features guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026.", "url": "https://degen0x.com/exchanges/crypto-exchange-tax-reporting-features", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/crypto-exchange-tax-reporting-features" />
       </article>
   );
 }

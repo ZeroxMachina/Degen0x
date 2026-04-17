@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1536,6 +1537,7 @@ export default function InitiaGuidePage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Initia Guide: Interwoven Rollups & Modular Orchestration", "description": "Comprehensive guide to Initia, the Cosmos-based Layer 1 orchestrating modular rollups. Learn about OPinit Stack, Minitias, INIT token, tokenomics, ecosystem,", "url": "https://degen0x.com/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026" />
 </div>
   );
 }

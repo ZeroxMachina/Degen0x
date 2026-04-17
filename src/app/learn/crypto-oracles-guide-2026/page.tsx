@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { ArticleStructuredData, FAQStructuredData } from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -361,6 +362,7 @@ export default function CryptoOraclesGuidePage() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-oracles-guide-2026" />
       </article>
   );
 }

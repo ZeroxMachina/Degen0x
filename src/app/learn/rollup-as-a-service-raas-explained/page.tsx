@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -488,6 +489,7 @@ export default function RollupAsAServiceExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rollup-as-a-Service (RaaS) Explained | degen0x", "description": "Deploy custom rollups in minutes with Caldera, Conduit, AltLayer, Gelato, Dymension. Compare RaaS providers, DA options, pricing, and app-chain deployment.", "url": "https://degen0x.com/learn/rollup-as-a-service-raas-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/rollup-as-a-service-raas-explained" />
       </article>
   );
 }

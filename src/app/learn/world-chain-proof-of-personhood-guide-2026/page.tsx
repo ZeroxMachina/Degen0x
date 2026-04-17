@@ -6,6 +6,7 @@ import BackToTop from '@/components/BackToTop';
 import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -1130,6 +1131,7 @@ export default function WorldChainProofOfPersonhoodGuidePage() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/world-chain-proof-of-personhood-guide-2026" />
       </div>
   );
 }

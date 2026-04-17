@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -591,6 +592,7 @@ export default function ChainlinkPythBand() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Chainlink vs Pyth vs Band: Crypto Oracle Comparison", "description": "Compare oracle networks: Chainlink (decentralized node network, $150B TVL), Pyth (first-party data, 350+ feeds), Band (delegated staking). Latency, chains,", "url": "https://degen0x.com/compare/chainlink-vs-pyth-vs-band", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="compare" currentSlug="/compare/chainlink-vs-pyth-vs-band" />
       </article>
   );
 }

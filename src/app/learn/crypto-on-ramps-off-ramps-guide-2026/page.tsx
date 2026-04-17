@@ -4,6 +4,7 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -761,6 +762,7 @@ export default function CryptoOnRampsGuide() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto On-Ramps & Off-Ramps Guide 2026 \u2014 Cheapest Ways to", "description": "Compare the best crypto on-ramp and off-ramp providers in 2026. MoonPay, Transak, Ramp Network, Coinbase & more \u2014 fees, speed, payment methods, and geo", "url": "https://degen0x.com/learn/crypto-on-ramps-off-ramps-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-on-ramps-off-ramps-guide-2026" />
 </div>
   );
 }

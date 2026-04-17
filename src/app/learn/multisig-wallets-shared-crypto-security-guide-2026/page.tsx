@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -666,6 +667,7 @@ export default function MultisigWalletGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multisig Wallets & Shared Crypto Security Guide 2026", "description": "Complete guide to multisig wallets, threshold signatures, and shared security solutions for crypto. Learn how to secure assets with multiple signers in 2026.", "url": "https://degen0x.com/learn/multisig-wallets-shared-crypto-security-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/multisig-wallets-shared-crypto-security-guide-2026" />
 </div>
   );
 }

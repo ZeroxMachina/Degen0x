@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "#0d1117", border: "#30363d", text: "#e6edf3", text2: "#8b949e",
@@ -187,6 +188,7 @@ export default function L3NetworksGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/how-to-set-up-metamask-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>How To Set Up Metamask Wallet</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/l3-networks-guide" />
     </main>
   );
 }

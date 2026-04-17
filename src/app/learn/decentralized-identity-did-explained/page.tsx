@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -594,6 +595,7 @@ export default function DecentralizedIdentityDID() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized Identity (DID) 2026: W3C Standards, ENS, Lens", "description": "Complete guide to DIDs: W3C DID standard, ENS domains, Lens Protocol, Worldcoin World ID, Polygon ID, verifiable credentials, soulbound tokens, and", "url": "https://degen0x.com/learn/decentralized-identity-did-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/decentralized-identity-did-explained" />
       </article>
   );
 }

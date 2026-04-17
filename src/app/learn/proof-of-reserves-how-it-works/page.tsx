@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -443,6 +444,7 @@ export default function ProofOfReservesExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Proof of Reserves Explained: How It Works | degen0x", "description": "Learn Proof of Reserves using Merkle trees, Chainlink PoR, and third-party audits. Compare Binance, Kraken, Kraken with limitations and post-FTX adoption.", "url": "https://degen0x.com/learn/proof-of-reserves-how-it-works", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/proof-of-reserves-how-it-works" />
       </article>
   );
 }

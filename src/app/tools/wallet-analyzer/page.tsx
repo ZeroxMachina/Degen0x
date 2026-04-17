@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 // SEO Metadata
 // Types
@@ -867,6 +868,7 @@ export default function WalletAnalyzer() {
         
           <a href="/tools/multi-chain-gas" style={{ color: "#fb923c", marginRight: "1rem" }}>Multi Chain Gas</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/wallet-analyzer" />
     </main>
   );
 }

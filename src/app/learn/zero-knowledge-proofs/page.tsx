@@ -1,6 +1,7 @@
 'use client';
 
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export default function ZeroKnowledgeProofsPage() {
   const breadcrumbItems = [
@@ -526,6 +527,7 @@ export default function ZeroKnowledgeProofsPage() {
         />
       </article>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/zero-knowledge-proofs" />
     </div>
   );
 }

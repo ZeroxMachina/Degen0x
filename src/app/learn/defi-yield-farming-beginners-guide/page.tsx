@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -619,6 +620,7 @@ export default function DeFiYieldFarmingBeginnersGuide() {
 
           <a href="/learn/aztec-network-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Aztec Network Guide</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/defi-yield-farming-beginners-guide" />
       </article>
   );
 }

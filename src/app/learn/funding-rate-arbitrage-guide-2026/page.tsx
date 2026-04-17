@@ -2,6 +2,7 @@
 
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "#0d1117",
@@ -538,6 +539,7 @@ export default function FundingRateArbitrageGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/onchain-privacy-infrastructure-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Privacy Infrastructure Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/funding-rate-arbitrage-guide-2026" />
     </main>
   );
 }

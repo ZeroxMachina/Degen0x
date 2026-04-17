@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -512,6 +513,7 @@ export default function DCABacktestTool() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/dollar-cost-average-backtest-tool" />
       </article>
   );
 }

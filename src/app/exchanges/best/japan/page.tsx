@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { exchanges } from "@/data/exchanges";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -229,6 +230,7 @@ export default function JapanExchangesPage() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/best/japan" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -819,6 +820,7 @@ export default function KeystoneWalletReviewGuide() {
           </p>
               <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Keystone wallet review & QR-code signing guide", "description": "Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support,", "url": "https://degen0x.com/wallets/keystone-wallet-review-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
+      <RelatedContent category="tools" currentSlug="/wallets/keystone-wallet-review-guide" />
       </article>
   );
 }

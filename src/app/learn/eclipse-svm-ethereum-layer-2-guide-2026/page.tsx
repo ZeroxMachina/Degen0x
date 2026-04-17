@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum | degen0x",
@@ -577,6 +578,7 @@ export default function EclipseGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Eclipse Guide 2026 \u2014 Solana VM Layer 2 on Ethereum | degen0x", "description": "Complete guide to Eclipse, the first SVM-powered Ethereum L2. Parallelized execution via Solana VM, Celestia DA, RISC Zero proofs. ES token, ecosystem, and", "url": "https://degen0x.com/learn/eclipse-svm-ethereum-layer-2-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/eclipse-svm-ethereum-layer-2-guide-2026" />
 </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -431,6 +432,7 @@ export default function RugPullDetector() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rug Pull Detector: How to Avoid Scams 2026", "description": "Detect crypto rug pulls using RugCheck, TokenSniffer, GoPlus, and De.Fi Scanner. Learn red flags, contract audits, and on-chain forensics.", "url": "https://degen0x.com/tools/rug-pull-detector-tool", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/rug-pull-detector-tool" />
 </div>
 
   );

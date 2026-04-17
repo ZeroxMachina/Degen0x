@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -383,6 +384,7 @@ export default function AaveVsMakerVsCompound() {
   <a href="/compare/exchanges/gate-io-vs-kucoin" style={{ color: "#fb923c", marginRight: "1rem" }}>Gate Io Vs Kucoin</a>
   <a href="/compare/wallets/metamask-vs-phantom" style={{ color: "#fb923c", marginRight: "1rem" }}>Metamask Vs Phantom</a>
 </nav>
+      <RelatedContent category="compare" currentSlug="/compare/aave-vs-maker-vs-compound" />
     </article>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -391,6 +392,7 @@ export default function BestBitcoinOnlyWallet() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Bitcoin-Only Wallets 2026 | Coldcard, BitBox02, Sparrow", "description": "Compare Bitcoin-only wallets: Coldcard Mk4 ($157), BitBox02 ($139), Blockstream Jade ($65), Sparrow, Blue Wallet. PSBT support, CoinJoin, BIP-47 PayNyms, UTXO", "url": "https://degen0x.com/wallets/best-bitcoin-only-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-bitcoin-only-wallet" />
       </article>
   );
 }

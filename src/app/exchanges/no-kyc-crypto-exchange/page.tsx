@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -344,6 +345,7 @@ export default function NoKycCryptoExchange() {
   <a href="/exchanges/kucoin" style={{ color: "#fb923c", marginRight: "1rem" }}>Kucoin</a>
   <a href="/exchanges/compare/kucoin-vs-gate-io" style={{ color: "#fb923c", marginRight: "1rem" }}>Kucoin Vs Gate Io</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/exchanges/no-kyc-crypto-exchange" />
       </article>
   );
 }

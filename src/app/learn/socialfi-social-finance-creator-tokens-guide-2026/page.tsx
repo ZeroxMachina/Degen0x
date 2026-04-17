@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 const pageStyles = {
@@ -954,6 +955,7 @@ export default function SocialFiGuidePage() {
           <a href="/learn/quiz" style={{ color: "#fb923c", marginRight: "1rem" }}>Quiz</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SocialFi: Social Finance & Creator Tokens Guide 2026", "description": "Complete guide to SocialFi, creator tokens, decentralized social platforms, and onchain reputation. Learn about Farcaster, Lens, and emerging social finance", "url": "https://degen0x.com/learn/socialfi-social-finance-creator-tokens-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/socialfi-social-finance-creator-tokens-guide-2026" />
 </main>
   );
 }

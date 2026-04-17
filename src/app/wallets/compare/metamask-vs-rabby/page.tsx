@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `MetaMask vs Rabby (2026) - Which Wallet Is Better? | degen0x`,
@@ -119,6 +120,7 @@ export default function MetaMaskVsRabbyPage() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/wallets/compare/metamask-vs-rabby" />
     </div>
   );
 }

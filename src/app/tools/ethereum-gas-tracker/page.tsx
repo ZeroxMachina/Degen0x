@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -392,6 +393,7 @@ export default function EthereumGasTracker() {
         
           <a href="/tools/tax-loss-harvester" style={{ color: "#fb923c", marginRight: "1rem" }}>Tax Loss Harvester</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/ethereum-gas-tracker" />
       </article>
   );
 }

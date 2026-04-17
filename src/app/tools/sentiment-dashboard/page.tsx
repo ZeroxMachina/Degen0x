@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 interface SentimentData {
   overall: number;
@@ -329,6 +330,7 @@ export default function SentimentDashboard() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/sentiment-dashboard" />
       </div>
   );
 }

@@ -9,6 +9,7 @@ import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -882,6 +883,7 @@ export default function OnchainCLOBDexGuidePage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Order Book DEXes 2026: Hyperliquid, dYdX & the CLOB", "description": "Compare the top onchain CLOB DEXes \u2014 Hyperliquid, dYdX v4, Vertex, Drift, and more. See how order-book exchanges are replacing AMMs for perps and spot with", "url": "https://degen0x.com/learn/onchain-order-book-clob-dex-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/onchain-order-book-clob-dex-guide-2026" />
     </article>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { ChevronUp, ChevronDown } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 type SortField = 'asset' | 'exchange' | 'fundingRate' | 'annualizedRate' | 'openInterest';
 type SortOrder = 'asc' | 'desc';
@@ -784,6 +785,7 @@ export default function PerpFundingPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/perp-funding" />
       </div>
   );
 }

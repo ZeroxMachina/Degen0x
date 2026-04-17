@@ -10,6 +10,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -673,6 +674,7 @@ export default function GambleFiGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "GambleFi Guide 2026: Onchain Betting & DeFi Gambling", "description": "GambleFi explained: decentralized onchain betting, smart contract settlement, Azuro Protocol, Overtime Markets, crypto casinos. Risks, LP opportunities, and", "url": "https://degen0x.com/learn/gamblefi-onchain-betting-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/gamblefi-onchain-betting-guide-2026" />
 </div>
   );
 }

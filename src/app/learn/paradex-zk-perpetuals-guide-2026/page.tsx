@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -588,6 +589,7 @@ export default function ParadexZKPerpetualsGuide() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Paradex Guide 2026: Zero-Fee ZK Perpetual Trading on", "description": "Paradex explained: zero-fee ZK perpetuals DEX on Starknet, DIME tokenomics, ZK privacy encryption, market position vs Hyperliquid, and how to get started in", "url": "https://degen0x.com/learn/paradex-zk-perpetuals-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/paradex-zk-perpetuals-guide-2026" />
 </div>
   );
 }

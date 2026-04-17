@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type CostBasisMethod = "FIFO" | "LIFO" | "HIFO";
@@ -572,6 +573,7 @@ export default function TaxCalculatorPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/tax-calculator" />
       </div>
   );
 }

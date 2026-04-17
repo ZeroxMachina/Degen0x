@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -502,6 +503,7 @@ export default function AccountAbstractionWalletGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Account Abstraction Wallets Guide | Safe, Argent, Biconomy", "description": "Deep dive into ERC-4337 account abstraction wallets: Safe ($100B secured), Argent social recovery, Biconomy gasless, ZeroDev programmable. Compare AA", "url": "https://degen0x.com/wallets/account-abstraction-wallet-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/account-abstraction-wallet-guide" />
       </article>
   );
 }

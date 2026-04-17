@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -133,6 +134,7 @@ export default function Layer2CryptoExplained() {
 
           <a href="/learn/aster-chain-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Aster Chain Guide</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/layer-2-crypto-explained" />
       </article>
   );
 }

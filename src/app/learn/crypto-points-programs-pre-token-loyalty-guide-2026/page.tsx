@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -763,6 +764,7 @@ export default function CryptoPointsPage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Points Programs Guide 2026 \u2014 Pre-Token Loyalty &", "description": "Master crypto points programs, pre-token loyalty systems, and airdrop farming strategies. Learn about points tracking, Sybil detection, and regulatory risks.", "url": "https://degen0x.com/learn/crypto-points-programs-pre-token-loyalty-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-points-programs-pre-token-loyalty-guide-2026" />
 </div>
 
   );

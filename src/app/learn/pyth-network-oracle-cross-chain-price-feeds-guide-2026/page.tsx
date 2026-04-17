@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -442,6 +443,7 @@ export default function PythNetworkGuide() {
         />
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Pyth Network Guide 2026 \u2014 Cross-Chain Oracle, Price Feeds &", "description": "Complete guide to Pyth Network: pull-based oracle architecture, 2,800+ price feeds across 50+ chains, Oracle Integrity Staking, PYTH tokenomics, and how it", "url": "https://degen0x.com/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026" />
 </div>
 
   );

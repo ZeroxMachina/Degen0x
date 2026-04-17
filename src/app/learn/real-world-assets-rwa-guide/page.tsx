@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -507,6 +508,7 @@ export default function RWAGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real World Assets (RWA) in Crypto: Complete Guide", "description": "Learn how real-world assets are being tokenized on blockchain. Explore RWA protocols, treasury tokenization, and the regulatory landscape shaping this emerging", "url": "https://degen0x.com/learn/real-world-assets-rwa-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/real-world-assets-rwa-guide" />
 </div>
   );
 }

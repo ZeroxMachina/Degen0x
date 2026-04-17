@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -379,6 +380,7 @@ export default function BestWalletForPrivacy() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Privacy Wallets 2026 | Wasabi, Samourai, Cake,", "description": "Compare privacy wallets: Wasabi Wallet (CoinJoin), Samourai Wallet (Whirlpool), Cake Wallet (Monero), Unstoppable (Tor), Edge Wallet. CoinJoin mechanics,", "url": "https://degen0x.com/wallets/best-wallet-for-privacy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-privacy" />
       </article>
   );
 }

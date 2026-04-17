@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -229,6 +230,7 @@ export default function AdvancedDeFiStrategiesPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/bittensor-tao-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bittensor Tao Guide</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/advanced-defi-strategies" />
     </main>
   );
 }

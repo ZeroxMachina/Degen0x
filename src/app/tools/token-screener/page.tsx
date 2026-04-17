@@ -6,6 +6,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { tokens, TOKEN_CATEGORIES } from "@/data/tokens";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 function parseMarketCap(raw: string): number {
@@ -561,6 +562,7 @@ export default function TokenScreenerPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/token-screener" />
       </div>
   );
 }

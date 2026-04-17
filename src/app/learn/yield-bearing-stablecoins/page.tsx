@@ -3,6 +3,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { useState } from "react";
+import RelatedContent from '@/components/RelatedContent';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -812,6 +813,7 @@ export default function YieldBearingStablecoinsPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/vetokenomics-curve-wars-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Vetokenomics Curve Wars Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/yield-bearing-stablecoins" />
     </main>
   );
 }

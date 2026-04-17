@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -597,6 +598,7 @@ export default function RaasGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rollup-as-a-Service (RaaS) Guide 2026 \u2014 Conduit, Caldera,", "description": "Compare the top RaaS providers in 2026: Conduit, Caldera, Gelato, and AltLayer. Learn how to deploy your own rollup chain without writing infrastructure code.", "url": "https://degen0x.com/learn/raas-rollup-as-a-service-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/raas-rollup-as-a-service-guide-2026" />
 </div>
   );
 }

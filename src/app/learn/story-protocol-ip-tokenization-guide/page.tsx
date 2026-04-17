@@ -10,6 +10,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -877,6 +878,7 @@ export default function StoryProtocolGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Story Protocol IP Tokenization Guide: The AI-Native L1 2026", "description": "Story is a Layer 1 blockchain for tokenizing intellectual property. Learn about IP Assets, Programmable IP Licenses, IP Vault for AI data, $IP token, and why", "url": "https://degen0x.com/learn/story-protocol-ip-tokenization-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/story-protocol-ip-tokenization-guide" />
 </div>
   );
 }

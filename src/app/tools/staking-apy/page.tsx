@@ -5,6 +5,7 @@
 import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface StakingEntry {
@@ -639,6 +640,7 @@ export default function StakingAPYPage() {
           }}
         />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Low Risk Staking", "description": "Lido's liquid staking gives you stETH tokens representing your staked ETH, with the best liquidity in DeFi.", "url": "https://degen0x.com/tools/staking-apy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/staking-apy" />
     </div>
   );
 }

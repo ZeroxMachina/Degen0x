@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo, useCallback } from 'react';
+import RelatedContent from '@/components/RelatedContent';
 
 /**
  * Portfolio Allocator Tool — Sprint 19
@@ -430,6 +431,7 @@ export default function PortfolioAllocatorPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/portfolio-allocator" />
       </div>
   );
 }

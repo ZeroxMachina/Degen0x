@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -466,6 +467,7 @@ export default function RWARealWorldAssetsTokenization() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "RWA Real-World Assets Tokenization 2026: Ondo Finance,", "description": "RWA tokenization 2026: Ondo ($2B TVL, US Treasuries), Franklin Templeton FTTC, RealT (real estate), Maple (credit), BlackRock BUIDL. Market size, use cases,", "url": "https://degen0x.com/learn/rwa-real-world-assets-tokenization", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/rwa-real-world-assets-tokenization" />
       </article>
   );
 }

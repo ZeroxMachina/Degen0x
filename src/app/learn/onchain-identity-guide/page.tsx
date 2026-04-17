@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -579,6 +580,7 @@ export default function OnchainIdentityGuide() {
           <a href="/learn/nasdaq-tokenized-equities-trading-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Nasdaq Tokenized Equities Trading Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Identity Guide 2026: ENS, Soulbound Tokens,", "description": "Explore the onchain identity stack in 2026 \u2014 ENS domains, Soulbound Tokens (SBTs), Ethereum Attestation Service (EAS), proof of personhood, and decentralized", "url": "https://degen0x.com/learn/onchain-identity-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/onchain-identity-guide" />
 </main>
   );
 }

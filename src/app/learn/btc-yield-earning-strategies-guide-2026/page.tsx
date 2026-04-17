@@ -8,6 +8,7 @@ import {
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -886,6 +887,7 @@ export default function BTCYieldStrategiesGuidePage() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/btc-yield-earning-strategies-guide-2026" />
       </article>
   );
 }

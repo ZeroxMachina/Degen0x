@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -181,6 +182,7 @@ export default function WhaleWalletTracker() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/whale-wallet-tracker" />
       </article>
   );
 }

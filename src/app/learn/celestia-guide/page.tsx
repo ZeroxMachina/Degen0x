@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", surface: "var(--color-surface, #161b22)",
@@ -222,6 +223,7 @@ export default function CelestiaGuidePage() {
           }}
         />
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/celestia-guide" />
     </main>
   );
 }

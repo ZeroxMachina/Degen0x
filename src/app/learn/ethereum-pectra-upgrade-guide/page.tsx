@@ -10,6 +10,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -616,6 +617,7 @@ export default function EthereumPectraUpgradeGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Pectra Upgrade 2026: EIP-7702 & Changes | degen0x", "description": "Full guide to Ethereum", "url": "https://degen0x.com/learn/ethereum-pectra-upgrade-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-pectra-upgrade-guide" />
 </div>
   );
 }

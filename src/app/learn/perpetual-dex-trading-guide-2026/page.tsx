@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -661,6 +662,7 @@ export default function PerpetualDexGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Perpetual DEX Trading Guide 2026: Hyperliquid, dYdX & Beyond", "description": "Complete guide to perpetual DEX trading in 2026. Compare Hyperliquid, dYdX, and GMX \u2014 $26B+ daily volume, up to 50x leverage, zero gas fees. Learn how perp", "url": "https://degen0x.com/learn/perpetual-dex-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/perpetual-dex-trading-guide-2026" />
       </article>
   );
 }

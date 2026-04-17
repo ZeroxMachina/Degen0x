@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -921,6 +922,7 @@ export default function SonicChainGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sonic Chain Guide 2026: Fantom\\", "description": "Complete Sonic Chain guide 2026: Layer 1 blockchain formerly Fantom, 10,000+ TPS, S token tokenomics & FTM migration, FeeM developer incentives, Shadow DEX,", "url": "https://degen0x.com/learn/sonic-chain-fantom-defi-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/sonic-chain-fantom-defi-ecosystem-guide-2026" />
 </div>
   );
 }

@@ -33,6 +33,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -430,6 +431,7 @@ export default function LeaderboardPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/leaderboard" />
       </div>
   );
 }

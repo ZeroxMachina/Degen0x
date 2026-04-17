@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1259,6 +1260,7 @@ export default function CelestiaGuide() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/celestia-tia-modular-data-availability-guide-2026" />
       </article>
   );
 }

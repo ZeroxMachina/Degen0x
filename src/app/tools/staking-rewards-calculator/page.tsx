@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -635,6 +636,7 @@ export default function StakingRewardsCalculatorPage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Staking Rewards Calculator | APY & Compound Calculator", "description": "Calculate crypto staking rewards with our APY calculator. Compare yields across ETH, SOL, DOT, ATOM, and other assets. Calculate compound interest.", "url": "https://degen0x.com/tools/staking-rewards-calculator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/staking-rewards-calculator" />
 </div>
   );
 }

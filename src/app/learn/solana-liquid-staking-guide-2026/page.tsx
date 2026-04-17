@@ -7,6 +7,7 @@ import SolanaLSTCalculator from "@/components/SolanaLSTCalculator";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -639,6 +640,7 @@ export default function SolanaLiquidStakingGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Liquid Staking Guide 2026: LST Yields & APY", "description": "Complete guide to Solana liquid staking in 2026. Compare JitoSOL, mSOL, Sanctum INF, and other LSTs. Learn yields, risks, and strategies.", "url": "https://degen0x.com/learn/solana-liquid-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/solana-liquid-staking-guide-2026" />
 </div>
   );
 }

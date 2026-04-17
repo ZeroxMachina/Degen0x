@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -633,6 +634,7 @@ export default function TangemWalletReview() {
           </p>
               <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tangem Wallet Review: NFC Card Hardware Wallet", "description": "Tangem wallet review: 7.5/10 rating. NFC card hardware wallet, no seed phrase, 3-card backup, $54, EAL6+ chip. vs Ledger Nano S Plus. Security analysis.", "url": "https://degen0x.com/wallets/tangem-wallet-review-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
+      <RelatedContent category="tools" currentSlug="/wallets/tangem-wallet-review-guide" />
       </article>
   );
 }

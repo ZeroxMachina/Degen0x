@@ -4,6 +4,7 @@
 
 import { useState, useEffect } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ────────────────────────────────────────────────────────────
    Types
@@ -694,6 +695,7 @@ export default function SmartMoneyTrackerPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/smart-money-tracker" />
       </div>
   );
 }

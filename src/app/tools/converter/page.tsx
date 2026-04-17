@@ -3,6 +3,7 @@ import Link from "next/link";
 import CryptoConverter from "@/components/CryptoConverter";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -360,6 +361,7 @@ export default function ConverterPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Converter - BTC to USD, ETH to EUR | Live Rates", "description": "Convert Bitcoin, Ethereum, and 20+ cryptocurrencies to USD, EUR, GBP in real-time. Two-way crypto-to-fiat converter with live CoinGecko prices. Fast, accurate,", "url": "https://degen0x.com/tools/converter", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/converter" />
 </div>
   );
 }

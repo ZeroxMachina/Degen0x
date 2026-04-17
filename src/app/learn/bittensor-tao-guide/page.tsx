@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -509,6 +510,7 @@ export default function BittensorGuide() {
 
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bittensor (TAO) Guide 2026: How AI Subnets Work | degen0x", "description": "Bittensor (TAO) explained: how AI subnets, miners, validators, and Yuma Consensus work. Covers 2026 metrics, TAO tokenomics, the halving impact, and honest", "url": "https://degen0x.com/learn/bittensor-tao-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/bittensor-tao-guide" />
 </div>
   );
 }

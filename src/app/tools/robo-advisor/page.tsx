@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 type RiskProfile = "conservative" | "moderate" | "aggressive" | "degen";
 type TimeHorizon = "short" | "medium" | "long" | "forever";
@@ -436,6 +437,7 @@ export default function RoboAdvisorPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/robo-advisor" />
       </div>
   );
 }

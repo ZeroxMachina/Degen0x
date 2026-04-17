@@ -3,6 +3,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { useState } from "react";
+import RelatedContent from '@/components/RelatedContent';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -910,6 +911,7 @@ export default function PasskeyEmbeddedWalletsPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/tokenomics-how-to-analyze" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenomics How To Analyze</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/passkey-embedded-wallets-guide-2026" />
     </main>
   );
 }

@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -609,6 +610,7 @@ export default function FOMCCryptoGuidePage() {
       </article>
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "FOMC & Crypto: How Fed Rates Impact Bitcoin 2026 | degen0x", "description": "How do FOMC meetings and Fed interest rate decisions affect Bitcoin and crypto? March 2026 FOMC analysis, rate scenarios, and crypto market impact with price", "url": "https://degen0x.com/learn/fomc-fed-rate-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/fomc-fed-rate-crypto-guide" />
 </main>
   );
 }

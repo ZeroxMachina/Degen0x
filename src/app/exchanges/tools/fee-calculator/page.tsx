@@ -5,6 +5,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ── Exchange Data ─────────────────────────────────────────────────── */
 const EXCHANGES = [
@@ -782,6 +783,7 @@ export default function FeeCalculatorPage() {
           ))}
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/tools/fee-calculator" />
     </div>
   );
 }

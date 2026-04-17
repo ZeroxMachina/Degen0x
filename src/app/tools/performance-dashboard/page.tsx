@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
+import RelatedContent from '@/components/RelatedContent';
 
 interface Holding {
   id: string;
@@ -435,6 +436,7 @@ export default function PerformanceDashboard() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/performance-dashboard" />
       </div>
   );
 }

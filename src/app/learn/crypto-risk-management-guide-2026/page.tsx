@@ -4,6 +4,7 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -988,6 +989,7 @@ export default function CryptoRiskManagementGuide2026() {
         <BackToTop />
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Risk Management Guide 2026 \u2014 Protect Your Portfolio", "description": "Master crypto risk management in 2026. Learn position sizing, portfolio diversification, DeFi liquidation protection, smart contract risk assessment, and", "url": "https://degen0x.com/learn/crypto-risk-management-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-risk-management-guide-2026" />
 </div>
   );
 }

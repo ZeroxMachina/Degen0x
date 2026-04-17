@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -606,6 +607,7 @@ export default function CoinbaseWalletVsMetaMask() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Wallet vs MetaMask 2026", "description": "Head-to-head comparison of Coinbase Wallet and MetaMask. Features, security, fees, and which wallet is best for your needs. April 2026.", "url": "https://degen0x.com/wallets/coinbase-wallet-vs-metamask", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/coinbase-wallet-vs-metamask" />
       </article>
   );
 }

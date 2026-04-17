@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import DailyTrivia from "@/components/DailyTrivia";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -203,6 +204,7 @@ export default function DailyTriviaPage() {
           <a href="/learn/crypto-glossary" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Glossary</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Crypto Trivia Quiz | Test Your Knowledge \u2014 degen0x", "description": "Play today", "url": "https://degen0x.com/learn/daily-trivia", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/daily-trivia" />
 </main>
   );
 }

@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -606,6 +607,7 @@ export default function StakedCryptoETFsGuidePage() {
           <a href="/learn/fluid-protocol-smart-collateral-smart-debt-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Fluid Protocol Smart Collateral Smart Debt Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Staked Crypto ETFs Guide 2026 \u2014 Earn Yield via ETFs", "description": "Complete guide to staked crypto ETFs in 2026. Learn how BlackRock ETHB, Bitwise BSOL, and other staking ETFs work, their fees, yields, risks, and how they", "url": "https://degen0x.com/learn/staked-crypto-etfs-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/staked-crypto-etfs-guide-2026" />
 </main>
   );
 }

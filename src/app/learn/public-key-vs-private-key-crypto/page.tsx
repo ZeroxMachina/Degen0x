@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -567,6 +568,7 @@ export default function PublicPrivateKeyCryptoGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Public vs Private Key Cryptography Explained 2026: ECDSA,", "description": "Master public/private key cryptography: asymmetric encryption, elliptic curves (secp256k1), key derivation (HD wallets BIP-32/44), digital signatures (ECDSA),", "url": "https://degen0x.com/learn/public-key-vs-private-key-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/public-key-vs-private-key-crypto" />
       </article>
   );
 }

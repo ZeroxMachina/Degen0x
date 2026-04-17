@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { Metadata } from 'next';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'Crypto Passive Income Complete Guide 2026 | degen0x',
@@ -1120,6 +1121,7 @@ export default function CryptoPassiveIncomeGuide() {
         </div>
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Passive Income Complete Guide 2026 | degen0x", "description": "Master crypto passive income strategies in 2026: staking, liquid staking, DeFi lending, yield farming, restaking, real yield protocols, and more. Real APY", "url": "https://degen0x.com/learn/crypto-passive-income-complete-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-passive-income-complete-guide-2026" />
 </main>
   );
 }

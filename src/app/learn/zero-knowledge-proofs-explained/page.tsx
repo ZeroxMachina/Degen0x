@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -506,6 +507,7 @@ export default function ZeroKnowledgeProofsExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Zero-Knowledge Proofs (ZK) Explained: zk-SNARKs vs zk-STARKs", "description": "ZK-SNARKs vs zk-STARKs: proof sizes, trusted setup, quantum resistance. zkSync ($450M TVL), StarkNet, Polygon zkEVM, Scroll, Zcash privacy.", "url": "https://degen0x.com/learn/zero-knowledge-proofs-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/zero-knowledge-proofs-explained" />
       </article>
   );
 }

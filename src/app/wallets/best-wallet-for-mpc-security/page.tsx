@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -822,6 +823,7 @@ export default function BestWalletForMPCSecurity() {
           </p>
               <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best MPC Wallet: Multi-Party Computation Security", "description": "MPC wallet guide comparing Fireblocks, ZenGo, Coinbase WaaS, Lit Protocol, Dfns. Learn how MPC differs from multisig, threshold signing, and no-seed-phrase", "url": "https://degen0x.com/wallets/best-wallet-for-mpc-security", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-mpc-security" />
       </article>
   );
 }

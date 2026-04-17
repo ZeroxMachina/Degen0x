@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArticleStructuredData, FAQStructuredData } from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -376,6 +377,7 @@ export default function FarcasterSocialFiGuidePage() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/farcaster-socialfi-guide-2026" />
       </article>
   );
 }

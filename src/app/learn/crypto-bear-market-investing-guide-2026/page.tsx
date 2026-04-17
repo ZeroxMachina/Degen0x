@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -733,6 +734,7 @@ export default function CryptoBearMarketInvestingGuide2026() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Bear Market Investing Guide 2026: Buy the Fear", "description": "How to invest during a crypto bear market in 2026. Historical data shows buying at extreme fear (F&G < 15) yields 38%+ median 90-day returns. DCA strategies,", "url": "https://degen0x.com/learn/crypto-bear-market-investing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-bear-market-investing-guide-2026" />
 </div>
   );
 }

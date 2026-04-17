@@ -5,6 +5,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -217,6 +218,7 @@ export default function NoKycPage() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/best/no-kyc" />
     </div>
   );
 }

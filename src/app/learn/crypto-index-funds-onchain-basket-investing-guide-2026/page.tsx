@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -526,6 +527,7 @@ export default function CryptoIndexFundsOnchainkBasketInvestingGuide2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Index Funds & On-Chain Basket Investing Guide 2026", "description": "Complete guide to crypto index funds, on-chain basket investing, Index Coop, Enzyme Finance, Set Protocol, and tokenized indices. Learn DPI, MVI, and how to", "url": "https://degen0x.com/learn/crypto-index-funds-onchain-basket-investing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-index-funds-onchain-basket-investing-guide-2026" />
       </article>
   );
 }

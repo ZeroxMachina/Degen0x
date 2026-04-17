@@ -7,6 +7,7 @@ import {
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -783,6 +784,7 @@ export default function ClarityActCryptoGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "CLARITY Act 2026: Crypto Market Structure & SEC vs CFTC", "description": "The CLARITY Act splits crypto into commodities (CFTC) and securities (SEC). Learn what it means for token classifications, exchanges, DeFi, and investors in", "url": "https://degen0x.com/learn/clarity-act-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/clarity-act-crypto-guide" />
 </div>
   );
 }

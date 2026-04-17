@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -431,6 +432,7 @@ export default function StarknetValidityRollupGuidePage() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Starknet Guide 2026: Validity Rollup, STRK Staking & BTCFi", "description": "What is Starknet? The leading ZK validity rollup on Ethereum with $542M TVL, decentralized sequencing, STRK staking, privacy features, and Bitcoin DeFi", "url": "https://degen0x.com/learn/starknet-validity-rollup-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/starknet-validity-rollup-guide-2026" />
 </div>
   );
 }

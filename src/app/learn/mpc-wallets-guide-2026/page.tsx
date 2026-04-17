@@ -1,6 +1,7 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import { useState } from 'react';
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -602,6 +603,7 @@ export default function MPCWalletsGuide() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/mpc-wallets-guide-2026" />
       </div>
   );
 }

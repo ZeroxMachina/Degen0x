@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -524,6 +525,7 @@ export default function EIP4844ProtoDankshardinExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "EIP-4844 Proto-Danksharding Explained | Blob Transactions &", "description": "Master EIP-4844: blob transactions, 128KB data blobs, Dencun upgrade, 18-day pruning, and 95% L2 fee reduction. Impact on Arbitrum, Optimism, and Ethereum", "url": "https://degen0x.com/learn/eip-4844-proto-danksharding-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/eip-4844-proto-danksharding-explained" />
       </article>
   );
 }

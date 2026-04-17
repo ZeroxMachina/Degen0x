@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -666,6 +667,7 @@ export default function PerpDEXGuidePage() {
           <a href="/learn/decentralized-gpu-compute-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Decentralized Gpu Compute Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Perpetual DEXs 2026: Compare Hyperliquid, dYdX & More", "description": "Compare top perpetual DEXs in 2026. Hyperliquid, dYdX, Lighter, GRVT, GMX \u2014 fees, leverage, volume, and how to start trading on-chain derivatives.", "url": "https://degen0x.com/learn/best-perpetual-dex-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/best-perpetual-dex-guide" />
 </main>
   );
 }

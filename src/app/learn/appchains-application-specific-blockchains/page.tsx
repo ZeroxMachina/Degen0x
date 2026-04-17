@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -443,6 +444,7 @@ export default function AppChainsApplicationSpecificBlockchains() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "App-Chains Explained: Application-Specific Blockchains", "description": "Learn about application-specific blockchains: dYdX v4, Osmosis, Arbitrum Orbit. Compare sovereign vs shared security models.", "url": "https://degen0x.com/learn/appchains-application-specific-blockchains", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/appchains-application-specific-blockchains" />
       </article>
   );
 }

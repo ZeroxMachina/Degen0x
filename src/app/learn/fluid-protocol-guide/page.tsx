@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FluidCapitalEfficiencyCalc from "@/components/FluidCapitalEfficiencyCalc";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -513,6 +514,7 @@ export default function FluidProtocolGuidePage() {
           <a href="/learn/smart-money-onchain-signals-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Smart Money Onchain Signals Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fluid Protocol Guide 2026 \u2014 DeFi Lending + DEX Unified", "description": "Fluid (Instadapp) merges DeFi lending and DEX trading into one protocol. $5B+ TVL, 39x capital efficiency. Learn how debt-as-liquidity works and how to use it.", "url": "https://degen0x.com/learn/fluid-protocol-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/fluid-protocol-guide" />
 </main>
   );
 }

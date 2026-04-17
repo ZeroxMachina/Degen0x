@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -1108,6 +1109,7 @@ export default function TokenizedTreasuriesGuide() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/tokenized-treasuries-t-bills-on-chain-guide-2026" />
       </article>
   );
 }

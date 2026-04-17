@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -294,6 +295,7 @@ export default function CryptoGamingGuidePage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Gaming 2026: The Best Play-to-Earn & Web3 Games", "description": "A complete guide to crypto gaming in 2026. The best P2E games, how GameFi works, which games actually make money, NFT gaming explained, and what to watch next.", "url": "https://degen0x.com/learn/crypto-gaming-2026-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-gaming-2026-guide" />
     </article>
   );
 }

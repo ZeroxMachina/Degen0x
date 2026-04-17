@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -317,6 +318,7 @@ export default function PerpetualFuturesGuidePage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Perpetual Futures Trading Guide 2026 \u2014 How Perps Work", "description": "Learn everything about perpetual futures: funding rates, leverage, liquidation, delta-neutral strategies, and the best perp DEXs in 2026. Beginner to advanced", "url": "https://degen0x.com/learn/perpetual-futures-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/perpetual-futures-guide" />
 </div>
   );
 }

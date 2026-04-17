@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -515,6 +516,7 @@ export default function IntentsBasedTradingExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Intent-Based Trading Explained | UniswapX, CowSwap, Across", "description": "Master intent-based trading: solver networks, order flow auctions, MEV protection via UniswapX, CowSwap batch auctions, Across Protocol, and ERC-7683 standard.", "url": "https://degen0x.com/learn/intents-based-trading-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/intents-based-trading-explained" />
       </article>
   );
 }

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -840,6 +841,7 @@ export default function CryptoPredictionMarketsGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Prediction Markets Guide 2026", "description": "Master crypto prediction markets: Polymarket, Kalshi, trading strategies, regulation, and $18B+ monthly volume insights.", "url": "https://degen0x.com/learn/crypto-prediction-markets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-prediction-markets-guide-2026" />
       </article>
   );
 }

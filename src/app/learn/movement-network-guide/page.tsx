@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import MoveTokenUnlockTracker from "@/components/MoveTokenUnlockTracker";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -707,6 +708,7 @@ export default function MovementNetworkGuidePage() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Movement Network Guide 2026 \u2014 MoveVM L1 Blockchain Explained", "description": "Complete guide to Movement Network in 2026. Learn how MoveVM", "url": "https://degen0x.com/learn/movement-network-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/movement-network-guide" />
 </div>
   );
 }

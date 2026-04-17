@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { walletProducts } from "@/data/wallets";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -231,6 +232,7 @@ export default function UKWalletsPage() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best/uk" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -814,6 +815,7 @@ export default function CryptoOrderTypesGuide() {
 
           <a href="/learn/btc-yield-earning-strategies-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Btc Yield Earning Strategies Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-order-types-explained" />
       </article>
   );
 }

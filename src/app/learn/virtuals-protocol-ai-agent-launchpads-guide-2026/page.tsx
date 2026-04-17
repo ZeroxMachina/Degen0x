@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -924,6 +925,7 @@ export default function VirtualsProtocolGuide() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/virtuals-protocol-ai-agent-launchpads-guide-2026" />
       </article>
   );
 }

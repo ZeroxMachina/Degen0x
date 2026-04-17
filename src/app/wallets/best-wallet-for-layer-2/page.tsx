@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -614,6 +615,7 @@ export default function BestWalletForLayer2() {
   <a href="/wallets/reviews/bc-vault" style={{ color: "#fb923c", marginRight: "1rem" }}>Bc Vault</a>
   <a href="/wallets/reviews/mycelium" style={{ color: "#fb923c", marginRight: "1rem" }}>Mycelium</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-layer-2" />
       </article>
   );
 }

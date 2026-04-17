@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Mobile vs Desktop Wallets (2026) | degen0x`,
@@ -119,6 +120,7 @@ export default function MobileVsDesktopPage() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/wallets/compare/mobile-vs-desktop" />
     </div>
   );
 }

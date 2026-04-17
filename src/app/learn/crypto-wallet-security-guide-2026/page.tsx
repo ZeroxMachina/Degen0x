@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -817,6 +818,7 @@ export default function CryptoWalletSecurityGuide() {
 
           <a href="/learn/tokenized-funds-institutional-defi-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Funds Institutional Defi Guide</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-wallet-security-guide-2026" />
       </article>
   );
 }

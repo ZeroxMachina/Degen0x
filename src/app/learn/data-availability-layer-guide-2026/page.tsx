@@ -4,6 +4,7 @@ import DALayerComparison from "@/components/DALayerComparison";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -697,6 +698,7 @@ export default function DataAvailabilityGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Data Availability Layer Guide 2026: Celestia vs EigenDA vs", "description": "Compare Celestia, EigenDA, and Avail \u2014 the three DA layers powering Ethereum", "url": "https://degen0x.com/learn/data-availability-layer-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/data-availability-layer-guide-2026" />
 </div>
   );
 }

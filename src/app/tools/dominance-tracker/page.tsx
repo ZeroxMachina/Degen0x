@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ──────────────── Types ──────────────── */
 interface DominancePoint {
@@ -461,6 +462,7 @@ export default function DominanceTrackerPage() {
         
           <a href="/tools/social-sentiment" style={{ color: "#fb923c", marginRight: "1rem" }}>Social Sentiment</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/dominance-tracker" />
     </main>
   );
 }

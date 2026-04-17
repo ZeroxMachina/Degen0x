@@ -5,6 +5,7 @@ import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1057,6 +1058,7 @@ export default function FlashLoansGuidePage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Flash Loans Guide 2026 \u2014 How DeFi Instant Loans Work", "description": "Flash loans let you borrow millions in crypto with zero collateral \u2014 repaid in one transaction. Learn how flash loans work on Aave, dYdX, and Uniswap in 2026.", "url": "https://degen0x.com/learn/flash-loans-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/flash-loans-guide-2026" />
 </div>
   );
 }

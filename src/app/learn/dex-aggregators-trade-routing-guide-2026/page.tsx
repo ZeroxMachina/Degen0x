@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -473,6 +474,7 @@ export default function DexAggregatorsGuidePage() {
         </div>
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DEX Aggregators Guide 2026: Jupiter, 1inch, CowSwap", "description": "Complete guide to DEX aggregators in 2026. Learn how Jupiter, 1inch, CowSwap, and Odos find the best trade routes, reduce slippage, and protect you from MEV.", "url": "https://degen0x.com/learn/dex-aggregators-trade-routing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/dex-aggregators-trade-routing-guide-2026" />
 </div>
   );
 }

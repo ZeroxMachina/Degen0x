@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -580,6 +581,7 @@ export default function BestWalletForzkSyncEra() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Wallet for zkSync Era | degen0x", "description": "Best wallet for zkSync Era 2026: MetaMask, Rabby, OKX Wallet, Argent, Trust Wallet. ZK-proofs, account abstraction, gas costs, native bridge.", "url": "https://degen0x.com/wallets/best-wallet-for-zksync-era", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-zksync-era" />
       </article>
   );
 }

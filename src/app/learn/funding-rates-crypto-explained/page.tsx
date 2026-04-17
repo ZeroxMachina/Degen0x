@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -520,6 +521,7 @@ export default function FundingRatesCryptoExplained() {
 
           <a href="/learn/plume-network-rwa-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Plume Network Rwa Layer 2 Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/funding-rates-crypto-explained" />
       </article>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -825,6 +826,7 @@ export default function BackpackWalletCompleteGuide() {
           </p>
               <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Backpack wallet review: xNFT platform guide", "description": "Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs", "url": "https://degen0x.com/wallets/backpack-wallet-complete-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
+      <RelatedContent category="tools" currentSlug="/wallets/backpack-wallet-complete-guide" />
       </article>
   );
 }

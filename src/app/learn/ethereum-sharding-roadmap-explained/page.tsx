@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -592,6 +593,7 @@ export default function EthereumShardingRoadmap() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Sharding Roadmap 2026: Dencun, Blobs, Danksharding", "description": "Complete Ethereum sharding guide. Learn EIP-4844 proto-danksharding, blob transactions, data availability sampling, Verkle trees, and Ethereum full roadmap", "url": "https://degen0x.com/learn/ethereum-sharding-roadmap-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-sharding-roadmap-explained" />
       </article>
   );
 }

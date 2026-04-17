@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import FAQAccordion from '@/components/FAQAccordion';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1112,6 +1113,7 @@ export default function SECCFTCRulingGuide() {
           <a href="/learn/defi-yield-aggregators-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Yield Aggregators Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SEC/CFTC Crypto Commodities Ruling March 2026 \u2014 Digital", "description": "Complete guide to the March 17, 2026 SEC/CFTC joint ruling classifying 16 digital commodities including ETH, SOL, XRP, and more. Learn how the 68-page", "url": "https://degen0x.com/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026" />
 </main>
   );
 }

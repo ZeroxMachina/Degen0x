@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1051,6 +1052,7 @@ export default function NoCodeAITradingAgentsPage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "No-Code AI Trading Agents Guide 2026: Build Crypto Trading", "description": "Build autonomous AI trading agents without coding. Learn how Walbi, CodakAI, and 3Commas use LLMs to interpret trading strategies in plain English. Create your", "url": "https://degen0x.com/learn/no-code-ai-trading-agents-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/no-code-ai-trading-agents-guide-2026" />
     </article>
   );
 }

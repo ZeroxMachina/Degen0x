@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -546,6 +547,7 @@ export default function CryptoGasFeesGuide() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Gas Fees & Transaction Costs Guide 2026 | degen0x", "description": "Complete guide to blockchain gas fees. EIP-1559, EIP-4844, L2 savings, gas comparisons (Ethereum, Solana, Polygon, Arbitrum), account abstraction, and", "url": "https://degen0x.com/learn/crypto-gas-fees-transaction-costs-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-gas-fees-transaction-costs-guide-2026" />
 </div>
   );
 }

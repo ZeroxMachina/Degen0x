@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { exchangeDetailedComparisons, exchangeComparisonFeatures } from "@/data/exchanges";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -215,6 +216,7 @@ export default function CryptoComVsCoinbasePage() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/compare/crypto-com-vs-coinbase" />
     </div>
   );
 }

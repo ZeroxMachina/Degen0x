@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -511,6 +512,7 @@ export default function MACDIndicatorGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MACD Indicator for Crypto Trading Guide | Bitcoin &", "description": "Master MACD (Moving Average Convergence Divergence) for crypto: 12-26 EMA, signal line, histogram, bullish/bearish crossovers. Real BTC/ETH examples, trading", "url": "https://degen0x.com/learn/macd-indicator-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/macd-indicator-crypto-guide" />
       </article>
   );
 }

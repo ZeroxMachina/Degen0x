@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ─── Types ───────────────────────────────────────────────────────────────
 interface Token {
@@ -808,6 +809,7 @@ export default function MarketMoversPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/market-movers" />
       </div>
   );
 }

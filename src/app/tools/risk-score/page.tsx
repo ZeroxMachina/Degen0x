@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RiskScoreClient from './RiskScoreClient';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'Portfolio Risk Scoring Engine | degen0x',
@@ -116,6 +117,7 @@ export default function RiskScorePage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Portfolio Risk Scoring Engine | degen0x", "description": "Analyze cryptocurrency portfolio risk with our advanced scoring engine. Get comprehensive risk metrics and recommendations.", "url": "https://degen0x.com/tools/risk-score", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/risk-score" />
 </div>
   );
 }

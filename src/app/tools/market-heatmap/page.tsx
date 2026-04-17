@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ──────────────── Types ──────────────── */
 interface CoinData {
@@ -447,6 +448,7 @@ export default function MarketHeatmapPage() {
         
           <a href="/tools/token-security-scanner" style={{ color: "#fb923c", marginRight: "1rem" }}>Token Security Scanner</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/market-heatmap" />
     </main>
   );
 }

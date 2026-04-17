@@ -2,6 +2,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = { bg:"#0d1117",card:"#161b22",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4",red:"#f85149",indigo:"#818cf8" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"Cross-Chain Intents Guide",href:"/learn/cross-chain-intents-guide"}];
@@ -296,6 +297,7 @@ export default function CrossChainIntentsGuidePage() {
         />
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/cross-chain-intents-guide" />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -570,6 +571,7 @@ export default function AccountAbstractionERC4337Guide() {
 
           <a href="/learn/prediction-markets-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Prediction Markets Guide</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/account-abstraction-erc-4337-guide" />
       </article>
   );
 }

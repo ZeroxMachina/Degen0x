@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ──────────────── Types ──────────────── */
 interface CoinVolData {
@@ -429,6 +430,7 @@ export default function VolatilityScannerPage() {
           }}
         />
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/volatility-scanner" />
     </main>
   );
 }

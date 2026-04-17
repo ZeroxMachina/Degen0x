@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -662,6 +663,7 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
 
           <a href="/learn/plasma-xpl-stablecoin-chain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Plasma Xpl Stablecoin Chain Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-copy-trading-social-trading-guide-2026" />
       </article>
   );
 }

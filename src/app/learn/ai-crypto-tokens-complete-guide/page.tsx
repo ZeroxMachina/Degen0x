@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -465,6 +466,7 @@ export default function AICryptoTokensCompleteGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI Crypto Tokens Complete Guide 2026: Render, Fetch.ai,", "description": "AI crypto tokens 2026: Render ($3B, GPU compute), Fetch.ai ($2.5B, autonomous agents), Bittensor ($3.8B, ML), SingularityNET ($450M, ASI), Ocean ($150M, data).", "url": "https://degen0x.com/learn/ai-crypto-tokens-complete-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/ai-crypto-tokens-complete-guide" />
       </article>
   );
 }

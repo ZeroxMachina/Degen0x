@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -528,6 +529,7 @@ export default function MerkleTreeBlockchainExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Merkle Trees in Blockchain Explained | SPV, Patricia Tries,", "description": "Master Merkle trees: hash trees, Merkle root in block headers, Merkle proofs (SPV), Patricia Merkle Tries (Ethereum state). Merkle airdrops, Merkle Mountain", "url": "https://degen0x.com/learn/merkle-tree-blockchain-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/merkle-tree-blockchain-explained" />
       </article>
   );
 }

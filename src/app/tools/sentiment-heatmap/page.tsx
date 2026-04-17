@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import SentimentHeatmapClient from './SentimentHeatmapClient';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'Crypto Sentiment Heatmap | degen0x',
@@ -122,6 +123,7 @@ export default function SentimentHeatmapPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Sentiment Heatmap | degen0x", "description": "Real-time market sentiment analysis across top 50 cryptocurrency tokens. Visualize fear and greed with an interactive heatmap, fear & greed gauge, and advanced", "url": "https://degen0x.com/tools/sentiment-heatmap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/sentiment-heatmap" />
 </div>
   );
 }

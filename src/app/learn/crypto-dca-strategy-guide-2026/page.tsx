@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -905,6 +906,7 @@ export default function CryptoDCAStrategyGuide2026() {
         </nav>
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto DCA Strategy Guide 2026: Dollar-Cost Average Bitcoin", "description": "Master dollar-cost averaging for crypto in 2026. Learn optimal DCA frequency, backtested returns (202%+), best platforms, and advanced fear-based strategies.", "url": "https://degen0x.com/learn/crypto-dca-strategy-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-dca-strategy-guide-2026" />
 </div>
   );
 }

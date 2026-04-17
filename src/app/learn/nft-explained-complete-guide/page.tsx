@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -465,6 +466,7 @@ export default function NFTExplainedCompleteGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Explained: Complete Guide to Digital Assets | degen0x", "description": "Learn about NFTs: ERC-721, ERC-1155, use cases (art, gaming, music), OpenSea vs Blur vs Magic Eden, blue chip collections, rarity evaluation, and utility NFTs", "url": "https://degen0x.com/learn/nft-explained-complete-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/nft-explained-complete-guide" />
       </article>
   );
 }

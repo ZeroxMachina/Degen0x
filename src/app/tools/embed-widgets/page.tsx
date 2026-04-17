@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 /**
  * Metadata for Embed Widget Generator
@@ -799,6 +800,7 @@ export default function MyComponent() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/embed-widgets" />
       </div>
   );
 }

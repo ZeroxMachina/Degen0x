@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -724,6 +725,7 @@ export default function BestWalletForAirdropFarming() {
   <a href="/wallets/reviews/sparrow" style={{ color: "#fb923c", marginRight: "1rem" }}>Sparrow</a>
   <a href="/wallets/reviews/safe" style={{ color: "#fb923c", marginRight: "1rem" }}>Safe</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-airdrop-farming" />
       </article>
   );
 }

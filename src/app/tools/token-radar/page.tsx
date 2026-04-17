@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import TokenRadarClient from './TokenRadarClient';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'Token Launch Radar | degen0x',
@@ -123,6 +124,7 @@ export default function TokenRadarPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Launch Radar | degen0x", "description": "Track upcoming and recently launched tokens across multiple blockchains. Real-time token launch radar with risk analysis, social metrics, and audit status.", "url": "https://degen0x.com/tools/token-radar", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/token-radar" />
 </div>
   );
 }

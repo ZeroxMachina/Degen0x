@@ -4,6 +4,7 @@
 
 import React, { useState, useMemo, useCallback, useEffect } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 interface Chain {
   id: string;
@@ -621,6 +622,7 @@ export default function BridgeAggregator() {
         
           <a href="/tools/portfolio-heatmap" style={{ color: "#fb923c", marginRight: "1rem" }}>Portfolio Heatmap</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/bridge-aggregator" />
     </main>
   );
 }

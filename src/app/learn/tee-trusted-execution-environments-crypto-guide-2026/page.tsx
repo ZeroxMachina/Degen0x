@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -718,6 +719,7 @@ export default function TEECryptoGuide() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/tee-trusted-execution-environments-crypto-guide-2026" />
       </article>
   );
 }

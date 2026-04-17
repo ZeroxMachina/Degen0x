@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -905,6 +906,7 @@ export default function DeFiInsurancePage() {
           <a href="/learn/quantum-resistant-crypto-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Quantum Resistant Crypto Guide</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Insurance & Risk Protection Guide 2026 | degen0x", "description": "Master DeFi insurance in 2026: Nexus Mutual, InsurAce, Neptune Mutual, Unslashed. Learn coverage types, risk management, claims processes, and protocol", "url": "https://degen0x.com/learn/defi-insurance-risk-protection-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/defi-insurance-risk-protection-guide-2026" />
 </main>
   );
 }

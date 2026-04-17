@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -548,6 +549,7 @@ export default function HowToTransferCryptoBetweenWallets() {
 
           <a href="/learn/solana-developer-platform-sdp-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Developer Platform Sdp Guide</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/how-to-transfer-crypto-between-wallets" />
       </article>
   );
 }

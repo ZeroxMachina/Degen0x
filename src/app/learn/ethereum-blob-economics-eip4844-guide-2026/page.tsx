@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -991,6 +992,7 @@ export default function EthereumBlobEconomicsPage() {
           <a href="/learn/citrea-bitcoin-zk-rollup-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Citrea Bitcoin Zk Rollup Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Blob Economics & EIP-4844 Guide 2026 | degen0x", "description": "Complete guide to Ethereum EIP-4844 (Proto-Danksharding), blob transactions, blob fee markets, PeerDAS, and how cheaper blobspace scales Ethereum L2s in 2026.", "url": "https://degen0x.com/learn/ethereum-blob-economics-eip4844-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-blob-economics-eip4844-guide-2026" />
 </main>
   );
 }

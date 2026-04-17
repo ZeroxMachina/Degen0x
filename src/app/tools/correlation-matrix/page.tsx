@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import RelatedContent from '@/components/RelatedContent';
 
 interface CryptoCorrelation {
   symbol: string;
@@ -491,6 +492,7 @@ export default function CorrelationMatrixPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/correlation-matrix" />
       </div>
   );
 }

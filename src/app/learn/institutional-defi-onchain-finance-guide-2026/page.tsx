@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1186,6 +1187,7 @@ export default function InstitutionalDeFiGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Institutional DeFi & On-Chain Finance Guide 2026", "description": "Master institutional DeFi in 2026: RWA tokenization, regulatory compliance, custody solutions, and enterprise DeFi strategies with $17B+ institutional TVL.", "url": "https://degen0x.com/learn/institutional-defi-onchain-finance-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/institutional-defi-onchain-finance-guide-2026" />
 </div>
   );
 }

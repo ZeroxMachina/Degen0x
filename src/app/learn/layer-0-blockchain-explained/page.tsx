@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -370,6 +371,7 @@ export default function Layer0BlockchainsPage() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Layer 0 Blockchains Explained: Cosmos, Polkadot, Avalanche,", "description": "Master Layer 0 blockchains in 2026. Compare Cosmos IBC (80+ chains), Polkadot parachains (30+), Avalanche subnets (100+), LayerZero omnichain ($8B TVL).", "url": "https://degen0x.com/learn/layer-0-blockchain-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/layer-0-blockchain-explained" />
       </article>
   );
 }

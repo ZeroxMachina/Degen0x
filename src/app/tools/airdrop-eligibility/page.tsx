@@ -15,6 +15,7 @@ import {
   Copy,
   Check,
 } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 interface Requirement {
   text: string;
@@ -705,6 +706,7 @@ export default function AirdropEligibilityChecker() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/airdrop-eligibility" />
       </div>
   );
 }

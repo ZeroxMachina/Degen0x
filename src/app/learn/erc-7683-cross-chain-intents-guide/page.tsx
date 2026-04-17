@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1048,6 +1049,7 @@ export default function ERC7683GuidePage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ERC-7683 Guide 2026: The Cross-Chain Intents Standard", "description": "Complete guide to ERC-7683 cross-chain intents standard co-authored by Uniswap Labs and Across Protocol. Learn how cross-chain intents work, the filler", "url": "https://degen0x.com/learn/erc-7683-cross-chain-intents-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/erc-7683-cross-chain-intents-guide" />
 </div>
 
   );

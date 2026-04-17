@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -365,6 +366,7 @@ export default function BestHardwareWallet2026() {
   <a href="/wallets/reviews/backpack-wallet" style={{ color: "#fb923c", marginRight: "1rem" }}>Backpack Wallet</a>
   <a href="/wallets/reviews/safepal" style={{ color: "#fb923c", marginRight: "1rem" }}>Safepal</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/wallets/best-hardware-wallet-2026" />
       </article>
   );
 }

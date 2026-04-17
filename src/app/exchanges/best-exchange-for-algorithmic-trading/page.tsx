@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -396,6 +397,7 @@ export default function BestExchangeForAlgorithmicTrading() {
   <a href="/exchanges/robinhood-crypto" style={{ color: "#fb923c", marginRight: "1rem" }}>Robinhood Crypto</a>
   <a href="/exchanges/okx-vs-coinbase" style={{ color: "#fb923c", marginRight: "1rem" }}>Okx Vs Coinbase</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/exchanges/best-exchange-for-algorithmic-trading" />
       </article>
   );
 }

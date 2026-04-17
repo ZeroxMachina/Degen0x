@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -364,6 +365,7 @@ export default function BestDayTradingExchange() {
   <a href="/exchanges/tools/profit-loss-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Profit Loss Calculator</a>
   <a href="/exchanges/tools/dca-calculator" style={{ color: "#fb923c", marginRight: "1rem" }}>Dca Calculator</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/exchanges/best-crypto-exchange-for-day-trading" />
       </article>
   );
 }

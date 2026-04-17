@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -243,6 +244,7 @@ export default function CoinbaseAdvancedReview() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/coinbase-advanced" />
     </div>
   );
 }

@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Best Crypto Wallets of 2026 - Reviews, Comparisons & Guides | degen0x`,
@@ -284,6 +285,7 @@ export default function WalletsHubPage() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/wallets" />
     </div>
   );
 }

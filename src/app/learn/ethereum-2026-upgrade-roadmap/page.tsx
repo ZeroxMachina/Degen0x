@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -655,6 +656,7 @@ export default function EthereumUpgradeRoadmapPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum 2026 Upgrade Roadmap: Fusaka, Glamsterdam & Beyond", "description": "Ethereum", "url": "https://degen0x.com/learn/ethereum-2026-upgrade-roadmap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-2026-upgrade-roadmap" />
 </div>
   );
 }

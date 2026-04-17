@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -778,6 +779,7 @@ export default function MultisigWalletSetupGuide() {
   <a href="/wallets/best/usa" style={{ color: "#fb923c", marginRight: "1rem" }}>Usa</a>
   <a href="/wallets/best/open-source" style={{ color: "#fb923c", marginRight: "1rem" }}>Open Source</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/wallets/multisig-wallet-setup-guide" />
       </article>
   );
 }

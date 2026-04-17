@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -214,6 +215,7 @@ export default function BestMobileCryptoWallet() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Mobile Crypto Wallet 2026: Trust Wallet, MetaMask,", "description": "Compare mobile wallets: Trust Wallet (70M users), MetaMask Mobile, Phantom, Coinbase Wallet, Zerion, Rainbow, Exodus.", "url": "https://degen0x.com/wallets/best-mobile-crypto-wallet-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-mobile-crypto-wallet-2026" />
       </article>
   );
 }

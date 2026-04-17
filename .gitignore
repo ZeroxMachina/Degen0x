@@ -40,3 +40,12 @@ yarn-error.log*
 # Debug
 .pnp.cjs
 .pnp.loader.mjs
+
+# LibreOffice lockfiles
+.~lock.*.xlsx#
+.~lock.*.docx#
+.~lock.*.pptx#
+
+# Session temp / auto-memory
+/tmp/
+.auto-memory/

@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 export default function ProfitLossCalculatorPage() {
   const [buyPrice, setBuyPrice] = useState<string>("30000");
@@ -307,6 +308,7 @@ export default function ProfitLossCalculatorPage() {
           automatically computes this for you, making it easy to set realistic profit targets.
         </p>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/tools/profit-loss-calculator" />
     </div>
   );
 }

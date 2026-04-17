@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -521,6 +522,7 @@ export default function BestCryptoExchangeForBeginnersUSA() {
   <a href="/exchanges/phemex" style={{ color: "#fb923c", marginRight: "1rem" }}>Phemex</a>
   <a href="/exchanges/reviews/okx" style={{ color: "#fb923c", marginRight: "1rem" }}>Okx</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/exchanges/best-crypto-exchange-for-beginners-usa" />
       </article>
   );
 }

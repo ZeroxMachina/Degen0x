@@ -13,6 +13,7 @@ import {
   useChartExport,
   type DrawingTool,
 } from "@/components/ChartDrawingTools";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface OHLCV {
@@ -1439,6 +1440,7 @@ export default function AdvancedChartingPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/advanced-charting" />
       </div>
   );
 }

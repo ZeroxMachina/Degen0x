@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -544,6 +545,7 @@ export default function BestWalletNearProtocol() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Wallet for NEAR Protocol 2026: NEAR Wallet, Meteor,", "description": "Best NEAR wallet 2026: NEAR Wallet (official web, named accounts alice.near), Meteor (DeFi-focused, Ref Finance), Sender (mobile+extension), HERE Wallet", "url": "https://degen0x.com/wallets/best-wallet-for-near-protocol", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-near-protocol" />
       </article>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Coin {
@@ -674,6 +675,7 @@ export default function PriceAlertsPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/price-alerts" />
       </div>
   );
 }

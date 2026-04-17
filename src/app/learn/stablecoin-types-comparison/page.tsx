@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -478,6 +479,7 @@ export default function StablecoinTypesComparison() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026", "description": "Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks,", "url": "https://degen0x.com/learn/stablecoin-types-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/stablecoin-types-comparison" />
       </article>
   );
 }

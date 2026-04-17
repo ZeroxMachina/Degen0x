@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Kamino Finance Guide 2026 — Solana Lending, Liquidity &",
@@ -280,6 +281,7 @@ export default function KaminoFinanceGuide() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Kamino Finance Guide 2026 \u2014 Solana Lending, Liquidity &", "description": "Comprehensive guide to Kamino Finance: automated concentrated liquidity vaults, Kamino Lend, multiply leverage loops, KMNO tokenomics, and risks on Solana.", "url": "https://degen0x.com/learn/kamino-finance-solana-lending-liquidity-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/kamino-finance-solana-lending-liquidity-guide-2026" />
 </div>
   );
 }

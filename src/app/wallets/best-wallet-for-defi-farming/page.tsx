@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -505,6 +506,7 @@ export default function BestWalletForDefiFarming() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best wallet for DeFi farming | degen0x", "description": "MetaMask, Rabby, Phantom, Trust Wallet, Ledger for DeFi farming. Multi-chain, transaction simulation, approval management. 2026 DeFi wallet guide.", "url": "https://degen0x.com/wallets/best-wallet-for-defi-farming", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-defi-farming" />
       </article>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -362,6 +363,7 @@ export default function TokenVestingScheduleTracker() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/token-vesting-schedule-tracker" />
       </article>
   );
 }

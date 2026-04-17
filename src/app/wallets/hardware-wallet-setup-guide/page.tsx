@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -442,6 +443,7 @@ export default function HardwareWalletSetupGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hardware Wallet Setup Guide: Ledger, Trezor, Keystone 2026", "description": "Complete hardware wallet setup guide covering Ledger Nano X/S Plus, Trezor Model T/Safe 3, Keystone Pro. Step-by-step firmware updates, seed phrase backup, and", "url": "https://degen0x.com/wallets/hardware-wallet-setup-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/hardware-wallet-setup-guide" />
       </article>
   );
 }

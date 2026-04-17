@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import { generateToolPageSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ── SEO Metadata ────────────────────────────────────────────
@@ -602,6 +603,7 @@ export default function TokenSecurityScannerPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Security Scanner - Rug Pull & Honeypot Checker", "description": "Scan any crypto token contract for rug pull risks, honeypot functions, and security red flags. Free token security checker across 6+ chains.", "url": "https://degen0x.com/tools/token-security-scanner", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/token-security-scanner" />
 </div>
   );
 }

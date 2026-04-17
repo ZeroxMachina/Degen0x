@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -429,6 +430,7 @@ export default function ImpermanentLossDeFiExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Impermanent Loss DeFi Explained 2026: Formula, Examples,", "description": "Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor),", "url": "https://degen0x.com/learn/impermanent-loss-defi-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/impermanent-loss-defi-explained" />
       </article>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -256,6 +257,7 @@ const toc = [{ id: 'intro', t: 'Overview' }, { id: 'cold', t: 'Cold Storage' }, 
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Exchange Security Comparison 2026: Coinbase vs", "description": "Compare cold storage, insurance, SOC 2, and proof of reserves across Coinbase (98%), Kraken (95%), Binance SAFU ($1B), Gemini, Crypto.com.", "url": "https://degen0x.com/exchanges/crypto-exchange-security-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/crypto-exchange-security-comparison" />
       </article>
   );
 }

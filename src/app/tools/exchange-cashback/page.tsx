@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 type Exchange = {
   id: string;
@@ -445,6 +446,7 @@ export default function ExchangeCashbackPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/exchange-cashback" />
       </div>
   );
 }

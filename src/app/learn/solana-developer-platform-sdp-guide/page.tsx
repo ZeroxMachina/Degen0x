@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -775,6 +776,7 @@ export default function SolanaDeveloperPlatformGuide() {
 
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Developer Platform (SDP) Guide 2026 \u2014 Enterprise", "description": "Master the Solana Developer Platform: enterprise APIs for tokenized deposits, stablecoins, RWAs, and payments. Used by Mastercard, Worldpay, and Western Union.", "url": "https://degen0x.com/learn/solana-developer-platform-sdp-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/solana-developer-platform-sdp-guide" />
 </main>
   );
 }

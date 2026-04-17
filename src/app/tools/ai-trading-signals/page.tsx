@@ -4,6 +4,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface TradingSignal {
@@ -760,6 +761,7 @@ export default function AITradingSignalsPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/ai-trading-signals" />
       </div>
   );
 }

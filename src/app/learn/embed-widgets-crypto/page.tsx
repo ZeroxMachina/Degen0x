@@ -1,6 +1,7 @@
 'use client';
 
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export default function EmbedWidgetsPage() {
   const breadcrumbItems = [
@@ -570,6 +571,7 @@ useEffect(() => {
         />
       </article>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/embed-widgets-crypto" />
     </div>
   );
 }

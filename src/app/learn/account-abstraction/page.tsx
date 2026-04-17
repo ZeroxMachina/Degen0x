@@ -416,6 +416,7 @@ export default function AccountAbstractionPage() {
                 <div style={{ color: S.primary, marginBottom: 8 }}>// Alchemy Account Kit Setup</div>
                 <div style={{ color: S.text }}>{`import { createModularAccountAlchemyClient } from '@alchemy/aa-alchemy';
 import { sepolia } from '@alchemy/chains';
+import RelatedContent from '@/components/RelatedContent';
 
 const client = await createModularAccountAlchemyClient({
   chain: sepolia,
@@ -615,6 +616,7 @@ localStorage.setItem('gameSessionKey', sessionKey);`}</div>
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/yield-tokenization-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Yield Tokenization Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/account-abstraction" />
     </main>
   );
 }

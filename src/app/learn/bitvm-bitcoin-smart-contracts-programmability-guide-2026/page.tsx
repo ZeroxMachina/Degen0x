@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'BitVM Guide 2026: Bitcoin Smart Contracts | degen0x',
@@ -680,6 +681,7 @@ export default function BitVMPage() {
           <a href="/learn/decentralized-gpu-compute-networks-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Decentralized Gpu Compute Networks Guide</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BitVM Guide 2026: Bitcoin Smart Contracts | degen0x", "description": "Complete guide to BitVM: how Bitcoin enables Turing-complete smart contracts without consensus changes. Learn off-chain computation, fraud proofs, OP_CAT, and", "url": "https://degen0x.com/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026" />
 </main>
   );
 }

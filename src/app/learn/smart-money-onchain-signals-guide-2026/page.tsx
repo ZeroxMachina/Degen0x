@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -713,6 +714,7 @@ export default function SmartMoneyOnchainSignalsGuide2026() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Money On-Chain Signals Guide 2026: Track Whale &", "description": "Learn to track smart money on-chain: whale wallets, institutional accumulation, exchange flows, MVRV, SOPR, and NVT. Tools, strategies, and real-time signals", "url": "https://degen0x.com/learn/smart-money-onchain-signals-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/smart-money-onchain-signals-guide-2026" />
 </div>
   );
 }

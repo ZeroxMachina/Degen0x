@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -573,6 +574,7 @@ export default function MetaMaskWalletSetup() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Set Up MetaMask Wallet: Complete Step-by-Step Guide", "description": "Complete MetaMask setup guide: download, create wallet, secure seed phrase, add networks (Ethereum, Polygon, Arbitrum, Base), connect dApps, and manage gas", "url": "https://degen0x.com/learn/how-to-set-up-metamask-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/how-to-set-up-metamask-wallet" />
       </article>
   );
 }

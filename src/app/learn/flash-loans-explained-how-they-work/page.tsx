@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -513,6 +514,7 @@ export default function FlashLoansExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Flash Loans Explained 2026: Aave, dYdX, Atomic Transactions", "description": "Complete flash loan guide 2026: Aave $2B liquidity 0.09% fee, dYdX 0% fee, atomic transactions, arbitrage, liquidation bots, Euler hack $197M, collateral", "url": "https://degen0x.com/learn/flash-loans-explained-how-they-work", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/flash-loans-explained-how-they-work" />
       </article>
   );
 }

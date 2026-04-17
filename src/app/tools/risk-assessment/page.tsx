@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
+import RelatedContent from '@/components/RelatedContent';
 
 interface RiskResult {
   overallScore: number;
@@ -271,6 +272,7 @@ export default function RiskAssessment() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/risk-assessment" />
       </div>
   );
 }

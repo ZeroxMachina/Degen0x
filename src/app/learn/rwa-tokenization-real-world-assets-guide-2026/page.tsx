@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -646,6 +647,7 @@ export default function RWATokenizationGuide() {
 
           <a href="/learn/dydx-chain-cosmos-perpetual-futures-dex-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Dydx Chain Cosmos Perpetual Futures Dex Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/rwa-tokenization-real-world-assets-guide-2026" />
       </article>
   );
 }

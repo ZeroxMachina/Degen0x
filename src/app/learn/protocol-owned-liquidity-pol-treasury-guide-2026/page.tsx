@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -721,6 +722,7 @@ export default function ProtocolOwnedLiquidityGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Protocol-Owned Liquidity (POL) & DeFi Treasury Guide 2026", "description": "Complete guide to Protocol-Owned Liquidity in 2026. Learn how OlympusDAO, Frax, Tokemak, and Berachain are revolutionizing DeFi treasury management. POL", "url": "https://degen0x.com/learn/protocol-owned-liquidity-pol-treasury-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/protocol-owned-liquidity-pol-treasury-guide-2026" />
       </article>
   );
 }

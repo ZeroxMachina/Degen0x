@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -642,6 +643,7 @@ export default function MEVMaximalExtractableValueExplained2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MEV (Maximal Extractable Value) Explained 2026: Flashbots,", "description": "Complete MEV guide 2026. Sandwich attacks, frontrunning, MEV-Boost, Flashbots, MEV protection tools (CoW Protocol, MEV Blocker), searcher/builder/proposer", "url": "https://degen0x.com/learn/mev-maximal-extractable-value-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/mev-maximal-extractable-value-explained" />
       </article>
   );
 }

@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { hardwareWallets, walletComparisonItems, hardwareWalletFAQs } from "@/data/wallets";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -343,6 +344,7 @@ export default function BestHardwareWalletsPage() {
 
       <FAQSection faqs={hardwareWalletFAQs} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Dual Secure Element Chips", "description": "Crypto content on degen0x", "url": "https://degen0x.com/wallets/best/hardware", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/wallets/best/hardware" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1447,6 +1448,7 @@ export default function BasedRollupsGuide() {
 
           <a href="/learn/mpc-wallets-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Mpc Wallets Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/based-rollups-ethereum-l1-sequencing-guide-2026" />
       </article>
   );
 }

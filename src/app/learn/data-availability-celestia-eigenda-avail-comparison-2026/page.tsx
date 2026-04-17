@@ -6,6 +6,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Celestia vs EigenDA vs Avail: DA Layer Comparison 2026",
@@ -630,6 +631,7 @@ export default function DataAvailabilityComparisonPage() {
           <a href="/learn/zk-coprocessors-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Zk Coprocessors Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Celestia vs EigenDA vs Avail: DA Layer Comparison 2026", "description": "Compare Celestia, EigenDA, and Avail data availability layers. Throughput, cost, security models, and which DA solution fits your rollup. Updated March 2026.", "url": "https://degen0x.com/learn/data-availability-celestia-eigenda-avail-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/data-availability-celestia-eigenda-avail-comparison-2026" />
 </main>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -802,6 +803,7 @@ export default function AICryptoAgentsPage() {
         />
 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI Crypto Agents & Autonomous DeFi 2026 Guide", "description": "Complete guide to AI agents in crypto and DeFi. Learn about Virtuals, AIXBT, Autonolas, autonomous trading, yield optimization, and the future of agent-powered", "url": "https://degen0x.com/learn/ai-crypto-agents-autonomous-defi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/ai-crypto-agents-autonomous-defi-guide-2026" />
 </main>
   );
 }

@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "#0d1117", border: "#30363d", text: "#e6edf3", text2: "#8b949e",
@@ -182,6 +183,7 @@ export default function DePINGuidePage() {
           }}
         />
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/depin-guide" />
     </main>
   );
 }

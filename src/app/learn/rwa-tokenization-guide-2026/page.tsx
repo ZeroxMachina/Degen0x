@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -272,6 +273,7 @@ export default function RWATokenizationGuidePage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "RWA Tokenization Guide 2026: How Real-World Assets Are", "description": "A complete guide to real-world asset (RWA) tokenization in 2026. How it works, the top protocols, risks, yield opportunities, and which assets are going", "url": "https://degen0x.com/learn/rwa-tokenization-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/rwa-tokenization-guide-2026" />
     </article>
   );
 }

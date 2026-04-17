@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -833,6 +834,7 @@ export default function BlockchainExplanation() {
         </div>
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How Blockchain Works: Simple Explanation | Degen0x", "description": "Learn how blockchain technology works in simple terms. Understand blocks, transactions, consensus, and why blockchain is secure for beginners.", "url": "https://degen0x.com/learn/how-blockchain-works-simple-explanation", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/how-blockchain-works-simple-explanation" />
 </div>
   );
 }

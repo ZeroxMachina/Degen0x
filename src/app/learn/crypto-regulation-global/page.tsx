@@ -1,6 +1,7 @@
 'use client';
 
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export default function CryptoRegulationPage() {
   const breadcrumbItems = [
@@ -441,6 +442,7 @@ export default function CryptoRegulationPage() {
         />
       </article>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-regulation-global" />
     </div>
   );
 }

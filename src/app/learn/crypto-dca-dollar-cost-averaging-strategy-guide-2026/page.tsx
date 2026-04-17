@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -281,6 +282,7 @@ export default function CryptoDCAPage() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto DCA Strategy Guide 2026: Dollar-Cost Averaging", "description": "Master dollar-cost averaging in crypto: mechanics, vs lump-sum, optimal intervals, tax implications, and 2026 portfolio strategies.", "url": "https://degen0x.com/learn/crypto-dca-dollar-cost-averaging-strategy-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-dca-dollar-cost-averaging-strategy-guide-2026" />
       </article>
   );
 }

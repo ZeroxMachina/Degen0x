@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Polymarket vs Kalshi: Prediction Markets Comparison Guide",
@@ -321,6 +322,7 @@ export default function Page() {
         </nav>
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Polymarket vs Kalshi: Prediction Markets Comparison Guide", "description": "In-depth comparison of Polymarket and Kalshi in 2026 \u2014 fees, liquidity, regulation, US access, crypto vs USD rails, and which prediction market platform is", "url": "https://degen0x.com/learn/polymarket-vs-kalshi-prediction-markets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/polymarket-vs-kalshi-prediction-markets-guide-2026" />
 </div>
   );
 }

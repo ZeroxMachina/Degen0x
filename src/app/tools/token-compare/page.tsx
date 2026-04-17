@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 interface TokenData {
   id: string;
@@ -248,6 +249,7 @@ export default function TokenComparePage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/token-compare" />
       </div>
   );
 }

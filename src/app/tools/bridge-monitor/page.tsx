@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ────────────────────────────────────────────────────────────
    Types
@@ -366,6 +367,7 @@ export default function BridgeMonitorPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/bridge-monitor" />
       </div>
   );
 }

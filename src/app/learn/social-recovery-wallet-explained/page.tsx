@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -480,6 +481,7 @@ export default function SocialRecoveryWalletExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Social Recovery Wallets Explained | Argent, Safe & Guardian", "description": "Master social recovery wallets: how Argent uses 3-5 guardians, Safe social recovery modules, and ERC-4337 integration to secure crypto without seed phrases.", "url": "https://degen0x.com/learn/social-recovery-wallet-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/social-recovery-wallet-explained" />
       </article>
   );
 }

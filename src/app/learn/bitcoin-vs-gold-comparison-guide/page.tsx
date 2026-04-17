@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -563,6 +564,7 @@ export default function BitcoinVsGoldComparisonGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin vs Gold Comparison 2026: Supply, Returns,", "description": "Bitcoin vs gold: supply (21M BTC vs 200K tons Au), portability, 1yr/5yr/10yr returns, volatility, Sharpe ratio, digital scarcity vs physical store of value.", "url": "https://degen0x.com/learn/bitcoin-vs-gold-comparison-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/bitcoin-vs-gold-comparison-guide" />
       </article>
   );
 }

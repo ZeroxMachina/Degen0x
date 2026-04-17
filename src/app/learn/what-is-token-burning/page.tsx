@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -464,6 +465,7 @@ export default function WhatIsTokenBurning() {
 
           <a href="/learn/farcaster-socialfi-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Farcaster Socialfi Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/what-is-token-burning" />
       </article>
   );
 }

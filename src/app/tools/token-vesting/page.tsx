@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 // Metadata comment since this is a 'use client' component
 // Title: Token Vesting & Unlock Tracker
@@ -964,6 +965,7 @@ export default function TokenVestingPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/token-vesting" />
       </div>
   );
 }

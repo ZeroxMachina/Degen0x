@@ -15,6 +15,7 @@ import {
   Copy,
   CheckCircle2,
 } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 // Types
 interface Token {
@@ -680,6 +681,7 @@ export default function WalletProfiler() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/wallet-profiler" />
       </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -768,6 +769,7 @@ export default function UndercollateralizedDeFiLendingGuide() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/undercollateralized-defi-lending-onchain-credit-guide-2026" />
       </article>
   );
 }

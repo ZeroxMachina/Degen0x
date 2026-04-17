@@ -6,6 +6,7 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -822,6 +823,7 @@ export default function SmartContractSecurityAuditPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Contract Security Audits: Complete Guide 2026", "description": "Learn how smart contract audits work, top vulnerabilities (OWASP Top 10), audit firm comparison, costs, and how to verify protocol security. Updated March 2026.", "url": "https://degen0x.com/learn/smart-contract-security-audit-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/smart-contract-security-audit-guide-2026" />
 </div>
 
   );

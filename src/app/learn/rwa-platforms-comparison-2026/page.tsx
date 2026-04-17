@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -614,6 +615,7 @@ export default function RWAPlatformsComparison() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "RWA Platforms Comparison 2026: Ondo vs Centrifuge vs Maple", "description": "Compare the best RWA tokenization platforms in 2026. Ondo Finance, Centrifuge, Maple, and Goldfinch analyzed. $12B+ on-chain RWA, 4.8-12% yields, institutional", "url": "https://degen0x.com/learn/rwa-platforms-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/rwa-platforms-comparison-2026" />
 </div>
   );
 }

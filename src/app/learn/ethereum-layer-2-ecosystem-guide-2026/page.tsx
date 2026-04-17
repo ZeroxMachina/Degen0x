@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -911,6 +912,7 @@ export default function EthereumLayer2Guide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Layer 2 Guide 2026: Base, Arbitrum, Optimism &", "description": "Complete guide to Ethereum Layer 2 networks in 2026. Compare Base (46% DeFi TVL), Arbitrum ($18B TVL), Optimism, zkSync, Scroll, and Starknet. Learn L2 fees,", "url": "https://degen0x.com/learn/ethereum-layer-2-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-layer-2-ecosystem-guide-2026" />
       </article>
   );
 }

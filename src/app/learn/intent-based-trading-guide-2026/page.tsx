@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -810,6 +811,7 @@ export default function IntentBasedTradingGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Intent-Based Trading Guide 2026: CoW Protocol, UniswapX &", "description": "Complete guide to intent-based DEX trading in 2026. Learn how CoW Protocol, UniswapX, and 1inch Fusion eliminate MEV, compare solver models, and start trading", "url": "https://degen0x.com/learn/intent-based-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/intent-based-trading-guide-2026" />
       </article>
   );
 }

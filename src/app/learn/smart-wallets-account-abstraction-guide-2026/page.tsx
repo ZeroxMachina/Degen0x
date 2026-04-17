@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -724,6 +725,7 @@ export default function SmartWalletsAccountAbstractionGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Wallets & Account Abstraction Guide 2026 | degen0x", "description": "Complete guide to smart wallets and account abstraction in 2026. Learn how ERC-4337 and EIP-7702 enable gasless onboarding, multi-sig recovery, and", "url": "https://degen0x.com/learn/smart-wallets-account-abstraction-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/smart-wallets-account-abstraction-guide-2026" />
       </article>
   );
 }

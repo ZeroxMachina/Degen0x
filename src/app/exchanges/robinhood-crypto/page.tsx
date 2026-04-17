@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Metadata as NextMetadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: NextMetadata = {
@@ -220,6 +221,7 @@ export default function RobinhoodCryptoReview() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/robinhood-crypto" />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, Grid3x3, List, Calendar } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 interface CryptoEvent {
   id: string;
@@ -324,6 +325,7 @@ function EventListItem({ event }: { event: CryptoEvent }) {
           }}
         />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Halving Event", "description": "Block reward reduction from 3.125 to 1.5625 BTC", "url": "https://degen0x.com/tools/crypto-calendar", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/crypto-calendar" />
     </div>
   );
 }

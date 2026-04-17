@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1319,6 +1320,7 @@ export default function DecentralizedStorageGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized Storage Guide 2026: Filecoin, Arweave & IPFS", "description": "Complete decentralized storage guide 2026: Filecoin (14+ EB capacity), Arweave permanent storage, IPFS distributed network, and storage token economics (FIL,", "url": "https://degen0x.com/learn/decentralized-storage-filecoin-arweave-ipfs-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/decentralized-storage-filecoin-arweave-ipfs-guide-2026" />
 </div>
   );
 }

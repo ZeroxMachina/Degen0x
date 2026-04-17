@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -202,6 +203,7 @@ export default function TokenUnlocksCalendar() {
         
           <a href="/tools/token-radar" style={{ color: "#fb923c", marginRight: "1rem" }}>Token Radar</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/token-unlocks-calendar" />
       </article>
   );
 }

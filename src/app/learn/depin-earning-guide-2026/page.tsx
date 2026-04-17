@@ -4,6 +4,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -687,6 +688,7 @@ export default function DepinEarningGuide2026() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Earn Crypto with DePIN Nodes in 2026 \u2014 Complete Guide", "description": "Learn how to earn passive crypto income by running DePIN nodes. Compare earnings from Helium, Hivemapper, Render, io.net, Grass, Storj, and Filecoin with real", "url": "https://degen0x.com/learn/depin-earning-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/depin-earning-guide-2026" />
 </div>
   );
 }

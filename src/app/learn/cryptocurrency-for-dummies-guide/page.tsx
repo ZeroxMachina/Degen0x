@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1454,6 +1455,7 @@ export default function CryptocurrencyForDummiesGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cryptocurrency for Dummies: Complete Beginner Guide", "description": "Learn cryptocurrency from scratch. Understand Bitcoin, blockchain, wallets & how to buy your first crypto\u2014written for absolute beginners.", "url": "https://degen0x.com/learn/cryptocurrency-for-dummies-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/cryptocurrency-for-dummies-guide" />
 </div>
   );
 }

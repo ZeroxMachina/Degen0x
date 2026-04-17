@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -893,6 +894,7 @@ export default function OnchainIdentityReputationGuide() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Identity & Reputation Guide 2026 | degen0x", "description": "Master onchain identity infrastructure in 2026. Learn about Soulbound Tokens, Ethereum Attestation Service, proof of personhood, and building trust in Web3.", "url": "https://degen0x.com/learn/onchain-identity-reputation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/onchain-identity-reputation-guide-2026" />
     </article>
   );
 }

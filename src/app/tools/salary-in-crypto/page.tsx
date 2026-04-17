@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 const ASSET_PRICES: Record<string, number> = {
   BTC: 95000,
@@ -352,6 +353,7 @@ export default function SalaryInCryptoPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/salary-in-crypto" />
       </div>
   );
 }

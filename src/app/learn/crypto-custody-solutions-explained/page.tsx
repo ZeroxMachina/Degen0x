@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -491,6 +492,7 @@ export default function CryptoCustodySolutions() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Custody Solutions Explained | degen0x", "description": "Learn self-custody vs institutional crypto custody. Compare Coinbase Custody, Fireblocks, BitGo, Safe smart contracts, MPC wallets with security and insurance", "url": "https://degen0x.com/learn/crypto-custody-solutions-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-custody-solutions-explained" />
       </article>
   );
 }

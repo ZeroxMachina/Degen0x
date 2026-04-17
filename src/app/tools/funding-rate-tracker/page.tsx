@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateToolPageSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -387,6 +388,7 @@ export default function FundingRateTrackerPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Funding Rate Tracker - Compare Perp Rates Across", "description": "Track real-time perpetual futures funding rates across Binance, Bybit, OKX, Bitget, dYdX & Hyperliquid. Compare 8h and annualized rates for BTC, ETH, SOL &", "url": "https://degen0x.com/tools/funding-rate-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/funding-rate-tracker" />
 </div>
   );
 }

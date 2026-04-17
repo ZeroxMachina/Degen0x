@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -216,6 +217,7 @@ export default function BestSolanaWallet2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Solana Wallet 2026: Phantom, Solflare, Backpack, Glow", "description": "Compare Solana wallets 2026: Phantom (#1, hot), Solflare, Backpack, Glow, Ledger. Staking, NFT gallery, Jupiter swaps, priority fees.", "url": "https://degen0x.com/wallets/best-solana-wallet-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-solana-wallet-2026" />
       </article>
   );
 }

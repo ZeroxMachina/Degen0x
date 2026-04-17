@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -453,6 +454,7 @@ export default function PassiveIncomeCryptoStrategies2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Passive Income Crypto Strategies 2026: Staking, Yield", "description": "Crypto passive income 2026: Staking (3.5-10% APY), LP fees (5-40% APY), Lending (3-8% APY), Real Yield (2-6% APY). Comparison table, risks, and strategies.", "url": "https://degen0x.com/learn/passive-income-crypto-strategies-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/passive-income-crypto-strategies-2026" />
       </article>
   );
 }

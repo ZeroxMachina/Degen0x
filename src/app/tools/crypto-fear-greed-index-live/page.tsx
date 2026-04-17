@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -577,6 +578,7 @@ export default function CryptoFearGreedIndexPage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Fear & Greed Index Live | Market Sentiment Tracker", "description": "Track live crypto fear and greed index. Understand calculation, historical signals, and trading strategies with real-time market sentiment data.", "url": "https://degen0x.com/tools/crypto-fear-greed-index-live", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/tools/crypto-fear-greed-index-live" />
 </div>
   );
 }

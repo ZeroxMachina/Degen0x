@@ -4,6 +4,7 @@ import BackToTop from "@/components/BackToTop";
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -763,6 +764,7 @@ export default function CryptoETFOptionsTradingGuidePage() {
           <a href="/learn/governance-security-attack-vectors-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Governance Security Attack Vectors 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto ETF Options Trading Guide 2026: Regulatory Changes,", "description": "Master crypto ETF options trading in 2026. Learn position limit removal, key ETFs (IBIT, ETHA, FBTC), covered calls, protective puts, FLEX options, and", "url": "https://degen0x.com/learn/crypto-etf-options-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-etf-options-trading-guide-2026" />
 </main>
   );
 }

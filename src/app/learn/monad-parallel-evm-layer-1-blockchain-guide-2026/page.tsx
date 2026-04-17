@@ -688,6 +688,7 @@ npm install --save-dev hardhat @nomicfoundation/hardhat-ethers`}
 
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 contract MyToken is ERC20 {
@@ -910,6 +911,7 @@ contract MyToken is ERC20 {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Monad Blockchain Guide 2026 \u2014 Parallel EVM Layer 1 Explained", "description": "Complete guide to Monad: a 10,000 TPS, fully EVM-compatible Layer 1 blockchain. Learn MonadBFT consensus, parallel execution, architecture, ecosystem, MON", "url": "https://degen0x.com/learn/monad-parallel-evm-layer-1-blockchain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/monad-parallel-evm-layer-1-blockchain-guide-2026" />
       </article>
   );
 }

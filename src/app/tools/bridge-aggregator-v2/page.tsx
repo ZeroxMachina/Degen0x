@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Bridge {
@@ -584,6 +585,7 @@ export default function BridgeAggregatorV2Page() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/bridge-aggregator-v2" />
       </div>
   );
 }

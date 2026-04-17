@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1293,6 +1294,7 @@ export default function WorldIDProofOfPersonhoodGuide() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "World ID & Proof of Personhood: Complete Guide 2026", "description": "Comprehensive guide to Worldcoin, World ID, and proof of personhood protocols. Explore biometric verification, zero-knowledge proofs, WLD tokenomics, World", "url": "https://degen0x.com/learn/worldcoin-world-id-proof-of-personhood-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/worldcoin-world-id-proof-of-personhood-guide-2026" />
 </div>
   );
 }

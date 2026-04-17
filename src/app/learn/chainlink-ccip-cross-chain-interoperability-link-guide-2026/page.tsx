@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -556,6 +557,7 @@ export default function ChainlinkCCIPPage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Chainlink CCIP: Cross-Chain Interoperability & LINK Token", "description": "Complete guide to Chainlink CCIP cross-chain interoperability protocol. Learn how CCIP connects 60+ blockchains, secures $33.6B in cross-chain tokens, and", "url": "https://degen0x.com/learn/chainlink-ccip-cross-chain-interoperability-link-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/chainlink-ccip-cross-chain-interoperability-link-guide-2026" />
 </div>
 
   );

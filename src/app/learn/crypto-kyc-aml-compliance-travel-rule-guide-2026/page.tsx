@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -978,6 +979,7 @@ export default function CryptoKYCAMLComplianceGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto KYC, AML & Travel Rule Compliance Guide 2026", "description": "Complete guide to KYC, AML, and FATF Travel Rule compliance in crypto 2026. Learn VASP regulations, MiCA enforcement, regulatory fines, and how to stay", "url": "https://degen0x.com/learn/crypto-kyc-aml-compliance-travel-rule-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-kyc-aml-compliance-travel-rule-guide-2026" />
       </article>
   );
 }

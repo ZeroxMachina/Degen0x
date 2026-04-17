@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -389,6 +390,7 @@ export default function BlockchainConsensusMechanismsCompared() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blockchain Consensus Mechanisms Compared 2026 | PoW, PoS,", "description": "Compare consensus mechanisms: Proof-of-Work (Bitcoin), Proof-of-Stake (Ethereum), DPoS (EOS), Proof-of-History (Solana), Tendermint BFT (Cosmos). Energy use,", "url": "https://degen0x.com/learn/blockchain-consensus-mechanisms-compared", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/blockchain-consensus-mechanisms-compared" />
       </article>
   );
 }

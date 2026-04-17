@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -512,6 +513,7 @@ export default function VerifiableRandomFunctionVRF() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Verifiable Random Function (VRF) Explained | Chainlink,", "description": "Master VRF: Chainlink VRF v2.5 ($50M+ fees), API3 QRNG, Pyth Entropy. Gaming randomness, loot boxes, PvP matching, NFT traits. On-chain randomness solutions", "url": "https://degen0x.com/learn/verifiable-random-function-vrf", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/verifiable-random-function-vrf" />
       </article>
   );
 }

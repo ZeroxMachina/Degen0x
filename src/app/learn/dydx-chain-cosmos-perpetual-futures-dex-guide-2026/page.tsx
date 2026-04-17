@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -888,6 +889,7 @@ export default function DydxChainGuide() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/dydx-chain-cosmos-perpetual-futures-dex-guide-2026" />
       </article>
   );
 }

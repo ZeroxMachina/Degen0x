@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 interface ExchangeFeeData {
   id: string;
@@ -828,6 +829,7 @@ export default function ExchangeFeesPage() {
           }),
         }}
       />
+      <RelatedContent category="tools" currentSlug="/tools/exchange-fees" />
     </div>
   );
 }

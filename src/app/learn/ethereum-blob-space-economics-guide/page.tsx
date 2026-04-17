@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -567,6 +568,7 @@ export default function EthereumBlobSpaceGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Blob Space Guide 2026: EIP-4844, Data Availability", "description": "Understand how Ethereum", "url": "https://degen0x.com/learn/ethereum-blob-space-economics-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-blob-space-economics-guide" />
 </div>
   );
 }

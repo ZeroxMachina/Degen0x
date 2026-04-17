@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -661,6 +662,7 @@ export default function MEVProtectionGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MEV Protection Guide 2026: Flashbots, MEV-Share & Fair", "description": "Complete guide to MEV (Maximal Extractable Value) protection in 2026. Learn sandwich attack risks, how Flashbots Protect saves $809M+ in losses, MEV-Share", "url": "https://degen0x.com/learn/mev-protection-fair-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/mev-protection-fair-trading-guide-2026" />
       </article>
   );
 }

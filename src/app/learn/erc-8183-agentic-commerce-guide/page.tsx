@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1075,6 +1076,7 @@ export default function ERC8183GuidePage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ERC-8183 Guide 2026: The Agentic Commerce Standard Explained", "description": "Complete guide to ERC-8183 Agentic Commerce Standard for trustless AI-to-AI transactions. Learn how agents transact with escrow, delivery verification, and", "url": "https://degen0x.com/learn/erc-8183-agentic-commerce-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/erc-8183-agentic-commerce-guide" />
 </div>
 
   );

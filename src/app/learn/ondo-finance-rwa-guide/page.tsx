@@ -10,6 +10,7 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -832,6 +833,7 @@ export default function OndoFinanceGuidePage() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/ondo-finance-rwa-guide" />
       </article>
   );
 }

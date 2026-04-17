@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -564,6 +565,7 @@ export default function ModularVsMonolithicBlockchains() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Modular vs Monolithic Blockchains 2026: Celestia, EigenDA,", "description": "Complete guide to modular blockchain architecture. Compare execution layers (rollups), data availability (Celestia $1B+ FDV, EigenDA), Ethereum, Solana. Learn", "url": "https://degen0x.com/learn/modular-vs-monolithic-blockchains", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/modular-vs-monolithic-blockchains" />
       </article>
   );
 }

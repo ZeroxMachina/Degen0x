@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 interface MEVAttack {
   id: number;
@@ -323,6 +324,7 @@ export default function MEVProtectionDashboard() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/mev-protection-dashboard" />
       </div>
   );
 }

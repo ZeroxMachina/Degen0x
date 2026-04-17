@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -651,6 +652,7 @@ export default function DefiPointsAirdropFarmingGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Points & Airdrop Farming Guide 2026: How Points Work,", "description": "Master DeFi points farming in 2026. Learn how protocol points work, the best airdrop farming strategies, anti-Sybil detection, SEC guidance on airdrops, and", "url": "https://degen0x.com/learn/defi-points-airdrop-farming-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/defi-points-airdrop-farming-guide-2026" />
 </div>
   );
 }

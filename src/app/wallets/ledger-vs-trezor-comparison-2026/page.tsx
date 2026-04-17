@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -210,6 +211,7 @@ export default function LedgerVsTrezorComparison() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ledger vs Trezor Comparison 2026: Nano X, Safe 3, Stax vs", "description": "Head-to-head: Ledger Nano X (5,000 coins) vs Trezor Safe 3 (1,800 coins). Open source, Bluetooth, screen, price.", "url": "https://degen0x.com/wallets/ledger-vs-trezor-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/ledger-vs-trezor-comparison-2026" />
       </article>
   );
 }

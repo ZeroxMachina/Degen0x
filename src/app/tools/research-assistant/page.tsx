@@ -2,6 +2,7 @@
 
 "use client";
 import { useState, useCallback, useRef } from "react";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ── types ── */
 interface TokenProfile {
@@ -325,6 +326,7 @@ export default function ResearchAssistantPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/research-assistant" />
       </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -483,6 +484,7 @@ export default function CryptoRugPullHowToAvoid() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Rug Pulls: How to Identify and Avoid Them | degen0x", "description": "Learn how to spot rug pull scams with our detailed guide covering liquidity pulls, team dumps, and detection tools like Token Sniffer.", "url": "https://degen0x.com/learn/crypto-rug-pull-how-to-avoid", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-rug-pull-how-to-avoid" />
       </article>
   );
 }

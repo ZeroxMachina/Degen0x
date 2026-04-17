@@ -2,6 +2,7 @@
 
 "use client";
 import { useState, useMemo, useCallback } from "react";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ── types ── */
 interface Asset {
@@ -397,6 +398,7 @@ export default function RiskAnalyzerPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/risk-analyzer" />
       </div>
   );
 }

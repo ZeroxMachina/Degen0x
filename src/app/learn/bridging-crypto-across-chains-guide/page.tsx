@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -663,6 +664,7 @@ export default function BridgingCryptoAcrossChainsGuide2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bridging Crypto Across Chains Guide 2026: Stargate, Across,", "description": "Master cross-chain bridges 2026. Compare Stargate, Across, Synapse, Wormhole, official L2 bridges. Understand lock-and-mint, liquidity networks, intent-based", "url": "https://degen0x.com/learn/bridging-crypto-across-chains-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/bridging-crypto-across-chains-guide" />
       </article>
   );
 }

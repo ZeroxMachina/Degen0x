@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -564,6 +565,7 @@ export default function AerodromeFinanceGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aerodrome Finance Guide 2026 \u2014 Base Chain DEX & ve(3,3)", "description": "Complete guide to Aerodrome Finance: Base", "url": "https://degen0x.com/learn/aerodrome-finance-base-dex-liquidity-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/aerodrome-finance-base-dex-liquidity-guide-2026" />
 </div>
 
   );

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -376,6 +377,7 @@ export default function BestWalletForBaseChain() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Wallets for Base Chain 2026 | Coinbase, MetaMask, Rabby", "description": "Compare wallets for Coinbase Base (OP Stack L2): Coinbase Wallet, MetaMask, Rabby, Rainbow, Frame. Native Base support, swaps, DeFi dApp browser integration.", "url": "https://degen0x.com/wallets/best-wallet-for-base-chain", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-base-chain" />
       </article>
   );
 }

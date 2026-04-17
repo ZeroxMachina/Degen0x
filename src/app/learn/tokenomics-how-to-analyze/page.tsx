@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -523,6 +524,7 @@ export default function TokenomicsHowToAnalyze() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics", "description": "Master tokenomics: BTC 21M cap, ETH deflationary -0.2%/yr post-EIP1559, vesting schedules, team/investor/community distribution, burn mechanisms (BNB", "url": "https://degen0x.com/learn/tokenomics-how-to-analyze", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/tokenomics-how-to-analyze" />
       </article>
   );
 }

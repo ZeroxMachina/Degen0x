@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -557,6 +558,7 @@ export default function PrivacyCoinsZKGuidePage() {
         </nav>
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Privacy Coins & Zero-Knowledge Proofs 2026: Monero, Zcash &", "description": "Complete privacy coins guide 2026. Learn Monero, Zcash, zero-knowledge proofs, zk-SNARKs vs zk-STARKs, privacy pools, and compliant privacy in DeFi.", "url": "https://degen0x.com/learn/privacy-coins-zero-knowledge-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/privacy-coins-zero-knowledge-guide-2026" />
 </div>
   );
 }

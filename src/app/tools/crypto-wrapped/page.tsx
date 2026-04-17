@@ -5,6 +5,7 @@
 import { useState, useRef } from "react";
 import { Metadata } from "next";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 const COINS = [
   { id: "bitcoin", symbol: "BTC", name: "Bitcoin", color: "#F7931A", emoji: "₿" },
@@ -425,6 +426,7 @@ export default function CryptoWrappedPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/crypto-wrapped" />
       </div>
   );
 }

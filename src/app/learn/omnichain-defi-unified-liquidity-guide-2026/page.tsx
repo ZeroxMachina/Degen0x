@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -668,6 +669,7 @@ export default function OmnichainDeFiGuide() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Omnichain DeFi Guide 2026: Unified Liquidity Across Every", "description": "Complete guide to omnichain DeFi and unified liquidity in 2026. Learn how protocols eliminate liquidity fragmentation across 160+ chains, unified order books,", "url": "https://degen0x.com/learn/omnichain-defi-unified-liquidity-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/omnichain-defi-unified-liquidity-guide-2026" />
 </div>
   );
 }

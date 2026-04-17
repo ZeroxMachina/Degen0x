@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -451,6 +452,7 @@ export default function StablecoinYieldComparison() {
         
           <a href="/tools/wallet-profiler" style={{ color: "#fb923c", marginRight: "1rem" }}>Wallet Profiler</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/stablecoin-yield-comparison" />
       </article>
   );
 }

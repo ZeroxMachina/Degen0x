@@ -1,6 +1,7 @@
 'use client';
 
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export default function TokenVestingPage() {
   const breadcrumbItems = [
@@ -368,6 +369,7 @@ export default function TokenVestingPage() {
         />
       </article>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/token-vesting-explained" />
     </div>
   );
 }

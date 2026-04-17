@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -279,6 +280,7 @@ export default function TokenVestingPage() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Token Unlocks & Vesting Schedules Guide 2026", "description": "Understand token vesting schedules, unlock cliffs, dilution impacts, and investment analysis. Learn to predict price pressure from vesting.", "url": "https://degen0x.com/learn/token-unlocks-vesting-schedules-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/token-unlocks-vesting-schedules-guide-2026" />
       </article>
   );
 }

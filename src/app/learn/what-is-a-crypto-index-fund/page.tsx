@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -384,6 +385,7 @@ export default function CryptoIndexFundsGuide2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Index Funds Explained: Bitwise 10, Grayscale, Index", "description": "Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside", "url": "https://degen0x.com/learn/what-is-a-crypto-index-fund", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/what-is-a-crypto-index-fund" />
       </article>
   );
 }

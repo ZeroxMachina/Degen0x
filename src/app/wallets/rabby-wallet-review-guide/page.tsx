@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -597,6 +598,7 @@ export default function RabbyWalletReview() {
           </p>
               <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rabby Wallet Review: Safe Multi-Chain Signing", "description": "Complete Rabby wallet review: 9/10 rating by DeBank team. Transaction simulation, approval management, multi-chain auto-detection. Desktop only. Free forever.", "url": "https://degen0x.com/wallets/rabby-wallet-review-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     </div>
+      <RelatedContent category="tools" currentSlug="/wallets/rabby-wallet-review-guide" />
       </article>
   );
 }

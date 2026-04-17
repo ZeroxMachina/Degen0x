@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -192,6 +193,7 @@ export default function PumpFunMemecoinPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/impermanent-loss-defi-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Impermanent Loss Defi Explained</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/pump-fun-memecoins" />
     </main>
   );
 }

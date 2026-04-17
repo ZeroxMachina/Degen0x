@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -371,6 +372,7 @@ export default function BestWalletForCosmosEcosystem() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Cosmos Wallets 2026 | Keplr, Leap, Cosmostation", "description": "Compare Cosmos wallets: Keplr (50+ chains), Leap (mobile-first), Cosmostation (staking), Citadel.one (multi-chain). IBC transfers, ATOM staking (15-20% APY),", "url": "https://degen0x.com/wallets/best-wallet-for-cosmos-ecosystem", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-cosmos-ecosystem" />
       </article>
   );
 }

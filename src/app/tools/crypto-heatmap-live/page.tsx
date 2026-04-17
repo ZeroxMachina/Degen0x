@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -503,6 +504,7 @@ export default function CryptoHeatmapLive() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/crypto-heatmap-live" />
       </article>
   );
 }

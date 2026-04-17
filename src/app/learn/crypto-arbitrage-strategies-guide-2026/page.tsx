@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1022,6 +1023,7 @@ export default function CryptoArbitrageStrategiesGuide() {
       </article>
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Arbitrage Strategies 2026 \u2014 CEX/DEX, Cross-Chain &", "description": "Master crypto arbitrage in 2026. Learn CEX-DEX arbitrage, cross-chain strategies, funding rate arb, statistical arbitrage, and practical execution with real", "url": "https://degen0x.com/learn/crypto-arbitrage-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-arbitrage-strategies-guide-2026" />
 </div>
   );
 }

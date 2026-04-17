@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -283,6 +284,7 @@ export default function LiquidityPoolsPage() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Liquidity Pools Explained: AMM & Impermanent Loss 2026", "description": "Master liquidity pools: x*y=k formula, Uniswap V2 vs V3, impermanent loss calculations, LP yields (10-25% APY), concentrated liquidity, and MEV impact.", "url": "https://degen0x.com/learn/what-is-a-liquidity-pool", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/what-is-a-liquidity-pool" />
       </article>
   );
 }

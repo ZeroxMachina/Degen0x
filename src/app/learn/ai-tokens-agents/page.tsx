@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "#0d1117", border: "#30363d", text: "#e6edf3", text2: "#8b949e",
@@ -199,6 +200,7 @@ export default function AITokensAgentsPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/stablecoin-types-comparison" style={{ color: "#fb923c", marginRight: "1rem" }}>Stablecoin Types Comparison</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/ai-tokens-agents" />
     </main>
   );
 }

@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -420,6 +421,7 @@ export default function CryptoETFInKindRedemptionGuidePage() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto ETF In-Kind Redemptions Guide 2026: How They Work &", "description": "What are in-kind redemptions for crypto ETFs? The SEC approved direct BTC and ETH creation/redemption for spot ETFs in 2025. Learn how it works, tax benefits,", "url": "https://degen0x.com/learn/crypto-etf-in-kind-redemption-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-etf-in-kind-redemption-guide-2026" />
 </div>
   );
 }

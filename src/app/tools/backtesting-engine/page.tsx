@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface BacktestParams {
@@ -762,6 +763,7 @@ export default function BacktestingEnginePage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/backtesting-engine" />
       </div>
   );
 }

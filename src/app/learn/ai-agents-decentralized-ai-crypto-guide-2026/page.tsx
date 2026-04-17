@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -845,6 +846,7 @@ export default function AIAgentsGuide() {
 
           <a href="/learn/crypto-custody-solutions-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Custody Solutions Explained</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/ai-agents-decentralized-ai-crypto-guide-2026" />
       </article>
   );
 }

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1362,6 +1363,7 @@ export default function AbstractChainGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Abstract Chain: Consumer-First ZK Rollup L2 Guide 2026 |", "description": "Complete guide to Abstract Chain, the consumer-focused ZK rollup built by Igloo Inc. Learn about account abstraction, EigenDA, gaming ecosystem, and how", "url": "https://degen0x.com/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026" />
 </div>
   );
 }

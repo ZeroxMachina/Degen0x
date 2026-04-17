@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type Chain = "All" | "Ethereum" | "Solana" | "Arbitrum" | "Base" | "Avalanche" | "Polygon" | "BNB";
@@ -377,6 +378,7 @@ export default function DeFiYieldsPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/defi-yields" />
       </div>
   );
 }

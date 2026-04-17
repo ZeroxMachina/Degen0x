@@ -4,6 +4,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import OptionsPnLCalculator from "@/components/OptionsPnLCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -721,6 +722,7 @@ export default function DeFiOptionsTradingGuidePage() {
 
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Options Trading Guide 2026: On-Chain Options Explained", "description": "Learn how to trade crypto options on-chain in 2026. Understand calls, puts, and the Greeks. Compare top protocols: Derive, Stryke, Premia, and Panoptic.", "url": "https://degen0x.com/learn/defi-options-trading-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/defi-options-trading-guide" />
 </div>
   );
 }

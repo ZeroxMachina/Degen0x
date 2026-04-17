@@ -9,6 +9,7 @@ import {
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -842,6 +843,7 @@ export default function BitcoinStrategicReserveGuidePage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Strategic Reserve 2026: Which Countries Are Holding", "description": "The US formally established a 325,000 BTC strategic reserve in March 2026. Learn which countries are building Bitcoin reserves, why governments are buying BTC,", "url": "https://degen0x.com/learn/bitcoin-strategic-reserve-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/bitcoin-strategic-reserve-guide" />
     </article>
   );
 }

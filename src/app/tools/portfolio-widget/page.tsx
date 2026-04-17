@@ -7,6 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { ToolStructuredData } from "@/components/StructuredData";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import RelatedContent from '@/components/RelatedContent';
 
 interface Holding {
   id: string;
@@ -912,6 +913,7 @@ export default function PortfolioWidgetPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/portfolio-widget" />
       </div>
   );
 }

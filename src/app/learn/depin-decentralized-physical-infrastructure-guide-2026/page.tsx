@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -738,6 +739,7 @@ export default function DePINGuide() {
 
           <a href="/learn/sei-network-parallel-evm-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Sei Network Parallel Evm Guide</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/depin-decentralized-physical-infrastructure-guide-2026" />
       </article>
   );
 }

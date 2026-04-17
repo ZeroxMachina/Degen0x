@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1017,6 +1018,7 @@ export default function TokenizedTreasuriesGuidePage() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/tokenized-treasuries-rwa-yield-guide-2026" />
       </article>
   );
 }

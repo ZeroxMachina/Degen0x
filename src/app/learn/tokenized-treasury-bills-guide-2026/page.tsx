@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Tokenized Treasury Bills Guide 2026 — T-Bills On-Chain",
@@ -807,6 +808,7 @@ export default function TokenizedTreasuryBillsGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenized Treasury Bills Guide 2026 \u2014 T-Bills On-Chain", "description": "Learn how tokenized US Treasury bills work on blockchain. Explore BUIDL, USDY, OUSG, and earn 4.5-5% yield composable with DeFi.", "url": "https://degen0x.com/learn/tokenized-treasury-bills-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/tokenized-treasury-bills-guide-2026" />
 </div>
   );
 }

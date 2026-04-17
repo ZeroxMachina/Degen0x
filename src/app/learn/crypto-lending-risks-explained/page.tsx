@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -612,6 +613,7 @@ export default function CryptoLendingRisksGuide() {
 
           <a href="/learn/taiko-based-zk-rollup-ethereum-l2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Taiko Based Zk Rollup Ethereum L2 Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-lending-risks-explained" />
       </article>
   );
 }

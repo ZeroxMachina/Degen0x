@@ -6,6 +6,7 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -632,6 +633,7 @@ export default function BitcoinSupplyShockGuidePage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Supply Shock 2026: Exchange Reserves, ETF Custody &", "description": "Bitcoin exchange reserves hit 7-year lows while ETFs hold 1.3M BTC. Explore the 2026 supply shock thesis \u2014 who holds what, what", "url": "https://degen0x.com/learn/bitcoin-supply-shock-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/bitcoin-supply-shock-guide-2026" />
 </div>
   );
 }

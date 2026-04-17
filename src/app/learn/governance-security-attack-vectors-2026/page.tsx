@@ -2,6 +2,7 @@
 
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg:"#0d1117",
@@ -451,6 +452,7 @@ export default function GovernanceSecurityPage() {
         />
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/governance-security-attack-vectors-2026" />
     </main>
   );
 }

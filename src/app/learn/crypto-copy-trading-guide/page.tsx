@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -753,6 +754,7 @@ export default function CryptoCopyTradingGuidePage() {
           <a href="/learn/blast-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Blast Guide</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Copy Trading Guide 2026 \u2014 Platforms & Risks | degen0x", "description": "Complete guide to crypto copy trading. Learn how it works, best platforms (Bitget, Bybit, eToro), risks, and how to choose traders to copy. Social trading", "url": "https://degen0x.com/learn/crypto-copy-trading-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-copy-trading-guide" />
 </main>
   );
 }

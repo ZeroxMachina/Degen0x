@@ -6,6 +6,7 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // Metadata configuration
@@ -933,6 +934,7 @@ export default function CryptoCustodyGuidePage() {
           <a href="/learn/onchain-order-book-clob-dex-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Order Book Clob Dex Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Custody Guide 2026: MPC, Multisig & Cold Storage", "description": "Compare MPC wallets, multisig, and cold storage for crypto custody. Learn which solution fits your needs \u2014 from retail self-custody to institutional-grade", "url": "https://degen0x.com/learn/crypto-custody-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-custody-guide-2026" />
 </main>
   );
 }

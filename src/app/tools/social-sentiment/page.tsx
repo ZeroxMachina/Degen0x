@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
+import RelatedContent from '@/components/RelatedContent';
 
 interface TokenSentiment {
   name: string;
@@ -265,6 +266,7 @@ export default function SocialSentimentPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/social-sentiment" />
       </div>
   );
 }

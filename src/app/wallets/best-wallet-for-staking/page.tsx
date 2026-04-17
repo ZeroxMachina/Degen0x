@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -787,6 +788,7 @@ export default function BestWalletForStakingPage() {
   <a href="/wallets/reviews/ngrave" style={{ color: "#fb923c", marginRight: "1rem" }}>Ngrave</a>
   <a href="/wallets/reviews/wasabi" style={{ color: "#fb923c", marginRight: "1rem" }}>Wasabi</a>
 </nav>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-staking" />
       </article>
   );
 }

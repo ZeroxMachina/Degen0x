@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import Hip3FundingCalculator from "@/components/Hip3FundingCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 const PAGE_URL = `${SITE_URL}/learn/hyperliquid-hip3-tokenized-futures-guide`;
@@ -555,6 +556,7 @@ export default function HyperliquidHip3TokenizedFuturesGuidePage() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hyperliquid HIP-3 Tokenized Futures Guide 2026 | degen0x", "description": "Trade oil, stocks & commodities on-chain via Hyperliquid HIP-3 permissionless futures. $1.2B open interest, no KYC, 24/7 access. Full guide for 2026.", "url": "https://degen0x.com/learn/hyperliquid-hip3-tokenized-futures-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/hyperliquid-hip3-tokenized-futures-guide" />
 </div>
   );
 }

@@ -6,6 +6,7 @@ import { Search, SearchX, TrendingUp, TrendingDown, ChevronUp, ChevronDown, Zap,
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import { SITE_URL } from '@/lib/constants';
+import RelatedContent from '@/components/RelatedContent';
 
 // ─── Structured Data (injected inline since this is a client component) ──────
 const TOOL_SCHEMA = {
@@ -652,6 +653,7 @@ export default function AltcoinETFTrackerPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/altcoin-etf-tracker" />
       </div>
   );
 }

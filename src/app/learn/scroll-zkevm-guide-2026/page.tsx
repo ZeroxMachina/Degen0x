@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, generateHowToSchema, combineSchemas } from '@/lib/structured-data';
 import { ReactNode } from 'react';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -936,6 +937,7 @@ export default function ScrollGuide() {
           <a href="/learn/onchain-analysis-smart-money-tracking-tools-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Onchain Analysis Smart Money Tracking Tools Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Scroll zkEVM Guide 2026: Ethereum", "description": "Complete guide to Scroll, the native zkEVM Layer 2 for Ethereum. Learn how it works, ecosystem DeFi protocols, SCR token, risks, and how to bridge & trade.", "url": "https://degen0x.com/learn/scroll-zkevm-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/scroll-zkevm-guide-2026" />
 </main>
   );
 }

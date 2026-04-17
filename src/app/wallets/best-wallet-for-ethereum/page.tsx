@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -257,6 +258,7 @@ export default function BestWalletEthereum2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Wallet for Ethereum 2026: MetaMask, Rabby, Ledger,", "description": "Best Ethereum wallet: MetaMask (50+ chains), Ledger Nano X ($79 cold storage), Rabby ($0 unlimited), Rainbow ($0 Ethereum focus). L2 support (Arbitrum,", "url": "https://degen0x.com/wallets/best-wallet-for-ethereum", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/wallets/best-wallet-for-ethereum" />
       </article>
   );
 }

@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -816,6 +817,7 @@ export default function AztecNetworkGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aztec Network: Ethereum Privacy L2 Explained 2026 | degen0x", "description": "Aztec launched its Ignition Chain Nov 2025 and TGE Feb 2026. Learn how programmable privacy, Noir smart contracts, AZTEC tokenomics, and the ecosystem work.", "url": "https://degen0x.com/learn/aztec-network-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/aztec-network-guide" />
 </div>
   );
 }

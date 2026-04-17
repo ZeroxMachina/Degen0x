@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -843,6 +844,7 @@ export default function Layer3ChainsGuide() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/layer-3-chains-guide-2026" />
       </div>
   );
 }

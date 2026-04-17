@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -569,6 +570,7 @@ export default function TaikoBasedZkRollupEthereumL2Guide2026() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/taiko-based-zk-rollup-ethereum-l2-guide-2026" />
       </article>
   );
 }

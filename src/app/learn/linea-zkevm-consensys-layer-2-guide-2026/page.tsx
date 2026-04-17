@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -963,6 +964,7 @@ npx hardhat run scripts/deploy.js --network linea`}
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Linea zkEVM Guide 2026 \u2014 Consensys Layer 2 Deep Dive", "description": "Complete guide to Linea zkEVM, the Consensys-built Layer 2 for Ethereum. Learn how Type 2 zkEVM works, ecosystem metrics, MetaMask integration, DeFi protocols,", "url": "https://degen0x.com/learn/linea-zkevm-consensys-layer-2-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/linea-zkevm-consensys-layer-2-guide-2026" />
       </article>
   );
 }

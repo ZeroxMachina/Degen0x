@@ -3,6 +3,7 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { useState } from "react";
+import RelatedContent from '@/components/RelatedContent';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -674,6 +675,7 @@ await particle.sendTransaction(callData, txOptions);`}</div>
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/drift-protocol-285m-hack-analysis-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Drift Protocol 285M Hack Analysis 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/chain-abstraction" />
     </main>
   );
 }

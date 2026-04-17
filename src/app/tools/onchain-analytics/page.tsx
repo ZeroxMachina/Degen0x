@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ToolStructuredData } from '@/components/StructuredData';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ──────────────── Types ──────────────── */
 interface ChainMetrics {
@@ -575,6 +576,7 @@ export default function OnChainAnalyticsDashboard() {
         
           <a href="/tools/tax-optimizer" style={{ color: "#fb923c", marginRight: "1rem" }}>Tax Optimizer</a>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/onchain-analytics" />
     </main>
   );
 }

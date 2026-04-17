@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -513,6 +514,7 @@ export default function DEXAggregatorGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DEX Aggregators Explained 2026: 1inch, Jupiter, Paraswap,", "description": "Complete guide to DEX aggregators. Compare 1inch ($300B+ volume), Jupiter Solana #1, Paraswap, 0x Protocol, CowSwap (MEV-protected), Odos multi-hop. Learn", "url": "https://degen0x.com/learn/what-is-a-dex-aggregator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/what-is-a-dex-aggregator" />
       </article>
   );
 }

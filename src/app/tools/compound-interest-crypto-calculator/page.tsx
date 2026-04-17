@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -377,6 +378,7 @@ export default function CompoundInterestCryptoCalculator() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/compound-interest-crypto-calculator" />
       </article>
   );
 }

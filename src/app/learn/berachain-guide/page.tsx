@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -173,6 +174,7 @@ export default function BerachainGuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/eclipse-svm-ethereum-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Eclipse Svm Ethereum Layer 2 Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/berachain-guide" />
     </main>
   );
 }

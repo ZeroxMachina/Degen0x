@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -398,6 +399,7 @@ export default function CryptoLiquidationTracker() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/crypto-liquidation-tracker" />
       </article>
   );
 }

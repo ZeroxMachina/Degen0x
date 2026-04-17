@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -277,6 +278,7 @@ export default function BitcoinETFGuidePage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin ETF Guide 2026: Spot BTC ETFs, Performance & How to", "description": "Complete guide to Bitcoin ETFs in 2026 \u2014 spot BTC ETF options, fees, performance comparison, how they work, and whether they belong in your portfolio.", "url": "https://degen0x.com/learn/bitcoin-etf-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/bitcoin-etf-guide-2026" />
     </article>
   );
 }

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -685,6 +686,7 @@ export default function DecentralizedGPUComputeGuide() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/decentralized-gpu-compute-networks-render-akash-guide-2026" />
       </article>
   );
 }

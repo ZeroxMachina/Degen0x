@@ -10,6 +10,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -674,6 +675,7 @@ export default function WalrusStorageGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Walrus (WAL) Guide 2026: Decentralized Storage on Sui", "description": "Walrus explained: decentralized blob storage on Sui blockchain using Red Stuff erasure coding. WAL tokenomics, staking, team, and comparison to Filecoin,", "url": "https://degen0x.com/learn/walrus-decentralized-storage-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/walrus-decentralized-storage-guide-2026" />
 </div>
   );
 }

@@ -5,6 +5,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Hyperlane Guide 2026 — Permissionless Interop & HYPER",
@@ -927,6 +928,7 @@ export default function HyperlaneGuide() {
           <a href="/learn/katana-perps-idex-acquisition-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Katana Perps Idex Acquisition Guide</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hyperlane Guide 2026 \u2014 Permissionless Interop & HYPER", "description": "Complete guide to Hyperlane", "url": "https://degen0x.com/learn/hyperlane-permissionless-interoperability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/hyperlane-permissionless-interoperability-guide-2026" />
 </main>
   );
 }

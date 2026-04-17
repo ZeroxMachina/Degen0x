@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -451,6 +452,7 @@ export default function AtomicSwapsExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Atomic Swaps Explained: Trustless Cross-Chain Trading", "description": "Learn how atomic swaps enable trustless cross-chain trading using HTLCs. Explore Thorchain, AtomicDEX, and submarine swaps.", "url": "https://degen0x.com/learn/atomic-swaps-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/atomic-swaps-explained" />
       </article>
   );
 }

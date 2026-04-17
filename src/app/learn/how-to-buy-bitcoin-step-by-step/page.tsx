@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -943,6 +944,7 @@ export default function HowToBuyBitcoin() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Buy Bitcoin Step by Step \u2014 Beginner Guide 2026", "description": "Learn how to buy Bitcoin in 2026 with our step-by-step guide. Compare exchanges, set up wallets, place your first order, and store BTC safely.", "url": "https://degen0x.com/learn/how-to-buy-bitcoin-step-by-step", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/how-to-buy-bitcoin-step-by-step" />
       </article>
   );
 }

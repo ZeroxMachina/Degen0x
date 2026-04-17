@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ────────────────────────────────────────────────────────────
    Types & Data
@@ -335,6 +336,7 @@ export default function ChainComparison() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/chain-comparison" />
       </div>
   );
 }

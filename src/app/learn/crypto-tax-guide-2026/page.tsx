@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1226,6 +1227,7 @@ export default function CryptoTaxGuide2026() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tax Guide 2026: IRS Rules, 1099-DA, DeFi & Staking", "description": "Complete US crypto tax guide covering IRS rules, 1099-DA reporting, DeFi taxes, NFTs, staking rewards, and tax-loss harvesting strategies for 2026.", "url": "https://degen0x.com/learn/crypto-tax-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-tax-guide-2026" />
 </div>
   );
 }

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import TriviaLeaderboard from "@/components/TriviaLeaderboard";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Crypto Trivia Leaderboard | Compete Globally — degen0x",
@@ -121,6 +122,7 @@ export default function TriviaLeaderboardPage() {
         />
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Trivia Leaderboard | Compete Globally \u2014 degen0x", "description": "See who tops the crypto trivia leaderboard this week. Earn league ranks from Bronze to Diamond. Play daily, grow your streak, and climb the all-time rankings.", "url": "https://degen0x.com/learn/trivia-leaderboard", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/trivia-leaderboard" />
 </main>
   );
 }

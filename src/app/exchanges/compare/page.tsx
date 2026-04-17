@@ -6,6 +6,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { exchanges } from "@/data/exchanges";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface ExchangeSpec {
@@ -445,6 +446,7 @@ export default function ExchangeComparePage() {
           <strong>⚠️ Affiliate Disclosure:</strong> Some links on this page are affiliate links. We may earn a commission when you sign up through these links at no extra cost to you. Our editorial ratings are independent of affiliate relationships. Always do your own research before choosing an exchange.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/compare" />
     </div>
   );
 }

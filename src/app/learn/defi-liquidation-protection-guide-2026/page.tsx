@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -662,6 +663,7 @@ export default function LiquidationProtectionPage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Liquidation Protection Guide 2026: Tools & Strategies", "description": "Learn how to protect your DeFi positions from liquidation. Compare DeFi Saver, smart vaults, and automated strategies. 382 users saved 91.6% in the Feb 2026", "url": "https://degen0x.com/learn/defi-liquidation-protection-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/defi-liquidation-protection-guide-2026" />
 </div>
   );
 }

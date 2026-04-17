@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { exchangeDetailedComparisons, exchangeComparisonFeatures } from "@/data/exchanges";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -640,6 +641,7 @@ export default function CoinbaseVsKrakenPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase vs Kraken: Detailed Comparison (2026) | degen0x", "description": "Compare Coinbase and Kraken: security, fees, features, and more. Find the best US-based crypto exchange for your trading needs.", "url": "https://degen0x.com/exchanges/compare/coinbase-vs-kraken", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="tools" currentSlug="/exchanges/compare/coinbase-vs-kraken" />
 </div>
   );
 }

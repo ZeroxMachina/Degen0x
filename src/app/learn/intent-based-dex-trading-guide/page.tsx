@@ -4,6 +4,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -792,6 +793,7 @@ export default function IntentBasedDexTradingGuidePage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Intent-Based DEX Trading Guide 2026: UniswapX, CoW Swap &", "description": "Learn how intent-based DEX trading works in 2026. Understand solver auctions, MEV protection, and how CoW Swap, UniswapX, and 1inch Fusion deliver better", "url": "https://degen0x.com/learn/intent-based-dex-trading-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/intent-based-dex-trading-guide" />
 </div>
   );
 }

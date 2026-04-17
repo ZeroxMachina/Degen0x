@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -414,6 +415,7 @@ export default function Layer2GuidePage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Complete Guide to Layer 2 Scaling Solutions (2026) \u2014", "description": "Learn how Layer 2 solutions like Arbitrum, Optimism, Base, zkSync, and Polygon scale Ethereum. Compare rollups, sidechains, state channels, and more in this", "url": "https://degen0x.com/learn/layer-2-scaling-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/layer-2-scaling-guide" />
 </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -488,6 +489,7 @@ export default function ParallelEVMExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Parallel EVM Explained: Monad, Sei V2 & Neon | degen0x", "description": "Learn how parallel EVM chains execute transactions concurrently. Compare Monad (10,000 TPS), Sei V2, and Neon with detailed technical deep-dive.", "url": "https://degen0x.com/learn/parallel-evm-explained-monad-sei", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/parallel-evm-explained-monad-sei" />
       </article>
   );
 }

@@ -4,6 +4,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -931,6 +932,7 @@ export default function RailgunPrivacyGuidePage() {
             })
           }}
         />
+      <RelatedContent category="learn" currentSlug="/learn/railgun-privacy-defi-guide-2026" />
       </article>
   );
 }

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -986,6 +987,7 @@ export default function LiquidRestakingTokensPage() {
           <a href="/learn/grass-protocol-depin-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Grass Protocol Depin Guide</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Liquid Restaking Tokens (LRTs) Guide 2026 | degen0x", "description": "Master Liquid Restaking Tokens in 2026: ether.fi, Kelp DAO, Puffer Finance, Renzo. Learn how to compound Ethereum yield through liquid staking + restaking on", "url": "https://degen0x.com/learn/liquid-restaking-tokens-lrt-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/liquid-restaking-tokens-lrt-guide-2026" />
 </main>
   );
 }

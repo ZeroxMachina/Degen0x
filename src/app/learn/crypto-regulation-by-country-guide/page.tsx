@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -554,6 +555,7 @@ export default function CryptoRegulationByCountryGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Regulation by Country 2026: US, EU, Singapore,", "description": "Compare cryptocurrency regulation across 10 countries. US (SEC/CFTC FIT21 Act), EU (MiCA), Singapore (MAS), Japan (FSA), UAE (VARA), El Salvador (legal", "url": "https://degen0x.com/learn/crypto-regulation-by-country-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-regulation-by-country-guide" />
       </article>
   );
 }

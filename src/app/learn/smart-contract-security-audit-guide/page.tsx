@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -643,6 +644,7 @@ export default function SmartContractSecurityAuditGuide2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Contract Security Audit Guide 2026: Top Firms, Costs", "description": "Complete guide to smart contract audits in 2026. Compare top audit firms (OpenZeppelin, Trail of Bits, CertiK, Spearbit, Code4rena), learn common", "url": "https://degen0x.com/learn/smart-contract-security-audit-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/smart-contract-security-audit-guide" />
       </article>
   );
 }

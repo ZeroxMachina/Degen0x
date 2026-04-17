@@ -4,6 +4,7 @@
 
 import { useState, useEffect, useCallback, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 interface ChainGasData {
   chainId: string;
@@ -724,6 +725,7 @@ export default function MultiChainGasDashboard() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/multi-chain-gas" />
       </div>
   );
 }

@@ -6,6 +6,7 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL, SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -838,6 +839,7 @@ export default function CryptoMarketCyclesPage() {
 
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Market Cycles Guide 2026: Bull & Bear Phases", "description": "Master crypto market cycles in 2026. Understand accumulation, bull runs, distribution, bear markets, Bitcoin halving cycles, on-chain indicators (MVRV, NUPL,", "url": "https://degen0x.com/learn/crypto-market-cycles-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-market-cycles-guide-2026" />
 </main>
   );
 }

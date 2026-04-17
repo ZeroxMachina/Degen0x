@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ExchangeComparisonEngine from '@/components/ExchangeComparisonEngine';
 import Footer from '@/components/Footer';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'Crypto Exchange Comparison Tool | degen0x',
@@ -330,6 +331,7 @@ export default function ComparePage() {
         
           <a href="/defi-yields" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Yields</a>
         </nav>
+      <RelatedContent category="compare" currentSlug="/compare" />
     </main>
   );
 }

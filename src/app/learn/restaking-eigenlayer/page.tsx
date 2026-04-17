@@ -1,6 +1,7 @@
 'use client';
 
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export default function RestakingEigenLayerPage() {
   const breadcrumbItems = [
@@ -527,6 +528,7 @@ export default function RestakingEigenLayerPage() {
         />
       </article>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/restaking-eigenlayer" />
     </div>
   );
 }

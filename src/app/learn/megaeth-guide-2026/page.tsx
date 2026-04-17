@@ -10,6 +10,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -938,6 +939,7 @@ export default function MegaETHGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MegaETH Guide: Real-Time Ethereum L2 Explained 2026", "description": "MegaETH is the first real-time Ethereum Layer 2 with sub-millisecond latency and 100,000+ TPS. Learn about Streaming EVM, SALT architecture, and ecosystem at", "url": "https://degen0x.com/learn/megaeth-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/megaeth-guide-2026" />
 </div>
   );
 }

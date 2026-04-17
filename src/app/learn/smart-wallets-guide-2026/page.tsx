@@ -3,6 +3,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -686,6 +687,7 @@ export default function SmartWalletsGuide2026Page() {
 
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Wallets Guide 2026: Account Abstraction, Passkeys &", "description": "Learn how smart wallets work in 2026. Understand account abstraction (ERC-4337), passkey authentication, gas sponsorship, session keys, and how wallets like", "url": "https://degen0x.com/learn/smart-wallets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/smart-wallets-guide-2026" />
 </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -511,6 +512,7 @@ export default function DecentralizedExchangeDEXRanking() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Decentralized Exchanges (DEX) 2026: Uniswap,", "description": "Top DEXs 2026: Uniswap ($4T volume, $2.5B TVL), PancakeSwap ($6B TVL), Curve ($9B TVL), dYdX ($1.2B TVL), Jupiter ($800M TVL). AMM vs orderbook. No KYC.", "url": "https://degen0x.com/exchanges/decentralized-exchange-dex-ranking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/decentralized-exchange-dex-ranking" />
       </article>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -436,6 +437,7 @@ export default function CryptoFaucetGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What is a Crypto Faucet? Testnet & Mainnet Guide | degen0x", "description": "Learn crypto faucets for developer testing. Compare Sepolia, Goerli, Mumbai testnet faucets and Chainlink mainnet faucets with cooldown periods and", "url": "https://degen0x.com/learn/what-is-a-crypto-faucet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/what-is-a-crypto-faucet" />
       </article>
   );
 }

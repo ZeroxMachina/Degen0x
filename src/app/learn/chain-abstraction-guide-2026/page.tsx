@@ -4,6 +4,7 @@ import Link from "next/link";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Chain Abstraction Guide 2026: One Account, Every Chain",
@@ -1426,6 +1427,7 @@ export default function ChainAbstractionGuide2026() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Chain Abstraction Guide 2026: One Account, Every Chain", "description": "Chain abstraction lets you use one account across every blockchain \u2014 no bridging, no chain switching, no gas headaches. The complete 2026 guide to Particle", "url": "https://degen0x.com/learn/chain-abstraction-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <RelatedContent category="learn" currentSlug="/learn/chain-abstraction-guide-2026" />
 </div>
   );
 }

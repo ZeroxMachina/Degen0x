@@ -8,6 +8,7 @@ import {
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -865,6 +866,7 @@ export default function TokenizedTreasuriesGuidePage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain", "description": "Over $25B in US Treasury bonds now live on-chain. Learn how BlackRock BUIDL, Ondo Finance, and Franklin Templeton work, what yield to expect, and how to access", "url": "https://degen0x.com/learn/tokenized-treasuries-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/tokenized-treasuries-guide-2026" />
     </article>
   );
 }

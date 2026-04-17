@@ -1,5 +1,6 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 const S = { bg:"#0d1117",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"MEV Guide 2026",href:"/learn/mev-guide-2026"}];
 export default function MEVGuide2026Page() {
@@ -120,6 +121,7 @@ export default function MEVGuide2026Page() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/walrus-decentralized-storage-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Walrus Decentralized Storage Guide 2026</a>
         </nav>
+      <RelatedContent category="learn" currentSlug="/learn/mev-guide-2026" />
     </main>
   );
 }

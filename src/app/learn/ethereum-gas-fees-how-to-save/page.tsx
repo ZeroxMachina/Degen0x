@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -506,6 +507,7 @@ export default function EthereumGasFeesHowToSave() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Gas Fees: How to Save Money 2026 | degen0x", "description": "Ethereum gas fees explained: EIP-1559, base fee, priority fee, tips. Save 90% using Layer 2s ($0.01-0.50 vs $2-50 on mainnet). Time transactions, batch, and", "url": "https://degen0x.com/learn/ethereum-gas-fees-how-to-save", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-gas-fees-how-to-save" />
       </article>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -275,6 +276,7 @@ export default function PreconfirmationsPage() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Preconfirmations Guide 2026 \u2014 Fast Transactions", "description": "Master preconfirmations: inclusion preconfs, execution preconfs, based preconfs for L2s, EigenLayer security, sub-second finality.", "url": "https://degen0x.com/learn/ethereum-preconfirmations-preconfs-fast-transactions-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-preconfirmations-preconfs-fast-transactions-guide-2026" />
       </article>
   );
 }

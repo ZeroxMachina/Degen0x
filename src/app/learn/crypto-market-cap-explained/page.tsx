@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -598,6 +599,7 @@ export default function CryptoMarketCapGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Market Cap Explained 2026: Calculation, Circulating", "description": "Master crypto market cap: calculation formula, circulating vs total vs fully diluted valuation (FDV), market cap tiers (large >$10B, mid $1-10B, small <$1B).", "url": "https://degen0x.com/learn/crypto-market-cap-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-market-cap-explained" />
       </article>
   );
 }

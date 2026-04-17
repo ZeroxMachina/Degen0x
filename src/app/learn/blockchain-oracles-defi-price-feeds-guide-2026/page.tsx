@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -630,6 +631,7 @@ export default function BlockchainOraclesGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blockchain Oracles Guide 2026: Chainlink, Pyth, RedStone &", "description": "Complete guide to blockchain oracles in 2026. Learn how Chainlink, Pyth, RedStone, and Chronicle power DeFi, prevent oracle manipulation attacks, and secure", "url": "https://degen0x.com/learn/blockchain-oracles-defi-price-feeds-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <RelatedContent category="learn" currentSlug="/learn/blockchain-oracles-defi-price-feeds-guide-2026" />
       </article>
   );
 }

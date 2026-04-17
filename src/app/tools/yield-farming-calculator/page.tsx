@@ -5,6 +5,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Metadata } from "next";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 type CompoundingFrequency = "daily" | "weekly" | "monthly" | "annually";
@@ -852,6 +853,7 @@ export default function YieldFarmingCalculatorPage() {
             })
           }}
         />
+      <RelatedContent category="tools" currentSlug="/tools/yield-farming-calculator" />
       </div>
   );
 }
