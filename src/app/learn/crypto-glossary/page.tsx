@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import CryptoGlossaryClient from './CryptoGlossaryClient';
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: "Crypto Glossary - Complete Cryptocurrency Terms Dictionary",
@@ -103,6 +104,7 @@ export default function CryptoGlossaryPage() {
   <a href="/learn/account-abstraction-erc-4337-guide" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Account Abstraction Erc 4337 Guide</a>
   <a href="/learn/advanced-defi-strategies" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Advanced Defi Strategies</a>
 </nav>
+      <AuthoritySources url="/learn/crypto-glossary" />
       </>
   );
 }

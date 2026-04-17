@@ -7,6 +7,7 @@ import ProductCard from "@/components/ProductCard";
 import FAQSection from "@/components/FAQSection";
 import { TAX_PRODUCTS, TAX_FAQS } from "@/data/taxes";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Best Crypto Tax Software & Guides (2026) | degen0x`,
@@ -252,6 +253,7 @@ export default function TaxesHubPage() {
         
           <a href="/pricing" style={{ color: "#fb923c", marginRight: "1rem" }}>Pricing</a>
         </nav>
+      <AuthoritySources url="/taxes" />
     </main>
   );
 }

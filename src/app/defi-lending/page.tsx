@@ -7,6 +7,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { DEFI_LENDING_PRODUCTS, DEFI_FAQS } from "@/data/defi-lending";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `DeFi Lending - Compare Protocols, Earn Yield & Borrow Crypto 2026`,
@@ -237,6 +238,7 @@ export default function DefiLendingPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DeFi Lending Protocols", "description": "Compare the best DeFi lending protocols. Earn yield on your crypto, borrow against your assets, and explore liquidity pools. Expert reviews, guides, and tools.", "url": "https://degen0x.com/defi-lending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/defi-lending" />
     </>
   );
 }

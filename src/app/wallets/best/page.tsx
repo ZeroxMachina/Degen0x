@@ -9,6 +9,7 @@ import { walletProducts, walletComparisonItems, walletFAQs } from "@/data/wallet
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AuthoritySources from '@/components/AuthoritySources';
 
 
 export const metadata: Metadata = {
@@ -285,6 +286,7 @@ export default function BestWalletsPage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/wallets/best" />
       <RelatedContent category="tools" currentSlug="/wallets/best" />
     </div>
   );

@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: "104+ Free Crypto Tools — Bridge Aggregator v2, Watchlist",
@@ -773,6 +774,7 @@ export default function ToolsPage() {
         </div>
       </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "104+ Free Crypto Tools — Bridge Aggregator v2, Watchlist", "description": "Free crypto tools including multi-chain bridge aggregator v2 with route optimization, watchlist sync with localStorage, MEV protection dashboard, token unlock", "url": "https://degen0x.com/tools", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/tools" />
       <RelatedContent category="tools" currentSlug="/tools" />
     </div>
   );

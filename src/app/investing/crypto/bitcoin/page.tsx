@@ -5,6 +5,7 @@ import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { CRYPTO_TOKENS } from "@/data/investing";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AuthoritySources from '@/components/AuthoritySources';
 
 
 const token = CRYPTO_TOKENS[0];
@@ -190,6 +191,7 @@ export default function BitcoinPage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/investing/crypto/bitcoin" />
     </div>
   );
 }

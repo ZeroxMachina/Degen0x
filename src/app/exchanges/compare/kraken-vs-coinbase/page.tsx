@@ -9,6 +9,7 @@ import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AuthoritySources from '@/components/AuthoritySources';
 
 
 export const metadata: Metadata = {
@@ -198,6 +199,7 @@ export default function KrakenVsCoinbasePage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/exchanges/compare/kraken-vs-coinbase" />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/kraken-vs-coinbase" />
     </div>

@@ -9,6 +9,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AuthoritySources from '@/components/AuthoritySources';
 
 
 export const metadata: Metadata = {
@@ -202,6 +203,7 @@ export default function MetaMaskVsPhantomPage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/wallets/compare/metamask-vs-phantom" />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/metamask-vs-phantom" />
     </div>

@@ -3,6 +3,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import RelatedContent from '@/components/RelatedContent';
+import AuthoritySources from '@/components/AuthoritySources';
 
 interface Holding {
   id: string;
@@ -382,6 +383,7 @@ export default function PortfolioTracker() {
             })
           }}
         />
+      <AuthoritySources url="/tools/portfolio-tracker" />
       <RelatedContent category="tools" currentSlug="/tools/portfolio-tracker" />
       </div>
   );

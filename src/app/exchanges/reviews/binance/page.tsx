@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AuthoritySources from '@/components/AuthoritySources';
 
 const product = exchanges.find((e) => e.slug === "binance")!;
 
@@ -169,6 +170,7 @@ It is worth noting that Binance has faced significant regulatory headwinds. In l
   <a href="/exchanges/reviews/bitmex" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitmex</a>
   <a href="/exchanges/reviews/bitstamp" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitstamp</a>
 </nav>
+      <AuthoritySources url="/exchanges/reviews/binance" />
       <MethodologyBlock variant="review" />
       </>
   );

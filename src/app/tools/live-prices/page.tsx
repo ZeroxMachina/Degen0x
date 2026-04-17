@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from 'react';
 import LivePriceFeed from '@/components/LivePriceFeed';
 import RelatedContent from '@/components/RelatedContent';
+import AuthoritySources from '@/components/AuthoritySources';
 
 export default function LivePricesPage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -751,6 +752,7 @@ export default function LivePricesPage() {
             })
           }}
         />
+      <AuthoritySources url="/tools/live-prices" />
       <RelatedContent category="tools" currentSlug="/tools/live-prices" />
       </div>
   );

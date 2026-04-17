@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AuthoritySources from '@/components/AuthoritySources';
 
 const product = exchanges.find((e) => e.slug === "kraken")!;
 
@@ -169,6 +170,7 @@ In recent years, Kraken has expanded beyond pure exchange services. The company 
   <a href="/exchanges/reviews/bitmart" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitmart</a>
   <a href="/exchanges/reviews/bitmex" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitmex</a>
 </nav>
+      <AuthoritySources url="/exchanges/reviews/kraken" />
       <MethodologyBlock variant="review" />
       </>
   );

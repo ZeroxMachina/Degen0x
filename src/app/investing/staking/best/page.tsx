@@ -8,6 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { stakingPlatforms, stakingDetailedComparisons, stakingComparisonFeatures } from "@/data/staking";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AuthoritySources from '@/components/AuthoritySources';
 
 
 export const metadata: Metadata = {
@@ -297,6 +298,7 @@ export default function BestStakingPage() {
       </div>
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Yield Accuracy (25%)", "description": "Compare the top crypto staking platforms of ${CURRENT_YEAR}. We tested yields, fees, security, and decentralization. Find the best platform for liquid staking, restaking, and more.", "url": "https://degen0x.com/investing/staking/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/investing/staking/best" />
 </>
   );
 }

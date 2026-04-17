@@ -5,6 +5,7 @@ import ReviewPage from "@/components/ReviewPage";
 import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AuthoritySources from '@/components/AuthoritySources';
 
 const product = walletProducts.find((p) => p.slug === "trezor")!;
 
@@ -168,6 +169,7 @@ export default function TrezorReviewPage() {
   <a href="/wallets/reviews/bitbox" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitbox</a>
   <a href="/wallets/reviews/bitget-wallet" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitget Wallet</a>
 </nav>
+      <AuthoritySources url="/wallets/reviews/trezor" />
       <MethodologyBlock variant="review" />
       </>
   );

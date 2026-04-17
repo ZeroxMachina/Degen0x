@@ -10,6 +10,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getFeaturedPosts, getCategoryMeta, type BlogCategory } from "@/lib/blog";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Blog — Crypto News, Analysis & Guides | degen0x`,
@@ -267,6 +268,7 @@ export default function BlogPage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/blog" />
     </div>
   );
 }

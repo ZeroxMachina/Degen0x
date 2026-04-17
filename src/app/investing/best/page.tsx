@@ -6,6 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { BEST_OF_CATEGORIES, INVESTING_FAQS } from "@/data/investing";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AuthoritySources from '@/components/AuthoritySources';
 
 
 export const metadata: Metadata = {
@@ -225,6 +226,7 @@ export default function BestInvestingOverviewPage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/investing/best" />
     </div>
   );
 }

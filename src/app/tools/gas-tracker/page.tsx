@@ -5,6 +5,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AuthoritySources from '@/components/AuthoritySources';
 
 interface GasNetwork {
   name: string;
@@ -324,6 +325,7 @@ export default function GasTrackerPage() {
             })
           }}
         />
+      <AuthoritySources url="/tools/gas-tracker" />
       <RelatedContent category="tools" currentSlug="/tools/gas-tracker" />
       </div>
   );

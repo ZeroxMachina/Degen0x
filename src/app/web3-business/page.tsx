@@ -4,6 +4,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Web3 Business Tools & Guides (2026) | degen0x`,
@@ -219,6 +220,7 @@ export default function Web3BusinessPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DAO Treasury Tools", "description": "Web3 payment solutions for business: Accept crypto payments, convert to fiat instantly, payroll solutions. Coinbase, Stripe, Sablier, and more.", "url": "https://degen0x.com/web3-business", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/web3-business" />
     </>
   );
 }

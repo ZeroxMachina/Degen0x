@@ -8,6 +8,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { DEFI_LENDING_PRODUCTS, DEFI_COMPARISON_ITEMS, DEFI_COMPARISON_FEATURES, DEFI_FAQS } from "@/data/defi-lending";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `7 Best DeFi Lending Protocols of 2026 (Ranked & Reviewed)`,
@@ -176,6 +177,7 @@ export default function BestDefiLendingPage() {
         </div>
       </div>
     </div>
+      <AuthoritySources url="/defi-lending/best" />
     </>
   );
 }

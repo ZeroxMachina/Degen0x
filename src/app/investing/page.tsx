@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { BEST_OF_CATEGORIES, LEARN_ARTICLES, CALCULATORS, CRYPTO_TOKENS, INVESTING_FAQS } from "@/data/investing";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Crypto Investing Guide 2026 - Best Tokens, Strategies & Tools`,
@@ -237,6 +238,7 @@ export default function InvestingHubPage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/investing" />
     </div>
   );
 }

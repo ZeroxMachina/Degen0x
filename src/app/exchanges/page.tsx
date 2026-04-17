@@ -7,6 +7,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { exchanges } from "@/data/exchanges";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Best Crypto Exchanges of 2026 - Compare & Review`,
@@ -328,6 +329,7 @@ export default function ExchangesPage() {
       </section>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Exchanges Overall", "description": "Best cryptocurrency exchanges 2026. Compare spot trading, DEX, futures. Kyc requirements, fees, security, and which exchange is best for you.", "url": "https://degen0x.com/exchanges", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/exchanges" />
     </>
   );
 }

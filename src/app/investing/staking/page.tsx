@@ -7,6 +7,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { stakingPlatforms } from "@/data/staking";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Best Crypto Staking Platforms of 2026 - Compare & Review`,
@@ -321,6 +322,7 @@ export default function StakingHubPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Staking Platforms", "description": "Cryptocurrency staking guide: Earn rewards on Bitcoin, Ethereum, Solana, and 100+ coins. Compare staking options, APY, risks, and strategies.", "url": "https://degen0x.com/investing/staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/investing/staking" />
     </>
   );
 }

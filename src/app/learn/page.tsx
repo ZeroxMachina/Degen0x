@@ -4,6 +4,7 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import RelatedContent from '@/components/RelatedContent';
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Learn Crypto: Complete Guides & Tutorials (2026)`,
@@ -267,6 +268,7 @@ export default function LearnHubPage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto for Complete Beginners", "description": "Start your crypto education here. Beginner guides, blockchain basics, Bitcoin and Ethereum explainers, DeFi, NFTs, security tips, and a comprehensive crypto", "url": "https://degen0x.com/learn", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/learn" />
       <RelatedContent category="learn" currentSlug="/learn" />
 </div>
   );

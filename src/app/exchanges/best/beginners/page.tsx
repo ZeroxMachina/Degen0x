@@ -8,6 +8,7 @@ import { exchanges } from "@/data/exchanges";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AuthoritySources from '@/components/AuthoritySources';
 
 
 export const metadata: Metadata = {
@@ -232,6 +233,7 @@ export default function BestForBeginnersPage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/exchanges/best/beginners" />
       <RelatedContent category="tools" currentSlug="/exchanges/best/beginners" />
     </div>
   );

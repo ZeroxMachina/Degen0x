@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Best Crypto Tax Solutions (2026) | degen0x`,
@@ -148,6 +149,7 @@ export default function BestTaxSolutionsPage() {
         
           <a href="/taxes/crypto-tax-software-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax Software Comparison 2026</a>
         </nav>
+      <AuthoritySources url="/taxes/best" />
     </main>
   );
 }

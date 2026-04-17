@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import ExchangeComparisonEngine from '@/components/ExchangeComparisonEngine';
 import Footer from '@/components/Footer';
 import RelatedContent from '@/components/RelatedContent';
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: 'Crypto Exchange Comparison Tool | degen0x',
@@ -331,6 +332,7 @@ export default function ComparePage() {
         
           <a href="/defi-yields" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Yields</a>
         </nav>
+      <AuthoritySources url="/compare" />
       <RelatedContent category="compare" currentSlug="/compare" />
     </main>
   );

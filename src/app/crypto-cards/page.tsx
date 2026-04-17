@@ -7,6 +7,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { cryptoCards } from "@/data/crypto-cards";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Best Crypto Credit Cards & Debit Cards of April 2026`,
@@ -236,6 +237,7 @@ export default function CryptoCardsPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Cards Overall", "description": "Best crypto debit and credit cards 2026. Compare features, fees, rewards, cashback programs. Spend crypto instantly or earn rewards on purchases.", "url": "https://degen0x.com/crypto-cards", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/crypto-cards" />
     </>
   );
 }

@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Crypto Insurance - Compare DeFi & Smart Contract Coverage 2026`,
@@ -209,6 +210,7 @@ export default function InsuranceHubPage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/insurance" />
     </div>
   );
 }

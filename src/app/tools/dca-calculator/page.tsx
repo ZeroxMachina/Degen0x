@@ -5,6 +5,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AuthoritySources from '@/components/AuthoritySources';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 type Frequency = "daily" | "weekly" | "bi-weekly" | "monthly";
@@ -683,6 +684,7 @@ export default function DCACalculatorPage() {
             })
           }}
         />
+      <AuthoritySources url="/tools/dca-calculator" />
       <RelatedContent category="tools" currentSlug="/tools/dca-calculator" />
       </div>
   );

@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AuthoritySources from '@/components/AuthoritySources';
 
 
 export const metadata: Metadata = {
@@ -188,6 +189,7 @@ export default function XRPPage() {
           </Link>
         </div>
       </div>
+      <AuthoritySources url="/investing/crypto/xrp" />
     </div>
   );
 }

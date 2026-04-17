@@ -7,6 +7,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { nftMarketplaces } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Best NFT Marketplaces of 2026 - Compare & Review`,
@@ -324,6 +325,7 @@ export default function NftsPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best NFT Marketplaces", "description": "NFT guide: Marketplaces, collections, MEV, gas optimization. Learn buying, selling, trading NFTs on Ethereum, Solana, Polygon, and Arbitrum.", "url": "https://degen0x.com/nfts", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/nfts" />
     </>
   );
 }

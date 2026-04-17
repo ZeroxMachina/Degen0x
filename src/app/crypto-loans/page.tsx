@@ -7,6 +7,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { CRYPTO_LOAN_PRODUCTS, LOAN_FAQS } from "@/data/crypto-loans";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import AuthoritySources from '@/components/AuthoritySources';
 
 export const metadata: Metadata = {
   title: `Crypto Loans - Compare Crypto-Backed Lending Platforms 2026`,
@@ -168,6 +169,7 @@ export default function CryptoLoansPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Loan Platforms", "description": "Compare the best crypto loan platforms. Borrow against your Bitcoin and crypto without selling. CeFi and DeFi options with expert reviews and guides.", "url": "https://degen0x.com/crypto-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <AuthoritySources url="/crypto-loans" />
     </>
   );
 }
