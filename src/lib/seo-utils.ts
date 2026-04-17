@@ -256,6 +256,119 @@ export function generateSoftwareApplicationSchema(options: {
 }
 
 /**
+ * HowTo JSON-LD Schema
+ * Generates schema.org HowTo structured data for step-by-step guides. Enables
+ * "HowTo" rich results in SERPs (step carousel with times, costs, supplies).
+ *
+ * Reference: https://schema.org/HowTo
+ *
+ * Example output:
+ * {
+ *   "@context": "https://schema.org",
+ *   "@type": "HowTo",
+ *   "name": "How to Buy Bitcoin Step by Step",
+ *   "description": "Complete beginner guide to buying BTC safely.",
+ *   "totalTime": "PT30M",
+ *   "estimatedCost": { "@type": "MonetaryAmount", "currency": "USD", "value": "0" },
+ *   "step": [
+ *     { "@type": "HowToStep", "position": 1, "name": "Choose an exchange", "text": "..." }
+ *   ]
+ * }
+ *
+ * @param options - HowTo metadata: name, description, steps, and optional totals
+ * @returns JSON-LD structured data object
+ */
+export function generateHowToSchema(options: {
+  name: string;
+  description: string;
+  steps: Array<{
+    name: string;
+    text: string;
+    url?: string;
+    image?: string;
+  }>;
+  image?: string;
+  url?: string;
+  /** ISO 8601 duration, e.g. "PT30M" for 30 minutes */
+  totalTime?: string;
+  estimatedCost?: {
+    currency: string;
+    value: string; // string-encoded decimal per schema.org guidance
+  };
+  supplies?: string[];
+  tools?: string[];
+  datePublished?: string;
+  dateModified?: string;
+  author?: string;
+}): Record<string, any> {
+  if (!options.steps || options.steps.length === 0) {
+    throw new Error(
+      "generateHowToSchema: at least one step is required for a valid HowTo schema"
+    );
+  }
+
+  const schema: Record<string, any> = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": options.name,
+    "description": options.description,
+    "step": options.steps.map((step, index) => {
+      const stepSchema: Record<string, any> = {
+        "@type": "HowToStep",
+        "position": index + 1,
+        "name": step.name,
+        "text": step.text,
+      };
+      if (step.url) stepSchema.url = step.url;
+      if (step.image) stepSchema.image = step.image;
+      return stepSchema;
+    }),
+    "author": {
+      "@type": "Organization",
+      "name": options.author || SITE_NAME,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": SITE_NAME,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/logo.png`,
+      },
+    },
+  };
+
+  if (options.image) schema.image = options.image;
+  if (options.url) schema.mainEntityOfPage = options.url;
+  if (options.totalTime) schema.totalTime = options.totalTime;
+  if (options.datePublished) schema.datePublished = options.datePublished;
+  if (options.dateModified) schema.dateModified = options.dateModified;
+
+  if (options.estimatedCost) {
+    schema.estimatedCost = {
+      "@type": "MonetaryAmount",
+      "currency": options.estimatedCost.currency,
+      "value": options.estimatedCost.value,
+    };
+  }
+
+  if (options.supplies && options.supplies.length > 0) {
+    schema.supply = options.supplies.map((s) => ({
+      "@type": "HowToSupply",
+      "name": s,
+    }));
+  }
+
+  if (options.tools && options.tools.length > 0) {
+    schema.tool = options.tools.map((t) => ({
+      "@type": "HowToTool",
+      "name": t,
+    }));
+  }
+
+  return schema;
+}
+
+/**
  * Organization JSON-LD Schema
  * Generates structured data for your organization/website.
  * Improves knowledge panel and brand credibility signals.

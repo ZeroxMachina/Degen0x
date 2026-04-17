@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import { generateHowToSchema } from "@/lib/seo-utils";
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -108,6 +109,56 @@ const structuredData = {
     ],
   },
 };
+
+// HowTo JSON-LD — enables step-carousel rich results in Google SERPs.
+// Wired via generateHowToSchema() from @/lib/seo-utils so new generator gets real-world coverage.
+const howToData = generateHowToSchema({
+  name: 'How to Buy Bitcoin Step by Step',
+  description: 'Complete beginner guide to buying BTC safely: pick an exchange, pass KYC, deposit funds, place your first order, and move coins to self-custody.',
+  url: 'https://degen0x.com/learn/how-to-buy-bitcoin-step-by-step',
+  image: 'https://degen0x.com/og-how-to-buy-bitcoin.svg',
+  totalTime: 'PT30M',
+  estimatedCost: { currency: 'USD', value: '10' },
+  supplies: [
+    'Government-issued ID for KYC',
+    'Bank account or debit card for funding',
+    'A small starting budget (e.g. $10–$100)',
+  ],
+  tools: [
+    'Regulated crypto exchange account (Coinbase, Kraken, or Gemini)',
+    'Authenticator app for 2FA',
+    'Self-custody Bitcoin wallet (hardware or mobile)',
+  ],
+  datePublished: '2026-04-10',
+  dateModified: '2026-04-17',
+  steps: [
+    {
+      name: 'Choose a Crypto Exchange',
+      text: 'Compare regulated exchanges on fees, supported payment methods, KYC speed, and security track record. For US beginners, Coinbase, Kraken, and Gemini are the standard starting points.',
+      url: 'https://degen0x.com/learn/how-to-buy-bitcoin-step-by-step#step-1-exchange',
+    },
+    {
+      name: 'Create and Verify Your Account',
+      text: 'Sign up with a strong unique password, enable 2FA with an authenticator app (not SMS), and complete identity verification (KYC). Verification usually finishes in minutes to a few hours.',
+      url: 'https://degen0x.com/learn/how-to-buy-bitcoin-step-by-step#step-2-verify',
+    },
+    {
+      name: 'Deposit Funds',
+      text: 'Fund the account via ACH bank transfer (lowest fees, slower) or debit card (instant, higher fees). Start with an amount you are comfortable experimenting with.',
+      url: 'https://degen0x.com/learn/how-to-buy-bitcoin-step-by-step#step-3-deposit',
+    },
+    {
+      name: 'Place Your First Bitcoin Order',
+      text: 'Use a market order for simplicity or a limit order to set a target price. Review the fee breakdown and confirm. Fractional BTC (satoshis) is normal — you do not need to buy a whole coin.',
+      url: 'https://degen0x.com/learn/how-to-buy-bitcoin-step-by-step#step-4-order',
+    },
+    {
+      name: 'Secure Your Bitcoin',
+      text: 'For holdings above a few hundred dollars, withdraw BTC to a self-custody wallet (hardware wallet preferred). Back up your seed phrase offline, on paper or steel, never in a cloud note.',
+      url: 'https://degen0x.com/learn/how-to-buy-bitcoin-step-by-step#step-5-secure',
+    },
+  ],
+});
 
 const h1Style: React.CSSProperties = { fontSize: 36, fontWeight: 800, marginBottom: 16, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.2 };
 const h2Style: React.CSSProperties = { fontSize: 24, fontWeight: 700, marginTop: 40, marginBottom: 16, color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12 };
@@ -219,6 +270,7 @@ export default function HowToBuyBitcoin() {
     <article id="top" aria-label="Guide: How to Buy Bitcoin Step by Step" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToData) }} />
 
       <style dangerouslySetInnerHTML={{ __html: `details[open] > summary span.faq-icon { transform: rotate(45deg); } a.learn-link:hover { color: #f7931a !important; text-decoration: underline !important; }` }} />
 
