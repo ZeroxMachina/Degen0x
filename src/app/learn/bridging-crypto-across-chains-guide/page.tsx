@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -227,6 +229,8 @@ export default function BridgingCryptoAcrossChainsGuide2026() {
 
           <h1 style={h1Style}>Bridging Crypto Across Chains 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Bridging has become essential infrastructure as users move capital across Ethereum, Arbitrum, Optimism, Solana, and 50+ blockchains. By April 2026, cross-chain bridges collectively hold over $15 billion in locked assets. However, bridges carry unique risks: $2B+ have been lost to bridge hacks (Poly Network $1.4B, Ronin $600M, Nomad $190M). This guide covers bridge mechanics (lock-and-mint, liquidity networks, intent-based), top bridges (Stargate $5B TVL, Across, Synapse, Wormhole), comparison table with fees and timelines, wrapped vs native tokens, security red flags, and a safety checklist for evaluating bridges before bridging.
           </p>

@@ -2,6 +2,8 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "#0d1117", border: "#30363d", text: "#e6edf3", text2: "#8b949e",
@@ -41,6 +43,8 @@ export default function LiquidStakingDerivativesPage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Liquid Staking Derivatives (LSDs) 2026: Lido, Rocket Pool, Jito & How to Earn Yield
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Liquid staking lets you earn PoS staking rewards while keeping your assets liquid for DeFi. Instead of locking ETH or SOL
             in a validator, you receive a receipt token (stETH, rETH, JitoSOL) that accrues value and can be used across DeFi.

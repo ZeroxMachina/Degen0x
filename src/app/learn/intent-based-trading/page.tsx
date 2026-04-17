@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -32,6 +34,8 @@ export default function IntentBasedTradingPage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Intent-Based Trading Guide 2026: The Future of DeFi UX
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Intent-based trading is replacing traditional DEX interactions. Instead of specifying exact execution paths, users declare their desired outcome ("I want the best price for 1 ETH in USDC") and a competitive network of "solvers" competes to fill the order optimally. UniswapX, CoW Protocol, 1inch Fusion, and dYdX v5 have all adopted intents. This guide explains the architecture, benefits, and risks.
           </p>

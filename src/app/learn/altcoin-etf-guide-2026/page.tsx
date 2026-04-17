@@ -12,6 +12,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -166,6 +168,8 @@ export default function AltcoinETFGuidePage() {
           Altcoin ETF Guide 2026: Solana, XRP & the New Wave of Spot Crypto Funds
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg mb-3" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>
           Bitcoin ETFs opened the floodgates in January 2024. Ethereum followed. By late 2025 the SEC approved spot Solana and XRP ETFs — and for the first time, mainstream investors can now access altcoin exposure with staking yields baked in, all through a standard brokerage account. Here&apos;s everything you need to know.
         </p>

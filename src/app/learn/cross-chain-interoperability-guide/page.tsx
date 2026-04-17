@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -212,6 +214,8 @@ export default function CrossChainInteroperabilityGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>16 min read</span>
           <h1 style={h1Style}>Cross-Chain Interoperability: LayerZero, Wormhole, Axelar &amp; CCIP</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master cross-chain bridges in 2026. Compare LayerZero (omnichain messaging), Wormhole (19 chains, $325M hack), Axelar GMP, Chainlink CCIP, Cosmos IBC, Polkadot XCMP. Learn trust models, security risks, and intent-based bridges (Across, deBridge).
           </p>

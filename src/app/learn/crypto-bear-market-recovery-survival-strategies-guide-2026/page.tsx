@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -184,6 +186,8 @@ export default function BearMarketGuide() {
               Crypto Bear Market Survival & Recovery Strategies Guide 2026
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p style={{ fontSize: '1.125rem', color: '#8b949e', marginBottom: '1.5rem' }}>
               Master proven strategies to not just survive, but profit from crypto bear markets. With the Fear and Greed
               Index at 9 (extreme fear) and Bitcoin down 41-50% from October 2025 peaks, understanding bear market

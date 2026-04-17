@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 const pageTitle = "AI Crypto Agent Frameworks Comparison 2026: Eliza vs Virtuals vs Rig vs ZerePy";
@@ -136,6 +138,8 @@ export default function AIAgentFrameworksComparison() {
           {pageTitle}
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Meta Info */}
         <div className="flex flex-wrap gap-4 text-sm mb-8" style={{ color: "var(--color-text-secondary)" }}>
           <span>Published March 25, 2026</span>

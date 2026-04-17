@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", surface: "var(--color-surface, #161b22)",
@@ -32,6 +34,8 @@ export default function BlastGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Blast Guide 2026: The Yield-Bearing Ethereum L2 Explained
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Blast is an Ethereum Layer 2 that natively yields ETH and stablecoins for users simply by holding funds in their wallet. Built by the team behind Blur (the NFT marketplace), Blast generated massive controversy and massive TVL simultaneously at launch. This guide covers how Blast works, its unique yield mechanics, risks, and how to use the ecosystem.
           </p>

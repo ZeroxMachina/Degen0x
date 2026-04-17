@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -184,6 +186,8 @@ export default function TEECryptoGuide() {
 
           <h1 style={h1Style}>TEEs in Crypto: Trusted Execution Environments Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '16px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.7' }}>
             Trusted Execution Environments (TEEs) are hardware-isolated enclaves that execute code in complete confidentiality, enabling private computation on public blockchains. In 2026, TEEs are powering a new generation of privacy protocols and verifiable AI inference. Unlike zero-knowledge proofs (which prove correctness mathematically), TEEs rely on hardware security—encrypted memory, secure processors, and remote attestation. This guide explores how TEEs work, the leading crypto projects (Phala Network, Oasis, Secret Network, Marlin), how TEEs compare to ZK proofs and MPC, and the emerging "Proof of Cloud" vision for anchoring privacy in blockchain root-of-trust.
           </p>

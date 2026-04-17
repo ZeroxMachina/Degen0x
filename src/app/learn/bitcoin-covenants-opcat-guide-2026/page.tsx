@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -303,6 +305,8 @@ export default function BitcoinCovenantsOPCATGuidePage() {
           }}>
             Bitcoin Covenants &amp; OP_CAT Guide: Making Bitcoin Programmable
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             Bitcoin was originally programmable, but the opcodes that enabled covenants were disabled in 2010 due to DoS concerns.
             Now, developers are re-enabling this functionality through opcodes like OP_CAT (BIP-347), OP_CTV (BIP-119), CSFS, and LNHANCE.

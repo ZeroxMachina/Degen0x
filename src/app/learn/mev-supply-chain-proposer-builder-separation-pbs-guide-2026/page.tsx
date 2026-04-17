@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -123,6 +125,8 @@ export default function MEVPBSGuide() {
             }}
     >MEV Supply Chain & Proposer-Builder Separation</h1>
 
+    <ReadingTime />
+    <AutoTOC />
             <p style={{
               fontSize: '1.25rem',
               color: DARK_COLORS.secondary,

@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -158,6 +160,8 @@ export default function HashiBitcoinDefiGuide() {
               Sui Hashi: Native Bitcoin DeFi Without Wrappers
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '24px' }}>
               Hashi is bringing institutional-grade Bitcoin into DeFi on Sui blockchain. Learn how native BTC lending, borrowing, and yield generation work without wrapping.
             </p>

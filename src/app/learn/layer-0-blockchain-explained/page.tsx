@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -154,6 +156,8 @@ export default function Layer0BlockchainsPage() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Layer 0 Blockchains Explained</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>Master Layer 0 infrastructure in 2026: Cosmos IBC (80+ app-chains, $2.8B TVL), Polkadot parachains (30+, shared security), Avalanche subnets (100+, sub-second finality), LayerZero omnichain messaging ($8B TVL). Learn app-chain thesis, sovereign vs shared security, cross-chain composability.</p>
           <div style={{ display: 'flex', gap: 24, fontSize: 14, color: '#8b949e', marginBottom: 24 }}>
             <span>Updated: April 10, 2026</span>

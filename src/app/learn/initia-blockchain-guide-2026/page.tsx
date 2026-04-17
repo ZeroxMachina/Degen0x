@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -163,6 +165,8 @@ export default function InitiaBlockchainGuide() {
           }}>
             Initia (INIT) Guide 2026: The Modular Blockchain That Weaves L1 and L2 Together
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             Initia is a Cosmos-based Layer 1 blockchain designed to orchestrate an ecosystem of customizable
             Layer 2 rollups called Minitias. With support for EVM, MoveVM, and WasmVM, it aims to solve the

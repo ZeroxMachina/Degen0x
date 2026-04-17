@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -149,6 +151,8 @@ export default function ArbitrumStylusEcosystemGuide2026() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Arbitrum Ecosystem & Stylus Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg text-zinc-400 leading-relaxed">
             How Arbitrum became Ethereum&apos;s largest Layer 2 by DeFi TVL — and why Stylus, Orbit chains,
             and a deep bench of native protocols like GMX, Pendle, and Camelot make it the default home

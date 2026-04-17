@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -131,6 +133,8 @@ export default function DeFiInsuranceGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: `linear-gradient(135deg, ${S.primary}, ${S.teal})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             DeFi Insurance Protocols Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: S.text2, fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>
             DeFi TVL exceeds $1T, yet less than 2% is insured. Learn how Nexus Mutual, InsurAce, and Unslashed protect your crypto from hacks, exploits, and depeg events. Comprehensive guide to DeFi insurance in 2026.
           </p>

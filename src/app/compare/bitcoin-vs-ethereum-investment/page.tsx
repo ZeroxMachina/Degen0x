@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -170,6 +172,8 @@ export default function BitcoinVsEthereumInvestment() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           </div>
           <h1 style={h1Style}>Bitcoin vs Ethereum: Which to Buy?</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             The two largest cryptocurrencies serve different purposes. Bitcoin is digital gold with a fixed 21M supply. Ethereum is programmable money powering DeFi and L2s. This guide analyzes market cap, supply dynamics, consensus, and investment cases.
           </p>

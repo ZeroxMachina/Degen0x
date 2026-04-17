@@ -4,6 +4,8 @@ import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -75,6 +77,8 @@ export default function CryptoSecurityMasterclassPage() {
             Crypto Security Masterclass 2026: Protect Your Assets from Every Angle
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             In 2026, crypto security has evolved dramatically. AI deepfakes, sophisticated phishing, and approval exploits pose new threats. This comprehensive masterclass covers everything you need to know to secure your funds — from hardware wallet setup to identifying social engineering attacks. Whether you hold $100 or $100,000, these principles apply.
           </p>

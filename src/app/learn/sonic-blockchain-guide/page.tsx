@@ -9,6 +9,8 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -147,6 +149,8 @@ export default function SonicBlockchainGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#06b6d4] bg-clip-text text-transparent">
         What Is Sonic? The Complete Guide to Fantom&apos;s High-Speed Successor
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         Sonic is the rebuilt, rebranded successor to Fantom — a high-performance EVM blockchain
         with 400K TPS, sub-second finality, and a developer fee-sharing model unlike anything else

@@ -8,6 +8,8 @@ import { SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -116,6 +118,8 @@ export default function ColdStorageSeedPhraseSecurityGuidePage() {
             Cold Storage & Seed Phrase Security Guide 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Hardware Wallets, Backup Strategies & Self-Custody Best Practices
           </p>

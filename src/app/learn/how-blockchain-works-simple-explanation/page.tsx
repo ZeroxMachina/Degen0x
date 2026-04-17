@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -159,6 +161,8 @@ export default function BlockchainExplanation() {
           How Blockchain Works: Simple Explanation
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Meta line */}
         <div style={{ color: "#8b949e", fontSize: 14, marginBottom: 24 }}>
           Updated April 11, 2026 • A beginner's guide to understanding blockchain technology

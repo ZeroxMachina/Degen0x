@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -229,6 +231,8 @@ export default function BlockchainOraclesGuide() {
 
           <h1 style={h1Style}>Blockchain Oracles Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Blockchain oracles are the critical infrastructure layer that connects smart contracts to real-world data — prices, weather, sports scores, and anything else outside the blockchain. Without oracles, blockchains remain isolated islands. With them, DeFi protocols can build liquidation systems, trading bots, and collateral mechanisms that respond to the real world. This guide covers how oracles work, why they matter for DeFi security, the major oracle networks (Chainlink, Pyth, RedStone, Chronicle), and how to defend against oracle manipulation attacks that have stolen hundreds of millions.
           </p>

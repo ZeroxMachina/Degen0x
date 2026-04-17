@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -241,6 +243,8 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
 
           <h1 style={h1Style}>Crypto Copy Trading & Social Trading Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Copy trading has exploded in 2026 as a way for retail traders to passively earn from professional traders&apos; expertise. Platforms like Bitget, Bybit, and eToro let you mirror the trades of top performers, proportionally sized to your account. But 75-90% of retail traders lose money—copy trading doesn&apos;t guarantee profits. This guide breaks down how copy trading works, how to evaluate lead traders using win rates and Sharpe ratios, compares top platforms, and reveals the hidden costs and risks you need to avoid.
           </p>

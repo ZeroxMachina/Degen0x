@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -164,6 +166,8 @@ export default function StakedCryptoETFsGuidePage() {
             Staked Crypto ETFs: How to Earn Staking Yield Through Your Brokerage
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Staked crypto ETFs let you earn on-chain staking rewards without ever touching a crypto wallet. Funds like BlackRock&apos;s ETHB (staked Ethereum, launched March 12, 2026) and Bitwise&apos;s BSOL (staked Solana, $717M AUM) hold crypto, stake it on the network, and pass yield to shareholders—all within a standard brokerage account. With 130+ crypto ETF filings under SEC review and staking yields running 2.5-7%+ annually, staked ETFs are the fastest-growing bridge between traditional finance and DeFi. This guide covers how they work, which funds exist, what you&apos;ll actually earn after fees, and whether they make sense for your portfolio.
           </p>

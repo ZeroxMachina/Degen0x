@@ -6,6 +6,8 @@ import { ArticleStructuredData, FAQStructuredData } from "@/components/Structure
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -126,6 +128,8 @@ export default function SuiBlockchainGuide() {
           Sui Blockchain Guide 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Subtitle */}
         <p style={{ fontSize: '20px', color: S.text2, margin: '24px 0 48px 0', lineHeight: '1.6' }}>
           Everything you need to know about Sui's object-centric architecture, Move language, DeFi ecosystem, and how SUI tokens work. With detailed comparison to Solana and Aptos, plus insider insights on 2026 developments.

@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -211,6 +213,8 @@ export default function ERC20TokenStandard() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>12 min read</span>
           <h1 style={h1Style}>ERC-20 Token Standard: Functions, Approvals &amp; Token Creation</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master ERC-20 token standard in 2026. Learn 6 required functions (transfer, approve, balanceOf, allowance, totalSupply, transferFrom), approval vulnerabilities, ERC-4626 vault standard. Compare ERC-20 vs ERC-721 vs ERC-1155. OpenZeppelin implementation guide.
           </p>

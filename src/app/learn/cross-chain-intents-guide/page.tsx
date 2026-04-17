@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = { bg:"#0d1117",card:"#161b22",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4",red:"#f85149",indigo:"#818cf8" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"Cross-Chain Intents Guide",href:"/learn/cross-chain-intents-guide"}];
@@ -65,6 +67,8 @@ export default function CrossChainIntentsGuidePage() {
           <h1 style={{fontSize:"2.4rem",fontWeight:900,lineHeight:1.2,marginBottom:20,background:`linear-gradient(135deg, ${S.indigo}, ${S.cyan})`,WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>
             Cross-Chain Intents Guide 2026: ERC-7683, Fillers & the End of Traditional Bridges
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{fontSize:17,color:S.text2,lineHeight:1.75}}>
             Cross-chain intents let you say <em>"I want 1,000 USDC on Base"</em> and a network of competing solvers figures out the fastest, cheapest way to make it happen — no bridge UI, no wrapped tokens, no waiting for finality. Powered by the ERC-7683 standard from Uniswap Labs and Across Protocol, intents are replacing traditional bridges as the default way to move value across chains in 2026.
           </p>

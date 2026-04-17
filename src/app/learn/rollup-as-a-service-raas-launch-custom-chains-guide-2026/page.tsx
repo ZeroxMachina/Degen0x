@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -218,6 +220,8 @@ export default function RaaSOxPage() {
         <div style={containerStyle}>
           {/* Header */}
           <h1 style={h1Style}>Rollup-as-a-Service (RaaS): Launch Custom Chains in 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '24px' }}>
             Your complete guide to RaaS platforms, modular architecture, and deploying custom rollups without the infrastructure overhead.
           </p>

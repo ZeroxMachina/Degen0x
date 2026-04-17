@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -323,6 +325,8 @@ export default function CryptoPortfolioRebalancingGuidePage() {
         {/* Main Title */}
         <h1 style={h1Style}>Crypto Portfolio Rebalancing Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>
           Published: April 2, 2026 | Reading Time: 18 min
         </div>

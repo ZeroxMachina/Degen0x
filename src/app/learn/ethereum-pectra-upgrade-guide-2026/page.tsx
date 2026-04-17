@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -220,6 +222,8 @@ export default function PectraUpgradeGuide() {
 
           <h1 style={h1Style}>Ethereum Pectra Upgrade Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             The Ethereum Pectra upgrade represents the largest enhancement to Ethereum since The Merge. Combining Prague (execution layer) and Electra (consensus layer) features, Pectra activated May 7, 2025 and introduces 11 transformative EIPs reshaping wallet UX, staking economics, and Layer 2 scaling. EIP-7702 brings smart contract wallet capabilities to every EOA, enabling gasless transactions and transaction batching. EIP-7251 introduces flexible staking at any amount between 32 and 2048 ETH, reducing validator fragmentation. EIP-7691 increases blob throughput by 2x, directly lowering Layer 2 transaction fees. This comprehensive guide explains each innovation, their practical impact, and how to prepare.
           </p>

@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -152,6 +154,8 @@ export default function CryptoOptionsStrategiesGuide() {
             Crypto Options Strategies 2026: Covered Calls, Straddles, Spreads & More
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Bitcoin and Ethereum options trade with implied volatility 4-8x higher than traditional equities, unlocking strategies most traders never see. Whether you hold crypto and want to generate yield, bet on volatility, or protect your downside, options strategies are your secret weapon. This guide covers every major strategy—from simple covered calls to complex iron condors—plus exactly where to trade them in 2026.
           </p>

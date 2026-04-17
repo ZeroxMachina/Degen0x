@@ -5,6 +5,8 @@ import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 const S = {
@@ -166,6 +168,8 @@ export default function OnchaincreditScoringGuide() {
               Onchain Credit Scoring Guide 2026
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p
               style={{
                 fontSize: "1.25rem",

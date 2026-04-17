@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -218,6 +220,8 @@ export default function CryptoWalletSecurityGuide() {
 
           <h1 style={h1Style}>Crypto Wallet Security Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             $450 million lost to phishing, exploits, and infrastructure attacks in Q1 2026 alone. In January, hackers drained $340 million across multiple incidents. Wallet drainers are becoming increasingly sophisticated, SIM-swap attacks are targeting 2FA, and hundreds of wallets are being drained daily on EVM chains. This guide shows you exactly how to protect your assets using hardware wallets, proper seed phrase storage, phishing detection, and security best practices that work in 2026.
           </p>

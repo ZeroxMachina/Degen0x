@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -345,6 +347,8 @@ export default function ZeroKnowledgeProofsGuide() {
 
         {/* Header */}
         <h1 style={h1Style}>Zero-Knowledge Proofs Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.2rem', color: '#8b949e', marginBottom: '30px' }}>
           ZKP, SNARKs, STARKs & the Cryptography Powering $28B+ in ZK TVL
         </p>

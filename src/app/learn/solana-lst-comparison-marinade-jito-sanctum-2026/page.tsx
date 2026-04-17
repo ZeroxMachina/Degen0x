@@ -8,6 +8,8 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -182,6 +184,8 @@ export default function LSTComparison() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Marinade vs Jito vs Sanctum: Solana LST Comparison 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>
             Head-to-head comparison of the three leading Solana liquid staking tokens. Analyze APY, TVL, validator strategies, risks, and find the best LST for your portfolio in 2026.
           </p>

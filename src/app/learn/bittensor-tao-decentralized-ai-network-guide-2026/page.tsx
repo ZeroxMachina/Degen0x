@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -244,6 +246,8 @@ export default function BittensorTAOGuide() {
 
           <h1 style={h1Style}>Bittensor (TAO) Decentralized AI Network Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Bittensor is redefining how AI gets commoditized. Instead of powerful corporations controlling AI, Bittensor decentralizes intelligence — miners produce AI outputs, validators score quality, and the network distributes rewards based on contribution. With TAO trading at $298.59, a $3 billion market cap, and the highest staking ratio (76.55%) in the industry, Bittensor represents a new paradigm: intelligence as a public commodity, governed by economic incentives rather than corporate control. This guide explains the network architecture, Dynamic TAO, subnets, and the competitive landscape.
           </p>

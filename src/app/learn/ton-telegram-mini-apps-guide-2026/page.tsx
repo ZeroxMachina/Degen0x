@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -229,6 +231,8 @@ export default function TONTelegramMiniAppsGuide() {
 
           <h1 style={h1Style}>TON & Telegram Mini Apps Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             TON (The Open Network) is Telegram&apos;s exclusive blockchain partner, serving a potential onboarding funnel of 950M+ monthly Telegram users. In 2026, TON has become a major Layer 1 ecosystem: $3B market cap, 128M+ accounts, $150M+ DeFi TVL, and 650+ dApps. Telegram Mini Apps—lightweight Web3 applications running inside Telegram—are transforming user onboarding. Tap-to-earn games like Notcoin (35M+ players) and Hamster Kombat (300M peak) have introduced crypto to millions. TON Connect provides seamless wallet integration, while embedded wallets (like Dynamic&apos;s 2026 launch) enable passwordless, seed-phrase-free transactions. This guide covers everything: how TON and Mini Apps work, top games and DeFi protocols, building dApps, and strategies for navigating this emerging ecosystem.
           </p>

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -143,6 +145,8 @@ export default function LidoV3Guide() {
 
         <h1 style={h1Style}>Lido V3: stVaults &amp; Modular Staking Infrastructure</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={{ marginBottom: '24px' }}>
           <span style={badgeStyle}>Advanced</span>
           <span style={levelStyle}>Intermediate to Advanced</span>

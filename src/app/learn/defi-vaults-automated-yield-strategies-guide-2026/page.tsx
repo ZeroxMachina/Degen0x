@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -323,6 +325,8 @@ export default function DeFiVaultsPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>DeFi Vaults & Automated Yield Strategies Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>
           Master yield automation: learn how DeFi vaults work, understand ERC-4626 standardization, compare platforms, and build institutional-grade yield strategies.
         </p>

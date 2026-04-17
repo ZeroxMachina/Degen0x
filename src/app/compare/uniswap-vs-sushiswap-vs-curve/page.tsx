@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -170,6 +172,8 @@ export default function UniswapVsSushiSwapVsCurve() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           </div>
           <h1 style={h1Style}>Uniswap vs SushiSwap vs Curve</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             The three largest decentralized exchanges by TVL. Uniswap dominates general trading with concentrated liquidity (V3/V4). Curve specializes in stablecoins. SushiSwap offers token rewards. This guide covers AMM models, fees, governance, and multi-chain presence.
           </p>

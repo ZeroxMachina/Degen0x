@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { generateArticleSchema } from '@/lib/structured-data';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -156,6 +158,8 @@ export default function DriftProtocolHackAnalysis() {
           Drift Protocol's $285M Hack: The Largest DeFi Exploit of 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Featured Hook Paragraph */}
         <p
           style={{

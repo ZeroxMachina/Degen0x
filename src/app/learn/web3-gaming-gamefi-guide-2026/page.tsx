@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -273,6 +275,8 @@ export default function Web3GamingGuide() {
               <span style={{ ...styles.badge, ...styles.badgeDifficulty }}>Intermediate</span>
             </div>
             <h1 style={styles.h1}>Web3 Gaming & GameFi Guide 2026</h1>
+            <ReadingTime />
+            <AutoTOC />
             <p style={styles.meta}>Updated March 2026 · 16 min read</p>
           </div>
 

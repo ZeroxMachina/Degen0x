@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import MorphoVaultExplorer from "@/components/MorphoVaultExplorer";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -144,6 +146,8 @@ export default function MorphoProtocolGuidePage() {
             Morpho Protocol Guide 2026: The Modular Lending Layer Taking Over DeFi
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 18, color: "#8b949e", lineHeight: 1.6, marginBottom: 12 }}>
             Morpho crossed $10B in TVL, landed Apollo Global as an institutional backer, and is launching V2 — all while most people still think of it as an &ldquo;Aave optimizer.&rdquo; It&apos;s time to understand what Morpho actually is.
           </p>

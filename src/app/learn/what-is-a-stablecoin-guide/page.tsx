@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -218,6 +220,8 @@ export default function WhatIsStablecoinGuide() {
           <span style={{ ...badgeStyle, background: '#f59e0b', color: '#000' }}>Stablecoins</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>What Is a Stablecoin Guide 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Stablecoins are cryptocurrencies pegged to stable assets—usually the US Dollar—enabling low-volatility transactions, DeFi lending, and hedging. By April 2026, stablecoins represent $200B+ in market cap. USDT leads at $140B+, USDC at $60B+, with DAI and FRAX rounding out top performers. But not all stablecoins are created equal: some backed by USD reserves (safest), others by cryptocurrency (riskier), others by algorithms (most risky, as UST collapse showed). This guide covers: stablecoin definition and mechanics, three types (fiat-backed, crypto-backed, algorithmic), how each maintains its peg, top coins by market cap, real-world usage in DeFi and trading, depegging risks (and what happened to UST), and 2026 regulatory landscape (MiCA in EU, US stablecoin bill).
           </p>

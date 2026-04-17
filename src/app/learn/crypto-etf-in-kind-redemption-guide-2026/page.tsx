@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -126,6 +128,8 @@ export default function CryptoETFInKindRedemptionGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, color: "#e6edf3", background: "linear-gradient(135deg, #6366f1, #06b6d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Crypto ETF In-Kind Redemptions: The Tax-Efficient Game Changer for Institutional Adoption
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             In July 2025, the SEC approved in-kind creations and redemptions for all spot Bitcoin and Ethereum ETFs — eliminating the biggest structural inefficiency that had plagued crypto ETFs since their launch. This guide explains how the mechanism works, why it matters for tax efficiency, and what it means for the next wave of institutional crypto adoption.
           </p>

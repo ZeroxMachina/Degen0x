@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -81,6 +83,8 @@ export default function HowToBuyEthereumPage() {
             How to Buy Ethereum (ETH) in 2026: Complete Beginner&apos;s Guide
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Ethereum is the world&apos;s second-largest cryptocurrency and the backbone of DeFi, NFTs, and Web3. Whether you want to hold ETH as an investment or use it in decentralized applications, this guide walks you through every step — from choosing an exchange to securing your coins.
           </p>

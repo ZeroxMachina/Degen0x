@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -100,6 +102,8 @@ export default function AdvancedStakingStrategiesGuide() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight" style={{ color: "var(--color-text)" }}>
             Advanced Staking Strategies Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg mb-6" style={{ color: "var(--color-text-secondary)" }}>
             Master liquid staking tokens, restaking optimization, validator diversification, and real yield strategies to maximize your crypto rewards while managing risk.
           </p>

@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -223,6 +225,8 @@ export default function CryptoRegulationByCountryGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Crypto Regulation by Country 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Cryptocurrency regulation is fragmenting globally. El Salvador declared Bitcoin legal tender. The EU enforced MiCA across 27 member states. The US passed FIT21 Act, shifting power from SEC to CFTC. Singapore, Japan, and UAE maintain clear frameworks. By April 2026, there&apos;s no unified global crypto law—instead, 195+ countries have adopted wildly different approaches. This guide compares regulation, taxes, legal status, and compliance requirements across 10 key jurisdictions, helping you understand where to operate, where to store funds, and how to remain compliant.
           </p>

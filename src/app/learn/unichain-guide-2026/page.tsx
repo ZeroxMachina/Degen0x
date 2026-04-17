@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -158,6 +160,8 @@ export default function UniChainGuidePage() {
             Unichain Guide 2026: Uniswap's DeFi-Optimized Layer 2
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.6' }}>
             Uniswap Labs launched Unichain in February 2025 as their own Layer 2 blockchain, purpose-built for DeFi with 1-second block times, 95% cheaper gas, and MEV protection. This comprehensive guide explains what Unichain is, how it works, and how it compares to other major Layer 2s like Base and Arbitrum.
           </p>

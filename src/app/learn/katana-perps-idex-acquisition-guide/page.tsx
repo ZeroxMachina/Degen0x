@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -76,6 +78,8 @@ export default function KatanaPerpsGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Katana Perps Guide 2026: How the IDEX Acquisition Created a Full-Stack Perp DEX
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Katana, a Polygon-incubated DeFi chain, acquired IDEX on March 23, 2026 and launched Katana Perps — a native perpetual futures platform powered by a structural yield model instead of token emissions. This guide explains how Katana&apos;s vertical integration strategy works, what the Vault Bridge does, and how it competes in the rapidly growing on-chain derivatives market.
           </p>

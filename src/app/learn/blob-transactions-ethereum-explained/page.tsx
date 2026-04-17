@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -204,6 +206,8 @@ export default function BlobTransactionsEthereumExplained() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Blob Transactions on Ethereum Explained</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master blob transactions (EIP-4844): Type-3 transactions, 128KB ephemeral blobs, KZG commitments, and blob gas pricing. Understand how blobs reduced L2 fees from $0.50 to $0.01 and the roadmap to full Danksharding.
           </p>

@@ -6,6 +6,8 @@ import KarakYieldEstimator from "@/components/KarakYieldEstimator";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -155,6 +157,8 @@ export default function KarakNetworkGuidePage() {
           <h1 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Karak Network Guide 2026: Universal Restaking for Any Asset, Any Chain
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Karak is the second-largest restaking protocol with over $1 billion in TVL — and it&apos;s challenging EigenLayer
             by doing something neither EigenLayer nor Symbiotic can: letting you restake virtually any asset across any

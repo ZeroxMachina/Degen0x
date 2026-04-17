@@ -14,6 +14,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ──────────────────────────────────────────────────────────────
@@ -353,6 +355,8 @@ export default function BitcoinLSTGuidePage() {
           >
             Bitcoin Liquid Staking Tokens: The Complete 2026 Guide
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 18, color: "#c9d1d9", lineHeight: 1.7, marginBottom: 8 }}>
             Your BTC can work while you hold it — without bridges, without wrapping, without giving up
             custody.

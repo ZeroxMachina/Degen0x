@@ -6,6 +6,8 @@ import StructuredData from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -102,6 +104,8 @@ export default function EthereumBlobSpaceGuide() {
             Ethereum Blob Space & Data Availability Economics Guide
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '15px' }}>
             Master EIP-4844, blob gas economics, and how data availability scaling enables cheap Layer 2 transactions
           </p>

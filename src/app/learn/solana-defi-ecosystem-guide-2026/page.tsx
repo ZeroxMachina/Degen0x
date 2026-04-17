@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -112,6 +114,8 @@ export default function SolanaDeFiGuide() {
             <h1 className="text-4xl font-bold mt-2 mb-4 bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent">
               Solana DeFi Ecosystem Guide 2026
             </h1>
+            <ReadingTime />
+            <AutoTOC />
             <p className="text-[#8b949e] text-lg">
               Complete guide to Jupiter DEX, Raydium AMM, Magic Eden, and key DeFi protocols.
             </p>

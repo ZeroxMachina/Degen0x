@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -196,6 +198,8 @@ export default function ModularBlockchainStackGuidePage() {
           >
             The Modular Blockchain Stack in 2026: Data Availability, Execution & Settlement
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             Monolithic blockchains do everything on one chain. Modular blockchains split the work across specialized layers — and in 2026, this architecture is becoming the default for new crypto infrastructure. Here&apos;s how the stack fits together, which projects are leading each layer, and what it means for you.
           </p>

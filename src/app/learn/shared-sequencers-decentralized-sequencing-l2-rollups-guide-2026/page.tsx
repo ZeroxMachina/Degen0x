@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -251,6 +253,8 @@ export default function SharedSequencersGuide() {
 
           <h1 style={h1Style}>Shared Sequencers & Decentralized Sequencing for L2 Rollups</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Centralized sequencers are one of the biggest unsolved problems in rollup infrastructure. Every major L2 (Arbitrum, Optimism, Base, zkSync, Starknet) currently relies on a single sequencer entity that can censor transactions, extract MEV, and create single points of failure. Shared sequencers and decentralized sequencing approaches promise to solve this. This guide explores how Espresso, Radius, and based rollups are enabling censorship-resistant, composable L2 ecosystems.
           </p>

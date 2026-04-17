@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Plume Network: RWA Layer 2 Guide 2026 | Degen0x',
@@ -76,6 +78,8 @@ export default function PlumeNetworkRwaL2Guide2026() {
       <header className="mb-8">
         <p className="text-sm uppercase tracking-wider text-emerald-400">Learn · RWA · Layer 2</p>
         <h1 className="mt-2 text-4xl font-bold">Plume Network: RWA Layer 2 Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="mt-4 text-lg text-neutral-300">
           Plume is a modular EVM Layer 2 purpose-built for real-world assets. Instead of bolting
           compliance onto a general-purpose chain, Plume ships tokenization, KYC, and transfer

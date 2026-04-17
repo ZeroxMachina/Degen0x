@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -317,6 +319,8 @@ export default function CryptoOTCTradingDarkPoolsPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Crypto OTC Trading & Dark Pools Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>
           Published: April 3, 2026 | Reading Time: 15 min
         </div>

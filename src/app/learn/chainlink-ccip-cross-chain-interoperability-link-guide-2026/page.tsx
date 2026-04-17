@@ -6,6 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -155,6 +157,8 @@ export default function ChainlinkCCIPPage() {
 
         <h1 style={h1Style}>Chainlink CCIP: Cross-Chain Interoperability & LINK Token Guide</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.05rem', color: '#d1d9e0', marginTop: '20px', marginBottom: '20px' }}>
           Chainlink&apos;s Cross-Chain Interoperability Protocol (CCIP) is reshaping how value and data move across blockchain networks. With a three-layer security architecture, 60+ connected blockchains, and $33.6B in secured cross-chain tokens, CCIP represents the infrastructure backbone of multi-chain finance. This guide explores how CCIP works, the LINK token ecosystem, institutional adoption through SWIFT partnerships, and the competitive landscape.
         </p>

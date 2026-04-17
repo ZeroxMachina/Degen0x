@@ -3,6 +3,8 @@ import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -329,6 +331,8 @@ export default function SeiNetworkGuide() {
 
           <h1 style={h1Style}>Sei Network Guide 2026: The Parallelized EVM Blockchain Built for Speed</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={pStyle}>
             Sei Network is the first parallelized EVM blockchain, engineered for high-frequency trading, gaming, and AI applications. With 400ms finality, optimistic parallelization, and the revolutionary Giga upgrade targeting 200K TPS, Sei combines Ethereum Virtual Machine compatibility with unmatched throughput. The ecosystem hosts 1M+ daily active users, 32M+ daily transactions, and $1.1B+ in DeFi TVL — all while maintaining the security and developer experience EVM builders expect. This guide covers Sei&apos;s cutting-edge technology, the DeFi protocols powering its ecosystem, institutional partnerships with Xiaomi and BlackRock, and the tokenomics driving its growth.
           </p>

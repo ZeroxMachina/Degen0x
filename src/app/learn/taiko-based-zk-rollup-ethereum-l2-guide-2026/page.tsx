@@ -6,6 +6,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -202,6 +204,8 @@ export default function TaikoBasedZkRollupEthereumL2Guide2026() {
 
           <h1 style={h1Style}>Taiko: Based ZK-Rollup Ethereum L2 - Complete Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Taiko launched mainnet in May 2024 as a zero-knowledge rollup using innovative &quot;based sequencing&quot; architecture. Instead of relying on a centralized sequencer, Taiko&apos;s L2 blocks are proposed by Ethereum L1 validators directly, inheriting Ethereum&apos;s full security and censorship resistance. By April 2026, Taiko has captured mindshare as the most technically ambitious L2, blending ZK proofs with based sequencing for unprecedented security. The TAIKO token trades at $0.116 with $115M FDV. This guide covers based sequencing mechanics, the Gwyneth vision (next-gen preconfirmations), tokenomics, risks, and how Taiko compares to Scroll, zkSync Era, and Arbitrum. For developers and users seeking the most secure L2, Taiko is the frontier.
           </p>

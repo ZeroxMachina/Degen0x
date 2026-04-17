@@ -3,6 +3,8 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -277,6 +279,8 @@ export default function RestakingWarsGuide() {
 
           <h1 style={h1Style}>Restaking Wars 2026: EigenLayer vs Symbiotic vs Karak</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Three protocols are battling for dominance in the shared security economy. EigenLayer leads with $15.258B TVL and 93.9% market share, but Symbiotic is disrupting with permissionless AVS design, and Karak is expanding multi-chain. This guide compares all three: architecture, tokenomics, risks, and which fits your strategy.
           </p>

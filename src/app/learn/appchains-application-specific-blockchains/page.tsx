@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -200,6 +202,8 @@ export default function AppChainsApplicationSpecificBlockchains() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>App-Chains Explained: Application-Specific Blockchains</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Application-specific blockchains dedicate all resources to single apps. dYdX v4 processes 1,000+ trades/sec. Cosmos and Arbitrum Orbit enable custom chains with optimized tokenomics, fees, and throughput.
           </p>

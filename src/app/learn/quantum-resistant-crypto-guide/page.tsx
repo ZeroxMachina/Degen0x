@@ -6,6 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -114,6 +116,8 @@ export default function QuantumResistantCryptoGuide() {
           Quantum-Resistant Crypto: Protecting Your Holdings in 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Subtitle */}
         <p className="text-xl text-[#8b949e] mb-8">
           Understanding the quantum threat to your crypto and how to future-proof your portfolio before Q-Day arrives.

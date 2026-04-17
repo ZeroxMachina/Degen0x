@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -244,6 +246,8 @@ export default function CryptoPointsPage() {
 
       <h1 style={h1Style}>Crypto Points Programs &amp; Pre-Token Loyalty Systems Guide 2026</h1>
 
+      <ReadingTime />
+      <AutoTOC />
       <p style={paragraphStyle}>
         Crypto points programs have evolved into the de facto standard for Web3 loyalty systems.
         Once users anticipated retroactive airdrops; now they chase points like in traditional

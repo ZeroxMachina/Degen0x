@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -78,6 +80,8 @@ export default function TonBlockchainGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, background: "linear-gradient(135deg, #6366f1, #06b6d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             TON Blockchain & Telegram Mini Apps Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             TON (The Open Network) is the exclusive blockchain powering Telegram&apos;s Mini App ecosystem — giving it direct access to over 950 million monthly active users. No other blockchain in crypto has this distribution advantage. This guide covers how TON works, its DeFi ecosystem, top apps, and what makes it one of the most watched Layer 1 networks heading into 2026.
           </p>

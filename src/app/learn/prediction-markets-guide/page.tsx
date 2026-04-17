@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -36,6 +38,8 @@ export default function PredictionMarketsGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#79c0ff] bg-clip-text text-transparent">
         Prediction Markets
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[var(--color-text-secondary)] mb-8">
         The Complete Guide to Trading on Real-World Events
       </p>

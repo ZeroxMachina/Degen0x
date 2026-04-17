@@ -2,6 +2,8 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 const S = { bg:"#0d1117",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"Cross-Chain Bridges",href:"/learn/cross-chain-bridges-guide"}];
 const BRIDGES = [
@@ -26,6 +28,8 @@ export default function CrossChainBridgesGuidePage() {
             <span style={{fontSize:12,color:S.text2}}>Updated March 14, 2026 · 15 min read · +125 XP</span>
           </div>
           <h1 style={{fontSize:"2.4rem",fontWeight:900,lineHeight:1.2,marginBottom:20}}>Cross-Chain Bridges Guide 2026: How They Work, Top Protocols & Security Risks</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{fontSize:17,color:S.text2,lineHeight:1.75}}>Bridges are the highways connecting blockchains — moving assets and data between Ethereum, Solana, Arbitrum, Base, and 50+ other chains. They're also the #1 target for hackers: over $2.5B lost to bridge exploits. This guide explains bridge mechanics, the safest protocols, and how to move assets without getting rekt.</p>
         </header>
         <section style={{marginBottom:40}}>

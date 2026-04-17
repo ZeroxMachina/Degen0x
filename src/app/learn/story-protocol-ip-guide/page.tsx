@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -163,6 +165,8 @@ export default function StoryProtocolGuidePage() {
             Story Protocol: The IP Blockchain Explained
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Story Protocol is the first Layer 1 blockchain purpose-built for intellectual property management. Built 100% EVM-compatible with a novel Proof-of-Creativity Protocol, Story enables creators, AI companies, and enterprises to register, license, and monetize IP on-chain. In the age of AI training data economies and decentralized creator platforms, Story Protocol is betting that the internet needs a public ledger for IP. This guide breaks down the protocol, tokenomics, ecosystem, and investment risks.
           </p>

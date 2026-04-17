@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -195,6 +197,8 @@ export default function RWATokenizationGuide() {
 
           <h1 style={h1Style}>RWA Tokenization Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Real-World Assets are flooding onto blockchains. In March 2026, on-chain RWA crossed $12 billion—up 140% from just 15 months ago. BlackRock&apos;s BUIDL fund alone manages $1.9 billion in tokenized U.S. Treasuries. This guide breaks down what&apos;s happening, why institutions are moving fast, and what you need to know to navigate this landscape.
           </p>

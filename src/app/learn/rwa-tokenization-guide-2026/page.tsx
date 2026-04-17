@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -37,6 +39,8 @@ export default function RWATokenizationGuidePage() {
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "var(--color-text)", lineHeight: "1.2" }}>
           RWA Tokenization 2026: The Complete Guide
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>
           Real-world assets — from US Treasuries to real estate to private credit — are going on-chain at an accelerating pace. Here&apos;s everything you need to know about the RWA megatrend.
         </p>

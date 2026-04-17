@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "#0d1117", border: "#30363d", text: "#e6edf3", text2: "#8b949e",
@@ -42,6 +44,8 @@ export default function AITokensAgentsPage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             AI Tokens & Crypto Agents 2026: Bittensor, ai16z, Virtuals & the DeFAI Revolution
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             The convergence of AI and blockchain is creating a new asset class: AI tokens powering decentralised compute,
             autonomous agents managing DeFi positions, and on-chain AI marketplaces. This guide breaks down every major

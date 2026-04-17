@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -150,6 +152,8 @@ export default function VerkleTreesHegotaGuide() {
               Ethereum Verkle Trees & The Hegota Upgrade
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p
               style={{
                 fontSize: "1.125rem",

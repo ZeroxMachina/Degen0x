@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -221,6 +223,8 @@ export default function IntentBasedTradingGuide() {
 
           <h1 style={h1Style}>Intent-Based Trading Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Intent-based trading is the most significant architectural change to decentralized exchanges since Automated Market Makers (AMMs) replaced order books. Instead of immediately executing swaps on a liquidity pool, you sign an "intent to trade" and professional solvers compete in auctions to fulfill it optimally. By April 2026, CoW Protocol, UniswapX, and 1inch Fusion collectively handle billions in monthly volume, eliminating MEV and offering superior execution compared to traditional DEXs. This guide explains how intents work, compares the leading protocols, and walks you through the risks and opportunities of intent-based trading.
           </p>

@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -218,6 +220,8 @@ export default function SmartWalletsAccountAbstractionGuide() {
 
           <h1 style={h1Style}>Smart Wallets &amp; Account Abstraction Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Smart wallets are replacing seed phrases with passkeys, gasless transactions, and social recovery. In 2026, 40M+ smart accounts now live on Ethereum and L2s. Account abstraction unlocks new UX—no more losing funds to one bad click. This guide breaks down what&apos;s happening, how it works, and which smart wallet fits your needs.
           </p>

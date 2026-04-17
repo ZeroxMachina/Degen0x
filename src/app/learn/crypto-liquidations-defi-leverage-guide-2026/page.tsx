@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -325,6 +327,8 @@ export default function CryptoLiquidationsPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Crypto Liquidations in DeFi & Leverage Trading Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>
           Published: April 4, 2026 | Reading Time: 16 min
         </div>

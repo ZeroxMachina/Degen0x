@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -299,6 +301,8 @@ export default function CryptoPredictionMarketsGuide() {
 
       <header style={headerStyle}>
         <h1 style={h1Style}>Crypto Prediction Markets Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <div>
           <span style={badgeStyle}>Trading</span>
           <span style={badgeStyle}>Intermediate</span>

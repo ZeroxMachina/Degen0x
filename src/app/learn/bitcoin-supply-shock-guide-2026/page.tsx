@@ -8,6 +8,8 @@ import StructuredData from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -165,6 +167,8 @@ export default function BitcoinSupplyShockGuidePage() {
             Bitcoin Supply Shock 2026: Who Holds All the BTC?
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: 1.7 }}>
             Exchange reserves just hit 7-year lows. ETFs custody 1.3 million BTC. An estimated 3.7 million coins are lost
             forever. With 79% of circulating supply locked up by long-term holders, the effective &ldquo;liquid&rdquo;

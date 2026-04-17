@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -103,6 +105,8 @@ export default function BitVMProgrammabilityGuide() {
             Bitcoin BitVM & Programmability Guide
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           {/* Meta Info */}
           <div className="text-[#8b949e] text-sm">
             <span>Updated March 2026</span>

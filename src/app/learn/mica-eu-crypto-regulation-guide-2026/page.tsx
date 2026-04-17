@@ -4,6 +4,8 @@ import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -264,6 +266,8 @@ export default function MiCAGuide() {
             MiCA: The EU's Crypto Regulation Game-Changer
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ ...pStyle, fontSize: '16px', marginBottom: '24px' }}>
             MiCA (Markets in Crypto-Assets) is the European Union's comprehensive
             regulatory framework for crypto-assets and stablecoins. Fully effective

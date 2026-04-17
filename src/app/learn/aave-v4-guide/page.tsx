@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AaveV4SpokesExplorer from "@/components/AaveV4SpokesExplorer";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -132,6 +134,8 @@ export default function AaveV4GuidePage() {
             Aave v4: The Complete Guide to DeFi&apos;s Biggest Lending Upgrade in 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 18, color: "#8b949e", lineHeight: 1.6, marginBottom: 12 }}>
             Aave v4 rewires the largest lending protocol in DeFi from the ground up. Here&apos;s exactly what changes, what stays the same, and what it means for your deposits.
           </p>

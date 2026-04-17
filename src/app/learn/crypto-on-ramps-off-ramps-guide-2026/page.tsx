@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -167,6 +169,8 @@ export default function CryptoOnRampsGuide() {
           >
             Crypto On-Ramps & Off-Ramps: The Complete Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             Whether you&apos;re buying your first Bitcoin or cashing out DeFi profits, the on-ramp and
             off-ramp you choose determines how much you pay in fees, how fast you get your money, and

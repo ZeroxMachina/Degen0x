@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -338,6 +340,8 @@ export default function FHECryptoGuidePage() {
         {/* Main Title */}
         <h1 style={h1Style}>Fully Homomorphic Encryption (FHE) in Crypto Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>Updated: April 2, 2026 | Reading Time: 13 min</div>
 
         <p style={pStyle}>

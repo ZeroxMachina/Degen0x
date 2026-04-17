@@ -4,6 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -242,6 +244,8 @@ export default function BasedRollupsGuide() {
 
           <h1 style={h1Style}>Based Rollups & Ethereum L1 Sequencing</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: "#8b949e", marginBottom: 8 }}>
             Published on April 3, 2026
           </p>

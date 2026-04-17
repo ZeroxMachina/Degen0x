@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -207,6 +209,8 @@ export default function EthereumGasFeesHowToSave() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Ethereum Gas Fees: How to Save Money 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master Ethereum gas: understand EIP-1559 base fees and priority fees. Save 90% of gas costs using Layer 2 networks ($0.01-0.50 vs $2-50 on mainnet). Time transactions, batch swaps, and choose the right network.
           </p>

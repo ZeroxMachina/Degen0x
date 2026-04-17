@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -320,6 +322,8 @@ export default function BlockchainGamingGameFiPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>Blockchain Gaming & GameFi Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>
           Master the shift to play-to-own: explore AAA blockchain games, learn how gaming NFTs work, understand Layer-2 infrastructure, and discover how AI is reshaping Web3 gaming.
         </p>

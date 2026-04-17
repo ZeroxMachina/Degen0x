@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'BitVM Guide 2026: Bitcoin Smart Contracts | degen0x',
@@ -330,6 +332,8 @@ export default function BitVMPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>BitVM Guide 2026: Bitcoin Smart Contracts</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>
           Master Bitcoin programmability: learn how BitVM enables Turing-complete smart contracts, explore fraud proofs, OP_CAT, and major L2s like Bitlayer and Citrea.
         </p>

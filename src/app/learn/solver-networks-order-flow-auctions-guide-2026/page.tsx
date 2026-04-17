@@ -9,6 +9,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -145,6 +147,8 @@ export default function SolverNetworksGuide() {
             >
               Solver Networks & Order Flow Auctions Guide 2026
             </h1>
+            <ReadingTime />
+            <AutoTOC />
             <p
               style={{
                 fontSize: "1.125rem",

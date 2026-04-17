@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -142,6 +144,8 @@ export default function CryptoDCAPage() {
           <span style={{ ...badgeStyle, background: '#10b981', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>Crypto DCA Strategy 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>Master dollar-cost averaging: mechanics, optimal intervals, vs lump-sum investing, automation tools, tax implications.</p>
           <div style={{ display: 'flex', gap: 24, fontSize: 14, color: '#8b949e' }}>
             <span>Updated: April 10, 2026</span>

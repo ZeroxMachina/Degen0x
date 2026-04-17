@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -255,6 +257,8 @@ export default function SmartMoneyOnchainSignalsGuide2026() {
             <span style={S.badge("#a855f720", "#a855f7", "#a855f740")}>Advanced</span>
           </div>
           <h1 style={S.h1}>Smart Money On-Chain Signals Guide 2026: Track Whale &amp; Institutional Flows</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={S.subtitle}>
             The blockchain is a public ledger — which means you can see exactly what the biggest wallets in crypto are doing. Smart money is accumulating right now while retail panics. Here&apos;s how to read their playbook.
           </p>

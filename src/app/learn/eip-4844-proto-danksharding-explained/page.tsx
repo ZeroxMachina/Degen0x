@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -203,6 +205,8 @@ export default function EIP4844ProtoDankshardinExplained() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>EIP-4844 Proto-Danksharding Explained</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Understand blob transactions, ephemeral data, KZG commitments, and how EIP-4844 reduced L2 fees by 95% in the Dencun upgrade (March 2024). Learn the path toward full Danksharding and future Ethereum scaling.
           </p>

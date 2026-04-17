@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -216,6 +218,8 @@ export default function StablecoinTypesComparison() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           </div>
           <h1 style={h1Style}>Stablecoin Types Comparison 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Stablecoins are the nervous system of DeFi. They represent $180B+ market cap (April 2026). But not all stablecoins are created equal. USDT ($110B) and USDC ($35B) dominate, but they face competition from crypto-backed DAI ($4.2B), hybrid FRAX ($350M), and emerging RWA-backed tokens. Each has different collateral models, peg mechanisms, and regulatory treatment. This guide compares all stablecoin types, explains how they maintain peg, and covers depegging risks.
           </p>

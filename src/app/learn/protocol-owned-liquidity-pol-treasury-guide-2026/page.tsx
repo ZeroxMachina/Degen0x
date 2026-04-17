@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -237,6 +239,8 @@ export default function ProtocolOwnedLiquidityGuide() {
 
           <h1 style={h1Style}>Protocol-Owned Liquidity &amp; DeFi Treasury Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Protocol-owned liquidity (POL) represents a fundamental shift in how DeFi protocols source and manage liquidity. Instead of renting it from mercenary liquidity providers through yield farming incentives, protocols now own their liquidity positions outright—creating permanent, sustainable trading pairs. From OlympusDAO&apos;s pioneering bonding model to Berachain&apos;s consensus-level Proof of Liquidity, POL has evolved from a single DAO experiment into an industry standard. This guide explains the mechanics, major models, treasury strategies, and the risks you need to understand before engaging with POL protocols.
           </p>

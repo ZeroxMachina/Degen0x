@@ -5,6 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -252,6 +254,8 @@ export default function BitcoinMiningGuide() {
 
           <h1 style={h1Style}>Bitcoin Mining &amp; Proof of Work Economics Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Bitcoin mining secures the network through proof of work consensus by validating transactions and creating new blocks. This comprehensive guide explores how mining works, examines the 2024 halving\&apos;s impact on economics, traces hardware evolution from CPUs to ASICs, analyzes profitability dynamics, profiles the largest miners (Marathon, Riot, CleanSpark), explains the pivot to AI/HPC contracts, and forecasts the 2028 halving. Whether you\&apos;re a miner, investor, or enthusiast, understand the forces reshaping Bitcoin\&apos;s mining landscape in 2026.
           </p>

@@ -6,6 +6,8 @@ import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Hyperlane Guide 2026 — Permissionless Interop & HYPER",
@@ -142,6 +144,8 @@ export default function HyperlaneGuide() {
           Hyperlane: Permissionless Interoperability Across 150+ Chains
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Opening Hook */}
         <p
           style={{

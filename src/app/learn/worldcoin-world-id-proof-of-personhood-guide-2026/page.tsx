@@ -4,6 +4,8 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -195,6 +197,8 @@ export default function WorldIDProofOfPersonhoodGuide() {
           World ID & Proof of Personhood: Complete Guide 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.125rem', color: '#8b949e', marginBottom: '2rem' }}>
           Master Worldcoin, World ID verification protocols, biometric Orbs, zero-knowledge proofs, WLD tokenomics, World Chain, AgentKit integration, and the evolving landscape of decentralized identity verification.
         </p>

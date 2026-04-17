@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -221,6 +223,8 @@ export default function HowToTransferCryptoBetweenWallets() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>How to Transfer Crypto Between Wallets 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Cryptocurrency transfers are irreversible. One wrong step—selecting the wrong network, mis-typing an address, forgetting a memo tag—means permanently lost funds. By April 2026, billions in crypto have been lost to transfer mistakes. This guide covers: step-by-step transfer instructions, network selection (ERC-20 vs BEP-20 vs TRC-20 vs SPL), address validation tricks, gas fee optimization across 10+ blockchains, special cases (XRP memo tags), and recovery strategies if you make a mistake. Learn how to safely move Bitcoin, Ethereum, USDC, and 500+ tokens between wallets without losing a cent.
           </p>

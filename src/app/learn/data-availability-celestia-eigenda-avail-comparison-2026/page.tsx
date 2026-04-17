@@ -7,6 +7,8 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Celestia vs EigenDA vs Avail: DA Layer Comparison 2026",
@@ -192,6 +194,8 @@ export default function DataAvailabilityComparisonPage() {
           Celestia vs EigenDA vs Avail
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '18px', color: '#a1aec4', marginBottom: '24px', lineHeight: '1.6' }}>
           Data availability (DA) is the final frontier of blockchain scalability. As rollups dominate Ethereum's layer-2 ecosystem, the choice of DA layer has become critical to project success. This guide compares Celestia, EigenDA, and Avail—the three leading DA solutions of 2026—across architecture, throughput, security models, costs, and ecosystem maturity to help you choose the right infrastructure.
         </p>

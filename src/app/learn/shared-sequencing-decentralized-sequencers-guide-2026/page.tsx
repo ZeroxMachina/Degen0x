@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -179,6 +181,8 @@ export default function SharedSequencingGuide() {
           <h1 style={s.h1}>
             Shared Sequencing &amp; Decentralized Sequencers Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={s.sub}>
             Most Ethereum rollups rely on a single centralized sequencer — a critical bottleneck that
             undermines the decentralization ethos of crypto. Shared sequencing networks like Espresso

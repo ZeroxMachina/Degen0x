@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -326,6 +328,8 @@ export default function SolanaFiredancerGuidePage() {
           }}>
             Solana Firedancer Validator Client Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             Solana's validator ecosystem has long relied on Agave, the reference client. In 2025, Jump Crypto launched Firedancer—a brand-new validator client written in C with a tile-based architecture capable of processing 1M+ TPS. Firedancer now runs on 20%+ of staked SOL and is changing how validators operate. This guide explains Firedancer's architecture, how it compares to Agave, why client diversity matters, the financial impact on staking rewards, and what Frankendancer was. If you run a validator, delegate to one, or care about Solana's future performance, this guide is essential.
           </p>

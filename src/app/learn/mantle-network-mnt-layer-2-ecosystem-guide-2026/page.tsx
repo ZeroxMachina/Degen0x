@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Mantle Network Guide 2026 — MNT Token & L2',
@@ -303,6 +305,8 @@ export default function MantleNetworkGuide() {
         {/* Main Title */}
         <h1 style={h1Style}>Mantle Network Guide 2026 — MNT Token & L2 Ecosystem</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Opening Hook */}
         <p style={pStyle}>
           Mantle Network is one of the fastest-growing Ethereum Layer 2 solutions, boasting $2.8B in total value locked (TVL) as of Q1 2026 with a remarkable 340% year-over-year growth trajectory. Originally spun out from BitDAO, Mantle combines optimized transaction throughput, a unique staking ecosystem centered around mETH and cmETH, and strategic institutional partnerships to create a compelling alternative to larger L2 competitors. This guide covers everything from tokenomics to the technical architecture, helping you understand Mantle&apos;s positioning in the evolving L2 landscape.

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -187,6 +189,8 @@ export default function Page() {
     >
             Crypto Prime Brokerage: Institutional Trading Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <div style={{ display: 'flex', gap: 24, fontSize: '14px', color: '#8b949e' }}>
             <span>Updated: April 4, 2026</span>
             <span>Reading time: 14 min</span>

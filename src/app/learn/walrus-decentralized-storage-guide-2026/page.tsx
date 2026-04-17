@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -164,6 +166,8 @@ export default function WalrusStorageGuide() {
           }}>
             Walrus (WAL) Guide 2026: Decentralized Storage on Sui With Erasure Coding
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             Walrus is a decentralized storage and data availability protocol built on Sui that uses advanced
             Red Stuff erasure coding to store large files with only 4.5x replication — achieving ~100x lower

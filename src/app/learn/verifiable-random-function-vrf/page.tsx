@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -203,6 +205,8 @@ export default function VerifiableRandomFunctionVRF() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Verifiable Random Functions (VRF) Explained</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master on-chain randomness: Chainlink VRF v2.5 (50M+ annual fees), API3 QRNG, Pyth Entropy. Learn how gaming applications use VRF for fair loot boxes, PvP matching, and NFT trait generation. Understand commit-reveal schemes and randomness optimization.
           </p>

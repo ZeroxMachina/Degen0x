@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -392,6 +394,8 @@ export default function OptimismSuperchanPage() {
           {/* Title */}
           <h1 style={titleStyle}>Optimism Superchain &amp; OP Stack Ecosystem Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           {/* Description */}
           <p style={descriptionStyle}>
             Explore the Optimism Superchain, a coordinated network of 34+ OP Stack-based L2 chains powering 69.9% of all L2 fees. Learn how the modular OP Stack works, discover major chains like Base and Unichain, understand the upcoming Interoperability Layer, and get started with this thriving ecosystem.

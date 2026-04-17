@@ -3,6 +3,8 @@ import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -250,6 +252,8 @@ export default function TokenizedTreasuriesGuide() {
 
           <h1 style={h1Style}>Tokenized Treasuries &amp; T-Bills On-Chain Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Tokenized US Treasuries represent a convergence of traditional finance and decentralized technology. This comprehensive guide explores how on-chain T-bills work, examines the $11+ billion market driving adoption, compares leading products (BlackRock BUIDL, Circle USYC, Ondo USDY, Franklin Templeton BENJI), analyzes yield strategies and fee structures, explains DeFi collateral integration, profiles institutional adoption trends, and forecasts the future where yield-bearing treasuries become core to both TradFi and DeFi infrastructure. Whether you&apos;re seeking stable on-chain yield, exploring RWA opportunities, or evaluating institutional adoption, understand how tokenized treasuries are reshaping on-chain finance.
           </p>

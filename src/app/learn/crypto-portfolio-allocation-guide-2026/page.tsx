@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -218,6 +220,8 @@ export default function CryptoPortfolioAllocationGuide() {
           >
             Crypto Portfolio Allocation Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             How you allocate between Bitcoin, Ethereum, altcoins, and stablecoins matters more than which
             specific tokens you pick. This guide walks you through data-driven model portfolios for every

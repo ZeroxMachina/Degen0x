@@ -6,6 +6,8 @@ import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 const S = {
@@ -92,6 +94,8 @@ export default function DeFiInsuranceGuide() {
             <span style={{ backgroundColor: S.blue, color: "#000", padding: "0.4rem 0.8rem", borderRadius: "4px", fontSize: "0.85rem", fontWeight: "600" }}>Intermediate</span>
           </div>
           <h1 style={{ fontSize: "2.5rem", fontWeight: "700", marginBottom: "0.5rem" }}>DeFi Insurance Guide 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: "1.2rem", color: S.text2 }}>How to Protect Your Crypto from Hacks, Exploits & Depegs</p>
           <p style={{ color: S.text2, marginTop: "1rem", fontSize: "0.9rem" }}>Updated March 17, 2026 · 12 min read</p>
         </div>

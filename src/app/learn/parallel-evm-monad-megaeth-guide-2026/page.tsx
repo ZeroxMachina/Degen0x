@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -237,6 +239,8 @@ export default function ParallelEVMGuide() {
 
           <h1 style={h1Style}>Parallel EVM Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Parallel EVM execution represents a fundamental shift in blockchain architecture. By processing independent transactions simultaneously, parallel execution engines achieve 10-100x throughput improvements over sequential blockchains. Monad (L1, 10,000 TPS), MegaETH (L2, 100,000 TPS theoretical), and Sei v2 (L1, 28,300 TPS) are leading the real-time blockchain revolution. They maintain full EVM compatibility while enabling unprecedented performance. In April 2026, Monad&apos;s DeFi ecosystem (Kintsu with $17.5M TVL) and MegaETH&apos;s recent launch ($66M TVL) prove parallel execution is production-ready. This guide explains parallel execution mechanics, compares leading implementations, and shows you how to leverage these chains for next-generation applications.
           </p>

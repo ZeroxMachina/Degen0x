@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import { ArticleStructuredData, FAQStructuredData } from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -61,6 +63,8 @@ export default function CryptoOraclesGuidePage() {
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "var(--color-text)", lineHeight: "1.2" }}>
           Crypto Oracles Explained: Chainlink vs Pyth vs API3
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>
           Blockchain oracles are the invisible infrastructure that makes DeFi possible. Without them, smart contracts can&apos;t know the price of ETH, whether it&apos;s raining in Tokyo, or if a bond has matured. This guide breaks down how oracles work, compares the major players, and explains why this $10B+ sector matters for every crypto investor.
         </p>

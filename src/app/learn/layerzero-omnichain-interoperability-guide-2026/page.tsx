@@ -2,6 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -330,6 +332,8 @@ export default function LayerZeroProtocolPage() {
             <span style={pageStyles.badgeReading}>18 min read</span>
           </div>
           <h1 style={pageStyles.title}>LayerZero Omnichain Interoperability Protocol Guide</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={pageStyles.subtitle}>
             The decentralized protocol enabling trustless, cross-chain messaging across 120+ blockchains with configurable security.
           </p>

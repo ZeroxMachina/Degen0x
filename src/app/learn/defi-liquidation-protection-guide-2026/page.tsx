@@ -6,6 +6,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -116,6 +118,8 @@ export default function LiquidationProtectionPage() {
               DeFi Liquidation Protection Guide 2026
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p className="text-xl text-[#8b949e] mb-6">
               Master strategies, tools, and smart vaults to safeguard your DeFi positions. Discover how 382 users avoided $7.7M in liquidation losses.
             </p>

@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -145,6 +147,8 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
           Sui Private Transactions & Seal Framework: Protocol-Level Compliant Privacy
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '24px' }}>
           Blockchain's transparency is both its greatest strength and its biggest adoption barrier. Every transfer, every swap, every DeFi position you open is permanently visible to anyone who looks. Sui Network is tackling this head-on with a 2026 protocol upgrade that embeds private transactions directly at the protocol level — not as an optional overlay, but as a core primitive. Combined with the Seal framework for programmable secrets management, Sui is building what Mysten Labs co-founder Adeniyi Abiodun calls 'compliant privacy': the ability to keep your financial activity confidential while still proving regulatory compliance through zero-knowledge proofs. With 866 TPS already demonstrated and institutional interest mounting, Sui's privacy upgrade could reshape the conversation about what's possible when you combine speed, scale, and confidentiality on a single chain.
         </p>

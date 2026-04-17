@@ -6,6 +6,8 @@ import { SITE_URL } from "@/lib/constants";
 import Hip3FundingCalculator from "@/components/Hip3FundingCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 const PAGE_URL = `${SITE_URL}/learn/hyperliquid-hip3-tokenized-futures-guide`;
@@ -145,6 +147,8 @@ export default function HyperliquidHip3TokenizedFuturesGuidePage() {
           }}>
             Hyperliquid HIP-3: How to Trade Oil, Stocks &amp; Commodities On-Chain in 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 17, lineHeight: 1.7, marginBottom: 12 }}>
             On March 10, 2026, Hyperliquid's permissionless HIP-3 futures market hit $1.2 billion in open interest — with oil and equity futures outpacing most crypto pairs. Here's everything you need to know about trading real-world assets 24/7, without a broker, without KYC, directly on-chain.
           </p>

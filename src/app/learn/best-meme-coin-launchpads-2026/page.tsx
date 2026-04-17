@@ -10,6 +10,8 @@ import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -124,6 +126,8 @@ export default function BestMemeCoinLaunchpads2026() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#f472b6] to-[#a78bfa] bg-clip-text text-transparent">
         Best Meme Coin Launchpads 2026
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         Pump.fun's monopoly is over. Here's every major launchpad, ranked by fees, features, and where the volume actually is.
       </p>

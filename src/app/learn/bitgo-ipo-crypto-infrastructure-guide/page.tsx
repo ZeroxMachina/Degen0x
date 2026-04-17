@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -76,6 +78,8 @@ export default function BitGoIPOGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             BitGo IPO Guide 2026: What the First Crypto Custody IPO Means for Institutional Adoption
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             On January 22, 2026, BitGo became the first major cryptocurrency custody and infrastructure firm to go public, launching on the NYSE under ticker BTGO. The company raised $212.8 million at $18 per share, valuing it at $2.08 billion. This milestone signals a critical moment: crypto infrastructure is maturing from a speculative sector into a core institutional business. This guide breaks down BitGo&apos;s business model, financials, competitive landscape, and what the IPO means for the future of digital asset custody.
           </p>

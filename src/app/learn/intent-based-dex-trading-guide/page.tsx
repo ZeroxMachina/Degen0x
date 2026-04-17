@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -202,6 +204,8 @@ export default function IntentBasedDexTradingGuidePage() {
           }}>
             Intent-Based DEX Trading: How Solvers Get You Better Prices in 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             The biggest architectural shift in DeFi since AMMs replaced order books is already here.
             Intent-based trading lets you say <em>&ldquo;I want to swap 1 ETH for the most USDC

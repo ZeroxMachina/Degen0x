@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -184,6 +186,8 @@ export default function DecentralizedGPUComputeGuide() {
 
           <h1 style={h1Style}>Decentralized GPU Compute Networks: Render, Akash &amp; io.net Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '16px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.7' }}>
             Decentralized GPU compute networks are blockchain-powered marketplaces that replace centralized cloud providers like AWS and Azure. Instead of renting GPUs from Amazon or Microsoft, users buy compute from a distributed network of GPU providers, paying with crypto. Render Network powers 3D rendering and AI inference on Solana, Akash operates a Kubernetes-compatible cloud marketplace across multiple chains, and io.net aggregates consumer GPUs for AI training. These networks are part of DePIN (Decentralized Physical Infrastructure), a $19B+ sector tracking 250+ projects. In 2026, the shift is from speculative tokens to networks with real revenue: Render ($38M/month in January), Akash (80%+ utilization), and io.net ($20M+ annualized revenue). This guide explores how these networks work, their tokenomics, competitive advantages, and the vision of decentralized infrastructure replacing hyperscale clouds.
           </p>

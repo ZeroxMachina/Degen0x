@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -243,6 +245,8 @@ export default function HowToBuyBitcoin() {
 
           <h1 style={h1Style}>How to Buy Bitcoin Step by Step</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Whether you are a complete beginner or have never purchased cryptocurrency before, this comprehensive guide walks you through buying your first Bitcoin in 2026. We cover exchange selection, account verification, funding methods, placing your first order, and most importantly, securing your Bitcoin safely. By the end, you will understand the complete workflow and be ready to invest with confidence.
           </p>

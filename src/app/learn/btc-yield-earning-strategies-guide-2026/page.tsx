@@ -9,6 +9,8 @@ import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -145,6 +147,8 @@ export default function BTCYieldStrategiesGuidePage() {
           BTC Yield Strategies: How to Earn 3-8% APY on Your Bitcoin in 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p
           className="text-lg"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -90,6 +92,8 @@ export default function CryptoETFOptionsTradingGuidePage() {
             Crypto ETF Options Trading Guide 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             2026 marks a watershed moment for crypto options trading. With position limits removed across all major US exchanges and institutional access unlocked, crypto ETF options have exploded from niche products to mainstream trading vehicles. This comprehensive guide covers the regulatory shift, key ETFs, proven strategies, and how to execute trades that bridge traditional finance and digital assets.
           </p>

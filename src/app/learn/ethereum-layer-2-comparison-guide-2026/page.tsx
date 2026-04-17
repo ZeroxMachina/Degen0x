@@ -11,6 +11,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -149,6 +151,8 @@ export default function EthereumL2ComparisonGuidePage() {
           Ethereum Layer 2 Comparison 2026: Which Rollup Is Right for You?
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p
           className="text-lg"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}

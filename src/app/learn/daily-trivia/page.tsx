@@ -3,6 +3,8 @@ import DailyTrivia from "@/components/DailyTrivia";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -56,6 +58,8 @@ export default function DailyTriviaPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">
           Daily Crypto Trivia
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-[var(--color-text-secondary)] max-w-xl mx-auto text-lg">
           10 hand-crafted questions on Bitcoin, DeFi, NFTs, trading, and blockchain history.
           New quiz every day — build your streak!

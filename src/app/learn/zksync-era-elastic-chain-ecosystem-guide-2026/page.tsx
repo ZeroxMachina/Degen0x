@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -102,6 +104,8 @@ const page = () => {
           <h1 style={{ fontSize: "2.5rem", marginBottom: "16px", fontWeight: "700" }}>
             zkSync Era & Elastic Chain: ZK Scaling Mastery
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: "1.1rem", color: "#8b949e", lineHeight: "1.6" }}>
             Deep dive into zero-knowledge rollups and zkSync&apos;s revolutionary Elastic Chain architecture. Learn how ZK proofs enable 100-200x scaling while maintaining security, and discover institutional opportunities on custom chains.
           </p>

@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -154,6 +156,8 @@ export default function RaasGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Rollup-as-a-Service (RaaS) Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>
             RaaS platforms have transformed how teams launch custom blockchain rollups. Instead of spending months building infrastructure, you can now deploy a production-ready chain in days. We compare Conduit, Caldera, Gelato, and AltLayer—the leaders shaping the 2026 RaaS landscape.
           </p>

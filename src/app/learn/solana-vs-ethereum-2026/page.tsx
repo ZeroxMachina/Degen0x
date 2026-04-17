@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -45,6 +47,8 @@ export default function SolanaVsEthereumPage() {
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "var(--color-text)", lineHeight: "1.2" }}>
           Solana vs Ethereum 2026: Which Chain Actually Wins?
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>
           Two years ago Solana was written off. Today it is mounting the most serious challenge to Ethereum in years. Here is the real comparison.
         </p>

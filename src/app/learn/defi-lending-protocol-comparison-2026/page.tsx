@@ -7,6 +7,8 @@ import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -286,6 +288,8 @@ export default function DefiLendingComparison2026Page() {
 
           <h1 style={s.h1}>DeFi Lending Protocol Comparison 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={s.sub}>
             Aave V4, Morpho Blue, Compound V3, Fluid, and Spark — comprehensive rates, architecture,
             risks, TVL, and strategic guidance for 2026.

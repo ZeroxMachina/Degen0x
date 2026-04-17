@@ -6,6 +6,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -155,6 +157,8 @@ const RealYieldGuide = () => {
           Real Yield in DeFi: Sustainable vs Emission Yields
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p
           style={{
             fontSize: "18px",

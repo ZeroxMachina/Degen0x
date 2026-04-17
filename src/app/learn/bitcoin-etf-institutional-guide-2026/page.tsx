@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -197,6 +199,8 @@ export default function BitcoinEtfGuide() {
 
           <h1 style={h1Style}>Bitcoin ETF Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Bitcoin ETFs have become one of the most successful financial product launches in history. With $128 billion in assets under management, $65 billion in cumulative net inflows, and 38% institutional holdings, they&apos;ve fundamentally changed how traditional finance interacts with Bitcoin. This guide covers every Bitcoin ETF worth knowing, how institutional adoption is reshaping markets, and why ETF options are the next frontier.
           </p>

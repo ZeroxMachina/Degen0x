@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -259,6 +261,8 @@ export default function YieldAggregatorsVaultsGuide() {
 
           <h1 style={h1Style}>Crypto Yield Aggregators & DeFi Vaults Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Yield aggregators and DeFi vaults have become the backbone of crypto yield generation, automating complex strategies that once required manual daily management. Whether you&apos;re looking to earn passive income on stablecoins, optimize liquidity farming returns, or leverage advanced delta-neutral strategies, vaults handle the heavy lifting. This guide explains how the biggest platforms (Yearn Finance, Beefy Finance, Convex, Sommelier) work, the revolutionary ERC-4626 standard, emerging AI-powered optimization, real risks, and exactly how to start earning yields today.
           </p>

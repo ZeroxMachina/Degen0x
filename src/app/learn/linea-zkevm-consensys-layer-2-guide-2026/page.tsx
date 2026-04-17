@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -256,6 +258,8 @@ export default function LineaZkEVMGuide() {
 
           <h1 style={h1Style}>Linea zkEVM Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Linea is Consensys&apos;s Type 2 zkEVM Layer 2 for Ethereum, bringing zero-knowledge scaling to the EVM with native MetaMask integration. With $2B+ TVL, 100+ mGas/s throughput, and full Uniswap v4 support, Linea represents a paradigm shift in how Ethereum scales—combining the security of zero-knowledge proofs with the familiarity of Solidity development. This guide covers the technical architecture, ecosystem metrics, DeFi protocols, yield strategies, risks, and how to profit from Linea in 2026.
           </p>

@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -177,6 +179,8 @@ export default function ERC8183GuidePage() {
             ERC-8183 Guide 2026: The Agentic Commerce Standard Explained
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.6' }}>
             ERC-8183 is the Agentic Commerce Protocol—a framework for trustless transactions between AI agents. Co-developed by Ethereum Foundation and Virtuals Protocol, it addresses the $3M+ in unescrow agent-to-agent transactions occurring today. This comprehensive guide explains what ERC-8183 is, how jobs work, and why it's enabling the agent economy.
           </p>

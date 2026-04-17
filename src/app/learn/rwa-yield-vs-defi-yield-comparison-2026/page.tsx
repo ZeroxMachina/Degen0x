@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -227,6 +229,8 @@ export default function RWAVsDeFiYieldComparison() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #06b6d4, #d29922)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             RWA Yield vs DeFi Yield
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>
             Compare tokenized treasuries, private credit, and DeFi lending. Find where to earn the best risk-adjusted returns in 2026 with detailed yield analysis, tax implications, and portfolio allocation strategies.
           </p>

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -195,6 +197,8 @@ export default function DefiLoopingLeveragedYieldStrategiesGuide2026() {
 
           <h1 style={h1Style}>DeFi Looping & Leveraged Yield Strategies 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             DeFi looping is the riskiest and most rewarding yield strategy in 2026. By recursively borrowing and redepositing the same asset, you amplify your exposure to yield, points, and price appreciation. A $10K deposit can yield $100K+ exposure. But leverage cuts both ways: liquidations cascade in seconds when prices drop. This guide dissects looping mechanics, liquidation risks, top platforms (Loopscale, Zona, Contango), points farming strategies, and risk management. By April 2026, advanced traders generate 50-200% APY through looping while managing liquidation risk. For most users, looping is too risky—but understanding it reveals how DeFi&apos;s highest returns work.
           </p>

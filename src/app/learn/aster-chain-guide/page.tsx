@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -135,6 +137,8 @@ export default function AsterChainGuidePage() {
             Aster Chain Guide 2026: CZ&apos;s Privacy Perpetuals Layer 1
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 18, color: "#8b949e", lineHeight: 1.6, marginBottom: 12 }}>
             Aster Chain is a CZ-backed Layer-1 blockchain specializing in privacy-focused perpetual derivatives trading. Here&apos;s everything you need to know about architecture, tokenomics, and how to trade.
           </p>

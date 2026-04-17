@@ -11,6 +11,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -145,6 +147,8 @@ export default function OndoFinanceGuidePage() {
           Ondo Finance Guide 2026: Tokenized Treasuries &amp; Real-World Assets
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p
           className="text-lg"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}

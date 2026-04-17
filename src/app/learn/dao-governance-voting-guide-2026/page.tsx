@@ -5,6 +5,8 @@ import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import { ArticleStructuredData, FAQStructuredData } from "@/components/StructuredData";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "DAO Governance & On-Chain Voting Guide 2026: How DAOs Work",
@@ -132,6 +134,8 @@ export default function DAOGovernanceVotingGuide() {
             DAO Governance & On-Chain Voting Guide 2026: How Crypto Communities Make Decisions
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p
             style={{
               fontSize: '1.1rem',

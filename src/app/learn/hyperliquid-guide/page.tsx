@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -46,6 +48,8 @@ export default function HyperLiquidGuidePage() {
         >
           HyperLiquid: The Complete Guide for 2026
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p
           className="text-lg"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}

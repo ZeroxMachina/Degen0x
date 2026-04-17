@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -208,6 +210,8 @@ export default function BitcoinVsGoldComparisonGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Bitcoin vs Gold Comparison Guide 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Head-to-head comparison: Bitcoin (21M supply, $60K, 150% 1yr return) vs Gold ($2,400/oz, 200K tons above ground, 8% 1yr return). Supply, scarcity, returns, volatility, Sharpe ratio, and portability analyzed.
           </p>

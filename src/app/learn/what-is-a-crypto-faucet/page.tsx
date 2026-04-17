@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -204,6 +206,8 @@ export default function CryptoFaucetGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>What is a Crypto Faucet? Testnet & Mainnet Guide</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Discover crypto faucets: free test tokens for development, testnet funding, sybil prevention, and the rare mainnet faucets. Compare Sepolia, Goerli, Mumbai, Chainlink, and Alchemy.
           </p>

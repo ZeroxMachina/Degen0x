@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -216,6 +218,8 @@ export default function CryptoPortfolioAllocationGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Crypto Portfolio Allocation Strategies 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master portfolio construction: Conservative (70% BTC/ETH, 20% large-cap, 10% stables), Moderate (50/30/20), Aggressive (30/40/30). Learn rebalancing (time-based vs threshold), correlation analysis, barbell strategy, DeFi yield integration, and portfolio tracking with DeBank, Zapper, and spreadsheets.
           </p>

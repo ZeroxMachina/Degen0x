@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -165,6 +167,8 @@ export default function VirtualsProtocolGuide() {
           }}>
             Virtuals Protocol (VIRTUAL) Guide 2026: The AI Agent Launchpad Taking Crypto by Storm
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             Virtuals Protocol is a decentralized platform that lets anyone launch, tokenize, and co-own autonomous AI agents.
             Think of it as the launchpad for the agentic economy — where AI agents hold wallets, earn revenue, and have their

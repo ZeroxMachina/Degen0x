@@ -8,6 +8,8 @@ import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -171,6 +173,8 @@ export default function ERC7683GuidePage() {
             ERC-7683 Guide 2026: The Cross-Chain Intents Standard Explained
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.6' }}>
             ERC-7683 is the unified standard for cross-chain intents, co-authored by Uniswap Labs and Across Protocol. Instead of manually bridging assets between chains, users simply declare what they want and a competitive network of fillers races to fulfill that intent at the best price. This comprehensive guide explains what ERC-7683 is, how it works, and why it's reshaping cross-chain DeFi.
           </p>

@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -137,6 +139,8 @@ export default function RestakingComparisonPage() {
             Restaking Wars 2026: EigenLayer vs Symbiotic vs Karak — Complete Comparison
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: "18px", lineHeight: "1.6", color: "#c9d1d9", marginBottom: "24px" }}>
             The restaking landscape has exploded in 2025-2026. With $16.3B+ total TVL distributed across competing protocols, the question isn't whether to restake—it's which protocol aligns with your risk tolerance and asset preferences. This guide compares EigenLayer's dominant market position, Symbiotic's permissionless innovation, and Karak's multi-chain flexibility to help you make an informed decision.
           </p>

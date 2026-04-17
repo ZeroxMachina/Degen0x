@@ -8,6 +8,8 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -145,6 +147,8 @@ export default function SolanaDeveloperPlatformGuide() {
           Solana Developer Platform (SDP)
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-xl text-[#e6edf3] mb-6">
           The enterprise API toolkit for building tokenized finance applications on Solana. Now live with Mastercard, Worldpay, and Western Union.
         </p>

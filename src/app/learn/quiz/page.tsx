@@ -5,6 +5,8 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 interface Question {
   id: number;
@@ -352,6 +354,8 @@ export default function CryptoQuizPage() {
             <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
               Crypto Knowledge Quiz
             </h1>
+            <ReadingTime />
+            <AutoTOC />
             <p className="text-lg text-[var(--color-text-secondary)] mb-8 max-w-xl mx-auto">
               Test your crypto knowledge with 10 randomized questions. From Bitcoin basics to advanced DeFi — see how much you really know.
             </p>

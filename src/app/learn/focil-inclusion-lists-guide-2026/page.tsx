@@ -9,6 +9,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "FOCIL & Inclusion Lists on Ethereum Guide 2026 | Degen0x",
@@ -145,6 +147,8 @@ export default function FocilInclusionListsGuide() {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               FOCIL &amp; Inclusion Lists on Ethereum: The 2026 Guide
             </h1>
+            <ReadingTime />
+            <AutoTOC />
             <p className="text-lg text-[#8b949e] mb-10">
               How EIP-7805 forces builders to stop censoring your transactions &mdash; without
               breaking MEV-Boost, PBS, or the roadmap Ethereum is already on.

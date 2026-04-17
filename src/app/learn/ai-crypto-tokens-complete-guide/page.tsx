@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -207,6 +209,8 @@ export default function AICryptoTokensCompleteGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>AI Crypto Tokens Complete Guide 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Explore AI-powered blockchain tokens: Render ($3B, GPU compute), Fetch.ai ($2.5B, autonomous agents), Bittensor ($3.8B, machine learning), SingularityNET, Ocean Protocol, Akash. Market analysis, use cases, and investment risks.
           </p>

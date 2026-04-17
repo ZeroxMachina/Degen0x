@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -218,6 +220,8 @@ export default function MEVProtectionGuide() {
 
           <h1 style={h1Style}>MEV Protection Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Maximal Extractable Value (MEV) is the hidden cost of trading on blockchain. Validators and sequencers see your pending transactions in the mempool and extract profits by reordering, front-running, or sandwiching your trades. Historical sandwich attack losses exceed $809M over three years, with annual losses around $60M, though protection tools have reduced this sharply in 2025. Flashbots Protect has secured $27B+ in DEX volume. This guide explains MEV, attack types, and the full toolkit of protection strategies—from Flashbots to MEV-Share, MEVX, CoW Swap, and Uniswap X intent-based routing.
           </p>

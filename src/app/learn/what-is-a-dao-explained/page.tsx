@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -226,6 +228,8 @@ export default function WhatIsADAOExplained2026() {
 
           <h1 style={h1Style}>What Is a DAO? Decentralized Governance Explained</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             DAOs (Decentralized Autonomous Organizations) represent a fundamental shift in organizational governance. By April 2026, major DAOs control over $100 billion in combined treasury assets and protocol parameters. MakerDAO governs an $8B+ stablecoin system. Uniswap DAO controls the world&apos;s largest DEX ($13B TVL). Aave DAO manages the largest lending protocol ($15B TVL). This guide explores how DAOs work, governance token mechanics, voting strategies (Snapshot vs on-chain), real examples, treasury management, risks like whale voting and voter apathy, and tools for participation.
           </p>

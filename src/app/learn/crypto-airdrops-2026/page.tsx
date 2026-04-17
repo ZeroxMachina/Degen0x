@@ -5,6 +5,8 @@ import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -118,6 +120,8 @@ export default function AirdropsGuidePage() {
           <h1 style={{ fontSize: 38, fontWeight: 900, color: "var(--color-text, #e6edf3)", lineHeight: 1.2, marginBottom: 14 }}>
             Crypto Airdrops Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: "var(--color-text-secondary, #8b949e)", lineHeight: 1.7, maxWidth: 700 }}>
             How to find, qualify for, and safely claim free crypto tokens. From understanding airdrop mechanics to farming strategies, this is your complete playbook.
           </p>

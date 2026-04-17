@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -195,6 +197,8 @@ export default function OnchainAnalysisGuide() {
           Onchain Analysis & Smart Money Tracking Tools Guide 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Metadata Line */}
         <p
           style={{

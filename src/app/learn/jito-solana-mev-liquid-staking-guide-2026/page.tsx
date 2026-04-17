@@ -6,6 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Jito Protocol Guide 2026 — Solana MEV & Liquid Staking',
@@ -317,6 +319,8 @@ export default function JitoGuide() {
 
         <h1 style={h1Style}>Jito Protocol Guide 2026 — Solana MEV &amp; Liquid Staking</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>
           Jito Protocol has emerged as the dominant MEV infrastructure on Solana, powering validator economics, liquid staking rewards, and institutional adoption. With ~$2.92B TVL, 14.5M+ SOL staked, and 94% validator market share, Jito fundamentally shapes Solana&apos;s economic incentives. This comprehensive guide explores how Jito works, why it matters, and how to participate through JitoSOL liquid staking and JTO governance.
         </p>

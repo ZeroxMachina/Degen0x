@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -341,6 +343,8 @@ export default function AbstractChainGuide() {
       {/* Title */}
       <h1 style={h1Style}>Abstract Chain: Consumer-First ZK Rollup L2</h1>
 
+      <ReadingTime />
+      <AutoTOC />
       <p style={{ ...paragraphStyle, fontSize: '1.1rem', color: '#8b949e', marginBottom: '30px' }}>
         A comprehensive guide to Abstract Chain, the consumer-focused ZK rollup built on Ethereum by Igloo Inc. Learn how Abstract is bridging blockchain technology with mainstream gaming, social, and entertainment applications through native account abstraction and innovative UX.
       </p>

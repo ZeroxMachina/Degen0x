@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -142,6 +144,8 @@ export default function PrivacyCoinsZKGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Privacy Coins &amp; Zero-Knowledge Proofs 2026: Monero, Zcash &amp; Financial Privacy
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: 16, lineHeight: 1.7 }}>
             As blockchain surveillance intensifies and financial regulation tightens, privacy-preserving technologies are evolving from niche to essential. Privacy coins like Monero and Zcash, combined with zero-knowledge proofs, enable true financial confidentiality on-chain. With the privacy asset market cap exceeding $24 billion and institutions building private stablecoins, this guide covers how privacy actually works, the technologies behind it, and how to navigate regulation responsibly.
           </p>

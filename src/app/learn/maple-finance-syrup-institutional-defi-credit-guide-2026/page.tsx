@@ -4,6 +4,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Maple Finance & Syrup.fi Institutional DeFi Credit Guide",
@@ -339,6 +341,8 @@ export default function MapleFinancePage() {
             <span style={pageStyles.badgeReading}>14 min read</span>
           </div>
           <h1 style={pageStyles.title}>Maple Finance &amp; Syrup.fi Institutional DeFi Credit Guide</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={pageStyles.subtitle}>
             Learn how Maple Finance bridges TradFi private credit with DeFi, earn stable 7% yield on syrupUSDC, and understand institutional on-chain lending.
           </p>

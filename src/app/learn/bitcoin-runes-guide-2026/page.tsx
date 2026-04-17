@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -88,6 +90,8 @@ export default function BitcoinRunesGuidePage() {
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "var(--color-text)", lineHeight: "1.2" }}>
           Bitcoin Runes: The Complete Guide to Fungible Tokens on BTC
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>
           Bitcoin Runes is a fungible token protocol that lives directly on Bitcoin&apos;s base layer, using the UTXO model and OP_RETURN outputs to create, mint, and transfer tokens without bloating the blockchain. Created by Casey Rodarmor (the mind behind Ordinals), Runes launched on Bitcoin&apos;s halving day in April 2024 and quickly became the dominant token standard on Bitcoin — outpacing both BRC-20 and Ordinals in transaction share within its first ten days.
         </p>

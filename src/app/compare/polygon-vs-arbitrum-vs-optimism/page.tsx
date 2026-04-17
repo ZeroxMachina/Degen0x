@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -198,6 +200,8 @@ export default function PolygonArbitrumOptimism() {
           <span style={{ ...badgeStyle, background: '#a855f7', color: '#fff' }}>Compare</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Polygon vs Arbitrum vs Optimism</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Compare scaling solutions: Polygon sidechain vs Arbitrum/Optimism rollups. Analyze TPS, fees, TVL, developer adoption, zkEVM, Superchain, and AggLayer roadmaps.
           </p>

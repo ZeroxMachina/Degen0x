@@ -6,6 +6,8 @@ import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import { SITE_URL } from '@/lib/constants';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Corporate Crypto Treasury Guide 2026',
@@ -154,6 +156,8 @@ export default function CorporatoCryptoTreasuryGuide() {
               Corporate Crypto Treasury Companies in 2026
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p
               style={{
                 fontSize: '1.125rem',

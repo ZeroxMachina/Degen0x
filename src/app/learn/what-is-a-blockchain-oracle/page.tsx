@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -211,6 +213,8 @@ export default function BlockchainOracleGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>18 min read</span>
           <h1 style={h1Style}>Blockchain Oracles: Chainlink, Pyth &amp; Cross-Chain Data</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master oracle networks in 2026. Compare Chainlink ($15B+ TVL secured), Pyth Network (400+ feeds), Band Protocol, API3 first-party oracles, UMA optimistic oracles, and Chronicle. Learn oracle attacks, TWAP pricing, Chainlink CCIP, and decentralized oracle architecture.
           </p>

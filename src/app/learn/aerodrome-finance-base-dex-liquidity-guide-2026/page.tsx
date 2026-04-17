@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -233,6 +235,8 @@ export default function AerodromeFinanceGuide() {
 
         {/* Title */}
         <h1 style={h1Style}>Aerodrome Finance Guide 2026 — Base&apos;s Liquidity Engine</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ color: '#8b949e', fontSize: '16px', lineHeight: '1.7', marginBottom: '8px' }}>
           Aerodrome Finance is the dominant decentralized exchange on <Link href="/learn/base-chain-coinbase-layer-2-ecosystem-guide-2026" style={linkStyle}>Base</Link>, Coinbase&apos;s Ethereum L2 network. With over $500 million in TVL, 60%+ of Base&apos;s DEX volume, and $6.5M+ monthly fees, it&apos;s the liquidity backbone of one of crypto&apos;s fastest-growing ecosystems. Built on the ve(3,3) model pioneered by Andre Cronje, Aerodrome aligns incentives between traders, liquidity providers, and token holders in a way most DEXs don&apos;t. This guide covers how it works, the upcoming merger with Velodrome into &quot;Aero,&quot; and what MetaDEX03 means for DeFi.
         </p>

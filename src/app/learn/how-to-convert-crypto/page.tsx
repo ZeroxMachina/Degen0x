@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -60,6 +62,8 @@ export default function HowToConvertCryptoPage() {
           >
             How to Convert Cryptocurrency: Complete 2026 Guide
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p
             style={{
               fontSize: '1.125rem',

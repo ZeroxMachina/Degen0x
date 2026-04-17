@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -39,6 +41,8 @@ export default function RestakingGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#79c0ff] bg-clip-text text-transparent">
         Restaking & EigenLayer
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         The Complete Guide to Ethereum's Most Powerful Infrastructure Layer
       </p>

@@ -6,6 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -140,6 +142,8 @@ export default function AgenticPaymentsProtocolsGuide() {
             Agentic Payments Protocols
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           {/* Subtitle */}
           <p className="mb-6 text-xl text-[#8b949e]">
             The battle for how AI agents pay: x402 vs ACP vs AP2 vs ERC-8183 vs Open Wallet

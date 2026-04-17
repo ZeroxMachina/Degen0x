@@ -238,6 +238,8 @@ export default function SolanaBlinksActionsGuide() {
 
           <h1 style={h1Style}>Solana Blinks & Actions Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Solana Blinks (Blockchain Links) transform how users interact with blockchain transactions. Instead of navigating to a dApp, users can now mint NFTs from Twitter, swap tokens from blog posts, and execute on-chain governance votes directly from messaging apps. This guide explains how Solana Actions and Blinks work, the technical architecture behind them, real-world use cases, and how to build your own Blinks to supercharge user adoption.
           </p>
@@ -498,6 +500,8 @@ import { createMintToInstruction } from '@metaplex-foundation/mpl-token-metadata
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const POST = async (request: NextRequest) => {

@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -217,6 +219,8 @@ export default function DePINGuide() {
 
           <h1 style={h1Style}>DePIN Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             DePIN (Decentralized Physical Infrastructure Networks) have evolved from a crypto curiosity into a $9-10B sector with 650+ active projects generating $150M in monthly on-chain revenue. By tokenizing wireless networks, storage, compute, and mapping infrastructure, DePIN protocols are disrupting traditional centralized tech. This guide explains how DePIN works, profiles the key projects reshaping infrastructure, dissects tokenomics models, and walks you through the investment thesis and risks.
           </p>

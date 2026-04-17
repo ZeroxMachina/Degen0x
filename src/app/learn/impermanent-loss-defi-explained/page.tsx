@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -216,6 +218,8 @@ export default function ImpermanentLossDeFiExplained() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           </div>
           <h1 style={h1Style}>Impermanent Loss DeFi Explained 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Impermanent loss (IL) is the #1 risk LPs face in DeFi. Provide liquidity to ETH/USDC pool. ETH doubles. Your position is worth less than if you had just held ETH. The difference is IL. It&apos;s called "impermanent" because you only lock in losses when you withdraw. This guide explains IL mathematically, shows real examples, and covers mitigation (Bancor IL protection, concentrated liquidity, correlated pairs).
           </p>

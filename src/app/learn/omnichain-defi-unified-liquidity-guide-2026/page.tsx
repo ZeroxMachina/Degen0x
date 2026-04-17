@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -183,6 +185,8 @@ export default function OmnichainDeFiGuide() {
           <h1 style={s.h1}>
             Omnichain DeFi Guide 2026: Unified Liquidity Across Every Chain
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={s.sub}>
             Over $50 billion in DeFi liquidity is fragmented across 200+ blockchains — but omnichain protocols are changing that. By creating unified liquidity pools that exist everywhere simultaneously, omnichain DeFi eliminates the need to bridge assets, reduces slippage, and makes chain abstraction the default. Here&apos;s how it works and why it matters.
           </p>

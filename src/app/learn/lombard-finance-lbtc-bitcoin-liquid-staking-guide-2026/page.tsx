@@ -6,6 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Lombard Finance Guide 2026 — LBTC Bitcoin Liquid Staking",
@@ -144,6 +146,8 @@ export default function LombardFinanceLBTCGuide() {
 
         <h1 style={h1Style}>Lombard Finance Guide 2026 &amp;mdash; LBTC Bitcoin Liquid Staking Explained</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>
           Lombard Finance is the dominant Bitcoin liquid staking protocol, turning idle BTC into LBTC &mdash; a yield-bearing, cross-chain token backed 1:1 by bitcoin staked through Babylon Protocol. With over $1.5 billion in TVL, integrations across 70+ DeFi protocols, and expansion to Solana and Sui, Lombard is at the center of the BTCFi movement. This guide explains how it works, what LBTC and BARD do, and what risks you should understand.
         </p>

@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -149,6 +151,8 @@ export default function UniswapV4HooksAmmInnovationGuide2026() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Uniswap v4 Hooks & AMM Innovation Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg text-zinc-400 leading-relaxed">
             How hooks, singleton architecture, and dynamic fees transformed Uniswap from a simple
             swap protocol into a programmable liquidity platform — and why v4 is the most important

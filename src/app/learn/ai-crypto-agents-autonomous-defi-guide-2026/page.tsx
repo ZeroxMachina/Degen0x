@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -310,6 +312,8 @@ export default function AICryptoAgentsPage() {
         {/* Main Title */}
         <h1 style={h1Style}>AI Crypto Agents &amp; Autonomous DeFi Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>
           Updated April 2026 · 12 min read
         </div>

@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -142,6 +144,8 @@ export default function CryptoLeverageTradingGuide() {
             Crypto Leverage Trading Guide 2026: Margin, Liquidation & Risk Management
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           {/* Hook and metadata */}
           <p style={{
             fontSize: 16,

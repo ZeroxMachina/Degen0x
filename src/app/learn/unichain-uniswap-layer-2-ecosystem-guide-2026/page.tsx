@@ -4,6 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -151,6 +153,8 @@ export default function UnichainGuidePage() {
     >
             Unichain Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: 16, lineHeight: 1.7 }}>
             Unichain is Uniswap Labs&apos; own Layer 2 — an OP Stack rollup purpose-built around DeFi, with 1-second blocks, a verifiable block builder, and a UNI staking system that finally turns the token into a cash-flow asset. Here&apos;s how it works and why it matters in 2026.
           </p>

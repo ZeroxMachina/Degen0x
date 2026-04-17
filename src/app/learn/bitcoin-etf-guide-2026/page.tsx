@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -42,6 +44,8 @@ export default function BitcoinETFGuidePage() {
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "var(--color-text)", lineHeight: "1.2" }}>
           Bitcoin ETFs: The Complete Guide for 2026
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>
           Spot Bitcoin ETFs have attracted over $100 billion in assets since their January 2024 launch. Here&apos;s everything you need to know about how they work, which ones to choose, and whether they make sense for your portfolio.
         </p>

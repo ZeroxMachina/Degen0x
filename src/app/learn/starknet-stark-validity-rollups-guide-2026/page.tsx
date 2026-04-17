@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -232,6 +234,8 @@ export default function StarknetSTARKGuide() {
 
           <h1 style={h1Style}>Starknet &amp; STARK Validity Rollups Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Starknet is Ethereum&apos;s most advanced Layer 2, powered by STARK proofs—cryptographic guarantees that require no trusted setup. With $530M TVL, 65,000+ daily active users ranking #5 among L2s, and Cairo as its purpose-built programming language, Starknet represents the cutting edge of validity rollup technology. This guide covers STARK mechanics, the Cairo ecosystem, Bitcoin staking integration, privacy frameworks, and the roadmap to full sequencer decentralization with Malachite targeting 10,000+ TPS.
           </p>

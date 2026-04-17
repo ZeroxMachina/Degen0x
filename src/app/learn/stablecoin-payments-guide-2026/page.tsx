@@ -4,6 +4,8 @@ import StructuredData from '@/components/StructuredData'
 import Breadcrumb from '@/components/Breadcrumb'
 import BackToTop from '@/components/BackToTop'
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -107,6 +109,8 @@ export default function StablecoinPaymentsGuidePage() {
       <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-3">
         Stablecoin Payments Guide 2026: GENIUS Act, Cross-Border Transfers & On-Chain Finance
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-gray-400 text-lg mb-2">
         Stablecoins processed over $31 trillion in transactions in 2025 — here&apos;s everything you need to know about how they work as payment rails, what the GENIUS Act means for you, and why banks, fintechs, and individuals are all switching to on-chain dollars.
       </p>

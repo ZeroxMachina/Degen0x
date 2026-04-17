@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -237,6 +239,8 @@ export default function UndercollateralizedDeFiLendingGuide() {
 
           <h1 style={h1Style}>Undercollateralized DeFi Lending & On-Chain Credit 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Traditional DeFi lending requires 150%+ collateral. Undercollateralized lending flips this model. Using off-chain credit assessment, permissioned pools, and smart contract automation, protocols like Maple Finance ($4B+), Goldfinch, and Clearpool are enabling $12-17.5 billion in institutional borrowing without requiring massive overcollateralization. This guide breaks down how it works, the top protocols, and why on-chain credit is reshaping institutional finance.
           </p>

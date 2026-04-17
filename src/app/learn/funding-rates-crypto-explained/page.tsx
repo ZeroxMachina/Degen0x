@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -163,6 +165,8 @@ export default function FundingRatesCryptoExplained() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Funding Rates in Crypto: Perpetuals, Arbitrage &amp; Delta-Neutral Strategies</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Funding rates are periodic payments between long and short traders on perpetual swap exchanges. Positive rates = longs pay shorts (bullish). Negative rates = shorts pay longs (bearish). Cash-and-carry arbitrage captures funding as APY. Delta-neutral farming hedges price risk and earns 15-30% APY. Understand funding mechanics, exchange differences, and sentiment signals.
           </p>

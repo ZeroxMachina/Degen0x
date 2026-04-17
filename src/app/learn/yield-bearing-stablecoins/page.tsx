@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { useState } from "react";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -52,6 +54,8 @@ export default function YieldBearingStablecoinsPage() {
             Yield-Bearing Stablecoins: Earn Passive Returns on Stablecoins in 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Yield-bearing stablecoins generate passive returns for holders, unlike traditional stablecoins (USDT, USDC) that pass no yield to users. As of March 2026, the market has grown to $20B+ with 6+ protocols competing. JPMorgan predicts yield-bearing stablecoins will grow from 6% to 50% of the total stablecoin market by 2027. This guide covers how they work, the top protocols, and how to maximize returns safely.
           </p>

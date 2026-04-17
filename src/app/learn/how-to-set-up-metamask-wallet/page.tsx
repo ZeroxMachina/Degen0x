@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -209,6 +211,8 @@ export default function MetaMaskWalletSetup() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>How to Set Up MetaMask Wallet</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             MetaMask is the most popular self-custody wallet with 30M+ users. This guide walks you through downloading MetaMask, securing your 12-word seed phrase, configuring networks (Ethereum, Polygon, Arbitrum, Base), adding tokens, and connecting to dApps safely.
           </p>

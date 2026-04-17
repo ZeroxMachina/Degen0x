@@ -6,6 +6,8 @@ import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 const S = {
@@ -172,6 +174,8 @@ export default function CrossChainMessagingProtocolsPage() {
             lineHeight: "1.2",
           }}>Cross-Chain Messaging Protocols Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{
             fontSize: "18px",
             color: S.text2,

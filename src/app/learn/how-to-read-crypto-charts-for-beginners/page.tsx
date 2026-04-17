@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -175,6 +177,8 @@ export default function HowToReadCryptoChartsPage() {
             How to Read Crypto Charts for Beginners
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: "18px", color: "#8b949e", lineHeight: "1.6", marginBottom: "20px" }}>
             Master the fundamentals of chart reading and technical analysis to make informed cryptocurrency trading decisions.
           </p>

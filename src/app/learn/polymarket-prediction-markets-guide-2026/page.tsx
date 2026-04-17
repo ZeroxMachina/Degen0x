@@ -4,6 +4,8 @@ import Breadcrumb from '@/components/Breadcrumb'
 import BackToTop from '@/components/BackToTop'
 import StructuredData from '@/components/StructuredData'
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -309,6 +311,8 @@ export default function PolymarketGuidePage() {
             Polymarket Guide 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-xl text-[#8b949e] mb-8">
             Master the world's largest prediction market. Learn how to trade YES/NO shares, understand market mechanics, and position yourself for the potential POLY airdrop.
           </p>

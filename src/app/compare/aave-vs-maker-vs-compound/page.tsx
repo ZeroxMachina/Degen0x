@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -173,6 +175,8 @@ export default function AaveVsMakerVsCompound() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           </div>
           <h1 style={h1Style}>Aave vs Maker vs Compound</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             The three most important DeFi lending protocols. Aave dominates by TVL with full-featured markets. Maker specializes in DAI stablecoin generation. Compound pioneered lending with conservative design. This guide covers TVL, rates, governance, collateral, and risks.
           </p>

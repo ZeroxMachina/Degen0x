@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -334,6 +336,8 @@ export default function MemecoinsTradingStrategyPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Memecoins: Trading Strategies, Risk Management & How They Work in 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>Updated: April 2, 2026 | Reading Time: 14 min</div>
 
         <p style={pStyle}>

@@ -12,6 +12,8 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -159,6 +161,8 @@ export default function BitcoinTreasuryCompaniesGuidePage() {
           Bitcoin Treasury Companies 2026: Who&apos;s Stacking BTC and Why
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>
           Over 172 public companies now hold Bitcoin on their balance sheets, collectively controlling
           roughly 1 million BTC — about 5% of the total supply that will ever exist. This is the complete

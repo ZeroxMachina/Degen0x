@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -164,6 +166,8 @@ export default function CryptoCopyTradingGuidePage() {
             Crypto Copy Trading: The Complete 2026 Guide
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Copy trading lets you automatically mirror the trades of experienced crypto traders in real-time. No technical analysis required—you simply allocate capital, select a skilled trader, and the platform replicates their positions proportionally in your account. With 10-20 million active copy traders globally and the social trading market expected to reach $3.77 billion by 2030 (growing at 7.5% annually), copy trading is now mainstream crypto. This guide breaks down how it works, top platforms, risks, and how to choose traders wisely.
           </p>

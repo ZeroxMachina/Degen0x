@@ -4,6 +4,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Wormhole Cross-Chain Messaging & Interoperability Guide 2026',
@@ -349,6 +351,8 @@ export default function WormholeCrossChainPage() {
             <span style={pageStyles.badgeReading}>15 min read</span>
           </div>
           <h1 style={pageStyles.title}>Wormhole Cross-Chain Messaging &amp; Interoperability Guide</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={pageStyles.subtitle}>
             Learn how Wormhole connects 40+ blockchains with Guardian-secured messaging, explore the NTT framework for native tokens, understand W token economics, and compare with competing protocols.
           </p>

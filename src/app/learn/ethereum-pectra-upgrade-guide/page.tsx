@@ -12,6 +12,8 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -152,6 +154,8 @@ export default function EthereumPectraUpgradeGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#a371f7] to-[#58a6ff] bg-clip-text text-transparent">
         Ethereum Pectra Upgrade: Everything That Changes
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-4">
         Ethereum&rsquo;s biggest upgrade yet hits mainnet in April 2026. Smart wallets for everyone, validators up to 2048 ETH, cheaper L2 fees — here&rsquo;s your complete breakdown of all 11 EIPs and what they mean for you.
       </p>

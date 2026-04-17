@@ -7,6 +7,8 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -171,6 +173,8 @@ export default function LightningNetworkGuidePage() {
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
           Bitcoin Lightning Network: The Complete Guide for {CURRENT_YEAR}
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg text-[var(--color-text-secondary)] mb-4">
           The Bitcoin Lightning Network is one of the most important technologies in crypto. It solves
           Bitcoin's scalability problem by enabling millions of transactions per second at near-zero cost —

@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import DeFAIProtocolExplorer from "@/components/DeFAIProtocolExplorer";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -137,6 +139,8 @@ export default function DeFAIGuidePage() {
         DeFAI: How AI Agents Are Taking Over Decentralized Finance
       </h1>
 
+      <ReadingTime />
+      <AutoTOC />
       {/* Subtitle / hook */}
       <p
         className="text-lg mb-2"

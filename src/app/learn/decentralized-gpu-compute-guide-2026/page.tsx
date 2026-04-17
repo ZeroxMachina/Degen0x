@@ -4,6 +4,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -283,6 +285,8 @@ export default function DecentralizedGPUComputeGuidePage() {
           }}>
             Decentralized GPU &amp; Compute Networks Guide: 2026 Market Overview
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             The AI compute market hit $12.2B in 2024 and is projected to reach $39.5B by 2033. But GPU
             scarcity, long waitlists, and high AWS costs have created the perfect conditions for decentralized

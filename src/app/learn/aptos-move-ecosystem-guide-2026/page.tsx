@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -251,6 +253,8 @@ export default function AptosMoveguide() {
 
           <h1 style={h1Style}>Aptos Blockchain & Move Ecosystem Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Aptos represents a watershed moment in blockchain infrastructure: sub-50ms block times, the Move programming language that prevents entire classes of asset-manipulation bugs, and institutional adoption from BlackRock, Microsoft, and Aave. This guide explores Aptos&apos;s technical innovations, thriving DeFi ecosystem (Thala, Amnis, LiquidSwap, Aries), tokenomics, and why Move matters for secure smart contract development. With $1B TVL and 700% growth since early 2025, Aptos has emerged as the fastest Layer 1 blockchain with genuine enterprise backing.
           </p>

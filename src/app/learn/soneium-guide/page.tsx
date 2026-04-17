@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -32,6 +34,8 @@ export default function SoneiumGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Soneium Guide 2026: Sony's Ethereum L2 for Entertainment & Gaming
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Soneium is Sony Group's Ethereum Layer 2, built on the OP Stack, targeting entertainment, gaming, music, and fan experiences. With Sony's portfolio spanning PlayStation, Sony Music, and film studios, Soneium aims to bring Web3 rails to hundreds of millions of entertainment consumers. This guide explains the architecture, use cases, and ecosystem.
           </p>

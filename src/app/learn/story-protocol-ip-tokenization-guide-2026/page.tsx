@@ -3,6 +3,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Story Protocol Guide 2026: IP Tokenization & Programmable IP",
@@ -340,6 +342,8 @@ export default function StoryProtocolGuide() {
 
         {/* Header */}
         <h1 style={h1Style}>Story Protocol Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.2rem', color: '#8b949e', marginBottom: '30px' }}>
           Programmable Intellectual Property & IP Tokenization Explained
         </p>

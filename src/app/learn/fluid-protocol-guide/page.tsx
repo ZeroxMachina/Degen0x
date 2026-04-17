@@ -6,6 +6,8 @@ import FluidCapitalEfficiencyCalc from "@/components/FluidCapitalEfficiencyCalc"
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -156,6 +158,8 @@ export default function FluidProtocolGuidePage() {
           <h1 style={{ fontSize: "clamp(1.8rem, 4vw, 2.5rem)", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Fluid Protocol Guide 2026: The DeFi Superapp Taking on Aave and Uniswap
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Fluid (formerly Instadapp) is a $5B+ TVL DeFi protocol that merged lending and trading into a single composable
             system — and it&apos;s working. By using borrower debt as DEX liquidity, Fluid generates up to 39x more trading

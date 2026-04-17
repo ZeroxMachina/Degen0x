@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -139,6 +141,8 @@ export default function SmartContractSecurityAuditPage() {
           Smart Contract Security Audits: Complete Guide 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '16px', lineHeight: '1.6', marginBottom: '20px', color: '#8b949e' }}>
           In 2025, crypto protocols lost $17 billion to hacks, with $3.9 billion+ specifically from smart contract exploits. Yet 70% of these incidents involved vulnerabilities that proper audits would have caught. Whether you're launching a protocol or evaluating one for investment, understanding smart contract security audits is essential. This guide covers OWASP Top 10 vulnerabilities, audit processes, firm comparison, and practical security verification.
         </p>

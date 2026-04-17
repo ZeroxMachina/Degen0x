@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { useState } from "react";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -52,6 +54,8 @@ export default function PasskeyEmbeddedWalletsPage() {
             Passkey Wallets & Embedded Wallets Guide 2026: No Seed Phrases Required
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Passkey wallets represent a fundamental shift in how users interact with crypto. By replacing seed phrases with biometric authentication and WebAuthn, they deliver Web2-like user experiences while maintaining Web3 ownership. As of March 2026, 1M+ users have adopted Coinbase Smart Wallet, 75M+ wallets use Privy, and 30+ embedded wallet providers compete in this rapidly commoditizing market. This guide covers how passkeys work, the top providers, and how to get started.
           </p>

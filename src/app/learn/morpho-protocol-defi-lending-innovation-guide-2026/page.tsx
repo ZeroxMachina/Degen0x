@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -224,6 +226,8 @@ export default function MorphoProtocolPage() {
               Morpho Protocol DeFi Lending Innovation Guide 2026
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             {/* Meta Info */}
             <div style={{ display: 'flex', gap: '16px', alignItems: 'center', color: colors.secondary, fontSize: '14px', marginTop: '20px' }}>
               <span>Updated April 2026</span>

@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -151,6 +153,8 @@ export default function StoryProtocolGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#FF6B6B] to-[#C084FC] bg-clip-text text-transparent">
         Story Protocol: Tokenizing IP on-Chain
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         Story Protocol is a purpose-built Layer 1 blockchain designed to make intellectual property programmable, tradable, and enforceable on-chain. By combining IP tokenization, Programmable IP Licenses (PIL), and a Proof-of-Creativity protocol for attribution tracking, Story is positioning itself at the intersection of blockchain, IP law, and AI infrastructure. Here&apos;s everything you need to know.
       </p>

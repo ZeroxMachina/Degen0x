@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -76,6 +78,8 @@ export default function CongressionalTokenizationHearingPage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Congressional Tokenization Hearing Guide 2026: How Two Bills Could Reshape Securities Markets
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Today, March 25, 2026, the House Financial Services Committee holds a hearing on &quot;Tokenization and the Future of Securities: Modernizing Our Capital Markets.&quot; Two landmark bills are being discussed that could accelerate blockchain adoption for securities trading, settlements, and record-keeping. This guide breaks down the bills, the witnesses, and why the $26.5B RWA market is watching this hearing closely.
           </p>

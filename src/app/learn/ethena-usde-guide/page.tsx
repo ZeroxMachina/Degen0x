@@ -10,6 +10,8 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -152,6 +154,8 @@ export default function EthenaUsdeGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] bg-clip-text text-transparent">
         What Is Ethena? USDe, sUSDe, and the Internet Bond Explained
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         Ethena is a synthetic dollar protocol that produces USDe — a stablecoin backed by
         delta-hedged crypto derivatives, not bank accounts. It grew to a $14B market cap and the

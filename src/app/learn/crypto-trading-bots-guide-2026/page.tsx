@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -163,6 +165,8 @@ export default function CryptoTradingBotsGuidePage() {
             Crypto Trading Bots Guide 2026: Strategies, Platforms & AI
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Over 50% of all crypto trading volume is executed by automated bots. In institutional markets, this figure reaches 99%. Trading bots range from simple grid strategies to complex AI systems that learn from market data in real-time. This guide breaks down the bot landscape, compares top platforms like Pionex, 3Commas, and Bybit, and shows you how to build, test, and deploy a trading bot in 2026.
           </p>

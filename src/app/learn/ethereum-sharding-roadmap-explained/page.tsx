@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -224,6 +226,8 @@ export default function EthereumShardingRoadmap() {
 
           <h1 style={h1Style}>Ethereum Sharding Roadmap 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Ethereum&apos;s sharding roadmap is the key to scaling. Proto-danksharding (EIP-4844, Dencun) launched March 2024, reducing L2 fees by 90% instantly. Arbitrum fees dropped from $0.15 to $0.03. Optimism fees fell from $0.12 to $0.01. Full danksharding (2025-2027) will enable 100,000+ TPS, making Ethereum the settlement layer for all Web3. This guide covers: proto-danksharding basics, blob transactions, data availability sampling, Verkle trees for stateless validators, the full upgrade timeline through 2027, and how L2 fees drop from today&apos;s $0.01-0.03 to &lt;$0.001 in the future.
           </p>

@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -204,6 +206,8 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
           >
             Institutional Crypto Adoption Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: "1.3rem", color: S.text2, marginBottom: 24 }}>
             How Wall Street Is Going On-Chain
           </p>

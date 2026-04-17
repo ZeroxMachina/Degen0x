@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -170,6 +172,8 @@ export default function SolanaVsAvalanche() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           </div>
           <h1 style={h1Style}>Solana vs Avalanche</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Two high-performance Layer 1 blockchains competing on speed, cost, and ecosystem. Solana pushes throughput limits with Proof-of-History; Avalanche emphasizes decentralization and stability. This guide covers consensus, TPS, fees, DeFi TVL, and developer experience.
           </p>

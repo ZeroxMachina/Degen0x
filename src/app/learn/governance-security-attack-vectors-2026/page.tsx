@@ -3,6 +3,8 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg:"#0d1117",
@@ -206,6 +208,8 @@ export default function GovernanceSecurityPage() {
             DAO Governance Security 2026: Attack Vectors, Real Exploits & How to Defend Your Protocol
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: S.text2, fontSize: "16px", marginBottom: "16px" }}>
             Over $28B in assets are governed by DAO tokens across 12,000+ active DAOs. Yet governance mechanisms remain an exploitable attack surface—with $181M lost to Beanstalk's flashloan attack alone. This guide covers the 5 critical attack vectors, real case studies, and defense mechanisms that actually work.
           </p>

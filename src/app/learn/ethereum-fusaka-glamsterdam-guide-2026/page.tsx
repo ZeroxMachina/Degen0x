@@ -9,6 +9,8 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -135,6 +137,8 @@ export default function FusakaGlamsterdamGuide() {
               Ethereum Fusaka &amp; Glamsterdam Upgrade Guide 2026
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             {/* Subtitle */}
             <p className="text-lg text-[#8b949e] mb-8 leading-relaxed">
               A comprehensive guide to Ethereum&rsquo;s Fusaka upgrade (live December 3, 2025) and the upcoming Glamsterdam upgrade. Learn how PeerDAS revolutionizes data availability, reduces Layer 2 costs, and paves the way for full danksharding.

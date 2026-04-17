@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -164,6 +166,8 @@ export default function KiteAIGuide() {
           }}>
             Kite AI (KITE) Guide 2026: The First Blockchain Built for AI Agent Payments
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             Kite AI is building a purpose-built Layer-1 blockchain where autonomous AI agents can transact,
             pay for services, and operate as independent economic actors. With $35M in funding from PayPal

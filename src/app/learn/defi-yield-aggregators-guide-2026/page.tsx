@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -146,6 +148,8 @@ export default function DeFiYieldAggregatorsGuide() {
           <h1 style={s.h1}>
             DeFi Yield Aggregators Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={s.sub}>
             Discover how Yearn, Beefy, Pendle, and Sommelier optimize your crypto yield. Learn auto-compounding, compare strategies, and maximize returns across DeFi vaults.
           </p>

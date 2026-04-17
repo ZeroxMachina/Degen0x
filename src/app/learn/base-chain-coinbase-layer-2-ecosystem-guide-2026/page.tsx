@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -144,6 +146,8 @@ export default function BaseChainEcosystemGuide2026() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Base Chain Ecosystem Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg text-zinc-400 leading-relaxed">
             Everything you need to know about Coinbase&apos;s Ethereum Layer 2 — from the OP Stack foundation
             and sub-penny gas fees to the booming ecosystem of DeFi, social, and gaming dApps

@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -102,6 +104,8 @@ const page = () => {
           <h1 style={{ fontSize: "2.5rem", marginBottom: "16px", fontWeight: "700" }}>
             Crypto Trading Bots: Telegram Automation & Strategy Guide
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: "1.1rem", color: "#8b949e", lineHeight: "1.6" }}>
             Master crypto trading bots. Learn bot selection, security best practices, strategy evaluation, and how to automate trading profitably with realistic expectations.
           </p>

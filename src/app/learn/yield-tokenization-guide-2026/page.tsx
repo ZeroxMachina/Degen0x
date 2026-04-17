@@ -4,6 +4,8 @@ import Breadcrumb from '@/components/Breadcrumb';
 import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -116,6 +118,8 @@ export default function YieldTokenizationGuide() {
             Yield Tokenization Guide 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg text-[#8b949e] mb-6 leading-relaxed">
             Discover how to decompose yield-bearing assets into tradeable tokens. Learn how PT/YT tokens work, master fixed yield strategies, and leverage institutional adoption of yield tokenization protocols in 2026.
           </p>

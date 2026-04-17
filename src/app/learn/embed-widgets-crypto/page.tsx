@@ -2,6 +2,8 @@
 
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export default function EmbedWidgetsPage() {
   const breadcrumbItems = [
@@ -31,6 +33,8 @@ export default function EmbedWidgetsPage() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-orange-400 to-pink-400 bg-clip-text text-transparent">
             How to Add Crypto Widgets to Your Website
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-xl text-gray-300 mb-2">
             A Developer's Guide to Integration
           </p>

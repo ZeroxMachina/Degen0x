@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -143,6 +145,8 @@ export default function PreconfirmationsPage() {
           <span style={{ ...badgeStyle, background: '#f59e0b', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Ethereum Preconfirmations</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>Master preconfirmations: inclusion vs execution preconfs, based preconfs for L2s, EigenLayer security, sub-second finality.</p>
           <div style={{ display: 'flex', gap: 24, fontSize: 14, color: '#8b949e' }}>
             <span>Updated: April 10, 2026</span>

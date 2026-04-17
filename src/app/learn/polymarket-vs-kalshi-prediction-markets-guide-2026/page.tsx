@@ -3,6 +3,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Polymarket vs Kalshi: Prediction Markets Comparison Guide",
@@ -134,6 +136,8 @@ export default function Page() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
             Polymarket vs Kalshi: Prediction Markets Comparison Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-xl text-gray-300">
             The two dominant prediction market platforms of 2026 represent two very different bets on the
             future of event trading — crypto-native global liquidity versus US-regulated event contracts.

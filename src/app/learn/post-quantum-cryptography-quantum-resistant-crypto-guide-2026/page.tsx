@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { Metadata } from "next";
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata = {
@@ -189,6 +191,8 @@ export default function PostQuantumCryptographyGuide() {
     >
               Post-Quantum Cryptography Guide 2026
             </h1>
+            <ReadingTime />
+            <AutoTOC />
             <p style={{ fontSize: '1.2rem', color: colors.secondary, marginBottom: '1rem' }}>
               Quantum-Resistant Crypto, NIST Standards & How to Prepare for Q-Day
             </p>

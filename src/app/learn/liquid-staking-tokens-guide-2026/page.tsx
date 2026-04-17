@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -364,6 +366,8 @@ export default function LSTGuide() {
 
         <header style={headerStyle}>
           <h1 style={h1Style}>Liquid Staking Tokens</h1>
+          <ReadingTime />
+          <AutoTOC />
           <div style={badgeContainerStyle}>
             <span style={badgeStyle}>DeFi</span>
             <span style={badgeStyle}>Intermediate</span>

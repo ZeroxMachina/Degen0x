@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -198,6 +200,8 @@ export default function ChainlinkPythBand() {
           <span style={{ ...badgeStyle, background: '#a855f7', color: '#fff' }}>Compare</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Chainlink vs Pyth vs Band: Oracle Networks</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Compare blockchain oracles: Chainlink decentralized nodes vs Pyth first-party data vs Band delegated staking. Analyze security, latency, feeds, CCIP, and DeFi adoption.
           </p>

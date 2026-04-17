@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { useState } from "react";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -52,6 +54,8 @@ export default function EIP7702SmartAccountsPage() {
             EIP-7702 & Smart Accounts Guide 2026: Gasless Transactions & Account Abstraction
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             EIP-7702 shipped with the Pectra upgrade in May 2025 and revolutionized how Ethereum EOAs (Externally Owned Accounts) interact with smart contract logic. Instead of migrating to smart wallets, EOAs can now temporarily execute smart contract code through delegation, enabling gasless transactions, batch operations, and advanced security features. This guide covers how EIP-7702 works, why it matters, which wallets support it, and how it compares to alternatives like ERC-4337.
           </p>

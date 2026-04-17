@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -164,6 +166,8 @@ export default function SecCftcMouCryptoGuidePage() {
             SEC-CFTC MOU Explained: What Crypto&apos;s Biggest Regulatory Shift Means for You
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             On March 11, 2026, the SEC and CFTC signed a historic Memorandum of Understanding that officially ends years of turf wars over who regulates crypto. Bitcoin and Ethereum are now formally classified as digital commodities under CFTC jurisdiction. The MOU creates a joint framework for enforcement, policymaking, and data sharing—the most significant US crypto regulatory action since the GENIUS Act in July 2025. This guide explains what happened, what it means for different types of crypto assets, how it affects DeFi, and what every investor should understand about the new regulatory landscape.
           </p>

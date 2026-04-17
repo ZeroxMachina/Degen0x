@@ -262,6 +262,8 @@ export default function MonadBlockchainGuide() {
 
           <h1 style={h1Style}>Monad Blockchain Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Monad is a parallel EVM Layer 1 blockchain that launched mainnet on November 24, 2025. It delivers 10,000 TPS with 400ms blocks, 800ms finality, and near-zero gas fees — all while maintaining full Ethereum Virtual Machine (EVM) compatibility. Backed by $244M in funding from Paradigm and Coinbase Ventures, Monad aims to capture the Ethereum-developer audience that Solana can&apos;t reach, while offering Solana-like throughput. This guide covers MonadBFT consensus, parallel execution architecture, tokenomics, the emerging DeFi ecosystem, and realistic risks heading into 2026.
           </p>
@@ -689,6 +691,8 @@ npm install --save-dev hardhat @nomicfoundation/hardhat-ethers`}
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 contract MyToken is ERC20 {

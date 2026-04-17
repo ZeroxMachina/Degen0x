@@ -2,6 +2,8 @@
 
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export default function TokenVestingPage() {
   const breadcrumbItems = [
@@ -31,6 +33,8 @@ export default function TokenVestingPage() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
             Token Vesting Explained
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-xl text-gray-300 mb-2">
             How Unlock Schedules Affect Crypto Prices
           </p>

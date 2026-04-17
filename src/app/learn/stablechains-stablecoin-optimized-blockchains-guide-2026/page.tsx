@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
@@ -307,6 +309,8 @@ export default function StablechainsPage() {
       />
       {/* Header */}
       <h1 style={pageStyles.title}>Stablechains: Stablecoin-Optimized Blockchains</h1>
+      <ReadingTime />
+      <AutoTOC />
       <p style={pageStyles.subtitle}>
         Purpose-built blockchains designed for digital dollar transactions, compliance, and zero volatile fees
       </p>

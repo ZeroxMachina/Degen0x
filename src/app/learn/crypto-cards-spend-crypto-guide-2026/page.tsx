@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -365,6 +367,8 @@ export default function CryptoCardsGuide() {
 
         <header style={headerStyle}>
           <h1 style={h1Style}>Crypto Cards Guide 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <div style={badgeContainerStyle}>
             <span style={badgeStyle}>Spending</span>
             <span style={badgeStyle}>Beginner</span>

@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", surface: "var(--color-surface, #161b22)",
@@ -33,6 +35,8 @@ export default function CelestiaGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Celestia Guide 2026: The Modular DA Layer Powering the Next Generation of Blockchains
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Celestia pioneered the concept of separating data availability (DA) from execution and consensus — enabling chains to scale without compromising decentralization. In 2026, Celestia powers dozens of rollups, validiums, and sovereign chains. This guide explains how Celestia works, why DA matters, and how to build or use Celestia-powered networks.
           </p>

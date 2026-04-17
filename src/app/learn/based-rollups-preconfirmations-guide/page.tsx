@@ -7,6 +7,8 @@ import BasedRollupsVisualizer from "@/components/BasedRollupsVisualizer";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -162,6 +164,8 @@ export default function BasedRollupsGuide() {
             Based Rollups & Preconfirmations: The Complete 2026 Guide
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.75, marginBottom: 12 }}>
             Every Layer 2 today relies on a centralized sequencer — a single server that decides which
             transactions get included and in what order. It's crypto's dirty secret. Based rollups fix

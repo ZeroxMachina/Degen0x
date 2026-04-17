@@ -4,6 +4,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "EIP-7702: Ethereum Account Abstraction After Pectra Guide",
@@ -142,6 +144,8 @@ export default function Eip7702Guide() {
       </nav>
 
       <h1 style={h1Style}>EIP-7702: Ethereum Account Abstraction After Pectra</h1>
+      <ReadingTime />
+      <AutoTOC />
       <p style={{ ...pStyle, fontSize: '1.2rem', color: '#8b949e' }}>
         The Pectra upgrade quietly rewired what an Ethereum address can do. Here&apos;s the 2026 field guide to EIP-7702 — how smart EOAs work, what they unlock, and where the footguns are.
       </p>

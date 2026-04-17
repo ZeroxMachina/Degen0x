@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -218,6 +220,8 @@ export default function DataAvailabilityGuide() {
 
           <h1 style={h1Style}>Data Availability & Modular Blockchains Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Data Availability (DA) layers are the cornerstone of blockchain scalability in 2026. As rollups scale to handle thousands of transactions per second, they generate terabytes of transaction data annually. Dedicated DA layers like Celestia, EigenDA, and Avail solve the storage and verification problem, enabling a modular blockchain architecture where execution, consensus, settlement, and data availability are separate layers. Celestia commands 50% of the DA market with 160GB+ processed, EigenDA achieves 100MB/s throughput via Ethereum restaking, and Avail secures multichain integrations. This guide explores the economics, technology, and competitive landscape of Data Availability in 2026.
           </p>

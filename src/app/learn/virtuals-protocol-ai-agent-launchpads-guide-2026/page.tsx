@@ -3,6 +3,8 @@ import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -250,6 +252,8 @@ export default function VirtualsProtocolGuide() {
 
           <h1 style={h1Style}>Virtuals Protocol & AI Agent Launchpads Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Virtuals Protocol is revolutionizing how AI agents are deployed, tokenized, and monetized on-chain. This comprehensive guide explores the GAME Framework powering AI agent creation, the Agent Commerce Protocol enabling trustless agent-to-agent transactions, VIRTUAL token economics driving the agent economy, multi-chain infrastructure spanning Base, Solana, and Arbitrum, and how to launch your own AI agent. Whether you&apos;re a developer, investor, or enthusiast seeking to understand the emerging on-chain AI agent landscape, discover the infrastructure, opportunities, and competitive dynamics shaping 2026 and beyond.
           </p>

@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -255,6 +257,8 @@ export default function CryptoDCAStrategyGuide2026() {
           <h1 style={S.h1}>
             Crypto DCA Strategy Guide 2026: Dollar-Cost Average Bitcoin & Altcoins
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={S.subtitle}>
             Dollar-cost averaging (DCA) is the simplest, most battle-tested strategy for building long-term
             crypto wealth. Instead of timing the market, you invest a fixed amount on a regular schedule —

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -417,6 +419,8 @@ export default function InitiaGuidePage() {
 
           <h1 style={h1Style}>Initia: Interwoven Rollups &amp; Modular Orchestration</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <div style={metaStyle}>
             <div style={badgeBlueStyle}>Intermediate</div>
             <div style={badgePurpleStyle}>Layer 1</div>

@@ -5,6 +5,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -123,6 +125,8 @@ export default function DefiOptionsGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#d2a8ff] bg-clip-text text-transparent">
         DeFi Options Trading Guide 2026
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         On-chain options have grown 10× in one year. Here's how to trade them without leaving your wallet.
       </p>

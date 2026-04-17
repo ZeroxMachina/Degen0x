@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -142,6 +144,8 @@ export default function MegaETHGuide() {
 
         <h1 style={h1Style}>MegaETH Guide 2026 — Real-Time L2, 100K TPS &amp; MEGA Token</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>
           MegaETH is the first real-time Ethereum Layer 2, processing over 100,000 transactions per second with block times as low as 1 millisecond. Instead of batching transactions into blocks every few seconds like other rollups, MegaETH streams them continuously — making on-chain apps feel as responsive as traditional web apps. This guide covers how it works, who&rsquo;s behind it, the MegaMafia ecosystem, MEGA tokenomics, and the risks you should know about.
         </p>

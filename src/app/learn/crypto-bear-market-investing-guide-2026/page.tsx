@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -255,6 +257,8 @@ export default function CryptoBearMarketInvestingGuide2026() {
             <span style={S.badge("#d2992220", "#d29922", "#d2992240")}>Intermediate</span>
           </div>
           <h1 style={S.h1}>Crypto Bear Market Investing Guide 2026: How to Buy the Fear</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={S.subtitle}>
             The Fear &amp; Greed Index has sat below 15 for 46+ consecutive days — the longest extreme fear streak in crypto history. History says that&apos;s when the best opportunities emerge. Here&apos;s how to position yourself without blowing up your portfolio.
           </p>

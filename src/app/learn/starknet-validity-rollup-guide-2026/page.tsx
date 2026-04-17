@@ -8,6 +8,8 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -126,6 +128,8 @@ export default function StarknetValidityRollupGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, color: "#e6edf3", background: "linear-gradient(135deg, #6366f1, #06b6d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Starknet Guide 2026: The Validity Rollup Rewriting Ethereum Scaling
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             Starknet is a validity rollup (ZK rollup) that uses STARK proofs to scale Ethereum with cryptographic certainty. With $542M in TVL, decentralized sequencing, native privacy, and Bitcoin DeFi integration, it&apos;s one of the most technically ambitious Layer 2 networks in production. This guide covers everything from how it works to how to use it.
           </p>

@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -220,6 +222,8 @@ export default function ZKRollupsGuide() {
 
           <h1 style={h1Style}>ZK Rollups Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Zero-Knowledge Rollups represent the frontier of Layer 2 scaling. By bundling transactions into cryptographic proofs, ZK Rollups achieve instant finality, massive throughput (1000+ TPS), and maintain Ethereum security without 7-day withdrawal delays. In 2026, the ZK ecosystem has crossed $70B+ TVL, with zkSync Era leading at $6.5B. Proving times have collapsed from 16 minutes to 16 seconds, costs dropped 45x, and fully EVM-compatible rollups are production-ready. This guide explains zero-knowledge proofs, compares leading protocols, and shows you how to leverage ZK Rollups for superior capital efficiency and user experience.
           </p>

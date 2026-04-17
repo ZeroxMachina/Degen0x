@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Bitcoin ETF Explained: How to Invest in BTC ETFs 2026",
@@ -216,6 +218,8 @@ export default function BitcoinETFPage() {
     >
             Bitcoin ETF Explained: How to Invest in BTC ETFs
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p
             style={{
               fontSize: 18,

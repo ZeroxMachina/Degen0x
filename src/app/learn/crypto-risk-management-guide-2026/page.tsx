@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -175,6 +177,8 @@ export default function CryptoRiskManagementGuide2026() {
               Crypto Risk Management Guide 2026: Protect Your Portfolio Like a Pro
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
               Crypto risk management is the disciplined process of identifying, measuring, and
               mitigating the financial risks that come with holding and trading digital assets.

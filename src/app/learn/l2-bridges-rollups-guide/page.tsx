@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { ArrowUpDown, Shield, Zap, Globe, AlertCircle, Check, Layers } from 'lucide-react';
 import Breadcrumb from '@/components/Breadcrumb';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Bridge {
@@ -288,6 +290,8 @@ export default function L2BridgesRollupsGuide() {
               <h1 style={{ fontSize: 36, fontWeight: 800, background: "linear-gradient(135deg, #58a6ff, #bc8cff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
                 L2 Bridges & Rollups: The Complete 2026 Guide
               </h1>
+              <ReadingTime />
+              <AutoTOC />
             </div>
             <p style={{ color: "#8b949e", fontSize: 17, lineHeight: 1.7, maxWidth: 800 }}>
               Ethereum Layer 2 scaling solutions process thousands of transactions per second while inheriting mainnet security. But moving assets between L1 and L2 — and between different L2s — requires bridges. This guide covers the major bridge types, their security models, the leading rollup networks, and how to minimize risk when bridging your assets.

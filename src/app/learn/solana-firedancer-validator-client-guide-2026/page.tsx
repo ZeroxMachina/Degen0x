@@ -5,6 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -245,6 +247,8 @@ export default function SolanaFiredancerGuide() {
 
           <h1 style={h1Style}>Solana Firedancer Validator Client Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Solana Firedancer represents a generational leap in blockchain infrastructure. Jump Crypto&apos;s 3+ year effort to build an independent, ultra-high-performance validator client is reshaping how Solana scales. From Frankendancer&apos;s September 2024 launch to the full client&apos;s December 2025 mainnet release, adoption is accelerating. This guide explains Firedancer&apos;s revolutionary architecture, why multi-client diversity matters, real adoption metrics, staking economics, and how validators migrate.
           </p>

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -327,6 +329,8 @@ export default function EthereumGasFeesPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Ethereum Gas Fees Optimization Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>
           Published: April 4, 2026 | Reading Time: 14 min
         </div>

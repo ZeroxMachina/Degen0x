@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -143,6 +145,8 @@ export default function LiquidityPoolsPage() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Liquidity Pools Explained</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>Master x*y=k formula, Uniswap V2 vs V3 concentrated liquidity, Curve StableSwap, impermanent loss calculations, and LP yields (10-25% APY).</p>
           <div style={{ display: 'flex', gap: 24, fontSize: 14, color: '#8b949e' }}>
             <span>Updated: April 10, 2026</span>

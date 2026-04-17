@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -215,6 +217,8 @@ export default function FlashLoansExplained() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>DeFi</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Flash Loans Explained 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Flash loans are the most counterintuitive DeFi primitive: borrow billions of dollars without collateral, execute complex logic, and repay within the same atomic transaction. Aave operates $2B+ in daily flash loan volume at 0.09% fee. dYdX offers 0% fee with $500M capacity. These uncollateralized loans enable profitable arbitrage, liquidation bots, collateral swaps, and governance attacks. The catch: everything must execute atomically, or the entire transaction reverts. This guide explains flash loan mechanics, real strategies (arbitrage, liquidation), provider comparison, fees, gas economics, and famous exploits (Euler $197M hack) through practical examples and calculations for April 2026.
           </p>

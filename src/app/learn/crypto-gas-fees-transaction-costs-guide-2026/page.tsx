@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -127,6 +129,8 @@ export default function CryptoGasFeesGuide() {
           <h1 style={{ fontSize: "clamp(1.75rem, 4vw, 2.25rem)", fontWeight: 800, lineHeight: 1.2, marginBottom: 12, color: "#e6edf3", background: "linear-gradient(135deg, #f59e0b, #10b981)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Crypto Gas Fees & Transaction Costs: A 2026 Guide
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             Gas fees are the price you pay to execute transactions on blockchain networks. From EIP-1559&apos;s base fee mechanism to Layer 2 solutions slashing costs by 90%, understanding how gas works is essential for every crypto user. This comprehensive guide covers how fees work across chains, practical cost-saving strategies, and emerging solutions like account abstraction.
           </p>

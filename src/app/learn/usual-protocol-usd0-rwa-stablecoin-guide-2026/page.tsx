@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Usual Protocol USD0 RWA Stablecoin Guide 2026",
@@ -98,6 +100,8 @@ export default function UsualProtocolGuide() {
           Usual Protocol USD0: RWA Stablecoin Guide
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ color: "#8b949e", fontSize: "1.1rem", marginBottom: "30px" }}>
           Learn Usual Protocol USD0. Real World Asset stablecoin backed by US Treasuries and bonds. Earn 4–5% yield on stablecoins.
         </p>

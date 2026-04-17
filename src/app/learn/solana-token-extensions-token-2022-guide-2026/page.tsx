@@ -165,6 +165,8 @@ export default function SolanaTokenExtensionsGuide() {
           <span style={difficultyBadgeStyle}>Intermediate</span>
         </div>
         <h1 style={h1Style}>Solana Token Extensions & Token-2022 Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ ...pStyle, fontSize: 16, color: "#8b949e" }}>
           Published on <strong>April 3, 2026</strong> | 15 min read
         </p>
@@ -588,6 +590,8 @@ import { createMint } from '@solana/spl-token';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 const mint = await createMint(

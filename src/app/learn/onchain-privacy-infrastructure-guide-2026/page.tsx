@@ -5,6 +5,8 @@ import Link from "next/link";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema } from "@/lib/structured-data";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -130,6 +132,8 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
             Onchain Privacy Infrastructure Guide 2026: Railgun, Aztec & Privacy Pools
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Privacy is becoming core infrastructure in DeFi. After years of Tornado Cash's blunt anonymity tool, we now have sophisticated "pragmatic privacy" protocols that balance secrecy with compliance. Railgun, Aztec Network, and Privacy Pools represent Ethereum's HTTPS moment — privacy built in by default, not bolted on. This guide covers all three, their technologies, and how to use them.
           </p>

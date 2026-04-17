@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -152,6 +154,8 @@ export default function KaitoInfoFiGuidePage() {
         Kaito AI & InfoFi: Attention Is Now a Crypto Asset
       </h1>
 
+      <ReadingTime />
+      <AutoTOC />
       {/* Subtitle */}
       <p
         className="text-lg mb-2"

@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -149,6 +151,8 @@ export default function PendleFinanceGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#a371f7] bg-clip-text text-transparent">
         Pendle Finance: Yield Tokenization Explained
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         How Pendle turns volatile DeFi yield into tradeable assets — and why $8.9B in TVL says
         this is one of DeFi&apos;s most important protocols.

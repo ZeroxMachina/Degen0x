@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -142,6 +144,8 @@ export default function DexAggregatorsGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             DEX Aggregators &amp; Trade Routing Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: 16, lineHeight: 1.7 }}>
             DEX aggregators scan hundreds of liquidity sources to find you the best swap price — often saving 0.5-3% compared to trading on a single exchange. From Jupiter&apos;s $3.85B daily volume on Solana to CowSwap&apos;s MEV-protected batch auctions on Ethereum, this guide breaks down how routing engines work, compares the top aggregators, and shows you how to get the best execution on every trade.
           </p>

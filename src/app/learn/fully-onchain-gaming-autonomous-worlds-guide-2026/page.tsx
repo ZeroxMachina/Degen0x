@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -195,6 +197,8 @@ export default function FullyOnchainGamingGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #8b5cf6, #3fb950)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Fully Onchain Gaming & Autonomous Worlds Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: S.text2, fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>
             The complete guide to fully onchain games and autonomous worlds. Master MUD, Dojo, and World Engine—the frameworks reshaping game development in 2026. From turn-based strategy to real-time action, discover how games are becoming decentralized, composable, and permanently playable.
           </p>

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -319,6 +321,8 @@ export default function YieldFarmingPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Yield Farming & DeFi Strategies Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>
           Published: April 2, 2026 | Reading Time: 15 min
         </div>

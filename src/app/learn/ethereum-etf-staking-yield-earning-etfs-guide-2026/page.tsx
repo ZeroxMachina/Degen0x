@@ -5,6 +5,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -296,6 +298,8 @@ export default function EthereumETFStakingGuide() {
               Ethereum ETF Staking & Yield Guide 2026
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p className="text-lg text-[#8b949e] max-w-3xl">
               Complete guide to Ethereum staking ETFs: Compare 8 spot ETFs, earn 3.5-4.5% annual yields, understand BlackRock ETHB&apos;s 82% monthly distribution model, and navigate the March 2026 SEC digital commodity ruling.
             </p>

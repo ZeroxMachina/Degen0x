@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -102,6 +104,8 @@ const page = () => {
           <h1 style={{ fontSize: "2.5rem", marginBottom: "16px", fontWeight: "700" }}>
             TVL Analysis: Reading DeFi Fundamentals & Growth Signals
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: "1.1rem", color: "#8b949e", lineHeight: "1.6" }}>
             Master TVL metrics for evaluating DeFi protocol health. Learn how to interpret TVL trends, predict token performance, and identify emerging opportunities in DeFi.
           </p>

@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { ArticleStructuredData, FAQStructuredData } from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -57,6 +59,8 @@ export default function TelegramTradingBotsGuidePage() {
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "var(--color-text)", lineHeight: "1.2" }}>
           Telegram Crypto Trading Bots: The Complete Guide for 2026
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>
           Telegram trading bots have become the go-to tools for degen traders on Solana and beyond. Here is everything you need to know about how they work, the top bots, fees, risks, and how to get started safely in 2026.
         </p>

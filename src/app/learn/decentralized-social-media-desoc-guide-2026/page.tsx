@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -218,6 +220,8 @@ export default function DecentralizedSocialMediaGuide() {
 
           <h1 style={h1Style}>Decentralized Social Media Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Decentralized Social Media (DeSoc), or SocialFi, is reshaping how we create, connect, and monetize on the internet. Unlike Twitter and Instagram where platforms own your data and control your reach, DeSoc protocols give you portable accounts, censorship resistance, and direct monetization through tokens. The market exploded 300% year-over-year to $5B in 2025, with major protocols like Farcaster ($1B valuation, 20K-60K DAU) and Lens Protocol (650K migrated profiles, ZK chain) leading the charge. This guide explains what DeSoc is, compares leading platforms, explores Mini Apps and creator tokenomics, and shows you how to participate in the decentralized creator economy.
           </p>

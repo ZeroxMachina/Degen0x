@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -331,6 +333,8 @@ export default function RealYieldDeFiGuidePage() {
         {/* Main Title */}
         <h1 style={h1Style}>Real Yield in DeFi 2026: Protocol Revenue vs Token Emissions</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>
           Updated April 2026 · 14 min read
         </div>

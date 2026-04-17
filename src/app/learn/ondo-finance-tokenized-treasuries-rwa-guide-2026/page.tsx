@@ -3,6 +3,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA",
@@ -261,6 +263,8 @@ export default function OndoFinanceGuide() {
         </div>
 
         <h1 style={h1Style}>Ondo Finance</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1em', color: '#8b949e', marginBottom: '30px' }}>
           Tokenized Treasuries & RWA Leader
         </p>

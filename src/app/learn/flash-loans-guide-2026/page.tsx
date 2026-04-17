@@ -6,6 +6,8 @@ import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -238,6 +240,8 @@ export default function FlashLoansGuidePage() {
 
           <h1 style={h1Style}>Flash Loans Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={subtitleStyle}>
             Flash loans let you borrow millions in crypto with zero collateral — repaid in one transaction. Learn how flash loans work on Aave, dYdX, and Uniswap in 2026.
           </p>

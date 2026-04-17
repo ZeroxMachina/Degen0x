@@ -3,6 +3,8 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "#0d1117",
@@ -188,6 +190,8 @@ export default function FundingRateArbitrageGuide() {
           <h1 style={{ fontSize: 36, fontWeight: 700, marginBottom: 16, lineHeight: 1.2 }}>
             Funding Rate Arbitrage Guide 2026: Delta-Neutral Strategies for Perpetual Futures
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <div style={{ display: "flex", gap: 20, fontSize: 14, color: S.text2, flexWrap: "wrap" }}>
             <span>📅 March 2026</span>
             <span>⏱️ 12 min read</span>

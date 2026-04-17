@@ -4,6 +4,8 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -391,6 +393,8 @@ export default function AaveV4GHOPage() {
             <span style={pageStyles.badgeReading}>22 min read</span>
           </div>
           <h1 style={pageStyles.title}>Aave V4 &amp; GHO Stablecoin DeFi Lending Guide</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={pageStyles.subtitle}>
             Explore Aave V4&apos;s revolutionary hub-and-spoke architecture, GHO stablecoin ecosystem, AAVE tokenomics, and why Aave controls 59.79% of DeFi lending with $42.34B TVL.
           </p>

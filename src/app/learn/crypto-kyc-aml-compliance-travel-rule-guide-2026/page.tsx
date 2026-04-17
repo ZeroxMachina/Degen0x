@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -274,6 +276,8 @@ export default function CryptoKYCAMLComplianceGuide() {
 
           <h1 style={h1Style}>Crypto KYC, AML &amp; Travel Rule Compliance Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             The crypto compliance landscape has transformed. VASPs (Virtual Asset Service Providers) now face identical regulatory standards as traditional banks. With 85 of 117 jurisdictions implementing FATF Travel Rule legislation, $1.23B in regulatory fines in H1 2025 alone, and MiCA full enforcement arriving mid-2026, understanding KYC, AML, and compliance obligations is no longer optional—it&apos;s essential for crypto platforms, enterprises, and informed users. This comprehensive guide covers regulatory frameworks, major enforcement actions, and how to navigate a converging global compliance ecosystem.
           </p>

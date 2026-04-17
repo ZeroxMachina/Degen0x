@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -211,6 +213,8 @@ export default function DEXAggregatorGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>13 min read</span>
           <h1 style={h1Style}>DEX Aggregators: 1inch, Jupiter, Paraswap, CowSwap &amp; Odos</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master DEX aggregators in 2026. Compare 1inch ($300B+ volume), Jupiter (Solana #1), Paraswap, 0x Protocol, CowSwap (MEV-protected), Odos (multi-hop). Learn routing algorithms, positive slippage, gas optimization, Fusion Mode gasless swaps.
           </p>

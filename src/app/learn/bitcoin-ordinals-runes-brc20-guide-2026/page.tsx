@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -320,6 +322,8 @@ export default function BitcoinOrdinalRunesPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>Bitcoin Ordinals & Runes Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>
           Master Bitcoin-native NFTs and tokens: learn Ordinals inscriptions, compare BRC-20 vs Runes, and navigate the evolving Bitcoin ecosystem.
         </p>

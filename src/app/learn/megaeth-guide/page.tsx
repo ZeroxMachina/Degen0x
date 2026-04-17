@@ -9,6 +9,8 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -148,6 +150,8 @@ export default function MegaETHGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#a78bfa] bg-clip-text text-transparent">
         What Is MegaETH? The Real-Time Ethereum Layer-2 Explained
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         MegaETH launched mainnet on February 9, 2026 with a bold claim: 100,000 TPS and
         10-millisecond blocks. Backed by Paradigm and Vitalik Buterin, it&apos;s one of the

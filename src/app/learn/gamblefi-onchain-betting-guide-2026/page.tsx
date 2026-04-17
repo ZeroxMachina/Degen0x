@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -164,6 +166,8 @@ export default function GambleFiGuide() {
           }}>
             GambleFi Guide 2026: How Onchain Betting Is Reshaping the Gambling Industry
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             GambleFi is the fusion of traditional gambling and DeFi where every wager is powered by smart
             contracts and verified on-chain. Crypto casinos now account for ~17% of all iGaming bets globally,

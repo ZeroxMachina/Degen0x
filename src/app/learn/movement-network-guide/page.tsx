@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import MoveTokenUnlockTracker from "@/components/MoveTokenUnlockTracker";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -152,6 +154,8 @@ export default function MovementNetworkGuidePage() {
             Movement Network Guide 2026 — The MoveVM L1 Reshaping Blockchain Speed
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 16, lineHeight: 1.8, marginBottom: 12 }}>
             Movement Network is a Layer 1 blockchain built on the Move Virtual Machine, capable of processing over 160,000 transactions per second with sub-$0.001 fees. Launched on mainnet in late 2025, it rapidly crossed $200M in TVL and attracted 160+ ecosystem projects — making it one of the fastest-growing L1s of early 2026.
           </p>

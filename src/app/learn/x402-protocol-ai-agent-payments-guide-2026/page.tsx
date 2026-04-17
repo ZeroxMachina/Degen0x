@@ -2,6 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -330,6 +332,8 @@ export default function X402ProtocolPage() {
             <span style={pageStyles.badgeReading}>16 min read</span>
           </div>
           <h1 style={pageStyles.title}>x402 Protocol: HTTP Payment Standard for AI Agent Payments</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={pageStyles.subtitle}>
             The open standard enabling autonomous AI agents to pay for API access using cryptocurrency and stablecoins.
           </p>

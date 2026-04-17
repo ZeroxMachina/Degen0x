@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -102,6 +104,8 @@ const page = () => {
           <h1 style={{ fontSize: "2.5rem", marginBottom: "16px", fontWeight: "700" }}>
             Perpetual Futures: Complete Guide to Leverage Trading & Risk Management
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: "1.1rem", color: "#8b949e", lineHeight: "1.6" }}>
             Master perpetual futures trading. Learn leverage mechanics, liquidation risks, funding rates, and professional risk management to trade perpetuals profitably.
           </p>

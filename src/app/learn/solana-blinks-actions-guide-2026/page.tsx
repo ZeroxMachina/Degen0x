@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -113,6 +115,8 @@ export default function SolanaBlinksActionsGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #9945FF, #14F195)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Solana Blinks & Actions Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>
             Solana Actions are standardized APIs that deliver signable transactions from any application to a user's wallet. Blinks (Blockchain Links) turn those Actions into shareable, metadata-rich URLs that work anywhere on the web—from tweets to Discord messages to email links. Together, they let users execute onchain transactions without ever visiting a dApp.
           </p>

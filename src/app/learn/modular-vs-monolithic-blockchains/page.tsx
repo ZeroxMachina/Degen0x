@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -211,6 +213,8 @@ export default function ModularVsMonolithicBlockchains() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>15 min read</span>
           <h1 style={h1Style}>Modular vs Monolithic Blockchains: Celestia, EigenDA &amp; Ethereum</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Complete guide to blockchain architecture in 2026. Compare modular design (execution + DA + settlement layers) vs monolithic (Solana). Learn Celestia ($1B+ FDV), EigenDA restaking security, Ethereum settlement layer, Avail Project, sovereign rollups.
           </p>

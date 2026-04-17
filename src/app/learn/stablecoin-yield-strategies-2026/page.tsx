@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -157,6 +159,8 @@ export default function StablecoinYieldStrategiesPage() {
           }}>
             Stablecoin Yield Strategies 2026: Earn 4–20% APY Without the Volatility
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             Stablecoins are the quiet money-makers of crypto. While everyone debates which L1 will flip Ethereum,
             experienced DeFi participants are steadily earning 4–20% APY on{" "}

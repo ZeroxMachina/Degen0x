@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -121,6 +123,8 @@ export default function TEEVerifiableComputeGuide() {
           <span className="text-xs px-3 py-1 rounded-full font-bold" style={{ background: "#06b6d420", color: "#06b6d4" }}>12 min read</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ background: "linear-gradient(135deg, #6366f1, #06b6d4)", backgroundClip: "text", WebkitBackgroundClip: "text", color: "transparent", lineHeight: "1.2" }}>TEE & Verifiable Compute: The Complete Guide for 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>Discover how Trusted Execution Environments are enabling private smart contracts, MEV protection, and confidential AI inference in crypto. Learn what TEEs are, how they work, their vulnerabilities, and which projects are pioneering hardware-secured computation in 2026.</p>
       </div>
 

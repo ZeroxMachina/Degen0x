@@ -6,6 +6,8 @@ import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -273,6 +275,8 @@ export default function DVTGuidePage() {
           Distributed Validator Technology (DVT) Guide
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Meta */}
         <p style={{ ...pStyle, color: '#8b949e', marginBottom: '2rem' }}>
           Updated March 2026 · 11 min read

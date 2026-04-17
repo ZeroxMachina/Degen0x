@@ -11,6 +11,8 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -158,6 +160,8 @@ export default function BittensorGuide() {
           }}>
             Bittensor (TAO) Guide 2026: How AI Subnets Work and Why Crypto Is Betting Big
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             Bittensor is a decentralized AI network that creates an open marketplace for machine intelligence — where AI
             models compete, collaborate, and earn <code style={{ color: "#79c0ff", background: "#161b22", padding: "1px 6px", borderRadius: 4, fontSize: 14 }}>TAO</code> tokens

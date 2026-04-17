@@ -3,6 +3,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Pump.fun, PumpSwap & Memecoin Launchpads Guide 2026",
@@ -342,6 +344,8 @@ export default function PumpfunPumpswapLaunchpadsPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Pump.fun, PumpSwap & Memecoin Launchpads Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>Updated: April 4, 2026 | Reading Time: 12 min</div>
 
         <p style={pStyle}>

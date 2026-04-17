@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -134,6 +136,8 @@ export default function Layer3ChainsGuide() {
             Layer 3 Chains: The Future of Application-Specific Blockchains
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: "1.1rem", color: S.text2, marginBottom: "0.5rem" }}>
             Understand how Layer 3 chains enable gasless gaming, scalable DeFi, and specialized execution on top of Ethereum.
           </p>

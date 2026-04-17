@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -221,6 +223,8 @@ export default function AccountAbstractionERC4337Guide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Account Abstraction &amp; ERC-4337 Guide 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Account abstraction is transforming Ethereum wallets from rigid private-key systems to flexible smart accounts. By April 2026, ERC-4337 is the Ethereum standard, adopted by Safe (6M+ users), Biconomy, ZeroDev, and Alchemy Account Kit. Smart accounts enable gas sponsorship (dapps pay for users), social recovery (friends recover your account, no seed phrase), batch transactions (3 actions = 1 fee), and session keys (time-limited spending approvals). This guide explains the architecture, how Bundlers and Paymasters work, compares implementations, and shows how to build on account abstraction.
           </p>

@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -156,6 +158,8 @@ export default function CLARITYActGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, background: "linear-gradient(135deg, #6366f1, #06b6d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             CLARITY Act & Stablecoin Yield Regulation in 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             The CLARITY Act rewrites the rules for stablecoin yield. Passive yield is banned. Activity-based rewards are legal. DeFi lending protocols face a reckoning. Here&apos;s what you need to know about the regulation reshaping yield farming, who wins, who loses, and when it takes effect.
           </p>

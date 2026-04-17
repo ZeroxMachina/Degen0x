@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'HIP-3: Hyperliquid Permissionless Perps Guide 2026 | Degen0x',
@@ -112,6 +114,8 @@ export default function Hip3HyperliquidPermissionlessPerpsGuide2026() {
         </nav>
 
         <h1>HIP-3: Hyperliquid Permissionless Perps Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="lead">
           Hyperliquid spent 2024–2025 becoming the dominant on-chain perp venue by out-engineering everyone on latency, UX, and
           liquidity. HIP-3 is the next act: a permissionless standard that lets anyone — not just the core team — deploy

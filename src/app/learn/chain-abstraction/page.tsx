@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { useState } from "react";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -52,6 +54,8 @@ export default function ChainAbstractionPage() {
             Chain Abstraction Guide 2026: Seamless Multi-Chain UX
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Chain Abstraction is making multi-chain crypto seamless. Instead of manually bridging, switching networks, and managing gas on each chain, chain abstraction protocols let users interact across 100+ chains from a single interface. In 2026, this is becoming essential infrastructure for mass adoption and institutional DeFi.
           </p>

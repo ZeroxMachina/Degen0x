@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -216,6 +218,8 @@ export default function CryptoMarketCapGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>Crypto Market Cap Explained 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master crypto market capitalization: calculation formula, circulating vs total vs fully diluted supply, market cap tiers (large &gt;$10B, mid $1-10B, small &lt;$1B). Compare top 10 cryptocurrencies with FDV analysis, understand token unlock dilution, and evaluate DeFi projects using market cap vs TVL ratios.
           </p>

@@ -11,6 +11,8 @@ import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -202,6 +204,8 @@ export default function LidoV3stVaultsGuide() {
             Lido V3 stVaults: Modular Staking Infrastructure
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 8 }}>
             Lido V3 launched January 30, 2026, introducing stVaults — customizable staking
             primitives that separate validator selection from liquidity provision. Instead of a

@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -137,6 +139,8 @@ export default function KYAGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Know Your Agent (KYA): AI Agent Identity & Verification on Chain
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>
             AI agents are no longer just chatbots — they hold wallets, execute trades, manage DeFi positions, and transact autonomously across protocols. But when an AI agent moves $50K through a lending pool, who's accountable? Know Your Agent (KYA) is the emerging identity standard that answers this question. Think of it as KYC for machines: a cryptographic framework that links every autonomous agent to its human principal, defines its operational boundaries, and creates a tamper-proof audit trail.
           </p>

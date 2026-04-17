@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -221,6 +223,8 @@ export default function CryptoAirdropsGuide() {
 
           <h1 style={h1Style}>Crypto Airdrops Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             A crypto airdrop is a free token distribution from a blockchain project to wallets that meet specific eligibility criteria — usually based on past protocol usage, staking, liquidity provision, or governance participation. In 2026, airdrops have become more sophisticated: projects now use time-weighted activity models and aggressive Sybil detection, rewarding authentic users over bot farmers. This guide covers how airdrops work, how to qualify, proven farming strategies, and the top upcoming distributions worth positioning for.
           </p>

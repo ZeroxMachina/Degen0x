@@ -3,6 +3,8 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -242,6 +244,8 @@ export default function ScrollZkEVMLayer2EcosystemGuide2026() {
 
           <h1 style={h1Style}>Scroll zkEVM Layer 2 Ecosystem Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Scroll is the largest zero-knowledge Ethereum Virtual Machine (zkEVM) by market share. With $748M+ TVL and 250K+ daily transactions, Scroll has emerged as the leading zkEVM solution, competing directly with zkSync Era and Polygon zkEVM. Unlike Optimistic Rollups (Arbitrum, Optimism) that use fraud proofs, Scroll uses cryptographic zero-knowledge proofs for faster finality and stronger security guarantees. This guide covers zkEVM technology, SCR token governance, ecosystem protocols, risks, and investment opportunities. Whether you&apos;re a developer deploying smart contracts or an investor evaluating Layer 2s, this guide provides everything you need.
           </p>

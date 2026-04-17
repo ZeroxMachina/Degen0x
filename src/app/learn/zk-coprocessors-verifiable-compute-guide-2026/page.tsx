@@ -2,6 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -340,6 +342,8 @@ export default function ZKCoprocessorsPage() {
             <span style={pageStyles.badgeReading}>14 min read</span>
           </div>
           <h1 style={pageStyles.title}>ZK Coprocessors &amp; Verifiable Compute Guide</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={pageStyles.subtitle}>
             Master zero-knowledge coprocessors and verifiable computation. Learn how Axiom, Brevis, RISC Zero, and emerging protocols enable trustless off-chain computation for DeFi, RWA, and AI.
           </p>

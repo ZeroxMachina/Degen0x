@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -338,6 +340,8 @@ export default function MiCARegulationPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>MiCA Regulation Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>
           Master EU crypto compliance: understand MiCA requirements, stablecoin rules, licensing, penalties, and what it means for exchanges, DeFi, and investors.
         </p>

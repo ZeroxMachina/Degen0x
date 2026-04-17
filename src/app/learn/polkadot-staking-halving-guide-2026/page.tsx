@@ -6,6 +6,8 @@ import Link from "next/link";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { generateArticleSchema } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 const S = {
@@ -166,6 +168,8 @@ export default function Page() {
                     Polkadot's 2026 Staking Revolution
                 </h1>
 
+                <ReadingTime />
+                <AutoTOC />
                 {/* Opening Hook */}
                 <div
                     style={{

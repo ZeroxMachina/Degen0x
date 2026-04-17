@@ -8,6 +8,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -329,6 +331,8 @@ export default function BabylonProtocolGuidePage() {
           >
             Babylon Protocol: The Complete Bitcoin Staking Guide (2026)
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 18, color: "#c9d1d9", lineHeight: 1.7, marginBottom: 8 }}>
             Bitcoin earns yield now — without bridges, wrapping, or giving up custody.
           </p>

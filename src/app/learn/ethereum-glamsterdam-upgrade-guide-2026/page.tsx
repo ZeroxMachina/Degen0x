@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -251,6 +253,8 @@ export default function EthereumGlamsterdamUpgradeGuide() {
 
           <h1 style={h1Style}>Ethereum Glamsterdam Upgrade Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Glamsterdam is Ethereum&apos;s next major hard fork, targeting H1 2026 with two headline EIPs that reshape L1 scalability and MEV fairness. EIP-7732 enshrines proposer-builder separation into consensus, moving MEV resistance from off-chain to protocol. EIP-7928 enables parallel transaction execution through block-level access lists. Combined with gas repricing and a 3.3x gas limit increase, Glamsterdam targets 10,000 TPS — up from ~1,000 today. This is the biggest L1 upgrade since The Merge.
           </p>

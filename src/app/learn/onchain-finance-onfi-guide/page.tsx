@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -123,6 +125,8 @@ export default function OnChainFinanceGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#bc8cff] bg-clip-text text-transparent">
         On-Chain Finance (OnFi)
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         DeFi grew up. Now it's wearing a suit — and the institutions are showing up. Here's what OnFi is, how it works, and why 2026 is its breakout year.
       </p>

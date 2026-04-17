@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -216,6 +218,8 @@ export default function BitcoinTaprootGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Bitcoin</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Bitcoin Taproot Upgrade 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Bitcoin Taproot (BIP 340/341/342), activated November 2021, was the network&apos;s most significant upgrade in years. It introduced Schnorr signatures (saving ~70% on multisig transaction size), Merkelized Abstract Syntax Trees (MAST) enabling scalable smart contracts, and revolutionary privacy improvements making all transactions indistinguishable on-chain. By April 2026, Taproot powers 25% of all Bitcoin UTXOs, Layer 2 protocols like Lightning Network, and the Ordinals inscription boom. This comprehensive guide explores Taproot&apos;s three pillars, adoption metrics, technical specifications (BIP 340/341/342), integration with Lightning, and why adoption is both accelerating and still facing headwinds.
           </p>

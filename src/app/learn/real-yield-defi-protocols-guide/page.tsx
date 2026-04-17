@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -221,6 +223,8 @@ export default function RealYieldDeFiProtocolsGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Real Yield DeFi Protocols 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             The "yield farming" boom of 2020-2021 promised 1000% APY but collapsed spectacularly—tokens hyperinflated, new users dried up, protocols died. "Real yield" is the opposite: sustainable returns from actual protocol revenue (trading fees, liquidations, flash loan fees). By April 2026, real yield protocols have matured. GMX distributed $150M+ in fees to liquidity providers. dYdX shares 50% of trading fees with dYdX token holders. Aave distributes governance revenue. Lido captures Ethereum staking value. This guide compares major real yield protocols, explains how to measure sustainability via Token Terminal, and shows how to identify protocols likely to exist in 5+ years.
           </p>

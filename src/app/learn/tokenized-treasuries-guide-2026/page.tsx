@@ -9,6 +9,8 @@ import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -142,6 +144,8 @@ export default function TokenizedTreasuriesGuidePage() {
           Tokenized Treasuries 2026: Earn T-Bill Yield On-Chain with BlackRock &amp; Ondo
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p
           className="text-lg"
           style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}

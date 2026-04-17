@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -194,6 +196,8 @@ export default function SymbioticProtocolRestakingGuidePage() {
           >
             Symbiotic Protocol Guide 2026: Permissionless Restaking for Any Asset
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             Symbiotic is the first fully permissionless restaking protocol on Ethereum, allowing users to deposit any ERC-20 token to secure external networks — from oracles to bridges to appchains. With $1.6B+ TVL and 70+ networks relying on its security, Symbiotic has become critical restaking infrastructure in 2026.
           </p>

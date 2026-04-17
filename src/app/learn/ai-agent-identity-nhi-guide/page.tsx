@@ -9,6 +9,8 @@ import InteractiveTOC from "./InteractiveTOC";
 import InteractiveCards from "./InteractiveCards";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // Export metadata for server-side rendering
@@ -154,6 +156,8 @@ export default function AIAgentIdentityPage() {
             AI Agent Identity (NHI) Guide 2026: Non-Human Identities & Cryptographic Identity
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             In 2026, AI agents vastly outnumber humans in financial services—96 agents per human employee. But agents operating autonomously need cryptographic proof of identity. This comprehensive guide explores Non-Human Identities (NHIs), cryptographic infrastructure, World AgentKit, Coinbase x402 payments, and Know Your Agent standards. Learn how the agent economy is shifting from a bottleneck in intelligence to a bottleneck in identity infrastructure.
           </p>

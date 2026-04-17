@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -226,6 +228,8 @@ export default function SmartContractSecurityAuditGuide2026() {
 
           <h1 style={h1Style}>Smart Contract Security Audit Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Smart contract audits are essential gatekeepers in DeFi. By April 2026, the top audit firms have completed over 2,500 audits, preventing an estimated $10 billion+ in potential losses. This guide covers the leading audit firms (OpenZeppelin, Trail of Bits, CertiK, Consensys Diligence, Spearbit, Code4rena), the most dangerous vulnerabilities (reentrancy, flash loan attacks, integer overflow), formal verification breakthroughs, bug bounties on Immunefi, and how to evaluate protocol security before depositing your funds.
           </p>

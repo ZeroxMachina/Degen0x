@@ -7,6 +7,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -151,6 +153,8 @@ export default function UniswapV4HooksGuidePage() {
             Uniswap v4 Hooks: The Complete Guide for 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.75, marginBottom: 12 }}>
             Uniswap v4 launched in January 2025 with a feature that quietly rewrites what a DEX can be:
             <strong style={{ color: "#e6edf3" }}> Hooks</strong>. Instead of one fixed AMM design, any

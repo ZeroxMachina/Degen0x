@@ -6,6 +6,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'DYOR Crypto: How to Research Any Token Before Buying (2026)',
@@ -156,6 +158,8 @@ export default function DYORTokenResearchGuidePage() {
             DYOR: How to Research Any Crypto Token Before Buying in 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           {/* Meta Info */}
           <div style={{ marginBottom: '32px', color: '#8b949e', fontSize: '14px' }}>
             <p>Updated March 2026 · 12 min read</p>

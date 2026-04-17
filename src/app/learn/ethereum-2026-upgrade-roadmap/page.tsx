@@ -6,6 +6,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -190,6 +192,8 @@ export default function EthereumUpgradeRoadmapPage() {
           }}>
             Ethereum&apos;s 2026 Upgrade Roadmap: Fusaka, Glamsterdam &amp; What&apos;s Next
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             Two major Ethereum upgrades have already shipped or are landing in 2026 — Fusaka
             (December 2025) and Glamsterdam (mid-2026). If you hold ETH, use Layer 2s, or stake

@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Fluent: Blended Execution rWASM L2 Guide 2026 | Degen0x',
@@ -93,6 +95,8 @@ export default function FluentBlendedExecutionL2Guide() {
         </nav>
 
         <h1 className="font-bold mb-4" style={{ fontSize: 'clamp(1.8rem, 5vw, 2.5rem)' }}>Fluent: Blended Execution rWASM L2 Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-gray-300 mb-8">
           Fluent is one of the most architecturally distinctive Layer 2s shipping in 2026. Instead of picking sides in the EVM-vs-Wasm debate, Fluent runs them inside the same virtual machine so Solidity and Rust contracts can call each other in a single atomic transaction. This guide breaks down how blended execution works, why rWASM matters, and where Fluent fits in the modular L2 landscape.
         </p>

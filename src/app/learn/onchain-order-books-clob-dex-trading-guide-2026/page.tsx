@@ -3,6 +3,8 @@ import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -249,6 +251,8 @@ export default function OnchainOrderBooksGuide() {
 
           <h1 style={h1Style}>Onchain Order Books &amp; CLOBs Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Onchain order books and Central Limit Order Books (CLOBs) represent a fundamental alternative to Automated Market Makers. Instead of bonding curves and liquidity pools, CLOBs match buyers and sellers directly through order matching engines. This guide explores how CLOBs work, compares them to AMMs, examines leading protocols like dYdX v4, Sei, Orderly Network, and Solana CLOBs, and reveals why the future of DEX trading may require both models coexisting.
           </p>

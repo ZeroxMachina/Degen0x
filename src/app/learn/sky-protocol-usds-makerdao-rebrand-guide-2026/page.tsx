@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -127,6 +129,8 @@ export default function SkyProtocolGuide2026() {
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
           Sky Protocol Guide 2026: USDS, SKY & the MakerDAO Rebrand
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-slate-400 mb-8">Updated April 2026 · ~11 min read</p>
 
         <p className="text-lg leading-relaxed mb-6">

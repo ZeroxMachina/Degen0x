@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -243,6 +245,8 @@ export default function TariffsTradeWarGuide() {
 
         <h1 style={S.h1}>Tariffs &amp; Trade Wars: Impact on Crypto Markets 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={S.subtitle}>
           How trade policy, tariff shocks, and geopolitical escalation reshape Bitcoin&apos;s
           macro narrative and drive crypto volatility in 2026.

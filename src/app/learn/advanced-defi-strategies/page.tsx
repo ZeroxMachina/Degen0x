@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -32,6 +34,8 @@ export default function AdvancedDeFiStrategiesPage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Advanced DeFi Strategies 2026: Looping, Delta-Neutral, LPing & More
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Beyond basic yield farming, advanced DeFi users deploy sophisticated strategies: leveraged looping, delta-neutral positions, concentrated liquidity management, and restaking stacks. This guide breaks down each strategy, the protocols that enable it, typical APYs, and the real risks involved.
           </p>

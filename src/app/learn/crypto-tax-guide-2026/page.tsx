@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -161,6 +163,8 @@ export default function CryptoTaxGuide2026() {
           Crypto Tax Guide 2026: IRS Rules, 1099-DA, DeFi & Staking
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p
           style={{
             fontSize: "18px",

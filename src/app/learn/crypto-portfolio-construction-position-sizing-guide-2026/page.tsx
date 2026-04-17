@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -157,6 +159,8 @@ export default function CryptoPortfolioConstructionGuide() {
 
           <h1 style={h1Style}>Crypto Portfolio Construction &amp; Position Sizing Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '1rem', color: '#8b949e', marginBottom: '20px', marginTop: '16px' }}>
             Crypto assets are 5-10x more volatile than traditional markets, making portfolio construction critical. This guide covers allocation frameworks, the Kelly Criterion, risk parity, correlation analysis, and rebalancing strategies to maximize risk-adjusted returns. Learn how professional traders size positions, allocate across BTC, ETH, and alternatives, and manage portfolio risk systematically.
           </p>

@@ -5,6 +5,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -142,6 +144,8 @@ export default function PythNetworkGuide() {
 
         <h1 style={h1Style}>Pyth Network Guide 2026 — Cross-Chain Oracle, Price Feeds &amp; PYTH</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>
           Pyth Network is a decentralized pull-based oracle that delivers real-time price data from institutional sources to 50+ blockchains. Unlike traditional push oracles that post prices on a schedule, Pyth lets DeFi protocols request the freshest price exactly when they need it — paying a micro-fee per update. This guide explains how Pyth works, what makes its architecture different, how PYTH token staking secures the network, and where the risks lie.
         </p>

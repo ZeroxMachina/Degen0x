@@ -6,6 +6,8 @@ import { SITE_URL } from "@/lib/constants";
 import PayFiYieldCalculator from "@/components/PayFiYieldCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -132,6 +134,8 @@ export default function PayFiGuidePage() {
       <h1 className="text-4xl font-bold mb-3" style={{ color: "var(--color-text)" }}>
         PayFi: The Convergence of Payments and DeFi
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-lg mb-2" style={{ color: "var(--color-text-secondary)" }}>
         What if your money earned yield <em>while it was being sent?</em> That's the core promise of PayFi — and in 2026, it's already processing billions.
       </p>

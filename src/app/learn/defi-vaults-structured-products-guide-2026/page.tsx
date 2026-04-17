@@ -6,6 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -150,6 +152,8 @@ export default function DeFiVaultsGuide() {
             DeFi Vaults Guide 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ ...pStyle, fontSize: 18, color: "#8b949e", marginBottom: 24 }}>
             Understand how smart contract vaults automate yield generation across lending, liquidity provision, options strategies, and more. Explore the protocols reshaping DeFi with $12B+ in total value locked.
           </p>

@@ -9,6 +9,8 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -148,6 +150,8 @@ export default function MonadBlockchainGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#836EF9] to-[#58a6ff] bg-clip-text text-transparent">
         Monad Blockchain: The Parallel EVM L1 Explained
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         Monad launched mainnet on November 24, 2025 with a bold claim: 10,000 TPS through optimistic
         parallel execution. Backed by Paradigm and Coinbase Ventures with $244 million in funding,

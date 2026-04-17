@@ -50,6 +50,8 @@ export default function AccountAbstractionPage() {
             Account Abstraction Guide 2026: Smart Wallets & ERC-4337
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Account Abstraction (ERC-4337) is revolutionizing how users interact with blockchain. In 2026, Smart Contract Wallets powered by Account Abstraction enable gas sponsorship, social recovery, batch transactions, and session keys — removing barriers to crypto adoption. This guide covers the architecture, top implementations, and how to integrate AA into your dApp.
           </p>
@@ -418,6 +420,8 @@ export default function AccountAbstractionPage() {
 import { sepolia } from '@alchemy/chains';
 import RelatedContent from '@/components/RelatedContent';
 import AuthoritySources from '@/components/AuthoritySources';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const client = await createModularAccountAlchemyClient({
   chain: sepolia,

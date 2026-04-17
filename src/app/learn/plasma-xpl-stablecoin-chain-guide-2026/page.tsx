@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -134,6 +136,8 @@ export default function PlasmaXplGuide2026() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Plasma (XPL) Stablecoin Chain Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-xl text-zinc-400 leading-relaxed">
             A Bitcoin-anchored, EVM-compatible Layer 1 purpose-built for stablecoins — with zero-fee USDT transfers as a first-class protocol feature.
           </p>

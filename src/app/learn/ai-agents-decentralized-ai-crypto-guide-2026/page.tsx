@@ -3,6 +3,8 @@ import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -251,6 +253,8 @@ export default function AIAgentsGuide() {
 
           <h1 style={h1Style}>AI Agents &amp; Decentralized AI in Crypto — Complete Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             AI agents are autonomous software entities that make decisions and execute transactions on-chain without human intervention. In 2026, AI agents are revolutionizing crypto: they autonomously manage DeFi positions, execute yield strategies, trade crypto, and participate in decentralized ML networks. The AI agent sector has grown to ~$15.3B in market cap, with protocols like Bittensor (decentralized ML compute), Virtuals Protocol (tokenized agents), Render Network (GPU acceleration), and ai16z (Solana DAO) leading the charge. This guide explains how AI agents work, the top protocols shaping the space, how agents generate yield in DeFi, the emerging "Agentic Web" concept, and how to navigate risks.
           </p>

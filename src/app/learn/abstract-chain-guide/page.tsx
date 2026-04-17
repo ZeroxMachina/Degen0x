@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -151,6 +153,8 @@ export default function AbstractChainGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#3fb950] bg-clip-text text-transparent">
         What Is Abstract Chain? The Consumer Crypto L2 Explained
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         Abstract is an Ethereum Layer 2 built by the creators of Pudgy Penguins with one goal:
         make crypto as simple as using any other app. Built on ZK rollup technology with native

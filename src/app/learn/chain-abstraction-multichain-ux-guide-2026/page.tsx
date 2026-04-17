@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -330,6 +332,8 @@ export default function ChainAbstractionPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Chain Abstraction — The End of Multi-Chain Complexity</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>Updated: April 2026 · 11 min read</div>
 
         <p style={pStyle}>

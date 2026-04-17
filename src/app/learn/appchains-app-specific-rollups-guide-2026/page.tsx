@@ -8,6 +8,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import { SITE_URL } from '@/lib/constants';
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Appchains & App-Specific Rollups Guide 2026 | degen0x',
@@ -162,6 +164,8 @@ export default function AppChainsGuide() {
             Appchains & App-Specific Rollups
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '16px', marginBottom: '20px' }}>
             Updated March 2026 · 14 min read
           </p>

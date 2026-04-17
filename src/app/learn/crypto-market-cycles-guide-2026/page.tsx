@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL, SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -123,6 +125,8 @@ export default function CryptoMarketCyclesPage() {
             Crypto Market Cycles Guide 2026: Bull Runs, Bear Markets & Cycle Positioning
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Bitcoin's 2025 peak of $126,296 followed by a 46.7% decline to $67,550 by February 2026 illustrates the cyclical nature of crypto markets. This comprehensive guide breaks down the four phases of market cycles, explains the halving mechanism, reveals what on-chain indicators tell us, and positions you to navigate the current 2024-2028 cycle with confidence.
           </p>

@@ -2,6 +2,8 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { Metadata } from 'next';
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Crypto Passive Income Complete Guide 2026 | degen0x',
@@ -422,6 +424,8 @@ export default function CryptoPassiveIncomeGuide() {
     >
             Crypto Passive Income Complete Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: 16, margin: 0 }}>
             Updated April 2026 · 15 min read
           </p>

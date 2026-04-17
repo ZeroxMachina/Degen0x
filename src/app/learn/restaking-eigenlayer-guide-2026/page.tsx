@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -219,6 +221,8 @@ export default function RestakingEigenLayerGuide() {
 
           <h1 style={h1Style}>Restaking &amp; EigenLayer Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Restaking transforms Ethereum staking from a passive operation into a multi-layer yield strategy. By April 2026, the restaking ecosystem has grown to over $28.6 billion in total value locked, with EigenLayer dominating at 93.9% market share. This guide explains how restaking works, compares the major platforms (EigenLayer, Symbiotic, Karak), and walks you through the risks and opportunities of turning your stake into a security resource for emerging protocols.
           </p>

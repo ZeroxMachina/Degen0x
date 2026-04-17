@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -142,6 +144,8 @@ export default function DAOGovernanceVotingGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             DAO Governance &amp; Onchain Voting 2026: The Future of Decentralized Decision-Making
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: 16, lineHeight: 1.7 }}>
             For years, DAOs promised democratic governance — token holders collectively deciding a protocol&apos;s future. But 2025-2026 revealed a crisis: pure token voting creates whale dominance, governance attack vectors, and decision paralysis. Tally&apos;s shutdown after 6 years marked the end of an era. This guide covers the governance renaissance: how voting actually works, why old models are breaking, and the next generation of decision-making systems emerging in 2026. Whether you&apos;re voting on Snapshot, executing proposals on Tally, or betting on governance outcomes via decision markets, this is your complete roadmap.
           </p>

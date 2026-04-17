@@ -4,6 +4,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -204,6 +206,8 @@ export default function SmartWalletsGuide2026Page() {
               WebkitTextFillColor: "transparent",
             }}>No Seed Phrases, No Gas Fees, No Friction</span>
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             The era of 12-word seed phrases and confusing gas popups is ending. Smart wallets —
             powered by account abstraction (ERC-4337) — let you log in with Face ID, skip gas fees

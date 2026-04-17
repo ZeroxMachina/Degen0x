@@ -2,6 +2,8 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -33,6 +35,8 @@ export default function SymbioticRestakingPage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Symbiotic Restaking Guide 2026: EigenLayer's Main Competitor Explained
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Symbiotic emerged as EigenLayer's primary competitor in the restaking space, backed by Lido (the largest liquid staking protocol) and Paradigm. While EigenLayer only supports ETH and LSTs from Ethereum, Symbiotic supports any ERC-20 token as collateral — enabling protocols, DAOs, and networks to use their own tokens for crypto-economic security.
           </p>

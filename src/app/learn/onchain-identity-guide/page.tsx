@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -155,6 +157,8 @@ export default function OnchainIdentityGuide() {
             Onchain Identity Guide 2026: ENS, SBTs, Attestations & The Future of Web3
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           {/* Metadata */}
           <div className="flex flex-wrap gap-4 text-sm" style={{ color: '#8b949e' }}>
             <span>📖 12 min read</span>

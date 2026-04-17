@@ -2,6 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -335,6 +337,8 @@ export default function SmartContractSecurityPage() {
             <span style={pageStyles.badgeReading}>18 min read</span>
           </div>
           <h1 style={pageStyles.title}>Smart Contract Security Audits &amp; DeFi Safety Guide</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={pageStyles.subtitle}>
             Learn how to evaluate smart contract security, understand audit types, identify vulnerabilities, and protect your crypto assets in DeFi.
           </p>

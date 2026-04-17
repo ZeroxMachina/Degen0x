@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -241,6 +243,8 @@ export default function InstitutionalCustodyGuide() {
 
           <h1 style={h1Style}>Institutional Crypto Custody Solutions 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Institutional crypto custody has evolved from a niche service into mission-critical infrastructure for banks, pension funds, and enterprises holding digital assets. With SAB 121 repeal clearing regulatory hurdles and MPC technology maturing, 2026 marks the inflection point where traditional finance fully integrates cryptocurrency custody. This guide covers the architecture of custody solutions (MPC, HSM, multi-sig), leading providers, compliance frameworks, and how to evaluate which custody model fits your institution.
           </p>

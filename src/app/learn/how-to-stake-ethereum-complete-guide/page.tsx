@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -207,6 +209,8 @@ export default function HowToStakeEthereumCompleteGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>How to Stake Ethereum: Complete Guide 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Learn four Ethereum staking methods: Solo staking (32 ETH, 4.2% APY), Lido stETH (any amount, 3.8%), Rocket Pool rETH (decentralized, 3.8%), Coinbase cbETH (centralized, 3.5%). Compare risks, fees, and rewards.
           </p>

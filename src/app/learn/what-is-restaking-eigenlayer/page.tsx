@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -217,6 +219,8 @@ export default function WhatIsRestakingEigenLayer() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           </div>
           <h1 style={h1Style}>What Is Restaking & EigenLayer 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Restaking is supercharging ETH staking. Ethereum staking earns 3.5% APY. Restaking on EigenLayer earns 15-20% APY by securing other protocols (AVS). EigenLayer has exploded to $23B TVL (April 2026), the fastest-growing DeFi protocol. Liquid restaking tokens like eETH ($4.2B), rsETH ($1.8B), and pufETH ($950M) make restaking accessible. But there&apos;s a catch: slashing risk. This comprehensive guide covers how restaking works, why yields are high, and how to evaluate LRTs.
           </p>

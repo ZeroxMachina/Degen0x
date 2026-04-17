@@ -6,6 +6,8 @@ import { SITE_NAME } from "@/lib/constants";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "PEAQ & DePIN Robotics Guide 2026 | degen0x",
@@ -201,6 +203,8 @@ export default function PeaqDeginRoboticsGuidePage() {
             PEAQ & DePIN Robotics Guide 2026: The Machine Economy
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           {/* Meta line */}
           <p style={{ fontSize: 14, color: S.text2, marginBottom: 28, lineHeight: 1.6 }}>
             Published March 16, 2026 • 3,000 words • 11 min read

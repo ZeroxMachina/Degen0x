@@ -6,6 +6,8 @@ import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -176,6 +178,8 @@ export default function CryptoRetirementIRAGuidePage() {
             Crypto IRA Guide 2026: Bitcoin & Crypto Retirement Accounts
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.6' }}>
             Crypto retirement accounts are accelerating in 2026, with major institutions like Hostplus considering offering Bitcoin and digital assets to millions of members. This comprehensive guide explains crypto IRAs, the best providers, fee structures, tax advantages, and how to invest in cryptocurrency for retirement.
           </p>

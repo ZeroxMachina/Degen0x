@@ -4,6 +4,8 @@ import Link from 'next/link';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 const pageStyles = {
@@ -332,6 +334,8 @@ export default function SocialFiGuidePage() {
 
       {/* Header */}
       <h1 style={pageStyles.title}>SocialFi: Social Finance &amp; Creator Tokens Guide 2026</h1>
+      <ReadingTime />
+      <AutoTOC />
       <p style={pageStyles.subtitle}>
         Decentralized social platforms, creator monetization, and the future of onchain communities
       </p>

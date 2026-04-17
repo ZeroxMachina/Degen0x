@@ -6,6 +6,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Crypto Inheritance Planning 2026: Protect Your Digital",
@@ -170,6 +172,8 @@ export default function CryptoInheritancePlanningPage() {
           Crypto Inheritance Planning 2026: Protect Your Digital Assets for Your Heirs
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Meta Information */}
         <div
           style={{

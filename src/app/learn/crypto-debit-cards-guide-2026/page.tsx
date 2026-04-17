@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -202,6 +204,8 @@ export default function CryptoDebitCardsGuide2026Page() {
           Best Crypto Debit Cards 2026: Spend Your Bitcoin & Stablecoins Anywhere
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>
           One of the oldest problems in crypto — how do you actually <em>spend</em> it? — has been largely
           solved. In 2026, a growing number of Visa and Mastercard-backed crypto debit cards let you spend

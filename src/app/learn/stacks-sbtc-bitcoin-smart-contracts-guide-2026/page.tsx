@@ -7,6 +7,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -146,6 +148,8 @@ export default function StacksSBTCGuidePage() {
             Stacks & sBTC Guide 2026: Bitcoin Smart Contracts, DeFi & the Satoshi Upgrades
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Bitcoin is the world's largest blockchain, but it's intentionally limited for security. Stacks changes that. It's the leading Layer 2 that brings smart contracts, DeFi, and programmability to Bitcoin without compromising its security. sBTC is the 1:1 BTC-backed token that powers Stacks DeFi. This guide breaks down how Stacks works, the upcoming Satoshi Upgrades that will transform Bitcoin forever, and how to navigate the competing visions for Bitcoin DeFi.
           </p>

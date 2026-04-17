@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -67,6 +69,8 @@ export default function GrayscaleHYPEETFGuide() {
           <h1 style={{ fontSize: "2.5rem", fontWeight: 900, marginBottom: 16, lineHeight: 1.2 }}>
             Grayscale HYPE ETF Guide: The First DeFi Protocol ETF Filing Explained
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: S.text2, fontSize: "1.1rem", marginBottom: 24, lineHeight: 1.8 }}>
             Understanding Grayscale&apos;s historic S-1 filing for GHYP, what Hyperliquid represents for DeFi infrastructure, and what this means for institutional adoption of decentralized derivatives.
           </p>

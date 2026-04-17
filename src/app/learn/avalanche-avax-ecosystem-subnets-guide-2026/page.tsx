@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Avalanche (AVAX) Ecosystem & L1 Chains Guide 2026',
@@ -237,6 +239,8 @@ export default function AvalancheEcosystemPage() {
           Avalanche (AVAX) Ecosystem & L1 Chains Guide 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Description */}
         <p
           style={{

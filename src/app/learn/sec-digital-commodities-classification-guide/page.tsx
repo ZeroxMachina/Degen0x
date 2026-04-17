@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -146,6 +148,8 @@ export default function SECDigitalCommoditiesPage() {
               SEC Digital Commodities List 2026: The Complete Classification Guide
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
               On March 17, 2026, the SEC and CFTC released a binding joint interpretation that settled one of crypto&apos;s biggest regulatory questions: which digital assets are commodities, not securities. Bitcoin, Ethereum, Solana, and 13 others are now officially classified as digital commodities. Here&apos;s what that means—and what it doesn&apos;t.
             </p>

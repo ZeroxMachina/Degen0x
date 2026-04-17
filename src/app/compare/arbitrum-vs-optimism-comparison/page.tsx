@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -170,6 +172,8 @@ export default function ArbitrumVsOptimism() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           </div>
           <h1 style={h1Style}>Arbitrum vs Optimism</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             The two largest Ethereum Layer 2s by TVL and ecosystem size. Both are Optimistic Rollups offering 10-100x cheaper transactions. Arbitrum leads in TVL and protocols; Optimism emphasizes simplicity and governance. This guide covers architecture, fees, ecosystems, and decentralization roadmaps.
           </p>

@@ -4,6 +4,8 @@ import StructuredData from '@/components/StructuredData'
 import Breadcrumb from '@/components/Breadcrumb'
 import BackToTop from '@/components/BackToTop'
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -107,6 +109,8 @@ export default function StablechainsGuidePage() {
       <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-3">
         Stablechains Guide 2026: Circle Arc, Plasma & Stripe Tempo Explained
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-gray-400 text-lg mb-2">
         Stablechains are Layer 1 blockchains purpose-built for stablecoin payments — not world computers, but specialized payment processors on blockchain rails. Learn how Circle Arc, Plasma, and Stripe Tempo compete with Visa and SWIFT, backed by institutions like Stripe, Mastercard, and Bitfinex.
       </p>

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -209,6 +211,8 @@ export default function CryptoIndexFundsOnchainkBasketInvestingGuide2026() {
 
           <h1 style={h1Style}>Crypto Index Funds & On-Chain Basket Investing 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Diversifying a crypto portfolio manually is tedious: tracking 20 tokens, rebalancing quarterly, managing taxes. Crypto indices solve this. DPI (Diversified Portfolio Index) holds the top 10 DeFi tokens, auto-rebalancing quarterly. MVI (Market Vectors DeFi Index) holds 20 mid-cap DeFi tokens. Index Coop pioneered tokenized indices; Enzyme Finance enables professional fund managers to create custom indices. This guide explores how on-chain indices work, compares DPI vs MVI vs building DIY indices, and analyzes fees. By April 2026, Index Coop manages $50M+ TVL across indices—growing proof that passive crypto investing is here.
           </p>

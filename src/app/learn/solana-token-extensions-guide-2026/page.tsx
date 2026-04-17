@@ -6,6 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FaqAccordion from "./FaqAccordion";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const FAQ_ITEMS = [
   {
@@ -165,6 +167,8 @@ export default function SolanaTokenExtensionsGuide() {
           Solana Token Extensions Guide 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p
           style={{
             fontSize: '1.25rem',

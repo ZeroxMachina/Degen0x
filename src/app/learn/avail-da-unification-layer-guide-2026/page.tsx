@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import FAQAccordion from '@/components/FAQAccordion';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -155,6 +157,8 @@ const AvailGuide = () => {
     >
             Avail: The DA Unification Layer
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="mb-6 text-lg text-[#c9d1d9]">
             Comprehensive guide to Avail&apos;s modular data availability layer, Nexus multichain
             coordination engine, and Fusion shared security protocol. Learn how Avail bridges

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -184,6 +186,8 @@ export default function HyperliquidDEXGuide() {
 
           <h1 style={h1Style}>Hyperliquid DEX &amp; HYPE Chain: Complete Perpetual Futures Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '16px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.7' }}>
             Hyperliquid is a Layer 1 blockchain purpose-built for trading, commanding 70%+ of decentralized perpetual futures open interest as of 2026. It uses custom HyperBFT consensus to deliver 200,000 TPS, a fully on-chain order book with one-block finality, and a native EVM-compatible smart contract layer (HyperEVM). With $7.7B open interest, $600M–$6.2B TVL, and 24h HYPE volume around $280M, Hyperliquid has established itself as the premier on-chain derivatives protocol. This guide explores the architecture (HyperBFT, HyperCore, HyperEVM), the HYPE token economy, how to trade perpetuals and spot, and how Hyperliquid compares to dYdX, GMX, Vertex, and Jupiter Perps.
           </p>

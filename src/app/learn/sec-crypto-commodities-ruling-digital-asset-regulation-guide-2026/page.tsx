@@ -3,6 +3,8 @@ import Link from 'next/link';
 import FAQAccordion from '@/components/FAQAccordion';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -331,6 +333,8 @@ export default function SECCFTCRulingGuide() {
               SEC/CFTC Digital Commodities Ruling 2026
             </h1>
 
+            <ReadingTime />
+            <AutoTOC />
             <p className="text-lg text-[#8b949e] max-w-3xl">
               Complete guide to the historic March 17, 2026 SEC/CFTC joint ruling classifying 16 digital assets as commodities, explaining staking regulation, ETF implications, and the path to permanent law through the CLARITY Act.
             </p>

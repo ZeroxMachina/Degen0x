@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -163,6 +165,8 @@ export default function MerkleTreeBlockchainExplained() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Merkle Trees in Blockchain: Structure, Proofs &amp; Ethereum State</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Merkle trees are the cryptographic backbone of blockchain. Master hash trees, Merkle proofs for SPV verification, Patricia Merkle Tries (Ethereum state root), Merkle airdrops, Merkle Mountain Ranges, and Verkle trees roadmap for stateless clients.
           </p>

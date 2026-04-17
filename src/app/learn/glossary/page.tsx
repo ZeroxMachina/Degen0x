@@ -5,6 +5,8 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 interface GlossaryTerm {
   term: string;
@@ -111,6 +113,8 @@ export default function GlossaryPage() {
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Crypto Glossary</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto">
             {GLOSSARY.length} essential crypto terms explained in plain English. From blockchain basics to advanced DeFi concepts.
           </p>

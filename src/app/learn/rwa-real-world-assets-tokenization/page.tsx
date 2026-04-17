@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -207,6 +209,8 @@ export default function RWARealWorldAssetsTokenization() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>RWA Real-World Assets Tokenization 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Tokenize real assets on-chain: US Treasury bonds (Ondo USDY, Franklin FTTC, BlackRock BUIDL), real estate (RealT), corporate credit (Maple). Earn 4-8% yield, 24/7 trading, zero intermediaries.
           </p>

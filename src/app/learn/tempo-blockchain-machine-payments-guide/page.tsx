@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -124,6 +126,8 @@ export default function TempoBlockchainMPPGuide() {
           <span className="text-xs px-3 py-1 rounded-full font-bold" style={{ background: "#6366f120", color: "#6366f1" }}>18 min read</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "var(--color-text)", lineHeight: "1.2" }}>Tempo Blockchain & Machine Payments Protocol: Complete Guide for 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>Stripe and Paradigm&apos;s $5 billion Layer 1 is live. Discover how Tempo&apos;s sub-second finality and the Machine Payments Protocol (MPP) are enabling AI agents and enterprises to transact at internet scale with stablecoins. The payment rails of tomorrow, built for today.</p>
       </div>
 

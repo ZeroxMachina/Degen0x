@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -250,6 +252,8 @@ export default function ConcentratedLiquidityGuide() {
 
           <h1 style={h1Style}>Concentrated Liquidity Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Concentrated liquidity represents the frontier of LP yield generation. By concentrating capital in specific price ranges instead of the full AMM curve, LPs can earn 20-100% APR on volatile pairs while dramatically improving capital efficiency. Uniswap v4, launched January 2025, achieved $100B+ cumulative volume and $1B TVL in just 177 days, powered by Hooks—modular smart contracts that enable custom pool behavior like dynamic fees, limit orders, and auto-rebalancing. However, concentrated positions amplify impermanent loss and require active management or automation. This guide covers Uniswap v4 hooks, alternative CLAMM protocols (Trader Joe, Maverick, Ambient), core LP strategies, impermanent loss mitigation, advanced 2026 tactics, and risk management. Master concentrated liquidity and unlock professional-grade yield.
           </p>

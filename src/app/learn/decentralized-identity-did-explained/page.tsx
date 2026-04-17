@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -223,6 +225,8 @@ export default function DecentralizedIdentityDID() {
 
           <h1 style={h1Style}>Decentralized Identity (DID) 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Decentralized identity (DID) is a paradigm shift from centralized identity providers (Google, Apple) to self-sovereign identity owned by you. By April 2026, 847K DIDs are active across all methods per the W3C DID registry. Lens Protocol has 1.2M+ profiles on Polygon. Worldcoin&apos;s World ID has issued 10M+ biometric proofs of personhood. This guide covers the W3C DID standard, practical implementations (ENS, Lens, Worldcoin, Polygon ID), soulbound tokens for on-chain credentials, privacy-preserving zero-knowledge identity proofs, and how DIDs replace usernames with cryptographic identifiers. Whether you&apos;re a builder launching a Web3 app or a user tired of password resets, DIDs enable password-less login, portable identity, and privacy-first verification.
           </p>

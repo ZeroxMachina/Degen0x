@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -32,6 +34,8 @@ export default function PumpFunMemecoinPage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Pump.fun & Memecoins Guide 2026: How Token Launches Work and Survival Strategy
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Pump.fun revolutionized token creation on Solana, enabling anyone to launch a memecoin in 30 seconds with $2. In 2025-2026, Pump.fun processed over $10 billion in trading volume and spawned thousands of tokens daily. This guide explains the bonding curve mechanics, how launches work, survival rates, and the strategies real traders use.
           </p>

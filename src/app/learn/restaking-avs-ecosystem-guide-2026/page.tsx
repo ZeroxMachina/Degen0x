@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -247,6 +249,8 @@ export default function RestakingAVSEcosystemGuidePage() {
           }}>
             Restaking &amp; AVS Ecosystem Guide: Shared Security in 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             Restaking has grown from a niche experiment to a $25B+ ecosystem in under two years.
             The core idea is elegant: take ETH that&apos;s already securing Ethereum and use it to

@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -196,6 +198,8 @@ export default function PerpetualDexGuide() {
 
           <h1 style={h1Style}>Perpetual DEX Trading Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Decentralized perpetual exchanges now handle over $26 billion in daily volume — rivaling centralized giants like Binance and Bybit. Hyperliquid alone commands 80% of the market with zero gas fees, sub-second finality, and up to 50x leverage. This guide covers how perpetual DEXs work, compares the top platforms, and walks you through the mechanics of trading decentralized derivatives in 2026.
           </p>

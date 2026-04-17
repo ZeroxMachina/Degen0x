@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: 'Ethereum Fusaka & PeerDAS Upgrade Guide 2026 | Degen0x',
@@ -134,6 +136,8 @@ export default function FusakaPeerdasGuide() {
       </nav>
 
       <h1 style={h1Style}>Ethereum Fusaka &amp; PeerDAS: The 2026 Upgrade Guide</h1>
+      <ReadingTime />
+      <AutoTOC />
       <p style={{ ...pStyle, fontSize: '1.2rem', color: '#8b949e' }}>
         Pectra gave wallets a new superpower. Fusaka does the same for data. Here&apos;s how PeerDAS, EOF, and the rest of the fork reshape Ethereum&apos;s scaling story in late 2026.
       </p>

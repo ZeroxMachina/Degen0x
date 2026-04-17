@@ -2,6 +2,8 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import { useState } from 'react';
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -113,6 +115,8 @@ export default function MPCWalletsGuide() {
           MPC Wallets Guide 2026
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: "18px", color: S.text2, marginBottom: "20px", lineHeight: "1.6" }}>
           Master the architecture of Multi-Party Computation wallets. Learn how institutional-grade custody splits private keys across multiple parties, eliminating single points of failure while maintaining blockchain compatibility.
         </p>

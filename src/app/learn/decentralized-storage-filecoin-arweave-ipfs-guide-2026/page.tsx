@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -330,6 +332,8 @@ export default function DecentralizedStorageGuide() {
 
         {/* Main Title */}
         <h1 style={h1Style}>Decentralized Storage Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.2rem', color: '#8b949e', marginBottom: '30px' }}>
           Master IPFS, Filecoin, Arweave, and Web3 storage solutions. Learn how decentralized storage works, compare protocols, understand token economics, and get started storing files on-chain.
         </p>

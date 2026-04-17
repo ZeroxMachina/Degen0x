@@ -5,6 +5,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Chain Abstraction Guide 2026: One Account, Every Chain",
@@ -195,6 +197,8 @@ export default function ChainAbstractionGuide2026() {
           Chain Abstraction Guide 2026: One Account, Every Chain
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Meta Line */}
         <p
           style={{

@@ -9,6 +9,8 @@ import {
   combineSchemas,
 } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -159,6 +161,8 @@ export default function AptosBlockchainGuidePage() {
             >
               Aptos Blockchain Guide 2026
             </h1>
+            <ReadingTime />
+            <AutoTOC />
             <p style={{ fontSize: "1.1rem", color: S.text2, marginBottom: 0 }}>
               Move language, $1B+ TVL, DeFi ecosystem, and real-world assets on
               the fastest growing Layer 1

@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -144,6 +146,8 @@ export default function EthenaUSDeSyntheticDollarGuide2026() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Ethena USDe Guide 2026: The Synthetic Dollar
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg text-zinc-400 leading-relaxed">
             How Ethena built the third-largest stablecoin without a single bank account — using delta-neutral
             hedging, perpetual futures funding rates, and a yield-bearing token that reshaped DeFi&apos;s

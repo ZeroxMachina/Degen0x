@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -240,6 +242,8 @@ export default function VeTokenomicsGuide() {
 
           <h1 style={h1Style}>veTokenomics &amp; Vote-Escrowed Tokens Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Vote-escrowed tokens revolutionized DeFi governance by tying voting power to long-term commitment. Instead of 1 token = 1 vote, protocols like Curve created veCRV: lock CRV for up to 4 years, earn governance power and 50% of trading fees. This simple mechanism sparked the "Curve Wars" — a multi-billion dollar competitive arms race for governance control. This guide explains how veTokenomics work, why they matter, the economics of bribe markets, and why some protocols are moving beyond the ve model entirely.
           </p>

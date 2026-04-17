@@ -8,6 +8,8 @@ import { SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -145,6 +147,8 @@ export default function LiquidRestakingTokensPage() {
             Liquid Restaking Tokens Compared 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             Liquid Restaking Tokens (LRTs) are one of the hottest DeFi narratives in 2026. They let you earn multiple layers of yield: staking rewards, restaking rewards, and protocol rewards. But they come with serious risks. This guide compares the top LRT protocols—weETH, rsETH, ezETH, and more—so you can choose the right one for your strategy.
           </p>

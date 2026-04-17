@@ -6,6 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 const S = {
@@ -93,6 +95,8 @@ export default function DecentralizedGPUComputeGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Decentralized GPU & Compute Networks Guide 2026: How DePIN Is Challenging AWS for AI Compute
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             The demand for GPU compute has exploded thanks to AI. Decentralized compute networks like Akash, Render, io.net, and Grass offer 60-80% cheaper alternatives to AWS/Azure by aggregating idle GPUs worldwide. This guide explains how decentralized compute works, compares the top networks, and shows how to use (or earn from) them.
           </p>

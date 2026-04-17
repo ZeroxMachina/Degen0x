@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -156,6 +158,8 @@ export default function EtherfiWeethLiquidRestakingGuide2026() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             ether.fi Guide 2026: weETH, Liquid Restaking & Cash
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg text-zinc-400 leading-relaxed">
             How a non-custodial restaking protocol turned ETH into the most composable
             yield-bearing collateral in DeFi — and attached a debit card to it.

@@ -12,6 +12,8 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -166,6 +168,8 @@ export default function EclipseSVMGuide() {
           }}>
             Eclipse (ES) Guide 2026: The First SVM Layer 2 on Ethereum
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             Eclipse is the first Solana Virtual Machine powered Layer 2 on Ethereum, combining SVM's parallel execution with Ethereum's settlement security and Celestia's data availability. After a dramatic pivot in 2025 from infrastructure provider to consumer app studio, Eclipse is betting on breakout applications to drive adoption. Here's what you need to know about the architecture, tokenomics, risks, and 2026 outlook.
           </p>

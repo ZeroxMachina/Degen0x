@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -158,6 +160,8 @@ export default function DePINGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, background: "linear-gradient(135deg, #6366f1, #06b6d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             DePIN: Decentralized Infrastructure Networks Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             DePIN networks are moving infrastructure ownership from megacorps to everyday operators. A $10-19B market today, DePIN is projected to reach $3.5 trillion by 2028. Whether you want to earn tokens running hotspots, providing GPU compute, or collecting mapping data, DePIN is the infrastructure layer where users become the network.
           </p>

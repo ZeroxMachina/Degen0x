@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -340,6 +342,8 @@ export default function AVSRestakingEconomyPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Actively Validated Services (AVS) & Restaking Economy Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={metaStyle}>Updated: April 2, 2026 | Reading Time: 14 min</div>
 
         <p style={pStyle}>

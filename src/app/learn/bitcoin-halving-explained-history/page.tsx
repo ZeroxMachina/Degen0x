@@ -2,6 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -351,6 +353,8 @@ export default function BitcoinHalvingPage() {
 
           <h1 style={pageStyles.title}>Bitcoin Halving Explained: History, Dates &amp; Price Impact</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={pageStyles.subtitle}>
             Understanding Bitcoin&apos;s most important event: halvings, mining rewards, the 2024 halving, and what to expect in 2028.
           </p>

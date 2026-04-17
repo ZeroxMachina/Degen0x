@@ -3,6 +3,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Solayer Guide 2026 — Solana Restaking, sSOL, sUSD &",
@@ -141,6 +143,8 @@ export default function SolayerGuide() {
 
         <h1 style={h1Style}>Solayer: Solana&amp;rsquo;s Restaking Protocol</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <div style={{ marginBottom: '30px' }}>
           <span style={badgeStyle}>Restaking Protocol</span>
           <span style={badgeStyle}>Solana DeFi</span>

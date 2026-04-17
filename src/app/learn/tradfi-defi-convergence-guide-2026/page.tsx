@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -245,6 +247,8 @@ export default function TradFiDeFiConvergenceGuide2026() {
           <h1 style={S.h1}>
             TradFi-DeFi Convergence 2026: How Institutions Are Going On-Chain
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={S.subtitle}>
             Traditional finance and DeFi are no longer separate worlds. JPMorgan processes $1 billion
             daily in tokenized payments, BlackRock&apos;s tokenized treasury fund holds $1.3B, and

@@ -8,6 +8,8 @@ import { generateArticleSchema, generateFAQSchema, generateHowToSchema, combineS
 import { ReactNode } from 'react';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -284,6 +286,8 @@ export default function ScrollGuide() {
             Scroll zkEVM Guide 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-xl text-[#8b949e] mb-2">
             Ethereum's Native Zero-Knowledge Layer 2: Complete Technical & Investment Guide
           </p>

@@ -3,6 +3,8 @@ import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -286,6 +288,8 @@ export default function CelestiaGuide() {
 
           <h1 style={h1Style}>Celestia (TIA) Modular Data Availability</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: "#8b949e", marginBottom: 8 }}>
             Updated on April 4, 2026 • Reading time: ~13 min
           </p>

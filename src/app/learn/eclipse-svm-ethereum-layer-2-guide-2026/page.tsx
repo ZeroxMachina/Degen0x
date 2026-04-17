@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum | degen0x",
@@ -260,6 +262,8 @@ export default function EclipseGuide() {
         </div>
 
         <h1 style={h1Style}>Eclipse: Solana VM Layer 2 on Ethereum</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ color: '#8b949e', fontSize: '1.1em', marginBottom: '30px' }}>
           Updated April 2026 · 15 min read
         </p>

@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -139,6 +141,8 @@ export default function CentralizedVsDecentralizedExchange() {
           <span style={{ ...badgeStyle, background: '#06b6d4', color: '#0d1117' }}>Compare</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Centralized vs Decentralized Exchange 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Compare CEX (Binance, Coinbase) and DEX (Uniswap, Jupiter): custody models, KYC requirements, fees, liquidity, speed, and regulatory risk.
           </p>

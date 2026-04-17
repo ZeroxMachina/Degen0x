@@ -4,6 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -222,6 +224,8 @@ export default function BitcoinLayer2Guide() {
 
           <h1 style={h1Style}>Bitcoin Layer 2 Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             For over a decade, Bitcoin was locked at 7 transactions per second. Layer 2 solutions are breaking this ceiling. By April 2026, Bitcoin L2s have scaled to ~91,332 BTC across all solutions, worth over $7.2 billion. This comprehensive guide explores how Lightning Network enables instant payments, how Stacks brings smart contracts to Bitcoin, how BitVM unlocks computation, and which L2 fits your use case. Whether you&apos;re a trader, developer, or casual hodler, Bitcoin is becoming more than digital gold—it&apos;s becoming a platform.
           </p>

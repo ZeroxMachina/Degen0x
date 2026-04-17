@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import OptionsPnLCalculator from "@/components/OptionsPnLCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -236,6 +238,8 @@ export default function DeFiOptionsTradingGuidePage() {
           }}>
             DeFi Options Trading Guide: How to Trade Crypto Options On-Chain in 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             Options are Wall Street&apos;s most versatile instrument — and DeFi has rebuilt them
             on-chain. You can now buy puts to hedge your ETH, sell covered calls for yield, or

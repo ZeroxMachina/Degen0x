@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -31,6 +33,8 @@ export default function BerachainGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Berachain Guide 2026: Proof of Liquidity & the Tri-Token Model Explained
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Berachain is an EVM-compatible L1 with a novel "Proof of Liquidity" (PoL) consensus mechanism that aligns validator incentives with protocol liquidity. Its tri-token model (BERA, BGT, HONEY) creates a unique flywheel for DeFi-native chain security. This guide explains how Berachain works, its tokenomics, and the ecosystem.
           </p>

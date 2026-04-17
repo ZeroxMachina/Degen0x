@@ -4,6 +4,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const articleSchema = generateArticleSchema({
   title: "Nasdaq Tokenized Equities Trading Guide 2026: What the SEC Approval Means for Markets",
@@ -124,6 +126,8 @@ export default function NasdaqTokenizedEquitiesGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Nasdaq Tokenized Equities Trading Guide 2026: What the SEC Approval Means for Markets
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>
             On March 18, 2026, the SEC approved Nasdaq&apos;s framework to trade tokenized versions of Russell 1000 stocks and major ETFs on blockchain rails with T+0 settlement. This marks the first regulatory green light for institutional tokenized equities trading. Here&apos;s what you need to know about how it works, who can participate, and why it matters for the future of financial markets.
           </p>

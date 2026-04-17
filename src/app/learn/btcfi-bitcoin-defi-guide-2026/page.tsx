@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -328,6 +330,8 @@ export default function BTCFiGuide() {
 
         {/* Header */}
         <h1 style={h1Style}>BTCFi Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.2rem', color: '#8b949e', marginBottom: '30px' }}>
           Bitcoin DeFi, Native Staking & Ordinals Explained
         </p>

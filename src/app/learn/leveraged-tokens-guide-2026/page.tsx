@@ -7,6 +7,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -89,6 +91,8 @@ export default function LeveragedTokensGuide() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#79c0ff] bg-clip-text text-transparent">
             Leveraged Tokens
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg text-[#8b949e] mb-6">
             Get amplified exposure to cryptocurrency movements without the constant risk of liquidation. Leveraged tokens automate the complexity of leverage management while maintaining targeted exposure multipliers.
           </p>

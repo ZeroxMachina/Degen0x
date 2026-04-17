@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -98,6 +100,8 @@ export default function OnChainAnalyticsGuide() {
           >
             On-Chain Analytics Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-xl text-[#c9d1d9] mb-6">
             Blockchain Data Tools, Smart Money Tracking & Key Metrics
           </p>

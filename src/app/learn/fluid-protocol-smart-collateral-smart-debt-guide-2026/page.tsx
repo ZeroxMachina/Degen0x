@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Fluid Protocol: Smart Collateral & Smart Debt DeFi Guide",
@@ -139,6 +141,8 @@ export default function FluidProtocolGuide2026() {
         <h1 className="mb-4 text-4xl font-bold text-white">
           Fluid Protocol: Smart Collateral &amp; Smart Debt Guide 2026
         </h1>
+        <ReadingTime />
+        <AutoTOC />
         <p className="mb-8 text-lg text-slate-300">
           Fluid is the most ambitious rework of DeFi&apos;s lending primitive since Aave V3. Built by the Instadapp
           team, it fuses a lending market and an on-chain DEX into a single shared liquidity layer — letting the same

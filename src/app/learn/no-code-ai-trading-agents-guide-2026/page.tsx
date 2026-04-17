@@ -7,6 +7,8 @@ import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -140,6 +142,8 @@ export default function NoCodeAITradingAgentsPage() {
         No-Code AI Trading Agents: Build Your Own Crypto Trading Bot Without Code
       </h1>
 
+      <ReadingTime />
+      <AutoTOC />
       {/* Subtitle / hook */}
       <p
         className="text-lg mb-2"

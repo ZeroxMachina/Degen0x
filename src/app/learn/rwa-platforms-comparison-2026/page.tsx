@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -149,6 +151,8 @@ export default function RWAPlatformsComparison() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #10b981, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             RWA Platforms Comparison 2026: Ondo vs Centrifuge vs Maple vs Goldfinch
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>
             Real-world assets crossed $12B on-chain in March 2026. We compare the four leading RWA tokenization platforms: yields, asset types, risk profiles, and which one fits your portfolio. From Ondo's Treasury-backed USDY to Centrifuge's tranched loans to Maple's institutional credit and Goldfinch's emerging market lending.
           </p>

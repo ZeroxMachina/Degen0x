@@ -10,6 +10,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -150,6 +152,8 @@ export default function AztecNetworkGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#a78bfa] bg-clip-text text-transparent">
         What Is Aztec Network? The Privacy-First zkRollup on Ethereum
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         Aztec launched its Ignition Chain in November 2025 and its AZTEC token in February 2026 —
         making it the first fully decentralized, programmable-privacy Layer 2 on Ethereum. Backed

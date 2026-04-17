@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -149,6 +151,8 @@ export default function CryptoSeedPhraseSecurity() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           </div>
           <h1 style={h1Style}>Crypto Seed Phrase Security: BIP-39, Backup & Recovery 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master seed phrase security in 2026: BIP-39 12/24 word standards, entropy math (2^128 vs 2^256), metal backup solutions (Cryptosteel, Billfodl), Shamir Secret Sharing, and multi-sig alternatives.
           </p>

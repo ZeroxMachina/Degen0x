@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -240,6 +242,8 @@ export default function MultisigWalletGuide() {
             <span style={badgeStyle}>Wallet Security</span>
           </div>
           <h1 style={h1Style}>Multisig Wallets &amp; Shared Crypto Security</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '1.1rem', color: '#8b949e', marginTop: '16px' }}>
             Master threshold signatures, multisig implementations, and modern shared custody solutions for securing crypto assets in 2026.
           </p>

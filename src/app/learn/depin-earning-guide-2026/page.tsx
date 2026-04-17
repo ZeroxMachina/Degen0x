@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -118,6 +120,8 @@ export default function DepinEarningGuide2026() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#22c55e] to-[#06b6d4] bg-clip-text text-transparent">
         How to Earn Crypto with DePIN Nodes
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         Your complete guide to earning passive income through Decentralized Physical Infrastructure Networks in 2026
       </p>

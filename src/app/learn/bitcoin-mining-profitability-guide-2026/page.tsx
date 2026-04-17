@@ -4,6 +4,8 @@ import Breadcrumb from '@/components/Breadcrumb'
 import BackToTop from '@/components/BackToTop'
 import { ArrowRight, TrendingUp, Zap, HardDrive, AlertCircle, Info } from 'lucide-react'
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -106,6 +108,8 @@ export default function MiningProfitabilityPage() {
             Bitcoin Mining Profitability Guide 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           {/* Opening Paragraph */}
           <p
             className="text-lg leading-relaxed"

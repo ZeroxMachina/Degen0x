@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -32,6 +34,8 @@ export default function ZkSyncEraGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             zkSync Era Guide 2026: ZK-Rollup Technology, Ecosystem & ZK Token
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             zkSync Era (by Matter Labs) is a ZK-rollup with EVM compatibility, using zero-knowledge proofs for cryptographic finality without the 7-day withdrawal delay of optimistic rollups. In 2026, zkSync's "Elastic Chain" vision powers a network of ZK-powered chains. This guide covers the technology, ZK token, ecosystem, and how it compares to Optimism and Arbitrum.
           </p>

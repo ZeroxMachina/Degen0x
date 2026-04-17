@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -217,6 +219,8 @@ export default function PerpetualDexPerpsTradingGuide() {
 
           <h1 style={h1Style}>Perpetual DEX Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Perpetual futures (perps) are cryptocurrency derivatives that have no expiration date, allowing traders to bet on price movements with leverage up to 50x on decentralized exchanges. By April 2026, the onchain derivatives ecosystem has exploded with Hyperliquid leading at ~50% market share, $208B monthly volume, and $6.2B TVL. This guide explains how perpetual DEXes work, compares Hyperliquid, dYdX, GMX, and other major players, and walks you through leverage mechanics, funding rates, and risk management for traders navigating this high-speed frontier.
           </p>

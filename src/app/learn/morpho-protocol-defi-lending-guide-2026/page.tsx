@@ -7,6 +7,8 @@ import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -129,6 +131,8 @@ export default function MorphoProtocolGuidePage() {
             Morpho Protocol: The #2 DeFi Lending Protocol
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-xl mb-4" style={{ color: '#8b949e' }}>
             Master the optimization layer revolutionizing DeFi lending with $5.8B TVL, institutional adoption, and V2&apos;s market-driven rates.
           </p>

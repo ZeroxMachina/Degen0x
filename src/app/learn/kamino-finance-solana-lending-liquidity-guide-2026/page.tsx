@@ -5,6 +5,8 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Kamino Finance Guide 2026 — Solana Lending, Liquidity &",
@@ -141,6 +143,8 @@ export default function KaminoFinanceGuide() {
 
         <h1 style={h1Style}>Kamino Finance Guide 2026 — Solana Lending, Liquidity & Leverage</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>
           Kamino Finance is one of the largest DeFi protocols on Solana, combining automated concentrated liquidity vaults, an isolated-pool lending market, and one-click leveraged yield strategies under a single interface. This guide breaks down how Kamino works, how its product lines interact, what KMNO does, and the risks you should understand before using it.
         </p>

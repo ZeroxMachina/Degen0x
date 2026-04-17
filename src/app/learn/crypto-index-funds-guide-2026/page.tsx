@@ -4,6 +4,8 @@ import StructuredData from '@/components/StructuredData'
 import Breadcrumb from '@/components/Breadcrumb'
 import BackToTop from '@/components/BackToTop'
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -107,6 +109,8 @@ export default function CryptoIndexFundsGuidePage() {
       <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3">
         Crypto Index Funds Guide 2026: DeFi Indexes, ETFs & Onchain Baskets
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-gray-400 text-lg mb-2">
         Over 35% of US retail investors now use index-related crypto strategies — here&apos;s everything you need to know about DeFi indexes, crypto ETFs, and onchain basket investing to build a diversified crypto portfolio without the research burden.
       </p>

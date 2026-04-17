@@ -3,6 +3,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Appchains & Application-Specific Blockchains Guide 2026",
@@ -326,6 +328,8 @@ export default function AppChainsPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>Appchains &amp; Application-Specific Blockchains 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>
           Master purpose-built blockchains: learn frameworks, understand the tradeoffs between shared security and sovereignty, and explore when appchains outperform L2s and L3s.
         </p>

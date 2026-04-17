@@ -6,6 +6,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -130,6 +132,8 @@ export default function StablecoinPaymentsGuide() {
           <h1 style={{ fontSize: "clamp(28px, 5vw, 48px)", fontWeight: 800, lineHeight: 1.15, marginBottom: "16px", background: "linear-gradient(135deg, #22c55e, #06b6d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Stablecoin Payments Infrastructure Guide 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: "17px", lineHeight: 1.7, marginBottom: "8px" }}>
             Stablecoins are evolving from trading instruments into global payment rails. Mastercard&apos;s $1.8B acquisition of BVNK, Circle&apos;s USDC reaching $30B supply, and the emergence of settlement networks handling trillions signal a fundamental shift. Learn how on-chain stablecoin payments work, why traditional finance is adopting them, and what this means for remittances, B2B commerce, and your wallet.
           </p>

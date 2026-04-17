@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Tokenized Treasury Bills Guide 2026 — T-Bills On-Chain",
@@ -167,6 +169,8 @@ export default function TokenizedTreasuryBillsGuide() {
           Tokenized Treasury Bills 2026: How to Earn T-Bill Yield On-Chain
         </h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Hook Paragraph */}
         <p
           style={{

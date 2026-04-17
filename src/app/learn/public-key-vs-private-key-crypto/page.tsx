@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -217,6 +219,8 @@ export default function PublicPrivateKeyCryptoGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Public vs Private Key Cryptography 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master asymmetric cryptography: public/private key pairs, elliptic curves (secp256k1), ECDSA digital signatures, HD wallets (BIP-32/44), mnemonic phrases (BIP-39), multi-signature schemes, and quantum computing threats (Grover&apos;s/Shor&apos;s algorithms). Learn key management best practices and wallet security standards.
           </p>

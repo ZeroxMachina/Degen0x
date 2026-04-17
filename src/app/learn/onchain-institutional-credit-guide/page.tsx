@@ -11,6 +11,8 @@ import { SITE_URL } from "@/lib/constants";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -169,6 +171,8 @@ export default function OnchainInstitutionalCreditGuidePage() {
           }}>
             On-Chain Institutional Credit Markets 2026: The Complete Guide
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: C.muted, fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             On-chain institutional credit is one of the fastest-growing sectors in DeFi, with active private credit
             exceeding <strong style={{ color: C.text }}>$18.9 billion</strong> and cumulative originations surpassing

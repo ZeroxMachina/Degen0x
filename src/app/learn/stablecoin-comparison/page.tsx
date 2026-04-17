@@ -4,6 +4,8 @@ import React, { useState } from 'react';
 import { ArrowUpDown, TrendingUp, Shield, AlertCircle, Check } from 'lucide-react';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 interface Stablecoin {
   name: string;
@@ -167,6 +169,8 @@ export default function StablecoinComparison() {
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4">Stablecoin Comparison Guide 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p className="text-lg text-gray-400 mb-6">
             Explore and compare the major stablecoins available in the crypto ecosystem. Understand their backing mechanisms,
             risk profiles, and yield opportunities to make informed decisions.

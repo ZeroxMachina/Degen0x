@@ -3,6 +3,8 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -222,6 +224,8 @@ export default function HowToStakePolkadotGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>How to Stake Polkadot (DOT) 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Polkadot&apos;s nominated Proof of Stake (NPoS) is the most sophisticated staking system in crypto. Unlike Ethereum (simple liquid staking) or Solana (validator concentration), Polkadot incentivizes nominators (token holders) to actively select validators, ensuring security through distributed decision-making. By April 2026, 12M+ DOT is staked (30%+ of supply), generating ~12% APY. Nomination pools have democratized staking: anyone with 1 DOT can participate (vs. 500+ minimum solo). Liquid staking (Acala, Bifrost) lets you earn staking + DeFi yield simultaneously. This guide explains NPoS, validator selection strategies, nomination pools, liquid staking, parachain crowdloans, and OpenGov governance.
           </p>

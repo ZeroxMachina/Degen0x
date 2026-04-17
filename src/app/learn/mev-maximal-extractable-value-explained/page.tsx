@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -226,6 +228,8 @@ export default function MEVMaximalExtractableValueExplained2026() {
 
           <h1 style={h1Style}>MEV (Maximal Extractable Value) Explained 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Every transaction you submit costs you MEV. By 2026, MEV extraction has reached $3B+ annually across all blockchains—a tax on users extracted by validators and searchers. When you swap $100k on Uniswap, sandwich attackers profit $500-$5,000 at your expense. This comprehensive guide explains what MEV is, how sandwich attacks work, Flashbots&apos; role ($600M+ extracted), MEV-Boost consensus changes, MEV protection strategies (MEV-Protect, CoW Protocol), the searcher/builder/proposer supply chain, and how to minimize losses on your transactions.
           </p>

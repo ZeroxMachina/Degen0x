@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -118,6 +120,8 @@ export default function BtcfiYieldStrategiesGuide2026() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#F7931A] to-[#d29922] bg-clip-text text-transparent">
         BTCFi Yield Strategies 2026
       </h1>
+      <ReadingTime />
+      <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">
         How to earn yield on your Bitcoin through staking, liquid staking, lending, and CeDeFi — without selling a single sat
       </p>

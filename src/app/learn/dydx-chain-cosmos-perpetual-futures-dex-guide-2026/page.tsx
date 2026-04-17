@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -248,6 +250,8 @@ export default function DydxChainGuide() {
 
           <h1 style={h1Style}>dYdX Chain Guide 2026</h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             dYdX Chain is a sovereign Layer-1 blockchain built on Cosmos SDK and CometBFT consensus, purpose-built for decentralized perpetual futures trading. Unlike proprietary chains like Hyperliquid, dYdX emphasizes decentralization with a validator set running the matching engine off-chain. Since migrating from Ethereum L2 in late 2023, dYdX has captured ~$200M daily trading volume, introduced the MegaVault for permissionless market liquidity, and expanded to spot markets and RWA perpetuals. This guide covers dYdX&apos;s architecture, MegaVault mechanics, DYDX tokenomics, how to trade, competitive positioning, and why it represents a distinct approach to onchain derivatives compared to Hyperliquid and traditional CEXes.
           </p>

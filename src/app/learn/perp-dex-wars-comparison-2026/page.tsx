@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -178,6 +180,8 @@ export default function PerpDEXWarsComparison2026() {
           >
             Perp DEX Wars 2026: Hyperliquid vs Aster vs Lighter vs Paradex
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p
             style={{
               color: "#8b949e",

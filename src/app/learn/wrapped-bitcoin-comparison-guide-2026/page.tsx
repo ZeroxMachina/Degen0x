@@ -11,6 +11,8 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -181,6 +183,8 @@ export default function WrappedBitcoinComparisonGuide() {
           <h1 style={s.h1}>
             Wrapped Bitcoin Comparison 2026: wBTC vs cbBTC vs tBTC vs LBTC
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={s.sub}>
             Over 300,000 BTC (~$25 billion) is now wrapped and active in DeFi — but not all wrapped Bitcoin
             is created equal. From fully custodial (cbBTC) to decentralized (tBTC), each wrapper carries

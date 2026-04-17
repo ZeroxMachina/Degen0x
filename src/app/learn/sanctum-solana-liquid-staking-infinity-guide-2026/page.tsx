@@ -6,6 +6,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &",
@@ -145,6 +147,8 @@ export default function SanctumGuide() {
 
         <h1 style={h1Style}>Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &amp; CLOUD</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>
           Sanctum is the universal liquid staking layer of Solana. Instead of issuing a single flagship LST like Jito or Marinade, Sanctum provides shared infrastructure — Infinity, Router, and Reserve — that any validator or project can plug into to launch its own liquid staking token with instant liquidity from day one. This guide unpacks how the pieces fit together, what the CLOUD token does, and what can go wrong.
         </p>

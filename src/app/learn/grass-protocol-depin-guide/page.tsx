@@ -11,6 +11,8 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -171,6 +173,8 @@ export default function GrassProtocolGuide() {
           }}>
             GRASS Protocol Guide 2026: Earn Crypto by Sharing Your Internet for AI
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>
             GRASS is a DePIN network that turns your idle internet bandwidth into a commodity for AI training.
             With 8.5 million monthly active users already earning rewards, it&apos;s one of the largest decentralized

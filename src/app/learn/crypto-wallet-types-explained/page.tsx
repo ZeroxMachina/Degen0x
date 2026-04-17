@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -216,6 +218,8 @@ export default function CryptoWalletTypesExplained() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           </div>
           <h1 style={h1Style}>Crypto Wallet Types Explained 2026</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             There&apos;s no one-size-fits-all crypto wallet. MetaMask dominates hot wallets (30M+ users). Ledger and Trezor lead hardware wallets ($5B+ AUM). Safe is the standard for multi-sig. Phantom commands Solana. This guide covers all wallet types: hot (convenient), cold (secure), smart contract (recoverable), and MPC (institutional). Learn which wallet fits your use case and how to secure your assets.
           </p>

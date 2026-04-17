@@ -5,6 +5,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 export const metadata: Metadata = {
   title: "Sei Network Guide 2026: The First Parallelized EVM",
@@ -96,6 +98,8 @@ export default function SeiNetworkGuide() {
           <h1 className="text-4xl font-bold mb-4" style={{ color: "var(--color-text)" }}>
             Sei Network Guide: The First Parallelized EVM Blockchain
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <div className="flex flex-wrap gap-2 mb-6">
             <span className="inline-block px-3 py-1 rounded-full text-sm font-medium" style={{
               backgroundColor: "rgba(139, 92, 246, 0.1)",

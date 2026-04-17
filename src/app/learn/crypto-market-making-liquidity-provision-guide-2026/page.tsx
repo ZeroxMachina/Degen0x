@@ -4,6 +4,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -364,6 +366,8 @@ export default function CryptoMarketMakingPage() {
             <span style={pageStyles.badgeIntermediate}>Intermediate</span>
           </div>
           <h1 style={pageStyles.title}>Crypto Market Making Guide 2026: CEX, DEX &amp; Automated Liquidity Provision</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={pageStyles.subtitle}>
             Master the strategies, economics, and risks of market making across centralized and decentralized exchanges.
           </p>

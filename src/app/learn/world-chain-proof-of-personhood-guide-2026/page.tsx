@@ -7,6 +7,8 @@ import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -132,6 +134,8 @@ export default function WorldChainProofOfPersonhoodGuidePage() {
             World Chain & Proof of Personhood Guide 2026
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: '18px', color: S.text2, marginBottom: '20px', lineHeight: '1.6' }}>
             World Chain is an OP Stack Layer 2 specifically built for humans verified through World ID biometric technology. This comprehensive guide covers World ID's iris scanning verification, AgentKit's AI agent identity integration with Coinbase, and how proof of personhood is reshaping sybil-resistant DeFi and governance in 2026.
           </p>

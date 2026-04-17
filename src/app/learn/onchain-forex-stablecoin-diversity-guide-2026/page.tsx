@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -64,6 +66,8 @@ export default function OnchainForexStablecoinDiversityGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, background: "linear-gradient(135deg, #6366f1, #06b6d4)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Onchain Forex &amp; Stablecoin Diversity: The Complete Guide for 2026
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>
             The stablecoin market has crossed $308 billion in market cap and settled over $52 trillion in annual volume — more than Visa and Mastercard combined. But the landscape is no longer just USDT and USDC. Euro stablecoins, protocol-native stablecoins, yield-bearing stablecoins, and onchain forex markets are reshaping how value moves through DeFi. Here&apos;s the full picture.
           </p>

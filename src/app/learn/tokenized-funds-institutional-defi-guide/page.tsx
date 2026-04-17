@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -80,6 +82,8 @@ export default function TokenizedFundsGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Tokenized Funds Guide 2026: How TradFi Giants Are Bringing $15B+ in Assets On-Chain
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>
             Tokenized funds are where TradFi meets DeFi — regulated investment products with shares recorded on blockchain. In March 2026, Amundi (Europe&apos;s largest asset manager, €2.3T AUM) launched SAFO, a $100M tokenized fund on Ethereum and Stellar. This guide explains how tokenized funds work, who&apos;s building them, and why they represent the most significant bridge between traditional finance and crypto.
           </p>

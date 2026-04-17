@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -142,6 +144,8 @@ export default function StablecoinsExplainedGuidePage() {
           <h1 style={{ fontSize: 36, fontWeight: 800, lineHeight: 1.2, marginBottom: 12, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Stablecoins Explained 2026: USDT, USDC, USDe &amp; Yield-Bearing Stablecoins
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: 16, lineHeight: 1.7 }}>
             Stablecoins are cryptocurrencies pegged to the US dollar, giving you the speed and composability of crypto without the volatility. With a combined market cap exceeding $316 billion in 2026, stablecoins are the backbone of DeFi, cross-border payments, and on-chain treasury management. This guide covers every type — from battle-tested fiat-backed giants like USDT and USDC to next-generation yield-bearing stablecoins that earn you passive income while you hold.
           </p>

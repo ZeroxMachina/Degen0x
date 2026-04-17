@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -163,6 +165,8 @@ export default function DefiAggregatorsExplained1inch() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>DeFi Aggregators Explained: 1inch, Jupiter, Paraswap &amp; MEV Protection</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             DeFi aggregators split swaps across multiple DEXs to find best prices. 1inch Pathfinder algorithm routes optimally; Fusion mode adds MEV protection and gasless execution. Master routing mechanisms, limit orders, positive slippage capture, and compare 1inch vs Jupiter vs Paraswap vs CowSwap.
           </p>

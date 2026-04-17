@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -148,6 +150,8 @@ export default function NFTExplainedCompleteGuide() {
           <span style={{ ...badgeStyle, background: '#ec4899', color: '#fff' }}>NFTs</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>NFT Explained: Complete Guide to Digital Assets</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Master NFTs in 2026: Learn ERC-721, ERC-1155, blue chip collections (BAYC, CryptoPunks, Azuki), OpenSea vs Blur, rarity evaluation, utility NFTs, and why NFT winter is over.
           </p>

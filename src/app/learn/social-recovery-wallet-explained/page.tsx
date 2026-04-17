@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -203,6 +205,8 @@ export default function SocialRecoveryWalletExplained() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Social Recovery Wallets Explained</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             Discover how social recovery wallets eliminate seed phrase vulnerabilities by distributing trust across guardians. Learn Argent&apos;s 3-5 guardian model, Safe&apos;s multisig recovery modules, time-lock mechanisms, and why Vitalik Buterin envisions this as the future of wallet security.
           </p>

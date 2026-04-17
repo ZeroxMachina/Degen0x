@@ -11,6 +11,8 @@ import {
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -193,6 +195,8 @@ export default function ZKMLGuide2026Page() {
             ZKML Guide 2026: Zero-Knowledge Machine Learning for Verifiable AI
           </h1>
 
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
             In 2026, verifying machine learning model inference without revealing weights or input data has moved from theoretical to practical. ZKML (Zero-Knowledge Machine Learning) is transforming how AI systems prove their correctness on-chain and off-chain. This guide covers EZKL, Giza, Lagrange, World's Remainder, and the emerging fusion with FHE that's defining the future of private, verifiable AI.
           </p>

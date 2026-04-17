@@ -6,6 +6,8 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -337,6 +339,8 @@ export default function CrossChainInteroperabilityGuidePage() {
           }}>
             Cross-chain Interoperability Guide: LayerZero, Wormhole &amp; Beyond
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             The multi-chain world created a fragmentation problem: liquidity scattered across Ethereum, Solana, Arbitrum,
             and dozens of other chains. Cross-chain messaging protocols solve this by enabling communication and asset transfers

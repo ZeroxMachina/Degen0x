@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 const S = { bg:"#0d1117",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"MEV Guide 2026",href:"/learn/mev-guide-2026"}];
 export default function MEVGuide2026Page() {
@@ -17,6 +19,8 @@ export default function MEVGuide2026Page() {
             <span style={{fontSize:12,color:S.text2}}>Updated March 14, 2026 · 18 min read · +150 XP</span>
           </div>
           <h1 style={{fontSize:"2.4rem",fontWeight:900,lineHeight:1.2,marginBottom:20}}>MEV Guide 2026: Maximal Extractable Value — Sandwich Attacks, Arbitrage & How to Protect Yourself</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{fontSize:17,color:S.text2,lineHeight:1.75}}>MEV (Maximal Extractable Value) is profit extracted by validators/miners who reorder, insert, or censor transactions. It's the "dark forest" of crypto — invisible to most users but silently taxing every DeFi trade. In 2026, MEV is a $1B+ annual industry. Understanding it is essential for anyone serious about DeFi.</p>
         </header>
         <section style={{marginBottom:40}}>

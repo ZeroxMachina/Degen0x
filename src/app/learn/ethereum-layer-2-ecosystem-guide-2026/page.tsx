@@ -4,6 +4,8 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -244,6 +246,8 @@ export default function EthereumLayer2Guide() {
 
         {/* Hero Section */}
         <h1 style={h1Style}>Ethereum Layer 2 Ecosystem Guide 2026</h1>
+        <ReadingTime />
+        <AutoTOC />
         <div style={{ marginBottom: 24, fontSize: 16, color: '#8b949e', lineHeight: 1.8 }}>
           Master the Layer 2 landscape: compare Arbitrum ($18B TVL), Base (46% DeFi share), Optimism, and emerging ZK Rollups. Learn fees, TPS, bridging, tokens, and which network matches your strategy.
         </div>

@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -276,6 +278,8 @@ export default function PayFiGuide() {
         {/* H1 */}
         <h1 style={h1Style}>PayFi & Crypto Payments Guide 2026</h1>
 
+        <ReadingTime />
+        <AutoTOC />
         {/* Opening paragraph */}
         <p style={{ ...pStyle, fontSize: '1.1em', marginBottom: '1.8em' }}>
           PayFi—Payment Finance—is the infrastructure revolution that turns blockchain into a

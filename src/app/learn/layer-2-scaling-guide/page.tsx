@@ -6,6 +6,8 @@ import TableOfContents from "@/components/TableOfContents";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -118,6 +120,8 @@ export default function Layer2GuidePage() {
           <h1 style={{ fontSize: 38, fontWeight: 900, color: "var(--color-text, #e6edf3)", lineHeight: 1.2, marginBottom: 14 }}>
             The Complete Guide to Layer 2 Scaling Solutions
           </h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: "var(--color-text-secondary, #8b949e)", lineHeight: 1.7, maxWidth: 700 }}>
             Everything you need to know about how Layer 2 networks make Ethereum faster and cheaper. From optimistic rollups to ZK proofs, we break down the tech, compare the top L2s, and help you pick the right one.
           </p>

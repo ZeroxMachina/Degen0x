@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
 
 
 export const metadata: Metadata = {
@@ -163,6 +165,8 @@ export default function MACDIndicatorGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>MACD Indicator for Crypto: Signals, Divergence &amp; Trading Strategy</h1>
+          <ReadingTime />
+          <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
             MACD (Moving Average Convergence Divergence) is a momentum indicator combining 12-period and 26-period EMAs with a 9-period signal line. Bullish crossovers, bearish crossovers, divergence patterns, and histogram analysis generate trading signals. Master MACD with real Bitcoin and Ethereum examples, RSI combos, and false signal filters.
           </p>
