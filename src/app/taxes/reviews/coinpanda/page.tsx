@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = {
   name: "CoinPanda",
@@ -71,6 +72,7 @@ export default function CoinPandaReview() {
   <a href="/taxes/reviews/taxbit" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Taxbit</a>
   <a href="/taxes/reviews/tokentax" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Tokentax</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

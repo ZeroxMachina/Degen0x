@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { nftDetailedComparisons, nftComparisonFeatures } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -152,6 +153,7 @@ export default function LooksRareVsX2Y2Page() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

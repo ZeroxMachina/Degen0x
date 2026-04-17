@@ -6,6 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -132,6 +133,7 @@ export default function CentralizedVsDecentralizedPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/centralized-vs-decentralized" />
     </div>
   );

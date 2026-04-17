@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Overcollateralized vs Undercollateralized DeFi Lending 2026`,
@@ -134,6 +135,7 @@ export default function OverVsUndercollateralizedPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

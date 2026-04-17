@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = { title: `Cardano vs Solana (2026) | degen0x`, description: `Cardano vs Solana comparison for ${CURRENT_YEAR}. Research-driven development vs high-performance execution compared across speed, fees, ecosystem, and investment potential.` ,
   alternates: { canonical: "/investing/compare/cardano-vs-solana" },
@@ -117,6 +118,7 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

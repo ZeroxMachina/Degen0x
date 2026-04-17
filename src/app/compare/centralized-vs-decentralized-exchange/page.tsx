@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -402,6 +403,7 @@ export default function CentralizedVsDecentralizedExchange() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Centralized vs Decentralized Exchange 2026: CEX vs DEX", "description": "CEX (Binance, Coinbase) vs DEX (Uniswap, Jupiter): custody, KYC, fees, liquidity, speed, listings. Head-to-head comparison and when to use each.", "url": "https://degen0x.com/compare/centralized-vs-decentralized-exchange", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/centralized-vs-decentralized-exchange" />
       </article>
   );

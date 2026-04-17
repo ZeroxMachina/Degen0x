@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "compound")!;
 
@@ -63,6 +64,7 @@ export default function CompoundReview() {
   <a href="/defi-lending/reviews/clearpool" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Clearpool</a>
   <a href="/defi-lending/reviews/credix" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Credix</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

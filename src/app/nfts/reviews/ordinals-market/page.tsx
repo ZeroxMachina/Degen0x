@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Ordinals Market Review 2026: Fees, Features, Pros & Cons`,
@@ -80,6 +81,7 @@ As the Bitcoin NFT ecosystem matures, Ordinals Market competes with Magic Eden, 
   <a href="/nfts/reviews/rarible" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rarible</a>
   <a href="/nfts/reviews/superrare" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Superrare</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Lido vs EigenLayer 2026: Staking vs Restaking Compared`,
@@ -136,6 +137,7 @@ export default function LidoVsEigenlayerPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

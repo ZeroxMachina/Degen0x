@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import { Product } from "@/lib/types";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product: Product = {
   name: "Foundation",
@@ -168,6 +169,7 @@ Foundation enforces a 10% creator royalty on all secondary sales and charges a 5
   <a href="/nfts/reviews/rarible" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rarible</a>
   <a href="/nfts/reviews/superrare" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Superrare</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ToolStructuredData } from '@/components/StructuredData';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export default function GateoVsKucoin() {
   const comparisonData = [
@@ -456,6 +457,7 @@ export default function GateoVsKucoin() {
           </section>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </>
   );
 }

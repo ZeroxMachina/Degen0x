@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Superfluid Review 2026: Fees, Features, Pros & Cons`,
@@ -104,6 +105,7 @@ Superfluid's programmable nature allows developers to build complex payment logi
   <a href="/web3-business/reviews/stripe-crypto" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Stripe Crypto</a>
   <a href="/web3-business/reviews/utrust" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Utrust</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

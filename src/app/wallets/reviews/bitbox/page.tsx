@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `BitBox02 Review (2026) | degen0x`,
@@ -115,6 +116,7 @@ export default function BitBoxReviewPage() {
   <a href="/wallets/reviews/bitget-wallet" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitget Wallet</a>
   <a href="/wallets/reviews/blue-wallet" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Blue Wallet</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

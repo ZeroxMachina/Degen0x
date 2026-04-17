@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = {
   name: "TurboTax Crypto",
@@ -71,6 +72,7 @@ export default function TurboTaxCryptoReview() {
   <a href="/taxes/reviews/koinly" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Koinly</a>
   <a href="/taxes/reviews/taxbit" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Taxbit</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Ramp Network Review 2026: Fees, Features, Pros & Cons`,
@@ -104,6 +105,7 @@ Ramp handles all compliance, KYC, payment processing, and conversion logistics b
   <a href="/web3-business/reviews/superfluid" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Superfluid</a>
   <a href="/web3-business/reviews/utrust" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Utrust</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

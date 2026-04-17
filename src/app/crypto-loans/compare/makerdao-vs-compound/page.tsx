@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = { title: `MakerDAO vs Compound 2026: DeFi Borrowing Compared`, description: `Compare MakerDAO vs Compound for crypto borrowing in ${CURRENT_YEAR}. Analyze DAI minting vs pool-based borrowing, rates, collateral, and more.` ,
   alternates: { canonical: "/crypto-loans/compare/makerdao-vs-compound" },
@@ -105,6 +106,7 @@ export default function MakerdaoVsCompoundPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

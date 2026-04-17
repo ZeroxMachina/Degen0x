@@ -6,6 +6,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Crypto Exchange Fees Compared: Complete Guide (2026) | degen0x`,
@@ -123,6 +124,7 @@ export default function CexFeesComparisonPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/cex-fees-comparison" />
     </div>
   );

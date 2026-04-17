@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = cryptoCards.find((c) => c.slug === "swipe-card")!;
 
@@ -161,6 +162,7 @@ For current SXP holders or users already within the Swipe ecosystem, the card st
   <a href="/crypto-cards/reviews/crypto-com-card" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Card</a>
   <a href="/crypto-cards/reviews/crypto-com-visa" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Visa</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

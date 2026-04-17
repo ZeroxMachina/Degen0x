@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product: Product = {
   name: "Risk Harbor",
@@ -73,6 +74,7 @@ export default function RiskHarborReviewPage() {
   <a href="/insurance/reviews/solace" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Solace</a>
   <a href="/insurance/reviews/unslashed" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Unslashed</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = { title: `Bitcoin vs S&P 500 (2026) | degen0x`, description: `Compare Bitcoin and S&P 500 index investment performance, risk, volatility, and portfolio allocation strategies for ${CURRENT_YEAR}.` ,
   alternates: { canonical: "/investing/compare/bitcoin-vs-sp500" },
@@ -117,6 +118,7 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

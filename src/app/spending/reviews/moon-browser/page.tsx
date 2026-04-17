@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Moon Browser Extension Review 2026: Fees, Features, Pros & Cons`,
@@ -144,6 +145,7 @@ Moon targets Bitcoin users who prefer not to maintain a separate crypto debit ca
   <a href="/spending/reviews/lolli" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Lolli</a>
   <a href="/spending/reviews/nowpayments" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Nowpayments</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

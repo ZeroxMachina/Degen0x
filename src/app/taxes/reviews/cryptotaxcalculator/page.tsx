@@ -7,6 +7,7 @@ import TableOfContents from "@/components/TableOfContents";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -243,6 +244,7 @@ export default function CryptoTaxCalculatorReviewPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="review" />
     </main>
   );
 }

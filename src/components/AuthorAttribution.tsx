@@ -38,6 +38,16 @@ function getAvatarColor(author: string): string {
   return colors[hash % colors.length];
 }
 
+// Canonical slug map — keeps AuthorAttribution linking to real /about/authors/* pages.
+// Must match AUTHOR_PROFILES[*].slug in src/lib/author-profiles.ts.
+const AUTHOR_BIO_SLUGS: Record<string, string> = {
+  '0xmachina': '0xmachina',
+  'satoshighost': 'satoshighost',
+  'degensensei': 'degensensei',
+  'nullpointer': 'nullpointer',
+  'cipherpunk_42': 'cipherpunk-42',
+};
+
 export default function AuthorAttribution({
   author,
   role,
@@ -45,7 +55,12 @@ export default function AuthorAttribution({
   updatedDate,
   readingTime,
 }: AuthorAttributionProps) {
-  const authorSlug = author.toLowerCase().replace(/\s+/g, '-');
+  const rawSlug = author.toLowerCase().replace(/\s+/g, '-');
+  const bioSlug =
+    AUTHOR_BIO_SLUGS[author.toLowerCase()] ?? AUTHOR_BIO_SLUGS[rawSlug];
+  const authorHref = bioSlug
+    ? `/about/authors/${bioSlug}`
+    : `/about#${rawSlug}`;
   const avatarColor = getAvatarColor(author);
   const initials = getInitials(author);
   const formattedPublished = formatDate(publishedDate);
@@ -89,7 +104,7 @@ export default function AuthorAttribution({
       {/* Author info */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
         <a
-          href={`/about#${authorSlug}`}
+          href={authorHref}
           style={{
             color: '#58a6ff',
             textDecoration: 'none',

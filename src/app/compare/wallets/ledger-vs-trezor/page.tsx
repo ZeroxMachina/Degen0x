@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ToolStructuredData } from '@/components/StructuredData';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export default function LedgerVsTrezor() {
   const comparisonData = [
@@ -325,6 +326,7 @@ export default function LedgerVsTrezor() {
           </p>
         </section>
       </div>
+      <MethodologyBlock variant="compare" />
     </>
   );
 };

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { nftMarketplaces } from "@/data/nfts";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = nftMarketplaces.find((m) => m.slug === "zora")!;
 
@@ -66,6 +67,7 @@ The Zora protocol is open-source, meaning any developer can build marketplace ex
   <a href="/nfts/reviews/ordinals-market" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Ordinals Market</a>
   <a href="/nfts/reviews/rarible" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rarible</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

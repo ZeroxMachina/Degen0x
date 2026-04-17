@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product: Product = {
   name: "Unslashed Finance",
@@ -73,6 +74,7 @@ export default function UnslashedReviewPage() {
   <a href="/insurance/reviews/sherlock" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Sherlock</a>
   <a href="/insurance/reviews/solace" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Solace</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = cryptoCards.find((c) => c.slug === "crypto-com-visa")!;
 
@@ -160,6 +161,7 @@ Despite several rounds of reward reductions in 2022 and 2023 that frustrated ear
   <a href="/crypto-cards/reviews/crypto-com-card" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Card</a>
   <a href="/crypto-cards/reviews/fold-card" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Fold Card</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

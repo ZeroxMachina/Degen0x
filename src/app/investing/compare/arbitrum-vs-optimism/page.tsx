@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = { title: `Arbitrum vs Optimism (2026) | degen0x`, description: `Arbitrum vs Optimism comparison for ${CURRENT_YEAR}. The two leading optimistic rollups compared on TVL, DeFi ecosystem, governance, and investment potential.` ,
   alternates: { canonical: "/investing/compare/arbitrum-vs-optimism" },
@@ -117,6 +118,7 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

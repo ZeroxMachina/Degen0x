@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import ReviewPage from "@/components/ReviewPage";
 import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product: Product = {
   name: "Fraxlend",
@@ -75,6 +76,7 @@ export default function FraxlendReview() {
   <a href="/defi-lending/reviews/clearpool" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Clearpool</a>
   <a href="/defi-lending/reviews/compound" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Compound</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

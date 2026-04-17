@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = cryptoCards.find((c) => c.slug === "plutus-card")!;
 
@@ -63,6 +64,7 @@ export default function PlutusCardReviewPage() {
   <a href="/crypto-cards/reviews/crypto-com-card" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Card</a>
   <a href="/crypto-cards/reviews/crypto-com-visa" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Visa</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

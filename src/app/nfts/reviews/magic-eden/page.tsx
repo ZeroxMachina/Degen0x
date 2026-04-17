@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import { Product } from "@/lib/types";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product: Product = {
   name: "Magic Eden",
@@ -170,6 +171,7 @@ Backed by over $130 million in funding from investors including Paradigm and Ele
   <a href="/nfts/reviews/rarible" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rarible</a>
   <a href="/nfts/reviews/superrare" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Superrare</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

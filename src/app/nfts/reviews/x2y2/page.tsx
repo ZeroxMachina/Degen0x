@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import { Product } from "@/lib/types";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product: Product = {
   name: "X2Y2",
@@ -168,6 +169,7 @@ X2Y2 also differentiated itself by introducing an NFT lending feature, allowing 
   <a href="/nfts/reviews/ordinals-market" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Ordinals Market</a>
   <a href="/nfts/reviews/rarible" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rarible</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

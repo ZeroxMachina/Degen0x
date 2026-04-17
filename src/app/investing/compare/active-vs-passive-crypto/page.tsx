@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = { title: `Active vs Passive Crypto Investing (2026) | degen0x`, description: `Active vs passive crypto investing comparison for ${CURRENT_YEAR}. Trading vs HODL, time commitment, returns, stress levels, and which strategy wins long-term.` ,
   alternates: { canonical: "/investing/compare/active-vs-passive-crypto" },
@@ -117,6 +118,7 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ToolStructuredData } from '@/components/StructuredData';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export default function ExodusVsTrustWallet() {
   const comparisonData = [
@@ -420,6 +421,7 @@ export default function ExodusVsTrustWallet() {
           </p>
         </section>
       </div>
+      <MethodologyBlock variant="compare" />
     </>
   );
 };

@@ -15,6 +15,10 @@
  */
 
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "./constants";
+import {
+  AUTHOR_PROFILES,
+  getAuthorProfileByHandle,
+} from "./author-profiles";
 
 /**
  * Breadcrumb JSON-LD Schema
@@ -127,6 +131,8 @@ export function generateArticleSchema(options: {
   headline: string;
   description: string;
   author?: string;
+  authorHandle?: string;  // prefer a real persona handle when available
+  section?: string;       // auto-resolve author from site section
   datePublished: string;
   dateModified?: string;
   image?: string;
@@ -134,15 +140,35 @@ export function generateArticleSchema(options: {
   wordCount?: number;
   articleBody?: string;
 }): Record<string, any> {
+  // Resolve a real Person author if we can, for E-E-A-T signal.
+  let authorBlock: Record<string, any> = {
+    "@type": "Organization",
+    "name": options.author || SITE_NAME,
+  };
+
+  const handle =
+    options.authorHandle ||
+    (options.section
+      ? AUTHOR_PROFILES.find((p) => p.sections.includes(options.section!.toLowerCase()))?.handle
+      : undefined);
+  const profile = handle ? getAuthorProfileByHandle(handle) : undefined;
+
+  if (profile) {
+    authorBlock = {
+      "@type": "Person",
+      "name": profile.handle,
+      "jobTitle": profile.role,
+      "url": `${SITE_URL}/about/authors/${profile.slug}`,
+      ...(profile.sameAs.length > 0 && { "sameAs": profile.sameAs }),
+    };
+  }
+
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": options.headline,
     "description": options.description,
-    "author": {
-      "@type": "Organization",
-      "name": options.author || SITE_NAME,
-    },
+    "author": authorBlock,
     "publisher": {
       "@type": "Organization",
       "name": SITE_NAME,

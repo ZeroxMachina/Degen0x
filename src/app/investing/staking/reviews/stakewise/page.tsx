@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = stakingPlatforms.find((p) => p.slug === "stakewise")!;
 
@@ -141,6 +142,7 @@ While StakeWise has a smaller market share compared to Lido or Rocket Pool, its 
   <a href="/investing/staking/reviews/marinade" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Marinade</a>
   <a href="/investing/staking/reviews/rocket-pool" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rocket Pool</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

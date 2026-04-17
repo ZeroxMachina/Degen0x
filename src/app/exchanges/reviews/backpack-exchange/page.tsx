@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Backpack Exchange Review 2026: Fees, Features, Pros & Cons`,
@@ -94,6 +95,7 @@ The exchange has gained traction quickly, particularly among Solana community me
   <a href="/exchanges/reviews/bitmex" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitmex</a>
   <a href="/exchanges/reviews/bitstamp" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitstamp</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

@@ -8,6 +8,7 @@ import { exchangeDetailedComparisons, exchangeComparisonFeatures } from "@/data/
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -626,6 +627,7 @@ export default function KrakenVsGeminiPage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Kraken vs Gemini: Detailed Comparison (2026) | degen0x", "description": "Compare Kraken and Gemini - two secure US crypto exchanges. Analyze fees, features, security, and find which is best for your trading needs.", "url": "https://degen0x.com/exchanges/compare/kraken-vs-gemini", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/kraken-vs-gemini" />
 </div>
   );

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ToolStructuredData } from '@/components/StructuredData';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export default function MetaMaskVsPhantom() {
   const comparisonData = [
@@ -356,6 +357,7 @@ export default function MetaMaskVsPhantom() {
           </p>
         </section>
       </div>
+      <MethodologyBlock variant="compare" />
     </>
   );
 };

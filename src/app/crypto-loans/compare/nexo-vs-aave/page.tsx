@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = { title: `Nexo vs Aave 2026: CeFi vs DeFi Lending Compared`, description: `Compare Nexo (CeFi) vs Aave (DeFi) for crypto loans in ${CURRENT_YEAR}. Analyze rates, KYC requirements, security models, and which is better for your needs.` ,
   alternates: { canonical: "/crypto-loans/compare/nexo-vs-aave" },
@@ -106,6 +107,7 @@ export default function NexoVsAavePage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

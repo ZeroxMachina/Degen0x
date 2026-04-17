@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = stakingPlatforms.find((p) => p.slug === "rocket-pool")!;
 
@@ -140,6 +141,7 @@ The protocol's dual-token system uses RPL as both a governance token and node op
   <a href="/investing/staking/reviews/marinade" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Marinade</a>
   <a href="/investing/staking/reviews/stakewise" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Stakewise</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

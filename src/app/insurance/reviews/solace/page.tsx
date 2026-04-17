@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Solace Review 2026: Fees, Features, Pros & Cons`,
@@ -105,6 +106,7 @@ Solace's underwriting model pools risk across all covered protocols, enabling mo
   <a href="/insurance/reviews/sherlock" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Sherlock</a>
   <a href="/insurance/reviews/unslashed" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Unslashed</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

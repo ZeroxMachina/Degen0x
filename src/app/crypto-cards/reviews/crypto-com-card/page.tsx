@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Crypto.com Visa Card Review (2026): Cashback, Tiers & Pros/Cons | degen0x`,
@@ -71,6 +72,7 @@ export default function CryptoComCardReviewPage() {
   <a href="/crypto-cards/reviews/crypto-com-visa" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Crypto Com Visa</a>
   <a href="/crypto-cards/reviews/fold-card" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Fold Card</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

@@ -8,6 +8,7 @@ import { walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -201,6 +202,7 @@ export default function LedgerVsTrezorPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/ledger-vs-trezor" />
     </div>
   );

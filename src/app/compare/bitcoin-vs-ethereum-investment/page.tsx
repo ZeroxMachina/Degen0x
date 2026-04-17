@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -411,6 +412,7 @@ export default function BitcoinVsEthereumInvestment() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin vs Ethereum: Which to Buy? 2026 Guide", "description": "Bitcoin vs Ethereum comparison: store of value vs DeFi utility. Compare market cap, supply, consensus, and investment thesis. April 2026.", "url": "https://degen0x.com/compare/bitcoin-vs-ethereum-investment", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/bitcoin-vs-ethereum-investment" />
       </article>
   );

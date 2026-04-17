@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "compound-loans")!;
 
@@ -57,6 +58,7 @@ export default function CompoundLoansReview() {
   <a href="/crypto-loans/reviews/liquity" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Liquity</a>
   <a href="/crypto-loans/reviews/makerdao" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Makerdao</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

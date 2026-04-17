@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Fold App Review 2026: Fees, Features, Pros & Cons`,
@@ -148,6 +149,7 @@ The Fold+ premium subscription unlocks enhanced reward rates, additional daily s
   <a href="/spending/reviews/moon-browser" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Moon Browser</a>
   <a href="/spending/reviews/nowpayments" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Nowpayments</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

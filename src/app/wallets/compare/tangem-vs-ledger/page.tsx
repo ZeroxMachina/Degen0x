@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: `Tangem vs Ledger (2026) - NFC Cards vs USB Hardware Wallet | degen0x`,
@@ -120,6 +121,7 @@ export default function TangemVsLedgerPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/tangem-vs-ledger" />
     </div>
   );

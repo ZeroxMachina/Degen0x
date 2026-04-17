@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = { title: `Bitcoin vs Litecoin (2026) | degen0x`, description: `Bitcoin vs Litecoin comparison for ${CURRENT_YEAR}. The original cryptocurrency vs its silver counterpart — technology, adoption, investment thesis compared.` ,
   alternates: { canonical: "/investing/compare/bitcoin-vs-litecoin" },
@@ -117,6 +118,7 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

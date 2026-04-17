@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -258,6 +259,7 @@ export default function FoldVsCoinbaseCardPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/crypto-cards/compare/fold-vs-coinbase-card" />
     </div>
   );

@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import TokenComparison from '@/components/TokenComparison';
 import Footer from '@/components/Footer';
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = {
   title: "Token Comparison Tool — Side-by-Side Crypto Analysis",
@@ -89,6 +90,7 @@ export default function TokenComparisonPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/tokens" />
     </main>
   );

@@ -211,6 +211,7 @@ export default function KoinlyReviewPage() {
             your tax report. For most users with standard exchange activity, the process from
             import to tax report takes less than 30 minutes.
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
           </p>
         </section>
@@ -365,6 +366,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
         
           <a href="/taxes/reviews/coinpanda" style={{ color: "#fb923c", marginRight: "1rem" }}>Coinpanda</a>
         </nav>
+      <MethodologyBlock variant="review" />
     </main>
   );
 }

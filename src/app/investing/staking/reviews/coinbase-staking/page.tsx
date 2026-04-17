@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = stakingPlatforms.find((p) => p.slug === "coinbase-staking")!;
 
@@ -141,6 +142,7 @@ Coinbase Staking is the most accessible staking option for beginners, particular
   <a href="/investing/staking/reviews/rocket-pool" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rocket Pool</a>
   <a href="/investing/staking/reviews/stakewise" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Stakewise</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

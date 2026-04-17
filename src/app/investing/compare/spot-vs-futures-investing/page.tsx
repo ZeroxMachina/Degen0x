@@ -6,6 +6,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export const metadata: Metadata = { title: `Spot vs Futures Crypto Investing (2026) | degen0x`, description: `Spot vs futures crypto investing comparison for ${CURRENT_YEAR}. Direct ownership vs leveraged contracts — risk, returns, strategies, and which is right for you.` ,
   alternates: { canonical: "/investing/compare/spot-vs-futures-investing" },
@@ -117,6 +118,7 @@ export default function Page() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -379,6 +380,7 @@ export default function SolanaVsAvalanche() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana vs Avalanche: Layer 1 Comparison 2026", "description": "Compare Solana and Avalanche: TPS, fees, DeFi TVL, ecosystem, consensus mechanisms. Which L1 blockchain wins?", "url": "https://degen0x.com/compare/solana-vs-avalanche-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/solana-vs-avalanche-comparison" />
       </article>
   );

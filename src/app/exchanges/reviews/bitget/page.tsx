@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = exchanges.find((e) => e.slug === "bitget")!;
 
@@ -169,6 +170,7 @@ Beyond copy trading and derivatives, Bitget has expanded into spot trading, Bitg
   <a href="/exchanges/reviews/bitmex" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitmex</a>
   <a href="/exchanges/reviews/bitstamp" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitstamp</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

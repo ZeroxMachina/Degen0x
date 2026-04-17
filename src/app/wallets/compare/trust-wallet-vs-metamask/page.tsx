@@ -8,6 +8,7 @@ import { ComparisonItem } from "@/lib/types";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -189,6 +190,7 @@ export default function TrustWalletVsMetamaskPage() {
           </Link>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/trust-wallet-vs-metamask" />
     </div>
   );

@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { nftMarketplaces } from "@/data/nfts";
 import ReviewPage from "@/components/ReviewPage";
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 const product = nftMarketplaces.find((m) => m.slug === "blur")!;
 
@@ -145,6 +146,7 @@ Beyond trading, Blur introduced Blend, an NFT lending protocol that allows users
   <a href="/nfts/reviews/rarible" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Rarible</a>
   <a href="/nfts/reviews/superrare" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Superrare</a>
 </nav>
+      <MethodologyBlock variant="review" />
       </>
   );
 }

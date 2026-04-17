@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 
 export const metadata: Metadata = {
@@ -631,6 +632,7 @@ export default function CoinbaseKrakenGemini() {
   <span style={{ color: "#8b949e" }}>Related: </span>
   <a href="/compare/tokens" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokens</a>
 </nav>
+      <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/coinbase-vs-kraken-vs-gemini" />
       </article>
   );

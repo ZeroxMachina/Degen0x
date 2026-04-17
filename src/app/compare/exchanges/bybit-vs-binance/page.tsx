@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ToolStructuredData } from '@/components/StructuredData';
+import MethodologyBlock from '@/components/MethodologyBlock';
 
 export default function BybitVsBinance() {
   const comparisonData = [
@@ -437,6 +438,7 @@ export default function BybitVsBinance() {
           </section>
         </div>
       </div>
+      <MethodologyBlock variant="compare" />
     </>
   );
 }
