@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -96,6 +98,7 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function EthereumUpgradeRoadmapPage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       {/* eslint-disable-next-line react/no-unknown-property */}
       <style>{`
         .eth-roadmap-article a:focus-visible {
@@ -567,6 +570,7 @@ export default function EthereumUpgradeRoadmapPage() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-2026-upgrade-roadmap" />
     </div>
   );
 }

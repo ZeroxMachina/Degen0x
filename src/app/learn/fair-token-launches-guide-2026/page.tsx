@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: "Fair Token Launch Mechanisms Guide 2026 | degen0x",
@@ -97,6 +99,7 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function FairTokenLaunchesGuide2026() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <StructuredData data={combinedSchema} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px 80px" }}>
         {/* Breadcrumb */}
@@ -1238,6 +1241,7 @@ export default function FairTokenLaunchesGuide2026() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/fair-token-launches-guide-2026" />
     </div>
   );
 }

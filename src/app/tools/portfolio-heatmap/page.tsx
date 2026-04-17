@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ──────────────── Types ──────────────── */
 interface Asset {
@@ -528,6 +529,7 @@ export default function PortfolioHeatmapPage() {
           ))}
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/portfolio-heatmap" />
     </div>
   );
 }

@@ -1,8 +1,24 @@
 [
   {
+    "id": "feed-2026-04-17-100",
+    "type": "system",
+    "title": "914 New Pages Indexed — Publish Queue Drained",
+    "message": "The full backlog of built-but-unpromoted pages (914 total) has been promoted to PUBLISHED_PAGES. Site now indexes 1,515 URLs across Learn, Exchanges, Investing, Wallets, DeFi, Cards, NFTs and more.",
+    "actionUrl": "/learn",
+    "date": "2026-04-17"
+  },
+  {
+    "id": "feed-2026-04-17-012",
+    "type": "news",
+    "title": "\ud83d\udcf0 Grinex Halts Trading After $15M State-Level Attack Drains USDT Reserves",
+    "message": "Sanctioned Russian exchange Grinex suspended trading after attackers moved $15M in USDT onto Tron and Ethereum, blaming a hostile-state operation.",
+    "actionUrl": "/news",
+    "date": "2026-04-17"
+  },
+  {
     "id": "feed-2026-04-17-011",
     "type": "news",
-    "title": "📰 Charles Schwab Opens Spot BTC and ETH Trading to Retail Clients",
+    "title": "\ud83d\udcf0 Charles Schwab Opens Spot BTC and ETH Trading to Retail Clients",
     "message": "Schwab rolled out direct spot Bitcoin and Ether trading for retail accounts, with custody in-house and execution routed to Paxos.",
     "actionUrl": "/news",
     "date": "2026-04-17"
@@ -10,233 +26,9 @@
   {
     "id": "feed-2026-04-17-010",
     "type": "news",
-    "title": "📰 UK FCA Drops '24-Hour Trap' in Final Crypto Framework",
+    "title": "\ud83d\udcf0 UK FCA Drops '24-Hour Trap' in Final Crypto Framework",
     "message": "The FCA's final cryptoasset rulebook treats any firm holding client assets for more than 24 hours as a regulated custodian, forcing most UK DEX frontends and fintech wrappers to seek full safeguarding licenses.",
     "actionUrl": "/news",
     "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-009",
-    "type": "news",
-    "title": "📰 Deutsche Börse Takes $200M Stake in Kraken Pre-IPO",
-    "message": "Germany's largest exchange operator bought 1.5% of Kraken parent Payward at a $13.3B valuation, days before Kraken's confidential SEC IPO filing surfaced.",
-    "actionUrl": "/news",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-008",
-    "type": "news",
-    "title": "📰 Ethereum ETFs Hit 4-Day Inflow Streak as Capital Rotates From BTC",
-    "message": "Spot ETH ETFs pulled in $212M over four straight sessions while Bitcoin funds bled $325M in a single day, flipping the 2026 flow narrative.",
-    "actionUrl": "/news",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-007",
-    "type": "news",
-    "title": "📰 Tether Bails Out Drift With $147M, Ousting USDC for USDT",
-    "message": "Drift Protocol will relaunch with Tether as its settlement layer after securing a $147.5M recovery package, ending Circle's USDC dominance at Solana's biggest perp DEX.",
-    "actionUrl": "/news",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-006",
-    "type": "news",
-    "title": "📰 World Network Lift Off Event Goes Live With Major World ID Upgrade",
-    "message": "World Network is hosting its biggest event since U.S. launch today, unveiling a new World ID protocol version with 18 million verified users.",
-    "actionUrl": "/news",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-005",
-    "type": "news",
-    "title": "📰 World Network 'Lift Off' Overhauls World ID Protocol",
-    "message": "World Network is unveiling its biggest protocol upgrade since its U.S. launch at today's Lift Off event, hosted by Sam Altman and Alex Blania in San Francisco.",
-    "actionUrl": "/news",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-004",
-    "type": "news",
-    "title": "📰 CLARITY Act Pulled From Senate Schedule, May Deadline Looms",
-    "message": "The Senate Banking Committee quietly removed the CLARITY Act from its April 20 agenda, leaving crypto's most important bill on life support with a do-or-die May deadline.",
-    "actionUrl": "/news",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-003",
-    "type": "news",
-    "title": "📰 Morgan Stanley Bitcoin ETF Hits $100M in First Week",
-    "message": "Morgan Stanley's spot Bitcoin ETF (MSBT) drew over $100 million in inflows during its first week at a 0.14% fee, making it the cheapest BTC product available.",
-    "actionUrl": "/news",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-002",
-    "type": "news",
-    "title": "📰 Schwab Goes Live With Direct BTC and ETH Trading",
-    "message": "Charles Schwab has begun rolling out its Schwab Crypto platform, letting clients buy and sell bitcoin and ethereum directly alongside traditional investments.",
-    "actionUrl": "/news",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-001",
-    "type": "news",
-    "title": "📰 World Network 'Lift Off' Unveils Major World ID Overhaul",
-    "message": "World Network is hosting its biggest event since U.S. launch today, unveiling a new World ID protocol version and partnerships spanning social media, gaming, and governance.",
-    "actionUrl": "/news",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-16-023",
-    "type": "news",
-    "title": "📰 Schwab Goes Live With Spot BTC and ETH Trading",
-    "message": "Charles Schwab began rolling out direct bitcoin and ethereum trading to brokerage clients, giving $12 trillion in managed assets a crypto on-ramp.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-022",
-    "type": "news",
-    "title": "📰 Pakistan Lifts 7-Year Crypto Banking Ban for Licensed Firms",
-    "message": "Pakistan's central bank ended its blanket prohibition on crypto banking, allowing licensed virtual asset providers to open bank accounts for the first time since 2018.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-021",
-    "type": "news",
-    "title": "📰 Japan Reclassifies Crypto as Financial Instruments in Historic Shift",
-    "message": "Japan's cabinet approved legislation putting crypto in the same legal category as stocks and bonds, with insider trading bans and a proposed flat 20% capital gains tax.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-020",
-    "type": "news",
-    "title": "📰 Next Fed Chair Warsh Discloses Crypto Portfolio Spanning 20+ Firms",
-    "message": "Fed Chair nominee Kevin Warsh's ethics filing reveals holdings in Solana, Polymarket, Optimism, dYdX, and over 20 blockchain-linked entities he must divest before confirmation.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-019",
-    "type": "news",
-    "title": "📰 DoubleZero Edge Goes Live, Bringing Wall Street Speed to Solana",
-    "message": "DoubleZero launched its Edge platform today, delivering real-time Solana block data over a dedicated fiber network to give traders a milliseconds-level speed advantage.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-018",
-    "type": "news",
-    "title": "📰 Tether Backs Drift Relaunch With $148M After $286M Exploit",
-    "message": "Tether and partners are injecting up to $148 million into Drift Protocol to cover user losses and relaunch the Solana DEX with USDT as its core settlement layer.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-017",
-    "type": "news",
-    "title": "📰 Goldman Sachs Files First-Ever Bitcoin ETF With Yield Play",
-    "message": "Goldman Sachs asked the SEC to approve a Bitcoin Premium Income ETF that holds spot BTC funds and sells covered calls to generate monthly yield.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-016",
-    "type": "news",
-    "title": "📰 Goldman Sachs Files First Bitcoin ETF With Covered-Call Yield Play",
-    "message": "Goldman Sachs asked the SEC to approve a Bitcoin Premium Income ETF that holds spot BTC funds and sells covered calls on up to 100% of exposure for monthly yield.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-015",
-    "type": "news",
-    "title": "📰 Bitcoin Rally Stalls Near $75K as $1.14B in Profits Hit Exchanges",
-    "message": "Bitcoin is cooling at $74.8K after tagging $76K this week as CryptoQuant flags the biggest spike in whale deposits and realized profits since late 2025.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-014",
-    "type": "news",
-    "title": "📰 SEC Crypto Task Force Roundtable Gavels In as CLARITY Clock Ticks",
-    "message": "SEC commissioners, industry execs and Hill staff are now live at the Crypto Task Force's market-structure roundtable — the last public read on regulator posture before a Senate Banking CLARITY markup targeted for late April.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-013",
-    "type": "news",
-    "title": "📰 Ether Outpaces Bitcoin as ETF Flows Split and Activity Jumps 41%",
-    "message": "Spot ETH ETFs pulled $187M last week — the strongest showing of 2026 — while US spot BTC ETFs bled $325M on April 13 alone, flipping the capital rotation story.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-012",
-    "type": "news",
-    "title": "📰 Tether Ships Self-Custodial 'People's Wallet' for 570M Users",
-    "message": "Tether launched tether.wallet this week, a self-custodial app for USDT, USAT, XAUT and BTC with gas paid in the asset being sent and human-readable addresses.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-011",
-    "type": "news",
-    "title": "📰 SEC CLARITY Roundtable Convenes Today as Senate Clock Ticks",
-    "message": "The SEC's Crypto Task Force gavels in its long-scheduled market-structure roundtable Thursday — the last big public tell before a Senate Banking CLARITY Act markup tentatively slated for late April.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-010",
-    "type": "news",
-    "title": "📰 Crypto Rips 5-9% as US-Iran Peace Talks Restart",
-    "message": "Bitcoin reclaimed $74,900 and ether jumped 5.6% to $2,345 overnight as Washington brokered fresh Israel-Lebanon ceasefire talks, thawing the geopolitical risk that had pinned crypto for two weeks.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-009",
-    "type": "news",
-    "title": "📰 Circle CEO Refuses to Freeze $232M in USDC From Drift Hack",
-    "message": "Jeremy Allaire publicly defended Circle's decision not to blacklist USDC wallets tied to the $285M Drift exploit, saying the issuer will only act with a court order.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-008",
-    "type": "news",
-    "title": "📰 Saylor Scoops Another 13,927 BTC, Strategy Stack Hits 780,897",
-    "message": "Michael Saylor's Strategy bought 13,927 BTC for roughly $1 billion last week, lifting its treasury to 780,897 coins — about 3.8% of all Bitcoin that will ever exist.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-007",
-    "type": "news",
-    "title": "📰 SEC Market Structure Roundtable Begins Today as CLARITY Clock Ticks",
-    "message": "The SEC kicks off its digital asset market structure roundtable Thursday, the last big tell on where regulators land before the Senate Banking CLARITY markup in late April.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-006",
-    "type": "news",
-    "title": "📰 Fed Chair Nominee Warsh Discloses Crypto Portfolio Spanning DeFi",
-    "message": "Trump's pick to lead the Federal Reserve, Kevin Warsh, disclosed indirect stakes in Solana, Polymarket, dYdX, Compound, Optimism, and over a dozen other crypto projects.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
-  },
-  {
-    "id": "feed-2026-04-16-005",
-    "type": "news",
-    "title": "📰 CLARITY Act Pulled From Senate Calendar, April 25 Deadline Looms",
-    "message": "The U.S. Senate quietly removed the CLARITY market-structure bill from its schedule, leaving crypto's biggest legislative priority on the brink of dying before midterms.",
-    "actionUrl": "/news",
-    "date": "2026-04-16"
   }
 ]

@@ -2,6 +2,7 @@
 
 "use client";
 import { useState, useMemo, useCallback } from "react";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ── types ── */
 interface Asset {
@@ -382,6 +383,7 @@ export default function RiskAnalyzerPage() {
           This tool uses geometric Brownian motion Monte Carlo simulation with correlated asset returns. Expected returns and volatilities are based on historical crypto market data (2020-2025). Correlation matrices are derived from daily returns across asset classes. Results are for educational purposes only and do not constitute financial advice. Past performance does not guarantee future results. Crypto assets are highly volatile and you may lose your entire investment.
         </p>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/risk-analyzer" />
     </div>
   );
 }

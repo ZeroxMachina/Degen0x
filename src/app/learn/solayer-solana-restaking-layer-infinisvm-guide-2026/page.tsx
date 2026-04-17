@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Solayer Guide 2026 — Solana Restaking, sSOL, sUSD & InfiniSVM',
@@ -117,6 +119,7 @@ export default function SolayerGuide() {
 
   return (
     <div style={pageStyle}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <div style={containerStyle}>
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Learn', href: '/learn' }, { label: 'Solayer Solana Restaking Layer Infinisvm...' }]} />
 
@@ -505,6 +508,7 @@ export default function SolayerGuide() {
       </div>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/solayer-solana-restaking-layer-infinisvm-guide-2026" />
     </div>
   );
 }

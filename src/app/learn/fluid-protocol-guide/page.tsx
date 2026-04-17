@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FluidCapitalEfficiencyCalc from "@/components/FluidCapitalEfficiencyCalc";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -479,6 +480,7 @@ export default function FluidProtocolGuidePage() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/fluid-protocol-guide" />
     </main>
   );
 }

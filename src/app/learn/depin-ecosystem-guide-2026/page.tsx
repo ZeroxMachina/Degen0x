@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -520,6 +521,7 @@ export default function DePINEcosystemGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/depin-ecosystem-guide-2026" />
     </div>
   );
 }

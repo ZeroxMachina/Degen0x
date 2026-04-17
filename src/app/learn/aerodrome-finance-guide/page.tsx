@@ -10,6 +10,7 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AerodromeVeCalculator from "@/components/AerodromeVeCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -898,6 +899,7 @@ export default function AerodromeFinanceGuide() {
       </section>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/aerodrome-finance-guide" />
     </div>
   );
 }

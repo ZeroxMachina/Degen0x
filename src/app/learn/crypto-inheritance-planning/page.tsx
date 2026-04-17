@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Crypto Inheritance Planning 2026: Protect Your Digital Assets for Your Heirs',
@@ -84,6 +86,7 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function CryptoInheritancePlanningPage() {
   return (
     <div style={{ minHeight: '100vh', background: 'var(--color-bg)', color: 'var(--color-text)' }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <StructuredData data={combinedSchema} />
 
       <article style={{ maxWidth: 820, margin: '0 auto', padding: '40px 20px 80px 20px' }}>
@@ -2191,6 +2194,7 @@ export default function CryptoInheritancePlanningPage() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-inheritance-planning" />
     </div>
   );
 }

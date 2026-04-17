@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import MoveTokenUnlockTracker from "@/components/MoveTokenUnlockTracker";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -678,6 +679,7 @@ export default function MovementNetworkGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/movement-network-guide" />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -670,6 +671,7 @@ export default function ColdStorageSeedPhraseSecurityGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/cold-storage-seed-phrase-security-guide-2026" />
     </main>
   );
 }

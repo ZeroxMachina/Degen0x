@@ -6,6 +6,7 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL, SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -87,7 +88,7 @@ export default function CryptoMarketCyclesPage() {
 
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", scrollBehavior: "smooth" }}>
-      <StructuredData schema={combinedSchema} />
+      <StructuredData data={combinedSchema} />
 
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
@@ -782,14 +783,6 @@ export default function CryptoMarketCyclesPage() {
                   textDecoration: "none",
                   transition: "all 0.3s",
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = S.blue;
-                  e.currentTarget.style.backgroundColor = S.surface2;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = S.border;
-                  e.currentTarget.style.backgroundColor = S.surface;
-                }}
               >
                 <h3 style={{ fontSize: 15, fontWeight: 700, marginTop: 0, marginBottom: 8, color: S.blue }}>
                   {link.title}
@@ -817,6 +810,7 @@ export default function CryptoMarketCyclesPage() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-market-cycles-guide-2026" />
     </main>
   );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "104+ Free Crypto Tools — Bridge Aggregator v2, Watchlist Sync, MEV Protection & More | degen0x",
@@ -647,6 +648,7 @@ export default function ToolsPage() {
           ))}
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools" />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo } from 'react';
 import LivePriceFeed from '@/components/LivePriceFeed';
+import RelatedContent from '@/components/RelatedContent';
 
 export default function LivePricesPage() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -735,6 +736,7 @@ export default function LivePricesPage() {
       >
         <p>degen0x © 2024. All rights reserved. Market data for informational purposes only.</p>
       </footer>
+      <RelatedContent category="tools" currentSlug="/tools/live-prices" />
     </div>
   );
 }

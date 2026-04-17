@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Story Protocol Guide 2026: IP Tokenization & Programmable IP | degen0x',
@@ -309,6 +311,7 @@ export default function StoryProtocolGuide() {
 
   return (
     <div style={pageStyle}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: '0.85rem', color: '#8b949e' }}>
@@ -1236,6 +1239,7 @@ export default function StoryProtocolGuide() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <RelatedContent category="learn" currentSlug="/learn/story-protocol-ip-tokenization-guide-2026" />
     </div>
   );
 }

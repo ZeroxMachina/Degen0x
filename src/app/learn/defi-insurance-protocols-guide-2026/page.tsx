@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -104,6 +106,7 @@ export default function DeFiInsuranceGuide() {
 
   return (
     <article style={{ backgroundColor: S.bg, color: S.text, minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <style>{`
         .degen-related-card { transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s; }
         .degen-related-card:hover { transform: translateY(-3px); border-color: ${S.primary} !important; box-shadow: 0 8px 24px rgba(99,102,241,0.15); }
@@ -429,6 +432,7 @@ export default function DeFiInsuranceGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/defi-insurance-protocols-guide-2026" />
       </article>
   );
 }

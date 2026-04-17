@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 // SEO Metadata
 // Types
@@ -843,6 +844,7 @@ export default function WalletAnalyzer() {
           )}
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/wallet-analyzer" />
     </main>
   );
 }

@@ -2,6 +2,8 @@
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = { bg:"#0d1117",card:"#161b22",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4",red:"#f85149",indigo:"#818cf8" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"Crypto Technical Analysis Guide",href:"/learn/crypto-technical-analysis-guide-2026"}];
@@ -72,7 +74,8 @@ export default function CryptoTechnicalAnalysisGuidePage() {
       <BreadcrumbStructuredData items={[{name:"Home",href:"/"},{name:"Learn",href:"/learn"},{name:"Crypto Technical Analysis Guide",href:"/learn/crypto-technical-analysis-guide-2026"}]} />
 
       <div style={{borderBottom:`1px solid ${S.border}`,paddingTop:24}}>
-        <div style={{maxWidth:1280,margin:"0 auto",padding:"0 24px 24px"}}><Breadcrumb items={breadcrumbs}/></div>
+        <div style={{maxWidth:1280,margin:"0 auto",padding:"0 24px 24px"}}><Breadcrumb items={breadcrumbs}/>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}</div>
       </div>
 
       <article style={{maxWidth:900,margin:"0 auto",padding:"48px 24px 80px"}}>
@@ -495,6 +498,7 @@ export default function CryptoTechnicalAnalysisGuidePage() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-technical-analysis-guide-2026" />
     </main>
   );
 }

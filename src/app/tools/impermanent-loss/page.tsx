@@ -4,6 +4,7 @@
 
 import { useState, useMemo, useCallback } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ─────────────────────────────────────────────────────────────
    Impermanent Loss Calculator
@@ -544,6 +545,7 @@ export default function ImpermanentLossPage() {
           This calculator provides estimates only. Actual returns depend on pool conditions, MEV, and market dynamics. Not financial advice. DYOR.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/impermanent-loss" />
     </div>
   );
 }

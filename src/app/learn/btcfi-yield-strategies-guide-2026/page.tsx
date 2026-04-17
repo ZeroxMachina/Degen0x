@@ -4,6 +4,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -597,6 +598,7 @@ export default function BtcfiYieldStrategiesGuide2026() {
       </section>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/btcfi-yield-strategies-guide-2026" />
     </div>
   );
 }

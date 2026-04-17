@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -365,6 +366,7 @@ export default function AaveVsMakerVsCompound() {
           </p>
         </div>
       </div>
+      <RelatedContent category="compare" currentSlug="/compare/aave-vs-maker-vs-compound" />
     </article>
   );
 }

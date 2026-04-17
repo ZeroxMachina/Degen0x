@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -329,6 +330,7 @@ export default function AirdropsGuidePage() {
           Last updated March 2026. Airdrop information is speculative. No guarantee any project will distribute tokens. Not financial advice. DYOR.
         </div>
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-airdrops-2026" />
     </div>
   );
 }

@@ -7,6 +7,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { multiChainWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Best Multi-Chain Wallets of ${CURRENT_YEAR} - Cross-Chain Wallet Reviews | ${SITE_NAME}`,
@@ -104,6 +105,7 @@ export default function BestMultiChainWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+      <RelatedContent category="tools" currentSlug="/wallets/best/multi-chain" />
     </div>
   );
 }

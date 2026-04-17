@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ────────────────────────────────────────────────────────────
    Types
@@ -236,6 +237,7 @@ export default function WalletSecurityAudit() {
           </p>
         </div>
       </section>
+      <RelatedContent category="tools" currentSlug="/tools/wallet-security-audit" />
     </div>
   );
 }

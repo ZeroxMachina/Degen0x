@@ -4,6 +4,7 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -1003,6 +1004,7 @@ export default function CryptoPortfolioAllocationGuide() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-portfolio-allocation-guide-2026" />
     </div>
   );
 }

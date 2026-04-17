@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -393,6 +394,7 @@ export default function CryptoETFInKindRedemptionGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-etf-in-kind-redemption-guide-2026" />
     </div>
   );
 }

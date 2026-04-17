@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -96,7 +97,7 @@ export default function UniChainGuidePage() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh' }}>
-      <StructuredData schema={combinedSchema} />
+      <StructuredData data={combinedSchema} />
       <Breadcrumb items={breadcrumbItems} />
 
       <div style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px' }}>
@@ -181,10 +182,6 @@ export default function UniChainGuidePage() {
                     alignItems: 'center',
                     gap: '8px',
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                  onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-                  onFocus={(e) => { e.currentTarget.style.outline = '2px solid #6366f1'; e.currentTarget.style.outlineOffset = '2px'; }}
-                  onBlur={(e) => { e.currentTarget.style.outline = 'none'; }}
                 >
                   <span style={{ color: '#8b949e' }}>{index + 1}.</span> {item.label}
                 </a>
@@ -747,14 +744,6 @@ export default function UniChainGuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#58a6ff';
-                e.currentTarget.style.backgroundColor = '#0d1117';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#30363d';
-                e.currentTarget.style.backgroundColor = '#161b22';
-              }}
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 Layer 2 Scaling Guide
@@ -772,14 +761,6 @@ export default function UniChainGuidePage() {
                 padding: '16px',
                 textDecoration: 'none',
                 transition: 'all 0.3s',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#58a6ff';
-                e.currentTarget.style.backgroundColor = '#0d1117';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#30363d';
-                e.currentTarget.style.backgroundColor = '#161b22';
               }}
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
@@ -799,14 +780,6 @@ export default function UniChainGuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#58a6ff';
-                e.currentTarget.style.backgroundColor = '#0d1117';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#30363d';
-                e.currentTarget.style.backgroundColor = '#161b22';
-              }}
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 MEV Protection Guide
@@ -824,14 +797,6 @@ export default function UniChainGuidePage() {
                 padding: '16px',
                 textDecoration: 'none',
                 transition: 'all 0.3s',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#58a6ff';
-                e.currentTarget.style.backgroundColor = '#0d1117';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#30363d';
-                e.currentTarget.style.backgroundColor = '#161b22';
               }}
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
@@ -851,14 +816,6 @@ export default function UniChainGuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#58a6ff';
-                e.currentTarget.style.backgroundColor = '#0d1117';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#30363d';
-                e.currentTarget.style.backgroundColor = '#161b22';
-              }}
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 DEX Screener
@@ -877,14 +834,6 @@ export default function UniChainGuidePage() {
                 textDecoration: 'none',
                 transition: 'all 0.3s',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#58a6ff';
-                e.currentTarget.style.backgroundColor = '#0d1117';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#30363d';
-                e.currentTarget.style.backgroundColor = '#161b22';
-              }}
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
                 Intent-Based DEX Trading
@@ -902,14 +851,6 @@ export default function UniChainGuidePage() {
                 padding: '16px',
                 textDecoration: 'none',
                 transition: 'all 0.3s',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#58a6ff';
-                e.currentTarget.style.backgroundColor = '#0d1117';
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = '#30363d';
-                e.currentTarget.style.backgroundColor = '#161b22';
               }}
             >
               <h3 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '8px', color: '#79c0ff', marginTop: 0 }}>
@@ -943,6 +884,7 @@ export default function UniChainGuidePage() {
       </div>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/unichain-guide-2026" />
     </div>
   );
 }

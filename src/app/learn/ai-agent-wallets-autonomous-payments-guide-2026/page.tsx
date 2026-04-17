@@ -112,7 +112,7 @@ const tableOfContents = [
 export default function Page() {
   return (
     <>
-      <StructuredData schema={combinedSchema} />
+      <StructuredData data={combinedSchema} />
 
       <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
         <Breadcrumb

@@ -7,6 +7,7 @@ import {
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -756,6 +757,7 @@ export default function ClarityActCryptoGuide() {
           ))}
         </div>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/clarity-act-crypto-guide" />
     </div>
   );
 }

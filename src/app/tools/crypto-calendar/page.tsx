@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, Grid3x3, List, Calendar } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 interface CryptoEvent {
   id: string;
@@ -308,6 +309,7 @@ function EventListItem({ event }: { event: CryptoEvent }) {
           </span>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/crypto-calendar" />
     </div>
   );
 }

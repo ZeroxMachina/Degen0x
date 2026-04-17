@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateToolPageSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -309,6 +310,7 @@ export default function FundingRateTrackerPage() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/funding-rate-tracker" />
     </div>
   );
 }

@@ -4,6 +4,8 @@ import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: "PEAQ & DePIN Robotics Guide 2026 | degen0x",
@@ -115,6 +117,7 @@ export default function PeaqDeginRoboticsGuidePage() {
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px 24px" }}>
           <Breadcrumb items={breadcrumbs} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
         </div>
       </div>
 
@@ -700,10 +703,6 @@ export default function PeaqDeginRoboticsGuidePage() {
         {/* Back to Top */}
         <div style={{ textAlign: "center", paddingTop: 24 }}>
           <a
-            onClick={(e) => {
-              e.preventDefault();
-              window.scrollTo({ top: 0, behavior: "smooth" });
-            }}
             style={{
               fontSize: 13,
               color: S.primary,
@@ -736,6 +735,7 @@ export default function PeaqDeginRoboticsGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/peaq-depin-robotics-guide-2026" />
     </main>
   );
 }

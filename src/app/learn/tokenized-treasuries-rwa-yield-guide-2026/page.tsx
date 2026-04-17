@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -883,14 +884,6 @@ export default function TokenizedTreasuriesGuidePage() {
                 cursor: "pointer",
                 transition: "all 0.3s ease",
               }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.borderColor = "rgba(168, 85, 247, 0.5)";
-                e.currentTarget.style.transform = "translateY(-2px)";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.borderColor = "var(--color-border)";
-                e.currentTarget.style.transform = "translateY(0)";
-              }}
             >
               <h3 className="font-semibold mb-2">Stablecoins Guide</h3>
               <p
@@ -911,14 +904,6 @@ export default function TokenizedTreasuriesGuidePage() {
                 padding: 20,
                 cursor: "pointer",
                 transition: "all 0.3s ease",
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.borderColor = "rgba(168, 85, 247, 0.5)";
-                e.currentTarget.style.transform = "translateY(-2px)";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.borderColor = "var(--color-border)";
-                e.currentTarget.style.transform = "translateY(0)";
               }}
             >
               <h3 className="font-semibold mb-2">DeFi Yield Farming Guide</h3>
@@ -941,14 +926,6 @@ export default function TokenizedTreasuriesGuidePage() {
                 cursor: "pointer",
                 transition: "all 0.3s ease",
               }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.borderColor = "rgba(168, 85, 247, 0.5)";
-                e.currentTarget.style.transform = "translateY(-2px)";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.borderColor = "var(--color-border)";
-                e.currentTarget.style.transform = "translateY(0)";
-              }}
             >
               <h3 className="font-semibold mb-2">Staking Guide</h3>
               <p
@@ -968,14 +945,6 @@ export default function TokenizedTreasuriesGuidePage() {
                 padding: 20,
                 cursor: "pointer",
                 transition: "all 0.3s ease",
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.borderColor = "rgba(168, 85, 247, 0.5)";
-                e.currentTarget.style.transform = "translateY(-2px)";
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.borderColor = "var(--color-border)";
-                e.currentTarget.style.transform = "translateY(0)";
               }}
             >
               <h3 className="font-semibold mb-2">DCA Calculator</h3>
@@ -1021,6 +990,7 @@ export default function TokenizedTreasuriesGuidePage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/tokenized-treasuries-rwa-yield-guide-2026" />
       </article>
   );
 }

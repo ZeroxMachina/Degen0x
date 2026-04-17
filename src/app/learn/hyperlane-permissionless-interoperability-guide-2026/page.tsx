@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Hyperlane Guide 2026 — Permissionless Interop & HYPER | degen0x',
@@ -68,7 +70,8 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function HyperlaneGuide() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117', color: '#e6edf3' }}>
-      <StructuredData schema={combinedSchema} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
+      <StructuredData data={combinedSchema} />
       <div style={{ maxWidth: 820, margin: '0 auto', padding: '40px 20px' }}>
         {/* Breadcrumb */}
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Learn', href: '/learn' }, { label: 'Hyperlane Interoperability Guide' }]} />
@@ -820,25 +823,6 @@ export default function HyperlaneGuide() {
                   transition: 'all 0.3s ease',
                   display: 'block',
                 }}
-                onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#58a6ff';
-                  e.currentTarget.style.backgroundColor = '#0d1b26';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.backgroundColor = '#161b22';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-                onFocus={(e: React.FocusEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#6366f1';
-                  e.currentTarget.style.outline = '2px solid #6366f1';
-                  e.currentTarget.style.outlineOffset = '2px';
-                }}
-                onBlur={(e: React.FocusEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.outline = 'none';
-                }}
               >
                 <h3 style={{ color: '#58a6ff', fontSize: 16, fontWeight: 600, margin: '0 0 8px 0' }}>
                   {item.title}
@@ -853,6 +837,7 @@ export default function HyperlaneGuide() {
 
         <BackToTop />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/hyperlane-permissionless-interoperability-guide-2026" />
     </main>
   );
 }

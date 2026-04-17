@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -594,6 +595,7 @@ export default function CoinbaseWalletVsMetaMask() {
             Always verify firmware from official sources and never share your seed phrase. See our <a href="/methodology" style={{ color: '#22c55e' }}>security review criteria</a>.
           </p>
         </div>
+      <RelatedContent category="tools" currentSlug="/wallets/coinbase-wallet-vs-metamask" />
       </article>
   );
 }

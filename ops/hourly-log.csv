@@ -1,0 +1,2 @@
+timestamp,pages_shipped,commits,deploy_status,news_freshness,open_incidents,priority_for_next_hour
+2026-04-17T07:30Z,0,1,skipped-prior-cycle,green-29min,1-uncommitted-wip-open,verify-vercel-build-of-9b63adb7-and-triage-790-file-wip

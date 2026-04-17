@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1508,6 +1509,7 @@ export default function InitiaGuidePage() {
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
+      <RelatedContent category="learn" currentSlug="/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026" />
     </div>
   );
 }

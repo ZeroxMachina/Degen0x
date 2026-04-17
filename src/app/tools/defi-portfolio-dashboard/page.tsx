@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -395,6 +396,7 @@ export default function DefiPortfolioDashboard() {
           section="tools"
         />
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/defi-portfolio-dashboard" />
     </div>
 
   );

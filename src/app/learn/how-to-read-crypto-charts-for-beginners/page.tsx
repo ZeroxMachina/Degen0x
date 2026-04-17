@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -222,8 +223,6 @@ export default function HowToReadCryptoChartsPage() {
                     fontSize: "14px",
                     transition: "color 0.2s",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#79c0ff")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff")}
                 >
                   {idx + 1}. {item}
                 </a>
@@ -928,14 +927,6 @@ export default function HowToReadCryptoChartsPage() {
                     transition: "all 0.2s",
                     height: "100%",
                   }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = "#58a6ff";
-                    e.currentTarget.style.background = "#1a212f";
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = "#30363d";
-                    e.currentTarget.style.background = "#161b22";
-                  }}
                 >
                   <h3 style={{ fontSize: "16px", fontWeight: "700", marginBottom: "8px", color: "#58a6ff" }}>
                     {article.title}
@@ -965,6 +956,7 @@ export default function HowToReadCryptoChartsPage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/how-to-read-crypto-charts-for-beginners" />
     </div>
   );
 }

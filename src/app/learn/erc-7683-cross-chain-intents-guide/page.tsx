@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1020,6 +1021,7 @@ export default function ERC7683GuidePage() {
           section="learn"
         />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/erc-7683-cross-chain-intents-guide" />
     </div>
 
   );

@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 const FREQUENCIES = [
   { label: "Daily", value: "daily", periodsPerYear: 365 },
@@ -255,6 +256,7 @@ export default function DcaCalculatorPage() {
           volatility. Always do your own research and never invest more than you can afford to lose.
         </p>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/tools/dca-calculator" />
     </div>
   );
 }

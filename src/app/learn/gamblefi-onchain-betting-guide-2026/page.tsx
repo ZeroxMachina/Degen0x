@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -595,6 +596,7 @@ export default function GambleFiGuide() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/gamblefi-onchain-betting-guide-2026" />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ──────────────── Types ──────────────── */
 interface Transaction {
@@ -416,6 +417,7 @@ export default function WalletPnLPage() {
           ))}
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/wallet-pnl-breakdown" />
     </div>
   );
 }

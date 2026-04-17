@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Link from 'next/link';
+import RelatedContent from '@/components/RelatedContent';
 
 interface Protocol {
   name: string;
@@ -741,6 +742,7 @@ export default function CryptoScreener() {
           </p>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/screener" />
     </div>
   );
 }

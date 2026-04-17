@@ -10,6 +10,7 @@
 
 import React, { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 interface RegulatoryData {
   country: string;
@@ -961,6 +962,7 @@ export default function RegulatoryMapPage() {
           </div>
         )}
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/regulatory-map" />
     </div>
   );
 }

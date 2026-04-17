@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1079,6 +1080,7 @@ export default function DecentralizedIdentityGuide() {
         {/* JSON-LD structured data */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/decentralized-identity-did-verifiable-credentials-guide-2026" />
     </div>
   );
 }

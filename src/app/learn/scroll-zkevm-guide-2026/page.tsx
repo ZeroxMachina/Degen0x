@@ -6,6 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, generateHowToSchema, combineSchemas } from '@/lib/structured-data';
 import { ReactNode } from 'react';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -866,6 +867,7 @@ export default function ScrollGuide() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/scroll-zkevm-guide-2026" />
     </main>
   );
 }

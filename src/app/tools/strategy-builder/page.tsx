@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Rule {
@@ -726,6 +727,7 @@ export default function StrategyBuilderPage() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/strategy-builder" />
     </div>
   );
 }

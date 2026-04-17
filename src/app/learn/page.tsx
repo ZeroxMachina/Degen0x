@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Learn Crypto: Complete Guides & Tutorials (${CURRENT_YEAR})`,
@@ -230,6 +231,7 @@ export default function LearnHubPage() {
           </Link>
         </div>
       </div>
+      <RelatedContent category="learn" currentSlug="/learn" />
     </div>
   );
 }

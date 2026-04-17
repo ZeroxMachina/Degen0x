@@ -7,6 +7,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { beginnerWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for Beginners (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -104,6 +105,7 @@ export default function BestBeginnersWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+      <RelatedContent category="tools" currentSlug="/wallets/best/beginners" />
     </div>
   );
 }

@@ -11,6 +11,7 @@ import BackToTop from "@/components/BackToTop";
 import BitcoinLSTYieldEstimator from "@/components/BitcoinLSTYieldEstimator";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ──────────────────────────────────────────────────────────────
@@ -1394,6 +1395,7 @@ export default function BitcoinLSTGuidePage() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/bitcoin-liquid-staking-tokens-guide-2026" />
     </div>
   );
 }

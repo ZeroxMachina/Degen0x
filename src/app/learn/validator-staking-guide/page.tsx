@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 interface Validator {
   name: string;
@@ -63,6 +65,7 @@ export default function ValidatorStakingGuide() {
 
   return (
     <div style={{ minHeight: '100vh', background: '#0d1117', color: '#e6edf3' }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <div style={{ maxWidth: 1280, margin: '0 auto', padding: '24px 16px' }}>
         <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Learn', href: '/learn' }, { label: 'Validator Staking Guide' }]} />
 
@@ -217,6 +220,7 @@ export default function ValidatorStakingGuide() {
           <strong style={{ color: '#d29922' }}>⚠️ Disclaimer:</strong> Staking involves risk including slashing, smart contract vulnerabilities, and price volatility. APR figures are approximate and change frequently. This guide is for educational purposes only and does not constitute financial advice. Always do your own research.
         </div>
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/validator-staking-guide" />
     </div>
   );
 }

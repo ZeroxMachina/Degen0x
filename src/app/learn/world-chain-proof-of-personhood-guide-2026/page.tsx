@@ -6,6 +6,8 @@ import BackToTop from '@/components/BackToTop';
 import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -83,6 +85,7 @@ export default function WorldChainProofOfPersonhoodGuidePage() {
     <div style={{ backgroundColor: S.bg, color: S.text, minHeight: '100vh' }}>
       <StructuredData schema={combinedSchema} />
       <Breadcrumb items={breadcrumbItems} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
 
       <div style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px' }}>
         {/* Header Section */}
@@ -1114,6 +1117,7 @@ export default function WorldChainProofOfPersonhoodGuidePage() {
       </div>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/world-chain-proof-of-personhood-guide-2026" />
     </div>
   );
 }

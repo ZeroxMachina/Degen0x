@@ -4,6 +4,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -63,6 +64,7 @@ export default function EtoroVsCoinbasePage() {
         { question: "Can I use both eToro and Coinbase?", answer: "Yes, many investors use both platforms. You might use eToro for copy trading and stock/crypto diversification while using Coinbase for deeper crypto access and lower trading fees." },
         { question: "Which has better customer support?", answer: "Coinbase has improved its support significantly with phone, chat, and email options. eToro offers tiered support with priority access for higher account balances. Both are adequate but neither is exceptional." },
       ]} />
+      <RelatedContent category="tools" currentSlug="/exchanges/compare/etoro-vs-coinbase" />
     </div>
   );
 }

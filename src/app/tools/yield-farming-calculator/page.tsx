@@ -5,6 +5,7 @@
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
 import { Metadata } from "next";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 type CompoundingFrequency = "daily" | "weekly" | "monthly" | "annually";
@@ -837,6 +838,7 @@ export default function YieldFarmingCalculatorPage() {
           <strong>⚠️ Disclaimer:</strong> This calculator provides educational estimates based on your inputs. Actual returns depend on market conditions, gas fees, slippage, and protocol changes. Past performance is not indicative of future results. Yield farming carries significant risks including smart contract vulnerabilities, impermanent loss, and market volatility. Always do thorough research, verify audits, and never invest more than you can afford to lose. This is not financial advice.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/yield-farming-calculator" />
     </div>
   );
 }

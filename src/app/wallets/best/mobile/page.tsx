@@ -6,6 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { mobileWallets } from "@/data/wallets";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -108,6 +109,7 @@ export default function BestMobileWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+      <RelatedContent category="tools" currentSlug="/wallets/best/mobile" />
     </div>
   );
 }

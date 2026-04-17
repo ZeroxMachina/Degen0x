@@ -1,6 +1,8 @@
 'use client';
 
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export default function CryptoRegulationPage() {
   const breadcrumbItems = [
@@ -23,6 +25,7 @@ export default function CryptoRegulationPage() {
   return (
     <div className="min-h-screen bg-slate-950 text-gray-100">
       <Breadcrumb items={breadcrumbItems} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
 
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-slate-900 to-slate-950 py-16 px-4 sm:px-6 lg:px-8">
@@ -425,6 +428,7 @@ export default function CryptoRegulationPage() {
         </div>
       </article>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-regulation-global" />
     </div>
   );
 }

@@ -5,6 +5,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Multisig vs Single-Key Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -46,6 +47,7 @@ export default function MultisigVsSingleKeyPage() {
             The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
           </p>
         </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/learn/multisig-setup-guide" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Guide</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Multisig Setup Guide</h3></Link><Link href="/wallets/reviews/safe-wallet" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Review</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Safe Wallet Review</h3></Link></div></section>
+      <RelatedContent category="tools" currentSlug="/wallets/compare/multisig-vs-single-key" />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import OptionsPnLCalculator from "@/components/OptionsPnLCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -692,6 +693,7 @@ export default function DeFiOptionsTradingGuidePage() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/defi-options-trading-guide" />
     </div>
   );
 }

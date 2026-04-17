@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import LearnPageLayout from "@/components/LearnPage";
 import { pages } from "@/data/pages/learn";
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 interface Props { params: Promise<{ slug: string }>; }
 
@@ -45,6 +46,7 @@ export default async function DynamicPage({ params }: Props) {
       faqs={page.faqs}
       relatedArticles={page.relatedArticles}
     >
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <div dangerouslySetInnerHTML={{ __html: page.childrenHtml }} />
     </LearnPageLayout>
   );

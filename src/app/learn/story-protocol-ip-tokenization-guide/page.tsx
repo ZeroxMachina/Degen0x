@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -799,6 +800,7 @@ export default function StoryProtocolGuide() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/story-protocol-ip-tokenization-guide" />
     </div>
   );
 }

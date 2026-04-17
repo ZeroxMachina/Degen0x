@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & CLOUD',
@@ -109,6 +111,7 @@ export default function SanctumGuide() {
 
   return (
     <div style={pageStyle}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <article aria-label="Guide: Sanctum Solana Liquid Staking">
       <div style={containerStyle}>
         <Breadcrumb items={[
@@ -274,6 +277,7 @@ export default function SanctumGuide() {
       </article>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <RelatedContent category="learn" currentSlug="/learn/sanctum-solana-liquid-staking-infinity-guide-2026" />
     </div>
   );
 }

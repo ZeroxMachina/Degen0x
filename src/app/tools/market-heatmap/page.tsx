@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ──────────────── Types ──────────────── */
 interface CoinData {
@@ -423,6 +424,7 @@ export default function MarketHeatmapPage() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/market-heatmap" />
     </main>
   );
 }

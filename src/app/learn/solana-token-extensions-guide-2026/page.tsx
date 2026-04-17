@@ -3,6 +3,8 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import FaqAccordion from "./FaqAccordion";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const FAQ_ITEMS = [
   {
@@ -85,6 +87,7 @@ export default function SolanaTokenExtensionsGuide() {
         paddingBottom: '4rem',
       }}
     >
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <article
         style={{
           maxWidth: '820px',
@@ -205,12 +208,6 @@ export default function SolanaTokenExtensionsGuide() {
                     fontSize: '0.95rem',
                     transition: 'color 0.2s',
                   }}
-                  onMouseEnter={(e) =>
-                    ((e.target as HTMLAnchorElement).style.color = '#79c0ff')
-                  }
-                  onMouseLeave={(e) =>
-                    ((e.target as HTMLAnchorElement).style.color = '#58a6ff')
-                  }
                 >
                   {item.label}
                 </a>
@@ -1372,6 +1369,7 @@ export default function SolanaTokenExtensionsGuide() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/solana-token-extensions-guide-2026" />
     </div>
   );
 }

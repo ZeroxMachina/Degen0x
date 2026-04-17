@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Crypto Passive Income Complete Guide 2026 | degen0x',
@@ -178,6 +180,7 @@ const TableOfContents = () => {
         marginBottom: 40,
       }}
     >
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <h3 style={{ color: '#e6edf3', marginTop: 0, marginBottom: 16 }}>Table of Contents</h3>
       <ul style={{ margin: 0, paddingLeft: 20 }}>
         {sections.map((section) => (
@@ -1111,6 +1114,7 @@ export default function CryptoPassiveIncomeGuide() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-passive-income-complete-guide-2026" />
     </main>
   );
 }

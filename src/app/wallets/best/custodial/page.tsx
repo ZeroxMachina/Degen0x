@@ -5,6 +5,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Best Custodial Crypto Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -56,6 +57,7 @@ export default function BestCustodialWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
+      <RelatedContent category="tools" currentSlug="/wallets/best/custodial" />
     </div>
   );
 }

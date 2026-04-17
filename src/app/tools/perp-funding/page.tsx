@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { ChevronUp, ChevronDown } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 type SortField = 'asset' | 'exchange' | 'fundingRate' | 'annualizedRate' | 'openInterest';
 type SortOrder = 'asc' | 'desc';
@@ -769,6 +770,7 @@ export default function PerpFundingPage() {
           Data updates every 8 hours. Funding rates are subject to change. Always verify on exchange before trading. Not financial advice.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/perp-funding" />
     </div>
   );
 }

@@ -9,6 +9,7 @@ import {
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -764,6 +765,7 @@ export default function BitcoinStrategicReserveGuidePage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/bitcoin-strategic-reserve-guide" />
       </article>
   );
 }

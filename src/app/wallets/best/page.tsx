@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { walletProducts, walletComparisonItems, walletFAQs } from "@/data/wallets";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -220,6 +221,7 @@ export default function BestWalletsPage() {
       </section>
 
       <FAQSection faqs={walletFAQs} />
+      <RelatedContent category="tools" currentSlug="/wallets/best" />
     </div>
   );
 }

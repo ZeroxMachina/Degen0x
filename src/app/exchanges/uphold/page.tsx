@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -171,6 +172,7 @@ export default function UpholdReview() {
           </section>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/uphold" />
     </div>
   );
 }

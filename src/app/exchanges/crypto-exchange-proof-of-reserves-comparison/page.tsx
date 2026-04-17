@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -529,6 +530,7 @@ export default function ProofOfReservesPage() {
           }}
         />
       </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/crypto-exchange-proof-of-reserves-comparison" />
     </main>
   );
 }

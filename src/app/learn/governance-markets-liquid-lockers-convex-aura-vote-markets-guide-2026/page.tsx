@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -136,6 +138,7 @@ export default function GovernanceMarketsPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b" style={{ backgroundColor: '#0d1117' }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       {/* Hero Section */}
       <section className="relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
         <div className="mx-auto max-w-4xl">
@@ -713,6 +716,7 @@ export default function GovernanceMarketsPage() {
           </p>
         </section>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026" />
     </main>
   );
 }

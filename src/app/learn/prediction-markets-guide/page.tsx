@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -251,6 +252,7 @@ export default function PredictionMarketsGuide() {
           </a>
         </div>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/prediction-markets-guide" />
     </div>
   );
 }

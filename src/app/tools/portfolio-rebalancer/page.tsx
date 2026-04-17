@@ -2,6 +2,7 @@
 
 import React, { useState, useMemo, useCallback } from 'react';
 import Link from 'next/link';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ─── types ─── */
 interface Asset {
@@ -415,6 +416,7 @@ export default function PortfolioRebalancer() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/portfolio-rebalancer" />
     </div>
   );
 }

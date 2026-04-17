@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const articleSchema = generateArticleSchema({
   title: "Nasdaq Tokenized Equities Trading Guide 2026: What the SEC Approval Means for Markets",
@@ -105,6 +107,7 @@ export default function NasdaqTokenizedEquitiesGuide() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <StructuredData data={structuredData} />
       <div style={{ maxWidth: '900px', margin: '0 auto', padding: '40px 20px' }}>
         <Breadcrumb items={[
@@ -491,6 +494,7 @@ export default function NasdaqTokenizedEquitiesGuide() {
         </div>
       </div>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/nasdaq-tokenized-equities-trading-guide-2026" />
     </div>
   );
 }

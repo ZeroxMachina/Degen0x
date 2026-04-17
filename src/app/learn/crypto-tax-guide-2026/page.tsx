@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1148,6 +1149,7 @@ export default function CryptoTaxGuide2026() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-tax-guide-2026" />
     </div>
   );
 }

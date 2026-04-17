@@ -10,6 +10,7 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -539,6 +540,7 @@ export default function OnchainInstitutionalCreditGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/onchain-institutional-credit-guide" />
     </div>
   );
 }

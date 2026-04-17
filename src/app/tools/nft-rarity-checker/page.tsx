@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 interface NFTCollection {
   id: string;
@@ -597,6 +598,7 @@ export default function NFTRarityChecker() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/nft-rarity-checker" />
     </div>
   );
 }

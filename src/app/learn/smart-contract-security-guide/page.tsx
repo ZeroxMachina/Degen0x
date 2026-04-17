@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -618,6 +619,7 @@ export default function SmartContractSecurityGuide() {
       </div>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/smart-contract-security-guide" />
     </div>
   );
 }

@@ -2,6 +2,8 @@
 
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg: "#0d1117",
@@ -148,6 +150,7 @@ export default function FundingRateArbitrageGuide() {
   return (
     <main style={{ background: S.bg, minHeight: "100vh", paddingBottom: 60 }}>
       <Breadcrumb items={breadcrumbs} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <article
         style={{
           maxWidth: 900,
@@ -517,6 +520,7 @@ export default function FundingRateArbitrageGuide() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/funding-rate-arbitrage-guide-2026" />
     </main>
   );
 }

@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import { generateToolPageSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ── SEO Metadata ────────────────────────────────────────────
@@ -523,6 +524,7 @@ export default function TokenSecurityScannerPage() {
           </div>
         </section>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/token-security-scanner" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import OptionsPayoffCalculator from "@/components/OptionsPayoffCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -458,6 +459,7 @@ export default function CryptoOptionsGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-options-trading-guide" />
     </div>
   );
 }

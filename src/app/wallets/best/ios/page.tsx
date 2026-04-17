@@ -5,6 +5,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for iPhone & iOS (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -57,6 +58,7 @@ export default function BestIOSWalletsPage() {
         </div>
       </section>
       <FAQSection faqs={faqs} />
+      <RelatedContent category="tools" currentSlug="/wallets/best/ios" />
     </div>
   );
 }

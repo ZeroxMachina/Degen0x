@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Crypto ETFs Complete Guide 2026: Bitcoin, Ethereum, Solana, XRP & Altcoins | degen0x',
@@ -301,6 +303,7 @@ export default function CryptoETFsPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -906,6 +909,7 @@ export default function CryptoETFsPage() {
 
         <BackToTop />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-etfs-complete-guide-2026" />
     </main>
   );
 }

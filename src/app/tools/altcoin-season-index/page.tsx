@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -409,6 +410,7 @@ export default function AltcoinSeasonIndex() {
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered financial advice. Alt season cycles are historical patterns—not guaranteed to repeat identically. Past cycles don&apos;t guarantee future performance. Altcoins carry extreme risk and volatility. Always do your own research (DYOR), diversify, and never invest more than you can afford to lose. degen0x does not endorse any specific altcoin or investment strategy.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/altcoin-season-index" />
     </article>
   );
 }

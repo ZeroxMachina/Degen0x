@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import RelatedContent from '@/components/RelatedContent';
 
 interface RiskDimensions {
   smartContract: number;
@@ -792,6 +793,7 @@ export default function DeFiRiskScorer() {
           <p>Risk assessments are based on demo data and on-chain metrics. Always conduct your own research before engaging with DeFi protocols.</p>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/defi-risk-scorer" />
     </div>
   );
 }

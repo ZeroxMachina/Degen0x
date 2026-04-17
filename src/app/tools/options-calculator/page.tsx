@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface GreeksValue {
@@ -701,6 +702,7 @@ export default function OptionsCalculatorPage() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/options-calculator" />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1334,6 +1335,7 @@ export default function AbstractChainGuide() {
 
       {/* Back to Top */}
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026" />
     </div>
   );
 }

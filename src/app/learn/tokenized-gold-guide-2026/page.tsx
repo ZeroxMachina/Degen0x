@@ -246,8 +246,6 @@ const TokenizedGoldGuide = () => {
                     gap: "8px",
                     transition: "color 0.2s",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#79c0ff")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff")}
                 >
                   <ChevronRight size={16} />
                   {item.label}
@@ -1539,8 +1537,6 @@ const TokenizedGoldGuide = () => {
                       alignItems: "center",
                       gap: "8px",
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.color = "#79c0ff")}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = "#58a6ff")}
                   >
                     <ChevronRight size={14} />
                     {link.label}

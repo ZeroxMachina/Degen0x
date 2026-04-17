@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Mantle Network Guide 2026 — MNT Token & L2',
@@ -267,6 +269,7 @@ export default function MantleNetworkGuide() {
 
   return (
     <div style={pageStyle}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <div style={containerStyle}>
         <Breadcrumb items={[
           { label: "Home", href: "/" },
@@ -744,6 +747,7 @@ export default function MantleNetworkGuide() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <RelatedContent category="learn" currentSlug="/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026" />
     </div>
   );
 }

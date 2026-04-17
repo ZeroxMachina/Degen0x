@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -907,6 +908,7 @@ export default function VirtualsProtocolGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/virtuals-protocol-ai-agent-launchpads-guide-2026" />
       </article>
   );
 }

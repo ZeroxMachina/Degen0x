@@ -3,6 +3,8 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -87,6 +89,7 @@ export default function Layer3ChainsGuide() {
 
   return (
     <div style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", paddingBottom: "4rem" }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <Breadcrumb items={[
         { label: "Learn", href: "/learn" },
         { label: "Layer 3 Chains Guide 2026", href: "#" }
@@ -827,6 +830,7 @@ export default function Layer3ChainsGuide() {
 
         <BackToTop />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/layer-3-chains-guide-2026" />
     </div>
   );
 }

@@ -82,7 +82,7 @@ export default function OnchaincreditScoringGuide() {
 
   return (
     <>
-      <StructuredData schema={schema} />
+      <StructuredData data={schema} />
       <article style={{ background: S.bg, color: S.text, minHeight: "100vh", paddingBottom: "4rem" }}>
         {/* Header */}
         <div style={{ borderBottom: `1px solid ${S.border}`, background: S.surface }}>

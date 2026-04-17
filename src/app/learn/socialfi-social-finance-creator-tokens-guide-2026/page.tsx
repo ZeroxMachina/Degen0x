@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 const pageStyles = {
@@ -937,6 +938,7 @@ export default function SocialFiGuidePage() {
       </section>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/socialfi-social-finance-creator-tokens-guide-2026" />
     </main>
   );
 }

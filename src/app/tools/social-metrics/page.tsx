@@ -4,6 +4,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ─────────────────────────────────────────────────────────────
    Types
@@ -558,6 +559,7 @@ export default function SocialMetricsPage() {
           })
         }}
       />
+      <RelatedContent category="tools" currentSlug="/tools/social-metrics" />
     </div>
   );
 }

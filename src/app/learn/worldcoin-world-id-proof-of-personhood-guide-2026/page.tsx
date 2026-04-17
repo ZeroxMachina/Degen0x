@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1265,6 +1266,7 @@ export default function WorldIDProofOfPersonhoodGuide() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/worldcoin-world-id-proof-of-personhood-guide-2026" />
     </div>
   );
 }

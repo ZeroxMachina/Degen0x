@@ -4,6 +4,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 interface GasNetwork {
   name: string;
@@ -308,6 +309,7 @@ export default function GasTrackerPage() {
         select option { background: #161b22; color: #e6edf3; }
         button:hover { opacity: 0.85; }
       `}</style>
+      <RelatedContent category="tools" currentSlug="/tools/gas-tracker" />
     </div>
   );
 }

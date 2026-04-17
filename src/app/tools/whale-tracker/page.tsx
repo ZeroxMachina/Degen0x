@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import WhaleTrackerClient from "./WhaleTrackerClient";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Whale Wallet Tracker — Monitor Smart Money Moves | degen0x",
@@ -52,6 +53,7 @@ export default function WhaleTrackerPage() {
         />
         <WhaleTrackerClient />
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/whale-tracker" />
     </div>
   );
 }

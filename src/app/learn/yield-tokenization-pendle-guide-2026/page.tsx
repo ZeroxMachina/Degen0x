@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1188,6 +1189,7 @@ export default function YieldTokenizationPendlePage() {
         />
 
           <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/yield-tokenization-pendle-guide-2026" />
     </main>
   );
 }

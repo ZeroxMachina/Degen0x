@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
 import { ChevronRight, TrendingDown, Zap, Shield, Route, BarChart3, Network, Check, X, Award, Target } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 type Chain = 'Ethereum' | 'Solana' | 'BSC' | 'Arbitrum' | 'Base' | 'Optimism' | 'Polygon' | 'Avalanche';
 type Tab = 'simulator' | 'comparison' | 'routes' | 'features' | 'gas' | 'matrix' | 'calculator';
@@ -672,6 +673,7 @@ export default function DexAggregator() {
           </div>
         )}
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/dex-aggregator" />
     </div>
   );
 }

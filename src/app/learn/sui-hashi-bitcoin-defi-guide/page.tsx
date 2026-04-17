@@ -199,8 +199,6 @@ export default function HashiBitcoinDefiGuide() {
                       textDecoration: 'none',
                       fontSize: '14px',
                     }}
-                    onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-                    onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
                   >
                     {item.label}
                   </a>
@@ -1007,14 +1005,6 @@ export default function HashiBitcoinDefiGuide() {
                     textDecoration: 'none',
                     color: '#e6edf3',
                     transition: 'all 0.3s ease',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderColor = '#58a6ff';
-                    e.currentTarget.style.background = '#0d1117';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderColor = '#30363d';
-                    e.currentTarget.style.background = '#161b22';
                   }}
                 >
                   <h3

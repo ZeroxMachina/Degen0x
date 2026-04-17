@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import StructuredData from "@/components/StructuredData";
 import StablecoinYieldTracker from "@/components/StablecoinYieldTracker";
 import { generateToolPageSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Stablecoin Yield Tracker - Best Stablecoin APY Rates | degen0x",
@@ -104,6 +105,7 @@ export default function StablecoinYieldTrackerPage() {
         />
       </div>
       <StablecoinYieldTracker />
+      <RelatedContent category="tools" currentSlug="/tools/stablecoin-yield-tracker" />
     </div>
   );
 }

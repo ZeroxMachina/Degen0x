@@ -1,5 +1,7 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", surface: "var(--color-surface, #161b22)",
@@ -19,6 +21,7 @@ export default function BlastGuidePage() {
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px 24px" }}>
           <Breadcrumb items={breadcrumbs} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
         </div>
       </div>
       <article style={{ maxWidth: 900, margin: "0 auto", padding: "48px 24px 80px" }}>
@@ -165,6 +168,7 @@ export default function BlastGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/blast-guide" />
     </main>
   );
 }

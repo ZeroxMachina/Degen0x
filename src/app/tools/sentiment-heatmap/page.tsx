@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import SentimentHeatmapClient from './SentimentHeatmapClient';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'Crypto Sentiment Heatmap | degen0x',
@@ -36,6 +37,7 @@ export default function SentimentHeatmapPage() {
         />
         <SentimentHeatmapClient />
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/sentiment-heatmap" />
     </div>
   );
 }

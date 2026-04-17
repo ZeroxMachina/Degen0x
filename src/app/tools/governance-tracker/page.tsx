@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ────────────────────────────────────────────────────────────
    Types
@@ -339,6 +340,7 @@ export default function GovernanceTrackerPage() {
           </div>
         )}
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/governance-tracker" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import RiskScoreClient from './RiskScoreClient';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'Portfolio Risk Scoring Engine | degen0x',
@@ -29,6 +30,7 @@ export default function RiskScorePage() {
         />
         <RiskScoreClient />
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/risk-score" />
     </div>
   );
 }

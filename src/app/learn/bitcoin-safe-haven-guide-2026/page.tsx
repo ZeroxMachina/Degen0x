@@ -9,6 +9,7 @@ import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -731,7 +732,7 @@ export default function BitcoinSafeHavenGuidePage() {
             { href: "/learn/tokenized-gold-guide-2026", label: "Tokenized Gold Guide: XAUT, PAXG & Digital Gold" },
             { href: "/learn/crypto-risk-management-guide-2026", label: "Crypto Risk Management Guide" },
             { href: "/learn/btc-yield-earning-strategies-guide-2026", label: "BTC Yield & BTCFi Earning Strategies 2026" },
-          ].map((link) => (
+          ].map((item) => (
             <Link href={item.href}
               key={link.href}
               style={{ color: "#58a6ff" }}
@@ -751,6 +752,7 @@ export default function BitcoinSafeHavenGuidePage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/bitcoin-safe-haven-guide-2026" />
       </article>
   );
 }

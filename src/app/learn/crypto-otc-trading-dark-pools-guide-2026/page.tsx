@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -919,6 +920,7 @@ export default function CryptoOTCTradingDarkPoolsPage() {
         />
 
           <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-otc-trading-dark-pools-guide-2026" />
     </main>
   );
 }

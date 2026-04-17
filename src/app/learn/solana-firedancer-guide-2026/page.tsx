@@ -3,6 +3,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -870,6 +871,7 @@ export default function SolanaFiredancerGuidePage() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/solana-firedancer-guide-2026" />
     </div>
   );
 }

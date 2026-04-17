@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -815,14 +816,6 @@ export default function LiquidRestakingTokensPage() {
                   textDecoration: "none",
                   transition: "all 0.2s",
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = S.primary;
-                  e.currentTarget.style.background = `${S.primary}10`;
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = S.border;
-                  e.currentTarget.style.background = S.surface;
-                }}
               >
                 <div style={{ fontWeight: 800, fontSize: 14, color: S.accent, marginBottom: 4 }}>📖 {link.title}</div>
                 <div style={{ fontSize: 12, color: S.text2, lineHeight: 1.6 }}>{link.desc}</div>
@@ -877,6 +870,7 @@ export default function LiquidRestakingTokensPage() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/liquid-restaking-tokens-compared-2026" />
     </main>
   );
 }

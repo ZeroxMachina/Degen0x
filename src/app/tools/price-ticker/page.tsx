@@ -4,6 +4,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ────────────────────────────────────────────────────────────
    Types & Data
@@ -407,6 +408,7 @@ export default function PriceTickerPage() {
           </p>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/price-ticker" />
     </div>
   );
 }

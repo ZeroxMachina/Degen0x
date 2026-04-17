@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/
 import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Euler V2 Modular Lending Guide 2026 — Vaults & EVK | degen0x',
@@ -59,7 +61,8 @@ const combinedSchemas = combineSchemas([articleSchema, faqSchema]);
 export default function EulerV2Guide() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117', color: '#e6edf3' }}>
-      <StructuredData schema={combinedSchemas} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
+      <StructuredData data={combinedSchemas} />
       <div style={{ maxWidth: 820, margin: '0 auto', padding: '40px 20px' }}>
         {/* Breadcrumb */}
         <Breadcrumb
@@ -1200,23 +1203,6 @@ export default function EulerV2Guide() {
                   display: 'block',
                   transition: 'border-color 0.2s, transform 0.2s',
                 }}
-                onMouseEnter={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#6366f1';
-                  e.currentTarget.style.transform = 'translateY(-2px)';
-                }}
-                onMouseLeave={(e: React.MouseEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.transform = 'translateY(0)';
-                }}
-                onFocus={(e: React.FocusEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#6366f1';
-                  e.currentTarget.style.outline = '2px solid #6366f1';
-                  e.currentTarget.style.outlineOffset = '2px';
-                }}
-                onBlur={(e: React.FocusEvent<HTMLAnchorElement>) => {
-                  e.currentTarget.style.borderColor = '#30363d';
-                  e.currentTarget.style.outline = 'none';
-                }}
               >
                 {item.label}
               </Link>
@@ -1227,6 +1213,7 @@ export default function EulerV2Guide() {
         {/* Back to Top */}
         <BackToTop />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/euler-v2-modular-lending-guide-2026" />
     </main>
   );
 }

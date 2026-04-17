@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -229,6 +230,7 @@ export default function PerpetualFuturesGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/perpetual-futures-guide" />
     </div>
   );
 }

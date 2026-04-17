@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import CryptoConverter from "@/components/CryptoConverter";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -282,6 +283,7 @@ export default function ConverterPage() {
           </p>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/converter" />
     </div>
   );
 }

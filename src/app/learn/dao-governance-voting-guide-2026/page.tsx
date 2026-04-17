@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import { ArticleStructuredData, FAQStructuredData } from "@/components/StructuredData";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: "DAO Governance & On-Chain Voting Guide 2026: How DAOs Work | degen0x",
@@ -48,6 +50,7 @@ const FAQ_DATA = [
 export default function DAOGovernanceVotingGuide() {
   return (
     <div style={{ color: S.text, minHeight: '100vh', padding: '2rem 1rem' }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <ArticleStructuredData title="DAO Governance & On-Chain Voting Guide 2026: How Crypto Communities Make Decisions" description="Learn how DAO governance works — on-chain vs off-chain voting, delegate mechanics, top DAOs, and governance innovations in 2026." datePublished="2026-03-17T00:00:00Z" dateModified="2026-03-17T00:00:00Z" slug="learn/dao-governance-voting-guide-2026" />
       <FAQStructuredData questions={FAQ_DATA} />
       <article style={{ maxWidth: '900px', margin: '0 auto' }}>
@@ -678,6 +681,7 @@ export default function DAOGovernanceVotingGuide() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/dao-governance-voting-guide-2026" />
     </div>
   );
 }

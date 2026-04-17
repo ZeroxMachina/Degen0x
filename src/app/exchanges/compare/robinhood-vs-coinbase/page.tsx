@@ -4,6 +4,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -64,6 +65,7 @@ export default function RobinhoodVsCoinbasePage() {
         { question: "Can I transfer crypto between Robinhood and Coinbase?", answer: "Yes, both platforms now support crypto withdrawals to external wallets. You can send crypto from Robinhood to a Coinbase address and vice versa using the appropriate blockchain network." },
         { question: "Which is better for beginners?", answer: "Both are beginner-friendly, but Coinbase offers more educational resources through Coinbase Learn and a wider selection of assets to explore. Robinhood is simpler but more limited. If you want to learn about crypto, Coinbase is better. If you just want to buy some Bitcoin alongside stocks, Robinhood works well." },
       ]} />
+      <RelatedContent category="tools" currentSlug="/exchanges/compare/robinhood-vs-coinbase" />
     </div>
   );
 }

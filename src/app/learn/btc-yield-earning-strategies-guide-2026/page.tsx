@@ -8,6 +8,7 @@ import {
 import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -840,7 +841,7 @@ export default function BTCYieldStrategiesGuidePage() {
             { href: "/learn/bitcoin-liquid-staking-tokens-guide-2026", label: "Bitcoin Liquid Staking Tokens Guide" },
             { href: "/learn/stablecoin-yield-strategies-2026", label: "Stablecoin Yield Strategies 2026" },
             { href: "/learn/bitcoin-safe-haven-guide-2026", label: "Bitcoin as a Safe Haven: Geopolitical Hedge Guide" },
-          ].map((link) => (
+          ].map((item) => (
             <Link href={item.href}
               key={link.href}
               style={{ color: "#58a6ff" }}
@@ -858,6 +859,7 @@ export default function BTCYieldStrategiesGuidePage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/btc-yield-earning-strategies-guide-2026" />
       </article>
   );
 }

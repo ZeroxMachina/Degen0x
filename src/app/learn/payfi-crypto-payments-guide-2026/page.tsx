@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1025,6 +1026,7 @@ export default function PayFiGuide() {
         />
 
           <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/payfi-crypto-payments-guide-2026" />
     </main>
   );
 }

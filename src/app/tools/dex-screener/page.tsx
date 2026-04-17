@@ -15,6 +15,7 @@ import {
   ChevronDown,
   ChevronUp,
 } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 interface Token {
   id: string;
@@ -844,6 +845,7 @@ export default function DexScreener() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/dex-screener" />
     </div>
   );
 }

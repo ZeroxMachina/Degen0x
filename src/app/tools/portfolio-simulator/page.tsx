@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface PortfolioAsset {
@@ -1062,6 +1063,7 @@ export default function PortfolioSimulatorPage() {
         <meta name='description' content='Design and simulate your crypto portfolio with Monte Carlo analysis, risk metrics, and rebalancing strategies.' />
         <meta name='keywords' content='crypto portfolio simulator, portfolio analysis, monte carlo simulation, crypto risk analysis' />
       </head>
+      <RelatedContent category="tools" currentSlug="/tools/portfolio-simulator" />
     </div>
   );
 }

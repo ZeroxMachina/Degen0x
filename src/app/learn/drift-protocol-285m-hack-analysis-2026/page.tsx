@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { generateArticleSchema } from '@/lib/structured-data';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -888,14 +889,6 @@ export default function DriftProtocolHackAnalysis() {
                 transition: 'all 0.2s',
                 display: 'block',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = S.primary;
-                e.currentTarget.style.backgroundColor = S.surface2;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = S.border;
-                e.currentTarget.style.backgroundColor = S.surface;
-              }}
             >
               <div style={{ fontWeight: '600', marginBottom: '8px' }}>
                 Smart Contract Security Guide
@@ -915,14 +908,6 @@ export default function DriftProtocolHackAnalysis() {
                 color: S.primary,
                 transition: 'all 0.2s',
                 display: 'block',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = S.primary;
-                e.currentTarget.style.backgroundColor = S.surface2;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = S.border;
-                e.currentTarget.style.backgroundColor = S.surface;
               }}
             >
               <div style={{ fontWeight: '600', marginBottom: '8px' }}>
@@ -944,14 +929,6 @@ export default function DriftProtocolHackAnalysis() {
                 transition: 'all 0.2s',
                 display: 'block',
               }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = S.primary;
-                e.currentTarget.style.backgroundColor = S.surface2;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = S.border;
-                e.currentTarget.style.backgroundColor = S.surface;
-              }}
             >
               <div style={{ fontWeight: '600', marginBottom: '8px' }}>
                 DeFi Insurance Protocols Guide
@@ -971,14 +948,6 @@ export default function DriftProtocolHackAnalysis() {
                 color: S.primary,
                 transition: 'all 0.2s',
                 display: 'block',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = S.primary;
-                e.currentTarget.style.backgroundColor = S.surface2;
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.borderColor = S.border;
-                e.currentTarget.style.backgroundColor = S.surface;
               }}
             >
               <div style={{ fontWeight: '600', marginBottom: '8px' }}>
@@ -1013,6 +982,7 @@ export default function DriftProtocolHackAnalysis() {
         </div>
       </div>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/drift-protocol-285m-hack-analysis-2026" />
     </div>
   );
 }

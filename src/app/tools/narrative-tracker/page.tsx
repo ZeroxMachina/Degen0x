@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
 import { TrendingUp, TrendingDown, Activity, Users, Github, Zap } from 'lucide-react';
+import RelatedContent from '@/components/RelatedContent';
 
 interface NarrativeData {
   id: string;
@@ -719,6 +720,7 @@ export default function NarrativeTracker() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/narrative-tracker" />
     </div>
   );
 }

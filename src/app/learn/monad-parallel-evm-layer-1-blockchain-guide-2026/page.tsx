@@ -688,6 +688,7 @@ npm install --save-dev hardhat @nomicfoundation/hardhat-ethers`}
 
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 contract MyToken is ERC20 {
@@ -909,6 +910,7 @@ contract MyToken is ERC20 {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/monad-parallel-evm-layer-1-blockchain-guide-2026" />
       </article>
   );
 }

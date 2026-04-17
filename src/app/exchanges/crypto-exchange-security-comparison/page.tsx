@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -242,6 +243,7 @@ const toc = [{ id: 'intro', t: 'Overview' }, { id: 'cold', t: 'Cold Storage' }, 
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
         </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/crypto-exchange-security-comparison" />
       </article>
   );
 }

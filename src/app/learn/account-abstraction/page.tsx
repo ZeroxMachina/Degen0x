@@ -33,6 +33,7 @@ export default function AccountAbstractionPage() {
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px 24px" }}>
           <Breadcrumb items={breadcrumbs} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
         </div>
       </div>
 
@@ -416,6 +417,8 @@ export default function AccountAbstractionPage() {
                 <div style={{ color: S.primary, marginBottom: 8 }}>// Alchemy Account Kit Setup</div>
                 <div style={{ color: S.text }}>{`import { createModularAccountAlchemyClient } from '@alchemy/aa-alchemy';
 import { sepolia } from '@alchemy/chains';
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const client = await createModularAccountAlchemyClient({
   chain: sepolia,
@@ -594,6 +597,7 @@ localStorage.setItem('gameSessionKey', sessionKey);`}</div>
           to { opacity: 1; transform: translateY(0); }
         }
       `}</style>
+      <RelatedContent category="learn" currentSlug="/learn/account-abstraction" />
     </main>
   );
 }

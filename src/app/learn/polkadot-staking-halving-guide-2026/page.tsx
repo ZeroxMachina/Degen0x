@@ -6,6 +6,7 @@ import Link from "next/link";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import { generateArticleSchema } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 const S = {
@@ -957,6 +958,7 @@ export default function Page() {
                 </div>
             </div>
             <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/polkadot-staking-halving-guide-2026" />
         </div>
     );
 }

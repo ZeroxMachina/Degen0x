@@ -1,6 +1,8 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import { useState } from 'react';
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -74,6 +76,7 @@ export default function MPCWalletsGuide() {
   return (
     <div style={{ minHeight: "100vh", backgroundColor: S.bg, color: S.text, padding: "0" }}>
       <Breadcrumb />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
 
       {/* Hero Section */}
       <section style={{
@@ -586,6 +589,7 @@ export default function MPCWalletsGuide() {
           </ul>
         </div>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/mpc-wallets-guide-2026" />
     </div>
   );
 }

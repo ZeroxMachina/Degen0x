@@ -2,6 +2,8 @@
 
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg:"#0d1117",
@@ -190,6 +192,7 @@ export default function GovernanceSecurityPage() {
   return (
     <main style={{ background: S.bg, minHeight: "100vh", padding: "20px" }}>
       <Breadcrumb items={breadcrumbs} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
 
       <article style={{ maxWidth: "920px", margin: "0 auto", color: S.text }}>
 
@@ -435,6 +438,7 @@ export default function GovernanceSecurityPage() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/governance-security-attack-vectors-2026" />
     </main>
   );
 }

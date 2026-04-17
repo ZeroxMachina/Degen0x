@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Kamino Finance Guide 2026 — Solana Lending, Liquidity & Leverage',
@@ -107,6 +109,7 @@ export default function KaminoFinanceGuide() {
 
   return (
     <div style={pageStyle}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <div style={containerStyle}>
         <Breadcrumb items={[
           { label: "Home", href: "/" },
@@ -260,6 +263,7 @@ export default function KaminoFinanceGuide() {
       </div>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <RelatedContent category="learn" currentSlug="/learn/kamino-finance-solana-lending-liquidity-guide-2026" />
     </div>
   );
 }

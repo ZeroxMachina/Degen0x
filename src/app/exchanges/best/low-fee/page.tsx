@@ -5,6 +5,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { exchanges } from "@/data/exchanges";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Cheapest Crypto Exchanges in ${CURRENT_YEAR} - Lowest Fee Comparison`,
@@ -144,6 +145,7 @@ export default function LowFeeExchangesPage() {
       </div>
 
       <FAQSection faqs={faqs} />
+      <RelatedContent category="tools" currentSlug="/exchanges/best/low-fee" />
     </div>
   );
 }

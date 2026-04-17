@@ -4,6 +4,7 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 const S = {
@@ -292,6 +293,7 @@ export default function DecentralizedGPUComputeGuidePage() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/decentralized-gpu-compute-networks-guide" />
     </main>
   );
 }

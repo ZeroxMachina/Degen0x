@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 import BitcoinSupplyTracker from "@/components/BitcoinSupplyTracker";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -586,6 +587,7 @@ export default function Bitcoin20MillionGuide() {
           </a>
         </div>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/bitcoin-20-million-supply-milestone" />
     </div>
   );
 }

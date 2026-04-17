@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -438,6 +439,7 @@ export default function MegaETHGuide() {
           section="learn"
         />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/megaeth-real-time-blockchain-layer-2-guide-2026" />
     </div>
 
   );

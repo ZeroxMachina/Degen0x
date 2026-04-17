@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import BasedRollupsVisualizer from "@/components/BasedRollupsVisualizer";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -877,6 +878,7 @@ export default function BasedRollupsGuide() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/based-rollups-preconfirmations-guide" />
     </div>
   );
 }

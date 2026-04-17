@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1915,6 +1916,7 @@ export default function OnchainAnalysisGuide() {
           __html: JSON.stringify(faqSchema),
         }}
       />
+      <RelatedContent category="learn" currentSlug="/learn/onchain-analysis-smart-money-tracking-tools-guide-2026" />
     </div>
   );
 }

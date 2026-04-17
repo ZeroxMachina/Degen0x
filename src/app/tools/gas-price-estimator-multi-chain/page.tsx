@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -359,6 +360,7 @@ export default function GasPriceEstimatorMultiChain() {
             <li><Link href="/compare/solana-vs-avalanche-comparison" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Solana Vs Avalanche</Link></li>
           </ul>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/gas-price-estimator-multi-chain" />
 
 </article>
   );

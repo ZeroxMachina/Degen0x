@@ -11,6 +11,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -242,8 +243,6 @@ export default function AltcoinETFGuidePage() {
             <li key={id}>
               <a
                 style={{ color: "#58a6ff", textDecoration: "none" }}
-                onMouseEnter={e => { (e.target as HTMLElement).style.textDecoration = 'underline'; }}
-                onMouseLeave={e => { (e.target as HTMLElement).style.textDecoration = 'none'; }}
               >
                 {label}
               </a>
@@ -1156,6 +1155,7 @@ export default function AltcoinETFGuidePage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/altcoin-etf-guide-2026" />
       </article>
   );
 }

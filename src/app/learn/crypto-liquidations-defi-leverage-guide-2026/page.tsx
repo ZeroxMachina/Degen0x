@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1232,6 +1233,7 @@ export default function CryptoLiquidationsPage() {
         />
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-liquidations-defi-leverage-guide-2026" />
     </main>
   );
 }

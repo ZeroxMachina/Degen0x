@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 interface Airdrop {
   id: string;
@@ -699,6 +700,7 @@ export default function AirdropTrackerPage() {
         select option { background: #161b22; color: #e6edf3; }
         button:hover { opacity: 0.95; }
       `}</style>
+      <RelatedContent category="tools" currentSlug="/tools/airdrop-tracker" />
     </div>
   );
 }

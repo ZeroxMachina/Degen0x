@@ -1,93 +1,109 @@
 {
-  "generated_at": "2026-04-17T10:26:20Z",
-  "briefing_id": "briefing-2026-04-17-10",
-  "story_count": 5,
-  "model": "claude-opus-4-7",
+  "generated_at": "2026-04-14T11:10:00Z",
+  "briefing_id": "briefing-2026-04-14-11",
+  "story_count": 6,
   "stories": [
     {
-      "id": "story-2026-04-17-10-001",
-      "headline": "Charles Schwab Opens Spot BTC and ETH Trading to Retail Clients",
-      "slug": "schwab-spot-btc-eth-retail-launch",
-      "tldr": "Schwab rolled out direct spot Bitcoin and Ether trading for retail accounts, with custody in-house and execution routed to Paxos.",
-      "why_it_matters": "Why it matters: Schwab's 35M-plus brokerage base now gets native crypto alongside equities, collapsing the onboarding gap between TradFi and on-chain assets.",
+      "id": "story-2026-04-14-11-001",
+      "headline": "HSBC Completes Tokenized Deposit Pilot on Canton Network",
+      "slug": "hsbc-tokenized-deposit-pilot-canton-network",
+      "tldr": "HSBC successfully ran its first public-blockchain tokenized deposit pilot on Canton, simulating atomic settlement against other digital assets in USD, GBP, EUR, HKD and SGD.",
+      "why_it_matters": "Why it matters: One of the world's largest banks just validated that bank deposits can settle atomically against tokenized assets on a public chain — the core building block institutions have been waiting on before moving real client balances on-chain.",
       "the_details": [
-        "Launch covers spot BTC and ETH, integrated inside existing Schwab brokerage portfolios.",
-        "Schwab self-custodies client crypto; Paxos handles execution on the trading venue side.",
-        "Move lands two years after Schwab filed for its spot Bitcoin ETF and mirrors Fidelity's retail flow."
+        "Pilot ran via HSBC's Global Payments Solutions unit on April 13 using its Tokenised Deposit Service (TDS)",
+        "Demonstrated interoperability by bridging HSBC's deposit ledger to an external public blockchain for the first time",
+        "Canton Coin (CC) jumped ~3.8% on the news; HSBC says this is step one toward cross-border deposit interoperability"
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
-      "category": "adoption",
+      "source": "Disruption Banking",
+      "source_url": "https://www.disruptionbanking.com/2026/04/13/hsbc-announces-successful-tokenised-deposit-pilot-on-the-canton-network/",
+      "category": "infrastructure",
       "impact": "high",
-      "timestamp": "2026-04-17T09:15:00Z"
+      "timestamp": "2026-04-13T14:00:00Z"
     },
     {
-      "id": "story-2026-04-17-10-002",
-      "headline": "SEC Carves Broker-Dealer Exception for Decentralized Trading Interfaces",
-      "slug": "sec-covered-ui-broker-exception",
-      "tldr": "The SEC said it will not object to 'Covered User Interface Providers' operating frontends for crypto asset securities without broker-dealer registration.",
-      "why_it_matters": "Why it matters: First explicit US carve-out separating protocol frontends from broker-dealer obligations, de-risking the Uniswap-style UI stack.",
+      "id": "story-2026-04-14-11-002",
+      "headline": "SEC Exempts Crypto Interface Operators From Broker Registration",
+      "slug": "sec-exempts-crypto-interfaces-broker-registration",
+      "tldr": "The SEC said it will not object to operators of crypto asset user interfaces offering those services without registering as broker-dealers, effective for the next five years.",
+      "why_it_matters": "Why it matters: This removes one of the industry's biggest regulatory chokepoints — front-end developers and wallet UIs can now operate without SEC broker-dealer licensure, clearing a structural overhang that's hung over DeFi since 2022.",
       "the_details": [
-        "Statement dated April 13, 2026 follows the joint SEC-CFTC interpretive framework on digital asset taxonomy.",
-        "Applies to software interfaces that only let users prepare and submit transactions in crypto asset securities.",
-        "Operationalizes the Howey test so assets can transition in and out of securities status over time."
+        "Guidance issued April 13 by SEC staff under Chair Paul Atkins",
+        "Statement is time-limited — considered withdrawn five years from April 13, 2031",
+        "Pairs with the 'Reg Crypto' fundraising framework now sitting at the White House OIRA awaiting publication"
       ],
-      "source": "Sidley Austin / SEC",
-      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "source": "PYMNTS",
+      "source_url": "https://www.pymnts.com/cryptocurrency/2026/sec-exempts-crypto-interfaces-from-broker-registration",
       "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-17T08:45:00Z"
+      "timestamp": "2026-04-13T18:00:00Z"
     },
     {
-      "id": "story-2026-04-17-10-003",
-      "headline": "Rhea Finance Loses $7.6M in Fake-Contract Exploit; Tether Freezes $3.29M USDT",
-      "slug": "rhea-finance-exploit-tether-freeze",
-      "tldr": "Attackers drained at least $7.6M from Rhea Finance using spoofed contracts and seeded liquidity before Tether blacklisted $3.29M USDT tied to the thieves.",
-      "why_it_matters": "Why it matters: Same fake-asset playbook used against Drift's $285M hack earlier this month — oracle and listing hygiene is now the top DeFi risk vector.",
+      "id": "story-2026-04-14-11-003",
+      "headline": "Ether ETFs Log Best Week of 2026 as Flows Rotate From BTC",
+      "slug": "ether-etfs-best-week-2026-flows-rotate",
+      "tldr": "Spot ether ETFs pulled in $187M last week — the strongest showing of 2026 — while spot BTC ETFs shed $325M on April 13 as capital rotates into ETH.",
+      "why_it_matters": "Why it matters: Cumulative ETH ETF inflows just hit a record $11.68 billion, reversing three weeks of outflows. If the rotation holds, it resets the ETH/BTC ratio narrative that dominated 2025's 'Bitcoin-dominance' trade.",
       "the_details": [
-        "Exploit used fake token contracts and thin liquidity to trick Rhea's pricing into over-collateralizing loans.",
-        "Tether blacklisted ~3.29M USDT linked to exploiter wallets within hours of on-chain detection.",
-        "Second major fake-token oracle exploit in April, after Drift Protocol's $285M loss on April 1."
+        "ETH up ~8% in 24 hours vs. BTC's ~5% gain; Ethereum daily transactions +41% week-over-week to 3.6M",
+        "Three prior weeks had seen ~$308M in ether ETF outflows — now fully reversed",
+        "Fees and stablecoin transfer volume on Ethereum are both down ~45-50% despite the activity spike, suggesting smaller, retail-sized transactions"
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
-      "category": "security",
-      "impact": "medium",
-      "timestamp": "2026-04-17T07:30:00Z"
+      "source_url": "https://www.coindesk.com/markets/2026/04/14/ether-outpaces-bitcoin-as-etf-flows-split-and-ethereum-activity-jumps-41-on-week",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-14T09:30:00Z"
     },
     {
-      "id": "story-2026-04-17-10-004",
-      "headline": "Fake Ledger Live App on Apple App Store Drained $9.5M From 50+ Wallets",
-      "slug": "fake-ledger-app-apple-drain",
-      "tldr": "A counterfeit Ledger Live app that passed Apple's review cleared at least $9.5M across BTC, ETH, SOL, TRX and XRP wallets between April 7-13.",
-      "why_it_matters": "Why it matters: Apple's vetting was supposed to be the security floor — the breach shreds the 'App Store is safe by default' assumption for self-custody tools.",
+      "id": "story-2026-04-14-11-004",
+      "headline": "X Money Launch Imminent; Product Head Teases Crypto Move",
+      "slug": "x-money-launch-imminent-crypto-tease",
+      "tldr": "With X Money set to go live this month, X head of product Nikita Bier posted that 'crypto has had a rough year — maybe we should launch something to fix it,' pulling 677K views.",
+      "why_it_matters": "Why it matters: X Money rolls out in 40+ U.S. states with Visa-backed peer-to-peer, debit, and deposits — but the crypto tease signals Musk may wire blockchain rails beneath what's officially a fiat product, putting a ~600M-user distribution channel in play.",
       "the_details": [
-        "Victims entered seed phrases into the malicious app, giving attackers full signing access across 5+ chains.",
-        "CoinDesk and Ledger flagged the listing on April 14 after loss patterns became visible on-chain.",
-        "At least 50 confirmed victims; total stolen may climb as more wallets report unauthorized sweeps."
+        "Officially fiat-only at launch: P2P, bank deposits, Visa debit card, cashback, 6% APY claim",
+        "Licensed subsidiary operational in 40+ U.S. states via Visa partnership",
+        "DOGE briefly popped ~8% on the Bier comment before fading; no official crypto feature confirmed"
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/business/2026/04/14/a-fake-ledger-app-on-the-apple-app-store-just-drained-usd9-5-million-in-crypto",
-      "category": "security",
+      "source_url": "https://www.coindesk.com/tech/2026/04/14/crypto-has-had-a-rough-year-x-s-nikita-bier-hints-as-x-money-launch-nears",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-17T06:10:00Z"
+      "timestamp": "2026-04-14T08:00:00Z"
     },
     {
-      "id": "story-2026-04-17-10-005",
-      "headline": "Axelar Rips 29%, BIO Protocol 17% as Fear Index Hits 23 'Extreme Fear'",
-      "slug": "axelar-bio-rally-extreme-fear",
-      "tldr": "Axelar (AXL) surged 29.14% and BIO Protocol 17.52% over 24 hours even as the Crypto Fear & Greed Index dropped to 23 and BTC dominance held 58.5%.",
-      "why_it_matters": "Why it matters: Targeted rotations into interop and DeSci names are breaking out despite 'Bitcoin Season' on CMC's index — pockets of alpha exist while macro sentiment stays bearish.",
+      "id": "story-2026-04-14-11-005",
+      "headline": "Tillis to Release Stablecoin Yield Draft as CLARITY Markup Nears",
+      "slug": "tillis-stablecoin-yield-draft-clarity-markup",
+      "tldr": "Sen. Thom Tillis plans to publish revised stablecoin yield language this week, clearing one of the last roadblocks before a late-April Senate Banking Committee markup of the CLARITY Act.",
+      "why_it_matters": "Why it matters: The Tillis-Alsobrooks compromise bans passive yield on stablecoin balances but allows activity-based rewards — a split that sets the rules of the road for a ~$321B stablecoin market and shapes how Circle, Paxos, and banks can compete.",
       "the_details": [
-        "Total crypto market cap sits at $2.63T, up 0.6% on $120.3B of 24h volume.",
-        "CMC Altcoin Season Index reads 34/100 — still Bitcoin Season — while BTC trades near $74,768.",
-        "BIO is the flagship DeSci asset, pitching on-chain scientific IP and research funding rails."
+        "Markup targeted for second half of April, after Easter recess ended April 13",
+        "Three issues still open: DeFi provisions, ethics language on officials' crypto holdings, and community bank deregulatory attachments",
+        "If CLARITY doesn't reach the Senate floor by May, it likely slips past the midterm cycle"
       ],
-      "source": "CoinMarketCap / CoinGabbar",
-      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/latest-crypto-market-update-april-17-based-siren-price-today",
-      "category": "altcoins",
+      "source": "Unchained",
+      "source_url": "https://unchainedcrypto.com/tillis-plans-to-release-stablecoin-yield-draft-this-week-with-clarity-act-markup-targeted-for-late-april-unchained/",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-13T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-14-11-006",
+      "headline": "Lawmakers Re-Up Crypto Tax Overhaul With PARITY Act",
+      "slug": "lawmakers-re-up-crypto-tax-parity-act",
+      "tldr": "Reps. Steven Horsford (D-NV) and Max Miller (R-OH) reintroduced the PARITY Act, a bipartisan bill that would rewrite how the IRS treats digital assets.",
+      "why_it_matters": "Why it matters: Current IRS treatment creates tax drag on everyday crypto use — swapping, staking rewards, and DeFi transactions all trigger events. PARITY is the most serious bipartisan attempt yet to fix that without waiting on Treasury guidance.",
+      "the_details": [
+        "Full name: Digital Asset Protection, Accountability, Regulation, Innovation, Taxation and Yields Act",
+        "Revised version re-introduced April 13 after stalling in prior Congress",
+        "Filed alongside — but separate from — the CLARITY Act market structure push"
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/13/u-s-lawmakers-take-another-swing-at-crypto-tax-policy-with-revised-bill",
+      "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-17T05:00:00Z"
+      "timestamp": "2026-04-13T16:00:00Z"
     }
   ]
 }

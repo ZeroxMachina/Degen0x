@@ -4,6 +4,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -63,6 +64,7 @@ export default function HyperliquidVsDydxPage() {
         { question: "Which has better liquidity?", answer: "Hyperliquid currently has deeper liquidity and higher trading volume than dYdX, particularly on major perpetual pairs like BTC and ETH." },
         { question: "Do I need KYC for Hyperliquid or dYdX?", answer: "Neither platform currently requires KYC for trading. You connect a wallet and can begin trading immediately. However, both have geographical restrictions and may implement compliance measures in the future." },
       ]} />
+      <RelatedContent category="tools" currentSlug="/exchanges/compare/hyperliquid-vs-dydx" />
     </div>
   );
 }

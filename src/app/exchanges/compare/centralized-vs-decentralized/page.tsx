@@ -4,6 +4,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -65,6 +66,7 @@ export default function CentralizedVsDecentralizedPage() {
         { question: "Can beginners use DEXs?", answer: "DEXs have become more user-friendly but still require basic knowledge of wallets, gas fees, and transaction signing. Beginners should start with a CEX and transition to DEXs as their knowledge grows." },
         { question: "Why do some tokens only exist on DEXs?", answer: "DEXs are permissionless — anyone can create a trading pool for any token. CEXs require a formal listing process with due diligence. New, small, or experimental tokens often launch on DEXs first and may never get listed on centralized exchanges." },
       ]} />
+      <RelatedContent category="tools" currentSlug="/exchanges/compare/centralized-vs-decentralized" />
     </div>
   );
 }

@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -71,6 +73,7 @@ export default function DVTGuidePage() {
       <StructuredData data={schemas} />
       <div style={{ maxWidth: "900px", margin: "0 auto", padding: "40px 20px", color: S.text }}>
         <Breadcrumb items={breadcrumbs} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
 
         <div style={{ marginBottom: "50px" }}>
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 44px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: `linear-gradient(135deg, ${S.primary}, ${S.teal})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
@@ -451,6 +454,7 @@ export default function DVTGuidePage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/distributed-validator-technology-dvt-guide-2026" />
       </article>
   );
 }

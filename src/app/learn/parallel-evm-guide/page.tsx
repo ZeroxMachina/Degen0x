@@ -4,6 +4,8 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are Scaling Ethereum',
@@ -90,6 +92,7 @@ export default function ParallelEVMGuidePage() {
       background: 'var(--color-bg)',
       color: 'var(--color-text)'
     }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <StructuredData data={combinedSchema} />
 
       <article style={{
@@ -1110,6 +1113,7 @@ export default function ParallelEVMGuidePage() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/parallel-evm-guide" />
     </div>
   );
 }

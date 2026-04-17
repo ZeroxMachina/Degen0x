@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import { SITE_URL } from "@/lib/constants";
 import Hip3FundingCalculator from "@/components/Hip3FundingCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 const PAGE_URL = `${SITE_URL}/learn/hyperliquid-hip3-tokenized-futures-guide`;
@@ -526,6 +527,7 @@ export default function HyperliquidHip3TokenizedFuturesGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/hyperliquid-hip3-tokenized-futures-guide" />
     </div>
   );
 }

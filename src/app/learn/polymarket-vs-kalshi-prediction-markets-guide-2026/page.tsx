@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Polymarket vs Kalshi: Prediction Markets Comparison Guide 2026 | Degen0x',
@@ -97,6 +99,7 @@ const structuredData = {
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-gray-100">
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -277,6 +280,7 @@ export default function Page() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/polymarket-vs-kalshi-prediction-markets-guide-2026" />
     </div>
   );
 }

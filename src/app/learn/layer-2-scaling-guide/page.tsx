@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import FAQSection from "@/components/FAQSection";
 import TableOfContents from "@/components/TableOfContents";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -333,6 +334,7 @@ export default function Layer2GuidePage() {
           Last updated March 2026. Data sourced from L2Beat, DeFi Llama, and official L2 documentation. Not financial advice.
         </div>
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/layer-2-scaling-guide" />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'BitVM Guide 2026: Bitcoin Smart Contracts | degen0x',
@@ -286,6 +288,7 @@ export default function BitVMPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -640,6 +643,7 @@ export default function BitVMPage() {
 
         <BackToTop />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026" />
     </main>
   );
 }

@@ -4,6 +4,7 @@ import BackToTop from "@/components/BackToTop";
 import Link from "next/link";
 import { SITE_NAME } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -729,6 +730,7 @@ export default function CryptoETFOptionsTradingGuidePage() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-etf-options-trading-guide-2026" />
     </main>
   );
 }

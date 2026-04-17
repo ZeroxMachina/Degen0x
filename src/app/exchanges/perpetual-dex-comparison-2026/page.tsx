@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -374,6 +375,7 @@ export default function PerpetualDexComparison2026() {
             See our <a href="/methodology" style={{ color: '#f59e0b' }}>editorial methodology</a> for scoring criteria.
           </p>
         </div>
+      <RelatedContent category="tools" currentSlug="/exchanges/perpetual-dex-comparison-2026" />
       </article>
   );
 }

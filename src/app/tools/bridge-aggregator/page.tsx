@@ -4,6 +4,7 @@
 
 import React, { useState, useMemo, useCallback, useEffect } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 interface Chain {
   id: string;
@@ -597,6 +598,7 @@ export default function BridgeAggregator() {
           )}
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/bridge-aggregator" />
     </main>
   );
 }

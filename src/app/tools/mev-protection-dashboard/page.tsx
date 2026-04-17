@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 interface MEVAttack {
   id: number;
@@ -308,6 +309,7 @@ export default function MEVProtectionDashboard() {
           <strong style={{ color: '#d29922' }}>⚠️ Disclaimer:</strong> This dashboard uses simulated data for educational purposes. MEV extraction amounts, attack frequencies, and protection effectiveness ratings are approximations. Always verify protection strategies independently. Not financial advice.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/mev-protection-dashboard" />
     </div>
   );
 }

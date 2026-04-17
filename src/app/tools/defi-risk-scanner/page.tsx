@@ -3,6 +3,7 @@
 import Breadcrumb from '@/components/Breadcrumb';
 import DeFiRiskScanner from '@/components/DeFiRiskScanner';
 import type { BreadcrumbItem } from '@/lib/types';
+import RelatedContent from '@/components/RelatedContent';
 
 export default function DeFiRiskScannerPage() {
   const breadcrumbItems: BreadcrumbItem[] = [
@@ -17,6 +18,7 @@ export default function DeFiRiskScannerPage() {
         <Breadcrumb items={breadcrumbItems} />
         <DeFiRiskScanner />
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/defi-risk-scanner" />
     </div>
   );
 }

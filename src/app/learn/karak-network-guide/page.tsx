@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import KarakYieldEstimator from "@/components/KarakYieldEstimator";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -516,6 +517,7 @@ export default function KarakNetworkGuidePage() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/karak-network-guide" />
     </main>
   );
 }

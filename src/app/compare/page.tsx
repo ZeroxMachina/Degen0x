@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import ExchangeComparisonEngine from '@/components/ExchangeComparisonEngine';
 import Footer from '@/components/Footer';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'Crypto Exchange Comparison Tool | degen0x',
@@ -251,6 +252,7 @@ export default function ComparePage() {
       </section>
 
       <Footer />
+      <RelatedContent category="compare" currentSlug="/compare" />
     </main>
   );
 }

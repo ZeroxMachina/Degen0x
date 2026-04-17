@@ -4,6 +4,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 const QUESTIONS = [
   {
@@ -410,6 +411,7 @@ export default function DegenScorePage() {
           for actual research.
         </p>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/degen-score" />
     </div>
   );
 }

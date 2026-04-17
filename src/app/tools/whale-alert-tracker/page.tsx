@@ -13,6 +13,7 @@ import {
   Bell,
   ExternalLink,
 } from "lucide-react";
+import RelatedContent from '@/components/RelatedContent';
 
 // Types
 type TransactionType = "Transfer" | "Swap" | "Bridge" | "Stake" | "Unstake";
@@ -560,6 +561,7 @@ export default function WhaleAlertTracker() {
           <ExternalLink size={12} className="inline" />
         </p>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/whale-alert-tracker" />
     </div>
   );
 }

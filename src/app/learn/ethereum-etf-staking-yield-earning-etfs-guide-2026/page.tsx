@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import FAQAccordion from '@/components/FAQAccordion';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1113,6 +1114,7 @@ export default function EthereumETFStakingGuide() {
         </div>
       </article>
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026" />
     </main>
   );
 }

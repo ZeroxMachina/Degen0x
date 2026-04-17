@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: "Tokenized Treasury Bills Guide 2026 — T-Bills On-Chain | degen0x",
@@ -91,6 +93,7 @@ const schemas = combineSchemas(articleSchema, faqSchema);
 export default function TokenizedTreasuryBillsGuide() {
   return (
     <div style={{ backgroundColor: "#0d1117", minHeight: "100vh", color: "#e6edf3" }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <StructuredData data={schemas} />
 
       {/* Navigation */}
@@ -766,6 +769,7 @@ export default function TokenizedTreasuryBillsGuide() {
           <strong style={{ color: "#e6edf3" }}>Disclaimer:</strong> This guide is educational only and not investment advice. Tokenized Treasury bills carry risks including smart contract vulnerabilities, regulatory changes, and liquidity constraints. Always conduct your own research and consult with qualified financial advisors before investing. Past performance and yield rates are not guarantees of future results. Cryptocurrency and tokenized assets are highly volatile and may not be suitable for all investors.
         </div>
       </main>
+      <RelatedContent category="learn" currentSlug="/learn/tokenized-treasury-bills-guide-2026" />
     </div>
   );
 }

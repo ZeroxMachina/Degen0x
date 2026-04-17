@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import DailyTrivia from "@/components/DailyTrivia";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -118,6 +119,7 @@ export default function DailyTriviaPage() {
           ))}
         </div>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/daily-trivia" />
     </main>
   );
 }

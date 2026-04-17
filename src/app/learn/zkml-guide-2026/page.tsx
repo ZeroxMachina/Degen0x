@@ -10,6 +10,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -881,6 +882,7 @@ export default function ZKMLGuide2026Page() {
 
       {/* Back to Top */}
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/zkml-guide-2026" />
     </main>
   );
 }

@@ -4,6 +4,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -627,6 +628,7 @@ export default function AIDepinGuide() {
       </section>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/ai-depin-crypto-guide" />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // Metadata configuration
@@ -899,6 +900,7 @@ export default function CryptoCustodyGuidePage() {
       </section>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-custody-guide-2026" />
     </main>
   );
 }

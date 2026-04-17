@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { ArrowUpDown, TrendingUp, Shield, AlertCircle, Check } from 'lucide-react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 interface Stablecoin {
   name: string;
@@ -161,6 +163,7 @@ export default function StablecoinComparison() {
   return (
     <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
       <Breadcrumb />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Header */}
@@ -570,6 +573,7 @@ export default function StablecoinComparison() {
           </div>
         </section>
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/stablecoin-comparison" />
     </div>
   );
 }

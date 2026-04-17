@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import TokenRadarClient from './TokenRadarClient';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: 'Token Launch Radar | degen0x',
@@ -36,6 +37,7 @@ export default function TokenRadarPage() {
         />
         <TokenRadarClient />
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/token-radar" />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum | degen0x",
@@ -223,6 +225,7 @@ export default function EclipseGuide() {
 
   return (
     <div style={pageStyle}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <div style={containerStyle}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: '#8b949e' }}>
           <a href="/" style={{ color: '#8b949e', textDecoration: 'none' }}>Home</a>
@@ -541,6 +544,7 @@ export default function EclipseGuide() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+      <RelatedContent category="learn" currentSlug="/learn/eclipse-svm-ethereum-layer-2-guide-2026" />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -572,6 +573,7 @@ export default function DefiPointsAirdropFarmingGuide() {
         </div>
         <BackToTop />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/defi-points-airdrop-farming-guide-2026" />
     </div>
   );
 }

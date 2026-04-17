@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Page Title Comment ────────────────────────────────────────────────────────
 // Page Title: Liquidity Pool Explorer | AMM Pools | DeFi Yield Opportunities | degen0x
@@ -962,6 +963,7 @@ export default function LiquidityPoolExplorerPage() {
           </li>
         </ul>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/liquidity-pool-explorer" />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 interface NewsItem {
   id: string;
@@ -213,6 +214,7 @@ export default function NewsFeedPage() {
       <p className="text-xs text-[var(--color-text-secondary)] mt-8 text-center">
         News data is simulated for demonstration. In production, this aggregates from CoinDesk, The Block, Decrypt, and other sources via API.
       </p>
+      <RelatedContent category="tools" currentSlug="/tools/news-feed" />
     </div>
   );
 }

@@ -1,12 +1,15 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 const S = { bg:"#0d1117",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"MEV Guide 2026",href:"/learn/mev-guide-2026"}];
 export default function MEVGuide2026Page() {
   return (
     <main style={{backgroundColor:S.bg,color:S.text,minHeight:"100vh"}}>
       <div style={{borderBottom:`1px solid ${S.border}`,paddingTop:24}}>
-        <div style={{maxWidth:1280,margin:"0 auto",padding:"0 24px 24px"}}><Breadcrumb items={breadcrumbs}/></div>
+        <div style={{maxWidth:1280,margin:"0 auto",padding:"0 24px 24px"}}><Breadcrumb items={breadcrumbs}/>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}</div>
       </div>
       <article style={{maxWidth:900,margin:"0 auto",padding:"48px 24px 80px"}}>
         <header style={{marginBottom:48}}>
@@ -99,6 +102,7 @@ export default function MEVGuide2026Page() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/mev-guide-2026" />
     </main>
   );
 }

@@ -496,6 +496,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { Connection, Transaction, PublicKey } from '@solana/web3.js';
 import { createMintToInstruction } from '@metaplex-foundation/mpl-token-metadata';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const POST = async (request: NextRequest) => {
@@ -880,6 +881,7 @@ Access-Control-Allow-Headers: Content-Type`}
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/solana-blinks-actions-blockchain-links-guide-2026" />
       </article>
   );
 }

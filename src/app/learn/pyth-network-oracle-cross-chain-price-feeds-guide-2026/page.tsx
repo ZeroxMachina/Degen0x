@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -430,6 +431,7 @@ export default function PythNetworkGuide() {
           section="learn"
         />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026" />
     </div>
 
   );

@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 type RiskProfile = "conservative" | "moderate" | "aggressive" | "degen";
 type TimeHorizon = "short" | "medium" | "long" | "forever";
@@ -421,6 +422,7 @@ export default function RoboAdvisorPage() {
           ⚠️ <strong>Not Financial Advice.</strong> degen0x&apos;s Robo-Advisor is an educational tool based on general risk profiles. Cryptocurrency investments are highly volatile. Always do your own research and consult a licensed financial advisor before investing.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/robo-advisor" />
     </div>
   );
 }

@@ -12,6 +12,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ─── Types ─── */
 interface Trade {
@@ -724,6 +725,7 @@ export default function TradingJournalPage() {
           ))}
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/trading-journal" />
     </main>
   );
 }

@@ -1,5 +1,7 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg: "#0d1117", border: "#30363d", text: "#e6edf3", text2: "#8b949e",
@@ -27,6 +29,7 @@ export default function L3NetworksGuidePage() {
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px 24px" }}>
           <Breadcrumb items={breadcrumbs} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
         </div>
       </div>
       <article style={{ maxWidth: 900, margin: "0 auto", padding: "48px 24px 80px" }}>
@@ -166,6 +169,7 @@ export default function L3NetworksGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/l3-networks-guide" />
     </main>
   );
 }

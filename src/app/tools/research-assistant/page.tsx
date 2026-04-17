@@ -2,6 +2,7 @@
 
 "use client";
 import { useState, useCallback, useRef } from "react";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ── types ── */
 interface TokenProfile {
@@ -310,6 +311,7 @@ export default function ResearchAssistantPage() {
           <p>Enter a token symbol above or click a quick button to generate a comprehensive research report.</p>
         </div>
       )}
+      <RelatedContent category="tools" currentSlug="/tools/research-assistant" />
     </div>
   );
 }

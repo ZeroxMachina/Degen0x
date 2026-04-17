@@ -5,6 +5,7 @@
 import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface StakingEntry {
@@ -623,6 +624,7 @@ export default function StakingAPYPage() {
           <strong>⚠️ Disclaimer:</strong> APY rates are indicative and change constantly based on network conditions, market demand, and protocol parameters. Past yields are not indicative of future returns. Always verify current rates on the protocol's website before staking. Staking involves risk including loss of principal. This is not financial advice.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/staking-apy" />
     </div>
   );
 }

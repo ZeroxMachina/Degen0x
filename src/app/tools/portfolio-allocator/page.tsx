@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo, useCallback } from 'react';
+import RelatedContent from '@/components/RelatedContent';
 
 /**
  * Portfolio Allocator Tool — Sprint 19
@@ -415,6 +416,7 @@ export default function PortfolioAllocatorPage() {
         Cryptocurrency investments carry significant risk. Always do your own research (DYOR)
         and consult a qualified financial advisor before making investment decisions.
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/portfolio-allocator" />
     </div>
   );
 }

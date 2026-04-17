@@ -4,6 +4,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema } from "@/lib/structured-data";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -79,6 +81,7 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
         <div style={{ maxWidth: 1280, margin: "0 auto", padding: "0 24px 24px" }}>
           <Breadcrumb items={breadcrumbs} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
         </div>
       </div>
 
@@ -1097,6 +1100,7 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/onchain-privacy-infrastructure-guide-2026" />
     </main>
   );
 }

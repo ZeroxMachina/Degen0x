@@ -3,6 +3,7 @@
 import Breadcrumb from '@/components/Breadcrumb';
 import CryptoNewsAggregator from '@/components/CryptoNewsAggregator';
 import { BreadcrumbItem } from '@/lib/types';
+import RelatedContent from '@/components/RelatedContent';
 
 export default function CryptoNewsAggregatorPage() {
   const breadcrumbItems: BreadcrumbItem[] = [
@@ -27,6 +28,7 @@ export default function CryptoNewsAggregatorPage() {
 
         <CryptoNewsAggregator />
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/news-aggregator" />
     </div>
   );
 }

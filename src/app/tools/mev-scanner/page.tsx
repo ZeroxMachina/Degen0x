@@ -4,6 +4,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 /**
  * MEV Protection Scanner - Detect and prevent MEV attacks
@@ -937,6 +938,7 @@ export default function MEVScannerPage() {
           </div>
         )}
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/mev-scanner" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -369,6 +370,7 @@ export default function UniswapVsSushiSwapVsCurve() {
             Market conditions change rapidly — always verify current rates before acting. Read our <a href="/methodology" style={{ color: '#58a6ff' }}>full methodology</a>.
           </p>
         </div>
+      <RelatedContent category="compare" currentSlug="/compare/uniswap-vs-sushiswap-vs-curve" />
       </article>
   );
 }

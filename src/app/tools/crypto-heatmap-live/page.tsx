@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -476,6 +477,7 @@ export default function CryptoHeatmapLive() {
           <strong>Disclaimer:</strong> This content is for informational purposes only and should not be considered financial advice. Cryptocurrency is volatile and carries significant risk. Heatmaps show price performance, not value. Always do your own research (DYOR) and consult a qualified financial advisor before making investment decisions. degen0x does not endorse any specific investment or protocol.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/crypto-heatmap-live" />
     </article>
   );
 }

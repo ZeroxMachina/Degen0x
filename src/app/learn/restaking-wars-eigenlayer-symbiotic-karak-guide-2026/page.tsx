@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -923,6 +924,7 @@ export default function RestakingWarsGuide() {
           2026; restaking economics, protocol designs, and market dynamics evolve rapidly.
         </div>
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/restaking-wars-eigenlayer-symbiotic-karak-guide-2026" />
     </main>
   );
 }

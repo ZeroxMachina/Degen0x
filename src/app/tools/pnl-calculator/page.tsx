@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface TradeEntry {
@@ -747,6 +748,7 @@ export default function PnLCalculatorPage() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/pnl-calculator" />
     </div>
   );
 }

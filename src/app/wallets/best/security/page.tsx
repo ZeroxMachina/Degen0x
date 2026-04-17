@@ -7,6 +7,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { securityWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Most Secure Crypto Wallets of ${CURRENT_YEAR} - Security-Focused Reviews | ${SITE_NAME}`,
@@ -105,6 +106,7 @@ export default function BestSecurityWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+      <RelatedContent category="tools" currentSlug="/wallets/best/security" />
     </div>
   );
 }

@@ -3,6 +3,8 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -58,6 +60,7 @@ export default function GrayscaleHYPEETFGuide() {
   return (
     <div style={{ background: S.bg, color: S.text, minHeight: "100vh", padding: "24px" }}>
       <Breadcrumb items={breadcrumbs} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <StructuredData data={combinedSchema} />
 
       <article style={{ maxWidth: "900px", margin: "0 auto", marginTop: 32 }}>
@@ -818,6 +821,7 @@ export default function GrayscaleHYPEETFGuide() {
         </div>
       </article>
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/grayscale-hype-etf-defi-guide" />
     </div>
   );
 }

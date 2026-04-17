@@ -4,6 +4,7 @@
 
 import { useState, useEffect, useCallback } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 /* ─────────────────────────────────────────────────────────────
    Types
@@ -894,6 +895,7 @@ export default function PortfolioAnalyticsPage() {
           })
         }}
       />
+      <RelatedContent category="tools" currentSlug="/tools/portfolio-analytics" />
     </div>
   );
 }

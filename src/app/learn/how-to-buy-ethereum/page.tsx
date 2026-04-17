@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -419,6 +420,7 @@ export default function HowToBuyEthereumPage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/how-to-buy-ethereum" />
     </main>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 interface TokenData {
   id: string;
@@ -233,6 +234,7 @@ export default function TokenComparePage() {
       <p className="text-xs text-[var(--color-text-secondary)] mt-6 text-center">
         Data is for educational purposes only. Prices are simulated and may not reflect current market values. Always DYOR.
       </p>
+      <RelatedContent category="tools" currentSlug="/tools/token-compare" />
     </div>
   );
 }

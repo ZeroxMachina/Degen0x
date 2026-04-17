@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: "Usual Protocol USD0 RWA Stablecoin Guide 2026",
@@ -72,6 +74,7 @@ const structuredData = {
 export default function UsualProtocolGuide() {
   return (
     <div style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px" }}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <article style={{ maxWidth: "800px", margin: "0 auto" }}>
@@ -225,6 +228,7 @@ export default function UsualProtocolGuide() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/usual-protocol-usd0-rwa-stablecoin-guide-2026" />
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ──────── Types ──────── */
 interface FundingEntry {
@@ -359,6 +360,7 @@ export default function FundingRatesPage() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/funding-rates" />
     </div>
   );
 }

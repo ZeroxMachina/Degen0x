@@ -6,6 +6,7 @@ import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1112,8 +1113,6 @@ export default function CryptoLeverageTradingGuide() {
               color: '#58a6ff',
               transition: 'border-color 0.2s',
             }}
-            onMouseEnter={(e) => e.currentTarget.style.borderColor = '#58a6ff'}
-            onMouseLeave={(e) => e.currentTarget.style.borderColor = '#30363d'}
             >
               <div style={{ fontSize: 15, fontWeight: 600, marginBottom: '5px' }}>
                 Best Perpetual DEX Guide
@@ -1128,8 +1127,6 @@ export default function CryptoLeverageTradingGuide() {
               textDecoration: 'none',
               color: '#58a6ff',
             }}
-            onMouseEnter={(e) => e.currentTarget.style.borderColor = '#58a6ff'}
-            onMouseLeave={(e) => e.currentTarget.style.borderColor = '#30363d'}
             >
               <div style={{ fontSize: 15, fontWeight: 600, marginBottom: '5px' }}>
                 Hyperliquid Trading Guide
@@ -1144,8 +1141,6 @@ export default function CryptoLeverageTradingGuide() {
               textDecoration: 'none',
               color: '#58a6ff',
             }}
-            onMouseEnter={(e) => e.currentTarget.style.borderColor = '#58a6ff'}
-            onMouseLeave={(e) => e.currentTarget.style.borderColor = '#30363d'}
             >
               <div style={{ fontSize: 15, fontWeight: 600, marginBottom: '5px' }}>
                 Crypto Options Trading Guide
@@ -1160,8 +1155,6 @@ export default function CryptoLeverageTradingGuide() {
               textDecoration: 'none',
               color: '#58a6ff',
             }}
-            onMouseEnter={(e) => e.currentTarget.style.borderColor = '#58a6ff'}
-            onMouseLeave={(e) => e.currentTarget.style.borderColor = '#30363d'}
             >
               <div style={{ fontSize: 15, fontWeight: 600, marginBottom: '5px' }}>
                 Funding Rate Arbitrage Guide 2026
@@ -1176,8 +1169,6 @@ export default function CryptoLeverageTradingGuide() {
               textDecoration: 'none',
               color: '#58a6ff',
             }}
-            onMouseEnter={(e) => e.currentTarget.style.borderColor = '#58a6ff'}
-            onMouseLeave={(e) => e.currentTarget.style.borderColor = '#30363d'}
             >
               <div style={{ fontSize: 15, fontWeight: 600, marginBottom: '5px' }}>
                 Liquidation Heatmap Tool
@@ -1192,8 +1183,6 @@ export default function CryptoLeverageTradingGuide() {
               textDecoration: 'none',
               color: '#58a6ff',
             }}
-            onMouseEnter={(e) => e.currentTarget.style.borderColor = '#58a6ff'}
-            onMouseLeave={(e) => e.currentTarget.style.borderColor = '#30363d'}
             >
               <div style={{ fontSize: 15, fontWeight: 600, marginBottom: '5px' }}>
                 PnL Calculator
@@ -1239,6 +1228,7 @@ export default function CryptoLeverageTradingGuide() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/crypto-leverage-trading-guide-2026" />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { hotWallets } from "@/data/wallets";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Best Hot Wallets of ${CURRENT_YEAR} - Internet-Connected Wallets | ${SITE_NAME}`,
@@ -116,6 +117,7 @@ export default function BestHotWalletsPage() {
       </section>
 
       <FAQSection faqs={faqs} />
+      <RelatedContent category="tools" currentSlug="/wallets/best/hot-wallets" />
     </div>
   );
 }

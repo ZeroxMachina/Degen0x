@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -745,6 +746,7 @@ export default function StakingServiceProvidersGuide() {
 
         <BackToTop />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/staking-as-a-service-providers-guide-2026" />
     </div>
   );
 }

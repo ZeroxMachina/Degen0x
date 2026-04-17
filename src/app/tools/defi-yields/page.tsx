@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type Chain = "All" | "Ethereum" | "Solana" | "Arbitrum" | "Base" | "Avalanche" | "Polygon" | "BNB";
@@ -362,6 +363,7 @@ export default function DeFiYieldsPage() {
           ⚠️ <strong>Important:</strong> APY rates are approximations and change constantly. DeFi carries smart contract, liquidity, and market risks — including total loss of funds. This is not financial advice. Always DYOR and never invest more than you can afford to lose. Data updated March 2026.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/defi-yields" />
     </div>
   );
 }

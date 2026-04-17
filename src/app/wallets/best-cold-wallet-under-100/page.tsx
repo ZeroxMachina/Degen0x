@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -507,6 +508,7 @@ export default function BestColdWalletUnder100() {
           })),
         }),
       }} />
+      <RelatedContent category="tools" currentSlug="/wallets/best-cold-wallet-under-100" />
     </div>
   );
 }

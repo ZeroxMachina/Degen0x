@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import MarketRecapClient from "./MarketRecapClient";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: "Daily Crypto Market Recap — Today's Movers & Events | degen0x",
@@ -55,6 +56,7 @@ export default function MarketRecapPage() {
         />
         <MarketRecapClient />
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/market-recap" />
     </div>
   );
 }

@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Plume Network: RWA Layer 2 Guide 2026 | Degen0x',
@@ -53,6 +55,7 @@ const structuredData = {
 export default function PlumeNetworkRwaL2Guide2026() {
   return (
     <article className="prose prose-invert mx-auto max-w-3xl px-4 py-12">
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <header className="mb-8">
         <p className="text-sm uppercase tracking-wider text-emerald-400">Learn · RWA · Layer 2</p>
@@ -160,6 +163,7 @@ export default function PlumeNetworkRwaL2Guide2026() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <RelatedContent category="learn" currentSlug="/learn/plume-network-rwa-layer-2-guide-2026" />
       </article>
   );
 }

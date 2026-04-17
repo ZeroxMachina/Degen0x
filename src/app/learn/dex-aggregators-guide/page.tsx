@@ -1,10 +1,12 @@
 'use client'
 
 import Breadcrumb from '@/components/Breadcrumb'
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export default function DEXAggregatorsPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <Breadcrumb items={[
         { label: 'Learn', href: '/learn' },
         { label: 'DEX Aggregators Guide', href: '/learn/dex-aggregators-guide' }

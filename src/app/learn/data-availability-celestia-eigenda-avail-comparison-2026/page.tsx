@@ -5,6 +5,8 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: "Celestia vs EigenDA vs Avail: DA Layer Comparison 2026",
@@ -153,6 +155,7 @@ export default function DataAvailabilityComparisonPage() {
       <StructuredData data={schema} />
       <article style={{ maxWidth: '900px', margin: '0 auto' }}>
         <Breadcrumb items={breadcrumbItems} />
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
 
         <div style={{ display: 'flex', gap: '12px', marginBottom: '24px', flexWrap: 'wrap' }}>
           <span style={{ padding: '6px 14px', backgroundColor: '#8b5cf6', color: '#fff', borderRadius: '20px', fontSize: '12px', fontWeight: 600 }}>Infrastructure</span>
@@ -539,6 +542,7 @@ export default function DataAvailabilityComparisonPage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/data-availability-celestia-eigenda-avail-comparison-2026" />
     </main>
   );
 }

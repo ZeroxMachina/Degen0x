@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Bridge {
@@ -569,6 +570,7 @@ export default function BridgeAggregatorV2Page() {
       <p className="text-xs text-[var(--color-text-secondary)] mt-12 text-center">
         All data is simulated for educational purposes. Actual bridge costs and times may vary. Always verify rates before bridging.
       </p>
+      <RelatedContent category="tools" currentSlug="/tools/bridge-aggregator-v2" />
     </div>
   );
 }

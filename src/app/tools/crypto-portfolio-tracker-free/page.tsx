@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -157,6 +158,7 @@ export default function BestCryptoPortfolioTracker() {
             <li><Link href="/compare/proof-of-work-vs-proof-of-stake" style={{ color: "#58a6ff", textDecoration: "none", fontSize: 15 }}>Proof Of Work Vs Proof Of Stake</Link></li>
           </ul>
         </nav>
+      <RelatedContent category="tools" currentSlug="/tools/crypto-portfolio-tracker-free" />
 
 </article>
   );

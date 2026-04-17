@@ -4,6 +4,7 @@
 
 import { useState, useMemo } from "react";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 type Frequency = "daily" | "weekly" | "bi-weekly" | "monthly";
@@ -667,6 +668,7 @@ export default function DCACalculatorPage() {
           <strong>⚠️ Disclaimer:</strong> This calculator uses simulated historical price data for educational purposes. Past performance is not indicative of future results. DCA does not guarantee profits or protect against losses in declining markets. This is not financial advice. Always do your own research and consult with a financial advisor before making investment decisions.
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/dca-calculator" />
     </div>
   );
 }

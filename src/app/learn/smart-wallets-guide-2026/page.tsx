@@ -3,6 +3,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -658,6 +659,7 @@ export default function SmartWalletsGuide2026Page() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/smart-wallets-guide-2026" />
     </div>
   );
 }

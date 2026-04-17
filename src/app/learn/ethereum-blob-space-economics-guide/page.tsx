@@ -4,6 +4,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -488,6 +489,7 @@ export default function EthereumBlobSpaceGuide() {
         </div>
         <BackToTop />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/ethereum-blob-space-economics-guide" />
     </div>
   );
 }

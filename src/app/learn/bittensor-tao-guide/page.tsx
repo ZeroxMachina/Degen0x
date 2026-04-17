@@ -9,6 +9,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -482,6 +483,7 @@ export default function BittensorGuide() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/bittensor-tao-guide" />
     </div>
   );
 }

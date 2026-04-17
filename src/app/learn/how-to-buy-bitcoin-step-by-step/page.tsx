@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { generateHowToSchema } from "@/lib/seo-utils";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -160,12 +161,6 @@ const howToData = generateHowToSchema({
   ],
 });
 
-const h1Style: React.CSSProperties = { fontSize: 36, fontWeight: 800, marginBottom: 16, background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', lineHeight: 1.2 };
-const h2Style: React.CSSProperties = { fontSize: 24, fontWeight: 700, marginTop: 40, marginBottom: 16, color: '#a78bfa', borderBottom: '2px solid #2d2254', paddingBottom: 12 };
-const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, fontSize: 12, fontWeight: 600, marginRight: 8, marginBottom: 16, display: 'inline-block' };
-const infoBoxStyle: React.CSSProperties = { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
-
-
 export default function HowToBuyBitcoin() {
   const tableOfContents = [
     { id: 'why-buy-bitcoin', title: 'Why Buy Bitcoin in 2026?' },
@@ -182,7 +177,7 @@ export default function HowToBuyBitcoin() {
 
   const infoBoxStyle = {
     background: '#161b22',
-    border: '1px solid #30363d', borderLeft: '3px solid #a78bfa', borderLeft: '3px solid #a78bfa',
+    border: '1px solid #30363d', borderLeft: '3px solid #a78bfa',
     borderRadius: 12,
     padding: 20,
     marginBottom: 24,
@@ -339,7 +334,7 @@ export default function HowToBuyBitcoin() {
             <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
           </div>
           <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
-            Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
+            Understanding why Bitcoin has value is the foundation for every purchasing decision you will make. Buyers who skip the &ldquo;why&rdquo; are far more likely to panic-sell during normal volatility.
           </p>
         </div>
 
@@ -986,14 +981,7 @@ export default function HowToBuyBitcoin() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
-      
-        {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
-          </p>
-        </div>
+      <RelatedContent category="learn" currentSlug="/learn/how-to-buy-bitcoin-step-by-step" />
       </article>
   );
 }

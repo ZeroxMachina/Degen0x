@@ -4,6 +4,7 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -952,6 +953,7 @@ export default function CryptoRiskManagementGuide2026() {
       </article>
         <BackToTop />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/crypto-risk-management-guide-2026" />
     </div>
   );
 }

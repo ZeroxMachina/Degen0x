@@ -6,6 +6,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -129,6 +130,7 @@ export default function CoinbaseVsRobinhoodPage() {
           },
         ]}
       />
+      <RelatedContent category="tools" currentSlug="/exchanges/compare/coinbase-vs-robinhood" />
     </div>
   );
 }

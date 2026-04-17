@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
@@ -948,6 +949,7 @@ export default function StablechainsPage() {
       </div>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/stablechains-stablecoin-optimized-blockchains-guide-2026" />
     </div>
   );
 }

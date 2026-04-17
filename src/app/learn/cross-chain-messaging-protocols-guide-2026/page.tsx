@@ -4,6 +4,7 @@ import StructuredData from '@/components/StructuredData';
 import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 const S = {
@@ -928,6 +929,7 @@ export default function CrossChainMessagingProtocolsPage() {
       </article>
 
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/cross-chain-messaging-protocols-guide-2026" />
     </main>
   );
 }

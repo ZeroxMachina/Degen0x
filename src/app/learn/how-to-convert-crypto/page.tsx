@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Breadcrumb from '@/components/Breadcrumb';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -470,6 +471,7 @@ export default function HowToConvertCryptoPage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/how-to-convert-crypto" />
     </main>
   );
 }

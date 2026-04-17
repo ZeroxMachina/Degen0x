@@ -575,6 +575,7 @@ export default function SolanaTokenExtensionsGuide() {
           {`// Using @solana/spl-token
 import { createMint } from '@solana/spl-token';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 const mint = await createMint(
@@ -934,6 +935,7 @@ await initializeTransferHook(
           section="learn"
         />
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/solana-token-extensions-token-2022-guide-2026" />
     </div>
 
   );

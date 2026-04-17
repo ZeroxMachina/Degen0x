@@ -8,6 +8,7 @@ import BackToTop from "@/components/BackToTop";
 import InteractiveTOC from "./InteractiveTOC";
 import InteractiveCards from "./InteractiveCards";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // Export metadata for server-side rendering
@@ -766,6 +767,7 @@ export default function AIAgentIdentityPage() {
 
       {/* Back to Top Button */}
       <BackToTop />
+      <RelatedContent category="learn" currentSlug="/learn/ai-agent-identity-nhi-guide" />
     </main>
   );
 }

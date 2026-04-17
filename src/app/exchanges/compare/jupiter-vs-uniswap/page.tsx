@@ -4,6 +4,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -63,6 +64,7 @@ export default function JupiterVsUniswapPage() {
         { question: "Can I use both Jupiter and Uniswap?", answer: "Yes, many DeFi users maintain wallets on both Solana and Ethereum to access different token ecosystems. You would need a Solana wallet (like Phantom) for Jupiter and an Ethereum wallet (like MetaMask) for Uniswap." },
         { question: "Which has more tokens available?", answer: "Both have thousands of tokens, but in different ecosystems. Uniswap provides access to Ethereum-based tokens (ERC-20), while Jupiter provides access to Solana-based tokens (SPL). The choice depends on which ecosystem's tokens you want to trade." },
       ]} />
+      <RelatedContent category="tools" currentSlug="/exchanges/compare/jupiter-vs-uniswap" />
     </div>
   );
 }

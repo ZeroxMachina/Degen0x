@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -1124,6 +1125,7 @@ export default function InstitutionalDeFiGuide() {
         />
 
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/institutional-defi-onchain-finance-guide-2026" />
     </div>
   );
 }

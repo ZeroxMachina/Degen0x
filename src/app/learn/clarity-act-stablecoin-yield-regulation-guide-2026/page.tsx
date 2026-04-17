@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -583,6 +584,7 @@ export default function CLARITYActGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/clarity-act-stablecoin-yield-regulation-guide-2026" />
     </div>
   );
 }

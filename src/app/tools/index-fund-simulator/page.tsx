@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 // Mock historical data for crypto assets
 const CRYPTO_ASSETS = [
@@ -752,6 +753,7 @@ export default function IndexFundSimulator() {
           </div>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/index-fund-simulator" />
     </div>
   );
 }

@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: 'Lombard Finance Guide 2026 — LBTC Bitcoin Liquid Staking Explained | degen0x',
@@ -109,6 +111,7 @@ export default function LombardFinanceLBTCGuide() {
 
   return (
     <div style={pageStyle}>
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       <div style={containerStyle}>
         <Breadcrumb items={[
           { label: "Home", href: "/" },
@@ -309,6 +312,7 @@ export default function LombardFinanceLBTCGuide() {
       </div>
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <RelatedContent category="learn" currentSlug="/learn/lombard-finance-lbtc-bitcoin-liquid-staking-guide-2026" />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -671,6 +672,7 @@ export default function TokenomicsProtocolRevenueGuide() {
           </a>
         </div>
       </section>
+      <RelatedContent category="learn" currentSlug="/learn/tokenomics-protocol-revenue-guide" />
     </div>
   );
 }

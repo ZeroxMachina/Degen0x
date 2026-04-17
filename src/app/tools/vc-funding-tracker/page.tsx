@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
+import RelatedContent from '@/components/RelatedContent';
 
 /* ────────────────────────────────────────────────────────────
    Types
@@ -318,6 +319,7 @@ export default function VCFundingTracker() {
           </p>
         </div>
       </section>
+      <RelatedContent category="tools" currentSlug="/tools/vc-funding-tracker" />
     </div>
   );
 }

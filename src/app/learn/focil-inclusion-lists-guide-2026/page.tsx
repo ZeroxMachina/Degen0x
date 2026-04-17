@@ -99,7 +99,7 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema]);
 export default function FocilInclusionListsGuide() {
   return (
     <>
-      <StructuredData schema={combinedSchema} />
+      <StructuredData data={combinedSchema} />
 
       <main className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">

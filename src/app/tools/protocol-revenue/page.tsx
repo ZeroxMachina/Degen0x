@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import RelatedContent from '@/components/RelatedContent';
 
 interface ProtocolData {
   name: string;
@@ -249,6 +250,7 @@ export default function ProtocolRevenuePage() {
           </p>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/protocol-revenue" />
     </div>
   );
 }

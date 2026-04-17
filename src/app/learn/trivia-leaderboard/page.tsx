@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import TriviaLeaderboard from "@/components/TriviaLeaderboard";
+import RelatedContent from '@/components/RelatedContent';
+import AuthorAttribution, { getAuthorForSection } from '@/components/AuthorAttribution';
 
 export const metadata: Metadata = {
   title: "Crypto Trivia Leaderboard | Compete Globally — degen0x",
@@ -16,6 +18,7 @@ export const metadata: Metadata = {
 export default function TriviaLeaderboardPage() {
   return (
     <main className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      {(() => { const a = getAuthorForSection('learn'); return (<AuthorAttribution author={a.author} role={a.role} publishedDate="2026-04-17" updatedDate="2026-04-17" section="learn" />); })()}
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-8">
         <Link href="/" className="hover:text-[var(--color-primary)]">Home</Link>
@@ -83,6 +86,7 @@ export default function TriviaLeaderboardPage() {
           <div className="text-xs text-[var(--color-text-secondary)] mt-1">Rate your crypto knowledge</div>
         </Link>
       </div>
+      <RelatedContent category="learn" currentSlug="/learn/trivia-leaderboard" />
     </main>
   );
 }

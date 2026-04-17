@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 export const metadata: Metadata = {
@@ -637,6 +638,7 @@ export default function MultisigWalletGuide() {
           readingTime={9}
           section="learn"
         />
+      <RelatedContent category="learn" currentSlug="/learn/multisig-wallets-shared-crypto-security-guide-2026" />
 
     </div>
   );

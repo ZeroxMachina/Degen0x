@@ -5,6 +5,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import BabylonYieldEstimator from "@/components/BabylonYieldEstimator";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -995,6 +996,7 @@ export default function BabylonProtocolGuidePage() {
           </p>
         </div>
       </article>
+      <RelatedContent category="learn" currentSlug="/learn/babylon-protocol-bitcoin-staking" />
     </div>
   );
 }

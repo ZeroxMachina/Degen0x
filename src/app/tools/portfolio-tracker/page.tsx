@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useState, useEffect } from 'react';
+import RelatedContent from '@/components/RelatedContent';
 
 interface Holding {
   id: string;
@@ -366,6 +367,7 @@ export default function PortfolioTracker() {
           <p>Prices update every 2 seconds with simulated market fluctuations</p>
         </div>
       </div>
+      <RelatedContent category="tools" currentSlug="/tools/portfolio-tracker" />
     </div>
   );
 }

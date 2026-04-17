@@ -5,6 +5,7 @@ import ComparisonTable from "@/components/ComparisonTable";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
+import RelatedContent from '@/components/RelatedContent';
 
 export const metadata: Metadata = {
   title: `Custodial vs Non-Custodial Wallets (${CURRENT_YEAR}) | ${SITE_NAME}`,
@@ -46,6 +47,7 @@ export default function CustodialVsNonCustodialPage() {
             The wallet space moves fast. We update our reviews when significant firmware updates or security incidents occur, not on a fixed schedule.
           </p>
         </div><div className="grid md:grid-cols-2 gap-4"><Link href="/wallets/best/custodial" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-primary)]">Best Of</span><h3 className="text-sm font-semibold text-[var(--color-text)]">Best Custodial Wallets</h3></Link><Link href="/wallets/learn/what-is-a-crypto-wallet" className="glass-subtle p-4 glass-hover"><span className="text-xs text-[var(--color-secondary)]">Guide</span><h3 className="text-sm font-semibold text-[var(--color-text)]">What Is a Crypto Wallet?</h3></Link></div></section>
+      <RelatedContent category="tools" currentSlug="/wallets/compare/custodial-vs-non-custodial" />
     </div>
   );
 }
