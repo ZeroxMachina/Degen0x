@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Cross-Chain Bridges & Interoperability Guide 2026 | degen0x',
@@ -338,6 +339,7 @@ export default function CrossChainBridgesPage() {
 
         <h1 style={h1Style}>Cross-Chain Bridges & Interoperability Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/cross-chain-bridges-interoperability-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>Updated: April 3, 2026 | Reading Time: 16 min</div>

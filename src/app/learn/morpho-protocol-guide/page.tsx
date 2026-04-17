@@ -7,6 +7,7 @@ import MorphoVaultExplorer from "@/components/MorphoVaultExplorer";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -146,6 +147,7 @@ export default function MorphoProtocolGuidePage() {
             Morpho Protocol Guide 2026: The Modular Lending Layer Taking Over DeFi
           </h1>
 
+          <LastUpdated pathKey="/learn/morpho-protocol-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 18, color: "#8b949e", lineHeight: 1.6, marginBottom: 12 }}>

@@ -14,6 +14,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -168,6 +169,7 @@ export default function AltcoinETFGuidePage() {
           Altcoin ETF Guide 2026: Solana, XRP & the New Wave of Spot Crypto Funds
         </h1>
 
+        <LastUpdated pathKey="/learn/altcoin-etf-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-lg mb-3" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>

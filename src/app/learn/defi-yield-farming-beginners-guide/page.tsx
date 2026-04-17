@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -211,6 +212,7 @@ export default function DeFiYieldFarmingBeginnersGuide() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>DeFi Yield Farming Beginners Guide 2026</h1>
+          <LastUpdated pathKey="/learn/defi-yield-farming-beginners-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

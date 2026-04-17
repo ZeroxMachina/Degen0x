@@ -7,6 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -126,6 +127,7 @@ export default function DataAvailabilityGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#79c0ff] bg-clip-text text-transparent">
         Data Availability Layer Guide 2026
       </h1>
+      <LastUpdated pathKey="/learn/data-availability-layer-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">

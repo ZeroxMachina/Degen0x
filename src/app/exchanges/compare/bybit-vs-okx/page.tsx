@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -55,6 +56,7 @@ export default function BybitVsOkxPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Bybit vs OKX: Which Derivatives Exchange Is Better in {CURRENT_YEAR}?
       </h1>
+      <LastUpdated pathKey="/exchanges/compare/bybit-vs-okx" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">
         Updated: {CURRENT_MONTH} {CURRENT_YEAR}
       </p>

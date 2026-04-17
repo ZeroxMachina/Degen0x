@@ -14,6 +14,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -161,6 +162,7 @@ export default function BitcoinTreasuryCompaniesGuidePage() {
           Bitcoin Treasury Companies 2026: Who&apos;s Stacking BTC and Why
         </h1>
 
+        <LastUpdated pathKey="/learn/bitcoin-treasury-companies-guide" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>

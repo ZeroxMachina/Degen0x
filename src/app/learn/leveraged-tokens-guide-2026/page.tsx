@@ -9,6 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -91,6 +92,7 @@ export default function LeveragedTokensGuide() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#79c0ff] bg-clip-text text-transparent">
             Leveraged Tokens
           </h1>
+          <LastUpdated pathKey="/learn/leveraged-tokens-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-lg text-[#8b949e] mb-6">

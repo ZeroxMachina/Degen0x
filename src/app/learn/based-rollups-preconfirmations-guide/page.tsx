@@ -9,6 +9,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -164,6 +165,7 @@ export default function BasedRollupsGuide() {
             Based Rollups & Preconfirmations: The Complete 2026 Guide
           </h1>
 
+          <LastUpdated pathKey="/learn/based-rollups-preconfirmations-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.75, marginBottom: 12 }}>

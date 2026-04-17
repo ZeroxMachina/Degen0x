@@ -5,6 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Crypto ETFs Complete Guide 2026: Bitcoin, Ethereum, Solana,",
@@ -345,6 +346,7 @@ export default function CryptoETFsPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>Crypto ETFs Complete Guide 2026</h1>
+        <LastUpdated pathKey="/learn/crypto-etfs-complete-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>

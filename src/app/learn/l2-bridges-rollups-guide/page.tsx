@@ -5,6 +5,7 @@ import { ArrowUpDown, Shield, Zap, Globe, AlertCircle, Check, Layers } from 'luc
 import Breadcrumb from '@/components/Breadcrumb';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 // ── Types ────────────────────────────────────────────────────────────────────
 interface Bridge {
@@ -290,6 +291,7 @@ export default function L2BridgesRollupsGuide() {
               <h1 style={{ fontSize: 36, fontWeight: 800, background: "linear-gradient(135deg, #58a6ff, #bc8cff)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
                 L2 Bridges & Rollups: The Complete 2026 Guide
               </h1>
+              <LastUpdated pathKey="/learn/l2-bridges-rollups-guide" />
               <ReadingTime />
               <AutoTOC />
             </div>

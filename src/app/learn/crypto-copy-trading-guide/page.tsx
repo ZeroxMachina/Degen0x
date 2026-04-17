@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -166,6 +167,7 @@ export default function CryptoCopyTradingGuidePage() {
             Crypto Copy Trading: The Complete 2026 Guide
           </h1>
 
+          <LastUpdated pathKey="/learn/crypto-copy-trading-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

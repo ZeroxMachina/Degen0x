@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Avalanche (AVAX) Ecosystem & L1 Chains Guide 2026',
@@ -239,6 +240,7 @@ export default function AvalancheEcosystemPage() {
           Avalanche (AVAX) Ecosystem & L1 Chains Guide 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/avalanche-avax-ecosystem-subnets-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         {/* Description */}

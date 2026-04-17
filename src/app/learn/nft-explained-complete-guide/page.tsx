@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -150,6 +151,7 @@ export default function NFTExplainedCompleteGuide() {
           <span style={{ ...badgeStyle, background: '#ec4899', color: '#fff' }}>NFTs</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>NFT Explained: Complete Guide to Digital Assets</h1>
+          <LastUpdated pathKey="/learn/nft-explained-complete-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

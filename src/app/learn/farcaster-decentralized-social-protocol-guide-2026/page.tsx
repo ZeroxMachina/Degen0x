@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -138,6 +139,7 @@ export default function FarcasterPage() {
           <span style={{ ...badgeStyle, background: '#8b5cf6', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Farcaster Protocol 2026</h1>
+          <LastUpdated pathKey="/learn/farcaster-decentralized-social-protocol-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>Decentralized social protocol separating identity from platforms. 40K-60K DAU, Snapchain mainnet (10K+ TPS), Mini Apps ecosystem, Neynar acquisition.</p>

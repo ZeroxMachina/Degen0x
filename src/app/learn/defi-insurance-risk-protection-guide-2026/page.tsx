@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -331,6 +332,7 @@ export default function DeFiInsurancePage() {
         {/* Main Title */}
         <h1 style={h1Style}>DeFi Insurance &amp; Risk Protection Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/defi-insurance-risk-protection-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>Published: April 2, 2026 | Reading Time: 12 min</div>

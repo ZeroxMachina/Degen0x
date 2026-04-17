@@ -9,6 +9,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -288,6 +289,7 @@ export default function DefiLendingComparison2026Page() {
 
           <h1 style={s.h1}>DeFi Lending Protocol Comparison 2026</h1>
 
+          <LastUpdated pathKey="/learn/defi-lending-protocol-comparison-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={s.sub}>

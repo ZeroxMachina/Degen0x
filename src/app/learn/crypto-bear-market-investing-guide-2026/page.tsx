@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -257,6 +258,7 @@ export default function CryptoBearMarketInvestingGuide2026() {
             <span style={S.badge("#d2992220", "#d29922", "#d2992240")}>Intermediate</span>
           </div>
           <h1 style={S.h1}>Crypto Bear Market Investing Guide 2026: How to Buy the Fear</h1>
+          <LastUpdated pathKey="/learn/crypto-bear-market-investing-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={S.subtitle}>

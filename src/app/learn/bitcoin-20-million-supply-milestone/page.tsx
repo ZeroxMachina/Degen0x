@@ -7,6 +7,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -118,6 +119,7 @@ export default function Bitcoin20MillionGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#f9826c] to-[#ffa657] bg-clip-text text-transparent leading-tight">
         Bitcoin's 20 Millionth Coin
       </h1>
+      <LastUpdated pathKey="/learn/bitcoin-20-million-supply-milestone" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-6">

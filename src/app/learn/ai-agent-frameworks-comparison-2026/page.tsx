@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const pageTitle = "AI Crypto Agent Frameworks Comparison 2026: Eliza vs Virtuals vs Rig vs ZerePy";
@@ -138,6 +139,7 @@ export default function AIAgentFrameworksComparison() {
           {pageTitle}
         </h1>
 
+        <LastUpdated pathKey="/learn/ai-agent-frameworks-comparison-2026" />
         <ReadingTime />
         <AutoTOC />
         {/* Meta Info */}

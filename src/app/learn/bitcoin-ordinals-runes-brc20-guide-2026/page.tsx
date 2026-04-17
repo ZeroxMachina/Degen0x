@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -322,6 +323,7 @@ export default function BitcoinOrdinalRunesPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>Bitcoin Ordinals & Runes Guide 2026</h1>
+        <LastUpdated pathKey="/learn/bitcoin-ordinals-runes-brc20-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>

@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -207,6 +208,7 @@ export default function ZKVsOptimisticRollups() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>ZK Rollups vs Optimistic Rollups</h1>
+          <LastUpdated pathKey="/learn/zk-rollups-vs-optimistic-rollups" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

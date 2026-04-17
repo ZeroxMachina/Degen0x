@@ -8,6 +8,7 @@ import BackToTop from '@/components/BackToTop';
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Euler V2 Modular Lending Guide 2026 — Vaults & EVK | degen0x',
@@ -147,6 +148,7 @@ export default function EulerV2Guide() {
           Euler V2 Modular Lending Guide 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/euler-v2-modular-lending-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         {/* Opening Hook */}

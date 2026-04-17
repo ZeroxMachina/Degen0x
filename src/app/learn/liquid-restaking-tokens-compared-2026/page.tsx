@@ -10,6 +10,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -147,6 +148,7 @@ export default function LiquidRestakingTokensPage() {
             Liquid Restaking Tokens Compared 2026
           </h1>
 
+          <LastUpdated pathKey="/learn/liquid-restaking-tokens-compared-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

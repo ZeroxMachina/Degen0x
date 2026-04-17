@@ -8,6 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `DeFi Lending vs Staking 2026: Which Earns More?`,
@@ -53,6 +54,7 @@ export default function LendingVsStakingPage() {
         section="defi-lending"
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/lending-vs-staking" }, { label: "Lending vs Staking", href: "/defi-lending/compare/lending-vs-staking" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">DeFi Lending vs Staking ({CURRENT_YEAR})</h1>
+      <LastUpdated pathKey="/defi-lending/compare/lending-vs-staking" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">

@@ -5,6 +5,7 @@ import { ArticleStructuredData, FAQStructuredData, BreadcrumbStructuredData } fr
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const S = { bg:"#0d1117",card:"#161b22",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4",red:"#f85149",indigo:"#818cf8" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"Crypto Technical Analysis Guide",href:"/learn/crypto-technical-analysis-guide-2026"}];
@@ -90,6 +91,7 @@ export default function CryptoTechnicalAnalysisGuidePage() {
           <h1 style={{fontSize:"2.4rem",fontWeight:900,lineHeight:1.2,marginBottom:20,background:`linear-gradient(135deg, ${S.indigo}, ${S.cyan})`,WebkitBackgroundClip:"text",WebkitTextFillColor:"transparent"}}>
             Crypto Technical Analysis Guide 2026: Indicators, Chart Patterns & Trading Strategies
           </h1>
+          <LastUpdated pathKey="/learn/crypto-technical-analysis-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{fontSize:17,color:S.text2,lineHeight:1.75}}>

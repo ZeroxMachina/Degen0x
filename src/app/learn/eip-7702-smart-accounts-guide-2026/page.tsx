@@ -6,6 +6,7 @@ import { useState } from "react";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -54,6 +55,7 @@ export default function EIP7702SmartAccountsPage() {
             EIP-7702 & Smart Accounts Guide 2026: Gasless Transactions & Account Abstraction
           </h1>
 
+          <LastUpdated pathKey="/learn/eip-7702-smart-accounts-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

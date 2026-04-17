@@ -8,6 +8,7 @@ import StructuredData from "@/components/StructuredData";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "PEAQ & DePIN Robotics Guide 2026 | degen0x",
@@ -203,6 +204,7 @@ export default function PeaqDeginRoboticsGuidePage() {
             PEAQ & DePIN Robotics Guide 2026: The Machine Economy
           </h1>
 
+          <LastUpdated pathKey="/learn/peaq-depin-robotics-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           {/* Meta line */}

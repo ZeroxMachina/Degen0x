@@ -5,6 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Story Protocol Guide 2026: IP Tokenization & Programmable IP",
@@ -342,6 +343,7 @@ export default function StoryProtocolGuide() {
 
         {/* Header */}
         <h1 style={h1Style}>Story Protocol Guide 2026</h1>
+        <LastUpdated pathKey="/learn/story-protocol-ip-tokenization-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.2rem', color: '#8b949e', marginBottom: '30px' }}>

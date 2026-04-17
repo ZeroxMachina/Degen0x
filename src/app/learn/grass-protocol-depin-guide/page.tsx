@@ -13,6 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -173,6 +174,7 @@ export default function GrassProtocolGuide() {
           }}>
             GRASS Protocol Guide 2026: Earn Crypto by Sharing Your Internet for AI
           </h1>
+          <LastUpdated pathKey="/learn/grass-protocol-depin-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>

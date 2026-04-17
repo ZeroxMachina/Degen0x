@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -126,6 +127,7 @@ export default function BestMemeCoinLaunchpads2026() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#f472b6] to-[#a78bfa] bg-clip-text text-transparent">
         Best Meme Coin Launchpads 2026
       </h1>
+      <LastUpdated pathKey="/learn/best-meme-coin-launchpads-2026" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">

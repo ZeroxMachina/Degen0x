@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -96,6 +97,7 @@ export default function CryptoComVsBybitCardPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto.com Visa vs Bybit Card ({CURRENT_YEAR})
       </h1>
+      <LastUpdated pathKey="/crypto-cards/compare/crypto-com-vs-bybit-card" />
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         Crypto.com&apos;s Visa has been a market leader in crypto cards for years, while Bybit&apos;s
         Mastercard is a newer entrant from one of the world&apos;s largest derivatives exchanges. The

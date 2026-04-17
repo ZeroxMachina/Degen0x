@@ -11,6 +11,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -66,6 +67,7 @@ export default function LedgerVsTrezorPage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Ledger vs Trezor: Which Hardware Wallet Is Better in {CURRENT_YEAR}?</h1>
+        <LastUpdated pathKey="/wallets/compare/ledger-vs-trezor" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           Ledger and Trezor are the two dominant hardware wallet brands. We compare them across security
           architecture, coin support, software, pricing, and features to help you choose.

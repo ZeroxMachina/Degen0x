@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -95,6 +96,7 @@ export default function WirexVsPlutusPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Wirex vs Plutus Card ({CURRENT_YEAR})
       </h1>
+      <LastUpdated pathKey="/crypto-cards/compare/wirex-vs-plutus" />
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         For European crypto card users, Wirex and Plutus are two of the top contenders. Both offer up
         to 8% cashback through their respective tokens, but their approaches differ significantly. Wirex

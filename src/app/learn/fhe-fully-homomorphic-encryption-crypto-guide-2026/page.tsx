@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -340,6 +341,7 @@ export default function FHECryptoGuidePage() {
         {/* Main Title */}
         <h1 style={h1Style}>Fully Homomorphic Encryption (FHE) in Crypto Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>Updated: April 2, 2026 | Reading Time: 13 min</div>

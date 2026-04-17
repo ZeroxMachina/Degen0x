@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -368,6 +369,7 @@ export default function InstitutionalDeFiGuide() {
 
         <header style={headerStyle}>
           <h1 style={h1Style}>Institutional DeFi &amp; On-Chain Finance</h1>
+          <LastUpdated pathKey="/learn/institutional-defi-onchain-finance-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <div style={badgeContainerStyle}>

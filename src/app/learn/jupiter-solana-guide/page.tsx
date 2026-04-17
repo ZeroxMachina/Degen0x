@@ -13,6 +13,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -152,6 +153,7 @@ export default function JupiterSolanaGuidePage() {
         >
           Jupiter (JUP): Solana's DeFi Superapp Guide for 2026
         </h1>
+        <LastUpdated pathKey="/learn/jupiter-solana-guide" />
         <ReadingTime />
         <AutoTOC />
         <p

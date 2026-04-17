@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -64,6 +65,7 @@ export default function CoinbaseWalletVsMetaMaskPage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Coinbase Wallet vs MetaMask: Which Should You Use in {CURRENT_YEAR}?</h1>
+        <LastUpdated pathKey="/wallets/compare/coinbase-wallet-vs-metamask" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           Coinbase Wallet and MetaMask are two of the most popular self-custody wallets. We compare their
           features, chain support, security, and overall experience to help you choose.

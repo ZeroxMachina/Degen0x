@@ -6,6 +6,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -244,6 +245,7 @@ export default function BasedRollupsGuide() {
 
           <h1 style={h1Style}>Based Rollups & Ethereum L1 Sequencing</h1>
 
+          <LastUpdated pathKey="/learn/based-rollups-ethereum-l1-sequencing-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: "#8b949e", marginBottom: 8 }}>

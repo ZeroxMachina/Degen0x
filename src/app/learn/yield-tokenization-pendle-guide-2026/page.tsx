@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -316,6 +317,7 @@ export default function YieldTokenizationPendlePage() {
         {/* Main Title */}
         <h1 style={h1Style}>Yield Tokenization &amp; Pendle Guide 2026: Fixed DeFi Yield</h1>
 
+        <LastUpdated pathKey="/learn/yield-tokenization-pendle-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>Published: April 2, 2026 | Reading Time: 18 min</div>

@@ -9,6 +9,7 @@ import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `Bitcoin vs Ethereum (2026) - Complete Comparison | degen0x`,
@@ -54,6 +55,7 @@ export default function Page() {
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Bitcoin vs Ethereum ({CURRENT_YEAR})</h1>
+        <LastUpdated pathKey="/investing/compare/bitcoin-vs-ethereum" />
         <p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       </header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">Bitcoin and Ethereum are the two largest cryptocurrencies serving fundamentally different purposes. Bitcoin is digital gold — a store of value with fixed scarcity. Ethereum is programmable money — a platform for decentralized applications, DeFi, and tokenization. This comparison helps you understand the key differences for investment decisions.</p>

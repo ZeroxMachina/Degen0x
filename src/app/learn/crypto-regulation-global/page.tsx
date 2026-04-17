@@ -4,6 +4,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export default function CryptoRegulationPage() {
   const breadcrumbItems = [
@@ -33,6 +34,7 @@ export default function CryptoRegulationPage() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
             Global Crypto Regulation Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/crypto-regulation-global" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-xl text-gray-300 mb-2">

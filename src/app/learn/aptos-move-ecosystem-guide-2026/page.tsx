@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -253,6 +254,7 @@ export default function AptosMoveguide() {
 
           <h1 style={h1Style}>Aptos Blockchain & Move Ecosystem Guide 2026</h1>
 
+          <LastUpdated pathKey="/learn/aptos-move-ecosystem-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

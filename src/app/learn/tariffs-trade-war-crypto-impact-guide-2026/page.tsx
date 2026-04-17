@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -245,6 +246,7 @@ export default function TariffsTradeWarGuide() {
 
         <h1 style={S.h1}>Tariffs &amp; Trade Wars: Impact on Crypto Markets 2026</h1>
 
+        <LastUpdated pathKey="/learn/tariffs-trade-war-crypto-impact-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={S.subtitle}>

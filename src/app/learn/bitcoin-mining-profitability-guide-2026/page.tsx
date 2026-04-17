@@ -6,6 +6,7 @@ import { ArrowRight, TrendingUp, Zap, HardDrive, AlertCircle, Info } from 'lucid
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -108,6 +109,7 @@ export default function MiningProfitabilityPage() {
             Bitcoin Mining Profitability Guide 2026
           </h1>
 
+          <LastUpdated pathKey="/learn/bitcoin-mining-profitability-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           {/* Opening Paragraph */}

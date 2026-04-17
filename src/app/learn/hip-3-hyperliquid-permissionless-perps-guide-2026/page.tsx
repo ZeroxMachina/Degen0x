@@ -4,6 +4,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'HIP-3: Hyperliquid Permissionless Perps Guide 2026 | Degen0x',
@@ -114,6 +115,7 @@ export default function Hip3HyperliquidPermissionlessPerpsGuide2026() {
         </nav>
 
         <h1>HIP-3: Hyperliquid Permissionless Perps Guide 2026</h1>
+        <LastUpdated pathKey="/learn/hip-3-hyperliquid-permissionless-perps-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p className="lead">

@@ -8,6 +8,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Crypto Inheritance Planning 2026: Protect Your Digital",
@@ -172,6 +173,7 @@ export default function CryptoInheritancePlanningPage() {
           Crypto Inheritance Planning 2026: Protect Your Digital Assets for Your Heirs
         </h1>
 
+        <LastUpdated pathKey="/learn/crypto-inheritance-planning" />
         <ReadingTime />
         <AutoTOC />
         {/* Meta Information */}

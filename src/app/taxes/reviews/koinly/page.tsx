@@ -65,6 +65,7 @@ export default function KoinlyReviewPage() {
           <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">
             Koinly Review {CURRENT_YEAR}: Is It the Best Crypto Tax Software?
           </h1>
+          <LastUpdated pathKey="/taxes/reviews/koinly" />
           <div className="flex items-center gap-4 mb-4">
             <StarRating rating={4.8} size="lg" />
             <span className="text-sm text-[var(--color-text-secondary)]">
@@ -212,6 +213,7 @@ export default function KoinlyReviewPage() {
             import to tax report takes less than 30 minutes.
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import LastUpdated from '@/components/LastUpdated';
 
           </p>
         </section>

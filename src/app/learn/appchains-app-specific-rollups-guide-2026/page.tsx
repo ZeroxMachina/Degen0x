@@ -10,6 +10,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Appchains & App-Specific Rollups Guide 2026 | degen0x',
@@ -164,6 +165,7 @@ export default function AppChainsGuide() {
             Appchains & App-Specific Rollups
           </h1>
 
+          <LastUpdated pathKey="/learn/appchains-app-specific-rollups-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '16px', marginBottom: '20px' }}>

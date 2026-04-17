@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -165,6 +166,7 @@ export default function CryptoTradingBotsGuidePage() {
             Crypto Trading Bots Guide 2026: Strategies, Platforms & AI
           </h1>
 
+          <LastUpdated pathKey="/learn/crypto-trading-bots-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

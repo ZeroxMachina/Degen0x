@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -366,6 +367,7 @@ export default function CryptoMarketMakingPage() {
             <span style={pageStyles.badgeIntermediate}>Intermediate</span>
           </div>
           <h1 style={pageStyles.title}>Crypto Market Making Guide 2026: CEX, DEX &amp; Automated Liquidity Provision</h1>
+          <LastUpdated pathKey="/learn/crypto-market-making-liquidity-provision-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={pageStyles.subtitle}>

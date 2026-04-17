@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -154,6 +155,7 @@ export default function MovementNetworkGuidePage() {
             Movement Network Guide 2026 — The MoveVM L1 Reshaping Blockchain Speed
           </h1>
 
+          <LastUpdated pathKey="/learn/movement-network-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 16, lineHeight: 1.8, marginBottom: 12 }}>

@@ -6,6 +6,7 @@ import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const S = {
@@ -154,6 +155,7 @@ export default function MSBTGuide() {
           }}>
             Morgan Stanley's Bitcoin ETF (MSBT)
           </h1>
+          <LastUpdated pathKey="/learn/morgan-stanley-bitcoin-etf-msbt-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{

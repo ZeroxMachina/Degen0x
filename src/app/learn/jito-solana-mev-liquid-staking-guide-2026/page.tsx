@@ -8,6 +8,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Jito Protocol Guide 2026 — Solana MEV & Liquid Staking',
@@ -319,6 +320,7 @@ export default function JitoGuide() {
 
         <h1 style={h1Style}>Jito Protocol Guide 2026 — Solana MEV &amp; Liquid Staking</h1>
 
+        <LastUpdated pathKey="/learn/jito-solana-mev-liquid-staking-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Fluent: Blended Execution rWASM L2 Guide 2026 | Degen0x',
@@ -95,6 +96,7 @@ export default function FluentBlendedExecutionL2Guide() {
         </nav>
 
         <h1 className="font-bold mb-4" style={{ fontSize: 'clamp(1.8rem, 5vw, 2.5rem)' }}>Fluent: Blended Execution rWASM L2 Guide 2026</h1>
+        <LastUpdated pathKey="/learn/fluent-blended-execution-rwasm-l2-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-gray-300 mb-8">

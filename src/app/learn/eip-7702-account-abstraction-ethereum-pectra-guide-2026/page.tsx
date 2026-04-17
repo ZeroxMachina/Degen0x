@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "EIP-7702: Ethereum Account Abstraction After Pectra Guide",
@@ -144,6 +145,7 @@ export default function Eip7702Guide() {
       </nav>
 
       <h1 style={h1Style}>EIP-7702: Ethereum Account Abstraction After Pectra</h1>
+      <LastUpdated pathKey="/learn/eip-7702-account-abstraction-ethereum-pectra-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p style={{ ...pStyle, fontSize: '1.2rem', color: '#8b949e' }}>

@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -341,6 +342,7 @@ export default function LiquidRestakingTokensPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Liquid Restaking Tokens (LRTs) Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/liquid-restaking-tokens-lrt-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>Updated: April 2, 2026 | Reading Time: 12 min</div>

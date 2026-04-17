@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -48,6 +49,7 @@ export default function TrumpCryptoReserveGuidePage() {
         >
           Trump's Crypto Strategic Reserve: The Complete Guide
         </h1>
+        <LastUpdated pathKey="/learn/trump-crypto-reserve-guide" />
         <ReadingTime />
         <AutoTOC />
         <p

@@ -5,6 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const S = {
   bg:"#0d1117",
@@ -208,6 +209,7 @@ export default function GovernanceSecurityPage() {
             DAO Governance Security 2026: Attack Vectors, Real Exploits & How to Defend Your Protocol
           </h1>
 
+          <LastUpdated pathKey="/learn/governance-security-attack-vectors-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: S.text2, fontSize: "16px", marginBottom: "16px" }}>

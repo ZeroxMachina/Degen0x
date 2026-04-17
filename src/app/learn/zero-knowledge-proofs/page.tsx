@@ -4,6 +4,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export default function ZeroKnowledgeProofsPage() {
   const breadcrumbItems = [
@@ -33,6 +34,7 @@ export default function ZeroKnowledgeProofsPage() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
             Zero-Knowledge Proofs Explained
           </h1>
+          <LastUpdated pathKey="/learn/zero-knowledge-proofs" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-xl text-gray-300 mb-2">

@@ -12,6 +12,7 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -154,6 +155,7 @@ export default function EthenaUsdeGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#6366f1] to-[#06b6d4] bg-clip-text text-transparent">
         What Is Ethena? USDe, sUSDe, and the Internet Bond Explained
       </h1>
+      <LastUpdated pathKey="/learn/ethena-usde-guide" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">

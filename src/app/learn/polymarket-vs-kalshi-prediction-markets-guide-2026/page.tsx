@@ -5,6 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Polymarket vs Kalshi: Prediction Markets Comparison Guide",
@@ -136,6 +137,7 @@ export default function Page() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
             Polymarket vs Kalshi: Prediction Markets Comparison Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/polymarket-vs-kalshi-prediction-markets-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-xl text-gray-300">

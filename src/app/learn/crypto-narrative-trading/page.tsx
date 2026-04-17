@@ -3,6 +3,7 @@
 import Breadcrumb from '@/components/Breadcrumb'
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export default function NarrativeTrading() {
   return (
@@ -15,6 +16,7 @@ export default function NarrativeTrading() {
       <h1 className="text-4xl font-bold text-[var(--color-text)] mt-8 mb-2">
         Narrative Trading in Crypto: How to Ride the Next Big Trend
       </h1>
+      <LastUpdated pathKey="/learn/crypto-narrative-trading" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-gray-400 mb-8">Last updated: March 2026</p>

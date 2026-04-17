@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const S = {
@@ -94,6 +95,7 @@ export default function DeFiInsuranceGuide() {
             <span style={{ backgroundColor: S.blue, color: "#000", padding: "0.4rem 0.8rem", borderRadius: "4px", fontSize: "0.85rem", fontWeight: "600" }}>Intermediate</span>
           </div>
           <h1 style={{ fontSize: "2.5rem", fontWeight: "700", marginBottom: "0.5rem" }}>DeFi Insurance Guide 2026</h1>
+          <LastUpdated pathKey="/learn/defi-insurance-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: "1.2rem", color: S.text2 }}>How to Protect Your Crypto from Hacks, Exploits & Depegs</p>

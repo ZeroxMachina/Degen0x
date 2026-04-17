@@ -8,6 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = { title: `MakerDAO vs Compound 2026: DeFi Borrowing Compared`, description: `Compare MakerDAO vs Compound for crypto borrowing in ${CURRENT_YEAR}. Analyze DAI minting vs pool-based borrowing, rates, collateral, and more.` ,
   alternates: { canonical: "/crypto-loans/compare/makerdao-vs-compound" },
@@ -50,6 +51,7 @@ export default function MakerdaoVsCompoundPage() {
         section="crypto-loans"
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Compare", href: "/crypto-loans/compare/makerdao-vs-compound" }, { label: "MakerDAO vs Compound", href: "/crypto-loans/compare/makerdao-vs-compound" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">MakerDAO vs Compound ({CURRENT_YEAR})</h1>
+      <LastUpdated pathKey="/crypto-loans/compare/makerdao-vs-compound" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">MakerDAO and Compound represent two different DeFi borrowing models. MakerDAO lets you mint DAI stablecoins directly against collateral (creating new tokens). Compound uses pool-based lending where you borrow from depositor liquidity. Each model has distinct advantages depending on your use case.</p>

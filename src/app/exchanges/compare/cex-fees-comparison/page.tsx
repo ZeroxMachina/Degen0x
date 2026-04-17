@@ -7,6 +7,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `Crypto Exchange Fees Compared: Complete Guide (2026) | degen0x`,
@@ -40,6 +41,7 @@ export default function CexFeesComparisonPage() {
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "CEX Fees Comparison", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Crypto Exchange Fees Compared: Full {CURRENT_YEAR} Breakdown</h1>
+      <LastUpdated pathKey="/exchanges/compare/cex-fees-comparison" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Trading fees are one of the most important factors when choosing a crypto exchange. Small differences in fee percentages compound into significant amounts over time. This comprehensive comparison covers spot trading fees, withdrawal fees, and deposit costs across all major exchanges to help you find the cheapest platform for your trading style.</p>
 

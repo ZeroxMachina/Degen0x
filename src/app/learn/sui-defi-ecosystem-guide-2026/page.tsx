@@ -10,6 +10,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -137,6 +138,7 @@ export default function SuiDeFiEcosystemPage() {
         Sui DeFi Ecosystem Guide 2026
       </h1>
 
+      <LastUpdated pathKey="/learn/sui-defi-ecosystem-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       {/* Subtitle */}

@@ -6,6 +6,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -246,6 +247,7 @@ export default function EthereumLayer2Guide() {
 
         {/* Hero Section */}
         <h1 style={h1Style}>Ethereum Layer 2 Ecosystem Guide 2026</h1>
+        <LastUpdated pathKey="/learn/ethereum-layer-2-ecosystem-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={{ marginBottom: 24, fontSize: 16, color: '#8b949e', lineHeight: 1.8 }}>

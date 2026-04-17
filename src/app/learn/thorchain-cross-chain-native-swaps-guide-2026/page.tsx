@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -338,6 +339,7 @@ export default function THORChainNativeSwapsPage() {
         {/* Main Title */}
         <h1 style={h1Style}>THORChain &amp; Cross-Chain Native Swaps Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/thorchain-cross-chain-native-swaps-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>Updated: April 4, 2026 | Reading Time: 14 min</div>

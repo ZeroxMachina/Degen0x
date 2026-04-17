@@ -8,6 +8,7 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Fair Token Launch Mechanisms Guide 2026 | degen0x",
@@ -186,6 +187,7 @@ export default function FairTokenLaunchesGuide2026() {
           Fair Token Launch Mechanisms Guide 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/fair-token-launches-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         {/* Meta Line */}

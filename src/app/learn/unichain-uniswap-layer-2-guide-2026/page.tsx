@@ -11,6 +11,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -126,6 +127,7 @@ export default function UnichainGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #ff007a, #a855f7)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Unichain Guide 2026: Uniswap's DeFi Layer 2 Explained
           </h1>
+          <LastUpdated pathKey="/learn/unichain-uniswap-layer-2-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>

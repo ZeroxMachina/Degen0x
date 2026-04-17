@@ -6,6 +6,7 @@ import { ToolStructuredData } from '@/components/StructuredData';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export default function WalletComparisonsHub() {
   const comparisons = [
@@ -51,6 +52,7 @@ export default function WalletComparisonsHub() {
 
         <div style={styles.header}>
           <h1 style={styles.title}>Crypto Wallet Comparisons</h1>
+          <LastUpdated pathKey="/compare/wallets" />
           <ReadingTime />
           <AutoTOC />
           <p style={styles.subtitle}>

@@ -8,6 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = { title: `Nexo vs Aave 2026: CeFi vs DeFi Lending Compared`, description: `Compare Nexo (CeFi) vs Aave (DeFi) for crypto loans in ${CURRENT_YEAR}. Analyze rates, KYC requirements, security models, and which is better for your needs.` ,
   alternates: { canonical: "/crypto-loans/compare/nexo-vs-aave" },
@@ -51,6 +52,7 @@ export default function NexoVsAavePage() {
         section="crypto-loans"
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Loans", href: "/crypto-loans" }, { label: "Compare", href: "/crypto-loans/compare/nexo-vs-aave" }, { label: "Nexo vs Aave", href: "/crypto-loans/compare/nexo-vs-aave" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Nexo vs Aave: CeFi vs DeFi Lending ({CURRENT_YEAR})</h1>
+      <LastUpdated pathKey="/crypto-loans/compare/nexo-vs-aave" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">Nexo and Aave represent the two fundamental approaches to crypto lending: centralized (CeFi) and decentralized (DeFi). Nexo provides a familiar, app-based experience with fiat support and customer service. Aave offers permissionless, transparent, on-chain lending with no intermediary. This comparison helps you understand the trade-offs and choose the right approach for your borrowing needs.</p>

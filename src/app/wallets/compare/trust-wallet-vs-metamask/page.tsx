@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -59,6 +60,7 @@ export default function TrustWalletVsMetamaskPage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Trust Wallet vs MetaMask: Multi-Chain Perspective ({CURRENT_YEAR})</h1>
+        <LastUpdated pathKey="/wallets/compare/trust-wallet-vs-metamask" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           This comparison examines Trust Wallet and MetaMask from a multi-chain perspective,
           focusing on native chain support, mobile experience, and cross-ecosystem capabilities.

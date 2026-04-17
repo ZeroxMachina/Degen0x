@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function HyperliquidVsDydxPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Hyperliquid vs dYdX", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Hyperliquid vs dYdX: Which Decentralized Perps Platform Is Better in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/hyperliquid-vs-dydx" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Hyperliquid and dYdX are the two leading decentralized perpetual futures platforms, each building their own Layer 1 chains for maximum performance. Both aim to deliver CEX-like trading speed with DEX-level self-custody. This comparison breaks down how they differ in execution, fees, liquidity, and overall trading experience.</p>
 

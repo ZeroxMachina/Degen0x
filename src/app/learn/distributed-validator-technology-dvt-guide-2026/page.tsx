@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -80,6 +81,7 @@ export default function DVTGuidePage() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 44px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: `linear-gradient(135deg, ${S.primary}, ${S.teal})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Distributed Validator Technology (DVT) Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/distributed-validator-technology-dvt-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: "18px", color: S.text2, marginBottom: "20px" }}>

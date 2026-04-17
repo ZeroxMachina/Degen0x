@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -59,6 +60,7 @@ export default function MetamaskVsTrustWalletPage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">MetaMask vs Trust Wallet: Which Software Wallet Wins in {CURRENT_YEAR}?</h1>
+        <LastUpdated pathKey="/wallets/compare/metamask-vs-trust-wallet" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           MetaMask and Trust Wallet are the two most popular software wallets. We compare chain
           support, DeFi capabilities, fees, and the overall user experience.

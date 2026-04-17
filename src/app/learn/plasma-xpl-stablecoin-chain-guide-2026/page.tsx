@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from "next/link";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -136,6 +137,7 @@ export default function PlasmaXplGuide2026() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Plasma (XPL) Stablecoin Chain Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/plasma-xpl-stablecoin-chain-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-xl text-zinc-400 leading-relaxed">

@@ -7,6 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -169,6 +170,7 @@ export default function CryptoOnRampsGuide() {
           >
             Crypto On-Ramps & Off-Ramps: The Complete Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/crypto-on-ramps-off-ramps-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>

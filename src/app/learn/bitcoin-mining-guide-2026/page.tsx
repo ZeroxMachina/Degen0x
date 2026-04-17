@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Bitcoin Mining Guide 2026: Hardware, Costs & Profitability",
@@ -224,6 +225,7 @@ export default function BitcoinMiningGuide() {
             Bitcoin Mining Guide 2026
           </h1>
 
+          <LastUpdated pathKey="/learn/bitcoin-mining-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p

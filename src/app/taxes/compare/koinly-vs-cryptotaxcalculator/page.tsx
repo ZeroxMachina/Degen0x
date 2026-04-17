@@ -9,6 +9,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { TAX_COMPARISON_ITEMS, TAX_COMPARISON_FEATURES } from "@/data/taxes";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `Koinly vs CryptoTaxCalculator 2026 - Which Is Better for DeFi?`,
@@ -56,6 +57,7 @@ export default function KoinlyVsCryptoTaxCalculatorPage() {
       <AffiliateDisclosure />
 
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Koinly vs CryptoTaxCalculator: {CURRENT_YEAR} Comparison</h1>
+      <LastUpdated pathKey="/taxes/compare/koinly-vs-cryptotaxcalculator" />
       <p className="text-lg text-[var(--color-text-secondary)] mb-2">
         Both are top-tier crypto tax solutions but serve different strengths. Koinly leads in
         integrations and value, while CryptoTaxCalculator excels at DeFi and NFT tax tracking.

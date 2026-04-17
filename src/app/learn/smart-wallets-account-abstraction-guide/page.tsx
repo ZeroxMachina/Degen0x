@@ -8,6 +8,7 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const title = "Smart Wallets & Account Abstraction Guide";
@@ -149,6 +150,7 @@ export default function SmartWalletsPage() {
             Smart Wallets & Account Abstraction
           </h1>
 
+          <LastUpdated pathKey="/learn/smart-wallets-account-abstraction-guide" />
           <ReadingTime />
           <AutoTOC />
           {/* Subtitle */}

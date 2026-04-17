@@ -8,6 +8,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -187,6 +188,7 @@ const DeltaNeutralGuide = () => {
           Delta-Neutral Yield Strategies: Basis Trading & Funding Rate Arbitrage
         </h1>
 
+        <LastUpdated pathKey="/learn/delta-neutral-yield-strategies-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

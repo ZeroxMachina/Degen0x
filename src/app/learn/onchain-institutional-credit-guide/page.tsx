@@ -13,6 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -171,6 +172,7 @@ export default function OnchainInstitutionalCreditGuidePage() {
           }}>
             On-Chain Institutional Credit Markets 2026: The Complete Guide
           </h1>
+          <LastUpdated pathKey="/learn/onchain-institutional-credit-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: C.muted, fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>

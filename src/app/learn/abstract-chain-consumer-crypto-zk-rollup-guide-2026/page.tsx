@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -343,6 +344,7 @@ export default function AbstractChainGuide() {
       {/* Title */}
       <h1 style={h1Style}>Abstract Chain: Consumer-First ZK Rollup L2</h1>
 
+      <LastUpdated pathKey="/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p style={{ ...paragraphStyle, fontSize: '1.1rem', color: '#8b949e', marginBottom: '30px' }}>

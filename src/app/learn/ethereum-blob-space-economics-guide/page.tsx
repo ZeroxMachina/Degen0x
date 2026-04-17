@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -104,6 +105,7 @@ export default function EthereumBlobSpaceGuide() {
             Ethereum Blob Space & Data Availability Economics Guide
           </h1>
 
+          <LastUpdated pathKey="/learn/ethereum-blob-space-economics-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '15px' }}>

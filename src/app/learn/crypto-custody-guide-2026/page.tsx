@@ -9,6 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // Metadata configuration
@@ -124,6 +125,7 @@ export default function CryptoCustodyGuidePage() {
             <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
               Crypto Custody Guide 2026
             </h1>
+            <LastUpdated pathKey="/learn/crypto-custody-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p className="text-xl text-[#8b949e] mb-2">

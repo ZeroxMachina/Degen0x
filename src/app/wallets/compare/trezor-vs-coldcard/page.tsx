@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -59,6 +60,7 @@ export default function TrezorVsColdcardPage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Trezor vs Coldcard: Open-Source Wallet Showdown ({CURRENT_YEAR})</h1>
+        <LastUpdated pathKey="/wallets/compare/trezor-vs-coldcard" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           Both Trezor and Coldcard are fully open-source hardware wallets, but they serve different
           audiences. We compare their security models, features, and ideal use cases.

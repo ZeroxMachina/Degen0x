@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -339,6 +340,7 @@ export default function CrossChainInteroperabilityGuidePage() {
           }}>
             Cross-chain Interoperability Guide: LayerZero, Wormhole &amp; Beyond
           </h1>
+          <LastUpdated pathKey="/learn/cross-chain-interoperability-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>

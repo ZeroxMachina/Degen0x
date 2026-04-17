@@ -13,6 +13,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -160,6 +161,7 @@ export default function BittensorGuide() {
           }}>
             Bittensor (TAO) Guide 2026: How AI Subnets Work and Why Crypto Is Betting Big
           </h1>
+          <LastUpdated pathKey="/learn/bittensor-tao-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>

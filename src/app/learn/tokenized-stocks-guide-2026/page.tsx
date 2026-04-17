@@ -14,6 +14,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -146,6 +147,7 @@ export default function TokenizedStocksGuidePage() {
         >
           Tokenized Stocks 2026: The Complete Guide to On-Chain Equities
         </h1>
+        <LastUpdated pathKey="/learn/tokenized-stocks-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -63,6 +64,7 @@ export default function TokenizedTreasuriesGuidePage() {
         <h1 className="text-4xl font-bold mb-4">
           Tokenized Treasuries & RWA Yield Guide 2026
         </h1>
+        <LastUpdated pathKey="/learn/tokenized-treasuries-rwa-yield-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

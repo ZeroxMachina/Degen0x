@@ -8,6 +8,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from "@/lib/constants";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'DYOR Crypto: How to Research Any Token Before Buying (2026)',
@@ -158,6 +159,7 @@ export default function DYORTokenResearchGuidePage() {
             DYOR: How to Research Any Crypto Token Before Buying in 2026
           </h1>
 
+          <LastUpdated pathKey="/learn/dyor-token-research-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           {/* Meta Info */}

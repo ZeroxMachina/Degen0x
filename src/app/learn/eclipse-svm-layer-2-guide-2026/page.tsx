@@ -14,6 +14,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -168,6 +169,7 @@ export default function EclipseSVMGuide() {
           }}>
             Eclipse (ES) Guide 2026: The First SVM Layer 2 on Ethereum
           </h1>
+          <LastUpdated pathKey="/learn/eclipse-svm-layer-2-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>

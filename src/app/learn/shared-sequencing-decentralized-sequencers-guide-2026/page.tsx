@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -181,6 +182,7 @@ export default function SharedSequencingGuide() {
           <h1 style={s.h1}>
             Shared Sequencing &amp; Decentralized Sequencers Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/shared-sequencing-decentralized-sequencers-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={s.sub}>

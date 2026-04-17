@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -91,6 +92,7 @@ export default function KrakenVsGeminiPage() {
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
             Kraken vs Gemini: Complete Comparison
           </h1>
+          <LastUpdated pathKey="/exchanges/compare/kraken-vs-gemini" />
           <p className="text-lg text-[var(--color-text-secondary)] mb-2">
             Two security-focused US crypto exchanges compared
           </p>

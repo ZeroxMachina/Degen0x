@@ -4,6 +4,7 @@ import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata = {
@@ -191,6 +192,7 @@ export default function PostQuantumCryptographyGuide() {
     >
               Post-Quantum Cryptography Guide 2026
             </h1>
+            <LastUpdated pathKey="/learn/post-quantum-cryptography-quantum-resistant-crypto-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p style={{ fontSize: '1.2rem', color: colors.secondary, marginBottom: '1rem' }}>

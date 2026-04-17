@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -330,6 +331,7 @@ export default function BTCFiGuide() {
 
         {/* Header */}
         <h1 style={h1Style}>BTCFi Guide 2026</h1>
+        <LastUpdated pathKey="/learn/btcfi-bitcoin-defi-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.2rem', color: '#8b949e', marginBottom: '30px' }}>

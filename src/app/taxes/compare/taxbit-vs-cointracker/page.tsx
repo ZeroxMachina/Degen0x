@@ -9,6 +9,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { TAX_COMPARISON_ITEMS, TAX_COMPARISON_FEATURES } from "@/data/taxes";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `TaxBit vs CoinTracker 2026 - Crypto Tax Software Comparison`,
@@ -56,6 +57,7 @@ export default function TaxBitVsCoinTrackerPage() {
       <AffiliateDisclosure />
 
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">TaxBit vs CoinTracker: Comparison for {CURRENT_YEAR}</h1>
+      <LastUpdated pathKey="/taxes/compare/taxbit-vs-cointracker" />
       <p className="text-lg text-[var(--color-text-secondary)] mb-2">
         TaxBit offers free tax reports through exchange partnerships, while CoinTracker provides
         superior portfolio tracking and TurboTax integration. Here is how they compare.

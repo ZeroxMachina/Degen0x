@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -342,6 +343,7 @@ export default function AVSRestakingEconomyPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Actively Validated Services (AVS) & Restaking Economy Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/avs-actively-validated-services-restaking-economy-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>Updated: April 2, 2026 | Reading Time: 14 min</div>

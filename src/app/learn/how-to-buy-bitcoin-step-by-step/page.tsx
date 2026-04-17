@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -245,6 +246,7 @@ export default function HowToBuyBitcoin() {
 
           <h1 style={h1Style}>How to Buy Bitcoin Step by Step</h1>
 
+          <LastUpdated pathKey="/learn/how-to-buy-bitcoin-step-by-step" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

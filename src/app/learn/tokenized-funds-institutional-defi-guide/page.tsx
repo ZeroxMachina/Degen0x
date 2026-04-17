@@ -6,6 +6,7 @@ import StructuredData from "@/components/StructuredData";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -82,6 +83,7 @@ export default function TokenizedFundsGuidePage() {
           <h1 style={{ fontSize: "2.4rem", fontWeight: 900, lineHeight: 1.2, marginBottom: 20 }}>
             Tokenized Funds Guide 2026: How TradFi Giants Are Bringing $15B+ in Assets On-Chain
           </h1>
+          <LastUpdated pathKey="/learn/tokenized-funds-institutional-defi-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75 }}>

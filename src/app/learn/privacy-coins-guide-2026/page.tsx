@@ -9,6 +9,7 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -124,6 +125,7 @@ export default function PrivacyCoinsGuide2026() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#a78bfa] to-[#c4b5fd] bg-clip-text text-transparent">
         Privacy Coins Guide 2026
       </h1>
+      <LastUpdated pathKey="/learn/privacy-coins-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">

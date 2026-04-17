@@ -13,6 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -166,6 +167,7 @@ export default function KiteAIGuide() {
           }}>
             Kite AI (KITE) Guide 2026: The First Blockchain Built for AI Agent Payments
           </h1>
+          <LastUpdated pathKey="/learn/kite-ai-payment-blockchain-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>

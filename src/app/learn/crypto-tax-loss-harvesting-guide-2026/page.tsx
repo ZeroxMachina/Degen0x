@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -98,6 +99,7 @@ export default function CryptoTaxLossHarvestingGuide() {
           >
             Crypto Tax-Loss Harvesting Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/crypto-tax-loss-harvesting-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-xl text-[#c9d1d9] mb-6">

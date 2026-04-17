@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -257,6 +258,7 @@ export default function CryptoDCAStrategyGuide2026() {
           <h1 style={S.h1}>
             Crypto DCA Strategy Guide 2026: Dollar-Cost Average Bitcoin & Altcoins
           </h1>
+          <LastUpdated pathKey="/learn/crypto-dca-strategy-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={S.subtitle}>

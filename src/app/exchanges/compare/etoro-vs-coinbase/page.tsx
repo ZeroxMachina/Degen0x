@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function EtoroVsCoinbasePage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "eToro vs Coinbase", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">eToro vs Coinbase: Which Crypto Platform Is Better in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/etoro-vs-coinbase" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">eToro and Coinbase are both popular platforms for buying cryptocurrency, but they cater to different audiences. eToro is a social trading platform with copy trading features and multi-asset support. Coinbase is a dedicated crypto exchange with deeper crypto features and broader coin selection. This comparison helps you decide which is the better fit.</p>
 

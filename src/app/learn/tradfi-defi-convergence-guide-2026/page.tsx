@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -247,6 +248,7 @@ export default function TradFiDeFiConvergenceGuide2026() {
           <h1 style={S.h1}>
             TradFi-DeFi Convergence 2026: How Institutions Are Going On-Chain
           </h1>
+          <LastUpdated pathKey="/learn/tradfi-defi-convergence-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={S.subtitle}>

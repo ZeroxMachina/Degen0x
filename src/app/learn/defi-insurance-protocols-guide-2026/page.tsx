@@ -7,6 +7,7 @@ import StructuredData from "@/components/StructuredData";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -133,6 +134,7 @@ export default function DeFiInsuranceGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: `linear-gradient(135deg, ${S.primary}, ${S.teal})`, WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             DeFi Insurance Protocols Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/defi-insurance-protocols-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: S.text2, fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>

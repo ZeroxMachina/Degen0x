@@ -7,6 +7,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -368,6 +369,7 @@ export default function SolanaETFGuide() {
               Solana ETF Spot Funds & Staking Guide 2026
             </h1>
 
+            <LastUpdated pathKey="/learn/solana-etf-spot-funds-staking-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p className="text-lg text-[#8b949e] max-w-3xl">

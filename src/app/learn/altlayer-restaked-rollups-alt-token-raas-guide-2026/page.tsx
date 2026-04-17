@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -119,6 +120,7 @@ export default function AltLayerGuide() {
             <h1 className="text-4xl font-bold mt-2 mb-4 bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent">
               AltLayer Restaked Rollups Guide 2026
             </h1>
+            <LastUpdated pathKey="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p className="text-[#8b949e] text-lg">

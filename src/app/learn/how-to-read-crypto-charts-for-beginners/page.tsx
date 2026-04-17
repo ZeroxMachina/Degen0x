@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -177,6 +178,7 @@ export default function HowToReadCryptoChartsPage() {
             How to Read Crypto Charts for Beginners
           </h1>
 
+          <LastUpdated pathKey="/learn/how-to-read-crypto-charts-for-beginners" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: "18px", color: "#8b949e", lineHeight: "1.6", marginBottom: "20px" }}>

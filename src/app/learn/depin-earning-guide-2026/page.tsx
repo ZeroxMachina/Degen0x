@@ -7,6 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -120,6 +121,7 @@ export default function DepinEarningGuide2026() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#22c55e] to-[#06b6d4] bg-clip-text text-transparent">
         How to Earn Crypto with DePIN Nodes
       </h1>
+      <LastUpdated pathKey="/learn/depin-earning-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">

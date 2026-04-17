@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -115,6 +116,7 @@ export default function HyperliquidTradingGuidePage() {
         <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#79c0ff] bg-clip-text text-transparent">
           Hyperliquid Trading Guide: Master the #1 Perpetual DEX in 2026
         </h1>
+        <LastUpdated pathKey="/learn/hyperliquid-trading-guide" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-xl text-[#8b949e] mb-8">

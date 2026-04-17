@@ -6,6 +6,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Tokenized Treasury Bills Guide 2026 — T-Bills On-Chain",
@@ -169,6 +170,7 @@ export default function TokenizedTreasuryBillsGuide() {
           Tokenized Treasury Bills 2026: How to Earn T-Bill Yield On-Chain
         </h1>
 
+        <LastUpdated pathKey="/learn/tokenized-treasury-bills-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         {/* Hook Paragraph */}

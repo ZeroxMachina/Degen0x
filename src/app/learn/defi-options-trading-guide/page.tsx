@@ -7,6 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -238,6 +239,7 @@ export default function DeFiOptionsTradingGuidePage() {
           }}>
             DeFi Options Trading Guide: How to Trade Crypto Options On-Chain in 2026
           </h1>
+          <LastUpdated pathKey="/learn/defi-options-trading-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>

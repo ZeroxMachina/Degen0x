@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -185,6 +186,7 @@ export default function OmnichainDeFiGuide() {
           <h1 style={s.h1}>
             Omnichain DeFi Guide 2026: Unified Liquidity Across Every Chain
           </h1>
+          <LastUpdated pathKey="/learn/omnichain-defi-unified-liquidity-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={s.sub}>

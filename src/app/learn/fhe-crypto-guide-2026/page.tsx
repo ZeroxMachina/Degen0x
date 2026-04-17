@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -126,6 +127,7 @@ export default function FHECryptoGuide2026() {
           <span className="text-xs px-3 py-1 rounded-full font-bold" style={{ background: "#6366f120", color: "#6366f1" }}>16 min read</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "var(--color-text)", lineHeight: "1.2" }}>Fully Homomorphic Encryption (FHE) in Crypto: The Complete Guide for 2026</h1>
+        <LastUpdated pathKey="/learn/fhe-crypto-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>Discover how Fully Homomorphic Encryption is revolutionizing blockchain privacy by enabling computation on encrypted data. Learn why FHE is the missing piece for confidential DeFi, how it differs from zero-knowledge proofs, and which projects are leading the charge toward a privacy-first blockchain ecosystem in 2026.</p>

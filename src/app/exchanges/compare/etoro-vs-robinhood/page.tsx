@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function EtoroVsRobinhoodPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "eToro vs Robinhood", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">eToro vs Robinhood: Which Multi-Asset Platform Is Better in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/etoro-vs-robinhood" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">eToro and Robinhood both offer crypto trading alongside stocks, making them popular choices for investors who want a unified platform. eToro is the social trading pioneer with copy trading features, while Robinhood is the zero-commission trailblazer with a sleek US-focused interface. This comparison helps you decide between them.</p>
 

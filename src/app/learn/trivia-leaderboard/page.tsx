@@ -5,6 +5,7 @@ import TriviaLeaderboard from "@/components/TriviaLeaderboard";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Crypto Trivia Leaderboard | Compete Globally — degen0x",
@@ -59,6 +60,7 @@ export default function TriviaLeaderboardPage() {
         <h1 className="text-3xl md:text-4xl font-black text-[var(--color-text)] mb-3">
           Crypto Trivia <span className="gradient-text">Leaderboard</span>
         </h1>
+        <LastUpdated pathKey="/learn/trivia-leaderboard" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-[var(--color-text-secondary)] text-lg">

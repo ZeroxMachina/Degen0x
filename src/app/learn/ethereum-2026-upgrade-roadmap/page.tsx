@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -192,6 +193,7 @@ export default function EthereumUpgradeRoadmapPage() {
           }}>
             Ethereum&apos;s 2026 Upgrade Roadmap: Fusaka, Glamsterdam &amp; What&apos;s Next
           </h1>
+          <LastUpdated pathKey="/learn/ethereum-2026-upgrade-roadmap" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>

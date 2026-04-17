@@ -11,6 +11,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -91,6 +92,7 @@ export default function CoinbaseVsBinancePage() {
           <h1 className="text-4xl md:text-5xl font-bold gradient-text mb-4">
             Coinbase vs Binance: Complete Comparison
           </h1>
+          <LastUpdated pathKey="/exchanges/compare/coinbase-vs-binance" />
           <p className="text-lg text-[var(--color-text-secondary)] mb-2">
             The two largest crypto exchanges compared head-to-head
           </p>

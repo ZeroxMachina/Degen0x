@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -59,6 +60,7 @@ export default function PhantomVsSolflarePage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Phantom vs Solflare: Best Solana Wallet in {CURRENT_YEAR}?</h1>
+        <LastUpdated pathKey="/wallets/compare/phantom-vs-solflare" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           Phantom and Solflare are the two leading Solana wallets. We compare features, staking,
           NFT support, and which one is right for your Solana activities.

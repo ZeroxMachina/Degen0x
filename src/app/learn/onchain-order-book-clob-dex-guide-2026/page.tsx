@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -150,6 +151,7 @@ export default function OnchainCLOBDexGuidePage() {
           Onchain Order Book DEXes: The CLOB Revolution Changing How Crypto Trades
         </h1>
 
+        <LastUpdated pathKey="/learn/onchain-order-book-clob-dex-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

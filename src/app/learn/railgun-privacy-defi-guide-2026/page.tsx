@@ -7,6 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -145,6 +146,7 @@ export default function RailgunPrivacyGuidePage() {
         Railgun & Privacy DeFi: Private Transactions Without Leaving DeFi
       </h1>
 
+      <LastUpdated pathKey="/learn/railgun-privacy-defi-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       {/* Subtitle / hook */}

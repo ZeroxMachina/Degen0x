@@ -9,6 +9,7 @@ import Link from "next/link";
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `MetaMask vs Coinbase Wallet (2026) - Which Is Better? | degen0x`,
@@ -54,6 +55,7 @@ export default function MetaMaskVsCoinbaseWalletPage() {
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">MetaMask vs Coinbase Wallet ({CURRENT_YEAR})</h1>
+        <LastUpdated pathKey="/wallets/compare/metamask-vs-coinbase-wallet" />
         <p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       </header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">MetaMask and Coinbase Wallet are two of the most popular Ethereum wallets with different philosophies. MetaMask targets experienced DeFi users with maximum dApp compatibility, while Coinbase Wallet focuses on accessibility with cloud backup and exchange integration. This comparison helps you decide which fits your workflow.</p>

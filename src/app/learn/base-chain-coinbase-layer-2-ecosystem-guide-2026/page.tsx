@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -146,6 +147,7 @@ export default function BaseChainEcosystemGuide2026() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Base Chain Ecosystem Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/base-chain-coinbase-layer-2-ecosystem-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-lg text-zinc-400 leading-relaxed">

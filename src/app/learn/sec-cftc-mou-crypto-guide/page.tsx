@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -166,6 +167,7 @@ export default function SecCftcMouCryptoGuidePage() {
             SEC-CFTC MOU Explained: What Crypto&apos;s Biggest Regulatory Shift Means for You
           </h1>
 
+          <LastUpdated pathKey="/learn/sec-cftc-mou-crypto-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

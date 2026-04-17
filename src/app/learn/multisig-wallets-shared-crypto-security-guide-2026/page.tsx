@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -242,6 +243,7 @@ export default function MultisigWalletGuide() {
             <span style={badgeStyle}>Wallet Security</span>
           </div>
           <h1 style={h1Style}>Multisig Wallets &amp; Shared Crypto Security</h1>
+          <LastUpdated pathKey="/learn/multisig-wallets-shared-crypto-security-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '1.1rem', color: '#8b949e', marginTop: '16px' }}>

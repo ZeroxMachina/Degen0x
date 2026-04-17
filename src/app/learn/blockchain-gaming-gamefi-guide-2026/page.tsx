@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -322,6 +323,7 @@ export default function BlockchainGamingGameFiPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>Blockchain Gaming & GameFi Guide 2026</h1>
+        <LastUpdated pathKey="/learn/blockchain-gaming-gamefi-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>

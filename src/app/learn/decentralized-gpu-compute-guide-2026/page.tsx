@@ -6,6 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -285,6 +286,7 @@ export default function DecentralizedGPUComputeGuidePage() {
           }}>
             Decentralized GPU &amp; Compute Networks Guide: 2026 Market Overview
           </h1>
+          <LastUpdated pathKey="/learn/decentralized-gpu-compute-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>

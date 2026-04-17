@@ -7,6 +7,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum | degen0x",
@@ -262,6 +263,7 @@ export default function EclipseGuide() {
         </div>
 
         <h1 style={h1Style}>Eclipse: Solana VM Layer 2 on Ethereum</h1>
+        <LastUpdated pathKey="/learn/eclipse-svm-ethereum-layer-2-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ color: '#8b949e', fontSize: '1.1em', marginBottom: '30px' }}>

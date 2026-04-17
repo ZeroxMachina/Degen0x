@@ -9,6 +9,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default function OpenSeaVsRariblePage() {
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "OpenSea vs Rarible", href: "#" } ]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">OpenSea vs Rarible: Which NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/nfts/compare/opensea-vs-rarible" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         OpenSea and Rarible are both established multi-chain NFT marketplaces that cater to creators

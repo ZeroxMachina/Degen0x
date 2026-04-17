@@ -6,6 +6,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -153,6 +154,7 @@ export default function UnichainGuidePage() {
     >
             Unichain Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/unichain-uniswap-layer-2-ecosystem-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: 16, lineHeight: 1.7 }}>

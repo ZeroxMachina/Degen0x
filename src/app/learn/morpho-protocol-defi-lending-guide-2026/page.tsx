@@ -9,6 +9,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -131,6 +132,7 @@ export default function MorphoProtocolGuidePage() {
             Morpho Protocol: The #2 DeFi Lending Protocol
           </h1>
 
+          <LastUpdated pathKey="/learn/morpho-protocol-defi-lending-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-xl mb-4" style={{ color: '#8b949e' }}>

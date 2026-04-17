@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -249,6 +250,7 @@ export default function RestakingAVSEcosystemGuidePage() {
           }}>
             Restaking &amp; AVS Ecosystem Guide: Shared Security in 2026
           </h1>
+          <LastUpdated pathKey="/learn/restaking-avs-ecosystem-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>

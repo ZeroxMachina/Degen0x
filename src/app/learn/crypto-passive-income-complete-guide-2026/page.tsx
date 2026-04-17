@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Crypto Passive Income Complete Guide 2026 | degen0x',
@@ -424,6 +425,7 @@ export default function CryptoPassiveIncomeGuide() {
     >
             Crypto Passive Income Complete Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/crypto-passive-income-complete-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: 16, margin: 0 }}>

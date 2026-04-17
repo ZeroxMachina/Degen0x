@@ -13,6 +13,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -151,6 +152,7 @@ export default function EthereumL2ComparisonGuidePage() {
           Ethereum Layer 2 Comparison 2026: Which Rollup Is Right for You?
         </h1>
 
+        <LastUpdated pathKey="/learn/ethereum-layer-2-comparison-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

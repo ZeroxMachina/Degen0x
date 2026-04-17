@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -64,6 +65,7 @@ export default function ExodusVsTrustWalletPage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Exodus vs Trust Wallet: Which Multi-Chain Wallet Wins in {CURRENT_YEAR}?</h1>
+        <LastUpdated pathKey="/wallets/compare/exodus-vs-trust-wallet" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           Exodus and Trust Wallet are two of the most popular multi-chain software wallets. We compare their
           design, chain support, features, and mobile experience side by side.

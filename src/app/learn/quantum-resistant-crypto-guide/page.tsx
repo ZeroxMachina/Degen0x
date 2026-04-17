@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -116,6 +117,7 @@ export default function QuantumResistantCryptoGuide() {
           Quantum-Resistant Crypto: Protecting Your Holdings in 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/quantum-resistant-crypto-guide" />
         <ReadingTime />
         <AutoTOC />
         {/* Subtitle */}

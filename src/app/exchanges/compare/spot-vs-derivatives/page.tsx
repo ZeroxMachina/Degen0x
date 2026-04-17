@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function SpotVsDerivativesPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Spot vs Derivatives", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Spot vs Derivatives Trading: Which Is Right for You in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/spot-vs-derivatives" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Understanding the difference between spot and derivatives trading is essential for every crypto trader. Spot trading involves buying and owning actual cryptocurrency, while derivatives let you speculate on price movements with leverage. Each approach has distinct risk profiles, costs, and strategic applications.</p>
 

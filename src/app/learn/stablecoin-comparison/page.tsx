@@ -6,6 +6,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 interface Stablecoin {
   name: string;
@@ -169,6 +170,7 @@ export default function StablecoinComparison() {
         {/* Header */}
         <div className="mb-12">
           <h1 className="text-4xl font-bold mb-4">Stablecoin Comparison Guide 2026</h1>
+          <LastUpdated pathKey="/learn/stablecoin-comparison" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-lg text-gray-400 mb-6">

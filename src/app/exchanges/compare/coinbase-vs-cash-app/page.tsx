@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function CoinbaseVsCashAppPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Coinbase vs Cash App", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Coinbase vs Cash App: Which Is Better for Bitcoin in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/coinbase-vs-cash-app" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Coinbase is a full-featured crypto exchange supporting 250+ coins, while Cash App is a payment app that lets you buy Bitcoin and only Bitcoin. If you are choosing between them, the decision depends on whether you want a comprehensive crypto platform or the simplest possible way to accumulate Bitcoin.</p>
 

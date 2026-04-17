@@ -8,6 +8,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -157,6 +158,7 @@ export default function ChainlinkCCIPPage() {
 
         <h1 style={h1Style}>Chainlink CCIP: Cross-Chain Interoperability & LINK Token Guide</h1>
 
+        <LastUpdated pathKey="/learn/chainlink-ccip-cross-chain-interoperability-link-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.05rem', color: '#d1d9e0', marginTop: '20px', marginBottom: '20px' }}>

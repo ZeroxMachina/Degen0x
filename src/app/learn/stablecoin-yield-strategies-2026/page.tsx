@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -159,6 +160,7 @@ export default function StablecoinYieldStrategiesPage() {
           }}>
             Stablecoin Yield Strategies 2026: Earn 4–20% APY Without the Volatility
           </h1>
+          <LastUpdated pathKey="/learn/stablecoin-yield-strategies-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7, marginBottom: 10 }}>

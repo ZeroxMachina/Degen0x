@@ -6,6 +6,7 @@ import { useState } from "react";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -54,6 +55,7 @@ export default function YieldBearingStablecoinsPage() {
             Yield-Bearing Stablecoins: Earn Passive Returns on Stablecoins in 2026
           </h1>
 
+          <LastUpdated pathKey="/learn/yield-bearing-stablecoins" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

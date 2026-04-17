@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -332,6 +333,7 @@ export default function X402ProtocolPage() {
             <span style={pageStyles.badgeReading}>16 min read</span>
           </div>
           <h1 style={pageStyles.title}>x402 Protocol: HTTP Payment Standard for AI Agent Payments</h1>
+          <LastUpdated pathKey="/learn/x402-protocol-ai-agent-payments-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={pageStyles.subtitle}>

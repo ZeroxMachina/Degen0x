@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -102,6 +103,7 @@ export default function AdvancedStakingStrategiesGuide() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight" style={{ color: "var(--color-text)" }}>
             Advanced Staking Strategies Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/advanced-staking-strategies-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-lg mb-6" style={{ color: "var(--color-text-secondary)" }}>

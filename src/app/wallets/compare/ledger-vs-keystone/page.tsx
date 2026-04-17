@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -59,6 +60,7 @@ export default function LedgerVsKeystonePage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Ledger vs Keystone: Connected vs Air-Gapped ({CURRENT_YEAR})</h1>
+        <LastUpdated pathKey="/wallets/compare/ledger-vs-keystone" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           Ledger connects via USB and Bluetooth. Keystone communicates exclusively through QR
           codes. We compare these two approaches to hardware wallet security.

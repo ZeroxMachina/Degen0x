@@ -8,6 +8,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -190,6 +191,7 @@ const VeTokenomicsGuide = () => {
           veTokenomics & Curve Wars: DeFi Governance in 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/vetokenomics-curve-wars-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

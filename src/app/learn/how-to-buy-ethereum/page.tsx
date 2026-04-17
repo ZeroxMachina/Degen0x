@@ -4,6 +4,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -83,6 +84,7 @@ export default function HowToBuyEthereumPage() {
             How to Buy Ethereum (ETH) in 2026: Complete Beginner&apos;s Guide
           </h1>
 
+          <LastUpdated pathKey="/learn/how-to-buy-ethereum" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

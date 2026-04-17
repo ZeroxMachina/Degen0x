@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -156,6 +157,7 @@ export default function CryptoIndexFundsGuide2026() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Crypto Index Funds Explained</h1>
+          <LastUpdated pathKey="/learn/what-is-a-crypto-index-fund" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>Master crypto index funds in 2026: market-cap weighted, equal-weight, DeFi-native indexes. Compare Bitwise 10 IBIT ($6.8B AUM, 0.2% fee), Grayscale Digital Large Cap ($8.2B, 1.5%), Index Coop DPI ($2.1B, 0.75%), MVI, Alongside, and Set Protocol with real rebalancing data.</p>

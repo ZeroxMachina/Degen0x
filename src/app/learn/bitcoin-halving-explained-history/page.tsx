@@ -4,6 +4,7 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -353,6 +354,7 @@ export default function BitcoinHalvingPage() {
 
           <h1 style={pageStyles.title}>Bitcoin Halving Explained: History, Dates &amp; Price Impact</h1>
 
+          <LastUpdated pathKey="/learn/bitcoin-halving-explained-history" />
           <ReadingTime />
           <AutoTOC />
           <p style={pageStyles.subtitle}>

@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -419,6 +420,7 @@ export default function InitiaGuidePage() {
 
           <h1 style={h1Style}>Initia: Interwoven Rollups &amp; Modular Orchestration</h1>
 
+          <LastUpdated pathKey="/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <div style={metaStyle}>

@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -152,6 +153,7 @@ export default function VerkleTreesHegotaGuide() {
               Ethereum Verkle Trees & The Hegota Upgrade
             </h1>
 
+            <LastUpdated pathKey="/learn/ethereum-verkle-trees-hegota-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p

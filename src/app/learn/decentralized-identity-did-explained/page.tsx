@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -225,6 +226,7 @@ export default function DecentralizedIdentityDID() {
 
           <h1 style={h1Style}>Decentralized Identity (DID) 2026</h1>
 
+          <LastUpdated pathKey="/learn/decentralized-identity-did-explained" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -58,6 +59,7 @@ export default function DailyTriviaPage() {
         <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">
           Daily Crypto Trivia
         </h1>
+        <LastUpdated pathKey="/learn/daily-trivia" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-[var(--color-text-secondary)] max-w-xl mx-auto text-lg">

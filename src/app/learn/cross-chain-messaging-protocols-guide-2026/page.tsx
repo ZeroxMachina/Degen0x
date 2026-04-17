@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const S = {
@@ -174,6 +175,7 @@ export default function CrossChainMessagingProtocolsPage() {
             lineHeight: "1.2",
           }}>Cross-Chain Messaging Protocols Guide 2026</h1>
 
+          <LastUpdated pathKey="/learn/cross-chain-messaging-protocols-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{

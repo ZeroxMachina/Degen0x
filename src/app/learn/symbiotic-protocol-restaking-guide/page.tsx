@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -196,6 +197,7 @@ export default function SymbioticProtocolRestakingGuidePage() {
           >
             Symbiotic Protocol Guide 2026: Permissionless Restaking for Any Asset
           </h1>
+          <LastUpdated pathKey="/learn/symbiotic-protocol-restaking-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>

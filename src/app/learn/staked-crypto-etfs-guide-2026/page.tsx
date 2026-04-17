@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -166,6 +167,7 @@ export default function StakedCryptoETFsGuidePage() {
             Staked Crypto ETFs: How to Earn Staking Yield Through Your Brokerage
           </h1>
 
+          <LastUpdated pathKey="/learn/staked-crypto-etfs-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

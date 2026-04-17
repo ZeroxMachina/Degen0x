@@ -9,6 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -154,6 +155,7 @@ export default function CryptoOptionsStrategiesGuide() {
             Crypto Options Strategies 2026: Covered Calls, Straddles, Spreads & More
           </h1>
 
+          <LastUpdated pathKey="/learn/crypto-options-strategies-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

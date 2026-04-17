@@ -8,6 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `TurboTax vs Koinly 2026: Built-In Crypto vs Dedicated Tax Software`,
@@ -53,6 +54,7 @@ export default function TurboTaxVsKoinlyPage() {
         section="taxes"
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/turbotax-vs-koinly" }, { label: "TurboTax vs Koinly", href: "/taxes/compare/turbotax-vs-koinly" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">TurboTax vs Koinly: Built-In vs Dedicated Crypto Tax ({CURRENT_YEAR})</h1>
+      <LastUpdated pathKey="/taxes/compare/turbotax-vs-koinly" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">

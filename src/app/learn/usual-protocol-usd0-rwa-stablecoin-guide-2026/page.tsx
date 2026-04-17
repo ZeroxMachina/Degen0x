@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from "next/link";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Usual Protocol USD0 RWA Stablecoin Guide 2026",
@@ -100,6 +101,7 @@ export default function UsualProtocolGuide() {
           Usual Protocol USD0: RWA Stablecoin Guide
         </h1>
 
+        <LastUpdated pathKey="/learn/usual-protocol-usd0-rwa-stablecoin-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ color: "#8b949e", fontSize: "1.1rem", marginBottom: "30px" }}>

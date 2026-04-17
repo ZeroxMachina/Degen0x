@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -163,6 +164,7 @@ export default function CryptoTaxGuide2026() {
           Crypto Tax Guide 2026: IRS Rules, 1099-DA, DeFi & Staking
         </h1>
 
+        <LastUpdated pathKey="/learn/crypto-tax-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

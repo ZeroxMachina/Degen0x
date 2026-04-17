@@ -13,6 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -147,6 +148,7 @@ export default function OndoFinanceGuidePage() {
           Ondo Finance Guide 2026: Tokenized Treasuries &amp; Real-World Assets
         </h1>
 
+        <LastUpdated pathKey="/learn/ondo-finance-rwa-guide" />
         <ReadingTime />
         <AutoTOC />
         <p

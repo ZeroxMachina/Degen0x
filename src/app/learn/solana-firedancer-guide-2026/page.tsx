@@ -7,6 +7,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -328,6 +329,7 @@ export default function SolanaFiredancerGuidePage() {
           }}>
             Solana Firedancer Validator Client Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/solana-firedancer-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>

@@ -11,6 +11,7 @@ import {
 import StructuredData from "@/components/StructuredData";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -147,6 +148,7 @@ export default function SolverNetworksGuide() {
             >
               Solver Networks & Order Flow Auctions Guide 2026
             </h1>
+            <LastUpdated pathKey="/learn/solver-networks-order-flow-auctions-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p

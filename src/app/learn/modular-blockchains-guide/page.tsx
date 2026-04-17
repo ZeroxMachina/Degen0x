@@ -3,6 +3,7 @@
 import Breadcrumb from '@/components/Breadcrumb'
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export default function ModularBlockchainsPage() {
   return (
@@ -15,6 +16,7 @@ export default function ModularBlockchainsPage() {
       <h1 className="text-4xl font-bold text-[var(--color-text)] mt-8 mb-2">
         Modular Blockchains Explained: Celestia, EigenDA & the Future of Scaling
       </h1>
+      <LastUpdated pathKey="/learn/modular-blockchains-guide" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-gray-400 mb-8">Last updated: March 2026</p>

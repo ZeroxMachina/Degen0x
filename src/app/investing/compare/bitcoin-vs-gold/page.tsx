@@ -8,6 +8,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `Bitcoin vs Gold (2026) - Investment Comparison | degen0x`,
@@ -53,6 +54,7 @@ export default function Page() {
       <AffiliateDisclosure />
       <header className="mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-3">Bitcoin vs Gold ({CURRENT_YEAR})</h1>
+        <LastUpdated pathKey="/investing/compare/bitcoin-vs-gold" />
         <p className="text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       </header>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8">Bitcoin is often called digital gold due to its scarcity and store-of-value properties. But how does it actually compare to physical gold as an investment? This analysis examines both assets across returns, risk, portability, and portfolio role to help you decide how to allocate between them.</p>

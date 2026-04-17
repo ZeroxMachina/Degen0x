@@ -11,6 +11,7 @@ import {
 import StructuredData from "@/components/StructuredData";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -161,6 +162,7 @@ export default function AptosBlockchainGuidePage() {
             >
               Aptos Blockchain Guide 2026
             </h1>
+            <LastUpdated pathKey="/learn/aptos-blockchain-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p style={{ fontSize: "1.1rem", color: S.text2, marginBottom: 0 }}>

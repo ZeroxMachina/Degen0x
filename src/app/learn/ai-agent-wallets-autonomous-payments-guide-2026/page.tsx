@@ -11,6 +11,7 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -152,6 +153,7 @@ export default function Page() {
               AI Agent Wallets & Autonomous Crypto Payments
             </h1>
 
+            <LastUpdated pathKey="/learn/ai-agent-wallets-autonomous-payments-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p className="text-xl text-[#8b949e] mb-2">

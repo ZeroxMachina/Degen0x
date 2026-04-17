@@ -8,6 +8,7 @@ import { generateArticleSchema } from "@/lib/structured-data";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const S = {
@@ -168,6 +169,7 @@ export default function Page() {
                     Polkadot's 2026 Staking Revolution
                 </h1>
 
+                <LastUpdated pathKey="/learn/polkadot-staking-halving-guide-2026" />
                 <ReadingTime />
                 <AutoTOC />
                 {/* Opening Hook */}

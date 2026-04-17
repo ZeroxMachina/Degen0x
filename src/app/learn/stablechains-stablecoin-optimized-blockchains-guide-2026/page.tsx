@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
@@ -309,6 +310,7 @@ export default function StablechainsPage() {
       />
       {/* Header */}
       <h1 style={pageStyles.title}>Stablechains: Stablecoin-Optimized Blockchains</h1>
+      <LastUpdated pathKey="/learn/stablechains-stablecoin-optimized-blockchains-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p style={pageStyles.subtitle}>

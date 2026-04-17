@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const FAQ_ITEMS = [
   {
@@ -167,6 +168,7 @@ export default function SolanaTokenExtensionsGuide() {
           Solana Token Extensions Guide 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/solana-token-extensions-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

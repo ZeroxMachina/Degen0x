@@ -7,6 +7,7 @@ import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const S = {
@@ -168,6 +169,7 @@ export default function OnchaincreditScoringGuide() {
               Onchain Credit Scoring Guide 2026
             </h1>
 
+            <LastUpdated pathKey="/learn/onchain-credit-scoring-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -186,6 +187,7 @@ export default function BearMarketGuide() {
               Crypto Bear Market Survival & Recovery Strategies Guide 2026
             </h1>
 
+            <LastUpdated pathKey="/learn/crypto-bear-market-recovery-survival-strategies-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p style={{ fontSize: '1.125rem', color: '#8b949e', marginBottom: '1.5rem' }}>

@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 const S = { bg:"#0d1117",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f0883e",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"Crypto ETFs Guide",href:"/learn/crypto-etfs-guide"}];
 const ETF_TABLE = [
@@ -27,6 +28,7 @@ export default function CryptoETFsGuidePage() {
             <span style={{fontSize:12,color:S.text2}}>Updated March 14, 2026 · 14 min read · +120 XP</span>
           </div>
           <h1 style={{fontSize:"2.4rem",fontWeight:900,lineHeight:1.2,marginBottom:20}}>Crypto ETFs Guide 2026: Bitcoin ETFs, Ethereum ETFs & Institutional Access Explained</h1>
+          <LastUpdated pathKey="/learn/crypto-etfs-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{fontSize:17,color:S.text2,lineHeight:1.75}}>The January 2024 approval of spot Bitcoin ETFs in the US was a watershed moment for crypto — opening BTC exposure to trillions of dollars of institutional and retail capital via traditional brokerage accounts. This guide explains how spot crypto ETFs work, the key products, fee structures, and whether to use an ETF or hold crypto directly.</p>

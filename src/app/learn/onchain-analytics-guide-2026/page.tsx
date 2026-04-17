@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -100,6 +101,7 @@ export default function OnChainAnalyticsGuide() {
           >
             On-Chain Analytics Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/onchain-analytics-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-xl text-[#c9d1d9] mb-6">

@@ -12,6 +12,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -257,6 +258,7 @@ export default function SmartMoneyOnchainSignalsGuide2026() {
             <span style={S.badge("#a855f720", "#a855f7", "#a855f740")}>Advanced</span>
           </div>
           <h1 style={S.h1}>Smart Money On-Chain Signals Guide 2026: Track Whale &amp; Institutional Flows</h1>
+          <LastUpdated pathKey="/learn/smart-money-onchain-signals-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={S.subtitle}>

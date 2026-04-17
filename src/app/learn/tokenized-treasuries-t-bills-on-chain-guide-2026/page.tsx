@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -252,6 +253,7 @@ export default function TokenizedTreasuriesGuide() {
 
           <h1 style={h1Style}>Tokenized Treasuries &amp; T-Bills On-Chain Guide 2026</h1>
 
+          <LastUpdated pathKey="/learn/tokenized-treasuries-t-bills-on-chain-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

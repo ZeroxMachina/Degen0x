@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -246,6 +247,7 @@ export default function CryptoPointsPage() {
 
       <h1 style={h1Style}>Crypto Points Programs &amp; Pre-Token Loyalty Systems Guide 2026</h1>
 
+      <LastUpdated pathKey="/learn/crypto-points-programs-pre-token-loyalty-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p style={paragraphStyle}>

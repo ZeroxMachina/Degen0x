@@ -10,6 +10,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -173,6 +174,7 @@ export default function ERC7683GuidePage() {
             ERC-7683 Guide 2026: The Cross-Chain Intents Standard Explained
           </h1>
 
+          <LastUpdated pathKey="/learn/erc-7683-cross-chain-intents-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.6' }}>

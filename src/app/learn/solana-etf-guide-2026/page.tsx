@@ -9,6 +9,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const S = {
@@ -95,6 +96,7 @@ export default function SolanaETFGuide() {
             <span style={{ backgroundColor: "#d29922", color: "#000", padding: "0.4rem 0.8rem", borderRadius: "4px", fontSize: "0.85rem", fontWeight: "600" }}>Beginner</span>
           </div>
           <h1 style={{ fontSize: "2.5rem", fontWeight: "700", marginBottom: "0.5rem" }}>Solana ETF Guide 2026</h1>
+          <LastUpdated pathKey="/learn/solana-etf-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: "1.2rem", color: S.text2 }}>Spot SOL ETF Status, Issuers, Fees & How to Invest</p>

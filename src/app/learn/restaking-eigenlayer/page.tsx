@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export default function RestakingEigenLayerPage() {
   const breadcrumbItems = [
@@ -33,6 +34,7 @@ export default function RestakingEigenLayerPage() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">
             Restaking & EigenLayer
           </h1>
+          <LastUpdated pathKey="/learn/restaking-eigenlayer" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-xl text-gray-300 mb-2">

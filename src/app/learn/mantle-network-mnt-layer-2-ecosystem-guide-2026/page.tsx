@@ -7,6 +7,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Mantle Network Guide 2026 — MNT Token & L2',
@@ -305,6 +306,7 @@ export default function MantleNetworkGuide() {
         {/* Main Title */}
         <h1 style={h1Style}>Mantle Network Guide 2026 — MNT Token & L2 Ecosystem</h1>
 
+        <LastUpdated pathKey="/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         {/* Opening Hook */}

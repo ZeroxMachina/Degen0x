@@ -13,6 +13,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -149,6 +150,7 @@ export default function BitcoinSafeHavenGuidePage() {
           Bitcoin as a Safe Haven: Is BTC a Real Hedge Against Geopolitical Risk?
         </h1>
 
+        <LastUpdated pathKey="/learn/bitcoin-safe-haven-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

@@ -8,6 +8,7 @@ import { generateArticleSchema } from '@/lib/structured-data';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -158,6 +159,7 @@ export default function DriftProtocolHackAnalysis() {
           Drift Protocol's $285M Hack: The Largest DeFi Exploit of 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/drift-protocol-285m-hack-analysis-2026" />
         <ReadingTime />
         <AutoTOC />
         {/* Featured Hook Paragraph */}

@@ -5,6 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA",
@@ -263,6 +264,7 @@ export default function OndoFinanceGuide() {
         </div>
 
         <h1 style={h1Style}>Ondo Finance</h1>
+        <LastUpdated pathKey="/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1em', color: '#8b949e', marginBottom: '30px' }}>

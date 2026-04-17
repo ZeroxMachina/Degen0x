@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -161,6 +162,7 @@ export default function BlockchainExplanation() {
           How Blockchain Works: Simple Explanation
         </h1>
 
+        <LastUpdated pathKey="/learn/how-blockchain-works-simple-explanation" />
         <ReadingTime />
         <AutoTOC />
         {/* Meta line */}

@@ -7,6 +7,7 @@ import { generateArticleSchema, generateFAQSchema } from "@/lib/structured-data"
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const breadcrumbs = [
   { label: "Home", href: "/" },
@@ -132,6 +133,7 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
             Onchain Privacy Infrastructure Guide 2026: Railgun, Aztec & Privacy Pools
           </h1>
 
+          <LastUpdated pathKey="/learn/onchain-privacy-infrastructure-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

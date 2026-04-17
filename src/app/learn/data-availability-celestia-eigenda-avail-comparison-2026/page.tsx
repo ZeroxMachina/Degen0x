@@ -9,6 +9,7 @@ import { SITE_URL } from "@/lib/constants";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Celestia vs EigenDA vs Avail: DA Layer Comparison 2026",
@@ -194,6 +195,7 @@ export default function DataAvailabilityComparisonPage() {
           Celestia vs EigenDA vs Avail
         </h1>
 
+        <LastUpdated pathKey="/learn/data-availability-celestia-eigenda-avail-comparison-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '18px', color: '#a1aec4', marginBottom: '24px', lineHeight: '1.6' }}>

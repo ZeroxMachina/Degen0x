@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default function DeFiSafetyGuide2026() {
           <h1 style={{ fontSize: "36px", fontWeight: 800, lineHeight: 1.2, marginBottom: "16px", background: "linear-gradient(135deg, #f85149, #f0883e)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             DeFi Safety Guide 2026: How to Protect Your Crypto
           </h1>
+          <LastUpdated pathKey="/learn/defi-safety-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: "16px", lineHeight: 1.7 }}>

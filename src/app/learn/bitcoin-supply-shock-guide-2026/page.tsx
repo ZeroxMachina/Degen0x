@@ -10,6 +10,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -167,6 +168,7 @@ export default function BitcoinSupplyShockGuidePage() {
             Bitcoin Supply Shock 2026: Who Holds All the BTC?
           </h1>
 
+          <LastUpdated pathKey="/learn/bitcoin-supply-shock-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: 1.7 }}>

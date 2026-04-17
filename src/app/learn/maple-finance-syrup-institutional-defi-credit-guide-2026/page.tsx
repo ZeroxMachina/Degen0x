@@ -6,6 +6,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Maple Finance & Syrup.fi Institutional DeFi Credit Guide",
@@ -341,6 +342,7 @@ export default function MapleFinancePage() {
             <span style={pageStyles.badgeReading}>14 min read</span>
           </div>
           <h1 style={pageStyles.title}>Maple Finance &amp; Syrup.fi Institutional DeFi Credit Guide</h1>
+          <LastUpdated pathKey="/learn/maple-finance-syrup-institutional-defi-credit-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={pageStyles.subtitle}>

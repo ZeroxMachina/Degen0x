@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -197,6 +198,7 @@ export default function WorldIDProofOfPersonhoodGuide() {
           World ID & Proof of Personhood: Complete Guide 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/worldcoin-world-id-proof-of-personhood-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.125rem', color: '#8b949e', marginBottom: '2rem' }}>

@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -95,6 +96,7 @@ export default function CryptoComVsCoinbaseCardPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Crypto.com Visa vs Coinbase Card ({CURRENT_YEAR})
       </h1>
+      <LastUpdated pathKey="/crypto-cards/compare/crypto-com-vs-coinbase-card" />
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         Two of the most popular crypto cards in the market take very different approaches to rewarding
         cardholders. The Crypto.com Visa offers tiered rewards up to 5% but requires CRO staking, while

@@ -9,6 +9,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -148,6 +149,7 @@ export default function StacksSBTCGuidePage() {
             Stacks & sBTC Guide 2026: Bitcoin Smart Contracts, DeFi & the Satoshi Upgrades
           </h1>
 
+          <LastUpdated pathKey="/learn/stacks-sbtc-bitcoin-smart-contracts-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

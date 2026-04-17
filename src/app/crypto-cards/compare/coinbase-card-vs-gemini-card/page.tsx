@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -96,6 +97,7 @@ export default function CoinbaseVsGeminiCardPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Coinbase Card vs Gemini Credit Card ({CURRENT_YEAR})
       </h1>
+      <LastUpdated pathKey="/crypto-cards/compare/coinbase-card-vs-gemini-card" />
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         Both Coinbase and Gemini are trusted US-regulated platforms, but their cards take fundamentally
         different approaches. The Coinbase Card is a debit card that spends your existing crypto, while

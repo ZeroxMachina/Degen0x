@@ -9,6 +9,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { TAX_COMPARISON_ITEMS, TAX_COMPARISON_FEATURES } from "@/data/taxes";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `Koinly vs CoinTracker 2026 - Which Crypto Tax Software Is Better?`,
@@ -56,6 +57,7 @@ export default function KoinlyVsCoinTrackerPage() {
       <AffiliateDisclosure />
 
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Koinly vs CoinTracker: Which Is Better in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/taxes/compare/koinly-vs-cointracker" />
       <p className="text-lg text-[var(--color-text-secondary)] mb-2">
         Koinly and CoinTracker are two of the most popular crypto tax platforms. Koinly leads
         in integrations and pricing, while CoinTracker excels with its TurboTax integration

@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function CoinbaseVsPayPalPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Coinbase vs PayPal", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Coinbase vs PayPal: Which Is Better for Crypto in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/coinbase-vs-paypal" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Coinbase is a purpose-built crypto exchange, while PayPal added crypto as a feature within its payment platform. The difference in approach results in dramatically different capabilities, fees, and user experiences. This comparison helps you decide whether the convenience of PayPal justifies its limitations compared to Coinbase.</p>
 

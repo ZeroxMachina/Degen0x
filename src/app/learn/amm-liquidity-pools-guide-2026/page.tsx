@@ -8,6 +8,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -193,6 +194,7 @@ const AMMGuide = () => {
           Automated Market Makers & Liquidity Pools
         </h1>
 
+        <LastUpdated pathKey="/learn/amm-liquidity-pools-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

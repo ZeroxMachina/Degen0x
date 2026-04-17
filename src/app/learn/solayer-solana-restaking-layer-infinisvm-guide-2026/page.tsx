@@ -5,6 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Solayer Guide 2026 — Solana Restaking, sSOL, sUSD &",
@@ -143,6 +144,7 @@ export default function SolayerGuide() {
 
         <h1 style={h1Style}>Solayer: Solana&amp;rsquo;s Restaking Protocol</h1>
 
+        <LastUpdated pathKey="/learn/solayer-solana-restaking-layer-infinisvm-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={{ marginBottom: '30px' }}>

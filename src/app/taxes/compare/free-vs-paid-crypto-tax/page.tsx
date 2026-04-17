@@ -8,6 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `Free vs Paid Crypto Tax Software (2026): Is Free Good Enough?`,
@@ -53,6 +54,7 @@ export default function FreeVsPaidCryptoTaxPage() {
         section="taxes"
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/free-vs-paid-crypto-tax" }, { label: "Free vs Paid", href: "/taxes/compare/free-vs-paid-crypto-tax" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Free vs Paid Crypto Tax Software ({CURRENT_YEAR})</h1>
+      <LastUpdated pathKey="/taxes/compare/free-vs-paid-crypto-tax" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">

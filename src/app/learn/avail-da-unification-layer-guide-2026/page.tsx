@@ -4,6 +4,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -157,6 +158,7 @@ const AvailGuide = () => {
     >
             Avail: The DA Unification Layer
           </h1>
+          <LastUpdated pathKey="/learn/avail-da-unification-layer-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="mb-6 text-lg text-[#c9d1d9]">

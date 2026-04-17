@@ -9,6 +9,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -147,6 +148,7 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
           Sui Private Transactions & Seal Framework: Protocol-Level Compliant Privacy
         </h1>
 
+        <LastUpdated pathKey="/learn/sui-private-transactions-seal-framework-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ color: '#c9d1d9', fontSize: '15px', lineHeight: 1.8, marginBottom: '24px' }}>

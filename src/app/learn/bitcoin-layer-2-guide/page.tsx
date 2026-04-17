@@ -6,6 +6,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -43,6 +44,7 @@ export default function BitcoinLayer2Guide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#f6ad55] to-[#ffa657] bg-clip-text text-transparent">
         Bitcoin Layer 2 Solutions
       </h1>
+      <LastUpdated pathKey="/learn/bitcoin-layer-2-guide" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">

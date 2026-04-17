@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -331,6 +332,7 @@ export default function SeiNetworkGuide() {
 
           <h1 style={h1Style}>Sei Network Guide 2026: The Parallelized EVM Blockchain Built for Speed</h1>
 
+          <LastUpdated pathKey="/learn/sei-network-parallelized-evm-defi-chain-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={pStyle}>

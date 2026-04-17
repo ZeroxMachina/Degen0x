@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -332,6 +333,7 @@ export default function ChainAbstractionPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Chain Abstraction — The End of Multi-Chain Complexity</h1>
 
+        <LastUpdated pathKey="/learn/chain-abstraction-multichain-ux-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>Updated: April 2026 · 11 min read</div>

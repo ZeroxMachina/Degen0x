@@ -6,6 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const pageStyles = {
@@ -334,6 +335,7 @@ export default function SocialFiGuidePage() {
 
       {/* Header */}
       <h1 style={pageStyles.title}>SocialFi: Social Finance &amp; Creator Tokens Guide 2026</h1>
+      <LastUpdated pathKey="/learn/socialfi-social-finance-creator-tokens-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p style={pageStyles.subtitle}>

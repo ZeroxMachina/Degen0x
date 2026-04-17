@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -318,6 +319,7 @@ export default function EthereumBlobEconomicsPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Ethereum Blob Economics & EIP-4844 Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/ethereum-blob-economics-eip4844-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>

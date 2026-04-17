@@ -6,6 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -186,6 +187,7 @@ export default function HyperliquidDEXGuide() {
 
           <h1 style={h1Style}>Hyperliquid DEX &amp; HYPE Chain: Complete Perpetual Futures Guide 2026</h1>
 
+          <LastUpdated pathKey="/learn/hyperliquid-dex-hype-chain-perpetual-futures-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '16px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.7' }}>

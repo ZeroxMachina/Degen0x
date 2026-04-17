@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -59,6 +60,7 @@ export default function ExodusVsCoinbaseWalletPage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Exodus vs Coinbase Wallet: Beginner Self-Custody in {CURRENT_YEAR}</h1>
+        <LastUpdated pathKey="/wallets/compare/exodus-vs-coinbase-wallet" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           Exodus and Coinbase Wallet are popular self-custody wallets for users transitioning from
           exchanges. We compare design, fees, DeFi access, and ease of use.

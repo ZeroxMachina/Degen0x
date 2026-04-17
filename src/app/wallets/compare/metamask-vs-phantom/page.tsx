@@ -11,6 +11,7 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -65,6 +66,7 @@ export default function MetaMaskVsPhantomPage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">MetaMask vs Phantom: Which Wallet Should You Choose in {CURRENT_YEAR}?</h1>
+        <LastUpdated pathKey="/wallets/compare/metamask-vs-phantom" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           MetaMask and Phantom are the two most popular software wallets for DeFi and dApp access. We compare
           their chain support, features, user experience, and security to help you decide.

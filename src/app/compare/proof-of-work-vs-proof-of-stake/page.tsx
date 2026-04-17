@@ -6,6 +6,7 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -77,6 +78,7 @@ export default function ProofOfWorkVsProofOfStake() {
           <span style={{ ...s.badge, background: '#06b6d4', color: '#0d1117' }}>Compare</span>
           <span style={{ ...s.badge, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={s.h1}>Proof of Work vs Proof of Stake 2026</h1>
+          <LastUpdated pathKey="/compare/proof-of-work-vs-proof-of-stake" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>PoW (Bitcoin): 150 TWh/year, 51% attack costs $50B+ (hardware). PoS (Ethereum): 0.01 TWh/year, 51% attack costs $80B+ (stake). Security, decentralization, finality, validator economics. Complete comparison.</p>

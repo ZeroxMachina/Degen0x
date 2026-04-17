@@ -10,6 +10,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -331,6 +332,7 @@ export default function BabylonProtocolGuidePage() {
           >
             Babylon Protocol: The Complete Bitcoin Staking Guide (2026)
           </h1>
+          <LastUpdated pathKey="/learn/babylon-protocol-bitcoin-staking" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 18, color: "#c9d1d9", lineHeight: 1.7, marginBottom: 8 }}>

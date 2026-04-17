@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -96,6 +97,7 @@ export default function FoldVsCoinbaseCardPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         Fold Card vs Coinbase Card ({CURRENT_YEAR})
       </h1>
+      <LastUpdated pathKey="/crypto-cards/compare/fold-vs-coinbase-card" />
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         For US crypto card users, the Fold Card and Coinbase Card are two popular options with different
         strengths. Fold is built exclusively around Bitcoin rewards with a gamified experience, while

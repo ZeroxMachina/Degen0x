@@ -6,6 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -235,6 +236,7 @@ export default function AerodromeFinanceGuide() {
 
         {/* Title */}
         <h1 style={h1Style}>Aerodrome Finance Guide 2026 — Base&apos;s Liquidity Engine</h1>
+        <LastUpdated pathKey="/learn/aerodrome-finance-base-dex-liquidity-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ color: '#8b949e', fontSize: '16px', lineHeight: '1.7', marginBottom: '8px' }}>

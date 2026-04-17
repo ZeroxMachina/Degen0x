@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -98,6 +99,7 @@ export default function PolkadotJAMGuide() {
             <h1 className="text-4xl font-bold mt-2 mb-4 bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent">
               Polkadot JAM Protocol 2026
             </h1>
+            <LastUpdated pathKey="/learn/polkadot-jam-protocol-coretime-supercomputer-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p className="text-[#8b949e] text-lg">

@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -59,6 +60,7 @@ export default function LedgerVsColdcardPage() {
 
       <header className="mb-10">
         <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Ledger vs Coldcard: Multi-Coin vs Bitcoin Maximalist ({CURRENT_YEAR})</h1>
+        <LastUpdated pathKey="/wallets/compare/ledger-vs-coldcard" />
         <p className="text-lg text-[var(--color-text-secondary)]">
           Ledger is the most popular multi-coin hardware wallet. Coldcard is the gold standard
           for Bitcoin-only security. We compare security architecture, features, and use cases.

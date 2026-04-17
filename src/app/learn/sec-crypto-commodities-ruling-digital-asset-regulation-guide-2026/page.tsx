@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -333,6 +334,7 @@ export default function SECCFTCRulingGuide() {
               SEC/CFTC Digital Commodities Ruling 2026
             </h1>
 
+            <LastUpdated pathKey="/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p className="text-lg text-[#8b949e] max-w-3xl">

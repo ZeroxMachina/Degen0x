@@ -7,6 +7,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -144,6 +145,7 @@ export default function MegaETHGuide() {
 
         <h1 style={h1Style}>MegaETH Guide 2026 — Real-Time L2, 100K TPS &amp; MEGA Token</h1>
 
+        <LastUpdated pathKey="/learn/megaeth-real-time-blockchain-layer-2-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>

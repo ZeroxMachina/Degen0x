@@ -238,6 +238,7 @@ export default function SolanaBlinksActionsGuide() {
 
           <h1 style={h1Style}>Solana Blinks & Actions Guide 2026</h1>
 
+          <LastUpdated pathKey="/learn/solana-blinks-actions-blockchain-links-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>
@@ -502,6 +503,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const POST = async (request: NextRequest) => {

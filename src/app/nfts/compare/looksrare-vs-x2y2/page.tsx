@@ -9,6 +9,7 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default function LooksRareVsX2Y2Page() {
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "LooksRare vs X2Y2", href: "#" } ]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">LooksRare vs X2Y2: Which Ethereum NFT Marketplace Is Better in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/nfts/compare/looksrare-vs-x2y2" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         LooksRare and X2Y2 are both Ethereum-only NFT marketplaces that launched as alternatives to

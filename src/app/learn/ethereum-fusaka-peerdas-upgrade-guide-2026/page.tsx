@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Ethereum Fusaka & PeerDAS Upgrade Guide 2026 | Degen0x',
@@ -136,6 +137,7 @@ export default function FusakaPeerdasGuide() {
       </nav>
 
       <h1 style={h1Style}>Ethereum Fusaka &amp; PeerDAS: The 2026 Upgrade Guide</h1>
+      <LastUpdated pathKey="/learn/ethereum-fusaka-peerdas-upgrade-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p style={{ ...pStyle, fontSize: '1.2rem', color: '#8b949e' }}>

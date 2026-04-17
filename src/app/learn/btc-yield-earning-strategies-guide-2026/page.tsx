@@ -11,6 +11,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -147,6 +148,7 @@ export default function BTCYieldStrategiesGuidePage() {
           BTC Yield Strategies: How to Earn 3-8% APY on Your Bitcoin in 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/btc-yield-earning-strategies-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

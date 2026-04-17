@@ -13,6 +13,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -204,6 +205,7 @@ export default function LidoV3stVaultsGuide() {
             Lido V3 stVaults: Modular Staking Infrastructure
           </h1>
 
+          <LastUpdated pathKey="/learn/lido-v3-stvaults-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 8 }}>

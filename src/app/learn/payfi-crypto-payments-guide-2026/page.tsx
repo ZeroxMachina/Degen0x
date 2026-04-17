@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -278,6 +279,7 @@ export default function PayFiGuide() {
         {/* H1 */}
         <h1 style={h1Style}>PayFi & Crypto Payments Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/payfi-crypto-payments-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         {/* Opening paragraph */}

@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 interface Validator {
   name: string;
@@ -75,6 +76,7 @@ export default function ValidatorStakingGuide() {
           <h1 style={{ fontSize: 32, fontWeight: 800, background: 'linear-gradient(135deg, #3fb950, #58a6ff, #bc8cff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', marginBottom: 8 }}>
             Validator Staking Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/validator-staking-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: '#8b949e', maxWidth: 620, margin: '0 auto', lineHeight: 1.6 }}>

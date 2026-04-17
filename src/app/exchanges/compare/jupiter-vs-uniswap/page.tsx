@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function JupiterVsUniswapPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Jupiter vs Uniswap", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Jupiter vs Uniswap: Which DEX Is Better in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/jupiter-vs-uniswap" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Jupiter and Uniswap are the dominant decentralized exchanges on their respective chains — Jupiter on Solana and Uniswap on Ethereum. They represent fundamentally different approaches to decentralized trading, from chain architecture to transaction costs. This comparison helps you understand the tradeoffs between these two DeFi giants.</p>
 

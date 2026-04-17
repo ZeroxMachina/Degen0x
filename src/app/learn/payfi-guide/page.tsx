@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -134,6 +135,7 @@ export default function PayFiGuidePage() {
       <h1 className="text-4xl font-bold mb-3" style={{ color: "var(--color-text)" }}>
         PayFi: The Convergence of Payments and DeFi
       </h1>
+      <LastUpdated pathKey="/learn/payfi-guide" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-lg mb-2" style={{ color: "var(--color-text-secondary)" }}>

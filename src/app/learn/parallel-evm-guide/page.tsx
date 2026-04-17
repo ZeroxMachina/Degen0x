@@ -8,6 +8,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are",
@@ -182,6 +183,7 @@ export default function ParallelEVMGuidePage() {
           Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are Scaling Ethereum
         </h1>
 
+        <LastUpdated pathKey="/learn/parallel-evm-guide" />
         <ReadingTime />
         <AutoTOC />
         {/* Meta Information */}

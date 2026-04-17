@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function UsVsInternationalExchangesPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "US vs International Exchanges", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">US vs International Crypto Exchanges: Which Are Better in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/us-vs-international-exchanges" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">US-based crypto exchanges like Coinbase and Kraken operate under strict regulatory oversight, while international platforms like Binance and OKX offer more features and lower fees. Understanding the tradeoffs between regulatory protection and platform capability helps you make an informed choice about where to trade.</p>
 

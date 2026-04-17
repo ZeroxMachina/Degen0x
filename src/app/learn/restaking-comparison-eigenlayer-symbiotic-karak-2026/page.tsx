@@ -7,6 +7,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -139,6 +140,7 @@ export default function RestakingComparisonPage() {
             Restaking Wars 2026: EigenLayer vs Symbiotic vs Karak — Complete Comparison
           </h1>
 
+          <LastUpdated pathKey="/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: "18px", lineHeight: "1.6", color: "#c9d1d9", marginBottom: "24px" }}>

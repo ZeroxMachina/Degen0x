@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -140,6 +141,7 @@ export default function HowToBuyEthereumBeginners() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           <h1 style={h1Style}>How to Buy Ethereum for Beginners</h1>
+          <LastUpdated pathKey="/learn/how-to-buy-ethereum-for-beginners" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>Ethereum trades at $3,300+ in April 2026, with daily volumes exceeding $20B. This step-by-step guide walks you through buying your first ETH: choosing exchanges, funding accounts, executing purchases, and transferring to self-custody wallets. Learn about gas fees, dollar-cost averaging, and staking opportunities to grow your holdings.</p>

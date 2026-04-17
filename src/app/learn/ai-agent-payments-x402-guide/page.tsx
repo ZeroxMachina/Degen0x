@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -126,6 +127,7 @@ export default function AIAgentPaymentsGuide() {
           <span className="text-xs px-3 py-1 rounded-full font-bold" style={{ background: "#6366f120", color: "#6366f1" }}>16 min read</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-extrabold mb-4" style={{ color: "var(--color-text)", lineHeight: "1.2" }}>AI Agent Payments & the x402 Protocol: Complete Guide for 2026</h1>
+        <LastUpdated pathKey="/learn/ai-agent-payments-x402-guide" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>Autonomous AI agents are reshaping how value flows across the internet. Discover the protocols, standards, and infrastructure powering the agent economy, from gasless USDC payments to on-chain identity systems.</p>

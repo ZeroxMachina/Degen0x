@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -145,6 +146,7 @@ export default function LiquidityPoolsPage() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Learn</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Liquidity Pools Explained</h1>
+          <LastUpdated pathKey="/learn/what-is-a-liquidity-pool" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>Master x*y=k formula, Uniswap V2 vs V3 concentrated liquidity, Curve StableSwap, impermanent loss calculations, and LP yields (10-25% APY).</p>

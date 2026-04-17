@@ -7,6 +7,7 @@ import { ArticleStructuredData, FAQStructuredData } from "@/components/Structure
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "DAO Governance & On-Chain Voting Guide 2026: How DAOs Work",
@@ -134,6 +135,7 @@ export default function DAOGovernanceVotingGuide() {
             DAO Governance & On-Chain Voting Guide 2026: How Crypto Communities Make Decisions
           </h1>
 
+          <LastUpdated pathKey="/learn/dao-governance-voting-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p

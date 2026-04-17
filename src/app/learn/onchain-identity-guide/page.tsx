@@ -7,6 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -157,6 +158,7 @@ export default function OnchainIdentityGuide() {
             Onchain Identity Guide 2026: ENS, SBTs, Attestations & The Future of Web3
           </h1>
 
+          <LastUpdated pathKey="/learn/onchain-identity-guide" />
           <ReadingTime />
           <AutoTOC />
           {/* Metadata */}

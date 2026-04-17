@@ -6,6 +6,7 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -137,6 +138,7 @@ export default function AsterChainGuidePage() {
             Aster Chain Guide 2026: CZ&apos;s Privacy Perpetuals Layer 1
           </h1>
 
+          <LastUpdated pathKey="/learn/aster-chain-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 18, color: "#8b949e", lineHeight: 1.6, marginBottom: 12 }}>

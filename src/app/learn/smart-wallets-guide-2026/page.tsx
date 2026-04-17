@@ -6,6 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -206,6 +207,7 @@ export default function SmartWalletsGuide2026Page() {
               WebkitTextFillColor: "transparent",
             }}>No Seed Phrases, No Gas Fees, No Friction</span>
           </h1>
+          <LastUpdated pathKey="/learn/smart-wallets-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>

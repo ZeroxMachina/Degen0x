@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -211,6 +212,7 @@ export default function CryptoIndexFundsOnchainkBasketInvestingGuide2026() {
 
           <h1 style={h1Style}>Crypto Index Funds & On-Chain Basket Investing 2026</h1>
 
+          <LastUpdated pathKey="/learn/crypto-index-funds-onchain-basket-investing-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

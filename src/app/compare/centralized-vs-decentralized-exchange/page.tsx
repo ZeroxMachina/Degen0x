@@ -6,6 +6,7 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -142,6 +143,7 @@ export default function CentralizedVsDecentralizedExchange() {
           <span style={{ ...badgeStyle, background: '#06b6d4', color: '#0d1117' }}>Compare</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Intermediate</span>
           <h1 style={h1Style}>Centralized vs Decentralized Exchange 2026</h1>
+          <LastUpdated pathKey="/compare/centralized-vs-decentralized-exchange" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

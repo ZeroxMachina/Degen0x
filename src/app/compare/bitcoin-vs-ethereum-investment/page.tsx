@@ -6,6 +6,7 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -173,6 +174,7 @@ export default function BitcoinVsEthereumInvestment() {
             <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Beginner</span>
           </div>
           <h1 style={h1Style}>Bitcoin vs Ethereum: Which to Buy?</h1>
+          <LastUpdated pathKey="/compare/bitcoin-vs-ethereum-investment" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

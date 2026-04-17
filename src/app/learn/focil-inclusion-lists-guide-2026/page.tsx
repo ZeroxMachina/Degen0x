@@ -11,6 +11,7 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "FOCIL & Inclusion Lists on Ethereum Guide 2026 | Degen0x",
@@ -147,6 +148,7 @@ export default function FocilInclusionListsGuide() {
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               FOCIL &amp; Inclusion Lists on Ethereum: The 2026 Guide
             </h1>
+            <LastUpdated pathKey="/learn/focil-inclusion-lists-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p className="text-lg text-[#8b949e] mb-10">

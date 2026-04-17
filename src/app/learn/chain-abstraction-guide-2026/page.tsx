@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Chain Abstraction Guide 2026: One Account, Every Chain",
@@ -197,6 +198,7 @@ export default function ChainAbstractionGuide2026() {
           Chain Abstraction Guide 2026: One Account, Every Chain
         </h1>
 
+        <LastUpdated pathKey="/learn/chain-abstraction-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         {/* Meta Line */}

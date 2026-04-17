@@ -3,6 +3,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Link from 'next/link';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Bitcoin ETF Explained: How to Invest in BTC ETFs 2026",
@@ -218,6 +219,7 @@ export default function BitcoinETFPage() {
     >
             Bitcoin ETF Explained: How to Invest in BTC ETFs
           </h1>
+          <LastUpdated pathKey="/learn/bitcoin-etf-explained-how-to-invest" />
           <ReadingTime />
           <AutoTOC />
           <p

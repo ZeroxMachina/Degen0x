@@ -8,6 +8,7 @@ import BackToTop from '@/components/BackToTop';
 import { SITE_URL } from '@/lib/constants';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Corporate Crypto Treasury Guide 2026',
@@ -156,6 +157,7 @@ export default function CorporatoCryptoTreasuryGuide() {
               Corporate Crypto Treasury Companies in 2026
             </h1>
 
+            <LastUpdated pathKey="/learn/corporate-crypto-treasury-guide-2026" />
             <ReadingTime />
             <AutoTOC />
             <p

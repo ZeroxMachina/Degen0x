@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -342,6 +343,7 @@ export default function SonicChainGuide() {
 
         {/* Header */}
         <h1 style={h1Style}>Sonic Chain Guide 2026</h1>
+        <LastUpdated pathKey="/learn/sonic-chain-fantom-defi-ecosystem-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.2rem', color: '#8b949e', marginBottom: '30px' }}>

@@ -6,6 +6,7 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -393,6 +394,7 @@ export default function AaveV4GHOPage() {
             <span style={pageStyles.badgeReading}>22 min read</span>
           </div>
           <h1 style={pageStyles.title}>Aave V4 &amp; GHO Stablecoin DeFi Lending Guide</h1>
+          <LastUpdated pathKey="/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={pageStyles.subtitle}>

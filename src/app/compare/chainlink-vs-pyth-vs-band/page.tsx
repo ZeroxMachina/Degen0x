@@ -6,6 +6,7 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -201,6 +202,7 @@ export default function ChainlinkPythBand() {
           <span style={{ ...badgeStyle, background: '#a855f7', color: '#fff' }}>Compare</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Chainlink vs Pyth vs Band: Oracle Networks</h1>
+          <LastUpdated pathKey="/compare/chainlink-vs-pyth-vs-band" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>

@@ -4,6 +4,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 const S = { bg:"#0d1117",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f7931a",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"Bitcoin Ordinals Guide",href:"/learn/bitcoin-ordinals-guide"}];
 export default function BitcoinOrdinalsGuidePage() {
@@ -20,6 +21,7 @@ export default function BitcoinOrdinalsGuidePage() {
             <span style={{fontSize:12,color:S.text2}}>Updated March 14, 2026 · 16 min read · +130 XP</span>
           </div>
           <h1 style={{fontSize:"2.4rem",fontWeight:900,lineHeight:1.2,marginBottom:20}}>Bitcoin Ordinals & Runes Guide 2026: NFTs on Bitcoin, BRC-20 Tokens & the New Bitcoin Economy</h1>
+          <LastUpdated pathKey="/learn/bitcoin-ordinals-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{fontSize:17,color:S.text2,lineHeight:1.75}}>Since January 2023, Bitcoin has developed a vibrant NFT and token ecosystem via Ordinals — a protocol that inscribes data directly onto individual satoshis. Then came BRC-20 tokens and Runes. Bitcoin is no longer just a store of value: it's becoming a programmable asset layer. This guide explains Ordinals, Runes, BRC-20, and why it matters for the Bitcoin ecosystem.</p>

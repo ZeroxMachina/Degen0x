@@ -7,6 +7,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -103,6 +104,7 @@ export default function DefiPointsAirdropFarmingGuide() {
             DeFi Points & Airdrop Farming Guide 2026
           </h1>
 
+          <LastUpdated pathKey="/learn/defi-points-airdrop-farming-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '15px' }}>

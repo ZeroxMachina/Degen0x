@@ -13,6 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -204,6 +205,7 @@ export default function CryptoDebitCardsGuide2026Page() {
           Best Crypto Debit Cards 2026: Spend Your Bitcoin & Stablecoins Anywhere
         </h1>
 
+        <LastUpdated pathKey="/learn/crypto-debit-cards-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-lg" style={{ color: "var(--color-text-secondary)", lineHeight: "1.7" }}>

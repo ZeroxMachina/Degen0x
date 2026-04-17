@@ -3,6 +3,7 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -125,6 +126,7 @@ export default function MEVPBSGuide() {
             }}
     >MEV Supply Chain & Proposer-Builder Separation</h1>
 
+    <LastUpdated pathKey="/learn/mev-supply-chain-proposer-builder-separation-pbs-guide-2026" />
     <ReadingTime />
     <AutoTOC />
             <p style={{

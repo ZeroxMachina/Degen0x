@@ -3,6 +3,7 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -394,6 +395,7 @@ export default function OptimismSuperchanPage() {
           {/* Title */}
           <h1 style={titleStyle}>Optimism Superchain &amp; OP Stack Ecosystem Guide 2026</h1>
 
+          <LastUpdated pathKey="/learn/optimism-superchain-op-stack-ecosystem-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           {/* Description */}

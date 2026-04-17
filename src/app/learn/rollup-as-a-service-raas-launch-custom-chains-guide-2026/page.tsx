@@ -3,6 +3,7 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -220,6 +221,7 @@ export default function RaaSOxPage() {
         <div style={containerStyle}>
           {/* Header */}
           <h1 style={h1Style}>Rollup-as-a-Service (RaaS): Launch Custom Chains in 2026</h1>
+          <LastUpdated pathKey="/learn/rollup-as-a-service-raas-launch-custom-chains-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '24px' }}>

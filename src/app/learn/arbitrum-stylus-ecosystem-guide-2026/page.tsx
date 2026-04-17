@@ -4,6 +4,7 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -151,6 +152,7 @@ export default function ArbitrumStylusEcosystemGuide2026() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 leading-tight">
             Arbitrum Ecosystem & Stylus Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/arbitrum-stylus-ecosystem-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="text-lg text-zinc-400 leading-relaxed">

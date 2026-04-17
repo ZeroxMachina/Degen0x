@@ -7,6 +7,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'BitVM Guide 2026: Bitcoin Smart Contracts | degen0x',
@@ -332,6 +333,7 @@ export default function BitVMPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>BitVM Guide 2026: Bitcoin Smart Contracts</h1>
+        <LastUpdated pathKey="/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>

@@ -13,6 +13,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -183,6 +184,7 @@ export default function WrappedBitcoinComparisonGuide() {
           <h1 style={s.h1}>
             Wrapped Bitcoin Comparison 2026: wBTC vs cbBTC vs tBTC vs LBTC
           </h1>
+          <LastUpdated pathKey="/learn/wrapped-bitcoin-comparison-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={s.sub}>

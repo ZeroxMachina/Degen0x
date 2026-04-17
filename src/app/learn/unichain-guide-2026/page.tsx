@@ -9,6 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -160,6 +161,7 @@ export default function UniChainGuidePage() {
             Unichain Guide 2026: Uniswap's DeFi-Optimized Layer 2
           </h1>
 
+          <LastUpdated pathKey="/learn/unichain-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.6' }}>

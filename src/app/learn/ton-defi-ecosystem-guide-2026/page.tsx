@@ -8,6 +8,7 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -143,6 +144,7 @@ export default function TONDeFiGuide() {
         TON Blockchain DeFi Ecosystem Guide 2026
       </h1>
 
+      <LastUpdated pathKey="/learn/ton-defi-ecosystem-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       {/* Subtitle */}

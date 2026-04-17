@@ -8,6 +8,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -187,6 +188,7 @@ const TokenizedGoldGuide = () => {
           Tokenized Gold Guide 2026: XAUT, PAXG & Gold-Backed Crypto
         </h1>
 
+        <LastUpdated pathKey="/learn/tokenized-gold-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p

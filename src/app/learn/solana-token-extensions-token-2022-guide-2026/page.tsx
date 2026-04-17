@@ -165,6 +165,7 @@ export default function SolanaTokenExtensionsGuide() {
           <span style={difficultyBadgeStyle}>Intermediate</span>
         </div>
         <h1 style={h1Style}>Solana Token Extensions & Token-2022 Guide 2026</h1>
+        <LastUpdated pathKey="/learn/solana-token-extensions-token-2022-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ ...pStyle, fontSize: 16, color: "#8b949e" }}>
@@ -592,6 +593,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const mint = await createMint(

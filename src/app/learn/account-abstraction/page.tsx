@@ -50,6 +50,7 @@ export default function AccountAbstractionPage() {
             Account Abstraction Guide 2026: Smart Wallets & ERC-4337
           </h1>
 
+          <LastUpdated pathKey="/learn/account-abstraction" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>
@@ -422,6 +423,7 @@ import RelatedContent from '@/components/RelatedContent';
 import AuthoritySources from '@/components/AuthoritySources';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const client = await createModularAccountAlchemyClient({
   chain: sepolia,

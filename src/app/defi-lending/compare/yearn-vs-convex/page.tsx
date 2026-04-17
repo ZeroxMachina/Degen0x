@@ -8,6 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `Yearn vs Convex 2026: Which Yield Aggregator Is Better?`,
@@ -55,6 +56,7 @@ export default function YearnVsConvexPage() {
         section="defi-lending"
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "DeFi Lending", href: "/defi-lending" }, { label: "Compare", href: "/defi-lending/compare/aave-vs-compound" }, { label: "Yearn vs Convex", href: "/defi-lending/compare/yearn-vs-convex" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">Yearn vs Convex: Full Comparison ({CURRENT_YEAR})</h1>
+      <LastUpdated pathKey="/defi-lending/compare/yearn-vs-convex" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">

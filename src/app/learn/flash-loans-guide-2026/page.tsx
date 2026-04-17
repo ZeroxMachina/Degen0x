@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -240,6 +241,7 @@ export default function FlashLoansGuidePage() {
 
           <h1 style={h1Style}>Flash Loans Guide 2026</h1>
 
+          <LastUpdated pathKey="/learn/flash-loans-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={subtitleStyle}>

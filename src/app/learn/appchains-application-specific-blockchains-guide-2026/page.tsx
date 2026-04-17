@@ -5,6 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Appchains & Application-Specific Blockchains Guide 2026",
@@ -328,6 +329,7 @@ export default function AppChainsPage() {
 
         {/* Main Title */}
         <h1 style={h1Style}>Appchains &amp; Application-Specific Blockchains 2026</h1>
+        <LastUpdated pathKey="/learn/appchains-application-specific-blockchains-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', color: '#8b949e', marginBottom: '20px' }}>

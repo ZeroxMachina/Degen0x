@@ -6,6 +6,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: 'Wormhole Cross-Chain Messaging & Interoperability Guide 2026',
@@ -351,6 +352,7 @@ export default function WormholeCrossChainPage() {
             <span style={pageStyles.badgeReading}>15 min read</span>
           </div>
           <h1 style={pageStyles.title}>Wormhole Cross-Chain Messaging &amp; Interoperability Guide</h1>
+          <LastUpdated pathKey="/learn/wormhole-cross-chain-messaging-interoperability-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={pageStyles.subtitle}>

@@ -7,6 +7,7 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -155,6 +156,7 @@ export default function CitreaGuidePage() {
         Citrea: Bitcoin's First ZK Rollup
       </h1>
 
+      <LastUpdated pathKey="/learn/citrea-bitcoin-zk-rollup-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       {/* Subtitle */}

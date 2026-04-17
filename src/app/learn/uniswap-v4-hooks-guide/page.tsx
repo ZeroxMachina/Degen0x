@@ -9,6 +9,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -153,6 +154,7 @@ export default function UniswapV4HooksGuidePage() {
             Uniswap v4 Hooks: The Complete Guide for 2026
           </h1>
 
+          <LastUpdated pathKey="/learn/uniswap-v4-hooks-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.75, marginBottom: 12 }}>

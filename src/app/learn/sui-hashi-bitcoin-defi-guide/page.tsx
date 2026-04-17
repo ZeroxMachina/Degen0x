@@ -6,6 +6,7 @@ import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -160,6 +161,7 @@ export default function HashiBitcoinDefiGuide() {
               Sui Hashi: Native Bitcoin DeFi Without Wrappers
             </h1>
 
+            <LastUpdated pathKey="/learn/sui-hashi-bitcoin-defi-guide" />
             <ReadingTime />
             <AutoTOC />
             <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '24px' }}>

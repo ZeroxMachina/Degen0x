@@ -4,6 +4,7 @@ import Link from "next/link";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -192,6 +193,7 @@ export default function GovernanceMarketsPage() {
             Governance Markets & Liquid Lockers
           </h1>
 
+          <LastUpdated pathKey="/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p className="mb-4 text-xl" style={{ color: '#e6edf3' }}>

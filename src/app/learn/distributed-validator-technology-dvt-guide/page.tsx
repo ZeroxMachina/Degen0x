@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -275,6 +276,7 @@ export default function DVTGuidePage() {
           Distributed Validator Technology (DVT) Guide
         </h1>
 
+        <LastUpdated pathKey="/learn/distributed-validator-technology-dvt-guide" />
         <ReadingTime />
         <AutoTOC />
         {/* Meta */}

@@ -9,6 +9,7 @@ import { SITE_URL } from '@/lib/constants';
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const S = {
   bg: "var(--color-bg, #0d1117)",
@@ -134,6 +135,7 @@ export default function WorldChainProofOfPersonhoodGuidePage() {
             World Chain & Proof of Personhood Guide 2026
           </h1>
 
+          <LastUpdated pathKey="/learn/world-chain-proof-of-personhood-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '18px', color: S.text2, marginBottom: '20px', lineHeight: '1.6' }}>

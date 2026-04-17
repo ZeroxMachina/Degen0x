@@ -7,6 +7,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -305,6 +306,7 @@ export default function BitcoinCovenantsOPCATGuidePage() {
           }}>
             Bitcoin Covenants &amp; OP_CAT Guide: Making Bitcoin Programmable
           </h1>
+          <LastUpdated pathKey="/learn/bitcoin-covenants-opcat-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>

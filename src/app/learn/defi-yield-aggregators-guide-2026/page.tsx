@@ -9,6 +9,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -148,6 +149,7 @@ export default function DeFiYieldAggregatorsGuide() {
           <h1 style={s.h1}>
             DeFi Yield Aggregators Guide 2026
           </h1>
+          <LastUpdated pathKey="/learn/defi-yield-aggregators-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={s.sub}>

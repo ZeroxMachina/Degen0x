@@ -7,6 +7,7 @@ import DeFAIProtocolExplorer from "@/components/DeFAIProtocolExplorer";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -139,6 +140,7 @@ export default function DeFAIGuidePage() {
         DeFAI: How AI Agents Are Taking Over Decentralized Finance
       </h1>
 
+      <LastUpdated pathKey="/learn/defai-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       {/* Subtitle / hook */}

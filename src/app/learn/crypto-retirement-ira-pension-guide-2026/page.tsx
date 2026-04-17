@@ -8,6 +8,7 @@ import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -178,6 +179,7 @@ export default function CryptoRetirementIRAGuidePage() {
             Crypto IRA Guide 2026: Bitcoin & Crypto Retirement Accounts
           </h1>
 
+          <LastUpdated pathKey="/learn/crypto-retirement-ira-pension-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '18px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.6' }}>

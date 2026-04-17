@@ -6,6 +6,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const articleSchema = generateArticleSchema({
   title: "Nasdaq Tokenized Equities Trading Guide 2026: What the SEC Approval Means for Markets",
@@ -126,6 +127,7 @@ export default function NasdaqTokenizedEquitiesGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             Nasdaq Tokenized Equities Trading Guide 2026: What the SEC Approval Means for Markets
           </h1>
+          <LastUpdated pathKey="/learn/nasdaq-tokenized-equities-trading-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>

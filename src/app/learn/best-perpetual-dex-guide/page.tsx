@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -116,6 +117,7 @@ export default function PerpDEXGuidePage() {
         <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#58a6ff] to-[#79c0ff] bg-clip-text text-transparent">
           Best Perpetual DEXs: Your Guide to On-Chain Derivatives Trading in 2026
         </h1>
+        <LastUpdated pathKey="/learn/best-perpetual-dex-guide" />
         <ReadingTime />
         <AutoTOC />
         <p className="text-xl text-[#8b949e] mb-8">

@@ -6,6 +6,7 @@ import BackToTop from '@/components/BackToTop'
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -109,6 +110,7 @@ export default function StablecoinPaymentsGuidePage() {
       <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-3">
         Stablecoin Payments Guide 2026: GENIUS Act, Cross-Border Transfers & On-Chain Finance
       </h1>
+      <LastUpdated pathKey="/learn/stablecoin-payments-guide-2026" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-gray-400 text-lg mb-2">

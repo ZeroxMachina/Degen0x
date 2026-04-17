@@ -6,6 +6,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -186,6 +187,7 @@ export default function DecentralizedGPUComputeGuide() {
 
           <h1 style={h1Style}>Decentralized GPU Compute Networks: Render, Akash &amp; io.net Guide 2026</h1>
 
+          <LastUpdated pathKey="/learn/decentralized-gpu-compute-networks-render-akash-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: '16px', color: '#8b949e', marginBottom: '20px', lineHeight: '1.7' }}>

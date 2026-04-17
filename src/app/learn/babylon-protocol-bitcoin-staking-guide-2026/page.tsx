@@ -7,6 +7,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -338,6 +339,7 @@ export default function BabylonProtocolGuide() {
 
         {/* Header */}
         <h1 style={h1Style}>Babylon Protocol Guide 2026</h1>
+        <LastUpdated pathKey="/learn/babylon-protocol-bitcoin-staking-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.2rem', color: '#8b949e', marginBottom: '30px' }}>

@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -148,6 +149,7 @@ export default function SECDigitalCommoditiesPage() {
               SEC Digital Commodities List 2026: The Complete Classification Guide
             </h1>
 
+            <LastUpdated pathKey="/learn/sec-digital-commodities-classification-guide" />
             <ReadingTime />
             <AutoTOC />
             <p style={{ fontSize: 17, color: S.text2, lineHeight: 1.75, marginBottom: 28 }}>

@@ -6,6 +6,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -319,6 +320,7 @@ export default function CryptoStakingGuidePage() {
         {/* Main Title */}
         <h1 style={h1Style}>Crypto Staking Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/crypto-staking-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>

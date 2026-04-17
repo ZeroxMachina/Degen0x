@@ -8,6 +8,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &",
@@ -147,6 +148,7 @@ export default function SanctumGuide() {
 
         <h1 style={h1Style}>Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &amp; CLOUD</h1>
 
+        <LastUpdated pathKey="/learn/sanctum-solana-liquid-staking-infinity-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>

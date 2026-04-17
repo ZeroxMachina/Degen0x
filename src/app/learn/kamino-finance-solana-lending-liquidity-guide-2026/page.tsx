@@ -7,6 +7,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Kamino Finance Guide 2026 — Solana Lending, Liquidity &",
@@ -143,6 +144,7 @@ export default function KaminoFinanceGuide() {
 
         <h1 style={h1Style}>Kamino Finance Guide 2026 — Solana Lending, Liquidity & Leverage</h1>
 
+        <LastUpdated pathKey="/learn/kamino-finance-solana-lending-liquidity-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>

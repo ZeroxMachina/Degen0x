@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function CentralizedVsDecentralizedPage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "CEX vs DEX", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Centralized vs Decentralized Exchanges: Which Should You Use in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/centralized-vs-decentralized" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">The choice between centralized exchanges (CEX) and decentralized exchanges (DEX) is one of the most fundamental decisions in crypto. Each type offers distinct advantages in security, convenience, fees, and available features. Understanding these tradeoffs is essential for building an effective trading strategy.</p>
 

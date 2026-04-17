@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -35,6 +36,7 @@ export default function RobinhoodVsCoinbasePage() {
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Robinhood vs Coinbase", href: "#" }]} />
       <AffiliateDisclosure />
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">Robinhood vs Coinbase: Which Is Better for Crypto in {CURRENT_YEAR}?</h1>
+      <LastUpdated pathKey="/exchanges/compare/robinhood-vs-coinbase" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">Robinhood and Coinbase are two of the most popular ways for US consumers to buy cryptocurrency, but they take very different approaches. Robinhood is a commission-free brokerage that treats crypto as another asset class alongside stocks. Coinbase is a dedicated crypto exchange with hundreds of coins and advanced trading tools. This comparison helps you decide which platform fits your needs.</p>
 

@@ -8,6 +8,7 @@ import Diagram from '@/components/Diagram';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: "Lombard Finance Guide 2026 — LBTC Bitcoin Liquid Staking",
@@ -146,6 +147,7 @@ export default function LombardFinanceLBTCGuide() {
 
         <h1 style={h1Style}>Lombard Finance Guide 2026 &amp;mdash; LBTC Bitcoin Liquid Staking Explained</h1>
 
+        <LastUpdated pathKey="/learn/lombard-finance-lbtc-bitcoin-liquid-staking-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>

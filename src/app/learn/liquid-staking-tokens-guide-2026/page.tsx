@@ -3,6 +3,7 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -366,6 +367,7 @@ export default function LSTGuide() {
 
         <header style={headerStyle}>
           <h1 style={h1Style}>Liquid Staking Tokens</h1>
+          <LastUpdated pathKey="/learn/liquid-staking-tokens-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <div style={badgeContainerStyle}>

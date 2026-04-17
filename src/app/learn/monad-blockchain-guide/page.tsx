@@ -11,6 +11,7 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -150,6 +151,7 @@ export default function MonadBlockchainGuide() {
       <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#836EF9] to-[#58a6ff] bg-clip-text text-transparent">
         Monad Blockchain: The Parallel EVM L1 Explained
       </h1>
+      <LastUpdated pathKey="/learn/monad-blockchain-guide" />
       <ReadingTime />
       <AutoTOC />
       <p className="text-xl text-[#8b949e] mb-8">

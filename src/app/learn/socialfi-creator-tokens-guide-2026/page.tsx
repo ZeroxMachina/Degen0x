@@ -8,6 +8,7 @@ import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -120,6 +121,7 @@ export default function SocialfiCreatorTokensGuide() {
           <h1 style={{ fontSize: 'clamp(28px, 5vw, 48px)', fontWeight: 800, lineHeight: 1.15, marginBottom: '16px', background: 'linear-gradient(135deg, #58a6ff, #79c0ff)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
             SocialFi Guide 2026: How Creator Tokens, Farcaster & Lens Are Reshaping Social Media
           </h1>
+          <LastUpdated pathKey="/learn/socialfi-creator-tokens-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: '#8b949e', fontSize: '17px', lineHeight: 1.7, marginBottom: '8px' }}>

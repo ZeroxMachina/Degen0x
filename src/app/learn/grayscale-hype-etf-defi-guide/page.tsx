@@ -6,6 +6,7 @@ import BackToTop from "@/components/BackToTop";
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -69,6 +70,7 @@ export default function GrayscaleHYPEETFGuide() {
           <h1 style={{ fontSize: "2.5rem", fontWeight: 900, marginBottom: 16, lineHeight: 1.2 }}>
             Grayscale HYPE ETF Guide: The First DeFi Protocol ETF Filing Explained
           </h1>
+          <LastUpdated pathKey="/learn/grayscale-hype-etf-defi-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: S.text2, fontSize: "1.1rem", marginBottom: 24, lineHeight: 1.8 }}>

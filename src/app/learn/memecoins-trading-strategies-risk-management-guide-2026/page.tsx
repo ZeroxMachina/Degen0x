@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -336,6 +337,7 @@ export default function MemecoinsTradingStrategyPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Memecoins: Trading Strategies, Risk Management & How They Work in 2026</h1>
 
+        <LastUpdated pathKey="/learn/memecoins-trading-strategies-risk-management-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>Updated: April 2, 2026 | Reading Time: 14 min</div>

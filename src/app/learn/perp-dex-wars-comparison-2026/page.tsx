@@ -13,6 +13,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -180,6 +181,7 @@ export default function PerpDEXWarsComparison2026() {
           >
             Perp DEX Wars 2026: Hyperliquid vs Aster vs Lighter vs Paradex
           </h1>
+          <LastUpdated pathKey="/learn/perp-dex-wars-comparison-2026" />
           <ReadingTime />
           <AutoTOC />
           <p

@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -319,6 +320,7 @@ export default function CryptoOTCTradingDarkPoolsPage() {
         {/* Main Title */}
         <h1 style={h1Style}>Crypto OTC Trading & Dark Pools Guide 2026</h1>
 
+        <LastUpdated pathKey="/learn/crypto-otc-trading-dark-pools-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>

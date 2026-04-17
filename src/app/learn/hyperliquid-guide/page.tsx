@@ -4,6 +4,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -48,6 +49,7 @@ export default function HyperLiquidGuidePage() {
         >
           HyperLiquid: The Complete Guide for 2026
         </h1>
+        <LastUpdated pathKey="/learn/hyperliquid-guide" />
         <ReadingTime />
         <AutoTOC />
         <p

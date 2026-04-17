@@ -8,6 +8,7 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 export const metadata: Metadata = {
   title: `CoinTracker vs ZenLedger 2026: Which Crypto Tax Software Is Better?`,
@@ -53,6 +54,7 @@ export default function CoinTrackerVsZenLedgerPage() {
         section="taxes"
       />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Taxes", href: "/taxes" }, { label: "Compare", href: "/taxes/compare/cointracker-vs-zenledger" }, { label: "CoinTracker vs ZenLedger", href: "/taxes/compare/cointracker-vs-zenledger" }]} />
       <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">CoinTracker vs ZenLedger: Full Comparison ({CURRENT_YEAR})</h1>
+      <LastUpdated pathKey="/taxes/compare/cointracker-vs-zenledger" />
       <p className="text-sm text-[var(--color-text-secondary)] mb-8">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</p>
       <div className="prose prose-invert max-w-none mb-10">
         <p className="text-[var(--color-text-secondary)] leading-relaxed text-lg">

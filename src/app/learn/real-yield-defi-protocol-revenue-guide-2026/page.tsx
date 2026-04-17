@@ -5,6 +5,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -333,6 +334,7 @@ export default function RealYieldDeFiGuidePage() {
         {/* Main Title */}
         <h1 style={h1Style}>Real Yield in DeFi 2026: Protocol Revenue vs Token Emissions</h1>
 
+        <LastUpdated pathKey="/learn/real-yield-defi-protocol-revenue-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <div style={metaStyle}>

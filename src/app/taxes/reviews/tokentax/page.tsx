@@ -8,6 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MethodologyBlock from '@/components/MethodologyBlock';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -57,6 +58,7 @@ export default function TokenTaxReviewPage() {
       <article>
         <header className="mb-8">
           <h1 className="text-4xl font-bold text-[var(--color-text)] mb-4">TokenTax Review {CURRENT_YEAR}</h1>
+          <LastUpdated pathKey="/taxes/reviews/tokentax" />
           <div className="flex items-center gap-4 mb-4">
             <StarRating rating={4.4} size="lg" />
             <span className="text-sm text-[var(--color-text-secondary)]">Last updated: {CURRENT_MONTH} {CURRENT_YEAR}</span>

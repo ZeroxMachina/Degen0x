@@ -5,6 +5,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -146,6 +147,7 @@ export default function MovementNetworkPage() {
           <span style={{ ...badgeStyle, background: '#6366f1', color: '#fff' }}>Layer 2</span>
           <span style={{ ...badgeStyle, background: '#3d444d', color: '#e6edf3' }}>Advanced</span>
           <h1 style={h1Style}>Movement Network Guide 2026</h1>
+          <LastUpdated pathKey="/learn/movement-network-move-ethereum-l2-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: '#8b949e', marginBottom: 20 }}>Move language Ethereum L2 with 10,000+ TPS, EVM compatibility, $200M TVL. Covers technology, MOVE token scandal, Move Industries rebrand, and 2026 outlook.</p>

@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -131,6 +132,7 @@ export default function CryptoPassiveIncomeGuide() {
           <h1 style={{ fontSize: "clamp(1.75rem, 4vw, 2.25rem)", fontWeight: 800, lineHeight: 1.2, marginBottom: 12, color: "#e6edf3", background: "linear-gradient(135deg, #58a6ff, #3fb950)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
             Crypto Passive Income Guide 2026: Staking, Yield Farming & Lending
           </h1>
+          <LastUpdated pathKey="/learn/crypto-passive-income-guide-2026" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 16, lineHeight: 1.7 }}>

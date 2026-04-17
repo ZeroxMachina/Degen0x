@@ -7,6 +7,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -144,6 +145,7 @@ export default function PythNetworkGuide() {
 
         <h1 style={h1Style}>Pyth Network Guide 2026 — Cross-Chain Oracle, Price Feeds &amp; PYTH</h1>
 
+        <LastUpdated pathKey="/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026" />
         <ReadingTime />
         <AutoTOC />
         <p style={{ fontSize: '1.1rem', marginBottom: '8px', color: '#d1d9e0' }}>

@@ -13,6 +13,7 @@ import RelatedContent from '@/components/RelatedContent';
 import LiveMiniStat from '@/components/LiveMiniStat';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -146,6 +147,7 @@ export default function BitcoinStrategicReserveGuidePage() {
           Bitcoin Strategic Reserve: Why Governments Are Stacking BTC in 2026
         </h1>
 
+        <LastUpdated pathKey="/learn/bitcoin-strategic-reserve-guide" />
         <ReadingTime />
         <AutoTOC />
         <p

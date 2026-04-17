@@ -8,6 +8,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 const PAGE_URL = `${SITE_URL}/learn/hyperliquid-hip3-tokenized-futures-guide`;
@@ -147,6 +148,7 @@ export default function HyperliquidHip3TokenizedFuturesGuidePage() {
           }}>
             Hyperliquid HIP-3: How to Trade Oil, Stocks &amp; Commodities On-Chain in 2026
           </h1>
+          <LastUpdated pathKey="/learn/hyperliquid-hip3-tokenized-futures-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ color: "#8b949e", fontSize: 17, lineHeight: 1.7, marginBottom: 12 }}>

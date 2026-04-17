@@ -10,6 +10,7 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -96,6 +97,7 @@ export default function BitPayVsCryptoComPage() {
       <h1 className="text-3xl md:text-4xl font-bold text-[var(--color-text)] mb-4">
         BitPay Card vs Crypto.com Visa ({CURRENT_YEAR})
       </h1>
+      <LastUpdated pathKey="/crypto-cards/compare/bitpay-vs-crypto-com" />
       <p className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed">
         BitPay and Crypto.com represent opposite ends of the crypto card spectrum. BitPay offers a
         no-frills prepaid card for simply spending your crypto, while Crypto.com builds an entire

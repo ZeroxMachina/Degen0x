@@ -8,6 +8,7 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
 
 
 export const metadata: Metadata = {
@@ -120,6 +121,7 @@ export default function Layer2GuidePage() {
           <h1 style={{ fontSize: 38, fontWeight: 900, color: "var(--color-text, #e6edf3)", lineHeight: 1.2, marginBottom: 14 }}>
             The Complete Guide to Layer 2 Scaling Solutions
           </h1>
+          <LastUpdated pathKey="/learn/layer-2-scaling-guide" />
           <ReadingTime />
           <AutoTOC />
           <p style={{ fontSize: 16, color: "var(--color-text-secondary, #8b949e)", lineHeight: 1.7, maxWidth: 700 }}>
