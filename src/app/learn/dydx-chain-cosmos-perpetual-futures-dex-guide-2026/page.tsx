@@ -3,6 +3,7 @@ import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -889,6 +890,7 @@ export default function DydxChainGuide() {
             })
           }}
         />
+      <LiveMiniStat id="cosmos" />
       <RelatedContent category="learn" currentSlug="/learn/dydx-chain-cosmos-perpetual-futures-dex-guide-2026" />
       </article>
   );

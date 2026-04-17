@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -467,6 +468,7 @@ export default function HowToStakeEthereumCompleteGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Stake Ethereum: Complete Guide 2026 | degen0x", "description": "Ethereum staking guide 2026: Solo staking (32 ETH), Lido stETH, Rocket Pool rETH, Coinbase cbETH. APY 3.5-4.2%. Comparison table, risks, and rewards.", "url": "https://degen0x.com/learn/how-to-stake-ethereum-complete-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/how-to-stake-ethereum-complete-guide" />
       </article>
   );

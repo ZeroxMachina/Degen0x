@@ -10,6 +10,7 @@ import { SITE_URL } from "@/lib/constants";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -788,6 +789,7 @@ export default function BitcoinSafeHavenGuidePage() {
 
           <a href="/learn/erc-8183-agentic-commerce-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Erc 8183 Agentic Commerce Guide</a>
         </nav>
+      <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-safe-haven-guide-2026" />
       </article>
   );

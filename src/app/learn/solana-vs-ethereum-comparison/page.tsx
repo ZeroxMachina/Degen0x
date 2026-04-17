@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -482,6 +483,7 @@ export default function SolanaVsEthereumComparison() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana vs Ethereum Comparison 2026 | degen0x", "description": "Solana vs Ethereum: TPS (4,000 vs 15-30), fees ($0.00025 vs $1-50), PoH vs PoS, TVL, ecosystem, Rust vs Solidity, decentralization tradeoffs, and uptime", "url": "https://degen0x.com/learn/solana-vs-ethereum-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/solana-vs-ethereum-comparison" />
       </article>
   );

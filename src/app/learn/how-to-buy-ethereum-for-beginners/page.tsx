@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -510,6 +511,7 @@ export default function HowToBuyEthereumBeginners() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Buy Ethereum for Beginners: Step-by-Step Guide 2026", "description": "Learn how to buy Ethereum as a complete beginner. Compare exchanges, fund accounts, execute your first ETH purchase, and transfer to your own wallet securely.", "url": "https://degen0x.com/learn/how-to-buy-ethereum-for-beginners", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/how-to-buy-ethereum-for-beginners" />
       </article>
   );

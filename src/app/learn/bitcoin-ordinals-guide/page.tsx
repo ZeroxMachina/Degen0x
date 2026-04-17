@@ -1,6 +1,7 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 const S = { bg:"#0d1117",border:"#30363d",text:"#e6edf3",text2:"#8b949e",blue:"#58a6ff",green:"#3fb950",orange:"#f7931a",yellow:"#d29922",purple:"#bc8cff",cyan:"#06b6d4" };
 const breadcrumbs = [{label:"Home",href:"/"},{label:"Learn",href:"/learn"},{label:"Bitcoin Ordinals Guide",href:"/learn/bitcoin-ordinals-guide"}];
 export default function BitcoinOrdinalsGuidePage() {
@@ -121,6 +122,7 @@ export default function BitcoinOrdinalsGuidePage() {
           }}
         />
       </article>
+      <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-ordinals-guide" />
     </main>
   );

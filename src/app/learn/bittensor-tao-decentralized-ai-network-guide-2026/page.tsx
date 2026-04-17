@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -913,6 +914,7 @@ export default function BittensorTAOGuide() {
 
           <a href="/learn/bitcoin-bitvm-programmability-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Bitcoin Bitvm Programmability Guide</a>
         </nav>
+      <LiveMiniStat id="bittensor" />
       <RelatedContent category="learn" currentSlug="/learn/bittensor-tao-decentralized-ai-network-guide-2026" />
       </article>
   );

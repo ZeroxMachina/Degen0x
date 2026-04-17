@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -639,6 +640,7 @@ export default function BitcoinEtfGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin ETF Guide 2026: Institutional Adoption & $128B AUM", "description": "Complete guide to Bitcoin ETFs in 2026. $128B AUM, 38% institutional holdings, IBIT leading with $8.4B Q1 inflows. How ETF options, inflows, and institutions", "url": "https://degen0x.com/learn/bitcoin-etf-institutional-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-etf-institutional-guide-2026" />
       </article>
   );

@@ -6,6 +6,7 @@ import BackToTop from '@/components/BackToTop';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -683,6 +684,7 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sui Private Transactions & Seal Framework: Compliant", "description": "Learn how Sui Network", "url": "https://degen0x.com/learn/sui-private-transactions-seal-framework-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="sui" />
       <RelatedContent category="learn" currentSlug="/learn/sui-private-transactions-seal-framework-guide-2026" />
 </div>
 

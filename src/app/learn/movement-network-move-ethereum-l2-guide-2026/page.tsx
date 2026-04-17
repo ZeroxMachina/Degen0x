@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -296,6 +297,7 @@ export default function MovementNetworkPage() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Movement Network Guide 2026 \u2014 Move Language Ethereum L2", "description": "Complete guide to Movement Network: Move language L2 on Ethereum, 10K+ TPS, MOVE token scandal, market maker collapse, and 2026 ecosystem outlook.", "url": "https://degen0x.com/learn/movement-network-move-ethereum-l2-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/movement-network-move-ethereum-l2-guide-2026" />
       </article>
   );

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -1143,6 +1144,7 @@ export default function BTCFiGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BTCFi Guide 2026: Bitcoin DeFi, Staking & Ordinals Explained", "description": "Complete BTCFi guide 2026: Bitcoin DeFi protocols, native staking with Babylon, liquid staking (LBTC), Ordinals, Runes, BRC-20 tokens, and top protocols like", "url": "https://degen0x.com/learn/btcfi-bitcoin-defi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/btcfi-bitcoin-defi-guide-2026" />
 </div>
   );

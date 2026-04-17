@@ -6,6 +6,7 @@ import UniswapV4HooksExplorer from "@/components/UniswapV4HooksExplorer";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -743,6 +744,7 @@ export default function UniswapV4HooksGuidePage() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Uniswap v4 Hooks Guide 2026 \u2014 How They Work & Why They", "description": "Uniswap v4 Hooks let developers customize liquidity pools with custom logic. This guide explains what Hooks are, how the lifecycle works, real use cases, and", "url": "https://degen0x.com/learn/uniswap-v4-hooks-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="uniswap" />
       <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/uniswap-v4-hooks-guide" />
 </div>

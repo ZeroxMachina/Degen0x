@@ -497,6 +497,7 @@ import { Connection, Transaction, PublicKey } from '@solana/web3.js';
 import { createMintToInstruction } from '@metaplex-foundation/mpl-token-metadata';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const POST = async (request: NextRequest) => {
@@ -890,6 +891,7 @@ Access-Control-Allow-Headers: Content-Type`}
 
           <a href="/learn/crypto-leverage-trading-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Leverage Trading Guide 2026</a>
         </nav>
+      <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/solana-blinks-actions-blockchain-links-guide-2026" />
       </article>
   );

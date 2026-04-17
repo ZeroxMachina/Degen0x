@@ -11,6 +11,7 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -638,6 +639,7 @@ export default function BitcoinTreasuryCompaniesGuidePage() {
 
           <a href="/learn/crypto-on-ramps-off-ramps-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto On Ramps Off Ramps Guide 2026</a>
         </nav>
+      <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-treasury-companies-guide" />
       </article>
   );

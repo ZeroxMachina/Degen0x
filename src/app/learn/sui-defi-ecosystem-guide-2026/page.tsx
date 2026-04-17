@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -878,6 +879,7 @@ export default function SuiDeFiEcosystemPage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sui DeFi Ecosystem Guide 2026: Complete Platform Overview", "description": "Deep dive into Sui blockchain DeFi protocols, ecosystem metrics, and opportunities. Learn about Suilend, Navi, Cetus, and other major DeFi platforms on Sui.", "url": "https://degen0x.com/learn/sui-defi-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="sui" />
       <RelatedContent category="learn" currentSlug="/learn/sui-defi-ecosystem-guide-2026" />
 </div>
   );

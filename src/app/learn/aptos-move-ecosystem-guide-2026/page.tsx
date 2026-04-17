@@ -3,6 +3,7 @@ import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -1043,6 +1044,7 @@ export default function AptosMoveguide() {
             })
           }}
         />
+      <LiveMiniStat id="aptos" />
       <RelatedContent category="learn" currentSlug="/learn/aptos-move-ecosystem-guide-2026" />
       </article>
   );

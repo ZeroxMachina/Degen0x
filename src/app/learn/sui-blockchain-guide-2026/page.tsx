@@ -5,6 +5,7 @@ import BackToTop from '@/components/BackToTop';
 import { ArticleStructuredData, FAQStructuredData } from "@/components/StructuredData";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -711,6 +712,7 @@ export default function SuiBlockchainGuide() {
       </article>
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token", "description": "Complete Sui blockchain guide covering object-centric architecture, Move language, ecosystem, tokenomics, and how SUI compares to Solana. Updated March 2026.", "url": "https://degen0x.com/learn/sui-blockchain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="sui" />
       <RelatedContent category="learn" currentSlug="/learn/sui-blockchain-guide-2026" />
 </div>
   );

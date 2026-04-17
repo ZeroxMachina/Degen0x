@@ -10,6 +10,7 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -738,6 +739,7 @@ export default function JupiterSolanaGuidePage() {
         </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Jupiter Guide 2026: Solana", "description": "Jupiter is Solana", "url": "https://degen0x.com/learn/jupiter-solana-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/jupiter-solana-guide" />
     </article>
   );

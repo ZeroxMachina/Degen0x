@@ -5,6 +5,7 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 export const metadata: Metadata = {
   title: 'Jito Protocol Guide 2026 — Solana MEV & Liquid Staking',
@@ -1012,6 +1013,7 @@ export default function JitoGuide() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Jito Protocol Guide 2026 \u2014 Solana MEV & Liquid Staking", "description": "Comprehensive guide to Jito Protocol: MEV optimization, liquid staking with JitoSOL, JTO governance token, and institutional adoption on Solana.", "url": "https://degen0x.com/learn/jito-solana-mev-liquid-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="solana" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/jito-solana-mev-liquid-staking-guide-2026" />
 </div>

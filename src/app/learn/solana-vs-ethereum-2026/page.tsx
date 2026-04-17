@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -149,6 +150,7 @@ export default function SolanaVsEthereumPage() {
             })
           }}
         />
+      <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/solana-vs-ethereum-2026" />
       </article>
   );

@@ -587,6 +587,7 @@ export default function SolanaTokenExtensionsGuide() {
 import { createMint } from '@solana/spl-token';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 const mint = await createMint(
@@ -947,6 +948,7 @@ await initializeTransferHook(
         />
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Token Extensions & Token-2022 Guide 2026 | degen0x", "description": "Complete guide to Solana Token Extensions and Token-2022 SPL program. Learn about confidential transfers, transfer hooks, transfer fees, and real-world token", "url": "https://degen0x.com/learn/solana-token-extensions-token-2022-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/solana-token-extensions-token-2022-guide-2026" />
 </div>
 

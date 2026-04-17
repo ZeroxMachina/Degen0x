@@ -4,6 +4,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -1116,6 +1117,7 @@ export default function EthereumETFStakingGuide() {
       </article>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum ETF Staking Guide 2026 \u2014 Earn 3.5-4.5% Yields |", "description": "Complete guide to Ethereum staking ETFs 2026: Compare 8 spot ETFs, staking yields, fee breakdown, BlackRock ETHB 82% monthly distribution, and SEC regulatory", "url": "https://degen0x.com/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="ethereum" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026" />
 </main>

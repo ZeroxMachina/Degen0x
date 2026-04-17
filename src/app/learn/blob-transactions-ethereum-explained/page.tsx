@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -520,6 +521,7 @@ export default function BlobTransactionsEthereumExplained() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blob Transactions on Ethereum Explained | Type-3", "description": "Master blob transactions (EIP-4844): Type-3 transactions, 128KB data blobs, KZG commitments, blob gas pricing. Calldata vs blobs cost comparison. L2 cost", "url": "https://degen0x.com/learn/blob-transactions-ethereum-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/blob-transactions-ethereum-explained" />
       </article>
   );

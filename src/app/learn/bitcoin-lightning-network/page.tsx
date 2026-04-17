@@ -6,6 +6,7 @@ import TableOfContents from "@/components/TableOfContents";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -583,6 +584,7 @@ export default function LightningNetworkGuidePage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is the Lightning Network?", "description": "Bitcoin Lightning Network guide: Instant payments, zero fees, scalability. Learn channels, routing, privacy, and the future of Bitcoin payments.", "url": "https://degen0x.com/learn/bitcoin-lightning-network", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-lightning-network" />
 </div>
   );

@@ -4,6 +4,7 @@ import { ArticleStructuredData, FAQStructuredData } from "@/components/Structure
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -399,6 +400,7 @@ export default function BitcoinRunesGuidePage() {
             })
           }}
         />
+      <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-runes-guide-2026" />
       </article>
   );

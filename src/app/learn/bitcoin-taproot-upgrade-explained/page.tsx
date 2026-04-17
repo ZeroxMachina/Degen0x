@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 export const metadata: Metadata = {
@@ -509,6 +510,7 @@ export default function BitcoinTaprootGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Taproot Upgrade Explained 2026: Schnorr, MAST,", "description": "Complete Taproot guide 2026: Schnorr signatures 65 bytes, MAST smart contracts, privacy improvements, Ordinals, 25% adoption, Lightning Network, BIP", "url": "https://degen0x.com/learn/bitcoin-taproot-upgrade-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-taproot-upgrade-explained" />
       </article>
   );

@@ -4,6 +4,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -862,6 +863,7 @@ export default function BitcoinCovenantsOPCATGuidePage() {
 
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Covenants & OP_CAT Guide 2026: BIP-347, Vaults,", "description": "Complete guide to Bitcoin covenants and OP_CAT (BIP-347) in 2026. Understand how OP_CAT enables programmable Bitcoin, covenant proposals compared, real-world", "url": "https://degen0x.com/learn/bitcoin-covenants-opcat-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-covenants-opcat-guide-2026" />
 </div>
   );

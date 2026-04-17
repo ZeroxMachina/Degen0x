@@ -4,6 +4,7 @@ import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
+import LiveMiniStat from '@/components/LiveMiniStat';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -995,6 +996,7 @@ export default function BitcoinMiningGuide() {
             })
           }}
         />
+      <LiveMiniStat id="bitcoin" />
       <Diagram slug="pow-vs-pos" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-mining-proof-of-work-economics-guide-2026" />
       </article>
