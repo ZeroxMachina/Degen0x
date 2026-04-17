@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-17T10:26:20Z",
-  "briefing_id": "briefing-2026-04-17-10",
+  "generated_at": "2026-04-17T13:35:00Z",
+  "briefing_id": "briefing-2026-04-17-13",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-17-10-001",
-      "headline": "Charles Schwab Opens Spot BTC and ETH Trading to Retail Clients",
-      "slug": "schwab-spot-btc-eth-retail-launch",
-      "tldr": "Schwab rolled out direct spot Bitcoin and Ether trading for retail accounts, with custody in-house and execution routed to Paxos.",
-      "why_it_matters": "Why it matters: Schwab's 35M-plus brokerage base now gets native crypto alongside equities, collapsing the onboarding gap between TradFi and on-chain assets.",
+      "id": "story-2026-04-17-13-001",
+      "headline": "Grinex Halts Trading After $15M State-Level Attack Drains USDT Reserves",
+      "slug": "grinex-halts-trading-15m-state-level-attack",
+      "tldr": "Sanctioned Russian exchange Grinex suspended trading after attackers moved $15M in USDT onto Tron and Ethereum, blaming a hostile-state operation.",
+      "why_it_matters": "Why it matters: Grinex is widely treated as the post-Garantex reincarnation of Russia's sanctioned rails, so a successful drain signals that even state-aligned off-ramps are losing their operational cover.",
       "the_details": [
-        "Launch covers spot BTC and ETH, integrated inside existing Schwab brokerage portfolios.",
-        "Schwab self-custodies client crypto; Paxos handles execution on the trading venue side.",
-        "Move lands two years after Schwab filed for its spot Bitcoin ETF and mirrors Fidelity's retail flow."
+        "Elliptic traced roughly $15M in USDt leaving Grinex-linked wallets and converting into other assets across Tron and Ethereum soon after the theft.",
+        "Grinex blamed the breach on resources 'available only to entities of hostile states' and paused deposits, withdrawals and trading pending investigation.",
+        "Russian reports peg losses near 1B rubles, with outflows routed into ETH and TRX to complicate on-chain tracing."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/sanctioned-crypto-exchange-grinex-suspends-trading-after-14m-hack/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-17T12:40:00Z"
+    },
+    {
+      "id": "story-2026-04-17-13-002",
+      "headline": "Drift Relaunches as USDT Perps DEX After $148M Tether-Led Rescue",
+      "slug": "drift-relaunches-usdt-perps-148m-tether-rescue",
+      "tldr": "Solana-based Drift secured $148M from Tether and partners to reopen as a USDT-denominated perps DEX after last month's $285M North Korean exploit.",
+      "why_it_matters": "Why it matters: A Tether-underwritten bailout of a flagship Solana perps venue sets a template for private rescues replacing insurance funds, and locks more DeFi liquidity into USDT's orbit.",
+      "the_details": [
+        "TRM Labs attributed the April 1 Drift exploit to North Korean actors, making it the largest DeFi hack of 2026 and second-largest ever on Solana.",
+        "The $148M package from Tether and partners backstops more than $270M in exploited client assets as Drift pivots to USDT-settled perps.",
+        "Relaunch keeps the venue on Solana, preserving the chain's lead in on-chain perps volume after February's record $650B month."
+      ],
+      "source": "Crypto.com",
+      "source_url": "https://crypto.com/en/coins-ai/solana/latest-news",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-17T11:05:00Z"
+    },
+    {
+      "id": "story-2026-04-17-13-003",
+      "headline": "BTC Stalls Below $76K as $450M in Sell Orders Cap Breakout Attempt",
+      "slug": "btc-stalls-76k-450m-sell-orders",
+      "tldr": "Bitcoin opened near $75,150 but ran into $450M of sell-side liquidity overhead as derivatives data flashed caution and liquidations ticked up.",
+      "why_it_matters": "Why it matters: A visible supply wall right at the breakout level tells traders the next leg needs a macro catalyst, not just spot bid — setting up today's Waller speech as a volatility trigger.",
+      "the_details": [
+        "BTC opened at $75,152 on Friday, 0.5% above Thursday's $74,811, with ETH slipping 0.5% to $2,348.",
+        "Total crypto market cap sits at $2.63T on $120.3B of 24h volume, up 0.6% on the day.",
+        "Fed Governor Christopher Waller speaks on the Economic Outlook at 14:00 ET, the next macro catalyst in front of the $76K level."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-17T13:00:00Z"
+    },
+    {
+      "id": "story-2026-04-17-13-004",
+      "headline": "Mercado Libre Shutters Mercado Coin, Ending LatAm's Largest E-Commerce Token",
+      "slug": "mercado-libre-shutters-mercado-coin",
+      "tldr": "From today, Mercado Libre users can no longer buy, sell or earn cashback in Mercado Coin, retiring the biggest homegrown crypto in Latin American commerce.",
+      "why_it_matters": "Why it matters: If the region's dominant e-commerce platform can't make a captive token stick, the 'branded stablecoin for loyalty' thesis takes a real hit just as banks consider their own launches.",
+      "the_details": [
+        "Mercado Coin cashback, buy and sell functionality is disabled starting April 17 across Mercado Libre's markets.",
+        "The shutdown leaves Mercado Pago's fiat and stablecoin rails as the sole crypto-adjacent consumer product for the group.",
+        "Move follows broader LatAm consolidation around USDT and USDC as default dollar rails over retailer-issued tokens."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/",
       "category": "adoption",
-      "impact": "high",
-      "timestamp": "2026-04-17T09:15:00Z"
+      "impact": "medium",
+      "timestamp": "2026-04-17T09:30:00Z"
     },
     {
-      "id": "story-2026-04-17-10-002",
-      "headline": "SEC Carves Broker-Dealer Exception for Decentralized Trading Interfaces",
-      "slug": "sec-covered-ui-broker-exception",
-      "tldr": "The SEC said it will not object to 'Covered User Interface Providers' operating frontends for crypto asset securities without broker-dealer registration.",
-      "why_it_matters": "Why it matters: First explicit US carve-out separating protocol frontends from broker-dealer obligations, de-risking the Uniswap-style UI stack.",
+      "id": "story-2026-04-17-13-005",
+      "headline": "DeBridge Unlocks $9.2M in DBR, Inflating Circulating Supply by 12.9%",
+      "slug": "debridge-unlocks-92m-dbr",
+      "tldr": "DeBridge releases 12.9% of circulating DBR — about $9.19M at current prices — into the market today, the largest single-event unlock on the calendar.",
+      "why_it_matters": "Why it matters: A double-digit supply jolt on a mid-cap interop token is a live test of how well private OTC desks are absorbing unlocks this cycle, with read-through to LayerZero and Wormhole peers.",
       "the_details": [
-        "Statement dated April 13, 2026 follows the joint SEC-CFTC interpretive framework on digital asset taxonomy.",
-        "Applies to software interfaces that only let users prepare and submit transactions in crypto asset securities.",
-        "Operationalizes the Howey test so assets can transition in and out of securities status over time."
-      ],
-      "source": "Sidley Austin / SEC",
-      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-17T08:45:00Z"
-    },
-    {
-      "id": "story-2026-04-17-10-003",
-      "headline": "Rhea Finance Loses $7.6M in Fake-Contract Exploit; Tether Freezes $3.29M USDT",
-      "slug": "rhea-finance-exploit-tether-freeze",
-      "tldr": "Attackers drained at least $7.6M from Rhea Finance using spoofed contracts and seeded liquidity before Tether blacklisted $3.29M USDT tied to the thieves.",
-      "why_it_matters": "Why it matters: Same fake-asset playbook used against Drift's $285M hack earlier this month — oracle and listing hygiene is now the top DeFi risk vector.",
-      "the_details": [
-        "Exploit used fake token contracts and thin liquidity to trick Rhea's pricing into over-collateralizing loans.",
-        "Tether blacklisted ~3.29M USDT linked to exploiter wallets within hours of on-chain detection.",
-        "Second major fake-token oracle exploit in April, after Drift Protocol's $285M loss on April 1."
+        "DBR unlock size: 12.9% of circulating supply, worth approximately $9.19M at pre-event prices.",
+        "Unlock lands as interop tokens face rising competition from Solana-native bridges and LayerZero V2 integrations.",
+        "Price action into the unlock will set the tone for Q2's unlock schedule across bridge protocols."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/",
-      "category": "security",
+      "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-17T07:30:00Z"
-    },
-    {
-      "id": "story-2026-04-17-10-004",
-      "headline": "Fake Ledger Live App on Apple App Store Drained $9.5M From 50+ Wallets",
-      "slug": "fake-ledger-app-apple-drain",
-      "tldr": "A counterfeit Ledger Live app that passed Apple's review cleared at least $9.5M across BTC, ETH, SOL, TRX and XRP wallets between April 7-13.",
-      "why_it_matters": "Why it matters: Apple's vetting was supposed to be the security floor — the breach shreds the 'App Store is safe by default' assumption for self-custody tools.",
-      "the_details": [
-        "Victims entered seed phrases into the malicious app, giving attackers full signing access across 5+ chains.",
-        "CoinDesk and Ledger flagged the listing on April 14 after loss patterns became visible on-chain.",
-        "At least 50 confirmed victims; total stolen may climb as more wallets report unauthorized sweeps."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/business/2026/04/14/a-fake-ledger-app-on-the-apple-app-store-just-drained-usd9-5-million-in-crypto",
-      "category": "security",
-      "impact": "medium",
-      "timestamp": "2026-04-17T06:10:00Z"
-    },
-    {
-      "id": "story-2026-04-17-10-005",
-      "headline": "Axelar Rips 29%, BIO Protocol 17% as Fear Index Hits 23 'Extreme Fear'",
-      "slug": "axelar-bio-rally-extreme-fear",
-      "tldr": "Axelar (AXL) surged 29.14% and BIO Protocol 17.52% over 24 hours even as the Crypto Fear & Greed Index dropped to 23 and BTC dominance held 58.5%.",
-      "why_it_matters": "Why it matters: Targeted rotations into interop and DeSci names are breaking out despite 'Bitcoin Season' on CMC's index — pockets of alpha exist while macro sentiment stays bearish.",
-      "the_details": [
-        "Total crypto market cap sits at $2.63T, up 0.6% on $120.3B of 24h volume.",
-        "CMC Altcoin Season Index reads 34/100 — still Bitcoin Season — while BTC trades near $74,768.",
-        "BIO is the flagship DeSci asset, pitching on-chain scientific IP and research funding rails."
-      ],
-      "source": "CoinMarketCap / CoinGabbar",
-      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/latest-crypto-market-update-april-17-based-siren-price-today",
-      "category": "altcoins",
-      "impact": "medium",
-      "timestamp": "2026-04-17T05:00:00Z"
+      "timestamp": "2026-04-17T08:00:00Z"
     }
   ]
 }
