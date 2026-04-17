@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Electrum Wallet Review (2026) | degen0x`,
   description: "In-depth Electrum wallet review. The veteran Bitcoin-only wallet with advanced features, hardware wallet support, and Lightning Network integration.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function ElectrumReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Electrum Wallet Review (2026)"
+        url="https://degen0x.com/wallets/reviews/electrum"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Electrum",
@@ -53,7 +69,7 @@ export default function ElectrumReviewPage() {
       categorySlug="wallets"
       overview="Electrum has been a cornerstone of the Bitcoin ecosystem since 2011, making it one of the oldest and most trusted Bitcoin wallets. As a lightweight SPV (Simplified Payment Verification) client, it connects to remote servers instead of downloading the full Bitcoin blockchain, allowing fast setup and low resource usage. Electrum is known for its advanced feature set including custom transaction fees, replace-by-fee (RBF), coin control, multi-signature wallets, and Lightning Network support. While the interface may feel dated compared to modern wallets, its reliability and feature depth make it the wallet of choice for serious Bitcoin users."
       sections={[
-        { id: "features", title: "Core Features", content: "Electrum offers a comprehensive set of Bitcoin-specific features. Custom fee settings let you precisely control transaction costs with manual sat/byte input. Replace-by-fee (RBF) allows you to speed up unconfirmed transactions. Coin control enables you to select specific UTXOs for privacy-conscious spending. Multi-signature wallet support allows shared wallets requiring multiple signatures. The wallet also supports watch-only wallets, cold storage setups, and various seed types including standard and Segwit." },
+        { id: "features", title: "Core Features — Wallets (wallets / reviews / electrum)", content: "Electrum offers a comprehensive set of Bitcoin-specific features. Custom fee settings let you precisely control transaction costs with manual sat/byte input. Replace-by-fee (RBF) allows you to speed up unconfirmed transactions. Coin control enables you to select specific UTXOs for privacy-conscious spending. Multi-signature wallet support allows shared wallets requiring multiple signatures. The wallet also supports watch-only wallets, cold storage setups, and various seed types including standard and Segwit." },
         { id: "security", title: "Security & Open Source", content: "Electrum is fully open source and has been audited by the community for over a decade. Private keys are encrypted locally using AES-256. The wallet supports hardware wallet integration with Ledger, Trezor, Coldcard, BitBox, and Keepkey. Two-factor authentication is available through the TrustedCoin plugin. Electrum uses its own seed format (not BIP39), which provides additional security through version numbering but means seeds are not directly compatible with other wallets." },
         { id: "lightning", title: "Lightning Network", content: "Electrum includes built-in Lightning Network support, allowing users to open channels, make Lightning payments, and receive funds via Lightning invoices. The implementation is trampoline-based, routing payments through trampoline nodes for simplified pathfinding. While not as full-featured as dedicated Lightning wallets, the integration provides a convenient way to make fast, low-cost Bitcoin transactions without a separate app." },
         { id: "hardware", title: "Hardware Wallet Integration", content: "Electrum has excellent hardware wallet support. It works with Ledger Nano S/X, Trezor Model One/T, Coldcard, BitBox02, and KeepKey. The integration allows you to use Electrum's advanced interface and features while keeping private keys safely on the hardware device. This combination is particularly popular among Coldcard users who prefer Electrum's coin control and PSBT support." },
@@ -102,6 +118,18 @@ export default function ElectrumReviewPage() {
         { title: "Best Privacy Wallets", href: "/wallets/best/privacy" }
       ]}
     />
+      <ArticleSchema
+        headline="Electrum Wallet Review (2026) | degen0x"
+        description="In-depth Electrum wallet review. The veteran Bitcoin-only wallet with advanced features, hardware wallet support, and Lightning Network integration."
+        url="https://degen0x.com/wallets/reviews/electrum"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/electrum" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "In-depth Electrum wallet review. The veteran Bitcoin-only wallet with advanced features, hardware wallet support, and Lightning Network integration.", "url": "https://degen0x.com/wallets/reviews/electrum", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

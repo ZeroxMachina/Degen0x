@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Crypto Exchange Fee Comparison | degen0x',
   description: "Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange",
@@ -150,6 +158,24 @@ export default function CryptoExchangeFeeComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Exchange Fee Comparison | degen0x"
+        description="Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange"
+        url="https://degen0x.com/tools/crypto-exchange-fee-comparison-tool"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/crypto-exchange-fee-comparison-tool" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/crypto-exchange-fee-comparison-tool" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/crypto-exchange-fee-comparison-tool"
+        name="Crypto Exchange Fee Comparison"
+        description="Compare crypto exchange fees across Binance, Kraken, Coinbase. Fee structures, real-time data sources, API rates. Optimize fees by trading volume and exchange"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

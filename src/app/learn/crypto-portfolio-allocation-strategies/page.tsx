@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Portfolio Allocation Strategies 2026: Conservative,",
   description: "Master portfolio allocation: Conservative (70% BTC/ETH, 20% large-cap, 10% stables), Moderate (50/30/20), Aggressive (30/40/30). Learn rebalancing (time-based",
@@ -203,6 +207,14 @@ export default function CryptoPortfolioAllocationGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Portfolio Allocation Strategies 2026: Conservative,"
+        description="Master portfolio allocation: Conservative (70% BTC/ETH, 20% large-cap, 10% stables), Moderate (50/30/20), Aggressive (30/40/30). Learn rebalancing (time-based"
+        url="https://degen0x.com/learn/crypto-portfolio-allocation-strategies"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -468,6 +480,7 @@ export default function CryptoPortfolioAllocationGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Portfolio Allocation Strategies 2026: Conservative,", "description": "Master portfolio allocation: Conservative (70% BTC/ETH, 20% large-cap, 10% stables), Moderate (50/30/20), Aggressive (30/40/30). Learn rebalancing (time-based", "url": "https://degen0x.com/learn/crypto-portfolio-allocation-strategies", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/crypto-portfolio-allocation-strategies" />
+      <AuthoritySources url="/learn/crypto-portfolio-allocation-strategies" />
       </article>
   );
 }

@@ -8,6 +8,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto Funding Rate Tracker - Compare Perp Rates Across",
@@ -98,6 +106,24 @@ const breadcrumbData = {
 export default function FundingRateTrackerPage() {
   return (
     <div style={{ background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="Crypto Funding Rate Tracker - Compare Perp Rates Across"
+        description="Track real-time perpetual futures funding rates across Binance, Bybit, OKX, Bitget, dYdX & Hyperliquid. Compare 8h and annualized rates for BTC, ETH, SOL &"
+        url="/tools/funding-rate-tracker"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/funding-rate-tracker" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/funding-rate-tracker" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/funding-rate-tracker"
+        name="Crypto Funding Rate Tracker - Compare Perp Rates Across"
+        description="Track real-time perpetual futures funding rates across Binance, Bybit, OKX, Bitget, dYdX & Hyperliquid. Compare 8h and annualized rates for BTC, ETH, SOL &"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={schemas} />
       <div

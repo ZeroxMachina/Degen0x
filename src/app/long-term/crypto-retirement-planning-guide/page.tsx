@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation",
   description: "Complete crypto retirement strategy. Portfolio allocation by age (20s: 10-20%, 40s: 5-10%, 60s: 1-5%), Bitcoin IRA options, Roth conversions, 4% rule adjusted",
@@ -186,6 +192,19 @@ export default function CryptoRetirementPlanningGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="Crypto Retirement Planning Guide 2026: Portfolio Allocation"
+        description="Complete crypto retirement strategy. Portfolio allocation by age (20s: 10-20%, 40s: 5-10%, 60s: 1-5%), Bitcoin IRA options, Roth conversions, 4% rule adjusted"
+        url="https://degen0x.com/long-term/crypto-retirement-planning-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Long Term"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/long-term/crypto-retirement-planning-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/long-term/crypto-retirement-planning-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

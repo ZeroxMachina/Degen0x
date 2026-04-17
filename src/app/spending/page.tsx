@@ -7,6 +7,11 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Crypto Spending Guide 2026 - Debit Cards, Payment Apps & More | degen0x`,
   description: `Everything you need to spend cryptocurrency in the real world. Compare the best crypto debit cards, payment apps, cashback cards, and discover where to spend your crypto in ${CURRENT_YEAR}.`,
@@ -75,6 +80,14 @@ export default function SpendingPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best Crypto Debit Cards"
+        description="Spend crypto and manage your blockchain wealth. DeFi analytics, portfolio tracking, tax management, spending insights, and financial planning tools."
+        url="/spending"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -258,7 +271,11 @@ export default function SpendingPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Debit Cards", "description": "Spend crypto and manage your blockchain wealth. DeFi analytics, portfolio tracking, tax management, spending insights, and financial planning tools.", "url": "https://degen0x.com/spending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/spending" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/spending" />
     </>
   );
 }

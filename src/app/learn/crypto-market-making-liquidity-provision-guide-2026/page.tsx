@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Market Making Guide 2026: CEX, DEX & Automated",
   description: "Complete guide to crypto market making and liquidity provision. Learn CEX order book strategies, DEX AMM mechanics, impermanent loss management, market making",
@@ -354,6 +358,14 @@ export default function CryptoMarketMakingPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Crypto Market Making Guide 2026: CEX, DEX & Automated"
+        description="Complete guide to crypto market making and liquidity provision. Learn CEX order book strategies, DEX AMM mechanics, impermanent loss management, market making"
+        url="https://degen0x.com/learn/crypto-market-making-liquidity-provision-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <main style={pageStyles.container}>
         <header style={pageStyles.header}>
@@ -1016,6 +1028,7 @@ export default function CryptoMarketMakingPage() {
         </section>
 
         <BackToTop />
+      <AuthoritySources url="/learn/crypto-market-making-liquidity-provision-guide-2026" />
       </main>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Market Making Guide 2026: CEX, DEX & Automated", "description": "Complete guide to crypto market making and liquidity provision. Learn CEX order book strategies, DEX AMM mechanics, impermanent loss management, market making", "url": "https://degen0x.com/learn/crypto-market-making-liquidity-provision-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Memecoin Trading Strategy: Risk Management Guide",
   description:
@@ -28,6 +32,14 @@ const breadcrumbData = {
 export default function MemecoinTradingGuide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <ArticleSchema
+        headline="Memecoin Trading Strategy: Risk Management Guide"
+        description="Master memecoin trading with expert risk management strategies. Learn to identify opportunities, manage risk, set entry/exit points, and avoid red flags."
+        url="https://degen0x.com/learn/memecoin-trading-strategy"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8">
@@ -632,6 +644,7 @@ export default function MemecoinTradingGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Memecoin Trading Strategy: Risk Management Guide", "description": "Master memecoin trading with expert risk management strategies. Learn to identify opportunities, manage risk, set entry/exit points, and avoid red flags.", "url": "https://degen0x.com/learn/memecoin-trading-strategy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/memecoin-trading-strategy" />
+<AuthoritySources url="/learn/memecoin-trading-strategy" />
 </div>
   );
 }

@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "SEC-CFTC MOU Explained: Crypto Regulation Landmark 2026",
@@ -578,6 +580,7 @@ export default function SecCftcMouCryptoGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SEC-CFTC MOU Explained: Crypto Regulation Landmark 2026", "description": "The SEC and CFTC signed a historic MOU on March 11, 2026, ending the crypto regulatory turf war. Learn what it means for Bitcoin, Ethereum, DeFi, stablecoins,", "url": "https://degen0x.com/learn/sec-cftc-mou-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/sec-cftc-mou-crypto-guide" />
+<AuthoritySources url="/learn/sec-cftc-mou-crypto-guide" />
 </main>
   );
 }

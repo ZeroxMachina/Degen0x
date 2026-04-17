@@ -8,6 +8,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ── SEO Metadata ────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Token Security Scanner - Rug Pull & Honeypot Checker",
@@ -83,6 +91,24 @@ const breadcrumbData = {
 export default function TokenSecurityScannerPage() {
   return (
     <div style={{ backgroundColor: "var(--color-bg)" }} className="min-h-screen">
+      <ArticleSchema
+        headline="Token Security Scanner - Rug Pull & Honeypot Checker"
+        description="Scan any crypto token contract for rug pull risks, honeypot functions, and security red flags. Free token security checker across 6+ chains."
+        url="/tools/token-security-scanner"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/token-security-scanner" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/token-security-scanner" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/token-security-scanner"
+        name="Token Security Scanner - Rug Pull & Honeypot Checker"
+        description="Scan any crypto token contract for rug pull risks, honeypot functions, and security red flags. Free token security checker across 6+ chains."
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <StructuredData data={combinedSchemas} />
 

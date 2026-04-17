@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto Wallet Security Guide 2026: Protect Your Assets",
@@ -199,6 +203,14 @@ export default function CryptoWalletSecurityGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Wallet Security Guide 2026: Protect Your Assets"
+        description="Complete guide to crypto wallet security in 2026. Learn hardware wallets, seed phrase protection, phishing defense, 2FA, multisig, and anti-drainer tools."
+        url="https://degen0x.com/learn/crypto-wallet-security-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -825,6 +837,7 @@ export default function CryptoWalletSecurityGuide() {
           <a href="/learn/tokenized-funds-institutional-defi-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Tokenized Funds Institutional Defi Guide</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/crypto-wallet-security-guide-2026" />
+      <AuthoritySources url="/learn/crypto-wallet-security-guide-2026" />
       </article>
   );
 }

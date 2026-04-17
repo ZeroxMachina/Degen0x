@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "MEV Supply Chain & Proposer-Builder Separation (PBS) Learn",
@@ -62,6 +66,14 @@ export default function MEVPBSGuide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="MEV Supply Chain & Proposer-Builder Separation (PBS) Learn"
+        description="Comprehensive guide to MEV supply chain, PBS infrastructure, builder/relay markets, and enshrined PBS (EIP-7732). Understand the future of block production on"
+        url="https://degen0x.com/learn/mev-supply-chain-proposer-builder-separation-pbs-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <style>{`
         html { scroll-behavior: smooth; }
         ::-webkit-scrollbar { width: 8px; }
@@ -810,6 +822,7 @@ export default function MEVPBSGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/crypto-airdrops-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Airdrops 2026</a>
         </nav>
+    <AuthoritySources url="/learn/mev-supply-chain-proposer-builder-separation-pbs-guide-2026" />
     </main>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MEV Supply Chain & Proposer-Builder Separation (PBS) Learn", "description": "Comprehensive guide to MEV supply chain, PBS infrastructure, builder/relay markets, and enshrined PBS (EIP-7732). Understand the future of block production on", "url": "https://degen0x.com/learn/mev-supply-chain-proposer-builder-separation-pbs-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

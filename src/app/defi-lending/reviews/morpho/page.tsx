@@ -6,6 +6,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "morpho")!;
 
 export const metadata: Metadata = {
@@ -29,6 +38,13 @@ const breadcrumbData = {
 export default function MorphoReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Morpho Review (2026): P2P Rate Optimization"
+        url="https://degen0x.com/defi-lending/reviews/morpho"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="DeFi Lending"
@@ -52,6 +68,18 @@ export default function MorphoReview() {
       relatedReviews={[{ name: "Aave", slug: "/defi-lending/reviews/aave" }, { name: "Compound", slug: "/defi-lending/reviews/compound" }]}
       relatedGuides={[{ title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
+      <ArticleSchema
+        headline="Morpho Review (2026): P2P Rate Optimization | degen0x"
+        description="In-depth Morpho review covering P2P matching, Morpho Blue permissionless markets, rate improvements, security model, and token economics."
+        url="https://degen0x.com/defi-lending/reviews/morpho"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/morpho" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How P2P Matching Works", "description": "In-depth Morpho review covering P2P matching, Morpho Blue permissionless markets, rate improvements, security model, and token economics.", "url": "https://degen0x.com/defi-lending/reviews/morpho", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

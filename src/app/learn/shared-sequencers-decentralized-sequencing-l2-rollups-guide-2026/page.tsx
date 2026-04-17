@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Shared Sequencers & Decentralized Sequencing for L2 Rollups",
@@ -229,6 +233,14 @@ export default function SharedSequencersGuide() {
 
   return (
     <article id="top" aria-label="Guide: Shared Sequencers & Decentralized Sequencing for L2 Rollups" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Shared Sequencers & Decentralized Sequencing for L2 Rollups"
+        description="Complete guide to shared sequencers and decentralized sequencing: Espresso, Radius, based rollups. Understand how L2 rollups are solving centralized sequencer"
+        url="https://degen0x.com/learn/shared-sequencers-decentralized-sequencing-l2-rollups-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -802,6 +814,7 @@ export default function SharedSequencersGuide() {
         </nav>
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/shared-sequencers-decentralized-sequencing-l2-rollups-guide-2026" />
+      <AuthoritySources url="/learn/shared-sequencers-decentralized-sequencing-l2-rollups-guide-2026" />
       </article>
   );
 }

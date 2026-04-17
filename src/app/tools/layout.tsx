@@ -7,7 +7,9 @@
  *
  * Sprint 11 — SEO Specialist + Frontend Dev
  */
-export const dynamic = "force-dynamic";
+// Tools layout is a static shell — individual tool pages that need live data
+// opt into their own `dynamic` or `revalidate`. Default ISR: 1h.
+export const revalidate = 3600;
 
 import { SITE_URL, SITE_NAME } from "@/lib/constants";
 

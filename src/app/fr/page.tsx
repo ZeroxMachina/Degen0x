@@ -2,6 +2,12 @@ import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ─────────────────────────────────────────────
 //  French (FR) Localization Landing Page
 //  degen0x · Sprint 24 · Day 30
@@ -145,6 +151,19 @@ const breadcrumbData = {
 export default function FrenchLandingPage() {
   return (
     <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="degen0x en Français — Comparer Exchanges, Wallets et DeFi"
+        description="degen0x est votre guide de confiance pour les cryptomonnaies en français. Comparez les exchanges, wallets et protocoles DeFi. Avis d"
+        url="/fr"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/fr" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/fr" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

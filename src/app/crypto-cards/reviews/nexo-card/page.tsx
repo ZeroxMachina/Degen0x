@@ -6,6 +6,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = cryptoCards.find((c) => c.slug === "nexo-card")!;
 
 export const metadata: Metadata = {
@@ -29,6 +38,13 @@ const breadcrumbData = {
 export default function NexoCardReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Nexo Card Review (2026): Credit Line, Rewards & Pros/Cons"
+        url="https://degen0x.com/crypto-cards/reviews/nexo-card"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Cards"
@@ -51,6 +67,18 @@ export default function NexoCardReviewPage() {
       relatedReviews={[{ name: "Crypto.com Visa", slug: "crypto-com-visa" }, { name: "Coinbase Card", slug: "coinbase-card" }, { name: "Plutus Card", slug: "plutus-card" }]}
       relatedGuides={[{ title: "Crypto Card Security Tips", href: "/crypto-cards/learn/crypto-card-security" }, { title: "Crypto Card Tax Implications", href: "/crypto-cards/learn/crypto-card-taxes" }]}
     />
+      <ArticleSchema
+        headline="Nexo Card Review (2026): Credit Line, Rewards & Pros/Cons | degen0x"
+        description="In-depth Nexo Card review covering crypto-backed credit lines, cashback rewards, spending without selling, and whether it is right for long-term HODLers."
+        url="https://degen0x.com/crypto-cards/reviews/nexo-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/nexo-card" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Credit Line Model", "description": "In-depth Nexo Card review covering crypto-backed credit lines, cashback rewards, spending without selling, and whether it is right for long-term HODLers.", "url": "https://degen0x.com/crypto-cards/reviews/nexo-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

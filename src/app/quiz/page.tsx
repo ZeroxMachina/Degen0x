@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AdaptiveQuizEngine from '@/components/AdaptiveQuizEngine';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Adaptive Crypto Quiz — Earn XP | degen0x',
   description: 'Test your crypto knowledge with our adaptive quiz engine. Questions adjust to your skill level — from novice to Chain God. Earn XP and unlock badges.',
@@ -26,6 +32,19 @@ const breadcrumbData = {
 export default function QuizPage() {
   return (
     <main style={{ minHeight: '100vh', background: '#0d1117', padding: '24px' }}>
+      <ArticleSchema
+        headline="Adaptive Crypto Quiz — Earn XP | degen0x"
+        description="Test your crypto knowledge with our adaptive quiz engine. Questions adjust to your skill level — from novice to Chain God. Earn XP and unlock badges."
+        url="/quiz"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/quiz" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/quiz" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

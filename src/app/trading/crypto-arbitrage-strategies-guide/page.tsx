@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Arbitrage Strategies 2026 | CEX-CEX, Triangular,",
   description: "Master crypto arbitrage: exchange arbitrage (CEX-CEX), triangular, cross-chain, DEX-CEX, flash loan strategies. Real examples, capital requirements, profit",
@@ -137,6 +143,19 @@ export default function CryptoArbitrageStrategies() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Arbitrage Strategies 2026 | CEX-CEX, Triangular,"
+        description="Master crypto arbitrage: exchange arbitrage (CEX-CEX), triangular, cross-chain, DEX-CEX, flash loan strategies. Real examples, capital requirements, profit"
+        url="https://degen0x.com/trading/crypto-arbitrage-strategies-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Trading"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/trading/crypto-arbitrage-strategies-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/trading/crypto-arbitrage-strategies-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Tarot Review 2026: Leveraged LP & Lending Protocol`,
   description:
@@ -27,6 +36,13 @@ const breadcrumbData = {
 export default function TarotReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Tarot Review 2026: Leveraged LP & Lending Protocol"
+        url="https://degen0x.com/defi-lending/reviews/tarot"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Tarot",
@@ -79,6 +95,18 @@ export default function TarotReview() {
         { title: "DeFi on Fantom", href: "/defi-lending/learn/defi-on-fantom" },
       ]}
     />
+      <ArticleSchema
+        headline="Tarot Review 2026: Leveraged LP & Lending Protocol"
+        description="Comprehensive Tarot review covering leveraged liquidity provision, lending pairs, yield strategies, and risk analysis across Fantom and other chains."
+        url="https://degen0x.com/defi-lending/reviews/tarot"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/tarot" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Leveraged Liquidity Provision", "description": "Comprehensive Tarot review covering leveraged liquidity provision, lending pairs, yield strategies, and risk analysis across Fantom and other chains.", "url": "https://degen0x.com/defi-lending/reviews/tarot", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

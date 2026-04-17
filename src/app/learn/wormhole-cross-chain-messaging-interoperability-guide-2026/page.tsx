@@ -8,6 +8,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Wormhole Cross-Chain Messaging & Interoperability Guide 2026',
   description: "Complete guide to Wormhole cross-chain messaging protocol. Learn how Guardian Network secures 40+ blockchains, NTT framework for native tokens, W token",
@@ -341,6 +345,14 @@ export default function WormholeCrossChainPage() {
   return (
     <>
       <script type="application/ld+json">
+      <ArticleSchema
+        headline="Wormhole Cross-Chain Messaging & Interoperability Guide 2026"
+        description="Complete guide to Wormhole cross-chain messaging protocol. Learn how Guardian Network secures 40+ blockchains, NTT framework for native tokens, W token"
+        url="https://degen0x.com/learn/wormhole-cross-chain-messaging-interoperability-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
         {JSON.stringify(structuredData)}
       </script>
       <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Learn', href: '/learn' }, { label: 'Wormhole Guide' }]} />
@@ -822,6 +834,7 @@ export default function WormholeCrossChainPage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/wormhole-cross-chain-messaging-interoperability-guide-2026" />
       </article>
       <BackToTop />
     

@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Concentrated Liquidity Uniswap V3 Guide | LP Strategy &",
   description: "Master Uniswap V3 concentrated liquidity: tick ranges, 4000x capital efficiency vs V2, IL risk, fee tiers 0.01%-1%. Arrakis, Gamma, Merkl rewards, JIT attacks,",
@@ -153,6 +157,14 @@ export default function ConcentratedLiquidityUniswapV3() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Concentrated Liquidity Uniswap V3 Guide | LP Strategy &"
+        description="Master Uniswap V3 concentrated liquidity: tick ranges, 4000x capital efficiency vs V2, IL risk, fee tiers 0.01%-1%. Arrakis, Gamma, Merkl rewards, JIT attacks,"
+        url="https://degen0x.com/learn/concentrated-liquidity-uniswap-v3"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -526,6 +538,7 @@ export default function ConcentratedLiquidityUniswapV3() {
       <LiveMiniStat id="uniswap" />
       <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/concentrated-liquidity-uniswap-v3" />
+      <AuthoritySources url="/learn/concentrated-liquidity-uniswap-v3" />
       </article>
   );
 }

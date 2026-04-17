@@ -11,6 +11,12 @@ import { Product } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best AI Crypto Tokens 2026 - Top AI & Machine Learning Coins`,
   description: `Discover the best AI crypto tokens for ${CURRENT_YEAR}. Analysis of decentralized compute, AI agents, and data marketplace tokens at the intersection of AI and blockchain.`,
@@ -98,6 +104,19 @@ const breadcrumbData = {
 export default function BestAICryptoPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Top AI Crypto Tokens"
+        description="A decentralized GPU rendering network connecting artists and studios needing GPU power with providers who have idle capacity. Expanding into AI compute and"
+        url="/investing/best/ai-crypto"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/ai-crypto" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/ai-crypto" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },

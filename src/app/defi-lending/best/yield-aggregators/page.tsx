@@ -7,6 +7,12 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH, SITE_URL } from "@/lib/constant
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best DeFi Yield Aggregators of 2026 — Top APY Protocols Compared`,
   description: `Compare the best DeFi yield aggregators of ${CURRENT_YEAR}. We rank protocols by APY, TVL, security, supported chains, and strategy complexity. Find the highest safe yields for your crypto.`,
@@ -252,6 +258,19 @@ function RiskBadge({ level }: { level: RiskLevel }) {
   };
   return (
     <span className={`px-2 py-0.5 rounded-full text-xs font-semibold border ${colors[level]}`}>
+      <ArticleSchema
+        headline="Prioritize Security First"
+        description="Prioritize Security First"
+        url="https://degen0x.com/defi-lending/best/yield-aggregators"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/best/yield-aggregators" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/best/yield-aggregators" />
       {level} Risk
     </span>
   );

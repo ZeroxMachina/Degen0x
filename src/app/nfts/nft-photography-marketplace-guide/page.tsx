@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "NFT Photography Marketplaces 2026: SuperRare, Foundation,",
   description: "Complete guide to NFT photography marketplaces. Compare SuperRare, Foundation, Quantum Art, Sloika. Learn 1/1 editions, pricing strategies, and copyright.",
@@ -194,6 +200,19 @@ export default function NFTPhotographyMarketplaceGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="NFT Photography Marketplaces 2026: SuperRare, Foundation,"
+        description="Complete guide to NFT photography marketplaces. Compare SuperRare, Foundation, Quantum Art, Sloika. Learn 1/1 editions, pricing strategies, and copyright."
+        url="https://degen0x.com/nfts/nft-photography-marketplace-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/nft-photography-marketplace-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/nft-photography-marketplace-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

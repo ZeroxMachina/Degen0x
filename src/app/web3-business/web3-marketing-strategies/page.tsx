@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Web3 Marketing Strategies 2026: Growth Playbook for Crypto",
   description: "Complete web3 marketing playbook: community growth, content strategy, token incentives, partnerships, and budget allocation for crypto projects. Proven tactics",
@@ -181,6 +187,19 @@ export default function Web3MarketingGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Web3 Marketing Strategies 2026: Growth Playbook for Crypto"
+        description="Complete web3 marketing playbook: community growth, content strategy, token incentives, partnerships, and budget allocation for crypto projects. Proven tactics"
+        url="https://degen0x.com/web3-business/web3-marketing-strategies"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/web3-marketing-strategies" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/web3-marketing-strategies" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

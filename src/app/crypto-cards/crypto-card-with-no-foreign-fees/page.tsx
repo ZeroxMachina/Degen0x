@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Cards With No Foreign Transaction Fees | Travel",
   description: "Best crypto cards with zero foreign transaction fees: no FX markup, no ATM charges, international travel optimization. Compare 2026 options.",
@@ -167,6 +173,19 @@ export default function CryptoCardWithNoForeignFees() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="Crypto Cards With No Foreign Transaction Fees | Travel"
+        description="Best crypto cards with zero foreign transaction fees: no FX markup, no ATM charges, international travel optimization. Compare 2026 options."
+        url="https://degen0x.com/crypto-cards/crypto-card-with-no-foreign-fees"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/crypto-card-with-no-foreign-fees" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/crypto-card-with-no-foreign-fees" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

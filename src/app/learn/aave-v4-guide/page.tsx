@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Aave v4 Explained 2026 — Hub & Spoke Architecture | degen0x",
@@ -666,6 +668,7 @@ export default function AaveV4GuidePage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/atomic-swaps-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Atomic Swaps Explained</a>
         </nav>
+    <AuthoritySources url="/learn/aave-v4-guide" />
     </main>
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave v4 Explained 2026 \u2014 Hub & Spoke Architecture | degen0x", "description": "Aave v4 rewrites DeFi", "url": "https://degen0x.com/learn/aave-v4-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

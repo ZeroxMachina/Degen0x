@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Movement Network Guide 2026 — Move Language Ethereum L2',
   description: 'Complete guide to Movement Network: Move language L2 on Ethereum, 10K+ TPS, MOVE token scandal, market maker collapse, and 2026 ecosystem outlook.',
@@ -132,6 +136,14 @@ export default function MovementNetworkPage() {
 
   return (
     <article style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="Movement Network Guide 2026 — Move Language Ethereum L2"
+        description="Complete guide to Movement Network: Move language L2 on Ethereum, 10K+ TPS, MOVE token scandal, market maker collapse, and 2026 ecosystem outlook."
+        url="https://degen0x.com/learn/movement-network-move-ethereum-l2-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -305,6 +317,7 @@ export default function MovementNetworkPage() {
 </div>
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/movement-network-move-ethereum-l2-guide-2026" />
+      <AuthoritySources url="/learn/movement-network-move-ethereum-l2-guide-2026" />
       </article>
   );
 }

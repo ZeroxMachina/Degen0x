@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Perpetual DEX Tokens 2024-2026: GMX, dYdX, Synthetix,",
   description: "Compare perpetual DEX tokens by volume, real yield, and staker APY. GMX, dYdX, Synthetix, Drift, Gains, Hyperliquid with fee revenue and liquidity provider",
@@ -191,6 +197,19 @@ export default function BestPerpetualDexTokens() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Perpetual DEX Tokens 2024-2026: GMX, dYdX, Synthetix,"
+        description="Compare perpetual DEX tokens by volume, real yield, and staker APY. GMX, dYdX, Synthetix, Drift, Gains, Hyperliquid with fee revenue and liquidity provider"
+        url="https://degen0x.com/investing/best-perpetual-dex-tokens"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best-perpetual-dex-tokens" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best-perpetual-dex-tokens" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

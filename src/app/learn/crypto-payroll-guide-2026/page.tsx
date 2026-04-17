@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 const S = {
   bg: "var(--color-bg, #0d1117)",
   surface: "var(--color-surface, #161b22)",
@@ -345,6 +347,7 @@ export default function CryptoPayrollGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Payroll Guide 2026 \u2014 Get Paid in Crypto | degen0x", "description": "Complete guide to crypto payroll in 2026. Compare Bitwage, Request Finance, Deel, Franklin & Rise. Learn how to get paid in BTC, ETH, USDC, and stablecoins.", "url": "https://degen0x.com/learn/crypto-payroll-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-payroll-guide-2026" />
+<AuthoritySources url="/learn/crypto-payroll-guide-2026" />
 </main>
   );
 }

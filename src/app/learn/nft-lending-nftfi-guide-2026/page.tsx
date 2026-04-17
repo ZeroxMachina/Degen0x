@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "NFT Lending & NFTFi Guide 2026: Protocols, Models & Risks",
@@ -137,6 +141,14 @@ const breadcrumbData = {
 export default function NFTLendingNFTfiGuidePage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="NFT Lending & NFTFi Guide 2026: Protocols, Models & Risks"
+        description="Master NFT-backed lending in 2026. Compare NFTfi, Blend, BendDAO & Drops. Learn P2P vs pool models, how to get a loan, liquidation risks, and the $2.3B market"
+        url="https://degen0x.com/learn/nft-lending-nftfi-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
@@ -563,6 +575,7 @@ export default function NFTLendingNFTfiGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "NFT Lending & NFTFi Guide 2026: Protocols, Models & Risks", "description": "Master NFT-backed lending in 2026. Compare NFTfi, Blend, BendDAO & Drops. Learn P2P vs pool models, how to get a loan, liquidation risks, and the $2.3B market", "url": "https://degen0x.com/learn/nft-lending-nftfi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/nft-lending-nftfi-guide-2026" />
+<AuthoritySources url="/learn/nft-lending-nftfi-guide-2026" />
 </div>
   );
 }

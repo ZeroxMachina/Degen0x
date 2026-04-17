@@ -10,6 +10,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { LAYER2_FAQS } from "@/data/investing";
 import { Product } from "@/lib/types";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Layer 2 Crypto Tokens 2026 - Top L2 Scaling Solutions`,
   description: `Discover the best Layer 2 tokens for ${CURRENT_YEAR}. Analysis of Arbitrum, Optimism, Base, and other L2 scaling solutions by TVL, adoption, and technology.`,
@@ -86,6 +92,19 @@ const breadcrumbData = {
 export default function BestLayer2Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Top Layer 2 Tokens"
+        description="The leading Ethereum Layer 2 by TVL using optimistic rollup technology. Home to the largest DeFi ecosystem among L2s with hundreds of protocols deployed."
+        url="/investing/best/layer-2"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/layer-2" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/layer-2" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

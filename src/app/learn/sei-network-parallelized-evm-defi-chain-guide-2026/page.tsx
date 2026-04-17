@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Sei Network Guide 2026 — Parallelized EVM, Trading & DeFi",
@@ -308,6 +312,14 @@ export default function SeiNetworkGuide() {
 
   return (
     <article id="top" style={{ ...pageStyle, padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Sei Network Guide 2026 — Parallelized EVM, Trading & DeFi"
+        description="Complete guide to Sei Network: the first parallelized EVM with 400ms finality, $1.1B+ TVL, 32M+ daily transactions. Explore DeFi, Yei Finance, tokenomics, and"
+        url="https://degen0x.com/learn/sei-network-parallelized-evm-defi-chain-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -960,6 +972,7 @@ export default function SeiNetworkGuide() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/sei-network-parallelized-evm-defi-chain-guide-2026" />
+      <AuthoritySources url="/learn/sei-network-parallelized-evm-defi-chain-guide-2026" />
       </article>
   );
 }

@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Market Making Guide 2026 — AMMs, LPs & Order Books",
   description: "Master crypto market making in 2026. Learn how AMMs work, how to be a liquidity provider, manage impermanent loss, and understand order book market making on",
@@ -1160,6 +1162,7 @@ export default function CryptoMarketMakingGuide() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Market Making Guide 2026 \u2014 AMMs, LPs & Order Books", "description": "Master crypto market making in 2026. Learn how AMMs work, how to be a liquidity provider, manage impermanent loss, and understand order book market making on", "url": "https://degen0x.com/learn/crypto-market-making-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-market-making-guide-2026" />
+<AuthoritySources url="/learn/crypto-market-making-guide-2026" />
 </div>
   );
 }

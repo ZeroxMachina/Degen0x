@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Perpetual Futures Trading Guide 2026 — How Perps Work",
   description: "Learn everything about perpetual futures: funding rates, leverage, liquidation, delta-neutral strategies, and the best perp DEXs in 2026. Beginner to advanced",
@@ -43,6 +47,14 @@ const breadcrumbData = {
 export default function PerpetualFuturesGuidePage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <ArticleSchema
+        headline="Perpetual Futures Trading Guide 2026 — How Perps Work"
+        description="Learn everything about perpetual futures: funding rates, leverage, liquidation, delta-neutral strategies, and the best perp DEXs in 2026. Beginner to advanced"
+        url="https://degen0x.com/learn/perpetual-futures-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px" }}>
         <div style={{ marginBottom: 32 }}>
@@ -325,6 +337,7 @@ export default function PerpetualFuturesGuidePage() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Perpetual Futures Trading Guide 2026 \u2014 How Perps Work", "description": "Learn everything about perpetual futures: funding rates, leverage, liquidation, delta-neutral strategies, and the best perp DEXs in 2026. Beginner to advanced", "url": "https://degen0x.com/learn/perpetual-futures-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/perpetual-futures-guide" />
+<AuthoritySources url="/learn/perpetual-futures-guide" />
 </div>
   );
 }

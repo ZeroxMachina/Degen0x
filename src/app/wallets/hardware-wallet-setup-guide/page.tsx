@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Hardware Wallet Setup Guide: Ledger, Trezor, Keystone 2026",
   description: "Complete hardware wallet setup guide covering Ledger Nano X/S Plus, Trezor Model T/Safe 3, Keystone Pro. Step-by-step firmware updates, seed phrase backup, and",
@@ -148,6 +154,19 @@ export default function HardwareWalletSetupGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Hardware Wallet Setup Guide: Ledger, Trezor, Keystone 2026"
+        description="Complete hardware wallet setup guide covering Ledger Nano X/S Plus, Trezor Model T/Safe 3, Keystone Pro. Step-by-step firmware updates, seed phrase backup, and"
+        url="https://degen0x.com/wallets/hardware-wallet-setup-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/hardware-wallet-setup-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/hardware-wallet-setup-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

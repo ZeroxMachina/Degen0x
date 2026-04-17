@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import MarketHeatmap from '@/components/MarketHeatmap';
 import Footer from '@/components/Footer';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Live Crypto Market Heatmap — Real-Time Sector Analysis",
   description: 'Visualize the entire crypto market at a glance with our interactive heatmap. Filter by sector, time range, and sort by market cap, volume, or performance.',
@@ -24,6 +30,19 @@ const breadcrumbData = {
 export default function HeatmapPage() {
   return (
     <main className="min-h-screen bg-gray-950">
+      <ArticleSchema
+        headline="Live Crypto Market Heatmap — Real-Time Sector Analysis"
+        description="Visualize the entire crypto market at a glance with our interactive heatmap. Filter by sector, time range, and sort by market cap, volume, or performance."
+        url="/heatmap"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/heatmap" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/heatmap" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

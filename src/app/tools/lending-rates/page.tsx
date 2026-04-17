@@ -8,6 +8,14 @@ import ProtocolOverview from "./ProtocolOverview";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Crypto Lending Rates Comparison | DeFi & CeFi Yields | degen0x`,
   description: `Compare real-time lending rates across 20+ DeFi and CeFi platforms including Aave, Compound, MakerDAO, Morpho, Spark, JustLend, Venus, and more. Find the best APY for USDC, USDT, ETH, WBTC, and 10+ crypto assets. Interactive comparison table, lending calculator, and risk analysis.`,
@@ -46,6 +54,24 @@ export default function LendingRatesPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Risk Management"
+        description="Interactive tool to compare crypto lending rates across 20+ DeFi and CeFi platforms with real-time APY, TVL, and risk metrics"
+        url="https://degen0x.com/tools/lending-rates"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/lending-rates" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/lending-rates" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/lending-rates"
+        name="Crypto Lending Rates Comparison"
+        description="Compare real-time lending rates across 20+ DeFi and CeFi platforms including Aave, Compound, MakerDAO, Morpho, Spark, JustLend, Venus, and more. Find the best APY for USDC, USDT, ETH, WBTC, and 10+ crypto assets. Interactive comparison table, lending calculator, and risk analysis."
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

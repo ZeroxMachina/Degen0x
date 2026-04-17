@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Airdrops Guide 2026 — How to Find, Qualify & Claim",
   description: "Complete guide to crypto airdrops in 2026. Learn how to find upcoming airdrops, qualify through protocol interaction, avoid scams, and maximize your airdrop",
@@ -107,6 +111,14 @@ export default function AirdropsGuidePage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-bg, #0d1117)" }}>
+      <ArticleSchema
+        headline="Crypto Airdrops Guide 2026 — How to Find, Qualify & Claim"
+        description="Complete guide to crypto airdrops in 2026. Learn how to find upcoming airdrops, qualify through protocol interaction, avoid scams, and maximize your airdrop"
+        url="https://degen0x.com/learn/crypto-airdrops-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 80px" }}>
         <Breadcrumb items={[{ label: "Learn", href: "/learn" }, { label: "Crypto Airdrops Guide 2026", href: "/learn/crypto-airdrops-2026" }]} />
@@ -418,6 +430,7 @@ export default function AirdropsGuidePage() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Airdrops Guide 2026 \u2014 How to Find, Qualify & Claim", "description": "Complete guide to crypto airdrops in 2026. Learn how to find upcoming airdrops, qualify through protocol interaction, avoid scams, and maximize your airdrop", "url": "https://degen0x.com/learn/crypto-airdrops-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-airdrops-2026" />
+<AuthoritySources url="/learn/crypto-airdrops-2026" />
 </div>
   );
 }

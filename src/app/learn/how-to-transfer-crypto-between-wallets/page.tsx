@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "How to Transfer Crypto Between Wallets 2026: Step-by-Step",
   description: "Complete guide to safely transfer crypto between wallets. Network selection (ERC-20 vs BEP-20 vs TRC-20), address validation, gas fees by chain, test",
@@ -208,6 +212,14 @@ export default function HowToTransferCryptoBetweenWallets() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="How to Transfer Crypto Between Wallets 2026: Step-by-Step"
+        description="Complete guide to safely transfer crypto between wallets. Network selection (ERC-20 vs BEP-20 vs TRC-20), address validation, gas fees by chain, test"
+        url="https://degen0x.com/learn/how-to-transfer-crypto-between-wallets"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -556,6 +568,7 @@ export default function HowToTransferCryptoBetweenWallets() {
           <a href="/learn/solana-developer-platform-sdp-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Developer Platform Sdp Guide</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/how-to-transfer-crypto-between-wallets" />
+      <AuthoritySources url="/learn/how-to-transfer-crypto-between-wallets" />
       </article>
   );
 }

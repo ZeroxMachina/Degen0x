@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Data Availability Sampling Explained: Light Nodes & DA",
   description: 'Learn how Data Availability Sampling enables light nodes without full blocks. Explore Celestia, EigenDA, and KZG commitments.',
@@ -188,6 +192,14 @@ export default function DataAvailabilitySamplingExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Data Availability Sampling Explained: Light Nodes & DA"
+        description="Learn how Data Availability Sampling enables light nodes without full blocks. Explore Celestia, EigenDA, and KZG commitments."
+        url="https://degen0x.com/learn/data-availability-sampling-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -454,6 +466,7 @@ export default function DataAvailabilitySamplingExplained() {
           <a href="/learn/fair-token-launches-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Fair Token Launches Guide 2026</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/data-availability-sampling-explained" />
+      <AuthoritySources url="/learn/data-availability-sampling-explained" />
       </article>
   );
 }

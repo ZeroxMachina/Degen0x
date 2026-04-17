@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Funding Rates Crypto Explained | Perpetual Swaps & Arbitrage",
   description: "Master funding rates: 8-hour intervals, positive/negative rates, cash-and-carry arbitrage. Delta-neutral farming 15-30% APY, funding rate sentiment indicator,",
@@ -151,6 +155,14 @@ export default function FundingRatesCryptoExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Funding Rates Crypto Explained | Perpetual Swaps & Arbitrage"
+        description="Master funding rates: 8-hour intervals, positive/negative rates, cash-and-carry arbitrage. Delta-neutral farming 15-30% APY, funding rate sentiment indicator,"
+        url="https://degen0x.com/learn/funding-rates-crypto-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -528,6 +540,7 @@ export default function FundingRatesCryptoExplained() {
           <a href="/learn/plume-network-rwa-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Plume Network Rwa Layer 2 Guide 2026</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/funding-rates-crypto-explained" />
+      <AuthoritySources url="/learn/funding-rates-crypto-explained" />
       </article>
   );
 }

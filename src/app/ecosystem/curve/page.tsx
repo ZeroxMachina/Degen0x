@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import CurveGuidePage from "./CurveClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Curve Finance Guide 2026: Stablecoin DEX & Liquidity",
   description:
@@ -58,6 +64,19 @@ const breadcrumbData = {
 export default function CurvePage() {
   return (
     <>
+      <ArticleSchema
+        headline="Curve Finance Guide 2026: Stablecoin DEX & Liquidity"
+        description="Complete guide to Curve Finance — the leading stablecoin DEX and liquidity protocol. Learn about veCRV, crvUSD, Curve pools, and yield strategies in 2026."
+        url="/ecosystem/curve"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/curve" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/curve" />
       <CurveGuidePage />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Curve Finance Guide 2026: Stablecoin DEX & Liquidity", "description": "Complete guide to Curve Finance — the leading stablecoin DEX and liquidity protocol. Learn about veCRV, crvUSD, Curve pools, and yield strategies in 2026.", "url": "https://degen0x.com/ecosystem/curve", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

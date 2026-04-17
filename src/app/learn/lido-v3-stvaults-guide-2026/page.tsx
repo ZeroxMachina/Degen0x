@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Lido V3 stVaults Guide 2026: Modular Staking Infrastructure',
@@ -1220,6 +1222,7 @@ export default function LidoV3stVaultsGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lido V3 stVaults Guide 2026: Modular Staking Infrastructure", "description": "Master Lido V3 stVaults \u2014 modular staking primitives launched Jan 2026. Learn customization, institutional access, restaking integration, and DeFi strategies.", "url": "https://degen0x.com/learn/lido-v3-stvaults-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="lido-dao" />
       <RelatedContent category="learn" currentSlug="/learn/lido-v3-stvaults-guide-2026" />
+<AuthoritySources url="/learn/lido-v3-stvaults-guide-2026" />
 </main>
   );
 }

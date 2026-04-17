@@ -9,6 +9,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Index Funds Guide 2026 — DeFi Indexes, ETFs &",
   description: "Complete guide to crypto index funds: DeFi indexes (DPI, MVI), crypto ETFs, and onchain basket investing. Compare DeFi Pulse Index, Bitwise, Hashdex, and more.",

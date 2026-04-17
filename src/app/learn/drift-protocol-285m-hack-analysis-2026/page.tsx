@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Drift Protocol $285M Hack Analysis: What Went Wrong & How",
   description: "Deep dive into the April 2026 Drift Protocol exploit—the largest DeFi hack of the year. Understand oracle manipulation, admin key vulnerabilities, and how to",
@@ -1015,6 +1017,7 @@ export default function DriftProtocolHackAnalysis() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Drift Protocol $285M Hack Analysis: What Went Wrong & How", "description": "Deep dive into the April 2026 Drift Protocol exploit\u2014the largest DeFi hack of the year. Understand oracle manipulation, admin key vulnerabilities, and how to", "url": "https://degen0x.com/learn/drift-protocol-285m-hack-analysis-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/drift-protocol-285m-hack-analysis-2026" />
 </div>
   );
 }

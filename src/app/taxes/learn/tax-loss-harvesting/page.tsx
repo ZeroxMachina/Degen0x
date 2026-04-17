@@ -4,6 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Breadcrumb from "@/components/Breadcrumb";
 import { CURRENT_YEAR } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Crypto Tax Loss Harvesting: How to Reduce Your 2026 Tax Bill`,
   description:
@@ -75,6 +82,14 @@ export default function TaxLossHarvestingPage() {
       }}
       className="min-h-screen"
     >
+      <ArticleSchema
+        headline="Crypto Tax Loss Harvesting: How to Reduce Your 2026 Tax Bill"
+        description="Learn crypto tax loss harvesting strategies for 2026. Understand how to offset capital gains, reduce your tax liability, and take advantage of crypto"
+        url="https://degen0x.com/taxes/learn/tax-loss-harvesting"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -847,6 +862,11 @@ export default function TaxLossHarvestingPage() {
           </Link>
         </div>
       </div>
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/learn/tax-loss-harvesting" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/learn/tax-loss-harvesting" />
     </main>
   );
 }

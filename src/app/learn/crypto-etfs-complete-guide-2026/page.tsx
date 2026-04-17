@@ -7,6 +7,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto ETFs Complete Guide 2026: Bitcoin, Ethereum, Solana,",
   description: "Comprehensive guide to crypto ETFs in 2026. Learn about Bitcoin, Ethereum, Solana, XRP, and altcoin ETFs, staking yields, institutional adoption, and",
@@ -315,6 +319,14 @@ export default function CryptoETFsPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Crypto ETFs Complete Guide 2026: Bitcoin, Ethereum, Solana,"
+        description="Comprehensive guide to crypto ETFs in 2026. Learn about Bitcoin, Ethereum, Solana, XRP, and altcoin ETFs, staking yields, institutional adoption, and"
+        url="https://degen0x.com/learn/crypto-etfs-complete-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -954,6 +966,7 @@ export default function CryptoETFsPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto ETFs Complete Guide 2026: Bitcoin, Ethereum, Solana,", "description": "Comprehensive guide to crypto ETFs in 2026. Learn about Bitcoin, Ethereum, Solana, XRP, and altcoin ETFs, staking yields, institutional adoption, and", "url": "https://degen0x.com/learn/crypto-etfs-complete-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-etfs-complete-guide-2026" />
+<AuthoritySources url="/learn/crypto-etfs-complete-guide-2026" />
 </main>
   );
 }

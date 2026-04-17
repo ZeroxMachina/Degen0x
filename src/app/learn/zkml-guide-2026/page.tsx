@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "ZKML Guide 2026: Zero-Knowledge Machine Learning for",
   description: "Complete guide to ZKML (Zero-Knowledge Machine Learning) in 2026. Learn how to verify ML model inference without revealing weights or data. EZKL, Giza,",
@@ -918,6 +920,7 @@ export default function ZKMLGuide2026Page() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ZKML Guide 2026: Zero-Knowledge Machine Learning for", "description": "Complete guide to ZKML (Zero-Knowledge Machine Learning) in 2026. Learn how to verify ML model inference without revealing weights or data. EZKL, Giza,", "url": "https://degen0x.com/learn/zkml-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/zkml-guide-2026" />
+<AuthoritySources url="/learn/zkml-guide-2026" />
 </main>
   );
 }

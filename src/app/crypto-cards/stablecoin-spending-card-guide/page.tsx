@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Stablecoin Spending Card Guide 2026: Crypto.com, Nexo,",
   description: "Best crypto spending cards for stablecoins: Crypto.com Visa, Nexo card, Wirex USDC card. Auto-conversion at POS, rewards, fees, ATM limits, and tax",
@@ -184,6 +190,19 @@ export default function StablecoinSpendingCardGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Stablecoin Spending Card Guide 2026: Crypto.com, Nexo,"
+        description="Best crypto spending cards for stablecoins: Crypto.com Visa, Nexo card, Wirex USDC card. Auto-conversion at POS, rewards, fees, ATM limits, and tax"
+        url="https://degen0x.com/crypto-cards/stablecoin-spending-card-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/stablecoin-spending-card-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/stablecoin-spending-card-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

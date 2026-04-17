@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Ethereum Gas Fees Optimization Guide 2026 — Save on Gas",
   description: "Master Ethereum gas fees in 2026: EIP-1559, EIP-4844 blobs, L2 optimization, Layer 2 cost comparison, gas timing strategies, MEV protection, and 80%+ gas",
@@ -297,6 +301,14 @@ export default function EthereumGasFeesPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Ethereum Gas Fees Optimization Guide 2026 — Save on Gas"
+        description="Master Ethereum gas fees in 2026: EIP-1559, EIP-4844 blobs, L2 optimization, Layer 2 cost comparison, gas timing strategies, MEV protection, and 80%+ gas"
+        url="https://degen0x.com/learn/ethereum-gas-fees-optimization-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1087,6 +1099,7 @@ export default function EthereumGasFeesPage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Gas Fees Optimization Guide 2026 \u2014 Save on Gas", "description": "Master Ethereum gas fees in 2026: EIP-1559, EIP-4844 blobs, L2 optimization, Layer 2 cost comparison, gas timing strategies, MEV protection, and 80%+ gas", "url": "https://degen0x.com/learn/ethereum-gas-fees-optimization-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-gas-fees-optimization-guide-2026" />
+<AuthoritySources url="/learn/ethereum-gas-fees-optimization-guide-2026" />
 </main>
   );
 }

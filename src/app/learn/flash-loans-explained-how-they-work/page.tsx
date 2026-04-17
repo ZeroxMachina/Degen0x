@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Flash Loans Explained 2026: Aave, dYdX, Atomic Transactions",
   description: "Complete flash loan guide 2026: Aave $2B liquidity 0.09% fee, dYdX 0% fee, atomic transactions, arbitrage, liquidation bots, Euler hack $197M, collateral",
@@ -202,6 +206,14 @@ export default function FlashLoansExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Flash Loans Explained 2026: Aave, dYdX, Atomic Transactions"
+        description="Complete flash loan guide 2026: Aave $2B liquidity 0.09% fee, dYdX 0% fee, atomic transactions, arbitrage, liquidation bots, Euler hack $197M, collateral"
+        url="https://degen0x.com/learn/flash-loans-explained-how-they-work"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -521,6 +533,7 @@ export default function FlashLoansExplained() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Flash Loans Explained 2026: Aave, dYdX, Atomic Transactions", "description": "Complete flash loan guide 2026: Aave $2B liquidity 0.09% fee, dYdX 0% fee, atomic transactions, arbitrage, liquidation bots, Euler hack $197M, collateral", "url": "https://degen0x.com/learn/flash-loans-explained-how-they-work", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/flash-loans-explained-how-they-work" />
+      <AuthoritySources url="/learn/flash-loans-explained-how-they-work" />
       </article>
   );
 }

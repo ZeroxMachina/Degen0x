@@ -5,6 +5,15 @@ import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "compound")!;
 
 export const metadata: Metadata = {
@@ -28,6 +37,13 @@ const breadcrumbData = {
 export default function CompoundReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Compound Review 2026: Rates, Security, Pros & Cons"
+        url="https://degen0x.com/defi-lending/reviews/compound"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="DeFi Lending"
@@ -51,6 +67,18 @@ export default function CompoundReview() {
       relatedReviews={[{ name: "Aave", slug: "aave" }, { name: "Morpho", slug: "morpho" }]}
       relatedGuides={[{ title: "What Is DeFi Lending?", href: "/defi-lending/learn/what-is-defi-lending" }, { title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }]}
     />
+      <ArticleSchema
+        headline="Compound Review 2026: Rates, Security, Pros & Cons"
+        description="In-depth Compound Finance review covering yield rates, V3 architecture, security, governance, and whether it is the right DeFi protocol for you. Updated March"
+        url="https://degen0x.com/defi-lending/reviews/compound"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/compound" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Compound Review 2026: Rates, Security, Pros & Cons", "description": "In-depth Compound Finance review covering yield rates, V3 architecture, security, governance, and whether it is the right DeFi protocol for you. Updated March", "url": "https://degen0x.com/defi-lending/reviews/compound", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

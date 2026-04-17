@@ -6,6 +6,13 @@ import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = exchanges.find((e) => e.slug === "coinbase")!;
 
 export const metadata: Metadata = {
@@ -30,6 +37,13 @@ const breadcrumbData = {
 export default function CoinbaseReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Coinbase Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/exchanges/reviews/coinbase"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
@@ -156,6 +170,14 @@ Beyond trading, Coinbase has expanded into a comprehensive crypto ecosystem. The
         },
       ]}
     />
+      <ArticleSchema
+        headline="Coinbase Review 2026: Fees, Features, Pros & Cons"
+        description="Our in-depth Coinbase review covers fees, security, supported coins, pros and cons, and whether it"
+        url="https://degen0x.com/exchanges/reviews/coinbase"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Review 2026: Fees, Features, Pros & Cons", "description": "Our in-depth Coinbase review covers fees, security, supported coins, pros and cons, and whether it's the right exchange for you. Updated March 2026.", "url": "https://degen0x.com/exchanges/reviews/coinbase", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
@@ -169,7 +191,11 @@ Beyond trading, Coinbase has expanded into a comprehensive crypto ecosystem. The
   <a href="/exchanges/reviews/bitmart" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitmart</a>
   <a href="/exchanges/reviews/bitmex" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitmex</a>
 </nav>
-      <AuthoritySources url="/exchanges/reviews/coinbase" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/coinbase" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/reviews/coinbase" />
       <MethodologyBlock variant="review" />
       </>
   );

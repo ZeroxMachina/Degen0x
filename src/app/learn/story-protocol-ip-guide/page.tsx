@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Story Protocol Guide 2026 — IP Blockchain Explained",
@@ -608,6 +610,7 @@ export default function StoryProtocolGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Story Protocol Guide 2026 \u2014 IP Blockchain Explained", "description": "Complete guide to Story Protocol, the Layer 1 blockchain for IP management. Learn about Proof-of-Creativity, Programmable IP Licenses, the $IP token, and why", "url": "https://degen0x.com/learn/story-protocol-ip-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/story-protocol-ip-guide" />
+<AuthoritySources url="/learn/story-protocol-ip-guide" />
 </main>
   );
 }

@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Lendle Review 2026: Mantle Lending Protocol`,
   description: "In-depth Lendle review covering Aave V2-based lending on Mantle, yield rates, LEND token incentives, and the protocol's role in Mantle DeFi ecosystem.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function LendleReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Lendle Review 2026: Mantle Lending Protocol"
+        url="https://degen0x.com/defi-lending/reviews/lendle"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "Lendle", slug: "lendle", rating: 3.7, description: "Lendle is an Aave V2-based lending protocol on Mantle network offering lending and borrowing markets with LEND token incentives, positioning itself as a core DeFi infrastructure provider for the Mantle ecosystem.", pros: ["Leading lending protocol on Mantle network", "Aave V2 proven architecture for reliable lending", "LEND token rewards enhance effective yields", "Mantle ecosystem grant support", "Low gas costs on Mantle network"], cons: ["Mantle ecosystem still growing and developing", "Aave V2 architecture lacks V3 improvements", "LEND token has limited trading liquidity", "Competing for attention against Mantle's own ecosystem initiatives", "Lower TVL than lending protocols on established L2s"], bestFor: "DeFi users seeking lending opportunities on Mantle network with token incentives", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function LendleReview() {
       relatedReviews={[{ name: "Mendi", slug: "mendi" }, { name: "Aurelius", slug: "aurelius" }, { name: "Init Capital", slug: "init-capital" }]}
       relatedGuides={[{ title: "DeFi on Mantle", href: "/defi-lending/learn/defi-on-mantle" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <ArticleSchema
+        headline="Lendle Review 2026: Mantle Lending Protocol"
+        description="In-depth Lendle review covering Aave V2-based lending on Mantle, yield rates, LEND token incentives, and the protocol"
+        url="https://degen0x.com/defi-lending/reviews/lendle"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/lendle" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending on Mantle", "description": "In-depth Lendle review covering Aave V2-based lending on Mantle, yield rates, LEND token incentives, and the protocol's role in Mantle DeFi ecosystem.", "url": "https://degen0x.com/defi-lending/reviews/lendle", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

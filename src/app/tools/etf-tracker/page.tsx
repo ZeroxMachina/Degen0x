@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import ETFTrackerClient from "./ETFTrackerClient";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Bitcoin & Crypto ETF Tracker 2026 — Live Flows, AUM & Performance | degen0x`,
   description: `Track Bitcoin spot ETF inflows, outflows, and AUM in real-time. Compare all crypto ETFs by performance, fees, and assets under management. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.`,
@@ -25,6 +33,24 @@ const breadcrumbData = {
 export default function ETFTrackerPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Tools"
+        description="Tools"
+        url="/tools/etf-tracker"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/etf-tracker" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/etf-tracker" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/etf-tracker"
+        name="Bitcoin & Crypto ETF Tracker 2026"
+        description="Track Bitcoin spot ETF inflows, outflows, and AUM in real-time. Compare all crypto ETFs by performance, fees, and assets under management. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}."
+      />
       <ETFTrackerClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin & Crypto ETF Tracker 2026 \u2014 Live Flows, AUM & Performance | degen0x", "description": "Track Bitcoin spot ETF inflows, outflows, and AUM in real-time. Compare all crypto ETFs by performance, fees, and assets under management. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.", "url": "https://degen0x.com/tools/etf-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

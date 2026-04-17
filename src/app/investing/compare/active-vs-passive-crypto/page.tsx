@@ -9,6 +9,13 @@ import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = { title: `Active vs Passive Crypto Investing (2026) | degen0x`, description: `Active vs passive crypto investing comparison for ${CURRENT_YEAR}. Trading vs HODL, time commitment, returns, stress levels, and which strategy wins long-term.` ,
   alternates: { canonical: "/investing/compare/active-vs-passive-crypto" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -39,6 +46,14 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Active vs Passive Crypto Investing (2026) | degen0x"
+        description="Active vs passive crypto investing comparison for ${CURRENT_YEAR}. Trading vs HODL, time commitment, returns, stress levels, and which strategy wins long-term."
+        url="https://degen0x.com/investing/compare/active-vs-passive-crypto"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -126,6 +141,11 @@ export default function Page() {
         items={["Active", "Passive Crypto"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/compare/active-vs-passive-crypto" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/compare/active-vs-passive-crypto" />
     </div>
   );
 }

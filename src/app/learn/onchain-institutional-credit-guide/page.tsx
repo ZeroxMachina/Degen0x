@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "On-Chain Institutional Credit Markets 2026: Maple,",
@@ -574,6 +576,7 @@ export default function OnchainInstitutionalCreditGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-Chain Institutional Credit Markets 2026: Maple,", "description": "Explore the $18.9B on-chain institutional credit market in 2026. Compare Maple Finance, Goldfinch, Centrifuge, and Clearpool \u2014 how undercollateralized lending", "url": "https://degen0x.com/learn/onchain-institutional-credit-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/onchain-institutional-credit-guide" />
+<AuthoritySources url="/learn/onchain-institutional-credit-guide" />
 </div>
   );
 }

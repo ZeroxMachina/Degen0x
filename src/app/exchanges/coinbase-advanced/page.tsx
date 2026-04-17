@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Coinbase Advanced Review 2026: Professional Trading, Lower",
   description:
@@ -25,6 +31,19 @@ const breadcrumbData = {
 export default function CoinbaseAdvancedReview() {
   return (
     <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+      <ArticleSchema
+        headline="Coinbase Advanced Review 2026: Professional Trading, Lower"
+        description="Complete Coinbase Advanced review covering professional trading interface, competitive fees, and advanced features. Updated March 2026."
+        url="/exchanges/coinbase-advanced"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/coinbase-advanced" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/coinbase-advanced" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="mb-8">

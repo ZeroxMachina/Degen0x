@@ -14,6 +14,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain",
   description: "Over $25B in US Treasury bonds now live on-chain. Learn how BlackRock BUIDL, Ondo Finance, and Franklin Templeton work, what yield to expect, and how to access",
@@ -873,6 +875,7 @@ export default function TokenizedTreasuriesGuidePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenized Treasuries 2026: BlackRock BUIDL, Ondo & On-Chain", "description": "Over $25B in US Treasury bonds now live on-chain. Learn how BlackRock BUIDL, Ondo Finance, and Franklin Templeton work, what yield to expect, and how to access", "url": "https://degen0x.com/learn/tokenized-treasuries-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/tokenized-treasuries-guide-2026" />
+    <AuthoritySources url="/learn/tokenized-treasuries-guide-2026" />
     </article>
   );
 }

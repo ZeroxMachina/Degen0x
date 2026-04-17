@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "NFT Tax Guide 2026: Capital Gains, Royalties & Collectibles",
   description: 'Complete NFT tax guide for 2026: capital gains, creator royalties, minting events, NFT swaps, collectibles 28% rate, gas fees, wash sales, charitable donations.',
@@ -198,6 +204,19 @@ export default function NFTTaxGuide2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="NFT Tax Guide 2026: Capital Gains, Royalties & Collectibles"
+        description="Complete NFT tax guide for 2026: capital gains, creator royalties, minting events, NFT swaps, collectibles 28% rate, gas fees, wash sales, charitable donations."
+        url="https://degen0x.com/taxes/nft-tax-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/nft-tax-guide-2026" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/nft-tax-guide-2026" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

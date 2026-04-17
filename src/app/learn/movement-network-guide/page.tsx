@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Movement Network Guide 2026 — MoveVM L1 Blockchain Explained",
@@ -715,6 +717,7 @@ export default function MovementNetworkGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Movement Network Guide 2026 \u2014 MoveVM L1 Blockchain Explained", "description": "Complete guide to Movement Network in 2026. Learn how MoveVM", "url": "https://degen0x.com/learn/movement-network-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/movement-network-guide" />
+<AuthoritySources url="/learn/movement-network-guide" />
 </div>
   );
 }

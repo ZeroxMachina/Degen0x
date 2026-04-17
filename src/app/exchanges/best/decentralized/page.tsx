@@ -8,6 +8,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Decentralized Exchanges (DEXs) in 2026`,
   description: `Compare the top decentralized exchanges (DEXs) of ${CURRENT_YEAR}. Trade directly from your wallet with no intermediaries. Uniswap, dYdX, Jupiter, and more.`,
@@ -110,6 +116,19 @@ const breadcrumbData = {
 export default function DecentralizedExchangesPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Exchanges"
+        description="The largest and most established DEX, pioneering the AMM model. Uniswap V3 introduced concentrated liquidity, dramatically improving capital efficiency."
+        url="/exchanges/best/decentralized"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/best/decentralized" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/best/decentralized" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

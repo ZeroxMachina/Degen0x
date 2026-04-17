@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Solana Liquid Staking Guide 2026: LST Yields & APY",
   description: "Complete guide to Solana liquid staking in 2026. Compare JitoSOL, mSOL, Sanctum INF, and other LSTs. Learn yields, risks, and strategies.",
@@ -651,6 +653,7 @@ export default function SolanaLiquidStakingGuide() {
       <LiveMiniStat id="solana" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/solana-liquid-staking-guide-2026" />
+<AuthoritySources url="/learn/solana-liquid-staking-guide-2026" />
 </div>
   );
 }

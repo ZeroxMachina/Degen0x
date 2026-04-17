@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Crypto.com Pay Review (2026) | degen0x`,
   description: `Crypto.com Pay review for ${CURRENT_YEAR}. Merchant payments, supported cryptos, CRO cashback, integration options, fees, and user experience.`,
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function CryptoComPayReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Crypto.com Pay Review (2026)"
+        url="https://degen0x.com/spending/reviews/crypto-com-pay"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Crypto.com Pay",
@@ -91,6 +107,18 @@ export default function CryptoComPayReviewPage() {
         { title: "Stablecoin Payments", href: "/spending/learn/stablecoin-payments" },
       ]}
     />
+      <ArticleSchema
+        headline="Crypto.com Pay Review (2026) | degen0x"
+        description="Crypto.com Pay review for ${CURRENT_YEAR}. Merchant payments, supported cryptos, CRO cashback, integration options, fees, and user experience."
+        url="https://degen0x.com/spending/reviews/crypto-com-pay"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/reviews/crypto-com-pay" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "CRO Cashback Rewards", "description": "Crypto.com Pay is a payment solution that lets users pay merchants with crypto while earning CRO cashback rewards, integrated within the Crypto.com ecosystem.", "url": "https://degen0x.com/spending/reviews/crypto-com-pay", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

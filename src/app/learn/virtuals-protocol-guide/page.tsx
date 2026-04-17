@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Virtuals Protocol (VIRTUAL) Guide 2026: AI Agent Launchpad",
@@ -635,6 +637,7 @@ export default function VirtualsProtocolGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Virtuals Protocol (VIRTUAL) Guide 2026: AI Agent Launchpad", "description": "Virtuals Protocol explained: how the AI agent launchpad works, VIRTUAL tokenomics, top agents like AIXBT and Luna, risks, and how to get started in 2026.", "url": "https://degen0x.com/learn/virtuals-protocol-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/virtuals-protocol-guide" />
+<AuthoritySources url="/learn/virtuals-protocol-guide" />
 </div>
   );
 }

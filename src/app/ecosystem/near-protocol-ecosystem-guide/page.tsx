@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "NEAR Protocol Ecosystem 2026: Ref Finance, Burrow, Aurora,",
   description: "Complete NEAR ecosystem guide: Ref Finance DEX ($200M TVL), Burrow Protocol lending, Aurora EVM sidechain, Mintbase NFTs, NEAR Social. Nightshade sharding,",
@@ -128,6 +134,19 @@ export default function NEARProtocolEcosystemGuideExpanded() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="NEAR Protocol Ecosystem 2026: Ref Finance, Burrow, Aurora,"
+        description="Complete NEAR ecosystem guide: Ref Finance DEX ($200M TVL), Burrow Protocol lending, Aurora EVM sidechain, Mintbase NFTs, NEAR Social. Nightshade sharding,"
+        url="https://degen0x.com/ecosystem/near-protocol-ecosystem-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/near-protocol-ecosystem-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/near-protocol-ecosystem-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: "0 auto" }}>

@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `NOWPayments Review (2026) | degen0x`,
   description: `NOWPayments review for ${CURRENT_YEAR}. Crypto payment gateway with 200+ coins, merchant tools, subscription billing, and API integration options.`,
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function NOWPaymentsReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="NOWPayments Review (2026)"
+        url="https://degen0x.com/spending/reviews/nowpayments"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "NOWPayments",
@@ -94,6 +110,18 @@ export default function NOWPaymentsReviewPage() {
         { title: "Layer 2 Payments", href: "/spending/learn/layer-2-payments" },
       ]}
     />
+      <ArticleSchema
+        headline="NOWPayments Review (2026) | degen0x"
+        description="NOWPayments review for ${CURRENT_YEAR}. Crypto payment gateway with 200+ coins, merchant tools, subscription billing, and API integration options."
+        url="https://degen0x.com/spending/reviews/nowpayments"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/reviews/nowpayments" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Integrations &amp; Plugins", "description": "NOWPayments is a non-custodial crypto payment gateway supporting 200+ cryptocurrencies with simple API integration, e-commerce plugins, and subscription", "url": "https://degen0x.com/spending/reviews/nowpayments", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

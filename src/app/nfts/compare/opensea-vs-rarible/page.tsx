@@ -12,6 +12,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `OpenSea vs Rarible: Which NFT Marketplace Is Better? (2026) | degen0x`,
   description: "Detailed comparison of OpenSea vs Rarible. Compare fees, creator tools, governance, chain support, and features to find the best NFT marketplace for you.",
@@ -36,6 +42,14 @@ export default function OpenSeaVsRariblePage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="OpenSea vs Rarible: Which NFT Marketplace Is Better? (2026) | degen0x"
+        description="Detailed comparison of OpenSea vs Rarible. Compare fees, creator tools, governance, chain support, and features to find the best NFT marketplace for you."
+        url="https://degen0x.com/nfts/compare/opensea-vs-rarible"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "OpenSea vs Rarible", href: "#" } ]} />
       <AffiliateDisclosure />
@@ -162,6 +176,11 @@ export default function OpenSeaVsRariblePage() {
         items={["Opensea", "Rarible"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/compare/opensea-vs-rarible" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/compare/opensea-vs-rarible" />
     </div>
   );
 }

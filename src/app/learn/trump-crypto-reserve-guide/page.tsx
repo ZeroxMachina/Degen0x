@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Trump Crypto Strategic Reserve: What It Means for Bitcoin &",
   description:
@@ -28,6 +32,14 @@ const breadcrumbData = {
 export default function TrumpCryptoReserveGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="Trump Crypto Strategic Reserve: What It Means for Bitcoin &"
+        description="A complete guide to the US government"
+        url="https://degen0x.com/learn/trump-crypto-reserve-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
@@ -276,6 +288,7 @@ export default function TrumpCryptoReserveGuidePage() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/trump-crypto-reserve-guide" />
+      <AuthoritySources url="/learn/trump-crypto-reserve-guide" />
       </article>
   );
 }

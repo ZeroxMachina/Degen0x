@@ -9,6 +9,12 @@ import { ComparisonItem, FAQ } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Tax Software Compared (2026): Complete Comparison`,
   description: `Compare all major crypto tax software platforms side by side. Koinly, CoinTracker, CryptoTaxCalculator, TokenTax, ZenLedger, CoinLedger, and more rated and ranked.`,
@@ -48,6 +54,14 @@ const breadcrumbData = {
 export default function CryptoTaxSoftwareComparisonPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Best Crypto Tax Software Compared (2026): Complete Comparison"
+        description="Compare all major crypto tax software platforms side by side. Koinly, CoinTracker, CryptoTaxCalculator, TokenTax, ZenLedger, CoinLedger, and more rated and ranked."
+        url="https://degen0x.com/taxes/compare/crypto-tax-software-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -143,6 +157,11 @@ export default function CryptoTaxSoftwareComparisonPage() {
         </div>
       </div>
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/compare/crypto-tax-software-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/compare/crypto-tax-software-comparison" />
     </div>
   );
 }

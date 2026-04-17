@@ -7,6 +7,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Savings Accounts 2026 — Highest APY Rates Compared`,
   description: `Compare the best crypto savings accounts of ${CURRENT_YEAR}. Earn up to 12% APY on Bitcoin, Ethereum, and stablecoins. Expert-reviewed rates, safety scores, and platform comparisons.`,
@@ -205,6 +211,19 @@ function TrustScoreBar({ score }: { score: number }) {
   const color = score >= 90 ? "#3fb950" : score >= 80 ? "#f59e0b" : "#f85149";
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+      <ArticleSchema
+        headline="Investing"
+        description="Investing"
+        url="/investing/best/savings-accounts"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/savings-accounts" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/savings-accounts" />
       <div style={{
         flex: 1, height: 6, borderRadius: 3,
         background: "#30363d", overflow: "hidden"

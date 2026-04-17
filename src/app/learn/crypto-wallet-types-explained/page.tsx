@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Wallet Types Explained 2026: Hot, Cold, Smart, MPC",
   description: "Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security,",
@@ -202,6 +206,14 @@ export default function CryptoWalletTypesExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Wallet Types Explained 2026: Hot, Cold, Smart, MPC"
+        description="Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security,"
+        url="https://degen0x.com/learn/crypto-wallet-types-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -470,6 +482,7 @@ export default function CryptoWalletTypesExplained() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Wallet Types Explained 2026: Hot, Cold, Smart, MPC", "description": "Compare all crypto wallet types: hot wallets (MetaMask, Phantom), cold wallets (Ledger, Trezor), smart contract wallets (Safe, Argent), MPC wallets. Security,", "url": "https://degen0x.com/learn/crypto-wallet-types-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/crypto-wallet-types-explained" />
+      <AuthoritySources url="/learn/crypto-wallet-types-explained" />
       </article>
   );
 }

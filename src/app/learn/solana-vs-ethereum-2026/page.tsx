@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Solana vs Ethereum 2026: Which Blockchain Wins?",
   description: "Solana vs Ethereum 2026: Honest comparison of speed, costs, security, DeFi ecosystems, validators, staking, MEV, and which blockchain wins best.",
@@ -38,6 +42,14 @@ const breadcrumbData = {
 export default function SolanaVsEthereumPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="Solana vs Ethereum 2026: Which Blockchain Wins?"
+        description="Solana vs Ethereum 2026: Honest comparison of speed, costs, security, DeFi ecosystems, validators, staking, MEV, and which blockchain wins best."
+        url="https://degen0x.com/learn/solana-vs-ethereum-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
@@ -158,6 +170,7 @@ export default function SolanaVsEthereumPage() {
         />
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/solana-vs-ethereum-2026" />
+      <AuthoritySources url="/learn/solana-vs-ethereum-2026" />
       </article>
   );
 }

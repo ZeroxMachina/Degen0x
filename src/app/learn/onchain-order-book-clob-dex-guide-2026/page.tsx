@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Onchain Order Book DEXes 2026: Hyperliquid, dYdX & the CLOB",
   description: "Compare the top onchain CLOB DEXes — Hyperliquid, dYdX v4, Vertex, Drift, and more. See how order-book exchanges are replacing AMMs for perps and spot with",
@@ -890,6 +892,7 @@ export default function OnchainCLOBDexGuidePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Order Book DEXes 2026: Hyperliquid, dYdX & the CLOB", "description": "Compare the top onchain CLOB DEXes \u2014 Hyperliquid, dYdX v4, Vertex, Drift, and more. See how order-book exchanges are replacing AMMs for perps and spot with", "url": "https://degen0x.com/learn/onchain-order-book-clob-dex-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/onchain-order-book-clob-dex-guide-2026" />
+    <AuthoritySources url="/learn/onchain-order-book-clob-dex-guide-2026" />
     </article>
   );
 }

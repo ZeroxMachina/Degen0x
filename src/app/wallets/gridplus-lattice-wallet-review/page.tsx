@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "GridPlus Lattice1 review: enterprise hardware wallet",
   description: "GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs",
@@ -237,6 +243,19 @@ export default function GridPlusLatticeWalletReview() {
 
   return (
     <article style={styles.article}>
+      <ArticleSchema
+        headline="GridPlus Lattice1 review: enterprise hardware wallet"
+        description="GridPlus Lattice1 hardware wallet review: SafeCards, 5-inch touchscreen, WiFi-enabled, auto-sign permissions, MetaMask Snaps. Pros, cons, comparison vs"
+        url="https://degen0x.com/wallets/gridplus-lattice-wallet-review"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/gridplus-lattice-wallet-review" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/gridplus-lattice-wallet-review" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

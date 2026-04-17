@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "DeFi Insurance Protocol Comparison 2026: Nexus Mutual vs",
   description: "Compare DeFi insurance protocols with active cover amounts, claims data, and pricing. Nexus Mutual ($500M+ cover, NXM staking), InsurAce (20+ chains), Neptune",
@@ -194,6 +200,19 @@ export default function DeFiInsuranceProtocolsComparison() {
         scrollBehavior: "smooth",
       }}
     >
+      <ArticleSchema
+        headline="DeFi Insurance Protocol Comparison 2026: Nexus Mutual vs"
+        description="Compare DeFi insurance protocols with active cover amounts, claims data, and pricing. Nexus Mutual ($500M+ cover, NXM staking), InsurAce (20+ chains), Neptune"
+        url="https://degen0x.com/insurance/defi-insurance-protocols-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Insurance"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/insurance/defi-insurance-protocols-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/insurance/defi-insurance-protocols-comparison" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

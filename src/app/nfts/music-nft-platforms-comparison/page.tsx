@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius",
   description: "Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music",
@@ -195,6 +201,19 @@ export default function MusicNFTPlatformsComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Music NFT Platforms 2026: Sound.xyz, Catalog, Royal, Audius"
+        description="Music NFT platforms: Sound.xyz $20M+ artist earnings, Catalog 1/1 editions, Audius 8M+ users, Royal fractional royalties, Arpeggi. Fan engagement, music"
+        url="https://degen0x.com/nfts/music-nft-platforms-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/music-nft-platforms-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/music-nft-platforms-comparison" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

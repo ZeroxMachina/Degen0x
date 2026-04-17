@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Memecoins: Trading Strategies & Risk Management Guide 2026",
   description: "Master memecoin trading in 2026: how they work, trading strategies (sniping, KOL tracking, DCA), risk management, rug pull detection, and tools like",
@@ -308,6 +312,14 @@ export default function MemecoinsTradingStrategyPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Memecoins: Trading Strategies & Risk Management Guide 2026"
+        description="Master memecoin trading in 2026: how they work, trading strategies (sniping, KOL tracking, DCA), risk management, rug pull detection, and tools like"
+        url="https://degen0x.com/learn/memecoins-trading-strategies-risk-management-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1148,6 +1160,7 @@ export default function MemecoinsTradingStrategyPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Memecoins: Trading Strategies & Risk Management Guide 2026", "description": "Master memecoin trading in 2026: how they work, trading strategies (sniping, KOL tracking, DCA), risk management, rug pull detection, and tools like", "url": "https://degen0x.com/learn/memecoins-trading-strategies-risk-management-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/memecoins-trading-strategies-risk-management-guide-2026" />
+<AuthoritySources url="/learn/memecoins-trading-strategies-risk-management-guide-2026" />
 </main>
   );
 }

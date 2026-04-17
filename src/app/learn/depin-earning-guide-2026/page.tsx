@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "How to Earn Crypto with DePIN Nodes in 2026 — Complete Guide",
   description: "Learn how to earn passive crypto income by running DePIN nodes. Compare earnings from Helium, Hivemapper, Render, io.net, Grass, Storj, and Filecoin with real",
@@ -695,6 +697,7 @@ export default function DepinEarningGuide2026() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Earn Crypto with DePIN Nodes in 2026 \u2014 Complete Guide", "description": "Learn how to earn passive crypto income by running DePIN nodes. Compare earnings from Helium, Hivemapper, Render, io.net, Grass, Storj, and Filecoin with real", "url": "https://degen0x.com/learn/depin-earning-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/depin-earning-guide-2026" />
+<AuthoritySources url="/learn/depin-earning-guide-2026" />
 </div>
   );
 }

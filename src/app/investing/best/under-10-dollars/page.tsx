@@ -7,6 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Under $10 (2026) | degen0x`,
   description: `Top cryptocurrencies under $10 in ${CURRENT_YEAR}. Quality projects with strong fundamentals, active development, and room for growth.`,
@@ -42,6 +48,19 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Investing"
+        description="Leading Ethereum scaling ecosystem with zkEVM, CDK for custom chains, and AggLayer for cross-chain interoperability. Major partnership network including Disney"
+        url="/investing/best/under-10-dollars"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/under-10-dollars" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/under-10-dollars" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

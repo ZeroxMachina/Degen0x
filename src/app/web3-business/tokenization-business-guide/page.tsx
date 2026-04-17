@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Real-World Asset Tokenization Business Guide 2026: RWA",
   description: "Complete guide to RWA tokenization business. Cover Polymath, Securitize, tZERO, RealT ($100M+ tokenized). Learn STOs, Reg D/S/A+, fractional ownership,",
@@ -186,6 +192,19 @@ export default function TokenizationBusinessGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="Real-World Asset Tokenization Business Guide 2026: RWA"
+        description="Complete guide to RWA tokenization business. Cover Polymath, Securitize, tZERO, RealT ($100M+ tokenized). Learn STOs, Reg D/S/A+, fractional ownership,"
+        url="https://degen0x.com/web3-business/tokenization-business-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/tokenization-business-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/tokenization-business-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

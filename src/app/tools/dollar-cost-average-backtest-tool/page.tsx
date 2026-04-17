@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "DCA Backtest Tool Guide: Bitcoin & Ethereum Historical",
   description: "Backtest dollar-cost averaging strategies on BTC and ETH with historical data. Compare daily vs weekly vs monthly DCA returns, analyze lump sum vs DCA",
@@ -188,6 +196,24 @@ export default function DCABacktestTool() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="DCA Backtest Tool Guide: Bitcoin & Ethereum Historical"
+        description="Backtest dollar-cost averaging strategies on BTC and ETH with historical data. Compare daily vs weekly vs monthly DCA returns, analyze lump sum vs DCA"
+        url="https://degen0x.com/tools/dollar-cost-average-backtest-tool"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/dollar-cost-average-backtest-tool" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/dollar-cost-average-backtest-tool" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/dollar-cost-average-backtest-tool"
+        name="DCA Backtest Tool Guide: Bitcoin & Ethereum Historical"
+        description="Backtest dollar-cost averaging strategies on BTC and ETH with historical data. Compare daily vs weekly vs monthly DCA returns, analyze lump sum vs DCA"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

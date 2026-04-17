@@ -5,6 +5,15 @@ import { nftMarketplaces } from "@/data/nfts";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = nftMarketplaces.find((m) => m.slug === "superrare")!;
 
 export const metadata: Metadata = {
@@ -28,6 +37,13 @@ const breadcrumbData = {
 export default function SuperRareReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="SuperRare Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/nfts/reviews/superrare"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
@@ -54,6 +70,18 @@ In 2021, SuperRare introduced the RARE governance token and transitioned toward 
       relatedReviews={[ { name: "Foundation", slug: "foundation" }, { name: "Zora", slug: "zora" }, { name: "OpenSea", slug: "opensea" } ]}
       relatedGuides={[ { title: "Best for Art", href: "/nfts/best/art" }, { title: "NFT Art Guide", href: "/nfts/learn/nft-art-guide" } ]}
     />
+      <ArticleSchema
+        headline="SuperRare Review 2026: Fees, Features, Pros & Cons"
+        description="Our in-depth SuperRare review covers premium art curation, RARE governance, 1-of-1 focus, and whether it"
+        url="https://degen0x.com/nfts/reviews/superrare"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/reviews/superrare" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SuperRare Review 2026: Fees, Features, Pros & Cons", "description": "Our in-depth SuperRare review covers premium art curation, RARE governance, 1-of-1 focus, and whether it's worth the premium fees. Updated March 2026.", "url": "https://degen0x.com/nfts/reviews/superrare", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

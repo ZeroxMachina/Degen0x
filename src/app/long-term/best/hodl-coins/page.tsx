@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Cryptocurrencies for Long-Term Holding 2026 - Top HODL Picks`,
   description: `Discover the best cryptocurrencies to hold long-term in ${CURRENT_YEAR}. Expert analysis of Bitcoin, Ethereum, and top altcoins with strong fundamentals for multi-year holding strategies.`,
@@ -116,6 +122,19 @@ const breadcrumbData = {
 export default function HodlCoinsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Network Effects (25%)"
+        description="Bitcoin remains the undisputed king for long-term crypto holding. As the first and largest cryptocurrency with a fixed supply of 21 million coins, Bitcoin has"
+        url="/long-term/best/hodl-coins"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Long Term"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/long-term/best/hodl-coins" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/long-term/best/hodl-coins" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

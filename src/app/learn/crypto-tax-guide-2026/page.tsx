@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Tax Guide 2026: IRS Rules, 1099-DA, DeFi & Staking",
   description: "Complete US crypto tax guide covering IRS rules, 1099-DA reporting, DeFi taxes, NFTs, staking rewards, and tax-loss harvesting strategies for 2026.",
@@ -123,6 +127,14 @@ export default function CryptoTaxGuide2026() {
 
   return (
     <div id="top" style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
+      <ArticleSchema
+        headline="Crypto Tax Guide 2026: IRS Rules, 1099-DA, DeFi & Staking"
+        description="Complete US crypto tax guide covering IRS rules, 1099-DA reporting, DeFi taxes, NFTs, staking rewards, and tax-loss harvesting strategies for 2026."
+        url="https://degen0x.com/learn/crypto-tax-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Disclaimer Banner */}
       <div
@@ -1234,6 +1246,7 @@ export default function CryptoTaxGuide2026() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tax Guide 2026: IRS Rules, 1099-DA, DeFi & Staking", "description": "Complete US crypto tax guide covering IRS rules, 1099-DA reporting, DeFi taxes, NFTs, staking rewards, and tax-loss harvesting strategies for 2026.", "url": "https://degen0x.com/learn/crypto-tax-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-tax-guide-2026" />
+<AuthoritySources url="/learn/crypto-tax-guide-2026" />
 </div>
   );
 }

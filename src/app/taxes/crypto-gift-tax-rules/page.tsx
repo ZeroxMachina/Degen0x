@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Gift Tax Rules 2026: Annual Exclusion, Step-Up Basis",
   description: "Complete crypto gift tax guide 2026: $18,000 annual exclusion, lifetime $13.61M exemption, step-up basis inheritance, gifting to charity, donor-advised funds,",
@@ -198,6 +204,19 @@ export default function CryptoGiftTaxRules() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Gift Tax Rules 2026: Annual Exclusion, Step-Up Basis"
+        description="Complete crypto gift tax guide 2026: $18,000 annual exclusion, lifetime $13.61M exemption, step-up basis inheritance, gifting to charity, donor-advised funds,"
+        url="https://degen0x.com/taxes/crypto-gift-tax-rules"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/crypto-gift-tax-rules" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/crypto-gift-tax-rules" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

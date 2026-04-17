@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 const S = {
   bg: "var(--color-bg, #0d1117)",
   surface: "var(--color-surface, #161b22)",
@@ -332,6 +334,7 @@ export default function DeFiInsuranceGuide() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Insurance Guide 2026 \u2014 Protect Against Hacks & Exploits", "description": "Learn how DeFi insurance works. Compare Nexus Mutual, OpenCover, Neptune Mutual & InsurAce. Protect your crypto from smart contract hacks, depegs & exploits.", "url": "https://degen0x.com/learn/defi-insurance-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/defi-insurance-guide-2026" />
+<AuthoritySources url="/learn/defi-insurance-guide-2026" />
 </main>
   );
 }

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Crypto Copy Trading & Social Trading Platforms Guide 2026',
   description: "Complete guide to crypto copy trading and social trading platforms in 2026. Learn how copy trading works, compare top platforms like Bitget, Bybit, and eToro,",
@@ -221,6 +225,14 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
   }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Copy Trading & Social Trading Platforms Guide 2026"
+        description="Complete guide to crypto copy trading and social trading platforms in 2026. Learn how copy trading works, compare top platforms like Bitget, Bybit, and eToro,"
+        url="https://degen0x.com/learn/crypto-copy-trading-social-trading-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <BackToTop />
@@ -670,6 +682,7 @@ export default function CryptoCopyTradingSocialTradingGuide2026() {
           <a href="/learn/plasma-xpl-stablecoin-chain-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Plasma Xpl Stablecoin Chain Guide 2026</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/crypto-copy-trading-social-trading-guide-2026" />
+      <AuthoritySources url="/learn/crypto-copy-trading-social-trading-guide-2026" />
       </article>
   );
 }

@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin Safe Haven 2026: Is BTC a Hedge Against",
   description: "Bitcoin dropped 47% from its ATH while gold hit $5,000. Explore the data on whether BTC is a safe-haven asset, how it performs during crises, and what the US",
@@ -797,6 +799,7 @@ export default function BitcoinSafeHavenGuidePage() {
         </nav>
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-safe-haven-guide-2026" />
+      <AuthoritySources url="/learn/bitcoin-safe-haven-guide-2026" />
       </article>
   );
 }

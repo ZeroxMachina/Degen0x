@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Solana DeFi Lending Protocols 2026 - Earn Yield on SOL`,
   description: `Compare the best DeFi lending protocols on Solana in ${CURRENT_YEAR}. Earn yield with near-zero transaction fees and sub-second finality.`,
@@ -75,6 +81,19 @@ const breadcrumbData = {
 export default function SolanaPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="DeFi"
+        description="Kamino Finance is Solana"
+        url="/defi-lending/best/solana"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/best/solana" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/best/solana" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

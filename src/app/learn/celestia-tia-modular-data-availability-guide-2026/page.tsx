@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Celestia (TIA) Modular Data Availability Guide 2026 |",
   description:
@@ -251,6 +255,14 @@ export default function CelestiaGuide() {
 
   return (
     <article id="top" aria-label="Guide: Celestia (TIA) Modular Data Availability" style={{ background: "#0d1117", color: "#c9d1d9", minHeight: "100vh", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="Celestia (TIA) Modular Data Availability Guide 2026 |"
+        description="Master Celestia\"
+        url="https://degen0x.com/learn/celestia-tia-modular-data-availability-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -1267,6 +1279,7 @@ export default function CelestiaGuide() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/celestia-tia-modular-data-availability-guide-2026" />
+      <AuthoritySources url="/learn/celestia-tia-modular-data-availability-guide-2026" />
       </article>
   );
 }

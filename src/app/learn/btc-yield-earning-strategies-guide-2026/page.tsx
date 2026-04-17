@@ -14,6 +14,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "BTC Yield Strategies 2026: How to Earn 3-8% APY on Your",
   description: "Stop letting your Bitcoin sit idle. Explore proven BTCFi yield strategies — Babylon staking, Solv Protocol, CoreDAO, BounceBit — with real APY data and risk",
@@ -894,6 +896,7 @@ export default function BTCYieldStrategiesGuidePage() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/btc-yield-earning-strategies-guide-2026" />
+      <AuthoritySources url="/learn/btc-yield-earning-strategies-guide-2026" />
       </article>
   );
 }

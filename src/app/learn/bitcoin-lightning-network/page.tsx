@@ -12,6 +12,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: `Bitcoin Lightning Network Explained (2026): How It Works, Wallets & Use Cases`,
   description: `A complete guide to the Bitcoin Lightning Network for ${CURRENT_YEAR}. Learn how Lightning channels work, the best Lightning wallets, top use cases, and how to send Bitcoin instantly for near-zero fees.`,
@@ -157,6 +161,14 @@ const breadcrumbData = {
 export default function LightningNetworkGuidePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Bitcoin Lightning Network Explained (2026): How It Works, Wallets & Use Cases"
+        description="A complete guide to the Bitcoin Lightning Network for ${CURRENT_YEAR}. Learn how Lightning channels work, the best Lightning wallets, top use cases, and how to send Bitcoin instantly for near-zero fees."
+        url="https://degen0x.com/learn/bitcoin-lightning-network"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -592,6 +604,7 @@ export default function LightningNetworkGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is the Lightning Network?", "description": "Bitcoin Lightning Network guide: Instant payments, zero fees, scalability. Learn channels, routing, privacy, and the future of Bitcoin payments.", "url": "https://degen0x.com/learn/bitcoin-lightning-network", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-lightning-network" />
+<AuthoritySources url="/learn/bitcoin-lightning-network" />
 </div>
   );
 }

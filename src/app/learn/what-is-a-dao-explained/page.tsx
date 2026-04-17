@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "What Is a DAO Explained 2026: Governance, Treasury & Real",
   description: "Complete guide to DAOs in 2026. Learn governance structures, voting mechanisms, real examples (MakerDAO $8B+, Uniswap, Aave, Lido, Nouns), treasury management,",
@@ -207,6 +211,14 @@ export default function WhatIsADAOExplained2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="What Is a DAO Explained 2026: Governance, Treasury & Real"
+        description="Complete guide to DAOs in 2026. Learn governance structures, voting mechanisms, real examples (MakerDAO $8B+, Uniswap, Aave, Lido, Nouns), treasury management,"
+        url="https://degen0x.com/learn/what-is-a-dao-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -663,6 +675,7 @@ export default function WhatIsADAOExplained2026() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is a DAO Explained 2026: Governance, Treasury & Real", "description": "Complete guide to DAOs in 2026. Learn governance structures, voting mechanisms, real examples (MakerDAO $8B+, Uniswap, Aave, Lido, Nouns), treasury management,", "url": "https://degen0x.com/learn/what-is-a-dao-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/what-is-a-dao-explained" />
+      <AuthoritySources url="/learn/what-is-a-dao-explained" />
       </article>
   );
 }

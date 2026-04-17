@@ -9,6 +9,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Software Wallets of 2026 - Hot Wallet Reviews | degen0x`,
   description: `Compare the best software crypto wallets of ${CURRENT_YEAR}. MetaMask, Phantom, Trust Wallet, and more. Expert reviews of browser, mobile, and desktop wallets.`,
@@ -48,6 +54,19 @@ const breadcrumbData = {
 export default function BestSoftwareWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Wallets"
+        description="Wallets"
+        url="/wallets/best/software"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best/software" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best/software" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

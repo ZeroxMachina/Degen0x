@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import GasTracker from "@/components/GasTracker";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ─── SEO Metadata ───────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Gas Tracker - Real-Time Ethereum & Multi-Chain Gas Prices",
@@ -55,6 +61,19 @@ const breadcrumbData = {
 export default function GasTrackerPage() {
   return (
     <main className="min-h-screen bg-gray-950">
+      <ArticleSchema
+        headline="Gas Tracker - Real-Time Ethereum & Multi-Chain Gas Prices"
+        description="Monitor real-time gas prices across Ethereum, Solana, Arbitrum, Polygon, BSC, Base, and Optimism. Get transaction cost estimates and find the best time to"
+        url="/gas-tracker"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/gas-tracker" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/gas-tracker" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

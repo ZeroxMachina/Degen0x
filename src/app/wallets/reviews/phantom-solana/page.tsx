@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Phantom Solana Wallet Review (2026) - Best Solana Wallet? | degen0x`,
   description: `Detailed Phantom review focused on its Solana experience for ${CURRENT_YEAR}. Covers SPL tokens, Solana DeFi, NFT management, staking, and transaction speed.`,
@@ -131,6 +140,13 @@ const breadcrumbData = {
 export default function PhantomSolanaReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Phantom Solana Wallet Review (2026) - Best Solana Wallet?"
+        url="https://degen0x.com/wallets/reviews/phantom-solana"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
@@ -144,6 +160,18 @@ export default function PhantomSolanaReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="Phantom Solana Wallet Review (2026) - Best Solana Wallet? | degen0x"
+        description="Detailed Phantom review focused on its Solana experience for ${CURRENT_YEAR}. Covers SPL tokens, Solana DeFi, NFT management, staking, and transaction speed."
+        url="https://degen0x.com/wallets/reviews/phantom-solana"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/phantom-solana" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana DeFi & dApp Integration", "description": "Phantom is the dominant Solana wallet offering the best SPL token management, Solana DeFi integration, NFT gallery, and staking experience in the ecosystem.", "url": "https://degen0x.com/wallets/reviews/phantom-solana", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

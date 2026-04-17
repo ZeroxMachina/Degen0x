@@ -9,6 +9,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Exchange Cover Insurance 2026 - Protect Your Exchange Holdings`,
   description:
@@ -121,6 +127,19 @@ const breadcrumbData = {
 export default function ExchangeCoverPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Insurance"
+        description="Compare the best crypto exchange insurance options. Protect against exchange hacks, insolvency, and withdrawal freezes with top coverage providers."
+        url="/insurance/best/exchange-cover"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Insurance"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/insurance/best/exchange-cover" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/insurance/best/exchange-cover" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

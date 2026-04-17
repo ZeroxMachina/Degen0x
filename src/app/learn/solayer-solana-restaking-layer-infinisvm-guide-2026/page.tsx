@@ -7,6 +7,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Solayer Guide 2026 — Solana Restaking, sSOL, sUSD &",
   description: 'Complete guide to Solayer, Solana&rsquo;s restaking protocol. Learn about sSOL liquid restaking, sUSD stablecoin, InfiniSVM L1, and LAYER tokenomics.',
@@ -131,6 +135,14 @@ export default function SolayerGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Solayer Guide 2026 — Solana Restaking, sSOL, sUSD &"
+        description="Complete guide to Solayer, Solana&rsquo;s restaking protocol. Learn about sSOL liquid restaking, sUSD stablecoin, InfiniSVM L1, and LAYER tokenomics."
+        url="https://degen0x.com/learn/solayer-solana-restaking-layer-infinisvm-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -547,6 +559,7 @@ export default function SolayerGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solayer Guide 2026 \u2014 Solana Restaking, sSOL, sUSD &", "description": "Complete guide to Solayer, Solana&rsquo;s restaking protocol. Learn about sSOL liquid restaking, sUSD stablecoin, InfiniSVM L1, and LAYER tokenomics.", "url": "https://degen0x.com/learn/solayer-solana-restaking-layer-infinisvm-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/solayer-solana-restaking-layer-infinisvm-guide-2026" />
 </div>
   );
 }

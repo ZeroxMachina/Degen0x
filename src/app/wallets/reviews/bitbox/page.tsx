@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `BitBox02 Review (2026) | degen0x`,
   description: "BitBox02 hardware wallet review covering Swiss security, open-source firmware, minimalist design, and Bitcoin-only edition features.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function BitBoxReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="BitBox02 Review (2026)"
+        url="https://degen0x.com/wallets/reviews/bitbox"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "BitBox02",
@@ -54,7 +70,7 @@ export default function BitBoxReviewPage() {
       categorySlug="wallets"
       overview="BitBox02 by Swiss company Shift Crypto is one of the few hardware wallets that combines a secure element chip with fully open-source firmware. This addresses a common criticism of hardware wallets: Ledger uses a secure element but has closed-source firmware, while Trezor is open source but lacks a secure element. BitBox02 provides both. The device comes in two editions: Multi (supporting Bitcoin, Ethereum, Litecoin, and Cardano) and Bitcoin-only (which literally cannot run altcoin firmware). The companion BitBoxApp provides a clean interface for managing your assets, connecting to your own node, and purchasing crypto."
       sections={[
-        { id: "security-model", title: "Security Model", content: "BitBox02's dual-chip architecture uses both a secure element (ATECC608B) for key storage and a general-purpose microcontroller for wallet logic. The firmware for both chips is open source and supports reproducible builds, meaning anyone can verify that the distributed firmware matches the published source code. This combination provides the physical security benefits of a secure element with the transparency guarantees of open-source software — a balance that is unique in the hardware wallet space." },
+        { id: "security-model", title: "Security Model — Wallets (wallets / reviews / bitbox)", content: "BitBox02's dual-chip architecture uses both a secure element (ATECC608B) for key storage and a general-purpose microcontroller for wallet logic. The firmware for both chips is open source and supports reproducible builds, meaning anyone can verify that the distributed firmware matches the published source code. This combination provides the physical security benefits of a secure element with the transparency guarantees of open-source software — a balance that is unique in the hardware wallet space." },
         { id: "bitcoin-only", title: "Bitcoin-Only Edition", content: "The Bitcoin-only edition is firmware-restricted to support only Bitcoin. It physically cannot be updated to run multi-coin firmware, meaning the codebase is simpler with a smaller attack surface. For Bitcoin maximalists, this provides peace of mind that no altcoin-related code could potentially introduce vulnerabilities. The Bitcoin-only edition is typically priced lower than the Multi edition." },
         { id: "companion-app", title: "BitBoxApp", content: "The BitBoxApp is available for Windows, macOS, Linux, and Android. It provides a clean, well-designed interface for managing your hardware wallet. Features include account management, transaction history, coin control, and direct crypto purchasing through integrated partners. The app supports connecting to your own Bitcoin full node via Electrum server for enhanced privacy. Tor proxy support is also available." },
         { id: "design", title: "Design & Interface", content: "BitBox02 is remarkably compact — roughly the size of a USB stick. It plugs directly into a USB-C port (adapter included for USB-A). The device features invisible touch sensors along the edges for navigation: slide to select, tap to confirm, and hold to go back. A small OLED screen displays transaction details for verification. The minimalist design is discreet and portable, though the touch-slider interface has a learning curve." },
@@ -103,6 +119,18 @@ export default function BitBoxReviewPage() {
         { title: "Best Bitcoin Wallets", href: "/wallets/best/bitcoin" }
       ]}
     />
+      <ArticleSchema
+        headline="BitBox02 Review (2026) | degen0x"
+        description="BitBox02 hardware wallet review covering Swiss security, open-source firmware, minimalist design, and Bitcoin-only edition features."
+        url="https://degen0x.com/wallets/reviews/bitbox"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/bitbox" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security Model", "description": "BitBox02 hardware wallet review covering Swiss security, open-source firmware, minimalist design, and Bitcoin-only edition features.", "url": "https://degen0x.com/wallets/reviews/bitbox", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

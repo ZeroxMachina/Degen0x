@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Leveraged Tokens Guide 2026 | Amplified Crypto Exposure",
   description: "Complete guide to leveraged tokens: how they work, volatility decay risks, DeFi vs CeFi platforms, and strategies to use them effectively. From Index Coop to",
@@ -991,6 +993,7 @@ export default function LeveragedTokensGuide() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Leveraged Tokens Guide 2026 | Amplified Crypto Exposure", "description": "Complete guide to leveraged tokens: how they work, volatility decay risks, DeFi vs CeFi platforms, and strategies to use them effectively. From Index Coop to", "url": "https://degen0x.com/learn/leveraged-tokens-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/leveraged-tokens-guide-2026" />
+    <AuthoritySources url="/learn/leveraged-tokens-guide-2026" />
     </article>
   );
 }

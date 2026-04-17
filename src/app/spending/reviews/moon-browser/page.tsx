@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Moon Browser Extension Review 2026: Fees, Features, Pros & Cons`,
   description: "Detailed Moon browser extension review covering crypto checkout at online retailers, Lightning Network payments, supported stores, and how to spend Bitcoin",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function MoonBrowserReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Moon Browser Extension Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/spending/reviews/moon-browser"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Moon",
@@ -132,6 +148,18 @@ Moon targets Bitcoin users who prefer not to maintain a separate crypto debit ca
         { title: "Best Crypto Online Shopping", href: "/spending/best/online-shopping" },
       ]}
     />
+      <ArticleSchema
+        headline="Moon Browser Extension Review 2026: Fees, Features, Pros & Cons"
+        description="Detailed Moon browser extension review covering crypto checkout at online retailers, Lightning Network payments, supported stores, and how to spend Bitcoin"
+        url="https://degen0x.com/spending/reviews/moon-browser"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/reviews/moon-browser" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How Moon Works", "description": "Detailed Moon browser extension review covering crypto checkout at online retailers, Lightning Network payments, supported stores, and how to spend Bitcoin", "url": "https://degen0x.com/spending/reviews/moon-browser", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

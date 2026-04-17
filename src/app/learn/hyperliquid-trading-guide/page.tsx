@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Hyperliquid Trading Guide 2026: Master the #1 Perpetual DEX",
   description: "Complete guide to trading on Hyperliquid—the dominant perpetual DEX with 70%+ market share, $178B monthly volume, 311 trading pairs, and up to 50x leverage.",
@@ -774,6 +776,7 @@ export default function HyperliquidTradingGuidePage() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hyperliquid Trading Guide 2026: Master the #1 Perpetual DEX", "description": "Complete guide to trading on Hyperliquid\u2014the dominant perpetual DEX with 70%+ market share, $178B monthly volume, 311 trading pairs, and up to 50x leverage.", "url": "https://degen0x.com/learn/hyperliquid-trading-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/hyperliquid-trading-guide" />
+<AuthoritySources url="/learn/hyperliquid-trading-guide" />
 </main>
   );
 }

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics",
   description: "Master tokenomics: BTC 21M cap, ETH deflationary -0.2%/yr post-EIP1559, vesting schedules, team/investor/community distribution, burn mechanisms (BNB",
@@ -194,6 +198,14 @@ export default function TokenomicsHowToAnalyze() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics"
+        description="Master tokenomics: BTC 21M cap, ETH deflationary -0.2%/yr post-EIP1559, vesting schedules, team/investor/community distribution, burn mechanisms (BNB"
+        url="https://degen0x.com/learn/tokenomics-how-to-analyze"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -531,6 +543,7 @@ export default function TokenomicsHowToAnalyze() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tokenomics Analysis: Supply, Vesting, Burn Mechanics", "description": "Master tokenomics: BTC 21M cap, ETH deflationary -0.2%/yr post-EIP1559, vesting schedules, team/investor/community distribution, burn mechanisms (BNB", "url": "https://degen0x.com/learn/tokenomics-how-to-analyze", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/tokenomics-how-to-analyze" />
+      <AuthoritySources url="/learn/tokenomics-how-to-analyze" />
       </article>
   );
 }

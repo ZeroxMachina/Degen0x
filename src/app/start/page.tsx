@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { Metadata } from "next";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata = {
   title: 'Get Started — degen0x | Learn Crypto, Earn XP',
   description: 'Join degen0x and start your crypto journey. Learn at your pace, earn XP, explore 100+ dApps, and climb the leaderboard. Free forever.',
@@ -34,6 +40,19 @@ const breadcrumbData = {
 export default function StartPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Get Started — degen0x | Learn Crypto, Earn XP"
+        description="Join degen0x and start your crypto journey. Learn at your pace, earn XP, explore 100+ dApps, and climb the leaderboard. Free forever."
+        url="/start"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/start" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/start" />
       <BeginnerOnboardingFlow />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Get Started — degen0x | Learn Crypto, Earn XP", "description": "Join degen0x and start your crypto journey. Learn at your pace, earn XP, explore 100+ dApps, and climb the leaderboard. Free forever.", "url": "https://degen0x.com/start", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

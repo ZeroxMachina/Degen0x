@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Stablecoin Yield Platforms 2026 - Earn on USDC, USDT, DAI`,
   description: `Compare the best stablecoin yield opportunities in ${CURRENT_YEAR}. Earn up to 15% APY on USDC, USDT, DAI, and other stablecoins through DeFi lending protocols.`,
@@ -100,6 +106,19 @@ const breadcrumbData = {
 export default function StablecoinYieldPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="DeFi"
+        description="Aave offers competitive stablecoin supply rates across multiple chains. USDC and USDT deposits earn variable APY that typically ranges from 3-8% depending on"
+        url="/defi-lending/best/stablecoin-yield"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/best/stablecoin-yield" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/best/stablecoin-yield" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

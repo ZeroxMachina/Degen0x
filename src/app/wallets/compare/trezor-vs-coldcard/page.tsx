@@ -13,6 +13,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Trezor vs Coldcard (2026): Open-Source Wallet Showdown | degen0x`,
   description: `Trezor vs Coldcard comparison for ${CURRENT_YEAR}. Two open-source hardware wallets compared on Bitcoin features, security, multi-coin support, and price.`,
@@ -47,6 +53,14 @@ const breadcrumbData = {
 export default function TrezorVsColdcardPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Trezor vs Coldcard (2026): Open-Source Wallet Showdown | degen0x"
+        description="Trezor vs Coldcard comparison for ${CURRENT_YEAR}. Two open-source hardware wallets compared on Bitcoin features, security, multi-coin support, and price."
+        url="https://degen0x.com/wallets/compare/trezor-vs-coldcard"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -200,6 +214,11 @@ export default function TrezorVsColdcardPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/trezor-vs-coldcard" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/compare/trezor-vs-coldcard" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/compare/trezor-vs-coldcard" />
     </div>
   );
 }

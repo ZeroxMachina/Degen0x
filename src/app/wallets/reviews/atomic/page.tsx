@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Atomic Wallet Review (2026) | degen0x`,
   description: "Comprehensive Atomic Wallet review covering features, security, atomic swaps, staking, and supported assets. Is Atomic Wallet right for you?",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function AtomicWalletReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Atomic Wallet Review (2026)"
+        url="https://degen0x.com/wallets/reviews/atomic"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Atomic Wallet",
@@ -53,7 +69,7 @@ export default function AtomicWalletReviewPage() {
       categorySlug="wallets"
       overview="Atomic Wallet is a decentralized, non-custodial wallet that supports over 500 cryptocurrencies across multiple blockchains. Its standout feature is atomic swap technology, enabling peer-to-peer trades without intermediaries. Available on Windows, macOS, Linux, iOS, and Android, Atomic Wallet also provides staking, a built-in exchange, and fiat purchasing options. However, the 2023 security incident that resulted in user losses has raised concerns about the wallet's security architecture."
       sections={[
-        { id: "features", title: "Key Features", content: "Atomic Wallet offers a comprehensive set of features including support for 500+ coins and tokens, atomic swaps for decentralized peer-to-peer trading, built-in exchange for quick swaps, staking for over 10 proof-of-stake assets, and a fiat on-ramp through third-party providers. The wallet also includes a portfolio tracker and supports custom token addition for ERC-20 and BEP-20 tokens." },
+        { id: "features", title: "Key Features — Wallets", content: "Atomic Wallet offers a comprehensive set of features including support for 500+ coins and tokens, atomic swaps for decentralized peer-to-peer trading, built-in exchange for quick swaps, staking for over 10 proof-of-stake assets, and a fiat on-ramp through third-party providers. The wallet also includes a portfolio tracker and supports custom token addition for ERC-20 and BEP-20 tokens." },
         { id: "security", title: "Security Analysis", content: "Atomic Wallet stores private keys locally on the user's device, encrypted with the wallet password. It provides a 12-word mnemonic seed for recovery. However, in June 2023, the wallet suffered a security breach affecting some users, raising questions about its security model. The company has since stated it has improved its security infrastructure, but the incident remains a concern for potential users considering the wallet." },
         { id: "staking", title: "Staking & Earning", content: "Staking is available for multiple assets including Cosmos (ATOM), Tezos, Solana, Cardano, Polkadot, and others. APY rates are competitive and rewards are distributed directly to your wallet. The staking interface is straightforward — select the asset, choose an amount, and start staking with a single click. Unstaking periods vary by asset and follow the native blockchain rules." },
         { id: "user-experience", title: "User Experience", content: "The interface is clean and functional across all platforms. The desktop app provides the full feature set, while the mobile app offers a streamlined experience optimized for touch. Navigation is intuitive with clear sections for wallet, exchange, staking, and settings. The onboarding process is simple, requiring only a password to create a new wallet, with no registration or KYC needed." },
@@ -102,6 +118,18 @@ export default function AtomicWalletReviewPage() {
         { title: "Best Wallets for Beginners", href: "/wallets/best/beginners" }
       ]}
     />
+      <ArticleSchema
+        headline="Atomic Wallet Review (2026) | degen0x"
+        description="Comprehensive Atomic Wallet review covering features, security, atomic swaps, staking, and supported assets. Is Atomic Wallet right for you?"
+        url="https://degen0x.com/wallets/reviews/atomic"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/atomic" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Key Features", "description": "Comprehensive Atomic Wallet review covering features, security, atomic swaps, staking, and supported assets. Is Atomic Wallet right for you?", "url": "https://degen0x.com/wallets/reviews/atomic", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

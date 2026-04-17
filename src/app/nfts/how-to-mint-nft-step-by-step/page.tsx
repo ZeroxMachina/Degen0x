@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "How to Mint NFT Step-by-Step 2026: Prepare Artwork, Choose",
   description: "Mint NFT guide: prepare artwork (PNG/GIF/video), choose blockchain (Ethereum $50-500 gas, Solana <$1, Polygon $1-5), select marketplace (OpenSea, Magic Eden),",
@@ -124,6 +130,19 @@ export default function HowToMintNFTStepByStep() {
   }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="How to Mint NFT Step-by-Step 2026: Prepare Artwork, Choose"
+        description="Mint NFT guide: prepare artwork (PNG/GIF/video), choose blockchain (Ethereum $50-500 gas, Solana <$1, Polygon $1-5), select marketplace (OpenSea, Magic Eden),"
+        url="https://degen0x.com/nfts/how-to-mint-nft-step-by-step"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/how-to-mint-nft-step-by-step" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/how-to-mint-nft-step-by-step" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

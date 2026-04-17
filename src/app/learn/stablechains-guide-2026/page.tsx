@@ -9,6 +9,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Stablechains Guide 2026: Circle Arc, Plasma & Stripe Tempo",
   description: "What are stablechains? Deep dive into Circle Arc, Plasma, and Stripe Tempo — Layer 1 blockchains built for stablecoin payments with sub-second finality. 13 min",

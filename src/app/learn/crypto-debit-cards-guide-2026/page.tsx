@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Best Crypto Debit Cards 2026: Spend Bitcoin & USDC Anywhere",
   description: "Compare the best crypto debit cards in 2026. Spend Bitcoin and USDC at any Visa or Mastercard terminal. Fee breakdown, cashback rankings, and top picks",
@@ -662,6 +664,7 @@ export default function CryptoDebitCardsGuide2026Page() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/crypto-debit-cards-guide-2026" />
+      <AuthoritySources url="/learn/crypto-debit-cards-guide-2026" />
       </article>
   );
 }

@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Bitcoin-Only Wallets 2026 | Coldcard, BitBox02, Sparrow",
   description: "Compare Bitcoin-only wallets: Coldcard Mk4 ($157), BitBox02 ($139), Blockstream Jade ($65), Sparrow, Blue Wallet. PSBT support, CoinJoin, BIP-47 PayNyms, UTXO",
@@ -145,6 +151,19 @@ export default function BestBitcoinOnlyWallet() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Bitcoin-Only Wallets 2026 | Coldcard, BitBox02, Sparrow"
+        description="Compare Bitcoin-only wallets: Coldcard Mk4 ($157), BitBox02 ($139), Blockstream Jade ($65), Sparrow, Blue Wallet. PSBT support, CoinJoin, BIP-47 PayNyms, UTXO"
+        url="https://degen0x.com/wallets/best-bitcoin-only-wallet"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best-bitcoin-only-wallet" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best-bitcoin-only-wallet" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

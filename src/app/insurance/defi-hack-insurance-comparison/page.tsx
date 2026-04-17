@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "DeFi Hack Insurance Comparison 2026 | Nexus Mutual,",
   description: "DeFi hack insurance: Nexus Mutual exploit cover, InsurAce protection, Neptune Mutual parametric claims, Unslashed. Compare coverage, payouts, claim speed,",
@@ -137,6 +143,19 @@ export default function DeFiHackInsuranceComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="DeFi Hack Insurance Comparison 2026 | Nexus Mutual,"
+        description="DeFi hack insurance: Nexus Mutual exploit cover, InsurAce protection, Neptune Mutual parametric claims, Unslashed. Compare coverage, payouts, claim speed,"
+        url="https://degen0x.com/insurance/defi-hack-insurance-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Insurance"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/insurance/defi-hack-insurance-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/insurance/defi-hack-insurance-comparison" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

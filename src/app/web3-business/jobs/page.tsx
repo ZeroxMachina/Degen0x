@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto & Web3 Jobs Board 2026 — Find Your Next Role in",
   description:
@@ -244,6 +250,19 @@ const breadcrumbData = {
 export default function CryptoJobsPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="Crypto & Web3 Jobs Board 2026 — Find Your Next Role in"
+        description="Browse the top crypto, DeFi, and Web3 jobs in 2026. Find roles at leading exchanges, DAOs, Layer 1s, and DeFi protocols. Remote & on-site positions."
+        url="/web3-business/jobs"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/jobs" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/jobs" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Hero */}
       <section

@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `LayerBank Review 2026: Multi-Chain L2 Lending Protocol`,
   description: "Detailed LayerBank review covering lending on Scroll, Linea, zkSync, and other L2s, with yield rates, security analysis, and feature comparison.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function LayerBankReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="LayerBank Review 2026: Multi-Chain L2 Lending Protocol"
+        url="https://degen0x.com/defi-lending/reviews/layerbank"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "LayerBank", slug: "layerbank", rating: 3.8, description: "LayerBank is a multi-chain lending protocol deployed across numerous L2 networks including Scroll, Linea, Manta, Mode, and others, offering Compound-style lending markets with ecosystem-specific optimizations.", pros: ["Deployed on many emerging L2 networks for broad access", "Simple Compound-style interface familiar to DeFi users", "Low gas costs across all supported L2 networks", "Early deployment captures ecosystem incentives", "Growing TVL with multi-chain strategy"], cons: ["Liquidity fragmented across many chain deployments", "Some deployments have minimal TVL and activity", "Less innovation compared to newer lending designs", "Team and governance transparency could be improved", "Points speculation drives much of the TVL"], bestFor: "Multi-chain DeFi users seeking lending access across emerging L2 networks", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function LayerBankReview() {
       relatedReviews={[{ name: "ZeroLend", slug: "zerolend" }, { name: "Mendi", slug: "mendi" }, { name: "Lodestar", slug: "lodestar" }]}
       relatedGuides={[{ title: "DeFi on Scroll", href: "/defi-lending/learn/defi-on-scroll" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <ArticleSchema
+        headline="LayerBank Review 2026: Multi-Chain L2 Lending Protocol"
+        description="Detailed LayerBank review covering lending on Scroll, Linea, zkSync, and other L2s, with yield rates, security analysis, and feature comparison."
+        url="https://degen0x.com/defi-lending/reviews/layerbank"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/layerbank" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Deployments", "description": "Detailed LayerBank review covering lending on Scroll, Linea, zkSync, and other L2s, with yield rates, security analysis, and feature comparison.", "url": "https://degen0x.com/defi-lending/reviews/layerbank", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

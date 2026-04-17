@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Linea zkEVM Guide 2026 — Consensys Layer 2 Deep Dive",
@@ -234,6 +238,14 @@ export default function LineaZkEVMGuide() {
 
   return (
     <article id="top" aria-label="Guide: Linea zkEVM" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Linea zkEVM Guide 2026 — Consensys Layer 2 Deep Dive"
+        description="Complete guide to Linea zkEVM, the Consensys-built Layer 2 for Ethereum. Learn how Type 2 zkEVM works, ecosystem metrics, MetaMask integration, DeFi protocols,"
+        url="https://degen0x.com/learn/linea-zkevm-consensys-layer-2-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -973,6 +985,7 @@ npx hardhat run scripts/deploy.js --network linea`}
 </div>
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/linea-zkevm-consensys-layer-2-guide-2026" />
+      <AuthoritySources url="/learn/linea-zkevm-consensys-layer-2-guide-2026" />
       </article>
   );
 }

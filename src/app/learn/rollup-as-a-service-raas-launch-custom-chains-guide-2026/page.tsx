@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Rollup-as-a-Service (RaaS): Launch Custom Chains in 2026",
   description: "Complete guide to Rollup-as-a-Service platforms. Learn how RaaS simplifies custom chain deployment, compare top providers (Caldera, Conduit, AltLayer, Gelato),",
@@ -216,6 +220,14 @@ export default function RaaSOxPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Rollup-as-a-Service (RaaS): Launch Custom Chains in 2026"
+        description="Complete guide to Rollup-as-a-Service platforms. Learn how RaaS simplifies custom chain deployment, compare top providers (Caldera, Conduit, AltLayer, Gelato),"
+        url="https://degen0x.com/learn/rollup-as-a-service-raas-launch-custom-chains-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={pageStyle}>
         <div style={containerStyle}>
@@ -901,6 +913,7 @@ export default function RaaSOxPage() {
             })
           }}
         />
+      <AuthoritySources url="/learn/rollup-as-a-service-raas-launch-custom-chains-guide-2026" />
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rollup-as-a-Service (RaaS): Launch Custom Chains in 2026", "description": "Complete guide to Rollup-as-a-Service platforms. Learn how RaaS simplifies custom chain deployment, compare top providers (Caldera, Conduit, AltLayer, Gelato),", "url": "https://degen0x.com/learn/rollup-as-a-service-raas-launch-custom-chains-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

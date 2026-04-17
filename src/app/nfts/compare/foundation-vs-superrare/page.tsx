@@ -12,6 +12,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Foundation vs SuperRare: Which Art NFT Platform Is Better? (2026) | degen0x`,
   description: "Detailed comparison of Foundation vs SuperRare for NFT art. Compare curation, fees, artist access, auction formats, and collecting experience on both platforms.",
@@ -36,6 +42,14 @@ export default function FoundationVsSuperRarePage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Foundation vs SuperRare: Which Art NFT Platform Is Better? (2026) | degen0x"
+        description="Detailed comparison of Foundation vs SuperRare for NFT art. Compare curation, fees, artist access, auction formats, and collecting experience on both platforms."
+        url="https://degen0x.com/nfts/compare/foundation-vs-superrare"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "Foundation vs SuperRare", href: "#" } ]} />
       <AffiliateDisclosure />
@@ -165,6 +179,11 @@ export default function FoundationVsSuperRarePage() {
         items={["Foundation", "Superrare"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/compare/foundation-vs-superrare" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/compare/foundation-vs-superrare" />
     </div>
   );
 }

@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Crypto Correlation Matrix | degen0x',
   description: "Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling",
@@ -150,6 +158,24 @@ export default function CryptoCorrelationMatrix() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Correlation Matrix | degen0x"
+        description="Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling"
+        url="https://degen0x.com/tools/crypto-correlation-matrix"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/crypto-correlation-matrix" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/crypto-correlation-matrix" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/crypto-correlation-matrix"
+        name="Crypto Correlation Matrix"
+        description="Analyze crypto correlation coefficients (-1 to +1). BTC/ETH ~0.85 correlation, crypto vs stocks/gold/bonds. How correlations break during crashes. Rolling"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

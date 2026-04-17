@@ -6,6 +6,15 @@ import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product: Product = {
   name: "Goldfinch",
   slug: "goldfinch",
@@ -40,6 +49,13 @@ const breadcrumbData = {
 export default function GoldfinchReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Goldfinch Review (2026)"
+        url="https://degen0x.com/defi-lending/reviews/goldfinch"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="DeFi Lending"
@@ -63,6 +79,18 @@ export default function GoldfinchReview() {
       relatedReviews={[{ name: "Maple Finance", slug: "/defi-lending/reviews/maple" }, { name: "Aave", slug: "/defi-lending/reviews/aave" }]}
       relatedGuides={[{ title: "Real Yield Explained", href: "/defi-lending/learn/real-yield-explained" }, { title: "Lending Risks Guide", href: "/defi-lending/learn/lending-risks-guide" }]}
     />
+      <ArticleSchema
+        headline="Goldfinch Review (2026) | degen0x"
+        description="Goldfinch is a decentralized credit protocol that provides crypto loans to real-world businesses in emerging markets, offering DeFi lenders exposure to"
+        url="https://degen0x.com/defi-lending/reviews/goldfinch"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/goldfinch" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real-World Lending Model", "description": "Goldfinch is a decentralized credit protocol that provides crypto loans to real-world businesses in emerging markets, offering DeFi lenders exposure to", "url": "https://degen0x.com/defi-lending/reviews/goldfinch", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

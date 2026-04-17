@@ -5,6 +5,15 @@ import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "aave-loans")!;
 
 export const metadata: Metadata = { title: "Aave Loans Review 2026: DeFi Borrowing Guide", description: "In-depth review of borrowing on Aave. Covers rates, collateral options, liquidation mechanics, multi-chain availability, and borrowing tips. Updated March 2026." ,
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function AaveLoansReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Aave Loans Review 2026: DeFi Borrowing Guide"
+        url="https://degen0x.com/crypto-loans/reviews/aave-loans"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="Aave is the leading platform for decentralized crypto borrowing, enabling permissionless loans across 10+ blockchain networks. Unlike CeFi lenders, Aave requires no KYC, no credit checks, and no applications. You simply deposit collateral and borrow against it instantly. The protocol supports over 100 assets for collateral and borrowing, with variable and stable rate options, flash loans, and advanced features like efficiency mode for correlated assets. With over $15 billion in TVL, Aave offers the deepest liquidity and most reliable borrowing experience in DeFi."
       sections={[
@@ -46,6 +62,18 @@ export default function AaveLoansReview() {
       relatedReviews={[{ name: "Compound", slug: "compound-loans" }, { name: "Nexo", slug: "nexo" }]}
       relatedGuides={[{ title: "Liquidation Risk", href: "/crypto-loans/learn/liquidation-risk" }, { title: "LTV Explained", href: "/crypto-loans/learn/ltv-ratio-explained" }]}
     />
+      <ArticleSchema
+        headline="Aave Loans Review 2026: DeFi Borrowing Guide"
+        description="In-depth review of borrowing on Aave. Covers rates, collateral options, liquidation mechanics, multi-chain availability, and borrowing tips. Updated March 2026."
+        url="https://degen0x.com/crypto-loans/reviews/aave-loans"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/reviews/aave-loans" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave Loans Review 2026: DeFi Borrowing Guide", "description": "In-depth review of borrowing on Aave. Covers rates, collateral options, liquidation mechanics, multi-chain availability, and borrowing tips. Updated March 2026.", "url": "https://degen0x.com/crypto-loans/reviews/aave-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "SEC Digital Commodities List 2026: All 16 Crypto Assets",
@@ -697,6 +699,7 @@ export default function SECDigitalCommoditiesPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/crypto-portfolio-allocation-strategies" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Portfolio Allocation Strategies</a>
         </nav>
+    <AuthoritySources url="/learn/sec-digital-commodities-classification-guide" />
     </main>
     
         <script

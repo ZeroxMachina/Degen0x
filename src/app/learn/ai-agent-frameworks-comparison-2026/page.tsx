@@ -10,12 +10,16 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 const pageTitle = "AI Crypto Agent Frameworks Comparison 2026: Eliza vs Virtuals vs Rig vs ZerePy";
 const pageDescription = "Complete comparison of leading AI agent frameworks for crypto. Analyze Eliza, Virtuals Protocol, Rig, ZerePy, and Autonolas. Find the right framework for your AI agent project.";
 const canonicalUrl = "https://degen0x.com/learn/ai-agent-frameworks-comparison-2026";
 const publishDate = "2026-03-25";
 
 export const metadata: Metadata = {
+  title: "Ai Agent Frameworks Comparison 2026 | degen0x",
+  description: "Comprehensive degen0x guide to ai agent frameworks comparison 2026 — 2026 fundamentals, step-by-step walkthroughs, and risk-aware strategies.",
   title: pageTitle,
   description: pageDescription,
   keywords: [
@@ -580,6 +584,7 @@ export default function AIAgentFrameworksComparison() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/ai-agent-frameworks-comparison-2026" />
       </article>
     
         <script

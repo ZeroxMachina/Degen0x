@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import MemecoinIndexClient from "./MemecoinIndexClient";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Meme Coin Index & Tracker 2026 — Live Prices, Volume & Trends | degen0x`,
   description: `Track meme coins in real-time. Compare DOGE, SHIB, PEPE, WIF, BONK and more by price, volume, market cap, and social sentiment. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.`,
@@ -25,6 +33,24 @@ const breadcrumbData = {
 export default function MemecoinIndexPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Tools"
+        description="Tools"
+        url="/tools/memecoin-index"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/memecoin-index" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/memecoin-index" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/memecoin-index"
+        name="Meme Coin Index & Tracker 2026"
+        description="Track meme coins in real-time. Compare DOGE, SHIB, PEPE, WIF, BONK and more by price, volume, market cap, and social sentiment. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}."
+      />
       <MemecoinIndexClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Meme Coin Index & Tracker 2026 \u2014 Live Prices, Volume & Trends | degen0x", "description": "Track meme coins in real-time. Compare DOGE, SHIB, PEPE, WIF, BONK and more by price, volume, market cap, and social sentiment. Updated ${CURRENT_MONTH} ${CURRENT_YEAR}.", "url": "https://degen0x.com/tools/memecoin-index", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

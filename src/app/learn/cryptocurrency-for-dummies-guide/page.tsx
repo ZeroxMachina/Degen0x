@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Cryptocurrency for Dummies: Complete Beginner Guide",
   description:
@@ -180,6 +184,14 @@ export default function CryptocurrencyForDummiesGuide() {
 
   return (
     <div style={{ minHeight: "100vh", background: darkColors.bg, color: darkColors.text }}>
+      <ArticleSchema
+        headline="Cryptocurrency for Dummies: Complete Beginner Guide"
+        description="Learn cryptocurrency from scratch. Understand Bitcoin, blockchain, wallets & how to buy your first crypto—written for absolute beginners."
+        url="https://degen0x.com/learn/cryptocurrency-for-dummies-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1462,6 +1474,7 @@ export default function CryptocurrencyForDummiesGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cryptocurrency for Dummies: Complete Beginner Guide", "description": "Learn cryptocurrency from scratch. Understand Bitcoin, blockchain, wallets & how to buy your first crypto\u2014written for absolute beginners.", "url": "https://degen0x.com/learn/cryptocurrency-for-dummies-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/cryptocurrency-for-dummies-guide" />
+<AuthoritySources url="/learn/cryptocurrency-for-dummies-guide" />
 </div>
   );
 }

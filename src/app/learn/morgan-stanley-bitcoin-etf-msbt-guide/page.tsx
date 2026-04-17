@@ -9,6 +9,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 const S = {
   bg: "var(--color-bg, #0d1117)",
   surface: "var(--color-surface, #161b22)",
@@ -839,6 +841,7 @@ export default function MSBTGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/morgan-stanley-bitcoin-etf-msbt-guide" />
       </article>
     
         <script

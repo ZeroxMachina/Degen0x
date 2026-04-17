@@ -14,6 +14,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Unichain Guide 2026: Uniswap's DeFi Layer 2 Explained | degen0x",
   description: "What is Unichain? Learn how Uniswap's L2 works — 1-second blocks, UNI staking, 65% revenue share, and $100B+ annualized volume. Complete 2026 guide.",
@@ -495,6 +497,7 @@ export default function UnichainGuide() {
       <LiveMiniStat id="uniswap" />
       <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/unichain-uniswap-layer-2-guide-2026" />
+<AuthoritySources url="/learn/unichain-uniswap-layer-2-guide-2026" />
 </div>
   );
 }

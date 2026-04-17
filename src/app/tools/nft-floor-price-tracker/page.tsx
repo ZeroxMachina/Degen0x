@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'NFT Floor Price Tracker | degen0x',
   description: "Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea",
@@ -150,6 +158,24 @@ export default function NftFloorPriceTracker() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="NFT Floor Price Tracker | degen0x"
+        description="Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea"
+        url="https://degen0x.com/tools/nft-floor-price-tracker"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/nft-floor-price-tracker" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/nft-floor-price-tracker" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/nft-floor-price-tracker"
+        name="NFT Floor Price Tracker"
+        description="Track NFT floor prices live: Bluechip collections (BAYC, Pudgy Penguins, Punks). Analyze floor vs volume divergence. Top trackers: NFTGo, Blur, OpenSea"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

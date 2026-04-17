@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin Halving Explained: History, Dates & Price Impact",
   description: "Complete guide to Bitcoin halving: how it works, historical halvings (2012, 2016, 2020, 2024), next halving in 2028, price impact, and what it means for miners",
@@ -335,6 +339,14 @@ export default function BitcoinHalvingPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Bitcoin Halving Explained: History, Dates & Price Impact"
+        description="Complete guide to Bitcoin halving: how it works, historical halvings (2012, 2016, 2020, 2024), next halving in 2028, price impact, and what it means for miners"
+        url="https://degen0x.com/learn/bitcoin-halving-explained-history"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
@@ -849,6 +861,7 @@ export default function BitcoinHalvingPage() {
             })
           }}
         />
+      <AuthoritySources url="/learn/bitcoin-halving-explained-history" />
       </div>
 
         <AuthorAttribution

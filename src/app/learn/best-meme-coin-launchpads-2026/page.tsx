@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Best Meme Coin Launchpads 2026: Pump.fun, Clanker, LetsBonk",
   description:
@@ -699,6 +701,7 @@ export default function BestMemeCoinLaunchpads2026() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Meme Coin Launchpads 2026: Pump.fun, Clanker, LetsBonk", "description": "Compare the top meme coin launchpad platforms in 2026. Pump.fun vs LetsBonk vs Clanker and more \u2014 fees, chains, features, and which platform to use.", "url": "https://degen0x.com/learn/best-meme-coin-launchpads-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/best-meme-coin-launchpads-2026" />
+<AuthoritySources url="/learn/best-meme-coin-launchpads-2026" />
 </div>
   );
 }

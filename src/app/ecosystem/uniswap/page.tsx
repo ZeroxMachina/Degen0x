@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import UniswapClient from "./UniswapClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Uniswap: The Original DEX Guide 2026 — Multi-Chain AMM",
   description: "Complete guide to Uniswap — the pioneering decentralized exchange. Concentrated liquidity (v3), Uniswap v4 hooks, UNI governance, multi-chain deployment, and",
@@ -59,6 +65,19 @@ const breadcrumbData = {
 export default function UniswapPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Uniswap: The Original DEX Guide 2026 — Multi-Chain AMM"
+        description="Complete guide to Uniswap — the pioneering decentralized exchange. Concentrated liquidity (v3), Uniswap v4 hooks, UNI governance, multi-chain deployment, and"
+        url="/ecosystem/uniswap"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/uniswap" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/uniswap" />
       <UniswapClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Uniswap: The Original DEX Guide 2026 — Multi-Chain AMM", "description": "Complete guide to Uniswap — the pioneering decentralized exchange. Concentrated liquidity (v3), Uniswap v4 hooks, UNI governance, multi-chain deployment, and", "url": "https://degen0x.com/ecosystem/uniswap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Tokenized Treasuries Guide 2026: RWA Yield, BUIDL, USDY &",
   description: "Complete guide to tokenized U.S. Treasuries in 2026. Compare BlackRock BUIDL, Ondo USDY, Circle USYC yields. Learn how to earn 4-5% APY on-chain with",
@@ -27,6 +31,14 @@ const breadcrumbData = {
 export default function TokenizedTreasuriesGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="Tokenized Treasuries Guide 2026: RWA Yield, BUIDL, USDY &"
+        description="Complete guide to tokenized U.S. Treasuries in 2026. Compare BlackRock BUIDL, Ondo USDY, Circle USYC yields. Learn how to earn 4-5% APY on-chain with"
+        url="https://degen0x.com/learn/tokenized-treasuries-rwa-yield-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Header Section */}
       <div className="mb-8">
@@ -1025,6 +1037,7 @@ export default function TokenizedTreasuriesGuidePage() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/tokenized-treasuries-rwa-yield-guide-2026" />
+      <AuthoritySources url="/learn/tokenized-treasuries-rwa-yield-guide-2026" />
       </article>
   );
 }

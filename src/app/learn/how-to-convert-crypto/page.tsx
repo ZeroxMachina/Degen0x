@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'How to Convert Cryptocurrency: Complete 2026 Guide',
   description: 'Learn how to convert crypto easily and safely. Step-by-step guide covering CEX, DEX, fees, taxes, and the best rates for crypto conversion.',
@@ -40,6 +44,14 @@ const breadcrumbData = {
 export default function HowToConvertCryptoPage() {
   return (
     <main style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh' }}>
+      <ArticleSchema
+        headline="How to Convert Cryptocurrency: Complete 2026 Guide"
+        description="Learn how to convert crypto easily and safely. Step-by-step guide covering CEX, DEX, fees, taxes, and the best rates for crypto conversion."
+        url="https://degen0x.com/learn/how-to-convert-crypto"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb Navigation */}
       <div style={{ borderBottom: '1px solid #30363d', paddingTop: '24px' }}>
@@ -513,6 +525,7 @@ export default function HowToConvertCryptoPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Convert Cryptocurrency: Complete 2026 Guide", "description": "Learn how to convert crypto easily and safely. Step-by-step guide covering CEX, DEX, fees, taxes, and the best rates for crypto conversion.", "url": "https://degen0x.com/learn/how-to-convert-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/how-to-convert-crypto" />
+<AuthoritySources url="/learn/how-to-convert-crypto" />
 </main>
   );
 }

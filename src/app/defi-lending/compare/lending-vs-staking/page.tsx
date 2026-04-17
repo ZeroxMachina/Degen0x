@@ -10,6 +10,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `DeFi Lending vs Staking 2026: Which Earns More?`,
   description: `Compare DeFi lending vs staking in ${CURRENT_YEAR}. Analyze yields, risks, lock-up periods, and which passive income strategy is better for your portfolio.`,
@@ -44,6 +50,14 @@ const breadcrumbData = {
 export default function LendingVsStakingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="DeFi Lending vs Staking 2026: Which Earns More?"
+        description="Compare DeFi lending vs staking in ${CURRENT_YEAR}. Analyze yields, risks, lock-up periods, and which passive income strategy is better for your portfolio."
+        url="https://degen0x.com/defi-lending/compare/lending-vs-staking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -145,6 +159,11 @@ export default function LendingVsStakingPage() {
         items={["Lending", "Staking"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/compare/lending-vs-staking" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/compare/lending-vs-staking" />
     </div>
   );
 }

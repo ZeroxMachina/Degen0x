@@ -9,6 +9,13 @@ import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = { title: `CeFi vs DeFi Investing (2026) | degen0x`, description: `CeFi vs DeFi investing comparison for ${CURRENT_YEAR}. Centralized exchanges vs decentralized protocols — convenience, yields, risk, and self-custody compared.` ,
   alternates: { canonical: "/investing/compare/cefi-vs-defi-investing" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -39,6 +46,14 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="CeFi vs DeFi Investing (2026) | degen0x"
+        description="CeFi vs DeFi investing comparison for ${CURRENT_YEAR}. Centralized exchanges vs decentralized protocols — convenience, yields, risk, and self-custody compared."
+        url="https://degen0x.com/investing/compare/cefi-vs-defi-investing"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -126,6 +141,11 @@ export default function Page() {
         items={["Cefi", "DEFI Investing"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/compare/cefi-vs-defi-investing" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/compare/cefi-vs-defi-investing" />
     </div>
   );
 }

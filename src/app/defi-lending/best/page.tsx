@@ -10,6 +10,11 @@ import { DEFI_LENDING_PRODUCTS, DEFI_COMPARISON_ITEMS, DEFI_COMPARISON_FEATURES,
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `7 Best DeFi Lending Protocols of 2026 (Ranked & Reviewed)`,
   description: `Compare the top DeFi lending protocols of ${CURRENT_YEAR}. We tested yield rates, security, TVL, and user experience. Find the best protocol for earning yield and borrowing.`,
@@ -43,6 +48,14 @@ export default function BestDefiLendingPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Stablecoin Yield"
+        description="Stablecoin Yield"
+        url="/defi-lending/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
 
@@ -177,7 +190,11 @@ export default function BestDefiLendingPage() {
         </div>
       </div>
     </div>
-      <AuthoritySources url="/defi-lending/best" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/best" />
     </>
   );
 }

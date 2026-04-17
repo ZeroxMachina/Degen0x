@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Uphold Review 2026: Multi-Asset Trading, Crypto & Fiat",
   description:
@@ -25,6 +31,19 @@ const breadcrumbData = {
 export default function UpholdReview() {
   return (
     <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+      <ArticleSchema
+        headline="Uphold Review 2026: Multi-Asset Trading, Crypto & Fiat"
+        description="Complete Uphold review covering multi-asset trading platform, crypto and fiat support, fees, and security. Updated March 2026."
+        url="/exchanges/uphold"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/uphold" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/uphold" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="mb-8">

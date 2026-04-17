@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Oracles Explained: Chainlink vs Pyth vs API3 (2026",
   description: "Understand blockchain oracles and how they power DeFi. Compare Chainlink (60%+ market share, $66B TVS), Pyth Network (ultra-fast trading data), API3",
@@ -45,6 +49,14 @@ const breadcrumbData = {
 export default function CryptoOraclesGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="Crypto Oracles Explained: Chainlink vs Pyth vs API3 (2026"
+        description="Understand blockchain oracles and how they power DeFi. Compare Chainlink (60%+ market share, $66B TVS), Pyth Network (ultra-fast trading data), API3"
+        url="https://degen0x.com/learn/crypto-oracles-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Learn", href: "/learn" }, { label: "Crypto Oracles Guide" }]} />
@@ -369,6 +381,7 @@ export default function CryptoOraclesGuidePage() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/crypto-oracles-guide-2026" />
+      <AuthoritySources url="/learn/crypto-oracles-guide-2026" />
       </article>
   );
 }

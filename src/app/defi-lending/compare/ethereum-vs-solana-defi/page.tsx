@@ -10,6 +10,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Ethereum vs Solana DeFi Lending 2026: Chain Comparison`,
   description: `Compare Ethereum and Solana DeFi lending ecosystems in ${CURRENT_YEAR}. Analyze protocols, fees, speed, TVL, and which chain is better for lending.`,
@@ -44,6 +50,14 @@ const breadcrumbData = {
 export default function EthereumVsSolanaDefiPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Ethereum vs Solana DeFi Lending 2026: Chain Comparison"
+        description="Compare Ethereum and Solana DeFi lending ecosystems in ${CURRENT_YEAR}. Analyze protocols, fees, speed, TVL, and which chain is better for lending."
+        url="https://degen0x.com/defi-lending/compare/ethereum-vs-solana-defi"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -145,6 +159,11 @@ export default function EthereumVsSolanaDefiPage() {
         items={["Ethereum", "Solana DEFI"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/compare/ethereum-vs-solana-defi" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/compare/ethereum-vs-solana-defi" />
     </div>
   );
 }

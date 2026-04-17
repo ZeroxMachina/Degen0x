@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "AI x DePIN: The Convergence of AI and Decentralized",
   description: "Explore the convergence of AI and decentralized infrastructure networks. Learn about DePIN, top projects like Render and Akash, use cases, and investment",
@@ -713,6 +715,7 @@ export default function AIDepinGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI x DePIN: The Convergence of AI and Decentralized", "description": "Explore the convergence of AI and decentralized infrastructure networks. Learn about DePIN, top projects like Render and Akash, use cases, and investment", "url": "https://degen0x.com/learn/ai-depin-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/ai-depin-crypto-guide" />
+<AuthoritySources url="/learn/ai-depin-crypto-guide" />
 </div>
   );
 }

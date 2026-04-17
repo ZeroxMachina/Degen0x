@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Solend Review 2026: Yield, Fees & Pros/Cons`,
   description:
@@ -27,6 +36,13 @@ const breadcrumbData = {
 export default function SolendReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Solend Review 2026: Yield, Fees & Pros/Cons"
+        url="https://degen0x.com/defi-lending/reviews/solend"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Solend",
@@ -134,6 +150,18 @@ export default function SolendReview() {
         { title: "Solend vs MarginFi", href: "/defi-lending/compare/solend-vs-marginfi" },
       ]}
     />
+      <ArticleSchema
+        headline="Solend Review 2026: Yield, Fees & Pros/Cons"
+        description="Detailed Solend review covering lending rates, isolated pools, governance, and how this OG Solana lending protocol compares to newer alternatives."
+        url="https://degen0x.com/defi-lending/reviews/solend"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/solend" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Main Pool & Isolated Pools", "description": "Detailed Solend review covering lending rates, isolated pools, governance, and how this OG Solana lending protocol compares to newer alternatives.", "url": "https://degen0x.com/defi-lending/reviews/solend", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

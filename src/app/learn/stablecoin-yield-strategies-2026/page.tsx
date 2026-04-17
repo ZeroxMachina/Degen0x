@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Stablecoin Yield Strategies 2026: Earn 4–20% APY | degen0x",
@@ -559,6 +561,7 @@ export default function StablecoinYieldStrategiesPage() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Yield Strategies 2026: Earn 4\u201320% APY | degen0x", "description": "Earn 4\u201320% APY on stablecoins in 2026. Compare Aave, Morpho, Curve, Pendle, and Ethena \u2014 with risk-adjusted yield stacks for conservative, moderate, and", "url": "https://degen0x.com/learn/stablecoin-yield-strategies-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/stablecoin-yield-strategies-2026" />
+<AuthoritySources url="/learn/stablecoin-yield-strategies-2026" />
 </div>
   );
 }

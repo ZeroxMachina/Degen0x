@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Restaking & AVS Ecosystem Guide 2026: EigenLayer, Symbiotic",
@@ -794,6 +796,7 @@ export default function RestakingAVSEcosystemGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Restaking & AVS Ecosystem Guide 2026: EigenLayer, Symbiotic", "description": "Complete guide to the restaking ecosystem in 2026. Understand AVS (Actively Validated Services), compare EigenLayer vs Symbiotic vs Karak, and learn how", "url": "https://degen0x.com/learn/restaking-avs-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/restaking-avs-ecosystem-guide-2026" />
+<AuthoritySources url="/learn/restaking-avs-ecosystem-guide-2026" />
 </div>
   );
 }

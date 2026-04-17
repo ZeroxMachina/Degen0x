@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'No KYC Crypto Loan Platforms | degen0x',
@@ -155,6 +161,19 @@ export default function NoKycCryptoLoanPlatforms() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="No KYC Crypto Loan Platforms | degen0x"
+        description="No KYC Crypto Loan Platforms guide for 2026. Compare options, understand risks, and get started with actionable strategies. Updated April 2026."
+        url="https://degen0x.com/crypto-loans/no-kyc-crypto-loan-platforms"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/no-kyc-crypto-loan-platforms" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/no-kyc-crypto-loan-platforms" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

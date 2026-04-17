@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `CoinGate Review (2026) | degen0x`,
   description: `CoinGate review for ${CURRENT_YEAR}. Payment processing, gift cards, supported cryptocurrencies, merchant tools, fees, and platform comparison.`,
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function CoinGateReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="CoinGate Review (2026)"
+        url="https://degen0x.com/spending/reviews/coingate"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "CoinGate",
@@ -92,6 +108,18 @@ export default function CoinGateReviewPage() {
         { title: "Best Gift Cards", href: "/spending/best/gift-cards" },
       ]}
     />
+      <ArticleSchema
+        headline="CoinGate Review (2026) | degen0x"
+        description="CoinGate review for ${CURRENT_YEAR}. Payment processing, gift cards, supported cryptocurrencies, merchant tools, fees, and platform comparison."
+        url="https://degen0x.com/spending/reviews/coingate"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/reviews/coingate" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Merchant Tools", "description": "CoinGate is a Lithuanian crypto payment gateway offering merchant processing, gift card purchases, and crypto billing solutions supporting 70+ cryptocurrencies.", "url": "https://degen0x.com/spending/reviews/coingate", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

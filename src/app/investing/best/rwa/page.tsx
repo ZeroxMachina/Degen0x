@@ -10,6 +10,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { RWA_FAQS } from "@/data/investing";
 import { Product } from "@/lib/types";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best RWA Crypto Tokens 2026 - Real World Asset Investments`,
   description: `Discover the best Real World Asset (RWA) crypto tokens for ${CURRENT_YEAR}. Tokenized treasuries, real estate, and commodities bridging TradFi and DeFi.`,
@@ -86,6 +92,19 @@ const breadcrumbData = {
 export default function BestRWAPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Top RWA Tokens"
+        description="A leading RWA protocol offering tokenized US Treasury products and institutional-grade yield on-chain. Backed by major investors and growing rapidly in TVL."
+        url="/investing/best/rwa"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/rwa" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/rwa" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

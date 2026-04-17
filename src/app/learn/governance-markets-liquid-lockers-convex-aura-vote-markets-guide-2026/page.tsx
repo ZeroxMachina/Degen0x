@@ -6,6 +6,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Governance Markets & Liquid Lockers (Convex, Aura, Vote",
@@ -151,6 +155,14 @@ export default function GovernanceMarketsPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-b" style={{ backgroundColor: '#0d1117' }}>
+      <ArticleSchema
+        headline="Governance Markets & Liquid Lockers (Convex, Aura, Vote"
+        description="Master governance markets, liquid lockers, Convex, Aura, and vote markets in DeFi. Learn how veTokenomics, Convex\"
+        url="https://degen0x.com/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -807,6 +819,7 @@ export default function GovernanceMarketsPage() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Governance Markets & Liquid Lockers (Convex, Aura, Vote", "description": "Master governance markets, liquid lockers, Convex, Aura, and vote markets in DeFi. Learn how veTokenomics, Convex\\", "url": "https://degen0x.com/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026" />
+<AuthoritySources url="/learn/governance-markets-liquid-lockers-convex-aura-vote-markets-guide-2026" />
 </main>
   );
 }

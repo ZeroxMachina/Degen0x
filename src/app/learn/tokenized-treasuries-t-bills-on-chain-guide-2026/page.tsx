@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Tokenized Treasuries & T-Bills On-Chain Guide 2026 | degen0x',
@@ -224,6 +228,14 @@ export default function TokenizedTreasuriesGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Tokenized Treasuries & T-Bills On-Chain Guide 2026 | degen0x"
+        description="Complete guide to tokenized US Treasuries and T-bills on-chain in 2026. Learn how $11B+ market works, major products (BUIDL, USYC, USDY, BENJI), yield"
+        url="https://degen0x.com/learn/tokenized-treasuries-t-bills-on-chain-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -1116,6 +1128,7 @@ export default function TokenizedTreasuriesGuide() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/tokenized-treasuries-t-bills-on-chain-guide-2026" />
+      <AuthoritySources url="/learn/tokenized-treasuries-t-bills-on-chain-guide-2026" />
       </article>
   );
 }

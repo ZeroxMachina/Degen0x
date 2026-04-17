@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "DeFi Tax Reporting Guide 2026: LP Tokens, Yield,",
   description: "Complete DeFi tax guide 2026: LP token entry/exit, yield farming income, governance rewards, liquidity mining, wrapping events, impermanent loss, Aave/Compound",
@@ -198,6 +204,19 @@ export default function DeFiTaxReportingGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="DeFi Tax Reporting Guide 2026: LP Tokens, Yield,"
+        description="Complete DeFi tax guide 2026: LP token entry/exit, yield farming income, governance rewards, liquidity mining, wrapping events, impermanent loss, Aave/Compound"
+        url="https://degen0x.com/taxes/defi-tax-reporting-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/defi-tax-reporting-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/defi-tax-reporting-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

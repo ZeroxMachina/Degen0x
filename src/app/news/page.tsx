@@ -5,6 +5,16 @@ import path from "path";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME } from "@/lib/constants";
 
+import RelatedContent from "@/components/RelatedContent";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
+import AuthorAttribution from "@/components/AuthorAttribution";
+
 // ── Types ──────────────────────────────────────────────────
 interface BriefingStory {
   id: string;
@@ -133,6 +143,26 @@ export default async function NewsPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Guides"
+        description="Hourly smart-brevity briefing on the top crypto stories. Updated every hour."
+        url="https://degen0x.com/news"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/news" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/news" />
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2024-06-01"
+        updatedDate="2026-04-17"
+        section="news"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -427,6 +457,7 @@ export default async function NewsPage() {
             )}
           </aside>
         </div>
+      <RelatedContent pathname="/news" />
       </div>
     </>
   );

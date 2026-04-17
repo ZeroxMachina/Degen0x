@@ -13,6 +13,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Binance vs Bybit: Detailed Comparison (2026) | degen0x`,
   description:
@@ -73,6 +79,14 @@ export default function BinanceVsBybitPage() {
 
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
+      <ArticleSchema
+        headline="Binance vs Bybit: Detailed Comparison (2026) | degen0x"
+        description="Compare Binance and Bybit for derivatives trading. Analyze futures, leverage, fees, and find the best exchange for advanced crypto traders."
+        url="https://degen0x.com/exchanges/compare/binance-vs-bybit"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
@@ -577,6 +591,11 @@ export default function BinanceVsBybitPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/binance-vs-bybit" />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/compare/binance-vs-bybit" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/compare/binance-vs-bybit" />
 </div>
   );
 }

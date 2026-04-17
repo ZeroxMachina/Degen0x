@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Ethereum Pectra Upgrade Guide 2026: EIP-7702, Staking &",
@@ -201,6 +205,14 @@ export default function PectraUpgradeGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Ethereum Pectra Upgrade Guide 2026: EIP-7702, Staking &"
+        description="Complete guide to the Ethereum Pectra upgrade (Prague + Electra). Learn about EIP-7702 smart wallet powers, flexible staking (32-2048 ETH), and blob throughput"
+        url="https://degen0x.com/learn/ethereum-pectra-upgrade-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -758,6 +770,7 @@ export default function PectraUpgradeGuide() {
 </div>
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-pectra-upgrade-guide-2026" />
+      <AuthoritySources url="/learn/ethereum-pectra-upgrade-guide-2026" />
       </article>
   );
 }

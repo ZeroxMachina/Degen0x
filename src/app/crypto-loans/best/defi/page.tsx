@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best DeFi Loan Platforms 2026 - Decentralized Borrowing`,
   description: `Compare the best DeFi loan platforms in ${CURRENT_YEAR}. Borrow against crypto without KYC through decentralized lending protocols.`,
@@ -41,6 +47,19 @@ const breadcrumbData = {
 export default function DefiLoansPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Crypto Loans"
+        description="Aave is the largest DeFi lending protocol offering permissionless borrowing across 10+ chains. No KYC, no credit checks, no monthly payments. Variable and"
+        url="/crypto-loans/best/defi"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/best/defi" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/best/defi" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Institutional Crypto Adoption 2026 Guide | degen0x",
   description:
@@ -1524,6 +1526,7 @@ export default function InstitutionalCryptoAdoptionGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Institutional Crypto Adoption 2026 Guide | degen0x", "description": "BlackRock", "url": "https://degen0x.com/learn/institutional-crypto-adoption-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/institutional-crypto-adoption-guide-2026" />
+<AuthoritySources url="/learn/institutional-crypto-adoption-guide-2026" />
 </main>
   );
 }

@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Real Yield in DeFi Guide 2026 — Sustainable vs Emission",
   description: "Learn the difference between real yield and token emissions in DeFi. Discover which protocols generate sustainable revenue-backed returns in 2026. Updated",
@@ -1567,6 +1569,7 @@ const RealYieldGuide = () => {
 
           <a href="/learn/mev-maximal-extractable-value-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Mev Maximal Extractable Value Explained</a>
         </nav>
+      <AuthoritySources url="/learn/real-yield-defi-guide-2026" />
       </article>
   );
 };

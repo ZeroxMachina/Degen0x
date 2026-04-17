@@ -14,6 +14,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "AI Agent Wallets & Autonomous Crypto Payments Guide 2026",
   description: "Complete guide to AI agent wallets, x402 protocol, and autonomous cryptocurrency payments. Learn about Alchemy Agentic Wallets, World AgentKit, identity",
@@ -907,6 +909,7 @@ export default function Page() {
           </p>
         </div>
       </article>
+      <AuthoritySources url="/learn/ai-agent-wallets-autonomous-payments-guide-2026" />
       </div>
     
         <script

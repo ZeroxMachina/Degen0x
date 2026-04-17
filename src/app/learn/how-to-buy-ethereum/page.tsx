@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "How to Buy Ethereum (ETH) in 2026: Step-by-Step Guide",
   description: "Learn how to buy Ethereum step by step. Compare the best exchanges, set up a wallet, and stay safe. Updated for 2026 — beginner-friendly guide.",
@@ -62,6 +66,14 @@ export default function HowToBuyEthereumPage() {
 
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh" }}>
+      <ArticleSchema
+        headline="How to Buy Ethereum (ETH) in 2026: Step-by-Step Guide"
+        description="Learn how to buy Ethereum step by step. Compare the best exchanges, set up a wallet, and stay safe. Updated for 2026 — beginner-friendly guide."
+        url="https://degen0x.com/learn/how-to-buy-ethereum"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
@@ -455,6 +467,7 @@ export default function HowToBuyEthereumPage() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Buy Ethereum (ETH) in 2026: Step-by-Step Guide", "description": "Learn how to buy Ethereum step by step. Compare the best exchanges, set up a wallet, and stay safe. Updated for 2026 \u2014 beginner-friendly guide.", "url": "https://degen0x.com/learn/how-to-buy-ethereum", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/how-to-buy-ethereum" />
 </main>
   );
 }

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Onchain Analysis Guide 2026 — Smart Money Tracking Tools &",
   description: "Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for",
@@ -134,6 +138,14 @@ const breadcrumbData = {
 export default function OnchainAnalysisGuide() {
   return (
     <div style={{ backgroundColor: '#0d1117', minHeight: '100vh', paddingTop: 0 }}>
+      <ArticleSchema
+        headline="Onchain Analysis Guide 2026 — Smart Money Tracking Tools &"
+        description="Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for"
+        url="https://degen0x.com/learn/onchain-analysis-smart-money-tracking-tools-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <main
         style={{
@@ -1931,6 +1943,7 @@ export default function OnchainAnalysisGuide() {
       />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Analysis Guide 2026 \u2014 Smart Money Tracking Tools &", "description": "Master onchain analysis with Arkham Intelligence, Nansen, and Bubblemaps. Learn smart money tracking, wallet research, and blockchain data strategies for", "url": "https://degen0x.com/learn/onchain-analysis-smart-money-tracking-tools-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/onchain-analysis-smart-money-tracking-tools-guide-2026" />
+<AuthoritySources url="/learn/onchain-analysis-smart-money-tracking-tools-guide-2026" />
 </div>
   );
 }

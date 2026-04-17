@@ -5,6 +5,12 @@ import NFTRarityAnalytics from '@/components/NFTRarityAnalytics';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'NFT Collection Analytics & Rarity Tools | degen0x',
   description: 'Analyze NFT rarity scores, trait distributions, and estimated prices for top collections including CryptoPunks, BAYC, Azuki, DeGods, and more.',
@@ -30,6 +36,19 @@ const breadcrumbData = {
 export default function NFTAnalyticsPage() {
   return (
     <>
+      <ArticleSchema
+        headline="NFT Collection Analytics & Rarity Tools | degen0x"
+        description="Analyze NFT rarity scores, trait distributions, and estimated prices for top collections including CryptoPunks, BAYC, Azuki, DeGods, and more."
+        url="/nft-analytics"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nft-analytics" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nft-analytics" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Header />
       <main className="min-h-screen bg-[#0d1117]">

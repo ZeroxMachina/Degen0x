@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Breadcrumb from '@/components/Breadcrumb';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Methodology | degen0x',
   description: 'How degen0x evaluates exchanges, wallets, and DeFi protocols with rigorous testing and transparency.',
@@ -103,6 +109,19 @@ export default function MethodologyPage() {
 
   return (
     <div style={{ backgroundColor: darkTheme.bg, color: darkTheme.text, minHeight: '100vh' }}>
+      <ArticleSchema
+        headline="Methodology | degen0x"
+        description="How degen0x evaluates exchanges, wallets, and DeFi protocols with rigorous testing and transparency."
+        url="https://degen0x.com/methodology"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/methodology" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/methodology" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Magic Eden NFT Marketplace Guide 2026 — ME Token & Trading",
   description:
@@ -103,6 +107,14 @@ export default function MagicEdenGuide() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
+      <ArticleSchema
+        headline="Magic Eden NFT Marketplace Guide 2026 — ME Token & Trading"
+        description="Complete Magic Eden marketplace guide for 2026. ME token governance, NFT trading, launchpad, creator rewards, and multi-chain support."
+        url="https://degen0x.com/learn/magic-eden-nft-marketplace-me-token-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
       />
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -366,6 +378,7 @@ export default function MagicEdenGuide() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/magic-eden-nft-marketplace-me-token-guide-2026" />
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Magic Eden NFT Marketplace Guide 2026 \u2014 ME Token & Trading", "description": "Complete Magic Eden marketplace guide for 2026. ME token governance, NFT trading, launchpad, creator rewards, and multi-chain support.", "url": "https://degen0x.com/learn/magic-eden-nft-marketplace-me-token-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

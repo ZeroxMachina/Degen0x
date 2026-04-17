@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import EASXPAttestation from "@/components/EASXPAttestation";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "On-chain XP Attestation — degen0x | Verify Your Crypto",
   description: "Mint a verifiable on-chain credential via Ethereum Attestation Service (EAS). Prove your crypto education, XP earned, and course completions — permanently on",
@@ -27,6 +33,19 @@ const breadcrumbData = {
 export default function XPAttestationPage() {
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+      <ArticleSchema
+        headline="On-chain XP Attestation — degen0x | Verify Your Crypto"
+        description="Mint a verifiable on-chain credential via Ethereum Attestation Service (EAS). Prove your crypto education, XP earned, and course completions — permanently on"
+        url="/xp-attestation"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/xp-attestation" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/xp-attestation" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

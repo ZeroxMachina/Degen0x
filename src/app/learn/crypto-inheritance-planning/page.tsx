@@ -10,6 +10,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Inheritance Planning 2026: Protect Your Digital",
   description: "Complete guide to crypto estate planning. Learn how to secure your Bitcoin, Ethereum, and altcoins for inheritance. Includes Casa protocol, multi-sig wallets,",
@@ -2236,6 +2238,7 @@ export default function CryptoInheritancePlanningPage() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Inheritance Planning 2026: Protect Your Digital", "description": "Complete guide to crypto estate planning. Learn how to secure your Bitcoin, Ethereum, and altcoins for inheritance. Includes Casa protocol, multi-sig wallets,", "url": "https://degen0x.com/learn/crypto-inheritance-planning", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-inheritance-planning" />
+<AuthoritySources url="/learn/crypto-inheritance-planning" />
 </div>
   );
 }

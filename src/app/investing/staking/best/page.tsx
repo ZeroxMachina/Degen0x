@@ -11,6 +11,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import AuthoritySources from '@/components/AuthoritySources';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `8 Best Crypto Staking Platforms of 2026 (Ranked & Reviewed)`,
   description: `Compare the top crypto staking platforms of ${CURRENT_YEAR}. We tested yields, fees, security, and decentralization. Find the best platform for liquid staking, restaking, and more.`,
@@ -66,6 +71,14 @@ export default function BestStakingPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Yield Accuracy (25%)"
+        description="Yield Accuracy (25%)"
+        url="/investing/staking/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -298,7 +311,11 @@ export default function BestStakingPage() {
       </div>
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Yield Accuracy (25%)", "description": "Compare the top crypto staking platforms of ${CURRENT_YEAR}. We tested yields, fees, security, and decentralization. Find the best platform for liquid staking, restaking, and more.", "url": "https://degen0x.com/investing/staking/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/investing/staking/best" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/staking/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/staking/best" />
 </>
   );
 }

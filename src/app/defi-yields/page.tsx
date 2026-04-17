@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import ClientContent from './ClientContent';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `DeFi Yield Aggregator | Compare APY & Yields | degen0x`,
   description: `Compare DeFi yields across Ethereum, Solana, Arbitrum and more. Find the best APY for lending, staking, LPs and yield vaults. Analyze TVL, risk levels, and earn with confidence.`,
@@ -23,6 +29,19 @@ const breadcrumbData = {
 export default function DeFiYieldsPage() {
   return (
     <>
+      <ArticleSchema
+        headline="DeFi"
+        description="DeFi"
+        url="https://degen0x.com/defi-yields"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-yields" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-yields" />
       <ClientContent />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Yield Aggregator | Compare APY & Yields | degen0x", "description": "Compare DeFi yields across Ethereum, Solana, Arbitrum and more. Find the best APY for lending, staking, LPs and yield vaults. Analyze TVL, risk levels, and earn with confidence.", "url": "https://degen0x.com/defi-yields", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

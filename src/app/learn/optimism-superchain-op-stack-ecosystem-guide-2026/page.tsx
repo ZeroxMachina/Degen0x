@@ -6,6 +6,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Optimism Superchain & OP Stack Ecosystem Guide 2026',
   description: 'Complete guide to the Optimism Superchain, OP Stack framework, and its 34+ contributing chains. Learn TVL metrics, interoperability, and DeFi opportunities.',
@@ -1167,6 +1169,7 @@ export default function OptimismSuperchanPage() {
             <strong style={strongStyle}>Disclaimer:</strong> This guide is educational content and does not constitute investment advice. The cryptocurrency and DeFi landscape is rapidly evolving. OP Stack technology, Superchain membership, and fee structures may change. Always conduct your own research and consult a financial advisor before making investment decisions. Risks include smart contract bugs, sequencer failures, Ethereum dependency, regulatory uncertainty, and market volatility. Past performance and ecosystem growth does not guarantee future results. Only allocate capital you can afford to lose.
           </div>
         </div>
+      <AuthoritySources url="/learn/optimism-superchain-op-stack-ecosystem-guide-2026" />
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Optimism Superchain & OP Stack Ecosystem Guide 2026", "description": "Complete guide to the Optimism Superchain, OP Stack framework, and its 34+ contributing chains. Learn TVL metrics, interoperability, and DeFi opportunities.", "url": "https://degen0x.com/learn/optimism-superchain-op-stack-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

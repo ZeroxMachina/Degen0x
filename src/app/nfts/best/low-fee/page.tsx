@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Lowest Fee NFT Marketplaces in 2026 | degen0x`,
   description: `Compare the NFT marketplaces with the lowest fees in ${CURRENT_YEAR}. Find platforms with zero or minimal marketplace fees to maximize your NFT trading profits.`,
@@ -62,6 +68,19 @@ export default function LowestFeeMarketplacesPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="NFTs"
+        description="NFTs"
+        url="/nfts/best/low-fee"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/best/low-fee" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/best/low-fee" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">

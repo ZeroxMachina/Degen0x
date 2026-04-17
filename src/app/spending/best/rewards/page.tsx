@@ -8,6 +8,12 @@ import { Product } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Rewards Cards of 2026 - Earn BTC, ETH & More | degen0x`,
   description: `Compare the best crypto rewards cards of ${CURRENT_YEAR}. Earn Bitcoin, Ethereum, and other cryptocurrencies on everyday spending. Expert-tested rankings and reviews.`,
@@ -116,6 +122,19 @@ const breadcrumbData = {
 export default function BestRewardsCardsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Spending"
+        description="The most comprehensive crypto rewards program available. Beyond cashback, cardholders earn CRO staking rewards, subscription rebates worth up to $167/month"
+        url="/spending/best/rewards"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Spending"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/best/rewards" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/spending/best/rewards" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

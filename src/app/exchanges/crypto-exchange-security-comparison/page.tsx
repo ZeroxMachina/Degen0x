@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Exchange Security Comparison 2026: Coinbase vs",
   description: 'Compare cold storage, insurance, SOC 2, and proof of reserves across Coinbase (98%), Kraken (95%), Binance SAFU ($1B), Gemini, Crypto.com.',
@@ -50,6 +56,19 @@ const toc = [{ id: 'intro', t: 'Overview' }, { id: 'cold', t: 'Cold Storage' }, 
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Exchange Security Comparison 2026: Coinbase vs"
+        description="Compare cold storage, insurance, SOC 2, and proof of reserves across Coinbase (98%), Kraken (95%), Binance SAFU ($1B), Gemini, Crypto.com."
+        url="https://degen0x.com/exchanges/crypto-exchange-security-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/crypto-exchange-security-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/crypto-exchange-security-comparison" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

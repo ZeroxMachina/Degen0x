@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin vs Gold Comparison 2026: Supply, Returns,",
   description: 'Bitcoin vs gold: supply (21M BTC vs 200K tons Au), portability, 1yr/5yr/10yr returns, volatility, Sharpe ratio, digital scarcity vs physical store of value.',
@@ -196,6 +200,14 @@ export default function BitcoinVsGoldComparisonGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bitcoin vs Gold Comparison 2026: Supply, Returns,"
+        description="Bitcoin vs gold: supply (21M BTC vs 200K tons Au), portability, 1yr/5yr/10yr returns, volatility, Sharpe ratio, digital scarcity vs physical store of value."
+        url="https://degen0x.com/learn/bitcoin-vs-gold-comparison-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -573,6 +585,7 @@ export default function BitcoinVsGoldComparisonGuide() {
 </div>
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-vs-gold-comparison-guide" />
+      <AuthoritySources url="/learn/bitcoin-vs-gold-comparison-guide" />
       </article>
   );
 }

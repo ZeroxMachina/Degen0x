@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'PayFi & Crypto Payments Guide 2026 | degen0x',
   description: "Comprehensive guide to PayFi and crypto payments infrastructure in 2026. Learn Stripe Tempo, Circle Arc, stablecoin adoption, Machine Payments Protocol, and",
@@ -250,6 +254,14 @@ export default function PayFiGuide() {
         minHeight: '100vh',
       }}
     >
+      <ArticleSchema
+        headline="PayFi & Crypto Payments Guide 2026 | degen0x"
+        description="Comprehensive guide to PayFi and crypto payments infrastructure in 2026. Learn Stripe Tempo, Circle Arc, stablecoin adoption, Machine Payments Protocol, and"
+        url="https://degen0x.com/learn/payfi-crypto-payments-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1065,6 +1077,7 @@ export default function PayFiGuide() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "PayFi & Crypto Payments Guide 2026 | degen0x", "description": "Comprehensive guide to PayFi and crypto payments infrastructure in 2026. Learn Stripe Tempo, Circle Arc, stablecoin adoption, Machine Payments Protocol, and", "url": "https://degen0x.com/learn/payfi-crypto-payments-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/payfi-crypto-payments-guide-2026" />
+<AuthoritySources url="/learn/payfi-crypto-payments-guide-2026" />
 </main>
   );
 }

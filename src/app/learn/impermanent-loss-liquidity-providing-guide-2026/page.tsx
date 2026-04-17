@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Impermanent Loss & Liquidity Providing Guide 2026 | degen0x',
   description: "Master impermanent loss in DeFi: understand the math, calculate IL, concentrated liquidity strategies, and profit despite price divergence with proven LP",
@@ -294,6 +298,14 @@ export default function ImpermanentLossPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Impermanent Loss & Liquidity Providing Guide 2026 | degen0x"
+        description="Master impermanent loss in DeFi: understand the math, calculate IL, concentrated liquidity strategies, and profit despite price divergence with proven LP"
+        url="https://degen0x.com/learn/impermanent-loss-liquidity-providing-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1025,6 +1037,7 @@ export default function ImpermanentLossPage() {
           <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Impermanent Loss & Liquidity Providing Guide 2026 | degen0x", "description": "Master impermanent loss in DeFi: understand the math, calculate IL, concentrated liquidity strategies, and profit despite price divergence with proven LP", "url": "https://degen0x.com/learn/impermanent-loss-liquidity-providing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/impermanent-loss-liquidity-providing-guide-2026" />
+<AuthoritySources url="/learn/impermanent-loss-liquidity-providing-guide-2026" />
 </main>
   );
 }

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Tokenomics 2.0: DeFi Protocol Revenue & Fee Switches 2026",
   description: "Uniswap burned $591M & activated its fee switch. Aave runs buybacks from protocol revenue. Learn how Tokenomics 2.0 works, how to evaluate DeFi P/E ratios, and",
@@ -52,6 +56,14 @@ const breadcrumbData = {
 export default function TokenomicsProtocolRevenueGuide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <ArticleSchema
+        headline="Tokenomics 2.0: DeFi Protocol Revenue & Fee Switches 2026"
+        description="Uniswap burned $591M & activated its fee switch. Aave runs buybacks from protocol revenue. Learn how Tokenomics 2.0 works, how to evaluate DeFi P/E ratios, and"
+        url="https://degen0x.com/learn/tokenomics-protocol-revenue-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Structured Data */}
       <ArticleStructuredData
@@ -758,6 +770,7 @@ export default function TokenomicsProtocolRevenueGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenomics 2.0: DeFi Protocol Revenue & Fee Switches 2026", "description": "Uniswap burned $591M & activated its fee switch. Aave runs buybacks from protocol revenue. Learn how Tokenomics 2.0 works, how to evaluate DeFi P/E ratios, and", "url": "https://degen0x.com/learn/tokenomics-protocol-revenue-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/tokenomics-protocol-revenue-guide" />
+<AuthoritySources url="/learn/tokenomics-protocol-revenue-guide" />
 </div>
   );
 }

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "How to Buy Ethereum for Beginners: Step-by-Step Guide 2026",
   description: 'Learn how to buy Ethereum as a complete beginner. Compare exchanges, fund accounts, execute your first ETH purchase, and transfer to your own wallet securely.',
@@ -126,6 +130,14 @@ export default function HowToBuyEthereumBeginners() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="How to Buy Ethereum for Beginners: Step-by-Step Guide 2026"
+        description="Learn how to buy Ethereum as a complete beginner. Compare exchanges, fund accounts, execute your first ETH purchase, and transfer to your own wallet securely."
+        url="https://degen0x.com/learn/how-to-buy-ethereum-for-beginners"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -519,6 +531,7 @@ export default function HowToBuyEthereumBeginners() {
 </div>
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/how-to-buy-ethereum-for-beginners" />
+      <AuthoritySources url="/learn/how-to-buy-ethereum-for-beginners" />
       </article>
   );
 }

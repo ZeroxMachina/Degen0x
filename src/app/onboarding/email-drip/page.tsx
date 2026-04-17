@@ -1,25 +1,52 @@
-'use client';
-import EmailDripSequence from "@/components/EmailDripSequence";
-import Link from "next/link";
+import type { Metadata } from "next";
+import ClientPage from "./ClientPage";
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+import RelatedContent from "@/components/RelatedContent";
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
 
-const S = {
-  bg: "#0d1117", surface: "#161b22", border: "#30363d",
-  text: "#e6edf3", text2: "#8b949e", accent: "#6366f1",
+import AuthorAttribution from "@/components/AuthorAttribution";
+
+export const metadata: Metadata = {
+  title: "/Onboarding/Email Drip",
+  description: "Learn about email drip on degen0x — research, guides, and live data.",
+  alternates: { canonical: "https://degen0x.com/onboarding/email-drip" },
+  openGraph: {
+    title: "/Onboarding/Email Drip",
+    description: "Learn about email drip on degen0x — research, guides, and live data.",
+    url: "https://degen0x.com/onboarding/email-drip",
+    type: "article",
+  },
 };
 
-export default function EmailDripPage() {
+export const revalidate = 3600;
+
+export default function Page() {
   return (
-    <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
-      <div style={{ borderBottom: `1px solid ${S.border}`, padding: "16px 24px", display: "flex", gap: 8, fontSize: 13, color: S.text2 }}>
-        <Link href="/" style={{ color: S.text2, textDecoration: "none" }}>Home</Link>
-        <span>/</span>
-        <Link href="/onboarding" style={{ color: S.text2, textDecoration: "none" }}>Onboarding</Link>
-        <span>/</span>
-        <span style={{ color: S.text }}>Email Drip Sequence</span>
+    <>
+      <ArticleSchema
+        headline="/Onboarding/Email Drip"
+        description="Learn about email drip on degen0x — research, guides, and live data."
+        url="https://degen0x.com/onboarding/email-drip"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+      <AuthoritySources url="/onboarding/email-drip" />
+      <AuthorAttribution
+        author="degen0x"
+        role="Content"
+        publishedDate="2024-06-01"
+        updatedDate="2026-04-17"
+        section="onboarding"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/onboarding/email-drip" />
+        <ReadingTime />
       </div>
-      <div style={{ maxWidth: 900, margin: "0 auto", padding: "32px 0" }}>
-        <EmailDripSequence userName="Jefe" currentDay={0} />
-      </div>
-    </main>
+      <ClientPage />
+      <RelatedContent pathname="/onboarding/email-drip" />
+    </>
   );
 }

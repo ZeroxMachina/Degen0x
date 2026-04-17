@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Smart Contract Security Audits: Complete Guide 2026",
   description: "Learn how smart contract audits work, top vulnerabilities (OWASP Top 10), audit firm comparison, costs, and how to verify protocol security. Updated March 2026.",
@@ -830,6 +832,7 @@ export default function SmartContractSecurityAuditPage() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Contract Security Audits: Complete Guide 2026", "description": "Learn how smart contract audits work, top vulnerabilities (OWASP Top 10), audit firm comparison, costs, and how to verify protocol security. Updated March 2026.", "url": "https://degen0x.com/learn/smart-contract-security-audit-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/smart-contract-security-audit-guide-2026" />
+<AuthoritySources url="/learn/smart-contract-security-audit-guide-2026" />
 </div>
 
   );

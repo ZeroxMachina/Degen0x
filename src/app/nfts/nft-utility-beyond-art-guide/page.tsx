@@ -2,6 +2,12 @@ import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'NFT Utility Beyond Art | Access, Ticketing, Identity',
   description: 'NFT utility guide: token-gated access, ticketing, domain names, credentials. Real use cases beyond collectible art and speculation.',
@@ -101,6 +107,19 @@ const breadcrumbData = {
 export default function NFTUtility() {
   return (
     <main style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="NFT Utility Beyond Art | Access, Ticketing, Identity"
+        description="NFT utility guide: token-gated access, ticketing, domain names, credentials. Real use cases beyond collectible art and speculation."
+        url="https://degen0x.com/nfts/nft-utility-beyond-art-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/nft-utility-beyond-art-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/nft-utility-beyond-art-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

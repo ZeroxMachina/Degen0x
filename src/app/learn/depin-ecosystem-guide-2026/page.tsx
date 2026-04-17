@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "DePIN Ecosystem Guide 2026: 650+ Projects & $9B TVL",
   description: "Complete DePIN (Decentralized Physical Infrastructure Networks) guide for 2026. 650+ active projects, $9B market cap (up 270% YoY), compute, storage, wireless,",
@@ -555,6 +557,7 @@ export default function DePINEcosystemGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DePIN Ecosystem Guide 2026: 650+ Projects & $9B TVL", "description": "Complete DePIN (Decentralized Physical Infrastructure Networks) guide for 2026. 650+ active projects, $9B market cap (up 270% YoY), compute, storage, wireless,", "url": "https://degen0x.com/learn/depin-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/depin-ecosystem-guide-2026" />
+<AuthoritySources url="/learn/depin-ecosystem-guide-2026" />
 </div>
   );
 }

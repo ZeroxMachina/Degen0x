@@ -9,6 +9,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Proof of Work vs Proof of Stake 2026: Energy, Security,",
   description: 'PoW vs PoS comparison: Bitcoin 150 TWh/year vs Ethereum 0.01 TWh (staking). Security, decentralization, finality, 51% attack cost. Comparison table.',
@@ -65,6 +69,14 @@ export default function ProofOfWorkVsProofOfStake() {
   }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Proof of Work vs Proof of Stake 2026: Energy, Security,"
+        description="PoW vs PoS comparison: Bitcoin 150 TWh/year vs Ethereum 0.01 TWh (staking). Security, decentralization, finality, 51% attack cost. Comparison table."
+        url="https://degen0x.com/compare/proof-of-work-vs-proof-of-stake"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -284,6 +296,7 @@ export default function ProofOfWorkVsProofOfStake() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/proof-of-work-vs-proof-of-stake" />
+      <AuthoritySources url="/compare/proof-of-work-vs-proof-of-stake" />
       </article>
   );
 }

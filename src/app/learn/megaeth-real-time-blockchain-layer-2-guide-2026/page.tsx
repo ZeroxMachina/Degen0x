@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'MegaETH Guide 2026 — Real-Time L2, 100K TPS & MEGA Token',
   description: "Complete guide to MegaETH: the first real-time Ethereum L2 with 100,000 TPS, sub-10ms blocks, heterogeneous architecture, MegaMafia ecosystem, and MEGA",
@@ -127,6 +131,14 @@ export default function MegaETHGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="MegaETH Guide 2026 — Real-Time L2, 100K TPS & MEGA Token"
+        description="Complete guide to MegaETH: the first real-time Ethereum L2 with 100,000 TPS, sub-10ms blocks, heterogeneous architecture, MegaMafia ecosystem, and MEGA"
+        url="https://degen0x.com/learn/megaeth-real-time-blockchain-layer-2-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={containerStyle}>
         <script
@@ -460,6 +472,7 @@ export default function MegaETHGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MegaETH Guide 2026 \u2014 Real-Time L2, 100K TPS & MEGA Token", "description": "Complete guide to MegaETH: the first real-time Ethereum L2 with 100,000 TPS, sub-10ms blocks, heterogeneous architecture, MegaMafia ecosystem, and MEGA", "url": "https://degen0x.com/learn/megaeth-real-time-blockchain-layer-2-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/megaeth-real-time-blockchain-layer-2-guide-2026" />
+<AuthoritySources url="/learn/megaeth-real-time-blockchain-layer-2-guide-2026" />
 </div>
 
   );

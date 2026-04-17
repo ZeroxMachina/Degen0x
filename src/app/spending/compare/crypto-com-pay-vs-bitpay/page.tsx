@@ -4,6 +4,10 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import LearnPageLayout from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: `Crypto.com Pay vs BitPay (2026) | degen0x`,
   description: `Crypto.com Pay vs BitPay comparison for ${CURRENT_YEAR}. Compare cashback rewards, merchant acceptance, fees, supported cryptos, and consumer features.`,
@@ -12,7 +16,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const toc = [
-  { id: "overview", title: "Comparison Overview", level: 2 },
+  { id: "overview", title: "Crypto.com Pay vs BitPay: Payment Comparison | degen0x", level: 2 },
   { id: "rewards", title: "Rewards &amp; Cashback", level: 2 },
   { id: "merchant-acceptance", title: "Merchant Acceptance", level: 2 },
   { id: "consumer-features", title: "Consumer Features", level: 2 },

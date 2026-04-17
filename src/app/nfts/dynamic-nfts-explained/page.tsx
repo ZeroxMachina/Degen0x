@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Dynamic NFTs Explained 2026: On-Chain Updates, Real-Time",
   description: "Complete guide to dynamic NFTs: on-chain updates, real-time data feeds, Chainlink oracles, evolving metadata, gaming NFTs, and comparison to static NFTs. Full",
@@ -188,6 +194,19 @@ export default function DynamicNFTsGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Dynamic NFTs Explained 2026: On-Chain Updates, Real-Time"
+        description="Complete guide to dynamic NFTs: on-chain updates, real-time data feeds, Chainlink oracles, evolving metadata, gaming NFTs, and comparison to static NFTs. Full"
+        url="https://degen0x.com/nfts/dynamic-nfts-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/dynamic-nfts-explained" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/dynamic-nfts-explained" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

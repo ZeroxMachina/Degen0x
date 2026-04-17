@@ -10,6 +10,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Euler V2 Modular Lending Guide 2026 — Vaults & EVK | degen0x',
   description: 'Master Euler V2\'s modular lending vaults, Euler Vault Kit (EVK), and Ethereum Vault Connector (EVC). Institutional DeFi, RWA collateral, and yield strategies explained.',
@@ -1310,6 +1312,7 @@ export default function EulerV2Guide() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Euler V2 Modular Lending Guide 2026 \u2014 Vaults & EVK | degen0x", "description": "Master Euler V2\\", "url": "https://degen0x.com/learn/euler-v2-modular-lending-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/euler-v2-modular-lending-guide-2026" />
+<AuthoritySources url="/learn/euler-v2-modular-lending-guide-2026" />
 </main>
   );
 }

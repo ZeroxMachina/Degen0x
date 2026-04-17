@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Token Launchpads of 2026 - IDO & Fair Launch Platforms | degen0x`,
   description: `Compare the best token launchpads and IDO platforms of ${CURRENT_YEAR}. Launch your token with trusted platforms ranked by security, community reach, and success rate.`,
@@ -116,6 +122,19 @@ const breadcrumbData = {
 export default function LaunchpadsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Security (30%)"
+        description="A leading fair launch platform that specializes in Liquidity Bootstrapping Pools (LBPs). Projects set a starting price that decays over time, allowing the"
+        url="/web3-business/best/launchpads"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/best/launchpads" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/best/launchpads" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

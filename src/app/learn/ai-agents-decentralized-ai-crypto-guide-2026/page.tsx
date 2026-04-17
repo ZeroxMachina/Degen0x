@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "AI Agents & Decentralized AI in Crypto — Complete Guide 2026",
@@ -230,6 +234,14 @@ export default function AIAgentsGuide() {
 
   return (
     <article id="top" aria-label="Guide: AI Agents & Decentralized AI in Crypto" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="AI Agents & Decentralized AI in Crypto — Complete Guide 2026"
+        description="Comprehensive guide to AI agents and decentralized AI in crypto. Learn about Bittensor, Virtuals, Render Network, ai16z, Olas, and how AI autonomously manages"
+        url="https://degen0x.com/learn/ai-agents-decentralized-ai-crypto-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -853,6 +865,7 @@ export default function AIAgentsGuide() {
           <a href="/learn/crypto-custody-solutions-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Custody Solutions Explained</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/ai-agents-decentralized-ai-crypto-guide-2026" />
+      <AuthoritySources url="/learn/ai-agents-decentralized-ai-crypto-guide-2026" />
       </article>
   );
 }

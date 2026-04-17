@@ -5,6 +5,15 @@ import { nftMarketplaces } from "@/data/nfts";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = nftMarketplaces.find((m) => m.slug === "zora")!;
 
 export const metadata: Metadata = {
@@ -28,6 +37,13 @@ const breadcrumbData = {
 export default function ZoraReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Zora Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/nfts/reviews/zora"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
@@ -54,6 +70,18 @@ The Zora protocol is open-source, meaning any developer can build marketplace ex
       relatedReviews={[ { name: "Rarible", slug: "rarible" }, { name: "Foundation", slug: "foundation" }, { name: "OpenSea", slug: "opensea" } ]}
       relatedGuides={[ { title: "Best for Creators", href: "/nfts/best/creators" }, { title: "How to Create NFTs", href: "/nfts/learn/how-to-create-nfts" } ]}
     />
+      <ArticleSchema
+        headline="Zora Review 2026: Fees, Features, Pros & Cons"
+        description="Our in-depth Zora review covers zero fees, decentralized minting, Zora Network L2, and whether it"
+        url="https://degen0x.com/nfts/reviews/zora"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/reviews/zora" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Zora Review 2026: Fees, Features, Pros & Cons", "description": "Our in-depth Zora review covers zero fees, decentralized minting, Zora Network L2, and whether it's the right platform for creators. Updated March 2026.", "url": "https://degen0x.com/nfts/reviews/zora", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

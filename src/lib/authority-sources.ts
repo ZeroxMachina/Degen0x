@@ -234,6 +234,163 @@ export const AUTHORITY_SOURCES: Record<string, readonly AuthoritySource[]> = {
       note: 'Independent NFT market data across marketplaces and chains.',
     },
   ],
+  stablecoins: [
+    {
+      label: 'Circle transparency reports',
+      url: 'https://www.circle.com/en/transparency',
+      note: 'Monthly attestations of USDC reserves issued by Circle.',
+    },
+    {
+      label: 'Tether transparency',
+      url: 'https://tether.to/en/transparency/',
+      note: 'Reserve breakdowns and attestation reports for USDT.',
+    },
+    {
+      label: 'MakerDAO — DAI documentation',
+      url: 'https://docs.makerdao.com/',
+      note: 'Canonical docs for the DAI decentralized stablecoin system.',
+    },
+    {
+      label: 'Federal Reserve — Stablecoin report',
+      url: 'https://www.federalreserve.gov/publications/files/money-and-payments-20220120.pdf',
+      note: 'Fed report surveying the role of stablecoins in the US payments system.',
+    },
+  ],
+  'layer-2': [
+    {
+      label: 'L2Beat',
+      url: 'https://l2beat.com/',
+      note: 'Independent L2 risk, TVL, and activity metrics.',
+    },
+    {
+      label: 'Optimism — documentation',
+      url: 'https://docs.optimism.io/',
+      note: 'Official Optimism rollup documentation.',
+    },
+    {
+      label: 'Arbitrum — documentation',
+      url: 'https://docs.arbitrum.io/',
+      note: 'Official Arbitrum Nitro rollup documentation.',
+    },
+  ],
+  derivatives: [
+    {
+      label: 'Coinglass — futures data',
+      url: 'https://www.coinglass.com/',
+      note: 'Aggregates perpetual-futures open interest, funding rates, and liquidations.',
+    },
+    {
+      label: 'CFTC — Digital Assets',
+      url: 'https://www.cftc.gov/digitalassets/index.htm',
+      note: 'US commodity-derivatives regulator; oversees listed crypto futures.',
+    },
+    {
+      label: 'CME Group — cryptocurrency futures',
+      url: 'https://www.cmegroup.com/markets/cryptocurrencies.html',
+      note: 'Regulated US futures venue for BTC and ETH derivatives — reference pricing.',
+    },
+  ],
+  bridges: [
+    {
+      label: 'DefiLlama — Bridges',
+      url: 'https://defillama.com/bridges',
+      note: 'Ranked cross-chain bridge TVL and flows across ecosystems.',
+    },
+    {
+      label: 'Chainalysis — cross-chain crime report',
+      url: 'https://www.chainalysis.com/blog/cross-chain-crime-money-laundering-2022/',
+      note: 'Independent data on the security and illicit-flow profile of bridges.',
+    },
+  ],
+  oracles: [
+    {
+      label: 'Chainlink — documentation',
+      url: 'https://docs.chain.link/',
+      note: 'Canonical documentation for the largest decentralized oracle network.',
+    },
+    {
+      label: 'Pyth Network — documentation',
+      url: 'https://docs.pyth.network/',
+      note: 'High-frequency price oracle with first-party data publishers.',
+    },
+  ],
+  mining: [
+    {
+      label: 'Cambridge Bitcoin Electricity Consumption Index',
+      url: 'https://ccaf.io/cbnsi/cbeci',
+      note: 'Cambridge Centre for Alternative Finance — authoritative mining energy data.',
+    },
+    {
+      label: 'Hashrate Index',
+      url: 'https://hashrateindex.com/',
+      note: 'Bitcoin mining hashprice, hashrate, and rig economics.',
+    },
+  ],
+  dao: [
+    {
+      label: 'DeepDAO',
+      url: 'https://deepdao.io/',
+      note: 'Independent DAO treasury, governance, and participation metrics.',
+    },
+    {
+      label: 'Snapshot',
+      url: 'https://snapshot.org/',
+      note: 'Primary off-chain governance voting venue used by most DAOs.',
+    },
+  ],
+  gaming: [
+    {
+      label: 'DappRadar — Games',
+      url: 'https://dappradar.com/rankings/games',
+      note: 'Independent rankings of Web3 game activity by unique wallets and volume.',
+    },
+    {
+      label: 'Messari — Gaming',
+      url: 'https://messari.io/',
+      note: 'Institutional research coverage on the Web3 gaming sector.',
+    },
+  ],
+  privacy: [
+    {
+      label: 'Zcash — documentation',
+      url: 'https://zips.z.cash/',
+      note: 'Canonical Zcash Improvement Proposals — reference for zk-SNARK privacy design.',
+    },
+    {
+      label: 'Monero — research lab',
+      url: 'https://www.getmonero.org/resources/research-lab/',
+      note: 'Official Monero cryptographic research publications.',
+    },
+  ],
+  lending: [
+    {
+      label: 'Aave — documentation',
+      url: 'https://docs.aave.com/',
+      note: 'Canonical documentation for the Aave lending protocol.',
+    },
+    {
+      label: 'Compound — documentation',
+      url: 'https://docs.compound.finance/',
+      note: 'Canonical documentation for Compound v3 markets.',
+    },
+    {
+      label: 'DefiLlama — Lending',
+      url: 'https://defillama.com/protocols/Lending',
+      note: 'Independent TVL and rate data across DeFi lending markets.',
+    },
+  ],
+  airdrop: [
+    {
+      label: 'Dune — airdrop dashboards',
+      url: 'https://dune.com/browse/dashboards?tags=airdrop',
+      note: 'Open-source airdrop eligibility and claim dashboards.',
+    },
+    {
+      label: 'DefiLlama — Airdrops',
+      url: 'https://defillama.com/airdrops',
+      note: 'Tracker for active and historical airdrops with eligibility rules.',
+    },
+  ],
   default: [
     {
       label: 'CoinGecko',
@@ -278,6 +435,34 @@ export function pickAuthoritySources(
     buckets.push('regulation');
   if (u.includes('price') || u.includes('market') || u.includes('trading'))
     buckets.push('markets');
+  if (u.includes('stable') || u.includes('usdc') || u.includes('usdt') || u.includes('dai'))
+    buckets.push('stablecoins');
+  if (
+    u.includes('layer-2') || u.includes('layer2') || u.includes('rollup') ||
+    u.includes('optimism') || u.includes('arbitrum') || u.includes('/l2-') ||
+    u.includes('-l2')
+  )
+    buckets.push('layer-2');
+  if (
+    u.includes('derivative') || u.includes('perp') || u.includes('futures') ||
+    u.includes('options') || u.includes('leverage')
+  )
+    buckets.push('derivatives');
+  if (u.includes('bridge') || u.includes('cross-chain') || u.includes('crosschain'))
+    buckets.push('bridges');
+  if (u.includes('oracle') || u.includes('chainlink') || u.includes('pyth'))
+    buckets.push('oracles');
+  if (u.includes('mining') || u.includes('miner') || u.includes('hashrate') || u.includes('asic'))
+    buckets.push('mining');
+  if (u.includes('/dao') || u.includes('-dao') || u.includes('governance'))
+    buckets.push('dao');
+  if (u.includes('gaming') || u.includes('/game') || u.includes('gamefi') || u.includes('p2e'))
+    buckets.push('gaming');
+  if (u.includes('privacy') || u.includes('monero') || u.includes('zcash') || u.includes('tornado') || u.includes('zk'))
+    buckets.push('privacy');
+  if (u.includes('lending') || u.includes('/loan') || u.includes('borrow') || u.includes('aave') || u.includes('compound'))
+    buckets.push('lending');
+  if (u.includes('airdrop')) buckets.push('airdrop');
 
   const seen = new Set<string>();
   const out: AuthoritySource[] = [];

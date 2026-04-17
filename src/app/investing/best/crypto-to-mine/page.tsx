@@ -7,6 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto to Mine (2026) | degen0x`,
   description: `The most profitable cryptocurrencies to mine in ${CURRENT_YEAR}. Compare Bitcoin, Litecoin, Kaspa, and other mineable coins by profitability and hardware requirements.`,
@@ -42,6 +48,19 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Investing"
+        description="The original proof-of-work cryptocurrency and largest by market cap. Requires specialized ASIC hardware but offers the most liquid and established mining"
+        url="/investing/best/crypto-to-mine"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/crypto-to-mine" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/crypto-to-mine" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

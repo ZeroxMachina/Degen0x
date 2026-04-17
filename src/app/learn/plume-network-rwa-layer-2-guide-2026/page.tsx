@@ -6,6 +6,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Plume Network: RWA Layer 2 Guide 2026 | Degen0x',
   description: "Complete guide to Plume Network, the modular Layer 2 purpose-built for real-world assets (RWAs). Learn about Arc tokenization engine, Nexus data highway,",
@@ -67,6 +71,14 @@ const breadcrumbData = {
 export default function PlumeNetworkRwaL2Guide2026() {
   return (
     <article className="prose prose-invert mx-auto max-w-3xl px-4 py-12">
+      <ArticleSchema
+        headline="Plume Network: RWA Layer 2 Guide 2026 | Degen0x"
+        description="Complete guide to Plume Network, the modular Layer 2 purpose-built for real-world assets (RWAs). Learn about Arc tokenization engine, Nexus data highway,"
+        url="https://degen0x.com/learn/plume-network-rwa-layer-2-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -202,6 +214,7 @@ export default function PlumeNetworkRwaL2Guide2026() {
             })
           }}
         />
+      <AuthoritySources url="/learn/plume-network-rwa-layer-2-guide-2026" />
       </article>
   );
 }

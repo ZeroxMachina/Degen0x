@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const toc = [
-  { id: "overview", title: "Overview", level: 2 },
+  { id: "overview", title: "Koinly Review 2026: Fees, Features, Pros & Cons | degen0x", level: 2 },
   { id: "key-features", title: "Key Features", level: 2 },
   { id: "pricing", title: "Pricing & Plans", level: 2 },
   { id: "supported-integrations", title: "Supported Integrations", level: 2 },
@@ -48,6 +48,21 @@ const breadcrumbData = {
 export default function KoinlyReviewPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <ReviewSchema
+        itemName="Koinly Review (2026) - Fees, Features, Pros & Cons"
+        url="https://degen0x.com/taxes/reviews/koinly"
+        rating={4.8}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
+      <ArticleSchema
+        headline="Koinly Review (2026) - Fees, Features, Pros & Cons | degen0x"
+        description="In-depth Koinly review for ${CURRENT_YEAR}. We tested Koinly"
+        url="https://degen0x.com/taxes/reviews/koinly"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -215,6 +230,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import MethodologyBlock from '@/components/MethodologyBlock';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import ReadingTime from "@/components/ReadingTime";
+
           </p>
         </section>
 
@@ -369,6 +392,11 @@ import LastUpdated from '@/components/LastUpdated';
           <a href="/taxes/reviews/coinpanda" style={{ color: "#fb923c", marginRight: "1rem" }}>Coinpanda</a>
         </nav>
       <MethodologyBlock variant="review" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/reviews/koinly" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/reviews/koinly" />
     </main>
   );
 }

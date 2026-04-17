@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Flash Loans in DeFi Guide 2026 — How They Work | degen0x',
   description: "Master flash loans: Aave, dYdX, Balancer, Uniswap. Learn uncollateralized lending, atomic transactions, arbitrage, oracle attacks, MEV, and flash loan",
@@ -290,6 +294,14 @@ export default function FlashLoansPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Flash Loans in DeFi Guide 2026 — How They Work | degen0x"
+        description="Master flash loans: Aave, dYdX, Balancer, Uniswap. Learn uncollateralized lending, atomic transactions, arbitrage, oracle attacks, MEV, and flash loan"
+        url="https://degen0x.com/learn/flash-loans-defi-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1066,6 +1078,7 @@ export default function FlashLoansPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Flash Loans in DeFi Guide 2026 \u2014 How They Work | degen0x", "description": "Master flash loans: Aave, dYdX, Balancer, Uniswap. Learn uncollateralized lending, atomic transactions, arbitrage, oracle attacks, MEV, and flash loan", "url": "https://degen0x.com/learn/flash-loans-defi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/flash-loans-defi-guide-2026" />
+<AuthoritySources url="/learn/flash-loans-defi-guide-2026" />
 </main>
   );
 }

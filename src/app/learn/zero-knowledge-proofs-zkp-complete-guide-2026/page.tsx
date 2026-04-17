@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Zero-Knowledge Proofs Guide 2026: ZKP, SNARKs & STARKs",
   description: "Complete Zero-Knowledge Proofs (ZKP) guide 2026: zk-SNARKs vs zk-STARKs, ZK rollups, Starknet, zkSync, Polygon zkEVM, Scroll, Linea, privacy in DeFi, ZK-ID",
@@ -335,6 +339,14 @@ export default function ZeroKnowledgeProofsGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Zero-Knowledge Proofs Guide 2026: ZKP, SNARKs & STARKs"
+        description="Complete Zero-Knowledge Proofs (ZKP) guide 2026: zk-SNARKs vs zk-STARKs, ZK rollups, Starknet, zkSync, Polygon zkEVM, Scroll, Linea, privacy in DeFi, ZK-ID"
+        url="https://degen0x.com/learn/zero-knowledge-proofs-zkp-complete-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
@@ -982,6 +994,7 @@ export default function ZeroKnowledgeProofsGuide() {
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Zero-Knowledge Proofs Guide 2026: ZKP, SNARKs & STARKs", "description": "Complete Zero-Knowledge Proofs (ZKP) guide 2026: zk-SNARKs vs zk-STARKs, ZK rollups, Starknet, zkSync, Polygon zkEVM, Scroll, Linea, privacy in DeFi, ZK-ID", "url": "https://degen0x.com/learn/zero-knowledge-proofs-zkp-complete-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/zero-knowledge-proofs-zkp-complete-guide-2026" />
+<AuthoritySources url="/learn/zero-knowledge-proofs-zkp-complete-guide-2026" />
 </div>
   );
 }

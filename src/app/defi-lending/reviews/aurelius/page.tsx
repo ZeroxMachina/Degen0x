@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Aurelius Finance Review 2026: Mantle Lending Protocol`,
   description: "Complete Aurelius Finance review covering lending on Mantle network, CDP mechanics, yield strategies, and how this protocol serves the Mantle DeFi ecosystem.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function AureliusReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Aurelius Finance Review 2026: Mantle Lending Protocol"
+        url="https://degen0x.com/defi-lending/reviews/aurelius"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "Aurelius Finance", slug: "aurelius", rating: 3.5, description: "Aurelius Finance is a lending and borrowing protocol on Mantle network offering CDP-style borrowing alongside standard lending markets, designed specifically for the Mantle DeFi ecosystem.", pros: ["Mantle-native protocol with deep ecosystem integration", "CDP mechanics enable stablecoin minting against collateral", "Low gas costs on Mantle network", "Supports Mantle-native assets including MNT", "Combined lending and CDP model offers flexibility"], cons: ["Mantle ecosystem is still developing", "Limited TVL and user base", "Minimal track record and battle-testing", "CDP model adds complexity and liquidation risk", "Competing against larger multi-chain protocols"], bestFor: "DeFi users seeking CDP-style borrowing and lending on Mantle network", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function AureliusReview() {
       relatedReviews={[{ name: "Init Capital", slug: "init-capital" }, { name: "Mendi", slug: "mendi" }, { name: "Lendle", slug: "lendle" }]}
       relatedGuides={[{ title: "DeFi on Mantle", href: "/defi-lending/learn/defi-on-mantle" }, { title: "Fixed vs Variable Lending", href: "/defi-lending/compare/fixed-vs-variable-lending" }]}
     />
+      <ArticleSchema
+        headline="Aurelius Finance Review 2026: Mantle Lending Protocol"
+        description="Complete Aurelius Finance review covering lending on Mantle network, CDP mechanics, yield strategies, and how this protocol serves the Mantle DeFi ecosystem."
+        url="https://degen0x.com/defi-lending/reviews/aurelius"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/aurelius" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "CDP Borrowing Mechanism", "description": "Complete Aurelius Finance review covering lending on Mantle network, CDP mechanics, yield strategies, and how this protocol serves the Mantle DeFi ecosystem.", "url": "https://degen0x.com/defi-lending/reviews/aurelius", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

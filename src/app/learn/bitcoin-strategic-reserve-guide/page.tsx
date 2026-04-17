@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin Strategic Reserve 2026: Which Countries Are Holding",
   description: "The US formally established a 325,000 BTC strategic reserve in March 2026. Learn which countries are building Bitcoin reserves, why governments are buying BTC,",
@@ -852,6 +854,7 @@ export default function BitcoinStrategicReserveGuidePage() {
 </div>
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-strategic-reserve-guide" />
+    <AuthoritySources url="/learn/bitcoin-strategic-reserve-guide" />
     </article>
   );
 }

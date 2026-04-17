@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Sonic Chain Guide 2026: Fantom\'s DeFi Ecosystem & S Token | degen0x',
   description: "Complete Sonic Chain guide 2026: Layer 1 blockchain formerly Fantom, 10,000+ TPS, S token tokenomics & FTM migration, FeeM developer incentives, Shadow DEX,",
@@ -330,6 +334,14 @@ export default function SonicChainGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Sonic Chain Guide 2026: Fantom\"
+        description="Complete Sonic Chain guide 2026: Layer 1 blockchain formerly Fantom, 10,000+ TPS, S token tokenomics & FTM migration, FeeM developer incentives, Shadow DEX,"
+        url="https://degen0x.com/learn/sonic-chain-fantom-defi-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
@@ -929,6 +941,7 @@ export default function SonicChainGuide() {
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sonic Chain Guide 2026: Fantom\\", "description": "Complete Sonic Chain guide 2026: Layer 1 blockchain formerly Fantom, 10,000+ TPS, S token tokenomics & FTM migration, FeeM developer incentives, Shadow DEX,", "url": "https://degen0x.com/learn/sonic-chain-fantom-defi-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/sonic-chain-fantom-defi-ecosystem-guide-2026" />
+<AuthoritySources url="/learn/sonic-chain-fantom-defi-ecosystem-guide-2026" />
 </div>
   );
 }

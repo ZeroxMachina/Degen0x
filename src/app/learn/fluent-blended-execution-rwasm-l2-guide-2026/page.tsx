@@ -6,6 +6,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Fluent: Blended Execution rWASM L2 Guide 2026 | Degen0x',
   description: "Complete guide to Fluent, the blended execution Layer 2 unifying EVM, Wasm, and SVM contracts atomically via rWASM. Learn architecture, use cases, and how",
@@ -89,6 +93,14 @@ export default function FluentBlendedExecutionL2Guide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Fluent: Blended Execution rWASM L2 Guide 2026 | Degen0x"
+        description="Complete guide to Fluent, the blended execution Layer 2 unifying EVM, Wasm, and SVM contracts atomically via rWASM. Learn architecture, use cases, and how"
+        url="https://degen0x.com/learn/fluent-blended-execution-rwasm-l2-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <article className="max-w-4xl mx-auto px-4 py-12 text-white">
         <nav className="text-sm text-gray-400 mb-6">
@@ -160,6 +172,7 @@ export default function FluentBlendedExecutionL2Guide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/fluent-blended-execution-rwasm-l2-guide-2026" />
       </article>
     
         <script

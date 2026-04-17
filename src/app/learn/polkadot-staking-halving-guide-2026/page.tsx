@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 const S = {
     bg: "var(--color-bg, #0d1117)",
     surface: "var(--color-surface, #161b22)",
@@ -991,6 +993,7 @@ export default function Page() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Polkadot Staking & Halving Guide 2026 | Earn DOT Rewards", "description": "Complete guide to Polkadot", "url": "https://degen0x.com/learn/polkadot-staking-halving-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/polkadot-staking-halving-guide-2026" />
 </div>
     );
 }

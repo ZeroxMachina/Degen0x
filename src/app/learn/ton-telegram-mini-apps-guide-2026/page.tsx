@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "TON & Telegram Mini Apps Guide 2026: Build, Play & Earn on",
@@ -203,6 +207,14 @@ export default function TONTelegramMiniAppsGuide() {
 
   return (
     <article id="top" style={{ background: '#080d1c', color: '#e6edf3', minHeight: '100vh', padding: 'clamp(20px, 4vw, 40px) 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="TON & Telegram Mini Apps Guide 2026: Build, Play & Earn on"
+        description="Complete guide to TON blockchain and Telegram Mini Apps in 2026. Learn how 950M+ Telegram users access Web3 through Mini Apps, explore tap-to-earn games"
+        url="https://degen0x.com/learn/ton-telegram-mini-apps-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style dangerouslySetInnerHTML={{ __html: `
         .degen-link:hover { color: #6366f1 !important; text-decoration: underline !important; }
@@ -775,6 +787,7 @@ export default function TONTelegramMiniAppsGuide() {
 </div>
       <LiveMiniStat id="the-open-network" />
       <RelatedContent category="learn" currentSlug="/learn/ton-telegram-mini-apps-guide-2026" />
+      <AuthoritySources url="/learn/ton-telegram-mini-apps-guide-2026" />
       </article>
   );
 }

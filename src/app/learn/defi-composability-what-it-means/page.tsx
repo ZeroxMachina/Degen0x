@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "DeFi Composability Explained: Money Legos & Protocol",
   description: 'Deep dive into DeFi composability. Learn flash loans, yield strategies, Aave+Uniswap+Yearn stacking, Curve wars, EigenLayer restaking, and composability risks.',
@@ -208,6 +212,14 @@ export default function DeFiComposability() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="DeFi Composability Explained: Money Legos & Protocol"
+        description="Deep dive into DeFi composability. Learn flash loans, yield strategies, Aave+Uniswap+Yearn stacking, Curve wars, EigenLayer restaking, and composability risks."
+        url="https://degen0x.com/learn/defi-composability-what-it-means"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -620,6 +632,7 @@ export default function DeFiComposability() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Composability Explained: Money Legos & Protocol", "description": "Deep dive into DeFi composability. Learn flash loans, yield strategies, Aave+Uniswap+Yearn stacking, Curve wars, EigenLayer restaking, and composability risks.", "url": "https://degen0x.com/learn/defi-composability-what-it-means", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/defi-composability-what-it-means" />
+      <AuthoritySources url="/learn/defi-composability-what-it-means" />
       </article>
   );
 }

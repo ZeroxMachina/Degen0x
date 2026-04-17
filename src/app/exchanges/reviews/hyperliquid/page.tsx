@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "Hyperliquid",
   slug: "hyperliquid",
@@ -149,6 +158,13 @@ const breadcrumbData = {
 export default function HyperliquidReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Hyperliquid Review (2026) - On-Chain Perps with CEX Speed"
+        url="https://degen0x.com/exchanges/reviews/hyperliquid"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
@@ -162,6 +178,18 @@ export default function HyperliquidReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="Hyperliquid Review (2026) - On-Chain Perps with CEX Speed | degen0x"
+        description="Hyperliquid is a decentralized perpetual futures exchange built on its own L1 blockchain, offering CEX-level performance with on-chain transparency, zero gas"
+        url="https://degen0x.com/exchanges/reviews/hyperliquid"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/hyperliquid" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Custom L1 Blockchain Architecture", "description": "Hyperliquid is a decentralized perpetual futures exchange built on its own L1 blockchain, offering CEX-level performance with on-chain transparency, zero gas", "url": "https://degen0x.com/exchanges/reviews/hyperliquid", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

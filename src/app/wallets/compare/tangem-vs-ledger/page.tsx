@@ -10,6 +10,13 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Tangem vs Ledger (2026) - NFC Cards vs USB Hardware Wallet | degen0x`,
   description: `Tangem vs Ledger hardware wallet comparison for ${CURRENT_YEAR}. NFC cards vs USB devices, security models, ease of use, and coin support compared.`,
@@ -42,6 +49,14 @@ const breadcrumbData = {
 export default function TangemVsLedgerPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Tangem vs Ledger (2026) - NFC Cards vs USB Hardware Wallet | degen0x"
+        description="Tangem vs Ledger hardware wallet comparison for ${CURRENT_YEAR}. NFC cards vs USB devices, security models, ease of use, and coin support compared."
+        url="https://degen0x.com/wallets/compare/tangem-vs-ledger"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -130,6 +145,11 @@ export default function TangemVsLedgerPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/tangem-vs-ledger" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/compare/tangem-vs-ledger" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/compare/tangem-vs-ledger" />
     </div>
   );
 }

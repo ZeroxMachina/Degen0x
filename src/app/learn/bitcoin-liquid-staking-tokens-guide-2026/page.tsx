@@ -19,6 +19,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ──────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Bitcoin Liquid Staking Tokens (LSTs) Guide 2026 | degen0x",
@@ -1443,6 +1445,7 @@ export default function BitcoinLSTGuidePage() {
       <LiveMiniStat id="bitcoin" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-liquid-staking-tokens-guide-2026" />
+<AuthoritySources url="/learn/bitcoin-liquid-staking-tokens-guide-2026" />
 </div>
   );
 }

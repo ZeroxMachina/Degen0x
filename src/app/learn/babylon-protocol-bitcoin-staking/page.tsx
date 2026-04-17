@@ -13,6 +13,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Babylon Protocol: Bitcoin Staking Guide 2026 | degen0x",
@@ -1043,6 +1045,7 @@ export default function BabylonProtocolGuidePage() {
       <LiveMiniStat id="bitcoin" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/babylon-protocol-bitcoin-staking" />
+<AuthoritySources url="/learn/babylon-protocol-bitcoin-staking" />
 </div>
   );
 }

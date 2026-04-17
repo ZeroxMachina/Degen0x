@@ -9,6 +9,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Hot Wallet vs Cold Wallet: Security vs Convenience Guide',
   description: 'Compare hot and cold wallets: security, convenience, use cases. Learn when to use each for managing crypto assets safely.',
@@ -156,6 +160,14 @@ export default function HotWalletVsColdWallet() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Hot Wallet vs Cold Wallet: Security vs Convenience Guide"
+        description="Compare hot and cold wallets: security, convenience, use cases. Learn when to use each for managing crypto assets safely."
+        url="https://degen0x.com/compare/hot-wallet-vs-cold-wallet"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -428,6 +440,7 @@ export default function HotWalletVsColdWallet() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/hot-wallet-vs-cold-wallet" />
+      <AuthoritySources url="/compare/hot-wallet-vs-cold-wallet" />
       </article>
   );
 }

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Bitcoin ETF Guide 2026: Institutional Adoption & $128B AUM",
@@ -175,6 +179,14 @@ export default function BitcoinEtfGuide() {
 
   return (
     <article style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bitcoin ETF Guide 2026: Institutional Adoption & $128B AUM"
+        description="Complete guide to Bitcoin ETFs in 2026. $128B AUM, 38% institutional holdings, IBIT leading with $8.4B Q1 inflows. How ETF options, inflows, and institutions"
+        url="https://degen0x.com/learn/bitcoin-etf-institutional-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -648,6 +660,7 @@ export default function BitcoinEtfGuide() {
 </div>
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-etf-institutional-guide-2026" />
+      <AuthoritySources url="/learn/bitcoin-etf-institutional-guide-2026" />
       </article>
   );
 }

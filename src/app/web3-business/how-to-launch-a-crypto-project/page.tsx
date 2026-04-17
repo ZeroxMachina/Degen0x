@@ -3,6 +3,12 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'How to Launch a Crypto Project: Complete 2026 Guide',
   description: 'Step-by-step guide to launching a crypto project. Cover tokenomics, legal structure, team building, and mainnet launch strategy.',
@@ -107,6 +113,19 @@ export default function LaunchCryptoProject() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="How to Launch a Crypto Project: Complete 2026 Guide"
+        description="Step-by-step guide to launching a crypto project. Cover tokenomics, legal structure, team building, and mainnet launch strategy."
+        url="https://degen0x.com/web3-business/how-to-launch-a-crypto-project"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/how-to-launch-a-crypto-project" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/how-to-launch-a-crypto-project" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 

@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import HyperliquidClient from "./HyperliquidClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Hyperliquid: The #1 Perp DEX Guide 2026 — $2.9T Volume, 70%",
   description: "Complete guide to Hyperliquid — the dominant perpetual futures DEX with $2.9T cumulative volume, 1.4M users, and 70%+ perp DEX market share. HYPE tokenomics,",
@@ -60,6 +66,19 @@ const breadcrumbData = {
 export default function HyperliquidPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Hyperliquid: The #1 Perp DEX Guide 2026 — $2.9T Volume, 70%"
+        description="Complete guide to Hyperliquid — the dominant perpetual futures DEX with $2.9T cumulative volume, 1.4M users, and 70%+ perp DEX market share. HYPE tokenomics,"
+        url="/ecosystem/hyperliquid"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/hyperliquid" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/hyperliquid" />
       <HyperliquidClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Hyperliquid: The #1 Perp DEX Guide 2026 — $2.9T Volume, 70%", "description": "Complete guide to Hyperliquid — the dominant perpetual futures DEX with $2.9T cumulative volume, 1.4M users, and 70%+ perp DEX market share. HYPE tokenomics,", "url": "https://degen0x.com/ecosystem/hyperliquid", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Tempo Blockchain & MPP Guide 2026: Stripe's Machine Payments Protocol | degen0x",
   description: "Complete guide to Tempo blockchain, the $5B payments Layer 1 backed by Stripe and Paradigm. Learn how Machine Payments Protocol (MPP) enables AI agents and",
@@ -501,6 +503,7 @@ export default function TempoBlockchainMPPGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/tempo-blockchain-machine-payments-guide" />
       </article>
     
         <script

@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import EigenLayerClient from "./EigenLayerClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "EigenLayer: Restaking & AVS Guide 2026 — $15B ETH Restaked",
   description: "Complete guide to EigenLayer — the Ethereum restaking protocol with $15B+ ETH restaked, 30+ Active Validated Services (AVS), and 500+ operators. How restaking",
@@ -59,6 +65,19 @@ const breadcrumbData = {
 export default function EigenLayerPage() {
   return (
     <>
+      <ArticleSchema
+        headline="EigenLayer: Restaking & AVS Guide 2026 — $15B ETH Restaked"
+        description="Complete guide to EigenLayer — the Ethereum restaking protocol with $15B+ ETH restaked, 30+ Active Validated Services (AVS), and 500+ operators. How restaking"
+        url="/ecosystem/eigenlayer"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/eigenlayer" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/eigenlayer" />
       <EigenLayerClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "EigenLayer: Restaking & AVS Guide 2026 — $15B ETH Restaked", "description": "Complete guide to EigenLayer — the Ethereum restaking protocol with $15B+ ETH restaked, 30+ Active Validated Services (AVS), and 500+ operators. How restaking", "url": "https://degen0x.com/ecosystem/eigenlayer", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

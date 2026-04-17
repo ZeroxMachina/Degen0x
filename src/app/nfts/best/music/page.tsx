@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best NFT Marketplaces for Music in 2026 | degen0x`,
   description: `Discover the best platforms for music NFTs in ${CURRENT_YEAR}. Buy, sell, and collect music NFTs from independent and established artists on top marketplaces.`,
@@ -64,6 +70,19 @@ export default function BestForMusicPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Audio Playback"
+        description="Audio Playback"
+        url="/nfts/best/music"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/best/music" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/best/music" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">

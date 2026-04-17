@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "What Is Restaking & EigenLayer 2026: AVS, Operators, LRTs",
   description: "Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks,",
@@ -203,6 +207,14 @@ export default function WhatIsRestakingEigenLayer() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="What Is Restaking & EigenLayer 2026: AVS, Operators, LRTs"
+        description="Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks,"
+        url="https://degen0x.com/learn/what-is-restaking-eigenlayer"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -455,6 +467,7 @@ export default function WhatIsRestakingEigenLayer() {
 </div>
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/what-is-restaking-eigenlayer" />
+      <AuthoritySources url="/learn/what-is-restaking-eigenlayer" />
       </article>
   );
 }

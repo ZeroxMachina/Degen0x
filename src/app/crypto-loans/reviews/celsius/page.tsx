@@ -5,6 +5,15 @@ import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "celsius")!;
 
 export const metadata: Metadata = { title: "Celsius Review 2026: Lessons From the CeFi Collapse", description: "Analysis of Celsius Network's collapse, what went wrong, and lessons for crypto lending users. Why platform due diligence matters more than ever." ,
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function CelsiusReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Celsius Review 2026: Lessons From the CeFi Collapse"
+        url="https://degen0x.com/crypto-loans/reviews/celsius"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="Celsius Network was one of the largest centralized crypto lending platforms before it filed for Chapter 11 bankruptcy in July 2022, freezing billions of dollars in customer deposits. What was once a platform serving over 1.7 million users with competitive lending and earning rates became a cautionary tale about centralized counterparty risk, opaque asset management, and the dangers of chasing high yields without understanding the underlying risks. This review serves as a historical analysis and warning for crypto lending users about the importance of due diligence and risk management."
       sections={[
@@ -46,6 +62,18 @@ export default function CelsiusReview() {
       relatedReviews={[{ name: "Nexo", slug: "nexo" }, { name: "Aave", slug: "aave-loans" }]}
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }]}
     />
+      <ArticleSchema
+        headline="Celsius Review 2026: Lessons From the CeFi Collapse"
+        description="Analysis of Celsius Network"
+        url="https://degen0x.com/crypto-loans/reviews/celsius"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/reviews/celsius" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Celsius Review 2026: Lessons From the CeFi Collapse", "description": "Analysis of Celsius Network's collapse, what went wrong, and lessons for crypto lending users. Why platform due diligence matters more than ever.", "url": "https://degen0x.com/crypto-loans/reviews/celsius", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

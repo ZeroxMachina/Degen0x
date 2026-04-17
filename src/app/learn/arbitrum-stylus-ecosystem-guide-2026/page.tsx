@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Arbitrum Ecosystem & Stylus Guide 2026 — L2 DeFi Leader",
@@ -122,6 +126,14 @@ export default function ArbitrumStylusEcosystemGuide2026() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Arbitrum Ecosystem & Stylus Guide 2026 — L2 DeFi Leader"
+        description="Complete guide to Arbitrum in 2026. Learn about Stylus (Rust/C++ smart contracts), GMX, Camelot, Pendle, Orbit chains, and why Arbitrum leads Ethereum L2 DeFi"
+        url="https://degen0x.com/learn/arbitrum-stylus-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -687,6 +699,7 @@ export default function ArbitrumStylusEcosystemGuide2026() {
 
           <a href="/learn/ethereum-preconfirmations-preconfs-fast-transactions-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Ethereum Preconfirmations Preconfs Fast Transactions Guide 2026</a>
         </nav>
+      <AuthoritySources url="/learn/arbitrum-stylus-ecosystem-guide-2026" />
       </article>
     
         <script

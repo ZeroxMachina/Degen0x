@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── JSON-LD Structured Data ─────────────────────────────────────────────────
 const breadcrumbData = {
   '@context': 'https://schema.org',
@@ -300,6 +304,14 @@ const pageStyles = {
 export default function StablechainsPage() {
   return (
     <div style={pageStyles.container}>
+      <ArticleSchema
+        headline="Stablechains: Stablecoin-Optimized Blockchains Guide 2026"
+        description="Complete guide to stablechains—purpose-built blockchains optimized for stablecoin payments, compliance, and zero volatile fees. Covers Plasma, Arc, Tempo, and"
+        url="https://degen0x.com/learn/stablechains-stablecoin-optimized-blockchains-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
@@ -972,6 +984,7 @@ export default function StablechainsPage() {
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablechains: Stablecoin-Optimized Blockchains Guide 2026", "description": "Complete guide to stablechains\u2014purpose-built blockchains optimized for stablecoin payments, compliance, and zero volatile fees. Covers Plasma, Arc, Tempo, and", "url": "https://degen0x.com/learn/stablechains-stablecoin-optimized-blockchains-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/stablechains-stablecoin-optimized-blockchains-guide-2026" />
+<AuthoritySources url="/learn/stablechains-stablecoin-optimized-blockchains-guide-2026" />
 </div>
   );
 }

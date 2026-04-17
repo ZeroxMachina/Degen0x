@@ -9,6 +9,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for Staking (2026) | degen0x`,
   description: `The best crypto wallets for staking in ${CURRENT_YEAR}. Compare Phantom, Exodus, Ledger, and more for earning staking rewards on SOL, ETH, ADA, and ATOM.`,
@@ -103,6 +109,19 @@ const breadcrumbData = {
 export default function BestStakingWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Wallets"
+        description="Stake ETH, SOL, DOT, ATOM, and more through Ledger Live while keeping private keys on the secure element chip. Supports staking for 10+ proof-of-stake networks."
+        url="/wallets/best/staking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best/staking" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best/staking" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

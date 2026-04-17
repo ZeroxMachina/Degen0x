@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Solana vs Ethereum Comparison 2026 | degen0x',
   description: "Solana vs Ethereum: TPS (4,000 vs 15-30), fees ($0.00025 vs $1-50), PoH vs PoS, TVL, ecosystem, Rust vs Solidity, decentralization tradeoffs, and uptime",
@@ -138,6 +142,14 @@ export default function SolanaVsEthereumComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Solana vs Ethereum Comparison 2026 | degen0x"
+        description="Solana vs Ethereum: TPS (4,000 vs 15-30), fees ($0.00025 vs $1-50), PoH vs PoS, TVL, ecosystem, Rust vs Solidity, decentralization tradeoffs, and uptime"
+        url="https://degen0x.com/learn/solana-vs-ethereum-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -491,6 +503,7 @@ export default function SolanaVsEthereumComparison() {
 </div>
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/solana-vs-ethereum-comparison" />
+      <AuthoritySources url="/learn/solana-vs-ethereum-comparison" />
       </article>
   );
 }

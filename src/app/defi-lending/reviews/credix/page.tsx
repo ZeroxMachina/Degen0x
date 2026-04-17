@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Credix Review (2026): Emerging Market DeFi Credit | degen0x`,
   description: "In-depth Credix review covering emerging market lending on Solana, fintech borrower network, tranched credit pools, and risk-adjusted yields.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function CredixReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Credix Review (2026): Emerging Market DeFi Credit"
+        url="https://degen0x.com/defi-lending/reviews/credix"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Credix",
@@ -58,6 +74,18 @@ export default function CredixReview() {
       relatedReviews={[{ name: "Goldfinch", slug: "/defi-lending/reviews/goldfinch" }, { name: "Centrifuge", slug: "/defi-lending/reviews/centrifuge" }]}
       relatedGuides={[{ title: "Real World Asset Lending", href: "/defi-lending/learn/real-world-asset-lending" }, { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" }]}
     />
+      <ArticleSchema
+        headline="Credix Review (2026): Emerging Market DeFi Credit | degen0x"
+        description="In-depth Credix review covering emerging market lending on Solana, fintech borrower network, tranched credit pools, and risk-adjusted yields."
+        url="https://degen0x.com/defi-lending/reviews/credix"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/credix" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Emerging Market Credit Strategy", "description": "In-depth Credix review covering emerging market lending on Solana, fintech borrower network, tranched credit pools, and risk-adjusted yields.", "url": "https://degen0x.com/defi-lending/reviews/credix", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

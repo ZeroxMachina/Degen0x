@@ -6,6 +6,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = cryptoCards.find((c) => c.slug === "coinbase-card")!;
 
 export const metadata: Metadata = {
@@ -29,6 +38,13 @@ const breadcrumbData = {
 export default function CoinbaseCardReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Coinbase Card Review (2026): Fees, Rewards & Pros/Cons"
+        url="https://degen0x.com/crypto-cards/reviews/coinbase-card"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Cards"
@@ -51,6 +67,18 @@ export default function CoinbaseCardReviewPage() {
       relatedReviews={[{ name: "Crypto.com Visa", slug: "crypto-com-visa" }, { name: "BitPay Card", slug: "bitpay-card" }, { name: "Fold Card", slug: "fold-card" }]}
       relatedGuides={[{ title: "Best Crypto Card Rewards", href: "/crypto-cards/learn/best-crypto-card-rewards" }, { title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }]}
     />
+      <ArticleSchema
+        headline="Coinbase Card Review (2026): Fees, Rewards & Pros/Cons | degen0x"
+        description="In-depth Coinbase Card review covering crypto rewards, spending features, fees, and whether it is the right crypto debit card for you. Updated for "
+        url="https://degen0x.com/crypto-cards/reviews/coinbase-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/coinbase-card" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rewards Program", "description": "In-depth Coinbase Card review covering crypto rewards, spending features, fees, and whether it is the right crypto debit card for you. Updated for ", "url": "https://degen0x.com/crypto-cards/reviews/coinbase-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

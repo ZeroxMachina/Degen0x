@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Advanced Staking Strategies Guide 2026: LST, LRT & Real",
   description: "Master advanced staking strategies including LST/LRT optimization, real yield vs headline APY, validator diversification, and compounding techniques for",
@@ -451,6 +453,7 @@ export default function AdvancedStakingStrategiesGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/advanced-staking-strategies-guide-2026" />
       </article>
     
         <script

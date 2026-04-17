@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Deribit Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Deribit review covering crypto options trading, futures, fees, liquidity, and whether this derivatives exchange suits your trading needs.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function DeribitReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Deribit Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/exchanges/reviews/deribit"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Deribit",
@@ -56,7 +72,7 @@ The platform specializes exclusively in derivatives — options, futures, and pe
 
 Deribit operates under a license in Panama and has implemented comprehensive KYC procedures following industry trends toward compliance. The exchange uses a sophisticated risk engine, insurance fund, and socialized loss system to manage the unique risks associated with leveraged derivatives trading."
       sections={[
-        { id: "user-experience", title: "User Experience", content: "Deribit's interface is built for professional derivatives traders and makes no attempt to cater to beginners. The trading screen displays options chains with strike prices, expiration dates, implied volatility, and Greeks (delta, gamma, theta, vega). The order entry supports complex multi-leg options strategies including spreads, straddles, strangles, and butterflies. The charting interface is functional with basic technical indicators. A built-in portfolio margin calculator helps traders understand their risk exposure. For experienced options traders, the platform is efficient and well-organized. For anyone without derivatives experience, it will be incomprehensible. Deribit also provides a testnet environment with paper trading for learning without risk." },
+        { id: "user-experience", title: "User Experience — Exchanges (exchanges / reviews / deribit)", content: "Deribit's interface is built for professional derivatives traders and makes no attempt to cater to beginners. The trading screen displays options chains with strike prices, expiration dates, implied volatility, and Greeks (delta, gamma, theta, vega). The order entry supports complex multi-leg options strategies including spreads, straddles, strangles, and butterflies. The charting interface is functional with basic technical indicators. A built-in portfolio margin calculator helps traders understand their risk exposure. For experienced options traders, the platform is efficient and well-organized. For anyone without derivatives experience, it will be incomprehensible. Deribit also provides a testnet environment with paper trading for learning without risk." },
         { id: "fees", title: "Fees & Pricing", content: "Deribit offers competitive fees for derivatives trading. Futures maker fee is 0.02% and taker fee is 0.05%. Options fees are 0.03% of the underlying asset value or 12.5% of the option price, whichever is lower, capped at the option price. Perpetual contracts follow the same fee structure as futures. The fee structure is among the most competitive in the crypto derivatives space and is particularly favorable for market makers and high-volume traders. There are no deposit fees, and withdrawal fees are limited to network costs." },
         { id: "security", title: "Security", content: "Deribit stores 99% of customer assets in cold storage, with only hot wallet funds necessary for immediate settlement operations. The platform uses multi-signature wallets, hardware security modules, and a robust risk management system. In 2019, Deribit experienced a $1.3 million hack of its hot wallet but covered all losses from its insurance fund with no customer impact. Since then, security has been significantly enhanced. Two-factor authentication is mandatory, and withdrawal address whitelisting is available. The exchange's insurance fund provides an additional layer of protection against cascading liquidation losses." },
         { id: "supported-assets", title: "Supported Assets", content: "Deribit exclusively supports Bitcoin and Ethereum derivatives. Available instruments include weekly, monthly, and quarterly options with a wide range of strike prices; quarterly and perpetual futures; and perpetual swap contracts. The options chain for Bitcoin is the most comprehensive in the crypto market, with strikes ranging from deep out-of-the-money to deep in-the-money across multiple expiration dates. While the asset selection is narrow, the depth and variety of derivative instruments on BTC and ETH is unmatched." },
@@ -82,6 +98,18 @@ Deribit operates under a license in Panama and has implemented comprehensive KYC
         { title: "Perpetual Futures Explained", href: "/exchanges/learn/perpetual-futures-explained" },
       ]}
     />
+      <ArticleSchema
+        headline="Deribit Review 2026: Fees, Features, Pros & Cons"
+        description="In-depth Deribit review covering crypto options trading, futures, fees, liquidity, and whether this derivatives exchange suits your trading needs."
+        url="https://degen0x.com/exchanges/reviews/deribit"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/deribit" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Deribit review covering crypto options trading, futures, fees, liquidity, and whether this derivatives exchange suits your trading needs.", "url": "https://degen0x.com/exchanges/reviews/deribit", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

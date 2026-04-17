@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply",
   description: "Track Ethereum EIP-1559 burns in real-time with ultrasound.money. Monitor daily burn rates, deflationary periods, top gas burners (Uniswap, OpenSea), and ETH",
@@ -187,6 +195,24 @@ export default function ETHBurnTracker() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply"
+        description="Track Ethereum EIP-1559 burns in real-time with ultrasound.money. Monitor daily burn rates, deflationary periods, top gas burners (Uniswap, OpenSea), and ETH"
+        url="https://degen0x.com/tools/eth-burn-tracker-live"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/eth-burn-tracker-live" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/eth-burn-tracker-live" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/eth-burn-tracker-live"
+        name="ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply"
+        description="Track Ethereum EIP-1559 burns in real-time with ultrasound.money. Monitor daily burn rates, deflationary periods, top gas burners (Uniswap, OpenSea), and ETH"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

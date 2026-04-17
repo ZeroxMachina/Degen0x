@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Actively Validated Services (AVS) & Restaking Economy Guide",
   description: "Master Actively Validated Services and the restaking economy in 2026: EigenLayer, EigenCloud, AVS protocols like EigenDA, AltLayer, Omni Network, Brevis. Learn",
@@ -314,6 +318,14 @@ export default function AVSRestakingEconomyPage() {
 
   return (
     <main style={pageStyle}>
+      <ArticleSchema
+        headline="Actively Validated Services (AVS) & Restaking Economy Guide"
+        description="Master Actively Validated Services and the restaking economy in 2026: EigenLayer, EigenCloud, AVS protocols like EigenDA, AltLayer, Omni Network, Brevis. Learn"
+        url="https://degen0x.com/learn/avs-actively-validated-services-restaking-economy-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1021,6 +1033,7 @@ export default function AVSRestakingEconomyPage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Actively Validated Services (AVS) & Restaking Economy Guide", "description": "Master Actively Validated Services and the restaking economy in 2026: EigenLayer, EigenCloud, AVS protocols like EigenDA, AltLayer, Omni Network, Brevis. Learn", "url": "https://degen0x.com/learn/avs-actively-validated-services-restaking-economy-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/avs-actively-validated-services-restaking-economy-guide-2026" />
+<AuthoritySources url="/learn/avs-actively-validated-services-restaking-economy-guide-2026" />
 </main>
   );
 }

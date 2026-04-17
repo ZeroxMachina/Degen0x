@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "MACD Indicator for Crypto Trading Guide | Bitcoin &",
   description: "Master MACD (Moving Average Convergence Divergence) for crypto: 12-26 EMA, signal line, histogram, bullish/bearish crossovers. Real BTC/ETH examples, trading",
@@ -151,6 +155,14 @@ export default function MACDIndicatorGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="MACD Indicator for Crypto Trading Guide | Bitcoin &"
+        description="Master MACD (Moving Average Convergence Divergence) for crypto: 12-26 EMA, signal line, histogram, bullish/bearish crossovers. Real BTC/ETH examples, trading"
+        url="https://degen0x.com/learn/macd-indicator-crypto-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -519,6 +531,7 @@ export default function MACDIndicatorGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MACD Indicator for Crypto Trading Guide | Bitcoin &", "description": "Master MACD (Moving Average Convergence Divergence) for crypto: 12-26 EMA, signal line, histogram, bullish/bearish crossovers. Real BTC/ETH examples, trading", "url": "https://degen0x.com/learn/macd-indicator-crypto-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/macd-indicator-crypto-guide" />
+      <AuthoritySources url="/learn/macd-indicator-crypto-guide" />
       </article>
   );
 }

@@ -10,6 +10,13 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Hot vs Cold Wallets (2026) - Which Should You Use? | degen0x`,
   description: `Hot wallet vs cold wallet comparison for ${CURRENT_YEAR}. Security, convenience, cost, and best use cases for each wallet type explained.`,
@@ -42,6 +49,14 @@ const breadcrumbData = {
 export default function HotVsColdWalletsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Hot vs Cold Wallets (2026) - Which Should You Use? | degen0x"
+        description="Hot wallet vs cold wallet comparison for ${CURRENT_YEAR}. Security, convenience, cost, and best use cases for each wallet type explained."
+        url="https://degen0x.com/wallets/compare/hot-vs-cold-wallets"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -130,6 +145,11 @@ export default function HotVsColdWalletsPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/hot-vs-cold-wallets" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/compare/hot-vs-cold-wallets" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/compare/hot-vs-cold-wallets" />
     </div>
   );
 }

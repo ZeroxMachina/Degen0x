@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Sturdy Finance Review 2026: Isolated Lending Vaults`,
   description: "Complete Sturdy Finance review covering isolated lending pairs, yield aggregation, vault strategies, and the protocol's V2 redesign after its exploit.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function SturdyReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Sturdy Finance Review 2026: Isolated Lending Vaults"
+        url="https://degen0x.com/defi-lending/reviews/sturdy"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "Sturdy Finance", slug: "sturdy", rating: 3.6, description: "Sturdy Finance is a DeFi lending protocol that pivoted to isolated lending pairs and yield vault strategies after a V1 exploit, offering an aggregation layer that connects lenders with the highest-yield borrowing demand.", pros: ["Isolated lending pairs provide granular risk management", "Yield aggregation optimizes lender returns across vaults", "V2 redesign incorporates lessons from V1 exploit", "Supports diverse collateral types including LP tokens", "Innovative approach to matching lending supply with yield demand"], cons: ["V1 exploit history may deter risk-averse users", "Lower TVL compared to major lending protocols", "Complex vault system has steeper learning curve", "Some vaults have limited liquidity", "Governance token has limited trading volume"], bestFor: "DeFi users seeking isolated lending pairs with exotic collateral support", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function SturdyReview() {
       relatedReviews={[{ name: "Exactly", slug: "exactly" }, { name: "Sonne", slug: "sonne" }, { name: "Granary", slug: "granary" }]}
       relatedGuides={[{ title: "DeFi on Ethereum", href: "/defi-lending/learn/defi-on-ethereum" }, { title: "Yield Optimizer Guide", href: "/defi-lending/learn/yield-optimizer-guide" }]}
     />
+      <ArticleSchema
+        headline="Sturdy Finance Review 2026: Isolated Lending Vaults"
+        description="Complete Sturdy Finance review covering isolated lending pairs, yield aggregation, vault strategies, and the protocol"
+        url="https://degen0x.com/defi-lending/reviews/sturdy"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/sturdy" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Isolated Lending Pairs", "description": "Complete Sturdy Finance review covering isolated lending pairs, yield aggregation, vault strategies, and the protocol's V2 redesign after its exploit.", "url": "https://degen0x.com/defi-lending/reviews/sturdy", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

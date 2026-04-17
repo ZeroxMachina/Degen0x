@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Delta-Neutral Yield Strategies Guide 2026 — Basis Trading &",
   description: "Learn delta-neutral crypto strategies: funding rate arbitrage, basis trading, and protocols like Ethena USDe. Earn yield without directional risk. Updated",
@@ -1645,6 +1647,7 @@ const DeltaNeutralGuide = () => {
 
           <a href="/learn/crypto-tax-loss-harvesting-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax Loss Harvesting Guide 2026</a>
         </nav>
+      <AuthoritySources url="/learn/delta-neutral-yield-strategies-guide-2026" />
       </article>
   );
 };

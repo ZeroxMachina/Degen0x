@@ -6,6 +6,11 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Web3 Business Tools & Guides (2026) | degen0x`,
   description: `Everything you need to build and manage a Web3 business in ${CURRENT_YEAR}. Compare DAO tools, crypto banking, payroll solutions, grants, and more. Expert guides on formation, compliance, and treasury management.`,
@@ -82,6 +87,14 @@ export default function Web3BusinessPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best DAO Treasury Tools"
+        description="Web3 payment solutions for business: Accept crypto payments, convert to fiat instantly, payroll solutions. Coinbase, Stripe, Sablier, and more."
+        url="/web3-business"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -220,7 +233,11 @@ export default function Web3BusinessPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DAO Treasury Tools", "description": "Web3 payment solutions for business: Accept crypto payments, convert to fiat instantly, payroll solutions. Coinbase, Stripe, Sablier, and more.", "url": "https://degen0x.com/web3-business", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/web3-business" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business" />
     </>
   );
 }

@@ -7,6 +7,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import AuthoritySources from '@/components/AuthoritySources';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `How to Invest in XRP (XRP) 2026 - Complete Guide`,
   description: `Complete XRP investment guide for ${CURRENT_YEAR}. Learn about XRP fundamentals, Ripple payments, legal history, risks, and how to buy XRP.`,
@@ -34,6 +39,14 @@ const breadcrumbData = {
 export default function XRPPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Investing"
+        description="Investing"
+        url="/investing/crypto/xrp"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
@@ -189,7 +202,11 @@ export default function XRPPage() {
           </Link>
         </div>
       </div>
-      <AuthoritySources url="/investing/crypto/xrp" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/crypto/xrp" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/crypto/xrp" />
     </div>
   );
 }

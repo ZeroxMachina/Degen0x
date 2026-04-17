@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Yei Finance Review 2026: Sei Network Lending Protocol`,
   description: "In-depth Yei Finance review covering lending and borrowing on Sei network, yield rates, protocol features, and the emerging Sei DeFi ecosystem.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function YeiFinanceReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Yei Finance Review 2026: Sei Network Lending Protocol"
+        url="https://degen0x.com/defi-lending/reviews/yei-finance"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "Yei Finance", slug: "yei-finance", rating: 3.6, description: "Yei Finance is a lending and borrowing protocol on Sei network, offering Aave-inspired lending markets for Sei-native assets with competitive yields in the emerging Sei DeFi ecosystem.", pros: ["Leading lending protocol on Sei network", "Aave-inspired architecture with modern features", "First-mover advantage in the Sei DeFi ecosystem", "Very fast transactions leveraging Sei's speed", "Growing alongside the broader Sei ecosystem"], cons: ["Sei ecosystem is still very early stage", "Low TVL compared to lending protocols on established chains", "Limited asset selection due to smaller ecosystem", "Protocol track record is minimal", "Sei network adoption is still uncertain"], bestFor: "DeFi users seeking early lending opportunities on Sei network", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function YeiFinanceReview() {
       relatedReviews={[{ name: "LayerBank", slug: "layerbank" }, { name: "ZeroLend", slug: "zerolend" }, { name: "Kinza", slug: "kinza" }]}
       relatedGuides={[{ title: "DeFi on Sei", href: "/defi-lending/learn/defi-on-sei" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <ArticleSchema
+        headline="Yei Finance Review 2026: Sei Network Lending Protocol"
+        description="In-depth Yei Finance review covering lending and borrowing on Sei network, yield rates, protocol features, and the emerging Sei DeFi ecosystem."
+        url="https://degen0x.com/defi-lending/reviews/yei-finance"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/yei-finance" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending on Sei Network", "description": "In-depth Yei Finance review covering lending and borrowing on Sei network, yield rates, protocol features, and the emerging Sei DeFi ecosystem.", "url": "https://degen0x.com/defi-lending/reviews/yei-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

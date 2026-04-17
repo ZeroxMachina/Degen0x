@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "Phemex",
   slug: "phemex",
@@ -150,6 +159,13 @@ const breadcrumbData = {
 export default function PhemexReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Phemex Review (2026) - Professional Derivatives Exchange"
+        url="https://degen0x.com/exchanges/reviews/phemex"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
@@ -163,6 +179,18 @@ export default function PhemexReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="Phemex Review (2026) - Professional Derivatives Exchange | degen0x"
+        description="Phemex is a derivatives-focused crypto exchange founded by ex-Morgan Stanley executives, offering perpetual futures with up to 100x leverage, spot trading, and"
+        url="https://degen0x.com/exchanges/reviews/phemex"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/phemex" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Derivatives Trading Platform", "description": "Phemex is a derivatives-focused crypto exchange founded by ex-Morgan Stanley executives, offering perpetual futures with up to 100x leverage, spot trading, and", "url": "https://degen0x.com/exchanges/reviews/phemex", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

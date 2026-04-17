@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Liquidity Pools 2026 - Top LP Opportunities in DeFi`,
   description: `Compare the best liquidity pools for earning yield in ${CURRENT_YEAR}. Earn trading fees and token rewards by providing liquidity on top DEXs and DeFi protocols.`,
@@ -87,6 +93,19 @@ const breadcrumbData = {
 export default function LiquidityPoolsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="DeFi"
+        description="Curve Finance dominates stablecoin and pegged-asset liquidity pools with its specialized AMM design that minimizes slippage. LPs earn trading fees plus CRV"
+        url="/defi-lending/best/liquidity-pools"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/best/liquidity-pools" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/best/liquidity-pools" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

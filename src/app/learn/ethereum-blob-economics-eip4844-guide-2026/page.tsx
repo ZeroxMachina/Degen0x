@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Ethereum Blob Economics & EIP-4844 Guide 2026 | degen0x',
   description:
@@ -288,6 +292,14 @@ export default function EthereumBlobEconomicsPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Ethereum Blob Economics & EIP-4844 Guide 2026 | degen0x"
+        description="Complete guide to Ethereum EIP-4844 (Proto-Danksharding), blob transactions, blob fee markets, PeerDAS, and how cheaper blobspace scales Ethereum L2s in 2026."
+        url="https://degen0x.com/learn/ethereum-blob-economics-eip4844-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style dangerouslySetInnerHTML={{ __html: `
         .degen-link:hover { color: #6366f1 !important; text-decoration: underline !important; }
@@ -1001,6 +1013,7 @@ export default function EthereumBlobEconomicsPage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Blob Economics & EIP-4844 Guide 2026 | degen0x", "description": "Complete guide to Ethereum EIP-4844 (Proto-Danksharding), blob transactions, blob fee markets, PeerDAS, and how cheaper blobspace scales Ethereum L2s in 2026.", "url": "https://degen0x.com/learn/ethereum-blob-economics-eip4844-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-blob-economics-eip4844-guide-2026" />
+<AuthoritySources url="/learn/ethereum-blob-economics-eip4844-guide-2026" />
 </main>
   );
 }

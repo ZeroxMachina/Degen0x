@@ -9,6 +9,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Staking Platforms for Beginners in 2026`,
   description: `Find the easiest crypto staking platforms for beginners in ${CURRENT_YEAR}. Simple staking with no technical knowledge required. Compare Coinbase, Lido, and more.`,
@@ -70,6 +76,19 @@ export default function BestStakingBeginnersPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Choose Your Platform"
+        description="Choose Your Platform"
+        url="/investing/staking/best/beginners"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/staking/best/beginners" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/staking/best/beginners" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">

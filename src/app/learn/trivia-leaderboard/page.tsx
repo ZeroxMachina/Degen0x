@@ -7,6 +7,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Trivia Leaderboard | Compete Globally — degen0x",
   description:
@@ -33,6 +37,14 @@ const breadcrumbData = {
 export default function TriviaLeaderboardPage() {
   return (
     <main className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Crypto Trivia Leaderboard | Compete Globally — degen0x"
+        description="See who tops the crypto trivia leaderboard this week. Earn league ranks from Bronze to Diamond. Play daily, grow your streak, and climb the all-time rankings."
+        url="https://degen0x.com/learn/trivia-leaderboard"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -129,6 +141,7 @@ export default function TriviaLeaderboardPage() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Trivia Leaderboard | Compete Globally \u2014 degen0x", "description": "See who tops the crypto trivia leaderboard this week. Earn league ranks from Bronze to Diamond. Play daily, grow your streak, and climb the all-time rankings.", "url": "https://degen0x.com/learn/trivia-leaderboard", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/trivia-leaderboard" />
+<AuthoritySources url="/learn/trivia-leaderboard" />
 </main>
   );
 }

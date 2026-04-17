@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = { title: `Best NFT-Collateral Loans 2026 - Borrow Against NFTs`, description: `Compare platforms for borrowing against NFTs in ${CURRENT_YEAR}. Use your CryptoPunks, BAYC, and other NFTs as loan collateral.` ,
   alternates: { canonical: "/crypto-loans/best/nft-collateral" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -39,6 +45,19 @@ const breadcrumbData = {
 export default function NftCollateralPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Crypto Loans"
+        description="Blur"
+        url="/crypto-loans/best/nft-collateral"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/best/nft-collateral" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/best/nft-collateral" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

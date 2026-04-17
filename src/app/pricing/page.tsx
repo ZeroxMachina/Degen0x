@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import APIPricing from "@/components/APIPricing";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "API Pricing | degen0x — Free, Pro & Enterprise Plans",
   description:
@@ -27,6 +33,19 @@ const breadcrumbData = {
 export default function PricingPage() {
   return (
     <>
+      <ArticleSchema
+        headline="API Pricing | degen0x — Free, Pro & Enterprise Plans"
+        description="Access real-time crypto data, DeFi yields, whale alerts, and trading signals via the degen0x API. Free tier included. Usage-based pricing for pros."
+        url="/pricing"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/pricing" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/pricing" />
       <APIPricing />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "API Pricing | degen0x — Free, Pro & Enterprise Plans", "description": "Access real-time crypto data, DeFi yields, whale alerts, and trading signals via the degen0x API. Free tier included. Usage-based pricing for pros.", "url": "https://degen0x.com/pricing", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

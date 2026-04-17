@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "RWA Yield vs DeFi Yield: Where to Earn in 2026",
   description: "Compare tokenized treasury yields (BlackRock BUIDL, Ondo USDY) vs DeFi lending returns (Aave, Maple, Centrifuge). Risk-adjusted yield comparison for 2026.",
@@ -795,6 +797,7 @@ export default function RWAVsDeFiYieldComparison() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "RWA Yield vs DeFi Yield: Where to Earn in 2026", "description": "Compare tokenized treasury yields (BlackRock BUIDL, Ondo USDY) vs DeFi lending returns (Aave, Maple, Centrifuge). Risk-adjusted yield comparison for 2026.", "url": "https://degen0x.com/learn/rwa-yield-vs-defi-yield-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/rwa-yield-vs-defi-yield-comparison-2026" />
+<AuthoritySources url="/learn/rwa-yield-vs-defi-yield-comparison-2026" />
 </div>
   );
 }

@@ -4,6 +4,10 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: `How to Transfer Crypto Between Wallets (2026) | degen0x`,
   description: `Step-by-step guide to transferring cryptocurrency between wallets in ${CURRENT_YEAR}. Covers sending, receiving, network selection, fees, and avoiding common mistakes.`,

@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Zerion Wallet Review (2026) - Best DeFi Portfolio Wallet? | degen0x`,
   description: `Detailed Zerion wallet review for ${CURRENT_YEAR}. Covers multi-chain DeFi tracking, swap aggregation, NFT management, and portfolio analytics.`,
@@ -130,6 +139,13 @@ const breadcrumbData = {
 export default function ZerionReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Zerion Wallet Review (2026) - Best DeFi Portfolio Wallet?"
+        url="https://degen0x.com/wallets/reviews/zerion"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
@@ -143,6 +159,18 @@ export default function ZerionReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="Zerion Wallet Review (2026) - Best DeFi Portfolio Wallet? | degen0x"
+        description="Detailed Zerion wallet review for ${CURRENT_YEAR}. Covers multi-chain DeFi tracking, swap aggregation, NFT management, and portfolio analytics."
+        url="https://degen0x.com/wallets/reviews/zerion"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/zerion" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Portfolio Tracking & DeFi Integration", "description": "Zerion is a multi-chain DeFi wallet and portfolio tracker that aggregates positions across hundreds of protocols and chains into a single unified dashboard.", "url": "https://degen0x.com/wallets/reviews/zerion", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

@@ -5,6 +5,12 @@ import Breadcrumb from '@/components/Breadcrumb';
 import StakingDashboard from '@/components/StakingDashboard';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // Metadata for SEO
 export const metadata: Metadata = {
   title: `Staking Dashboard | Compare Staking Yields & APY | degen0x`,
@@ -52,6 +58,19 @@ export default function StakingPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Guides"
+        description="Compare staking yields across Ethereum, Solana, Cosmos, and Polkadot. Find the best APY for major staking protocols."
+        url="https://degen0x.com/staking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/staking" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/staking" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 

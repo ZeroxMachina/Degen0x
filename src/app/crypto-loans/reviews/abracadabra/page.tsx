@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "Abracadabra",
   slug: "abracadabra",
@@ -38,6 +47,13 @@ const breadcrumbData = {
 export default function AbracadabraReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Abracadabra Review (2026): MIM Borrowing & Cauldrons"
+        url="https://degen0x.com/crypto-loans/reviews/abracadabra"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Loans"
@@ -59,6 +75,18 @@ export default function AbracadabraReview() {
       relatedReviews={[{ name: "MakerDAO", slug: "makerdao" }, { name: "Liquity", slug: "liquity" }]}
       relatedGuides={[{ title: "How Crypto Loans Work", href: "/crypto-loans/learn/how-to-get-crypto-loan" }, { title: "Liquidation Risk", href: "/crypto-loans/learn/liquidation-risk" }]}
     />
+      <ArticleSchema
+        headline="Abracadabra Review (2026): MIM Borrowing & Cauldrons | degen0x"
+        description="Abracadabra allows borrowing the MIM stablecoin against interest-bearing collateral like yield-bearing tokens."
+        url="https://degen0x.com/crypto-loans/reviews/abracadabra"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/reviews/abracadabra" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How Cauldrons Work", "description": "Abracadabra allows borrowing the MIM stablecoin against interest-bearing collateral like yield-bearing tokens.", "url": "https://degen0x.com/crypto-loans/reviews/abracadabra", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

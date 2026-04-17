@@ -13,6 +13,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Scroll zkEVM Guide 2026: Ethereum's Native ZK Layer 2 | degen0x",
   description: "Complete guide to Scroll, the native zkEVM Layer 2 for Ethereum. Learn how it works, ecosystem DeFi protocols, SCR token, risks, and how to bridge & trade.",
@@ -224,6 +226,7 @@ const RiskCard: React.FC<RiskCardProps> = ({ icon, title, description }) => (
     <div className="text-2xl mb-2">{icon}</div>
     <h4 className="font-bold text-[#e6edf3] mb-2">{title}</h4>
     <p className="text-sm text-[#8b949e]">{description}</p>
+  <AuthoritySources url="/learn/scroll-zkevm-guide-2026" />
   </div>
 );
 

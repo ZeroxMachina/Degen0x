@@ -2,6 +2,12 @@ import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "degen0x em Português — Comparar Exchanges, Wallets e DeFi",
   description: "degen0x é seu guia confiável para cripto em português. Compare exchanges, wallets, protocolos DeFi e mais. Avaliações de especialistas, ferramentas interativas",
@@ -112,6 +118,19 @@ const breadcrumbData = {
 export default function PortuguesLandingPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="degen0x em Português — Comparar Exchanges, Wallets e DeFi"
+        description="degen0x é seu guia confiável para cripto em português. Compare exchanges, wallets, protocolos DeFi e mais. Avaliações de especialistas, ferramentas interativas"
+        url="/pt-br"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/pt-br" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/pt-br" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

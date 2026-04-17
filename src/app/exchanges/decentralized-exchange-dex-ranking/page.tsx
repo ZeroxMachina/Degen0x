@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Decentralized Exchanges (DEX) 2026: Uniswap,",
   description: 'Top DEXs 2026: Uniswap ($4T volume, $2.5B TVL), PancakeSwap ($6B TVL), Curve ($9B TVL), dYdX ($1.2B TVL), Jupiter ($800M TVL). AMM vs orderbook. No KYC.',
@@ -186,6 +192,19 @@ export default function DecentralizedExchangeDEXRanking() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Decentralized Exchanges (DEX) 2026: Uniswap,"
+        description="Top DEXs 2026: Uniswap ($4T volume, $2.5B TVL), PancakeSwap ($6B TVL), Curve ($9B TVL), dYdX ($1.2B TVL), Jupiter ($800M TVL). AMM vs orderbook. No KYC."
+        url="https://degen0x.com/exchanges/decentralized-exchange-dex-ranking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/decentralized-exchange-dex-ranking" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/decentralized-exchange-dex-ranking" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

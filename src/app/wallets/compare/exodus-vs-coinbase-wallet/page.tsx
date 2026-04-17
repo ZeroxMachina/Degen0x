@@ -13,6 +13,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Exodus vs Coinbase Wallet (2026): Self-Custody Wallet Comparison | degen0x`,
   description: `Exodus vs Coinbase Wallet comparison for ${CURRENT_YEAR}. Compare multi-chain support, DeFi features, staking, swap fees, and beginner experience.`,
@@ -47,6 +53,14 @@ const breadcrumbData = {
 export default function ExodusVsCoinbaseWalletPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Exodus vs Coinbase Wallet (2026): Self-Custody Wallet Comparison | degen0x"
+        description="Exodus vs Coinbase Wallet comparison for ${CURRENT_YEAR}. Compare multi-chain support, DeFi features, staking, swap fees, and beginner experience."
+        url="https://degen0x.com/wallets/compare/exodus-vs-coinbase-wallet"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -197,6 +211,11 @@ export default function ExodusVsCoinbaseWalletPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/exodus-vs-coinbase-wallet" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/compare/exodus-vs-coinbase-wallet" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/compare/exodus-vs-coinbase-wallet" />
     </div>
   );
 }

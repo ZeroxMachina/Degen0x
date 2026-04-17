@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Phishing Attacks & Prevention: Security 2026",
   description: "Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft.",
@@ -97,6 +101,14 @@ const page = () => {
 
   return (
     <div style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px" }}>
+      <ArticleSchema
+        headline="Crypto Phishing Attacks & Prevention: Security 2026"
+        description="Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft."
+        url="https://degen0x.com/learn/crypto-phishing-attacks-prevention"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
@@ -229,6 +241,7 @@ const page = () => {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Phishing Attacks & Prevention: Security 2026", "description": "Master crypto security. Learn phishing attack vectors, wallet protection, signature verification, and how to secure your digital assets from theft.", "url": "https://degen0x.com/learn/crypto-phishing-attacks-prevention", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/crypto-phishing-attacks-prevention" />
 </div>
   );
 };

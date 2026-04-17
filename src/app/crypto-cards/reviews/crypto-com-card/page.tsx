@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Crypto.com Visa Card Review (2026): Cashback, Tiers & Pros/Cons | degen0x`,
   description: "In-depth Crypto.com Visa card review covering tiered cashback rewards, CRO staking requirements, premium perks, and whether it is worth the investment.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function CryptoComCardReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Crypto.com Visa Card Review (2026): Cashback, Tiers & Pros/Cons"
+        url="https://degen0x.com/crypto-cards/reviews/crypto-com-card"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Crypto.com Visa",
@@ -59,6 +75,18 @@ export default function CryptoComCardReviewPage() {
       relatedReviews={[{ name: "Coinbase Card", slug: "coinbase-card" }, { name: "Binance Card", slug: "binance-card" }, { name: "Nexo Card", slug: "nexo-card" }]}
       relatedGuides={[{ title: "Best Crypto Card Rewards", href: "/crypto-cards/learn/best-crypto-card-rewards" }, { title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }]}
     />
+      <ArticleSchema
+        headline="Crypto.com Visa Card Review (2026): Cashback, Tiers & Pros/Cons | degen0x"
+        description="In-depth Crypto.com Visa card review covering tiered cashback rewards, CRO staking requirements, premium perks, and whether it is worth the investment."
+        url="https://degen0x.com/crypto-cards/reviews/crypto-com-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/crypto-com-card" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Card Tiers Explained", "description": "In-depth Crypto.com Visa card review covering tiered cashback rewards, CRO staking requirements, premium perks, and whether it is worth the investment.", "url": "https://degen0x.com/crypto-cards/reviews/crypto-com-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

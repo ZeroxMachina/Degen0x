@@ -5,6 +5,15 @@ import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "compound-loans")!;
 
 export const metadata: Metadata = { title: "Compound Loans Review 2026: DeFi Borrowing Analysis", description: "Review of borrowing on Compound V3. Covers isolated markets, rates, collateral, COMP rewards, and comparison to alternatives. Updated March 2026." ,
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function CompoundLoansReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Compound Loans Review 2026: DeFi Borrowing Analysis"
+        url="https://degen0x.com/crypto-loans/reviews/compound-loans"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="Compound V3 offers decentralized borrowing through its innovative isolated market architecture. Each market centers around a single borrowable base asset (like USDC or ETH) with multiple approved collateral types. This isolated design means a failure in one market cannot cascade to others, providing cleaner risk separation than pooled lending models. Since pioneering DeFi lending in 2018, Compound has processed billions in loans with a strong security track record. COMP governance token rewards provide additional incentives for both borrowers and lenders."
       sections={[
@@ -45,6 +61,18 @@ export default function CompoundLoansReview() {
       relatedReviews={[{ name: "Aave", slug: "aave-loans" }, { name: "MakerDAO", slug: "makerdao" }]}
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }]}
     />
+      <ArticleSchema
+        headline="Compound Loans Review 2026: DeFi Borrowing Analysis"
+        description="Review of borrowing on Compound V3. Covers isolated markets, rates, collateral, COMP rewards, and comparison to alternatives. Updated March 2026."
+        url="https://degen0x.com/crypto-loans/reviews/compound-loans"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/reviews/compound-loans" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Compound Loans Review 2026: DeFi Borrowing Analysis", "description": "Review of borrowing on Compound V3. Covers isolated markets, rates, collateral, COMP rewards, and comparison to alternatives. Updated March 2026.", "url": "https://degen0x.com/crypto-loans/reviews/compound-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

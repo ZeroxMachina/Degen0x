@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Lending Risks Explained 2026: Smart Contract,",
   description: "Understand crypto lending risks: smart contract exploitation (Euler $197M), oracle manipulation, liquidation cascades, counterparty collapse (Celsius/BlockFi),",
@@ -203,6 +207,14 @@ export default function CryptoLendingRisksGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Lending Risks Explained 2026: Smart Contract,"
+        description="Understand crypto lending risks: smart contract exploitation (Euler $197M), oracle manipulation, liquidation cascades, counterparty collapse (Celsius/BlockFi),"
+        url="https://degen0x.com/learn/crypto-lending-risks-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -620,6 +632,7 @@ export default function CryptoLendingRisksGuide() {
           <a href="/learn/taiko-based-zk-rollup-ethereum-l2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Taiko Based Zk Rollup Ethereum L2 Guide 2026</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/crypto-lending-risks-explained" />
+      <AuthoritySources url="/learn/crypto-lending-risks-explained" />
       </article>
   );
 }

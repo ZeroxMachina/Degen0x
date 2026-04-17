@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Onchain Identity & Reputation Guide 2026 | degen0x",
   description:
@@ -54,6 +58,14 @@ export default function OnchainIdentityReputationGuide() {
       className="min-h-screen bg-[#0d1117]"
       style={{ color: "#e6edf3" }}
     >
+      <ArticleSchema
+        headline="Onchain Identity & Reputation Guide 2026 | degen0x"
+        description="Master onchain identity infrastructure in 2026. Learn about Soulbound Tokens, Ethereum Attestation Service, proof of personhood, and building trust in Web3."
+        url="https://degen0x.com/learn/onchain-identity-reputation-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb Navigation */}
       <nav className="border-b" style={{ borderColor: "#30363d" }} aria-label="Breadcrumb">
@@ -901,6 +913,7 @@ export default function OnchainIdentityReputationGuide() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Identity & Reputation Guide 2026 | degen0x", "description": "Master onchain identity infrastructure in 2026. Learn about Soulbound Tokens, Ethereum Attestation Service, proof of personhood, and building trust in Web3.", "url": "https://degen0x.com/learn/onchain-identity-reputation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/onchain-identity-reputation-guide-2026" />
+    <AuthoritySources url="/learn/onchain-identity-reputation-guide-2026" />
     </article>
   );
 }

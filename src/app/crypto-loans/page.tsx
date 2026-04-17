@@ -9,6 +9,11 @@ import { CRYPTO_LOAN_PRODUCTS, LOAN_FAQS } from "@/data/crypto-loans";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Crypto Loans - Compare Crypto-Backed Lending Platforms 2026`,
   description: "Compare the best crypto loan platforms. Borrow against your Bitcoin and crypto without selling. CeFi and DeFi options with expert reviews and guides.",
@@ -65,6 +70,14 @@ export default function CryptoLoansPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best Crypto Loan Platforms"
+        description="Compare the best crypto loan platforms. Borrow against your Bitcoin and crypto without selling. CeFi and DeFi options with expert reviews and guides."
+        url="/crypto-loans"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
@@ -169,7 +182,11 @@ export default function CryptoLoansPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Crypto Loan Platforms", "description": "Compare the best crypto loan platforms. Borrow against your Bitcoin and crypto without selling. CeFi and DeFi options with expert reviews and guides.", "url": "https://degen0x.com/crypto-loans", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/crypto-loans" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans" />
     </>
   );
 }

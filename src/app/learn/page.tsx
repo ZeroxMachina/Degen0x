@@ -6,6 +6,11 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import RelatedContent from '@/components/RelatedContent';
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Learn Crypto: Complete Guides & Tutorials (2026)`,
   description: "Start your crypto education here. Beginner guides, blockchain basics, Bitcoin and Ethereum explainers, DeFi, NFTs, security tips, and a comprehensive crypto",
@@ -149,6 +154,14 @@ const breadcrumbData = {
 export default function LearnHubPage() {
   return (
     <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Learn Crypto: Complete Guides & Tutorials (2026)"
+        description="Start your crypto education here. Beginner guides, blockchain basics, Bitcoin and Ethereum explainers, DeFi, NFTs, security tips, and a comprehensive crypto"
+        url="https://degen0x.com/learn"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -268,7 +281,11 @@ export default function LearnHubPage() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto for Complete Beginners", "description": "Start your crypto education here. Beginner guides, blockchain basics, Bitcoin and Ethereum explainers, DeFi, NFTs, security tips, and a comprehensive crypto", "url": "https://degen0x.com/learn", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/learn" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/learn" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/learn" />
       <RelatedContent category="learn" currentSlug="/learn" />
 </div>
   );

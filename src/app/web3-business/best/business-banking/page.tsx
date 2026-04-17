@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto-Friendly Business Banks of 2026 | degen0x`,
   description: `Compare the best crypto-friendly business banks of ${CURRENT_YEAR}. Banking partners that welcome Web3 companies with fiat on/off ramps, stablecoin support, and no surprise account closures.`,
@@ -112,6 +118,19 @@ const breadcrumbData = {
 export default function BusinessBankingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Web3 Business"
+        description="The leading banking platform for startups and tech companies, with a strong track record of serving crypto and Web3 businesses. Offers FDIC-insured accounts,"
+        url="/web3-business/best/business-banking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/best/business-banking" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/best/business-banking" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

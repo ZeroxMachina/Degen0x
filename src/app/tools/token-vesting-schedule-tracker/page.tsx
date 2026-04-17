@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Token Vesting Schedule Tracker | degen0x',
   description: "Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events.",
@@ -150,6 +158,24 @@ export default function TokenVestingScheduleTracker() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Token Vesting Schedule Tracker | degen0x"
+        description="Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events."
+        url="https://degen0x.com/tools/token-vesting-schedule-tracker"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/token-vesting-schedule-tracker" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/token-vesting-schedule-tracker" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/token-vesting-schedule-tracker"
+        name="Token Vesting Schedule Tracker"
+        description="Track upcoming token unlocks and vesting schedules. Analyze supply pressure from cliffs. Use Token Unlocks, CryptoRank. Price impact of major unlock events."
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

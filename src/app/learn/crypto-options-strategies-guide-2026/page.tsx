@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Options Strategies 2026: Calls, Spreads & More",
   description: "Master crypto options strategies in 2026. Learn covered calls, protective puts, bull/bear spreads, straddles, strangles, iron condors, and where to trade DeFi",
@@ -556,6 +558,7 @@ export default function CryptoOptionsStrategiesGuide() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Options Strategies 2026: Calls, Spreads & More", "description": "Master crypto options strategies in 2026. Learn covered calls, protective puts, bull/bear spreads, straddles, strangles, iron condors, and where to trade DeFi", "url": "https://degen0x.com/learn/crypto-options-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-options-strategies-guide-2026" />
+<AuthoritySources url="/learn/crypto-options-strategies-guide-2026" />
 </main>
   );
 }

@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Account Abstraction Wallets Guide | Safe, Argent, Biconomy",
   description: "Deep dive into ERC-4337 account abstraction wallets: Safe ($100B secured), Argent social recovery, Biconomy gasless, ZeroDev programmable. Compare AA",
@@ -148,6 +154,19 @@ export default function AccountAbstractionWalletGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Account Abstraction Wallets Guide | Safe, Argent, Biconomy"
+        description="Deep dive into ERC-4337 account abstraction wallets: Safe ($100B secured), Argent social recovery, Biconomy gasless, ZeroDev programmable. Compare AA"
+        url="https://degen0x.com/wallets/account-abstraction-wallet-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/account-abstraction-wallet-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/account-abstraction-wallet-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

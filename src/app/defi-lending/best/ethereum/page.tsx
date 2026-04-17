@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Ethereum DeFi Lending Protocols 2026 - ETH Mainnet`,
   description: `Compare the best DeFi lending protocols on Ethereum mainnet in ${CURRENT_YEAR}. Earn yield and borrow on the most battle-tested DeFi ecosystem.`,
@@ -99,6 +105,19 @@ const breadcrumbData = {
 export default function EthereumPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="DeFi"
+        description="Aave V3 on Ethereum mainnet remains the gold standard for DeFi lending, with the deepest liquidity pools and widest asset selection. The protocol supports over"
+        url="/defi-lending/best/ethereum"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/best/ethereum" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/best/ethereum" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

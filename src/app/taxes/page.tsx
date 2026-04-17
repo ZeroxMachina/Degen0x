@@ -9,6 +9,11 @@ import { TAX_PRODUCTS, TAX_FAQS } from "@/data/taxes";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Tax Software & Guides (2026) | degen0x`,
   description: `Navigate crypto taxes with confidence. Compare the best crypto tax software, read expert reviews, use free calculators, and learn how cryptocurrency is taxed in ${CURRENT_YEAR}.`,
@@ -57,6 +62,14 @@ const breadcrumbData = {
 export default function TaxesHubPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Guides"
+        description="Crypto tax guide and calculator tools. Calculate tax liabilities on Bitcoin, Ethereum, DeFi, staking, NFTs. Compare tax strategies and US tax software."
+        url="/taxes"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -253,7 +266,11 @@ export default function TaxesHubPage() {
         
           <a href="/pricing" style={{ color: "#fb923c", marginRight: "1rem" }}>Pricing</a>
         </nav>
-      <AuthoritySources url="/taxes" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes" />
     </main>
   );
 }

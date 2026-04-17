@@ -7,6 +7,12 @@ import { CRYPTO_TOKENS } from "@/data/investing";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const token = CRYPTO_TOKENS[9];
 
 export const metadata: Metadata = {
@@ -36,6 +42,19 @@ const breadcrumbData = {
 export default function ArbitrumPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Investing"
+        description="Investing"
+        url="/investing/crypto/arbitrum"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/crypto/arbitrum" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/crypto/arbitrum" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },

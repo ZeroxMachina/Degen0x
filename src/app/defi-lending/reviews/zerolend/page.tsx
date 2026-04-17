@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `ZeroLend Review 2026: Multi-Chain Lending on zkSync & More`,
   description: "Complete ZeroLend review covering multi-chain lending on zkSync, Linea, Blast, and other L2s, with yield analysis, fees, and risk assessment.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function ZerolendReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="ZeroLend Review 2026: Multi-Chain Lending on zkSync & More"
+        url="https://degen0x.com/defi-lending/reviews/zerolend"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "ZeroLend", slug: "zerolend", rating: 3.9, description: "ZeroLend is a multi-chain lending protocol built on Aave V3 architecture, deployed across zkSync, Linea, Blast, Manta, and other emerging Layer 2 networks, aiming to be the primary lending market on next-generation L2s.", pros: ["Multi-chain deployment across numerous emerging L2 networks", "Built on proven Aave V3 architecture", "Early mover advantage on newer L2 ecosystems", "Points system incentivizes participation", "Very low gas costs on supported L2 networks"], cons: ["Spread across many chains can fragment liquidity", "Some deployments have very low TVL and activity", "Points system creates speculative rather than organic demand", "Newer L2 networks carry additional infrastructure risk", "Less audited customizations on top of Aave V3 base"], bestFor: "DeFi users seeking Aave V3 lending on emerging L2 networks like zkSync and Linea", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function ZerolendReview() {
       relatedReviews={[{ name: "LayerBank", slug: "layerbank" }, { name: "Mendi", slug: "mendi" }, { name: "Lendle", slug: "lendle" }]}
       relatedGuides={[{ title: "DeFi on zkSync", href: "/defi-lending/learn/defi-on-zksync" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <ArticleSchema
+        headline="ZeroLend Review 2026: Multi-Chain Lending on zkSync & More"
+        description="Complete ZeroLend review covering multi-chain lending on zkSync, Linea, Blast, and other L2s, with yield analysis, fees, and risk assessment."
+        url="https://degen0x.com/defi-lending/reviews/zerolend"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/zerolend" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Strategy", "description": "Complete ZeroLend review covering multi-chain lending on zkSync, Linea, Blast, and other L2s, with yield analysis, fees, and risk assessment.", "url": "https://degen0x.com/defi-lending/reviews/zerolend", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

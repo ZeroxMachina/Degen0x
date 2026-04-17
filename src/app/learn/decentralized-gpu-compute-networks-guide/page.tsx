@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 const S = {
   bg: "var(--color-bg, #0d1117)", surface: "var(--color-surface, #161b22)",
   border: "var(--glass-border, #30363d)", text: "var(--color-text, #e6edf3)",
@@ -380,6 +382,7 @@ export default function DecentralizedGPUComputeGuidePage() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized GPU Compute Networks 2026 \u2014 Akash, Render,", "description": "Compare decentralized GPU networks like Akash, Render, io.net and Grass. Learn how DePIN competes with AWS at 60-80% lower cost for AI compute in 2026.", "url": "https://degen0x.com/learn/decentralized-gpu-compute-networks-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/decentralized-gpu-compute-networks-guide" />
+<AuthoritySources url="/learn/decentralized-gpu-compute-networks-guide" />
 </main>
   );
 }

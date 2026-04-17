@@ -1,5 +1,5 @@
 // Auto-generated dynamic route for insurance/learn
-export const dynamic = "force-dynamic";
+export const revalidate = 3600;
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import LearnPageLayout from "@/components/LearnPage";

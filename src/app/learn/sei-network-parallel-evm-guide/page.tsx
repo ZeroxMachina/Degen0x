@@ -9,6 +9,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Sei Network Guide 2026: The First Parallelized EVM",
   description: "Learn about Sei Network, the first parallelized EVM blockchain with 400ms finality, parallel execution, and a thriving DeFi ecosystem. Complete technical guide.",
@@ -520,6 +522,7 @@ export default function SeiNetworkGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/sei-network-parallel-evm-guide" />
       </article>
     
         <script

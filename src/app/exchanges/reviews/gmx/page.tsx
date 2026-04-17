@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "GMX",
   slug: "gmx",
@@ -148,6 +157,13 @@ const breadcrumbData = {
 export default function GMXReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="GMX Review (2026) - Decentralized Perps on Arbitrum"
+        url="https://degen0x.com/exchanges/reviews/gmx"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
@@ -161,6 +177,18 @@ export default function GMXReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="GMX Review (2026) - Decentralized Perps on Arbitrum | degen0x"
+        description="GMX is a decentralized perpetual and spot exchange on Arbitrum and Avalanche, known for its unique GLP liquidity pool model, zero price-impact trades, and high"
+        url="https://degen0x.com/exchanges/reviews/gmx"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/gmx" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "GLP/GM Liquidity Pool Model", "description": "GMX is a decentralized perpetual and spot exchange on Arbitrum and Avalanche, known for its unique GLP liquidity pool model, zero price-impact trades, and high", "url": "https://degen0x.com/exchanges/reviews/gmx", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

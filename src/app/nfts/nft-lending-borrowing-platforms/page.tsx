@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "NFT Lending & Borrowing 2026: NFTfi, BendDAO, Blur Lending,",
   description: "Complete NFT lending guide: borrow USDC against Bored Apes, Pudgy Penguins. NFTfi peer-to-peer, BendDAO pools, Blur Lending, Arcade lead-to-order. LTV ratios,",
@@ -125,6 +131,19 @@ export default function NFTLendingBorrowingExpanded() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="NFT Lending & Borrowing 2026: NFTfi, BendDAO, Blur Lending,"
+        description="Complete NFT lending guide: borrow USDC against Bored Apes, Pudgy Penguins. NFTfi peer-to-peer, BendDAO pools, Blur Lending, Arcade lead-to-order. LTV ratios,"
+        url="/nfts/nft-lending-borrowing-platforms"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/nft-lending-borrowing-platforms" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/nft-lending-borrowing-platforms" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: "0 auto" }}>

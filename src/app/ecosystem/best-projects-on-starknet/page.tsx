@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best StarkNet Projects 2026: JediSwap, mySwap, zkLend,",
   description: "Complete guide to top StarkNet DeFi projects. Learn about DEXs (JediSwap, mySwap, 10KSwap), lending (zkLend, Nostra), wallets (Argent, Braavos), and StarkNet",
@@ -197,6 +203,19 @@ export default function BestProjectsOnStarkNet() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best StarkNet Projects 2026: JediSwap, mySwap, zkLend,"
+        description="Complete guide to top StarkNet DeFi projects. Learn about DEXs (JediSwap, mySwap, 10KSwap), lending (zkLend, Nostra), wallets (Argent, Braavos), and StarkNet"
+        url="https://degen0x.com/ecosystem/best-projects-on-starknet"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/best-projects-on-starknet" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/best-projects-on-starknet" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

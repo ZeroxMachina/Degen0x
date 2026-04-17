@@ -10,6 +10,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Mobile Crypto Wallets of 2026 - iOS & Android | degen0x`,
   description: `The best mobile crypto wallets for iPhone and Android in ${CURRENT_YEAR}. Compare Phantom, Trust Wallet, Exodus, MetaMask mobile, and more for on-the-go crypto management.`,
@@ -49,6 +55,19 @@ const breadcrumbData = {
 export default function BestMobileWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Wallets"
+        description="Wallets"
+        url="/wallets/best/mobile"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best/mobile" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best/mobile" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

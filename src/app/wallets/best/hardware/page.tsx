@@ -11,6 +11,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Hardware Wallets 2026 — Cold Storage Reviews & Rankings | degen0x`,
   description: `The best hardware wallets of 2026, ranked and tested. Ledger Nano X vs Trezor Model T vs Coldcard Mk4 vs Foundation Passport 2. Expert cold storage reviews with up-to-date pricing.`,
@@ -65,6 +71,19 @@ export default function BestHardwareWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Dual Secure Element Chips"
+        description="Dual Secure Element Chips"
+        url="/wallets/best/hardware"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best/hardware" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best/hardware" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

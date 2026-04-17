@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Citrea Guide 2026: Bitcoin's First ZK Rollup Explained | degen0x",
   description:
@@ -868,6 +870,7 @@ export default function CitreaGuidePage() {
             })
           }}
         />
+      <AuthoritySources url="/learn/citrea-bitcoin-zk-rollup-guide-2026" />
       </article>
   );
 }

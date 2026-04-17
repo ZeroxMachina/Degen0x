@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Notional Finance Review (2026): Fixed-Rate DeFi Lending | degen0x`,
   description:
@@ -27,6 +36,13 @@ const breadcrumbData = {
 export default function NotionalReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Notional Finance Review (2026): Fixed-Rate DeFi Lending"
+        url="https://degen0x.com/defi-lending/reviews/notional"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Notional Finance",
@@ -126,6 +142,18 @@ export default function NotionalReview() {
         { title: "DeFi Risks Guide", href: "/defi-lending/learn/defi-risks-guide" },
       ]}
     />
+      <ArticleSchema
+        headline="Notional Finance Review (2026): Fixed-Rate DeFi Lending | degen0x"
+        description="In-depth Notional Finance review covering fixed-rate lending, fCash tokens, leveraged vaults, and the protocol"
+        url="https://degen0x.com/defi-lending/reviews/notional"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/notional" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fixed-Rate Lending Mechanics", "description": "In-depth Notional Finance review covering fixed-rate lending, fCash tokens, leveraged vaults, and the protocol's unique approach to predictable DeFi yields.", "url": "https://degen0x.com/defi-lending/reviews/notional", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

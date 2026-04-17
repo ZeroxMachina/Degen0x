@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Fixed Rate DeFi Lending 2026 - Predictable Yield`,
   description: `Compare the best fixed-rate DeFi lending protocols in ${CURRENT_YEAR}. Lock in predictable yields without worrying about rate volatility.`,
@@ -75,6 +81,19 @@ const breadcrumbData = {
 export default function FixedRatePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="DeFi"
+        description="Pendle Finance enables fixed-rate yield through yield tokenization. By splitting yield-bearing assets into principal tokens (PT) and yield tokens (YT), users"
+        url="/defi-lending/best/fixed-rate"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/best/fixed-rate" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/best/fixed-rate" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

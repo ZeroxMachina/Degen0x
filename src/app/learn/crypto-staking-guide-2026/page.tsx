@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Crypto Staking Guide 2026 — Earn Passive Income | degen0x',
   description: "Master crypto staking in 2026: PoS blockchains, ATOM, Polkadot, Solana, Ethereum staking, liquid staking, delegation, exchange staking, and risk management for",
@@ -293,6 +297,14 @@ export default function CryptoStakingGuidePage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Crypto Staking Guide 2026 — Earn Passive Income | degen0x"
+        description="Master crypto staking in 2026: PoS blockchains, ATOM, Polkadot, Solana, Ethereum staking, liquid staking, delegation, exchange staking, and risk management for"
+        url="https://degen0x.com/learn/crypto-staking-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1225,6 +1237,7 @@ export default function CryptoStakingGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Staking Guide 2026 \u2014 Earn Passive Income | degen0x", "description": "Master crypto staking in 2026: PoS blockchains, ATOM, Polkadot, Solana, Ethereum staking, liquid staking, delegation, exchange staking, and risk management for", "url": "https://degen0x.com/learn/crypto-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/crypto-staking-guide-2026" />
+<AuthoritySources url="/learn/crypto-staking-guide-2026" />
 </main>
   );
 }

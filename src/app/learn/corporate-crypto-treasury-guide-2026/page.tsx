@@ -10,6 +10,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Corporate Crypto Treasury Guide 2026',
   description: 'Explore digital asset treasury companies (DATCos) in 2026. Compare top BTC and ETH treasury companies, business models, NAV premiums, and risks.',
@@ -1511,6 +1513,7 @@ export default function CorporatoCryptoTreasuryGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/corporate-crypto-treasury-guide-2026" />
       </article>
 
       <BackToTop />

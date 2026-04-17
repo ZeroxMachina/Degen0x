@@ -13,6 +13,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Nexo Card vs Crypto.com Visa: Credit Line vs Prepaid (2026) | degen0x`,
   description:
@@ -84,6 +90,14 @@ const breadcrumbData = {
 export default function NexoVsCryptoComPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Nexo Card vs Crypto.com Visa: Credit Line vs Prepaid (2026) | degen0x"
+        description="Nexo Card vs Crypto.com Visa compared. Credit-line spending vs prepaid debit, cashback rates, staking, global availability, and which card is best for HODLers."
+        url="https://degen0x.com/crypto-cards/compare/nexo-vs-crypto-com"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -266,6 +280,11 @@ export default function NexoVsCryptoComPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/crypto-cards/compare/nexo-vs-crypto-com" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/compare/nexo-vs-crypto-com" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/compare/nexo-vs-crypto-com" />
     </div>
   );
 }

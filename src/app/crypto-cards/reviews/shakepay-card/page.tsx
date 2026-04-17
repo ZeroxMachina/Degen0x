@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "Shakepay Card",
   slug: "shakepay-card",
@@ -38,6 +47,13 @@ const breadcrumbData = {
 export default function ShakepayCardReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Shakepay Card Review (2026): Bitcoin Cashback for Canadians"
+        url="https://degen0x.com/crypto-cards/reviews/shakepay-card"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Cards"
@@ -65,6 +81,18 @@ export default function ShakepayCardReview() {
         { title: "Best Crypto Cards Canada", href: "/crypto-cards/best/canada" },
       ]}
     />
+      <ArticleSchema
+        headline="Shakepay Card Review (2026): Bitcoin Cashback for Canadians | degen0x"
+        description="Shakepay Card is a Canadian crypto Visa card that earns Bitcoin cashback on all purchases with no fees or minimum balance requirements."
+        url="https://degen0x.com/crypto-cards/reviews/shakepay-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/shakepay-card" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Cashback Rewards", "description": "Shakepay Card is a Canadian crypto Visa card that earns Bitcoin cashback on all purchases with no fees or minimum balance requirements.", "url": "https://degen0x.com/crypto-cards/reviews/shakepay-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

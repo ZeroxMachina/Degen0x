@@ -8,6 +8,12 @@ import { Product } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Payment Apps of 2026 - Pay With Crypto Anywhere | degen0x`,
   description: `Compare the best crypto payment apps of ${CURRENT_YEAR}. BitPay, CoinGate, Strike, and more. Send, receive, and spend crypto from your phone.`,
@@ -129,6 +135,19 @@ const breadcrumbData = {
 export default function BestPaymentAppsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Spending"
+        description="The most established crypto payment app with over a decade of history. BitPay processes payments for thousands of merchants, offers a prepaid Mastercard, and"
+        url="/spending/best/payment-apps"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Spending"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/best/payment-apps" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/spending/best/payment-apps" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

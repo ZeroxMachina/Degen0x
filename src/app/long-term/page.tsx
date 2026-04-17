@@ -6,6 +6,12 @@ import FAQSection from "@/components/FAQSection";
 import { FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Long-Term Crypto Strategies - Build Generational Wealth 2026`,
   description: "Master long-term crypto investing. Crypto IRAs, HODL strategies, passive income, retirement planning, estate planning, and FIRE with cryptocurrency. Expert",
@@ -14,7 +20,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const bestOfLinks = [
-  { title: "Best Crypto IRA Providers", href: "/long-term/best/crypto-ira", desc: "Tax-advantaged retirement accounts for Bitcoin and crypto" },
+  { title: "Long-Term Crypto Strategies: IRAs, Vesting, Portfolios | degen0x", href: "/long-term/best/crypto-ira", desc: "Tax-advantaged retirement accounts for Bitcoin and crypto" },
   { title: "Self-Directed Crypto Retirement", href: "/long-term/best/self-directed", desc: "Take full control of your crypto retirement portfolio" },
   { title: "Best Crypto Financial Advisors", href: "/long-term/best/advisors", desc: "Professional guidance for crypto wealth management" },
   { title: "Best Cryptos for Long-Term Holding", href: "/long-term/best/hodl-coins", desc: "Top cryptocurrencies for multi-year holding strategies" },
@@ -88,6 +94,19 @@ export default function LongTermPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best Crypto IRA Providers"
+        description="Master long-term crypto investing. Crypto IRAs, HODL strategies, passive income, retirement planning, estate planning, and FIRE with cryptocurrency. Expert"
+        url="/long-term"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/long-term" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/long-term" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">

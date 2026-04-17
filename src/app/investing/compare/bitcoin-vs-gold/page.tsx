@@ -10,6 +10,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Bitcoin vs Gold (2026) - Investment Comparison | degen0x`,
   description: `Bitcoin vs Gold as a store of value in ${CURRENT_YEAR}. Compare scarcity, returns, volatility, and portfolio diversification benefits.`,
@@ -42,6 +48,14 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Bitcoin vs Gold (2026) - Investment Comparison | degen0x"
+        description="Bitcoin vs Gold as a store of value in ${CURRENT_YEAR}. Compare scarcity, returns, volatility, and portfolio diversification benefits."
+        url="https://degen0x.com/investing/compare/bitcoin-vs-gold"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -141,6 +155,11 @@ export default function Page() {
         items={["Bitcoin", "Gold"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/compare/bitcoin-vs-gold" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/compare/bitcoin-vs-gold" />
     </div>
   );
 }

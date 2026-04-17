@@ -9,6 +9,12 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Web3 Law Firms of 2026 - Crypto & Blockchain Legal | degen0x`,
   description: `Compare the best Web3 and crypto law firms of ${CURRENT_YEAR}. Token offerings, DAO structuring, regulatory compliance, and blockchain IP specialists ranked by expertise and client satisfaction.`,
@@ -117,6 +123,19 @@ const breadcrumbData = {
 export default function LegalPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Web3 Business"
+        description="One of the earliest law firms to establish a dedicated blockchain and cryptocurrency practice. Known for representing policyholders and blockchain companies in"
+        url="/web3-business/best/legal"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/best/legal" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/best/legal" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

@@ -4,6 +4,10 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: `Hot vs Cold Wallets Explained (2026) - Key Differences | degen0x`,
   description: `Hot wallet vs cold wallet: understand the key differences in ${CURRENT_YEAR}. Security, convenience, cost, and which type you need for your crypto strategy.`,

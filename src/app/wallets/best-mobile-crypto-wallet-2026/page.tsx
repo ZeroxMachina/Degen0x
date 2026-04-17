@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Mobile Crypto Wallet 2026: Trust Wallet, MetaMask,",
   description: 'Compare mobile wallets: Trust Wallet (70M users), MetaMask Mobile, Phantom, Coinbase Wallet, Zerion, Rainbow, Exodus.',
@@ -42,6 +48,19 @@ export default function BestMobileCryptoWallet() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Mobile Crypto Wallet 2026: Trust Wallet, MetaMask,"
+        description="Compare mobile wallets: Trust Wallet (70M users), MetaMask Mobile, Phantom, Coinbase Wallet, Zerion, Rainbow, Exodus."
+        url="https://degen0x.com/wallets/best-mobile-crypto-wallet-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best-mobile-crypto-wallet-2026" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best-mobile-crypto-wallet-2026" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import MapleFinanceClient from "./MapleFinanceClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Maple Finance: Institutional On-Chain Credit",
   description: "Maple Finance: Institutional on-chain credit on Ethereum and Arbitrum. Decentralized lending with $3.2B TVL, 4.7% USDC yield, and institutional borrowing.",
@@ -34,6 +40,19 @@ const breadcrumbData = {
 export default function MapleFinancePage() {
   return (
     <>
+      <ArticleSchema
+        headline="Maple Finance: Institutional On-Chain Credit"
+        description="Maple Finance: Institutional on-chain credit on Ethereum and Arbitrum. Decentralized lending with $3.2B TVL, 4.7% USDC yield, and institutional borrowing."
+        url="/ecosystem/maple-finance"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/maple-finance" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/maple-finance" />
       <MapleFinanceClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Maple Finance: Institutional On-Chain Credit", "description": "Maple Finance: Institutional on-chain credit on Ethereum and Arbitrum. Decentralized lending with $3.2B TVL, 4.7% USDC yield, and institutional borrowing.", "url": "https://degen0x.com/ecosystem/maple-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

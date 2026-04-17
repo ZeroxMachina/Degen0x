@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "BTCFi Guide 2026: Bitcoin DeFi, Staking & Ordinals Explained",
   description: "Complete BTCFi guide 2026: Bitcoin DeFi protocols, native staking with Babylon, liquid staking (LBTC), Ordinals, Runes, BRC-20 tokens, and top protocols like",
@@ -318,6 +322,14 @@ export default function BTCFiGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="BTCFi Guide 2026: Bitcoin DeFi, Staking & Ordinals Explained"
+        description="Complete BTCFi guide 2026: Bitcoin DeFi protocols, native staking with Babylon, liquid staking (LBTC), Ordinals, Runes, BRC-20 tokens, and top protocols like"
+        url="https://degen0x.com/learn/btcfi-bitcoin-defi-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
@@ -1152,6 +1164,7 @@ export default function BTCFiGuide() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BTCFi Guide 2026: Bitcoin DeFi, Staking & Ordinals Explained", "description": "Complete BTCFi guide 2026: Bitcoin DeFi protocols, native staking with Babylon, liquid staking (LBTC), Ordinals, Runes, BRC-20 tokens, and top protocols like", "url": "https://degen0x.com/learn/btcfi-bitcoin-defi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/btcfi-bitcoin-defi-guide-2026" />
+<AuthoritySources url="/learn/btcfi-bitcoin-defi-guide-2026" />
 </div>
   );
 }

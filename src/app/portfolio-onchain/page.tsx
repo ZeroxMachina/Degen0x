@@ -4,6 +4,12 @@ import { Metadata } from "next";
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata = {
   title: 'On-Chain Portfolio Analytics — Multi-Chain, DeFi & NFT Tracker | degen0x',
   description: 'Track your crypto portfolio across Ethereum, Arbitrum, Base, Polygon & more. See DeFi positions, P&L history, risk scores, and on-chain data in real time.',
@@ -35,6 +41,19 @@ const breadcrumbData = {
 export default function OnChainPortfolioPage() {
   return (
     <main style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+      <ArticleSchema
+        headline="On-Chain Portfolio Analytics — Multi-Chain, DeFi & NFT Tracker | degen0x"
+        description="Track your crypto portfolio across Ethereum, Arbitrum, Base, Polygon & more. See DeFi positions, P&L history, risk scores, and on-chain data in real time."
+        url="/portfolio-onchain"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/portfolio-onchain" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/portfolio-onchain" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

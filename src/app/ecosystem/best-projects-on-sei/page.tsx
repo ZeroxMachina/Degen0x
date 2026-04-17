@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Sei Projects 2026: Astroport, DragonSwap, Silo, Yei",
   description: "Top Sei ecosystem projects: Astroport DEX, DragonSwap, Silo Protocol lending, Yei Finance. Sei V2 parallelized EVM, twin-turbo consensus. Comparison with",
@@ -183,6 +189,19 @@ export default function BestSeiProjects() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="Best Sei Projects 2026: Astroport, DragonSwap, Silo, Yei"
+        description="Top Sei ecosystem projects: Astroport DEX, DragonSwap, Silo Protocol lending, Yei Finance. Sei V2 parallelized EVM, twin-turbo consensus. Comparison with"
+        url="/ecosystem/best-projects-on-sei"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/best-projects-on-sei" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/best-projects-on-sei" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: "0 auto" }}>

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Decentralized Identity (DID) 2026: W3C Standards, ENS, Lens",
   description: "Complete guide to DIDs: W3C DID standard, ENS domains, Lens Protocol, Worldcoin World ID, Polygon ID, verifiable credentials, soulbound tokens, and",
@@ -206,6 +210,14 @@ export default function DecentralizedIdentityDID() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Decentralized Identity (DID) 2026: W3C Standards, ENS, Lens"
+        description="Complete guide to DIDs: W3C DID standard, ENS domains, Lens Protocol, Worldcoin World ID, Polygon ID, verifiable credentials, soulbound tokens, and"
+        url="https://degen0x.com/learn/decentralized-identity-did-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -602,6 +614,7 @@ export default function DecentralizedIdentityDID() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized Identity (DID) 2026: W3C Standards, ENS, Lens", "description": "Complete guide to DIDs: W3C DID standard, ENS domains, Lens Protocol, Worldcoin World ID, Polygon ID, verifiable credentials, soulbound tokens, and", "url": "https://degen0x.com/learn/decentralized-identity-did-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/decentralized-identity-did-explained" />
+      <AuthoritySources url="/learn/decentralized-identity-did-explained" />
       </article>
   );
 }

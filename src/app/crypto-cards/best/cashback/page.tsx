@@ -9,6 +9,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Cashback Cards of 2026 - Earn Up to 8% Back`,
   description: `Compare the best crypto cashback cards of ${CURRENT_YEAR}. Earn up to 8% back in Bitcoin, ETH, or other crypto on every purchase. Expert-tested rankings and reviews.`,
@@ -67,6 +73,19 @@ const breadcrumbData = {
 export default function BestCashbackCardsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Best Crypto Rewards Cards"
+        description="Best Crypto Rewards Cards"
+        url="/crypto-cards/best/cashback"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/best/cashback" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/best/cashback" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

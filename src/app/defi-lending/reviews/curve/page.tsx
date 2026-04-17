@@ -5,6 +5,15 @@ import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "curve")!;
 
 export const metadata: Metadata = {
@@ -28,6 +37,13 @@ const breadcrumbData = {
 export default function CurveReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Curve Finance Review 2026: LP Yields, CRV Rewards & Analysis"
+        url="https://degen0x.com/defi-lending/reviews/curve"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="DeFi Lending"
@@ -51,6 +67,18 @@ export default function CurveReview() {
       relatedReviews={[{ name: "Yearn", slug: "yearn" }, { name: "Aave", slug: "aave" }]}
       relatedGuides={[{ title: "Liquidity Pools Explained", href: "/defi-lending/learn/liquidity-pools-explained" }, { title: "Impermanent Loss", href: "/defi-lending/learn/impermanent-loss" }]}
     />
+      <ArticleSchema
+        headline="Curve Finance Review 2026: LP Yields, CRV Rewards & Analysis"
+        description="In-depth Curve Finance review covering stablecoin pools, CRV tokenomics, LP yields, security, and whether Curve is right for your DeFi strategy. Updated March"
+        url="https://degen0x.com/defi-lending/reviews/curve"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/curve" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Curve Finance Review 2026: LP Yields, CRV Rewards & Analysis", "description": "In-depth Curve Finance review covering stablecoin pools, CRV tokenomics, LP yields, security, and whether Curve is right for your DeFi strategy. Updated March", "url": "https://degen0x.com/defi-lending/reviews/curve", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

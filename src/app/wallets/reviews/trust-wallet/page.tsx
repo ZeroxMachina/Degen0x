@@ -6,6 +6,15 @@ import { walletProducts } from "@/data/wallets";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = walletProducts.find((p) => p.slug === "trust-wallet")!;
 
 export const metadata: Metadata = {
@@ -21,7 +30,7 @@ const overview =
 const sections = [
   {
     id: "multi-chain",
-    title: "100+ Blockchain Support",
+    title: "Trust Wallet Review 2026: Security, Fees, & Multi-Chain Support | degen0x",
     content:
       "Trust Wallet's standout feature is its massive multi-chain support. It natively supports over 100 blockchains including Ethereum, BNB Chain, Solana, Polygon, Avalanche, Cosmos, Tron, Optimism, Arbitrum, Fantom, and many more. This means you can manage assets across almost every major ecosystem from a single wallet without needing to switch between multiple applications. Token auto-detection identifies your holdings automatically, and you can manually add custom tokens using contract addresses.",
   },
@@ -141,6 +150,13 @@ const breadcrumbData = {
 export default function TrustWalletReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Trust Wallet Review (2026) - Multi-Chain Mobile Wallet"
+        url="https://degen0x.com/wallets/reviews/trust-wallet"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
@@ -154,6 +170,18 @@ export default function TrustWalletReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="Trust Wallet Review (2026) - Multi-Chain Mobile Wallet | degen0x"
+        description="Full Trust Wallet review for ${CURRENT_YEAR}. Covers 100+ blockchain support, dApp browser, staking, security, and Binance integration."
+        url="https://degen0x.com/wallets/reviews/trust-wallet"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/trust-wallet" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "100+ Blockchain Support", "description": "Full Trust Wallet review for ${CURRENT_YEAR}. Covers 100+ blockchain support, dApp browser, staking, security, and Binance integration.", "url": "https://degen0x.com/wallets/reviews/trust-wallet", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

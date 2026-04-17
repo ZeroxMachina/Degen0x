@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Ethereum ETF Staking Guide 2026 — Earn 3.5-4.5% Yields |",
   description: "Complete guide to Ethereum staking ETFs 2026: Compare 8 spot ETFs, staking yields, fee breakdown, BlackRock ETHB 82% monthly distribution, and SEC regulatory",
@@ -258,6 +262,14 @@ export default function EthereumETFStakingGuide() {
 
   return (
     <main className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+      <ArticleSchema
+        headline="Ethereum ETF Staking Guide 2026 — Earn 3.5-4.5% Yields |"
+        description="Complete guide to Ethereum staking ETFs 2026: Compare 8 spot ETFs, staking yields, fee breakdown, BlackRock ETHB 82% monthly distribution, and SEC regulatory"
+        url="https://degen0x.com/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       {/* Structured data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
@@ -1126,6 +1138,7 @@ export default function EthereumETFStakingGuide() {
       <LiveMiniStat id="ethereum" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026" />
+<AuthoritySources url="/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026" />
 </main>
   );
 }

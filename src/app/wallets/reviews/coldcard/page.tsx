@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Coldcard Review (2026) | degen0x`,
   description: "Coldcard hardware wallet review covering air-gapped security, advanced Bitcoin features, seed management, and why it is the gold standard for Bitcoin cold",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function ColdcardReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Coldcard Review (2026)"
+        url="https://degen0x.com/wallets/reviews/coldcard"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Coldcard",
@@ -104,6 +120,18 @@ export default function ColdcardReviewPage() {
         { title: "Best Hardware Wallets", href: "/wallets/best/hardware" }
       ]}
     />
+      <ArticleSchema
+        headline="Coldcard Review (2026) | degen0x"
+        description="Coldcard hardware wallet review covering air-gapped security, advanced Bitcoin features, seed management, and why it is the gold standard for Bitcoin cold"
+        url="https://degen0x.com/wallets/reviews/coldcard"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/coldcard" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Air-Gapped Operation", "description": "Coldcard hardware wallet review covering air-gapped security, advanced Bitcoin features, seed management, and why it is the gold standard for Bitcoin cold", "url": "https://degen0x.com/wallets/reviews/coldcard", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

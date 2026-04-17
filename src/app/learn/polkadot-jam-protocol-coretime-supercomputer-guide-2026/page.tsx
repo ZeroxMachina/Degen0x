@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Polkadot JAM Protocol Guide 2026 — Coretime & Supercomputer",
   description:
@@ -88,6 +92,14 @@ export default function PolkadotJAMGuide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Polkadot JAM Protocol Guide 2026 — Coretime & Supercomputer"
+        description="Polkadot JAM protocol guide: Join-Accumulate-Machine architecture, coretime blockspace model, supercomputer scaling, parachain design, validators."
+        url="https://degen0x.com/learn/polkadot-jam-protocol-coretime-supercomputer-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -308,6 +320,7 @@ export default function PolkadotJAMGuide() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/polkadot-jam-protocol-coretime-supercomputer-guide-2026" />
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Polkadot JAM Protocol Guide 2026 \u2014 Coretime & Supercomputer", "description": "Polkadot JAM protocol guide: Join-Accumulate-Machine architecture, coretime blockspace model, supercomputer scaling, parachain design, validators.", "url": "https://degen0x.com/learn/polkadot-jam-protocol-coretime-supercomputer-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

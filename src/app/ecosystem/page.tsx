@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import EcosystemStore from '@/components/EcosystemStore';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'dApp Ecosystem — Every Protocol on Every Chain | degen0x',
   description: "Discover and explore every dApp across Ethereum, Solana, Base, Arbitrum, Polygon, Avalanche and more. Filter by chain, category, and ratings. The most",
@@ -33,6 +39,19 @@ const breadcrumbData = {
 export default function EcosystemPage() {
   return (
     <>
+      <ArticleSchema
+        headline="dApp Ecosystem — Every Protocol on Every Chain | degen0x"
+        description="Discover and explore every dApp across Ethereum, Solana, Base, Arbitrum, Polygon, Avalanche and more. Filter by chain, category, and ratings. The most"
+        url="/ecosystem"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem" />
       <EcosystemStore />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "dApp Ecosystem — Every Protocol on Every Chain | degen0x", "description": "Every dApp across every chain. Filter, compare, and learn about protocols — DeFi, NFTs, gaming, bridges, wallets and more.", "url": "https://degen0x.com/ecosystem", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = { title: `Best Crypto Margin Lending Platforms 2026`, description: `Compare the best crypto margin lending platforms in ${CURRENT_YEAR}. Leverage your positions with borrowed funds for amplified trading returns.` ,
   alternates: { canonical: "/crypto-loans/best/margin-lending" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -38,6 +44,19 @@ const breadcrumbData = {
 export default function MarginLendingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Crypto Loans"
+        description="Aave enables leveraged DeFi positions through recursive borrowing loops. Deposit collateral, borrow, redeposit, and repeat to create leveraged exposure. eMode"
+        url="/crypto-loans/best/margin-lending"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/best/margin-lending" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/best/margin-lending" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

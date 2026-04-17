@@ -4,6 +4,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import CryptoGlossaryClient from './CryptoGlossaryClient';
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Glossary - Complete Cryptocurrency Terms Dictionary",
   description: "Comprehensive glossary of 200+ cryptocurrency and blockchain terms. Learn about Bitcoin, Ethereum, DeFi, NFTs, trading, and security concepts with real-world",
@@ -51,6 +56,14 @@ export default function CryptoGlossaryPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Crypto Glossary - Complete Cryptocurrency Terms Dictionary"
+        description="Comprehensive glossary of 200+ cryptocurrency and blockchain terms. Learn about Bitcoin, Ethereum, DeFi, NFTs, trading, and security concepts with real-world"
+        url="https://degen0x.com/learn/crypto-glossary"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -104,7 +117,11 @@ export default function CryptoGlossaryPage() {
   <a href="/learn/account-abstraction-erc-4337-guide" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Account Abstraction Erc 4337 Guide</a>
   <a href="/learn/advanced-defi-strategies" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Advanced Defi Strategies</a>
 </nav>
-      <AuthoritySources url="/learn/crypto-glossary" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/learn/crypto-glossary" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/learn/crypto-glossary" />
       </>
   );
 }

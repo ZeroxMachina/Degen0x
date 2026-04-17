@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV",
   description: "Solana Alpenglow consensus upgrade: MEV resistance, state compression, validator performance, scalability improvements, and network enhancements 2026.",
@@ -101,6 +105,14 @@ export default function AlpenglowGuide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Solana Alpenglow Guide 2026 — Consensus Upgrade & MEV"
+        description="Solana Alpenglow consensus upgrade: MEV resistance, state compression, validator performance, scalability improvements, and network enhancements 2026."
+        url="https://degen0x.com/learn/solana-alpenglow-consensus-upgrade-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -286,6 +298,7 @@ export default function AlpenglowGuide() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/solana-alpenglow-consensus-upgrade-guide-2026" />
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Alpenglow Guide 2026 \u2014 Consensus Upgrade & MEV", "description": "Solana Alpenglow consensus upgrade: MEV resistance, state compression, validator performance, scalability improvements, and network enhancements 2026.", "url": "https://degen0x.com/learn/solana-alpenglow-consensus-upgrade-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

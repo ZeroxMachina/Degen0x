@@ -14,6 +14,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Ethereum Fusaka & Glamsterdam Upgrade Guide 2026 | Degen0x',
   description: "Complete guide to Ethereum&rsquo;s Fusaka upgrade (live Dec 2025) and Glamsterdam (2026). Learn about PeerDAS, EIPs, impact on L2 costs, and the path to full",
@@ -652,6 +654,7 @@ export default function FusakaGlamsterdamGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/hyperliquid-dex-hype-chain-perpetual-futures-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Hyperliquid Dex Hype Chain Perpetual Futures Guide 2026</a>
         </nav>
+    <AuthoritySources url="/learn/ethereum-fusaka-glamsterdam-guide-2026" />
     </main>
     
         <script

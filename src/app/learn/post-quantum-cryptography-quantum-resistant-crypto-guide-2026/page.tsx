@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata = {
   title: 'Post-Quantum Cryptography Guide 2026 — Quantum-Resistant Crypto | degen0x',
   description: 'Comprehensive guide to post-quantum cryptography, quantum-resistant blockchains, and NIST standards. Learn how Ethereum, Algorand, and new PQ protocols are preparing for Q-Day.',
@@ -148,6 +152,14 @@ export default function PostQuantumCryptographyGuide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Post-Quantum Cryptography Guide 2026 — Quantum-Resistant Crypto | degen0x"
+        description="Comprehensive guide to post-quantum cryptography, quantum-resistant blockchains, and NIST standards. Learn how Ethereum, Algorand, and new PQ protocols are preparing for Q-Day."
+        url="https://degen0x.com/learn/post-quantum-cryptography-quantum-resistant-crypto-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -881,6 +893,7 @@ export default function PostQuantumCryptographyGuide() {
             })
           }}
         />
+      <AuthoritySources url="/learn/post-quantum-cryptography-quantum-resistant-crypto-guide-2026" />
       </div>
 
       <BackToTop />

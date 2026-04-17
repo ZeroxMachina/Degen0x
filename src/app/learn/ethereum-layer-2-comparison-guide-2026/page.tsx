@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Ethereum Layer 2 Comparison 2026: Arbitrum vs Base vs",
   description: "Compare every major Ethereum L2 — Arbitrum, Base, Optimism, zkSync Era, Starknet, Scroll and more. TVL, fees, TPS, ecosystem size, and which rollup fits your",
@@ -998,6 +1000,7 @@ export default function EthereumL2ComparisonGuidePage() {
       <LiveMiniStat id="ethereum" />
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-layer-2-comparison-guide-2026" />
+    <AuthoritySources url="/learn/ethereum-layer-2-comparison-guide-2026" />
     </article>
   );
 }

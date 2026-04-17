@@ -9,6 +9,12 @@ import TableOfContents from "@/components/TableOfContents";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { COPY_TRADING_PLATFORMS, COPY_TRADING_FAQS } from "@/data/investing";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Copy Trading Platforms 2026 - Follow Top Traders`,
   description: `Compare the best crypto copy trading platforms for ${CURRENT_YEAR}. Automatically replicate trades from experienced traders on Bybit, OKX, eToro, and more.`,
@@ -38,6 +44,19 @@ const breadcrumbData = {
 export default function BestCopyTradingPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Top Copy Trading Platforms"
+        description="Top Copy Trading Platforms"
+        url="/investing/best/copy-trading"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/copy-trading" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/copy-trading" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

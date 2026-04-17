@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Best Wallet for Airdrop Farming | degen0x',
@@ -185,6 +191,19 @@ export default function BestWalletForAirdropFarming() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Wallet for Airdrop Farming | degen0x"
+        description="Best wallets for airdrop farming in 2026. Rabby, MetaMask, Phantom, OKX, Trust Wallet. Multi-wallet strategy, Sybil avoidance, farming guide."
+        url="https://degen0x.com/wallets/best-wallet-for-airdrop-farming"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best-wallet-for-airdrop-farming" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best-wallet-for-airdrop-farming" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

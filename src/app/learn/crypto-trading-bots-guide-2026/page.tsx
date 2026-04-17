@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto Trading Bots Guide 2026 — Grid, DCA & AI | degen0x",
@@ -751,6 +753,7 @@ export default function CryptoTradingBotsGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Trading Bots Guide 2026 \u2014 Grid, DCA & AI | degen0x", "description": "Complete guide to crypto trading bots. Learn grid bots, DCA bots, arbitrage bots, and AI-powered trading. Compare Pionex, 3Commas, Bybit, and more with 2026", "url": "https://degen0x.com/learn/crypto-trading-bots-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-trading-bots-guide-2026" />
+<AuthoritySources url="/learn/crypto-trading-bots-guide-2026" />
 </main>
   );
 }

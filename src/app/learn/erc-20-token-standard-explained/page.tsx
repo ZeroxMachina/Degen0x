@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "ERC-20 Token Standard Explained 2026: Functions, Approvals",
   description: "Complete guide to ERC-20 token standard. Learn 6 required functions (transfer, approve, balanceOf), events, decimal precision. Compare ERC-20 vs ERC-721 vs",
@@ -199,6 +203,14 @@ export default function ERC20TokenStandard() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="ERC-20 Token Standard Explained 2026: Functions, Approvals"
+        description="Complete guide to ERC-20 token standard. Learn 6 required functions (transfer, approve, balanceOf), events, decimal precision. Compare ERC-20 vs ERC-721 vs"
+        url="https://degen0x.com/learn/erc-20-token-standard-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -584,6 +596,7 @@ contract USDC is ERC20 {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ERC-20 Token Standard Explained 2026: Functions, Approvals", "description": "Complete guide to ERC-20 token standard. Learn 6 required functions (transfer, approve, balanceOf), events, decimal precision. Compare ERC-20 vs ERC-721 vs", "url": "https://degen0x.com/learn/erc-20-token-standard-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/erc-20-token-standard-explained" />
+      <AuthoritySources url="/learn/erc-20-token-standard-explained" />
       </article>
   );
 }

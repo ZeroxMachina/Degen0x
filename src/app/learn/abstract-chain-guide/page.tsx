@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "What Is Abstract Chain? Consumer Crypto L2 Explained 2026",
@@ -807,6 +809,7 @@ export default function AbstractChainGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is Abstract Chain? Consumer Crypto L2 Explained 2026", "description": "Abstract is Pudgy Penguins", "url": "https://degen0x.com/learn/abstract-chain-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/abstract-chain-guide" />
+<AuthoritySources url="/learn/abstract-chain-guide" />
 </div>
   );
 }

@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 const S = {
   bg: "var(--color-bg, #0d1117)",
   surface: "var(--color-surface, #161b22)",
@@ -734,6 +736,7 @@ export default function OnchaincreditScoringGuide() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/onchain-credit-scoring-guide-2026" />
     </article>
     
         <script

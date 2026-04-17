@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Accounting Software of 2026 - On-Chain Bookkeeping | degen0x`,
   description: `Compare the best crypto accounting software for businesses in ${CURRENT_YEAR}. Track on-chain transactions, reconcile DeFi activity, generate tax reports, and stay audit-ready.`,
@@ -112,6 +118,19 @@ const breadcrumbData = {
 export default function AccountingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Multi-Chain Tracking"
+        description="Enterprise-grade crypto accounting and tax platform for businesses. Automatically tracks and categorizes on-chain transactions across hundreds of wallets and"
+        url="/web3-business/best/accounting"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/best/accounting" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/best/accounting" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

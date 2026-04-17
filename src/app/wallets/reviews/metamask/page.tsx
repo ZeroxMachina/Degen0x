@@ -7,6 +7,13 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = walletProducts.find((p) => p.slug === "metamask")!;
 
 export const metadata: Metadata = {
@@ -142,6 +149,13 @@ const breadcrumbData = {
 export default function MetaMaskReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="MetaMask Review (2026) - Best Ethereum Wallet?"
+        url="https://degen0x.com/wallets/reviews/metamask"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
@@ -155,6 +169,14 @@ export default function MetaMaskReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="MetaMask Review (2026) - Best Ethereum Wallet? | degen0x"
+        description="Detailed MetaMask review for ${CURRENT_YEAR}. We cover MetaMask"
+        url="https://degen0x.com/wallets/reviews/metamask"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain & Network Support", "description": "Detailed MetaMask review for ${CURRENT_YEAR}. We cover MetaMask's features, swap fees, security, multi-chain support, and how it compares to alternatives.", "url": "https://degen0x.com/wallets/reviews/metamask", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
@@ -168,7 +190,11 @@ export default function MetaMaskReviewPage() {
   <a href="/wallets/reviews/bitbox" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitbox</a>
   <a href="/wallets/reviews/bitget-wallet" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitget Wallet</a>
 </nav>
-      <AuthoritySources url="/wallets/reviews/metamask" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/metamask" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/reviews/metamask" />
       <MethodologyBlock variant="review" />
       </>
   );

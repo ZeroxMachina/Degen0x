@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `HTX Review (2026) | degen0x`,
   description:
@@ -27,6 +36,13 @@ const breadcrumbData = {
 export default function HTXReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="HTX Review (2026)"
+        url="https://degen0x.com/exchanges/reviews/htx"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "HTX",
@@ -51,7 +67,7 @@ export default function HTXReviewPage() {
       categorySlug="exchanges"
       overview="HTX, formerly known as Huobi Global, is one of the longest-running cryptocurrency exchanges in the industry. Founded in China in 2013, it relocated operations globally and was acquired by Justin Sun&apos;s entities in 2022, subsequently rebranding to HTX. The exchange continues to serve millions of users with a comprehensive suite of trading products including spot, futures, options, and DeFi services. Despite management changes, HTX maintains strong liquidity and a broad selection of trading pairs."
       sections={[
-        { id: "features", title: "Features", content:
+        { id: "features", title: "Features — Exchanges (exchanges / reviews / htx)", content:
             "HTX offers spot trading with 700+ trading pairs, USDT-margined and coin-margined perpetual futures, options trading, and leveraged tokens. The platform includes a built-in P2P marketplace, staking services, lending products, and an NFT marketplace. The HT token provides fee discounts and access to token launch events. Copy trading and grid bot features cater to automated trading strategies.",
         },
         { id: "fees", title: "Fees", content:
@@ -91,6 +107,18 @@ export default function HTXReviewPage() {
         { title: "Exchange Insurance Funds", href: "/exchanges/learn/exchange-insurance-funds" },
       ]}
     />
+      <ArticleSchema
+        headline="HTX Review (2026) | degen0x"
+        description="Comprehensive HTX (formerly Huobi) exchange review. Fees, security, features, and trading experience analyzed in detail."
+        url="https://degen0x.com/exchanges/reviews/htx"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/htx" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Features", "description": "Comprehensive HTX (formerly Huobi) exchange review. Fees, security, features, and trading experience analyzed in detail.", "url": "https://degen0x.com/exchanges/reviews/htx", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import DailyStreakSystem from "@/components/DailyStreakSystem";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Daily Streak — degen0x | Earn XP Every Day",
   description: "Check in daily to maintain your streak and earn XP multipliers. 7-day → 1.0×, 30-day → 1.5×, 100-day → 2.0× XP. Streaks up to 3× for 365-day legends.",
@@ -31,6 +37,19 @@ const breadcrumbData = {
 export default function StreakPage() {
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh", fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+      <ArticleSchema
+        headline="Daily Streak — degen0x | Earn XP Every Day"
+        description="Check in daily to maintain your streak and earn XP multipliers. 7-day → 1.0×, 30-day → 1.5×, 100-day → 2.0× XP. Streaks up to 3× for 365-day legends."
+        url="/streak"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/streak" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/streak" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

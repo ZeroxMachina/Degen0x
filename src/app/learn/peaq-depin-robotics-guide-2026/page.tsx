@@ -10,6 +10,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "PEAQ & DePIN Robotics Guide 2026 | degen0x",
   description: "Complete guide to PEAQ network, DePIN, and the crypto machine economy. How robots, vehicles, and IoT devices transact autonomously on blockchain in 2026.",
@@ -777,6 +779,7 @@ export default function PeaqDeginRoboticsGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "PEAQ & DePIN Robotics Guide 2026 | degen0x", "description": "Complete guide to PEAQ network, DePIN, and the crypto machine economy. How robots, vehicles, and IoT devices transact autonomously on blockchain in 2026.", "url": "https://degen0x.com/learn/peaq-depin-robotics-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/peaq-depin-robotics-guide-2026" />
+<AuthoritySources url="/learn/peaq-depin-robotics-guide-2026" />
 </main>
   );
 }

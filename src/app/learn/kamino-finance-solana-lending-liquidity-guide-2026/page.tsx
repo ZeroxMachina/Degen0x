@@ -9,6 +9,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Kamino Finance Guide 2026 — Solana Lending, Liquidity &",
   description: 'Comprehensive guide to Kamino Finance: automated concentrated liquidity vaults, Kamino Lend, multiply leverage loops, KMNO tokenomics, and risks on Solana.',
@@ -123,6 +127,14 @@ export default function KaminoFinanceGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Kamino Finance Guide 2026 — Solana Lending, Liquidity &"
+        description="Comprehensive guide to Kamino Finance: automated concentrated liquidity vaults, Kamino Lend, multiply leverage loops, KMNO tokenomics, and risks on Solana."
+        url="https://degen0x.com/learn/kamino-finance-solana-lending-liquidity-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -290,6 +302,7 @@ export default function KaminoFinanceGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Kamino Finance Guide 2026 \u2014 Solana Lending, Liquidity &", "description": "Comprehensive guide to Kamino Finance: automated concentrated liquidity vaults, Kamino Lend, multiply leverage loops, KMNO tokenomics, and risks on Solana.", "url": "https://degen0x.com/learn/kamino-finance-solana-lending-liquidity-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/kamino-finance-solana-lending-liquidity-guide-2026" />
+<AuthoritySources url="/learn/kamino-finance-solana-lending-liquidity-guide-2026" />
 </div>
   );
 }

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Uniswap v4 Hooks & AMM Innovation Guide 2026 | degen0x',
@@ -122,6 +126,14 @@ export default function UniswapV4HooksAmmInnovationGuide2026() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Uniswap v4 Hooks & AMM Innovation Guide 2026 | degen0x"
+        description="Complete guide to Uniswap v4 in 2026. Learn about hooks, singleton architecture, dynamic fees, flash accounting, TWAMM, and how v4 is reshaping decentralized"
+        url="https://degen0x.com/learn/uniswap-v4-hooks-amm-innovation-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -683,6 +695,7 @@ export default function UniswapV4HooksAmmInnovationGuide2026() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/uniswap-v4-hooks-amm-innovation-guide-2026" />
       </article>
     
         <script

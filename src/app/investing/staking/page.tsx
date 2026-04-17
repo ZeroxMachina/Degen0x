@@ -9,6 +9,11 @@ import { stakingPlatforms } from "@/data/staking";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Staking Platforms of 2026 - Compare & Review`,
   description: `Compare the best crypto staking platforms of ${CURRENT_YEAR}. Expert reviews of liquid staking, restaking, and validator services. Find the best staking yields and lowest fees.`,
@@ -106,6 +111,14 @@ export default function StakingHubPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best Staking Platforms"
+        description="Cryptocurrency staking guide: Earn rewards on Bitcoin, Ethereum, Solana, and 100+ coins. Compare staking options, APY, risks, and strategies."
+        url="/investing/staking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -322,7 +335,11 @@ export default function StakingHubPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Staking Platforms", "description": "Cryptocurrency staking guide: Earn rewards on Bitcoin, Ethereum, Solana, and 100+ coins. Compare staking options, APY, risks, and strategies.", "url": "https://degen0x.com/investing/staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/investing/staking" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/staking" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/staking" />
     </>
   );
 }

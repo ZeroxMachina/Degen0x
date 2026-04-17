@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = { title: `Best No-KYC Crypto Loans 2026 - Borrow Without ID`, description: `Find the best no-KYC crypto loan platforms in ${CURRENT_YEAR}. Borrow against your crypto without identity verification through DeFi protocols.` ,
   alternates: { canonical: "/crypto-loans/best/no-kyc" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -39,6 +45,19 @@ const breadcrumbData = {
 export default function NoKycPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Crypto Loans"
+        description="Aave is fully permissionless with no KYC, no account creation, and no identity verification of any kind. Simply connect your wallet, deposit collateral, and"
+        url="/crypto-loans/best/no-kyc"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/best/no-kyc" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/best/no-kyc" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

@@ -6,6 +6,12 @@ import LivePriceTable from "@/components/LivePriceTable";
 import { tokens, TOKEN_CATEGORIES } from "@/data/tokens";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH, SITE_URL } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Crypto Prices — Bitcoin, Ethereum & Top Tokens | degen0x`,
   description: `Track crypto prices, market caps, and 24h changes for Bitcoin, Ethereum, Solana, and 100+ top cryptocurrencies. Expert analysis and investment guides for every major asset class.`,
@@ -17,6 +23,19 @@ function PriceChange({ change }: { change: number }) {
   const isPositive = change >= 0;
   return (
     <span className={`text-sm font-semibold ${isPositive ? "text-green-400" : "text-red-400"}`}>
+      <ArticleSchema
+        headline="Best Cryptos to Buy"
+        description="Live cryptocurrency prices and market data. Bitcoin, Ethereum, Solana, and 5,000+ altcoins. Real-time charts, technical analysis, and tracking."
+        url="https://degen0x.com/prices"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/prices" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/prices" />
       {isPositive ? "▲" : "▼"} {Math.abs(change).toFixed(1)}%
     </span>
   );

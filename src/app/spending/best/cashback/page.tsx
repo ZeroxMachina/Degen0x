@@ -8,6 +8,12 @@ import { Product } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Cashback Cards of 2026 - Earn Crypto on Every Purchase | degen0x`,
   description: `Compare the best crypto cashback cards of ${CURRENT_YEAR}. Earn Bitcoin, Ethereum, and other crypto rewards on everyday spending. Up to 8% back on purchases.`,
@@ -136,6 +142,19 @@ export default function BestCashbackCardsPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Spending"
+        description="Offers the most well-rounded cashback program with five tiers. The entry-level Midnight Blue earns 1% CRO back, while the top-tier Obsidian earns 5%."
+        url="/spending/best/cashback"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Spending"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/best/cashback" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/spending/best/cashback" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

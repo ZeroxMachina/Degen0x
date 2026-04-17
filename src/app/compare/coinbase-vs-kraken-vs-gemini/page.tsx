@@ -9,6 +9,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Coinbase vs Kraken vs Gemini: Crypto Exchange Comparison',
   description: "Compare exchanges: Coinbase ($0.4-0.6% fees, 150+ coins), Kraken ($0.16-0.26%, advanced trading), Gemini ($0.2-0.4%, regulatory focus). Security, staking,",
@@ -187,6 +191,14 @@ export default function CoinbaseKrakenGemini() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Coinbase vs Kraken vs Gemini: Crypto Exchange Comparison"
+        description="Compare exchanges: Coinbase ($0.4-0.6% fees, 150+ coins), Kraken ($0.16-0.26%, advanced trading), Gemini ($0.2-0.4%, regulatory focus). Security, staking,"
+        url="https://degen0x.com/compare/coinbase-vs-kraken-vs-gemini"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -647,6 +659,7 @@ export default function CoinbaseKrakenGemini() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/coinbase-vs-kraken-vs-gemini" />
+      <AuthoritySources url="/compare/coinbase-vs-kraken-vs-gemini" />
       </article>
   );
 }

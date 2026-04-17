@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Granary Finance Review 2026: Multi-Chain Aave Fork`,
   description: "Detailed Granary Finance review covering multi-chain lending, Aave V2 architecture, yield rates, and risk analysis across supported networks.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function GranaryReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Granary Finance Review 2026: Multi-Chain Aave Fork"
+        url="https://degen0x.com/defi-lending/reviews/granary"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "Granary Finance", slug: "granary", rating: 3.5, description: "Granary Finance is a multi-chain lending protocol built on Aave V2 architecture, deployed across Ethereum, Optimism, Arbitrum, and other networks, offering lending and borrowing with protocol-specific incentives.", pros: ["Multi-chain deployment across major networks", "Built on proven Aave V2 lending architecture", "Familiar interface for Aave users", "GRAIN token incentives add yield on top of base rates", "Supports assets on multiple ecosystems"], cons: ["Using older Aave V2 rather than V3 architecture", "Competing directly with Aave's own multi-chain deployments", "Lower TVL and liquidity than Aave itself", "GRAIN token has experienced significant price decline", "Limited differentiation from the protocol it forked"], bestFor: "Multi-chain DeFi users seeking Aave-style lending with additional token incentives", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function GranaryReview() {
       relatedReviews={[{ name: "Lodestar", slug: "lodestar" }, { name: "Sonne", slug: "sonne" }, { name: "Sturdy", slug: "sturdy" }]}
       relatedGuides={[{ title: "Real Yield vs Emissions", href: "/defi-lending/learn/real-yield-vs-emissions" }, { title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }]}
     />
+      <ArticleSchema
+        headline="Granary Finance Review 2026: Multi-Chain Aave Fork"
+        description="Detailed Granary Finance review covering multi-chain lending, Aave V2 architecture, yield rates, and risk analysis across supported networks."
+        url="https://degen0x.com/defi-lending/reviews/granary"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/granary" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave V2 Architecture", "description": "Detailed Granary Finance review covering multi-chain lending, Aave V2 architecture, yield rates, and risk analysis across supported networks.", "url": "https://degen0x.com/defi-lending/reviews/granary", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

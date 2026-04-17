@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Aave V4 & GHO Stablecoin DeFi Lending Guide 2026',
   description: "Complete guide to Aave V4 launch, hub-and-spoke architecture, GHO stablecoin ecosystem, tokenomics, and multichain strategy. Learn how Aave dominates DeFi",
@@ -380,6 +384,14 @@ export default function AaveV4GHOPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Aave V4 & GHO Stablecoin DeFi Lending Guide 2026"
+        description="Complete guide to Aave V4 launch, hub-and-spoke architecture, GHO stablecoin ecosystem, tokenomics, and multichain strategy. Learn how Aave dominates DeFi"
+        url="https://degen0x.com/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <article aria-label="Guide: Aave V4 & GHO Stablecoin DeFi Lending" style={pageStyles.container}>
         <Breadcrumb items={[
@@ -884,6 +896,7 @@ export default function AaveV4GHOPage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026" />
       </article>
     
         <script

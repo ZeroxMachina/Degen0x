@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "PayFi Guide 2026: What Is Payment Finance and How Does It",
   description: "PayFi (Payment Finance) merges blockchain payments with DeFi yield. Learn how PayFi works, explore top protocols like Huma Finance, and discover real-world use",
@@ -568,6 +570,7 @@ export default function PayFiGuidePage() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/payfi-guide" />
+      <AuthoritySources url="/learn/payfi-guide" />
       </article>
   );
 }

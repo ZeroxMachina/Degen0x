@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Crypto Exchange for Staking 2026: Coinbase, Kraken, OKX",
   description: 'Complete staking guide: Coinbase ETH 3.2%, Kraken ETH 3.5%, Solana 5.1%, OKX, Bybit. APY comparison, lock-up periods, minimum stake, tax treatment.',
@@ -120,6 +126,19 @@ export default function BestExchangeForStaking() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Crypto Exchange for Staking 2026: Coinbase, Kraken, OKX"
+        description="Complete staking guide: Coinbase ETH 3.2%, Kraken ETH 3.5%, Solana 5.1%, OKX, Bybit. APY comparison, lock-up periods, minimum stake, tax treatment."
+        url="https://degen0x.com/exchanges/best-crypto-exchange-for-staking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/best-crypto-exchange-for-staking" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/best-crypto-exchange-for-staking" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Best Perpetual DEXs 2026: Compare Hyperliquid, dYdX & More",
   description:
@@ -674,6 +676,7 @@ export default function PerpDEXGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Perpetual DEXs 2026: Compare Hyperliquid, dYdX & More", "description": "Compare top perpetual DEXs in 2026. Hyperliquid, dYdX, Lighter, GRVT, GMX \u2014 fees, leverage, volume, and how to start trading on-chain derivatives.", "url": "https://degen0x.com/learn/best-perpetual-dex-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/best-perpetual-dex-guide" />
+<AuthoritySources url="/learn/best-perpetual-dex-guide" />
 </main>
   );
 }

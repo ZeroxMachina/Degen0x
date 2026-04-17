@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'DeFi Yield Farming Beginners Guide 2026 | degen0x',
   description: 'Learn DeFi yield farming: liquidity pools, impermanent loss, Aave APYs, Compound interest, Curve rewards. Beginner-friendly guide with risk comparison table.',
@@ -196,6 +200,14 @@ export default function DeFiYieldFarmingBeginnersGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="DeFi Yield Farming Beginners Guide 2026 | degen0x"
+        description="Learn DeFi yield farming: liquidity pools, impermanent loss, Aave APYs, Compound interest, Curve rewards. Beginner-friendly guide with risk comparison table."
+        url="https://degen0x.com/learn/defi-yield-farming-beginners-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -629,6 +641,7 @@ export default function DeFiYieldFarmingBeginnersGuide() {
         </nav>
       <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/defi-yield-farming-beginners-guide" />
+      <AuthoritySources url="/learn/defi-yield-farming-beginners-guide" />
       </article>
   );
 }

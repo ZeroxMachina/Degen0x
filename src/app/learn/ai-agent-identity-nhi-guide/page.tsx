@@ -14,6 +14,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // Export metadata for server-side rendering
 export const metadata: Metadata = {
   title: "AI Agent Identity (NHI) Guide 2026: Non-Human Identities &",
@@ -858,6 +860,7 @@ export default function AIAgentIdentityPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI Agent Identity (NHI) Guide 2026: Non-Human Identities &", "description": "Master AI agent identity infrastructure. Learn about Non-Human Identities (NHI), Decentralized Identifiers, World AgentKit, Coinbase x402, and Know Your Agent.", "url": "https://degen0x.com/learn/ai-agent-identity-nhi-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/ai-agent-identity-nhi-guide" />
+<AuthoritySources url="/learn/ai-agent-identity-nhi-guide" />
 </main>
   );
 }

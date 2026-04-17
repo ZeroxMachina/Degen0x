@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Extra Finance Review 2026: Leveraged Farming on Optimism & Base`,
   description:
@@ -27,6 +36,13 @@ const breadcrumbData = {
 export default function ExtraFinanceReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Extra Finance Review 2026: Leveraged Farming on Optimism & Base"
+        url="https://degen0x.com/defi-lending/reviews/extra-finance"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Extra Finance",
@@ -79,6 +95,18 @@ export default function ExtraFinanceReview() {
         { title: "Leveraged Yield Farming", href: "/defi-lending/learn/leveraged-yield-farming" },
       ]}
     />
+      <ArticleSchema
+        headline="Extra Finance Review 2026: Leveraged Farming on Optimism & Base"
+        description="Complete Extra Finance review covering leveraged yield farming, lending markets, strategy vaults, and risk analysis on Optimism and Base networks."
+        url="https://degen0x.com/defi-lending/reviews/extra-finance"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/extra-finance" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Leveraged Farming Mechanics", "description": "Complete Extra Finance review covering leveraged yield farming, lending markets, strategy vaults, and risk analysis on Optimism and Base networks.", "url": "https://degen0x.com/defi-lending/reviews/extra-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

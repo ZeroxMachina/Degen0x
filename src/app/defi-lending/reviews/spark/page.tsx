@@ -6,6 +6,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "spark")!;
 
 export const metadata: Metadata = {
@@ -29,6 +38,13 @@ const breadcrumbData = {
 export default function SparkReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Spark Protocol Review (2026): MakerDAO Lending Platform"
+        url="https://degen0x.com/defi-lending/reviews/spark"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="DeFi Lending"
@@ -52,6 +68,18 @@ export default function SparkReview() {
       relatedReviews={[{ name: "Aave", slug: "/defi-lending/reviews/aave" }, { name: "Morpho", slug: "/defi-lending/reviews/morpho" }]}
       relatedGuides={[{ title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
+      <ArticleSchema
+        headline="Spark Protocol Review (2026): MakerDAO Lending Platform | degen0x"
+        description="In-depth Spark Protocol review covering DAI lending, SparkLend markets, DSR integration, sDAI, and the protocol"
+        url="https://degen0x.com/defi-lending/reviews/spark"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/spark" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SparkLend Markets", "description": "In-depth Spark Protocol review covering DAI lending, SparkLend markets, DSR integration, sDAI, and the protocol's relationship with Sky (formerly MakerDAO).", "url": "https://degen0x.com/defi-lending/reviews/spark", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

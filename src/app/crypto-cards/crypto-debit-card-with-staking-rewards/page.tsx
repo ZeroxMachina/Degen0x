@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Debit Cards with Staking Rewards 2026 | Lido, Rocket",
   description: "Crypto debit cards with integrated staking: earn while spending. Lido stETH, Rocket Pool rETH, and staking-enabled cards. Rewards rates, APY, and best options.",
@@ -165,6 +171,19 @@ export default function StakingRewardsCards() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px" }}>
+      <ArticleSchema
+        headline="Crypto Debit Cards with Staking Rewards 2026 | Lido, Rocket"
+        description="Crypto debit cards with integrated staking: earn while spending. Lido stETH, Rocket Pool rETH, and staking-enabled cards. Rewards rates, APY, and best options."
+        url="https://degen0x.com/crypto-cards/crypto-debit-card-with-staking-rewards"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/crypto-debit-card-with-staking-rewards" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/crypto-debit-card-with-staking-rewards" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

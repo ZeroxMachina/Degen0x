@@ -9,6 +9,11 @@ import { exchanges } from "@/data/exchanges";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Exchanges of 2026 - Compare & Review`,
   description: `Compare the best cryptocurrency exchanges of ${CURRENT_YEAR}. Expert reviews, fee comparisons, security analysis, and tools to help you find the right exchange for your needs.`,
@@ -118,6 +123,14 @@ export default function ExchangesPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best Exchanges Overall"
+        description="Best cryptocurrency exchanges 2026. Compare spot trading, DEX, futures. Kyc requirements, fees, security, and which exchange is best for you."
+        url="/exchanges"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -329,7 +342,11 @@ export default function ExchangesPage() {
       </section>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best Exchanges Overall", "description": "Best cryptocurrency exchanges 2026. Compare spot trading, DEX, futures. Kyc requirements, fees, security, and which exchange is best for you.", "url": "https://degen0x.com/exchanges", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/exchanges" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges" />
     </>
   );
 }

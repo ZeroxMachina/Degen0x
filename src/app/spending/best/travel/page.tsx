@@ -8,6 +8,12 @@ import { Product } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Cards for Travel in 2026 - No Foreign Fees | degen0x`,
   description: `Find the best crypto debit cards for international travel in ${CURRENT_YEAR}. No foreign transaction fees, airport lounge access, and worldwide acceptance compared.`,
@@ -116,6 +122,19 @@ const breadcrumbData = {
 export default function BestTravelCardsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Spending"
+        description="The best crypto card for travelers. Zero foreign transaction fees, free airport lounge access via LoungeKey (Jade Green and above), 3-5% cashback worldwide,"
+        url="/spending/best/travel"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Spending"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/best/travel" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/spending/best/travel" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

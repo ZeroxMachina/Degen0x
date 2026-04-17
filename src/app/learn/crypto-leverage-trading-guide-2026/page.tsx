@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Leverage Trading Guide 2026 | Margin, Liquidation &",
   description: "Complete guide to crypto leverage trading in 2026. Learn margin trading, liquidation mechanics, risk management, and best practices for perpetual futures and",
@@ -1263,6 +1265,7 @@ export default function CryptoLeverageTradingGuide() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Leverage Trading Guide 2026 | Margin, Liquidation &", "description": "Complete guide to crypto leverage trading in 2026. Learn margin trading, liquidation mechanics, risk management, and best practices for perpetual futures and", "url": "https://degen0x.com/learn/crypto-leverage-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-leverage-trading-guide-2026" />
+<AuthoritySources url="/learn/crypto-leverage-trading-guide-2026" />
 </div>
   );
 }

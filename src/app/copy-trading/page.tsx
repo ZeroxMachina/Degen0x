@@ -5,6 +5,12 @@ import CopyTradingLeaderboard from "@/components/CopyTradingLeaderboard";
 import SocialTradingFeed from "@/components/SocialTradingFeed";
 import { SITE_NAME } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Copy Trading Leaderboard — degen0x`,
   description: "Follow and copy the best crypto traders. Real-time PnL rankings, strategy analysis, risk scores, and one-click copy trading across Solana, Ethereum, and L2s.",
@@ -25,6 +31,19 @@ const breadcrumbData = {
 export default function CopyTradingPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 space-y-12">
+      <ArticleSchema
+        headline="Guides"
+        description="Follow and copy the best crypto traders. Real-time PnL rankings, strategy analysis, risk scores, and one-click copy trading across Solana, Ethereum, and L2s."
+        url="/copy-trading"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/copy-trading" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/copy-trading" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

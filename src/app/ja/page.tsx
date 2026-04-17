@@ -2,6 +2,12 @@ import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ─────────────────────────────────────────────
 //  Japanese (JA) Localization Landing Page
 //  degen0x · Sprint 26 · Day 32
@@ -186,6 +192,19 @@ const breadcrumbData = {
 export default function JapanesePage() {
   return (
     <div style={{ background: "var(--color-bg, #0d1117)", minHeight: "100vh", color: "var(--color-text, #e6edf3)" }}>
+      <ArticleSchema
+        headline="degen0x 日本語版 — 暗号資産取引所・ウォレット・DeFiを比較"
+        description="degen0x日本語版: 暗号資産総合比較プラットフォーム。DeFi、DEX、ウォレット比較、ステーキング戦略、無料ツール、2026年収益戦略。"
+        url="/ja"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ja" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ja" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

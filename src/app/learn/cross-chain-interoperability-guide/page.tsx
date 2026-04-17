@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Cross-Chain Interoperability Guide 2026: LayerZero,",
   description: "Complete guide to cross-chain bridges. Compare LayerZero (omnichain messaging), Wormhole (19 chains), Axelar GMP, Chainlink CCIP, Cosmos IBC, Polkadot XCMP.",
@@ -200,6 +204,14 @@ export default function CrossChainInteroperabilityGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Cross-Chain Interoperability Guide 2026: LayerZero,"
+        description="Complete guide to cross-chain bridges. Compare LayerZero (omnichain messaging), Wormhole (19 chains), Axelar GMP, Chainlink CCIP, Cosmos IBC, Polkadot XCMP."
+        url="https://degen0x.com/learn/cross-chain-interoperability-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -578,6 +590,7 @@ export default function CrossChainInteroperabilityGuide() {
 </div>
       <Diagram slug="bridging-flow" />
       <RelatedContent category="learn" currentSlug="/learn/cross-chain-interoperability-guide" />
+      <AuthoritySources url="/learn/cross-chain-interoperability-guide" />
       </article>
   );
 }

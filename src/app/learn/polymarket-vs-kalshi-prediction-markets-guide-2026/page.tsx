@@ -7,6 +7,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Polymarket vs Kalshi: Prediction Markets Comparison Guide",
   description: "In-depth comparison of Polymarket and Kalshi in 2026 — fees, liquidity, regulation, US access, crypto vs USD rails, and which prediction market platform is",
@@ -112,6 +116,14 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-950 to-black text-gray-100">
+      <ArticleSchema
+        headline="Polymarket vs Kalshi: Prediction Markets Comparison Guide"
+        description="In-depth comparison of Polymarket and Kalshi in 2026 — fees, liquidity, regulation, US access, crypto vs USD rails, and which prediction market platform is"
+        url="https://degen0x.com/learn/polymarket-vs-kalshi-prediction-markets-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -329,6 +341,7 @@ export default function Page() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Polymarket vs Kalshi: Prediction Markets Comparison Guide", "description": "In-depth comparison of Polymarket and Kalshi in 2026 \u2014 fees, liquidity, regulation, US access, crypto vs USD rails, and which prediction market platform is", "url": "https://degen0x.com/learn/polymarket-vs-kalshi-prediction-markets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/polymarket-vs-kalshi-prediction-markets-guide-2026" />
+<AuthoritySources url="/learn/polymarket-vs-kalshi-prediction-markets-guide-2026" />
 </div>
   );
 }

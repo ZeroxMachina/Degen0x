@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Custody Insurance Guide 2026: Coinbase, Fireblocks",
   description: "Complete crypto custody insurance guide. Institutional custody (Coinbase $320B+ AUM, Fireblocks $4B+ insured), Lloyd\'s of London policies, crime vs specie insurance. Comparison table with coverage limits and premiums.",
@@ -196,6 +202,19 @@ export default function CryptoCustodyInsuranceGuide() {
         scrollBehavior: "smooth",
       }}
     >
+      <ArticleSchema
+        headline="Crypto Custody Insurance Guide 2026: Coinbase, Fireblocks"
+        description="Complete crypto custody insurance guide. Institutional custody (Coinbase $320B+ AUM, Fireblocks $4B+ insured), Lloyd\"
+        url="https://degen0x.com/insurance/crypto-custody-insurance-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Insurance"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/insurance/crypto-custody-insurance-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/insurance/crypto-custody-insurance-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

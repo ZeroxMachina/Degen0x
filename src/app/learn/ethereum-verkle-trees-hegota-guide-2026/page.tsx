@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Ethereum Verkle Trees & Hegota Guide 2026 — Stateless",
   description: "Understand Verkle Trees, the cryptographic innovation enabling stateless Ethereum clients. Learn how Hegota (H2 2026) reduces node storage by 90% and what it",
@@ -1113,6 +1115,7 @@ export default function VerkleTreesHegotaGuide() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/ethereum-verkle-trees-hegota-guide-2026" />
       </article>
     
         <script

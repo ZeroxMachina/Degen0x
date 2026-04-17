@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Unichain Guide 2026: What Is Uniswap\'s Layer 2 and How It Works',
   description: 'Complete guide to Unichain, Uniswap\'s DeFi-optimized Layer 2 built on OP Stack. Learn about features, bridge mechanics, MEV protection, and how it compares to Base and Arbitrum.',
@@ -919,6 +921,7 @@ export default function UniChainGuidePage() {
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Unichain Guide 2026: What Is Uniswap\\", "description": "Complete guide to Unichain, Uniswap\\", "url": "https://degen0x.com/learn/unichain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/unichain-guide-2026" />
+<AuthoritySources url="/learn/unichain-guide-2026" />
 </div>
   );
 }

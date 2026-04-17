@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Gaming Crypto Tokens 2026: IMX, GALA, RON, BEAM, UOS",
   description: "Complete guide to gaming crypto tokens. Compare Immutable X (IMX), Gala Games (GALA), Ronin (RON), Beam (BEAM), Ultra (UOS), Xai (XAI). Coverage of 50+ live",
@@ -192,6 +198,19 @@ export default function BestGamingCryptoTokens2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Gaming Crypto Tokens 2026: IMX, GALA, RON, BEAM, UOS"
+        description="Complete guide to gaming crypto tokens. Compare Immutable X (IMX), Gala Games (GALA), Ronin (RON), Beam (BEAM), Ultra (UOS), Xai (XAI). Coverage of 50+ live"
+        url="https://degen0x.com/investing/best-gaming-crypto-tokens"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best-gaming-crypto-tokens" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best-gaming-crypto-tokens" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

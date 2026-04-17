@@ -7,6 +7,12 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto CPAs & Tax Accountants (2026) | degen0x`,
   description: `Find the best crypto-specialized CPAs and tax accountants for ${CURRENT_YEAR}. Expert accountants who understand DeFi, NFTs, staking, and complex crypto tax situations.`,
@@ -86,6 +92,19 @@ const breadcrumbData = {
 export default function BestAccountantsPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Taxes"
+        description="TokenTax combines tax software with access to CPAs who specialize in cryptocurrency. They handle everything from simple trades to complex DeFi positions,"
+        url="/taxes/best/accountants"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/best/accountants" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/best/accountants" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

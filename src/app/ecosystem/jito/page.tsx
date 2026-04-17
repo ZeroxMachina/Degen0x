@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import JitoClient from "./JitoClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Jito: Solana Liquid Staking & MEV Guide 2026 | degen0x",
   description:
@@ -60,6 +66,19 @@ const breadcrumbData = {
 export default function JitoPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Jito: Solana Liquid Staking & MEV Guide 2026 | degen0x"
+        description="Complete guide to Jito — Solana"
+        url="/ecosystem/jito"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/jito" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/jito" />
       <JitoClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Jito: Solana Liquid Staking & MEV Guide 2026 | degen0x", "description": "Complete guide to Jito — Solana's leading liquid staking protocol with MEV-powered yields. JitoSOL, MEV tips, validator staking, JTO governance, and how to earn enhanced staking rewards.", "url": "https://degen0x.com/ecosystem/jito", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "HyperLiquid Guide 2026: The DEX That Took On Binance (And",
   description:
@@ -28,6 +32,14 @@ const breadcrumbData = {
 export default function HyperLiquidGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="HyperLiquid Guide 2026: The DEX That Took On Binance (And"
+        description="Everything you need to know about HyperLiquid — what it is, how it works, HYPE tokenomics, fee structure, how it compares to dYdX and GMX, and whether it"
+        url="https://degen0x.com/learn/hyperliquid-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
@@ -353,6 +365,7 @@ export default function HyperLiquidGuidePage() {
           <a href="/learn/thorchain-cross-chain-native-swaps-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Thorchain Cross Chain Native Swaps Guide 2026</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/hyperliquid-guide" />
+    <AuthoritySources url="/learn/hyperliquid-guide" />
     </article>
   );
 }

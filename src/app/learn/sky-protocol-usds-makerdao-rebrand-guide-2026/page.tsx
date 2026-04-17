@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Sky Protocol Guide 2026 — USDS, SKY Token & MakerDAO Rebrand",
@@ -115,6 +119,14 @@ export default function SkyProtocolGuide2026() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Sky Protocol Guide 2026 — USDS, SKY Token & MakerDAO Rebrand"
+        description="Complete guide to Sky Protocol in 2026 — the MakerDAO rebrand. Learn how USDS replaces DAI, the Sky Savings Rate, SubDAOs (Stars), SKY vs MKR tokenomics, and"
+        url="https://degen0x.com/learn/sky-protocol-usds-makerdao-rebrand-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
@@ -275,6 +287,7 @@ export default function SkyProtocolGuide2026() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/solana-lst-comparison-marinade-jito-sanctum-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Lst Comparison Marinade Jito Sanctum 2026</a>
         </nav>
+    <AuthoritySources url="/learn/sky-protocol-usds-makerdao-rebrand-guide-2026" />
     </main>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sky Protocol Guide 2026 \u2014 USDS, SKY Token & MakerDAO Rebrand", "description": "Complete guide to Sky Protocol in 2026 \u2014 the MakerDAO rebrand. Learn how USDS replaces DAI, the Sky Savings Rate, SubDAOs (Stars), SKY vs MKR tokenomics, and", "url": "https://degen0x.com/learn/sky-protocol-usds-makerdao-rebrand-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

@@ -10,6 +10,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &",
   description: "Complete guide to Sanctum, the universal liquid staking layer on Solana. Learn how the Infinity pool unifies LST liquidity, how Sanctum LSTs work, and what",
@@ -126,6 +130,14 @@ export default function SanctumGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &"
+        description="Complete guide to Sanctum, the universal liquid staking layer on Solana. Learn how the Infinity pool unifies LST liquidity, how Sanctum LSTs work, and what"
+        url="https://degen0x.com/learn/sanctum-solana-liquid-staking-infinity-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -306,6 +318,7 @@ export default function SanctumGuide() {
       <LiveMiniStat id="solana" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/sanctum-solana-liquid-staking-infinity-guide-2026" />
+<AuthoritySources url="/learn/sanctum-solana-liquid-staking-infinity-guide-2026" />
 </div>
   );
 }

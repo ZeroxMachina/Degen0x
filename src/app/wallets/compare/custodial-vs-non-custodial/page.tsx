@@ -10,6 +10,13 @@ import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Custodial vs Non-Custodial Wallets (2026) | degen0x`,
   description: `Custodial vs non-custodial wallet comparison for ${CURRENT_YEAR}. Key ownership, security, recovery options, DeFi access, and privacy compared.`,
@@ -42,6 +49,14 @@ const breadcrumbData = {
 export default function CustodialVsNonCustodialPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Custodial vs Non-Custodial Wallets (2026) | degen0x"
+        description="Custodial vs non-custodial wallet comparison for ${CURRENT_YEAR}. Key ownership, security, recovery options, DeFi access, and privacy compared."
+        url="https://degen0x.com/wallets/compare/custodial-vs-non-custodial"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -130,6 +145,11 @@ export default function CustodialVsNonCustodialPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/custodial-vs-non-custodial" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/compare/custodial-vs-non-custodial" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/compare/custodial-vs-non-custodial" />
     </div>
   );
 }

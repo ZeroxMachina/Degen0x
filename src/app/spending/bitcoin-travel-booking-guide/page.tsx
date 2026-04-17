@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Bitcoin Travel Booking Guide: Book Hotels & Flights with",
   description: 'Book travel with Bitcoin and stablecoins. Travala, CheapAir, Booking.com integration. Compare crypto travel platforms and learn tax implications.',
@@ -181,6 +187,19 @@ export default function BitcoinTravelBookingGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bitcoin Travel Booking Guide: Book Hotels & Flights with"
+        description="Book travel with Bitcoin and stablecoins. Travala, CheapAir, Booking.com integration. Compare crypto travel platforms and learn tax implications."
+        url="https://degen0x.com/spending/bitcoin-travel-booking-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Spending"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/bitcoin-travel-booking-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/spending/bitcoin-travel-booking-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

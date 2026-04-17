@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Smart Contract Security Guide 2026: Audits, Vulnerabilities",
   description: "Learn how smart contract audits work, the most common DeFi vulnerabilities in 2026, top audit firms, and how to evaluate protocol safety before investing.",
@@ -104,6 +108,14 @@ export default function SmartContractSecurityGuide() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <ArticleSchema
+        headline="Smart Contract Security Guide 2026: Audits, Vulnerabilities"
+        description="Learn how smart contract audits work, the most common DeFi vulnerabilities in 2026, top audit firms, and how to evaluate protocol safety before investing."
+        url="https://degen0x.com/learn/smart-contract-security-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style>{`
         .related-article-card {
@@ -689,6 +701,7 @@ export default function SmartContractSecurityGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Contract Security Guide 2026: Audits, Vulnerabilities", "description": "Learn how smart contract audits work, the most common DeFi vulnerabilities in 2026, top audit firms, and how to evaluate protocol safety before investing.", "url": "https://degen0x.com/learn/smart-contract-security-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/smart-contract-security-guide" />
+<AuthoritySources url="/learn/smart-contract-security-guide" />
 </div>
   );
 }

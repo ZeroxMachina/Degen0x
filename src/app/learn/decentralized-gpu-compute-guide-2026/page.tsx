@@ -9,6 +9,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Decentralized GPU & Compute Networks Guide 2026: Akash,",
@@ -845,6 +847,7 @@ export default function DecentralizedGPUComputeGuidePage() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized GPU & Compute Networks Guide 2026: Akash,", "description": "Complete guide to decentralized GPU and compute networks in 2026. Understand how Render, Akash, io.net, and Aethir compete with AWS. Learn why GPU scarcity", "url": "https://degen0x.com/learn/decentralized-gpu-compute-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/decentralized-gpu-compute-guide-2026" />
+<AuthoritySources url="/learn/decentralized-gpu-compute-guide-2026" />
 </div>
   );
 }

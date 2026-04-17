@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Crypto Options & On-Chain Derivatives 2026',
   description: "Master crypto options and on-chain derivatives in 2026. Learn about calls, puts, Greeks, AMM-based protocols like Aevo, Derive, Hegic, and Premia. Compare CeFi",
@@ -300,6 +304,14 @@ export default function CryptoOptionsDerivativesPage() {
 
   return (
     <main style={pageStyle}>
+      <ArticleSchema
+        headline="Crypto Options & On-Chain Derivatives 2026"
+        description="Master crypto options and on-chain derivatives in 2026. Learn about calls, puts, Greeks, AMM-based protocols like Aevo, Derive, Hegic, and Premia. Compare CeFi"
+        url="https://degen0x.com/learn/crypto-options-onchain-derivatives-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1052,6 +1064,7 @@ export default function CryptoOptionsDerivativesPage() {
           <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Options & On-Chain Derivatives 2026", "description": "Master crypto options and on-chain derivatives in 2026. Learn about calls, puts, Greeks, AMM-based protocols like Aevo, Derive, Hegic, and Premia. Compare CeFi", "url": "https://degen0x.com/learn/crypto-options-onchain-derivatives-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-options-onchain-derivatives-guide-2026" />
+<AuthoritySources url="/learn/crypto-options-onchain-derivatives-guide-2026" />
 </main>
   );
 }

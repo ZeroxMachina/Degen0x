@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "DePIN: Decentralized Infrastructure Guide 2026 | degen0x",
@@ -137,6 +141,14 @@ const breadcrumbData = {
 export default function DePINGuidePage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="DePIN: Decentralized Infrastructure Guide 2026 | degen0x"
+        description="Complete guide to DePIN (Decentralized Physical Infrastructure Networks) — $10-19B market, 250+ projects, Filecoin, Render, Helium, Hivemapper, and earning"
+        url="https://degen0x.com/learn/depin-decentralized-infrastructure-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
@@ -577,6 +589,7 @@ export default function DePINGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DePIN: Decentralized Infrastructure Guide 2026 | degen0x", "description": "Complete guide to DePIN (Decentralized Physical Infrastructure Networks) \u2014 $10-19B market, 250+ projects, Filecoin, Render, Helium, Hivemapper, and earning", "url": "https://degen0x.com/learn/depin-decentralized-infrastructure-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/depin-decentralized-infrastructure-guide-2026" />
+<AuthoritySources url="/learn/depin-decentralized-infrastructure-guide-2026" />
 </div>
   );
 }

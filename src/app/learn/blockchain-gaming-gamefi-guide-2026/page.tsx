@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Blockchain Gaming & GameFi Guide 2026: Play-to-Own, NFTs &",
   description: "Complete guide to blockchain gaming and GameFi in 2026. Learn how play-to-own models work, explore top games like Illuvium and Big Time, understand gaming",
@@ -299,6 +303,14 @@ export default function BlockchainGamingGameFiPage() {
 
   return (
     <main style={pageStyle}>
+      <ArticleSchema
+        headline="Blockchain Gaming & GameFi Guide 2026: Play-to-Own, NFTs &"
+        description="Complete guide to blockchain gaming and GameFi in 2026. Learn how play-to-own models work, explore top games like Illuvium and Big Time, understand gaming"
+        url="https://degen0x.com/learn/blockchain-gaming-gamefi-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -793,6 +805,7 @@ export default function BlockchainGamingGameFiPage() {
           <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blockchain Gaming & GameFi Guide 2026: Play-to-Own, NFTs &", "description": "Complete guide to blockchain gaming and GameFi in 2026. Learn how play-to-own models work, explore top games like Illuvium and Big Time, understand gaming", "url": "https://degen0x.com/learn/blockchain-gaming-gamefi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/blockchain-gaming-gamefi-guide-2026" />
+<AuthoritySources url="/learn/blockchain-gaming-gamefi-guide-2026" />
 </main>
   );
 }

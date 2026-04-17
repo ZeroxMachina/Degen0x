@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Morpho Protocol DeFi Lending Innovation Guide 2026',
   description: "Complete guide to Morpho Protocol - the 2nd largest DeFi lending platform with $6.9B+ TVL. Learn about Morpho Blue, MetaMorpho vaults, institutional adoption,",
@@ -158,6 +162,14 @@ export default function MorphoProtocolPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <ArticleSchema
+        headline="Morpho Protocol DeFi Lending Innovation Guide 2026"
+        description="Complete guide to Morpho Protocol - the 2nd largest DeFi lending platform with $6.9B+ TVL. Learn about Morpho Blue, MetaMorpho vaults, institutional adoption,"
+        url="https://degen0x.com/learn/morpho-protocol-defi-lending-innovation-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
       />
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -1066,6 +1078,7 @@ export default function MorphoProtocolPage() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/morpho-protocol-defi-lending-innovation-guide-2026" />
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Morpho Protocol DeFi Lending Innovation Guide 2026", "description": "Complete guide to Morpho Protocol - the 2nd largest DeFi lending platform with $6.9B+ TVL. Learn about Morpho Blue, MetaMorpho vaults, institutional adoption,", "url": "https://degen0x.com/learn/morpho-protocol-defi-lending-innovation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

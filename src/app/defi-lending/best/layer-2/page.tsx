@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Layer 2 DeFi Lending Protocols 2026 - Low-Cost Lending`,
   description: `Compare the best DeFi lending protocols on Layer 2 networks in ${CURRENT_YEAR}. Earn yield on Arbitrum, Optimism, Base, and other L2s at a fraction of Ethereum mainnet costs.`,
@@ -75,6 +81,19 @@ const breadcrumbData = {
 export default function Layer2Page() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="DeFi"
+        description="Aave V3 on Arbitrum offers the same battle-tested lending experience as Ethereum mainnet at dramatically lower gas costs. Arbitrum"
+        url="/defi-lending/best/layer-2"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/best/layer-2" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/best/layer-2" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin Runes Guide 2026 — How Fungible Tokens Work on BTC",
   description: "Learn how Bitcoin Runes work, how they differ from BRC-20 and Ordinals, top Runes tokens like DOG and RSIC, etching & minting mechanics, and the state of Runes",
@@ -73,6 +77,14 @@ const breadcrumbData = {
 export default function BitcoinRunesGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="Bitcoin Runes Guide 2026 — How Fungible Tokens Work on BTC"
+        description="Learn how Bitcoin Runes work, how they differ from BRC-20 and Ordinals, top Runes tokens like DOG and RSIC, etching & minting mechanics, and the state of Runes"
+        url="https://degen0x.com/learn/bitcoin-runes-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[{ label: "Learn", href: "/learn" }, { label: "Bitcoin Runes Guide 2026" }]} />
 
@@ -408,6 +420,7 @@ export default function BitcoinRunesGuidePage() {
         />
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-runes-guide-2026" />
+      <AuthoritySources url="/learn/bitcoin-runes-guide-2026" />
       </article>
   );
 }

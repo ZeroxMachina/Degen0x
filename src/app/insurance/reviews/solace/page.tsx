@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Solace Review 2026: Fees, Features, Pros & Cons`,
   description: "Solace is a decentralized insurance protocol offering portfolio-level coverage for DeFi positions, protecting users against smart contract exploits.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function SolaceReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Solace Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/insurance/reviews/solace"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Solace",
@@ -95,6 +111,18 @@ Solace's underwriting model pools risk across all covered protocols, enabling mo
         { title: "Risk Assessment in DeFi", href: "/insurance/learn/risk-assessment-defi" },
       ]}
     />
+      <ArticleSchema
+        headline="Solace Review 2026: Fees, Features, Pros & Cons"
+        description="Solace is a decentralized insurance protocol offering portfolio-level coverage for DeFi positions, protecting users against smart contract exploits."
+        url="https://degen0x.com/insurance/reviews/solace"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/insurance/reviews/solace" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Portfolio Coverage Model", "description": "Solace is a decentralized insurance protocol offering portfolio-level coverage for DeFi positions, protecting users against smart contract exploits.", "url": "https://degen0x.com/insurance/reviews/solace", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

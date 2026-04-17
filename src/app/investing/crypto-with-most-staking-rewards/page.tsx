@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto with Most Staking Rewards 2026: ATOM, DOT, SOL, ETH",
   description: "Highest staking yields in crypto: Cosmos (ATOM 15-20% APY), Polkadot (DOT 14-16%), Solana (6-8%), Ethereum (3.5-4.5%). Compare APY, minimum stake, lockup",
@@ -194,6 +200,19 @@ export default function CryptoMostStakingRewards() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto with Most Staking Rewards 2026: ATOM, DOT, SOL, ETH"
+        description="Highest staking yields in crypto: Cosmos (ATOM 15-20% APY), Polkadot (DOT 14-16%), Solana (6-8%), Ethereum (3.5-4.5%). Compare APY, minimum stake, lockup"
+        url="https://degen0x.com/investing/crypto-with-most-staking-rewards"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/crypto-with-most-staking-rewards" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/crypto-with-most-staking-rewards" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

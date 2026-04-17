@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Impermanent Loss Calculator | IL & LP Profit Tool',
   description: 'Calculate impermanent loss on liquidity pools. Understand IL formula, fee breakeven analysis, and strategies to minimize losses on DEX farming.',
@@ -77,6 +85,24 @@ const breadcrumbData = {
 export default function ImpermanentLossCalculatorPage() {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#0d1117', color: '#e6edf3' }}>
+      <ArticleSchema
+        headline="Impermanent Loss Calculator | IL & LP Profit Tool"
+        description="Calculate impermanent loss on liquidity pools. Understand IL formula, fee breakeven analysis, and strategies to minimize losses on DEX farming."
+        url="https://degen0x.com/tools/impermanent-loss-calculator"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/impermanent-loss-calculator" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/impermanent-loss-calculator" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/impermanent-loss-calculator"
+        name="Impermanent Loss Calculator"
+        description="Calculate impermanent loss on liquidity pools. Understand IL formula, fee breakeven analysis, and strategies to minimize losses on DEX farming."
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

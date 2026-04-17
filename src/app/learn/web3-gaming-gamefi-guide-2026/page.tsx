@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Web3 Gaming & GameFi Guide 2026 — Play-to-Earn, Top Games &",
   description: "Master Web3 gaming and GameFi in 2026. Explore play-to-earn mechanics, top games like Axie Infinity and Illuvium, gaming blockchains, and how to start earning",
@@ -895,6 +897,7 @@ export default function Web3GamingGuide() {
           </p>
         </div>
       </article>
+      <AuthoritySources url="/learn/web3-gaming-gamefi-guide-2026" />
       </div>
       <BackToTop />
     

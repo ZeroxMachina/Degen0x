@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Hold Card Review (2026): Features, Fees & Pros/Cons | degen0x`,
   description: "In-depth Hold Card review covering crypto spending features, cashback rewards, supported currencies, and whether this card suits everyday crypto users.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function HoldCardReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Hold Card Review (2026): Features, Fees & Pros/Cons"
+        url="https://degen0x.com/crypto-cards/reviews/hold-card"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Hold Card",
@@ -59,6 +75,18 @@ export default function HoldCardReviewPage() {
       relatedReviews={[{ name: "Coinbase Card", slug: "coinbase-card" }, { name: "BitPay Card", slug: "bitpay-card" }, { name: "Wirex Card", slug: "wirex-card" }]}
       relatedGuides={[{ title: "Prepaid vs Debit Crypto Cards", href: "/crypto-cards/learn/prepaid-vs-debit-crypto" }, { title: "Crypto Card Fees Compared", href: "/crypto-cards/learn/crypto-card-fees-compared" }]}
     />
+      <ArticleSchema
+        headline="Hold Card Review (2026): Features, Fees & Pros/Cons | degen0x"
+        description="In-depth Hold Card review covering crypto spending features, cashback rewards, supported currencies, and whether this card suits everyday crypto users."
+        url="https://degen0x.com/crypto-cards/reviews/hold-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/hold-card" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Spending Features", "description": "In-depth Hold Card review covering crypto spending features, cashback rewards, supported currencies, and whether this card suits everyday crypto users.", "url": "https://degen0x.com/crypto-cards/reviews/hold-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

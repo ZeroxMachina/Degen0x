@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `HashKey Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth HashKey Exchange review covering this licensed Hong Kong crypto exchange's fees, supported assets, security, and regulatory compliance.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function HashKeyReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="HashKey Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/exchanges/reviews/hashkey"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "HashKey Exchange",
@@ -56,7 +72,7 @@ HashKey Group, the parent company, is a digital asset financial services group b
 
 The exchange serves both retail and professional investors, offering spot trading for SFC-approved tokens including Bitcoin, Ethereum, and a growing list of vetted digital assets. HashKey's regulatory compliance means it operates with strict KYC/AML procedures, segregated client funds, and regular audits — providing a level of investor protection that unregulated offshore exchanges cannot match."
       sections={[
-        { id: "user-experience", title: "User Experience", content: "HashKey Exchange provides a clean, modern trading interface designed for both beginner and experienced traders. The platform offers a simple buy/sell mode for casual investors and an advanced trading view with order books, charting tools, and multiple order types for active traders. The interface is available in English, Traditional Chinese, and Simplified Chinese. KYC verification is required for all users, reflecting the platform's regulatory compliance requirements. The onboarding process is straightforward but thorough, consistent with the standards expected of a licensed financial institution." },
+        { id: "user-experience", title: "User Experience — Exchanges (exchanges / reviews / hashkey)", content: "HashKey Exchange provides a clean, modern trading interface designed for both beginner and experienced traders. The platform offers a simple buy/sell mode for casual investors and an advanced trading view with order books, charting tools, and multiple order types for active traders. The interface is available in English, Traditional Chinese, and Simplified Chinese. KYC verification is required for all users, reflecting the platform's regulatory compliance requirements. The onboarding process is straightforward but thorough, consistent with the standards expected of a licensed financial institution." },
         { id: "fees", title: "Fees & Pricing", content: "HashKey Exchange uses a maker-taker fee model with base fees of 0.12% for makers and 0.12% for takers. Volume-based tiers reduce fees for active traders. Fiat deposits through bank transfer are free, and crypto withdrawals incur standard network fees plus a small platform fee. The fee structure is competitive for a regulated exchange, though slightly higher than unregulated offshore platforms. The premium reflects the cost of operating under full regulatory compliance including audits, insurance, and investor protection mechanisms." },
         { id: "security", title: "Security", content: "As an SFC-licensed exchange, HashKey must meet stringent security and custody requirements. Client funds are segregated from company assets and held in trust. The platform uses institutional-grade cold storage, multi-party computation for key management, and comprehensive insurance coverage. Regular audits by independent firms verify asset custody and compliance. Two-factor authentication is mandatory, and the platform employs real-time transaction monitoring for suspicious activity. The regulatory framework provides an additional layer of accountability that is not present on offshore exchanges." },
         { id: "supported-assets", title: "Supported Assets", content: "HashKey Exchange only lists tokens that have received approval from the SFC, resulting in a more curated but smaller selection compared to global exchanges. Currently available assets include Bitcoin, Ethereum, and a growing list of tokens that meet the SFC's criteria for security, market capitalization, and regulatory compliance. While the selection is limited, each listed asset has undergone thorough due diligence. The exchange supports multiple trading pairs against HKD, USD, and USDT." },
@@ -82,6 +98,18 @@ The exchange serves both retail and professional investors, offering spot tradin
         { title: "KYC Verification Guide", href: "/exchanges/learn/kyc-verification-guide" },
       ]}
     />
+      <ArticleSchema
+        headline="HashKey Review 2026: Fees, Features, Pros & Cons"
+        description="In-depth HashKey Exchange review covering this licensed Hong Kong crypto exchange"
+        url="https://degen0x.com/exchanges/reviews/hashkey"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/hashkey" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth HashKey Exchange review covering this licensed Hong Kong crypto exchange's fees, supported assets, security, and regulatory compliance.", "url": "https://degen0x.com/exchanges/reviews/hashkey", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

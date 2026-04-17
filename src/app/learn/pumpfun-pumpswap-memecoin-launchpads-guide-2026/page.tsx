@@ -7,6 +7,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Pump.fun, PumpSwap & Memecoin Launchpads Guide 2026",
   description: "Complete guide to Pump.fun and PumpSwap: how bonding curves work, token graduation, DEX features, PUMP tokenomics, competitor analysis, and how to launch",
@@ -309,6 +313,14 @@ export default function PumpfunPumpswapLaunchpadsPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Pump.fun, PumpSwap & Memecoin Launchpads Guide 2026"
+        description="Complete guide to Pump.fun and PumpSwap: how bonding curves work, token graduation, DEX features, PUMP tokenomics, competitor analysis, and how to launch"
+        url="https://degen0x.com/learn/pumpfun-pumpswap-memecoin-launchpads-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -1100,6 +1112,7 @@ export default function PumpfunPumpswapLaunchpadsPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Pump.fun, PumpSwap & Memecoin Launchpads Guide 2026", "description": "Complete guide to Pump.fun and PumpSwap: how bonding curves work, token graduation, DEX features, PUMP tokenomics, competitor analysis, and how to launch", "url": "https://degen0x.com/learn/pumpfun-pumpswap-memecoin-launchpads-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/pumpfun-pumpswap-memecoin-launchpads-guide-2026" />
+<AuthoritySources url="/learn/pumpfun-pumpswap-memecoin-launchpads-guide-2026" />
 </main>
   );
 }

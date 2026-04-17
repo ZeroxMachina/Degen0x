@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import { Metadata } from "next";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata = {
   title: 'Airdrop Calendar & Tracker | degen0x - Never Miss Free Crypto',
   description:
@@ -28,6 +34,19 @@ const breadcrumbData = {
 export default function AirdropsPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Airdrop Calendar & Tracker | degen0x - Never Miss Free Crypto"
+        description="Track upcoming cryptocurrency airdrops with real-time countdowns, eligibility requirements, and strategy guides. Never miss free crypto again."
+        url="/airdrops"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/airdrops" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/airdrops" />
       <ClientContent />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Airdrop Calendar & Tracker | degen0x - Never Miss Free Crypto", "description": "Track upcoming cryptocurrency airdrops with real-time countdowns, eligibility requirements, and strategy guides. Never miss free crypto again.", "url": "https://degen0x.com/airdrops", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "DeFi Vaults Guide 2026 — Structured Products & Yield",
   description: "DeFi vaults automate yield strategies across lending, liquidity, and options. Explore Morpho, Yearn, Pendle, and Sommelier vaults with $12B+ TVL in 2026.",
@@ -822,6 +824,7 @@ export default function DeFiVaultsGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Vaults Guide 2026 \u2014 Structured Products & Yield", "description": "DeFi vaults automate yield strategies across lending, liquidity, and options. Explore Morpho, Yearn, Pendle, and Sommelier vaults with $12B+ TVL in 2026.", "url": "https://degen0x.com/learn/defi-vaults-structured-products-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/defi-vaults-structured-products-guide-2026" />
+<AuthoritySources url="/learn/defi-vaults-structured-products-guide-2026" />
 </div>
   );
 }

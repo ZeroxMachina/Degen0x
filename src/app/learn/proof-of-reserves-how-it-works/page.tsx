@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Proof of Reserves Explained: How It Works | degen0x',
   description: 'Learn Proof of Reserves using Merkle trees, Chainlink PoR, and third-party audits. Compare Binance, Kraken, Kraken with limitations and post-FTX adoption.',
@@ -192,6 +196,14 @@ export default function ProofOfReservesExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Proof of Reserves Explained: How It Works | degen0x"
+        description="Learn Proof of Reserves using Merkle trees, Chainlink PoR, and third-party audits. Compare Binance, Kraken, Kraken with limitations and post-FTX adoption."
+        url="https://degen0x.com/learn/proof-of-reserves-how-it-works"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -451,6 +463,7 @@ export default function ProofOfReservesExplained() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Proof of Reserves Explained: How It Works | degen0x", "description": "Learn Proof of Reserves using Merkle trees, Chainlink PoR, and third-party audits. Compare Binance, Kraken, Kraken with limitations and post-FTX adoption.", "url": "https://degen0x.com/learn/proof-of-reserves-how-it-works", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/proof-of-reserves-how-it-works" />
+      <AuthoritySources url="/learn/proof-of-reserves-how-it-works" />
       </article>
   );
 }

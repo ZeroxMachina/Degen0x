@@ -2,6 +2,12 @@ import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens",
   description:
@@ -181,6 +187,19 @@ const breadcrumbData = {
 export default function CommunityPage() {
   return (
     <div className="min-h-screen" style={{ background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="degen0x Community — Ask, Discuss, Learn with Fellow Degens"
+        description="Join the degen0x community. Ask questions, share alpha, follow expert discussions, and connect with thousands of crypto traders, investors, and builders."
+        url="/community"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/community" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/community" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

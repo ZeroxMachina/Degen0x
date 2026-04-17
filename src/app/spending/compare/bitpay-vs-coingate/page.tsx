@@ -4,6 +4,10 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import LearnPageLayout from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: `BitPay vs CoinGate (2026) | degen0x`,
   description: `BitPay vs CoinGate comparison for ${CURRENT_YEAR}. Compare fees, supported cryptocurrencies, merchant tools, and features of these leading crypto payment processors.`,
@@ -12,7 +16,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const toc = [
-  { id: "overview", title: "Comparison Overview", level: 2 },
+  { id: "overview", title: "BitPay vs CoinGate: Crypto Payment Processors Compared | degen0x", level: 2 },
   { id: "fees", title: "Fee Comparison", level: 2 },
   { id: "crypto-support", title: "Cryptocurrency Support", level: 2 },
   { id: "merchant-features", title: "Merchant Features", level: 2 },

@@ -13,6 +13,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Gemini vs Coinbase (2026): Security-Focused Comparison | degen0x`,
   description: `Gemini vs Coinbase security comparison for ${CURRENT_YEAR}. Compare custody, compliance, insurance, and institutional features for security-conscious investors.`,
@@ -41,6 +47,14 @@ const breadcrumbData = {
 export default function GeminiVsCoinbasePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Gemini vs Coinbase (2026): Security-Focused Comparison | degen0x"
+        description="Gemini vs Coinbase security comparison for ${CURRENT_YEAR}. Compare custody, compliance, insurance, and institutional features for security-conscious investors."
+        url="https://degen0x.com/exchanges/compare/gemini-vs-coinbase"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -206,6 +220,11 @@ export default function GeminiVsCoinbasePage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/gemini-vs-coinbase" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/compare/gemini-vs-coinbase" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/compare/gemini-vs-coinbase" />
     </div>
   );
 }

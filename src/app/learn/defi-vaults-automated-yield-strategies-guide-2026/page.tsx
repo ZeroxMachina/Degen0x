@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "DeFi Vaults Guide 2026 — Automated Yield, ERC-4626 &",
   description: "Master DeFi vaults and automated yield strategies in 2026. Learn ERC-4626 standard, compare Yearn vs Beefy vs Morpho, understand risk frameworks, and optimize",
@@ -300,6 +304,14 @@ export default function DeFiVaultsPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="DeFi Vaults Guide 2026 — Automated Yield, ERC-4626 &"
+        description="Master DeFi vaults and automated yield strategies in 2026. Learn ERC-4626 standard, compare Yearn vs Beefy vs Morpho, understand risk frameworks, and optimize"
+        url="https://degen0x.com/learn/defi-vaults-automated-yield-strategies-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
@@ -881,6 +893,7 @@ export default function DeFiVaultsPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Vaults Guide 2026 \u2014 Automated Yield, ERC-4626 &", "description": "Master DeFi vaults and automated yield strategies in 2026. Learn ERC-4626 standard, compare Yearn vs Beefy vs Morpho, understand risk frameworks, and optimize", "url": "https://degen0x.com/learn/defi-vaults-automated-yield-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/defi-vaults-automated-yield-strategies-guide-2026" />
+<AuthoritySources url="/learn/defi-vaults-automated-yield-strategies-guide-2026" />
 </main>
   );
 }

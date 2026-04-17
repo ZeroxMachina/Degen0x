@@ -5,6 +5,15 @@ import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = cryptoCards.find((c) => c.slug === "rain-card")!;
 
 export const metadata: Metadata = {
@@ -28,6 +37,13 @@ const breadcrumbData = {
 export default function RainCardReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Rain Card Review 2026: Bitcoin Rewards Credit Card,"
+        url="https://degen0x.com/crypto-cards/reviews/rain-card"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Cards"
@@ -150,6 +166,18 @@ The Rain Card fills a specific niche: it is the Bitcoin on-ramp for people who d
         { title: "Best Crypto Cards for Beginners", href: "/crypto-cards/best/beginners" },
       ]}
     />
+      <ArticleSchema
+        headline="Rain Card Review 2026: Bitcoin Rewards Credit Card,"
+        description="Our in-depth Rain Card review covers automatic Bitcoin cashback, credit-building benefits, no annual fee, mainstream-friendly design, and how it compares to"
+        url="https://degen0x.com/crypto-cards/reviews/rain-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/rain-card" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Rain Card Review 2026: Bitcoin Rewards Credit Card,", "description": "Our in-depth Rain Card review covers automatic Bitcoin cashback, credit-building benefits, no annual fee, mainstream-friendly design, and how it compares to", "url": "https://degen0x.com/crypto-cards/reviews/rain-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

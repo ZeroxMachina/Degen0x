@@ -5,6 +5,14 @@ import SentimentHeatmapClient from './SentimentHeatmapClient';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Crypto Sentiment Heatmap | degen0x',
   description: "Real-time market sentiment analysis across top 50 cryptocurrency tokens. Visualize fear and greed with an interactive heatmap, fear & greed gauge, and advanced",
@@ -39,6 +47,24 @@ const breadcrumbData = {
 export default function SentimentHeatmapPage() {
   return (
     <div style={{ background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="Crypto Sentiment Heatmap | degen0x"
+        description="Real-time market sentiment analysis across top 50 cryptocurrency tokens. Visualize fear and greed with an interactive heatmap, fear & greed gauge, and advanced"
+        url="/tools/sentiment-heatmap"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/sentiment-heatmap" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/sentiment-heatmap" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/sentiment-heatmap"
+        name="Crypto Sentiment Heatmap"
+        description="Real-time market sentiment analysis across top 50 cryptocurrency tokens. Visualize fear and greed with an interactive heatmap, fear & greed gauge, and advanced"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

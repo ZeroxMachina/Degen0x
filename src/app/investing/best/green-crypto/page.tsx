@@ -7,6 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Green & Sustainable Crypto (2026) | degen0x`,
   description: `Top environmentally sustainable cryptocurrencies in ${CURRENT_YEAR}. Energy-efficient blockchains and carbon-focused crypto projects.`,
@@ -42,6 +48,19 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Investing"
+        description="Since transitioning to proof-of-stake in September 2022, Ethereum reduced its energy consumption by over 99.95%. The most impactful green transition in crypto"
+        url="/investing/best/green-crypto"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/green-crypto" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/green-crypto" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

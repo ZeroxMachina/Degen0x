@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Bitcoin Cashback Cards 2026: Fold, Unchained, Strike",
   description: "Compare Bitcoin cashback cards: Fold Card (sats back), Unchained Card, Cash App Bitcoin, Strike Card. Earning sats passively, auto-DCA, tax treatment, spending",
@@ -182,6 +188,19 @@ export default function BestCardForBitcoinCashback() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Bitcoin Cashback Cards 2026: Fold, Unchained, Strike"
+        description="Compare Bitcoin cashback cards: Fold Card (sats back), Unchained Card, Cash App Bitcoin, Strike Card. Earning sats passively, auto-DCA, tax treatment, spending"
+        url="https://degen0x.com/crypto-cards/best-card-for-bitcoin-cashback"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/best-card-for-bitcoin-cashback" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/best-card-for-bitcoin-cashback" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

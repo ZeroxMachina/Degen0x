@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Wrapped Bitcoin Comparison 2026: wBTC vs cbBTC vs tBTC vs",
@@ -660,6 +662,7 @@ export default function WrappedBitcoinComparisonGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wrapped Bitcoin Comparison 2026: wBTC vs cbBTC vs tBTC vs", "description": "Compare wrapped Bitcoin tokens: wBTC, cbBTC, tBTC, LBTC, and sBTC. Trust models, market share, DeFi integrations, risks, and which to use in 2026.", "url": "https://degen0x.com/learn/wrapped-bitcoin-comparison-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/wrapped-bitcoin-comparison-guide-2026" />
+<AuthoritySources url="/learn/wrapped-bitcoin-comparison-guide-2026" />
 </div>
   );
 }

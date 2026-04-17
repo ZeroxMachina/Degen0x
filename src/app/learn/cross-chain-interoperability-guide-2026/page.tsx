@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Cross-chain Interoperability Guide 2026: LayerZero,",
@@ -896,6 +898,7 @@ export default function CrossChainInteroperabilityGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cross-chain Interoperability Guide 2026: LayerZero,", "description": "Complete guide to cross-chain messaging and interoperability in 2026. Understand LayerZero, Wormhole, Chainlink CCIP, Axelar, and Hyperlane. Compare", "url": "https://degen0x.com/learn/cross-chain-interoperability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="bridging-flow" />
       <RelatedContent category="learn" currentSlug="/learn/cross-chain-interoperability-guide-2026" />
+<AuthoritySources url="/learn/cross-chain-interoperability-guide-2026" />
 </div>
   );
 }

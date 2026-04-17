@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "x402 Protocol & AI Agent Payments Guide 2026: How Agents",
   description: "How AI agents pay for services using the x402 protocol, USDC, and Coinbase Agentic Wallets. Complete 2026 guide to autonomous payments, ERC-8004 identity, and",
@@ -436,6 +438,7 @@ export default function AIAgentPaymentsGuide() {
 
           <a href="/learn/what-is-restaking-eigenlayer" style={{ color: "#fb923c", marginRight: "1rem" }}>What Is Restaking Eigenlayer</a>
         </nav>
+      <AuthoritySources url="/learn/ai-agent-payments-x402-guide" />
       </article>
     
         <script

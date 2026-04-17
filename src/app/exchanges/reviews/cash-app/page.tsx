@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Cash App Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Cash App Bitcoin review covering fees, Lightning Network support, security, and whether Cash App is the right way to buy Bitcoin.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function CashAppReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Cash App Crypto Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/exchanges/reviews/cash-app"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Cash App",
@@ -56,7 +72,7 @@ Cash App takes a Bitcoin-maximalist approach — it only supports Bitcoin and ha
 
 Block Inc. is a publicly traded company on the NYSE, and Cash App operates as a licensed money services business across the US. The company is known for its Bitcoin advocacy, allocating corporate treasury to Bitcoin and developing open-source Bitcoin mining hardware."
       sections={[
-        { id: "user-experience", title: "User Experience", content: "Cash App's Bitcoin buying experience is embedded within its broader payment app interface. Tapping the Bitcoin tab on the home screen brings you to a simple interface showing the current Bitcoin price, your holdings, and buy/sell buttons. Purchasing Bitcoin takes about three taps and a confirmation. The app also includes an educational section called Bitcoin Basics that explains core concepts in simple terms. There are no order books, no candlestick charts, and no advanced trading features whatsoever. Cash App also supports Lightning Network payments, allowing you to send Bitcoin instantly to Lightning-compatible wallets and merchants. The Boost feature lets you earn Bitcoin rewards on purchases at select merchants. For anyone who just wants to stack sats without any complexity, Cash App nails the experience." },
+        { id: "user-experience", title: "User Experience — Exchanges (exchanges / reviews / cash-app)", content: "Cash App's Bitcoin buying experience is embedded within its broader payment app interface. Tapping the Bitcoin tab on the home screen brings you to a simple interface showing the current Bitcoin price, your holdings, and buy/sell buttons. Purchasing Bitcoin takes about three taps and a confirmation. The app also includes an educational section called Bitcoin Basics that explains core concepts in simple terms. There are no order books, no candlestick charts, and no advanced trading features whatsoever. Cash App also supports Lightning Network payments, allowing you to send Bitcoin instantly to Lightning-compatible wallets and merchants. The Boost feature lets you earn Bitcoin rewards on purchases at select merchants. For anyone who just wants to stack sats without any complexity, Cash App nails the experience." },
         { id: "fees", title: "Fees & Pricing", content: "Cash App does not publish a fixed fee schedule for Bitcoin purchases. Instead, it charges a service fee plus a spread on each transaction. The total cost typically works out to approximately 1.5% to 2.5% depending on the transaction size and market conditions. This is more expensive than dedicated exchanges but comparable to other consumer-focused platforms like PayPal and Venmo. Bitcoin withdrawals to external wallets are free except for the standard Bitcoin network fee. Lightning Network payments incur minimal fees. For dollar-cost averaging with small regular purchases, the fee percentage can be higher on smaller transactions." },
         { id: "security", title: "Security", content: "Cash App employs industry-standard security measures including encryption, fraud detection, and optional two-factor authentication via SMS or authenticator app. Bitcoin holdings are custodied by Cash App with a combination of hot and cold storage. Cash App's parent company, Block Inc., is publicly traded and subject to SEC reporting requirements and regular audits. The platform is regulated as a money transmitter in the US. One notable security concern is that Cash App has been a target for social engineering scams, where fraudsters impersonate support agents. Users should be aware that Cash App will never ask for login credentials or payment details via phone or social media." },
         { id: "supported-assets", title: "Supported Assets", content: "Cash App exclusively supports Bitcoin. There are no altcoins, no Ethereum, no stablecoins, and no tokens of any kind. This is a deliberate philosophical choice by Block Inc. and CEO Jack Dorsey, who believe Bitcoin is the most important cryptocurrency. For users who share this Bitcoin-first philosophy, the singular focus is a feature, not a limitation. For anyone who wants to invest in the broader crypto ecosystem, Cash App cannot serve as a primary platform. You would need a separate exchange account for any non-Bitcoin crypto assets." },
@@ -82,6 +98,18 @@ Block Inc. is a publicly traded company on the NYSE, and Cash App operates as a 
         { title: "Exchange vs Wallet", href: "/exchanges/learn/exchange-vs-wallet" },
       ]}
     />
+      <ArticleSchema
+        headline="Cash App Crypto Review 2026: Fees, Features, Pros & Cons"
+        description="In-depth Cash App Bitcoin review covering fees, Lightning Network support, security, and whether Cash App is the right way to buy Bitcoin."
+        url="https://degen0x.com/exchanges/reviews/cash-app"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/cash-app" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Cash App Bitcoin review covering fees, Lightning Network support, security, and whether Cash App is the right way to buy Bitcoin.", "url": "https://degen0x.com/exchanges/reviews/cash-app", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

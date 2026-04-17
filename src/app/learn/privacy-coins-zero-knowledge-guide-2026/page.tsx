@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Privacy Coins & Zero-Knowledge Proofs 2026: Monero, Zcash &",
@@ -121,6 +125,14 @@ const breadcrumbData = {
 export default function PrivacyCoinsZKGuidePage() {
   return (
     <div style={{ minHeight: '100vh', background: '#0d1117', color: '#e6edf3' }}>
+      <ArticleSchema
+        headline="Privacy Coins & Zero-Knowledge Proofs 2026: Monero, Zcash &"
+        description="Complete privacy coins guide 2026. Learn Monero, Zcash, zero-knowledge proofs, zk-SNARKs vs zk-STARKs, privacy pools, and compliant privacy in DeFi."
+        url="https://degen0x.com/learn/privacy-coins-zero-knowledge-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -565,6 +577,7 @@ export default function PrivacyCoinsZKGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Privacy Coins & Zero-Knowledge Proofs 2026: Monero, Zcash &", "description": "Complete privacy coins guide 2026. Learn Monero, Zcash, zero-knowledge proofs, zk-SNARKs vs zk-STARKs, privacy pools, and compliant privacy in DeFi.", "url": "https://degen0x.com/learn/privacy-coins-zero-knowledge-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/privacy-coins-zero-knowledge-guide-2026" />
+<AuthoritySources url="/learn/privacy-coins-zero-knowledge-guide-2026" />
 </div>
   );
 }

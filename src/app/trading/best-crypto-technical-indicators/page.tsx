@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Crypto Technical Indicators 2026: RSI, MACD, Bollinger",
   description: "Master crypto technical analysis. Learn RSI, MACD, Bollinger Bands, OBV, Fibonacci retracement & Volume Profile. Compare indicators, TradingView setup & proven",
@@ -195,6 +201,19 @@ export default function BestCryptoTechnicalIndicators() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Crypto Technical Indicators 2026: RSI, MACD, Bollinger"
+        description="Master crypto technical analysis. Learn RSI, MACD, Bollinger Bands, OBV, Fibonacci retracement & Volume Profile. Compare indicators, TradingView setup & proven"
+        url="https://degen0x.com/trading/best-crypto-technical-indicators"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Trading"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/trading/best-crypto-technical-indicators" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/trading/best-crypto-technical-indicators" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

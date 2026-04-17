@@ -4,6 +4,10 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: `Multi-Sig Wallets Explained (2026) - How They Work | degen0x`,
   description: `Learn how multi-signature wallets work in ${CURRENT_YEAR}. Covers multi-sig setup, use cases for DAOs and teams, Safe (Gnosis Safe), and security benefits.`,

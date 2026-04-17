@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto 60/40 Portfolio Strategy 2026: BTC/ETH Allocation &",
   description: "Crypto 60/40 portfolio: 60% BTC (stability) + 40% ETH (growth) + alts (0-40%). Rebalancing framework, risk management, tax-efficient strategies. Real",
@@ -134,6 +140,19 @@ export default function Crypto6040Portfolio() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto 60/40 Portfolio Strategy 2026: BTC/ETH Allocation &"
+        description="Crypto 60/40 portfolio: 60% BTC (stability) + 40% ETH (growth) + alts (0-40%). Rebalancing framework, risk management, tax-efficient strategies. Real"
+        url="https://degen0x.com/investing/crypto-60-40-portfolio-strategy"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/crypto-60-40-portfolio-strategy" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/crypto-60-40-portfolio-strategy" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

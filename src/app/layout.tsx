@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
-export const dynamic = 'force-dynamic';
+// ISR by default — 1h revalidate at the root. Pages that need live data
+// override this with `export const dynamic = 'force-dynamic'` or a shorter
+// `revalidate` (e.g. /news = 60s, /status = force-dynamic).
+export const revalidate = 3600;
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";

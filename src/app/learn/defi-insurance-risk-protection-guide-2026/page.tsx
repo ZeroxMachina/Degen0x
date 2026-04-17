@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'DeFi Insurance & Risk Protection Guide 2026 | degen0x',
   description: "Master DeFi insurance in 2026: Nexus Mutual, InsurAce, Neptune Mutual, Unslashed. Learn coverage types, risk management, claims processes, and protocol",
@@ -303,6 +307,14 @@ export default function DeFiInsurancePage() {
 
   return (
     <main style={pageStyle}>
+      <ArticleSchema
+        headline="DeFi Insurance & Risk Protection Guide 2026 | degen0x"
+        description="Master DeFi insurance in 2026: Nexus Mutual, InsurAce, Neptune Mutual, Unslashed. Learn coverage types, risk management, claims processes, and protocol"
+        url="https://degen0x.com/learn/defi-insurance-risk-protection-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -913,6 +925,7 @@ export default function DeFiInsurancePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Insurance & Risk Protection Guide 2026 | degen0x", "description": "Master DeFi insurance in 2026: Nexus Mutual, InsurAce, Neptune Mutual, Unslashed. Learn coverage types, risk management, claims processes, and protocol", "url": "https://degen0x.com/learn/defi-insurance-risk-protection-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/defi-insurance-risk-protection-guide-2026" />
+<AuthoritySources url="/learn/defi-insurance-risk-protection-guide-2026" />
 </main>
   );
 }

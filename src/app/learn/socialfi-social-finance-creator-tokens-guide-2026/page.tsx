@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 const pageStyles = {
   container: {
     maxWidth: '900px',
@@ -254,6 +258,14 @@ const breadcrumbData = {
 export default function SocialFiGuidePage() {
   return (
     <main style={pageStyles.container}>
+      <ArticleSchema
+        headline="SocialFi: Social Finance & Creator Tokens Guide 2026"
+        description="Complete guide to SocialFi, creator tokens, decentralized social platforms, and onchain reputation. Learn about Farcaster, Lens, and emerging social finance"
+        url="https://degen0x.com/learn/socialfi-social-finance-creator-tokens-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Structured Data */}
       <script
@@ -962,6 +974,7 @@ export default function SocialFiGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SocialFi: Social Finance & Creator Tokens Guide 2026", "description": "Complete guide to SocialFi, creator tokens, decentralized social platforms, and onchain reputation. Learn about Farcaster, Lens, and emerging social finance", "url": "https://degen0x.com/learn/socialfi-social-finance-creator-tokens-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/socialfi-social-finance-creator-tokens-guide-2026" />
+<AuthoritySources url="/learn/socialfi-social-finance-creator-tokens-guide-2026" />
 </main>
   );
 }

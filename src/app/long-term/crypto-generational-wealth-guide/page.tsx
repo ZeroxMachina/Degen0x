@@ -3,6 +3,12 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty",
   description: 'Build multi-generational crypto wealth: BTC accumulation ($0.01→$100K history), trust structures, family office setup, estate planning, tax-efficient transfer.',
@@ -151,6 +157,19 @@ export default function GenerationalWealthGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Generational Wealth Guide 2026 | Bitcoin Dynasty"
+        description="Build multi-generational crypto wealth: BTC accumulation ($0.01→$100K history), trust structures, family office setup, estate planning, tax-efficient transfer."
+        url="https://degen0x.com/long-term/crypto-generational-wealth-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Long Term"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/long-term/crypto-generational-wealth-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/long-term/crypto-generational-wealth-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

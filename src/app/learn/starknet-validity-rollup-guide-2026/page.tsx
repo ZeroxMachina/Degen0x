@@ -13,6 +13,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Starknet Guide 2026: Validity Rollup, STRK Staking & BTCFi",
   description: "What is Starknet? The leading ZK validity rollup on Ethereum with $542M TVL, decentralized sequencing, STRK staking, privacy features, and Bitcoin DeFi",
@@ -441,6 +443,7 @@ export default function StarknetValidityRollupGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Starknet Guide 2026: Validity Rollup, STRK Staking & BTCFi", "description": "What is Starknet? The leading ZK validity rollup on Ethereum with $542M TVL, decentralized sequencing, STRK staking, privacy features, and Bitcoin DeFi", "url": "https://degen0x.com/learn/starknet-validity-rollup-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/starknet-validity-rollup-guide-2026" />
+<AuthoritySources url="/learn/starknet-validity-rollup-guide-2026" />
 </div>
   );
 }

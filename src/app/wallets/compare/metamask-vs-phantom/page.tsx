@@ -14,6 +14,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `MetaMask vs Phantom (2026) - Which Wallet Is Better? | degen0x`,
   description: `MetaMask vs Phantom side-by-side comparison for ${CURRENT_YEAR}. Chain support, DeFi features, NFTs, fees, and user experience compared.`,
@@ -53,6 +57,14 @@ export default function MetaMaskVsPhantomPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="MetaMask vs Phantom (2026) - Which Wallet Is Better? | degen0x"
+        description="MetaMask vs Phantom side-by-side comparison for ${CURRENT_YEAR}. Chain support, DeFi features, NFTs, fees, and user experience compared."
+        url="https://degen0x.com/wallets/compare/metamask-vs-phantom"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -212,7 +224,11 @@ export default function MetaMaskVsPhantomPage() {
         description="A head-to-head look at Metamask and Phantom: product, fees, risk, and who each one is built for."
         items={["Metamask", "Phantom"]}
       />
-      <AuthoritySources url="/wallets/compare/metamask-vs-phantom" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/compare/metamask-vs-phantom" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/compare/metamask-vs-phantom" />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/metamask-vs-phantom" />
     </div>

@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Tokenized Real Estate Guide 2026 — Invest in Property with",
   description: "Complete guide to tokenized real estate in 2026. Learn about fractional property ownership, blockchain-based real estate platforms, and how to invest in",
@@ -659,6 +661,7 @@ export default function TokenizedRealEstateGuide() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/tokenized-real-estate-guide-2026" />
+      <AuthoritySources url="/learn/tokenized-real-estate-guide-2026" />
       </article>
   );
 }

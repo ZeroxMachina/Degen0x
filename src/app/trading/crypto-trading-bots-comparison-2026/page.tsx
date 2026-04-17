@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Trading Bots Comparison 2026: 3Commas, Pionex,",
   description: "Compare top crypto trading bots 2026. See 3Commas vs Pionex vs Cryptohopper vs Bitsgap vs HaasOnline. Pricing, strategies (DCA, grid, arbitrage), backtesting,",
@@ -87,6 +93,19 @@ export default function CryptoTradingBotsComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Trading Bots Comparison 2026: 3Commas, Pionex,"
+        description="Compare top crypto trading bots 2026. See 3Commas vs Pionex vs Cryptohopper vs Bitsgap vs HaasOnline. Pricing, strategies (DCA, grid, arbitrage), backtesting,"
+        url="https://degen0x.com/trading/crypto-trading-bots-comparison-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Trading"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/trading/crypto-trading-bots-comparison-2026" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/trading/crypto-trading-bots-comparison-2026" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

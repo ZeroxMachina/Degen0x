@@ -5,6 +5,15 @@ import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = stakingPlatforms.find((p) => p.slug === "eigenlayer")!;
 
 export const metadata: Metadata = {
@@ -30,6 +39,13 @@ const breadcrumbData = {
 export default function EigenLayerReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="EigenLayer Review 2026: Restaking, Yields, Pros & Cons"
+        url="https://degen0x.com/investing/staking/reviews/eigenlayer"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Staking"
@@ -130,6 +146,18 @@ EigenLayer has spawned an entire ecosystem of Liquid Restaking Token (LRT) proto
         { title: "Staking Risks", href: "/investing/staking/learn/staking-risks" },
       ]}
     />
+      <ArticleSchema
+        headline="EigenLayer Review 2026: Restaking, Yields, Pros & Cons"
+        description="Our in-depth EigenLayer review covers restaking mechanics, AVS rewards, risks, and whether it"
+        url="https://degen0x.com/investing/staking/reviews/eigenlayer"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/staking/reviews/eigenlayer" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "EigenLayer Review 2026: Restaking, Yields, Pros & Cons", "description": "Our in-depth EigenLayer review covers restaking mechanics, AVS rewards, risks, and whether it's the right protocol for boosting your staking yields. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/eigenlayer", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

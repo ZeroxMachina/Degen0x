@@ -10,6 +10,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Free vs Paid Crypto Tax Software (2026): Is Free Good Enough?`,
   description: `Compare free and paid crypto tax software options. Understand the limitations of free tools and when it is worth paying for premium crypto tax reporting in ${CURRENT_YEAR}.`,
@@ -44,6 +50,14 @@ const breadcrumbData = {
 export default function FreeVsPaidCryptoTaxPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Free vs Paid Crypto Tax Software (2026): Is Free Good Enough?"
+        description="Compare free and paid crypto tax software options. Understand the limitations of free tools and when it is worth paying for premium crypto tax reporting in ${CURRENT_YEAR}."
+        url="https://degen0x.com/taxes/compare/free-vs-paid-crypto-tax"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -145,6 +159,11 @@ export default function FreeVsPaidCryptoTaxPage() {
         items={["Free", "Paid Crypto Tax"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/compare/free-vs-paid-crypto-tax" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/compare/free-vs-paid-crypto-tax" />
     </div>
   );
 }

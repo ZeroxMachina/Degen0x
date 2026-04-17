@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "When to Take Profits in Crypto: Strategies & Tax-Efficient",
   description: "Master crypto profit-taking with DCA-out, percentage-based scaling, trailing stops, and cycle analysis. Learn tax-lot optimization, 2x/3x/10x exit rules, and",
@@ -194,6 +200,19 @@ export default function WhenToTakeProfitsCrypto() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="When to Take Profits in Crypto: Strategies & Tax-Efficient"
+        description="Master crypto profit-taking with DCA-out, percentage-based scaling, trailing stops, and cycle analysis. Learn tax-lot optimization, 2x/3x/10x exit rules, and"
+        url="https://degen0x.com/investing/when-to-take-profits-crypto"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/when-to-take-profits-crypto" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/when-to-take-profits-crypto" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

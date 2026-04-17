@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Initia (INIT) Guide 2026: Modular Blockchain With",
@@ -602,6 +604,7 @@ export default function InitiaBlockchainGuide() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Initia (INIT) Guide 2026: Modular Blockchain With", "description": "Initia explained: how the Interwoven Stack, Minitias (L2 rollups), and Omnitia architecture unify modular blockchains. INIT tokenomics, ecosystem, and 2026", "url": "https://degen0x.com/learn/initia-blockchain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/initia-blockchain-guide-2026" />
+<AuthoritySources url="/learn/initia-blockchain-guide-2026" />
 </div>
   );
 }

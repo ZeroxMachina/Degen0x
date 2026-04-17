@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Crypto OTC Trading & Dark Pools Guide 2026 | degen0x',
   description: "Complete guide to crypto OTC trading, dark pools, and block trades. Learn how OTC desks work, top platforms like Wintermute, Cumberland, and FalconX,",
@@ -288,6 +292,14 @@ export default function CryptoOTCTradingDarkPoolsPage() {
 
   return (
     <main id="top" aria-label="Guide: Crypto OTC Trading & Dark Pools" style={pageStyle}>
+      <ArticleSchema
+        headline="Crypto OTC Trading & Dark Pools Guide 2026 | degen0x"
+        description="Complete guide to crypto OTC trading, dark pools, and block trades. Learn how OTC desks work, top platforms like Wintermute, Cumberland, and FalconX,"
+        url="https://degen0x.com/learn/crypto-otc-trading-dark-pools-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style dangerouslySetInnerHTML={{ __html: `
         .degen-link:hover { color: #6366f1 !important; text-decoration: underline !important; }
@@ -959,6 +971,7 @@ export default function CryptoOTCTradingDarkPoolsPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto OTC Trading & Dark Pools Guide 2026 | degen0x", "description": "Complete guide to crypto OTC trading, dark pools, and block trades. Learn how OTC desks work, top platforms like Wintermute, Cumberland, and FalconX,", "url": "https://degen0x.com/learn/crypto-otc-trading-dark-pools-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-otc-trading-dark-pools-guide-2026" />
+<AuthoritySources url="/learn/crypto-otc-trading-dark-pools-guide-2026" />
 </main>
   );
 }

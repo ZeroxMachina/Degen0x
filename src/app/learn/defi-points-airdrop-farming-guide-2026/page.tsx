@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "DeFi Points & Airdrop Farming Guide 2026: How Points Work,",
   description: "Master DeFi points farming in 2026. Learn how protocol points work, the best airdrop farming strategies, anti-Sybil detection, SEC guidance on airdrops, and",
@@ -71,6 +75,14 @@ export default function DefiPointsAirdropFarmingGuide() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <ArticleSchema
+        headline="DeFi Points & Airdrop Farming Guide 2026: How Points Work,"
+        description="Master DeFi points farming in 2026. Learn how protocol points work, the best airdrop farming strategies, anti-Sybil detection, SEC guidance on airdrops, and"
+        url="https://degen0x.com/learn/defi-points-airdrop-farming-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style>{`
         .related-article-card {
@@ -659,6 +671,7 @@ export default function DefiPointsAirdropFarmingGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Points & Airdrop Farming Guide 2026: How Points Work,", "description": "Master DeFi points farming in 2026. Learn how protocol points work, the best airdrop farming strategies, anti-Sybil detection, SEC guidance on airdrops, and", "url": "https://degen0x.com/learn/defi-points-airdrop-farming-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/defi-points-airdrop-farming-guide-2026" />
+<AuthoritySources url="/learn/defi-points-airdrop-farming-guide-2026" />
 </div>
   );
 }

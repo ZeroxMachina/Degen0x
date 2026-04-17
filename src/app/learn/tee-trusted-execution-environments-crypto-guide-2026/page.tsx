@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "TEEs in Crypto: Trusted Execution Environments Guide 2026",
@@ -167,6 +171,14 @@ export default function TEECryptoGuide() {
 
   return (
     <article id="top" aria-label="Guide: TEEs in Crypto" style={{ ...pageStyle }}>
+      <ArticleSchema
+        headline="TEEs in Crypto: Trusted Execution Environments Guide 2026"
+        description="Complete guide to Trusted Execution Environments (TEEs) in crypto. Learn confidential computing, Phala Network, Oasis, Secret Network, Marlin, verifiable AI,"
+        url="https://degen0x.com/learn/tee-trusted-execution-environments-crypto-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -726,6 +738,7 @@ export default function TEECryptoGuide() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/tee-trusted-execution-environments-crypto-guide-2026" />
+      <AuthoritySources url="/learn/tee-trusted-execution-environments-crypto-guide-2026" />
       </article>
   );
 }

@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Payment Processors of 2026 - Accept Crypto Payments | degen0x`,
   description: `Compare the best crypto payment processors in ${CURRENT_YEAR}. Accept Bitcoin, Ethereum, and stablecoins for your business with e-commerce plugins, invoicing, and instant fiat settlement.`,
@@ -116,6 +122,19 @@ const breadcrumbData = {
 export default function PaymentProcessingPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="E-Commerce Stores"
+        description="One of the oldest and most established crypto payment processors, serving businesses since 2011. Supports Bitcoin, Ethereum, and major stablecoins with"
+        url="/web3-business/best/payment-processing"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/best/payment-processing" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/best/payment-processing" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

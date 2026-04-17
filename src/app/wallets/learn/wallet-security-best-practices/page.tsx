@@ -4,6 +4,10 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: `Wallet Security Best Practices (2026) - Protect Your Crypto | degen0x`,
   description: `Essential crypto wallet security best practices for ${CURRENT_YEAR}. Seed phrase protection, phishing defense, approval management, and hardware wallet recommendations.`,

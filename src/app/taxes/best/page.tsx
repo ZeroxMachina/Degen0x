@@ -5,6 +5,11 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Tax Solutions (2026) | degen0x`,
   description: `Explore the best crypto tax solutions for ${CURRENT_YEAR}. From tax software and free tools to crypto CPAs and DeFi-specific tax solutions.`,
@@ -48,6 +53,14 @@ const breadcrumbData = {
 export default function BestTaxSolutionsPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Taxes"
+        description="Full-featured tax software for calculating, tracking, and filing your crypto taxes. Supports hundreds of exchanges, DeFi protocols, and NFT platforms."
+        url="/taxes/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -149,7 +162,11 @@ export default function BestTaxSolutionsPage() {
         
           <a href="/taxes/crypto-tax-software-comparison-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Tax Software Comparison 2026</a>
         </nav>
-      <AuthoritySources url="/taxes/best" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/best" />
     </main>
   );
 }

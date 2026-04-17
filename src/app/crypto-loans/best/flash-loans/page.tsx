@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = { title: `Best Flash Loan Platforms 2026 - Zero-Collateral DeFi Loans`, description: `Compare flash loan platforms in ${CURRENT_YEAR}. Borrow any amount without collateral in a single transaction for arbitrage, liquidations, and more.` ,
   alternates: { canonical: "/crypto-loans/best/flash-loans" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -39,6 +45,19 @@ const breadcrumbData = {
 export default function FlashLoansPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Crypto Loans"
+        description="Aave pioneered flash loans and remains the dominant provider. Borrow any amount of available liquidity with zero collateral, provided the loan is repaid within"
+        url="/crypto-loans/best/flash-loans"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/best/flash-loans" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/best/flash-loans" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

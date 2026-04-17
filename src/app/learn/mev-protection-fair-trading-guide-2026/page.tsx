@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "MEV Protection Guide 2026: Flashbots, MEV-Share & Fair",
@@ -199,6 +203,14 @@ export default function MEVProtectionGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="MEV Protection Guide 2026: Flashbots, MEV-Share & Fair"
+        description="Complete guide to MEV (Maximal Extractable Value) protection in 2026. Learn sandwich attack risks, how Flashbots Protect saves $809M+ in losses, MEV-Share"
+        url="https://degen0x.com/learn/mev-protection-fair-trading-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -669,6 +681,7 @@ export default function MEVProtectionGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MEV Protection Guide 2026: Flashbots, MEV-Share & Fair", "description": "Complete guide to MEV (Maximal Extractable Value) protection in 2026. Learn sandwich attack risks, how Flashbots Protect saves $809M+ in losses, MEV-Share", "url": "https://degen0x.com/learn/mev-protection-fair-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/mev-protection-fair-trading-guide-2026" />
+      <AuthoritySources url="/learn/mev-protection-fair-trading-guide-2026" />
       </article>
   );
 }

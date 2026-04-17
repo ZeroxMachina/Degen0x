@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Kinza Finance Review 2026: BNB Chain Lending Protocol`,
   description: "Comprehensive Kinza Finance review covering Aave V3-based lending on BNB Chain, yield rates, KZA token rewards, and protocol risk analysis.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function KinzaReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Kinza Finance Review 2026: BNB Chain Lending Protocol"
+        url="https://degen0x.com/defi-lending/reviews/kinza"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "Kinza Finance", slug: "kinza", rating: 3.8, description: "Kinza Finance is an Aave V3-based lending protocol on BNB Chain offering competitive yields, KZA token incentives, and features like eMode for correlated asset pairs in the BNB Chain ecosystem.", pros: ["Built on proven Aave V3 architecture with modern features", "Competitive yields on BNB Chain assets", "KZA token rewards boost effective APY", "Efficiency mode for correlated asset pairs", "Growing TVL in BNB Chain DeFi ecosystem"], cons: ["BNB Chain has lower DeFi composability than Ethereum", "Competing against Venus, the established BNB Chain lending protocol", "KZA token value and sustainability is uncertain", "Less battle-tested than Venus on BNB Chain", "Team background and transparency could be improved"], bestFor: "BNB Chain users seeking modern Aave V3 lending features with token incentives", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function KinzaReview() {
       relatedReviews={[{ name: "Alpaca Finance", slug: "alpaca-finance" }, { name: "Mendi", slug: "mendi" }, { name: "Lendle", slug: "lendle" }]}
       relatedGuides={[{ title: "DeFi on BNB Chain", href: "/defi-lending/learn/defi-on-bnb-chain" }, { title: "Yield Optimizer Guide", href: "/defi-lending/learn/yield-optimizer-guide" }]}
     />
+      <ArticleSchema
+        headline="Kinza Finance Review 2026: BNB Chain Lending Protocol"
+        description="Comprehensive Kinza Finance review covering Aave V3-based lending on BNB Chain, yield rates, KZA token rewards, and protocol risk analysis."
+        url="https://degen0x.com/defi-lending/reviews/kinza"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/kinza" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave V3 Features on BNB Chain", "description": "Comprehensive Kinza Finance review covering Aave V3-based lending on BNB Chain, yield rates, KZA token rewards, and protocol risk analysis.", "url": "https://degen0x.com/defi-lending/reviews/kinza", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

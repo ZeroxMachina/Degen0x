@@ -5,6 +5,16 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Mev Protection Guide | degen0x",
+  description: "Comprehensive degen0x guide to mev protection guide — 2026 fundamentals, step-by-step walkthroughs, and risk-aware strategies.",
+  alternates: { canonical: "https://degen0x.com/learn/mev-protection-guide" },
+};
+
 export default function MEVProtectionPage() {
   return (
     <article className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">

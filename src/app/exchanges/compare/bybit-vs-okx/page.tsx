@@ -13,6 +13,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Bybit vs OKX (2026): Derivatives Exchange Comparison | degen0x`,
   description: `Bybit vs OKX comparison for ${CURRENT_YEAR}. Compare futures fees, leverage, copy trading, Web3 wallets, and features for derivatives traders.`,
@@ -41,6 +47,14 @@ const breadcrumbData = {
 export default function BybitVsOkxPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Bybit vs OKX (2026): Derivatives Exchange Comparison | degen0x"
+        description="Bybit vs OKX comparison for ${CURRENT_YEAR}. Compare futures fees, leverage, copy trading, Web3 wallets, and features for derivatives traders."
+        url="https://degen0x.com/exchanges/compare/bybit-vs-okx"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -200,6 +214,11 @@ export default function BybitVsOkxPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/bybit-vs-okx" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/compare/bybit-vs-okx" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/compare/bybit-vs-okx" />
     </div>
   );
 }

@@ -9,6 +9,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Smart Wallets Guide 2026: Account Abstraction, Passkeys &",
@@ -694,6 +696,7 @@ export default function SmartWalletsGuide2026Page() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Wallets Guide 2026: Account Abstraction, Passkeys &", "description": "Learn how smart wallets work in 2026. Understand account abstraction (ERC-4337), passkey authentication, gas sponsorship, session keys, and how wallets like", "url": "https://degen0x.com/learn/smart-wallets-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/smart-wallets-guide-2026" />
+<AuthoritySources url="/learn/smart-wallets-guide-2026" />
 </div>
   );
 }

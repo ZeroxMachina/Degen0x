@@ -6,6 +6,15 @@ import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product: Product = {
   name: "InsurAce",
   slug: "insurace",
@@ -40,6 +49,13 @@ const breadcrumbData = {
 export default function InsurAceReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="InsurAce Review (2026)"
+        url="https://degen0x.com/insurance/reviews/insurace"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Insurance"
@@ -63,6 +79,18 @@ export default function InsurAceReviewPage() {
       relatedReviews={[{ name: "Nexus Mutual", slug: "/insurance/reviews/nexus-mutual" }, { name: "Unslashed Finance", slug: "/insurance/reviews/unslashed" }]}
       relatedGuides={[{ title: "Complete Crypto Insurance Guide", href: "/insurance/learn/crypto-insurance-guide" }, { title: "Insurance Protocols Compared", href: "/insurance/learn/insurance-protocols-compared" }]}
     />
+      <ArticleSchema
+        headline="InsurAce Review (2026) | degen0x"
+        description="InsurAce is a multi-chain DeFi insurance protocol offering coverage across 10+ networks with portfolio bundling discounts and no KYC requirement, making it the"
+        url="https://degen0x.com/insurance/reviews/insurace"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/insurance/reviews/insurace" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Coverage", "description": "InsurAce is a multi-chain DeFi insurance protocol offering coverage across 10+ networks with portfolio bundling discounts and no KYC requirement, making it the", "url": "https://degen0x.com/insurance/reviews/insurace", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

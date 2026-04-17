@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Onchain Forex & Stablecoin Diversity Guide 2026 — EURC,",
   description: "Complete guide to onchain forex and non-USD stablecoins in 2026. Covers EURC, PYUSD, GHO, crvUSD, and how stablecoin diversity is reshaping DeFi and global",
@@ -52,6 +56,14 @@ const breadcrumbData = {
 export default function OnchainForexStablecoinDiversityGuidePage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <ArticleSchema
+        headline="Onchain Forex & Stablecoin Diversity Guide 2026 — EURC,"
+        description="Complete guide to onchain forex and non-USD stablecoins in 2026. Covers EURC, PYUSD, GHO, crvUSD, and how stablecoin diversity is reshaping DeFi and global"
+        url="https://degen0x.com/learn/onchain-forex-stablecoin-diversity-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px" }}>
         {/* Header */}
@@ -536,6 +548,7 @@ export default function OnchainForexStablecoinDiversityGuidePage() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Onchain Forex & Stablecoin Diversity Guide 2026 \u2014 EURC,", "description": "Complete guide to onchain forex and non-USD stablecoins in 2026. Covers EURC, PYUSD, GHO, crvUSD, and how stablecoin diversity is reshaping DeFi and global", "url": "https://degen0x.com/learn/onchain-forex-stablecoin-diversity-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/onchain-forex-stablecoin-diversity-guide-2026" />
+<AuthoritySources url="/learn/onchain-forex-stablecoin-diversity-guide-2026" />
 </div>
   );
 }

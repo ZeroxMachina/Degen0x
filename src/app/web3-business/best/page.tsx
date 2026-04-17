@@ -6,6 +6,12 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Web3 Business Tools of 2026 - Complete Rankings | degen0x`,
   description: `Compare the best Web3 business tools of ${CURRENT_YEAR}. DAO treasury platforms, crypto banking, payroll, accounting, governance tools, grants programs, and more ranked by our expert team.`,
@@ -15,7 +21,7 @@ export const metadata: Metadata = {
 
 const categories = [
   {
-    title: "Best DAO Treasury Tools",
+    title: "Best DAO Treasury Tools — Web3-Business",
     href: "/web3-business/best/treasury-tools",
     description: "Multi-signature wallets, treasury dashboards, and on-chain fund management platforms for DAOs and crypto-native organizations. Control spending, track balances",
     topPicks: ["Gnosis Safe (Safe)", "Parcel", "Utopia Labs"],
@@ -116,6 +122,19 @@ export default function BestWeb3BusinessPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best DAO Treasury Tools — Web3-Business"
+        description="Multi-signature wallets, treasury dashboards, and on-chain fund management platforms for DAOs and crypto-native organizations. Control spending, track balances"
+        url="/web3-business/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/best" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

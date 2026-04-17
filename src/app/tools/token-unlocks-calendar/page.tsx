@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Token Unlocks Calendar 2026: Vesting Schedule Tracker",
   description: 'Track token unlocks (cliff vs linear vesting). Major 2026 unlocks: ARB, OP, APT, SUI, STRK. Trading strategy for supply shock.',
@@ -39,6 +47,24 @@ export default function TokenUnlocksCalendar() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Token Unlocks Calendar 2026: Vesting Schedule Tracker"
+        description="Track token unlocks (cliff vs linear vesting). Major 2026 unlocks: ARB, OP, APT, SUI, STRK. Trading strategy for supply shock."
+        url="https://degen0x.com/tools/token-unlocks-calendar"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/token-unlocks-calendar" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/token-unlocks-calendar" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/token-unlocks-calendar"
+        name="Token Unlocks Calendar 2026: Vesting Schedule Tracker"
+        description="Track token unlocks (cliff vs linear vesting). Major 2026 unlocks: ARB, OP, APT, SUI, STRK. Trading strategy for supply shock."
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

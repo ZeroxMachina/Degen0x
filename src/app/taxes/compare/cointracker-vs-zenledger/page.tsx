@@ -10,6 +10,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `CoinTracker vs ZenLedger 2026: Which Crypto Tax Software Is Better?`,
   description: `Compare CoinTracker vs ZenLedger for crypto tax reporting. Pricing, features, DeFi support, and TurboTax integration compared in ${CURRENT_YEAR}.`,
@@ -44,6 +50,14 @@ const breadcrumbData = {
 export default function CoinTrackerVsZenLedgerPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="CoinTracker vs ZenLedger 2026: Which Crypto Tax Software Is Better?"
+        description="Compare CoinTracker vs ZenLedger for crypto tax reporting. Pricing, features, DeFi support, and TurboTax integration compared in ${CURRENT_YEAR}."
+        url="https://degen0x.com/taxes/compare/cointracker-vs-zenledger"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -145,6 +159,11 @@ export default function CoinTrackerVsZenLedgerPage() {
         items={["Cointracker", "Zenledger"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/compare/cointracker-vs-zenledger" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/compare/cointracker-vs-zenledger" />
     </div>
   );
 }

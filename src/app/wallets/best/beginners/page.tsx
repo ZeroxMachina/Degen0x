@@ -9,6 +9,12 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { beginnerWallets, walletComparisonItems } from "@/data/wallets";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for Beginners (2026) | degen0x`,
   description: `The easiest crypto wallets for beginners in ${CURRENT_YEAR}. Exodus, Coinbase Wallet, Phantom and more. Simple setup, intuitive interfaces, and step-by-step guides.`,
@@ -43,6 +49,19 @@ export default function BestBeginnersWalletsPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Wallets"
+        description="Wallets"
+        url="/wallets/best/beginners"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best/beginners" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best/beginners" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

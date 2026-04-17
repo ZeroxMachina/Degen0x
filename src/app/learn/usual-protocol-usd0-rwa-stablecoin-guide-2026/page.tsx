@@ -5,6 +5,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Usual Protocol USD0 RWA Stablecoin Guide 2026",
   description: "Usual Protocol USD0: Real-World Assets stablecoin backed by US Treasury bonds. Learn mechanics, yield generation, tokenomics, and risks in 2026.",
@@ -86,6 +90,14 @@ const breadcrumbData = {
 export default function UsualProtocolGuide() {
   return (
     <div style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px" }}>
+      <ArticleSchema
+        headline="Usual Protocol USD0 RWA Stablecoin Guide 2026"
+        description="Usual Protocol USD0: Real-World Assets stablecoin backed by US Treasury bonds. Learn mechanics, yield generation, tokenomics, and risks in 2026."
+        url="https://degen0x.com/learn/usual-protocol-usd0-rwa-stablecoin-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -267,6 +279,7 @@ export default function UsualProtocolGuide() {
         />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Usual Protocol USD0 RWA Stablecoin Guide 2026", "description": "Usual Protocol USD0: Real-World Assets stablecoin backed by US Treasury bonds. Learn mechanics, yield generation, tokenomics, and risks in 2026.", "url": "https://degen0x.com/learn/usual-protocol-usd0-rwa-stablecoin-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/usual-protocol-usd0-rwa-stablecoin-guide-2026" />
 </div>
   );
 }

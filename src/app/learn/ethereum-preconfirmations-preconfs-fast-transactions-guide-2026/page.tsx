@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Ethereum Preconfirmations Guide 2026 — Fast Transactions',
   description: 'Master preconfirmations: inclusion preconfs, execution preconfs, based preconfs for L2s, EigenLayer security, sub-second finality.',
@@ -131,6 +135,14 @@ export default function PreconfirmationsPage() {
 
   return (
     <article style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="Ethereum Preconfirmations Guide 2026 — Fast Transactions"
+        description="Master preconfirmations: inclusion preconfs, execution preconfs, based preconfs for L2s, EigenLayer security, sub-second finality."
+        url="https://degen0x.com/learn/ethereum-preconfirmations-preconfs-fast-transactions-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -285,6 +297,7 @@ export default function PreconfirmationsPage() {
 </div>
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-preconfirmations-preconfs-fast-transactions-guide-2026" />
+      <AuthoritySources url="/learn/ethereum-preconfirmations-preconfs-fast-transactions-guide-2026" />
       </article>
   );
 }

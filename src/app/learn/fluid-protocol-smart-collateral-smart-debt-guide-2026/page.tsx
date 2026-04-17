@@ -5,6 +5,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Fluid Protocol: Smart Collateral & Smart Debt DeFi Guide",
   description: "Complete guide to Fluid Protocol by Instadapp — the unified DeFi liquidity layer combining lending, borrowing, and DEX. Learn how Smart Collateral and Smart",
@@ -128,6 +132,14 @@ export default function FluidProtocolGuide2026() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <ArticleSchema
+        headline="Fluid Protocol: Smart Collateral & Smart Debt DeFi Guide"
+        description="Complete guide to Fluid Protocol by Instadapp — the unified DeFi liquidity layer combining lending, borrowing, and DEX. Learn how Smart Collateral and Smart"
+        url="https://degen0x.com/learn/fluid-protocol-smart-collateral-smart-debt-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
       />
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -260,6 +272,7 @@ export default function FluidProtocolGuide2026() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/fluid-protocol-smart-collateral-smart-debt-guide-2026" />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fluid Protocol: Smart Collateral & Smart Debt DeFi Guide", "description": "Complete guide to Fluid Protocol by Instadapp \u2014 the unified DeFi liquidity layer combining lending, borrowing, and DEX. Learn how Smart Collateral and Smart", "url": "https://degen0x.com/learn/fluid-protocol-smart-collateral-smart-debt-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

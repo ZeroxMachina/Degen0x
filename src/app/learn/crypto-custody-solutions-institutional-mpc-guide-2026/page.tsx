@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Institutional Crypto Custody Solutions Guide 2026 — MPC,",
@@ -220,6 +224,14 @@ export default function InstitutionalCustodyGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Institutional Crypto Custody Solutions Guide 2026 — MPC,"
+        description="Complete guide to institutional crypto custody in 2026. Learn MPC (Multi-Party Computation), HSM (Hardware Security Modules), multi-sig architectures,"
+        url="https://degen0x.com/learn/crypto-custody-solutions-institutional-mpc-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -781,6 +793,7 @@ export default function InstitutionalCustodyGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Institutional Crypto Custody Solutions Guide 2026 \u2014 MPC,", "description": "Complete guide to institutional crypto custody in 2026. Learn MPC (Multi-Party Computation), HSM (Hardware Security Modules), multi-sig architectures,", "url": "https://degen0x.com/learn/crypto-custody-solutions-institutional-mpc-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/crypto-custody-solutions-institutional-mpc-guide-2026" />
+      <AuthoritySources url="/learn/crypto-custody-solutions-institutional-mpc-guide-2026" />
       </article>
   );
 }

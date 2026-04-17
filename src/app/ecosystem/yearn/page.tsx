@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import YearnClient from "./YearnClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Yearn Finance: Automated Yield Optimizer Guide 2026 — $500M",
   description: "Complete guide to Yearn Finance — the original DeFi yield optimizer with $500M+ TVL, 200+ active vaults, and V3 modular architecture. How vaults work, YFI",
@@ -59,6 +65,19 @@ const breadcrumbData = {
 export default function YearnPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Yearn Finance: Automated Yield Optimizer Guide 2026 — $500M"
+        description="Complete guide to Yearn Finance — the original DeFi yield optimizer with $500M+ TVL, 200+ active vaults, and V3 modular architecture. How vaults work, YFI"
+        url="/ecosystem/yearn"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/yearn" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/yearn" />
       <YearnClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Yearn Finance: Automated Yield Optimizer Guide 2026 — $500M", "description": "Complete guide to Yearn Finance — the original DeFi yield optimizer with $500M+ TVL, 200+ active vaults, and V3 modular architecture. How vaults work, YFI", "url": "https://degen0x.com/ecosystem/yearn", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

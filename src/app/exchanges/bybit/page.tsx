@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = exchanges.find((e) => e.slug === "bybit")!;
 
 export const metadata: Metadata = {
@@ -27,6 +33,19 @@ const breadcrumbData = {
 export default function BybitReview() {
   return (
     <>
+      <ArticleSchema
+        headline="Bybit Review 2026: Derivatives Trading, Fees, Pros & Cons"
+        description="Complete Bybit review covering fast execution, derivatives trading engine, copy trading, fees, and security. Is Bybit right for you? Updated March 2026."
+        url="/exchanges/bybit"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/bybit" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/bybit" />
       <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"

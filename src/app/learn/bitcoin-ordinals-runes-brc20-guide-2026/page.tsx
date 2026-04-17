@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin Ordinals & Runes Guide 2026: NFTs & Tokens on BTC",
   description:
@@ -299,6 +303,14 @@ export default function BitcoinOrdinalRunesPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Bitcoin Ordinals & Runes Guide 2026: NFTs & Tokens on BTC"
+        description="Complete guide to Bitcoin Ordinals, BRC-20, and Runes in 2026. Learn how NFTs and fungible tokens work on Bitcoin, compare standards, and understand the risks."
+        url="https://degen0x.com/learn/bitcoin-ordinals-runes-brc20-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -841,6 +853,7 @@ export default function BitcoinOrdinalRunesPage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Ordinals & Runes Guide 2026: NFTs & Tokens on BTC", "description": "Complete guide to Bitcoin Ordinals, BRC-20, and Runes in 2026. Learn how NFTs and fungible tokens work on Bitcoin, compare standards, and understand the risks.", "url": "https://degen0x.com/learn/bitcoin-ordinals-runes-brc20-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-ordinals-runes-brc20-guide-2026" />
+<AuthoritySources url="/learn/bitcoin-ordinals-runes-brc20-guide-2026" />
 </main>
   );
 }

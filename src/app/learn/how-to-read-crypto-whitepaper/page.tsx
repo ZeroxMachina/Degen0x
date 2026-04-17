@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "How to Read a Crypto Whitepaper: A Complete 2026 Guide for",
   description: "Learn how to analyze crypto whitepapers like a pro. Our 2026 guide covers tokenomics, technical architecture, red flags, and a step-by-step framework for",
@@ -27,6 +31,14 @@ const breadcrumbData = {
 export default function HowToReadWhitepaperPage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="How to Read a Crypto Whitepaper: A Complete 2026 Guide for"
+        description="Learn how to analyze crypto whitepapers like a pro. Our 2026 guide covers tokenomics, technical architecture, red flags, and a step-by-step framework for"
+        url="https://degen0x.com/learn/how-to-read-crypto-whitepaper"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
@@ -339,6 +351,7 @@ export default function HowToReadWhitepaperPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Read a Crypto Whitepaper: A Complete 2026 Guide for", "description": "Learn how to analyze crypto whitepapers like a pro. Our 2026 guide covers tokenomics, technical architecture, red flags, and a step-by-step framework for", "url": "https://degen0x.com/learn/how-to-read-crypto-whitepaper", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/how-to-read-crypto-whitepaper" />
+    <AuthoritySources url="/learn/how-to-read-crypto-whitepaper" />
     </article>
   );
 }

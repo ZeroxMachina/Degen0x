@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Impermanent Loss DeFi Explained 2026: Formula, Examples,",
   description: "Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor),",
@@ -202,6 +206,14 @@ export default function ImpermanentLossDeFiExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Impermanent Loss DeFi Explained 2026: Formula, Examples,"
+        description="Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor),"
+        url="https://degen0x.com/learn/impermanent-loss-defi-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -437,6 +449,7 @@ export default function ImpermanentLossDeFiExplained() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Impermanent Loss DeFi Explained 2026: Formula, Examples,", "description": "Complete guide to impermanent loss: mathematical formula, real examples (50/50 ETH/USDC), IL calculator. Concentrated liquidity, IL protection (Bancor),", "url": "https://degen0x.com/learn/impermanent-loss-defi-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/impermanent-loss-defi-explained" />
+      <AuthoritySources url="/learn/impermanent-loss-defi-explained" />
       </article>
   );
 }

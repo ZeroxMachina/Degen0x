@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Smart Contract Security Audit Guide 2026: Top Firms, Costs",
   description: "Complete guide to smart contract audits in 2026. Compare top audit firms (OpenZeppelin, Trail of Bits, CertiK, Spearbit, Code4rena), learn common",
@@ -207,6 +211,14 @@ export default function SmartContractSecurityAuditGuide2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Smart Contract Security Audit Guide 2026: Top Firms, Costs"
+        description="Complete guide to smart contract audits in 2026. Compare top audit firms (OpenZeppelin, Trail of Bits, CertiK, Spearbit, Code4rena), learn common"
+        url="https://degen0x.com/learn/smart-contract-security-audit-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -651,6 +663,7 @@ export default function SmartContractSecurityAuditGuide2026() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Smart Contract Security Audit Guide 2026: Top Firms, Costs", "description": "Complete guide to smart contract audits in 2026. Compare top audit firms (OpenZeppelin, Trail of Bits, CertiK, Spearbit, Code4rena), learn common", "url": "https://degen0x.com/learn/smart-contract-security-audit-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/smart-contract-security-audit-guide" />
+      <AuthoritySources url="/learn/smart-contract-security-audit-guide" />
       </article>
   );
 }

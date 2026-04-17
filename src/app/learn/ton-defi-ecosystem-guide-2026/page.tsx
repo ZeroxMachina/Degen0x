@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'TON Blockchain DeFi Ecosystem Guide 2026 | degen0x',
   description: "Complete guide to TON DeFi ecosystem in 2026. Explore STON.fi, DeDust, EVAA Protocol, and Telegram Mini Apps. Learn how to get started with TON DeFi, yield",
@@ -857,6 +859,7 @@ export default function TONDeFiGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "TON Blockchain DeFi Ecosystem Guide 2026 | degen0x", "description": "Complete guide to TON DeFi ecosystem in 2026. Explore STON.fi, DeDust, EVAA Protocol, and Telegram Mini Apps. Learn how to get started with TON DeFi, yield", "url": "https://degen0x.com/learn/ton-defi-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/ton-defi-ecosystem-guide-2026" />
 </div>
   );
 }

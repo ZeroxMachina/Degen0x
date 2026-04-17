@@ -11,6 +11,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Complete Guide to Layer 2 Scaling Solutions (2026) —",
   description: "Learn how Layer 2 solutions like Arbitrum, Optimism, Base, zkSync, and Polygon scale Ethereum. Compare rollups, sidechains, state channels, and more in this",
@@ -107,6 +111,14 @@ export default function Layer2GuidePage() {
 
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-bg, #0d1117)" }}>
+      <ArticleSchema
+        headline="Complete Guide to Layer 2 Scaling Solutions (2026) —"
+        description="Learn how Layer 2 solutions like Arbitrum, Optimism, Base, zkSync, and Polygon scale Ethereum. Compare rollups, sidechains, state channels, and more in this"
+        url="https://degen0x.com/learn/layer-2-scaling-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={{ maxWidth: 900, margin: "0 auto", padding: "0 16px 80px" }}>
         <Breadcrumb items={[{ label: "Learn", href: "/learn" }, { label: "Layer 2 Scaling Guide", href: "/learn/layer-2-scaling-guide" }]} />
@@ -424,6 +436,7 @@ export default function Layer2GuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Complete Guide to Layer 2 Scaling Solutions (2026) \u2014", "description": "Learn how Layer 2 solutions like Arbitrum, Optimism, Base, zkSync, and Polygon scale Ethereum. Compare rollups, sidechains, state channels, and more in this", "url": "https://degen0x.com/learn/layer-2-scaling-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/layer-2-scaling-guide" />
+<AuthoritySources url="/learn/layer-2-scaling-guide" />
 </div>
   );
 }

@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto IRA Providers 2026 - Tax-Advantaged Bitcoin Retirement`,
   description: `Compare the best crypto IRA providers for ${CURRENT_YEAR}. Reviews of Bitcoin IRA, iTrustCapital, Alto Crypto, BitcoinIRA, and more. Tax-advantaged retirement investing in Bitcoin, Ethereum, and 200+ cryptocurrencies.`,
@@ -124,6 +130,19 @@ const breadcrumbData = {
 export default function CryptoIraPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Long Term"
+        description="iTrustCapital is the leading crypto IRA platform, offering tax-advantaged retirement investing with support for 30+ cryptocurrencies and precious metals. With"
+        url="/long-term/best/crypto-ira"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Long Term"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/long-term/best/crypto-ira" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/long-term/best/crypto-ira" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

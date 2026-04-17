@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Tax by State Comparison 2026 | No-Tax States vs",
   description: "State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining",
@@ -201,6 +207,19 @@ export default function CryptoTaxByStateComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Tax by State Comparison 2026 | No-Tax States vs"
+        description="State cryptocurrency tax comparison 2026: Texas, Florida, Wyoming 0% income tax. California 13.3% + 1% surtax. New York 10.9%. Crypto-friendly states & mining"
+        url="https://degen0x.com/taxes/crypto-tax-by-state-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/crypto-tax-by-state-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/crypto-tax-by-state-comparison" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

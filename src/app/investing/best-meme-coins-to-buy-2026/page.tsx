@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Best Meme Coins to Buy 2026: DOGE, SHIB, PEPE, WIF | degen0x',
   description: "Meme coin guide 2026: DOGE ($0.25), SHIB ($0.000015), PEPE ($0.0000085), WIF ($1.80), BONK, FLOKI, BRETT. Market cap, community, utility, risks, rug pull",
@@ -48,6 +54,19 @@ export default function BestMemeCoins2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Meme Coins to Buy 2026: DOGE, SHIB, PEPE, WIF | degen0x"
+        description="Meme coin guide 2026: DOGE ($0.25), SHIB ($0.000015), PEPE ($0.0000085), WIF ($1.80), BONK, FLOKI, BRETT. Market cap, community, utility, risks, rug pull"
+        url="https://degen0x.com/investing/best-meme-coins-to-buy-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best-meme-coins-to-buy-2026" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best-meme-coins-to-buy-2026" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

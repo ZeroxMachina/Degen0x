@@ -4,8 +4,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import ClientContent from './ClientContent';
 
-export const dynamic = 'force-dynamic';
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
 
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
+export const revalidate = 3600;
 export const metadata: Metadata = {
   title: `Crypto & Blockchain Glossary | degen0x`,
   description: 'Comprehensive glossary of cryptocurrency and blockchain terms. Learn DeFi, NFTs, trading, security, and advanced concepts with clear definitions.',
@@ -25,6 +30,19 @@ const breadcrumbData = {
 export default function GlossaryPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Guides"
+        description="Comprehensive glossary of cryptocurrency and blockchain terms. Learn DeFi, NFTs, trading, security, and advanced concepts with clear definitions."
+        url="https://degen0x.com/glossary"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/glossary" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/glossary" />
       <ClientContent />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto & Blockchain Glossary | degen0x", "description": "Comprehensive glossary of cryptocurrency and blockchain terms. Learn DeFi, NFTs, trading, security, and advanced concepts with clear definitions.", "url": "https://degen0x.com/glossary", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

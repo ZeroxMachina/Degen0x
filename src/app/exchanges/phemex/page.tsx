@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import { exchanges } from "@/data/exchanges";
 import ReviewPage from "@/components/ReviewPage";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = exchanges.find((e) => e.slug === "phemex")!;
 
 export const metadata: Metadata = {
@@ -27,6 +33,19 @@ const breadcrumbData = {
 export default function PhemexReview() {
   return (
     <>
+      <ArticleSchema
+        headline="Phemex Review 2026: Derivatives Trading, Zero Fees, Pros &"
+        description="Complete Phemex review covering zero-fee trading, derivatives platform, fast execution, and security. Is Phemex right for you? Updated March 2026."
+        url="/exchanges/phemex"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/phemex" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/phemex" />
       <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"

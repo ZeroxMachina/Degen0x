@@ -10,6 +10,13 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import MethodologyBlock from '@/components/MethodologyBlock';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Jito vs Marinade: Which Is Better? (2026) | degen0x`,
   description: "Detailed comparison of Jito vs Marinade for Solana staking. Compare MEV yields, decentralization, liquid staking tokens, and fees to choose the right SOL",
@@ -35,6 +42,14 @@ export default function JitoVsMariadePage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Jito vs Marinade: Which Is Better? (2026) | degen0x"
+        description="Detailed comparison of Jito vs Marinade for Solana staking. Compare MEV yields, decentralization, liquid staking tokens, and fees to choose the right SOL"
+        url="https://degen0x.com/investing/staking/compare/jito-vs-marinade"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -200,6 +215,11 @@ export default function JitoVsMariadePage() {
         </div>
       </div>
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/staking/compare/jito-vs-marinade" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/staking/compare/jito-vs-marinade" />
     </div>
   );
 }

@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import XPLeaderboard from '@/components/XPLeaderboard';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'XP Leaderboard — Top Degens on degen0x',
   description: "See who is crushing it on degen0x. The global XP leaderboard tracks the most active crypto learners. Earn XP through courses, quizzes, and daily challenges to",
@@ -27,6 +33,19 @@ const breadcrumbData = {
 export default function LeaderboardPage() {
   return (
     <>
+      <ArticleSchema
+        headline="XP Leaderboard — Top Degens on degen0x"
+        description="See who is crushing it on degen0x. The global XP leaderboard tracks the most active crypto learners. Earn XP through courses, quizzes, and daily challenges to"
+        url="/leaderboard"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/leaderboard" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/leaderboard" />
       <XPLeaderboard />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "XP Leaderboard — Top Degens on degen0x", "description": "Top degens ranked by XP. Complete courses, quizzes and daily challenges to earn XP and appear on the global leaderboard.", "url": "https://degen0x.com/leaderboard", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

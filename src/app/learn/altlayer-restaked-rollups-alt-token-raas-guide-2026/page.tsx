@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "AltLayer Restaked Rollups Guide 2026 — RaaS & ALT Token",
   description:
@@ -109,6 +113,14 @@ export default function AltLayerGuide() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
+      <ArticleSchema
+        headline="AltLayer Restaked Rollups Guide 2026 — RaaS & ALT Token"
+        description="Complete AltLayer rollup-as-a-service (RaaS) guide for 2026. Restaked rollups, shared sequencers, ALT token economics, security, and DeFi ecosystem."
+        url="https://degen0x.com/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
       />
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -370,6 +382,7 @@ export default function AltLayerGuide() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026" />
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AltLayer Restaked Rollups Guide 2026 \u2014 RaaS & ALT Token", "description": "Complete AltLayer rollup-as-a-service (RaaS) guide for 2026. Restaked rollups, shared sequencers, ALT token economics, security, and DeFi ecosystem.", "url": "https://degen0x.com/learn/altlayer-restaked-rollups-alt-token-raas-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

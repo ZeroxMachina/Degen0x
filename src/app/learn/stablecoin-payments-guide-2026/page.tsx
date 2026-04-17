@@ -9,6 +9,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Stablecoin Payments Guide 2026 — GENIUS Act & Cross-Border",
   description: "How stablecoins work as payment rails in 2026: GENIUS Act explained, USDC vs USDT for cross-border transfers, and which use cases are gaining real traction. 12",

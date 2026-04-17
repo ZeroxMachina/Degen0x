@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { stakingPlatforms } from "@/data/staking";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Restaking Platforms of 2026 (Compared)`,
   description: `Compare the best restaking platforms in ${CURRENT_YEAR}. EigenLayer and restaking protocols reviewed for additional yield, risks, and AVS opportunities.`,
@@ -61,6 +67,19 @@ export default function BestRestakingPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Investing"
+        description="Investing"
+        url="/investing/staking/best/restaking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/staking/best/restaking" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/staking/best/restaking" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">

@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Bitfinex Review (2026) | degen0x`,
   description:
@@ -27,6 +36,13 @@ const breadcrumbData = {
 export default function BitfinexReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Bitfinex Review (2026)"
+        url="https://degen0x.com/exchanges/reviews/bitfinex"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Bitfinex",
@@ -51,7 +67,7 @@ export default function BitfinexReviewPage() {
       categorySlug="exchanges"
       overview="Bitfinex is one of the oldest and most established cryptocurrency exchanges, operating since 2012. Operated by iFinex Inc., the same company behind Tether (USDT), Bitfinex is renowned for its deep order books, particularly in BTC/USD and ETH/USD pairs. The platform is designed for experienced traders, offering margin trading, a peer-to-peer lending marketplace, derivatives trading, and advanced order types. While its history includes a significant 2016 hack, the exchange has since strengthened its security and repaid all affected users."
       sections={[
-        { id: "features", title: "Features", content:
+        { id: "features", title: "Features — Exchanges (exchanges / reviews / bitfinex)", content:
             "Bitfinex provides spot trading across 400+ pairs, margin trading with up to 10x leverage, derivatives including perpetual contracts, and a unique peer-to-peer funding marketplace where users earn interest by lending assets. Advanced order types include scaled orders, iceberg orders, and OCO (one-cancels-other). The Bitfinex Pulse social trading platform enables traders to share insights. API support is comprehensive for algorithmic trading.",
         },
         { id: "fees", title: "Fees", content:
@@ -91,6 +107,18 @@ export default function BitfinexReviewPage() {
         { title: "Bitstamp vs Kraken", href: "/exchanges/compare/bitstamp-vs-kraken" },
       ]}
     />
+      <ArticleSchema
+        headline="Bitfinex Review (2026) | degen0x"
+        description="Detailed Bitfinex review covering margin trading, fees, security, and advanced features. Everything you need to know about Bitfinex."
+        url="https://degen0x.com/exchanges/reviews/bitfinex"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/bitfinex" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Features", "description": "Detailed Bitfinex review covering margin trading, fees, security, and advanced features. Everything you need to know about Bitfinex.", "url": "https://degen0x.com/exchanges/reviews/bitfinex", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "TEE & Verifiable Compute Guide 2026 — Trusted Execution",
   description: "Learn how Trusted Execution Environments (TEEs) enable private smart contracts, MEV protection, and confidential AI in crypto. Covers Flashbots, Phala, Oasis,",
@@ -577,6 +579,7 @@ export default function TEEVerifiableComputeGuide() {
 
           <a href="/learn/solana-token-extensions-token-2022-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Solana Token Extensions Token 2022 Guide 2026</a>
         </nav>
+      <AuthoritySources url="/learn/tee-verifiable-compute-guide" />
       </article>
     <BackToTop />
     

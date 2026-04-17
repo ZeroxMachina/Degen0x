@@ -8,6 +8,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "EIP-7702: Ethereum Account Abstraction After Pectra Guide",
   description: "How EIP-7702 transforms every Ethereum EOA into a smart account. Learn delegation, batching, sponsored gas, session keys, security trade-offs, and what the",
@@ -130,6 +134,14 @@ export default function Eip7702Guide() {
 
   return (
     <div style={containerStyle}>
+      <ArticleSchema
+        headline="EIP-7702: Ethereum Account Abstraction After Pectra Guide"
+        description="How EIP-7702 transforms every Ethereum EOA into a smart account. Learn delegation, batching, sponsored gas, session keys, security trade-offs, and what the"
+        url="https://degen0x.com/learn/eip-7702-account-abstraction-ethereum-pectra-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -269,6 +281,7 @@ export default function Eip7702Guide() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "EIP-7702: Ethereum Account Abstraction After Pectra Guide", "description": "How EIP-7702 transforms every Ethereum EOA into a smart account. Learn delegation, batching, sponsored gas, session keys, security trade-offs, and what the", "url": "https://degen0x.com/learn/eip-7702-account-abstraction-ethereum-pectra-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/eip-7702-account-abstraction-ethereum-pectra-guide-2026" />
+<AuthoritySources url="/learn/eip-7702-account-abstraction-ethereum-pectra-guide-2026" />
 </div>
   );
 }

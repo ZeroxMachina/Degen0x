@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "AI Crypto Agents Guide 2026: Autonomous Trading, DeFi &",
   description:
@@ -28,6 +32,14 @@ const breadcrumbData = {
 export default function AICryptoAgentsGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="AI Crypto Agents Guide 2026: Autonomous Trading, DeFi &"
+        description="Complete guide to AI agents in crypto — autonomous trading bots, DeFi yield optimizers, on-chain analysts, and the tokens powering the AI agent economy in 2026."
+        url="https://degen0x.com/learn/ai-crypto-agents-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
@@ -277,6 +289,7 @@ export default function AICryptoAgentsGuidePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI Crypto Agents Guide 2026: Autonomous Trading, DeFi &", "description": "Complete guide to AI agents in crypto \u2014 autonomous trading bots, DeFi yield optimizers, on-chain analysts, and the tokens powering the AI agent economy in 2026.", "url": "https://degen0x.com/learn/ai-crypto-agents-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/ai-crypto-agents-guide" />
+    <AuthoritySources url="/learn/ai-crypto-agents-guide" />
     </article>
   );
 }

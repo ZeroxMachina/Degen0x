@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'DeFi Portfolio Dashboard 2026: DeBank vs Zapper vs Zerion',
   description: 'Compare top DeFi portfolio dashboards. Track positions, yields, impermanent loss, and rewards across all chains with DeBank, Zapper, Zerion, and more.',
@@ -91,6 +99,24 @@ const breadcrumbData = {
 export default function DefiPortfolioDashboard() {
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="DeFi Portfolio Dashboard 2026: DeBank vs Zapper vs Zerion"
+        description="Compare top DeFi portfolio dashboards. Track positions, yields, impermanent loss, and rewards across all chains with DeBank, Zapper, Zerion, and more."
+        url="https://degen0x.com/tools/defi-portfolio-dashboard"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/defi-portfolio-dashboard" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/defi-portfolio-dashboard" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/defi-portfolio-dashboard"
+        name="DeFi Portfolio Dashboard 2026: DeBank vs Zapper vs Zerion"
+        description="Compare top DeFi portfolio dashboards. Track positions, yields, impermanent loss, and rewards across all chains with DeBank, Zapper, Zerion, and more."
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

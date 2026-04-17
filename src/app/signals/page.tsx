@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import TradingSignals from "@/components/TradingSignals";
 import { SITE_NAME } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Trading Signals — degen0x`,
   description: "AI-powered crypto trading signals combining technical analysis, on-chain data, and social sentiment. Entry points, targets, stop losses, and risk/reward ratios.",
@@ -24,6 +30,19 @@ const breadcrumbData = {
 export default function SignalsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+      <ArticleSchema
+        headline="Guides"
+        description="AI-powered crypto trading signals combining technical analysis, on-chain data, and social sentiment. Entry points, targets, stop losses, and risk/reward ratios."
+        url="/signals"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/signals" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/signals" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

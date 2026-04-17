@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "DAO Governance & Onchain Voting 2026: Snapshot, Tally,",
@@ -121,6 +125,14 @@ const breadcrumbData = {
 export default function DAOGovernanceVotingGuidePage() {
   return (
     <div style={{ minHeight: '100vh', background: '#0d1117', color: '#e6edf3' }}>
+      <ArticleSchema
+        headline="DAO Governance & Onchain Voting 2026: Snapshot, Tally,"
+        description="Complete DAO governance guide for 2026. Learn how onchain voting works, compare Snapshot, Tally, Aragon. Cover token voting, quadratic voting, decision"
+        url="https://degen0x.com/learn/dao-governance-onchain-voting-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -590,6 +602,7 @@ export default function DAOGovernanceVotingGuidePage() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DAO Governance & Onchain Voting 2026: Snapshot, Tally,", "description": "Complete DAO governance guide for 2026. Learn how onchain voting works, compare Snapshot, Tally, Aragon. Cover token voting, quadratic voting, decision", "url": "https://degen0x.com/learn/dao-governance-onchain-voting-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/dao-governance-onchain-voting-guide-2026" />
+<AuthoritySources url="/learn/dao-governance-onchain-voting-guide-2026" />
 </div>
   );
 }

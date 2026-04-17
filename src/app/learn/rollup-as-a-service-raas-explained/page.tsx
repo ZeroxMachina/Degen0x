@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Rollup-as-a-Service (RaaS) Explained | degen0x',
   description: 'Deploy custom rollups in minutes with Caldera, Conduit, AltLayer, Gelato, Dymension. Compare RaaS providers, DA options, pricing, and app-chain deployment.',
@@ -193,6 +197,14 @@ export default function RollupAsAServiceExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Rollup-as-a-Service (RaaS) Explained | degen0x"
+        description="Deploy custom rollups in minutes with Caldera, Conduit, AltLayer, Gelato, Dymension. Compare RaaS providers, DA options, pricing, and app-chain deployment."
+        url="https://degen0x.com/learn/rollup-as-a-service-raas-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -498,6 +510,7 @@ export default function RollupAsAServiceExplained() {
 </div>
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/rollup-as-a-service-raas-explained" />
+      <AuthoritySources url="/learn/rollup-as-a-service-raas-explained" />
       </article>
   );
 }

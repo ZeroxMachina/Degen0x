@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Scroll zkEVM Layer 2 Ecosystem Guide 2026 - degen0x',
   description: "Complete guide to Scroll, the largest zkEVM by market share. Learn about zkEVM technology, SCR token, ecosystem dApps, performance metrics, and investment",
@@ -223,6 +227,14 @@ export default function ScrollZkEVMLayer2EcosystemGuide2026() {
   }
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Scroll zkEVM Layer 2 Ecosystem Guide 2026 - degen0x"
+        description="Complete guide to Scroll, the largest zkEVM by market share. Learn about zkEVM technology, SCR token, ecosystem dApps, performance metrics, and investment"
+        url="https://degen0x.com/learn/scroll-zkevm-layer-2-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
@@ -607,6 +619,7 @@ export default function ScrollZkEVMLayer2EcosystemGuide2026() {
 </div>
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/scroll-zkevm-layer-2-ecosystem-guide-2026" />
+      <AuthoritySources url="/learn/scroll-zkevm-layer-2-ecosystem-guide-2026" />
       </article>
   );
 }

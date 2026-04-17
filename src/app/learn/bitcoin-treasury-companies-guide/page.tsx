@@ -17,6 +17,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin Treasury Companies 2026: Who's Buying BTC?",
   description: "172+ public companies hold Bitcoin on their balance sheets. How corporate BTC treasury strategies work, who the biggest holders are, and what it means for",
@@ -647,6 +649,7 @@ export default function BitcoinTreasuryCompaniesGuidePage() {
         </nav>
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-treasury-companies-guide" />
+      <AuthoritySources url="/learn/bitcoin-treasury-companies-guide" />
       </article>
   );
 }

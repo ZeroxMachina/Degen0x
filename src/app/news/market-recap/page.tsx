@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 
 import MarketRecapClient from "./MarketRecapClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Daily Market Recap | degen0x AI",
   description:
@@ -39,6 +45,19 @@ const breadcrumbData = {
 export default function MarketRecapPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Daily Market Recap | degen0x AI"
+        description="Daily crypto market recap: Price analysis, volume tracking, sentiment signals, on-chain metrics, whale activity tracking, and DEX patterns."
+        url="/news/market-recap"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/news/market-recap" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/news/market-recap" />
       <MarketRecapClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Market Recap | degen0x AI", "description": "Daily crypto market recap: Price analysis, volume tracking, sentiment signals, on-chain metrics, whale activity tracking, and DEX patterns.", "url": "https://degen0x.com/news/market-recap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

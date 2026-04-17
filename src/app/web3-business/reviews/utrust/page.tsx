@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `UTrust Review 2026: Fees, Features, Pros & Cons`,
   description: "Utrust review: Accept and settle crypto payments without conversion. Compare payment processing fees, features, and Web3 business payment solutions.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function UtrustReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="UTrust Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/web3-business/reviews/utrust"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "UTrust",
@@ -57,7 +73,7 @@ The platform provides instant fiat settlement, meaning merchants receive local c
 
 Integration with popular e-commerce platforms and a straightforward API make UTrust accessible for businesses looking to add crypto payments to their existing checkout flows without significant technical investment.`}
       sections={[
-        { id: "core-features", title: "Core Features", content: "UTrust offers crypto payment processing with buyer protection, instant fiat settlement, multi-currency support, and e-commerce integration. The buyer protection program allows customers to dispute transactions, similar to credit card chargebacks, providing consumer confidence that encourages crypto spending. Merchants receive settlement in their preferred fiat currency with no volatility risk." },
+        { id: "core-features", title: "Core Features — Web3-Business (web3-business / reviews / utrust)", content: "UTrust offers crypto payment processing with buyer protection, instant fiat settlement, multi-currency support, and e-commerce integration. The buyer protection program allows customers to dispute transactions, similar to credit card chargebacks, providing consumer confidence that encourages crypto spending. Merchants receive settlement in their preferred fiat currency with no volatility risk." },
         { id: "integration", title: "Integration and Setup", content: "Integration is available through pre-built plugins for WooCommerce, Shopify, Magento, and other platforms. Custom implementations use the UTrust API with comprehensive documentation. The setup process includes merchant verification, payment configuration, and testing. The platform handles cryptocurrency acceptance, conversion, and settlement behind the scenes." },
         { id: "pricing-settlement", title: "Pricing and Settlement", content: "UTrust offers competitive transaction fees lower than traditional credit card processing. Instant settlement in fiat currency eliminates waiting periods and volatility risk. The fee structure is transparent with no hidden charges. For merchants processing significant volume, custom pricing may be available through enterprise plans." },
       ]}
@@ -94,6 +110,18 @@ Integration with popular e-commerce platforms and a straightforward API make UTr
         { title: "Web3 Legal Considerations", href: "/web3-business/learn/web3-legal-considerations" },
       ]}
     />
+      <ArticleSchema
+        headline="UTrust Review 2026: Fees, Features, Pros & Cons"
+        description="Utrust review: Accept and settle crypto payments without conversion. Compare payment processing fees, features, and Web3 business payment solutions."
+        url="https://degen0x.com/web3-business/reviews/utrust"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/reviews/utrust" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Utrust review: Accept and settle crypto payments without conversion. Compare payment processing fees, features, and Web3 business payment solutions.", "url": "https://degen0x.com/web3-business/reviews/utrust", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

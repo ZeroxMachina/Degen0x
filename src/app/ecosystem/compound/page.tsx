@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import CompoundGuidePage from "./CompoundClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Compound Finance Guide 2026: DeFi Lending & Borrowing",
   description:
@@ -57,6 +63,19 @@ const breadcrumbData = {
 export default function CompoundPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Compound Finance Guide 2026: DeFi Lending & Borrowing"
+        description="Complete guide to Compound Finance — the pioneering DeFi lending protocol. Learn how to lend, borrow, and earn interest on crypto with Compound V3 in 2026."
+        url="/ecosystem/compound"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/compound" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/compound" />
       <CompoundGuidePage />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Compound Finance Guide 2026: DeFi Lending & Borrowing", "description": "Complete guide to Compound Finance — the pioneering DeFi lending protocol. Learn how to lend, borrow, and earn interest on crypto with Compound V3 in 2026.", "url": "https://degen0x.com/ecosystem/compound", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

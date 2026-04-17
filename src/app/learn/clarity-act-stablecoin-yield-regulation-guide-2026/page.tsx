@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "CLARITY Act & Stablecoin Yield Regulation 2026 Guide",
@@ -135,6 +139,14 @@ const breadcrumbData = {
 export default function CLARITYActGuidePage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="CLARITY Act & Stablecoin Yield Regulation 2026 Guide"
+        description="Complete guide to the CLARITY Act\"
+        url="https://degen0x.com/learn/clarity-act-stablecoin-yield-regulation-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Structured Data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
@@ -603,6 +615,7 @@ export default function CLARITYActGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "CLARITY Act & Stablecoin Yield Regulation 2026 Guide", "description": "Complete guide to the CLARITY Act\\", "url": "https://degen0x.com/learn/clarity-act-stablecoin-yield-regulation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/clarity-act-stablecoin-yield-regulation-guide-2026" />
+<AuthoritySources url="/learn/clarity-act-stablecoin-yield-regulation-guide-2026" />
 </div>
   );
 }

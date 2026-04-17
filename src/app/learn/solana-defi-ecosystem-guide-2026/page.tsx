@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Solana DeFi Ecosystem Guide 2026 — Protocols & Trading",
   description:
@@ -104,6 +108,14 @@ export default function SolanaDeFiGuide() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
+      <ArticleSchema
+        headline="Solana DeFi Ecosystem Guide 2026 — Protocols & Trading"
+        description="Complete Solana DeFi ecosystem guide 2026: Jupiter DEX aggregator, Raydium AMM, Magic Eden NFTs, TVL analysis, MEV mechanisms, validators, and staking."
+        url="https://degen0x.com/learn/solana-defi-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
       />
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -367,6 +379,7 @@ export default function SolanaDeFiGuide() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/solana-defi-ecosystem-guide-2026" />
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana DeFi Ecosystem Guide 2026 \u2014 Protocols & Trading", "description": "Complete Solana DeFi ecosystem guide 2026: Jupiter DEX aggregator, Raydium AMM, Magic Eden NFTs, TVL analysis, MEV mechanisms, validators, and staking.", "url": "https://degen0x.com/learn/solana-defi-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

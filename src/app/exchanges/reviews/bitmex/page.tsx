@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `BitMEX Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth BitMEX review covering perpetual futures, leverage trading, fees, security, and whether this pioneer derivatives exchange suits your trading needs.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function BitMEXReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="BitMEX Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/exchanges/reviews/bitmex"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "BitMEX",
@@ -56,7 +72,7 @@ The exchange's trajectory changed dramatically in October 2020 when the US Depar
 
 Despite its reduced dominance, BitMEX remains a significant player in crypto derivatives. The platform has expanded beyond its original Bitcoin perpetual contract to offer futures, options, and spot trading across multiple cryptocurrencies. The company is headquartered in Seychelles and operates under appropriate regulatory registrations."
       sections={[
-        { id: "user-experience", title: "User Experience", content: "BitMEX's interface retains the functional, data-dense design that professional traders appreciated during its dominance. The trading screen shows the order book, recent trades, position information, and a chart. Order entry supports market, limit, stop-market, stop-limit, and trailing stop orders. The platform is designed for traders who know exactly what they want and need efficient execution rather than hand-holding. Compared to the more polished interfaces of Bybit or OKX, BitMEX feels somewhat dated but remains fully functional. The testnet provides a risk-free environment for learning the platform. Recent updates have improved the UI and added new features, but the core design philosophy remains focused on function over form." },
+        { id: "user-experience", title: "User Experience — Exchanges (exchanges / reviews / bitmex)", content: "BitMEX's interface retains the functional, data-dense design that professional traders appreciated during its dominance. The trading screen shows the order book, recent trades, position information, and a chart. Order entry supports market, limit, stop-market, stop-limit, and trailing stop orders. The platform is designed for traders who know exactly what they want and need efficient execution rather than hand-holding. Compared to the more polished interfaces of Bybit or OKX, BitMEX feels somewhat dated but remains fully functional. The testnet provides a risk-free environment for learning the platform. Recent updates have improved the UI and added new features, but the core design philosophy remains focused on function over form." },
         { id: "fees", title: "Fees & Pricing", content: "BitMEX offers competitive maker-taker fees. Perpetual contracts charge a maker rebate of -0.01% and a taker fee of 0.075%. This means market makers actually receive a rebate for adding liquidity. Futures contracts follow a similar structure. The fee schedule includes volume-based tiers that reduce costs for high-volume traders. Compared to Binance (0.02%/0.04%) and Bybit (0.01%/0.06%), BitMEX's fees are competitive for takers but less favorable for makers at the base level. There are no deposit fees, and Bitcoin withdrawal fees are dynamically adjusted based on network conditions." },
         { id: "security", title: "Security", content: "BitMEX uses a multi-signature cold wallet system requiring multiple senior employees to authorize withdrawals. Historically, the platform processed withdrawals in daily batches, though this has been modernized. All API keys are encrypted, and two-factor authentication is required. BitMEX has never been hacked or lost customer funds due to a security breach, which is a strong track record given its years of operation and the high-value nature of its positions. The exchange publishes regular proof of reserves and has implemented comprehensive KYC/AML procedures since 2020." },
         { id: "supported-assets", title: "Supported Assets", content: "BitMEX has expanded beyond its original Bitcoin-only focus to support derivatives and spot trading for multiple cryptocurrencies including Bitcoin, Ethereum, Solana, XRP, Cardano, and several others. Perpetual swap contracts are available on major assets with up to 100x leverage. Quarterly futures and options are available for Bitcoin and Ethereum. The spot trading platform was added more recently and covers a growing selection of trading pairs. While the selection has improved, it still trails larger competitors in breadth." },
@@ -82,6 +98,18 @@ Despite its reduced dominance, BitMEX remains a significant player in crypto der
         { title: "How to Use Leverage", href: "/exchanges/learn/how-to-use-leverage" },
       ]}
     />
+      <ArticleSchema
+        headline="BitMEX Review 2026: Fees, Features, Pros & Cons"
+        description="In-depth BitMEX review covering perpetual futures, leverage trading, fees, security, and whether this pioneer derivatives exchange suits your trading needs."
+        url="https://degen0x.com/exchanges/reviews/bitmex"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/bitmex" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth BitMEX review covering perpetual futures, leverage trading, fees, security, and whether this pioneer derivatives exchange suits your trading needs.", "url": "https://degen0x.com/exchanges/reviews/bitmex", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

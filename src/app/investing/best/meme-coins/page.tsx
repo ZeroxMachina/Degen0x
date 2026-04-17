@@ -10,6 +10,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { MEME_COIN_FAQS } from "@/data/investing";
 import { Product } from "@/lib/types";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Meme Coins 2026 - Top Meme Cryptocurrencies`,
   description: `Discover the top meme coins for ${CURRENT_YEAR}. Analysis of DOGE, SHIB, PEPE, and other meme cryptocurrencies by market cap, community, and momentum.`,
@@ -86,6 +92,19 @@ const breadcrumbData = {
 export default function BestMemeCoinsPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Top Meme Coins"
+        description="The original meme coin created in 2013, Dogecoin has become one of the most recognized cryptocurrencies with a massive community and endorsements from"
+        url="/investing/best/meme-coins"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/meme-coins" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/meme-coins" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

@@ -11,6 +11,12 @@ import { Product } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Cryptos to Buy in 2026 - Top Picks for April`,
   description: `Discover the best cryptocurrencies to buy right now. Our experts analyze fundamentals, technology, and market potential to identify top crypto picks for ${CURRENT_YEAR}.`,
@@ -53,6 +59,19 @@ const breadcrumbData = {
 export default function BestCryptosToBuyPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Top Crypto Picks"
+        description="Top Crypto Picks"
+        url="/investing/best/cryptos-to-buy"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/cryptos-to-buy" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/cryptos-to-buy" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin ETF Guide 2026: Spot BTC ETFs, Performance & How to",
   description:
@@ -29,6 +33,14 @@ const breadcrumbData = {
 export default function BitcoinETFGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="Bitcoin ETF Guide 2026: Spot BTC ETFs, Performance & How to"
+        description="Complete guide to Bitcoin ETFs in 2026 — spot BTC ETF options, fees, performance comparison, how they work, and whether they belong in your portfolio."
+        url="https://degen0x.com/learn/bitcoin-etf-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
@@ -287,6 +299,7 @@ export default function BitcoinETFGuidePage() {
 </div>
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-etf-guide-2026" />
+    <AuthoritySources url="/learn/bitcoin-etf-guide-2026" />
     </article>
   );
 }

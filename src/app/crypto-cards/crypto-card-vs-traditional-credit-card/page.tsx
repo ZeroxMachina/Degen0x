@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Card vs Traditional Credit Card: Rewards Comparison",
   description: 'Compare crypto debit/credit cards vs traditional cards. 4% crypto rewards, no credit check, foreign fees, tax implications, and credit building explained.',
@@ -182,6 +188,19 @@ export default function CryptoCardVsTraditionalCreditCard() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Card vs Traditional Credit Card: Rewards Comparison"
+        description="Compare crypto debit/credit cards vs traditional cards. 4% crypto rewards, no credit check, foreign fees, tax implications, and credit building explained."
+        url="https://degen0x.com/crypto-cards/crypto-card-vs-traditional-credit-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/crypto-card-vs-traditional-credit-card" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/crypto-card-vs-traditional-credit-card" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

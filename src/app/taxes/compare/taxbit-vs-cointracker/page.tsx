@@ -11,6 +11,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `TaxBit vs CoinTracker 2026 - Crypto Tax Software Comparison`,
   description: `Compare TaxBit vs CoinTracker for crypto tax reporting. Side-by-side comparison of pricing, features, integrations, and which is right for you.`,
@@ -40,6 +46,14 @@ const breadcrumbData = {
 export default function TaxBitVsCoinTrackerPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="TaxBit vs CoinTracker 2026 - Crypto Tax Software Comparison"
+        description="Compare TaxBit vs CoinTracker for crypto tax reporting. Side-by-side comparison of pricing, features, integrations, and which is right for you."
+        url="https://degen0x.com/taxes/compare/taxbit-vs-cointracker"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -165,6 +179,11 @@ export default function TaxBitVsCoinTrackerPage() {
         items={["Taxbit", "Cointracker"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/compare/taxbit-vs-cointracker" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/compare/taxbit-vs-cointracker" />
     </div>
   );
 }

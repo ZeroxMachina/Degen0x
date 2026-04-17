@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "On-Chain Finance (OnFi) Guide 2026 — What It Is & How It",
   description: "OnFi is DeFi rebuilt for institutions. Learn how on-chain finance combines blockchain settlement with KYC compliance, tokenized RWAs, and permissioned lending",
@@ -665,6 +667,7 @@ export default function OnChainFinanceGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-Chain Finance (OnFi) Guide 2026 \u2014 What It Is & How It", "description": "OnFi is DeFi rebuilt for institutions. Learn how on-chain finance combines blockchain settlement with KYC compliance, tokenized RWAs, and permissioned lending", "url": "https://degen0x.com/learn/onchain-finance-onfi-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/onchain-finance-onfi-guide" />
 </div>
   );
 }

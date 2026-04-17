@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Solidity Smart Contract Courses 2026: From Beginner to",
   description: "Complete Solidity courses 2026: CryptoZombies, Udemy, Coursera. Learn Ethereum smart contracts, ERC20/ERC721, gas optimization, security auditing. Beginner to",
@@ -113,6 +119,19 @@ export default function SoliditySmartContractCourse() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Solidity Smart Contract Courses 2026: From Beginner to"
+        description="Complete Solidity courses 2026: CryptoZombies, Udemy, Coursera. Learn Ethereum smart contracts, ERC20/ERC721, gas optimization, security auditing. Beginner to"
+        url="https://degen0x.com/courses/solidity-smart-contract-course"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Courses"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/courses/solidity-smart-contract-course" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/courses/solidity-smart-contract-course" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

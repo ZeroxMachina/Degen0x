@@ -5,6 +5,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin Mining Guide 2026: Hardware, Costs & Profitability",
   description:
@@ -140,6 +144,14 @@ export default function BitcoinMiningGuide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Bitcoin Mining Guide 2026: Hardware, Costs & Profitability"
+        description="Complete guide to Bitcoin mining in 2026. Compare ASIC miners, calculate profitability, understand electricity costs, and learn if mining BTC is still worth it."
+        url="https://degen0x.com/learn/bitcoin-mining-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -2218,6 +2230,7 @@ export default function BitcoinMiningGuide() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/bitcoin-mining-guide-2026" />
     </article>
     
         <script

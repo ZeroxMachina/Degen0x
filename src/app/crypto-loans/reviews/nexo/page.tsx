@@ -5,6 +5,15 @@ import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "nexo")!;
 
 export const metadata: Metadata = { title: "Nexo Review 2026: Rates, Security, Pros & Cons", description: "In-depth Nexo review covering loan rates, earning products, security, and whether Nexo is the right crypto lending platform for you. Updated March 2026." ,
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function NexoReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Nexo Review 2026: Rates, Security, Pros & Cons"
+        url="https://degen0x.com/crypto-loans/reviews/nexo"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="Nexo is one of the leading centralized crypto lending platforms, offering both borrowing and earning services. Founded in 2018 and based in Switzerland, Nexo serves over 6 million users worldwide. The platform allows users to borrow against 60+ cryptocurrencies at rates starting from 0% APR for top-tier loyalty members, while also offering competitive yield on crypto deposits. Nexo operates under a tiered loyalty system based on NEXO token holdings, with Platinum members receiving the best rates and highest yields. The platform emphasizes regulatory compliance, holding licenses in multiple jurisdictions and maintaining insurance coverage for custodied assets."
       sections={[
@@ -46,6 +62,18 @@ export default function NexoReview() {
       relatedReviews={[{ name: "MakerDAO", slug: "makerdao" }, { name: "Aave", slug: "aave-loans" }]}
       relatedGuides={[{ title: "CeFi vs DeFi Lending", href: "/crypto-loans/learn/cefi-vs-defi-lending" }, { title: "LTV Ratio Explained", href: "/crypto-loans/learn/ltv-ratio-explained" }]}
     />
+      <ArticleSchema
+        headline="Nexo Review 2026: Rates, Security, Pros & Cons"
+        description="In-depth Nexo review covering loan rates, earning products, security, and whether Nexo is the right crypto lending platform for you. Updated March 2026."
+        url="https://degen0x.com/crypto-loans/reviews/nexo"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/reviews/nexo" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Nexo Review 2026: Rates, Security, Pros & Cons", "description": "In-depth Nexo review covering loan rates, earning products, security, and whether Nexo is the right crypto lending platform for you. Updated March 2026.", "url": "https://degen0x.com/crypto-loans/reviews/nexo", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

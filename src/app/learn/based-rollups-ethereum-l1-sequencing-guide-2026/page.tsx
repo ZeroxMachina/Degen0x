@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Based Rollups & Ethereum L1 Sequencing Guide 2026 | Degen0x",
   description:
@@ -227,6 +231,14 @@ export default function BasedRollupsGuide() {
 
   return (
     <article id="top" aria-label="Guide: Based Rollups & Ethereum L1 Sequencing" style={{ background: "#0d1117", color: "#c9d1d9", minHeight: "100vh" }}>
+      <ArticleSchema
+        headline="Based Rollups & Ethereum L1 Sequencing Guide 2026 | Degen0x"
+        description="Master based rollups with L1 sequencing, preconfirmations, and synchronous composability. Learn about Taiko, Gwyneth, Surge, and the future of Ethereum scaling."
+        url="https://degen0x.com/learn/based-rollups-ethereum-l1-sequencing-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1459,6 +1471,7 @@ export default function BasedRollupsGuide() {
       <LiveMiniStat id="ethereum" />
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/based-rollups-ethereum-l1-sequencing-guide-2026" />
+      <AuthoritySources url="/learn/based-rollups-ethereum-l1-sequencing-guide-2026" />
       </article>
   );
 }

@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `BitPay App Review (2026) | degen0x`,
   description: `In-depth BitPay app review for ${CURRENT_YEAR}. Wallet features, bill pay, Visa card, merchant payments, supported cryptocurrencies, fees, and security.`,
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function BitPayAppReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="BitPay App Review (2026)"
+        url="https://degen0x.com/spending/reviews/bitpay-app"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "BitPay",
@@ -93,6 +109,18 @@ export default function BitPayAppReviewPage() {
         { title: "Bitcoin Payments Guide", href: "/spending/learn/bitcoin-payments-guide" },
       ]}
     />
+      <ArticleSchema
+        headline="BitPay App Review (2026) | degen0x"
+        description="In-depth BitPay app review for ${CURRENT_YEAR}. Wallet features, bill pay, Visa card, merchant payments, supported cryptocurrencies, fees, and security."
+        url="https://degen0x.com/spending/reviews/bitpay-app"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/reviews/bitpay-app" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Wallet Features", "description": "BitPay is a veteran crypto payments platform offering a wallet app, Visa debit card, bill pay, and merchant payment processing for Bitcoin, Ethereum, and", "url": "https://degen0x.com/spending/reviews/bitpay-app", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Breadcrumb from '@/components/Breadcrumb';
 import NFTBadgeSystem from '@/components/NFTBadgeSystem';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Achievement Badges — Mint Soulbound NFTs | degen0x',
   description: 'Earn crypto achievement badges and mint them as soulbound NFTs on Solana. Prove your Web3 knowledge on-chain with degen0x.',
@@ -33,6 +39,19 @@ const breadcrumbData = {
 export default function BadgesPage() {
   return (
     <main style={{ minHeight: '100vh', background: 'var(--color-bg)', padding: '24px' }}>
+      <ArticleSchema
+        headline="Achievement Badges — Mint Soulbound NFTs | degen0x"
+        description="Earn crypto achievement badges and mint them as soulbound NFTs on Solana. Prove your Web3 knowledge on-chain with degen0x."
+        url="/badges"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/badges" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/badges" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

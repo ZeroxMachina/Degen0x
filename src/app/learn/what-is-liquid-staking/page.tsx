@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Liquid Staking Explained: Lido stETH, Rocket Pool rETH",
   description: 'Lido stETH (28% of staked ETH, $35B TVL), Rocket Pool rETH, Coinbase cbETH, Jito jitoSOL, Marinade mSOL. APY 3.5-4.2% ETH, LST in DeFi collateral.',
@@ -195,6 +199,14 @@ export default function WhatIsLiquidStaking() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Liquid Staking Explained: Lido stETH, Rocket Pool rETH"
+        description="Lido stETH (28% of staked ETH, $35B TVL), Rocket Pool rETH, Coinbase cbETH, Jito jitoSOL, Marinade mSOL. APY 3.5-4.2% ETH, LST in DeFi collateral."
+        url="https://degen0x.com/learn/what-is-liquid-staking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -478,6 +490,7 @@ export default function WhatIsLiquidStaking() {
 </div>
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/what-is-liquid-staking" />
+      <AuthoritySources url="/learn/what-is-liquid-staking" />
       </article>
   );
 }

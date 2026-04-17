@@ -10,6 +10,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'DYOR Crypto: How to Research Any Token Before Buying (2026)',
   description: "Complete guide to DYOR (Do Your Own Research) for crypto tokens. Learn the 10-step framework, red flags, essential tools, and how to evaluate tokenomics and",
@@ -923,6 +925,7 @@ export default function DYORTokenResearchGuidePage() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/dyor-token-research-guide-2026" />
       </article>
     
         <script

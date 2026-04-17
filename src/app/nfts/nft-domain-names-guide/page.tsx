@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "NFT Domain Names 2026: ENS, Unstoppable Domains, .sol Guide",
   description: "Complete NFT domain guide: ENS .eth domains ($5-50K annual), Unstoppable Domains .crypto ($6-10K one-time), Solana .sol ($1-5). Pricing, investment potential,",
@@ -113,6 +119,19 @@ export default function NFTDomainNamesGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="NFT Domain Names 2026: ENS, Unstoppable Domains, .sol Guide"
+        description="Complete NFT domain guide: ENS .eth domains ($5-50K annual), Unstoppable Domains .crypto ($6-10K one-time), Solana .sol ($1-5). Pricing, investment potential,"
+        url="https://degen0x.com/nfts/nft-domain-names-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/nft-domain-names-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/nft-domain-names-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

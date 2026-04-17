@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Public vs Private Key Cryptography Explained 2026: ECDSA,",
   description: "Master public/private key cryptography: asymmetric encryption, elliptic curves (secp256k1), key derivation (HD wallets BIP-32/44), digital signatures (ECDSA),",
@@ -204,6 +208,14 @@ export default function PublicPrivateKeyCryptoGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Public vs Private Key Cryptography Explained 2026: ECDSA,"
+        description="Master public/private key cryptography: asymmetric encryption, elliptic curves (secp256k1), key derivation (HD wallets BIP-32/44), digital signatures (ECDSA),"
+        url="https://degen0x.com/learn/public-key-vs-private-key-crypto"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -577,6 +589,7 @@ export default function PublicPrivateKeyCryptoGuide() {
 </div>
       <Diagram slug="self-custody-flow" />
       <RelatedContent category="learn" currentSlug="/learn/public-key-vs-private-key-crypto" />
+      <AuthoritySources url="/learn/public-key-vs-private-key-crypto" />
       </article>
   );
 }

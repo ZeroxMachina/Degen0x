@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Bitcoin Mining Profitability Guide 2026 | Degen0x Learn',
   description: "Comprehensive guide to Bitcoin mining profitability in 2026. Learn about post-halving economics, top ASIC hardware, electricity costs, and mining strategies",
@@ -60,6 +64,14 @@ const breadcrumbData = {
 export default function MiningProfitabilityPage() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117' }}>
+      <ArticleSchema
+        headline="Bitcoin Mining Profitability Guide 2026 | Degen0x Learn"
+        description="Comprehensive guide to Bitcoin mining profitability in 2026. Learn about post-halving economics, top ASIC hardware, electricity costs, and mining strategies"
+        url="https://degen0x.com/learn/bitcoin-mining-profitability-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: '1px solid #30363d', paddingTop: 24 }}>

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Crypto Lending & Borrowing Guide 2026 | DeFi Protocols',
   description: "Complete guide to DeFi lending and borrowing in 2026. Learn how Aave, Morpho, and Compound work, overcollateralized loans, liquidation mechanics, and lending",
@@ -287,6 +291,14 @@ export default function CryptoLendingBorrowingPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Crypto Lending & Borrowing Guide 2026 | DeFi Protocols"
+        description="Complete guide to DeFi lending and borrowing in 2026. Learn how Aave, Morpho, and Compound work, overcollateralized loans, liquidation mechanics, and lending"
+        url="https://degen0x.com/learn/crypto-lending-borrowing-defi-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -895,6 +907,7 @@ export default function CryptoLendingBorrowingPage() {
           <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Lending & Borrowing Guide 2026 | DeFi Protocols", "description": "Complete guide to DeFi lending and borrowing in 2026. Learn how Aave, Morpho, and Compound work, overcollateralized loans, liquidation mechanics, and lending", "url": "https://degen0x.com/learn/crypto-lending-borrowing-defi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-lending-borrowing-defi-guide-2026" />
+<AuthoritySources url="/learn/crypto-lending-borrowing-defi-guide-2026" />
 </main>
   );
 }

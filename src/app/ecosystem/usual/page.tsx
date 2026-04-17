@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import UsualClient from "./UsualClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Usual Money: USD0 Revenue-Sharing Stablecoin Guide 2026 —",
   description: "Complete guide to Usual Money — the RWA-backed stablecoin protocol with $1.4B USD0 supply, ~12% APY on USD0++, and 100% revenue sharing to $USUAL holders. How",
@@ -59,6 +65,19 @@ const breadcrumbData = {
 export default function UsualPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Usual Money: USD0 Revenue-Sharing Stablecoin Guide 2026 —"
+        description="Complete guide to Usual Money — the RWA-backed stablecoin protocol with $1.4B USD0 supply, ~12% APY on USD0++, and 100% revenue sharing to $USUAL holders. How"
+        url="/ecosystem/usual"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/usual" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/usual" />
       <UsualClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Usual Money: USD0 Revenue-Sharing Stablecoin Guide 2026 —", "description": "Complete guide to Usual Money — the RWA-backed stablecoin protocol with $1.4B USD0 supply, ~12% APY on USD0++, and 100% revenue sharing to $USUAL holders. How", "url": "https://degen0x.com/ecosystem/usual", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Hardware Wallet 2026: Ledger Nano X, Trezor, Safe3,",
   description: "Hardware wallet comparison: Ledger Nano X ($79, 1000+ coins), Trezor Model T ($180, open-source), Safe 3 ($299, EVM), Keystone Pro, BitBox02. Prices, features,",
@@ -72,6 +78,19 @@ export default function BestHardwareWallet2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Hardware Wallet 2026: Ledger Nano X, Trezor, Safe3,"
+        description="Hardware wallet comparison: Ledger Nano X ($79, 1000+ coins), Trezor Model T ($180, open-source), Safe 3 ($299, EVM), Keystone Pro, BitBox02. Prices, features,"
+        url="https://degen0x.com/wallets/best-hardware-wallet-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best-hardware-wallet-2026" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best-hardware-wallet-2026" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

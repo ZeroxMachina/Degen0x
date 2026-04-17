@@ -4,6 +4,10 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import LearnPage from "@/components/LearnPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: `Crypto Wallet Backup Guide (2026) - Protect Your Recovery Phrase | degen0x`,
   description: `Complete guide to backing up your crypto wallet in ${CURRENT_YEAR}. Seed phrase storage, metal backups, Shamir Backup, multi-location strategies, and disaster recovery.`,

@@ -12,6 +12,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `LooksRare vs X2Y2: Which NFT Marketplace Is Better? (2026) | degen0x`,
   description: "Detailed comparison of LooksRare vs X2Y2. Compare fees, token rewards, trading features, and community governance to find the best Ethereum NFT marketplace.",
@@ -36,6 +42,14 @@ export default function LooksRareVsX2Y2Page() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="LooksRare vs X2Y2: Which NFT Marketplace Is Better? (2026) | degen0x"
+        description="Detailed comparison of LooksRare vs X2Y2. Compare fees, token rewards, trading features, and community governance to find the best Ethereum NFT marketplace."
+        url="https://degen0x.com/nfts/compare/looksrare-vs-x2y2"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[ { label: "Home", href: "/" }, { label: "NFTs", href: "/nfts" }, { label: "Compare", href: "/nfts/compare" }, { label: "LooksRare vs X2Y2", href: "#" } ]} />
       <AffiliateDisclosure />
@@ -163,6 +177,11 @@ export default function LooksRareVsX2Y2Page() {
         items={["Looksrare", "X2y2"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/compare/looksrare-vs-x2y2" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/compare/looksrare-vs-x2y2" />
     </div>
   );
 }

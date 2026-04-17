@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Railgun & Privacy DeFi Guide 2026: Private Transactions",
   description: "What is Railgun? Privacy DeFi lets you use existing DeFi protocols (Uniswap, Aave, etc.) privately using zero-knowledge proofs. Covers zk-SNARKs, shielded",
@@ -939,6 +941,7 @@ export default function RailgunPrivacyGuidePage() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/railgun-privacy-defi-guide-2026" />
+      <AuthoritySources url="/learn/railgun-privacy-defi-guide-2026" />
       </article>
   );
 }

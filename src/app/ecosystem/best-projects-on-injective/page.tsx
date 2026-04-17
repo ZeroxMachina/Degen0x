@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Injective Projects 2026: Helix DEX, Hydro, DojoSwap,",
   description: "Complete Injective ecosystem guide: Helix DEX ($70M TVL), Hydro derivatives ($30M TVL), DojoSwap, Talis NFTs. Orderbook-based trading, 0.05% fees,",
@@ -125,6 +131,19 @@ export default function BestInjectiveProjectsExpanded() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="Best Injective Projects 2026: Helix DEX, Hydro, DojoSwap,"
+        description="Complete Injective ecosystem guide: Helix DEX ($70M TVL), Hydro derivatives ($30M TVL), DojoSwap, Talis NFTs. Orderbook-based trading, 0.05% fees,"
+        url="/ecosystem/best-projects-on-injective"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/best-projects-on-injective" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/best-projects-on-injective" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: "0 auto" }}>

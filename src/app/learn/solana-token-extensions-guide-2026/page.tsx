@@ -10,6 +10,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 const FAQ_ITEMS = [
   {
     question: 'What is the difference between SPL Token and Token-2022?',
@@ -102,6 +106,14 @@ export default function SolanaTokenExtensionsGuide() {
         paddingBottom: '4rem',
       }}
     >
+      <ArticleSchema
+        headline="Solana Token Extensions Guide 2026 — Token-2022 Explained"
+        description="Complete guide to Solana Token Extensions (Token-2022): confidential transfers, transfer fees, interest-bearing tokens, permanent delegates, and more. Updated"
+        url="https://degen0x.com/learn/solana-token-extensions-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -1463,6 +1475,7 @@ export default function SolanaTokenExtensionsGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Token Extensions Guide 2026 \u2014 Token-2022 Explained", "description": "Complete guide to Solana Token Extensions (Token-2022): confidential transfers, transfer fees, interest-bearing tokens, permanent delegates, and more. Updated", "url": "https://degen0x.com/learn/solana-token-extensions-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/solana-token-extensions-guide-2026" />
+<AuthoritySources url="/learn/solana-token-extensions-guide-2026" />
 </div>
   );
 }

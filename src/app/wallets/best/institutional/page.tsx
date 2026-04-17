@@ -7,6 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Institutional Crypto Wallets (2026) | degen0x`,
   description: `The best institutional crypto wallets for ${CURRENT_YEAR}. Compare Safe, Ledger Enterprise, and GridPlus for DAO treasuries, fund management, and enterprise custody.`,
@@ -40,6 +46,19 @@ const breadcrumbData = {
 export default function BestInstitutionalWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Wallets"
+        description="The industry-standard multisig wallet securing over $100B in assets for DAOs, protocols, and institutional treasuries across 15+ EVM chains."
+        url="/wallets/best/institutional"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best/institutional" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best/institutional" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

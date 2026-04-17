@@ -5,6 +5,15 @@ import { DEFI_LENDING_PRODUCTS } from "@/data/defi-lending";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = DEFI_LENDING_PRODUCTS.find((p) => p.slug === "aave")!;
 
 export const metadata: Metadata = {
@@ -28,6 +37,13 @@ const breadcrumbData = {
 export default function AaveReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Aave Review 2026: Fees, Yield, Security & Pros/Cons"
+        url="https://degen0x.com/defi-lending/reviews/aave"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="DeFi Lending"
@@ -52,6 +68,18 @@ export default function AaveReview() {
       relatedReviews={[{ name: "Compound", slug: "compound" }, { name: "Morpho", slug: "morpho" }, { name: "Spark", slug: "spark" }]}
       relatedGuides={[{ title: "What Is DeFi Lending?", href: "/defi-lending/learn/what-is-defi-lending" }, { title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }]}
     />
+      <ArticleSchema
+        headline="Aave Review 2026: Fees, Yield, Security & Pros/Cons"
+        description="In-depth Aave review covering yield rates, security, supported chains, governance, and whether it is the right DeFi lending protocol for you. Updated March"
+        url="https://degen0x.com/defi-lending/reviews/aave"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/aave" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave Review 2026: Fees, Yield, Security & Pros/Cons", "description": "In-depth Aave review covering yield rates, security, supported chains, governance, and whether it is the right DeFi lending protocol for you. Updated March", "url": "https://degen0x.com/defi-lending/reviews/aave", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

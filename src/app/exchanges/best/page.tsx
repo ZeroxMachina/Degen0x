@@ -11,6 +11,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import AuthoritySources from '@/components/AuthoritySources';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `10 Best Crypto Exchanges of 2026 (Ranked & Reviewed)`,
   description: `Compare the top 10 crypto exchanges of ${CURRENT_YEAR}. We tested fees, security, features, and ease of use. Find the best exchange for beginners, advanced traders, and everyone in between.`,
@@ -69,6 +74,14 @@ export default function BestExchangesPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Fees (25%)"
+        description="Fees (25%)"
+        url="/exchanges/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -302,7 +315,11 @@ export default function BestExchangesPage() {
       </div>
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fees (25%)", "description": "Compare the top 10 crypto exchanges of ${CURRENT_YEAR}. We tested fees, security, features, and ease of use. Find the best exchange for beginners, advanced traders, and everyone in between.", "url": "https://degen0x.com/exchanges/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/exchanges/best" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/best" />
 </>
   );
 }

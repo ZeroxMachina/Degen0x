@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Bear Market Survival & Recovery Strategies Guide",
   description: "Master bear market survival strategies with proven DCA tactics, staking yields, and institutional-grade portfolio management. Historical data shows 500-2,056%",
@@ -131,6 +135,14 @@ export default function BearMarketGuide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Crypto Bear Market Survival & Recovery Strategies Guide"
+        description="Master bear market survival strategies with proven DCA tactics, staking yields, and institutional-grade portfolio management. Historical data shows 500-2,056%"
+        url="https://degen0x.com/learn/crypto-bear-market-recovery-survival-strategies-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -1199,6 +1211,7 @@ export default function BearMarketGuide() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/crypto-bear-market-recovery-survival-strategies-guide-2026" />
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Bear Market Survival & Recovery Strategies Guide", "description": "Master bear market survival strategies with proven DCA tactics, staking yields, and institutional-grade portfolio management. Historical data shows 500-2,056%", "url": "https://degen0x.com/learn/crypto-bear-market-recovery-survival-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

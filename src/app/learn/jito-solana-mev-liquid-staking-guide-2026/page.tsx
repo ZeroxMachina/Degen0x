@@ -10,6 +10,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Jito Protocol Guide 2026 — Solana MEV & Liquid Staking',
   description: 'Comprehensive guide to Jito Protocol: MEV optimization, liquid staking with JitoSOL, JTO governance token, and institutional adoption on Solana.',
@@ -299,6 +303,14 @@ export default function JitoGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Jito Protocol Guide 2026 — Solana MEV & Liquid Staking"
+        description="Comprehensive guide to Jito Protocol: MEV optimization, liquid staking with JitoSOL, JTO governance token, and institutional adoption on Solana."
+        url="https://degen0x.com/learn/jito-solana-mev-liquid-staking-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -1022,6 +1034,7 @@ export default function JitoGuide() {
       <LiveMiniStat id="solana" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/jito-solana-mev-liquid-staking-guide-2026" />
+<AuthoritySources url="/learn/jito-solana-mev-liquid-staking-guide-2026" />
 </div>
   );
 }

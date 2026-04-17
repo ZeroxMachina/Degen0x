@@ -9,6 +9,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Solana vs Avalanche: Layer 1 Comparison 2026',
   description: 'Compare Solana and Avalanche: TPS, fees, DeFi TVL, ecosystem, consensus mechanisms. Which L1 blockchain wins?',
@@ -156,6 +160,14 @@ export default function SolanaVsAvalanche() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Solana vs Avalanche: Layer 1 Comparison 2026"
+        description="Compare Solana and Avalanche: TPS, fees, DeFi TVL, ecosystem, consensus mechanisms. Which L1 blockchain wins?"
+        url="https://degen0x.com/compare/solana-vs-avalanche-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -395,6 +407,7 @@ export default function SolanaVsAvalanche() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/solana-vs-avalanche-comparison" />
+      <AuthoritySources url="/compare/solana-vs-avalanche-comparison" />
       </article>
   );
 }

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Ethereum Sharding Roadmap 2026: Dencun, Blobs, Danksharding",
   description: "Complete Ethereum sharding guide. Learn EIP-4844 proto-danksharding, blob transactions, data availability sampling, Verkle trees, and Ethereum full roadmap",
@@ -207,6 +211,14 @@ export default function EthereumShardingRoadmap() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Ethereum Sharding Roadmap 2026: Dencun, Blobs, Danksharding"
+        description="Complete Ethereum sharding guide. Learn EIP-4844 proto-danksharding, blob transactions, data availability sampling, Verkle trees, and Ethereum full roadmap"
+        url="https://degen0x.com/learn/ethereum-sharding-roadmap-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -602,6 +614,7 @@ export default function EthereumShardingRoadmap() {
 </div>
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-sharding-roadmap-explained" />
+      <AuthoritySources url="/learn/ethereum-sharding-roadmap-explained" />
       </article>
   );
 }

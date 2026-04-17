@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Exactly Protocol Review 2026: Fixed-Rate DeFi Lending`,
   description: "In-depth Exactly Protocol review covering fixed-rate lending, variable markets, the EXA token, and how this Optimism protocol enables predictable DeFi yields.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function ExactlyReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Exactly Protocol Review 2026: Fixed-Rate DeFi Lending"
+        url="https://degen0x.com/defi-lending/reviews/exactly"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "Exactly Protocol", slug: "exactly", rating: 4.1, description: "Exactly Protocol is a decentralized lending platform on Optimism that uniquely offers both fixed-rate and variable-rate lending markets, enabling users to lock in predictable yields and borrowing costs.", pros: ["Fixed-rate lending provides predictable yields and borrowing costs", "Dual market system offers flexibility between fixed and variable rates", "Built on Optimism with low transaction costs", "Strong tokenomics with EXA staking and revenue sharing", "Innovative approach to a genuine DeFi need for rate certainty"], cons: ["Fixed-rate markets may have limited liquidity for specific maturities", "More complex than simple variable-rate protocols", "Limited to Optimism ecosystem", "Newer protocol with growing but still modest TVL", "Fixed rates may be less competitive during certain market conditions"], bestFor: "DeFi users seeking predictable fixed-rate yields and borrowing costs", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function ExactlyReview() {
       relatedReviews={[{ name: "Sonne", slug: "sonne" }, { name: "Sturdy", slug: "sturdy" }, { name: "Granary", slug: "granary" }]}
       relatedGuides={[{ title: "Fixed-Rate Yield Guide", href: "/defi-lending/learn/fixed-rate-yield-guide" }, { title: "DeFi on Optimism", href: "/defi-lending/learn/defi-on-optimism" }]}
     />
+      <ArticleSchema
+        headline="Exactly Protocol Review 2026: Fixed-Rate DeFi Lending"
+        description="In-depth Exactly Protocol review covering fixed-rate lending, variable markets, the EXA token, and how this Optimism protocol enables predictable DeFi yields."
+        url="https://degen0x.com/defi-lending/reviews/exactly"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/exactly" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fixed-Rate Markets", "description": "In-depth Exactly Protocol review covering fixed-rate lending, variable markets, the EXA token, and how this Optimism protocol enables predictable DeFi yields.", "url": "https://degen0x.com/defi-lending/reviews/exactly", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

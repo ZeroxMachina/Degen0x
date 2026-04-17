@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Onchain Order Books & CLOBs Guide 2026 — Central Limit",
@@ -223,6 +227,14 @@ export default function OnchainOrderBooksGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Onchain Order Books & CLOBs Guide 2026 — Central Limit"
+        description="Complete guide to onchain order books and CLOBs (Central Limit Order Books) for DEX trading in 2026. Learn how dYdX v4, Sei, Orderly Network, and Solana CLOBs"
+        url="https://degen0x.com/learn/onchain-order-books-clob-dex-trading-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -938,6 +950,7 @@ export default function OnchainOrderBooksGuide() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/onchain-order-books-clob-dex-trading-guide-2026" />
+      <AuthoritySources url="/learn/onchain-order-books-clob-dex-trading-guide-2026" />
       </article>
   );
 }

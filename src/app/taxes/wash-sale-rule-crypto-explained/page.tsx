@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Wash Sale Rule & Crypto 2026: Current Status, Risks &",
   description: "Complete guide to wash sale rules for crypto in 2026. Learn why crypto currently avoids wash sales, proposed legislation risks, and tax-loss harvesting",
@@ -187,6 +193,19 @@ export default function WashSaleRuleCryptoExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Wash Sale Rule & Crypto 2026: Current Status, Risks &"
+        description="Complete guide to wash sale rules for crypto in 2026. Learn why crypto currently avoids wash sales, proposed legislation risks, and tax-loss harvesting"
+        url="https://degen0x.com/taxes/wash-sale-rule-crypto-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/wash-sale-rule-crypto-explained" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/wash-sale-rule-crypto-explained" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

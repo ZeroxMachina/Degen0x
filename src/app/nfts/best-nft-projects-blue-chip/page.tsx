@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Best Blue Chip NFT Projects 2026: BAYC, CryptoPunks',
@@ -155,6 +161,19 @@ export default function BestNftProjectsBlueChip() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Blue Chip NFT Projects 2026: BAYC, CryptoPunks"
+        description="Blue chip NFTs in 2026: BAYC, CryptoPunks, Pudgy Penguins. Market data, floor prices, investment analysis. Expert guide."
+        url="https://degen0x.com/nfts/best-nft-projects-blue-chip"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/best-nft-projects-blue-chip" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/best-nft-projects-blue-chip" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

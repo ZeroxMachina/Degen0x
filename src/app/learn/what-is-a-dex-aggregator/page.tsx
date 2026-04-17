@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "DEX Aggregators Explained 2026: 1inch, Jupiter, Paraswap,",
   description: "Complete guide to DEX aggregators. Compare 1inch ($300B+ volume), Jupiter Solana #1, Paraswap, 0x Protocol, CowSwap (MEV-protected), Odos multi-hop. Learn",
@@ -199,6 +203,14 @@ export default function DEXAggregatorGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="DEX Aggregators Explained 2026: 1inch, Jupiter, Paraswap,"
+        description="Complete guide to DEX aggregators. Compare 1inch ($300B+ volume), Jupiter Solana #1, Paraswap, 0x Protocol, CowSwap (MEV-protected), Odos multi-hop. Learn"
+        url="https://degen0x.com/learn/what-is-a-dex-aggregator"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -521,6 +533,7 @@ export default function DEXAggregatorGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DEX Aggregators Explained 2026: 1inch, Jupiter, Paraswap,", "description": "Complete guide to DEX aggregators. Compare 1inch ($300B+ volume), Jupiter Solana #1, Paraswap, 0x Protocol, CowSwap (MEV-protected), Odos multi-hop. Learn", "url": "https://degen0x.com/learn/what-is-a-dex-aggregator", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/what-is-a-dex-aggregator" />
+      <AuthoritySources url="/learn/what-is-a-dex-aggregator" />
       </article>
   );
 }

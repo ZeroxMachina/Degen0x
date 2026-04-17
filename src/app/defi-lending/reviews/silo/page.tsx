@@ -6,6 +6,15 @@ import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product: Product = {
   name: "Silo Finance",
   slug: "silo",
@@ -40,6 +49,13 @@ const breadcrumbData = {
 export default function SiloReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Silo Finance Review (2026)"
+        url="https://degen0x.com/defi-lending/reviews/silo"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="DeFi Lending"
@@ -63,6 +79,18 @@ export default function SiloReview() {
       relatedReviews={[{ name: "Euler Finance", slug: "/defi-lending/reviews/euler" }, { name: "Aave", slug: "/defi-lending/reviews/aave" }]}
       relatedGuides={[{ title: "Lending Risks Guide", href: "/defi-lending/learn/lending-risks-guide" }, { title: "Smart Contract Risks", href: "/defi-lending/learn/smart-contract-risks" }]}
     />
+      <ArticleSchema
+        headline="Silo Finance Review (2026) | degen0x"
+        description="Silo Finance is a risk-isolated lending protocol where each token pair has its own isolated market, preventing bad debt contagion between assets while enabling"
+        url="https://degen0x.com/defi-lending/reviews/silo"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/silo" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Risk Isolation Architecture", "description": "Silo Finance is a risk-isolated lending protocol where each token pair has its own isolated market, preventing bad debt contagion between assets while enabling", "url": "https://degen0x.com/defi-lending/reviews/silo", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

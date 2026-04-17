@@ -9,6 +9,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Arbitrum vs Optimism: L2 Comparison 2026 Guide',
   description: 'Compare Arbitrum and Optimism Layer 2 solutions: TVL, fees, ecosystems, fraud proofs, governance. Which Ethereum L2 wins?',
@@ -156,6 +160,14 @@ export default function ArbitrumVsOptimism() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Arbitrum vs Optimism: L2 Comparison 2026 Guide"
+        description="Compare Arbitrum and Optimism Layer 2 solutions: TVL, fees, ecosystems, fraud proofs, governance. Which Ethereum L2 wins?"
+        url="https://degen0x.com/compare/arbitrum-vs-optimism-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -418,6 +430,7 @@ export default function ArbitrumVsOptimism() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/arbitrum-vs-optimism-comparison" />
+      <AuthoritySources url="/compare/arbitrum-vs-optimism-comparison" />
       </article>
   );
 }

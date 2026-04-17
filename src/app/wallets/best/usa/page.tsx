@@ -10,6 +10,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Wallets in the USA (2026)`,
   description: `Compare the best crypto wallets for US residents in ${CURRENT_YEAR}. Secure, US-compliant hardware and software wallets with strong customer support and tax reporting integration.`,
@@ -79,6 +85,19 @@ const breadcrumbData = {
 export default function USAWalletsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Wallets"
+        description="Wallets"
+        url="/wallets/best/usa"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best/usa" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best/usa" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

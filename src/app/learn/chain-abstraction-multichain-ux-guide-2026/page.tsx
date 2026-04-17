@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Chain Abstraction & Multi-Chain UX Guide 2026 | degen0x',
   description: "Master chain abstraction in 2026: Particle Network, NEAR Protocol, Socket, Polygon AggLayer, Omni Network. Learn one wallet, any chain—no bridging, no",
@@ -302,6 +306,14 @@ export default function ChainAbstractionPage() {
 
   return (
     <main id="top" aria-label="Guide: Chain Abstraction & Multi-Chain UX" style={pageStyle}>
+      <ArticleSchema
+        headline="Chain Abstraction & Multi-Chain UX Guide 2026 | degen0x"
+        description="Master chain abstraction in 2026: Particle Network, NEAR Protocol, Socket, Polygon AggLayer, Omni Network. Learn one wallet, any chain—no bridging, no"
+        url="https://degen0x.com/learn/chain-abstraction-multichain-ux-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -965,6 +977,7 @@ export default function ChainAbstractionPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Chain Abstraction & Multi-Chain UX Guide 2026 | degen0x", "description": "Master chain abstraction in 2026: Particle Network, NEAR Protocol, Socket, Polygon AggLayer, Omni Network. Learn one wallet, any chain\u2014no bridging, no", "url": "https://degen0x.com/learn/chain-abstraction-multichain-ux-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/chain-abstraction-multichain-ux-guide-2026" />
+<AuthoritySources url="/learn/chain-abstraction-multichain-ux-guide-2026" />
 </main>
   );
 }

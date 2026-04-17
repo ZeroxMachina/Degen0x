@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026",
   description: "Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks,",
@@ -202,6 +206,14 @@ export default function StablecoinTypesComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026"
+        description="Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks,"
+        url="https://degen0x.com/learn/stablecoin-types-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -486,6 +498,7 @@ export default function StablecoinTypesComparison() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Types Comparison: USDT, USDC, DAI, FRAX 2026", "description": "Compare all stablecoin types: fiat-backed (USDT $110B, USDC $35B), crypto-backed (DAI, LUSD), algorithmic (FRAX, crvUSD), RWA-backed. Depegging risks,", "url": "https://degen0x.com/learn/stablecoin-types-comparison", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/stablecoin-types-comparison" />
+      <AuthoritySources url="/learn/stablecoin-types-comparison" />
       </article>
   );
 }

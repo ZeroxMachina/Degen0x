@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Crypto Exchange Proof of Reserves Comparison',
   description: 'Compare PoR audits across Binance, Kraken, OKX, Bybit & Coinbase. Learn Merkle tree verification, audit frequencies & how to verify holdings.',
@@ -153,6 +159,19 @@ export default function ProofOfReservesPage() {
 
   return (
     <main style={containerStyle}>
+      <ArticleSchema
+        headline="Crypto Exchange Proof of Reserves Comparison"
+        description="Compare PoR audits across Binance, Kraken, OKX, Bybit & Coinbase. Learn Merkle tree verification, audit frequencies & how to verify holdings."
+        url="https://degen0x.com/exchanges/crypto-exchange-proof-of-reserves-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/crypto-exchange-proof-of-reserves-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/crypto-exchange-proof-of-reserves-comparison" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={headerStyle}>
         <h1 style={titleStyle}>Crypto Exchange Proof of Reserves Comparison</h1>

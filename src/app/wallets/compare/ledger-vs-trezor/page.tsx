@@ -14,6 +14,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Ledger vs Trezor (2026) - Hardware Wallet Comparison | degen0x`,
   description: `Ledger vs Trezor detailed comparison for ${CURRENT_YEAR}. Security, supported coins, open-source, pricing, and features compared side by side.`,
@@ -54,6 +58,14 @@ export default function LedgerVsTrezorPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Ledger vs Trezor (2026) - Hardware Wallet Comparison | degen0x"
+        description="Ledger vs Trezor detailed comparison for ${CURRENT_YEAR}. Security, supported coins, open-source, pricing, and features compared side by side."
+        url="https://degen0x.com/wallets/compare/ledger-vs-trezor"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -212,7 +224,11 @@ export default function LedgerVsTrezorPage() {
         description="A head-to-head look at Ledger and Trezor: product, fees, risk, and who each one is built for."
         items={["Ledger", "Trezor"]}
       />
-      <AuthoritySources url="/wallets/compare/ledger-vs-trezor" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/compare/ledger-vs-trezor" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/compare/ledger-vs-trezor" />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/ledger-vs-trezor" />
     </div>

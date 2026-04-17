@@ -5,6 +5,15 @@ import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = cryptoCards.find((c) => c.slug === "bybit-card")!;
 
 export const metadata: Metadata = {
@@ -28,6 +37,13 @@ const breadcrumbData = {
 export default function BybitCardReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Bybit Card Review 2026: Exchange-Linked Spending, Cashback"
+        url="https://degen0x.com/crypto-cards/reviews/bybit-card"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Cards"
@@ -149,6 +165,18 @@ The card is available in select markets across Europe and Southeast Asia but is 
         { title: "How to Spend Crypto", href: "/spending/learn/spending-crypto" },
       ]}
     />
+      <ArticleSchema
+        headline="Bybit Card Review 2026: Exchange-Linked Spending, Cashback"
+        description="Our in-depth Bybit Card review covers exchange-linked spending, cashback tier system, supported cryptocurrencies, convert-and-spend functionality, and regional"
+        url="https://degen0x.com/crypto-cards/reviews/bybit-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/bybit-card" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bybit Card Review 2026: Exchange-Linked Spending, Cashback", "description": "Our in-depth Bybit Card review covers exchange-linked spending, cashback tier system, supported cryptocurrencies, convert-and-spend functionality, and regional", "url": "https://degen0x.com/crypto-cards/reviews/bybit-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

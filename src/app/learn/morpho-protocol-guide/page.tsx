@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 // Title: 58 chars — primary keyword first, year included, under 60-char limit
 // Description: 155 chars — specific, includes primary keyword, clear value prop
@@ -636,6 +638,7 @@ export default function MorphoProtocolGuidePage() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/morpho-protocol-guide" />
     </main>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Morpho Protocol Guide 2026 \u2014 Modular DeFi Lending | degen0x", "description": "Morpho hit $10B+ TVL with Apollo Global backing and V2 launching. Learn how Morpho Blue markets, MetaMorpho vaults, and modular lending work in this 2026 guide.", "url": "https://degen0x.com/learn/morpho-protocol-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

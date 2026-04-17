@@ -5,6 +5,15 @@ import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = cryptoCards.find((c) => c.slug === "gemini-card")!;
 
 export const metadata: Metadata = {
@@ -28,6 +37,13 @@ const breadcrumbData = {
 export default function GeminiCardReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Gemini Credit Card Review 2026: Crypto Rewards, No Annual"
+        url="https://degen0x.com/crypto-cards/reviews/gemini-card"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Cards"
@@ -149,6 +165,18 @@ Because the Gemini Credit Card is a real credit card issued by WebBank, it repor
         { title: "Best Crypto Cards for Beginners", href: "/crypto-cards/best/beginners" },
       ]}
     />
+      <ArticleSchema
+        headline="Gemini Credit Card Review 2026: Crypto Rewards, No Annual"
+        description="Our in-depth Gemini Credit Card review covers crypto rewards in 60+ tokens, no annual fee, dining cashback rates, credit-building potential, and APR details."
+        url="https://degen0x.com/crypto-cards/reviews/gemini-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/gemini-card" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Gemini Credit Card Review 2026: Crypto Rewards, No Annual", "description": "Our in-depth Gemini Credit Card review covers crypto rewards in 60+ tokens, no annual fee, dining cashback rates, credit-building potential, and APR details.", "url": "https://degen0x.com/crypto-cards/reviews/gemini-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

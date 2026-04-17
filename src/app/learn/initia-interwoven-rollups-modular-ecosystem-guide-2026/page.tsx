@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Initia Guide: Interwoven Rollups & Modular Orchestration",
   description: "Comprehensive guide to Initia, the Cosmos-based Layer 1 orchestrating modular rollups. Learn about OPinit Stack, Minitias, INIT token, tokenomics, ecosystem,",
@@ -407,6 +411,14 @@ export default function InitiaGuidePage() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Initia Guide: Interwoven Rollups & Modular Orchestration"
+        description="Comprehensive guide to Initia, the Cosmos-based Layer 1 orchestrating modular rollups. Learn about OPinit Stack, Minitias, INIT token, tokenomics, ecosystem,"
+        url="https://degen0x.com/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={containerStyle}>
         <div style={headerStyle}>
@@ -1546,6 +1558,7 @@ export default function InitiaGuidePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Initia Guide: Interwoven Rollups & Modular Orchestration", "description": "Comprehensive guide to Initia, the Cosmos-based Layer 1 orchestrating modular rollups. Learn about OPinit Stack, Minitias, INIT token, tokenomics, ecosystem,", "url": "https://degen0x.com/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026" />
+<AuthoritySources url="/learn/initia-interwoven-rollups-modular-ecosystem-guide-2026" />
 </div>
   );
 }

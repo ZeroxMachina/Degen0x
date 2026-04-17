@@ -6,6 +6,15 @@ import { CURRENT_YEAR } from "@/lib/constants";
 import { Product } from "@/lib/types";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product: Product = {
   name: "X2Y2",
   slug: "x2y2",
@@ -52,6 +61,13 @@ const breadcrumbData = {
 export default function X2Y2ReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="X2Y2 Review: Low-Fee Ethereum NFT Marketplace (2026)"
+        url="https://degen0x.com/nfts/reviews/x2y2"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="NFT Marketplaces"
@@ -156,6 +172,18 @@ X2Y2 also differentiated itself by introducing an NFT lending feature, allowing 
         },
       ]}
     />
+      <ArticleSchema
+        headline="X2Y2 Review: Low-Fee Ethereum NFT Marketplace (2026) | degen0x"
+        description="X2Y2 is an Ethereum NFT marketplace focused on ultra-low fees and decentralized governance. It offers bulk trading tools, NFT lending, and competitive 0.5%"
+        url="https://degen0x.com/nfts/reviews/x2y2"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/reviews/x2y2" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Trading Experience", "description": "X2Y2 is an Ethereum NFT marketplace focused on ultra-low fees and decentralized governance. It offers bulk trading tools, NFT lending, and competitive 0.5%", "url": "https://degen0x.com/nfts/reviews/x2y2", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

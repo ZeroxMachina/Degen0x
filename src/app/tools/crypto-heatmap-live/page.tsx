@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Live Crypto Heatmap Tools: Sector Rotation, Market",
   description: "Real-time crypto heatmap tools (Coin360, CoinGecko, TradingView). Color-coded market performance by sector: DeFi, L1, L2, meme coins. Identify sector rotation",
@@ -178,6 +186,24 @@ export default function CryptoHeatmapLive() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Live Crypto Heatmap Tools: Sector Rotation, Market"
+        description="Real-time crypto heatmap tools (Coin360, CoinGecko, TradingView). Color-coded market performance by sector: DeFi, L1, L2, meme coins. Identify sector rotation"
+        url="/tools/crypto-heatmap-live"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/crypto-heatmap-live" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/crypto-heatmap-live" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/crypto-heatmap-live"
+        name="Live Crypto Heatmap Tools: Sector Rotation, Market"
+        description="Real-time crypto heatmap tools (Coin360, CoinGecko, TradingView). Color-coded market performance by sector: DeFi, L1, L2, meme coins. Identify sector rotation"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

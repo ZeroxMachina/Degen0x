@@ -13,6 +13,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Ledger vs Keystone (2026): Air-Gapped vs Connected Wallet | degen0x`,
   description: `Ledger vs Keystone hardware wallet comparison for ${CURRENT_YEAR}. Compare air-gapped QR signing, multi-chain support, DeFi access, and security.`,
@@ -47,6 +53,14 @@ const breadcrumbData = {
 export default function LedgerVsKeystonePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Ledger vs Keystone (2026): Air-Gapped vs Connected Wallet | degen0x"
+        description="Ledger vs Keystone hardware wallet comparison for ${CURRENT_YEAR}. Compare air-gapped QR signing, multi-chain support, DeFi access, and security."
+        url="https://degen0x.com/wallets/compare/ledger-vs-keystone"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -202,6 +216,11 @@ export default function LedgerVsKeystonePage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/ledger-vs-keystone" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/compare/ledger-vs-keystone" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/compare/ledger-vs-keystone" />
     </div>
   );
 }

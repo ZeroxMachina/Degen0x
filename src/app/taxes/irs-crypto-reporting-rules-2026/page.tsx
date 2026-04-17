@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "IRS Crypto Reporting Rules 2026: Form 1099-DA, Form 8949 &",
   description: "Complete guide to IRS crypto reporting 2026: Form 1099-DA (new), broker reporting, Form 1040 digital asset question, Form 8949, Schedule D, FBAR/FATCA",
@@ -189,6 +195,19 @@ export default function IRSCryptoReportingRules2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="IRS Crypto Reporting Rules 2026: Form 1099-DA, Form 8949 &"
+        description="Complete guide to IRS crypto reporting 2026: Form 1099-DA (new), broker reporting, Form 1040 digital asset question, Form 8949, Schedule D, FBAR/FATCA"
+        url="https://degen0x.com/taxes/irs-crypto-reporting-rules-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/irs-crypto-reporting-rules-2026" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/irs-crypto-reporting-rules-2026" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

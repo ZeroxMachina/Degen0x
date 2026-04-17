@@ -9,6 +9,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Kaito AI & InfoFi Guide 2026: Attention Markets | degen0x",
   description:
@@ -815,6 +817,7 @@ export default function KaitoInfoFiGuidePage() {
             })
           }}
         />
+      <AuthoritySources url="/learn/kaito-ai-infofi-guide" />
       </article>
   );
 }

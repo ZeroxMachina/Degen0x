@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Liquid Staking Tokens Guide 2026",
   description:
@@ -347,6 +351,14 @@ export default function LSTGuide() {
 
   return (
     <div style={containerStyle}>
+      <ArticleSchema
+        headline="Liquid Staking Tokens Guide 2026"
+        description="Master liquid staking tokens: Lido, Rocket Pool, Kelp, Puffer. Compare stETH, rETH, yields, risks, strategies for earning ETH staking rewards."
+        url="https://degen0x.com/learn/liquid-staking-tokens-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -999,6 +1011,7 @@ export default function LSTGuide() {
 
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Liquid Staking Tokens Guide 2026", "description": "Master liquid staking tokens: Lido, Rocket Pool, Kelp, Puffer. Compare stETH, rETH, yields, risks, strategies for earning ETH staking rewards.", "url": "https://degen0x.com/learn/liquid-staking-tokens-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/liquid-staking-tokens-guide-2026" />
 </div>
   );
 }

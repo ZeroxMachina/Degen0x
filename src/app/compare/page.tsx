@@ -6,6 +6,13 @@ import Footer from '@/components/Footer';
 import RelatedContent from '@/components/RelatedContent';
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
+import MethodologyBlock from "@/components/MethodologyBlock";
+
 export const metadata: Metadata = {
   title: 'Crypto Exchange Comparison Tool | degen0x',
   description: 'Compare top cryptocurrency exchanges side-by-side. Analyze fees, security, features, and user experience. Find the best exchange for your trading needs.',
@@ -56,6 +63,14 @@ const breadcrumbData = {
 export default function ComparePage() {
   return (
     <main className="min-h-screen bg-[var(--color-bg)]">
+      <ArticleSchema
+        headline="Crypto Exchange Comparison Tool | degen0x"
+        description="Compare top cryptocurrency exchanges side-by-side. Analyze fees, security, features, and user experience. Find the best exchange for your trading needs."
+        url="https://degen0x.com/compare"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -332,7 +347,12 @@ export default function ComparePage() {
         
           <a href="/defi-yields" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Yields</a>
         </nav>
-      <AuthoritySources url="/compare" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/compare" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/compare" />
+      <MethodologyBlock variant="compare" lastReviewed="2026-04-17" />
       <RelatedContent category="compare" currentSlug="/compare" />
     </main>
   );

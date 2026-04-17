@@ -6,6 +6,15 @@ import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product: Product = {
   name: "Bridge Mutual",
   slug: "bridge-mutual",
@@ -40,6 +49,13 @@ const breadcrumbData = {
 export default function BridgeMutualReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Bridge Mutual Review (2026)"
+        url="https://degen0x.com/insurance/reviews/bridge-mutual"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Insurance"
@@ -63,6 +79,18 @@ export default function BridgeMutualReviewPage() {
       relatedReviews={[{ name: "Nexus Mutual", slug: "/insurance/reviews/nexus-mutual" }, { name: "InsurAce", slug: "/insurance/reviews/insurace" }]}
       relatedGuides={[{ title: "Insurance Protocols Compared", href: "/insurance/learn/insurance-protocols-compared" }, { title: "Complete Crypto Insurance Guide", href: "/insurance/learn/crypto-insurance-guide" }]}
     />
+      <ArticleSchema
+        headline="Bridge Mutual Review (2026) | degen0x"
+        description="Bridge Mutual is a decentralized discretionary coverage platform that allows anyone to create and manage insurance pools for smart contracts, stablecoins, and"
+        url="https://degen0x.com/insurance/reviews/bridge-mutual"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/insurance/reviews/bridge-mutual" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Permissionless Pool Creation", "description": "Bridge Mutual is a decentralized discretionary coverage platform that allows anyone to create and manage insurance pools for smart contracts, stablecoins, and", "url": "https://degen0x.com/insurance/reviews/bridge-mutual", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

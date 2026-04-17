@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Smart Contract Audit Business Guide 2026: Career, Pricing,",
   description: "Start a smart contract audit firm. Compare Trail of Bits, OpenZeppelin, Certik, Spearbit, Code4rena. Learn pricing ($5K-$500K), methodology, formal",
@@ -186,6 +192,19 @@ export default function SmartContractAuditBusinessGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="Smart Contract Audit Business Guide 2026: Career, Pricing,"
+        description="Start a smart contract audit firm. Compare Trail of Bits, OpenZeppelin, Certik, Spearbit, Code4rena. Learn pricing ($5K-$500K), methodology, formal"
+        url="https://degen0x.com/web3-business/smart-contract-audit-business-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/smart-contract-audit-business-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/smart-contract-audit-business-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

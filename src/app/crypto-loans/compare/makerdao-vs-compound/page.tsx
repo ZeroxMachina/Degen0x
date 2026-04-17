@@ -10,6 +10,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = { title: `MakerDAO vs Compound 2026: DeFi Borrowing Compared`, description: `Compare MakerDAO vs Compound for crypto borrowing in ${CURRENT_YEAR}. Analyze DAI minting vs pool-based borrowing, rates, collateral, and more.` ,
   alternates: { canonical: "/crypto-loans/compare/makerdao-vs-compound" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -41,6 +47,14 @@ const breadcrumbData = {
 export default function MakerdaoVsCompoundPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="MakerDAO vs Compound 2026: DeFi Borrowing Compared"
+        description="Compare MakerDAO vs Compound for crypto borrowing in ${CURRENT_YEAR}. Analyze DAI minting vs pool-based borrowing, rates, collateral, and more."
+        url="https://degen0x.com/crypto-loans/compare/makerdao-vs-compound"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -116,6 +130,11 @@ export default function MakerdaoVsCompoundPage() {
         items={["Makerdao", "Compound"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/compare/makerdao-vs-compound" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/compare/makerdao-vs-compound" />
     </div>
   );
 }

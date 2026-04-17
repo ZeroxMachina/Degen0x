@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Element Market Review 2026: Fees, Features, Pros & Cons`,
   description: "Complete Element Market review covering multi-chain NFT aggregation, supported networks, fees, trading features, and how it compares to other NFT marketplaces.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function ElementMarketReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Element Market Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/nfts/reviews/element-market"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Element Market",
@@ -68,6 +84,18 @@ Element Market has found particular traction in the Asian NFT market, where mult
         { title: "How to Buy NFTs", href: "/nfts/learn/how-to-buy-nfts" },
       ]}
     />
+      <ArticleSchema
+        headline="Element Market Review 2026: Fees, Features, Pros & Cons"
+        description="Complete Element Market review covering multi-chain NFT aggregation, supported networks, fees, trading features, and how it compares to other NFT marketplaces."
+        url="https://degen0x.com/nfts/reviews/element-market"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/reviews/element-market" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Marketplace Aggregation", "description": "Complete Element Market review covering multi-chain NFT aggregation, supported networks, fees, trading features, and how it compares to other NFT marketplaces.", "url": "https://degen0x.com/nfts/reviews/element-market", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Shared Sequencing & Decentralized Sequencers Guide 2026:",
@@ -696,6 +698,7 @@ export default function SharedSequencingGuide() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Shared Sequencing & Decentralized Sequencers Guide 2026:", "description": "Shared sequencing explained: how decentralized sequencers fix rollup centralization. Espresso Network, based sequencing, HotShot consensus, cross-rollup", "url": "https://degen0x.com/learn/shared-sequencing-decentralized-sequencers-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/shared-sequencing-decentralized-sequencers-guide-2026" />
+<AuthoritySources url="/learn/shared-sequencing-decentralized-sequencers-guide-2026" />
 </div>
   );
 }

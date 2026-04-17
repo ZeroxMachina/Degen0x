@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Fluid Protocol Guide 2026 — DeFi Lending + DEX Unified",
@@ -521,6 +523,7 @@ export default function FluidProtocolGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fluid Protocol Guide 2026 \u2014 DeFi Lending + DEX Unified", "description": "Fluid (Instadapp) merges DeFi lending and DEX trading into one protocol. $5B+ TVL, 39x capital efficiency. Learn how debt-as-liquidity works and how to use it.", "url": "https://degen0x.com/learn/fluid-protocol-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/fluid-protocol-guide" />
+<AuthoritySources url="/learn/fluid-protocol-guide" />
 </main>
   );
 }

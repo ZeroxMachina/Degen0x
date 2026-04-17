@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Starknet & STARK Validity Rollups Guide 2026 — Layer 2,",
@@ -210,6 +214,14 @@ export default function StarknetSTARKGuide() {
 
   return (
     <article id="top" aria-label="Guide: Starknet & STARK Validity Rollups" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Starknet & STARK Validity Rollups Guide 2026 — Layer 2,"
+        description="Complete guide to Starknet Layer 2 validity rollup. $530M TVL, 65K daily active users, Cairo language, STARK proofs, Bitcoin staking ($160M), privacy with"
+        url="https://degen0x.com/learn/starknet-stark-validity-rollups-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -867,6 +879,7 @@ export default function StarknetSTARKGuide() {
 </div>
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/starknet-stark-validity-rollups-guide-2026" />
+      <AuthoritySources url="/learn/starknet-stark-validity-rollups-guide-2026" />
       </article>
   );
 }

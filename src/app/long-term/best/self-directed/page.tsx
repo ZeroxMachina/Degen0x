@@ -9,6 +9,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Self-Directed Crypto Retirement Accounts 2026`,
   description: `Compare the best self-directed IRA and Solo 401(k) providers for cryptocurrency investing in ${CURRENT_YEAR}. Take full control of your crypto retirement portfolio with checkbook control and expanded asset options.`,
@@ -104,6 +110,19 @@ const breadcrumbData = {
 export default function SelfDirectedPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Long Term"
+        description="Rocket Dollar offers true self-directed IRA and Solo 401(k) accounts with checkbook control, meaning you manage your own LLC that holds the retirement assets."
+        url="/long-term/best/self-directed"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Long Term"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/long-term/best/self-directed" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/long-term/best/self-directed" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Long-Term", href: "/long-term" }, { label: "Best", href: "/long-term/best" }, { label: "Self-Directed", href: "/long-term/best/self-directed" }]} />
       <AffiliateDisclosure />

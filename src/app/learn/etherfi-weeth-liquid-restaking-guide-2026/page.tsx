@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "ether.fi Guide 2026 — weETH, Liquid Restaking & Cash Card",
@@ -130,6 +134,14 @@ export default function EtherfiWeethLiquidRestakingGuide2026() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="ether.fi Guide 2026 — weETH, Liquid Restaking & Cash Card"
+        description="Complete 2026 guide to ether.fi: how weETH became the dominant liquid restaking token (LRT), native restaking on EigenLayer, the Liquid vault, Cash debit card,"
+        url="https://degen0x.com/learn/etherfi-weeth-liquid-restaking-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -390,6 +402,7 @@ export default function EtherfiWeethLiquidRestakingGuide2026() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/etherfi-weeth-liquid-restaking-guide-2026" />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "ether.fi Guide 2026 \u2014 weETH, Liquid Restaking & Cash Card", "description": "Complete 2026 guide to ether.fi: how weETH became the dominant liquid restaking token (LRT), native restaking on EigenLayer, the Liquid vault, Cash debit card,", "url": "https://degen0x.com/learn/etherfi-weeth-liquid-restaking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

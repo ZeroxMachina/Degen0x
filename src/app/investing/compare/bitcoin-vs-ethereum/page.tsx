@@ -11,6 +11,10 @@ import AuthoritySources from '@/components/AuthoritySources';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Bitcoin vs Ethereum (2026) - Complete Comparison | degen0x`,
   description: `Bitcoin vs Ethereum in ${CURRENT_YEAR}. Compare investment thesis, technology, returns, staking, and which is better for your portfolio.`,
@@ -43,6 +47,14 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Bitcoin vs Ethereum (2026) - Complete Comparison | degen0x"
+        description="Bitcoin vs Ethereum in ${CURRENT_YEAR}. Compare investment thesis, technology, returns, staking, and which is better for your portfolio."
+        url="https://degen0x.com/investing/compare/bitcoin-vs-ethereum"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -142,7 +154,11 @@ export default function Page() {
         description="A head-to-head look at Bitcoin and Ethereum: product, fees, risk, and who each one is built for."
         items={["Bitcoin", "Ethereum"]}
       />
-      <AuthoritySources url="/investing/compare/bitcoin-vs-ethereum" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/compare/bitcoin-vs-ethereum" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/compare/bitcoin-vs-ethereum" />
       <MethodologyBlock variant="compare" />
     </div>
   );

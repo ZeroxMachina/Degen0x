@@ -10,6 +10,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Fixed vs Variable Rate DeFi Lending 2026: Comparison`,
   description: `Compare fixed and variable rate lending in DeFi in ${CURRENT_YEAR}. Analyze rate mechanics, protocols, risk profiles, and when each is the better choice.`,
@@ -44,6 +50,14 @@ const breadcrumbData = {
 export default function FixedVsVariableRatePage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Fixed vs Variable Rate DeFi Lending 2026: Comparison"
+        description="Compare fixed and variable rate lending in DeFi in ${CURRENT_YEAR}. Analyze rate mechanics, protocols, risk profiles, and when each is the better choice."
+        url="https://degen0x.com/defi-lending/compare/fixed-vs-variable-rate"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -145,6 +159,11 @@ export default function FixedVsVariableRatePage() {
         items={["Fixed", "Variable Rate"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/compare/fixed-vs-variable-rate" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/compare/fixed-vs-variable-rate" />
     </div>
   );
 }

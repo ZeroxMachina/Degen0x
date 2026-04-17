@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "x402 Protocol: HTTP Payment Standard for AI Agent Payments",
   description: "Complete guide to x402 Protocol — the HTTP 402 payment standard for autonomous AI agents to pay for API access using crypto and stablecoins. Learn",
@@ -322,6 +326,14 @@ export default function X402ProtocolPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="x402 Protocol: HTTP Payment Standard for AI Agent Payments"
+        description="Complete guide to x402 Protocol — the HTTP 402 payment standard for autonomous AI agents to pay for API access using crypto and stablecoins. Learn"
+        url="https://degen0x.com/learn/x402-protocol-ai-agent-payments-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
@@ -960,6 +972,7 @@ export default function X402ProtocolPage() {
             })
           }}
         />
+      <AuthoritySources url="/learn/x402-protocol-ai-agent-payments-guide-2026" />
       </div>
 
         <AuthorAttribution

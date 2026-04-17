@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { nftMarketplaces } from "@/data/nfts";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best NFT Marketplaces for Gaming in 2026 | degen0x`,
   description: `Find the best NFT marketplaces for gaming assets in ${CURRENT_YEAR}. Trade in-game items, virtual land, characters, and gaming collectibles on top platforms.`,
@@ -64,6 +70,19 @@ export default function BestForGamingPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Chain Compatibility"
+        description="Chain Compatibility"
+        url="/nfts/best/gaming"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/best/gaming" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/best/gaming" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">

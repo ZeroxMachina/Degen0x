@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Solana Blinks & Actions Guide 2026: Shareable Blockchain",
   description: "Learn how Solana Actions and Blinks turn any URL into a blockchain transaction. Covers Dialect, use cases, developer setup, and why Blinks matter for crypto UX",
@@ -459,6 +461,7 @@ export default function SolanaBlinksActionsGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Blinks & Actions Guide 2026: Shareable Blockchain", "description": "Learn how Solana Actions and Blinks turn any URL into a blockchain transaction. Covers Dialect, use cases, developer setup, and why Blinks matter for crypto UX", "url": "https://degen0x.com/learn/solana-blinks-actions-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/solana-blinks-actions-guide-2026" />
+<AuthoritySources url="/learn/solana-blinks-actions-guide-2026" />
 </div>
   );
 }

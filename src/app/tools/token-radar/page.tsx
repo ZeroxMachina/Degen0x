@@ -5,6 +5,14 @@ import TokenRadarClient from './TokenRadarClient';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Token Launch Radar | degen0x',
   description:
@@ -40,6 +48,24 @@ const breadcrumbData = {
 export default function TokenRadarPage() {
   return (
     <div style={{ background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="Token Launch Radar | degen0x"
+        description="Track upcoming and recently launched tokens across multiple blockchains. Real-time token launch radar with risk analysis, social metrics, and audit status."
+        url="/tools/token-radar"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/token-radar" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/token-radar" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/token-radar"
+        name="Token Launch Radar"
+        description="Track upcoming and recently launched tokens across multiple blockchains. Real-time token launch radar with risk analysis, social metrics, and audit status."
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

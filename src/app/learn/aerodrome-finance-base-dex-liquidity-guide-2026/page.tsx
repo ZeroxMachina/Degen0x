@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Aerodrome Finance Guide 2026 — Base Chain DEX & ve(3,3)",
   description: "Complete guide to Aerodrome Finance: Base's dominant DEX with $500M+ TVL, ve(3,3) tokenomics, AERO token, MetaDEX03 upgrade, Velodrome merger into Aero, and Q2 2026 multi-chain expansion.",
@@ -220,6 +224,14 @@ export default function AerodromeFinanceGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Aerodrome Finance Guide 2026 — Base Chain DEX & ve(3,3)"
+        description="Complete guide to Aerodrome Finance: Base"
+        url="https://degen0x.com/learn/aerodrome-finance-base-dex-liquidity-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={containerStyle}>
@@ -572,6 +584,7 @@ export default function AerodromeFinanceGuide() {
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aerodrome Finance Guide 2026 \u2014 Base Chain DEX & ve(3,3)", "description": "Complete guide to Aerodrome Finance: Base", "url": "https://degen0x.com/learn/aerodrome-finance-base-dex-liquidity-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/aerodrome-finance-base-dex-liquidity-guide-2026" />
+<AuthoritySources url="/learn/aerodrome-finance-base-dex-liquidity-guide-2026" />
 </div>
 
   );

@@ -5,6 +5,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin ETF Explained: How to Invest in BTC ETFs 2026",
   description:
@@ -136,6 +140,14 @@ export default function BitcoinETFPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Bitcoin ETF Explained: How to Invest in BTC ETFs 2026"
+        description="Learn how Bitcoin ETFs work and how to invest in them in 2026. Compare spot Bitcoin ETFs, fees, custody models, and whether a BTC ETF is right for you."
+        url="https://degen0x.com/learn/bitcoin-etf-explained-how-to-invest"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -2406,6 +2418,7 @@ export default function BitcoinETFPage() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/bitcoin-etf-explained-how-to-invest" />
     </article>
     
         <script

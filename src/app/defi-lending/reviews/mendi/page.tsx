@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Mendi Finance Review 2026: Linea Lending Protocol`,
   description: "Detailed Mendi Finance review covering Compound-style lending on Linea, yield rates, MENDI token rewards, and the protocol's role in the Linea ecosystem.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function MendiReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Mendi Finance Review 2026: Linea Lending Protocol"
+        url="https://degen0x.com/defi-lending/reviews/mendi"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "Mendi Finance", slug: "mendi", rating: 3.7, description: "Mendi Finance is the leading Compound-style lending protocol on Linea (ConsenSys L2), offering lending and borrowing markets with MENDI token incentives for the growing Linea ecosystem.", pros: ["Leading lending protocol on Linea network", "Built on proven Compound V2 architecture", "MENDI token rewards boost effective yields", "Low gas costs on Linea L2", "Ecosystem support from ConsenSys/Linea foundation"], cons: ["Linea ecosystem is still developing and maturing", "Compound V2 lacks modern features like eMode", "TVL is modest compared to multi-chain protocols", "MENDI token liquidity is limited", "Competing against potential Aave deployment on Linea"], bestFor: "DeFi users seeking lending opportunities on Linea with early-mover incentives", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
@@ -47,6 +63,18 @@ export default function MendiReview() {
       relatedReviews={[{ name: "Lendle", slug: "lendle" }, { name: "ZeroLend", slug: "zerolend" }, { name: "LayerBank", slug: "layerbank" }]}
       relatedGuides={[{ title: "Multi-Chain Yield Farming", href: "/defi-lending/learn/multi-chain-yield-farming" }, { title: "Real Yield vs Emissions", href: "/defi-lending/learn/real-yield-vs-emissions" }]}
     />
+      <ArticleSchema
+        headline="Mendi Finance Review 2026: Linea Lending Protocol"
+        description="Detailed Mendi Finance review covering Compound-style lending on Linea, yield rates, MENDI token rewards, and the protocol"
+        url="https://degen0x.com/defi-lending/reviews/mendi"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/mendi" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending on Linea", "description": "Detailed Mendi Finance review covering Compound-style lending on Linea, yield rates, MENDI token rewards, and the protocol's role in the Linea ecosystem.", "url": "https://degen0x.com/defi-lending/reviews/mendi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

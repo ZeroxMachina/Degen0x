@@ -6,6 +6,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Crypto Passive Income Complete Guide 2026 | degen0x',
   description: "Master crypto passive income strategies in 2026: staking, liquid staking, DeFi lending, yield farming, restaking, real yield protocols, and more. Real APY",
@@ -148,6 +152,14 @@ const JsonLd = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <ArticleSchema
+        headline="Crypto Passive Income Complete Guide 2026 | degen0x"
+        description="Master crypto passive income strategies in 2026: staking, liquid staking, DeFi lending, yield farming, restaking, real yield protocols, and more. Real APY"
+        url="https://degen0x.com/learn/crypto-passive-income-complete-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
       />
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
@@ -376,6 +388,7 @@ const RiskComparisonTable = () => (
         ))}
       </tbody>
     </table>
+  <AuthoritySources url="/learn/crypto-passive-income-complete-guide-2026" />
   </div>
 );
 

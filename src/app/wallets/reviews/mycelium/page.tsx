@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Mycelium Wallet Review (2026) | degen0x`,
   description: "Detailed Mycelium wallet review covering Bitcoin features, local trader marketplace, hardware wallet support, and privacy features.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function MyceliumReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Mycelium Wallet Review (2026)"
+        url="https://degen0x.com/wallets/reviews/mycelium"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Mycelium",
@@ -54,7 +70,7 @@ export default function MyceliumReviewPage() {
       categorySlug="wallets"
       overview="Mycelium is one of the oldest and most respected Bitcoin mobile wallets, having served the community since 2013. Originally developed by a team of hardware engineers, Mycelium became known for its robust security model, advanced privacy features, and the unique Local Trader marketplace that enables peer-to-peer Bitcoin trading. The wallet supports hardware wallet integration, HD wallet architecture, and customizable transaction fees. While it lacks altcoin support and its interface has not kept pace with modern design trends, Mycelium remains a solid choice for Bitcoin purists who value privacy and self-custody."
       sections={[
-        { id: "features", title: "Core Features", content: "Mycelium provides a comprehensive set of Bitcoin features including HD wallet support with multiple accounts, custom transaction fees, address labeling, and UTXO management. The wallet generates a 12-word BIP39 seed phrase for backup. Watch-only accounts allow you to monitor addresses without exposing private keys. The Local Trader marketplace enables finding nearby Bitcoin buyers and sellers for in-person trades, though availability varies by region." },
+        { id: "features", title: "Core Features — Wallets (wallets / reviews / mycelium)", content: "Mycelium provides a comprehensive set of Bitcoin features including HD wallet support with multiple accounts, custom transaction fees, address labeling, and UTXO management. The wallet generates a 12-word BIP39 seed phrase for backup. Watch-only accounts allow you to monitor addresses without exposing private keys. The Local Trader marketplace enables finding nearby Bitcoin buyers and sellers for in-person trades, though availability varies by region." },
         { id: "privacy", title: "Privacy Features", content: "Privacy has always been a core focus of Mycelium. The wallet supports Tor network routing to hide your IP address from network observers. It uses a single-address mode option for enhanced privacy. The Local Trader feature enables face-to-face Bitcoin purchases without exchange KYC requirements. Address reuse warnings help users maintain good privacy practices." },
         { id: "hardware-support", title: "Hardware Wallet Support", content: "Mycelium integrates with several hardware wallets including Trezor, Ledger, and KeepKey. When connected, the hardware device stores private keys while Mycelium provides the mobile interface. This combination allows users to securely manage hardware wallet funds on the go, check balances, and initiate transactions that are then signed on the hardware device." },
         { id: "local-trader", title: "Local Trader Marketplace", content: "The Local Trader feature is a built-in peer-to-peer marketplace for buying and selling Bitcoin locally. Users can browse listings, communicate with traders, and arrange in-person meetings for cash trades. The feature includes a reputation system based on completed trades. While similar services have moved online, Local Trader remains useful in regions where privacy-preserving Bitcoin acquisition is important." },
@@ -101,6 +117,18 @@ export default function MyceliumReviewPage() {
         { title: "Best Privacy Wallets", href: "/wallets/best/privacy" }
       ]}
     />
+      <ArticleSchema
+        headline="Mycelium Wallet Review (2026) | degen0x"
+        description="Detailed Mycelium wallet review covering Bitcoin features, local trader marketplace, hardware wallet support, and privacy features."
+        url="https://degen0x.com/wallets/reviews/mycelium"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/mycelium" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Core Features", "description": "Detailed Mycelium wallet review covering Bitcoin features, local trader marketplace, hardware wallet support, and privacy features.", "url": "https://degen0x.com/wallets/reviews/mycelium", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

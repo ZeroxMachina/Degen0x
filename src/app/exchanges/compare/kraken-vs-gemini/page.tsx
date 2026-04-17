@@ -13,6 +13,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Kraken vs Gemini: Detailed Comparison (2026) | degen0x`,
   description:
@@ -73,6 +79,14 @@ export default function KrakenVsGeminiPage() {
 
   return (
     <div className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
+      <ArticleSchema
+        headline="Kraken vs Gemini: Detailed Comparison (2026) | degen0x"
+        description="Compare Kraken and Gemini - two secure US crypto exchanges. Analyze fees, features, security, and find which is best for your trading needs."
+        url="https://degen0x.com/exchanges/compare/kraken-vs-gemini"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
@@ -638,6 +652,11 @@ export default function KrakenVsGeminiPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/kraken-vs-gemini" />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/compare/kraken-vs-gemini" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/compare/kraken-vs-gemini" />
 </div>
   );
 }

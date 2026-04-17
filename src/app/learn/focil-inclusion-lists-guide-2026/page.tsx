@@ -13,6 +13,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "FOCIL & Inclusion Lists on Ethereum Guide 2026 | Degen0x",
   description:
@@ -348,6 +350,7 @@ export default function FocilInclusionListsGuide() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/polkadot-staking-halving-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Polkadot Staking Halving Guide 2026</a>
         </nav>
+    <AuthoritySources url="/learn/focil-inclusion-lists-guide-2026" />
     </main>
     
         <script

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Crypto Custody Solutions Explained | degen0x',
   description: "Learn self-custody vs institutional crypto custody. Compare Coinbase Custody, Fireblocks, BitGo, Safe smart contracts, MPC wallets with security and insurance",
@@ -192,6 +196,14 @@ export default function CryptoCustodySolutions() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Custody Solutions Explained | degen0x"
+        description="Learn self-custody vs institutional crypto custody. Compare Coinbase Custody, Fireblocks, BitGo, Safe smart contracts, MPC wallets with security and insurance"
+        url="https://degen0x.com/learn/crypto-custody-solutions-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -499,6 +511,7 @@ export default function CryptoCustodySolutions() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Custody Solutions Explained | degen0x", "description": "Learn self-custody vs institutional crypto custody. Compare Coinbase Custody, Fireblocks, BitGo, Safe smart contracts, MPC wallets with security and insurance", "url": "https://degen0x.com/learn/crypto-custody-solutions-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/crypto-custody-solutions-explained" />
+      <AuthoritySources url="/learn/crypto-custody-solutions-explained" />
       </article>
   );
 }

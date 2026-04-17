@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Fully Homomorphic Encryption (FHE) in Crypto Guide 2026",
   description: "Master Fully Homomorphic Encryption in 2026: Zama, Fhenix, Inco. Learn how FHE enables confidential smart contracts, encrypted MEV protection, and",
@@ -312,6 +316,14 @@ export default function FHECryptoGuidePage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Fully Homomorphic Encryption (FHE) in Crypto Guide 2026"
+        description="Master Fully Homomorphic Encryption in 2026: Zama, Fhenix, Inco. Learn how FHE enables confidential smart contracts, encrypted MEV protection, and"
+        url="https://degen0x.com/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -972,6 +984,7 @@ export default function FHECryptoGuidePage() {
           <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fully Homomorphic Encryption (FHE) in Crypto Guide 2026", "description": "Master Fully Homomorphic Encryption in 2026: Zama, Fhenix, Inco. Learn how FHE enables confidential smart contracts, encrypted MEV protection, and", "url": "https://degen0x.com/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026" />
+<AuthoritySources url="/learn/fhe-fully-homomorphic-encryption-crypto-guide-2026" />
 </main>
   );
 }

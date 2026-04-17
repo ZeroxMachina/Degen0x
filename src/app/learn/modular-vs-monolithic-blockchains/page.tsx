@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Modular vs Monolithic Blockchains 2026: Celestia, EigenDA,",
   description: "Complete guide to modular blockchain architecture. Compare execution layers (rollups), data availability (Celestia $1B+ FDV, EigenDA), Ethereum, Solana. Learn",
@@ -199,6 +203,14 @@ export default function ModularVsMonolithicBlockchains() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Modular vs Monolithic Blockchains 2026: Celestia, EigenDA,"
+        description="Complete guide to modular blockchain architecture. Compare execution layers (rollups), data availability (Celestia $1B+ FDV, EigenDA), Ethereum, Solana. Learn"
+        url="https://degen0x.com/learn/modular-vs-monolithic-blockchains"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -572,6 +584,7 @@ export default function ModularVsMonolithicBlockchains() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Modular vs Monolithic Blockchains 2026: Celestia, EigenDA,", "description": "Complete guide to modular blockchain architecture. Compare execution layers (rollups), data availability (Celestia $1B+ FDV, EigenDA), Ethereum, Solana. Learn", "url": "https://degen0x.com/learn/modular-vs-monolithic-blockchains", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/modular-vs-monolithic-blockchains" />
+      <AuthoritySources url="/learn/modular-vs-monolithic-blockchains" />
       </article>
   );
 }

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Blockchain Oracles Guide 2026: Chainlink, Pyth, RedStone &",
@@ -210,6 +214,14 @@ export default function BlockchainOraclesGuide() {
 
   return (
     <article style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Blockchain Oracles Guide 2026: Chainlink, Pyth, RedStone &"
+        description="Complete guide to blockchain oracles in 2026. Learn how Chainlink, Pyth, RedStone, and Chronicle power DeFi, prevent oracle manipulation attacks, and secure"
+        url="https://degen0x.com/learn/blockchain-oracles-defi-price-feeds-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -638,6 +650,7 @@ export default function BlockchainOraclesGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Blockchain Oracles Guide 2026: Chainlink, Pyth, RedStone &", "description": "Complete guide to blockchain oracles in 2026. Learn how Chainlink, Pyth, RedStone, and Chronicle power DeFi, prevent oracle manipulation attacks, and secure", "url": "https://degen0x.com/learn/blockchain-oracles-defi-price-feeds-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/blockchain-oracles-defi-price-feeds-guide-2026" />
+      <AuthoritySources url="/learn/blockchain-oracles-defi-price-feeds-guide-2026" />
       </article>
   );
 }

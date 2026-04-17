@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Ethereum Layer 2 Guide 2026: Base, Arbitrum, Optimism &",
@@ -232,6 +236,14 @@ export default function EthereumLayer2Guide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Ethereum Layer 2 Guide 2026: Base, Arbitrum, Optimism &"
+        description="Complete guide to Ethereum Layer 2 networks in 2026. Compare Base (46% DeFi TVL), Arbitrum ($18B TVL), Optimism, zkSync, Scroll, and Starknet. Learn L2 fees,"
+        url="https://degen0x.com/learn/ethereum-layer-2-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto', lineHeight: 1.8 }}>
@@ -923,6 +935,7 @@ export default function EthereumLayer2Guide() {
       <LiveMiniStat id="ethereum" />
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-layer-2-ecosystem-guide-2026" />
+      <AuthoritySources url="/learn/ethereum-layer-2-ecosystem-guide-2026" />
       </article>
   );
 }

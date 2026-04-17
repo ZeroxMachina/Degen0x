@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Backpack wallet review: xNFT platform guide",
   description: "Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs",
@@ -237,6 +243,19 @@ export default function BackpackWalletCompleteGuide() {
 
   return (
     <article style={styles.article}>
+      <ArticleSchema
+        headline="Backpack wallet review: xNFT platform guide"
+        description="Backpack wallet complete guide: xNFTs (executable NFTs), Solana+Ethereum, built-in DEX, Mad Lads, Coral ecosystem, Armani Ferrante. Pros, cons, comparison vs"
+        url="https://degen0x.com/wallets/backpack-wallet-complete-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/backpack-wallet-complete-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/backpack-wallet-complete-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

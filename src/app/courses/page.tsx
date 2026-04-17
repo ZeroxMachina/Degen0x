@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import CoursesHub from '@/components/CoursesHub';
 import Breadcrumb from '@/components/Breadcrumb';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Free Crypto Courses — Earn XP & Badges | degen0x',
   description: "The most comprehensive free crypto curriculum. Learn Bitcoin, DeFi, Solana, Layer 2s, security, and more. Earn XP and badges as you progress. No signup",
@@ -35,6 +41,19 @@ const breadcrumbData = {
 export default function CoursesPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
+      <ArticleSchema
+        headline="Free Crypto Courses — Earn XP & Badges | degen0x"
+        description="The most comprehensive free crypto curriculum. Learn Bitcoin, DeFi, Solana, Layer 2s, security, and more. Earn XP and badges as you progress. No signup"
+        url="/courses"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/courses" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/courses" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

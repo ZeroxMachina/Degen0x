@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Karak Network Guide 2026 — Universal Restaking Explained",
@@ -558,6 +560,7 @@ export default function KarakNetworkGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Karak Network Guide 2026 \u2014 Universal Restaking Explained", "description": "Karak is the second-largest restaking protocol with $1B+ TVL. Learn how multi-chain, multi-asset restaking works, compare Karak vs EigenLayer, and how to earn.", "url": "https://degen0x.com/learn/karak-network-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/karak-network-guide" />
+<AuthoritySources url="/learn/karak-network-guide" />
 </main>
   );
 }

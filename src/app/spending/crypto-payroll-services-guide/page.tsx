@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Payroll Services Guide: Bitwage, Deel, Request",
   description: 'Compare crypto payroll platforms for employer payments, contractor compensation, tax withholding, and IRS reporting. Bitwage, Deel, Request Finance reviewed.',
@@ -180,6 +186,19 @@ export default function CryptoPayrollServicesGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Payroll Services Guide: Bitwage, Deel, Request"
+        description="Compare crypto payroll platforms for employer payments, contractor compensation, tax withholding, and IRS reporting. Bitwage, Deel, Request Finance reviewed."
+        url="https://degen0x.com/spending/crypto-payroll-services-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Spending"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/crypto-payroll-services-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/spending/crypto-payroll-services-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

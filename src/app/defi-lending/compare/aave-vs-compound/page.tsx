@@ -10,6 +10,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Aave vs Compound 2026: Which DeFi Lending Protocol Is Better?`,
   description: `Detailed comparison of Aave vs Compound in ${CURRENT_YEAR}. Compare yields, features, security, supported assets, and multi-chain availability.`,
@@ -44,6 +50,14 @@ const breadcrumbData = {
 export default function AaveVsCompoundPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Aave vs Compound 2026: Which DeFi Lending Protocol Is Better?"
+        description="Detailed comparison of Aave vs Compound in ${CURRENT_YEAR}. Compare yields, features, security, supported assets, and multi-chain availability."
+        url="https://degen0x.com/defi-lending/compare/aave-vs-compound"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -145,6 +159,11 @@ export default function AaveVsCompoundPage() {
         items={["Aave", "Compound"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/compare/aave-vs-compound" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/compare/aave-vs-compound" />
     </div>
   );
 }

@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Polkadot Wallets 2026 | Polkadot.js, Talisman,",
   description: "Compare Polkadot wallets: Polkadot.js (official), Talisman (multi-chain), SubWallet, Nova Wallet. NPoS staking, parachain crowdloans, OpenGov voting, DOT",
@@ -133,6 +139,19 @@ export default function BestWalletForPolkadot() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Polkadot Wallets 2026 | Polkadot.js, Talisman,"
+        description="Compare Polkadot wallets: Polkadot.js (official), Talisman (multi-chain), SubWallet, Nova Wallet. NPoS staking, parachain crowdloans, OpenGov voting, DOT"
+        url="https://degen0x.com/wallets/best-wallet-for-polkadot"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best-wallet-for-polkadot" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best-wallet-for-polkadot" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

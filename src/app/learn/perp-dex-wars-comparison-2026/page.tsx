@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Perp DEX Wars 2026: Hyperliquid vs Aster vs Lighter vs",
@@ -1139,6 +1141,7 @@ export default function PerpDEXWarsComparison2026() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Perp DEX Wars 2026: Hyperliquid vs Aster vs Lighter vs", "description": "Complete comparison of top perpetual DEXs in 2026. Hyperliquid ($40.7B weekly volume), Aster ($31.78B), Lighter ($25.38B), Paradex ZK perps, and emerging", "url": "https://degen0x.com/learn/perp-dex-wars-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/perp-dex-wars-comparison-2026" />
+<AuthoritySources url="/learn/perp-dex-wars-comparison-2026" />
 </div>
   );
 }

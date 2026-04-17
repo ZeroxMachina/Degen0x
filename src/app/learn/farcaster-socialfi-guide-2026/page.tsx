@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Farcaster & SocialFi Guide 2026 — Decentralized Social",
   description: "Complete guide to Farcaster, the leading decentralized social protocol. Learn about Frames, Mini Apps, the Neynar acquisition, SocialFi economics, and how Web3",
@@ -74,6 +78,14 @@ const breadcrumbData = {
 export default function FarcasterSocialFiGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="Farcaster & SocialFi Guide 2026 — Decentralized Social"
+        description="Complete guide to Farcaster, the leading decentralized social protocol. Learn about Frames, Mini Apps, the Neynar acquisition, SocialFi economics, and how Web3"
+        url="https://degen0x.com/learn/farcaster-socialfi-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[{ label: "Learn", href: "/learn" }, { label: "Farcaster & SocialFi Guide 2026" }]} />
 
@@ -384,6 +396,7 @@ export default function FarcasterSocialFiGuidePage() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/farcaster-socialfi-guide-2026" />
+      <AuthoritySources url="/learn/farcaster-socialfi-guide-2026" />
       </article>
   );
 }

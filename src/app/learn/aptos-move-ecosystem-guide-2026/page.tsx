@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Aptos Blockchain & Move Ecosystem Guide 2026 | degen0x',
@@ -225,6 +229,14 @@ export default function AptosMoveguide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Aptos Blockchain & Move Ecosystem Guide 2026 | degen0x"
+        description="Complete guide to Aptos blockchain and the Move programming language in 2026. Learn about sub-50ms block times, DeFi ecosystem (Thala, Amnis, LiquidSwap,"
+        url="https://degen0x.com/learn/aptos-move-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -1052,6 +1064,7 @@ export default function AptosMoveguide() {
         />
       <LiveMiniStat id="aptos" />
       <RelatedContent category="learn" currentSlug="/learn/aptos-move-ecosystem-guide-2026" />
+      <AuthoritySources url="/learn/aptos-move-ecosystem-guide-2026" />
       </article>
   );
 }

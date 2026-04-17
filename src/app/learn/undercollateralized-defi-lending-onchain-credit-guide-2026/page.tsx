@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Undercollateralized DeFi Lending & On-Chain Credit 2026",
@@ -218,6 +222,14 @@ export default function UndercollateralizedDeFiLendingGuide() {
 
   return (
     <article style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Undercollateralized DeFi Lending & On-Chain Credit 2026"
+        description="Complete guide to undercollateralized DeFi lending in 2026. Learn how Maple Finance, Goldfinch, Clearpool, and TrueFi are enabling $12-17.5B in on-chain credit"
+        url="https://degen0x.com/learn/undercollateralized-defi-lending-onchain-credit-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -778,6 +790,7 @@ export default function UndercollateralizedDeFiLendingGuide() {
         />
       <Diagram slug="defi-lending-cycle" />
       <RelatedContent category="learn" currentSlug="/learn/undercollateralized-defi-lending-onchain-credit-guide-2026" />
+      <AuthoritySources url="/learn/undercollateralized-defi-lending-onchain-credit-guide-2026" />
       </article>
   );
 }

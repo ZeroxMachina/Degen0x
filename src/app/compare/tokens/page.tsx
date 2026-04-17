@@ -6,6 +6,13 @@ import Footer from '@/components/Footer';
 import RelatedContent from '@/components/RelatedContent';
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Token Comparison Tool — Side-by-Side Crypto Analysis",
   description: 'Compare any two cryptocurrencies side-by-side. Analyze price, fundamentals, performance, social metrics, and more with our radar chart visualization.',
@@ -27,6 +34,14 @@ const breadcrumbData = {
 export default function TokenComparisonPage() {
   return (
     <main className="min-h-screen bg-gray-950">
+      <ArticleSchema
+        headline="Token Comparison Tool — Side-by-Side Crypto Analysis"
+        description="Compare any two cryptocurrencies side-by-side. Analyze price, fundamentals, performance, social metrics, and more with our radar chart visualization."
+        url="https://degen0x.com/compare/tokens"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -92,6 +107,11 @@ export default function TokenComparisonPage() {
       </div>
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/tokens" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/compare/tokens" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/compare/tokens" />
     </main>
   );
 }

@@ -7,6 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Dividend-Like Crypto (2026) | degen0x`,
   description: `Top cryptocurrencies that distribute revenue to holders in ${CURRENT_YEAR}. Real yield from staking, fee sharing, and protocol revenue distribution.`,
@@ -42,6 +48,19 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Investing"
+        description="Staking ETH earns 3-5% annually from network validation rewards and priority fees. With ETH"
+        url="/investing/best/dividend-crypto"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/dividend-crypto" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/dividend-crypto" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

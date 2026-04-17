@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Smart Contract Security Audits & DeFi Safety Guide 2026',
   description: "Complete guide to smart contract security audits and DeFi safety. Learn vulnerability types, audit firms like CertiK and Trail of Bits, bug bounties on",
@@ -327,6 +331,14 @@ export default function SmartContractSecurityPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Smart Contract Security Audits & DeFi Safety Guide 2026"
+        description="Complete guide to smart contract security audits and DeFi safety. Learn vulnerability types, audit firms like CertiK and Trail of Bits, bug bounties on"
+        url="https://degen0x.com/learn/smart-contract-security-audits-defi-safety-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json">
         {JSON.stringify(structuredData)}
       </script>
@@ -914,6 +926,7 @@ export default function SmartContractSecurityPage() {
             })
           }}
         />
+      <AuthoritySources url="/learn/smart-contract-security-audits-defi-safety-guide-2026" />
       </div>
 
         <AuthorAttribution

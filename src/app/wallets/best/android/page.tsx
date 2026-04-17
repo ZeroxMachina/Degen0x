@@ -7,6 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Wallets for Android (2026) | degen0x`,
   description: `The best Android crypto wallets for ${CURRENT_YEAR}. Compare Trust Wallet, Phantom, MetaMask, Exodus, and Tangem for Samsung, Pixel, and more.`,
@@ -42,6 +48,19 @@ const breadcrumbData = {
 export default function BestAndroidWalletsPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Wallets"
+        description="The most feature-complete Android wallet with 100+ chain support, built-in dApp browser, staking, and WalletConnect integration."
+        url="/wallets/best/android"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best/android" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best/android" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

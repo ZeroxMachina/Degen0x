@@ -6,6 +6,15 @@ import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product: Product = {
   name: "Fraxlend",
   slug: "fraxlend",
@@ -40,6 +49,13 @@ const breadcrumbData = {
 export default function FraxlendReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Fraxlend Review (2026)"
+        url="https://degen0x.com/defi-lending/reviews/fraxlend"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="DeFi Lending"
@@ -63,6 +79,18 @@ export default function FraxlendReview() {
       relatedReviews={[{ name: "Spark Protocol", slug: "/defi-lending/reviews/spark" }, { name: "Aave", slug: "/defi-lending/reviews/aave" }]}
       relatedGuides={[{ title: "What is DeFi Lending", href: "/defi-lending/learn/what-is-defi-lending" }, { title: "APY vs APR", href: "/defi-lending/learn/apy-vs-apr" }]}
     />
+      <ArticleSchema
+        headline="Fraxlend Review (2026) | degen0x"
+        description="Fraxlend is the lending component of the Frax ecosystem, offering isolated pair lending markets with dynamic interest rates and deep integration with FRAX"
+        url="https://degen0x.com/defi-lending/reviews/fraxlend"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/fraxlend" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Isolated Pair Lending", "description": "Fraxlend is the lending component of the Frax ecosystem, offering isolated pair lending markets with dynamic interest rates and deep integration with FRAX", "url": "https://degen0x.com/defi-lending/reviews/fraxlend", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

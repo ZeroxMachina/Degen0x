@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "DeFi Safety Score Checker: DefiLlama, CertiK Skynet,",
   description: "Compare DeFi safety scoring tools: DeFi Safety, DefiLlama risk dashboard, Exponential.fi ratings, CertiK Skynet. Evaluate smart contract risk, oracle risk,",
@@ -187,6 +195,24 @@ export default function DefiSafetyScoreChecker() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="DeFi Safety Score Checker: DefiLlama, CertiK Skynet,"
+        description="Compare DeFi safety scoring tools: DeFi Safety, DefiLlama risk dashboard, Exponential.fi ratings, CertiK Skynet. Evaluate smart contract risk, oracle risk,"
+        url="https://degen0x.com/tools/defi-safety-score-checker"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/defi-safety-score-checker" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/defi-safety-score-checker" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/defi-safety-score-checker"
+        name="DeFi Safety Score Checker: DefiLlama, CertiK Skynet,"
+        description="Compare DeFi safety scoring tools: DeFi Safety, DefiLlama risk dashboard, Exponential.fi ratings, CertiK Skynet. Evaluate smart contract risk, oracle risk,"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

@@ -6,6 +6,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'HIP-3: Hyperliquid Permissionless Perps Guide 2026 | Degen0x',
   description: 'Deep dive into HIP-3, Hyperliquid\'s permissionless perpetual listing standard. Learn how builders deploy new perp markets, stake HYPE, earn builder fees, and what it means for on-chain derivatives in 2026.',
@@ -105,6 +109,14 @@ export default function Hip3HyperliquidPermissionlessPerpsGuide2026() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="HIP-3: Hyperliquid Permissionless Perps Guide 2026 | Degen0x"
+        description="Deep dive into HIP-3, Hyperliquid\"
+        url="https://degen0x.com/learn/hip-3-hyperliquid-permissionless-perps-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -276,6 +288,7 @@ export default function Hip3HyperliquidPermissionlessPerpsGuide2026() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/hip-3-hyperliquid-permissionless-perps-guide-2026" />
       </article>
     
         <script

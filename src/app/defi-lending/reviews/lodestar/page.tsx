@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Lodestar Finance Review 2026: Arbitrum Lending Protocol`,
   description: "In-depth Lodestar Finance review covering lending on Arbitrum, yield rates, supported assets, and how this Compound-style protocol serves the Arbitrum",
@@ -26,12 +35,19 @@ const breadcrumbData = {
 export default function LodestarReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Lodestar Finance Review 2026: Arbitrum Lending Protocol"
+        url="https://degen0x.com/defi-lending/reviews/lodestar"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{ name: "Lodestar Finance", slug: "lodestar", rating: 3.6, description: "Lodestar Finance is a Compound-style lending protocol on Arbitrum offering lending and borrowing markets for Arbitrum-native assets with a focus on supporting DeFi composability within the ecosystem.", pros: ["Native Arbitrum lending protocol with ecosystem integration", "Supports diverse Arbitrum assets including DeFi tokens", "Compound V2 architecture provides familiar mechanics", "Low gas costs on Arbitrum network", "Active in Arbitrum governance and ecosystem"], cons: ["Small TVL compared to Aave V3 on Arbitrum", "Limited competitive advantage over established multi-chain protocols", "LODE token has limited liquidity and utility", "Protocol development pace has been moderate", "Some supported assets have very low borrowing demand"], bestFor: "Arbitrum users seeking lending markets for niche ecosystem tokens", affiliateUrl: "#", category: "defi-lending" }}
       categoryName="DeFi Lending" categorySlug="defi-lending"
       overview="Lodestar Finance operates as an Arbitrum-native lending protocol, offering Compound-style lending and borrowing markets tailored to the Arbitrum ecosystem. The protocol supports a range of Arbitrum DeFi tokens alongside standard assets, providing lending markets that larger protocols may not offer. While Lodestar faces significant competition from Aave V3's Arbitrum deployment, it differentiates by supporting niche assets and actively participating in the Arbitrum ecosystem. The protocol has maintained steady operations and serves users seeking lending access for Arbitrum-specific tokens that may not be available on larger platforms."
       sections={[
-        { id: "lending-markets", title: "Lending Markets", content: "Lodestar offers pool-based lending markets for a range of Arbitrum assets including ETH, USDC, USDT, ARB, and various DeFi protocol tokens native to the Arbitrum ecosystem. The Compound V2 architecture provides standard lending operations with variable interest rates based on utilization. Lodestar's asset selection includes tokens not commonly found on larger lending protocols, providing niche lending opportunities for Arbitrum DeFi participants. Interest rates are competitive for assets with healthy borrowing demand, though less popular markets may have lower yields due to limited utilization." },
+        { id: "lending-markets", title: "Lending Markets — Defi-Lending (defi-lending / reviews / lodestar)", content: "Lodestar offers pool-based lending markets for a range of Arbitrum assets including ETH, USDC, USDT, ARB, and various DeFi protocol tokens native to the Arbitrum ecosystem. The Compound V2 architecture provides standard lending operations with variable interest rates based on utilization. Lodestar's asset selection includes tokens not commonly found on larger lending protocols, providing niche lending opportunities for Arbitrum DeFi participants. Interest rates are competitive for assets with healthy borrowing demand, though less popular markets may have lower yields due to limited utilization." },
         { id: "arbitrum-focus", title: "Arbitrum Ecosystem Integration", content: "Lodestar has positioned itself as an Arbitrum-first protocol, actively participating in Arbitrum governance and ecosystem development. The protocol integrates with major Arbitrum DEXs and yield protocols, enabling composability for users building complex DeFi strategies. Lodestar has received Arbitrum ecosystem grants and incentives that have helped sustain its operations and liquidity. The Arbitrum-native focus means the protocol is deeply aligned with the ecosystem's growth, though this also makes it dependent on Arbitrum's continued success and competitiveness among L2 networks." },
         { id: "token-governance", title: "LODE Token & Governance", content: "The LODE token serves as Lodestar's governance token, allowing holders to vote on protocol parameters, asset listings, and risk settings. LODE rewards are distributed to incentivize lending and borrowing activity in select markets. The token's market capitalization and liquidity are relatively small, which limits its governance impact and introduces price volatility risk for holders. The governance system follows standard on-chain voting mechanics, with proposals requiring quorum and majority approval." },
         { id: "security", title: "Security & Risk Profile", content: "Lodestar's Compound V2 architecture has been widely audited and deployed across DeFi. The protocol's specific smart contracts have undergone audits, though the depth of security review may not match that of larger protocols. Standard safety features including liquidation mechanisms, oracle validation, and supply caps are implemented. The smaller TVL means less economic incentive for liquidators, which could be a concern during rapid market downturns. Users should consider the protocol's size and liquidity depth when evaluating position sizing." },
@@ -47,6 +63,18 @@ export default function LodestarReview() {
       relatedReviews={[{ name: "Granary", slug: "granary" }, { name: "Sonne", slug: "sonne" }, { name: "Tender", slug: "tender" }]}
       relatedGuides={[{ title: "DeFi on Arbitrum", href: "/defi-lending/learn/defi-on-arbitrum" }, { title: "Yield Risk Assessment", href: "/defi-lending/learn/yield-risk-assessment" }]}
     />
+      <ArticleSchema
+        headline="Lodestar Finance Review 2026: Arbitrum Lending Protocol"
+        description="In-depth Lodestar Finance review covering lending on Arbitrum, yield rates, supported assets, and how this Compound-style protocol serves the Arbitrum"
+        url="https://degen0x.com/defi-lending/reviews/lodestar"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/lodestar" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending Markets", "description": "In-depth Lodestar Finance review covering lending on Arbitrum, yield rates, supported assets, and how this Compound-style protocol serves the Arbitrum", "url": "https://degen0x.com/defi-lending/reviews/lodestar", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

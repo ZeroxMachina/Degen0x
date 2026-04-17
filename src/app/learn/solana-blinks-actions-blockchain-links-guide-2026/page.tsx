@@ -213,6 +213,14 @@ export default function SolanaBlinksActionsGuide() {
 
   return (
     <article id="top" aria-label="Guide: Solana Blinks & Actions" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Solana Blinks & Actions Guide 2026 — Blockchain Links"
+        description="Complete guide to Solana Actions and Blinks in 2026. Learn how blockchain links turn any Solana transaction into a shareable URL. Technical specs, use cases,"
+        url="https://degen0x.com/learn/solana-blinks-actions-blockchain-links-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -505,6 +513,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
 
 export const POST = async (request: NextRequest) => {
   try {
@@ -899,6 +911,7 @@ Access-Control-Allow-Headers: Content-Type`}
         </nav>
       <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/solana-blinks-actions-blockchain-links-guide-2026" />
+      <AuthoritySources url="/learn/solana-blinks-actions-blockchain-links-guide-2026" />
       </article>
   );
 }

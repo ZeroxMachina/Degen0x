@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Ethereum Gas Fees: How to Save Money 2026 | degen0x',
   description: "Ethereum gas fees explained: EIP-1559, base fee, priority fee, tips. Save 90% using Layer 2s ($0.01-0.50 vs $2-50 on mainnet). Time transactions, batch, and",
@@ -195,6 +199,14 @@ export default function EthereumGasFeesHowToSave() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Ethereum Gas Fees: How to Save Money 2026 | degen0x"
+        description="Ethereum gas fees explained: EIP-1559, base fee, priority fee, tips. Save 90% using Layer 2s ($0.01-0.50 vs $2-50 on mainnet). Time transactions, batch, and"
+        url="https://degen0x.com/learn/ethereum-gas-fees-how-to-save"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -516,6 +528,7 @@ export default function EthereumGasFeesHowToSave() {
 </div>
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-gas-fees-how-to-save" />
+      <AuthoritySources url="/learn/ethereum-gas-fees-how-to-save" />
       </article>
   );
 }

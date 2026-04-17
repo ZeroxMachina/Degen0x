@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Bitcoin Rewards Cards 2026 | Fold, Coinbase, BlockFi",
   description: "Compare Bitcoin rewards credit cards: Fold 2% BTC, Coinbase 4% stablecoin, BlockFi 1.5% APY. Real rates, annual fees, earning limits, and best use cases.",
@@ -173,6 +179,19 @@ export default function BitcoinRewardsComparison() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px" }}>
+      <ArticleSchema
+        headline="Bitcoin Rewards Cards 2026 | Fold, Coinbase, BlockFi"
+        description="Compare Bitcoin rewards credit cards: Fold 2% BTC, Coinbase 4% stablecoin, BlockFi 1.5% APY. Real rates, annual fees, earning limits, and best use cases."
+        url="https://degen0x.com/crypto-cards/bitcoin-rewards-credit-card-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/bitcoin-rewards-credit-card-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/bitcoin-rewards-credit-card-comparison" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

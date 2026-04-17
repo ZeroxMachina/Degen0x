@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin Layer 2 Solutions: Lightning, Stacks & Beyond",
   description:
@@ -30,6 +34,14 @@ const breadcrumbData = {
 export default function BitcoinLayer2Guide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <ArticleSchema
+        headline="Bitcoin Layer 2 Solutions: Lightning, Stacks & Beyond"
+        description="Understand why Bitcoin needs L2s, explore Lightning Network, Stacks, RSK, and emerging solutions. Compare solutions and their use cases."
+        url="https://degen0x.com/learn/bitcoin-layer-2-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8">
@@ -615,6 +627,7 @@ export default function BitcoinLayer2Guide() {
       <LiveMiniStat id="bitcoin" />
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-layer-2-guide" />
+<AuthoritySources url="/learn/bitcoin-layer-2-guide" />
 </div>
   );
 }

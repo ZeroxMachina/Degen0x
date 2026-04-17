@@ -5,8 +5,7 @@
  * related articles, and reading time.
  * Sprint 11 — Content Agent + SEO Specialist
  */
-export const dynamic = "force-dynamic";
-
+export const revalidate = 3600;
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";

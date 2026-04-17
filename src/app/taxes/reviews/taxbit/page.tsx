@@ -11,6 +11,14 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `TaxBit Review (2026) - Free Crypto Tax Reports | degen0x`,
   description: `In-depth TaxBit review for ${CURRENT_YEAR}. Enterprise-grade crypto tax compliance with free tax reports through partner exchanges. Pricing, features, and accuracy.`,
@@ -19,7 +27,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const toc = [
-  { id: "overview", title: "Overview", level: 2 },
+  { id: "overview", title: "TaxBit Review 2026: Institutional-Grade Crypto Tax Reporting | degen0x", level: 2 },
   { id: "key-features", title: "Key Features", level: 2 },
   { id: "pricing", title: "Pricing", level: 2 },
   { id: "pros-cons", title: "Pros & Cons", level: 2 },
@@ -46,6 +54,21 @@ const breadcrumbData = {
 export default function TaxBitReviewPage() {
   return (
     <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <ReviewSchema
+        itemName="TaxBit Review (2026) - Free Crypto Tax Reports"
+        url="https://degen0x.com/taxes/reviews/taxbit"
+        rating={4.5}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
+      <ArticleSchema
+        headline="TaxBit Review (2026) - Free Crypto Tax Reports | degen0x"
+        description="In-depth TaxBit review for ${CURRENT_YEAR}. Enterprise-grade crypto tax compliance with free tax reports through partner exchanges. Pricing, features, and accuracy."
+        url="https://degen0x.com/taxes/reviews/taxbit"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[
         { label: "Home", href: "/" },
@@ -237,6 +260,11 @@ export default function TaxBitReviewPage() {
         </div>
       </div>
       <MethodologyBlock variant="review" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/reviews/taxbit" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/reviews/taxbit" />
     </main>
   );
 }

@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto Copy Trading Guide 2026 — Platforms & Risks | degen0x",
@@ -761,6 +763,7 @@ export default function CryptoCopyTradingGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Copy Trading Guide 2026 \u2014 Platforms & Risks | degen0x", "description": "Complete guide to crypto copy trading. Learn how it works, best platforms (Bitget, Bybit, eToro), risks, and how to choose traders to copy. Social trading", "url": "https://degen0x.com/learn/crypto-copy-trading-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-copy-trading-guide" />
+<AuthoritySources url="/learn/crypto-copy-trading-guide" />
 </main>
   );
 }

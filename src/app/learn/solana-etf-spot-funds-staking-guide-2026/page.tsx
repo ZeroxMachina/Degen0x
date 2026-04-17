@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Solana ETF Spot Funds Staking Guide 2026 — Complete Fee",
   description: "Complete guide to SEC-approved Solana spot ETFs trading 2026. Compare 16 ETFs, staking yields, fees, and regulatory changes from the March 2026 digital",
@@ -328,6 +332,14 @@ export default function SolanaETFGuide() {
 
   return (
     <main className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+      <ArticleSchema
+        headline="Solana ETF Spot Funds Staking Guide 2026 — Complete Fee"
+        description="Complete guide to SEC-approved Solana spot ETFs trading 2026. Compare 16 ETFs, staking yields, fees, and regulatory changes from the March 2026 digital"
+        url="https://degen0x.com/learn/solana-etf-spot-funds-staking-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       {/* Structured data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
@@ -1280,6 +1292,7 @@ export default function SolanaETFGuide() {
       <LiveMiniStat id="solana" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/solana-etf-spot-funds-staking-guide-2026" />
+<AuthoritySources url="/learn/solana-etf-spot-funds-staking-guide-2026" />
 </main>
   );
 }

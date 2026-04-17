@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Gaming 2026: The Best Play-to-Earn & Web3 Games",
   description:
@@ -28,6 +32,14 @@ const breadcrumbData = {
 export default function CryptoGamingGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="Crypto Gaming 2026: The Best Play-to-Earn & Web3 Games"
+        description="A complete guide to crypto gaming in 2026. The best P2E games, how GameFi works, which games actually make money, NFT gaming explained, and what to watch next."
+        url="https://degen0x.com/learn/crypto-gaming-2026-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-8">
         <div className="flex flex-wrap gap-2 mb-3">
@@ -302,6 +314,7 @@ export default function CryptoGamingGuidePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Gaming 2026: The Best Play-to-Earn & Web3 Games", "description": "A complete guide to crypto gaming in 2026. The best P2E games, how GameFi works, which games actually make money, NFT gaming explained, and what to watch next.", "url": "https://degen0x.com/learn/crypto-gaming-2026-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/crypto-gaming-2026-guide" />
+    <AuthoritySources url="/learn/crypto-gaming-2026-guide" />
     </article>
   );
 }

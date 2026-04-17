@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Alpaca Finance Review 2026: Leveraged Yield Farming`,
   description:
@@ -27,6 +36,13 @@ const breadcrumbData = {
 export default function AlpacaFinanceReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Alpaca Finance Review 2026: Leveraged Yield Farming"
+        url="https://degen0x.com/defi-lending/reviews/alpaca-finance"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Alpaca Finance",
@@ -79,6 +95,18 @@ export default function AlpacaFinanceReview() {
         { title: "DeFi on BNB Chain", href: "/defi-lending/learn/defi-on-bnb-chain" },
       ]}
     />
+      <ArticleSchema
+        headline="Alpaca Finance Review 2026: Leveraged Yield Farming"
+        description="Complete Alpaca Finance review covering leveraged yield farming, lending vaults, automated strategies, and risk analysis on BNB Chain and Fantom."
+        url="https://degen0x.com/defi-lending/reviews/alpaca-finance"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/alpaca-finance" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Leveraged Yield Farming", "description": "Complete Alpaca Finance review covering leveraged yield farming, lending vaults, automated strategies, and risk analysis on BNB Chain and Fantom.", "url": "https://degen0x.com/defi-lending/reviews/alpaca-finance", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Grass Protocol DePIN Guide 2026 — AI Data Network",
   description:
@@ -111,6 +115,14 @@ export default function GrassProtocolGuide() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
+      />
+      <ArticleSchema
+        headline="Grass Protocol DePIN Guide 2026 — AI Data Network"
+        description="Complete Grass Protocol guide for 2026. DePIN network monetizing spare bandwidth for AI training. 8.5M users, GRASS token, Season 2 Airdrop."
+        url="https://degen0x.com/learn/grass-protocol-depin-ai-data-network-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
       />
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
@@ -396,6 +408,7 @@ export default function GrassProtocolGuide() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/grass-protocol-depin-ai-data-network-guide-2026" />
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Grass Protocol DePIN Guide 2026 \u2014 AI Data Network", "description": "Complete Grass Protocol guide for 2026. DePIN network monetizing spare bandwidth for AI training. 8.5M users, GRASS token, Season 2 Airdrop.", "url": "https://degen0x.com/learn/grass-protocol-depin-ai-data-network-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

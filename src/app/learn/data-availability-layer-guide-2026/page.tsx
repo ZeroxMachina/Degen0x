@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Data Availability Layer Guide 2026: Celestia vs EigenDA vs",
   description:
@@ -705,6 +707,7 @@ export default function DataAvailabilityGuide() {
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Data Availability Layer Guide 2026: Celestia vs EigenDA vs", "description": "Compare Celestia, EigenDA, and Avail \u2014 the three DA layers powering Ethereum", "url": "https://degen0x.com/learn/data-availability-layer-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/data-availability-layer-guide-2026" />
+<AuthoritySources url="/learn/data-availability-layer-guide-2026" />
 </div>
   );
 }

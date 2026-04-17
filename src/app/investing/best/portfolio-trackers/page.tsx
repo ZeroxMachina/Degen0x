@@ -7,6 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Portfolio Trackers (2026) | degen0x`,
   description: `The best crypto portfolio trackers in ${CURRENT_YEAR}. Compare CoinGecko, Delta, CoinStats, and more for tracking your crypto investments across wallets and exchanges.`,
@@ -42,6 +48,19 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Investing"
+        description="The most comprehensive crypto data platform with portfolio tracking across unlimited wallets, price alerts, and detailed token analytics. Free tier covers most needs."
+        url="/investing/best/portfolio-trackers"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/best/portfolio-trackers" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/best/portfolio-trackers" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

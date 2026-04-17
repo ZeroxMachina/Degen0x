@@ -11,6 +11,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Jupiter vs Uniswap: Best DEX Aggregator? (2026) | degen0x`,
   description: "Detailed comparison of Jupiter (Solana) vs Uniswap (Ethereum). Compare fees, speed, token selection, and features of the two leading DEXs.",
@@ -32,6 +38,14 @@ const breadcrumbData = {
 export default function JupiterVsUniswapPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Jupiter vs Uniswap: Best DEX Aggregator? (2026) | degen0x"
+        description="Detailed comparison of Jupiter (Solana) vs Uniswap (Ethereum). Compare fees, speed, token selection, and features of the two leading DEXs."
+        url="https://degen0x.com/exchanges/compare/jupiter-vs-uniswap"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Crypto Exchanges", href: "/exchanges" }, { label: "Compare", href: "/exchanges/compare" }, { label: "Jupiter vs Uniswap", href: "#" }]} />
       <AffiliateDisclosure />
@@ -142,6 +156,11 @@ export default function JupiterVsUniswapPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/exchanges/compare/jupiter-vs-uniswap" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/compare/jupiter-vs-uniswap" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/compare/jupiter-vs-uniswap" />
     </div>
   );
 }

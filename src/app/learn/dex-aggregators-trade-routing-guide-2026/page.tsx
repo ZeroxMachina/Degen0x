@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "DEX Aggregators Guide 2026: Jupiter, 1inch, CowSwap",
@@ -121,6 +125,14 @@ const breadcrumbData = {
 export default function DexAggregatorsGuidePage() {
   return (
     <div style={{ minHeight: '100vh', background: '#0d1117', color: '#e6edf3' }}>
+      <ArticleSchema
+        headline="DEX Aggregators Guide 2026: Jupiter, 1inch, CowSwap"
+        description="Complete guide to DEX aggregators in 2026. Learn how Jupiter, 1inch, CowSwap, and Odos find the best trade routes, reduce slippage, and protect you from MEV."
+        url="https://degen0x.com/learn/dex-aggregators-trade-routing-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -481,6 +493,7 @@ export default function DexAggregatorsGuidePage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DEX Aggregators Guide 2026: Jupiter, 1inch, CowSwap", "description": "Complete guide to DEX aggregators in 2026. Learn how Jupiter, 1inch, CowSwap, and Odos find the best trade routes, reduce slippage, and protect you from MEV.", "url": "https://degen0x.com/learn/dex-aggregators-trade-routing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/dex-aggregators-trade-routing-guide-2026" />
+<AuthoritySources url="/learn/dex-aggregators-trade-routing-guide-2026" />
 </div>
   );
 }

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Crypto Yield Aggregators & DeFi Vaults Guide 2026 | degen0x',
@@ -238,6 +242,14 @@ export default function YieldAggregatorsVaultsGuide() {
 
   return (
     <article id="top" aria-label="Guide: Crypto Yield Aggregators & DeFi Vaults" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Yield Aggregators & DeFi Vaults Guide 2026 | degen0x"
+        description="Complete guide to yield aggregators and DeFi vaults in 2026. Learn how Yearn, Beefy, Convex, and Sommelier optimize yields, ERC-4626 vault standard,"
+        url="https://degen0x.com/learn/crypto-yield-aggregators-vaults-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -834,6 +846,7 @@ export default function YieldAggregatorsVaultsGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Yield Aggregators & DeFi Vaults Guide 2026 | degen0x", "description": "Complete guide to yield aggregators and DeFi vaults in 2026. Learn how Yearn, Beefy, Convex, and Sommelier optimize yields, ERC-4626 vault standard,", "url": "https://degen0x.com/learn/crypto-yield-aggregators-vaults-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/crypto-yield-aggregators-vaults-guide-2026" />
+      <AuthoritySources url="/learn/crypto-yield-aggregators-vaults-guide-2026" />
       </article>
   );
 }

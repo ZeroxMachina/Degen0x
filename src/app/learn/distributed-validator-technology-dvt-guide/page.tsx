@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Distributed Validator Technology (DVT) Guide | degen0x',
   description: 'Master DVT: how key splitting, threshold signing, and Obol/SSV solve Ethereum staking centralization. Including setup guide.',
@@ -1118,6 +1120,7 @@ export default function DVTGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Distributed Validator Technology (DVT) Guide | degen0x", "description": "Master DVT: how key splitting, threshold signing, and Obol/SSV solve Ethereum staking centralization. Including setup guide.", "url": "https://degen0x.com/learn/distributed-validator-technology-dvt-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/distributed-validator-technology-dvt-guide" />
+<AuthoritySources url="/learn/distributed-validator-technology-dvt-guide" />
 </main>
   );
 }

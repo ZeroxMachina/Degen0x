@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `dYdX Review (2026) | degen0x`,
   description:
@@ -27,6 +36,13 @@ const breadcrumbData = {
 export default function DYdXReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="dYdX Review (2026)"
+        url="https://degen0x.com/exchanges/reviews/dydx"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "dYdX",
@@ -51,7 +67,7 @@ export default function DYdXReviewPage() {
       categorySlug="exchanges"
       overview="dYdX is the premier decentralized perpetual futures exchange, having processed over $1 trillion in cumulative trading volume. Originally built on Ethereum with StarkEx technology, dYdX migrated to its own sovereign blockchain built on the Cosmos SDK in late 2023. This dYdX Chain enables fully decentralized orderbook matching with validator-based consensus, removing any single point of failure. Traders connect their wallets directly, maintain custody of their assets, and trade without intermediaries. The DYDX token serves as the governance and staking token for the chain."
       sections={[
-        { id: "features", title: "Features", content:
+        { id: "features", title: "Features — Exchanges (exchanges / reviews / dydx)", content:
             "dYdX offers perpetual futures trading on 100+ markets with up to 20x leverage. The platform features a professional-grade trading interface with advanced charting, multiple order types (limit, market, stop, trailing stop, take profit), and a fully on-chain orderbook. The dYdX Chain uses a proof-of-stake consensus mechanism with DYDX stakers earning trading fee revenue. MegaVault allows users to provide liquidity and earn yield.",
         },
         { id: "fees", title: "Fees", content:
@@ -90,6 +106,18 @@ export default function DYdXReviewPage() {
         { title: "Decentralized Exchange Guide", href: "/exchanges/learn/decentralized-exchange-guide" },
       ]}
     />
+      <ArticleSchema
+        headline="dYdX Review (2026) | degen0x"
+        description="Complete dYdX review covering perpetual futures, fees, governance, and decentralized trading features. Is dYdX the best DEX for derivatives?"
+        url="https://degen0x.com/exchanges/reviews/dydx"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/dydx" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Features", "description": "Complete dYdX review covering perpetual futures, fees, governance, and decentralized trading features. Is dYdX the best DEX for derivatives?", "url": "https://degen0x.com/exchanges/reviews/dydx", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

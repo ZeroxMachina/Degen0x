@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: 'Avail DA Unification Layer Guide 2026 - degen0x',
@@ -87,6 +91,14 @@ const AvailGuide = () => {
 
   return (
     <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+      <ArticleSchema
+        headline="Avail DA Unification Layer Guide 2026 - degen0x"
+        description="Complete guide to Avail: modular DA layer, cross-chain coordination via Nexus, shared security through Fusion. Architecture, tokenomics, partnerships."
+        url="https://degen0x.com/learn/avail-da-unification-layer-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       {/* JSON-LD Schemas */}
       <script
         type="application/ld+json"
@@ -1192,6 +1204,7 @@ const AvailGuide = () => {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Avail DA Unification Layer Guide 2026 - degen0x", "description": "Complete guide to Avail: modular DA layer, cross-chain coordination via Nexus, shared security through Fusion. Architecture, tokenomics, partnerships.", "url": "https://degen0x.com/learn/avail-da-unification-layer-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/avail-da-unification-layer-guide-2026" />
 </div>
   );
 };

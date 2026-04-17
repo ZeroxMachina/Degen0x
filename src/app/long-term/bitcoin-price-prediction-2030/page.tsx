@@ -3,6 +3,12 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Bitcoin Price Prediction 2030 Models',
   description: 'Expert Bitcoin price forecasts for 2030 using S2F, adoption curves, and macro cycles. Real data-driven models for long-term BTC valuation.',
@@ -63,6 +69,19 @@ export default function BitcoinPrice2030() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <ArticleSchema
+        headline="Bitcoin Price Prediction 2030 Models"
+        description="Expert Bitcoin price forecasts for 2030 using S2F, adoption curves, and macro cycles. Real data-driven models for long-term BTC valuation."
+        url="https://degen0x.com/long-term/bitcoin-price-prediction-2030"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Long Term"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/long-term/bitcoin-price-prediction-2030" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/long-term/bitcoin-price-prediction-2030" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <header style={{ borderBottom: '1px solid #30363d', padding: '2rem 1rem' }}>
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>

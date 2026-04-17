@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Jupiter Guide 2026: Solana's DeFi Superapp | degen0x",
@@ -747,6 +749,7 @@ export default function JupiterSolanaGuidePage() {
 </div>
       <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/jupiter-solana-guide" />
+    <AuthoritySources url="/learn/jupiter-solana-guide" />
     </article>
   );
 }

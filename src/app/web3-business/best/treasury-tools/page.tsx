@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best DAO Treasury Tools of 2026 - Multi-Sig & Fund Management | degen0x`,
   description: `Compare the best DAO treasury management tools of ${CURRENT_YEAR}. Multi-signature wallets, spending controls, on-chain accounting, and fund management platforms ranked by security, features, and ease of use.`,
@@ -116,6 +122,19 @@ const breadcrumbData = {
 export default function TreasuryToolsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Security (35%)"
+        description="The industry-standard multi-signature wallet used by the majority of DAOs and crypto organizations. Supports multiple chains, customizable signing thresholds,"
+        url="/web3-business/best/treasury-tools"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/best/treasury-tools" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/best/treasury-tools" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

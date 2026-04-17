@@ -10,6 +10,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Lombard Finance Guide 2026 — LBTC Bitcoin Liquid Staking",
   description: "Complete Lombard Finance guide 2026: LBTC bitcoin liquid staking token, Babylon integration, Security Consortium, BARD tokenomics, multi-chain DeFi",
@@ -126,6 +130,14 @@ export default function LombardFinanceLBTCGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Lombard Finance Guide 2026 — LBTC Bitcoin Liquid Staking"
+        description="Complete Lombard Finance guide 2026: LBTC bitcoin liquid staking token, Babylon integration, Security Consortium, BARD tokenomics, multi-chain DeFi"
+        url="https://degen0x.com/learn/lombard-finance-lbtc-bitcoin-liquid-staking-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -341,6 +353,7 @@ export default function LombardFinanceLBTCGuide() {
       <LiveMiniStat id="bitcoin" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/lombard-finance-lbtc-bitcoin-liquid-staking-guide-2026" />
+<AuthoritySources url="/learn/lombard-finance-lbtc-bitcoin-liquid-staking-guide-2026" />
 </div>
   );
 }

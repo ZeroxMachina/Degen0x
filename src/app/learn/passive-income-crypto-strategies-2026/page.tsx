@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Passive Income Crypto Strategies 2026: Staking, Yield",
   description: 'Crypto passive income 2026: Staking (3.5-10% APY), LP fees (5-40% APY), Lending (3-8% APY), Real Yield (2-6% APY). Comparison table, risks, and strategies.',
@@ -194,6 +198,14 @@ export default function PassiveIncomeCryptoStrategies2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Passive Income Crypto Strategies 2026: Staking, Yield"
+        description="Crypto passive income 2026: Staking (3.5-10% APY), LP fees (5-40% APY), Lending (3-8% APY), Real Yield (2-6% APY). Comparison table, risks, and strategies."
+        url="https://degen0x.com/learn/passive-income-crypto-strategies-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -461,6 +473,7 @@ export default function PassiveIncomeCryptoStrategies2026() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Passive Income Crypto Strategies 2026: Staking, Yield", "description": "Crypto passive income 2026: Staking (3.5-10% APY), LP fees (5-40% APY), Lending (3-8% APY), Real Yield (2-6% APY). Comparison table, risks, and strategies.", "url": "https://degen0x.com/learn/passive-income-crypto-strategies-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/passive-income-crypto-strategies-2026" />
+      <AuthoritySources url="/learn/passive-income-crypto-strategies-2026" />
       </article>
   );
 }

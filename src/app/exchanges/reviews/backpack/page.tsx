@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "Backpack Exchange",
   slug: "backpack",
@@ -149,6 +158,13 @@ const breadcrumbData = {
 export default function BackpackReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Backpack Exchange Review (2026) - Solana-Native CEX"
+        url="https://degen0x.com/exchanges/reviews/backpack"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
@@ -162,6 +178,18 @@ export default function BackpackReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="Backpack Exchange Review (2026) - Solana-Native CEX | degen0x"
+        description="Backpack Exchange is a regulated crypto exchange built by the team behind the Backpack Wallet and Mad Lads NFT collection, offering spot and futures trading"
+        url="https://degen0x.com/exchanges/reviews/backpack"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/backpack" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Team & Background", "description": "Backpack Exchange is a regulated crypto exchange built by the team behind the Backpack Wallet and Mad Lads NFT collection, offering spot and futures trading", "url": "https://degen0x.com/exchanges/reviews/backpack", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

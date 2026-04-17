@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Telegram Crypto Trading Bots Guide 2026 — Top Bots, Fees &",
   description: "Compare the best Telegram trading bots in 2026: Trojan, BONKbot, Maestro, Banana Gun & BullX. Fees, MEV protection, security risks, and how to get started",
@@ -44,6 +48,14 @@ const breadcrumbData = {
 export default function TelegramTradingBotsGuidePage() {
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
+      <ArticleSchema
+        headline="Telegram Crypto Trading Bots Guide 2026 — Top Bots, Fees &"
+        description="Compare the best Telegram trading bots in 2026: Trojan, BONKbot, Maestro, Banana Gun & BullX. Fees, MEV protection, security risks, and how to get started"
+        url="https://degen0x.com/learn/telegram-trading-bots-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div className="mb-4">
         <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Learn", href: "/learn" }, { label: "Telegram Trading Bots Guide" }]} />
@@ -381,6 +393,7 @@ export default function TelegramTradingBotsGuidePage() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/telegram-trading-bots-guide-2026" />
+      <AuthoritySources url="/learn/telegram-trading-bots-guide-2026" />
       </article>
   );
 }

@@ -11,6 +11,11 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import AuthoritySources from '@/components/AuthoritySources';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `10 Best NFT Marketplaces of 2026 (Ranked & Reviewed)`,
   description: `Compare the top 10 NFT marketplaces of ${CURRENT_YEAR}. We tested fees, creator tools, security, and user experience. Find the best platform for buying, selling, and creating NFTs.`,
@@ -69,6 +74,14 @@ export default function BestNftMarketplacesPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Fees (25%)"
+        description="Fees (25%)"
+        url="/nfts/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -301,7 +314,11 @@ export default function BestNftMarketplacesPage() {
       </div>
     </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Fees (25%)", "description": "Compare the top 10 NFT marketplaces of ${CURRENT_YEAR}. We tested fees, creator tools, security, and user experience. Find the best platform for buying, selling, and creating NFTs.", "url": "https://degen0x.com/nfts/best", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/nfts/best" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/best" />
 </>
   );
 }

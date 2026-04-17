@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `BitPay Review 2026: Fees, Features, Pros & Cons`,
   description: "Comprehensive BitPay review covering crypto payment processing, debit card features, supported currencies, fees, and whether BitPay is the right crypto",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function BitPayReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="BitPay Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/spending/reviews/bitpay"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "BitPay",
@@ -148,6 +164,18 @@ For merchants, BitPay processes over one billion dollars in crypto payments annu
         { title: "Crypto Payment Apps Guide", href: "/spending/learn/crypto-payment-apps-guide" },
       ]}
     />
+      <ArticleSchema
+        headline="BitPay Review 2026: Fees, Features, Pros & Cons"
+        description="Comprehensive BitPay review covering crypto payment processing, debit card features, supported currencies, fees, and whether BitPay is the right crypto"
+        url="https://degen0x.com/spending/reviews/bitpay"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/reviews/bitpay" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "BitPay Debit Card Experience", "description": "Comprehensive BitPay review covering crypto payment processing, debit card features, supported currencies, fees, and whether BitPay is the right crypto", "url": "https://degen0x.com/spending/reviews/bitpay", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

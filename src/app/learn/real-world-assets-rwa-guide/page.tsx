@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Real World Assets (RWA) in Crypto: Complete Guide",
   description: "Learn how real-world assets are being tokenized on blockchain. Explore RWA protocols, treasury tokenization, and the regulatory landscape shaping this emerging",
@@ -27,6 +31,14 @@ const breadcrumbData = {
 export default function RWAGuide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <ArticleSchema
+        headline="Real World Assets (RWA) in Crypto: Complete Guide"
+        description="Learn how real-world assets are being tokenized on blockchain. Explore RWA protocols, treasury tokenization, and the regulatory landscape shaping this emerging"
+        url="https://degen0x.com/learn/real-world-assets-rwa-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8">
@@ -515,6 +527,7 @@ export default function RWAGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real World Assets (RWA) in Crypto: Complete Guide", "description": "Learn how real-world assets are being tokenized on blockchain. Explore RWA protocols, treasury tokenization, and the regulatory landscape shaping this emerging", "url": "https://degen0x.com/learn/real-world-assets-rwa-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/real-world-assets-rwa-guide" />
+<AuthoritySources url="/learn/real-world-assets-rwa-guide" />
 </div>
   );
 }

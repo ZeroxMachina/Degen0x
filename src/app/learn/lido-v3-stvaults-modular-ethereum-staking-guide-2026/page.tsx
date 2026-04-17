@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Lido V3 Guide 2026 — stVaults, Modular Staking &",
   description: "Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, leverage staking strategies, and the evolution of Ethereum liquid",
@@ -136,6 +140,14 @@ export default function LidoV3Guide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Lido V3 Guide 2026 — stVaults, Modular Staking &"
+        description="Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, leverage staking strategies, and the evolution of Ethereum liquid"
+        url="https://degen0x.com/learn/lido-v3-stvaults-modular-ethereum-staking-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Learn', href: '/learn' }, { label: 'Lido V3 Stvaults Modular Ethereum Stakin...' }]} />
       <div style={containerStyle}>
@@ -711,6 +723,7 @@ export default function LidoV3Guide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lido V3 Guide 2026 \u2014 stVaults, Modular Staking &", "description": "Complete guide to Lido V3 stVaults: modular staking infrastructure, institutional use cases, leverage staking strategies, and the evolution of Ethereum liquid", "url": "https://degen0x.com/learn/lido-v3-stvaults-modular-ethereum-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/lido-v3-stvaults-modular-ethereum-staking-guide-2026" />
 </div>
 
   );

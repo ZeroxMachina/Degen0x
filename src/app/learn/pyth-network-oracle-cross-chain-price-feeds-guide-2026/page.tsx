@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Pyth Network Guide 2026 — Cross-Chain Oracle, Price Feeds &",
   description: "Complete guide to Pyth Network: pull-based oracle architecture, 2,800+ price feeds across 50+ chains, Oracle Integrity Staking, PYTH tokenomics, and how it",
@@ -127,6 +131,14 @@ export default function PythNetworkGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Pyth Network Guide 2026 — Cross-Chain Oracle, Price Feeds &"
+        description="Complete guide to Pyth Network: pull-based oracle architecture, 2,800+ price feeds across 50+ chains, Oracle Integrity Staking, PYTH tokenomics, and how it"
+        url="https://degen0x.com/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={containerStyle}>
         <script
@@ -452,6 +464,7 @@ export default function PythNetworkGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Pyth Network Guide 2026 \u2014 Cross-Chain Oracle, Price Feeds &", "description": "Complete guide to Pyth Network: pull-based oracle architecture, 2,800+ price feeds across 50+ chains, Oracle Integrity Staking, PYTH tokenomics, and how it", "url": "https://degen0x.com/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="bridging-flow" />
       <RelatedContent category="learn" currentSlug="/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026" />
+<AuthoritySources url="/learn/pyth-network-oracle-cross-chain-price-feeds-guide-2026" />
 </div>
 
   );

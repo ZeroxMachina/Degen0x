@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Bitcoin Accumulation Strategy Guide: DCA, Value Averaging &",
   description: 'Master Bitcoin accumulation with DCA backtests (2015-2025), value averaging, stacking sats, halving cycles, and Fear & Greed Index signals for maximum returns.',
@@ -174,6 +180,19 @@ export default function BitcoinAccumulationStrategy() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bitcoin Accumulation Strategy Guide: DCA, Value Averaging &"
+        description="Master Bitcoin accumulation with DCA backtests (2015-2025), value averaging, stacking sats, halving cycles, and Fear & Greed Index signals for maximum returns."
+        url="https://degen0x.com/long-term/bitcoin-accumulation-strategy-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Long Term"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/long-term/bitcoin-accumulation-strategy-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/long-term/bitcoin-accumulation-strategy-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

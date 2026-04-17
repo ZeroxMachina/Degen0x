@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Undercollateralized DeFi Loans Guide 2026: Maple,",
   description: "Complete guide to undercollateralized lending: Maple (8-12% APY), Goldfinch (10-20% APY), TrueFi. Enterprise credit on-chain with higher yields and default",
@@ -168,6 +174,19 @@ export default function UndercollateralizedDefiLoansGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Undercollateralized DeFi Loans Guide 2026: Maple,"
+        description="Complete guide to undercollateralized lending: Maple (8-12% APY), Goldfinch (10-20% APY), TrueFi. Enterprise credit on-chain with higher yields and default"
+        url="https://degen0x.com/defi-lending/undercollateralized-defi-loans"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/undercollateralized-defi-loans" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/undercollateralized-defi-loans" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

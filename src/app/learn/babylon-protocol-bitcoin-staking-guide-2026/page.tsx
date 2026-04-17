@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Babylon Protocol Guide 2026: Bitcoin Staking & BABY Token",
   description: "Complete Babylon Protocol guide 2026: Bitcoin staking with EOTS, BABY token dual staking, Babylon Genesis L1 blockchain, trustless Bitcoin vaults, and",
@@ -326,6 +330,14 @@ export default function BabylonProtocolGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Babylon Protocol Guide 2026: Bitcoin Staking & BABY Token"
+        description="Complete Babylon Protocol guide 2026: Bitcoin staking with EOTS, BABY token dual staking, Babylon Genesis L1 blockchain, trustless Bitcoin vaults, and"
+        url="https://degen0x.com/learn/babylon-protocol-bitcoin-staking-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={containerStyle}>
         {/* Breadcrumb Navigation */}
@@ -856,6 +868,7 @@ export default function BabylonProtocolGuide() {
       <LiveMiniStat id="bitcoin" />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/babylon-protocol-bitcoin-staking-guide-2026" />
+<AuthoritySources url="/learn/babylon-protocol-bitcoin-staking-guide-2026" />
 </div>
 
   );

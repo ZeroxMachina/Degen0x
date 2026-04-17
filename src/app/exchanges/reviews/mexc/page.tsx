@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `MEXC Review (2026) | degen0x`,
   description:
@@ -27,6 +36,13 @@ const breadcrumbData = {
 export default function MEXCReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="MEXC Review (2026)"
+        url="https://degen0x.com/exchanges/reviews/mexc"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "MEXC",
@@ -51,7 +67,7 @@ export default function MEXCReviewPage() {
       categorySlug="exchanges"
       overview="MEXC has rapidly grown into one of the largest crypto exchanges by trading volume, particularly popular among altcoin traders seeking early access to new token listings. The platform lists new tokens faster than most competitors, often within days of a project&apos;s launch. With zero maker fees on spot trading and competitive taker fees, MEXC offers an attractive cost structure for active traders. The exchange supports spot, margin, futures, and leveraged ETF products."
       sections={[
-        { id: "features", title: "Features", content:
+        { id: "features", title: "Features — Exchanges (exchanges / reviews / mexc)", content:
             "MEXC offers spot trading with over 2,000 trading pairs, perpetual futures with up to 200x leverage, leveraged ETFs for simplified leverage exposure, and a launchpad for new token sales. The platform includes copy trading features, grid trading bots, and a comprehensive API for algorithmic traders. The MX token provides fee discounts and governance participation.",
         },
         { id: "fees", title: "Fees", content:
@@ -91,6 +107,18 @@ export default function MEXCReviewPage() {
         { title: "Exchange Comparison Tool", href: "/exchanges/tools/exchange-comparison" },
       ]}
     />
+      <ArticleSchema
+        headline="MEXC Review (2026) | degen0x"
+        description="In-depth MEXC exchange review covering fees, features, security, and supported assets. Is MEXC the right exchange for you?"
+        url="https://degen0x.com/exchanges/reviews/mexc"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/mexc" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Features", "description": "In-depth MEXC exchange review covering fees, features, security, and supported assets. Is MEXC the right exchange for you?", "url": "https://degen0x.com/exchanges/reviews/mexc", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

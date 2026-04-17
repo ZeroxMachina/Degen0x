@@ -6,6 +6,15 @@ import { Product } from "@/lib/types";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product: Product = {
   name: "BENQI",
   slug: "benqi",
@@ -40,13 +49,20 @@ const breadcrumbData = {
 export default function BenqiReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="BENQI Review (2026)"
+        url="https://degen0x.com/defi-lending/reviews/benqi"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="DeFi Lending"
       categorySlug="defi-lending"
       overview="BENQI has established itself as the dominant lending protocol on Avalanche, combining traditional lending and borrowing markets with liquid staking through sAVAX. The protocol offers a familiar Compound-style lending experience with the added benefit of Avalanche's fast finality and low transaction costs. BENQI's liquid staking product allows AVAX holders to stake and receive sAVAX, which can then be used as collateral in BENQI's lending markets, creating a capital-efficient loop. The protocol has maintained stable TVL and a clean security record, making it the go-to lending solution for the Avalanche ecosystem."
       sections={[
-        { id: "lending", title: "Lending & Borrowing Markets", content: "BENQI operates lending markets for major Avalanche assets including AVAX, USDC, USDT, WETH, WBTC, and several other tokens. The protocol uses a utilization-based interest rate model similar to Compound, where rates adjust automatically based on supply and demand. Lenders earn interest by depositing assets into pools, while borrowers provide collateral to take loans. Each asset has configurable parameters including collateral factors, reserve factors, and borrowing caps set through governance. The interface is clean and intuitive, with clear displays of rates, utilization, and available liquidity." },
+        { id: "lending", title: "Lending & Borrowing Markets — Defi-Lending (defi-lending / reviews / benqi)", content: "BENQI operates lending markets for major Avalanche assets including AVAX, USDC, USDT, WETH, WBTC, and several other tokens. The protocol uses a utilization-based interest rate model similar to Compound, where rates adjust automatically based on supply and demand. Lenders earn interest by depositing assets into pools, while borrowers provide collateral to take loans. Each asset has configurable parameters including collateral factors, reserve factors, and borrowing caps set through governance. The interface is clean and intuitive, with clear displays of rates, utilization, and available liquidity." },
         { id: "liquid-staking", title: "sAVAX Liquid Staking", content: "BENQI's liquid staking product lets users stake AVAX and receive sAVAX in return. sAVAX is a yield-bearing token that appreciates relative to AVAX as staking rewards accrue. Unlike native AVAX staking which has a minimum delegation of 25 AVAX and a lock-up period, sAVAX can be acquired in any amount and used immediately in DeFi. sAVAX can be used as collateral on BENQI's lending platform, deposited in liquidity pools on Trader Joe and other Avalanche DEXs, or held to earn staking yield. This combination of staking and DeFi utility makes sAVAX a core building block of the Avalanche ecosystem." },
         { id: "ecosystem", title: "Avalanche Ecosystem Integration", content: "BENQI is deeply integrated into the Avalanche DeFi ecosystem. sAVAX is accepted as collateral across multiple Avalanche protocols beyond BENQI itself. The protocol participates in Avalanche Foundation incentive programs and has received grants to boost liquidity. BENQI's qiTokens (receipt tokens for lending deposits) are integrated with yield aggregators and other Avalanche DeFi protocols. The protocol also supports Avalanche subnets, potentially expanding to provide lending services on application-specific chains within the Avalanche network." },
         { id: "tokenomics", title: "QI Token & Governance", content: "QI is BENQI's governance token used for voting on protocol parameters, emissions, and strategic decisions. QI can be staked in the veQI model to boost rewards and direct emissions to specific markets. The token also earns a share of protocol revenue through staking. QI emissions are distributed to lenders and borrowers as additional incentives on top of base interest rates. While QI provides governance utility, its price performance has been modest compared to the broader market, which is common for DeFi governance tokens on smaller ecosystems." },
@@ -63,6 +79,18 @@ export default function BenqiReview() {
       relatedReviews={[{ name: "Aave", slug: "/defi-lending/reviews/aave" }, { name: "Venus Protocol", slug: "/defi-lending/reviews/venus" }]}
       relatedGuides={[{ title: "How to Earn Yield", href: "/defi-lending/learn/how-to-earn-yield" }, { title: "Impermanent Loss Guide", href: "/defi-lending/learn/impermanent-loss" }]}
     />
+      <ArticleSchema
+        headline="BENQI Review (2026) | degen0x"
+        description="BENQI is the leading lending and liquid staking protocol on Avalanche, offering competitive rates for lending and borrowing plus sAVAX liquid staking for"
+        url="https://degen0x.com/defi-lending/reviews/benqi"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/benqi" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Lending & Borrowing Markets", "description": "BENQI is the leading lending and liquid staking protocol on Avalanche, offering competitive rates for lending and borrowing plus sAVAX liquid staking for", "url": "https://degen0x.com/defi-lending/reviews/benqi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

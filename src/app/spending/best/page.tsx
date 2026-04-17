@@ -8,6 +8,12 @@ import { Product } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Ways to Spend Crypto in 2026 - Cards, Apps & More | degen0x`,
   description: `Compare the best crypto debit cards, payment apps, and spending options in ${CURRENT_YEAR}. Expert reviews of Crypto.com Visa, Coinbase Card, BitPay, and more.`,
@@ -81,7 +87,7 @@ const topSpendingProducts: Product[] = [
 ];
 
 const categoryLinks = [
-  { title: "Best Crypto Debit Cards", href: "/spending/best/debit-cards", description: "Complete ranking of all crypto debit cards with detailed comparisons" },
+  { title: "Best Crypto Debit Cards — Spending", href: "/spending/best/debit-cards", description: "Complete ranking of all crypto debit cards with detailed comparisons" },
   { title: "Best Crypto Cashback Cards", href: "/spending/best/cashback", description: "Cards with the highest crypto cashback rewards" },
   { title: "Best Crypto Cards for Travel", href: "/spending/best/travel", description: "No foreign transaction fees and global acceptance" },
   { title: "Best Crypto Rewards Cards", href: "/spending/best/rewards", description: "Maximize your earnings with every purchase" },
@@ -133,6 +139,19 @@ export default function BestSpendingPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best Crypto Debit Cards — Spending"
+        description="The leading crypto debit card with up to 5% cashback in CRO, free Spotify and Netflix rebates on higher tiers, and no annual fee on the base card. Accepted"
+        url="/spending/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Spending"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/spending/best" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Security Masterclass 2026: Complete Guide to",
   description: "Master crypto security in 2026. Hardware wallets, seed phrase management, phishing protection, smart contract audits, multi-sig strategies, and DeFi safety",
@@ -56,6 +60,14 @@ export default function CryptoSecurityMasterclassPage() {
 
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh" }}>
+      <ArticleSchema
+        headline="Crypto Security Masterclass 2026: Complete Guide to"
+        description="Master crypto security in 2026. Hardware wallets, seed phrase management, phishing protection, smart contract audits, multi-sig strategies, and DeFi safety"
+        url="https://degen0x.com/learn/crypto-security-masterclass-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
@@ -760,6 +772,7 @@ export default function CryptoSecurityMasterclassPage() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Security Masterclass 2026: Complete Guide to", "description": "Master crypto security in 2026. Hardware wallets, seed phrase management, phishing protection, smart contract audits, multi-sig strategies, and DeFi safety", "url": "https://degen0x.com/learn/crypto-security-masterclass-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-security-masterclass-2026" />
+<AuthoritySources url="/learn/crypto-security-masterclass-2026" />
 </main>
   );
 }

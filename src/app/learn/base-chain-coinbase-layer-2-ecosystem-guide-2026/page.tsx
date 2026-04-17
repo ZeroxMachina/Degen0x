@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Base Chain Ecosystem Guide 2026 — Coinbase Layer 2 Explained",
@@ -117,6 +121,14 @@ export default function BaseChainEcosystemGuide2026() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="Base Chain Ecosystem Guide 2026 — Coinbase Layer 2 Explained"
+        description="Complete guide to Base, Coinbase\"
+        url="https://degen0x.com/learn/base-chain-coinbase-layer-2-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -584,6 +596,7 @@ export default function BaseChainEcosystemGuide2026() {
             Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
           </p>
         </div>
+      <AuthoritySources url="/learn/base-chain-coinbase-layer-2-ecosystem-guide-2026" />
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Base Chain Ecosystem Guide 2026 \u2014 Coinbase Layer 2 Explained", "description": "Complete guide to Base, Coinbase\\", "url": "https://degen0x.com/learn/base-chain-coinbase-layer-2-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>

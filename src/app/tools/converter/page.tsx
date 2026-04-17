@@ -6,6 +6,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto Converter - BTC to USD, ETH to EUR | Live Rates",
@@ -49,6 +57,24 @@ const breadcrumbData = {
 export default function ConverterPage() {
   return (
     <div style={{ background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="Crypto Converter - BTC to USD, ETH to EUR | Live Rates"
+        description="Convert Bitcoin, Ethereum, and 20+ cryptocurrencies to USD, EUR, GBP in real-time. Two-way crypto-to-fiat converter with live CoinGecko prices. Fast, accurate,"
+        url="/tools/converter"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/converter" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/converter" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/converter"
+        name="Crypto Converter - BTC to USD, ETH to EUR"
+        description="Convert Bitcoin, Ethereum, and 20+ cryptocurrencies to USD, EUR, GBP in real-time. Two-way crypto-to-fiat converter with live CoinGecko prices. Fast, accurate,"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <div style={{ maxWidth: 1200, margin: "0 auto", padding: "2rem 1rem 4rem" }}>
         <Breadcrumb

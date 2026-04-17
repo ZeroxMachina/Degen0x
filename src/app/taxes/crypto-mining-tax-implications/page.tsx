@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Mining Tax Implications 2026: ASIC Depreciation &",
   description: "Complete guide to mining tax. Hobby vs business mining classification, self-employment tax, equipment depreciation (Section 179), electricity deductions, pool",
@@ -203,6 +209,19 @@ export default function CryptoMiningTaxGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Mining Tax Implications 2026: ASIC Depreciation &"
+        description="Complete guide to mining tax. Hobby vs business mining classification, self-employment tax, equipment depreciation (Section 179), electricity deductions, pool"
+        url="https://degen0x.com/taxes/crypto-mining-tax-implications"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/crypto-mining-tax-implications" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/crypto-mining-tax-implications" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

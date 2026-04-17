@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Stablecoin Payments Infrastructure Guide 2026: From BVNK to",
   description: "Comprehensive guide to stablecoin payment infrastructure in 2026. Learn about Mastercard's $1.8B BVNK acquisition, how settlement rails work, and what it means for crypto users.",
@@ -458,6 +460,7 @@ export default function StablecoinPaymentsGuide() {
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Stablecoin Payments Infrastructure Guide 2026: From BVNK to", "description": "Comprehensive guide to stablecoin payment infrastructure in 2026. Learn about Mastercard", "url": "https://degen0x.com/learn/stablecoin-payments-infrastructure-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/stablecoin-payments-infrastructure-guide-2026" />
+<AuthoritySources url="/learn/stablecoin-payments-infrastructure-guide-2026" />
 </div>
   );
 }

@@ -9,6 +9,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Bitcoin vs Ethereum: Which to Buy? 2026 Guide',
   description: 'Bitcoin vs Ethereum comparison: store of value vs DeFi utility. Compare market cap, supply, consensus, and investment thesis. April 2026.',
@@ -156,6 +160,14 @@ export default function BitcoinVsEthereumInvestment() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bitcoin vs Ethereum: Which to Buy? 2026 Guide"
+        description="Bitcoin vs Ethereum comparison: store of value vs DeFi utility. Compare market cap, supply, consensus, and investment thesis. April 2026."
+        url="https://degen0x.com/compare/bitcoin-vs-ethereum-investment"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -427,6 +439,7 @@ export default function BitcoinVsEthereumInvestment() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/bitcoin-vs-ethereum-investment" />
+      <AuthoritySources url="/compare/bitcoin-vs-ethereum-investment" />
       </article>
   );
 }

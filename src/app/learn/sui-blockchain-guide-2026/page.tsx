@@ -11,6 +11,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token",
   description: "Complete Sui blockchain guide covering object-centric architecture, Move language, ecosystem, tokenomics, and how SUI compares to Solana. Updated March 2026.",
@@ -78,6 +82,14 @@ const breadcrumbData = {
 export default function SuiBlockchainGuide() {
   return (
     <div style={{ color: S.text, minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <ArticleSchema
+        headline="Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token"
+        description="Complete Sui blockchain guide covering object-centric architecture, Move language, ecosystem, tokenomics, and how SUI compares to Solana. Updated March 2026."
+        url="https://degen0x.com/learn/sui-blockchain-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <ArticleStructuredData
         title="Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token Explained"
@@ -720,6 +732,7 @@ export default function SuiBlockchainGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sui Blockchain Guide 2026: Architecture, DeFi & SUI Token", "description": "Complete Sui blockchain guide covering object-centric architecture, Move language, ecosystem, tokenomics, and how SUI compares to Solana. Updated March 2026.", "url": "https://degen0x.com/learn/sui-blockchain-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="sui" />
       <RelatedContent category="learn" currentSlug="/learn/sui-blockchain-guide-2026" />
+<AuthoritySources url="/learn/sui-blockchain-guide-2026" />
 </div>
   );
 }

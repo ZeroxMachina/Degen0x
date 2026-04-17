@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `TD Ameritrade Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth TD Ameritrade crypto review covering Bitcoin futures, thinkorswim platform, fees, and how the Schwab integration affects crypto trading.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function TDAmeritradeCryptoReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="TD Ameritrade Crypto Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/exchanges/reviews/td-ameritrade-crypto"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "TD Ameritrade Crypto",
@@ -56,7 +72,7 @@ Through thinkorswim, traders can access CME Bitcoin and Micro Bitcoin futures, p
 
 As part of the Schwab family, TD Ameritrade accounts benefit from SIPC protection, FDIC insurance on cash, and the financial backing of one of the world's largest brokerage firms. The ongoing migration to the Schwab platform may bring changes to available features and account structures."
       sections={[
-        { id: "user-experience", title: "User Experience", content: "The thinkorswim platform is the star of the TD Ameritrade experience. It is a desktop application that provides institutional-grade charting, analysis, and trading capabilities. For crypto, this means you can analyze Bitcoin futures and ETFs with the same tools professional traders use for stocks and options. The platform supports custom layouts, multi-monitor setups, real-time streaming data, and a scripting language (thinkScript) for custom indicators and automated strategies. The learning curve is steep, and beginners may find the interface overwhelming. The web-based interface and mobile app offer simpler alternatives but with fewer features. For crypto-specific users, the experience is focused on Bitcoin and Ethereum through derivatives and ETFs rather than direct spot trading." },
+        { id: "user-experience", title: "User Experience — Exchanges (exchanges / reviews / td-ameritrade-crypto)", content: "The thinkorswim platform is the star of the TD Ameritrade experience. It is a desktop application that provides institutional-grade charting, analysis, and trading capabilities. For crypto, this means you can analyze Bitcoin futures and ETFs with the same tools professional traders use for stocks and options. The platform supports custom layouts, multi-monitor setups, real-time streaming data, and a scripting language (thinkScript) for custom indicators and automated strategies. The learning curve is steep, and beginners may find the interface overwhelming. The web-based interface and mobile app offer simpler alternatives but with fewer features. For crypto-specific users, the experience is focused on Bitcoin and Ethereum through derivatives and ETFs rather than direct spot trading." },
         { id: "fees", title: "Fees & Pricing", content: "ETF trades are commission-free, making Bitcoin and Ethereum ETF purchases cost-effective (minus the ETF's own expense ratio). Bitcoin futures carry a fee of $2.25 per contract. Micro Bitcoin futures are available at the same per-contract rate but with smaller notional values. There are no account minimums for standard accounts, though futures trading requires margin approval and adequate account balance. The fee structure is transparent and competitive for the type of instruments offered." },
         { id: "security", title: "Security", content: "As part of Charles Schwab, TD Ameritrade accounts benefit from institutional-grade security. Securities are protected by SIPC up to $500,000, and cash balances are FDIC insured. The platform uses multi-factor authentication, device recognition, and comprehensive fraud monitoring. Since the platform deals with regulated futures contracts and ETFs rather than direct crypto custody, there are no private key risks. The combined Schwab entity manages over $8 trillion in client assets, providing exceptional financial stability." },
         { id: "supported-assets", title: "Supported Assets", content: "Crypto exposure is available through CME Bitcoin futures, Micro Bitcoin futures, all listed spot Bitcoin and Ethereum ETFs, and crypto-related stocks. Direct trading of Bitcoin, Ethereum, or any other cryptocurrency is not available. The futures contracts provide leveraged exposure, which can amplify both gains and losses. ETFs offer a simpler, long-only way to gain crypto exposure within a traditional brokerage account." },
@@ -82,6 +98,18 @@ As part of the Schwab family, TD Ameritrade accounts benefit from SIPC protectio
         { title: "Perpetual Futures Explained", href: "/exchanges/learn/perpetual-futures-explained" },
       ]}
     />
+      <ArticleSchema
+        headline="TD Ameritrade Crypto Review 2026: Fees, Features, Pros & Cons"
+        description="In-depth TD Ameritrade crypto review covering Bitcoin futures, thinkorswim platform, fees, and how the Schwab integration affects crypto trading."
+        url="https://degen0x.com/exchanges/reviews/td-ameritrade-crypto"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/td-ameritrade-crypto" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth TD Ameritrade crypto review covering Bitcoin futures, thinkorswim platform, fees, and how the Schwab integration affects crypto trading.", "url": "https://degen0x.com/exchanges/reviews/td-ameritrade-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

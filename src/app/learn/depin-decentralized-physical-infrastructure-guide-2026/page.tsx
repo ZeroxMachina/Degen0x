@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "DePIN Guide 2026: Decentralized Physical Infrastructure",
@@ -198,6 +202,14 @@ export default function DePINGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="DePIN Guide 2026: Decentralized Physical Infrastructure"
+        description="Complete guide to DePIN (Decentralized Physical Infrastructure Networks) in 2026. Explore Helium, Filecoin, Render, io.net, and 650+ projects generating $150M"
+        url="https://degen0x.com/learn/depin-decentralized-physical-infrastructure-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -746,6 +758,7 @@ export default function DePINGuide() {
           <a href="/learn/sei-network-parallel-evm-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Sei Network Parallel Evm Guide</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/depin-decentralized-physical-infrastructure-guide-2026" />
+      <AuthoritySources url="/learn/depin-decentralized-physical-infrastructure-guide-2026" />
       </article>
   );
 }

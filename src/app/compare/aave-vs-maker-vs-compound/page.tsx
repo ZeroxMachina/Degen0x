@@ -9,6 +9,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Aave vs Maker vs Compound: DeFi Lending 2026 Comparison',
   description: 'Compare Aave, Maker, and Compound: TVL, lending rates, governance, stablecoin (DAI), collateral options. Which DeFi lending protocol wins?',
@@ -159,6 +163,14 @@ export default function AaveVsMakerVsCompound() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Aave vs Maker vs Compound: DeFi Lending 2026 Comparison"
+        description="Compare Aave, Maker, and Compound: TVL, lending rates, governance, stablecoin (DAI), collateral options. Which DeFi lending protocol wins?"
+        url="https://degen0x.com/compare/aave-vs-maker-vs-compound"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -400,6 +412,7 @@ export default function AaveVsMakerVsCompound() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/aave-vs-maker-vs-compound" />
+    <AuthoritySources url="/compare/aave-vs-maker-vs-compound" />
     </article>
   );
 }

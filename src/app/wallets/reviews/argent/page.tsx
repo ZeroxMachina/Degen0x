@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Argent Wallet Review (2026) - Best Smart Contract Wallet? | degen0x`,
   description: `Detailed Argent wallet review for ${CURRENT_YEAR}. Covers smart contract security, social recovery, Starknet Layer 2, and seedless onboarding.`,
@@ -131,6 +140,13 @@ const breadcrumbData = {
 export default function ArgentReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Argent Wallet Review (2026) - Best Smart Contract Wallet?"
+        url="https://degen0x.com/wallets/reviews/argent"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
@@ -144,6 +160,18 @@ export default function ArgentReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="Argent Wallet Review (2026) - Best Smart Contract Wallet? | degen0x"
+        description="Detailed Argent wallet review for ${CURRENT_YEAR}. Covers smart contract security, social recovery, Starknet Layer 2, and seedless onboarding."
+        url="https://degen0x.com/wallets/reviews/argent"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/argent" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Social Recovery & Guardian System", "description": "Argent is a smart contract wallet pioneering account abstraction with social recovery, no seed phrase requirement, and native Starknet Layer 2 integration.", "url": "https://degen0x.com/wallets/reviews/argent", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

@@ -3,6 +3,14 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Whale Tracker | degen0x",
+  description: "Comprehensive degen0x guide to whale tracker — 2026 fundamentals, step-by-step walkthroughs, and risk-aware strategies.",
+  alternates: { canonical: "https://degen0x.com/alerts/whale-tracker" },
+};
+
 // ─── Types ───────────────────────────────────────────────────────────────
 type TransactionType = 'exchange_deposit' | 'exchange_withdrawal' | 'whale_transfer' | 'unknown';
 type TokenType = 'BTC' | 'ETH' | 'USDT' | 'USDC' | 'SOL';

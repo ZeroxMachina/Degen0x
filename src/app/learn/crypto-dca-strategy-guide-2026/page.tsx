@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto DCA Strategy Guide 2026: Dollar-Cost Average Bitcoin",
@@ -913,6 +915,7 @@ export default function CryptoDCAStrategyGuide2026() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto DCA Strategy Guide 2026: Dollar-Cost Average Bitcoin", "description": "Master dollar-cost averaging for crypto in 2026. Learn optimal DCA frequency, backtested returns (202%+), best platforms, and advanced fear-based strategies.", "url": "https://degen0x.com/learn/crypto-dca-strategy-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-dca-strategy-guide-2026" />
+<AuthoritySources url="/learn/crypto-dca-strategy-guide-2026" />
 </div>
   );
 }

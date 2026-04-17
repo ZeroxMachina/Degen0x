@@ -9,6 +9,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Mantle Network Guide 2026 — MNT Token & L2',
   description: 'Comprehensive guide to Mantle Network: $2.8B TVL, ZK rollup migration, MNT tokenomics, mETH/cmETH staking, DeFi ecosystem & institutional partnerships.',
@@ -283,6 +287,14 @@ export default function MantleNetworkGuide() {
 
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Mantle Network Guide 2026 — MNT Token & L2"
+        description="Comprehensive guide to Mantle Network: $2.8B TVL, ZK rollup migration, MNT tokenomics, mETH/cmETH staking, DeFi ecosystem & institutional partnerships."
+        url="https://degen0x.com/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -774,6 +786,7 @@ export default function MantleNetworkGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Mantle Network Guide 2026 \u2014 MNT Token & L2", "description": "Comprehensive guide to Mantle Network: $2.8B TVL, ZK rollup migration, MNT tokenomics, mETH/cmETH staking, DeFi ecosystem & institutional partnerships.", "url": "https://degen0x.com/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026" />
+<AuthoritySources url="/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026" />
 </div>
   );
 }

@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 const title = "Smart Wallets & Account Abstraction Guide";
 const description = "Learn how smart wallets work, the difference between account abstraction and EOAs, and why EIP-7702 is changing crypto forever. Complete beginner guide.";
 const keywords = [
@@ -30,6 +32,8 @@ const canonicalUrl = `${SITE_URL}/learn/smart-wallets-account-abstraction-guide`
 const ogImage = `${SITE_URL}/api/og?title=Smart+Wallets+Guide&category=Learn&type=learn`;
 
 export const metadata: Metadata = {
+  title: "Smart Wallets Account Abstraction Guide | degen0x",
+  description: "Comprehensive degen0x guide to smart wallets account abstraction guide — 2026 fundamentals, step-by-step walkthroughs, and risk-aware strategies.",
   title: `| degen0x Learn`,
   description,
   keywords,
@@ -772,6 +776,7 @@ export default function SmartWalletsPage() {
           </Link>
         </div>
       </div>
+    <AuthoritySources url="/learn/smart-wallets-account-abstraction-guide" />
     </div>
     
         <script

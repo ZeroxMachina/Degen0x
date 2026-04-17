@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Bitcoin Collateral Loans 2026: Nexo, Ledn, Unchained',
   description: 'Bitcoin collateral loan guide. Compare Nexo vs BlockFi vs Ledn. BTC loan rates 5.9-7.5%, LTV 50-60%, fast approval, no credit check required.',
@@ -143,6 +149,19 @@ export default function BitcoinCollateralLoanGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bitcoin Collateral Loans 2026: Nexo, Ledn, Unchained"
+        description="Bitcoin collateral loan guide. Compare Nexo vs BlockFi vs Ledn. BTC loan rates 5.9-7.5%, LTV 50-60%, fast approval, no credit check required."
+        url="https://degen0x.com/crypto-loans/bitcoin-collateral-loan-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/bitcoin-collateral-loan-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/bitcoin-collateral-loan-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

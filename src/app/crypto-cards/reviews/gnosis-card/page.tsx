@@ -6,6 +6,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = cryptoCards.find((c) => c.slug === "gnosis-card")!;
 
 export const metadata: Metadata = {
@@ -29,6 +38,13 @@ const breadcrumbData = {
 export default function GnosisCardReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Gnosis Pay Card Review (2026): DeFi Spending & Pros/Cons"
+        url="https://degen0x.com/crypto-cards/reviews/gnosis-card"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Cards"
@@ -51,6 +67,18 @@ export default function GnosisCardReviewPage() {
       relatedReviews={[{ name: "Plutus Card", slug: "plutus-card" }, { name: "Nexo Card", slug: "nexo-card" }, { name: "Wirex Card", slug: "wirex-card" }]}
       relatedGuides={[{ title: "Crypto Card Security Tips", href: "/crypto-cards/learn/crypto-card-security" }, { title: "Prepaid vs Debit Crypto Cards", href: "/crypto-cards/learn/prepaid-vs-debit-crypto" }]}
     />
+      <ArticleSchema
+        headline="Gnosis Pay Card Review (2026): DeFi Spending & Pros/Cons | degen0x"
+        description="In-depth Gnosis Pay card review covering on-chain spending from Safe wallets, DeFi integration, progressive decentralization, and whether it suits DeFi-native"
+        url="https://degen0x.com/crypto-cards/reviews/gnosis-card"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/gnosis-card" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Self-Custody Spending", "description": "In-depth Gnosis Pay card review covering on-chain spending from Safe wallets, DeFi integration, progressive decentralization, and whether it suits DeFi-native", "url": "https://degen0x.com/crypto-cards/reviews/gnosis-card", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

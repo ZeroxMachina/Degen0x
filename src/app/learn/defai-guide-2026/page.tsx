@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "DeFAI Guide 2026: AI Agents Transforming DeFi | degen0x",
   description: "What is DeFAI? AI agents autonomously optimize yield, manage liquidity, and rebalance portfolios in DeFi. Covers Almanak, ElizaOS, Virtuals, risks, and how to",
@@ -943,6 +945,7 @@ export default function DeFAIGuidePage() {
             })
           }}
         />
+      <AuthoritySources url="/learn/defai-guide-2026" />
       </article>
   );
 }

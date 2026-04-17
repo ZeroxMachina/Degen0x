@@ -14,6 +14,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 // Title: 59 chars — primary keyword first, year included
 // Description: 159 chars — specific, keyword-rich, addresses search intent
@@ -687,6 +689,7 @@ export default function SonicBlockchainGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is Sonic? Fantom", "description": "Sonic (ex-Fantom) achieves 400K TPS with 720ms finality. Learn how SonicVM, the FeeM revenue model, and S tokenomics work \u2014 plus real TVL data and ecosystem", "url": "https://degen0x.com/learn/sonic-blockchain-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/sonic-blockchain-guide" />
 </div>
   );
 }

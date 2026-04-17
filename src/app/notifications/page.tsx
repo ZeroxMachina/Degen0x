@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import NotificationsClient from './NotificationsClient';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Notifications — Price Alerts, Streak Reminders & More",
   description: "Stay updated with real-time crypto notifications. Price alerts, whale movements, streak reminders, new content alerts, and achievement unlocks — all in one",
@@ -41,6 +47,19 @@ const breadcrumbData = {
 export default function NotificationsPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Notifications — Price Alerts, Streak Reminders & More"
+        description="Stay updated with real-time crypto notifications. Price alerts, whale movements, streak reminders, new content alerts, and achievement unlocks — all in one"
+        url="/notifications"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/notifications" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/notifications" />
       <NotificationsClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Notifications | degen0x", "description": "Real-time crypto notifications — price alerts, whale moves, streak reminders, and more.", "url": "https://degen0x.com/notifications", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

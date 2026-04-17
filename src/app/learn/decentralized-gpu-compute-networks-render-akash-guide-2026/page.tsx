@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Decentralized GPU Compute Networks: Render, Akash & io.net",
@@ -167,6 +171,14 @@ export default function DecentralizedGPUComputeGuide() {
 
   return (
     <article id="top" aria-label="Guide: Decentralized GPU Compute Networks" style={{ ...pageStyle }}>
+      <ArticleSchema
+        headline="Decentralized GPU Compute Networks: Render, Akash & io.net"
+        description="Complete guide to decentralized GPU compute networks. Learn about Render Network, Akash, io.net, DePIN infrastructure, AI compute marketplace, and how to"
+        url="https://degen0x.com/learn/decentralized-gpu-compute-networks-render-akash-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -693,6 +705,7 @@ export default function DecentralizedGPUComputeGuide() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/decentralized-gpu-compute-networks-render-akash-guide-2026" />
+      <AuthoritySources url="/learn/decentralized-gpu-compute-networks-render-akash-guide-2026" />
       </article>
   );
 }

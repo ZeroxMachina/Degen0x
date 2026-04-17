@@ -9,6 +9,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "DAO Governance & On-Chain Voting Guide 2026: How DAOs Work",
   description: "Learn how DAO governance works in 2026 — $13.6B in treasuries, 50K+ DAOs, on-chain vs off-chain voting, delegate mechanics, top DAOs (Uniswap, Maker, Aave),",
@@ -64,6 +68,14 @@ const breadcrumbData = {
 export default function DAOGovernanceVotingGuide() {
   return (
     <div style={{ color: S.text, minHeight: '100vh', padding: '2rem 1rem' }}>
+      <ArticleSchema
+        headline="DAO Governance & On-Chain Voting Guide 2026: How DAOs Work"
+        description="Learn how DAO governance works in 2026 — $13.6B in treasuries, 50K+ DAOs, on-chain vs off-chain voting, delegate mechanics, top DAOs (Uniswap, Maker, Aave),"
+        url="https://degen0x.com/learn/dao-governance-voting-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -773,6 +785,7 @@ export default function DAOGovernanceVotingGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DAO Governance & On-Chain Voting Guide 2026: How DAOs Work", "description": "Learn how DAO governance works in 2026 \u2014 $13.6B in treasuries, 50K+ DAOs, on-chain vs off-chain voting, delegate mechanics, top DAOs (Uniswap, Maker, Aave),", "url": "https://degen0x.com/learn/dao-governance-voting-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/dao-governance-voting-guide-2026" />
+<AuthoritySources url="/learn/dao-governance-voting-guide-2026" />
 </div>
   );
 }

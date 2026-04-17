@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Index Funds Explained: Bitwise 10, Grayscale, Index",
   description: "Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside",
@@ -142,6 +146,14 @@ export default function CryptoIndexFundsGuide2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Index Funds Explained: Bitwise 10, Grayscale, Index"
+        description="Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside"
+        url="https://degen0x.com/learn/what-is-a-crypto-index-fund"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -392,6 +404,7 @@ export default function CryptoIndexFundsGuide2026() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Index Funds Explained: Bitwise 10, Grayscale, Index", "description": "Master crypto index funds in 2026. Learn market-cap weighted vs equal-weight, compare Bitwise 10, Grayscale Digital Large Cap, Index Coop DPI, MVI, Alongside", "url": "https://degen0x.com/learn/what-is-a-crypto-index-fund", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/what-is-a-crypto-index-fund" />
+      <AuthoritySources url="/learn/what-is-a-crypto-index-fund" />
       </article>
   );
 }

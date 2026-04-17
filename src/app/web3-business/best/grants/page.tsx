@@ -9,6 +9,12 @@ import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Web3 Grants Programs of 2026 - Funding for Builders | degen0x`,
   description: `Discover the best Web3 grants programs in ${CURRENT_YEAR}. Get non-dilutive funding from Ethereum, Solana, Optimism, and other major ecosystems. Grant sizes, requirements, and application tips.`,
@@ -129,6 +135,19 @@ const breadcrumbData = {
 export default function GrantsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Web3 Business"
+        description="The largest and most established grants program in Web3, funding research, development, and community initiatives across the Ethereum ecosystem. Supports"
+        url="/web3-business/best/grants"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/best/grants" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/best/grants" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

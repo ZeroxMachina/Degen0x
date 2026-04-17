@@ -10,6 +10,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are",
   description: "Deep dive into parallel EVM blockchains. Learn how Monad, Sei, and MegaETH execute transactions concurrently to achieve 10K-100K+ TPS while maintaining EVM",
@@ -1155,6 +1157,7 @@ export default function ParallelEVMGuidePage() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Parallel EVM Guide 2026: How Monad, Sei & MegaETH Are", "description": "Deep dive into parallel EVM blockchains. Learn how Monad, Sei, and MegaETH execute transactions concurrently to achieve 10K-100K+ TPS while maintaining EVM", "url": "https://degen0x.com/learn/parallel-evm-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/parallel-evm-guide" />
+<AuthoritySources url="/learn/parallel-evm-guide" />
 </div>
   );
 }

@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "FHE Crypto Guide 2026: Fully Homomorphic Encryption",
   description: "Fully Homomorphic Encryption lets blockchains compute on encrypted data without decrypting it. Complete 2026 guide to Zama, Fhenix, Inco, confidential DeFi,",
@@ -474,6 +476,7 @@ export default function FHECryptoGuide2026() {
 
           <a href="/learn/crypto-index-funds-onchain-basket-investing-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Index Funds Onchain Basket Investing Guide 2026</a>
         </nav>
+      <AuthoritySources url="/learn/fhe-crypto-guide-2026" />
       </article>
     
         <script

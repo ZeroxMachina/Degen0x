@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Wallets for Base Chain 2026 | Coinbase, MetaMask, Rabby",
   description: 'Compare wallets for Coinbase Base (OP Stack L2): Coinbase Wallet, MetaMask, Rabby, Rainbow, Frame. Native Base support, swaps, DeFi dApp browser integration.',
@@ -132,6 +138,19 @@ export default function BestWalletForBaseChain() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Wallets for Base Chain 2026 | Coinbase, MetaMask, Rabby"
+        description="Compare wallets for Coinbase Base (OP Stack L2): Coinbase Wallet, MetaMask, Rabby, Rainbow, Frame. Native Base support, swaps, DeFi dApp browser integration."
+        url="https://degen0x.com/wallets/best-wallet-for-base-chain"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/best-wallet-for-base-chain" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/best-wallet-for-base-chain" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

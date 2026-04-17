@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "ZenGo",
   slug: "zengo",
@@ -148,6 +157,13 @@ const breadcrumbData = {
 export default function ZenGoReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="ZenGo Wallet Review (2026) - Keyless MPC Wallet"
+        url="https://degen0x.com/wallets/reviews/zengo"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
@@ -161,6 +177,18 @@ export default function ZenGoReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="ZenGo Wallet Review (2026) - Keyless MPC Wallet | degen0x"
+        description="ZenGo is a keyless crypto wallet using MPC (multi-party computation) technology to eliminate seed phrases. Supports 120+ assets with built-in swaps, staking,"
+        url="https://degen0x.com/wallets/reviews/zengo"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/zengo" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MPC Threshold Signature Technology", "description": "ZenGo is a keyless crypto wallet using MPC (multi-party computation) technology to eliminate seed phrases. Supports 120+ assets with built-in swaps, staking,", "url": "https://degen0x.com/wallets/reviews/zengo", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

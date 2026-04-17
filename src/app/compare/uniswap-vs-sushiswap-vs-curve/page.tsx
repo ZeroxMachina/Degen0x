@@ -9,6 +9,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Uniswap vs SushiSwap vs Curve: DEX Comparison 2026',
   description: 'Compare Uniswap, SushiSwap, and Curve: AMM models, fees, TVL, token utility, multi-chain support. Which DEX wins?',
@@ -156,6 +160,14 @@ export default function UniswapVsSushiSwapVsCurve() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Uniswap vs SushiSwap vs Curve: DEX Comparison 2026"
+        description="Compare Uniswap, SushiSwap, and Curve: AMM models, fees, TVL, token utility, multi-chain support. Which DEX wins?"
+        url="https://degen0x.com/compare/uniswap-vs-sushiswap-vs-curve"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -398,6 +410,7 @@ export default function UniswapVsSushiSwapVsCurve() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/uniswap-vs-sushiswap-vs-curve" />
+      <AuthoritySources url="/compare/uniswap-vs-sushiswap-vs-curve" />
       </article>
   );
 }

@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "DeSci (Decentralized Science) Guide 2026: Blockchain",
@@ -646,6 +648,7 @@ export default function DeSciGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeSci (Decentralized Science) Guide 2026: Blockchain", "description": "DeSci explained: decentralized science funding via DAOs, tokenized IP-NFTs, and open peer review. VitaDAO, Bio Protocol, ResearchHub. 2026 outlook and risks.", "url": "https://degen0x.com/learn/desci-decentralized-science-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/desci-decentralized-science-guide-2026" />
+<AuthoritySources url="/learn/desci-decentralized-science-guide-2026" />
 </div>
   );
 }

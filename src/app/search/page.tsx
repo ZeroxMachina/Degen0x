@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import SearchContent from "./SearchContent";
 import { Metadata } from "next";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Search — Crypto Tools",
   description: "Search degen0x: Free crypto analysis tools, protocol research, yield trackers, DeFi calculators, governance voting, and blockchain analytics.",
@@ -90,6 +96,19 @@ export default function SearchPage() {
       </div>
     </div>
     }>
+      <ArticleSchema
+        headline="Search — Crypto Tools"
+        description="Search degen0x: Free crypto analysis tools, protocol research, yield trackers, DeFi calculators, governance voting, and blockchain analytics."
+        url="/search"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/search" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/search" />
       <SearchContent />
     </Suspense>
   );

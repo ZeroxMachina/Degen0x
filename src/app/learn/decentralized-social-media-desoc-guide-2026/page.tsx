@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Decentralized Social Media Guide 2026: Farcaster, Lens &",
@@ -199,6 +203,14 @@ export default function DecentralizedSocialMediaGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Decentralized Social Media Guide 2026: Farcaster, Lens &"
+        description="Complete DeSoc/SocialFi guide for 2026. Explore Farcaster ($1B valuation, 20K-60K DAU), Lens Protocol (650K migrated profiles, ZK chain), SocialFi economics,"
+        url="https://degen0x.com/learn/decentralized-social-media-desoc-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -645,6 +657,7 @@ export default function DecentralizedSocialMediaGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Decentralized Social Media Guide 2026: Farcaster, Lens &", "description": "Complete DeSoc/SocialFi guide for 2026. Explore Farcaster ($1B valuation, 20K-60K DAU), Lens Protocol (650K migrated profiles, ZK chain), SocialFi economics,", "url": "https://degen0x.com/learn/decentralized-social-media-desoc-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/decentralized-social-media-desoc-guide-2026" />
+      <AuthoritySources url="/learn/decentralized-social-media-desoc-guide-2026" />
       </article>
   );
 }

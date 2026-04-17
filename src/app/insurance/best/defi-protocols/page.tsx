@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best DeFi Protocol Insurance 2026 - Cover Your Positions`,
   description:
@@ -120,6 +126,19 @@ const breadcrumbData = {
 export default function DefiProtocolsInsurancePage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Insurance"
+        description="Compare the best DeFi protocol insurance options. Protect your deposits in Aave, Uniswap, Curve, and other DeFi protocols against exploits and failures."
+        url="/insurance/best/defi-protocols"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Insurance"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/insurance/best/defi-protocols" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/insurance/best/defi-protocols" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

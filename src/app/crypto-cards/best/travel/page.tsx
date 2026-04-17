@@ -9,6 +9,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Cards for Travel in 2026 - No Foreign Fees`,
   description: `Compare the best crypto cards for international travel in ${CURRENT_YEAR}. Zero foreign transaction fees, airport lounge access, and multi-currency spending.`,
@@ -66,6 +72,19 @@ const breadcrumbData = {
 export default function BestTravelCardsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Best Crypto Cards Overall"
+        description="Best Crypto Cards Overall"
+        url="/crypto-cards/best/travel"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/best/travel" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/best/travel" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[

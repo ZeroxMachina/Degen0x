@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "RWA Tokenization: Real-World Assets On-Chain Guide 2026",
@@ -174,6 +178,14 @@ export default function RWATokenizationGuide() {
 
   return (
     <article id="top" aria-label="Guide: RWA Tokenization - Real-World Assets On-Chain" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="RWA Tokenization: Real-World Assets On-Chain Guide 2026"
+        description="Complete guide to Real-World Asset tokenization in 2026. Learn how BlackRock BUIDL, Ondo Finance, and institutional protocols are bringing $12B+ of assets"
+        url="https://degen0x.com/learn/rwa-tokenization-real-world-assets-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -654,6 +666,7 @@ export default function RWATokenizationGuide() {
           <a href="/learn/dydx-chain-cosmos-perpetual-futures-dex-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Dydx Chain Cosmos Perpetual Futures Dex Guide 2026</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/rwa-tokenization-real-world-assets-guide-2026" />
+      <AuthoritySources url="/learn/rwa-tokenization-real-world-assets-guide-2026" />
       </article>
   );
 }

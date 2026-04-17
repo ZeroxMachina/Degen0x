@@ -8,6 +8,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Tokenized Treasury Bills Guide 2026 — T-Bills On-Chain",
   description:
@@ -815,6 +817,7 @@ export default function TokenizedTreasuryBillsGuide() {
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Tokenized Treasury Bills Guide 2026 \u2014 T-Bills On-Chain", "description": "Learn how tokenized US Treasury bills work on blockchain. Explore BUIDL, USDY, OUSG, and earn 4.5-5% yield composable with DeFi.", "url": "https://degen0x.com/learn/tokenized-treasury-bills-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/tokenized-treasury-bills-guide-2026" />
+<AuthoritySources url="/learn/tokenized-treasury-bills-guide-2026" />
 </div>
   );
 }

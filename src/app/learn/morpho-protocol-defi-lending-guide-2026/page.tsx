@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Morpho Protocol: The #2 DeFi Lending Protocol Guide 2026',
   description: "Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional",
@@ -621,6 +623,7 @@ export default function MorphoProtocolGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Morpho Protocol: The #2 DeFi Lending Protocol Guide 2026", "description": "Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional", "url": "https://degen0x.com/learn/morpho-protocol-defi-lending-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="defi-lending-cycle" />
       <RelatedContent category="learn" currentSlug="/learn/morpho-protocol-defi-lending-guide-2026" />
+<AuthoritySources url="/learn/morpho-protocol-defi-lending-guide-2026" />
 </main>
   );
 }

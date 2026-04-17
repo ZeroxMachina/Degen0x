@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "TVL (Total Value Locked): DeFi Metrics & Analysis 2026",
   description: "Master TVL analysis for DeFi protocols. Learn how TVL metrics predict protocol success, identify opportunities, and evaluate DeFi ecosystem growth.",
@@ -97,6 +101,14 @@ const page = () => {
 
   return (
     <div style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px" }}>
+      <ArticleSchema
+        headline="TVL (Total Value Locked): DeFi Metrics & Analysis 2026"
+        description="Master TVL analysis for DeFi protocols. Learn how TVL metrics predict protocol success, identify opportunities, and evaluate DeFi ecosystem growth."
+        url="https://degen0x.com/learn/what-is-tvl-total-value-locked"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
@@ -233,6 +245,7 @@ const page = () => {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "TVL (Total Value Locked): DeFi Metrics & Analysis 2026", "description": "Master TVL analysis for DeFi protocols. Learn how TVL metrics predict protocol success, identify opportunities, and evaluate DeFi ecosystem growth.", "url": "https://degen0x.com/learn/what-is-tvl-total-value-locked", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/what-is-tvl-total-value-locked" />
 </div>
   );
 };

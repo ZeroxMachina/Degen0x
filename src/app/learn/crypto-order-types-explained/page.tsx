@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Order Types Explained 2026: Market, Limit,",
   description: "Master all crypto order types: market, limit, stop-loss, stop-limit, trailing stop, OCO, TWAP, iceberg orders. Compare execution, slippage, and fees. Learn",
@@ -204,6 +208,14 @@ export default function CryptoOrderTypesGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Order Types Explained 2026: Market, Limit,"
+        description="Master all crypto order types: market, limit, stop-loss, stop-limit, trailing stop, OCO, TWAP, iceberg orders. Compare execution, slippage, and fees. Learn"
+        url="https://degen0x.com/learn/crypto-order-types-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -822,6 +834,7 @@ export default function CryptoOrderTypesGuide() {
           <a href="/learn/btc-yield-earning-strategies-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Btc Yield Earning Strategies Guide 2026</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/crypto-order-types-explained" />
+      <AuthoritySources url="/learn/crypto-order-types-explained" />
       </article>
   );
 }

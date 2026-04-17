@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Kamino Finance Solana Lending Guide 2026: Automated Vaults",
   description: "Complete guide to Kamino Finance on Solana. Master automated lending vaults, auto-compounding yields, 10-15% APY strategies, and risk management for DeFi",
@@ -181,6 +187,19 @@ export default function KaminoFinanceGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Kamino Finance Solana Lending Guide 2026: Automated Vaults"
+        description="Complete guide to Kamino Finance on Solana. Master automated lending vaults, auto-compounding yields, 10-15% APY strategies, and risk management for DeFi"
+        url="https://degen0x.com/defi-lending/kamino-finance-solana-lending"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/kamino-finance-solana-lending" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending/kamino-finance-solana-lending" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

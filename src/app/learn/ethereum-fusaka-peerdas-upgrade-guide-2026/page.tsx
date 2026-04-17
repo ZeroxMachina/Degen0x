@@ -7,6 +7,12 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import AuthorAttribution from "@/components/AuthorAttribution";
+
 export const metadata: Metadata = {
   title: 'Ethereum Fusaka & PeerDAS Upgrade Guide 2026 | Degen0x',
   description: 'Everything you need to know about Fusaka — Ethereum\u2019s next hardfork after Pectra. PeerDAS, blob scaling, EOF, and what it means for L2 costs, rollups, and DA throughput in 2026.',
@@ -129,6 +135,14 @@ export default function FusakaPeerdasGuide() {
 
   return (
     <div style={containerStyle}>
+      <ArticleSchema
+        headline="Ethereum Fusaka & PeerDAS Upgrade Guide 2026 | Degen0x"
+        description="Everything you need to know about Fusaka — Ethereum\u2019s next hardfork after Pectra. PeerDAS, blob scaling, EOF, and what it means for L2 costs, rollups, and DA throughput in 2026."
+        url="https://degen0x.com/learn/ethereum-fusaka-peerdas-upgrade-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -255,6 +269,14 @@ export default function FusakaPeerdasGuide() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Fusaka & PeerDAS Upgrade Guide 2026 | Degen0x", "description": "Everything you need to know about Fusaka \u2014 Ethereum\\u2019s next hardfork after Pectra. PeerDAS, blob scaling, EOF, and what it means for L2 costs, rollups, and DA throughput in 2026.", "url": "https://degen0x.com/learn/ethereum-fusaka-peerdas-upgrade-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-fusaka-peerdas-upgrade-guide-2026" />
+<AuthoritySources url="/learn/ethereum-fusaka-peerdas-upgrade-guide-2026" />
+      <AuthorAttribution
+        author="DegenSensei"
+        role="Senior Crypto Editor"
+        publishedDate="2024-06-01"
+        updatedDate="2026-04-17"
+        section="learn"
+      />
 </div>
   );
 }

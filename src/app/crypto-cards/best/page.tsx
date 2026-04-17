@@ -9,6 +9,12 @@ import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `15 Best Crypto Cards of 2026 (Ranked & Reviewed)`,
   description: `Compare the top 15 crypto cards of ${CURRENT_YEAR}. We tested rewards, fees, perks, and availability. Find the best crypto credit card, debit card, or prepaid card for your needs.`,
@@ -66,6 +72,19 @@ export default function BestCryptoCardsPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Rewards Rate (30%)"
+        description="Rewards Rate (30%)"
+        url="/crypto-cards/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/best" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Narrative Trading Guide: AI, RWA, DePIN, Memecoins",
   description: "Master narrative trading with 2024-2026 themes: AI tokens, RWA, DePIN, restaking, memecoins, BTCFi. Track lifecycle from discovery to mania to collapse with",
@@ -190,6 +196,19 @@ export default function CryptoNarrativeTradingGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Narrative Trading Guide: AI, RWA, DePIN, Memecoins"
+        description="Master narrative trading with 2024-2026 themes: AI tokens, RWA, DePIN, restaking, memecoins, BTCFi. Track lifecycle from discovery to mania to collapse with"
+        url="https://degen0x.com/investing/crypto-narrative-trading-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/crypto-narrative-trading-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/crypto-narrative-trading-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

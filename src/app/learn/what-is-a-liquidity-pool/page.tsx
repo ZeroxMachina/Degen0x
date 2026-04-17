@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Liquidity Pools Explained: AMM & Impermanent Loss 2026',
   description: 'Master liquidity pools: x*y=k formula, Uniswap V2 vs V3, impermanent loss calculations, LP yields (10-25% APY), concentrated liquidity, and MEV impact.',
@@ -131,6 +135,14 @@ export default function LiquidityPoolsPage() {
 
   return (
     <article style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="Liquidity Pools Explained: AMM & Impermanent Loss 2026"
+        description="Master liquidity pools: x*y=k formula, Uniswap V2 vs V3, impermanent loss calculations, LP yields (10-25% APY), concentrated liquidity, and MEV impact."
+        url="https://degen0x.com/learn/what-is-a-liquidity-pool"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -293,6 +305,7 @@ export default function LiquidityPoolsPage() {
 </div>
       <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/what-is-a-liquidity-pool" />
+      <AuthoritySources url="/learn/what-is-a-liquidity-pool" />
       </article>
   );
 }

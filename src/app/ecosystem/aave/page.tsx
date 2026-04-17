@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import AaveClient from "./AaveClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Aave: DeFi Lending & Borrowing Guide 2026 | degen0x",
   description: "Complete guide to Aave — the largest DeFi lending protocol. Multi-chain lending, flash loans, GHO stablecoin, safety module staking, and how to earn yield on",
@@ -59,6 +65,19 @@ const breadcrumbData = {
 export default function AavePage() {
   return (
     <>
+      <ArticleSchema
+        headline="Aave: DeFi Lending & Borrowing Guide 2026 | degen0x"
+        description="Complete guide to Aave — the largest DeFi lending protocol. Multi-chain lending, flash loans, GHO stablecoin, safety module staking, and how to earn yield on"
+        url="/ecosystem/aave"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/aave" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/aave" />
       <AaveClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Aave: DeFi Lending & Borrowing Guide 2026 | degen0x", "description": "Complete guide to Aave — the largest DeFi lending protocol. Multi-chain lending, flash loans, GHO stablecoin, safety module staking, and how to earn yield on", "url": "https://degen0x.com/ecosystem/aave", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

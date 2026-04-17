@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Real Yield DeFi Protocols 2026: GMX, dYdX, Synthetix, Aave",
   description: "Guide to real yield DeFi. Compare GMX ($150M+ fees distributed), dYdX, Gains Network, Synthetix, Aave, Lido staking rewards. Real yield vs inflationary yield.",
@@ -208,6 +212,14 @@ export default function RealYieldDeFiProtocolsGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Real Yield DeFi Protocols 2026: GMX, dYdX, Synthetix, Aave"
+        description="Guide to real yield DeFi. Compare GMX ($150M+ fees distributed), dYdX, Gains Network, Synthetix, Aave, Lido staking rewards. Real yield vs inflationary yield."
+        url="https://degen0x.com/learn/real-yield-defi-protocols-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -483,6 +495,7 @@ export default function RealYieldDeFiProtocolsGuide() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real Yield DeFi Protocols 2026: GMX, dYdX, Synthetix, Aave", "description": "Guide to real yield DeFi. Compare GMX ($150M+ fees distributed), dYdX, Gains Network, Synthetix, Aave, Lido staking rewards. Real yield vs inflationary yield.", "url": "https://degen0x.com/learn/real-yield-defi-protocols-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/real-yield-defi-protocols-guide" />
+      <AuthoritySources url="/learn/real-yield-defi-protocols-guide" />
       </article>
   );
 }

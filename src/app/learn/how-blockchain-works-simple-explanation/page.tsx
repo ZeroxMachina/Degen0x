@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "How Blockchain Works: Simple Explanation | Degen0x",
   description: "Learn how blockchain technology works in simple terms. Understand blocks, transactions, consensus, and why blockchain is secure for beginners.",
@@ -104,6 +108,14 @@ const breadcrumbData = {
 export default function BlockchainExplanation() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <ArticleSchema
+        headline="How Blockchain Works: Simple Explanation | Degen0x"
+        description="Learn how blockchain technology works in simple terms. Understand blocks, transactions, consensus, and why blockchain is secure for beginners."
+        url="https://degen0x.com/learn/how-blockchain-works-simple-explanation"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -841,6 +853,7 @@ export default function BlockchainExplanation() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How Blockchain Works: Simple Explanation | Degen0x", "description": "Learn how blockchain technology works in simple terms. Understand blocks, transactions, consensus, and why blockchain is secure for beginners.", "url": "https://degen0x.com/learn/how-blockchain-works-simple-explanation", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/how-blockchain-works-simple-explanation" />
+<AuthoritySources url="/learn/how-blockchain-works-simple-explanation" />
 </div>
   );
 }

@@ -13,6 +13,12 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Coinbase Wallet vs MetaMask (2026) - Which Wallet Is Better? | degen0x`,
   description: `Coinbase Wallet vs MetaMask detailed comparison for ${CURRENT_YEAR}. Features, chain support, DeFi access, security, and ease of use compared side by side.`,
@@ -52,6 +58,14 @@ export default function CoinbaseWalletVsMetaMaskPage() {
 
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Coinbase Wallet vs MetaMask (2026) - Which Wallet Is Better? | degen0x"
+        description="Coinbase Wallet vs MetaMask detailed comparison for ${CURRENT_YEAR}. Features, chain support, DeFi access, security, and ease of use compared side by side."
+        url="https://degen0x.com/wallets/compare/coinbase-wallet-vs-metamask"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <Breadcrumb
         items={[
@@ -214,6 +228,11 @@ export default function CoinbaseWalletVsMetaMaskPage() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="tools" currentSlug="/wallets/compare/coinbase-wallet-vs-metamask" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/compare/coinbase-wallet-vs-metamask" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/compare/coinbase-wallet-vs-metamask" />
     </div>
   );
 }

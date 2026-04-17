@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Compound Interest Crypto Calculator | degen0x',
   description: "Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations",
@@ -150,6 +158,24 @@ export default function CompoundInterestCryptoCalculator() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Compound Interest Crypto Calculator | degen0x"
+        description="Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations"
+        url="https://degen0x.com/tools/compound-interest-crypto-calculator"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/compound-interest-crypto-calculator" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/compound-interest-crypto-calculator" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/compound-interest-crypto-calculator"
+        name="Compound Interest Crypto Calculator"
+        description="Calculate compound interest in crypto with APY/APR, daily/weekly/monthly compounding. Auto-compound protocols like Beefy & Yearn. Realistic yield expectations"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

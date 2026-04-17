@@ -6,6 +6,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "zkSync Era Elastic Chain Ecosystem Guide 2026",
   description: "Master zkSync Era's Elastic Chain architecture. Learn zero-knowledge proofs, L2 scaling, custom chains, and DeFi opportunities on the fastest ZK rollup.",
@@ -97,6 +101,14 @@ const page = () => {
 
   return (
     <div style={{ backgroundColor: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px" }}>
+      <ArticleSchema
+        headline="zkSync Era Elastic Chain Ecosystem Guide 2026"
+        description="Master zkSync Era"
+        url="https://degen0x.com/learn/zksync-era-elastic-chain-ecosystem-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
@@ -246,6 +258,7 @@ const page = () => {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "zkSync Era Elastic Chain Ecosystem Guide 2026", "description": "Master zkSync Era", "url": "https://degen0x.com/learn/zksync-era-elastic-chain-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/zksync-era-elastic-chain-ecosystem-guide-2026" />
 </div>
   );
 };

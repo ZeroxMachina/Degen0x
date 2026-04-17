@@ -3,6 +3,12 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Web3 Jobs Guide 2026: Careers, Salaries, Skills Required',
   description: 'Web3 jobs: developer, DAO operations, community management, product. Salaries, skills, hiring trends, remote work.',
@@ -107,6 +113,19 @@ export default function Web3JobsGuide() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="Web3 Jobs Guide 2026: Careers, Salaries, Skills Required"
+        description="Web3 jobs: developer, DAO operations, community management, product. Salaries, skills, hiring trends, remote work."
+        url="https://degen0x.com/web3-business/web3-jobs-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/web3-jobs-guide-2026" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/web3-jobs-guide-2026" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 

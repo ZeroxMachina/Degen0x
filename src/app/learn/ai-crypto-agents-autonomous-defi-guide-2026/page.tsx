@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'AI Crypto Agents & Autonomous DeFi 2026 Guide',
   description: "Complete guide to AI agents in crypto and DeFi. Learn about Virtuals, AIXBT, Autonolas, autonomous trading, yield optimization, and the future of agent-powered",
@@ -286,6 +290,14 @@ export default function AICryptoAgentsPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="AI Crypto Agents & Autonomous DeFi 2026 Guide"
+        description="Complete guide to AI agents in crypto and DeFi. Learn about Virtuals, AIXBT, Autonolas, autonomous trading, yield optimization, and the future of agent-powered"
+        url="https://degen0x.com/learn/ai-crypto-agents-autonomous-defi-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -810,6 +822,7 @@ export default function AICryptoAgentsPage() {
 
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "AI Crypto Agents & Autonomous DeFi 2026 Guide", "description": "Complete guide to AI agents in crypto and DeFi. Learn about Virtuals, AIXBT, Autonolas, autonomous trading, yield optimization, and the future of agent-powered", "url": "https://degen0x.com/learn/ai-crypto-agents-autonomous-defi-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/ai-crypto-agents-autonomous-defi-guide-2026" />
+<AuthoritySources url="/learn/ai-crypto-agents-autonomous-defi-guide-2026" />
 </main>
   );
 }

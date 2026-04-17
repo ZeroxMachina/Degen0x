@@ -8,6 +8,12 @@ import { Product } from "@/lib/types";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `7 Best Crypto Debit Cards of 2026 (Ranked & Compared) | degen0x`,
   description: `Compare the best crypto debit cards of ${CURRENT_YEAR}. We tested Crypto.com Visa, Coinbase Card, Binance Card, BitPay, Fold, and more. Find the right card for your needs.`,
@@ -153,6 +159,19 @@ export default function BestDebitCardsPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Spending"
+        description="The gold standard of crypto debit cards. Five card tiers ranging from the free Midnight Blue to the exclusive Obsidian, each offering progressively better"
+        url="/spending/best/debit-cards"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Spending"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/best/debit-cards" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/spending/best/debit-cards" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

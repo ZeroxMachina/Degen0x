@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Stacks & sBTC Guide 2026: Bitcoin Smart Contracts, DeFi &",
   description: "Master Stacks and sBTC in 2026. Learn how Stacks brings smart contracts to Bitcoin, how 1:1 sBTC works, Clarity language, Satoshi Upgrades (ZK minting, Dual",

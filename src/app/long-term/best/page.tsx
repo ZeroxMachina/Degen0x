@@ -7,6 +7,12 @@ import FAQSection from "@/components/FAQSection";
 import { FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Long-Term Crypto Platforms & Providers 2026 - Complete Guide`,
   description: `Compare the best platforms for long-term cryptocurrency investing in ${CURRENT_YEAR}. Crypto IRAs, financial advisors, HODL coins, dividend crypto, and self-directed retirement solutions reviewed and ranked.`,
@@ -15,7 +21,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image" }};
 
 const subCategories = [
-  { title: "Best Crypto IRA Providers", href: "/long-term/best/crypto-ira", desc: "Tax-advantaged retirement accounts for Bitcoin, Ethereum, and other cryptocurrencies. Compare iTrustCapital, Bitcoin IRA, Alto, and more." },
+  { title: "Best Crypto IRA Providers Compared (2026) | degen0x Long-Term", href: "/long-term/best/crypto-ira", desc: "Tax-advantaged retirement accounts for Bitcoin, Ethereum, and other cryptocurrencies. Compare iTrustCapital, Bitcoin IRA, Alto, and more." },
   { title: "Self-Directed Crypto Retirement", href: "/long-term/best/self-directed", desc: "Take full control of your crypto retirement portfolio with self-directed IRA and solo 401(k) providers." },
   { title: "Best Crypto Financial Advisors", href: "/long-term/best/advisors", desc: "Professional financial advisors who specialize in cryptocurrency portfolio management and retirement planning." },
   { title: "Best Cryptos for Long-Term Holding", href: "/long-term/best/hodl-coins", desc: "Top cryptocurrencies with strong fundamentals, network effects, and proven track records for multi-year holding strategies." },
@@ -58,6 +64,19 @@ const breadcrumbData = {
 export default function BestLongTermPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Best Crypto IRA Providers"
+        description="Best Crypto IRA Providers"
+        url="/long-term/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Long Term"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/long-term/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/long-term/best" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

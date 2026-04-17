@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Cashback Card Comparison 2026 | Coinbase,",
   description: "Compare Coinbase Card, Crypto.com Visa, Gemini rewards cards: 4% stablecoin, travel benefits, fee structures, and earning limits. Expert rankings April 2026.",
@@ -173,6 +179,19 @@ export default function CryptoCashbackComparison() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px" }}>
+      <ArticleSchema
+        headline="Crypto Cashback Card Comparison 2026 | Coinbase,"
+        description="Compare Coinbase Card, Crypto.com Visa, Gemini rewards cards: 4% stablecoin, travel benefits, fee structures, and earning limits. Expert rankings April 2026."
+        url="https://degen0x.com/crypto-cards/crypto-cashback-card-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/crypto-cashback-card-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/crypto-cashback-card-comparison" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Solana Firedancer Validator Client Guide 2026: Performance,",
@@ -909,6 +911,7 @@ export default function SolanaFiredancerGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Firedancer Validator Client Guide 2026: Performance,", "description": "Complete guide to Solana Firedancer validator client. Understand Jump Crypto", "url": "https://degen0x.com/learn/solana-firedancer-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/solana-firedancer-guide-2026" />
+<AuthoritySources url="/learn/solana-firedancer-guide-2026" />
 </div>
   );
 }

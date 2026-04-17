@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Sector Rotation Strategy: 2024-2026 Cycle Analysis",
   description: "Master crypto sector rotation across BTC → ETH → L1s → DeFi → memes. Track BTC dominance, cycle phases, and narrative-driven allocation models with real",
@@ -190,6 +196,19 @@ export default function CryptoSectorRotationStrategy() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Sector Rotation Strategy: 2024-2026 Cycle Analysis"
+        description="Master crypto sector rotation across BTC → ETH → L1s → DeFi → memes. Track BTC dominance, cycle phases, and narrative-driven allocation models with real"
+        url="https://degen0x.com/investing/crypto-sector-rotation-strategy"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/crypto-sector-rotation-strategy" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/crypto-sector-rotation-strategy" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

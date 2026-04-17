@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bridging Crypto Across Chains Guide 2026: Stargate, Across,",
   description: "Master cross-chain bridges 2026. Compare Stargate, Across, Synapse, Wormhole, official L2 bridges. Understand lock-and-mint, liquidity networks, intent-based",
@@ -208,6 +212,14 @@ export default function BridgingCryptoAcrossChainsGuide2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bridging Crypto Across Chains Guide 2026: Stargate, Across,"
+        description="Master cross-chain bridges 2026. Compare Stargate, Across, Synapse, Wormhole, official L2 bridges. Understand lock-and-mint, liquidity networks, intent-based"
+        url="https://degen0x.com/learn/bridging-crypto-across-chains-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -673,6 +685,7 @@ export default function BridgingCryptoAcrossChainsGuide2026() {
 </div>
       <Diagram slug="bridging-flow" />
       <RelatedContent category="learn" currentSlug="/learn/bridging-crypto-across-chains-guide" />
+      <AuthoritySources url="/learn/bridging-crypto-across-chains-guide" />
       </article>
   );
 }

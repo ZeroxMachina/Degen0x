@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import BabylonClient from "./BabylonClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Babylon Protocol: Bitcoin Staking Guide 2026 — $4.2B TVL",
   description: "Complete guide to Babylon Protocol — the first native Bitcoin staking solution with $4.2B TVL, 180K+ BTC staked, and 5-9% APR. How Bitcoin staking works, BABY",
@@ -59,6 +65,19 @@ const breadcrumbData = {
 export default function BabylonProtocolPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Babylon Protocol: Bitcoin Staking Guide 2026 — $4.2B TVL"
+        description="Complete guide to Babylon Protocol — the first native Bitcoin staking solution with $4.2B TVL, 180K+ BTC staked, and 5-9% APR. How Bitcoin staking works, BABY"
+        url="/ecosystem/babylon-protocol"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/babylon-protocol" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/babylon-protocol" />
       <BabylonClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Babylon Protocol: Bitcoin Staking Guide 2026 — $4.2B TVL", "description": "Complete guide to Babylon Protocol — the first native Bitcoin staking solution with $4.2B TVL, 180K+ BTC staked, and 5-9% APR. How Bitcoin staking works, BABY", "url": "https://degen0x.com/ecosystem/babylon-protocol", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

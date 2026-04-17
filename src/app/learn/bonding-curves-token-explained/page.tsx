@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bonding Curves for Tokens Explained | Linear, Exponential &",
   description: "Master bonding curves: linear, exponential, sigmoid models used in Pump.fun, Friend.tech, Bancor. Fair token launch mechanics, rugpull prevention, and curve",
@@ -192,6 +196,14 @@ export default function BondingCurvesTokenExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bonding Curves for Tokens Explained | Linear, Exponential &"
+        description="Master bonding curves: linear, exponential, sigmoid models used in Pump.fun, Friend.tech, Bancor. Fair token launch mechanics, rugpull prevention, and curve"
+        url="https://degen0x.com/learn/bonding-curves-token-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -505,6 +517,7 @@ export default function BondingCurvesTokenExplained() {
 </div>
       <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/bonding-curves-token-explained" />
+      <AuthoritySources url="/learn/bonding-curves-token-explained" />
       </article>
   );
 }

@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Keystone wallet review & QR-code signing guide",
   description: "Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support,",
@@ -237,6 +243,19 @@ export default function KeystoneWalletReviewGuide() {
 
   return (
     <article style={styles.article}>
+      <ArticleSchema
+        headline="Keystone wallet review & QR-code signing guide"
+        description="Keystone hardware wallet review: air-gapped security, QR-code signing, Keystone 3 Pro ($149) vs Essential ($99), open-source firmware, multi-chain support,"
+        url="https://degen0x.com/wallets/keystone-wallet-review-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/keystone-wallet-review-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/keystone-wallet-review-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

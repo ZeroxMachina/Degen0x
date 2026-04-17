@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { TAX_PRODUCTS } from "@/data/taxes";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import { Product } from "@/lib/types";
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Free Tools — Crypto Tools",
   description: "Free crypto tax software and tools. Calculate taxes without paying fees. DeFi, staking, NFTs. Find the best free tax calculator for your needs.",
@@ -97,6 +103,19 @@ const breadcrumbData = {
 export default function BestFreeToolsPage() {
   return (
     <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Free Tools — Crypto Tools"
+        description="Free crypto tax software and tools. Calculate taxes without paying fees. DeFi, staking, NFTs. Find the best free tax calculator for your needs."
+        url="/taxes/best/free-tools"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/best/free-tools" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/best/free-tools" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

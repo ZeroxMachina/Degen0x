@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'ZK Coprocessors & Verifiable Compute Guide 2026',
   description: "Comprehensive guide to ZK coprocessors and verifiable compute. Learn how protocols like Axiom, Brevis, RISC Zero, and Lagrange enable off-chain computation",
@@ -327,6 +331,14 @@ export default function ZKCoprocessorsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <ArticleSchema
+        headline="ZK Coprocessors & Verifiable Compute Guide 2026"
+        description="Comprehensive guide to ZK coprocessors and verifiable compute. Learn how protocols like Axiom, Brevis, RISC Zero, and Lagrange enable off-chain computation"
+        url="https://degen0x.com/learn/zk-coprocessors-verifiable-compute-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ ...pageStyles.container, scrollBehavior: 'smooth' as const }}>
         <nav style={{ marginBottom: '24px', fontSize: '14px' }} aria-label="Breadcrumb">
@@ -1019,6 +1031,7 @@ export default function ZKCoprocessorsPage() {
             })
           }}
         />
+      <AuthoritySources url="/learn/zk-coprocessors-verifiable-compute-guide-2026" />
       </div>
 
         <AuthorAttribution

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Real Yield in DeFi 2026: Protocol Revenue vs Token Emissions",
   description: "Understand real yield in DeFi — how protocols like Aave, GMX, Ethena, and Pendle generate sustainable returns from actual revenue, not inflationary token",
@@ -309,6 +313,14 @@ export default function RealYieldDeFiGuidePage() {
 
   return (
     <main style={pageStyle}>
+      <ArticleSchema
+        headline="Real Yield in DeFi 2026: Protocol Revenue vs Token Emissions"
+        description="Understand real yield in DeFi — how protocols like Aave, GMX, Ethena, and Pendle generate sustainable returns from actual revenue, not inflationary token"
+        url="https://degen0x.com/learn/real-yield-defi-protocol-revenue-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -826,6 +838,7 @@ export default function RealYieldDeFiGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Real Yield in DeFi 2026: Protocol Revenue vs Token Emissions", "description": "Understand real yield in DeFi \u2014 how protocols like Aave, GMX, Ethena, and Pendle generate sustainable returns from actual revenue, not inflationary token", "url": "https://degen0x.com/learn/real-yield-defi-protocol-revenue-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/real-yield-defi-protocol-revenue-guide-2026" />
+<AuthoritySources url="/learn/real-yield-defi-protocol-revenue-guide-2026" />
 </main>
   );
 }

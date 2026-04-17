@@ -10,6 +10,8 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Ethereum 2026 Upgrade Roadmap: Fusaka, Glamsterdam & Beyond",
@@ -665,6 +667,7 @@ export default function EthereumUpgradeRoadmapPage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum 2026 Upgrade Roadmap: Fusaka, Glamsterdam & Beyond", "description": "Ethereum", "url": "https://degen0x.com/learn/ethereum-2026-upgrade-roadmap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-2026-upgrade-roadmap" />
+<AuthoritySources url="/learn/ethereum-2026-upgrade-roadmap" />
 </div>
   );
 }

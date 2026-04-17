@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { stakingPlatforms } from "@/data/staking";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Highest Staking APY Platforms of 2026 (Best Yields)`,
   description: `Find the highest staking APY platforms in ${CURRENT_YEAR}. Compare yields across Ethereum, Solana, and restaking protocols to maximize your staking returns.`,
@@ -59,6 +65,19 @@ export default function HighestAPYStakingPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Investing"
+        description="Investing"
+        url="/investing/staking/best/highest-apy"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/staking/best/highest-apy" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/staking/best/highest-apy" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">

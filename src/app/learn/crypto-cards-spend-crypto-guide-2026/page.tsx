@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Cards Guide 2026 — Spend Your Crypto Anywhere",
   description: "Complete guide to crypto debit and credit cards: Bleap, Crypto.com, BitPay, Bybit. Cashback rewards, tax implications, non-custodial wallets, and how to spend",
@@ -348,6 +352,14 @@ export default function CryptoCardsGuide() {
 
   return (
     <div style={containerStyle}>
+      <ArticleSchema
+        headline="Crypto Cards Guide 2026 — Spend Your Crypto Anywhere"
+        description="Complete guide to crypto debit and credit cards: Bleap, Crypto.com, BitPay, Bybit. Cashback rewards, tax implications, non-custodial wallets, and how to spend"
+        url="https://degen0x.com/learn/crypto-cards-spend-crypto-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1194,6 +1206,7 @@ export default function CryptoCardsGuide() {
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Cards Guide 2026 \u2014 Spend Your Crypto Anywhere", "description": "Complete guide to crypto debit and credit cards: Bleap, Crypto.com, BitPay, Bybit. Cashback rewards, tax implications, non-custodial wallets, and how to spend", "url": "https://degen0x.com/learn/crypto-cards-spend-crypto-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-cards-spend-crypto-guide-2026" />
+<AuthoritySources url="/learn/crypto-cards-spend-crypto-guide-2026" />
 </div>
   );
 }

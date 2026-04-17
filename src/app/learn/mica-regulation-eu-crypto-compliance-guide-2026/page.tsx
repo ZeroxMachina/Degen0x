@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "MiCA Regulation Guide 2026 — EU Crypto Compliance Explained",
   description: "Complete guide to MiCA (Markets in Crypto-Assets Regulation). Learn EU crypto compliance requirements, stablecoin rules, CASP licensing, penalties, and what it",
@@ -315,6 +319,14 @@ export default function MiCARegulationPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="MiCA Regulation Guide 2026 — EU Crypto Compliance Explained"
+        description="Complete guide to MiCA (Markets in Crypto-Assets Regulation). Learn EU crypto compliance requirements, stablecoin rules, CASP licensing, penalties, and what it"
+        url="https://degen0x.com/learn/mica-regulation-eu-crypto-compliance-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
@@ -931,6 +943,7 @@ export default function MiCARegulationPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MiCA Regulation Guide 2026 \u2014 EU Crypto Compliance Explained", "description": "Complete guide to MiCA (Markets in Crypto-Assets Regulation). Learn EU crypto compliance requirements, stablecoin rules, CASP licensing, penalties, and what it", "url": "https://degen0x.com/learn/mica-regulation-eu-crypto-compliance-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/mica-regulation-eu-crypto-compliance-guide-2026" />
+<AuthoritySources url="/learn/mica-regulation-eu-crypto-compliance-guide-2026" />
 </main>
   );
 }

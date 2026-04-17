@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'ZK Rollups vs Optimistic Rollups | degen0x',
   description: 'Compare validity proofs vs fraud proofs. Analyze finality time, proving costs, ZK vs Optimistic trade-offs: zkSync, StarkNet, Arbitrum, Optimism.',
@@ -193,6 +197,14 @@ export default function ZKVsOptimisticRollups() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="ZK Rollups vs Optimistic Rollups | degen0x"
+        description="Compare validity proofs vs fraud proofs. Analyze finality time, proving costs, ZK vs Optimistic trade-offs: zkSync, StarkNet, Arbitrum, Optimism."
+        url="https://degen0x.com/learn/zk-rollups-vs-optimistic-rollups"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -514,6 +526,7 @@ export default function ZKVsOptimisticRollups() {
 </div>
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/zk-rollups-vs-optimistic-rollups" />
+      <AuthoritySources url="/learn/zk-rollups-vs-optimistic-rollups" />
       </article>
   );
 }

@@ -5,6 +5,13 @@ import RelatedContent from '@/components/RelatedContent';
 import Diagram from '@/components/Diagram';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Layer 2 Crypto Explained: Rollups, zkSync, Arbitrum 2026",
   description: "Layer 2 scaling explained: optimistic rollups (Arbitrum, Optimism, Base), ZK rollups (zkSync, StarkNet, Scroll), fraud proofs, validity proofs, TPS, TVL,",
@@ -56,6 +63,14 @@ export default function Layer2CryptoExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Layer 2 Crypto Explained: Rollups, zkSync, Arbitrum 2026"
+        description="Layer 2 scaling explained: optimistic rollups (Arbitrum, Optimism, Base), ZK rollups (zkSync, StarkNet, Scroll), fraud proofs, validity proofs, TPS, TVL,"
+        url="https://degen0x.com/learn/layer-2-crypto-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -137,6 +152,11 @@ export default function Layer2CryptoExplained() {
         </nav>
       <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/layer-2-crypto-explained" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/learn/layer-2-crypto-explained" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/learn/layer-2-crypto-explained" />
       </article>
   );
 }

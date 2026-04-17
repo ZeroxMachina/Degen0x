@@ -13,6 +13,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Marinade vs Jito vs Sanctum: Solana LST Comparison 2026",
   description: "Compare Marinade mSOL, Jito JitoSOL, and Sanctum INF head-to-head. APY, TVL, validators, fees, and strategies for choosing the best Solana liquid staking token",
@@ -682,6 +684,7 @@ export default function LSTComparison() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Marinade vs Jito vs Sanctum: Solana LST Comparison 2026", "description": "Compare Marinade mSOL, Jito JitoSOL, and Sanctum INF head-to-head. APY, TVL, validators, fees, and strategies for choosing the best Solana liquid staking token", "url": "https://degen0x.com/learn/solana-lst-comparison-marinade-jito-sanctum-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/solana-lst-comparison-marinade-jito-sanctum-2026" />
+<AuthoritySources url="/learn/solana-lst-comparison-marinade-jito-sanctum-2026" />
 </div>
   );
 }

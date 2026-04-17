@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "dYdX Chain Guide 2026 — Cosmos Perps DEX & MegaVault",
@@ -229,6 +233,14 @@ export default function DydxChainGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="dYdX Chain Guide 2026 — Cosmos Perps DEX & MegaVault"
+        description="Complete guide to dYdX Chain—a Cosmos appchain for decentralized perpetual futures. Learn MegaVault permissionless markets, trading mechanics, tokenomics, and"
+        url="https://degen0x.com/learn/dydx-chain-cosmos-perpetual-futures-dex-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -898,6 +910,7 @@ export default function DydxChainGuide() {
         />
       <LiveMiniStat id="cosmos" />
       <RelatedContent category="learn" currentSlug="/learn/dydx-chain-cosmos-perpetual-futures-dex-guide-2026" />
+      <AuthoritySources url="/learn/dydx-chain-cosmos-perpetual-futures-dex-guide-2026" />
       </article>
   );
 }

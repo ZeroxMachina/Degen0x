@@ -11,6 +11,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Ethereum Blob Space Guide 2026: EIP-4844, Data Availability",
   description: "Understand how Ethereum's blob space works. Learn about EIP-4844, blob gas fees, how blobs make L2s cheap, PeerDAS scaling, and the full Danksharding roadmap.",
@@ -72,6 +76,14 @@ export default function EthereumBlobSpaceGuide() {
 
   return (
     <div style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <ArticleSchema
+        headline="Ethereum Blob Space Guide 2026: EIP-4844, Data Availability"
+        description="Understand how Ethereum"
+        url="https://degen0x.com/learn/ethereum-blob-space-economics-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <style>{`
         .related-article-card {
@@ -577,6 +589,7 @@ export default function EthereumBlobSpaceGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Blob Space Guide 2026: EIP-4844, Data Availability", "description": "Understand how Ethereum", "url": "https://degen0x.com/learn/ethereum-blob-space-economics-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="ethereum" />
       <RelatedContent category="learn" currentSlug="/learn/ethereum-blob-space-economics-guide" />
+<AuthoritySources url="/learn/ethereum-blob-space-economics-guide" />
 </div>
   );
 }

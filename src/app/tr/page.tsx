@@ -2,6 +2,12 @@ import { Metadata } from "next";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 // ─────────────────────────────────────────────
 //  Turkish (TR) Localization Landing Page
 //  degen0x · Sprint 28 · Day 34
@@ -212,6 +218,19 @@ const breadcrumbData = {
 export default function TurkishPage() {
   return (
     <div style={{ background: "var(--color-bg, #0d1117)", minHeight: "100vh", color: "var(--color-text, #e6edf3)" }}>
+      <ArticleSchema
+        headline="degen0x Türkçe — Kripto Para Borsaları, Cüzdanlar ve DeFi"
+        description="degen0x, Türkiye için kapsamlı kripto para karşılaştırma platformudur. Borsaları, cüzdanları, DeFi protokollerini karşılaştırın; Türkiye"
+        url="/tr"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tr" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tr" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

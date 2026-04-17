@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Polkadot Ecosystem 2026: Acala, Moonbeam, Astar, Phala,",
   description: "Complete guide to Polkadot parachains 2026. Acala DeFi ($300M TVL), Moonbeam EVM ($180M TVL), Astar multi-VM ($150M TVL), Phala privacy, Hydration AMM. DOT",
@@ -83,6 +89,19 @@ export default function PolkadotEcosystemGuideExpanded() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="Polkadot Ecosystem 2026: Acala, Moonbeam, Astar, Phala,"
+        description="Complete guide to Polkadot parachains 2026. Acala DeFi ($300M TVL), Moonbeam EVM ($180M TVL), Astar multi-VM ($150M TVL), Phala privacy, Hydration AMM. DOT"
+        url="/ecosystem/polkadot-ecosystem-projects"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/polkadot-ecosystem-projects" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/polkadot-ecosystem-projects" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: "0 auto" }}>

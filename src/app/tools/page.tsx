@@ -5,6 +5,11 @@ import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "104+ Free Crypto Tools — Bridge Aggregator v2, Watchlist",
   description: "Free crypto tools including multi-chain bridge aggregator v2 with route optimization, watchlist sync with localStorage, MEV protection dashboard, token unlock",
@@ -590,6 +595,14 @@ const breadcrumbData = {
 export default function ToolsPage() {
   return (
     <div style={{ minHeight: "100vh", background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="104+ Free Crypto Tools — Bridge Aggregator v2, Watchlist"
+        description="Free crypto tools including multi-chain bridge aggregator v2 with route optimization, watchlist sync with localStorage, MEV protection dashboard, token unlock"
+        url="/tools"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -774,7 +787,11 @@ export default function ToolsPage() {
         </div>
       </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "104+ Free Crypto Tools — Bridge Aggregator v2, Watchlist", "description": "Free crypto tools including multi-chain bridge aggregator v2 with route optimization, watchlist sync with localStorage, MEV protection dashboard, token unlock", "url": "https://degen0x.com/tools", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/tools" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools" />
       <RelatedContent category="tools" currentSlug="/tools" />
     </div>
   );

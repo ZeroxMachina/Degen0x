@@ -16,6 +16,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Ondo Finance Guide 2026: Tokenized Treasuries, Stocks & RWA",
   description: "Ondo Finance is the leading RWA tokenization protocol with $2.52B TVL. Learn about USDY, OUSG, tokenized equities, the ONDO token, and how to access",
@@ -840,6 +842,7 @@ export default function OndoFinanceGuidePage() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/ondo-finance-rwa-guide" />
+      <AuthoritySources url="/learn/ondo-finance-rwa-guide" />
       </article>
   );
 }

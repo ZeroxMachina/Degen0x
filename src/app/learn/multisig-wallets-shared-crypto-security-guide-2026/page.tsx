@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Multisig Wallets & Shared Crypto Security Guide 2026",
   description: 'Complete guide to multisig wallets, threshold signatures, and shared security solutions for crypto. Learn how to secure assets with multiple signers in 2026.',
@@ -220,6 +224,14 @@ const breadcrumbData = {
 export default function MultisigWalletGuide() {
   return (
     <div style={pageStyle}>
+      <ArticleSchema
+        headline="Multisig Wallets & Shared Crypto Security Guide 2026"
+        description="Complete guide to multisig wallets, threshold signatures, and shared security solutions for crypto. Learn how to secure assets with multiple signers in 2026."
+        url="https://degen0x.com/learn/multisig-wallets-shared-crypto-security-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -674,6 +686,7 @@ export default function MultisigWalletGuide() {
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multisig Wallets & Shared Crypto Security Guide 2026", "description": "Complete guide to multisig wallets, threshold signatures, and shared security solutions for crypto. Learn how to secure assets with multiple signers in 2026.", "url": "https://degen0x.com/learn/multisig-wallets-shared-crypto-security-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/multisig-wallets-shared-crypto-security-guide-2026" />
+<AuthoritySources url="/learn/multisig-wallets-shared-crypto-security-guide-2026" />
 </div>
   );
 }

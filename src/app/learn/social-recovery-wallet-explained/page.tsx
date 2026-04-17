@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Social Recovery Wallets Explained | Argent, Safe & Guardian",
   description: "Master social recovery wallets: how Argent uses 3-5 guardians, Safe social recovery modules, and ERC-4337 integration to secure crypto without seed phrases.",
@@ -191,6 +195,14 @@ export default function SocialRecoveryWalletExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Social Recovery Wallets Explained | Argent, Safe & Guardian"
+        description="Master social recovery wallets: how Argent uses 3-5 guardians, Safe social recovery modules, and ERC-4337 integration to secure crypto without seed phrases."
+        url="https://degen0x.com/learn/social-recovery-wallet-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -488,6 +500,7 @@ export default function SocialRecoveryWalletExplained() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Social Recovery Wallets Explained | Argent, Safe & Guardian", "description": "Master social recovery wallets: how Argent uses 3-5 guardians, Safe social recovery modules, and ERC-4337 integration to secure crypto without seed phrases.", "url": "https://degen0x.com/learn/social-recovery-wallet-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/social-recovery-wallet-explained" />
+      <AuthoritySources url="/learn/social-recovery-wallet-explained" />
       </article>
   );
 }

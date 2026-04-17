@@ -5,6 +5,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Prediction Markets: The Complete Guide to Event Trading",
   description: "Learn how crypto prediction markets work, explore top platforms like Polymarket, understand strategies for trading on real-world events, and manage risk",
@@ -25,6 +29,14 @@ const breadcrumbData = {
 export default function PredictionMarketsGuide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <ArticleSchema
+        headline="Prediction Markets: The Complete Guide to Event Trading"
+        description="Learn how crypto prediction markets work, explore top platforms like Polymarket, understand strategies for trading on real-world events, and manage risk"
+        url="https://degen0x.com/learn/prediction-markets-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8">
@@ -286,6 +298,7 @@ export default function PredictionMarketsGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Prediction Markets: The Complete Guide to Event Trading", "description": "Learn how crypto prediction markets work, explore top platforms like Polymarket, understand strategies for trading on real-world events, and manage risk", "url": "https://degen0x.com/learn/prediction-markets-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/prediction-markets-guide" />
 </div>
   );
 }

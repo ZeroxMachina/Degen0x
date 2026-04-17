@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Blockstream Jade Review (2026) | degen0x`,
   description: "Blockstream Jade hardware wallet review covering security model, air-gapped signing, Liquid Network support, and value proposition.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function JadeReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Blockstream Jade Review (2026)"
+        url="https://degen0x.com/wallets/reviews/jade"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Blockstream Jade",
@@ -54,7 +70,7 @@ export default function JadeReviewPage() {
       categorySlug="wallets"
       overview="Blockstream Jade is a hardware wallet developed by Blockstream, a leading Bitcoin infrastructure company. What sets Jade apart is its commitment to being fully open source — both hardware schematics and firmware are publicly available for review. Instead of a traditional secure element chip, Jade uses a unique virtual secure element model that requires a server-side oracle for PIN verification, adding a novel security layer. The built-in camera enables fully air-gapped QR code-based transaction signing. Supporting both Bitcoin and the Liquid Network, Jade is an excellent budget-friendly option for Bitcoin-focused users who value open-source transparency."
       sections={[
-        { id: "security-model", title: "Security Model", content: "Jade's security model differs from traditional hardware wallets. Instead of storing seeds on a dedicated secure element chip, Jade uses a virtual secure element approach where the seed is encrypted and requires interaction with a Blockstream server (blind oracle) to decrypt. This means the server cannot access your keys (it never sees them), and the device cannot be used without server verification. The model provides protection against physical attacks while maintaining an open-source design, since secure element chips typically require closed-source firmware." },
+        { id: "security-model", title: "Security Model — Wallets (wallets / reviews / jade)", content: "Jade's security model differs from traditional hardware wallets. Instead of storing seeds on a dedicated secure element chip, Jade uses a virtual secure element approach where the seed is encrypted and requires interaction with a Blockstream server (blind oracle) to decrypt. This means the server cannot access your keys (it never sees them), and the device cannot be used without server verification. The model provides protection against physical attacks while maintaining an open-source design, since secure element chips typically require closed-source firmware." },
         { id: "air-gapped", title: "Air-Gapped Signing", content: "The built-in camera on Jade enables fully air-gapped transaction signing using QR codes. You can use Jade with companion apps like Sparrow Wallet or Nunchuk without ever connecting via USB or Bluetooth. Scan the transaction QR code with Jade's camera, verify the details on the color display, approve the transaction, and then scan the signed transaction QR code back to your computer. This air-gapped workflow eliminates USB-based attack vectors." },
         { id: "liquid-network", title: "Liquid Network Support", content: "Jade is one of the few hardware wallets that supports Blockstream's Liquid Network, a Bitcoin sidechain designed for faster settlements and confidential transactions. Through the Blockstream Green companion app, you can manage both Bitcoin mainchain and Liquid assets on the same device. This includes L-BTC and Liquid-issued assets. For users involved in the Liquid ecosystem, Jade is the natural hardware wallet choice." },
         { id: "companion-apps", title: "Companion Apps", content: "Jade works with several companion applications. Blockstream Green is the primary companion app, offering full Bitcoin and Liquid wallet management. Sparrow Wallet provides advanced Bitcoin features with Jade's hardware security. Nunchuk supports Jade for multisig setups. The wallet communicates via USB-C or Bluetooth, with QR code air-gap available as the most secure option." },
@@ -101,6 +117,18 @@ export default function JadeReviewPage() {
         { title: "Best Hardware Wallets", href: "/wallets/best/hardware" }
       ]}
     />
+      <ArticleSchema
+        headline="Blockstream Jade Review (2026) | degen0x"
+        description="Blockstream Jade hardware wallet review covering security model, air-gapped signing, Liquid Network support, and value proposition."
+        url="https://degen0x.com/wallets/reviews/jade"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/jade" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Security Model", "description": "Blockstream Jade hardware wallet review covering security model, air-gapped signing, Liquid Network support, and value proposition.", "url": "https://degen0x.com/wallets/reviews/jade", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

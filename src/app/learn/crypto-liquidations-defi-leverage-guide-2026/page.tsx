@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Liquidations in DeFi & Leverage Trading Guide 2026",
   description: "Master crypto liquidations: understand DeFi liquidation mechanics (Aave, Compound), perpetual exchanges (Hyperliquid, dYdX), health factor, cascading",
@@ -295,6 +299,14 @@ export default function CryptoLiquidationsPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Crypto Liquidations in DeFi & Leverage Trading Guide 2026"
+        description="Master crypto liquidations: understand DeFi liquidation mechanics (Aave, Compound), perpetual exchanges (Hyperliquid, dYdX), health factor, cascading"
+        url="https://degen0x.com/learn/crypto-liquidations-defi-leverage-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -1272,6 +1284,7 @@ export default function CryptoLiquidationsPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Liquidations in DeFi & Leverage Trading Guide 2026", "description": "Master crypto liquidations: understand DeFi liquidation mechanics (Aave, Compound), perpetual exchanges (Hyperliquid, dYdX), health factor, cascading", "url": "https://degen0x.com/learn/crypto-liquidations-defi-leverage-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-liquidations-defi-leverage-guide-2026" />
+<AuthoritySources url="/learn/crypto-liquidations-defi-leverage-guide-2026" />
 </main>
   );
 }

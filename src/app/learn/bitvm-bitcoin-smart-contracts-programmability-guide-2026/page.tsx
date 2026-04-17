@@ -9,6 +9,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'BitVM Guide 2026: Bitcoin Smart Contracts | degen0x',
   description: "Complete guide to BitVM: how Bitcoin enables Turing-complete smart contracts without consensus changes. Learn off-chain computation, fraud proofs, OP_CAT, and",
@@ -302,6 +306,14 @@ export default function BitVMPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="BitVM Guide 2026: Bitcoin Smart Contracts | degen0x"
+        description="Complete guide to BitVM: how Bitcoin enables Turing-complete smart contracts without consensus changes. Learn off-chain computation, fraud proofs, OP_CAT, and"
+        url="https://degen0x.com/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -692,6 +704,7 @@ export default function BitVMPage() {
       <LiveMiniStat id="bitcoin" />
       <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026" />
+<AuthoritySources url="/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026" />
 </main>
   );
 }

@@ -3,6 +3,12 @@ import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "AI-Generated NFTs 2026: Complete Guide to Copyright,",
   description: "Comprehensive guide to AI-generated NFTs: Midjourney, DALL-E, Stable Diffusion licensing. Copyright risks, legal status, market valuation, IP insurance, and",
@@ -187,6 +193,19 @@ export default function AIGeneratedNFTGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="AI-Generated NFTs 2026: Complete Guide to Copyright,"
+        description="Comprehensive guide to AI-generated NFTs: Midjourney, DALL-E, Stable Diffusion licensing. Copyright risks, legal status, market valuation, IP insurance, and"
+        url="https://degen0x.com/nfts/ai-generated-nft-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/ai-generated-nft-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/ai-generated-nft-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

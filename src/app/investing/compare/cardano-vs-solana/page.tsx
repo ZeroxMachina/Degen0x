@@ -9,6 +9,13 @@ import Link from "next/link";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = { title: `Cardano vs Solana (2026) | degen0x`, description: `Cardano vs Solana comparison for ${CURRENT_YEAR}. Research-driven development vs high-performance execution compared across speed, fees, ecosystem, and investment potential.` ,
   alternates: { canonical: "/investing/compare/cardano-vs-solana" },
   openGraph: { type: "website", images: [{ url: "/og-default.svg", width: 1200, height: 630 }] },
@@ -39,6 +46,14 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-10">
+      <ArticleSchema
+        headline="Cardano vs Solana (2026) | degen0x"
+        description="Cardano vs Solana comparison for ${CURRENT_YEAR}. Research-driven development vs high-performance execution compared across speed, fees, ecosystem, and investment potential."
+        url="https://degen0x.com/investing/compare/cardano-vs-solana"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -126,6 +141,11 @@ export default function Page() {
         items={["Cardano", "Solana"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/compare/cardano-vs-solana" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/compare/cardano-vs-solana" />
     </div>
   );
 }

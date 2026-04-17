@@ -5,6 +5,14 @@ import MarketRecapClient from "./MarketRecapClient";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Daily Crypto Market Recap — Today's Movers & Events | degen0x",
   description: "Get a daily snapshot of what moved the crypto market — top gainers, losers, sector performance, and key events. Updated live with market data from CoinGecko",
@@ -58,6 +66,24 @@ const breadcrumbData = {
 export default function MarketRecapPage() {
   return (
     <div style={{ background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="Daily Crypto Market Recap — Today"
+        description="Get a daily snapshot of what moved the crypto market — top gainers, losers, sector performance, and key events. Updated live with market data from CoinGecko"
+        url="/tools/market-recap"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/market-recap" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/market-recap" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/market-recap"
+        name="Daily Crypto Market Recap"
+        description="Get a daily snapshot of what moved the crypto market — top gainers, losers, sector performance, and key events. Updated live with market data from CoinGecko"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

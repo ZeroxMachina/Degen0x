@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Solana Alpenglow Guide 2026 — 150ms Finality Explained",
   description:
@@ -638,6 +640,7 @@ export default function SolanaAlpenglowGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Alpenglow Guide 2026 \u2014 150ms Finality Explained", "description": "Solana", "url": "https://degen0x.com/learn/solana-alpenglow-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/solana-alpenglow-guide" />
 </div>
   );
 }

@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import WalletXPSync from '@/components/WalletXPSync';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Wallet XP Sync — On-Chain Identity | degen0x',
   description: 'Sync your degen0x XP with your Solana wallet. On-chain proof of your crypto learning journey.',
@@ -26,6 +32,19 @@ const breadcrumbData = {
 export default function XPSyncPage() {
   return (
     <main style={{ minHeight: '100vh', background: '#0d1117', padding: '24px' }}>
+      <ArticleSchema
+        headline="Wallet XP Sync — On-Chain Identity | degen0x"
+        description="Sync your degen0x XP with your Solana wallet. On-chain proof of your crypto learning journey."
+        url="/xp-sync"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/xp-sync" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/xp-sync" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

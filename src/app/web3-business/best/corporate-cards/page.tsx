@@ -8,6 +8,12 @@ import FAQSection from "@/components/FAQSection";
 import { Product, FAQ } from "@/lib/types";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto | degen0x`,
   description: `Compare the best crypto corporate cards of ${CURRENT_YEAR}. Spend directly from stablecoin and crypto balances, set team spending limits, and streamline expense management for Web3 teams.`,
@@ -112,6 +118,19 @@ const breadcrumbData = {
 export default function CorporateCardsPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Crypto-Native Teams"
+        description="Corporate card platform designed specifically for Web3 companies. Spend directly from USDC and stablecoin balances, set granular team spending controls, and"
+        url="/web3-business/best/corporate-cards"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Web3 Business"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/web3-business/best/corporate-cards" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/web3-business/best/corporate-cards" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

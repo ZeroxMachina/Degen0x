@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Atomic Swaps Explained: Trustless Cross-Chain Trading",
   description: 'Learn how atomic swaps enable trustless cross-chain trading using HTLCs. Explore Thorchain, AtomicDEX, and submarine swaps.',
@@ -188,6 +192,14 @@ export default function AtomicSwapsExplained() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Atomic Swaps Explained: Trustless Cross-Chain Trading"
+        description="Learn how atomic swaps enable trustless cross-chain trading using HTLCs. Explore Thorchain, AtomicDEX, and submarine swaps."
+        url="https://degen0x.com/learn/atomic-swaps-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -459,6 +471,7 @@ export default function AtomicSwapsExplained() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Atomic Swaps Explained: Trustless Cross-Chain Trading", "description": "Learn how atomic swaps enable trustless cross-chain trading using HTLCs. Explore Thorchain, AtomicDEX, and submarine swaps.", "url": "https://degen0x.com/learn/atomic-swaps-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/atomic-swaps-explained" />
+      <AuthoritySources url="/learn/atomic-swaps-explained" />
       </article>
   );
 }

@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "How to Read Crypto Charts for Beginners | Degen0x",
   description: "Learn candlestick charts, chart patterns, and technical indicators. Complete guide for reading crypto charts without experience.",
@@ -125,6 +129,14 @@ const breadcrumbData = {
 export default function HowToReadCryptoChartsPage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <ArticleSchema
+        headline="How to Read Crypto Charts for Beginners | Degen0x"
+        description="Learn candlestick charts, chart patterns, and technical indicators. Complete guide for reading crypto charts without experience."
+        url="https://degen0x.com/learn/how-to-read-crypto-charts-for-beginners"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -991,6 +1003,7 @@ export default function HowToReadCryptoChartsPage() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "How to Read Crypto Charts for Beginners | Degen0x", "description": "Learn candlestick charts, chart patterns, and technical indicators. Complete guide for reading crypto charts without experience.", "url": "https://degen0x.com/learn/how-to-read-crypto-charts-for-beginners", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/how-to-read-crypto-charts-for-beginners" />
+<AuthoritySources url="/learn/how-to-read-crypto-charts-for-beginners" />
 </div>
   );
 }

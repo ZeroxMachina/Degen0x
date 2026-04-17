@@ -8,6 +8,12 @@ import { Product, FAQ } from "@/lib/types";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import Link from "next/link";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Insurance Protocols of 2026 - Compare Coverage`,
   description: "Compare the best crypto insurance protocols. Expert analysis of Nexus Mutual, InsurAce, Unslashed, and more. Find the right coverage for smart contracts,",
@@ -169,6 +175,19 @@ const breadcrumbData = {
 export default function BestInsurancePage() {
   return (
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Smart Contract Cover"
+        description="Compare the best crypto insurance protocols. Expert analysis of Nexus Mutual, InsurAce, Unslashed, and more. Find the right coverage for smart contracts,"
+        url="/insurance/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Insurance"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/insurance/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/insurance/best" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

@@ -9,6 +9,12 @@ import { exchanges } from "@/data/exchanges";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import RelatedContent from '@/components/RelatedContent';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Cheapest Crypto Exchanges in 2026 - Lowest Fee Comparison`,
   description: `Find the crypto exchanges with the lowest trading fees in ${CURRENT_YEAR}. Compare maker/taker fees, withdrawal costs, and hidden charges across top platforms.`,
@@ -62,6 +68,19 @@ const breadcrumbData = {
 export default function LowFeeExchangesPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Exchanges"
+        description="Exchanges"
+        url="/exchanges/best/low-fee"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Exchanges"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/best/low-fee" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/exchanges/best/low-fee" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

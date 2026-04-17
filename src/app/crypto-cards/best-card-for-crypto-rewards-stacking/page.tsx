@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Crypto Cards for Rewards Stacking | Multi-Card",
   description: "Stack crypto card rewards using multiple cards. Compare reward rates, maximize cashback, and optimize multi-card strategies. Real yield from spending.",
@@ -167,6 +173,19 @@ export default function BestCardForCryptoRewardsStacking() {
 
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px", scrollBehavior: "smooth" }}>
+      <ArticleSchema
+        headline="Best Crypto Cards for Rewards Stacking | Multi-Card"
+        description="Stack crypto card rewards using multiple cards. Compare reward rates, maximize cashback, and optimize multi-card strategies. Real yield from spending."
+        url="https://degen0x.com/crypto-cards/best-card-for-crypto-rewards-stacking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Cards"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/best-card-for-crypto-rewards-stacking" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-cards/best-card-for-crypto-rewards-stacking" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

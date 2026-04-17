@@ -4,13 +4,17 @@
  * Displays all blog posts with featured section, categories, and search.
  * Sprint 11 — Content Agent + Frontend Dev
  */
-export const dynamic = "force-dynamic";
-
+export const revalidate = 3600;
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getAllPosts, getFeaturedPosts, getCategoryMeta, type BlogCategory } from "@/lib/blog";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
+
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
 
 export const metadata: Metadata = {
   title: `Blog — Crypto News, Analysis & Guides | degen0x`,
@@ -59,6 +63,14 @@ export default function BlogPage() {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#0d1117" }}>
+      <ArticleSchema
+        headline="Guides"
+        description="degen0x blog: Crypto market analysis, DeFi protocol updates, regulation news, token launches, advanced trading strategies, and trader insights."
+        url="/blog"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -268,7 +280,11 @@ export default function BlogPage() {
           </Link>
         </div>
       </div>
-      <AuthoritySources url="/blog" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/blog" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/blog" />
     </div>
   );
 }

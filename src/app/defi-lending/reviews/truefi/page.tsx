@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `TrueFi Review (2026): Uncollateralized DeFi Lending | degen0x`,
   description: "In-depth TrueFi review covering uncollateralized institutional lending, TRU token staking, on-chain credit scoring, and managed portfolio products.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function TrueFiReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="TrueFi Review (2026): Uncollateralized DeFi Lending"
+        url="https://degen0x.com/defi-lending/reviews/truefi"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "TrueFi",
@@ -58,6 +74,18 @@ export default function TrueFiReview() {
       relatedReviews={[{ name: "Maple Finance", slug: "/defi-lending/reviews/maple-finance" }, { name: "Clearpool", slug: "/defi-lending/reviews/clearpool" }]}
       relatedGuides={[{ title: "DeFi Credit Scoring", href: "/defi-lending/learn/defi-credit-scoring" }, { title: "Undercollateralized Lending", href: "/defi-lending/learn/undercollateralized-lending" }]}
     />
+      <ArticleSchema
+        headline="TrueFi Review (2026): Uncollateralized DeFi Lending | degen0x"
+        description="In-depth TrueFi review covering uncollateralized institutional lending, TRU token staking, on-chain credit scoring, and managed portfolio products."
+        url="https://degen0x.com/defi-lending/reviews/truefi"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending/reviews/truefi" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "On-Chain Credit Scoring", "description": "In-depth TrueFi review covering uncollateralized institutional lending, TRU token staking, on-chain credit scoring, and managed portfolio products.", "url": "https://degen0x.com/defi-lending/reviews/truefi", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

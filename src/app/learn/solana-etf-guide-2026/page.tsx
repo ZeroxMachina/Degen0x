@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 const S = {
   bg: "var(--color-bg, #0d1117)",
   surface: "var(--color-surface, #161b22)",
@@ -383,6 +385,7 @@ export default function SolanaETFGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana ETF Guide 2026 \u2014 Spot SOL ETF Status, How to Invest", "description": "Everything you need to know about the Solana ETF in 2026. Track approval status, compare SOL ETF issuers (VanEck, 21Shares, Grayscale), understand fees, and", "url": "https://degen0x.com/learn/solana-etf-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="solana" />
       <RelatedContent category="learn" currentSlug="/learn/solana-etf-guide-2026" />
+<AuthoritySources url="/learn/solana-etf-guide-2026" />
 </main>
   );
 }

@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import OdosClient from "./OdosClient";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Odos: Multi-Input DEX Aggregator Guide 2026 — $30B+ Volume",
   description: "Complete guide to Odos — the first multi-input DEX aggregator with $30B+ volume across 16 chains, zero fees, and 1000+ routing paths per trade. How Odos works,",
@@ -59,6 +65,19 @@ const breadcrumbData = {
 export default function OdosPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Odos: Multi-Input DEX Aggregator Guide 2026 — $30B+ Volume"
+        description="Complete guide to Odos — the first multi-input DEX aggregator with $30B+ volume across 16 chains, zero fees, and 1000+ routing paths per trade. How Odos works,"
+        url="/ecosystem/odos"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Ecosystem"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/ecosystem/odos" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/ecosystem/odos" />
       <OdosClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Odos: Multi-Input DEX Aggregator Guide 2026 — $30B+ Volume", "description": "Complete guide to Odos — the first multi-input DEX aggregator with $30B+ volume across 16 chains, zero fees, and 1000+ routing paths per trade. How Odos works,", "url": "https://degen0x.com/ecosystem/odos", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

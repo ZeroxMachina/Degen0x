@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Uniswap v4 Hooks Guide 2026 — How They Work & Why They",
@@ -753,6 +755,7 @@ export default function UniswapV4HooksGuidePage() {
       <LiveMiniStat id="uniswap" />
       <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/uniswap-v4-hooks-guide" />
+<AuthoritySources url="/learn/uniswap-v4-hooks-guide" />
 </div>
   );
 }

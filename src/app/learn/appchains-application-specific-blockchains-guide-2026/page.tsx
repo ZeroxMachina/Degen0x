@@ -7,6 +7,10 @@ import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Appchains & Application-Specific Blockchains Guide 2026",
   description: "Complete guide to appchains and application-specific blockchains in 2026. Learn Cosmos SDK, Arbitrum Orbit, OP Stack, Avalanche Subnets, and Substrate. Compare",
@@ -298,6 +302,14 @@ export default function AppChainsPage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Appchains & Application-Specific Blockchains Guide 2026"
+        description="Complete guide to appchains and application-specific blockchains in 2026. Learn Cosmos SDK, Arbitrum Orbit, OP Stack, Avalanche Subnets, and Substrate. Compare"
+        url="https://degen0x.com/learn/appchains-application-specific-blockchains-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -895,6 +907,7 @@ export default function AppChainsPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Appchains & Application-Specific Blockchains Guide 2026", "description": "Complete guide to appchains and application-specific blockchains in 2026. Learn Cosmos SDK, Arbitrum Orbit, OP Stack, Avalanche Subnets, and Substrate. Compare", "url": "https://degen0x.com/learn/appchains-application-specific-blockchains-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/appchains-application-specific-blockchains-guide-2026" />
+<AuthoritySources url="/learn/appchains-application-specific-blockchains-guide-2026" />
 </main>
   );
 }

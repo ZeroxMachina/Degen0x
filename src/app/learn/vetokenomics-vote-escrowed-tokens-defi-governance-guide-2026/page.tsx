@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "veTokenomics & Vote-Escrowed Tokens Guide 2026 — DeFi",
@@ -219,6 +223,14 @@ export default function VeTokenomicsGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="veTokenomics & Vote-Escrowed Tokens Guide 2026 — DeFi"
+        description="Complete guide to veTokenomics (vote-escrowed tokens) in 2026. Learn how Curve, Balancer, Velodrome, and others use lock-based governance. Curve Wars, bribe"
+        url="https://degen0x.com/learn/vetokenomics-vote-escrowed-tokens-defi-governance-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -743,6 +755,7 @@ export default function VeTokenomicsGuide() {
           <a href="/learn/crypto-passive-income-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Passive Income Guide 2026</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/vetokenomics-vote-escrowed-tokens-defi-governance-guide-2026" />
+      <AuthoritySources url="/learn/vetokenomics-vote-escrowed-tokens-defi-governance-guide-2026" />
       </article>
   );
 }

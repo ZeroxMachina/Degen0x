@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "MEV (Maximal Extractable Value) Explained 2026: Flashbots,",
   description: "Complete MEV guide 2026. Sandwich attacks, frontrunning, MEV-Boost, Flashbots, MEV protection tools (CoW Protocol, MEV Blocker), searcher/builder/proposer",
@@ -207,6 +211,14 @@ export default function MEVMaximalExtractableValueExplained2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="MEV (Maximal Extractable Value) Explained 2026: Flashbots,"
+        description="Complete MEV guide 2026. Sandwich attacks, frontrunning, MEV-Boost, Flashbots, MEV protection tools (CoW Protocol, MEV Blocker), searcher/builder/proposer"
+        url="https://degen0x.com/learn/mev-maximal-extractable-value-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -650,6 +662,7 @@ export default function MEVMaximalExtractableValueExplained2026() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MEV (Maximal Extractable Value) Explained 2026: Flashbots,", "description": "Complete MEV guide 2026. Sandwich attacks, frontrunning, MEV-Boost, Flashbots, MEV protection tools (CoW Protocol, MEV Blocker), searcher/builder/proposer", "url": "https://degen0x.com/learn/mev-maximal-extractable-value-explained", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/mev-maximal-extractable-value-explained" />
+      <AuthoritySources url="/learn/mev-maximal-extractable-value-explained" />
       </article>
   );
 }

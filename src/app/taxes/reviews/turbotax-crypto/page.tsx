@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "TurboTax Crypto",
   slug: "turbotax-crypto",
@@ -38,6 +47,13 @@ const breadcrumbData = {
 export default function TurboTaxCryptoReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="TurboTax Crypto Review (2026): Built-In Crypto Tax Filing"
+        url="https://degen0x.com/taxes/reviews/turbotax-crypto"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Taxes"
@@ -59,6 +75,18 @@ export default function TurboTaxCryptoReview() {
       relatedReviews={[{ name: "CoinLedger", slug: "coinledger" }, { name: "Koinly", slug: "koinly" }]}
       relatedGuides={[{ title: "IRS Form 8949", href: "/taxes/learn/irs-form-8949" }, { title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }]}
     />
+      <ArticleSchema
+        headline="TurboTax Crypto Review (2026): Built-In Crypto Tax Filing | degen0x"
+        description="TurboTax"
+        url="https://degen0x.com/taxes/reviews/turbotax-crypto"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/reviews/turbotax-crypto" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tax Features", "description": "TurboTax's built-in crypto tax features offer basic crypto reporting integrated directly into the most popular US tax filing software.", "url": "https://degen0x.com/taxes/reviews/turbotax-crypto", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

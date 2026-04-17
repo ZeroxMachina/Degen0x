@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "DeFi Looping & Leveraged Yield Strategies Guide 2026 |",
   description: "Master DeFi looping (recursive borrowing) strategies. Learn yield amplification, points farming, RWA looping, liquidation risks, and top platforms like",
@@ -175,6 +179,14 @@ export default function DefiLoopingLeveragedYieldStrategiesGuide2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="DeFi Looping & Leveraged Yield Strategies Guide 2026 |"
+        description="Master DeFi looping (recursive borrowing) strategies. Learn yield amplification, points farming, RWA looping, liquidation risks, and top platforms like"
+        url="https://degen0x.com/learn/defi-looping-leveraged-yield-strategies-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <BackToTop />
@@ -563,6 +575,7 @@ export default function DefiLoopingLeveragedYieldStrategiesGuide2026() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/defi-looping-leveraged-yield-strategies-guide-2026" />
+      <AuthoritySources url="/learn/defi-looping-leveraged-yield-strategies-guide-2026" />
       </article>
   );
 }

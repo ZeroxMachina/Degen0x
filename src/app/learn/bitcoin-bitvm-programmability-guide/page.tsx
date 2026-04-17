@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin BitVM & Programmability Guide 2026 — Smart",
   description: "Explore how BitVM enables smart contracts on Bitcoin without protocol changes. Learn about BitVM2, Citrea, Bitlayer, BOB Network, and the Bitcoin",
@@ -845,6 +847,7 @@ export default function BitVMProgrammabilityGuide() {
       </div>
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin BitVM & Programmability Guide 2026 \u2014 Smart", "description": "Explore how BitVM enables smart contracts on Bitcoin without protocol changes. Learn about BitVM2, Citrea, Bitlayer, BOB Network, and the Bitcoin", "url": "https://degen0x.com/learn/bitcoin-bitvm-programmability-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/bitcoin-bitvm-programmability-guide" />
 </main>
   );
 }

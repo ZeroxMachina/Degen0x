@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "NFT Ticketing Events Guide 2026: GET Protocol, YellowHeart,",
   description: "Complete guide to NFT event ticketing: anti-scalping with GET Protocol, creator royalties, YellowHeart for artists, and Ticketmaster integration. Prevent",
@@ -181,6 +187,19 @@ export default function NFTTicketingGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="NFT Ticketing Events Guide 2026: GET Protocol, YellowHeart,"
+        description="Complete guide to NFT event ticketing: anti-scalping with GET Protocol, creator royalties, YellowHeart for artists, and Ticketmaster integration. Prevent"
+        url="https://degen0x.com/nfts/nft-ticketing-events-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="NFTs"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts/nft-ticketing-events-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts/nft-ticketing-events-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

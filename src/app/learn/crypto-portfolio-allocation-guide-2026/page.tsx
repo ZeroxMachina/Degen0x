@@ -10,6 +10,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Crypto Portfolio Allocation Guide 2026 — Model Portfolios &",
@@ -1039,6 +1041,7 @@ export default function CryptoPortfolioAllocationGuide() {
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Portfolio Allocation Guide 2026 \u2014 Model Portfolios &", "description": "Learn how to build a diversified crypto portfolio in 2026. Model portfolios for conservative, balanced, and aggressive investors with BTC, ETH, SOL, and", "url": "https://degen0x.com/learn/crypto-portfolio-allocation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-portfolio-allocation-guide-2026" />
+<AuthoritySources url="/learn/crypto-portfolio-allocation-guide-2026" />
 </div>
   );
 }

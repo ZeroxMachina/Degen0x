@@ -3,6 +3,14 @@
 import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Api Health | degen0x",
+  description: "Comprehensive degen0x guide to api health — 2026 fundamentals, step-by-step walkthroughs, and risk-aware strategies.",
+  alternates: { canonical: "https://degen0x.com/status/api-health" },
+};
+
 interface APIEndpoint {
   name: string;
   url: string;

@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Bear Market Strategy 2026: DCA, Accumulation, Yield",
   description: "Complete bear market strategy guide 2026. DCA during downturns, accumulation zones, quality assessment (revenue, TVL, dev activity), stablecoin yield farming.",
@@ -197,6 +203,19 @@ export default function CryptoBearMarketStrategy2026() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Bear Market Strategy 2026: DCA, Accumulation, Yield"
+        description="Complete bear market strategy guide 2026. DCA during downturns, accumulation zones, quality assessment (revenue, TVL, dev activity), stablecoin yield farming."
+        url="https://degen0x.com/investing/crypto-bear-market-strategy"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/crypto-bear-market-strategy" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/crypto-bear-market-strategy" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

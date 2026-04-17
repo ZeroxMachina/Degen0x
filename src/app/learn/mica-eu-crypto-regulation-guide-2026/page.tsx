@@ -9,6 +9,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'MiCA EU Crypto Regulation Guide 2026 | degen0x',
   description:
@@ -1379,6 +1381,7 @@ export default function MiCAGuide() {
           </p>
         </div>
       </article>
+      <AuthoritySources url="/learn/mica-eu-crypto-regulation-guide-2026" />
       </div>
       <BackToTop />
     

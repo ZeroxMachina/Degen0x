@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import GamificationSystem from "@/components/GamificationSystem";
 import Breadcrumb from "@/components/Breadcrumb";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Gamification & Rewards | degen0x — XP, Badges, Leaderboard",
   description:
@@ -29,6 +35,19 @@ const breadcrumbData = {
 export default function GamificationPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
+      <ArticleSchema
+        headline="Gamification & Rewards | degen0x — XP, Badges, Leaderboard"
+        description="Earn XP, unlock rare badges, maintain daily streaks, and climb the global leaderboard. Level up your degen status on degen0x."
+        url="/gamification"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/gamification" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/gamification" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

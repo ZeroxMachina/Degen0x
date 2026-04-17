@@ -5,6 +5,15 @@ import { cryptoCards } from "@/data/crypto-cards";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = cryptoCards.find((c) => c.slug === "crypto-com-visa")!;
 
 export const metadata: Metadata = {
@@ -28,6 +37,13 @@ const breadcrumbData = {
 export default function CryptoComVisaReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Crypto.com Visa Card Review 2026: Tiers, Cashback, Staking"
+        url="https://degen0x.com/crypto-cards/reviews/crypto-com-visa"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Cards"
@@ -148,6 +164,18 @@ Despite several rounds of reward reductions in 2022 and 2023 that frustrated ear
         { title: "How to Spend Crypto", href: "/spending/learn/spending-crypto" },
       ]}
     />
+      <ArticleSchema
+        headline="Crypto.com Visa Card Review 2026: Tiers, Cashback, Staking"
+        description="Our in-depth Crypto.com Visa card review covers CRO staking tiers from Midnight Blue to Obsidian, cashback rates, airport lounge access, Spotify/Netflix"
+        url="https://degen0x.com/crypto-cards/reviews/crypto-com-visa"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-cards/reviews/crypto-com-visa" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto.com Visa Card Review 2026: Tiers, Cashback, Staking", "description": "Our in-depth Crypto.com Visa card review covers CRO staking tiers from Midnight Blue to Obsidian, cashback rates, airport lounge access, Spotify/Netflix", "url": "https://degen0x.com/crypto-cards/reviews/crypto-com-visa", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

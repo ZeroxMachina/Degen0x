@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "AMM & Liquidity Pools Guide 2026 — How DEX Trading Works",
   description: "Learn how Automated Market Makers and liquidity pools power decentralized trading. Understand the constant product formula, concentrated liquidity, Uniswap V4,",
@@ -1777,6 +1779,7 @@ const AMMGuide = () => {
 
           <a href="/learn/unichain-uniswap-layer-2-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Unichain Uniswap Layer 2 Guide 2026</a>
         </nav>
+    <AuthoritySources url="/learn/amm-liquidity-pools-guide-2026" />
     </article>
   );
 };

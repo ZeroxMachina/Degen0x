@@ -9,6 +9,11 @@ import { DEFI_LENDING_PRODUCTS, DEFI_FAQS } from "@/data/defi-lending";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `DeFi Lending - Compare Protocols, Earn Yield & Borrow Crypto 2026`,
   description:
@@ -83,6 +88,14 @@ export default function DefiLendingPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best DeFi Lending Protocols"
+        description="Compare the best DeFi lending protocols. Earn yield on your crypto, borrow against your assets, and explore liquidity pools. Expert reviews, guides, and tools."
+        url="/defi-lending"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="DeFi"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="max-w-6xl mx-auto px-4 py-8">
@@ -238,7 +251,11 @@ export default function DefiLendingPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best DeFi Lending Protocols", "description": "Compare the best DeFi lending protocols. Earn yield on your crypto, borrow against your assets, and explore liquidity pools. Expert reviews, guides, and tools.", "url": "https://degen0x.com/defi-lending", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/defi-lending" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/defi-lending" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/defi-lending" />
     </>
   );
 }

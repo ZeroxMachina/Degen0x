@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Daily Crypto Trivia Quiz | Test Your Knowledge — degen0x",
   description:
@@ -41,6 +45,14 @@ export default function DailyTriviaPage() {
 
   return (
     <main className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Daily Crypto Trivia Quiz | Test Your Knowledge — degen0x"
+        description="Play today"
+        url="https://degen0x.com/learn/daily-trivia"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <nav className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-8">
@@ -211,6 +223,7 @@ export default function DailyTriviaPage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Daily Crypto Trivia Quiz | Test Your Knowledge \u2014 degen0x", "description": "Play today", "url": "https://degen0x.com/learn/daily-trivia", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/daily-trivia" />
+<AuthoritySources url="/learn/daily-trivia" />
 </main>
   );
 }

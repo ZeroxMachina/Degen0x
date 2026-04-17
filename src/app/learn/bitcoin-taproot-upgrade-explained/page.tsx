@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Bitcoin Taproot Upgrade Explained 2026: Schnorr, MAST,",
   description: "Complete Taproot guide 2026: Schnorr signatures 65 bytes, MAST smart contracts, privacy improvements, Ordinals, 25% adoption, Lightning Network, BIP",
@@ -203,6 +207,14 @@ export default function BitcoinTaprootGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bitcoin Taproot Upgrade Explained 2026: Schnorr, MAST,"
+        description="Complete Taproot guide 2026: Schnorr signatures 65 bytes, MAST smart contracts, privacy improvements, Ordinals, 25% adoption, Lightning Network, BIP"
+        url="https://degen0x.com/learn/bitcoin-taproot-upgrade-explained"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
@@ -518,6 +530,7 @@ export default function BitcoinTaprootGuide() {
 </div>
       <LiveMiniStat id="bitcoin" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-taproot-upgrade-explained" />
+      <AuthoritySources url="/learn/bitcoin-taproot-upgrade-explained" />
       </article>
   );
 }

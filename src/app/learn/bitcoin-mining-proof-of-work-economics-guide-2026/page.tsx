@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Bitcoin Mining & Proof of Work Economics Guide 2026",
@@ -226,6 +230,14 @@ export default function BitcoinMiningGuide() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Bitcoin Mining & Proof of Work Economics Guide 2026"
+        description="Complete guide to Bitcoin mining and proof of work economics in 2026. Learn about the 2024 halving, mining hardware ASIC evolution, profitability economics,"
+        url="https://degen0x.com/learn/bitcoin-mining-proof-of-work-economics-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -1005,6 +1017,7 @@ export default function BitcoinMiningGuide() {
       <LiveMiniStat id="bitcoin" />
       <Diagram slug="pow-vs-pos" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-mining-proof-of-work-economics-guide-2026" />
+      <AuthoritySources url="/learn/bitcoin-mining-proof-of-work-economics-guide-2026" />
       </article>
   );
 }

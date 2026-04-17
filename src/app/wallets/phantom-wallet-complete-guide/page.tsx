@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Phantom Wallet Review: Solana Native Crypto",
   description: "Complete Phantom wallet review: 8.5/10 rating, Solana-native with Jupiter DEX, NFT gallery, multi-chain support. Setup, security, features, fees, vs MetaMask.",
@@ -235,6 +241,19 @@ export default function PhantomWalletReview() {
 
   return (
     <article style={styles.article}>
+      <ArticleSchema
+        headline="Phantom Wallet Review: Solana Native Crypto"
+        description="Complete Phantom wallet review: 8.5/10 rating, Solana-native with Jupiter DEX, NFT gallery, multi-chain support. Setup, security, features, fees, vs MetaMask."
+        url="https://degen0x.com/wallets/phantom-wallet-complete-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Wallets"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/phantom-wallet-complete-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/phantom-wallet-complete-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

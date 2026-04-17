@@ -9,6 +9,10 @@ import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Polygon vs Arbitrum vs Optimism: Scaling Solutions Compared',
   description: "Compare Layer 2 scaling: Polygon (sidechain, $0.001 fees), Arbitrum (rollup, $0.05 fees, zkEVM), Optimism (rollup, Superchain vision, AggLayer). TPS, TVL,",
@@ -187,6 +191,14 @@ export default function PolygonArbitrumOptimism() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Polygon vs Arbitrum vs Optimism: Scaling Solutions Compared"
+        description="Compare Layer 2 scaling: Polygon (sidechain, $0.001 fees), Arbitrum (rollup, $0.05 fees, zkEVM), Optimism (rollup, Superchain vision, AggLayer). TPS, TVL,"
+        url="https://degen0x.com/compare/polygon-vs-arbitrum-vs-optimism"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -594,6 +606,7 @@ export default function PolygonArbitrumOptimism() {
       />
       <MethodologyBlock variant="compare" />
       <RelatedContent category="compare" currentSlug="/compare/polygon-vs-arbitrum-vs-optimism" />
+      <AuthoritySources url="/compare/polygon-vs-arbitrum-vs-optimism" />
       </article>
   );
 }

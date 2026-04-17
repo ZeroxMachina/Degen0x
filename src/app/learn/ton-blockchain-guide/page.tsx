@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "TON Blockchain & Telegram Mini Apps Guide 2026 | degen0x",
@@ -65,6 +69,14 @@ const breadcrumbData = {
 export default function TonBlockchainGuidePage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <ArticleSchema
+        headline="TON Blockchain & Telegram Mini Apps Guide 2026 | degen0x"
+        description="Complete guide to TON blockchain and Telegram Mini Apps in 2026. Learn how TON works, its DeFi ecosystem, top dApps, and why 950M+ Telegram users make it crypto"
+        url="https://degen0x.com/learn/ton-blockchain-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px" }}>
 
@@ -437,6 +449,7 @@ export default function TonBlockchainGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "TON Blockchain & Telegram Mini Apps Guide 2026 | degen0x", "description": "Complete guide to TON blockchain and Telegram Mini Apps in 2026. Learn how TON works, its DeFi ecosystem, top dApps, and why 950M+ Telegram users make it crypto", "url": "https://degen0x.com/learn/ton-blockchain-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="the-open-network" />
       <RelatedContent category="learn" currentSlug="/learn/ton-blockchain-guide" />
+<AuthoritySources url="/learn/ton-blockchain-guide" />
 </div>
   );
 }

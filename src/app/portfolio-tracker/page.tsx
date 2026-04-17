@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import PortfolioTrackerClient from './PortfolioTrackerClient';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Portfolio Tracker — Multi-Chain Crypto Portfolio | degen0x',
   description: "Track your entire crypto portfolio across Ethereum, Solana, and Base in one place. Real-time prices, LP positions, staking rewards, chain breakdown, and 30-day",
@@ -41,6 +47,19 @@ const breadcrumbData = {
 export default function PortfolioTrackerPage() {
   return (
     <>
+      <ArticleSchema
+        headline="Portfolio Tracker — Multi-Chain Crypto Portfolio | degen0x"
+        description="Track your entire crypto portfolio across Ethereum, Solana, and Base in one place. Real-time prices, LP positions, staking rewards, chain breakdown, and 30-day"
+        url="/portfolio-tracker"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/portfolio-tracker" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/portfolio-tracker" />
       <PortfolioTrackerClient />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Portfolio Tracker — Multi-Chain Crypto Portfolio | degen0x", "description": "Track your multi-chain crypto portfolio — tokens, LP positions, staking rewards, and performance charts.", "url": "https://degen0x.com/portfolio-tracker", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />

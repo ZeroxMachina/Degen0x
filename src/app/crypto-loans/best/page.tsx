@@ -9,6 +9,12 @@ import FAQSection from "@/components/FAQSection";
 import { CRYPTO_LOAN_PRODUCTS, LOAN_COMPARISON_ITEMS, LOAN_COMPARISON_FEATURES, LOAN_FAQS } from "@/data/crypto-loans";
 import { CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best Crypto Loan Platforms of 2026 (Ranked & Reviewed)`,
   description: `Compare the best crypto loan platforms of ${CURRENT_YEAR}. We tested rates, LTV ratios, collateral support, and security. Find the best way to borrow against your crypto.`,
@@ -30,6 +36,19 @@ export default function BestCryptoLoansPage() {
   const ranked = CRYPTO_LOAN_PRODUCTS.filter((p) => p.slug !== "celsius").sort((a, b) => b.rating - a.rating);
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
+      <ArticleSchema
+        headline="Bitcoin Loans"
+        description="Bitcoin Loans"
+        url="/crypto-loans/best"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/best" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/best" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

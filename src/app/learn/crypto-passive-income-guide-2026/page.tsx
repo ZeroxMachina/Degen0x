@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Passive Income Guide 2026: Staking, Yield Farming &",
   description: "Complete guide to earning crypto passive income. Staking (ETH, SOL, ADA), liquid staking (stETH, jitoSOL), restaking (EigenLayer), yield farming, crypto",
@@ -561,6 +563,7 @@ export default function CryptoPassiveIncomeGuide() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Passive Income Guide 2026: Staking, Yield Farming &", "description": "Complete guide to earning crypto passive income. Staking (ETH, SOL, ADA), liquid staking (stETH, jitoSOL), restaking (EigenLayer), yield farming, crypto", "url": "https://degen0x.com/learn/crypto-passive-income-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-passive-income-guide-2026" />
+<AuthoritySources url="/learn/crypto-passive-income-guide-2026" />
 </div>
   );
 }

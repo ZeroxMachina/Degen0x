@@ -11,6 +11,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Tax-Loss Harvesting Guide 2026 — IRS Rules & Strategy",
   description: "Master crypto tax-loss harvesting in 2026. Learn wash sale rules, IRS regulations, cost basis tracking, and strategic techniques to offset capital gains and",
@@ -1054,6 +1056,7 @@ export default function CryptoTaxLossHarvestingGuide() {
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Tax-Loss Harvesting Guide 2026 \u2014 IRS Rules & Strategy", "description": "Master crypto tax-loss harvesting in 2026. Learn wash sale rules, IRS regulations, cost basis tracking, and strategic techniques to offset capital gains and", "url": "https://degen0x.com/learn/crypto-tax-loss-harvesting-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-tax-loss-harvesting-guide-2026" />
+<AuthoritySources url="/learn/crypto-tax-loss-harvesting-guide-2026" />
 </div>
   );
 }

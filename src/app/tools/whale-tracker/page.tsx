@@ -5,6 +5,14 @@ import WhaleTrackerClient from "./WhaleTrackerClient";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Whale Wallet Tracker — Monitor Smart Money Moves | degen0x",
   description: "Track whale wallets, smart money flows, and large crypto transactions in real-time. Monitor top holders across Ethereum, Solana, and Bitcoin with our free",
@@ -55,6 +63,24 @@ const breadcrumbData = {
 export default function WhaleTrackerPage() {
   return (
     <div style={{ background: "var(--color-bg)" }}>
+      <ArticleSchema
+        headline="Whale Wallet Tracker — Monitor Smart Money Moves | degen0x"
+        description="Track whale wallets, smart money flows, and large crypto transactions in real-time. Monitor top holders across Ethereum, Solana, and Bitcoin with our free"
+        url="/tools/whale-tracker"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/whale-tracker" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/whale-tracker" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/whale-tracker"
+        name="Whale Wallet Tracker"
+        description="Track whale wallets, smart money flows, and large crypto transactions in real-time. Monitor top holders across Ethereum, Solana, and Bitcoin with our free"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

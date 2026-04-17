@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
   title: "Hyperliquid DEX & HYPE Chain: Complete Perpetual Futures",
@@ -167,6 +171,14 @@ export default function HyperliquidDEXGuide() {
 
   return (
     <article id="top" aria-label="Guide: Hyperliquid DEX & HYPE Chain" style={{ ...pageStyle }}>
+      <ArticleSchema
+        headline="Hyperliquid DEX & HYPE Chain: Complete Perpetual Futures"
+        description="Complete guide to Hyperliquid DEX and HYPE Chain. Learn how HyperBFT consensus, HyperCore order book, HyperEVM smart contracts, and HYPE tokenomics power the"
+        url="https://degen0x.com/learn/hyperliquid-dex-hype-chain-perpetual-futures-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -737,6 +749,7 @@ export default function HyperliquidDEXGuide() {
           }}
         />
       <RelatedContent category="learn" currentSlug="/learn/hyperliquid-dex-hype-chain-perpetual-futures-guide-2026" />
+      <AuthoritySources url="/learn/hyperliquid-dex-hype-chain-perpetual-futures-guide-2026" />
       </article>
   );
 }

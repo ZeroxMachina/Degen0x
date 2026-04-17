@@ -10,6 +10,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto ETF Options Trading Guide 2026: Regulatory Changes,",
   description: "Master crypto ETF options trading in 2026. Learn position limit removal, key ETFs (IBIT, ETHA, FBTC), covered calls, protective puts, FLEX options, and",
@@ -71,6 +75,14 @@ export default function CryptoETFOptionsTradingGuidePage() {
 
   return (
     <main style={{ backgroundColor: S.bg, color: S.text, minHeight: "100vh" }}>
+      <ArticleSchema
+        headline="Crypto ETF Options Trading Guide 2026: Regulatory Changes,"
+        description="Master crypto ETF options trading in 2026. Learn position limit removal, key ETFs (IBIT, ETHA, FBTC), covered calls, protective puts, FLEX options, and"
+        url="https://degen0x.com/learn/crypto-etf-options-trading-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: `1px solid ${S.border}`, paddingTop: 24 }}>
@@ -771,6 +783,7 @@ export default function CryptoETFOptionsTradingGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto ETF Options Trading Guide 2026: Regulatory Changes,", "description": "Master crypto ETF options trading in 2026. Learn position limit removal, key ETFs (IBIT, ETHA, FBTC), covered calls, protective puts, FLEX options, and", "url": "https://degen0x.com/learn/crypto-etf-options-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-etf-options-trading-guide-2026" />
+<AuthoritySources url="/learn/crypto-etf-options-trading-guide-2026" />
 </main>
   );
 }

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Telegram Mini Apps & TON Gaming Guide 2026 — Tap-to-Earn &",
   description: "Complete guide to Telegram mini apps, TON blockchain gaming, and tap-to-earn crypto games in 2026. Covers Notcoin, Hamster Kombat, Catizen, and how to earn",
@@ -53,6 +57,14 @@ const breadcrumbData = {
 export default function TelegramMiniAppsTonGamingGuidePage() {
   return (
     <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+      <ArticleSchema
+        headline="Telegram Mini Apps & TON Gaming Guide 2026 — Tap-to-Earn &"
+        description="Complete guide to Telegram mini apps, TON blockchain gaming, and tap-to-earn crypto games in 2026. Covers Notcoin, Hamster Kombat, Catizen, and how to earn"
+        url="https://degen0x.com/learn/telegram-mini-apps-ton-gaming-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <article style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px" }}>
         {/* Header */}
@@ -438,6 +450,7 @@ export default function TelegramMiniAppsTonGamingGuidePage() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Telegram Mini Apps & TON Gaming Guide 2026 \u2014 Tap-to-Earn &", "description": "Complete guide to Telegram mini apps, TON blockchain gaming, and tap-to-earn crypto games in 2026. Covers Notcoin, Hamster Kombat, Catizen, and how to earn", "url": "https://degen0x.com/learn/telegram-mini-apps-ton-gaming-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="the-open-network" />
       <RelatedContent category="learn" currentSlug="/learn/telegram-mini-apps-ton-gaming-guide-2026" />
+<AuthoritySources url="/learn/telegram-mini-apps-ton-gaming-guide-2026" />
 </div>
   );
 }

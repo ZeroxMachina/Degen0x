@@ -12,6 +12,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Sui Private Transactions & Seal Framework: Compliant",
   description: "Learn how Sui Network's protocol-level private transactions and Seal framework enable compliant privacy using ZK proofs and threshold encryption. Complete guide to Sui's 2026 privacy upgrade.",
@@ -692,6 +694,7 @@ export default function SuiPrivateTransactionsSealFrameworkGuide2026Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sui Private Transactions & Seal Framework: Compliant", "description": "Learn how Sui Network", "url": "https://degen0x.com/learn/sui-private-transactions-seal-framework-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <LiveMiniStat id="sui" />
       <RelatedContent category="learn" currentSlug="/learn/sui-private-transactions-seal-framework-guide-2026" />
+<AuthoritySources url="/learn/sui-private-transactions-seal-framework-guide-2026" />
 </div>
 
   );

@@ -9,6 +9,11 @@ import { nftMarketplaces } from "@/data/nfts";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Best NFT Marketplaces of 2026 - Compare & Review`,
   description: `Compare the best NFT marketplaces of ${CURRENT_YEAR}. Expert reviews, fee comparisons, creator tools analysis, and guides to help you find the right platform for buying, selling, and creating NFTs.`,
@@ -120,6 +125,14 @@ export default function NftsPage() {
 
   return (
     <>
+      <ArticleSchema
+        headline="Best NFT Marketplaces"
+        description="NFT guide: Marketplaces, collections, MEV, gas optimization. Learn buying, selling, trading NFTs on Ethereum, Solana, Polygon, and Arbitrum."
+        url="/nfts"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -325,7 +338,11 @@ export default function NftsPage() {
       </div>
     </div>
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Best NFT Marketplaces", "description": "NFT guide: Marketplaces, collections, MEV, gas optimization. Learn buying, selling, trading NFTs on Ethereum, Solana, Polygon, and Arbitrum.", "url": "https://degen0x.com/nfts", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <AuthoritySources url="/nfts" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/nfts" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/nfts" />
     </>
   );
 }

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Portfolio Rebalancing Guide 2026 — Strategies & Tools",
   description: "Master crypto portfolio rebalancing: time-based vs threshold strategies, diversification framework, automated tools, tax implications, and proven 1-3% annual",
@@ -299,6 +303,14 @@ export default function CryptoPortfolioRebalancingGuidePage() {
 
   return (
     <main id="top" style={pageStyle}>
+      <ArticleSchema
+        headline="Crypto Portfolio Rebalancing Guide 2026 — Strategies & Tools"
+        description="Master crypto portfolio rebalancing: time-based vs threshold strategies, diversification framework, automated tools, tax implications, and proven 1-3% annual"
+        url="https://degen0x.com/learn/crypto-portfolio-rebalancing-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"
@@ -943,6 +955,7 @@ export default function CryptoPortfolioRebalancingGuidePage() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Portfolio Rebalancing Guide 2026 \u2014 Strategies & Tools", "description": "Master crypto portfolio rebalancing: time-based vs threshold strategies, diversification framework, automated tools, tax implications, and proven 1-3% annual", "url": "https://degen0x.com/learn/crypto-portfolio-rebalancing-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-portfolio-rebalancing-guide-2026" />
+<AuthoritySources url="/learn/crypto-portfolio-rebalancing-guide-2026" />
 </main>
   );
 }

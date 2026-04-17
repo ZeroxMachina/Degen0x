@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import PortfolioAnalytics from '@/components/PortfolioAnalytics';
 import Footer from '@/components/Footer';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Portfolio Analytics — P&L, Tax Estimates & Risk Metrics",
   description: 'Deep-dive into your crypto portfolio with advanced analytics, P&L tracking, tax estimation, risk metrics, and diversification scoring.',
@@ -24,6 +30,19 @@ const breadcrumbData = {
 export default function PortfolioAnalyticsPage() {
   return (
     <main className="min-h-screen bg-gray-950">
+      <ArticleSchema
+        headline="Portfolio Analytics — P&L, Tax Estimates & Risk Metrics"
+        description="Deep-dive into your crypto portfolio with advanced analytics, P&L tracking, tax estimation, risk metrics, and diversification scoring."
+        url="/portfolio-analytics"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/portfolio-analytics" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/portfolio-analytics" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

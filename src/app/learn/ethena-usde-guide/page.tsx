@@ -15,6 +15,8 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import AuthoritySources from "@/components/AuthoritySources";
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 // Title: 65 chars — primary keyword first, year included
 // Description: 159 chars — specific, addresses search intent
@@ -753,6 +755,7 @@ export default function EthenaUsdeGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is Ethena? USDe, sUSDe & the Internet Bond (2026)", "description": "Ethena", "url": "https://degen0x.com/learn/ethena-usde-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+<AuthoritySources url="/learn/ethena-usde-guide" />
 </div>
   );
 }

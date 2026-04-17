@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "International Crypto Tax Comparison 2026: US vs Portugal vs",
   description: "Compare crypto tax rates globally. US (37%), Portugal (0%), Singapore (0% gains), Germany (0% after 1 year), UAE (0%). OECD CARF reporting framework and tax",
@@ -189,6 +195,19 @@ export default function InternationalCryptoTaxComparison() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="International Crypto Tax Comparison 2026: US vs Portugal vs"
+        description="Compare crypto tax rates globally. US (37%), Portugal (0%), Singapore (0% gains), Germany (0% after 1 year), UAE (0%). OECD CARF reporting framework and tax"
+        url="https://degen0x.com/taxes/international-crypto-tax-comparison"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Taxes"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/international-crypto-tax-comparison" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/international-crypto-tax-comparison" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

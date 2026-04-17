@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "ZenLedger",
   slug: "zenledger",
@@ -38,13 +47,20 @@ const breadcrumbData = {
 export default function ZenLedgerReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="ZenLedger Review (2026): Features, Pricing & Comparison"
+        url="https://degen0x.com/taxes/reviews/zenledger"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Taxes"
       categorySlug="taxes"
       overview="ZenLedger is a comprehensive crypto tax software platform that supports over 400 exchanges and wallets, making it one of the most broadly compatible options available. The platform caters to both individual investors and tax professionals through its CPA access feature, which allows your accountant to directly access your tax data. ZenLedger supports standard crypto transactions as well as DeFi activities, NFT trading, and staking rewards. The platform generates IRS-ready tax forms including Form 8949 and Schedule D, along with reports compatible with TurboTax, TaxAct, and other tax filing software. ZenLedger also offers tax-loss harvesting tools that help identify opportunities to reduce your tax liability."
       sections={[
-        { id: "features", title: "Key Features", content: "ZenLedger's core features include automatic transaction import from hundreds of exchanges and wallets via API or CSV upload. The platform categorizes transactions, calculates gains and losses using your chosen cost basis method (FIFO, LIFO, HIFO, or specific identification), and generates tax forms. The DeFi module handles lending, borrowing, liquidity provision, and yield farming transactions. NFT tracking covers purchases, sales, and minting events. The tax-loss harvesting dashboard identifies unrealized losses in your portfolio that could be sold to offset gains. The CPA access feature creates a separate login for your tax professional, streamlining the filing process." },
+        { id: "features", title: "Key Features — Taxes", content: "ZenLedger's core features include automatic transaction import from hundreds of exchanges and wallets via API or CSV upload. The platform categorizes transactions, calculates gains and losses using your chosen cost basis method (FIFO, LIFO, HIFO, or specific identification), and generates tax forms. The DeFi module handles lending, borrowing, liquidity provision, and yield farming transactions. NFT tracking covers purchases, sales, and minting events. The tax-loss harvesting dashboard identifies unrealized losses in your portfolio that could be sold to offset gains. The CPA access feature creates a separate login for your tax professional, streamlining the filing process." },
         { id: "pricing", title: "Pricing and Plans", content: "ZenLedger offers tiered pricing based on transaction volume. The free tier covers a limited number of transactions, making it suitable for very casual traders. Paid plans escalate based on the number of transactions, with premium tiers adding DeFi support, priority customer service, and CPA access. Pricing is competitive for users with moderate transaction volumes but can become expensive for very active traders with thousands of transactions. Annual pricing is available at a discount compared to monthly billing. Each plan includes a specific number of transactions, and exceeding the limit requires upgrading to the next tier." },
         { id: "defi-support", title: "DeFi and NFT Support", content: "ZenLedger has invested significantly in DeFi support, handling transactions from major protocols on Ethereum, BSC, Polygon, and other chains. The platform can categorize lending deposits, borrow events, liquidity additions and removals, yield farming rewards, and staking income. NFT transaction support covers marketplace purchases, sales, and minting costs. The DeFi integration quality varies by protocol and chain, with Ethereum-based protocols generally having the best coverage. For complex DeFi strategies involving multiple protocols, manual review of categorized transactions may be necessary to ensure accuracy." },
         { id: "accuracy", title: "Accuracy and Limitations", content: "ZenLedger generally produces accurate tax calculations for straightforward exchange trading. DeFi transaction categorization can require manual review for complex strategies. The platform sometimes struggles with cross-chain transactions and bridge transfers, which may need manual adjustment. Import speed can be slow for large portfolios with thousands of transactions. Customer support responsiveness varies, with premium tier users receiving faster responses. The platform is primarily focused on US tax reporting, though international users can generate generic gain/loss reports." },
@@ -59,6 +75,18 @@ export default function ZenLedgerReview() {
       relatedReviews={[{ name: "Koinly", slug: "koinly" }, { name: "CoinTracker", slug: "cointracker" }]}
       relatedGuides={[{ title: "How to File Crypto Taxes", href: "/taxes/learn/how-to-file" }, { title: "Tax Loss Harvesting", href: "/taxes/learn/tax-loss-harvesting" }]}
     />
+      <ArticleSchema
+        headline="ZenLedger Review (2026): Features, Pricing & Comparison | degen0x"
+        description="ZenLedger is a crypto tax software that supports a wide range of exchanges and DeFi protocols with CPA-friendly reporting."
+        url="https://degen0x.com/taxes/reviews/zenledger"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/reviews/zenledger" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Key Features", "description": "ZenLedger is a crypto tax software that supports a wide range of exchanges and DeFi protocols with CPA-friendly reporting.", "url": "https://degen0x.com/taxes/reviews/zenledger", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

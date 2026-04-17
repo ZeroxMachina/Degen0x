@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Travala Review 2026: Fees, Features, Pros & Cons`,
   description: "Detailed Travala review covering crypto travel booking, supported cryptocurrencies, loyalty rewards, hotel and flight options, and whether Travala is the best",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function TravalaReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Travala Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/spending/reviews/travala"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Travala",
@@ -134,6 +150,18 @@ The AVA token powers Travala's loyalty ecosystem. By staking AVA tokens, users u
         { title: "Best Crypto for Travel", href: "/spending/best/travel" },
       ]}
     />
+      <ArticleSchema
+        headline="Travala Review 2026: Fees, Features, Pros & Cons"
+        description="Detailed Travala review covering crypto travel booking, supported cryptocurrencies, loyalty rewards, hotel and flight options, and whether Travala is the best"
+        url="https://degen0x.com/spending/reviews/travala"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/spending/reviews/travala" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Booking Experience", "description": "Detailed Travala review covering crypto travel booking, supported cryptocurrencies, loyalty rewards, hotel and flight options, and whether Travala is the best", "url": "https://degen0x.com/spending/reviews/travala", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

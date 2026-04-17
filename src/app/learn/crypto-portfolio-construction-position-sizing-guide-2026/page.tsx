@@ -9,6 +9,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Crypto Portfolio Construction & Position Sizing Guide 2026",
   description: "Master crypto portfolio construction with Kelly criterion, risk parity, correlation analysis, and position sizing strategies. Learn allocation frameworks,",
@@ -142,6 +146,14 @@ export default function CryptoPortfolioConstructionGuide() {
 
   return (
     <article id="top" aria-label="Guide: Crypto Portfolio Construction & Position Sizing" style={pageStyle}>
+      <ArticleSchema
+        headline="Crypto Portfolio Construction & Position Sizing Guide 2026"
+        description="Master crypto portfolio construction with Kelly criterion, risk parity, correlation analysis, and position sizing strategies. Learn allocation frameworks,"
+        url="https://degen0x.com/learn/crypto-portfolio-construction-position-sizing-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
@@ -734,6 +746,7 @@ export default function CryptoPortfolioConstructionGuide() {
           <a href="/learn/protocol-owned-liquidity-pol-treasury-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Protocol Owned Liquidity Pol Treasury Guide 2026</a>
         </nav>
       <RelatedContent category="learn" currentSlug="/learn/crypto-portfolio-construction-position-sizing-guide-2026" />
+      <AuthoritySources url="/learn/crypto-portfolio-construction-position-sizing-guide-2026" />
       </article>
   );
 }

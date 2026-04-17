@@ -5,6 +5,15 @@ import { CRYPTO_LOAN_PRODUCTS } from "@/data/crypto-loans";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = CRYPTO_LOAN_PRODUCTS.find((p) => p.slug === "makerdao")!;
 
 export const metadata: Metadata = { title: "MakerDAO Review 2026: DAI Borrowing, Vaults & Analysis", description: "In-depth MakerDAO review covering DAI borrowing, Vault mechanics, stability fees, and whether Maker is right for your DeFi lending needs. Updated March 2026." ,
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function MakerDAOReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="MakerDAO Review 2026: DAI Borrowing, Vaults & Analysis"
+        url="https://degen0x.com/crypto-loans/reviews/makerdao"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage product={product} categoryName="Crypto Loans" categorySlug="crypto-loans"
       overview="MakerDAO is the protocol behind DAI, one of the most important decentralized stablecoins in crypto. Founded in 2015 and launched on Ethereum mainnet in 2017, MakerDAO pioneered the concept of overcollateralized stablecoin lending. Users open Vaults (formerly CDPs) by depositing crypto collateral and minting DAI against it. The protocol has rebranded to Sky, though the core functionality remains the same. MakerDAO has processed billions in DAI loans since inception, maintained DAI's peg through multiple market crashes, and built one of the most battle-tested protocols in all of DeFi."
       sections={[
@@ -46,6 +62,18 @@ export default function MakerDAOReview() {
       relatedReviews={[{ name: "Aave", slug: "aave-loans" }, { name: "Compound", slug: "compound-loans" }]}
       relatedGuides={[{ title: "What Are Crypto-Backed Loans?", href: "/crypto-loans/learn/what-are-crypto-backed-loans" }]}
     />
+      <ArticleSchema
+        headline="MakerDAO Review 2026: DAI Borrowing, Vaults & Analysis"
+        description="In-depth MakerDAO review covering DAI borrowing, Vault mechanics, stability fees, and whether Maker is right for your DeFi lending needs. Updated March 2026."
+        url="https://degen0x.com/crypto-loans/reviews/makerdao"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/reviews/makerdao" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MakerDAO Review 2026: DAI Borrowing, Vaults & Analysis", "description": "In-depth MakerDAO review covering DAI borrowing, Vault mechanics, stability fees, and whether Maker is right for your DeFi lending needs. Updated March 2026.", "url": "https://degen0x.com/crypto-loans/reviews/makerdao", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

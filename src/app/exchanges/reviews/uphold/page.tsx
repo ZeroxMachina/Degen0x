@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Uphold Crypto Review 2026: Fees, Features, Pros & Cons`,
   description: "In-depth Uphold review covering multi-asset trading, fees, supported cryptocurrencies, Anything-to-Anything feature, and whether Uphold suits your needs.",
@@ -26,6 +35,13 @@ const breadcrumbData = {
 export default function UpholdReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Uphold Crypto Review 2026: Fees, Features, Pros & Cons"
+        url="https://degen0x.com/exchanges/reviews/uphold"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={{
         name: "Uphold",
@@ -56,7 +72,7 @@ Uphold's unique proposition is the ability to seamlessly convert between differe
 
 Uphold operates as a licensed money services business in the US and holds regulatory authorizations in the UK, EU, and other jurisdictions. The company publishes real-time reserve attestations, showing that customer assets are fully backed at all times. Uphold is also notable as the primary on- and off-ramp for the Brave browser's BAT token ecosystem."
       sections={[
-        { id: "user-experience", title: "User Experience", content: "Uphold's interface takes a card-based approach where each asset type (crypto, metals, fiat) is represented as a card in your dashboard. Trading between assets involves selecting a source card and destination card, which can be any combination of crypto, fiat, or metal. This unique approach takes some getting used to but becomes intuitive once understood. The platform provides basic charting, portfolio tracking, and price alerts. There are no advanced order types beyond market orders, which limits the platform for active traders. The mobile app mirrors the web experience and supports biometric authentication. The onboarding process is straightforward with standard KYC requirements." },
+        { id: "user-experience", title: "User Experience — Exchanges (exchanges / reviews / uphold)", content: "Uphold's interface takes a card-based approach where each asset type (crypto, metals, fiat) is represented as a card in your dashboard. Trading between assets involves selecting a source card and destination card, which can be any combination of crypto, fiat, or metal. This unique approach takes some getting used to but becomes intuitive once understood. The platform provides basic charting, portfolio tracking, and price alerts. There are no advanced order types beyond market orders, which limits the platform for active traders. The mobile app mirrors the web experience and supports biometric authentication. The onboarding process is straightforward with standard KYC requirements." },
         { id: "fees", title: "Fees & Pricing", content: "Uphold earns revenue through spreads rather than explicit commissions. For major crypto pairs like BTC/USD, the spread is typically 0.8% to 1.2%. For smaller altcoins, spreads can reach 1.5% or higher. Precious metal spreads are around 3%. Fiat-to-fiat conversion spreads vary by currency. Crypto withdrawals carry network fees plus a small Uphold fee. While not the cheapest option available, Uphold's pricing is transparent — the platform shows the exact spread before you confirm any trade. For the Anything-to-Anything functionality, the fees are reasonable given the convenience." },
         { id: "security", title: "Security", content: "Uphold maintains a transparent approach to security with real-time reserve attestations published on its website. The platform uses cold storage for the majority of crypto assets, two-factor authentication, and encrypted data storage. Uphold holds regulatory licenses in multiple jurisdictions including the US, UK, and EU. The company has not experienced any major security breaches. Bug bounty programs and regular security audits contribute to the platform's security posture. The full reserve model means Uphold does not engage in fractional reserve practices." },
         { id: "supported-assets", title: "Supported Assets", content: "Uphold's asset selection is impressive in its breadth. Over 250 cryptocurrencies include all major assets plus many smaller altcoins, DeFi tokens, and newer projects. Four precious metals (gold, silver, platinum, palladium) are available for trading. Twenty-seven fiat currencies cover all major global currencies. US equities are also available in select regions. This multi-asset range is genuinely unique and makes Uphold a versatile platform for users who want exposure across multiple asset classes without managing separate accounts." },
@@ -82,6 +98,18 @@ Uphold operates as a licensed money services business in the US and holds regula
         { title: "Exchange Fees Explained", href: "/exchanges/learn/exchange-fees-explained" },
       ]}
     />
+      <ArticleSchema
+        headline="Uphold Crypto Review 2026: Fees, Features, Pros & Cons"
+        description="In-depth Uphold review covering multi-asset trading, fees, supported cryptocurrencies, Anything-to-Anything feature, and whether Uphold suits your needs."
+        url="https://degen0x.com/exchanges/reviews/uphold"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/uphold" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "User Experience", "description": "In-depth Uphold review covering multi-asset trading, fees, supported cryptocurrencies, Anything-to-Anything feature, and whether Uphold suits your needs.", "url": "https://degen0x.com/exchanges/reviews/uphold", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

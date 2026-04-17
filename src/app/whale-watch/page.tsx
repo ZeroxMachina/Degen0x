@@ -4,6 +4,12 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import Breadcrumb from '@/components/Breadcrumb';
 import WhaleWatchClient from '@/components/WhaleWatchClient';
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Whale Watch — Real-time Crypto Transaction Tracking",
   description: 'Monitor large whale transactions across ETH, SOL, BTC, and ARB in real-time. Track accumulation zones and top whale activity with advanced filtering.',
@@ -34,6 +40,19 @@ const breadcrumbData = {
 export default function WhaleWatchPage() {
   return (
     <div style={{ background: 'var(--color-bg)' }}>
+      <ArticleSchema
+        headline="Whale Watch — Real-time Crypto Transaction Tracking"
+        description="Monitor large whale transactions across ETH, SOL, BTC, and ARB in real-time. Track accumulation zones and top whale activity with advanced filtering."
+        url="/whale-watch"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Guides"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/whale-watch" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/whale-watch" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution

@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Crypto Prime Brokerage: Institutional Trading Guide 2026',
   description: "Complete guide to crypto prime brokerage services for institutions. Learn how FalconX, Coinbase Prime, Hidden Road, and Anchorage compete in the prime",
@@ -127,6 +131,14 @@ const breadcrumbData = {
 export default function Page() {
   return (
     <main style={{ backgroundColor: '#0d1117', color: '#e6edf3', minHeight: '100vh' }}>
+      <ArticleSchema
+        headline="Crypto Prime Brokerage: Institutional Trading Guide 2026"
+        description="Complete guide to crypto prime brokerage services for institutions. Learn how FalconX, Coinbase Prime, Hidden Road, and Anchorage compete in the prime"
+        url="https://degen0x.com/learn/crypto-prime-brokerage-institutional-trading-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <style dangerouslySetInnerHTML={{ __html: `
         a:focus-visible, summary:focus-visible, button:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; border-radius: 4px; }
         @media (prefers-reduced-motion: reduce) { * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
@@ -700,6 +712,7 @@ export default function Page() {
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Prime Brokerage: Institutional Trading Guide 2026", "description": "Complete guide to crypto prime brokerage services for institutions. Learn how FalconX, Coinbase Prime, Hidden Road, and Anchorage compete in the prime", "url": "https://degen0x.com/learn/crypto-prime-brokerage-institutional-trading-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <RelatedContent category="learn" currentSlug="/learn/crypto-prime-brokerage-institutional-trading-guide-2026" />
+<AuthoritySources url="/learn/crypto-prime-brokerage-institutional-trading-guide-2026" />
 </main>
   );
 }

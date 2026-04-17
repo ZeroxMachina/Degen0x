@@ -5,6 +5,15 @@ import ReviewPage from "@/components/ReviewPage";
 import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = {
   name: "PancakeSwap",
   slug: "pancakeswap",
@@ -150,6 +159,13 @@ const breadcrumbData = {
 export default function PancakeSwapReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="PancakeSwap Review (2026) - BNB Chains Biggest DEX"
+        url="https://degen0x.com/exchanges/reviews/pancakeswap"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Exchanges"
@@ -163,6 +179,18 @@ export default function PancakeSwapReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="PancakeSwap Review (2026) - BNB Chains Biggest DEX | ${SITE_NAME}"
+        description="PancakeSwap is the largest DEX on BNB Chain, offering token swaps, yield farming, lottery, NFT marketplace, and perpetual futures across multiple chains."
+        url="https://degen0x.com/exchanges/reviews/pancakeswap"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/exchanges/reviews/pancakeswap" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Multi-Chain Deployment", "description": "PancakeSwap is the largest DEX on BNB Chain, offering token swaps, yield farming, lottery, NFT marketplace, and perpetual futures across multiple chains.", "url": "https://degen0x.com/exchanges/reviews/pancakeswap", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

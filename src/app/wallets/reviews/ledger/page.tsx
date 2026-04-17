@@ -7,6 +7,13 @@ import { SITE_NAME, CURRENT_YEAR } from "@/lib/constants";
 import MethodologyBlock from '@/components/MethodologyBlock';
 import AuthoritySources from '@/components/AuthoritySources';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = walletProducts.find((p) => p.slug === "ledger")!;
 
 export const metadata: Metadata = {
@@ -143,6 +150,13 @@ const breadcrumbData = {
 export default function LedgerReviewPage() {
   return (
     <>
+      <ReviewSchema
+        itemName="Ledger Nano X Review (2026) - Fees, Security & Features"
+        url="https://degen0x.com/wallets/reviews/ledger"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Wallets"
@@ -156,6 +170,14 @@ export default function LedgerReviewPage() {
       relatedReviews={relatedReviews}
       relatedGuides={relatedGuides}
     />
+      <ArticleSchema
+        headline="Ledger Nano X Review (2026) - Fees, Security & Features | degen0x"
+        description="In-depth Ledger Nano X review for ${CURRENT_YEAR}. We tested Ledger"
+        url="https://degen0x.com/wallets/reviews/ledger"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Supported Assets & Chains", "description": "In-depth Ledger Nano X review for ${CURRENT_YEAR}. We tested Ledger's Bluetooth hardware wallet covering security, supported coins, Ledger Live app, fees, and ease of use.", "url": "https://degen0x.com/wallets/reviews/ledger", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
@@ -169,7 +191,11 @@ export default function LedgerReviewPage() {
   <a href="/wallets/reviews/bitbox" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitbox</a>
   <a href="/wallets/reviews/bitget-wallet" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Bitget Wallet</a>
 </nav>
-      <AuthoritySources url="/wallets/reviews/ledger" />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/wallets/reviews/ledger" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/wallets/reviews/ledger" />
       <MethodologyBlock variant="review" />
       </>
   );

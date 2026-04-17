@@ -7,6 +7,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: 'Farcaster Protocol Guide 2026 — Decentralized Social Media',
   description: 'Complete guide to Farcaster: decentralized social protocol, 40K-60K DAU, Mini Apps, Snapchain 10K+ TPS, Neynar acquisition.',
@@ -124,6 +128,14 @@ export default function FarcasterPage() {
 
   return (
     <article style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px' }}>
+      <ArticleSchema
+        headline="Farcaster Protocol Guide 2026 — Decentralized Social Media"
+        description="Complete guide to Farcaster: decentralized social protocol, 40K-60K DAU, Mini Apps, Snapchain 10K+ TPS, Neynar acquisition."
+        url="https://degen0x.com/learn/farcaster-decentralized-social-protocol-guide-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
@@ -252,6 +264,7 @@ export default function FarcasterPage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Farcaster Protocol Guide 2026 \u2014 Decentralized Social Media", "description": "Complete guide to Farcaster: decentralized social protocol, 40K-60K DAU, Mini Apps, Snapchain 10K+ TPS, Neynar acquisition.", "url": "https://degen0x.com/learn/farcaster-decentralized-social-protocol-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
       <RelatedContent category="learn" currentSlug="/learn/farcaster-decentralized-social-protocol-guide-2026" />
+      <AuthoritySources url="/learn/farcaster-decentralized-social-protocol-guide-2026" />
       </article>
   );
 }

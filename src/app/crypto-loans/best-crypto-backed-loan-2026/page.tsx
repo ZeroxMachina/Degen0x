@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Best Crypto Backed Loan 2026: Aave vs MakerDAO vs Nexo vs",
   description: 'Compare crypto loans: Aave DeFi (3-5% rates), MakerDAO (borrow DAI), Nexo CeFi (up to $100k), BlockFi, Salt.',
@@ -41,6 +47,19 @@ export default function BestCryptoBackedLoan() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Best Crypto Backed Loan 2026: Aave vs MakerDAO vs Nexo vs"
+        description="Compare crypto loans: Aave DeFi (3-5% rates), MakerDAO (borrow DAI), Nexo CeFi (up to $100k), BlockFi, Salt."
+        url="https://degen0x.com/crypto-loans/best-crypto-backed-loan-2026"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/best-crypto-backed-loan-2026" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/best-crypto-backed-loan-2026" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>

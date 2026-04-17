@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'How Crypto Loans Work: Complete 2026 Guide',
   description: 'Complete guide to crypto loans explained. Learn collateral requirements, liquidation risks, APR rates, CeFi vs DeFi platforms, and best practices for 2026.',
@@ -143,6 +149,19 @@ export default function HowCryptoLoansWork() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="How Crypto Loans Work: Complete 2026 Guide"
+        description="Complete guide to crypto loans explained. Learn collateral requirements, liquidation risks, APR rates, CeFi vs DeFi platforms, and best practices for 2026."
+        url="https://degen0x.com/crypto-loans/how-crypto-loans-work-complete-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Crypto Loans"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/crypto-loans/how-crypto-loans-work-complete-guide" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/crypto-loans/how-crypto-loans-work-complete-guide" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 

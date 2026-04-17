@@ -8,6 +8,10 @@ import ReadingTime from '@/components/ReadingTime';
 import LastUpdated from '@/components/LastUpdated';
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
 export const metadata: Metadata = {
   title: "Restaking & EigenLayer: The Complete Guide",
   description: "Master restaking with EigenLayer. Learn how AVS protocols work, explore liquid restaking tokens, understand risks, and discover top projects reshaping Ethereum",
@@ -28,6 +32,14 @@ const breadcrumbData = {
 export default function RestakingGuide() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+      <ArticleSchema
+        headline="Restaking & EigenLayer: The Complete Guide"
+        description="Master restaking with EigenLayer. Learn how AVS protocols work, explore liquid restaking tokens, understand risks, and discover top projects reshaping Ethereum"
+        url="https://degen0x.com/learn/restaking-eigenlayer-guide"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Learn"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* Breadcrumb */}
       <nav className="text-sm mb-8">
@@ -574,6 +586,7 @@ export default function RestakingGuide() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Restaking & EigenLayer: The Complete Guide", "description": "Master restaking with EigenLayer. Learn how AVS protocols work, explore liquid restaking tokens, understand risks, and discover top projects reshaping Ethereum", "url": "https://degen0x.com/learn/restaking-eigenlayer-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
       <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/restaking-eigenlayer-guide" />
+<AuthoritySources url="/learn/restaking-eigenlayer-guide" />
 </div>
   );
 }

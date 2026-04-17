@@ -4,6 +4,14 @@ import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttri
 import RelatedContent from '@/components/RelatedContent';
 
 
+import SoftwareApplicationSchema from "@/components/SoftwareApplicationSchema";
+
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: 'Staking Rewards Calculator | APY & Compound Calculator',
   description: 'Calculate crypto staking rewards with our APY calculator. Compare yields across ETH, SOL, DOT, ATOM, and other assets. Calculate compound interest.',
@@ -77,6 +85,24 @@ const breadcrumbData = {
 export default function StakingRewardsCalculatorPage() {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#0d1117', color: '#e6edf3' }}>
+      <ArticleSchema
+        headline="Staking Rewards Calculator | APY & Compound Calculator"
+        description="Calculate crypto staking rewards with our APY calculator. Compare yields across ETH, SOL, DOT, ATOM, and other assets. Calculate compound interest."
+        url="https://degen0x.com/tools/staking-rewards-calculator"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Tools"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/tools/staking-rewards-calculator" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/tools/staking-rewards-calculator" />
+      <SoftwareApplicationSchema
+        url="https://degen0x.com/tools/staking-rewards-calculator"
+        name="Staking Rewards Calculator"
+        description="Calculate crypto staking rewards with our APY calculator. Compare yields across ETH, SOL, DOT, ATOM, and other assets. Calculate compound interest."
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script
         type="application/ld+json"

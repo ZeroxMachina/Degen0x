@@ -11,6 +11,12 @@ import MethodologyBlock from '@/components/MethodologyBlock';
 import CompareSchema from '@/components/CompareSchema';
 import LastUpdated from '@/components/LastUpdated';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: `Koinly vs CryptoTaxCalculator 2026 - Which Is Better for DeFi?`,
   description: `Compare Koinly vs CryptoTaxCalculator. Side-by-side analysis of DeFi support, pricing, integrations, and which crypto tax software is right for you.`,
@@ -40,6 +46,14 @@ const breadcrumbData = {
 export default function KoinlyVsCryptoTaxCalculatorPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-12">
+      <ArticleSchema
+        headline="Koinly vs CryptoTaxCalculator 2026 - Which Is Better for DeFi?"
+        description="Compare Koinly vs CryptoTaxCalculator. Side-by-side analysis of DeFi support, pricing, integrations, and which crypto tax software is right for you."
+        url="https://degen0x.com/taxes/compare/koinly-vs-cryptotaxcalculator"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Compare"
+      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
 
       <AuthorAttribution
@@ -170,6 +184,11 @@ export default function KoinlyVsCryptoTaxCalculatorPage() {
         items={["Koinly", "Cryptotaxcalculator"]}
       />
       <MethodologyBlock variant="compare" />
+          <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/taxes/compare/koinly-vs-cryptotaxcalculator" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/taxes/compare/koinly-vs-cryptotaxcalculator" />
     </div>
   );
 }

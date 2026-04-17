@@ -5,6 +5,15 @@ import { stakingPlatforms } from "@/data/staking";
 import ReviewPage from "@/components/ReviewPage";
 import MethodologyBlock from '@/components/MethodologyBlock';
 
+import ArticleSchema from "@/components/ArticleSchema";
+
+import AuthoritySources from "@/components/AuthoritySources";
+
+import ReviewSchema from "@/components/ReviewSchema";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 const product = stakingPlatforms.find((p) => p.slug === "coinbase-staking")!;
 
 export const metadata: Metadata = {
@@ -30,6 +39,13 @@ const breadcrumbData = {
 export default function CoinbaseStakingReview() {
   return (
     <>
+      <ReviewSchema
+        itemName="Coinbase Staking Review 2026: Fees, Yields, Pros & Cons"
+        url="https://degen0x.com/investing/staking/reviews/coinbase-staking"
+        rating={4.0}
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+      />
       <ReviewPage
       product={product}
       categoryName="Crypto Staking"
@@ -130,6 +146,18 @@ Coinbase Staking is the most accessible staking option for beginners, particular
         { title: "Staking for Beginners", href: "/investing/staking/best/beginners" },
       ]}
     />
+      <ArticleSchema
+        headline="Coinbase Staking Review 2026: Fees, Yields, Pros & Cons"
+        description="Our in-depth Coinbase Staking review covers yields, fees, cbETH, supported assets, and whether it"
+        url="https://degen0x.com/investing/staking/reviews/coinbase-staking"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Reviews"
+      />
+      <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/staking/reviews/coinbase-staking" />
+        <ReadingTime />
+      </div>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Coinbase Staking Review 2026: Fees, Yields, Pros & Cons", "description": "Our in-depth Coinbase Staking review covers yields, fees, cbETH, supported assets, and whether it's the right staking service for you. Updated March 2026.", "url": "https://degen0x.com/investing/staking/reviews/coinbase-staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
     <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>

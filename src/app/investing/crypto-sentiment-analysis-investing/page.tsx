@@ -3,6 +3,12 @@ import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 
 
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
+
+import LastUpdated from "@/components/LastUpdated";
+import ReadingTime from "@/components/ReadingTime";
+
 export const metadata: Metadata = {
   title: "Crypto Sentiment Analysis for Investing | Fear, Greed &",
   description: "Master crypto sentiment: Fear & Greed Index (0-100 scale), LunarCrush social signals, Santiment NLP, funding rates, whale behavior & contrarian investing",
@@ -181,6 +187,19 @@ export default function CryptoSentimentAnalysisInvesting() {
 
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
+      <ArticleSchema
+        headline="Crypto Sentiment Analysis for Investing | Fear, Greed &"
+        description="Master crypto sentiment: Fear & Greed Index (0-100 scale), LunarCrush social signals, Santiment NLP, funding rates, whale behavior & contrarian investing"
+        url="https://degen0x.com/investing/crypto-sentiment-analysis-investing"
+        datePublished="2024-06-01"
+        dateModified="2026-04-17"
+        section="Investing"
+      />
+            <div className="mb-4 flex flex-wrap items-center gap-3 text-xs text-gray-500 border-b border-gray-100 pb-3">
+        <LastUpdated pathKey="/investing/crypto-sentiment-analysis-investing" />
+        <ReadingTime />
+      </div>
+<AuthoritySources url="/investing/crypto-sentiment-analysis-investing" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
