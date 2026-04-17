@@ -5,6 +5,7 @@ import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
@@ -887,6 +888,7 @@ export default function CrossChainInteroperabilityGuidePage() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cross-chain Interoperability Guide 2026: LayerZero,", "description": "Complete guide to cross-chain messaging and interoperability in 2026. Understand LayerZero, Wormhole, Chainlink CCIP, Axelar, and Hyperlane. Compare", "url": "https://degen0x.com/learn/cross-chain-interoperability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="bridging-flow" />
       <RelatedContent category="learn" currentSlug="/learn/cross-chain-interoperability-guide-2026" />
 </div>
   );

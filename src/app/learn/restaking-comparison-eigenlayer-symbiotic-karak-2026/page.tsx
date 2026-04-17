@@ -4,6 +4,7 @@ import StructuredData from "@/components/StructuredData";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -679,6 +680,7 @@ export default function RestakingComparisonPage() {
             })
           }}
         />
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/restaking-comparison-eigenlayer-symbiotic-karak-2026" />
       </article>
   );

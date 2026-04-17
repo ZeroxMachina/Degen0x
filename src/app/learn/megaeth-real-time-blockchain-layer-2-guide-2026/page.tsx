@@ -4,6 +4,7 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -451,6 +452,7 @@ export default function MegaETHGuide() {
         />
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "MegaETH Guide 2026 \u2014 Real-Time L2, 100K TPS & MEGA Token", "description": "Complete guide to MegaETH: the first real-time Ethereum L2 with 100,000 TPS, sub-10ms blocks, heterogeneous architecture, MegaMafia ecosystem, and MEGA", "url": "https://degen0x.com/learn/megaeth-real-time-blockchain-layer-2-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/megaeth-real-time-blockchain-layer-2-guide-2026" />
 </div>
 

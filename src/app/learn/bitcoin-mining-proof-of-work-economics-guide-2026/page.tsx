@@ -3,6 +3,7 @@ import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -994,6 +995,7 @@ export default function BitcoinMiningGuide() {
             })
           }}
         />
+      <Diagram slug="pow-vs-pos" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-mining-proof-of-work-economics-guide-2026" />
       </article>
   );

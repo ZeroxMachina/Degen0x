@@ -4,6 +4,7 @@ import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -570,6 +571,7 @@ export default function TaikoBasedZkRollupEthereumL2Guide2026() {
             })
           }}
         />
+      <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/taiko-based-zk-rollup-ethereum-l2-guide-2026" />
       </article>
   );

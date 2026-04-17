@@ -4,6 +4,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 export const metadata: Metadata = {
   title: 'Mantle Network Guide 2026 — MNT Token & L2',
@@ -765,6 +766,7 @@ export default function MantleNetworkGuide() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Mantle Network Guide 2026 \u2014 MNT Token & L2", "description": "Comprehensive guide to Mantle Network: $2.8B TVL, ZK rollup migration, MNT tokenomics, mETH/cmETH staking, DeFi ecosystem & institutional partnerships.", "url": "https://degen0x.com/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/mantle-network-mnt-layer-2-ecosystem-guide-2026" />
 </div>
   );

@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -515,6 +516,7 @@ export default function ConcentratedLiquidityUniswapV3() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Concentrated Liquidity Uniswap V3 Guide | LP Strategy &", "description": "Master Uniswap V3 concentrated liquidity: tick ranges, 4000x capital efficiency vs V2, IL risk, fee tiers 0.01%-1%. Arrakis, Gamma, Merkl rewards, JIT attacks,", "url": "https://degen0x.com/learn/concentrated-liquidity-uniswap-v3", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/concentrated-liquidity-uniswap-v3" />
       </article>
   );

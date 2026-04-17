@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -1027,6 +1028,7 @@ export default function YieldFarmingPage() {
           <a href="/learn/kaito-ai-infofi-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Kaito Ai Infofi Guide</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Yield Farming & DeFi Strategies Guide 2026 | degen0x", "description": "Master DeFi yield farming in 2026: Curve, Lido, Pendle, Beefy, Yearn, stablecoin strategies, auto-compounding vaults, cross-chain farming, and risk management.", "url": "https://degen0x.com/learn/yield-farming-defi-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/yield-farming-defi-strategies-guide-2026" />
 </main>
   );

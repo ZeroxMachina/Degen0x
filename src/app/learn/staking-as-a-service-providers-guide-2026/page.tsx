@@ -7,6 +7,7 @@ import BackToTop from "@/components/BackToTop";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -775,6 +776,7 @@ export default function StakingServiceProvidersGuide() {
           }}
         />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Staking-as-a-Service Providers Compared 2026 \u2014 Lido, Kiln,", "description": "Compare top staking-as-a-service providers in 2026: Lido, Kiln, Figment, P2P.org, and Coinbase. Fees, supported chains, institutional features, and security.", "url": "https://degen0x.com/learn/staking-as-a-service-providers-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/staking-as-a-service-providers-guide-2026" />
 </div>
   );

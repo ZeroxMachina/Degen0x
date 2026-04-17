@@ -6,6 +6,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -612,6 +613,7 @@ export default function MorphoProtocolGuidePage() {
           <a href="/learn/crypto-payroll-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Crypto Payroll Guide 2026</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Morpho Protocol: The #2 DeFi Lending Protocol Guide 2026", "description": "Complete guide to Morpho Protocol, the second-largest DeFi lending protocol with $5.8B TVL. Learn about modular architecture, V2 launch, institutional", "url": "https://degen0x.com/learn/morpho-protocol-defi-lending-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="defi-lending-cycle" />
       <RelatedContent category="learn" currentSlug="/learn/morpho-protocol-defi-lending-guide-2026" />
 </main>
   );

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -598,6 +599,7 @@ export default function ScrollZkEVMLayer2EcosystemGuide2026() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Scroll zkEVM Layer 2 Ecosystem Guide 2026 - degen0x", "description": "Complete guide to Scroll, the largest zkEVM by market share. Learn about zkEVM technology, SCR token, ecosystem dApps, performance metrics, and investment", "url": "https://degen0x.com/learn/scroll-zkevm-layer-2-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/scroll-zkevm-layer-2-ecosystem-guide-2026" />
       </article>
   );

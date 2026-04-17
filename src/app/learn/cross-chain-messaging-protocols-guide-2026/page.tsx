@@ -5,6 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 const S = {
@@ -963,6 +964,7 @@ export default function CrossChainMessagingProtocolsPage() {
           <a href="/learn/trump-crypto-reserve-guide" style={{ color: "#fb923c", marginRight: "1rem" }}>Trump Crypto Reserve Guide</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cross-Chain Messaging Protocols Guide 2026 \u2014 LayerZero,", "description": "Complete guide to cross-chain messaging protocols in 2026. Compare LayerZero V2, Wormhole NTT, Hyperlane, and Chainlink CCIP. Learn how they work and when to", "url": "https://degen0x.com/learn/cross-chain-messaging-protocols-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="bridging-flow" />
       <RelatedContent category="learn" currentSlug="/learn/cross-chain-messaging-protocols-guide-2026" />
 </main>
   );

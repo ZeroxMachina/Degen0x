@@ -7,6 +7,7 @@ import StructuredData from '@/components/StructuredData';
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data';
 import { SITE_URL } from '@/lib/constants';
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 export const metadata: Metadata = {
   title: 'Appchains & App-Specific Rollups Guide 2026 | degen0x',
@@ -963,6 +964,7 @@ export default function AppChainsGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Appchains & App-Specific Rollups Guide 2026 | degen0x", "description": "Complete guide to application-specific blockchains, appchain frameworks like OP Stack and Cosmos SDK, major case studies, and the future of dedicated", "url": "https://degen0x.com/learn/appchains-app-specific-rollups-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/appchains-app-specific-rollups-guide-2026" />
 </div>
   );

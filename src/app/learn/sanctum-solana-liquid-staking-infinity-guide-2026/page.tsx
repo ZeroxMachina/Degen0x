@@ -4,6 +4,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 export const metadata: Metadata = {
   title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &",
@@ -295,6 +296,7 @@ export default function SanctumGuide() {
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Sanctum Guide 2026 \u2014 Solana Liquid Staking, Infinity Pool &", "description": "Complete guide to Sanctum, the universal liquid staking layer on Solana. Learn how the Infinity pool unifies LST liquidity, how Sanctum LSTs work, and what", "url": "https://degen0x.com/learn/sanctum-solana-liquid-staking-infinity-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/sanctum-solana-liquid-staking-infinity-guide-2026" />
 </div>
   );

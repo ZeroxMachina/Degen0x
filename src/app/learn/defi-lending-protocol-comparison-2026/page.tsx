@@ -6,6 +6,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import { SITE_URL } from '@/lib/constants';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -1115,6 +1116,7 @@ export default function DefiLendingComparison2026Page() {
 
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "DeFi Lending Protocol Comparison 2026: Aave vs Morpho vs", "description": "Compare top DeFi lending protocols in 2026. Aave V4, Morpho Blue, Compound V3, Fluid, and Spark \u2014 rates, architecture, risks, TVL, and which to use for your", "url": "https://degen0x.com/learn/defi-lending-protocol-comparison-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="defi-lending-cycle" />
       <RelatedContent category="learn" currentSlug="/learn/defi-lending-protocol-comparison-2026" />
 </div>
   );

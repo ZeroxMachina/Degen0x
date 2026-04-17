@@ -2,6 +2,7 @@
 
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 export default function RestakingEigenLayerPage() {
   const breadcrumbItems = [
@@ -528,6 +529,7 @@ export default function RestakingEigenLayerPage() {
         />
       </article>
       </section>
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/restaking-eigenlayer" />
     </div>
   );

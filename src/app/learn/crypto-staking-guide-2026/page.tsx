@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -1216,6 +1217,7 @@ export default function CryptoStakingGuidePage() {
           <a href="/learn/intent-based-trading" style={{ color: "#fb923c", marginRight: "1rem" }}>Intent Based Trading</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Crypto Staking Guide 2026 \u2014 Earn Passive Income | degen0x", "description": "Master crypto staking in 2026: PoS blockchains, ATOM, Polkadot, Solana, Ethereum staking, liquid staking, delegation, exchange staking, and risk management for", "url": "https://degen0x.com/learn/crypto-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/crypto-staking-guide-2026" />
 </main>
   );

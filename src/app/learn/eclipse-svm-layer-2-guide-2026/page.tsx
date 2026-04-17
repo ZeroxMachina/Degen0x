@@ -11,6 +11,7 @@ import {
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
@@ -595,6 +596,7 @@ export default function EclipseSVMGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Eclipse (ES) Guide 2026: The First SVM Layer 2 on Ethereum", "description": "Eclipse explained: Solana Virtual Machine Layer 2 on Ethereum with Celestia data availability. ES tokenomics, architecture, ecosystem pivot, and 2026 outlook.", "url": "https://degen0x.com/learn/eclipse-svm-layer-2-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/eclipse-svm-layer-2-guide-2026" />
 </div>
   );

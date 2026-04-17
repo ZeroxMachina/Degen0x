@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -303,6 +304,7 @@ export default function UnichainGuidePage() {
         </div>
       </article>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Unichain Guide 2026 \u2014 Uniswap Layer 2, UNI Staking & DeFi", "description": "Complete guide to Unichain in 2026: the Uniswap-built Layer 2 optimized for DeFi. Learn about UNI staking, 1-second blocks, cross-chain liquidity, and", "url": "https://degen0x.com/learn/unichain-uniswap-layer-2-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/unichain-uniswap-layer-2-ecosystem-guide-2026" />
 </div>
   );

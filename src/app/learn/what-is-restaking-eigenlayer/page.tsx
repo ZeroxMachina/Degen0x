@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -446,6 +447,7 @@ export default function WhatIsRestakingEigenLayer() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "What Is Restaking & EigenLayer 2026: AVS, Operators, LRTs", "description": "Complete guide to restaking: how EigenLayer works, AVS (Actively Validated Services), liquid restaking tokens (eETH, rsETH, pufETH). TVL $23B, slashing risks,", "url": "https://degen0x.com/learn/what-is-restaking-eigenlayer", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/what-is-restaking-eigenlayer" />
       </article>
   );

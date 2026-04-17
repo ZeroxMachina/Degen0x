@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Breadcrumb from '@/components/Breadcrumb';
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 interface Validator {
   name: string;
@@ -234,6 +235,7 @@ export default function ValidatorStakingGuide() {
             })
           }}
         />
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/validator-staking-guide" />
       </div>
   );

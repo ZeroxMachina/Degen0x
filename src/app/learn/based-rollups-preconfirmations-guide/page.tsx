@@ -6,6 +6,7 @@ import BackToTop from "@/components/BackToTop";
 import BasedRollupsVisualizer from "@/components/BasedRollupsVisualizer";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -964,6 +965,7 @@ export default function BasedRollupsGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Based Rollups & Preconfirmations Guide 2026 \u2014 How They Work", "description": "Based rollups let Ethereum validators sequence L2 transactions \u2014 no centralized sequencer needed. Add preconfirmations and you get 100ms finality with full L1", "url": "https://degen0x.com/learn/based-rollups-preconfirmations-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/based-rollups-preconfirmations-guide" />
 </div>
   );

@@ -5,6 +5,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import BackToTop from '@/components/BackToTop';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -1109,6 +1110,7 @@ export default function DVTGuidePage() {
           <a href="/learn/erc-20-token-standard-explained" style={{ color: "#fb923c", marginRight: "1rem" }}>Erc 20 Token Standard Explained</a>
         </nav>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Distributed Validator Technology (DVT) Guide | degen0x", "description": "Master DVT: how key splitting, threshold signing, and Obol/SSV solve Ethereum staking centralization. Including setup guide.", "url": "https://degen0x.com/learn/distributed-validator-technology-dvt-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/distributed-validator-technology-dvt-guide" />
 </main>
   );

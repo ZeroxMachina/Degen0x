@@ -1,6 +1,7 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 const S = {
   bg: "var(--color-bg, #0d1117)", border: "var(--glass-border, #30363d)",
@@ -185,6 +186,7 @@ export default function SymbioticRestakingPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/desci-decentralized-science-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Desci Decentralized Science Guide 2026</a>
         </nav>
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/symbiotic-restaking" />
     </main>
   );

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import FAQAccordion from '@/components/FAQAccordion';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -1269,6 +1270,7 @@ export default function SolanaETFGuide() {
         </div>
       </div>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana ETF Spot Funds Staking Guide 2026 \u2014 Complete Fee", "description": "Complete guide to SEC-approved Solana spot ETFs trading 2026. Compare 16 ETFs, staking yields, fees, and regulatory changes from the March 2026 digital", "url": "https://degen0x.com/learn/solana-etf-spot-funds-staking-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/solana-etf-spot-funds-staking-guide-2026" />
 </main>
   );

@@ -3,6 +3,7 @@ import Link from "next/link";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -644,6 +645,7 @@ export default function SolanaFiredancerGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana Firedancer Guide 2026: Validator Client | degen0x", "description": "Complete guide to Solana Firedancer validator client \u2014 Jump Crypto\\", "url": "https://degen0x.com/learn/solana-firedancer-validator-client-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/solana-firedancer-validator-client-guide-2026" />
       </article>
   );

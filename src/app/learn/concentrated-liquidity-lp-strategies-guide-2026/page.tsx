@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -876,6 +877,7 @@ export default function ConcentratedLiquidityGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Concentrated Liquidity Guide 2026: LP Strategies for", "description": "Master concentrated liquidity and LP strategies for 2026. Learn Uniswap v4 hooks, dynamic rebalancing, impermanent loss mitigation, and earn 20-100% APR on", "url": "https://degen0x.com/learn/concentrated-liquidity-lp-strategies-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <Diagram slug="amm-liquidity" />
       <RelatedContent category="learn" currentSlug="/learn/concentrated-liquidity-lp-strategies-guide-2026" />
       </article>
   );

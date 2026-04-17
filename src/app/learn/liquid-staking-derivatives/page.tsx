@@ -1,6 +1,7 @@
 'use client';
 import Breadcrumb from "@/components/Breadcrumb";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 const S = {
   bg: "#0d1117", border: "#30363d", text: "#e6edf3", text2: "#8b949e",
@@ -179,6 +180,7 @@ export default function LiquidStakingDerivativesPage() {
           <span style={{ color: "#8b949e" }}>Related: </span>
           <a href="/learn/undercollateralized-defi-lending-onchain-credit-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Undercollateralized Defi Lending Onchain Credit Guide 2026</a>
         </nav>
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/liquid-staking-derivatives" />
     </main>
   );

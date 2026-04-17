@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -469,6 +470,7 @@ export default function WhatIsLiquidStaking() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Liquid Staking Explained: Lido stETH, Rocket Pool rETH", "description": "Lido stETH (28% of staked ETH, $35B TVL), Rocket Pool rETH, Coinbase cbETH, Jito jitoSOL, Marinade mSOL. APY 3.5-4.2% ETH, LST in DeFi collateral.", "url": "https://degen0x.com/learn/what-is-liquid-staking", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/what-is-liquid-staking" />
       </article>
   );

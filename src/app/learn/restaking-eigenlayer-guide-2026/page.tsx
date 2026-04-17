@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -743,6 +744,7 @@ export default function RestakingEigenLayerGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Restaking & EigenLayer Guide 2026: Earn Multi-Layer Yield", "description": "Complete guide to restaking and EigenLayer in 2026. Learn how to earn 3.8-6% APY by restaking ETH, compare EigenLayer vs Symbiotic vs Karak, and understand AVS", "url": "https://degen0x.com/learn/restaking-eigenlayer-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/restaking-eigenlayer-guide-2026" />
       </article>
   );

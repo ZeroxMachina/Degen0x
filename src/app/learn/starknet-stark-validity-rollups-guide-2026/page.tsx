@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
@@ -858,6 +859,7 @@ export default function StarknetSTARKGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Starknet & STARK Validity Rollups Guide 2026 \u2014 Layer 2,", "description": "Complete guide to Starknet Layer 2 validity rollup. $530M TVL, 65K daily active users, Cairo language, STARK proofs, Bitcoin staking ($160M), privacy with", "url": "https://degen0x.com/learn/starknet-stark-validity-rollups-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <Diagram slug="l1-vs-l2" />
       <RelatedContent category="learn" currentSlug="/learn/starknet-stark-validity-rollups-guide-2026" />
       </article>
   );

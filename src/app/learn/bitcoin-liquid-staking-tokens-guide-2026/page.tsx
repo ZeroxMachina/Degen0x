@@ -12,6 +12,7 @@ import BitcoinLSTYieldEstimator from "@/components/BitcoinLSTYieldEstimator";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 // ─── SEO Metadata ──────────────────────────────────────────────────────────────
@@ -1432,6 +1433,7 @@ export default function BitcoinLSTGuidePage() {
       </article>
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Liquid Staking Tokens (LSTs) Guide 2026 | degen0x", "description": "Compare top Bitcoin LSTs: LBTC (Lombard), SolvBTC, and pumpBTC. Yields, risks, DeFi integrations, and how to choose the right protocol for your BTC strategy.", "url": "https://degen0x.com/learn/bitcoin-liquid-staking-tokens-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
+      <Diagram slug="staking-rewards" />
       <RelatedContent category="learn" currentSlug="/learn/bitcoin-liquid-staking-tokens-guide-2026" />
 </div>
   );

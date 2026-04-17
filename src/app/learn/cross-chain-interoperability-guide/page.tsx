@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import Diagram from '@/components/Diagram';
 
 
 export const metadata: Metadata = {
@@ -569,6 +570,7 @@ export default function CrossChainInteroperabilityGuide() {
           </p>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cross-Chain Interoperability Guide 2026: LayerZero,", "description": "Complete guide to cross-chain bridges. Compare LayerZero (omnichain messaging), Wormhole (19 chains), Axelar GMP, Chainlink CCIP, Cosmos IBC, Polkadot XCMP.", "url": "https://degen0x.com/learn/cross-chain-interoperability-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </div>
+      <Diagram slug="bridging-flow" />
       <RelatedContent category="learn" currentSlug="/learn/cross-chain-interoperability-guide" />
       </article>
   );
