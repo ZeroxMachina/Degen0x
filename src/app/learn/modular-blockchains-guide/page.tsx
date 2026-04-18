@@ -1,5 +1,3 @@
-'use client'
-
 import Breadcrumb from '@/components/Breadcrumb'
 import AutoTOC from '@/components/AutoTOC';
 import ReadingTime from '@/components/ReadingTime';
