@@ -5,6 +5,13 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import StarRating from "@/components/StarRating";
 import TableOfContents from "@/components/TableOfContents";
 import FAQSection from "@/components/FAQSection";
+import ReviewSchema from "@/components/ReviewSchema";
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import MethodologyBlock from "@/components/MethodologyBlock";
+import LastUpdated from "@/components/LastUpdated";
+import AuthoritySources from "@/components/AuthoritySources";
+import ReadingTime from "@/components/ReadingTime";
 import { SITE_NAME, CURRENT_YEAR, CURRENT_MONTH } from "@/lib/constants";
 
 export const metadata: Metadata = {
@@ -226,18 +233,6 @@ export default function KoinlyReviewPage() {
             transactions that need attention, making it easy to fix issues before generating
             your tax report. For most users with standard exchange activity, the process from
             import to tax report takes less than 30 minutes.
-import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
-import MethodologyBlock from '@/components/MethodologyBlock';
-import LastUpdated from '@/components/LastUpdated';
-
-import ArticleSchema from "@/components/ArticleSchema";
-
-import AuthoritySources from "@/components/AuthoritySources";
-
-import ReviewSchema from "@/components/ReviewSchema";
-
-import ReadingTime from "@/components/ReadingTime";
-
           </p>
         </section>
 
