@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Metadata } from 'next'
 import { SITE_URL } from '@/lib/constants'
 import Breadcrumb from '@/components/Breadcrumb'

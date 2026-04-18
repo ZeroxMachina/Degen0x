@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from 'next'
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from '@/lib/structured-data'
 import StructuredData from '@/components/StructuredData'
