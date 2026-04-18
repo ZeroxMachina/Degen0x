@@ -1292,7 +1292,7 @@ export default function SolanaTokenExtensionsGuide() {
             }}
           >
             <li>
-              <Link href={`#${item.id}`}
+              <Link href="/learn/solana-defi-ecosystem-guide-2026"
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',
@@ -1304,7 +1304,7 @@ export default function SolanaTokenExtensionsGuide() {
               </Link>
             </li>
             <li>
-              <Link href={`#${item.id}`}
+              <Link href="/learn/privacy-coins-guide-2026"
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',
@@ -1316,7 +1316,7 @@ export default function SolanaTokenExtensionsGuide() {
               </Link>
             </li>
             <li>
-              <Link href={`#${item.id}`}
+              <Link href="/learn/fhe-cryptography-guide-2026"
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',
@@ -1328,7 +1328,7 @@ export default function SolanaTokenExtensionsGuide() {
               </Link>
             </li>
             <li>
-              <Link href={`#${item.id}`}
+              <Link href="/learn/crypto-security-masterclass-2026"
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',
@@ -1340,7 +1340,7 @@ export default function SolanaTokenExtensionsGuide() {
               </Link>
             </li>
             <li>
-              <Link href={`#${item.id}`}
+              <Link href="/tools/token-screener"
                 style={{
                   color: '#58a6ff',
                   textDecoration: 'none',
