@@ -977,7 +977,8 @@ export default function NoCodeAITradingAgentsPage() {
           >
             Narrative Tracker
           </Link>
-          <Link href={rel.href}
+          <Link href="/tools"
+            className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             Market Data
