@@ -1028,7 +1028,7 @@ export default function OnchainPrivacyInfrastructureGuidePage() {
                 desc: "Wallet security, seed phrases, and key management.",
               },
             ].map((article) => (
-              <Link href={href}
+              <Link href={article.href}
                 key={article.href}
                 style={{ textDecoration: "none" }}
               >
