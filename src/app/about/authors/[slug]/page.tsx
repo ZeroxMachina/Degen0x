@@ -11,9 +11,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const profile = getAuthorProfile(params.slug);
+  const { slug } = await params;
+  const profile = getAuthorProfile(slug);
   if (!profile) return { title: 'Author not found' };
   const title = `${profile.handle} — ${profile.role} at degen0x`;
   const description = `${profile.bio.slice(0, 155)}…`;
@@ -36,8 +37,9 @@ export async function generateMetadata({
   };
 }
 
-export default function AuthorPage({ params }: { params: { slug: string } }) {
-  const profile = getAuthorProfile(params.slug);
+export default async function AuthorPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const profile = getAuthorProfile(slug);
   if (!profile) return notFound();
 
   const personSchema = {

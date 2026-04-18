@@ -827,7 +827,7 @@ export default function LiquidRestakingTokensPage() {
               { href: "/learn/advanced-defi-strategies", title: "Advanced DeFi Strategies", desc: "Leverage, flash loans, and more" },
               { href: "/ecosystem/eigenlayer", title: "EigenLayer Ecosystem", desc: "AVS, operators, and integrations" },
             ].map(link => (
-              <Link href={href as string}
+              <Link href={link.href}
                 key={link.href}
                 style={{
                   background: S.surface,

@@ -754,10 +754,10 @@ export default function BitcoinSafeHavenGuidePage() {
             { href: "/learn/btc-yield-earning-strategies-guide-2026", label: "BTC Yield & BTCFi Earning Strategies 2026" },
           ].map((item) => (
             <Link href={item.href}
-              key={link.href}
+              key={item.href}
               style={{ color: "#58a6ff" }}
             >
-              {link.label}
+              {item.label}
             </Link>
           ))}
         </div>
