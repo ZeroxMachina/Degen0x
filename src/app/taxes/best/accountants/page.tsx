@@ -212,7 +212,8 @@ export default function BestAccountantsPage() {
             >
               Compare Tax Software &#8594;
             </Link>
-            <Link href={cpa.url}
+            <Link href="/taxes/how-to-file"
+              className="text-sm text-[var(--color-primary)] hover:underline"
             >
               How to File Crypto Taxes &#8594;
             </Link>
