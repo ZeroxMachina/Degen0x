@@ -908,7 +908,8 @@ export default function RailgunPrivacyGuidePage() {
           >
             Narrative Tracker
           </Link>
-          <Link href={protocol.link}
+          <Link href="/learn"
+            className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             More Guides

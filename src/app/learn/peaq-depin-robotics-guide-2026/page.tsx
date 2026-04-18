@@ -710,7 +710,7 @@ export default function PeaqDeginRoboticsGuidePage() {
               { title: "Staking APY Calculator", href: "/tools/staking-apy" },
               { title: "What Is TVL?", href: "/learn/what-is-tvl" },
             ].map((item) => (
-              <Link href={href as string}
+              <Link href={item.href}
                 key={item.href}
                 style={{
                   fontSize: "16.5px",

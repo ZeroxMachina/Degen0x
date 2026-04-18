@@ -276,7 +276,7 @@ export default function BestSpendingPage() {
           <h2 className="text-2xl font-bold text-[var(--color-text)] mb-6">Browse by Category</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {categoryLinks.map((link) => (
-              <Link href={product.affiliateUrl}
+              <Link href={link.href}
                 key={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >

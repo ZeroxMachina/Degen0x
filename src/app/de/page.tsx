@@ -361,7 +361,7 @@ export default function GermanLandingPage() {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {DACH_TOOLS.map((tool) => (
-            <Link href={kat.href}
+            <Link href={tool.href}
               key={tool.href}
               className="flex items-start gap-4 rounded-2xl border border-[var(--color-border)] p-5 hover:border-[var(--color-primary)] transition-all group"
               style={{ background: "var(--color-surface)" }}

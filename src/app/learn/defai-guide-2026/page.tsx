@@ -913,7 +913,8 @@ export default function DeFAIGuidePage() {
           >
             Narrative Tracker
           </Link>
-          <Link href={opt.link.href}
+          <Link href="/tools/defi-yields"
+            className="glass px-5 py-2 rounded-lg font-semibold text-sm"
             style={{ color: "var(--color-text)", border: "1px solid var(--color-border)" }}
           >
             DeFi Yields
