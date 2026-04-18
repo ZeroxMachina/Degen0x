@@ -4,7 +4,7 @@
 //
 // Phase 3b ramp-to-8.
 
-import { SITE_URL, SITE_NAME } from '@/lib/seo-utils';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 interface CompareSchemaProps {
   /** e.g. "Binance vs Coinbase" */

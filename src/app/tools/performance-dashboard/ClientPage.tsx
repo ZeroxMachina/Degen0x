@@ -227,29 +227,7 @@ export default function PerformanceDashboard() {
                       ),
                     },
                   ];
-                }, [] as any[])}
-                {holdings.reduce((slices, holding, index) => {
-                  const colors = ['#58a6ff', '#3fb950', '#f85149', '#d29922', '#a371f7'];
-                  const angle = (holding.allocation / 100) * 360;
-                  const startAngle = slices.reduce((sum, s) => sum + s.angle, 0);
-                  return [
-                    ...slices,
-                    {
-                      angle,
-                      element: (
-                        <g key={`label-${holding.id}`}>
-                          {slices.map((s, i) => {
-                            const midAngle = (startAngle + angle / 2 - 90) * (Math.PI / 180);
-                            const labelRadius = 110;
-                            const lx = 125 + labelRadius * Math.cos(midAngle);
-                            const ly = 125 + labelRadius * Math.sin(midAngle);
-                            return null;
-                          })}
-                        </g>
-                      ),
-                    },
-                  ];
-                }, [] as any[])}
+                }, [] as any[]).map((s: any) => s.element)}
               </svg>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))', gap: '1rem', width: '100%' }}>
                 {holdings.map((holding, index) => {

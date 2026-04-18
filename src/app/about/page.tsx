@@ -126,7 +126,7 @@ export default function AboutPage() {
         publishedDate="2026-04-13"
         updatedDate="2026-04-13"
         section="about"
-      />      <Breadcrumb />
+      />      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]} />
 
       {/* Hero Section */}
       <section
