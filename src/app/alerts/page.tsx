@@ -1,17 +1,20 @@
-'use client';
-
-import PriceAlertManager from '@/components/PriceAlertManager';
-
 import type { Metadata } from "next";
+import ClientPage from "./ClientPage";
 
 export const metadata: Metadata = {
   title: "Alerts | degen0x",
-  description: "Comprehensive degen0x guide to alerts — 2026 fundamentals, step-by-step walkthroughs, and risk-aware strategies.",
+  description: "Set custom price, volume, and on-chain alerts for any crypto on degen0x — Telegram/email push, no API key required.",
   alternates: { canonical: "https://degen0x.com/alerts" },
+  openGraph: {
+    title: "Alerts | degen0x",
+    description: "Set custom price, volume, and on-chain alerts for any crypto on degen0x — Telegram/email push, no API key required.",
+    url: "https://degen0x.com/alerts",
+    type: "article",
+  },
 };
 
-export const dynamic = 'force-dynamic';
+export const dynamic = "force-dynamic";
 
-export default function AlertsPage() {
-  return <PriceAlertManager />;
+export default function Page() {
+  return <ClientPage />;
 }
