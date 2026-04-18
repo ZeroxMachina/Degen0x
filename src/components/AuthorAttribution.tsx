@@ -1,3 +1,5 @@
+import styles from './AuthorAttribution.module.css';
+
 interface AuthorAttributionProps {
   author: string;
   role: string;
@@ -27,12 +29,12 @@ function getInitials(name: string): string {
 
 function getAvatarColor(author: string): string {
   const colors = [
-    '#1f6feb', // blue
-    '#238636', // green
-    '#da3633', // red
-    '#d29922', // orange
-    '#7d8590', // gray
-    '#a371f7', // purple
+    '#6366f1', // primary indigo
+    '#22c55e', // success green
+    '#ef4444', // danger red
+    '#f59e0b', // accent amber
+    '#64748b', // neutral slate
+    '#8b5cf6', // purple
   ];
   const hash = author.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0);
   return colors[hash % colors.length];
@@ -52,68 +54,33 @@ export default function AuthorAttribution({
   const formattedUpdated = formatDate(updatedDate);
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        flexWrap: 'wrap',
-        gap: '10px',
-        padding: '12px 16px',
-        margin: '16px 0',
-        fontSize: '13px',
-        background: '#161b22',
-        border: '1px solid #30363d',
-        borderRadius: '8px',
-        color: '#e6edf3',
-      }}
-    >
+    <div className={styles.container}>
       {/* Avatar */}
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          width: '32px',
-          height: '32px',
-          borderRadius: '50%',
-          backgroundColor: avatarColor,
-          color: '#ffffff',
-          fontWeight: '600',
-          fontSize: '13px',
-          flexShrink: 0,
-        }}
-      >
+      <div className={styles.avatar} style={{ backgroundColor: avatarColor }}>
         {initials}
       </div>
 
       {/* Author info */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
-        <a
-          href={`/about#${authorSlug}`}
-          style={{
-            color: '#58a6ff',
-            textDecoration: 'none',
-            fontWeight: '500',
-          }}
-        >
+      <div className={styles.authorInfo}>
+        <a href={`/about#${authorSlug}`} className={styles.authorLink}>
           {author}
         </a>
-        <span style={{ color: '#484f58' }}>·</span>
-        <span style={{ color: '#8b949e' }}>{role}</span>
+        <span className={styles.separator}>·</span>
+        <span className={styles.role}>{role}</span>
       </div>
 
-      <span style={{ color: '#484f58' }}>·</span>
+      <span className={styles.separator}>·</span>
 
       {/* Published date */}
-      <div style={{ color: '#8b949e', flexShrink: 0 }}>
+      <div className={styles.meta}>
         {formattedPublished}
       </div>
 
       {/* Updated date (if different) */}
       {updatedDate !== publishedDate && (
         <>
-          <span style={{ color: '#484f58' }}>·</span>
-          <div style={{ color: '#8b949e', flexShrink: 0 }}>
+          <span className={styles.separator}>·</span>
+          <div className={styles.meta}>
             Updated {formattedUpdated}
           </div>
         </>
@@ -122,21 +89,18 @@ export default function AuthorAttribution({
       {/* Reading time */}
       {readingTime && (
         <>
-          <span style={{ color: '#484f58' }}>·</span>
-          <div style={{ color: '#8b949e', flexShrink: 0 }}>
+          <span className={styles.separator}>·</span>
+          <div className={styles.meta}>
             {readingTime} min read
           </div>
         </>
       )}
 
       {/* Methodology link — E-E-A-T signal, ramp-to-8 Phase 0d */}
-      <span style={{ color: '#484f58' }}>·</span>
-      <div style={{ color: '#8b949e', flexShrink: 0 }}>
+      <span className={styles.separator}>·</span>
+      <div className={styles.meta}>
         Reviewed against our{' '}
-        <a
-          href="/methodology"
-          style={{ color: '#58a6ff', textDecoration: 'none' }}
-        >
+        <a href="/methodology" className={styles.methodologyLink}>
           methodology
         </a>
       </div>
