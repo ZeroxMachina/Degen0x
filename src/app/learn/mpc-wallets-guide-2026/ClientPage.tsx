@@ -89,7 +89,11 @@ export default function MPCWalletsGuide() {
         dateModified="2026-04-17"
         section="Learn"
       />
-      <Breadcrumb />
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Learn", href: "/learn" },
+        { label: "MPC Wallets Guide 2026" }
+      ]} />
 
       {/* Hero Section */}
       <section style={{

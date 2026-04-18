@@ -314,9 +314,9 @@ export default function WhaleAlertTracker() {
 
   // Calculate stats
   const totalVolume = transactions.reduce((sum, tx) => sum + tx.usdValue, 0);
-  const largestTx = transactions.reduce((max, tx) =>
-    tx.usdValue > max.usdValue ? tx : max
-  );
+  const largestTx = transactions.length > 0
+    ? transactions.reduce((max, tx) => (tx.usdValue > max.usdValue ? tx : max), transactions[0])
+    : { usdValue: 0, token: "ETH" } as Transaction;
   const tokenCounts: Record<string, number> = {};
   transactions.forEach((tx) => {
     tokenCounts[tx.token] = (tokenCounts[tx.token] || 0) + 1;

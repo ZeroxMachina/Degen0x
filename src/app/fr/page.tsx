@@ -133,10 +133,10 @@ const FR_TAX_INFO = [
 ];
 
 const FR_EXCHANGES_TOP = [
-  { name: "Coinbase", note: "Idéal débutants · Conforme AMF", flag: "🇫🇷", rating: "9.4/10" },
-  { name: "Binance",  note: "Plus de volume · Frais ultra-bas",  flag: "🌍", rating: "9.1/10" },
-  { name: "Kraken",   note: "Sécurité maximale · Réputé",        flag: "🔒", rating: "8.9/10" },
-  { name: "Bitpanda", note: "Base européenne · Excellent pour EU", flag: "🇪🇺", rating: "8.7/10" },
+  { name: "Coinbase", note: "Idéal débutants · Conforme AMF", flag: "🇫🇷", rating: "9.4/10", url: "/exchanges/coinbase" },
+  { name: "Binance",  note: "Plus de volume · Frais ultra-bas",  flag: "🌍", rating: "9.1/10", url: "/exchanges/binance" },
+  { name: "Kraken",   note: "Sécurité maximale · Réputé",        flag: "🔒", rating: "8.9/10", url: "/exchanges/kraken" },
+  { name: "Bitpanda", note: "Base européenne · Excellent pour EU", flag: "🇪🇺", rating: "8.7/10", url: "/exchanges/bitpanda" },
 ];
 
 const breadcrumbData = {

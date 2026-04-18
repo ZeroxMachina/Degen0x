@@ -166,7 +166,12 @@ export default function StablecoinComparison() {
 
   return (
     <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
-      <Breadcrumb />
+      <Breadcrumb items={[
+        { label: "Home", href: "/" },
+        { label: "Learn", href: "/learn" },
+        { label: "Stablecoin Comparison" }
+      ]} />
+
 
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Header */}
