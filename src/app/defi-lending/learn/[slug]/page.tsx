@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import LearnPageLayout from "@/components/LearnPage";
 import { pages } from "@/data/pages/defi-lending-learn";
+import AuthorAttribution from '@/components/AuthorAttribution';
 
 interface Props { params: Promise<{ slug: string }>; }
 

@@ -10,6 +10,7 @@ import Link from "next/link";
 import { getAllPosts, getFeaturedPosts, getCategoryMeta, type BlogCategory } from "@/lib/blog";
 import { SITE_NAME, SITE_URL } from "@/lib/constants";
 import AuthoritySources from '@/components/AuthoritySources';
+import AuthorAttribution from '@/components/AuthorAttribution';
 
 import ArticleSchema from "@/components/ArticleSchema";
 
