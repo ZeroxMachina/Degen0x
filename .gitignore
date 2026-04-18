@@ -49,3 +49,4 @@ yarn-error.log*
 # Session temp / auto-memory
 /tmp/
 .auto-memory/
+build.log
