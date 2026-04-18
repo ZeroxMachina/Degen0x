@@ -608,7 +608,7 @@ export default function YieldAggregatorsPage() {
               { title: "Best Stablecoin Yields", href: "/defi-lending/best/stablecoin-yield", desc: "Earn on USDC, USDT, and DAI" },
               { title: "What Is DeFi Lending?", href: "/defi-lending/learn/what-is-defi-lending", desc: "Complete beginner's guide to DeFi" },
             ].map((link) => (
-              <Link href={p.url}
+              <Link href={link.href}
                 key={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover block"
               >

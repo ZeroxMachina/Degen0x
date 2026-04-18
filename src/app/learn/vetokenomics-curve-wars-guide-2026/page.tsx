@@ -1405,7 +1405,7 @@ const VeTokenomicsGuide = () => {
               { href: "/tools/defi-yields", label: "DeFi Yields Tool" },
             ].map((link, i) => (
               <li key={i}>
-                <Link href={item.href}
+                <Link href={link.href}
                   style={{
                     color: "#58a6ff",
                     textDecoration: "none",

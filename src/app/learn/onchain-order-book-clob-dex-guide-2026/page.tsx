@@ -794,10 +794,10 @@ export default function OnchainCLOBDexGuidePage() {
             { href: "/tools/funding-rates", label: "Funding Rates Tracker" },
           ].map((item) => (
             <Link href={item.href}
-              key={link.href}
+              key={item.href}
               style={{ color: "#58a6ff" }}
             >
-              {link.label}
+              {item.label}
             </Link>
           ))}
         </nav>

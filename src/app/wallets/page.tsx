@@ -143,11 +143,11 @@ export default function WalletsHubPage() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {BEST_OF_LINKS.map((item) => (
             <Link href={item.href}
-              key={link.href}
+              key={item.href}
               className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-5 card-hover"
             >
-              <h3 className="font-semibold text-[var(--color-text)] mb-1">{link.title}</h3>
-              <p className="text-sm text-[var(--color-text-secondary)]">{link.description}</p>
+              <h3 className="font-semibold text-[var(--color-text)] mb-1">{item.title}</h3>
+              <p className="text-sm text-[var(--color-text-secondary)]">{item.description}</p>
             </Link>
           ))}
         </div>

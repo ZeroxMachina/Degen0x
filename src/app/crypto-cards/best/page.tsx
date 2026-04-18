@@ -266,7 +266,7 @@ export default function BestCryptoCardsPage() {
               { title: "Best for Beginners", href: "/crypto-cards/best/beginners" },
               { title: "Best Debit Cards", href: "/crypto-cards/best/debit" },
             ].map((link) => (
-              <Link href={card.affiliateUrl}
+              <Link href={link.href}
                 key={link.href}
                 className="rounded-xl border border-[var(--color-border)] bg-[var(--color-bg-card)] p-4 card-hover block"
               >

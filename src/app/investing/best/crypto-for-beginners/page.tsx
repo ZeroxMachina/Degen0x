@@ -782,7 +782,7 @@ export default function BestCryptoForBeginnersPage() {
             { label: "Staking APY Leaderboard", href: "/tools/staking-apy" },
             { label: "Token Screener", href: "/tools/token-screener" },
           ].map((link) => (
-            <Link href={p.whereHref}
+            <Link href={link.href}
               key={link.href}
               style={{
                 background: "rgba(99,102,241,0.12)",

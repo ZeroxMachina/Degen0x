@@ -902,10 +902,10 @@ export default function EthereumL2ComparisonGuidePage() {
             { href: "/tools/bridge-aggregator", label: "Bridge Aggregator Tool" },
           ].map((item) => (
             <Link href={item.href}
-              key={link.href}
+              key={item.href}
               style={{ color: "#58a6ff" }}
             >
-              {link.label}
+              {item.label}
             </Link>
           ))}
         </nav>

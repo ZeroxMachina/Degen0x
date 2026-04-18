@@ -2,6 +2,12 @@
 
 import Breadcrumb from "@/components/Breadcrumb";
 import { useState } from "react";
+import RelatedContent from "@/components/RelatedContent";
+import AutoTOC from "@/components/AutoTOC";
+import ReadingTime from "@/components/ReadingTime";
+import LastUpdated from "@/components/LastUpdated";
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
 
 const breadcrumbs = [
   { label: "Home", href: "/" },

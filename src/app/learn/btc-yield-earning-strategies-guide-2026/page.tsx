@@ -862,10 +862,10 @@ export default function BTCYieldStrategiesGuidePage() {
             { href: "/learn/bitcoin-safe-haven-guide-2026", label: "Bitcoin as a Safe Haven: Geopolitical Hedge Guide" },
           ].map((item) => (
             <Link href={item.href}
-              key={link.href}
+              key={item.href}
               style={{ color: "#58a6ff" }}
             >
-              {link.label}
+              {item.label}
             </Link>
           ))}
         </div>

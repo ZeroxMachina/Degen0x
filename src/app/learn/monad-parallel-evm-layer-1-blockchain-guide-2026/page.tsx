@@ -2,6 +2,13 @@ import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumb from "@/components/Breadcrumb";
 import BackToTop from "@/components/BackToTop";
+import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
+import RelatedContent from '@/components/RelatedContent';
+import AutoTOC from '@/components/AutoTOC';
+import ReadingTime from '@/components/ReadingTime';
+import LastUpdated from '@/components/LastUpdated';
+import ArticleSchema from "@/components/ArticleSchema";
+import AuthoritySources from "@/components/AuthoritySources";
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
