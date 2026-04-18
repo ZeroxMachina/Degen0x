@@ -305,9 +305,9 @@ export default function CryptoOraclesGuidePage() {
           { q: "Which oracle should developers use?", a: "For general DeFi (lending, stablecoins, RWA): Chainlink. For trading-focused apps (perps, options, DEXs on Solana): Pyth. For applications needing provable data sourcing: API3. Many protocols use multiple oracles as fallbacks for maximum security." },
           { q: "What is Oracle Extractable Value (OEV)?", a: "OEV is the value created when oracle price updates trigger on-chain actions like liquidations. Traditionally, MEV bots capture this value. API3's OEV auctions and similar mechanisms let protocols recapture this leaked value — potentially worth billions annually across DeFi." },
         ].map((faq) => (
-          <details key={faq.question} className="glass rounded-lg p-4 mb-3" style={{ border: "1px solid var(--color-border)" }}>
-            <summary className="text-sm font-bold cursor-pointer" style={{ color: "var(--color-text)" }}>{faq.question}</summary>
-            <p className="text-xs mt-2" style={{ color: "var(--color-text-secondary)" }}>{faq.answer}</p>
+          <details key={faq.q} className="glass rounded-lg p-4 mb-3" style={{ border: "1px solid var(--color-border)" }}>
+            <summary className="text-sm font-bold cursor-pointer" style={{ color: "var(--color-text)" }}>{faq.q}</summary>
+            <p className="text-xs mt-2" style={{ color: "var(--color-text-secondary)" }}>{faq.a}</p>
           </details>
         ))}
 
@@ -340,13 +340,13 @@ export default function CryptoOraclesGuidePage() {
       <ArticleStructuredData
         title="Crypto Oracles Explained: Chainlink vs Pyth vs API3 (2026 Guide)"
         description="Understand blockchain oracles and compare Chainlink, Pyth Network, API3, and RedStone. Market share, architecture, and investment considerations."
-        url="https://degen0x.com/learn/crypto-oracles-guide-2026"
+        slug="learn/crypto-oracles-guide-2026"
         datePublished="2026-03-17"
         dateModified="2026-03-17"
         author="degen0x Team"
       />
       <FAQStructuredData
-        faqs={[
+        questions={[
           { question: "What happens if an oracle fails?", answer: "If an oracle delivers incorrect data, it can trigger cascading liquidations, incorrect trade settlements, or protocol insolvency. Most major DeFi protocols use multiple oracle sources as fallbacks." },
           { question: "Is Chainlink overvalued compared to Pyth?", answer: "They serve different markets. Chainlink's $6.9B market cap reflects enterprise partnerships and broad DeFi adoption. Pyth's $266M cap reflects its niche in low-latency trading data." },
           { question: "Can oracles be manipulated?", answer: "Decentralized oracles aggregate data from many independent sources, making manipulation difficult. However, single-source oracles and thin-liquidity assets remain vulnerable." },
