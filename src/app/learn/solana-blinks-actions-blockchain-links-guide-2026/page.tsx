@@ -7,6 +7,7 @@ import ReadingTime from "@/components/ReadingTime";
 import LastUpdated from "@/components/LastUpdated";
 import ArticleSchema from "@/components/ArticleSchema";
 import AuthoritySources from "@/components/AuthoritySources";
+import LiveMiniStat from "@/components/LiveMiniStat";
 
 // ─── SEO Metadata ────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
