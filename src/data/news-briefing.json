@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-20T13:10:00Z",
-  "briefing_id": "briefing-2026-04-20-13",
+  "generated_at": "2026-04-20T14:05:00Z",
+  "briefing_id": "briefing-2026-04-20-14",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-20-13-001",
-      "headline": "DeFi TVL Craters $13.2B in 48 Hours as Kelp Contagion Spreads Beyond Aave",
-      "slug": "defi-tvl-craters-13b-kelp-contagion-spreads",
-      "tldr": "Total value locked across DeFi has plunged by $13.21 billion in two days, with the bleed extending past Aave into lending, restaking, and LRT markets.",
-      "why_it_matters": "Why it matters: Cross-chain restaking was supposed to be DeFi's growth engine in 2026 — this is the first systemic stress test and it's failing live.",
+      "id": "story-2026-04-20-14-001",
+      "headline": "Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",
+      "slug": "vercel-breach-crypto-api-keys",
+      "tldr": "Web infra giant Vercel disclosed a security incident that may have exposed customer API keys, triggering a scramble across crypto teams to rotate credentials.",
+      "why_it_matters": "Why it matters: Vercel underpins a huge share of crypto frontends and analytics dashboards, so a key leak is a supply-chain risk the entire dApp stack has to assume and re-verify.",
       "the_details": [
-        "TVL drop of $13.21B between April 18 and April 20 is the sharpest two-day contraction since the March 2023 banking crisis.",
-        "Aave alone accounts for $8.45B of the outflows, with restaking tokens and cross-chain bridges absorbing the rest.",
-        "Exploiter is still holding ~$97M of rsETH unsold across 20 chains, keeping the overhang live."
+        "Vercel confirmed the breach on April 20, warning customers that API keys may have been exposed and pushing them to rotate.",
+        "Crypto projects began rotating tokens for RPC providers, analytics, and deploy pipelines within hours of disclosure.",
+        "Lands mid-spree: $450M lost across 45 protocols in two weeks, led by Kelp DAO ($292M) and Drift ($285M)."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/20/defi-tvl-drops-more-than-usd13-billion-in-two-days-following-kelp-dao-hack",
-      "category": "defi",
+      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
+      "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-20T12:40:00Z"
+      "timestamp": "2026-04-20T13:40:00Z"
     },
     {
-      "id": "story-2026-04-20-13-002",
-      "headline": "SEC Gives DeFi Interfaces Broker-Dealer Exemption in Major Policy Pivot",
-      "slug": "sec-defi-interface-broker-dealer-exemption",
-      "tldr": "SEC staff said it won't object to software providers operating UIs for crypto asset security trading without registering as broker-dealers.",
-      "why_it_matters": "Why it matters: This is the first explicit green light for DeFi frontends under US securities law — a structural unlock after years of enforcement-first posture.",
+      "id": "story-2026-04-20-14-002",
+      "headline": "BTC Pinned at $75,324 as US-Iran Ceasefire Clock Runs Out Midweek",
+      "slug": "btc-iran-ceasefire-midweek-expiry",
+      "tldr": "Bitcoin hovers just above ETF cost basis while traders brace for the US-Iran ceasefire to lapse by mid-week, the next macro catalyst for risk assets.",
+      "why_it_matters": "Why it matters: CoinShares flags the ~$74K ETF cost basis as the structural line in the sand; losing it turns a macro wobble into a positioning unwind.",
       "the_details": [
-        "Guidance issued April 13, 2026 covers interfaces that let users prepare and submit transactions in crypto asset securities.",
-        "SEC Chair Paul Atkins reiterated on April 16 podcast that crypto is 'really top on our list' for rule clarity.",
-        "Follows March 11 SEC-CFTC MOU committing both agencies to harmonized crypto rulemaking."
+        "BTC trades at $75,324.58 at 9am ET Monday, down $475 from Sunday's print.",
+        "ETH opened at $2,263.49 (-3.7%) before bouncing to $2,307 by 7:35am ET.",
+        "CoinShares ETH analyst Luke Nolan pegs follow-through on BTC holding the ETF cost basis through the ceasefire expiry."
       ],
-      "source": "Sidley Austin",
-      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
-      "category": "regulation",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/20/u-s-iran-ceasefire-ends-tesla-earnings-crypto-week-ahead",
+      "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-20T11:00:00Z"
+      "timestamp": "2026-04-20T13:00:00Z"
     },
     {
-      "id": "story-2026-04-20-13-003",
-      "headline": "Bitcoin Reclaims $75,242 as ETF Bid Absorbs US-Iran Tanker Shock",
-      "slug": "bitcoin-reclaims-75k-etf-bid-iran-tanker",
-      "tldr": "BTC rallied from a weekend low after US forces seized an Iranian cargo ship, with institutional ETF demand cushioning geopolitical risk.",
-      "why_it_matters": "Why it matters: The ETF bid is doing what gold used to — absorbing Middle East risk rather than amplifying it. That's a regime change.",
+      "id": "story-2026-04-20-14-003",
+      "headline": "Bitmine Buys 101,627 ETH Worth $230M, Closes in on 5M ETH Treasury",
+      "slug": "bitmine-eth-treasury-230m",
+      "tldr": "Ethereum treasury firm Bitmine scooped 101,627 ETH in its largest weekly haul of 2026, pushing holdings toward the 5 million ETH threshold.",
+      "why_it_matters": "Why it matters: A corporate treasury buying ETH at scale during a DeFi stress event signals institutional comfort with ETH as a balance-sheet asset, not just a trade.",
       "the_details": [
-        "BTC opened Monday at $73,820, 2.5% below Sunday, then rallied to $75,242 by 7:35am ET.",
-        "ETH tracked similar path: opened at $2,263, up to $2,307 same window.",
-        "US Navy intercepted Iranian cargo ship bound for Strait of Hormuz over weekend."
+        "Purchase value reported at over $230 million across the week.",
+        "Represents Bitmine's largest weekly ETH accumulation of 2026 to date.",
+        "Firm now sits near 5 million ETH, one of the largest non-exchange ETH holders globally."
       ],
       "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-monday-april-20-2026-prices-rising-this-morning-despite-us-iranian-tensions-115955954.html",
-      "category": "bitcoin",
-      "impact": "high",
-      "timestamp": "2026-04-20T11:35:00Z"
+      "category": "ethereum",
+      "impact": "medium",
+      "timestamp": "2026-04-20T12:30:00Z"
     },
     {
-      "id": "story-2026-04-20-13-004",
-      "headline": "Fear & Greed Index Crashes to 27 as Solana Leads Altcoin Rout at -3%",
-      "slug": "fear-greed-27-solana-leads-altcoin-rout",
-      "tldr": "Crypto sentiment hit a three-week low Friday with Fear & Greed at 27, and Solana is leading altcoin losses at -3.06% into Monday.",
-      "why_it_matters": "Why it matters: Sentiment reset below 30 has historically marked local bottoms — but with $195M of live bad debt on Aave, this one has a tail.",
+      "id": "story-2026-04-20-14-004",
+      "headline": "Perp Longs Get Gutted: $306M in Crypto Liquidations, 81% From Bulls",
+      "slug": "306m-liquidations-longs-wiped",
+      "tldr": "Crypto perps saw $306.82M in 24-hour liquidations, with long-biased traders absorbing 81% of the damage amid DeFi contagion and Iran-headline risk.",
+      "why_it_matters": "Why it matters: Liquidation skew this extreme typically flushes leverage and resets funding — a constructive precondition once macro overhang clears.",
       "the_details": [
-        "Fear & Greed Index printed 27 Friday, lowest since March 28.",
-        "SOL trading in tight $80-$84 band, down 3.06% leading altcoin drawdowns.",
-        "DeFi TVL stable at ~$94B across majors despite Kelp fallout; DEX volume $12.3B, off 8%."
+        "Total 24h liquidations: $306.82M across major perpetual venues.",
+        "81% of wipeouts came from long positions, per Blockchain Magazine data.",
+        "Fear & Greed Index dropped to 27 (Fear) as BTC tested $74K support."
       ],
       "source": "Blockchain Magazine",
       "source_url": "https://blockchainmagazine.net/crypto-market-today-2026-04-19/",
       "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-20T09:00:00Z"
+      "timestamp": "2026-04-20T11:00:00Z"
     },
     {
-      "id": "story-2026-04-20-13-005",
-      "headline": "Solana Stablecoin Supply Balloons 15x as $3.8B in Capital Rotates In",
-      "slug": "solana-stablecoin-supply-15x-capital-rotation",
-      "tldr": "Solana's stablecoin supply has grown 15x year-to-date with $3.8B of fresh capital, and monthly DEX volume has now overtaken Ethereum.",
-      "why_it_matters": "Why it matters: Liquidity is voting with its feet — the L1 battle for stablecoin rails may be tipping toward Solana ahead of Firedancer.",
+      "id": "story-2026-04-20-14-005",
+      "headline": "Harvard Lifts BTC ETF Stake 257% as CalPERS Plows $500M Into Bitcoin",
+      "slug": "harvard-calpers-bitcoin-etf-institutional",
+      "tldr": "Harvard's endowment boosted Bitcoin ETF exposure 257% while CalPERS allocated $500M, a stark contrast to retail fear pinned at 27 on the F&G index.",
+      "why_it_matters": "Why it matters: Long-duration pools stepping in during volatility is the 'smart money' footprint that historically precedes bottoming processes, even if timing is messy.",
       "the_details": [
-        "Stablecoin supply on Solana up 15x as of April 16, per on-chain data.",
-        "Solana February DEX volume surpassed Ethereum, a first in the current cycle.",
-        "Tether committed $147.5M to hack recovery after the April 1 Drift exploit drained $285M."
+        "Harvard Management Co. raised BTC ETF holdings by 257% in latest 13F filing.",
+        "CalPERS deployed $500 million into BTC products during Q1 2026.",
+        "Goldman Sachs disclosed $108 million in Solana ETF exposure in the same filing window."
       ],
-      "source": "Crypto.com",
-      "source_url": "https://crypto.com/us/market-updates/best-altcoins-to-watch-in-april-2026",
-      "category": "altcoins",
+      "source": "Blockchain Magazine",
+      "source_url": "https://blockchainmagazine.net/crypto-market-today-2026-04-19/",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-20T08:00:00Z"
+      "timestamp": "2026-04-20T10:00:00Z"
     }
   ]
 }

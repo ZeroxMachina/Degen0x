@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-20-005",
+    "type": "news",
+    "title": "📰 Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",
+    "message": "Web infra giant Vercel disclosed a security incident that may have exposed customer API keys, triggering a scramble across crypto teams to rotate credentials.",
+    "actionUrl": "/news",
+    "date": "2026-04-20"
+  },
+  {
     "id": "feed-2026-04-20-004",
     "type": "news",
     "title": "📰 DeFi TVL Craters $13.2B in 48 Hours as Kelp Contagion Spreads Beyond Aave",
