@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-17T13:35:00Z",
-  "briefing_id": "briefing-2026-04-17-13",
+  "generated_at": "2026-04-20T10:05:15Z",
+  "briefing_id": "briefing-2026-04-20-10",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-17-13-001",
-      "headline": "Grinex Halts Trading After $15M State-Level Attack Drains USDT Reserves",
-      "slug": "grinex-halts-trading-15m-state-level-attack",
-      "tldr": "Sanctioned Russian exchange Grinex suspended trading after attackers moved $15M in USDT onto Tron and Ethereum, blaming a hostile-state operation.",
-      "why_it_matters": "Why it matters: Grinex is widely treated as the post-Garantex reincarnation of Russia's sanctioned rails, so a successful drain signals that even state-aligned off-ramps are losing their operational cover.",
+      "id": "story-2026-04-20-10-001",
+      "headline": "Vercel Breach Leaks Crypto Project API Keys, Orca and Web3 Teams Scramble",
+      "slug": "vercel-breach-crypto-api-keys",
+      "tldr": "Vercel disclosed a security incident exposing customer API keys, forcing crypto teams hosting wallet UIs on the platform to rotate credentials en masse.",
+      "why_it_matters": "Why it matters: Vercel hosts the front-ends of dozens of major DeFi protocols — a single infra provider compromise can translate into coordinated phishing or UI-swap attacks across the stack.",
       "the_details": [
-        "Elliptic traced roughly $15M in USDt leaving Grinex-linked wallets and converting into other assets across Tron and Ethereum soon after the theft.",
-        "Grinex blamed the breach on resources 'available only to entities of hostile states' and paused deposits, withdrawals and trading pending investigation.",
-        "Russian reports peg losses near 1B rubles, with outflows routed into ETH and TRX to complicate on-chain tracing."
+        "Vercel warned customers that API keys and environment variables may have been accessed during the breach window.",
+        "Solana DEX Orca and other Web3 teams publicly confirmed credential rotations within hours of disclosure.",
+        "Incident lands just 24 hours after the $292M Kelp DAO exploit, compounding security pressure on the sector."
       ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/sanctioned-crypto-exchange-grinex-suspends-trading-after-14m-hack/",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
       "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-17T12:40:00Z"
+      "timestamp": "2026-04-20T09:00:00Z"
     },
     {
-      "id": "story-2026-04-17-13-002",
-      "headline": "Drift Relaunches as USDT Perps DEX After $148M Tether-Led Rescue",
-      "slug": "drift-relaunches-usdt-perps-148m-tether-rescue",
-      "tldr": "Solana-based Drift secured $148M from Tether and partners to reopen as a USDT-denominated perps DEX after last month's $285M North Korean exploit.",
-      "why_it_matters": "Why it matters: A Tether-underwritten bailout of a flagship Solana perps venue sets a template for private rescues replacing insurance funds, and locks more DeFi liquidity into USDT's orbit.",
+      "id": "story-2026-04-20-10-002",
+      "headline": "DeFi TVL Bleeds $13.2B in 48 Hours as Aave Sheds $8.45B After Kelp Contagion",
+      "slug": "defi-tvl-13b-wipeout-aave-exodus",
+      "tldr": "DeFi total value locked collapsed $13.2B in two days as Aave depositors fled following attackers' use of stolen rsETH as collateral.",
+      "why_it_matters": "Why it matters: The fastest DeFi deposit flight since Terra shows how one LayerZero-era bridge exploit can cascade into cross-protocol bad debt and force every money market to re-price LRT collateral.",
       "the_details": [
-        "TRM Labs attributed the April 1 Drift exploit to North Korean actors, making it the largest DeFi hack of 2026 and second-largest ever on Solana.",
-        "The $148M package from Tether and partners backstops more than $270M in exploited client assets as Drift pivots to USDT-settled perps.",
-        "Relaunch keeps the venue on Solana, preserving the chain's lead in on-chain perps volume after February's record $650B month."
+        "Aave's TVL dropped from $26.4B on April 18 to roughly $20B by Sunday morning as depositors withdrew.",
+        "AAVE token fell 16% as the DAO works to quantify bad debt from rsETH-collateralized borrows.",
+        "SparkLend, Fluid and Upshift all froze rsETH markets; Fear & Greed Index fell to 23 (Extreme Fear)."
       ],
-      "source": "Crypto.com",
-      "source_url": "https://crypto.com/en/coins-ai/solana/latest-news",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/20/defi-tvl-drops-more-than-usd13-billion-in-two-days-following-kelp-dao-hack",
       "category": "defi",
       "impact": "high",
-      "timestamp": "2026-04-17T11:05:00Z"
+      "timestamp": "2026-04-20T08:00:00Z"
     },
     {
-      "id": "story-2026-04-17-13-003",
-      "headline": "BTC Stalls Below $76K as $450M in Sell Orders Cap Breakout Attempt",
-      "slug": "btc-stalls-76k-450m-sell-orders",
-      "tldr": "Bitcoin opened near $75,150 but ran into $450M of sell-side liquidity overhead as derivatives data flashed caution and liquidations ticked up.",
-      "why_it_matters": "Why it matters: A visible supply wall right at the breakout level tells traders the next leg needs a macro catalyst, not just spot bid — setting up today's Waller speech as a volatility trigger.",
+      "id": "story-2026-04-20-10-003",
+      "headline": "Bitcoin Tests $75K Support as Market Cap Sheds 1.6%, Fear Index Crashes to 27",
+      "slug": "bitcoin-75k-support-fear-27",
+      "tldr": "BTC is pinned near $74.5K as global crypto market cap slips to $2.59T and sentiment flips to fear ahead of a bruising week of contagion headlines.",
+      "why_it_matters": "Why it matters: The $75K line is the pivot between a routine pullback and a trend break — a daily close below it opens a path to $70K and would validate altcoin underperformance.",
       "the_details": [
-        "BTC opened at $75,152 on Friday, 0.5% above Thursday's $74,811, with ETH slipping 0.5% to $2,348.",
-        "Total crypto market cap sits at $2.63T on $120.3B of 24h volume, up 0.6% on the day.",
-        "Fed Governor Christopher Waller speaks on the Economic Outlook at 14:00 ET, the next macro catalyst in front of the $76K level."
+        "BTC traded at $74,547 with $32.4B in 24h volume; ETH held 10.6% dominance as BTC printed 57.4%.",
+        "Fear & Greed Index printed 27 Friday, a three-week low, before deepening to 23 over the weekend.",
+        "Solana led majors lower at -3.06%; CMC Altcoin Season Index sits at 34/100 — firmly Bitcoin Season."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
+      "source": "Blockchain Magazine",
+      "source_url": "https://blockchainmagazine.net/crypto-market-today-2026-04-19/",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-17T13:00:00Z"
+      "timestamp": "2026-04-20T06:00:00Z"
     },
     {
-      "id": "story-2026-04-17-13-004",
-      "headline": "Mercado Libre Shutters Mercado Coin, Ending LatAm's Largest E-Commerce Token",
-      "slug": "mercado-libre-shutters-mercado-coin",
-      "tldr": "From today, Mercado Libre users can no longer buy, sell or earn cashback in Mercado Coin, retiring the biggest homegrown crypto in Latin American commerce.",
-      "why_it_matters": "Why it matters: If the region's dominant e-commerce platform can't make a captive token stick, the 'branded stablecoin for loyalty' thesis takes a real hit just as banks consider their own launches.",
+      "id": "story-2026-04-20-10-004",
+      "headline": "CFTC Names First Five Staff to Innovation Task Force, Crypto Rulebook in Flight",
+      "slug": "cftc-innovation-task-force-staff",
+      "tldr": "The CFTC staffed up its Innovation Task Force with its first five appointees to draft clearer rules for crypto, AI, and prediction markets.",
+      "why_it_matters": "Why it matters: With the SEC-CFTC MOU signed in March and Clarity Act back in the Senate, CFTC's staffing signals a post-turf-war posture — expect harmonized spot-crypto rules within the year.",
       "the_details": [
-        "Mercado Coin cashback, buy and sell functionality is disabled starting April 17 across Mercado Libre's markets.",
-        "The shutdown leaves Mercado Pago's fiat and stablecoin rails as the sole crypto-adjacent consumer product for the group.",
-        "Move follows broader LatAm consolidation around USDT and USDC as default dollar rails over retailer-issued tokens."
+        "Task force was announced April 10 to translate the SEC-CFTC March 11 Memorandum of Understanding into rules.",
+        "Mandate explicitly covers crypto assets, prediction markets, and AI-enabled market products.",
+        "Follows April 13 SEC staff no-action posture on DEX front-end operators as non-broker-dealers."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
-      "category": "adoption",
+      "source": "Analytics Insight",
+      "source_url": "https://www.analyticsinsight.net/news/crypto-news-today-cftc-names-first-innovation-task-force-staff-for-crypto-rules",
+      "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-17T09:30:00Z"
+      "timestamp": "2026-04-20T05:00:00Z"
     },
     {
-      "id": "story-2026-04-17-13-005",
-      "headline": "DeBridge Unlocks $9.2M in DBR, Inflating Circulating Supply by 12.9%",
-      "slug": "debridge-unlocks-92m-dbr",
-      "tldr": "DeBridge releases 12.9% of circulating DBR — about $9.19M at current prices — into the market today, the largest single-event unlock on the calendar.",
-      "why_it_matters": "Why it matters: A double-digit supply jolt on a mid-cap interop token is a live test of how well private OTC desks are absorbing unlocks this cycle, with read-through to LayerZero and Wormhole peers.",
+      "id": "story-2026-04-20-10-005",
+      "headline": "SOON Rips 90% on Upbit Debut, Crosses $100M Cap as Altcoin Green Shoots Emerge",
+      "slug": "soon-upbit-listing-90-percent",
+      "tldr": "Solana-aligned SOON surged nearly 90% in 24 hours after listing on Korea's Upbit, pushing its market cap above $100M amid broader altcoin weakness.",
+      "why_it_matters": "Why it matters: With BTC dominance at 58.5%, a Korean-retail-driven listing pump is one of the few live playbooks still working for altcoins — expect more projects to court Upbit's gatekeeper effect.",
       "the_details": [
-        "DBR unlock size: 12.9% of circulating supply, worth approximately $9.19M at pre-event prices.",
-        "Unlock lands as interop tokens face rising competition from Solana-native bridges and LayerZero V2 integrations.",
-        "Price action into the unlock will set the tone for Q2's unlock schedule across bridge protocols."
+        "SOON market cap crossed $100M as Upbit listing drove Korean-session volume spikes.",
+        "BIO Protocol (+17.5%) and Axelar (+29.1%) also bucked the tape last week despite extreme fear readings.",
+        "Altcoin Season Index at 34/100 shows rotation is idiosyncratic, not broad — liquidity is chasing narratives."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
-      "category": "markets",
+      "source": "Crypto Times",
+      "source_url": "https://www.cryptotimes.io/2026/04/17/altcoin-season-2026-has-started-movr-soon-rosa-ordi-are-pumping-like-crazy/",
+      "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-17T08:00:00Z"
+      "timestamp": "2026-04-19T12:00:00Z"
     }
   ]
 }
