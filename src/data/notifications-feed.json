@@ -1,8 +1,16 @@
 [
   {
+    "id": "feed-2026-04-20-003",
+    "type": "news",
+    "title": "📰 Aave Bleeds $9B in Outflows as Kelp Contagion Rips Through DeFi Lending",
+    "message": "Aave net inflows collapsed by roughly $6.2B (~23%) after the Kelp exploiter used stolen rsETH as collateral to borrow $195M in ETH.",
+    "actionUrl": "/news",
+    "date": "2026-04-20"
+  },
+  {
     "id": "feed-2026-04-20-002",
     "type": "news",
-    "title": "\ud83d\udcf0 SEC Greenlights DEX Frontends, Waives Broker-Dealer Registration for UI Providers",
+    "title": "📰 SEC Greenlights DEX Frontends, Waives Broker-Dealer Registration for UI Providers",
     "message": "SEC Trading and Markets won't object to 'Covered User Interface Providers' operating DEX frontends without broker-dealer registration, clearing a major compliance fog for DeFi apps.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -10,7 +18,7 @@
   {
     "id": "feed-2026-04-20-001",
     "type": "news",
-    "title": "\ud83d\udcf0 Vercel Breach Leaks Crypto Project API Keys, Orca and Web3 Teams Scramble",
+    "title": "📰 Vercel Breach Leaks Crypto Project API Keys, Orca and Web3 Teams Scramble",
     "message": "Vercel disclosed a security incident exposing customer API keys, forcing crypto teams hosting wallet UIs on the platform to rotate credentials en masse.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -18,15 +26,15 @@
   {
     "id": "feed-2026-04-18-001",
     "type": "news",
-    "title": "\ud83d\udcf0 Kelp DAO Bridge Drained for $292M in rsETH, Eclipsing Drift as 2026's Biggest Hack",
-    "message": "An attacker drained 116,500 rsETH \u2014 about $292M and 18% of supply \u2014 from Kelp's LayerZero bridge, making it 2026's largest DeFi exploit.",
+    "title": "📰 Kelp DAO Bridge Drained for $292M in rsETH, Eclipsing Drift as 2026's Biggest Hack",
+    "message": "An attacker drained 116,500 rsETH — about $292M and 18% of supply — from Kelp's LayerZero bridge, making it 2026's largest DeFi exploit.",
     "actionUrl": "/news",
     "date": "2026-04-18"
   },
   {
     "id": "feed-2026-04-17-100",
     "type": "system",
-    "title": "914 New Pages Indexed \u2014 Publish Queue Drained",
+    "title": "914 New Pages Indexed — Publish Queue Drained",
     "message": "The full backlog of built-but-unpromoted pages (914 total) has been promoted to PUBLISHED_PAGES. Site now indexes 1,515 URLs across Learn, Exchanges, Investing, Wallets, DeFi, Cards, NFTs and more.",
     "actionUrl": "/learn",
     "date": "2026-04-17"
@@ -34,7 +42,7 @@
   {
     "id": "feed-2026-04-17-012",
     "type": "news",
-    "title": "\ud83d\udcf0 Grinex Halts Trading After $15M State-Level Attack Drains USDT Reserves",
+    "title": "📰 Grinex Halts Trading After $15M State-Level Attack Drains USDT Reserves",
     "message": "Sanctioned Russian exchange Grinex suspended trading after attackers moved $15M in USDT onto Tron and Ethereum, blaming a hostile-state operation.",
     "actionUrl": "/news",
     "date": "2026-04-17"
@@ -42,7 +50,7 @@
   {
     "id": "feed-2026-04-17-011",
     "type": "news",
-    "title": "\ud83d\udcf0 Charles Schwab Opens Spot BTC and ETH Trading to Retail Clients",
+    "title": "📰 Charles Schwab Opens Spot BTC and ETH Trading to Retail Clients",
     "message": "Schwab rolled out direct spot Bitcoin and Ether trading for retail accounts, with custody in-house and execution routed to Paxos.",
     "actionUrl": "/news",
     "date": "2026-04-17"
@@ -50,7 +58,7 @@
   {
     "id": "feed-2026-04-17-010",
     "type": "news",
-    "title": "\ud83d\udcf0 UK FCA Drops '24-Hour Trap' in Final Crypto Framework",
+    "title": "📰 UK FCA Drops '24-Hour Trap' in Final Crypto Framework",
     "message": "The FCA's final cryptoasset rulebook treats any firm holding client assets for more than 24 hours as a regulated custodian, forcing most UK DEX frontends and fintech wrappers to seek full safeguarding licenses.",
     "actionUrl": "/news",
     "date": "2026-04-17"
