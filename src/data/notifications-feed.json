@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-20-004",
+    "type": "news",
+    "title": "📰 DeFi TVL Craters $13.2B in 48 Hours as Kelp Contagion Spreads Beyond Aave",
+    "message": "Total value locked across DeFi has plunged by $13.21 billion in two days, with the bleed extending past Aave into lending, restaking, and LRT markets.",
+    "actionUrl": "/news",
+    "date": "2026-04-20"
+  },
+  {
     "id": "feed-2026-04-20-003",
     "type": "news",
     "title": "📰 Aave Bleeds $9B in Outflows as Kelp Contagion Rips Through DeFi Lending",

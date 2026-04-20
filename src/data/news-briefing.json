@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-20T12:05:00Z",
-  "briefing_id": "briefing-2026-04-20-12",
+  "generated_at": "2026-04-20T13:10:00Z",
+  "briefing_id": "briefing-2026-04-20-13",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-20-12-001",
-      "headline": "Aave Bleeds $9B in Outflows as Kelp Contagion Rips Through DeFi Lending",
-      "slug": "aave-9b-outflows-kelp-contagion-defi-lending",
-      "tldr": "Aave net inflows collapsed by roughly $6.2B (~23%) after the Kelp exploiter used stolen rsETH as collateral to borrow $195M in ETH.",
-      "why_it_matters": "Why it matters: One cross-chain bridge failure just triggered the biggest confidence shock to on-chain lending since Terra — bad debt at the base layer of DeFi is back on the table.",
+      "id": "story-2026-04-20-13-001",
+      "headline": "DeFi TVL Craters $13.2B in 48 Hours as Kelp Contagion Spreads Beyond Aave",
+      "slug": "defi-tvl-craters-13b-kelp-contagion-spreads",
+      "tldr": "Total value locked across DeFi has plunged by $13.21 billion in two days, with the bleed extending past Aave into lending, restaking, and LRT markets.",
+      "why_it_matters": "Why it matters: Cross-chain restaking was supposed to be DeFi's growth engine in 2026 — this is the first systemic stress test and it's failing live.",
       "the_details": [
-        "Kelp attacker borrowed ~$195M in ETH on Aave against drained rsETH, leaving bad debt stranded on the lending market.",
-        "Aave saw ~$9B in gross outflows and a $6.2B (23%) decline in net inflows in the 24 hours after the exploit.",
-        "Contagion spread beyond Aave as lenders re-price rsETH and other LRT collateral across every major money market."
-      ],
-      "source": "Bloomberg",
-      "source_url": "https://www.bloomberg.com/news/articles/2026-04-20/crypto-hack-sparks-9-billion-outflows-from-biggest-defi-lender",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-20T10:30:00Z"
-    },
-    {
-      "id": "story-2026-04-20-12-002",
-      "headline": "Vercel Breach Sends Crypto Devs Scrambling to Rotate API Keys Site-Wide",
-      "slug": "vercel-breach-crypto-api-key-rotation",
-      "tldr": "Vercel disclosed a security incident that may have exposed customer API keys, forcing crypto projects hosted on the platform to rotate credentials and audit code.",
-      "why_it_matters": "Why it matters: Most front-ends in crypto ride on Vercel — a single infra breach can silently weaponize RPC keys, indexer tokens, and admin panels across hundreds of dapps.",
-      "the_details": [
-        "Vercel confirmed attackers may have accessed environment variables and API keys tied to customer projects.",
-        "Reports peg an associated ransom demand at ~$2M, per CoinCentral coverage of the incident.",
-        "Crypto teams are being told to rotate RPC, Alchemy, Infura, and third-party keys and audit deploys made during the breach window."
+        "TVL drop of $13.21B between April 18 and April 20 is the sharpest two-day contraction since the March 2023 banking crisis.",
+        "Aave alone accounts for $8.45B of the outflows, with restaking tokens and cross-chain bridges absorbing the rest.",
+        "Exploiter is still holding ~$97M of rsETH unsold across 20 chains, keeping the overhang live."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
-      "category": "security",
+      "source_url": "https://www.coindesk.com/markets/2026/04/20/defi-tvl-drops-more-than-usd13-billion-in-two-days-following-kelp-dao-hack",
+      "category": "defi",
       "impact": "high",
-      "timestamp": "2026-04-20T09:15:00Z"
+      "timestamp": "2026-04-20T12:40:00Z"
     },
     {
-      "id": "story-2026-04-20-12-003",
-      "headline": "Crypto Market Cap Slides 1.6% to $2.59T as BTC Drops Under $75K",
-      "slug": "crypto-market-cap-slides-btc-under-75k",
-      "tldr": "Total crypto market cap fell to $2.59T with BTC at $74,547 (-1.41%); fear sentiment is holding as the Kelp and Vercel shocks reprice risk.",
-      "why_it_matters": "Why it matters: A sub-$75K Bitcoin print during a DeFi security cycle is where leveraged longs get flushed — watch funding and basis before calling a bottom.",
+      "id": "story-2026-04-20-13-002",
+      "headline": "SEC Gives DeFi Interfaces Broker-Dealer Exemption in Major Policy Pivot",
+      "slug": "sec-defi-interface-broker-dealer-exemption",
+      "tldr": "SEC staff said it won't object to software providers operating UIs for crypto asset security trading without registering as broker-dealers.",
+      "why_it_matters": "Why it matters: This is the first explicit green light for DeFi frontends under US securities law — a structural unlock after years of enforcement-first posture.",
       "the_details": [
-        "BTC trades at $74,547, down 1.41% on $32.4B of 24h volume; dominance remains elevated at 57.4%.",
-        "ETH holds ~10.6% dominance; total 24h spot volume across crypto printed $116.82B.",
-        "Polkadot and XRP Ledger ecosystem tokens led the day's gainers against a broadly red tape."
+        "Guidance issued April 13, 2026 covers interfaces that let users prepare and submit transactions in crypto asset securities.",
+        "SEC Chair Paul Atkins reiterated on April 16 podcast that crypto is 'really top on our list' for rule clarity.",
+        "Follows March 11 SEC-CFTC MOU committing both agencies to harmonized crypto rulemaking."
       ],
-      "source": "CoinGabbar",
-      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/latest-crypto-market-news-april-20-btc-eth-defi-stablecoin-dips",
+      "source": "Sidley Austin",
+      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-20T11:00:00Z"
+    },
+    {
+      "id": "story-2026-04-20-13-003",
+      "headline": "Bitcoin Reclaims $75,242 as ETF Bid Absorbs US-Iran Tanker Shock",
+      "slug": "bitcoin-reclaims-75k-etf-bid-iran-tanker",
+      "tldr": "BTC rallied from a weekend low after US forces seized an Iranian cargo ship, with institutional ETF demand cushioning geopolitical risk.",
+      "why_it_matters": "Why it matters: The ETF bid is doing what gold used to — absorbing Middle East risk rather than amplifying it. That's a regime change.",
+      "the_details": [
+        "BTC opened Monday at $73,820, 2.5% below Sunday, then rallied to $75,242 by 7:35am ET.",
+        "ETH tracked similar path: opened at $2,263, up to $2,307 same window.",
+        "US Navy intercepted Iranian cargo ship bound for Strait of Hormuz over weekend."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-monday-april-20-2026-prices-rising-this-morning-despite-us-iranian-tensions-115955954.html",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-20T11:35:00Z"
+    },
+    {
+      "id": "story-2026-04-20-13-004",
+      "headline": "Fear & Greed Index Crashes to 27 as Solana Leads Altcoin Rout at -3%",
+      "slug": "fear-greed-27-solana-leads-altcoin-rout",
+      "tldr": "Crypto sentiment hit a three-week low Friday with Fear & Greed at 27, and Solana is leading altcoin losses at -3.06% into Monday.",
+      "why_it_matters": "Why it matters: Sentiment reset below 30 has historically marked local bottoms — but with $195M of live bad debt on Aave, this one has a tail.",
+      "the_details": [
+        "Fear & Greed Index printed 27 Friday, lowest since March 28.",
+        "SOL trading in tight $80-$84 band, down 3.06% leading altcoin drawdowns.",
+        "DeFi TVL stable at ~$94B across majors despite Kelp fallout; DEX volume $12.3B, off 8%."
+      ],
+      "source": "Blockchain Magazine",
+      "source_url": "https://blockchainmagazine.net/crypto-market-today-2026-04-19/",
       "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-20T08:00:00Z"
+      "timestamp": "2026-04-20T09:00:00Z"
     },
     {
-      "id": "story-2026-04-20-12-004",
-      "headline": "Crypto Billionaire Offers Direct Talks to Suspected NK-Linked Kelp Hacker",
-      "slug": "crypto-billionaire-offers-talks-kelp-hacker",
-      "tldr": "A prominent crypto billionaire publicly offered to negotiate directly with the North Korea-linked attacker behind the $290M Kelp DAO exploit to recover stranded rsETH.",
-      "why_it_matters": "Why it matters: Open negotiation with a sanctioned state actor is a legal minefield — OFAC exposure could reach anyone touching whitehat bounty flows.",
+      "id": "story-2026-04-20-13-005",
+      "headline": "Solana Stablecoin Supply Balloons 15x as $3.8B in Capital Rotates In",
+      "slug": "solana-stablecoin-supply-15x-capital-rotation",
+      "tldr": "Solana's stablecoin supply has grown 15x year-to-date with $3.8B of fresh capital, and monthly DEX volume has now overtaken Ethereum.",
+      "why_it_matters": "Why it matters: Liquidity is voting with its feet — the L1 battle for stablecoin rails may be tipping toward Solana ahead of Firedancer.",
       "the_details": [
-        "The billionaire proposed direct talks after the Kelp attacker drained 116,500 rsETH across 20 chains via a LayerZero bridge flaw.",
-        "Researchers link the exploit to the same DPRK-affiliated cluster tied to April's $285M Drift attack.",
-        "Any ransom or bounty routed to sanctioned addresses risks OFAC penalties for intermediaries, including bridges and mixers."
+        "Stablecoin supply on Solana up 15x as of April 16, per on-chain data.",
+        "Solana February DEX volume surpassed Ethereum, a first in the current cycle.",
+        "Tether committed $147.5M to hack recovery after the April 1 Drift exploit drained $285M."
       ],
-      "source": "Benzinga",
-      "source_url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51905163/crypto-billionaire-offers-talks-north-korea-linked-hacker-290m-defi-exploit",
-      "category": "security",
-      "impact": "medium",
-      "timestamp": "2026-04-20T07:45:00Z"
-    },
-    {
-      "id": "story-2026-04-20-12-005",
-      "headline": "BIO Protocol Rips 48%, DeXe Adds 22% as Altcoin Pockets Defy Extreme Fear",
-      "slug": "bio-protocol-dexe-altcoin-pockets-extreme-fear",
-      "tldr": "BIO Protocol jumped 48.56% and DeXe climbed 22% to $12.19 even as the CMC Altcoin Season Index sits at 34/100 in deep Bitcoin Season.",
-      "why_it_matters": "Why it matters: Narrative rotations are still paying in Extreme Fear — DeSci and governance infra tokens are getting bid while the broader tape bleeds.",
-      "the_details": [
-        "BIO Protocol topped Upbit volume charts on April 16 with a 48.56% single-day ramp.",
-        "DeXe (DEXE) broke $12.19 on April 15, now +386% since February 2026.",
-        "Altcoin Season Index at 34/100; BTC dominance near 58.5% keeps most rotations short and sharp."
-      ],
-      "source": "Spoted Crypto",
-      "source_url": "https://www.spotedcrypto.com/top-5-altcoins-april-2026-extreme-fear/",
+      "source": "Crypto.com",
+      "source_url": "https://crypto.com/us/market-updates/best-altcoins-to-watch-in-april-2026",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-20T06:00:00Z"
+      "timestamp": "2026-04-20T08:00:00Z"
     }
   ]
 }
