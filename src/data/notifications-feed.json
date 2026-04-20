@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-20-007",
+    "type": "news",
+    "title": "📰 Vercel Breach Sends Crypto Devs Racing to Rotate API Keys Across Live Apps",
+    "message": "A security incident at hosting provider Vercel may have exposed customer API keys, forcing crypto teams to rotate credentials and audit code paths in production.",
+    "actionUrl": "/news",
+    "date": "2026-04-20"
+  },
+  {
     "id": "feed-2026-04-20-006",
     "type": "news",
     "title": "📰 Aave Stares Down $195M Bad Debt After Kelp Hacker Borrows Against Stolen rsETH",
