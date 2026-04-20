@@ -1,2 +1,5 @@
 timestamp,pages_shipped,commits,deploy_status,news_freshness,open_incidents,priority_for_next_hour
 2026-04-17T07:30Z,0,1,skipped-prior-cycle,green-29min,1-uncommitted-wip-open,verify-vercel-build-of-9b63adb7-and-triage-790-file-wip
+2026-04-18T21:46Z,0,0,skipped-no-runway,red-32h-stale,2-stale-data-feeds-and-735-wip,restart-news-briefing-and-notifications-feed-generators
+2026-04-18T22:00Z,0,0,skipped-no-runway,red-33h-stale,3-stale-data-feeds-open-and-740wip,restart-news-and-notifications-generators-then-queue-content
+2026-04-20T09:54Z,0,0,skipped-pipeline-dark-36h,red-36h-stale,5-scheduler-blackout-and-745wip-and-branch-diverged,root-cause-scheduler-blackout-and-restart-news-briefing-generator
