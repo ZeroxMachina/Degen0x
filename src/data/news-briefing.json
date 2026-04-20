@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-20T10:05:15Z",
-  "briefing_id": "briefing-2026-04-20-10",
+  "generated_at": "2026-04-20T11:10:00Z",
+  "briefing_id": "briefing-2026-04-20-11",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-20-10-001",
-      "headline": "Vercel Breach Leaks Crypto Project API Keys, Orca and Web3 Teams Scramble",
-      "slug": "vercel-breach-crypto-api-keys",
-      "tldr": "Vercel disclosed a security incident exposing customer API keys, forcing crypto teams hosting wallet UIs on the platform to rotate credentials en masse.",
-      "why_it_matters": "Why it matters: Vercel hosts the front-ends of dozens of major DeFi protocols — a single infra provider compromise can translate into coordinated phishing or UI-swap attacks across the stack.",
+      "id": "story-2026-04-20-11-001",
+      "headline": "SEC Greenlights DEX Frontends, Waives Broker-Dealer Registration for UI Providers",
+      "slug": "sec-greenlights-dex-frontends-broker-dealer-exemption",
+      "tldr": "SEC Trading and Markets won't object to 'Covered User Interface Providers' operating DEX frontends without broker-dealer registration, clearing a major compliance fog for DeFi apps.",
+      "why_it_matters": "Why it matters: The guidance effectively legalizes US-facing DeFi frontends overnight, unwinding years of Uniswap-era enforcement risk and pulling builders back onshore.",
       "the_details": [
-        "Vercel warned customers that API keys and environment variables may have been accessed during the breach window.",
-        "Solana DEX Orca and other Web3 teams publicly confirmed credential rotations within hours of disclosure.",
-        "Incident lands just 24 hours after the $292M Kelp DAO exploit, compounding security pressure on the sector."
+        "SEC Division of Trading and Markets issued the no-action statement on April 13, 2026, contingent on conditions around custody and order handling.",
+        "Covers interfaces that help users prepare and submit transactions in crypto asset securities — the exact bucket DeFi aggregators fall into.",
+        "Part of Chair Paul Atkins' broader crypto push; he named digital assets a top agency priority on the April 16 Material Matters podcast."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
+      "source": "Sidley Austin",
+      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-13T17:00:00Z"
+    },
+    {
+      "id": "story-2026-04-20-11-002",
+      "headline": "North Korea Tied to Drift's $285M Hack; 12+ Protocols Exploited in Copycat Wave",
+      "slug": "north-korea-drift-285m-hack-copycat-wave",
+      "tldr": "Investigators link April 1's $285M Drift Protocol exploit to North Korean actors using pre-signed authorizations, with CoW Swap, Zerion, Rhea and Silo hit in the weeks since.",
+      "why_it_matters": "Why it matters: Social-engineered key compromises — not smart-contract bugs — are now the dominant attack vector, meaning audits alone won't protect user funds.",
+      "the_details": [
+        "Drift lost ~$285M on April 1 via hidden pre-signed authorizations planted through a long-running social engineering campaign.",
+        "CoW Swap lost $1.2M to a domain hijack on April 14; Grinex exchange drained of ~$13.74M USDT on April 15.",
+        "DPRK-linked crews have now accounted for the two largest US-facing crypto incidents of 2026 when combined with Kelp DAO aftermath."
+      ],
+      "source": "CCN",
+      "source_url": "https://www.ccn.com/news/crypto/drift-protocol-285m-biggest-hack-2026-april-fools-day/",
       "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-20T09:00:00Z"
+      "timestamp": "2026-04-19T14:00:00Z"
     },
     {
-      "id": "story-2026-04-20-10-002",
-      "headline": "DeFi TVL Bleeds $13.2B in 48 Hours as Aave Sheds $8.45B After Kelp Contagion",
-      "slug": "defi-tvl-13b-wipeout-aave-exodus",
-      "tldr": "DeFi total value locked collapsed $13.2B in two days as Aave depositors fled following attackers' use of stolen rsETH as collateral.",
-      "why_it_matters": "Why it matters: The fastest DeFi deposit flight since Terra shows how one LayerZero-era bridge exploit can cascade into cross-protocol bad debt and force every money market to re-price LRT collateral.",
+      "id": "story-2026-04-20-11-003",
+      "headline": "Clarity Act Returns to US Senate This Week as Crypto Market Structure Push Intensifies",
+      "slug": "clarity-act-returns-us-senate-market-structure",
+      "tldr": "The Digital Asset Market Clarity Act is back on the Senate floor this week, alongside Q1 bank earnings that will test institutional crypto exposure.",
+      "why_it_matters": "Why it matters: Clarity defines the SEC-CFTC jurisdictional split and is the last legislative piece before US-listed tokens can trade as digital commodities without registration.",
       "the_details": [
-        "Aave's TVL dropped from $26.4B on April 18 to roughly $20B by Sunday morning as depositors withdrew.",
-        "AAVE token fell 16% as the DAO works to quantify bad debt from rsETH-collateralized borrows.",
-        "SparkLend, Fluid and Upshift all froze rsETH markets; Fear & Greed Index fell to 23 (Extreme Fear)."
+        "Builds on the March 11 SEC-CFTC MOU signed by Chairs Atkins and Selig coordinating on crypto oversight.",
+        "March 17 joint interpretation already carved out digital commodities, collectibles, tools and stablecoins from securities treatment.",
+        "Consensus Miami Policy Summit (April 22) will preview vote-count politics with Hill staff on panel."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/20/defi-tvl-drops-more-than-usd13-billion-in-two-days-following-kelp-dao-hack",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-20T08:00:00Z"
-    },
-    {
-      "id": "story-2026-04-20-10-003",
-      "headline": "Bitcoin Tests $75K Support as Market Cap Sheds 1.6%, Fear Index Crashes to 27",
-      "slug": "bitcoin-75k-support-fear-27",
-      "tldr": "BTC is pinned near $74.5K as global crypto market cap slips to $2.59T and sentiment flips to fear ahead of a bruising week of contagion headlines.",
-      "why_it_matters": "Why it matters: The $75K line is the pivot between a routine pullback and a trend break — a daily close below it opens a path to $70K and would validate altcoin underperformance.",
-      "the_details": [
-        "BTC traded at $74,547 with $32.4B in 24h volume; ETH held 10.6% dominance as BTC printed 57.4%.",
-        "Fear & Greed Index printed 27 Friday, a three-week low, before deepening to 23 over the weekend.",
-        "Solana led majors lower at -3.06%; CMC Altcoin Season Index sits at 34/100 — firmly Bitcoin Season."
-      ],
-      "source": "Blockchain Magazine",
-      "source_url": "https://blockchainmagazine.net/crypto-market-today-2026-04-19/",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-20T06:00:00Z"
-    },
-    {
-      "id": "story-2026-04-20-10-004",
-      "headline": "CFTC Names First Five Staff to Innovation Task Force, Crypto Rulebook in Flight",
-      "slug": "cftc-innovation-task-force-staff",
-      "tldr": "The CFTC staffed up its Innovation Task Force with its first five appointees to draft clearer rules for crypto, AI, and prediction markets.",
-      "why_it_matters": "Why it matters: With the SEC-CFTC MOU signed in March and Clarity Act back in the Senate, CFTC's staffing signals a post-turf-war posture — expect harmonized spot-crypto rules within the year.",
-      "the_details": [
-        "Task force was announced April 10 to translate the SEC-CFTC March 11 Memorandum of Understanding into rules.",
-        "Mandate explicitly covers crypto assets, prediction markets, and AI-enabled market products.",
-        "Follows April 13 SEC staff no-action posture on DEX front-end operators as non-broker-dealers."
-      ],
-      "source": "Analytics Insight",
-      "source_url": "https://www.analyticsinsight.net/news/crypto-news-today-cftc-names-first-innovation-task-force-staff-for-crypto-rules",
+      "source_url": "https://www.coindesk.com/markets/2026/04/13/clarity-act-returns-to-u-s-senate-bank-earnings-crypto-week-ahead",
       "category": "regulation",
-      "impact": "medium",
-      "timestamp": "2026-04-20T05:00:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-13T12:00:00Z"
     },
     {
-      "id": "story-2026-04-20-10-005",
-      "headline": "SOON Rips 90% on Upbit Debut, Crosses $100M Cap as Altcoin Green Shoots Emerge",
-      "slug": "soon-upbit-listing-90-percent",
-      "tldr": "Solana-aligned SOON surged nearly 90% in 24 hours after listing on Korea's Upbit, pushing its market cap above $100M amid broader altcoin weakness.",
-      "why_it_matters": "Why it matters: With BTC dominance at 58.5%, a Korean-retail-driven listing pump is one of the few live playbooks still working for altcoins — expect more projects to court Upbit's gatekeeper effect.",
+      "id": "story-2026-04-20-11-004",
+      "headline": "Kraken Parent Payward Acquires Bitnomial, Bolts CFTC-Regulated Derivatives Onto Exchange",
+      "slug": "kraken-payward-acquires-bitnomial-derivatives",
+      "tldr": "Payward, Kraken's parent, is acquiring CFTC-regulated derivatives exchange Bitnomial, giving it a direct path to futures and options for US customers.",
+      "why_it_matters": "Why it matters: Kraken now has a fully regulated US derivatives stack pre-IPO, closing the gap with Coinbase's Deribit deal and setting up a two-horse race for retail perps.",
       "the_details": [
-        "SOON market cap crossed $100M as Upbit listing drove Korean-session volume spikes.",
-        "BIO Protocol (+17.5%) and Axelar (+29.1%) also bucked the tape last week despite extreme fear readings.",
-        "Altcoin Season Index at 34/100 shows rotation is idiosyncratic, not broad — liquidity is chasing narratives."
+        "Bitnomial operates as a CFTC-designated contract market, previously best known for SOL and XRP futures listings.",
+        "Deal lands as Kraken preps for a 2026 public listing and needs diversified revenue beyond spot trading.",
+        "Completes a post-Drift shift: on-exchange derivatives gain share as traders flee perp-DEX counterparty risk."
+      ],
+      "source": "Investing News Network",
+      "source_url": "https://investingnews.com/cryptocurrency-market-recap/",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-18T15:00:00Z"
+    },
+    {
+      "id": "story-2026-04-20-11-005",
+      "headline": "Axelar Pumps 29%, BIO Protocol 17.5% as Altcoin Rotation Bucks Fear-Mode Market",
+      "slug": "axelar-bio-protocol-altcoin-rotation-fear-mode",
+      "tldr": "Axelar jumped 29.14% and BIO Protocol 17.52% mid-April even as the Fear & Greed Index sat at 27 and BTC dominance held near 58.5%.",
+      "why_it_matters": "Why it matters: Selective altcoin bids during extreme fear historically mark rotation lows — capital is hunting cross-chain infra and DeSci narratives while majors consolidate.",
+      "the_details": [
+        "CMC Altcoin Season Index reads 34/100 — still Bitcoin Season but climbing off cycle lows.",
+        "Polkadot and XRP Ledger Ecosystem were the top 24h gainers as total market cap sits at $2.59T.",
+        "Bitcoin testing $75K support; Solana the laggard at -3.06% over 24h on thin $97.6B volume."
       ],
       "source": "Crypto Times",
       "source_url": "https://www.cryptotimes.io/2026/04/17/altcoin-season-2026-has-started-movr-soon-rosa-ordi-are-pumping-like-crazy/",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-19T12:00:00Z"
+      "timestamp": "2026-04-17T18:00:00Z"
     }
   ]
 }
