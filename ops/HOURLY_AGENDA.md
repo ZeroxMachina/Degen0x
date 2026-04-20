@@ -1,44 +1,45 @@
 # degen0x · Hourly Ops Standup
 
-**Timestamp:** 2026-04-20T11:14Z
-**Cycle:** Hour 11 UTC
+**Timestamp:** 2026-04-20T12:14Z
+**Cycle:** Hour 12 UTC
 **Runner:** `degen-morning-standup` scheduled task (Claude Opus 4.7)
-**Latest commit SHA (local master):** `a60ae27d` — *ops: Hour 10 UTC standup — ledger-lie found, local runner diverged +6/−53*
-**Latest commit SHA (origin/main):** `16fd2a10` — *news: hourly briefing briefing-2026-04-20-11*
+**Latest commit SHA (local master):** `ee56b68e` — *ops: Hour 11 UTC standup — reconcile still blocked on Jefe go/no-go*
+**Latest commit SHA (origin/main):** `6358a31c` — *news: hourly briefing briefing-2026-04-20-12*
 
-> **Hour 11 reads almost identically to Hour 10. That itself is the headline.** The Hour 10 standup committed locally (good — the lock dance worked once) but the **Hour 10 reconciliation plan did not execute**. Two `deploys.log` entries at 10:58Z and 10:59Z both filed SKIPPED with "branch-diverged-no-push-path" as the reason. So for the second hour running, the top priority is the same: reconcile the branch and root-cause the EPERM on `.git/index.lock`. Per guardrail ("never repeat last hour's agenda verbatim — if nothing changed, say so and ask why"): **nothing structural changed, and the answer to "why" is that the rebase needs a human go/no-go on reset-vs-rebase that was explicitly flagged for Jefe in Hour 10 and still hasn't been answered.** This agenda escalates that ask to the top of the file.
+> **Hour 12 differs from Hour 11 in one material way: design-polish actually delivered.** The 54-commit origin-delta review exists (`ops/design/2026-04-20T11-14Z-origin-delta-review.md`, 13:32 local), news-briefing byte-equality is **confirmed PASS**, and the conflict set is pinned to exactly **3 files** (`AuthorAttribution.tsx`, `AuthorAttribution.module.css`, `RelatedContent.module.css`). The review explicitly recommends **Option (a): hard-reset local master to origin/main + cherry-pick `98771ac7` only.** Risk rated LOW. **The Jefe ask is now a shovel-ready one-character decision.** Yet Hour 11's other deliverables — the jefe-ask doc, the EPERM-third-hour incident, the community drafts — **none were filed.** Carry-forward hours = 3. This hour's job is to stop queueing plans and actually file the ask so Hour 13 can execute.
 
 ---
 
 ## 🚨 Incidents / Overrides
 
-- **P0 (carry-forward, third hour open) — `.git/index.lock` EPERM.** Lock is back again at 11:14Z (0-byte, permission denied to unlink). Every writing task on this runner must continue the `mv .git/index.lock .git/index.lock.stale.$$` dance. Root cause on the filesystem vs. git race is still **uninvestigated**. Promoting this out of "annoyance" into a real incident ticket: **file `ops/incidents/2026-04-20T11-14Z-index-lock-eperm-third-hour.md` with reproduction steps.**
-- **P0 (carry-forward) — BRANCH DIVERGENCE WIDENED AGAIN.** Was +6/−53 at Hour 10, now **+7/−54.** Local added `a60ae27d` (Hour 10 standup), origin/main added `16fd2a10` (briefing-11). The gap grows by ≥1 every hour we don't reconcile.
-- **P0 (new) — RECONCILIATION PLAN STALLED.** Hour 10 assigned build-cycle to run the cherry-pick / reset on `ops/incidents/2026-04-20T10-14Z-branch-reconcile-plan.md` and tag Jefe. The deploys.log shows two SKIPPED cycles since with the same "branch-diverged-no-push-path" reason and no mention of the reconcile-plan file. **Need confirmation the plan doc was even written, and Jefe's go/no-go on reset-vs-rebase.**
-- **P1 — SSR BURST AUDIT NOT FILED.** Hour 10 assigned design-polish the read-only audit of origin's 15+ `fix(ssr): ...` commits (output at `ops/design/2026-04-20T10-14Z-ssr-burst-review.md`). Origin added more SSR-adjacent commits since (`c3a1542b`, `9c3338af`, `9135d52e`, `8d545a63`, `b259cf2d` all in the last-day window). **Audit is stale-before-delivery; widen scope to the full 54-commit delta and re-file.**
-- **P1 — 746 uncommitted files** (up 1 from Hour 10's 745; only `ops/hourly-log.csv` + `ops/deploys.log` churning each cycle). Same modified set as Hour 10: `src/data/dapps.ts`, `src/data/page-manifest.json`, `src/data/news-briefing.json`, `src/data/notifications-feed.json`.
-- **P1 — SEO score FLAT at 6.91 for the third day.** `ops/seo/2026-04-20.md` ran this morning, repro'd the same failure profile (author 67.3%, related 44.9%, methodology 10.0%, sitemap 8d stale, 688 low-linkers). Recovery codemods from 2026-04-18 still have **zero executions.**
-- **P2 — corrupt tag refs still present** (`auth-probe-{1776425042,1776425538,1776425736}`). Fetch returns silently; can't confirm green.
-- **MITIGANT — data pipeline is actually healthy.** News-briefing regenerated locally at 11:10Z (`briefing-2026-04-20-11`, 4min old) and origin/main has the matching `briefing-2026-04-20-11` at `16fd2a10`. Notifications-feed at 11:08Z. The SEO-manager task ran and wrote `ops/seo/2026-04-20.md`. **The scheduled-task fabric itself is fine. It's only the git/commit/push path from this runner that is broken.**
+- **P0 (carry-forward, fourth hour open) — JEFE ASK NOT FILED.** Hour 10 called for it, Hour 11 called for it, design-polish has now prepared all the input data and made a clear recommendation. **Blocker is no longer information; it is the act of filing.** File `ops/incidents/2026-04-20T12-14Z-jefe-ask-reset-vs-rebase.md` this cycle, **no further audits, no further "let's confirm one more thing."**
+- **P0 (carry-forward) — BRANCH DIVERGENCE +8/−55** (was +7/−54 Hour 11, +6/−53 Hour 10). Mechanical +1/−1 per hour: we add a standup commit locally, origin/main adds a briefing. Trend will continue until reconciled.
+- **P1 (downgraded from P0) — `.git/index.lock` EPERM.** Lock is **absent right now** (12:14Z check — `ls .git/index.lock` → ENOENT). Hour 11 standup (`ee56b68e`) committed cleanly, so the lock-dance has now worked **twice in a row** (Hour 10 → `a60ae27d`, Hour 11 → `ee56b68e`). Parallel runner's deploys.log entry at 12:00:44Z explicitly notes *"cleared 2 stale index.lock files (11:55, 13:59) via mv trick"* — the workaround is stable. **Incident is no longer bleeding; downgrading until it reappears mid-commit.** Third-hour EPERM incident doc can ship this hour but is no longer rate-limiting.
+- **P1 — SEO score FLAT at 6.91 for 3rd day.** `ops/seo/2026-04-20.md` (12:06Z) repeats the same failure profile: author 67.3%, related 44.9%, methodology 10.0%, sitemap **8d stale and widening**. Recovery codemods from 2026-04-18 have zero executions — blocked by the same reconciliation gate.
+- **P1 — PARALLEL RUNNER DUAL-LEDGER CONFIRMED.** deploys.log 12:00:44Z shows `HEAD=9083cb17` from a runner that isn't us (our local HEAD is `ee56b68e`). Quote: *"local main 35 commits BEHIND origin/main, fast-forwardable but sandbox unlink-blocked on working-tree updates — merge --ff-only aborted mid-checkout."* There are now **at least three git histories in play**: origin/main, this runner (+8/−55), and the parallel runner (+?/−35, fast-forwardable). The Jefe-ask doc must ask *which runner owns main*.
+- **P2 — 746 uncommitted files** (flat vs. Hour 11). Four of them are the data files that churn every cycle (`news-briefing`, `notifications-feed`, `dapps.ts`, `page-manifest.json`) + the two ops logs. The other 740 are pre-existing WIP from the 2026-04-13 audit drops — not in scope.
+- **P2 — corrupt tag refs still present** (`auth-probe-{1776425042,1776425538,1776425736}`). Untouched since Hour 9. Not urgent.
+- **MITIGANT — prod is healthy.** Origin/main `6358a31c` = `briefing-2026-04-20-12` shipped at 12:04Z (10min old). News-briefing and notifications-feed on local match origin byte-for-byte this hour. Vercel serves origin/main, not our local — **no customer-facing degradation.**
 
 ---
 
-## What shipped last hour (Hour 10 UTC, 10:14Z → 11:14Z)
+## What shipped last hour (Hour 11 UTC, 11:14Z → 12:14Z)
 
-- `a60ae27d` committed locally at ~10:30Z — Hour 10 standup doc. Second commit on this runner in 36+h. Lock-dance worked once.
-- `16fd2a10` landed on origin/main (~11:00Z) — `briefing-2026-04-20-11`. Parallel runner still the only path actually shipping to prod.
-- Local `src/data/news-briefing.json` regenerated at 11:10Z with matching `briefing-2026-04-20-11` — **local and origin briefing IDs agree this hour** (unlike Hour 10 where they diverged). Worth confirming content-equality byte-by-byte before declaring the divergence healed.
-- Local `src/data/notifications-feed.json` regenerated at 11:08Z. Uncommitted.
-- `ops/seo/2026-04-20.md` daily brief wrote (SEO score 6.91, flat). Uncommitted.
-- **Nothing else.** Hour 10 reconciliation, SSR-burst audit, internal-link prep — none executed. Two SKIPPED deploy cycles (10:58Z, 10:59Z) in between.
+- `ee56b68e` committed locally (~11:14Z) — Hour 11 standup doc. **Lock-dance worked a second time** — no longer a fluke.
+- `6358a31c` landed on origin/main (~12:04Z) — `briefing-2026-04-20-12`. Parallel runner still the sole path to prod.
+- `ops/design/2026-04-20T11-14Z-origin-delta-review.md` written at 13:32 local (~11:32Z) — **design-polish delivered the full 54-commit audit** with explicit reset-vs-rebase recommendation (Option a, LOW risk). This is the input data Hour 11 priority #1 needed.
+- `ops/seo/2026-04-20.md` regenerated at 14:06 local (~12:06Z) — score flat at 6.91, same failure profile (expected, no codemod has run).
+- Local `src/data/news-briefing.json` regenerated at ~12:04Z with `briefing-2026-04-20-12` — **IDs match origin this hour too** (two hours in a row of clean generator determinism).
+- Local `src/data/notifications-feed.json` regenerated ~12:04Z.
+- **NOT shipped (carry-forward):** jefe-ask doc, reconcile-plan doc, EPERM-third-hour incident, community drafts, SEO codemod announcement drafts. Four Hour 11 priorities did not execute.
 
 ## What's blocking / at risk
 
-- **Jefe go/no-go on reset-vs-rebase is the single rate-limiter.** Until that call is made, build-cycle has nothing safe to commit and design-polish has nothing safe to land. We can keep generating audit reports and internal-link scans (read-only), but the actual *fix* path is gated on one human decision.
-- **The push path is still closed** even assuming perfect reconciliation — the EPERM on `.git/index.lock` means any `git commit` sequence that holds the lock for more than a split second will fail on lock-release. We've seen the lock be gone then present again within the same hour. Before we commit anything important, we need to understand *why* the filesystem is rejecting the unlink — it may not matter for solo-file writes, but a rebase of 54 commits will absolutely spin on it.
-- **SEO recovery slip is now 3 full days.** Every day the three codemods don't run, 914 promoted pages sit at partial E-E-A-T. GSC data is still pending OAuth (blocker from 2026-04-14, now 6 days old).
-- **We still don't know who the parallel runner is.** 54 commits on origin/main, most `fix(ssr): ...`, landed without any ledger we control. If they land something that conflicts with our in-flight design polish (`98771ac7`), we'll find out by breaking prod, not by reviewing a diff.
-- **The `.git/index.lock` reappearing without explanation is suspicious.** Either a background process on this runner is actively touching the index (in which case there's a daemon we don't know about), or the filesystem is buggy. Both warrant investigation before we trust any git operation here.
+- **The human decision is now the only gate.** Every piece of input data Jefe would want is in hand: conflict file list (3), risk rating (LOW), supersession analysis per local-only commit, news-briefing equality check (PASS), parallel-runner evidence. There is nothing more to discover before asking.
+- **Carry-forward debt is compounding.** Four hours of queued work sits in `ops/incidents/` and `ops/community/` as files-that-should-exist-but-don't. Each hour we add another layer of "carry-forward from last hour" language that makes the ledger harder to read.
+- **Dual-runner without a shared ledger is dangerous.** The parallel runner cleared two index.lock files this cycle without our knowing (only found via grep after the fact). If they force-reset to origin/main before we file our ask, our 7 local commits vanish silently.
+- **SEO compounding loss.** Sitemap is now 8 days stale, 1,019 promoted URLs unknown to Google, indexation rate stuck at 32.7%. Every day without reconciliation is another day of lost organic surface area. Modelled traffic is still creeping up (152 clicks/day MODELLED) but the ceiling is set by the stale sitemap.
+- **No new prod risk this hour.** Origin/main is healthy; briefing-12 landed on time; no SSR-burst activity since Hour 11. If parallel runner's ongoing SSR fix cadence has stopped, that's either "they finished" (good) or "they're stuck on the same merge problem we are" (bad, file-a-question-for-Jefe bad).
 
 ---
 
@@ -46,55 +47,66 @@
 
 | Metric | Value | Source | Note |
 |---|---|---|---|
-| Latest commit (local master) | `a60ae27d` | `git log -1` | ~44min old — GREEN-ish; Hour 10 doc |
-| Latest commit (origin/main) | `16fd2a10` | `git log origin/main -1` | ~14min old — production-live (briefing-11) |
-| Local vs origin/main | **+7 / −54** | `rev-list --left-right --count` | worsened +1/−1 vs Hour 10 |
-| Uncommitted files | 746 | `git status --short \| wc -l` | +1 vs Hour 10 (hourly-log.csv) |
-| `.git/index.lock` present | YES (0B) | `ls .git/index.lock` | RED — reappeared since Hour 10 dance |
-| Open incidents | 5 (+ 1 new) | `ops/incidents/` | EPERM-3rd-hour incident to be filed |
-| news-briefing freshness (local) | 4min (11:10Z) | `news-briefing.json` | GREEN |
-| news-briefing on origin/main | `briefing-2026-04-20-11` | commit `16fd2a10` | GREEN — IDs match this hour |
-| notifications-feed freshness | 6min (11:08Z) | `notifications-feed.json` | GREEN |
-| page-manifest freshness | modified-uncommitted; mtime 04-18 | `page-manifest.json` | YELLOW — unchanged vs Hour 10 |
+| Latest commit (local master) | `ee56b68e` | `git log -1` | ~60min old — Hour 11 standup |
+| Latest commit (origin/main) | `6358a31c` | `git log origin/main -1` | ~10min old — briefing-2026-04-20-12 |
+| Local vs origin/main | **+8 / −55** | `rev-list --left-right --count` | worsened +1/−1 vs Hour 11 (mechanical drift) |
+| Uncommitted files | 746 | `git status --short \| wc -l` | flat vs Hour 11 |
+| `.git/index.lock` present | NO | `ls .git/index.lock` → ENOENT | GREEN — lock clear at 12:14Z |
+| Open incidents | 5 | `ops/incidents/` | EPERM-3rd-hour + jefe-ask docs still unwritten |
+| Commits on this runner (last 24h) | 3 | `git log --since="24h"` | `bd7c43be`, `a60ae27d`, `ee56b68e` — all standups |
+| news-briefing freshness (local) | 10min (12:04Z) | `news-briefing.json` | GREEN |
+| news-briefing on origin/main | `briefing-2026-04-20-12` | commit `6358a31c` | GREEN — **IDs match local byte-for-byte** |
+| notifications-feed freshness | 10min (12:04Z) | `notifications-feed.json` | GREEN |
+| page-manifest freshness | uncommitted; mtime 2026-04-18 | `page-manifest.json` | YELLOW — flat for 4 cycles |
 | PUBLISHED_PAGES count | 1,515 | `published-pages.json` | flat vs 04-18; phantom URL ratio 0% |
-| SEO compliance (latest) | **6.91** / 10 | `ops/seo/2026-04-20.md` | flat for 3rd day |
-| Sitemap age | 8 days | `public/sitemap.xml` | RED — still missing 914 promoted URLs |
-| Organic traffic (24h) | MODELLED 152 clicks / 12,640 impressions | `ops/seo/2026-04-20.md` | per-SEO-brief; directional only |
-| Indexed pages (GSC) | not available | — | OAuth blocker day 6 |
-| CWV p75 | not available | — | same |
+| SEO compliance (latest) | **6.91** / 10 | `ops/seo/2026-04-20.md` | flat for 3rd day — gated on reconciliation |
+| Sitemap age | 8 days | `public/sitemap.xml` mtime 04-12 | RED — 914 promoted URLs unknown to Google |
+| Organic traffic (24h) | MODELLED 152 clicks / 12,640 impressions | `ops/seo/2026-04-20.md` | directional; OAuth still pending day 6 |
+| Indexed pages (GSC) | 496 MODELLED | SEO brief §1 | 32.7% indexation rate; still ~1,019 short |
+| CWV p75 | not available | — | OAuth blocker day 6 |
 
 ---
 
-## Top 3 Priorities — Hour 11 → 12 UTC
+## Top 3 Priorities — Hour 12 → 13 UTC
 
-> CEO reranking: **stop starting, start finishing.** Hour 10's priorities were good; they just didn't execute. The lock-dance is a solved problem for single commits (it worked for `a60ae27d`). The missing piece is a human call on the reset-vs-rebase direction. Every hour we defer that call, the rebase gets harder by ≥1 commit. Priority #1 this hour is therefore not to queue more work — it's to either **get the go/no-go, or time-box the plan-doc write and proceed read-only.** Everything else this hour is read-only so we don't deepen the hole while we wait.
+> CEO reranking: **stop producing inputs, deliver outputs.** The input side of the reset-vs-rebase call is done — design-polish nailed it. The only thing missing is the act of asking. Everything else this hour is downstream prep so Hour 13 can run the reconciliation the moment Jefe answers. If we spend this hour re-auditing instead of shipping the ask, the carry-forward debt will hit five hours, and the parallel runner may make the call for us. **One P0 this hour; the rest is pre-staging.**
 
-### 1. 🔧 **build-cycle — Write the reconcile-plan doc (if not already written) and escalate to Jefe** (P0)
-- **Check first:** `ls ops/incidents/2026-04-20T10-14Z-branch-reconcile-plan.md`. If it exists, skip to escalation. If it does not, that's the carry-forward miss from Hour 10 — write it now.
-- Plan doc must enumerate the 7 local-only commits (`a60ae27d`, `bd7c43be`, `98771ac7`, `5f2b355e`, `4ebe5909`, `9b63adb7`, `90b92015`) with a one-line "still valuable?" judgement per commit. Two are standups (probably obsolete post-rebase), one is the Phase-0 ramp (probably superseded by parallel runner's work), one is design polish (potentially conflicting with origin's SSR burst).
-- Post the plan + a direct ask in `ops/incidents/2026-04-20T11-14Z-jefe-ask-reset-vs-rebase.md`: **"(a) hard-reset local master to origin/main + cherry-pick `98771ac7` only, or (b) rebase all 7 with expected conflicts on `AuthorAttribution.tsx` + `RelatedContent.module.css` + `news-briefing.json`."** Tag Jefe. Answer unblocks Hour 12.
-- **Secondary (parallel):** file `ops/incidents/2026-04-20T11-14Z-index-lock-eperm-third-hour.md` with reproduction. Try one investigation step: `lsof .git/index.lock` (if available) to see who's holding it. Do not attempt any rebase/reset this hour — wait for the go/no-go.
+### 1. 🔧 **build-cycle — File the Jefe ask doc, close the 4-hour loop** (P0, non-negotiable)
+- **Write `ops/incidents/2026-04-20T12-14Z-jefe-ask-reset-vs-rebase.md`.** Must include, concisely:
+  - One-line question: "Approve Option (a) hard-reset local master → origin/main, then cherry-pick `98771ac7` only? Or choose (b) rebase all 7?"
+  - The 3-file conflict list (pulled verbatim from `ops/design/2026-04-20T11-14Z-origin-delta-review.md` §A).
+  - Supersession table for the 7 local-only commits (`a60ae27d`, `bd7c43be`, `98771ac7`, `5f2b355e`, `4ebe5909`, `9b63adb7`, `90b92015`, plus now `ee56b68e`) — which survive reset, which are documentation-only.
+  - **Recommendation: Option (a).** One-paragraph why (design-polish analysis), one-paragraph cost of waiting (SEO compounding, dual-runner drift).
+  - **Parallel-runner question:** "Is the `9083cb17` runner you, Jefe, or a colleague? It cleared 2 `index.lock` files this hour and tried `merge --ff-only`. We need to know whether to coordinate or treat it as external."
+  - **Shovel-ready exec plan:** the exact 3 commands Hour 13 will run if (a) is approved — `git fetch origin`, `git reset --hard origin/main`, `git cherry-pick 98771ac7` — with the conflict-resolution notes for each of the 3 files.
+- **Commit the doc** using the `mv .git/index.lock .git/index.lock.stale.$$` dance only if the lock is present at commit time. If the commit fails, append a line to `ops/incidents/2026-04-20T09-54Z-scheduler-blackout.md` and retry once; do not loop.
+- **Secondary (parallel, cheap):** file `ops/incidents/2026-04-20T12-14Z-index-lock-eperm-third-hour.md` as a thin doc referencing the 12:00:44Z deploys.log observation that the lock keeps reappearing under the parallel runner's hand too. One-page max; do not re-investigate.
+- **Do not attempt any rebase / reset / cherry-pick this hour.** Wait for the answer.
 
-### 2. 🎨 **design-polish — Re-scope the SSR-burst audit to full 54-commit delta + check local/origin news-briefing equality** (P0, not P1)
-- **Still read-only this hour.** No commits, no file writes outside `ops/design/`.
-- Hour 10 scoped the audit at "15 `fix(ssr):` commits." Origin has added more since; the actual delta is 54 commits. Re-scope and deliver `ops/design/2026-04-20T11-14Z-origin-delta-review.md` covering **every file touched by the 54 commits**, grouped by: (a) collides with our `98771ac7` design polish? (b) touches `src/data/*`? (c) touches pages in `PUBLISHED_PAGES`?
-- **New subtask:** `diff <(git show origin/main:src/data/news-briefing.json) src/data/news-briefing.json`. Both are tagged `briefing-2026-04-20-11` — confirm byte-equal (good) or diverged-but-same-id (bad, a generator determinism bug). Report in the same doc.
-- Output feeds directly into priority #1's reset-vs-rebase decision — this is literally the input data for the Jefe ask, so deliver before the end of the hour.
+### 2. 📣 **community-growth — Ship the draft stash so Hour 13's unblock can go live within minutes** (P1)
+- Create `ops/community/` (does not exist). Stage three draft files:
+  - `ops/community/2026-04-20T12-14Z-recovery-note.md` — short-form post (X/Twitter + Discord variants): "36h scheduler gap, fully recovered, new SEO features landing this week." Do NOT publish. Keep voice matter-of-fact, not apologetic.
+  - `ops/community/2026-04-20T12-14Z-codemod-announce-drafts.md` — pre-writes for the three codemod landings (author-attribution 67.3%→95%, related-content 44.9%→90%, methodology-link 10.0%→70%). One paragraph each, reusable as Discord announce / X thread / changelog entry.
+  - `ops/community/2026-04-20T12-14Z-sitemap-refresh-announce.md` — short announce for when the sitemap finally reships to Google (expected +indexation, +traffic; phrase conservatively).
+- **Do not publish to any external channel.** These are staged drafts only.
+- **Optional commit if lock is clear** — they're read-only writes inside `ops/` so low-risk.
 
-### 3. 📣 **community-growth — Draft the transparency update post + prep SEO-codemod narrative for when push reopens** (P1)
-- Users will notice: (a) news briefings have been shipping reliably from origin for 2h, (b) the homepage / `/news` page is live and current, (c) any community channel watching commit velocity sees 54 commits from a handle that isn't the usual one. **Write a short-form post (2 variants: X/Twitter + Discord announce)** that says "we had a 36h scheduler gap, we're recovered, new features coming." Do NOT publish; stage in `ops/community/2026-04-20T11-14Z-recovery-note.md`.
-- Separately, pre-write the three codemod-landing announcements (author-attribution fix, related-content fix, methodology-link fix) so when priority #1's rebase unblocks them, we can ship copy within minutes, not hours. Stage at `ops/community/2026-04-20T11-14Z-codemod-announce-drafts.md`.
-- Why it's P1 not P0: these are writes-without-commits and do not block anything else; they make the eventual unblock *cheaper*.
+### 3. 📊 **design-polish / qa-tester split — Pre-stage the post-reconcile QA checklist + dry-run the cherry-pick in a throwaway worktree** (P1)
+- **design-polish:** write `ops/design/2026-04-20T12-14Z-post-reconcile-qa-checklist.md`. List every file the cherry-pick of `98771ac7` touches, the visual spec check (hover, focus, dark mode, responsive breakpoints) each needs, and the smoke URLs to hit post-merge. Goal: Hour 13+ QA takes 10 minutes, not an hour.
+- **qa-tester / build-cycle alternate:** attempt a **read-only** dry-run in a throwaway worktree: `git worktree add /tmp/degen-rebase-test origin/main && cd /tmp/degen-rebase-test && git cherry-pick --no-commit 98771ac7`. Capture the exact conflict markers per file into `ops/incidents/2026-04-20T12-14Z-cherry-pick-dry-run.md`. Do **not** push, do not commit to main, destroy the worktree after. This gives Jefe a concrete preview of what approving (a) will cost.
+- Why P1 not P0: these accelerate Hour 13+ but don't unblock the decision itself. Skip if the lock-dance eats cycle time.
 
 ---
 
 ## Handoff notes for the 50-minute cycle
 
-- **Do not attempt any `git commit` / `git push` / `git rebase` / `git reset` this hour** except as explicitly called out in priority #1 for the plan-doc write. All other work is read-only or writes to `ops/*` files.
-- **If any agent needs to commit a doc:** use the `mv .git/index.lock .git/index.lock.stale.$(date +%s)` dance first (`reference_github_push_auth` memory). If the unlink fails, file a new incident line in the existing EPERM-3rd-hour doc rather than retrying in a loop.
-- **If prod goes down** (Vercel build red, `/news` returns 5xx, homepage widget empty): override everything, file `ops/incidents/2026-04-20T11-*-prod-down.md`, ping Jefe. No plausible prod-down vector today since origin/main is healthy, but the SSR-fix burst is a tell that something was flaky ~an hour ago.
-- **Path note for automation:** the scheduled task file references `/sessions/epic-busy-galileo/mnt/Degen0x/ops/HOURLY_AGENDA.md` but the real mount on this runner is `/sessions/confident-wizardly-hypatia/mnt/Degen0x/ops/HOURLY_AGENDA.md`. This agenda is written to the real path. If the `epic-busy-galileo` runner is also writing to its own path, we have two standup ledgers diverging — surface this to Jefe alongside the reset-vs-rebase ask.
+- **Only git operations permitted this hour:** `git fetch origin` (safe, already ran), the ONE commit of the jefe-ask doc (with lock-dance), and the read-only dry-run in a throwaway worktree under `/tmp`. No `git push` from main, no `git reset`, no `git rebase`, no `git cherry-pick` onto master.
+- **If `.git/index.lock` reappears:** `mv .git/index.lock .git/index.lock.stale.$(date +%s)` then proceed. If the `mv` itself fails EPERM, append to the existing EPERM-third-hour incident doc and skip the commit — do not loop.
+- **If prod goes down** (Vercel build red, `/news` 5xx, briefing-13 doesn't land at 13:04Z): override everything, file `ops/incidents/2026-04-20T13-*-prod-down.md`, ping Jefe. Currently no evidence of this — origin/main is clean, briefing cadence is on time, SSR-fix burst has quieted.
+- **Scheduler-blackout incident (`ops/incidents/2026-04-20T09-54Z-scheduler-blackout.md`) should NOT be closed this hour** — per its own action plan, closure is gated on the pipeline being green for a sustained run *and* the WIP files resolved. We're 3h into green cadence but the WIP is untouched.
+- **Path note:** task file references `/sessions/epic-busy-galileo/mnt/Degen0x/ops/HOURLY_AGENDA.md`; real mount on this runner is `/sessions/brave-adoring-curie/mnt/Degen0x/ops/HOURLY_AGENDA.md`. Agenda is written to the real path. Dual-ledger concern carried forward from Hour 11 handoff — flag to Jefe in the ask doc (§P1 parallel-runner question).
+- **Carry-forward tally:** 4 hours of deferred work as of this cycle. If Hour 13 opens and the jefe-ask doc is still unwritten, escalate — something is wrong beyond normal sandbox weirdness (likely: nobody is actually running this runner's build-cycle agent, only the standup).
 
 ---
 
-*One-line summary for this cycle: **Hour 11: shipped 1 (Hour 10 standup doc, local only), priority = Jefe-ask reset-vs-rebase to unblock a 3-hour-old reconciliation.***
+*One-line summary for this cycle: **Hour 12: shipped 1 standup commit + design-delta review, priority = file jefe-ask (input data is ready, only the question remains).***
