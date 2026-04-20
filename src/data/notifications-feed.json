@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-20-006",
+    "type": "news",
+    "title": "📰 Aave Stares Down $195M Bad Debt After Kelp Hacker Borrows Against Stolen rsETH",
+    "message": "Aave is quantifying how much bad debt it now holds after the Kelp DAO exploiter used stolen rsETH as collateral to borrow roughly $195 million in ETH.",
+    "actionUrl": "/news",
+    "date": "2026-04-20"
+  },
+  {
     "id": "feed-2026-04-20-005",
     "type": "news",
     "title": "📰 Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",

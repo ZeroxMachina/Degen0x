@@ -1,91 +1,91 @@
 {
-  "generated_at": "2026-04-20T14:05:00Z",
-  "briefing_id": "briefing-2026-04-20-14",
+  "generated_at": "2026-04-20T15:10:00Z",
+  "briefing_id": "briefing-2026-04-20-15",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-20-14-001",
-      "headline": "Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",
-      "slug": "vercel-breach-crypto-api-keys",
-      "tldr": "Web infra giant Vercel disclosed a security incident that may have exposed customer API keys, triggering a scramble across crypto teams to rotate credentials.",
-      "why_it_matters": "Why it matters: Vercel underpins a huge share of crypto frontends and analytics dashboards, so a key leak is a supply-chain risk the entire dApp stack has to assume and re-verify.",
+      "id": "story-2026-04-20-15-001",
+      "headline": "Aave Stares Down $195M Bad Debt After Kelp Hacker Borrows Against Stolen rsETH",
+      "slug": "aave-195m-bad-debt-kelp-hack-rseth",
+      "tldr": "Aave is quantifying how much bad debt it now holds after the Kelp DAO exploiter used stolen rsETH as collateral to borrow roughly $195 million in ETH.",
+      "why_it_matters": "Why it matters: If Aave absorbs the loss, its safety module could be tapped for the first time in years — a live stress test for DeFi's largest lender.",
       "the_details": [
-        "Vercel confirmed the breach on April 20, warning customers that API keys may have been exposed and pushing them to rotate.",
-        "Crypto projects began rotating tokens for RPC providers, analytics, and deploy pipelines within hours of disclosure.",
-        "Lands mid-spree: $450M lost across 45 protocols in two weeks, led by Kelp DAO ($292M) and Drift ($285M)."
+        "Hacker borrowed about $195M in ETH on Aave using drained rsETH from Kelp's $292M cross-chain bridge exploit.",
+        "Aave net deposits fell roughly $6.2B (-23%) over the weekend; the AAVE token dropped about 18% on Sunday.",
+        "Total DeFi TVL sank from $26.4B on April 18 to near $20B by Sunday morning ET as contagion spread."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-20T13:40:00Z"
-    },
-    {
-      "id": "story-2026-04-20-14-002",
-      "headline": "BTC Pinned at $75,324 as US-Iran Ceasefire Clock Runs Out Midweek",
-      "slug": "btc-iran-ceasefire-midweek-expiry",
-      "tldr": "Bitcoin hovers just above ETF cost basis while traders brace for the US-Iran ceasefire to lapse by mid-week, the next macro catalyst for risk assets.",
-      "why_it_matters": "Why it matters: CoinShares flags the ~$74K ETF cost basis as the structural line in the sand; losing it turns a macro wobble into a positioning unwind.",
-      "the_details": [
-        "BTC trades at $75,324.58 at 9am ET Monday, down $475 from Sunday's print.",
-        "ETH opened at $2,263.49 (-3.7%) before bouncing to $2,307 by 7:35am ET.",
-        "CoinShares ETH analyst Luke Nolan pegs follow-through on BTC holding the ETF cost basis through the ceasefire expiry."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/20/u-s-iran-ceasefire-ends-tesla-earnings-crypto-week-ahead",
-      "category": "markets",
+      "source_url": "https://www.coindesk.com/tech/2026/04/19/aave-records-usd6-billion-tvl-drop-as-kelp-hack-exposes-structural-risk-at-defi-lender",
+      "category": "defi",
       "impact": "high",
       "timestamp": "2026-04-20T13:00:00Z"
     },
     {
-      "id": "story-2026-04-20-14-003",
-      "headline": "Bitmine Buys 101,627 ETH Worth $230M, Closes in on 5M ETH Treasury",
-      "slug": "bitmine-eth-treasury-230m",
-      "tldr": "Ethereum treasury firm Bitmine scooped 101,627 ETH in its largest weekly haul of 2026, pushing holdings toward the 5 million ETH threshold.",
-      "why_it_matters": "Why it matters: A corporate treasury buying ETH at scale during a DeFi stress event signals institutional comfort with ETH as a balance-sheet asset, not just a trade.",
+      "id": "story-2026-04-20-15-002",
+      "headline": "DeFi On Pace for Worst Hack Year Ever: 47 Exploits, Up 68% YoY",
+      "slug": "defi-2026-worst-hack-year-47-incidents",
+      "tldr": "DeFi has logged 47 security incidents through mid-April 2026 — a 68% jump over the same period in 2025 — putting it on track for its worst year for hacks.",
+      "why_it_matters": "Why it matters: Insurance premiums, audit demand, and regulatory pressure all ratchet up when the sector bleeds this consistently; capital follows trust, not tokenomics.",
       "the_details": [
-        "Purchase value reported at over $230 million across the week.",
-        "Represents Bitmine's largest weekly ETH accumulation of 2026 to date.",
-        "Firm now sits near 5 million ETH, one of the largest non-exchange ETH holders globally."
+        "47 DeFi hacks recorded in the first 4.5 months of 2026 versus 28 over the same period in 2025.",
+        "Combined haul topped $450M in the last two weeks alone, led by Kelp ($292M) and Drift ($285M).",
+        "Ledger's CTO called 2026 'the worst year in terms of hacks' for DeFi on record."
       ],
       "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-monday-april-20-2026-prices-rising-this-morning-despite-us-iranian-tensions-115955954.html",
-      "category": "ethereum",
-      "impact": "medium",
-      "timestamp": "2026-04-20T12:30:00Z"
+      "source_url": "https://finance.yahoo.com/markets/crypto/articles/april-2026-becomes-worst-month-041530077.html",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-19T12:00:00Z"
     },
     {
-      "id": "story-2026-04-20-14-004",
-      "headline": "Perp Longs Get Gutted: $306M in Crypto Liquidations, 81% From Bulls",
-      "slug": "306m-liquidations-longs-wiped",
-      "tldr": "Crypto perps saw $306.82M in 24-hour liquidations, with long-biased traders absorbing 81% of the damage amid DeFi contagion and Iran-headline risk.",
-      "why_it_matters": "Why it matters: Liquidation skew this extreme typically flushes leverage and resets funding — a constructive precondition once macro overhang clears.",
+      "id": "story-2026-04-20-15-003",
+      "headline": "SEC Chair Atkins Puts Crypto Atop 2026 Priorities in Debut Agency Podcast",
+      "slug": "sec-atkins-crypto-top-priority-2026-podcast",
+      "tldr": "SEC Chair Paul Atkins, joined by Commissioners Uyeda and Peirce, flagged digital assets as a top 2026 priority on the agency's inaugural internal podcast.",
+      "why_it_matters": "Why it matters: Explicit chair-level signaling is the clearest tailwind DeFi and tokenization builders have gotten from the SEC in years.",
       "the_details": [
-        "Total 24h liquidations: $306.82M across major perpetual venues.",
-        "81% of wipeouts came from long positions, per Blockchain Magazine data.",
-        "Fear & Greed Index dropped to 27 (Fear) as BTC tested $74K support."
+        "Atkins: 'In one area now that is really top on our list... is the whole digital asset area, crypto assets.'",
+        "The inaugural Material Matters episode aired April 16, titled 'Commissioners Set the Course: 2026 Priorities.'",
+        "Follows April 13 staff guidance letting DEX frontend 'Covered User Interface Providers' operate without broker-dealer registration."
       ],
-      "source": "Blockchain Magazine",
-      "source_url": "https://blockchainmagazine.net/crypto-market-today-2026-04-19/",
+      "source": "Bitcoin.com News",
+      "source_url": "https://news.bitcoin.com/crypto-is-really-top-on-our-list-sec-debuts-podcast-outlining-priorities/",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-16T14:00:00Z"
+    },
+    {
+      "id": "story-2026-04-20-15-004",
+      "headline": "CoinDesk 20 Tanks 3.6% as AAVE Craters 22.9% in Weekend Contagion Bloodbath",
+      "slug": "coindesk-20-aave-weekend-crash",
+      "tldr": "The CoinDesk 20 index fell 3.6% since Friday's close with none of its 20 assets positive, led by AAVE's 22.9% weekend collapse.",
+      "why_it_matters": "Why it matters: A full-index red print plus a blue-chip DeFi name losing nearly a quarter of its value tells you the Kelp hit is being priced as systemic, not isolated.",
+      "the_details": [
+        "CoinDesk 20 traded at 2085.29 on Monday, down 3.6% from Friday's 4pm ET close.",
+        "AAVE -22.9% and ICP -7.9% were the biggest laggards; BNB -2.3% and BTC -2.5% held up best.",
+        "The CMC Altcoin Season Index sits at 34/100 — squarely in Bitcoin-Season territory."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/coindesk-indices/2026/04/20/coindesk-20-performance-update-aave-price-plummets-22-9-over-weekend",
       "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-20T11:00:00Z"
+      "timestamp": "2026-04-20T14:00:00Z"
     },
     {
-      "id": "story-2026-04-20-14-005",
-      "headline": "Harvard Lifts BTC ETF Stake 257% as CalPERS Plows $500M Into Bitcoin",
-      "slug": "harvard-calpers-bitcoin-etf-institutional",
-      "tldr": "Harvard's endowment boosted Bitcoin ETF exposure 257% while CalPERS allocated $500M, a stark contrast to retail fear pinned at 27 on the F&G index.",
-      "why_it_matters": "Why it matters: Long-duration pools stepping in during volatility is the 'smart money' footprint that historically precedes bottoming processes, even if timing is messy.",
+      "id": "story-2026-04-20-15-005",
+      "headline": "Crypto Billionaire Offers Direct Talks to North Korea-Linked Kelp Hacker",
+      "slug": "crypto-billionaire-kelp-hacker-negotiation",
+      "tldr": "A prominent crypto billionaire has publicly proposed direct negotiations with the attacker behind the $290M Kelp exploit, now suspected of DPRK ties.",
+      "why_it_matters": "Why it matters: Public hacker-negotiation offers are becoming a 2026 playbook — recovering funds beats chasing slow state-level attribution.",
       "the_details": [
-        "Harvard Management Co. raised BTC ETF holdings by 257% in latest 13F filing.",
-        "CalPERS deployed $500 million into BTC products during Q1 2026.",
-        "Goldman Sachs disclosed $108 million in Solana ETF exposure in the same filing window."
+        "Offer follows Drift's $285M exploit earlier in April, also attributed to DPRK-linked actors.",
+        "Kelp hack drained about 116,500 rsETH — 18% of supply — via a misconfigured LayerZero cross-chain setup.",
+        "DPRK-linked crypto theft across April now exceeds $575M combined between Drift and Kelp."
       ],
-      "source": "Blockchain Magazine",
-      "source_url": "https://blockchainmagazine.net/crypto-market-today-2026-04-19/",
-      "category": "adoption",
+      "source": "Benzinga",
+      "source_url": "https://www.benzinga.com/crypto/cryptocurrency/26/04/51905163/crypto-billionaire-offers-talks-north-korea-linked-hacker-290m-defi-exploit",
+      "category": "security",
       "impact": "medium",
       "timestamp": "2026-04-20T10:00:00Z"
     }
