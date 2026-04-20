@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-20-008",
+    "type": "news",
+    "title": "📰 DeFi TVL Craters $13B in 48 Hours as Kelp Contagion Spirals Beyond Aave",
+    "message": "Total value locked across DeFi fell from $99.5B to $86.3B in two days, turning the Kelp exploit into a sector-wide confidence crisis.",
+    "actionUrl": "/news",
+    "date": "2026-04-20"
+  },
+  {
     "id": "feed-2026-04-20-007",
     "type": "news",
     "title": "📰 Vercel Breach Sends Crypto Devs Racing to Rotate API Keys Across Live Apps",
