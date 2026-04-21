@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Morpho Protocol DeFi Lending Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
-  description: "Mọi thứ bạn cần biết về Morpho Protocol DeFi Lending Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
+  title: "Morpho Giao Thức DeFi Cho Vay Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
+  description: "Mọi thứ bạn cần biết về Morpho Giao Thức DeFi Cho Vay Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt",
   openGraph: {
     type: "article",
-    title: "Morpho Protocol DeFi Lending Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
-    description: "Mọi thứ bạn cần biết về Morpho Protocol DeFi Lending Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 20",
+    title: "Morpho Giao Thức DeFi Cho Vay Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
+    description: "Mọi thứ bạn cần biết về Morpho Giao Thức DeFi Cho Vay Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2",
     url: "https://degen0x.com/vi/learn/morpho-protocol-defi-lending-innovation-guide-2026",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Morpho Protocol DeFi Lending Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026", description: "Mọi thứ bạn cần biết về Morpho Protocol DeFi Lending Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 20" },
+  twitter: { card: "summary_large_image", title: "Morpho Giao Thức DeFi Cho Vay Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026", description: "Mọi thứ bạn cần biết về Morpho Giao Thức DeFi Cho Vay Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2" },
   alternates: {
     canonical: "/vi/learn/morpho-protocol-defi-lending-innovation-guide-2026",
     languages: { "en": "/learn/morpho-protocol-defi-lending-innovation-guide-2026", "tr": "/tr/learn/morpho-protocol-defi-lending-innovation-guide-2026", "vi": "/vi/learn/morpho-protocol-defi-lending-innovation-guide-2026", "pt-BR": "/pt-br/learn/morpho-protocol-defi-lending-innovation-guide-2026", "x-default": "/learn/morpho-protocol-defi-lending-innovation-guide-2026" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Học", item: "https://degen0x.com/vi/learn" },
-    { "@type": "ListItem", position: 3, name: "Morpho Protocol DeFi Lending Innovation: Hướng Dẫn Chi Tiết " }
+    { "@type": "ListItem", position: 3, name: "Morpho Giao Thức DeFi Cho Vay Innovation: Hướng Dẫn Chi Tiết" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Morpho Protocol DeFi Lending Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
-  description: "Mọi thứ bạn cần biết về Morpho Protocol DeFi Lending Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
+  title: "Morpho Giao Thức DeFi Cho Vay Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
+  description: "Mọi thứ bạn cần biết về Morpho Giao Thức DeFi Cho Vay Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt",
   url: "https://degen0x.com/vi/learn/morpho-protocol-defi-lending-innovation-guide-2026",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Morpho Protocol DeFi Lending Innovation là gì và hoạt động như thế nào?", "answer": "Morpho Protocol DeFi Lending Innovation là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
-  { "question": "Rủi ro khi đầu tư Morpho Protocol DeFi Lending Innovation là gì?", "answer": "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
-  { "question": "Có gì thay đổi trong lĩnh vực Morpho Protocol DeFi Lending Innovation năm 2026?", "answer": "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
-  { "question": "Sử dụng Morpho Protocol DeFi Lending Innovation tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
+  { "question": "Morpho Giao Thức DeFi Cho Vay Innovation là gì và hoạt động như thế nào?", "answer": "Morpho Giao Thức DeFi Cho Vay Innovation là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
+  { "question": "Rủi ro khi đầu tư Morpho Giao Thức DeFi Cho Vay Innovation là gì?", "answer": "Rủi ro chính: lỗ hổng hợp đồng thông minh, biến động thị trường (dao động 20%+ mỗi ngày là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Nên đa dạng hóa danh mục và sử dụng stop-loss." },
+  { "question": "Có gì thay đổi trong lĩnh vực Morpho Giao Thức DeFi Cho Vay Innovation năm 2026?", "answer": "Năm 2026: quy định MiCA của EU có hiệu lực, Bitcoin spot ETF phổ biến toàn cầu, Ethereum hoàn thành nâng cấp Pectra và DeFi tổ chức tăng trưởng mạnh. Morpho Giao Thức DeFi Cho Vay Innovation chịu ảnh hưởng trực tiếp từ các phát triển này." },
+  { "question": "Sử dụng Morpho Giao Thức DeFi Cho Vay Innovation tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Học", href: "/vi/learn" },
-              { label: "Morpho Protocol DeFi Lending Innovation" }
+              { label: "Morpho Giao Thức DeFi Cho Vay Innovation" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Morpho Protocol DeFi Lending Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Mọi thứ bạn cần biết về Morpho Protocol DeFi Lending Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Morpho Giao Thức DeFi Cho Vay Innovation: Hướng Dẫn Chi Tiết Tiếng Việt 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Mọi thứ bạn cần biết về Morpho Giao Thức DeFi Cho Vay Innovation. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Morpho Protocol DeFi Lending Innovation Là Gì?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Trong hệ sinh thái tiền điện tử, Morpho Protocol DeFi Lending Innovation có vị trí chiến lược quan trọng. Mô hình phát triển mã nguồn mở và cơ chế quản trị cộng đồng mang lại cấu trúc minh bạch. Các tích hợp trên Ethereum, Solana và các mạng lớn khác đang mở rộng phạm vi ứng dụng của Morpho Protocol DeFi Lending Innovation.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Morpho Giao Thức DeFi Cho Vay Innovation Là Gì?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Morpho Giao Thức DeFi Cho Vay Innovation là một trong những thành phần cốt lõi của hệ sinh thái crypto và blockchain. Công nghệ này cho phép người dùng thực hiện giao dịch minh bạch, không cần trung gian nhờ kiến trúc phi tập trung. Tính đến năm 2026, các chỉ số như TVL, số lượng người dùng và hoạt động phát triển trong lĩnh vực Morpho Giao Thức DeFi Cho Vay Innovation đã tăng trưởng đáng kể. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cơ Sở Kỹ Thuật và Nguyên Lý Hoạt Động</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Cơ sở hạ tầng Morpho Protocol DeFi Lending Innovation được xây dựng trên kiến trúc đa lớp: lớp cơ sở (Layer 1) đảm bảo đồng thuận và bảo mật, trong khi các lớp trên (Layer 2) tối ưu khả năng mở rộng và tốc độ. Phương pháp này tối ưu hóa cả bảo mật lẫn trải nghiệm người dùng.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Hệ thống Morpho Giao Thức DeFi Cho Vay Innovation được xây dựng trên các hàm hash mật mã, chữ ký số và cơ chế đồng thuận. Hợp đồng thông minh tự động thực thi giao dịch theo các quy tắc được mã hóa. Cấu trúc này loại bỏ nhu cầu về trung gian tài chính truyền thống, giảm chi phí giao dịch và tăng tốc độ.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cập Nhật 2026 và Xu Hướng Thị Trường</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Morpho Protocol DeFi Lending Innovation trong năm 2026 đã có cấu trúc thị trường trưởng thành hơn so với các năm trước. Các nghiên cứu CBDC, danh mục mới như DePIN (Mạng Hạ Tầng Vật Lý Phi Tập Trung) và sự chấp nhận kiến trúc blockchain modular đang tái định hình hệ sinh thái.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Năm 2026, những phát triển quan trọng nhất trong lĩnh vực Morpho Giao Thức DeFi Cho Vay Innovation: khung pháp lý rõ ràng hơn (đặc biệt quy định MiCA của EU và quyết định của SEC Mỹ), sự chấp nhận từ tổ chức tăng tốc và cải tiến công nghệ. Sau bản cập nhật Pectra của Ethereum và phê duyệt Bitcoin spot ETF, thị trường đã bước vào giai đoạn trưởng thành.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Sử Dụng Morpho Protocol DeFi Lending Innovation tại Việt Nam</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Tại Việt Nam, để sử dụng Morpho Protocol DeFi Lending Innovation bạn cần hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín. Bạn có thể mua crypto bằng VND thông qua chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam là những lựa chọn phổ biến. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Sử Dụng Morpho Giao Thức DeFi Cho Vay Innovation tại Việt Nam</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Tại Việt Nam, để sử dụng Morpho Giao Thức DeFi Cho Vay Innovation bạn cần hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín. Bạn có thể mua crypto bằng VND thông qua chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam là những lựa chọn phổ biến. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đánh Giá Rủi Ro và Bảo Mật</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Hiểu rõ các rủi ro liên quan đến Morpho Protocol DeFi Lending Innovation là nền tảng của quyết định đầu tư sáng suốt. Rủi ro thị trường (biến động), rủi ro công nghệ (lỗi code), rủi ro đối tác (sàn phá sản — như trường hợp FTX) và rủi ro pháp lý (cấm hoặc hạn chế) cần được đánh giá. Sử dụng cold wallet và bảo quản khóa riêng tư an toàn là biện pháp bảo mật quan trọng nhất.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Các rủi ro cần lưu ý khi đầu tư Morpho Giao Thức DeFi Cho Vay Innovation: lỗ hổng hợp đồng thông minh (exploit và tấn công reentrancy), biến động thị trường (dao động giá 20%+ trong 24 giờ là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Sử dụng lệnh stop-loss, đa dạng hóa danh mục và chỉ đầu tư số tiền bạn chấp nhận mất là những nguyên tắc cơ bản.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Morpho Protocol DeFi Lending Innovation là gì và hoạt động như thế nào?", answer: "Morpho Protocol DeFi Lending Innovation là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
-                  { question: "Rủi ro khi đầu tư Morpho Protocol DeFi Lending Innovation là gì?", answer: "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
-                  { question: "Có gì thay đổi trong lĩnh vực Morpho Protocol DeFi Lending Innovation năm 2026?", answer: "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
-                  { question: "Sử dụng Morpho Protocol DeFi Lending Innovation tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
+                  { question: "Morpho Giao Thức DeFi Cho Vay Innovation là gì và hoạt động như thế nào?", answer: "Morpho Giao Thức DeFi Cho Vay Innovation là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
+                  { question: "Rủi ro khi đầu tư Morpho Giao Thức DeFi Cho Vay Innovation là gì?", answer: "Rủi ro chính: lỗ hổng hợp đồng thông minh, biến động thị trường (dao động 20%+ mỗi ngày là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Nên đa dạng hóa danh mục và sử dụng stop-loss." },
+                  { question: "Có gì thay đổi trong lĩnh vực Morpho Giao Thức DeFi Cho Vay Innovation năm 2026?", answer: "Năm 2026: quy định MiCA của EU có hiệu lực, Bitcoin spot ETF phổ biến toàn cầu, Ethereum hoàn thành nâng cấp Pectra và DeFi tổ chức tăng trưởng mạnh. Morpho Giao Thức DeFi Cho Vay Innovation chịu ảnh hưởng trực tiếp từ các phát triển này." },
+                  { question: "Sử dụng Morpho Giao Thức DeFi Cho Vay Innovation tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

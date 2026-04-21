@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "MetaMask vs Coinbase Wallet — Segurança, Recursos e Avaliação 2026 | Degen0x",
-  description: "Análise da carteira MetaMask vs Coinbase Wallet: arquitetura de segurança, blockchains suportadas, facilidade de uso e comparação com Trust Wallet, MetaMask e L",
+  title: "MetaMask vs Coinbase Carteira — Segurança, Recursos e Avaliação 2026 | Degen0x",
+  description: "Análise da carteira MetaMask vs Coinbase Carteira: arquitetura de segurança, blockchains suportadas, facilidade de uso e comparação com Trust Wallet, MetaMask e",
   openGraph: {
     type: "article",
-    title: "MetaMask vs Coinbase Wallet — Segurança, Recursos e Avaliação 2026",
-    description: "Análise da carteira MetaMask vs Coinbase Wallet: arquitetura de segurança, blockchains suportadas, facilidade de uso e c",
+    title: "MetaMask vs Coinbase Carteira — Segurança, Recursos e Avaliação 2026",
+    description: "Análise da carteira MetaMask vs Coinbase Carteira: arquitetura de segurança, blockchains suportadas, facilidade de uso e",
     url: "https://degen0x.com/pt-br/wallets/compare/metamask-vs-coinbase-wallet",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "MetaMask vs Coinbase Wallet — Segurança, Recursos e Avaliação 2026", description: "Análise da carteira MetaMask vs Coinbase Wallet: arquitetura de segurança, blockchains suportadas, facilidade de uso e c" },
+  twitter: { card: "summary_large_image", title: "MetaMask vs Coinbase Carteira — Segurança, Recursos e Avaliação 2026", description: "Análise da carteira MetaMask vs Coinbase Carteira: arquitetura de segurança, blockchains suportadas, facilidade de uso e" },
   alternates: {
     canonical: "/pt-br/wallets/compare/metamask-vs-coinbase-wallet",
     languages: { "en": "/wallets/compare/metamask-vs-coinbase-wallet", "tr": "/tr/wallets/compare/metamask-vs-coinbase-wallet", "vi": "/vi/wallets/compare/metamask-vs-coinbase-wallet", "pt-BR": "/pt-br/wallets/compare/metamask-vs-coinbase-wallet", "x-default": "/wallets/compare/metamask-vs-coinbase-wallet" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Carteiras", item: "https://degen0x.com/pt-br/wallets" },
-    { "@type": "ListItem", position: 3, name: "MetaMask vs Coinbase Wallet — Segurança, Recursos e Avaliaçã" }
+    { "@type": "ListItem", position: 3, name: "MetaMask vs Coinbase Carteira — Segurança, Recursos e Avalia" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "MetaMask vs Coinbase Wallet — Segurança, Recursos e Avaliação 2026",
-  description: "Análise da carteira MetaMask vs Coinbase Wallet: arquitetura de segurança, blockchains suportadas, facilidade de uso e comparação com Trust Wallet, MetaMask e L",
+  title: "MetaMask vs Coinbase Carteira — Segurança, Recursos e Avaliação 2026",
+  description: "Análise da carteira MetaMask vs Coinbase Carteira: arquitetura de segurança, blockchains suportadas, facilidade de uso e comparação com Trust Wallet, MetaMask e",
   url: "https://degen0x.com/pt-br/wallets/compare/metamask-vs-coinbase-wallet",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,9 +42,9 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "A carteira MetaMask vs Coinbase Wallet é segura?", "answer": "Avaliação de segurança: gestão de chaves privadas (self-custodial ou custodial), padrão de criptografia, backup de seed phrase, autenticação biométrica e suporte multisig." },
+  { "question": "A carteira MetaMask vs Coinbase Carteira é segura?", "answer": "Avaliação de segurança: gestão de chaves privadas (self-custodial ou custodial), padrão de criptografia, backup de seed phrase, autenticação biométrica e suporte multisig." },
   { "question": "Quais blockchains são suportadas?", "answer": "Redes suportadas: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Padrões de token (ERC-20, BEP-20, SPL) e capacidade de transferência cross-chain." },
-  { "question": "Como acessar DeFi pela carteira MetaMask vs Coinbase Wallet?", "answer": "Acesso a protocolos DeFi: swap de tokens, provisão de liquidez, staking, lending e operações NFT. O acesso a protocolos DeFi no Brasil geralmente é feito através de carteiras Web3 como MetaMask conectadas a redes como Ethereum e Polygon." },
+  { "question": "Como acessar DeFi pela carteira MetaMask vs Coinbase Carteira?", "answer": "Acesso a protocolos DeFi: swap de tokens, provisão de liquidez, staking, lending e operações NFT. O acesso a protocolos DeFi no Brasil geralmente é feito através de carteiras Web3 como MetaMask conectadas a redes como Ethereum e Polygon." },
   { "question": "Como guardar seed phrase com segurança?", "answer": "Seed phrase é a única chave para seus ativos. Use placas de backup em metal, cofre e múltiplas cópias. Nunca armazene digitalmente (foto, app de notas, e-mail)." }
 ]);
 
@@ -59,43 +59,43 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Carteiras", href: "/pt-br/wallets" },
-              { label: "MetaMask vs Coinbase Wallet" }
+              { label: "MetaMask vs Coinbase Carteira" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">MetaMask vs Coinbase Wallet — Segurança, Recursos e Avaliação 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Análise da carteira MetaMask vs Coinbase Wallet: arquitetura de segurança, blockchains suportadas, facilidade de uso e comparação com Trust Wallet, MetaMask e Ledger são as carteiras mais populares entre brasileiros.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">MetaMask vs Coinbase Carteira — Segurança, Recursos e Avaliação 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Análise da carteira MetaMask vs Coinbase Carteira: arquitetura de segurança, blockchains suportadas, facilidade de uso e comparação com Trust Wallet, MetaMask e Ledger são as carteiras mais populares entre brasileiros.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Avaliação Geral da Carteira</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Análise completa da carteira MetaMask vs Coinbase Wallet. Redes blockchain suportadas, padrões de token, integrações DApp e experiência do usuário. Comparação com Trust Wallet, MetaMask e Ledger são as carteiras mais populares entre brasileiros.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Análise completa da carteira MetaMask vs Coinbase Carteira. Redes blockchain suportadas, padrões de token, integrações DApp e experiência do usuário. Comparação com Trust Wallet, MetaMask e Ledger são as carteiras mais populares entre brasileiros.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Arquitetura de Segurança e Gestão de Chaves</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Segurança da carteira é fundamental para proteger ativos digitais. Gestão de chaves privadas (self-custodial vs custodial), algoritmos de criptografia, autenticação biométrica, backup de seed phrase e suporte multisig da carteira MetaMask vs Coinbase Wallet.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Segurança da carteira é fundamental para proteger ativos digitais. Gestão de chaves privadas (self-custodial vs custodial), algoritmos de criptografia, autenticação biométrica, backup de seed phrase e suporte multisig da carteira MetaMask vs Coinbase Carteira.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Redes Suportadas e Integração DeFi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Blockchains suportadas pela carteira MetaMask vs Coinbase Wallet (Ethereum, BSC, Polygon, Solana, Arbitrum...), recursos de swap, acesso direto a protocolos DeFi e visualização/gestão de NFTs.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Blockchains suportadas pela carteira MetaMask vs Coinbase Carteira (Ethereum, BSC, Polygon, Solana, Arbitrum...), recursos de swap, acesso direto a protocolos DeFi e visualização/gestão de NFTs.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Guia de Uso e Dicas</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Configuração, backup, adição de tokens e práticas seguras de uso da carteira MetaMask vs Coinbase Wallet. Nunca armazene sua seed phrase digitalmente, sempre baixe de fontes oficiais e aplique atualizações de segurança regularmente.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Configuração, backup, adição de tokens e práticas seguras de uso da carteira MetaMask vs Coinbase Carteira. Nunca armazene sua seed phrase digitalmente, sempre baixe de fontes oficiais e aplique atualizações de segurança regularmente.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "A carteira MetaMask vs Coinbase Wallet é segura?", answer: "Avaliação de segurança: gestão de chaves privadas (self-custodial ou custodial), padrão de criptografia, backup de seed phrase, autenticação biométrica e suporte multisig." },
+                  { question: "A carteira MetaMask vs Coinbase Carteira é segura?", answer: "Avaliação de segurança: gestão de chaves privadas (self-custodial ou custodial), padrão de criptografia, backup de seed phrase, autenticação biométrica e suporte multisig." },
                   { question: "Quais blockchains são suportadas?", answer: "Redes suportadas: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Padrões de token (ERC-20, BEP-20, SPL) e capacidade de transferência cross-chain." },
-                  { question: "Como acessar DeFi pela carteira MetaMask vs Coinbase Wallet?", answer: "Acesso a protocolos DeFi: swap de tokens, provisão de liquidez, staking, lending e operações NFT. O acesso a protocolos DeFi no Brasil geralmente é feito através de carteiras Web3 como MetaMask conectadas a redes como Ethereum e Polygon." },
+                  { question: "Como acessar DeFi pela carteira MetaMask vs Coinbase Carteira?", answer: "Acesso a protocolos DeFi: swap de tokens, provisão de liquidez, staking, lending e operações NFT. O acesso a protocolos DeFi no Brasil geralmente é feito através de carteiras Web3 como MetaMask conectadas a redes como Ethereum e Polygon." },
                   { question: "Como guardar seed phrase com segurança?", answer: "Seed phrase é a única chave para seus ativos. Use placas de backup em metal, cofre e múltiplas cópias. Nunca armazene digitalmente (foto, app de notas, e-mail)." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">

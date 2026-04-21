@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Ethereum Sharding Roadmap: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "Ethereum Sharding Roadmap hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "Ethereum Sharding Yol Haritası: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "Ethereum Sharding Yol Haritası hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   openGraph: {
     type: "article",
-    title: "Ethereum Sharding Roadmap: 2026 Kapsamlı Türkçe Rehber",
-    description: "Ethereum Sharding Roadmap hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemel",
+    title: "Ethereum Sharding Yol Haritası: 2026 Kapsamlı Türkçe Rehber",
+    description: "Ethereum Sharding Yol Haritası hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncel",
     url: "https://degen0x.com/tr/learn/ethereum-sharding-roadmap-explained",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Ethereum Sharding Roadmap: 2026 Kapsamlı Türkçe Rehber", description: "Ethereum Sharding Roadmap hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemel" },
+  twitter: { card: "summary_large_image", title: "Ethereum Sharding Yol Haritası: 2026 Kapsamlı Türkçe Rehber", description: "Ethereum Sharding Yol Haritası hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncel" },
   alternates: {
     canonical: "/tr/learn/ethereum-sharding-roadmap-explained",
     languages: { "en": "/learn/ethereum-sharding-roadmap-explained", "tr": "/tr/learn/ethereum-sharding-roadmap-explained", "vi": "/vi/learn/ethereum-sharding-roadmap-explained", "pt-BR": "/pt-br/learn/ethereum-sharding-roadmap-explained", "x-default": "/learn/ethereum-sharding-roadmap-explained" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "Ethereum Sharding Roadmap: 2026 Kapsamlı Türkçe Rehber" }
+    { "@type": "ListItem", position: 3, name: "Ethereum Sharding Yol Haritası: 2026 Kapsamlı Türkçe Rehber" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Ethereum Sharding Roadmap: 2026 Kapsamlı Türkçe Rehber",
-  description: "Ethereum Sharding Roadmap hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "Ethereum Sharding Yol Haritası: 2026 Kapsamlı Türkçe Rehber",
+  description: "Ethereum Sharding Yol Haritası hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   url: "https://degen0x.com/tr/learn/ethereum-sharding-roadmap-explained",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Ethereum Sharding Roadmap nedir ve nasıl çalışır?", "answer": "Ethereum Sharding Roadmap, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum, DeFi ekosisteminin %60\'ından fazlasına ev sahipliği yapar. 2026 Pectra güncellemesi account abstraction ve blob kapasitesini artırarak Layer 2 maliyetlerini düşürmüştür." },
-  { "question": "Ethereum Sharding Roadmap yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-  { "question": "2026\'da Ethereum Sharding Roadmap alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Ethereum Sharding Roadmap alanında da paralel iyileştirmeler gözlemlenmektedir." },
-  { "question": "Türkiye\'den Ethereum Sharding Roadmap nasıl kullanılır?", "answer": "Türkiye\'de Ethereum Sharding Roadmap kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Ethereum Sharding Yol Haritası nedir ve nasıl çalışır?", "answer": "Ethereum Sharding Yol Haritası, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum, DeFi ekosisteminin %60\'ından fazlasına ev sahipliği yapar. 2026 Pectra güncellemesi account abstraction ve blob kapasitesini artırarak Layer 2 maliyetlerini düşürmüştür." },
+  { "question": "Ethereum Sharding Yol Haritası yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+  { "question": "2026\'da Ethereum Sharding Yol Haritası alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Ethereum Sharding Yol Haritası alanında da paralel iyileştirmeler gözlemlenmektedir." },
+  { "question": "Türkiye\'den Ethereum Sharding Yol Haritası nasıl kullanılır?", "answer": "Türkiye\'de Ethereum Sharding Yol Haritası kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "Ethereum Sharding Roadmap" }
+              { label: "Ethereum Sharding Yol Haritası" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ethereum Sharding Roadmap: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Ethereum Sharding Roadmap hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ethereum Sharding Yol Haritası: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Ethereum Sharding Yol Haritası hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Ethereum Sharding Roadmap Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Ethereum Sharding Roadmap, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Ethereum Sharding Roadmap büyük bir dönüşüm sürecine girmiştir. Ethereum, DeFi ekosisteminin %60\'ından fazlasına ev sahipliği yapar. 2026 Pectra güncellemesi account abstraction ve blob kapasitesini artırarak Layer 2 maliyetlerini düşürmüştür.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Ethereum Sharding Yol Haritası Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Ethereum Sharding Yol Haritası, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Ethereum Sharding Yol Haritası büyük bir dönüşüm sürecine girmiştir. Ethereum, DeFi ekosisteminin %60\'ından fazlasına ev sahipliği yapar. 2026 Pectra güncellemesi account abstraction ve blob kapasitesini artırarak Layer 2 maliyetlerini düşürmüştür.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Ethereum Sharding Roadmap, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Ethereum Sharding Yol Haritası, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Ethereum Sharding Roadmap için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Ethereum Sharding Roadmap bu trendlerden doğrudan etkilenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Ethereum Sharding Yol Haritası için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Ethereum Sharding Yol Haritası bu trendlerden doğrudan etkilenmektedir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Ethereum Sharding Roadmap Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Ethereum Sharding Roadmap kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Ethereum Sharding Yol Haritası Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Ethereum Sharding Yol Haritası kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi Ethereum Sharding Roadmap yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi Ethereum Sharding Yol Haritası yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Ethereum Sharding Roadmap nedir ve nasıl çalışır?", answer: "Ethereum Sharding Roadmap, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum, DeFi ekosisteminin %60\'ından fazlasına ev sahipliği yapar. 2026 Pectra güncellemesi account abstraction ve blob kapasitesini artırarak Layer 2 maliyetlerini düşürmüştür." },
-                  { question: "Ethereum Sharding Roadmap yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-                  { question: "2026\'da Ethereum Sharding Roadmap alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Ethereum Sharding Roadmap alanında da paralel iyileştirmeler gözlemlenmektedir." },
-                  { question: "Türkiye\'den Ethereum Sharding Roadmap nasıl kullanılır?", answer: "Türkiye\'de Ethereum Sharding Roadmap kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Ethereum Sharding Yol Haritası nedir ve nasıl çalışır?", answer: "Ethereum Sharding Yol Haritası, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum, DeFi ekosisteminin %60\'ından fazlasına ev sahipliği yapar. 2026 Pectra güncellemesi account abstraction ve blob kapasitesini artırarak Layer 2 maliyetlerini düşürmüştür." },
+                  { question: "Ethereum Sharding Yol Haritası yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+                  { question: "2026\'da Ethereum Sharding Yol Haritası alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Ethereum Sharding Yol Haritası alanında da paralel iyileştirmeler gözlemlenmektedir." },
+                  { question: "Türkiye\'den Ethereum Sharding Yol Haritası nasıl kullanılır?", answer: "Türkiye\'de Ethereum Sharding Yol Haritası kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

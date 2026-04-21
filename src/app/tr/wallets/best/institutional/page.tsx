@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Institutional Crypto Wallets — Güvenlik, Özellikler ve 2026 Değerlendirmesi | Degen0x",
-  description: "Institutional Crypto Wallets cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullan",
+  title: "Kurumsal Kripto Cüzdanlar — Güvenlik, Özellikler ve 2026 Değerlendirmesi | Degen0x",
+  description: "Kurumsal Kripto Cüzdanlar cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcı",
   openGraph: {
     type: "article",
-    title: "Institutional Crypto Wallets — Güvenlik, Özellikler ve 2026 Değerlendirmesi",
-    description: "Institutional Crypto Wallets cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trus",
+    title: "Kurumsal Kripto Cüzdanlar — Güvenlik, Özellikler ve 2026 Değerlendirmesi",
+    description: "Kurumsal Kripto Cüzdanlar cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust W",
     url: "https://degen0x.com/tr/wallets/best/institutional",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Institutional Crypto Wallets — Güvenlik, Özellikler ve 2026 Değerlendirmesi", description: "Institutional Crypto Wallets cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trus" },
+  twitter: { card: "summary_large_image", title: "Kurumsal Kripto Cüzdanlar — Güvenlik, Özellikler ve 2026 Değerlendirmesi", description: "Kurumsal Kripto Cüzdanlar cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust W" },
   alternates: {
     canonical: "/tr/wallets/best/institutional",
     languages: { "en": "/wallets/best/institutional", "tr": "/tr/wallets/best/institutional", "vi": "/vi/wallets/best/institutional", "pt-BR": "/pt-br/wallets/best/institutional", "x-default": "/wallets/best/institutional" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Cüzdanlar", item: "https://degen0x.com/tr/wallets" },
-    { "@type": "ListItem", position: 3, name: "Institutional Crypto Wallets — Güvenlik, Özellikler ve 2026 " }
+    { "@type": "ListItem", position: 3, name: "Kurumsal Kripto Cüzdanlar — Güvenlik, Özellikler ve 2026 Değ" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Institutional Crypto Wallets — Güvenlik, Özellikler ve 2026 Değerlendirmesi",
-  description: "Institutional Crypto Wallets cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullan",
+  title: "Kurumsal Kripto Cüzdanlar — Güvenlik, Özellikler ve 2026 Değerlendirmesi",
+  description: "Kurumsal Kripto Cüzdanlar cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcı",
   url: "https://degen0x.com/tr/wallets/best/institutional",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,9 +42,9 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Institutional Crypto Wallets cüzdanı güvenli mi?", "answer": "Cüzdan güvenliği değerlendirmesi: özel anahtar yönetimi (kullanıcı mı kontrol ediyor, platform mu?), şifreleme standardı, seed phrase yedekleme mekanizması, biyometrik doğrulama ve multisig desteği. Institutional Crypto Wallets cüzdanının güvenlik profili detaylı olarak incelenmektedir." },
-  { "question": "Hangi blokzincir ağlarını destekliyor?", "answer": "Institutional Crypto Wallets cüzdanının desteklediği ağlar (Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche vb.), token standartları (ERC-20, BEP-20, SPL) ve cross-chain transfer kapasitesi incelenmektedir." },
-  { "question": "DeFi protokollerine nasıl erişebilirim?", "answer": "Institutional Crypto Wallets cüzdanı üzerinden DeFi protokollerine erişim: token swap, likidite sağlama, staking, lending ve NFT işlemleri. Türk yatırımcılar için DeFi protokollerine erişim genellikle MetaMask veya benzeri Web3 cüzdanları üzerinden sağlanır." },
+  { "question": "Kurumsal Kripto Cüzdanlar cüzdanı güvenli mi?", "answer": "Cüzdan güvenliği değerlendirmesi: özel anahtar yönetimi (kullanıcı mı kontrol ediyor, platform mu?), şifreleme standardı, seed phrase yedekleme mekanizması, biyometrik doğrulama ve multisig desteği. Kurumsal Kripto Cüzdanlar cüzdanının güvenlik profili detaylı olarak incelenmektedir." },
+  { "question": "Hangi blokzincir ağlarını destekliyor?", "answer": "Kurumsal Kripto Cüzdanlar cüzdanının desteklediği ağlar (Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche vb.), token standartları (ERC-20, BEP-20, SPL) ve cross-chain transfer kapasitesi incelenmektedir." },
+  { "question": "DeFi protokollerine nasıl erişebilirim?", "answer": "Kurumsal Kripto Cüzdanlar cüzdanı üzerinden DeFi protokollerine erişim: token swap, likidite sağlama, staking, lending ve NFT işlemleri. Türk yatırımcılar için DeFi protokollerine erişim genellikle MetaMask veya benzeri Web3 cüzdanları üzerinden sağlanır." },
   { "question": "Seed phrase\'imi nasıl güvenle saklamalıyım?", "answer": "Seed phrase (kurtarma cümlesi), kripto varlıklarınıza erişimin tek anahtarıdır. Metal yedekleme plakaları, güvenli kasa ve çoklu yedekleme stratejileri kullanın. Dijital ortamda (fotoğraf, not uygulaması, e-posta) kesinlikle saklamayın." }
 ]);
 
@@ -59,43 +59,43 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Cüzdanlar", href: "/tr/wallets" },
-              { label: "Institutional Crypto Wallets" }
+              { label: "Kurumsal Kripto Cüzdanlar" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Institutional Crypto Wallets — Güvenlik, Özellikler ve 2026 Değerlendirmesi</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Institutional Crypto Wallets cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında popülerdir ile karşılaştırma.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Kurumsal Kripto Cüzdanlar — Güvenlik, Özellikler ve 2026 Değerlendirmesi</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Kurumsal Kripto Cüzdanlar cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında popülerdir ile karşılaştırma.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cüzdan Genel Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Institutional Crypto Wallets cüzdanı hakkında kapsamlı inceleme. Desteklenen blokzincir ağları, token standartları, DApp entegrasyonları ve kullanıcı deneyimi detaylı olarak değerlendirilmektedir. Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında popülerdir ile karşılaştırma sunuyoruz.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kurumsal Kripto Cüzdanlar cüzdanı hakkında kapsamlı inceleme. Desteklenen blokzincir ağları, token standartları, DApp entegrasyonları ve kullanıcı deneyimi detaylı olarak değerlendirilmektedir. Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında popülerdir ile karşılaştırma sunuyoruz.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Güvenlik Mimarisi ve Anahtar Yönetimi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto cüzdan güvenliği, dijital varlıklarınızın korunmasının temelidir. Institutional Crypto Wallets cüzdanının özel anahtar yönetimi (self-custodial vs custodial), şifreleme algoritmaları, biyometrik doğrulama, seed phrase yedekleme ve çoklu imza (multisig) desteği incelenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto cüzdan güvenliği, dijital varlıklarınızın korunmasının temelidir. Kurumsal Kripto Cüzdanlar cüzdanının özel anahtar yönetimi (self-custodial vs custodial), şifreleme algoritmaları, biyometrik doğrulama, seed phrase yedekleme ve çoklu imza (multisig) desteği incelenmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Desteklenen Ağlar ve DeFi Entegrasyonu</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Institutional Crypto Wallets cüzdanının desteklediği blokzincir ağları (Ethereum, BSC, Polygon, Solana, Arbitrum vb.), token swap özellikleri, DeFi protokollerine doğrudan erişim ve NFT görüntüleme/yönetim kapasitesi değerlendirilmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kurumsal Kripto Cüzdanlar cüzdanının desteklediği blokzincir ağları (Ethereum, BSC, Polygon, Solana, Arbitrum vb.), token swap özellikleri, DeFi protokollerine doğrudan erişim ve NFT görüntüleme/yönetim kapasitesi değerlendirilmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kullanım Rehberi ve İpuçları</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Institutional Crypto Wallets cüzdanının kurulumu, yedekleme, token ekleme ve güvenli kullanım pratikleri. Seed phrase\'inizi asla dijital ortamda saklamayın, her zaman resmi kaynaklardan indirin ve düzenli güvenlik güncellemelerini uygulayın.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kurumsal Kripto Cüzdanlar cüzdanının kurulumu, yedekleme, token ekleme ve güvenli kullanım pratikleri. Seed phrase\'inizi asla dijital ortamda saklamayın, her zaman resmi kaynaklardan indirin ve düzenli güvenlik güncellemelerini uygulayın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Institutional Crypto Wallets cüzdanı güvenli mi?", answer: "Cüzdan güvenliği değerlendirmesi: özel anahtar yönetimi (kullanıcı mı kontrol ediyor, platform mu?), şifreleme standardı, seed phrase yedekleme mekanizması, biyometrik doğrulama ve multisig desteği. Institutional Crypto Wallets cüzdanının güvenlik profili detaylı olarak incelenmektedir." },
-                  { question: "Hangi blokzincir ağlarını destekliyor?", answer: "Institutional Crypto Wallets cüzdanının desteklediği ağlar (Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche vb.), token standartları (ERC-20, BEP-20, SPL) ve cross-chain transfer kapasitesi incelenmektedir." },
-                  { question: "DeFi protokollerine nasıl erişebilirim?", answer: "Institutional Crypto Wallets cüzdanı üzerinden DeFi protokollerine erişim: token swap, likidite sağlama, staking, lending ve NFT işlemleri. Türk yatırımcılar için DeFi protokollerine erişim genellikle MetaMask veya benzeri Web3 cüzdanları üzerinden sağlanır." },
+                  { question: "Kurumsal Kripto Cüzdanlar cüzdanı güvenli mi?", answer: "Cüzdan güvenliği değerlendirmesi: özel anahtar yönetimi (kullanıcı mı kontrol ediyor, platform mu?), şifreleme standardı, seed phrase yedekleme mekanizması, biyometrik doğrulama ve multisig desteği. Kurumsal Kripto Cüzdanlar cüzdanının güvenlik profili detaylı olarak incelenmektedir." },
+                  { question: "Hangi blokzincir ağlarını destekliyor?", answer: "Kurumsal Kripto Cüzdanlar cüzdanının desteklediği ağlar (Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche vb.), token standartları (ERC-20, BEP-20, SPL) ve cross-chain transfer kapasitesi incelenmektedir." },
+                  { question: "DeFi protokollerine nasıl erişebilirim?", answer: "Kurumsal Kripto Cüzdanlar cüzdanı üzerinden DeFi protokollerine erişim: token swap, likidite sağlama, staking, lending ve NFT işlemleri. Türk yatırımcılar için DeFi protokollerine erişim genellikle MetaMask veya benzeri Web3 cüzdanları üzerinden sağlanır." },
                   { question: "Seed phrase\'imi nasıl güvenle saklamalıyım?", answer: "Seed phrase (kurtarma cümlesi), kripto varlıklarınıza erişimin tek anahtarıdır. Metal yedekleme plakaları, güvenli kasa ve çoklu yedekleme stratejileri kullanın. Dijital ortamda (fotoğraf, not uygulaması, e-posta) kesinlikle saklamayın." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">

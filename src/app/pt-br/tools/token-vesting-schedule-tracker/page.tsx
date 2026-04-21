@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Token Vesting Schedule — Ferramenta Cripto Gratuita | Degen0x",
-  description: "Use a ferramenta Token Vesting Schedule gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
+  title: "Cronograma de Vesting de Tokens — Ferramenta Cripto Gratuita | Degen0x",
+  description: "Use a ferramenta Cronograma de Vesting de Tokens gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   openGraph: {
     type: "article",
-    title: "Token Vesting Schedule — Ferramenta Cripto Gratuita",
-    description: "Use a ferramenta Token Vesting Schedule gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informada",
+    title: "Cronograma de Vesting de Tokens — Ferramenta Cripto Gratuita",
+    description: "Use a ferramenta Cronograma de Vesting de Tokens gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões ",
     url: "https://degen0x.com/pt-br/tools/token-vesting-schedule-tracker",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Token Vesting Schedule — Ferramenta Cripto Gratuita", description: "Use a ferramenta Token Vesting Schedule gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informada" },
+  twitter: { card: "summary_large_image", title: "Cronograma de Vesting de Tokens — Ferramenta Cripto Gratuita", description: "Use a ferramenta Cronograma de Vesting de Tokens gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões " },
   alternates: {
     canonical: "/pt-br/tools/token-vesting-schedule-tracker",
     languages: { "en": "/tools/token-vesting-schedule-tracker", "tr": "/tr/tools/token-vesting-schedule-tracker", "vi": "/vi/tools/token-vesting-schedule-tracker", "pt-BR": "/pt-br/tools/token-vesting-schedule-tracker", "x-default": "/tools/token-vesting-schedule-tracker" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Ferramentas", item: "https://degen0x.com/pt-br/tools" },
-    { "@type": "ListItem", position: 3, name: "Token Vesting Schedule — Ferramenta Cripto Gratuita" }
+    { "@type": "ListItem", position: 3, name: "Cronograma de Vesting de Tokens — Ferramenta Cripto Gratuita" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Token Vesting Schedule — Ferramenta Cripto Gratuita",
-  description: "Use a ferramenta Token Vesting Schedule gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
+  title: "Cronograma de Vesting de Tokens — Ferramenta Cripto Gratuita",
+  description: "Use a ferramenta Cronograma de Vesting de Tokens gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   url: "https://degen0x.com/pt-br/tools/token-vesting-schedule-tracker",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Token Vesting Schedule e como funciona?", "answer": "Token Vesting Schedule é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central." },
-  { "question": "Quais são os riscos de investir em Token Vesting Schedule?", "answer": "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
-  { "question": "O que mudou em Token Vesting Schedule em 2026?", "answer": "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
-  { "question": "Como usar Token Vesting Schedule no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+  { "question": "O que é Cronograma de Vesting de Tokens e como funciona?", "answer": "Cronograma de Vesting de Tokens é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central." },
+  { "question": "Quais são os riscos de investir em Cronograma de Vesting de Tokens?", "answer": "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
+  { "question": "O que mudou em Cronograma de Vesting de Tokens em 2026?", "answer": "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
+  { "question": "Como usar Cronograma de Vesting de Tokens no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,39 +59,39 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Ferramentas", href: "/pt-br/tools" },
-              { label: "Token Vesting Schedule" }
+              { label: "Cronograma de Vesting de Tokens" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Token Vesting Schedule — Ferramenta Cripto Gratuita</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta Token Vesting Schedule gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Cronograma de Vesting de Tokens — Ferramenta Cripto Gratuita</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta Cronograma de Vesting de Tokens gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Token Vesting Schedule?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Token Vesting Schedule tem importância crescente no ecossistema de ativos digitais. Construído sobre infraestrutura blockchain, este sistema utiliza contratos inteligentes para executar transações seguras e automáticas. O interesse crescente de investidores institucionais criou uma grande transformação para Token Vesting Schedule.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Cronograma de Vesting de Tokens?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Cronograma de Vesting de Tokens tem importância crescente no ecossistema de ativos digitais. Construído sobre infraestrutura blockchain, este sistema utiliza contratos inteligentes para executar transações seguras e automáticas. O interesse crescente de investidores institucionais criou uma grande transformação para Cronograma de Vesting de Tokens.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Infraestrutura Técnica e Princípio de Funcionamento</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Tecnicamente, Token Vesting Schedule utiliza tecnologia de livro-razão distribuído (DLT). Cada transação é verificada pelos nós da rede e registrada de forma imutável. O mecanismo de consenso utilizado (Proof of Work, Proof of Stake ou protocolos alternativos) determina a segurança e descentralização da rede.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Tecnicamente, Cronograma de Vesting de Tokens utiliza tecnologia de livro-razão distribuído (DLT). Cada transação é verificada pelos nós da rede e registrada de forma imutável. O mecanismo de consenso utilizado (Proof of Work, Proof of Stake ou protocolos alternativos) determina a segurança e descentralização da rede.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Atualizações 2026 e Dinâmicas de Mercado</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">A dinâmica de mercado de 2026 oferece oportunidades significativas para Token Vesting Schedule. A ascensão do DeFi institucional, crescimento da tokenização de ativos reais (RWA) e integrações AI-blockchain trouxeram novo impulso ao setor.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">A dinâmica de mercado de 2026 oferece oportunidades significativas para Cronograma de Vesting de Tokens. A ascensão do DeFi institucional, crescimento da tokenização de ativos reais (RWA) e integrações AI-blockchain trouxeram novo impulso ao setor.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Token Vesting Schedule e como funciona?", answer: "Token Vesting Schedule é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central." },
-                  { question: "Quais são os riscos de investir em Token Vesting Schedule?", answer: "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
-                  { question: "O que mudou em Token Vesting Schedule em 2026?", answer: "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
-                  { question: "Como usar Token Vesting Schedule no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+                  { question: "O que é Cronograma de Vesting de Tokens e como funciona?", answer: "Cronograma de Vesting de Tokens é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central." },
+                  { question: "Quais são os riscos de investir em Cronograma de Vesting de Tokens?", answer: "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
+                  { question: "O que mudou em Cronograma de Vesting de Tokens em 2026?", answer: "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
+                  { question: "Como usar Cronograma de Vesting de Tokens no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

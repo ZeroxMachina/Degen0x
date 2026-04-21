@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Crypto Insurance — Guia de Seguros DeFi 2026 | Degen0x",
-  description: "Crypto Insurance: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
+  title: "Seguro Cripto — Guia de Seguros DeFi 2026 | Degen0x",
+  description: "Seguro Cripto: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
   openGraph: {
     type: "article",
-    title: "Crypto Insurance — Guia de Seguros DeFi 2026",
-    description: "Crypto Insurance: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
+    title: "Seguro Cripto — Guia de Seguros DeFi 2026",
+    description: "Seguro Cripto: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
     url: "https://degen0x.com/pt-br/insurance",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Crypto Insurance — Guia de Seguros DeFi 2026", description: "Crypto Insurance: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes." },
+  twitter: { card: "summary_large_image", title: "Seguro Cripto — Guia de Seguros DeFi 2026", description: "Seguro Cripto: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes." },
   alternates: {
     canonical: "/pt-br/insurance",
     languages: { "en": "/insurance", "tr": "/tr/insurance", "vi": "/vi/insurance", "pt-BR": "/pt-br/insurance", "x-default": "/insurance" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto Insurance — Guia de Seguros DeFi 2026",
-  description: "Crypto Insurance: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
+  title: "Seguro Cripto — Guia de Seguros DeFi 2026",
+  description: "Seguro Cripto: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
   url: "https://degen0x.com/pt-br/insurance",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -63,12 +63,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Insurance — Guia de Seguros DeFi 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Crypto Insurance: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Seguro Cripto — Guia de Seguros DeFi 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Seguro Cripto: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">O Que É Seguro DeFi?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Guia de seguro DeFi sobre Crypto Insurance: protocolos de seguro descentralizado que protegem contra exploits de contratos inteligentes, hacks e falhas de protocolo.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Guia de seguro DeFi sobre Seguro Cripto: protocolos de seguro descentralizado que protegem contra exploits de contratos inteligentes, hacks e falhas de protocolo.</p>
             </section>
 
             <section className="mb-10">

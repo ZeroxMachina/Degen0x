@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Ferramenta Cripto Gratuita | Degen0x",
-  description: "Use a ferramenta Portfolio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
+  title: "Portfólio — Ferramenta Cripto Gratuita | Degen0x",
+  description: "Use a ferramenta Portfólio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   openGraph: {
     type: "article",
-    title: "Portfolio — Ferramenta Cripto Gratuita",
-    description: "Use a ferramenta Portfolio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necess",
+    title: "Portfólio — Ferramenta Cripto Gratuita",
+    description: "Use a ferramenta Portfólio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necess",
     url: "https://degen0x.com/pt-br/tools/portfolio-rebalancer",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Portfolio — Ferramenta Cripto Gratuita", description: "Use a ferramenta Portfolio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necess" },
+  twitter: { card: "summary_large_image", title: "Portfólio — Ferramenta Cripto Gratuita", description: "Use a ferramenta Portfólio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necess" },
   alternates: {
     canonical: "/pt-br/tools/portfolio-rebalancer",
     languages: { "en": "/tools/portfolio-rebalancer", "tr": "/tr/tools/portfolio-rebalancer", "vi": "/vi/tools/portfolio-rebalancer", "pt-BR": "/pt-br/tools/portfolio-rebalancer", "x-default": "/tools/portfolio-rebalancer" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Ferramentas", item: "https://degen0x.com/pt-br/tools" },
-    { "@type": "ListItem", position: 3, name: "Portfolio — Ferramenta Cripto Gratuita" }
+    { "@type": "ListItem", position: 3, name: "Portfólio — Ferramenta Cripto Gratuita" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Portfolio — Ferramenta Cripto Gratuita",
-  description: "Use a ferramenta Portfolio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
+  title: "Portfólio — Ferramenta Cripto Gratuita",
+  description: "Use a ferramenta Portfólio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   url: "https://degen0x.com/pt-br/tools/portfolio-rebalancer",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Portfolio e como funciona?", "answer": "Portfolio é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos." },
-  { "question": "Quais são os riscos de investir em Portfolio?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-  { "question": "O que mudou em Portfolio em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-  { "question": "Como usar Portfolio no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+  { "question": "O que é Portfólio e como funciona?", "answer": "Portfólio é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos." },
+  { "question": "Quais são os riscos de investir em Portfólio?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
+  { "question": "O que mudou em Portfólio em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
+  { "question": "Como usar Portfólio no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,39 +59,39 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Ferramentas", href: "/pt-br/tools" },
-              { label: "Portfolio" }
+              { label: "Portfólio" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Portfolio — Ferramenta Cripto Gratuita</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta Portfolio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Portfólio — Ferramenta Cripto Gratuita</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta Portfólio gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Portfolio?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">No ecossistema de criptomoedas, Portfolio ocupa uma posição estratégica. O modelo de desenvolvimento open-source e mecanismos de governança comunitária proporcionam uma estrutura transparente. Integrações no Ethereum, Solana e outras grandes redes expandem o escopo de aplicação de Portfolio.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Portfólio?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">No ecossistema de criptomoedas, Portfólio ocupa uma posição estratégica. O modelo de desenvolvimento open-source e mecanismos de governança comunitária proporcionam uma estrutura transparente. Integrações no Ethereum, Solana e outras grandes redes expandem o escopo de aplicação de Portfólio.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Infraestrutura Técnica e Princípio de Funcionamento</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">A infraestrutura de Portfolio é construída sobre uma arquitetura de camadas: a camada base (Layer 1) garante consenso e segurança, enquanto as camadas superiores (Layer 2) otimizam escalabilidade e velocidade. Esta abordagem otimiza tanto segurança quanto experiência do usuário.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">A infraestrutura de Portfólio é construída sobre uma arquitetura de camadas: a camada base (Layer 1) garante consenso e segurança, enquanto as camadas superiores (Layer 2) otimizam escalabilidade e velocidade. Esta abordagem otimiza tanto segurança quanto experiência do usuário.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Atualizações 2026 e Dinâmicas de Mercado</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Portfolio em 2026 apresenta uma estrutura de mercado mais madura. Estudos de CBDC, novas categorias como DePIN (Redes de Infraestrutura Física Descentralizada) e adoção de arquitetura blockchain modular estão remodelando o ecossistema.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Portfólio em 2026 apresenta uma estrutura de mercado mais madura. Estudos de CBDC, novas categorias como DePIN (Redes de Infraestrutura Física Descentralizada) e adoção de arquitetura blockchain modular estão remodelando o ecossistema.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Portfolio e como funciona?", answer: "Portfolio é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos." },
-                  { question: "Quais são os riscos de investir em Portfolio?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-                  { question: "O que mudou em Portfolio em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-                  { question: "Como usar Portfolio no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+                  { question: "O que é Portfólio e como funciona?", answer: "Portfólio é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos." },
+                  { question: "Quais são os riscos de investir em Portfólio?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
+                  { question: "O que mudou em Portfólio em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
+                  { question: "Como usar Portfólio no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

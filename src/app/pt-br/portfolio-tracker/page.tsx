@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Análise de Rastreador de Portfólio | Degen0x",
-  description: "Guia completo sobre Portfolio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).",
+  title: "Portfólio — Análise de Rastreador de Portfólio | Degen0x",
+  description: "Guia completo sobre Portfólio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).",
   openGraph: {
     type: "article",
-    title: "Portfolio — Análise de Rastreador de Portfólio",
-    description: "Guia completo sobre Portfolio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco L",
+    title: "Portfólio — Análise de Rastreador de Portfólio",
+    description: "Guia completo sobre Portfólio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco L",
     url: "https://degen0x.com/pt-br/portfolio-tracker",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Portfolio — Análise de Rastreador de Portfólio", description: "Guia completo sobre Portfolio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco L" },
+  twitter: { card: "summary_large_image", title: "Portfólio — Análise de Rastreador de Portfólio", description: "Guia completo sobre Portfólio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco L" },
   alternates: {
     canonical: "/pt-br/portfolio-tracker",
     languages: { "en": "/portfolio-tracker", "tr": "/tr/portfolio-tracker", "vi": "/vi/portfolio-tracker", "pt-BR": "/pt-br/portfolio-tracker", "x-default": "/portfolio-tracker" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Portfolio — Análise de Rastreador de Portfólio",
-  description: "Guia completo sobre Portfolio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).",
+  title: "Portfólio — Análise de Rastreador de Portfólio",
+  description: "Guia completo sobre Portfólio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).",
   url: "https://degen0x.com/pt-br/portfolio-tracker",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -62,12 +62,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Portfolio — Análise de Rastreador de Portfólio</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Guia completo sobre Portfolio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Portfólio — Análise de Rastreador de Portfólio</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Guia completo sobre Portfólio em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Análise do Rastreador</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Rastreador de portfólio Portfolio: exchanges suportadas, integrações de carteira, rastreamento de preço em tempo real e relatórios de performance.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Rastreador de portfólio Portfólio: exchanges suportadas, integrações de carteira, rastreamento de preço em tempo real e relatórios de performance.</p>
             </section>
 
             <section className="mb-10">

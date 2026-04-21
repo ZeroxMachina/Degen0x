@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Portfolio — Portföy Takip Aracı İncelemesi | Degen0x",
-  description: "Portfolio hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.",
+  title: "Portföy — Portföy Takip Aracı İncelemesi | Degen0x",
+  description: "Portföy hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.",
   openGraph: {
     type: "article",
-    title: "Portfolio — Portföy Takip Aracı İncelemesi",
-    description: "Portfolio hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar a",
+    title: "Portföy — Portföy Takip Aracı İncelemesi",
+    description: "Portföy hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar alm",
     url: "https://degen0x.com/tr/portfolio-tracker",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Portfolio — Portföy Takip Aracı İncelemesi", description: "Portfolio hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar a" },
+  twitter: { card: "summary_large_image", title: "Portföy — Portföy Takip Aracı İncelemesi", description: "Portföy hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar alm" },
   alternates: {
     canonical: "/tr/portfolio-tracker",
     languages: { "en": "/portfolio-tracker", "tr": "/tr/portfolio-tracker", "vi": "/vi/portfolio-tracker", "pt-BR": "/pt-br/portfolio-tracker", "x-default": "/portfolio-tracker" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Portfolio — Portföy Takip Aracı İncelemesi",
-  description: "Portfolio hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.",
+  title: "Portföy — Portföy Takip Aracı İncelemesi",
+  description: "Portföy hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.",
   url: "https://degen0x.com/tr/portfolio-tracker",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -62,12 +62,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Portfolio — Portföy Takip Aracı İncelemesi</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Portfolio hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Portföy — Portföy Takip Aracı İncelemesi</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Portföy hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Portföy Takip Aracı İncelemesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Portfolio portföy takip aracı: desteklenen borsalar, cüzdan entegrasyonları, gerçek zamanlı fiyat takibi ve performans raporlama özellikleri.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Portföy portföy takip aracı: desteklenen borsalar, cüzdan entegrasyonları, gerçek zamanlı fiyat takibi ve performans raporlama özellikleri.</p>
             </section>
 
             <section className="mb-10">

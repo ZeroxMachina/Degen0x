@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Ethereum Pectra Upgrade What to Expect — Análise Cripto Atualizada | Degen0x",
-  description: "Guia completo sobre Ethereum Pectra Upgrade What to Expect em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Cr",
+  title: "Ethereum Pectra Atualização What to Expect — Análise Cripto Atualizada | Degen0x",
+  description: "Guia completo sobre Ethereum Pectra Atualização What to Expect em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal da",
   openGraph: {
     type: "article",
-    title: "Ethereum Pectra Upgrade What to Expect — Análise Cripto Atualizada",
-    description: "Guia completo sobre Ethereum Pectra Upgrade What to Expect em português. A CVM e o Banco Central regulamentam ativos dig",
+    title: "Ethereum Pectra Atualização What to Expect — Análise Cripto Atualizada",
+    description: "Guia completo sobre Ethereum Pectra Atualização What to Expect em português. A CVM e o Banco Central regulamentam ativos",
     url: "https://degen0x.com/pt-br/blog/ethereum-pectra-upgrade-what-to-expect",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Ethereum Pectra Upgrade What to Expect — Análise Cripto Atualizada", description: "Guia completo sobre Ethereum Pectra Upgrade What to Expect em português. A CVM e o Banco Central regulamentam ativos dig" },
+  twitter: { card: "summary_large_image", title: "Ethereum Pectra Atualização What to Expect — Análise Cripto Atualizada", description: "Guia completo sobre Ethereum Pectra Atualização What to Expect em português. A CVM e o Banco Central regulamentam ativos" },
   alternates: {
     canonical: "/pt-br/blog/ethereum-pectra-upgrade-what-to-expect",
     languages: { "en": "/blog/ethereum-pectra-upgrade-what-to-expect", "tr": "/tr/blog/ethereum-pectra-upgrade-what-to-expect", "vi": "/vi/blog/ethereum-pectra-upgrade-what-to-expect", "pt-BR": "/pt-br/blog/ethereum-pectra-upgrade-what-to-expect", "x-default": "/blog/ethereum-pectra-upgrade-what-to-expect" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Blog", item: "https://degen0x.com/pt-br/blog" },
-    { "@type": "ListItem", position: 3, name: "Ethereum Pectra Upgrade What to Expect — Análise Cripto Atua" }
+    { "@type": "ListItem", position: 3, name: "Ethereum Pectra Atualização What to Expect — Análise Cripto " }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Ethereum Pectra Upgrade What to Expect — Análise Cripto Atualizada",
-  description: "Guia completo sobre Ethereum Pectra Upgrade What to Expect em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Cr",
+  title: "Ethereum Pectra Atualização What to Expect — Análise Cripto Atualizada",
+  description: "Guia completo sobre Ethereum Pectra Atualização What to Expect em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal da",
   url: "https://degen0x.com/pt-br/blog/ethereum-pectra-upgrade-what-to-expect",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -57,19 +57,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Blog", href: "/pt-br/blog" },
-              { label: "Ethereum Pectra Upgrade What to Expect" }
+              { label: "Ethereum Pectra Atualização What to Expect" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ethereum Pectra Upgrade What to Expect — Análise Cripto Atualizada</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Guia completo sobre Ethereum Pectra Upgrade What to Expect em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ethereum Pectra Atualização What to Expect — Análise Cripto Atualizada</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Guia completo sobre Ethereum Pectra Atualização What to Expect em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Análise Atualizada</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Análise de mercado atualizada e opiniões de especialistas sobre Ethereum Pectra Upgrade What to Expect. Últimos desenvolvimentos no mercado cripto, avaliação de tendências e informações práticas.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Análise de mercado atualizada e opiniões de especialistas sobre Ethereum Pectra Atualização What to Expect. Últimos desenvolvimentos no mercado cripto, avaliação de tendências e informações práticas.</p>
             </section>
 
             <section className="mb-10">

@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Token Vesting Schedule — Ücretsiz Kripto Aracı | Degen0x",
-  description: "Token Vesting Schedule aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
+  title: "Token Vesting Takvimi — Ücretsiz Kripto Aracı | Degen0x",
+  description: "Token Vesting Takvimi aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
   openGraph: {
     type: "article",
-    title: "Token Vesting Schedule — Ücretsiz Kripto Aracı",
-    description: "Token Vesting Schedule aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar",
+    title: "Token Vesting Takvimi — Ücretsiz Kripto Aracı",
+    description: "Token Vesting Takvimi aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar ",
     url: "https://degen0x.com/tr/tools/token-vesting-schedule-tracker",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Token Vesting Schedule — Ücretsiz Kripto Aracı", description: "Token Vesting Schedule aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar" },
+  twitter: { card: "summary_large_image", title: "Token Vesting Takvimi — Ücretsiz Kripto Aracı", description: "Token Vesting Takvimi aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar " },
   alternates: {
     canonical: "/tr/tools/token-vesting-schedule-tracker",
     languages: { "en": "/tools/token-vesting-schedule-tracker", "tr": "/tr/tools/token-vesting-schedule-tracker", "vi": "/vi/tools/token-vesting-schedule-tracker", "pt-BR": "/pt-br/tools/token-vesting-schedule-tracker", "x-default": "/tools/token-vesting-schedule-tracker" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Araçlar", item: "https://degen0x.com/tr/tools" },
-    { "@type": "ListItem", position: 3, name: "Token Vesting Schedule — Ücretsiz Kripto Aracı" }
+    { "@type": "ListItem", position: 3, name: "Token Vesting Takvimi — Ücretsiz Kripto Aracı" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Token Vesting Schedule — Ücretsiz Kripto Aracı",
-  description: "Token Vesting Schedule aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
+  title: "Token Vesting Takvimi — Ücretsiz Kripto Aracı",
+  description: "Token Vesting Takvimi aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
   url: "https://degen0x.com/tr/tools/token-vesting-schedule-tracker",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Token Vesting Schedule nedir ve nasıl çalışır?", "answer": "Token Vesting Schedule, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz." },
-  { "question": "Token Vesting Schedule yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-  { "question": "2026\'da Token Vesting Schedule alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Token Vesting Schedule alanında da paralel iyileştirmeler gözlemlenmektedir." },
-  { "question": "Türkiye\'den Token Vesting Schedule nasıl kullanılır?", "answer": "Türkiye\'de Token Vesting Schedule kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Token Vesting Takvimi nedir ve nasıl çalışır?", "answer": "Token Vesting Takvimi, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir." },
+  { "question": "Token Vesting Takvimi yatırımında riskler nelerdir?", "answer": "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
+  { "question": "2026\'da Token Vesting Takvimi alanında neler değişti?", "answer": "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Token Vesting Takvimi bu gelişmelerden doğrudan etkilenmektedir." },
+  { "question": "Türkiye\'den Token Vesting Takvimi nasıl kullanılır?", "answer": "Türkiye\'de Token Vesting Takvimi kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,39 +59,39 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Araçlar", href: "/tr/tools" },
-              { label: "Token Vesting Schedule" }
+              { label: "Token Vesting Takvimi" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Token Vesting Schedule — Ücretsiz Kripto Aracı</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Token Vesting Schedule aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Token Vesting Takvimi — Ücretsiz Kripto Aracı</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Token Vesting Takvimi aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Token Vesting Schedule Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Token Vesting Schedule, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Token Vesting Schedule büyük bir dönüşüm sürecine girmiştir.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Token Vesting Takvimi Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Token Vesting Takvimi, kripto ve blokzincir alanının temel yapı taşlarından biridir. Bu teknoloji, merkezi olmayan mimarisi sayesinde kullanıcılara aracısız ve şeffaf işlem yapma imkanı sunar. 2026 yılı itibarıyla Token Vesting Takvimi alanında TVL, kullanıcı sayısı ve geliştirici aktivitesi gibi metriklerde belirgin artışlar gözlemlenmiştir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Token Vesting Schedule, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Token Vesting Takvimi sistemi, kriptografik hash fonksiyonları, dijital imzalar ve konsensüs mekanizmaları üzerine inşa edilmiştir. Akıllı sözleşmeler, kodla tanımlanmış kurallar çerçevesinde otomatik işlem yürütür. Bu yapı, geleneksel finansal aracılara olan ihtiyacı ortadan kaldırarak işlem maliyetlerini düşürür ve hızı artırır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Token Vesting Schedule için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Token Vesting Schedule bu trendlerden doğrudan etkilenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">2026 yılında Token Vesting Takvimi alanındaki en önemli gelişmeler: düzenleyici çerçevelerin netleşmesi (özellikle AB MiCA düzenlemesi ve ABD SEC kararları), kurumsal benimsemenin hızlanması ve teknolojik iyileştirmelerdir. Ethereum\'un Pectra güncellemesi ve Bitcoin spot ETF onaylarının ardından piyasa olgunlaşma sürecine girmiştir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Token Vesting Schedule nedir ve nasıl çalışır?", answer: "Token Vesting Schedule, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz." },
-                  { question: "Token Vesting Schedule yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-                  { question: "2026\'da Token Vesting Schedule alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Token Vesting Schedule alanında da paralel iyileştirmeler gözlemlenmektedir." },
-                  { question: "Türkiye\'den Token Vesting Schedule nasıl kullanılır?", answer: "Türkiye\'de Token Vesting Schedule kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Token Vesting Takvimi nedir ve nasıl çalışır?", answer: "Token Vesting Takvimi, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir." },
+                  { question: "Token Vesting Takvimi yatırımında riskler nelerdir?", answer: "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
+                  { question: "2026\'da Token Vesting Takvimi alanında neler değişti?", answer: "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Token Vesting Takvimi bu gelişmelerden doğrudan etkilenmektedir." },
+                  { question: "Türkiye\'den Token Vesting Takvimi nasıl kullanılır?", answer: "Türkiye\'de Token Vesting Takvimi kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

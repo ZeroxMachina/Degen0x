@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Binance Card — So Sánh và Đánh Giá Thẻ Crypto | Degen0x",
-  description: "So sánh Binance Card: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
+  title: "Binance Thẻ — So Sánh và Đánh Giá Thẻ Crypto | Degen0x",
+  description: "So sánh Binance Thẻ: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
   openGraph: {
     type: "article",
-    title: "Binance Card — So Sánh và Đánh Giá Thẻ Crypto",
-    description: "So sánh Binance Card: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
+    title: "Binance Thẻ — So Sánh và Đánh Giá Thẻ Crypto",
+    description: "So sánh Binance Thẻ: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
     url: "https://degen0x.com/vi/crypto-cards/reviews/binance-card",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Binance Card — So Sánh và Đánh Giá Thẻ Crypto", description: "So sánh Binance Card: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam." },
+  twitter: { card: "summary_large_image", title: "Binance Thẻ — So Sánh và Đánh Giá Thẻ Crypto", description: "So sánh Binance Thẻ: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam." },
   alternates: {
     canonical: "/vi/crypto-cards/reviews/binance-card",
     languages: { "en": "/crypto-cards/reviews/binance-card", "tr": "/tr/crypto-cards/reviews/binance-card", "vi": "/vi/crypto-cards/reviews/binance-card", "pt-BR": "/pt-br/crypto-cards/reviews/binance-card", "x-default": "/crypto-cards/reviews/binance-card" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Thẻ Crypto", item: "https://degen0x.com/vi/crypto-cards" },
-    { "@type": "ListItem", position: 3, name: "Binance Card — So Sánh và Đánh Giá Thẻ Crypto" }
+    { "@type": "ListItem", position: 3, name: "Binance Thẻ — So Sánh và Đánh Giá Thẻ Crypto" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Binance Card — So Sánh và Đánh Giá Thẻ Crypto",
-  description: "So sánh Binance Card: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
+  title: "Binance Thẻ — So Sánh và Đánh Giá Thẻ Crypto",
+  description: "So sánh Binance Thẻ: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
   url: "https://degen0x.com/vi/crypto-cards/reviews/binance-card",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,7 +42,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Phí thẻ Binance Card là bao nhiêu?", "answer": "Cấu trúc phí: phí phát hành, phí hàng tháng/năm, phí rút ATM, chênh lệch tỷ giá và spread chuyển đổi crypto-fiat. Chú ý phí ẩn." },
+  { "question": "Phí thẻ Binance Thẻ là bao nhiêu?", "answer": "Cấu trúc phí: phí phát hành, phí hàng tháng/năm, phí rút ATM, chênh lệch tỷ giá và spread chuyển đổi crypto-fiat. Chú ý phí ẩn." },
   { "question": "Có thể chi tiêu bằng những crypto nào?", "answer": "Crypto hỗ trợ, cơ chế chuyển đổi tự động và tỷ lệ spread. Bitcoin, Ethereum và stablecoin thường có spread thấp nhất." },
   { "question": "Sử dụng thẻ này tại Việt Nam được không?", "answer": "Thẻ crypto chưa phổ biến rộng rãi tại Việt Nam; nhiều người dùng chuyển đổi crypto sang VND qua P2P trước khi chi tiêu. Đánh giá khả năng sử dụng, truy cập ATM và trải nghiệm chi tiêu." },
   { "question": "Tỷ lệ cashback và thưởng thế nào?", "answer": "Cấu trúc cashback: tỷ lệ hoàn tiền theo chi tiêu, yêu cầu staking, token thưởng và điều kiện sử dụng." }
@@ -59,29 +59,29 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Thẻ Crypto", href: "/vi/crypto-cards" },
-              { label: "Binance Card" }
+              { label: "Binance Thẻ" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Binance Card — So Sánh và Đánh Giá Thẻ Crypto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">So sánh Binance Card: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Binance Thẻ — So Sánh và Đánh Giá Thẻ Crypto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">So sánh Binance Thẻ: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đánh Giá Tổng Quan Thẻ Crypto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Đánh giá toàn diện thẻ Binance Card: loại thẻ (trả trước/ghi nợ/tín dụng), mạng thanh toán (Visa/Mastercard) và khả năng sử dụng toàn cầu. Thẻ crypto chưa phổ biến rộng rãi tại Việt Nam; nhiều người dùng chuyển đổi crypto sang VND qua P2P trước khi chi tiêu.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Đánh giá toàn diện thẻ Binance Thẻ: loại thẻ (trả trước/ghi nợ/tín dụng), mạng thanh toán (Visa/Mastercard) và khả năng sử dụng toàn cầu. Thẻ crypto chưa phổ biến rộng rãi tại Việt Nam; nhiều người dùng chuyển đổi crypto sang VND qua P2P trước khi chi tiêu.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Phí và So Sánh Hoàn Tiền</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Phí hàng tháng/năm, hạn mức rút ATM, chênh lệch tỷ giá, yêu cầu staking và tỷ lệ cashback/thưởng của thẻ Binance Card. Chú ý các phí ẩn.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Phí hàng tháng/năm, hạn mức rút ATM, chênh lệch tỷ giá, yêu cầu staking và tỷ lệ cashback/thưởng của thẻ Binance Thẻ. Chú ý các phí ẩn.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Crypto Hỗ Trợ và Chuyển Đổi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Các crypto có thể chi tiêu qua thẻ Binance Card, cơ chế chuyển đổi tự động (crypto-to-fiat), tỷ lệ spread và tiền tệ fiat hỗ trợ.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Các crypto có thể chi tiêu qua thẻ Binance Thẻ, cơ chế chuyển đổi tự động (crypto-to-fiat), tỷ lệ spread và tiền tệ fiat hỗ trợ.</p>
             </section>
 
             <section className="mb-10">
@@ -93,7 +93,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Phí thẻ Binance Card là bao nhiêu?", answer: "Cấu trúc phí: phí phát hành, phí hàng tháng/năm, phí rút ATM, chênh lệch tỷ giá và spread chuyển đổi crypto-fiat. Chú ý phí ẩn." },
+                  { question: "Phí thẻ Binance Thẻ là bao nhiêu?", answer: "Cấu trúc phí: phí phát hành, phí hàng tháng/năm, phí rút ATM, chênh lệch tỷ giá và spread chuyển đổi crypto-fiat. Chú ý phí ẩn." },
                   { question: "Có thể chi tiêu bằng những crypto nào?", answer: "Crypto hỗ trợ, cơ chế chuyển đổi tự động và tỷ lệ spread. Bitcoin, Ethereum và stablecoin thường có spread thấp nhất." },
                   { question: "Sử dụng thẻ này tại Việt Nam được không?", answer: "Thẻ crypto chưa phổ biến rộng rãi tại Việt Nam; nhiều người dùng chuyển đổi crypto sang VND qua P2P trước khi chi tiêu. Đánh giá khả năng sử dụng, truy cập ATM và trải nghiệm chi tiêu." },
                   { question: "Tỷ lệ cashback và thưởng thế nào?", answer: "Cấu trúc cashback: tỷ lệ hoàn tiền theo chi tiêu, yêu cầu staking, token thưởng và điều kiện sử dụng." }

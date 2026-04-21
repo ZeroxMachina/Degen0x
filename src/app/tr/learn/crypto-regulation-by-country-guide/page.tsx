@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Crypto Regulation by Country: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "Crypto Regulation by Country hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "Ülkelere Göre Kripto Düzenlemeleri: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "Ülkelere Göre Kripto Düzenlemeleri hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   openGraph: {
     type: "article",
-    title: "Crypto Regulation by Country: 2026 Kapsamlı Türkçe Rehber",
-    description: "Crypto Regulation by Country hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncelle",
+    title: "Ülkelere Göre Kripto Düzenlemeleri: 2026 Kapsamlı Türkçe Rehber",
+    description: "Ülkelere Göre Kripto Düzenlemeleri hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 gü",
     url: "https://degen0x.com/tr/learn/crypto-regulation-by-country-guide",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Crypto Regulation by Country: 2026 Kapsamlı Türkçe Rehber", description: "Crypto Regulation by Country hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncelle" },
+  twitter: { card: "summary_large_image", title: "Ülkelere Göre Kripto Düzenlemeleri: 2026 Kapsamlı Türkçe Rehber", description: "Ülkelere Göre Kripto Düzenlemeleri hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 gü" },
   alternates: {
     canonical: "/tr/learn/crypto-regulation-by-country-guide",
     languages: { "en": "/learn/crypto-regulation-by-country-guide", "tr": "/tr/learn/crypto-regulation-by-country-guide", "vi": "/vi/learn/crypto-regulation-by-country-guide", "pt-BR": "/pt-br/learn/crypto-regulation-by-country-guide", "x-default": "/learn/crypto-regulation-by-country-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "Crypto Regulation by Country: 2026 Kapsamlı Türkçe Rehber" }
+    { "@type": "ListItem", position: 3, name: "Ülkelere Göre Kripto Düzenlemeleri: 2026 Kapsamlı Türkçe Reh" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto Regulation by Country: 2026 Kapsamlı Türkçe Rehber",
-  description: "Crypto Regulation by Country hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "Ülkelere Göre Kripto Düzenlemeleri: 2026 Kapsamlı Türkçe Rehber",
+  description: "Ülkelere Göre Kripto Düzenlemeleri hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   url: "https://degen0x.com/tr/learn/crypto-regulation-by-country-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Crypto Regulation by Country nedir ve nasıl çalışır?", "answer": "Crypto Regulation by Country, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. 2026\'da AB MiCA çerçevesi yürürlüğe girmiş, Türkiye\'de SPK ve MASAK kapsamında borsaların lisanslanması ve KYC zorunlulukları detaylandırılmıştır." },
-  { "question": "Crypto Regulation by Country yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-  { "question": "2026\'da Crypto Regulation by Country alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Crypto Regulation by Country alanında da paralel iyileştirmeler gözlemlenmektedir." },
-  { "question": "Türkiye\'den Crypto Regulation by Country nasıl kullanılır?", "answer": "Türkiye\'de Crypto Regulation by Country kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Ülkelere Göre Kripto Düzenlemeleri nedir ve nasıl çalışır?", "answer": "Ülkelere Göre Kripto Düzenlemeleri, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. 2026\'da AB MiCA çerçevesi yürürlüğe girmiş, Türkiye\'de SPK ve MASAK kapsamında borsaların lisanslanması ve KYC zorunlulukları detaylandırılmıştır." },
+  { "question": "Ülkelere Göre Kripto Düzenlemeleri yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+  { "question": "2026\'da Ülkelere Göre Kripto Düzenlemeleri alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Ülkelere Göre Kripto Düzenlemeleri alanında da paralel iyileştirmeler gözlemlenmektedir." },
+  { "question": "Türkiye\'den Ülkelere Göre Kripto Düzenlemeleri nasıl kullanılır?", "answer": "Türkiye\'de Ülkelere Göre Kripto Düzenlemeleri kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "Crypto Regulation by Country" }
+              { label: "Ülkelere Göre Kripto Düzenlemeleri" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Regulation by Country: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Crypto Regulation by Country hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ülkelere Göre Kripto Düzenlemeleri: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Ülkelere Göre Kripto Düzenlemeleri hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Crypto Regulation by Country Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Crypto Regulation by Country, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Crypto Regulation by Country büyük bir dönüşüm sürecine girmiştir. 2026\'da AB MiCA çerçevesi yürürlüğe girmiş, Türkiye\'de SPK ve MASAK kapsamında borsaların lisanslanması ve KYC zorunlulukları detaylandırılmıştır.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Ülkelere Göre Kripto Düzenlemeleri Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Ülkelere Göre Kripto Düzenlemeleri, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Ülkelere Göre Kripto Düzenlemeleri büyük bir dönüşüm sürecine girmiştir. 2026\'da AB MiCA çerçevesi yürürlüğe girmiş, Türkiye\'de SPK ve MASAK kapsamında borsaların lisanslanması ve KYC zorunlulukları detaylandırılmıştır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Crypto Regulation by Country, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Ülkelere Göre Kripto Düzenlemeleri, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Crypto Regulation by Country için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Crypto Regulation by Country bu trendlerden doğrudan etkilenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Ülkelere Göre Kripto Düzenlemeleri için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Ülkelere Göre Kripto Düzenlemeleri bu trendlerden doğrudan etkilenmektedir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Crypto Regulation by Country Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Crypto Regulation by Country kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Ülkelere Göre Kripto Düzenlemeleri Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Ülkelere Göre Kripto Düzenlemeleri kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi Crypto Regulation by Country yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi Ülkelere Göre Kripto Düzenlemeleri yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Crypto Regulation by Country nedir ve nasıl çalışır?", answer: "Crypto Regulation by Country, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. 2026\'da AB MiCA çerçevesi yürürlüğe girmiş, Türkiye\'de SPK ve MASAK kapsamında borsaların lisanslanması ve KYC zorunlulukları detaylandırılmıştır." },
-                  { question: "Crypto Regulation by Country yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-                  { question: "2026\'da Crypto Regulation by Country alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Crypto Regulation by Country alanında da paralel iyileştirmeler gözlemlenmektedir." },
-                  { question: "Türkiye\'den Crypto Regulation by Country nasıl kullanılır?", answer: "Türkiye\'de Crypto Regulation by Country kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Ülkelere Göre Kripto Düzenlemeleri nedir ve nasıl çalışır?", answer: "Ülkelere Göre Kripto Düzenlemeleri, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. 2026\'da AB MiCA çerçevesi yürürlüğe girmiş, Türkiye\'de SPK ve MASAK kapsamında borsaların lisanslanması ve KYC zorunlulukları detaylandırılmıştır." },
+                  { question: "Ülkelere Göre Kripto Düzenlemeleri yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+                  { question: "2026\'da Ülkelere Göre Kripto Düzenlemeleri alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Ülkelere Göre Kripto Düzenlemeleri alanında da paralel iyileştirmeler gözlemlenmektedir." },
+                  { question: "Türkiye\'den Ülkelere Göre Kripto Düzenlemeleri nasıl kullanılır?", answer: "Türkiye\'de Ülkelere Göre Kripto Düzenlemeleri kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

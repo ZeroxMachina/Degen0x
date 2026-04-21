@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Safe Wallet — Güvenlik, Özellikler ve 2026 Değerlendirmesi | Degen0x",
-  description: "Safe Wallet cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında p",
+  title: "Safe Cüzdan — Güvenlik, Özellikler ve 2026 Değerlendirmesi | Degen0x",
+  description: "Safe Cüzdan cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında p",
   openGraph: {
     type: "article",
-    title: "Safe Wallet — Güvenlik, Özellikler ve 2026 Değerlendirmesi",
-    description: "Safe Wallet cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMas",
+    title: "Safe Cüzdan — Güvenlik, Özellikler ve 2026 Değerlendirmesi",
+    description: "Safe Cüzdan cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMas",
     url: "https://degen0x.com/tr/wallets/reviews/safe-wallet",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Safe Wallet — Güvenlik, Özellikler ve 2026 Değerlendirmesi", description: "Safe Wallet cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMas" },
+  twitter: { card: "summary_large_image", title: "Safe Cüzdan — Güvenlik, Özellikler ve 2026 Değerlendirmesi", description: "Safe Cüzdan cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMas" },
   alternates: {
     canonical: "/tr/wallets/reviews/safe-wallet",
     languages: { "en": "/wallets/reviews/safe-wallet", "tr": "/tr/wallets/reviews/safe-wallet", "vi": "/vi/wallets/reviews/safe-wallet", "pt-BR": "/pt-br/wallets/reviews/safe-wallet", "x-default": "/wallets/reviews/safe-wallet" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Cüzdanlar", item: "https://degen0x.com/tr/wallets" },
-    { "@type": "ListItem", position: 3, name: "Safe Wallet — Güvenlik, Özellikler ve 2026 Değerlendirmesi" }
+    { "@type": "ListItem", position: 3, name: "Safe Cüzdan — Güvenlik, Özellikler ve 2026 Değerlendirmesi" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Safe Wallet — Güvenlik, Özellikler ve 2026 Değerlendirmesi",
-  description: "Safe Wallet cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında p",
+  title: "Safe Cüzdan — Güvenlik, Özellikler ve 2026 Değerlendirmesi",
+  description: "Safe Cüzdan cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında p",
   url: "https://degen0x.com/tr/wallets/reviews/safe-wallet",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,9 +42,9 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Safe Wallet cüzdanı güvenli mi?", "answer": "Cüzdan güvenliği değerlendirmesi: özel anahtar yönetimi (kullanıcı mı kontrol ediyor, platform mu?), şifreleme standardı, seed phrase yedekleme mekanizması, biyometrik doğrulama ve multisig desteği. Safe Wallet cüzdanının güvenlik profili detaylı olarak incelenmektedir." },
-  { "question": "Hangi blokzincir ağlarını destekliyor?", "answer": "Safe Wallet cüzdanının desteklediği ağlar (Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche vb.), token standartları (ERC-20, BEP-20, SPL) ve cross-chain transfer kapasitesi incelenmektedir." },
-  { "question": "DeFi protokollerine nasıl erişebilirim?", "answer": "Safe Wallet cüzdanı üzerinden DeFi protokollerine erişim: token swap, likidite sağlama, staking, lending ve NFT işlemleri. Türk yatırımcılar için DeFi protokollerine erişim genellikle MetaMask veya benzeri Web3 cüzdanları üzerinden sağlanır." },
+  { "question": "Safe Cüzdan cüzdanı güvenli mi?", "answer": "Cüzdan güvenliği değerlendirmesi: özel anahtar yönetimi (kullanıcı mı kontrol ediyor, platform mu?), şifreleme standardı, seed phrase yedekleme mekanizması, biyometrik doğrulama ve multisig desteği. Safe Cüzdan cüzdanının güvenlik profili detaylı olarak incelenmektedir." },
+  { "question": "Hangi blokzincir ağlarını destekliyor?", "answer": "Safe Cüzdan cüzdanının desteklediği ağlar (Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche vb.), token standartları (ERC-20, BEP-20, SPL) ve cross-chain transfer kapasitesi incelenmektedir." },
+  { "question": "DeFi protokollerine nasıl erişebilirim?", "answer": "Safe Cüzdan cüzdanı üzerinden DeFi protokollerine erişim: token swap, likidite sağlama, staking, lending ve NFT işlemleri. Türk yatırımcılar için DeFi protokollerine erişim genellikle MetaMask veya benzeri Web3 cüzdanları üzerinden sağlanır." },
   { "question": "Seed phrase\'imi nasıl güvenle saklamalıyım?", "answer": "Seed phrase (kurtarma cümlesi), kripto varlıklarınıza erişimin tek anahtarıdır. Metal yedekleme plakaları, güvenli kasa ve çoklu yedekleme stratejileri kullanın. Dijital ortamda (fotoğraf, not uygulaması, e-posta) kesinlikle saklamayın." }
 ]);
 
@@ -59,43 +59,43 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Cüzdanlar", href: "/tr/wallets" },
-              { label: "Safe Wallet" }
+              { label: "Safe Cüzdan" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Safe Wallet — Güvenlik, Özellikler ve 2026 Değerlendirmesi</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Safe Wallet cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında popülerdir ile karşılaştırma.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Safe Cüzdan — Güvenlik, Özellikler ve 2026 Değerlendirmesi</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Safe Cüzdan cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında popülerdir ile karşılaştırma.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cüzdan Genel Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Safe Wallet cüzdanı hakkında kapsamlı inceleme. Desteklenen blokzincir ağları, token standartları, DApp entegrasyonları ve kullanıcı deneyimi detaylı olarak değerlendirilmektedir. Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında popülerdir ile karşılaştırma sunuyoruz.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Safe Cüzdan cüzdanı hakkında kapsamlı inceleme. Desteklenen blokzincir ağları, token standartları, DApp entegrasyonları ve kullanıcı deneyimi detaylı olarak değerlendirilmektedir. Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında popülerdir ile karşılaştırma sunuyoruz.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Güvenlik Mimarisi ve Anahtar Yönetimi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto cüzdan güvenliği, dijital varlıklarınızın korunmasının temelidir. Safe Wallet cüzdanının özel anahtar yönetimi (self-custodial vs custodial), şifreleme algoritmaları, biyometrik doğrulama, seed phrase yedekleme ve çoklu imza (multisig) desteği incelenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto cüzdan güvenliği, dijital varlıklarınızın korunmasının temelidir. Safe Cüzdan cüzdanının özel anahtar yönetimi (self-custodial vs custodial), şifreleme algoritmaları, biyometrik doğrulama, seed phrase yedekleme ve çoklu imza (multisig) desteği incelenmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Desteklenen Ağlar ve DeFi Entegrasyonu</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Safe Wallet cüzdanının desteklediği blokzincir ağları (Ethereum, BSC, Polygon, Solana, Arbitrum vb.), token swap özellikleri, DeFi protokollerine doğrudan erişim ve NFT görüntüleme/yönetim kapasitesi değerlendirilmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Safe Cüzdan cüzdanının desteklediği blokzincir ağları (Ethereum, BSC, Polygon, Solana, Arbitrum vb.), token swap özellikleri, DeFi protokollerine doğrudan erişim ve NFT görüntüleme/yönetim kapasitesi değerlendirilmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kullanım Rehberi ve İpuçları</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Safe Wallet cüzdanının kurulumu, yedekleme, token ekleme ve güvenli kullanım pratikleri. Seed phrase\'inizi asla dijital ortamda saklamayın, her zaman resmi kaynaklardan indirin ve düzenli güvenlik güncellemelerini uygulayın.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Safe Cüzdan cüzdanının kurulumu, yedekleme, token ekleme ve güvenli kullanım pratikleri. Seed phrase\'inizi asla dijital ortamda saklamayın, her zaman resmi kaynaklardan indirin ve düzenli güvenlik güncellemelerini uygulayın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Safe Wallet cüzdanı güvenli mi?", answer: "Cüzdan güvenliği değerlendirmesi: özel anahtar yönetimi (kullanıcı mı kontrol ediyor, platform mu?), şifreleme standardı, seed phrase yedekleme mekanizması, biyometrik doğrulama ve multisig desteği. Safe Wallet cüzdanının güvenlik profili detaylı olarak incelenmektedir." },
-                  { question: "Hangi blokzincir ağlarını destekliyor?", answer: "Safe Wallet cüzdanının desteklediği ağlar (Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche vb.), token standartları (ERC-20, BEP-20, SPL) ve cross-chain transfer kapasitesi incelenmektedir." },
-                  { question: "DeFi protokollerine nasıl erişebilirim?", answer: "Safe Wallet cüzdanı üzerinden DeFi protokollerine erişim: token swap, likidite sağlama, staking, lending ve NFT işlemleri. Türk yatırımcılar için DeFi protokollerine erişim genellikle MetaMask veya benzeri Web3 cüzdanları üzerinden sağlanır." },
+                  { question: "Safe Cüzdan cüzdanı güvenli mi?", answer: "Cüzdan güvenliği değerlendirmesi: özel anahtar yönetimi (kullanıcı mı kontrol ediyor, platform mu?), şifreleme standardı, seed phrase yedekleme mekanizması, biyometrik doğrulama ve multisig desteği. Safe Cüzdan cüzdanının güvenlik profili detaylı olarak incelenmektedir." },
+                  { question: "Hangi blokzincir ağlarını destekliyor?", answer: "Safe Cüzdan cüzdanının desteklediği ağlar (Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche vb.), token standartları (ERC-20, BEP-20, SPL) ve cross-chain transfer kapasitesi incelenmektedir." },
+                  { question: "DeFi protokollerine nasıl erişebilirim?", answer: "Safe Cüzdan cüzdanı üzerinden DeFi protokollerine erişim: token swap, likidite sağlama, staking, lending ve NFT işlemleri. Türk yatırımcılar için DeFi protokollerine erişim genellikle MetaMask veya benzeri Web3 cüzdanları üzerinden sağlanır." },
                   { question: "Seed phrase\'imi nasıl güvenle saklamalıyım?", answer: "Seed phrase (kurtarma cümlesi), kripto varlıklarınıza erişimin tek anahtarıdır. Metal yedekleme plakaları, güvenli kasa ve çoklu yedekleme stratejileri kullanın. Dijital ortamda (fotoğraf, not uygulaması, e-posta) kesinlikle saklamayın." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">

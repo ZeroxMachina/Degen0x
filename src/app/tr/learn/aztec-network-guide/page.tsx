@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Aztec Network: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "Aztec Network hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "Aztec Ağ: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "Aztec Ağ hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   openGraph: {
     type: "article",
-    title: "Aztec Network: 2026 Kapsamlı Türkçe Rehber",
-    description: "Aztec Network hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe",
+    title: "Aztec Ağ: 2026 Kapsamlı Türkçe Rehber",
+    description: "Aztec Ağ hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kaps",
     url: "https://degen0x.com/tr/learn/aztec-network-guide",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Aztec Network: 2026 Kapsamlı Türkçe Rehber", description: "Aztec Network hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe" },
+  twitter: { card: "summary_large_image", title: "Aztec Ağ: 2026 Kapsamlı Türkçe Rehber", description: "Aztec Ağ hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kaps" },
   alternates: {
     canonical: "/tr/learn/aztec-network-guide",
     languages: { "en": "/learn/aztec-network-guide", "tr": "/tr/learn/aztec-network-guide", "vi": "/vi/learn/aztec-network-guide", "pt-BR": "/pt-br/learn/aztec-network-guide", "x-default": "/learn/aztec-network-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "Aztec Network: 2026 Kapsamlı Türkçe Rehber" }
+    { "@type": "ListItem", position: 3, name: "Aztec Ağ: 2026 Kapsamlı Türkçe Rehber" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Aztec Network: 2026 Kapsamlı Türkçe Rehber",
-  description: "Aztec Network hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "Aztec Ağ: 2026 Kapsamlı Türkçe Rehber",
+  description: "Aztec Ağ hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   url: "https://degen0x.com/tr/learn/aztec-network-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Aztec Network nedir ve nasıl çalışır?", "answer": "Aztec Network, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Zero-knowledge proof teknolojisi hem gizlilik hem ölçeklenebilirlik sağlar. zkSync Era, Polygon zkEVM gibi ZK-rollup\'lar Ethereum\'u ölçeklendirmektedir." },
-  { "question": "Aztec Network yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-  { "question": "2026\'da Aztec Network alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Aztec Network alanında da paralel iyileştirmeler gözlemlenmektedir." },
-  { "question": "Türkiye\'den Aztec Network nasıl kullanılır?", "answer": "Türkiye\'de Aztec Network kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Aztec Ağ nedir ve nasıl çalışır?", "answer": "Aztec Ağ, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Zero-knowledge proof teknolojisi hem gizlilik hem ölçeklenebilirlik sağlar. zkSync Era, Polygon zkEVM gibi ZK-rollup\'lar Ethereum\'u ölçeklendirmektedir." },
+  { "question": "Aztec Ağ yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+  { "question": "2026\'da Aztec Ağ alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Aztec Ağ alanında da paralel iyileştirmeler gözlemlenmektedir." },
+  { "question": "Türkiye\'den Aztec Ağ nasıl kullanılır?", "answer": "Türkiye\'de Aztec Ağ kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "Aztec Network" }
+              { label: "Aztec Ağ" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Aztec Network: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Aztec Network hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Aztec Ağ: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Aztec Ağ hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Aztec Network Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Aztec Network, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Aztec Network büyük bir dönüşüm sürecine girmiştir. Zero-knowledge proof teknolojisi hem gizlilik hem ölçeklenebilirlik sağlar. zkSync Era, Polygon zkEVM gibi ZK-rollup\'lar Ethereum\'u ölçeklendirmektedir.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Aztec Ağ Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Aztec Ağ, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Aztec Ağ büyük bir dönüşüm sürecine girmiştir. Zero-knowledge proof teknolojisi hem gizlilik hem ölçeklenebilirlik sağlar. zkSync Era, Polygon zkEVM gibi ZK-rollup\'lar Ethereum\'u ölçeklendirmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Aztec Network, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Aztec Ağ, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Aztec Network için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Aztec Network bu trendlerden doğrudan etkilenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Aztec Ağ için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Aztec Ağ bu trendlerden doğrudan etkilenmektedir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Aztec Network Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Aztec Network kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Aztec Ağ Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Aztec Ağ kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi Aztec Network yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi Aztec Ağ yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Aztec Network nedir ve nasıl çalışır?", answer: "Aztec Network, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Zero-knowledge proof teknolojisi hem gizlilik hem ölçeklenebilirlik sağlar. zkSync Era, Polygon zkEVM gibi ZK-rollup\'lar Ethereum\'u ölçeklendirmektedir." },
-                  { question: "Aztec Network yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-                  { question: "2026\'da Aztec Network alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Aztec Network alanında da paralel iyileştirmeler gözlemlenmektedir." },
-                  { question: "Türkiye\'den Aztec Network nasıl kullanılır?", answer: "Türkiye\'de Aztec Network kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Aztec Ağ nedir ve nasıl çalışır?", answer: "Aztec Ağ, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Zero-knowledge proof teknolojisi hem gizlilik hem ölçeklenebilirlik sağlar. zkSync Era, Polygon zkEVM gibi ZK-rollup\'lar Ethereum\'u ölçeklendirmektedir." },
+                  { question: "Aztec Ağ yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+                  { question: "2026\'da Aztec Ağ alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Aztec Ağ alanında da paralel iyileştirmeler gözlemlenmektedir." },
+                  { question: "Türkiye\'den Aztec Ağ nasıl kullanılır?", answer: "Türkiye\'de Aztec Ağ kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

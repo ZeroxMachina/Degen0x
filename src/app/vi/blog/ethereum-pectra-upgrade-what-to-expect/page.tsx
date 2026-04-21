@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Ethereum Pectra Upgrade What to Expect — Phân Tích Crypto Mới Nhất | Degen0x",
-  description: "Hướng dẫn toàn diện về Ethereum Pectra Upgrade What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấ",
+  title: "Ethereum Pectra Nâng Cấp What to Expect — Phân Tích Crypto Mới Nhất | Degen0x",
+  description: "Hướng dẫn toàn diện về Ethereum Pectra Nâng Cấp What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không c",
   openGraph: {
     type: "article",
-    title: "Ethereum Pectra Upgrade What to Expect — Phân Tích Crypto Mới Nhất",
-    description: "Hướng dẫn toàn diện về Ethereum Pectra Upgrade What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính th",
+    title: "Ethereum Pectra Nâng Cấp What to Expect — Phân Tích Crypto Mới Nhất",
+    description: "Hướng dẫn toàn diện về Ethereum Pectra Nâng Cấp What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính t",
     url: "https://degen0x.com/vi/blog/ethereum-pectra-upgrade-what-to-expect",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Ethereum Pectra Upgrade What to Expect — Phân Tích Crypto Mới Nhất", description: "Hướng dẫn toàn diện về Ethereum Pectra Upgrade What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính th" },
+  twitter: { card: "summary_large_image", title: "Ethereum Pectra Nâng Cấp What to Expect — Phân Tích Crypto Mới Nhất", description: "Hướng dẫn toàn diện về Ethereum Pectra Nâng Cấp What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính t" },
   alternates: {
     canonical: "/vi/blog/ethereum-pectra-upgrade-what-to-expect",
     languages: { "en": "/blog/ethereum-pectra-upgrade-what-to-expect", "tr": "/tr/blog/ethereum-pectra-upgrade-what-to-expect", "vi": "/vi/blog/ethereum-pectra-upgrade-what-to-expect", "pt-BR": "/pt-br/blog/ethereum-pectra-upgrade-what-to-expect", "x-default": "/blog/ethereum-pectra-upgrade-what-to-expect" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Blog", item: "https://degen0x.com/vi/blog" },
-    { "@type": "ListItem", position: 3, name: "Ethereum Pectra Upgrade What to Expect — Phân Tích Crypto Mớ" }
+    { "@type": "ListItem", position: 3, name: "Ethereum Pectra Nâng Cấp What to Expect — Phân Tích Crypto M" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Ethereum Pectra Upgrade What to Expect — Phân Tích Crypto Mới Nhất",
-  description: "Hướng dẫn toàn diện về Ethereum Pectra Upgrade What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấ",
+  title: "Ethereum Pectra Nâng Cấp What to Expect — Phân Tích Crypto Mới Nhất",
+  description: "Hướng dẫn toàn diện về Ethereum Pectra Nâng Cấp What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không c",
   url: "https://degen0x.com/vi/blog/ethereum-pectra-upgrade-what-to-expect",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -57,19 +57,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Blog", href: "/vi/blog" },
-              { label: "Ethereum Pectra Upgrade What to Expect" }
+              { label: "Ethereum Pectra Nâng Cấp What to Expect" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ethereum Pectra Upgrade What to Expect — Phân Tích Crypto Mới Nhất</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về Ethereum Pectra Upgrade What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ethereum Pectra Nâng Cấp What to Expect — Phân Tích Crypto Mới Nhất</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về Ethereum Pectra Nâng Cấp What to Expect bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Phân Tích Mới Nhất</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Phân tích thị trường mới nhất và ý kiến chuyên gia về Ethereum Pectra Upgrade What to Expect. Các diễn biến gần đây trên thị trường crypto, đánh giá xu hướng và thông tin thực tiễn cho nhà đầu tư.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Phân tích thị trường mới nhất và ý kiến chuyên gia về Ethereum Pectra Nâng Cấp What to Expect. Các diễn biến gần đây trên thị trường crypto, đánh giá xu hướng và thông tin thực tiễn cho nhà đầu tư.</p>
             </section>
 
             <section className="mb-10">

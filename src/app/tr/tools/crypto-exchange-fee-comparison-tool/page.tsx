@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Crypto Exchange Fee — Ücretsiz Kripto Aracı | Degen0x",
-  description: "Crypto Exchange Fee aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
+  title: "Kripto Borsa Ücretleri — Ücretsiz Kripto Aracı | Degen0x",
+  description: "Kripto Borsa Ücretleri aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
   openGraph: {
     type: "article",
-    title: "Crypto Exchange Fee — Ücretsiz Kripto Aracı",
-    description: "Crypto Exchange Fee aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar al",
+    title: "Kripto Borsa Ücretleri — Ücretsiz Kripto Aracı",
+    description: "Kripto Borsa Ücretleri aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar",
     url: "https://degen0x.com/tr/tools/crypto-exchange-fee-comparison-tool",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Crypto Exchange Fee — Ücretsiz Kripto Aracı", description: "Crypto Exchange Fee aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar al" },
+  twitter: { card: "summary_large_image", title: "Kripto Borsa Ücretleri — Ücretsiz Kripto Aracı", description: "Kripto Borsa Ücretleri aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar" },
   alternates: {
     canonical: "/tr/tools/crypto-exchange-fee-comparison-tool",
     languages: { "en": "/tools/crypto-exchange-fee-comparison-tool", "tr": "/tr/tools/crypto-exchange-fee-comparison-tool", "vi": "/vi/tools/crypto-exchange-fee-comparison-tool", "pt-BR": "/pt-br/tools/crypto-exchange-fee-comparison-tool", "x-default": "/tools/crypto-exchange-fee-comparison-tool" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Araçlar", item: "https://degen0x.com/tr/tools" },
-    { "@type": "ListItem", position: 3, name: "Crypto Exchange Fee — Ücretsiz Kripto Aracı" }
+    { "@type": "ListItem", position: 3, name: "Kripto Borsa Ücretleri — Ücretsiz Kripto Aracı" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto Exchange Fee — Ücretsiz Kripto Aracı",
-  description: "Crypto Exchange Fee aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
+  title: "Kripto Borsa Ücretleri — Ücretsiz Kripto Aracı",
+  description: "Kripto Borsa Ücretleri aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
   url: "https://degen0x.com/tr/tools/crypto-exchange-fee-comparison-tool",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Crypto Exchange Fee nedir ve nasıl çalışır?", "answer": "Crypto Exchange Fee, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. CEX\'ler güvenlik ve likidite sunarken, DEX\'ler self-custody ve sansür direnci sağlar. 2026\'da proof-of-reserves standartlaşırken, DEX\'ler intent-based trading ile rekabet etmektedir." },
-  { "question": "Crypto Exchange Fee yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-  { "question": "2026\'da Crypto Exchange Fee alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-  { "question": "Türkiye\'den Crypto Exchange Fee nasıl kullanılır?", "answer": "Türkiye\'de Crypto Exchange Fee kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Kripto Borsa Ücretleri nedir ve nasıl çalışır?", "answer": "Kripto Borsa Ücretleri, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. CEX\'ler güvenlik ve likidite sunarken, DEX\'ler self-custody ve sansür direnci sağlar. 2026\'da proof-of-reserves standartlaşırken, DEX\'ler intent-based trading ile rekabet etmektedir." },
+  { "question": "Kripto Borsa Ücretleri yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+  { "question": "2026\'da Kripto Borsa Ücretleri alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+  { "question": "Türkiye\'den Kripto Borsa Ücretleri nasıl kullanılır?", "answer": "Türkiye\'de Kripto Borsa Ücretleri kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,39 +59,39 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Araçlar", href: "/tr/tools" },
-              { label: "Crypto Exchange Fee" }
+              { label: "Kripto Borsa Ücretleri" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Exchange Fee — Ücretsiz Kripto Aracı</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Crypto Exchange Fee aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Kripto Borsa Ücretleri — Ücretsiz Kripto Aracı</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Kripto Borsa Ücretleri aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Crypto Exchange Fee Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Crypto Exchange Fee stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Crypto Exchange Fee kullanım alanını genişletmektedir. CEX\'ler güvenlik ve likidite sunarken, DEX\'ler self-custody ve sansür direnci sağlar. 2026\'da proof-of-reserves standartlaşırken, DEX\'ler intent-based trading ile rekabet etmektedir.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Kripto Borsa Ücretleri Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Kripto Borsa Ücretleri stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Kripto Borsa Ücretleri kullanım alanını genişletmektedir. CEX\'ler güvenlik ve likidite sunarken, DEX\'ler self-custody ve sansür direnci sağlar. 2026\'da proof-of-reserves standartlaşırken, DEX\'ler intent-based trading ile rekabet etmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Crypto Exchange Fee altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto Borsa Ücretleri altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Crypto Exchange Fee 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto Borsa Ücretleri 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Crypto Exchange Fee nedir ve nasıl çalışır?", answer: "Crypto Exchange Fee, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. CEX\'ler güvenlik ve likidite sunarken, DEX\'ler self-custody ve sansür direnci sağlar. 2026\'da proof-of-reserves standartlaşırken, DEX\'ler intent-based trading ile rekabet etmektedir." },
-                  { question: "Crypto Exchange Fee yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-                  { question: "2026\'da Crypto Exchange Fee alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-                  { question: "Türkiye\'den Crypto Exchange Fee nasıl kullanılır?", answer: "Türkiye\'de Crypto Exchange Fee kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Kripto Borsa Ücretleri nedir ve nasıl çalışır?", answer: "Kripto Borsa Ücretleri, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. CEX\'ler güvenlik ve likidite sunarken, DEX\'ler self-custody ve sansür direnci sağlar. 2026\'da proof-of-reserves standartlaşırken, DEX\'ler intent-based trading ile rekabet etmektedir." },
+                  { question: "Kripto Borsa Ücretleri yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+                  { question: "2026\'da Kripto Borsa Ücretleri alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+                  { question: "Türkiye\'den Kripto Borsa Ücretleri nasıl kullanılır?", answer: "Türkiye\'de Kripto Borsa Ücretleri kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

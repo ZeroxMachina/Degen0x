@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Prepaid Crypto Cards with Minimal KYC — Kripto Kart Karşılaştırma ve İnceleme | Degen0x",
-  description: "Prepaid Crypto Cards with Minimal KYC karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa",
+  title: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar — Kripto Kart Karşılaştırma ve İnceleme | Degen0x",
+  description: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Vis",
   openGraph: {
     type: "article",
-    title: "Prepaid Crypto Cards with Minimal KYC — Kripto Kart Karşılaştırma ve İnceleme",
-    description: "Prepaid Crypto Cards with Minimal KYC karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiy",
+    title: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar — Kripto Kart Karşılaştırma ve İnceleme",
+    description: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türki",
     url: "https://degen0x.com/tr/crypto-cards/prepaid-crypto-card-no-kyc",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Prepaid Crypto Cards with Minimal KYC — Kripto Kart Karşılaştırma ve İnceleme", description: "Prepaid Crypto Cards with Minimal KYC karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiy" },
+  twitter: { card: "summary_large_image", title: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar — Kripto Kart Karşılaştırma ve İnceleme", description: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türki" },
   alternates: {
     canonical: "/tr/crypto-cards/prepaid-crypto-card-no-kyc",
     languages: { "en": "/crypto-cards/prepaid-crypto-card-no-kyc", "tr": "/tr/crypto-cards/prepaid-crypto-card-no-kyc", "vi": "/vi/crypto-cards/prepaid-crypto-card-no-kyc", "pt-BR": "/pt-br/crypto-cards/prepaid-crypto-card-no-kyc", "x-default": "/crypto-cards/prepaid-crypto-card-no-kyc" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Kripto Kartlar", item: "https://degen0x.com/tr/crypto-cards" },
-    { "@type": "ListItem", position: 3, name: "Prepaid Crypto Cards with Minimal KYC — Kripto Kart Karşılaş" }
+    { "@type": "ListItem", position: 3, name: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar — Kripto Kart Karşıla" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Prepaid Crypto Cards with Minimal KYC — Kripto Kart Karşılaştırma ve İnceleme",
-  description: "Prepaid Crypto Cards with Minimal KYC karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa",
+  title: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar — Kripto Kart Karşılaştırma ve İnceleme",
+  description: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Vis",
   url: "https://degen0x.com/tr/crypto-cards/prepaid-crypto-card-no-kyc",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,7 +42,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Prepaid Crypto Cards with Minimal KYC kartının ücretleri nedir?", "answer": "Kart ücret yapısı: başvuru ücreti, aylık/yıllık aidat, ATM çekim ücreti, döviz kuru farkı ve kripto-fiat dönüşüm spread\'i. Gizli ücretlere dikkat edin." },
+  { "question": "Düşük KYC\'li Ön Ödemeli Kripto Kartlar kartının ücretleri nedir?", "answer": "Kart ücret yapısı: başvuru ücreti, aylık/yıllık aidat, ATM çekim ücreti, döviz kuru farkı ve kripto-fiat dönüşüm spread\'i. Gizli ücretlere dikkat edin." },
   { "question": "Hangi kripto paralarla harcama yapabilirim?", "answer": "Desteklenen kripto paralar, otomatik dönüşüm mekanizması ve spread oranları. Bitcoin, Ethereum ve stablecoin genellikle en düşük spread\'e sahiptir." },
   { "question": "Türkiye\'de bu kartı kullanabilir miyim?", "answer": "Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır. Kart kullanılabilirliği, ATM erişimi ve TL harcama deneyimi değerlendirilmektedir." },
   { "question": "Cashback oranları ve ödüller nasıl?", "answer": "Cashback yapısı: harcama bazlı iade oranları, staking gereksinimleri (daha yüksek tier = daha yüksek cashback), ödül token\'ı ve kullanım koşulları." }
@@ -59,29 +59,29 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Kripto Kartlar", href: "/tr/crypto-cards" },
-              { label: "Prepaid Crypto Cards with Minimal KYC" }
+              { label: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Prepaid Crypto Cards with Minimal KYC — Kripto Kart Karşılaştırma ve İnceleme</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Prepaid Crypto Cards with Minimal KYC karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Düşük KYC\'li Ön Ödemeli Kripto Kartlar — Kripto Kart Karşılaştırma ve İnceleme</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Düşük KYC\'li Ön Ödemeli Kripto Kartlar karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kripto Kart Genel Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Prepaid Crypto Cards with Minimal KYC kartı hakkında kapsamlı inceleme: kart türü (ön ödemeli/banka kartı/kredi kartı), desteklenen ödeme ağları (Visa/Mastercard) ve global kullanılabilirlik. Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Düşük KYC\'li Ön Ödemeli Kripto Kartlar kartı hakkında kapsamlı inceleme: kart türü (ön ödemeli/banka kartı/kredi kartı), desteklenen ödeme ağları (Visa/Mastercard) ve global kullanılabilirlik. Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Ücretler ve Cashback Karşılaştırması</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Prepaid Crypto Cards with Minimal KYC kartının aylık/yıllık ücretleri, ATM çekim limitleri, döviz kuru farkları, staking gereksinimleri ve cashback/ödül oranları detaylı olarak karşılaştırılmaktadır. Gizli ücretlere dikkat edin.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Düşük KYC\'li Ön Ödemeli Kripto Kartlar kartının aylık/yıllık ücretleri, ATM çekim limitleri, döviz kuru farkları, staking gereksinimleri ve cashback/ödül oranları detaylı olarak karşılaştırılmaktadır. Gizli ücretlere dikkat edin.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Desteklenen Kripto Paralar ve Dönüşüm</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Prepaid Crypto Cards with Minimal KYC kartı ile harcama yapabileceğiniz kripto paralar, otomatik dönüşüm mekanizması (crypto-to-fiat), spread oranları ve desteklenen fiat para birimleri incelenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Düşük KYC\'li Ön Ödemeli Kripto Kartlar kartı ile harcama yapabileceğiniz kripto paralar, otomatik dönüşüm mekanizması (crypto-to-fiat), spread oranları ve desteklenen fiat para birimleri incelenmektedir.</p>
             </section>
 
             <section className="mb-10">
@@ -93,7 +93,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Prepaid Crypto Cards with Minimal KYC kartının ücretleri nedir?", answer: "Kart ücret yapısı: başvuru ücreti, aylık/yıllık aidat, ATM çekim ücreti, döviz kuru farkı ve kripto-fiat dönüşüm spread\'i. Gizli ücretlere dikkat edin." },
+                  { question: "Düşük KYC\'li Ön Ödemeli Kripto Kartlar kartının ücretleri nedir?", answer: "Kart ücret yapısı: başvuru ücreti, aylık/yıllık aidat, ATM çekim ücreti, döviz kuru farkı ve kripto-fiat dönüşüm spread\'i. Gizli ücretlere dikkat edin." },
                   { question: "Hangi kripto paralarla harcama yapabilirim?", answer: "Desteklenen kripto paralar, otomatik dönüşüm mekanizması ve spread oranları. Bitcoin, Ethereum ve stablecoin genellikle en düşük spread\'e sahiptir." },
                   { question: "Türkiye\'de bu kartı kullanabilir miyim?", answer: "Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır. Kart kullanılabilirliği, ATM erişimi ve TL harcama deneyimi değerlendirilmektedir." },
                   { question: "Cashback oranları ve ödüller nasıl?", answer: "Cashback yapısı: harcama bazlı iade oranları, staking gereksinimleri (daha yüksek tier = daha yüksek cashback), ödül token\'ı ve kullanım koşulları." }

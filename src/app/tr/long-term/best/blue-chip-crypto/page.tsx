@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Blue-Chip Cryptocurrencies for Long-Term Holding — Uzun Vadeli Kripto Stratejisi | Degen0x",
-  description: "Blue-Chip Cryptocurrencies for Long-Term Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl yaklaşımı.",
+  title: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding — Uzun Vadeli Kripto Stratejisi | Degen0x",
+  description: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl yaklaşımı.",
   openGraph: {
     type: "article",
-    title: "Blue-Chip Cryptocurrencies for Long-Term Holding — Uzun Vadeli Kripto Stratejisi",
-    description: "Blue-Chip Cryptocurrencies for Long-Term Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl",
+    title: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding — Uzun Vadeli Kripto Stratejisi",
+    description: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve ho",
     url: "https://degen0x.com/tr/long-term/best/blue-chip-crypto",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Blue-Chip Cryptocurrencies for Long-Term Holding — Uzun Vadeli Kripto Stratejisi", description: "Blue-Chip Cryptocurrencies for Long-Term Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl" },
+  twitter: { card: "summary_large_image", title: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding — Uzun Vadeli Kripto Stratejisi", description: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve ho" },
   alternates: {
     canonical: "/tr/long-term/best/blue-chip-crypto",
     languages: { "en": "/long-term/best/blue-chip-crypto", "tr": "/tr/long-term/best/blue-chip-crypto", "vi": "/vi/long-term/best/blue-chip-crypto", "pt-BR": "/pt-br/long-term/best/blue-chip-crypto", "x-default": "/long-term/best/blue-chip-crypto" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Uzun Vadeli", item: "https://degen0x.com/tr/long-term" },
-    { "@type": "ListItem", position: 3, name: "Blue-Chip Cryptocurrencies for Long-Term Holding — Uzun Vade" }
+    { "@type": "ListItem", position: 3, name: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding — Uzun Va" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Blue-Chip Cryptocurrencies for Long-Term Holding — Uzun Vadeli Kripto Stratejisi",
-  description: "Blue-Chip Cryptocurrencies for Long-Term Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl yaklaşımı.",
+  title: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding — Uzun Vadeli Kripto Stratejisi",
+  description: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl yaklaşımı.",
   url: "https://degen0x.com/tr/long-term/best/blue-chip-crypto",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Uzun Vadeli", href: "/tr/long-term" },
-              { label: "Blue-Chip Cryptocurrencies for Long-Term Holding" }
+              { label: "Blue-Chip Cryptocurrencies for Uzun Vadeli Holding" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blue-Chip Cryptocurrencies for Long-Term Holding — Uzun Vadeli Kripto Stratejisi</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Blue-Chip Cryptocurrencies for Long-Term Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl yaklaşımı.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blue-Chip Cryptocurrencies for Uzun Vadeli Holding — Uzun Vadeli Kripto Stratejisi</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Blue-Chip Cryptocurrencies for Uzun Vadeli Holding: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl yaklaşımı.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Uzun Vadeli Yatırım Stratejisi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Blue-Chip Cryptocurrencies for Long-Term Holding kapsamında uzun vadeli kripto yatırım stratejisi: hodl yaklaşımı, DCA (düzenli alım), value investing ve makroekonomik analiz.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Blue-Chip Cryptocurrencies for Uzun Vadeli Holding kapsamında uzun vadeli kripto yatırım stratejisi: hodl yaklaşımı, DCA (düzenli alım), value investing ve makroekonomik analiz.</p>
             </section>
 
             <section className="mb-10">

@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "MPC Wallet — Bảo Mật, Tính Năng và Đánh Giá 2026 | Degen0x",
-  description: "Đánh giá ví MPC Wallet: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa ",
+  title: "Ví MPC — Bảo Mật, Tính Năng và Đánh Giá 2026 | Degen0x",
+  description: "Đánh giá ví Ví MPC: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn",
   openGraph: {
     type: "article",
-    title: "MPC Wallet — Bảo Mật, Tính Năng và Đánh Giá 2026",
-    description: "Đánh giá ví MPC Wallet: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và C",
+    title: "Ví MPC — Bảo Mật, Tính Năng và Đánh Giá 2026",
+    description: "Đánh giá ví Ví MPC: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin9",
     url: "https://degen0x.com/vi/wallets/best-wallet-for-mpc-security",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "MPC Wallet — Bảo Mật, Tính Năng và Đánh Giá 2026", description: "Đánh giá ví MPC Wallet: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và C" },
+  twitter: { card: "summary_large_image", title: "Ví MPC — Bảo Mật, Tính Năng và Đánh Giá 2026", description: "Đánh giá ví Ví MPC: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin9" },
   alternates: {
     canonical: "/vi/wallets/best-wallet-for-mpc-security",
     languages: { "en": "/wallets/best-wallet-for-mpc-security", "tr": "/tr/wallets/best-wallet-for-mpc-security", "vi": "/vi/wallets/best-wallet-for-mpc-security", "pt-BR": "/pt-br/wallets/best-wallet-for-mpc-security", "x-default": "/wallets/best-wallet-for-mpc-security" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Ví", item: "https://degen0x.com/vi/wallets" },
-    { "@type": "ListItem", position: 3, name: "MPC Wallet — Bảo Mật, Tính Năng và Đánh Giá 2026" }
+    { "@type": "ListItem", position: 3, name: "Ví MPC — Bảo Mật, Tính Năng và Đánh Giá 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "MPC Wallet — Bảo Mật, Tính Năng và Đánh Giá 2026",
-  description: "Đánh giá ví MPC Wallet: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa ",
+  title: "Ví MPC — Bảo Mật, Tính Năng và Đánh Giá 2026",
+  description: "Đánh giá ví Ví MPC: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn",
   url: "https://degen0x.com/vi/wallets/best-wallet-for-mpc-security",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,9 +42,9 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Ví MPC Wallet có an toàn không?", "answer": "Đánh giá bảo mật: quản lý khóa riêng tư (self-custodial hay custodial), chuẩn mã hóa, sao lưu seed phrase, xác thực sinh trắc học và hỗ trợ multisig." },
-  { "question": "Hỗ trợ những blockchain nào?", "answer": "Mạng hỗ trợ bởi ví MPC Wallet: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Chuẩn token (ERC-20, BEP-20, SPL) và khả năng chuyển cross-chain." },
-  { "question": "Truy cập DeFi qua ví MPC Wallet như thế nào?", "answer": "Truy cập giao thức DeFi qua ví MPC Wallet: swap token, cung cấp thanh khoản, staking, lending và giao dịch NFT. Coin98 Finance, một dự án DeFi có nguồn gốc Việt Nam, cung cấp bộ công cụ đa chuỗi cho người dùng Đông Nam Á." },
+  { "question": "Ví Ví MPC có an toàn không?", "answer": "Đánh giá bảo mật: quản lý khóa riêng tư (self-custodial hay custodial), chuẩn mã hóa, sao lưu seed phrase, xác thực sinh trắc học và hỗ trợ multisig." },
+  { "question": "Hỗ trợ những blockchain nào?", "answer": "Mạng hỗ trợ bởi ví Ví MPC: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Chuẩn token (ERC-20, BEP-20, SPL) và khả năng chuyển cross-chain." },
+  { "question": "Truy cập DeFi qua ví Ví MPC như thế nào?", "answer": "Truy cập giao thức DeFi qua ví Ví MPC: swap token, cung cấp thanh khoản, staking, lending và giao dịch NFT. Coin98 Finance, một dự án DeFi có nguồn gốc Việt Nam, cung cấp bộ công cụ đa chuỗi cho người dùng Đông Nam Á." },
   { "question": "Bảo quản seed phrase an toàn như thế nào?", "answer": "Seed phrase là chìa khóa duy nhất để truy cập tài sản. Sử dụng bản sao lưu kim loại, két an toàn và chiến lược sao lưu nhiều bản. Tuyệt đối không lưu trên môi trường số." }
 ]);
 
@@ -59,43 +59,43 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Ví", href: "/vi/wallets" },
-              { label: "MPC Wallet" }
+              { label: "Ví MPC" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">MPC Wallet — Bảo Mật, Tính Năng và Đánh Giá 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Đánh giá ví MPC Wallet: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn phổ biến.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ví MPC — Bảo Mật, Tính Năng và Đánh Giá 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Đánh giá ví Ví MPC: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn phổ biến.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đánh Giá Tổng Quan Ví</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Đánh giá toàn diện về ví MPC Wallet. Mạng blockchain hỗ trợ, tiêu chuẩn token, tích hợp DApp và trải nghiệm người dùng. So sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn phổ biến.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Đánh giá toàn diện về ví Ví MPC. Mạng blockchain hỗ trợ, tiêu chuẩn token, tích hợp DApp và trải nghiệm người dùng. So sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn phổ biến.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kiến Trúc Bảo Mật và Quản Lý Khóa</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Bảo mật ví crypto là nền tảng bảo vệ tài sản số. Quản lý khóa riêng tư (self-custodial vs custodial), thuật toán mã hóa, xác thực sinh trắc học, sao lưu seed phrase và hỗ trợ đa chữ ký (multisig) của ví MPC Wallet.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Bảo mật ví crypto là nền tảng bảo vệ tài sản số. Quản lý khóa riêng tư (self-custodial vs custodial), thuật toán mã hóa, xác thực sinh trắc học, sao lưu seed phrase và hỗ trợ đa chữ ký (multisig) của ví Ví MPC.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Mạng Hỗ Trợ và Tích Hợp DeFi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Các mạng blockchain hỗ trợ bởi ví MPC Wallet (Ethereum, BSC, Polygon, Solana, Arbitrum...), tính năng swap token, truy cập trực tiếp giao thức DeFi và khả năng xem/quản lý NFT.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Các mạng blockchain hỗ trợ bởi ví Ví MPC (Ethereum, BSC, Polygon, Solana, Arbitrum...), tính năng swap token, truy cập trực tiếp giao thức DeFi và khả năng xem/quản lý NFT.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Hướng Dẫn Sử Dụng và Mẹo</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Cài đặt, sao lưu, thêm token và thực hành sử dụng an toàn ví MPC Wallet. Không bao giờ lưu seed phrase trên môi trường số, luôn tải từ nguồn chính thức và thường xuyên cập nhật bảo mật.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Cài đặt, sao lưu, thêm token và thực hành sử dụng an toàn ví Ví MPC. Không bao giờ lưu seed phrase trên môi trường số, luôn tải từ nguồn chính thức và thường xuyên cập nhật bảo mật.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Ví MPC Wallet có an toàn không?", answer: "Đánh giá bảo mật: quản lý khóa riêng tư (self-custodial hay custodial), chuẩn mã hóa, sao lưu seed phrase, xác thực sinh trắc học và hỗ trợ multisig." },
-                  { question: "Hỗ trợ những blockchain nào?", answer: "Mạng hỗ trợ bởi ví MPC Wallet: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Chuẩn token (ERC-20, BEP-20, SPL) và khả năng chuyển cross-chain." },
-                  { question: "Truy cập DeFi qua ví MPC Wallet như thế nào?", answer: "Truy cập giao thức DeFi qua ví MPC Wallet: swap token, cung cấp thanh khoản, staking, lending và giao dịch NFT. Coin98 Finance, một dự án DeFi có nguồn gốc Việt Nam, cung cấp bộ công cụ đa chuỗi cho người dùng Đông Nam Á." },
+                  { question: "Ví Ví MPC có an toàn không?", answer: "Đánh giá bảo mật: quản lý khóa riêng tư (self-custodial hay custodial), chuẩn mã hóa, sao lưu seed phrase, xác thực sinh trắc học và hỗ trợ multisig." },
+                  { question: "Hỗ trợ những blockchain nào?", answer: "Mạng hỗ trợ bởi ví Ví MPC: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Chuẩn token (ERC-20, BEP-20, SPL) và khả năng chuyển cross-chain." },
+                  { question: "Truy cập DeFi qua ví Ví MPC như thế nào?", answer: "Truy cập giao thức DeFi qua ví Ví MPC: swap token, cung cấp thanh khoản, staking, lending và giao dịch NFT. Coin98 Finance, một dự án DeFi có nguồn gốc Việt Nam, cung cấp bộ công cụ đa chuỗi cho người dùng Đông Nam Á." },
                   { question: "Bảo quản seed phrase an toàn như thế nào?", answer: "Seed phrase là chìa khóa duy nhất để truy cập tài sản. Sử dụng bản sao lưu kim loại, két an toàn và chiến lược sao lưu nhiều bản. Tuyệt đối không lưu trên môi trường số." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">

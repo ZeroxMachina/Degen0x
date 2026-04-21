@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "GRASS Protocol: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "GRASS Protocol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "GRASS Protokol: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "GRASS Protokol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   openGraph: {
     type: "article",
-    title: "GRASS Protocol: 2026 Kapsamlı Türkçe Rehber",
-    description: "GRASS Protocol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkç",
+    title: "GRASS Protokol: 2026 Kapsamlı Türkçe Rehber",
+    description: "GRASS Protokol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkç",
     url: "https://degen0x.com/tr/learn/grass-protocol-depin-guide",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "GRASS Protocol: 2026 Kapsamlı Türkçe Rehber", description: "GRASS Protocol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkç" },
+  twitter: { card: "summary_large_image", title: "GRASS Protokol: 2026 Kapsamlı Türkçe Rehber", description: "GRASS Protokol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkç" },
   alternates: {
     canonical: "/tr/learn/grass-protocol-depin-guide",
     languages: { "en": "/learn/grass-protocol-depin-guide", "tr": "/tr/learn/grass-protocol-depin-guide", "vi": "/vi/learn/grass-protocol-depin-guide", "pt-BR": "/pt-br/learn/grass-protocol-depin-guide", "x-default": "/learn/grass-protocol-depin-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "GRASS Protocol: 2026 Kapsamlı Türkçe Rehber" }
+    { "@type": "ListItem", position: 3, name: "GRASS Protokol: 2026 Kapsamlı Türkçe Rehber" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "GRASS Protocol: 2026 Kapsamlı Türkçe Rehber",
-  description: "GRASS Protocol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "GRASS Protokol: 2026 Kapsamlı Türkçe Rehber",
+  description: "GRASS Protokol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   url: "https://degen0x.com/tr/learn/grass-protocol-depin-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "GRASS Protocol nedir ve nasıl çalışır?", "answer": "GRASS Protocol, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz." },
-  { "question": "GRASS Protocol yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-  { "question": "2026\'da GRASS Protocol alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. GRASS Protocol alanında da paralel iyileştirmeler gözlemlenmektedir." },
-  { "question": "Türkiye\'den GRASS Protocol nasıl kullanılır?", "answer": "Türkiye\'de GRASS Protocol kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "GRASS Protokol nedir ve nasıl çalışır?", "answer": "GRASS Protokol, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz." },
+  { "question": "GRASS Protokol yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+  { "question": "2026\'da GRASS Protokol alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. GRASS Protokol alanında da paralel iyileştirmeler gözlemlenmektedir." },
+  { "question": "Türkiye\'den GRASS Protokol nasıl kullanılır?", "answer": "Türkiye\'de GRASS Protokol kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "GRASS Protocol" }
+              { label: "GRASS Protokol" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">GRASS Protocol: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">GRASS Protocol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">GRASS Protokol: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">GRASS Protokol hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">GRASS Protocol Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">GRASS Protocol, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte GRASS Protocol büyük bir dönüşüm sürecine girmiştir.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">GRASS Protokol Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">GRASS Protokol, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte GRASS Protokol büyük bir dönüşüm sürecine girmiştir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan GRASS Protocol, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan GRASS Protokol, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri GRASS Protocol için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. GRASS Protocol bu trendlerden doğrudan etkilenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri GRASS Protokol için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. GRASS Protokol bu trendlerden doğrudan etkilenmektedir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de GRASS Protocol Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de GRASS Protocol kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de GRASS Protokol Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de GRASS Protokol kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi GRASS Protocol yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi GRASS Protokol yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "GRASS Protocol nedir ve nasıl çalışır?", answer: "GRASS Protocol, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz." },
-                  { question: "GRASS Protocol yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-                  { question: "2026\'da GRASS Protocol alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. GRASS Protocol alanında da paralel iyileştirmeler gözlemlenmektedir." },
-                  { question: "Türkiye\'den GRASS Protocol nasıl kullanılır?", answer: "Türkiye\'de GRASS Protocol kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "GRASS Protokol nedir ve nasıl çalışır?", answer: "GRASS Protokol, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz." },
+                  { question: "GRASS Protokol yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+                  { question: "2026\'da GRASS Protokol alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. GRASS Protokol alanında da paralel iyileştirmeler gözlemlenmektedir." },
+                  { question: "Türkiye\'den GRASS Protokol nasıl kullanılır?", answer: "Türkiye\'de GRASS Protokol kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

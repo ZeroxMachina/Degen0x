@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Shakepay Card — Comparação e Análise de Cartões Cripto | Degen0x",
-  description: "Comparação Shakepay Card: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
+  title: "Shakepay Cartão — Comparação e Análise de Cartões Cripto | Degen0x",
+  description: "Comparação Shakepay Cartão: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
   openGraph: {
     type: "article",
-    title: "Shakepay Card — Comparação e Análise de Cartões Cripto",
-    description: "Comparação Shakepay Card: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
+    title: "Shakepay Cartão — Comparação e Análise de Cartões Cripto",
+    description: "Comparação Shakepay Cartão: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
     url: "https://degen0x.com/pt-br/crypto-cards/reviews/shakepay-card",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Shakepay Card — Comparação e Análise de Cartões Cripto", description: "Comparação Shakepay Card: taxas anuais, cashback, países suportados e experiência de uso no Brasil." },
+  twitter: { card: "summary_large_image", title: "Shakepay Cartão — Comparação e Análise de Cartões Cripto", description: "Comparação Shakepay Cartão: taxas anuais, cashback, países suportados e experiência de uso no Brasil." },
   alternates: {
     canonical: "/pt-br/crypto-cards/reviews/shakepay-card",
     languages: { "en": "/crypto-cards/reviews/shakepay-card", "tr": "/tr/crypto-cards/reviews/shakepay-card", "vi": "/vi/crypto-cards/reviews/shakepay-card", "pt-BR": "/pt-br/crypto-cards/reviews/shakepay-card", "x-default": "/crypto-cards/reviews/shakepay-card" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Cartões Cripto", item: "https://degen0x.com/pt-br/crypto-cards" },
-    { "@type": "ListItem", position: 3, name: "Shakepay Card — Comparação e Análise de Cartões Cripto" }
+    { "@type": "ListItem", position: 3, name: "Shakepay Cartão — Comparação e Análise de Cartões Cripto" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Shakepay Card — Comparação e Análise de Cartões Cripto",
-  description: "Comparação Shakepay Card: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
+  title: "Shakepay Cartão — Comparação e Análise de Cartões Cripto",
+  description: "Comparação Shakepay Cartão: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
   url: "https://degen0x.com/pt-br/crypto-cards/reviews/shakepay-card",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,7 +42,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Quais são as taxas do cartão Shakepay Card?", "answer": "Estrutura de taxas: emissão, mensalidade/anuidade, saque em ATM, diferença cambial e spread de conversão crypto-fiat. Atenção às taxas ocultas." },
+  { "question": "Quais são as taxas do cartão Shakepay Cartão?", "answer": "Estrutura de taxas: emissão, mensalidade/anuidade, saque em ATM, diferença cambial e spread de conversão crypto-fiat. Atenção às taxas ocultas." },
   { "question": "Com quais criptos posso gastar?", "answer": "Criptos suportadas, conversão automática e taxas de spread. Bitcoin, Ethereum e stablecoins geralmente têm menor spread." },
   { "question": "Posso usar este cartão no Brasil?", "answer": "Cartões cripto como Binance Card e Crypto.com Card permitem gastos em BRL em estabelecimentos que aceitam Mastercard/Visa. Disponibilidade, acesso a ATMs e experiência de gastos em BRL avaliados." },
   { "question": "Como funciona o cashback?", "answer": "Estrutura: taxas de retorno por gastos, requisitos de staking, token de recompensa e condições de uso." }
@@ -59,29 +59,29 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Cartões Cripto", href: "/pt-br/crypto-cards" },
-              { label: "Shakepay Card" }
+              { label: "Shakepay Cartão" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Shakepay Card — Comparação e Análise de Cartões Cripto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Comparação Shakepay Card: taxas anuais, cashback, países suportados e experiência de uso no Brasil.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Shakepay Cartão — Comparação e Análise de Cartões Cripto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Comparação Shakepay Cartão: taxas anuais, cashback, países suportados e experiência de uso no Brasil.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Avaliação Geral do Cartão Cripto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Análise completa do cartão Shakepay Card: tipo de cartão (pré-pago/débito/crédito), redes de pagamento (Visa/Mastercard) e disponibilidade global. Cartões cripto como Binance Card e Crypto.com Card permitem gastos em BRL em estabelecimentos que aceitam Mastercard/Visa.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Análise completa do cartão Shakepay Cartão: tipo de cartão (pré-pago/débito/crédito), redes de pagamento (Visa/Mastercard) e disponibilidade global. Cartões cripto como Binance Card e Crypto.com Card permitem gastos em BRL em estabelecimentos que aceitam Mastercard/Visa.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Taxas e Comparação de Cashback</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Taxas mensais/anuais, limites de saque em ATM, diferença cambial, requisitos de staking e taxas de cashback/recompensas do cartão Shakepay Card. Atenção às taxas ocultas.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Taxas mensais/anuais, limites de saque em ATM, diferença cambial, requisitos de staking e taxas de cashback/recompensas do cartão Shakepay Cartão. Atenção às taxas ocultas.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Criptos Suportadas e Conversão</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Criptomoedas que podem ser gastas com o cartão Shakepay Card, mecanismo de conversão automática (crypto-to-fiat), taxas de spread e moedas fiat suportadas.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Criptomoedas que podem ser gastas com o cartão Shakepay Cartão, mecanismo de conversão automática (crypto-to-fiat), taxas de spread e moedas fiat suportadas.</p>
             </section>
 
             <section className="mb-10">
@@ -93,7 +93,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Quais são as taxas do cartão Shakepay Card?", answer: "Estrutura de taxas: emissão, mensalidade/anuidade, saque em ATM, diferença cambial e spread de conversão crypto-fiat. Atenção às taxas ocultas." },
+                  { question: "Quais são as taxas do cartão Shakepay Cartão?", answer: "Estrutura de taxas: emissão, mensalidade/anuidade, saque em ATM, diferença cambial e spread de conversão crypto-fiat. Atenção às taxas ocultas." },
                   { question: "Com quais criptos posso gastar?", answer: "Criptos suportadas, conversão automática e taxas de spread. Bitcoin, Ethereum e stablecoins geralmente têm menor spread." },
                   { question: "Posso usar este cartão no Brasil?", answer: "Cartões cripto como Binance Card e Crypto.com Card permitem gastos em BRL em estabelecimentos que aceitam Mastercard/Visa. Disponibilidade, acesso a ATMs e experiência de gastos em BRL avaliados." },
                   { question: "Como funciona o cashback?", answer: "Estrutura: taxas de retorno por gastos, requisitos de staking, token de recompensa e condições de uso." }

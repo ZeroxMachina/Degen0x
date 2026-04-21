@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Crypto Exchange Fee — Ferramenta Cripto Gratuita | Degen0x",
-  description: "Use a ferramenta Crypto Exchange Fee gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
+  title: "Taxas de Exchange Cripto — Ferramenta Cripto Gratuita | Degen0x",
+  description: "Use a ferramenta Taxas de Exchange Cripto gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   openGraph: {
     type: "article",
-    title: "Crypto Exchange Fee — Ferramenta Cripto Gratuita",
-    description: "Use a ferramenta Crypto Exchange Fee gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. ",
+    title: "Taxas de Exchange Cripto — Ferramenta Cripto Gratuita",
+    description: "Use a ferramenta Taxas de Exchange Cripto gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informa",
     url: "https://degen0x.com/pt-br/tools/crypto-exchange-fee-comparison-tool",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Crypto Exchange Fee — Ferramenta Cripto Gratuita", description: "Use a ferramenta Crypto Exchange Fee gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. " },
+  twitter: { card: "summary_large_image", title: "Taxas de Exchange Cripto — Ferramenta Cripto Gratuita", description: "Use a ferramenta Taxas de Exchange Cripto gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informa" },
   alternates: {
     canonical: "/pt-br/tools/crypto-exchange-fee-comparison-tool",
     languages: { "en": "/tools/crypto-exchange-fee-comparison-tool", "tr": "/tr/tools/crypto-exchange-fee-comparison-tool", "vi": "/vi/tools/crypto-exchange-fee-comparison-tool", "pt-BR": "/pt-br/tools/crypto-exchange-fee-comparison-tool", "x-default": "/tools/crypto-exchange-fee-comparison-tool" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Ferramentas", item: "https://degen0x.com/pt-br/tools" },
-    { "@type": "ListItem", position: 3, name: "Crypto Exchange Fee — Ferramenta Cripto Gratuita" }
+    { "@type": "ListItem", position: 3, name: "Taxas de Exchange Cripto — Ferramenta Cripto Gratuita" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto Exchange Fee — Ferramenta Cripto Gratuita",
-  description: "Use a ferramenta Crypto Exchange Fee gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
+  title: "Taxas de Exchange Cripto — Ferramenta Cripto Gratuita",
+  description: "Use a ferramenta Taxas de Exchange Cripto gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   url: "https://degen0x.com/pt-br/tools/crypto-exchange-fee-comparison-tool",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Crypto Exchange Fee e como funciona?", "answer": "Crypto Exchange Fee é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. CEXs oferecem liquidez e segurança, DEXs oferecem self-custody. Proof-of-reserves está se tornando padrão entre exchanges centralizadas." },
-  { "question": "Quais são os riscos de investir em Crypto Exchange Fee?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-  { "question": "O que mudou em Crypto Exchange Fee em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-  { "question": "Como usar Crypto Exchange Fee no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+  { "question": "O que é Taxas de Exchange Cripto e como funciona?", "answer": "Taxas de Exchange Cripto é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. CEXs oferecem liquidez e segurança, DEXs oferecem self-custody. Proof-of-reserves está se tornando padrão entre exchanges centralizadas." },
+  { "question": "Quais são os riscos de investir em Taxas de Exchange Cripto?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
+  { "question": "O que mudou em Taxas de Exchange Cripto em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
+  { "question": "Como usar Taxas de Exchange Cripto no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,39 +59,39 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Ferramentas", href: "/pt-br/tools" },
-              { label: "Crypto Exchange Fee" }
+              { label: "Taxas de Exchange Cripto" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Exchange Fee — Ferramenta Cripto Gratuita</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta Crypto Exchange Fee gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Taxas de Exchange Cripto — Ferramenta Cripto Gratuita</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta Taxas de Exchange Cripto gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Crypto Exchange Fee?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">No ecossistema de criptomoedas, Crypto Exchange Fee ocupa uma posição estratégica. O modelo de desenvolvimento open-source e mecanismos de governança comunitária proporcionam uma estrutura transparente. Integrações no Ethereum, Solana e outras grandes redes expandem o escopo de aplicação de Crypto Exchange Fee.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Taxas de Exchange Cripto?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">No ecossistema de criptomoedas, Taxas de Exchange Cripto ocupa uma posição estratégica. O modelo de desenvolvimento open-source e mecanismos de governança comunitária proporcionam uma estrutura transparente. Integrações no Ethereum, Solana e outras grandes redes expandem o escopo de aplicação de Taxas de Exchange Cripto.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Infraestrutura Técnica e Princípio de Funcionamento</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">A infraestrutura de Crypto Exchange Fee é construída sobre uma arquitetura de camadas: a camada base (Layer 1) garante consenso e segurança, enquanto as camadas superiores (Layer 2) otimizam escalabilidade e velocidade. Esta abordagem otimiza tanto segurança quanto experiência do usuário.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">A infraestrutura de Taxas de Exchange Cripto é construída sobre uma arquitetura de camadas: a camada base (Layer 1) garante consenso e segurança, enquanto as camadas superiores (Layer 2) otimizam escalabilidade e velocidade. Esta abordagem otimiza tanto segurança quanto experiência do usuário.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Atualizações 2026 e Dinâmicas de Mercado</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Crypto Exchange Fee em 2026 apresenta uma estrutura de mercado mais madura. Estudos de CBDC, novas categorias como DePIN (Redes de Infraestrutura Física Descentralizada) e adoção de arquitetura blockchain modular estão remodelando o ecossistema.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Taxas de Exchange Cripto em 2026 apresenta uma estrutura de mercado mais madura. Estudos de CBDC, novas categorias como DePIN (Redes de Infraestrutura Física Descentralizada) e adoção de arquitetura blockchain modular estão remodelando o ecossistema.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Crypto Exchange Fee e como funciona?", answer: "Crypto Exchange Fee é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. CEXs oferecem liquidez e segurança, DEXs oferecem self-custody. Proof-of-reserves está se tornando padrão entre exchanges centralizadas." },
-                  { question: "Quais são os riscos de investir em Crypto Exchange Fee?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-                  { question: "O que mudou em Crypto Exchange Fee em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-                  { question: "Como usar Crypto Exchange Fee no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+                  { question: "O que é Taxas de Exchange Cripto e como funciona?", answer: "Taxas de Exchange Cripto é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. CEXs oferecem liquidez e segurança, DEXs oferecem self-custody. Proof-of-reserves está se tornando padrão entre exchanges centralizadas." },
+                  { question: "Quais são os riscos de investir em Taxas de Exchange Cripto?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
+                  { question: "O que mudou em Taxas de Exchange Cripto em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
+                  { question: "Como usar Taxas de Exchange Cripto no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Token Launchpads — Web3 İş Fırsatları ve Stratejiler | Degen0x",
-  description: "Token Launchpads: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.",
+  title: "Token Lansman Platformları — Web3 İş Fırsatları ve Stratejiler | Degen0x",
+  description: "Token Lansman Platformları: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.",
   openGraph: {
     type: "article",
-    title: "Token Launchpads — Web3 İş Fırsatları ve Stratejiler",
-    description: "Token Launchpads: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber",
+    title: "Token Lansman Platformları — Web3 İş Fırsatları ve Stratejiler",
+    description: "Token Lansman Platformları: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler i",
     url: "https://degen0x.com/tr/web3-business/best/launchpads",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Token Launchpads — Web3 İş Fırsatları ve Stratejiler", description: "Token Launchpads: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber" },
+  twitter: { card: "summary_large_image", title: "Token Lansman Platformları — Web3 İş Fırsatları ve Stratejiler", description: "Token Lansman Platformları: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler i" },
   alternates: {
     canonical: "/tr/web3-business/best/launchpads",
     languages: { "en": "/web3-business/best/launchpads", "tr": "/tr/web3-business/best/launchpads", "vi": "/vi/web3-business/best/launchpads", "pt-BR": "/pt-br/web3-business/best/launchpads", "x-default": "/web3-business/best/launchpads" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Web3 İş", item: "https://degen0x.com/tr/web3-business" },
-    { "@type": "ListItem", position: 3, name: "Token Launchpads — Web3 İş Fırsatları ve Stratejiler" }
+    { "@type": "ListItem", position: 3, name: "Token Lansman Platformları — Web3 İş Fırsatları ve Stratejil" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Token Launchpads — Web3 İş Fırsatları ve Stratejiler",
-  description: "Token Launchpads: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.",
+  title: "Token Lansman Platformları — Web3 İş Fırsatları ve Stratejiler",
+  description: "Token Lansman Platformları: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.",
   url: "https://degen0x.com/tr/web3-business/best/launchpads",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Web3 İş", href: "/tr/web3-business" },
-              { label: "Token Launchpads" }
+              { label: "Token Lansman Platformları" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Token Launchpads — Web3 İş Fırsatları ve Stratejiler</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Token Launchpads: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Token Lansman Platformları — Web3 İş Fırsatları ve Stratejiler</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Token Lansman Platformları: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Web3 İş Modelleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Token Launchpads kapsamında Web3 iş modelleri: DAO yapıları, token ekonomileri, merkeziyetsiz pazaryerleri ve creator ekonomisi. Türk geliştirici ekosistemi blockchain alanında hızla büyümekte olup İstanbul önemli bir Web3 merkezi haline gelmiştir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Token Lansman Platformları kapsamında Web3 iş modelleri: DAO yapıları, token ekonomileri, merkeziyetsiz pazaryerleri ve creator ekonomisi. Türk geliştirici ekosistemi blockchain alanında hızla büyümekte olup İstanbul önemli bir Web3 merkezi haline gelmiştir.</p>
             </section>
 
             <section className="mb-10">

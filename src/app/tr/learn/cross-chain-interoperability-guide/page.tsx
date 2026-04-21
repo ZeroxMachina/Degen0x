@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Cross-Chain Interoperability: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "Cross-Chain Interoperability hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "Cross-Chain Birlikte Çalışabilirlik: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "Cross-Chain Birlikte Çalışabilirlik hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   openGraph: {
     type: "article",
-    title: "Cross-Chain Interoperability: 2026 Kapsamlı Türkçe Rehber",
-    description: "Cross-Chain Interoperability hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncelle",
+    title: "Cross-Chain Birlikte Çalışabilirlik: 2026 Kapsamlı Türkçe Rehber",
+    description: "Cross-Chain Birlikte Çalışabilirlik hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 g",
     url: "https://degen0x.com/tr/learn/cross-chain-interoperability-guide",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Cross-Chain Interoperability: 2026 Kapsamlı Türkçe Rehber", description: "Cross-Chain Interoperability hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncelle" },
+  twitter: { card: "summary_large_image", title: "Cross-Chain Birlikte Çalışabilirlik: 2026 Kapsamlı Türkçe Rehber", description: "Cross-Chain Birlikte Çalışabilirlik hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 g" },
   alternates: {
     canonical: "/tr/learn/cross-chain-interoperability-guide",
     languages: { "en": "/learn/cross-chain-interoperability-guide", "tr": "/tr/learn/cross-chain-interoperability-guide", "vi": "/vi/learn/cross-chain-interoperability-guide", "pt-BR": "/pt-br/learn/cross-chain-interoperability-guide", "x-default": "/learn/cross-chain-interoperability-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "Cross-Chain Interoperability: 2026 Kapsamlı Türkçe Rehber" }
+    { "@type": "ListItem", position: 3, name: "Cross-Chain Birlikte Çalışabilirlik: 2026 Kapsamlı Türkçe Re" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Cross-Chain Interoperability: 2026 Kapsamlı Türkçe Rehber",
-  description: "Cross-Chain Interoperability hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
+  title: "Cross-Chain Birlikte Çalışabilirlik: 2026 Kapsamlı Türkçe Rehber",
+  description: "Cross-Chain Birlikte Çalışabilirlik hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   url: "https://degen0x.com/tr/learn/cross-chain-interoperability-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Cross-Chain Interoperability nedir ve nasıl çalışır?", "answer": "Cross-Chain Interoperability, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır." },
-  { "question": "Cross-Chain Interoperability yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-  { "question": "2026\'da Cross-Chain Interoperability alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-  { "question": "Türkiye\'den Cross-Chain Interoperability nasıl kullanılır?", "answer": "Türkiye\'de Cross-Chain Interoperability kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Cross-Chain Birlikte Çalışabilirlik nedir ve nasıl çalışır?", "answer": "Cross-Chain Birlikte Çalışabilirlik, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır." },
+  { "question": "Cross-Chain Birlikte Çalışabilirlik yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+  { "question": "2026\'da Cross-Chain Birlikte Çalışabilirlik alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+  { "question": "Türkiye\'den Cross-Chain Birlikte Çalışabilirlik nasıl kullanılır?", "answer": "Türkiye\'de Cross-Chain Birlikte Çalışabilirlik kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "Cross-Chain Interoperability" }
+              { label: "Cross-Chain Birlikte Çalışabilirlik" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Cross-Chain Interoperability: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Cross-Chain Interoperability hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Cross-Chain Birlikte Çalışabilirlik: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Cross-Chain Birlikte Çalışabilirlik hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Cross-Chain Interoperability Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Cross-Chain Interoperability stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Cross-Chain Interoperability kullanım alanını genişletmektedir. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Cross-Chain Birlikte Çalışabilirlik Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Cross-Chain Birlikte Çalışabilirlik stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Cross-Chain Birlikte Çalışabilirlik kullanım alanını genişletmektedir. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Cross-Chain Interoperability altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Cross-Chain Birlikte Çalışabilirlik altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Cross-Chain Interoperability 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Cross-Chain Birlikte Çalışabilirlik 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Cross-Chain Interoperability Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Cross-Chain Interoperability kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Cross-Chain Birlikte Çalışabilirlik Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Cross-Chain Birlikte Çalışabilirlik kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Cross-Chain Interoperability ile ilgili riskleri anlamak, bilinçli yatırım kararlarının temelidir. Piyasa riski (volatilite), teknoloji riski (kod hataları), karşı taraf riski (platform iflasları — FTX örneğinde olduğu gibi) ve düzenleyici risk (yasaklar veya kısıtlamalar) değerlendirilmelidir. Cold wallet kullanmak ve özel anahtarlarınızı güvenli saklamak en önemli güvenlik uygulamalarıdır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Cross-Chain Birlikte Çalışabilirlik ile ilgili riskleri anlamak, bilinçli yatırım kararlarının temelidir. Piyasa riski (volatilite), teknoloji riski (kod hataları), karşı taraf riski (platform iflasları — FTX örneğinde olduğu gibi) ve düzenleyici risk (yasaklar veya kısıtlamalar) değerlendirilmelidir. Cold wallet kullanmak ve özel anahtarlarınızı güvenli saklamak en önemli güvenlik uygulamalarıdır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Cross-Chain Interoperability nedir ve nasıl çalışır?", answer: "Cross-Chain Interoperability, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır." },
-                  { question: "Cross-Chain Interoperability yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-                  { question: "2026\'da Cross-Chain Interoperability alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-                  { question: "Türkiye\'den Cross-Chain Interoperability nasıl kullanılır?", answer: "Türkiye\'de Cross-Chain Interoperability kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Cross-Chain Birlikte Çalışabilirlik nedir ve nasıl çalışır?", answer: "Cross-Chain Birlikte Çalışabilirlik, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır." },
+                  { question: "Cross-Chain Birlikte Çalışabilirlik yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+                  { question: "2026\'da Cross-Chain Birlikte Çalışabilirlik alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+                  { question: "Türkiye\'den Cross-Chain Birlikte Çalışabilirlik nasıl kullanılır?", answer: "Türkiye\'de Cross-Chain Birlikte Çalışabilirlik kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

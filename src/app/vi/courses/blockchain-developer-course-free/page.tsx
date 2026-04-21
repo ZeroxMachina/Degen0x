@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Blockchain Developer Courses bies, Alchemy — Khóa Học Crypto | Degen0x",
-  description: "Hướng dẫn toàn diện về Blockchain Developer Courses bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng khôn",
+  title: "Blockchain Lập Trình Viên Khóa Học bies, Alchemy — Khóa Học Crypto | Degen0x",
+  description: "Hướng dẫn toàn diện về Blockchain Lập Trình Viên Khóa Học bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưn",
   openGraph: {
     type: "article",
-    title: "Blockchain Developer Courses bies, Alchemy — Khóa Học Crypto",
-    description: "Hướng dẫn toàn diện về Blockchain Developer Courses bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chín",
+    title: "Blockchain Lập Trình Viên Khóa Học bies, Alchemy — Khóa Học Crypto",
+    description: "Hướng dẫn toàn diện về Blockchain Lập Trình Viên Khóa Học bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chư",
     url: "https://degen0x.com/vi/courses/blockchain-developer-course-free",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Blockchain Developer Courses bies, Alchemy — Khóa Học Crypto", description: "Hướng dẫn toàn diện về Blockchain Developer Courses bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chín" },
+  twitter: { card: "summary_large_image", title: "Blockchain Lập Trình Viên Khóa Học bies, Alchemy — Khóa Học Crypto", description: "Hướng dẫn toàn diện về Blockchain Lập Trình Viên Khóa Học bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chư" },
   alternates: {
     canonical: "/vi/courses/blockchain-developer-course-free",
     languages: { "en": "/courses/blockchain-developer-course-free", "tr": "/tr/courses/blockchain-developer-course-free", "vi": "/vi/courses/blockchain-developer-course-free", "pt-BR": "/pt-br/courses/blockchain-developer-course-free", "x-default": "/courses/blockchain-developer-course-free" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Khóa Học", item: "https://degen0x.com/vi/courses" },
-    { "@type": "ListItem", position: 3, name: "Blockchain Developer Courses bies, Alchemy — Khóa Học Crypto" }
+    { "@type": "ListItem", position: 3, name: "Blockchain Lập Trình Viên Khóa Học bies, Alchemy — Khóa Học " }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Blockchain Developer Courses bies, Alchemy — Khóa Học Crypto",
-  description: "Hướng dẫn toàn diện về Blockchain Developer Courses bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng khôn",
+  title: "Blockchain Lập Trình Viên Khóa Học bies, Alchemy — Khóa Học Crypto",
+  description: "Hướng dẫn toàn diện về Blockchain Lập Trình Viên Khóa Học bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưn",
   url: "https://degen0x.com/vi/courses/blockchain-developer-course-free",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -57,19 +57,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Khóa Học", href: "/vi/courses" },
-              { label: "Blockchain Developer Courses bies, Alchemy" }
+              { label: "Blockchain Lập Trình Viên Khóa Học bies, Alchemy" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blockchain Developer Courses bies, Alchemy — Khóa Học Crypto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về Blockchain Developer Courses bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blockchain Lập Trình Viên Khóa Học bies, Alchemy — Khóa Học Crypto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về Blockchain Lập Trình Viên Khóa Học bies, Alchemy bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Nội Dung Khóa Học</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Khóa học crypto Blockchain Developer Courses bies, Alchemy: chương trình toàn diện từ khái niệm cơ bản đến chiến lược nâng cao. Được hỗ trợ bằng ví dụ thực hành và kịch bản thị trường thực tế.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Khóa học crypto Blockchain Lập Trình Viên Khóa Học bies, Alchemy: chương trình toàn diện từ khái niệm cơ bản đến chiến lược nâng cao. Được hỗ trợ bằng ví dụ thực hành và kịch bản thị trường thực tế.</p>
             </section>
 
             <section className="mb-10">

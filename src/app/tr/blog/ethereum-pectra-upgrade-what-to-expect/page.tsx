@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Ethereum Pectra Upgrade What to Expect — Kripto Güncel Analiz | Degen0x",
-  description: "Ethereum Pectra Upgrade What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için",
+  title: "Ethereum Pectra Güncellemesi What to Expect — Kripto Güncel Analiz | Degen0x",
+  description: "Ethereum Pectra Güncellemesi What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız",
   openGraph: {
     type: "article",
-    title: "Ethereum Pectra Upgrade What to Expect — Kripto Güncel Analiz",
-    description: "Ethereum Pectra Upgrade What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto d",
+    title: "Ethereum Pectra Güncellemesi What to Expect — Kripto Güncel Analiz",
+    description: "Ethereum Pectra Güncellemesi What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kri",
     url: "https://degen0x.com/tr/blog/ethereum-pectra-upgrade-what-to-expect",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Ethereum Pectra Upgrade What to Expect — Kripto Güncel Analiz", description: "Ethereum Pectra Upgrade What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto d" },
+  twitter: { card: "summary_large_image", title: "Ethereum Pectra Güncellemesi What to Expect — Kripto Güncel Analiz", description: "Ethereum Pectra Güncellemesi What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kri" },
   alternates: {
     canonical: "/tr/blog/ethereum-pectra-upgrade-what-to-expect",
     languages: { "en": "/blog/ethereum-pectra-upgrade-what-to-expect", "tr": "/tr/blog/ethereum-pectra-upgrade-what-to-expect", "vi": "/vi/blog/ethereum-pectra-upgrade-what-to-expect", "pt-BR": "/pt-br/blog/ethereum-pectra-upgrade-what-to-expect", "x-default": "/blog/ethereum-pectra-upgrade-what-to-expect" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Blog", item: "https://degen0x.com/tr/blog" },
-    { "@type": "ListItem", position: 3, name: "Ethereum Pectra Upgrade What to Expect — Kripto Güncel Anali" }
+    { "@type": "ListItem", position: 3, name: "Ethereum Pectra Güncellemesi What to Expect — Kripto Güncel " }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Ethereum Pectra Upgrade What to Expect — Kripto Güncel Analiz",
-  description: "Ethereum Pectra Upgrade What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için",
+  title: "Ethereum Pectra Güncellemesi What to Expect — Kripto Güncel Analiz",
+  description: "Ethereum Pectra Güncellemesi What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız",
   url: "https://degen0x.com/tr/blog/ethereum-pectra-upgrade-what-to-expect",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -57,19 +57,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Blog", href: "/tr/blog" },
-              { label: "Ethereum Pectra Upgrade What to Expect" }
+              { label: "Ethereum Pectra Güncellemesi What to Expect" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ethereum Pectra Upgrade What to Expect — Kripto Güncel Analiz</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Ethereum Pectra Upgrade What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ethereum Pectra Güncellemesi What to Expect — Kripto Güncel Analiz</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Ethereum Pectra Güncellemesi What to Expect hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Güncel Analiz</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Ethereum Pectra Upgrade What to Expect hakkında güncel piyasa analizi ve uzman görüşleri. Kripto piyasasındaki son gelişmeler, trend değerlendirmeleri ve yatırımcılar için pratik bilgiler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Ethereum Pectra Güncellemesi What to Expect hakkında güncel piyasa analizi ve uzman görüşleri. Kripto piyasasındaki son gelişmeler, trend değerlendirmeleri ve yatırımcılar için pratik bilgiler.</p>
             </section>
 
             <section className="mb-10">

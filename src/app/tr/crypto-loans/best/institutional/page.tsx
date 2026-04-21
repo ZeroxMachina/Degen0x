@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Institutional Crypto Lending — Kripto Kredi Platformları Karşılaştırması | Degen0x",
-  description: "Institutional Crypto Lending karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
+  title: "Kurumsal Kripto Kredi — Kripto Kredi Platformları Karşılaştırması | Degen0x",
+  description: "Kurumsal Kripto Kredi karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
   openGraph: {
     type: "article",
-    title: "Institutional Crypto Lending — Kripto Kredi Platformları Karşılaştırması",
-    description: "Institutional Crypto Lending karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güven",
+    title: "Kurumsal Kripto Kredi — Kripto Kredi Platformları Karşılaştırması",
+    description: "Kurumsal Kripto Kredi karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliğ",
     url: "https://degen0x.com/tr/crypto-loans/best/institutional",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Institutional Crypto Lending — Kripto Kredi Platformları Karşılaştırması", description: "Institutional Crypto Lending karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güven" },
+  twitter: { card: "summary_large_image", title: "Kurumsal Kripto Kredi — Kripto Kredi Platformları Karşılaştırması", description: "Kurumsal Kripto Kredi karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliğ" },
   alternates: {
     canonical: "/tr/crypto-loans/best/institutional",
     languages: { "en": "/crypto-loans/best/institutional", "tr": "/tr/crypto-loans/best/institutional", "vi": "/vi/crypto-loans/best/institutional", "pt-BR": "/pt-br/crypto-loans/best/institutional", "x-default": "/crypto-loans/best/institutional" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Kripto Krediler", item: "https://degen0x.com/tr/crypto-loans" },
-    { "@type": "ListItem", position: 3, name: "Institutional Crypto Lending — Kripto Kredi Platformları Kar" }
+    { "@type": "ListItem", position: 3, name: "Kurumsal Kripto Kredi — Kripto Kredi Platformları Karşılaştı" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Institutional Crypto Lending — Kripto Kredi Platformları Karşılaştırması",
-  description: "Institutional Crypto Lending karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
+  title: "Kurumsal Kripto Kredi — Kripto Kredi Platformları Karşılaştırması",
+  description: "Kurumsal Kripto Kredi karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
   url: "https://degen0x.com/tr/crypto-loans/best/institutional",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -59,19 +59,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Kripto Krediler", href: "/tr/crypto-loans" },
-              { label: "Institutional Crypto Lending" }
+              { label: "Kurumsal Kripto Kredi" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Institutional Crypto Lending — Kripto Kredi Platformları Karşılaştırması</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Institutional Crypto Lending karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Kurumsal Kripto Kredi — Kripto Kredi Platformları Karşılaştırması</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Kurumsal Kripto Kredi karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kripto Kredi Platformları</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Institutional Crypto Lending kredi platformları karşılaştırması: faiz oranları (APR/APY), desteklenen teminat varlıkları, minimum teminat oranları (LTV) ve likidite riskleri.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kurumsal Kripto Kredi kredi platformları karşılaştırması: faiz oranları (APR/APY), desteklenen teminat varlıkları, minimum teminat oranları (LTV) ve likidite riskleri.</p>
             </section>
 
             <section className="mb-10">
