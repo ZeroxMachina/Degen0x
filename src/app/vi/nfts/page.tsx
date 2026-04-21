@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best NFT Marketplaces of 2026 - Compare & Review — Hướng Dẫn NFT và Phân Tích Thị Trường 2026 | Degen0x",
-  description: "Best NFT Marketplaces of 2026 - Compare & Review: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
+  title: "NFT Marketplaces — Hướng Dẫn NFT và Phân Tích Thị Trường 2026 | Degen0x",
+  description: "NFT Marketplaces: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
   openGraph: {
     type: "article",
-    title: "Best NFT Marketplaces of 2026 - Compare & Review — Hướng Dẫn NFT và Phân Tích Thị Trường 2026",
-    description: "Best NFT Marketplaces of 2026 - Compare & Review: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh t",
+    title: "NFT Marketplaces — Hướng Dẫn NFT và Phân Tích Thị Trường 2026",
+    description: "NFT Marketplaces: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
     url: "https://degen0x.com/vi/nfts",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best NFT Marketplaces of 2026 - Compare & Review — Hướng Dẫn NFT và Phân Tích Thị Trường 2026", description: "Best NFT Marketplaces of 2026 - Compare & Review: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh t" },
+  twitter: { card: "summary_large_image", title: "NFT Marketplaces — Hướng Dẫn NFT và Phân Tích Thị Trường 2026", description: "NFT Marketplaces: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026." },
   alternates: {
     canonical: "/vi/nfts",
     languages: { "en": "/nfts", "tr": "/tr/nfts", "vi": "/vi/nfts", "pt-BR": "/pt-br/nfts", "x-default": "/nfts" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best NFT Marketplaces of 2026 - Compare & Review — Hướng Dẫn NFT và Phân Tích Thị Trường 2026",
-  description: "Best NFT Marketplaces of 2026 - Compare & Review: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
+  title: "NFT Marketplaces — Hướng Dẫn NFT và Phân Tích Thị Trường 2026",
+  description: "NFT Marketplaces: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
   url: "https://degen0x.com/vi/nfts",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -64,12 +64,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best NFT Marketplaces of 2026 - Compare & Review — Hướng Dẫn NFT và Phân Tích Thị Trường 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best NFT Marketplaces of 2026 - Compare & Review: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Marketplaces — Hướng Dẫn NFT và Phân Tích Thị Trường 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">NFT Marketplaces: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Phân Tích Thị Trường NFT</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Phân tích thị trường NFT 2026 cho Best NFT Marketplaces of 2026 - Compare & Review: tổng khối lượng giao dịch, người dùng hoạt động, bộ sưu tập phổ biến và xu hướng giá. Cộng đồng NFT và game blockchain tại Việt Nam rất sôi động, đặc biệt sau sự bùng nổ của Axie Infinity.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Phân tích thị trường NFT 2026 cho NFT Marketplaces: tổng khối lượng giao dịch, người dùng hoạt động, bộ sưu tập phổ biến và xu hướng giá. Cộng đồng NFT và game blockchain tại Việt Nam rất sôi động, đặc biệt sau sự bùng nổ của Axie Infinity.</p>
             </section>
 
             <section className="mb-10">
@@ -79,7 +79,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Hướng Dẫn Mua Bán và Mint</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Chiến lược mua bán NFT liên quan đến Best NFT Marketplaces of 2026 - Compare & Review: mint đúng thời điểm, phân tích floor price, công cụ rarity, tối ưu gas và động lực thị trường thứ cấp.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Chiến lược mua bán NFT liên quan đến NFT Marketplaces: mint đúng thời điểm, phân tích floor price, công cụ rarity, tối ưu gas và động lực thị trường thứ cấp.</p>
             </section>
 
             <section className="mb-10">

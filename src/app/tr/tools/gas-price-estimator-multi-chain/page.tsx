@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Multi-Chain Gas Price Estimator — Ücretsiz Kripto Aracı | Degen0x",
-  description: "Multi-Chain Gas Price Estimator aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
+  title: "Multi-Chain Gas Price — Ücretsiz Kripto Aracı | Degen0x",
+  description: "Multi-Chain Gas Price aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
   openGraph: {
     type: "article",
-    title: "Multi-Chain Gas Price Estimator — Ücretsiz Kripto Aracı",
-    description: "Multi-Chain Gas Price Estimator aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli",
+    title: "Multi-Chain Gas Price — Ücretsiz Kripto Aracı",
+    description: "Multi-Chain Gas Price aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar ",
     url: "https://degen0x.com/tr/tools/gas-price-estimator-multi-chain",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Multi-Chain Gas Price Estimator — Ücretsiz Kripto Aracı", description: "Multi-Chain Gas Price Estimator aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli" },
+  twitter: { card: "summary_large_image", title: "Multi-Chain Gas Price — Ücretsiz Kripto Aracı", description: "Multi-Chain Gas Price aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar " },
   alternates: {
     canonical: "/tr/tools/gas-price-estimator-multi-chain",
     languages: { "en": "/tools/gas-price-estimator-multi-chain", "tr": "/tr/tools/gas-price-estimator-multi-chain", "vi": "/vi/tools/gas-price-estimator-multi-chain", "pt-BR": "/pt-br/tools/gas-price-estimator-multi-chain", "x-default": "/tools/gas-price-estimator-multi-chain" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Araçlar", item: "https://degen0x.com/tr/tools" },
-    { "@type": "ListItem", position: 3, name: "Multi-Chain Gas Price Estimator — Ücretsiz Kripto Aracı" }
+    { "@type": "ListItem", position: 3, name: "Multi-Chain Gas Price — Ücretsiz Kripto Aracı" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Multi-Chain Gas Price Estimator — Ücretsiz Kripto Aracı",
-  description: "Multi-Chain Gas Price Estimator aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
+  title: "Multi-Chain Gas Price — Ücretsiz Kripto Aracı",
+  description: "Multi-Chain Gas Price aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
   url: "https://degen0x.com/tr/tools/gas-price-estimator-multi-chain",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Multi-Chain Gas Price Estimator nedir ve nasıl çalışır?", "answer": "Multi-Chain Gas Price Estimator, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir." },
-  { "question": "Multi-Chain Gas Price Estimator yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-  { "question": "2026\'da Multi-Chain Gas Price Estimator alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-  { "question": "Türkiye\'den Multi-Chain Gas Price Estimator nasıl kullanılır?", "answer": "Türkiye\'de Multi-Chain Gas Price Estimator kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Multi-Chain Gas Price nedir ve nasıl çalışır?", "answer": "Multi-Chain Gas Price, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir." },
+  { "question": "Multi-Chain Gas Price yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+  { "question": "2026\'da Multi-Chain Gas Price alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+  { "question": "Türkiye\'den Multi-Chain Gas Price nasıl kullanılır?", "answer": "Türkiye\'de Multi-Chain Gas Price kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,39 +59,39 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Araçlar", href: "/tr/tools" },
-              { label: "Multi-Chain Gas Price Estimator" }
+              { label: "Multi-Chain Gas Price" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Multi-Chain Gas Price Estimator — Ücretsiz Kripto Aracı</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Multi-Chain Gas Price Estimator aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Multi-Chain Gas Price — Ücretsiz Kripto Aracı</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Multi-Chain Gas Price aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Multi-Chain Gas Price Estimator Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Multi-Chain Gas Price Estimator stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Multi-Chain Gas Price Estimator kullanım alanını genişletmektedir.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Multi-Chain Gas Price Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Multi-Chain Gas Price stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Multi-Chain Gas Price kullanım alanını genişletmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Multi-Chain Gas Price Estimator altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Multi-Chain Gas Price altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Multi-Chain Gas Price Estimator 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Multi-Chain Gas Price 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Multi-Chain Gas Price Estimator nedir ve nasıl çalışır?", answer: "Multi-Chain Gas Price Estimator, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir." },
-                  { question: "Multi-Chain Gas Price Estimator yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-                  { question: "2026\'da Multi-Chain Gas Price Estimator alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-                  { question: "Türkiye\'den Multi-Chain Gas Price Estimator nasıl kullanılır?", answer: "Türkiye\'de Multi-Chain Gas Price Estimator kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Multi-Chain Gas Price nedir ve nasıl çalışır?", answer: "Multi-Chain Gas Price, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir." },
+                  { question: "Multi-Chain Gas Price yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+                  { question: "2026\'da Multi-Chain Gas Price alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+                  { question: "Türkiye\'den Multi-Chain Gas Price nasıl kullanılır?", answer: "Türkiye\'de Multi-Chain Gas Price kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Actively Validated Services (AVS) & Restaking Economy Guide: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "Actively Validated Services (AVS) & Restaking Economy Guide hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — ",
+  title: "Actively Validated Services & Restaking Economy: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "Actively Validated Services & Restaking Economy hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsa",
   openGraph: {
     type: "article",
-    title: "Actively Validated Services (AVS) & Restaking Economy Guide: 2026 Kapsamlı Türkçe Rehber",
-    description: "Actively Validated Services (AVS) & Restaking Economy Guide hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl ça",
+    title: "Actively Validated Services & Restaking Economy: 2026 Kapsamlı Türkçe Rehber",
+    description: "Actively Validated Services & Restaking Economy hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskl",
     url: "https://degen0x.com/tr/learn/avs-actively-validated-services-restaking-economy-guide-2026",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Actively Validated Services (AVS) & Restaking Economy Guide: 2026 Kapsamlı Türkçe Rehber", description: "Actively Validated Services (AVS) & Restaking Economy Guide hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl ça" },
+  twitter: { card: "summary_large_image", title: "Actively Validated Services & Restaking Economy: 2026 Kapsamlı Türkçe Rehber", description: "Actively Validated Services & Restaking Economy hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskl" },
   alternates: {
     canonical: "/tr/learn/avs-actively-validated-services-restaking-economy-guide-2026",
     languages: { "en": "/learn/avs-actively-validated-services-restaking-economy-guide-2026", "tr": "/tr/learn/avs-actively-validated-services-restaking-economy-guide-2026", "vi": "/vi/learn/avs-actively-validated-services-restaking-economy-guide-2026", "pt-BR": "/pt-br/learn/avs-actively-validated-services-restaking-economy-guide-2026", "x-default": "/learn/avs-actively-validated-services-restaking-economy-guide-2026" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "Actively Validated Services (AVS) & Restaking Economy Guide:" }
+    { "@type": "ListItem", position: 3, name: "Actively Validated Services & Restaking Economy: 2026 Kapsam" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Actively Validated Services (AVS) & Restaking Economy Guide: 2026 Kapsamlı Türkçe Rehber",
-  description: "Actively Validated Services (AVS) & Restaking Economy Guide hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — ",
+  title: "Actively Validated Services & Restaking Economy: 2026 Kapsamlı Türkçe Rehber",
+  description: "Actively Validated Services & Restaking Economy hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsa",
   url: "https://degen0x.com/tr/learn/avs-actively-validated-services-restaking-economy-guide-2026",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Actively Validated Services (AVS) & Restaking Economy Guide nedir ve nasıl çalışır?", "answer": "Actively Validated Services (AVS) & Restaking Economy Guide, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
-  { "question": "Actively Validated Services (AVS) & Restaking Economy Guide yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-  { "question": "2026\'da Actively Validated Services (AVS) & Restaking Economy Guide alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Actively Validated Services (AVS) & Restaking Economy Guide alanında da paralel iyileştirmeler gözlemlenmektedir." },
-  { "question": "Türkiye\'den Actively Validated Services (AVS) & Restaking Economy Guide nasıl kullanılır?", "answer": "Türkiye\'de Actively Validated Services (AVS) & Restaking Economy Guide kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Actively Validated Services & Restaking Economy nedir ve nasıl çalışır?", "answer": "Actively Validated Services & Restaking Economy, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
+  { "question": "Actively Validated Services & Restaking Economy yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+  { "question": "2026\'da Actively Validated Services & Restaking Economy alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Actively Validated Services & Restaking Economy alanında da paralel iyileştirmeler gözlemlenmektedir." },
+  { "question": "Türkiye\'den Actively Validated Services & Restaking Economy nasıl kullanılır?", "answer": "Türkiye\'de Actively Validated Services & Restaking Economy kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "Actively Validated Services (AVS) & Restaking Econ" }
+              { label: "Actively Validated Services & Restaking Economy" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Actively Validated Services (AVS) & Restaking Economy Guide: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Actively Validated Services (AVS) & Restaking Economy Guide hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Actively Validated Services & Restaking Economy: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Actively Validated Services & Restaking Economy hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Actively Validated Services (AVS) & Restaking Economy Guide Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Actively Validated Services (AVS) & Restaking Economy Guide, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Actively Validated Services (AVS) & Restaking Economy Guide büyük bir dönüşüm sürecine girmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Actively Validated Services & Restaking Economy Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Actively Validated Services & Restaking Economy, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Actively Validated Services & Restaking Economy büyük bir dönüşüm sürecine girmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Actively Validated Services (AVS) & Restaking Economy Guide, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Actively Validated Services & Restaking Economy, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Actively Validated Services (AVS) & Restaking Economy Guide için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Actively Validated Services (AVS) & Restaking Economy Guide bu trendlerden doğrudan etkilenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Actively Validated Services & Restaking Economy için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Actively Validated Services & Restaking Economy bu trendlerden doğrudan etkilenmektedir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Actively Validated Services (AVS) & Restaking Economy Guide Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Actively Validated Services (AVS) & Restaking Economy Guide kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Actively Validated Services & Restaking Economy Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Actively Validated Services & Restaking Economy kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi Actively Validated Services (AVS) & Restaking Economy Guide yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi Actively Validated Services & Restaking Economy yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Actively Validated Services (AVS) & Restaking Economy Guide nedir ve nasıl çalışır?", answer: "Actively Validated Services (AVS) & Restaking Economy Guide, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
-                  { question: "Actively Validated Services (AVS) & Restaking Economy Guide yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-                  { question: "2026\'da Actively Validated Services (AVS) & Restaking Economy Guide alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Actively Validated Services (AVS) & Restaking Economy Guide alanında da paralel iyileştirmeler gözlemlenmektedir." },
-                  { question: "Türkiye\'den Actively Validated Services (AVS) & Restaking Economy Guide nasıl kullanılır?", answer: "Türkiye\'de Actively Validated Services (AVS) & Restaking Economy Guide kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Actively Validated Services & Restaking Economy nedir ve nasıl çalışır?", answer: "Actively Validated Services & Restaking Economy, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
+                  { question: "Actively Validated Services & Restaking Economy yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
+                  { question: "2026\'da Actively Validated Services & Restaking Economy alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Actively Validated Services & Restaking Economy alanında da paralel iyileştirmeler gözlemlenmektedir." },
+                  { question: "Türkiye\'den Actively Validated Services & Restaking Economy nasıl kullanılır?", answer: "Türkiye\'de Actively Validated Services & Restaking Economy kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

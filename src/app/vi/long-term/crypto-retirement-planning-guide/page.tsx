@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation — Chiến Lược Crypto Dài Hạn | Degen0x",
-  description: "Crypto Retirement Planning Guide 2026: Portfolio Allocation: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
+  title: "Crypto Retirement Planning — Chiến Lược Crypto Dài Hạn | Degen0x",
+  description: "Crypto Retirement Planning: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
   openGraph: {
     type: "article",
-    title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation — Chiến Lược Crypto Dài Hạn",
-    description: "Crypto Retirement Planning Guide 2026: Portfolio Allocation: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và p",
+    title: "Crypto Retirement Planning — Chiến Lược Crypto Dài Hạn",
+    description: "Crypto Retirement Planning: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
     url: "https://degen0x.com/vi/long-term/crypto-retirement-planning-guide",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation — Chiến Lược Crypto Dài Hạn", description: "Crypto Retirement Planning Guide 2026: Portfolio Allocation: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và p" },
+  twitter: { card: "summary_large_image", title: "Crypto Retirement Planning — Chiến Lược Crypto Dài Hạn", description: "Crypto Retirement Planning: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl." },
   alternates: {
     canonical: "/vi/long-term/crypto-retirement-planning-guide",
     languages: { "en": "/long-term/crypto-retirement-planning-guide", "tr": "/tr/long-term/crypto-retirement-planning-guide", "vi": "/vi/long-term/crypto-retirement-planning-guide", "pt-BR": "/pt-br/long-term/crypto-retirement-planning-guide", "x-default": "/long-term/crypto-retirement-planning-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Dài Hạn", item: "https://degen0x.com/vi/long-term" },
-    { "@type": "ListItem", position: 3, name: "Crypto Retirement Planning Guide 2026: Portfolio Allocation " }
+    { "@type": "ListItem", position: 3, name: "Crypto Retirement Planning — Chiến Lược Crypto Dài Hạn" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation — Chiến Lược Crypto Dài Hạn",
-  description: "Crypto Retirement Planning Guide 2026: Portfolio Allocation: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
+  title: "Crypto Retirement Planning — Chiến Lược Crypto Dài Hạn",
+  description: "Crypto Retirement Planning: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
   url: "https://degen0x.com/vi/long-term/crypto-retirement-planning-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Dài Hạn", href: "/vi/long-term" },
-              { label: "Crypto Retirement Planning Guide 2026: Portfolio A" }
+              { label: "Crypto Retirement Planning" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Retirement Planning Guide 2026: Portfolio Allocation — Chiến Lược Crypto Dài Hạn</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Crypto Retirement Planning Guide 2026: Portfolio Allocation: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Retirement Planning — Chiến Lược Crypto Dài Hạn</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Crypto Retirement Planning: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Chiến Lược Đầu Tư Dài Hạn</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Chiến lược đầu tư crypto dài hạn cho Crypto Retirement Planning Guide 2026: Portfolio Allocation: phương pháp hodl, DCA (mua định kỳ), value investing và phân tích vĩ mô.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Chiến lược đầu tư crypto dài hạn cho Crypto Retirement Planning: phương pháp hodl, DCA (mua định kỳ), value investing và phân tích vĩ mô.</p>
             </section>
 
             <section className="mb-10">

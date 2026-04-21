@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Crypto Insurance - Compare DeFi & Smart Contract Coverage — DeFi Sigorta Rehberi 2026 | Degen0x",
-  description: "Crypto Insurance - Compare DeFi & Smart Contract Coverage: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
+  title: "Crypto Insurance — DeFi Sigorta Rehberi 2026 | Degen0x",
+  description: "Crypto Insurance: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
   openGraph: {
     type: "article",
-    title: "Crypto Insurance - Compare DeFi & Smart Contract Coverage — DeFi Sigorta Rehberi 2026",
-    description: "Crypto Insurance - Compare DeFi & Smart Contract Coverage: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı s",
+    title: "Crypto Insurance — DeFi Sigorta Rehberi 2026",
+    description: "Crypto Insurance: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
     url: "https://degen0x.com/tr/insurance",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Crypto Insurance - Compare DeFi & Smart Contract Coverage — DeFi Sigorta Rehberi 2026", description: "Crypto Insurance - Compare DeFi & Smart Contract Coverage: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı s" },
+  twitter: { card: "summary_large_image", title: "Crypto Insurance — DeFi Sigorta Rehberi 2026", description: "Crypto Insurance: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi." },
   alternates: {
     canonical: "/tr/insurance",
     languages: { "en": "/insurance", "tr": "/tr/insurance", "vi": "/vi/insurance", "pt-BR": "/pt-br/insurance", "x-default": "/insurance" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto Insurance - Compare DeFi & Smart Contract Coverage — DeFi Sigorta Rehberi 2026",
-  description: "Crypto Insurance - Compare DeFi & Smart Contract Coverage: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
+  title: "Crypto Insurance — DeFi Sigorta Rehberi 2026",
+  description: "Crypto Insurance: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
   url: "https://degen0x.com/tr/insurance",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -63,12 +63,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Insurance - Compare DeFi & Smart Contract Coverage — DeFi Sigorta Rehberi 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Crypto Insurance - Compare DeFi & Smart Contract Coverage: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Insurance — DeFi Sigorta Rehberi 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Crypto Insurance: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">DeFi Sigorta Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Crypto Insurance - Compare DeFi & Smart Contract Coverage konusunda DeFi sigorta rehberi: akıllı sözleşme exploit\'lerine, hack olaylarına ve protokol arızalarına karşı koruma sağlayan merkeziyetsiz sigorta protokolleri.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Crypto Insurance konusunda DeFi sigorta rehberi: akıllı sözleşme exploit\'lerine, hack olaylarına ve protokol arızalarına karşı koruma sağlayan merkeziyetsiz sigorta protokolleri.</p>
             </section>
 
             <section className="mb-10">

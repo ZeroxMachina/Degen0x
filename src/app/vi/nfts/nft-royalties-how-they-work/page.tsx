@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Hướng Dẫn NFT và Phân Tích Thị Trường 2026 | Degen0x",
-  description: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
+  title: "NFT Royalties — Hướng Dẫn NFT và Phân Tích Thị Trường 2026 | Degen0x",
+  description: "NFT Royalties: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
   openGraph: {
     type: "article",
-    title: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Hướng Dẫn NFT và Phân Tích Thị Trường 2026",
-    description: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và h",
+    title: "NFT Royalties — Hướng Dẫn NFT và Phân Tích Thị Trường 2026",
+    description: "NFT Royalties: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
     url: "https://degen0x.com/vi/nfts/nft-royalties-how-they-work",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Hướng Dẫn NFT và Phân Tích Thị Trường 2026", description: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và h" },
+  twitter: { card: "summary_large_image", title: "NFT Royalties — Hướng Dẫn NFT và Phân Tích Thị Trường 2026", description: "NFT Royalties: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026." },
   alternates: {
     canonical: "/vi/nfts/nft-royalties-how-they-work",
     languages: { "en": "/nfts/nft-royalties-how-they-work", "tr": "/tr/nfts/nft-royalties-how-they-work", "vi": "/vi/nfts/nft-royalties-how-they-work", "pt-BR": "/pt-br/nfts/nft-royalties-how-they-work", "x-default": "/nfts/nft-royalties-how-they-work" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "NFT", item: "https://degen0x.com/vi/nfts" },
-    { "@type": "ListItem", position: 3, name: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — H" }
+    { "@type": "ListItem", position: 3, name: "NFT Royalties — Hướng Dẫn NFT và Phân Tích Thị Trường 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Hướng Dẫn NFT và Phân Tích Thị Trường 2026",
-  description: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
+  title: "NFT Royalties — Hướng Dẫn NFT và Phân Tích Thị Trường 2026",
+  description: "NFT Royalties: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",
   url: "https://degen0x.com/vi/nfts/nft-royalties-how-they-work",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -59,19 +59,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "NFT", href: "/vi/nfts" },
-              { label: "NFT Royalties 2026: EIP-2981, Enforcement, Creator" }
+              { label: "NFT Royalties" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Hướng Dẫn NFT và Phân Tích Thị Trường 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Royalties — Hướng Dẫn NFT và Phân Tích Thị Trường 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">NFT Royalties: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Phân Tích Thị Trường NFT</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Phân tích thị trường NFT 2026 cho NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: tổng khối lượng giao dịch, người dùng hoạt động, bộ sưu tập phổ biến và xu hướng giá. Cộng đồng NFT và game blockchain tại Việt Nam rất sôi động, đặc biệt sau sự bùng nổ của Axie Infinity.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Phân tích thị trường NFT 2026 cho NFT Royalties: tổng khối lượng giao dịch, người dùng hoạt động, bộ sưu tập phổ biến và xu hướng giá. Cộng đồng NFT và game blockchain tại Việt Nam rất sôi động, đặc biệt sau sự bùng nổ của Axie Infinity.</p>
             </section>
 
             <section className="mb-10">
@@ -81,7 +81,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Hướng Dẫn Mua Bán và Mint</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Chiến lược mua bán NFT liên quan đến NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: mint đúng thời điểm, phân tích floor price, công cụ rarity, tối ưu gas và động lực thị trường thứ cấp.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Chiến lược mua bán NFT liên quan đến NFT Royalties: mint đúng thời điểm, phân tích floor price, công cụ rarity, tối ưu gas và động lực thị trường thứ cấp.</p>
             </section>
 
             <section className="mb-10">

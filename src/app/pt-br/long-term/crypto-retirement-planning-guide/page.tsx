@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation — Estratégia Cripto de Longo Prazo | Degen0x",
-  description: "Crypto Retirement Planning Guide 2026: Portfolio Allocation: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem hodl.",
+  title: "Crypto Retirement Planning — Estratégia Cripto de Longo Prazo | Degen0x",
+  description: "Crypto Retirement Planning: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem hodl.",
   openGraph: {
     type: "article",
-    title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation — Estratégia Cripto de Longo Prazo",
-    description: "Crypto Retirement Planning Guide 2026: Portfolio Allocation: estratégias de investimento cripto de longo prazo, diversif",
+    title: "Crypto Retirement Planning — Estratégia Cripto de Longo Prazo",
+    description: "Crypto Retirement Planning: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem h",
     url: "https://degen0x.com/pt-br/long-term/crypto-retirement-planning-guide",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation — Estratégia Cripto de Longo Prazo", description: "Crypto Retirement Planning Guide 2026: Portfolio Allocation: estratégias de investimento cripto de longo prazo, diversif" },
+  twitter: { card: "summary_large_image", title: "Crypto Retirement Planning — Estratégia Cripto de Longo Prazo", description: "Crypto Retirement Planning: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem h" },
   alternates: {
     canonical: "/pt-br/long-term/crypto-retirement-planning-guide",
     languages: { "en": "/long-term/crypto-retirement-planning-guide", "tr": "/tr/long-term/crypto-retirement-planning-guide", "vi": "/vi/long-term/crypto-retirement-planning-guide", "pt-BR": "/pt-br/long-term/crypto-retirement-planning-guide", "x-default": "/long-term/crypto-retirement-planning-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Longo Prazo", item: "https://degen0x.com/pt-br/long-term" },
-    { "@type": "ListItem", position: 3, name: "Crypto Retirement Planning Guide 2026: Portfolio Allocation " }
+    { "@type": "ListItem", position: 3, name: "Crypto Retirement Planning — Estratégia Cripto de Longo Praz" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto Retirement Planning Guide 2026: Portfolio Allocation — Estratégia Cripto de Longo Prazo",
-  description: "Crypto Retirement Planning Guide 2026: Portfolio Allocation: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem hodl.",
+  title: "Crypto Retirement Planning — Estratégia Cripto de Longo Prazo",
+  description: "Crypto Retirement Planning: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem hodl.",
   url: "https://degen0x.com/pt-br/long-term/crypto-retirement-planning-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Longo Prazo", href: "/pt-br/long-term" },
-              { label: "Crypto Retirement Planning Guide 2026: Portfolio A" }
+              { label: "Crypto Retirement Planning" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Retirement Planning Guide 2026: Portfolio Allocation — Estratégia Cripto de Longo Prazo</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Crypto Retirement Planning Guide 2026: Portfolio Allocation: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem hodl.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Retirement Planning — Estratégia Cripto de Longo Prazo</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Crypto Retirement Planning: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem hodl.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Estratégia de Investimento de Longo Prazo</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Estratégia de investimento cripto de longo prazo para Crypto Retirement Planning Guide 2026: Portfolio Allocation: método hodl, DCA (compras regulares), value investing e análise macro.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Estratégia de investimento cripto de longo prazo para Crypto Retirement Planning: método hodl, DCA (compras regulares), value investing e análise macro.</p>
             </section>
 
             <section className="mb-10">

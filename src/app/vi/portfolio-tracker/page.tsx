@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Portfolio Tracker — Multi-Chain Crypto Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục | Degen0x",
-  description: "Hướng dẫn toàn diện về Portfolio Tracker — Multi-Chain Crypto Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưn",
+  title: "Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục | Degen0x",
+  description: "Hướng dẫn toàn diện về Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.",
   openGraph: {
     type: "article",
-    title: "Portfolio Tracker — Multi-Chain Crypto Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục",
-    description: "Hướng dẫn toàn diện về Portfolio Tracker — Multi-Chain Crypto Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chư",
+    title: "Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục",
+    description: "Hướng dẫn toàn diện về Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử như",
     url: "https://degen0x.com/vi/portfolio-tracker",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Portfolio Tracker — Multi-Chain Crypto Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục", description: "Hướng dẫn toàn diện về Portfolio Tracker — Multi-Chain Crypto Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chư" },
+  twitter: { card: "summary_large_image", title: "Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục", description: "Hướng dẫn toàn diện về Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử như" },
   alternates: {
     canonical: "/vi/portfolio-tracker",
     languages: { "en": "/portfolio-tracker", "tr": "/tr/portfolio-tracker", "vi": "/vi/portfolio-tracker", "pt-BR": "/pt-br/portfolio-tracker", "x-default": "/portfolio-tracker" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Portfolio Tracker — Multi-Chain Crypto Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục",
-  description: "Hướng dẫn toàn diện về Portfolio Tracker — Multi-Chain Crypto Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưn",
+  title: "Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục",
+  description: "Hướng dẫn toàn diện về Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.",
   url: "https://degen0x.com/vi/portfolio-tracker",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -62,12 +62,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Portfolio Tracker — Multi-Chain Crypto Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về Portfolio Tracker — Multi-Chain Crypto Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Portfolio — Đánh Giá Công Cụ Theo Dõi Danh Mục</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về Portfolio bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đánh Giá Công Cụ Theo Dõi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Công cụ theo dõi danh mục Portfolio Tracker — Multi-Chain Crypto Portfolio: sàn hỗ trợ, tích hợp ví, theo dõi giá thời gian thực và báo cáo hiệu suất.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Công cụ theo dõi danh mục Portfolio: sàn hỗ trợ, tích hợp ví, theo dõi giá thời gian thực và báo cáo hiệu suất.</p>
             </section>
 
             <section className="mb-10">

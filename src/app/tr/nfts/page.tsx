@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best NFT Marketplaces of 2026 - Compare & Review — NFT Rehberi ve Piyasa Analizi 2026 | Degen0x",
-  description: "Best NFT Marketplaces of 2026 - Compare & Review: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
+  title: "NFT Marketplaces — NFT Rehberi ve Piyasa Analizi 2026 | Degen0x",
+  description: "NFT Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
   openGraph: {
     type: "article",
-    title: "Best NFT Marketplaces of 2026 - Compare & Review — NFT Rehberi ve Piyasa Analizi 2026",
-    description: "Best NFT Marketplaces of 2026 - Compare & Review: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosi",
+    title: "NFT Marketplaces — NFT Rehberi ve Piyasa Analizi 2026",
+    description: "NFT Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
     url: "https://degen0x.com/tr/nfts",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best NFT Marketplaces of 2026 - Compare & Review — NFT Rehberi ve Piyasa Analizi 2026", description: "Best NFT Marketplaces of 2026 - Compare & Review: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosi" },
+  twitter: { card: "summary_large_image", title: "NFT Marketplaces — NFT Rehberi ve Piyasa Analizi 2026", description: "NFT Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz." },
   alternates: {
     canonical: "/tr/nfts",
     languages: { "en": "/nfts", "tr": "/tr/nfts", "vi": "/vi/nfts", "pt-BR": "/pt-br/nfts", "x-default": "/nfts" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best NFT Marketplaces of 2026 - Compare & Review — NFT Rehberi ve Piyasa Analizi 2026",
-  description: "Best NFT Marketplaces of 2026 - Compare & Review: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
+  title: "NFT Marketplaces — NFT Rehberi ve Piyasa Analizi 2026",
+  description: "NFT Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
   url: "https://degen0x.com/tr/nfts",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -64,22 +64,22 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best NFT Marketplaces of 2026 - Compare & Review — NFT Rehberi ve Piyasa Analizi 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best NFT Marketplaces of 2026 - Compare & Review: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Marketplaces — NFT Rehberi ve Piyasa Analizi 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">NFT Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">NFT Piyasa Analizi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Best NFT Marketplaces of 2026 - Compare & Review konusunda 2026 NFT piyasa analizi: toplam işlem hacmi, aktif kullanıcılar, en popüler koleksiyonlar ve fiyat trendleri. NFT ticareti Türkiye\'de hızla büyüyen bir pazar; OpenSea ve Blur en çok kullanılan platformlardır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">NFT Marketplaces konusunda 2026 NFT piyasa analizi: toplam işlem hacmi, aktif kullanıcılar, en popüler koleksiyonlar ve fiyat trendleri. NFT ticareti Türkiye\'de hızla büyüyen bir pazar; OpenSea ve Blur en çok kullanılan platformlardır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Standartlar</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">NFT teknik altyapısı: ERC-721 ve ERC-1155 standartları, metadata depolama (on-chain vs IPFS), royalty mekanizmaları ve cross-chain NFT transferleri. Best NFT Marketplaces of 2026 - Compare & Review bağlamında bu standartların uygulanması değerlendirilmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">NFT teknik altyapısı: ERC-721 ve ERC-1155 standartları, metadata depolama (on-chain vs IPFS), royalty mekanizmaları ve cross-chain NFT transferleri. NFT Marketplaces bağlamında bu standartların uygulanması değerlendirilmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Alım-Satım ve Minting Rehberi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Best NFT Marketplaces of 2026 - Compare & Review ile ilgili NFT alım-satım stratejileri: doğru zamanlamada mint etme, floor price analizi, rarity araçları, gas optimizasyonu ve ikincil pazar dinamikleri.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">NFT Marketplaces ile ilgili NFT alım-satım stratejileri: doğru zamanlamada mint etme, floor price analizi, rarity araçları, gas optimizasyonu ve ikincil pazar dinamikleri.</p>
             </section>
 
             <section className="mb-10">

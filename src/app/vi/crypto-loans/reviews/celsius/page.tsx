@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Celsius Review 2026: Lessons From the CeFi Collapse — So Sánh Nền Tảng Vay Crypto | Degen0x",
-  description: "So sánh Celsius Review 2026: Lessons From the CeFi Collapse: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
+  title: "Celsius — So Sánh Nền Tảng Vay Crypto | Degen0x",
+  description: "So sánh Celsius: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
   openGraph: {
     type: "article",
-    title: "Celsius Review 2026: Lessons From the CeFi Collapse — So Sánh Nền Tảng Vay Crypto",
-    description: "So sánh Celsius Review 2026: Lessons From the CeFi Collapse: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ t",
+    title: "Celsius — So Sánh Nền Tảng Vay Crypto",
+    description: "So sánh Celsius: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
     url: "https://degen0x.com/vi/crypto-loans/reviews/celsius",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Celsius Review 2026: Lessons From the CeFi Collapse — So Sánh Nền Tảng Vay Crypto", description: "So sánh Celsius Review 2026: Lessons From the CeFi Collapse: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ t" },
+  twitter: { card: "summary_large_image", title: "Celsius — So Sánh Nền Tảng Vay Crypto", description: "So sánh Celsius: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng." },
   alternates: {
     canonical: "/vi/crypto-loans/reviews/celsius",
     languages: { "en": "/crypto-loans/reviews/celsius", "tr": "/tr/crypto-loans/reviews/celsius", "vi": "/vi/crypto-loans/reviews/celsius", "pt-BR": "/pt-br/crypto-loans/reviews/celsius", "x-default": "/crypto-loans/reviews/celsius" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Vay Crypto", item: "https://degen0x.com/vi/crypto-loans" },
-    { "@type": "ListItem", position: 3, name: "Celsius Review 2026: Lessons From the CeFi Collapse — So Sán" }
+    { "@type": "ListItem", position: 3, name: "Celsius — So Sánh Nền Tảng Vay Crypto" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Celsius Review 2026: Lessons From the CeFi Collapse — So Sánh Nền Tảng Vay Crypto",
-  description: "So sánh Celsius Review 2026: Lessons From the CeFi Collapse: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
+  title: "Celsius — So Sánh Nền Tảng Vay Crypto",
+  description: "So sánh Celsius: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
   url: "https://degen0x.com/vi/crypto-loans/reviews/celsius",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Vay Crypto", href: "/vi/crypto-loans" },
-              { label: "Celsius Review 2026: Lessons From the CeFi Collaps" }
+              { label: "Celsius" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Celsius Review 2026: Lessons From the CeFi Collapse — So Sánh Nền Tảng Vay Crypto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">So sánh Celsius Review 2026: Lessons From the CeFi Collapse: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Celsius — So Sánh Nền Tảng Vay Crypto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">So sánh Celsius: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Nền Tảng Vay Crypto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">So sánh nền tảng vay Celsius Review 2026: Lessons From the CeFi Collapse: lãi suất (APR/APY), tài sản thế chấp hỗ trợ, tỷ lệ thế chấp tối thiểu (LTV) và rủi ro thanh khoản.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">So sánh nền tảng vay Celsius: lãi suất (APR/APY), tài sản thế chấp hỗ trợ, tỷ lệ thế chấp tối thiểu (LTV) và rủi ro thanh khoản.</p>
             </section>
 
             <section className="mb-10">

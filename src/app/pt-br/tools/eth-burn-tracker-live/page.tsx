@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply — Ferramenta Cripto Gratuita | Degen0x",
-  description: "Use a ferramenta ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. ",
+  title: "ETH Burn — Ferramenta Cripto Gratuita | Degen0x",
+  description: "Use a ferramenta ETH Burn gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   openGraph: {
     type: "article",
-    title: "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply — Ferramenta Cripto Gratuita",
-    description: "Use a ferramenta ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply gratuitamente. Analise o mercado cripto, fa",
+    title: "ETH Burn — Ferramenta Cripto Gratuita",
+    description: "Use a ferramenta ETH Burn gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessi",
     url: "https://degen0x.com/pt-br/tools/eth-burn-tracker-live",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply — Ferramenta Cripto Gratuita", description: "Use a ferramenta ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply gratuitamente. Analise o mercado cripto, fa" },
+  twitter: { card: "summary_large_image", title: "ETH Burn — Ferramenta Cripto Gratuita", description: "Use a ferramenta ETH Burn gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessi" },
   alternates: {
     canonical: "/pt-br/tools/eth-burn-tracker-live",
     languages: { "en": "/tools/eth-burn-tracker-live", "tr": "/tr/tools/eth-burn-tracker-live", "vi": "/vi/tools/eth-burn-tracker-live", "pt-BR": "/pt-br/tools/eth-burn-tracker-live", "x-default": "/tools/eth-burn-tracker-live" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Ferramentas", item: "https://degen0x.com/pt-br/tools" },
-    { "@type": "ListItem", position: 3, name: "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply " }
+    { "@type": "ListItem", position: 3, name: "ETH Burn — Ferramenta Cripto Gratuita" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply — Ferramenta Cripto Gratuita",
-  description: "Use a ferramenta ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. ",
+  title: "ETH Burn — Ferramenta Cripto Gratuita",
+  description: "Use a ferramenta ETH Burn gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   url: "https://degen0x.com/pt-br/tools/eth-burn-tracker-live",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply e como funciona?", "answer": "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Ethereum hospeda mais de 60% do TVL DeFi global. A atualização Pectra 2026 melhorou account abstraction e reduziu custos de Layer 2 para menos de \$0.01." },
-  { "question": "Quais são os riscos de investir em ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-  { "question": "O que mudou em ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-  { "question": "Como usar ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+  { "question": "O que é ETH Burn e como funciona?", "answer": "ETH Burn é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Ethereum hospeda mais de 60% do TVL DeFi global. A atualização Pectra 2026 melhorou account abstraction e reduziu custos de Layer 2 para menos de \$0.01." },
+  { "question": "Quais são os riscos de investir em ETH Burn?", "answer": "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
+  { "question": "O que mudou em ETH Burn em 2026?", "answer": "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
+  { "question": "Como usar ETH Burn no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,39 +59,39 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Ferramentas", href: "/pt-br/tools" },
-              { label: "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn" }
+              { label: "ETH Burn" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply — Ferramenta Cripto Gratuita</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">ETH Burn — Ferramenta Cripto Gratuita</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta ETH Burn gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">O Que É ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">No ecossistema de criptomoedas, ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply ocupa uma posição estratégica. O modelo de desenvolvimento open-source e mecanismos de governança comunitária proporcionam uma estrutura transparente. Integrações no Ethereum, Solana e outras grandes redes expandem o escopo de aplicação de ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">O Que É ETH Burn?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">ETH Burn tem importância crescente no ecossistema de ativos digitais. Construído sobre infraestrutura blockchain, este sistema utiliza contratos inteligentes para executar transações seguras e automáticas. O interesse crescente de investidores institucionais criou uma grande transformação para ETH Burn.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Infraestrutura Técnica e Princípio de Funcionamento</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">A infraestrutura de ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply é construída sobre uma arquitetura de camadas: a camada base (Layer 1) garante consenso e segurança, enquanto as camadas superiores (Layer 2) otimizam escalabilidade e velocidade. Esta abordagem otimiza tanto segurança quanto experiência do usuário.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Tecnicamente, ETH Burn utiliza tecnologia de livro-razão distribuído (DLT). Cada transação é verificada pelos nós da rede e registrada de forma imutável. O mecanismo de consenso utilizado (Proof of Work, Proof of Stake ou protocolos alternativos) determina a segurança e descentralização da rede.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Atualizações 2026 e Dinâmicas de Mercado</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply em 2026 apresenta uma estrutura de mercado mais madura. Estudos de CBDC, novas categorias como DePIN (Redes de Infraestrutura Física Descentralizada) e adoção de arquitetura blockchain modular estão remodelando o ecossistema.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">A dinâmica de mercado de 2026 oferece oportunidades significativas para ETH Burn. A ascensão do DeFi institucional, crescimento da tokenização de ativos reais (RWA) e integrações AI-blockchain trouxeram novo impulso ao setor.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply e como funciona?", answer: "ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Ethereum hospeda mais de 60% do TVL DeFi global. A atualização Pectra 2026 melhorou account abstraction e reduziu custos de Layer 2 para menos de \$0.01." },
-                  { question: "Quais são os riscos de investir em ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-                  { question: "O que mudou em ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-                  { question: "Como usar ETH Burn Tracker: Real-Time EIP-1559 Base Fee Burn & Supply no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+                  { question: "O que é ETH Burn e como funciona?", answer: "ETH Burn é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Ethereum hospeda mais de 60% do TVL DeFi global. A atualização Pectra 2026 melhorou account abstraction e reduziu custos de Layer 2 para menos de \$0.01." },
+                  { question: "Quais são os riscos de investir em ETH Burn?", answer: "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
+                  { question: "O que mudou em ETH Burn em 2026?", answer: "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
+                  { question: "Como usar ETH Burn no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

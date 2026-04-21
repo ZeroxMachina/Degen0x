@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — NFT Rehberi ve Piyasa Analizi 2026 | Degen0x",
-  description: "NFT Photography Marketplaces 2026: SuperRare, Foundation,: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz",
+  title: "NFT Photography Marketplaces — NFT Rehberi ve Piyasa Analizi 2026 | Degen0x",
+  description: "NFT Photography Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
   openGraph: {
     type: "article",
-    title: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — NFT Rehberi ve Piyasa Analizi 2026",
-    description: "NFT Photography Marketplaces 2026: SuperRare, Foundation,: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 ",
+    title: "NFT Photography Marketplaces — NFT Rehberi ve Piyasa Analizi 2026",
+    description: "NFT Photography Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsa",
     url: "https://degen0x.com/tr/nfts/nft-photography-marketplace-guide",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — NFT Rehberi ve Piyasa Analizi 2026", description: "NFT Photography Marketplaces 2026: SuperRare, Foundation,: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 " },
+  twitter: { card: "summary_large_image", title: "NFT Photography Marketplaces — NFT Rehberi ve Piyasa Analizi 2026", description: "NFT Photography Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsa" },
   alternates: {
     canonical: "/tr/nfts/nft-photography-marketplace-guide",
     languages: { "en": "/nfts/nft-photography-marketplace-guide", "tr": "/tr/nfts/nft-photography-marketplace-guide", "vi": "/vi/nfts/nft-photography-marketplace-guide", "pt-BR": "/pt-br/nfts/nft-photography-marketplace-guide", "x-default": "/nfts/nft-photography-marketplace-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "NFT", item: "https://degen0x.com/tr/nfts" },
-    { "@type": "ListItem", position: 3, name: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — " }
+    { "@type": "ListItem", position: 3, name: "NFT Photography Marketplaces — NFT Rehberi ve Piyasa Analizi" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — NFT Rehberi ve Piyasa Analizi 2026",
-  description: "NFT Photography Marketplaces 2026: SuperRare, Foundation,: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz",
+  title: "NFT Photography Marketplaces — NFT Rehberi ve Piyasa Analizi 2026",
+  description: "NFT Photography Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
   url: "https://degen0x.com/tr/nfts/nft-photography-marketplace-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -59,29 +59,29 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "NFT", href: "/tr/nfts" },
-              { label: "NFT Photography Marketplaces 2026: SuperRare, Foun" }
+              { label: "NFT Photography Marketplaces" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Photography Marketplaces 2026: SuperRare, Foundation, — NFT Rehberi ve Piyasa Analizi 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">NFT Photography Marketplaces 2026: SuperRare, Foundation,: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Photography Marketplaces — NFT Rehberi ve Piyasa Analizi 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">NFT Photography Marketplaces: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">NFT Piyasa Analizi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">NFT Photography Marketplaces 2026: SuperRare, Foundation, konusunda 2026 NFT piyasa analizi: toplam işlem hacmi, aktif kullanıcılar, en popüler koleksiyonlar ve fiyat trendleri. NFT ticareti Türkiye\'de hızla büyüyen bir pazar; OpenSea ve Blur en çok kullanılan platformlardır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">NFT Photography Marketplaces konusunda 2026 NFT piyasa analizi: toplam işlem hacmi, aktif kullanıcılar, en popüler koleksiyonlar ve fiyat trendleri. NFT ticareti Türkiye\'de hızla büyüyen bir pazar; OpenSea ve Blur en çok kullanılan platformlardır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Standartlar</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">NFT teknik altyapısı: ERC-721 ve ERC-1155 standartları, metadata depolama (on-chain vs IPFS), royalty mekanizmaları ve cross-chain NFT transferleri. NFT Photography Marketplaces 2026: SuperRare, Foundation, bağlamında bu standartların uygulanması değerlendirilmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">NFT teknik altyapısı: ERC-721 ve ERC-1155 standartları, metadata depolama (on-chain vs IPFS), royalty mekanizmaları ve cross-chain NFT transferleri. NFT Photography Marketplaces bağlamında bu standartların uygulanması değerlendirilmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Alım-Satım ve Minting Rehberi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">NFT Photography Marketplaces 2026: SuperRare, Foundation, ile ilgili NFT alım-satım stratejileri: doğru zamanlamada mint etme, floor price analizi, rarity araçları, gas optimizasyonu ve ikincil pazar dinamikleri.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">NFT Photography Marketplaces ile ilgili NFT alım-satım stratejileri: doğru zamanlamada mint etme, floor price analizi, rarity araçları, gas optimizasyonu ve ikincil pazar dinamikleri.</p>
             </section>
 
             <section className="mb-10">

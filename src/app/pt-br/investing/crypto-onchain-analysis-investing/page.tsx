@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "On-Chain Analysis for Crypto Investing: Glassnode, Nansen, — Estratégia de Investimento e Análise de Mercado 2026 | Degen0x",
-  description: "Guia de investimento em On-Chain Analysis for Crypto Investing: Glassnode, Nansen,: estratégias de portfólio, gestão de riscos, análise técnica e perspectivas d",
+  title: "On-Chain for Crypto Investing — Estratégia de Investimento e Análise de Mercado 2026 | Degen0x",
+  description: "Guia de investimento em On-Chain for Crypto Investing: estratégias de portfólio, gestão de riscos, análise técnica e perspectivas de mercado 2026.",
   openGraph: {
     type: "article",
-    title: "On-Chain Analysis for Crypto Investing: Glassnode, Nansen, — Estratégia de Investimento e Análise de Mercado 2026",
-    description: "Guia de investimento em On-Chain Analysis for Crypto Investing: Glassnode, Nansen,: estratégias de portfólio, gestão de ",
+    title: "On-Chain for Crypto Investing — Estratégia de Investimento e Análise de Mercado 2026",
+    description: "Guia de investimento em On-Chain for Crypto Investing: estratégias de portfólio, gestão de riscos, análise técnica e per",
     url: "https://degen0x.com/pt-br/investing/crypto-onchain-analysis-investing",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "On-Chain Analysis for Crypto Investing: Glassnode, Nansen, — Estratégia de Investimento e Análise de Mercado 2026", description: "Guia de investimento em On-Chain Analysis for Crypto Investing: Glassnode, Nansen,: estratégias de portfólio, gestão de " },
+  twitter: { card: "summary_large_image", title: "On-Chain for Crypto Investing — Estratégia de Investimento e Análise de Mercado 2026", description: "Guia de investimento em On-Chain for Crypto Investing: estratégias de portfólio, gestão de riscos, análise técnica e per" },
   alternates: {
     canonical: "/pt-br/investing/crypto-onchain-analysis-investing",
     languages: { "en": "/investing/crypto-onchain-analysis-investing", "tr": "/tr/investing/crypto-onchain-analysis-investing", "vi": "/vi/investing/crypto-onchain-analysis-investing", "pt-BR": "/pt-br/investing/crypto-onchain-analysis-investing", "x-default": "/investing/crypto-onchain-analysis-investing" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Investir", item: "https://degen0x.com/pt-br/investing" },
-    { "@type": "ListItem", position: 3, name: "On-Chain Analysis for Crypto Investing: Glassnode, Nansen, —" }
+    { "@type": "ListItem", position: 3, name: "On-Chain for Crypto Investing — Estratégia de Investimento e" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "On-Chain Analysis for Crypto Investing: Glassnode, Nansen, — Estratégia de Investimento e Análise de Mercado 2026",
-  description: "Guia de investimento em On-Chain Analysis for Crypto Investing: Glassnode, Nansen,: estratégias de portfólio, gestão de riscos, análise técnica e perspectivas d",
+  title: "On-Chain for Crypto Investing — Estratégia de Investimento e Análise de Mercado 2026",
+  description: "Guia de investimento em On-Chain for Crypto Investing: estratégias de portfólio, gestão de riscos, análise técnica e perspectivas de mercado 2026.",
   url: "https://degen0x.com/pt-br/investing/crypto-onchain-analysis-investing",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,7 +42,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "On-Chain Analysis for Crypto Investing: Glassnode, Nansen, é um bom investimento?", "answer": "A decisão depende da sua tolerância ao risco, horizonte de investimento e estratégia de portfólio. Avalie fundamentos, posição de mercado, concorrência e potencial de crescimento de On-Chain Analysis for Crypto Investing: Glassnode, Nansen,." },
+  { "question": "On-Chain for Crypto Investing é um bom investimento?", "answer": "A decisão depende da sua tolerância ao risco, horizonte de investimento e estratégia de portfólio. Avalie fundamentos, posição de mercado, concorrência e potencial de crescimento de On-Chain for Crypto Investing." },
   { "question": "Qual a melhor estratégia de investimento?", "answer": "Estratégias populares: DCA (compras regulares — reduz volatilidade), lump sum (compra única — vantagem em bull market), swing trading (médio prazo — requer gestão ativa) e hodl (longo prazo — requer paciência)." },
   { "question": "Como funciona o imposto sobre cripto no Brasil?", "answer": "No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Operações tributáveis: ganhos de capital, rendimentos de staking, airdrops e mineração. Consulte a Receita Federal do Brasil para orientação." },
   { "question": "Quanto devo investir?", "answer": "Regra de ouro: invista apenas o que pode perder. Recomendação geral: 5-15% do portfólio total em cripto. Nunca arrisque seu fundo de emergência." }
@@ -59,46 +59,46 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Investir", href: "/pt-br/investing" },
-              { label: "On-Chain Analysis for Crypto Investing: Glassnode," }
+              { label: "On-Chain for Crypto Investing" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">On-Chain Analysis for Crypto Investing: Glassnode, Nansen, — Estratégia de Investimento e Análise de Mercado 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Guia de investimento em On-Chain Analysis for Crypto Investing: Glassnode, Nansen,: estratégias de portfólio, gestão de riscos, análise técnica e perspectivas de mercado 2026.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">On-Chain for Crypto Investing — Estratégia de Investimento e Análise de Mercado 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Guia de investimento em On-Chain for Crypto Investing: estratégias de portfólio, gestão de riscos, análise técnica e perspectivas de mercado 2026.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Estratégia de Investimento e Análise de Mercado</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Guia de investimento On-Chain Analysis for Crypto Investing: Glassnode, Nansen,: dimensionamento de posição conforme condições de mercado, estratégias de entrada/saída e análise de perfil risco-retorno. Investidores brasileiros podem comprar cripto com PIX em minutos através de exchanges regulamentadas pela CVM.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Guia de investimento On-Chain for Crypto Investing: dimensionamento de posição conforme condições de mercado, estratégias de entrada/saída e análise de perfil risco-retorno. Investidores brasileiros podem comprar cripto com PIX em minutos através de exchanges regulamentadas pela CVM.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Análise Técnica e Indicadores</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Ferramentas de análise técnica para On-Chain Analysis for Crypto Investing: Glassnode, Nansen,: médias móveis (MA/EMA), RSI (Índice de Força Relativa), MACD, Fibonacci e análise de volume. Indicadores apoiam decisões mas não devem ser usados isoladamente.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Ferramentas de análise técnica para On-Chain for Crypto Investing: médias móveis (MA/EMA), RSI (Índice de Força Relativa), MACD, Fibonacci e análise de volume. Indicadores apoiam decisões mas não devem ser usados isoladamente.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Diversificação de Portfólio e Gestão de Risco</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Diversificação é essencial para investimento em On-Chain Analysis for Crypto Investing: Glassnode, Nansen,. Distribuição equilibrada entre large-cap (BTC, ETH), mid-cap e small-cap, diversificação setorial (DeFi, L2, AI, RWA) e posição em stablecoin (fundo de oportunidade).</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Diversificação é essencial para investimento em On-Chain for Crypto Investing. Distribuição equilibrada entre large-cap (BTC, ETH), mid-cap e small-cap, diversificação setorial (DeFi, L2, AI, RWA) e posição em stablecoin (fundo de oportunidade).</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Informações Práticas para Investidores Brasileiros</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Investir em On-Chain Analysis for Crypto Investing: Glassnode, Nansen, do Brasil: completando a verificação de identidade (KYC) em uma exchange regulamentada depois depositando BRL via PIX (transferência instantânea) ou TED. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. A estratégia de dollar-cost averaging (DCA) é eficaz contra a volatilidade cambial do BRL.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Investir em On-Chain for Crypto Investing do Brasil: completando a verificação de identidade (KYC) em uma exchange regulamentada depois depositando BRL via PIX (transferência instantânea) ou TED. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. A estratégia de dollar-cost averaging (DCA) é eficaz contra a volatilidade cambial do BRL.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perspectivas de Mercado 2026</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Perspectivas 2026 para On-Chain Analysis for Crypto Investing: Glassnode, Nansen,: tendências de adoção institucional, fatores macroeconômicos (juros, inflação), avanços tecnológicos e impacto do marco regulatório. Avalie esses fatores em conjunto para decisões informadas.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Perspectivas 2026 para On-Chain for Crypto Investing: tendências de adoção institucional, fatores macroeconômicos (juros, inflação), avanços tecnológicos e impacto do marco regulatório. Avalie esses fatores em conjunto para decisões informadas.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "On-Chain Analysis for Crypto Investing: Glassnode, Nansen, é um bom investimento?", answer: "A decisão depende da sua tolerância ao risco, horizonte de investimento e estratégia de portfólio. Avalie fundamentos, posição de mercado, concorrência e potencial de crescimento de On-Chain Analysis for Crypto Investing: Glassnode, Nansen,." },
+                  { question: "On-Chain for Crypto Investing é um bom investimento?", answer: "A decisão depende da sua tolerância ao risco, horizonte de investimento e estratégia de portfólio. Avalie fundamentos, posição de mercado, concorrência e potencial de crescimento de On-Chain for Crypto Investing." },
                   { question: "Qual a melhor estratégia de investimento?", answer: "Estratégias populares: DCA (compras regulares — reduz volatilidade), lump sum (compra única — vantagem em bull market), swing trading (médio prazo — requer gestão ativa) e hodl (longo prazo — requer paciência)." },
                   { question: "Como funciona o imposto sobre cripto no Brasil?", answer: "No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Operações tributáveis: ganhos de capital, rendimentos de staking, airdrops e mineração. Consulte a Receita Federal do Brasil para orientação." },
                   { question: "Quanto devo investir?", answer: "Regra de ouro: invista apenas o que pode perder. Recomendação geral: 5-15% do portfólio total em cripto. Nunca arrisque seu fundo de emergência." }

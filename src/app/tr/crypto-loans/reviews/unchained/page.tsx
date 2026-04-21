@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Unchained Review (2026): Bitcoin Loans with Key Control — Kripto Kredi Platformları Karşılaştırması | Degen0x",
-  description: "Unchained Review (2026): Bitcoin Loans with Key Control karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
+  title: "Unchained — Kripto Kredi Platformları Karşılaştırması | Degen0x",
+  description: "Unchained karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
   openGraph: {
     type: "article",
-    title: "Unchained Review (2026): Bitcoin Loans with Key Control — Kripto Kredi Platformları Karşılaştırması",
-    description: "Unchained Review (2026): Bitcoin Loans with Key Control karşılaştırması: faiz oranları, teminat gereksinimleri, likidite",
+    title: "Unchained — Kripto Kredi Platformları Karşılaştırması",
+    description: "Unchained karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
     url: "https://degen0x.com/tr/crypto-loans/reviews/unchained",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Unchained Review (2026): Bitcoin Loans with Key Control — Kripto Kredi Platformları Karşılaştırması", description: "Unchained Review (2026): Bitcoin Loans with Key Control karşılaştırması: faiz oranları, teminat gereksinimleri, likidite" },
+  twitter: { card: "summary_large_image", title: "Unchained — Kripto Kredi Platformları Karşılaştırması", description: "Unchained karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği." },
   alternates: {
     canonical: "/tr/crypto-loans/reviews/unchained",
     languages: { "en": "/crypto-loans/reviews/unchained", "tr": "/tr/crypto-loans/reviews/unchained", "vi": "/vi/crypto-loans/reviews/unchained", "pt-BR": "/pt-br/crypto-loans/reviews/unchained", "x-default": "/crypto-loans/reviews/unchained" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Kripto Krediler", item: "https://degen0x.com/tr/crypto-loans" },
-    { "@type": "ListItem", position: 3, name: "Unchained Review (2026): Bitcoin Loans with Key Control — Kr" }
+    { "@type": "ListItem", position: 3, name: "Unchained — Kripto Kredi Platformları Karşılaştırması" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Unchained Review (2026): Bitcoin Loans with Key Control — Kripto Kredi Platformları Karşılaştırması",
-  description: "Unchained Review (2026): Bitcoin Loans with Key Control karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
+  title: "Unchained — Kripto Kredi Platformları Karşılaştırması",
+  description: "Unchained karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
   url: "https://degen0x.com/tr/crypto-loans/reviews/unchained",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -59,19 +59,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Kripto Krediler", href: "/tr/crypto-loans" },
-              { label: "Unchained Review (2026): Bitcoin Loans with Key Co" }
+              { label: "Unchained" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Unchained Review (2026): Bitcoin Loans with Key Control — Kripto Kredi Platformları Karşılaştırması</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Unchained Review (2026): Bitcoin Loans with Key Control karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Unchained — Kripto Kredi Platformları Karşılaştırması</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Unchained karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kripto Kredi Platformları</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Unchained Review (2026): Bitcoin Loans with Key Control kredi platformları karşılaştırması: faiz oranları (APR/APY), desteklenen teminat varlıkları, minimum teminat oranları (LTV) ve likidite riskleri.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Unchained kredi platformları karşılaştırması: faiz oranları (APR/APY), desteklenen teminat varlıkları, minimum teminat oranları (LTV) ve likidite riskleri.</p>
             </section>
 
             <section className="mb-10">

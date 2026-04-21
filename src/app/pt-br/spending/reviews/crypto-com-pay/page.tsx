@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Crypto.com Pay Review (2026) — Guia de Pagamentos com Cripto | Degen0x",
-  description: "Crypto.com Pay Review (2026): métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.",
+  title: "Crypto.com Pay — Guia de Pagamentos com Cripto | Degen0x",
+  description: "Crypto.com Pay: métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.",
   openGraph: {
     type: "article",
-    title: "Crypto.com Pay Review (2026) — Guia de Pagamentos com Cripto",
-    description: "Crypto.com Pay Review (2026): métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.",
+    title: "Crypto.com Pay — Guia de Pagamentos com Cripto",
+    description: "Crypto.com Pay: métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.",
     url: "https://degen0x.com/pt-br/spending/reviews/crypto-com-pay",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Crypto.com Pay Review (2026) — Guia de Pagamentos com Cripto", description: "Crypto.com Pay Review (2026): métodos de pagamento com cripto, plataformas suportadas e guia de uso diário." },
+  twitter: { card: "summary_large_image", title: "Crypto.com Pay — Guia de Pagamentos com Cripto", description: "Crypto.com Pay: métodos de pagamento com cripto, plataformas suportadas e guia de uso diário." },
   alternates: {
     canonical: "/pt-br/spending/reviews/crypto-com-pay",
     languages: { "en": "/spending/reviews/crypto-com-pay", "tr": "/tr/spending/reviews/crypto-com-pay", "vi": "/vi/spending/reviews/crypto-com-pay", "pt-BR": "/pt-br/spending/reviews/crypto-com-pay", "x-default": "/spending/reviews/crypto-com-pay" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Gastos", item: "https://degen0x.com/pt-br/spending" },
-    { "@type": "ListItem", position: 3, name: "Crypto.com Pay Review (2026) — Guia de Pagamentos com Cripto" }
+    { "@type": "ListItem", position: 3, name: "Crypto.com Pay — Guia de Pagamentos com Cripto" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto.com Pay Review (2026) — Guia de Pagamentos com Cripto",
-  description: "Crypto.com Pay Review (2026): métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.",
+  title: "Crypto.com Pay — Guia de Pagamentos com Cripto",
+  description: "Crypto.com Pay: métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.",
   url: "https://degen0x.com/pt-br/spending/reviews/crypto-com-pay",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Gastos", href: "/pt-br/spending" },
-              { label: "Crypto.com Pay Review (2026)" }
+              { label: "Crypto.com Pay" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto.com Pay Review (2026) — Guia de Pagamentos com Cripto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Crypto.com Pay Review (2026): métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto.com Pay — Guia de Pagamentos com Cripto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Crypto.com Pay: métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Métodos de Pagamento com Cripto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Guia de pagamento crypto para Crypto.com Pay Review (2026): pagamentos Lightning Network, cartões de débito cripto, transferências P2P e integrações e-commerce.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Guia de pagamento crypto para Crypto.com Pay: pagamentos Lightning Network, cartões de débito cripto, transferências P2P e integrações e-commerce.</p>
             </section>
 
             <section className="mb-10">

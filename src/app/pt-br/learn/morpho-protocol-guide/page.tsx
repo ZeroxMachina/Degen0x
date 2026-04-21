@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Morpho Protocol Guide 2026 — Modular DeFi Lending: Guia Completo em Português 2026 | Degen0x",
-  description: "Tudo o que você precisa saber sobre Morpho Protocol Guide 2026 — Modular DeFi Lending. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia co",
+  title: "Morpho Protocol: Guia Completo em Português 2026 | Degen0x",
+  description: "Tudo o que você precisa saber sobre Morpho Protocol. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.",
   openGraph: {
     type: "article",
-    title: "Morpho Protocol Guide 2026 — Modular DeFi Lending: Guia Completo em Português 2026",
-    description: "Tudo o que você precisa saber sobre Morpho Protocol Guide 2026 — Modular DeFi Lending. Conceitos básicos, como funciona,",
+    title: "Morpho Protocol: Guia Completo em Português 2026",
+    description: "Tudo o que você precisa saber sobre Morpho Protocol. Conceitos básicos, como funciona, riscos e atualizações de 2026 — g",
     url: "https://degen0x.com/pt-br/learn/morpho-protocol-guide",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Morpho Protocol Guide 2026 — Modular DeFi Lending: Guia Completo em Português 2026", description: "Tudo o que você precisa saber sobre Morpho Protocol Guide 2026 — Modular DeFi Lending. Conceitos básicos, como funciona," },
+  twitter: { card: "summary_large_image", title: "Morpho Protocol: Guia Completo em Português 2026", description: "Tudo o que você precisa saber sobre Morpho Protocol. Conceitos básicos, como funciona, riscos e atualizações de 2026 — g" },
   alternates: {
     canonical: "/pt-br/learn/morpho-protocol-guide",
     languages: { "en": "/learn/morpho-protocol-guide", "tr": "/tr/learn/morpho-protocol-guide", "vi": "/vi/learn/morpho-protocol-guide", "pt-BR": "/pt-br/learn/morpho-protocol-guide", "x-default": "/learn/morpho-protocol-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Aprender", item: "https://degen0x.com/pt-br/learn" },
-    { "@type": "ListItem", position: 3, name: "Morpho Protocol Guide 2026 — Modular DeFi Lending: Guia Comp" }
+    { "@type": "ListItem", position: 3, name: "Morpho Protocol: Guia Completo em Português 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Morpho Protocol Guide 2026 — Modular DeFi Lending: Guia Completo em Português 2026",
-  description: "Tudo o que você precisa saber sobre Morpho Protocol Guide 2026 — Modular DeFi Lending. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia co",
+  title: "Morpho Protocol: Guia Completo em Português 2026",
+  description: "Tudo o que você precisa saber sobre Morpho Protocol. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.",
   url: "https://degen0x.com/pt-br/learn/morpho-protocol-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Morpho Protocol Guide 2026 — Modular DeFi Lending e como funciona?", "answer": "Morpho Protocol Guide 2026 — Modular DeFi Lending é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
-  { "question": "Quais são os riscos de investir em Morpho Protocol Guide 2026 — Modular DeFi Lending?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-  { "question": "O que mudou em Morpho Protocol Guide 2026 — Modular DeFi Lending em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-  { "question": "Como usar Morpho Protocol Guide 2026 — Modular DeFi Lending no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+  { "question": "O que é Morpho Protocol e como funciona?", "answer": "Morpho Protocol é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos." },
+  { "question": "Quais são os riscos de investir em Morpho Protocol?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
+  { "question": "O que mudou em Morpho Protocol em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
+  { "question": "Como usar Morpho Protocol no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Aprender", href: "/pt-br/learn" },
-              { label: "Morpho Protocol Guide 2026 — Modular DeFi Lending" }
+              { label: "Morpho Protocol" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Morpho Protocol Guide 2026 — Modular DeFi Lending: Guia Completo em Português 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Tudo o que você precisa saber sobre Morpho Protocol Guide 2026 — Modular DeFi Lending. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Morpho Protocol: Guia Completo em Português 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Tudo o que você precisa saber sobre Morpho Protocol. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Morpho Protocol Guide 2026 — Modular DeFi Lending?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">No ecossistema de criptomoedas, Morpho Protocol Guide 2026 — Modular DeFi Lending ocupa uma posição estratégica. O modelo de desenvolvimento open-source e mecanismos de governança comunitária proporcionam uma estrutura transparente. Integrações no Ethereum, Solana e outras grandes redes expandem o escopo de aplicação de Morpho Protocol Guide 2026 — Modular DeFi Lending.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Morpho Protocol?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">No ecossistema de criptomoedas, Morpho Protocol ocupa uma posição estratégica. O modelo de desenvolvimento open-source e mecanismos de governança comunitária proporcionam uma estrutura transparente. Integrações no Ethereum, Solana e outras grandes redes expandem o escopo de aplicação de Morpho Protocol.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Infraestrutura Técnica e Princípio de Funcionamento</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">A infraestrutura de Morpho Protocol Guide 2026 — Modular DeFi Lending é construída sobre uma arquitetura de camadas: a camada base (Layer 1) garante consenso e segurança, enquanto as camadas superiores (Layer 2) otimizam escalabilidade e velocidade. Esta abordagem otimiza tanto segurança quanto experiência do usuário.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">A infraestrutura de Morpho Protocol é construída sobre uma arquitetura de camadas: a camada base (Layer 1) garante consenso e segurança, enquanto as camadas superiores (Layer 2) otimizam escalabilidade e velocidade. Esta abordagem otimiza tanto segurança quanto experiência do usuário.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Atualizações 2026 e Dinâmicas de Mercado</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Morpho Protocol Guide 2026 — Modular DeFi Lending em 2026 apresenta uma estrutura de mercado mais madura. Estudos de CBDC, novas categorias como DePIN (Redes de Infraestrutura Física Descentralizada) e adoção de arquitetura blockchain modular estão remodelando o ecossistema.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Morpho Protocol em 2026 apresenta uma estrutura de mercado mais madura. Estudos de CBDC, novas categorias como DePIN (Redes de Infraestrutura Física Descentralizada) e adoção de arquitetura blockchain modular estão remodelando o ecossistema.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Usando Morpho Protocol Guide 2026 — Modular DeFi Lending no Brasil</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">No Brasil, para usar Morpho Protocol Guide 2026 — Modular DeFi Lending você precisa: completando a verificação de identidade (KYC) em uma exchange regulamentada. Você pode comprar crypto com BRL através de depositando BRL via PIX (transferência instantânea) ou TED. Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022). No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Usando Morpho Protocol no Brasil</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">No Brasil, para usar Morpho Protocol você precisa: completando a verificação de identidade (KYC) em uma exchange regulamentada. Você pode comprar crypto com BRL através de depositando BRL via PIX (transferência instantânea) ou TED. Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022). No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Avaliação de Riscos e Segurança</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Compreender os riscos de Morpho Protocol Guide 2026 — Modular DeFi Lending é a base para decisões de investimento informadas. Risco de mercado (volatilidade), risco tecnológico (bugs), risco de contraparte (falência de plataformas — como no caso FTX) e risco regulatório (proibições ou restrições) devem ser avaliados. Usar cold wallet e guardar chaves privadas com segurança são as práticas mais importantes.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Compreender os riscos de Morpho Protocol é a base para decisões de investimento informadas. Risco de mercado (volatilidade), risco tecnológico (bugs), risco de contraparte (falência de plataformas — como no caso FTX) e risco regulatório (proibições ou restrições) devem ser avaliados. Usar cold wallet e guardar chaves privadas com segurança são as práticas mais importantes.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Morpho Protocol Guide 2026 — Modular DeFi Lending e como funciona?", answer: "Morpho Protocol Guide 2026 — Modular DeFi Lending é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
-                  { question: "Quais são os riscos de investir em Morpho Protocol Guide 2026 — Modular DeFi Lending?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-                  { question: "O que mudou em Morpho Protocol Guide 2026 — Modular DeFi Lending em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-                  { question: "Como usar Morpho Protocol Guide 2026 — Modular DeFi Lending no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+                  { question: "O que é Morpho Protocol e como funciona?", answer: "Morpho Protocol é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos." },
+                  { question: "Quais são os riscos de investir em Morpho Protocol?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
+                  { question: "O que mudou em Morpho Protocol em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
+                  { question: "Como usar Morpho Protocol no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

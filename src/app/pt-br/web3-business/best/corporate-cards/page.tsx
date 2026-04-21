@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto — Oportunidades de Negócios Web3 | Degen0x",
-  description: "Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
+  title: "Corporate Cards — Oportunidades de Negócios Web3 | Degen0x",
+  description: "Corporate Cards: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
   openGraph: {
     type: "article",
-    title: "Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto — Oportunidades de Negócios Web3",
-    description: "Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto: modelos de negócio Web3, tokenomics e estruturas de or",
+    title: "Corporate Cards — Oportunidades de Negócios Web3",
+    description: "Corporate Cards: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
     url: "https://degen0x.com/pt-br/web3-business/best/corporate-cards",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto — Oportunidades de Negócios Web3", description: "Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto: modelos de negócio Web3, tokenomics e estruturas de or" },
+  twitter: { card: "summary_large_image", title: "Corporate Cards — Oportunidades de Negócios Web3", description: "Corporate Cards: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada." },
   alternates: {
     canonical: "/pt-br/web3-business/best/corporate-cards",
     languages: { "en": "/web3-business/best/corporate-cards", "tr": "/tr/web3-business/best/corporate-cards", "vi": "/vi/web3-business/best/corporate-cards", "pt-BR": "/pt-br/web3-business/best/corporate-cards", "x-default": "/web3-business/best/corporate-cards" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Web3 Negócios", item: "https://degen0x.com/pt-br/web3-business" },
-    { "@type": "ListItem", position: 3, name: "Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Cr" }
+    { "@type": "ListItem", position: 3, name: "Corporate Cards — Oportunidades de Negócios Web3" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto — Oportunidades de Negócios Web3",
-  description: "Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
+  title: "Corporate Cards — Oportunidades de Negócios Web3",
+  description: "Corporate Cards: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
   url: "https://degen0x.com/pt-br/web3-business/best/corporate-cards",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Web3 Negócios", href: "/pt-br/web3-business" },
-              { label: "Best Crypto Corporate Cards of 2026 - Spend Stable" }
+              { label: "Corporate Cards" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto — Oportunidades de Negócios Web3</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Corporate Cards — Oportunidades de Negócios Web3</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Corporate Cards: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Modelos de Negócio Web3</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Modelos de negócio Web3 no escopo de Best Crypto Corporate Cards of 2026 - Spend Stablecoins & Crypto: estruturas DAO, token economics, marketplaces descentralizados e creator economy. O Brasil é o maior mercado de cripto da América Latina, com regulamentação progressiva e alta adoção.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Modelos de negócio Web3 no escopo de Corporate Cards: estruturas DAO, token economics, marketplaces descentralizados e creator economy. O Brasil é o maior mercado de cripto da América Latina, com regulamentação progressiva e alta adoção.</p>
             </section>
 
             <section className="mb-10">

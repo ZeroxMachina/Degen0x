@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Learn Crypto: Complete Guides & Tutorials (2026): Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
-  description: "Mọi thứ bạn cần biết về Learn Crypto: Complete Guides & Tutorials (2026). Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng ti",
+  title: "Learn Crypto: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
+  description: "Mọi thứ bạn cần biết về Learn Crypto. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
   openGraph: {
     type: "article",
-    title: "Learn Crypto: Complete Guides & Tutorials (2026): Hướng Dẫn Chi Tiết Tiếng Việt 2026",
-    description: "Mọi thứ bạn cần biết về Learn Crypto: Complete Guides & Tutorials (2026). Khái niệm cơ bản, cách hoạt động, rủi ro và cậ",
+    title: "Learn Crypto: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
+    description: "Mọi thứ bạn cần biết về Learn Crypto. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằn",
     url: "https://degen0x.com/vi/learn",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Learn Crypto: Complete Guides & Tutorials (2026): Hướng Dẫn Chi Tiết Tiếng Việt 2026", description: "Mọi thứ bạn cần biết về Learn Crypto: Complete Guides & Tutorials (2026). Khái niệm cơ bản, cách hoạt động, rủi ro và cậ" },
+  twitter: { card: "summary_large_image", title: "Learn Crypto: Hướng Dẫn Chi Tiết Tiếng Việt 2026", description: "Mọi thứ bạn cần biết về Learn Crypto. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằn" },
   alternates: {
     canonical: "/vi/learn",
     languages: { "en": "/learn", "tr": "/tr/learn", "vi": "/vi/learn", "pt-BR": "/pt-br/learn", "x-default": "/learn" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Learn Crypto: Complete Guides & Tutorials (2026): Hướng Dẫn Chi Tiết Tiếng Việt 2026",
-  description: "Mọi thứ bạn cần biết về Learn Crypto: Complete Guides & Tutorials (2026). Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng ti",
+  title: "Learn Crypto: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
+  description: "Mọi thứ bạn cần biết về Learn Crypto. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
   url: "https://degen0x.com/vi/learn",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -41,10 +41,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Learn Crypto: Complete Guides & Tutorials (2026) là gì và hoạt động như thế nào?", "answer": "Learn Crypto: Complete Guides & Tutorials (2026) là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương." },
-  { "question": "Rủi ro khi đầu tư Learn Crypto: Complete Guides & Tutorials (2026) là gì?", "answer": "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
-  { "question": "Có gì thay đổi trong lĩnh vực Learn Crypto: Complete Guides & Tutorials (2026) năm 2026?", "answer": "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
-  { "question": "Sử dụng Learn Crypto: Complete Guides & Tutorials (2026) tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
+  { "question": "Learn Crypto là gì và hoạt động như thế nào?", "answer": "Learn Crypto là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình." },
+  { "question": "Rủi ro khi đầu tư Learn Crypto là gì?", "answer": "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
+  { "question": "Có gì thay đổi trong lĩnh vực Learn Crypto năm 2026?", "answer": "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
+  { "question": "Sử dụng Learn Crypto tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -64,42 +64,42 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Learn Crypto: Complete Guides & Tutorials (2026): Hướng Dẫn Chi Tiết Tiếng Việt 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Mọi thứ bạn cần biết về Learn Crypto: Complete Guides & Tutorials (2026). Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Learn Crypto: Hướng Dẫn Chi Tiết Tiếng Việt 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Mọi thứ bạn cần biết về Learn Crypto. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Learn Crypto: Complete Guides & Tutorials (2026) Là Gì?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Learn Crypto: Complete Guides & Tutorials (2026) đang ngày càng khẳng định vai trò quan trọng trong hệ sinh thái tài sản số. Được xây dựng trên nền tảng blockchain, hệ thống này sử dụng hợp đồng thông minh để thực hiện giao dịch tự động và an toàn. Sự quan tâm ngày càng tăng từ các tổ chức đầu tư đã tạo ra bước ngoặt lớn cho Learn Crypto: Complete Guides & Tutorials (2026).</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Learn Crypto Là Gì?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Trong hệ sinh thái tiền điện tử, Learn Crypto có vị trí chiến lược quan trọng. Mô hình phát triển mã nguồn mở và cơ chế quản trị cộng đồng mang lại cấu trúc minh bạch. Các tích hợp trên Ethereum, Solana và các mạng lớn khác đang mở rộng phạm vi ứng dụng của Learn Crypto.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cơ Sở Kỹ Thuật và Nguyên Lý Hoạt Động</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Về mặt kỹ thuật, Learn Crypto: Complete Guides & Tutorials (2026) sử dụng công nghệ sổ cái phân tán (DLT). Mỗi giao dịch được xác minh bởi các node trong mạng và được ghi lại không thể thay đổi. Cơ chế đồng thuận (Proof of Work, Proof of Stake hoặc các giao thức thay thế) quyết định tính bảo mật và phi tập trung của mạng.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Cơ sở hạ tầng Learn Crypto được xây dựng trên kiến trúc đa lớp: lớp cơ sở (Layer 1) đảm bảo đồng thuận và bảo mật, trong khi các lớp trên (Layer 2) tối ưu khả năng mở rộng và tốc độ. Phương pháp này tối ưu hóa cả bảo mật lẫn trải nghiệm người dùng.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cập Nhật 2026 và Xu Hướng Thị Trường</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Động lực thị trường 2026 mang đến cơ hội quan trọng cho Learn Crypto: Complete Guides & Tutorials (2026). Sự trỗi dậy của DeFi tổ chức, tăng trưởng token hóa tài sản thực (RWA) và tích hợp AI-blockchain đã tạo ra động lực mới cho ngành. Learn Crypto: Complete Guides & Tutorials (2026) chịu ảnh hưởng trực tiếp từ các xu hướng này.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Learn Crypto trong năm 2026 đã có cấu trúc thị trường trưởng thành hơn so với các năm trước. Các nghiên cứu CBDC, danh mục mới như DePIN (Mạng Hạ Tầng Vật Lý Phi Tập Trung) và sự chấp nhận kiến trúc blockchain modular đang tái định hình hệ sinh thái.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Sử Dụng Learn Crypto: Complete Guides & Tutorials (2026) tại Việt Nam</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Tại Việt Nam, để sử dụng Learn Crypto: Complete Guides & Tutorials (2026) bạn cần hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín. Bạn có thể mua crypto bằng VND thông qua chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam là những lựa chọn phổ biến. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Sử Dụng Learn Crypto tại Việt Nam</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Tại Việt Nam, để sử dụng Learn Crypto bạn cần hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín. Bạn có thể mua crypto bằng VND thông qua chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam là những lựa chọn phổ biến. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đánh Giá Rủi Ro và Bảo Mật</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Quản lý rủi ro là yếu tố then chốt cho nhà đầu tư Learn Crypto: Complete Guides & Tutorials (2026). Các rủi ro có thể gặp: rug pull (nhà phát triển rút vốn), impermanent loss (cho nhà cung cấp thanh khoản), tấn công flash loan và thao túng oracle. Ưu tiên dự án đáng tin cậy, xem xét báo cáo audit và không tập trung quá nhiều vào một tài sản.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Hiểu rõ các rủi ro liên quan đến Learn Crypto là nền tảng của quyết định đầu tư sáng suốt. Rủi ro thị trường (biến động), rủi ro công nghệ (lỗi code), rủi ro đối tác (sàn phá sản — như trường hợp FTX) và rủi ro pháp lý (cấm hoặc hạn chế) cần được đánh giá. Sử dụng cold wallet và bảo quản khóa riêng tư an toàn là biện pháp bảo mật quan trọng nhất.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Learn Crypto: Complete Guides & Tutorials (2026) là gì và hoạt động như thế nào?", answer: "Learn Crypto: Complete Guides & Tutorials (2026) là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương." },
-                  { question: "Rủi ro khi đầu tư Learn Crypto: Complete Guides & Tutorials (2026) là gì?", answer: "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
-                  { question: "Có gì thay đổi trong lĩnh vực Learn Crypto: Complete Guides & Tutorials (2026) năm 2026?", answer: "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
-                  { question: "Sử dụng Learn Crypto: Complete Guides & Tutorials (2026) tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
+                  { question: "Learn Crypto là gì và hoạt động như thế nào?", answer: "Learn Crypto là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình." },
+                  { question: "Rủi ro khi đầu tư Learn Crypto là gì?", answer: "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
+                  { question: "Có gì thay đổi trong lĩnh vực Learn Crypto năm 2026?", answer: "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
+                  { question: "Sử dụng Learn Crypto tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

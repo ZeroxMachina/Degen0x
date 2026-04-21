@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "dApp Ecosystem — Every Protocol on Every Chain: Ekosistem Analizi ve 2026 Yol Haritası | Degen0x",
-  description: "dApp Ecosystem — Every Protocol on Every Chain ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı rehber.",
+  title: "dApp Ecosystem: Ekosistem Analizi ve 2026 Yol Haritası | Degen0x",
+  description: "dApp Ecosystem ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı rehber.",
   openGraph: {
     type: "article",
-    title: "dApp Ecosystem — Every Protocol on Every Chain: Ekosistem Analizi ve 2026 Yol Haritası",
-    description: "dApp Ecosystem — Every Protocol on Every Chain ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büy",
+    title: "dApp Ecosystem: Ekosistem Analizi ve 2026 Yol Haritası",
+    description: "dApp Ecosystem ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı r",
     url: "https://degen0x.com/tr/ecosystem",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "dApp Ecosystem — Every Protocol on Every Chain: Ekosistem Analizi ve 2026 Yol Haritası", description: "dApp Ecosystem — Every Protocol on Every Chain ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büy" },
+  twitter: { card: "summary_large_image", title: "dApp Ecosystem: Ekosistem Analizi ve 2026 Yol Haritası", description: "dApp Ecosystem ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı r" },
   alternates: {
     canonical: "/tr/ecosystem",
     languages: { "en": "/ecosystem", "tr": "/tr/ecosystem", "vi": "/vi/ecosystem", "pt-BR": "/pt-br/ecosystem", "x-default": "/ecosystem" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "dApp Ecosystem — Every Protocol on Every Chain: Ekosistem Analizi ve 2026 Yol Haritası",
-  description: "dApp Ecosystem — Every Protocol on Every Chain ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı rehber.",
+  title: "dApp Ecosystem: Ekosistem Analizi ve 2026 Yol Haritası",
+  description: "dApp Ecosystem ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı rehber.",
   url: "https://degen0x.com/tr/ecosystem",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -41,10 +41,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "dApp Ecosystem — Every Protocol on Every Chain ekosisteminde hangi protokoller öne çıkıyor?", "answer": "Ekosistemde öne çıkan protokoller: DEX\'ler (merkezi olmayan borsalar), lending platformları, yield optimizer\'lar, bridge çözümleri ve NFT pazaryerleri. Her birinin TVL, kullanıcı sayısı ve işlem hacmi değerlendirilmektedir." },
-  { "question": "dApp Ecosystem — Every Protocol on Every Chain ağının teknik kapasitesi nedir?", "answer": "Ağ kapasitesi: saniyedeki işlem sayısı (TPS), blok süresi, ortalama gas ücreti, finality süresi ve EVM uyumluluğu. Bu metrikler günlük kullanım ve DeFi operasyonları için ağın uygunluğunu belirler." },
-  { "question": "Geliştirici olarak dApp Ecosystem — Every Protocol on Every Chain ekosisteminde nasıl başlayabilirim?", "answer": "Başlangıç noktaları: resmi dokümantasyon, geliştirici portalı, hackathon\'lar, hibe programları ve topluluk forumları. Akıllı sözleşme geliştirme için Solidity veya Rust bilgisi gereklidir." },
-  { "question": "2026\'da dApp Ecosystem — Every Protocol on Every Chain ekosistemine yatırım yapmak mantıklı mı?", "answer": "Ekosistem yatırımı, tek varlık yatırımından farklı bir yaklaşım gerektirir. TVL büyüme trendi, geliştirici aktivitesi, kurumsal ortaklıklar ve rekabet konumu birlikte değerlendirilmelidir." }
+  { "question": "dApp Ecosystem ekosisteminde hangi protokoller öne çıkıyor?", "answer": "Ekosistemde öne çıkan protokoller: DEX\'ler (merkezi olmayan borsalar), lending platformları, yield optimizer\'lar, bridge çözümleri ve NFT pazaryerleri. Her birinin TVL, kullanıcı sayısı ve işlem hacmi değerlendirilmektedir." },
+  { "question": "dApp Ecosystem ağının teknik kapasitesi nedir?", "answer": "Ağ kapasitesi: saniyedeki işlem sayısı (TPS), blok süresi, ortalama gas ücreti, finality süresi ve EVM uyumluluğu. Bu metrikler günlük kullanım ve DeFi operasyonları için ağın uygunluğunu belirler." },
+  { "question": "Geliştirici olarak dApp Ecosystem ekosisteminde nasıl başlayabilirim?", "answer": "Başlangıç noktaları: resmi dokümantasyon, geliştirici portalı, hackathon\'lar, hibe programları ve topluluk forumları. Akıllı sözleşme geliştirme için Solidity veya Rust bilgisi gereklidir." },
+  { "question": "2026\'da dApp Ecosystem ekosistemine yatırım yapmak mantıklı mı?", "answer": "Ekosistem yatırımı, tek varlık yatırımından farklı bir yaklaşım gerektirir. TVL büyüme trendi, geliştirici aktivitesi, kurumsal ortaklıklar ve rekabet konumu birlikte değerlendirilmelidir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -64,37 +64,37 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">dApp Ecosystem — Every Protocol on Every Chain: Ekosistem Analizi ve 2026 Yol Haritası</h1>
-            <p className="text-lg text-[#8b949e] mb-10">dApp Ecosystem — Every Protocol on Every Chain ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">dApp Ecosystem: Ekosistem Analizi ve 2026 Yol Haritası</h1>
+            <p className="text-lg text-[#8b949e] mb-10">dApp Ecosystem ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı rehber.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Ekosistem Genel Bakış</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">dApp Ecosystem — Every Protocol on Every Chain ekosistemi, birbirine entegre protokoller, uygulamalar ve araçlardan oluşan kapsamlı bir ağdır. TVL (Toplam Kilitli Değer), günlük aktif kullanıcılar, işlem hacmi ve geliştirici aktivitesi gibi temel metrikler üzerinden ekosistemi değerlendiriyoruz.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">dApp Ecosystem ekosistemi, birbirine entegre protokoller, uygulamalar ve araçlardan oluşan kapsamlı bir ağdır. TVL (Toplam Kilitli Değer), günlük aktif kullanıcılar, işlem hacmi ve geliştirici aktivitesi gibi temel metrikler üzerinden ekosistemi değerlendiriyoruz.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Temel Protokoller ve Uygulamalar</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">dApp Ecosystem — Every Protocol on Every Chain ekosistemindeki öne çıkan protokoller: DEX\'ler (merkeziyetsiz borsalar), lending/borrowing platformları, yield aggregator\'lar, bridge çözümleri ve NFT pazaryerleri. Her birinin işlevi, TVL payı ve kullanıcı deneyimi analiz edilmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">dApp Ecosystem ekosistemindeki öne çıkan protokoller: DEX\'ler (merkeziyetsiz borsalar), lending/borrowing platformları, yield aggregator\'lar, bridge çözümleri ve NFT pazaryerleri. Her birinin işlevi, TVL payı ve kullanıcı deneyimi analiz edilmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Performans</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">dApp Ecosystem — Every Protocol on Every Chain ağının teknik kapasitesi: saniyedeki işlem sayısı (TPS), blok süresi, gas ücretleri, sonlanma süresi (finality) ve EVM uyumluluğu. Bu metrikler, ağın günlük kullanım ve DeFi operasyonları için uygunluğunu belirler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">dApp Ecosystem ağının teknik kapasitesi: saniyedeki işlem sayısı (TPS), blok süresi, gas ücretleri, sonlanma süresi (finality) ve EVM uyumluluğu. Bu metrikler, ağın günlük kullanım ve DeFi operasyonları için uygunluğunu belirler.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Büyüme Trendleri ve 2026 Yol Haritası</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">dApp Ecosystem — Every Protocol on Every Chain ekosisteminin 2026 büyüme trendleri: yeni protokol lansmanları, ortaklık duyuruları, hibe programları ve geliştirici araçları. Türk geliştirici ekosistemi blockchain alanında hızla büyümekte olup İstanbul önemli bir Web3 merkezi haline gelmiştir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">dApp Ecosystem ekosisteminin 2026 büyüme trendleri: yeni protokol lansmanları, ortaklık duyuruları, hibe programları ve geliştirici araçları. Türk geliştirici ekosistemi blockchain alanında hızla büyümekte olup İstanbul önemli bir Web3 merkezi haline gelmiştir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "dApp Ecosystem — Every Protocol on Every Chain ekosisteminde hangi protokoller öne çıkıyor?", answer: "Ekosistemde öne çıkan protokoller: DEX\'ler (merkezi olmayan borsalar), lending platformları, yield optimizer\'lar, bridge çözümleri ve NFT pazaryerleri. Her birinin TVL, kullanıcı sayısı ve işlem hacmi değerlendirilmektedir." },
-                  { question: "dApp Ecosystem — Every Protocol on Every Chain ağının teknik kapasitesi nedir?", answer: "Ağ kapasitesi: saniyedeki işlem sayısı (TPS), blok süresi, ortalama gas ücreti, finality süresi ve EVM uyumluluğu. Bu metrikler günlük kullanım ve DeFi operasyonları için ağın uygunluğunu belirler." },
-                  { question: "Geliştirici olarak dApp Ecosystem — Every Protocol on Every Chain ekosisteminde nasıl başlayabilirim?", answer: "Başlangıç noktaları: resmi dokümantasyon, geliştirici portalı, hackathon\'lar, hibe programları ve topluluk forumları. Akıllı sözleşme geliştirme için Solidity veya Rust bilgisi gereklidir." },
-                  { question: "2026\'da dApp Ecosystem — Every Protocol on Every Chain ekosistemine yatırım yapmak mantıklı mı?", answer: "Ekosistem yatırımı, tek varlık yatırımından farklı bir yaklaşım gerektirir. TVL büyüme trendi, geliştirici aktivitesi, kurumsal ortaklıklar ve rekabet konumu birlikte değerlendirilmelidir." }
+                  { question: "dApp Ecosystem ekosisteminde hangi protokoller öne çıkıyor?", answer: "Ekosistemde öne çıkan protokoller: DEX\'ler (merkezi olmayan borsalar), lending platformları, yield optimizer\'lar, bridge çözümleri ve NFT pazaryerleri. Her birinin TVL, kullanıcı sayısı ve işlem hacmi değerlendirilmektedir." },
+                  { question: "dApp Ecosystem ağının teknik kapasitesi nedir?", answer: "Ağ kapasitesi: saniyedeki işlem sayısı (TPS), blok süresi, ortalama gas ücreti, finality süresi ve EVM uyumluluğu. Bu metrikler günlük kullanım ve DeFi operasyonları için ağın uygunluğunu belirler." },
+                  { question: "Geliştirici olarak dApp Ecosystem ekosisteminde nasıl başlayabilirim?", answer: "Başlangıç noktaları: resmi dokümantasyon, geliştirici portalı, hackathon\'lar, hibe programları ve topluluk forumları. Akıllı sözleşme geliştirme için Solidity veya Rust bilgisi gereklidir." },
+                  { question: "2026\'da dApp Ecosystem ekosistemine yatırım yapmak mantıklı mı?", answer: "Ekosistem yatırımı, tek varlık yatırımından farklı bir yaklaşım gerektirir. TVL büyüme trendi, geliştirici aktivitesi, kurumsal ortaklıklar ve rekabet konumu birlikte değerlendirilmelidir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

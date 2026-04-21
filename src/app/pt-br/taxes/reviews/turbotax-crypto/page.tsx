@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "TurboTax Crypto Review (2026): Built-In Crypto Tax Filing — Guia de Impostos Cripto e Ferramentas | Degen0x",
-  description: "TurboTax Crypto Review (2026): Built-In Crypto Tax Filing: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos co",
+  title: "TurboTax Crypto — Guia de Impostos Cripto e Ferramentas | Degen0x",
+  description: "TurboTax Crypto: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas d",
   openGraph: {
     type: "article",
-    title: "TurboTax Crypto Review (2026): Built-In Crypto Tax Filing — Guia de Impostos Cripto e Ferramentas",
-    description: "TurboTax Crypto Review (2026): Built-In Crypto Tax Filing: obrigações fiscais cripto, preparação de declaração e ferrame",
+    title: "TurboTax Crypto — Guia de Impostos Cripto e Ferramentas",
+    description: "TurboTax Crypto: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com ",
     url: "https://degen0x.com/pt-br/taxes/reviews/turbotax-crypto",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "TurboTax Crypto Review (2026): Built-In Crypto Tax Filing — Guia de Impostos Cripto e Ferramentas", description: "TurboTax Crypto Review (2026): Built-In Crypto Tax Filing: obrigações fiscais cripto, preparação de declaração e ferrame" },
+  twitter: { card: "summary_large_image", title: "TurboTax Crypto — Guia de Impostos Cripto e Ferramentas", description: "TurboTax Crypto: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com " },
   alternates: {
     canonical: "/pt-br/taxes/reviews/turbotax-crypto",
     languages: { "en": "/taxes/reviews/turbotax-crypto", "tr": "/tr/taxes/reviews/turbotax-crypto", "vi": "/vi/taxes/reviews/turbotax-crypto", "pt-BR": "/pt-br/taxes/reviews/turbotax-crypto", "x-default": "/taxes/reviews/turbotax-crypto" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Impostos", item: "https://degen0x.com/pt-br/taxes" },
-    { "@type": "ListItem", position: 3, name: "TurboTax Crypto Review (2026): Built-In Crypto Tax Filing — " }
+    { "@type": "ListItem", position: 3, name: "TurboTax Crypto — Guia de Impostos Cripto e Ferramentas" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "TurboTax Crypto Review (2026): Built-In Crypto Tax Filing — Guia de Impostos Cripto e Ferramentas",
-  description: "TurboTax Crypto Review (2026): Built-In Crypto Tax Filing: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos co",
+  title: "TurboTax Crypto — Guia de Impostos Cripto e Ferramentas",
+  description: "TurboTax Crypto: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas d",
   url: "https://degen0x.com/pt-br/taxes/reviews/turbotax-crypto",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Impostos", href: "/pt-br/taxes" },
-              { label: "TurboTax Crypto Review (2026): Built-In Crypto Tax" }
+              { label: "TurboTax Crypto" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">TurboTax Crypto Review (2026): Built-In Crypto Tax Filing — Guia de Impostos Cripto e Ferramentas</h1>
-            <p className="text-lg text-[#8b949e] mb-10">TurboTax Crypto Review (2026): Built-In Crypto Tax Filing: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">TurboTax Crypto — Guia de Impostos Cripto e Ferramentas</h1>
+            <p className="text-lg text-[#8b949e] mb-10">TurboTax Crypto: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Obrigações Fiscais Cripto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Obrigações fiscais no escopo de TurboTax Crypto Review (2026): Built-In Crypto Tax Filing: No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Transações tributáveis: compra/venda, rendimentos de staking, airdrops, mineração e ganhos DeFi.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Obrigações fiscais no escopo de TurboTax Crypto: No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Transações tributáveis: compra/venda, rendimentos de staking, airdrops, mineração e ganhos DeFi.</p>
             </section>
 
             <section className="mb-10">

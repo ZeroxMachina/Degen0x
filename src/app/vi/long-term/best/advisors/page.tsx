@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Crypto Financial Advisors 2026 - Expert Wealth Management — Chiến Lược Crypto Dài Hạn | Degen0x",
-  description: "Best Crypto Financial Advisors 2026 - Expert Wealth Management: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
+  title: "Financial Advisors — Chiến Lược Crypto Dài Hạn | Degen0x",
+  description: "Financial Advisors: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
   openGraph: {
     type: "article",
-    title: "Best Crypto Financial Advisors 2026 - Expert Wealth Management — Chiến Lược Crypto Dài Hạn",
-    description: "Best Crypto Financial Advisors 2026 - Expert Wealth Management: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục v",
+    title: "Financial Advisors — Chiến Lược Crypto Dài Hạn",
+    description: "Financial Advisors: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
     url: "https://degen0x.com/vi/long-term/best/advisors",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Crypto Financial Advisors 2026 - Expert Wealth Management — Chiến Lược Crypto Dài Hạn", description: "Best Crypto Financial Advisors 2026 - Expert Wealth Management: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục v" },
+  twitter: { card: "summary_large_image", title: "Financial Advisors — Chiến Lược Crypto Dài Hạn", description: "Financial Advisors: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl." },
   alternates: {
     canonical: "/vi/long-term/best/advisors",
     languages: { "en": "/long-term/best/advisors", "tr": "/tr/long-term/best/advisors", "vi": "/vi/long-term/best/advisors", "pt-BR": "/pt-br/long-term/best/advisors", "x-default": "/long-term/best/advisors" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Dài Hạn", item: "https://degen0x.com/vi/long-term" },
-    { "@type": "ListItem", position: 3, name: "Best Crypto Financial Advisors 2026 - Expert Wealth Manageme" }
+    { "@type": "ListItem", position: 3, name: "Financial Advisors — Chiến Lược Crypto Dài Hạn" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Crypto Financial Advisors 2026 - Expert Wealth Management — Chiến Lược Crypto Dài Hạn",
-  description: "Best Crypto Financial Advisors 2026 - Expert Wealth Management: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
+  title: "Financial Advisors — Chiến Lược Crypto Dài Hạn",
+  description: "Financial Advisors: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",
   url: "https://degen0x.com/vi/long-term/best/advisors",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Dài Hạn", href: "/vi/long-term" },
-              { label: "Best Crypto Financial Advisors 2026 - Expert Wealt" }
+              { label: "Financial Advisors" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Crypto Financial Advisors 2026 - Expert Wealth Management — Chiến Lược Crypto Dài Hạn</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best Crypto Financial Advisors 2026 - Expert Wealth Management: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Financial Advisors — Chiến Lược Crypto Dài Hạn</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Financial Advisors: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Chiến Lược Đầu Tư Dài Hạn</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Chiến lược đầu tư crypto dài hạn cho Best Crypto Financial Advisors 2026 - Expert Wealth Management: phương pháp hodl, DCA (mua định kỳ), value investing và phân tích vĩ mô.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Chiến lược đầu tư crypto dài hạn cho Financial Advisors: phương pháp hodl, DCA (mua định kỳ), value investing và phân tích vĩ mô.</p>
             </section>
 
             <section className="mb-10">

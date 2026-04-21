@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026 | Degen0x",
-  description: "Phân tích hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",
+  title: "TON Blockchain Ecosystem: Phân Tích Hệ Sinh Thái và Lộ Trình 2026 | Degen0x",
+  description: "Phân tích hệ sinh thái TON Blockchain Ecosystem: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",
   openGraph: {
     type: "article",
-    title: "TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026",
-    description: "Phân tích hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: TVL, người dùng hoạt động, giao thức",
+    title: "TON Blockchain Ecosystem: Phân Tích Hệ Sinh Thái và Lộ Trình 2026",
+    description: "Phân tích hệ sinh thái TON Blockchain Ecosystem: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026",
     url: "https://degen0x.com/vi/ecosystem/ton-blockchain-ecosystem-guide",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026", description: "Phân tích hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: TVL, người dùng hoạt động, giao thức" },
+  twitter: { card: "summary_large_image", title: "TON Blockchain Ecosystem: Phân Tích Hệ Sinh Thái và Lộ Trình 2026", description: "Phân tích hệ sinh thái TON Blockchain Ecosystem: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026" },
   alternates: {
     canonical: "/vi/ecosystem/ton-blockchain-ecosystem-guide",
     languages: { "en": "/ecosystem/ton-blockchain-ecosystem-guide", "tr": "/tr/ecosystem/ton-blockchain-ecosystem-guide", "vi": "/vi/ecosystem/ton-blockchain-ecosystem-guide", "pt-BR": "/pt-br/ecosystem/ton-blockchain-ecosystem-guide", "x-default": "/ecosystem/ton-blockchain-ecosystem-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Hệ Sinh Thái", item: "https://degen0x.com/vi/ecosystem" },
-    { "@type": "ListItem", position: 3, name: "TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,:" }
+    { "@type": "ListItem", position: 3, name: "TON Blockchain Ecosystem: Phân Tích Hệ Sinh Thái và Lộ Trình" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026",
-  description: "Phân tích hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",
+  title: "TON Blockchain Ecosystem: Phân Tích Hệ Sinh Thái và Lộ Trình 2026",
+  description: "Phân tích hệ sinh thái TON Blockchain Ecosystem: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",
   url: "https://degen0x.com/vi/ecosystem/ton-blockchain-ecosystem-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Giao thức nào nổi bật trong hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,?", "answer": "Giao thức nổi bật: DEX, nền tảng lending, yield optimizer, bridge và marketplace NFT. Đánh giá TVL, người dùng và khối lượng giao dịch." },
-  { "question": "Năng lực kỹ thuật của mạng TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,?", "answer": "TPS, thời gian block, phí gas trung bình, finality và tương thích EVM. Các chỉ số quyết định sự phù hợp cho sử dụng hàng ngày." },
-  { "question": "Bắt đầu phát triển trên TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa, như thế nào?", "answer": "Điểm bắt đầu: tài liệu chính thức, developer portal, hackathon, chương trình grants và forum cộng đồng. Cần kiến thức Solidity hoặc Rust." },
-  { "question": "Đầu tư vào hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa, năm 2026 có hợp lý không?", "answer": "Đầu tư hệ sinh thái cần cách tiếp cận khác với đầu tư đơn lẻ. Đánh giá tổng hợp xu hướng TVL, hoạt động phát triển, hợp tác tổ chức và vị thế cạnh tranh." }
+  { "question": "Giao thức nào nổi bật trong hệ sinh thái TON Blockchain Ecosystem?", "answer": "Giao thức nổi bật: DEX, nền tảng lending, yield optimizer, bridge và marketplace NFT. Đánh giá TVL, người dùng và khối lượng giao dịch." },
+  { "question": "Năng lực kỹ thuật của mạng TON Blockchain Ecosystem?", "answer": "TPS, thời gian block, phí gas trung bình, finality và tương thích EVM. Các chỉ số quyết định sự phù hợp cho sử dụng hàng ngày." },
+  { "question": "Bắt đầu phát triển trên TON Blockchain Ecosystem như thế nào?", "answer": "Điểm bắt đầu: tài liệu chính thức, developer portal, hackathon, chương trình grants và forum cộng đồng. Cần kiến thức Solidity hoặc Rust." },
+  { "question": "Đầu tư vào hệ sinh thái TON Blockchain Ecosystem năm 2026 có hợp lý không?", "answer": "Đầu tư hệ sinh thái cần cách tiếp cận khác với đầu tư đơn lẻ. Đánh giá tổng hợp xu hướng TVL, hoạt động phát triển, hợp tác tổ chức và vị thế cạnh tranh." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,44 +59,44 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Hệ Sinh Thái", href: "/vi/ecosystem" },
-              { label: "TON Blockchain Ecosystem Guide 2026: STON.fi, DeDu" }
+              { label: "TON Blockchain Ecosystem" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Phân tích hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">TON Blockchain Ecosystem: Phân Tích Hệ Sinh Thái và Lộ Trình 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Phân tích hệ sinh thái TON Blockchain Ecosystem: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Tổng Quan Hệ Sinh Thái</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa, là mạng lưới toàn diện gồm các giao thức, ứng dụng và công cụ tích hợp. Đánh giá dựa trên các chỉ số: TVL, người dùng hoạt động hàng ngày, khối lượng giao dịch và hoạt động phát triển.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Hệ sinh thái TON Blockchain Ecosystem là mạng lưới toàn diện gồm các giao thức, ứng dụng và công cụ tích hợp. Đánh giá dựa trên các chỉ số: TVL, người dùng hoạt động hàng ngày, khối lượng giao dịch và hoạt động phát triển.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Giao Thức và Ứng Dụng Chính</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Các giao thức nổi bật trong hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: DEX (sàn phi tập trung), nền tảng lending/borrowing, yield aggregator, giải pháp bridge và marketplace NFT. Phân tích chức năng, thị phần TVL và trải nghiệm người dùng.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Các giao thức nổi bật trong hệ sinh thái TON Blockchain Ecosystem: DEX (sàn phi tập trung), nền tảng lending/borrowing, yield aggregator, giải pháp bridge và marketplace NFT. Phân tích chức năng, thị phần TVL và trải nghiệm người dùng.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Hạ Tầng Kỹ Thuật và Hiệu Suất</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Năng lực kỹ thuật của mạng TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,: giao dịch mỗi giây (TPS), thời gian block, phí gas, thời gian hoàn tất (finality) và tương thích EVM. Các chỉ số này quyết định sự phù hợp cho sử dụng hàng ngày và hoạt động DeFi.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Năng lực kỹ thuật của mạng TON Blockchain Ecosystem: giao dịch mỗi giây (TPS), thời gian block, phí gas, thời gian hoàn tất (finality) và tương thích EVM. Các chỉ số này quyết định sự phù hợp cho sử dụng hàng ngày và hoạt động DeFi.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Xu Hướng Tăng Trưởng và Lộ Trình 2026</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Xu hướng tăng trưởng hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa, năm 2026: ra mắt giao thức mới, thông báo hợp tác, chương trình tài trợ và công cụ phát triển. Việt Nam là một trong những quốc gia dẫn đầu về áp dụng blockchain ở Đông Nam Á với nhiều dự án nổi bật.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Xu hướng tăng trưởng hệ sinh thái TON Blockchain Ecosystem năm 2026: ra mắt giao thức mới, thông báo hợp tác, chương trình tài trợ và công cụ phát triển. Việt Nam là một trong những quốc gia dẫn đầu về áp dụng blockchain ở Đông Nam Á với nhiều dự án nổi bật.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Giao thức nào nổi bật trong hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,?", answer: "Giao thức nổi bật: DEX, nền tảng lending, yield optimizer, bridge và marketplace NFT. Đánh giá TVL, người dùng và khối lượng giao dịch." },
-                  { question: "Năng lực kỹ thuật của mạng TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa,?", answer: "TPS, thời gian block, phí gas trung bình, finality và tương thích EVM. Các chỉ số quyết định sự phù hợp cho sử dụng hàng ngày." },
-                  { question: "Bắt đầu phát triển trên TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa, như thế nào?", answer: "Điểm bắt đầu: tài liệu chính thức, developer portal, hackathon, chương trình grants và forum cộng đồng. Cần kiến thức Solidity hoặc Rust." },
-                  { question: "Đầu tư vào hệ sinh thái TON Blockchain Ecosystem Guide 2026: STON.fi, DeDust, Evaa, năm 2026 có hợp lý không?", answer: "Đầu tư hệ sinh thái cần cách tiếp cận khác với đầu tư đơn lẻ. Đánh giá tổng hợp xu hướng TVL, hoạt động phát triển, hợp tác tổ chức và vị thế cạnh tranh." }
+                  { question: "Giao thức nào nổi bật trong hệ sinh thái TON Blockchain Ecosystem?", answer: "Giao thức nổi bật: DEX, nền tảng lending, yield optimizer, bridge và marketplace NFT. Đánh giá TVL, người dùng và khối lượng giao dịch." },
+                  { question: "Năng lực kỹ thuật của mạng TON Blockchain Ecosystem?", answer: "TPS, thời gian block, phí gas trung bình, finality và tương thích EVM. Các chỉ số quyết định sự phù hợp cho sử dụng hàng ngày." },
+                  { question: "Bắt đầu phát triển trên TON Blockchain Ecosystem như thế nào?", answer: "Điểm bắt đầu: tài liệu chính thức, developer portal, hackathon, chương trình grants và forum cộng đồng. Cần kiến thức Solidity hoặc Rust." },
+                  { question: "Đầu tư vào hệ sinh thái TON Blockchain Ecosystem năm 2026 có hợp lý không?", answer: "Đầu tư hệ sinh thái cần cách tiếp cận khác với đầu tư đơn lẻ. Đánh giá tổng hợp xu hướng TVL, hoạt động phát triển, hợp tác tổ chức và vị thế cạnh tranh." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

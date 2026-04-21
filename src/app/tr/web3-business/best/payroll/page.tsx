@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto — Web3 İş Fırsatları ve Stratejiler | Degen0x",
-  description: "Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için reh",
+  title: "Payroll Platforms — Web3 İş Fırsatları ve Stratejiler | Degen0x",
+  description: "Payroll Platforms: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.",
   openGraph: {
     type: "article",
-    title: "Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto — Web3 İş Fırsatları ve Stratejiler",
-    description: "Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organ",
+    title: "Payroll Platforms — Web3 İş Fırsatları ve Stratejiler",
+    description: "Payroll Platforms: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehbe",
     url: "https://degen0x.com/tr/web3-business/best/payroll",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto — Web3 İş Fırsatları ve Stratejiler", description: "Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organ" },
+  twitter: { card: "summary_large_image", title: "Payroll Platforms — Web3 İş Fırsatları ve Stratejiler", description: "Payroll Platforms: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehbe" },
   alternates: {
     canonical: "/tr/web3-business/best/payroll",
     languages: { "en": "/web3-business/best/payroll", "tr": "/tr/web3-business/best/payroll", "vi": "/vi/web3-business/best/payroll", "pt-BR": "/pt-br/web3-business/best/payroll", "x-default": "/web3-business/best/payroll" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Web3 İş", item: "https://degen0x.com/tr/web3-business" },
-    { "@type": "ListItem", position: 3, name: "Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto " }
+    { "@type": "ListItem", position: 3, name: "Payroll Platforms — Web3 İş Fırsatları ve Stratejiler" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto — Web3 İş Fırsatları ve Stratejiler",
-  description: "Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için reh",
+  title: "Payroll Platforms — Web3 İş Fırsatları ve Stratejiler",
+  description: "Payroll Platforms: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.",
   url: "https://degen0x.com/tr/web3-business/best/payroll",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Web3 İş", href: "/tr/web3-business" },
-              { label: "Best Crypto Payroll Platforms of 2026 - Pay Teams " }
+              { label: "Payroll Platforms" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto — Web3 İş Fırsatları ve Stratejiler</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Payroll Platforms — Web3 İş Fırsatları ve Stratejiler</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Payroll Platforms: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Web3 İş Modelleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Best Crypto Payroll Platforms of 2026 - Pay Teams in Crypto kapsamında Web3 iş modelleri: DAO yapıları, token ekonomileri, merkeziyetsiz pazaryerleri ve creator ekonomisi. Türk geliştirici ekosistemi blockchain alanında hızla büyümekte olup İstanbul önemli bir Web3 merkezi haline gelmiştir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Payroll Platforms kapsamında Web3 iş modelleri: DAO yapıları, token ekonomileri, merkeziyetsiz pazaryerleri ve creator ekonomisi. Türk geliştirici ekosistemi blockchain alanında hızla büyümekte olup İstanbul önemli bir Web3 merkezi haline gelmiştir.</p>
             </section>
 
             <section className="mb-10">

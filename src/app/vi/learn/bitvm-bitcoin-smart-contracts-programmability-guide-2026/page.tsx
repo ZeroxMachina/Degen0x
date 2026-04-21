@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "BitVM Guide 2026: Bitcoin Smart Contracts: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
-  description: "Mọi thứ bạn cần biết về BitVM Guide 2026: Bitcoin Smart Contracts. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việ",
+  title: "BitVM: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
+  description: "Mọi thứ bạn cần biết về BitVM. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
   openGraph: {
     type: "article",
-    title: "BitVM Guide 2026: Bitcoin Smart Contracts: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
-    description: "Mọi thứ bạn cần biết về BitVM Guide 2026: Bitcoin Smart Contracts. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật ",
+    title: "BitVM: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
+    description: "Mọi thứ bạn cần biết về BitVM. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng",
     url: "https://degen0x.com/vi/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "BitVM Guide 2026: Bitcoin Smart Contracts: Hướng Dẫn Chi Tiết Tiếng Việt 2026", description: "Mọi thứ bạn cần biết về BitVM Guide 2026: Bitcoin Smart Contracts. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật " },
+  twitter: { card: "summary_large_image", title: "BitVM: Hướng Dẫn Chi Tiết Tiếng Việt 2026", description: "Mọi thứ bạn cần biết về BitVM. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng" },
   alternates: {
     canonical: "/vi/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026",
     languages: { "en": "/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026", "tr": "/tr/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026", "vi": "/vi/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026", "pt-BR": "/pt-br/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026", "x-default": "/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Học", item: "https://degen0x.com/vi/learn" },
-    { "@type": "ListItem", position: 3, name: "BitVM Guide 2026: Bitcoin Smart Contracts: Hướng Dẫn Chi Tiế" }
+    { "@type": "ListItem", position: 3, name: "BitVM: Hướng Dẫn Chi Tiết Tiếng Việt 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "BitVM Guide 2026: Bitcoin Smart Contracts: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
-  description: "Mọi thứ bạn cần biết về BitVM Guide 2026: Bitcoin Smart Contracts. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việ",
+  title: "BitVM: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
+  description: "Mọi thứ bạn cần biết về BitVM. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
   url: "https://degen0x.com/vi/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "BitVM Guide 2026: Bitcoin Smart Contracts là gì và hoạt động như thế nào?", "answer": "BitVM Guide 2026: Bitcoin Smart Contracts là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. Bitcoin có giới hạn cung 21 triệu và halving mỗi 4 năm tạo ra tính giảm phát. Sau halving 2024, phần thưởng block giảm còn 3.125 BTC, Lightning Network cho phép thanh toán tức thì." },
-  { "question": "Rủi ro khi đầu tư BitVM Guide 2026: Bitcoin Smart Contracts là gì?", "answer": "Rủi ro chính: lỗ hổng hợp đồng thông minh, biến động thị trường (dao động 20%+ mỗi ngày là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Nên đa dạng hóa danh mục và sử dụng stop-loss." },
-  { "question": "Có gì thay đổi trong lĩnh vực BitVM Guide 2026: Bitcoin Smart Contracts năm 2026?", "answer": "Năm 2026: quy định MiCA của EU có hiệu lực, Bitcoin spot ETF phổ biến toàn cầu, Ethereum hoàn thành nâng cấp Pectra và DeFi tổ chức tăng trưởng mạnh. BitVM Guide 2026: Bitcoin Smart Contracts chịu ảnh hưởng trực tiếp từ các phát triển này." },
-  { "question": "Sử dụng BitVM Guide 2026: Bitcoin Smart Contracts tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
+  { "question": "BitVM là gì và hoạt động như thế nào?", "answer": "BitVM là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương." },
+  { "question": "Rủi ro khi đầu tư BitVM là gì?", "answer": "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
+  { "question": "Có gì thay đổi trong lĩnh vực BitVM năm 2026?", "answer": "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
+  { "question": "Sử dụng BitVM tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Học", href: "/vi/learn" },
-              { label: "BitVM Guide 2026: Bitcoin Smart Contracts" }
+              { label: "BitVM" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">BitVM Guide 2026: Bitcoin Smart Contracts: Hướng Dẫn Chi Tiết Tiếng Việt 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Mọi thứ bạn cần biết về BitVM Guide 2026: Bitcoin Smart Contracts. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">BitVM: Hướng Dẫn Chi Tiết Tiếng Việt 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Mọi thứ bạn cần biết về BitVM. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">BitVM Guide 2026: Bitcoin Smart Contracts Là Gì?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">BitVM Guide 2026: Bitcoin Smart Contracts là một trong những thành phần cốt lõi của hệ sinh thái crypto và blockchain. Công nghệ này cho phép người dùng thực hiện giao dịch minh bạch, không cần trung gian nhờ kiến trúc phi tập trung. Tính đến năm 2026, các chỉ số như TVL, số lượng người dùng và hoạt động phát triển trong lĩnh vực BitVM Guide 2026: Bitcoin Smart Contracts đã tăng trưởng đáng kể. Bitcoin có giới hạn cung 21 triệu và halving mỗi 4 năm tạo ra tính giảm phát. Sau halving 2024, phần thưởng block giảm còn 3.125 BTC, Lightning Network cho phép thanh toán tức thì.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">BitVM Là Gì?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">BitVM đang ngày càng khẳng định vai trò quan trọng trong hệ sinh thái tài sản số. Được xây dựng trên nền tảng blockchain, hệ thống này sử dụng hợp đồng thông minh để thực hiện giao dịch tự động và an toàn. Sự quan tâm ngày càng tăng từ các tổ chức đầu tư đã tạo ra bước ngoặt lớn cho BitVM.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cơ Sở Kỹ Thuật và Nguyên Lý Hoạt Động</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Hệ thống BitVM Guide 2026: Bitcoin Smart Contracts được xây dựng trên các hàm hash mật mã, chữ ký số và cơ chế đồng thuận. Hợp đồng thông minh tự động thực thi giao dịch theo các quy tắc được mã hóa. Cấu trúc này loại bỏ nhu cầu về trung gian tài chính truyền thống, giảm chi phí giao dịch và tăng tốc độ.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Về mặt kỹ thuật, BitVM sử dụng công nghệ sổ cái phân tán (DLT). Mỗi giao dịch được xác minh bởi các node trong mạng và được ghi lại không thể thay đổi. Cơ chế đồng thuận (Proof of Work, Proof of Stake hoặc các giao thức thay thế) quyết định tính bảo mật và phi tập trung của mạng.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cập Nhật 2026 và Xu Hướng Thị Trường</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Năm 2026, những phát triển quan trọng nhất trong lĩnh vực BitVM Guide 2026: Bitcoin Smart Contracts: khung pháp lý rõ ràng hơn (đặc biệt quy định MiCA của EU và quyết định của SEC Mỹ), sự chấp nhận từ tổ chức tăng tốc và cải tiến công nghệ. Sau bản cập nhật Pectra của Ethereum và phê duyệt Bitcoin spot ETF, thị trường đã bước vào giai đoạn trưởng thành.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Động lực thị trường 2026 mang đến cơ hội quan trọng cho BitVM. Sự trỗi dậy của DeFi tổ chức, tăng trưởng token hóa tài sản thực (RWA) và tích hợp AI-blockchain đã tạo ra động lực mới cho ngành. BitVM chịu ảnh hưởng trực tiếp từ các xu hướng này.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Sử Dụng BitVM Guide 2026: Bitcoin Smart Contracts tại Việt Nam</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Tại Việt Nam, để sử dụng BitVM Guide 2026: Bitcoin Smart Contracts bạn cần hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín. Bạn có thể mua crypto bằng VND thông qua chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam là những lựa chọn phổ biến. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Sử Dụng BitVM tại Việt Nam</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Tại Việt Nam, để sử dụng BitVM bạn cần hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín. Bạn có thể mua crypto bằng VND thông qua chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam là những lựa chọn phổ biến. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đánh Giá Rủi Ro và Bảo Mật</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Các rủi ro cần lưu ý khi đầu tư BitVM Guide 2026: Bitcoin Smart Contracts: lỗ hổng hợp đồng thông minh (exploit và tấn công reentrancy), biến động thị trường (dao động giá 20%+ trong 24 giờ là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Sử dụng lệnh stop-loss, đa dạng hóa danh mục và chỉ đầu tư số tiền bạn chấp nhận mất là những nguyên tắc cơ bản.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Quản lý rủi ro là yếu tố then chốt cho nhà đầu tư BitVM. Các rủi ro có thể gặp: rug pull (nhà phát triển rút vốn), impermanent loss (cho nhà cung cấp thanh khoản), tấn công flash loan và thao túng oracle. Ưu tiên dự án đáng tin cậy, xem xét báo cáo audit và không tập trung quá nhiều vào một tài sản.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "BitVM Guide 2026: Bitcoin Smart Contracts là gì và hoạt động như thế nào?", answer: "BitVM Guide 2026: Bitcoin Smart Contracts là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. Bitcoin có giới hạn cung 21 triệu và halving mỗi 4 năm tạo ra tính giảm phát. Sau halving 2024, phần thưởng block giảm còn 3.125 BTC, Lightning Network cho phép thanh toán tức thì." },
-                  { question: "Rủi ro khi đầu tư BitVM Guide 2026: Bitcoin Smart Contracts là gì?", answer: "Rủi ro chính: lỗ hổng hợp đồng thông minh, biến động thị trường (dao động 20%+ mỗi ngày là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Nên đa dạng hóa danh mục và sử dụng stop-loss." },
-                  { question: "Có gì thay đổi trong lĩnh vực BitVM Guide 2026: Bitcoin Smart Contracts năm 2026?", answer: "Năm 2026: quy định MiCA của EU có hiệu lực, Bitcoin spot ETF phổ biến toàn cầu, Ethereum hoàn thành nâng cấp Pectra và DeFi tổ chức tăng trưởng mạnh. BitVM Guide 2026: Bitcoin Smart Contracts chịu ảnh hưởng trực tiếp từ các phát triển này." },
-                  { question: "Sử dụng BitVM Guide 2026: Bitcoin Smart Contracts tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
+                  { question: "BitVM là gì và hoạt động như thế nào?", answer: "BitVM là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương." },
+                  { question: "Rủi ro khi đầu tư BitVM là gì?", answer: "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
+                  { question: "Có gì thay đổi trong lĩnh vực BitVM năm 2026?", answer: "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
+                  { question: "Sử dụng BitVM tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

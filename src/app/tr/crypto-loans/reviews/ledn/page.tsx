@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Ledn Review (2026): Rates, Features & Pros/Cons — Kripto Kredi Platformları Karşılaştırması | Degen0x",
-  description: "Ledn Review (2026): Rates, Features & Pros/Cons karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
+  title: "Ledn — Kripto Kredi Platformları Karşılaştırması | Degen0x",
+  description: "Ledn karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
   openGraph: {
     type: "article",
-    title: "Ledn Review (2026): Rates, Features & Pros/Cons — Kripto Kredi Platformları Karşılaştırması",
-    description: "Ledn Review (2026): Rates, Features & Pros/Cons karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskler",
+    title: "Ledn — Kripto Kredi Platformları Karşılaştırması",
+    description: "Ledn karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
     url: "https://degen0x.com/tr/crypto-loans/reviews/ledn",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Ledn Review (2026): Rates, Features & Pros/Cons — Kripto Kredi Platformları Karşılaştırması", description: "Ledn Review (2026): Rates, Features & Pros/Cons karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskler" },
+  twitter: { card: "summary_large_image", title: "Ledn — Kripto Kredi Platformları Karşılaştırması", description: "Ledn karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği." },
   alternates: {
     canonical: "/tr/crypto-loans/reviews/ledn",
     languages: { "en": "/crypto-loans/reviews/ledn", "tr": "/tr/crypto-loans/reviews/ledn", "vi": "/vi/crypto-loans/reviews/ledn", "pt-BR": "/pt-br/crypto-loans/reviews/ledn", "x-default": "/crypto-loans/reviews/ledn" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Kripto Krediler", item: "https://degen0x.com/tr/crypto-loans" },
-    { "@type": "ListItem", position: 3, name: "Ledn Review (2026): Rates, Features & Pros/Cons — Kripto Kre" }
+    { "@type": "ListItem", position: 3, name: "Ledn — Kripto Kredi Platformları Karşılaştırması" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Ledn Review (2026): Rates, Features & Pros/Cons — Kripto Kredi Platformları Karşılaştırması",
-  description: "Ledn Review (2026): Rates, Features & Pros/Cons karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
+  title: "Ledn — Kripto Kredi Platformları Karşılaştırması",
+  description: "Ledn karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",
   url: "https://degen0x.com/tr/crypto-loans/reviews/ledn",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -59,19 +59,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Kripto Krediler", href: "/tr/crypto-loans" },
-              { label: "Ledn Review (2026): Rates, Features & Pros/Cons" }
+              { label: "Ledn" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ledn Review (2026): Rates, Features & Pros/Cons — Kripto Kredi Platformları Karşılaştırması</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Ledn Review (2026): Rates, Features & Pros/Cons karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ledn — Kripto Kredi Platformları Karşılaştırması</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Ledn karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kripto Kredi Platformları</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Ledn Review (2026): Rates, Features & Pros/Cons kredi platformları karşılaştırması: faiz oranları (APR/APY), desteklenen teminat varlıkları, minimum teminat oranları (LTV) ve likidite riskleri.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Ledn kredi platformları karşılaştırması: faiz oranları (APR/APY), desteklenen teminat varlıkları, minimum teminat oranları (LTV) ve likidite riskleri.</p>
             </section>
 
             <section className="mb-10">

@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Concentrated Liquidity Uniswap V3 Guide: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
-  description: "Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3 Guide. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
+  title: "Concentrated Liquidity Uniswap V3: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
+  description: "Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
   openGraph: {
     type: "article",
-    title: "Concentrated Liquidity Uniswap V3 Guide: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
-    description: "Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3 Guide. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 20",
+    title: "Concentrated Liquidity Uniswap V3: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
+    description: "Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — h",
     url: "https://degen0x.com/vi/learn/concentrated-liquidity-uniswap-v3",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Concentrated Liquidity Uniswap V3 Guide: Hướng Dẫn Chi Tiết Tiếng Việt 2026", description: "Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3 Guide. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 20" },
+  twitter: { card: "summary_large_image", title: "Concentrated Liquidity Uniswap V3: Hướng Dẫn Chi Tiết Tiếng Việt 2026", description: "Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — h" },
   alternates: {
     canonical: "/vi/learn/concentrated-liquidity-uniswap-v3",
     languages: { "en": "/learn/concentrated-liquidity-uniswap-v3", "tr": "/tr/learn/concentrated-liquidity-uniswap-v3", "vi": "/vi/learn/concentrated-liquidity-uniswap-v3", "pt-BR": "/pt-br/learn/concentrated-liquidity-uniswap-v3", "x-default": "/learn/concentrated-liquidity-uniswap-v3" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Học", item: "https://degen0x.com/vi/learn" },
-    { "@type": "ListItem", position: 3, name: "Concentrated Liquidity Uniswap V3 Guide: Hướng Dẫn Chi Tiết " }
+    { "@type": "ListItem", position: 3, name: "Concentrated Liquidity Uniswap V3: Hướng Dẫn Chi Tiết Tiếng " }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Concentrated Liquidity Uniswap V3 Guide: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
-  description: "Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3 Guide. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
+  title: "Concentrated Liquidity Uniswap V3: Hướng Dẫn Chi Tiết Tiếng Việt 2026",
+  description: "Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
   url: "https://degen0x.com/vi/learn/concentrated-liquidity-uniswap-v3",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Concentrated Liquidity Uniswap V3 Guide là gì và hoạt động như thế nào?", "answer": "Concentrated Liquidity Uniswap V3 Guide là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
-  { "question": "Rủi ro khi đầu tư Concentrated Liquidity Uniswap V3 Guide là gì?", "answer": "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
-  { "question": "Có gì thay đổi trong lĩnh vực Concentrated Liquidity Uniswap V3 Guide năm 2026?", "answer": "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
-  { "question": "Sử dụng Concentrated Liquidity Uniswap V3 Guide tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
+  { "question": "Concentrated Liquidity Uniswap V3 là gì và hoạt động như thế nào?", "answer": "Concentrated Liquidity Uniswap V3 là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
+  { "question": "Rủi ro khi đầu tư Concentrated Liquidity Uniswap V3 là gì?", "answer": "Rủi ro chính: lỗ hổng hợp đồng thông minh, biến động thị trường (dao động 20%+ mỗi ngày là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Nên đa dạng hóa danh mục và sử dụng stop-loss." },
+  { "question": "Có gì thay đổi trong lĩnh vực Concentrated Liquidity Uniswap V3 năm 2026?", "answer": "Năm 2026: quy định MiCA của EU có hiệu lực, Bitcoin spot ETF phổ biến toàn cầu, Ethereum hoàn thành nâng cấp Pectra và DeFi tổ chức tăng trưởng mạnh. Concentrated Liquidity Uniswap V3 chịu ảnh hưởng trực tiếp từ các phát triển này." },
+  { "question": "Sử dụng Concentrated Liquidity Uniswap V3 tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Học", href: "/vi/learn" },
-              { label: "Concentrated Liquidity Uniswap V3 Guide" }
+              { label: "Concentrated Liquidity Uniswap V3" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Concentrated Liquidity Uniswap V3 Guide: Hướng Dẫn Chi Tiết Tiếng Việt 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3 Guide. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Concentrated Liquidity Uniswap V3: Hướng Dẫn Chi Tiết Tiếng Việt 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Mọi thứ bạn cần biết về Concentrated Liquidity Uniswap V3. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Concentrated Liquidity Uniswap V3 Guide Là Gì?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Trong hệ sinh thái tiền điện tử, Concentrated Liquidity Uniswap V3 Guide có vị trí chiến lược quan trọng. Mô hình phát triển mã nguồn mở và cơ chế quản trị cộng đồng mang lại cấu trúc minh bạch. Các tích hợp trên Ethereum, Solana và các mạng lớn khác đang mở rộng phạm vi ứng dụng của Concentrated Liquidity Uniswap V3 Guide.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Concentrated Liquidity Uniswap V3 Là Gì?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Concentrated Liquidity Uniswap V3 là một trong những thành phần cốt lõi của hệ sinh thái crypto và blockchain. Công nghệ này cho phép người dùng thực hiện giao dịch minh bạch, không cần trung gian nhờ kiến trúc phi tập trung. Tính đến năm 2026, các chỉ số như TVL, số lượng người dùng và hoạt động phát triển trong lĩnh vực Concentrated Liquidity Uniswap V3 đã tăng trưởng đáng kể. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cơ Sở Kỹ Thuật và Nguyên Lý Hoạt Động</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Cơ sở hạ tầng Concentrated Liquidity Uniswap V3 Guide được xây dựng trên kiến trúc đa lớp: lớp cơ sở (Layer 1) đảm bảo đồng thuận và bảo mật, trong khi các lớp trên (Layer 2) tối ưu khả năng mở rộng và tốc độ. Phương pháp này tối ưu hóa cả bảo mật lẫn trải nghiệm người dùng.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Hệ thống Concentrated Liquidity Uniswap V3 được xây dựng trên các hàm hash mật mã, chữ ký số và cơ chế đồng thuận. Hợp đồng thông minh tự động thực thi giao dịch theo các quy tắc được mã hóa. Cấu trúc này loại bỏ nhu cầu về trung gian tài chính truyền thống, giảm chi phí giao dịch và tăng tốc độ.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cập Nhật 2026 và Xu Hướng Thị Trường</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Concentrated Liquidity Uniswap V3 Guide trong năm 2026 đã có cấu trúc thị trường trưởng thành hơn so với các năm trước. Các nghiên cứu CBDC, danh mục mới như DePIN (Mạng Hạ Tầng Vật Lý Phi Tập Trung) và sự chấp nhận kiến trúc blockchain modular đang tái định hình hệ sinh thái.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Năm 2026, những phát triển quan trọng nhất trong lĩnh vực Concentrated Liquidity Uniswap V3: khung pháp lý rõ ràng hơn (đặc biệt quy định MiCA của EU và quyết định của SEC Mỹ), sự chấp nhận từ tổ chức tăng tốc và cải tiến công nghệ. Sau bản cập nhật Pectra của Ethereum và phê duyệt Bitcoin spot ETF, thị trường đã bước vào giai đoạn trưởng thành.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Sử Dụng Concentrated Liquidity Uniswap V3 Guide tại Việt Nam</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Tại Việt Nam, để sử dụng Concentrated Liquidity Uniswap V3 Guide bạn cần hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín. Bạn có thể mua crypto bằng VND thông qua chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam là những lựa chọn phổ biến. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Sử Dụng Concentrated Liquidity Uniswap V3 tại Việt Nam</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Tại Việt Nam, để sử dụng Concentrated Liquidity Uniswap V3 bạn cần hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín. Bạn có thể mua crypto bằng VND thông qua chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam là những lựa chọn phổ biến. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đánh Giá Rủi Ro và Bảo Mật</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Hiểu rõ các rủi ro liên quan đến Concentrated Liquidity Uniswap V3 Guide là nền tảng của quyết định đầu tư sáng suốt. Rủi ro thị trường (biến động), rủi ro công nghệ (lỗi code), rủi ro đối tác (sàn phá sản — như trường hợp FTX) và rủi ro pháp lý (cấm hoặc hạn chế) cần được đánh giá. Sử dụng cold wallet và bảo quản khóa riêng tư an toàn là biện pháp bảo mật quan trọng nhất.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Các rủi ro cần lưu ý khi đầu tư Concentrated Liquidity Uniswap V3: lỗ hổng hợp đồng thông minh (exploit và tấn công reentrancy), biến động thị trường (dao động giá 20%+ trong 24 giờ là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Sử dụng lệnh stop-loss, đa dạng hóa danh mục và chỉ đầu tư số tiền bạn chấp nhận mất là những nguyên tắc cơ bản.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Concentrated Liquidity Uniswap V3 Guide là gì và hoạt động như thế nào?", answer: "Concentrated Liquidity Uniswap V3 Guide là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
-                  { question: "Rủi ro khi đầu tư Concentrated Liquidity Uniswap V3 Guide là gì?", answer: "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
-                  { question: "Có gì thay đổi trong lĩnh vực Concentrated Liquidity Uniswap V3 Guide năm 2026?", answer: "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
-                  { question: "Sử dụng Concentrated Liquidity Uniswap V3 Guide tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
+                  { question: "Concentrated Liquidity Uniswap V3 là gì và hoạt động như thế nào?", answer: "Concentrated Liquidity Uniswap V3 là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
+                  { question: "Rủi ro khi đầu tư Concentrated Liquidity Uniswap V3 là gì?", answer: "Rủi ro chính: lỗ hổng hợp đồng thông minh, biến động thị trường (dao động 20%+ mỗi ngày là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Nên đa dạng hóa danh mục và sử dụng stop-loss." },
+                  { question: "Có gì thay đổi trong lĩnh vực Concentrated Liquidity Uniswap V3 năm 2026?", answer: "Năm 2026: quy định MiCA của EU có hiệu lực, Bitcoin spot ETF phổ biến toàn cầu, Ethereum hoàn thành nâng cấp Pectra và DeFi tổ chức tăng trưởng mạnh. Concentrated Liquidity Uniswap V3 chịu ảnh hưởng trực tiếp từ các phát triển này." },
+                  { question: "Sử dụng Concentrated Liquidity Uniswap V3 tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

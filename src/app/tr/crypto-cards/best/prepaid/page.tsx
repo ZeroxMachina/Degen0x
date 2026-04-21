@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Crypto Prepaid Cards of 2026 - Load & Spend — Kripto Kart Karşılaştırma ve İnceleme | Degen0x",
-  description: "Best Crypto Prepaid Cards of 2026 - Load & Spend karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercar",
+  title: "Prepaid Cards — Kripto Kart Karşılaştırma ve İnceleme | Degen0x",
+  description: "Prepaid Cards karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır v",
   openGraph: {
     type: "article",
-    title: "Best Crypto Prepaid Cards of 2026 - Load & Spend — Kripto Kart Karşılaştırma ve İnceleme",
-    description: "Best Crypto Prepaid Cards of 2026 - Load & Spend karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkele",
+    title: "Prepaid Cards — Kripto Kart Karşılaştırma ve İnceleme",
+    description: "Prepaid Cards karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mast",
     url: "https://degen0x.com/tr/crypto-cards/best/prepaid",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Crypto Prepaid Cards of 2026 - Load & Spend — Kripto Kart Karşılaştırma ve İnceleme", description: "Best Crypto Prepaid Cards of 2026 - Load & Spend karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkele" },
+  twitter: { card: "summary_large_image", title: "Prepaid Cards — Kripto Kart Karşılaştırma ve İnceleme", description: "Prepaid Cards karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mast" },
   alternates: {
     canonical: "/tr/crypto-cards/best/prepaid",
     languages: { "en": "/crypto-cards/best/prepaid", "tr": "/tr/crypto-cards/best/prepaid", "vi": "/vi/crypto-cards/best/prepaid", "pt-BR": "/pt-br/crypto-cards/best/prepaid", "x-default": "/crypto-cards/best/prepaid" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Kripto Kartlar", item: "https://degen0x.com/tr/crypto-cards" },
-    { "@type": "ListItem", position: 3, name: "Best Crypto Prepaid Cards of 2026 - Load & Spend — Kripto Ka" }
+    { "@type": "ListItem", position: 3, name: "Prepaid Cards — Kripto Kart Karşılaştırma ve İnceleme" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Crypto Prepaid Cards of 2026 - Load & Spend — Kripto Kart Karşılaştırma ve İnceleme",
-  description: "Best Crypto Prepaid Cards of 2026 - Load & Spend karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercar",
+  title: "Prepaid Cards — Kripto Kart Karşılaştırma ve İnceleme",
+  description: "Prepaid Cards karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır v",
   url: "https://degen0x.com/tr/crypto-cards/best/prepaid",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,7 +42,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Best Crypto Prepaid Cards of 2026 - Load & Spend kartının ücretleri nedir?", "answer": "Kart ücret yapısı: başvuru ücreti, aylık/yıllık aidat, ATM çekim ücreti, döviz kuru farkı ve kripto-fiat dönüşüm spread\'i. Gizli ücretlere dikkat edin." },
+  { "question": "Prepaid Cards kartının ücretleri nedir?", "answer": "Kart ücret yapısı: başvuru ücreti, aylık/yıllık aidat, ATM çekim ücreti, döviz kuru farkı ve kripto-fiat dönüşüm spread\'i. Gizli ücretlere dikkat edin." },
   { "question": "Hangi kripto paralarla harcama yapabilirim?", "answer": "Desteklenen kripto paralar, otomatik dönüşüm mekanizması ve spread oranları. Bitcoin, Ethereum ve stablecoin genellikle en düşük spread\'e sahiptir." },
   { "question": "Türkiye\'de bu kartı kullanabilir miyim?", "answer": "Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır. Kart kullanılabilirliği, ATM erişimi ve TL harcama deneyimi değerlendirilmektedir." },
   { "question": "Cashback oranları ve ödüller nasıl?", "answer": "Cashback yapısı: harcama bazlı iade oranları, staking gereksinimleri (daha yüksek tier = daha yüksek cashback), ödül token\'ı ve kullanım koşulları." }
@@ -59,29 +59,29 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Kripto Kartlar", href: "/tr/crypto-cards" },
-              { label: "Best Crypto Prepaid Cards of 2026 - Load & Spend" }
+              { label: "Prepaid Cards" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Crypto Prepaid Cards of 2026 - Load & Spend — Kripto Kart Karşılaştırma ve İnceleme</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best Crypto Prepaid Cards of 2026 - Load & Spend karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Prepaid Cards — Kripto Kart Karşılaştırma ve İnceleme</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Prepaid Cards karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kripto Kart Genel Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Best Crypto Prepaid Cards of 2026 - Load & Spend kartı hakkında kapsamlı inceleme: kart türü (ön ödemeli/banka kartı/kredi kartı), desteklenen ödeme ağları (Visa/Mastercard) ve global kullanılabilirlik. Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Prepaid Cards kartı hakkında kapsamlı inceleme: kart türü (ön ödemeli/banka kartı/kredi kartı), desteklenen ödeme ağları (Visa/Mastercard) ve global kullanılabilirlik. Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Ücretler ve Cashback Karşılaştırması</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Best Crypto Prepaid Cards of 2026 - Load & Spend kartının aylık/yıllık ücretleri, ATM çekim limitleri, döviz kuru farkları, staking gereksinimleri ve cashback/ödül oranları detaylı olarak karşılaştırılmaktadır. Gizli ücretlere dikkat edin.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Prepaid Cards kartının aylık/yıllık ücretleri, ATM çekim limitleri, döviz kuru farkları, staking gereksinimleri ve cashback/ödül oranları detaylı olarak karşılaştırılmaktadır. Gizli ücretlere dikkat edin.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Desteklenen Kripto Paralar ve Dönüşüm</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Best Crypto Prepaid Cards of 2026 - Load & Spend kartı ile harcama yapabileceğiniz kripto paralar, otomatik dönüşüm mekanizması (crypto-to-fiat), spread oranları ve desteklenen fiat para birimleri incelenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Prepaid Cards kartı ile harcama yapabileceğiniz kripto paralar, otomatik dönüşüm mekanizması (crypto-to-fiat), spread oranları ve desteklenen fiat para birimleri incelenmektedir.</p>
             </section>
 
             <section className="mb-10">
@@ -93,7 +93,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Best Crypto Prepaid Cards of 2026 - Load & Spend kartının ücretleri nedir?", answer: "Kart ücret yapısı: başvuru ücreti, aylık/yıllık aidat, ATM çekim ücreti, döviz kuru farkı ve kripto-fiat dönüşüm spread\'i. Gizli ücretlere dikkat edin." },
+                  { question: "Prepaid Cards kartının ücretleri nedir?", answer: "Kart ücret yapısı: başvuru ücreti, aylık/yıllık aidat, ATM çekim ücreti, döviz kuru farkı ve kripto-fiat dönüşüm spread\'i. Gizli ücretlere dikkat edin." },
                   { question: "Hangi kripto paralarla harcama yapabilirim?", answer: "Desteklenen kripto paralar, otomatik dönüşüm mekanizması ve spread oranları. Bitcoin, Ethereum ve stablecoin genellikle en düşük spread\'e sahiptir." },
                   { question: "Türkiye\'de bu kartı kullanabilir miyim?", answer: "Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinden çalışır ve TL olarak harcama yapmanıza olanak tanır. Kart kullanılabilirliği, ATM erişimi ve TL harcama deneyimi değerlendirilmektedir." },
                   { question: "Cashback oranları ve ödüller nasıl?", answer: "Cashback yapısı: harcama bazlı iade oranları, staking gereksinimleri (daha yüksek tier = daha yüksek cashback), ödül token\'ı ve kullanım koşulları." }

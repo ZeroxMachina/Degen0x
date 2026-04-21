@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Crypto Exchanges of 2026 - Compare & Review İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi | Degen0x",
-  description: "Best Crypto Exchanges of 2026 - Compare & Review borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekle",
+  title: "Exchanges İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi | Degen0x",
+  description: "Exchanges borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekleri. Türk yatırımcılar için detaylı değe",
   openGraph: {
     type: "article",
-    title: "Best Crypto Exchanges of 2026 - Compare & Review İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi",
-    description: "Best Crypto Exchanges of 2026 - Compare & Review borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen krip",
+    title: "Exchanges İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi",
+    description: "Exchanges borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekl",
     url: "https://degen0x.com/tr/exchanges",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Crypto Exchanges of 2026 - Compare & Review İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi", description: "Best Crypto Exchanges of 2026 - Compare & Review borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen krip" },
+  twitter: { card: "summary_large_image", title: "Exchanges İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi", description: "Exchanges borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekl" },
   alternates: {
     canonical: "/tr/exchanges",
     languages: { "en": "/exchanges", "tr": "/tr/exchanges", "vi": "/vi/exchanges", "pt-BR": "/pt-br/exchanges", "x-default": "/exchanges" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Crypto Exchanges of 2026 - Compare & Review İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi",
-  description: "Best Crypto Exchanges of 2026 - Compare & Review borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekle",
+  title: "Exchanges İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi",
+  description: "Exchanges borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekleri. Türk yatırımcılar için detaylı değe",
   url: "https://degen0x.com/tr/exchanges",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -41,10 +41,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Best Crypto Exchanges of 2026 - Compare & Review borsasının işlem ücretleri nasıl?", "answer": "Best Crypto Exchanges of 2026 - Compare & Review platformunda spot işlem ücretleri maker ve taker olarak ayrılır. Hacim bazlı VIP seviyeleri ile ücretlerde indirim sağlanır. TL ile yatırma/çekme işlemlerinde ek komisyon olup olmadığını kontrol edin. Detaylı ücret karşılaştırması bu rehberde sunulmaktadır." },
-  { "question": "Best Crypto Exchanges of 2026 - Compare & Review güvenli mi? Fonlarım korunuyor mu?", "answer": "Borsa güvenlik değerlendirmesinde soğuk cüzdan oranı, 2FA zorunluluğu, IP whitelist, çekim onay süreçleri ve sigorta fonu varlığı incelenmektedir. Best Crypto Exchanges of 2026 - Compare & Review platformunun güvenlik altyapısı ve geçmiş güvenlik olayları bu rehberde detaylı olarak ele alınmaktadır." },
-  { "question": "Türkiye\'den Best Crypto Exchanges of 2026 - Compare & Review kullanabilir miyim?", "answer": "Türkiye\'den Best Crypto Exchanges of 2026 - Compare & Review platformuna erişim, KYC gereksinimleri, TL yatırma seçenekleri (banka havalesi, EFT) ve yasal durum bu bölümde açıklanmaktadır. SPK ve MASAK düzenlemeleri kapsamındaki güncel durum değerlendirilmiştir." },
-  { "question": "Best Crypto Exchanges of 2026 - Compare & Review ile BtcTurk, Paribu ve Bitci gibi Türk borsaları arasındaki farklar nelerdir?", "answer": "Uluslararası ve yerel borsalar arasında ücret yapısı, desteklenen varlık sayısı, likidite derinliği, TL para çiftleri ve müşteri destek kalitesi açısından önemli farklılıklar bulunur. Her birinin avantaj ve dezavantajları detaylı olarak karşılaştırılmaktadır." }
+  { "question": "Exchanges borsasının işlem ücretleri nasıl?", "answer": "Exchanges platformunda spot işlem ücretleri maker ve taker olarak ayrılır. Hacim bazlı VIP seviyeleri ile ücretlerde indirim sağlanır. TL ile yatırma/çekme işlemlerinde ek komisyon olup olmadığını kontrol edin. Detaylı ücret karşılaştırması bu rehberde sunulmaktadır." },
+  { "question": "Exchanges güvenli mi? Fonlarım korunuyor mu?", "answer": "Borsa güvenlik değerlendirmesinde soğuk cüzdan oranı, 2FA zorunluluğu, IP whitelist, çekim onay süreçleri ve sigorta fonu varlığı incelenmektedir. Exchanges platformunun güvenlik altyapısı ve geçmiş güvenlik olayları bu rehberde detaylı olarak ele alınmaktadır." },
+  { "question": "Türkiye\'den Exchanges kullanabilir miyim?", "answer": "Türkiye\'den Exchanges platformuna erişim, KYC gereksinimleri, TL yatırma seçenekleri (banka havalesi, EFT) ve yasal durum bu bölümde açıklanmaktadır. SPK ve MASAK düzenlemeleri kapsamındaki güncel durum değerlendirilmiştir." },
+  { "question": "Exchanges ile BtcTurk, Paribu ve Bitci gibi Türk borsaları arasındaki farklar nelerdir?", "answer": "Uluslararası ve yerel borsalar arasında ücret yapısı, desteklenen varlık sayısı, likidite derinliği, TL para çiftleri ve müşteri destek kalitesi açısından önemli farklılıklar bulunur. Her birinin avantaj ve dezavantajları detaylı olarak karşılaştırılmaktadır." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -64,27 +64,27 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Crypto Exchanges of 2026 - Compare & Review İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best Crypto Exchanges of 2026 - Compare & Review borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekleri. Türk yatırımcılar için detaylı değerlendirme.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Exchanges İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Exchanges borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekleri. Türk yatırımcılar için detaylı değerlendirme.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Platform Genel Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Bu kapsamlı inceleme, Best Crypto Exchanges of 2026 - Compare & Review borsasının sunduğu hizmetleri, ücret yapısını, güvenlik önlemlerini ve kullanıcı deneyimini detaylı olarak ele almaktadır. BtcTurk, Paribu ve Bitci gibi Türk borsaları ile karşılaştırmalı değerlendirme ve Türk yatırımcılar için özel bilgiler sunuyoruz.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Bu kapsamlı inceleme, Exchanges borsasının sunduğu hizmetleri, ücret yapısını, güvenlik önlemlerini ve kullanıcı deneyimini detaylı olarak ele almaktadır. BtcTurk, Paribu ve Bitci gibi Türk borsaları ile karşılaştırmalı değerlendirme ve Türk yatırımcılar için özel bilgiler sunuyoruz.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">İşlem Ücretleri ve Komisyon Yapısı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto borsalarında ücret yapısı, yatırım getirinizi doğrudan etkiler. Best Crypto Exchanges of 2026 - Compare & Review platformundaki spot işlem ücretleri (maker/taker), vadeli işlem komisyonları, para yatırma/çekme maliyetleri ve VIP seviye indirimleri bu bölümde detaylı olarak incelenmektedir. TL ile işlem yapanlar için özel ücret karşılaştırması sunuyoruz.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto borsalarında ücret yapısı, yatırım getirinizi doğrudan etkiler. Exchanges platformundaki spot işlem ücretleri (maker/taker), vadeli işlem komisyonları, para yatırma/çekme maliyetleri ve VIP seviye indirimleri bu bölümde detaylı olarak incelenmektedir. TL ile işlem yapanlar için özel ücret karşılaştırması sunuyoruz.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Güvenlik Altyapısı ve Düzenleyici Uyumluluk</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Borsa güvenliği, kripto varlıklarınızı korumak için kritik öneme sahiptir. Best Crypto Exchanges of 2026 - Compare & Review platformunun çok katmanlı güvenlik sistemi: soğuk cüzdan oranı, iki faktörlü doğrulama (2FA), IP beyaz listesi, çekim onay süreçleri ve sigorta fonları incelenmektedir. SPK ve MASAK düzenlemeleri kapsamındaki uyumluluk durumu da değerlendirilmiştir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Borsa güvenliği, kripto varlıklarınızı korumak için kritik öneme sahiptir. Exchanges platformunun çok katmanlı güvenlik sistemi: soğuk cüzdan oranı, iki faktörlü doğrulama (2FA), IP beyaz listesi, çekim onay süreçleri ve sigorta fonları incelenmektedir. SPK ve MASAK düzenlemeleri kapsamındaki uyumluluk durumu da değerlendirilmiştir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Desteklenen Varlıklar ve Özellikler</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Best Crypto Exchanges of 2026 - Compare & Review platformunda işlem yapılabilen kripto paralar, fiat para birimleri, vadeli işlem seçenekleri, staking hizmetleri ve ek özellikleri (launchpad, earn programları, kart hizmetleri vb.) ele alınmaktadır. Türkiye\'den erişilebilirlik ve TL para çiftleri hakkında güncel bilgiler sunuyoruz.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Exchanges platformunda işlem yapılabilen kripto paralar, fiat para birimleri, vadeli işlem seçenekleri, staking hizmetleri ve ek özellikleri (launchpad, earn programları, kart hizmetleri vb.) ele alınmaktadır. Türkiye\'den erişilebilirlik ve TL para çiftleri hakkında güncel bilgiler sunuyoruz.</p>
             </section>
 
             <section className="mb-10">
@@ -96,10 +96,10 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Best Crypto Exchanges of 2026 - Compare & Review borsasının işlem ücretleri nasıl?", answer: "Best Crypto Exchanges of 2026 - Compare & Review platformunda spot işlem ücretleri maker ve taker olarak ayrılır. Hacim bazlı VIP seviyeleri ile ücretlerde indirim sağlanır. TL ile yatırma/çekme işlemlerinde ek komisyon olup olmadığını kontrol edin. Detaylı ücret karşılaştırması bu rehberde sunulmaktadır." },
-                  { question: "Best Crypto Exchanges of 2026 - Compare & Review güvenli mi? Fonlarım korunuyor mu?", answer: "Borsa güvenlik değerlendirmesinde soğuk cüzdan oranı, 2FA zorunluluğu, IP whitelist, çekim onay süreçleri ve sigorta fonu varlığı incelenmektedir. Best Crypto Exchanges of 2026 - Compare & Review platformunun güvenlik altyapısı ve geçmiş güvenlik olayları bu rehberde detaylı olarak ele alınmaktadır." },
-                  { question: "Türkiye\'den Best Crypto Exchanges of 2026 - Compare & Review kullanabilir miyim?", answer: "Türkiye\'den Best Crypto Exchanges of 2026 - Compare & Review platformuna erişim, KYC gereksinimleri, TL yatırma seçenekleri (banka havalesi, EFT) ve yasal durum bu bölümde açıklanmaktadır. SPK ve MASAK düzenlemeleri kapsamındaki güncel durum değerlendirilmiştir." },
-                  { question: "Best Crypto Exchanges of 2026 - Compare & Review ile BtcTurk, Paribu ve Bitci gibi Türk borsaları arasındaki farklar nelerdir?", answer: "Uluslararası ve yerel borsalar arasında ücret yapısı, desteklenen varlık sayısı, likidite derinliği, TL para çiftleri ve müşteri destek kalitesi açısından önemli farklılıklar bulunur. Her birinin avantaj ve dezavantajları detaylı olarak karşılaştırılmaktadır." }
+                  { question: "Exchanges borsasının işlem ücretleri nasıl?", answer: "Exchanges platformunda spot işlem ücretleri maker ve taker olarak ayrılır. Hacim bazlı VIP seviyeleri ile ücretlerde indirim sağlanır. TL ile yatırma/çekme işlemlerinde ek komisyon olup olmadığını kontrol edin. Detaylı ücret karşılaştırması bu rehberde sunulmaktadır." },
+                  { question: "Exchanges güvenli mi? Fonlarım korunuyor mu?", answer: "Borsa güvenlik değerlendirmesinde soğuk cüzdan oranı, 2FA zorunluluğu, IP whitelist, çekim onay süreçleri ve sigorta fonu varlığı incelenmektedir. Exchanges platformunun güvenlik altyapısı ve geçmiş güvenlik olayları bu rehberde detaylı olarak ele alınmaktadır." },
+                  { question: "Türkiye\'den Exchanges kullanabilir miyim?", answer: "Türkiye\'den Exchanges platformuna erişim, KYC gereksinimleri, TL yatırma seçenekleri (banka havalesi, EFT) ve yasal durum bu bölümde açıklanmaktadır. SPK ve MASAK düzenlemeleri kapsamındaki güncel durum değerlendirilmiştir." },
+                  { question: "Exchanges ile BtcTurk, Paribu ve Bitci gibi Türk borsaları arasındaki farklar nelerdir?", answer: "Uluslararası ve yerel borsalar arasında ücret yapısı, desteklenen varlık sayısı, likidite derinliği, TL para çiftleri ve müşteri destek kalitesi açısından önemli farklılıklar bulunur. Her birinin avantaj ve dezavantajları detaylı olarak karşılaştırılmaktadır." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

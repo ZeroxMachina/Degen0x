@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto | Degen0x",
-  description: "Comparação Best Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade da plataforma.",
+  title: "Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto | Degen0x",
+  description: "Comparação Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade da plataforma.",
   openGraph: {
     type: "article",
-    title: "Best Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto",
-    description: "Comparação Best Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilid",
+    title: "Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto",
+    description: "Comparação Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade d",
     url: "https://degen0x.com/pt-br/crypto-loans/best/institutional",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto", description: "Comparação Best Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilid" },
+  twitter: { card: "summary_large_image", title: "Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto", description: "Comparação Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade d" },
   alternates: {
     canonical: "/pt-br/crypto-loans/best/institutional",
     languages: { "en": "/crypto-loans/best/institutional", "tr": "/tr/crypto-loans/best/institutional", "vi": "/vi/crypto-loans/best/institutional", "pt-BR": "/pt-br/crypto-loans/best/institutional", "x-default": "/crypto-loans/best/institutional" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Empréstimos Cripto", item: "https://degen0x.com/pt-br/crypto-loans" },
-    { "@type": "ListItem", position: 3, name: "Best Institutional Crypto Lending — Comparação de Plataforma" }
+    { "@type": "ListItem", position: 3, name: "Institutional Crypto Lending — Comparação de Plataformas de " }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto",
-  description: "Comparação Best Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade da plataforma.",
+  title: "Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto",
+  description: "Comparação Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade da plataforma.",
   url: "https://degen0x.com/pt-br/crypto-loans/best/institutional",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Empréstimos Cripto", href: "/pt-br/crypto-loans" },
-              { label: "Best Institutional Crypto Lending" }
+              { label: "Institutional Crypto Lending" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Comparação Best Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade da plataforma.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Institutional Crypto Lending — Comparação de Plataformas de Empréstimo Cripto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Comparação Institutional Crypto Lending: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade da plataforma.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Plataformas de Empréstimo Cripto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Comparação de plataformas de empréstimo Best Institutional Crypto Lending: taxas de juros (APR/APY), ativos de garantia suportados, requisitos mínimos de colateral (LTV) e riscos de liquidez.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Comparação de plataformas de empréstimo Institutional Crypto Lending: taxas de juros (APR/APY), ativos de garantia suportados, requisitos mínimos de colateral (LTV) e riscos de liquidez.</p>
             </section>
 
             <section className="mb-10">

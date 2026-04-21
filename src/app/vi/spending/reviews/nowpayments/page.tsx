@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "NOWPayments Review (2026) — Hướng Dẫn Thanh Toán Bằng Crypto | Degen0x",
-  description: "NOWPayments Review (2026): phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.",
+  title: "NOWPayments — Hướng Dẫn Thanh Toán Bằng Crypto | Degen0x",
+  description: "NOWPayments: phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.",
   openGraph: {
     type: "article",
-    title: "NOWPayments Review (2026) — Hướng Dẫn Thanh Toán Bằng Crypto",
-    description: "NOWPayments Review (2026): phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.",
+    title: "NOWPayments — Hướng Dẫn Thanh Toán Bằng Crypto",
+    description: "NOWPayments: phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.",
     url: "https://degen0x.com/vi/spending/reviews/nowpayments",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "NOWPayments Review (2026) — Hướng Dẫn Thanh Toán Bằng Crypto", description: "NOWPayments Review (2026): phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày." },
+  twitter: { card: "summary_large_image", title: "NOWPayments — Hướng Dẫn Thanh Toán Bằng Crypto", description: "NOWPayments: phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày." },
   alternates: {
     canonical: "/vi/spending/reviews/nowpayments",
     languages: { "en": "/spending/reviews/nowpayments", "tr": "/tr/spending/reviews/nowpayments", "vi": "/vi/spending/reviews/nowpayments", "pt-BR": "/pt-br/spending/reviews/nowpayments", "x-default": "/spending/reviews/nowpayments" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Chi Tiêu", item: "https://degen0x.com/vi/spending" },
-    { "@type": "ListItem", position: 3, name: "NOWPayments Review (2026) — Hướng Dẫn Thanh Toán Bằng Crypto" }
+    { "@type": "ListItem", position: 3, name: "NOWPayments — Hướng Dẫn Thanh Toán Bằng Crypto" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "NOWPayments Review (2026) — Hướng Dẫn Thanh Toán Bằng Crypto",
-  description: "NOWPayments Review (2026): phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.",
+  title: "NOWPayments — Hướng Dẫn Thanh Toán Bằng Crypto",
+  description: "NOWPayments: phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.",
   url: "https://degen0x.com/vi/spending/reviews/nowpayments",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Chi Tiêu", href: "/vi/spending" },
-              { label: "NOWPayments Review (2026)" }
+              { label: "NOWPayments" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NOWPayments Review (2026) — Hướng Dẫn Thanh Toán Bằng Crypto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">NOWPayments Review (2026): phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NOWPayments — Hướng Dẫn Thanh Toán Bằng Crypto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">NOWPayments: phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Phương Thức Thanh Toán Crypto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Hướng dẫn thanh toán bằng crypto cho NOWPayments Review (2026): thanh toán Lightning Network, thẻ ghi nợ crypto, chuyển khoản P2P và tích hợp thương mại điện tử.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Hướng dẫn thanh toán bằng crypto cho NOWPayments: thanh toán Lightning Network, thẻ ghi nợ crypto, chuyển khoản P2P và tích hợp thương mại điện tử.</p>
             </section>
 
             <section className="mb-10">

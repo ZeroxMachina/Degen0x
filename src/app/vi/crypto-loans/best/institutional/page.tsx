@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto | Degen0x",
-  description: "So sánh Best Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
+  title: "Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto | Degen0x",
+  description: "So sánh Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
   openGraph: {
     type: "article",
-    title: "Best Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto",
-    description: "So sánh Best Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
+    title: "Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto",
+    description: "So sánh Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
     url: "https://degen0x.com/vi/crypto-loans/best/institutional",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto", description: "So sánh Best Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng." },
+  twitter: { card: "summary_large_image", title: "Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto", description: "So sánh Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng." },
   alternates: {
     canonical: "/vi/crypto-loans/best/institutional",
     languages: { "en": "/crypto-loans/best/institutional", "tr": "/tr/crypto-loans/best/institutional", "vi": "/vi/crypto-loans/best/institutional", "pt-BR": "/pt-br/crypto-loans/best/institutional", "x-default": "/crypto-loans/best/institutional" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Vay Crypto", item: "https://degen0x.com/vi/crypto-loans" },
-    { "@type": "ListItem", position: 3, name: "Best Institutional Crypto Lending — So Sánh Nền Tảng Vay Cry" }
+    { "@type": "ListItem", position: 3, name: "Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto",
-  description: "So sánh Best Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
+  title: "Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto",
+  description: "So sánh Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
   url: "https://degen0x.com/vi/crypto-loans/best/institutional",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Vay Crypto", href: "/vi/crypto-loans" },
-              { label: "Best Institutional Crypto Lending" }
+              { label: "Institutional Crypto Lending" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">So sánh Best Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Institutional Crypto Lending — So Sánh Nền Tảng Vay Crypto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">So sánh Institutional Crypto Lending: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Nền Tảng Vay Crypto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">So sánh nền tảng vay Best Institutional Crypto Lending: lãi suất (APR/APY), tài sản thế chấp hỗ trợ, tỷ lệ thế chấp tối thiểu (LTV) và rủi ro thanh khoản.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">So sánh nền tảng vay Institutional Crypto Lending: lãi suất (APR/APY), tài sản thế chấp hỗ trợ, tỷ lệ thế chấp tối thiểu (LTV) và rủi ro thanh khoản.</p>
             </section>
 
             <section className="mb-10">

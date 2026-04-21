@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Blog — Crypto News, Analysis & Guides — Kripto Güncel Analiz | Degen0x",
-  description: "Blog — Crypto News, Analysis & Guides hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ",
+  title: "Blog — Kripto Güncel Analiz | Degen0x",
+  description: "Blog hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.",
   openGraph: {
     type: "article",
-    title: "Blog — Crypto News, Analysis & Guides — Kripto Güncel Analiz",
-    description: "Blog — Crypto News, Analysis & Guides hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dü",
+    title: "Blog — Kripto Güncel Analiz",
+    description: "Blog hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanı",
     url: "https://degen0x.com/tr/blog",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Blog — Crypto News, Analysis & Guides — Kripto Güncel Analiz", description: "Blog — Crypto News, Analysis & Guides hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dü" },
+  twitter: { card: "summary_large_image", title: "Blog — Kripto Güncel Analiz", description: "Blog hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanı" },
   alternates: {
     canonical: "/tr/blog",
     languages: { "en": "/blog", "tr": "/tr/blog", "vi": "/vi/blog", "pt-BR": "/pt-br/blog", "x-default": "/blog" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Blog — Crypto News, Analysis & Guides — Kripto Güncel Analiz",
-  description: "Blog — Crypto News, Analysis & Guides hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ",
+  title: "Blog — Kripto Güncel Analiz",
+  description: "Blog hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.",
   url: "https://degen0x.com/tr/blog",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -62,12 +62,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blog — Crypto News, Analysis & Guides — Kripto Güncel Analiz</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Blog — Crypto News, Analysis & Guides hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blog — Kripto Güncel Analiz</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Blog hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Güncel Analiz</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Blog — Crypto News, Analysis & Guides hakkında güncel piyasa analizi ve uzman görüşleri. Kripto piyasasındaki son gelişmeler, trend değerlendirmeleri ve yatırımcılar için pratik bilgiler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Blog hakkında güncel piyasa analizi ve uzman görüşleri. Kripto piyasasındaki son gelişmeler, trend değerlendirmeleri ve yatırımcılar için pratik bilgiler.</p>
             </section>
 
             <section className="mb-10">

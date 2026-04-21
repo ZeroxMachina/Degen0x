@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — ",
+  title: "Sanctum: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "Sanctum hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   openGraph: {
     type: "article",
-    title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &: 2026 Kapsamlı Türkçe Rehber",
-    description: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl ça",
+    title: "Sanctum: 2026 Kapsamlı Türkçe Rehber",
+    description: "Sanctum hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsa",
     url: "https://degen0x.com/tr/learn/sanctum-solana-liquid-staking-infinity-guide-2026",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &: 2026 Kapsamlı Türkçe Rehber", description: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl ça" },
+  twitter: { card: "summary_large_image", title: "Sanctum: 2026 Kapsamlı Türkçe Rehber", description: "Sanctum hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsa" },
   alternates: {
     canonical: "/tr/learn/sanctum-solana-liquid-staking-infinity-guide-2026",
     languages: { "en": "/learn/sanctum-solana-liquid-staking-infinity-guide-2026", "tr": "/tr/learn/sanctum-solana-liquid-staking-infinity-guide-2026", "vi": "/vi/learn/sanctum-solana-liquid-staking-infinity-guide-2026", "pt-BR": "/pt-br/learn/sanctum-solana-liquid-staking-infinity-guide-2026", "x-default": "/learn/sanctum-solana-liquid-staking-infinity-guide-2026" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &:" }
+    { "@type": "ListItem", position: 3, name: "Sanctum: 2026 Kapsamlı Türkçe Rehber" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &: 2026 Kapsamlı Türkçe Rehber",
-  description: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — ",
+  title: "Sanctum: 2026 Kapsamlı Türkçe Rehber",
+  description: "Sanctum hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   url: "https://degen0x.com/tr/learn/sanctum-solana-liquid-staking-infinity-guide-2026",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & nedir ve nasıl çalışır?", "answer": "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır. Solana, 65." },
-  { "question": "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-  { "question": "2026\'da Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-  { "question": "Türkiye\'den Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & nasıl kullanılır?", "answer": "Türkiye\'de Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Sanctum nedir ve nasıl çalışır?", "answer": "Sanctum, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir." },
+  { "question": "Sanctum yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+  { "question": "2026\'da Sanctum alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+  { "question": "Türkiye\'den Sanctum nasıl kullanılır?", "answer": "Türkiye\'de Sanctum kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "Sanctum Guide 2026 — Solana Liquid Staking, Infini" }
+              { label: "Sanctum" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Sanctum: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Sanctum hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & kullanım alanını genişletmektedir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır. Solana, 65.000+ TPS kapasitesi ve ortalama \$0.00025 işlem ücreti ile en hızlı L1\'lerden biridir. Jupiter aggregator ve Firedancer validator client ekosistemi güçlendirmektedir.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Sanctum Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Sanctum stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Sanctum kullanım alanını genişletmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Sanctum altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Sanctum 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Sanctum Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Sanctum kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & ile ilgili riskleri anlamak, bilinçli yatırım kararlarının temelidir. Piyasa riski (volatilite), teknoloji riski (kod hataları), karşı taraf riski (platform iflasları — FTX örneğinde olduğu gibi) ve düzenleyici risk (yasaklar veya kısıtlamalar) değerlendirilmelidir. Cold wallet kullanmak ve özel anahtarlarınızı güvenli saklamak en önemli güvenlik uygulamalarıdır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Sanctum ile ilgili riskleri anlamak, bilinçli yatırım kararlarının temelidir. Piyasa riski (volatilite), teknoloji riski (kod hataları), karşı taraf riski (platform iflasları — FTX örneğinde olduğu gibi) ve düzenleyici risk (yasaklar veya kısıtlamalar) değerlendirilmelidir. Cold wallet kullanmak ve özel anahtarlarınızı güvenli saklamak en önemli güvenlik uygulamalarıdır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & nedir ve nasıl çalışır?", answer: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool &, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır. Solana, 65." },
-                  { question: "Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-                  { question: "2026\'da Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-                  { question: "Türkiye\'den Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & nasıl kullanılır?", answer: "Türkiye\'de Sanctum Guide 2026 — Solana Liquid Staking, Infinity Pool & kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Sanctum nedir ve nasıl çalışır?", answer: "Sanctum, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir." },
+                  { question: "Sanctum yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+                  { question: "2026\'da Sanctum alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+                  { question: "Türkiye\'den Sanctum nasıl kullanılır?", answer: "Türkiye\'de Sanctum kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

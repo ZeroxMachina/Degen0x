@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — T",
+  title: "Sui Hashi Bitcoin DeFi: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "Sui Hashi Bitcoin DeFi hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   openGraph: {
     type: "article",
-    title: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on: 2026 Kapsamlı Türkçe Rehber",
-    description: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çal",
+    title: "Sui Hashi Bitcoin DeFi: 2026 Kapsamlı Türkçe Rehber",
+    description: "Sui Hashi Bitcoin DeFi hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri",
     url: "https://degen0x.com/tr/learn/sui-hashi-bitcoin-defi-guide",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on: 2026 Kapsamlı Türkçe Rehber", description: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çal" },
+  twitter: { card: "summary_large_image", title: "Sui Hashi Bitcoin DeFi: 2026 Kapsamlı Türkçe Rehber", description: "Sui Hashi Bitcoin DeFi hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri" },
   alternates: {
     canonical: "/tr/learn/sui-hashi-bitcoin-defi-guide",
     languages: { "en": "/learn/sui-hashi-bitcoin-defi-guide", "tr": "/tr/learn/sui-hashi-bitcoin-defi-guide", "vi": "/vi/learn/sui-hashi-bitcoin-defi-guide", "pt-BR": "/pt-br/learn/sui-hashi-bitcoin-defi-guide", "x-default": "/learn/sui-hashi-bitcoin-defi-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on: " }
+    { "@type": "ListItem", position: 3, name: "Sui Hashi Bitcoin DeFi: 2026 Kapsamlı Türkçe Rehber" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on: 2026 Kapsamlı Türkçe Rehber",
-  description: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — T",
+  title: "Sui Hashi Bitcoin DeFi: 2026 Kapsamlı Türkçe Rehber",
+  description: "Sui Hashi Bitcoin DeFi hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   url: "https://degen0x.com/tr/learn/sui-hashi-bitcoin-defi-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on nedir ve nasıl çalışır?", "answer": "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3." },
-  { "question": "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-  { "question": "2026\'da Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-  { "question": "Türkiye\'den Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on nasıl kullanılır?", "answer": "Türkiye\'de Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Sui Hashi Bitcoin DeFi nedir ve nasıl çalışır?", "answer": "Sui Hashi Bitcoin DeFi, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3." },
+  { "question": "Sui Hashi Bitcoin DeFi yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+  { "question": "2026\'da Sui Hashi Bitcoin DeFi alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+  { "question": "Türkiye\'den Sui Hashi Bitcoin DeFi nasıl kullanılır?", "answer": "Türkiye\'de Sui Hashi Bitcoin DeFi kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & " }
+              { label: "Sui Hashi Bitcoin DeFi" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Sui Hashi Bitcoin DeFi: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Sui Hashi Bitcoin DeFi hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on kullanım alanını genişletmektedir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3.125 BTC\'ye düşmüş, Lightning Network ile anlık ödemeler mümkün hale gelmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Sui Hashi Bitcoin DeFi Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Sui Hashi Bitcoin DeFi stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Sui Hashi Bitcoin DeFi kullanım alanını genişletmektedir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3.125 BTC\'ye düşmüş, Lightning Network ile anlık ödemeler mümkün hale gelmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Sui Hashi Bitcoin DeFi altyapısı, katmanlı bir mimari üzerine kuruludur: temel katman (Layer 1) mutabakat ve güvenliği sağlarken, üst katmanlar (Layer 2) ölçeklenebilirlik ve hız optimizasyonu sunar. Bu yaklaşım, hem güvenliği hem de kullanıcı deneyimini optimize eder.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Sui Hashi Bitcoin DeFi 2026\'da önceki yıllara kıyasla daha olgun bir piyasa yapısına kavuşmuştur. Merkez bankası dijital para (CBDC) çalışmaları, DePIN (Merkeziyetsiz Fiziksel Altyapı Ağları) gibi yeni kategoriler ve modüler blokzincir mimarisinin benimsenmesi, ekosistemi yeniden şekillendirmektedir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Sui Hashi Bitcoin DeFi Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Sui Hashi Bitcoin DeFi kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on ile ilgili riskleri anlamak, bilinçli yatırım kararlarının temelidir. Piyasa riski (volatilite), teknoloji riski (kod hataları), karşı taraf riski (platform iflasları — FTX örneğinde olduğu gibi) ve düzenleyici risk (yasaklar veya kısıtlamalar) değerlendirilmelidir. Cold wallet kullanmak ve özel anahtarlarınızı güvenli saklamak en önemli güvenlik uygulamalarıdır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Sui Hashi Bitcoin DeFi ile ilgili riskleri anlamak, bilinçli yatırım kararlarının temelidir. Piyasa riski (volatilite), teknoloji riski (kod hataları), karşı taraf riski (platform iflasları — FTX örneğinde olduğu gibi) ve düzenleyici risk (yasaklar veya kısıtlamalar) değerlendirilmelidir. Cold wallet kullanmak ve özel anahtarlarınızı güvenli saklamak en önemli güvenlik uygulamalarıdır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on nedir ve nasıl çalışır?", answer: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3." },
-                  { question: "Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
-                  { question: "2026\'da Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
-                  { question: "Türkiye\'den Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on nasıl kullanılır?", answer: "Türkiye\'de Sui Hashi Bitcoin DeFi Guide 2026 — BTC Lending & Yield on kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Sui Hashi Bitcoin DeFi nedir ve nasıl çalışır?", answer: "Sui Hashi Bitcoin DeFi, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3." },
+                  { question: "Sui Hashi Bitcoin DeFi yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
+                  { question: "2026\'da Sui Hashi Bitcoin DeFi alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
+                  { question: "Türkiye\'den Sui Hashi Bitcoin DeFi nasıl kullanılır?", answer: "Türkiye\'de Sui Hashi Bitcoin DeFi kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

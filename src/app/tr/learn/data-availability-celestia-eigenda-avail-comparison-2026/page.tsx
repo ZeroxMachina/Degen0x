@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Celestia vs EigenDA vs Avail: DA Layer Comparison: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "Celestia vs EigenDA vs Avail: DA Layer Comparison hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kap",
+  title: "Celestia vs EigenDA vs Avail: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "Celestia vs EigenDA vs Avail hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   openGraph: {
     type: "article",
-    title: "Celestia vs EigenDA vs Avail: DA Layer Comparison: 2026 Kapsamlı Türkçe Rehber",
-    description: "Celestia vs EigenDA vs Avail: DA Layer Comparison hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, ris",
+    title: "Celestia vs EigenDA vs Avail: 2026 Kapsamlı Türkçe Rehber",
+    description: "Celestia vs EigenDA vs Avail hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncelle",
     url: "https://degen0x.com/tr/learn/data-availability-celestia-eigenda-avail-comparison-2026",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Celestia vs EigenDA vs Avail: DA Layer Comparison: 2026 Kapsamlı Türkçe Rehber", description: "Celestia vs EigenDA vs Avail: DA Layer Comparison hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, ris" },
+  twitter: { card: "summary_large_image", title: "Celestia vs EigenDA vs Avail: 2026 Kapsamlı Türkçe Rehber", description: "Celestia vs EigenDA vs Avail hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncelle" },
   alternates: {
     canonical: "/tr/learn/data-availability-celestia-eigenda-avail-comparison-2026",
     languages: { "en": "/learn/data-availability-celestia-eigenda-avail-comparison-2026", "tr": "/tr/learn/data-availability-celestia-eigenda-avail-comparison-2026", "vi": "/vi/learn/data-availability-celestia-eigenda-avail-comparison-2026", "pt-BR": "/pt-br/learn/data-availability-celestia-eigenda-avail-comparison-2026", "x-default": "/learn/data-availability-celestia-eigenda-avail-comparison-2026" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "Celestia vs EigenDA vs Avail: DA Layer Comparison: 2026 Kaps" }
+    { "@type": "ListItem", position: 3, name: "Celestia vs EigenDA vs Avail: 2026 Kapsamlı Türkçe Rehber" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Celestia vs EigenDA vs Avail: DA Layer Comparison: 2026 Kapsamlı Türkçe Rehber",
-  description: "Celestia vs EigenDA vs Avail: DA Layer Comparison hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kap",
+  title: "Celestia vs EigenDA vs Avail: 2026 Kapsamlı Türkçe Rehber",
+  description: "Celestia vs EigenDA vs Avail hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   url: "https://degen0x.com/tr/learn/data-availability-celestia-eigenda-avail-comparison-2026",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Celestia vs EigenDA vs Avail: DA Layer Comparison nedir ve nasıl çalışır?", "answer": "Celestia vs EigenDA vs Avail: DA Layer Comparison, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
-  { "question": "Celestia vs EigenDA vs Avail: DA Layer Comparison yatırımında riskler nelerdir?", "answer": "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
-  { "question": "2026\'da Celestia vs EigenDA vs Avail: DA Layer Comparison alanında neler değişti?", "answer": "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Celestia vs EigenDA vs Avail: DA Layer Comparison bu gelişmelerden doğrudan etkilenmektedir." },
-  { "question": "Türkiye\'den Celestia vs EigenDA vs Avail: DA Layer Comparison nasıl kullanılır?", "answer": "Türkiye\'de Celestia vs EigenDA vs Avail: DA Layer Comparison kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Celestia vs EigenDA vs Avail nedir ve nasıl çalışır?", "answer": "Celestia vs EigenDA vs Avail, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
+  { "question": "Celestia vs EigenDA vs Avail yatırımında riskler nelerdir?", "answer": "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
+  { "question": "2026\'da Celestia vs EigenDA vs Avail alanında neler değişti?", "answer": "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Celestia vs EigenDA vs Avail bu gelişmelerden doğrudan etkilenmektedir." },
+  { "question": "Türkiye\'den Celestia vs EigenDA vs Avail nasıl kullanılır?", "answer": "Türkiye\'de Celestia vs EigenDA vs Avail kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "Celestia vs EigenDA vs Avail: DA Layer Comparison" }
+              { label: "Celestia vs EigenDA vs Avail" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Celestia vs EigenDA vs Avail: DA Layer Comparison: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Celestia vs EigenDA vs Avail: DA Layer Comparison hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Celestia vs EigenDA vs Avail: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Celestia vs EigenDA vs Avail hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Celestia vs EigenDA vs Avail: DA Layer Comparison Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Celestia vs EigenDA vs Avail: DA Layer Comparison, kripto ve blokzincir alanının temel yapı taşlarından biridir. Bu teknoloji, merkezi olmayan mimarisi sayesinde kullanıcılara aracısız ve şeffaf işlem yapma imkanı sunar. 2026 yılı itibarıyla Celestia vs EigenDA vs Avail: DA Layer Comparison alanında TVL, kullanıcı sayısı ve geliştirici aktivitesi gibi metriklerde belirgin artışlar gözlemlenmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Celestia vs EigenDA vs Avail Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Celestia vs EigenDA vs Avail, kripto ve blokzincir alanının temel yapı taşlarından biridir. Bu teknoloji, merkezi olmayan mimarisi sayesinde kullanıcılara aracısız ve şeffaf işlem yapma imkanı sunar. 2026 yılı itibarıyla Celestia vs EigenDA vs Avail alanında TVL, kullanıcı sayısı ve geliştirici aktivitesi gibi metriklerde belirgin artışlar gözlemlenmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Celestia vs EigenDA vs Avail: DA Layer Comparison sistemi, kriptografik hash fonksiyonları, dijital imzalar ve konsensüs mekanizmaları üzerine inşa edilmiştir. Akıllı sözleşmeler, kodla tanımlanmış kurallar çerçevesinde otomatik işlem yürütür. Bu yapı, geleneksel finansal aracılara olan ihtiyacı ortadan kaldırarak işlem maliyetlerini düşürür ve hızı artırır. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Celestia vs EigenDA vs Avail sistemi, kriptografik hash fonksiyonları, dijital imzalar ve konsensüs mekanizmaları üzerine inşa edilmiştir. Akıllı sözleşmeler, kodla tanımlanmış kurallar çerçevesinde otomatik işlem yürütür. Bu yapı, geleneksel finansal aracılara olan ihtiyacı ortadan kaldırarak işlem maliyetlerini düşürür ve hızı artırır. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">2026 yılında Celestia vs EigenDA vs Avail: DA Layer Comparison alanındaki en önemli gelişmeler: düzenleyici çerçevelerin netleşmesi (özellikle AB MiCA düzenlemesi ve ABD SEC kararları), kurumsal benimsemenin hızlanması ve teknolojik iyileştirmelerdir. Ethereum\'un Pectra güncellemesi ve Bitcoin spot ETF onaylarının ardından piyasa olgunlaşma sürecine girmiştir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">2026 yılında Celestia vs EigenDA vs Avail alanındaki en önemli gelişmeler: düzenleyici çerçevelerin netleşmesi (özellikle AB MiCA düzenlemesi ve ABD SEC kararları), kurumsal benimsemenin hızlanması ve teknolojik iyileştirmelerdir. Ethereum\'un Pectra güncellemesi ve Bitcoin spot ETF onaylarının ardından piyasa olgunlaşma sürecine girmiştir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Celestia vs EigenDA vs Avail: DA Layer Comparison Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Celestia vs EigenDA vs Avail: DA Layer Comparison kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Celestia vs EigenDA vs Avail Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Celestia vs EigenDA vs Avail kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Celestia vs EigenDA vs Avail: DA Layer Comparison yatırımında dikkat edilmesi gereken temel riskler: akıllı sözleşme güvenlik açıkları (exploit ve reentrancy saldırıları), piyasa oynaklığı (24 saatte %20+ fiyat dalgalanmaları olağandır), düzenleyici belirsizlikler ve likidite riskleridir. Stop-loss emirleri kullanmak, portföy çeşitlendirmesi yapmak ve yalnızca kaybetmeyi göze alabileceğiniz miktarı yatırmak temel kurallardır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Celestia vs EigenDA vs Avail yatırımında dikkat edilmesi gereken temel riskler: akıllı sözleşme güvenlik açıkları (exploit ve reentrancy saldırıları), piyasa oynaklığı (24 saatte %20+ fiyat dalgalanmaları olağandır), düzenleyici belirsizlikler ve likidite riskleridir. Stop-loss emirleri kullanmak, portföy çeşitlendirmesi yapmak ve yalnızca kaybetmeyi göze alabileceğiniz miktarı yatırmak temel kurallardır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Celestia vs EigenDA vs Avail: DA Layer Comparison nedir ve nasıl çalışır?", answer: "Celestia vs EigenDA vs Avail: DA Layer Comparison, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
-                  { question: "Celestia vs EigenDA vs Avail: DA Layer Comparison yatırımında riskler nelerdir?", answer: "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
-                  { question: "2026\'da Celestia vs EigenDA vs Avail: DA Layer Comparison alanında neler değişti?", answer: "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Celestia vs EigenDA vs Avail: DA Layer Comparison bu gelişmelerden doğrudan etkilenmektedir." },
-                  { question: "Türkiye\'den Celestia vs EigenDA vs Avail: DA Layer Comparison nasıl kullanılır?", answer: "Türkiye\'de Celestia vs EigenDA vs Avail: DA Layer Comparison kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Celestia vs EigenDA vs Avail nedir ve nasıl çalışır?", answer: "Celestia vs EigenDA vs Avail, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
+                  { question: "Celestia vs EigenDA vs Avail yatırımında riskler nelerdir?", answer: "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
+                  { question: "2026\'da Celestia vs EigenDA vs Avail alanında neler değişti?", answer: "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Celestia vs EigenDA vs Avail bu gelişmelerden doğrudan etkilenmektedir." },
+                  { question: "Türkiye\'den Celestia vs EigenDA vs Avail nasıl kullanılır?", answer: "Türkiye\'de Celestia vs EigenDA vs Avail kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

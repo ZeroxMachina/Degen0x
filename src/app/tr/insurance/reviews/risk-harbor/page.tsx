@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Risk Harbor Review (2026) — DeFi Sigorta Rehberi 2026 | Degen0x",
-  description: "Risk Harbor Review (2026): DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
+  title: "Risk Harbor — DeFi Sigorta Rehberi 2026 | Degen0x",
+  description: "Risk Harbor: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
   openGraph: {
     type: "article",
-    title: "Risk Harbor Review (2026) — DeFi Sigorta Rehberi 2026",
-    description: "Risk Harbor Review (2026): DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
+    title: "Risk Harbor — DeFi Sigorta Rehberi 2026",
+    description: "Risk Harbor: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
     url: "https://degen0x.com/tr/insurance/reviews/risk-harbor",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Risk Harbor Review (2026) — DeFi Sigorta Rehberi 2026", description: "Risk Harbor Review (2026): DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi." },
+  twitter: { card: "summary_large_image", title: "Risk Harbor — DeFi Sigorta Rehberi 2026", description: "Risk Harbor: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi." },
   alternates: {
     canonical: "/tr/insurance/reviews/risk-harbor",
     languages: { "en": "/insurance/reviews/risk-harbor", "tr": "/tr/insurance/reviews/risk-harbor", "vi": "/vi/insurance/reviews/risk-harbor", "pt-BR": "/pt-br/insurance/reviews/risk-harbor", "x-default": "/insurance/reviews/risk-harbor" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Sigorta", item: "https://degen0x.com/tr/insurance" },
-    { "@type": "ListItem", position: 3, name: "Risk Harbor Review (2026) — DeFi Sigorta Rehberi 2026" }
+    { "@type": "ListItem", position: 3, name: "Risk Harbor — DeFi Sigorta Rehberi 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Risk Harbor Review (2026) — DeFi Sigorta Rehberi 2026",
-  description: "Risk Harbor Review (2026): DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
+  title: "Risk Harbor — DeFi Sigorta Rehberi 2026",
+  description: "Risk Harbor: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",
   url: "https://degen0x.com/tr/insurance/reviews/risk-harbor",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Sigorta", href: "/tr/insurance" },
-              { label: "Risk Harbor Review (2026)" }
+              { label: "Risk Harbor" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Risk Harbor Review (2026) — DeFi Sigorta Rehberi 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Risk Harbor Review (2026): DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Risk Harbor — DeFi Sigorta Rehberi 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Risk Harbor: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">DeFi Sigorta Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Risk Harbor Review (2026) konusunda DeFi sigorta rehberi: akıllı sözleşme exploit\'lerine, hack olaylarına ve protokol arızalarına karşı koruma sağlayan merkeziyetsiz sigorta protokolleri.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Risk Harbor konusunda DeFi sigorta rehberi: akıllı sözleşme exploit\'lerine, hack olaylarına ve protokol arızalarına karşı koruma sağlayan merkeziyetsiz sigorta protokolleri.</p>
             </section>
 
             <section className="mb-10">

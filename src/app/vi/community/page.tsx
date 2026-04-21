@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens — Hướng Dẫn Cộng Đồng Crypto | Degen0x",
-  description: "Hướng dẫn toàn diện về degen0x Community — Ask, Discuss, Learn with Fellow Degens bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền đi",
+  title: "degen0x Community — Hướng Dẫn Cộng Đồng Crypto | Degen0x",
+  description: "Hướng dẫn toàn diện về degen0x Community bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.",
   openGraph: {
     type: "article",
-    title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens — Hướng Dẫn Cộng Đồng Crypto",
-    description: "Hướng dẫn toàn diện về degen0x Community — Ask, Discuss, Learn with Fellow Degens bằng tiếng Việt. Ngân hàng Nhà nước Vi",
+    title: "degen0x Community — Hướng Dẫn Cộng Đồng Crypto",
+    description: "Hướng dẫn toàn diện về degen0x Community bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điệ",
     url: "https://degen0x.com/vi/community",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens — Hướng Dẫn Cộng Đồng Crypto", description: "Hướng dẫn toàn diện về degen0x Community — Ask, Discuss, Learn with Fellow Degens bằng tiếng Việt. Ngân hàng Nhà nước Vi" },
+  twitter: { card: "summary_large_image", title: "degen0x Community — Hướng Dẫn Cộng Đồng Crypto", description: "Hướng dẫn toàn diện về degen0x Community bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điệ" },
   alternates: {
     canonical: "/vi/community",
     languages: { "en": "/community", "tr": "/tr/community", "vi": "/vi/community", "pt-BR": "/pt-br/community", "x-default": "/community" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens — Hướng Dẫn Cộng Đồng Crypto",
-  description: "Hướng dẫn toàn diện về degen0x Community — Ask, Discuss, Learn with Fellow Degens bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền đi",
+  title: "degen0x Community — Hướng Dẫn Cộng Đồng Crypto",
+  description: "Hướng dẫn toàn diện về degen0x Community bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.",
   url: "https://degen0x.com/vi/community",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -62,12 +62,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">degen0x Community — Ask, Discuss, Learn with Fellow Degens — Hướng Dẫn Cộng Đồng Crypto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về degen0x Community — Ask, Discuss, Learn with Fellow Degens bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">degen0x Community — Hướng Dẫn Cộng Đồng Crypto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về degen0x Community bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Hướng Dẫn Cộng Đồng</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Hướng dẫn toàn diện về cộng đồng degen0x Community — Ask, Discuss, Learn with Fellow Degens: Discord, Telegram, tài khoản Twitter/X và nguồn forum.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Hướng dẫn toàn diện về cộng đồng degen0x Community: Discord, Telegram, tài khoản Twitter/X và nguồn forum.</p>
             </section>
 
             <section className="mb-10">

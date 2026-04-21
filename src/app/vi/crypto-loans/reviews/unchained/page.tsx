@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Unchained Review (2026): Bitcoin Loans with Key Control — So Sánh Nền Tảng Vay Crypto | Degen0x",
-  description: "So sánh Unchained Review (2026): Bitcoin Loans with Key Control: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
+  title: "Unchained — So Sánh Nền Tảng Vay Crypto | Degen0x",
+  description: "So sánh Unchained: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
   openGraph: {
     type: "article",
-    title: "Unchained Review (2026): Bitcoin Loans with Key Control — So Sánh Nền Tảng Vay Crypto",
-    description: "So sánh Unchained Review (2026): Bitcoin Loans with Key Control: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và ",
+    title: "Unchained — So Sánh Nền Tảng Vay Crypto",
+    description: "So sánh Unchained: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
     url: "https://degen0x.com/vi/crypto-loans/reviews/unchained",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Unchained Review (2026): Bitcoin Loans with Key Control — So Sánh Nền Tảng Vay Crypto", description: "So sánh Unchained Review (2026): Bitcoin Loans with Key Control: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và " },
+  twitter: { card: "summary_large_image", title: "Unchained — So Sánh Nền Tảng Vay Crypto", description: "So sánh Unchained: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng." },
   alternates: {
     canonical: "/vi/crypto-loans/reviews/unchained",
     languages: { "en": "/crypto-loans/reviews/unchained", "tr": "/tr/crypto-loans/reviews/unchained", "vi": "/vi/crypto-loans/reviews/unchained", "pt-BR": "/pt-br/crypto-loans/reviews/unchained", "x-default": "/crypto-loans/reviews/unchained" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Vay Crypto", item: "https://degen0x.com/vi/crypto-loans" },
-    { "@type": "ListItem", position: 3, name: "Unchained Review (2026): Bitcoin Loans with Key Control — So" }
+    { "@type": "ListItem", position: 3, name: "Unchained — So Sánh Nền Tảng Vay Crypto" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Unchained Review (2026): Bitcoin Loans with Key Control — So Sánh Nền Tảng Vay Crypto",
-  description: "So sánh Unchained Review (2026): Bitcoin Loans with Key Control: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
+  title: "Unchained — So Sánh Nền Tảng Vay Crypto",
+  description: "So sánh Unchained: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",
   url: "https://degen0x.com/vi/crypto-loans/reviews/unchained",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Vay Crypto", href: "/vi/crypto-loans" },
-              { label: "Unchained Review (2026): Bitcoin Loans with Key Co" }
+              { label: "Unchained" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Unchained Review (2026): Bitcoin Loans with Key Control — So Sánh Nền Tảng Vay Crypto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">So sánh Unchained Review (2026): Bitcoin Loans with Key Control: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Unchained — So Sánh Nền Tảng Vay Crypto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">So sánh Unchained: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Nền Tảng Vay Crypto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">So sánh nền tảng vay Unchained Review (2026): Bitcoin Loans with Key Control: lãi suất (APR/APY), tài sản thế chấp hỗ trợ, tỷ lệ thế chấp tối thiểu (LTV) và rủi ro thanh khoản.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">So sánh nền tảng vay Unchained: lãi suất (APR/APY), tài sản thế chấp hỗ trợ, tỷ lệ thế chấp tối thiểu (LTV) và rủi ro thanh khoản.</p>
             </section>
 
             <section className="mb-10">

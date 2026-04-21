@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Element Market Review 2026: Fees, Features, Pros & Cons — NFT Rehberi ve Piyasa Analizi 2026 | Degen0x",
-  description: "Element Market Review 2026: Fees, Features, Pros & Cons: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
+  title: "Element Market — NFT Rehberi ve Piyasa Analizi 2026 | Degen0x",
+  description: "Element Market: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
   openGraph: {
     type: "article",
-    title: "Element Market Review 2026: Fees, Features, Pros & Cons — NFT Rehberi ve Piyasa Analizi 2026",
-    description: "Element Market Review 2026: Fees, Features, Pros & Cons: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NF",
+    title: "Element Market — NFT Rehberi ve Piyasa Analizi 2026",
+    description: "Element Market: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
     url: "https://degen0x.com/tr/nfts/reviews/element-market",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Element Market Review 2026: Fees, Features, Pros & Cons — NFT Rehberi ve Piyasa Analizi 2026", description: "Element Market Review 2026: Fees, Features, Pros & Cons: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NF" },
+  twitter: { card: "summary_large_image", title: "Element Market — NFT Rehberi ve Piyasa Analizi 2026", description: "Element Market: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz." },
   alternates: {
     canonical: "/tr/nfts/reviews/element-market",
     languages: { "en": "/nfts/reviews/element-market", "tr": "/tr/nfts/reviews/element-market", "vi": "/vi/nfts/reviews/element-market", "pt-BR": "/pt-br/nfts/reviews/element-market", "x-default": "/nfts/reviews/element-market" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "NFT", item: "https://degen0x.com/tr/nfts" },
-    { "@type": "ListItem", position: 3, name: "Element Market Review 2026: Fees, Features, Pros & Cons — NF" }
+    { "@type": "ListItem", position: 3, name: "Element Market — NFT Rehberi ve Piyasa Analizi 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Element Market Review 2026: Fees, Features, Pros & Cons — NFT Rehberi ve Piyasa Analizi 2026",
-  description: "Element Market Review 2026: Fees, Features, Pros & Cons: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
+  title: "Element Market — NFT Rehberi ve Piyasa Analizi 2026",
+  description: "Element Market: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",
   url: "https://degen0x.com/tr/nfts/reviews/element-market",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -59,29 +59,29 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "NFT", href: "/tr/nfts" },
-              { label: "Element Market Review 2026: Fees, Features, Pros &" }
+              { label: "Element Market" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Element Market Review 2026: Fees, Features, Pros & Cons — NFT Rehberi ve Piyasa Analizi 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Element Market Review 2026: Fees, Features, Pros & Cons: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Element Market — NFT Rehberi ve Piyasa Analizi 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Element Market: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">NFT Piyasa Analizi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Element Market Review 2026: Fees, Features, Pros & Cons konusunda 2026 NFT piyasa analizi: toplam işlem hacmi, aktif kullanıcılar, en popüler koleksiyonlar ve fiyat trendleri. NFT ticareti Türkiye\'de hızla büyüyen bir pazar; OpenSea ve Blur en çok kullanılan platformlardır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Element Market konusunda 2026 NFT piyasa analizi: toplam işlem hacmi, aktif kullanıcılar, en popüler koleksiyonlar ve fiyat trendleri. NFT ticareti Türkiye\'de hızla büyüyen bir pazar; OpenSea ve Blur en çok kullanılan platformlardır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Standartlar</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">NFT teknik altyapısı: ERC-721 ve ERC-1155 standartları, metadata depolama (on-chain vs IPFS), royalty mekanizmaları ve cross-chain NFT transferleri. Element Market Review 2026: Fees, Features, Pros & Cons bağlamında bu standartların uygulanması değerlendirilmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">NFT teknik altyapısı: ERC-721 ve ERC-1155 standartları, metadata depolama (on-chain vs IPFS), royalty mekanizmaları ve cross-chain NFT transferleri. Element Market bağlamında bu standartların uygulanması değerlendirilmektedir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Alım-Satım ve Minting Rehberi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Element Market Review 2026: Fees, Features, Pros & Cons ile ilgili NFT alım-satım stratejileri: doğru zamanlamada mint etme, floor price analizi, rarity araçları, gas optimizasyonu ve ikincil pazar dinamikleri.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Element Market ile ilgili NFT alım-satım stratejileri: doğru zamanlamada mint etme, floor price analizi, rarity araçları, gas optimizasyonu ve ikincil pazar dinamikleri.</p>
             </section>
 
             <section className="mb-10">

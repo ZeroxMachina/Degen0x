@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Free Crypto Cards (No Annual Fee) of — Comparação e Análise de Cartões Cripto | Degen0x",
-  description: "Comparação Best Free Crypto Cards (No Annual Fee) of: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
+  title: "Crypto Cards — Comparação e Análise de Cartões Cripto | Degen0x",
+  description: "Comparação Crypto Cards: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
   openGraph: {
     type: "article",
-    title: "Best Free Crypto Cards (No Annual Fee) of — Comparação e Análise de Cartões Cripto",
-    description: "Comparação Best Free Crypto Cards (No Annual Fee) of: taxas anuais, cashback, países suportados e experiência de uso no ",
+    title: "Crypto Cards — Comparação e Análise de Cartões Cripto",
+    description: "Comparação Crypto Cards: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
     url: "https://degen0x.com/pt-br/crypto-cards/best/no-annual-fee",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Free Crypto Cards (No Annual Fee) of — Comparação e Análise de Cartões Cripto", description: "Comparação Best Free Crypto Cards (No Annual Fee) of: taxas anuais, cashback, países suportados e experiência de uso no " },
+  twitter: { card: "summary_large_image", title: "Crypto Cards — Comparação e Análise de Cartões Cripto", description: "Comparação Crypto Cards: taxas anuais, cashback, países suportados e experiência de uso no Brasil." },
   alternates: {
     canonical: "/pt-br/crypto-cards/best/no-annual-fee",
     languages: { "en": "/crypto-cards/best/no-annual-fee", "tr": "/tr/crypto-cards/best/no-annual-fee", "vi": "/vi/crypto-cards/best/no-annual-fee", "pt-BR": "/pt-br/crypto-cards/best/no-annual-fee", "x-default": "/crypto-cards/best/no-annual-fee" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Cartões Cripto", item: "https://degen0x.com/pt-br/crypto-cards" },
-    { "@type": "ListItem", position: 3, name: "Best Free Crypto Cards (No Annual Fee) of — Comparação e Aná" }
+    { "@type": "ListItem", position: 3, name: "Crypto Cards — Comparação e Análise de Cartões Cripto" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Free Crypto Cards (No Annual Fee) of — Comparação e Análise de Cartões Cripto",
-  description: "Comparação Best Free Crypto Cards (No Annual Fee) of: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
+  title: "Crypto Cards — Comparação e Análise de Cartões Cripto",
+  description: "Comparação Crypto Cards: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",
   url: "https://degen0x.com/pt-br/crypto-cards/best/no-annual-fee",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,7 +42,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Quais são as taxas do cartão Best Free Crypto Cards (No Annual Fee) of?", "answer": "Estrutura de taxas: emissão, mensalidade/anuidade, saque em ATM, diferença cambial e spread de conversão crypto-fiat. Atenção às taxas ocultas." },
+  { "question": "Quais são as taxas do cartão Crypto Cards?", "answer": "Estrutura de taxas: emissão, mensalidade/anuidade, saque em ATM, diferença cambial e spread de conversão crypto-fiat. Atenção às taxas ocultas." },
   { "question": "Com quais criptos posso gastar?", "answer": "Criptos suportadas, conversão automática e taxas de spread. Bitcoin, Ethereum e stablecoins geralmente têm menor spread." },
   { "question": "Posso usar este cartão no Brasil?", "answer": "Cartões cripto como Binance Card e Crypto.com Card permitem gastos em BRL em estabelecimentos que aceitam Mastercard/Visa. Disponibilidade, acesso a ATMs e experiência de gastos em BRL avaliados." },
   { "question": "Como funciona o cashback?", "answer": "Estrutura: taxas de retorno por gastos, requisitos de staking, token de recompensa e condições de uso." }
@@ -59,29 +59,29 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Cartões Cripto", href: "/pt-br/crypto-cards" },
-              { label: "Best Free Crypto Cards (No Annual Fee) of" }
+              { label: "Crypto Cards" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Free Crypto Cards (No Annual Fee) of — Comparação e Análise de Cartões Cripto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Comparação Best Free Crypto Cards (No Annual Fee) of: taxas anuais, cashback, países suportados e experiência de uso no Brasil.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Cards — Comparação e Análise de Cartões Cripto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Comparação Crypto Cards: taxas anuais, cashback, países suportados e experiência de uso no Brasil.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Avaliação Geral do Cartão Cripto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Análise completa do cartão Best Free Crypto Cards (No Annual Fee) of: tipo de cartão (pré-pago/débito/crédito), redes de pagamento (Visa/Mastercard) e disponibilidade global. Cartões cripto como Binance Card e Crypto.com Card permitem gastos em BRL em estabelecimentos que aceitam Mastercard/Visa.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Análise completa do cartão Crypto Cards: tipo de cartão (pré-pago/débito/crédito), redes de pagamento (Visa/Mastercard) e disponibilidade global. Cartões cripto como Binance Card e Crypto.com Card permitem gastos em BRL em estabelecimentos que aceitam Mastercard/Visa.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Taxas e Comparação de Cashback</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Taxas mensais/anuais, limites de saque em ATM, diferença cambial, requisitos de staking e taxas de cashback/recompensas do cartão Best Free Crypto Cards (No Annual Fee) of. Atenção às taxas ocultas.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Taxas mensais/anuais, limites de saque em ATM, diferença cambial, requisitos de staking e taxas de cashback/recompensas do cartão Crypto Cards. Atenção às taxas ocultas.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Criptos Suportadas e Conversão</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Criptomoedas que podem ser gastas com o cartão Best Free Crypto Cards (No Annual Fee) of, mecanismo de conversão automática (crypto-to-fiat), taxas de spread e moedas fiat suportadas.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Criptomoedas que podem ser gastas com o cartão Crypto Cards, mecanismo de conversão automática (crypto-to-fiat), taxas de spread e moedas fiat suportadas.</p>
             </section>
 
             <section className="mb-10">
@@ -93,7 +93,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Quais são as taxas do cartão Best Free Crypto Cards (No Annual Fee) of?", answer: "Estrutura de taxas: emissão, mensalidade/anuidade, saque em ATM, diferença cambial e spread de conversão crypto-fiat. Atenção às taxas ocultas." },
+                  { question: "Quais são as taxas do cartão Crypto Cards?", answer: "Estrutura de taxas: emissão, mensalidade/anuidade, saque em ATM, diferença cambial e spread de conversão crypto-fiat. Atenção às taxas ocultas." },
                   { question: "Com quais criptos posso gastar?", answer: "Criptos suportadas, conversão automática e taxas de spread. Bitcoin, Ethereum e stablecoins geralmente têm menor spread." },
                   { question: "Posso usar este cartão no Brasil?", answer: "Cartões cripto como Binance Card e Crypto.com Card permitem gastos em BRL em estabelecimentos que aceitam Mastercard/Visa. Disponibilidade, acesso a ATMs e experiência de gastos em BRL avaliados." },
                   { question: "Como funciona o cashback?", answer: "Estrutura: taxas de retorno por gastos, requisitos de staking, token de recompensa e condições de uso." }

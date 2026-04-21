@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best NFT Marketplaces of 2026 - Compare & Review — Guia de NFTs e Análise de Mercado 2026 | Degen0x",
-  description: "Best NFT Marketplaces of 2026 - Compare & Review: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
+  title: "NFT Marketplaces — Guia de NFTs e Análise de Mercado 2026 | Degen0x",
+  description: "NFT Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
   openGraph: {
     type: "article",
-    title: "Best NFT Marketplaces of 2026 - Compare & Review — Guia de NFTs e Análise de Mercado 2026",
-    description: "Best NFT Marketplaces of 2026 - Compare & Review: análise de coleções, tendências de mercado, guia de minting e ecossist",
+    title: "NFT Marketplaces — Guia de NFTs e Análise de Mercado 2026",
+    description: "NFT Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
     url: "https://degen0x.com/pt-br/nfts",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best NFT Marketplaces of 2026 - Compare & Review — Guia de NFTs e Análise de Mercado 2026", description: "Best NFT Marketplaces of 2026 - Compare & Review: análise de coleções, tendências de mercado, guia de minting e ecossist" },
+  twitter: { card: "summary_large_image", title: "NFT Marketplaces — Guia de NFTs e Análise de Mercado 2026", description: "NFT Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026." },
   alternates: {
     canonical: "/pt-br/nfts",
     languages: { "en": "/nfts", "tr": "/tr/nfts", "vi": "/vi/nfts", "pt-BR": "/pt-br/nfts", "x-default": "/nfts" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best NFT Marketplaces of 2026 - Compare & Review — Guia de NFTs e Análise de Mercado 2026",
-  description: "Best NFT Marketplaces of 2026 - Compare & Review: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
+  title: "NFT Marketplaces — Guia de NFTs e Análise de Mercado 2026",
+  description: "NFT Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
   url: "https://degen0x.com/pt-br/nfts",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -64,12 +64,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best NFT Marketplaces of 2026 - Compare & Review — Guia de NFTs e Análise de Mercado 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best NFT Marketplaces of 2026 - Compare & Review: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Marketplaces — Guia de NFTs e Análise de Mercado 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">NFT Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Análise do Mercado NFT</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Análise do mercado NFT 2026 para Best NFT Marketplaces of 2026 - Compare & Review: volume total de transações, usuários ativos, coleções populares e tendências de preço. O mercado de NFTs no Brasil tem crescido com artistas e colecionadores brasileiros ganhando destaque em plataformas globais.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Análise do mercado NFT 2026 para NFT Marketplaces: volume total de transações, usuários ativos, coleções populares e tendências de preço. O mercado de NFTs no Brasil tem crescido com artistas e colecionadores brasileiros ganhando destaque em plataformas globais.</p>
             </section>
 
             <section className="mb-10">
@@ -79,7 +79,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Guia de Compra, Venda e Minting</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Estratégias de negociação NFT relacionadas a Best NFT Marketplaces of 2026 - Compare & Review: timing de mint, análise de floor price, ferramentas de raridade, otimização de gas e dinâmicas do mercado secundário.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Estratégias de negociação NFT relacionadas a NFT Marketplaces: timing de mint, análise de floor price, ferramentas de raridade, otimização de gas e dinâmicas do mercado secundário.</p>
             </section>
 
             <section className="mb-10">

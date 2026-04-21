@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA: 2026 Kapsamlı Türkçe Rehber | Degen0x",
-  description: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe ",
+  title: "Ondo Finance: 2026 Kapsamlı Türkçe Rehber | Degen0x",
+  description: "Ondo Finance hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   openGraph: {
     type: "article",
-    title: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA: 2026 Kapsamlı Türkçe Rehber",
-    description: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, ",
+    title: "Ondo Finance: 2026 Kapsamlı Türkçe Rehber",
+    description: "Ondo Finance hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe ",
     url: "https://degen0x.com/tr/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA: 2026 Kapsamlı Türkçe Rehber", description: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, " },
+  twitter: { card: "summary_large_image", title: "Ondo Finance: 2026 Kapsamlı Türkçe Rehber", description: "Ondo Finance hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe " },
   alternates: {
     canonical: "/tr/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026",
     languages: { "en": "/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026", "tr": "/tr/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026", "vi": "/vi/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026", "pt-BR": "/pt-br/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026", "x-default": "/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Öğren", item: "https://degen0x.com/tr/learn" },
-    { "@type": "ListItem", position: 3, name: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA: 2026 K" }
+    { "@type": "ListItem", position: 3, name: "Ondo Finance: 2026 Kapsamlı Türkçe Rehber" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA: 2026 Kapsamlı Türkçe Rehber",
-  description: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe ",
+  title: "Ondo Finance: 2026 Kapsamlı Türkçe Rehber",
+  description: "Ondo Finance hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
   url: "https://degen0x.com/tr/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA nedir ve nasıl çalışır?", "answer": "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz." },
-  { "question": "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-  { "question": "2026\'da Ondo Finance Guide 2026 — Tokenized Treasuries & RWA alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Ondo Finance Guide 2026 — Tokenized Treasuries & RWA alanında da paralel iyileştirmeler gözlemlenmektedir." },
-  { "question": "Türkiye\'den Ondo Finance Guide 2026 — Tokenized Treasuries & RWA nasıl kullanılır?", "answer": "Türkiye\'de Ondo Finance Guide 2026 — Tokenized Treasuries & RWA kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Ondo Finance nedir ve nasıl çalışır?", "answer": "Ondo Finance, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir." },
+  { "question": "Ondo Finance yatırımında riskler nelerdir?", "answer": "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
+  { "question": "2026\'da Ondo Finance alanında neler değişti?", "answer": "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Ondo Finance bu gelişmelerden doğrudan etkilenmektedir." },
+  { "question": "Türkiye\'den Ondo Finance nasıl kullanılır?", "answer": "Türkiye\'de Ondo Finance kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Öğren", href: "/tr/learn" },
-              { label: "Ondo Finance Guide 2026 — Tokenized Treasuries & R" }
+              { label: "Ondo Finance" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ondo Finance Guide 2026 — Tokenized Treasuries & RWA: 2026 Kapsamlı Türkçe Rehber</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Ondo Finance Guide 2026 — Tokenized Treasuries & RWA hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Ondo Finance: 2026 Kapsamlı Türkçe Rehber</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Ondo Finance hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Ondo Finance Guide 2026 — Tokenized Treasuries & RWA Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Ondo Finance Guide 2026 — Tokenized Treasuries & RWA, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Ondo Finance Guide 2026 — Tokenized Treasuries & RWA büyük bir dönüşüm sürecine girmiştir.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Ondo Finance Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Ondo Finance, kripto ve blokzincir alanının temel yapı taşlarından biridir. Bu teknoloji, merkezi olmayan mimarisi sayesinde kullanıcılara aracısız ve şeffaf işlem yapma imkanı sunar. 2026 yılı itibarıyla Ondo Finance alanında TVL, kullanıcı sayısı ve geliştirici aktivitesi gibi metriklerde belirgin artışlar gözlemlenmiştir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Teknik açıdan Ondo Finance Guide 2026 — Tokenized Treasuries & RWA, dağıtık defter teknolojisi (DLT) kullanır. Her işlem ağdaki düğümler tarafından doğrulanır ve değiştirilemez şekilde kaydedilir. Kullanılan konsensüs mekanizması (Proof of Work, Proof of Stake veya alternatif protokoller), ağın güvenliğini ve merkeziyetsizliğini belirler.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Ondo Finance sistemi, kriptografik hash fonksiyonları, dijital imzalar ve konsensüs mekanizmaları üzerine inşa edilmiştir. Akıllı sözleşmeler, kodla tanımlanmış kurallar çerçevesinde otomatik işlem yürütür. Bu yapı, geleneksel finansal aracılara olan ihtiyacı ortadan kaldırarak işlem maliyetlerini düşürür ve hızı artırır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">2026 piyasa dinamikleri Ondo Finance Guide 2026 — Tokenized Treasuries & RWA için önemli fırsatlar sunmaktadır. Kurumsal DeFi protokollerinin yükselişi, Real World Asset (RWA) tokenizasyonunun büyümesi ve yapay zeka ile blockchain entegrasyonları sektöre yeni bir momentum kazandırmıştır. Ondo Finance Guide 2026 — Tokenized Treasuries & RWA bu trendlerden doğrudan etkilenmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">2026 yılında Ondo Finance alanındaki en önemli gelişmeler: düzenleyici çerçevelerin netleşmesi (özellikle AB MiCA düzenlemesi ve ABD SEC kararları), kurumsal benimsemenin hızlanması ve teknolojik iyileştirmelerdir. Ethereum\'un Pectra güncellemesi ve Bitcoin spot ETF onaylarının ardından piyasa olgunlaşma sürecine girmiştir.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Ondo Finance Guide 2026 — Tokenized Treasuries & RWA Kullanımı</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Ondo Finance Guide 2026 — Tokenized Treasuries & RWA kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Türkiye\'de Ondo Finance Kullanımı</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Türkiye\'de Ondo Finance kullanmak için MASAK onaylı bir borsada KYC sürecini tamamlayarak TL ile kripto satın alabilirsiniz. BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından ihtiyaçlarınıza uygun olanı seçebilirsiniz. SPK ve MASAK düzenlemeleri kapsamında işlemlerinizin yasal çerçevede olduğundan emin olun. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Riskler ve Güvenlik Değerlendirmesi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Risk yönetimi Ondo Finance Guide 2026 — Tokenized Treasuries & RWA yatırımcıları için kritik öneme sahiptir. Karşılaşabileceğiniz riskler arasında: rug pull (proje geliştiricilerinin fonları çekmesi), impermanent loss (likidite sağlayıcılar için), flash loan saldırıları ve oracle manipülasyonu yer alır. Güvenilir projeleri tercih edin, audit raporlarını inceleyin ve tek bir varlığa aşırı maruz kalmayın.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Ondo Finance yatırımında dikkat edilmesi gereken temel riskler: akıllı sözleşme güvenlik açıkları (exploit ve reentrancy saldırıları), piyasa oynaklığı (24 saatte %20+ fiyat dalgalanmaları olağandır), düzenleyici belirsizlikler ve likidite riskleridir. Stop-loss emirleri kullanmak, portföy çeşitlendirmesi yapmak ve yalnızca kaybetmeyi göze alabileceğiniz miktarı yatırmak temel kurallardır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA nedir ve nasıl çalışır?", answer: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz." },
-                  { question: "Ondo Finance Guide 2026 — Tokenized Treasuries & RWA yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
-                  { question: "2026\'da Ondo Finance Guide 2026 — Tokenized Treasuries & RWA alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Ondo Finance Guide 2026 — Tokenized Treasuries & RWA alanında da paralel iyileştirmeler gözlemlenmektedir." },
-                  { question: "Türkiye\'den Ondo Finance Guide 2026 — Tokenized Treasuries & RWA nasıl kullanılır?", answer: "Türkiye\'de Ondo Finance Guide 2026 — Tokenized Treasuries & RWA kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Ondo Finance nedir ve nasıl çalışır?", answer: "Ondo Finance, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir." },
+                  { question: "Ondo Finance yatırımında riskler nelerdir?", answer: "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
+                  { question: "2026\'da Ondo Finance alanında neler değişti?", answer: "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Ondo Finance bu gelişmelerden doğrudan etkilenmektedir." },
+                  { question: "Türkiye\'den Ondo Finance nasıl kullanılır?", answer: "Türkiye\'de Ondo Finance kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

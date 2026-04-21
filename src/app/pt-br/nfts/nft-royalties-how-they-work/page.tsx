@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Guia de NFTs e Análise de Mercado 2026 | Degen0x",
-  description: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
+  title: "NFT Royalties — Guia de NFTs e Análise de Mercado 2026 | Degen0x",
+  description: "NFT Royalties: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
   openGraph: {
     type: "article",
-    title: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Guia de NFTs e Análise de Mercado 2026",
-    description: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: análise de coleções, tendências de mercado, guia de minting e ",
+    title: "NFT Royalties — Guia de NFTs e Análise de Mercado 2026",
+    description: "NFT Royalties: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
     url: "https://degen0x.com/pt-br/nfts/nft-royalties-how-they-work",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Guia de NFTs e Análise de Mercado 2026", description: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: análise de coleções, tendências de mercado, guia de minting e " },
+  twitter: { card: "summary_large_image", title: "NFT Royalties — Guia de NFTs e Análise de Mercado 2026", description: "NFT Royalties: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026." },
   alternates: {
     canonical: "/pt-br/nfts/nft-royalties-how-they-work",
     languages: { "en": "/nfts/nft-royalties-how-they-work", "tr": "/tr/nfts/nft-royalties-how-they-work", "vi": "/vi/nfts/nft-royalties-how-they-work", "pt-BR": "/pt-br/nfts/nft-royalties-how-they-work", "x-default": "/nfts/nft-royalties-how-they-work" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "NFT", item: "https://degen0x.com/pt-br/nfts" },
-    { "@type": "ListItem", position: 3, name: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — G" }
+    { "@type": "ListItem", position: 3, name: "NFT Royalties — Guia de NFTs e Análise de Mercado 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Guia de NFTs e Análise de Mercado 2026",
-  description: "NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
+  title: "NFT Royalties — Guia de NFTs e Análise de Mercado 2026",
+  description: "NFT Royalties: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
   url: "https://degen0x.com/pt-br/nfts/nft-royalties-how-they-work",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -59,19 +59,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "NFT", href: "/pt-br/nfts" },
-              { label: "NFT Royalties 2026: EIP-2981, Enforcement, Creator" }
+              { label: "NFT Royalties" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools — Guia de NFTs e Análise de Mercado 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Royalties — Guia de NFTs e Análise de Mercado 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">NFT Royalties: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Análise do Mercado NFT</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Análise do mercado NFT 2026 para NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: volume total de transações, usuários ativos, coleções populares e tendências de preço. O mercado de NFTs no Brasil tem crescido com artistas e colecionadores brasileiros ganhando destaque em plataformas globais.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Análise do mercado NFT 2026 para NFT Royalties: volume total de transações, usuários ativos, coleções populares e tendências de preço. O mercado de NFTs no Brasil tem crescido com artistas e colecionadores brasileiros ganhando destaque em plataformas globais.</p>
             </section>
 
             <section className="mb-10">
@@ -81,7 +81,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Guia de Compra, Venda e Minting</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Estratégias de negociação NFT relacionadas a NFT Royalties 2026: EIP-2981, Enforcement, Creator Tools: timing de mint, análise de floor price, ferramentas de raridade, otimização de gas e dinâmicas do mercado secundário.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Estratégias de negociação NFT relacionadas a NFT Royalties: timing de mint, análise de floor price, ferramentas de raridade, otimização de gas e dinâmicas do mercado secundário.</p>
             </section>
 
             <section className="mb-10">

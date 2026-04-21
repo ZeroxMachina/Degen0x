@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Sherlock Review 2026: Fees, Features, Pros & Cons — Guia de Seguros DeFi 2026 | Degen0x",
-  description: "Sherlock Review 2026: Fees, Features, Pros & Cons: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
+  title: "Sherlock — Guia de Seguros DeFi 2026 | Degen0x",
+  description: "Sherlock: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
   openGraph: {
     type: "article",
-    title: "Sherlock Review 2026: Fees, Features, Pros & Cons — Guia de Seguros DeFi 2026",
-    description: "Sherlock Review 2026: Fees, Features, Pros & Cons: protocolos de seguro DeFi, comparação de cobertura e avaliação de ris",
+    title: "Sherlock — Guia de Seguros DeFi 2026",
+    description: "Sherlock: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
     url: "https://degen0x.com/pt-br/insurance/reviews/sherlock",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Sherlock Review 2026: Fees, Features, Pros & Cons — Guia de Seguros DeFi 2026", description: "Sherlock Review 2026: Fees, Features, Pros & Cons: protocolos de seguro DeFi, comparação de cobertura e avaliação de ris" },
+  twitter: { card: "summary_large_image", title: "Sherlock — Guia de Seguros DeFi 2026", description: "Sherlock: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes." },
   alternates: {
     canonical: "/pt-br/insurance/reviews/sherlock",
     languages: { "en": "/insurance/reviews/sherlock", "tr": "/tr/insurance/reviews/sherlock", "vi": "/vi/insurance/reviews/sherlock", "pt-BR": "/pt-br/insurance/reviews/sherlock", "x-default": "/insurance/reviews/sherlock" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Seguros", item: "https://degen0x.com/pt-br/insurance" },
-    { "@type": "ListItem", position: 3, name: "Sherlock Review 2026: Fees, Features, Pros & Cons — Guia de " }
+    { "@type": "ListItem", position: 3, name: "Sherlock — Guia de Seguros DeFi 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Sherlock Review 2026: Fees, Features, Pros & Cons — Guia de Seguros DeFi 2026",
-  description: "Sherlock Review 2026: Fees, Features, Pros & Cons: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
+  title: "Sherlock — Guia de Seguros DeFi 2026",
+  description: "Sherlock: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",
   url: "https://degen0x.com/pt-br/insurance/reviews/sherlock",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Seguros", href: "/pt-br/insurance" },
-              { label: "Sherlock Review 2026: Fees, Features, Pros & Cons" }
+              { label: "Sherlock" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Sherlock Review 2026: Fees, Features, Pros & Cons — Guia de Seguros DeFi 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Sherlock Review 2026: Fees, Features, Pros & Cons: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Sherlock — Guia de Seguros DeFi 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Sherlock: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">O Que É Seguro DeFi?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Guia de seguro DeFi sobre Sherlock Review 2026: Fees, Features, Pros & Cons: protocolos de seguro descentralizado que protegem contra exploits de contratos inteligentes, hacks e falhas de protocolo.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Guia de seguro DeFi sobre Sherlock: protocolos de seguro descentralizado que protegem contra exploits de contratos inteligentes, hacks e falhas de protocolo.</p>
             </section>
 
             <section className="mb-10">

@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Hướng Dẫn Thuế Crypto và Công Cụ | Degen0x",
-  description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu thuế. Chính sách thuế crypto tại Việt Nam ",
+  title: "Koinly vs TaxBit — Hướng Dẫn Thuế Crypto và Công Cụ | Degen0x",
+  description: "Koinly vs TaxBit: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu thuế. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi ",
   openGraph: {
     type: "article",
-    title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Hướng Dẫn Thuế Crypto và Công Cụ",
-    description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu th",
+    title: "Koinly vs TaxBit — Hướng Dẫn Thuế Crypto và Công Cụ",
+    description: "Koinly vs TaxBit: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu thuế. Chính sách thuế crypto tại Việt Nam đan",
     url: "https://degen0x.com/vi/taxes/compare/koinly-vs-taxbit",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Hướng Dẫn Thuế Crypto và Công Cụ", description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu th" },
+  twitter: { card: "summary_large_image", title: "Koinly vs TaxBit — Hướng Dẫn Thuế Crypto và Công Cụ", description: "Koinly vs TaxBit: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu thuế. Chính sách thuế crypto tại Việt Nam đan" },
   alternates: {
     canonical: "/vi/taxes/compare/koinly-vs-taxbit",
     languages: { "en": "/taxes/compare/koinly-vs-taxbit", "tr": "/tr/taxes/compare/koinly-vs-taxbit", "vi": "/vi/taxes/compare/koinly-vs-taxbit", "pt-BR": "/pt-br/taxes/compare/koinly-vs-taxbit", "x-default": "/taxes/compare/koinly-vs-taxbit" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Thuế", item: "https://degen0x.com/vi/taxes" },
-    { "@type": "ListItem", position: 3, name: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? " }
+    { "@type": "ListItem", position: 3, name: "Koinly vs TaxBit — Hướng Dẫn Thuế Crypto và Công Cụ" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Hướng Dẫn Thuế Crypto và Công Cụ",
-  description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu thuế. Chính sách thuế crypto tại Việt Nam ",
+  title: "Koinly vs TaxBit — Hướng Dẫn Thuế Crypto và Công Cụ",
+  description: "Koinly vs TaxBit: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu thuế. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi ",
   url: "https://degen0x.com/vi/taxes/compare/koinly-vs-taxbit",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Thuế", href: "/vi/taxes" },
-              { label: "Koinly vs TaxBit 2026: Which Crypto Tax Software I" }
+              { label: "Koinly vs TaxBit" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Hướng Dẫn Thuế Crypto và Công Cụ</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu thuế. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Koinly vs TaxBit — Hướng Dẫn Thuế Crypto và Công Cụ</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Koinly vs TaxBit: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu thuế. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Nghĩa Vụ Thuế Crypto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Nghĩa vụ thuế crypto trong phạm vi Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Các giao dịch chịu thuế: mua bán, thu nhập staking, airdrop, mining và lợi nhuận DeFi.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Nghĩa vụ thuế crypto trong phạm vi Koinly vs TaxBit: Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Các giao dịch chịu thuế: mua bán, thu nhập staking, airdrop, mining và lợi nhuận DeFi.</p>
             </section>
 
             <section className="mb-10">

@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Guia de Impostos Cripto e Ferramentas | Degen0x",
-  description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos ",
+  title: "Koinly vs TaxBit — Guia de Impostos Cripto e Ferramentas | Degen0x",
+  description: "Koinly vs TaxBit: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas ",
   openGraph: {
     type: "article",
-    title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Guia de Impostos Cripto e Ferramentas",
-    description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: obrigações fiscais cripto, preparação de declaração e ferra",
+    title: "Koinly vs TaxBit — Guia de Impostos Cripto e Ferramentas",
+    description: "Koinly vs TaxBit: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com",
     url: "https://degen0x.com/pt-br/taxes/compare/koinly-vs-taxbit",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Guia de Impostos Cripto e Ferramentas", description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: obrigações fiscais cripto, preparação de declaração e ferra" },
+  twitter: { card: "summary_large_image", title: "Koinly vs TaxBit — Guia de Impostos Cripto e Ferramentas", description: "Koinly vs TaxBit: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com" },
   alternates: {
     canonical: "/pt-br/taxes/compare/koinly-vs-taxbit",
     languages: { "en": "/taxes/compare/koinly-vs-taxbit", "tr": "/tr/taxes/compare/koinly-vs-taxbit", "vi": "/vi/taxes/compare/koinly-vs-taxbit", "pt-BR": "/pt-br/taxes/compare/koinly-vs-taxbit", "x-default": "/taxes/compare/koinly-vs-taxbit" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Impostos", item: "https://degen0x.com/pt-br/taxes" },
-    { "@type": "ListItem", position: 3, name: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? " }
+    { "@type": "ListItem", position: 3, name: "Koinly vs TaxBit — Guia de Impostos Cripto e Ferramentas" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Guia de Impostos Cripto e Ferramentas",
-  description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos ",
+  title: "Koinly vs TaxBit — Guia de Impostos Cripto e Ferramentas",
+  description: "Koinly vs TaxBit: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas ",
   url: "https://degen0x.com/pt-br/taxes/compare/koinly-vs-taxbit",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Impostos", href: "/pt-br/taxes" },
-              { label: "Koinly vs TaxBit 2026: Which Crypto Tax Software I" }
+              { label: "Koinly vs TaxBit" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Guia de Impostos Cripto e Ferramentas</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Koinly vs TaxBit — Guia de Impostos Cripto e Ferramentas</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Koinly vs TaxBit: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Obrigações Fiscais Cripto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Obrigações fiscais no escopo de Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Transações tributáveis: compra/venda, rendimentos de staking, airdrops, mineração e ganhos DeFi.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Obrigações fiscais no escopo de Koinly vs TaxBit: No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Transações tributáveis: compra/venda, rendimentos de staking, airdrops, mineração e ganhos DeFi.</p>
             </section>
 
             <section className="mb-10">

@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker — Ferramenta Cripto Gratuita | Degen0x",
-  description: "Use a ferramenta Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. ",
+  title: "Crypto Airdrop — Ferramenta Cripto Gratuita | Degen0x",
+  description: "Use a ferramenta Crypto Airdrop gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   openGraph: {
     type: "article",
-    title: "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker — Ferramenta Cripto Gratuita",
-    description: "Use a ferramenta Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker gratuitamente. Analise o mercado cripto, fa",
+    title: "Crypto Airdrop — Ferramenta Cripto Gratuita",
+    description: "Use a ferramenta Crypto Airdrop gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem n",
     url: "https://degen0x.com/pt-br/tools/crypto-airdrop-tracker",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker — Ferramenta Cripto Gratuita", description: "Use a ferramenta Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker gratuitamente. Analise o mercado cripto, fa" },
+  twitter: { card: "summary_large_image", title: "Crypto Airdrop — Ferramenta Cripto Gratuita", description: "Use a ferramenta Crypto Airdrop gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem n" },
   alternates: {
     canonical: "/pt-br/tools/crypto-airdrop-tracker",
     languages: { "en": "/tools/crypto-airdrop-tracker", "tr": "/tr/tools/crypto-airdrop-tracker", "vi": "/vi/tools/crypto-airdrop-tracker", "pt-BR": "/pt-br/tools/crypto-airdrop-tracker", "x-default": "/tools/crypto-airdrop-tracker" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Ferramentas", item: "https://degen0x.com/pt-br/tools" },
-    { "@type": "ListItem", position: 3, name: "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker " }
+    { "@type": "ListItem", position: 3, name: "Crypto Airdrop — Ferramenta Cripto Gratuita" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker — Ferramenta Cripto Gratuita",
-  description: "Use a ferramenta Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. ",
+  title: "Crypto Airdrop — Ferramenta Cripto Gratuita",
+  description: "Use a ferramenta Crypto Airdrop gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
   url: "https://degen0x.com/pt-br/tools/crypto-airdrop-tracker",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker e como funciona?", "answer": "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker é um sistema descentralizado construído sobre tecnologia blockchain. Permite transações sem intermediários através de contratos inteligentes e desempenha um papel importante no ecossistema cripto. Bridges cross-chain têm histórico de \$2B+ em exploits (Ronin \$625M, Wormhole \$320M). LayerZero e Chainlink CCIP oferecem alternativas mais seguras." },
-  { "question": "Quais são os riscos de investir em Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker?", "answer": "Principais riscos: vulnerabilidades de contratos inteligentes, volatilidade de mercado (oscilações de 20%+ ao dia são comuns), incertezas regulatórias e riscos de liquidez. Diversificação e uso de stop-loss são recomendados." },
-  { "question": "O que mudou em Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker em 2026?", "answer": "Em 2026: regulamento MiCA da UE entrou em vigor, Bitcoin spot ETFs se popularizaram globalmente, Ethereum completou upgrade Pectra e DeFi institucional cresceu significativamente. Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker é diretamente afetado." },
-  { "question": "Como usar Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+  { "question": "O que é Crypto Airdrop e como funciona?", "answer": "Crypto Airdrop é um sistema descentralizado construído sobre tecnologia blockchain. Permite transações sem intermediários através de contratos inteligentes e desempenha um papel importante no ecossistema cripto. Airdrop farming recompensa usuários de testnet e mainnet com tokens. Em 2026, filtragem Sybil ficou mais sofisticada, uso orgânico é mais valorizado." },
+  { "question": "Quais são os riscos de investir em Crypto Airdrop?", "answer": "Principais riscos: vulnerabilidades de contratos inteligentes, volatilidade de mercado (oscilações de 20%+ ao dia são comuns), incertezas regulatórias e riscos de liquidez. Diversificação e uso de stop-loss são recomendados." },
+  { "question": "O que mudou em Crypto Airdrop em 2026?", "answer": "Em 2026: regulamento MiCA da UE entrou em vigor, Bitcoin spot ETFs se popularizaram globalmente, Ethereum completou upgrade Pectra e DeFi institucional cresceu significativamente. Crypto Airdrop é diretamente afetado." },
+  { "question": "Como usar Crypto Airdrop no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,39 +59,39 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Ferramentas", href: "/pt-br/tools" },
-              { label: "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZer" }
+              { label: "Crypto Airdrop" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker — Ferramenta Cripto Gratuita</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Airdrop — Ferramenta Cripto Gratuita</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Use a ferramenta Crypto Airdrop gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker é um dos pilares fundamentais do ecossistema crypto e blockchain. Esta tecnologia permite transações transparentes e sem intermediários graças à sua arquitetura descentralizada. Em 2026, métricas como TVL, número de usuários e atividade de desenvolvedores na área de Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker apresentaram crescimento significativo. Bridges cross-chain têm histórico de \$2B+ em exploits (Ronin \$625M, Wormhole \$320M). LayerZero e Chainlink CCIP oferecem alternativas mais seguras. Airdrop farming recompensa usuários de testnet e mainnet com tokens. Em 2026, filtragem Sybil ficou mais sofisticada, uso orgânico é mais valorizado.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Crypto Airdrop?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Crypto Airdrop é um dos pilares fundamentais do ecossistema crypto e blockchain. Esta tecnologia permite transações transparentes e sem intermediários graças à sua arquitetura descentralizada. Em 2026, métricas como TVL, número de usuários e atividade de desenvolvedores na área de Crypto Airdrop apresentaram crescimento significativo. Airdrop farming recompensa usuários de testnet e mainnet com tokens. Em 2026, filtragem Sybil ficou mais sofisticada, uso orgânico é mais valorizado.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Infraestrutura Técnica e Princípio de Funcionamento</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">O sistema Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker é construído sobre funções hash criptográficas, assinaturas digitais e mecanismos de consenso. Contratos inteligentes executam transações automaticamente conforme regras codificadas. Esta estrutura elimina a necessidade de intermediários financeiros tradicionais, reduzindo custos e aumentando velocidade.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">O sistema Crypto Airdrop é construído sobre funções hash criptográficas, assinaturas digitais e mecanismos de consenso. Contratos inteligentes executam transações automaticamente conforme regras codificadas. Esta estrutura elimina a necessidade de intermediários financeiros tradicionais, reduzindo custos e aumentando velocidade.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Atualizações 2026 e Dinâmicas de Mercado</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Em 2026, os desenvolvimentos mais importantes em Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker: clareza dos marcos regulatórios (especialmente regulamento MiCA da UE e decisões da SEC dos EUA), aceleração da adoção institucional e melhorias tecnológicas. Após o upgrade Pectra do Ethereum e aprovações de Bitcoin spot ETF, o mercado entrou em fase de maturação.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Em 2026, os desenvolvimentos mais importantes em Crypto Airdrop: clareza dos marcos regulatórios (especialmente regulamento MiCA da UE e decisões da SEC dos EUA), aceleração da adoção institucional e melhorias tecnológicas. Após o upgrade Pectra do Ethereum e aprovações de Bitcoin spot ETF, o mercado entrou em fase de maturação.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker e como funciona?", answer: "Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker é um sistema descentralizado construído sobre tecnologia blockchain. Permite transações sem intermediários através de contratos inteligentes e desempenha um papel importante no ecossistema cripto. Bridges cross-chain têm histórico de \$2B+ em exploits (Ronin \$625M, Wormhole \$320M). LayerZero e Chainlink CCIP oferecem alternativas mais seguras." },
-                  { question: "Quais são os riscos de investir em Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker?", answer: "Principais riscos: vulnerabilidades de contratos inteligentes, volatilidade de mercado (oscilações de 20%+ ao dia são comuns), incertezas regulatórias e riscos de liquidez. Diversificação e uso de stop-loss são recomendados." },
-                  { question: "O que mudou em Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker em 2026?", answer: "Em 2026: regulamento MiCA da UE entrou em vigor, Bitcoin spot ETFs se popularizaram globalmente, Ethereum completou upgrade Pectra e DeFi institucional cresceu significativamente. Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker é diretamente afetado." },
-                  { question: "Como usar Crypto Airdrop Tracker: Earni.fi, DeBank, LayerZero Checker no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+                  { question: "O que é Crypto Airdrop e como funciona?", answer: "Crypto Airdrop é um sistema descentralizado construído sobre tecnologia blockchain. Permite transações sem intermediários através de contratos inteligentes e desempenha um papel importante no ecossistema cripto. Airdrop farming recompensa usuários de testnet e mainnet com tokens. Em 2026, filtragem Sybil ficou mais sofisticada, uso orgânico é mais valorizado." },
+                  { question: "Quais são os riscos de investir em Crypto Airdrop?", answer: "Principais riscos: vulnerabilidades de contratos inteligentes, volatilidade de mercado (oscilações de 20%+ ao dia são comuns), incertezas regulatórias e riscos de liquidez. Diversificação e uso de stop-loss são recomendados." },
+                  { question: "O que mudou em Crypto Airdrop em 2026?", answer: "Em 2026: regulamento MiCA da UE entrou em vigor, Bitcoin spot ETFs se popularizaram globalmente, Ethereum completou upgrade Pectra e DeFi institucional cresceu significativamente. Crypto Airdrop é diretamente afetado." },
+                  { question: "Como usar Crypto Airdrop no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

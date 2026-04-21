@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best NFT Wallets of 2026 - Top Wallets for NFTs — Bảo Mật, Tính Năng và Đánh Giá 2026 | Degen0x",
-  description: "Đánh giá ví Best NFT Wallets of 2026 - Top Wallets for NFTs: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin",
+  title: "NFT Wallets — Bảo Mật, Tính Năng và Đánh Giá 2026 | Degen0x",
+  description: "Đánh giá ví NFT Wallets: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa",
   openGraph: {
     type: "article",
-    title: "Best NFT Wallets of 2026 - Top Wallets for NFTs — Bảo Mật, Tính Năng và Đánh Giá 2026",
-    description: "Đánh giá ví Best NFT Wallets of 2026 - Top Wallets for NFTs: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so",
+    title: "NFT Wallets — Bảo Mật, Tính Năng và Đánh Giá 2026",
+    description: "Đánh giá ví NFT Wallets: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và ",
     url: "https://degen0x.com/vi/wallets/best/nft",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best NFT Wallets of 2026 - Top Wallets for NFTs — Bảo Mật, Tính Năng và Đánh Giá 2026", description: "Đánh giá ví Best NFT Wallets of 2026 - Top Wallets for NFTs: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so" },
+  twitter: { card: "summary_large_image", title: "NFT Wallets — Bảo Mật, Tính Năng và Đánh Giá 2026", description: "Đánh giá ví NFT Wallets: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và " },
   alternates: {
     canonical: "/vi/wallets/best/nft",
     languages: { "en": "/wallets/best/nft", "tr": "/tr/wallets/best/nft", "vi": "/vi/wallets/best/nft", "pt-BR": "/pt-br/wallets/best/nft", "x-default": "/wallets/best/nft" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Ví", item: "https://degen0x.com/vi/wallets" },
-    { "@type": "ListItem", position: 3, name: "Best NFT Wallets of 2026 - Top Wallets for NFTs — Bảo Mật, T" }
+    { "@type": "ListItem", position: 3, name: "NFT Wallets — Bảo Mật, Tính Năng và Đánh Giá 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best NFT Wallets of 2026 - Top Wallets for NFTs — Bảo Mật, Tính Năng và Đánh Giá 2026",
-  description: "Đánh giá ví Best NFT Wallets of 2026 - Top Wallets for NFTs: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin",
+  title: "NFT Wallets — Bảo Mật, Tính Năng và Đánh Giá 2026",
+  description: "Đánh giá ví NFT Wallets: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa",
   url: "https://degen0x.com/vi/wallets/best/nft",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,9 +42,9 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Ví Best NFT Wallets of 2026 - Top Wallets for NFTs có an toàn không?", "answer": "Đánh giá bảo mật: quản lý khóa riêng tư (self-custodial hay custodial), chuẩn mã hóa, sao lưu seed phrase, xác thực sinh trắc học và hỗ trợ multisig." },
-  { "question": "Hỗ trợ những blockchain nào?", "answer": "Mạng hỗ trợ bởi ví Best NFT Wallets of 2026 - Top Wallets for NFTs: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Chuẩn token (ERC-20, BEP-20, SPL) và khả năng chuyển cross-chain." },
-  { "question": "Truy cập DeFi qua ví Best NFT Wallets of 2026 - Top Wallets for NFTs như thế nào?", "answer": "Truy cập giao thức DeFi qua ví Best NFT Wallets of 2026 - Top Wallets for NFTs: swap token, cung cấp thanh khoản, staking, lending và giao dịch NFT. Coin98 Finance, một dự án DeFi có nguồn gốc Việt Nam, cung cấp bộ công cụ đa chuỗi cho người dùng Đông Nam Á." },
+  { "question": "Ví NFT Wallets có an toàn không?", "answer": "Đánh giá bảo mật: quản lý khóa riêng tư (self-custodial hay custodial), chuẩn mã hóa, sao lưu seed phrase, xác thực sinh trắc học và hỗ trợ multisig." },
+  { "question": "Hỗ trợ những blockchain nào?", "answer": "Mạng hỗ trợ bởi ví NFT Wallets: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Chuẩn token (ERC-20, BEP-20, SPL) và khả năng chuyển cross-chain." },
+  { "question": "Truy cập DeFi qua ví NFT Wallets như thế nào?", "answer": "Truy cập giao thức DeFi qua ví NFT Wallets: swap token, cung cấp thanh khoản, staking, lending và giao dịch NFT. Coin98 Finance, một dự án DeFi có nguồn gốc Việt Nam, cung cấp bộ công cụ đa chuỗi cho người dùng Đông Nam Á." },
   { "question": "Bảo quản seed phrase an toàn như thế nào?", "answer": "Seed phrase là chìa khóa duy nhất để truy cập tài sản. Sử dụng bản sao lưu kim loại, két an toàn và chiến lược sao lưu nhiều bản. Tuyệt đối không lưu trên môi trường số." }
 ]);
 
@@ -59,43 +59,43 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Ví", href: "/vi/wallets" },
-              { label: "Best NFT Wallets of 2026 - Top Wallets for NFTs" }
+              { label: "NFT Wallets" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best NFT Wallets of 2026 - Top Wallets for NFTs — Bảo Mật, Tính Năng và Đánh Giá 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Đánh giá ví Best NFT Wallets of 2026 - Top Wallets for NFTs: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn phổ biến.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Wallets — Bảo Mật, Tính Năng và Đánh Giá 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Đánh giá ví NFT Wallets: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn phổ biến.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đánh Giá Tổng Quan Ví</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Đánh giá toàn diện về ví Best NFT Wallets of 2026 - Top Wallets for NFTs. Mạng blockchain hỗ trợ, tiêu chuẩn token, tích hợp DApp và trải nghiệm người dùng. So sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn phổ biến.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Đánh giá toàn diện về ví NFT Wallets. Mạng blockchain hỗ trợ, tiêu chuẩn token, tích hợp DApp và trải nghiệm người dùng. So sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn phổ biến.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kiến Trúc Bảo Mật và Quản Lý Khóa</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Bảo mật ví crypto là nền tảng bảo vệ tài sản số. Quản lý khóa riêng tư (self-custodial vs custodial), thuật toán mã hóa, xác thực sinh trắc học, sao lưu seed phrase và hỗ trợ đa chữ ký (multisig) của ví Best NFT Wallets of 2026 - Top Wallets for NFTs.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Bảo mật ví crypto là nền tảng bảo vệ tài sản số. Quản lý khóa riêng tư (self-custodial vs custodial), thuật toán mã hóa, xác thực sinh trắc học, sao lưu seed phrase và hỗ trợ đa chữ ký (multisig) của ví NFT Wallets.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Mạng Hỗ Trợ và Tích Hợp DeFi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Các mạng blockchain hỗ trợ bởi ví Best NFT Wallets of 2026 - Top Wallets for NFTs (Ethereum, BSC, Polygon, Solana, Arbitrum...), tính năng swap token, truy cập trực tiếp giao thức DeFi và khả năng xem/quản lý NFT.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Các mạng blockchain hỗ trợ bởi ví NFT Wallets (Ethereum, BSC, Polygon, Solana, Arbitrum...), tính năng swap token, truy cập trực tiếp giao thức DeFi và khả năng xem/quản lý NFT.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Hướng Dẫn Sử Dụng và Mẹo</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Cài đặt, sao lưu, thêm token và thực hành sử dụng an toàn ví Best NFT Wallets of 2026 - Top Wallets for NFTs. Không bao giờ lưu seed phrase trên môi trường số, luôn tải từ nguồn chính thức và thường xuyên cập nhật bảo mật.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Cài đặt, sao lưu, thêm token và thực hành sử dụng an toàn ví NFT Wallets. Không bao giờ lưu seed phrase trên môi trường số, luôn tải từ nguồn chính thức và thường xuyên cập nhật bảo mật.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Ví Best NFT Wallets of 2026 - Top Wallets for NFTs có an toàn không?", answer: "Đánh giá bảo mật: quản lý khóa riêng tư (self-custodial hay custodial), chuẩn mã hóa, sao lưu seed phrase, xác thực sinh trắc học và hỗ trợ multisig." },
-                  { question: "Hỗ trợ những blockchain nào?", answer: "Mạng hỗ trợ bởi ví Best NFT Wallets of 2026 - Top Wallets for NFTs: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Chuẩn token (ERC-20, BEP-20, SPL) và khả năng chuyển cross-chain." },
-                  { question: "Truy cập DeFi qua ví Best NFT Wallets of 2026 - Top Wallets for NFTs như thế nào?", answer: "Truy cập giao thức DeFi qua ví Best NFT Wallets of 2026 - Top Wallets for NFTs: swap token, cung cấp thanh khoản, staking, lending và giao dịch NFT. Coin98 Finance, một dự án DeFi có nguồn gốc Việt Nam, cung cấp bộ công cụ đa chuỗi cho người dùng Đông Nam Á." },
+                  { question: "Ví NFT Wallets có an toàn không?", answer: "Đánh giá bảo mật: quản lý khóa riêng tư (self-custodial hay custodial), chuẩn mã hóa, sao lưu seed phrase, xác thực sinh trắc học và hỗ trợ multisig." },
+                  { question: "Hỗ trợ những blockchain nào?", answer: "Mạng hỗ trợ bởi ví NFT Wallets: Ethereum, BSC, Polygon, Solana, Arbitrum, Avalanche... Chuẩn token (ERC-20, BEP-20, SPL) và khả năng chuyển cross-chain." },
+                  { question: "Truy cập DeFi qua ví NFT Wallets như thế nào?", answer: "Truy cập giao thức DeFi qua ví NFT Wallets: swap token, cung cấp thanh khoản, staking, lending và giao dịch NFT. Coin98 Finance, một dự án DeFi có nguồn gốc Việt Nam, cung cấp bộ công cụ đa chuỗi cho người dùng Đông Nam Á." },
                   { question: "Bảo quản seed phrase an toàn như thế nào?", answer: "Seed phrase là chìa khóa duy nhất để truy cập tài sản. Sử dụng bản sao lưu kim loại, két an toàn và chiến lược sao lưu nhiều bản. Tuyệt đối không lưu trên môi trường số." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">

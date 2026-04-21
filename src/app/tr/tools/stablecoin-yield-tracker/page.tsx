@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Stablecoin Yield Tracker - Best Stablecoin APY Rates — Ücretsiz Kripto Aracı | Degen0x",
-  description: "Stablecoin Yield Tracker - Best Stablecoin APY Rates aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kay",
+  title: "Stablecoin Yield — Ücretsiz Kripto Aracı | Degen0x",
+  description: "Stablecoin Yield aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
   openGraph: {
     type: "article",
-    title: "Stablecoin Yield Tracker - Best Stablecoin APY Rates — Ücretsiz Kripto Aracı",
-    description: "Stablecoin Yield Tracker - Best Stablecoin APY Rates aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplama",
+    title: "Stablecoin Yield — Ücretsiz Kripto Aracı",
+    description: "Stablecoin Yield aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın.",
     url: "https://degen0x.com/tr/tools/stablecoin-yield-tracker",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Stablecoin Yield Tracker - Best Stablecoin APY Rates — Ücretsiz Kripto Aracı", description: "Stablecoin Yield Tracker - Best Stablecoin APY Rates aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplama" },
+  twitter: { card: "summary_large_image", title: "Stablecoin Yield — Ücretsiz Kripto Aracı", description: "Stablecoin Yield aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın." },
   alternates: {
     canonical: "/tr/tools/stablecoin-yield-tracker",
     languages: { "en": "/tools/stablecoin-yield-tracker", "tr": "/tr/tools/stablecoin-yield-tracker", "vi": "/vi/tools/stablecoin-yield-tracker", "pt-BR": "/pt-br/tools/stablecoin-yield-tracker", "x-default": "/tools/stablecoin-yield-tracker" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Araçlar", item: "https://degen0x.com/tr/tools" },
-    { "@type": "ListItem", position: 3, name: "Stablecoin Yield Tracker - Best Stablecoin APY Rates — Ücret" }
+    { "@type": "ListItem", position: 3, name: "Stablecoin Yield — Ücretsiz Kripto Aracı" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Stablecoin Yield Tracker - Best Stablecoin APY Rates — Ücretsiz Kripto Aracı",
-  description: "Stablecoin Yield Tracker - Best Stablecoin APY Rates aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kay",
+  title: "Stablecoin Yield — Ücretsiz Kripto Aracı",
+  description: "Stablecoin Yield aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
   url: "https://degen0x.com/tr/tools/stablecoin-yield-tracker",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Stablecoin Yield Tracker - Best Stablecoin APY Rates nedir ve nasıl çalışır?", "answer": "Stablecoin Yield Tracker - Best Stablecoin APY Rates, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır." },
-  { "question": "Stablecoin Yield Tracker - Best Stablecoin APY Rates yatırımında riskler nelerdir?", "answer": "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
-  { "question": "2026\'da Stablecoin Yield Tracker - Best Stablecoin APY Rates alanında neler değişti?", "answer": "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Stablecoin Yield Tracker - Best Stablecoin APY Rates bu gelişmelerden doğrudan etkilenmektedir." },
-  { "question": "Türkiye\'den Stablecoin Yield Tracker - Best Stablecoin APY Rates nasıl kullanılır?", "answer": "Türkiye\'de Stablecoin Yield Tracker - Best Stablecoin APY Rates kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+  { "question": "Stablecoin Yield nedir ve nasıl çalışır?", "answer": "Stablecoin Yield, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır." },
+  { "question": "Stablecoin Yield yatırımında riskler nelerdir?", "answer": "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
+  { "question": "2026\'da Stablecoin Yield alanında neler değişti?", "answer": "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Stablecoin Yield bu gelişmelerden doğrudan etkilenmektedir." },
+  { "question": "Türkiye\'den Stablecoin Yield nasıl kullanılır?", "answer": "Türkiye\'de Stablecoin Yield kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,39 +59,39 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Araçlar", href: "/tr/tools" },
-              { label: "Stablecoin Yield Tracker - Best Stablecoin APY Rat" }
+              { label: "Stablecoin Yield" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Stablecoin Yield Tracker - Best Stablecoin APY Rates — Ücretsiz Kripto Aracı</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Stablecoin Yield Tracker - Best Stablecoin APY Rates aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Stablecoin Yield — Ücretsiz Kripto Aracı</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Stablecoin Yield aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Stablecoin Yield Tracker - Best Stablecoin APY Rates Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Stablecoin Yield Tracker - Best Stablecoin APY Rates, kripto ve blokzincir alanının temel yapı taşlarından biridir. Bu teknoloji, merkezi olmayan mimarisi sayesinde kullanıcılara aracısız ve şeffaf işlem yapma imkanı sunar. 2026 yılı itibarıyla Stablecoin Yield Tracker - Best Stablecoin APY Rates alanında TVL, kullanıcı sayısı ve geliştirici aktivitesi gibi metriklerde belirgin artışlar gözlemlenmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Stablecoin Yield Nedir?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Stablecoin Yield, kripto ve blokzincir alanının temel yapı taşlarından biridir. Bu teknoloji, merkezi olmayan mimarisi sayesinde kullanıcılara aracısız ve şeffaf işlem yapma imkanı sunar. 2026 yılı itibarıyla Stablecoin Yield alanında TVL, kullanıcı sayısı ve geliştirici aktivitesi gibi metriklerde belirgin artışlar gözlemlenmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Stablecoin Yield Tracker - Best Stablecoin APY Rates sistemi, kriptografik hash fonksiyonları, dijital imzalar ve konsensüs mekanizmaları üzerine inşa edilmiştir. Akıllı sözleşmeler, kodla tanımlanmış kurallar çerçevesinde otomatik işlem yürütür. Bu yapı, geleneksel finansal aracılara olan ihtiyacı ortadan kaldırarak işlem maliyetlerini düşürür ve hızı artırır. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Stablecoin Yield sistemi, kriptografik hash fonksiyonları, dijital imzalar ve konsensüs mekanizmaları üzerine inşa edilmiştir. Akıllı sözleşmeler, kodla tanımlanmış kurallar çerçevesinde otomatik işlem yürütür. Bu yapı, geleneksel finansal aracılara olan ihtiyacı ortadan kaldırarak işlem maliyetlerini düşürür ve hızı artırır. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">2026 Güncellemeleri ve Piyasa Dinamikleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">2026 yılında Stablecoin Yield Tracker - Best Stablecoin APY Rates alanındaki en önemli gelişmeler: düzenleyici çerçevelerin netleşmesi (özellikle AB MiCA düzenlemesi ve ABD SEC kararları), kurumsal benimsemenin hızlanması ve teknolojik iyileştirmelerdir. Ethereum\'un Pectra güncellemesi ve Bitcoin spot ETF onaylarının ardından piyasa olgunlaşma sürecine girmiştir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">2026 yılında Stablecoin Yield alanındaki en önemli gelişmeler: düzenleyici çerçevelerin netleşmesi (özellikle AB MiCA düzenlemesi ve ABD SEC kararları), kurumsal benimsemenin hızlanması ve teknolojik iyileştirmelerdir. Ethereum\'un Pectra güncellemesi ve Bitcoin spot ETF onaylarının ardından piyasa olgunlaşma sürecine girmiştir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Stablecoin Yield Tracker - Best Stablecoin APY Rates nedir ve nasıl çalışır?", answer: "Stablecoin Yield Tracker - Best Stablecoin APY Rates, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır." },
-                  { question: "Stablecoin Yield Tracker - Best Stablecoin APY Rates yatırımında riskler nelerdir?", answer: "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
-                  { question: "2026\'da Stablecoin Yield Tracker - Best Stablecoin APY Rates alanında neler değişti?", answer: "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Stablecoin Yield Tracker - Best Stablecoin APY Rates bu gelişmelerden doğrudan etkilenmektedir." },
-                  { question: "Türkiye\'den Stablecoin Yield Tracker - Best Stablecoin APY Rates nasıl kullanılır?", answer: "Türkiye\'de Stablecoin Yield Tracker - Best Stablecoin APY Rates kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
+                  { question: "Stablecoin Yield nedir ve nasıl çalışır?", answer: "Stablecoin Yield, blokzincir teknolojisi üzerine kurulu merkeziyetsiz bir sistemdir. Akıllı sözleşmeler aracılığıyla aracısız işlem yapılmasını sağlar ve kripto ekosisteminde önemli bir role sahiptir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır." },
+                  { question: "Stablecoin Yield yatırımında riskler nelerdir?", answer: "Başlıca riskler: akıllı sözleşme güvenlik açıkları, piyasa oynaklığı (%20+ günlük dalgalanmalar olağandır), düzenleyici belirsizlikler ve likidite riskleri. Portföy çeşitlendirmesi ve stop-loss kullanımı önerilir." },
+                  { question: "2026\'da Stablecoin Yield alanında neler değişti?", answer: "2026\'da AB MiCA düzenlemesi yürürlüğe girdi, Bitcoin spot ETF\'ler küresel ölçekte yaygınlaştı, Ethereum Pectra güncellemesi tamamlandı ve kurumsal DeFi protokolleri önemli büyüme kaydetti. Stablecoin Yield bu gelişmelerden doğrudan etkilenmektedir." },
+                  { question: "Türkiye\'den Stablecoin Yield nasıl kullanılır?", answer: "Türkiye\'de Stablecoin Yield kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

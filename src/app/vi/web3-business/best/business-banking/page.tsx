@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Crypto-Friendly Business Banks of — Cơ Hội Kinh Doanh Web3 | Degen0x",
-  description: "Best Crypto-Friendly Business Banks of: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.",
+  title: "Friendly Business Banks — Cơ Hội Kinh Doanh Web3 | Degen0x",
+  description: "Friendly Business Banks: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.",
   openGraph: {
     type: "article",
-    title: "Best Crypto-Friendly Business Banks of — Cơ Hội Kinh Doanh Web3",
-    description: "Best Crypto-Friendly Business Banks of: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.",
+    title: "Friendly Business Banks — Cơ Hội Kinh Doanh Web3",
+    description: "Friendly Business Banks: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.",
     url: "https://degen0x.com/vi/web3-business/best/business-banking",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Crypto-Friendly Business Banks of — Cơ Hội Kinh Doanh Web3", description: "Best Crypto-Friendly Business Banks of: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung." },
+  twitter: { card: "summary_large_image", title: "Friendly Business Banks — Cơ Hội Kinh Doanh Web3", description: "Friendly Business Banks: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung." },
   alternates: {
     canonical: "/vi/web3-business/best/business-banking",
     languages: { "en": "/web3-business/best/business-banking", "tr": "/tr/web3-business/best/business-banking", "vi": "/vi/web3-business/best/business-banking", "pt-BR": "/pt-br/web3-business/best/business-banking", "x-default": "/web3-business/best/business-banking" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Web3 Kinh Doanh", item: "https://degen0x.com/vi/web3-business" },
-    { "@type": "ListItem", position: 3, name: "Best Crypto-Friendly Business Banks of — Cơ Hội Kinh Doanh W" }
+    { "@type": "ListItem", position: 3, name: "Friendly Business Banks — Cơ Hội Kinh Doanh Web3" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Crypto-Friendly Business Banks of — Cơ Hội Kinh Doanh Web3",
-  description: "Best Crypto-Friendly Business Banks of: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.",
+  title: "Friendly Business Banks — Cơ Hội Kinh Doanh Web3",
+  description: "Friendly Business Banks: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.",
   url: "https://degen0x.com/vi/web3-business/best/business-banking",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Web3 Kinh Doanh", href: "/vi/web3-business" },
-              { label: "Best Crypto-Friendly Business Banks of" }
+              { label: "Friendly Business Banks" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Crypto-Friendly Business Banks of — Cơ Hội Kinh Doanh Web3</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best Crypto-Friendly Business Banks of: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Friendly Business Banks — Cơ Hội Kinh Doanh Web3</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Friendly Business Banks: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Mô Hình Kinh Doanh Web3</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Mô hình kinh doanh Web3 trong phạm vi Best Crypto-Friendly Business Banks of: cấu trúc DAO, token economics, marketplace phi tập trung và creator economy. Việt Nam là một trong những quốc gia dẫn đầu về áp dụng blockchain ở Đông Nam Á với nhiều dự án nổi bật.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Mô hình kinh doanh Web3 trong phạm vi Friendly Business Banks: cấu trúc DAO, token economics, marketplace phi tập trung và creator economy. Việt Nam là một trong những quốc gia dẫn đầu về áp dụng blockchain ở Đông Nam Á với nhiều dự án nổi bật.</p>
             </section>
 
             <section className="mb-10">

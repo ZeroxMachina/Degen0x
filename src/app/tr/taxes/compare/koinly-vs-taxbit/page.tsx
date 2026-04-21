@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Kripto Vergi Rehberi ve Araçları | Degen0x",
-  description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto ",
+  title: "Koinly vs TaxBit — Kripto Vergi Rehberi ve Araçları | Degen0x",
+  description: "Koinly vs TaxBit: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detayla",
   openGraph: {
     type: "article",
-    title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Kripto Vergi Rehberi ve Araçları",
-    description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi o",
+    title: "Koinly vs TaxBit — Kripto Vergi Rehberi ve Araçları",
+    description: "Koinly vs TaxBit: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto gel",
     url: "https://degen0x.com/tr/taxes/compare/koinly-vs-taxbit",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Kripto Vergi Rehberi ve Araçları", description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi o" },
+  twitter: { card: "summary_large_image", title: "Koinly vs TaxBit — Kripto Vergi Rehberi ve Araçları", description: "Koinly vs TaxBit: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto gel" },
   alternates: {
     canonical: "/tr/taxes/compare/koinly-vs-taxbit",
     languages: { "en": "/taxes/compare/koinly-vs-taxbit", "tr": "/tr/taxes/compare/koinly-vs-taxbit", "vi": "/vi/taxes/compare/koinly-vs-taxbit", "pt-BR": "/pt-br/taxes/compare/koinly-vs-taxbit", "x-default": "/taxes/compare/koinly-vs-taxbit" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Ana Sayfa", item: "https://degen0x.com/tr" },
     { "@type": "ListItem", position: 2, name: "Vergiler", item: "https://degen0x.com/tr/taxes" },
-    { "@type": "ListItem", position: 3, name: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? " }
+    { "@type": "ListItem", position: 3, name: "Koinly vs TaxBit — Kripto Vergi Rehberi ve Araçları" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Kripto Vergi Rehberi ve Araçları",
-  description: "Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto ",
+  title: "Koinly vs TaxBit — Kripto Vergi Rehberi ve Araçları",
+  description: "Koinly vs TaxBit: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detayla",
   url: "https://degen0x.com/tr/taxes/compare/koinly-vs-taxbit",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -59,19 +59,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Vergiler", href: "/tr/taxes" },
-              { label: "Koinly vs TaxBit 2026: Which Crypto Tax Software I" }
+              { label: "Koinly vs TaxBit" }
           ]} />
           <article className="mt-8" lang="tr">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? — Kripto Vergi Rehberi ve Araçları</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better?: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Koinly vs TaxBit — Kripto Vergi Rehberi ve Araçları</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Koinly vs TaxBit: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kripto Vergi Yükümlülükleri</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Koinly vs TaxBit 2026: Which Crypto Tax Software Is Better? kapsamında kripto vergi yükümlülükleri: Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Vergilendirme kapsamına giren işlemler: alım-satım, staking gelirleri, airdrop\'lar, mining ve DeFi kazançları.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Koinly vs TaxBit kapsamında kripto vergi yükümlülükleri: Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Vergilendirme kapsamına giren işlemler: alım-satım, staking gelirleri, airdrop\'lar, mining ve DeFi kazançları.</p>
             </section>
 
             <section className="mb-10">

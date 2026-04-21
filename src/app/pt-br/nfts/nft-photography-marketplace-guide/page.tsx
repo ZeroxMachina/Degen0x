@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — Guia de NFTs e Análise de Mercado 2026 | Degen0x",
-  description: "NFT Photography Marketplaces 2026: SuperRare, Foundation,: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
+  title: "NFT Photography Marketplaces — Guia de NFTs e Análise de Mercado 2026 | Degen0x",
+  description: "NFT Photography Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
   openGraph: {
     type: "article",
-    title: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — Guia de NFTs e Análise de Mercado 2026",
-    description: "NFT Photography Marketplaces 2026: SuperRare, Foundation,: análise de coleções, tendências de mercado, guia de minting e",
+    title: "NFT Photography Marketplaces — Guia de NFTs e Análise de Mercado 2026",
+    description: "NFT Photography Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
     url: "https://degen0x.com/pt-br/nfts/nft-photography-marketplace-guide",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — Guia de NFTs e Análise de Mercado 2026", description: "NFT Photography Marketplaces 2026: SuperRare, Foundation,: análise de coleções, tendências de mercado, guia de minting e" },
+  twitter: { card: "summary_large_image", title: "NFT Photography Marketplaces — Guia de NFTs e Análise de Mercado 2026", description: "NFT Photography Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026." },
   alternates: {
     canonical: "/pt-br/nfts/nft-photography-marketplace-guide",
     languages: { "en": "/nfts/nft-photography-marketplace-guide", "tr": "/tr/nfts/nft-photography-marketplace-guide", "vi": "/vi/nfts/nft-photography-marketplace-guide", "pt-BR": "/pt-br/nfts/nft-photography-marketplace-guide", "x-default": "/nfts/nft-photography-marketplace-guide" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "NFT", item: "https://degen0x.com/pt-br/nfts" },
-    { "@type": "ListItem", position: 3, name: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — " }
+    { "@type": "ListItem", position: 3, name: "NFT Photography Marketplaces — Guia de NFTs e Análise de Mer" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "NFT Photography Marketplaces 2026: SuperRare, Foundation, — Guia de NFTs e Análise de Mercado 2026",
-  description: "NFT Photography Marketplaces 2026: SuperRare, Foundation,: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
+  title: "NFT Photography Marketplaces — Guia de NFTs e Análise de Mercado 2026",
+  description: "NFT Photography Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.",
   url: "https://degen0x.com/pt-br/nfts/nft-photography-marketplace-guide",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -59,19 +59,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "NFT", href: "/pt-br/nfts" },
-              { label: "NFT Photography Marketplaces 2026: SuperRare, Foun" }
+              { label: "NFT Photography Marketplaces" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Photography Marketplaces 2026: SuperRare, Foundation, — Guia de NFTs e Análise de Mercado 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">NFT Photography Marketplaces 2026: SuperRare, Foundation,: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">NFT Photography Marketplaces — Guia de NFTs e Análise de Mercado 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">NFT Photography Marketplaces: análise de coleções, tendências de mercado, guia de minting e ecossistema NFT 2026.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Análise do Mercado NFT</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Análise do mercado NFT 2026 para NFT Photography Marketplaces 2026: SuperRare, Foundation,: volume total de transações, usuários ativos, coleções populares e tendências de preço. O mercado de NFTs no Brasil tem crescido com artistas e colecionadores brasileiros ganhando destaque em plataformas globais.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Análise do mercado NFT 2026 para NFT Photography Marketplaces: volume total de transações, usuários ativos, coleções populares e tendências de preço. O mercado de NFTs no Brasil tem crescido com artistas e colecionadores brasileiros ganhando destaque em plataformas globais.</p>
             </section>
 
             <section className="mb-10">
@@ -81,7 +81,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Guia de Compra, Venda e Minting</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Estratégias de negociação NFT relacionadas a NFT Photography Marketplaces 2026: SuperRare, Foundation,: timing de mint, análise de floor price, ferramentas de raridade, otimização de gas e dinâmicas do mercado secundário.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Estratégias de negociação NFT relacionadas a NFT Photography Marketplaces: timing de mint, análise de floor price, ferramentas de raridade, otimização de gas e dinâmicas do mercado secundário.</p>
             </section>
 
             <section className="mb-10">

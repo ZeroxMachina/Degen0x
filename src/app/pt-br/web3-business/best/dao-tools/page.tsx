@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best DAO Governance Tools of 2026 - Voting & Proposals — Oportunidades de Negócios Web3 | Degen0x",
-  description: "Best DAO Governance Tools of 2026 - Voting & Proposals: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
+  title: "DAO Governance Tools — Oportunidades de Negócios Web3 | Degen0x",
+  description: "DAO Governance Tools: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
   openGraph: {
     type: "article",
-    title: "Best DAO Governance Tools of 2026 - Voting & Proposals — Oportunidades de Negócios Web3",
-    description: "Best DAO Governance Tools of 2026 - Voting & Proposals: modelos de negócio Web3, tokenomics e estruturas de organização ",
+    title: "DAO Governance Tools — Oportunidades de Negócios Web3",
+    description: "DAO Governance Tools: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
     url: "https://degen0x.com/pt-br/web3-business/best/dao-tools",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best DAO Governance Tools of 2026 - Voting & Proposals — Oportunidades de Negócios Web3", description: "Best DAO Governance Tools of 2026 - Voting & Proposals: modelos de negócio Web3, tokenomics e estruturas de organização " },
+  twitter: { card: "summary_large_image", title: "DAO Governance Tools — Oportunidades de Negócios Web3", description: "DAO Governance Tools: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada." },
   alternates: {
     canonical: "/pt-br/web3-business/best/dao-tools",
     languages: { "en": "/web3-business/best/dao-tools", "tr": "/tr/web3-business/best/dao-tools", "vi": "/vi/web3-business/best/dao-tools", "pt-BR": "/pt-br/web3-business/best/dao-tools", "x-default": "/web3-business/best/dao-tools" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Web3 Negócios", item: "https://degen0x.com/pt-br/web3-business" },
-    { "@type": "ListItem", position: 3, name: "Best DAO Governance Tools of 2026 - Voting & Proposals — Opo" }
+    { "@type": "ListItem", position: 3, name: "DAO Governance Tools — Oportunidades de Negócios Web3" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best DAO Governance Tools of 2026 - Voting & Proposals — Oportunidades de Negócios Web3",
-  description: "Best DAO Governance Tools of 2026 - Voting & Proposals: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
+  title: "DAO Governance Tools — Oportunidades de Negócios Web3",
+  description: "DAO Governance Tools: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",
   url: "https://degen0x.com/pt-br/web3-business/best/dao-tools",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Web3 Negócios", href: "/pt-br/web3-business" },
-              { label: "Best DAO Governance Tools of 2026 - Voting & Propo" }
+              { label: "DAO Governance Tools" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best DAO Governance Tools of 2026 - Voting & Proposals — Oportunidades de Negócios Web3</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Best DAO Governance Tools of 2026 - Voting & Proposals: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">DAO Governance Tools — Oportunidades de Negócios Web3</h1>
+            <p className="text-lg text-[#8b949e] mb-10">DAO Governance Tools: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Modelos de Negócio Web3</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Modelos de negócio Web3 no escopo de Best DAO Governance Tools of 2026 - Voting & Proposals: estruturas DAO, token economics, marketplaces descentralizados e creator economy. O Brasil é o maior mercado de cripto da América Latina, com regulamentação progressiva e alta adoção.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Modelos de negócio Web3 no escopo de DAO Governance Tools: estruturas DAO, token economics, marketplaces descentralizados e creator economy. O Brasil é o maior mercado de cripto da América Latina, com regulamentação progressiva e alta adoção.</p>
             </section>
 
             <section className="mb-10">

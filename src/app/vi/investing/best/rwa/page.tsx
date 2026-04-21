@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best RWA Crypto Tokens 2026 - Real World Asset Investments — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026 | Degen0x",
-  description: "Hướng dẫn đầu tư Best RWA Crypto Tokens 2026 - Real World Asset Investments: chiến lược danh mục, quản lý rủi ro, phân tích kỹ thuật và triển vọng thị trường 20",
+  title: "RWA Crypto Tokens — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026 | Degen0x",
+  description: "Hướng dẫn đầu tư RWA Crypto Tokens: chiến lược danh mục, quản lý rủi ro, phân tích kỹ thuật và triển vọng thị trường 2026.",
   openGraph: {
     type: "article",
-    title: "Best RWA Crypto Tokens 2026 - Real World Asset Investments — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026",
-    description: "Hướng dẫn đầu tư Best RWA Crypto Tokens 2026 - Real World Asset Investments: chiến lược danh mục, quản lý rủi ro, phân t",
+    title: "RWA Crypto Tokens — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026",
+    description: "Hướng dẫn đầu tư RWA Crypto Tokens: chiến lược danh mục, quản lý rủi ro, phân tích kỹ thuật và triển vọng thị trường 202",
     url: "https://degen0x.com/vi/investing/best/rwa",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best RWA Crypto Tokens 2026 - Real World Asset Investments — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026", description: "Hướng dẫn đầu tư Best RWA Crypto Tokens 2026 - Real World Asset Investments: chiến lược danh mục, quản lý rủi ro, phân t" },
+  twitter: { card: "summary_large_image", title: "RWA Crypto Tokens — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026", description: "Hướng dẫn đầu tư RWA Crypto Tokens: chiến lược danh mục, quản lý rủi ro, phân tích kỹ thuật và triển vọng thị trường 202" },
   alternates: {
     canonical: "/vi/investing/best/rwa",
     languages: { "en": "/investing/best/rwa", "tr": "/tr/investing/best/rwa", "vi": "/vi/investing/best/rwa", "pt-BR": "/pt-br/investing/best/rwa", "x-default": "/investing/best/rwa" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Đầu Tư", item: "https://degen0x.com/vi/investing" },
-    { "@type": "ListItem", position: 3, name: "Best RWA Crypto Tokens 2026 - Real World Asset Investments —" }
+    { "@type": "ListItem", position: 3, name: "RWA Crypto Tokens — Chiến Lược Đầu Tư và Phân Tích Thị Trườn" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best RWA Crypto Tokens 2026 - Real World Asset Investments — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026",
-  description: "Hướng dẫn đầu tư Best RWA Crypto Tokens 2026 - Real World Asset Investments: chiến lược danh mục, quản lý rủi ro, phân tích kỹ thuật và triển vọng thị trường 20",
+  title: "RWA Crypto Tokens — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026",
+  description: "Hướng dẫn đầu tư RWA Crypto Tokens: chiến lược danh mục, quản lý rủi ro, phân tích kỹ thuật và triển vọng thị trường 2026.",
   url: "https://degen0x.com/vi/investing/best/rwa",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,7 +42,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Best RWA Crypto Tokens 2026 - Real World Asset Investments có phải khoản đầu tư tốt không?", "answer": "Quyết định đầu tư phụ thuộc vào khẩu vị rủi ro, thời hạn đầu tư và chiến lược danh mục. Cần đánh giá nền tảng, vị thế thị trường, cạnh tranh và tiềm năng tăng trưởng của Best RWA Crypto Tokens 2026 - Real World Asset Investments." },
+  { "question": "RWA Crypto Tokens có phải khoản đầu tư tốt không?", "answer": "Quyết định đầu tư phụ thuộc vào khẩu vị rủi ro, thời hạn đầu tư và chiến lược danh mục. Cần đánh giá nền tảng, vị thế thị trường, cạnh tranh và tiềm năng tăng trưởng của RWA Crypto Tokens." },
   { "question": "Chiến lược đầu tư nào tốt nhất?", "answer": "Các chiến lược phổ biến: DCA (mua định kỳ — giảm biến động), lump sum (mua một lần — lợi thế trong bull market), swing trading (trung hạn — cần quản lý chủ động) và hodl (dài hạn — cần kiên nhẫn)." },
   { "question": "Thuế crypto tại Việt Nam tính thế nào?", "answer": "Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Giao dịch chịu thuế: mua bán có lãi, thu nhập staking, airdrop và mining." },
   { "question": "Nên đầu tư bao nhiêu?", "answer": "Nguyên tắc vàng: chỉ đầu tư số tiền bạn chấp nhận mất. Khuyến nghị chung: 5-15% tổng danh mục dành cho crypto. Không bao giờ đánh cược quỹ khẩn cấp." }
@@ -59,46 +59,46 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Đầu Tư", href: "/vi/investing" },
-              { label: "Best RWA Crypto Tokens 2026 - Real World Asset Inv" }
+              { label: "RWA Crypto Tokens" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best RWA Crypto Tokens 2026 - Real World Asset Investments — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn đầu tư Best RWA Crypto Tokens 2026 - Real World Asset Investments: chiến lược danh mục, quản lý rủi ro, phân tích kỹ thuật và triển vọng thị trường 2026.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">RWA Crypto Tokens — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn đầu tư RWA Crypto Tokens: chiến lược danh mục, quản lý rủi ro, phân tích kỹ thuật và triển vọng thị trường 2026.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Chiến Lược Đầu Tư và Phân Tích Thị Trường</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Hướng dẫn đầu tư Best RWA Crypto Tokens 2026 - Real World Asset Investments: sizing vị thế theo điều kiện thị trường, chiến lược vào/ra và phân tích hồ sơ rủi ro-lợi nhuận. Nhà đầu tư Việt Nam thường bắt đầu với Bitcoin và Ethereum trước khi khám phá altcoin.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Hướng dẫn đầu tư RWA Crypto Tokens: sizing vị thế theo điều kiện thị trường, chiến lược vào/ra và phân tích hồ sơ rủi ro-lợi nhuận. Nhà đầu tư Việt Nam thường bắt đầu với Bitcoin và Ethereum trước khi khám phá altcoin.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Phân Tích Kỹ Thuật và Chỉ Báo</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Công cụ phân tích kỹ thuật cho Best RWA Crypto Tokens 2026 - Real World Asset Investments: trung bình động (MA/EMA), RSI (Chỉ Số Sức Mạnh Tương Đối), MACD, Fibonacci retracement và phân tích khối lượng. Các chỉ báo hỗ trợ quyết định giao dịch nhưng không nên dùng đơn lẻ.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Công cụ phân tích kỹ thuật cho RWA Crypto Tokens: trung bình động (MA/EMA), RSI (Chỉ Số Sức Mạnh Tương Đối), MACD, Fibonacci retracement và phân tích khối lượng. Các chỉ báo hỗ trợ quyết định giao dịch nhưng không nên dùng đơn lẻ.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đa Dạng Hóa Danh Mục và Quản Lý Rủi Ro</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Đa dạng hóa danh mục là yếu tố then chốt cho đầu tư Best RWA Crypto Tokens 2026 - Real World Asset Investments thành công. Phân bổ cân bằng giữa large-cap (BTC, ETH), mid-cap và small-cap, đa dạng theo ngành (DeFi, L2, AI, RWA) và vị thế stablecoin (quỹ cơ hội).</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Đa dạng hóa danh mục là yếu tố then chốt cho đầu tư RWA Crypto Tokens thành công. Phân bổ cân bằng giữa large-cap (BTC, ETH), mid-cap và small-cap, đa dạng theo ngành (DeFi, L2, AI, RWA) và vị thế stablecoin (quỹ cơ hội).</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Thông Tin Thực Tiễn cho Nhà Đầu Tư Việt Nam</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Đầu tư Best RWA Crypto Tokens 2026 - Real World Asset Investments từ Việt Nam: hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín sau đó chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Chiến lược dollar-cost averaging (DCA) là phương pháp hiệu quả để đối phó với biến động tỷ giá VND.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Đầu tư RWA Crypto Tokens từ Việt Nam: hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín sau đó chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Chiến lược dollar-cost averaging (DCA) là phương pháp hiệu quả để đối phó với biến động tỷ giá VND.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Triển Vọng Thị Trường 2026</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Triển vọng thị trường 2026 cho Best RWA Crypto Tokens 2026 - Real World Asset Investments: xu hướng chấp nhận từ tổ chức, yếu tố vĩ mô (lãi suất, lạm phát), phát triển công nghệ và tác động của khung pháp lý. Đánh giá tổng hợp các yếu tố này để đưa ra quyết định có cơ sở.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Triển vọng thị trường 2026 cho RWA Crypto Tokens: xu hướng chấp nhận từ tổ chức, yếu tố vĩ mô (lãi suất, lạm phát), phát triển công nghệ và tác động của khung pháp lý. Đánh giá tổng hợp các yếu tố này để đưa ra quyết định có cơ sở.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Best RWA Crypto Tokens 2026 - Real World Asset Investments có phải khoản đầu tư tốt không?", answer: "Quyết định đầu tư phụ thuộc vào khẩu vị rủi ro, thời hạn đầu tư và chiến lược danh mục. Cần đánh giá nền tảng, vị thế thị trường, cạnh tranh và tiềm năng tăng trưởng của Best RWA Crypto Tokens 2026 - Real World Asset Investments." },
+                  { question: "RWA Crypto Tokens có phải khoản đầu tư tốt không?", answer: "Quyết định đầu tư phụ thuộc vào khẩu vị rủi ro, thời hạn đầu tư và chiến lược danh mục. Cần đánh giá nền tảng, vị thế thị trường, cạnh tranh và tiềm năng tăng trưởng của RWA Crypto Tokens." },
                   { question: "Chiến lược đầu tư nào tốt nhất?", answer: "Các chiến lược phổ biến: DCA (mua định kỳ — giảm biến động), lump sum (mua một lần — lợi thế trong bull market), swing trading (trung hạn — cần quản lý chủ động) và hodl (dài hạn — cần kiên nhẫn)." },
                   { question: "Thuế crypto tại Việt Nam tính thế nào?", answer: "Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Giao dịch chịu thuế: mua bán có lãi, thu nhập staking, airdrop và mining." },
                   { question: "Nên đầu tư bao nhiêu?", answer: "Nguyên tắc vàng: chỉ đầu tư số tiền bạn chấp nhận mất. Khuyến nghị chung: 5-15% tổng danh mục dành cho crypto. Không bao giờ đánh cược quỹ khẩn cấp." }

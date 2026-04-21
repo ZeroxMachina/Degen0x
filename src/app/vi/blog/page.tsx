@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Blog — Crypto News, Analysis & Guides — Phân Tích Crypto Mới Nhất | Degen0x",
-  description: "Hướng dẫn toàn diện về Blog — Crypto News, Analysis & Guides bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm",
+  title: "Blog — Phân Tích Crypto Mới Nhất | Degen0x",
+  description: "Hướng dẫn toàn diện về Blog bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.",
   openGraph: {
     type: "article",
-    title: "Blog — Crypto News, Analysis & Guides — Phân Tích Crypto Mới Nhất",
-    description: "Hướng dẫn toàn diện về Blog — Crypto News, Analysis & Guides bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thứ",
+    title: "Blog — Phân Tích Crypto Mới Nhất",
+    description: "Hướng dẫn toàn diện về Blog bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng kh",
     url: "https://degen0x.com/vi/blog",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Blog — Crypto News, Analysis & Guides — Phân Tích Crypto Mới Nhất", description: "Hướng dẫn toàn diện về Blog — Crypto News, Analysis & Guides bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thứ" },
+  twitter: { card: "summary_large_image", title: "Blog — Phân Tích Crypto Mới Nhất", description: "Hướng dẫn toàn diện về Blog bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng kh" },
   alternates: {
     canonical: "/vi/blog",
     languages: { "en": "/blog", "tr": "/tr/blog", "vi": "/vi/blog", "pt-BR": "/pt-br/blog", "x-default": "/blog" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Blog — Crypto News, Analysis & Guides — Phân Tích Crypto Mới Nhất",
-  description: "Hướng dẫn toàn diện về Blog — Crypto News, Analysis & Guides bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm",
+  title: "Blog — Phân Tích Crypto Mới Nhất",
+  description: "Hướng dẫn toàn diện về Blog bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.",
   url: "https://degen0x.com/vi/blog",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -62,12 +62,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blog — Crypto News, Analysis & Guides — Phân Tích Crypto Mới Nhất</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về Blog — Crypto News, Analysis & Guides bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blog — Phân Tích Crypto Mới Nhất</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Hướng dẫn toàn diện về Blog bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá nhân.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Phân Tích Mới Nhất</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Phân tích thị trường mới nhất và ý kiến chuyên gia về Blog — Crypto News, Analysis & Guides. Các diễn biến gần đây trên thị trường crypto, đánh giá xu hướng và thông tin thực tiễn cho nhà đầu tư.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Phân tích thị trường mới nhất và ý kiến chuyên gia về Blog. Các diễn biến gần đây trên thị trường crypto, đánh giá xu hướng và thông tin thực tiễn cho nhà đầu tư.</p>
             </section>
 
             <section className="mb-10">

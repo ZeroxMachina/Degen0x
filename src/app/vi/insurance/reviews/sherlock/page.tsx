@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Sherlock Review 2026: Fees, Features, Pros & Cons — Hướng Dẫn Bảo Hiểm DeFi 2026 | Degen0x",
-  description: "Sherlock Review 2026: Fees, Features, Pros & Cons: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh.",
+  title: "Sherlock — Hướng Dẫn Bảo Hiểm DeFi 2026 | Degen0x",
+  description: "Sherlock: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh.",
   openGraph: {
     type: "article",
-    title: "Sherlock Review 2026: Fees, Features, Pros & Cons — Hướng Dẫn Bảo Hiểm DeFi 2026",
-    description: "Sherlock Review 2026: Fees, Features, Pros & Cons: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro ",
+    title: "Sherlock — Hướng Dẫn Bảo Hiểm DeFi 2026",
+    description: "Sherlock: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh.",
     url: "https://degen0x.com/vi/insurance/reviews/sherlock",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Sherlock Review 2026: Fees, Features, Pros & Cons — Hướng Dẫn Bảo Hiểm DeFi 2026", description: "Sherlock Review 2026: Fees, Features, Pros & Cons: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro " },
+  twitter: { card: "summary_large_image", title: "Sherlock — Hướng Dẫn Bảo Hiểm DeFi 2026", description: "Sherlock: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh." },
   alternates: {
     canonical: "/vi/insurance/reviews/sherlock",
     languages: { "en": "/insurance/reviews/sherlock", "tr": "/tr/insurance/reviews/sherlock", "vi": "/vi/insurance/reviews/sherlock", "pt-BR": "/pt-br/insurance/reviews/sherlock", "x-default": "/insurance/reviews/sherlock" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Bảo Hiểm", item: "https://degen0x.com/vi/insurance" },
-    { "@type": "ListItem", position: 3, name: "Sherlock Review 2026: Fees, Features, Pros & Cons — Hướng Dẫ" }
+    { "@type": "ListItem", position: 3, name: "Sherlock — Hướng Dẫn Bảo Hiểm DeFi 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Sherlock Review 2026: Fees, Features, Pros & Cons — Hướng Dẫn Bảo Hiểm DeFi 2026",
-  description: "Sherlock Review 2026: Fees, Features, Pros & Cons: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh.",
+  title: "Sherlock — Hướng Dẫn Bảo Hiểm DeFi 2026",
+  description: "Sherlock: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh.",
   url: "https://degen0x.com/vi/insurance/reviews/sherlock",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -58,19 +58,19 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Bảo Hiểm", href: "/vi/insurance" },
-              { label: "Sherlock Review 2026: Fees, Features, Pros & Cons" }
+              { label: "Sherlock" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Sherlock Review 2026: Fees, Features, Pros & Cons — Hướng Dẫn Bảo Hiểm DeFi 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Sherlock Review 2026: Fees, Features, Pros & Cons: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Sherlock — Hướng Dẫn Bảo Hiểm DeFi 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Sherlock: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Bảo Hiểm DeFi Là Gì?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Hướng dẫn bảo hiểm DeFi về Sherlock Review 2026: Fees, Features, Pros & Cons: giao thức bảo hiểm phi tập trung bảo vệ chống lại exploit hợp đồng thông minh, hack và sự cố giao thức.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Hướng dẫn bảo hiểm DeFi về Sherlock: giao thức bảo hiểm phi tập trung bảo vệ chống lại exploit hợp đồng thông minh, hack và sự cố giao thức.</p>
             </section>
 
             <section className="mb-10">

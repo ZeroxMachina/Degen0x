@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens — Kripto Topluluk Rehberi | Degen0x",
-  description: "degen0x Community — Ask, Discuss, Learn with Fellow Degens hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli k",
+  title: "degen0x Community — Kripto Topluluk Rehberi | Degen0x",
+  description: "degen0x Community hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bil",
   openGraph: {
     type: "article",
-    title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens — Kripto Topluluk Rehberi",
-    description: "degen0x Community — Ask, Discuss, Learn with Fellow Degens hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri ç",
+    title: "degen0x Community — Kripto Topluluk Rehberi",
+    description: "degen0x Community hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli ka",
     url: "https://degen0x.com/tr/community",
     locale: "tr_TR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens — Kripto Topluluk Rehberi", description: "degen0x Community — Ask, Discuss, Learn with Fellow Degens hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri ç" },
+  twitter: { card: "summary_large_image", title: "degen0x Community — Kripto Topluluk Rehberi", description: "degen0x Community hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli ka" },
   alternates: {
     canonical: "/tr/community",
     languages: { "en": "/community", "tr": "/tr/community", "vi": "/vi/community", "pt-BR": "/pt-br/community", "x-default": "/community" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "degen0x Community — Ask, Discuss, Learn with Fellow Degens — Kripto Topluluk Rehberi",
-  description: "degen0x Community — Ask, Discuss, Learn with Fellow Degens hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli k",
+  title: "degen0x Community — Kripto Topluluk Rehberi",
+  description: "degen0x Community hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bil",
   url: "https://degen0x.com/tr/community",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -62,12 +62,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇹🇷 Türkçe</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Orta Seviye</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">degen0x Community — Ask, Discuss, Learn with Fellow Degens — Kripto Topluluk Rehberi</h1>
-            <p className="text-lg text-[#8b949e] mb-10">degen0x Community — Ask, Discuss, Learn with Fellow Degens hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">degen0x Community — Kripto Topluluk Rehberi</h1>
+            <p className="text-lg text-[#8b949e] mb-10">degen0x Community hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacınız olan bilgiler.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Topluluk Rehberi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">degen0x Community — Ask, Discuss, Learn with Fellow Degens topluluğu hakkında kapsamlı rehber: Discord sunucuları, Telegram grupları, Twitter/X hesapları ve forum kaynakları.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">degen0x Community topluluğu hakkında kapsamlı rehber: Discord sunucuları, Telegram grupları, Twitter/X hesapları ve forum kaynakları.</p>
             </section>
 
             <section className="mb-10">

@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum: Guia Completo em Português 2026 | Degen0x",
-  description: "Tudo o que você precisa saber sobre Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia c",
+  title: "Eclipse: Guia Completo em Português 2026 | Degen0x",
+  description: "Tudo o que você precisa saber sobre Eclipse. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.",
   openGraph: {
     type: "article",
-    title: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum: Guia Completo em Português 2026",
-    description: "Tudo o que você precisa saber sobre Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum. Conceitos básicos, como funciona",
+    title: "Eclipse: Guia Completo em Português 2026",
+    description: "Tudo o que você precisa saber sobre Eclipse. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia comp",
     url: "https://degen0x.com/pt-br/learn/eclipse-svm-ethereum-layer-2-guide-2026",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum: Guia Completo em Português 2026", description: "Tudo o que você precisa saber sobre Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum. Conceitos básicos, como funciona" },
+  twitter: { card: "summary_large_image", title: "Eclipse: Guia Completo em Português 2026", description: "Tudo o que você precisa saber sobre Eclipse. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia comp" },
   alternates: {
     canonical: "/pt-br/learn/eclipse-svm-ethereum-layer-2-guide-2026",
     languages: { "en": "/learn/eclipse-svm-ethereum-layer-2-guide-2026", "tr": "/tr/learn/eclipse-svm-ethereum-layer-2-guide-2026", "vi": "/vi/learn/eclipse-svm-ethereum-layer-2-guide-2026", "pt-BR": "/pt-br/learn/eclipse-svm-ethereum-layer-2-guide-2026", "x-default": "/learn/eclipse-svm-ethereum-layer-2-guide-2026" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
     { "@type": "ListItem", position: 2, name: "Aprender", item: "https://degen0x.com/pt-br/learn" },
-    { "@type": "ListItem", position: 3, name: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum: Guia Com" }
+    { "@type": "ListItem", position: 3, name: "Eclipse: Guia Completo em Português 2026" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum: Guia Completo em Português 2026",
-  description: "Tudo o que você precisa saber sobre Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia c",
+  title: "Eclipse: Guia Completo em Português 2026",
+  description: "Tudo o que você precisa saber sobre Eclipse. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.",
   url: "https://degen0x.com/pt-br/learn/eclipse-svm-ethereum-layer-2-guide-2026",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum e como funciona?", "answer": "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. Ethereum hospeda mais de 60% do TVL DeFi global." },
-  { "question": "Quais são os riscos de investir em Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-  { "question": "O que mudou em Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-  { "question": "Como usar Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+  { "question": "O que é Eclipse e como funciona?", "answer": "Eclipse é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos." },
+  { "question": "Quais são os riscos de investir em Eclipse?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
+  { "question": "O que mudou em Eclipse em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
+  { "question": "Como usar Eclipse no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,49 +59,49 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Aprender", href: "/pt-br/learn" },
-              { label: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum" }
+              { label: "Eclipse" }
           ]} />
           <article className="mt-8" lang="pt-BR">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum: Guia Completo em Português 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Tudo o que você precisa saber sobre Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Eclipse: Guia Completo em Português 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Tudo o que você precisa saber sobre Eclipse. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.</p>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">No ecossistema de criptomoedas, Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum ocupa uma posição estratégica. O modelo de desenvolvimento open-source e mecanismos de governança comunitária proporcionam uma estrutura transparente. Integrações no Ethereum, Solana e outras grandes redes expandem o escopo de aplicação de Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Eclipse?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">No ecossistema de criptomoedas, Eclipse ocupa uma posição estratégica. O modelo de desenvolvimento open-source e mecanismos de governança comunitária proporcionam uma estrutura transparente. Integrações no Ethereum, Solana e outras grandes redes expandem o escopo de aplicação de Eclipse.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Infraestrutura Técnica e Princípio de Funcionamento</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">A infraestrutura de Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum é construída sobre uma arquitetura de camadas: a camada base (Layer 1) garante consenso e segurança, enquanto as camadas superiores (Layer 2) otimizam escalabilidade e velocidade. Esta abordagem otimiza tanto segurança quanto experiência do usuário.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">A infraestrutura de Eclipse é construída sobre uma arquitetura de camadas: a camada base (Layer 1) garante consenso e segurança, enquanto as camadas superiores (Layer 2) otimizam escalabilidade e velocidade. Esta abordagem otimiza tanto segurança quanto experiência do usuário.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Atualizações 2026 e Dinâmicas de Mercado</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum em 2026 apresenta uma estrutura de mercado mais madura. Estudos de CBDC, novas categorias como DePIN (Redes de Infraestrutura Física Descentralizada) e adoção de arquitetura blockchain modular estão remodelando o ecossistema.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Eclipse em 2026 apresenta uma estrutura de mercado mais madura. Estudos de CBDC, novas categorias como DePIN (Redes de Infraestrutura Física Descentralizada) e adoção de arquitetura blockchain modular estão remodelando o ecossistema.</p>
             </section>
 
             <section className="mb-10">
-              <h2 className="text-2xl font-semibold text-white mb-4">Usando Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum no Brasil</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">No Brasil, para usar Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum você precisa: completando a verificação de identidade (KYC) em uma exchange regulamentada. Você pode comprar crypto com BRL através de depositando BRL via PIX (transferência instantânea) ou TED. Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022). No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal.</p>
+              <h2 className="text-2xl font-semibold text-white mb-4">Usando Eclipse no Brasil</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">No Brasil, para usar Eclipse você precisa: completando a verificação de identidade (KYC) em uma exchange regulamentada. Você pode comprar crypto com BRL através de depositando BRL via PIX (transferência instantânea) ou TED. Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022). No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Avaliação de Riscos e Segurança</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Compreender os riscos de Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum é a base para decisões de investimento informadas. Risco de mercado (volatilidade), risco tecnológico (bugs), risco de contraparte (falência de plataformas — como no caso FTX) e risco regulatório (proibições ou restrições) devem ser avaliados. Usar cold wallet e guardar chaves privadas com segurança são as práticas mais importantes.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Compreender os riscos de Eclipse é a base para decisões de investimento informadas. Risco de mercado (volatilidade), risco tecnológico (bugs), risco de contraparte (falência de plataformas — como no caso FTX) e risco regulatório (proibições ou restrições) devem ser avaliados. Usar cold wallet e guardar chaves privadas com segurança são as práticas mais importantes.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum e como funciona?", answer: "Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. Ethereum hospeda mais de 60% do TVL DeFi global." },
-                  { question: "Quais são os riscos de investir em Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
-                  { question: "O que mudou em Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
-                  { question: "Como usar Eclipse Guide 2026 — Solana VM Layer 2 on Ethereum no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+                  { question: "O que é Eclipse e como funciona?", answer: "Eclipse é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos." },
+                  { question: "Quais são os riscos de investir em Eclipse?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
+                  { question: "O que mudou em Eclipse em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
+                  { question: "Como usar Eclipse no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

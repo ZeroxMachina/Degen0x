@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Projects on Base Chain 2026: Aerodrome, Morpho,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026 | Degen0x",
-  description: "Phân tích hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho,: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",
+  title: "Projects on Base Chain: Phân Tích Hệ Sinh Thái và Lộ Trình 2026 | Degen0x",
+  description: "Phân tích hệ sinh thái Projects on Base Chain: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",
   openGraph: {
     type: "article",
-    title: "Best Projects on Base Chain 2026: Aerodrome, Morpho,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026",
-    description: "Phân tích hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho,: TVL, người dùng hoạt động, giao thức chính ",
+    title: "Projects on Base Chain: Phân Tích Hệ Sinh Thái và Lộ Trình 2026",
+    description: "Phân tích hệ sinh thái Projects on Base Chain: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",
     url: "https://degen0x.com/vi/ecosystem/best-projects-on-base-chain",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Projects on Base Chain 2026: Aerodrome, Morpho,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026", description: "Phân tích hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho,: TVL, người dùng hoạt động, giao thức chính " },
+  twitter: { card: "summary_large_image", title: "Projects on Base Chain: Phân Tích Hệ Sinh Thái và Lộ Trình 2026", description: "Phân tích hệ sinh thái Projects on Base Chain: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026." },
   alternates: {
     canonical: "/vi/ecosystem/best-projects-on-base-chain",
     languages: { "en": "/ecosystem/best-projects-on-base-chain", "tr": "/tr/ecosystem/best-projects-on-base-chain", "vi": "/vi/ecosystem/best-projects-on-base-chain", "pt-BR": "/pt-br/ecosystem/best-projects-on-base-chain", "x-default": "/ecosystem/best-projects-on-base-chain" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Hệ Sinh Thái", item: "https://degen0x.com/vi/ecosystem" },
-    { "@type": "ListItem", position: 3, name: "Best Projects on Base Chain 2026: Aerodrome, Morpho,: Phân T" }
+    { "@type": "ListItem", position: 3, name: "Projects on Base Chain: Phân Tích Hệ Sinh Thái và Lộ Trình 2" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Projects on Base Chain 2026: Aerodrome, Morpho,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026",
-  description: "Phân tích hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho,: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",
+  title: "Projects on Base Chain: Phân Tích Hệ Sinh Thái và Lộ Trình 2026",
+  description: "Phân tích hệ sinh thái Projects on Base Chain: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",
   url: "https://degen0x.com/vi/ecosystem/best-projects-on-base-chain",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,10 +42,10 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Giao thức nào nổi bật trong hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho,?", "answer": "Giao thức nổi bật: DEX, nền tảng lending, yield optimizer, bridge và marketplace NFT. Đánh giá TVL, người dùng và khối lượng giao dịch." },
-  { "question": "Năng lực kỹ thuật của mạng Best Projects on Base Chain 2026: Aerodrome, Morpho,?", "answer": "TPS, thời gian block, phí gas trung bình, finality và tương thích EVM. Các chỉ số quyết định sự phù hợp cho sử dụng hàng ngày." },
-  { "question": "Bắt đầu phát triển trên Best Projects on Base Chain 2026: Aerodrome, Morpho, như thế nào?", "answer": "Điểm bắt đầu: tài liệu chính thức, developer portal, hackathon, chương trình grants và forum cộng đồng. Cần kiến thức Solidity hoặc Rust." },
-  { "question": "Đầu tư vào hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho, năm 2026 có hợp lý không?", "answer": "Đầu tư hệ sinh thái cần cách tiếp cận khác với đầu tư đơn lẻ. Đánh giá tổng hợp xu hướng TVL, hoạt động phát triển, hợp tác tổ chức và vị thế cạnh tranh." }
+  { "question": "Giao thức nào nổi bật trong hệ sinh thái Projects on Base Chain?", "answer": "Giao thức nổi bật: DEX, nền tảng lending, yield optimizer, bridge và marketplace NFT. Đánh giá TVL, người dùng và khối lượng giao dịch." },
+  { "question": "Năng lực kỹ thuật của mạng Projects on Base Chain?", "answer": "TPS, thời gian block, phí gas trung bình, finality và tương thích EVM. Các chỉ số quyết định sự phù hợp cho sử dụng hàng ngày." },
+  { "question": "Bắt đầu phát triển trên Projects on Base Chain như thế nào?", "answer": "Điểm bắt đầu: tài liệu chính thức, developer portal, hackathon, chương trình grants và forum cộng đồng. Cần kiến thức Solidity hoặc Rust." },
+  { "question": "Đầu tư vào hệ sinh thái Projects on Base Chain năm 2026 có hợp lý không?", "answer": "Đầu tư hệ sinh thái cần cách tiếp cận khác với đầu tư đơn lẻ. Đánh giá tổng hợp xu hướng TVL, hoạt động phát triển, hợp tác tổ chức và vị thế cạnh tranh." }
 ]);
 
 const combinedSchema = combineSchemas([articleSchema, faqSchema]);
@@ -59,44 +59,44 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Hệ Sinh Thái", href: "/vi/ecosystem" },
-              { label: "Best Projects on Base Chain 2026: Aerodrome, Morph" }
+              { label: "Projects on Base Chain" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Projects on Base Chain 2026: Aerodrome, Morpho,: Phân Tích Hệ Sinh Thái và Lộ Trình 2026</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Phân tích hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho,: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Projects on Base Chain: Phân Tích Hệ Sinh Thái và Lộ Trình 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Phân tích hệ sinh thái Projects on Base Chain: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Tổng Quan Hệ Sinh Thái</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho, là mạng lưới toàn diện gồm các giao thức, ứng dụng và công cụ tích hợp. Đánh giá dựa trên các chỉ số: TVL, người dùng hoạt động hàng ngày, khối lượng giao dịch và hoạt động phát triển.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Hệ sinh thái Projects on Base Chain là mạng lưới toàn diện gồm các giao thức, ứng dụng và công cụ tích hợp. Đánh giá dựa trên các chỉ số: TVL, người dùng hoạt động hàng ngày, khối lượng giao dịch và hoạt động phát triển.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Giao Thức và Ứng Dụng Chính</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Các giao thức nổi bật trong hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho,: DEX (sàn phi tập trung), nền tảng lending/borrowing, yield aggregator, giải pháp bridge và marketplace NFT. Phân tích chức năng, thị phần TVL và trải nghiệm người dùng.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Các giao thức nổi bật trong hệ sinh thái Projects on Base Chain: DEX (sàn phi tập trung), nền tảng lending/borrowing, yield aggregator, giải pháp bridge và marketplace NFT. Phân tích chức năng, thị phần TVL và trải nghiệm người dùng.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Hạ Tầng Kỹ Thuật và Hiệu Suất</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Năng lực kỹ thuật của mạng Best Projects on Base Chain 2026: Aerodrome, Morpho,: giao dịch mỗi giây (TPS), thời gian block, phí gas, thời gian hoàn tất (finality) và tương thích EVM. Các chỉ số này quyết định sự phù hợp cho sử dụng hàng ngày và hoạt động DeFi.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Năng lực kỹ thuật của mạng Projects on Base Chain: giao dịch mỗi giây (TPS), thời gian block, phí gas, thời gian hoàn tất (finality) và tương thích EVM. Các chỉ số này quyết định sự phù hợp cho sử dụng hàng ngày và hoạt động DeFi.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Xu Hướng Tăng Trưởng và Lộ Trình 2026</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Xu hướng tăng trưởng hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho, năm 2026: ra mắt giao thức mới, thông báo hợp tác, chương trình tài trợ và công cụ phát triển. Việt Nam là một trong những quốc gia dẫn đầu về áp dụng blockchain ở Đông Nam Á với nhiều dự án nổi bật.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Xu hướng tăng trưởng hệ sinh thái Projects on Base Chain năm 2026: ra mắt giao thức mới, thông báo hợp tác, chương trình tài trợ và công cụ phát triển. Việt Nam là một trong những quốc gia dẫn đầu về áp dụng blockchain ở Đông Nam Á với nhiều dự án nổi bật.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Giao thức nào nổi bật trong hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho,?", answer: "Giao thức nổi bật: DEX, nền tảng lending, yield optimizer, bridge và marketplace NFT. Đánh giá TVL, người dùng và khối lượng giao dịch." },
-                  { question: "Năng lực kỹ thuật của mạng Best Projects on Base Chain 2026: Aerodrome, Morpho,?", answer: "TPS, thời gian block, phí gas trung bình, finality và tương thích EVM. Các chỉ số quyết định sự phù hợp cho sử dụng hàng ngày." },
-                  { question: "Bắt đầu phát triển trên Best Projects on Base Chain 2026: Aerodrome, Morpho, như thế nào?", answer: "Điểm bắt đầu: tài liệu chính thức, developer portal, hackathon, chương trình grants và forum cộng đồng. Cần kiến thức Solidity hoặc Rust." },
-                  { question: "Đầu tư vào hệ sinh thái Best Projects on Base Chain 2026: Aerodrome, Morpho, năm 2026 có hợp lý không?", answer: "Đầu tư hệ sinh thái cần cách tiếp cận khác với đầu tư đơn lẻ. Đánh giá tổng hợp xu hướng TVL, hoạt động phát triển, hợp tác tổ chức và vị thế cạnh tranh." }
+                  { question: "Giao thức nào nổi bật trong hệ sinh thái Projects on Base Chain?", answer: "Giao thức nổi bật: DEX, nền tảng lending, yield optimizer, bridge và marketplace NFT. Đánh giá TVL, người dùng và khối lượng giao dịch." },
+                  { question: "Năng lực kỹ thuật của mạng Projects on Base Chain?", answer: "TPS, thời gian block, phí gas trung bình, finality và tương thích EVM. Các chỉ số quyết định sự phù hợp cho sử dụng hàng ngày." },
+                  { question: "Bắt đầu phát triển trên Projects on Base Chain như thế nào?", answer: "Điểm bắt đầu: tài liệu chính thức, developer portal, hackathon, chương trình grants và forum cộng đồng. Cần kiến thức Solidity hoặc Rust." },
+                  { question: "Đầu tư vào hệ sinh thái Projects on Base Chain năm 2026 có hợp lý không?", answer: "Đầu tư hệ sinh thái cần cách tiếp cận khác với đầu tư đơn lẻ. Đánh giá tổng hợp xu hướng TVL, hoạt động phát triển, hợp tác tổ chức và vị thế cạnh tranh." }
                 ].map((faq, i) => (
                   <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
                     <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">

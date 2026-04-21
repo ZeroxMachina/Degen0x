@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Blog — Crypto News, Analysis & Guides — Análise Cripto Atualizada | Degen0x",
-  description: "Guia completo sobre Blog — Crypto News, Analysis & Guides em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Cri",
+  title: "Blog — Análise Cripto Atualizada | Degen0x",
+  description: "Guia completo sobre Blog em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).",
   openGraph: {
     type: "article",
-    title: "Blog — Crypto News, Analysis & Guides — Análise Cripto Atualizada",
-    description: "Guia completo sobre Blog — Crypto News, Analysis & Guides em português. A CVM e o Banco Central regulamentam ativos digi",
+    title: "Blog — Análise Cripto Atualizada",
+    description: "Guia completo sobre Blog em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal ",
     url: "https://degen0x.com/pt-br/blog",
     locale: "pt_BR",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Blog — Crypto News, Analysis & Guides — Análise Cripto Atualizada", description: "Guia completo sobre Blog — Crypto News, Analysis & Guides em português. A CVM e o Banco Central regulamentam ativos digi" },
+  twitter: { card: "summary_large_image", title: "Blog — Análise Cripto Atualizada", description: "Guia completo sobre Blog em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal " },
   alternates: {
     canonical: "/pt-br/blog",
     languages: { "en": "/blog", "tr": "/tr/blog", "vi": "/vi/blog", "pt-BR": "/pt-br/blog", "x-default": "/blog" },
@@ -32,8 +32,8 @@ const breadcrumbData = {
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Blog — Crypto News, Analysis & Guides — Análise Cripto Atualizada",
-  description: "Guia completo sobre Blog — Crypto News, Analysis & Guides em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Cri",
+  title: "Blog — Análise Cripto Atualizada",
+  description: "Guia completo sobre Blog em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).",
   url: "https://degen0x.com/pt-br/blog",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -62,12 +62,12 @@ export default function LocalizedPage() {
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blog — Crypto News, Analysis & Guides — Análise Cripto Atualizada</h1>
-            <p className="text-lg text-[#8b949e] mb-10">Guia completo sobre Blog — Crypto News, Analysis & Guides em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Blog — Análise Cripto Atualizada</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Guia completo sobre Blog em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Análise Atualizada</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Análise de mercado atualizada e opiniões de especialistas sobre Blog — Crypto News, Analysis & Guides. Últimos desenvolvimentos no mercado cripto, avaliação de tendências e informações práticas.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Análise de mercado atualizada e opiniões de especialistas sobre Blog. Últimos desenvolvimentos no mercado cripto, avaliação de tendências e informações práticas.</p>
             </section>
 
             <section className="mb-10">

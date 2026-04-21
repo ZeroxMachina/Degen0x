@@ -5,17 +5,17 @@ import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Best Free Crypto Cards (No Annual Fee) of — So Sánh và Đánh Giá Thẻ Crypto | Degen0x",
-  description: "So sánh Best Free Crypto Cards (No Annual Fee) of: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
+  title: "Crypto Cards — So Sánh và Đánh Giá Thẻ Crypto | Degen0x",
+  description: "So sánh Crypto Cards: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
   openGraph: {
     type: "article",
-    title: "Best Free Crypto Cards (No Annual Fee) of — So Sánh và Đánh Giá Thẻ Crypto",
-    description: "So sánh Best Free Crypto Cards (No Annual Fee) of: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng",
+    title: "Crypto Cards — So Sánh và Đánh Giá Thẻ Crypto",
+    description: "So sánh Crypto Cards: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
     url: "https://degen0x.com/vi/crypto-cards/best/no-annual-fee",
     locale: "vi_VN",
     images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
   },
-  twitter: { card: "summary_large_image", title: "Best Free Crypto Cards (No Annual Fee) of — So Sánh và Đánh Giá Thẻ Crypto", description: "So sánh Best Free Crypto Cards (No Annual Fee) of: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng" },
+  twitter: { card: "summary_large_image", title: "Crypto Cards — So Sánh và Đánh Giá Thẻ Crypto", description: "So sánh Crypto Cards: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam." },
   alternates: {
     canonical: "/vi/crypto-cards/best/no-annual-fee",
     languages: { "en": "/crypto-cards/best/no-annual-fee", "tr": "/tr/crypto-cards/best/no-annual-fee", "vi": "/vi/crypto-cards/best/no-annual-fee", "pt-BR": "/pt-br/crypto-cards/best/no-annual-fee", "x-default": "/crypto-cards/best/no-annual-fee" },
@@ -28,13 +28,13 @@ const breadcrumbData = {
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Trang Chủ", item: "https://degen0x.com/vi" },
     { "@type": "ListItem", position: 2, name: "Thẻ Crypto", item: "https://degen0x.com/vi/crypto-cards" },
-    { "@type": "ListItem", position: 3, name: "Best Free Crypto Cards (No Annual Fee) of — So Sánh và Đánh " }
+    { "@type": "ListItem", position: 3, name: "Crypto Cards — So Sánh và Đánh Giá Thẻ Crypto" }
   ],
 };
 
 const articleSchema = generateArticleSchema({
-  title: "Best Free Crypto Cards (No Annual Fee) of — So Sánh và Đánh Giá Thẻ Crypto",
-  description: "So sánh Best Free Crypto Cards (No Annual Fee) of: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
+  title: "Crypto Cards — So Sánh và Đánh Giá Thẻ Crypto",
+  description: "So sánh Crypto Cards: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",
   url: "https://degen0x.com/vi/crypto-cards/best/no-annual-fee",
   publishedDate: "2026-04-21",
   modifiedDate: "2026-04-21",
@@ -42,7 +42,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Phí thẻ Best Free Crypto Cards (No Annual Fee) of là bao nhiêu?", "answer": "Cấu trúc phí: phí phát hành, phí hàng tháng/năm, phí rút ATM, chênh lệch tỷ giá và spread chuyển đổi crypto-fiat. Chú ý phí ẩn." },
+  { "question": "Phí thẻ Crypto Cards là bao nhiêu?", "answer": "Cấu trúc phí: phí phát hành, phí hàng tháng/năm, phí rút ATM, chênh lệch tỷ giá và spread chuyển đổi crypto-fiat. Chú ý phí ẩn." },
   { "question": "Có thể chi tiêu bằng những crypto nào?", "answer": "Crypto hỗ trợ, cơ chế chuyển đổi tự động và tỷ lệ spread. Bitcoin, Ethereum và stablecoin thường có spread thấp nhất." },
   { "question": "Sử dụng thẻ này tại Việt Nam được không?", "answer": "Thẻ crypto chưa phổ biến rộng rãi tại Việt Nam; nhiều người dùng chuyển đổi crypto sang VND qua P2P trước khi chi tiêu. Đánh giá khả năng sử dụng, truy cập ATM và trải nghiệm chi tiêu." },
   { "question": "Tỷ lệ cashback và thưởng thế nào?", "answer": "Cấu trúc cashback: tỷ lệ hoàn tiền theo chi tiêu, yêu cầu staking, token thưởng và điều kiện sử dụng." }
@@ -59,29 +59,29 @@ export default function LocalizedPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <Breadcrumb items={[
               { label: "Thẻ Crypto", href: "/vi/crypto-cards" },
-              { label: "Best Free Crypto Cards (No Annual Fee) of" }
+              { label: "Crypto Cards" }
           ]} />
           <article className="mt-8" lang="vi">
             <div className="flex flex-wrap gap-2 mb-6">
               <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇻🇳 Tiếng Việt</span>
               <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Trung Cấp</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Best Free Crypto Cards (No Annual Fee) of — So Sánh và Đánh Giá Thẻ Crypto</h1>
-            <p className="text-lg text-[#8b949e] mb-10">So sánh Best Free Crypto Cards (No Annual Fee) of: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.</p>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Crypto Cards — So Sánh và Đánh Giá Thẻ Crypto</h1>
+            <p className="text-lg text-[#8b949e] mb-10">So sánh Crypto Cards: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.</p>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Đánh Giá Tổng Quan Thẻ Crypto</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Đánh giá toàn diện thẻ Best Free Crypto Cards (No Annual Fee) of: loại thẻ (trả trước/ghi nợ/tín dụng), mạng thanh toán (Visa/Mastercard) và khả năng sử dụng toàn cầu. Thẻ crypto chưa phổ biến rộng rãi tại Việt Nam; nhiều người dùng chuyển đổi crypto sang VND qua P2P trước khi chi tiêu.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Đánh giá toàn diện thẻ Crypto Cards: loại thẻ (trả trước/ghi nợ/tín dụng), mạng thanh toán (Visa/Mastercard) và khả năng sử dụng toàn cầu. Thẻ crypto chưa phổ biến rộng rãi tại Việt Nam; nhiều người dùng chuyển đổi crypto sang VND qua P2P trước khi chi tiêu.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Phí và So Sánh Hoàn Tiền</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Phí hàng tháng/năm, hạn mức rút ATM, chênh lệch tỷ giá, yêu cầu staking và tỷ lệ cashback/thưởng của thẻ Best Free Crypto Cards (No Annual Fee) of. Chú ý các phí ẩn.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Phí hàng tháng/năm, hạn mức rút ATM, chênh lệch tỷ giá, yêu cầu staking và tỷ lệ cashback/thưởng của thẻ Crypto Cards. Chú ý các phí ẩn.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Crypto Hỗ Trợ và Chuyển Đổi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Các crypto có thể chi tiêu qua thẻ Best Free Crypto Cards (No Annual Fee) of, cơ chế chuyển đổi tự động (crypto-to-fiat), tỷ lệ spread và tiền tệ fiat hỗ trợ.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Các crypto có thể chi tiêu qua thẻ Crypto Cards, cơ chế chuyển đổi tự động (crypto-to-fiat), tỷ lệ spread và tiền tệ fiat hỗ trợ.</p>
             </section>
 
             <section className="mb-10">
@@ -93,7 +93,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Phí thẻ Best Free Crypto Cards (No Annual Fee) of là bao nhiêu?", answer: "Cấu trúc phí: phí phát hành, phí hàng tháng/năm, phí rút ATM, chênh lệch tỷ giá và spread chuyển đổi crypto-fiat. Chú ý phí ẩn." },
+                  { question: "Phí thẻ Crypto Cards là bao nhiêu?", answer: "Cấu trúc phí: phí phát hành, phí hàng tháng/năm, phí rút ATM, chênh lệch tỷ giá và spread chuyển đổi crypto-fiat. Chú ý phí ẩn." },
                   { question: "Có thể chi tiêu bằng những crypto nào?", answer: "Crypto hỗ trợ, cơ chế chuyển đổi tự động và tỷ lệ spread. Bitcoin, Ethereum và stablecoin thường có spread thấp nhất." },
                   { question: "Sử dụng thẻ này tại Việt Nam được không?", answer: "Thẻ crypto chưa phổ biến rộng rãi tại Việt Nam; nhiều người dùng chuyển đổi crypto sang VND qua P2P trước khi chi tiêu. Đánh giá khả năng sử dụng, truy cập ATM và trải nghiệm chi tiêu." },
                   { question: "Tỷ lệ cashback và thưởng thế nào?", answer: "Cấu trúc cashback: tỷ lệ hoàn tiền theo chi tiêu, yêu cầu staking, token thưởng và điều kiện sử dụng." }
