@@ -1,0 +1,125 @@
+import type { Metadata } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import BackToTop from "@/components/BackToTop";
+import StructuredData from "@/components/StructuredData";
+import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
+
+export const metadata: Metadata = {
+  title: "Liquidity Pools — Guia Completo de Cripto 2026 | Degen0x",
+  description: "Guia completo sobre Liquidity Pools em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/",
+  openGraph: {
+    type: "article",
+    title: "Liquidity Pools — Guia Completo de Cripto 2026",
+    description: "Guia completo sobre Liquidity Pools em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o M",
+    url: "https://degen0x.com/pt-br/defi-lending/best/liquidity-pools",
+    locale: "pt_BR",
+    images: [{ url: "https://degen0x.com/og-default.svg", width: 1200, height: 630 }],
+  },
+  twitter: { card: "summary_large_image", title: "Liquidity Pools — Guia Completo de Cripto 2026", description: "Guia completo sobre Liquidity Pools em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o M" },
+  alternates: {
+    canonical: "/pt-br/defi-lending/best/liquidity-pools",
+    languages: { "en": "/defi-lending/best/liquidity-pools", "tr": "/tr/defi-lending/best/liquidity-pools", "vi": "/vi/defi-lending/best/liquidity-pools", "pt-BR": "/pt-br/defi-lending/best/liquidity-pools", "x-default": "/defi-lending/best/liquidity-pools" },
+  },
+};
+
+const breadcrumbData = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Início", item: "https://degen0x.com/pt-br" },
+    { "@type": "ListItem", position: 2, name: "DeFi Empréstimos", item: "https://degen0x.com/pt-br/defi-lending" },
+    { "@type": "ListItem", position: 3, name: "Liquidity Pools — Guia Completo de Cripto 2026" }
+  ],
+};
+
+const articleSchema = generateArticleSchema({
+  title: "Liquidity Pools — Guia Completo de Cripto 2026",
+  description: "Guia completo sobre Liquidity Pools em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/",
+  url: "https://degen0x.com/pt-br/defi-lending/best/liquidity-pools",
+  publishedDate: "2026-04-21",
+  modifiedDate: "2026-04-21",
+  author: "Degen0x",
+});
+
+const faqSchema = generateFAQSchema([
+  { "question": "O que é Liquidity Pools e como funciona?", "answer": "Liquidity Pools é um sistema descentralizado construído sobre tecnologia blockchain. Permite transações sem intermediários através de contratos inteligentes e desempenha um papel importante no ecossistema cripto. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
+  { "question": "Quais são os riscos de investir em Liquidity Pools?", "answer": "Principais riscos: vulnerabilidades de contratos inteligentes, volatilidade de mercado (oscilações de 20%+ ao dia são comuns), incertezas regulatórias e riscos de liquidez. Diversificação e uso de stop-loss são recomendados." },
+  { "question": "O que mudou em Liquidity Pools em 2026?", "answer": "Em 2026: regulamento MiCA da UE entrou em vigor, Bitcoin spot ETFs se popularizaram globalmente, Ethereum completou upgrade Pectra e DeFi institucional cresceu significativamente. Liquidity Pools é diretamente afetado." },
+  { "question": "Como usar Liquidity Pools no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+]);
+
+const combinedSchema = combineSchemas([articleSchema, faqSchema]);
+
+export default function LocalizedPage() {
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <StructuredData data={combinedSchema} />
+      <main className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+          <Breadcrumb items={[
+              { label: "DeFi Empréstimos", href: "/pt-br/defi-lending" },
+              { label: "Liquidity Pools" }
+          ]} />
+          <article className="mt-8" lang="pt-BR">
+            <div className="flex flex-wrap gap-2 mb-6">
+              <span className="inline-block px-3 py-1 bg-purple-900/30 text-purple-300 text-sm rounded-full border border-purple-700/50">🇧🇷 Português (Brasil)</span>
+              <span className="inline-block px-3 py-1 bg-blue-900/30 text-blue-300 text-sm rounded-full border border-blue-700/50">Intermediário</span>
+            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Liquidity Pools — Guia Completo de Cripto 2026</h1>
+            <p className="text-lg text-[#8b949e] mb-10">Guia completo sobre Liquidity Pools em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 14.478/2022).</p>
+
+            <section className="mb-10">
+              <h2 className="text-2xl font-semibold text-white mb-4">O Que É Liquidity Pools?</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Liquidity Pools é um dos pilares fundamentais do ecossistema crypto e blockchain. Esta tecnologia permite transações transparentes e sem intermediários graças à sua arquitetura descentralizada. Em 2026, métricas como TVL, número de usuários e atividade de desenvolvedores na área de Liquidity Pools apresentaram crescimento significativo. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo.</p>
+            </section>
+
+            <section className="mb-10">
+              <h2 className="text-2xl font-semibold text-white mb-4">Infraestrutura Técnica e Princípio de Funcionamento</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">O sistema Liquidity Pools é construído sobre funções hash criptográficas, assinaturas digitais e mecanismos de consenso. Contratos inteligentes executam transações automaticamente conforme regras codificadas. Esta estrutura elimina a necessidade de intermediários financeiros tradicionais, reduzindo custos e aumentando velocidade.</p>
+            </section>
+
+            <section className="mb-10">
+              <h2 className="text-2xl font-semibold text-white mb-4">Atualizações 2026 e Dinâmicas de Mercado</h2>
+              <p className="text-[#c9d1d9] leading-relaxed">Em 2026, os desenvolvimentos mais importantes em Liquidity Pools: clareza dos marcos regulatórios (especialmente regulamento MiCA da UE e decisões da SEC dos EUA), aceleração da adoção institucional e melhorias tecnológicas. Após o upgrade Pectra do Ethereum e aprovações de Bitcoin spot ETF, o mercado entrou em fase de maturação.</p>
+            </section>
+
+            <section className="mb-10">
+              <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
+              <div className="space-y-4">
+                {[
+                  { question: "O que é Liquidity Pools e como funciona?", answer: "Liquidity Pools é um sistema descentralizado construído sobre tecnologia blockchain. Permite transações sem intermediários através de contratos inteligentes e desempenha um papel importante no ecossistema cripto. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
+                  { question: "Quais são os riscos de investir em Liquidity Pools?", answer: "Principais riscos: vulnerabilidades de contratos inteligentes, volatilidade de mercado (oscilações de 20%+ ao dia são comuns), incertezas regulatórias e riscos de liquidez. Diversificação e uso de stop-loss são recomendados." },
+                  { question: "O que mudou em Liquidity Pools em 2026?", answer: "Em 2026: regulamento MiCA da UE entrou em vigor, Bitcoin spot ETFs se popularizaram globalmente, Ethereum completou upgrade Pectra e DeFi institucional cresceu significativamente. Liquidity Pools é diretamente afetado." },
+                  { question: "Como usar Liquidity Pools no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
+                ].map((faq, i) => (
+                  <details key={i} className="group bg-[#161b22] border border-[#30363d] rounded-lg">
+                    <summary className="cursor-pointer px-5 py-4 text-white font-medium list-none flex justify-between items-center min-h-[44px]">
+                      {faq.question}
+                      <span className="text-[#8b949e] ml-2 group-open:rotate-180 transition-transform">&#9660;</span>
+                    </summary>
+                    <p className="px-5 pb-4 text-[#c9d1d9] leading-relaxed">{faq.answer}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+            <section className="mb-10">
+              <h2 className="text-2xl font-semibold text-white mb-4">Conteúdo Relacionado</h2>
+              <ul className="list-disc list-inside text-purple-300 space-y-2">
+                <li><a className="hover:underline" href="/pt-br/learn">Aprender</a></li>
+                <li><a className="hover:underline" href="/pt-br/tools">Ferramentas</a></li>
+                <li><a className="hover:underline" href="/pt-br/exchanges/best">Exchanges</a></li>
+              </ul>
+            </section>
+            <div style={{ background: "#1a1625", border: "1px solid #2d2254", borderRadius: 8, padding: "16px 20px", marginTop: 40, marginBottom: 20 }}>
+              <p style={{ fontSize: 13, color: "#8b949e", lineHeight: 1.7, margin: 0 }}>
+                <strong style={{ color: "#a78bfa" }}>Aviso legal:</strong> Este guia é apenas para fins informativos e não constitui aconselhamento financeiro. Criptomoedas envolvem riscos significativos — faça sua própria pesquisa antes de tomar qualquer decisão.
+              </p>
+            </div>
+          </article>
+          <BackToTop />
+        </div>
+      </main>
+    </>
+  );
+}
