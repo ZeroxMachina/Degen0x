@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Travala — Guia de Pagamentos com Cripto | Degen0x",
   description: "Travala: métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Solana Firedancer Validador Client: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre Solana Firedancer Validador Client. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em portu",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Solana Firedancer Validador Client e como funciona?", "answer": "Solana Firedancer Validador Client é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. Mais de 25% da oferta de ETH está em stake." },
+  { "question": "O que é Solana Firedancer Validador Client e como funciona?", "answer": "Solana Firedancer Validador Client é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Mais de 25% da oferta de ETH está em stake. Lido, Rocket Pool e EigenLayer restaking permitem proteger múltiplos protocolos, aumentando eficiência de capital." },
   { "question": "Quais são os riscos de investir em Solana Firedancer Validador Client?", "answer": "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
   { "question": "O que mudou em Solana Firedancer Validador Client em 2026?", "answer": "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
   { "question": "Como usar Solana Firedancer Validador Client no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
@@ -98,7 +100,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Solana Firedancer Validador Client e como funciona?", answer: "Solana Firedancer Validador Client é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. Mais de 25% da oferta de ETH está em stake." },
+                  { question: "O que é Solana Firedancer Validador Client e como funciona?", answer: "Solana Firedancer Validador Client é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Mais de 25% da oferta de ETH está em stake. Lido, Rocket Pool e EigenLayer restaking permitem proteger múltiplos protocolos, aumentando eficiência de capital." },
                   { question: "Quais são os riscos de investir em Solana Firedancer Validador Client?", answer: "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
                   { question: "O que mudou em Solana Firedancer Validador Client em 2026?", answer: "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
                   { question: "Como usar Solana Firedancer Validador Client no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }

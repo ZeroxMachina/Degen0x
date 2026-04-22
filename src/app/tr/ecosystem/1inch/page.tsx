@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Go to app.1inch.io: Ekosistem Analizi ve 2026 Yol Haritası | Degen0x",
   description: "Go to app.1inch.io ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı rehber.",

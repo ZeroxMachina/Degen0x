@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Meme Coin Index — Ücretsiz Kripto Aracı | Degen0x",
   description: "Meme Coin Index aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Meme Coin Index nedir ve nasıl çalışır?", "answer": "Meme Coin Index, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır." },
+  { "question": "Meme Coin Index nedir ve nasıl çalışır?", "answer": "Meme Coin Index, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Meme coinler topluluk gücü ve viral yayılım ile değer kazanır. Projelerin %95+\'ı değer kaybeder — sadece kaybetmeyi göze alabileceğiniz tutarlarla işlem yapın." },
   { "question": "Meme Coin Index yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
   { "question": "2026\'da Meme Coin Index alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Meme Coin Index alanında da paralel iyileştirmeler gözlemlenmektedir." },
   { "question": "Türkiye\'den Meme Coin Index nasıl kullanılır?", "answer": "Türkiye\'de Meme Coin Index kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
@@ -71,7 +73,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Meme Coin Index Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Meme Coin Index, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Meme Coin Index büyük bir dönüşüm sürecine girmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Meme coinler topluluk gücü ve viral yayılım ile değer kazanır. Projelerin %95+\'ı değer kaybeder — sadece kaybetmeyi göze alabileceğiniz tutarlarla işlem yapın.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Meme Coin Index, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Meme Coin Index büyük bir dönüşüm sürecine girmiştir. Meme coinler topluluk gücü ve viral yayılım ile değer kazanır. Projelerin %95+\'ı değer kaybeder — sadece kaybetmeyi göze alabileceğiniz tutarlarla işlem yapın. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır.</p>
             </section>
 
             <section className="mb-10">
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Meme Coin Index nedir ve nasıl çalışır?", answer: "Meme Coin Index, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır." },
+                  { question: "Meme Coin Index nedir ve nasıl çalışır?", answer: "Meme Coin Index, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Meme coinler topluluk gücü ve viral yayılım ile değer kazanır. Projelerin %95+\'ı değer kaybeder — sadece kaybetmeyi göze alabileceğiniz tutarlarla işlem yapın." },
                   { question: "Meme Coin Index yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
                   { question: "2026\'da Meme Coin Index alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Meme Coin Index alanında da paralel iyileştirmeler gözlemlenmektedir." },
                   { question: "Türkiye\'den Meme Coin Index nasıl kullanılır?", answer: "Türkiye\'de Meme Coin Index kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }

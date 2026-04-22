@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto.com vs Bybit Kart — Kripto Kart Karşılaştırma ve İnceleme | Degen0x",
   description: "Crypto.com vs Bybit Kart karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzerinde",

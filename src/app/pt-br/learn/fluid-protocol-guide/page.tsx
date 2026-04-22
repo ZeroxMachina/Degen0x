@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Fluid Protocolo: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre Fluid Protocolo. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.",

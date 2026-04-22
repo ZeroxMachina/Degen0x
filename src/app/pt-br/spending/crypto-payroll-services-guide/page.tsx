@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Folha de Pagamento Services — Guia de Pagamentos com Cripto | Degen0x",
   description: "Crypto Folha de Pagamento Services: métodos de pagamento com cripto, plataformas suportadas e guia de uso diário.",

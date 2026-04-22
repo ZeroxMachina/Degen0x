@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Cold Carteiras Under \$100 — Segurança, Recursos e Avaliação 2026 | Degen0x",
   description: "Análise da carteira Cold Carteiras Under \$100: arquitetura de segurança, blockchains suportadas, facilidade de uso e comparação com Trust Wallet, MetaMask e Led",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bitcoin Rainbow Chart — Công Cụ Crypto Miễn Phí | Degen0x",
   description: "Sử dụng công cụ Bitcoin Rainbow Chart miễn phí. Phân tích thị trường crypto, tính toán và đưa ra quyết định sáng suốt. Không cần đăng ký.",

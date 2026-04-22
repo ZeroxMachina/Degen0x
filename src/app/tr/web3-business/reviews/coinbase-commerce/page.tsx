@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Coinbase Commerce — Web3 İş Fırsatları ve Stratejiler | Degen0x",
   description: "Coinbase Commerce: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.",

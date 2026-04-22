@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Cross-Chain Kredi Protokoller — Kapsamlı Kripto Rehberi 2026 | Degen0x",
   description: "Cross-Chain Kredi Protokoller hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacı",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Cross-Chain Kredi Protokoller nedir ve nasıl çalışır?", "answer": "Cross-Chain Kredi Protokoller, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır." },
+  { "question": "Cross-Chain Kredi Protokoller nedir ve nasıl çalışır?", "answer": "Cross-Chain Kredi Protokoller, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır." },
   { "question": "Cross-Chain Kredi Protokoller yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
   { "question": "2026\'da Cross-Chain Kredi Protokoller alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Cross-Chain Kredi Protokoller alanında da paralel iyileştirmeler gözlemlenmektedir." },
   { "question": "Türkiye\'den Cross-Chain Kredi Protokoller nasıl kullanılır?", "answer": "Türkiye\'de Cross-Chain Kredi Protokoller kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
@@ -71,7 +73,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Cross-Chain Kredi Protokoller Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Cross-Chain Kredi Protokoller, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Cross-Chain Kredi Protokoller büyük bir dönüşüm sürecine girmiştir. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Cross-Chain Kredi Protokoller, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Cross-Chain Kredi Protokoller büyük bir dönüşüm sürecine girmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır.</p>
             </section>
 
             <section className="mb-10">
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Cross-Chain Kredi Protokoller nedir ve nasıl çalışır?", answer: "Cross-Chain Kredi Protokoller, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Cross-chain bridge\'ler \$2 milyar+\'lık exploit geçmişiyle riskli bir kategoridir (Ronin \$625M, Wormhole \$320M). LayerZero ve Chainlink CCIP daha güvenli alternatifler sunmaktadır." },
+                  { question: "Cross-Chain Kredi Protokoller nedir ve nasıl çalışır?", answer: "Cross-Chain Kredi Protokoller, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır." },
                   { question: "Cross-Chain Kredi Protokoller yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
                   { question: "2026\'da Cross-Chain Kredi Protokoller alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Cross-Chain Kredi Protokoller alanında da paralel iyileştirmeler gözlemlenmektedir." },
                   { question: "Türkiye\'den Cross-Chain Kredi Protokoller nasıl kullanılır?", answer: "Türkiye\'de Cross-Chain Kredi Protokoller kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Kamino Finance Solana Empréstimo — Guia Completo de Cripto 2026 | Degen0x",
   description: "Guia completo sobre Kamino Finance Solana Empréstimo em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomo",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Kamino Finance Solana Empréstimo e como funciona?", "answer": "Kamino Finance Solana Empréstimo é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
+  { "question": "O que é Kamino Finance Solana Empréstimo e como funciona?", "answer": "Kamino Finance Solana Empréstimo é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. TVL DeFi ultrapassou \$200 bilhões em 2026." },
   { "question": "Quais são os riscos de investir em Kamino Finance Solana Empréstimo?", "answer": "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
   { "question": "O que mudou em Kamino Finance Solana Empréstimo em 2026?", "answer": "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
   { "question": "Como usar Kamino Finance Solana Empréstimo no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Kamino Finance Solana Empréstimo e como funciona?", answer: "Kamino Finance Solana Empréstimo é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
+                  { question: "O que é Kamino Finance Solana Empréstimo e como funciona?", answer: "Kamino Finance Solana Empréstimo é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. TVL DeFi ultrapassou \$200 bilhões em 2026." },
                   { question: "Quais são os riscos de investir em Kamino Finance Solana Empréstimo?", answer: "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
                   { question: "O que mudou em Kamino Finance Solana Empréstimo em 2026?", answer: "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
                   { question: "Como usar Kamino Finance Solana Empréstimo no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }

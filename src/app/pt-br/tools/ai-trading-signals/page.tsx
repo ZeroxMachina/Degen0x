@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "AI Trading Signals — Ferramenta Cripto Gratuita | Degen0x",
   description: "Use a ferramenta AI Trading Signals gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é AI Trading Signals e como funciona?", "answer": "AI Trading Signals é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. CEXs oferecem liquidez e segurança, DEXs oferecem self-custody. Proof-of-reserves está se tornando padrão entre exchanges centralizadas. AI e blockchain é o setor mais dinâmico de 2026." },
+  { "question": "O que é AI Trading Signals e como funciona?", "answer": "AI Trading Signals é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. AI e blockchain é o setor mais dinâmico de 2026. Bittensor (TAO), Render Network e Fetch.ai constroem infraestrutura de AI descentralizada." },
   { "question": "Quais são os riscos de investir em AI Trading Signals?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
   { "question": "O que mudou em AI Trading Signals em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
   { "question": "Como usar AI Trading Signals no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é AI Trading Signals e como funciona?", answer: "AI Trading Signals é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. CEXs oferecem liquidez e segurança, DEXs oferecem self-custody. Proof-of-reserves está se tornando padrão entre exchanges centralizadas. AI e blockchain é o setor mais dinâmico de 2026." },
+                  { question: "O que é AI Trading Signals e como funciona?", answer: "AI Trading Signals é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. AI e blockchain é o setor mais dinâmico de 2026. Bittensor (TAO), Render Network e Fetch.ai constroem infraestrutura de AI descentralizada." },
                   { question: "Quais são os riscos de investir em AI Trading Signals?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
                   { question: "O que mudou em AI Trading Signals em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
                   { question: "Como usar AI Trading Signals no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }

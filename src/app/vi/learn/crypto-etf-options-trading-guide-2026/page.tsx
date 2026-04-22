@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Giao Dịch Quyền Chọn ETF Crypto: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
   description: "Mọi thứ bạn cần biết về Giao Dịch Quyền Chọn ETF Crypto. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Giao Dịch Quyền Chọn ETF Crypto là gì và hoạt động như thế nào?", "answer": "Giao Dịch Quyền Chọn ETF Crypto là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. CEX cung cấp thanh khoản và bảo mật, DEX cung cấp self-custody. Proof-of-reserves đang trở thành tiêu chuẩn cho các sàn CEX. Năm 2026, MiCA của EU có hiệu lực, SEC và CFTC phân chia thẩm quyền tại Mỹ." },
+  { "question": "Giao Dịch Quyền Chọn ETF Crypto là gì và hoạt động như thế nào?", "answer": "Giao Dịch Quyền Chọn ETF Crypto là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. Năm 2026, MiCA của EU có hiệu lực, SEC và CFTC phân chia thẩm quyền tại Mỹ. Việt Nam đang hoàn thiện khung pháp lý crypto. CEX cung cấp thanh khoản và bảo mật, DEX cung cấp self-custody." },
   { "question": "Rủi ro khi đầu tư Giao Dịch Quyền Chọn ETF Crypto là gì?", "answer": "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
   { "question": "Có gì thay đổi trong lĩnh vực Giao Dịch Quyền Chọn ETF Crypto năm 2026?", "answer": "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
   { "question": "Sử dụng Giao Dịch Quyền Chọn ETF Crypto tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
@@ -98,7 +100,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Giao Dịch Quyền Chọn ETF Crypto là gì và hoạt động như thế nào?", answer: "Giao Dịch Quyền Chọn ETF Crypto là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. CEX cung cấp thanh khoản và bảo mật, DEX cung cấp self-custody. Proof-of-reserves đang trở thành tiêu chuẩn cho các sàn CEX. Năm 2026, MiCA của EU có hiệu lực, SEC và CFTC phân chia thẩm quyền tại Mỹ." },
+                  { question: "Giao Dịch Quyền Chọn ETF Crypto là gì và hoạt động như thế nào?", answer: "Giao Dịch Quyền Chọn ETF Crypto là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. Năm 2026, MiCA của EU có hiệu lực, SEC và CFTC phân chia thẩm quyền tại Mỹ. Việt Nam đang hoàn thiện khung pháp lý crypto. CEX cung cấp thanh khoản và bảo mật, DEX cung cấp self-custody." },
                   { question: "Rủi ro khi đầu tư Giao Dịch Quyền Chọn ETF Crypto là gì?", answer: "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
                   { question: "Có gì thay đổi trong lĩnh vực Giao Dịch Quyền Chọn ETF Crypto năm 2026?", answer: "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
                   { question: "Sử dụng Giao Dịch Quyền Chọn ETF Crypto tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }

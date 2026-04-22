@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Cho Vay Crypto Tổ Chức — So Sánh Nền Tảng Vay Crypto | Degen0x",
   description: "So sánh Cho Vay Crypto Tổ Chức: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",

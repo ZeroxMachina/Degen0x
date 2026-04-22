@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Monitor Real-Time P&L — Estratégia de Investimento e Análise de Mercado 2026 | Degen0x",
   description: "Guia de investimento em Monitor Real-Time P&L: estratégias de portfólio, gestão de riscos, análise técnica e perspectivas de mercado 2026.",

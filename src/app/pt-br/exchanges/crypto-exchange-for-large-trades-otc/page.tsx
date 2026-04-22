@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Exchange For Large Trades OTC: Taxas, Segurança e Experiência do Usuário | Degen0x",
   description: "Análise da exchange Crypto Exchange For Large Trades OTC: taxas de negociação, segurança, criptos suportadas e opções de depósito/saque em BRL via PIX. Avaliaçã",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bitcoin Liquid Staking Tokens: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre Bitcoin Liquid Staking Tokens. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Bitcoin Liquid Staking Tokens e como funciona?", "answer": "Bitcoin Liquid Staking Tokens é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Bitcoin tem oferta limitada a 21 milhões e halving a cada 4 anos. Após o halving 2024, recompensa caiu para 3.125 BTC, Lightning Network permite pagamentos instantâneos." },
+  { "question": "O que é Bitcoin Liquid Staking Tokens e como funciona?", "answer": "Bitcoin Liquid Staking Tokens é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Mais de 25% da oferta de ETH está em stake. Lido, Rocket Pool e EigenLayer restaking permitem proteger múltiplos protocolos, aumentando eficiência de capital." },
   { "question": "Quais são os riscos de investir em Bitcoin Liquid Staking Tokens?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
   { "question": "O que mudou em Bitcoin Liquid Staking Tokens em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
   { "question": "Como usar Bitcoin Liquid Staking Tokens no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
@@ -98,7 +100,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Bitcoin Liquid Staking Tokens e como funciona?", answer: "Bitcoin Liquid Staking Tokens é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Bitcoin tem oferta limitada a 21 milhões e halving a cada 4 anos. Após o halving 2024, recompensa caiu para 3.125 BTC, Lightning Network permite pagamentos instantâneos." },
+                  { question: "O que é Bitcoin Liquid Staking Tokens e como funciona?", answer: "Bitcoin Liquid Staking Tokens é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Mais de 25% da oferta de ETH está em stake. Lido, Rocket Pool e EigenLayer restaking permitem proteger múltiplos protocolos, aumentando eficiência de capital." },
                   { question: "Quais são os riscos de investir em Bitcoin Liquid Staking Tokens?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
                   { question: "O que mudou em Bitcoin Liquid Staking Tokens em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
                   { question: "Como usar Bitcoin Liquid Staking Tokens no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Cold Depolama Strategies for Crypto — Uzun Vadeli Kripto Stratejisi | Degen0x",
   description: "Cold Depolama Strategies for Crypto: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl yaklaşımı.",

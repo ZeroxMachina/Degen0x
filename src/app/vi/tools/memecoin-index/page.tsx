@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Meme Coin Index — Công Cụ Crypto Miễn Phí | Degen0x",
   description: "Sử dụng công cụ Meme Coin Index miễn phí. Phân tích thị trường crypto, tính toán và đưa ra quyết định sáng suốt. Không cần đăng ký.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Meme Coin Index là gì và hoạt động như thế nào?", "answer": "Meme Coin Index là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh. Meme coin tăng giá nhờ cộng đồng và viral." },
+  { "question": "Meme Coin Index là gì và hoạt động như thế nào?", "answer": "Meme Coin Index là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. Meme coin tăng giá nhờ cộng đồng và viral. Tuy nhiên 95%+ mất giá — chỉ giao dịch số tiền chấp nhận mất và kiểm tra thanh khoản. TVL DeFi vượt \$200 tỷ năm 2026." },
   { "question": "Rủi ro khi đầu tư Meme Coin Index là gì?", "answer": "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
   { "question": "Có gì thay đổi trong lĩnh vực Meme Coin Index năm 2026?", "answer": "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
   { "question": "Sử dụng Meme Coin Index tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Meme Coin Index là gì và hoạt động như thế nào?", answer: "Meme Coin Index là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh. Meme coin tăng giá nhờ cộng đồng và viral." },
+                  { question: "Meme Coin Index là gì và hoạt động như thế nào?", answer: "Meme Coin Index là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. Meme coin tăng giá nhờ cộng đồng và viral. Tuy nhiên 95%+ mất giá — chỉ giao dịch số tiền chấp nhận mất và kiểm tra thanh khoản. TVL DeFi vượt \$200 tỷ năm 2026." },
                   { question: "Rủi ro khi đầu tư Meme Coin Index là gì?", answer: "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
                   { question: "Có gì thay đổi trong lĩnh vực Meme Coin Index năm 2026?", answer: "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
                   { question: "Sử dụng Meme Coin Index tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }

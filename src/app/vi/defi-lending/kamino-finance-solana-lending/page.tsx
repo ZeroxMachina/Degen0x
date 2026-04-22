@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Kamino Finance Solana Cho Vay — Hướng Dẫn Crypto Toàn Diện 2026 | Degen0x",
   description: "Hướng dẫn toàn diện về Kamino Finance Solana Cho Vay bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dị",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Kamino Finance Solana Cho Vay là gì và hoạt động như thế nào?", "answer": "Kamino Finance Solana Cho Vay là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh. Solana đạt 65,000+ TPS lý thuyết với phí \$0.00025." },
+  { "question": "Kamino Finance Solana Cho Vay là gì và hoạt động như thế nào?", "answer": "Kamino Finance Solana Cho Vay là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. Solana đạt 65,000+ TPS lý thuyết với phí \$0.00025. Jupiter aggregator là trung tâm DeFi, Firedancer validator client tăng khả năng chịu tải. TVL DeFi vượt \$200 tỷ năm 2026." },
   { "question": "Rủi ro khi đầu tư Kamino Finance Solana Cho Vay là gì?", "answer": "Rủi ro chính: lỗ hổng hợp đồng thông minh, biến động thị trường (dao động 20%+ mỗi ngày là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Nên đa dạng hóa danh mục và sử dụng stop-loss." },
   { "question": "Có gì thay đổi trong lĩnh vực Kamino Finance Solana Cho Vay năm 2026?", "answer": "Năm 2026: quy định MiCA của EU có hiệu lực, Bitcoin spot ETF phổ biến toàn cầu, Ethereum hoàn thành nâng cấp Pectra và DeFi tổ chức tăng trưởng mạnh. Kamino Finance Solana Cho Vay chịu ảnh hưởng trực tiếp từ các phát triển này." },
   { "question": "Sử dụng Kamino Finance Solana Cho Vay tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
@@ -71,7 +73,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kamino Finance Solana Cho Vay Là Gì?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kamino Finance Solana Cho Vay là một trong những thành phần cốt lõi của hệ sinh thái crypto và blockchain. Công nghệ này cho phép người dùng thực hiện giao dịch minh bạch, không cần trung gian nhờ kiến trúc phi tập trung. Tính đến năm 2026, các chỉ số như TVL, số lượng người dùng và hoạt động phát triển trong lĩnh vực Kamino Finance Solana Cho Vay đã tăng trưởng đáng kể. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh. Solana đạt 65,000+ TPS lý thuyết với phí \$0.00025. Jupiter aggregator là trung tâm DeFi, Firedancer validator client tăng khả năng chịu tải.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kamino Finance Solana Cho Vay là một trong những thành phần cốt lõi của hệ sinh thái crypto và blockchain. Công nghệ này cho phép người dùng thực hiện giao dịch minh bạch, không cần trung gian nhờ kiến trúc phi tập trung. Tính đến năm 2026, các chỉ số như TVL, số lượng người dùng và hoạt động phát triển trong lĩnh vực Kamino Finance Solana Cho Vay đã tăng trưởng đáng kể. Solana đạt 65,000+ TPS lý thuyết với phí \$0.00025. Jupiter aggregator là trung tâm DeFi, Firedancer validator client tăng khả năng chịu tải. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh.</p>
             </section>
 
             <section className="mb-10">
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Kamino Finance Solana Cho Vay là gì và hoạt động như thế nào?", answer: "Kamino Finance Solana Cho Vay là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh. Solana đạt 65,000+ TPS lý thuyết với phí \$0.00025." },
+                  { question: "Kamino Finance Solana Cho Vay là gì và hoạt động như thế nào?", answer: "Kamino Finance Solana Cho Vay là hệ thống phi tập trung được xây dựng trên công nghệ blockchain. Thông qua hợp đồng thông minh, cho phép thực hiện giao dịch không cần trung gian và đóng vai trò quan trọng trong hệ sinh thái crypto. Solana đạt 65,000+ TPS lý thuyết với phí \$0.00025. Jupiter aggregator là trung tâm DeFi, Firedancer validator client tăng khả năng chịu tải. TVL DeFi vượt \$200 tỷ năm 2026." },
                   { question: "Rủi ro khi đầu tư Kamino Finance Solana Cho Vay là gì?", answer: "Rủi ro chính: lỗ hổng hợp đồng thông minh, biến động thị trường (dao động 20%+ mỗi ngày là bình thường), bất ổn pháp lý và rủi ro thanh khoản. Nên đa dạng hóa danh mục và sử dụng stop-loss." },
                   { question: "Có gì thay đổi trong lĩnh vực Kamino Finance Solana Cho Vay năm 2026?", answer: "Năm 2026: quy định MiCA của EU có hiệu lực, Bitcoin spot ETF phổ biến toàn cầu, Ethereum hoàn thành nâng cấp Pectra và DeFi tổ chức tăng trưởng mạnh. Kamino Finance Solana Cho Vay chịu ảnh hưởng trực tiếp từ các phát triển này." },
                   { question: "Sử dụng Kamino Finance Solana Cho Vay tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }

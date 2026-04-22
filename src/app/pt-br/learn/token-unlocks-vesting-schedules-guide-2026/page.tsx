@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Desbloqueio de Tokens & Cronogramas de Vesting: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre Desbloqueio de Tokens & Cronogramas de Vesting. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia compl",

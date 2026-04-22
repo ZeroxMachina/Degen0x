@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Opensea Pro: Phân Tích Hệ Sinh Thái và Lộ Trình 2026 | Degen0x",
   description: "Phân tích hệ sinh thái Opensea Pro: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",

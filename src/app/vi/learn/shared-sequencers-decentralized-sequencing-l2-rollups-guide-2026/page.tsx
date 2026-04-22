@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Shared Sequencers & Phi Tập Trung Sequencing for L2 Rollups: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
   description: "Mọi thứ bạn cần biết về Shared Sequencers & Phi Tập Trung Sequencing for L2 Rollups. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi t",

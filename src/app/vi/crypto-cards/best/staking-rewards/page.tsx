@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Thẻ with Staking Rewards — So Sánh và Đánh Giá Thẻ Crypto | Degen0x",
   description: "So sánh Thẻ with Staking Rewards: phí hàng năm, tỷ lệ hoàn tiền, quốc gia hỗ trợ và trải nghiệm sử dụng tại Việt Nam.",

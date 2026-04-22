@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Cold Lưu Trữ Strategies for Crypto — Chiến Lược Crypto Dài Hạn | Degen0x",
   description: "Cold Lưu Trữ Strategies for Crypto: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",

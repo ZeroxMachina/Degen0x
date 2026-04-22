@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "For Derivatives Trading — Comparação e Análise Detalhada | Degen0x",
   description: "For Derivatives Trading: comparação de recursos, análise de desempenho e qual escolher — guia detalhado.",

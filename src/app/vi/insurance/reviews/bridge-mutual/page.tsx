@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bridge Mutual — Hướng Dẫn Bảo Hiểm DeFi 2026 | Degen0x",
   description: "Bridge Mutual: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh.",

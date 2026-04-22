@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Chainlink vs Pyth vs Band — Comparação e Análise Detalhada | Degen0x",
   description: "Chainlink vs Pyth vs Band: comparação de recursos, análise de desempenho e qual escolher — guia detalhado.",

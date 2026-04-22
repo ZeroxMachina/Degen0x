@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Dividend & Revenue-Sharing Crypto Tokens — Estratégia Cripto de Longo Prazo | Degen0x",
   description: "Dividend & Revenue-Sharing Crypto Tokens: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem hodl.",

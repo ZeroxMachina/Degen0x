@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Undercollateralized DeFi Kredi & On-Chain Credit: 2026 Kapsamlı Türkçe Rehber | Degen0x",
   description: "Undercollateralized DeFi Kredi & On-Chain Credit hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kaps",
@@ -71,12 +73,12 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Undercollateralized DeFi Kredi & On-Chain Credit Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Undercollateralized DeFi Kredi & On-Chain Credit, kripto ve blokzincir alanının temel yapı taşlarından biridir. Bu teknoloji, merkezi olmayan mimarisi sayesinde kullanıcılara aracısız ve şeffaf işlem yapma imkanı sunar. 2026 yılı itibarıyla Undercollateralized DeFi Kredi & On-Chain Credit alanında TVL, kullanıcı sayısı ve geliştirici aktivitesi gibi metriklerde belirgin artışlar gözlemlenmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Ethereum, DeFi ekosisteminin %60\'ından fazlasına ev sahipliği yapar. 2026 Pectra güncellemesi account abstraction ve blob kapasitesini artırarak Layer 2 maliyetlerini düşürmüştür.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Undercollateralized DeFi Kredi & On-Chain Credit, kripto ve blokzincir alanının temel yapı taşlarından biridir. Bu teknoloji, merkezi olmayan mimarisi sayesinde kullanıcılara aracısız ve şeffaf işlem yapma imkanı sunar. 2026 yılı itibarıyla Undercollateralized DeFi Kredi & On-Chain Credit alanında TVL, kullanıcı sayısı ve geliştirici aktivitesi gibi metriklerde belirgin artışlar gözlemlenmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Kripto teminatlı kredilerde LTV oranı, likidasyon eşiği ve faiz modeli temel kriterlerdir. Aave ve Compound\'da akıllı sözleşme riski değerlendirilmelidir.</p>
             </section>
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Teknik Altyapı ve Çalışma Prensibi</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Undercollateralized DeFi Kredi & On-Chain Credit sistemi, kriptografik hash fonksiyonları, dijital imzalar ve konsensüs mekanizmaları üzerine inşa edilmiştir. Akıllı sözleşmeler, kodla tanımlanmış kurallar çerçevesinde otomatik işlem yürütür. Bu yapı, geleneksel finansal aracılara olan ihtiyacı ortadan kaldırarak işlem maliyetlerini düşürür ve hızı artırır. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Ethereum, DeFi ekosisteminin %60\'ından fazlasına ev sahipliği yapar. 2026 Pectra güncellemesi account abstraction ve blob kapasitesini artırarak Layer 2 maliyetlerini düşürmüştür.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Undercollateralized DeFi Kredi & On-Chain Credit sistemi, kriptografik hash fonksiyonları, dijital imzalar ve konsensüs mekanizmaları üzerine inşa edilmiştir. Akıllı sözleşmeler, kodla tanımlanmış kurallar çerçevesinde otomatik işlem yürütür. Bu yapı, geleneksel finansal aracılara olan ihtiyacı ortadan kaldırarak işlem maliyetlerini düşürür ve hızı artırır. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Kripto teminatlı kredilerde LTV oranı, likidasyon eşiği ve faiz modeli temel kriterlerdir. Aave ve Compound\'da akıllı sözleşme riski değerlendirilmelidir.</p>
             </section>
 
             <section className="mb-10">

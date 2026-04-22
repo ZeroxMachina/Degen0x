@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Unslashed Finance — DeFi Sigorta Rehberi 2026 | Degen0x",
   description: "Unslashed Finance: DeFi sigorta protokolleri, kapsam karşılaştırması ve akıllı sözleşme risk değerlendirmesi.",

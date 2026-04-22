@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Raydium Solana AMM: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre Raydium Solana AMM. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Raydium Solana AMM e como funciona?", "answer": "Raydium Solana AMM é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
+  { "question": "O que é Raydium Solana AMM e como funciona?", "answer": "Raydium Solana AMM é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. TVL DeFi ultrapassou \$200 bilhões em 2026." },
   { "question": "Quais são os riscos de investir em Raydium Solana AMM?", "answer": "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
   { "question": "O que mudou em Raydium Solana AMM em 2026?", "answer": "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
   { "question": "Como usar Raydium Solana AMM no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
@@ -98,7 +100,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Raydium Solana AMM e como funciona?", answer: "Raydium Solana AMM é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
+                  { question: "O que é Raydium Solana AMM e como funciona?", answer: "Raydium Solana AMM é uma tecnologia que permite transações seguras e transparentes no ecossistema de ativos digitais. Graças a algoritmos criptográficos e arquitetura distribuída, dispensa autoridade central. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. TVL DeFi ultrapassou \$200 bilhões em 2026." },
                   { question: "Quais são os riscos de investir em Raydium Solana AMM?", answer: "Riscos a observar: exploits de código, ataques de flash loan, manipulação de oracle, risco de rug pull e manipulação de mercado. Invista apenas em projetos auditados e evite concentração excessiva." },
                   { question: "O que mudou em Raydium Solana AMM em 2026?", answer: "Desenvolvimentos 2026: crescimento de tokenização RWA, integrações AI-blockchain, ascensão de DePIN e adoção de arquitetura blockchain modular." },
                   { question: "Como usar Raydium Solana AMM no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }

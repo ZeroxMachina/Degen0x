@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "NFT Utility Beyond Art — Hướng Dẫn NFT và Phân Tích Thị Trường 2026 | Degen0x",
   description: "NFT Utility Beyond Art: phân tích bộ sưu tập, xu hướng thị trường, hướng dẫn mint và hệ sinh thái NFT 2026.",

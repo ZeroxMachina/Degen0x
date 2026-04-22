@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "vs Paid Crypto Tax Software — Kripto Vergi Rehberi ve Araçları | Degen0x",
   description: "vs Paid Crypto Tax Software: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto gelirleri gelir vergisine tabidi",

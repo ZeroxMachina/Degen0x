@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bitcoin Travel Booking — Hướng Dẫn Thanh Toán Bằng Crypto | Degen0x",
   description: "Bitcoin Travel Booking: phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.",

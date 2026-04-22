@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Inheritance Planning — Uzun Vadeli Kripto Stratejisi | Degen0x",
   description: "Crypto Inheritance Planning: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl yaklaşımı.",

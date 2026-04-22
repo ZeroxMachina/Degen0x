@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto.com vs Binance: Đánh Giá Phí, Bảo Mật và Trải Nghiệm Người Dùng | Degen0x",
   description: "Đánh giá sàn Crypto.com vs Binance: phí giao dịch, bảo mật, tiền được hỗ trợ và tùy chọn nạp/rút VND. So sánh chi tiết cho nhà đầu tư Việt Nam.",

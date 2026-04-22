@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bitcoin-Backed Empréstimos — Comparação de Plataformas de Empréstimo Cripto | Degen0x",
   description: "Comparação Bitcoin-Backed Empréstimos: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade da plataforma.",

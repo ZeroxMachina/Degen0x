@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Trading Cursos Online — Curso de Criptomoedas | Degen0x",
   description: "Guia completo sobre Trading Cursos Online em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Lei 1",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Kamino Finance Solana Kredi — Kapsamlı Kripto Rehberi 2026 | Degen0x",
   description: "Kamino Finance Solana Kredi hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihtiyacını",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Kamino Finance Solana Kredi nedir ve nasıl çalışır?", "answer": "Kamino Finance Solana Kredi, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Solana, 65." },
+  { "question": "Kamino Finance Solana Kredi nedir ve nasıl çalışır?", "answer": "Kamino Finance Solana Kredi, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Solana, 65.000+ TPS kapasitesi ve ortalama \$0.00025 işlem ücreti ile en hızlı L1\'lerden biridir. Jupiter aggregator ve Firedancer validator client ekosistemi güçlendirmektedir." },
   { "question": "Kamino Finance Solana Kredi yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
   { "question": "2026\'da Kamino Finance Solana Kredi alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
   { "question": "Türkiye\'den Kamino Finance Solana Kredi nasıl kullanılır?", "answer": "Türkiye\'de Kamino Finance Solana Kredi kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
@@ -71,7 +73,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Kamino Finance Solana Kredi Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Kamino Finance Solana Kredi stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Kamino Finance Solana Kredi kullanım alanını genişletmektedir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Solana, 65.000+ TPS kapasitesi ve ortalama \$0.00025 işlem ücreti ile en hızlı L1\'lerden biridir. Jupiter aggregator ve Firedancer validator client ekosistemi güçlendirmektedir.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Kamino Finance Solana Kredi stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Kamino Finance Solana Kredi kullanım alanını genişletmektedir. Solana, 65.000+ TPS kapasitesi ve ortalama \$0.00025 işlem ücreti ile en hızlı L1\'lerden biridir. Jupiter aggregator ve Firedancer validator client ekosistemi güçlendirmektedir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır.</p>
             </section>
 
             <section className="mb-10">
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Kamino Finance Solana Kredi nedir ve nasıl çalışır?", answer: "Kamino Finance Solana Kredi, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Solana, 65." },
+                  { question: "Kamino Finance Solana Kredi nedir ve nasıl çalışır?", answer: "Kamino Finance Solana Kredi, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Solana, 65.000+ TPS kapasitesi ve ortalama \$0.00025 işlem ücreti ile en hızlı L1\'lerden biridir. Jupiter aggregator ve Firedancer validator client ekosistemi güçlendirmektedir." },
                   { question: "Kamino Finance Solana Kredi yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
                   { question: "2026\'da Kamino Finance Solana Kredi alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
                   { question: "Türkiye\'den Kamino Finance Solana Kredi nasıl kullanılır?", answer: "Türkiye\'de Kamino Finance Solana Kredi kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "PARITY Act Crypto Tax Reform: 2026 Kapsamlı Türkçe Rehber | Degen0x",
   description: "PARITY Act Crypto Tax Reform hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",

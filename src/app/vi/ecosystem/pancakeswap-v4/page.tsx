@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Pancakeswap V4: Phân Tích Hệ Sinh Thái và Lộ Trình 2026 | Degen0x",
   description: "Phân tích hệ sinh thái Pancakeswap V4: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",

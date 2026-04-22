@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Solidity Smart Contract Cursos — Curso de Criptomoedas | Degen0x",
   description: "Guia completo sobre Solidity Smart Contract Cursos em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoed",

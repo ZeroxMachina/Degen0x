@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Carteiras in Canada — Segurança, Recursos e Avaliação 2026 | Degen0x",
   description: "Análise da carteira Carteiras in Canada: arquitetura de segurança, blockchains suportadas, facilidade de uso e comparação com Trust Wallet, MetaMask e Ledger sã",

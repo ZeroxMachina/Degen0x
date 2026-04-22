@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Polygon vs Arbitrum vs Optimism — Comparação e Análise Detalhada | Degen0x",
   description: "Polygon vs Arbitrum vs Optimism: comparação de recursos, análise de desempenho e qual escolher — guia detalhado.",

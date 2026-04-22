@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "TaxBit vs CoinTracker — Kripto Vergi Rehberi ve Araçları | Degen0x",
   description: "TaxBit vs CoinTracker: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto gelirleri gelir vergisine tabidir — de",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Kartlar with Staking Rewards — Kripto Kart Karşılaştırma ve İnceleme | Degen0x",
   description: "Kartlar with Staking Rewards karşılaştırması: yıllık ücretler, cashback oranları, desteklenen ülkeler ve Türkiye\'de kripto kartlar Mastercard veya Visa ağı üzer",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Solend Solana Empréstimo — Guia Completo de Cripto 2026 | Degen0x",
   description: "Guia completo sobre Solend Solana Empréstimo em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Criptomoedas (Le",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Solend Solana Empréstimo e como funciona?", "answer": "Solend Solana Empréstimo é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
+  { "question": "O que é Solend Solana Empréstimo e como funciona?", "answer": "Solend Solana Empréstimo é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. TVL DeFi ultrapassou \$200 bilhões em 2026." },
   { "question": "Quais são os riscos de investir em Solend Solana Empréstimo?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
   { "question": "O que mudou em Solend Solana Empréstimo em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
   { "question": "Como usar Solend Solana Empréstimo no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Solend Solana Empréstimo e como funciona?", answer: "Solend Solana Empréstimo é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. TVL DeFi ultrapassou \$200 bilhões em 2026. Aave v4, Uniswap v4 hooks e Pendle oferecem produtos financeiros de nova geração com DeFi institucional crescendo." },
+                  { question: "O que é Solend Solana Empréstimo e como funciona?", answer: "Solend Solana Empréstimo é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Solana alcança 65,000+ TPS teórico com taxa média de \$0.00025. Jupiter aggregator é o centro DeFi, Firedancer aumenta resiliência da rede. TVL DeFi ultrapassou \$200 bilhões em 2026." },
                   { question: "Quais são os riscos de investir em Solend Solana Empréstimo?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
                   { question: "O que mudou em Solend Solana Empréstimo em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
                   { question: "Como usar Solend Solana Empréstimo no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }

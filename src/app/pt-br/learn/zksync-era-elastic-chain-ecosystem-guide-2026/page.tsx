@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "zkSync Era Elastic Chain Ecossistema: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre zkSync Era Elastic Chain Ecossistema. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em por",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Altcoin ETF — Ücretsiz Kripto Aracı | Degen0x",
   description: "Altcoin ETF aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",

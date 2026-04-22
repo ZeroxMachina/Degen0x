@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Overcollateralized vs Undercollateralized DeFi Cho Vay — Hướng Dẫn Crypto Toàn Diện 2026 | Degen0x",
   description: "Hướng dẫn toàn diện về Overcollateralized vs Undercollateralized DeFi Cho Vay bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện t",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Overcollateralized vs Undercollateralized DeFi Cho Vay là gì và hoạt động như thế nào?", "answer": "Overcollateralized vs Undercollateralized DeFi Cho Vay là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh. Ethereum lưu trữ hơn 60% TVL DeFi toàn cầu." },
+  { "question": "Overcollateralized vs Undercollateralized DeFi Cho Vay là gì và hoạt động như thế nào?", "answer": "Overcollateralized vs Undercollateralized DeFi Cho Vay là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
   { "question": "Rủi ro khi đầu tư Overcollateralized vs Undercollateralized DeFi Cho Vay là gì?", "answer": "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
   { "question": "Có gì thay đổi trong lĩnh vực Overcollateralized vs Undercollateralized DeFi Cho Vay năm 2026?", "answer": "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
   { "question": "Sử dụng Overcollateralized vs Undercollateralized DeFi Cho Vay tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Overcollateralized vs Undercollateralized DeFi Cho Vay là gì và hoạt động như thế nào?", answer: "Overcollateralized vs Undercollateralized DeFi Cho Vay là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh. Ethereum lưu trữ hơn 60% TVL DeFi toàn cầu." },
+                  { question: "Overcollateralized vs Undercollateralized DeFi Cho Vay là gì và hoạt động như thế nào?", answer: "Overcollateralized vs Undercollateralized DeFi Cho Vay là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh." },
                   { question: "Rủi ro khi đầu tư Overcollateralized vs Undercollateralized DeFi Cho Vay là gì?", answer: "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
                   { question: "Có gì thay đổi trong lĩnh vực Overcollateralized vs Undercollateralized DeFi Cho Vay năm 2026?", answer: "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
                   { question: "Sử dụng Overcollateralized vs Undercollateralized DeFi Cho Vay tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }

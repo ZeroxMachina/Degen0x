@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "LayerZero Omnichain Interoperabilidade Protocolo: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre LayerZero Omnichain Interoperabilidade Protocolo. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia com",

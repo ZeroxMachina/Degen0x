@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Keystone Cüzdan & QR-code signing — Güvenlik, Özellikler ve 2026 Değerlendirmesi | Degen0x",
   description: "Keystone Cüzdan & QR-code signing cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk k",

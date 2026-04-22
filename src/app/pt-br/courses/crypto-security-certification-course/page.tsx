@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Security Certification Cursos — Curso de Criptomoedas | Degen0x",
   description: "Guia completo sobre Crypto Security Certification Cursos em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Crip",

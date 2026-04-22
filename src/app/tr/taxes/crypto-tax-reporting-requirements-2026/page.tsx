@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Tax Reporting — Kripto Vergi Rehberi ve Araçları | Degen0x",
   description: "Crypto Tax Reporting: kripto vergi yükümlülükleri, beyanname hazırlığı ve vergi optimizasyon araçları. Türkiye\'de kripto gelirleri gelir vergisine tabidir — det",

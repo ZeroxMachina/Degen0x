@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Ethereum Price Prediction — Estratégia Cripto de Longo Prazo | Degen0x",
   description: "Ethereum Price Prediction: estratégias de investimento cripto de longo prazo, diversificação de portfólio e abordagem hodl.",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bitcoin Surges Past \$88K as Tổ Chức Demand Accelerates — Công Cụ Crypto Miễn Phí | Degen0x",
   description: "Sử dụng công cụ Bitcoin Surges Past \$88K as Tổ Chức Demand Accelerates miễn phí. Phân tích thị trường crypto, tính toán và đưa ra quyết định sáng suốt. Không cầ",

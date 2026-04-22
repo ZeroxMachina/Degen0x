@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Nexus Mutual Smart Contract Cover — Guia de Seguros DeFi 2026 | Degen0x",
   description: "Nexus Mutual Smart Contract Cover: protocolos de seguro DeFi, comparação de cobertura e avaliação de risco de contratos inteligentes.",

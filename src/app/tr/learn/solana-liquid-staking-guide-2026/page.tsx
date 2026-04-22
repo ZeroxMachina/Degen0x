@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Solana Liquid Staking: 2026 Kapsamlı Türkçe Rehber | Degen0x",
   description: "Solana Liquid Staking hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Solana Liquid Staking nedir ve nasıl çalışır?", "answer": "Solana Liquid Staking, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Solana, 65.000+ TPS kapasitesi ve ortalama \$0.00025 işlem ücreti ile en hızlı L1\'lerden biridir. Jupiter aggregator ve Firedancer validator client ekosistemi güçlendirmektedir." },
+  { "question": "Solana Liquid Staking nedir ve nasıl çalışır?", "answer": "Solana Liquid Staking, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır. Solana, 65." },
   { "question": "Solana Liquid Staking yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
   { "question": "2026\'da Solana Liquid Staking alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
   { "question": "Türkiye\'den Solana Liquid Staking nasıl kullanılır?", "answer": "Türkiye\'de Solana Liquid Staking kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
@@ -71,7 +73,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Solana Liquid Staking Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Solana Liquid Staking stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Solana Liquid Staking kullanım alanını genişletmektedir. Solana, 65.000+ TPS kapasitesi ve ortalama \$0.00025 işlem ücreti ile en hızlı L1\'lerden biridir. Jupiter aggregator ve Firedancer validator client ekosistemi güçlendirmektedir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Solana Liquid Staking stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Solana Liquid Staking kullanım alanını genişletmektedir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır. Solana, 65.000+ TPS kapasitesi ve ortalama \$0.00025 işlem ücreti ile en hızlı L1\'lerden biridir. Jupiter aggregator ve Firedancer validator client ekosistemi güçlendirmektedir.</p>
             </section>
 
             <section className="mb-10">
@@ -98,7 +100,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Solana Liquid Staking nedir ve nasıl çalışır?", answer: "Solana Liquid Staking, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Solana, 65.000+ TPS kapasitesi ve ortalama \$0.00025 işlem ücreti ile en hızlı L1\'lerden biridir. Jupiter aggregator ve Firedancer validator client ekosistemi güçlendirmektedir." },
+                  { question: "Solana Liquid Staking nedir ve nasıl çalışır?", answer: "Solana Liquid Staking, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır. Solana, 65." },
                   { question: "Solana Liquid Staking yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
                   { question: "2026\'da Solana Liquid Staking alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
                   { question: "Türkiye\'den Solana Liquid Staking nasıl kullanılır?", answer: "Türkiye\'de Solana Liquid Staking kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }

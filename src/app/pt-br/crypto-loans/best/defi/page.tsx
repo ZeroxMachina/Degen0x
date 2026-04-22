@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "DeFi Loan Plataformas — Comparação de Plataformas de Empréstimo Cripto | Degen0x",
   description: "Comparação DeFi Loan Plataformas: taxas de juros, requisitos de garantia, riscos de liquidação e confiabilidade da plataforma.",

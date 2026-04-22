@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "TON Blockchain Ekosistemi: Ekosistem Analizi ve 2026 Yol Haritası | Degen0x",
   description: "TON Blockchain Ekosistemi ekosistem analizi: TVL, aktif kullanıcılar, temel protokoller ve 2026 büyüme trendleri — Türkçe detaylı rehber.",

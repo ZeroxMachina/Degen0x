@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Purse.io — Hướng Dẫn Thanh Toán Bằng Crypto | Degen0x",
   description: "Purse.io: phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.",

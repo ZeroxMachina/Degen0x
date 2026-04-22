@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Quyền Chọn & On-Chain Derivatives: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
   description: "Mọi thứ bạn cần biết về Crypto Quyền Chọn & On-Chain Derivatives. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt",

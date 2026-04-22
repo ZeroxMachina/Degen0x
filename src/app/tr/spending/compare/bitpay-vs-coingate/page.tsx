@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "BitPay vs CoinGate — Kripto ile Ödeme Rehberi | Degen0x",
   description: "BitPay vs CoinGate: kripto ile ödeme yöntemleri, desteklenen platformlar ve günlük harcamalarda kripto kullanma rehberi.",

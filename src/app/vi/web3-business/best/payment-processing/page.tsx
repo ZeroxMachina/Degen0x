@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Thanh Toán Processors — Cơ Hội Kinh Doanh Web3 | Degen0x",
   description: "Thanh Toán Processors: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.",

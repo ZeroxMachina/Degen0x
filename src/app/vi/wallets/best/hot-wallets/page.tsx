@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Hot Ví — Bảo Mật, Tính Năng và Đánh Giá 2026 | Degen0x",
   description: "Đánh giá ví Hot Ví: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là những lựa chọn",

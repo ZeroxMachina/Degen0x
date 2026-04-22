@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Dài Hạn Crypto Strategies — Chiến Lược Crypto Dài Hạn | Degen0x",
   description: "Dài Hạn Crypto Strategies: chiến lược đầu tư crypto dài hạn, đa dạng hóa danh mục và phương pháp hodl.",

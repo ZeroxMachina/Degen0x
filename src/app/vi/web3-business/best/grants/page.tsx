@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Chương Trình Tài Trợ Web3 — Cơ Hội Kinh Doanh Web3 | Degen0x",
   description: "Chương Trình Tài Trợ Web3: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.",

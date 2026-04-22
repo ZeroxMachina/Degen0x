@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "FOCIL & Inclusion Lists on Ethereum: 2026 Kapsamlı Türkçe Rehber | Degen0x",
   description: "FOCIL & Inclusion Lists on Ethereum hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Kraken Staking — Yatırım Stratejisi ve Piyasa Analizi 2026 | Degen0x",
   description: "Kraken Staking yatırım rehberi: portföy stratejileri, risk yönetimi, teknik analiz ve 2026 piyasa görünümü. Türk yatırımcılar, SPK düzenlemeleri çerçevesinde kr",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bitcoin ETF inflows hit new weekly record — Ücretsiz Kripto Aracı | Degen0x",
   description: "Bitcoin ETF inflows hit new weekly record aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektir",

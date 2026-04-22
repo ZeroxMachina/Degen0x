@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Exodus vs Trust Carteira — Comparação e Análise Detalhada | Degen0x",
   description: "Exodus vs Trust Carteira: comparação de recursos, análise de desempenho e qual escolher — guia detalhado.",

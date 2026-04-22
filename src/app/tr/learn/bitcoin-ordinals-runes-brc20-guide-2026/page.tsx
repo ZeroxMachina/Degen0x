@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bitcoin Ordinals & Runes: 2026 Kapsamlı Türkçe Rehber | Degen0x",
   description: "Bitcoin Ordinals & Runes hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Bitcoin Ordinals & Runes nedir ve nasıl çalışır?", "answer": "Bitcoin Ordinals & Runes, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3." },
+  { "question": "Bitcoin Ordinals & Runes nedir ve nasıl çalışır?", "answer": "Bitcoin Ordinals & Runes, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. NFT pazarı 2026\'da royalty standartları, dinamik metadata ve cross-chain transferlerle olgunlaşmıştır. ERC-721C ve ERC-6551 yeni standartlar olarak öne çıkmaktadır." },
   { "question": "Bitcoin Ordinals & Runes yatırımında riskler nelerdir?", "answer": "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
   { "question": "2026\'da Bitcoin Ordinals & Runes alanında neler değişti?", "answer": "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
   { "question": "Türkiye\'den Bitcoin Ordinals & Runes nasıl kullanılır?", "answer": "Türkiye\'de Bitcoin Ordinals & Runes kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
@@ -71,7 +73,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Bitcoin Ordinals & Runes Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Bitcoin Ordinals & Runes stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Bitcoin Ordinals & Runes kullanım alanını genişletmektedir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3.125 BTC\'ye düşmüş, Lightning Network ile anlık ödemeler mümkün hale gelmiştir. NFT pazarı 2026\'da royalty standartları, dinamik metadata ve cross-chain transferlerle olgunlaşmıştır. ERC-721C ve ERC-6551 yeni standartlar olarak öne çıkmaktadır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Bitcoin Ordinals & Runes stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Bitcoin Ordinals & Runes kullanım alanını genişletmektedir. NFT pazarı 2026\'da royalty standartları, dinamik metadata ve cross-chain transferlerle olgunlaşmıştır. ERC-721C ve ERC-6551 yeni standartlar olarak öne çıkmaktadır. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3.125 BTC\'ye düşmüş, Lightning Network ile anlık ödemeler mümkün hale gelmiştir.</p>
             </section>
 
             <section className="mb-10">
@@ -98,7 +100,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Bitcoin Ordinals & Runes nedir ve nasıl çalışır?", answer: "Bitcoin Ordinals & Runes, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3." },
+                  { question: "Bitcoin Ordinals & Runes nedir ve nasıl çalışır?", answer: "Bitcoin Ordinals & Runes, Web3 altyapısının kritik bileşenlerinden biridir. Kullanıcıların varlıkları üzerinde tam kontrol sahibi olmasını sağlayan merkeziyetsiz protokoller üzerine inşa edilmiştir. NFT pazarı 2026\'da royalty standartları, dinamik metadata ve cross-chain transferlerle olgunlaşmıştır. ERC-721C ve ERC-6551 yeni standartlar olarak öne çıkmaktadır." },
                   { question: "Bitcoin Ordinals & Runes yatırımında riskler nelerdir?", answer: "Temel riskler arasında teknolojik hatalar, düzenleyici kısıtlamalar, karşı taraf riski (FTX benzeri platform çöküşleri) ve market maker manipülasyonu yer alır. Soğuk cüzdan kullanımı ve araştırma yapmak en iyi koruma yöntemleridir." },
                   { question: "2026\'da Bitcoin Ordinals & Runes alanında neler değişti?", answer: "2026 dönüm noktaları: CBDC pilotlarının genişlemesi, cross-chain interoperabilite çözümlerinin olgunlaşması, account abstraction\'ın yaygınlaşması ve zero-knowledge proof teknolojisinin pratik uygulamalara geçişi." },
                   { question: "Türkiye\'den Bitcoin Ordinals & Runes nasıl kullanılır?", answer: "Türkiye\'de Bitcoin Ordinals & Runes kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }

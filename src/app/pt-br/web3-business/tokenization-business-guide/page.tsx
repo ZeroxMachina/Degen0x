@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Mundo Real Asset Tokenization Negócios — Oportunidades de Negócios Web3 | Degen0x",
   description: "Mundo Real Asset Tokenization Negócios: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",

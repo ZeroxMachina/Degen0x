@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Contas de Poupança Cripto — Estratégia de Investimento e Análise de Mercado 2026 | Degen0x",
   description: "Guia de investimento em Contas de Poupança Cripto: estratégias de portfólio, gestão de riscos, análise técnica e perspectivas de mercado 2026.",

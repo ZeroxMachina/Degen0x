@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Solana Token Extensions & Token: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre Solana Token Extensions & Token. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em portuguê",

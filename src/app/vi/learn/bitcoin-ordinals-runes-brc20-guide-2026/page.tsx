@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bitcoin Ordinals & Runes: Hướng Dẫn Chi Tiết Tiếng Việt 2026 | Degen0x",
   description: "Mọi thứ bạn cần biết về Bitcoin Ordinals & Runes. Khái niệm cơ bản, cách hoạt động, rủi ro và cập nhật 2026 — hướng dẫn chi tiết bằng tiếng Việt.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Bitcoin Ordinals & Runes là gì và hoạt động như thế nào?", "answer": "Bitcoin Ordinals & Runes là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. Bitcoin có giới hạn cung 21 triệu và halving mỗi 4 năm tạo ra tính giảm phát. Sau halving 2024, phần thưởng block giảm còn 3.125 BTC, Lightning Network cho phép thanh toán tức thì." },
+  { "question": "Bitcoin Ordinals & Runes là gì và hoạt động như thế nào?", "answer": "Bitcoin Ordinals & Runes là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. Thị trường NFT 2026 trưởng thành với tiêu chuẩn royalty, metadata động và chuyển cross-chain. ERC-721C và ERC-6551 bổ sung chức năng mới." },
   { "question": "Rủi ro khi đầu tư Bitcoin Ordinals & Runes là gì?", "answer": "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
   { "question": "Có gì thay đổi trong lĩnh vực Bitcoin Ordinals & Runes năm 2026?", "answer": "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
   { "question": "Sử dụng Bitcoin Ordinals & Runes tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
@@ -98,7 +100,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Bitcoin Ordinals & Runes là gì và hoạt động như thế nào?", answer: "Bitcoin Ordinals & Runes là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. Bitcoin có giới hạn cung 21 triệu và halving mỗi 4 năm tạo ra tính giảm phát. Sau halving 2024, phần thưởng block giảm còn 3.125 BTC, Lightning Network cho phép thanh toán tức thì." },
+                  { question: "Bitcoin Ordinals & Runes là gì và hoạt động như thế nào?", answer: "Bitcoin Ordinals & Runes là thành phần quan trọng của hạ tầng Web3. Được xây dựng trên các giao thức phi tập trung, đảm bảo người dùng có toàn quyền kiểm soát tài sản của mình. Thị trường NFT 2026 trưởng thành với tiêu chuẩn royalty, metadata động và chuyển cross-chain. ERC-721C và ERC-6551 bổ sung chức năng mới." },
                   { question: "Rủi ro khi đầu tư Bitcoin Ordinals & Runes là gì?", answer: "Rủi ro cơ bản gồm lỗi công nghệ, hạn chế pháp lý, rủi ro đối tác (sụp đổ sàn như FTX) và thao túng market maker. Sử dụng cold wallet và nghiên cứu kỹ là biện pháp bảo vệ tốt nhất." },
                   { question: "Có gì thay đổi trong lĩnh vực Bitcoin Ordinals & Runes năm 2026?", answer: "Cột mốc 2026: mở rộng thử nghiệm CBDC, giải pháp interoperability cross-chain trưởng thành, account abstraction phổ biến và zero-knowledge proof ứng dụng thực tiễn." },
                   { question: "Sử dụng Bitcoin Ordinals & Runes tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Phi Tập Trung Autonomous Organization Công Cụ — Cơ Hội Kinh Doanh Web3 | Degen0x",
   description: "Phi Tập Trung Autonomous Organization Công Cụ: mô hình kinh doanh Web3, token economics và cấu trúc tổ chức phi tập trung.",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Tax Reporting — Hướng Dẫn Thuế Crypto và Công Cụ | Degen0x",
   description: "Crypto Tax Reporting: nghĩa vụ thuế crypto, chuẩn bị tờ khai và công cụ tối ưu thuế. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo ",

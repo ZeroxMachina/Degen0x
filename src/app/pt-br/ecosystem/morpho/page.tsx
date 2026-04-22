@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Morpho Matches Lenders & Borrowers P2P: Análise do Ecossistema e Roadmap 2026 | Degen0x",
   description: "Análise do ecossistema Morpho Matches Lenders & Borrowers P2P: TVL, usuários ativos, protocolos principais e tendências de crescimento 2026.",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto 60/40 Portföy Strategy — Yatırım Stratejisi ve Piyasa Analizi 2026 | Degen0x",
   description: "Crypto 60/40 Portföy Strategy yatırım rehberi: portföy stratejileri, risk yönetimi, teknik analiz ve 2026 piyasa görünümü. Türk yatırımcılar, SPK düzenlemeleri ",

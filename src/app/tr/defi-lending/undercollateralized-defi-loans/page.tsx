@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Undercollateralized DeFi Krediler — Kapsamlı Kripto Rehberi 2026 | Degen0x",
   description: "Undercollateralized DeFi Krediler hakkında kapsamlı Türkçe rehber. SPK ve MASAK düzenlemeleri çerçevesinde kripto dünyasında bilinçli kararlar almanız için ihti",
@@ -71,7 +73,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Undercollateralized DeFi Krediler Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Undercollateralized DeFi Krediler stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Undercollateralized DeFi Krediler kullanım alanını genişletmektedir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Ethereum, DeFi ekosisteminin %60\'ından fazlasına ev sahipliği yapar. 2026 Pectra güncellemesi account abstraction ve blob kapasitesini artırarak Layer 2 maliyetlerini düşürmüştür.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Kripto para ekosisteminde Undercollateralized DeFi Krediler stratejik bir konuma sahiptir. Açık kaynaklı geliştirme modeli ve topluluk yönetişim mekanizmaları sayesinde şeffaf bir yapı sunar. Ethereum, Solana ve diğer büyük ağlar üzerindeki entegrasyonları, Undercollateralized DeFi Krediler kullanım alanını genişletmektedir. DeFi protokollerinin toplam TVL\'si 2026\'da \$200 milyarı aşmıştır. Aave v4, Uniswap v4 hooks ve Pendle gibi yield tokenizasyon platformları yeni nesil finansal ürünler sunmaktadır. Kripto teminatlı kredilerde LTV oranı, likidasyon eşiği ve faiz modeli temel kriterlerdir. Aave ve Compound\'da akıllı sözleşme riski değerlendirilmelidir.</p>
             </section>
 
             <section className="mb-10">

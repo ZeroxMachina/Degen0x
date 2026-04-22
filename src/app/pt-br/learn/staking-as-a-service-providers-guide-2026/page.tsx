@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Staking-as-a-Service Providers: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre Staking-as-a-Service Providers. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em português",

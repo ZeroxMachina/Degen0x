@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "CoinTracker — Guia de Impostos Cripto e Ferramentas | Degen0x",
   description: "CoinTracker: obrigações fiscais cripto, preparação de declaração e ferramentas de otimização. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Based Rollups & Ethereum L1 Sequencing: Guia Completo em Português 2026 | Degen0x",
   description: "Tudo o que você precisa saber sobre Based Rollups & Ethereum L1 Sequencing. Conceitos básicos, como funciona, riscos e atualizações de 2026 — guia completo em p",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "DeFi Cho Vay vs Staking — Hướng Dẫn Crypto Toàn Diện 2026 | Degen0x",
   description: "Hướng dẫn toàn diện về DeFi Cho Vay vs Staking bằng tiếng Việt. Ngân hàng Nhà nước Việt Nam chưa chính thức công nhận tiền điện tử nhưng không cấm giao dịch cá ",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "DeFi Cho Vay vs Staking là gì và hoạt động như thế nào?", "answer": "DeFi Cho Vay vs Staking là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh. Hơn 25% tổng cung ETH đã được stake." },
+  { "question": "DeFi Cho Vay vs Staking là gì và hoạt động như thế nào?", "answer": "DeFi Cho Vay vs Staking là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. Hơn 25% tổng cung ETH đã được stake. Lido, Rocket Pool và EigenLayer restaking cho phép tài sản stake bảo vệ nhiều giao thức, tăng hiệu quả vốn. TVL DeFi vượt \$200 tỷ năm 2026." },
   { "question": "Rủi ro khi đầu tư DeFi Cho Vay vs Staking là gì?", "answer": "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
   { "question": "Có gì thay đổi trong lĩnh vực DeFi Cho Vay vs Staking năm 2026?", "answer": "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
   { "question": "Sử dụng DeFi Cho Vay vs Staking tại Việt Nam như thế nào?", "answer": "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Câu Hỏi Thường Gặp</h2>
               <div className="space-y-4">
                 {[
-                  { question: "DeFi Cho Vay vs Staking là gì và hoạt động như thế nào?", answer: "DeFi Cho Vay vs Staking là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. TVL DeFi vượt \$200 tỷ năm 2026. Aave v4, Uniswap v4 hooks và Pendle cung cấp sản phẩm tài chính thế hệ mới với DeFi tổ chức tăng trưởng mạnh. Hơn 25% tổng cung ETH đã được stake." },
+                  { question: "DeFi Cho Vay vs Staking là gì và hoạt động như thế nào?", answer: "DeFi Cho Vay vs Staking là công nghệ cho phép giao dịch an toàn và minh bạch trong hệ sinh thái tài sản số. Nhờ thuật toán mật mã và kiến trúc phân tán, không cần cơ quan trung ương. Hơn 25% tổng cung ETH đã được stake. Lido, Rocket Pool và EigenLayer restaking cho phép tài sản stake bảo vệ nhiều giao thức, tăng hiệu quả vốn. TVL DeFi vượt \$200 tỷ năm 2026." },
                   { question: "Rủi ro khi đầu tư DeFi Cho Vay vs Staking là gì?", answer: "Rủi ro cần chú ý: exploit code, tấn công flash loan, thao túng oracle, rủi ro rug pull và thao túng thị trường. Chỉ đầu tư vào dự án đã được audit và không tập trung quá nhiều vào một tài sản." },
                   { question: "Có gì thay đổi trong lĩnh vực DeFi Cho Vay vs Staking năm 2026?", answer: "Phát triển quan trọng 2026: tăng trưởng RWA tokenization, tích hợp AI-blockchain, sự nổi lên của DePIN và chấp nhận kiến trúc blockchain modular." },
                   { question: "Sử dụng DeFi Cho Vay vs Staking tại Việt Nam như thế nào?", answer: "Tại Việt Nam: 1) hoàn thành xác minh danh tính (KYC) trên sàn giao dịch uy tín, 2) chuyển khoản ngân hàng hoặc P2P để mua crypto bằng VND, 3) Chọn sàn phù hợp từ Remitano, VNDC và các sàn giao dịch phổ biến tại Việt Nam. Chính sách thuế crypto tại Việt Nam đang trong quá trình hoàn thiện — theo dõi quy định mới nhất từ Bộ Tài chính. Ghi chép tất cả giao dịch để báo cáo khi cần." }

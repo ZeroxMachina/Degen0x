@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Community Building — Oportunidades de Negócios Web3 | Degen0x",
   description: "Crypto Community Building: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Custody Bảo Hiểm — Hướng Dẫn Bảo Hiểm DeFi 2026 | Degen0x",
   description: "Crypto Custody Bảo Hiểm: giao thức bảo hiểm DeFi, so sánh phạm vi bảo hiểm và đánh giá rủi ro hợp đồng thông minh.",

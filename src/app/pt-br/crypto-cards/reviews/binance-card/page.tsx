@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Binance Cartão — Comparação e Análise de Cartões Cripto | Degen0x",
   description: "Comparação Binance Cartão: taxas anuais, cashback, países suportados e experiência de uso no Brasil.",

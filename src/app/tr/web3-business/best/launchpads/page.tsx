@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Token Lansman Platformları — Web3 İş Fırsatları ve Stratejiler | Degen0x",
   description: "Token Lansman Platformları: Web3 iş modelleri, token ekonomileri ve merkeziyetsiz organizasyon yapıları — girişimciler için rehber.",

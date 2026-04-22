@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "BENQI Krediler — Kripto Kredi Platformları Karşılaştırması | Degen0x",
   description: "BENQI Krediler karşılaştırması: faiz oranları, teminat gereksinimleri, likidite riskleri ve platform güvenilirliği.",

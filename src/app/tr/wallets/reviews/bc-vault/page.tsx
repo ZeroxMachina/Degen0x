@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "BC Vault — Güvenlik, Özellikler ve 2026 Değerlendirmesi | Degen0x",
   description: "BC Vault cüzdan incelemesi: güvenlik mimarisi, desteklenen blokzincirler, kullanım kolaylığı ve Trust Wallet, MetaMask ve Ledger Türk kullanıcılar arasında popü",

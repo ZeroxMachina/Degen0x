@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Programas de Subsídios Web3 — Oportunidades de Negócios Web3 | Degen0x",
   description: "Programas de Subsídios Web3: modelos de negócio Web3, tokenomics e estruturas de organização descentralizada.",

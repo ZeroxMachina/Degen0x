@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Dividend & Yield Earning Crypto — Uzun Vadeli Kripto Stratejisi | Degen0x",
   description: "Dividend & Yield Earning Crypto: uzun vadeli kripto yatırım stratejileri, portföy çeşitlendirme ve hodl yaklaşımı.",

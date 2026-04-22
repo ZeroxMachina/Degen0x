@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Portfólio Allocator — Ferramenta Cripto Gratuita | Degen0x",
   description: "Use a ferramenta Portfólio Allocator gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",

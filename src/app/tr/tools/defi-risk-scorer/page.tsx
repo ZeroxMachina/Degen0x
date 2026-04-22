@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "DEFI Risk Scorer — Ücretsiz Kripto Aracı | Degen0x",
   description: "DEFI Risk Scorer aracını ücretsiz kullanın. Kripto piyasasını analiz edin, hesaplamalar yapın ve bilinçli kararlar alın. Kayıt gerektirmez.",

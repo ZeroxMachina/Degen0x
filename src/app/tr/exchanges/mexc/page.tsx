@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "MEXC İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi | Degen0x",
   description: "MEXC borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekleri. Türk yatırımcılar için detaylı değerlend",

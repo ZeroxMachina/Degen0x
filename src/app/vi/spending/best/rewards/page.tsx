@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Rewards Thẻ — Hướng Dẫn Thanh Toán Bằng Crypto | Degen0x",
   description: "Rewards Thẻ: phương thức thanh toán bằng crypto, nền tảng hỗ trợ và hướng dẫn sử dụng crypto hàng ngày.",

@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Aave vs Maker vs Compound — So Sánh và Phân Tích Chi Tiết | Degen0x",
   description: "Aave vs Maker vs Compound: so sánh tính năng, phân tích hiệu suất và nên chọn cái nào — hướng dẫn chi tiết.",

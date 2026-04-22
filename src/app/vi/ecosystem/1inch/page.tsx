@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Go to app.1inch.io: Phân Tích Hệ Sinh Thái và Lộ Trình 2026 | Degen0x",
   description: "Phân tích hệ sinh thái Go to app.1inch.io: TVL, người dùng hoạt động, giao thức chính và xu hướng tăng trưởng 2026.",

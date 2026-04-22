@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "SuperRare — NFT Rehberi ve Piyasa Analizi 2026 | Degen0x",
   description: "SuperRare: koleksiyon analizi, pazar trendleri, minting rehberi ve 2026 NFT ekosistemi — Türkçe kapsamlı kılavuz.",

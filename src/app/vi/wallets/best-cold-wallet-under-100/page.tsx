@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Cold Ví Under \$100 — Bảo Mật, Tính Năng và Đánh Giá 2026 | Degen0x",
   description: "Đánh giá ví Cold Ví Under \$100: kiến trúc bảo mật, blockchain được hỗ trợ, dễ sử dụng và so sánh với Trust Wallet, MetaMask và Coin98 Wallet (ví Việt Nam) là nh",

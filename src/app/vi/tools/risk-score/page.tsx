@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Danh Mục Risk Scoring Engine — Công Cụ Crypto Miễn Phí | Degen0x",
   description: "Sử dụng công cụ Danh Mục Risk Scoring Engine miễn phí. Phân tích thị trường crypto, tính toán và đưa ra quyết định sáng suốt. Không cần đăng ký.",

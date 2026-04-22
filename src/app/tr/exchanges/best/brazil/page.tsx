@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Borsalar in Brazil İncelemesi: Ücretler, Güvenlik ve Kullanıcı Deneyimi | Degen0x",
   description: "Borsalar in Brazil borsa incelemesi: işlem ücretleri, güvenlik altyapısı, desteklenen kripto paralar ve TL yatırma/çekme seçenekleri. Türk yatırımcılar için det",

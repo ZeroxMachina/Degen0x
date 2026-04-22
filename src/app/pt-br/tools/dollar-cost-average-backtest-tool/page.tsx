@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "DCA Backtest Ferramenta — Ferramenta Cripto Gratuita | Degen0x",
   description: "Use a ferramenta DCA Backtest Ferramenta gratuitamente. Analise o mercado cripto, faça cálculos e tome decisões informadas. Sem necessidade de cadastro.",

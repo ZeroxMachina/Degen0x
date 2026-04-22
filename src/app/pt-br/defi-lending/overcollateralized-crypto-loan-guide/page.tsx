@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Overcollateralized Crypto Empréstimos — Guia Completo de Cripto 2026 | Degen0x",
   description: "Guia completo sobre Overcollateralized Crypto Empréstimos em português. A CVM e o Banco Central regulamentam ativos digitais no Brasil sob o Marco Legal das Cri",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "O que é Overcollateralized Crypto Empréstimos e como funciona?", "answer": "Overcollateralized Crypto Empréstimos é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Ethereum hospeda mais de 60% do TVL DeFi global. A atualização Pectra 2026 melhorou account abstraction e reduziu custos de Layer 2 para menos de \$0.01." },
+  { "question": "O que é Overcollateralized Crypto Empréstimos e como funciona?", "answer": "Overcollateralized Crypto Empréstimos é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. LTV, limiar de liquidação e modelo de juros são critérios-chave para empréstimos cripto. Avalie risco de smart contract em Aave e Compound. Ethereum hospeda mais de 60% do TVL DeFi global." },
   { "question": "Quais são os riscos de investir em Overcollateralized Crypto Empréstimos?", "answer": "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
   { "question": "O que mudou em Overcollateralized Crypto Empréstimos em 2026?", "answer": "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
   { "question": "Como usar Overcollateralized Crypto Empréstimos no Brasil?", "answer": "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }
@@ -88,7 +90,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Perguntas Frequentes</h2>
               <div className="space-y-4">
                 {[
-                  { question: "O que é Overcollateralized Crypto Empréstimos e como funciona?", answer: "Overcollateralized Crypto Empréstimos é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. Ethereum hospeda mais de 60% do TVL DeFi global. A atualização Pectra 2026 melhorou account abstraction e reduziu custos de Layer 2 para menos de \$0.01." },
+                  { question: "O que é Overcollateralized Crypto Empréstimos e como funciona?", answer: "Overcollateralized Crypto Empréstimos é um componente crítico da infraestrutura Web3. Construído sobre protocolos descentralizados, garante que os usuários tenham controle total sobre seus ativos. LTV, limiar de liquidação e modelo de juros são critérios-chave para empréstimos cripto. Avalie risco de smart contract em Aave e Compound. Ethereum hospeda mais de 60% do TVL DeFi global." },
                   { question: "Quais são os riscos de investir em Overcollateralized Crypto Empréstimos?", answer: "Riscos fundamentais incluem falhas tecnológicas, restrições regulatórias, risco de contraparte (colapso de plataformas como FTX) e manipulação de market maker. Cold wallet e pesquisa são as melhores proteções." },
                   { question: "O que mudou em Overcollateralized Crypto Empréstimos em 2026?", answer: "Marcos de 2026: expansão de pilotos CBDC, maturação de soluções cross-chain, popularização de account abstraction e aplicações práticas de zero-knowledge proofs." },
                   { question: "Como usar Overcollateralized Crypto Empréstimos no Brasil?", answer: "No Brasil: 1) completando a verificação de identidade (KYC) em uma exchange regulamentada em exchange regulamentada, 2) depositando BRL via PIX (transferência instantânea) ou TED, 3) Escolha entre Mercado Bitcoin, Foxbit e NovaDAX são as principais exchanges brasileiras. No Brasil, ganhos com cripto acima de R\$35.000/mês em vendas devem ser declarados à Receita Federal. Mantenha registro de todas as transações." }

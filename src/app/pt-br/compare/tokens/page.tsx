@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Token Ferramenta — Comparação e Análise Detalhada | Degen0x",
   description: "Token Ferramenta: comparação de recursos, análise de desempenho e qual escolher — guia detalhado.",

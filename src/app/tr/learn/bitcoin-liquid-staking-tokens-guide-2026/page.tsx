@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Bitcoin Liquid Staking Tokenler: 2026 Kapsamlı Türkçe Rehber | Degen0x",
   description: "Bitcoin Liquid Staking Tokenler hakkında bilmeniz gereken her şey. Temel kavramlar, nasıl çalışır, riskler ve 2026 güncellemeleri — Türkçe kapsamlı rehber.",
@@ -42,7 +44,7 @@ const articleSchema = generateArticleSchema({
 });
 
 const faqSchema = generateFAQSchema([
-  { "question": "Bitcoin Liquid Staking Tokenler nedir ve nasıl çalışır?", "answer": "Bitcoin Liquid Staking Tokenler, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3." },
+  { "question": "Bitcoin Liquid Staking Tokenler nedir ve nasıl çalışır?", "answer": "Bitcoin Liquid Staking Tokenler, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
   { "question": "Bitcoin Liquid Staking Tokenler yatırımında riskler nelerdir?", "answer": "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
   { "question": "2026\'da Bitcoin Liquid Staking Tokenler alanında neler değişti?", "answer": "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Bitcoin Liquid Staking Tokenler alanında da paralel iyileştirmeler gözlemlenmektedir." },
   { "question": "Türkiye\'den Bitcoin Liquid Staking Tokenler nasıl kullanılır?", "answer": "Türkiye\'de Bitcoin Liquid Staking Tokenler kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }
@@ -71,7 +73,7 @@ export default function LocalizedPage() {
 
             <section className="mb-10">
               <h2 className="text-2xl font-semibold text-white mb-4">Bitcoin Liquid Staking Tokenler Nedir?</h2>
-              <p className="text-[#c9d1d9] leading-relaxed">Bitcoin Liquid Staking Tokenler, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Bitcoin Liquid Staking Tokenler büyük bir dönüşüm sürecine girmiştir. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3.125 BTC\'ye düşmüş, Lightning Network ile anlık ödemeler mümkün hale gelmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır.</p>
+              <p className="text-[#c9d1d9] leading-relaxed">Bitcoin Liquid Staking Tokenler, dijital varlık ekosisteminde giderek artan bir öneme sahiptir. Blokzincir altyapısı üzerine kurulu olan bu sistem, akıllı sözleşmeler aracılığıyla güvenli ve otomatik işlem gerçekleştirilmesini sağlar. Son dönemde kurumsal yatırımcıların ilgisinin artmasıyla birlikte Bitcoin Liquid Staking Tokenler büyük bir dönüşüm sürecine girmiştir. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3.125 BTC\'ye düşmüş, Lightning Network ile anlık ödemeler mümkün hale gelmiştir.</p>
             </section>
 
             <section className="mb-10">
@@ -98,7 +100,7 @@ export default function LocalizedPage() {
               <h2 className="text-2xl font-semibold text-white mb-4">Sık Sorulan Sorular</h2>
               <div className="space-y-4">
                 {[
-                  { question: "Bitcoin Liquid Staking Tokenler nedir ve nasıl çalışır?", answer: "Bitcoin Liquid Staking Tokenler, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Bitcoin, 21 milyon arz sınırı ve dört yılda bir gerçekleşen halving mekanizmasıyla deflasyonist bir varlıktır. 2024 halving sonrası blok ödülü 3." },
+                  { question: "Bitcoin Liquid Staking Tokenler nedir ve nasıl çalışır?", answer: "Bitcoin Liquid Staking Tokenler, dijital varlık ekosisteminde güvenli ve şeffaf işlemleri mümkün kılan bir teknolojidir. Kriptografik algoritmalar ve dağıtık mimari sayesinde merkezi otoriteye ihtiyaç duymaz. Ethereum staking\'de %25+ arzın stake edilmesiyle ağ güvenliği güçlenmiştir. Lido (stETH), Rocket Pool ve EigenLayer restaking ile sermaye verimliliği artmaktadır." },
                   { question: "Bitcoin Liquid Staking Tokenler yatırımında riskler nelerdir?", answer: "Dikkat edilmesi gereken riskler: kod exploitleri, flash loan saldırıları, oracle manipülasyonu, rug pull riski ve piyasa manipülasyonu. Yalnızca denetlenmiş (audited) projelere yatırım yapın ve tek varlığa aşırı maruz kalmayın." },
                   { question: "2026\'da Bitcoin Liquid Staking Tokenler alanında neler değişti?", answer: "Önemli 2026 gelişmeleri: RWA tokenizasyonunun büyümesi, AI-blockchain entegrasyonları, DePIN kategorisinin yükselişi ve modüler blokzincir mimarisinin benimsenmesi. Bitcoin Liquid Staking Tokenler alanında da paralel iyileştirmeler gözlemlenmektedir." },
                   { question: "Türkiye\'den Bitcoin Liquid Staking Tokenler nasıl kullanılır?", answer: "Türkiye\'de Bitcoin Liquid Staking Tokenler kullanmak için: 1) MASAK onaylı bir borsada KYC sürecini tamamlayarak hesap açın, 2) havale, EFT veya kredi kartı ile TL yatırarak başlayın, 3) BtcTurk, Paribu ve Bitci gibi Türk borsaları arasından size uygun olanı seçin. Türkiye\'de kripto gelirleri gelir vergisine tabidir — detaylar için mali müşavirinize danışın. Tüm işlemlerinizi kayıt altında tutmanız önerilir." }

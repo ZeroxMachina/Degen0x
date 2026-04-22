@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Crypto Margin Loan — So Sánh Nền Tảng Vay Crypto | Degen0x",
   description: "So sánh Crypto Margin Loan: lãi suất, yêu cầu tài sản thế chấp, rủi ro thanh lý và độ tin cậy nền tảng.",

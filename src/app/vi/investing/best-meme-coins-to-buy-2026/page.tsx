@@ -4,6 +4,8 @@ import BackToTop from "@/components/BackToTop";
 import StructuredData from "@/components/StructuredData";
 import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/structured-data";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "Meme Coins to Buy — Chiến Lược Đầu Tư và Phân Tích Thị Trường 2026 | Degen0x",
   description: "Hướng dẫn đầu tư Meme Coins to Buy: chiến lược danh mục, quản lý rủi ro, phân tích kỹ thuật và triển vọng thị trường 2026.",
