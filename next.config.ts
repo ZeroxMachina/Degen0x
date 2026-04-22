@@ -54,6 +54,11 @@ const nextConfig: NextConfig = {
   // Sprint 40: Reduce memory pressure during local builds
   // Split chunks more aggressively to avoid single large bundles
   output: "standalone",
+  outputFileTracingIncludes: {
+    "/tr/\\[...path\\]": ["./data/i18n/tr/**/*.json"],
+    "/vi/\\[...path\\]": ["./data/i18n/vi/**/*.json"],
+    "/pt-br/\\[...path\\]": ["./data/i18n/pt-br/**/*.json"],
+  },
 };
 
 export default nextConfig;

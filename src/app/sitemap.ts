@@ -3,22 +3,32 @@ import { PUBLISHED_PAGES } from "@/lib/published-pages";
 import fs from "fs";
 import path from "path";
 
+/**
+ * Collect i18n page paths from data/i18n/ JSON files.
+ * Walks the data directory instead of src/app since i18n pages
+ * now use catch-all routes with JSON data files.
+ */
 function collectI18nPaths(): string[] {
-  const appDir = path.join(process.cwd(), "src", "app");
+  const dataDir = path.join(process.cwd(), "data", "i18n");
   const locales = ["tr", "vi", "pt-br"];
   const paths: string[] = [];
 
   for (const locale of locales) {
-    const localeDir = path.join(appDir, locale);
+    const localeDir = path.join(dataDir, locale);
     if (!fs.existsSync(localeDir)) continue;
 
     function walk(dir: string) {
       for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-        if (entry.isDirectory() && !entry.name.startsWith("[")) {
+        if (entry.isDirectory()) {
           walk(path.join(dir, entry.name));
-        } else if (entry.name === "page.tsx") {
-          const rel = dir.slice(appDir.length).replace(/\\/g, "/");
-          paths.push(rel);
+        } else if (entry.name.endsWith(".json")) {
+          // Convert data/i18n/tr/exchanges/binance.json → /tr/exchanges/binance
+          const rel = path
+            .join(dir, entry.name)
+            .slice(localeDir.length)
+            .replace(/\\/g, "/")
+            .replace(/\.json$/, "");
+          paths.push(`/${locale}${rel}`);
         }
       }
     }
@@ -42,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   );
 
-  // i18n pages from filesystem
+  // i18n pages from data/i18n/ JSON files
   for (const p of collectI18nPaths()) {
     const depth = p.split("/").filter(Boolean).length;
     entries.push({
