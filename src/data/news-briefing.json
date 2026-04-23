@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-20T17:02:27Z",
-  "briefing_id": "briefing-2026-04-20-17",
+  "generated_at": "2026-04-23T14:05:07Z",
+  "briefing_id": "briefing-2026-04-23-14",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-20-17-001",
-      "headline": "DeFi TVL Craters $13B in 48 Hours as Kelp Contagion Spirals Beyond Aave",
-      "slug": "defi-tvl-craters-13b-kelp-contagion-beyond-aave",
-      "tldr": "Total value locked across DeFi fell from $99.5B to $86.3B in two days, turning the Kelp exploit into a sector-wide confidence crisis.",
-      "why_it_matters": "Why it matters: Contagion jumped from a single bridge to the entire lending stack — pricing in tail risk for cross-chain collateral everywhere, not just restaking.",
+      "id": "story-2026-04-23-14-001",
+      "headline": "Bitcoin Stalls Below $80K as Pentagon-Backed Inflation Warning Flips Risk Mood",
+      "slug": "bitcoin-stalls-below-80k-pentagon-inflation-warning",
+      "tldr": "BTC's push toward $80,000 stalled at $77.8K as rising oil and Strait of Hormuz risk reignited inflation fears across risk assets.",
+      "why_it_matters": "Why it matters: a perp-driven rally without spot bid is fragile, meaning any macro shock can unwind weeks of gains in hours.",
       "the_details": [
-        "DeFi TVL dropped 13.3% from $99.497B to $86.286B between Apr 18 and Apr 20 per CoinDesk data.",
-        "Aave absorbed the bulk, shedding $8.45B to land at $17.947B as rsETH holders rushed exits.",
-        "DeFi logged 47 incidents in the first 4.5 months of 2026, a 68% YoY rise over 2025's pace."
+        "BTC traded $77,809 at 9 a.m. ET, down $385 on the day after failing $80K twice this week.",
+        "U.S. spot BTC ETFs logged their strongest weekly inflows in a month, but funding signals dominate spot.",
+        "ETH dropped 2.5%, SOL fell 2.49% to $85.74 as DFX index lost 2.7% since UTC midnight."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/20/defi-tvl-drops-more-than-usd13-billion-in-two-days-following-kelp-dao-hack",
-      "category": "defi",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/23/bitcoin-s-bullish-momentum-runs-into-pentagon-backed-inflation-warning",
+      "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-20T16:30:00Z"
+      "timestamp": "2026-04-23T13:30:00Z"
     },
     {
-      "id": "story-2026-04-20-17-002",
-      "headline": "Aave Pools Hit 100% Utilization as $300M Emergency Borrowing Spike Traps Lenders",
-      "slug": "aave-100-utilization-300m-borrowing-spike-traps-lenders",
-      "tldr": "A $300M borrowing surge pushed Aave's ETH, USDT and USDC pools to full utilization, locking depositors out as whales pulled $6B in 24 hours.",
-      "why_it_matters": "Why it matters: Full utilization isn't a liquidity warning — it is the event. Depositors can't withdraw and borrowers owe a spiking rate until someone blinks.",
+      "id": "story-2026-04-23-14-002",
+      "headline": "Kelp Hacker Launders 75,700 ETH Into Bitcoin via THORChain in 36 Hours",
+      "slug": "kelp-hacker-launders-75700-eth-thorchain-36-hours",
+      "tldr": "The KelpDAO exploiter swapped 75,700 ETH into BTC through THORChain in roughly 36 hours, pushing the bridge's volume to $800 million.",
+      "why_it_matters": "Why it matters: THORChain just absorbed a nine-figure laundering flow with zero throttling, reigniting the debate over neutral bridges and OFAC exposure.",
       "the_details": [
-        "Whales drained more than $6B from Aave in the 24 hours after the Kelp exploit per on-chain data.",
-        "Stranded users borrowed roughly $300M against their own locked stablecoins at punitive rates.",
-        "Major pools — ETH, USDT, USDC — hit 100% utilization, freezing exits until rates attract fresh supply."
+        "The 36-hour swap generated about $910,000 in fees for THORChain LPs and node operators.",
+        "Original April 19 exploit drained 116,500 rsETH (~$292M), 18% of token supply, the largest 2026 hack.",
+        "TRM and Elliptic have flagged Lazarus Group as the likely actor behind both the Kelp and Drift breaches."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/20/a-usd300m-borrowing-spike-on-aave-signals-liquidity-crunch-after-exploit",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-20T15:45:00Z"
-    },
-    {
-      "id": "story-2026-04-20-17-003",
-      "headline": "April 2026 Is Crypto's Worst Hack Month Since Feb 2025: $606M Stolen in 18 Days",
-      "slug": "april-2026-worst-hack-month-since-feb-2025-606m",
-      "tldr": "Crypto protocols have lost over $606M to exploits in just 18 days of April, making it the worst month for theft since February 2025.",
-      "why_it_matters": "Why it matters: Back-to-back nine-figure attacks on Drift and Kelp reset insurance pricing assumptions and give regulators a live case for tighter bridge rules.",
-      "the_details": [
-        "Drift, a Solana perpetuals protocol, was drained for ~$285M early April in an attack linked to DPRK actors.",
-        "Kelp DAO lost $292M on Apr 19 via a LayerZero cross-chain verification spoof releasing 116,500 rsETH.",
-        "At least a dozen smaller protocols have been hit in the weeks between, per on-chain trackers."
-      ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/markets/crypto/articles/april-2026-becomes-worst-month-041530077.html",
+      "source": "CoinDesk / Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-thursday-april-23-2026-strong-opening-for-bitcoin-but-traders-still-cautious-114021085.html",
       "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-20T14:15:00Z"
+      "timestamp": "2026-04-23T11:00:00Z"
     },
     {
-      "id": "story-2026-04-20-17-004",
-      "headline": "Crypto Week Ahead: U.S.-Iran Ceasefire Expires Midweek, Tesla Earnings in Focus",
-      "slug": "crypto-week-ahead-iran-ceasefire-tesla-earnings",
-      "tldr": "Markets open the week jittery as the U.S.-Iran ceasefire is set to expire midweek and Tesla earnings frame risk appetite for crypto.",
-      "why_it_matters": "Why it matters: Oil and geopolitics are back as BTC's dominant macro driver — a reopening Strait rallies risk, a flare-up sends it the other way just as DeFi is already wounded.",
+      "id": "story-2026-04-23-14-003",
+      "headline": "GSR Goes Live With BESO ETF Bundling Bitcoin, Ethereum and Solana Exposure",
+      "slug": "gsr-launches-beso-etf-bitcoin-ethereum-solana",
+      "tldr": "Market maker GSR launched its first ETF, BESO, an actively managed fund spanning Bitcoin, Ethereum, and Solana exposure.",
+      "why_it_matters": "Why it matters: a sell-side desk crossing into ETF issuance signals further blurring of CeFi and TradFi distribution rails for crypto.",
       "the_details": [
-        "U.S. seized an Iranian-flagged tanker Sunday after Iran fired at ships attempting the Strait of Hormuz.",
-        "The CoinDesk 20 is down 3.6% since Friday 4pm ET, led by AAVE (-22.9%) and ICP (-7.9%).",
-        "Tesla reports earnings midweek — a barometer for risk-on appetite after weeks of Mag-7 weakness."
+        "BESO is GSR's first U.S.-listed product after a decade as a top crypto liquidity provider.",
+        "Active management lets GSR rebalance BTC/ETH/SOL weights instead of tracking a fixed index.",
+        "Launch lands in a week SOL is the worst top-10 performer, down 2.5% to $85.74."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/20/u-s-iran-ceasefire-ends-tesla-earnings-crypto-week-ahead",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-thursday-april-23-2026-strong-opening-for-bitcoin-but-traders-still-cautious-114021085.html",
       "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-20T13:00:00Z"
+      "timestamp": "2026-04-23T12:30:00Z"
     },
     {
-      "id": "story-2026-04-20-17-005",
-      "headline": "Whales Stack $24M in AAVE Longs Betting DeFi Bluechip Bounces Off Panic Lows",
-      "slug": "whales-24m-aave-longs-bet-on-defi-bluechip-rebound",
-      "tldr": "Whales opened nearly $24M in high-leverage AAVE longs, positioning for a rebound after the token shed 22.9% over the weekend.",
-      "why_it_matters": "Why it matters: Smart money is fading the panic — a signal that the Kelp contagion may be priced in if Aave's bad-debt math holds.",
+      "id": "story-2026-04-23-14-004",
+      "headline": "Mastercard Joins Blockchain Security Standards Council as Founding Member",
+      "slug": "mastercard-joins-blockchain-security-standards-council",
+      "tldr": "Mastercard signed on as a founding member of the Blockchain Security Standards Council to help shape security and privacy frameworks for tokenized assets.",
+      "why_it_matters": "Why it matters: the world's #2 card network is now writing the rulebook on tokenization security, accelerating institutional comfort with on-chain settlement.",
       "the_details": [
-        "AAVE led CoinDesk 20 laggards with a 22.9% weekend drop, deepest in the index.",
-        "Whales opened roughly $24M in longs across perps venues, per public positioning data.",
-        "Aave TVL still sits at $17.9B — enough dry powder to make it the default DeFi rebound trade."
+        "Council will draft frameworks covering blockchain networks, tokenized assets and wallet custody.",
+        "Mastercard adds payments-rail expertise to a body previously dominated by crypto-native firms.",
+        "Move follows April's wave of infra hacks topping $606M, the worst month since Feb 2025."
       ],
-      "source": "Blockchain Magazine",
-      "source_url": "https://blockchainmagazine.net/aave-trading-at-9061-despite-087-dip-why-defis-blue-chip-is-trending/",
-      "category": "defi",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-thursday-april-23-2026-strong-opening-for-bitcoin-but-traders-still-cautious-114021085.html",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-20T12:30:00Z"
+      "timestamp": "2026-04-23T10:00:00Z"
+    },
+    {
+      "id": "story-2026-04-23-14-005",
+      "headline": "Blockchain Capital Hunting $700M Across Two New Crypto Funds, Bloomberg Says",
+      "slug": "blockchain-capital-700m-two-new-funds",
+      "tldr": "Crypto VC Blockchain Capital is raising $700 million across two new funds, per Bloomberg, signaling LP appetite is returning despite April's hack carnage.",
+      "why_it_matters": "Why it matters: a $700M check-writing pipeline reopens early-stage funding for protocols starved since the late-2024 altcoin bear started.",
+      "the_details": [
+        "Filing reported by Bloomberg early Thursday, April 23, 2026, around 4:37 a.m. EDT.",
+        "Two-fund structure mirrors industry trend of separate liquid token and equity vehicles.",
+        "Raise lands amid Pantera's view that altcoins have been in a bear market since late 2024."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/amp/post/398560/blockchain-capital-seeks-700-million",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-23T08:37:00Z"
     }
   ]
 }
