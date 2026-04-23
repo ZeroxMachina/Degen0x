@@ -2,6 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import {
+  generateToolPageSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/structured-data";
 
 
 export const metadata: Metadata = {
@@ -103,6 +107,25 @@ const linkStyle: React.CSSProperties = { color: '#58a6ff', textDecoration: 'none
 const tdStyle: React.CSSProperties = { padding: '12px', borderBottom: '1px solid #30363d' };
 const tableStyle: React.CSSProperties = { width: '100%', borderCollapse: 'collapse' };
 
+// SoftwareApplication + BreadcrumbList JSON-LD (additional to the Article+FAQ above)
+const toolSchema = generateToolPageSchema({
+  name: 'Crypto Heatmap Live',
+  description:
+    'Live crypto heatmap visualizing real-time price performance, market cap weighting, and sector rotation across DeFi, L1, L2, and meme-coin baskets.',
+  url: 'https://degen0x.com/tools/crypto-heatmap-live',
+  category: 'FinanceApplication',
+  image: 'https://degen0x.com/og-crypto-heatmap-live.svg',
+});
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: 'https://degen0x.com/' },
+  { name: 'Tools', url: 'https://degen0x.com/tools' },
+  {
+    name: 'Crypto Heatmap Live',
+    url: 'https://degen0x.com/tools/crypto-heatmap-live',
+  },
+]);
+
 export default function CryptoHeatmapLive() {
   const infoBoxStyle = {
     background: '#161b22',
@@ -169,6 +192,14 @@ export default function CryptoHeatmapLive() {
   return (
     <article id="top" style={{ background: '#0d1117', color: '#e6edf3', minHeight: '100vh', padding: '40px 20px', scrollBehavior: 'smooth' }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <div style={{ maxWidth: 800, margin: '0 auto' }}>
         {/* Breadcrumb */}

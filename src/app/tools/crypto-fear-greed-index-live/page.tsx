@@ -2,6 +2,10 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import {
+  generateToolPageSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/structured-data";
 
 
 export const metadata: Metadata = {
@@ -51,7 +55,7 @@ const faqs = [
   },
 ];
 
-const structuredData = {
+const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: faqs.map(faq => ({
@@ -64,12 +68,37 @@ const structuredData = {
   })),
 };
 
+const toolSchema = generateToolPageSchema({
+  name: 'Crypto Fear & Greed Index Live',
+  description:
+    'Live crypto Fear & Greed Index tracker showing real-time market sentiment, historical readings, and how to interpret extreme fear vs extreme greed signals.',
+  url: 'https://degen0x.com/tools/crypto-fear-greed-index-live',
+  category: 'FinanceApplication',
+});
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: 'https://degen0x.com/' },
+  { name: 'Tools', url: 'https://degen0x.com/tools' },
+  {
+    name: 'Crypto Fear & Greed Index Live',
+    url: 'https://degen0x.com/tools/crypto-fear-greed-index-live',
+  },
+]);
+
 export default function CryptoFearGreedIndexPage() {
   return (
     <div style={{ minHeight: '100vh', backgroundColor: '#0d1117', color: '#e6edf3' }}>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Hero Section */}

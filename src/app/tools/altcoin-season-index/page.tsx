@@ -2,6 +2,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import {
+  generateToolPageSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/structured-data";
 
 
 export const metadata: Metadata = {
@@ -100,6 +104,25 @@ const infoBoxStyle: React.CSSProperties = { background: '#161b22', border: '1px 
 
 const linkStyle: React.CSSProperties = { color: '#58a6ff', textDecoration: 'none', cursor: 'pointer' };
 
+// SoftwareApplication + BreadcrumbList JSON-LD (additional to the Article+FAQ above)
+const toolSchema = generateToolPageSchema({
+  name: 'Altcoin Season Index',
+  description:
+    'Live altcoin season tracker measuring BTC dominance and the share of top-50 alts outperforming Bitcoin. Identifies alt-season conditions and capital rotation.',
+  url: 'https://degen0x.com/tools/altcoin-season-index',
+  category: 'FinanceApplication',
+  image: 'https://degen0x.com/og-altcoin-season-index.svg',
+});
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: 'Home', url: 'https://degen0x.com/' },
+  { name: 'Tools', url: 'https://degen0x.com/tools' },
+  {
+    name: 'Altcoin Season Index',
+    url: 'https://degen0x.com/tools/altcoin-season-index',
+  },
+]);
+
 export default function AltcoinSeasonIndex() {
   const infoBoxStyle = {
     background: "#161b22",
@@ -143,6 +166,14 @@ export default function AltcoinSeasonIndex() {
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px", scrollBehavior: "smooth" }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <div style={{ maxWidth: 800, margin: "0 auto" }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: "#8b949e" }}>

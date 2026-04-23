@@ -3,6 +3,10 @@ import Link from "next/link";
 import CryptoProfitCalculator from "@/components/CryptoProfitCalculator";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import RelatedContent from '@/components/RelatedContent';
+import {
+  generateToolPageSchema,
+  generateBreadcrumbSchema,
+} from "@/lib/structured-data";
 
 
 export const metadata: Metadata = {
@@ -89,6 +93,25 @@ const badgeStyle: React.CSSProperties = { padding: '6px 12px', borderRadius: 6, 
 const infoBoxStyle: React.CSSProperties = { background: '#161b22', border: '1px solid #30363d', borderRadius: 12, padding: 20, marginBottom: 24, lineHeight: 1.8 };
 
 
+// SoftwareApplication + BreadcrumbList JSON-LD (additional to the Article+FAQ above)
+const toolSchema = generateToolPageSchema({
+  name: "Crypto Profit Calculator",
+  description:
+    "Free crypto profit calculator with trading-fee and tax inputs. Calculate ROI, gain/loss percentage, and cost basis for any crypto trade.",
+  url: "https://degen0x.com/tools/crypto-profit-calculator",
+  category: "FinanceApplication",
+  image: "https://degen0x.com/og-tools.svg",
+});
+
+const breadcrumbSchema = generateBreadcrumbSchema([
+  { name: "Home", url: "https://degen0x.com/" },
+  { name: "Tools", url: "https://degen0x.com/tools" },
+  {
+    name: "Crypto Profit Calculator",
+    url: "https://degen0x.com/tools/crypto-profit-calculator",
+  },
+]);
+
 export default function CryptoProfitCalculatorPage() {
   const infoBoxStyle = {
     background: "#161b22",
@@ -132,6 +155,14 @@ export default function CryptoProfitCalculatorPage() {
   return (
     <article id="top" style={{ background: "#0d1117", color: "#e6edf3", minHeight: "100vh", padding: "40px 20px", scrollBehavior: "smooth" }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(toolSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       <div style={{ maxWidth: 820, margin: "0 auto" }}>
         <nav aria-label="Breadcrumb" style={{ marginBottom: 20, fontSize: 13, color: "#8b949e" }}>
