@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradAccentBuidl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0891b2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4a017;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradBuidl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#070b18;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0e1426;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f4cf5a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b88a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradBuidl)"/>
+  <rect width="1200" height="8" fill="url(#gradAccentBuidl)"/>
+
+  <!-- decorative geometric grid (institutional / orderly feel) -->
+  <g opacity="0.08" stroke="#0891b2" stroke-width="1">
+    <line x1="0"   y1="120" x2="1200" y2="120"/>
+    <line x1="0"   y1="510" x2="1200" y2="510"/>
+    <line x1="80"  y1="80"  x2="80"   y2="600"/>
+    <line x1="1120" y1="80" x2="1120" y2="600"/>
+  </g>
+
+  <!-- decorative circles (subtle, restrained) -->
+  <circle cx="170" cy="200" r="56" fill="none" stroke="#0891b2" stroke-width="1.5" opacity="0.22"/>
+  <circle cx="1060" cy="500" r="44" fill="none" stroke="#d4a017" stroke-width="1.5" opacity="0.22"/>
+  <circle cx="1090" cy="180" r="34" fill="none" stroke="#1e3a8a" stroke-width="1" opacity="0.18"/>
+
+  <!-- decorative treasury / on-chain dollar motif (right side) -->
+  <g opacity="0.38">
+    <!-- T-bill document outlines -->
+    <rect x="950" y="350" width="56" height="78" fill="none" stroke="#0891b2" stroke-width="1.5" rx="3"/>
+    <line x1="962" y1="368" x2="994" y2="368" stroke="#0891b2" stroke-width="1"/>
+    <line x1="962" y1="384" x2="994" y2="384" stroke="#0891b2" stroke-width="1"/>
+    <line x1="962" y1="400" x2="988" y2="400" stroke="#0891b2" stroke-width="1"/>
+
+    <rect x="1020" y="370" width="56" height="78" fill="none" stroke="#d4a017" stroke-width="1.5" rx="3"/>
+    <line x1="1032" y1="388" x2="1064" y2="388" stroke="#d4a017" stroke-width="1"/>
+    <line x1="1032" y1="404" x2="1064" y2="404" stroke="#d4a017" stroke-width="1"/>
+    <line x1="1032" y1="420" x2="1058" y2="420" stroke="#d4a017" stroke-width="1"/>
+
+    <!-- dollar sign anchor -->
+    <text x="1090" y="490" font-family="Inter, Helvetica, sans-serif" font-size="58" font-weight="700" fill="url(#goldFill)" opacity="0.55">$</text>
+  </g>
+
+  <!-- yield ladder bars (left of motif, suggesting daily distribution) -->
+  <g opacity="0.55">
+    <rect x="900" y="270" width="6" height="30" fill="#0891b2"/>
+    <rect x="912" y="262" width="6" height="38" fill="#1e3a8a"/>
+    <rect x="924" y="254" width="6" height="46" fill="#0891b2"/>
+    <rect x="936" y="246" width="6" height="54" fill="#d4a017"/>
+    <rect x="948" y="238" width="6" height="62" fill="#d4a017"/>
+  </g>
+
+  <!-- badge -->
+  <text x="80" y="120" font-family="Inter, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#06b6d4" letter-spacing="2" opacity="0.95">RWA · TOKENIZED TREASURY</text>
+
+  <!-- title -->
+  <text x="80" y="240" font-family="Inter, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#ffffff">BUIDL Guide 2026</text>
+
+  <!-- subtitle line 1 -->
+  <text x="80" y="310" font-family="Inter, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#cbd5e1">BlackRock&#x2019;s tokenized US Treasury fund,</text>
+
+  <!-- subtitle line 2 -->
+  <text x="80" y="350" font-family="Inter, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#cbd5e1">explained on-chain.</text>
+
+  <!-- detail strip -->
+  <text x="80" y="420" font-family="Inter, Helvetica, sans-serif" font-size="17" fill="#8b949e">Daily yield  ·  Multichain rails  ·  Stablecoin-grade reserves  ·  Institutional DeFi</text>
+
+  <!-- divider -->
+  <rect x="80" y="450" width="120" height="2" fill="url(#gradAccentBuidl)" opacity="0.7"/>
+
+  <!-- supporting tagline -->
+  <text x="80" y="490" font-family="Inter, Helvetica, sans-serif" font-size="15" fill="#64748b">A plain-English breakdown for builders, allocators, and the merely curious.</text>
+
+  <!-- degen0x branding -->
+  <text x="1120" y="600" font-family="Inter, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#6366f1" text-anchor="end" opacity="0.85">degen0x.com</text>
+
+  <!-- bottom gradient line -->
+  <rect y="622" width="1200" height="8" fill="url(#gradAccentBuidl)" opacity="0.5"/>
+</svg>
