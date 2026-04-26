@@ -890,6 +890,7 @@ export default function SECCFTCRulingGuide() {
               </Link>
 
               <Link href="#"
+                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Complete Crypto ETF Guide 2026
@@ -900,6 +901,7 @@ export default function SECCFTCRulingGuide() {
               </Link>
 
               <Link href="#"
+                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   Crypto Staking Guide 2026
@@ -910,6 +912,7 @@ export default function SECCFTCRulingGuide() {
               </Link>
 
               <Link href="#"
+                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   CLARITY Act & Stablecoin Regulation Guide
@@ -920,6 +923,7 @@ export default function SECCFTCRulingGuide() {
               </Link>
 
               <Link href="#"
+                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
               >
                 <p className="font-semibold text-[#58a6ff] group-hover:underline">
                   MiCA EU Crypto Regulation Compliance Guide
@@ -931,14 +935,6 @@ export default function SECCFTCRulingGuide() {
             </div>
           </section>
         
-        {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
-          </p>
-        </div>
-      
         {/* section-footer */}
         <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
           <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
@@ -969,7 +965,8 @@ export default function SECCFTCRulingGuide() {
                 ].map((item) => (
                   <a
                     key={item.id}
-                    className="block px-3 py-1 text-[#8b949e] hover:text-[#58a6ff] transition-colors rounded hover:bg-[#0d1117]"
+                    href={`#${item.id}`}
+                    className="block px-3 py-1 text-[#8b949e] hover:text-[#58a6ff] focus-visible:text-[#58a6ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#58a6ff] focus-visible:outline-offset-2 transition-colors rounded hover:bg-[#0d1117]"
                   >
                     {item.label}
                   </a>
