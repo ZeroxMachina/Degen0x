@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-26T14:05:00Z",
-  "briefing_id": "briefing-2026-04-26-14",
+  "generated_at": "2026-04-26T15:06:04Z",
+  "briefing_id": "briefing-2026-04-26-15",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-26-14-001",
-      "headline": "BlackRock IBIT Options Top Deribit, Marking Wall Street's Crypto Derivatives Takeover",
-      "slug": "blackrock-ibit-options-top-deribit",
-      "tldr": "BlackRock's IBIT bitcoin ETF options surpassed Deribit in open interest, signaling regulated U.S. derivatives are eclipsing offshore venues for institutional hedging.",
-      "why_it_matters": "Why it matters: For the first time, the deepest bitcoin options liquidity sits inside a U.S.-regulated wrapper, accelerating Wall Street's grip on price discovery.",
+      "id": "story-2026-04-26-15-001",
+      "headline": "Lazarus-Linked April Hacks Cross $606M, Worst Crypto Theft Month Since Bybit",
+      "slug": "april-2026-606m-crypto-hacks-lazarus-worst-month",
+      "tldr": "Crypto protocols have lost over $606 million to exploits in 18 days, the worst month since Bybit's $1.4B breach.",
+      "why_it_matters": "Why it matters: With Lazarus laundering $300M openly and DefiLlama logging an attack every 2.9 days, security risk is repricing the entire DeFi yield stack — not just individual protocols.",
       "the_details": [
-        "IBIT options open interest passed Deribit's on Friday April 24, per CoinDesk reporting.",
-        "Launched in late 2024, IBIT now hosts the largest bitcoin options book on a regulated U.S. venue.",
-        "Institutions are leaning on IBIT puts to hedge macro shocks like the recent Iran ceasefire wobble."
+        "Drift Protocol ($285M, April 1) and KelpDAO ($292M, April 18) account for ~95% of April losses, both attributed to North Korea's Lazarus Group.",
+        "DefiLlama logs 47 incidents in the first 4.5 months of 2026 vs 28 in the same window of 2025 — a 68% YoY frequency jump.",
+        "Bloomberg reports the $300M theft attackers have already begun on-chain laundering as of April 21, complicating recovery."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/25/blackrock-s-bitcoin-etf-just-hit-a-massive-milestone-that-proves-crypto-is-now-a-mainstream-bet",
-      "category": "infrastructure",
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-25T13:00:00Z"
+      "timestamp": "2026-04-26T14:30:00Z"
     },
     {
-      "id": "story-2026-04-26-14-002",
-      "headline": "Bitcoin Eyes Best Month in a Year as USDT Supply Pumps $5B Toward $150B Record",
-      "slug": "bitcoin-best-month-usdt-5b-growth",
-      "tldr": "BTC trades above $77,000 and is up over 13% in April, fueled by Tether's USDT supply expanding nearly $5B toward a record $150B mark.",
-      "why_it_matters": "Why it matters: Stablecoin issuance is the cleanest leading indicator of crypto liquidity — and right now it is unambiguously bullish.",
+      "id": "story-2026-04-26-15-002",
+      "headline": "SEC Greenlights DeFi Front-Ends, Says UI Operators Don't Need Broker Registration",
+      "slug": "sec-defi-front-end-broker-dealer-exemption-april-2026",
+      "tldr": "SEC staff said certain crypto trading user interfaces won't need broker-dealer registration, easing a key DeFi compliance overhang.",
+      "why_it_matters": "Why it matters: This is the first concrete federal carve-out treating DeFi front-ends as software rather than securities intermediaries — unlocking U.S. development of permissionless trading rails.",
       "the_details": [
-        "BTC is up roughly 13% month-to-date, on pace for its strongest month since spring 2025.",
-        "USDT circulating supply grew about $5B in 30 days, nearing the unprecedented $150B level.",
-        "Spot BTC ETFs absorbed $2B over 8 sessions through April 24, extending an inflow streak."
+        "April 13 staff statement clears software interfaces that prepare and submit transactions in crypto asset securities, subject to conditions.",
+        "Builds on the March 17 SEC-CFTC joint 68-page release that retired the 2019 staff framework and introduced a five-category token taxonomy.",
+        "Sidley Austin and Norton Rose Fulbright flagged the statement as a watershed for U.S.-onshore decentralized exchange development."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
-      "category": "bitcoin",
+      "source": "Sidley Austin",
+      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-24T12:00:00Z"
+      "timestamp": "2026-04-26T13:00:00Z"
     },
     {
-      "id": "story-2026-04-26-14-003",
-      "headline": "Aave Rallies DeFi Heavyweights to Contain $292M KelpDAO Hack Contagion",
-      "slug": "aave-defi-bailout-kelpdao-hack",
-      "tldr": "Aave is coordinating a multi-protocol response to the $292M KelpDAO exploit after $8.45B in deposits fled the lender in 48 hours.",
-      "why_it_matters": "Why it matters: A coordinated DeFi bailout signals the sector is treating systemic cross-chain risk as an industry problem, not a single-protocol failure.",
+      "id": "story-2026-04-26-15-003",
+      "headline": "Spot Solana ETFs Hit $1B AUM in Days as Goldman Sachs Anchors Inflows",
+      "slug": "spot-solana-etf-1b-aum-goldman-sachs-april-2026",
+      "tldr": "U.S. spot SOL ETFs crossed $1 billion in assets under management as of April 25, with Goldman Sachs disclosed as a major holder.",
+      "why_it_matters": "Why it matters: Solana now has institutional ETF rails comparable to BTC and ETH, validating SOL as a third reserve asset for traditional allocators and pulling capital ahead of an alt-season rotation.",
       "the_details": [
-        "Attacker drained 116,500 rsETH (~$292M) via misconfigured LayerZero bridge config on April 19.",
-        "Aave saw $8.45B in deposit outflows and broader DeFi TVL fell about $13B over two days.",
-        "Aave-led working group is coordinating with bridge providers and rsETH holders on remediation."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/business/2026/04/23/aave-rallies-defi-partners-to-contain-fallout-from-usd292-million-kelpdao-hack",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-23T15:00:00Z"
-    },
-    {
-      "id": "story-2026-04-26-14-004",
-      "headline": "Spot Solana ETFs Cross $1B AUM as Five Straight Weeks of Inflows Pile Up",
-      "slug": "solana-etf-aum-1-billion",
-      "tldr": "Spot SOL ETFs surpassed $1B in assets under management with $35.17M of net inflows over the past week across five straight positive sessions.",
-      "why_it_matters": "Why it matters: SOL is the first non-BTC/ETH spot ETF cohort to clear a billion in AUM, validating altcoin ETF demand for issuers eyeing XRP and DOGE products.",
-      "the_details": [
-        "Combined Solana ETF AUM crossed the $1B milestone this week per fund tracking data.",
-        "Net inflows hit $35.17M over the past week across five consecutive positive sessions.",
-        "Goldman Sachs disclosed a major position in the Solana ETF complex this cycle."
+        "Spot SOL ETFs logged strong weekly inflows hitting $1B AUM by April 25, 2026 per CoinMarketCap data.",
+        "Goldman Sachs filings disclose a major position, mirroring how BlackRock anchored the BTC ETF cohort.",
+        "SOL is consolidating $77–$94 with a rare weekly chart crossover that historically precedes volatile breakouts."
       ],
       "source": "CoinMarketCap",
       "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
-      "category": "altcoins",
+      "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-25T10:00:00Z"
+      "timestamp": "2026-04-26T12:00:00Z"
     },
     {
-      "id": "story-2026-04-26-14-005",
-      "headline": "Senate Crypto Bill Nears Stablecoin Rewards Deal as Bank Lobby Digs In",
-      "slug": "senate-stablecoin-rewards-breakthrough",
-      "tldr": "Sens. Alsobrooks and Tillis are closing in on stablecoin rewards language for the market structure bill, a key sticking point that has stalled passage.",
-      "why_it_matters": "Why it matters: Resolving stablecoin rewards unlocks the broader Clarity Act — without it, U.S. crypto market structure law slips into 2027.",
+      "id": "story-2026-04-26-15-004",
+      "headline": "Bitget Lists SpaceX-Linked preSPAX on Solana, Pushing Tokenized Pre-IPO Onchain",
+      "slug": "bitget-spacex-prespax-tokenized-pre-ipo-solana",
+      "tldr": "Bitget rolled out tokenized pre-IPO products including a SpaceX-linked preSPAX token on Solana on April 21.",
+      "why_it_matters": "Why it matters: Tokenized private equity is the next RWA front, and routing it through Solana cements the chain's pitch as the on-chain Nasdaq while sidestepping public-market gatekeepers.",
       "the_details": [
-        "Negotiators say talks are in a 'good spot' but ethics concerns over Trump conflicts loom.",
-        "Banks oppose the provision, warning yield-bearing stablecoins will siphon community deposits.",
-        "April markup is off the table; a May Senate Banking Committee hearing is the next window."
+        "preSPAX gives retail synthetic exposure to SpaceX equity ahead of any public listing, settled on Solana.",
+        "Foundation's Nick Ducoff: Solana's vision of becoming the on-chain Nasdaq and home of internet capital markets is 'getting closer'.",
+        "Launch lands as DefiLlama shows SOL TVL rebuilding post-Drift, signaling appetite for new structured-finance flows."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/398498/crypto-bill-nears-stablecoin-rewards-breakthrough-ethics-concerns-resurface",
-      "category": "regulation",
+      "source": "CoinGabbar",
+      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/solana-news-onchain-nasdaq-april-2026",
+      "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-24T16:00:00Z"
+      "timestamp": "2026-04-26T11:30:00Z"
+    },
+    {
+      "id": "story-2026-04-26-15-005",
+      "headline": "Bitcoin-Dollar Correlation Hits -0.90, Most Inverse Since 2022 Macro Shock",
+      "slug": "bitcoin-dxy-correlation-negative-090-2026",
+      "tldr": "Bitcoin's 30-day correlation to the U.S. Dollar Index has deepened to -0.90, the most negative reading in nearly four years.",
+      "why_it_matters": "Why it matters: BTC is trading like a pure dollar-debasement hedge again, meaning Fed policy and Warsh-era hawkish risk now dictate near-term direction more than crypto-native catalysts.",
+      "the_details": [
+        "BTC up over 13% in April, holding above $77,000 and on track for its best month in a year.",
+        "DXY weakness has accompanied $2B of Bitcoin ETF inflows in 8 days through April 24, per CoinDesk.",
+        "Pentagon-backed inflation warnings and Strait of Hormuz risk capped the latest push toward $80,000 resistance."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
+      "category": "markets",
+      "impact": "medium",
+      "timestamp": "2026-04-26T10:30:00Z"
     }
   ]
 }

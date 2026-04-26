@@ -1,8 +1,16 @@
 [
   {
+    "id": "feed-2026-04-26-002",
+    "type": "news",
+    "title": "\ud83d\udcf0 Lazarus-Linked April Hacks Cross $606M, Worst Crypto Theft Month Since Bybit",
+    "message": "Crypto protocols have lost over $606 million to exploits in 18 days, the worst month since Bybit's $1.4B breach.",
+    "actionUrl": "/news",
+    "date": "2026-04-26"
+  },
+  {
     "id": "feed-2026-04-26-001",
     "type": "news",
-    "title": "📰 BlackRock IBIT Options Top Deribit, Marking Wall Street's Crypto Derivatives Takeover",
+    "title": "\ud83d\udcf0 BlackRock IBIT Options Top Deribit, Marking Wall Street's Crypto Derivatives Takeover",
     "message": "BlackRock's IBIT bitcoin ETF options surpassed Deribit in open interest, signaling regulated U.S. derivatives are eclipsing offshore venues for institutional hedging.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -10,7 +18,7 @@
   {
     "id": "feed-2026-04-23-015",
     "type": "news",
-    "title": "📰 100+ Crypto Firms Pressure Senate to Mark Up Clarity Act or Risk Enforcement Revival",
+    "title": "\ud83d\udcf0 100+ Crypto Firms Pressure Senate to Mark Up Clarity Act or Risk Enforcement Revival",
     "message": "A coalition led by Coinbase and Ripple sent a letter demanding the Senate Banking Committee advance the Clarity Act market-structure bill immediately.",
     "actionUrl": "/news",
     "date": "2026-04-23"
@@ -18,7 +26,7 @@
   {
     "id": "feed-2026-04-23-001",
     "type": "news",
-    "title": "📰 Bitcoin Stalls Below $80K as Pentagon-Backed Inflation Warning Flips Risk Mood",
+    "title": "\ud83d\udcf0 Bitcoin Stalls Below $80K as Pentagon-Backed Inflation Warning Flips Risk Mood",
     "message": "BTC's push toward $80,000 stalled at $77.8K as rising oil and Strait of Hormuz risk reignited inflation fears across risk assets.",
     "actionUrl": "/news",
     "date": "2026-04-23"
@@ -26,7 +34,7 @@
   {
     "id": "feed-2026-04-20-008",
     "type": "news",
-    "title": "📰 DeFi TVL Craters $13B in 48 Hours as Kelp Contagion Spirals Beyond Aave",
+    "title": "\ud83d\udcf0 DeFi TVL Craters $13B in 48 Hours as Kelp Contagion Spirals Beyond Aave",
     "message": "Total value locked across DeFi fell from $99.5B to $86.3B in two days, turning the Kelp exploit into a sector-wide confidence crisis.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -34,7 +42,7 @@
   {
     "id": "feed-2026-04-20-007",
     "type": "news",
-    "title": "📰 Vercel Breach Sends Crypto Devs Racing to Rotate API Keys Across Live Apps",
+    "title": "\ud83d\udcf0 Vercel Breach Sends Crypto Devs Racing to Rotate API Keys Across Live Apps",
     "message": "A security incident at hosting provider Vercel may have exposed customer API keys, forcing crypto teams to rotate credentials and audit code paths in production.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -42,7 +50,7 @@
   {
     "id": "feed-2026-04-20-006",
     "type": "news",
-    "title": "📰 Aave Stares Down $195M Bad Debt After Kelp Hacker Borrows Against Stolen rsETH",
+    "title": "\ud83d\udcf0 Aave Stares Down $195M Bad Debt After Kelp Hacker Borrows Against Stolen rsETH",
     "message": "Aave is quantifying how much bad debt it now holds after the Kelp DAO exploiter used stolen rsETH as collateral to borrow roughly $195 million in ETH.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -50,7 +58,7 @@
   {
     "id": "feed-2026-04-20-005",
     "type": "news",
-    "title": "📰 Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",
+    "title": "\ud83d\udcf0 Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",
     "message": "Web infra giant Vercel disclosed a security incident that may have exposed customer API keys, triggering a scramble across crypto teams to rotate credentials.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -58,7 +66,7 @@
   {
     "id": "feed-2026-04-20-004",
     "type": "news",
-    "title": "📰 DeFi TVL Craters $13.2B in 48 Hours as Kelp Contagion Spreads Beyond Aave",
+    "title": "\ud83d\udcf0 DeFi TVL Craters $13.2B in 48 Hours as Kelp Contagion Spreads Beyond Aave",
     "message": "Total value locked across DeFi has plunged by $13.21 billion in two days, with the bleed extending past Aave into lending, restaking, and LRT markets.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -66,7 +74,7 @@
   {
     "id": "feed-2026-04-20-003",
     "type": "news",
-    "title": "📰 Aave Bleeds $9B in Outflows as Kelp Contagion Rips Through DeFi Lending",
+    "title": "\ud83d\udcf0 Aave Bleeds $9B in Outflows as Kelp Contagion Rips Through DeFi Lending",
     "message": "Aave net inflows collapsed by roughly $6.2B (~23%) after the Kelp exploiter used stolen rsETH as collateral to borrow $195M in ETH.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -74,7 +82,7 @@
   {
     "id": "feed-2026-04-20-002",
     "type": "news",
-    "title": "📰 SEC Greenlights DEX Frontends, Waives Broker-Dealer Registration for UI Providers",
+    "title": "\ud83d\udcf0 SEC Greenlights DEX Frontends, Waives Broker-Dealer Registration for UI Providers",
     "message": "SEC Trading and Markets won't object to 'Covered User Interface Providers' operating DEX frontends without broker-dealer registration, clearing a major compliance fog for DeFi apps.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -82,7 +90,7 @@
   {
     "id": "feed-2026-04-20-001",
     "type": "news",
-    "title": "📰 Vercel Breach Leaks Crypto Project API Keys, Orca and Web3 Teams Scramble",
+    "title": "\ud83d\udcf0 Vercel Breach Leaks Crypto Project API Keys, Orca and Web3 Teams Scramble",
     "message": "Vercel disclosed a security incident exposing customer API keys, forcing crypto teams hosting wallet UIs on the platform to rotate credentials en masse.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -90,15 +98,15 @@
   {
     "id": "feed-2026-04-18-001",
     "type": "news",
-    "title": "📰 Kelp DAO Bridge Drained for $292M in rsETH, Eclipsing Drift as 2026's Biggest Hack",
-    "message": "An attacker drained 116,500 rsETH — about $292M and 18% of supply — from Kelp's LayerZero bridge, making it 2026's largest DeFi exploit.",
+    "title": "\ud83d\udcf0 Kelp DAO Bridge Drained for $292M in rsETH, Eclipsing Drift as 2026's Biggest Hack",
+    "message": "An attacker drained 116,500 rsETH \u2014 about $292M and 18% of supply \u2014 from Kelp's LayerZero bridge, making it 2026's largest DeFi exploit.",
     "actionUrl": "/news",
     "date": "2026-04-18"
   },
   {
     "id": "feed-2026-04-17-100",
     "type": "system",
-    "title": "914 New Pages Indexed — Publish Queue Drained",
+    "title": "914 New Pages Indexed \u2014 Publish Queue Drained",
     "message": "The full backlog of built-but-unpromoted pages (914 total) has been promoted to PUBLISHED_PAGES. Site now indexes 1,515 URLs across Learn, Exchanges, Investing, Wallets, DeFi, Cards, NFTs and more.",
     "actionUrl": "/learn",
     "date": "2026-04-17"
@@ -106,7 +114,7 @@
   {
     "id": "feed-2026-04-17-012",
     "type": "news",
-    "title": "📰 Grinex Halts Trading After $15M State-Level Attack Drains USDT Reserves",
+    "title": "\ud83d\udcf0 Grinex Halts Trading After $15M State-Level Attack Drains USDT Reserves",
     "message": "Sanctioned Russian exchange Grinex suspended trading after attackers moved $15M in USDT onto Tron and Ethereum, blaming a hostile-state operation.",
     "actionUrl": "/news",
     "date": "2026-04-17"
@@ -114,7 +122,7 @@
   {
     "id": "feed-2026-04-17-011",
     "type": "news",
-    "title": "📰 Charles Schwab Opens Spot BTC and ETH Trading to Retail Clients",
+    "title": "\ud83d\udcf0 Charles Schwab Opens Spot BTC and ETH Trading to Retail Clients",
     "message": "Schwab rolled out direct spot Bitcoin and Ether trading for retail accounts, with custody in-house and execution routed to Paxos.",
     "actionUrl": "/news",
     "date": "2026-04-17"
@@ -122,7 +130,7 @@
   {
     "id": "feed-2026-04-17-010",
     "type": "news",
-    "title": "📰 UK FCA Drops '24-Hour Trap' in Final Crypto Framework",
+    "title": "\ud83d\udcf0 UK FCA Drops '24-Hour Trap' in Final Crypto Framework",
     "message": "The FCA's final cryptoasset rulebook treats any firm holding client assets for more than 24 hours as a regulated custodian, forcing most UK DEX frontends and fintech wrappers to seek full safeguarding licenses.",
     "actionUrl": "/news",
     "date": "2026-04-17"
