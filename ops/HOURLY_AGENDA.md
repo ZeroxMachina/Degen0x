@@ -1,135 +1,165 @@
 # degen0x · Hourly Ops Standup
 
-**Timestamp:** 2026-04-20T17:14Z
-**Cycle:** Hour 17 UTC — third cycle under flat-task-format regime. Hour 18 is the **overdue-ping trigger** per Hour 15 T3 (UTC hour ≥ 18 AND both asks untouched).
-**Runner:** `degen-morning-standup` scheduled task (Claude Opus 4.7) — single-agent topology confirmed **26th hour** (publish/build/design/community/QA still silent; only parallel news-runner active).
-**Latest commit (local master):** `d397e1c7` — *ops: Hour 16 UTC standup — wrong-domain sitemap P1 filed (cryptodegen.com bleed, 41 days)* (~60min old)
-**Latest commit (origin/main):** `ecf2da33` — *news: hourly briefing briefing-2026-04-20-17* (~10min old)
+**Timestamp:** 2026-04-26T13:50Z
+**Cycle:** Hour 13 UTC (Sunday) — **FIRST cycle after blackout #2**. Last *committed* standup was Hour 17 UTC on 2026-04-20 (`c601b77c`); the prior agenda for 2026-04-23T13:49Z was written but never committed. Standup-runner silence: **~143h 35min** (~5.98 days). Flat-task-format regime continues (per `ops/HOURLY_AGENDA_FORMAT.md` adopted Hour 15 on 2026-04-20).
+**Runner:** `degen-morning-standup` scheduled task (Claude Opus 4.7), session `jolly-intelligent-brahmagupta`. Only this runner executing. The publish-deploy and news-briefing runners last fired on 2026-04-23 — see "What shipped" below.
+**Latest commit (local master):** `d2ec10fa7` — *fix(seo): regenerate sitemap to degen0x.com post-rebrand* — **71h 25min old, Jefe-authored locally on 2026-04-23T14:25Z, not pushed.**
+**Latest commit (origin/main):** `6a4ad4921` — *news: hourly briefing briefing-2026-04-23-15* — **70h 45min old.**
+**Branch divergence:** **+17 / −69** (was +15/−60 at the prior agenda; +2 from Jefe's local sitemap+JSON-LD work, +9 origin commits we never fetched-merged including the i18n catch-all migration).
 
-> **Hour 17 has *less* new information than Hour 16** — no Jefe touch on either ask, no new incidents, news cadence unchanged. The differentiated work this cycle: (a) executed Hour 16 T3 (rebrand sweep plan) — new deliverable `ops/seo/2026-04-20-rebrand-sweep-plan.md`; (b) pre-staged the Hour 18 overdue-ping so the next cycle can file it in one operation if asks remain flat.
+> **This cycle overrides normal T1/T2/T3 priorities per format spec §44 (production incident).** Two facts dominate: (1) cadence has failed for the *second* multi-day stretch in a week, and (2) Jefe shipped substantial work directly to origin/main during blackout-1's tail (i18n catch-all migration, universal schema ramp-to-9.5) without engaging the incident protocol — making the local-master commits *actively incompatible* with origin if pushed. The previously-open Q1 (reset-vs-rebase) is no longer ambiguous; the answer is "reset to origin/main, archive ops/ history." Q2 (sitemap-wrong-domain) is **resolved on origin already** (origin sitemap = 9,452 degen0x.com URLs, 0 cryptodegen.com).
 
 ---
 
 ## 🚨 Incidents / Overrides
 
-- **P0 (UNCHANGED, 9h+ blocker age) — JEFE-ASK Q1 UNTOUCHED.** `ops/incidents/2026-04-20T14-14Z-jefe-ask-reset-vs-rebase.md` — mtime flat at 14:18:13Z (file-creation time), 0/2 checkboxes. **Hour 18 overdue-ping trigger fires next cycle** (current UTC hour 17; trigger = hour ≥ 18). Pre-staging template included in this cycle's commit plan (below).
-- **P1 (UNCHANGED, 1h old) — JEFE-ASK Q2 (SITEMAP CHERRY-PICK) UNTOUCHED.** `ops/incidents/2026-04-20T16-14Z-sitemap-wrong-domain.md` — mtime flat at 16:19:40Z (file-creation time), 0/2 checkboxes. Sitemap still 100% wrong-domain (`cryptodegen.com`); **41 days 1 hour** of bleed. Overdue-ping covers both asks.
-- **P0 (UNCHANGED, 26h+) — MISSING BUILD-CYCLE RUNNER.** `ops/deploys.log` last non-standup non-news entry **10:58Z** = **6h 16min silent** (was 5h 16min at Hour 16). Still gated on Q1. No new diagnostic needed — 24h evidence already filed at `ops/incidents/2026-04-20T14-14Z-missing-build-cycle-runner.md`.
-- **P1 (mechanical drift) — Branch divergence +14 / −60** (was +13/−59 at Hour 16). +1/−1 mechanical drift per cycle, as predicted. Will be +15/−61 post-commit.
-- **P1 (UNCHANGED) — SEO score FLAT at 6.91** for 4th day; wrong-domain sitemap is the single most actionable contributor and remains blocked.
-- **P2 (~GREEN, 6th successful dance) — `.git/index.lock` reappeared ONCE during `git fetch`.** Dance-cleared via `mv` — 6th consecutive cycle where the workaround succeeds on first attempt. No root-cause fix; still no blocker.
-- **P2 (flat) — 746 uncommitted files** (unchanged vs Hour 16 — this cycle's writes are all under `ops/`).
-- **MITIGANT — prod healthy.** Origin/main `ecf2da33` = briefing-17 shipped ~17:04Z. Local `src/data/news-briefing.json` at 17:03Z is **byte-equal to origin**: `story-2026-04-20-17-001`. **7th consecutive hour** of parallel-runner determinism.
+- **P0 (NEW — THIS CYCLE) — SECOND MULTI-DAY SCHEDULER BLACKOUT.** Filed `ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md`. News-runner self-healed for two cycles (Hour 14 + 15 on 2026-04-23) then died again at 15:06Z; standup-runner never recovered (143h 35min silent). Jefe acted via direct commits during the gap, *not* via incident-doc checkboxes — making the wait-for-checkbox protocol provably dead. Local commits `d2ec10fa7` and `ad75816c` are now redundant and would *regress* origin if pushed. Recommended action: **B — reset master to origin/main, archive ops/ on a separate branch.** Cannot execute from this runner (auth scope + doublefire risk).
+- **P0 (UNCHANGED, now 143h 33min) — JEFE-ASK Q1 (RESET-VS-REBASE) UNTOUCHED BY CHECKBOX, BUT EFFECTIVELY ANSWERED BY JEFE'S COMMITS.** `ops/incidents/2026-04-20T14-14Z-jefe-ask-reset-vs-rebase.md` mtime flat at 14:18:13Z, 0/4 checkboxes. Jefe committed `ad75816c` and `d2ec10fa7` to master and 9 commits to origin/main during this incident's open window — the *behavior* says "rebase/reset, the incident doc is not how I work." This cycle's blackout-2 incident treats Q1 as resolved-by-action and recommends B; Jefe can override by editing the new incident file.
+- **P0→RESOLVED-ON-ORIGIN — JEFE-ASK Q2 (SITEMAP WRONG-DOMAIN).** `origin/main:public/sitemap.xml` = 0 cryptodegen.com / 9,452 degen0x.com (incl. i18n hreflang). Bleed is over for any crawler reading origin. Local mirror `d2ec10fa7` is a 1,849-URL subset that would *regress* origin if pushed; do not push. Marking Q2 resolved-on-origin in the new blackout-2 incident; will close Q2 incident file once master is reset.
+- **P0 (UNCHANGED) — BLACKOUT-1 INCIDENT UNTOUCHED.** `ops/incidents/2026-04-23T13-49Z-multi-day-scheduler-blackout.md` — 71h 55min old, 0/3 checkboxes, also ignored by Jefe. Now consolidated under blackout-2; will close once reconcile lands.
+- **P1 — DOUBLEFIRE / CROSS-CLONE SCHEDULER PATTERN.** During the 2026-04-23 self-heal window, three distinct sandboxed sessions fired the publish-deploy slot in one hour (`zen-pensive-feynman` 13:50Z, `friendly-funny-gauss` 13:53Z, `amazing-affectionate-dijkstra` 14:58Z) with different HEADs. Reset (B) must not be executed from any of them — only from a single human shell, otherwise a `.git/index.lock` race will leave master half-rewritten.
+- **P1 — USER-VISIBLE FRESHNESS REGRESSION.** Site shows `briefing-2026-04-23-15` on a 2026-04-26 visit. Top headline cites the Senate Clarity Act letter from 2026-04-23 as "today's news." Brand damage at every page-view. Not prod-down (origin healthy at `6a4ad492`), but eroding trust. Restart of the news-briefing scheduled task is the highest community-growth priority for this hour.
+- **P1 (FROZEN, mechanical) — Branch divergence +17 / −69.** +2 vs blackout-1 cycle (Jefe's two local commits) and +9 origin (i18n catch-all + JSON-LD ramp + sitemap regen + 4 news briefings). Will be +18/−69 post-this-commit. Reset (B) clears it.
+- **P1 (FLAT) — SEO score 6.91** in last report (`ops/seo/2026-04-23.md`); origin's universal schema + i18n hreflang sitemap should lift this to 8+ once Search Console re-crawls, but no GSC data this cycle (no live API). Re-audit after reset.
+- **P2 (drift accelerating) — 958 uncommitted files** (745 untracked, 211 modified, 2 added). Up from 752 at blackout-1 cycle. Top contributors: 204 in `src/app/*` (i18n migration WIP that conflicts with origin's catch-all routes), 182 in `reports/community-drafts/*` (community runner drafts). All untracked WIP becomes irrelevant after reset (B); the modified `src/app/*` files actively conflict with origin's history.
+- **MITIGANT — Origin/main is healthy and ahead.** Vercel still serves `6a4ad492` which includes the universal schema + i18n catch-all + correct sitemap. Real users get the *better* state of the site already; the rot is local.
 
 ---
 
-## What shipped last hour (Hour 16 UTC, 16:14Z → 17:14Z)
+## What shipped since the last *committed* standup (Hour 17 UTC 2026-04-20 → now)
 
-- `d397e1c7` committed 16:14Z — Hour 16 standup bundle (agenda + wrong-domain P1 incident + sitemap dry-run + logs). Already covered at the Hour 16 agenda — **not shipped this cycle, shipped last cycle.**
-- `ecf2da33` landed on origin/main ~17:04Z — `briefing-2026-04-20-17` (parallel news-runner cadence unbroken; **7th consecutive** hour byte-equal local↔origin).
-- Local `src/data/news-briefing.json` regen'd 17:03Z; top story id `story-2026-04-20-17-001`.
-- Two SKIPPED entries in `deploys.log` at 16:57Z and 16:59Z — parallel-runner read-only cycle closures (egress-blocked direct curl, no src delta, no action).
-- **Both Jefe asks touched 0 times.** Q1 is 9h 16min post-file; Q2 is 1h 0min post-file. Checkbox count 0+0.
-- **Hour 16 T3 executed this cycle** — rebrand-sweep plan written to `ops/seo/2026-04-20-rebrand-sweep-plan.md` (PLAN ONLY; no source files touched). Inventory confirms 20 residual `cryptodegen.com` refs across 5 files (SETUP_OG_IMAGE.md ×5, SEO_INFRASTRUCTURE.md ×3, SEO_DEPLOYMENT_SUMMARY.md ×2, SEO_DEPLOYMENT_CHECKLIST.md ×9, public/og-image.svg ×1).
+- **Origin/main (Jefe pushed direct, 9 commits since c601b77c was authored):**
+  - `b6d58e06`+`a7ca10086`+`c80feaa9`+`f294adad`+`83989e4e` — i18n localization v4.1 → full-site (5,214 pages across TR/VI/PT-BR), with hreflang sitemap.
+  - `4074b187` — `force-dynamic` on i18n pages to dodge OOM on Vercel.
+  - `50a0d015` — replaces 5,235 individual i18n pages with 3 catch-all routes + JSON data (architectural cleanup).
+  - `be9ea2d0`+`6a4ad492` — news briefings 14 + 15 on 2026-04-23.
+  - `ecf2da33` — news briefing 17 from 2026-04-20 (already mentioned in blackout-1).
+- **Local master (Jefe authored locally, 2 net-new commits, never pushed):**
+  - `ad75816c` (2026-04-23T16:02Z) — SoftwareApplication+BreadcrumbList JSON-LD on 5 tool pages. **Made redundant** by origin's `a9e890954` from 2026-04-17 (universal schema on 73 tool pages).
+  - `d2ec10fa7` (2026-04-23T14:25Z) — sitemap regen to degen0x.com with 1,849 URLs. **Made redundant *and* regressive** by origin's `a7ca10086` (2,802 URLs with hreflang) and the subsequent regen pushing it to 9,452 URLs.
+- **Standup runner:** zero commits. Hour 13 2026-04-23 wrote the agenda but never committed it (still a pending `M` in working tree, mtime 14:10Z).
+- **News briefings:** silent on origin since 2026-04-23T15:06Z (~70h45m); still showing `briefing-2026-04-23-15` to users.
+- **Pre-staged Hour 18 overdue-ping:** never fired across two blackouts; retired this cycle to `ops/incidents/.retired/hour-18-overdue-ping-NEVER-FIRED-blackout1-then-blackout2.md`.
 
 ## What's at risk
 
-- **Overdue-ping fires next cycle.** Hour 18 UTC standup must file `ops/incidents/2026-04-20T18-00Z-jefe-asks-10h-overdue.md` if both checkbox counts remain 0. Template pre-staging reduces the filing to one Write call. See T1 below.
-- **Sitemap bleed +1h** vs Hour 16 agenda: 41 days 1 hour of cryptodegen.com `<loc>` entries served to crawlers. No decay so far; crawl-budget suppression continues at background rate.
-- **Runner silence +1h** vs Hour 16: build-cycle ledger is now 6h 16min silent. No escalation beyond the existing incident; gating on Q1.
-- **Format-spec entropy** — 3 cycles in (Hours 15, 16, 17) using the flat format. Need 4–5 successful cycles before load-bearing; one more cycle to reach minimum bar.
+- **Cadence might restart for one cycle and die again.** That's literally what happened on 2026-04-23 (Hour 14 + 15 only). If Hour 14 UTC today (2026-04-26T14:50Z-ish) does not fire, we are in a same-failure-mode regression and the scheduler infra needs human inspection — not another incident doc.
+- **Pushing local-master without reconcile is now actively destructive**, not just messy. If any runner force-pushes (none should, but the doublefire pattern means three sessions could try), origin loses i18n + universal schema. Treat all pushes as "must come from a single human shell."
+- **/news widget brand damage compounding.** Every hour the site continues to show `briefing-2026-04-23-15` is another hour of "this place is abandoned" signal to organic visitors. SEO score pressure from freshness category will start showing in next audit.
+- **958 dirty files include 204 in src/app that conflict with origin's catch-all migration.** These are the WIP artifacts of a half-finished local i18n attempt that origin already replaced with a different (better) architecture. Hard reset will discard them; that is the correct outcome but worth flagging so nobody assumes there's salvageable code in there.
+- **`98771ac74` (design polish on AuthorAttribution+RelatedContent) is the *only* local commit with potential forward value.** It pre-dates Jefe's ramp-to-9.5 work but does not obviously conflict. If reset is executed via plan B, this one commit deserves a re-cherry-pick check before discarding.
 
 ---
 
 ## KPI Snapshot
 
-| Metric | Value | Source | Δ vs Hour 16 |
-|---|---|---|---|
-| Latest commit (local master) | `d397e1c7` | `git log -1` | +1 commit vs Hour 15 (Hour 16 flush) |
-| Latest commit (origin/main) | `ecf2da33` | `git log origin/main -1` | +1 commit (briefing-17) |
-| Local vs origin/main | **+14 / −60** | `rev-list --left-right --count` | +1/−1 mechanical drift (as predicted) |
-| Uncommitted files | 746 | `git status --short \| wc -l` | flat |
-| `.git/index.lock` present | NO (transient reappear → dance-cleared) | `ls .git/index.lock` | 1 cleared occurrence; 6th consecutive successful dance |
-| Open incidents | 10 | `ls ops/incidents/` | flat (Hour 16 close state) |
-| Commits on this runner (last 24h) | 8 | `git log --since="24h"` | +1 (Hour 16 bundle) |
-| news-briefing freshness (local) | ~11min (17:03Z) | mtime | — |
-| news-briefing id (local) | `story-2026-04-20-17-001` | JSON | byte-equal to origin — **7th hour determinism** |
-| news-briefing on origin/main | `briefing-2026-04-20-17` | `ecf2da33` | GREEN |
-| notifications-feed freshness | ~10min | mtime | — |
-| page-manifest freshness | uncommitted; mtime 2026-04-18 21:39Z (~44h) | mtime | +1h flat (9th cycle) |
-| PUBLISHED_PAGES count | 1,515 | `published-pages.json` | flat |
-| Sitemap URL count | 2,234 | `grep -c <loc>` | flat — still stale |
-| Sitemap brand domain | **cryptodegen.com (WRONG)** | sitemap content | **UNCHANGED — Jefe Q2 pending** |
-| Sitemap age | 8d 0h | mtime 2026-04-12 17:08Z | +1h |
-| SEO compliance (latest) | 6.91 / 10 | `ops/seo/2026-04-20.md` | flat 4th day |
-| Organic traffic (24h) | MODELLED 152 clicks / 12,640 imp | `ops/seo/2026-04-20.md` | flat — OAuth day 8 |
-| Indexed pages (GSC) | 496 MODELLED | SEO brief §1 | 32.7% — pending GSC reconnect |
-| CWV p75 | not available | — | OAuth blocker day 9 |
-| deploys.log last non-standup non-news entry | 10:58Z | tail | **6h 16min silent** (+1h) |
-| Jefe-ask Q1 touched? | NO (mtime 14:18:13Z) | `stat` | **flat 9h 16min** |
-| Jefe-ask Q2 touched? | NO (mtime 16:19:40Z) | `stat` | **flat 1h 0min** |
-| Hour 18 overdue-ping due? | **NEXT CYCLE** | UTC hour 17 now; trigger = ≥ 18 | 0 remaining cycles |
+| Metric                         | Value                                                       | Source                                                  | Note                                                            |
+| ------------------------------ | ----------------------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------------- |
+| Latest commit (local master)   | `d2ec10fa7`                                                 | `git log -1`                                            | 71h 25min old; Jefe-authored locally; would-regress-if-pushed   |
+| Latest commit (origin/main)    | `6a4ad4921`                                                 | `git log -1 origin/main`                                | 70h 45min old (briefing-15 from 2026-04-23)                     |
+| Local vs origin/main           | **+17 / −69**                                               | `git rev-list --left-right --count`                     | +2 / +9 vs blackout-1 cycle                                     |
+| Uncommitted files              | **958**                                                     | `git status --porcelain \| wc -l`                       | 745 untracked, 211 modified, 2 added; +210 vs blackout-1 cycle  |
+| `news-briefing.json` top story | `story-2026-04-23-15-001` (Senate Clarity Act letter)       | `jq` on JSON                                            | **70h 45min stale** on user-facing /news                        |
+| news-briefing.json mtime       | 2026-04-23T15:05Z                                           | `stat`                                                  | Frozen since blackout-2 began                                   |
+| origin sitemap.xml URLs        | **9,452** (degen0x.com), **0** (cryptodegen.com)            | `git show origin/main:public/sitemap.xml`               | Q2 effectively resolved on origin                               |
+| local sitemap.xml URLs         | 1,849 (degen0x.com), 0 (cryptodegen.com)                    | `cat public/sitemap.xml`                                | Subset of origin; do not push                                   |
+| Indexed pages (last known)     | ~914                                                        | last published-pages snapshot                           | No live GSC data this cycle                                     |
+| SEO score                      | **6.91** (flat)                                             | `ops/seo/2026-04-23.md`                                 | Will lift once origin's i18n+schema is what GSC re-crawls       |
+| Q1 jefe-ask age                | **143h 33min** (5.98 days, 0/4 checkboxes)                  | `stat` + `grep`                                         | Treated as resolved-by-Jefe-action; see blackout-2 incident     |
+| Q2 jefe-ask age                | **141h 31min** (5.90 days, 0/9 checkboxes)                  | same                                                    | Resolved on origin; close after reset                           |
+| Blackout-1 incident age        | **71h 55min** (0/3 checkboxes)                              | same                                                    | Consolidated under blackout-2                                   |
+| Blackout-2 duration (this)     | **~70h45m news / ~143h35m standup**                         | now − 6a4ad4921 / now − c601b77c                        | NEW metric                                                      |
+| Last deploys.log non-standup   | 2026-04-23T14:58Z (publish-deploy SKIPPED)                  | tail of deploys.log                                     | ~70h 52min runner silence                                       |
+| Doublefire / cross-clone count | 3 sessions / 1 hour (2026-04-23 13:50/13:53/14:58)          | deploys.log + hourly-log.csv                            | Open P1 — must not run reset until guarded                      |
 
 ---
 
-## Hour 17 → 18 Tasks (flat list — standup-only execution)
+## Tasks (flat)
 
-> **Reranking rationale.** The sitemap fix remains the highest-leverage *external* win (41+ days of bleed, trivially scoped, one Jefe checkbox). But execution is blocked on Jefe input. The highest-leverage *internal* action this cycle is reducing the cost of the Hour 18 overdue-ping — pre-staging the template and ordering the touch-check first. T1 handles that. T2 is the standing jefe-touch op. T3 is the same sitemap cherry-pick proposal (carry-forward from Hour 16 T1), unchanged because Jefe has not responded — **carry-forward tasks are not "repetition", they are the correct action when preconditions are unmet.**
+**Format note:** Per `ops/HOURLY_AGENDA_FORMAT.md`, tasks are flat T1/T2/T3 executed by the next standup cycle. The task spec asks for explicit assignments to `build-cycle / design-polish / community-growth` runners; those runners do not exist — annotations below are kept as fiction-metadata so the spec is honored, but every annotation is **NO-OP** because all three are gated on the reconcile (B). T1 is executed by *this* cycle; T2 and T3 are for the next standup cycle (Hour 14 UTC, expected 2026-04-26T14:50Z if scheduler is healthy).
 
-### T1 — Fire Hour 18 overdue-ping IF both asks still untouched (first write op of Hour 18 standup)
+### T1 — File the second-blackout incident, write fresh agenda, retire dead pending stub, commit ops/ (THIS CYCLE)
 
-- **What:** If `stat`/`grep` confirms both incident docs still have mtime = file-creation time AND 0 checkboxes, create `ops/incidents/2026-04-20T18-00Z-jefe-asks-10h-overdue.md` (thin doc, ≤120 lines) cross-referencing Q1 (reset-vs-rebase, 11h post-file by then) and Q2 (sitemap, 3h post-file by then). Template stub is included in the commit plan below so next cycle doesn't re-derive the structure.
-- **Why:** Hour 15 T3 committed this runner to file the overdue-ping at UTC hour ≥ 18. Missing that trigger would quietly degrade the escalation ladder and leave Jefe without a clear "this is getting longer than the SLA" signal. Pre-staging the template means it's a single Write call in the Hour 18 cycle, not a fresh drafting session that eats verification time.
-- **How (Hour 18 standup):**
-  1. `stat -c "%y %n"` both ask files; `grep -c '\[x\]'` both.
-  2. If EITHER touched (mtime newer than file-creation OR any checkbox filled) → SKIP T1; reshuffle agenda same cycle to execute whichever decision Jefe made (sitemap regen, reset, rebase, or defer).
-  3. If BOTH untouched AND `date -u +%H` ≥ 18 → read pre-staged template from this cycle's commit (location: `ops/incidents/.pending/hour-18-overdue-ping.md`), copy to `ops/incidents/2026-04-20T18-00Z-jefe-asks-10h-overdue.md`, fill the timestamp and aging-deltas, commit.
-  4. If UTC hour < 18 (clock drift — unexpected) → defer by one cycle, log the drift.
-- **Deliverable (Hour 18):** either the filed overdue-ping incident, or a skip-line in the Hour 18 agenda documenting which ask was touched.
-- **Rollback:** incident file is thin and cross-referential; `git revert HEAD` safely removes it if Jefe responds mid-cycle.
+- **What:** Write `ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md` (done above), overwrite `ops/HOURLY_AGENDA.md` with this content, append `ops/deploys.log` STANDUP entry, append `ops/hourly-log.csv` row, retire `ops/incidents/.pending/hour-18-overdue-ping.md` to `.retired/`. Commit only `ops/` paths.
+- **Why:** Document the new ground truth before the next runner-fire (or human session) starts. The blackout-2 incident is the *single new artifact* that materially changes the decision tree from blackout-1: it explains why the answer to Q1 is now obviously B, and why Q2 is moot. Without this doc, the next agent will re-litigate the same decision space.
+- **How (executed this cycle):**
+  1. Wrote `ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md`.
+  2. `mv ops/incidents/.pending/hour-18-overdue-ping.md ops/incidents/.retired/hour-18-overdue-ping-NEVER-FIRED-blackout1-then-blackout2.md`.
+  3. Wrote this file (`ops/HOURLY_AGENDA.md`).
+  4. Appending `ops/deploys.log` and `ops/hourly-log.csv` (next).
+  5. `git add ops/ && git commit -m "ops: Hour 13 standup — file blackout-2 incident, recommend reset to origin/main"`. **No `git push`** — gated on B.
+- **Deliverable:** five files modified/added/moved, all under `ops/`. `git status --porcelain | grep -v '^??' | grep -v '^ M src/' | wc -l` should show ~6 staged paths after commit.
+- **Rollback:** None needed — all writes under `ops/`. If the incident text needs revision, next cycle amends.
+- **Fiction-assignment:** N/A — standup-own work.
 
-### T2 — Recurring jefe-touch check (first read op of every standup, continued)
+### T2 — Next cycle (Hour 14 UTC ~2026-04-26T14:50Z): scheduler health probe + Jefe-touch on blackout-2 incident
 
-- **What:** Unchanged from Hour 16 T2. `stat` + `grep -c '\[x\]'` on both ask docs as the opening operation of every standup.
-- **Why:** The one surface where Jefe converts asynchronous state (checkbox/mtime) into our action plan. If a touch is missed for a cycle, the overdue-ping can fire incorrectly or a decision sits idle.
-- **How (Hour 18 standup, first op — explicit commands):**
-  - `stat -c "%y %n" ops/incidents/2026-04-20T14-14Z-jefe-ask-reset-vs-rebase.md ops/incidents/2026-04-20T16-14Z-sitemap-wrong-domain.md`
-  - `grep -c '\[x\]' ops/incidents/2026-04-20T14-14Z-jefe-ask-reset-vs-rebase.md ops/incidents/2026-04-20T16-14Z-sitemap-wrong-domain.md`
-  - Compare against baseline in this agenda (Q1 mtime 14:18:13Z + 0 checkboxes; Q2 mtime 16:19:40Z + 0 checkboxes).
-  - If either advanced → execute Jefe's decision same cycle; if both flat AND hour ≥ 18 → T1.
-- **Deliverable:** reported in next agenda §Incidents.
-- **Rollback:** none — passive read-only.
+- **What:** Three checks.
+  1. Did Hour 14 fire? If yes, this file's mtime advances and the next standup commit lands. If not, escalate: file `ops/incidents/2026-04-26T14-50Z-blackout2-no-self-heal.md` describing the 3rd blackout in a week and request scheduler infra inspection (not another Jefe-ask checkbox).
+  2. Did Jefe edit `ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md`? `stat -c %Y` it and `grep -c '\[x\]'` it. Baseline: mtime ≈ this cycle's commit time, 0/4 checkboxes (the trailing "Open status checkboxes" block).
+  3. Did the news-briefing runner self-heal? `stat -c %Y src/data/news-briefing.json` — if mtime advanced past 2026-04-23T15:05Z, briefing fired again; if not, news is now ≥71h45m stale and dominates the user-impact priority.
+- **Why:** The next cycle should branch on three independent signals (scheduler, Jefe, news-runner) not on assumed state. Highest-leverage if all three are flat: file the 3rd-blackout escalation and stop writing new agendas (write a single "scheduler is broken" file and let humans intervene). Highest-leverage if any one is hot: pivot to executing it.
+- **How:**
+  ```bash
+  NOW=$(date -u +%s)
+  AGENDA_MTIME=$(stat -c %Y ops/HOURLY_AGENDA.md)
+  INCIDENT_MTIME=$(stat -c %Y ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md)
+  INCIDENT_CHECKS=$(grep -c '^- \[x\]' ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md)
+  NEWS_MTIME=$(stat -c %Y src/data/news-briefing.json)
+  # Branch on whether mtimes/check-counts advanced past this cycle's baselines.
+  ```
+- **Deliverable (conditional):** either a fresh standup commit (scheduler healthy), an escalation incident file (no self-heal), or an executed reconcile (Jefe answered).
+- **Rollback:** N/A — all writes under `ops/`.
+- **Fiction-assignment:** build-cycle = NO-OP (gated on B). design-polish = NO-OP (gated on B). community-growth = NO-OP (gated on news-runner self-heal).
 
-### T3 — Sitemap regen cherry-pick (carry-forward from Hour 16 T1; contingent on Jefe Q2)
+### T3 — Next *human* shell (not a scheduled-task sandbox): execute reconcile plan B, restart news-runner
 
-- **What:** **Unchanged from Hour 16 T1.** If Jefe Q2 APPROVE checkbox is ticked → run `node scripts/generate-sitemap.mjs`, stage `public/sitemap.xml` as a standalone commit, cherry-pick onto an origin/main-tracking branch, push, submit to GSC.
-- **Why:** Highest-leverage external win (41+ days of bleed, one-file diff, reversible). Carrying forward is correct behavior under flat-task regime — the task exists until either Jefe resolves it or an alternative path is authorized.
-- **How (Hour 18+ standup, only if T2 shows Q2 APPROVE):**
-  1. Verify T2 detected APPROVE on Q2 (single checkbox filled, not both — if DENY is filled instead, skip to T3 rollback note below).
-  2. Clean working tree of `ops/`-only changes into a temp stash if needed; `git checkout -b seo/sitemap-regen-degen0x origin/main`.
-  3. `node scripts/generate-sitemap.mjs`; verify URL count within ±2% of `find src/app -name page.tsx | wc -l`; verify all `<loc>` entries contain `degen0x.com`; verify no entries contain `cryptodegen.com`.
-  4. `git add public/sitemap.xml`; commit `seo: regenerate sitemap with correct degen0x.com domain (was cryptodegen.com, 41d+ bleed)`.
-  5. Push, verify live URL `https://degen0x.com/sitemap.xml` serves the new content (pending egress resolution), submit to GSC Sitemaps.
-  6. Kick the Hour 16 T3 rebrand-sweep plan (`ops/seo/2026-04-20-rebrand-sweep-plan.md`) as the IMMEDIATELY FOLLOWING commit on the same branch.
-- **Deliverable:** pushed sitemap regen commit + GSC submission + entry in `ops/seo/2026-04-20-sitemap-push.md`.
-- **Rollback:**
-  - If Q2 DENY: file brief note in a new `ops/seo/2026-04-20-sitemap-deny-followup.md` describing the path forward under the broader reconcile.
-  - If regen emits unexpected URL shape → `git revert HEAD`; no other commits touched since branched from `origin/main`.
+- **What:** Two-step reconcile, performed from a single non-sandbox shell so no doublefire race can occur.
+  1. **Archive local ops/ history**, then reset:
+     ```bash
+     git fetch origin
+     git checkout -B archive/ops-2026-04-09-thru-04-23 master
+     git push origin archive/ops-2026-04-09-thru-04-23
+     git checkout master
+     git reset --hard origin/main
+     # If push needed (it isn't, since master will == origin/main):
+     # git push --force-with-lease origin master
+     ```
+  2. **Triage `98771ac74` (design polish on AuthorAttribution+RelatedContent)**: cherry-pick onto a feature branch, eyeball for conflicts vs origin's universal schema work, decide keep-or-drop. *Optional* — not blocking.
+  3. **Restart news-briefing scheduled task** so /news widget gets a fresh briefing for 2026-04-26. Verify scheduler infrastructure isn't itself the failure mode (the doublefire pattern + cross-clone HEADs at 2026-04-23 13:50/13:53/14:58Z suggest the scheduler is firing from multiple sandboxes; pin to a single one if possible).
+- **Why:** This is the single highest-leverage action across the next 24h. Reset clears the +17/−69 divergence, drops two redundant/regressive code commits, archives the ops/ documentation onto a separate branch where it can be referenced but not muddy master. Restart restores user-visible freshness on /news.
+- **How (cannot be executed by this runner):**
+  - Authorization: scheduled-task spec doesn't grant `git push` or destructive git ops.
+  - Safety: doublefire makes any sandbox-side reset unsafe regardless of authorization.
+  - Therefore: T3 is a Jefe-or-equivalent-human action. The blackout-2 incident file documents this.
+- **Deliverable:** master == origin/main (push not actually needed since origin is the canonical truth); `archive/ops-2026-04-09-thru-04-23` branch live on origin; news-briefing.json mtime advances within an hour of restart.
+- **Rollback:** the archive branch *is* the rollback. If anything in the discarded ops/ work turns out to matter, cherry-pick from `archive/ops-2026-04-09-thru-04-23`.
+- **Fiction-assignment:** build-cycle = OWNER-of-reset (NO-OP this hour, executes when human shell available). design-polish = re-cherry-pick `98771ac74` candidate (NO-OP this hour). community-growth = restart news-runner once master is reset (NO-OP this hour, but this is the highest community-growth lift available — fresh /news the moment cadence restarts).
 
 ---
 
-## Commit plan for this cycle
+## Commit Plan (executed this cycle)
 
-Bundled commit `ops: Hour 17 UTC standup — rebrand sweep plan + overdue-ping pre-stage (both asks still flat)`:
+```bash
+# All within ops/ — no src/ touched.
+git add ops/HOURLY_AGENDA.md \
+        ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md \
+        ops/incidents/.retired/hour-18-overdue-ping-NEVER-FIRED-blackout1-then-blackout2.md \
+        ops/deploys.log \
+        ops/hourly-log.csv
 
-- `ops/HOURLY_AGENDA.md` (this file)
-- `ops/seo/2026-04-20-rebrand-sweep-plan.md` (new — Hour 16 T3 deliverable, 20 refs catalogued across 5 files)
-- `ops/incidents/.pending/hour-18-overdue-ping.md` (new — template stub for T1 next cycle; `.pending/` keeps it out of the active incident list until fired)
-- `ops/deploys.log` (entry appended)
-- `ops/hourly-log.csv` (entry appended)
+# Note: the prior agenda for 2026-04-23 was written but never committed — this commit
+# overwrites it cleanly with the 2026-04-26 content. The diff is large; that's expected.
+# The .pending/hour-18-overdue-ping.md is gone as a side-effect of the mv (git tracks rm).
 
-No changes to `src/`, `public/`, or `scripts/`. Standup-only; all writes are under `ops/`. **This is deliberately NOT a repeat of Hour 16 — Hour 17 ships the rebrand-sweep plan and the overdue-ping pre-stage, neither of which existed at Hour 16 close.**
+git commit -m "ops: Hour 13 UTC standup (Sunday) — file blackout-2 incident, recommend reset to origin/main"
+
+# DO NOT push. Push is part of plan B and must come from a single human shell,
+# not from this scheduled-task sandbox (doublefire P1).
+```
 
 ---
 
-**One-line summary:** *Hour 17: shipped rebrand-sweep plan (20 refs, 5 files) + pre-staged Hour 18 overdue-ping template; priority = file the overdue-ping at Hour 18 if both Jefe asks remain untouched (Q1 9h 16min post-file, Q2 1h 0min post-file, 0/0 checkboxes).*
+## One-line summary (for the runner return-string)
+
+`Hour 13: shipped blackout-2 incident, priority = plan-B reset (next human shell)`
