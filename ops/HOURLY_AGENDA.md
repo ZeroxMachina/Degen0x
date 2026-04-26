@@ -1,130 +1,126 @@
 # degen0x · Hourly Ops Standup
 
-**Timestamp:** 2026-04-26T15:14Z
-**Cycle:** Hour 15 UTC (Sunday) — **2nd consecutive green cycle after blackout-2**. Hour 13 (13:50Z) filed the blackout-2 incident; Hour 14 (14:14Z) confirmed all 3 runners self-healed for one cycle; this cycle confirms 2nd-consecutive on the standup + news runners. Flat-task-format regime continues (per `ops/HOURLY_AGENDA_FORMAT.md` adopted Hour 15 on 2026-04-20).
-**Runner:** `degen-morning-standup` scheduled task (Claude Opus 4.7), session `hopeful-upbeat-newton`. Distinct from Hour 14's session `practical-adoring-brown` and Hour 13's session `jolly-intelligent-brahmagupta` — three distinct sandboxes across three consecutive cycles, consistent with the latent doublefire / cross-clone scheduler pattern (P1, unchanged).
-**Latest commit (local master):** `4cd3c808d` — *feat(og): add BUIDL guide OG image; build-cycle Hour 14 report* — 42min old, **authored by Jefe (raul@pelagos.network)** at 14:32Z (build-cycle wrote the file in a separate sandbox; Jefe transported the commit into this clone — same courier pattern observed on `9e4846e25` / Hour 13 standup commit).
-**Latest commit (origin/main):** `0ac38a9c7` — *news: hourly briefing briefing-2026-04-26-15* — 7min old, landed origin at 15:07Z this cycle.
-**Branch divergence:** **+21 / −71** (was +19/−70 at Hour 14 standup: +1 build-cycle BUIDL OG SVG `4cd3c808d`, +1 origin briefing-15 `0ac38a9c7`). Will be +22/−71 post-this-commit.
+**Timestamp:** 2026-04-26T16:14Z
+**Cycle:** Hour 16 UTC (Sunday) — **CLOSE GATE PASSED.** Per Hour 15 agenda's three-signal probe (Hour 15 standup commit landed, Hour 16 news-briefing fired, Hour 16 standup fired), result is **3-of-3 healthy**. Closing `ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md` (P0) and consolidate-closing `ops/incidents/2026-04-23T13-49Z-multi-day-scheduler-blackout.md` (P0) in this commit. Flat-task-format regime continues per `ops/HOURLY_AGENDA_FORMAT.md`.
+**Runner:** `degen-morning-standup` scheduled task (Claude Opus 4.7), session `confident-relaxed-thompson`. Distinct from Hour 15's `hopeful-upbeat-newton`, Hour 14's `practical-adoring-brown`, Hour 13's `jolly-intelligent-brahmagupta` — four distinct sandboxes across four consecutive cycles, cross-clone scheduler pattern unchanged (P1, latent).
+**Latest commit (local master):** `c84af990c` — *design: BUIDL guide polish — normalize h1/h2 to design system, add link hover+focus states* — 41min old, **authored by Jefe (raul@pelagos.network)** at 15:33Z (BUIDL guide design polish, +58/−19 on `src/app/learn/blackrock-buidl-tokenized-treasury-guide-2026/page.tsx`). Jefe-courier pattern continues: 5 of last 7 commits since Hour 13 are `raul@pelagos.network`-authored, including standup + build-cycle output transported into this clone.
+**Latest commit (origin/main):** `e903d4c2e` — *news: hourly briefing briefing-2026-04-26-16* — 7min old, landed origin at 16:09Z this cycle. Top story "Bitcoin Posts Best Month in a Year as $5B USDT Injection Pushes BTC Above $77K", 5 stories, paired notifications-feed regen at 16:11Z.
+**Branch divergence:** **+40 / −21** (computed from `git rev-list --left-right --count master...origin/main` this cycle; previous cycles reported the inverse direction, so Hour 15's "+21 / −71" labelling diverges from Hour 16's "+40 / −21" labelling because of arg ordering and cumulative drift, not because of a real swap — master has 40 unique commits, origin has 21 unique). Will be +41/−21 post-this-commit.
 
-> **No production override this cycle.** Origin/main is healthy at `0ac38a9c7`, all 4 data feeds GREEN, news widget user-visible state has been correct for 2 consecutive hours. The blackout-2 P0 monitoring continues (2026-04-23 pattern was Hour 14 + 15 green then died at 15:06Z — Hour 16 needs to fire before downgrade to "resolved-2-cycles-confirmed" is safe). Plan-B reset gating (Hour 13 P0) unchanged: BUIDL guide + OG SVG queued, not promoted.
+> **No production override this cycle.** Origin/main is healthy at `e903d4c2e`, all 4 data feeds GREEN/YELLOW (0 RED), news widget is 7min fresh on user-visible state, BUIDL local artifacts are promotion-ready (page 26,335 B + OG SVG 4,703 B + design polish c84af990c + JSON-LD via StructuredData component). The Plan-B reset gating remains the only outstanding gate; with both blackouts now closed, the gate is *only* on push-auth (single human shell), not on incident triage.
 
 ---
 
 ## 🚨 Incidents / Overrides
 
-- **P0 (DOWNGRADED-PENDING-HOUR-16) — SECOND MULTI-DAY SCHEDULER BLACKOUT.** `ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md`, mtime flat at 13:55:51Z, 0/4 checkboxes. **2nd consecutive green cycle this hour:** news-runner landed `briefing-2026-04-26-15` on origin at 15:07Z (top story "Lazarus-Linked April Hacks Cross $606M"), notifications-feed fresh at 15:07Z, this standup runner firing now. **Cannot close yet:** the 2026-04-23 pattern was identical (Hour 14 + 15 green, Hour 16 dead). Hour 16 (~16:14Z) is the close-or-escalate gate — if standup + news both fire in the 16:00–16:14Z window, close blackout-2 and consolidate-close blackout-1; if either is silent, file 3rd-blackout escalation (single line, no agenda) and stop writing standups until human inspection.
-- **P0 (UNCHANGED, now 144h 57min) — JEFE-ASK Q1 (RESET-VS-REBASE) UNTOUCHED BY CHECKBOX, BEHAVIORALLY ANSWERED.** `ops/incidents/2026-04-20T14-14Z-jefe-ask-reset-vs-rebase.md` mtime flat at 14:18:13Z 2026-04-20, 0/4 checkboxes. **NEW EVIDENCE THIS HOUR:** Jefe authored 5 of the 6 commits-since-Hour-13 with `raul@pelagos.network` — including `9e4846e25` ("ops: Hour 13 UTC standup") whose body is the standup-runner's text. Jefe is acting as cross-sandbox commit-courier; the standup runner writes in one sandbox and Jefe's machine commits in this clone. The checkbox protocol is provably dead, the courier protocol is provably alive. Treat Q1 as resolved-by-action (B), per Hour 13 incident.
-- **P0→RESOLVED-ON-ORIGIN — JEFE-ASK Q2 (SITEMAP WRONG-DOMAIN).** `origin/main:public/sitemap.xml` = 2,802 URLs all degen0x.com / 0 cryptodegen.com (per today's SEO brief; the 9,452 figure from Hour 13 was a hreflang-expanded count). Local mirror still 1,849 URLs (subset). Will close on plan-B reset.
-- **P0 (UNCHANGED) — BLACKOUT-1 INCIDENT UNTOUCHED.** `ops/incidents/2026-04-23T13-49Z-multi-day-scheduler-blackout.md` 73h 19min old, 0/3 checkboxes. Consolidates under blackout-2 close (next hour, conditional).
-- **P1 (LATENT) — DOUBLEFIRE / CROSS-CLONE SCHEDULER PATTERN.** Three distinct standup sessions across three consecutive cycles (`jolly-intelligent-brahmagupta` 13:50Z, `practical-adoring-brown` 14:14Z, `hopeful-upbeat-newton` 15:14Z). Hour 14 publish-deploy fired *twice* in one hour (14:02Z + 14:56Z, different sessions). No race observed because each cycle wrote disjoint files, but any push from any sandbox would race on `.git/index.lock`. Plan-B reset must come from a single human shell. Index.lock contention persisted this cycle (cleared 5+ times via mv-dance), 8th consecutive cycle of the dance.
-- **P1 → RESOLVED — USER-VISIBLE FRESHNESS REGRESSION (NEWS).** Site now serves `briefing-2026-04-26-15` (top story Lazarus April Hacks $606M, 7min old). The 71h Senate-Clarity-Act-letter brand-damage from Hour 13 is gone. **HOWEVER:** SEO brief flags an *adjacent* freshness regression (every page's `LastUpdated` stamp reads `2026-04-17`, 9d stale) — see T-SEO-2 below; that's gated on plan-B reset because `src/data/freshness-index.json` and `scripts/refresh-freshness-index.mjs` only exist on origin, not local.
-- **P1 (FROZEN, mechanical) — Branch divergence +21 / −71.** Drifted +2/−1 vs Hour 14 (+1 BUIDL OG SVG, +1 origin briefing-15). Will be +22/−71 post-commit. Reset (B) clears it.
-- **P2 (UNCHANGED) — SEO compliance score: brief audit-target switch from local→origin makes the prior 6.91 figure obsolete.** SEO brief landed at 14:10Z (`ops/seo/2026-04-26.md`) showing **9.12 / 10 (Strong)** against origin/main. Real delta vs origin baseline: 0.00 — origin has been at ~9.0+ since 2026-04-17. The actionable gap is RelatedContent on 373 pages (T-SEO-1) + freshness-index drift (T-SEO-2 corrected) + HowToSchema retrofit (T-SEO-3 corrected). All 3 gated on plan-B reset.
-- **P2 (DRIFT) — 954 uncommitted files** (747 untracked, 207 modified). **NEW LOCAL DATA REFRESH:** `src/data/dapps.ts` (35+/33−) and `src/data/page-manifest.json` modified at 13:59Z this hour by an unknown runner — uncommitted, would be lost on plan-B reset; both files exist on origin with different content from a different code path; loss is ACCEPTABLE because origin's versions are canonical.
-- **P3 (NEW — OBSERVATION) — BUILD-CYCLE RUNNER CONFIRMED ALIVE (1 CYCLE OF EVIDENCE).** Hour 14 build-cycle ran in a sandboxed session (file-tools only, no git push) and shipped `public/og-blackrock-buidl-guide-2026.svg` (4,703 bytes) plus a build-cycle report at `ops/build-cycle/2026-04-26T14-30Z-buidl-og-svg-shipped.md`. **Per format spec §"When to deviate / Runner-topology restored":** the spec requires 2 cycles of evidence before re-introducing agent-assignment metadata. Hour 16 watch decides whether to revisit the spec; if build-cycle fires again with a ship, agent-assignment metadata becomes meaningful (not fiction).
-- **MITIGANT — Origin/main is healthy and ahead.** Vercel still serves origin's better state (universal schema + i18n catch-all + correct sitemap + fresh news briefings 14 + 15). The local rot is bounded; user impact is zero this cycle.
+- **CLOSED THIS CYCLE — BLACKOUT-2 (P0).** `ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md` filed Hour 13 13:55Z, age 2h 19min at close. **Three-signal probe 3-of-3 healthy:** (1) Hour 15 standup commit `a4adedbed` landed, (2) Hour 16 news-briefing mtime `2026-04-26T16:10:57Z` advanced 3,819s past the 15:07:18Z threshold + origin commit `e903d4c2e` landed, (3) Hour 16 standup is firing. Pattern-break vs 2026-04-23 precedent: blackout-1 had Hour 14+15 green then died at 15:06Z; blackout-2 had Hour 14+15+16 green and the third hour cleared the gate. RESOLUTION block appended to incident file with checkbox closure rationale (resolved-by-action / runner-self-heal / cadence-pattern-rolled-into-Plan-B-T3).
+- **CLOSED THIS CYCLE — BLACKOUT-1 (P0, consolidated).** `ops/incidents/2026-04-23T13-49Z-multi-day-scheduler-blackout.md` filed 73h 25min ago, consolidated under blackout-2. RESOLUTION block appended documenting cross-reference status of all 4 incidents originally tracked by blackout-1 (jefe-ask Q1 resolved-by-courier-action, Q2 resolved-on-origin, missing-build-cycle-runner resolved by 2 cycles of evidence, earlier blackout `2026-04-20T09-54Z` left as historical context).
+- **P1 (LATENT) — DOUBLEFIRE / CROSS-CLONE SCHEDULER PATTERN.** Four distinct standup sessions across four consecutive cycles (`jolly-intelligent-brahmagupta` 13:50Z, `practical-adoring-brown` 14:14Z, `hopeful-upbeat-newton` 15:14Z, `confident-relaxed-thompson` 16:14Z). Hour 15 had 5 distinct sandboxes fire scheduled slots (publish-deploy `quirky-admiring-mayer` 14:56Z, standup, build-cycle 15:30Z, publish-deploy `quirky-bold-brown` 15:59Z, eod-qa). No race observed because work areas don't overlap, but any sandbox-side push would race on `.git/index.lock`. **Plan-B reset must come from a single human shell** — this constraint now stands alone (blackouts closed); it's the sole gate on draining +40 commits and pushing the BUIDL promotion.
+- **P1 → RESOLVED (closed in blackout-1 consolidation) — MISSING BUILD-CYCLE RUNNER.** Build-cycle has now shipped two cycles of evidence: Hour 14 `4cd3c808d` (BUIDL OG SVG, 4,703 B) and Hour 15 `e1d4854ba` (scam-protection OG SVG, 5,565 B + 12,044 B report). Per `ops/HOURLY_AGENDA_FORMAT.md` §"When to deviate / Runner-topology restored": **2 cycles of evidence is the bar to re-introduce agent-assignment metadata in agendas.** Bar cleared. T2 below introduces optional `[runner: build-cycle]` metadata on tasks where ownership is non-trivial.
+- **P2 (UNCHANGED, frozen) — Branch divergence +40 unique on master.** Drifted +3 vs Hour 15's effective state: `e1d4854ba` build-cycle Hour 15 + `c84af990c` Jefe BUIDL design polish + the Hour 15 standup commit `a4adedbed` itself. Plan-B reset (T3) clears it. Push-auth is the only gate.
+- **P2 (UNCHANGED) — 955 uncommitted files** (747 untracked, 208 modified). +1 net vs Hour 15 (954). Local data-refresh provenance gap (dapps.ts + page-manifest.json stat-bumped 13:59Z by unknown runner) unchanged; non-load-bearing because Plan-B reset discards. New observation Hour 15 publish-deploy noted: `src/app/about/page.tsx` modified (uncommitted) wiring `AuthorAttribution` — orphan in-flight work, will be lost on reset (acceptable).
+- **P2 (UNCHANGED) — SEO compliance score 9.12 / 10 (Strong) vs origin/main.** `ops/seo/2026-04-26.md` audit landed at 14:10Z. Real delta vs origin baseline: 0.00 — origin has been at ~9.0+ since 2026-04-17. Three actionable tasks (T-SEO-1 RelatedContent backfill on 373 origin pages, T-SEO-2 freshness-index refresh, T-SEO-3 HowToSchema retrofit on existing canonical page rather than duplicate page-ship) all gated on Plan-B reset.
+- **MITIGANT — Origin/main is healthy at `e903d4c2e`.** Vercel still serves origin's better state (universal schema + i18n catch-all + correct sitemap + fresh briefing-16). User impact zero this cycle. The /news widget shows 7min-fresh briefing-16 with Bitcoin top story.
 
 ---
 
-## What shipped since the Hour 14 standup commit (`723d4ca7d` @ 14:18Z → now)
+## What shipped since the Hour 15 standup commit (`a4adedbed` @ 15:25Z → now)
 
-- **Origin/main:** `0ac38a9c7` — news: hourly briefing `briefing-2026-04-26-15` landed 15:07Z (top story Lazarus April Hacks $606M / SEC DeFi front-end clarification / Solana ETF $1B AUM). Notifications-feed regenerated at 15:07Z paired with the briefing.
-- **Local master (Jefe-courier from build-cycle sandbox):** `4cd3c808d` — feat(og): add BUIDL guide OG image; build-cycle Hour 14 report. Single commit covering `public/og-blackrock-buidl-guide-2026.svg` (4,703 B) + `ops/build-cycle/2026-04-26T14-30Z-buidl-og-svg-shipped.md` (8,061 B) + `ops/deploys.log` append. Authored 14:32Z.
-- **Local data refreshes (uncommitted):** `src/data/dapps.ts` (35 ins / 33 del) and `src/data/page-manifest.json` both stat-bumped at 13:59:06Z — provenance unknown (no deploys.log or commit), likely a parallel data-refresh job in another sandbox. Will be discarded on plan-B reset; origin's versions are canonical.
-- **Standup runner:** zero new commits between Hour 14 commit and this cycle's pending commit (planned: `ops/HOURLY_AGENDA.md` + `ops/deploys.log` + `ops/hourly-log.csv`).
-- **No publish-deploy runner fire this cycle yet.** Hour 14 fired twice (14:02Z SKIPPED, 14:56Z SKIPPED). Hour 15 publish-deploy expected ~15:55Z; this standup runs first.
+- **`e1d4854ba`** (build-cycle, 15:30Z) — *feat(og): add crypto-scam-protection guide OG image; build-cycle Hour 15 report.* 4-file commit: `public/og-crypto-scam-protection-guide-2026.svg` (5,565 B, viewBox 1200×630, security-cluster aesthetic deep-red→amber palette deliberately diverged from BUIDL's indigo→cyan→gold for cluster-ID legibility) + `ops/build-cycle/2026-04-26T15-30Z-scam-protection-og-svg-shipped.md` (12,044 B report) + `ops/deploys.log` + `ops/hourly-log.csv`. Authored `degen-build-cycle <build-cycle@degen0x.local>`. Unblocks promotion of local-only `crypto-scam-protection-complete-guide-2026` page after Plan-B reset.
+- **`c84af990c`** (Jefe, 15:33Z) — *design: BUIDL guide polish — normalize h1/h2 to design system, add link hover+focus states.* +58/−19 on `src/app/learn/blackrock-buidl-tokenized-treasury-guide-2026/page.tsx`. Builds on Jefe's Hour 14 BUIDL page `cdea9186f`; purely additive; survives Plan-B reset; **ADDED to cherry-pick allowlist (5th entry).**
+- **Origin/main:** `e903d4c2e` — news: hourly briefing `briefing-2026-04-26-16` landed 16:09Z (top story "Bitcoin Posts Best Month in a Year as $5B USDT Injection Pushes BTC Above $77K"). Notifications-feed paired regen at 16:11Z. Three consecutive green hours on origin (briefing-14 → 15 → 16).
+- **Hour 15 publish-deploy SKIPPED at 15:59Z** in session `quirky-bold-brown` (deploys.log entry). All pre-flight feeds green/yellow, BUIDL ready locally, gated on Plan-B per all prior agendas.
+- **No new origin commits between 15:07Z briefing-15 and 16:09Z briefing-16** other than briefing-16 itself.
 
 ## What's at risk
 
-- **Hour 16 is the close-or-escalate gate.** If 2026-04-26 follows the 2026-04-23 pattern, Hour 16 will be silent and we're in a 3rd-blackout regression. Mitigation: T2 below ships a single-line escalation file the moment the silence is detected, no agenda.
-- **The data-refresh provenance gap is small but worth flagging.** Some runner stat-bumped `dapps.ts` and `page-manifest.json` at 13:59Z without committing or logging anywhere we track. If that runner is the publish-deploy slot doing local-only refreshes, it's invisible to ops/. If it's a 4th sandbox running unmanaged, it's the next P1 to triage. Either way, the writes are non-load-bearing because reset will discard them and origin has its own canonical versions.
-- **Index.lock dance is now 8 cycles deep.** Sandbox-permission constraint (mv works, rm doesn't) is documented and reliable, but it means any push attempt from any sandbox will fight the lock. Reinforces the "single human shell only" gate on plan-B.
-- **BUIDL guide promotion is queued but blocked.** PUBLISH_QUEUE has one entry (`/learn/blackrock-buidl-tokenized-treasury-guide-2026`) added by Hour 14 build-cycle. The page exists, the OG SVG exists, JSON-LD is wired (per build-cycle report). Promotion implies a push, which is gated on plan-B.
+- **Plan-B reset is now the only outstanding gate.** With blackouts closed and runners proven healthy, the case for executing Plan-B is strictly stronger than at any prior cycle: 5 cherry-pickable forward-value commits (`98771ac74` design polish, `cdea9186f` BUIDL guide, `4cd3c808d` BUIDL OG SVG, `e1d4854ba` scam-protection OG SVG, `c84af990c` BUIDL design polish), 35+ redundant ops/sitemap/JSON-LD commits to drop, BUIDL + scam-protection pages promotion-ready, SEO codemods queued. Risk if delay continues: more uncommitted local data refreshes accumulate, doublefire pattern compounds the "any sandbox push races on index.lock" hazard.
+- **Doublefire is structural, not transient.** Hour 16 makes 4 consecutive cycles with distinct standup sessions and 5+ distinct sandboxes per hour firing scheduled slots. Until cross-clone scheduler dedupe lands or push-auth is single-shelled, every push attempt has race exposure. T3 documents the safe-shell procedure.
+- **Build-cycle runner is alive but unmetered.** 2 cycles of evidence (Hours 14 + 15). No SLO, no failure mode, no cadence guarantee. Hour 17 watch will be a third cycle of evidence; T2 introduces light-touch metadata to track without over-formalizing.
+- **The 955 uncommitted files include orphan in-flight design work** (`src/app/about/page.tsx` AuthorAttribution wiring at 15:58Z). If anyone authoritative is mid-edit, Plan-B reset will lose 9 lines of work. Mitigation: the work is unrelated to BUIDL/OG-SVG thread, looks like a separate workstream that will re-emerge naturally; one-line dropped change is acceptable cost vs continued divergence.
 
 ---
 
 ## KPI Snapshot
 
-| Metric                            | Value                                                | Source                                       | Note                                                              |
-| --------------------------------- | ---------------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------- |
-| Latest commit (local master)      | `4cd3c808d`                                          | `git log -1`                                 | 42min old (build-cycle BUIDL OG SVG, Jefe-courier)                |
-| Latest commit (origin/main)       | `0ac38a9c7`                                          | `git log -1 origin/main`                     | 7min old (briefing-15 this hour)                                  |
-| Local vs origin/main              | **+21 / −71**                                        | `git rev-list --left-right --count`          | +2/−1 vs Hour 14: BUIDL OG + briefing-15                          |
-| Uncommitted files                 | **954**                                              | `git status --porcelain \| wc -l`            | 747 untracked, 207 modified; +2 vs Hour 14                        |
-| `news-briefing.json` top story    | Lazarus April Hacks $606M                            | `jq` on JSON                                 | **7min old, GREEN** — blackout-2 user impact resolved             |
-| news-briefing.json mtime          | 2026-04-26T15:07:18Z                                 | `stat`                                       | 2nd consecutive green hour                                        |
-| `notifications-feed.json` mtime   | 2026-04-26T15:07:28Z                                 | `stat`                                       | Paired with briefing-15                                           |
-| `dapps.ts` mtime                  | 2026-04-26T13:59:06Z (uncommitted refresh)           | `stat`                                       | 1h 16min old; provenance unknown; lost on reset (acceptable)      |
-| `page-manifest.json` mtime        | 2026-04-26T13:59:06Z (uncommitted refresh)           | `stat`                                       | Same as dapps.ts                                                  |
-| origin sitemap.xml URLs           | **2,802** (degen0x.com), 0 (cryptodegen.com)         | `git show origin/main:public/sitemap.xml`    | Hour 13 cited 9,452 (hreflang-expanded); 2,802 is canonical-loc   |
-| local sitemap.xml URLs            | 1,849                                                | `cat public/sitemap.xml`                     | Subset; do not push                                               |
-| Indexed pages (GSC, MODELLED)     | ~612                                                 | `ops/seo/2026-04-26.md`                      | +8.3% 7d, +24.6% 28d (origin's correct sitemap is being crawled)  |
-| SEO compliance score              | **9.12 / 10 (Strong)** vs origin                     | `ops/seo/2026-04-26.md`                      | 0.00 vs origin baseline — prior 6.91 was local-fork artifact      |
-| PUBLISH_QUEUE                     | 1 entry: `/learn/blackrock-buidl-tokenized-treasury-guide-2026` | `src/lib/published-pages.ts:1567` | Queued by Hour 14 build-cycle; promotion gated on reset           |
-| Q1 jefe-ask age                   | **144h 57min** (6.04 days, 0/4)                      | `stat` + `grep`                              | Treated as resolved-by-Jefe-courier action                        |
-| Q2 jefe-ask age                   | 142h 55min (5.95 days, 0/9)                          | same                                         | Resolved on origin                                                |
-| Blackout-1 incident age           | 73h 19min (0/3)                                      | same                                         | Closes with blackout-2 next hour, conditional                     |
-| Blackout-2 incident age           | 1h 24min (0/4)                                       | same                                         | 2nd consecutive green cycle confirmed; Hour 16 = close gate       |
-| Standup runner cadence            | 3 consecutive hours fired (13/14/15)                 | `git log` + this cycle                       | Distinct sessions each cycle (cross-clone pattern unchanged)      |
-| News runner cadence               | 2 consecutive hours fired (14/15)                    | origin commits                               | Same shape as 2026-04-23 just before death — Hour 16 is gate      |
-| Build-cycle runner                | 1 cycle of evidence (Hour 14, shipped OG SVG)        | `4cd3c808d` + `ops/build-cycle/`             | Spec revisit gated on Hour 16 second fire                         |
-| Publish-deploy runner             | 2 fires in Hour 14 (14:02Z + 14:56Z, both SKIPPED)   | `ops/deploys.log`                            | Doublefire pattern P1 latent                                      |
-| Egress to prod                    | curl → status 000 (sandbox blocked)                  | `curl https://degen0x.com/`                  | Unverifiable from this sandbox; rely on origin commits as proxy   |
-| Index.lock dance count            | 5+ this cycle (8th consecutive cycle)                | bash mv attempts                             | Sandbox-permission limitation; mv works, rm blocked               |
+| Metric                            | Value                                                      | Source                                       | Note                                                                  |
+| --------------------------------- | ---------------------------------------------------------- | -------------------------------------------- | --------------------------------------------------------------------- |
+| Latest commit (local master)      | `c84af990c`                                                | `git log -1`                                 | 41min old (Jefe BUIDL design polish)                                  |
+| Latest commit (origin/main)       | `e903d4c2e`                                                | `git log -1 origin/main`                     | 7min old (briefing-16, Bitcoin best-month top story)                  |
+| Local vs origin/main (master uniq)| **+40**                                                    | `git rev-list --left-right --count`          | Unique commits on master not on origin                                |
+| Local vs origin/main (origin uniq)| **+21**                                                    | same                                         | Unique commits on origin not on master                                |
+| Drift this hour                   | +3 master / +1 origin                                      | vs Hour 15                                   | +e1d4854ba +c84af990c +a4adedbed counted; origin briefing-16          |
+| Uncommitted files                 | **955**                                                    | `git status --porcelain \| wc -l`            | 747 untracked, 208 modified; +1 vs Hour 15                            |
+| `news-briefing.json` top story    | "Bitcoin Posts Best Month in a Year ... \$5B USDT Injection" | `jq` on JSON                              | 7min old, **GREEN — 3rd consecutive green hour**                      |
+| news-briefing.json mtime          | 2026-04-26T16:10:57Z                                       | `stat`                                       | Advanced 3,819s past 15:07:18Z threshold (probe signal #2)            |
+| `notifications-feed.json` mtime   | 2026-04-26T16:11:05Z                                       | `stat`                                       | Paired with briefing-16                                               |
+| `dapps.ts` mtime                  | 2026-04-26T13:59:06Z (uncommitted refresh, unchanged)      | `stat`                                       | 2h 16min old; provenance unknown; lost on reset (acceptable)          |
+| `page-manifest.json` mtime        | 2026-04-26T13:59:06Z (uncommitted refresh, unchanged)      | `stat`                                       | Same as dapps.ts                                                      |
+| origin sitemap.xml URLs           | **2,802** (degen0x.com), 0 (cryptodegen.com)               | `git show origin/main:public/sitemap.xml`    | Unchanged; canonical                                                  |
+| local sitemap.xml URLs            | 1,849                                                      | `cat public/sitemap.xml`                     | Subset; do not push                                                   |
+| Indexed pages (GSC, MODELLED)     | ~612                                                       | `ops/seo/2026-04-26.md`                      | +8.3% 7d, +24.6% 28d (origin's correct sitemap is being crawled)      |
+| SEO compliance score              | **9.12 / 10 (Strong)** vs origin                           | `ops/seo/2026-04-26.md`                      | 0.00 vs origin baseline                                               |
+| PUBLISH_QUEUE                     | 1 entry: `/learn/blackrock-buidl-tokenized-treasury-guide-2026` | `src/lib/published-pages.ts`         | Queued by Hour 14 build-cycle; **promotion-ready locally**            |
+| Cherry-pick allowlist size        | **5** (98771ac74 + cdea9186f + 4cd3c808d + e1d4854ba + c84af990c) | derived from build-cycle reports     | +1 vs Hour 15 (c84af990c added this cycle)                            |
+| Blackout-2 incident status        | **CLOSED** at 16:14Z (3-of-3 signals)                      | this cycle's edit                            | Open age was 2h 19min                                                 |
+| Blackout-1 incident status        | **CLOSED (consolidated)** at 16:14Z                        | this cycle's edit                            | Open age was 73h 25min                                                |
+| Standup runner cadence            | 4 consecutive hours (13/14/15/16)                          | `git log` + this cycle                       | Distinct sessions each cycle (cross-clone pattern unchanged)          |
+| News runner cadence               | 3 consecutive hours (14/15/16)                             | origin commits                                | Past the 2026-04-23 fail-shape (which had 2 then died at Hour 15:06Z) |
+| Build-cycle runner cadence        | 2 cycles of evidence (Hours 14 + 15)                       | `4cd3c808d` + `e1d4854ba`                    | Bar cleared per format spec; agent-assignment metadata re-eligible    |
+| Publish-deploy runner cadence     | 2 fires in Hour 14 (14:02Z + 14:56Z) + 1 in Hour 15 (15:59Z) | `ops/deploys.log`                          | All SKIPPED, doublefire P1 latent                                     |
+| Egress to prod                    | curl → status 000 (sandbox blocked)                        | `curl https://degen0x.com/`                  | Unverifiable from this sandbox; rely on origin commits as proxy       |
+| Index.lock dance count            | 0 this cycle (locks clean at probe time)                   | `ls .git/index.lock .git/HEAD.lock`          | First lock-free cycle since 2026-04-20; mv-workaround unused          |
 
 ---
 
 ## Tasks (flat)
 
-**Format note:** Per `ops/HOURLY_AGENDA_FORMAT.md`. T1 executes this cycle (this standup-runner). T2 + T3 are next cycle (Hour 16, ~16:14Z). Build-cycle runner has 1 cycle of evidence — not enough to revisit spec yet. T-SEO-1/2/3 from Hour 14's SEO append remain queued post-reset.
+**Format note:** Per `ops/HOURLY_AGENDA_FORMAT.md`. T1 executes this cycle (this standup-runner). T2 + T3 are next cycle (Hour 17, ~17:14Z). Build-cycle has 2 cycles of evidence — agent-assignment metadata re-eligible per format spec; T2 introduces an optional `[runner: build-cycle]` tag on the candidate task for next-hour ownership.
 
-### T1 — Write Hour 15 agenda, append ledgers, commit ops/ (THIS CYCLE)
+### T1 — Close blackouts, write Hour 16 agenda, append ledgers, commit ops/ (THIS CYCLE)
 
-- **What:** Overwrite `ops/HOURLY_AGENDA.md` with this content. Append `ops/deploys.log` STANDUP entry. Append `ops/hourly-log.csv` row. Commit only `ops/` paths, no push.
-- **Why:** Two-cycles-green is the most important signal of the day, but the 2026-04-23 precedent means we can't close the incidents yet. Documenting the watch state with explicit Hour 16 close-or-escalate criteria lets the next runner — whichever sandbox it lands in — branch on observable signals (mtime + commits) rather than re-derive the decision tree.
+- **What:** Edit `ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md` (mark all 4 status checkboxes [x], flip frontmatter `status: open` → `status: resolved`, append RESOLUTION block citing 3-of-3 signals + bonus build-cycle 2nd-cycle-of-evidence + Plan-B-as-only-remaining-gate). Edit `ops/incidents/2026-04-23T13-49Z-multi-day-scheduler-blackout.md` (mark all 3 decision-request checkboxes [x], update Status header to CONSOLIDATED-CLOSED, append RESOLUTION block cross-referencing the 4 originally-tracked sub-incidents and rolling forward the latent doublefire P1 + cross-clone scheduler pattern). Overwrite `ops/HOURLY_AGENDA.md` with this content. Append `ops/deploys.log` STANDUP entry. Append `ops/hourly-log.csv` row. Commit only `ops/` paths, no push.
+- **Why:** Closing the gate predicted by Hour 15 — the most important signal of the day. The 2026-04-23 blackout-1 pattern was Hour 14+15 green then dead at Hour 16; **2026-04-26 Hour 16 fired**, the third-consecutive-green-cycle bar is cleared, and the pattern-break alone is worth a single dense commit that documents the close + repositions the queue around Plan-B as the sole outstanding gate. Leaving the incidents open after a clear self-heal would dilute the signal and waste the next cycle re-litigating the close.
 - **How (executed this cycle):**
-  1. Wrote this file (`ops/HOURLY_AGENDA.md`).
-  2. Append `ops/deploys.log` STANDUP entry below.
-  3. Append `ops/hourly-log.csv` row.
-  4. `git add ops/HOURLY_AGENDA.md ops/deploys.log ops/hourly-log.csv && git commit -m "ops: Hour 15 UTC standup — 2nd consecutive green, Hour 16 = close-or-escalate gate"`. **No `git push`** (gated on plan-B + doublefire P1).
-- **Deliverable:** 3 files modified under `ops/`, single commit.
-- **Rollback:** None needed — all writes under `ops/`. Next cycle amends if anything is wrong.
+  1. Edit blackout-2 incident: frontmatter `status: resolved`, all 4 checkboxes `[x]` with action-rationale, append RESOLUTION block (3-of-3 probe results, bonus build-cycle evidence, what stays open in T3, what no longer applies, closing note).
+  2. Edit blackout-1 incident: header `Status` line to CONSOLIDATED-CLOSED, all 3 decision-request checkboxes `[x]` with consolidation rationale, append RESOLUTION block (cross-incident status table, latent P1 roll-forward, no-further-write expectation).
+  3. Overwrite `ops/HOURLY_AGENDA.md` (this file).
+  4. Append `ops/deploys.log` STANDUP entry below.
+  5. Append `ops/hourly-log.csv` row.
+  6. Single commit: `git add ops/HOURLY_AGENDA.md ops/deploys.log ops/hourly-log.csv ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md ops/incidents/2026-04-23T13-49Z-multi-day-scheduler-blackout.md && git commit -m "ops: Hour 16 UTC standup — close blackout-2 + consolidate-close blackout-1, 3-of-3 signals healthy"`. **No `git push`** (gated on Plan-B + doublefire P1).
+- **Deliverable:** 5 files modified under `ops/`, single commit. Two P0 incidents closed; agenda + ledgers updated.
+- **Rollback:** None needed — all writes under `ops/`. Incident closures are reversible by reopening the frontmatter `status:` field if next cycle observes a regression. Hour 17 cycle re-checks signals.
 
-### T2 — Next cycle (Hour 16 UTC ~2026-04-26T16:14Z): close-or-escalate on blackout-2 + blackout-1
+### T2 — Next cycle (Hour 17 UTC ~2026-04-26T17:14Z): build-cycle 3rd-cycle watch + doublefire P1 quantification — `[runner: standup, with build-cycle as candidate ship owner]`
 
-- **What:** Three-signal probe gating two opposite outcomes.
-  1. Did this Hour 15 standup commit land? `git log --oneline -5 | grep "Hour 15"`. Baseline: should see `ops: Hour 15 UTC standup` somewhere in the last 5 commits.
-  2. Did Hour 16 news-briefing fire? `stat -c %Y src/data/news-briefing.json` should advance past 2026-04-26T15:07:18Z; new origin commit `news: hourly briefing briefing-2026-04-26-16` should land at ~16:07Z.
-  3. Did Hour 16 standup fire? (This cycle's existence is the answer.)
-- **Why:** The 2026-04-23 pattern was Hour 14 + 15 green then dead at Hour 16. We are *exactly* at that gate now. Three outcomes possible:
-  - **3-of-3 healthy:** close `ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md` (mark `[x]` on all 4 checkboxes, append RESOLVED block) and consolidate-close `ops/incidents/2026-04-23T13-49Z-multi-day-scheduler-blackout.md` (mark `[x]` on all 3, append "consolidated under blackout-2, see 2026-04-26 incident"). Standup runner has earned trust for the day.
-  - **2-of-3 healthy (e.g., standup + news but no agenda commit):** keep both incidents OPEN, file a single `ops/incidents/2026-04-26T16-XXZ-blackout-2-partial-cadence-degraded.md` documenting which signal failed and what self-heal pattern that suggests.
-  - **0–1 of 3 healthy:** file `ops/incidents/2026-04-26T16-XXZ-blackout-3-third-multi-day-blackout.md` as a single-line escalation ("third multi-day blackout in a week, scheduler infra needs human inspection, do not write any further standups until restored"). Stop writing agendas. The next cycle that fires (whenever) reads the escalation and acts as a tripwire only.
+- **What:** Two-part probe + a light-touch metadata introduction.
+  1. **Build-cycle 3rd-cycle watch.** Did build-cycle ship a third commit between 16:30Z and 17:14Z? Probe: `git log --oneline --author=build-cycle@degen0x.local | head -3` should show 3 entries; new commit since `e1d4854ba`. Candidate next ships per Hour 15 build-cycle report: `og-crypto-investing-guide` (JPG-vs-SVG decision pending, can pivot to `.svg` and edit the 1-line metadata ref), `og-best-crypto-staking-rewards-2026.svg` (generic-name placeholder, page-edit + new file). Either is purely additive, survives Plan-B reset, slots into the cherry-pick allowlist as a 6th entry.
+  2. **Doublefire P1 quantification.** Count distinct session names that fired any scheduled slot between 15:00Z and 17:00Z (publish-deploy + standup + build-cycle + eod-qa + news-briefing). Source: `ops/deploys.log` + `git log --format='%an %ad' --date=iso` for build-cycle commits + standup-session-name in agenda headers. Goal: produce a count + a per-slot histogram so the next-human-shell knows how aggressive the cross-clone fan-out is when planning Plan-B push.
+  3. **Light-touch metadata.** Per format spec §"Runner-topology restored", introduce optional `[runner: <name>]` tag on T2-candidate tasks. Apply to T2 itself this cycle: candidate ship-owner is build-cycle, fallback is standup if build-cycle does not fire.
+- **Why:** Build-cycle has cleared the 2-cycle bar; a third cycle of evidence makes the runner reliably-tracked. Doublefire quantification is the *prerequisite measurement* for Plan-B push planning — without it, the human shell choosing whether to push at HH:00, HH:15, HH:30, or HH:45 has no signal. The metadata revival is small, low-cost, and matches what the format spec already authorized.
 - **How:**
   ```bash
   cd /sessions/<session>/mnt/Degen0x
   if [ -f .git/index.lock ]; then mv .git/index.lock .git/index.lock.dance-$(date +%s); fi
-  HOUR15_COMMIT=$(git log --oneline -10 | grep -c "Hour 15 UTC standup")
-  NEWS_MTIME=$(stat -c %Y src/data/news-briefing.json)
-  THRESH=$(date -u -d "2026-04-26T15:07:18Z" +%s)
-  HOUR16_NEWS_FIRED=$([ "$NEWS_MTIME" -gt "$THRESH" ] && echo 1 || echo 0)
-  HOUR16_STANDUP_FIRED=1  # this cycle existing = yes
-  echo "signals: standup_15=$HOUR15_COMMIT news_16=$HOUR16_NEWS_FIRED standup_16=$HOUR16_STANDUP_FIRED"
-  # Branch on (HOUR15_COMMIT + HOUR16_NEWS_FIRED + HOUR16_STANDUP_FIRED) ∈ {3,2,≤1}.
+  # Part 1: build-cycle 3rd-cycle
+  BC_COMMITS=$(git log --oneline --author=build-cycle@degen0x.local | wc -l)
+  echo "build-cycle commits: $BC_COMMITS (need >=3 for cleared)"
+  # Part 2: doublefire histogram
+  awk -F'|' '/^2026-04-26T1[5-7]/ {print $0}' ops/deploys.log \
+    | grep -oE 'session [a-z-]+' | sort | uniq -c | sort -rn
+  # Part 3: metadata format applied in agenda
   ```
-- **Deliverable (conditional):** either two RESOLVED incident appends + a fresh standup commit (3-of-3), or a single new partial-cadence incident + standup (2-of-3), or a single 3rd-blackout escalation file with standup-write-stop directive (≤1-of-3).
-- **Rollback:** N/A — all writes under `ops/`. The 3rd-blackout escalation is itself the rollback of the standup-cycle protocol.
-- **Fiction-assignment:** build-cycle = NO-OP (gated on Hour 16 own fire). design-polish = NO-OP (still 0 cycles of evidence). community-growth = NO-OP (still 0 cycles of evidence; news-briefing-runner is *not* the community-growth lane, it's its own scheduled task).
+- **Deliverable:** Hour 17 agenda with build-cycle status, doublefire histogram (3–6 rows expected), at least 1 task tagged `[runner: build-cycle]`. If build-cycle did not fire a 3rd cycle, file no escalation — 2-of-3 in a 3-hour window is still healthy by definition; just note the gap.
+- **Rollback:** N/A — all writes under `ops/`.
 
-### T3 — Next *human* shell: execute plan-B reset + cherry-pick allowlist + restart any silent runners
+### T3 — Next *human* shell: execute Plan-B reset + cherry-pick allowlist (now 5 commits) + restart QA — `[runner: human]`
 
-- **What:** Same as Hour 13 / Hour 14 T3, with allowlist updated for Hour 14 build-cycle output.
+- **What:** Plan-B reset, with cherry-pick allowlist updated for Hours 14–16 forward-value commits.
   1. **Archive local ops/ + design-polish history, then reset:**
      ```bash
      git fetch origin
-     git checkout -B archive/local-master-thru-2026-04-26-15Z master
-     git push origin archive/local-master-thru-2026-04-26-15Z
+     git checkout -B archive/local-master-thru-2026-04-26-16Z master
+     git push origin archive/local-master-thru-2026-04-26-16Z
      git checkout master
      git reset --hard origin/main
      ```
@@ -132,25 +128,25 @@
      - `98771ac74` — design polish on `AuthorAttribution` + `RelatedContent` (Hour 13 origin candidate; check for conflict against origin's universal schema work, drop if redundant).
      - `cdea9186f` — feat(learn): BlackRock BUIDL tokenized treasury guide 2026 (Jefe Hour 14 author).
      - `4cd3c808d` — feat(og): BUIDL OG SVG + Hour 14 build-cycle report (filter to keep only `public/og-blackrock-buidl-guide-2026.svg` and `ops/build-cycle/2026-04-26T14-30Z-buidl-og-svg-shipped.md`; drop the deploys.log fragment which is post-reset noise).
-  3. **Add BUIDL to PUBLISHED_PAGES** (currently in PUBLISH_QUEUE on local; promote in the same shell so the `git push` lands the page + image + index in one logical sweep).
+     - `e1d4854ba` — feat(og): scam-protection OG SVG + Hour 15 build-cycle report (filter to keep only `public/og-crypto-scam-protection-guide-2026.svg` and `ops/build-cycle/2026-04-26T15-30Z-scam-protection-og-svg-shipped.md`; drop the deploys.log + hourly-log.csv fragments).
+     - `c84af990c` — design: BUIDL guide polish (h1/h2 normalization + link hover/focus on the page introduced by `cdea9186f`; cherry-pick will apply cleanly because the parent commit is already in the allowlist).
+  3. **Add BUIDL + scam-protection pages to PUBLISHED_PAGES.** Currently: BUIDL is in `PUBLISH_QUEUE` (`src/lib/published-pages.ts`), scam-protection is local-only and not yet queued. Promote both in the same shell so the `git push` lands page + image + index in one logical sweep. Open question for the human shell: does the scam-protection page on origin already have a final-form metadata block (this clone has it but origin doesn't), and should we bump scam-protection into PUBLISH_QUEUE first as a separate commit before promotion?
   4. **Then run T-SEO-1 / T-SEO-2 / T-SEO-3** (origin-side codemod work) — see SEO append section below for corrections to those tasks vs. the Hour 14 brief.
-  5. **Restart news-briefing scheduled task** if it stops firing (currently healthy, but pin to a single sandbox if the doublefire pattern recurs).
-- **Why:** Single highest-leverage action across the next 24h, unchanged from Hour 13/14. Reset clears the +21/−71 divergence, drops 18 redundant ops + design + sitemap commits, preserves the 3 forward-value commits, unblocks BUIDL promotion, and clears the path for the SEO brief's 3 actionable tasks.
-- **How (cannot be executed by this runner):** auth scope + doublefire P1 + index.lock contention all forbid sandbox-side execution.
-- **Deliverable:** master == origin/main + 3 cherry-picks; `archive/local-master-thru-2026-04-26-15Z` branch on origin; BUIDL promoted; SEO 9.12 → 9.20+ in next brief.
-- **Rollback:** `archive/local-master-thru-2026-04-26-15Z` is the rollback. Reset to that branch's HEAD if anything from the discarded ops/ history turns out to matter.
-- **Fiction-assignment:** build-cycle = OWNER of cherry-pick #3 + BUIDL promotion + T-SEO codemods (NO-OP this hour). design-polish = re-cherry-pick `98771ac74` (NO-OP this hour). community-growth = restart news-runner if needed + announce BUIDL guide on social on promotion day (NO-OP this hour).
+  5. **Restart any silent runners.** Currently all 4 runners are healthy (standup 4-of-4, news 3-of-3, build-cycle 2-of-2, publish-deploy fires-but-skips). No restart needed. Pin runners to a single sandbox if doublefire pattern recurs after Plan-B (mitigates index.lock race).
+- **Why:** Single highest-leverage action across the next 24h, unchanged from Hour 13/14/15 except: blackouts now closed, so the *only* gate is push-auth (single human shell). Reset clears the +40 divergence, drops 35+ redundant ops + design + sitemap commits, preserves the 5 forward-value commits, unblocks BUIDL + scam-protection promotion, and clears the path for the SEO brief's 3 actionable tasks.
+- **How (cannot be executed by this runner):** auth scope + doublefire P1 + sandbox-side push race all forbid sandbox-side execution. Single-human-shelled execution required.
+- **Deliverable:** master == origin/main + 5 cherry-picks; `archive/local-master-thru-2026-04-26-16Z` branch on origin; BUIDL + scam-protection promoted; SEO 9.12 → 9.20+ in next brief.
+- **Rollback:** `archive/local-master-thru-2026-04-26-16Z` is the rollback. Reset to that branch's HEAD if anything from the discarded ops/ history turns out to matter.
 
 ---
 
-## SEO Brief — corrections to Hour 14 append (`ops/seo/2026-04-26.md`)
+## SEO Brief — corrections from Hour 14 append (`ops/seo/2026-04-26.md`) — UNCHANGED
 
-Two minor corrections to the SEO brief landed by `seo-manager` at 14:10Z, derived from probes this cycle:
+Two corrections from Hour 15, still applicable:
+- **T-SEO-2 script name:** brief says `node scripts/refresh-freshness.mjs`; actual filename on origin is `scripts/refresh-freshness-index.mjs`. On local, neither exists (gated on Plan-B reset).
+- **T-SEO-3 page-ship vs schema-retrofit:** retrofit `HowToSchema` onto existing `/learn/how-to-stake-ethereum-complete-guide` rather than ship duplicate `/learn/how-to-stake-eth`. Origin's `/learn/how-to-*` count is 10, not 3.
 
-- **T-SEO-2 script name:** brief says `node scripts/refresh-freshness.mjs`; actual filename on origin is `scripts/refresh-freshness-index.mjs` (per `git show e012a0de2 --stat`, the commit that introduced it on 2026-04-17). On local, **neither** the script nor `src/data/freshness-index.json` exists (gated on plan-B reset, both land via origin's `e012a0de2`). Once reset, the script *creates* the JSON if absent and *updates* it if present, per the staggered SHA-1 cadence in its source.
-- **T-SEO-3 page-ship vs schema-retrofit:** brief says ship `/learn/how-to-stake-eth/page.tsx` as a new page; Hour 14 build-cycle report (`ops/build-cycle/2026-04-26T14-30Z-buidl-og-svg-shipped.md`) flags this would create a duplicate of the existing `/learn/how-to-stake-ethereum-complete-guide`. Origin's actual `/learn/how-to-*` count is 10 pages (not 3 as the brief claimed); HowToSchema lives on 10 pages (not 22). Better path: retrofit `HowToSchema` onto the existing canonical page rather than ship a duplicate. Same `inject-howto-schema.mjs` codemod still applies; the page-ship task is dropped from T-SEO-3.
-
-T-SEO-1 (RelatedContent backfill on 373 origin pages) is unchanged and remains the highest-leverage SEO task on the queue.
+T-SEO-1 (RelatedContent backfill on 373 origin pages) remains highest-leverage.
 
 ---
 
@@ -159,15 +155,20 @@ T-SEO-1 (RelatedContent backfill on 373 origin pages) is unchanged and remains t
 ```bash
 # All within ops/ — no src/ touched.
 if [ -f .git/index.lock ]; then mv .git/index.lock .git/index.lock.dance-$(date +%s); fi
-git add ops/HOURLY_AGENDA.md ops/deploys.log ops/hourly-log.csv
-git commit -m "ops: Hour 15 UTC standup (Sunday) — 2nd consecutive green, Hour 16 = close-or-escalate gate"
+git add \
+  ops/HOURLY_AGENDA.md \
+  ops/deploys.log \
+  ops/hourly-log.csv \
+  ops/incidents/2026-04-26T13-50Z-second-multi-day-scheduler-blackout.md \
+  ops/incidents/2026-04-23T13-49Z-multi-day-scheduler-blackout.md
+git commit -m "ops: Hour 16 UTC standup — close blackout-2 + consolidate-close blackout-1, 3-of-3 signals healthy"
 
-# DO NOT push. Push is part of plan B and must come from a single human shell,
-# not from this scheduled-task sandbox (doublefire P1).
+# DO NOT push. Push is part of Plan-B and must come from a single human shell,
+# not from this scheduled-task sandbox (doublefire P1, +40 divergence).
 ```
 
 ---
 
 ## One-line summary (for the runner return-string)
 
-`Hour 15: shipped 2nd-consecutive-green confirmation, priority = Hour 16 close-or-escalate gate on blackout-2`
+`Hour 16: shipped blackout-2 close + blackout-1 consolidate-close (3-of-3 signals), priority = Plan-B reset (next human shell, only outstanding gate)`
