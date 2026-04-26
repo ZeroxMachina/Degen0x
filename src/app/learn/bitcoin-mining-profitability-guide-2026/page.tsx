@@ -43,9 +43,91 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'Bitcoin Mining Profitability Guide 2026: Post-Halving Economics, Hardware & ROI',
+  description: 'Comprehensive guide to Bitcoin mining profitability in 2026. Learn about post-halving economics, top ASIC hardware, electricity costs, and mining strategies for maximum ROI.',
+  image: 'https://degen0x.com/og-bitcoin-mining-profitability-guide-2026.svg',
+  datePublished: '2026-04-10',
+  dateModified: '2026-04-12',
+  author: {
+    '@type': 'Organization',
+    name: 'degen0x',
+    url: 'https://degen0x.com',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'degen0x',
+    url: 'https://degen0x.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://degen0x.com/degen0x-logo.svg',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://degen0x.com/learn/bitcoin-mining-profitability-guide-2026',
+  },
+  mainEntity: {
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Is Bitcoin mining still profitable in 2026?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, but only for operations with exceptional cost structures. Profitability requires: (1) electricity costs below $0.12/kWh, (2) top-tier ASIC hardware (S21 XP+ Hydro or equivalent), and (3) mining pool participation. Solo mining and home setups are generally unprofitable. Publicly-listed miners operating at scale with renewable energy contracts remain highly profitable.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much does a mining setup cost?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A single Antminer S21 XP+ Hydro costs $5,000-8,000. Add $1,000-3,000 for power supply, cooling, and networking equipment. Larger operations benefit from economies of scale: 100-unit deployments cost $50-80 per TH/s. Initial capital requirements are substantial, and ROI depends heavily on electricity access and Bitcoin price appreciation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: "What's the difference between J/TH and W/T efficiency metrics?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Both measure power efficiency per unit hashrate. J/TH (joules per terahash) and W/T (watts per terahash) are equivalent: 1 W/T = 1 J/TH. Lower values are better. The S21 XP+ Hydro's 11 J/TH means it consumes 11 joules to produce one terahash of computational work. Efficient hardware directly translates to lower electricity costs and higher margins.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often does mining difficulty adjust?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "Difficulty adjusts approximately every 2 weeks (2,016 blocks) based on the network's average block time. If blocks are found faster than 10 minutes, difficulty increases; if slower, it decreases. The difficulty peaked at 155.9T in November 2025 and continues rising as more miners join the network.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Should I mine Bitcoin or diversify into AI/DePIN workloads?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Bitcoin mining provides stable, predictable revenue through mature mining pools. AI/DePIN projects offer higher upside but with execution risk. A portfolio approach is optimal: allocate 70-80% hashrate to Bitcoin mining for baseline cash flow, and 20-30% to experimental AI compute workloads.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What happens to mining after the 2028 halving?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The April 2028 halving will reduce block rewards from 3.125 to 1.5625 BTC. Historical data shows halvings trigger operator exits and consolidation waves. Unless Bitcoin prices appreciate 2-3x before 2028, many current operations will become unprofitable. The next halving will likely accelerate the shift toward institutional-scale mining.',
+        },
+      },
+    ],
+  },
+};
+
 export default function MiningProfitabilityPage() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117' }}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: '1px solid #30363d', paddingTop: 24 }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px 24px' }}>
@@ -877,7 +959,7 @@ export default function MiningProfitabilityPage() {
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
             <Link href="/tools/dca-calculator"
-              className="group rounded-lg p-4 transition-all hover:scale-105"
+              className="group rounded-lg p-4 transition-all hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff]"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
@@ -894,8 +976,8 @@ export default function MiningProfitabilityPage() {
               </div>
             </Link>
 
-            <Link href="/tools/dca-calculator"
-              className="group rounded-lg p-4 transition-all hover:scale-105"
+            <Link href="/learn/bitcoin-layer-2-guide-2026"
+              className="group rounded-lg p-4 transition-all hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff]"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
@@ -912,8 +994,8 @@ export default function MiningProfitabilityPage() {
               </div>
             </Link>
 
-            <Link href="/tools/dca-calculator"
-              className="group rounded-lg p-4 transition-all hover:scale-105"
+            <Link href="/learn/bitcoin-supply-shock-guide-2026"
+              className="group rounded-lg p-4 transition-all hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff]"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
@@ -930,15 +1012,15 @@ export default function MiningProfitabilityPage() {
               </div>
             </Link>
 
-            <Link href="/tools/dca-calculator"
-              className="group rounded-lg p-4 transition-all hover:scale-105"
+            <Link href="/learn/btcfi-yield-strategies-guide-2026"
+              className="group rounded-lg p-4 transition-all hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff]"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
                 <span style={{ color: '#06b6d4' }}>🔧</span>
                 <div>
                   <h3 className="font-semibold" style={{ color: '#e6edf3' }}>
-                    Advanced DeFi
+                    BTCFi Yield Strategies
                   </h3>
                   <p className="text-xs" style={{ color: '#8b949e' }}>
                     Yield & strategy optimization
