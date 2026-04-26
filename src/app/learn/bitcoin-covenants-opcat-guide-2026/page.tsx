@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     authors: ["degen0x Team"],
     images: [
       {
-        url: "https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.png",
+        url: "https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.svg",
         width: 1200,
         height: 630,
         alt: "Bitcoin Covenants & OP_CAT Guide 2026 — OP_CAT vs OP_CTV vs CSFS vs LNHANCE",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     title: "Bitcoin Covenants & OP_CAT Guide 2026",
     description:
       "OP_CAT makes Bitcoin programmable by enabling covenants: rules that constrain how Bitcoin can be spent. Learn vaults, trustless bridges, and the activation debate.",
-    images: ["https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.png"],
+    images: ["https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.svg"],
   },
 };
 
@@ -62,7 +62,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-03-23T00:00:00Z",
   dateModified: "2026-03-23T00:00:00Z",
   author: "degen0x Team",
-  image: "https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.png",
+  image: "https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.svg",
   wordCount: 3000,
 });
 
