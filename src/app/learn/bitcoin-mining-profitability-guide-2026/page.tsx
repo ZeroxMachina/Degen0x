@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: 'https://degen0x.com/learn/bitcoin-mining-profitability-guide-2026',
     images: [
       {
-        url: 'https://degen0x.com/og-bitcoin-mining-profitability-guide-2026.png',
+        url: 'https://degen0x.com/og-bitcoin-mining-profitability-guide-2026.svg',
         width: 1200,
         height: 630,
         alt: 'Bitcoin Mining Profitability 2026',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Bitcoin Mining Profitability Guide 2026',
     description: 'Comprehensive guide to Bitcoin mining profitability, ROI, and hardware selection.',
-    images: ['https://degen0x.com/og-bitcoin-mining-profitability-guide-2026.png'],
+    images: ['https://degen0x.com/og-bitcoin-mining-profitability-guide-2026.svg'],
   },
 };
 
