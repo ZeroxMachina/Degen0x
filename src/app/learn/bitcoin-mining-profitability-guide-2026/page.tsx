@@ -72,6 +72,7 @@ export default function MiningProfitabilityPage() {
               Mining
             </span>
             <span
+              className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium"
               style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}
             >
               Intermediate
@@ -101,18 +102,16 @@ export default function MiningProfitabilityPage() {
           >
             The April 2024 Bitcoin halving fundamentally changed mining economics. With block subsidies cut in half and difficulty surging to 155.9T, profitability now hinges on three factors: elite hardware efficiency, sub-$0.15/kWh electricity, and strategic timing. This comprehensive guide explores post-halving mining dynamics, hardware ROI, and emerging trends like AI compute pivots reshaping the industry in 2026.
           </p>
+          <AuthorAttribution
+            author="DegenSensei"
+            role="Content Lead"
+            publishedDate="2026-04-10"
+            updatedDate="2026-04-12"
+            readingTime={9}
+            section="learn"
+          />
         </div>
       </div>
-
-        <AuthorAttribution
-          author="DegenSensei"
-          role="Content Lead"
-          publishedDate="2026-04-10"
-          updatedDate="2026-04-12"
-          readingTime={9}
-          section="learn"
-        />
-
 
       {/* Main Content */}
       <div className="mx-auto max-w-4xl px-6 py-12 sm:px-8 sm:py-16">
@@ -126,42 +125,42 @@ export default function MiningProfitabilityPage() {
           </h2>
           <ul className="space-y-2">
             <li>
-              <Link href="#what-is-bitcoin-mining" className="text-base hover:opacity-80" style={{ color: '#58a6ff' }}>
+              <Link href="#what-is-bitcoin-mining" className="text-base hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff] rounded" style={{ color: '#58a6ff' }}>
                 1. What Is Bitcoin Mining?
               </Link>
             </li>
             <li>
-              <Link href="#post-halving-economics" className="text-base hover:opacity-80" style={{ color: '#58a6ff' }}>
+              <Link href="#post-halving-economics" className="text-base hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff] rounded" style={{ color: '#58a6ff' }}>
                 2. Post-Halving Economics: The 2024 Impact
               </Link>
             </li>
             <li>
-              <Link href="#mining-hardware" className="text-base hover:opacity-80" style={{ color: '#58a6ff' }}>
+              <Link href="#mining-hardware" className="text-base hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff] rounded" style={{ color: '#58a6ff' }}>
                 3. Mining Hardware: Best ASICs in 2026
               </Link>
             </li>
             <li>
-              <Link href="#electricity-costs" className="text-base hover:opacity-80" style={{ color: '#58a6ff' }}>
+              <Link href="#electricity-costs" className="text-base hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff] rounded" style={{ color: '#58a6ff' }}>
                 4. Electricity & Operating Costs
               </Link>
             </li>
             <li>
-              <Link href="#profitability-calculator" className="text-base hover:opacity-80" style={{ color: '#58a6ff' }}>
+              <Link href="#profitability-calculator" className="text-base hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff] rounded" style={{ color: '#58a6ff' }}>
                 5. Mining Profitability Calculator Breakdown
               </Link>
             </li>
             <li>
-              <Link href="#mining-pools" className="text-base hover:opacity-80" style={{ color: '#58a6ff' }}>
+              <Link href="#mining-pools" className="text-base hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff] rounded" style={{ color: '#58a6ff' }}>
                 6. Mining Pools vs Solo Mining
               </Link>
             </li>
             <li>
-              <Link href="#ai-pivot" className="text-base hover:opacity-80" style={{ color: '#58a6ff' }}>
+              <Link href="#ai-pivot" className="text-base hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff] rounded" style={{ color: '#58a6ff' }}>
                 7. The AI Pivot: Miners Diversifying
               </Link>
             </li>
             <li>
-              <Link href="#risks-outlook" className="text-base hover:opacity-80" style={{ color: '#58a6ff' }}>
+              <Link href="#risks-outlook" className="text-base hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#58a6ff] rounded" style={{ color: '#58a6ff' }}>
                 8. Risks & Outlook
               </Link>
             </li>
@@ -312,6 +311,7 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
+                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(34, 197, 94, 0.1)', color: '#22c55e' }}
                       >
                         A
@@ -333,6 +333,7 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
+                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(34, 197, 94, 0.1)', color: '#22c55e' }}
                       >
                         A-
@@ -354,6 +355,7 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
+                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}
                       >
                         B+
@@ -375,6 +377,7 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
+                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(59, 130, 246, 0.1)', color: '#3b82f6' }}
                       >
                         B
@@ -396,6 +399,7 @@ export default function MiningProfitabilityPage() {
                     </td>
                     <td className="px-4 py-3">
                       <span
+                        className="inline-block rounded px-2 py-1 text-xs font-semibold"
                         style={{ backgroundColor: 'rgba(241, 65, 108, 0.1)', color: '#f14170' }}
                       >
                         C+
@@ -455,6 +459,7 @@ export default function MiningProfitabilityPage() {
                 <span className="font-semibold">$50-100/mo</span>
               </div>
               <div
+                className="flex justify-between border-t pt-3"
                 style={{ color: '#e6edf3', borderColor: '#30363d' }}
               >
                 <span className="font-semibold">Total monthly cost @ $0.12/kWh</span>
@@ -483,6 +488,7 @@ export default function MiningProfitabilityPage() {
 
           {/* Calculator Card */}
           <div
+            className="rounded-lg p-6 sm:p-8"
             style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
           >
             <h3 className="mb-6 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -596,6 +602,7 @@ export default function MiningProfitabilityPage() {
 
             {/* Solo Mining Card */}
             <div
+              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-4 text-lg font-semibold" style={{ color: '#06b6d4' }}>
@@ -650,6 +657,7 @@ export default function MiningProfitabilityPage() {
 
           {/* Info Box */}
           <div
+            className="mb-8 rounded-lg border-l-4 p-6"
             style={{
               backgroundColor: '#161b22',
               borderColor: '#06b6d4',
@@ -717,6 +725,7 @@ export default function MiningProfitabilityPage() {
 
           {/* Risk Alert Box */}
           <div
+            className="mb-8 rounded-lg border-l-4 p-6"
             style={{
               backgroundColor: '#161b22',
               borderColor: '#f14170',
@@ -783,6 +792,7 @@ export default function MiningProfitabilityPage() {
           <div className="space-y-6">
             {/* FAQ Item 1 */}
             <div
+              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -795,6 +805,7 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 2 */}
             <div
+              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -807,6 +818,7 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 3 */}
             <div
+              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -819,6 +831,7 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 4 */}
             <div
+              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -831,6 +844,7 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 5 */}
             <div
+              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -843,6 +857,7 @@ export default function MiningProfitabilityPage() {
 
             {/* FAQ Item 6 */}
             <div
+              className="rounded-lg p-6"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <h3 className="mb-3 text-lg font-semibold" style={{ color: '#e6edf3' }}>
@@ -880,6 +895,7 @@ export default function MiningProfitabilityPage() {
             </Link>
 
             <Link href="/tools/dca-calculator"
+              className="group rounded-lg p-4 transition-all hover:scale-105"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
@@ -897,6 +913,7 @@ export default function MiningProfitabilityPage() {
             </Link>
 
             <Link href="/tools/dca-calculator"
+              className="group rounded-lg p-4 transition-all hover:scale-105"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">
@@ -914,6 +931,7 @@ export default function MiningProfitabilityPage() {
             </Link>
 
             <Link href="/tools/dca-calculator"
+              className="group rounded-lg p-4 transition-all hover:scale-105"
               style={{ backgroundColor: '#161b22', border: '1px solid #30363d' }}
             >
               <div className="flex items-center gap-3">

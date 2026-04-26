@@ -1,0 +1,83 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DeFi Insurance — On-Chain Coverage">
+  <defs>
+    <linearGradient id="bgGradIns" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0418"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="gradAccentIns" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d946ef"/>
+      <stop offset="55%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="titleGradIns" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0abfc"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="shieldFill" cx="0.5" cy="0.4" r="0.7">
+      <stop offset="0%" stop-color="#d946ef" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#a855f7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.05"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradIns)"/>
+
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#gradAccentIns)"/>
+
+  <!-- Right-third topical motif: Shield with concentric coverage rings + checkmark -->
+  <g opacity="0.5" transform="translate(970, 275)">
+    <text x="0" y="-150" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#e9d5ff" text-anchor="middle" letter-spacing="2.5">COVER POOL · POLICY</text>
+
+    <!-- Outer shield (cyan ring) -->
+    <path d="M 0,-130 L 130,-90 L 130,30 Q 130,100 0,140 Q -130,100 -130,30 L -130,-90 Z" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.7"/>
+
+    <!-- Mid shield (purple) -->
+    <path d="M 0,-100 L 100,-68 L 100,22 Q 100,80 0,110 Q -100,80 -100,22 L -100,-68 Z" fill="url(#shieldFill)" stroke="#a855f7" stroke-width="1.5" opacity="0.85"/>
+
+    <!-- Inner shield (fuchsia) -->
+    <path d="M 0,-70 L 70,-46 L 70,16 Q 70,58 0,80 Q -70,58 -70,16 L -70,-46 Z" fill="none" stroke="#d946ef" stroke-width="1.5"/>
+
+    <!-- Concentric coverage rings (outside shield) -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#a855f7" stroke-width="0.8" stroke-dasharray="4 6" opacity="0.5"/>
+    <circle cx="0" cy="0" r="185" fill="none" stroke="#22d3ee" stroke-width="0.8" stroke-dasharray="2 8" opacity="0.4"/>
+
+    <!-- Checkmark (claim approved glyph) -->
+    <path d="M -28,-5 L -8,18 L 30,-30" fill="none" stroke="#f0abfc" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Policy callout chips -->
+    <g font-family="Inter, sans-serif" font-size="9" font-weight="700" fill="#cbd5e1" letter-spacing="1.5" text-anchor="middle">
+      <text x="-145" y="-115">DEPEG</text>
+      <text x="145" y="-115">EXPLOIT</text>
+      <text x="-145" y="120">BRIDGE</text>
+      <text x="145" y="120">SLASH</text>
+    </g>
+  </g>
+
+  <!-- Cluster signal badge -->
+  <g transform="translate(70, 80)">
+    <rect width="200" height="28" rx="4" fill="none" stroke="#d946ef" stroke-width="1" opacity="0.7"/>
+    <text x="100" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#f0abfc" text-anchor="middle" letter-spacing="2.5">GUIDE · DEFI · INSURANCE</text>
+  </g>
+
+  <!-- Title -->
+  <text x="70" y="220" font-family="Inter, system-ui, Helvetica, sans-serif" font-size="62" font-weight="800" fill="url(#titleGradIns)" letter-spacing="-1.5">DeFi Insurance</text>
+  <text x="70" y="290" font-family="Inter, system-ui, Helvetica, sans-serif" font-size="62" font-weight="800" fill="#e9d5ff" letter-spacing="-1.5">On-Chain Coverage</text>
+
+  <!-- Subtitle -->
+  <text x="70" y="350" font-family="Inter, sans-serif" font-size="28" font-weight="500" fill="#cbd5e1">Smart-contract cover, depeg risk, and claim assessment.</text>
+
+  <!-- Detail strip -->
+  <text x="70" y="425" font-family="Inter, sans-serif" font-size="17" font-weight="600" fill="#a855f7" letter-spacing="0.5">Cover pools  ·  Claim assessors  ·  Capital efficiency  ·  Underwriting</text>
+
+  <!-- Tagline -->
+  <text x="70" y="475" font-family="Georgia, Times, serif" font-size="15" font-style="italic" fill="#94a3b8">A 2026 framework for sizing and pricing protocol risk.</text>
+
+  <!-- Bottom row -->
+  <text x="70" y="585" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#d946ef" opacity="0.9" letter-spacing="0.5">degen0x.com</text>
+  <g transform="translate(1080, 565)">
+    <rect width="50" height="28" rx="4" fill="#d946ef"/>
+    <text x="25" y="19" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#0a0418" text-anchor="middle">2026</text>
+  </g>
+</svg>

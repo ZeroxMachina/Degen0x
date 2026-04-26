@@ -1,0 +1,97 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Modular vs Monolithic Blockchains">
+  <defs>
+    <linearGradient id="bgGradMod" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0418"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="gradAccentMod" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d946ef"/>
+      <stop offset="55%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="titleGradMod" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0abfc"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="layerExec" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d946ef" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#d946ef" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="layerSettle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="layerDA" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.18"/>
+    </linearGradient>
+    <linearGradient id="layerCons" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7e22ce" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7e22ce" stop-opacity="0.18"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradMod)"/>
+
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#gradAccentMod)"/>
+
+  <!-- Right-third topical motif: 4 stacked architectural layers, each with a label -->
+  <g opacity="0.62">
+    <text x="970" y="125" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#e9d5ff" text-anchor="middle" letter-spacing="2.5">MODULAR STACK</text>
+
+    <!-- Execution layer (top, fuchsia) -->
+    <rect x="800" y="145" width="340" height="56" rx="4" fill="url(#layerExec)" stroke="#d946ef" stroke-width="1.2"/>
+    <text x="815" y="180" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#fdf4ff" letter-spacing="1.5">EXECUTION</text>
+    <text x="1125" y="180" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#e9d5ff" text-anchor="end" letter-spacing="0.5" opacity="0.75">rollups · zkVM</text>
+
+    <!-- Settlement layer -->
+    <rect x="800" y="215" width="340" height="56" rx="4" fill="url(#layerSettle)" stroke="#a855f7" stroke-width="1.2"/>
+    <text x="815" y="250" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#fdf4ff" letter-spacing="1.5">SETTLEMENT</text>
+    <text x="1125" y="250" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#e9d5ff" text-anchor="end" letter-spacing="0.5" opacity="0.75">finality · proofs</text>
+
+    <!-- Consensus layer -->
+    <rect x="800" y="285" width="340" height="56" rx="4" fill="url(#layerCons)" stroke="#7e22ce" stroke-width="1.2"/>
+    <text x="815" y="320" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#fdf4ff" letter-spacing="1.5">CONSENSUS</text>
+    <text x="1125" y="320" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#e9d5ff" text-anchor="end" letter-spacing="0.5" opacity="0.75">PoS · ordering</text>
+
+    <!-- Data Availability layer -->
+    <rect x="800" y="355" width="340" height="56" rx="4" fill="url(#layerDA)" stroke="#22d3ee" stroke-width="1.2"/>
+    <text x="815" y="390" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#fdf4ff" letter-spacing="1.5">DATA AVAILABILITY</text>
+    <text x="1125" y="390" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#e9d5ff" text-anchor="end" letter-spacing="0.5" opacity="0.75">DAS · blobs</text>
+
+    <!-- Connector lines between layers (modular separation cue) -->
+    <g stroke="#a855f7" stroke-width="0.6" opacity="0.55" stroke-dasharray="2 4">
+      <line x1="970" y1="201" x2="970" y2="215"/>
+      <line x1="970" y1="271" x2="970" y2="285"/>
+      <line x1="970" y1="341" x2="970" y2="355"/>
+    </g>
+  </g>
+
+  <!-- Cluster signal badge -->
+  <g transform="translate(70, 80)">
+    <rect width="220" height="28" rx="4" fill="none" stroke="#d946ef" stroke-width="1" opacity="0.7"/>
+    <text x="110" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#f0abfc" text-anchor="middle" letter-spacing="2.5">GUIDE · ETHEREUM · MODULAR</text>
+  </g>
+
+  <!-- Title -->
+  <text x="70" y="220" font-family="Inter, system-ui, Helvetica, sans-serif" font-size="62" font-weight="800" fill="url(#titleGradMod)" letter-spacing="-1.5">Modular vs</text>
+  <text x="70" y="290" font-family="Inter, system-ui, Helvetica, sans-serif" font-size="62" font-weight="800" fill="#e9d5ff" letter-spacing="-1.5">Monolithic Blockchains</text>
+
+  <!-- Subtitle -->
+  <text x="70" y="350" font-family="Inter, sans-serif" font-size="28" font-weight="500" fill="#cbd5e1">Execution, settlement, and data availability — separated.</text>
+
+  <!-- Detail strip -->
+  <text x="70" y="425" font-family="Inter, sans-serif" font-size="17" font-weight="600" fill="#a855f7" letter-spacing="0.5">Execution  ·  Settlement  ·  Consensus  ·  Data availability</text>
+
+  <!-- Tagline -->
+  <text x="70" y="475" font-family="Georgia, Times, serif" font-size="15" font-style="italic" fill="#94a3b8">A 2026 architecture map for rollups, DA layers, and sovereign chains.</text>
+
+  <!-- Bottom row -->
+  <text x="70" y="585" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#d946ef" opacity="0.9" letter-spacing="0.5">degen0x.com</text>
+  <g transform="translate(1080, 565)">
+    <rect width="50" height="28" rx="4" fill="#d946ef"/>
+    <text x="25" y="19" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#0a0418" text-anchor="middle">2026</text>
+  </g>
+</svg>

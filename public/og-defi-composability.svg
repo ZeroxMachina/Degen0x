@@ -1,0 +1,108 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="DeFi Composability — Money Legos">
+  <defs>
+    <linearGradient id="bgGradComp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0418"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="gradAccentComp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d946ef"/>
+      <stop offset="55%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="titleGradComp" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f0abfc"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="legoFuchsia" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d946ef" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#a21caf" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="legoPurple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#6b21a8" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="legoCyan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0891b2" stop-opacity="0.7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradComp)"/>
+
+  <!-- Top accent bar (fuchsia → purple → cyan) -->
+  <rect width="1200" height="4" fill="url(#gradAccentComp)"/>
+
+  <!-- Right-third topical motif: Money-Lego stack (4 interlocking blocks with studs) -->
+  <g opacity="0.42">
+    <text x="970" y="125" font-family="Inter, system-ui, sans-serif" font-size="11" font-weight="700" fill="#e9d5ff" text-anchor="middle" letter-spacing="2.5">MONEY-LEGO STACK</text>
+
+    <!-- Block 4 (top, cyan, smallest) -->
+    <rect x="850" y="145" width="240" height="50" rx="6" fill="url(#legoCyan)" stroke="#22d3ee" stroke-width="1"/>
+    <circle cx="880" cy="138" r="7" fill="#22d3ee" opacity="0.85"/>
+    <circle cx="930" cy="138" r="7" fill="#22d3ee" opacity="0.85"/>
+    <circle cx="980" cy="138" r="7" fill="#22d3ee" opacity="0.85"/>
+    <circle cx="1030" cy="138" r="7" fill="#22d3ee" opacity="0.85"/>
+    <circle cx="1060" cy="138" r="7" fill="#22d3ee" opacity="0.85"/>
+    <text x="970" y="178" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#cbd5e1" text-anchor="middle" letter-spacing="1.5">RESTAKE</text>
+
+    <!-- Block 3 (purple) -->
+    <rect x="820" y="215" width="300" height="55" rx="6" fill="url(#legoPurple)" stroke="#a855f7" stroke-width="1"/>
+    <circle cx="850" cy="208" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="900" cy="208" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="950" cy="208" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="1000" cy="208" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="1050" cy="208" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="1090" cy="208" r="7" fill="#a855f7" opacity="0.85"/>
+    <text x="970" y="250" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#cbd5e1" text-anchor="middle" letter-spacing="1.5">VAULT · YIELD</text>
+
+    <!-- Block 2 (fuchsia) -->
+    <rect x="800" y="290" width="340" height="55" rx="6" fill="url(#legoFuchsia)" stroke="#d946ef" stroke-width="1"/>
+    <circle cx="830" cy="283" r="7" fill="#d946ef" opacity="0.85"/>
+    <circle cx="880" cy="283" r="7" fill="#d946ef" opacity="0.85"/>
+    <circle cx="930" cy="283" r="7" fill="#d946ef" opacity="0.85"/>
+    <circle cx="980" cy="283" r="7" fill="#d946ef" opacity="0.85"/>
+    <circle cx="1030" cy="283" r="7" fill="#d946ef" opacity="0.85"/>
+    <circle cx="1080" cy="283" r="7" fill="#d946ef" opacity="0.85"/>
+    <circle cx="1110" cy="283" r="7" fill="#d946ef" opacity="0.85"/>
+    <text x="970" y="325" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#fdf4ff" text-anchor="middle" letter-spacing="1.5">LENDING · BORROW</text>
+
+    <!-- Block 1 (base, purple-darker) -->
+    <rect x="780" y="365" width="380" height="55" rx="6" fill="url(#legoPurple)" stroke="#a855f7" stroke-width="1"/>
+    <circle cx="810" cy="358" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="860" cy="358" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="910" cy="358" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="960" cy="358" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="1010" cy="358" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="1060" cy="358" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="1110" cy="358" r="7" fill="#a855f7" opacity="0.85"/>
+    <circle cx="1140" cy="358" r="7" fill="#a855f7" opacity="0.85"/>
+    <text x="970" y="400" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#cbd5e1" text-anchor="middle" letter-spacing="1.5">AMM · LIQUIDITY</text>
+  </g>
+
+  <!-- Cluster signal badge -->
+  <g transform="translate(70, 80)">
+    <rect width="220" height="28" rx="4" fill="none" stroke="#d946ef" stroke-width="1" opacity="0.7"/>
+    <text x="110" y="19" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#f0abfc" text-anchor="middle" letter-spacing="2.5">GUIDE · DEFI · COMPOSABILITY</text>
+  </g>
+
+  <!-- Title -->
+  <text x="70" y="220" font-family="Inter, system-ui, Helvetica, sans-serif" font-size="62" font-weight="800" fill="url(#titleGradComp)" letter-spacing="-1.5">DeFi Composability</text>
+  <text x="70" y="290" font-family="Inter, system-ui, Helvetica, sans-serif" font-size="62" font-weight="800" fill="#e9d5ff" letter-spacing="-1.5">Money Legos &amp; Stacking</text>
+
+  <!-- Subtitle -->
+  <text x="70" y="350" font-family="Inter, sans-serif" font-size="28" font-weight="500" fill="#cbd5e1">Protocol stacking, flash loans, and yield strategies.</text>
+
+  <!-- Detail strip -->
+  <text x="70" y="425" font-family="Inter, sans-serif" font-size="17" font-weight="600" fill="#a855f7" letter-spacing="0.5">AMM  ·  Lending  ·  Vault  ·  Restaking</text>
+
+  <!-- Tagline -->
+  <text x="70" y="475" font-family="Georgia, Times, serif" font-size="15" font-style="italic" fill="#94a3b8">A 2026 playbook for the on-chain primitive stack.</text>
+
+  <!-- Bottom row: brand + year chip -->
+  <text x="70" y="585" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="#d946ef" opacity="0.9" letter-spacing="0.5">degen0x.com</text>
+  <g transform="translate(1080, 565)">
+    <rect width="50" height="28" rx="4" fill="#d946ef"/>
+    <text x="25" y="19" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#0a0418" text-anchor="middle">2026</text>
+  </g>
+</svg>
