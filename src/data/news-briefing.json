@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-26T15:06:04Z",
-  "briefing_id": "briefing-2026-04-26-15",
+  "generated_at": "2026-04-26T16:09:06Z",
+  "briefing_id": "briefing-2026-04-26-16",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-26-15-001",
-      "headline": "Lazarus-Linked April Hacks Cross $606M, Worst Crypto Theft Month Since Bybit",
-      "slug": "april-2026-606m-crypto-hacks-lazarus-worst-month",
-      "tldr": "Crypto protocols have lost over $606 million to exploits in 18 days, the worst month since Bybit's $1.4B breach.",
-      "why_it_matters": "Why it matters: With Lazarus laundering $300M openly and DefiLlama logging an attack every 2.9 days, security risk is repricing the entire DeFi yield stack — not just individual protocols.",
+      "id": "story-2026-04-26-16-001",
+      "headline": "Bitcoin Posts Best Month in a Year as $5B USDT Injection Pushes BTC Above $77K",
+      "slug": "bitcoin-best-month-usdt-5b-injection",
+      "tldr": "Bitcoin is up 13.6% in April and on pace for its strongest monthly close since early 2025, with Tether minting $5B in fresh USDT to refuel the rally.",
+      "why_it_matters": "Why it matters: Stablecoin supply expansion is the cleanest leading indicator of crypto liquidity, and Tether's market cap pushing toward $150B signals risk appetite is back before the Fed meeting.",
       "the_details": [
-        "Drift Protocol ($285M, April 1) and KelpDAO ($292M, April 18) account for ~95% of April losses, both attributed to North Korea's Lazarus Group.",
-        "DefiLlama logs 47 incidents in the first 4.5 months of 2026 vs 28 in the same window of 2025 — a 68% YoY frequency jump.",
-        "Bloomberg reports the $300M theft attackers have already begun on-chain laundering as of April 21, complicating recovery."
+        "BTC held above $77,000 Friday, up 13.6% in April, with the next test the upcoming Fed decision that could flip $79K resistance into support.",
+        "USDT supply has grown roughly $5 billion in April toward an all-time high near $150 billion, fueling spot demand across exchanges.",
+        "Bitcoin's 30-day correlation with the U.S. Dollar Index has fallen to -0.90, the deepest inverse reading since 2022."
       ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-26T14:30:00Z"
-    },
-    {
-      "id": "story-2026-04-26-15-002",
-      "headline": "SEC Greenlights DeFi Front-Ends, Says UI Operators Don't Need Broker Registration",
-      "slug": "sec-defi-front-end-broker-dealer-exemption-april-2026",
-      "tldr": "SEC staff said certain crypto trading user interfaces won't need broker-dealer registration, easing a key DeFi compliance overhang.",
-      "why_it_matters": "Why it matters: This is the first concrete federal carve-out treating DeFi front-ends as software rather than securities intermediaries — unlocking U.S. development of permissionless trading rails.",
-      "the_details": [
-        "April 13 staff statement clears software interfaces that prepare and submit transactions in crypto asset securities, subject to conditions.",
-        "Builds on the March 17 SEC-CFTC joint 68-page release that retired the 2019 staff framework and introduced a five-category token taxonomy.",
-        "Sidley Austin and Norton Rose Fulbright flagged the statement as a watershed for U.S.-onshore decentralized exchange development."
-      ],
-      "source": "Sidley Austin",
-      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-26T13:00:00Z"
-    },
-    {
-      "id": "story-2026-04-26-15-003",
-      "headline": "Spot Solana ETFs Hit $1B AUM in Days as Goldman Sachs Anchors Inflows",
-      "slug": "spot-solana-etf-1b-aum-goldman-sachs-april-2026",
-      "tldr": "U.S. spot SOL ETFs crossed $1 billion in assets under management as of April 25, with Goldman Sachs disclosed as a major holder.",
-      "why_it_matters": "Why it matters: Solana now has institutional ETF rails comparable to BTC and ETH, validating SOL as a third reserve asset for traditional allocators and pulling capital ahead of an alt-season rotation.",
-      "the_details": [
-        "Spot SOL ETFs logged strong weekly inflows hitting $1B AUM by April 25, 2026 per CoinMarketCap data.",
-        "Goldman Sachs filings disclose a major position, mirroring how BlackRock anchored the BTC ETF cohort.",
-        "SOL is consolidating $77–$94 with a rare weekly chart crossover that historically precedes volatile breakouts."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
       "category": "markets",
-      "impact": "medium",
-      "timestamp": "2026-04-26T12:00:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-26T16:09:06Z"
     },
     {
-      "id": "story-2026-04-26-15-004",
-      "headline": "Bitget Lists SpaceX-Linked preSPAX on Solana, Pushing Tokenized Pre-IPO Onchain",
-      "slug": "bitget-spacex-prespax-tokenized-pre-ipo-solana",
-      "tldr": "Bitget rolled out tokenized pre-IPO products including a SpaceX-linked preSPAX token on Solana on April 21.",
-      "why_it_matters": "Why it matters: Tokenized private equity is the next RWA front, and routing it through Solana cements the chain's pitch as the on-chain Nasdaq while sidestepping public-market gatekeepers.",
+      "id": "story-2026-04-26-16-002",
+      "headline": "Solana Foundation Steps In With USDT Loan to Aave as $13B DeFi Liquidity Hole Persists",
+      "slug": "solana-foundation-usdt-loan-aave-defi-crisis",
+      "tldr": "The Solana Foundation extended an emergency USDT loan to Aave to backstop liquidity after the Kelp exploit triggered $13B in DeFi outflows.",
+      "why_it_matters": "Why it matters: A layer-1 foundation propping up a competing chain's lender is a sign that DeFi's contagion risk has crossed ecosystem lines — and that survival now beats tribal turf wars.",
       "the_details": [
-        "preSPAX gives retail synthetic exposure to SpaceX equity ahead of any public listing, settled on Solana.",
-        "Foundation's Nick Ducoff: Solana's vision of becoming the on-chain Nasdaq and home of internet capital markets is 'getting closer'.",
-        "Launch lands as DefiLlama shows SOL TVL rebuilding post-Drift, signaling appetite for new structured-finance flows."
+        "Aave saw $8.45 billion in deposits exit over 48 hours after attackers used stolen rsETH from the April 18 KelpDAO exploit as collateral.",
+        "Total DeFi TVL slid from $99.5B to $86.3B in two days, a $13.21 billion contraction across protocols.",
+        "Solana Foundation's USDT injection is its first publicly disclosed cross-chain liquidity backstop, per Crypto Briefing."
       ],
-      "source": "CoinGabbar",
-      "source_url": "https://www.coingabbar.com/en/crypto-currency-news/solana-news-onchain-nasdaq-april-2026",
-      "category": "infrastructure",
-      "impact": "medium",
-      "timestamp": "2026-04-26T11:30:00Z"
+      "source": "Crypto Briefing",
+      "source_url": "https://cryptobriefing.com/solana-foundation-issues-usdt-loan-to-aave-amid-defi-liquidity-crisis/",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-26T16:09:06Z"
     },
     {
-      "id": "story-2026-04-26-15-005",
-      "headline": "Bitcoin-Dollar Correlation Hits -0.90, Most Inverse Since 2022 Macro Shock",
-      "slug": "bitcoin-dxy-correlation-negative-090-2026",
-      "tldr": "Bitcoin's 30-day correlation to the U.S. Dollar Index has deepened to -0.90, the most negative reading in nearly four years.",
-      "why_it_matters": "Why it matters: BTC is trading like a pure dollar-debasement hedge again, meaning Fed policy and Warsh-era hawkish risk now dictate near-term direction more than crypto-native catalysts.",
+      "id": "story-2026-04-26-16-003",
+      "headline": "Bitcoin ETFs Absorb $2B in 8 Days as Institutional Bid Extends Inflow Streak",
+      "slug": "bitcoin-etfs-2b-inflows-8-days",
+      "tldr": "Spot bitcoin ETFs pulled in $2 billion across an 8-day window through April 24, the longest sustained inflow streak since the post-halving rally.",
+      "why_it_matters": "Why it matters: Persistent ETF demand at $77K shows allocators are buying the rebound, not fading it — a structural bid that historically tightens float and amplifies upside on macro tailwinds.",
       "the_details": [
-        "BTC up over 13% in April, holding above $77,000 and on track for its best month in a year.",
-        "DXY weakness has accompanied $2B of Bitcoin ETF inflows in 8 days through April 24, per CoinDesk.",
-        "Pentagon-backed inflation warnings and Strait of Hormuz risk capped the latest push toward $80,000 resistance."
+        "Cumulative ETF inflows hit $2 billion over 8 trading days ending April 24, per CoinDesk daily flow data.",
+        "BlackRock's IBIT options open interest surpassed Deribit on Friday, marking U.S. regulated venues eclipsing offshore for the first time.",
+        "Inflows came despite Middle East tensions and elevated oil prices, suggesting institutional buyers are looking through near-term macro noise."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
-      "category": "markets",
+      "category": "adoption",
+      "impact": "high",
+      "timestamp": "2026-04-26T16:09:06Z"
+    },
+    {
+      "id": "story-2026-04-26-16-004",
+      "headline": "Morgan Stanley Launches $1 Stablecoin Fund, First Bulge-Bracket Bank to Issue Onchain Cash",
+      "slug": "morgan-stanley-stablecoin-fund-launch",
+      "tldr": "Morgan Stanley debuted a $1-pegged tokenized stablecoin fund on April 24, becoming the first bulge-bracket U.S. bank to ship a yield-bearing onchain dollar product.",
+      "why_it_matters": "Why it matters: With the GENIUS Act framework live, Wall Street stablecoins are no longer a thought experiment — Morgan Stanley moving first hands JPMorgan and Goldman a clock to match or cede the rails.",
+      "the_details": [
+        "Fund launched April 24, 2026, structured under the GENIUS Act's payment stablecoin issuer framework finalized this month.",
+        "Targets institutional treasury and brokerage clients, distributing yield from short-duration Treasuries via tokenized shares.",
+        "FDIC issued proposed rulemaking April 2026 setting capital and reserve standards for FDIC-supervised stablecoin issuers."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-26T10:30:00Z"
+      "timestamp": "2026-04-26T16:09:06Z"
+    },
+    {
+      "id": "story-2026-04-26-16-005",
+      "headline": "IRS Form 1099-DA Goes Live, Forcing Crypto Brokers Into Mandatory Cost-Basis Reporting",
+      "slug": "irs-1099-da-cost-basis-reporting-live",
+      "tldr": "The IRS formally activated mandatory cost-basis reporting for digital asset brokers via Form 1099-DA on April 15, ending years of voluntary compliance.",
+      "why_it_matters": "Why it matters: Onchain anonymity at U.S. exchanges is now a reporting fiction — every Coinbase, Kraken, and Robinhood trade flows directly to the IRS with cost basis attached, closing the favorite loophole of retail traders.",
+      "the_details": [
+        "Effective April 15, 2026, brokers must transmit cost basis on every digital asset disposal via Form 1099-DA.",
+        "Rule implements Section 80603 of the 2021 Infrastructure Act, delayed multiple times before this month's enforcement deadline.",
+        "Decentralized front-ends got a separate reprieve April 13 when SEC staff said they don't need broker registration under specified conditions."
+      ],
+      "source": "Congress.gov",
+      "source_url": "https://www.congress.gov/crs-product/LSB11415",
+      "category": "regulation",
+      "impact": "medium",
+      "timestamp": "2026-04-26T16:09:06Z"
     }
   ]
 }
