@@ -176,81 +176,6 @@ const faqs = [
 
 export default function EthereumETFStakingGuide() {
 
-  const etfs = [
-    {
-      ticker: 'ETHA',
-      issuer: 'BlackRock',
-      expenseRatio: '0.25%',
-      stakingVariant: 'ETHB (staking)',
-      stakingStatus: 'Live - 82% monthly distribution',
-      stakedPercentage: '70-95%',
-      distribution: 'Monthly',
-    },
-    {
-      ticker: 'FETH',
-      issuer: 'Fidelity',
-      expenseRatio: '0.25%',
-      stakingVariant: 'Staking amendment pending',
-      stakingStatus: 'Q2 2026 expected',
-      stakedPercentage: 'TBD',
-      distribution: 'Quarterly (expected)',
-    },
-    {
-      ticker: 'ETHV',
-      issuer: 'VanEck',
-      expenseRatio: '0.20%',
-      stakingVariant: 'Staking amendment pending',
-      stakingStatus: 'Q2 2026 expected',
-      stakedPercentage: 'TBD',
-      distribution: 'Quarterly (expected)',
-    },
-    {
-      ticker: 'EZET',
-      issuer: 'Franklin Templeton',
-      expenseRatio: '0.19%',
-      stakingVariant: 'Staking amendment pending',
-      stakingStatus: 'Q2 2026 expected',
-      stakedPercentage: 'TBD',
-      distribution: 'Quarterly (expected)',
-    },
-    {
-      ticker: 'QETH',
-      issuer: 'Invesco',
-      expenseRatio: '0.25%',
-      stakingVariant: 'Staking amendment pending',
-      stakingStatus: 'Q2 2026 expected',
-      stakedPercentage: 'TBD',
-      distribution: 'Quarterly (expected)',
-    },
-    {
-      ticker: 'CETH',
-      issuer: '21Shares',
-      expenseRatio: '0.21%',
-      stakingVariant: 'Staking amendment pending',
-      stakingStatus: 'Q2 2026 expected',
-      stakedPercentage: 'TBD',
-      distribution: 'Quarterly (expected)',
-    },
-    {
-      ticker: 'ETHE',
-      issuer: 'Grayscale',
-      expenseRatio: '1.50%',
-      stakingVariant: 'Converted to spot (no staking)',
-      stakingStatus: 'Live - no staking',
-      stakedPercentage: '0%',
-      distribution: 'None',
-    },
-    {
-      ticker: 'ETH',
-      issuer: 'Grayscale Mini',
-      expenseRatio: '0.15%',
-      stakingVariant: 'Staking amendment pending',
-      stakingStatus: 'Q2 2026 expected',
-      stakedPercentage: 'TBD',
-      distribution: 'Quarterly (expected)',
-    },
-  ];
-
   return (
     <main className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
       {/* Structured data */}
@@ -325,42 +250,42 @@ export default function EthereumETFStakingGuide() {
             <h3 className="font-semibold text-[#e6edf3] text-sm">Table of Contents</h3>
             <nav className="space-y-2 text-sm">
               <div>
-                <a href="#what-eth-staking-etf" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#what-eth-staking-etf" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:text-[#79c0ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#58a6ff] focus-visible:outline-offset-2 transition-colors rounded">
                   1. What is ETH Staking?
                 </a>
               </div>
               <div>
-                <a href="#how-it-works" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#how-it-works" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:text-[#79c0ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#58a6ff] focus-visible:outline-offset-2 transition-colors rounded">
                   2. How It Works
                 </a>
               </div>
               <div>
-                <a href="#etf-comparison" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#etf-comparison" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:text-[#79c0ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#58a6ff] focus-visible:outline-offset-2 transition-colors rounded">
                   3. ETF Comparison Table
                 </a>
               </div>
               <div>
-                <a href="#march-2026-ruling" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#march-2026-ruling" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:text-[#79c0ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#58a6ff] focus-visible:outline-offset-2 transition-colors rounded">
                   4. March 2026 SEC Ruling
                 </a>
               </div>
               <div>
-                <a href="#yields-breakdown" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#yields-breakdown" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:text-[#79c0ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#58a6ff] focus-visible:outline-offset-2 transition-colors rounded">
                   5. Staking Yields
                 </a>
               </div>
               <div>
-                <a href="#risks" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#risks" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:text-[#79c0ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#58a6ff] focus-visible:outline-offset-2 transition-colors rounded">
                   6. Risks & Considerations
                 </a>
               </div>
               <div>
-                <a href="#how-to-choose" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#how-to-choose" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:text-[#79c0ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#58a6ff] focus-visible:outline-offset-2 transition-colors rounded">
                   7. How to Choose
                 </a>
               </div>
               <div>
-                <a href="#faq" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#faq" className="text-[#58a6ff] hover:text-[#79c0ff] focus-visible:text-[#79c0ff] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#58a6ff] focus-visible:outline-offset-2 transition-colors rounded">
                   8. FAQ
                 </a>
               </div>
@@ -1097,14 +1022,6 @@ export default function EthereumETFStakingGuide() {
           </section>
 
         
-        {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
-          </p>
-        </div>
-      
         {/* section-footer */}
         <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
           <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
