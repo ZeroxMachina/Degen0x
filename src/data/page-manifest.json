@@ -2460,6 +2460,10 @@
     "category": "investing"
   },
   {
+    "slug": "/investing/crypto-etf-complete-guide-2026",
+    "category": "investing"
+  },
+  {
     "slug": "/investing/crypto-index-fund-guide",
     "category": "investing"
   },
@@ -2804,6 +2808,10 @@
     "category": "learn"
   },
   {
+    "slug": "/learn/ai-crypto-coins",
+    "category": "learn"
+  },
+  {
     "slug": "/learn/ai-crypto-tokens-complete-guide",
     "category": "learn"
   },
@@ -2908,6 +2916,14 @@
     "category": "learn"
   },
   {
+    "slug": "/learn/best-crypto-staking-rewards-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/best-crypto-to-stake-2026",
+    "category": "learn"
+  },
+  {
     "slug": "/learn/best-meme-coin-launchpads-2026",
     "category": "learn"
   },
@@ -2980,6 +2996,10 @@
     "category": "learn"
   },
   {
+    "slug": "/learn/bitcoin-price-prediction-2026",
+    "category": "learn"
+  },
+  {
     "slug": "/learn/bitcoin-runes-guide-2026",
     "category": "learn"
   },
@@ -3021,6 +3041,10 @@
   },
   {
     "slug": "/learn/bitvm-bitcoin-smart-contracts-programmability-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/blackrock-buidl-tokenized-treasury-guide-2026",
     "category": "learn"
   },
   {
@@ -3152,6 +3176,10 @@
     "category": "learn"
   },
   {
+    "slug": "/learn/crypto-airdrop-farming-guide-2026",
+    "category": "learn"
+  },
+  {
     "slug": "/learn/crypto-airdrops-2026",
     "category": "learn"
   },
@@ -3221,6 +3249,10 @@
   },
   {
     "slug": "/learn/crypto-etfs-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-for-beginners",
     "category": "learn"
   },
   {
@@ -3368,6 +3400,10 @@
     "category": "learn"
   },
   {
+    "slug": "/learn/crypto-presale",
+    "category": "learn"
+  },
+  {
     "slug": "/learn/crypto-prime-brokerage-institutional-trading-guide-2026",
     "category": "learn"
   },
@@ -3389,6 +3425,10 @@
   },
   {
     "slug": "/learn/crypto-rug-pull-how-to-avoid",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/crypto-scam-protection-complete-guide-2026",
     "category": "learn"
   },
   {
@@ -3441,6 +3481,10 @@
   },
   {
     "slug": "/learn/cryptocurrency-for-dummies-guide",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/cryptocurrency-investing-beginners-complete-guide-2026",
     "category": "learn"
   },
   {
@@ -3737,6 +3781,10 @@
   },
   {
     "slug": "/learn/ethereum-preconfirmations-preconfs-fast-transactions-guide-2026",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/ethereum-price-prediction-2026",
     "category": "learn"
   },
   {
@@ -4964,6 +5012,10 @@
     "category": "learn"
   },
   {
+    "slug": "/learn/what-is-blockchain",
+    "category": "learn"
+  },
+  {
     "slug": "/learn/what-is-liquid-staking",
     "category": "learn"
   },
@@ -4981,6 +5033,10 @@
   },
   {
     "slug": "/learn/what-is-tvl-total-value-locked",
+    "category": "learn"
+  },
+  {
+    "slug": "/learn/what-is-web3",
     "category": "learn"
   },
   {
@@ -5109,6 +5165,10 @@
   },
   {
     "slug": "/long-term/best/staking-long-term",
+    "category": "long-term"
+  },
+  {
+    "slug": "/long-term/bitcoin-10-year-prediction-analysis",
     "category": "long-term"
   },
   {

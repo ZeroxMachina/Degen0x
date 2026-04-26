@@ -17,11 +17,13 @@ export const metadata: Metadata = {
     description: 'Track live crypto fear and greed index with real-time sentiment analysis and trading insights.',
     type: 'website',
     url: 'https://degen0x.com/tools/crypto-fear-greed-index-live',
+    images: [{ url: 'https://degen0x.com/og-crypto-fear-greed-index.svg', width: 1200, height: 630, alt: 'Crypto Fear & Greed Index Live' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Crypto Fear & Greed Index Live',
     description: 'Real-time market sentiment tracking for crypto traders and investors.',
+    images: ['https://degen0x.com/og-crypto-fear-greed-index.svg'],
   },
   alternates: {
     canonical: 'https://degen0x.com/tools/crypto-fear-greed-index-live',

@@ -21,13 +21,13 @@ export const metadata: Metadata = {
     title: "Crypto Profit Calculator | Calculate Gains & ROI",
     description: "Calculate crypto profits with trading fees and taxes. Track ROI, gain/loss %, and cost basis. Essential tool for crypto traders and investors.",
     url: "https://degen0x.com/tools/crypto-profit-calculator",
-    images: [{ url: "https://degen0x.com/og-tools.svg", width: 1200, height: 630, alt: "Crypto Profit Calculator" }],
+    images: [{ url: "https://degen0x.com/og-crypto-profit-calculator.svg", width: 1200, height: 630, alt: "Crypto Profit Calculator" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Crypto Profit Calculator | Calculate Gains & ROI",
     description: "Calculate crypto profits with trading fees and taxes. Track ROI, gain/loss %, and cost basis.",
-    images: ["https://degen0x.com/og-tools.svg"],
+    images: ["https://degen0x.com/og-crypto-profit-calculator.svg"],
   },
 };
 
@@ -36,7 +36,7 @@ const structuredData = {
   "@type": "Article",
   headline: "Crypto Profit Calculator: Calculate Your Gains & ROI",
   description: "Calculate crypto profits with trading fees and taxes. Track ROI, gain/loss %, and cost basis. Essential tool for crypto traders and investors.",
-  image: "https://degen0x.com/og-tools.svg",
+  image: "https://degen0x.com/og-crypto-profit-calculator.svg",
   datePublished: "2026-04-11",
   dateModified: "2026-04-11",
   author: { "@type": "Organization", name: "degen0x" },
@@ -100,7 +100,7 @@ const toolSchema = generateToolPageSchema({
     "Free crypto profit calculator with trading-fee and tax inputs. Calculate ROI, gain/loss percentage, and cost basis for any crypto trade.",
   url: "https://degen0x.com/tools/crypto-profit-calculator",
   category: "FinanceApplication",
-  image: "https://degen0x.com/og-tools.svg",
+  image: "https://degen0x.com/og-crypto-profit-calculator.svg",
 });
 
 const breadcrumbSchema = generateBreadcrumbSchema([

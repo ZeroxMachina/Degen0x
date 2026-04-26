@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1c"/>
+      <stop offset="100%" stop-color="#0d1526"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="1000" cy="200" r="200" fill="#10b981" opacity="0.06"/>
+  <circle cx="150" cy="500" r="150" fill="#8b5cf6" opacity="0.04"/>
+
+  <!-- Top accent bar -->
+  <rect width="1200" height="4" fill="url(#accent)"/>
+
+  <!-- Logo text -->
+  <text x="60" y="80" fill="#8b949e" font-family="Inter,system-ui,sans-serif" font-size="18" font-weight="600">degen0x</text>
+
+  <!-- Title -->
+  <text x="60" y="200" fill="#ffffff" font-family="Inter,system-ui,sans-serif" font-size="64" font-weight="800" letter-spacing="-1">Crypto Profit</text>
+  <text x="60" y="270" fill="#ffffff" font-family="Inter,system-ui,sans-serif" font-size="64" font-weight="800" letter-spacing="-1">Calculator</text>
+
+  <!-- Subtitle -->
+  <text x="60" y="330" fill="#8b949e" font-family="Inter,system-ui,sans-serif" font-size="24" font-weight="400">Calculate Gains, ROI &amp; Cost Basis</text>
+
+  <!-- Stats row -->
+  <rect x="60" y="370" width="680" height="60" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+  <text x="85" y="408" fill="#10b981" font-family="Inter,system-ui,sans-serif" font-size="18" font-weight="700">ROI %</text>
+  <text x="280" y="408" fill="#8b5cf6" font-family="Inter,system-ui,sans-serif" font-size="18" font-weight="700">Fee Calculator</text>
+  <text x="530" y="408" fill="#10b981" font-family="Inter,system-ui,sans-serif" font-size="18" font-weight="700">Tax Estimates</text>
+
+  <!-- Bottom bar -->
+  <rect y="610" width="1200" height="20" fill="url(#accent)" opacity="0.3"/>
+
+  <!-- Website text -->
+  <text x="60" y="580" fill="#6e7681" font-family="Inter,system-ui,sans-serif" font-size="16" font-weight="500">degen0x.com</text>
+</svg>

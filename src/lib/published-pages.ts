@@ -1563,6 +1563,8 @@ export const PUBLISHED_PAGES: ReadonlySet<string> = new Set([
  */
 export const PUBLISH_QUEUE: readonly string[] = [
   // Queue drained 2026-04-17 — full backlog promoted to PUBLISHED_PAGES
+  // ── Added 2026-04-26 by build-cycle ─────────────────────────────
+  "/learn/blackrock-buidl-tokenized-treasury-guide-2026",
 ];
 
 /**
