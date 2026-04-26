@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-26T18:06:42Z",
-  "briefing_id": "briefing-2026-04-26-18",
+  "generated_at": "2026-04-26T19:08:00Z",
+  "briefing_id": "briefing-2026-04-26-19",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-26-18-001",
-      "headline": "North Korea Pinned for $285M Drift Hack via Long-Game Social Engineering",
-      "slug": "north-korea-drift-protocol-285m-hack-attribution",
-      "tldr": "Investigators traced April's $285M Drift Protocol drain to DPRK-affiliated operators using pre-signed authorizations harvested over months.",
-      "why_it_matters": "Why it matters: State-grade phishing has overtaken smart-contract bugs as DeFi's primary loss vector, forcing protocols to harden human ops, not just code.",
+      "id": "story-2026-04-26-19-001",
+      "headline": "KelpDAO LayerZero Bridge Drained for $292M, Wrapping 18% of rsETH Across 20 Chains",
+      "slug": "kelpdao-layerzero-bridge-292m-exploit",
+      "tldr": "An attacker exploited KelpDAO's LayerZero-powered bridge to siphon roughly 116,500 rsETH — about $292M and 18% of circulating supply.",
+      "why_it_matters": "Why it matters: This is 2026's biggest DeFi exploit and it weaponized the cross-chain rails everyone is leaning on for restaking liquidity.",
       "the_details": [
-        "Drift was drained on April 1 via hidden, pre-signed transaction authorizations rather than a contract exploit.",
-        "Attribution mirrors Lazarus playbook seen on Bybit in 2025; full April theft tally now exceeds $606M across 12 incidents.",
-        "Investigators say the social-engineering campaign ran for several months before triggering, targeting privileged signers."
+        "Hack hit on April 18, draining 116,500 rsETH (~$292M) routed through KelpDAO's LayerZero bridge across 20 chains.",
+        "Lazarus Group is the leading suspect, according to multiple onchain investigators citing reused laundering patterns.",
+        "Combined with the April 1 Drift hit, two attacks now account for ~95% of April's $606M in stolen crypto."
       ],
-      "source": "BanklessTimes",
-      "source_url": "https://www.banklesstimes.com/articles/2026/04/26/crypto-market-recap-north-korea-behind-290m-defi-hack-sun-takes-wlfi-to-court-defi-losses-hit-1-7b-in-april-and-more-apr-19-25-2026/",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
       "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-26T13:00:00Z"
+      "timestamp": "2026-04-26T19:08:00Z"
     },
     {
-      "id": "story-2026-04-26-18-002",
-      "headline": "White House Sets Mid-2026 Reveal for Strategic Bitcoin Reserve Architecture",
-      "slug": "white-house-strategic-bitcoin-reserve-architecture-mid-2026",
-      "tldr": "The administration will publish the framework for a U.S. Strategic Bitcoin Reserve mid-year, ahead of the July regulatory report deadline.",
-      "why_it_matters": "Why it matters: A formal Treasury accumulation blueprint would lock sovereign Bitcoin demand into U.S. policy and pressure peer nations to follow suit.",
+      "id": "story-2026-04-26-19-002",
+      "headline": "SEC Greenlights Unregistered DeFi Front-Ends in April 13 Staff Statement",
+      "slug": "sec-defi-front-end-no-action-april-2026",
+      "tldr": "SEC staff said it will not object to certain UI providers facilitating crypto-asset securities transactions without broker-dealer registration.",
+      "why_it_matters": "Why it matters: It's the clearest no-action signal yet that the post-Project Crypto SEC will let DeFi front-ends operate without dealer licenses.",
       "the_details": [
-        "Architecture targets a Treasury-led path to accumulate Bitcoin under a defined statutory framework.",
-        "Reveal lands before the comprehensive crypto regulatory report due in July 2026.",
-        "Move builds on the SEC-CFTC MOU and the GENIUS Act stablecoin rules already in implementation."
+        "Statement issued April 13, 2026, covers software interfaces that prepare and submit crypto-asset securities orders.",
+        "Conditions include no custody, no order matching, and no individualized investment advice from the interface operator.",
+        "Companion piece to the March 17 SEC-CFTC joint framework, which superseded the 2019 SEC token taxonomy."
       ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-monday-april-20-2026-prices-rising-this-morning-despite-us-iranian-tensions-115955954.html",
-      "category": "adoption",
+      "source": "SEC Staff Statement",
+      "source_url": "https://www.sec.gov/newsroom/speeches-statements/staff-statement-regarding-broker-dealer-registration-certain-user-interfaces-utilized-prepare-staff-statement-regarding-broker-dealer-registration-certain-user-interfaces-utilized",
+      "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-26T12:00:00Z"
+      "timestamp": "2026-04-26T19:08:00Z"
     },
     {
-      "id": "story-2026-04-26-18-003",
-      "headline": "BTC-Dollar Inverse Correlation Hits 4-Year Extreme as DXY Cracks",
-      "slug": "btc-dollar-inverse-correlation-four-year-extreme",
-      "tldr": "Bitcoin and the U.S. dollar are moving in near-perfect opposition, the most extreme inverse pairing in nearly four years.",
-      "why_it_matters": "Why it matters: BTC is trading like a pure dollar-debasement hedge again, which sharpens its macro case but makes it hostage to every Fed and Treasury surprise.",
+      "id": "story-2026-04-26-19-003",
+      "headline": "Bitcoin Heads for Best Month in a Year as USDT Supply Adds $5B in April",
+      "slug": "bitcoin-best-month-usdt-5b-supply",
+      "tldr": "BTC is up roughly 13.6% in April with USDT issuance climbing $5B toward $150B, fueling the rebound off the $68K support shelf.",
+      "why_it_matters": "Why it matters: Stablecoin minting at this pace is the cleanest leading indicator of dry powder waiting to chase upside if Fed messaging stays soft.",
       "the_details": [
-        "BTC sits near $77K-$78K, up 13%+ in April, on track for its best monthly close in a year.",
-        "USDT supply has expanded by $5B during the rebound, fueling spot demand and offshore liquidity.",
-        "Last comparable BTC/DXY divergence preceded the 2022 macro regime shift; traders are watching DXY breakdown levels closely."
+        "BTC holding near $77K, on pace for its strongest monthly print since April 2025.",
+        "USDT supply approaching $150B; Tether minted ~$5B fresh tokens in April alone.",
+        "Next resistance pegged at $79K; Fed meeting later this week is the main macro pivot."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
       "category": "markets",
-      "impact": "medium",
-      "timestamp": "2026-04-26T10:30:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-26T19:08:00Z"
     },
     {
-      "id": "story-2026-04-26-18-004",
-      "headline": "Solana Alpenglow Upgrade Targets 2026 Rollout to Slash Confirmation Times",
-      "slug": "solana-alpenglow-consensus-upgrade-2026",
-      "tldr": "Solana's long-awaited Alpenglow consensus overhaul is now slated for 2026, promising faster finality and fewer outages.",
-      "why_it_matters": "Why it matters: Alpenglow is the network's pitch to institutional desks and ETF issuers that uptime risk — Solana's biggest knock — is finally fixable.",
+      "id": "story-2026-04-26-19-004",
+      "headline": "Spot Solana ETFs Cross $1B AUM as Goldman Quietly Builds $108M Position",
+      "slug": "solana-etf-1b-aum-goldman-position",
+      "tldr": "U.S. spot SOL ETFs have surpassed $1B in assets with $35.17M of net inflows last week and a disclosed $108M Goldman Sachs allocation.",
+      "why_it_matters": "Why it matters: A bulge-bracket bank publicly long SOL gives institutional sales desks the green light to start pitching alt-L1 exposure.",
       "the_details": [
-        "Alpenglow rewrites consensus to materially reduce block confirmation latency.",
-        "Upgrade lands as spot SOL ETFs cross $1B AUM and SOL consolidates between $77 and $94.",
-        "Reliability gains directly address the chain's history of liveness incidents that previously spooked TradFi allocators."
+        "Five consecutive sessions of net inflows, $35.17M added across spot SOL products last week.",
+        "Goldman Sachs disclosed a roughly $108M position via 13F-style filing.",
+        "SOL trading at $86.45 with a $49.8B market cap; Alpenglow consensus upgrade still on deck for 2026."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/01/03/ethereum-and-solana-set-the-stage-for-2026-s-defi-reboot",
-      "category": "infrastructure",
-      "impact": "medium",
-      "timestamp": "2026-04-26T09:00:00Z"
-    },
-    {
-      "id": "story-2026-04-26-18-005",
-      "headline": "Plasma (XPL) Unlocks $10.1M Today, Releasing 3.73% of Circulating Supply",
-      "slug": "plasma-xpl-token-unlock-april-26-2026",
-      "tldr": "Plasma is releasing 3.73% of circulating supply — about $10.1M of XPL — into the market on April 26.",
-      "why_it_matters": "Why it matters: A 3.7% same-day unlock is large enough to pressure price discovery and is a cleaner read on insider conviction than any roadmap update.",
-      "the_details": [
-        "Unlock value pegged at $10.10M based on the morning XPL spot price.",
-        "Schedule lands during a thin weekend tape, amplifying any market-impact-style selling.",
-        "Watch for follow-through Monday as desks reset hedges around the new float."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
+      "source": "Crypto.com Market Updates",
+      "source_url": "https://crypto.com/us/market-updates/best-altcoins-to-watch-in-april-2026",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-26T07:00:00Z"
+      "timestamp": "2026-04-26T19:08:00Z"
+    },
+    {
+      "id": "story-2026-04-26-19-005",
+      "headline": "Bhutan Moves Another 250 BTC, Pushing 2026 Sovereign Outflows Past $240M",
+      "slug": "bhutan-250-btc-2026-outflows",
+      "tldr": "Arkham flagged a 250 BTC transfer from Bhutan's sovereign wallets, lifting year-to-date outflows above $240M from a stack down 73% from the Oct 2024 peak.",
+      "why_it_matters": "Why it matters: The first sovereign Bitcoin treasury is steadily de-risking — a quiet counterweight to the U.S. strategic-reserve narrative.",
+      "the_details": [
+        "April 13 transfer of 250 BTC tracked onchain by Arkham Intelligence.",
+        "2026 outflows now top $240M; Bhutan's stack is 73% off its October 2024 peak.",
+        "No public statement on whether sales are funding budget needs or treasury rotation."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/397558/bhutan-moves-250-btc-as-2026-outflows-top-240-million-arkham-data",
+      "category": "bitcoin",
+      "impact": "medium",
+      "timestamp": "2026-04-26T19:08:00Z"
     }
   ]
 }
