@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-26-004",
+    "type": "news",
+    "title": "📰 April Crypto Hack Toll Hits $606M, Worst Month Since Bybit Breach",
+    "message": "Crypto protocols lost $606M across 12 exploits in the first 18 days of April, the worst monthly theft tally since February 2025's Bybit incident.",
+    "actionUrl": "/news",
+    "date": "2026-04-26"
+  },
+  {
     "id": "feed-2026-04-26-003",
     "type": "news",
     "title": "\ud83d\udcf0 Bitcoin Posts Best Month in a Year as $5B USDT Injection Pushes BTC Above $77K",
