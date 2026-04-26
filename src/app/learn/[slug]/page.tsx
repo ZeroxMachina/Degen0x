@@ -3,6 +3,7 @@ export const revalidate = 3600;
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import LearnPageLayout from "@/components/LearnPage";
+import AuthorAttribution from "@/components/AuthorAttribution";
 import { pages } from "@/data/pages/learn";
 import AuthorAttribution from '@/components/AuthorAttribution';
 
@@ -57,14 +58,3 @@ export default async function DynamicPage({ params }: Props) {
       />    </LearnPageLayout>
   );
 }
-      <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
-  <h3 style={{ color: "#e5e7eb", fontSize: "16px", marginBottom: "0.75rem" }}>Explore More</h3>
-  <a href="/learn/aave-v4-gho-stablecoin-defi-lending-guide-2026" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Aave V4 Gho Stablecoin Defi Lending Guide 2026</a>
-  <a href="/learn/aave-v4-guide" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Aave V4 Guide</a>
-  <a href="/learn/abstract-chain-consumer-crypto-zk-rollup-guide-2026" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Abstract Chain Consumer Crypto Zk Rollup Guide 2026</a>
-  <a href="/learn/abstract-chain-guide" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Abstract Chain Guide</a>
-  <a href="/learn/account-abstraction" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Account Abstraction</a>
-  <a href="/learn/account-abstraction-erc-4337-guide" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Account Abstraction Erc 4337 Guide</a>
-  <a href="/learn/advanced-defi-strategies" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Advanced Defi Strategies</a>
-  <a href="/learn/advanced-staking-strategies-guide-2026" style={{ color: "#fb923c", marginRight: "1rem", display: "inline-block", marginBottom: "0.5rem" }}>Advanced Staking Strategies Guide 2026</a>
-</nav>
