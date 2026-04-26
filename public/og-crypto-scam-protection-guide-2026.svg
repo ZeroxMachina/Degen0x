@@ -1,0 +1,98 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradAccentScam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7f1d1d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradScam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0610;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#180c14;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shieldFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fca5a5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#991b1b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="checkFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradScam)"/>
+  <rect width="1200" height="8" fill="url(#gradAccentScam)"/>
+
+  <!-- decorative geometric grid (security / orderly feel) -->
+  <g opacity="0.07" stroke="#dc2626" stroke-width="1">
+    <line x1="0"   y1="120" x2="1200" y2="120"/>
+    <line x1="0"   y1="510" x2="1200" y2="510"/>
+    <line x1="80"  y1="80"  x2="80"   y2="600"/>
+    <line x1="1120" y1="80" x2="1120" y2="600"/>
+  </g>
+
+  <!-- decorative concentric circles (radar / scanning feel) -->
+  <circle cx="170" cy="200" r="56" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.20"/>
+  <circle cx="1060" cy="500" r="44" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.22"/>
+  <circle cx="1090" cy="180" r="34" fill="none" stroke="#7f1d1d" stroke-width="1" opacity="0.20"/>
+
+  <!-- decorative shield + audit checklist motif (right side) -->
+  <g opacity="0.42">
+    <!-- central shield -->
+    <path d="M 1010 260 L 1010 320 Q 1010 380 1058 408 Q 1106 380 1106 320 L 1106 260 Z"
+          fill="none" stroke="url(#shieldFill)" stroke-width="2.2"/>
+    <!-- checkmark inside shield -->
+    <polyline points="1032,322 1052,344 1086,300" fill="none" stroke="#fca5a5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- audit checklist (left of shield) -->
+    <rect x="940" y="350" width="56" height="78" fill="none" stroke="#dc2626" stroke-width="1.5" rx="3"/>
+    <line x1="952" y1="368" x2="984" y2="368" stroke="#dc2626" stroke-width="1"/>
+    <line x1="952" y1="384" x2="984" y2="384" stroke="#dc2626" stroke-width="1"/>
+    <line x1="952" y1="400" x2="978" y2="400" stroke="#dc2626" stroke-width="1"/>
+    <!-- check marks beside lines -->
+    <polyline points="948,368 950,370 953,365" fill="none" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
+    <polyline points="948,384 950,386 953,381" fill="none" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
+    <polyline points="948,400 950,402 953,397" fill="none" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- warning chevrons (left of motif, suggesting alert tiers) -->
+  <g opacity="0.55">
+    <polygon points="900,300 909,285 918,300 909,295" fill="#dc2626"/>
+    <polygon points="900,330 909,315 918,330 909,325" fill="#f59e0b"/>
+    <polygon points="900,360 909,345 918,360 909,355" fill="#dc2626"/>
+  </g>
+
+  <!-- broken chain motif (suggesting disrupting scams) -->
+  <g opacity="0.40" stroke="url(#checkFill)" stroke-width="2" fill="none">
+    <ellipse cx="858" cy="478" rx="14" ry="9" transform="rotate(-22 858 478)"/>
+    <ellipse cx="892" cy="492" rx="14" ry="9" transform="rotate(-22 892 492)"/>
+    <line x1="838" y1="488" x2="850" y2="476" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="900" y1="500" x2="912" y2="488" stroke="#f59e0b" stroke-width="2"/>
+  </g>
+
+  <!-- badge -->
+  <text x="80" y="120" font-family="Inter, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#f87171" letter-spacing="2" opacity="0.95">SECURITY · SCAM PROTECTION</text>
+
+  <!-- title -->
+  <text x="80" y="240" font-family="Inter, Helvetica, sans-serif" font-size="58" font-weight="800" fill="#ffffff">Crypto Scam Protection 2026</text>
+
+  <!-- subtitle line 1 -->
+  <text x="80" y="310" font-family="Inter, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#fecaca">How to spot rug pulls, phishing, and</text>
+
+  <!-- subtitle line 2 -->
+  <text x="80" y="350" font-family="Inter, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#fecaca">AI-powered crypto scams &#x2014; before they hit you.</text>
+
+  <!-- detail strip -->
+  <text x="80" y="420" font-family="Inter, Helvetica, sans-serif" font-size="17" fill="#9ca3af">Rug pulls  ·  Phishing  ·  Fake airdrops  ·  AI deepfakes  ·  Approval drainers</text>
+
+  <!-- divider -->
+  <rect x="80" y="450" width="120" height="2" fill="url(#gradAccentScam)" opacity="0.7"/>
+
+  <!-- supporting tagline -->
+  <text x="80" y="490" font-family="Inter, Helvetica, sans-serif" font-size="15" fill="#6b7280">A field guide for the paranoid, the cautious, and anyone who&#x2019;s already been burned.</text>
+
+  <!-- degen0x branding -->
+  <text x="1120" y="600" font-family="Inter, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#f87171" text-anchor="end" opacity="0.85">degen0x.com</text>
+
+  <!-- bottom gradient line -->
+  <rect y="622" width="1200" height="8" fill="url(#gradAccentScam)" opacity="0.5"/>
+</svg>
