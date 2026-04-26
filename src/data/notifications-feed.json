@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-26-010",
+    "type": "news",
+    "title": "📰 SEC and CFTC sign historic MOU, ending years of jurisdictional turf war",
+    "message": "The SEC and CFTC announced their first formal memorandum of understanding to coordinate crypto oversight, codifying a joint interpretation issued earlier this spring.",
+    "actionUrl": "/news",
+    "date": "2026-04-26"
+  },
+  {
     "id": "feed-2026-04-26-009",
     "type": "news",
     "title": "📰 Bitcoin tracks best month in a year as USDT supply nears $150B",
