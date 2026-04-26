@@ -118,10 +118,49 @@ const combinedSchema = combineSchemas([articleSchema, faqSchema, breadcrumbSchem
 
 const author = getAuthorForSection("learn");
 
+const h1Style: React.CSSProperties = {
+  fontSize: 36,
+  fontWeight: 800,
+  lineHeight: 1.2,
+  margin: "8px 0 16px",
+  background: "linear-gradient(135deg, #6366f1, #06b6d4)",
+  WebkitBackgroundClip: "text",
+  WebkitTextFillColor: "transparent",
+  backgroundClip: "text",
+};
+
+const h2Style: React.CSSProperties = {
+  fontSize: 24,
+  fontWeight: 700,
+  marginTop: 40,
+  marginBottom: 16,
+  color: "#a78bfa",
+  borderBottom: "2px solid #2d2254",
+  paddingBottom: 12,
+};
+
+const linkStyle: React.CSSProperties = {
+  color: "#7aa2ff",
+  textDecoration: "none",
+  borderBottom: "1px solid transparent",
+  transition: "border-color 0.2s ease, color 0.2s ease",
+};
+
 export default function BlackRockBuidlGuide() {
   return (
     <>
       <StructuredData data={combinedSchema} />
+      <style>{`
+        .buidl-link:hover, .buidl-link:focus {
+          color: #93b4ff !important;
+          border-bottom-color: #93b4ff !important;
+        }
+        .buidl-link:focus-visible {
+          outline: 2px solid #7aa2ff;
+          outline-offset: 2px;
+          border-radius: 2px;
+        }
+      `}</style>
       <main
         style={{
           maxWidth: 880,
@@ -152,7 +191,7 @@ export default function BlackRockBuidlGuide() {
           >
             RWA · Tokenized Treasuries · Institutional DeFi
           </p>
-          <h1 style={{ fontSize: 38, lineHeight: 1.15, margin: "8px 0 16px" }}>
+          <h1 style={h1Style}>
             BlackRock BUIDL Guide 2026 — The Tokenized US Treasury Fund That
             Quietly Became DeFi Plumbing
           </h1>
@@ -174,7 +213,7 @@ export default function BlackRockBuidlGuide() {
         </header>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>What BUIDL actually is</h2>
+          <h2 style={h2Style}>What BUIDL actually is</h2>
           <p>
             BUIDL stands for the <strong>BlackRock USD Institutional Digital
             Liquidity Fund</strong>. Mechanically it is an SEC-regulated money
@@ -202,7 +241,7 @@ export default function BlackRockBuidlGuide() {
         </section>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>How BUIDL pays you</h2>
+          <h2 style={h2Style}>How BUIDL pays you</h2>
           <p>
             Most newcomers expect BUIDL to behave like a rebasing token — a
             balance that grows over time. It does not. BUIDL aims to maintain a
@@ -237,7 +276,7 @@ export default function BlackRockBuidlGuide() {
         </section>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>Who can actually own it</h2>
+          <h2 style={h2Style}>Who can actually own it</h2>
           <p>
             BUIDL is not a retail product. Three structural gates apply:
           </p>
@@ -267,7 +306,7 @@ export default function BlackRockBuidlGuide() {
         </section>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>The multichain expansion</h2>
+          <h2 style={h2Style}>The multichain expansion</h2>
           <p>
             BUIDL launched in March 2024 as an Ethereum-only token. Within four
             months it crossed <strong>$500 million in AUM</strong>, briefly
@@ -278,7 +317,7 @@ export default function BlackRockBuidlGuide() {
             In late 2024 BlackRock and Securitize extended the fund onto
             additional chains using <Link
               href="/learn/wormhole-bridge-guide"
-              style={{ color: "#7aa2ff" }}
+              className="buidl-link" style={linkStyle}
             >
               Wormhole
             </Link>{" "}
@@ -318,7 +357,7 @@ export default function BlackRockBuidlGuide() {
         </section>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>Where BUIDL fits in the on-chain dollar stack</h2>
+          <h2 style={h2Style}>Where BUIDL fits in the on-chain dollar stack</h2>
           <p>
             The reason BUIDL matters out of proportion to its AUM is that it
             quietly became <strong>reserve plumbing</strong> for several
@@ -328,7 +367,7 @@ export default function BlackRockBuidlGuide() {
             <li>
               <strong>Ondo Finance</strong> — Ondo's <Link
                 href="/learn/ondo-finance-tokenized-treasuries-rwa-guide-2026"
-                style={{ color: "#7aa2ff" }}
+                className="buidl-link" style={linkStyle}
               >
                 OUSG product
               </Link>{" "}
@@ -345,7 +384,7 @@ export default function BlackRockBuidlGuide() {
               <strong>Ethena</strong> — for portions of its USDtb and reserve
               allocations, <Link
                 href="/learn/ethena-usde-guide"
-                style={{ color: "#7aa2ff" }}
+                className="buidl-link" style={linkStyle}
               >
                 Ethena
               </Link>{" "}
@@ -358,13 +397,13 @@ export default function BlackRockBuidlGuide() {
             increasingly want a regulated, on-chain, yield-bearing instrument
             for the "boring" portion of their reserves. BUIDL is the most
             credible candidate today, and competitors —{" "}
-            <Link href="/learn/franklin-templeton-benji-fobxx-guide" style={{ color: "#7aa2ff" }}>
+            <Link href="/learn/franklin-templeton-benji-fobxx-guide" className="buidl-link" style={linkStyle}>
               Franklin Templeton's BENJI / FOBXX
             </Link>
             ,{" "}
             <Link
               href="/learn/rwa-tokenization-guide-2026"
-              style={{ color: "#7aa2ff" }}
+              className="buidl-link" style={linkStyle}
             >
               other tokenized money market funds
             </Link>{" "}
@@ -373,7 +412,7 @@ export default function BlackRockBuidlGuide() {
         </section>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>How BUIDL compares to other tokenized treasuries</h2>
+          <h2 style={h2Style}>How BUIDL compares to other tokenized treasuries</h2>
           <p>
             BUIDL is not the only tokenized money market fund on a public chain
             — but it is the largest and the most institutionally weighted.
@@ -413,14 +452,14 @@ export default function BlackRockBuidlGuide() {
             For a deeper side-by-side, see our{" "}
             <Link
               href="/learn/rwa-tokenization-guide-2026"
-              style={{ color: "#7aa2ff" }}
+              className="buidl-link" style={linkStyle}
             >
               RWA tokenization guide
             </Link>{" "}
             and the{" "}
             <Link
               href="/tools/stablecoin-yield-tracker"
-              style={{ color: "#7aa2ff" }}
+              className="buidl-link" style={linkStyle}
             >
               stablecoin yield tracker
             </Link>
@@ -429,7 +468,7 @@ export default function BlackRockBuidlGuide() {
         </section>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>Risks worth being honest about</h2>
+          <h2 style={h2Style}>Risks worth being honest about</h2>
           <p>
             BUIDL is conservative as crypto goes, but it is not risk-free.
             Holders should understand four categories:
@@ -466,7 +505,7 @@ export default function BlackRockBuidlGuide() {
             For comparison frameworks on RWA risk, see our{" "}
             <Link
               href="/learn/rwa-risk-framework-guide"
-              style={{ color: "#7aa2ff" }}
+              className="buidl-link" style={linkStyle}
             >
               RWA risk framework
             </Link>
@@ -475,7 +514,7 @@ export default function BlackRockBuidlGuide() {
         </section>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>What to watch in 2026</h2>
+          <h2 style={h2Style}>What to watch in 2026</h2>
           <ul>
             <li>
               <strong>Reserve adoption.</strong> Whether more stablecoin
@@ -502,7 +541,7 @@ export default function BlackRockBuidlGuide() {
         </section>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>Frequently asked questions</h2>
+          <h2 style={h2Style}>Frequently asked questions</h2>
 
           <h3>Is BUIDL a stablecoin?</h3>
           <p>
@@ -554,7 +593,7 @@ export default function BlackRockBuidlGuide() {
         </section>
 
         <section style={{ margin: "32px 0" }}>
-          <h2>Bottom line</h2>
+          <h2 style={h2Style}>Bottom line</h2>
           <p>
             BUIDL is the clearest example so far of a major asset manager
             building <em>directly</em> on public blockchain rails for an
