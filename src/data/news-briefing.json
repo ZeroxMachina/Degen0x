@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-26T20:08:00Z",
-  "briefing_id": "briefing-2026-04-26-20",
+  "generated_at": "2026-04-26T21:08:00Z",
+  "briefing_id": "briefing-2026-04-26-21",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-26-20-001",
-      "headline": "100+ Crypto Firms Press Senate to Mark Up Clarity Act Market Structure Bill",
-      "slug": "crypto-firms-press-senate-clarity-act-markup",
-      "tldr": "A coalition of more than 100 crypto firms led by Coinbase and Ripple is urging the Senate Banking Committee to advance the Clarity Act this spring.",
-      "why_it_matters": "Why it matters: Clean SEC/CFTC jurisdiction lines unlock listings, custody, and tokenized securities pipelines that have been gated by regulatory limbo since 2022.",
+      "id": "story-2026-04-26-21-001",
+      "headline": "North Korea Lazarus Linked to $292M Kelp Drain as April Losses Top $606M",
+      "slug": "lazarus-kelp-april-hacks-606m",
+      "tldr": "Forensics tie North Korea's Lazarus Group to the $292M KelpDAO drain, capping crypto's worst hack month since February 2025's Bybit breach.",
+      "why_it_matters": "Why it matters: State-actor attribution will accelerate Treasury sanctions on bridges and oracles, turning compliance burden into a core DeFi risk parameter.",
       "the_details": [
-        "Letter sent April 23 names Coinbase, Ripple and 100+ signatories targeting Banking Committee markup.",
-        "Builds on the March 17 SEC-CFTC joint interpretive release establishing a five-category token taxonomy.",
-        "Pairs with April 13 SEC staff statement carving out broker-dealer relief for DeFi user interfaces."
+        "$292M Kelp drain traced to LayerZero verification stack; April hack tally now $606M across 18 days, per crypto.news.",
+        "Drift Protocol on Solana lost $285M to a social engineering attack the same week, doubling the contagion.",
+        "Bridge failures and admin-key exploits dominate April's attack vectors, replacing classic smart-contract bugs."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-26T18:30:00Z"
+    },
+    {
+      "id": "story-2026-04-26-21-002",
+      "headline": "SEC and CFTC Sign Historic MOU, Issue Joint Crypto Asset Interpretation",
+      "slug": "sec-cftc-mou-joint-interpretation",
+      "tldr": "The SEC and CFTC formalized a memorandum of understanding and issued a joint interpretation clarifying which crypto assets fall under each agency's jurisdiction.",
+      "why_it_matters": "Why it matters: A unified federal stance ends a decade of jurisdictional whiplash and unlocks the rulemaking pipeline that ETF and stablecoin issuers have been waiting on.",
+      "the_details": [
+        "Joint interpretation aligns CFTC enforcement of the Commodity Exchange Act with SEC's reading of federal securities laws.",
+        "April 13 SEC Trading and Markets statement carves out broker-dealer registration relief for compliant Covered User Interface Providers.",
+        "Move follows GENIUS Act stablecoin rulemaking and Atkins' one-year shift from enforcement-heavy to rulemaking-mode SEC."
+      ],
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies",
       "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-23T15:00:00Z"
+      "timestamp": "2026-04-26T16:45:00Z"
     },
     {
-      "id": "story-2026-04-26-20-002",
-      "headline": "Aave Bleeds $8.45B in 48 Hours as Kelp Fallout Drags DeFi TVL Down $13.21B",
-      "slug": "aave-outflows-defi-tvl-kelp-fallout",
-      "tldr": "Attackers using stolen rsETH as collateral triggered $8.45B in Aave deposit exits and a $13.21B DeFi TVL drop in two days post-Kelp hack.",
-      "why_it_matters": "Why it matters: Cross-chain LRT collateral just proved it can vaporize blue-chip lending TVL overnight, forcing risk teams to reprice staking derivatives.",
+      "id": "story-2026-04-26-21-003",
+      "headline": "Solana Greenlights Alpenglow Upgrade as Grayscale GSOL Staking ETF Goes Live",
+      "slug": "solana-alpenglow-gsol-etf-live",
+      "tldr": "Solana's Alpenglow consensus upgrade targets 100-150ms finality just as Grayscale's GSOL staking ETF begins trading on NYSE Arca.",
+      "why_it_matters": "Why it matters: Sub-second finality plus a yield-bearing ETF wrapper hands Solana a pitch no other L1 can match for institutional flow.",
       "the_details": [
-        "Aave outflows totaled $8.45 billion across 48 hours following the April 18 KelpDAO drain.",
-        "Total DeFi TVL fell $13.21 billion as protocols paused rsETH markets and tightened oracle feeds.",
-        "Bloomberg reports $9 billion in net outflows from the largest DeFi lender alone."
+        "Alpenglow replaces Proof-of-History and Tower BFT with Votor finality (100-150ms) and Rotor data relay.",
+        "Grayscale Solana Staking ETF (GSOL) listed on NYSE Arca, expanding the staking-yield ETF category beyond Ethereum.",
+        "SOL trading at $86.43 (+0.16%) as ETF flows into BTC, SOL, XRP products counter $75.9M ETH outflow this week."
+      ],
+      "source": "Crypto.com",
+      "source_url": "https://crypto.com/en/coins-ai/solana/latest-news",
+      "category": "infrastructure",
+      "impact": "high",
+      "timestamp": "2026-04-26T15:20:00Z"
+    },
+    {
+      "id": "story-2026-04-26-21-004",
+      "headline": "Bitcoin Tags $80K, Tracks Best Month in a Year as USDT Mints $5B in April",
+      "slug": "btc-80k-usdt-5b-mint",
+      "tldr": "Bitcoin briefly tagged $80,000 as Tether minted $5 billion in fresh USDT, putting BTC on track for its best month in a year.",
+      "why_it_matters": "Why it matters: Stablecoin issuance is the cleanest leading indicator of incoming spot demand — $5B in fresh USDT signals dry powder, not just chart-chasing.",
+      "the_details": [
+        "BTC-dollar inverse correlation hit a near-4-year extreme, per CoinDesk's April 24 daybook.",
+        "Hyperliquid's largest perpetual traders built aggressively long positions through Feb-Apr as US-Iran talks resumed.",
+        "USDT supply added ~$5B in April; rebound coincides with ceasefire extensions cooling the geopolitical risk premium."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/20/defi-tvl-drops-more-than-usd13-billion-in-two-days-following-kelp-dao-hack",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-20T14:00:00Z"
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "category": "bitcoin",
+      "impact": "medium",
+      "timestamp": "2026-04-26T14:10:00Z"
     },
     {
-      "id": "story-2026-04-26-20-003",
-      "headline": "BlackRock IBIT Options Open Interest Overtakes Deribit in Institutional Milestone",
-      "slug": "blackrock-ibit-options-overtake-deribit",
-      "tldr": "Open interest in BlackRock's spot bitcoin ETF options surpassed Deribit's BTC options book on Friday, signaling a regulated-venue shift in derivatives flow.",
-      "why_it_matters": "Why it matters: When the world's largest crypto-native options venue is outsized by a US ETF wrapper, hedging desks and prime brokers reroute liquidity toward TradFi rails.",
+      "id": "story-2026-04-26-21-005",
+      "headline": "XRP Becomes First Major Crypto With Dual SEC-CFTC Commodity Status",
+      "slug": "xrp-dual-commodity-status-etfs",
+      "tldr": "XRP secured full commodity classification from both the SEC and CFTC, with seven spot XRP ETFs now holding a combined $1 billion in AUM.",
+      "why_it_matters": "Why it matters: The dual designation removes the last regulatory overhang on a top-five asset and sets the template every other altcoin issuer will now chase.",
       "the_details": [
-        "IBIT options open interest topped Deribit's BTC OI on Friday per CoinDesk reporting.",
-        "Bitcoin holding above $77,000 and up 13% in April supports rising hedging demand.",
-        "Trump told memecoin investors the same day that crypto is mainstream and banks should drop opposition."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-25T20:00:00Z"
-    },
-    {
-      "id": "story-2026-04-26-20-004",
-      "headline": "Spot Solana ETFs Cross $1B AUM With $35M Weekly Inflows in 5-Session Streak",
-      "slug": "spot-solana-etfs-cross-1b-aum",
-      "tldr": "Spot Solana ETFs have surpassed $1 billion in AUM, recording $35.17M in net inflows over five consecutive positive sessions through April 21.",
-      "why_it_matters": "Why it matters: SOL becomes the third asset with a billion-dollar US ETF complex, validating the layer-1 alt thesis even as the Altcoin Season Index drops 27%.",
-      "the_details": [
-        "Five spot SOL ETFs hit $1B combined AUM with Goldman Sachs disclosed as a major holder.",
-        "Weekly net inflows totaled $35.17M over five straight positive sessions ending April 21.",
-        "Bitget launched a SpaceX-linked preSPAX tokenized pre-IPO product on Solana on April 21."
+        "Seven spot XRP ETFs now hold $1B combined; GraniteShares debuted 3x long and short daily XRP ETFs on Nasdaq.",
+        "SoFi enabled XRP deposits for retail customers, though external withdrawals remain restricted at launch.",
+        "XRP price coiled at $1.44 in a tight 'triangle squeeze' pattern, signaling a decisive break either direction."
       ],
       "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "source_url": "https://coinmarketcap.com/cmc-ai/xrp/latest-updates/",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-22T12:00:00Z"
-    },
-    {
-      "id": "story-2026-04-26-20-005",
-      "headline": "BTC-Dollar Correlation Hits -0.90, Most Extreme Inverse Move Since 2022",
-      "slug": "btc-dollar-correlation-minus-0-90",
-      "tldr": "Bitcoin's 30-day correlation with the U.S. Dollar Index has plunged to -0.90, the deepest negative reading in nearly four years.",
-      "why_it_matters": "Why it matters: BTC is trading like a pure DXY hedge again, meaning macro desks can size bitcoin against currency exposure without picking sides on crypto fundamentals.",
-      "the_details": [
-        "30-day BTC-DXY correlation hit -0.90, lowest since 2022 per CoinDesk's April 24 daybook.",
-        "DXY is propped up by Strait of Hormuz oil disruption and stalled U.S.-Iran ceasefire talks.",
-        "BTC stalled near $80,000 as Pentagon-linked inflation warnings tightened financial conditions."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
-      "category": "markets",
-      "impact": "medium",
-      "timestamp": "2026-04-24T13:00:00Z"
+      "timestamp": "2026-04-26T12:55:00Z"
     }
   ]
 }
