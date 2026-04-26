@@ -163,3 +163,41 @@ git commit -m "ops: Hour 13 UTC standup (Sunday) — file blackout-2 incident, r
 ## One-line summary (for the runner return-string)
 
 `Hour 13: shipped blackout-2 incident, priority = plan-B reset (next human shell)`
+
+---
+
+## SEO Brief Append — 2026-04-26T14:10Z (seo-manager scheduled task, session stoic-nice-carson)
+
+The Head-of-SEO scheduled task ran a full audit against **origin/main `6a4ad4921`** (not local master) and produced `ops/seo/2026-04-26.md`. Headline: compliance score = **9.12 / 10 (Strong)** when measured on the actually-served codebase — origin already absorbed the ramp-to-9.5 universal backfill, the post-rebrand sitemap regen, and the i18n catch-all collapse. The 6.91 score from prior briefs was always the local fork's, not the live site's.
+
+The next standup cycle should pick up these three actions **AFTER** the plan-B reset has landed (T3 above) so they can be committed from a clean shell on the canonical history. All three are additive, low-risk, and the first two are single-command commits.
+
+### T-SEO-1 — Backfill RelatedContent on the 373 origin pages still missing it (P0 · Programmer)
+- **What:** Author `scripts/codemods/inject-related-content.mjs`, run it across `src/data/published-pages.json` ∩ pages-with-no-RelatedContent-import (= 373 pages, the 28.2% gap that survived the universal wrapper-level backfill in `a9e890954`). Component already exists at `src/components/RelatedContent.tsx`. `relatedLinks` derived from URL-prefix → cluster map.
+- **Why:** Internal Linking is the only sub-90% category remaining on the rubric. Closing this gap is the single biggest one-command compliance lever still on the table. Expected lift: Internal Linking 8 → 9 (+0.08 compliance).
+- **How:** From clean shell on origin/main: write the codemod, run, commit single-file-set with theme `feat(seo): backfill RelatedContent on 373 origin pages`. Verify with `git grep -l "RelatedContent" -- 'src/app/**/*.tsx' | wc -l` ≥ 1,320 (was 951).
+- **Deliverable:** new `scripts/codemods/inject-related-content.mjs` + ~373 modified `page.tsx` files.
+- **Rollback:** revert the commit.
+
+### T-SEO-2 — Refresh `src/data/freshness-index.json` and commit (P0 · DevOps / Data Engineer)
+- **What:** Re-run the freshness-refresh entrypoint introduced in `e012a0de2` so all 952 entries advance from `2026-04-17` (9 days stale) to `2026-04-26`. Every `LastUpdated` stamp on the live site currently renders the same stale date.
+- **Why:** Visible-to-every-visitor freshness regression on 1,837 pages. Expected lift: Freshness & Maintenance 7 → 9 (+0.04 compliance) plus a real trust signal that compounds with returning organic traffic. Same scheduler-infrastructure root cause as blackout-2; deeper fix is restoring the cron, but today's one-command run unblocks the visible-impact symptom.
+- **How:** `node scripts/refresh-freshness.mjs` (or whatever the canonical entrypoint is per `e012a0de2`'s commit body) → `git add src/data/freshness-index.json && git commit -m "fix(seo): refresh freshness-index to 2026-04-26 (was 9d stale)"`.
+- **Deliverable:** updated `src/data/freshness-index.json`, single commit.
+- **Rollback:** trivially safe.
+- **Followup (separate task next cycle):** file `ops/incidents/2026-04-26TXX-freshness-cron-not-firing.md` paired with the blackout-2 incident.
+
+### T-SEO-3 — HowToSchema codemod across `/learn/*-guide-*` + ship `/learn/how-to-stake-eth` (P1 · Programmer)
+- **What:** Two parts. (a) Author `scripts/codemods/inject-howto-schema.mjs` that fires `generateHowToSchema` (used on only 22 pages today) across `/learn/*-guide-*` pages with a step-shaped body (`<ol>` or `<h2>Step` heuristic). (b) Ship the new `/learn/how-to-stake-eth/page.tsx` — highest-volume single keyword-opportunity target on the queue (~3,200 mo modelled @ pos 6) and a clean POC for the codemod's payload shape.
+- **Why:** Structured Data is at the rubric ceiling (10/10) but HowToSchema unlocks SERP rich-result eligibility (steps widget) on guide pages. Modelled retained-position CTR lift: +6-9% on the impacted ~108 guide pages over 14d. Also addresses the single biggest topical inventory gap (`/learn/how-to-*` has only 3 pages on origin, despite obviously high search demand).
+- **How:** From clean shell on origin/main:
+  1. Write `scripts/codemods/inject-howto-schema.mjs`.
+  2. Ship `/learn/how-to-stake-eth/page.tsx` using the standard wrapper pattern with derived metadata + `ArticleSchema` + `HowToSchema` + `BreadcrumbList`. Steps content covers 4 ways: solo, Lido, Rocket Pool, exchange staking. Use `degen-content-writer` for prose pass.
+  3. Two logical commits.
+- **Deliverable:** codemod file, schema additions on ~108 guide pages, new how-to-stake-eth page.
+- **Rollback:** revert either commit independently.
+- **Verification:** Google Rich Results Test on 5 random newly-schema'd guide pages + the new how-to page. Expect "HowTo" detected on all 6.
+
+### One-line SEO summary
+
+`Compliance 9.12 / 10 (origin/main, +2.21 nominal vs prior local audit / 0.00 vs origin baseline). Top opportunity: ship /learn/how-to-stake-eth + HowToSchema codemod across guide pages — modelled +3,200/mo organic and +6-9% retained-position CTR.`
