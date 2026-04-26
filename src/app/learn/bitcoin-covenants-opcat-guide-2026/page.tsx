@@ -3,14 +3,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
-import RelatedContent from '@/components/RelatedContent';
-import LiveMiniStat from '@/components/LiveMiniStat';
-import AutoTOC from '@/components/AutoTOC';
-import ReadingTime from '@/components/ReadingTime';
-import LastUpdated from '@/components/LastUpdated';
 
-
-import AuthoritySources from "@/components/AuthoritySources";
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -42,7 +35,7 @@ export const metadata: Metadata = {
     authors: ["degen0x Team"],
     images: [
       {
-        url: "https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.png",
+        url: "https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.svg",
         width: 1200,
         height: 630,
         alt: "Bitcoin Covenants & OP_CAT Guide 2026 — OP_CAT vs OP_CTV vs CSFS vs LNHANCE",
@@ -54,7 +47,7 @@ export const metadata: Metadata = {
     title: "Bitcoin Covenants & OP_CAT Guide 2026",
     description:
       "OP_CAT makes Bitcoin programmable by enabling covenants: rules that constrain how Bitcoin can be spent. Learn vaults, trustless bridges, and the activation debate.",
-    images: ["https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.png"],
+    images: ["https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.svg"],
   },
 
   alternates: { canonical: "/learn/bitcoin-covenants-opcat-guide-2026" }};
@@ -68,7 +61,7 @@ const articleSchema = generateArticleSchema({
   datePublished: "2026-03-23T00:00:00Z",
   dateModified: "2026-03-23T00:00:00Z",
   author: "degen0x Team",
-  image: "https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.png",
+  image: "https://degen0x.com/og-bitcoin-covenants-opcat-guide-2026.svg",
   wordCount: 3000,
 });
 
@@ -308,9 +301,6 @@ export default function BitcoinCovenantsOPCATGuidePage() {
           }}>
             Bitcoin Covenants &amp; OP_CAT Guide: Making Bitcoin Programmable
           </h1>
-          <LastUpdated pathKey="/learn/bitcoin-covenants-opcat-guide-2026" />
-          <ReadingTime />
-          <AutoTOC />
           <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             Bitcoin was originally programmable, but the opcodes that enabled covenants were disabled in 2010 due to DoS concerns.
             Now, developers are re-enabling this functionality through opcodes like OP_CAT (BIP-347), OP_CTV (BIP-119), CSFS, and LNHANCE.
@@ -871,9 +861,6 @@ export default function BitcoinCovenantsOPCATGuidePage() {
 
       <BackToTop />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Covenants & OP_CAT Guide 2026: BIP-347, Vaults,", "description": "Complete guide to Bitcoin covenants and OP_CAT (BIP-347) in 2026. Understand how OP_CAT enables programmable Bitcoin, covenant proposals compared, real-world", "url": "https://degen0x.com/learn/bitcoin-covenants-opcat-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <LiveMiniStat id="bitcoin" />
-      <RelatedContent category="learn" currentSlug="/learn/bitcoin-covenants-opcat-guide-2026" />
-<AuthoritySources url="/learn/bitcoin-covenants-opcat-guide-2026" />
 </div>
   );
 }

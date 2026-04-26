@@ -4,14 +4,7 @@ import Breadcrumb from '@/components/Breadcrumb'
 import BackToTop from '@/components/BackToTop'
 import { ArrowRight, TrendingUp, Zap, HardDrive, AlertCircle, Info } from 'lucide-react'
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
-import AutoTOC from '@/components/AutoTOC';
-import ReadingTime from '@/components/ReadingTime';
-import LastUpdated from '@/components/LastUpdated';
 
-
-import ArticleSchema from "@/components/ArticleSchema";
-
-import AuthoritySources from "@/components/AuthoritySources";
 
 export const metadata: Metadata = {
   title: 'Bitcoin Mining Profitability Guide 2026 | Degen0x Learn',
@@ -61,18 +54,100 @@ const breadcrumbData = {
   ],
 };
 
+// ─── Article JSON-LD (Hour 20 build-cycle: closes Hour 18 P3 JSON-LD gap) ─────
+const articleData = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: 'Bitcoin Mining Profitability Guide 2026',
+  description:
+    'Comprehensive guide to Bitcoin mining profitability in 2026: post-halving economics, top ASIC hardware (Antminer S21 XP+ Hydro, WhatsMiner M60S++), electricity-cost thresholds, ROI math, and emerging AI-compute pivots reshaping the industry.',
+  url: 'https://degen0x.com/learn/bitcoin-mining-profitability-guide-2026',
+  datePublished: '2026-03-23T00:00:00Z',
+  dateModified: '2026-03-23T00:00:00Z',
+  author: {
+    '@type': 'Person',
+    name: 'degen0x Team',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'degen0x',
+    url: 'https://degen0x.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://degen0x.com/logo.png',
+    },
+  },
+  image: 'https://degen0x.com/og-bitcoin-mining-profitability-guide-2026.png',
+  wordCount: 5500,
+  about: [
+    { '@type': 'Thing', name: 'Bitcoin mining' },
+    { '@type': 'Thing', name: 'Bitcoin halving' },
+    { '@type': 'Thing', name: 'ASIC hardware' },
+    { '@type': 'Thing', name: 'Mining ROI' },
+  ],
+};
+
+const faqData = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Is Bitcoin mining still profitable in 2026?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Bitcoin mining remains profitable in 2026 for operators with sub-$0.15/kWh electricity and modern ASIC hardware (11–15 J/TH efficiency, e.g. Antminer S21 XP+ Hydro). Marginal operators paying above $0.15/kWh on older hardware are typically unprofitable, especially when hash price drops below $35/PH/s/day. Profitability is dominated by electricity cost, hardware efficiency, and hashrate allocation — not Bitcoin price alone.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'How did the April 2024 Bitcoin halving change mining economics?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The April 2024 halving cut the block subsidy from 6.25 BTC to 3.125 BTC — a 50% reduction in the primary mining reward. This forced consolidation toward the most efficient miners and accelerated the exit of high-cost operators. Bitcoin price appreciation (above $122,000 by July 2025) partially compensated, but network difficulty surged to 155.9T by November 2025 and hashrate exceeded 800 EH/s by early 2026, diluting per-miner gains.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the most profitable ASIC miner in 2026?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The Antminer S21 XP+ Hydro is the highest-grade unit for 2026 (A+ ROI grade), combining 500 TH/s hashrate with 11 J/TH efficiency. At $0.12/kWh electricity, payback is 12–18 months. The S21 XP Hydro and S21 XP follow at A and A− grades. WhatsMiner M60S++/M60S+ are competitive but require sub-$0.10/kWh electricity to hit similar ROI.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What electricity cost is required for profitable Bitcoin mining?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'The 2026 profitability threshold is $0.12–$0.15/kWh. Operators above $0.15/kWh face severe margin compression. Industrial miners use power purchase agreements (PPAs) with renewable providers to lock in sub-$0.08/kWh rates. Residential miners rarely achieve these rates without specific advantages: flared-gas partnerships, data-center curtailment credits, or geographic surplus (e.g. Iceland, Texas wind belt).',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is hash price and why does it matter?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Hash price is the daily revenue earned per unit of hashpower (typically denominated in $/PH/s/day). It collapses Bitcoin price, network difficulty, and transaction-fee revenue into a single break-even metric. When hash price drops below ~$35/PH/s/day, many marginal mining operations become unprofitable. It is the most important leading indicator for mining-fleet investment decisions.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can home Bitcoin miners still compete in 2026?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Home mining is generally non-viable in 2026 unless the operator has access to subsidized or zero-marginal-cost electricity (rooftop solar surplus, off-peak utility credits, regional curtailment). The fixed cost of a competitive ASIC ($3,000–$8,000) plus residential-grade power rates ($0.18–$0.30/kWh in most US markets) push payback periods past 36 months — longer than typical hardware obsolescence cycles. Industrial operators dominate by accessing PPA rates and operating at scale.',
+      },
+    },
+  ],
+};
+
 export default function MiningProfitabilityPage() {
   return (
     <main className="min-h-screen" style={{ backgroundColor: '#0d1117' }}>
-      <ArticleSchema
-        headline="Bitcoin Mining Profitability Guide 2026 | Degen0x Learn"
-        description="Comprehensive guide to Bitcoin mining profitability in 2026. Learn about post-halving economics, top ASIC hardware, electricity costs, and mining strategies"
-        url="https://degen0x.com/learn/bitcoin-mining-profitability-guide-2026"
-        datePublished="2024-06-01"
-        dateModified="2026-04-17"
-        section="Learn"
-      />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
       {/* Breadcrumb */}
       <div style={{ borderBottom: '1px solid #30363d', paddingTop: 24 }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px 24px' }}>
@@ -121,9 +196,6 @@ export default function MiningProfitabilityPage() {
             Bitcoin Mining Profitability Guide 2026
           </h1>
 
-          <LastUpdated pathKey="/learn/bitcoin-mining-profitability-guide-2026" />
-          <ReadingTime />
-          <AutoTOC />
           {/* Opening Paragraph */}
           <p
             className="text-lg leading-relaxed"
