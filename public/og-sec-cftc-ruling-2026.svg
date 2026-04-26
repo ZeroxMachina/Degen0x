@@ -1,0 +1,106 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradAccentSecCftc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0d9488;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradSecCftc" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060b1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1428;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pillarFill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#475569;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:0.4" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGradSecCftc)"/>
+  <rect width="1200" height="8" fill="url(#gradAccentSecCftc)"/>
+
+  <!-- decorative ledger grid (orderly / institutional feel) -->
+  <g opacity="0.08" stroke="#0d9488" stroke-width="1">
+    <line x1="0"   y1="120" x2="1200" y2="120"/>
+    <line x1="0"   y1="510" x2="1200" y2="510"/>
+    <line x1="80"  y1="80"  x2="80"   y2="600"/>
+    <line x1="1120" y1="80" x2="1120" y2="600"/>
+  </g>
+
+  <!-- decorative circles (subtle, restrained) -->
+  <circle cx="170" cy="200" r="56" fill="none" stroke="#1e40af" stroke-width="1.5" opacity="0.22"/>
+  <circle cx="1060" cy="510" r="44" fill="none" stroke="#16a34a" stroke-width="1.5" opacity="0.22"/>
+  <circle cx="1090" cy="180" r="34" fill="none" stroke="#0d9488" stroke-width="1" opacity="0.18"/>
+
+  <!-- Topical motif (right third): three judicial pillars + interpretive release scroll + classification ladder -->
+  <g opacity="0.42">
+    <!-- three columns (capitol-architecture cue, abstract) -->
+    <g transform="translate(960, 240)">
+      <!-- pediment / lintel -->
+      <rect x="-8" y="-14" width="146" height="10" fill="#475569" opacity="0.75"/>
+      <rect x="-12" y="-22" width="154" height="8" fill="#64748b" opacity="0.6"/>
+      <!-- column 1 -->
+      <rect x="6"   y="-4" width="22" height="160" fill="url(#pillarFill)"/>
+      <rect x="2"   y="156" width="30" height="8"  fill="#475569" opacity="0.75"/>
+      <!-- column 2 -->
+      <rect x="58"  y="-4" width="22" height="160" fill="url(#pillarFill)"/>
+      <rect x="54"  y="156" width="30" height="8"  fill="#475569" opacity="0.75"/>
+      <!-- column 3 -->
+      <rect x="110" y="-4" width="22" height="160" fill="url(#pillarFill)"/>
+      <rect x="106" y="156" width="30" height="8"  fill="#475569" opacity="0.75"/>
+      <!-- column flutes (subtle) -->
+      <line x1="13"  y1="0" x2="13"  y2="156" stroke="#1e293b" stroke-width="0.7" opacity="0.55"/>
+      <line x1="21"  y1="0" x2="21"  y2="156" stroke="#1e293b" stroke-width="0.7" opacity="0.55"/>
+      <line x1="65"  y1="0" x2="65"  y2="156" stroke="#1e293b" stroke-width="0.7" opacity="0.55"/>
+      <line x1="73"  y1="0" x2="73"  y2="156" stroke="#1e293b" stroke-width="0.7" opacity="0.55"/>
+      <line x1="117" y1="0" x2="117" y2="156" stroke="#1e293b" stroke-width="0.7" opacity="0.55"/>
+      <line x1="125" y1="0" x2="125" y2="156" stroke="#1e293b" stroke-width="0.7" opacity="0.55"/>
+    </g>
+
+    <!-- interpretive release document (left of pillars) -->
+    <g transform="translate(840, 320)">
+      <rect x="0" y="0" width="74" height="92" fill="none" stroke="#0d9488" stroke-width="1.5" rx="3"/>
+      <line x1="12" y1="20" x2="62" y2="20" stroke="#0d9488" stroke-width="1"/>
+      <line x1="12" y1="34" x2="62" y2="34" stroke="#0d9488" stroke-width="1"/>
+      <line x1="12" y1="48" x2="54" y2="48" stroke="#0d9488" stroke-width="1"/>
+      <line x1="12" y1="62" x2="58" y2="62" stroke="#0d9488" stroke-width="1"/>
+      <!-- "68" page mark -->
+      <text x="37" y="84" font-family="Inter, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#16a34a" text-anchor="middle" letter-spacing="1">68 PG</text>
+    </g>
+  </g>
+
+  <!-- classification ladder bars (left of motif, suggesting reclassification waterfall) -->
+  <g opacity="0.6">
+    <rect x="780" y="280" width="6" height="28" fill="#1e40af"/>
+    <rect x="792" y="270" width="6" height="38" fill="#0d9488"/>
+    <rect x="804" y="260" width="6" height="48" fill="#16a34a"/>
+    <rect x="816" y="250" width="6" height="58" fill="#16a34a"/>
+    <rect x="828" y="240" width="6" height="68" fill="#22c55e"/>
+  </g>
+
+  <!-- badge -->
+  <text x="80" y="120" font-family="Inter, Helvetica, sans-serif" font-size="14" font-weight="700" fill="#5eead4" letter-spacing="2" opacity="0.95">RULING &#xb7; SEC/CFTC &#xb7; COMMODITIES</text>
+
+  <!-- title -->
+  <text x="80" y="240" font-family="Inter, Helvetica, sans-serif" font-size="62" font-weight="800" fill="#ffffff">SEC/CFTC Ruling 2026</text>
+
+  <!-- subtitle line 1 -->
+  <text x="80" y="310" font-family="Inter, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#cbd5e1">16 digital assets reclassified &#x2014;</text>
+
+  <!-- subtitle line 2 -->
+  <text x="80" y="350" font-family="Inter, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#cbd5e1">commodities, not securities.</text>
+
+  <!-- detail strip -->
+  <text x="80" y="420" font-family="Inter, Helvetica, sans-serif" font-size="17" fill="#94a3b8">March 17, 2026  &#xb7;  68-page release  &#xb7;  Commodity Exchange Act  &#xb7;  ETF approvals</text>
+
+  <!-- divider -->
+  <rect x="80" y="450" width="120" height="2" fill="url(#gradAccentSecCftc)" opacity="0.7"/>
+
+  <!-- supporting tagline -->
+  <text x="80" y="490" font-family="Inter, Helvetica, sans-serif" font-size="15" fill="#64748b">A practical guide to the joint ruling that rewrote crypto regulation.</text>
+
+  <!-- degen0x branding -->
+  <text x="1120" y="600" font-family="Inter, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#5eead4" text-anchor="end" opacity="0.85">degen0x.com</text>
+
+  <!-- bottom gradient line -->
+  <rect y="622" width="1200" height="8" fill="url(#gradAccentSecCftc)" opacity="0.5"/>
+</svg>
