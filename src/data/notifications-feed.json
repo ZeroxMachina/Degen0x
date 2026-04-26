@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-26-001",
+    "type": "news",
+    "title": "📰 BlackRock IBIT Options Top Deribit, Marking Wall Street's Crypto Derivatives Takeover",
+    "message": "BlackRock's IBIT bitcoin ETF options surpassed Deribit in open interest, signaling regulated U.S. derivatives are eclipsing offshore venues for institutional hedging.",
+    "actionUrl": "/news",
+    "date": "2026-04-26"
+  },
+  {
     "id": "feed-2026-04-23-015",
     "type": "news",
     "title": "📰 100+ Crypto Firms Pressure Senate to Mark Up Clarity Act or Risk Enforcement Revival",

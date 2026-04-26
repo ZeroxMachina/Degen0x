@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-23T15:05:00Z",
-  "briefing_id": "briefing-2026-04-23-15",
+  "generated_at": "2026-04-26T14:05:00Z",
+  "briefing_id": "briefing-2026-04-26-14",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-23-15-001",
-      "headline": "100+ Crypto Firms Pressure Senate to Mark Up Clarity Act or Risk Enforcement Revival",
-      "slug": "crypto-firms-pressure-senate-clarity-act-markup",
-      "tldr": "A coalition led by Coinbase and Ripple sent a letter demanding the Senate Banking Committee advance the Clarity Act market-structure bill immediately.",
-      "why_it_matters": "Why it matters: Without statutory rails locked in before recess, the industry fears a swing back to regulation-by-enforcement under a future administration.",
+      "id": "story-2026-04-26-14-001",
+      "headline": "BlackRock IBIT Options Top Deribit, Marking Wall Street's Crypto Derivatives Takeover",
+      "slug": "blackrock-ibit-options-top-deribit",
+      "tldr": "BlackRock's IBIT bitcoin ETF options surpassed Deribit in open interest, signaling regulated U.S. derivatives are eclipsing offshore venues for institutional hedging.",
+      "why_it_matters": "Why it matters: For the first time, the deepest bitcoin options liquidity sits inside a U.S.-regulated wrapper, accelerating Wall Street's grip on price discovery.",
       "the_details": [
-        "Letter signed by over 100 firms urges an immediate markup to codify the SEC/CFTC jurisdictional split over digital assets.",
-        "Industry explicitly cites Biden-era enforcement cases as the precedent it wants foreclosed by statute, not agency discretion.",
-        "Follows the March 17 joint SEC-CFTC 68-page interpretive release laying out a token taxonomy across commodities, collectibles and securities."
+        "IBIT options open interest passed Deribit's on Friday April 24, per CoinDesk reporting.",
+        "Launched in late 2024, IBIT now hosts the largest bitcoin options book on a regulated U.S. venue.",
+        "Institutions are leaning on IBIT puts to hedge macro shocks like the recent Iran ceasefire wobble."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-23T14:30:00Z"
-    },
-    {
-      "id": "story-2026-04-23-15-002",
-      "headline": "April Crypto Theft Hits $606M in 18 Days, Worst Month Since Bybit February 2025 Breach",
-      "slug": "april-2026-crypto-theft-606m-worst-month",
-      "tldr": "Lazarus Group is linked to about 95% of April losses, with the $292M Kelp DAO and $285M Drift exploits dominating the total so far.",
-      "why_it_matters": "Why it matters: Cross-chain bridges and Solana perps are concentrating systemic risk just as DeFi TVL approaches cycle highs again.",
-      "the_details": [
-        "Year-to-date 2026 theft now roughly $771.8M across 47 incidents, 3.7x larger than all of Q1 combined.",
-        "Lazarus attributed to both the Apr 1 Drift ($285M) and Apr 19 Kelp DAO ($292M) attacks by on-chain investigators.",
-        "Secondary April victims include CoW Swap, Zerion, Rhea Finance and Silo Finance across multiple chains."
-      ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-23T12:00:00Z"
-    },
-    {
-      "id": "story-2026-04-23-15-003",
-      "headline": "Blockchain Capital Targets $700M Across Two New Funds as 2026 VC Window Reopens",
-      "slug": "blockchain-capital-700m-two-new-funds",
-      "tldr": "The crypto-focused VC is raising two vehicles totaling $700 million, per Bloomberg, signaling LP appetite is back after the 2025 whipsaw.",
-      "why_it_matters": "Why it matters: A fresh top-tier close sets a valuation floor for early-stage rounds and pulls capital back into infrastructure bets.",
-      "the_details": [
-        "Two-fund structure implies dedicated vehicles for early-stage bets and opportunistic follow-on checks.",
-        "Raise follows Pantera's framing of 2025 as a 'capitulation year' setting up a 2026 rebound in altcoins.",
-        "Target size would place Blockchain Capital among the largest 2026 crypto VC closes announced to date."
-      ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/amp/post/398560/blockchain-capital-seeks-700-million",
-      "category": "markets",
-      "impact": "medium",
-      "timestamp": "2026-04-23T11:00:00Z"
-    },
-    {
-      "id": "story-2026-04-23-15-004",
-      "headline": "Ramp and Privy Ship USDT With 1:1 On- and Off-Ramps on Solana, Plasma and Ethereum",
-      "slug": "ramp-privy-usdt-solana-plasma-ethereum",
-      "tldr": "Ramp rolled out native USDT onramps across Solana, Plasma and Ethereum with 1:1 USD conversion, wiring embedded wallets straight to fiat.",
-      "why_it_matters": "Why it matters: Killing the USDC-to-USDT swap step removes friction for the stablecoin most used by non-US retail traders.",
-      "the_details": [
-        "Privy announced the integration Tuesday, April 21, targeting apps built on its embedded-wallet SDK.",
-        "Plasma's inclusion flags the new stablecoin-focused L1's rapid move into mainstream payment rails.",
-        "1:1 offramp support lets users exit USDT directly to bank accounts without an intermediate bridging step."
-      ],
-      "source": "The Defiant",
-      "source_url": "https://thedefiant.io/news/defi/usdt-live-solana-plasma-ethereum-ramp-privy-rt2zgt",
+      "source_url": "https://www.coindesk.com/markets/2026/04/25/blackrock-s-bitcoin-etf-just-hit-a-massive-milestone-that-proves-crypto-is-now-a-mainstream-bet",
       "category": "infrastructure",
-      "impact": "medium",
-      "timestamp": "2026-04-21T15:00:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-25T13:00:00Z"
     },
     {
-      "id": "story-2026-04-23-15-005",
-      "headline": "Solana Loses $88 Support, Tests $85 as Altcoins Slide 2-3% on Rising BTC Dominance",
-      "slug": "solana-loses-88-support-altcoins-slide-btc-dominance",
-      "tldr": "SOL trades at $85.74, down 2.49%, leading top-10 losers even as Solana holds 41% of Q1 DEX volume and leads dApp revenue five weeks running.",
-      "why_it_matters": "Why it matters: A price-fundamentals gap this wide usually closes violently, either via a BTC pause that lets alts catch up or a deeper SOL drawdown.",
+      "id": "story-2026-04-26-14-002",
+      "headline": "Bitcoin Eyes Best Month in a Year as USDT Supply Pumps $5B Toward $150B Record",
+      "slug": "bitcoin-best-month-usdt-5b-growth",
+      "tldr": "BTC trades above $77,000 and is up over 13% in April, fueled by Tether's USDT supply expanding nearly $5B toward a record $150B mark.",
+      "why_it_matters": "Why it matters: Stablecoin issuance is the cleanest leading indicator of crypto liquidity — and right now it is unambiguously bullish.",
       "the_details": [
-        "Bitcoin dominance at 58.1% and rising is pulling liquidity out of altcoin pairs.",
-        "Solana has led all chains in dApp revenue for five consecutive weeks despite the price slide.",
-        "Ethereum off 1.98% same session; total crypto market cap still up 1.9% to $2.7T on BTC strength."
+        "BTC is up roughly 13% month-to-date, on pace for its strongest month since spring 2025.",
+        "USDT circulating supply grew about $5B in 30 days, nearing the unprecedented $150B level.",
+        "Spot BTC ETFs absorbed $2B over 8 sessions through April 24, extending an inflow streak."
       ],
-      "source": "Blockchain Magazine",
-      "source_url": "https://blockchainmagazine.net/crypto-market-today-2026-04-23/",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-24T12:00:00Z"
+    },
+    {
+      "id": "story-2026-04-26-14-003",
+      "headline": "Aave Rallies DeFi Heavyweights to Contain $292M KelpDAO Hack Contagion",
+      "slug": "aave-defi-bailout-kelpdao-hack",
+      "tldr": "Aave is coordinating a multi-protocol response to the $292M KelpDAO exploit after $8.45B in deposits fled the lender in 48 hours.",
+      "why_it_matters": "Why it matters: A coordinated DeFi bailout signals the sector is treating systemic cross-chain risk as an industry problem, not a single-protocol failure.",
+      "the_details": [
+        "Attacker drained 116,500 rsETH (~$292M) via misconfigured LayerZero bridge config on April 19.",
+        "Aave saw $8.45B in deposit outflows and broader DeFi TVL fell about $13B over two days.",
+        "Aave-led working group is coordinating with bridge providers and rsETH holders on remediation."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/business/2026/04/23/aave-rallies-defi-partners-to-contain-fallout-from-usd292-million-kelpdao-hack",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-23T15:00:00Z"
+    },
+    {
+      "id": "story-2026-04-26-14-004",
+      "headline": "Spot Solana ETFs Cross $1B AUM as Five Straight Weeks of Inflows Pile Up",
+      "slug": "solana-etf-aum-1-billion",
+      "tldr": "Spot SOL ETFs surpassed $1B in assets under management with $35.17M of net inflows over the past week across five straight positive sessions.",
+      "why_it_matters": "Why it matters: SOL is the first non-BTC/ETH spot ETF cohort to clear a billion in AUM, validating altcoin ETF demand for issuers eyeing XRP and DOGE products.",
+      "the_details": [
+        "Combined Solana ETF AUM crossed the $1B milestone this week per fund tracking data.",
+        "Net inflows hit $35.17M over the past week across five consecutive positive sessions.",
+        "Goldman Sachs disclosed a major position in the Solana ETF complex this cycle."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-23T13:00:00Z"
+      "timestamp": "2026-04-25T10:00:00Z"
+    },
+    {
+      "id": "story-2026-04-26-14-005",
+      "headline": "Senate Crypto Bill Nears Stablecoin Rewards Deal as Bank Lobby Digs In",
+      "slug": "senate-stablecoin-rewards-breakthrough",
+      "tldr": "Sens. Alsobrooks and Tillis are closing in on stablecoin rewards language for the market structure bill, a key sticking point that has stalled passage.",
+      "why_it_matters": "Why it matters: Resolving stablecoin rewards unlocks the broader Clarity Act — without it, U.S. crypto market structure law slips into 2027.",
+      "the_details": [
+        "Negotiators say talks are in a 'good spot' but ethics concerns over Trump conflicts loom.",
+        "Banks oppose the provision, warning yield-bearing stablecoins will siphon community deposits.",
+        "April markup is off the table; a May Senate Banking Committee hearing is the next window."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/398498/crypto-bill-nears-stablecoin-rewards-breakthrough-ethics-concerns-resurface",
+      "category": "regulation",
+      "impact": "medium",
+      "timestamp": "2026-04-24T16:00:00Z"
     }
   ]
 }
