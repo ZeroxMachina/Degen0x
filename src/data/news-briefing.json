@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T09:05:39Z",
-  "briefing_id": "briefing-2026-04-27-09",
+  "generated_at": "2026-04-27T10:06:30Z",
+  "briefing_id": "briefing-2026-04-27-10",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-09-001",
-      "headline": "Bitcoin clears $77K, on pace for best month in a year as $5B USDT mints fuel rebound",
-      "slug": "bitcoin-77k-best-month-usdt-rebound",
-      "tldr": "BTC trades above $77,000 and is up over 13% in April, its strongest monthly run in a year, supported by $5 billion in fresh USDT supply.",
-      "why_it_matters": "Why it matters: stablecoin issuance has historically led spot rallies; another leg up risks blowing out the deeply negative funding rates whales are quietly leaning into.",
+      "id": "story-2026-04-27-10-001",
+      "headline": "Clarity Act faces Memorial Day cliff as 100+ crypto firms storm Senate",
+      "slug": "clarity-act-memorial-day-cliff-senate-pressure",
+      "tldr": "A coalition of over 100 crypto firms is pressing Senate Banking to mark up the Clarity Act before a May 25 cutoff for 2026 passage.",
+      "why_it_matters": "Why it matters: Miss the window and the U.S. spends another year arbitraging crypto via SEC enforcement instead of statute, freezing institutional product launches.",
       "the_details": [
-        "BTC up 13%+ in April, on track for best monthly performance since April 2025.",
-        "USDT supply expanded by ~$5B during the rebound, per CoinDesk on April 24.",
-        "Whales are building long positions even as perp funding stays deeply negative."
+        "Coinbase, Ripple and 100+ firms signed a letter urging Banking Chair Tim Scott to schedule a markup.",
+        "Sen. Thom Tillis told reporters no April hearing; Banking is now eyeing May for amendments and a vote.",
+        "Memorial Day, May 25, has been the industry's drop-dead date for legislation to clear before the election."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/26/running-out-of-time-on-clarity-state-of-crypto",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-26T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-10-002",
+      "headline": "April becomes worst month for crypto hacks since Bybit, $606M lost in 18 days",
+      "slug": "april-2026-worst-month-crypto-hacks-606m",
+      "tldr": "Crypto protocols lost more than $606 million across 12 incidents in the first 18 days of April, the worst stretch since the $1.4B Bybit breach.",
+      "why_it_matters": "Why it matters: A wave of cross-chain bridge and perp-DEX exploits is rerating DeFi risk premia just as the Clarity Act needs a clean industry narrative.",
+      "the_details": [
+        "Kelp DAO drained for $292M on April 19 via a LayerZero bridge flaw, stranding wrapped ether across 20 chains.",
+        "Drift Protocol on Solana lost $285M on April 1, briefly the year's biggest hack until Kelp eclipsed it.",
+        "Aave saw $8.45B in deposit outflows after $200M of stolen Kelp tokens were posted as collateral."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-26T14:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-10-003",
+      "headline": "BlackRock IBIT options open interest tops Deribit, marking U.S. derivatives flip",
+      "slug": "blackrock-ibit-options-open-interest-deribit",
+      "tldr": "BlackRock's spot bitcoin ETF IBIT logged options open interest above Deribit's, the first time a U.S.-regulated venue has crossed crypto's largest offshore book.",
+      "why_it_matters": "Why it matters: Listed BTC volatility is migrating onshore, giving institutions a regulated hedging rail and pulling fee revenue away from offshore venues.",
+      "the_details": [
+        "IBIT options OI surpassed Deribit on Friday, per market data cited by CoinDesk.",
+        "BTC trades near $79,123, up 2% in 24h with $24.7B volume; Fear & Greed back to 47 from 29 last week.",
+        "Bitcoin futures OI fell 6% to 744.3K BTC as spot ran into resistance below $80,000."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
-      "category": "bitcoin",
-      "impact": "high",
-      "timestamp": "2026-04-27T08:30:00Z"
-    },
-    {
-      "id": "story-2026-04-27-09-002",
-      "headline": "Aave USDC pool nearly empty as KelpDAO contagion drives $14B DeFi TVL drop",
-      "slug": "aave-usdc-empty-kelpdao-contagion",
-      "tldr": "The April 18 KelpDAO rsETH exploit cascaded through lending markets, draining DeFi TVL from $99B to $85B in 48 hours and leaving Aave's USDC pool nearly dry.",
-      "why_it_matters": "Why it matters: Circle is publicly demanding urgent action on USDC liquidity, signalling that stablecoin issuers may now police DeFi risk faster than governance can.",
-      "the_details": [
-        "$292M KelpDAO rsETH bridge exploit on April 18 triggered the cascade.",
-        "Aggregate DeFi TVL fell from ~$99B to ~$85B over 48 hours.",
-        "Circle is pressing Aave for emergency action to restore USDC liquidity."
-      ],
-      "source": "P2P.org / DeFi Dispatch",
-      "source_url": "https://p2p.org/economy/defi-dispatch-defi-news-april-2026-issue-2/",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-27T07:45:00Z"
-    },
-    {
-      "id": "story-2026-04-27-09-003",
-      "headline": "Charles Schwab opens spot BTC and ETH trading to retail brokerage clients",
-      "slug": "schwab-spot-btc-eth-retail",
-      "tldr": "Charles Schwab launched direct spot trading of Bitcoin and Ethereum across its retail brokerage in April, putting crypto next to equities and fixed income for tens of millions of clients.",
-      "why_it_matters": "Why it matters: Schwab's footprint dwarfs every crypto-native broker combined; the on-ramp shifts from app downloads to a single Schwab login, accelerating the IRA and 401(k) thesis.",
-      "the_details": [
-        "Spot BTC and ETH trading is now native inside Schwab retail accounts.",
-        "Service sits alongside equities, fixed income and existing ETF coverage.",
-        "Move follows broader institutional push: 80% of institutions plan 2-5% AUM allocation to digital assets."
-      ],
-      "source": "P2P.org / DeFi Dispatch",
-      "source_url": "https://p2p.org/economy/defi-dispatch-defi-news-april-2026-issue-2/",
-      "category": "adoption",
-      "impact": "high",
-      "timestamp": "2026-04-27T06:30:00Z"
-    },
-    {
-      "id": "story-2026-04-27-09-004",
-      "headline": "100+ crypto firms led by Coinbase and Ripple push Senate to mark up Clarity Act",
-      "slug": "100-firms-senate-clarity-act-markup",
-      "tldr": "A coalition of more than 100 crypto firms is urging the Senate Banking Committee to mark up the Clarity Act and finalize a federal market-structure framework for digital assets.",
-      "why_it_matters": "Why it matters: even after the March SEC-CFTC joint guidance, statutory clarity is the missing piece for banks and brokerages still gated on counsel sign-off.",
-      "the_details": [
-        "Signatories include Coinbase, Ripple and 100+ other firms, per CoinDesk on April 23.",
-        "Letter targets Senate Banking Committee and the Clarity Act markup.",
-        "Builds on March 17 SEC-CFTC 68-page joint interpretive release establishing a 5-category token taxonomy."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-27T05:15:00Z"
-    },
-    {
-      "id": "story-2026-04-27-09-005",
-      "headline": "Crypto week ahead: Fed, BoJ, ECB, BoE all set rates as Big Tech earnings collide",
-      "slug": "crypto-week-ahead-fomc-boj-ecb-boe-bigtech",
-      "tldr": "Four major central banks set policy this week alongside Microsoft, Amazon, Meta, Google and Apple earnings, plus US Q1 GDP and March PCE — a stacked macro gauntlet for crypto.",
-      "why_it_matters": "Why it matters: BTC's near-perfect inverse correlation with the dollar is at a near-4-year extreme, so any FOMC or PCE surprise will flow straight into crypto books.",
-      "the_details": [
-        "FOMC concludes Wednesday; BoJ, ECB and BoE also decide rates this week.",
-        "MSFT, AMZN, META, GOOG report midweek; AAPL plus Q1 GDP and March PCE on Thursday.",
-        "Compound, Decentraland and Frax DAOs all close key governance votes by April 27."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-27T04:00:00Z"
+      "timestamp": "2026-04-26T12:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-10-004",
+      "headline": "SEC clears DEX front-ends from broker-dealer registration in April 13 staff note",
+      "slug": "sec-dex-front-end-broker-dealer-exemption",
+      "tldr": "SEC staff said it will not object to software interfaces that prepare and submit transactions in crypto asset securities without broker-dealer registration.",
+      "why_it_matters": "Why it matters: It removes a years-old enforcement threat over DEX UIs and aggregators, unblocking U.S.-hosted decentralized trading frontends.",
+      "the_details": [
+        "The April 13, 2026 staff statement applies to interfaces that don't custody assets or quote prices.",
+        "It builds on the joint SEC-CFTC interpretive release from March 17 that set a five-bucket token taxonomy.",
+        "Conditions still apply, including no order-routing for value and no exercise of discretion."
+      ],
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/speeches-statements/staff-statement-regarding-broker-dealer-registration-certain-user-interfaces-utilized-prepare-staff-statement-regarding-broker-dealer-registration-certain-user-interfaces-utilized",
+      "category": "regulation",
+      "impact": "medium",
+      "timestamp": "2026-04-26T15:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-10-005",
+      "headline": "Solana's Alpenglow ships sub-200ms finality as Firedancer aims for 1M TPS",
+      "slug": "solana-alpenglow-firedancer-finality-tps",
+      "tldr": "Solana's Alpenglow upgrade is live, slashing transaction finality below 200ms, while Firedancer continues targeting 1M TPS as ETF inflows slump.",
+      "why_it_matters": "Why it matters: Solana is doubling down on throughput as institutional flow cools, betting payments rails (Mastercard, Visa partners) outpace ETF demand.",
+      "the_details": [
+        "Alpenglow finality now under 200 ms on mainnet; Firedancer client targets 1M TPS once fully rolled out.",
+        "SOL trades near $86 with a $49.8B cap; spot SOL ETF inflows are down 92% from late-2025 highs.",
+        "Solana Developer Platform, launched March 24, already lists Mastercard, Worldpay, and Western Union as users."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-26T11:00:00Z"
     }
   ]
 }

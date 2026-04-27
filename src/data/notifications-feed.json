@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-011",
+    "type": "news",
+    "title": "📰 Clarity Act faces Memorial Day cliff as 100+ crypto firms storm Senate",
+    "message": "A coalition of over 100 crypto firms is pressing Senate Banking to mark up the Clarity Act before a May 25 cutoff for 2026 passage.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-010",
     "type": "news",
     "title": "📰 Bitcoin clears $77K, on pace for best month in a year as $5B USDT mints fuel rebound",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "📰 SEC Greenlights DEX Frontends, Waives Broker-Dealer Registration for UI Providers",
     "message": "SEC Trading and Markets won't object to 'Covered User Interface Providers' operating DEX frontends without broker-dealer registration, clearing a major compliance fog for DeFi apps.",
-    "actionUrl": "/news",
-    "date": "2026-04-20"
-  },
-  {
-    "id": "feed-2026-04-20-001",
-    "type": "news",
-    "title": "📰 Vercel Breach Leaks Crypto Project API Keys, Orca and Web3 Teams Scramble",
-    "message": "Vercel disclosed a security incident exposing customer API keys, forcing crypto teams hosting wallet UIs on the platform to rotate credentials en masse.",
     "actionUrl": "/news",
     "date": "2026-04-20"
   }
