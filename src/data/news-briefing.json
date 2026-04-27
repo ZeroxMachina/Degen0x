@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T06:06:00Z",
-  "briefing_id": "briefing-2026-04-27-06",
+  "generated_at": "2026-04-27T07:05:00Z",
+  "briefing_id": "briefing-2026-04-27-07",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-06-001",
-      "headline": "Lazarus Group fingered in $620M April hack wave — Drift and Kelp DAO drove 95%",
-      "slug": "lazarus-group-april-2026-hack-wave",
-      "tldr": "April crypto theft hits roughly $620M, with two North Korea-linked exploits accounting for about $577M of the stolen funds.",
-      "why_it_matters": "Why it matters: DPRK is now harvesting crypto faster than US sanctions can squeeze it, signaling DeFi's human-layer is the new attack surface.",
+      "id": "story-2026-04-27-07-001",
+      "headline": "Aave hits 80% of $200M Kelp DAO bailout — Mantle, Aave DAO put up $127M",
+      "slug": "aave-kelp-dao-bailout-127m",
+      "tldr": "Aave's recovery fund has raised nearly 80% of the $200M needed to cover bad debt left by the Kelp DAO exploit, led by Mantle and Aave DAO contributions.",
+      "why_it_matters": "Why it matters: A successful private bailout could become DeFi's playbook for absorbing nine-figure exploits without protocol insolvency or token death spirals.",
       "the_details": [
-        "Drift Protocol lost $285M on April 1 after attackers spent months posing as a trading firm to social-engineer internal teams.",
-        "Kelp DAO drained for $292M on April 18, stranding wrapped ether across 20 chains in 2026's worst DeFi exploit.",
-        "April is the worst single hack month since Bybit's February 2025 incident, per Phemex and Live Bitcoin News tallies."
+        "Mantle and Aave DAO combined for $127M of the funds raised so far toward the $200M target.",
+        "Funds will plug bad debt left after the April 19 Kelp hack drained ~116,500 rsETH (~$292M).",
+        "Roughly $40M still needs to come from external contributors before the recovery completes."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
-      "category": "security",
+      "source_url": "https://www.coindesk.com/",
+      "category": "defi",
       "impact": "high",
-      "timestamp": "2026-04-27T06:06:00Z"
+      "timestamp": "2026-04-27T06:00:00Z"
     },
     {
-      "id": "story-2026-04-27-06-002",
-      "headline": "Strategy buys 34,164 BTC for $2.54B — biggest haul since 2024, hoard hits 815K",
-      "slug": "strategy-2-5-billion-bitcoin-buy-april-2026",
-      "tldr": "Michael Saylor's Strategy added 34,164 bitcoin for $2.54 billion, its largest single acquisition since 2024.",
-      "why_it_matters": "Why it matters: One corporate buyer just absorbed roughly two weeks of net new bitcoin issuance, tightening float as the Fed keeps rates sticky.",
+      "id": "story-2026-04-27-07-002",
+      "headline": "BTC whales flip aggressively long on Hyperliquid as funding stays deeply negative",
+      "slug": "btc-whales-long-hyperliquid",
+      "tldr": "Hyperliquid whale positioning has pushed firmly net long despite negative funding, coinciding with bitcoin's grind from the mid-$60Ks back near $80,000.",
+      "why_it_matters": "Why it matters: Aggressive whale longs paired with deeply negative funding is historically a contrarian setup that has preceded sharp upside short squeezes.",
       "the_details": [
-        "Purchase brings Strategy's stack to 815,061 BTC, putting the position back into modest unrealized profit.",
-        "Buy coincided with $1.4B in weekly global crypto fund inflows, led by BTC and ETH products.",
-        "BTC briefly tagged $78K on the news plus Trump's Iran ceasefire extension before fading near $77.5K."
+        "Whale long bias intensified through April after flipping from net short in early March.",
+        "BTC tagged near $80,000 this week before pulling back into the $77K region.",
+        "Funding rates remain deeply negative — retail still positioned short into the strength."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/22/bitcoin-climbs-to-usd77-500-on-trump-ceasefire-extension-strategy-s-usd2-5-billion-buy",
-      "category": "markets",
+      "source_url": "https://www.coindesk.com/markets/2026/04/26/bitcoin-whales-build-long-positions-as-funding-stays-deeply-negative",
+      "category": "bitcoin",
       "impact": "high",
-      "timestamp": "2026-04-27T06:06:00Z"
+      "timestamp": "2026-04-26T22:00:00Z"
     },
     {
-      "id": "story-2026-04-27-06-003",
-      "headline": "CLARITY Act timeline slips into May as Tillis dashes Senate's April hopes",
-      "slug": "clarity-act-timeline-slips-may-2026",
-      "tldr": "Senator Thom Tillis told reporters the Senate market-structure compromise will not clear in April, pushing the bill into May.",
-      "why_it_matters": "Why it matters: Every week of slippage shrinks the 2026 legislative window and tilts crypto enforcement back toward an SEC still working from interpretive guidance.",
+      "id": "story-2026-04-27-07-003",
+      "headline": "Grayscale and Bitmine stake nearly $500M ETH in single-day institutional flex",
+      "slug": "grayscale-bitmine-eth-staking-500m",
+      "tldr": "Grayscale and Bitmine combined to stake roughly $500M of ETH on April 25, deepening institutional commitment to Ethereum's native yield.",
+      "why_it_matters": "Why it matters: Half-billion-dollar single-day stakes from regulated entities tighten ETH float and tilt the validator set further toward TradFi balance sheets.",
       "the_details": [
-        "More than 100 crypto firms including Coinbase and Ripple have signed a letter pressing the Banking Committee to mark up the bill.",
-        "Negotiators previously claimed an 'agreement in principle' before April, but the legislative text remains unfinalized.",
-        "SEC and CFTC issued a joint 68-page interpretive release in March establishing a five-category token taxonomy."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/26/running-out-of-time-on-clarity-state-of-crypto",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-27T06:06:00Z"
-    },
-    {
-      "id": "story-2026-04-27-06-004",
-      "headline": "Bhutan moves 250 BTC; 2026 outflows top $240M as treasury drops 73% from peak",
-      "slug": "bhutan-bitcoin-treasury-outflow-april-2026",
-      "tldr": "Bhutan moved another 250 BTC on April 13, pushing 2026 outflows above $240 million from its sovereign mining stash, per Arkham data.",
-      "why_it_matters": "Why it matters: Sovereign sellers like Bhutan and the German Bundeskasse remain a structural overhang against the institutional bid into Strategy and US ETFs.",
-      "the_details": [
-        "Royal Government of Bhutan's holdings have collapsed roughly 73% from their October 2024 peak.",
-        "Movements track to centralized exchange deposit addresses, suggesting active distribution rather than internal rebalance.",
-        "Selling cadence has accelerated even as Strategy alone bought 34,164 BTC this month."
+        "Combined ~$500M staked on April 25 across Grayscale and Bitmine treasuries.",
+        "Spot ETH ETFs simultaneously logged $23.4M net inflows, reversing a brief outflow trend.",
+        "Move lands as Standard Chartered tags 2026 as 'the year of Ethereum' on relative fundamentals."
       ],
       "source": "The Block",
-      "source_url": "https://www.theblock.co/post/397558/bhutan-moves-250-btc-as-2026-outflows-top-240-million-arkham-data",
-      "category": "bitcoin",
-      "impact": "medium",
-      "timestamp": "2026-04-27T06:06:00Z"
+      "source_url": "https://www.theblock.co/",
+      "category": "ethereum",
+      "impact": "high",
+      "timestamp": "2026-04-26T18:00:00Z"
     },
     {
-      "id": "story-2026-04-27-06-005",
-      "headline": "Vercel breach sends crypto devs scrambling to rotate API keys",
-      "slug": "vercel-breach-crypto-api-key-scramble",
-      "tldr": "A security incident at hosting provider Vercel forced crypto teams to audit and rotate exposed API keys and deployment secrets across DeFi front ends.",
-      "why_it_matters": "Why it matters: Vercel hosts front ends for many DeFi protocols; leaked keys could enable RPC hijacks, dashboard defacement, or phishing redirects against retail users.",
+      "id": "story-2026-04-27-07-004",
+      "headline": "BTC-dollar correlation deepens to -0.90 — most negative since 2022",
+      "slug": "btc-dollar-correlation-2022-extreme",
+      "tldr": "Bitcoin's 30-day correlation with the U.S. Dollar Index has deepened to -0.90, the most negative reading in nearly four years.",
+      "why_it_matters": "Why it matters: An extreme inverse correlation cements BTC's macro role as the anti-dollar trade, leaving it directly tethered to Fed and Treasury moves.",
       "the_details": [
-        "CoinDesk reported the incident on April 20; affected teams rotated Infura, Alchemy and CoinGecko keys within hours.",
-        "Lands amid April's $620M hack tally where attackers increasingly target signing infra and access tokens, not Solidity bugs.",
-        "Reinforces the 2026 trend of off-chain platform compromise displacing on-chain smart-contract exploits as the top threat vector."
+        "30-day BTC/DXY correlation now -0.90, deepest since 2022.",
+        "BTC up 13%+ in April, on pace for its best monthly performance in a year.",
+        "USDT supply expansion to ~$150B has added liquidity behind the rebound."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
-      "category": "security",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
+      "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-27T06:06:00Z"
+      "timestamp": "2026-04-24T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-07-005",
+      "headline": "Spot SOL ETFs blow past $1B AUM as Goldman Sachs surfaces as major holder",
+      "slug": "sol-etf-1b-goldman-sachs",
+      "tldr": "Spot Solana ETFs have crossed $1 billion in assets under management, with Goldman Sachs disclosed among the major position holders.",
+      "why_it_matters": "Why it matters: Goldman entering size on a SOL ETF mints Solana as a TradFi-grade allocation alongside BTC and ETH, expanding institutional altcoin pipes.",
+      "the_details": [
+        "Combined spot SOL ETF AUM topped $1B in late April 2026.",
+        "Goldman Sachs disclosed among the major institutional holders.",
+        "SOL is consolidating $77–$94 with the weekly chart flashing a rare bullish crossover."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-26T12:00:00Z"
     }
   ]
 }

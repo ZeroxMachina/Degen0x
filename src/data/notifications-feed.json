@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-008",
+    "type": "news",
+    "title": "📰 Aave hits 80% of $200M Kelp DAO bailout — Mantle, Aave DAO put up $127M",
+    "message": "Aave's recovery fund has raised nearly 80% of the $200M needed to cover bad debt left by the Kelp DAO exploit, led by Mantle and Aave DAO contributions.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-007",
     "type": "news",
     "title": "📰 Lazarus Group fingered in $620M April hack wave — Drift and Kelp DAO drove 95%",
@@ -229,14 +237,6 @@
     "title": "914 New Pages Indexed — Publish Queue Drained",
     "message": "The full backlog of built-but-unpromoted pages (914 total) has been promoted to PUBLISHED_PAGES. Site now indexes 1,515 URLs across Learn, Exchanges, Investing, Wallets, DeFi, Cards, NFTs and more.",
     "actionUrl": "/learn",
-    "date": "2026-04-17"
-  },
-  {
-    "id": "feed-2026-04-17-012",
-    "type": "news",
-    "title": "📰 Grinex Halts Trading After $15M State-Level Attack Drains USDT Reserves",
-    "message": "Sanctioned Russian exchange Grinex suspended trading after attackers moved $15M in USDT onto Tron and Ethereum, blaming a hostile-state operation.",
-    "actionUrl": "/news",
     "date": "2026-04-17"
   }
 ]
