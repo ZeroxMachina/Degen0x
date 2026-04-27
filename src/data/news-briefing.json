@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T11:08:00Z",
-  "briefing_id": "briefing-2026-04-27-11",
+  "generated_at": "2026-04-27T12:05:00Z",
+  "briefing_id": "briefing-2026-04-27-12",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-11-001",
-      "headline": "Aave coalition raises ~80% of $200M needed to plug Kelp DAO bad debt",
-      "slug": "aave-kelp-dao-bad-debt-recovery-80-percent",
-      "tldr": "Aave-led DeFi consortium has secured roughly $160M of the $200M shortfall left by the April 19 Kelp DAO exploit, easing systemic contagion fears.",
-      "why_it_matters": "Why it matters: A clean private-sector bailout would set a template for future cross-chain bridge failures and blunt the 'DeFi is dead' narrative dragging on lending TVL.",
+      "id": "story-2026-04-27-12-001",
+      "headline": "Bitcoin 2026 opens in Vegas with FBI's Patel, acting AG Blanche keynoting Day 1",
+      "slug": "bitcoin-2026-vegas-patel-blanche-keynote",
+      "tldr": "The world's largest Bitcoin conference kicks off Monday in Las Vegas with a federal law enforcement headline panel framing code as free speech.",
+      "why_it_matters": "Why it matters: Sitting FBI and DOJ leaders sharing a Bitcoin stage signals how far the U.S. enforcement posture has shifted under the new administration — a tailwind for builders still spooked by 2023-era subpoenas.",
       "the_details": [
-        "Kelp DAO lost 116,500 rsETH (~$292M) on April 19 via a LayerZero EndpointV2 exploit on its bridge.",
-        "Aave is leading negotiations with partner protocols to backstop bad debt and avoid forced liquidations.",
-        "Top DeFi lender saw $9B in outflows in the week following the exploit, per Bloomberg."
+        "Day 1 fireside chat 'Code is Free Speech: Ending the War on Bitcoin' features FBI Director Kash Patel and acting U.S. Attorney General Todd Blanche.",
+        "Conference runs April 27–29 at the Las Vegas Convention Center, the biggest Bitcoin event globally by attendance.",
+        "Backdrop: BTC trading near $79K, up roughly 2% on the day after stalling at $80K resistance overnight."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/business/2026/04/23/aave-rallies-defi-partners-to-contain-fallout-from-usd292-million-kelpdao-hack",
-      "category": "defi",
+      "source": "Maxim",
+      "source_url": "https://www.maxim.com/news/bitcoin-2026-day-1-whos-speaking-at-the-worlds-biggest-bitcoin-event-on-april-27/",
+      "category": "adoption",
       "impact": "high",
-      "timestamp": "2026-04-27T10:30:00Z"
+      "timestamp": "2026-04-27T11:30:00Z"
     },
     {
-      "id": "story-2026-04-27-11-002",
-      "headline": "Bitcoin reclaims $79K, on track for best month in a year as USDT supply jumps $5B",
-      "slug": "bitcoin-79k-best-month-usdt-5b-supply",
-      "tldr": "BTC trades near $79,123 and is up 13%+ in April, on pace for its strongest monthly performance in a year as USDT supply expands by $5 billion.",
-      "why_it_matters": "Why it matters: Stablecoin issuance is the cleanest proxy for real fiat inflow into crypto — $5B in fresh USDT signals durable demand, not just short-covering.",
+      "id": "story-2026-04-27-12-002",
+      "headline": "April crypto hacks hit $606M across 12 incidents — worst month since Feb 2025",
+      "slug": "april-2026-crypto-hacks-606m-worst-month",
+      "tldr": "Drift and Kelp DAO alone accounted for nearly $580M as Lazarus Group attribution turns April 2026 into DeFi's bloodiest month in over a year.",
+      "why_it_matters": "Why it matters: Three times Q1's total losses in 18 days vaporizes the 'DeFi is maturing' narrative right as the SEC eases UI broker rules — security debt is now the binding constraint on TVL recovery.",
       "the_details": [
-        "BTC up 2.04% in 24 hours; market cap $1.58T; 24h volume $24.7B.",
-        "Total crypto market cap hit $2.71T, +1.7% on the day, per CoinGabbar.",
-        "Fear & Greed Index climbed to 47 (Neutral) from 29 last week — fastest sentiment shift since February."
+        "Drift Protocol drained for $285M on April 1 via a durable-nonce flaw; KelpDAO lost $292M through a LayerZero bridge bug.",
+        "U.S. and South Korean authorities have attributed both exploits to North Korea's Lazarus Group.",
+        "Smaller hits include CoW Swap, Zerion, Rhea Finance and Silo Finance, lifting the running tally past $606M with three days left in April."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-27T08:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-12-003",
+      "headline": "Solana ETF inflows collapse 92% from November peak as SOL slides 38% YTD",
+      "slug": "solana-etf-inflows-collapse-92-percent",
+      "tldr": "Spot SOL ETFs are pulling just $34M in April versus $419M last November, with capital concentrating in Bitcoin products as altcoin season stalls.",
+      "why_it_matters": "Why it matters: The first non-BTC/ETH ETF cohort is failing its real-world stress test — a warning for issuers lining up XRP and DOGE products that institutional altcoin demand may be a 2025 artifact.",
+      "the_details": [
+        "Spot Solana ETF monthly inflows fell from $419M in November 2025 to $34M in April 2026.",
+        "SOL trades near $86 with a $49.8B market cap, down ~38% year-to-date and ranked seventh by market cap.",
+        "Altcoin Season Index sits at 33–38, deep in 'Bitcoin Season' territory; Drift exploit aftermath weighs on Solana DeFi sentiment."
+      ],
+      "source": "openPR / CoinMarketCap",
+      "source_url": "https://www.openpr.com/news/4458840/bitcoin-2026-conference-april-27-in-las-vegas-as-solana-sol",
+      "category": "altcoins",
+      "impact": "high",
+      "timestamp": "2026-04-27T07:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-12-004",
+      "headline": "BTC stalls at $80K wall as crude above $90 caps risk appetite",
+      "slug": "btc-stalls-80k-crude-above-90",
+      "tldr": "Bitcoin briefly cleared $79K in Asia before sellers capped the move at $80K, with rising oil prices and altcoin weakness dragging spot back below $78K.",
+      "why_it_matters": "Why it matters: A second rejection at $80K with strong ETF flows behind it shows how much sustained crude-driven inflation is throttling the BTC bid — macro now outranks plumbing.",
+      "the_details": [
+        "WTI holds above $90 and Brent above $100 as Iran-related supply disruption continues; pre-war pricing was below $70.",
+        "Spot BTC ETFs and a $5B USDT supply expansion this month have so far failed to break the $80K cap.",
+        "Fear & Greed Index ticks to 47 (Neutral) from 33 yesterday; BTC dominance steady at 58.2%."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
       "category": "bitcoin",
-      "impact": "high",
-      "timestamp": "2026-04-27T09:45:00Z"
-    },
-    {
-      "id": "story-2026-04-27-11-003",
-      "headline": "Hyperliquid whales flip most net-long since early March as BTC funding stays negative",
-      "slug": "hyperliquid-whales-net-long-btc-funding-negative",
-      "tldr": "Large traders on Hyperliquid have shifted from net short to their most aggressively net-long bitcoin positioning in nearly two months, even with funding deep negative.",
-      "why_it_matters": "Why it matters: A divergence between whale longs and persistently negative funding means smart money is paying retail to stay short — historically a contrarian setup.",
-      "the_details": [
-        "Whale net-long positioning is the heaviest since early March 2026.",
-        "BTC funding rates remain deeply negative across major perp venues.",
-        "Coincides with BTC's climb from mid-$60Ks to ~$80K over the past three weeks."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/26/bitcoin-whales-build-long-positions-as-funding-stays-deeply-negative",
-      "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-27T08:15:00Z"
+      "timestamp": "2026-04-27T10:00:00Z"
     },
     {
-      "id": "story-2026-04-27-11-004",
-      "headline": "BTC-DXY correlation hits -0.90, deepest inverse move in nearly four years",
-      "slug": "btc-dxy-correlation-negative-0-90-four-years",
-      "tldr": "Bitcoin's 30-day correlation with the U.S. Dollar Index has fallen to -0.90, the most negative reading since 2022, cementing BTC as the cleanest dollar-debasement trade.",
-      "why_it_matters": "Why it matters: A near-perfect inverse pin to DXY means BTC's path now hinges on Fed/FOMC posture and dollar liquidity — not crypto-native catalysts.",
+      "id": "story-2026-04-27-12-005",
+      "headline": "TOKEN2049 Dubai pushed to 2027 over UAE regional security risks",
+      "slug": "token2049-dubai-postponed-2027",
+      "tldr": "Organizers have postponed the May 2026 TOKEN2049 Dubai event to 2027, citing heightened security risks in the UAE amid ongoing regional conflict.",
+      "why_it_matters": "Why it matters: Crypto's marquee Middle East gathering going dark for a year reroutes deal flow and sponsorship dollars to Singapore and Vegas — a real cost for Gulf-aligned funds and L1 marketing budgets.",
       "the_details": [
-        "30-day BTC-DXY correlation: -0.90, lowest since 2022.",
-        "FOMC meeting this week is the dominant macro catalyst per multiple desks.",
-        "U.S.-Iran ceasefire extension and oil moves remain secondary tailwinds."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
-      "category": "markets",
-      "impact": "medium",
-      "timestamp": "2026-04-27T07:30:00Z"
-    },
-    {
-      "id": "story-2026-04-27-11-005",
-      "headline": "TOKEN2049 Dubai postponed to April 2027 over UAE security concerns",
-      "slug": "token2049-dubai-postponed-2027-security",
-      "tldr": "Organizers shifted TOKEN2049 Dubai to April 21-22, 2027, citing heightened security risks across the UAE — the largest crypto event delay of the cycle.",
-      "why_it_matters": "Why it matters: Dubai has been the de facto neutral hub for crypto deal flow since 2023; a year-long postponement reroutes capital meetings to Singapore, Hong Kong, and Lisbon.",
-      "the_details": [
-        "TOKEN2049 Dubai pushed from 2026 to April 21-22, 2027.",
-        "Organizers cited 'heightened security risks' tied to regional instability.",
-        "Dubai event historically draws 15,000+ attendees and anchors UAE's crypto policy push."
+        "Conference was scheduled for May 2026; new date now slated for 2027 with no specific month confirmed.",
+        "Organizers cited 'heightened security risks' tied to ongoing regional escalation following the U.S.–Iran ceasefire breakdown.",
+        "TOKEN2049 Singapore (October) is unaffected and now becomes 2026's de facto flagship gathering."
       ],
       "source": "The Block",
       "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-27T06:00:00Z"
+      "timestamp": "2026-04-26T18:00:00Z"
     }
   ]
 }

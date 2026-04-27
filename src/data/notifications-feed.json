@@ -1,8 +1,16 @@
 [
   {
+    "id": "feed-2026-04-27-013",
+    "type": "news",
+    "title": "📰 Bitcoin 2026 opens in Vegas with FBI's Patel, acting AG Blanche keynoting Day 1",
+    "message": "The world's largest Bitcoin conference kicks off Monday in Las Vegas with a federal law enforcement headline panel framing code as free speech.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-012",
     "type": "news",
-    "title": "\ud83d\udcf0 Aave coalition raises ~80% of $200M needed to plug Kelp DAO bad debt",
+    "title": "📰 Aave coalition raises ~80% of $200M needed to plug Kelp DAO bad debt",
     "message": "Aave-led DeFi consortium has secured roughly $160M of the $200M shortfall left by the April 19 Kelp DAO exploit, easing systemic contagion fears.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -10,7 +18,7 @@
   {
     "id": "feed-2026-04-27-011",
     "type": "news",
-    "title": "\ud83d\udcf0 Clarity Act faces Memorial Day cliff as 100+ crypto firms storm Senate",
+    "title": "📰 Clarity Act faces Memorial Day cliff as 100+ crypto firms storm Senate",
     "message": "A coalition of over 100 crypto firms is pressing Senate Banking to mark up the Clarity Act before a May 25 cutoff for 2026 passage.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -18,7 +26,7 @@
   {
     "id": "feed-2026-04-27-010",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin clears $77K, on pace for best month in a year as $5B USDT mints fuel rebound",
+    "title": "📰 Bitcoin clears $77K, on pace for best month in a year as $5B USDT mints fuel rebound",
     "message": "BTC trades above $77,000 and is up over 13% in April, its strongest monthly run in a year, supported by $5 billion in fresh USDT supply.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -26,7 +34,7 @@
   {
     "id": "feed-2026-04-27-009",
     "type": "news",
-    "title": "\ud83d\udcf0 Kalshi launches crypto perpetual futures today under codename 'Timeless'",
+    "title": "📰 Kalshi launches crypto perpetual futures today under codename 'Timeless'",
     "message": "Prediction-market giant Kalshi rolls out perp futures on a handful of cryptocurrencies today, marking its first true derivatives push beyond event contracts.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -34,7 +42,7 @@
   {
     "id": "feed-2026-04-27-008",
     "type": "news",
-    "title": "\ud83d\udcf0 Aave hits 80% of $200M Kelp DAO bailout \u2014 Mantle, Aave DAO put up $127M",
+    "title": "📰 Aave hits 80% of $200M Kelp DAO bailout — Mantle, Aave DAO put up $127M",
     "message": "Aave's recovery fund has raised nearly 80% of the $200M needed to cover bad debt left by the Kelp DAO exploit, led by Mantle and Aave DAO contributions.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -42,7 +50,7 @@
   {
     "id": "feed-2026-04-27-007",
     "type": "news",
-    "title": "\ud83d\udcf0 Lazarus Group fingered in $620M April hack wave \u2014 Drift and Kelp DAO drove 95%",
+    "title": "📰 Lazarus Group fingered in $620M April hack wave — Drift and Kelp DAO drove 95%",
     "message": "April crypto theft hits roughly $620M, with two North Korea-linked exploits accounting for about $577M of the stolen funds.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -50,7 +58,7 @@
   {
     "id": "feed-2026-04-27-006",
     "type": "news",
-    "title": "\ud83d\udcf0 SEC and CFTC officially label BTC, ETH, SOL, XRP and LINK as digital commodities",
+    "title": "📰 SEC and CFTC officially label BTC, ETH, SOL, XRP and LINK as digital commodities",
     "message": "A joint SEC-CFTC interpretation classifies the five biggest tokens as commodities and lays out a unified taxonomy for stablecoins, collectibles and digital securities.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -58,7 +66,7 @@
   {
     "id": "feed-2026-04-27-005",
     "type": "news",
-    "title": "\ud83d\udcf0 Hyperliquid whales flip aggressively long on BTC even as funding stays deeply negative",
+    "title": "📰 Hyperliquid whales flip aggressively long on BTC even as funding stays deeply negative",
     "message": "Large Hyperliquid traders have moved from net short to their most net-long BTC positioning since early March, despite persistently negative funding rates.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -66,7 +74,7 @@
   {
     "id": "feed-2026-04-27-004",
     "type": "news",
-    "title": "\ud83d\udcf0 Trump team prepping public release of Strategic Bitcoin Reserve architecture",
+    "title": "📰 Trump team prepping public release of Strategic Bitcoin Reserve architecture",
     "message": "The Trump administration is finalizing the detailed framework for a US Strategic Bitcoin Reserve, including how Treasury would accumulate, custody, and report on BTC holdings.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -74,7 +82,7 @@
   {
     "id": "feed-2026-04-27-003",
     "type": "news",
-    "title": "\ud83d\udcf0 April hacks hit $620M in 20 days \u2014 worst month since Bybit's Feb '25 breach",
+    "title": "📰 April hacks hit $620M in 20 days — worst month since Bybit's Feb '25 breach",
     "message": "Crypto protocols have lost $620M to hacks and exploits in the first 20 days of April, eclipsing Q1 2026 combined.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -82,7 +90,7 @@
   {
     "id": "feed-2026-04-27-002",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin-USD correlation hits -0.90, most negative since 2022",
+    "title": "📰 Bitcoin-USD correlation hits -0.90, most negative since 2022",
     "message": "BTC's 30-day correlation with the U.S. Dollar Index has flipped to -0.90, the deepest inverse reading in nearly four years.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -90,7 +98,7 @@
   {
     "id": "feed-2026-04-27-001",
     "type": "news",
-    "title": "\ud83d\udcf0 Schwab opens spot BTC and ETH trading to retail brokerage clients",
+    "title": "📰 Schwab opens spot BTC and ETH trading to retail brokerage clients",
     "message": "Charles Schwab flipped the switch on direct spot Bitcoin and Ethereum trading inside its retail brokerage, the deepest TradFi push into crypto since the ETFs.",
     "actionUrl": "/news",
     "date": "2026-04-27"
@@ -98,7 +106,7 @@
   {
     "id": "feed-2026-04-26-010",
     "type": "news",
-    "title": "\ud83d\udcf0 SEC and CFTC sign historic MOU, ending years of jurisdictional turf war",
+    "title": "📰 SEC and CFTC sign historic MOU, ending years of jurisdictional turf war",
     "message": "The SEC and CFTC announced their first formal memorandum of understanding to coordinate crypto oversight, codifying a joint interpretation issued earlier this spring.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -106,7 +114,7 @@
   {
     "id": "feed-2026-04-26-009",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin tracks best month in a year as USDT supply nears $150B",
+    "title": "📰 Bitcoin tracks best month in a year as USDT supply nears $150B",
     "message": "BTC trades near $78,060, up 13% in April, on pace for its strongest monthly close since spring 2025 as USDT supply expands $5B.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -114,7 +122,7 @@
   {
     "id": "feed-2026-04-26-008",
     "type": "news",
-    "title": "\ud83d\udcf0 North Korea Lazarus Linked to $292M Kelp Drain as April Losses Top $606M",
+    "title": "📰 North Korea Lazarus Linked to $292M Kelp Drain as April Losses Top $606M",
     "message": "Forensics tie North Korea's Lazarus Group to the $292M KelpDAO drain, capping crypto's worst hack month since February 2025's Bybit breach.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -122,7 +130,7 @@
   {
     "id": "feed-2026-04-26-007",
     "type": "news",
-    "title": "\ud83d\udcf0 100+ Crypto Firms Press Senate to Mark Up Clarity Act Market Structure Bill",
+    "title": "📰 100+ Crypto Firms Press Senate to Mark Up Clarity Act Market Structure Bill",
     "message": "A coalition of more than 100 crypto firms led by Coinbase and Ripple is urging the Senate Banking Committee to advance the Clarity Act this spring.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -130,15 +138,15 @@
   {
     "id": "feed-2026-04-26-006",
     "type": "news",
-    "title": "\ud83d\udcf0 KelpDAO LayerZero Bridge Drained for $292M, Wrapping 18% of rsETH Across 20 Chains",
-    "message": "An attacker exploited KelpDAO's LayerZero-powered bridge to siphon roughly 116,500 rsETH \u2014 about $292M and 18% of circulating supply.",
+    "title": "📰 KelpDAO LayerZero Bridge Drained for $292M, Wrapping 18% of rsETH Across 20 Chains",
+    "message": "An attacker exploited KelpDAO's LayerZero-powered bridge to siphon roughly 116,500 rsETH — about $292M and 18% of circulating supply.",
     "actionUrl": "/news",
     "date": "2026-04-26"
   },
   {
     "id": "feed-2026-04-26-005",
     "type": "news",
-    "title": "\ud83d\udcf0 North Korea Pinned for $285M Drift Hack via Long-Game Social Engineering",
+    "title": "📰 North Korea Pinned for $285M Drift Hack via Long-Game Social Engineering",
     "message": "Investigators traced April's $285M Drift Protocol drain to DPRK-affiliated operators using pre-signed authorizations harvested over months.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -146,7 +154,7 @@
   {
     "id": "feed-2026-04-26-004",
     "type": "news",
-    "title": "\ud83d\udcf0 April Crypto Hack Toll Hits $606M, Worst Month Since Bybit Breach",
+    "title": "📰 April Crypto Hack Toll Hits $606M, Worst Month Since Bybit Breach",
     "message": "Crypto protocols lost $606M across 12 exploits in the first 18 days of April, the worst monthly theft tally since February 2025's Bybit incident.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -154,7 +162,7 @@
   {
     "id": "feed-2026-04-26-003",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin Posts Best Month in a Year as $5B USDT Injection Pushes BTC Above $77K",
+    "title": "📰 Bitcoin Posts Best Month in a Year as $5B USDT Injection Pushes BTC Above $77K",
     "message": "Bitcoin is up 13.6% in April and on pace for its strongest monthly close since early 2025, with Tether minting $5B in fresh USDT to refuel the rally.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -162,7 +170,7 @@
   {
     "id": "feed-2026-04-26-002",
     "type": "news",
-    "title": "\ud83d\udcf0 Lazarus-Linked April Hacks Cross $606M, Worst Crypto Theft Month Since Bybit",
+    "title": "📰 Lazarus-Linked April Hacks Cross $606M, Worst Crypto Theft Month Since Bybit",
     "message": "Crypto protocols have lost over $606 million to exploits in 18 days, the worst month since Bybit's $1.4B breach.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -170,7 +178,7 @@
   {
     "id": "feed-2026-04-26-001",
     "type": "news",
-    "title": "\ud83d\udcf0 BlackRock IBIT Options Top Deribit, Marking Wall Street's Crypto Derivatives Takeover",
+    "title": "📰 BlackRock IBIT Options Top Deribit, Marking Wall Street's Crypto Derivatives Takeover",
     "message": "BlackRock's IBIT bitcoin ETF options surpassed Deribit in open interest, signaling regulated U.S. derivatives are eclipsing offshore venues for institutional hedging.",
     "actionUrl": "/news",
     "date": "2026-04-26"
@@ -178,7 +186,7 @@
   {
     "id": "feed-2026-04-23-015",
     "type": "news",
-    "title": "\ud83d\udcf0 100+ Crypto Firms Pressure Senate to Mark Up Clarity Act or Risk Enforcement Revival",
+    "title": "📰 100+ Crypto Firms Pressure Senate to Mark Up Clarity Act or Risk Enforcement Revival",
     "message": "A coalition led by Coinbase and Ripple sent a letter demanding the Senate Banking Committee advance the Clarity Act market-structure bill immediately.",
     "actionUrl": "/news",
     "date": "2026-04-23"
@@ -186,7 +194,7 @@
   {
     "id": "feed-2026-04-23-001",
     "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin Stalls Below $80K as Pentagon-Backed Inflation Warning Flips Risk Mood",
+    "title": "📰 Bitcoin Stalls Below $80K as Pentagon-Backed Inflation Warning Flips Risk Mood",
     "message": "BTC's push toward $80,000 stalled at $77.8K as rising oil and Strait of Hormuz risk reignited inflation fears across risk assets.",
     "actionUrl": "/news",
     "date": "2026-04-23"
@@ -194,7 +202,7 @@
   {
     "id": "feed-2026-04-20-008",
     "type": "news",
-    "title": "\ud83d\udcf0 DeFi TVL Craters $13B in 48 Hours as Kelp Contagion Spirals Beyond Aave",
+    "title": "📰 DeFi TVL Craters $13B in 48 Hours as Kelp Contagion Spirals Beyond Aave",
     "message": "Total value locked across DeFi fell from $99.5B to $86.3B in two days, turning the Kelp exploit into a sector-wide confidence crisis.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -202,7 +210,7 @@
   {
     "id": "feed-2026-04-20-007",
     "type": "news",
-    "title": "\ud83d\udcf0 Vercel Breach Sends Crypto Devs Racing to Rotate API Keys Across Live Apps",
+    "title": "📰 Vercel Breach Sends Crypto Devs Racing to Rotate API Keys Across Live Apps",
     "message": "A security incident at hosting provider Vercel may have exposed customer API keys, forcing crypto teams to rotate credentials and audit code paths in production.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -210,7 +218,7 @@
   {
     "id": "feed-2026-04-20-006",
     "type": "news",
-    "title": "\ud83d\udcf0 Aave Stares Down $195M Bad Debt After Kelp Hacker Borrows Against Stolen rsETH",
+    "title": "📰 Aave Stares Down $195M Bad Debt After Kelp Hacker Borrows Against Stolen rsETH",
     "message": "Aave is quantifying how much bad debt it now holds after the Kelp DAO exploiter used stolen rsETH as collateral to borrow roughly $195 million in ETH.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -218,7 +226,7 @@
   {
     "id": "feed-2026-04-20-005",
     "type": "news",
-    "title": "\ud83d\udcf0 Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",
+    "title": "📰 Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",
     "message": "Web infra giant Vercel disclosed a security incident that may have exposed customer API keys, triggering a scramble across crypto teams to rotate credentials.",
     "actionUrl": "/news",
     "date": "2026-04-20"
@@ -226,16 +234,8 @@
   {
     "id": "feed-2026-04-20-004",
     "type": "news",
-    "title": "\ud83d\udcf0 DeFi TVL Craters $13.2B in 48 Hours as Kelp Contagion Spreads Beyond Aave",
+    "title": "📰 DeFi TVL Craters $13.2B in 48 Hours as Kelp Contagion Spreads Beyond Aave",
     "message": "Total value locked across DeFi has plunged by $13.21 billion in two days, with the bleed extending past Aave into lending, restaking, and LRT markets.",
-    "actionUrl": "/news",
-    "date": "2026-04-20"
-  },
-  {
-    "id": "feed-2026-04-20-003",
-    "type": "news",
-    "title": "\ud83d\udcf0 Aave Bleeds $9B in Outflows as Kelp Contagion Rips Through DeFi Lending",
-    "message": "Aave net inflows collapsed by roughly $6.2B (~23%) after the Kelp exploiter used stolen rsETH as collateral to borrow $195M in ETH.",
     "actionUrl": "/news",
     "date": "2026-04-20"
   }
