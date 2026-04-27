@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T13:05:00Z",
-  "briefing_id": "briefing-2026-04-27-13",
+  "generated_at": "2026-04-27T14:35:00Z",
+  "briefing_id": "briefing-2026-04-27-14",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-13-001",
-      "headline": "Bitcoin stalls at $80K as $5B USDT liquidity meets oil-driven selloff",
-      "slug": "bitcoin-stalls-80k-usdt-oil-selloff",
-      "tldr": "BTC reversed from $79,500 Monday as a fresh oil surge triggered a broader crypto pullback, capping a four-week run that delivered its best monthly gains in a year.",
-      "why_it_matters": "Why it matters: ETF inflows and $5B in fresh USDT supply argue for upside, but $80K is now the gauntlet — bulls need a clean break or risk a deeper retrace into FOMC week.",
+      "id": "story-2026-04-27-14-001",
+      "headline": "BTC reclaims $79K as Iran peace proposal flips Fear & Greed from 33 to 47",
+      "slug": "btc-79k-iran-peace-proposal-fear-greed-flip",
+      "tldr": "Bitcoin pushed back to $79,124 Monday as a weekend Iran peace proposal lifted risk appetite ahead of this week's Fed meeting.",
+      "why_it_matters": "Why it matters: Sentiment swung 14 points in a week without new on-chain demand, leaving BTC's bid leaning entirely on macro headlines into FOMC.",
       "the_details": [
-        "BTC last $79,124, +2% on the day, $1.58T market cap; ETH at $2,320 still capped under the $2,400 mid-month high.",
-        "April stablecoin float grew $5B according to CoinDesk; analysts cite sidelined capital waiting on a confirmed break above $80K.",
-        "FOMC meeting and stalled U.S.-Iran peace talks set the macro tape this week; WTI oil holding above $90/bbl pressuring risk."
+        "BTC up 2.04% in 24h to $79,123.77; ETH lagged at $2,320.84, failing to retake the $2,400 mark last seen mid-April.",
+        "Crypto Fear & Greed Index printed 47 (Neutral) Monday, up from 33 last Friday and 29 a week ago.",
+        "Total crypto market cap reached $2.71T at 1.7% gain; BTC dominance held at 58.2% with $66.6B in 24h volume."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-27T12:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-13-002",
-      "headline": "100+ crypto firms pressure Senate Banking to mark up Clarity Act before recess",
-      "slug": "crypto-firms-senate-clarity-act-pressure",
-      "tldr": "A coalition of 100+ exchanges, custodians and developers including Coinbase and Ripple sent a public letter urging Senate Banking to mark up the Clarity Act now.",
-      "why_it_matters": "Why it matters: With the market-structure bill stuck behind tariff and budget fights, industry is racing to secure floor time before midterm politics swallow the calendar.",
-      "the_details": [
-        "Letter delivered April 23 with signatories spanning Coinbase, Ripple, and a16z portfolio firms.",
-        "House companion bill cleared on a bipartisan vote in 2025; Senate version has been pending markup since February.",
-        "Industry argues delay is freezing capital deployment as token-issuance legal status remains gray."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-23T00:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-13-003",
-      "headline": "SEC frees DeFi front-ends from broker-dealer registration in landmark staff letter",
-      "slug": "sec-defi-frontends-broker-dealer-exemption",
-      "tldr": "SEC staff said it will not object to 'Covered User Interface Providers' operating crypto-asset-securities front-ends without registering as broker-dealers.",
-      "why_it_matters": "Why it matters: First U.S. regulatory green light for DeFi front-ends — a foundational unlock for Uniswap-style apps that touch tokenized securities, conditional on opt-in safeguards.",
-      "the_details": [
-        "Staff statement issued April 13, 2026; part of the broader Project Crypto rollout under Chair Atkins.",
-        "Builds on the March 17 SEC-CFTC joint 68-page interpretive release establishing a five-category token taxonomy.",
-        "Conditions include disclosure obligations and refraining from holding customer assets or providing investment advice."
-      ],
-      "source": "Sidley Austin",
-      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-13T00:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-13-004",
-      "headline": "Blockchain Capital seeks $700M across two new funds as crypto VC consolidates",
-      "slug": "blockchain-capital-700m-two-new-funds",
-      "tldr": "Blockchain Capital is targeting $700M across two new vehicles — its largest raise yet — as crypto VC dollars concentrate into top-tier names.",
-      "why_it_matters": "Why it matters: Even as smaller crypto funds shutter or pause deploys, top-tier shops are still printing — concentrated capital means concentrated bets and fewer Series A lifelines for everyone else.",
-      "the_details": [
-        "Bloomberg reports the $700M target is split between an early-stage fund and an opportunities fund.",
-        "Follows mega-fund formation by Paradigm and a16z crypto in prior cycles.",
-        "Overall crypto VC funding tracking down ~40% year-over-year according to Galaxy Research."
-      ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/amp/post/398560/blockchain-capital-seeks-700-million",
-      "category": "infrastructure",
-      "impact": "medium",
-      "timestamp": "2026-04-23T00:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-13-005",
-      "headline": "Bhutan offloads another 250 BTC, sovereign stack now down 73% from 2024 peak",
-      "slug": "bhutan-offloads-250-btc-2026-outflows",
-      "tldr": "Bhutan moved 250 BTC on April 13, pushing 2026 outflows past $240M as the kingdom's sovereign holdings fell 73% from their October 2024 peak.",
-      "why_it_matters": "Why it matters: One of the few sovereign Bitcoin treasuries is steadily de-risking through this cycle — a quiet signal that even buy-the-dip national balance sheets are taking chips off the table.",
-      "the_details": [
-        "Arkham data tagged the April 13 transfer to a Binance deposit wallet.",
-        "Holdings peaked above $1.3B in October 2024 and have shrunk dramatically as BTC oscillates near $80K.",
-        "Bhutan is among the only nations with publicly known mining operations and on-chain visible reserves."
-      ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/397558/bhutan-moves-250-btc-as-2026-outflows-top-240-million-arkham-data",
+      "source": "Yahoo Finance / CoinGabbar",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-monday-april-27-2026-prices-hold-ahead-of-potential-peace-talks-and-fed-meeting-114927492.html",
       "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-27T13:45:00Z"
+    },
+    {
+      "id": "story-2026-04-27-14-002",
+      "headline": "Crypto exploit losses top $606M in first 24 days of April, Lazarus fingerprints on Drift",
+      "slug": "april-2026-crypto-exploit-losses-606m-lazarus-drift",
+      "tldr": "April is now the worst month for crypto exploits in 2026, with bridge failures and admin breaches dominating $606M+ in losses.",
+      "why_it_matters": "Why it matters: Two state-tied attacks inside 19 days have repriced DeFi smart-contract risk and could chill institutional bridge volume into Q3.",
+      "the_details": [
+        "Drift Protocol's April 1 $285M hit was traced to a North Korean-linked social-engineering campaign using pre-signed hidden authorizations.",
+        "Kelp DAO's April 19 LayerZero bridge exploit drained 116,500 rsETH ($292M), about 18% of the token's circulating supply.",
+        "Volo Protocol followed with a $3.5M loss April 22, the third major April exploit inside a four-week stretch."
+      ],
+      "source": "IndexBox / CoinDesk",
+      "source_url": "https://www.indexbox.io/blog/crypto-losses-exceed-606m-in-april-2026-due-to-hacks-linked-to-lazarus-group/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-27T11:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-14-003",
+      "headline": "$4.5B at risk as researchers flag half of LayerZero apps still vulnerable post-Kelp",
+      "slug": "layerzero-contagion-4-5b-vulnerable-post-kelp",
+      "tldr": "Researchers warn nearly 50% of active LayerZero-powered apps remain exposed to the same vector that drained Kelp DAO's bridge.",
+      "why_it_matters": "Why it matters: A single shared attack surface across $4.5B of TVL turns LayerZero from a connectivity layer into the market's biggest unhedged tail risk.",
+      "the_details": [
+        "Aave saw $8.4B in deposits flee in 48 hours after the Kelp exploit, with total DeFi TVL down more than $13B network-wide.",
+        "The Kelp attacker exploited LayerZero's bridge logic to mint and sweep wrapped rsETH across 20 chains simultaneously.",
+        "No coordinated patch has shipped; teams are choosing between manual freezes and waiting for LayerZero guidance."
+      ],
+      "source": "Bloomberg / CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
+      "category": "infrastructure",
+      "impact": "high",
+      "timestamp": "2026-04-27T09:30:00Z"
+    },
+    {
+      "id": "story-2026-04-27-14-004",
+      "headline": "Aave bridges $14.7B TVL strategy onto Solana via Sunrise DeFi deployment",
+      "slug": "aave-solana-sunrise-defi-14-7b-tvl-bridge",
+      "tldr": "Aave is routing Ethereum-backed liquidity into Solana through Sunrise DeFi, betting on faster execution and lower fees to ignite cross-chain demand.",
+      "why_it_matters": "Why it matters: Aave's first real Solana foothold pressures Kamino and MarginFi at exactly the moment Solana's $5.6B DeFi base needs new institutional flows.",
+      "the_details": [
+        "Ethereum still anchors over $12B of Aave's $14.7B TVL, but new deposits are now routable to Solana markets.",
+        "Solana's Alpenglow upgrade is already live with sub-200ms finality; Firedancer aims to push throughput from ~1,300 to 1M TPS.",
+        "Move comes as new Aave borrow demand stalls on mainnet despite the lending protocol's record-high deposit base."
+      ],
+      "source": "AMBCrypto",
+      "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
+      "category": "defi",
       "impact": "medium",
-      "timestamp": "2026-04-13T00:00:00Z"
+      "timestamp": "2026-04-27T08:15:00Z"
+    },
+    {
+      "id": "story-2026-04-27-14-005",
+      "headline": "Spot Solana ETF inflows collapse 92% to $34M in April, down from $419M November peak",
+      "slug": "solana-etf-inflows-collapse-92pct-april-2026",
+      "tldr": "Institutional appetite for SOL spot products has dried up alongside a five-month price slide and a confirmed death cross on the daily chart.",
+      "why_it_matters": "Why it matters: ETF flow has been the marginal SOL bid since launch — losing it leaves price discovery to retail and miners just as Firedancer hype peaks.",
+      "the_details": [
+        "SOL trades near $86.47 with a $49.8B market cap, ranking seventh among crypto assets and clinging to its 50-day MA at $85.30.",
+        "Daily chart shows a death cross with the 200-day MA at $131.20, its first since the 2024 cycle bottom.",
+        "Spot SOL ETFs absorbed just $34M in April vs. $419M in November 2025, a 92% drop across a six-month window."
+      ],
+      "source": "Spoted Crypto / CoinMarketCap",
+      "source_url": "https://www.spotedcrypto.com/solana-avax-l1-bottom-april-2026/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-27T07:00:00Z"
     }
   ]
 }

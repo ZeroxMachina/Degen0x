@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-015",
+    "type": "news",
+    "title": "📰 BTC reclaims $79K as Iran peace proposal flips Fear & Greed from 33 to 47",
+    "message": "Bitcoin pushed back to $79,124 Monday as a weekend Iran peace proposal lifted risk appetite ahead of this week's Fed meeting.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-014",
     "type": "news",
     "title": "📰 Bitcoin stalls at $80K as $5B USDT liquidity meets oil-driven selloff",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "📰 Aave Stares Down $195M Bad Debt After Kelp Hacker Borrows Against Stolen rsETH",
     "message": "Aave is quantifying how much bad debt it now holds after the Kelp DAO exploiter used stolen rsETH as collateral to borrow roughly $195 million in ETH.",
-    "actionUrl": "/news",
-    "date": "2026-04-20"
-  },
-  {
-    "id": "feed-2026-04-20-005",
-    "type": "news",
-    "title": "📰 Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",
-    "message": "Web infra giant Vercel disclosed a security incident that may have exposed customer API keys, triggering a scramble across crypto teams to rotate credentials.",
     "actionUrl": "/news",
     "date": "2026-04-20"
   }
