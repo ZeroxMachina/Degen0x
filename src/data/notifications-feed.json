@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-002",
+    "type": "news",
+    "title": "📰 Bitcoin-USD correlation hits -0.90, most negative since 2022",
+    "message": "BTC's 30-day correlation with the U.S. Dollar Index has flipped to -0.90, the deepest inverse reading in nearly four years.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-001",
     "type": "news",
     "title": "📰 Schwab opens spot BTC and ETH trading to retail brokerage clients",
