@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T05:08:00Z",
-  "briefing_id": "briefing-2026-04-27-05",
+  "generated_at": "2026-04-27T06:06:00Z",
+  "briefing_id": "briefing-2026-04-27-06",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-05-001",
-      "headline": "SEC and CFTC officially label BTC, ETH, SOL, XRP and LINK as digital commodities",
-      "slug": "sec-cftc-digital-commodities-interpretation",
-      "tldr": "A joint SEC-CFTC interpretation classifies the five biggest tokens as commodities and lays out a unified taxonomy for stablecoins, collectibles and digital securities.",
-      "why_it_matters": "Why it matters: Years of jurisdictional limbo end overnight — exchanges, ETF issuers and DeFi front-ends now have a defensible legal basis for listing the assets driving 75% of crypto volume.",
+      "id": "story-2026-04-27-06-001",
+      "headline": "Lazarus Group fingered in $620M April hack wave — Drift and Kelp DAO drove 95%",
+      "slug": "lazarus-group-april-2026-hack-wave",
+      "tldr": "April crypto theft hits roughly $620M, with two North Korea-linked exploits accounting for about $577M of the stolen funds.",
+      "why_it_matters": "Why it matters: DPRK is now harvesting crypto faster than US sanctions can squeeze it, signaling DeFi's human-layer is the new attack surface.",
       "the_details": [
-        "SEC press release 2026-30 names BTC, ETH, SOL, XRP and LINK as digital commodities under CFTC purview.",
-        "Companion MOU 2026-26 splits oversight: SEC keeps tokenized securities, CFTC takes commodities and spot markets.",
-        "Comes a day after Atkins' one-year anniversary speech reframing SEC posture from 'enforcement-heavy' to 'rulemaking mode'."
+        "Drift Protocol lost $285M on April 1 after attackers spent months posing as a trading firm to social-engineer internal teams.",
+        "Kelp DAO drained for $292M on April 18, stranding wrapped ether across 20 chains in 2026's worst DeFi exploit.",
+        "April is the worst single hack month since Bybit's February 2025 incident, per Phemex and Live Bitcoin News tallies."
       ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-27T06:06:00Z"
+    },
+    {
+      "id": "story-2026-04-27-06-002",
+      "headline": "Strategy buys 34,164 BTC for $2.54B — biggest haul since 2024, hoard hits 815K",
+      "slug": "strategy-2-5-billion-bitcoin-buy-april-2026",
+      "tldr": "Michael Saylor's Strategy added 34,164 bitcoin for $2.54 billion, its largest single acquisition since 2024.",
+      "why_it_matters": "Why it matters: One corporate buyer just absorbed roughly two weeks of net new bitcoin issuance, tightening float as the Fed keeps rates sticky.",
+      "the_details": [
+        "Purchase brings Strategy's stack to 815,061 BTC, putting the position back into modest unrealized profit.",
+        "Buy coincided with $1.4B in weekly global crypto fund inflows, led by BTC and ETH products.",
+        "BTC briefly tagged $78K on the news plus Trump's Iran ceasefire extension before fading near $77.5K."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/22/bitcoin-climbs-to-usd77-500-on-trump-ceasefire-extension-strategy-s-usd2-5-billion-buy",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-27T06:06:00Z"
+    },
+    {
+      "id": "story-2026-04-27-06-003",
+      "headline": "CLARITY Act timeline slips into May as Tillis dashes Senate's April hopes",
+      "slug": "clarity-act-timeline-slips-may-2026",
+      "tldr": "Senator Thom Tillis told reporters the Senate market-structure compromise will not clear in April, pushing the bill into May.",
+      "why_it_matters": "Why it matters: Every week of slippage shrinks the 2026 legislative window and tilts crypto enforcement back toward an SEC still working from interpretive guidance.",
+      "the_details": [
+        "More than 100 crypto firms including Coinbase and Ripple have signed a letter pressing the Banking Committee to mark up the bill.",
+        "Negotiators previously claimed an 'agreement in principle' before April, but the legislative text remains unfinalized.",
+        "SEC and CFTC issued a joint 68-page interpretive release in March establishing a five-category token taxonomy."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/26/running-out-of-time-on-clarity-state-of-crypto",
       "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-27T03:30:00Z"
+      "timestamp": "2026-04-27T06:06:00Z"
     },
     {
-      "id": "story-2026-04-27-05-002",
-      "headline": "Aave nears 80% of $200M Kelp DAO bailout as Mantle and Aave DAO front $127M",
-      "slug": "aave-kelp-bailout-80-percent",
-      "tldr": "Aave has secured roughly $160M of the $200M needed to plug bad debt from the Kelp DAO exploit, with Mantle and the Aave DAO covering the bulk.",
-      "why_it_matters": "Why it matters: A coordinated DAO-led bailout — not a forced socialization of losses — sets a new template for how blue-chip DeFi handles cross-chain contagion.",
+      "id": "story-2026-04-27-06-004",
+      "headline": "Bhutan moves 250 BTC; 2026 outflows top $240M as treasury drops 73% from peak",
+      "slug": "bhutan-bitcoin-treasury-outflow-april-2026",
+      "tldr": "Bhutan moved another 250 BTC on April 13, pushing 2026 outflows above $240 million from its sovereign mining stash, per Arkham data.",
+      "why_it_matters": "Why it matters: Sovereign sellers like Bhutan and the German Bundeskasse remain a structural overhang against the institutional bid into Strategy and US ETFs.",
       "the_details": [
-        "Arkham data shows Mantle and Aave DAO contributed $127M of the $160M raised so far.",
-        "Lido, EtherFi and Aave founder Stani Kulechov are pledging additional ETH to close the gap.",
-        "Aave still nursed roughly $9B in withdrawals last week as users de-risked from cross-chain LRT exposure."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/business/2026/04/23/aave-rallies-defi-partners-to-contain-fallout-from-usd292-million-kelpdao-hack",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-27T01:15:00Z"
-    },
-    {
-      "id": "story-2026-04-27-05-003",
-      "headline": "Bitcoin tracking best month in a year as USDT supply hits $150B liquidity surge",
-      "slug": "bitcoin-best-month-usdt-150b",
-      "tldr": "BTC is up over 13% in April and holding above $77K, with Tether's USDT printing nearly $150B in circulation supply fueling the rebound.",
-      "why_it_matters": "Why it matters: Tether mints have historically led BTC rallies by 2-3 weeks — $5B of fresh USDT entering the system signals dry powder is still arriving, not exiting.",
-      "the_details": [
-        "BTC's 30-day correlation with the DXY sits at -0.90, the most negative print since 2022.",
-        "US-listed spot BTC ETFs logged their strongest week of inflows in a month.",
-        "$80K push stalled this weekend on rising oil prices tied to Strait of Hormuz tensions."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
-      "category": "bitcoin",
-      "impact": "high",
-      "timestamp": "2026-04-26T22:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-05-004",
-      "headline": "Solana's Alpenglow upgrade targets 150ms finality, an 80x speedup over current consensus",
-      "slug": "solana-alpenglow-150ms-finality",
-      "tldr": "Solana developers are coalescing around Alpenglow, a new consensus protocol that compresses finality from ~12.8 seconds today to roughly 150 milliseconds.",
-      "why_it_matters": "Why it matters: Sub-second finality is the technical gating item for institutional clearing, real-time payments and CEX-grade orderbook DEXs — closing Solana's last excuse-gap with TradFi rails.",
-      "the_details": [
-        "Alpenglow replaces Solana's TowerBFT/Proof-of-History combo with a faster two-phase voting scheme.",
-        "Comes alongside DoubleZero launching a Wall Street-grade real-time data feed on Solana.",
-        "Spot SOL ETFs notched another week of strong inflows; Goldman Sachs disclosed a major position."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
-      "category": "infrastructure",
-      "impact": "medium",
-      "timestamp": "2026-04-26T18:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-05-005",
-      "headline": "TOKEN2049 Dubai postponed to 2027 amid heightened UAE security risks",
-      "slug": "token2049-dubai-postponed-2027",
-      "tldr": "Organizers pushed TOKEN2049 Dubai's 2026 edition to 2027, citing escalating regional security concerns linked to ongoing US-Iran tensions.",
-      "why_it_matters": "Why it matters: The Gulf has been crypto's geopolitical safe-harbor — pulling the region's flagship event signals that even MENA capital flows could pause until the Strait-of-Hormuz risk dissipates.",
-      "the_details": [
-        "Event was set to draw 15,000+ attendees and was a centerpiece for Middle East deal flow.",
-        "Decision lands the same week BTC's $80K rally stalled on oil-driven inflation fears.",
-        "Singapore TOKEN2049 (Sept) and the new New York leg remain on schedule per organizers."
+        "Royal Government of Bhutan's holdings have collapsed roughly 73% from their October 2024 peak.",
+        "Movements track to centralized exchange deposit addresses, suggesting active distribution rather than internal rebalance.",
+        "Selling cadence has accelerated even as Strategy alone bought 34,164 BTC this month."
       ],
       "source": "The Block",
-      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
-      "category": "adoption",
+      "source_url": "https://www.theblock.co/post/397558/bhutan-moves-250-btc-as-2026-outflows-top-240-million-arkham-data",
+      "category": "bitcoin",
       "impact": "medium",
-      "timestamp": "2026-04-26T14:00:00Z"
+      "timestamp": "2026-04-27T06:06:00Z"
+    },
+    {
+      "id": "story-2026-04-27-06-005",
+      "headline": "Vercel breach sends crypto devs scrambling to rotate API keys",
+      "slug": "vercel-breach-crypto-api-key-scramble",
+      "tldr": "A security incident at hosting provider Vercel forced crypto teams to audit and rotate exposed API keys and deployment secrets across DeFi front ends.",
+      "why_it_matters": "Why it matters: Vercel hosts front ends for many DeFi protocols; leaked keys could enable RPC hijacks, dashboard defacement, or phishing redirects against retail users.",
+      "the_details": [
+        "CoinDesk reported the incident on April 20; affected teams rotated Infura, Alchemy and CoinGecko keys within hours.",
+        "Lands amid April's $620M hack tally where attackers increasingly target signing infra and access tokens, not Solidity bugs.",
+        "Reinforces the 2026 trend of off-chain platform compromise displacing on-chain smart-contract exploits as the top threat vector."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
+      "category": "security",
+      "impact": "medium",
+      "timestamp": "2026-04-27T06:06:00Z"
     }
   ]
 }
