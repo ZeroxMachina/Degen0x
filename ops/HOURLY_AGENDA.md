@@ -73,3 +73,26 @@
 ---
 
 **Return:** Hour 14: shipped briefing-13 only (Hour 13 standup MISSED), priority = T1 diagnose-briefing-14-stall + T2 ship-BUIDL-24h-breach + T3 design-polish-open-lane.
+
+---
+
+## ADDENDUM — Hour 14 DOUBLEFIRE (2026-04-27T14:28Z)
+
+**Trigger:** scheduled `degen-morning-standup` re-fired at 14:27:32Z — **6 min after** prior commit `ef6b0c2e4` (Hour 14 standup) at 14:25:31Z. Same UTC hour, same session. Per `project_publish_deploy_gate.md` memory, P1-doublefire is a known scheduler artifact; not a new T-watch.
+
+**State delta vs first fire (14:21Z entry → 14:28Z addendum):**
+
+- **Briefing-14:** still **NOT on origin/main** (origin tip remains `a063f6625` briefing-13). Now ~21min past expected 14:07Z cadence (vs 14+ min at first fire). T-NEWS-BRIEFING-CADENCE-BROKEN P1 deepening.
+- **Briefing-13 freshness:** 76min stale → **83min stale** (+7min). Still post-SLO breach.
+- **Master:** `ef6b0c2e4` (Hour 14 standup, ~3min old). Origin `a063f6625` (~82min old).
+- **Locks:** 2 stale (HEAD.lock + maintenance.lock, both 0B from 14:25 first-fire push artifacts) — cleared via mv-recipe at 14:28Z. T-LOCK-ESCALATION mechanism healthy 14-of-14.
+- **BUIDL queue:** unchanged `cdea9186f` 24.45h queued, P1.
+- **Hour 13 standup miss:** unchanged — still missed; no recovery commit possible (Hour 14 already shipped).
+
+**Action this re-fire:** **NO new agenda written** (per "never repeat last hour's agenda verbatim" guardrail; nothing has changed in 6 min that warrants a new T1/T2/T3 ranking). T1/T2/T3 from first fire **stand**. Doublefire logged here + in `hourly-log.csv` for runner-reliability forensics.
+
+**Why doublefire (working hypothesis):** Hour 13 missed-fire + Hour 14 first-fire-late + Hour 14 second-fire-on-time pattern is consistent with a **scheduler queue that flushed 1 deferred run** (the missed Hour 13) at the start of Hour 14, then fired the on-time Hour 14 run at its scheduled minute mark. That would explain both the Hour 13 miss AND this 6-min doublefire as **one root-cause event** (scheduler stall + deferred-flush) rather than two independent failures. Recommend: Jefe-shell check scheduler logs for Hours 13/14 to confirm or refute. **Not** filing a 3rd new incident this hour — counted under T-HOUR-STANDUP-MISSED P2.
+
+**Briefing-14 escalation gate:** if briefing-14 has **not** landed on origin by Hour 15 standup entry (~15:21Z, ~53min from now), T-NEWS-BRIEFING-CADENCE-BROKEN escalates from P1 to **P0 (incident demands human attention)** since this would represent **>2h continuous freshness-SLO breach** + **2 consecutive missed briefing windows** — far worse than any single-cycle anomaly in this run.
+
+**Return:** Hour 14 (doublefire #2): no new ship since 14:25Z first-fire; priority unchanged from first fire = T1 diagnose-briefing-14 + T2 ship-BUIDL + T3 design-polish-open-lane. Briefing-13 now 83min stale; briefing-14 ~21min late.
