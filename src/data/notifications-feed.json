@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-014",
+    "type": "news",
+    "title": "📰 Bitcoin stalls at $80K as $5B USDT liquidity meets oil-driven selloff",
+    "message": "BTC reversed from $79,500 Monday as a fresh oil surge triggered a broader crypto pullback, capping a four-week run that delivered its best monthly gains in a year.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-013",
     "type": "news",
     "title": "📰 Bitcoin 2026 opens in Vegas with FBI's Patel, acting AG Blanche keynoting Day 1",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "📰 Vercel Breach Forces Crypto Devs Into Emergency API Key Rotation",
     "message": "Web infra giant Vercel disclosed a security incident that may have exposed customer API keys, triggering a scramble across crypto teams to rotate credentials.",
-    "actionUrl": "/news",
-    "date": "2026-04-20"
-  },
-  {
-    "id": "feed-2026-04-20-004",
-    "type": "news",
-    "title": "📰 DeFi TVL Craters $13.2B in 48 Hours as Kelp Contagion Spreads Beyond Aave",
-    "message": "Total value locked across DeFi has plunged by $13.21 billion in two days, with the bleed extending past Aave into lending, restaking, and LRT markets.",
     "actionUrl": "/news",
     "date": "2026-04-20"
   }
