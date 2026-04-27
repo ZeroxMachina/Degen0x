@@ -31,6 +31,20 @@ If Jefe restores multi-agent runners (answer to Q1 of `ops/incidents/2026-04-20T
 
 Every task in §7 is executed by **the next standup cycle** directly — no queueing for non-existent agents. If a task requires destructive operations (rebase, reset, force-push, mass codemod), it MUST be explicitly gated on a Jefe answer and noted as such in the §Why block.
 
+### Standup-as-sole-executor (added 2026-04-27, Hour 03 — T-FORMAT-COLLAPSE landed)
+
+**Empirical evidence (Hours 22 → 03):** 7 consecutive ops/ commits succeed (the standup runner reliably writes and commits agenda + format + methodology files); 6 consecutive src/ strip attempts no-show (no `feat(og)` / `feat(seo)` / `fix(links)` commits land in the standup window even when down-shifted to single-file 6-reference edits). Build-cycle SLO: 7-of-13 cycles = 54%.
+
+**Doctrine:**
+
+- The standup runner is the **sole executor of record** for ops/-only tasks. There is no `build-cycle`, `design-polish`, or `community-growth` runner attached to this scheduler topology. Do NOT use those terms as task owners or column tags in `ops/HOURLY_AGENDA.md` — they generate queue buildup with no throughput.
+- src/ tasks MAY be scheduled but MUST carry an explicit "if no-show, route to <X>" fallback line (see § Execution-path gating).
+- Future restoration of multi-agent runners (Jefe-confirmed) re-opens the agent-assignment metadata path; until then, omit it.
+
+## Execution-path gating (added 2026-04-27, Hour 03)
+
+Every §Task that touches `src/` MUST include in its §How block a fallback line: **"If standup runner does not execute this within 1 cycle, route to <X>"** where `<X>` is one of: `human-shell`, `dedicated-build-runner`, `T-FORMAT-COLLAPSE-V2-deferred`. After 2 consecutive standup-runner no-shows on the same src/ task, that task MUST be retired from the standup runner and re-routed per its declared fallback. Do NOT keep re-scheduling; the prior 6-cycle carry-forward of the strip + 8th-cluster + JSON-LD three-fer is the documented anti-pattern this gate prevents.
+
 ## Priority renumbering
 
 Priorities renumber monotonically T1, T2, T3 each cycle. Do NOT preserve numbers across cycles — continuity lives in the "What shipped last hour" and §Incidents sections.

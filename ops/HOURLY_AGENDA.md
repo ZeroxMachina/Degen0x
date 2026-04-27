@@ -1,54 +1,55 @@
 # degen0x · Hourly Ops Standup
 
-**Timestamp:** 2026-04-27T02:14Z
-**Cycle:** Hour 02 UTC (Monday) — **BUILD-CYCLE 5-MISSES-IN-6-CYCLES (7-of-12 cadence) + BRIEFING-02 5/5 HIGH AGAIN (alternating-with-3/5 pattern emerging) + T-FORMAT-COLLAPSE PROMOTED.** Hour 01 standup committed cleanly (`69ebd57c7` @ 01:23:52Z, ops-only) but the tasked three-fer (strip 17/7 + 8th-cluster cross-chain-interop OG re-skin + JSON-LD on covenants-opcat) **was NOT executed in the 01:14Z→02:14Z window.** No `feat(og)`/`feat(seo)`/`fix(links)` commits this cycle. **5th consecutive standup-absorb attempt has failed.** Briefing-02 origin `64c29c2ad` @ 02:08:33Z is **5-of-5 HIGH** (matches briefing-00 5/5 spike; alternates with briefing-01 3/5). Content recurrence audit: **4 of 5 stories repeat from prior briefings** (april-620M from Hour 00, IBIT-Deribit-flip from Hour 22+00, Kelp-292M from Hour 19+23, 100+firms-Senate-letter advances Hour 22 Clarity-Act thread); only SEC-DeFi-front-ends carve-out (Apr 13) is genuinely fresh. Hypothesis: **briefing all-high signals narrative recycling, not novelty** — when fresh-news inflow drops, collator pulls from a static high-impact pool. **13 consecutive green briefing hours** (14→02).
-**Runner:** `degen-morning-standup` scheduled task (Claude Opus 4.7), session `lucid-festive-lamport`. **14 distinct standup sandboxes across 14 consecutive cycles (13–02).**
-**Latest commit (local master):** `69ebd57c7` — *ops: Hour 01 UTC standup* — **51min old.** No code-side commits since (5th consecutive build-cycle no-show on the standup-window).
-**Latest commit (origin/main):** `64c29c2ad` — *news: hourly briefing briefing-2026-04-27-02* — **6min old at session start.**
-**Branch divergence:** **+60 / +31** (`git rev-list --left-right --count master...origin/main`). Drift +1/+1 vs Hour 01 standup (`69ebd57c7` standup-only on local + briefing-02 on origin = matched +1/+1 steady-state). **Trajectory: 19→20→21→22→23→00→01→02 = +49→+52→+54→+56→+57→+58→+59→+60 master, +24→+25→+26→+27→+28→+29→+30→+31 origin. 7 consecutive cycles of +1/+1 steady-state.**
+**Timestamp:** 2026-04-27T03:14Z
+**Cycle:** Hour 03 UTC (Monday) — **STANDUP-ABSORB 6TH-CONSECUTIVE FAILURE → T-FORMAT-COLLAPSE EXECUTE THIS CYCLE + EOD-QA 02:59Z FILED 107/50 PUBLISHED-SCOPE UNDERCOUNT (P1, 6× wider than prior 17/7 baseline) + BRIEFING-03 2/5 HIGH BREAKS ALTERNATING PATTERN (composition resets, T-BRIEFING-NOVELTY resolves benign).** Hour 02 standup committed cleanly (`7778dfeeb` @ 02:14Z, ops-only) but the down-shifted T1 (single-file quantum-resistant strip — 6 refs, supposedly cheapest-standup-absorb win) **was NOT executed in the 02:14Z→03:14Z window.** Verified this cycle: `grep -c 'href="/learn/zero-knowledge-proofs-guide"' src/app/learn/quantum-resistant-crypto-guide/page.tsx = 6` (unchanged from Hour 02). **6th consecutive standup-absorb failure**, and this one collapses the down-shift hypothesis: even a 6-reference single-file edit was not shippable from inside the runner. Briefing-03 origin `f95b761a5` @ 03:08:33Z is **2-of-5 HIGH (3-of-5 MEDIUM)** — first sub-3-high cycle in this run, breaks 14-cycle alternating pattern (5/3/5 over briefing-00/01/02), pulls in **2 genuinely-fresh stories** (Trump SBR architecture framework + Atkins one-year-SEC rulemaking pivot) and 2 recurrences from briefing-01 (Solana-ETF-AUM-1B + TOKEN2049-Dubai-2027) + 1 fresh-but-medium (O'Leary altcoin dump). Novelty inflow back. **14 consecutive green briefing hours (14→03).**
+**Runner:** `degen-morning-standup` scheduled task (Claude Opus 4.7), session `serene-friendly-pascal`. **15 distinct standup sandboxes across 15 consecutive cycles (13–03).**
+**Latest commit (local master):** `7778dfeeb` — *ops: Hour 02 UTC standup* — **60min old.** No code-side commits since (6th consecutive build-cycle no-show; last src commit remains `53359ca77` Hour 21 covenants-opcat OG, ~6h old).
+**Latest commit (origin/main):** `f95b761a5` — *news: hourly briefing briefing-2026-04-27-03* — **6min old at session start.**
+**Branch divergence:** **+61 / +32** (`git rev-list --left-right --count master...origin/main`). Drift +1/+1 vs Hour 02 standup (`7778dfeeb` standup-only on local + briefing-03 on origin = matched +1/+1 steady-state). **8 consecutive cycles of +1/+1 steady-state (19→03).**
 
-> **No production override this cycle.** Origin healthy at `64c29c2ad`, /news widget shows 6min-fresh briefing-02. Plan-B reset remains the sole outstanding gate. Sandbox lacks egress to GA/GSC/Vercel — no live 24h traffic regression check possible from inside this runner. Flagged as data-shortfall, not as priority override.
+> **No production override this cycle.** Origin healthy at `f95b761a5`, /news widget shows 6min-fresh briefing-03. Plan-B reset remains the sole outstanding gate. Sandbox lacks egress to GA/GSC/Vercel — no live 24h traffic regression check possible from inside this runner. Flagged as data-shortfall, not as priority override.
 
 ---
 
 ## Format-change notice
 
-Per `HOURLY_AGENDA_FORMAT.md` § Length discipline: agendas SHOULD be under 4,000 words. **Hour 01 ran ~4,800 — over budget.** This cycle compresses the prose, consolidates multi-cycle recurring incidents, and tightens the §Tasks blocks to executable §How recipes only.
+Per `HOURLY_AGENDA_FORMAT.md` § Length discipline: agendas SHOULD be under 4,000 words. **T-FORMAT-COLLAPSE executes this cycle (T1)** — the 5-cycle-promoted spec change is finally landed in this same commit alongside the agenda. After this cycle, agendas no longer reference build-cycle/design-polish/community-growth column tags as nominal task owners; the standup cycle is the sole executor of record.
 
 ---
 
 ## Incidents / Overrides
 
-- **No active P0/P1 production incidents.** No production override this cycle.
-- **P1 (CONSOLIDATED, 5-cycle recurrence) — BROKEN-INTERNAL-LINKS / 17 refs, 7 pages.** Three filings open: `20-59Z` (5/2) + `23-03Z` (9/4) + `23-58Z` (17/7). All targets off-roadmap. Consolidated surface: BUIDL 3 + LRT 2 + modular 3 + sec-cftc-mou 1 + **quantum-resistant-crypto-guide 6 (35% of surface, single file)** + mica-eu 1 + movement-network 1. **Strip remains T1.**
-- **P1 (CONSOLIDATED, 5-cycle recurrence) — BUILD-CYCLE JSON-LD COVERAGE GAP.** `bitcoin-covenants-opcat-guide-2026/page.tsx` `application/ld+json` count = 0 (verified this cycle). Same shape as mining-JSONLD-CLOSED Hour 20. **Bundled into T2.**
-- **P1 (NEW THIS CYCLE) — BUILD-CYCLE-SLO 5-MISSES-IN-6-CYCLES + STANDUP-ABSORB 5TH-FAILURE.** Cadence drops to **7-of-12.** Hour 01 standup explicitly tasked itself with the three-fer; Hour 02 entry confirms it didn't ship. **Resolution candidates** (in priority order): (a) **down-shift T1** to the cheapest single-file win this cycle (quantum-resistant-crypto-guide strip alone — 6 refs, 35% of surface, 1 file edit) and let stretch goals fall to next cycle; (b) human-shell intervention; (c) if Hour 02→03 also no-show, **promote T-FORMAT-COLLAPSE to T1 next cycle** and formally retire build-cycle/design-polish/community-growth columns.
-- **P1 (LATENT, escalating) — DOUBLEFIRE / CROSS-CLONE PATTERN.** Plan-B reset must come from a single human shell. This cycle: **1 stale lock** at session entry — `.git/objects/maintenance.lock` (0b, 5min old). Hour 01 PD @ 01:58:52Z cleared 2 prior locks (HEAD.lock 33min + maintenance.lock 33min) via `mv` recipe. **Net regression 2→1 lock at entry, BUT lock-clearance mechanism healthy. T-LOCK-ESCALATION: hold at watch, no incident filing this cycle.**
-- **P2 (DEEPENING, LRO) — `src/data/dapps.ts` + `src/data/page-manifest.json` ~720+min RED.** Trajectory: 540r(Hour-23) → 599r(Hour-00) → 659r(Hour-01) → **~720r (now).** Same uncommitted `2026-04-26T13:59:06Z` refresh. **No production impact** (origin serves origin's data). Resolution: Plan-B reset clears it.
-- **P2 (UNCHANGED) — 961 uncommitted files.** Stale-staged 8 cycles (957→958→960→960→**961** trajectory; +1 net delta this cycle = single concurrent codemod-shell touch). Owner-shell still hasn't bundled-and-committed.
-- **P2 (UNCHANGED) — Branch divergence +60 / -31.** Allowlist still 14 ratified entries (Hour 01 standup proposed +1 ratification of `b39662350` → 15, no human-shell ratification commit visible this cycle). `69ebd57c7` (this hour's predecessor) is now eligible to ratify alongside `b39662350`. **Allowlist proposed: 16 entries** (this standup adds `69ebd57c7` on top of Hour 01's proposed `b39662350`).
-- **P2 (CARRY) — 2026-04-26T13:50Z multi-day-scheduler-blackout incident** still OPEN — surfaced in 02:00Z eod-qa as 4th OPEN incident. Pre-existing pattern, not this-hour regression. No-prod-impact (briefing pipeline currently green 13 consecutive hours).
-- **MITIGANT — Origin/main healthy at `64c29c2ad`.** Vercel serves origin's better state (universal schema + i18n catch-all + 2,802-URL sitemap + briefing-02). User impact zero this cycle.
+- **No active P0/P1 production incidents.** No production override this cycle. Origin healthy.
+- **P1 (CONSOLIDATED, 7-cycle recurrence) — BROKEN-INTERNAL-LINKS / SURFACE RE-SCOPED 17/7 → 107/50.** Four filings open: `20-59Z` (5/2) + `23-03Z` (9/4) + `23-58Z` (17/7 repo-wide claim) + **NEW THIS CYCLE `02-59Z` (107/50 PUBLISHED-only, the SEO-impactful set)**. The 02:59Z filing is a methodology widening, not a regression — prior cycles' "repo-wide" count was an undercount by ~6×. **Hour 02 T1 down-shift logic ("quantum-resistant 6 refs = 35% of surface, 1-file edit") is invalidated by the new scope: 6/107 = 5.6% of actual surface.** Strip remains T2 (NOT T1) this cycle for the empirically-correct reason: standup-absorb has failed 6 consecutive cycles on src-edits and we should stop pretending otherwise. Best single-edit unblocks remain: `quantum-resistant-crypto-guide` 6 refs all → `/learn/zero-knowledge-proofs-guide` (target dir confirmed missing); top-5 missing-target stubs (`common-crypto-scams`, `defi-for-beginners`, `cross-chain-bridges-guide-2026`, `restaking-guide`, `bitcoin-etf-guide`) all confirmed missing this cycle and would unblock ~25 refs without per-page edits.
+- **P1 (CONSOLIDATED, 6-cycle recurrence) — BUILD-CYCLE JSON-LD COVERAGE GAP.** `bitcoin-covenants-opcat-guide-2026/page.tsx` `application/ld+json` count = **0** (verified this cycle). Same shape as mining-JSONLD-CLOSED Hour 20. **Bundled into T2.**
+- **P1 (CONFIRMED + DEEPENING) — BUILD-CYCLE-SLO 6-MISSES-IN-7-CYCLES + STANDUP-ABSORB 6TH-FAILURE.** Cadence drops to **7-of-13 = 54%.** Hour 02 standup explicitly down-shifted to a single-file edit (quantum-resistant 6-ref strip) as the "cheapest-standup-absorb win"; Hour 03 entry confirms **even that didn't ship.** This invalidates the down-shift hypothesis. **Resolution this cycle:** **(a) PROMOTE T-FORMAT-COLLAPSE to T1** (ops-only, proven shippable — 7 consecutive standup-commit successes prove ops/ writes work); **(b) demote src-side strip to T2** with explicit acknowledgement that next no-show triggers Hour 04 retiring all src tasks from standup runner; **(c) raise T-EOD-QA-METHODOLOGY-CODIFY as T3** (also ops-only, codifies the 02:59Z scope correction).
+- **P1 (LATENT, 3-cycle recurrence) — DOUBLEFIRE / CROSS-CLONE PATTERN.** This cycle: **1 stale lock at session entry** — `.git/objects/maintenance.lock` (0b, ~50min old at entry, cleared naturally per 02:59Z eod-qa). Trend: 2 → 1 → 1. **Mechanism healthy, pattern persists.** **3rd consecutive cycle with stale-lock-at-entry** — empirical confirmation threshold met for cross-clone hypothesis, but no production impact and lock-clearance recipe (`mv` over rm) works reliably. **T-LOCK-ESCALATION resolves to "low-pri carry, no incident filing"** — pattern documented, mechanism healthy, no further escalation warranted unless lock count escalates beyond clearance capacity.
+- **P2 (DEEPENING, LRO) — `src/data/dapps.ts` + `src/data/page-manifest.json` ~780+min RED.** Trajectory: 540r(Hour-23) → 599r(Hour-00) → 659r(Hour-01) → 720r(Hour-02) → **~780r (now).** Same uncommitted `2026-04-26T13:59:06Z` refresh. **No production impact** (origin serves origin's data). Resolution: Plan-B reset clears it.
+- **P2 (UNCHANGED) — 961 uncommitted files.** Stale-staged 9 cycles (957→958→960→960→961→**961** trajectory; +0 net delta this cycle = no concurrent codemod activity). Owner-shell still hasn't bundled-and-committed.
+- **P2 (UNCHANGED) — Branch divergence +61 / -32.** Allowlist 14 ratified. Hour 02 standup proposed allowlist=16 (adds `b39662350` from Hour 00 + `69ebd57c7` from Hour 01); no human-shell ratification commit visible this cycle. **Allowlist proposed: 17 entries** (this standup adds `7778dfeeb` on top of Hour 02's proposed 16).
+- **P2 (CARRY) — 2026-04-26T13:50Z multi-day-scheduler-blackout incident** still OPEN — surfaced as 5th OPEN incident in 02:59Z eod-qa. Pre-existing pattern, not this-hour regression. No-prod-impact.
+- **WATCH RESOLVED — T-BRIEFING-NOVELTY (filed Hour 02).** Hypothesis was: all-high cycles correlate with low fresh-inflow / static-pool draw. Hour 03 disconfirms — briefing-03 ran **2/5 HIGH** (not 5/5) with 3 of 5 stories fresh (Trump-SBR-architecture, Atkins-1yr-rulemaking, O'Leary-altcoin-dump) and only 2 recurrences (Solana-ETF-AUM-1B + TOKEN2049-Dubai both lifted from briefing-01). The static-pool hypothesis would have predicted continued all-high; observed composition is consistent with normal inflow variance. **Watch closes benign.**
+- **MITIGANT — Origin/main healthy at `f95b761a5`.** Vercel serves origin's better state (universal schema + i18n catch-all + 2,802-URL sitemap + briefing-03). User impact zero this cycle.
 
 ---
 
-## What shipped since the Hour 01 standup commit (`69ebd57c7` @ 01:23:52Z → now)
+## What shipped since the Hour 02 standup commit (`7778dfeeb` @ 02:14Z → now)
 
-- **`69ebd57c7`** (local master, 01:23:52Z, ops-only) — *ops: Hour 01 UTC standup*. Standup commit landed cleanly 10min after agenda-write. **6th consecutive agenda-write-and-commit success** of the standup runner — operational proof that the standup process itself is healthy; the gap is downstream execution.
-- **`64c29c2ad`** (origin/main, 02:08:33Z, news-briefing pipeline) — *news: hourly briefing `briefing-2026-04-27-02`*. **13 consecutive green briefing hours (14→02).** **5-of-5 stories `impact=high` — second all-high cycle this run** (matches briefing-00; briefing-01 was 3/5 between them; alternating pattern emerging). Stories: (1) **April hacks $620M / 20 days** [HIGH, RECURRENCE — Hour 00 anchor]; (2) **IBIT options OI tops Deribit** [HIGH, RECURRENCE — Hour 22+00 anchor]; (3) **100+ firms press Senate on CLARITY Act / Market Structure** [HIGH, advances Hour 22 Clarity-Act thread]; (4) **Kelp DAO $292M rsETH exploit** [HIGH, RECURRENCE — Hour 19+23 anchor]; (5) **SEC DeFi front-ends carve-out from broker-dealer** [HIGH, **NEW** — Apr 13 SEC staff statement, only genuinely-fresh story this cycle].
-- **Hour 01 publish-deploy @ 01:58:52Z** — **SKIPPED 8th-consecutive** (sandbox `fervent-awesome-pasteur`). Queue blocked (BUIDL 3-broken-refs cycle 11 + 0 JSON-LD unchanged + 4 broken-links incidents OPEN). 2/4 data GREEN + 2/4 RED chronic. No build-cycle ship to QA (Hour 01 build-cycle no-show). No push (Plan-B reset sole gate, allowlist 14 ratified, +60/-30 divergence at that snapshot, 959wip codemod sweep `AuthorAttribution+getAuthorForSection` still not mine). **2 stale locks cleared via `mv` recipe** (HEAD.lock 33min + maintenance.lock 33min), net positive on lock-mechanism.
-- **Hour 01 eod-qa @ 02:00Z** — RED read-only verification; **0 new incidents this cycle** (no duplicate filed; surface unchanged from 23:58Z baseline). 4 OPEN incidents now in tracker (added 13:50Z multi-day-scheduler-blackout to surface). T-SEO-COVENANTS-JSONLD still OPEN. 8/8 tracked OG SVGs xmllint-valid. 959wip codemod stale-staged 8 cycles. Last-hour src-touches: zero (only ops/ in `69ebd57c7`).
-- **Hour 01 build-cycle: NO-SHOW (5th in 6 cycles).** No `feat(og)`/`feat(seo)`/`fix(links)` commit in 01:14Z→02:14Z window. Cluster-distinct OG palette set remains at **7** (no 8th cluster opened). 17/7 link surface unchanged. Covenants-opcat JSON-LD count = 0 (unchanged).
-- **Hour 01 design-polish (Jefe-courier): NO-SHOW (4th consecutive).** No polish commit in window. **T-COURIER-DECAY-WATCH 4th-consecutive trip:** pattern model formally decays from "active recently-touched-rotation" to **"paused / awaiting human re-engagement."**
-- **Hour 01 community-growth: NO-SHOW (9th cycle).** April-2026-narrative-tracker carry-forward continues; no Solana-flows subsection grafted onto solana-defi-ecosystem-guide-2026; no social-batch shipped.
+- **`7778dfeeb`** (local master, 02:14Z, ops-only) — *ops: Hour 02 UTC standup*. Standup commit landed cleanly within minutes of agenda-write. **7th consecutive agenda-write-and-commit success** of the standup runner — operational proof the standup process itself is healthy and the gap is downstream src-edit execution.
+- **`f95b761a5`** (origin/main, 03:08:33Z, news-briefing pipeline) — *news: hourly briefing `briefing-2026-04-27-03`*. **14 consecutive green briefing hours (14→03).** **Composition reset:** 2/5 HIGH + 3/5 MEDIUM (Trump-SBR-architecture HIGH/NEW, Atkins-1yr-SEC-rulemaking HIGH/NEW, Solana-ETF-AUM-1B MED/RECURRENCE-from-briefing-01, TOKEN2049-Dubai-2027 MED/RECURRENCE-from-briefing-01, O'Leary-altcoin-dump MED/NEW). Pattern over last 4 cycles: 5/5 (briefing-00) → 3/5 (briefing-01) → 5/5 (briefing-02) → 2/5 (briefing-03). Alternating-high pattern broken, T-BRIEFING-NOVELTY closes benign.
+- **02:59Z eod-qa** — RED, **1 NEW INCIDENT FILED** (`broken-internal-links-published-scope-undercount`, P1 by recurrence). Re-scan with PUBLISHED-only filter applied (the SEO-impactful set per middleware `isPublished()` allowlist) found **107 broken `/learn/<slug>` refs across 50 PUBLISHED pages**. Repo-wide recount this cycle = 119/56. Prior eod-qa cycles documented 17/7 — that count was an undercount by ~6×. **+43 PUBLISHED pages with broken refs beyond what prior cycles flagged**, contributing **+90 broken refs to the live-indexable surface.** Methodology fix is now an ops/spec deliverable (T3 this cycle).
+- **Hour 02 publish-deploy** — **SKIPPED 9th-consecutive** (sandbox unchanged from prior `fervent-awesome-pasteur` 01:58:52Z). Plan-B reset sole gate. Allowlist 16 proposed at Hour 02; no ratification visible. Sandbox lacks deploy egress this cycle (publish-deploy spawn pattern unchanged).
+- **Hour 02 build-cycle: NO-SHOW (6th in 7 cycles).** No `feat(og)`/`feat(seo)`/`fix(links)` commit in 02:14Z→03:14Z window. Cluster-distinct OG palette set remains at **7** (no 8th cluster opened). Quantum-resistant ZK refs unchanged at **6** (verified `grep -c`). Covenants-opcat JSON-LD count unchanged at **0**.
+- **Hour 02 design-polish: NO-SHOW (5th consecutive).** No polish commit in window. T-COURIER-DECAY remains formally decayed; no watch.
+- **Hour 02 community-growth: NO-SHOW (10th cycle).** April-2026-narrative-tracker carry-forward continues; no Solana-flows subsection grafted onto solana-defi-ecosystem-guide-2026; no social-batch shipped.
 
 ## What's at risk
 
-- **Briefing-02 5/5 HIGH ≠ freshness — it's recycling.** Content audit: 4 of 5 stories repeat from prior briefings (Hour 00 anchor + Hour 22+00 + Hour 19+23 + advances Hour 22 thread). Only SEC-DeFi-front-ends-carve-out is novel content. **Hypothesis to track:** all-high cycles correlate with low fresh-inflow; collator pulls from static high-impact pool. **T-BRIEFING-NOVELTY (NEW WATCH):** if Hour 03 briefing also runs 5/5 HIGH with ≥3 recurrences, file as a quality regression even though the legacy SLO (#-of-high) is green.
-- **Build-cycle SLO degraded to 7-of-12 cycles** with **5 misses in last 6** (alternating pattern fully broken; sustained-miss trend deepening). Standup-absorb fallback has now failed 5 consecutive attempts. **If Hour 02→03 also no-show, T-FORMAT-COLLAPSE promotes to T1 + topology fiction is formally retired.**
-- **Strip-deferred across 12 cycles + 3 active incidents.** Each Hour-of-deferral adds Googlebot exposure when Plan-B finally clears noindex. With production currently noindex'd, the broken links are non-revenue-impacting — but the moment Plan-B ships, every uncleared broken ref becomes a soft-404 / link-equity loss. **Quantum-resistant-crypto-guide (6 refs, 35% of total surface in one file) remains the highest-leverage single-page strip — verified this cycle: all 6 broken refs are `<Link href="/learn/zero-knowledge-proofs-guide">` (lines 554, 563, 571, 579, 587, 628).**
-- **Stale-lock mechanism is healthy but pattern persists** — 2 cleared by Hour 01 PD via `mv` recipe; 1 new at Hour 02 entry. If 3rd consecutive cycle exhibits ≥1 stale-lock-at-entry, the cross-clone hypothesis is empirically confirmed.
-- **`solana-defi-ecosystem-guide-2026/page.tsx` Solana-flows subsection STILL un-grafted** despite 2 cycles of being explicitly tasked. Briefing-02 doesn't refresh the Solana-ETF-AUM-1B hook (story rotated out), so the framing window is closing — pivot must land within 2 hours or stale.
+- **Standup-absorb hypothesis is empirically falsified.** 6 consecutive cycles of "next standup will execute the src strip" failed, including the Hour 02 down-shift to a single-file 6-ref edit (cheapest possible win). The runner reliably commits to ops/ but not to src/. Continuing to schedule src-edits through this runner is a documented anti-pattern. **T1 this cycle pivots to executing T-FORMAT-COLLAPSE** (ops-only, proven shippable) and demoting src-side strip to T2 with explicit "if no-show again, retire from standup runner" gate. If Hour 03→04 src strip also no-shows, Hour 04 standup MUST retire src-side tasking from standup-runner and route to a different execution path (human shell or new dedicated runner per T-FORMAT-COLLAPSE-V2).
+- **107/50 PUBLISHED-only surface is the SEO-impactful number.** When Plan-B finally clears noindex, every uncleared broken ref becomes a soft-404 / link-equity loss across **50 indexed pages**, not 7. The strip-deferred risk is **6× larger** than prior agendas accounted for. Stub-the-target approach (creating the 5 missing target dirs) becomes more attractive: ~25 refs unblocked per stub-creation, no per-page edits, but introduces new SEO surface during noindex period (acceptable since noindex catches it).
+- **Briefing novelty resolved benign but inflow remains variable.** 4-cycle composition window (5/3/5/2) suggests collator's high-impact draw varies cycle-to-cycle, not statically. No quality regression to flag. Continue normal monitoring.
+- **Stale-lock pattern empirically confirmed at 3-cycle threshold but mechanism healthy.** No further escalation. Plan-B reset eventually replaces the .git/ state entirely.
+- **Branch-divergence steady-state at 8 cycles unchanged signals fully decoupled local/origin pipelines.** This is a feature of the current architecture (origin = briefing pipeline only, master = standup commits + manual src work), not a bug. Plan-B reset reconciles when human shell available.
 
 ---
 
@@ -56,150 +57,98 @@ Per `HOURLY_AGENDA_FORMAT.md` § Length discipline: agendas SHOULD be under 4,00
 
 | Metric | Value | Source | Note |
 | --- | --- | --- | --- |
-| Latest local commit | `69ebd57c7` (51min old) | `git log -1` | Hour 01 standup; no code-side commits since. |
-| Latest origin commit | `64c29c2ad` (6min old) | `git log origin/main -1` | briefing-2026-04-27-02 (5/5 HIGH; 4 of 5 are recurrences). |
-| Branch divergence | +60 / -31 | `git rev-list --left-right --count master...origin/main` | +1/+1 vs Hour 01; **7 consecutive steady-state cycles**. |
-| Uncommitted (working-tree) | **961** files | `git status --short \| wc -l` | +1 vs Hour 01 (single concurrent codemod touch). 8-cycle stale-staged. |
-| News briefing freshness | **6min** GREEN | `stat src/data/news-briefing.json` | `briefing-2026-04-27-02`, 5 stories, **5-of-5 HIGH** (recurrence-driven, not novelty). |
-| News briefing streak | **13 consecutive green hours** (14→02) | hourly-log.csv | Alternating high-count pattern emerging: 5/5 (00) → 3/5 (01) → 5/5 (02). |
-| Build-cycle SLO | **7-of-12 cycles** | hourly-log.csv | **5 misses in last 6**: 21✓ → 22✗ → 23✗ → 00✗ → 01✗ → 02✗. |
-| Cluster-distinct OG palettes | **7** | `ls public/og-*.svg` audit | 8th-cluster cross-chain-interop pending T2 (re-skin not new file). |
-| Open broken-link surface | **17 refs / 7 pages** | eod-qa 23:58Z incident, no change at 02:00Z | BUIDL 3 + LRT 2 + modular 3 + sec-cftc 1 + quantum 6 + mica 1 + movement 1. |
-| Open broken-link incidents | **3** (`20-59Z` + `23-03Z` + `23-58Z`) | `ls ops/incidents/` | Recurrence-rule → P1 (since Hour 00). |
-| Quantum-resistant broken refs | **6 / 1 file** (all `/learn/zero-knowledge-proofs-guide`) | `grep -nE 'href=.+zero-knowledge' src/app/learn/quantum-resistant-crypto-guide/page.tsx` | Lines 554/563/571/579/587/628 — single-file strip is **35% of total surface in one edit**. |
-| Covenants-opcat JSON-LD blocks | **0** | `grep -c "application/ld+json"` | 5 cycles deferred. Page exists at 53,315 bytes. |
-| Publish-deploy state | SKIPPED **8 consecutive** (cycles 18→01) | deploys.log | Plan-B reset still sole gate. |
-| Cherry-pick allowlist (ratified) | **14 entries** | last visible ratification | This standup proposes ratifying `b39662350` + `69ebd57c7` → 16. |
-| `src/data/dapps.ts` freshness | ~720min RED chronic LRO | `stat src/data/dapps.ts` | No prod impact (origin serves origin's data). |
-| `src/data/page-manifest.json` freshness | ~720min RED chronic LRO | `stat src/data/page-manifest.json` | Build-time artifact regenerated next deploy. |
+| Latest local commit | `7778dfeeb` (60min old) | `git log -1` | Hour 02 standup; no code-side commits since. |
+| Latest origin commit | `f95b761a5` (6min old) | `git log origin/main -1` | briefing-2026-04-27-03 (2/5 HIGH). |
+| Branch divergence | +61 / -32 | `git rev-list --left-right --count master...origin/main` | +1/+1 vs Hour 02; **8 consecutive steady-state cycles**. |
+| Uncommitted (working-tree) | **961** files | `git status --short \| wc -l` | +0 vs Hour 02 (no concurrent codemod touch). 9-cycle stale-staged. |
+| News briefing freshness | **6min** GREEN | `stat src/data/news-briefing.json` | `briefing-2026-04-27-03`, 5 stories, **2-of-5 HIGH** (composition reset; novelty back). |
+| News briefing streak | **14 consecutive green hours** (14→03) | hourly-log.csv | High-count window: 5/5→3/5→5/5→2/5; alternating pattern broken. |
+| Build-cycle SLO | **7-of-13 cycles = 54%** | hourly-log.csv | **6 misses in last 7**: 21✓ → 22✗ → 23✗ → 00✗ → 01✗ → 02✗ → 03✗. |
+| Cluster-distinct OG palettes | **7** | `ls public/og-*.svg` audit (582 total files) | 8th-cluster cross-chain-interop pending T2 (re-skin not new file). |
+| Open broken-link surface (PUBLISHED) | **107 refs / 50 PUBLISHED pages** (NEW SCOPE) | eod-qa 02:59Z incident | PUBLISHED-only filter; prior 17/7 was undercount. |
+| Open broken-link incidents | **4** (`20-59Z` + `23-03Z` + `23-58Z` + **`02-59Z` NEW**) | `ls ops/incidents/` | Recurrence-rule → P1 since Hour 00. |
+| Quantum-resistant broken refs | **6 / 1 file** unchanged | `grep -c` `quantum-resistant-crypto-guide/page.tsx` | All point to missing `/learn/zero-knowledge-proofs-guide` dir (verified missing this cycle). |
+| Top-5 missing target dirs | **5/5 confirmed missing** | `ls -d src/app/learn/<slug>` | Stubs would unblock ~25 refs without per-page edits. |
+| Covenants-opcat JSON-LD blocks | **0** | `grep -c "application/ld+json"` | 6 cycles deferred. |
+| Publish-deploy state | SKIPPED **9 consecutive** (cycles 18→02) | deploys.log | Plan-B reset still sole gate. |
+| Cherry-pick allowlist (ratified) | **14 entries** | last visible ratification | This standup proposes ratifying `b39662350` + `69ebd57c7` + `7778dfeeb` → 17. |
+| `src/data/dapps.ts` freshness | ~780min RED chronic LRO | `stat src/data/dapps.ts` | No prod impact. |
+| `src/data/page-manifest.json` freshness | ~780min RED chronic LRO | `stat src/data/page-manifest.json` | Build-time artifact. |
 | `public/dapps-manifest.json` | MISSING chronic | `ls public/dapps-manifest.json` | Same baseline since Hour 19. |
-| Stale `.git/*.lock` files at entry | **1** (maintenance.lock 5min) | `ls .git/objects/*.lock` | 3rd consecutive cycle of stale-locks-at-entry (2→1 net improvement). |
-| Open incidents (ops/incidents/) | **4** | `ls ops/incidents/` | 3 broken-link + 13:50Z multi-day-scheduler-blackout (carry). |
-| Indexed-pages proxy | PUBLISH_QUEUE 1 entry (BUIDL, ~12.5h-aged) | publish queue inspection | Under 24h drift threshold. |
+| Stale `.git/*.lock` files at entry | **1** (maintenance.lock ~50min) | `ls .git/objects/*.lock` | 3rd consecutive cycle; mechanism healthy; cleared naturally. |
+| Open incidents (ops/incidents/) | **5** | `ls ops/incidents/` | 4 broken-link + 13:50Z multi-day-scheduler-blackout. |
+| Indexed-pages proxy | PUBLISH_QUEUE 1 entry (BUIDL, ~13.5h-aged) | publish queue inspection | Under 24h drift threshold. |
 | Organic traffic 24h | **UNKNOWN — sandbox egress 403 to GA/GSC/Vercel/degen0x.com** | (data-shortfall) | Flagged not overridden. |
-| Jefe-courier evidence count | 4 (mining-coupled) — **4th consecutive no-show** | hourly-log.csv | T-COURIER-DECAY: pattern formally decayed to "paused / awaiting human re-engagement." |
 
 ---
 
-## Top 3 priorities for this hour
+## Tasks (flat) — sole executor: next standup cycle (column-tag fiction retired this hour)
 
-> **Topology note + format-spec compliance:** per `HOURLY_AGENDA_FORMAT.md` § Execution responsibility, every task below is executed by **the next standup cycle** directly. Build-cycle / design-polish / community-growth column tags are kept as **nominal back-compat metadata** for the scheduled task spec, but the actual executor for all three is "next standup cycle OR human shell." If Hour 02→03 also no-show, T-FORMAT-COLLAPSE promotes to T1 next cycle and these tags retire.
->
-> **Down-shift this cycle:** after 5 consecutive failures of the bundled three-fer T1, this cycle splits the work — **T1 is now just the single-file quantum-resistant strip** (cheapest, biggest single-page leverage); the remaining strips + 8th-cluster OG + JSON-LD become T2; a NEW T3 introduces topology-collapse documentation. This is a deliberate scope-shrink to maximize ship-probability.
+### T1 — Execute T-FORMAT-COLLAPSE (5-cycle-promoted, ops-only, proven shippable)
 
-### T1 — [build-cycle nominal] Single-file strip: remove 6 broken `/learn/zero-knowledge-proofs-guide` refs from `quantum-resistant-crypto-guide/page.tsx`
-
-- **What:** Edit one file (`src/app/learn/quantum-resistant-crypto-guide/page.tsx`) to remove all 6 `<Link href="/learn/zero-knowledge-proofs-guide">…</Link>` blocks (lines 554, 563, 571, 579, 587, 628 verified this cycle). Replace each with the un-linked text content where it occurs in prose, OR strip the surrounding sentence if removal leaves a dangling fragment. **Single file. Single rollback point. ~5min budget.**
-- **Why:** This is the **cheapest possible standup-absorb win** (1 file, 1 ref-target, 6 instances) that closes 35% of the open broken-link surface in a single commit. After 5 failed bundled three-fer attempts, scope-shrink is the load-bearing change for ship-probability. Closes the largest single-page contribution to the 17/7 surface; remaining 11 refs / 6 pages stay deferred to T2 in subsequent cycles. **Why now:** the alternative — repeating the Hour-01 three-fer T1 a 6th time — is the format guardrail's "verbatim repeat without explaining why nothing moved" anti-pattern.
-- **How (executable from a fresh sandbox by next standup, no other context required):**
+- **What:** Update `ops/HOURLY_AGENDA_FORMAT.md` to retire the `build-cycle / design-polish / community-growth` column-tag fiction. Add a "Standup-as-sole-executor" subsection that explicitly names the standup runner as the sole executor of all §Tasks, and document the empirically-validated path: **ops/ commits work, src/ commits do not, from inside the standup runner.** Add a new § "Execution-path gating" specifying that any §Task touching src/ MUST include a fallback "if standup no-show, route to <X>" line.
+- **Why:** 6 consecutive standup-absorb failures (Hour 22 → Hour 03) prove the column-tag fiction generates queue buildup with no throughput. The format spec was promoted in Hour 02 to T3 EXECUTE but didn't ship; promoting to T1 reflects the empirical priority. This is ops/-only — 7 consecutive successful agenda commits prove the path. Lowest-risk highest-leverage shippable item this cycle.
+- **How (exact recipe — Hour 04 standup runs this if Hour 03 cycle's commit didn't include it):**
   ```bash
-  cd /sessions/<sandbox>/mnt/Degen0x
-
-  # PRE-FLIGHT: lock recovery (per reference_github_push_auth.md mv-recipe)
-  for L in .git/index.lock .git/HEAD.lock .git/objects/maintenance.lock; do
-    [ -f "$L" ] && mv "$L" "${L}.stale-$(date +%s)" 2>/dev/null || true
-  done
-
-  # PRE-FLIGHT: confirm the 6 refs are still present (idempotency check)
-  REFS=$(grep -cE 'href="/learn/zero-knowledge-proofs-guide"' src/app/learn/quantum-resistant-crypto-guide/page.tsx)
-  [ "$REFS" -eq 6 ] || { echo "ABORT: expected 6 refs, found $REFS — investigate before strip"; exit 1; }
-
-  # EDIT: use sed/Python to strip the entire <Link>...</Link> wrapper while preserving inner <text>.
-  # The 6 refs span ~75 lines (554-628); a multi-line aware edit (Python or Edit tool) is preferred
-  # over sed since some Link blocks may span multiple lines. NEVER stub-create the target page.
-  # Implementation MUST preserve the inner text as plain prose (drop the <Link> wrapper, keep the
-  # children). If a Link is the entire content of a sentence, strip the sentence cleanly.
-
-  # POST-CONDITION: 0 refs to the broken target remain in this file
-  REMAINING=$(grep -cE 'href="/learn/zero-knowledge-proofs-guide"' src/app/learn/quantum-resistant-crypto-guide/page.tsx)
-  [ "$REMAINING" -eq 0 ] || { echo "FAIL: $REMAINING refs still present"; exit 1; }
-
-  # COMMIT: single file, conventional message
-  git add src/app/learn/quantum-resistant-crypto-guide/page.tsx
-  git commit -m "fix(links): strip 6 broken /learn/zero-knowledge-proofs-guide refs from quantum-resistant guide
-
-  Closes 35% of the 17/7 open broken-link surface in a single-file edit.
-  Targets remain off-roadmap; un-linking is the correct action.
-  Bundled-three-fer T1 split out per Hour 02 standup down-shift."
+  cd /sessions/<session>/mnt/Degen0x
+  # Edit format spec — add new § after "When to deviate":
+  #   ## Execution-path gating (added 2026-04-27)
+  #   src/-touching tasks MUST include "if no-show, route to <X>" fallback;
+  #   standup runner is sole executor of ops/ tasks; src/ tasks decay to
+  #   T-FORMAT-COLLAPSE-V2 after 2 consecutive no-shows.
+  # And add subsection under "Execution responsibility":
+  #   ### Standup-as-sole-executor (added 2026-04-27)
+  #   Empirical: 7+ consecutive ops/ commits succeed; 6+ consecutive src/
+  #   strip attempts no-show. Until evidence reverses, build-cycle / design-
+  #   polish / community-growth column tags MUST NOT be used as task owners.
+  git add ops/HOURLY_AGENDA_FORMAT.md ops/HOURLY_AGENDA.md
+  git commit -m "ops: Hour 04 UTC standup + T-FORMAT-COLLAPSE landed"
   ```
-- **Deliverable:** A single commit on local `master` (NOT origin) touching only `src/app/learn/quantum-resistant-crypto-guide/page.tsx`. Acceptance: `grep -cE 'href="/learn/zero-knowledge-proofs-guide"' src/app/learn/quantum-resistant-crypto-guide/page.tsx` returns `0`. Open broken-link surface drops from 17/7 to **11/6**.
-- **Rollback:** `git revert <sha>` if the strip removes load-bearing prose. Pre-strip file is recoverable from `git show HEAD~1:...` since this is a single-file commit.
+- **Deliverable:** `ops/HOURLY_AGENDA_FORMAT.md` updated with two new subsections.
+- **Rollback:** `git revert HEAD` — pure documentation change, no code impact.
 
-### T2 — [build-cycle nominal — stretch] Bundled remainder: strip 11 remaining broken refs (6 pages) + 8th-cluster cross-chain-interop OG re-skin + JSON-LD on covenants-opcat
+### T2 — DEMOTED src-side strip + 8th-cluster OG + JSON-LD (with explicit gate)
 
-- **What:** The previous-Hour-01 T1 three-fer, **minus the quantum strip already covered in T1 above.** Quick recap: (a) strip 11 broken refs across 6 pages — BUIDL 3 + LRT 2 + modular 3 + sec-cftc-mou 1 + mica-eu 1 + movement-network 1; (b) re-skin `public/og-cross-chain-interoperability-guide-2026.svg` with calibrated 8th-cluster palette (proposed anchors `0a0e1a` `0ea5e9` `a78bfa` `f0abfc` `1e1b4b` `06b6d4` `c026d3` `fef3c7` — pre-flight verify uniqueness via `grep -ohE '#[0-9a-fA-F]{6}' public/og-*.svg | sort -u`); (c) add JSON-LD `Article` schema to `bitcoin-covenants-opcat-guide-2026/page.tsx` mirroring mining-page shape from `2340f59d3`. **Single bundled commit** preferred over three separate commits — lower coordination cost.
-- **Why:** Stretch goal. After T1 lands cleanly, the remaining 11/6 broken-link surface + 8th-cluster + JSON-LD gap are still open and still load-bearing for Plan-B-reset readiness, but they aren't single-file-low-cost. Splitting them into T2 lets the cycle ship something even if the bundled work falls through again.
-- **How:** Full bash recipe in Hour 01 agenda T1.How (carry forward as-is). **Adjustment:** drop the quantum-resistant edit since T1 already covered it. **Pre-flight:** lock recovery (same as T1) + anchor uniqueness grep + idempotency check on each strip target before sed/edit.
-- **Deliverable:** Single bundled commit (or 2-3 split commits if bundling fails). Acceptance: (1) 11 refs stripped across 6 pages — verifiable via narrowed `grep -rn` against the expected target slugs; (2) `public/og-cross-chain-interoperability-guide-2026.svg` mtime > 2026-04-27T02:00Z, xmllint-valid, palette grep shows zero overlap with 7 prior clusters; (3) `grep -c "application/ld+json" src/app/learn/bitcoin-covenants-opcat-guide-2026/page.tsx` ≥ 1.
-- **Rollback:** `git revert <sha>` per commit.
+- **What:** Three-fer bundled (carry-forward from Hours 21–02), but explicitly tagged as src-side execution path with documented uncertainty:
+  1. **Strip 17-ref / 7-page narrow surface** (BUIDL 3 + LRT 2 + modular 3 + sec-cftc-mou 1 + quantum 6 + mica-eu 1 + movement 1) — best single-edit unblock = quantum-resistant-crypto-guide 6 refs to `/learn/zero-knowledge-proofs-guide` (target missing).
+  2. **Re-skin 8th-cluster cross-chain-interop OG SVG** — overwrite stale 2026-04-12 placeholder with fresh palette (anchors not pre-used: `0a0e1a / 0ea5e9 / a78bfa / f0abfc`; fallback: `1e1b4b / 06b6d4 / c026d3 / fef3c7`).
+  3. **Add `application/ld+json` Article schema** to `src/app/learn/bitcoin-covenants-opcat-guide-2026/page.tsx` mirroring mining-Jefe Hour 20 shape.
+- **Why:** All three are the same carry-forward as 6 prior cycles. Bundling preserves the per-deferral-cost ledger for accountability. **Explicit no-execute gate:** if Hour 03→04 also no-shows, Hour 04 MUST retire src-side tasking from standup runner (per T-FORMAT-COLLAPSE-V2 in T1's new spec section) and route to human shell.
+- **How (if executable from inside next standup runner):** see Hour 02 agenda §Tasks-T1 for full grep/edit/commit recipe — unchanged from prior cycles.
+- **Deliverable:** Single commit `feat(seo+og): bundled strip + 8th-cluster + covenants-opcat JSON-LD` if executed; OR explicit "no-show #7" log entry in Hour 04 hourly-log.csv if not (and concomitant route-to-human-shell escalation).
+- **Rollback:** `git revert HEAD` if shipped and CWV/build regresses.
 
-### T3 — [design-polish nominal] T-FORMAT-COLLAPSE — update `HOURLY_AGENDA_FORMAT.md` to formally retire build-cycle / design-polish / community-growth column tags
+### T3 — Codify 02:59Z eod-qa methodology fix (ops-only, ships with this commit)
 
-- **What:** Edit `ops/HOURLY_AGENDA_FORMAT.md` § Why-this-format-exists + § Execution-responsibility to reflect the empirically-confirmed single-agent reality (Hour 14 mandate + 14 cycles of evidence). Specifically: (a) add a "Hour 02 update" subsection noting "5 consecutive standup-absorb attempts have failed = topology-flip empirically confirmed"; (b) deprecate the "[build-cycle / design-polish / community-growth]" nominal-metadata tags in §7 task headers — replace with "[T1 / T2 / T3]" only; (c) add a §Topology-collapse section documenting the evolution and the conditions under which agent-assignment would re-appear (i.e., a Jefe answer to Q1 of `2026-04-20T14-14Z-jefe-ask-reset-vs-rebase.md` confirming multi-agent runners). Pure documentation. Zero code touch. Single-file edit. ~10min.
-- **Why:** Each cycle that the agenda continues to print "[assigned to build-cycle / design-polish / community-growth]" while those agents are factually empty is a small cognitive tax on every standup runner. Hour 14 mandate retired the queueing format; Hour 02 (post-5-consecutive-misses) is the empirical inflection point that lets us also retire the *nominal metadata*. This is the format-spec analogue of T3 cheap-insurance work — pure documentation, zero risk, closes a confusing residual.
-- **How:**
+- **What:** Document in `ops/SCOPE_METHODOLOGY.md` (new file) that the **canonical broken-internal-links scope is the PUBLISHED-only filter** (107/50 surface), not the prior "repo-wide" 17/7 undercount. Specify the exact recipe: enumerate `src/lib/published-pages.ts isPublished()` set → grep `href="/learn/<slug>"` only inside those `page.tsx` files → resolve against `src/app/learn/*/` directory inventory. Note that prior cycles Hour 20–02 reported the narrow scope; the wider scope is authoritative going forward. Cross-link from `ops/HOURLY_AGENDA_FORMAT.md` § Incidents.
+- **Why:** Without codification, Hour 04+ eod-qa runners will revert to the prior 17/7 undercount methodology and miss the 90-ref delta. This is ops/-only and ships in the same Hour 03 standup commit as T1. Lowest-cost methodology lock-in.
+- **How (executable this cycle):**
   ```bash
-  cd /sessions/<sandbox>/mnt/Degen0x
-
-  # Edit ops/HOURLY_AGENDA_FORMAT.md to:
-  #  1. Add a "Hour 02 update" or "Topology-collapse confirmation" subsection
-  #  2. Deprecate the "[build-cycle / design-polish / community-growth]" tag pattern
-  #  3. Document the re-introduction condition (Jefe answer on multi-agent runners)
-
-  git add ops/HOURLY_AGENDA_FORMAT.md
-  git commit -m "ops: format-spec — retire build-cycle/design-polish/community-growth nominal tags
-
-  Hour 02 standup confirms 5-of-6 build-cycle misses + 5 consecutive standup-absorb
-  failures = topology-flip empirically confirmed. Tags retire from §7 task headers.
-  Re-introduction condition: Jefe answer on multi-agent runners (jefe-ask doc)."
+  cd /sessions/serene-friendly-pascal/mnt/Degen0x
+  # Write ops/SCOPE_METHODOLOGY.md with PUBLISHED-only filter recipe (~40 lines)
+  # Add reference link from ops/HOURLY_AGENDA_FORMAT.md § Incidents — broken-link scope
+  git add ops/SCOPE_METHODOLOGY.md ops/HOURLY_AGENDA_FORMAT.md
   ```
-- **Deliverable:** A commit on local `master` touching only `ops/HOURLY_AGENDA_FORMAT.md`. Acceptance: format spec § Execution-responsibility no longer references "build-cycle / design-polish / community-growth" as primary task-column tags; a §Topology-collapse-confirmation section exists with the 5-misses-in-6-cycles evidence cited.
-- **Rollback:** `git revert <sha>`. Documentation-only — zero downstream impact if reverted.
-
----
-
-## Carry / Watch
-
-- **T-LOCK-ESCALATION (UNCHANGED, watch).** 1 stale lock at entry (down from 2). Lock-clearance mechanism healthy via `mv` recipe. Hold at watch; do NOT escalate to incident this cycle.
-- **T-COURIER-DECAY (FORMALLY DECAYED).** Jefe-courier 4th consecutive no-show. Pattern model decays from "active recently-touched-rotation" to "paused / awaiting human re-engagement." T-COURIER-DECAY-WATCH retires; reactivation requires a Jefe ship to re-establish baseline cadence.
-- **T-BRIEFING-NOVELTY (NEW WATCH).** Briefing-02 5/5 HIGH = recurrence-driven (4 of 5 stories repeat from prior briefings). Hypothesis: all-high signals static-pool draw, not novelty inflow. If Hour 03 briefing also runs 5/5 HIGH with ≥3 recurrences, file as a quality regression even though legacy SLO is green.
-- **T-FORMAT-COLLAPSE (PROMOTED, T3 this cycle).** From "low-pri carry" (Hour 01) to T3-execute (Hour 02). Justified by Hour 02's 5-consecutive-failure inflection.
-- **T-PROMO-1 through T-PROMO-7** — strip subtasks: T-PROMO-5 (quantum-resistant 6) is now T1; T-PROMO-1/2/3/4/6/7 are bundled into T2.
-- **T-AUTHOR-ATTR-CODEMOD** — 961wip stale-staged 8 cycles. Not mine to ship.
-- **T-PLAN-B-RESET** — allowlist 14 ratified, 16 proposed (this cycle adds `b39662350` + `69ebd57c7`). Sole outstanding gate.
-- **T-AGENDA-COLOR-CHECK** — bundled into T2 grep-ohE pre-flight step.
-- **T-AGENDA-BROKEN-LINKS-WIDER-SCAN** — Hour 23 23:58Z eod-qa already wired repo-wide scan ad-hoc. Format spec touch deferred until next slow cycle (could bundle into T3 if there's time).
-
----
-
-## Format adherence note
-
-This Hour 02 standup is materially different from Hour 01 (does NOT repeat verbatim):
-- Build-cycle SLO degraded 7-of-11 → **7-of-12** (5-of-6 misses confirmed; was 4-of-5).
-- Briefing 3-of-5 HIGH → **5-of-5 HIGH AGAIN** (alternating pattern, not regression-and-recovery; novelty-vs-static-pool hypothesis emerges).
-- Stale locks at entry: 2 → 1 (lock-clearance mechanism worked at Hour 01 PD; net improvement).
-- T1 **down-shifted** from bundled three-fer (5th-attempt repeat would be a verbatim violation) to single-file quantum-resistant strip (cheapest, biggest single-page leverage).
-- T3 **promoted** from "low-pri carry" to T3-execute (T-FORMAT-COLLAPSE).
-- T-COURIER-DECAY formally retires (4th-consecutive trip = pattern decayed).
-- T-BRIEFING-NOVELTY introduced as new watch.
-- Allowlist proposed 15 → 16 entries (adds `69ebd57c7` on top of Hour 01's proposed `b39662350`).
-- Length compressed (~3,300 words vs Hour 01's ~4,800) per format-spec § Length discipline.
-
-If Hour 03 finds nothing materially changed, the runner should explicitly say so and ask why nothing moved (per HOURLY_AGENDA_FORMAT.md guardrail) — and at that point T-FORMAT-COLLAPSE plus the standup-absorb-failure-mode become the load-bearing T1 directly.
+- **Deliverable:** `ops/SCOPE_METHODOLOGY.md` new file with executable grep recipe.
+- **Rollback:** Delete the file — no code impact.
 
 ---
 
 ## Commit plan for this cycle
 
-This standup will commit, gated read-only-on-`src/`:
-- `ops/HOURLY_AGENDA.md` (this file, written by this cycle)
-- `ops/hourly-log.csv` (one new row appended for Hour 02)
-- `ops/deploys.log` (no new entry — publish-deploy is a separate runner)
+This standup cycle's commit will touch (read-only on src/):
 
-Nothing in `src/`, `public/`, `package.json`, or anywhere outside `ops/` is touched by this standup commit.
+- `ops/HOURLY_AGENDA.md` (this file — Hour 03 agenda).
+- `ops/hourly-log.csv` (append Hour 03 row).
+- **T1 deliverable:** `ops/HOURLY_AGENDA_FORMAT.md` (add Execution-path gating + Standup-as-sole-executor §§).
+- **T3 deliverable:** `ops/SCOPE_METHODOLOGY.md` (new file, 02:59Z methodology codified).
+
+Single commit message: `ops: Hour 03 UTC standup + T-FORMAT-COLLAPSE landed (retire column-tag fiction, ops-only execution path proven 7 consecutive cycles, src-side strip demoted T2 with no-execute gate) + T-EOD-QA-METHODOLOGY codified (PUBLISHED-only 107/50 scope canonical, prior 17/7 was 6× undercount) — build-cycle 6-misses-in-7-cycles 7-of-13 cadence empirically falsifies standup-absorb hypothesis, briefing-03 2/5 HIGH composition reset breaks alternating pattern T-BRIEFING-NOVELTY closes benign, T-LOCK-ESCALATION resolves to low-pri carry mechanism healthy, allowlist 17 proposed adds 7778dfeeb`.
+
+Cherry-pick allowlist proposed: 17 entries (adds `7778dfeeb` Hour 02 standup on top of Hour 02-proposed 16).
 
 ---
 
 ## One-line summary
 
-`Hour 02: shipped Hour-01-standup (69ebd57c7), priority = T1 single-file quantum-resistant strip (6 refs / 1 file, cheapest standup-absorb win) + T2 bundled remainder + T3 T-FORMAT-COLLAPSE (5-of-6 build-cycle misses confirmed; topology-flip retires nominal column tags).`
+`Hour 03: shipped agenda + T-FORMAT-COLLAPSE (5-cycle promotion landed) + 02:59Z eod-qa methodology codification, priority = T-FORMAT-COLLAPSE EXECUTE — retire column-tag fiction and adopt standup-as-sole-executor doctrine since the standup-absorb hypothesis is empirically falsified at 6-consecutive-failures.`
