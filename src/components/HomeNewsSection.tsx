@@ -125,34 +125,34 @@ export default function HomeNewsSection({ initialBriefing }: HomeNewsSectionProp
     <div
       id="news"
       style={{ scrollMarginTop: "112px" }}
-      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-b border-[#1c1c1e]"
+      className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-b border-[var(--color-border)]"
     >
       {/* Section header */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
         <div>
           <div className="flex items-center gap-2 mb-2">
-            <span className="text-xs font-black tracking-widest uppercase text-[#f59e0b]">📰 News</span>
-            <span className="flex items-center gap-1.5 text-[10px] font-bold tracking-wider uppercase text-[#8e8e93]">
+            <span className="text-xs font-black tracking-widest uppercase text-[var(--color-accent)]">📰 News</span>
+            <span className="flex items-center gap-1.5 text-[10px] font-bold tracking-wider uppercase text-[var(--color-text-secondary)]">
               <span
                 className="w-1.5 h-1.5 rounded-full"
                 style={{
-                  background: isLive ? "#22c55e" : "#6366f1",
-                  boxShadow: isLive ? "0 0 8px #22c55e" : "none",
+                  background: isLive ? "var(--color-success, #22c55e)" : "var(--color-primary, #6366f1)",
+                  boxShadow: isLive ? "0 0 8px var(--color-success, #22c55e)" : "none",
                 }}
               />
               Live · Updated {formatGenerated(briefing.generated_at)}
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[var(--color-text)] tracking-tight">
             Hourly alpha. Zero fluff.
           </h2>
-          <p className="text-[#8e8e93] mt-2 max-w-lg">
+          <p className="text-[var(--color-text-secondary)] mt-2 max-w-lg">
             The {briefing.story_count} stories moving the market right now, distilled and updated every hour.
           </p>
         </div>
         <Link
           href="/news"
-          className="text-[#6366f1] font-semibold text-sm hover:underline whitespace-nowrap"
+          className="text-[var(--color-primary)] font-semibold text-sm hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] whitespace-nowrap"
         >
           All news →
         </Link>
@@ -163,7 +163,7 @@ export default function HomeNewsSection({ initialBriefing }: HomeNewsSectionProp
         {/* Hero (top story) */}
         <Link
           href={`/news/briefing/${top.slug}`}
-          className="lg:col-span-3 group relative overflow-hidden rounded-2xl bg-[#0f1013] border border-[#1c1c1e] p-6 sm:p-8 hover:border-[#f59e0b]/60 transition-all flex flex-col"
+          className="lg:col-span-3 group relative overflow-hidden rounded-2xl bg-[var(--color-bg-card)] border border-[var(--color-border)] p-6 sm:p-8 hover:border-[var(--color-accent)]/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-accent)] transition-all flex flex-col"
         >
           {/* Top meta */}
           <div className="flex items-center gap-2 mb-4 flex-wrap">
@@ -186,33 +186,33 @@ export default function HomeNewsSection({ initialBriefing }: HomeNewsSectionProp
             >
               {IMPACT_STYLES[top.impact].label}
             </span>
-            <span className="text-[10px] font-semibold uppercase tracking-wider text-[#636366]">
+            <span className="text-[10px] font-semibold uppercase tracking-wider text-[var(--color-text-secondary)]">
               {top.source} · {timeAgo(top.timestamp)}
             </span>
           </div>
 
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-white leading-tight group-hover:text-[#f59e0b] transition-colors">
+          <h3 className="text-2xl sm:text-3xl font-extrabold text-[var(--color-text)] leading-tight group-hover:text-[var(--color-accent)] transition-colors">
             {top.headline}
           </h3>
 
-          <p className="text-[#adadad] mt-3 text-base leading-relaxed">{top.tldr}</p>
+          <p className="text-[var(--color-text-secondary)] mt-3 text-base leading-relaxed">{top.tldr}</p>
 
-          <p className="text-[#8e8e93] mt-3 text-sm leading-relaxed italic">
+          <p className="text-[var(--color-text-secondary)] mt-3 text-sm leading-relaxed italic">
             {top.why_it_matters}
           </p>
 
           {top.the_details?.length > 0 && (
             <ul className="mt-4 space-y-1.5">
               {top.the_details.slice(0, 3).map((d, i) => (
-                <li key={i} className="flex gap-2 text-sm text-[#adadad]">
-                  <span className="text-[#636366]">•</span>
+                <li key={i} className="flex gap-2 text-sm text-[var(--color-text-secondary)]">
+                  <span className="opacity-50">•</span>
                   <span>{d}</span>
                 </li>
               ))}
             </ul>
           )}
 
-          <div className="mt-6 flex items-center gap-2 text-[#f59e0b] text-sm font-semibold">
+          <div className="mt-6 flex items-center gap-2 text-[var(--color-accent)] text-sm font-semibold">
             Read full briefing
             <span className="transition-transform group-hover:translate-x-0.5">→</span>
           </div>
@@ -224,7 +224,7 @@ export default function HomeNewsSection({ initialBriefing }: HomeNewsSectionProp
             <Link
               key={s.id}
               href={`/news/briefing/${s.slug}`}
-              className="group relative rounded-2xl bg-[#0f1013] border border-[#1c1c1e] p-4 hover:border-[#6366f1]/50 transition-all flex flex-col"
+              className="group relative rounded-2xl bg-[var(--color-bg-card)] border border-[var(--color-border)] p-4 hover:border-[var(--color-primary)]/50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] transition-all flex flex-col"
             >
               <div className="flex items-center gap-2 mb-2 flex-wrap">
                 <span
@@ -236,14 +236,14 @@ export default function HomeNewsSection({ initialBriefing }: HomeNewsSectionProp
                 >
                   {s.category}
                 </span>
-                <span className="text-[9px] font-semibold uppercase tracking-wider text-[#636366]">
+                <span className="text-[9px] font-semibold uppercase tracking-wider text-[var(--color-text-secondary)]">
                   {s.source} · {timeAgo(s.timestamp)}
                 </span>
               </div>
-              <h4 className="text-sm sm:text-base font-bold text-white leading-snug group-hover:text-[#818cf8] transition-colors">
+              <h4 className="text-sm sm:text-base font-bold text-[var(--color-text)] leading-snug group-hover:text-[var(--color-primary)] transition-colors">
                 {s.headline}
               </h4>
-              <p className="text-xs text-[#8e8e93] mt-1.5 line-clamp-2 leading-relaxed">
+              <p className="text-xs text-[var(--color-text-secondary)] mt-1.5 line-clamp-2 leading-relaxed">
                 {s.tldr}
               </p>
             </Link>
@@ -257,7 +257,7 @@ export default function HomeNewsSection({ initialBriefing }: HomeNewsSectionProp
           <Link
             key={cat}
             href={`/news#${cat}`}
-            className="px-3 py-1.5 rounded-lg text-xs font-medium bg-[#1c1c1e] border border-[#2c2c2e] text-[#8e8e93] hover:text-white transition-all capitalize"
+            className="px-3 py-1.5 rounded-lg text-xs font-medium bg-[var(--color-bg-card)] border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] transition-all capitalize"
             style={{ borderColor: `${categoryColor(cat)}30` }}
           >
             {cat}
