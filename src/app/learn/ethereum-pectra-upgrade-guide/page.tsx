@@ -10,14 +10,7 @@ import {
 } from "@/lib/structured-data";
 import { SITE_URL } from "@/lib/constants";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
-import RelatedContent from '@/components/RelatedContent';
-import LiveMiniStat from '@/components/LiveMiniStat';
-import AutoTOC from '@/components/AutoTOC';
-import ReadingTime from '@/components/ReadingTime';
-import LastUpdated from '@/components/LastUpdated';
 
-
-import AuthoritySources from "@/components/AuthoritySources";
 
 // ─── Metadata ────────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -142,70 +135,67 @@ export default function EthereumPectraUpgradeGuide() {
 
       {/* Badges */}
       <div className="flex gap-3 mb-4 mt-8">
-        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#6e40c9]/20 text-[#a371f7] border border-[#6e40c9]/30">
+        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[var(--color-primary)]/20 text-[var(--color-primary)] border border-[var(--color-primary)]/30">
           Ethereum
         </span>
-        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#1f6feb]/20 text-[#58a6ff] border border-[#1f6feb]/30">
+        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[var(--color-primary)]/20 text-[var(--color-primary)] border border-[var(--color-primary)]/30">
           Intermediate
         </span>
-        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[#3fb950]/20 text-[#3fb950] border border-[#3fb950]/30">
+        <span className="px-3 py-1 rounded-full text-xs font-semibold bg-[var(--color-success)]/20 text-[var(--color-success)] border border-[var(--color-success)]/30">
           🔔 Coming April 2026
         </span>
       </div>
 
       {/* Title */}
-      <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[#a371f7] to-[#58a6ff] bg-clip-text text-transparent">
+      <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-secondary)] bg-clip-text text-transparent">
         Ethereum Pectra Upgrade: Everything That Changes
       </h1>
-      <LastUpdated pathKey="/learn/ethereum-pectra-upgrade-guide" />
-      <ReadingTime />
-      <AutoTOC />
-      <p className="text-xl text-[#8b949e] mb-4">
+      <p className="text-xl text-[var(--color-text-secondary)] mb-4">
         Ethereum&rsquo;s biggest upgrade yet hits mainnet in April 2026. Smart wallets for everyone, validators up to 2048 ETH, cheaper L2 fees — here&rsquo;s your complete breakdown of all 11 EIPs and what they mean for you.
       </p>
-      <p className="text-sm text-[#8b949e] mb-8">
+      <p className="text-sm text-[var(--color-text-secondary)] mb-8">
         Updated March 2026 &middot; 13 min read
       </p>
 
       {/* Table of Contents */}
       <nav
         className="rounded-xl p-6 mb-10 border"
-        style={{ background: "#161b22", borderColor: "#30363d" }}
+        style={{ background: "var(--color-bg-card)", borderColor: "var(--color-border)" }}
       >
-        <h2 className="text-base font-semibold text-[#e6edf3] mb-4">📋 In This Guide</h2>
-        <ol className="space-y-2 text-sm text-[#58a6ff]">
-          <li><a href="#what-is-pectra" className="hover:underline">1. What Is the Pectra Upgrade?</a></li>
-          <li><a href="#eip-7702" className="hover:underline">2. EIP-7702: Native Account Abstraction — Smart Wallets for Everyone</a></li>
-          <li><a href="#eip-7251" className="hover:underline">3. EIP-7251: Raise the Validator Maximum to 2048 ETH</a></li>
-          <li><a href="#eip-7691" className="hover:underline">4. EIP-7691: Double Blob Throughput for Cheaper L2 Fees</a></li>
-          <li><a href="#other-eips" className="hover:underline">5. Other Key EIPs: Deposits, Withdrawals & More</a></li>
-          <li><a href="#impact-holders" className="hover:underline">6. Impact on ETH Holders</a></li>
-          <li><a href="#impact-stakers" className="hover:underline">7. Impact on Stakers & Validators</a></li>
-          <li><a href="#impact-devs" className="hover:underline">8. Impact on Developers & dApps</a></li>
-          <li><a href="#timeline" className="hover:underline">9. Upgrade Timeline & What Comes Next</a></li>
-          <li><a href="#faq" className="hover:underline">10. FAQ</a></li>
+        <h2 className="text-base font-semibold text-[var(--color-text)] mb-4">📋 In This Guide</h2>
+        <ol className="space-y-2 text-sm text-[var(--color-primary)]">
+          <li><a href="#what-is-pectra" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">1. What Is the Pectra Upgrade?</a></li>
+          <li><a href="#eip-7702" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">2. EIP-7702: Native Account Abstraction — Smart Wallets for Everyone</a></li>
+          <li><a href="#eip-7251" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">3. EIP-7251: Raise the Validator Maximum to 2048 ETH</a></li>
+          <li><a href="#eip-7691" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">4. EIP-7691: Double Blob Throughput for Cheaper L2 Fees</a></li>
+          <li><a href="#other-eips" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">5. Other Key EIPs: Deposits, Withdrawals & More</a></li>
+          <li><a href="#impact-holders" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">6. Impact on ETH Holders</a></li>
+          <li><a href="#impact-stakers" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">7. Impact on Stakers & Validators</a></li>
+          <li><a href="#impact-devs" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">8. Impact on Developers & dApps</a></li>
+          <li><a href="#timeline" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">9. Upgrade Timeline & What Comes Next</a></li>
+          <li><a href="#faq" className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">10. FAQ</a></li>
         </ol>
       </nav>
 
       {/* ─── Section 1 ──────────────────────────────────────────────────────────── */}
-      <h2 id="what-is-pectra" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">
+      <h2 id="what-is-pectra" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-4">
         1. What Is the Pectra Upgrade?
       </h2>
-      <p className="text-[#8b949e] mb-4">
-        <strong className="text-[#e6edf3]">Pectra</strong> combines two simultaneous Ethereum upgrades: the <strong className="text-[#e6edf3]">Prague</strong> execution layer hard fork and the <strong className="text-[#e6edf3]">Electra</strong> consensus layer upgrade — hence the portmanteau. It&rsquo;s the most ambitious Ethereum upgrade in history, shipping more EIPs in a single release than any predecessor.
+      <p className="text-[var(--color-text-secondary)] mb-4">
+        <strong className="text-[var(--color-text)]">Pectra</strong> combines two simultaneous Ethereum upgrades: the <strong className="text-[var(--color-text)]">Prague</strong> execution layer hard fork and the <strong className="text-[var(--color-text)]">Electra</strong> consensus layer upgrade — hence the portmanteau. It&rsquo;s the most ambitious Ethereum upgrade in history, shipping more EIPs in a single release than any predecessor.
       </p>
-      <p className="text-[#8b949e] mb-4">
-        The upgrade targets <strong className="text-[#e6edf3]">April 2026 mainnet activation</strong>, following a successful final testnet run in March 2026. Core developers confirmed on the most recent All Core Developers (ACD) call that the codebase is ready for production deployment.
+      <p className="text-[var(--color-text-secondary)] mb-4">
+        The upgrade targets <strong className="text-[var(--color-text)]">April 2026 mainnet activation</strong>, following a successful final testnet run in March 2026. Core developers confirmed on the most recent All Core Developers (ACD) call that the codebase is ready for production deployment.
       </p>
-      <p className="text-[#8b949e] mb-6">
-        Pectra doesn&rsquo;t change Ethereum&rsquo;s fundamental architecture — it&rsquo;s not a new consensus mechanism or tokenomics overhaul. Instead, it focuses on <strong className="text-[#e6edf3]">user experience, staker efficiency, and Layer 2 scalability</strong> — the three pillars of Ethereum&rsquo;s near-term roadmap.
+      <p className="text-[var(--color-text-secondary)] mb-6">
+        Pectra doesn&rsquo;t change Ethereum&rsquo;s fundamental architecture — it&rsquo;s not a new consensus mechanism or tokenomics overhaul. Instead, it focuses on <strong className="text-[var(--color-text)]">user experience, staker efficiency, and Layer 2 scalability</strong> — the three pillars of Ethereum&rsquo;s near-term roadmap.
       </p>
 
       <div
         className="rounded-xl p-5 mb-8 border"
-        style={{ background: "#161b22", borderColor: "#6e40c9" }}
+        style={{ background: "var(--color-bg-card)", borderColor: "var(--color-primary)" }}
       >
-        <p className="text-sm font-semibold text-[#e6edf3] mb-3">⚡ Pectra at a Glance</p>
+        <p className="text-sm font-semibold text-[var(--color-text)] mb-3">⚡ Pectra at a Glance</p>
         <div className="grid grid-cols-2 gap-4 text-sm">
           {[
             ["Upgrade Name", "Pectra (Prague + Electra)"],
@@ -216,8 +206,8 @@ export default function EthereumPectraUpgradeGuide() {
             ["Predecessor", "Dencun (March 2024, blobs)"],
           ].map(([label, value]) => (
             <div key={label}>
-              <p className="text-[#8b949e] text-xs mb-1">{label}</p>
-              <p className="text-[#e6edf3] font-medium">{value}</p>
+              <p className="text-[var(--color-text-secondary)] text-xs mb-1">{label}</p>
+              <p className="text-[var(--color-text)] font-medium">{value}</p>
             </div>
           ))}
         </div>
@@ -234,58 +224,58 @@ export default function EthereumPectraUpgradeGuide() {
 
 
       {/* ─── Section 2 ──────────────────────────────────────────────────────────── */}
-      <h2 id="eip-7702" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">
+      <h2 id="eip-7702" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-4">
         2. EIP-7702: Native Account Abstraction — Smart Wallets for Everyone
       </h2>
-      <p className="text-[#8b949e] mb-4">
-        EIP-7702 is the headline feature of Pectra and arguably the most user-facing Ethereum improvement in years. It lets any regular Ethereum wallet — called an <strong className="text-[#e6edf3]">Externally Owned Account (EOA)</strong> — temporarily behave like a smart contract for the duration of a single transaction.
+      <p className="text-[var(--color-text-secondary)] mb-4">
+        EIP-7702 is the headline feature of Pectra and arguably the most user-facing Ethereum improvement in years. It lets any regular Ethereum wallet — called an <strong className="text-[var(--color-text)]">Externally Owned Account (EOA)</strong> — temporarily behave like a smart contract for the duration of a single transaction.
       </p>
-      <p className="text-[#8b949e] mb-4">
+      <p className="text-[var(--color-text-secondary)] mb-4">
         Before Pectra, your MetaMask wallet was a simple address with a private key: one signature, one action. Smart contract wallets (like Safe or Argent) offered programmable features, but required setting up a new address and migrating your assets. EIP-7702 eliminates that friction entirely.
       </p>
 
       <div
         className="rounded-xl p-5 mb-6 border"
-        style={{ background: "#161b22", borderColor: "#30363d" }}
+        style={{ background: "var(--color-bg-card)", borderColor: "var(--color-border)" }}
       >
-        <p className="text-sm font-semibold text-[#e6edf3] mb-3">✨ What EIP-7702 Enables</p>
-        <ul className="text-sm text-[#8b949e] space-y-2 list-disc list-inside">
-          <li><strong className="text-[#e6edf3]">Transaction batching:</strong> Approve and swap in a single click instead of two separate transactions — saving time and gas</li>
-          <li><strong className="text-[#e6edf3]">Gas sponsorship:</strong> A dapp or employer can pay your Ethereum gas fees, enabling gasless UX for new users who don&rsquo;t hold ETH</li>
-          <li><strong className="text-[#e6edf3]">Passkey / biometric signing:</strong> Sign transactions with Face ID or Touch ID instead of seed phrases</li>
-          <li><strong className="text-[#e6edf3]">Social recovery:</strong> Designate trusted contacts to help recover access if you lose your key</li>
-          <li><strong className="text-[#e6edf3]">Sub-keys and spending limits:</strong> Create limited-permission keys for specific dapps without exposing your master key</li>
-          <li><strong className="text-[#e6edf3]">No address change:</strong> Your existing wallet address and all your assets stay exactly where they are</li>
+        <p className="text-sm font-semibold text-[var(--color-text)] mb-3">✨ What EIP-7702 Enables</p>
+        <ul className="text-sm text-[var(--color-text-secondary)] space-y-2 list-disc list-inside">
+          <li><strong className="text-[var(--color-text)]">Transaction batching:</strong> Approve and swap in a single click instead of two separate transactions — saving time and gas</li>
+          <li><strong className="text-[var(--color-text)]">Gas sponsorship:</strong> A dapp or employer can pay your Ethereum gas fees, enabling gasless UX for new users who don&rsquo;t hold ETH</li>
+          <li><strong className="text-[var(--color-text)]">Passkey / biometric signing:</strong> Sign transactions with Face ID or Touch ID instead of seed phrases</li>
+          <li><strong className="text-[var(--color-text)]">Social recovery:</strong> Designate trusted contacts to help recover access if you lose your key</li>
+          <li><strong className="text-[var(--color-text)]">Sub-keys and spending limits:</strong> Create limited-permission keys for specific dapps without exposing your master key</li>
+          <li><strong className="text-[var(--color-text)]">No address change:</strong> Your existing wallet address and all your assets stay exactly where they are</li>
         </ul>
       </div>
 
-      <p className="text-[#8b949e] mb-4">
-        Unlike ERC-4337 (the existing account abstraction standard), EIP-7702 is <strong className="text-[#e6edf3]">built directly into Ethereum&rsquo;s core protocol.</strong> It doesn&rsquo;t require the external bundler and paymaster infrastructure that ERC-4337 relies on — making it cheaper, more reliable, and easier for wallets to adopt.
+      <p className="text-[var(--color-text-secondary)] mb-4">
+        Unlike ERC-4337 (the existing account abstraction standard), EIP-7702 is <strong className="text-[var(--color-text)]">built directly into Ethereum&rsquo;s core protocol.</strong> It doesn&rsquo;t require the external bundler and paymaster infrastructure that ERC-4337 relies on — making it cheaper, more reliable, and easier for wallets to adopt.
       </p>
-      <p className="text-[#8b949e] mb-4">
+      <p className="text-[var(--color-text-secondary)] mb-4">
         EIP-7702 is also backward-compatible with ERC-4337, so existing smart wallet infrastructure continues to work. MetaMask, Rainbow, and Coinbase Wallet have all announced EIP-7702 support in time for Pectra mainnet.
       </p>
-      <p className="text-[#8b949e] mb-6">
-        The crypto community has dubbed this the <strong className="text-[#e6edf3]">&ldquo;iPhone moment&rdquo; for Ethereum wallets.</strong> For the first time, mainstream users won&rsquo;t need to understand gas, seed phrases, or transaction confirmations to use Ethereum dapps. This is the UX foundation Ethereum has been building toward since The Merge.
+      <p className="text-[var(--color-text-secondary)] mb-6">
+        The crypto community has dubbed this the <strong className="text-[var(--color-text)]">&ldquo;iPhone moment&rdquo; for Ethereum wallets.</strong> For the first time, mainstream users won&rsquo;t need to understand gas, seed phrases, or transaction confirmations to use Ethereum dapps. This is the UX foundation Ethereum has been building toward since The Merge.
       </p>
 
       {/* ─── Section 3 ──────────────────────────────────────────────────────────── */}
-      <h2 id="eip-7251" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">
+      <h2 id="eip-7251" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-4">
         3. EIP-7251: Raise the Validator Maximum to 2,048 ETH
       </h2>
-      <p className="text-[#8b949e] mb-4">
+      <p className="text-[var(--color-text-secondary)] mb-4">
         Since Ethereum&rsquo;s Merge in 2022, validators have been capped at 32 ETH effective balance — meaning any ETH above 32 in a validator&rsquo;s balance doesn&rsquo;t earn additional rewards. Large staking operators running thousands of ETH had to spin up dozens of separate 32 ETH validators, creating enormous operational overhead and straining network bandwidth with hundreds of thousands of attestations per slot.
       </p>
-      <p className="text-[#8b949e] mb-4">
-        <strong className="text-[#e6edf3]">EIP-7251 raises the maximum effective validator balance from 32 ETH to 2,048 ETH.</strong> A staking pool with 2,048 ETH can now run a single validator instead of 64. The benefits cascade in multiple directions:
+      <p className="text-[var(--color-text-secondary)] mb-4">
+        <strong className="text-[var(--color-text)]">EIP-7251 raises the maximum effective validator balance from 32 ETH to 2,048 ETH.</strong> A staking pool with 2,048 ETH can now run a single validator instead of 64. The benefits cascade in multiple directions:
       </p>
 
       <div className="overflow-x-auto mb-6">
         <table className="w-full text-sm border-collapse">
           <thead>
-            <tr className="border-b border-[#30363d]">
-              <th className="text-left py-3 px-4 text-[#e6edf3]">Before Pectra</th>
-              <th className="text-left py-3 px-4 text-[#e6edf3]">After Pectra (EIP-7251)</th>
+            <tr className="border-b border-[var(--color-border)]">
+              <th className="text-left py-3 px-4 text-[var(--color-text)]">Before Pectra</th>
+              <th className="text-left py-3 px-4 text-[var(--color-text)]">After Pectra (EIP-7251)</th>
             </tr>
           </thead>
           <tbody>
@@ -296,60 +286,61 @@ export default function EthereumPectraUpgradeGuide() {
               ["Auto-compounding requires exit + re-entry", "Compounding happens natively within the validator"],
               ["Network carries hundreds of thousands of attestations", "Significantly reduced attestation load on the network"],
             ].map(([before, after], i) => (
-              <tr key={i} className="border-b border-[#21262d]">
-                <td className="py-3 px-4 text-[#f85149] text-sm">{before}</td>
-                <td className="py-3 px-4 text-[#3fb950] text-sm">{after}</td>
+              <tr key={i} className="border-b border-[var(--color-border)]">
+                <td className="py-3 px-4 text-[var(--color-danger)] text-sm">{before}</td>
+                <td className="py-3 px-4 text-[var(--color-success)] text-sm">{after}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      <p className="text-[#8b949e] mb-6">
+      <p className="text-[var(--color-text-secondary)] mb-6">
         Validators can optionally consolidate: a large operator running 64 individual 32 ETH validators can merge them into a single 2,048 ETH validator. This is voluntary — existing 32 ETH validators continue to work without any changes. Compounding also becomes native: staking rewards that accumulate above 32 ETH now earn yield automatically, no manual exit and re-stake required. Model your compounding returns with the{" "}
-        <a href="/tools/staking-apy" className="text-[#58a6ff] hover:underline">Staking APY Calculator</a>.
+        <a href="/tools/staking-apy" className="text-[var(--color-primary)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">Staking APY Calculator</a>.
       </p>
 
       {/* ─── Section 4 ──────────────────────────────────────────────────────────── */}
-      <h2 id="eip-7691" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">
+      <h2 id="eip-7691" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-4">
         4. EIP-7691: Double Blob Throughput for Cheaper L2 Fees
       </h2>
-      <p className="text-[#8b949e] mb-4">
-        The Dencun upgrade (March 2024) introduced <strong className="text-[#e6edf3]">blobs</strong> — a special data availability layer that lets Ethereum Layer 2 rollups post transaction batches to Ethereum at a fraction of the previous cost. Dencun dropped L2 fees by 90%+ overnight.
+      <p className="text-[var(--color-text-secondary)] mb-4">
+        The Dencun upgrade (March 2024) introduced <strong className="text-[var(--color-text)]">blobs</strong> — a special data availability layer that lets Ethereum Layer 2 rollups post transaction batches to Ethereum at a fraction of the previous cost. Dencun dropped L2 fees by 90%+ overnight.
       </p>
-      <p className="text-[#8b949e] mb-4">
-        Pectra&rsquo;s <strong className="text-[#e6edf3]">EIP-7691 doubles blob capacity.</strong> The target number of blobs per block increases from 3 to 6 (average), with the maximum rising from 6 to 9. This directly benefits every major L2 — Arbitrum, Base, Optimism, Scroll, zkSync Era, and others — by providing more bandwidth at lower cost.
+      <p className="text-[var(--color-text-secondary)] mb-4">
+        Pectra&rsquo;s <strong className="text-[var(--color-text)]">EIP-7691 doubles blob capacity.</strong> The target number of blobs per block increases from 3 to 6 (average), with the maximum rising from 6 to 9. This directly benefits every major L2 — Arbitrum, Base, Optimism, Scroll, zkSync Era, and others — by providing more bandwidth at lower cost.
       </p>
 
       <div
-        style={{ background: "#161b22", borderColor: "#30363d" }}
+        className="rounded-xl p-5 mb-6 border"
+        style={{ background: "var(--color-bg-card)", borderColor: "var(--color-border)" }}
       >
-        <p className="text-sm font-semibold text-[#e6edf3] mb-3">📊 Blob Capacity: Before vs. After</p>
+        <p className="text-sm font-semibold text-[var(--color-text)] mb-3">📊 Blob Capacity: Before vs. After</p>
         <div className="grid grid-cols-3 gap-4 text-center text-sm">
           {[
             ["Pre-Dencun", "~$0.20–5.00", "Calldata"],
             ["Post-Dencun", "~$0.001–0.05", "Blobs (3 avg)"],
             ["Post-Pectra", "~30–40% lower", "Blobs (6 avg)"],
           ].map(([era, cost, method]) => (
-            <div key={era} className="rounded-lg p-4" style={{ background: "#0d1117" }}>
-              <p className="text-[#8b949e] text-xs mb-1">{era}</p>
-              <p className="text-[#e6edf3] font-bold text-lg mb-1">{cost}</p>
-              <p className="text-[#8b949e] text-xs">{method}</p>
+            <div key={era} className="rounded-lg p-4" style={{ background: "var(--color-bg)" }}>
+              <p className="text-[var(--color-text-secondary)] text-xs mb-1">{era}</p>
+              <p className="text-[var(--color-text)] font-bold text-lg mb-1">{cost}</p>
+              <p className="text-[var(--color-text-secondary)] text-xs">{method}</p>
             </div>
           ))}
         </div>
-        <p className="text-xs text-[#8b949e] mt-3">Approximate L2 transaction costs. Costs are variable and depend on network congestion.</p>
+        <p className="text-xs text-[var(--color-text-secondary)] mt-3">Approximate L2 transaction costs. Costs are variable and depend on network congestion.</p>
       </div>
 
-      <p className="text-[#8b949e] mb-6">
+      <p className="text-[var(--color-text-secondary)] mb-6">
         Cheaper L2 transactions compound with EIP-7702: once users can batch DeFi actions into single transactions <em>and</em> pay lower base fees on L2s, the cost of complex on-chain interactions drops dramatically. This is the combination Ethereum needs to compete with cheaper monolithic chains like Solana for retail users.
       </p>
 
       {/* ─── Section 5 ──────────────────────────────────────────────────────────── */}
-      <h2 id="other-eips" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">
+      <h2 id="other-eips" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-4">
         5. Other Key EIPs in Pectra
       </h2>
-      <p className="text-[#8b949e] mb-6">
+      <p className="text-[var(--color-text-secondary)] mb-6">
         Beyond the three headliners, Pectra ships eight additional EIPs that meaningfully improve the protocol:
       </p>
 
@@ -384,38 +375,38 @@ export default function EthereumPectraUpgradeGuide() {
           <div
             key={item.eip}
             className="rounded-xl p-5 border"
-            style={{ background: "#161b22", borderColor: "#30363d" }}
+            style={{ background: "var(--color-bg-card)", borderColor: "var(--color-border)" }}
           >
             <div className="flex items-center gap-3 mb-2">
-              <span className="text-xs font-bold px-2 py-1 rounded bg-[#1f6feb]/20 text-[#58a6ff] border border-[#1f6feb]/30">
+              <span className="text-xs font-bold px-2 py-1 rounded bg-[var(--color-primary)]/20 text-[var(--color-primary)] border border-[var(--color-primary)]/30">
                 {item.eip}
               </span>
-              <p className="text-sm font-semibold text-[#e6edf3]">{item.title}</p>
+              <p className="text-sm font-semibold text-[var(--color-text)]">{item.title}</p>
             </div>
-            <p className="text-sm text-[#8b949e]">{item.desc}</p>
+            <p className="text-sm text-[var(--color-text-secondary)]">{item.desc}</p>
           </div>
         ))}
       </div>
 
       {/* ─── Section 6 ──────────────────────────────────────────────────────────── */}
-      <h2 id="impact-holders" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">
+      <h2 id="impact-holders" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-4">
         6. Impact on ETH Holders
       </h2>
-      <p className="text-[#8b949e] mb-4">
-        If you hold ETH in a wallet or on an exchange, <strong className="text-[#e6edf3]">no action is required from you.</strong> Pectra activates at the protocol level — your ETH balance, wallet address, and private keys are entirely unaffected.
+      <p className="text-[var(--color-text-secondary)] mb-4">
+        If you hold ETH in a wallet or on an exchange, <strong className="text-[var(--color-text)]">no action is required from you.</strong> Pectra activates at the protocol level — your ETH balance, wallet address, and private keys are entirely unaffected.
       </p>
-      <p className="text-[#8b949e] mb-4">
+      <p className="text-[var(--color-text-secondary)] mb-4">
         The indirect benefits for holders are meaningful: EIP-7702 makes Ethereum wallets dramatically more user-friendly, lowering the barrier for new participants. EIP-7691&rsquo;s blob scaling keeps Ethereum competitive on L2 transaction costs. Together, these changes are designed to drive adoption — which historically correlates with ETH price appreciation.
       </p>
-      <p className="text-[#8b949e] mb-6">
+      <p className="text-[var(--color-text-secondary)] mb-6">
         For holders using liquid staking (Lido, Rocket Pool, etc.), the platforms will upgrade their validator infrastructure to take advantage of EIP-7251 and EIP-7002. You won&rsquo;t need to do anything — your stETH or rETH tokens continue to work exactly as before, and improved validator efficiency may marginally increase protocol-level yields over time.
       </p>
 
       {/* ─── Section 7 ──────────────────────────────────────────────────────────── */}
-      <h2 id="impact-stakers" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">
+      <h2 id="impact-stakers" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-4">
         7. Impact on Stakers & Validators
       </h2>
-      <p className="text-[#8b949e] mb-4">
+      <p className="text-[var(--color-text-secondary)] mb-4">
         Pectra is the biggest validator quality-of-life upgrade since the Merge. Here&rsquo;s what changes for solo stakers and institutional operators:
       </p>
 
@@ -453,12 +444,13 @@ export default function EthereumPectraUpgradeGuide() {
         ].map((group) => (
           <div
             key={group.audience}
-            style={{ background: "#161b22", borderColor: "#30363d" }}
+            className="rounded-xl p-5 border"
+            style={{ background: "var(--color-bg-card)", borderColor: "var(--color-border)" }}
           >
-            <p className="text-sm font-semibold text-[#e6edf3] mb-3">
+            <p className="text-sm font-semibold text-[var(--color-text)] mb-3">
               {group.icon} {group.audience}
             </p>
-            <ul className="text-sm text-[#8b949e] space-y-1 list-disc list-inside">
+            <ul className="text-sm text-[var(--color-text-secondary)] space-y-1 list-disc list-inside">
               {group.points.map((pt, i) => (
                 <li key={i}>{pt}</li>
               ))}
@@ -467,41 +459,41 @@ export default function EthereumPectraUpgradeGuide() {
         ))}
       </div>
 
-      <p className="text-[#8b949e] mb-6">
+      <p className="text-[var(--color-text-secondary)] mb-6">
         Track your staking APY and model consolidation scenarios with the{" "}
-        <a href="/tools/staking-apy" className="text-[#58a6ff] hover:underline">Staking APY Calculator</a>.
+        <a href="/tools/staking-apy" className="text-[var(--color-primary)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">Staking APY Calculator</a>.
         For a deep dive on how Ethereum validation works before and after Pectra, see our{" "}
-        <a href="/learn/validator-staking-guide" className="text-[#58a6ff] hover:underline">Ethereum Validator Staking Guide</a>.
+        <a href="/learn/validator-staking-guide" className="text-[var(--color-primary)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">Ethereum Validator Staking Guide</a>.
       </p>
 
       {/* ─── Validator Consolidation Calculator ─────────────────────────────────── */}
       <PectraValidatorCalc />
 
       {/* ─── Section 8 ──────────────────────────────────────────────────────────── */}
-      <h2 id="impact-devs" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">
+      <h2 id="impact-devs" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-4">
         8. Impact on Developers & dApps
       </h2>
-      <p className="text-[#8b949e] mb-4">
+      <p className="text-[var(--color-text-secondary)] mb-4">
         Pectra opens new design space for dapp developers that didn&rsquo;t exist before. EIP-7702 is the most transformative — it lets dapps offer gasless onboarding without complex ERC-4337 bundler infrastructure. A new user can land on your dapp, connect their wallet, and complete a transaction with gas sponsored by the protocol — without ever touching ETH.
       </p>
-      <p className="text-[#8b949e] mb-4">
+      <p className="text-[var(--color-text-secondary)] mb-4">
         Transaction batching means users can complete multi-step DeFi flows in a single click. A lending protocol can let users supply collateral and borrow in one transaction. A DEX can batch approvals with swaps. The UX patterns that required smart contract wallets yesterday become available to every EOA user.
       </p>
-      <p className="text-[#8b949e] mb-4">
-        The <strong className="text-[#e6edf3]">BLS12-381 precompile (EIP-2537)</strong> significantly reduces the cost of BLS signature verification on-chain — enabling cheaper ZK proof verification, more efficient cross-chain bridge designs, and threshold signature schemes. This matters for developers building advanced cryptographic applications on Ethereum.
+      <p className="text-[var(--color-text-secondary)] mb-4">
+        The <strong className="text-[var(--color-text)]">BLS12-381 precompile (EIP-2537)</strong> significantly reduces the cost of BLS signature verification on-chain — enabling cheaper ZK proof verification, more efficient cross-chain bridge designs, and threshold signature schemes. This matters for developers building advanced cryptographic applications on Ethereum.
       </p>
-      <p className="text-[#8b949e] mb-6">
+      <p className="text-[var(--color-text-secondary)] mb-6">
         For L2-focused developers, more blob capacity from EIP-7691 means less contention and more predictable data costs — improving the economics of rollup-based application chains. Learn more in our{" "}
-        <a href="/learn/layer-2-scaling-guide" className="text-[#58a6ff] hover:underline">Layer 2 Scaling Guide</a>{" "}
+        <a href="/learn/layer-2-scaling-guide" className="text-[var(--color-primary)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">Layer 2 Scaling Guide</a>{" "}
         and{" "}
-        <a href="/learn/account-abstraction" className="text-[#58a6ff] hover:underline">Account Abstraction Explained</a>.
+        <a href="/learn/account-abstraction" className="text-[var(--color-primary)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">Account Abstraction Explained</a>.
       </p>
 
       {/* ─── Section 9 ──────────────────────────────────────────────────────────── */}
-      <h2 id="timeline" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-4">
+      <h2 id="timeline" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-4">
         9. Upgrade Timeline & What Comes Next
       </h2>
-      <p className="text-[#8b949e] mb-6">
+      <p className="text-[var(--color-text-secondary)] mb-6">
         Pectra follows Ethereum&rsquo;s established testnets-first upgrade path:
       </p>
 
@@ -516,35 +508,35 @@ export default function EthereumPectraUpgradeGuide() {
           <div
             key={date}
             className="flex items-start gap-4 rounded-xl p-4 border"
-            style={{ background: "#161b22", borderColor: "#30363d" }}
+            style={{ background: "var(--color-bg-card)", borderColor: "var(--color-border)" }}
           >
             <div className="flex flex-col items-center gap-1 min-w-[80px]">
-              <span className="text-xs font-bold text-[#e6edf3]">{date}</span>
+              <span className="text-xs font-bold text-[var(--color-text)]">{date}</span>
               <span
                 className={`text-xs px-2 py-0.5 rounded-full ${
                   status === "completed"
-                    ? "bg-[#3fb950]/20 text-[#3fb950]"
+                    ? "bg-[var(--color-success)]/20 text-[var(--color-success)]"
                     : status === "upcoming"
-                    ? "bg-[#e3b341]/20 text-[#e3b341]"
-                    : "bg-[#30363d] text-[#8b949e]"
+                    ? "bg-[var(--color-accent)]/20 text-[var(--color-accent)]"
+                    : "bg-[var(--color-border)] text-[var(--color-text-secondary)]"
                 }`}
               >
                 {status}
               </span>
             </div>
-            <p className="text-sm text-[#8b949e]">{desc}</p>
+            <p className="text-sm text-[var(--color-text-secondary)]">{desc}</p>
           </div>
         ))}
       </div>
 
-      <p className="text-[#8b949e] mb-6">
-        After Pectra, the Ethereum roadmap continues with <strong className="text-[#e6edf3]">Fusaka</strong> — the next upgrade targeting{" "}
-        <strong className="text-[#e6edf3]">Verkle Trees</strong>, which will reduce the state proof size needed for light clients and stateless nodes. Beyond that, full Danksharding will push blob capacity into the hundreds per block. Ethereum&rsquo;s scaling roadmap is a multi-year journey, with Pectra representing a critical milestone that makes the network noticeably better for everyday users today. Follow progress on our{" "}
-        <a href="/tools/crypto-calendar" className="text-[#58a6ff] hover:underline">Crypto Calendar</a>.
+      <p className="text-[var(--color-text-secondary)] mb-6">
+        After Pectra, the Ethereum roadmap continues with <strong className="text-[var(--color-text)]">Fusaka</strong> — the next upgrade targeting{" "}
+        <strong className="text-[var(--color-text)]">Verkle Trees</strong>, which will reduce the state proof size needed for light clients and stateless nodes. Beyond that, full Danksharding will push blob capacity into the hundreds per block. Ethereum&rsquo;s scaling roadmap is a multi-year journey, with Pectra representing a critical milestone that makes the network noticeably better for everyday users today. Follow progress on our{" "}
+        <a href="/tools/crypto-calendar" className="text-[var(--color-primary)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">Crypto Calendar</a>.
       </p>
 
       {/* ─── FAQ ────────────────────────────────────────────────────────────────── */}
-      <h2 id="faq" className="text-3xl font-bold text-[#e6edf3] mt-12 mb-6">
+      <h2 id="faq" className="text-3xl font-bold text-[var(--color-text)] mt-12 mb-6">
         10. Frequently Asked Questions
       </h2>
       <div className="space-y-5 mb-12">
@@ -576,10 +568,11 @@ export default function EthereumPectraUpgradeGuide() {
         ].map((item, i) => (
           <div
             key={i}
-            style={{ background: "#161b22", borderColor: "#30363d" }}
+            className="rounded-xl p-5 border"
+            style={{ background: "var(--color-bg-card)", borderColor: "var(--color-border)" }}
           >
-            <p className="font-semibold text-[#e6edf3] mb-2">{item.q}</p>
-            <p className="text-sm text-[#8b949e]">{item.a}</p>
+            <p className="font-semibold text-[var(--color-text)] mb-2">{item.q}</p>
+            <p className="text-sm text-[var(--color-text-secondary)]">{item.a}</p>
           </div>
         ))}
       </div>
@@ -587,9 +580,9 @@ export default function EthereumPectraUpgradeGuide() {
       {/* Related Articles */}
       <div
         className="rounded-xl p-6 border"
-        style={{ background: "#161b22", borderColor: "#30363d" }}
+        style={{ background: "var(--color-bg-card)", borderColor: "var(--color-border)" }}
       >
-        <h3 className="text-base font-semibold text-[#e6edf3] mb-4">📚 Related Resources</h3>
+        <h3 className="text-base font-semibold text-[var(--color-text)] mb-4">📚 Related Resources</h3>
         <ul className="space-y-2 text-sm">
           {[
             ["/learn/account-abstraction", "Account Abstraction Explained: ERC-4337 & Smart Wallets"],
@@ -600,7 +593,7 @@ export default function EthereumPectraUpgradeGuide() {
             ["/tools/crypto-calendar", "Crypto Calendar — Track Ethereum Upgrade Dates"],
           ].map(([href, label]) => (
             <li key={href}>
-              <a href={href} className="text-[#58a6ff] hover:underline">
+              <a href={href} className="text-[var(--color-primary)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 rounded">
                 → {label}
               </a>
             </li>
@@ -609,26 +602,6 @@ export default function EthereumPectraUpgradeGuide() {
       </div>
 
       <BackToTop />
-    
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "Ethereum Pectra Upgrade Guide",
-              "author": { "@type": "Organization", "name": "degen0x" },
-              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
-              "datePublished": "2026-04-01",
-              "dateModified": "2026-04-12",
-              "mainEntityOfPage": "https://degen0x.com/learn/ethereum-pectra-upgrade-guide"
-            })
-          }}
-        />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum Pectra Upgrade 2026: EIP-7702 & Changes | degen0x", "description": "Full guide to Ethereum", "url": "https://degen0x.com/learn/ethereum-pectra-upgrade-guide", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <LiveMiniStat id="ethereum" />
-      <RelatedContent category="learn" currentSlug="/learn/ethereum-pectra-upgrade-guide" />
-<AuthoritySources url="/learn/ethereum-pectra-upgrade-guide" />
 </div>
   );
 }
