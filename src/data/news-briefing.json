@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T01:05:00Z",
-  "briefing_id": "briefing-2026-04-27-01",
+  "generated_at": "2026-04-27T02:08:00Z",
+  "briefing_id": "briefing-2026-04-27-02",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-01-001",
-      "headline": "Bitcoin-USD correlation hits -0.90, most negative since 2022",
-      "slug": "bitcoin-dollar-correlation-most-negative-since-2022",
-      "tldr": "BTC's 30-day correlation with the U.S. Dollar Index has flipped to -0.90, the deepest inverse reading in nearly four years.",
-      "why_it_matters": "Why it matters: Bitcoin is once again trading as a clean dollar-debasement hedge, putting allocators back in macro-narrative mode just as the Fed-cut debate heats up.",
+      "id": "story-2026-04-27-02-001",
+      "headline": "April hacks hit $620M in 20 days — worst month since Bybit's Feb '25 breach",
+      "slug": "april-2026-crypto-hacks-620m-worst-month-since-bybit",
+      "tldr": "Crypto protocols have lost $620M to hacks and exploits in the first 20 days of April, eclipsing Q1 2026 combined.",
+      "why_it_matters": "Why it matters: 95% of losses came from just two incidents — bridge and admin-key failures, not novel zero-days — meaning the playbook is repeatable and the next nine-figure drain is likely already in motion.",
       "the_details": [
-        "30-day BTC/DXY correlation hit -0.90, deepest inverse print since 2022.",
-        "BTC settled above $77K and is up over 13% in April, on track for its best month in a year.",
-        "Push toward $80K stalled as Strait of Hormuz oil risk re-tightened financial conditions."
+        "Year-to-date theft sits at ~$771.8M across 47 separate incidents, per Live Bitcoin News tallies.",
+        "Drift on Solana ($285M, Apr 1) and Kelp DAO ($292M, Apr 18) account for nearly all of April's losses.",
+        "April's total is 3.7x larger than Q1 2026 combined, the worst since the $1.4B Bybit breach in Feb 2025."
+      ],
+      "source": "Live Bitcoin News",
+      "source_url": "https://www.livebitcoinnews.com/april-2026-crypto-hacks-hit-620m-as-bridge-failures-and-admin-exploits-dominate-attacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-24T18:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-02-002",
+      "headline": "BlackRock IBIT options open interest tops Deribit — derivatives center of gravity flips",
+      "slug": "blackrock-ibit-options-open-interest-tops-deribit",
+      "tldr": "Open interest on BlackRock's IBIT bitcoin ETF options surpassed Deribit on Friday, marking a structural shift to U.S. regulated venues.",
+      "why_it_matters": "Why it matters: When the deepest BTC options book lives inside a U.S. brokerage wrapper, hedging flows and implied vol get set by TradFi desks — not crypto natives — permanently changing how spot reacts to macro events.",
+      "the_details": [
+        "IBIT options launched in November 2024 and have now overtaken Deribit, the long-time offshore leader.",
+        "Milestone hit on Apr 24, 2026, as BTC traded near $80K with whales building long perpetual positions.",
+        "Signals rapid institutional adoption of regulated crypto derivatives less than 18 months post-launch."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-27T01:05:00Z"
+      "timestamp": "2026-04-25T14:00:00Z"
     },
     {
-      "id": "story-2026-04-27-01-002",
-      "headline": "Solana ETF AUM tops $1B; SOL beats ETH on dApp revenue 5 weeks running",
-      "slug": "solana-etf-1-billion-aum-beats-ethereum-dapp-revenue",
-      "tldr": "Spot SOL ETFs crossed $1B in combined AUM with $35M weekly inflows, while Solana outearned Ethereum in dApp revenue for a 5th straight week.",
-      "why_it_matters": "Why it matters: Institutional SOL exposure is sticking even as price lags, and the revenue lead over Ethereum strengthens the case for a multi-L1 institutional bid.",
+      "id": "story-2026-04-27-02-003",
+      "headline": "100+ crypto firms led by Coinbase, Ripple press Senate to mark up Market Structure bill",
+      "slug": "100-crypto-firms-senate-market-structure-bill-clarity",
+      "tldr": "A coalition of 100+ crypto firms is pushing the Senate Banking Committee to advance the CLARITY Act and finalize a federal framework for digital assets.",
+      "why_it_matters": "Why it matters: Industry alignment on a single bill is rare — if the Senate moves before midterm season, U.S. crypto firms get the SEC/CFTC jurisdiction split they've waited 7 years for, unlocking listings and custody decisions held in limbo.",
       "the_details": [
-        "Combined U.S. spot SOL ETF assets cleared $1B, with $35.17M net inflows last week.",
-        "Goldman Sachs disclosed a sizable Solana ETF position in 13F filings.",
-        "SOL trades around $85.97, down 32% from 2025 highs; bulls need to reclaim $86 to avoid a $52 retest."
+        "Letter signed by Coinbase, Ripple and 100+ others, delivered week of April 23, 2026.",
+        "Builds on the SEC-CFTC joint interpretive release issued March 17, 2026 — a 68-page rewrite superseding the 2019 framework.",
+        "CLARITY Act roundtable already held April 16; bill defines token taxonomy across five categories."
       ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
-      "category": "altcoins",
-      "impact": "high",
-      "timestamp": "2026-04-27T01:05:00Z"
-    },
-    {
-      "id": "story-2026-04-27-01-003",
-      "headline": "TOKEN2049 Dubai pushed to 2027 over UAE security risks",
-      "slug": "token2049-dubai-postponed-2027-uae-security",
-      "tldr": "Organizers postponed TOKEN2049 Dubai to 2027, citing heightened security risks across the UAE amid regional tensions.",
-      "why_it_matters": "Why it matters: The Middle East was crypto's hottest 2026 conference circuit; a one-year delay reroutes deal-making capital toward Singapore, Hong Kong and U.S. events.",
-      "the_details": [
-        "TOKEN2049 Dubai shelved until 2027; Singapore flagship still on calendar.",
-        "Move follows Strait of Hormuz oil-route flare-ups already weighing on risk assets.",
-        "Consensus Miami in May becomes the next major institutional gathering point."
-      ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
-      "category": "adoption",
-      "impact": "medium",
-      "timestamp": "2026-04-27T01:05:00Z"
-    },
-    {
-      "id": "story-2026-04-27-01-004",
-      "headline": "FDIC opens GENIUS Act rulebook for federally supervised stablecoin issuers",
-      "slug": "fdic-genius-act-stablecoin-rulemaking-april-2026",
-      "tldr": "The FDIC issued a notice of proposed rulemaking laying out capital, custody and disclosure requirements for FDIC-supervised payment stablecoin issuers.",
-      "why_it_matters": "Why it matters: This is the first concrete federal rulebook for U.S. dollar stablecoins under GENIUS — a green light for bank-issued stables and a wedge against offshore issuers.",
-      "the_details": [
-        "FDIC NPR sets capital, segregation and reporting bars for permitted payment stablecoin issuers.",
-        "Treasury is running a parallel implementation track for non-bank stablecoin licensees.",
-        "Move arrives as USDT supply nears $150B and Circle pushes deeper into U.S. distribution."
-      ],
-      "source": "Sidley Data Matters",
-      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
       "category": "regulation",
-      "impact": "medium",
-      "timestamp": "2026-04-27T01:05:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-23T16:00:00Z"
     },
     {
-      "id": "story-2026-04-27-01-005",
-      "headline": "Coinbase's Pollak: AI agent payments are crypto's next adoption wave",
-      "slug": "coinbase-pollak-ai-agents-crypto-payments-consensus-miami",
-      "tldr": "Coinbase Base lead Jesse Pollak says AI agents transacting on-chain are the next major use case driving crypto payments, ahead of his Consensus Miami keynote.",
-      "why_it_matters": "Why it matters: Stablecoin rails plus autonomous agents could shift micropayment volume on-chain — Coinbase is positioning Base as the default agent settlement layer.",
+      "id": "story-2026-04-27-02-004",
+      "headline": "Kelp DAO loses $292M from rsETH bridge — Aave hit by liquidity crunch",
+      "slug": "kelp-dao-292m-rseth-exploit-aave-withdrawals",
+      "tldr": "An attacker drained $292M from Kelp DAO's rsETH token on April 19, stranding wrapped ether across 20 chains and triggering heavy Aave withdrawals.",
+      "why_it_matters": "Why it matters: The cascade from a single LRT bridge into a major lending market exposed how restaking risk is now systemic — DeFi blue chips can't isolate themselves when collateral spans 20 bridges.",
       "the_details": [
-        "Pollak signaled the AI-agent thesis ahead of Consensus Miami in May.",
-        "Bet leans on Base's USDC integration and Coinbase's MPC wallet infra for agents.",
-        "Aligns with broader stablecoin growth — USDT supply is approaching $150B."
+        "Largest DeFi exploit of 2026 — $292M drained from Kelp DAO's rsETH on Apr 18-19.",
+        "Wrapped ether stranded across 20 chains, sparking 'DeFi is dead' narrative across crypto Twitter.",
+        "Aave saw heavy withdrawals as users pre-emptively de-risked LRT-backed positions."
       ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/bitcoin/latest-updates/",
-      "category": "infrastructure",
-      "impact": "medium",
-      "timestamp": "2026-04-27T01:05:00Z"
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-19T22:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-02-005",
+      "headline": "SEC carves out DeFi front-ends from broker-dealer registration",
+      "slug": "sec-defi-front-ends-broker-dealer-registration-exception",
+      "tldr": "SEC staff said on April 13 it won't object to 'Covered User Interface Providers' offering software to submit crypto-asset securities transactions without registering as broker-dealers.",
+      "why_it_matters": "Why it matters: This is the most explicit greenlight U.S. DeFi has ever received — projects can run hosted front-ends on U.S. infrastructure without needing FINRA membership, removing the cleanest legal threat to onchain trading UIs.",
+      "the_details": [
+        "Statement issued April 13, 2026 by SEC staff covering 'Covered User Interface Providers'.",
+        "Exempts UIs that let users prepare and submit crypto asset security transactions from broker-dealer registration.",
+        "Pairs with the SEC-CFTC joint framework released March 17 — both moves aimed at codifying onchain market structure."
+      ],
+      "source": "Sidley Austin LLP",
+      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-13T20:00:00Z"
     }
   ]
 }
