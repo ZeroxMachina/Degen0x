@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T08:05:00Z",
-  "briefing_id": "briefing-2026-04-27-08",
+  "generated_at": "2026-04-27T09:05:39Z",
+  "briefing_id": "briefing-2026-04-27-09",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-08-001",
-      "headline": "Kalshi launches crypto perpetual futures today under codename 'Timeless'",
-      "slug": "kalshi-launches-crypto-perpetual-futures-timeless",
-      "tldr": "Prediction-market giant Kalshi rolls out perp futures on a handful of cryptocurrencies today, marking its first true derivatives push beyond event contracts.",
-      "why_it_matters": "Why it matters: A CFTC-regulated venue trading crypto perps onshore opens an institutional channel that has been offshore-only for years.",
+      "id": "story-2026-04-27-09-001",
+      "headline": "Bitcoin clears $77K, on pace for best month in a year as $5B USDT mints fuel rebound",
+      "slug": "bitcoin-77k-best-month-usdt-rebound",
+      "tldr": "BTC trades above $77,000 and is up over 13% in April, its strongest monthly run in a year, supported by $5 billion in fresh USDT supply.",
+      "why_it_matters": "Why it matters: stablecoin issuance has historically led spot rallies; another leg up risks blowing out the deeply negative funding rates whales are quietly leaning into.",
       "the_details": [
-        "Kalshi confirmed April 27 as launch day for the product codenamed 'Timeless,' per The Information.",
-        "Perpetuals will be tied to a handful of cryptocurrencies, joining its event-contract platform.",
-        "Move follows the broader race by Robinhood and Coinbase to bring perps to US retail under CFTC rules."
-      ],
-      "source": "CoinDesk / The Information",
-      "source_url": "https://www.coindesk.com/",
-      "category": "infrastructure",
-      "impact": "high",
-      "timestamp": "2026-04-27T07:30:00Z"
-    },
-    {
-      "id": "story-2026-04-27-08-002",
-      "headline": "SEC and CFTC sign historic MOU clarifying federal securities law for crypto",
-      "slug": "sec-cftc-historic-mou-crypto-securities",
-      "tldr": "The SEC and CFTC inked their first formal memorandum of understanding to coordinate oversight and issued joint guidance on crypto-asset securities.",
-      "why_it_matters": "Why it matters: Years of agency turf wars are finally being papered over, giving issuers and exchanges a clearer rulebook to operate under.",
-      "the_details": [
-        "SEC Press Release 2026-26 announces the historic MOU between the two agencies.",
-        "A separate joint statement clarifies how federal securities laws apply to crypto assets.",
-        "Lands as 100+ crypto firms press the Senate to mark up the Clarity Act on market structure."
-      ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-27T06:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-08-003",
-      "headline": "April 2026 turns crypto's worst hack month since Bybit, $606M lost in 18 days",
-      "slug": "april-2026-worst-hack-month-since-bybit",
-      "tldr": "April losses have already topped $606M, driven by the $292M Kelp DAO and $285M Drift exploits, both attributed to North Korea's Lazarus Group.",
-      "why_it_matters": "Why it matters: Two Lazarus-linked breaches in three weeks reset the security baseline DeFi must hit before institutional money returns at scale.",
-      "the_details": [
-        "Drift Protocol drained for $285M on April 1; Kelp DAO bridge exploited for $292M on April 19.",
-        "Together the two hits represent roughly 95% of April's reported crypto losses.",
-        "DeFi total value locked dropped from $26.4B on April 18 to ~$20B amid panic withdrawals."
-      ],
-      "source": "crypto.news / CoinDesk",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-27T05:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-08-004",
-      "headline": "SEC carves broker-dealer exception for DeFi UI providers in major opening",
-      "slug": "sec-defi-ui-broker-dealer-exception",
-      "tldr": "The SEC's Division of Trading and Markets says certain crypto interface operators can run without broker-dealer registration under specified conditions.",
-      "why_it_matters": "Why it matters: Frontends for permissionless DeFi just got a regulatory off-ramp from the legal cloud that has hung over US developers for years.",
-      "the_details": [
-        "April 13 staff statement names 'Covered User Interface Providers' as qualifying for non-objection.",
-        "Applies to interfaces helping users prepare and submit crypto-asset securities transactions.",
-        "Pairs with the SEC-CFTC MOU as the latest pro-crypto policy shift out of Washington."
-      ],
-      "source": "Sidley Data Matters",
-      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-27T04:30:00Z"
-    },
-    {
-      "id": "story-2026-04-27-08-005",
-      "headline": "USDT supply nears $150B as Bitcoin tracks best month in a year",
-      "slug": "usdt-150b-bitcoin-best-month",
-      "tldr": "Tether's USDT stablecoin supply has surged to nearly $150 billion, deepening crypto market liquidity as BTC posts a 13.6% April gain.",
-      "why_it_matters": "Why it matters: Stablecoin supply is the cleanest leading indicator of dry powder — record USDT issuance signals fresh capital, not just rotation.",
-      "the_details": [
-        "USDT supply added roughly $5B in recent weeks per CoinDesk reporting.",
-        "Bitcoin is up ~13.6% in April, on pace for its strongest monthly performance in a year.",
-        "BTC's 30-day correlation with the US Dollar Index hit -0.90, the most negative since 2022."
+        "BTC up 13%+ in April, on track for best monthly performance since April 2025.",
+        "USDT supply expanded by ~$5B during the rebound, per CoinDesk on April 24.",
+        "Whales are building long positions even as perp funding stays deeply negative."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-27T08:30:00Z"
+    },
+    {
+      "id": "story-2026-04-27-09-002",
+      "headline": "Aave USDC pool nearly empty as KelpDAO contagion drives $14B DeFi TVL drop",
+      "slug": "aave-usdc-empty-kelpdao-contagion",
+      "tldr": "The April 18 KelpDAO rsETH exploit cascaded through lending markets, draining DeFi TVL from $99B to $85B in 48 hours and leaving Aave's USDC pool nearly dry.",
+      "why_it_matters": "Why it matters: Circle is publicly demanding urgent action on USDC liquidity, signalling that stablecoin issuers may now police DeFi risk faster than governance can.",
+      "the_details": [
+        "$292M KelpDAO rsETH bridge exploit on April 18 triggered the cascade.",
+        "Aggregate DeFi TVL fell from ~$99B to ~$85B over 48 hours.",
+        "Circle is pressing Aave for emergency action to restore USDC liquidity."
+      ],
+      "source": "P2P.org / DeFi Dispatch",
+      "source_url": "https://p2p.org/economy/defi-dispatch-defi-news-april-2026-issue-2/",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-27T07:45:00Z"
+    },
+    {
+      "id": "story-2026-04-27-09-003",
+      "headline": "Charles Schwab opens spot BTC and ETH trading to retail brokerage clients",
+      "slug": "schwab-spot-btc-eth-retail",
+      "tldr": "Charles Schwab launched direct spot trading of Bitcoin and Ethereum across its retail brokerage in April, putting crypto next to equities and fixed income for tens of millions of clients.",
+      "why_it_matters": "Why it matters: Schwab's footprint dwarfs every crypto-native broker combined; the on-ramp shifts from app downloads to a single Schwab login, accelerating the IRA and 401(k) thesis.",
+      "the_details": [
+        "Spot BTC and ETH trading is now native inside Schwab retail accounts.",
+        "Service sits alongside equities, fixed income and existing ETF coverage.",
+        "Move follows broader institutional push: 80% of institutions plan 2-5% AUM allocation to digital assets."
+      ],
+      "source": "P2P.org / DeFi Dispatch",
+      "source_url": "https://p2p.org/economy/defi-dispatch-defi-news-april-2026-issue-2/",
+      "category": "adoption",
+      "impact": "high",
+      "timestamp": "2026-04-27T06:30:00Z"
+    },
+    {
+      "id": "story-2026-04-27-09-004",
+      "headline": "100+ crypto firms led by Coinbase and Ripple push Senate to mark up Clarity Act",
+      "slug": "100-firms-senate-clarity-act-markup",
+      "tldr": "A coalition of more than 100 crypto firms is urging the Senate Banking Committee to mark up the Clarity Act and finalize a federal market-structure framework for digital assets.",
+      "why_it_matters": "Why it matters: even after the March SEC-CFTC joint guidance, statutory clarity is the missing piece for banks and brokerages still gated on counsel sign-off.",
+      "the_details": [
+        "Signatories include Coinbase, Ripple and 100+ other firms, per CoinDesk on April 23.",
+        "Letter targets Senate Banking Committee and the Clarity Act markup.",
+        "Builds on March 17 SEC-CFTC 68-page joint interpretive release establishing a 5-category token taxonomy."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T05:15:00Z"
+    },
+    {
+      "id": "story-2026-04-27-09-005",
+      "headline": "Crypto week ahead: Fed, BoJ, ECB, BoE all set rates as Big Tech earnings collide",
+      "slug": "crypto-week-ahead-fomc-boj-ecb-boe-bigtech",
+      "tldr": "Four major central banks set policy this week alongside Microsoft, Amazon, Meta, Google and Apple earnings, plus US Q1 GDP and March PCE — a stacked macro gauntlet for crypto.",
+      "why_it_matters": "Why it matters: BTC's near-perfect inverse correlation with the dollar is at a near-4-year extreme, so any FOMC or PCE surprise will flow straight into crypto books.",
+      "the_details": [
+        "FOMC concludes Wednesday; BoJ, ECB and BoE also decide rates this week.",
+        "MSFT, AMZN, META, GOOG report midweek; AAPL plus Q1 GDP and March PCE on Thursday.",
+        "Compound, Decentraland and Frax DAOs all close key governance votes by April 27."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
       "category": "markets",
-      "impact": "medium",
-      "timestamp": "2026-04-27T03:30:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-27T04:00:00Z"
     }
   ]
 }

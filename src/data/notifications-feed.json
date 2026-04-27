@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-010",
+    "type": "news",
+    "title": "📰 Bitcoin clears $77K, on pace for best month in a year as $5B USDT mints fuel rebound",
+    "message": "BTC trades above $77,000 and is up over 13% in April, its strongest monthly run in a year, supported by $5 billion in fresh USDT supply.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-009",
     "type": "news",
     "title": "📰 Kalshi launches crypto perpetual futures today under codename 'Timeless'",
@@ -230,13 +238,5 @@
     "message": "Vercel disclosed a security incident exposing customer API keys, forcing crypto teams hosting wallet UIs on the platform to rotate credentials en masse.",
     "actionUrl": "/news",
     "date": "2026-04-20"
-  },
-  {
-    "id": "feed-2026-04-18-001",
-    "type": "news",
-    "title": "📰 Kelp DAO Bridge Drained for $292M in rsETH, Eclipsing Drift as 2026's Biggest Hack",
-    "message": "An attacker drained 116,500 rsETH — about $292M and 18% of supply — from Kelp's LayerZero bridge, making it 2026's largest DeFi exploit.",
-    "actionUrl": "/news",
-    "date": "2026-04-18"
   }
 ]
