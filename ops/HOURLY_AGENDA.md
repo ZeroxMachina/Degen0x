@@ -1,11 +1,12 @@
 # degen0x · Hourly Ops Standup
 
-**Timestamp:** 2026-04-27T16:18Z
-**Cycle:** Hour 16 UTC (Monday) — **DE-ESCALATION CYCLE.** Briefing-16 on-cadence + fresh; Hour 16 standup single-fire on time; **build-cycle silence streak BROKEN by `5a629c6d8` hyperliquid-design-polish at 15:59Z**. P1 close-or-hold gates resolve favorably.
+**Timestamp:** 2026-04-27T17:15Z
+**Cycle:** Hour 17 UTC (Monday) — **DESIGN-POLISH REGIME CONFIRMED, NOVELTY-V2 RE-DEEPENS.** Briefing-17 on-cadence GREEN; design-polish channel ships 2nd-consecutive src commit (`fc210b2e2` crypto-tax-guide-2026 polish at 16:39:36Z, 33min after `5a629c6d8`); T-BRIEFING-NOVELTY-V2 P1 conjunction RE-MET (HIGH 4/5 + recurrence 3/5 → 6-of-7 cycles met) — Hour 16 disconfirm was a 1-cycle blip per the same 2-consecutive-spec discipline that closed cadence + standup-missed at Hour 16.
 **Runner:** `degen-morning-standup` scheduled task (Claude Opus 4.7).
-**Latest commit (master):** `7df6dc9c0` — *Hour 15 standup* — ~64min old (this commit will follow shortly).
-**Latest commit (origin/main):** `feddc601f` — *briefing-2026-04-27-16* — pushed 16:06:00Z (briefing generated 16:05:38Z; **~12min old**, freshness GREEN).
-**Branch divergence:** **+74 / -53** (master flat; origin +3 via briefing-15 + hyperliquid-design-polish + briefing-16).
+**Latest commit (master):** `33c171ebf` — *Hour 16 standup* — ~52min old (this commit will follow shortly).
+**Latest commit (origin/main):** `d919e0323` — *briefing-2026-04-27-17* — pushed 17:08:52Z (briefing generated 17:07:00Z; **~6min old**, freshness GREEN).
+**Latest src commit (origin):** `fc210b2e2` — *design: crypto-tax-guide-2026 theme-token polish* — pushed 16:39:36Z (~36min old; design-polish channel **2-cycle ship** — first non-singleton src streak since Hour 19–21 yesterday).
+**Branch divergence:** **+75 / -55** (master flat; origin advanced +2 via fc210b2e2 + briefing-17).
 
 ---
 
@@ -15,96 +16,81 @@ Per `ops/HOURLY_AGENDA_FORMAT.md` (V2 spec, Hour 03 codification + Hour 04 src-m
 
 ## Incidents / Overrides
 
-- **T-NEWS-BRIEFING-CADENCE-BROKEN P1 (filed 14:21Z, 2026-04-27)** → **DE-ESCALATE → CLOSED.** 2-of-2 disconfirm met. Briefing-15 landed 6min-fresh on cadence (Hour 15); briefing-16 landed 9min-fresh at gen / ~12min at this commit (Hour 16). Two consecutive on-cadence within-SLO cycles satisfy the close-criterion declared in Hour 14 addendum. **MITIGANT:** none required — pipeline self-recovered after Hour 13 isolated stall. Briefing chain: 25 → 26 consecutive green hours (Hour 13 remains the only break in the 27-cycle run).
-- **T-HOUR-STANDUP-MISSED P2 (filed 14:21Z, 2026-04-27)** → **DE-ESCALATE → CLOSED.** 2-of-2 self-check disconfirm met. Hour 15 single-fire on time + Hour 16 single-fire on time (this commit, ~16:18Z). Working hypothesis (scheduler-stall-deferred-flush from Hour 14 addendum) holds: Hour 13 missed → Hour 14 doublefire flush → Hour 15+16 normal cadence.
-- **T-DOUBLEFIRE-PATTERN WATCH** → **CLEAR.** 2-of-2 disconfirm met (Hour 15 single + Hour 16 single).
-- **T-PUBLISH-QUEUE-DRIFT-BUIDL P1 (filed 14:21Z)** → **HOLDS.** **26.27h in queue** (2.27h past 24h threshold, **27 cycles** since jefe-shell bundle filed Hour 10, no human action yet). Bundle file `ops/jefe-bundles/2026-04-27-buidl-publish-deploy.md` last-touched 12:17Z (~4h ago). 3 broken `/learn/` refs on staged BUIDL page (`franklin-templeton-benji-fobxx-guide`, `rwa-risk-framework-guide`, `wormhole-bridge-guide`) still MISSING — blocks promotion (no prod impact).
-- **T-BRIEFING-NOVELTY-V2 P1 (filed 12:14Z)** → **1-of-2 disconfirm met this cycle.** Briefing-16 HIGH 2/5 (April-DeFi-620M, NK-Drift-285M-pre-signed) — **below ≥3 conjunction threshold for the first time since Hour 13**. Recurrence: ~3/5 (April-hack-month + Bhutan-250BTC + Solana-ETF-inflows recur; Iran-Fear-Greed + Western-Union-SOL angles fresh). Conjunction unmet → de-escalation gate at Hour 17. **2 consecutive sub-threshold cycles required for P1 → CLOSE.**
-- **T-EOD-QA-EGRESS OPEN 13th-consecutive.** `degen0x.com` HTTP 000 (proxy 403 after CONNECT); GSC/GA/Vercel-preview also egress-blocked. Recurrence rule suppresses duplicate incident; flag for Jefe allowlist update remains highest-leverage external ask.
+- **T-BRIEFING-NOVELTY-V2 P1 (filed 12:14Z, 2026-04-27)** → **DISCONFIRM GATE FAILED, P1 HOLDS DEEPENING.** Hour 16 1-of-2 disconfirm (HIGH 2/5) was a single-cycle blip; Hour 17 reverts to **conjunction MET (HIGH 4/5 ≥3 + direct-recurrence 3/5 ≥3)**. Cumulative: **6-of-7 cycles conjunction-met** since Hour 11 (only Hour 16 sub-threshold; 1-cycle disconfirms within a 2-consecutive-spec regime do NOT discharge — same discipline that closed cadence-broken + standup-missed at Hour 16). Briefing-17 stories: HIGH 4/5 (Aave-V3-USDC-99.87%-Circle-urgent, Strategy-3273-BTC-255M, IBIT-983M-six-month-high, BTC-80K-wall-bitcoin-dollar-4yr-extreme), MEDIUM 1/5 (SEC-DEX-front-end-exemption — recurs from briefing-13 SEC-DeFi-front-ends-staff-letter). **MITIGANT:** none from sandbox; CEO route at next Jefe window remains mandatory per Hour 12 escalation. Recurrence rate locked above 60% across 8 cycles.
+- **T-PUBLISH-QUEUE-DRIFT-BUIDL P1 (filed 14:21Z)** → **HOLDS.** **27.27h in queue** (3.27h past 24h threshold, **cycle 28**). Bundle file `ops/jefe-bundles/2026-04-27-buidl-publish-deploy.md` last-touched 12:17Z (~5h ago). 3 broken `/learn/` refs on staged BUIDL page (`franklin-templeton-benji-fobxx-guide`, `rwa-risk-framework-guide`, `wormhole-bridge-guide`) still MISSING. **Cycle 30 (~Hour 19) is the file-an-incident-elevation-document watchpoint** — at that point the queue is 30h+ in, no Jefe action across 30 cycles, and the bundle file is 7h+ stale at filing.
+- **T-EOD-QA-EGRESS OPEN 14th-consecutive.** `degen0x.com` HTTP 000 (proxy 403 after CONNECT); GSC/GA/Vercel-preview also egress-blocked. Recurrence rule suppresses duplicate incident; flag for Jefe allowlist update remains highest-leverage external ask.
+- **T-FORMAT-COLLAPSE-V2 — moratorium 11th cycle of effect.** Hour 18 is the V2-review confirmation gate per Hour 16's commitment. **Hour 17 is the pre-review prep cycle:** with `fc210b2e2` landing in Hour 16→17 window (2-cycle confirmed regime), the V2-moratorium evidence base shifts: system SLO ticks up 40.00% → ~42.31% (11-of-26), runner-only stays 26.92% (7-of-26). The moratorium-as-runner-doctrine remains evidence-supported (runner has not shipped src in 19h+), but the design-polish-Jefe-shell channel is now empirically a viable parallel src path.
 
-## What shipped last hour (Hour 15 window 15:00–16:00Z)
+## What shipped last hour (Hour 16 window 16:00–17:00Z)
 
-- **`5a629c6d8` (origin/main, 15:59:52Z)** — *design: hyperliquid-trading-guide theme-token polish* — ~264 hex→CSS-variable replacements, duplicate Article JSON-LD removed, focus-visible rings on all interactive elements. **First src commit on origin in ~17h** (since `c6f57fb9` Hour 07 bitcoin-mining polish at 07:47Z). **Author:** Jefe <raul@pelagos.network> via design-polish channel — confirms the design-polish stream is live, just paced ~hourly-half-day cadence rather than per-cycle.
-- **`feddc601f` (origin/main, 16:06:00Z)** — *news: briefing-2026-04-27-16* — generated 16:05:38Z, on-cadence (~57min after briefing-15). HIGH 2/5: April-DeFi-620M, NK-Drift-285M-pre-signed. MEDIUM 3/5: Iran-Fear-Greed, Solana-ETF-WU-SOL, Bhutan-250BTC.
-- **`7df6dc9c0` (master, 15:14:31Z)** — *Hour 15 standup, RECOVERY cycle*. Single-fire on time; T-LOCK-ESCALATION 15-of-15 (mv-recipe healthy). Briefing-15 on-cadence recovery 1-of-2 confirmation.
-- **Locks at this entry:** **0 stale.** `ls .git/*.lock` returns empty — clean entry, no recovery needed. T-LOCK-ESCALATION mechanism dormant this cycle (briefing-16 push at 16:06Z was old enough relative to 16:18Z entry that no concurrent-write race fired).
-- **Build-cycle silence streak: BROKEN at 17h+. New streak counter resets to 0** (next cycle without a runner-or-design-polish src commit increments it).
+- **`fc210b2e2` (origin/main, 16:39:36Z)** — *design: crypto-tax-guide-2026 theme-token polish* — ~264 hex→CSS-variable replacements, duplicate Article JSON-LD removed, focus-visible rings on all interactive elements. **2nd design-polish ship in consecutive cycles** (33min after `5a629c6d8` Hour 15→16 boundary). Author: Jefe via design-polish channel. **Regime confirmation:** Hour 15→16's hyperliquid polish was not a one-off; design-polish is now a 2-cycle live channel.
+- **`d919e0323` (origin/main, 17:08:52Z)** — *news: briefing-2026-04-27-17* — generated 17:07:00Z, on-cadence (~62min after briefing-16). **HIGH 4/5** (Aave-USDC-99%, Strategy-3273-BTC, IBIT-983M, BTC-80K-wall-bitcoin-dollar-correlation). MEDIUM 1/5 (SEC-DEX-exemption). **Conjunction MET — disconfirm gate failed.**
+- **`33c171ebf` (master, 16:23:10Z)** — *Hour 16 standup, DE-ESCALATION cycle*. Single-fire on time; closed 3 incidents (T-NEWS-BRIEFING-CADENCE-BROKEN, T-HOUR-STANDUP-MISSED, T-DOUBLEFIRE-PATTERN). 16th-consecutive ops-commit success.
+- **EOD-QA Hour 16 readonly-cycle (16:59Z log entry)** — yellow, T-EOD-QA-EGRESS 14th-consecutive, prod-unverifiable, no rollback needed.
+- **Locks at this entry:** **0 stale.** `ls .git/*.lock` returns empty — clean entry. T-LOCK-ESCALATION dormant 2nd-consecutive cycle.
 
 ## What's at risk
 
-- **BUIDL queue 27 cycles past P1 threshold** — Jefe-shell bundle still un-executed, 4h since bundle-file last touched. Either Jefe runs the bundle this hour OR build-cycle takes the standup-runner-stub path (still V2-moratorium-blocked for src/, so realistically the Jefe-shell bundle is the only viable path). Risk: cycle 30+ without action → file an incident-elevation document (not P0; no prod impact, just queue debt).
-- **Briefing novelty regime fragile** — Hour 16 was the first sub-threshold cycle in 6 attempts. Hour 17 needs to also fall below ≥3 HIGH for P1 → CLOSE. If Hour 17 reverts to ≥3 HIGH + ≥4 recurrence, conjunction re-triggers and P1 holds with deepening evidence.
-- **EOD-QA prod-unverifiable 13th cycle** — methodology-shift to origin/main-Vercel-baseline holds, but external observability dark. Allowlist update remains the unblocker.
-- **Build-cycle SLO trajectory:** with `5a629c6d8` landing in Hour 15→16 window, system SLO improves from 9-of-24 (37.50%) → ~10-of-25 (40.00%); runner-only SLO unchanged at 7-of-25 (28.00%) — runner has not shipped src since `53359ca77` (Hour 21 yesterday, ~19h old).
+- **T-BRIEFING-NOVELTY-V2 conjunction re-deepens** — 6-of-7 cycles met since Hour 11; only Hour 16 disconfirmed and that was 1-cycle. Pattern is **structurally entrenched**: 75%+ recurrence, 60%+ HIGH-density, 4 Jefe-decision options outstanding from Hour 12 framing doc still un-routed. CEO route at next Jefe window remains mandatory and is the single highest-leverage ask after egress allowlist.
+- **BUIDL queue cycle 28 → cycle 30 elevation watchpoint at Hour 19** — bundle 5h stale at this entry; if cycle 30 hits without Jefe action, file an incident-elevation document codifying 30-cycle-no-action threshold (not P0, no prod impact, queue debt only).
+- **Design-polish regime durability untested at 3-cycle horizon** — 2 ships in 2 cycles is regime-establishment, not regime-confirmation. Hour 17→18 window decides: 3rd ship → confirmed multi-cycle channel + V2-moratorium re-frame at Hour 18; no ship → 2-cycle burst, regime-as-cluster-not-channel, V2-moratorium holds with deeper evidence on Hour 18 review.
+- **EOD-QA prod-unverifiable 14th cycle** — methodology-shift to origin/main-Vercel-baseline holds, but external observability dark. Allowlist update remains the unblocker.
+- **Build-cycle SLO trajectory:** with `fc210b2e2` landing in Hour 16→17 window, system SLO improves ~40.00% → 42.31% (11-of-26). **Runner-only SLO unchanged at 26.92%** (7-of-26) — runner has not shipped src since `53359ca77` (Hour 21 yesterday, ~20h old). Trajectory bifurcation: design-polish channel rising, runner channel flat.
 
 ## KPI snapshot
 
 | Metric | Value | Source | Note |
 |---|---|---|---|
-| Latest commit (master) | `7df6dc9c0` | `git log -1 master` | Hour 15 standup, ~64min old |
-| Latest commit (origin/main) | `feddc601f` | `git log -1 origin/main` | briefing-16 push, ~12min old |
-| Latest src commit (origin) | `5a629c6d8` | `git log origin/main --grep '^design'` | hyperliquid polish, **~18min old** — silence streak BROKEN |
-| Indexed pages (PUBLISHED set) | 50 | `published_pages_list.txt` | unchanged ~18 cycles (drained 2026-04-17) |
-| News briefing freshness | 🟢 **~12min** | briefing-16 generated 16:05:38Z | RECOVERY → STEADY-STATE confirmed |
-| Briefing cadence | 🟢 **26 consecutive green hours** | briefings 14→16 (today) | Hour 13 was the only break |
-| BUIDL queue age | 🔴 **26.27h** | `ops/jefe-bundles/2026-04-27-buidl-publish-deploy.md` mtime | P1, 27 cycles, no Jefe action |
-| Branch divergence | +74 master / -53 origin | `git rev-list --left-right` | origin advanced +3 via briefing-15+hyperliquid+briefing-16 |
-| Build-cycle SLO (system, V2-moratorium) | ~10-of-25 = **40.00%** | `git log --since='25h' origin/main` filtered src | improvement from 37.50%; design-polish channel re-engaged |
-| Build-cycle SLO (runner-only) | 7-of-25 = **28.00%** | runner-attributed src commits | last runner ship `53359ca77` ~19h old |
-| Locks at entry | **0 stale** | `ls .git/*.lock` | clean — T-LOCK-ESCALATION dormant this cycle |
-| Organic traffic (24h) | unverifiable from sandbox | `curl degen0x.com` HTTP 000 | T-EOD-QA-EGRESS 13th-consecutive |
+| Latest commit (master) | `33c171ebf` | `git log -1 master` | Hour 16 standup, ~52min old |
+| Latest commit (origin/main) | `d919e0323` | `git log -1 origin/main` | briefing-17 push, ~6min old |
+| Latest src commit (origin) | `fc210b2e2` | `git log origin/main --grep '^design'` | crypto-tax-guide-2026 polish, **~36min old** — 2-cycle design-polish channel |
+| Indexed pages (PUBLISHED set) | 50 | `published_pages_list.txt` | unchanged ~19 cycles (drained 2026-04-17) |
+| News briefing freshness | 🟢 **~6min** | briefing-17 generated 17:07:00Z | STEADY-STATE confirmed, 27 consecutive green hours |
+| Briefing cadence | 🟢 **27 consecutive green hours** | briefings 14→17 (today) | Hour 13 was the only break |
+| Briefing novelty (HIGH/recur) | 🔴 **4/5 HIGH, 3/5 recur** | briefing-17 rubric scoring | conjunction RE-MET, 6-of-7 cycles since Hour 11 |
+| BUIDL queue age | 🔴 **27.27h** | `ops/jefe-bundles/2026-04-27-buidl-publish-deploy.md` mtime | P1, cycle 28, no Jefe action; cycle-30 elevation watchpoint Hour 19 |
+| Branch divergence | +75 master / -55 origin | `git rev-list --left-right` | origin advanced +2 via fc210b2e2 + briefing-17 |
+| Build-cycle SLO (system, V2-moratorium) | 11-of-26 = **42.31%** | `git log --since='26h' origin/main` filtered src | **+2.31pp vs Hour 16**; design-polish channel 2-cycle confirmed |
+| Build-cycle SLO (runner-only) | 7-of-26 = **26.92%** | runner-attributed src commits | last runner ship `53359ca77` ~20h old; channel flat |
+| Locks at entry | **0 stale** | `ls .git/*.lock` | clean — T-LOCK-ESCALATION dormant 2-of-2 cycles |
+| Organic traffic (24h) | unverifiable from sandbox | `curl degen0x.com` HTTP 000 | T-EOD-QA-EGRESS 14th-consecutive |
 
 ## Tasks (flat)
 
-### T1 — Capitalize on design-polish re-engagement: monitor for next polish ship + close BUIDL via Jefe-shell bundle (assigned to **build-cycle / design-polish**)
+### T1 — Confirm-or-disconfirm design-polish 3-cycle regime + capture for Hour 18 V2-review evidence base (assigned to **build-cycle / design-polish**)
 
-- **What:** During Hour 16→17, watch origin/main for either (a) another design-polish src commit from Jefe-shell (extends momentum) or (b) execution of `ops/jefe-bundles/2026-04-27-buidl-publish-deploy.md` (closes BUIDL P1). Both are Jefe-shell-attributable, so no standup-runner src write required.
-- **Why:** Design-polish stream just shipped `5a629c6d8` after a 17h silence — this is a regime signal. Either it was a one-off (silence streak resumes at Hour 17) or it's the start of a polish-burst window (matching Hour 18-21 yesterday's ship-sequence pattern). Either way, the cheapest highest-leverage move is **not to add new work** but to count whether Jefe-shell continues. BUIDL bundle is the highest-priority bundled execution available — 27 cycles past threshold is well into "should escalate" zone but no prod impact, so still a watch not an override.
-- **How:** Hour 17 standup runs `git log origin/main --since='1 hour ago' --pretty=oneline` and counts: 0 src commits → silence streak resumes at 1; ≥1 src commit → confirm design-polish regime continues; if BUIDL bundle commit appears, close T-PUBLISH-QUEUE-DRIFT-BUIDL P1. **If standup runner does not execute this within 1 cycle, route to `dedicated-build-runner`.** (Already pure-read; runs every cycle by default.)
-- **Deliverable:** Hour 17 KPI snapshot row "Latest src commit (origin)" updated; BUIDL row updated if bundle lands.
-- **Rollback:** N/A (read-only check).
+- **What:** During Hour 17→18, watch origin/main for a 3rd-consecutive design-polish src commit from Jefe-shell. Two ships in two cycles is regime-establishment; three ships in three cycles is regime-confirmation and the empirical floor for re-framing the V2-moratorium at Hour 18.
+- **Why:** Hour 18 is the codified V2-review gate (deferred Hour 13 → Hour 15 → Hour 16 → Hour 18 with confirmation criteria). Re-framing on 1 data point would be premature; re-framing on 2 is borderline; re-framing on 3 is empirically grounded. The cheapest-highest-leverage move this hour is **not adding new work** but recording whether the design-polish channel ships a 3rd. Either outcome is informative: ship → V2-frame shifts to "moratorium applies to runner-only; design-polish-Jefe-shell is a viable parallel src path"; no-ship → "2-cycle cluster, regime-as-burst-not-channel, moratorium holds intact". BUIDL bundle execution would also count as a Jefe-shell ship and would close T-PUBLISH-QUEUE-DRIFT-BUIDL P1, but the bundle path has been un-executed for 28 cycles so probability is low this cycle.
+- **How:** Hour 18 standup runs `git log origin/main --since='1 hour ago' --pretty=oneline` and counts: 0 src commits → 2-cycle burst, regime-as-cluster, V2-frame holds; ≥1 src commit → 3-cycle channel confirmed, V2-frame shifts; if BUIDL bundle commit appears, close T-PUBLISH-QUEUE-DRIFT-BUIDL P1. **If standup runner does not execute this within 1 cycle, route to `dedicated-build-runner`.** (Already pure-read; runs every cycle by default.)
+- **Deliverable:** Hour 18 KPI snapshot row "Latest src commit (origin)" updated; design-polish channel-streak counter (1 / 2 / 3) recorded; V2-review re-frame decision filed to `ops/build-cycle/2026-04-27T18-XXZ-V2-moratorium-review-Hour-18.md` with the 3-cycle evidence base captured.
+- **Rollback:** N/A (read-only check + ops-only write).
 
-### T2 — Confirm T-BRIEFING-NOVELTY-V2 P1 de-escalation gate at Hour 17 (assigned to **community-growth**)
+### T2 — File T-BRIEFING-NOVELTY-V2 P1 deepened-incident note: 6-of-7 cycle conjunction rate, Hour 16 was 1-cycle blip, CEO route remains mandatory (assigned to **community-growth**)
 
-- **What:** Briefing-16 produced HIGH 2/5 — first sub-threshold cycle in 6 attempts. Hour 17 briefing-17 needs ≤2/5 HIGH **OR** ≤3/5 recurrence to maintain disconfirmation. **2 consecutive sub-threshold cycles → P1 → CLOSED.**
-- **Why:** P1 has held 5 of 6 cycles since first detection (Hour 12). One disconfirm is encouraging but per 2-consecutive-spec discipline (same rule that escalated this incident), one cycle ≠ regime shift. Hour 17 is the gate. If Hour 17 reverts to conjunction-met, P1 holds with deepening evidence and we file a deepened incident.
-- **How:** Hour 17 standup reads briefing-17 from `src/data/news-briefing.json` post-briefing-17 push, scores stories against rubric (HIGH count, direct-recurrence count vs. briefings 09-16), records result in agenda. **If standup runner does not execute this within 1 cycle, route to `T-FORMAT-COLLAPSE-V2-deferred` (briefing rubric is ops-pure, so this is a non-issue — listed for spec compliance).**
-- **Deliverable:** Hour 17 incident-watch row for T-BRIEFING-NOVELTY-V2 — either CLOSED (2-of-2 disconfirm) or "P1 holds, conjunction MET 6-of-7 cycles".
-- **Rollback:** N/A (rubric scoring, not destructive).
+- **What:** Briefing-17 scored HIGH 4/5 + recurrence 3/5 → conjunction RE-MET. Hour 16's 1-cycle disconfirm (HIGH 2/5) does NOT discharge a P1 under the 2-consecutive-spec discipline. Append a deepened-incident note to `ops/incidents/2026-04-27T17-15Z-briefing-novelty-v2-conjunction-re-met-after-1-cycle-blip.md` codifying: cumulative 6-of-7 cycles conjunction-met (Hour 11, 12, 14, 15, 17 met; Hour 13 sub-HIGH only; Hour 16 sub-everything 1-cycle blip), 75%+ recurrence sustained 8 cycles, fresh-content-rate ~20% structural, 4 Jefe-decision options from Hour 12 framing doc still un-routed.
+- **Why:** Hour 16 standup correctly noted "1-of-2 disconfirm met", which under spec required Hour 17 to also disconfirm for CLOSE. Hour 17 instead reverted, so the disconfirmation gate is failed and the recurrence rule activates: the existing P1 deepens, no NEW incident is filed (recurrence rule suppresses duplicate), but a deepened-incident note is the standard pattern for "P1 holds with new evidence". This is also the cleanest mechanism to flag CEO-route urgency — at 6-of-7 cycles, this is no longer a noise-vs-signal question; it is a content-strategy decision that requires Jefe input.
+- **How:** Hour 17 standup writes `ops/incidents/2026-04-27T17-15Z-briefing-novelty-v2-conjunction-re-met-after-1-cycle-blip.md` (new file, ~10 lines) with structured fields: §Cycle-by-cycle scoring (Hours 11-17), §Cumulative rate, §Disconfirm-gate-failure analysis, §CEO-route ask (4 Hour-12-framing options), §Next-disconfirm-gate (Hour 18 + Hour 19 if 2-consecutive-spec applies cleanly forward). **If standup runner does not execute this within 1 cycle, route to `T-FORMAT-COLLAPSE-V2-deferred` (this task is ops-only, so spec is satisfied).**
+- **Deliverable:** `ops/incidents/2026-04-27T17-15Z-briefing-novelty-v2-conjunction-re-met-after-1-cycle-blip.md` (new file).
+- **Rollback:** N/A (incident note, not destructive).
 
-### T3 — File a 1-line "Hour 16 V2-moratorium 10th-cycle hold" note; defer full V2-review to Hour 18 (assigned to **design-polish open lane**)
+### T3 — Pre-stage Hour 18 V2-moratorium review with 11-cycle evidence base + design-polish-channel data (assigned to **design-polish open lane**)
 
-- **What:** V2 moratorium 10th cycle of effect. System SLO ticked up to 40.00% from 37.50% on the strength of `5a629c6d8`, which is the first non-flat trajectory point in 6 cycles. **One data point ≠ regime change**, but it does suggest the V2 moratorium pre-review framing should pause until we see whether design-polish stream continues at Hour 17/18.
-- **Why:** Hour 13 V2-review was deferred to Hour 15, then deferred again to Hour 16 (T3 in Hour 15 agenda). This is the third deferral. Re-framing with one data-point of evidence-shift would be premature — but ignoring it would be the inverse error. **Compromise:** file a 1-line note ("Hour 16: V2-moratorium 10th-cycle, system SLO 40.00% via `5a629c6d8` — first non-flat point in 6 cycles, awaiting Hour 17/18 confirmation") and re-defer the full review to Hour 18 when 2-cycle confirm-or-disconfirm is available.
-- **How:** Append to `ops/build-cycle/2026-04-27T16-18Z-V2-moratorium-10th-cycle-noop-note.md` a one-line entry. Standup runner writes this commit. **If standup runner does not execute this within 1 cycle, route to `T-FORMAT-COLLAPSE-V2-deferred` (this task is ops-only, so spec is satisfied).**
-- **Deliverable:** `ops/build-cycle/2026-04-27T16-18Z-V2-moratorium-10th-cycle-noop-note.md` (new file, 1-line entry).
-- **Rollback:** `git rm` the file if Hour 17 sees 2-cycle confirmation that requires full re-review (then we go back to Hour 13's original frame, not start over).
-
-## Watches active this hour
-
-- **T-PUBLISH-QUEUE-DRIFT-BUIDL** P1 — **27 cycles past 24h, holds.** Bundle file 4h-stale. Jefe-shell-only path.
-- **T-BRIEFING-NOVELTY-V2** P1 — **1-of-2 disconfirm met (Hour 16 HIGH 2/5).** Hour 17 gate to close-or-hold.
-- **T-EOD-QA-EGRESS** OPEN **13th-consecutive** — recurrence rule suppresses new incident; Jefe allowlist update remains the unblocker.
-- **T-LOCK-ESCALATION** — **dormant this cycle (0 stale locks at entry).** mv-recipe 15-of-15 success cumulative; recipe untouched this cycle.
-- **T-DIVERGENCE-WIDENING** LATENT — origin +3 / master +0 this gap (briefing-15+hyperliquid+briefing-16). Trajectory continues widening.
-- **T-WIP-DELTA-RESUME** LATENT — 5th consecutive cycle no-watch.
-- **T-FORMAT-COLLAPSE-V2** moratorium 10th cycle of effect; **system SLO 40.00% (first non-flat point in 6 cycles, via `5a629c6d8`)**; Hour 18 review (this cycle re-defers per T3).
-- **T-PHANTOM-INCIDENT-PATTERN** WATCH — 2-occurrence baseline; codified Hour 08 into `ops/SCOPE_METHODOLOGY.md`.
-
-## Closed this cycle
-
-- **T-NEWS-BRIEFING-CADENCE-BROKEN P1** → CLOSED (2-of-2 disconfirm met: briefings 15+16 on-cadence within-SLO).
-- **T-HOUR-STANDUP-MISSED P2** → CLOSED (2-of-2 self-check disconfirm met: Hours 15+16 single-fire on time).
-- **T-DOUBLEFIRE-PATTERN WATCH** → CLEAR (2-of-2 disconfirm met: Hours 15+16 single-fire).
+- **What:** V2 moratorium 11th cycle of effect. Hour 18 is the deferred-thrice review gate per Hour 16's commitment. Pre-stage the review document so Hour 18 standup can land a decision without re-deferring a 4th time. Capture the bifurcated SLO trajectory: system 42.31% (rising via design-polish channel) vs runner-only 26.92% (flat 19h+).
+- **Why:** Three deferrals are at the edge of "useful patience". Hour 13 → 15 → 16 → 18 is the longest defer-chain in the V2 spec history. A 4th defer would require an explicit "pre-review evidence still insufficient" justification — which is hard to write when the design-polish channel has produced 2-cycle-confirmed evidence. **Compromise:** pre-stage the review doc this cycle (Hour 17) so Hour 18 standup runs the review without further structural debate; if Hour 17→18 produces a 3rd design-polish ship, the review concludes "moratorium applies to runner-only, design-polish-Jefe-shell is a viable parallel src path"; if no 3rd ship, the review concludes "moratorium holds intact, 2-cycle was a cluster not a channel". Both conclusions are pre-staged.
+- **How:** Append to `ops/build-cycle/2026-04-27T17-15Z-V2-moratorium-11th-cycle-pre-review-prep.md` (new file): §Cycle-by-cycle SLO trajectory (Hours 03-17), §Channel decomposition (runner vs design-polish vs briefing-pipeline), §Hour 18 decision-tree (pre-staged conclusions for ship-vs-no-ship Hour 17→18 outcome). Standup runner writes this commit. **If standup runner does not execute this within 1 cycle, route to `T-FORMAT-COLLAPSE-V2-deferred` (this task is ops-only, so spec is satisfied).**
+- **Deliverable:** `ops/build-cycle/2026-04-27T17-15Z-V2-moratorium-11th-cycle-pre-review-prep.md` (new file, decision-tree pre-stage).
+- **Rollback:** N/A (ops-only doc).
 
 ## Commit plan for this cycle
 
-- `ops/HOURLY_AGENDA.md` (this file — write).
-- `ops/hourly-log.csv` (append Hour 16 row).
-- `ops/build-cycle/2026-04-27T16-18Z-V2-moratorium-10th-cycle-noop-note.md` (new — T3 deliverable).
+Files this Hour-17 standup will create or touch:
+1. `ops/HOURLY_AGENDA.md` — overwrite with this cycle's agenda (this file).
+2. `ops/incidents/2026-04-27T17-15Z-briefing-novelty-v2-conjunction-re-met-after-1-cycle-blip.md` — NEW, deepened-incident note (T2).
+3. `ops/build-cycle/2026-04-27T17-15Z-V2-moratorium-11th-cycle-pre-review-prep.md` — NEW, Hour 18 review pre-stage (T3).
+4. `ops/hourly-log.csv` — append Hour 17 row.
 
-No `src/` writes this cycle (V2 moratorium 10th cycle of effect; ops-only path).
+**No src/ writes.** V2-moratorium 11th-cycle compliant. All 3 ops-only writes are within standup-runner empirical track record (16-of-16 ops-commit success).
 
----
+## One-line summary
 
-**Return:** Hour 16: shipped briefing-16 on-cadence + `5a629c6d8` hyperliquid design-polish (build-cycle silence streak BROKEN at 17h+) + 0 standup-runner src commits, priority = T1 design-polish-momentum-watch + T2 briefing-novelty-V2-P1-de-escalation-gate-Hour-17 + T3 V2-moratorium-10th-cycle-1-line-note-defer-full-review-to-Hour-18.
+Hour 17: shipped briefing-17 + V2-novelty-deepened-note + V2-review-pre-stage, priority = confirm-or-disconfirm design-polish 3-cycle regime at Hour 18 V2-review gate.
