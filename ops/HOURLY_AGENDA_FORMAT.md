@@ -93,3 +93,18 @@ Priorities renumber monotonically T1, T2, T3 each cycle. Do NOT preserve numbers
 - **Production incident:** top of §Incidents as P0, override normal priorities, first task is always "restore prod."
 - **Jefe-touch detected on the jefe-ask doc:** reshuffle tasks same cycle to execute the reconcile immediately, collapse §Incidents P0s, push T1/T2/T3 to next cycle.
 - **Runner-topology restored (multi-agent confirmed):** revisit this spec and re-introduce agent-assignment metadata on each task.
+
+## Retired watches (added 2026-04-27, Hour 06)
+
+This section records standup watches that have been formally retired by empirical disconfirmation. Retiring a watch transparently prevents zombie-watch resurrection by future cycles and keeps §Incidents focused on live signal.
+
+### T-BRIEFING-NOVELTY-V2 (retired 2026-04-27 Hour 06)
+
+- **Origin:** opened Hour 04 (2026-04-27 04:14Z) after briefing-04 shipped 4/5 HIGH with 4/5 recurrences (highest content-staleness ratio observed in this run).
+- **V2 hypothesis:** "high-impact draws ≥4/5 correlate with static-pool reuse rather than novelty inflow."
+- **V2 trigger conditions:** if any future cycle exhibits ≥4/5 HIGH AND ≥3/5 recurrences, file a Content-Quality-Regression incident.
+- **Empirical record under V2 watch:**
+  - Hour 05 (2026-04-27 05:18Z): briefing-05 = 3/5 HIGH + 2/5 recurrences → both V2 thresholds unmet.
+  - Hour 06 (2026-04-27 06:14Z): briefing-06 = 3/5 HIGH + 1/5 recurrences → both V2 thresholds unmet, recurrence ratio further below.
+- **Decision:** retired. Trigger conditions doubly unmet for two consecutive cycles; recurrence ratio moved opposite to V2's predicted regime. The V2 hypothesis appears to describe a single Hour 04 outlier, not a sustained content-pool dynamic.
+- **Future re-trigger criterion:** if any cycle independently observes ≥4/5 HIGH AND ≥3/5 recurrences, file a fresh Content-Quality-Regression incident from first principles. **Do NOT resurrect T-BRIEFING-NOVELTY-V2 as a named watch** — re-investigate the content-pool dynamic from scratch with current evidence.
