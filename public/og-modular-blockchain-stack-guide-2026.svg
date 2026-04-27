@@ -89,7 +89,7 @@
   <text x="60" y="258" fill="url(#titleGrad)" font-size="44" font-weight="800" font-family="Inter, sans-serif" letter-spacing="-0.02em">Stack Guide 2026</text>
 
   <!-- Subtitle -->
-  <text x="60" y="310" fill="#8b949e" font-size="20" font-family="Inter, sans-serif">DA, Execution & Settlement layers explained</text>
+  <text x="60" y="310" fill="#8b949e" font-size="20" font-family="Inter, sans-serif">DA, Execution &amp; Settlement layers explained</text>
 
   <!-- Key stats -->
   <g transform="translate(60, 360)">
