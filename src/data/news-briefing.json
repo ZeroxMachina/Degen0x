@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T02:08:00Z",
-  "briefing_id": "briefing-2026-04-27-02",
+  "generated_at": "2026-04-27T03:08:00Z",
+  "briefing_id": "briefing-2026-04-27-03",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-02-001",
-      "headline": "April hacks hit $620M in 20 days — worst month since Bybit's Feb '25 breach",
-      "slug": "april-2026-crypto-hacks-620m-worst-month-since-bybit",
-      "tldr": "Crypto protocols have lost $620M to hacks and exploits in the first 20 days of April, eclipsing Q1 2026 combined.",
-      "why_it_matters": "Why it matters: 95% of losses came from just two incidents — bridge and admin-key failures, not novel zero-days — meaning the playbook is repeatable and the next nine-figure drain is likely already in motion.",
+      "id": "story-2026-04-27-03-001",
+      "headline": "Trump team prepping public release of Strategic Bitcoin Reserve architecture",
+      "slug": "trump-strategic-bitcoin-reserve-architecture-framework",
+      "tldr": "The Trump administration is finalizing the detailed framework for a US Strategic Bitcoin Reserve, including how Treasury would accumulate, custody, and report on BTC holdings.",
+      "why_it_matters": "Why it matters: A formal acquisition framework moves the SBR from executive-order optics to operational policy and sets a sovereign-bid template every other G20 treasury will study.",
       "the_details": [
-        "Year-to-date theft sits at ~$771.8M across 47 separate incidents, per Live Bitcoin News tallies.",
-        "Drift on Solana ($285M, Apr 1) and Kelp DAO ($292M, Apr 18) account for nearly all of April's losses.",
-        "April's total is 3.7x larger than Q1 2026 combined, the worst since the $1.4B Bybit breach in Feb 2025."
+        "Architecture covers Treasury accumulation mechanics, custody, and reporting standards for federal BTC holdings.",
+        "Industry sources expect publication before the summer congressional recess.",
+        "Follows months of inter-agency coordination on seized-asset retention and budget-neutral acquisition options."
       ],
-      "source": "Live Bitcoin News",
-      "source_url": "https://www.livebitcoinnews.com/april-2026-crypto-hacks-hit-620m-as-bridge-failures-and-admin-exploits-dominate-attacks/",
-      "category": "security",
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/bitcoin/latest-updates/",
+      "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-24T18:00:00Z"
+      "timestamp": "2026-04-26T18:00:00Z"
     },
     {
-      "id": "story-2026-04-27-02-002",
-      "headline": "BlackRock IBIT options open interest tops Deribit — derivatives center of gravity flips",
-      "slug": "blackrock-ibit-options-open-interest-tops-deribit",
-      "tldr": "Open interest on BlackRock's IBIT bitcoin ETF options surpassed Deribit on Friday, marking a structural shift to U.S. regulated venues.",
-      "why_it_matters": "Why it matters: When the deepest BTC options book lives inside a U.S. brokerage wrapper, hedging flows and implied vol get set by TradFi desks — not crypto natives — permanently changing how spot reacts to macro events.",
+      "id": "story-2026-04-27-03-002",
+      "headline": "Atkins marks one year at SEC: agency officially in 'rulemaking mode'",
+      "slug": "atkins-one-year-sec-anniversary-rulemaking-mode",
+      "tldr": "SEC Chair Paul Atkins hit his one-year mark with crypto oversight publicly shifting from enforcement-heavy to rulemaking-led, setting the table for finalized digital-asset rules.",
+      "why_it_matters": "Why it matters: A rulemaking posture means firms can finally underwrite product launches against written rules instead of pricing in litigation risk on every step.",
       "the_details": [
-        "IBIT options launched in November 2024 and have now overtaken Deribit, the long-time offshore leader.",
-        "Milestone hit on Apr 24, 2026, as BTC traded near $80K with whales building long perpetual positions.",
-        "Signals rapid institutional adoption of regulated crypto derivatives less than 18 months post-launch."
+        "Atkins was confirmed in April 2025; the SEC has since issued guidance clarifying federal securities laws apply to certain crypto assets.",
+        "The CFTC has joined the joint interpretation, easing a decade of jurisdictional limbo.",
+        "Trading and Markets Division has greenlit certain Covered User Interface Providers without broker-dealer registration under set conditions."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "source": "BlockBeats",
+      "source_url": "https://m.theblockbeats.info/en/news/62085",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-26T16:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-03-003",
+      "headline": "Solana spot ETFs cross $1B AUM as SOL retests $80 support a third time",
+      "slug": "solana-spot-etf-aum-1b-sol-retests-80-support",
+      "tldr": "US spot SOL ETFs hit $1 billion in combined AUM on April 25 even as Solana's spot price has retested the $80 floor for the third time since February.",
+      "why_it_matters": "Why it matters: Institutional capture is happening at the same level retail keeps puking — the asymmetric setup that defined BTC ETF flows in early 2024.",
+      "the_details": [
+        "Spot SOL ETFs printed a historic MACD buy signal on the weekly close.",
+        "SOL is down 38% YTD from $127 to roughly $80, with the trading range tightening to $77-$94.",
+        "Alpenglow consensus upgrade targeting 150ms finality remains on track for 2026 mainnet rollout."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-25T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-03-004",
+      "headline": "TOKEN2049 Dubai pushed to 2027 over heightened UAE security risks",
+      "slug": "token2049-dubai-postponed-2027-uae-security",
+      "tldr": "Organizers have moved TOKEN2049 Dubai to 2027 citing security risks in the UAE, taking one of the year's biggest crypto venues off the calendar.",
+      "why_it_matters": "Why it matters: The cancellation reroutes thousands of fund LPs, market makers and protocol BD teams — expect a scramble for Singapore September slots and a thinner Q4 conference circuit.",
+      "the_details": [
+        "Decision driven by escalating regional security concerns linked to broader Gulf tensions.",
+        "Dubai had been a top-three global crypto event by attendance and sponsor spend.",
+        "TOKEN2049 Singapore in September remains the next major flagship on the schedule."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-26T12:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-03-005",
+      "headline": "Kevin O'Leary dumps altcoins, says he's now BTC and ETH only",
+      "slug": "kevin-oleary-pivots-bitcoin-ethereum-only-abandons-altcoins",
+      "tldr": "Investor Kevin O'Leary publicly pivoted his crypto book to bitcoin and ethereum only, citing the two assets' superior scale and 'survivability' versus the long tail.",
+      "why_it_matters": "Why it matters: Boomer-friendly TV personalities setting a BTC+ETH-only narrative reinforces the institutional barbell that already shows up in ETF flows and altcoin season indexes.",
+      "the_details": [
+        "O'Leary said altcoins fail his scale and survivability test in the current cycle.",
+        "Comments land as the Altcoin Season Index has dropped 27% over the last 30 days.",
+        "Spot BTC and ETH ETF assets continue to dominate net crypto fund inflows in 2026."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/bitcoin/latest-updates/",
       "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-25T14:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-02-003",
-      "headline": "100+ crypto firms led by Coinbase, Ripple press Senate to mark up Market Structure bill",
-      "slug": "100-crypto-firms-senate-market-structure-bill-clarity",
-      "tldr": "A coalition of 100+ crypto firms is pushing the Senate Banking Committee to advance the CLARITY Act and finalize a federal framework for digital assets.",
-      "why_it_matters": "Why it matters: Industry alignment on a single bill is rare — if the Senate moves before midterm season, U.S. crypto firms get the SEC/CFTC jurisdiction split they've waited 7 years for, unlocking listings and custody decisions held in limbo.",
-      "the_details": [
-        "Letter signed by Coinbase, Ripple and 100+ others, delivered week of April 23, 2026.",
-        "Builds on the SEC-CFTC joint interpretive release issued March 17, 2026 — a 68-page rewrite superseding the 2019 framework.",
-        "CLARITY Act roundtable already held April 16; bill defines token taxonomy across five categories."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-23T16:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-02-004",
-      "headline": "Kelp DAO loses $292M from rsETH bridge — Aave hit by liquidity crunch",
-      "slug": "kelp-dao-292m-rseth-exploit-aave-withdrawals",
-      "tldr": "An attacker drained $292M from Kelp DAO's rsETH token on April 19, stranding wrapped ether across 20 chains and triggering heavy Aave withdrawals.",
-      "why_it_matters": "Why it matters: The cascade from a single LRT bridge into a major lending market exposed how restaking risk is now systemic — DeFi blue chips can't isolate themselves when collateral spans 20 bridges.",
-      "the_details": [
-        "Largest DeFi exploit of 2026 — $292M drained from Kelp DAO's rsETH on Apr 18-19.",
-        "Wrapped ether stranded across 20 chains, sparking 'DeFi is dead' narrative across crypto Twitter.",
-        "Aave saw heavy withdrawals as users pre-emptively de-risked LRT-backed positions."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
-      "category": "defi",
-      "impact": "high",
-      "timestamp": "2026-04-19T22:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-02-005",
-      "headline": "SEC carves out DeFi front-ends from broker-dealer registration",
-      "slug": "sec-defi-front-ends-broker-dealer-registration-exception",
-      "tldr": "SEC staff said on April 13 it won't object to 'Covered User Interface Providers' offering software to submit crypto-asset securities transactions without registering as broker-dealers.",
-      "why_it_matters": "Why it matters: This is the most explicit greenlight U.S. DeFi has ever received — projects can run hosted front-ends on U.S. infrastructure without needing FINRA membership, removing the cleanest legal threat to onchain trading UIs.",
-      "the_details": [
-        "Statement issued April 13, 2026 by SEC staff covering 'Covered User Interface Providers'.",
-        "Exempts UIs that let users prepare and submit crypto asset security transactions from broker-dealer registration.",
-        "Pairs with the SEC-CFTC joint framework released March 17 — both moves aimed at codifying onchain market structure."
-      ],
-      "source": "Sidley Austin LLP",
-      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-13T20:00:00Z"
+      "impact": "medium",
+      "timestamp": "2026-04-25T15:00:00Z"
     }
   ]
 }
