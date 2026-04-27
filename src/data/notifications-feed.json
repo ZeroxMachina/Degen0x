@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-019",
+    "type": "news",
+    "title": "📰 April crypto hacks blow past $606M in 18 days as Lazarus Group bags two of three biggest hauls",
+    "message": "Crypto protocols lost $606M across 12 incidents in the first 18 days of April, the worst month since February 2025.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-018",
     "type": "news",
     "title": "📰 Aave V3 USDC pool stuck at 99.87% utilization with under $3M left as Circle pushes urgent fix",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "📰 100+ Crypto Firms Pressure Senate to Mark Up Clarity Act or Risk Enforcement Revival",
     "message": "A coalition led by Coinbase and Ripple sent a letter demanding the Senate Banking Committee advance the Clarity Act market-structure bill immediately.",
-    "actionUrl": "/news",
-    "date": "2026-04-23"
-  },
-  {
-    "id": "feed-2026-04-23-001",
-    "type": "news",
-    "title": "📰 Bitcoin Stalls Below $80K as Pentagon-Backed Inflation Warning Flips Risk Mood",
-    "message": "BTC's push toward $80,000 stalled at $77.8K as rising oil and Strait of Hormuz risk reignited inflation fears across risk assets.",
     "actionUrl": "/news",
     "date": "2026-04-23"
   }

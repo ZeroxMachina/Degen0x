@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T17:07:00Z",
-  "briefing_id": "briefing-2026-04-27-17",
+  "generated_at": "2026-04-27T18:05:00Z",
+  "briefing_id": "briefing-2026-04-27-18",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-17-001",
-      "headline": "Aave V3 USDC pool stuck at 99.87% utilization with under $3M left as Circle pushes urgent fix",
-      "slug": "aave-usdc-pool-99-utilization-circle-urgent-fix",
-      "tldr": "Aave's flagship USDC market is effectively drained, leaving lenders unable to withdraw and triggering Circle to demand emergency rate action.",
-      "why_it_matters": "Why it matters: A frozen USDC market on the largest DeFi lender risks cascading liquidations and signals that post-Kelp deposit flight has now broken Aave's core money market, not just its riskier pools.",
+      "id": "story-2026-04-27-18-001",
+      "headline": "April crypto hacks blow past $606M in 18 days as Lazarus Group bags two of three biggest hauls",
+      "slug": "april-crypto-hacks-606m-lazarus-dominates",
+      "tldr": "Crypto protocols lost $606M across 12 incidents in the first 18 days of April, the worst month since February 2025.",
+      "why_it_matters": "Why it matters: Two state-backed thefts wiped out a year of DeFi security progress and are reshaping how lenders and restakers think about key management.",
       "the_details": [
-        "Aave V3's USDC pool has held at 99.87% utilization for days with less than $3M of available liquidity for withdrawals.",
-        "Over $8.4B in deposits left Aave within 48 hours after the Kelp and Drift exploits, hollowing out reserves.",
-        "Circle is pressing the Aave DAO to hike rates or adjust caps to restore borrow/lend balance before forced liquidations cascade."
+        "KelpDAO drained for ~$292M on April 18, surpassing Drift's $285M February exploit as the largest hack of 2026.",
+        "North Korea's Lazarus Group is attributed to both KelpDAO and Drift after months of social-engineering operator keys.",
+        "Private-key compromises now drive the bulk of 2026 losses, shifting the threat from smart-contract code to human ops."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/",
-      "category": "defi",
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-27T15:30:00Z"
+      "timestamp": "2026-04-27T16:30:00Z"
     },
     {
-      "id": "story-2026-04-27-17-002",
-      "headline": "Strategy scoops another 3,273 BTC for $255M, treasury balloons to 818,334 BTC",
-      "slug": "strategy-buys-3273-btc-255m-april-27",
-      "tldr": "Michael Saylor's Strategy disclosed a $255M bitcoin purchase, lifting the corporate treasury to a record 818,334 BTC at an avg price near $77,900.",
-      "why_it_matters": "Why it matters: Strategy is buying directly into a sub-$80K market, signaling continued conviction even as spot price stalls and giving bulls a concrete bid to point at while ETFs absorb supply.",
+      "id": "story-2026-04-27-18-002",
+      "headline": "Bitcoin slams into $80K wall, retreats below $78K despite billions in fresh stablecoin liquidity",
+      "slug": "bitcoin-80k-resistance-pullback-stablecoin-liquidity",
+      "tldr": "BTC briefly punched above $79,000 in Asian hours before sellers concentrated around $80K dragged price back below $78,000.",
+      "why_it_matters": "Why it matters: Onchain stablecoin deposits and ETF demand are loaded for upside, but $80K is now the line that decides whether April closes as the best month in a year.",
       "the_details": [
-        "Strategy bought 3,273 BTC for ~$255M on April 27, implying an average price near $77,900.",
-        "Total holdings now sit at 818,334 BTC, the largest corporate bitcoin treasury on record.",
-        "Disclosure landed alongside BlackRock's IBIT logging its biggest inflow day in six months."
-      ],
-      "source": "CoinSpectator",
-      "source_url": "https://coinspectator.com/bitcoin-com/2026/04/27/strategy-buys-3273-bitcoin-for-255m-total-holdings-hit-818334-btc/",
-      "category": "bitcoin",
-      "impact": "high",
-      "timestamp": "2026-04-27T13:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-17-003",
-      "headline": "BlackRock's IBIT logs $983M inflow day, biggest in six months as GBTC sheds $54M",
-      "slug": "blackrock-ibit-983m-inflows-six-month-high",
-      "tldr": "Spot Bitcoin ETFs saw a sharp rotation Monday, with IBIT pulling $983M in fresh capital while Grayscale's GBTC and Bitwise's BITB posted outflows.",
-      "why_it_matters": "Why it matters: A near-$1B single-day haul into IBIT during a price stall confirms institutional bid is still scaling, even as retail-led products bleed — a pattern that has historically preceded leg-up moves.",
-      "the_details": [
-        "iShares Bitcoin Trust (IBIT) recorded $983M in net inflows, its highest one-day total in six months.",
-        "Grayscale's GBTC bled $54.18M and Bitwise's BITB shed $11.35M on the same session.",
-        "Inflows hit as BTC traded between $77,700 and $79,000 with $80K acting as a hard ceiling."
-      ],
-      "source": "Bitcoin Ethereum News",
-      "source_url": "https://bitcoinethereumnews.com/bitcoin/heres-what-happened-in-crypto-today-983m-bitcoin-etf-inflows-3m-aave-boost-more/",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-27T12:30:00Z"
-    },
-    {
-      "id": "story-2026-04-27-17-004",
-      "headline": "BTC slams into $80K wall as bitcoin-dollar inverse correlation hits 4-year extreme",
-      "slug": "btc-80k-wall-dollar-inverse-correlation-extreme",
-      "tldr": "Bitcoin briefly cracked $79K before sellers capped the move below $80K, with BTC and DXY now moving in near-perfect opposition for the first time since 2022.",
-      "why_it_matters": "Why it matters: A clean inverse with the dollar reframes BTC as a macro hedge rather than a risk asset this cycle, making upcoming FOMC and Iran-talks headlines the dominant short-term catalysts.",
-      "the_details": [
-        "BTC opened at $78,670, hit $79,000+ in Asia, then slipped back to ~$77,700 by 9am ET.",
-        "Analysts flagged concentrated sell orders at $80K despite record IBIT inflows and $5B in fresh USDT supply.",
-        "BTC-USD correlation with DXY is the most negative in nearly four years, per CoinDesk's daybook."
+        "BTC trades near $79,123 on 2.04% daily gain with $24.7B volume; total crypto market cap reclaims $2.71T.",
+        "Roughly $5B in fresh USDT minted in April fuels speculation that sidelined capital is ready to bid above resistance.",
+        "Fear & Greed Index jumps to 47 (Neutral) from 33 (Fear) yesterday as Iran peace-talk headlines lift risk."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
       "category": "bitcoin",
       "impact": "high",
-      "timestamp": "2026-04-27T11:00:00Z"
+      "timestamp": "2026-04-27T13:00:00Z"
     },
     {
-      "id": "story-2026-04-27-17-005",
-      "headline": "SEC carves out broker-dealer exemption for DEX front-ends, clearing path for compliant DeFi UIs",
-      "slug": "sec-decentralized-ui-broker-exemption-defi",
-      "tldr": "An SEC staff statement says 'Covered User Interface Providers' running non-custodial DEX front-ends won't need broker-dealer registration, easing a key DeFi overhang.",
-      "why_it_matters": "Why it matters: This is the first concrete olive branch from the SEC to DeFi front-end operators in years, narrowing the legal gray zone that drove projects offshore and unlocking US-hosted interfaces.",
+      "id": "story-2026-04-27-18-003",
+      "headline": "BitMine ETH stack tops 5 million after 101,901 ETH buy, the largest treasury grab since December",
+      "slug": "bitmine-ethereum-5-million-eth-treasury",
+      "tldr": "BitMine added 101,901 ETH last week, pushing its treasury above 5 million ETH and cementing it as the largest corporate ETH holder.",
+      "why_it_matters": "Why it matters: A single buyer is absorbing supply at a pace that rivals ETF flows, tightening the float just as ETH lags BTC's rally.",
       "the_details": [
-        "April 13 SEC statement exempts non-custodial UI providers for crypto-asset securities from broker-dealer registration.",
-        "Statement is paired with the joint SEC-CFTC interpretive release from March that set a 5-category token taxonomy.",
-        "Over 100 crypto firms including Coinbase and Ripple are pressing the Senate to mark up the Clarity Act this session."
+        "Purchase is BitMine's biggest single accumulation since December 2025, executed as ETH traded near $2,320.",
+        "Treasury now holds over 5,000,000 ETH worth roughly $11.6B at current spot prices.",
+        "ETH is up 2.2% on the session but remains a structural laggard versus Bitcoin in 2026 to date."
       ],
-      "source": "Sidley Austin LLP",
-      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "source": "Bitcoin Ethereum News",
+      "source_url": "https://bitcoinethereumnews.com/ethereum/bitmines-ethereum-holdings-top-5-million-eth-after-largest-purchase-since-december/",
+      "category": "ethereum",
+      "impact": "high",
+      "timestamp": "2026-04-27T15:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-18-004",
+      "headline": "SEC carves out broker-registration exemption for decentralized trading interfaces in April 13 staff letter",
+      "slug": "sec-broker-exemption-decentralized-interfaces",
+      "tldr": "SEC Trading and Markets staff said it won't object to 'Covered User Interface Providers' offering crypto-asset-security trading without broker-dealer registration.",
+      "why_it_matters": "Why it matters: The carve-out clears a major legal overhang for frontends like Uniswap and could unlock a wave of US-domiciled DeFi launches in Q2.",
+      "the_details": [
+        "Staff statement issued April 13 covers software interfaces that prepare and submit transactions in crypto-asset securities.",
+        "Pairs with the March 17 SEC-CFTC joint release establishing a five-category token taxonomy across agencies.",
+        "Coalition of 100+ firms including Coinbase and Ripple now pressing Senate Banking to mark up the Clarity Act."
+      ],
+      "source": "Sidley Data Matters",
+      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
       "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T12:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-18-005",
+      "headline": "Aave lands on Solana via Sunrise DeFi, tapping a $5.6B onchain market and $15.35B stablecoin pool",
+      "slug": "aave-solana-sunrise-defi-expansion",
+      "tldr": "Aave is bridging Ethereum-backed liquidity to Solana through Sunrise DeFi to chase faster execution and lower fees.",
+      "why_it_matters": "Why it matters: The biggest EVM lender stepping onto SVM is the clearest signal yet that liquidity, not ideology, decides where DeFi ships next.",
+      "the_details": [
+        "Solana's $5.6B DeFi base and $15.35B stablecoin pool give Aave instant scale outside the EVM stack.",
+        "Move follows Solana's Alpenglow upgrade slashing finality below 200ms and Firedancer's path to 1M TPS.",
+        "Spot SOL ETF inflows have collapsed 92% from $419M in November 2025 to $34M in April, raising stakes for native demand."
+      ],
+      "source": "AMBCrypto",
+      "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
+      "category": "defi",
       "impact": "medium",
-      "timestamp": "2026-04-27T09:00:00Z"
+      "timestamp": "2026-04-27T11:00:00Z"
     }
   ]
 }
