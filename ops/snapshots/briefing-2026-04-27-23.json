@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-27T23:09:00Z",
+  "briefing_id": "briefing-2026-04-27-23",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-27-23-001",
+      "headline": "FOMC week pins crypto: BTC stuck below $80K as traders price zero rate cuts",
+      "slug": "fomc-week-btc-stuck-below-80k-zero-cuts",
+      "tldr": "Bitcoin trades near $78K and Ether near $2,330 as the FOMC meeting becomes the week's defining macro catalyst with markets pricing no cut.",
+      "why_it_matters": "Why it matters: A hawkish hold or surprise dovish tilt sets the tape for the next leg of the 2026 cycle, with Strategy and ETFs already absorbing supply at this range.",
+      "the_details": [
+        "BTC +0.56% to roughly $78,112; ETH +0.61% to $2,328 ahead of the FOMC decision later this week.",
+        "Strategy now holds 818,334 BTC bought for ~$62B at a $75,537 average — the float is increasingly trapped above cost basis.",
+        "Short-term holder profit-taking is offsetting fresh ETF and Strategy demand, capping price below the $80K resistance band."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-27T22:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-23-002",
+      "headline": "April becomes worst month for crypto theft since Bybit: $606M lost in 18 days",
+      "slug": "april-2026-606m-crypto-hack-record",
+      "tldr": "Two Lazarus-linked exploits — Drift and KelpDAO — drove April losses past $606M, the worst stretch since the $1.4B Bybit hit in February 2025.",
+      "why_it_matters": "Why it matters: Concentrated DPRK targeting of admin keys and bridges is hardening institutional risk policy and pushing TVL out of long-tail DeFi.",
+      "the_details": [
+        "Drift Protocol lost $285M on April 1 after a social-engineered admin key whitelisted bogus collateral.",
+        "KelpDAO's LayerZero rsETH bridge bled $292M on April 18, ~95% of the month's total combined with Drift.",
+        "Aave, Lido and EtherFi are coordinating an ETH-funded bailout to plug the KelpDAO shortfall."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-27T18:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-23-003",
+      "headline": "SEC carves DeFi front-ends out of broker-dealer rules in April 13 staff statement",
+      "slug": "sec-defi-frontend-broker-dealer-exemption",
+      "tldr": "SEC Trading and Markets staff said it won't object to 'Covered User Interface Providers' helping users submit crypto-asset-security trades without registering as brokers.",
+      "why_it_matters": "Why it matters: The carve-out unblocks US-domiciled DeFi UI development that had been frozen since 2022 and pressures the Senate to mark up the CLARITY Act.",
+      "the_details": [
+        "Statement issued April 13, 2026 by the SEC Division of Trading and Markets, building on the March 17 SEC-CFTC joint taxonomy.",
+        "Over 100 firms including Coinbase and Ripple are pushing the Senate Banking Committee to mark up the CLARITY Act this quarter.",
+        "Combined with the GENIUS Act stablecoin rulemaking, US crypto policy now has its clearest perimeter in nearly a decade."
+      ],
+      "source": "Sidley Austin",
+      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T16:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-23-004",
+      "headline": "Spot ETH ETFs notch 10-day green streak, pulling in $633M as institutional bid holds",
+      "slug": "eth-etf-10-day-streak-633m-inflows",
+      "tldr": "All ten US-listed Ethereum spot ETFs logged simultaneous net inflows for ten straight sessions, totaling $633M and outpacing every altcoin product.",
+      "why_it_matters": "Why it matters: Sustained ETH demand at sub-$2,400 prices sets a structural floor and resets the ETH/BTC ratio narrative going into the Prague upgrade.",
+      "the_details": [
+        "All 10 spot ETH ETFs printed net positive flows for 10 consecutive trading days, summing to $633M.",
+        "ETH is trading near $2,328 — the streak occurred while price moved sideways, signaling accumulation rather than chase.",
+        "Institutional desks cite the Prague upgrade and SEC-CFTC taxonomy as catalysts for the renewed bid."
+      ],
+      "source": "KuCoin News",
+      "source_url": "https://www.kucoin.com/news/flash/ethereum-solana-and-xrp-highlight-top-altcoins-for-2026-growth",
+      "category": "ethereum",
+      "impact": "high",
+      "timestamp": "2026-04-27T15:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-23-005",
+      "headline": "XRP institutional rails snap together: Goldman tops holders, Coinbase TAS futures launch May 1",
+      "slug": "xrp-coinbase-tas-goldman-institutional",
+      "tldr": "US spot XRP ETFs hold $1.53B AUM with Goldman as the largest institutional holder; Coinbase launches Trade-at-Settlement XRP futures on May 1.",
+      "why_it_matters": "Why it matters: TAS plus a commodity classification turns XRP into one of the few altcoins with a proper institutional execution stack — a template peers will chase.",
+      "the_details": [
+        "Spot XRP ETFs custody 773M XRP worth $1.53B; weekly inflows of $119.6M trail only ETH.",
+        "Coinbase Derivatives launches Trade at Settlement for XRP futures on May 1, 2026, easing block execution.",
+        "March 17 SEC-CFTC joint release classified XRP as a digital commodity, removing the long-standing securities overhang."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/xrp/latest-updates/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-27T14:00:00Z"
+    }
+  ]
+}
