@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T18:05:00Z",
-  "briefing_id": "briefing-2026-04-27-18",
+  "generated_at": "2026-04-27T19:10:00Z",
+  "briefing_id": "briefing-2026-04-27-19",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-18-001",
-      "headline": "April crypto hacks blow past $606M in 18 days as Lazarus Group bags two of three biggest hauls",
-      "slug": "april-crypto-hacks-606m-lazarus-dominates",
-      "tldr": "Crypto protocols lost $606M across 12 incidents in the first 18 days of April, the worst month since February 2025.",
-      "why_it_matters": "Why it matters: Two state-backed thefts wiped out a year of DeFi security progress and are reshaping how lenders and restakers think about key management.",
+      "id": "story-2026-04-27-19-001",
+      "headline": "Four central banks — Fed, ECB, BoJ, BoE — all set rates this week as crypto holds $2.71T",
+      "slug": "central-banks-rate-week-crypto-271t",
+      "tldr": "Bank of Japan, Federal Reserve, ECB and Bank of England each deliver policy decisions this week, the densest macro window of 2026 so far.",
+      "why_it_matters": "Why it matters: Synchronized rate signals will reset the dollar trade that has moved in near-perfect opposition to BTC for nearly four years, dictating whether the $79K wall finally breaks.",
       "the_details": [
-        "KelpDAO drained for ~$292M on April 18, surpassing Drift's $285M February exploit as the largest hack of 2026.",
-        "North Korea's Lazarus Group is attributed to both KelpDAO and Drift after months of social-engineering operator keys.",
-        "Private-key compromises now drive the bulk of 2026 losses, shifting the threat from smart-contract code to human ops."
-      ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-27T16:30:00Z"
-    },
-    {
-      "id": "story-2026-04-27-18-002",
-      "headline": "Bitcoin slams into $80K wall, retreats below $78K despite billions in fresh stablecoin liquidity",
-      "slug": "bitcoin-80k-resistance-pullback-stablecoin-liquidity",
-      "tldr": "BTC briefly punched above $79,000 in Asian hours before sellers concentrated around $80K dragged price back below $78,000.",
-      "why_it_matters": "Why it matters: Onchain stablecoin deposits and ETF demand are loaded for upside, but $80K is now the line that decides whether April closes as the best month in a year.",
-      "the_details": [
-        "BTC trades near $79,123 on 2.04% daily gain with $24.7B volume; total crypto market cap reclaims $2.71T.",
-        "Roughly $5B in fresh USDT minted in April fuels speculation that sidelined capital is ready to bid above resistance.",
-        "Fear & Greed Index jumps to 47 (Neutral) from 33 (Fear) yesterday as Iran peace-talk headlines lift risk."
+        "Crypto market cap sits at $2.71T, up 1.7% in 24 hours, with $66.6B in trading volume.",
+        "Q1 GDP and March PCE inflation print alongside Visa, Mastercard, Robinhood and Galaxy earnings.",
+        "BTC-dollar inverse correlation is at its most extreme reading in almost four years per CoinDesk."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
-      "category": "bitcoin",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
       "impact": "high",
       "timestamp": "2026-04-27T13:00:00Z"
     },
     {
-      "id": "story-2026-04-27-18-003",
-      "headline": "BitMine ETH stack tops 5 million after 101,901 ETH buy, the largest treasury grab since December",
-      "slug": "bitmine-ethereum-5-million-eth-treasury",
-      "tldr": "BitMine added 101,901 ETH last week, pushing its treasury above 5 million ETH and cementing it as the largest corporate ETH holder.",
-      "why_it_matters": "Why it matters: A single buyer is absorbing supply at a pace that rivals ETF flows, tightening the float just as ETH lags BTC's rally.",
+      "id": "story-2026-04-27-19-002",
+      "headline": "Spot Solana ETF inflows crater 92% to $34M as institutional risk appetite cools",
+      "slug": "solana-etf-inflows-crater-92-percent",
+      "tldr": "Spot SOL ETF net inflows fell from $419M in November 2025 to just $34M in April 2026, a 92% collapse signaling weakening institutional demand.",
+      "why_it_matters": "Why it matters: Solana was supposed to be the next ETF growth story after BTC and ETH, but the flow drought caps near-term price upside and undercuts the L1 rotation thesis.",
       "the_details": [
-        "Purchase is BitMine's biggest single accumulation since December 2025, executed as ETH traded near $2,320.",
-        "Treasury now holds over 5,000,000 ETH worth roughly $11.6B at current spot prices.",
-        "ETH is up 2.2% on the session but remains a structural laggard versus Bitcoin in 2026 to date."
+        "SOL trades near $86.47 with a $49.8B market cap, ranking seventh.",
+        "Solana Fear & Greed Index sits at 33, deeper into Fear than the broader market's 47.",
+        "Firedancer is still targeting 1M TPS in 2026; Alpenglow has cut finality below 200ms."
       ],
-      "source": "Bitcoin Ethereum News",
-      "source_url": "https://bitcoinethereumnews.com/ethereum/bitmines-ethereum-holdings-top-5-million-eth-after-largest-purchase-since-december/",
-      "category": "ethereum",
+      "source": "AMBCrypto",
+      "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
+      "category": "altcoins",
       "impact": "high",
-      "timestamp": "2026-04-27T15:00:00Z"
+      "timestamp": "2026-04-27T10:30:00Z"
     },
     {
-      "id": "story-2026-04-27-18-004",
-      "headline": "SEC carves out broker-registration exemption for decentralized trading interfaces in April 13 staff letter",
-      "slug": "sec-broker-exemption-decentralized-interfaces",
-      "tldr": "SEC Trading and Markets staff said it won't object to 'Covered User Interface Providers' offering crypto-asset-security trading without broker-dealer registration.",
-      "why_it_matters": "Why it matters: The carve-out clears a major legal overhang for frontends like Uniswap and could unlock a wave of US-domiciled DeFi launches in Q2.",
+      "id": "story-2026-04-27-19-003",
+      "headline": "SEC staff says crypto UI providers can skip broker-dealer registration under new conditions",
+      "slug": "sec-crypto-ui-broker-dealer-no-action",
+      "tldr": "The SEC's Trading and Markets division issued guidance on April 13 telling Covered User Interface Providers they will not face enforcement absent broker-dealer registration if conditions are met.",
+      "why_it_matters": "Why it matters: This is the first explicit safe harbor for front-end aggregators and DEX UIs — directly de-risking products like Uniswap interface, 1inch and Jupiter under U.S. law.",
       "the_details": [
-        "Staff statement issued April 13 covers software interfaces that prepare and submit transactions in crypto-asset securities.",
-        "Pairs with the March 17 SEC-CFTC joint release establishing a five-category token taxonomy across agencies.",
-        "Coalition of 100+ firms including Coinbase and Ripple now pressing Senate Banking to mark up the Clarity Act."
+        "Joint SEC-CFTC March 17 release classifies BTC, ETH, SOL, XRP and LINK as digital commodities.",
+        "FDIC, Treasury and FinCEN/OFAC GENIUS Act stablecoin rules are out for comment through June 2-9.",
+        "SEC Chair Atkins has shifted the agency from 'enforcement heavy' to 'rulemaking mode' at his one-year mark."
       ],
-      "source": "Sidley Data Matters",
-      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
       "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-27T12:00:00Z"
+      "timestamp": "2026-04-27T08:00:00Z"
     },
     {
-      "id": "story-2026-04-27-18-005",
-      "headline": "Aave lands on Solana via Sunrise DeFi, tapping a $5.6B onchain market and $15.35B stablecoin pool",
-      "slug": "aave-solana-sunrise-defi-expansion",
-      "tldr": "Aave is bridging Ethereum-backed liquidity to Solana through Sunrise DeFi to chase faster execution and lower fees.",
-      "why_it_matters": "Why it matters: The biggest EVM lender stepping onto SVM is the clearest signal yet that liquidity, not ideology, decides where DeFi ships next.",
+      "id": "story-2026-04-27-19-004",
+      "headline": "Aave plants $14.7B TVL flag on Solana via Sunrise DeFi as cross-chain liquidity war heats up",
+      "slug": "aave-solana-sunrise-defi-launch",
+      "tldr": "Aave's deployment to Solana through Sunrise DeFi routes Ethereum-backed liquidity into SVM execution, layering on top of Solana's existing $5.6B DeFi base.",
+      "why_it_matters": "Why it matters: This tests whether Solana speed actually drives net-new lending demand or just siphons Ethereum liquidity — the answer will set the template for every L1 expansion.",
       "the_details": [
-        "Solana's $5.6B DeFi base and $15.35B stablecoin pool give Aave instant scale outside the EVM stack.",
-        "Move follows Solana's Alpenglow upgrade slashing finality below 200ms and Firedancer's path to 1M TPS.",
-        "Spot SOL ETF inflows have collapsed 92% from $419M in November 2025 to $34M in April, raising stakes for native demand."
+        "Ethereum still anchors over $12B of Aave's $14.7B total TVL.",
+        "Aave saw $8.4B in deposits leave in 48 hours after the April KelpDAO and Drift exploits.",
+        "Solana DeFi TVL stands near $5.6B, the largest non-EVM DeFi base."
       ],
       "source": "AMBCrypto",
       "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
       "category": "defi",
       "impact": "medium",
-      "timestamp": "2026-04-27T11:00:00Z"
+      "timestamp": "2026-04-27T09:15:00Z"
+    },
+    {
+      "id": "story-2026-04-27-19-005",
+      "headline": "The Block names Steve Chung CEO alongside $10M Foresight Ventures raise",
+      "slug": "the-block-steve-chung-ceo-foresight",
+      "tldr": "Crypto media outlet The Block appointed veteran media operator Steve Chung as CEO with a fresh $10M check from Foresight Ventures.",
+      "why_it_matters": "Why it matters: Crypto media has been bleeding for years; a fresh raise plus an outside CEO signals the data-and-research playbook is the model investors will fund next cycle.",
+      "the_details": [
+        "Larry Cermak shifts to President, focused on research and product.",
+        "Foresight Ventures is leading the round, doubling down on info infrastructure.",
+        "TOKEN2049 Dubai was just pushed to 2027 amid heightened UAE security risks."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/398948/the-block-appoints-steve-chung-ceo",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-27T14:00:00Z"
     }
   ]
 }
