@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-27T21:08:00Z",
+  "briefing_id": "briefing-2026-04-27-21",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-27-21-001",
+      "headline": "April becomes 2026's worst hack month at $606M as Lazarus claims 95% of losses",
+      "slug": "april-2026-worst-hack-month-606m-lazarus",
+      "tldr": "Crypto hacks crossed $606M in April across 12 incidents, with North Korea's Lazarus Group behind the Drift and KelpDAO breaches that drove 95% of losses.",
+      "why_it_matters": "Why it matters: Concentration of state-actor exploits reshapes DeFi threat models — every protocol now has to budget for nation-state adversaries, not just smart-contract bugs.",
+      "the_details": [
+        "Lazarus drained $285M from Solana's Drift Protocol on April 1 and $292M from KelpDAO on April 18.",
+        "47 incidents YTD versus 28 in the same window of 2025 — attack frequency up 68% year-over-year.",
+        "Top DeFi lender saw $9B in outflows post-KelpDAO as users yanked liquidity from cross-chain venues."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-27T18:30:00Z"
+    },
+    {
+      "id": "story-2026-04-27-21-002",
+      "headline": "Four central banks set rates this week as Robinhood, Galaxy earnings test crypto bid",
+      "slug": "four-central-banks-rates-robinhood-galaxy-earnings",
+      "tldr": "BoJ, Fed, ECB and BoE all decide policy this week alongside Q1 GDP, March PCE, and earnings from Robinhood and Galaxy that gauge crypto demand.",
+      "why_it_matters": "Why it matters: Synchronized central bank week is the year's heaviest macro lift — anything hawkish slams BTC's $80K ceiling and stalls the spring rally cold.",
+      "the_details": [
+        "Fed decision lands midweek with the March PCE inflation print as the data anchor traders watch.",
+        "Robinhood and Galaxy Digital earnings will reveal April retail and institutional crypto flows.",
+        "WTI above $90 keeps inflation risk live, complicating any rate-cut guidance Powell offers."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-27T13:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-21-003",
+      "headline": "SEC Chair Atkins to keynote Bitcoin 2026 Vegas as Clarity Act push hits the Senate",
+      "slug": "sec-atkins-bitcoin-2026-vegas-clarity-act",
+      "tldr": "SEC Chair Paul Atkins is slated to speak at Bitcoin 2026 in Las Vegas as 100+ crypto firms press the Senate Banking Committee to mark up the Clarity Act.",
+      "why_it_matters": "Why it matters: A sitting SEC chair keynoting a Bitcoin conference signals just how far the agency's posture has flipped from the Gensler enforcement era.",
+      "the_details": [
+        "Coinbase, Ripple and 100+ firms sent a joint letter urging Senate to move the market structure bill.",
+        "Atkins inherits the SEC-CFTC token taxonomy from the March 17 joint interpretive release.",
+        "Conference runs alongside FOMC week, splitting industry attention between regulation and rates."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-monday-april-27-2026-prices-hold-ahead-of-potential-peace-talks-and-fed-meeting-114927492.html",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T14:30:00Z"
+    },
+    {
+      "id": "story-2026-04-27-21-004",
+      "headline": "Solana devs pick Falcon signatures to harden network against quantum attack",
+      "slug": "solana-falcon-signatures-quantum-resistant",
+      "tldr": "Solana's two core dev teams Anza and Jump's Firedancer landed on Falcon, a lattice-based signature scheme, as the network's quantum-resistant migration path.",
+      "why_it_matters": "Why it matters: First major L1 with a unified quantum migration plan — sets the engineering bar Bitcoin and Ethereum's slower-moving roadmaps will be measured against.",
+      "the_details": [
+        "Falcon would replace the Ed25519 scheme that currently secures Solana account keys.",
+        "Plan slots in alongside Firedancer's throughput target of 1M TPS by end of 2026.",
+        "Live Alpenglow upgrade already cut block finality below 200ms ahead of the signature rollout."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-27T15:45:00Z"
+    },
+    {
+      "id": "story-2026-04-27-21-005",
+      "headline": "The Block names Steve Chung CEO as Foresight Ventures pumps $10M into expansion",
+      "slug": "the-block-steve-chung-ceo-foresight-10m",
+      "tldr": "Crypto media outlet The Block appointed Steve Chung as CEO alongside a fresh $10M raise from Foresight Ventures, with co-founder Larry Cermak shifting to President.",
+      "why_it_matters": "Why it matters: Capital flowing back into crypto-native media signals a renewed bet on attention infrastructure as the cycle's storytelling layer rebuilds.",
+      "the_details": [
+        "Larry Cermak stays on as President, refocused on research and product after years as CEO.",
+        "$10M from Foresight Ventures funds The Block's next expansion phase across data and editorial.",
+        "Move follows years of consolidation in crypto media after the 2022-2023 attention contraction."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/398948/the-block-appoints-steve-chung-ceo",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-27T16:15:00Z"
+    }
+  ]
+}
