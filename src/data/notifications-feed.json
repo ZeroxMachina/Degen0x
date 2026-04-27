@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-009",
+    "type": "news",
+    "title": "📰 Kalshi launches crypto perpetual futures today under codename 'Timeless'",
+    "message": "Prediction-market giant Kalshi rolls out perp futures on a handful of cryptocurrencies today, marking its first true derivatives push beyond event contracts.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-008",
     "type": "news",
     "title": "📰 Aave hits 80% of $200M Kelp DAO bailout — Mantle, Aave DAO put up $127M",
@@ -230,13 +238,5 @@
     "message": "An attacker drained 116,500 rsETH — about $292M and 18% of supply — from Kelp's LayerZero bridge, making it 2026's largest DeFi exploit.",
     "actionUrl": "/news",
     "date": "2026-04-18"
-  },
-  {
-    "id": "feed-2026-04-17-100",
-    "type": "system",
-    "title": "914 New Pages Indexed — Publish Queue Drained",
-    "message": "The full backlog of built-but-unpromoted pages (914 total) has been promoted to PUBLISHED_PAGES. Site now indexes 1,515 URLs across Learn, Exchanges, Investing, Wallets, DeFi, Cards, NFTs and more.",
-    "actionUrl": "/learn",
-    "date": "2026-04-17"
   }
 ]

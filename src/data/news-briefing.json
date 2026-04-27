@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T07:05:00Z",
-  "briefing_id": "briefing-2026-04-27-07",
+  "generated_at": "2026-04-27T08:05:00Z",
+  "briefing_id": "briefing-2026-04-27-08",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-07-001",
-      "headline": "Aave hits 80% of $200M Kelp DAO bailout — Mantle, Aave DAO put up $127M",
-      "slug": "aave-kelp-dao-bailout-127m",
-      "tldr": "Aave's recovery fund has raised nearly 80% of the $200M needed to cover bad debt left by the Kelp DAO exploit, led by Mantle and Aave DAO contributions.",
-      "why_it_matters": "Why it matters: A successful private bailout could become DeFi's playbook for absorbing nine-figure exploits without protocol insolvency or token death spirals.",
+      "id": "story-2026-04-27-08-001",
+      "headline": "Kalshi launches crypto perpetual futures today under codename 'Timeless'",
+      "slug": "kalshi-launches-crypto-perpetual-futures-timeless",
+      "tldr": "Prediction-market giant Kalshi rolls out perp futures on a handful of cryptocurrencies today, marking its first true derivatives push beyond event contracts.",
+      "why_it_matters": "Why it matters: A CFTC-regulated venue trading crypto perps onshore opens an institutional channel that has been offshore-only for years.",
       "the_details": [
-        "Mantle and Aave DAO combined for $127M of the funds raised so far toward the $200M target.",
-        "Funds will plug bad debt left after the April 19 Kelp hack drained ~116,500 rsETH (~$292M).",
-        "Roughly $40M still needs to come from external contributors before the recovery completes."
+        "Kalshi confirmed April 27 as launch day for the product codenamed 'Timeless,' per The Information.",
+        "Perpetuals will be tied to a handful of cryptocurrencies, joining its event-contract platform.",
+        "Move follows the broader race by Robinhood and Coinbase to bring perps to US retail under CFTC rules."
       ],
-      "source": "CoinDesk",
+      "source": "CoinDesk / The Information",
       "source_url": "https://www.coindesk.com/",
-      "category": "defi",
+      "category": "infrastructure",
+      "impact": "high",
+      "timestamp": "2026-04-27T07:30:00Z"
+    },
+    {
+      "id": "story-2026-04-27-08-002",
+      "headline": "SEC and CFTC sign historic MOU clarifying federal securities law for crypto",
+      "slug": "sec-cftc-historic-mou-crypto-securities",
+      "tldr": "The SEC and CFTC inked their first formal memorandum of understanding to coordinate oversight and issued joint guidance on crypto-asset securities.",
+      "why_it_matters": "Why it matters: Years of agency turf wars are finally being papered over, giving issuers and exchanges a clearer rulebook to operate under.",
+      "the_details": [
+        "SEC Press Release 2026-26 announces the historic MOU between the two agencies.",
+        "A separate joint statement clarifies how federal securities laws apply to crypto assets.",
+        "Lands as 100+ crypto firms press the Senate to mark up the Clarity Act on market structure."
+      ],
+      "source": "SEC.gov",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies",
+      "category": "regulation",
       "impact": "high",
       "timestamp": "2026-04-27T06:00:00Z"
     },
     {
-      "id": "story-2026-04-27-07-002",
-      "headline": "BTC whales flip aggressively long on Hyperliquid as funding stays deeply negative",
-      "slug": "btc-whales-long-hyperliquid",
-      "tldr": "Hyperliquid whale positioning has pushed firmly net long despite negative funding, coinciding with bitcoin's grind from the mid-$60Ks back near $80,000.",
-      "why_it_matters": "Why it matters: Aggressive whale longs paired with deeply negative funding is historically a contrarian setup that has preceded sharp upside short squeezes.",
+      "id": "story-2026-04-27-08-003",
+      "headline": "April 2026 turns crypto's worst hack month since Bybit, $606M lost in 18 days",
+      "slug": "april-2026-worst-hack-month-since-bybit",
+      "tldr": "April losses have already topped $606M, driven by the $292M Kelp DAO and $285M Drift exploits, both attributed to North Korea's Lazarus Group.",
+      "why_it_matters": "Why it matters: Two Lazarus-linked breaches in three weeks reset the security baseline DeFi must hit before institutional money returns at scale.",
       "the_details": [
-        "Whale long bias intensified through April after flipping from net short in early March.",
-        "BTC tagged near $80,000 this week before pulling back into the $77K region.",
-        "Funding rates remain deeply negative — retail still positioned short into the strength."
+        "Drift Protocol drained for $285M on April 1; Kelp DAO bridge exploited for $292M on April 19.",
+        "Together the two hits represent roughly 95% of April's reported crypto losses.",
+        "DeFi total value locked dropped from $26.4B on April 18 to ~$20B amid panic withdrawals."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/26/bitcoin-whales-build-long-positions-as-funding-stays-deeply-negative",
-      "category": "bitcoin",
+      "source": "crypto.news / CoinDesk",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-26T22:00:00Z"
+      "timestamp": "2026-04-27T05:00:00Z"
     },
     {
-      "id": "story-2026-04-27-07-003",
-      "headline": "Grayscale and Bitmine stake nearly $500M ETH in single-day institutional flex",
-      "slug": "grayscale-bitmine-eth-staking-500m",
-      "tldr": "Grayscale and Bitmine combined to stake roughly $500M of ETH on April 25, deepening institutional commitment to Ethereum's native yield.",
-      "why_it_matters": "Why it matters: Half-billion-dollar single-day stakes from regulated entities tighten ETH float and tilt the validator set further toward TradFi balance sheets.",
+      "id": "story-2026-04-27-08-004",
+      "headline": "SEC carves broker-dealer exception for DeFi UI providers in major opening",
+      "slug": "sec-defi-ui-broker-dealer-exception",
+      "tldr": "The SEC's Division of Trading and Markets says certain crypto interface operators can run without broker-dealer registration under specified conditions.",
+      "why_it_matters": "Why it matters: Frontends for permissionless DeFi just got a regulatory off-ramp from the legal cloud that has hung over US developers for years.",
       "the_details": [
-        "Combined ~$500M staked on April 25 across Grayscale and Bitmine treasuries.",
-        "Spot ETH ETFs simultaneously logged $23.4M net inflows, reversing a brief outflow trend.",
-        "Move lands as Standard Chartered tags 2026 as 'the year of Ethereum' on relative fundamentals."
+        "April 13 staff statement names 'Covered User Interface Providers' as qualifying for non-objection.",
+        "Applies to interfaces helping users prepare and submit crypto-asset securities transactions.",
+        "Pairs with the SEC-CFTC MOU as the latest pro-crypto policy shift out of Washington."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/",
-      "category": "ethereum",
+      "source": "Sidley Data Matters",
+      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
+      "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-26T18:00:00Z"
+      "timestamp": "2026-04-27T04:30:00Z"
     },
     {
-      "id": "story-2026-04-27-07-004",
-      "headline": "BTC-dollar correlation deepens to -0.90 — most negative since 2022",
-      "slug": "btc-dollar-correlation-2022-extreme",
-      "tldr": "Bitcoin's 30-day correlation with the U.S. Dollar Index has deepened to -0.90, the most negative reading in nearly four years.",
-      "why_it_matters": "Why it matters: An extreme inverse correlation cements BTC's macro role as the anti-dollar trade, leaving it directly tethered to Fed and Treasury moves.",
+      "id": "story-2026-04-27-08-005",
+      "headline": "USDT supply nears $150B as Bitcoin tracks best month in a year",
+      "slug": "usdt-150b-bitcoin-best-month",
+      "tldr": "Tether's USDT stablecoin supply has surged to nearly $150 billion, deepening crypto market liquidity as BTC posts a 13.6% April gain.",
+      "why_it_matters": "Why it matters: Stablecoin supply is the cleanest leading indicator of dry powder — record USDT issuance signals fresh capital, not just rotation.",
       "the_details": [
-        "30-day BTC/DXY correlation now -0.90, deepest since 2022.",
-        "BTC up 13%+ in April, on pace for its best monthly performance in a year.",
-        "USDT supply expansion to ~$150B has added liquidity behind the rebound."
+        "USDT supply added roughly $5B in recent weeks per CoinDesk reporting.",
+        "Bitcoin is up ~13.6% in April, on pace for its strongest monthly performance in a year.",
+        "BTC's 30-day correlation with the US Dollar Index hit -0.90, the most negative since 2022."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
       "category": "markets",
       "impact": "medium",
-      "timestamp": "2026-04-24T20:00:00Z"
-    },
-    {
-      "id": "story-2026-04-27-07-005",
-      "headline": "Spot SOL ETFs blow past $1B AUM as Goldman Sachs surfaces as major holder",
-      "slug": "sol-etf-1b-goldman-sachs",
-      "tldr": "Spot Solana ETFs have crossed $1 billion in assets under management, with Goldman Sachs disclosed among the major position holders.",
-      "why_it_matters": "Why it matters: Goldman entering size on a SOL ETF mints Solana as a TradFi-grade allocation alongside BTC and ETH, expanding institutional altcoin pipes.",
-      "the_details": [
-        "Combined spot SOL ETF AUM topped $1B in late April 2026.",
-        "Goldman Sachs disclosed among the major institutional holders.",
-        "SOL is consolidating $77–$94 with the weekly chart flashing a rare bullish crossover."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
-      "category": "altcoins",
-      "impact": "medium",
-      "timestamp": "2026-04-26T12:00:00Z"
+      "timestamp": "2026-04-27T03:30:00Z"
     }
   ]
 }
