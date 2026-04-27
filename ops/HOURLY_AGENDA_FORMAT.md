@@ -45,6 +45,39 @@ Every task in §7 is executed by **the next standup cycle** directly — no queu
 
 Every §Task that touches `src/` MUST include in its §How block a fallback line: **"If standup runner does not execute this within 1 cycle, route to <X>"** where `<X>` is one of: `human-shell`, `dedicated-build-runner`, `T-FORMAT-COLLAPSE-V2-deferred`. After 2 consecutive standup-runner no-shows on the same src/ task, that task MUST be retired from the standup runner and re-routed per its declared fallback. Do NOT keep re-scheduling; the prior 6-cycle carry-forward of the strip + 8th-cluster + JSON-LD three-fer is the documented anti-pattern this gate prevents.
 
+## Src-side execution moratorium (added 2026-04-27, Hour 04 — T-FORMAT-COLLAPSE-V2 trigger)
+
+**Empirical update (Hours 22 → 04, +1 cycle vs V1):** 8 consecutive ops/ commits succeed; **7 consecutive src/ strip / stub / SVG / JSON-LD attempts no-show** across the same window. Single-file edits (Hour 02 quantum-resistant 6-ref strip), single-directory stubs (Hour 03 zero-knowledge-proofs-guide stub variant), and bundled three-fers (Hours 22–01 strip + 8th-cluster OG + covenants-opcat JSON-LD) all failed at the same cycle. Build-cycle SLO drops to 7-of-14 = 50%.
+
+**Conclusion:** the standup runner has no usable `src/` write path under the current sandbox-egress + lock-clearance + transient-shell topology. Continuing to schedule src-edits through this runner is an empirically-falsified anti-pattern. Hour 03 spec named this as the gate; Hour 04 entry triggers it.
+
+**Doctrine (V2):**
+
+- src/-touching §Tasks are formally retired from standup-runner ownership.
+- Any §Task touching `src/` MUST name an alternate executor at proposal-time. Acceptable executors:
+  1. **Jefe / human-shell single-session bundle** (proven path: Hours 18–21 build-cycle ship sequence)
+  2. **Dedicated build-cycle scheduled-task** with a separate sandbox-egress profile and longer timeout window
+  3. **CI-driven codemod** (PR-based, runs outside the hourly cron)
+- §Tasks failing this requirement are rejected from §Tasks at write-time and routed to `ops/blocked-pending-executor.md` (TBD — first instance lands when V2 catches a proposal).
+- The standup-runner itself is restricted to: ops/ docs, agenda commits, methodology codifications, watches/escalations, and incident filings.
+
+**Suggested Jefe-shell single-session bundle (~30min effort, unblocks ~25 broken /learn refs without per-page edits):**
+
+```bash
+cd "$DEGEN0X_REPO"
+for slug in zero-knowledge-proofs-guide common-crypto-scams \
+            defi-for-beginners cross-chain-bridges-guide-2026 \
+            restaking-guide bitcoin-etf-guide; do
+  mkdir -p src/app/learn/$slug
+  # write minimal page.tsx with H1 + canonical + noindex stub
+  # (use Hour 18–21 build-cycle ship sequence as template)
+done
+git add src/app/learn/
+git commit -m "feat(stubs): top-6 missing /learn target dirs (unblocks ~25 broken refs per ops/SCOPE_METHODOLOGY.md 107/50 surface)"
+```
+
+**Reversal criteria:** if a future cycle observes 3 consecutive successful src/ commits from inside the standup runner (e.g., post-Plan-B-reset, post-egress-allowlist-update), revisit this moratorium and consider relaxing.
+
 ## Priority renumbering
 
 Priorities renumber monotonically T1, T2, T3 each cycle. Do NOT preserve numbers across cycles — continuity lives in the "What shipped last hour" and §Incidents sections.
