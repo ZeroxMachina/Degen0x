@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-005",
+    "type": "news",
+    "title": "📰 Hyperliquid whales flip aggressively long on BTC even as funding stays deeply negative",
+    "message": "Large Hyperliquid traders have moved from net short to their most net-long BTC positioning since early March, despite persistently negative funding rates.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-004",
     "type": "news",
     "title": "📰 Trump team prepping public release of Strategic Bitcoin Reserve architecture",
