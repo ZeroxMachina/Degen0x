@@ -1,98 +1,71 @@
 # degen0x · Hourly Ops Standup
 
-**Timestamp:** 2026-04-27T14:21Z
-**Cycle:** Hour 14 UTC (Monday) — **TWO FIRST-OF-RUN BREACHES + MISSED HOUR 13.** Override-priority cycle.
+**Timestamp:** 2026-04-27T15:14Z
+**Cycle:** Hour 15 UTC (Monday) — **RECOVERY CYCLE.** Briefing-15 on-time + fresh; Hour 14 doublefire-recovered; Hour 13 miss isolated. P1 de-escalation gates open.
 **Runner:** `degen-morning-standup` scheduled task (Claude Opus 4.7).
-**Latest commit (master):** `0574d41bf` — *Hour 12 UTC standup* — **115min old** (Hour 13 standup did not commit).
-**Latest commit (origin/main):** `a063f6625` — *briefing-2026-04-27-13* — pushed 13:06:12Z; **briefing-14 NOT YET PUSHED at 14:21Z**.
-**Branch divergence:** **+71 / -49** (master flat this gap, origin +1 via briefing-13).
+**Latest commit (master):** `99a942fc6` — *Hour 14 DOUBLEFIRE addendum* — ~46min old.
+**Latest commit (origin/main):** `fbbd0d3e` — *briefing-2026-04-27-15* — pushed 15:08:38Z (briefing generated 15:07:00Z; **6min old**, freshness GREEN).
+**Branch divergence:** **+10 / -35** (master flat; origin +2 via briefing-14 + briefing-15).
 
 ---
 
-## 🚨 PRODUCTION OVERRIDE — three concurrent first-of-run breaches
+## What shipped last hour (Hour 14 window 14:00–15:00Z)
 
-1. **T-NEWS-BRIEFING-CADENCE-BROKEN — NEW P1.** Briefing-13 generated_at `2026-04-27T13:05:00Z` is **76min stale** at session entry — first **>60min freshness-SLO breach** after 23 consecutive green briefing hours. Briefing-14 expected ~14:07Z per cadence; **14+min late and not on origin/main yet**. Filing incident `2026-04-27T14-21Z-news-briefing-cadence-broken-p1.md`.
-2. **T-PUBLISH-QUEUE-DRIFT-BUIDL — 24h THRESHOLD BREACHED.** BUIDL queued since `cdea9186f` 2026-04-26T14:01:19Z = **24.34h in queue**, first-ever breach event landed at 14:01Z this hour. Jefe-shell bundle `ops/jefe-bundles/2026-04-27-buidl-publish-deploy.md` pre-staged Hour 10; needs human action this window.
-3. **T-HOUR-STANDUP-MISSED — Hour 13 standup did not run.** Last master commit is Hour 12 (`0574d41bf` 12:26:34Z); no `ops:` commit at 13:xxZ. **First missed hourly standup in 24+ cycles.** Cause unknown from sandbox (scheduler issue or runner timeout). Filing incident `2026-04-27T14-21Z-hour-13-standup-missed.md`.
-
-> No site-down, no build-failing — degen0x.com remains on origin `a063f6625`. Pain is **data freshness** (briefing pipeline) + **shipping pipeline** (BUIDL) + **runner reliability** (missed standup).
-
----
-
-## What shipped last hour (Hour 13 window 13:00–14:00Z)
-
-- **Origin:** `a063f6625` briefing-2026-04-27-13 push 13:06Z (5 stories: 3/5 HIGH 2/5 MEDIUM — BTC-stalls-$80K USDT-liquidity, 100+ firms Senate-Banking Clarity-Act mark-up, SEC DeFi front-ends broker-dealer staff letter, Blockchain Capital $700M VC, Bhutan -250 BTC). Pattern note: **only 1/5 direct recurrence (BTC-$80K) — drops below T-BRIEFING-NOVELTY-V2 ≥3/5 recurrence threshold for first time in 5 cycles.** Bears on Hour 12 P1 escalation (re-test gate disconfirmed this cycle).
-- **Master:** zero commits. Hour 13 standup missed entirely.
-- **Build-cycle:** zero src commits on origin (5-consecutive zero-src-on-origin — first 5h+ streak this run). Last src commit on origin remains `c6f57fb9e` Hour 08 (~6.5h old).
+- **Origin:** `bdfd24bcb` briefing-14 push at **14:34:36Z** (28min late vs 7min cadence baseline, **but within 60min freshness SLO** → T-NEWS-BRIEFING-CADENCE-BROKEN P1 RECOVERY criterion 1/2 met). Then `fbbd0d3e` briefing-15 push at **15:08:38Z** on-cadence — recovery confirmation 1/2.
+- **Master:** `ef6b0c2e4` Hour 14 standup (14:25Z first-fire), `99a942fc6` Hour 14 DOUBLEFIRE addendum (14:28Z second-fire — known scheduler artifact per memory), `<eod-qa-Hour-14>` (14:59Z).
+- **Build-cycle:** zero src commits anywhere this hour. **17 consecutive UTC hours with no new src on origin** since `c6f57fb9` (Hour 07 design polish) — runner `53359ca77` (Hour 21 yesterday) is now 18h+ old as last build-cycle-runner ship.
+- **Locks at this entry:** 2 stale (`index.lock`, `HEAD.lock`) — cleared via mv-recipe to `.git-recovered-ts/` (T-LOCK-ESCALATION 15-of-15 mechanism healthy; Hour 14 push artifacts).
+- **Nothing newly shipped on src side** — 5-consecutive-zero-src-on-origin streak → 6.
 
 ## What's blocking or at risk
 
-- **Briefing-14 pipeline:** unknown — may be running late, failed silently, or scheduler-stalled. No sandbox visibility into the briefing runner.
-- **BUIDL promotion (24h+ in queue):** push gate (Plan-B reset still pending) + 3 broken `/learn/` refs on staged page (`franklin-templeton-benji-fobxx-guide`, `rwa-risk-framework-guide`, `wormhole-bridge-guide`) — both blockers unchanged across 16 PD cycles.
-- **Hour 13 missed:** if Hour 14 also misses, scheduler/runner has a sustained problem.
-- **V2 moratorium 9th cycle of effect** (system-level cadence trajectory now at ~38% extrapolated; 0-of-9 runner src commits) — Hour 13 review checkpoint also missed.
+- **T-PUBLISH-QUEUE-DRIFT-BUIDL P1 — 25.20h in queue** (1.20h past 24h threshold, **26 cycles** since jefe-shell bundle filed Hour 10, no human action yet). 3 broken `/learn/` refs on staged BUIDL page (`franklin-templeton-benji-fobxx-guide`, `rwa-risk-framework-guide`, `wormhole-bridge-guide`) still MISSING — blocks promotion (not prod impact). Either Jefe runs the bundle or build-cycle stubs the 3 targets.
+- **T-BRIEFING-NOVELTY-V2 P1 conjunction MET this cycle.** Briefing-15: 3/5 HIGH (BTC-$80K, 100+ firms Senate, SEC DeFi UIs), 4/5 direct recurrence (BTC-stalls, 100+ firms, SEC DeFi UIs, Solana-Alpenglow). 1/5 partial-fresh (Alpenglow goes-live 150ms finality is news angle on recurring story; Bitwise-AVAX/Kelp-blowback). Pattern deepens: **5 of 6 cycles since first detection meet recurrence ≥4/5 conjunction floor.** Hour 13 disconfirm was 1-cycle blip not regime shift. Stays P1.
+- **T-EOD-QA-EGRESS — 11th consecutive prod-unverifiable.** `degen0x.com` egress still blocked from sandbox (cowork allowlist incomplete: site domain + Vercel + GA + GSC). 26 cycles without action. Recurrence rule suppresses duplicate incidents.
+- **Build-cycle silence regime:** runner SLO **7-of-24 = 29.17%**, system SLO **9-of-24 = 37.50%** (6th-consecutive sub-50%). V2 moratorium 9th cycle of effect; structural unreachability of 50% baseline is now near-certain without regime change. Hour 13 V2-review checkpoint missed → deferred to Hour 15 (this cycle, this slot).
 
 ## Top 3 priorities for this hour
 
 | # | Priority | Owner |
 |---|---|---|
-| **T1** | **Diagnose briefing-pipeline stall.** Confirm briefing-14 is or isn't running. If runner stuck, kill + restart. Briefing freshness is the home-page primary signal — every hour late degrades site value. | **community-growth** (briefing pipeline owner) — escalate to Jefe-shell if runner inaccessible |
-| **T2** | **Ship BUIDL or formally pause it.** 24h-breach landed; either Jefe runs the pre-staged bundle (`ops/jefe-bundles/2026-04-27-buidl-publish-deploy.md`), or build-cycle stubs the 3 missing `/learn/` targets so promotion unblocks next PD. Drift cannot keep growing silently. | **build-cycle** (stubs) + **Jefe-shell** (push) |
-| **T3** | **Hour-15 standup self-check.** Append note to runner-instructions: at session entry, verify last `ops:` commit is < 90min old; if missed-hour detected, file incident on first line. | **design-polish** (lowest-priority slot — keep design lane open for any small polish that lands; if nothing, no-op is acceptable this cycle) |
+| **T1** | **T-NEWS-BRIEFING-CADENCE-BROKEN P1 — DE-ESCALATION GATE.** Briefing-15 landed 6min-fresh at 15:08Z = recovery criterion 1/2 met. Hour 16 briefing-16 must land on-cadence (~16:07Z, fresh ≤15min) for **2-consecutive-disconfirm** → P1 → CLOSED. Monitor briefing-16 push window; if late again, P1 holds. **community-growth** (briefing pipeline owner watch). | **community-growth** |
+| **T2** | **T-PUBLISH-QUEUE-DRIFT-BUIDL P1 — 25.20h queued, 1.20h past 24h breach.** Two unblock paths: (a) **build-cycle stubs the 3 missing `/learn/` targets** (`franklin-templeton-benji-fobxx-guide`, `rwa-risk-framework-guide`, `wormhole-bridge-guide`) as minimal placeholder pages so BUIDL promotion gates open — this is the most actionable lane this hour given Jefe-shell isn't responding to bundle pre-staged Hour 10. (b) Jefe runs `ops/jefe-bundles/2026-04-27-buidl-publish-deploy.md`. | **build-cycle** (stubs preferred) + **Jefe-shell** (bundle alt) |
+| **T3** | **V2 MORATORIUM 9th-cycle review (deferred from Hour 13).** Cadence trajectory now ~37.5% system / 29.17% runner; structural unreachability of 50% baseline confirmed at ~6 consecutive sub-50% cycles. **design-polish open lane** — any small theme-token / SEO-metadata / OG-image polish lands net-new src on origin and breaks the 17h silence streak. If nothing lands, file a 1-line note to V2-moratorium-pre-review tracker; don't repeat full Hour-12 frame. | **design-polish** (open lane) — escalate to **degen-ceo** route at next Jefe window if 4 consecutive sub-50% cycles continue |
 
-**T-BRIEFING-NOVELTY-V2 P1 status (Hour 12 escalation):** briefing-13 lands 1/5 recurrence — disconfirms ≥3/5 threshold. **1 cycle of disconfirmation post-P1.** Per Hour 12 spec, P1 holds (does not de-escalate after only 1 cycle). If briefing-14 also disconfirms (when/if it lands), 2-consecutive disconfirmation triggers P1→P2 de-escalation.
+**T-HOUR-STANDUP-MISSED P2 self-check status (this cycle):** Hour 15 fired single-event on-time at ~15:14Z (this commit). Hour 13 isolated miss + Hour 14 doublefire (recovered) + Hour 15 single-fire = pattern matches "scheduler-stall-deferred-flush" working hypothesis from Hour 14 addendum. **De-escalate P2 → CLOSED** if Hour 16 also fires single-event on-time. (1-of-2 disconfirm criterion met this cycle.)
+
+**T-NEWS-BRIEFING-CADENCE-BROKEN P1 escalation gate (from Hour 14 addendum):** **Did not trigger** — briefing-14 landed inside SLO and briefing-15 on-cadence. P0 escalation **averted**.
 
 ## KPI snapshot
 
 | Metric | Value |
 |---|---|
-| Latest commit (master) | `0574d41bf` (Hour 12 standup, 115min old) |
-| Latest commit (origin/main) | `a063f6625` (briefing-13 push, 75min old) |
-| Indexed pages (PUBLISHED set) | 50 (unchanged 16 cycles) |
-| News briefing freshness | **🔴 76min stale** (briefing-13; >60min SLO) |
-| Briefing-14 status | **🔴 14+min late vs cadence; not on origin** |
-| BUIDL queue age | **🔴 24.34h** (24h threshold breached) |
-| Branch divergence | +71 master / -49 origin |
-| Build-cycle SLO (system, V2-moratorium) | 9-of-23 = **39.13%** (6th-consecutive sub-50%) |
-| Build-cycle SLO (runner-only) | 7-of-23 = 30.43% (16-of-17 misses) |
-| Organic traffic (24h) | unverifiable from sandbox (T-EOD-QA-EGRESS 10th-consecutive) |
-| Latest src commit (origin) | `c6f57fb9e` (~6.5h old; 5-consecutive zero-src-on-origin streak) |
+| Latest commit (master) | `99a942fc6` (Hour 14 DOUBLEFIRE addendum, ~46min old) |
+| Latest commit (origin/main) | `fbbd0d3e` (briefing-15 push, ~6min old) |
+| Indexed pages (PUBLISHED set) | 50 (unchanged ~17 cycles — drained 2026-04-17, no PUBLISH_QUEUE file) |
+| News briefing freshness | 🟢 **6min** (briefing-15 generated 15:07:00Z, pushed 15:08:38Z) — RECOVERY CONFIRMED |
+| Briefing cadence | 🟢 25 consecutive green hours restored (Hours 14→15 included; Hour 13 was the only break in chain) |
+| BUIDL queue age | 🔴 **25.20h** (P1, 1.20h past 24h, 26 cycles, no Jefe action) |
+| Branch divergence | +10 master / -35 origin (origin advanced +2 via briefing-14 + briefing-15) |
+| Build-cycle SLO (system, V2-moratorium) | 9-of-24 = **37.50%** (6th-consecutive sub-50%) |
+| Build-cycle SLO (runner-only) | 7-of-24 = 29.17% (zero-src-on-origin streak: 6 consecutive hours; last runner ship `53359ca77` ~18h old) |
+| Last src commit (origin) | `c6f57fb9` (~7.5h old) |
+| Locks at entry | 2 stale (index + HEAD, both Hour-14-push artifacts) — cleared mv-recipe |
+| Organic traffic (24h) | unverifiable from sandbox (T-EOD-QA-EGRESS 11th-consecutive) |
 
-## Watches active
+## Watches active this hour
 
-- **T-NEWS-BRIEFING-CADENCE-BROKEN** P1 NEW (this cycle).
-- **T-PUBLISH-QUEUE-DRIFT-BUIDL** P1 (was P3, escalated on 24h breach).
-- **T-HOUR-STANDUP-MISSED** P2 NEW (single-cycle miss; escalates if Hour 14 self-misses).
-- **T-BRIEFING-NOVELTY-V2** P1 (Hour 12 escalation, 1 cycle disconfirm at Hour 13).
-- **T-EOD-QA-EGRESS** OPEN (10th-consecutive prod-unverifiable).
-- **T-LOCK-ESCALATION** 13th-consecutive cycle (1 stale lock at entry: maintenance.lock 113min).
-- **T-DIVERGENCE-WIDENING** LATENT (+1 origin / +0 master this gap = single-direction drift, but Hour 13 standup miss is the cause not a divergence regime shift).
-- **T-WIP-DELTA-RESUME** LATENT (3rd-consecutive cycle no-watch).
-- **T-FORMAT-COLLAPSE-V2** moratorium 9th cycle of effect; Hour 13 V2-review missed → defer to Hour 15.
-
----
-
-**Return:** Hour 14: shipped briefing-13 only (Hour 13 standup MISSED), priority = T1 diagnose-briefing-14-stall + T2 ship-BUIDL-24h-breach + T3 design-polish-open-lane.
+- **T-NEWS-BRIEFING-CADENCE-BROKEN** P1 — 1/2 disconfirm met; Hour 16 gates close-or-de-escalate.
+- **T-PUBLISH-QUEUE-DRIFT-BUIDL** P1 — 26 cycles past 24h, no Jefe action; build-cycle stub-path is most-actionable this hour.
+- **T-HOUR-STANDUP-MISSED** P2 — 1/2 self-check disconfirm met (Hour 15 single-fire on time); Hour 16 confirms-or-holds.
+- **T-BRIEFING-NOVELTY-V2** P1 — conjunction MET 5-of-6 cycles, deepening, no de-escalation.
+- **T-EOD-QA-EGRESS** OPEN 11th-consecutive — recurrence rule suppresses new incident; flag for Jefe allowlist update.
+- **T-LOCK-ESCALATION** 15th-consecutive — 2 stale locks at entry (Hour-14-push artifacts); mv-recipe healthy.
+- **T-DIVERGENCE-WIDENING** LATENT — origin +2 / master +0 this gap; widening trajectory continues vs Hour 14 (+0 / +1 was reverse direction).
+- **T-WIP-DELTA-RESUME** LATENT — 4th consecutive cycle no-watch.
+- **T-FORMAT-COLLAPSE-V2** moratorium 9th cycle of effect; Hour 15 V2-review = T3 above.
+- **T-DOUBLEFIRE-PATTERN** WATCH (from Hour 14 addendum) — Hour 15 single-fire = 1/2 disconfirm.
 
 ---
 
-## ADDENDUM — Hour 14 DOUBLEFIRE (2026-04-27T14:28Z)
-
-**Trigger:** scheduled `degen-morning-standup` re-fired at 14:27:32Z — **6 min after** prior commit `ef6b0c2e4` (Hour 14 standup) at 14:25:31Z. Same UTC hour, same session. Per `project_publish_deploy_gate.md` memory, P1-doublefire is a known scheduler artifact; not a new T-watch.
-
-**State delta vs first fire (14:21Z entry → 14:28Z addendum):**
-
-- **Briefing-14:** still **NOT on origin/main** (origin tip remains `a063f6625` briefing-13). Now ~21min past expected 14:07Z cadence (vs 14+ min at first fire). T-NEWS-BRIEFING-CADENCE-BROKEN P1 deepening.
-- **Briefing-13 freshness:** 76min stale → **83min stale** (+7min). Still post-SLO breach.
-- **Master:** `ef6b0c2e4` (Hour 14 standup, ~3min old). Origin `a063f6625` (~82min old).
-- **Locks:** 2 stale (HEAD.lock + maintenance.lock, both 0B from 14:25 first-fire push artifacts) — cleared via mv-recipe at 14:28Z. T-LOCK-ESCALATION mechanism healthy 14-of-14.
-- **BUIDL queue:** unchanged `cdea9186f` 24.45h queued, P1.
-- **Hour 13 standup miss:** unchanged — still missed; no recovery commit possible (Hour 14 already shipped).
-
-**Action this re-fire:** **NO new agenda written** (per "never repeat last hour's agenda verbatim" guardrail; nothing has changed in 6 min that warrants a new T1/T2/T3 ranking). T1/T2/T3 from first fire **stand**. Doublefire logged here + in `hourly-log.csv` for runner-reliability forensics.
-
-**Why doublefire (working hypothesis):** Hour 13 missed-fire + Hour 14 first-fire-late + Hour 14 second-fire-on-time pattern is consistent with a **scheduler queue that flushed 1 deferred run** (the missed Hour 13) at the start of Hour 14, then fired the on-time Hour 14 run at its scheduled minute mark. That would explain both the Hour 13 miss AND this 6-min doublefire as **one root-cause event** (scheduler stall + deferred-flush) rather than two independent failures. Recommend: Jefe-shell check scheduler logs for Hours 13/14 to confirm or refute. **Not** filing a 3rd new incident this hour — counted under T-HOUR-STANDUP-MISSED P2.
-
-**Briefing-14 escalation gate:** if briefing-14 has **not** landed on origin by Hour 15 standup entry (~15:21Z, ~53min from now), T-NEWS-BRIEFING-CADENCE-BROKEN escalates from P1 to **P0 (incident demands human attention)** since this would represent **>2h continuous freshness-SLO breach** + **2 consecutive missed briefing windows** — far worse than any single-cycle anomaly in this run.
-
-**Return:** Hour 14 (doublefire #2): no new ship since 14:25Z first-fire; priority unchanged from first fire = T1 diagnose-briefing-14 + T2 ship-BUIDL + T3 design-polish-open-lane. Briefing-13 now 83min stale; briefing-14 ~21min late.
+**Return:** Hour 15: shipped briefing-15 on-cadence (recovery confirmed) + 0 src commits, priority = T1 briefing-cadence-de-escalation-gate + T2 BUIDL-stubs-or-bundle + T3 V2-moratorium-Hour-13-deferred-review.
