@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-27-001",
+    "type": "news",
+    "title": "📰 Schwab opens spot BTC and ETH trading to retail brokerage clients",
+    "message": "Charles Schwab flipped the switch on direct spot Bitcoin and Ethereum trading inside its retail brokerage, the deepest TradFi push into crypto since the ETFs.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-26-010",
     "type": "news",
     "title": "📰 SEC and CFTC sign historic MOU, ending years of jurisdictional turf war",

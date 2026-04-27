@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-26T23:05:00Z",
-  "briefing_id": "briefing-2026-04-26-23",
+  "generated_at": "2026-04-27T00:02:00Z",
+  "briefing_id": "briefing-2026-04-27-00",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-26-23-001",
-      "headline": "SEC and CFTC sign historic MOU, ending years of jurisdictional turf war",
-      "slug": "sec-cftc-historic-mou-crypto-jurisdiction",
-      "tldr": "The SEC and CFTC announced their first formal memorandum of understanding to coordinate crypto oversight, codifying a joint interpretation issued earlier this spring.",
-      "why_it_matters": "Why it matters: A unified federal posture takes the regulator-arbitrage card off the table for issuers and squeezes Congress to ratify market-structure law before agencies improvise another framework.",
+      "id": "story-2026-04-27-00-001",
+      "headline": "Schwab opens spot BTC and ETH trading to retail brokerage clients",
+      "slug": "schwab-launches-spot-btc-eth-retail-trading",
+      "tldr": "Charles Schwab flipped the switch on direct spot Bitcoin and Ethereum trading inside its retail brokerage, the deepest TradFi push into crypto since the ETFs.",
+      "why_it_matters": "Why it matters: Schwab brings $9T+ in client assets and a non-crypto-native user base into spot rails, sidestepping the ETF wrapper and pressuring Coinbase's retail moat.",
       "the_details": [
-        "Press release 2026-26 confirms shared rulemaking, examinations and enforcement coordination across the two agencies.",
-        "Builds on the March SEC interpretation clarifying which crypto assets fall under federal securities laws.",
-        "Follows last week's letter from 100+ firms pushing the Senate Banking Committee to mark up the Clarity Act."
+        "Schwab launched direct spot BTC and ETH trading across its retail brokerage platform in April 2026, putting a fourth megabank-scale broker in the spot market.",
+        "Move follows a year of IBIT-led ETF inflows and arrives as Nomura's 2026 survey shows 80% of institutions plan 2-5% AUM allocations to digital assets.",
+        "Coinbase shares now face a direct on-platform competitor for retail spot flow, the segment that drives the bulk of CB's take-rate."
       ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-26-sec-cftc-announce-historic-memorandum-understanding-between-agencies",
-      "category": "regulation",
+      "source": "Crypto Economy / DeFi Dispatch",
+      "source_url": "https://crypto-economy.com/is-april-2026-altcoin-season-near/",
+      "category": "adoption",
       "impact": "high",
-      "timestamp": "2026-04-26T22:30:00Z"
+      "timestamp": "2026-04-26T22:00:00Z"
     },
     {
-      "id": "story-2026-04-26-23-002",
-      "headline": "Volo Protocol drained for $3.5M as Aave bleeds $9B in post-Kelp exodus",
-      "slug": "volo-protocol-exploit-aave-defi-exodus",
-      "tldr": "A second DeFi protocol fell days after the $292M Kelp DAO drain, while Aave logged roughly $9B in withdrawals as restaking risk spreads through lending markets.",
-      "why_it_matters": "Why it matters: April's $606M loss tally is now reshaping DeFi plumbing in real time — LSTs and rsETH-style collateral are repricing, and lenders are forced to rewrite oracle and bridge assumptions.",
+      "id": "story-2026-04-27-00-002",
+      "headline": "April crypto theft tops $620M in 20 days, worst month since Bybit's $1.4B",
+      "slug": "april-2026-crypto-hacks-620-million",
+      "tldr": "Crypto protocols have lost over $620M to hacks in the first 20 days of April, making it the worst month for theft since Bybit's $1.4B breach in February 2025.",
+      "why_it_matters": "Why it matters: Bridge failures and admin-key exploits — not novel zero-days — drove the carnage, signaling that DeFi's known weak points still aren't being hardened.",
       "the_details": [
-        "Volo Protocol confirmed a $3.5M exploit on April 22, three days after the Kelp DAO breach.",
-        "Bloomberg reported roughly $9B has exited Aave since April 19 amid cross-chain restaking contagion fears.",
-        "April 2026 is now the worst month for crypto theft since February 2025's $1.4B Bybit hack."
+        "Two incidents account for the bulk: Drift Protocol drained for $285M on April 1 and Kelp DAO drained for $293M on April 19 via a LayerZero bridge exploit.",
+        "Authorities have linked both attacks to North Korea's Lazarus Group, with Drift attributed to a long-running social engineering campaign using pre-signed authorizations.",
+        "Smaller April hits include CoW Swap ($1.2M domain hijack on April 14) and Russia-linked Grinex ($13.74M USDT drain on April 15)."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/22/another-defi-protocol-loses-millions-in-hack-days-after-kelpdao-breach",
+      "source": "Live Bitcoin News / CoinDesk",
+      "source_url": "https://www.livebitcoinnews.com/april-2026-crypto-hacks-hit-620m-as-bridge-failures-and-admin-exploits-dominate-attacks/",
       "category": "security",
       "impact": "high",
       "timestamp": "2026-04-26T20:00:00Z"
     },
     {
-      "id": "story-2026-04-26-23-003",
-      "headline": "Bitcoin-dollar correlation hits -0.90, the deepest inverse since 2022",
-      "slug": "bitcoin-dollar-correlation-deepest-since-2022",
-      "tldr": "BTC's 30-day correlation with the U.S. Dollar Index has collapsed to -0.90, the most negative reading in nearly four years as DXY weakens into the April Fed meeting.",
-      "why_it_matters": "Why it matters: A clean inverse to the dollar reframes BTC as a macro hedge rather than a risk-on tech proxy, and raises the bar for whether ETF flows can sustain the rally if the dollar bounces.",
+      "id": "story-2026-04-27-00-003",
+      "headline": "SEC frees DEX interface providers from broker-dealer rules in April 13 staff letter",
+      "slug": "sec-dex-ui-broker-dealer-relief",
+      "tldr": "SEC staff said it won't object to 'Covered User Interface Providers' offering software for crypto-asset-security transactions without registering as broker-dealers, subject to conditions.",
+      "why_it_matters": "Why it matters: It's the clearest US legal cover yet for DEX front-ends, defusing the existential threat that built up under the prior administration's enforcement posture.",
       "the_details": [
-        "BTC is holding above $77,000, up more than 13% on the month and tracking its best April since 2025.",
-        "The next test is the April FOMC, with $79K either flipping to support or fading back to a $75K-$77K range.",
-        "USDT supply expanded $5B in April, nearing $150B and underwriting much of the spot bid."
+        "April 13, 2026 staff statement carves out interfaces that prepare and submit transactions in crypto asset securities, provided they meet a set of disclosure and non-custody conditions.",
+        "Builds on the March 17 SEC-CFTC joint interpretive release that imposed a five-category token taxonomy and superseded the 2019 framework.",
+        "Coinbase, Ripple and 100+ firms are simultaneously pressing the Senate Banking Committee to mark up the Clarity Act to lock the framework into statute."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
-      "category": "markets",
+      "source": "Sidley Austin / SEC.gov",
+      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-26T18:45:00Z"
+      "timestamp": "2026-04-26T18:00:00Z"
     },
     {
-      "id": "story-2026-04-26-23-004",
-      "headline": "SoFi opens XRP deposits as GraniteShares lists 3x leveraged XRP ETFs on Nasdaq",
-      "slug": "sofi-xrp-deposits-graniteshares-3x-leveraged-etf",
-      "tldr": "SoFi enabled XRP deposits for retail customers and GraniteShares launched 3x long and short daily XRP ETFs on Nasdaq, deepening XRP's institutional rails.",
-      "why_it_matters": "Why it matters: Combined retail onramp and leveraged ETF tooling pulls XRP further from its courtroom past and into the same product stack as BTC and ETH — a template altcoins like SOL will try to copy.",
+      "id": "story-2026-04-27-00-004",
+      "headline": "BlackRock's IBIT options open interest tops Deribit in institutional milestone",
+      "slug": "blackrock-ibit-options-tops-deribit",
+      "tldr": "Open interest in BlackRock's spot Bitcoin ETF options surpassed Deribit's BTC options book on Friday, marking the moment regulated US derivatives leapfrogged the offshore venue.",
+      "why_it_matters": "Why it matters: Liquidity migrating onshore to a CFTC-touched venue accelerates the institutional bid for vol-selling strategies and undercuts Deribit's pricing power.",
       "the_details": [
-        "SoFi now accepts XRP deposits, with withdrawals limited to external wallets at launch.",
-        "Seven spot XRP ETFs now hold a combined ~$1B in AUM after the SEC and CFTC's commodity classification.",
-        "XRP trades near $1.43 after settling around $1.40 earlier in April."
+        "IBIT options OI overtook Deribit's BTC OI on Friday, just 16 months after launch — Deribit had dominated crypto options since 2019.",
+        "Bitcoin whales on Hyperliquid have built a steadily long bias since February despite deeply negative funding, with BTC tagging $80,000.",
+        "Kevin O'Leary, citing scale and survivability, disclosed his crypto book is now ~90% BTC and ETH after dumping altcoin exposure."
       ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/xrp/latest-updates/",
-      "category": "altcoins",
-      "impact": "medium",
-      "timestamp": "2026-04-26T17:20:00Z"
-    },
-    {
-      "id": "story-2026-04-26-23-005",
-      "headline": "BIP 361 lays out three-phase migration to quantum-resistant Bitcoin",
-      "slug": "bip-361-quantum-resistant-bitcoin-migration",
-      "tldr": "Bitcoin Improvement Proposal 361, published this month, outlines a three-phase migration of UTXOs to post-quantum signature schemes ahead of expected hardware threats.",
-      "why_it_matters": "Why it matters: Quantum risk has shifted from think-piece to active engineering — protocols that don't have a credible migration plan now look exposed, while Bitcoin's roadmap converts a tail risk into a coordination problem.",
-      "the_details": [
-        "BIP 361 proposes opt-in then mandatory phases for moving funds to quantum-resistant outputs.",
-        "Authors frame it as defensive prep, not a response to any current break in elliptic-curve cryptography.",
-        "Discussion is now active across Bitcoin Core, mining pools and large custodians on signaling timelines."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/bitcoin/latest-updates/",
+      "source": "CoinDesk Markets",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
       "category": "infrastructure",
+      "impact": "high",
+      "timestamp": "2026-04-26T16:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-00-005",
+      "headline": "Bitcoin eyes best month in a year, up 13% as $5B USDT mint fuels rebound",
+      "slug": "bitcoin-april-best-month-usdt-growth",
+      "tldr": "Bitcoin is on track for its strongest April in a year, holding above $77K and up 13% on the month after $5B in fresh USDT supply hit the market.",
+      "why_it_matters": "Why it matters: Stablecoin issuance is the cleanest leading indicator of crypto-native buying power, and a $5B USDT print this size historically front-runs sustained spot bids.",
+      "the_details": [
+        "BTC's 30-day correlation with the DXY hit -0.90, the most negative reading since 2022, framing the rally as a dollar-weakness trade.",
+        "Tether minted roughly $5B in fresh USDT during April, the largest monthly increase of 2026 so far.",
+        "April 26 saw 3.73% of Plasma's (XPL) supply unlock — about $10.1M — adding short-term sell pressure to one altcoin amid an otherwise BTC-led tape."
+      ],
+      "source": "CoinDesk Markets",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "category": "bitcoin",
       "impact": "medium",
-      "timestamp": "2026-04-26T15:10:00Z"
+      "timestamp": "2026-04-26T14:00:00Z"
     }
   ]
 }
