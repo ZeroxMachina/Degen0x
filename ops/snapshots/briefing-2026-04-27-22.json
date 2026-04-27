@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-27T22:09:00Z",
+  "briefing_id": "briefing-2026-04-27-22",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-27-22-001",
+      "headline": "Bitcoin rejects $80K, slides under $78K as Iran peace headlines and oil weigh",
+      "slug": "bitcoin-rejects-80k-iran-oil-pullback",
+      "tldr": "BTC failed at $80,000 and dropped roughly 2% below $78,000 as caution dominated despite Iran offering a fresh war-ending proposal to Washington.",
+      "why_it_matters": "Why it matters: A clean $80K rejection ahead of four central-bank decisions hands bears the macro narrative and threatens the breakout setup heading into Bitcoin 2026 week.",
+      "the_details": [
+        "Bitcoin briefly tagged $79,485 in Asian hours before unwinding into the $77,800-$78,000 zone, per CoinDesk.",
+        "Ethereum tracked the move lower, sliding to $2,320.84 by 7:24 a.m. ET as altcoins led losses.",
+        "Crypto market cap held $2.71T (+1.7% 24h) on $66.6B volume even as risk appetite cooled."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-27T13:30:00Z"
+    },
+    {
+      "id": "story-2026-04-27-22-002",
+      "headline": "Aave bleeds $8.4B in 48 hours as DeFi TVL sheds $13B post-April exploits",
+      "slug": "aave-defi-tvl-contagion-april-hacks",
+      "tldr": "Post-hack contagion has emptied $8.4B from Aave and stripped over $13B from total DeFi TVL since the Drift and KelpDAO exploits.",
+      "why_it_matters": "Why it matters: Liquidity is fleeing blue-chip lenders, not just compromised protocols — the fallout is now a sector-wide trust shock, not a one-protocol problem.",
+      "the_details": [
+        "More than $8.4B in deposits left Aave in the 48 hours following the back-to-back April attacks.",
+        "Drift lost $285M on April 1 via a compromised admin key; KelpDAO lost $292M on April 18 through a LayerZero bridge flaw.",
+        "DeFi TVL across all protocols has dropped by more than $13B as users de-risk."
+      ],
+      "source": "Bloomberg",
+      "source_url": "https://www.bloomberg.com/news/articles/2026-04-20/crypto-hack-sparks-9-billion-outflows-from-biggest-defi-lender",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-27T11:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-22-003",
+      "headline": "Spot Solana ETF inflows collapse 92% from November peak to just $34M in April",
+      "slug": "solana-etf-inflows-collapse-april",
+      "tldr": "Spot Solana ETFs pulled only $34M in April, down 92% from $419M in November 2025, signaling cooling institutional appetite for SOL exposure.",
+      "why_it_matters": "Why it matters: SOL was the institutional-darling alt narrative; a 92% inflow collapse undercuts the Solana ETF thesis just as the Drift hack damages on-chain confidence.",
+      "the_details": [
+        "Spot SOL ETFs took in $419M in November 2025, the post-launch high water mark.",
+        "April 2026 inflows have totaled just $34M with three trading days left.",
+        "SOL trades near $86.47 with a $49.8B market cap, ranked #7 by capitalization."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-27T14:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-22-004",
+      "headline": "Solana's Anza and Firedancer converge on Falcon signatures to harden against quantum",
+      "slug": "solana-falcon-quantum-signatures",
+      "tldr": "Solana's two core client teams, Anza and Jump's Firedancer, have independently chosen Falcon post-quantum signatures to future-proof the network.",
+      "why_it_matters": "Why it matters: Independent convergence on the same post-quantum primitive de-risks Solana's roadmap and pre-empts a coming industry-wide cryptography migration.",
+      "the_details": [
+        "Falcon is a lattice-based signature scheme finalized in NIST's PQC suite.",
+        "Anza (ex-Solana Labs core) and Firedancer (Jump Crypto) reached the choice independently.",
+        "Firedancer is also targeting a throughput jump from ~1,300 TPS toward 1M TPS this year."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-27T12:00:00Z"
+    },
+    {
+      "id": "story-2026-04-27-22-005",
+      "headline": "The Block taps Steve Chung as CEO, lands $10M from Foresight Ventures",
+      "slug": "the-block-ceo-steve-chung-foresight",
+      "tldr": "Crypto media outlet The Block named Steve Chung CEO alongside a $10M raise from Foresight Ventures to fund its next phase of expansion.",
+      "why_it_matters": "Why it matters: Crypto-native media is consolidating around well-funded incumbents — a tailwind for distribution leverage and a signal that VCs still see editorial as strategic.",
+      "the_details": [
+        "Chung succeeds Larry Cermak, who stays on as President focused on research and product.",
+        "Foresight Ventures led the $10M check announced April 27.",
+        "Capital is earmarked for product expansion and next-phase growth."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/398948/the-block-appoints-steve-chung-ceo",
+      "category": "adoption",
+      "impact": "low",
+      "timestamp": "2026-04-27T15:00:00Z"
+    }
+  ]
+}
