@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T08:08:00Z",
-  "briefing_id": "briefing-2026-04-28-08",
+  "generated_at": "2026-04-28T09:08:00Z",
+  "briefing_id": "briefing-2026-04-28-09",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-08-001",
-      "headline": "Bitcoin slips below $77K, ETH wobbles at $2,328 as traders eye Wednesday FOMC",
-      "slug": "bitcoin-slips-below-77k-eth-wobbles-pre-fomc",
-      "tldr": "BTC failed to hold the $80K wall and dropped under $77K with ETH at $2,328 as macro-cautious traders position into the Fed's April 29 decision.",
-      "why_it_matters": "Why it matters: Markets are derisking despite a 9-day spot ETF inflow streak — Powell's tone Wednesday will dictate whether April's rebound has legs or stalls.",
+      "id": "story-2026-04-28-09-001",
+      "headline": "SEC's Atkins teases tokenization sandbox via 'innovation exemptions' window",
+      "slug": "sec-atkins-innovation-exemptions-tokenization-sandbox",
+      "tldr": "SEC Chair Paul Atkins said the agency will launch innovation exemptions in the coming weeks, letting firms pilot on-chain tokenization and securitization under a regulated carve-out.",
+      "why_it_matters": "Why it matters: A formal SEC sandbox is the first credible path for U.S. issuers to tokenize equities and funds without a Howey landmine — and it pulls forward institutional product launches by quarters.",
       "the_details": [
-        "BTC trades $78,112 (+0.56%), ETH $2,328 (+0.61%), with $80K rejected as concentrated sell wall.",
-        "US Bitcoin spot ETFs notched 9 straight inflow days, topping $2B in the streak.",
-        "Fed FOMC press conference lands April 29; ECB, BoE, BoJ also decide rates this week."
+        "Atkins announced the framework live at Bitcoin 2026 in Las Vegas, alongside CFTC and White House officials in a coordinated 'unified approach' message.",
+        "Senator Lummis simultaneously pinned the CLARITY Act for an August advance, sequencing the legislative track behind the SEC's exemption launch.",
+        "White House Presidential Advisory Council on Digital Assets flagged a separate Strategic Bitcoin Reserve announcement also coming in 'the coming weeks.'"
+      ],
+      "source": "TradingKey / SEC.gov",
+      "source_url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261829066-crypto-bitcoin-btc-price-sec-cftc-white-house-paul-atkins-clarity-tradingkey",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-28T08:45:00Z"
+    },
+    {
+      "id": "story-2026-04-28-09-002",
+      "headline": "Four central banks set rates this week — BOJ, Fed, ECB, BOE all on deck",
+      "slug": "four-central-banks-rate-decisions-week",
+      "tldr": "BOJ, Fed, ECB and BOE all hand down policy decisions this week, the densest cluster of major-economy rate prints crypto has faced in 2026.",
+      "why_it_matters": "Why it matters: BTC's correlation to dollar moves has hit its most extreme negative in nearly four years — a hawkish Fed Wednesday could detonate the leveraged long book that built up around the $80K reclaim.",
+      "the_details": [
+        "Markets are pricing the Fed to hold at 3.50%–3.75% on April 29; any hawkish-hold language reprices crypto risk premia immediately.",
+        "Kevin Warsh takes the Fed chair on May 15, so this is Powell's final FOMC — adding lame-duck communication risk on top of the decision itself.",
+        "BTC sold off nearly 3% to under $77,000 on April 28 on geopolitics and rate jitters, after failing to break the $80,000 ceiling this weekend."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T07:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-09-003",
+      "headline": "Crypto ETF AUM jumps to $155B as BTC funds soak up $933M weekly inflow",
+      "slug": "crypto-etf-aum-155b-btc-933m-weekly-inflow",
+      "tldr": "Total crypto ETF AUM has rebounded to $155 billion — the highest reading since February — driven by a $933 million weekly inflow into Bitcoin funds.",
+      "why_it_matters": "Why it matters: Sidelined institutional capital is back on the bid even as spot BTC slips below $77K, signalling that ETF allocators see this dip as accumulation, not exit.",
+      "the_details": [
+        "Onchain data shows billions in fresh stablecoin deposits hitting exchanges alongside the ETF inflows, a classic dry-powder setup ahead of the FOMC.",
+        "Goldman Sachs filed for its first Bitcoin ETF product earlier in April, deepening the traditional-finance bench beyond BlackRock and Fidelity.",
+        "Concentrated sell orders capped the rally near $80,000 — analysts flagged the level as the next breakout trigger if FOMC clears risk."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T07:45:00Z"
+      "timestamp": "2026-04-28T06:45:00Z"
     },
     {
-      "id": "story-2026-04-28-08-002",
-      "headline": "Solana spot ETF inflows collapse 92% — from $419M peak to just $34M in April",
-      "slug": "solana-spot-etf-inflows-collapse-92-percent",
-      "tldr": "SOL spot ETF inflows have cratered from $419M last November to $34M this month as institutional appetite for alt L1s thins out.",
-      "why_it_matters": "Why it matters: The 92% drop signals the post-launch SOL ETF bid has fully exhausted, putting downside pressure on alt L1 narratives just as Firedancer ships.",
+      "id": "story-2026-04-28-09-004",
+      "headline": "TOKEN2049 Dubai postponed to 2027 as UAE security risks scrap May event",
+      "slug": "token2049-dubai-postponed-2027-uae-security",
+      "tldr": "TOKEN2049 organizers pushed the Dubai conference from May 2026 to 2027, citing heightened security risks across the UAE.",
+      "why_it_matters": "Why it matters: Dubai has been the unofficial off-site capital of the bull-cycle conference circuit — losing it for a year reroutes deal-flow and BD calendars to Singapore and the U.S. through 2026.",
       "the_details": [
-        "SOL trades near $86.47 with a $49.8B market cap, holding seventh by market cap.",
-        "November 2025 monthly inflows hit $419M; April 2026 has captured just $34M.",
-        "Firedancer upgrade still targeting a move from ~1,300 TPS toward 1M TPS in 2026."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
-      "category": "altcoins",
-      "impact": "high",
-      "timestamp": "2026-04-27T16:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-08-003",
-      "headline": "100+ crypto firms led by Coinbase, Ripple push Senate to mark up Clarity Act",
-      "slug": "crypto-firms-push-senate-clarity-act-markup",
-      "tldr": "A coalition of more than 100 crypto firms is pressing the Senate Banking Committee to advance the Clarity Act, building on March's SEC-CFTC joint guidance.",
-      "why_it_matters": "Why it matters: Without Senate action this cycle, the SEC-CFTC March framework risks becoming the de facto rulebook — companies want statutory cover before any 2027 enforcement pivot.",
-      "the_details": [
-        "Coinbase, Ripple, and 100+ firms signed a letter urging Senate Banking markup of the Clarity Act.",
-        "Builds on the March 17 SEC-CFTC 68-page joint release that set a five-category token taxonomy.",
-        "SEC staff said April 13 it won't object to DEX UI providers operating without broker-dealer registration."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-23T14:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-08-004",
-      "headline": "TOKEN2049 Dubai pushed to 2027 as UAE security risks escalate",
-      "slug": "token2049-dubai-postponed-to-2027",
-      "tldr": "The TOKEN2049 Dubai conference has been postponed to 2027 amid heightened security risks in the UAE, sidelining one of crypto's biggest annual gatherings.",
-      "why_it_matters": "Why it matters: Losing the spring Dubai event tears a hole in the Middle East crypto deal calendar and forces VCs and exchanges to recut their 2026 BD pipeline.",
-      "the_details": [
-        "Organizers cited heightened security risks across the UAE for the postponement to 2027.",
-        "Singapore TOKEN2049 stays on the calendar for fall 2026, partially absorbing displaced BD demand.",
-        "Sidelines a key Q2 deal-flow venue; funds are recutting Middle East travel plans."
+        "The cancellation lands the same week the U.S.–Iran ceasefire ended, putting Gulf-region risk back in the macro frame for crypto events.",
+        "The Singapore edition of TOKEN2049 in October 2026 is now the next major industry-wide gathering on the calendar.",
+        "Sponsors and side-event hosts who had committed Dubai budgets are scrambling to redeploy spend toward Bitcoin 2026 Vegas and Token2049 SG."
       ],
       "source": "The Block",
       "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-27T10:00:00Z"
+      "timestamp": "2026-04-28T05:20:00Z"
     },
     {
-      "id": "story-2026-04-28-08-005",
-      "headline": "Vercel breach forces crypto devs into mass API key and secret rotation",
-      "slug": "vercel-breach-crypto-api-key-rotation",
-      "tldr": "A security incident at Vercel sent crypto developers scrambling to rotate API keys and lock down secrets stored in the popular hosting platform.",
-      "why_it_matters": "Why it matters: Vercel underpins much of crypto's frontend — a lasting compromise of cached env vars could expose RPC keys, signer endpoints and price-feed credentials.",
+      "id": "story-2026-04-28-09-005",
+      "headline": "Jupiter unlocks $9.67M JUP — 1.54% of supply — into a fragile altcoin tape",
+      "slug": "jupiter-jup-unlock-967m-april-28",
+      "tldr": "Solana DEX aggregator Jupiter releases 1.54% of circulating supply, worth $9.67 million in JUP, on April 28 amid a fading altcoin season.",
+      "why_it_matters": "Why it matters: The unlock hits while the CMC Altcoin Season Index sits at 39/100 firmly in 'Bitcoin Season,' meaning weakened bid depth could amplify any dump from early backers.",
       "the_details": [
-        "Vercel disclosed an internal security incident on April 20, 2026.",
-        "Crypto teams using Vercel for dApp frontends were urged to rotate all API keys and tokens.",
-        "Lands inside April's $606M DeFi exploit tally, the worst hack month in over a year."
+        "Bitcoin dominance has climbed to 60% in April 2026, draining liquidity from mid-cap altcoins like JUP into BTC and ETF-driven majors.",
+        "Solana spot ETF inflows already collapsed 92% from their $419M peak to just $34M in April, removing one of JUP's macro tailwinds.",
+        "Bittensor (TAO) is the standout altcoin counter-trend, up 47% YTD with $43M in Q1 revenue, drawing capital that might otherwise rotate into JUP."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
-      "category": "security",
+      "source_url": "https://www.coindesk.com",
+      "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-20T15:00:00Z"
+      "timestamp": "2026-04-28T04:00:00Z"
     }
   ]
 }
