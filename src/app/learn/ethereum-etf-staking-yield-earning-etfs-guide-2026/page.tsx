@@ -2,17 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import FAQAccordion from '@/components/FAQAccordion';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
-import RelatedContent from '@/components/RelatedContent';
-import Diagram from '@/components/Diagram';
-import LiveMiniStat from '@/components/LiveMiniStat';
-import AutoTOC from '@/components/AutoTOC';
-import ReadingTime from '@/components/ReadingTime';
-import LastUpdated from '@/components/LastUpdated';
 
-
-import ArticleSchema from "@/components/ArticleSchema";
-
-import AuthoritySources from "@/components/AuthoritySources";
 
 export const metadata: Metadata = {
   title: "Ethereum ETF Staking Guide 2026 — Earn 3.5-4.5% Yields |",
@@ -261,15 +251,7 @@ export default function EthereumETFStakingGuide() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
-      <ArticleSchema
-        headline="Ethereum ETF Staking Guide 2026 — Earn 3.5-4.5% Yields |"
-        description="Complete guide to Ethereum staking ETFs 2026: Compare 8 spot ETFs, staking yields, fee breakdown, BlackRock ETHB 82% monthly distribution, and SEC regulatory"
-        url="https://degen0x.com/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026"
-        datePublished="2024-06-01"
-        dateModified="2026-04-17"
-        section="Learn"
-      />
+    <main className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
       {/* Structured data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
@@ -280,18 +262,18 @@ export default function EthereumETFStakingGuide() {
       </a>
 
       {/* Header */}
-      <header className="border-b border-[#30363d] bg-[#0d1117] sticky top-0 z-40">
+      <header className="border-b border-[var(--border)] bg-[var(--background)] sticky top-0 z-40">
         <div className="max-w-4xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 text-sm text-[#8b949e] mb-4">
-            <Link href="/" className="hover:text-[#58a6ff] transition-colors">
+          <nav className="flex items-center gap-2 text-sm text-[var(--muted)] mb-4">
+            <Link href="/" className="hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
               degen0x
             </Link>
             <span>/</span>
-            <Link href="/learn" className="hover:text-[#58a6ff] transition-colors">
+            <Link href="/learn" className="hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
               Learn
             </Link>
             <span>/</span>
-            <span className="text-[#c9d1d9]">Ethereum ETF Staking Guide 2026</span>
+            <span className="text-[var(--foreground)]">Ethereum ETF Staking Guide 2026</span>
           </nav>
 
           <div className="space-y-4">
@@ -307,18 +289,15 @@ export default function EthereumETFStakingGuide() {
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl font-bold leading-tight" style={{ background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight bg-gradient-to-r from-[var(--accent-badge)] to-[var(--secondary)] bg-clip-text text-transparent">
               Ethereum ETF Staking & Yield Guide 2026
             </h1>
 
-            <LastUpdated pathKey="/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026" />
-            <ReadingTime />
-            <AutoTOC />
-            <p className="text-lg text-[#8b949e] max-w-3xl">
+            <p className="text-lg text-[var(--muted)] max-w-3xl">
               Complete guide to Ethereum staking ETFs: Compare 8 spot ETFs, earn 3.5-4.5% annual yields, understand BlackRock ETHB&apos;s 82% monthly distribution model, and navigate the March 2026 SEC digital commodity ruling.
             </p>
 
-            <div className="flex flex-wrap gap-4 text-sm text-[#8b949e]">
+            <div className="flex flex-wrap gap-4 text-sm text-[var(--muted)]">
               <span>Updated April 2026</span>
               <span>•</span>
               <span>10 min read</span>
@@ -341,46 +320,46 @@ export default function EthereumETFStakingGuide() {
       <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Sidebar - Table of Contents */}
         <aside className="hidden lg:block lg:col-span-1 order-2">
-          <div className="sticky top-24 bg-[#161b22] border border-[#30363d] rounded-lg p-4 space-y-4">
-            <h3 className="font-semibold text-[#e6edf3] text-sm">Table of Contents</h3>
+          <div className="sticky top-24 bg-[var(--card)] border border-[var(--border)] rounded-lg p-4 space-y-4">
+            <h3 className="font-semibold text-[var(--foreground)] text-sm">Table of Contents</h3>
             <nav className="space-y-2 text-sm">
               <div>
-                <a href="#what-eth-staking-etf" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#what-eth-staking-etf" className="text-[var(--primary)] hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
                   1. What is ETH Staking?
                 </a>
               </div>
               <div>
-                <a href="#how-it-works" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#how-it-works" className="text-[var(--primary)] hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
                   2. How It Works
                 </a>
               </div>
               <div>
-                <a href="#etf-comparison" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#etf-comparison" className="text-[var(--primary)] hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
                   3. ETF Comparison Table
                 </a>
               </div>
               <div>
-                <a href="#march-2026-ruling" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#march-2026-ruling" className="text-[var(--primary)] hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
                   4. March 2026 SEC Ruling
                 </a>
               </div>
               <div>
-                <a href="#yields-breakdown" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#yields-breakdown" className="text-[var(--primary)] hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
                   5. Staking Yields
                 </a>
               </div>
               <div>
-                <a href="#risks" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#risks" className="text-[var(--primary)] hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
                   6. Risks & Considerations
                 </a>
               </div>
               <div>
-                <a href="#how-to-choose" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#how-to-choose" className="text-[var(--primary)] hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
                   7. How to Choose
                 </a>
               </div>
               <div>
-                <a href="#faq" className="text-[#58a6ff] hover:text-[#79c0ff] transition-colors">
+                <a href="#faq" className="text-[var(--primary)] hover:text-[var(--primary)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm">
                   8. FAQ
                 </a>
               </div>
@@ -393,133 +372,133 @@ export default function EthereumETFStakingGuide() {
 
           {/* Section 1: What is Ethereum ETF Staking */}
           <section id="what-eth-staking-etf" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">1. What is Ethereum ETF Staking?</h2>
+            <h2 className="text-3xl font-bold text-[var(--foreground)]">1. What is Ethereum ETF Staking?</h2>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--foreground)] leading-relaxed">
               An Ethereum staking ETF is an exchange-traded fund that holds physical Ethereum (ETH) tokens and automatically stakes them on the Ethereum network to earn staking rewards. The ETF then passes these rewards (~3.5-4.5% annually) to shareholders, creating passive income within your brokerage account. This is fundamentally different from holding ETH on a crypto exchange or in self-custody—staking ETFs provide SEC regulation, institutional custody, insurance protection, and complete automation.
             </p>
         {/* editorial-voice */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+        <div style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
             <span style={{ fontSize: 18 }}>💡</span>
-            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+            <strong style={{ color: 'var(--accent-badge)', fontSize: 15 }}>Why This Matters</strong>
           </div>
-          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+          <p style={{ fontSize: 14, color: 'var(--foreground)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
             This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
           </p>
         </div>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--foreground)] leading-relaxed">
               Since Ethereum&apos;s transition to Proof of Stake in September 2022, the network requires validators to stake ETH to secure the blockchain and earn rewards. Previously, staking was only available to technical users running validators or delegating to staking pools. Ethereum staking ETFs democratized access: now any investor with a brokerage account can earn staking yields by buying shares, just like they would with any stock or traditional ETF.
             </p>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-5 space-y-3">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">Key Points:</h3>
-              <ul className="space-y-2 text-[#c9d1d9] text-sm">
+            <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-5 space-y-3">
+              <h3 className="text-lg font-semibold text-[var(--foreground)]">Key Points:</h3>
+              <ul className="space-y-2 text-[var(--foreground)] text-sm">
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff] font-bold">•</span>
+                  <span className="text-[var(--primary)] font-bold">•</span>
                   <span><strong>Spot ETFs own actual ETH:</strong> Unlike futures ETFs, staking ETFs hold real tokens, enabling genuine staking participation.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff] font-bold">•</span>
+                  <span className="text-[var(--primary)] font-bold">•</span>
                   <span><strong>Staking is automatic:</strong> No validator setup, key management, or technical knowledge required. The ETF issuer handles everything.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff] font-bold">•</span>
+                  <span className="text-[var(--primary)] font-bold">•</span>
                   <span><strong>Rewards flow to you:</strong> Staking yields are distributed as cash or reinvested, depending on the ETF (BlackRock ETHB distributes 82% monthly; others distribute quarterly).</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff] font-bold">•</span>
+                  <span className="text-[var(--primary)] font-bold">•</span>
                   <span><strong>SEC-regulated:</strong> Staking ETFs are registered with the SEC and subject to fund governance, custody rules, and disclosure requirements.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff] font-bold">•</span>
+                  <span className="text-[var(--primary)] font-bold">•</span>
                   <span><strong>Liquid anytime:</strong> Unlike self-staking (which locks ETH for 32 ETH minimum), ETF shares are liquid. Sell during market hours for instant liquidity.</span>
                 </li>
               </ul>
             </div>
 
-            <p className="text-[#c9d1d9] leading-relaxed text-sm italic text-[#8b949e]">
+            <p className="text-[var(--foreground)] leading-relaxed text-sm italic text-[var(--muted)]">
               Note: As of April 2026, Ethereum spot ETFs launched in July 2024. Staking features are gradually rolling out via SEC amendments; by mid-2026, all major issuers will offer staking variants.
             </p>
           </section>
 
           {/* Section 2: How Ethereum Staking Works */}
           <section id="how-it-works" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">2. How Ethereum ETF Staking Works</h2>
+            <h2 className="text-3xl font-bold text-[var(--foreground)]">2. How Ethereum ETF Staking Works</h2>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--foreground)] leading-relaxed">
               Ethereum staking ETFs simplify network participation into three straightforward steps: (1) the ETF holds ETH in custody, (2) the custodian stakes that ETH with validators, and (3) staking rewards flow back to shareholders. Here&apos;s the detailed mechanics.
             </p>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">The Staking Process</h3>
+            <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 space-y-4">
+              <h3 className="text-lg font-semibold text-[var(--foreground)]">The Staking Process</h3>
 
               <div className="space-y-3">
-                <div className="bg-[#0d1117] p-4 rounded border border-[#30363d]">
-                  <p className="font-semibold text-[#e6edf3] text-sm mb-2">Step 1: You buy ETF shares</p>
-                  <p className="text-[#c9d1d9] text-sm">You purchase shares through your brokerage (Fidelity, Charles Schwab, E*TRADE, etc.) just like buying any stock. Your cash is converted to ETF shares representing fractional ETH ownership.</p>
+                <div className="bg-[var(--background)] p-4 rounded border border-[var(--border)]">
+                  <p className="font-semibold text-[var(--foreground)] text-sm mb-2">Step 1: You buy ETF shares</p>
+                  <p className="text-[var(--foreground)] text-sm">You purchase shares through your brokerage (Fidelity, Charles Schwab, E*TRADE, etc.) just like buying any stock. Your cash is converted to ETF shares representing fractional ETH ownership.</p>
                 </div>
 
-                <div className="bg-[#0d1117] p-4 rounded border border-[#30363d]">
-                  <p className="font-semibold text-[#e6edf3] text-sm mb-2">Step 2: Custodian stakes the ETH</p>
-                  <p className="text-[#c9d1d9] text-sm">The ETF&apos;s institutional custodian (e.g., Coinbase Prime for BlackRock ETHB) stakes the ETH on the Ethereum network with professional validators. Most custodians stake 70-100% of holdings. The staked ETH earns protocol rewards automatically.</p>
+                <div className="bg-[var(--background)] p-4 rounded border border-[var(--border)]">
+                  <p className="font-semibold text-[var(--foreground)] text-sm mb-2">Step 2: Custodian stakes the ETH</p>
+                  <p className="text-[var(--foreground)] text-sm">The ETF&apos;s institutional custodian (e.g., Coinbase Prime for BlackRock ETHB) stakes the ETH on the Ethereum network with professional validators. Most custodians stake 70-100% of holdings. The staked ETH earns protocol rewards automatically.</p>
                 </div>
 
-                <div className="bg-[#0d1117] p-4 rounded border border-[#30363d]">
-                  <p className="font-semibold text-[#e6edf3] text-sm mb-2">Step 3: Rewards distributed</p>
-                  <p className="text-[#c9d1d9] text-sm">Staking rewards accumulate daily on the Ethereum network. The ETF issuer distributes these to shareholders on a schedule: BlackRock ETHB monthly (82% of rewards), most others quarterly. You receive rewards as cash dividends in your brokerage account.</p>
+                <div className="bg-[var(--background)] p-4 rounded border border-[var(--border)]">
+                  <p className="font-semibold text-[var(--foreground)] text-sm mb-2">Step 3: Rewards distributed</p>
+                  <p className="text-[var(--foreground)] text-sm">Staking rewards accumulate daily on the Ethereum network. The ETF issuer distributes these to shareholders on a schedule: BlackRock ETHB monthly (82% of rewards), most others quarterly. You receive rewards as cash dividends in your brokerage account.</p>
                 </div>
               </div>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Current Ethereum Staking Yields</h3>
-              <p className="text-[#c9d1d9] text-sm">
+              <h3 className="text-lg font-semibold text-[var(--foreground)] mt-4">Current Ethereum Staking Yields</h3>
+              <p className="text-[var(--foreground)] text-sm">
                 Ethereum network staking rewards are currently <strong>3.5-4.5% annually</strong> (April 2026). This yield fluctuates based on two factors:
               </p>
-              <ul className="space-y-2 text-[#c9d1d9] text-sm mt-3">
+              <ul className="space-y-2 text-[var(--foreground)] text-sm mt-3">
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--primary)]">•</span>
                   <span><strong>Total validators:</strong> More validators = lower yields (rewards split across more participants). Fewer validators = higher yields.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--primary)]">•</span>
                   <span><strong>Transaction fees:</strong> High network activity = MEV (maximal extractable value) rewards to validators, boosting yields. Low activity = lower yields.</span>
                 </li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">The March 2026 Regulatory Breakthrough</h3>
-              <p className="text-[#c9d1d9] text-sm mt-3">
+              <h3 className="text-lg font-semibold text-[var(--foreground)] mt-4">The March 2026 Regulatory Breakthrough</h3>
+              <p className="text-[var(--foreground)] text-sm mt-3">
                 On <strong>March 17, 2026</strong>, the SEC and CFTC jointly issued guidance classifying staking rewards as <strong>non-securities transactions</strong>. This was critical because:
               </p>
-              <ul className="space-y-2 text-[#c9d1d9] text-sm mt-3">
+              <ul className="space-y-2 text-[var(--foreground)] text-sm mt-3">
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1] font-bold">✓</span>
+                  <span className="text-[var(--secondary)] font-bold">✓</span>
                   <span><strong>Clarified legal status:</strong> Previously, it was ambiguous whether staking rewards triggered securities registration. This ruling eliminated that uncertainty.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1] font-bold">✓</span>
+                  <span className="text-[var(--secondary)] font-bold">✓</span>
                   <span><strong>Enabled ETF staking:</strong> ETF issuers can now confidently file amendments to add staking without legal risk.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1] font-bold">✓</span>
+                  <span className="text-[var(--secondary)] font-bold">✓</span>
                   <span><strong>Classified ETH as commodity:</strong> By clarifying staking isn&apos;t a securities offering, the ruling reinforced ETH&apos;s commodity status.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1] font-bold">✓</span>
+                  <span className="text-[var(--secondary)] font-bold">✓</span>
                   <span><strong>Accelerated approvals:</strong> Staking amendments by Fidelity, Franklin Templeton, VanEck, Invesco, and 21Shares are expected Q2 2026.</span>
                 </li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Custodial Staking Models</h3>
-              <p className="text-[#c9d1d9] text-sm mt-3">
+              <h3 className="text-lg font-semibold text-[var(--foreground)] mt-4">Custodial Staking Models</h3>
+              <p className="text-[var(--foreground)] text-sm mt-3">
                 ETF issuers use two primary staking approaches:
               </p>
-              <div className="space-y-3 text-[#c9d1d9] text-sm mt-3">
-                <div className="bg-[#0d1117] p-3 rounded border-l-2 border-[#58a6ff]">
+              <div className="space-y-3 text-[var(--foreground)] text-sm mt-3">
+                <div className="bg-[var(--background)] p-3 rounded border-l-2 border-[var(--primary)]">
                   <p className="font-semibold mb-1">Direct Delegation (BlackRock ETHB model)</p>
                   <p>The custodian (Coinbase Prime) stakes ETH directly with Ethereum validators, collecting rewards and distributing them to the fund. This is the most straightforward approach. 70-95% of ETH is staked; some held liquid for redemptions.</p>
                 </div>
-                <div className="bg-[#0d1117] p-3 rounded border-l-2 border-[#58a6ff]">
+                <div className="bg-[var(--background)] p-3 rounded border-l-2 border-[var(--primary)]">
                   <p className="font-semibold mb-1">Liquid Staking Derivatives</p>
                   <p>Some ETF issuers use liquid staking protocols (Lido, Rocket Pool) that mint staking derivatives (stETH, rETH). This provides flexibility for rebalancing and liquidity but introduces smart contract risk. Expected for future Q2 2026 amendments.</p>
                 </div>
@@ -535,22 +514,22 @@ export default function EthereumETFStakingGuide() {
 
           {/* Section 3: ETF Comparison Table */}
           <section id="etf-comparison" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">3. Ethereum Staking ETF Comparison Table</h2>
+            <h2 className="text-3xl font-bold text-[var(--foreground)]">3. Ethereum Staking ETF Comparison Table</h2>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--foreground)] leading-relaxed">
               As of April 2026, 8 Ethereum spot ETFs exist, with only BlackRock ETHB offering staking live. Five issuers (Fidelity, VanEck, Franklin Templeton, Invesco, 21Shares) have pending staking amendments expected to clear in Q2 2026. Grayscale converted its trust to a spot ETF (ETHE) without staking; Grayscale Mini (ETH) has a staking amendment pending.
             </p>
 
             <div className="overflow-x-auto">
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
-                  <tr style={{ borderBottom: '2px solid #30363d' }}>
-                    <th style={{ textAlign: 'left', padding: '12px 8px', color: '#e6edf3', fontWeight: 'bold', borderRight: '1px solid #30363d' }}>Ticker</th>
-                    <th style={{ textAlign: 'left', padding: '12px 8px', color: '#e6edf3', fontWeight: 'bold', borderRight: '1px solid #30363d' }}>Issuer</th>
-                    <th style={{ textAlign: 'left', padding: '12px 8px', color: '#e6edf3', fontWeight: 'bold', borderRight: '1px solid #30363d' }}>Expense Ratio</th>
-                    <th style={{ textAlign: 'left', padding: '12px 8px', color: '#e6edf3', fontWeight: 'bold', borderRight: '1px solid #30363d' }}>Staking Status</th>
-                    <th style={{ textAlign: 'left', padding: '12px 8px', color: '#e6edf3', fontWeight: 'bold', borderRight: '1px solid #30363d' }}>Distribution</th>
-                    <th style={{ textAlign: 'left', padding: '12px 8px', color: '#e6edf3', fontWeight: 'bold' }}>Launch/Timeline</th>
+                  <tr style={{ borderBottom: '2px solid var(--border)' }}>
+                    <th style={{ textAlign: 'left', padding: '12px 8px', color: 'var(--foreground)', fontWeight: 'bold', borderRight: '1px solid var(--border)' }}>Ticker</th>
+                    <th style={{ textAlign: 'left', padding: '12px 8px', color: 'var(--foreground)', fontWeight: 'bold', borderRight: '1px solid var(--border)' }}>Issuer</th>
+                    <th style={{ textAlign: 'left', padding: '12px 8px', color: 'var(--foreground)', fontWeight: 'bold', borderRight: '1px solid var(--border)' }}>Expense Ratio</th>
+                    <th style={{ textAlign: 'left', padding: '12px 8px', color: 'var(--foreground)', fontWeight: 'bold', borderRight: '1px solid var(--border)' }}>Staking Status</th>
+                    <th style={{ textAlign: 'left', padding: '12px 8px', color: 'var(--foreground)', fontWeight: 'bold', borderRight: '1px solid var(--border)' }}>Distribution</th>
+                    <th style={{ textAlign: 'left', padding: '12px 8px', color: 'var(--foreground)', fontWeight: 'bold' }}>Launch/Timeline</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -620,50 +599,50 @@ export default function EthereumETFStakingGuide() {
                       timeline: 'Q2 2026',
                     },
                   ].map((etf, i) => (
-                    <tr key={i} style={{ borderBottom: '1px solid #30363d' }}>
-                      <td style={{ padding: '12px 8px', color: '#58a6ff', fontWeight: 'bold', borderRight: '1px solid #30363d' }}>{etf.ticker}</td>
-                      <td style={{ padding: '12px 8px', color: '#c9d1d9', borderRight: '1px solid #30363d' }}>{etf.issuer}</td>
-                      <td style={{ padding: '12px 8px', color: '#c9d1d9', borderRight: '1px solid #30363d' }}>{etf.ratio}</td>
-                      <td style={{ padding: '12px 8px', color: '#c9d1d9', borderRight: '1px solid #30363d' }}>{etf.status}</td>
-                      <td style={{ padding: '12px 8px', color: '#c9d1d9', borderRight: '1px solid #30363d' }}>{etf.distribution}</td>
-                      <td style={{ padding: '12px 8px', color: '#c9d1d9' }}>{etf.timeline}</td>
+                    <tr key={i} style={{ borderBottom: '1px solid var(--border)' }}>
+                      <td style={{ padding: '12px 8px', color: 'var(--primary)', fontWeight: 'bold', borderRight: '1px solid var(--border)' }}>{etf.ticker}</td>
+                      <td style={{ padding: '12px 8px', color: 'var(--foreground)', borderRight: '1px solid var(--border)' }}>{etf.issuer}</td>
+                      <td style={{ padding: '12px 8px', color: 'var(--foreground)', borderRight: '1px solid var(--border)' }}>{etf.ratio}</td>
+                      <td style={{ padding: '12px 8px', color: 'var(--foreground)', borderRight: '1px solid var(--border)' }}>{etf.status}</td>
+                      <td style={{ padding: '12px 8px', color: 'var(--foreground)', borderRight: '1px solid var(--border)' }}>{etf.distribution}</td>
+                      <td style={{ padding: '12px 8px', color: 'var(--foreground)' }}>{etf.timeline}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 space-y-2 mt-4">
-              <p className="text-sm text-[#8b949e]">
-                <span className="font-semibold text-[#e6edf3]">Key observations:</span>
+            <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-4 space-y-2 mt-4">
+              <p className="text-sm text-[var(--muted)]">
+                <span className="font-semibold text-[var(--foreground)]">Key observations:</span>
               </p>
-              <ul className="space-y-2 text-sm text-[#c9d1d9]">
+              <ul className="space-y-2 text-sm text-[var(--foreground)]">
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--primary)]">•</span>
                   <span>
                     <strong>BlackRock ETHB</strong> is the only live staking ETF (launched July 2024). It distributes 82% of staking rewards monthly through Coinbase Prime custody.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--primary)]">•</span>
                   <span>
                     <strong>Franklin EZET</strong> has the lowest expense ratio at 0.19%, followed by VanEck ETHV at 0.20%.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--primary)]">•</span>
                   <span>
                     <strong>Grayscale Mini (ETH)</strong> offers the lowest standard fee at 0.15%, with staking amendment pending Q2 2026.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--primary)]">•</span>
                   <span>
                     <strong>Grayscale ETHE</strong> at 1.50% is expensive and offers no staking. Consider avoiding unless you have a specific reason to hold.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--primary)]">•</span>
                   <span>
                     <strong>By mid-2026</strong>, all issuers except Grayscale ETHE will likely offer staking, making yield-bearing options universal.
                   </span>
@@ -674,15 +653,15 @@ export default function EthereumETFStakingGuide() {
 
           {/* Section 4: March 2026 SEC Ruling */}
           <section id="march-2026-ruling" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">4. The March 17, 2026 SEC/CFTC Digital Commodity Ruling</h2>
+            <h2 className="text-3xl font-bold text-[var(--foreground)]">4. The March 17, 2026 SEC/CFTC Digital Commodity Ruling</h2>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--foreground)] leading-relaxed">
               On March 17, 2026, the SEC and CFTC jointly issued a 68-page interpretive guidance document that fundamentally reshaped crypto regulation in the United States. While not a new law, this guidance provided official interpretation of existing Commodity Exchange Act provisions and had immediate, transformative practical impact on Ethereum staking ETF approvals.
             </p>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">The 16 Classified Assets</h3>
-              <p className="text-[#c9d1d9] text-sm">
+            <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 space-y-4">
+              <h3 className="text-lg font-semibold text-[var(--foreground)]">The 16 Classified Assets</h3>
+              <p className="text-[var(--foreground)] text-sm">
                 The SEC/CFTC ruling classified 16 assets as digital commodities under the Commodity Exchange Act (not securities):
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-3">
@@ -704,79 +683,79 @@ export default function EthereumETFStakingGuide() {
                   'Aptos (APT)',
                   'Stellar (XLM)',
                 ].map((asset, i) => (
-                  <div key={i} style={{ backgroundColor: '#0d1117', padding: '8px 12px', borderRadius: '6px', border: '1px solid #30363d', fontSize: '14px', color: '#c9d1d9' }}>
+                  <div key={i} style={{ backgroundColor: 'var(--background)', padding: '8px 12px', borderRadius: '6px', border: '1px solid var(--border)', fontSize: '14px', color: 'var(--foreground)' }}>
                     {asset}
                   </div>
                 ))}
               </div>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Impact on Ethereum Staking ETFs</h3>
-              <ul className="space-y-3 text-[#c9d1d9] text-sm">
+              <h3 className="text-lg font-semibold text-[var(--foreground)] mt-4">Impact on Ethereum Staking ETFs</h3>
+              <ul className="space-y-3 text-[var(--foreground)] text-sm">
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1] font-bold">1.</span>
+                  <span className="text-[var(--secondary)] font-bold">1.</span>
                   <span>
                     <strong>Unlocked ETF staking:</strong> By classifying ETH as a commodity and staking rewards as non-securities, the ruling removed the primary legal barrier preventing staking amendments. ETF issuers can now file amendments with confidence.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1] font-bold">2.</span>
+                  <span className="text-[var(--secondary)] font-bold">2.</span>
                   <span>
                     <strong>Staking reward clarity:</strong> The guidance explicitly stated staking rewards are not "securities transactions" requiring registration. This eliminated legal ambiguity that previously existed.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1] font-bold">3.</span>
+                  <span className="text-[var(--secondary)] font-bold">3.</span>
                   <span>
                     <strong>Regulatory certainty for custodians:</strong> Institutional custodians (Coinbase Prime, Fidelity, others) now have clear guidance permitting them to stake ETF ETH holdings without regulatory risk.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1] font-bold">4.</span>
+                  <span className="text-[var(--secondary)] font-bold">4.</span>
                   <span>
                     <strong>Accelerated approval timelines:</strong> Commodity ETFs receive faster SEC approval than securities ETFs. Staking amendments filed in early 2026 are expected to clear by Q2 2026.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1] font-bold">5.</span>
+                  <span className="text-[var(--secondary)] font-bold">5.</span>
                   <span>
                     <strong>Enabled Bitcoin ETFs (indirect):</strong> The March ruling reinforced Bitcoin&apos;s commodity status, supporting spot Bitcoin ETF expansions and confidence in the asset class.
                   </span>
                 </li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">The CLARITY Act: Permanent vs. Interpretive</h3>
-              <p className="text-[#c9d1d9] text-sm mt-3">
+              <h3 className="text-lg font-semibold text-[var(--foreground)] mt-4">The CLARITY Act: Permanent vs. Interpretive</h3>
+              <p className="text-[var(--foreground)] text-sm mt-3">
                 The March 2026 ruling is <strong>interpretive guidance</strong>, not statutory law. This means a future SEC administration with different policy views could theoretically reverse it based on their own interpretation of the same Commodity Exchange Act.
               </p>
-              <p className="text-[#c9d1d9] text-sm mt-3">
+              <p className="text-[var(--foreground)] text-sm mt-3">
                 To make this classification permanent, Congress would need to pass legislation—specifically, the <strong>CLARITY Act</strong> (Crypto Law and Regulatory Improvements for the American Yield). As of April 2026:
               </p>
-              <div className="bg-[#0d1117] p-3 rounded border-l-2 border-yellow-600 mt-3">
-                <p className="text-[#c9d1d9] text-sm">
+              <div className="bg-[var(--background)] p-3 rounded border-l-2 border-yellow-600 mt-3">
+                <p className="text-[var(--foreground)] text-sm">
                   <strong>Status:</strong> The CLARITY Act has been proposed but has not yet passed into law. Passage would codify ETH and other 16 assets as statutory commodities, making reversal much harder. <strong>Monitor Congressional activity</strong> on this bill—passage would significantly reduce long-term regulatory reversal risk.
                 </p>
               </div>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Timeline of Regulatory Events</h3>
-              <div className="space-y-2 text-[#c9d1d9] text-sm">
+              <h3 className="text-lg font-semibold text-[var(--foreground)] mt-4">Timeline of Regulatory Events</h3>
+              <div className="space-y-2 text-[var(--foreground)] text-sm">
                 <div className="flex gap-3">
-                  <span className="font-semibold text-[#58a6ff] flex-shrink-0">Jan 2024:</span>
+                  <span className="font-semibold text-[var(--primary)] flex-shrink-0">Jan 2024:</span>
                   <span>Bitcoin spot ETFs approved by SEC</span>
                 </div>
                 <div className="flex gap-3">
-                  <span className="font-semibold text-[#58a6ff] flex-shrink-0">Jul 2024:</span>
+                  <span className="font-semibold text-[var(--primary)] flex-shrink-0">Jul 2024:</span>
                   <span>Ethereum spot ETFs approved by SEC</span>
                 </div>
                 <div className="flex gap-3">
-                  <span className="font-semibold text-[#58a6ff] flex-shrink-0">Oct 2025:</span>
+                  <span className="font-semibold text-[var(--primary)] flex-shrink-0">Oct 2025:</span>
                   <span>Solana spot ETFs approved by SEC</span>
                 </div>
                 <div className="flex gap-3">
-                  <span className="font-semibold text-[#58a6ff] flex-shrink-0">Mar 17, 2026:</span>
+                  <span className="font-semibold text-[var(--primary)] flex-shrink-0">Mar 17, 2026:</span>
                   <span><strong>SEC/CFTC digital commodity ruling:</strong> 16 assets classified as commodities, staking clarified as non-security</span>
                 </div>
                 <div className="flex gap-3">
-                  <span className="font-semibold text-[#58a6ff] flex-shrink-0">Q2 2026 (Apr-Jun):</span>
+                  <span className="font-semibold text-[var(--primary)] flex-shrink-0">Q2 2026 (Apr-Jun):</span>
                   <span>Staking amendments expected for Fidelity, Franklin, VanEck, Invesco, 21Shares</span>
                 </div>
               </div>
@@ -785,83 +764,83 @@ export default function EthereumETFStakingGuide() {
 
           {/* Section 5: Staking Yields Breakdown */}
           <section id="yields-breakdown" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">5. Ethereum Staking Yields: Breakdown &amp; Calculations</h2>
+            <h2 className="text-3xl font-bold text-[var(--foreground)]">5. Ethereum Staking Yields: Breakdown &amp; Calculations</h2>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--foreground)] leading-relaxed">
               Ethereum staking currently yields 3.5-4.5% annually at the network level. However, what you actually receive as an ETF investor is lower because expense ratios and operational costs are deducted. Understanding this gap is crucial for realistic return expectations.
             </p>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">Network vs. ETF Yields</h3>
+            <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6 space-y-4">
+              <h3 className="text-lg font-semibold text-[var(--foreground)]">Network vs. ETF Yields</h3>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-                <div className="bg-[#0d1117] p-4 rounded border border-[#30363d]">
-                  <p className="text-[#8b949e] text-sm font-semibold mb-2">Network Staking Yield</p>
-                  <p className="text-2xl font-bold text-[#22c55e]">3.5-4.5%</p>
-                  <p className="text-xs text-[#8b949e] mt-2">Gross rewards from Ethereum protocol to all validators</p>
+                <div className="bg-[var(--background)] p-4 rounded border border-[var(--border)]">
+                  <p className="text-[var(--muted)] text-sm font-semibold mb-2">Network Staking Yield</p>
+                  <p className="text-2xl font-bold text-green-500">3.5-4.5%</p>
+                  <p className="text-xs text-[var(--muted)] mt-2">Gross rewards from Ethereum protocol to all validators</p>
                 </div>
 
-                <div className="bg-[#0d1117] p-4 rounded border border-[#30363d]">
-                  <p className="text-[#8b949e] text-sm font-semibold mb-2">ETF Net Yield (after fees)</p>
-                  <p className="text-2xl font-bold text-[#22c55e]">3.1-4.3%</p>
-                  <p className="text-xs text-[#8b949e] mt-2">What you actually receive, accounting for expense ratios</p>
+                <div className="bg-[var(--background)] p-4 rounded border border-[var(--border)]">
+                  <p className="text-[var(--muted)] text-sm font-semibold mb-2">ETF Net Yield (after fees)</p>
+                  <p className="text-2xl font-bold text-green-500">3.1-4.3%</p>
+                  <p className="text-xs text-[var(--muted)] mt-2">What you actually receive, accounting for expense ratios</p>
                 </div>
               </div>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Example: BlackRock ETHB Yield Calculation</h3>
-              <div className="bg-[#0d1117] p-4 rounded border border-[#30363d] mt-3 space-y-3">
+              <h3 className="text-lg font-semibold text-[var(--foreground)] mt-4">Example: BlackRock ETHB Yield Calculation</h3>
+              <div className="bg-[var(--background)] p-4 rounded border border-[var(--border)] mt-3 space-y-3">
                 <div>
-                  <p className="text-[#8b949e] text-xs">Network staking yield</p>
-                  <p className="text-[#c9d1d9] font-semibold">4.0%</p>
+                  <p className="text-[var(--muted)] text-xs">Network staking yield</p>
+                  <p className="text-[var(--foreground)] font-semibold">4.0%</p>
                 </div>
-                <div className="flex items-center justify-center text-[#8b949e]">−</div>
+                <div className="flex items-center justify-center text-[var(--muted)]">−</div>
                 <div>
-                  <p className="text-[#8b949e] text-xs">BlackRock ETHB expense ratio</p>
-                  <p className="text-[#c9d1d9] font-semibold">0.25%</p>
+                  <p className="text-[var(--muted)] text-xs">BlackRock ETHB expense ratio</p>
+                  <p className="text-[var(--foreground)] font-semibold">0.25%</p>
                 </div>
-                <div className="flex items-center justify-center text-[#8b949e]">−</div>
+                <div className="flex items-center justify-center text-[var(--muted)]">−</div>
                 <div>
-                  <p className="text-[#8b949e] text-xs">Operational/custodial costs</p>
-                  <p className="text-[#c9d1d9] font-semibold">0.05-0.15%</p>
+                  <p className="text-[var(--muted)] text-xs">Operational/custodial costs</p>
+                  <p className="text-[var(--foreground)] font-semibold">0.05-0.15%</p>
                 </div>
-                <div className="flex items-center justify-center font-bold text-[#58a6ff]">=</div>
-                <div className="bg-[#161b22] p-3 rounded border border-[#30363d]">
-                  <p className="text-[#8b949e] text-xs">ETHB net yield to shareholders</p>
-                  <p className="text-[#22c55e] font-bold text-lg">3.6-3.7%</p>
+                <div className="flex items-center justify-center font-bold text-[var(--primary)]">=</div>
+                <div className="bg-[var(--card)] p-3 rounded border border-[var(--border)]">
+                  <p className="text-[var(--muted)] text-xs">ETHB net yield to shareholders</p>
+                  <p className="text-green-500 font-bold text-lg">3.6-3.7%</p>
                 </div>
               </div>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Why Yields Fluctuate</h3>
-              <p className="text-[#c9d1d9] text-sm mt-2">
+              <h3 className="text-lg font-semibold text-[var(--foreground)] mt-4">Why Yields Fluctuate</h3>
+              <p className="text-[var(--foreground)] text-sm mt-2">
                 Ethereum staking yields are not fixed. They fluctuate based on:
               </p>
-              <ul className="space-y-2 text-[#c9d1d9] text-sm mt-3">
+              <ul className="space-y-2 text-[var(--foreground)] text-sm mt-3">
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">1.</span>
+                  <span className="text-[var(--primary)]">1.</span>
                   <span><strong>Total ETH staked:</strong> More stakers = lower yield. When yield drops, some validators exit, reducing supply and raising yield. This creates a self-balancing mechanism.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">2.</span>
+                  <span className="text-[var(--primary)]">2.</span>
                   <span><strong>Network activity:</strong> High transaction volumes = higher MEV (maximal extractable value) rewards to validators. This can boost yields 0.5-1.5% above base rewards in busy periods.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">3.</span>
+                  <span className="text-[var(--primary)]">3.</span>
                   <span><strong>Ethereum upgrades:</strong> Future upgrades may change reward mechanics or validator participation requirements, impacting yields.</span>
                 </li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Long-Term Yield Projections</h3>
-              <div className="space-y-2 text-[#c9d1d9] text-sm mt-3">
+              <h3 className="text-lg font-semibold text-[var(--foreground)] mt-4">Long-Term Yield Projections</h3>
+              <div className="space-y-2 text-[var(--foreground)] text-sm mt-3">
                 <div className="flex gap-3 items-center">
-                  <span className="text-[#58a6ff] font-bold">Short-term (2026):</span>
+                  <span className="text-[var(--primary)] font-bold">Short-term (2026):</span>
                   <span>3.5-4.5% likely stable; Ethereum activity remains moderate</span>
                 </div>
                 <div className="flex gap-3 items-center">
-                  <span className="text-[#58a6ff] font-bold">Medium-term (2027-2028):</span>
+                  <span className="text-[var(--primary)] font-bold">Medium-term (2027-2028):</span>
                   <span>Yields could compress to 2-3% if more validators participate; will rise if network activity increases</span>
                 </div>
                 <div className="flex gap-3 items-center">
-                  <span className="text-[#58a6ff] font-bold">Long-term (2029+):</span>
+                  <span className="text-[var(--primary)] font-bold">Long-term (2029+):</span>
                   <span>Yields likely stabilize 2-4% range depending on network security assumptions and validator economics</span>
                 </div>
               </div>
@@ -876,9 +855,9 @@ export default function EthereumETFStakingGuide() {
 
           {/* Section 6: Risks & Considerations */}
           <section id="risks" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">6. Risks &amp; Considerations</h2>
+            <h2 className="text-3xl font-bold text-[var(--foreground)]">6. Risks &amp; Considerations</h2>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--foreground)] leading-relaxed">
               Ethereum staking ETFs provide regulated access to ETH and staking rewards, but they&apos;re not risk-free. Understanding key risks is essential for informed decision-making.
             </p>
 
@@ -887,16 +866,16 @@ export default function EthereumETFStakingGuide() {
                 <h3 className="font-semibold text-red-400 flex items-center gap-2 mb-3">
                   <span>⚠️</span> Regulatory Reversal Risk
                 </h3>
-                <p className="text-[#c9d1d9] text-sm">
+                <p className="text-[var(--foreground)] text-sm">
                   The March 2026 SEC/CFTC digital commodity ruling is interpretive guidance, not statutory law. A future SEC administration could reverse it. If the CLARITY Act fails to pass and a hostile SEC administration takes office, ETH could theoretically be reclassified as a security, which would:
                 </p>
-                <ul className="space-y-2 text-[#c9d1d9] text-sm mt-3 ml-4">
+                <ul className="space-y-2 text-[var(--foreground)] text-sm mt-3 ml-4">
                   <li>• Force ETF restructuring or closure</li>
                   <li>• Eliminate staking reward distributions</li>
                   <li>• Create legal uncertainty for issuers</li>
                   <li>• Trigger significant ETH/ETF price decline</li>
                 </ul>
-                <p className="text-[#c9d1d9] text-sm mt-3">
+                <p className="text-[var(--foreground)] text-sm mt-3">
                   <strong>Mitigation:</strong> Monitor Congressional activity on CLARITY Act. Passage would make commodity classification statutory and reversible only by future legislation.
                 </p>
               </div>
@@ -905,10 +884,10 @@ export default function EthereumETFStakingGuide() {
                 <h3 className="font-semibold text-red-400 flex items-center gap-2 mb-3">
                   <span>⚠️</span> Ethereum Price Volatility
                 </h3>
-                <p className="text-[#c9d1d9] text-sm">
+                <p className="text-[var(--foreground)] text-sm">
                   Ethereum price can swing 10-30% in weeks, negating staking yields. A $10,000 investment earning 3.5% yield ($350/year) could lose $1,000 to price decline. Staking yields do not protect against downside price risk.
                 </p>
-                <p className="text-[#c9d1d9] text-sm mt-3">
+                <p className="text-[var(--foreground)] text-sm mt-3">
                   <strong>Mitigation:</strong> Diversify across multiple assets. Use staking ETFs for long-term holdings (5+ years), not short-term trades.
                 </p>
               </div>
@@ -917,10 +896,10 @@ export default function EthereumETFStakingGuide() {
                 <h3 className="font-semibold text-red-400 flex items-center gap-2 mb-3">
                   <span>⚠️</span> Custodial &amp; Smart Contract Risk
                 </h3>
-                <p className="text-[#c9d1d9] text-sm">
+                <p className="text-[var(--foreground)] text-sm">
                   While institutional custodians (Coinbase Prime, Fidelity) are trusted, they carry some operational risk. Additionally, liquid staking derivatives (used by some issuers) introduce smart contract risk if protocols are exploited.
                 </p>
-                <p className="text-[#c9d1d9] text-sm mt-3">
+                <p className="text-[var(--foreground)] text-sm mt-3">
                   <strong>Mitigation:</strong> Prefer BlackRock ETHB (Coinbase Prime custody) or Fidelity/VanEck (when staking launches) for larger positions. Avoid staking ETFs using unproven liquid staking protocols.
                 </p>
               </div>
@@ -929,10 +908,10 @@ export default function EthereumETFStakingGuide() {
                 <h3 className="font-semibold text-red-400 flex items-center gap-2 mb-3">
                   <span>⚠️</span> Tax Complexity on Staking Rewards
                 </h3>
-                <p className="text-[#c9d1d9] text-sm">
+                <p className="text-[var(--foreground)] text-sm">
                   Staking rewards are taxed as ordinary income when distributed (not capital gains). BlackRock ETHB&apos;s monthly distributions can create 12 taxable events per year. This can be tax-inefficient for high-income earners in high-tax states.
                 </p>
-                <p className="text-[#c9d1d9] text-sm mt-3">
+                <p className="text-[var(--foreground)] text-sm mt-3">
                   <strong>Mitigation:</strong> Hold staking ETFs in tax-advantaged accounts (IRA, 401k) if possible. Consult a tax advisor for your jurisdiction. Consider quarterly distribution ETFs (less frequent taxable events) if available.
                 </p>
               </div>
@@ -941,10 +920,10 @@ export default function EthereumETFStakingGuide() {
                 <h3 className="font-semibold text-red-400 flex items-center gap-2 mb-3">
                   <span>⚠️</span> Yield Compression Over Time
                 </h3>
-                <p className="text-[#c9d1d9] text-sm">
+                <p className="text-[var(--foreground)] text-sm">
                   As Ethereum becomes more widely staked and more validators participate, yields could compress from current 3.5-4.5% to 2-3% or lower. Past high yields are not guaranteed.
                 </p>
-                <p className="text-[#c9d1d9] text-sm mt-3">
+                <p className="text-[var(--foreground)] text-sm mt-3">
                   <strong>Mitigation:</strong> Use staking ETFs as long-term holdings. Don&apos;t count on 4% yields forever. Build a diversified portfolio, not solely reliant on staking income.
                 </p>
               </div>
@@ -953,10 +932,10 @@ export default function EthereumETFStakingGuide() {
                 <h3 className="font-semibold text-red-400 flex items-center gap-2 mb-3">
                   <span>⚠️</span> Liquidity Risk (Pending Q2 2026 ETFs)
                 </h3>
-                <p className="text-[#c9d1d9] text-sm">
+                <p className="text-[var(--foreground)] text-sm">
                   New staking ETFs launching Q2 2026 (Fidelity, Franklin, VanEck, etc.) will initially have low trading volume and wider bid-ask spreads. You may lose 0.1-0.5% on each trade due to illiquidity until AUM grows.
                 </p>
-                <p className="text-[#c9d1d9] text-sm mt-3">
+                <p className="text-[var(--foreground)] text-sm mt-3">
                   <strong>Mitigation:</strong> For large trades, use limit orders. Buy established ETFs (BlackRock ETHB) for better liquidity. Avoid market orders on new, illiquid products.
                 </p>
               </div>
@@ -965,62 +944,62 @@ export default function EthereumETFStakingGuide() {
 
           {/* Section 7: How to Choose */}
           <section id="how-to-choose" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">7. How to Choose an Ethereum Staking ETF</h2>
+            <h2 className="text-3xl font-bold text-[var(--foreground)]">7. How to Choose an Ethereum Staking ETF</h2>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--foreground)] leading-relaxed">
               With multiple Ethereum staking ETFs launching Q2 2026, your choice depends on priorities: fees, staking distribution frequency, issuer trust, and brokerage availability. Here&apos;s a practical decision framework.
             </p>
 
             <div className="space-y-4">
-              <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-[#e6edf3] mb-4">Decision Framework</h3>
+              <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-[var(--foreground)] mb-4">Decision Framework</h3>
 
-                <div className="space-y-4 text-sm text-[#c9d1d9]">
+                <div className="space-y-4 text-sm text-[var(--foreground)]">
                   <div className="flex gap-3">
-                    <div className="flex-shrink-0 text-[#58a6ff] font-bold">Q1:</div>
+                    <div className="flex-shrink-0 text-[var(--primary)] font-bold">Q1:</div>
                     <div>
                       <p className="font-semibold mb-2">Are you prioritizing maximum yield right now?</p>
-                      <p className="text-[#8b949e]">
+                      <p className="text-[var(--muted)]">
                         Choose <strong>BlackRock ETHB</strong> (only live staking ETF; 82% monthly distribution; currently earning 3.6-3.7% net after fees). Wait until Q2 2026 if you want other options.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-3 mt-6 pt-4 border-t border-[#30363d]">
-                    <div className="flex-shrink-0 text-[#58a6ff] font-bold">Q2:</div>
+                  <div className="flex gap-3 mt-6 pt-4 border-t border-[var(--border)]">
+                    <div className="flex-shrink-0 text-[var(--primary)] font-bold">Q2:</div>
                     <div>
                       <p className="font-semibold mb-2">Are you price-sensitive on fees?</p>
-                      <p className="text-[#8b949e]">
+                      <p className="text-[var(--muted)]">
                         <strong>Franklin EZET (0.19%)</strong> or <strong>VanEck ETHV (0.20%)</strong> once staking launches Q2 2026. Over 10 years on $50K, 0.05% fee difference = ~$250 after accounting for yield compounding.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-3 mt-6 pt-4 border-t border-[#30363d]">
-                    <div className="flex-shrink-0 text-[#58a6ff] font-bold">Q3:</div>
+                  <div className="flex gap-3 mt-6 pt-4 border-t border-[var(--border)]">
+                    <div className="flex-shrink-0 text-[var(--primary)] font-bold">Q3:</div>
                     <div>
                       <p className="font-semibold mb-2">Do you want monthly or quarterly distributions?</p>
-                      <p className="text-[#8b949e]">
+                      <p className="text-[var(--muted)]">
                         <strong>Monthly:</strong> BlackRock ETHB (reinvest faster, but 12 taxable events/year). <strong>Quarterly:</strong> Fidelity, Franklin, VanEck (when staking launches; fewer tax events). For tax-advantaged accounts, monthly is fine.
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-3 mt-6 pt-4 border-t border-[#30363d]">
-                    <div className="flex-shrink-0 text-[#58a6ff] font-bold">Q4:</div>
+                  <div className="flex gap-3 mt-6 pt-4 border-t border-[var(--border)]">
+                    <div className="flex-shrink-0 text-[var(--primary)] font-bold">Q4:</div>
                     <div>
                       <p className="font-semibold mb-2">Do you have brand/brokerage preference?</p>
-                      <p className="text-[#8b949e]">
+                      <p className="text-[var(--muted)]">
                         Fidelity customers: <strong>FETH</strong> (when staking launches). Vanguard customers: <strong>VanEck ETHV</strong> (partner issuance; may get better pricing). Schwab/E*TRADE customers: <strong>ETHB</strong> or Fidelity FETH (both widely available).
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex gap-3 mt-6 pt-4 border-t border-[#30363d]">
-                    <div className="flex-shrink-0 text-[#58a6ff] font-bold">Q5:</div>
+                  <div className="flex gap-3 mt-6 pt-4 border-t border-[var(--border)]">
+                    <div className="flex-shrink-0 text-[var(--primary)] font-bold">Q5:</div>
                     <div>
                       <p className="font-semibold mb-2">Is this a large position ($50K+)?</p>
-                      <p className="text-[#8b949e]">
+                      <p className="text-[var(--muted)]">
                         Prioritize established, high-liquidity ETFs: <strong>BlackRock ETHB</strong> or <strong>Fidelity FETH</strong> (when live). Avoid newly-launched, illiquid ETFs for large positions to prevent bid-ask slippage.
                       </p>
                     </div>
@@ -1028,41 +1007,41 @@ export default function EthereumETFStakingGuide() {
                 </div>
               </div>
 
-              <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-[#e6edf3] mb-4">Recommended ETF Picks by Investor Type</h3>
+              <div className="bg-[var(--card)] border border-[var(--border)] rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-[var(--foreground)] mb-4">Recommended ETF Picks by Investor Type</h3>
 
                 <div className="space-y-4">
-                  <div className="border-l-4 border-[#22c55e] pl-4">
-                    <p className="font-semibold text-[#e6edf3] mb-2">Conservative/Income Investors</p>
-                    <p className="text-[#8b949e] text-sm">
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <p className="font-semibold text-[var(--foreground)] mb-2">Conservative/Income Investors</p>
+                    <p className="text-[var(--muted)] text-sm">
                       <strong>BlackRock ETHB</strong> (live now) — Proven track record, 82% monthly distribution, Coinbase Prime custody, highest current yield. SafEST choice for risk-averse investors.
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-[#22c55e] pl-4">
-                    <p className="font-semibold text-[#e6edf3] mb-2">Fee-Conscious Investors</p>
-                    <p className="text-[#8b949e] text-sm">
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <p className="font-semibold text-[var(--foreground)] mb-2">Fee-Conscious Investors</p>
+                    <p className="text-[var(--muted)] text-sm">
                       <strong>Franklin EZET</strong> (Q2 2026) — 0.19% expense ratio (lowest), staking pending. Wait for Q2 2026 approval. Once live, this is the lowest-cost option for long-term holdings.
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-[#22c55e] pl-4">
-                    <p className="font-semibold text-[#e6edf3] mb-2">Fidelity Account Holders</p>
-                    <p className="text-[#8b949e] text-sm">
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <p className="font-semibold text-[var(--foreground)] mb-2">Fidelity Account Holders</p>
+                    <p className="text-[var(--muted)] text-sm">
                       <strong>Fidelity FETH</strong> (Q2 2026) — Same brokerage integration, likely competitive fee (0.25%), institutional-grade custody. Seamless to hold in existing Fidelity account.
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-[#22c55e] pl-4">
-                    <p className="font-semibold text-[#e6edf3] mb-2">Tax-Advantaged Account Holders (IRA, 401k)</p>
-                    <p className="text-[#8b949e] text-sm">
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <p className="font-semibold text-[var(--foreground)] mb-2">Tax-Advantaged Account Holders (IRA, 401k)</p>
+                    <p className="text-[var(--muted)] text-sm">
                       <strong>BlackRock ETHB or Fidelity FETH</strong> — Monthly distributions in an IRA/401k create no extra tax burden (accounts are tax-deferred). Choose based on fee preference or brokerage.
                     </p>
                   </div>
 
-                  <div className="border-l-4 border-[#22c55e] pl-4">
-                    <p className="font-semibold text-[#e6edf3] mb-2">Long-Term Buy-and-Hold Investors (10+ years)</p>
-                    <p className="text-[#8b949e] text-sm">
+                  <div className="border-l-4 border-green-500 pl-4">
+                    <p className="font-semibold text-[var(--foreground)] mb-2">Long-Term Buy-and-Hold Investors (10+ years)</p>
+                    <p className="text-[var(--muted)] text-sm">
                       <strong>Franklin EZET or VanEck ETHV</strong> (Q2 2026) — 0.19-0.20% fees compound to massive savings over decades. Accept waiting for Q2 2026 for lowest long-term cost.
                     </p>
                   </div>
@@ -1070,75 +1049,62 @@ export default function EthereumETFStakingGuide() {
               </div>
             </div>
 
-            <p className="text-[#c9d1d9] leading-relaxed text-sm italic text-[#8b949e] mt-4">
+            <p className="text-[var(--foreground)] leading-relaxed text-sm italic text-[var(--muted)] mt-4">
               Note: This is educational guidance, not financial advice. Consult a financial advisor for personalized recommendations based on your tax situation, risk tolerance, and investment timeline.
             </p>
           </section>
 
           {/* Section 8: FAQ */}
           <section id="faq" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">8. Frequently Asked Questions</h2>
+            <h2 className="text-3xl font-bold text-[var(--foreground)]">8. Frequently Asked Questions</h2>
             <FAQAccordion faqs={faqs} />
           </section>
 
           {/* Related Resources */}
-          <section id="related-resources" className="space-y-4 mt-12 pt-8 border-t border-[#30363d]">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">Related Resources</h2>
+          <section id="related-resources" className="space-y-4 mt-12 pt-8 border-t border-[var(--border)]">
+            <h2 className="text-3xl font-bold text-[var(--foreground)]">Related Resources</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <Link href="/learn/crypto-etfs-complete-guide-2026" className="block bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors">
-                <p className="text-[#58a6ff] font-semibold text-sm">→ Crypto ETFs Complete Guide 2026</p>
-                <p className="text-[#8b949e] text-sm mt-1">Overview of all approved crypto ETFs, spot vs. futures, and regulatory landscape.</p>
+              <Link href="/learn/crypto-etfs-complete-guide-2026" className="block bg-[var(--card)] border border-[var(--border)] rounded-lg p-4 hover:border-[var(--primary)] hover:bg-[var(--background)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]">
+                <p className="text-[var(--primary)] font-semibold text-sm">→ Crypto ETFs Complete Guide 2026</p>
+                <p className="text-[var(--muted)] text-sm mt-1">Overview of all approved crypto ETFs, spot vs. futures, and regulatory landscape.</p>
               </Link>
 
-              <Link href="/learn/crypto-staking-guide-2026" className="block bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors">
-                <p className="text-[#58a6ff] font-semibold text-sm">→ Crypto Staking Guide 2026</p>
-                <p className="text-[#8b949e] text-sm mt-1">Deep dive into staking mechanisms, risks, and returns across blockchains.</p>
+              <Link href="/learn/crypto-staking-guide-2026" className="block bg-[var(--card)] border border-[var(--border)] rounded-lg p-4 hover:border-[var(--primary)] hover:bg-[var(--background)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]">
+                <p className="text-[var(--primary)] font-semibold text-sm">→ Crypto Staking Guide 2026</p>
+                <p className="text-[var(--muted)] text-sm mt-1">Deep dive into staking mechanisms, risks, and returns across blockchains.</p>
               </Link>
 
-              <Link href="/learn/ethereum-pectra-upgrade-guide-2026" className="block bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors">
-                <p className="text-[#58a6ff] font-semibold text-sm">→ Ethereum Pectra Upgrade Guide 2026</p>
-                <p className="text-[#8b949e] text-sm mt-1">Upcoming Ethereum upgrades and their impact on staking yields and validators.</p>
+              <Link href="/learn/ethereum-pectra-upgrade-guide-2026" className="block bg-[var(--card)] border border-[var(--border)] rounded-lg p-4 hover:border-[var(--primary)] hover:bg-[var(--background)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]">
+                <p className="text-[var(--primary)] font-semibold text-sm">→ Ethereum Pectra Upgrade Guide 2026</p>
+                <p className="text-[var(--muted)] text-sm mt-1">Upcoming Ethereum upgrades and their impact on staking yields and validators.</p>
               </Link>
 
-              <Link href="/learn/solana-etf-spot-funds-staking-guide-2026" className="block bg-[#161b22] border border-[#30363d] rounded-lg p-4 hover:border-[#58a6ff] transition-colors">
-                <p className="text-[#58a6ff] font-semibold text-sm">→ Solana ETF &amp; Staking Guide 2026</p>
-                <p className="text-[#8b949e] text-sm mt-1">Compare 16 approved Solana ETFs, staking yields, and digital commodity ruling impact.</p>
+              <Link href="/learn/solana-etf-spot-funds-staking-guide-2026" className="block bg-[var(--card)] border border-[var(--border)] rounded-lg p-4 hover:border-[var(--primary)] hover:bg-[var(--background)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)]">
+                <p className="text-[var(--primary)] font-semibold text-sm">→ Solana ETF &amp; Staking Guide 2026</p>
+                <p className="text-[var(--muted)] text-sm mt-1">Compare 16 approved Solana ETFs, staking yields, and digital commodity ruling impact.</p>
               </Link>
             </div>
           </section>
 
           {/* Disclaimer */}
-          <section className="space-y-4 mt-12 pt-8 border-t border-[#30363d]">
-            <h2 className="text-lg font-semibold text-[#e6edf3]">Disclaimer</h2>
-            <p className="text-[#8b949e] text-sm leading-relaxed">
+          <section className="space-y-4 mt-12 pt-8 border-t border-[var(--border)]">
+            <h2 className="text-lg font-semibold text-[var(--foreground)]">Disclaimer</h2>
+            <p className="text-[var(--muted)] text-sm leading-relaxed">
               This guide is for educational purposes only and does not constitute financial advice, investment recommendations, or an offer to buy/sell securities. Ethereum staking ETFs carry risk, including price volatility, regulatory uncertainty, and operational risk. Past performance and yields do not guarantee future results. The March 2026 SEC/CFTC ruling is interpretive guidance, not statutory law, and could be reversed by future administrations. Always consult a qualified financial advisor before making investment decisions. Cryptocurrency and digital assets are highly speculative; invest only what you can afford to lose.
             </p>
           </section>
 
         
         {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
-          </p>
-        </div>
-      
-        {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+        <div style={{ background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: 'var(--accent-badge)' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: 'var(--accent-badge)' }}>our team</a>.
           </p>
         </div>
       </article>
       </div>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Ethereum ETF Staking Guide 2026 \u2014 Earn 3.5-4.5% Yields |", "description": "Complete guide to Ethereum staking ETFs 2026: Compare 8 spot ETFs, staking yields, fee breakdown, BlackRock ETHB 82% monthly distribution, and SEC regulatory", "url": "https://degen0x.com/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <LiveMiniStat id="ethereum" />
-      <Diagram slug="staking-rewards" />
-      <RelatedContent category="learn" currentSlug="/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026" />
-<AuthoritySources url="/learn/ethereum-etf-staking-yield-earning-etfs-guide-2026" />
 </main>
   );
 }
