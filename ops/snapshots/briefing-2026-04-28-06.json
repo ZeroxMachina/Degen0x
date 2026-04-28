@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-28T06:04:00Z",
+  "briefing_id": "briefing-2026-04-28-06",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-28-06-001",
+      "headline": "BlackRock's IBIT logs record $983M daily inflow as BTC rejects $80K wall",
+      "slug": "blackrock-ibit-983m-record-inflow-btc-80k-rejection",
+      "tldr": "IBIT pulled its biggest daily haul in six months even as bitcoin briefly tagged $79K and rolled back into range.",
+      "why_it_matters": "Why it matters: Spot-ETF demand keeps absorbing supply at the same level concentrated sellers keep defending — the longer that standoff lasts, the more violent the eventual break.",
+      "the_details": [
+        "IBIT recorded $983M of net creations, its largest daily inflow since October 2025, per CoinDesk.",
+        "BTC printed a $79K high before sliding back, with analysts citing 'concentrated sell orders' between $80K-$85K.",
+        "Bitget Research's Ryan Lee sees BTC clearing $80K-$85K short-term on lower leverage and steady ETF bid."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-28T05:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-06-002",
+      "headline": "Grayscale and Bitmine stake nearly $500M in ETH as spot ETFs flip to inflows",
+      "slug": "grayscale-bitmine-500m-eth-staking-etf-inflows",
+      "tldr": "Two of the largest US ETH allocators activated ~$500M of native staking while spot ETH ETFs took in $23.4M, snapping an outflow streak.",
+      "why_it_matters": "Why it matters: When TradFi-aligned holders move from passive custody to validator yield, the float available to short ETH compresses — a quiet but durable supply shock.",
+      "the_details": [
+        "Grayscale and Bitmine collectively staked ~$500M worth of ETH this week, per CoinMarketCap data.",
+        "US spot Ethereum ETFs logged $23.4M in net inflows, reversing a brief outflow streak.",
+        "Bitget Research targets ETH at $2,800-$3,000 short-term; spot trading near $2,320 after a softer open."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/ethereum/latest-updates/",
+      "category": "ethereum",
+      "impact": "high",
+      "timestamp": "2026-04-28T04:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-06-003",
+      "headline": "100+ crypto firms led by Coinbase, Ripple press Senate to mark up CLARITY Act",
+      "slug": "crypto-coalition-senate-clarity-act-markup",
+      "tldr": "A coalition of more than 100 firms pushed the Senate Banking Committee to move the market-structure bill out of limbo and onto the floor.",
+      "why_it_matters": "Why it matters: The CLARITY Act is the fixed point industry strategy is built around — every delay extends the regulatory grey zone the SEC's interpretive guidance only patches.",
+      "the_details": [
+        "Letter signed by Coinbase, Ripple and 100+ others delivered to Senate Banking April 23, per CoinDesk.",
+        "Bill would split spot crypto oversight between SEC and CFTC, codifying the March 17 joint taxonomy.",
+        "DL News flags May-July as the realistic markup window before the August recess kills 2026 timing."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T22:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-06-004",
+      "headline": "TOKEN2049 Dubai pushed to 2027 as UAE security risks force conference reshuffle",
+      "slug": "token2049-dubai-postponed-2027-uae-security",
+      "tldr": "Organizers postponed the Dubai event by a full year, citing heightened regional security risks around the Strait of Hormuz tensions.",
+      "why_it_matters": "Why it matters: The flagship Middle East crypto conference moving on geopolitics drains a major liquidity event from the 2026 calendar and signals real fundraising risk in the region.",
+      "the_details": [
+        "TOKEN2049 confirmed the Dubai 2026 edition is rescheduled to 2027, per The Block.",
+        "Organizers cited 'heightened security risks in the UAE' as Iran continues to seize ships in the Gulf.",
+        "Singapore edition still expected on schedule; sponsors pivoting allocations to APAC events."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-27T18:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-06-005",
+      "headline": "Ripple CTO Schwartz flags sophisticated Robinhood phishing wave hitting users",
+      "slug": "schwartz-robinhood-phishing-attack-warning",
+      "tldr": "David Schwartz warned that attackers are abusing Robinhood's email infrastructure to send phishing lures that bypass standard spoofing checks.",
+      "why_it_matters": "Why it matters: Email-vector phishing on a regulated US broker is the cheapest, most scalable on-ramp for stealing self-custodied keys — expect copycats hitting Coinbase and Kraken users next.",
+      "the_details": [
+        "Schwartz publicly flagged the campaign April 27 after receiving a phishing lure himself.",
+        "Lures appear to originate from Robinhood-owned domains, defeating naive SPF/DKIM checks.",
+        "Comes amid April's $606M hack toll, the worst month for crypto theft since February 2025."
+      ],
+      "source": "The Coin Republic",
+      "source_url": "https://www.thecoinrepublic.com/2026/04/27/crypto-news-ripple-cto-sounds-alarm-over-robinhood-email-phishing-attack/",
+      "category": "security",
+      "impact": "medium",
+      "timestamp": "2026-04-27T20:00:00Z"
+    }
+  ]
+}
