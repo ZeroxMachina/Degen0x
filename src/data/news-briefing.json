@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T15:05:00Z",
-  "briefing_id": "briefing-2026-04-28-15",
+  "generated_at": "2026-04-28T16:10:00Z",
+  "briefing_id": "briefing-2026-04-28-16",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-15-001",
-      "headline": "BTC slides under $77K, ETH below $2,300 ahead of Fed as $2.65T crypto market sheds 2.3%",
-      "slug": "btc-eth-slide-fed-week",
-      "tldr": "Bitcoin pulled back to $76,472 and Ether to $2,278 as traders de-risked into Wednesday's FOMC, lopping 2.3% off total crypto market cap.",
-      "why_it_matters": "Why it matters: A hawkish hold while Brent trades above $104 would extend the breakdown from $80K, with analysts flagging $74,182 as the next bid zone before structure breaks.",
+      "id": "story-2026-04-28-16-001",
+      "headline": "Aave-led DeFi rescue tops $300M as industry tries to plug Kelp DAO's $292M hole",
+      "slug": "aave-led-defi-rescue-tops-300m-kelp-dao",
+      "tldr": "Consensys, Lido, EtherFi and others have pledged into a $300M+ recovery vehicle to backstop Aave bad debt from the April 19 Kelp DAO exploit.",
+      "why_it_matters": "Why it matters: A coordinated industry bailout — not protocol insurance — is becoming the de facto safety net for cross-chain liquid restaking risk.",
       "the_details": [
-        "BTC opened at $77,368 and printed $76,472 by 7:10am ET; ETH down 2.8% from Monday's open, per Yahoo Finance.",
-        "Total crypto market cap fell 2.3% to $2.65T as Strait of Hormuz closure kept Brent above $104 a barrel.",
-        "CoinDesk pegs the 24-hour BTC range at $74,182-$78,290 with bulls needing a reclaim of $80,000 to invalidate the pullback."
+        "Attacker minted 116,500 unbacked rsETH via a misconfigured LayerZero bridge setting and borrowed ~$230M against it on Aave.",
+        "Pledged contributors include Consensys, Lido, EtherFi and Aave-aligned DAOs; most commitments still need governance approval to land.",
+        "Researchers attribute the exploit to DPRK-linked Trader Traitor, the same cluster suspected behind Drift's $285M April 1 drain."
       ],
-      "source": "Yahoo Finance / CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
-      "category": "markets",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/27/industry-leaders-are-pouring-hundreds-of-millions-into-a-rescue-plan-for-aave-users-after-massive-crypto-hack",
+      "category": "security",
       "impact": "high",
       "timestamp": "2026-04-28T13:00:00Z"
     },
     {
-      "id": "story-2026-04-28-15-002",
-      "headline": "Four central banks set rates this week as Brent above $104 keeps inflation hot",
-      "slug": "four-central-banks-rate-week",
-      "tldr": "The BOJ, Fed, ECB and BOE all decide policy this week into a $104 oil tape, the most concentrated rate-setting cluster of 2026.",
-      "why_it_matters": "Why it matters: Crypto's near-perfect inverse correlation with the dollar is at a four-year extreme, so any hawkish surprise lands directly on BTC's $76K bid.",
+      "id": "story-2026-04-28-16-002",
+      "headline": "100+ crypto firms hand Senate Banking a deadline: mark up the market structure bill now",
+      "slug": "crypto-firms-senate-banking-market-structure-markup",
+      "tldr": "A coalition led by Coinbase and Ripple is publicly pressuring the Senate Banking Committee to schedule a markup of the Clarity Act before recess.",
+      "why_it_matters": "Why it matters: Without a Senate markup this cycle, the SEC-CFTC March joint release becomes the de facto US framework — leaving structural rules to agency staff, not statute.",
       "the_details": [
-        "BOJ, Federal Reserve, ECB and Bank of England all release decisions within the same trading week per CoinDesk's Crypto Week Ahead.",
-        "Brent crude held above $104 and WTI above $90 as the Iran conflict keeps Strait of Hormuz supply offline.",
-        "BTC and the DXY are moving in the most extreme opposition since 2022, raising the stakes on every central bank tone."
+        "Letter signed by 100+ firms argues the bill is needed to lock in the SEC and CFTC's March 17 token-taxonomy framework.",
+        "Lobby push follows the SEC's April 13 staff statement carving a broker-dealer exception for DEX-style user interfaces.",
+        "Industry wants statutory clarity ahead of any administration change that could reverse the agencies' joint posture."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-28T12:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-15-003",
-      "headline": "DOJ's Blanche tells crypto devs under probe: keep the line open or pay later",
-      "slug": "doj-blanche-crypto-developer-cooperation",
-      "tldr": "Deputy AG Todd Blanche urged crypto developers under DOJ investigation to maintain active communication with prosecutors, signaling room for charging leniency.",
-      "why_it_matters": "Why it matters: The guidance hardens a post-Tornado Cash thaw and tells founders that silence, not the code, is now the trigger for max-charge outcomes.",
-      "the_details": [
-        "Blanche addressed developers directly, framing cooperation as the dividing line between civil resolution and indictment.",
-        "Comes days after the SEC's April 13 'Covered User Interface' staff statement carved out front-end builders from broker-dealer registration.",
-        "Pairs with the SEC-CFTC March 17 joint release whose five-category token taxonomy is now the operative federal framework."
-      ],
-      "source": "Yahoo Finance / Sidley",
-      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
       "category": "regulation",
-      "impact": "medium",
-      "timestamp": "2026-04-28T11:00:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-28T11:30:00Z"
     },
     {
-      "id": "story-2026-04-28-15-004",
-      "headline": "Solana ETF inflows crater 92% to $34M as SOL stalls at $83",
-      "slug": "solana-etf-inflows-crash-92-percent",
-      "tldr": "Spot Solana ETF inflows collapsed from $419M in November 2025 to just $34M in April 2026 as SOL trades 32% below its 2025 high.",
-      "why_it_matters": "Why it matters: ETF demand was the bull-case bridge between Firedancer hype and price; without it, $52 becomes the next technical magnet.",
+      "id": "story-2026-04-28-16-003",
+      "headline": "SEC's April 13 user-interface carve-out gives DEX front-ends a no-action lane",
+      "slug": "sec-user-interface-no-action-dex-front-ends",
+      "tldr": "SEC staff said it will not object to 'Covered User Interface Providers' offering software that lets users submit crypto-asset-security trades without broker-dealer registration.",
+      "why_it_matters": "Why it matters: It's the clearest signal yet that interface-only DeFi front-ends can operate onshore — but the conditions attached will define how far that lane really runs.",
       "the_details": [
-        "Spot SOL ETF inflows fell from $419M (Nov 2025) to $34M (Apr 2026), a 92% drawdown per cryptopolitan data.",
-        "SOL trades at $83.17 with a $47.9B market cap, 32% off its 2025 YTD high.",
-        "Analysts target $52 if SOL fails to reclaim $86; Firedancer upgrade still on track for 1M TPS in 2026."
+        "Statement issued April 13, 2026 sets conditions on custody, order routing and disclosure for the exception to apply.",
+        "Move follows the joint SEC-CFTC interpretive release from March 17 that supersedes the 2019 framework.",
+        "Law firms note the carve-out narrows enforcement risk for non-custodial UIs but leaves smart-contract issuers in scope."
       ],
-      "source": "CoinMarketCap / Cryptopolitan",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
-      "category": "altcoins",
-      "impact": "medium",
+      "source": "Sidley Austin",
+      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "category": "regulation",
+      "impact": "high",
       "timestamp": "2026-04-28T10:00:00Z"
     },
     {
-      "id": "story-2026-04-28-15-005",
-      "headline": "Solana flips Ethereum on weekly dApp revenue for fifth straight week",
-      "slug": "solana-flips-ethereum-dapp-revenue-fifth-week",
-      "tldr": "Solana out-earned Ethereum on weekly decentralized application revenue for the fifth consecutive week, per CoinDesk tracking.",
-      "why_it_matters": "Why it matters: Sustained revenue dominance, not TVL, is the metric ETH bulls can't easily explain away — and it lands while spot SOL ETFs are bleeding.",
+      "id": "story-2026-04-28-16-004",
+      "headline": "Spot SOL ETF inflows collapse 92% from $419M November peak to just $34M in April",
+      "slug": "spot-sol-etf-inflows-collapse-92-percent",
+      "tldr": "Spot Solana ETF net inflows have fallen from $419M in November 2025 to $34M month-to-date in April as institutional appetite cools.",
+      "why_it_matters": "Why it matters: The ETF wrapper isn't a one-way bid — and SOL's collapse in flows undercuts the thesis that listed altcoin products would create durable institutional demand.",
       "the_details": [
-        "Fifth consecutive weekly win on dApp revenue, a streak not seen since the 2024 memecoin peak.",
-        "Comes as Alpenglow upgrade has cut transaction finality below 200ms on mainnet.",
-        "Major issuers have additional spot SOL products in the filing pipeline despite the inflow slump."
+        "SOL trades near $86.47 with a $49.8B market cap, down ~32% from its 2025 YTD high.",
+        "Bitcoin dominance is back at 58.1% and the altcoin season index sits at just 33–38/100.",
+        "Firedancer rollout and a sub-200ms Alpenglow finality upgrade haven't yet revived ETF demand."
       ],
-      "source": "CoinDesk / CoinGecko",
-      "source_url": "https://www.coindesk.com/tag/solana",
-      "category": "defi",
+      "source": "Spoted Crypto",
+      "source_url": "https://www.spotedcrypto.com/solana-avax-l1-bottom-april-2026/",
+      "category": "markets",
       "impact": "medium",
       "timestamp": "2026-04-28T09:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-16-005",
+      "headline": "TOKEN2049 Dubai pushed to 2027 as UAE security backdrop reroutes crypto's biggest stage",
+      "slug": "token2049-dubai-postponed-2027",
+      "tldr": "Organizers are postponing the Dubai edition of TOKEN2049 to 2027, citing heightened security risks across the UAE region.",
+      "why_it_matters": "Why it matters: With Iran-Israel tensions still freezing energy and travel risk, the conference circuit — a key liquidity event for deal-making — is being reshuffled around geopolitics.",
+      "the_details": [
+        "TOKEN2049 confirmed the move, pointing to elevated regional security risk in the UAE.",
+        "Singapore remains TOKEN2049's flagship event and is unaffected by the rescheduling.",
+        "Comes alongside Brent crude above $104 and a closed Strait of Hormuz weighing on risk assets."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-28T08:00:00Z"
     }
   ]
 }
