@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-28-022",
+    "type": "news",
+    "title": "\ud83d\udcf0 Aave-led coalition floats rescue plan for 116,500 unbacked rsETH from Kelp DAO exploit",
+    "message": "DeFi United proposed using Aave to neutralize 116,500 unbacked rsETH and stabilize markets after the $292M KelpDAO bridge exploit.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
     "id": "feed-2026-04-28-021",
     "type": "news",
     "title": "\ud83d\udcf0 SEC, CFTC unite at Bitcoin 2026 to tease Strategic Reserve and tokenization sandbox",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 April DeFi exploits hit $620M as Kelp DAO contagion drains $6.4B from TVL",
     "message": "April crypto exploits crossed $620M after Kelp DAO's $292M rsETH bridge drain dragged total DeFi TVL from $26.4B to roughly $20B.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-016",
-    "type": "news",
-    "title": "\ud83d\udcf0 BTC stalls at $80K wall as $5B USDT print and ETF inflows fail to clear resistance",
-    "message": "Bitcoin failed to break $80,000 as concentrated sell orders capped gains despite strong ETF inflows and fresh stablecoin liquidity.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }

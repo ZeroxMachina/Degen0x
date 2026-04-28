@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T20:06:45Z",
-  "briefing_id": "briefing-2026-04-28-20",
+  "generated_at": "2026-04-28T21:08:00Z",
+  "briefing_id": "briefing-2026-04-28-21",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-20-001",
-      "headline": "SEC, CFTC unite at Bitcoin 2026 to tease Strategic Reserve and tokenization sandbox",
-      "slug": "sec-cftc-bitcoin-2026-strategic-reserve-tokenization",
-      "tldr": "U.S. regulators showed a unified front at Bitcoin 2026 in Las Vegas, signaling innovation exemptions and a Strategic Bitcoin Reserve announcement within weeks.",
-      "why_it_matters": "Why it matters: A coordinated SEC-CFTC stance plus a Strategic Reserve reveal would remove the single biggest overhang from U.S. crypto markets \u2014 and front-run the CLARITY Act Lummis wants finished by August.",
+      "id": "story-2026-04-28-21-001",
+      "headline": "Aave-led coalition floats rescue plan for 116,500 unbacked rsETH from Kelp DAO exploit",
+      "slug": "aave-coalition-rescue-plan-kelp-dao-rseth",
+      "tldr": "DeFi United proposed using Aave to neutralize 116,500 unbacked rsETH and stabilize markets after the $292M KelpDAO bridge exploit.",
+      "why_it_matters": "Why it matters: It's the first cross-protocol containment playbook for a liquid-restaking blow-up — if it works, expect it to become the template every LRT issuer reaches for next.",
       "the_details": [
-        "SEC Chair Paul Atkins said innovation exemptions for on-chain tokenization and securitization land in the coming weeks.",
-        "White House digital-assets council director Patrick Witt previewed a Strategic Bitcoin Reserve announcement is imminent.",
-        "Senator Lummis is pushing the CLARITY Act through Congress with an August target date."
+        "DeFi United coalition published technical proposal April 28 via CoinDesk to wind down 116,500 unbacked rsETH minted in the bridge breach.",
+        "KelpDAO's April 18 exploit drained $292M after a single forged signature approved a cross-chain mint of rsETH.",
+        "Plan routes Aave liquidity to absorb the unbacked supply and shield depositors from a cascading depeg."
       ],
-      "source": "TradingKey",
-      "source_url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261829066-crypto-bitcoin-btc-price-sec-cftc-white-house-paul-atkins-clarity-tradingkey",
-      "category": "regulation",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/28/a-crypto-coalition-releases-technical-proposal-to-save-aave-users-from-a-massive-token-exploit",
+      "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-28T20:06:45Z"
+      "timestamp": "2026-04-28T15:00:00Z"
     },
     {
-      "id": "story-2026-04-28-20-002",
-      "headline": "BTC tumbles below $77K as U.S.-Iran talks stall and Brent reclaims $104",
-      "slug": "btc-below-77k-iran-talks-stall-brent-104",
-      "tldr": "Bitcoin fell to $76,472 and Ethereum to $2,278 Tuesday as stalled Iran ceasefire negotiations and renewed oil pressure hit risk assets ahead of the Fed.",
-      "why_it_matters": "Why it matters: BTC's correlation with the dollar index has hit -0.90, the most negative since 2022, so any DXY breakout from geopolitical risk now translates almost 1-for-1 into spot weakness.",
+      "id": "story-2026-04-28-21-002",
+      "headline": "BTC slips to $76.5K, ETH hits one-week low at $2,303 as FOMC opens",
+      "slug": "btc-eth-dump-fomc-opens-april-28",
+      "tldr": "Bitcoin gave up the $77K level and Ethereum logged its lowest open in a week as traders de-risked into a two-day Fed meeting.",
+      "why_it_matters": "Why it matters: Three straight holds and a hot inflation print mean the rate-cut bet that was fueling the late-March rally is officially in retreat.",
       "the_details": [
-        "BTC opened at $77,368 Tuesday, down 1.6% on the day, then slid to $76,472 by 7:10 a.m. ET.",
-        "ETH dropped 2.8% to $2,278 as the Strait of Hormuz remained closed and Brent crude pushed back above $104.",
-        "Macro traders are positioning for the third Fed rate decision of 2026 later this week."
+        "BTC opened at $77,368, fell to $76,472 by 7:10am ET after stalling at $79,500 earlier in the week.",
+        "ETH opened the session at $2,303.33, its weakest open in over seven days; analysts now eye $2,800–3,000 only on a clean BTC break above $85K.",
+        "FOMC decision lands April 29 with rates expected unchanged for a third straight meeting."
       ],
       "source": "Yahoo Finance",
       "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
-      "category": "bitcoin",
+      "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T20:06:45Z"
+      "timestamp": "2026-04-28T11:45:00Z"
     },
     {
-      "id": "story-2026-04-28-20-003",
-      "headline": "April clocks $606M in crypto hacks \u2014 worst month since Feb 2025, with Lazarus driving 95%",
-      "slug": "april-2026-606m-hacks-lazarus",
-      "tldr": "April 2026 has already produced $606M in crypto theft across 18 days, eclipsing all of Q1 combined and pushing year-to-date losses past $771M.",
-      "why_it_matters": "Why it matters: With private-key compromises and human-layer social engineering \u2014 not contract bugs \u2014 driving the carnage, audits no longer protect treasuries; signing infrastructure and operational security are the new perimeter.",
+      "id": "story-2026-04-28-21-003",
+      "headline": "UMich consumer sentiment crashes to all-time low 49.8 as inflation expectations spike to 4.8%",
+      "slug": "umich-sentiment-all-time-low-april-2026",
+      "tldr": "April's University of Michigan reading hit the lowest level on record as Iran-driven oil shock pushed one-year inflation expectations from 3.8% to 4.8%.",
+      "why_it_matters": "Why it matters: Stagflation tape is the worst possible setup for risk assets — it kills the Fed's room to cut and re-anchors the dollar bid that's been crushing BTC.",
       "the_details": [
-        "Lazarus-linked Drift Protocol ($285M, April 1) and Kelp DAO ($292M, April 18) account for ~95% of monthly losses.",
-        "April's haul is 3.7x larger than Q1 2026 and the worst single month since February 2025.",
-        "Smaller hits include CoW Swap ($1.2M domain hijack), Dango bridge ($410K) and Silo Finance ($392K oracle bug)."
+        "UMich consumer sentiment index printed 49.8 in April, an all-time low, per CoinDesk Daybook April 28.",
+        "One-year inflation expectations jumped 100 bps to 4.8% from 3.8% in March.",
+        "DXY-BTC inverse correlation just hit its most extreme reading in nearly four years."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T13:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-21-004",
+      "headline": "Babylon Foundation to park $3M USDT in Aave as BTCfi treasury hunts yield",
+      "slug": "babylon-foundation-3m-usdt-aave-deposit",
+      "tldr": "Babylon's foundation will deposit 3 million USDT into Aave, signaling that even Bitcoin-staking treasuries are routing idle stablecoins through blue-chip lending.",
+      "why_it_matters": "Why it matters: BTCfi protocols sitting on stable reserves rotating into Aave instead of T-bills tightens DeFi's grip on institutional cash management.",
+      "the_details": [
+        "Babylon Foundation announced the $3M USDT Aave deposit on April 28.",
+        "Aave's overall TVL benefits as DeFi market cap rose 3.3% in 24h to $56.2B with $5.05B in volume.",
+        "Move follows a wider 2026 trend of foundations parking treasury cash in audited DeFi venues over money-market funds."
       ],
       "source": "crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-28T20:06:45Z"
-    },
-    {
-      "id": "story-2026-04-28-20-004",
-      "headline": "Polygon ships sPOL liquid staking ahead of POL hard fork to unlock staked capital",
-      "slug": "polygon-spol-liquid-staking-pol-hard-fork",
-      "tldr": "Polygon launched native liquid staking token sPOL, freeing staked POL for DeFi use, and queued a hard fork to bolster scalability and security.",
-      "why_it_matters": "Why it matters: Native liquid staking turns Polygon's validator stack into productive collateral and gives POL a credible answer to Ethereum's stETH-led DeFi stack \u2014 critical for any L2-era TVL relevance.",
-      "the_details": [
-        "sPOL lets stakers redeploy capital into lending, LPs and structured products without unbonding.",
-        "An upcoming hard fork is timed to harden the network through the final MATIC-to-POL migration.",
-        "DeFi market cap rose 3.3% on the day to $56.2B with $5.05B in 24-hour volume."
-      ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/polygon-ecosystem-token/latest-updates/",
+      "source_url": "https://crypto.news/tag/defi/",
       "category": "defi",
       "impact": "medium",
-      "timestamp": "2026-04-28T20:06:45Z"
+      "timestamp": "2026-04-28T12:00:00Z"
     },
     {
-      "id": "story-2026-04-28-20-005",
-      "headline": "Bhutan moves another 250 BTC as 2026 outflows top $240M, stack down 73% from peak",
-      "slug": "bhutan-250-btc-outflows-240m",
-      "tldr": "Arkham flagged Bhutan's sovereign wallet sending 250 BTC on April 13, extending the kingdom's 2026 outflows past $240M and trimming holdings 73% from the October 2024 peak.",
-      "why_it_matters": "Why it matters: A sovereign holder steadily distributing BTC into a $77K market is the kind of slow-bleed supply pressure that resistance levels are made of \u2014 and a reminder that not every government accumulator stays an accumulator.",
+      "id": "story-2026-04-28-21-005",
+      "headline": "Jupiter unlocks $9.67M of JUP today, diluting circulating supply by 1.54%",
+      "slug": "jupiter-jup-unlock-april-28-2026",
+      "tldr": "Solana DEX aggregator Jupiter released 1.54% of its circulating JUP supply, worth roughly $9.67 million at current prices, into the market April 28.",
+      "why_it_matters": "Why it matters: Scheduled unlocks land into a soft tape — every cliff like this resets the floor for token-flow narratives across Solana DeFi blue chips.",
       "the_details": [
-        "On-chain analytics firm Arkham tracked the 250 BTC transfer on April 13.",
-        "Cumulative 2026 outflows from Bhutan's wallets now exceed $240 million.",
-        "The country's stack has fallen 73% from its October 2024 peak."
+        "Unlock equals approximately $9.67M at the current JUP spot price.",
+        "Represents 1.54% of circulating supply hitting the market in a single tranche.",
+        "Comes as the CMC Altcoin Season Index reads 39/100, deep in 'Bitcoin Season' territory."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/397558/bhutan-moves-250-btc-as-2026-outflows-top-240-million-arkham-data",
-      "category": "markets",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-28T20:06:45Z"
+      "timestamp": "2026-04-28T08:00:00Z"
     }
   ]
 }
