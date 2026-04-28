@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-28T03:02:30Z",
+  "briefing_id": "briefing-2026-04-28-03",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-28-03-001",
+      "headline": "April crypto hacks blow past $606M, worst month since Bybit's $1.4B breach",
+      "slug": "april-2026-crypto-hacks-606m-worst-since-bybit",
+      "tldr": "Crypto protocols have lost more than $606 million across 12 incidents in April, the worst monthly toll since Bybit's $1.4B hack in February 2025.",
+      "why_it_matters": "Why it matters: Bridge and admin-key exploits — not smart-contract bugs — are driving the carnage, signaling DeFi's hardest problem is operational security, not Solidity.",
+      "the_details": [
+        "Kelp DAO lost $292M on April 19 via its LayerZero-powered bridge, draining 116,500 rsETH — about 18% of supply.",
+        "Drift Protocol's $285M April 1 exploit is now attributed to North Korea-affiliated actors using pre-signed durable nonces.",
+        "Two attacks accounted for 95% of April's losses, with one incident every 2.9 days across 2026."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-27T18:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-03-002",
+      "headline": "SEC clears DEX front-ends to operate without broker-dealer registration",
+      "slug": "sec-dex-broker-dealer-safe-harbor-april-2026",
+      "tldr": "SEC staff said it will not object to software interfaces letting users prepare and submit crypto-asset-security trades without registering as broker-dealers.",
+      "why_it_matters": "Why it matters: The April 13 statement is the clearest signal yet that DeFi front-ends like Uniswap and 1inch can survive in the US without retrofitting TradFi licensing.",
+      "the_details": [
+        "Conditions include not custodying assets, not routing orders for compensation, and clear user disclosures.",
+        "The relief sits alongside the SEC-CFTC March 17 joint guidance on a five-category token taxonomy.",
+        "Coalition of 100+ crypto firms is still pushing Senate Banking to mark up the CLARITY Act before recess."
+      ],
+      "source": "Sidley Austin",
+      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-21T14:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-03-003",
+      "headline": "Bitcoin hits a wall at $80K as concentrated sells cap a 9-day ETF inflow streak",
+      "slug": "bitcoin-80k-wall-etf-inflows-april-2026",
+      "tldr": "BTC failed to break $80,000 despite a nine-day spot-ETF inflow streak topping $2B, with sell-side liquidity concentrated at the round number.",
+      "why_it_matters": "Why it matters: With FOMC this week and zero cuts priced in, $80K becomes the line that decides whether April closes as BTC's best month in a year or another rejection.",
+      "the_details": [
+        "BTC trades near $78,112, up 0.56%; ETH at $2,328, up 0.61%, both holding key support zones.",
+        "Bitcoin-dollar inverse correlation is the most extreme in nearly four years, per CoinDesk.",
+        "USDT supply added $5B in the past month, fueling the rebound bid."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-27T13:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-03-004",
+      "headline": "Solana ETF inflows collapse 92% to $34M in April from a $419M peak",
+      "slug": "solana-etf-inflows-collapse-april-2026",
+      "tldr": "Spot Solana ETF inflows have fallen 92% from $419M in November 2025 to just $34M this April, even as SOL trades near $86.",
+      "why_it_matters": "Why it matters: The collapse is the first hard data point that altcoin ETFs do not inherit Bitcoin's structural bid — issuers banking on a copy-paste flywheel are about to learn otherwise.",
+      "the_details": [
+        "SOL is down 32% from its 2025 high; analysts flag $52 as the next major support if $86 fails.",
+        "Solana topped Ethereum in weekly dApp revenue for a fifth straight week despite the ETF cooling.",
+        "Firedancer is targeting 1M TPS by year-end while Alpenglow has already cut finality below 200ms."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-27T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-03-005",
+      "headline": "Jupiter unlocks 1.54% of JUP supply worth $9.67M today",
+      "slug": "jupiter-jup-unlock-april-28-2026",
+      "tldr": "Solana DEX aggregator Jupiter releases 1.54% of circulating JUP supply — about $9.67M — in a scheduled unlock today.",
+      "why_it_matters": "Why it matters: Mid-week unlocks rarely move spot but reset the float math for funds modeling DEX-token supply schedules into Q3.",
+      "the_details": [
+        "Unlock represents one of the larger single-day JUP releases in the current vesting cycle.",
+        "Jupiter remains the dominant DEX aggregator on Solana by volume share.",
+        "Token unlock follows a quiet stretch for Solana spot flows after November 2025's ETF peak."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-28T00:00:00Z"
+    }
+  ]
+}

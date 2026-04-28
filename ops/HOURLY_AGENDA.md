@@ -1,99 +1,110 @@
 # degen0x — Hourly Ops Agenda
 
-**Timestamp (UTC):** 2026-04-28T02:15Z
-**Hour:** 02 UTC (their internal "Hour 26")
-**Sandbox:** `beautiful-adoring-cerf` (38th distinct standup sandbox)
-**Last hour standup:** `87bf40eba` (Hour 01 — DESIGN-POLISH 1-cycle-skip-1-cycle-resume PARTIAL recovery; conjunction RE-MET 1-of-2-disconfirm-spec broken at 1; topical recurrence 80%)
+**Timestamp (UTC):** 2026-04-28T03:15Z
+**Hour:** 03 UTC (their internal "Hour 27")
+**Sandbox:** `nifty-inspiring-carson` (39th distinct standup sandbox)
+**Last hour standup:** `f9883785a` (Hour 02 — DESIGN-POLISH FULL-RECOVERY 2nd-consecutive ship via `ecf0c6fd9`; locked-canonical RESTORED; system SLO 19-of-35 = 54.29% NEW LOCAL HIGH)
 
 ---
 
-## What shipped last hour (Hour 01 → Hour 02)
+## Incidents / Overrides
 
-- `ecf0c6fd9` *design (origin):* worldcoin-world-id-proof-of-personhood-guide-2026 theme-token polish at **01:37:51Z** (~259 hex→CSS-var, dedup Article+WebPage JSON-LD, dedup section-footer, focus-visible rings, related-card hover, fix related card hrefs). **2nd-CONSECUTIVE ORIGIN DESIGN-POLISH SHIP** — completes Hour 02 watchpoint set Hour 01: `2nd-consecutive ship = full recovery`. **REGIME-DECISION: FULL RECOVERY from 1-cycle skip — locked-canonical "design-polish-ships-hourly" expectation RESTORED.**
-- `95380303e` *news:* briefing-2026-04-28-02 on origin (mtime **02:09:12Z**, generated_at 02:08:00Z; cadence ~7min fresh; **33rd consecutive green briefing hour**).
-- `87bf40eba` *ops (master):* Hour 01 UTC standup commit (master only).
-- **`dafeede00` worldcoin master-only polish — RESOLVED via origin-side rebase commit `ecf0c6fd9` at 01:37:51Z** (2h01m after master commit at 23:36:20Z). Selective-sync hypothesis CONFIRMED: master-only sync gap is real but resolves within ~2h. Counter-evidence to "indefinite drift" hypothesis cleared.
+- **None P0.** No production breakage detected this cycle (briefing GREEN ~12min fresh; site assumed up — egress-blocked verification carries forward, T-EOD-QA-EGRESS 24th cycle).
 
 ---
 
-## What's blocking or at risk
+## What shipped last hour (Hour 02 → Hour 03)
 
-### Override-priority (regime-shift signal — needs Jefe direct read)
-
-- **DESIGN-POLISH FULL-RECOVERY CONFIRMED — Hour 02 watchpoint resolved at exactly 1 ship.** `ecf0c6fd9` worldcoin polish lands 01:37:51Z on origin. 2nd-consecutive ship after 1-cycle skip → reclassify Hours 23→00→01→02 as **9-streak + 1-skip + 2-resume = steady-state ships-hourly RESUMED**, NOT decay. System SLO **19-of-35 = 54.29%** ⬆ from 52.94% (+1.35pp) — sets **NEW LOCAL HIGH** (prior peak Hour 23 = 53.13%). Locked-canonical expectation **FULLY RECOVERED**. Forward gate: Hour 03 watchpoint = 3rd-consecutive ship to retire decay-hypothesis residual.
-- **T-BRIEFING-NOVELTY-V2 P1 — CONJUNCTION RE-MET 3rd-CONSECUTIVE CYCLE; RECURRENCE-RATE TREND-UP REGIME DISCONFIRMED.** Briefing-02 HIGH **3-of-5 = 60%** (FOMC-week, Strategy-818k-BTC, CLARITY-Act-Senate) — holds ≥3 floor. Conjunction-met cumulative now **13-of-15 since Hour 11**. BUT topical-recurrence drops to **3-of-5 ≈ 60%** (Strategy-818k RECUR from H00, CLARITY-Act RECUR from H23/H00, Solana-ETF-92pct RECUR from H22/H00; FOMC partly recurs; TOKEN2049-Dubai-postponed NEW). Trajectory **60→60→100→80→60%** — falls **below ≥70% confirm-gate** for 1st time since Hour 24 spike. Trend-up regime **REJECTED at 4th cycle** — content-pool refresh (TOKEN2049 NEW + FOMC newly framed) breaks recurrence chain. **Hour 03 gate:** if topical-recurrence rebounds ≥70% → trend-up resumed; if ≤60% → regime collapses to "stable-mixed" baseline.
-- **DIVERGENCE GAP SHRINKS for 1st time in ~30 cycles** — 154→149 (-5). Master+85 / origin+64 (origin caught up 6 commits net). Likely caused by worldcoin polish rebase landing on origin + adjacent commits propagating. Latent T-DIVERGENCE-WIDENING **counter-trend signal** — not yet a regime shift, but if Hour 03 gap shrinks again → potential active reverse-sync underway (would unblock Plan-B reset gate).
-
-### High-priority (continues prior cycles)
-
-- **T-PUBLISH-QUEUE-DRIFT-BUIDL P1 — Cycle 37** (canonical Hour 19, deltas Hours 20–02). Bundle `cdea9186f` BUIDL learn page now **36.24h queued, ~13.97h bundle-stale, 37-cycle no-Jefe-action**. P0-candidacy 5-of-5 hard-confirmed. Self-elevation blocked; awaits Jefe direct read.
-- **T-EOD-QA-EGRESS — 23rd-consecutive cycle.** degen0x.com still not on Cowork sandbox egress allowlist. Methodology-shift Hour 08 baseline holds.
-- **T-LOCK-ESCALATION dormant Hour 02 entry** — no stale `index.lock` at 02:14Z. Mechanism healthy 21-of-21 historic. 1-cycle dormant after Hour 01 recurrence.
-
-### Medium-priority watchpoints
-
-- **Master/origin divergence narrows to +85 / +64 (149-commit gap).** Master advanced +1 (`87bf40eba` ops-only), origin advanced +2 (`ecf0c6fd9` worldcoin design + `95380303e` briefing-02). **Net gap -5** — first contraction in 30+ cycles. Plan-B reset gate may be moving.
-- **Worldcoin sync-gap mechanics** — `dafeede00` master-only at 23:36:20Z resolved on origin as `ecf0c6fd9` at 01:37:51Z (2h01m). Suggests Jefe-shell rebase-style propagation from master→origin operates with ~2h latency for design-polish commits.
-
-### Latent / no-watch
-
-- T-WIP-DELTA-RESUME LATENT 15th-consecutive (codemod sweep on ~7800 files; sandbox dirty 974 files at Hour 02 entry).
-- T-DIVERGENCE-WIDENING re-classified to **CONTRACTING-1-CYCLE-WATCH** given -5 net delta (was monotonic-widen 30 cycles).
+- `5e96de402` *design (origin):* aerodrome-finance-guide theme-token polish at **02:41:22Z** (~242 hex→CSS-var, focus-visible rings, related-card hover, fix related-card hrefs). **3rd-CONSECUTIVE ORIGIN DESIGN-POLISH SHIP** since the Hour 00 1-cycle skip. Hour 02 watchpoint `3rd-consecutive ship to retire decay-hypothesis residual` **MET**. Decay-hypothesis FULLY RETIRED — locked-canonical "design-polish-ships-hourly" expectation operates as steady-state going forward.
+- `16c94e713` *news:* briefing-2026-04-28-03 on origin (mtime **03:03:34Z**, generated_at 03:02:30Z; ~12min fresh; **34th consecutive green briefing hour**).
+- `f9883785a` *ops (master):* Hour 02 UTC standup commit (master only — runner ops/ commit, 27th consecutive ops-commit success).
+- **No counter-evidence to selective-sync hypothesis this cycle:** `5e96de402` design ship landed directly on origin with no master-only persistence preceding it (the prior `dafeede00`→`ecf0c6fd9` 2h01m latency pattern did not repeat).
 
 ---
 
-## Top 3 priorities for this hour
+## What's at risk
 
-### T1 — `community-growth` — Briefing-02 snapshot + V2 trend-up DISCONFIRM at 4th cycle + conjunction 3-consec MET
-
-**§What:** Snapshot briefing-02 to `ops/snapshots/briefing-2026-04-28-02.json` and file V2-novelty note documenting (a) HIGH 3-of-5 conjunction RE-MET 3rd-consecutive cycle (cumulative 13-of-15), (b) topical recurrence drops to 60% (3-of-5: Strategy-818k, CLARITY-Act, Solana-ETF-92pct), (c) trend-up regime DISCONFIRMED at 4th cycle (60→60→100→80→60%), (d) content-pool refreshed via TOKEN2049-postponed (NEW) and FOMC-week (re-framed).
-**§Why:** Briefing-02 fresh now (mtime 02:09:12Z); next runner overwrite ~03:09Z. Hour 02 is the regime-decision cycle for V2: trend-up was confirmed 2nd cycle at Hour 01, but Hour 02 falls below ≥70% gate → regime rejected. CEO-route mandatory de-escalation candidacy reopens — content pool NOT exhausted (2 new headlines this cycle). Future standups will misread this as decay if not documented.
-**§How:** Snapshot via `cp public/data/news-briefing.json ops/snapshots/briefing-2026-04-28-02.json`. Write `ops/community/2026-04-28T02-15Z-briefing-novelty-v2-trend-up-disconfirmed-4th-cycle.md` with: HIGH trajectory (3→3→2→3→3), recurrence trajectory (60→60→100→80→60% topical), cumulative conjunction 13-of-15, content-pool-refresh evidence (TOKEN2049 + FOMC-week framing), V2-de-escalation candidacy REOPENED.
-**§Deliverable:** `ops/snapshots/briefing-2026-04-28-02.json` + `ops/community/2026-04-28T02-15Z-briefing-novelty-v2-trend-up-disconfirmed-4th-cycle.md`.
-**§Rollback:** Append-only artifacts; no rollback.
-
-### T2 — `build-cycle` (audit) — Design-polish FULL-RECOVERY confirmation + worldcoin sync-gap resolution
-
-**§What:** Document that the Hour 00 design-polish 9-cycle-streak break + Hour 01 1-cycle-resume + Hour 02 2nd-consecutive ship = **full recovery sequence**. `ecf0c6fd9` worldcoin polish at 01:37:51Z confirms 2-consecutive-ship watchpoint set Hour 01. Reclassify regime: locked-canonical RESTORED, decay-hypothesis FULLY REJECTED. Concurrently document that `dafeede00` master-only persistence resolved via origin-side rebase as `ecf0c6fd9` after 2h01m latency — selective-sync hypothesis confirmed.
-**§Why:** System SLO crosses to NEW LOCAL HIGH (54.29% > prior peak 53.13% Hour 23). Locked-canonical needs explicit re-codification before Hour 03; without it future standups will under-prioritize design-polish work due to the now-stale "1-cycle-skip" framing. Worldcoin sync-gap resolution closes a 2-cycle Jefe-watchpoint and informs future master-only-persistence triage (~2h tolerance window).
-**§How:** Write `ops/build-cycle/2026-04-28T02-15Z-design-polish-full-recovery-2-consec-ship.md`. Tabulate: 9-streak Hours 16-23, 1-skip Hour 00, 1-resume Hour 01 (`390b39910`), 2-resume Hour 02 (`ecf0c6fd9`), system SLO 19-of-35 = 54.29% NEW HIGH, runner-only 7-of-35 = 20.00% (degrading), worldcoin sync-resolution timing (dafeede00 23:36:20Z → ecf0c6fd9 01:37:51Z = 2h01m).
-**§Deliverable:** Build-cycle audit-trail note.
-**§Rollback:** Append-only doc; no rollback.
-
-### T3 — `publish/QA` (BUIDL queue drift) — Cycle 37 delta-only follow-up
-
-**§What:** File one-page delta-only follow-up to Hour 19 elevation-doc; do NOT re-derive P0 criteria.
-**§Why:** Recurrence rule mandates delta-only when prior canonical incident covers criteria. Cycle 37 widens evidence base monotonically (36.24h queued, ~13.97h bundle stale, 37-cycle no-Jefe-action). Self-elevation blocked.
-**§How:** Write `ops/incidents/2026-04-28T02-15Z-buidl-publish-queue-drift-cycle-37-evidence-widens.md`. Reference Hour 19 elevation-doc as canonical; record current delta only.
-**§Deliverable:** Cycle-37 delta incident page.
-**§Rollback:** Append-only; no rollback.
+- **T-BRIEFING-NOVELTY-V2 P1 — recurrence regime UNCLEAR after Hour 02 disconfirm.** Briefing-03 stories: April-606M-Lazarus (RECUR ≥4 cycles), SEC-DEX-broker-dealer (RECUR from H01), BTC-80K-wall (RECUR from H02/H18), Solana-ETF-92pct (RECUR from H22/H00/H02), Jupiter-JUP-unlock (NEW). Topical-recurrence **4-of-5 = 80%** — rebounds **above the ≥70% confirm-gate**. HIGH count **3-of-5** holds (conjunction RE-MET 4th-consecutive cycle, cumulative 14-of-16). Trajectory now `60→60→100→80→60→80%` — Hour 02 dip looks like a 1-cycle blip rather than regime-collapse. Hour 04 watchpoint: ≥70% again → trend-up regime restored as durable; ≤60% → Hour 02 was the early signal of regime breakdown.
+- **T-PUBLISH-QUEUE-DRIFT-BUIDL P1 — Cycle 38** (canonical Hour 19, deltas Hours 20–03). Bundle `cdea9186f` BUIDL learn page now **~37.24h queued, ~14.97h bundle-stale, 38-cycle no-Jefe-action**. P0-candidacy 5-of-5 hard-confirmed. Self-elevation blocked; awaits Jefe direct read.
+- **Divergence gap WIDENS again to 152 commits** (master+86 / origin+66). Hour 02 reported a 1st-ever -5 contraction (149); Hour 03 reverses with +3 widening (origin advanced +2 = `5e96de402` + `16c94e713`; master advanced +1 = `f9883785a`). T-DIVERGENCE-WIDENING reverts to **resumed monotonic widen** (1-cycle contraction was incidental — caused by worldcoin rebase landing, not active reverse-sync). Plan-B reset gate has NOT moved.
+- **T-LOCK-ESCALATION recurred** at Hour 03 entry: 1 stale `.git/objects/maintenance.lock` (zero-byte, dated 2026-04-27 23:36 — ~3.6h old, persistent across last 3 cycles). Mechanism remains healthy via mv-recipe (22-of-22 historic). The fact that the SAME maintenance.lock survives multiple cycles suggests it is being held by a long-running git-maintenance daemon, not a per-cycle race — file an observation, do NOT clear via mv (would risk corrupting an active maintenance pass).
 
 ---
 
 ## KPI snapshot
 
-| KPI | Value | Source |
-|---|---|---|
-| Origin/main HEAD | `95380303e` (briefing-02, 02:09:12Z) | git |
-| Latest src ship (origin) | `ecf0c6fd9` (worldcoin polish, 01:37:51Z) — **NEW this cycle** | git |
-| Master HEAD | `87bf40eba` (ops Hour 01 standup, 01:22:41Z) | git |
-| Briefing freshness | **6min** (mtime 02:09:12Z, now 02:14:52Z) — GREEN | mtime |
-| Consecutive green briefing hours | **33** (was 32) | hourly-log |
-| System SLO (design-polish-ships-hourly) | **19-of-35 = 54.29%** ⬆ NEW LOCAL HIGH (+1.35pp) | derived |
-| Runner-only SLO | 7-of-35 = 20.00% ⬇ (no new runner src) | derived |
-| Briefing-02 HIGH-impact | 3/5 = 60% (≥3 floor MET 3rd-consec) | briefing |
-| Briefing-02 topical recurrence | 3-of-5 ≈ 60% (BELOW ≥70% gate) | derived |
-| V2 conjunction cumulative | **13-of-15** since Hour 11 | derived |
-| BUIDL queue age | **36.24h** (cycle 37, 12.24h past 24h threshold) | publish queue |
-| Master/origin divergence | **+85 / +64 = 149-commit gap** ⬇ -5 net (first contraction in 30+ cycles) | git |
-| Worktree dirty | 974 files (+1) | git status |
-| Stale locks | 0 — dormant 1-of-1 cycle | filesystem |
-| EOD QA egress | 23rd consecutive blocked | (T-EOD-QA-EGRESS) |
-| Indexed pages | (unverifiable from sandbox; T-EOD-QA-EGRESS 23rd consec) | n/a |
-| Organic traffic 24h | (unverifiable; same blocker) | n/a |
+| Metric | Value | Source | Note |
+|---|---|---|---|
+| Origin/main HEAD | `16c94e713` (briefing-03, 03:04:02Z) | `git log origin/main` | — |
+| Latest src ship (origin) | `5e96de402` (aerodrome-finance polish, 02:41:22Z) | `git log origin/main` | **NEW this cycle** — 3rd-consec design-polish |
+| Master HEAD | `f9883785a` (Hour 02 ops standup, 02:15Z) | `git log` | runner-only; +1 since last cycle |
+| Briefing freshness | **~12min** (mtime 03:03:34Z, now 03:14:50Z) | `stat src/data/news-briefing.json` | GREEN |
+| Briefing green-streak | 34 consecutive hours | derived | — |
+| Indexed pages (proxy) | unverifiable from sandbox (T-EOD-QA-EGRESS 24th) | — | degen0x.com not on egress allowlist |
+| Organic traffic 24h | unverifiable from sandbox (GSC blocked) | — | T-EOD-QA-EGRESS 24th |
+| Master/origin divergence | master+86 / origin+66 (gap **152**) | `git rev-list` | +3 vs Hour 02 (149); 1-cycle contraction REVERTED |
+| Build-cycle SLO (system) | **20-of-36 = 55.56%** | derived | ⬆ +1.27pp; **NEW LOCAL HIGH** (prior peak 54.29% Hour 02) |
+| Build-cycle SLO (runner-only) | 7-of-36 = 19.44% | derived | ⬇ continues monotonic decline (~29h runner-silence) |
+| Standup ops-commit streak | 27 consecutive cycles | derived | — |
+| Distinct standup sandboxes | 39 | derived | +1 vs Hour 02 |
+| Stale .git locks | 1 (maintenance.lock — ~3.6h, persistent) | `find .git -name "*.lock"` | DO NOT mv (likely active daemon) |
 
 ---
 
-## No prod incident detected
+## Tasks (flat)
 
-No site-down / build-failing / data-stale signals. Briefing on cadence (6min fresh), design-polish channel restored, no broken-refs introduced this cycle (`ecf0c6fd9` polish-of-existing-page; `95380303e` briefing-only). Vercel auto-deploy assumed green per pattern; sandbox cannot verify (T-EOD-QA-EGRESS 23rd consecutive).
+### T1 — Snapshot briefing-03 + V2 conjunction-met-4th-consecutive note + recurrence-rate-rebound observation
+
+**§What:** Snapshot briefing-03 to `ops/snapshots/briefing-2026-04-28-03.json` and file V2-novelty note documenting (a) HIGH 3-of-5 conjunction RE-MET **4th-consecutive cycle** (cumulative 14-of-16 since Hour 11), (b) topical-recurrence rebounds to **80%** (4-of-5: April-606M-Lazarus, SEC-DEX-broker-dealer, BTC-80K-wall, Solana-ETF-92pct; Jupiter-JUP-unlock NEW), (c) trajectory `60→60→100→80→60→80%` reframes Hour 02 dip as 1-cycle blip rather than regime-collapse, (d) trend-up regime now **AMBIGUOUS** — neither confirmed nor disconfirmed; gate to Hour 04 (≥70% restores trend-up; ≤60% confirms regime-breakdown).
+
+**§Why:** Briefing-03 fresh now (mtime 03:03:34Z); next runner overwrite ~04:02Z. Hour 02 disconfirmed the trend-up regime at 4th cycle (60% topical), but Hour 03 rebounds back into the gate band. Without explicit re-classification, Hour 04 standup will arbitrarily pick a frame; codifying "ambiguous-1-cycle-watch" preserves epistemic honesty. CEO-route mandatory de-escalation candidacy stays REOPENED until Hour 04 resolves.
+
+**§How:** `cp src/data/news-briefing.json ops/snapshots/briefing-2026-04-28-03.json`. Write `ops/community/2026-04-28T03-15Z-briefing-novelty-v2-conjunction-4-consec-recurrence-rebound-80pct.md` with: HIGH trajectory (3→3→2→3→3→3), recurrence trajectory `60→60→100→80→60→80%`, cumulative conjunction 14-of-16, content-pool-refresh-vs-recur framing, V2 regime classification = AMBIGUOUS-1-CYCLE-WATCH, Hour 04 confirm/disconfirm gates. **No src/ touched** — within standup-runner scope.
+
+**§Deliverable:** `ops/snapshots/briefing-2026-04-28-03.json` + `ops/community/2026-04-28T03-15Z-briefing-novelty-v2-conjunction-4-consec-recurrence-rebound-80pct.md`.
+
+**§Rollback:** Append-only artifacts; no rollback.
+
+### T2 — Design-polish 3rd-consecutive-ship full-recovery-confirmation note + maintenance.lock persistence observation
+
+**§What:** Document that Hour 03 retires the design-polish decay-hypothesis residual carried from Hour 00 break: 3rd-consecutive ship `5e96de402` aerodrome-finance polish at 02:41:22Z confirms locked-canonical "ships-hourly" operates as steady-state. Reclassify Hours 23→00→01→02→03 as `9-streak + 1-skip + 3-resume = locked-canonical RESUMED (no residual decay risk)`. Concurrently file a 1-page observation that `.git/objects/maintenance.lock` has persisted ~3.6h across 3 cycles — likely an active git-maintenance daemon, not a stale race; **prescribe DO NOT mv** for cycles where the lock is owned by maintenance (vs. index.lock from concurrent shells where mv-recipe is safe).
+
+**§Why:** System SLO crosses to NEW LOCAL HIGH (55.56% > prior peak 54.29% Hour 02). Without explicit codification, Hour 04+ standups will under-prioritize design-polish work due to the now-stale "still-recovering" framing. The maintenance.lock observation matters because the existing T-LOCK-ESCALATION mv-recipe is safe for `index.lock` but **unsafe for `maintenance.lock`** — different ownership semantics. Future runners need a typed-lock decision rule before clearing.
+
+**§How:** Write `ops/build-cycle/2026-04-28T03-15Z-design-polish-3-consec-ship-decay-fully-retired.md`. Tabulate: 9-streak Hours 16-23, 1-skip Hour 00, 3-resume Hours 01 (`390b39910`) → 02 (`ecf0c6fd9`) → 03 (`5e96de402`), system SLO 20-of-36 = 55.56% NEW HIGH, runner-only 7-of-36 = 19.44% (degrading), maintenance.lock-vs-index.lock decision rule. **No src/ touched** — within standup-runner scope.
+
+**§Deliverable:** Build-cycle audit-trail note + lock-typing decision rule appended.
+
+**§Rollback:** Append-only doc; no rollback.
+
+### T3 — BUIDL publish-queue drift cycle-38 delta follow-up
+
+**§What:** File one-page delta-only follow-up to Hour 19 elevation-doc; do NOT re-derive P0 criteria.
+
+**§Why:** Recurrence rule mandates delta-only when prior canonical incident covers criteria. Cycle 38 widens evidence base monotonically (~37.24h queued, ~14.97h bundle-stale, 38-cycle no-Jefe-action). Self-elevation blocked.
+
+**§How:** Write `ops/incidents/2026-04-28T03-15Z-buidl-publish-queue-drift-cycle-38-evidence-widens.md`. Reference Hour 19 elevation-doc as canonical; record current delta only.
+
+**§Deliverable:** Cycle-38 delta incident page.
+
+**§Rollback:** Append-only; no rollback.
+
+---
+
+## Commit plan for this cycle
+
+Files this standup runner will create/modify (ops/ only — V2-moratorium compliant, **zero src/ touched**):
+
+- `ops/HOURLY_AGENDA.md` (this file — modified)
+- `ops/snapshots/briefing-2026-04-28-03.json` (new)
+- `ops/community/2026-04-28T03-15Z-briefing-novelty-v2-conjunction-4-consec-recurrence-rebound-80pct.md` (new)
+- `ops/build-cycle/2026-04-28T03-15Z-design-polish-3-consec-ship-decay-fully-retired.md` (new)
+- `ops/incidents/2026-04-28T03-15Z-buidl-publish-queue-drift-cycle-38-evidence-widens.md` (new)
+
+Commit target: master only (origin push handled by separate auto-deploy gate per project memory `project_publish_deploy_gate.md`).
+
+---
+
+## One-line summary
+
+Hour 03: shipped 5e96de402 (aerodrome design-polish, 3rd-consecutive — decay-residual retired) + briefing-03 GREEN, priority = T1 V2-novelty-conjunction-4th-consec snapshot.
