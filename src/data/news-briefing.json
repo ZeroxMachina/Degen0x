@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T21:08:00Z",
-  "briefing_id": "briefing-2026-04-28-21",
+  "generated_at": "2026-04-28T22:05:00Z",
+  "briefing_id": "briefing-2026-04-28-22",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-21-001",
-      "headline": "Aave-led coalition floats rescue plan for 116,500 unbacked rsETH from Kelp DAO exploit",
-      "slug": "aave-coalition-rescue-plan-kelp-dao-rseth",
-      "tldr": "DeFi United proposed using Aave to neutralize 116,500 unbacked rsETH and stabilize markets after the $292M KelpDAO bridge exploit.",
-      "why_it_matters": "Why it matters: It's the first cross-protocol containment playbook for a liquid-restaking blow-up — if it works, expect it to become the template every LRT issuer reaches for next.",
+      "id": "story-2026-04-28-22-001",
+      "headline": "FOMC verdict lands Wednesday with BTC pinned below $78K, futures market eyes 25bp cut",
+      "slug": "fomc-april-2026-decision-btc-78k",
+      "tldr": "The Fed wraps its two-day meeting Wednesday with crypto traders de-risked and BTC stalling under $78,000 ahead of the rate call.",
+      "why_it_matters": "Why it matters: A dovish surprise could ignite the bid that BTC has failed to find at $80K all month; a hawkish tone risks unwinding April's 13% rebound.",
       "the_details": [
-        "DeFi United coalition published technical proposal April 28 via CoinDesk to wind down 116,500 unbacked rsETH minted in the bridge breach.",
-        "KelpDAO's April 18 exploit drained $292M after a single forged signature approved a cross-chain mint of rsETH.",
-        "Plan routes Aave liquidity to absorb the unbacked supply and shield depositors from a cascading depeg."
+        "BTC has rejected $80,000 four times this month and slipped to ~$77,500 as the Coinbase premium turned negative for the first time since April 8.",
+        "BTC's 30-day correlation with the U.S. Dollar Index sits at -0.90, the most negative reading since 2022, making the Fed call the dominant variable.",
+        "Bitcoin futures open interest dropped over 6% in 24 hours into the meeting as traders unwound leverage and waited on Powell."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/28/a-crypto-coalition-releases-technical-proposal-to-save-aave-users-from-a-massive-token-exploit",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-stalls-below-at-usd77-500-as-volatility-cools-traders-unwind-leverage",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T22:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-22-002",
+      "headline": "Atkins kills 'regulation by enforcement,' teases SEC innovation exemption for tokenized securities",
+      "slug": "sec-atkins-innovation-exemption-tokenized-securities",
+      "tldr": "SEC Chair Paul Atkins formally ended the agency's enforcement-first crypto stance and said an innovation exemption for onchain tokenized securities is weeks away.",
+      "why_it_matters": "Why it matters: A workable carve-out for onchain securities would unlock RWA issuance from regulated US issuers and finally give DeFi venues a legal lane to host them.",
+      "the_details": [
+        "Atkins announced the pivot on April 27, pairing it with planned joint guidance from the SEC and CFTC under their March 17 MOU.",
+        "On April 13, SEC's Division of Trading and Markets said it won't object to qualifying user-interface providers operating without broker-dealer registration.",
+        "Coalition of 100+ crypto firms is still pressing the Senate Banking Committee to mark up the CLARITY Act before a Memorial Day drop-dead window."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/26/running-out-of-time-on-clarity-state-of-crypto",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-28T18:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-22-003",
+      "headline": "April becomes worst crypto-hack month in over a year as losses cross $606M across 12 incidents",
+      "slug": "april-2026-crypto-hacks-606m-worst-month",
+      "tldr": "Twelve exploits have drained $606M from crypto in April, eclipsing all of Q1's losses combined and capping a contagion wave that started with Drift on April 1.",
+      "why_it_matters": "Why it matters: Cross-chain bridge risk and supply-chain attacks on web infra are now the dominant DeFi tail risk — TVL flight and insurance repricing follow.",
+      "the_details": [
+        "Drift Protocol on Solana lost ~$285M on April 1 in an attack authorities tie to North Korea-linked social engineering.",
+        "Kelp DAO's LayerZero bridge was drained for ~$292M on April 19, minting 116,500 unbacked rsETH across 20 chains.",
+        "CoW Swap lost $1.2M to an April 14 domain hijack, and a Vercel breach forced crypto teams to rotate API keys days later."
+      ],
+      "source": "24/7 Wall St.",
+      "source_url": "https://247wallst.com/investing/2026/04/24/the-crypto-industry-just-had-its-worst-month-of-hacks-in-over-a-year-and-the-bigger-threat-is-still-coming/",
       "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-28T15:00:00Z"
+      "timestamp": "2026-04-28T16:00:00Z"
     },
     {
-      "id": "story-2026-04-28-21-002",
-      "headline": "BTC slips to $76.5K, ETH hits one-week low at $2,303 as FOMC opens",
-      "slug": "btc-eth-dump-fomc-opens-april-28",
-      "tldr": "Bitcoin gave up the $77K level and Ethereum logged its lowest open in a week as traders de-risked into a two-day Fed meeting.",
-      "why_it_matters": "Why it matters: Three straight holds and a hot inflation print mean the rate-cut bet that was fueling the late-March rally is officially in retreat.",
+      "id": "story-2026-04-28-22-004",
+      "headline": "Polygon hard fork triggers Upbit POL halt at 11:00 UTC April 29, sPOL launch teed up next",
+      "slug": "polygon-hard-fork-upbit-pol-halt-spol-launch",
+      "tldr": "Upbit will pause POL deposits and withdrawals at 11:00 UTC on April 29 ahead of a Polygon hard fork that paves the way for the sPOL liquid staking unlock.",
+      "why_it_matters": "Why it matters: sPOL is Polygon's bid to recapture institutional staking flows lost to ETH and SOL, and the fork is the gating event for that liquidity narrative.",
       "the_details": [
-        "BTC opened at $77,368, fell to $76,472 by 7:10am ET after stalling at $79,500 earlier in the week.",
-        "ETH opened the session at $2,303.33, its weakest open in over seven days; analysts now eye $2,800–3,000 only on a clean BTC break above $85K.",
-        "FOMC decision lands April 29 with rates expected unchanged for a third straight meeting."
+        "Upbit's pause covers POL and GMT and is described as standard precaution for the upcoming Polygon network upgrade.",
+        "The fork advances the MATIC-to-POL migration and lifts scalability and security parameters across the PoS chain.",
+        "Polygon team frames sPOL as the major DeFi liquidity unlock and a hook for institutional staking allocators."
       ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-28T11:45:00Z"
-    },
-    {
-      "id": "story-2026-04-28-21-003",
-      "headline": "UMich consumer sentiment crashes to all-time low 49.8 as inflation expectations spike to 4.8%",
-      "slug": "umich-sentiment-all-time-low-april-2026",
-      "tldr": "April's University of Michigan reading hit the lowest level on record as Iran-driven oil shock pushed one-year inflation expectations from 3.8% to 4.8%.",
-      "why_it_matters": "Why it matters: Stagflation tape is the worst possible setup for risk assets — it kills the Fed's room to cut and re-anchors the dollar bid that's been crushing BTC.",
-      "the_details": [
-        "UMich consumer sentiment index printed 49.8 in April, an all-time low, per CoinDesk Daybook April 28.",
-        "One-year inflation expectations jumped 100 bps to 4.8% from 3.8% in March.",
-        "DXY-BTC inverse correlation just hit its most extreme reading in nearly four years."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-28T13:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-21-004",
-      "headline": "Babylon Foundation to park $3M USDT in Aave as BTCfi treasury hunts yield",
-      "slug": "babylon-foundation-3m-usdt-aave-deposit",
-      "tldr": "Babylon's foundation will deposit 3 million USDT into Aave, signaling that even Bitcoin-staking treasuries are routing idle stablecoins through blue-chip lending.",
-      "why_it_matters": "Why it matters: BTCfi protocols sitting on stable reserves rotating into Aave instead of T-bills tightens DeFi's grip on institutional cash management.",
-      "the_details": [
-        "Babylon Foundation announced the $3M USDT Aave deposit on April 28.",
-        "Aave's overall TVL benefits as DeFi market cap rose 3.3% in 24h to $56.2B with $5.05B in volume.",
-        "Move follows a wider 2026 trend of foundations parking treasury cash in audited DeFi venues over money-market funds."
-      ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/tag/defi/",
-      "category": "defi",
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/polygon-ecosystem-token/latest-updates/",
+      "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-28T12:00:00Z"
+      "timestamp": "2026-04-28T20:00:00Z"
     },
     {
-      "id": "story-2026-04-28-21-005",
-      "headline": "Jupiter unlocks $9.67M of JUP today, diluting circulating supply by 1.54%",
-      "slug": "jupiter-jup-unlock-april-28-2026",
-      "tldr": "Solana DEX aggregator Jupiter released 1.54% of its circulating JUP supply, worth roughly $9.67 million at current prices, into the market April 28.",
-      "why_it_matters": "Why it matters: Scheduled unlocks land into a soft tape — every cliff like this resets the floor for token-flow narratives across Solana DeFi blue chips.",
+      "id": "story-2026-04-28-22-005",
+      "headline": "Bittensor TAO rips +47% YTD as Q1 AI-services revenue prints $43M, market cap nears $3.5B",
+      "slug": "bittensor-tao-47-ytd-43m-q1-revenue",
+      "tldr": "Bittensor's TAO is up roughly 47% year-to-date with a market cap near $3.5B, after the network booked $43M in Q1 AI-services revenue.",
+      "why_it_matters": "Why it matters: TAO is the cleanest 'crypto AI' revenue story right now and is decoupling from BTC's chop, pulling capital toward AI-native L1s ahead of summer.",
       "the_details": [
-        "Unlock equals approximately $9.67M at the current JUP spot price.",
-        "Represents 1.54% of circulating supply hitting the market in a single tranche.",
-        "Comes as the CMC Altcoin Season Index reads 39/100, deep in 'Bitcoin Season' territory."
+        "TAO sits among ETH, XRP, SOL, and Hyperliquid as altcoins building independent momentum while BTC corrects ~20% from ATH.",
+        "Q1 2026 revenue of $43M comes from AI services running on Bittensor's subnet architecture.",
+        "Drivers cited include institutional flows, regulatory clarity from the SEC-CFTC MOU, and protocol-level upgrades."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "source": "Spotedcrypto",
+      "source_url": "https://www.spotedcrypto.com/top-5-altcoins-april-2026-3/",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-28T08:00:00Z"
+      "timestamp": "2026-04-28T17:00:00Z"
     }
   ]
 }

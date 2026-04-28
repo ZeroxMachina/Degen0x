@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-28-023",
+    "type": "news",
+    "title": "\ud83d\udcf0 FOMC verdict lands Wednesday with BTC pinned below $78K, futures market eyes 25bp cut",
+    "message": "The Fed wraps its two-day meeting Wednesday with crypto traders de-risked and BTC stalling under $78,000 ahead of the rate call.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
     "id": "feed-2026-04-28-022",
     "type": "news",
     "title": "\ud83d\udcf0 Aave-led coalition floats rescue plan for 116,500 unbacked rsETH from Kelp DAO exploit",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 Aave V3 USDC pool stuck at 99.87% utilization with under $3M left as Circle pushes urgent fix",
     "message": "Aave's flagship USDC market is effectively drained, leaving lenders unable to withdraw and triggering Circle to demand emergency rate action.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-017",
-    "type": "news",
-    "title": "\ud83d\udcf0 April DeFi exploits hit $620M as Kelp DAO contagion drains $6.4B from TVL",
-    "message": "April crypto exploits crossed $620M after Kelp DAO's $292M rsETH bridge drain dragged total DeFi TVL from $26.4B to roughly $20B.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }
