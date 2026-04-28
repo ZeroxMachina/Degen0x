@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-28T04:02:00Z",
+  "briefing_id": "briefing-2026-04-28-04",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-28-04-001",
+      "headline": "Bitcoin cracks $77K as 3% slide erases a full week of ETF-fueled gains",
+      "slug": "bitcoin-breaks-below-77k-erases-week-gains",
+      "tldr": "BTC slid nearly 3% to break below $77,000, wiping out the seven-day rally that briefly tagged the $80K wall.",
+      "why_it_matters": "Why it matters: A clean failure at $80K with concentrated sells flips the dominant institutional narrative back to range-bound chop and squeezes leveraged longs.",
+      "the_details": [
+        "Bitcoin breached $77,000 on April 28 after stalling at the $80K resistance for the prior week.",
+        "BTC dominance still sits near 60%, and altcoin season index lingers at 33-38/100.",
+        "Spot ETF inflows had been the main bid; the rejection caps a nine-day positive flow streak."
+      ],
+      "source": "TradingKey",
+      "source_url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261829066-crypto-bitcoin-btc-price-sec-cftc-white-house-paul-atkins-clarity-tradingkey",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T03:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-04-002",
+      "headline": "Atkins teases SEC innovation exemptions; Strategic Bitcoin Reserve unveil 'in coming weeks'",
+      "slug": "sec-innovation-exemptions-strategic-bitcoin-reserve-bitcoin-2026",
+      "tldr": "At Bitcoin 2026 in Vegas, SEC Chair Paul Atkins flagged imminent on-chain tokenization sandboxes while the White House previewed a Strategic Bitcoin Reserve rollout.",
+      "why_it_matters": "Why it matters: A formal exemption regime plus a sovereign BTC stash converts US policy from talking points to live market structure within weeks.",
+      "the_details": [
+        "Atkins: SEC will allow companies to test on-chain tokenization and securitization tools in a regulated environment.",
+        "Patrick Witt, exec director of the White House Digital Assets Council, said a Strategic Bitcoin Reserve announcement is imminent.",
+        "Heads of SEC, CFTC and the White House all spoke at Bitcoin 2026, which kicked off April 27 in Las Vegas."
+      ],
+      "source": "TradingKey",
+      "source_url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261829066-crypto-bitcoin-btc-price-sec-cftc-white-house-paul-atkins-clarity-tradingkey",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T22:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-04-003",
+      "headline": "Four central banks set rates this week - Fed, BoJ, ECB and BoE all loaded into one tape",
+      "slug": "four-central-banks-rates-week-crypto",
+      "tldr": "The BoJ, Fed, ECB and Bank of England all deliver policy decisions in the same week, stacking macro risk onto a fragile crypto bid.",
+      "why_it_matters": "Why it matters: A synchronized policy week means correlated dollar moves, and BTC's near-perfect inverse correlation with DXY is at its most extreme in nearly four years.",
+      "the_details": [
+        "BoJ, Federal Reserve, ECB, and Bank of England all set rate policy during the week of April 27.",
+        "Robinhood and Galaxy Digital also report earnings this week, adding crypto-equity gamma.",
+        "CoinDesk flagged BTC vs. dollar opposition as the strongest in nearly 4 years."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-27T13:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-04-004",
+      "headline": "Solana spot ETF inflows collapse 92% as SOL grinds at $86 into Firedancer",
+      "slug": "solana-etf-inflows-collapse-92-percent-firedancer",
+      "tldr": "Spot SOL ETF inflows fell from $419M in November 2025 to just $34M in April 2026, even as Firedancer targets a 1M TPS upgrade.",
+      "why_it_matters": "Why it matters: Institutional appetite for L1 alts is evaporating just as Solana ships its biggest performance leap, decoupling tech delivery from capital flows.",
+      "the_details": [
+        "SOL trades near $86.47 with a $49.8B market cap, currently the seventh-largest crypto asset.",
+        "Firedancer client targets ~1M TPS, up from the current ~1,300 TPS baseline.",
+        "Live Alpenglow upgrade already cut transaction finality to under 200ms."
+      ],
+      "source": "Spoted Crypto",
+      "source_url": "https://www.spotedcrypto.com/solana-avax-l1-bottom-april-2026/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-27T18:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-04-005",
+      "headline": "Jupiter unlocks 1.54% of JUP supply today, dumping $9.67M of fresh float on the market",
+      "slug": "jupiter-jup-token-unlock-april-28",
+      "tldr": "On April 28, Jupiter's scheduled cliff releases 1.54% of circulating JUP supply worth roughly $9.67 million into the float.",
+      "why_it_matters": "Why it matters: Concentrated unlocks on Solana's flagship DEX aggregator regularly compress price for 24-72h and seed shorts ahead of distribution.",
+      "the_details": [
+        "Unlock size: 1.54% of circulating JUP supply, valued at $9.67M at current prices.",
+        "Jupiter is Solana's largest DEX aggregator by volume and a key altcoin liquidity venue.",
+        "Token unlocks of this scale historically pressure JUP spot through the next session."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/",
+      "category": "defi",
+      "impact": "medium",
+      "timestamp": "2026-04-28T00:00:00Z"
+    }
+  ]
+}
