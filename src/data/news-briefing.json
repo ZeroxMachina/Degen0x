@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T11:05:00Z",
-  "briefing_id": "briefing-2026-04-28-11",
+  "generated_at": "2026-04-28T12:08:00Z",
+  "briefing_id": "briefing-2026-04-28-12",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-11-001",
-      "headline": "TOKEN2049 Dubai postponed to 2027 amid heightened UAE security risks",
-      "slug": "token2049-dubai-postponed-2027-uae-security",
-      "tldr": "TOKEN2049 organizers delayed the flagship Dubai conference to 2027, citing escalating security risks across the UAE region.",
-      "why_it_matters": "Why it matters: A premier global crypto event retreating from Dubai signals broader regional instability that could redirect institutional crypto activity away from the Gulf.",
+      "id": "story-2026-04-28-12-001",
+      "headline": "Bitcoin slips back to $78K as $80K wall holds before Wednesday's FOMC",
+      "slug": "bitcoin-slips-78k-80k-wall-fomc",
+      "tldr": "Bitcoin pulled back from above $79,000 to trade near $78,100 as macro headwinds and a consumer sentiment crash keep bulls bottled up.",
+      "why_it_matters": "Why it matters: BTC is now moving in near-perfect opposition to the dollar, the most extreme decoupling since 2022, raising the stakes of Wednesday's FOMC.",
       "the_details": [
-        "Original 2026 Dubai dates scrapped after consultations with UAE authorities and venue partners over deteriorating security conditions",
-        "TOKEN2049 Singapore in October 2026 remains on schedule and now becomes the year's marquee global gathering",
-        "Dubai stop has drawn 15,000-plus attendees in prior years, anchoring the Middle East crypto calendar"
-      ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
-      "category": "adoption",
-      "impact": "high",
-      "timestamp": "2026-04-28T08:30:00Z"
-    },
-    {
-      "id": "story-2026-04-28-11-002",
-      "headline": "Bitcoin ETFs vacuum up $933M, ride 9-day streak as crypto funds hit $155B AUM",
-      "slug": "bitcoin-etfs-933m-inflow-streak-155b-aum",
-      "tldr": "Bitcoin spot ETFs pulled in $933 million last week and notched their longest inflow streak since February.",
-      "why_it_matters": "Why it matters: Sticky institutional demand is decoupling BTC's price floor from retail sentiment heading into a macro-heavy central bank week.",
-      "the_details": [
-        "Total crypto fund AUM climbed to $155 billion, the highest level since February 2026 per CoinShares data",
-        "Spot Bitcoin ETFs logged 9 consecutive sessions of net inflows totaling more than $2 billion",
-        "Inflows accelerating despite BTC repeatedly rejecting the $80,000 resistance ceiling and slipping below $77,000"
+        "BTC up 0.56% on the day to $78,112; ETH up 0.61% to $2,328 per CoinDesk",
+        "FOMC decision lands April 29 with BoJ, ECB and BoE all setting policy this week",
+        "U. Michigan sentiment hit all-time low of 49.8; 1Y inflation expectation jumped to 4.8% in April"
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T07:45:00Z"
+      "timestamp": "2026-04-28T12:00:00Z"
     },
     {
-      "id": "story-2026-04-28-11-003",
-      "headline": "Fed, BoJ, ECB, BoE rate decisions converge as crypto braces for macro super-week",
-      "slug": "fed-boj-ecb-boe-rate-decisions-macro-super-week",
-      "tldr": "Four major central banks set policy in a 72-hour window, with Wednesday's FOMC the highest-stakes event for risk assets.",
-      "why_it_matters": "Why it matters: A synchronized policy week could detonate cross-asset volatility just as BTC clings to support and ETH battles $2,400 resistance.",
+      "id": "story-2026-04-28-12-002",
+      "headline": "Kelp DAO bridge drained for $292M as April crypto hack tally hits $606M",
+      "slug": "kelp-dao-292m-bridge-april-hacks-606m",
+      "tldr": "An attacker drained 116,500 rsETH (~$292M) from Kelp DAO's LayerZero bridge, making April the worst hack month since February 2025.",
+      "why_it_matters": "Why it matters: Kelp and Drift alone account for 95% of $606M lost in 18 days of April, 3.7x all of Q1 combined and a wake-up call for bridge security.",
       "the_details": [
-        "Federal Reserve decision lands Wednesday April 29, with traders pricing rate-path uncertainty into the front of the curve",
-        "Bank of Japan, ECB, and Bank of England all schedule rate verdicts within the same 72-hour window this week",
-        "BTC slipped below $77,000 Tuesday morning after rejecting the $79,000 breakout zone for the fourth time"
+        "Drained ~18% of rsETH circulating supply; emergency freezes hit Aave, SparkLend, Fluid and Upshift",
+        "Chainalysis attributes the attack to North Korea's Lazarus Group via off-chain bridge compromise",
+        "Drift Protocol lost $285M on April 1 via fake-token oracle manipulation and a compromised admin key"
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
-      "category": "markets",
+      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
+      "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-28T06:15:00Z"
+      "timestamp": "2026-04-19T12:00:00Z"
     },
     {
-      "id": "story-2026-04-28-11-004",
-      "headline": "Solana ETF inflows crash 92% from $419M peak as institutional rotation stalls",
-      "slug": "solana-etf-inflows-crash-92-percent-institutional-rotation",
-      "tldr": "Spot Solana ETF inflows dropped to $34 million in April from $419 million in November, signaling sharp institutional fatigue.",
-      "why_it_matters": "Why it matters: Capital is consolidating into Bitcoin while alt-ETF demand evaporates, blocking the rotation thesis altcoin bulls are pricing.",
+      "id": "story-2026-04-28-12-003",
+      "headline": "SEC carves out DeFi front-ends from broker rules in landmark April ruling",
+      "slug": "sec-defi-frontend-broker-exception",
+      "tldr": "SEC staff said Covered User Interface Providers can offer software for trading crypto-asset securities without broker-dealer registration, subject to conditions.",
+      "why_it_matters": "Why it matters: This finally answers the existential threat hanging over DeFi front-ends since the 2022 ENS subpoenas, unlocking U.S. UI development and L2 launches.",
       "the_details": [
-        "SOL trades near $86 with a $49.8 billion market cap, ranked seventh by total crypto market value",
-        "Death cross persists with the 200-day moving average at $131.2, well above current spot price",
-        "Firedancer upgrade still targets 1 million TPS, but ETF demand has not rewarded the technical roadmap"
+        "Statement issued April 13, 2026; covers UIs that prepare and submit crypto-security transactions",
+        "Builds on the March 17 SEC-CFTC joint release establishing a five-category token taxonomy",
+        "Over 100 firms including Coinbase and Ripple are pressing the Senate to mark up the Clarity Act"
+      ],
+      "source": "Sidley Austin",
+      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-21T16:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-12-004",
+      "headline": "Solana ETF inflows crater 92% to $34M as SOL trades near $86",
+      "slug": "solana-etf-inflows-crater-92pct",
+      "tldr": "Spot Solana ETF inflows collapsed from $419M in November 2025 to just $34M in April 2026 as SOL trades near $86 with a $49.8B market cap.",
+      "why_it_matters": "Why it matters: The collapse signals institutional fatigue with non-BTC/ETH ETF products and validates concerns about altcoin ETF saturation.",
+      "the_details": [
+        "SOL ranks 7th by market cap; futures open interest at $827M with 68.2% long positioning",
+        "Firedancer upgrade still targets 1M TPS by 2026; Alpenglow already cut finality below 200ms",
+        "Altcoin season index sits at 33-38/100 with BTC dominance holding firm at 58.1%"
       ],
       "source": "CoinMarketCap",
       "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-28T05:30:00Z"
+      "timestamp": "2026-04-28T08:00:00Z"
     },
     {
-      "id": "story-2026-04-28-11-005",
-      "headline": "Ripple CTO flags sophisticated Robinhood phishing campaign targeting crypto users",
-      "slug": "ripple-cto-robinhood-phishing-campaign-warning",
-      "tldr": "David Schwartz publicly warned of a polished Robinhood email phishing operation that impersonates official communications convincingly.",
-      "why_it_matters": "Why it matters: With $606M already lost to crypto attacks this month, retail-facing phishing now compounds the institutional exploit wave.",
+      "id": "story-2026-04-28-12-005",
+      "headline": "Vercel breach sends crypto developers scrambling to rotate API keys",
+      "slug": "vercel-breach-crypto-api-key-rotation",
+      "tldr": "A security incident at Vercel exposed environment variables, forcing crypto teams to rotate every key and webhook secret deployed through the platform.",
+      "why_it_matters": "Why it matters: Vercel hosts a huge share of crypto frontend infra — wallet providers, dApps and indexers all rely on its env-var pipeline.",
       "the_details": [
-        "Phishing emails clone Robinhood's templates, headers, and sender domains to harvest user credentials at scale",
-        "Schwartz urged users to verify all account alerts inside the Robinhood app rather than clicking email links",
-        "Attack coincides with attackers pivoting from smart-contract exploits toward social engineering and signing infrastructure"
+        "Hack disclosed April 20 by CoinDesk; affected blast radius still being audited by teams",
+        "Devs urged to rotate RPC keys, Alchemy and Infura tokens, and webhook secrets immediately",
+        "Follows CoW Swap's $1.2M loss on April 14 from an unrelated domain-hijack attack"
       ],
-      "source": "The Coin Republic",
-      "source_url": "https://www.thecoinrepublic.com/2026/04/27/crypto-news-ripple-cto-sounds-alarm-over-robinhood-email-phishing-attack/",
-      "category": "security",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
+      "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-27T22:00:00Z"
+      "timestamp": "2026-04-20T16:00:00Z"
     }
   ]
 }

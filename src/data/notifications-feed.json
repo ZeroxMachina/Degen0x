@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-28-013",
+    "type": "news",
+    "title": "📰 Bitcoin slips back to $78K as $80K wall holds before Wednesday's FOMC",
+    "message": "Bitcoin pulled back from above $79,000 to trade near $78,100 as macro headwinds and a consumer sentiment crash keep bulls bottled up.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
     "id": "feed-2026-04-28-012",
     "type": "news",
     "title": "📰 TOKEN2049 Dubai postponed to 2027 amid heightened UAE security risks",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "📰 Aave hits 80% of $200M Kelp DAO bailout — Mantle, Aave DAO put up $127M",
     "message": "Aave's recovery fund has raised nearly 80% of the $200M needed to cover bad debt left by the Kelp DAO exploit, led by Mantle and Aave DAO contributions.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-007",
-    "type": "news",
-    "title": "📰 Lazarus Group fingered in $620M April hack wave — Drift and Kelp DAO drove 95%",
-    "message": "April crypto theft hits roughly $620M, with two North Korea-linked exploits accounting for about $577M of the stolen funds.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }
