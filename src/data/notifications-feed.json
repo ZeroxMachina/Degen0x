@@ -1,5 +1,157 @@
 [
   {
+    "id": "feed-2026-04-28-015",
+    "type": "news",
+    "title": "\ud83d\udcf0 SEC's Atkins unveils tokenization sandbox as Lummis vows CLARITY Act push",
+    "message": "U.S. regulators flashed a unified pro-crypto signal at Bitcoin 2026, with the SEC, CFTC and White House aligning on a tokenization framework.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-014",
+    "type": "news",
+    "title": "\ud83d\udcf0 Bitcoin loses $77K as Hormuz standoff lifts oil to 3-week high",
+    "message": "Bitcoin slid below $77,000 and ether and Solana followed lower as the closed Strait of Hormuz pushed oil to its highest level in three weeks.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-013",
+    "type": "news",
+    "title": "\ud83d\udcf0 Bitcoin slips back to $78K as $80K wall holds before Wednesday's FOMC",
+    "message": "Bitcoin pulled back from above $79,000 to trade near $78,100 as macro headwinds and a consumer sentiment crash keep bulls bottled up.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-012",
+    "type": "news",
+    "title": "\ud83d\udcf0 TOKEN2049 Dubai postponed to 2027 amid heightened UAE security risks",
+    "message": "TOKEN2049 organizers delayed the flagship Dubai conference to 2027, citing escalating security risks across the UAE region.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-011",
+    "type": "news",
+    "title": "\ud83d\udcf0 BTC stalls at $80K wall as crypto market sheds 2.3% to $2.65T",
+    "message": "Bitcoin failed a fourth attempt at $80,000 and slid to $77,005, pulling total crypto market cap down 2.3% to $2.65 trillion ahead of this week's Fed decision.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-010",
+    "type": "news",
+    "title": "\ud83d\udcf0 SEC's Atkins teases tokenization sandbox via 'innovation exemptions' window",
+    "message": "SEC Chair Paul Atkins said the agency will launch innovation exemptions in the coming weeks, letting firms pilot on-chain tokenization and securitization under a regulated carve-out.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-009",
+    "type": "news",
+    "title": "\ud83d\udcf0 Bitcoin slips below $77K, ETH wobbles at $2,328 as traders eye Wednesday FOMC",
+    "message": "BTC failed to hold the $80K wall and dropped under $77K with ETH at $2,328 as macro-cautious traders position into the Fed's April 29 decision.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-008",
+    "type": "news",
+    "title": "\ud83d\udcf0 April crypto hacks hit $606M in 18 days \u2014 worst month since Bybit's Feb 2025 breach",
+    "message": "Crypto protocols have lost $606M to hacks in just the first 18 days of April, the worst monthly tally since Bybit's February 2025 breach.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-007",
+    "type": "news",
+    "title": "\ud83d\udcf0 BlackRock's IBIT logs record $983M daily inflow as BTC rejects $80K wall",
+    "message": "IBIT pulled its biggest daily haul in six months even as bitcoin briefly tagged $79K and rolled back into range.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-006",
+    "type": "news",
+    "title": "\ud83d\udcf0 Kelp DAO drained for $292M as LayerZero bridge bug freezes Aave, Spark, Fluid",
+    "message": "An attacker drained 116,500 rsETH (~$292M, 18% of supply) via Kelp DAO's LayerZero bridge, the largest DeFi exploit of 2026.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-005",
+    "type": "news",
+    "title": "\ud83d\udcf0 Bitcoin cracks $77K as 3% slide erases a full week of ETF-fueled gains",
+    "message": "BTC slid nearly 3% to break below $77,000, wiping out the seven-day rally that briefly tagged the $80K wall.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-004",
+    "type": "news",
+    "title": "\ud83d\udcf0 April crypto hacks blow past $606M, worst month since Bybit's $1.4B breach",
+    "message": "Crypto protocols have lost more than $606 million across 12 incidents in April, the worst monthly toll since Bybit's $1.4B hack in February 2025.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-003",
+    "type": "news",
+    "title": "\ud83d\udcf0 Four central banks decide rates this week, with FOMC the main event for crypto",
+    "message": "Bank of Japan, Federal Reserve, ECB and Bank of England all set rate policy this week, with markets pricing zero Fed cuts.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-002",
+    "type": "news",
+    "title": "\ud83d\udcf0 April crypto hacks hit $606M, worst month since Feb 2025 as DeFi TVL bleeds $13B",
+    "message": "April losses to crypto exploits topped $606M across 12 incidents, triggering a $13B DeFi TVL exodus in 48 hours.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-28-001",
+    "type": "news",
+    "title": "\ud83d\udcf0 Strategy stockpile hits 818,334 BTC at $62B cost basis, ~3.9% of supply",
+    "message": "Saylor's Strategy now holds 818,334 BTC bought for nearly $62 billion at an average $75,537 per coin, the largest corporate stash ever.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
+    "id": "feed-2026-04-27-024",
+    "type": "news",
+    "title": "\ud83d\udcf0 FOMC week pins crypto: BTC stuck below $80K as traders price zero rate cuts",
+    "message": "Bitcoin trades near $78K and Ether near $2,330 as the FOMC meeting becomes the week's defining macro catalyst with markets pricing no cut.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
+    "id": "feed-2026-04-27-023",
+    "type": "news",
+    "title": "\ud83d\udcf0 Bitcoin rejects $80K, slides under $78K as Iran peace headlines and oil weigh",
+    "message": "BTC failed at $80,000 and dropped roughly 2% below $78,000 as caution dominated despite Iran offering a fresh war-ending proposal to Washington.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
+    "id": "feed-2026-04-27-022",
+    "type": "news",
+    "title": "\ud83d\udcf0 April becomes 2026's worst hack month at $606M as Lazarus claims 95% of losses",
+    "message": "Crypto hacks crossed $606M in April across 12 incidents, with North Korea's Lazarus Group behind the Drift and KelpDAO breaches that drove 95% of losses.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
+    "id": "feed-2026-04-27-021",
+    "type": "news",
+    "title": "\ud83d\udcf0 Bitcoin stalls at $80K wall despite IBIT's record $983M single-day inflow",
+    "message": "BTC pulled back from $79K to $77,700 as concentrated sell orders capped gains, even after BlackRock's IBIT logged its biggest inflow in six months.",
+    "actionUrl": "/news",
+    "date": "2026-04-27"
+  },
+  {
     "id": "feed-2026-04-27-020",
     "type": "news",
     "title": "\ud83d\udcf0 Four central banks \u2014 Fed, ECB, BoJ, BoE \u2014 all set rates this week as crypto holds $2.71T",
@@ -86,157 +238,5 @@
     "message": "BTC trades above $77,000 and is up over 13% in April, its strongest monthly run in a year, supported by $5 billion in fresh USDT supply.",
     "actionUrl": "/news",
     "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-009",
-    "type": "news",
-    "title": "\ud83d\udcf0 Kalshi launches crypto perpetual futures today under codename 'Timeless'",
-    "message": "Prediction-market giant Kalshi rolls out perp futures on a handful of cryptocurrencies today, marking its first true derivatives push beyond event contracts.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-008",
-    "type": "news",
-    "title": "\ud83d\udcf0 Aave hits 80% of $200M Kelp DAO bailout \u2014 Mantle, Aave DAO put up $127M",
-    "message": "Aave's recovery fund has raised nearly 80% of the $200M needed to cover bad debt left by the Kelp DAO exploit, led by Mantle and Aave DAO contributions.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-007",
-    "type": "news",
-    "title": "\ud83d\udcf0 Lazarus Group fingered in $620M April hack wave \u2014 Drift and Kelp DAO drove 95%",
-    "message": "April crypto theft hits roughly $620M, with two North Korea-linked exploits accounting for about $577M of the stolen funds.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-006",
-    "type": "news",
-    "title": "\ud83d\udcf0 SEC and CFTC officially label BTC, ETH, SOL, XRP and LINK as digital commodities",
-    "message": "A joint SEC-CFTC interpretation classifies the five biggest tokens as commodities and lays out a unified taxonomy for stablecoins, collectibles and digital securities.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-005",
-    "type": "news",
-    "title": "\ud83d\udcf0 Hyperliquid whales flip aggressively long on BTC even as funding stays deeply negative",
-    "message": "Large Hyperliquid traders have moved from net short to their most net-long BTC positioning since early March, despite persistently negative funding rates.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-004",
-    "type": "news",
-    "title": "\ud83d\udcf0 Trump team prepping public release of Strategic Bitcoin Reserve architecture",
-    "message": "The Trump administration is finalizing the detailed framework for a US Strategic Bitcoin Reserve, including how Treasury would accumulate, custody, and report on BTC holdings.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-003",
-    "type": "news",
-    "title": "\ud83d\udcf0 April hacks hit $620M in 20 days \u2014 worst month since Bybit's Feb '25 breach",
-    "message": "Crypto protocols have lost $620M to hacks and exploits in the first 20 days of April, eclipsing Q1 2026 combined.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-002",
-    "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin-USD correlation hits -0.90, most negative since 2022",
-    "message": "BTC's 30-day correlation with the U.S. Dollar Index has flipped to -0.90, the deepest inverse reading in nearly four years.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-001",
-    "type": "news",
-    "title": "\ud83d\udcf0 Schwab opens spot BTC and ETH trading to retail brokerage clients",
-    "message": "Charles Schwab flipped the switch on direct spot Bitcoin and Ethereum trading inside its retail brokerage, the deepest TradFi push into crypto since the ETFs.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-26-010",
-    "type": "news",
-    "title": "\ud83d\udcf0 SEC and CFTC sign historic MOU, ending years of jurisdictional turf war",
-    "message": "The SEC and CFTC announced their first formal memorandum of understanding to coordinate crypto oversight, codifying a joint interpretation issued earlier this spring.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
-  },
-  {
-    "id": "feed-2026-04-26-009",
-    "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin tracks best month in a year as USDT supply nears $150B",
-    "message": "BTC trades near $78,060, up 13% in April, on pace for its strongest monthly close since spring 2025 as USDT supply expands $5B.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
-  },
-  {
-    "id": "feed-2026-04-26-008",
-    "type": "news",
-    "title": "\ud83d\udcf0 North Korea Lazarus Linked to $292M Kelp Drain as April Losses Top $606M",
-    "message": "Forensics tie North Korea's Lazarus Group to the $292M KelpDAO drain, capping crypto's worst hack month since February 2025's Bybit breach.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
-  },
-  {
-    "id": "feed-2026-04-26-007",
-    "type": "news",
-    "title": "\ud83d\udcf0 100+ Crypto Firms Press Senate to Mark Up Clarity Act Market Structure Bill",
-    "message": "A coalition of more than 100 crypto firms led by Coinbase and Ripple is urging the Senate Banking Committee to advance the Clarity Act this spring.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
-  },
-  {
-    "id": "feed-2026-04-26-006",
-    "type": "news",
-    "title": "\ud83d\udcf0 KelpDAO LayerZero Bridge Drained for $292M, Wrapping 18% of rsETH Across 20 Chains",
-    "message": "An attacker exploited KelpDAO's LayerZero-powered bridge to siphon roughly 116,500 rsETH \u2014 about $292M and 18% of circulating supply.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
-  },
-  {
-    "id": "feed-2026-04-26-005",
-    "type": "news",
-    "title": "\ud83d\udcf0 North Korea Pinned for $285M Drift Hack via Long-Game Social Engineering",
-    "message": "Investigators traced April's $285M Drift Protocol drain to DPRK-affiliated operators using pre-signed authorizations harvested over months.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
-  },
-  {
-    "id": "feed-2026-04-26-004",
-    "type": "news",
-    "title": "\ud83d\udcf0 April Crypto Hack Toll Hits $606M, Worst Month Since Bybit Breach",
-    "message": "Crypto protocols lost $606M across 12 exploits in the first 18 days of April, the worst monthly theft tally since February 2025's Bybit incident.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
-  },
-  {
-    "id": "feed-2026-04-26-003",
-    "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin Posts Best Month in a Year as $5B USDT Injection Pushes BTC Above $77K",
-    "message": "Bitcoin is up 13.6% in April and on pace for its strongest monthly close since early 2025, with Tether minting $5B in fresh USDT to refuel the rally.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
-  },
-  {
-    "id": "feed-2026-04-26-002",
-    "type": "news",
-    "title": "\ud83d\udcf0 Lazarus-Linked April Hacks Cross $606M, Worst Crypto Theft Month Since Bybit",
-    "message": "Crypto protocols have lost over $606 million to exploits in 18 days, the worst month since Bybit's $1.4B breach.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
-  },
-  {
-    "id": "feed-2026-04-26-001",
-    "type": "news",
-    "title": "\ud83d\udcf0 BlackRock IBIT Options Top Deribit, Marking Wall Street's Crypto Derivatives Takeover",
-    "message": "BlackRock's IBIT bitcoin ETF options surpassed Deribit in open interest, signaling regulated U.S. derivatives are eclipsing offshore venues for institutional hedging.",
-    "actionUrl": "/news",
-    "date": "2026-04-26"
   }
 ]
