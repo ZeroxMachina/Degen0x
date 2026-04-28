@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-28T13:08:00Z",
+  "briefing_id": "briefing-2026-04-28-13",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-28-13-001",
+      "headline": "Bitcoin loses $77K as Hormuz standoff lifts oil to 3-week high",
+      "slug": "bitcoin-loses-77k-hormuz-oil-3-week-high",
+      "tldr": "Bitcoin slid below $77,000 and ether and Solana followed lower as the closed Strait of Hormuz pushed oil to its highest level in three weeks.",
+      "why_it_matters": "Why it matters: The geopolitical-driven oil spike resurrects inflation fears the Fed is trying to tame, capping crypto's risk-on bid right as Powell heads into his final FOMC.",
+      "the_details": [
+        "BTC opened at $77,368 Tuesday, down 1.6%, then slipped to $76,472 by 7:10am ET as ETH dropped to $2,278.",
+        "Brent crude pushed past $100 with the Strait of Hormuz closed; U.S.–Iran negotiations remain stalled.",
+        "Coinbase premium index turned negative and BTC futures open interest fell 1% to $120 billion in 24 hours."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/28/bitcoin-loses-usd77-000-ether-solana-slide-as-hormuz-standoff-lifts-oil-to-3-week-high",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T12:45:00Z"
+    },
+    {
+      "id": "story-2026-04-28-13-002",
+      "headline": "Industry pours hundreds of millions into Aave rescue plan after Kelp hack",
+      "slug": "aave-rescue-plan-kelp-hack-defi",
+      "tldr": "Crypto leaders are funding a hundreds-of-millions rescue for Aave users left exposed by the $292M KelpDAO bridge exploit, the largest hit of 2026.",
+      "why_it_matters": "Why it matters: A coordinated industry bailout signals DeFi is willing to backstop systemic shocks itself, but it also confirms how much exposure leveraged restaking has buried inside lending markets.",
+      "the_details": [
+        "KelpDAO's rsETH bridge was drained for $292M on April 18 via a LayerZero single-point-of-failure exploit.",
+        "Aave users carrying rsETH collateral became the largest downstream victims, prompting the rescue facility.",
+        "DefiLlama clocks April losses at $606M across 18 days — 3.7x all of Q1 2026 — with Lazarus Group fingered."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-28T11:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-13-003",
+      "headline": "Powell's last FOMC: markets price 94.8% hold before Warsh takes over May 15",
+      "slug": "powell-last-fomc-warsh-takeover-rate-hold",
+      "tldr": "Traders give a 94.8% probability the Fed leaves rates unchanged Wednesday in what is likely Jerome Powell's final FOMC, with Kevin Warsh sworn in May 15.",
+      "why_it_matters": "Why it matters: A hawkish hold from a lame-duck Powell sets the tone for crypto into the Warsh era, where the market is already betting on a more dovish framework — or a messy regime change.",
+      "the_details": [
+        "CME FedWatch shows 94.8% odds of no change at the April 28-29 meeting; oil and weak Michigan sentiment cloud cuts ahead.",
+        "DOJ recently closed its probe into Powell, lifting near-term rate-cut odds further out the curve.",
+        "Crypto fund AUM hit $155B last week — the highest since February 1 — heading into the decision."
+      ],
+      "source": "CoinGape",
+      "source_url": "https://coingape.com/trending/fomc-meeting-april-2026-date-and-schedule/",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T10:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-13-004",
+      "headline": "Goldman Sachs files for its first in-house Bitcoin ETF product",
+      "slug": "goldman-sachs-first-bitcoin-etf-filing",
+      "tldr": "Goldman Sachs filed earlier this month for its first proprietary spot Bitcoin ETF, joining the wave of TradFi giants stamping their own brand onto crypto wrappers.",
+      "why_it_matters": "Why it matters: A house-branded Goldman BTC ETF ends the era of Wall Street merely distributing other issuers' funds — it's a direct challenge to BlackRock's IBIT for institutional flows.",
+      "the_details": [
+        "Filing comes as crypto fund AUM swelled to $155B, the highest level since February 1, 2026.",
+        "Goldman joins a packed 2026 ETF lineup with regulators waving through filings under SEC Chair Atkins.",
+        "Spot BTC and ETH ETFs collectively pulled in $31B of net inflows during 2025, per The Block data."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-28T09:15:00Z"
+    },
+    {
+      "id": "story-2026-04-28-13-005",
+      "headline": "Thailand's KBank deploys Ripple's Palisade wallet under $4B crypto push",
+      "slug": "kbank-ripple-palisade-wallet-thailand",
+      "tldr": "Thailand's KBank is rolling out Palisade, the wallet software Ripple acquired as part of its $4 billion crypto-investment spree, marking a marquee Asian bank integration.",
+      "why_it_matters": "Why it matters: A top-tier Thai bank standardizing on Ripple infrastructure is a real-world stress test for institutional self-custody — and a quiet expansion of XRP's enterprise moat.",
+      "the_details": [
+        "KBank is among Thailand's largest commercial banks; Palisade powers wallet provisioning and key management.",
+        "Ripple has now committed $4B in crypto-related investments and acquisitions over the cycle.",
+        "Deal lands as Asian banks face MAS, HKMA and BoT pressure to formalize digital-asset custody stacks."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-28T08:30:00Z"
+    }
+  ]
+}
