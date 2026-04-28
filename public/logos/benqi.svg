@@ -1,6 +1,0 @@
-<svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
-  <rect width="56" height="56" rx="8" fill="rgba(0,0,0,0.3)"/>
-  <g transform="translate(28,28)">
-    <path d="M -6,-8 L 2,-8 L 2,-2 L -6,-2 Z M -6,0 L 2,0 L 2,8 L -6,8 Z" fill="#0E79FF" stroke="#0E79FF" stroke-width="1.5" stroke-linejoin="round"/>
-  </g>
-</svg>
