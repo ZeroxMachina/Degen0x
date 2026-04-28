@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-28T01:07:00Z",
+  "briefing_id": "briefing-2026-04-28-01",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-28-01-001",
+      "headline": "April crypto hacks hit $606M, worst month since Feb 2025 as DeFi TVL bleeds $13B",
+      "slug": "april-2026-crypto-hacks-606m-worst-month",
+      "tldr": "April losses to crypto exploits topped $606M across 12 incidents, triggering a $13B DeFi TVL exodus in 48 hours.",
+      "why_it_matters": "Why it matters: Two single-signature failures vaporized more value than all of Q1 combined, exposing cross-chain key management as DeFi's structural weak point.",
+      "the_details": [
+        "Drift Protocol drained for $285M on April 1 via fake-token oracle manipulation tied to a compromised admin key.",
+        "Kelp DAO lost $292M on April 19 when one forged signature minted rsETH across 20 chains.",
+        "DeFi TVL slid from ~$99B to ~$85B in 48 hours, the lowest reading in a year."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-27T22:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-01-002",
+      "headline": "SEC clears DEX front-ends from broker-dealer rules in major DeFi green light",
+      "slug": "sec-dex-ui-broker-dealer-exemption-april-2026",
+      "tldr": "SEC staff said April 13 it will not object to Covered User Interface Providers operating DEX front-ends without broker-dealer registration.",
+      "why_it_matters": "Why it matters: The carve-out hands U.S. DeFi builders the first clear path to ship interfaces for tokenized securities without registering as broker-dealers.",
+      "the_details": [
+        "Statement applies to interfaces that prepare and submit transactions in crypto asset securities, subject to disclosure conditions.",
+        "Builds on the SEC-CFTC March 17 joint release establishing a 5-category token taxonomy.",
+        "Coalition of 100+ firms including Coinbase and Ripple is now pressing Senate Banking to mark up the CLARITY Act."
+      ],
+      "source": "Sidley Austin",
+      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-01-003",
+      "headline": "BTC pinned below $80K, but headed for best month in a year up 13%",
+      "slug": "btc-80k-resistance-best-month-april-2026",
+      "tldr": "Bitcoin failed to break $80K as concentrated sell walls capped a rally fueled by ETF inflows and $5B in fresh USDT supply.",
+      "why_it_matters": "Why it matters: A monthly close above $77K confirms April as BTC's strongest run since 2025, but the $80K ceiling is now the line the FOMC week must clear.",
+      "the_details": [
+        "Spot bitcoin ETFs logged a nine-day inflow streak with over $2B added in recent sessions.",
+        "USDT supply grew roughly $5B in April, restoring stablecoin liquidity that had drained in Q1.",
+        "BTC trading near $78,100 and ETH near $2,328 with FOMC, BoJ, ECB and BoE all setting rates this week."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-27T18:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-01-004",
+      "headline": "BTC-dollar correlation slams to -0.90, most extreme inverse move since 2022",
+      "slug": "btc-dollar-correlation-minus-090-april-2026",
+      "tldr": "Bitcoin's 30-day correlation with the U.S. Dollar Index plunged to -0.90, the deepest negative print in nearly four years.",
+      "why_it_matters": "Why it matters: BTC is trading like a pure dollar hedge, which means the FOMC and Treasury issuance schedule, not crypto-native flows, will set price this week.",
+      "the_details": [
+        "DXY weakness through April lined up almost 1:1 with BTC's climb from the mid-$60Ks to near $80K.",
+        "Hyperliquid whales flipped to their most aggressively net-long BTC positioning since early March.",
+        "Funding rates remain deeply negative, leaving room for a short squeeze if DXY breaks lower."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/24/bitcoin-dollar-move-in-near-perfect-opposition-it-hasn-t-been-this-extreme-in-almost-4-years",
+      "category": "markets",
+      "impact": "medium",
+      "timestamp": "2026-04-27T16:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-01-005",
+      "headline": "Hyperliquid HYPE buyback flywheel pulls 97% of revenue as TAO rips +47% YTD",
+      "slug": "hyperliquid-hype-buyback-bittensor-april-2026",
+      "tldr": "Hyperliquid is recycling 97% of protocol revenue into HYPE buybacks while Bittensor (TAO) sits +47% YTD on $43M Q1 AI services revenue.",
+      "why_it_matters": "Why it matters: With altcoin season index at 39/100, capital is concentrating in protocols that generate hard cash flow rather than chasing rotation narratives.",
+      "the_details": [
+        "Hyperliquid is now the largest revenue-generating crypto project outside stablecoin issuers.",
+        "Bittensor market cap pushed near $3.5B as Q1 AI services pulled in $43M in fees.",
+        "BTC dominance sits at 60% with the CMC Altcoin Season Index stuck in 'Bitcoin Season' territory."
+      ],
+      "source": "Crypto.com Research",
+      "source_url": "https://crypto.com/us/market-updates/best-altcoins-to-watch-in-april-2026",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-27T14:00:00Z"
+    }
+  ]
+}
