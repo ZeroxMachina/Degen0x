@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-28T11:05:00Z",
+  "briefing_id": "briefing-2026-04-28-11",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-28-11-001",
+      "headline": "TOKEN2049 Dubai postponed to 2027 amid heightened UAE security risks",
+      "slug": "token2049-dubai-postponed-2027-uae-security",
+      "tldr": "TOKEN2049 organizers delayed the flagship Dubai conference to 2027, citing escalating security risks across the UAE region.",
+      "why_it_matters": "Why it matters: A premier global crypto event retreating from Dubai signals broader regional instability that could redirect institutional crypto activity away from the Gulf.",
+      "the_details": [
+        "Original 2026 Dubai dates scrapped after consultations with UAE authorities and venue partners over deteriorating security conditions",
+        "TOKEN2049 Singapore in October 2026 remains on schedule and now becomes the year's marquee global gathering",
+        "Dubai stop has drawn 15,000-plus attendees in prior years, anchoring the Middle East crypto calendar"
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "category": "adoption",
+      "impact": "high",
+      "timestamp": "2026-04-28T08:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-11-002",
+      "headline": "Bitcoin ETFs vacuum up $933M, ride 9-day streak as crypto funds hit $155B AUM",
+      "slug": "bitcoin-etfs-933m-inflow-streak-155b-aum",
+      "tldr": "Bitcoin spot ETFs pulled in $933 million last week and notched their longest inflow streak since February.",
+      "why_it_matters": "Why it matters: Sticky institutional demand is decoupling BTC's price floor from retail sentiment heading into a macro-heavy central bank week.",
+      "the_details": [
+        "Total crypto fund AUM climbed to $155 billion, the highest level since February 2026 per CoinShares data",
+        "Spot Bitcoin ETFs logged 9 consecutive sessions of net inflows totaling more than $2 billion",
+        "Inflows accelerating despite BTC repeatedly rejecting the $80,000 resistance ceiling and slipping below $77,000"
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T07:45:00Z"
+    },
+    {
+      "id": "story-2026-04-28-11-003",
+      "headline": "Fed, BoJ, ECB, BoE rate decisions converge as crypto braces for macro super-week",
+      "slug": "fed-boj-ecb-boe-rate-decisions-macro-super-week",
+      "tldr": "Four major central banks set policy in a 72-hour window, with Wednesday's FOMC the highest-stakes event for risk assets.",
+      "why_it_matters": "Why it matters: A synchronized policy week could detonate cross-asset volatility just as BTC clings to support and ETH battles $2,400 resistance.",
+      "the_details": [
+        "Federal Reserve decision lands Wednesday April 29, with traders pricing rate-path uncertainty into the front of the curve",
+        "Bank of Japan, ECB, and Bank of England all schedule rate verdicts within the same 72-hour window this week",
+        "BTC slipped below $77,000 Tuesday morning after rejecting the $79,000 breakout zone for the fourth time"
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T06:15:00Z"
+    },
+    {
+      "id": "story-2026-04-28-11-004",
+      "headline": "Solana ETF inflows crash 92% from $419M peak as institutional rotation stalls",
+      "slug": "solana-etf-inflows-crash-92-percent-institutional-rotation",
+      "tldr": "Spot Solana ETF inflows dropped to $34 million in April from $419 million in November, signaling sharp institutional fatigue.",
+      "why_it_matters": "Why it matters: Capital is consolidating into Bitcoin while alt-ETF demand evaporates, blocking the rotation thesis altcoin bulls are pricing.",
+      "the_details": [
+        "SOL trades near $86 with a $49.8 billion market cap, ranked seventh by total crypto market value",
+        "Death cross persists with the 200-day moving average at $131.2, well above current spot price",
+        "Firedancer upgrade still targets 1 million TPS, but ETF demand has not rewarded the technical roadmap"
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-28T05:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-11-005",
+      "headline": "Ripple CTO flags sophisticated Robinhood phishing campaign targeting crypto users",
+      "slug": "ripple-cto-robinhood-phishing-campaign-warning",
+      "tldr": "David Schwartz publicly warned of a polished Robinhood email phishing operation that impersonates official communications convincingly.",
+      "why_it_matters": "Why it matters: With $606M already lost to crypto attacks this month, retail-facing phishing now compounds the institutional exploit wave.",
+      "the_details": [
+        "Phishing emails clone Robinhood's templates, headers, and sender domains to harvest user credentials at scale",
+        "Schwartz urged users to verify all account alerts inside the Robinhood app rather than clicking email links",
+        "Attack coincides with attackers pivoting from smart-contract exploits toward social engineering and signing infrastructure"
+      ],
+      "source": "The Coin Republic",
+      "source_url": "https://www.thecoinrepublic.com/2026/04/27/crypto-news-ripple-cto-sounds-alarm-over-robinhood-email-phishing-attack/",
+      "category": "security",
+      "impact": "medium",
+      "timestamp": "2026-04-27T22:00:00Z"
+    }
+  ]
+}
