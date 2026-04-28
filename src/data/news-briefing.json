@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-04-28T18:05:00Z",
-  "briefing_id": "briefing-2026-04-28-18",
+  "generated_at": "2026-04-28T19:08:00Z",
+  "briefing_id": "briefing-2026-04-28-19",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-18-001",
-      "headline": "U Michigan sentiment craters to 49.8 ATL, inflation expectations spike to 4.8% — BTC stalls at $76.5K",
-      "slug": "umich-sentiment-low-btc-76k",
-      "tldr": "Consumer confidence hit a record low and one-year inflation expectations jumped a full point, freezing Bitcoin's bid back to $80K.",
-      "why_it_matters": "Why it matters: A stagflationary print this hot before tomorrow's Fed boxes Powell into a hawkish hold — bad for risk, bad for any near-term BTC breakout.",
+      "id": "story-2026-04-28-19-001",
+      "headline": "Four central banks set rates this week as BTC gets rejected below $80K",
+      "slug": "four-central-banks-rate-week-btc-rejected-80k",
+      "tldr": "BOJ, Fed, ECB and BOE all decide policy this week, putting Bitcoin's stalled $80K breakout at the mercy of a synchronized macro print.",
+      "why_it_matters": "Why it matters: A simultaneous dovish or hawkish surprise from four G10 central banks would amplify dollar moves and decide whether crypto's April rebound holds or rolls over.",
       "the_details": [
-        "U Michigan consumer sentiment index fell to 49.8 in April, an all-time low driven by Iran-conflict inflation pressure.",
-        "One-year inflation expectations surged to 4.8% from 3.8% the prior month, the largest monthly jump since 2022.",
-        "BTC pulled back from $79K+ earlier in the week to $76,472; ETH off 2.8% to $2,278 ahead of the Fed."
+        "BTC opened at $77,368 Tuesday and slid to $76,472 by 7:10 a.m. ET, down 1.6% on the day after a third straight $78K open.",
+        "ETH fell 2.8% to $2,278 as risk appetite cooled into the FOMC, the third Fed meeting of 2026.",
+        "BTC and the dollar are moving in near-perfect opposition — the most extreme negative correlation in nearly four years."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
@@ -22,72 +22,72 @@
       "timestamp": "2026-04-28T13:00:00Z"
     },
     {
-      "id": "story-2026-04-28-18-002",
-      "headline": "Bitcoin ETFs absorb $933M as crypto fund AUM rebounds to $155B — highest since February",
-      "slug": "bitcoin-etf-933m-aum-155b",
-      "tldr": "Spot Bitcoin ETFs took in $933 million as total crypto fund AUM climbed back to $155 billion, the strongest level in over two months.",
-      "why_it_matters": "Why it matters: Institutional bid is absorbing supply even with BTC stalling sub-$80K — a structural floor that didn't exist in prior corrections.",
+      "id": "story-2026-04-28-19-002",
+      "headline": "Aave rallies DeFi partners to contain $292M Kelp DAO contagion",
+      "slug": "aave-leads-defi-bailout-kelp-dao-contagion",
+      "tldr": "Aave is coordinating a multi-protocol bailout effort to backstop wrapped ether stranded across 20 chains after the Kelp DAO drain.",
+      "why_it_matters": "Why it matters: How DeFi mutualizes losses here will set the playbook for cross-chain LRT contagion — and decide whether AAVE depositors keep withdrawing.",
       "the_details": [
-        "Crypto ETFs hit highest combined AUM since February at $155B, per CoinShares flow data.",
-        "Bitcoin funds led with $933M of weekly inflows; Ethereum products saw smaller positive flows.",
-        "Inflows arrive despite BTC retracing from $79K to $76.5K and macro headwinds from Iran/Hormuz crisis."
+        "Attacker drained 116,500 rsETH (~$292M, ~18% of supply) by exploiting Kelp's LayerZero-powered bridge, forcing an emergency contract pause.",
+        "DeFi TVL collapsed from $26.4B on April 18 to ~$20B by Sunday morning per DefiLlama as panic withdrawals hit lending markets.",
+        "AAVE token sank more than 18% on the weekend before stabilizing as the coordinated response took shape."
       ],
-      "source": "Yahoo Finance",
-      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
-      "category": "bitcoin",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/business/2026/04/23/aave-rallies-defi-partners-to-contain-fallout-from-usd292-million-kelpdao-hack",
+      "category": "defi",
       "impact": "high",
-      "timestamp": "2026-04-28T12:00:00Z"
+      "timestamp": "2026-04-28T08:00:00Z"
     },
     {
-      "id": "story-2026-04-28-18-003",
-      "headline": "SEC frees DeFi frontends: 'Covered UI Providers' exempt from broker-dealer registration",
-      "slug": "sec-defi-frontend-broker-exemption",
-      "tldr": "SEC staff said it won't object to non-custodial DeFi interfaces operating without broker-dealer registration, a structural win for the frontend layer.",
-      "why_it_matters": "Why it matters: Removes an existential threat to Uniswap, Jupiter and dozens of other DEX UIs — clearing legal cover for US-domiciled DeFi product teams.",
+      "id": "story-2026-04-28-19-003",
+      "headline": "Solana ETF inflows collapse 92% to $34M as altcoin rotation stalls",
+      "slug": "solana-etf-inflows-collapse-92-percent",
+      "tldr": "US spot Solana ETFs pulled just $34M in April versus $419M in November 2025 as BTC dominance and altseason indices flash early-cycle.",
+      "why_it_matters": "Why it matters: The 92% drop is the cleanest tape signal yet that institutional altcoin demand has dried up — pressuring SOL near $86 and capping any near-term rotation.",
       "the_details": [
-        "Staff statement issued April 13 created a 'Covered User Interface Provider' carve-out for software that prepares/submits crypto-security trades.",
-        "Follows the SEC-CFTC March 17 joint guidance establishing a five-bucket token taxonomy.",
-        "Pairs with Atkins' April 27 'innovation exemption' announcement for onchain tokenized securities trading."
+        "Spot SOL ETF April inflows: $34M vs. $419M peak in November 2025, per industry tracking.",
+        "BTC dominance sits at 58.1% with the altseason index at 33–38/100 — historically a pre-rotation regime.",
+        "SOL trades $85.97 on Binance; AVAX stuck below $10 despite the first U.S. AVAX staking ETF launch."
       ],
-      "source": "Sidley Data Matters",
-      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
-      "category": "regulation",
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "altcoins",
       "impact": "high",
       "timestamp": "2026-04-28T11:00:00Z"
     },
     {
-      "id": "story-2026-04-28-18-004",
-      "headline": "TOKEN2049 Dubai pushed to 2027 as UAE security risks spike from Hormuz closure",
-      "slug": "token2049-dubai-postponed-2027",
-      "tldr": "Crypto's largest annual conference postponed its 2026 Dubai edition citing heightened regional security risks tied to the closed Strait of Hormuz.",
-      "why_it_matters": "Why it matters: Removes a major Q4 catalyst for MENA dealflow and signals crypto sponsorship dollars rotating to Singapore, Abu Dhabi, and Hong Kong.",
+      "id": "story-2026-04-28-19-004",
+      "headline": "April 2026 is now crypto's worst hack month since February 2025 — $606M gone",
+      "slug": "april-2026-worst-hack-month-since-feb-2025",
+      "tldr": "Twelve incidents have drained $606M in the first 18 days of April, with Drift Protocol and Kelp DAO accounting for the bulk of the damage.",
+      "why_it_matters": "Why it matters: Two nine-figure exploits in 19 days reset insurance pricing, throttle bridge volumes, and hand regulators a fresh stick on DeFi market structure.",
       "the_details": [
-        "TOKEN2049 organizers cited 'heightened security risks in UAE' from the ongoing Iran conflict and Hormuz closure.",
-        "Brent crude is back above $104 amid the standoff, with US-Iran negotiations stalled.",
-        "Dubai event drew over 15,000 attendees in 2025; 2026 slot will roll forward to 2027."
+        "Drift Protocol exploit on April 1 lifted $285M; investigators suspect DPRK-linked actors using pre-signed authorizations.",
+        "CoW Swap reported a $1.2M loss on April 14 from a domain hijacking attack on its frontend.",
+        "Vercel breach on April 20 forced crypto teams across the stack to rotate API keys and audit deployment secrets."
+      ],
+      "source": "Crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "medium",
+      "timestamp": "2026-04-28T09:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-19-005",
+      "headline": "TOKEN2049 Dubai postponed to 2027 over heightened UAE security risks",
+      "slug": "token2049-dubai-postponed-2027-uae-security",
+      "tldr": "Organizers pulled TOKEN2049 Dubai from the 2026 calendar, citing security concerns tied to the regional fallout from the Iran conflict.",
+      "why_it_matters": "Why it matters: Losing the Gulf's flagship crypto event removes a key Q2 catalyst and signals Middle East geopolitics are now bleeding directly into crypto's deal-flow calendar.",
+      "the_details": [
+        "Brent crude is trading above $104 with the Strait of Hormuz still closed amid stalled US–Iran negotiations.",
+        "TOKEN2049 Dubai is one of the largest crypto conferences globally and typically anchors Q2 launches and fundraises.",
+        "Sponsors and exhibitors will need to redeploy budgets to Singapore, EthCC or smaller regional events to fill the gap."
       ],
       "source": "The Block",
       "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-28T10:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-18-005",
-      "headline": "Jupiter unlocks $9.67M JUP today as Solana DEX leader faces 1.54% supply dilution",
-      "slug": "jupiter-jup-unlock-april-28",
-      "tldr": "Jupiter is unlocking 1.54% of circulating JUP supply worth roughly $9.67 million on April 28, adding fresh sell-side pressure to the Solana DEX aggregator.",
-      "why_it_matters": "Why it matters: Token unlock lands into the weakest macro tape in a month — a real test of whether Jupiter's fee-buyback program can absorb the supply.",
-      "the_details": [
-        "Today's unlock equals roughly 1.54% of circulating JUP supply, valued at $9.67 million at current prices.",
-        "Jupiter remains the dominant Solana DEX aggregator with multi-billion daily routed volume.",
-        "Unlock arrives as BTC stalls and altcoin season index sits at 39/100 — squarely 'Bitcoin Season.'"
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
-      "category": "altcoins",
-      "impact": "medium",
-      "timestamp": "2026-04-28T09:00:00Z"
+      "timestamp": "2026-04-28T07:00:00Z"
     }
   ]
 }
