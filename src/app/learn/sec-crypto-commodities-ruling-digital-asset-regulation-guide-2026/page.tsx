@@ -2,15 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import FAQAccordion from '@/components/FAQAccordion';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
-import RelatedContent from '@/components/RelatedContent';
-import AutoTOC from '@/components/AutoTOC';
-import ReadingTime from '@/components/ReadingTime';
-import LastUpdated from '@/components/LastUpdated';
 
-
-import ArticleSchema from "@/components/ArticleSchema";
-
-import AuthoritySources from "@/components/AuthoritySources";
 
 export const metadata: Metadata = {
   title: "SEC/CFTC Crypto Commodities Ruling March 2026 — Digital",
@@ -296,15 +288,7 @@ const classifiedAssets = [
 
 export default function SECCFTCRulingGuide() {
   return (
-    <main className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
-      <ArticleSchema
-        headline="SEC/CFTC Crypto Commodities Ruling March 2026 — Digital"
-        description="Complete guide to the March 17, 2026 SEC/CFTC joint ruling classifying 16 digital commodities including ETH, SOL, XRP, and more. Learn how the 68-page"
-        url="https://degen0x.com/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026"
-        datePublished="2024-06-01"
-        dateModified="2026-04-17"
-        section="Learn"
-      />
+    <main className="min-h-screen bg-[var(--color-bg)] text-[var(--color-text)]">
       {/* Structured data */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
@@ -315,18 +299,18 @@ export default function SECCFTCRulingGuide() {
       </a>
 
       {/* Header */}
-      <header className="border-b border-[#30363d] bg-[#0d1117] sticky top-0 z-40">
+      <header className="border-b border-[var(--color-border)] bg-[var(--color-bg)] sticky top-0 z-40">
         <div className="max-w-4xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 text-sm text-[#8b949e] mb-4">
-            <Link href="/" className="hover:text-[#58a6ff] transition-colors">
+          <nav className="flex items-center gap-2 text-sm text-[var(--color-text-secondary)] mb-4">
+            <Link href="/" className="hover:text-[var(--color-primary-light)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] rounded">
               degen0x
             </Link>
             <span>/</span>
-            <Link href="/learn" className="hover:text-[#58a6ff] transition-colors">
+            <Link href="/learn" className="hover:text-[var(--color-primary-light)] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] rounded">
               Learn
             </Link>
             <span>/</span>
-            <span className="text-[#c9d1d9]">SEC/CFTC Ruling 2026</span>
+            <span className="text-[var(--color-text)]">SEC/CFTC Ruling 2026</span>
           </nav>
 
           <div className="space-y-4">
@@ -342,18 +326,15 @@ export default function SECCFTCRulingGuide() {
               </span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl font-bold leading-tight" style={{ background: 'linear-gradient(135deg, #6366f1, #06b6d4)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight" style={{ background: 'linear-gradient(135deg, var(--color-primary), var(--color-secondary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>
               SEC/CFTC Digital Commodities Ruling 2026
             </h1>
 
-            <LastUpdated pathKey="/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026" />
-            <ReadingTime />
-            <AutoTOC />
-            <p className="text-lg text-[#8b949e] max-w-3xl">
+            <p className="text-lg text-[var(--color-text-secondary)] max-w-3xl">
               Complete guide to the historic March 17, 2026 SEC/CFTC joint ruling classifying 16 digital assets as commodities, explaining staking regulation, ETF implications, and the path to permanent law through the CLARITY Act.
             </p>
 
-            <div className="flex flex-wrap gap-4 text-sm text-[#8b949e]">
+            <div className="flex flex-wrap gap-4 text-sm text-[var(--color-text-secondary)]">
               <span>Updated April 10, 2026</span>
               <span>•</span>
               <span>14 min read</span>
@@ -378,86 +359,86 @@ export default function SECCFTCRulingGuide() {
         <article id="main-content" className="lg:col-span-2 space-y-8">
           {/* Section 1: What the Ruling Says */}
           <section id="what-ruling" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">1. What the Ruling Says</h2>
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">1. What the Ruling Says</h2>
+            <p className="text-[var(--color-text)] leading-relaxed">
               On March 17, 2026, the U.S. Securities and Exchange Commission (SEC) and the Commodity Futures Trading Commission (CFTC) jointly issued a 68-page interpretive guidance document that fundamentally reshaped U.S. cryptocurrency regulation. This document, issued under the Commodity Exchange Act, made one singular declaration: sixteen digital assets are commodities, not securities.
             </p>
         {/* editorial-voice */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-            <span style={{ fontSize: 18 }}>💡</span>
-            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+        <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-[10px] px-6 py-5 mt-8 mb-8">
+          <div className="flex items-center gap-2 mb-2.5">
+            <span className="text-lg">💡</span>
+            <strong className="text-[var(--color-primary-light)] text-[15px]">Why This Matters</strong>
           </div>
-          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
-            This is one of those topics where surface-level understanding is dangerous. We've seen traders lose significant capital from misconceptions covered in this guide.
+          <p className="text-sm text-[var(--color-text)] leading-relaxed italic m-0">
+            This is one of those topics where surface-level understanding is dangerous. We&apos;ve seen traders lose significant capital from misconceptions covered in this guide.
           </p>
         </div>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">Core Statement</h3>
-              <blockquote className="border-l-4 border-[#6366f1] pl-4 text-[#c9d1d9] italic">
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-6 space-y-4">
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">Core Statement</h3>
+              <blockquote className="border-l-4 border-[var(--color-primary)] pl-4 text-[var(--color-text)] italic">
                 "These 16 digital assets meet the definition of commodities under the Commodity Exchange Act. Staking rewards generated by network participants are not securities transactions and are not subject to SEC registration. This classification provides immediate clarity for spot exchange-traded products, institutional capital flows, and compliant network operation."
               </blockquote>
             </div>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--color-text)] leading-relaxed">
               This ruling represented a dramatic reversal from the SEC&apos;s Gensler-era enforcement approach (2021-2025), which treated many tokens as potential securities and pursued enforcement actions against major exchanges and platforms. SEC Chairman Paul S. Atkins, appointed by the Trump administration, framed the new approach as designed to "draw clear lines in clear terms"—replacing regulatory ambiguity with clarity.
             </p>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--color-text)] leading-relaxed">
               The ruling is interpretive guidance, meaning it interprets existing law rather than creating new law. However, its practical impact was transformative: it unlocked ETF approvals, enabled institutional capital inflows, and provided compliant pathways for DeFi and staking ecosystems. Within 3 weeks, spot ETF approvals for Solana, XRP, and Cardano had been granted by the SEC.
             </p>
           </section>
 
           {/* Section 2: The 16 Digital Commodities */}
           <section id="classified-assets" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">2. The 16 Digital Commodities</h2>
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">2. The 16 Digital Commodities</h2>
+            <p className="text-[var(--color-text)] leading-relaxed">
               The ruling classified the following 16 digital assets as commodities. Note that Bitcoin (BTC) and Ethereum (ETH) were already widely treated as commodities; this ruling provided explicit clarity for ETH and extended commodity classification to 14 previously unclear tokens.
             </p>
 
-            <div className="overflow-x-auto border border-[#30363d] rounded-lg">
+            <div className="overflow-x-auto border border-[var(--color-border)] rounded-lg">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b border-[#30363d] bg-[#161b22]">
-                    <th className="px-4 py-3 text-left font-semibold text-[#e6edf3]">Asset</th>
-                    <th className="px-4 py-3 text-left font-semibold text-[#e6edf3]">Ticker</th>
-                    <th className="px-4 py-3 text-left font-semibold text-[#e6edf3]">Category</th>
-                    <th className="px-4 py-3 text-left font-semibold text-[#e6edf3]">Previous Status</th>
+                  <tr className="border-b border-[var(--color-border)] bg-[var(--color-bg-card)]">
+                    <th className="px-4 py-3 text-left font-semibold text-[var(--color-text)]">Asset</th>
+                    <th className="px-4 py-3 text-left font-semibold text-[var(--color-text)]">Ticker</th>
+                    <th className="px-4 py-3 text-left font-semibold text-[var(--color-text)]">Category</th>
+                    <th className="px-4 py-3 text-left font-semibold text-[var(--color-text)]">Previous Status</th>
                   </tr>
                 </thead>
                 <tbody>
                   {classifiedAssets.map((asset, idx) => (
-                    <tr key={idx} className="border-b border-[#30363d] hover:bg-[#161b22] transition-colors">
-                      <td className="px-4 py-3 font-semibold text-[#e6edf3]">{asset.asset}</td>
-                      <td className="px-4 py-3 font-mono font-bold text-[#58a6ff]">{asset.ticker}</td>
-                      <td className="px-4 py-3 text-[#8b949e] text-sm">{asset.category}</td>
-                      <td className="px-4 py-3 text-[#c9d1d9] text-sm">{asset.previousStatus}</td>
+                    <tr key={idx} className="border-b border-[var(--color-border)] hover:bg-[var(--color-bg-card)] transition-colors">
+                      <td className="px-4 py-3 font-semibold text-[var(--color-text)]">{asset.asset}</td>
+                      <td className="px-4 py-3 font-mono font-bold text-[var(--color-primary-light)]">{asset.ticker}</td>
+                      <td className="px-4 py-3 text-[var(--color-text-secondary)] text-sm">{asset.category}</td>
+                      <td className="px-4 py-3 text-[var(--color-text)] text-sm">{asset.previousStatus}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 space-y-2">
-              <p className="text-sm text-[#8b949e]">
-                <span className="font-semibold text-[#e6edf3]">Key observations:</span>
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-4 space-y-2">
+              <p className="text-sm text-[var(--color-text-secondary)]">
+                <span className="font-semibold text-[var(--color-text)]">Key observations:</span>
               </p>
-              <ul className="space-y-2 text-sm text-[#c9d1d9]">
+              <ul className="space-y-2 text-sm text-[var(--color-text)]">
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--color-primary-light)]">•</span>
                   <span>
                     <strong>Smart Contract Platforms (8 assets):</strong> ETH, SOL, ADA, AVAX, DOT, XTZ, APT, ALGO dominate the list, reflecting how smart contract functionality doesn&apos;t trigger securities classification.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--color-primary-light)]">•</span>
                   <span>
                     <strong>Payment Tokens (5 assets):</strong> XRP, LTC, DOGE, BCH, XLM now have unambiguous commodity status, ending years of regulatory uncertainty around payment-focused tokens.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">•</span>
+                  <span className="text-[var(--color-primary-light)]">•</span>
                   <span>
                     <strong>Specialized Networks (3 assets):</strong> LINK (oracle), HBAR (enterprise), SHIB (meme) all received commodity classification despite different use cases.
                   </span>
@@ -468,93 +449,93 @@ export default function SECCFTCRulingGuide() {
 
           {/* Section 3: SEC vs CFTC Jurisdiction Split */}
           <section id="jurisdiction" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">3. SEC vs CFTC Jurisdiction: The Split</h2>
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">3. SEC vs CFTC Jurisdiction: The Split</h2>
+            <p className="text-[var(--color-text)] leading-relaxed">
               A critical element of the ruling was clarifying which regulatory agency oversees what. The SEC and CFTC established a clear jurisdictional split that will persist unless the CLARITY Act modifies it.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-                <h3 className="text-lg font-semibold text-[#e6edf3] flex items-center gap-2">
+              <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-6 space-y-4">
+                <h3 className="text-lg font-semibold text-[var(--color-text)] flex items-center gap-2">
                   <span className="text-xl">🔐</span> SEC Jurisdiction
                 </h3>
-                <ul className="space-y-3 text-[#c9d1d9] text-sm">
+                <ul className="space-y-3 text-[var(--color-text)] text-sm">
                   <li className="flex gap-2">
-                    <span className="text-[#6366f1]">→</span>
+                    <span className="text-[var(--color-primary)]">→</span>
                     <span><strong>Securities tokens</strong> and equity-like offerings (still classified case-by-case using Howey test)</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#6366f1]">→</span>
+                    <span className="text-[var(--color-primary)]">→</span>
                     <span><strong>Securities exchanges</strong> and brokers offering commodity tokens</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#6366f1]">→</span>
+                    <span className="text-[var(--color-primary)]">→</span>
                     <span><strong>Custody and safeguarding</strong> of commodity token assets in ETFs and funds</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#6366f1]">→</span>
+                    <span className="text-[var(--color-primary)]">→</span>
                     <span><strong>Investment advisers</strong> managing crypto portfolios</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#6366f1]">→</span>
+                    <span className="text-[var(--color-primary)]">→</span>
                     <span><strong>Fraud enforcement</strong> across all asset types</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-                <h3 className="text-lg font-semibold text-[#e6edf3] flex items-center gap-2">
+              <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-6 space-y-4">
+                <h3 className="text-lg font-semibold text-[var(--color-text)] flex items-center gap-2">
                   <span className="text-xl">⚙️</span> CFTC Jurisdiction
                 </h3>
-                <ul className="space-y-3 text-[#c9d1d9] text-sm">
+                <ul className="space-y-3 text-[var(--color-text)] text-sm">
                   <li className="flex gap-2">
-                    <span className="text-[#06b6d4]">→</span>
+                    <span className="text-[var(--color-secondary)]">→</span>
                     <span><strong>Commodity trading</strong> of the 16 digital commodities</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#06b6d4]">→</span>
+                    <span className="text-[var(--color-secondary)]">→</span>
                     <span><strong>Futures and derivatives</strong> on commodity tokens</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#06b6d4]">→</span>
+                    <span className="text-[var(--color-secondary)]">→</span>
                     <span><strong>Spot commodity exchanges</strong> (decentralized and centralized)</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#06b6d4]">→</span>
+                    <span className="text-[var(--color-secondary)]">→</span>
                     <span><strong>Commodity trading advisers</strong> and floor traders</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#06b6d4]">→</span>
+                    <span className="text-[var(--color-secondary)]">→</span>
                     <span><strong>Market manipulation</strong> and spoofing prevention</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <p className="text-[#c9d1d9] leading-relaxed text-sm italic text-[#8b949e] mt-4">
+            <p className="text-[var(--color-text)] leading-relaxed text-sm italic text-[var(--color-text-secondary)] mt-4">
               Note: This jurisdictional split is functional but not perfectly clear in all edge cases. The CLARITY Act seeks to codify this division more precisely and create clearer boundaries for multi-asset platforms.
             </p>
           </section>
 
           {/* Section 4: Impact on ETFs */}
           <section id="etf-impact" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">4. Impact on ETF Approvals</h2>
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">4. Impact on ETF Approvals</h2>
+            <p className="text-[var(--color-text)] leading-relaxed">
               The ruling&apos;s most immediate and visible impact was on ETF approvals. By establishing clear commodity status and explicitly permitting staking yields, the ruling unlocked a wave of spot exchange-traded product approvals across the crypto ecosystem.
             </p>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">ETF Approval Timeline Acceleration</h3>
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-6 space-y-4">
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">ETF Approval Timeline Acceleration</h3>
               <div className="space-y-3">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#6366f1] text-white text-sm font-bold">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-primary)] text-white text-sm font-bold">
                       ↓
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-[#e6edf3]">Pre-Ruling: 240-Day Approval Timeline</h4>
-                    <p className="text-[#8b949e] text-sm mt-1">
+                    <h4 className="font-semibold text-[var(--color-text)]">Pre-Ruling: 240-Day Approval Timeline</h4>
+                    <p className="text-[var(--color-text-secondary)] text-sm mt-1">
                       Before March 2026, SEC ETF approvals required extensive legal review (240 days standard) due to regulatory ambiguity around digital asset classification.
                     </p>
                   </div>
@@ -562,13 +543,13 @@ export default function SECCFTCRulingGuide() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#22c55e] text-white text-sm font-bold">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-success)] text-white text-sm font-bold">
                       ✓
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-[#e6edf3]">Post-Ruling: 75-Day Approval Timeline</h4>
-                    <p className="text-[#8b949e] text-sm mt-1">
+                    <h4 className="font-semibold text-[var(--color-text)]">Post-Ruling: 75-Day Approval Timeline</h4>
+                    <p className="text-[var(--color-text-secondary)] text-sm mt-1">
                       After March 17, 2026, the ruling enabled a significantly faster 75-day review process because commodity classification removed legal ambiguity.
                     </p>
                   </div>
@@ -576,80 +557,80 @@ export default function SECCFTCRulingGuide() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0">
-                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#6366f1] text-white text-sm font-bold">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-primary)] text-white text-sm font-bold">
                       📈
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h4 className="font-semibold text-[#e6edf3]">Result: 90+ Pending Applications</h4>
-                    <p className="text-[#8b949e] text-sm mt-1">
+                    <h4 className="font-semibold text-[var(--color-text)]">Result: 90+ Pending Applications</h4>
+                    <p className="text-[var(--color-text-secondary)] text-sm mt-1">
                       As of April 2026, over 90 crypto ETF applications are pending with the SEC, representing potential approvals for all 16 classified commodities in spot, staking, and possibly yield-bearing formats.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Unlocked ETF Categories</h3>
-              <ul className="space-y-2 text-[#c9d1d9] text-sm">
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mt-4">Unlocked ETF Categories</h3>
+              <ul className="space-y-2 text-[var(--color-text)] text-sm">
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">✓</span>
+                  <span className="text-[var(--color-primary-light)]">✓</span>
                   <span><strong>Spot ETFs:</strong> Direct ownership of the underlying token (e.g., Solana spot ETFs, XRP spot ETFs)</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">✓</span>
+                  <span className="text-[var(--color-primary-light)]">✓</span>
                   <span><strong>Staking ETFs:</strong> Tokens staked in networks with yields passed through to shareholders (~7% for Solana)</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">✓</span>
+                  <span className="text-[var(--color-primary-light)]">✓</span>
                   <span><strong>Yield-bearing ETFs:</strong> Tokens delegated to DeFi protocols or liquid staking derivatives</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#58a6ff]">✓</span>
+                  <span className="text-[var(--color-primary-light)]">✓</span>
                   <span><strong>Thematic/Sector ETFs:</strong> Multi-asset funds tracking "smart contracts" or "layer-1 networks"</span>
                 </li>
               </ul>
             </div>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--color-text)] leading-relaxed">
               Within three weeks of the March 17 ruling, the SEC approved spot ETFs for Solana (16 distinct products by April 2026). XRP, Cardano, Chainlink, and Avalanche ETF applications are in accelerated review. This represents a fundamental shift: from 2024-2025 (Bitcoin and Ethereum only) to 2026+ (multi-asset crypto ETF ecosystem).
             </p>
           </section>
 
           {/* Section 5: Impact on Staking */}
           <section id="staking-impact" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">5. Impact on Staking and Yield</h2>
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">5. Impact on Staking and Yield</h2>
+            <p className="text-[var(--color-text)] leading-relaxed">
               The explicit clarification that staking rewards are not securities transactions was perhaps the most important regulatory breakthrough in the ruling. For years, the crypto ecosystem operated under uncertainty: would the SEC consider staking yields to be securities offerings?
             </p>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">What the Ruling Said About Staking</h3>
-              <blockquote className="border-l-4 border-[#22c55e] pl-4 text-[#c9d1d9] italic">
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-6 space-y-4">
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">What the Ruling Said About Staking</h3>
+              <blockquote className="border-l-4 border-[var(--color-success)] pl-4 text-[var(--color-text)] italic">
                 "Staking rewards earned by network participants in the operation of these digital commodity networks are not securities transactions. The provision of staking services by validators, exchanges, or custodians, and the receipt of rewards by network participants, does not trigger securities registration requirements."
               </blockquote>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Why This Matters</h3>
-              <ul className="space-y-3 text-[#c9d1d9] text-sm">
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mt-4">Why This Matters</h3>
+              <ul className="space-y-3 text-[var(--color-text)] text-sm">
                 <li className="flex gap-2">
-                  <span className="text-[#22c55e]">✓</span>
+                  <span className="text-[var(--color-success)]">✓</span>
                   <span>
                     <strong>ETF Issuers Can Now Stake:</strong> Solana ETFs, Ethereum ETFs, and others can stake their holdings and pass yields directly to shareholders without creating registration concerns.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#22c55e]">✓</span>
+                  <span className="text-[var(--color-success)]">✓</span>
                   <span>
                     <strong>Removes "Unregistered Securities" Risk:</strong> Staking services provided by exchanges, custodians, and DeFi protocols are now compliant activities.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#22c55e]">✓</span>
+                  <span className="text-[var(--color-success)]">✓</span>
                   <span>
                     <strong>Clarifies Tax Treatment:</strong> Staking rewards are taxed as ordinary income (not securities gains), simplifying tax reporting.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#22c55e]">✓</span>
+                  <span className="text-[var(--color-success)]">✓</span>
                   <span>
                     <strong>Enables Liquid Staking:</strong> Protocols like Lido (liquid Ethereum staking) and Marinade Finance (liquid Solana staking) now have regulatory clarity to scale.
                   </span>
@@ -657,41 +638,41 @@ export default function SECCFTCRulingGuide() {
               </ul>
             </div>
 
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <p className="text-[var(--color-text)] leading-relaxed">
               Current staking yields for the 16 classified commodities range from 4-8% annually (Ethereum ~3.5%, Solana ~7%, Cardano ~4%). With the ruling&apos;s clarification, institutional capital can now flow into staking-enabled ETFs, significantly amplifying staking participation and network security.
             </p>
           </section>
 
           {/* Section 6: Impact on DeFi */}
           <section id="defi-impact" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">6. Impact on DeFi Protocols</h2>
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">6. Impact on DeFi Protocols</h2>
+            <p className="text-[var(--color-text)] leading-relaxed">
               Beyond ETFs and staking, the ruling had significant implications for decentralized finance ecosystems, particularly for protocols built on the 16 classified commodity networks.
             </p>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">DeFi Regulatory Clarity</h3>
-              <ul className="space-y-3 text-[#c9d1d9] text-sm">
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-6 space-y-4">
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">DeFi Regulatory Clarity</h3>
+              <ul className="space-y-3 text-[var(--color-text)] text-sm">
                 <li className="flex gap-2">
-                  <span className="text-[#06b6d4]">→</span>
+                  <span className="text-[var(--color-secondary)]">→</span>
                   <span>
                     <strong>Yield Farming on Commodity Networks:</strong> Protocols on Solana, Ethereum, Cardano, etc. can now confidently offer yield farming without regulatory uncertainty around whether yields trigger securities registration.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#06b6d4]">→</span>
+                  <span className="text-[var(--color-secondary)]">→</span>
                   <span>
                     <strong>Governance Tokens May Still Be Securities:</strong> The ruling clarifies the underlying assets (ETH, SOL, etc.) are commodities, but governance tokens issued by DeFi protocols may still be classified as securities case-by-case.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#06b6d4]">→</span>
+                  <span className="text-[var(--color-secondary)]">→</span>
                   <span>
                     <strong>Institutional DeFi Participation:</strong> With commodity clarity, traditional financial institutions can now participate in DeFi protocols without regulatory ambiguity about the underlying assets.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#06b6d4]">→</span>
+                  <span className="text-[var(--color-secondary)]">→</span>
                   <span>
                     <strong>Compliance Infrastructure Growth:</strong> DeFi platforms are investing in enhanced compliance tools (KYC, sanctions screening) to serve institutional users confidently.
                   </span>
@@ -702,42 +683,42 @@ export default function SECCFTCRulingGuide() {
 
           {/* Section 7: The CLARITY Act */}
           <section id="clarity-act" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">7. The CLARITY Act: Making It Permanent</h2>
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">7. The CLARITY Act: Making It Permanent</h2>
+            <p className="text-[var(--color-text)] leading-relaxed">
               While the March 17, 2026 ruling was transformative, it is not permanent law. It is interpretive guidance under existing law, meaning a future SEC administration could theoretically reverse or reinterpret it. To provide long-term stability, Congress is advancing the CLARITY Act.
             </p>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">What is the CLARITY Act?</h3>
-              <p className="text-[#c9d1d9]">
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-6 space-y-4">
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">What is the CLARITY Act?</h3>
+              <p className="text-[var(--color-text)]">
                 The <strong>Crypto and Digital Asset Regulation in the US (CLARITY) Act</strong> is proposed legislation that would codify the SEC/CFTC ruling into permanent statutory law. It would:
               </p>
 
-              <ul className="space-y-3 text-[#c9d1d9] text-sm mt-4">
+              <ul className="space-y-3 text-[var(--color-text)] text-sm mt-4">
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1]">1.</span>
+                  <span className="text-[var(--color-primary)]">1.</span>
                   <span><strong>Define digital assets in statute:</strong> Replace regulatory ambiguity with clear statutory definitions of "digital commodities" and "digital securities."</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1]">2.</span>
+                  <span className="text-[var(--color-primary)]">2.</span>
                   <span><strong>Establish permanent jurisdiction:</strong> Grant the CFTC exclusive authority over digital commodity tokens and the SEC over digital security tokens in statute (not just guidance).</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1]">3.</span>
+                  <span className="text-[var(--color-primary)]">3.</span>
                   <span><strong>Protect staking:</strong> Create a statutory staking framework ensuring staking rewards are never classified as securities.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1]">4.</span>
+                  <span className="text-[var(--color-primary)]">4.</span>
                   <span><strong>Codify ETF timeline:</strong> Make the 75-day ETF approval timeline statutory law.</span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#6366f1]">5.</span>
+                  <span className="text-[var(--color-primary)]">5.</span>
                   <span><strong>Create clear compliance paths:</strong> Provide safe harbors for decentralized protocols, DeFi platforms, and staking services to operate compliantly.</span>
                 </li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Legislative Status</h3>
-              <p className="text-[#c9d1d9] text-sm">
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mt-4">Legislative Status</h3>
+              <p className="text-[var(--color-text)] text-sm">
                 The CLARITY Act passed the House in 2025 and is in Senate consideration. Passage would provide long-term certainty and make the March 2026 ruling irreversible without Congressional action. Without passage, the ruling remains subject to regulatory reversal.
               </p>
             </div>
@@ -745,120 +726,120 @@ export default function SECCFTCRulingGuide() {
 
           {/* Section 8: What's NOT Covered */}
           <section id="not-covered" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">8. What's NOT Covered by the Ruling</h2>
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">8. What's NOT Covered by the Ruling</h2>
+            <p className="text-[var(--color-text)] leading-relaxed">
               Understanding what the ruling does NOT address is equally important for compliance and risk management.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 space-y-3">
-                <h3 className="text-sm font-semibold text-[#e6edf3]">Still Potential Securities</h3>
-                <ul className="space-y-2 text-[#c9d1d9] text-sm">
+              <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-4 space-y-3">
+                <h3 className="text-sm font-semibold text-[var(--color-text)]">Still Potential Securities</h3>
+                <ul className="space-y-2 text-[var(--color-text)] text-sm">
                   <li className="flex gap-2">
-                    <span className="text-[#ff6b6b]">•</span>
+                    <span className="text-[var(--color-danger)]">•</span>
                     <span>Governance tokens with voting/profit-sharing rights</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#ff6b6b]">•</span>
+                    <span className="text-[var(--color-danger)]">•</span>
                     <span>New ICO tokens not yet classified</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#ff6b6b]">•</span>
+                    <span className="text-[var(--color-danger)]">•</span>
                     <span>Wrapped or derivative tokens of unclear status</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#ff6b6b]">•</span>
+                    <span className="text-[var(--color-danger)]">•</span>
                     <span>Stablecoins (covered under separate rules)</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 space-y-3">
-                <h3 className="text-sm font-semibold text-[#e6edf3]">Still Regulated Activities</h3>
-                <ul className="space-y-2 text-[#c9d1d9] text-sm">
+              <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-4 space-y-3">
+                <h3 className="text-sm font-semibold text-[var(--color-text)]">Still Regulated Activities</h3>
+                <ul className="space-y-2 text-[var(--color-text)] text-sm">
                   <li className="flex gap-2">
-                    <span className="text-[#ff6b6b]">•</span>
+                    <span className="text-[var(--color-danger)]">•</span>
                     <span>AML/KYC requirements (unchanged)</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#ff6b6b]">•</span>
+                    <span className="text-[var(--color-danger)]">•</span>
                     <span>Sanctions and OFAC compliance</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#ff6b6b]">•</span>
+                    <span className="text-[var(--color-danger)]">•</span>
                     <span>Fraud, market manipulation, insider trading</span>
                   </li>
                   <li className="flex gap-2">
-                    <span className="text-[#ff6b6b]">•</span>
+                    <span className="text-[var(--color-danger)]">•</span>
                     <span>State money transmission laws</span>
                   </li>
                 </ul>
               </div>
             </div>
 
-            <p className="text-[#c9d1d9] leading-relaxed text-sm italic text-[#8b949e] mt-4">
+            <p className="text-[var(--color-text)] leading-relaxed text-sm italic text-[var(--color-text-secondary)] mt-4">
               The ruling addresses classification and certain compliance areas, but does not eliminate the need for robust AML, sanctions screening, and fraud prevention measures. Regulatory obligations exist independently of asset classification.
             </p>
           </section>
 
           {/* Section 9: What This Means for Investors */}
           <section id="investor-impact" className="space-y-4">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">9. What This Means for Investors</h2>
-            <p className="text-[#c9d1d9] leading-relaxed">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">9. What This Means for Investors</h2>
+            <p className="text-[var(--color-text)] leading-relaxed">
               For individual and institutional investors, the ruling created several tangible opportunities and considerations.
             </p>
 
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 space-y-4">
-              <h3 className="text-lg font-semibold text-[#e6edf3]">Immediate Opportunities</h3>
-              <ul className="space-y-3 text-[#c9d1d9] text-sm">
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-6 space-y-4">
+              <h3 className="text-lg font-semibold text-[var(--color-text)]">Immediate Opportunities</h3>
+              <ul className="space-y-3 text-[var(--color-text)] text-sm">
                 <li className="flex gap-2">
-                  <span className="text-[#22c55e]">✓</span>
+                  <span className="text-[var(--color-success)]">✓</span>
                   <span>
                     <strong>Spot ETF Access:</strong> Buy regulated crypto exposure through traditional brokerage accounts (stocks, retirement accounts).
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#22c55e]">✓</span>
+                  <span className="text-[var(--color-success)]">✓</span>
                   <span>
                     <strong>Staking Yields:</strong> Earn 4-8% annually through staking-enabled ETFs without self-custody or technical knowledge.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#22c55e]">✓</span>
+                  <span className="text-[var(--color-success)]">✓</span>
                   <span>
                     <strong>Institutional Confidence:</strong> Major institutions (pension funds, endowments, corporations) are now entering the 16-commodity space.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#22c55e]">✓</span>
+                  <span className="text-[var(--color-success)]">✓</span>
                   <span>
                     <strong>Regulatory Clarity:</strong> Reduced regulatory reversal risk and enforcement action risk for compliant platforms and investors.
                   </span>
                 </li>
               </ul>
 
-              <h3 className="text-lg font-semibold text-[#e6edf3] mt-4">Risks and Considerations</h3>
-              <ul className="space-y-3 text-[#c9d1d9] text-sm">
+              <h3 className="text-lg font-semibold text-[var(--color-text)] mt-4">Risks and Considerations</h3>
+              <ul className="space-y-3 text-[var(--color-text)] text-sm">
                 <li className="flex gap-2">
-                  <span className="text-[#ff6b6b]">⚠</span>
+                  <span className="text-[var(--color-danger)]">⚠</span>
                   <span>
                     <strong>No Permanent Law Yet:</strong> The ruling could be reversed if the CLARITY Act fails. Monitor Congressional activity.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#ff6b6b]">⚠</span>
+                  <span className="text-[var(--color-danger)]">⚠</span>
                   <span>
                     <strong>Price Volatility:</strong> Commodity classification doesn't eliminate price risk. Crypto volatility remains high.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#ff6b6b]">⚠</span>
+                  <span className="text-[var(--color-danger)]">⚠</span>
                   <span>
                     <strong>ETF Fee Waivers Expire:</strong> Many new ETF issuers are offering temporary fee waivers (0.19-0.25%). Monitor expiration dates.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <span className="text-[#ff6b6b]">⚠</span>
+                  <span className="text-[var(--color-danger)]">⚠</span>
                   <span>
                     <strong>Governance Tokens May Be Securities:</strong> Many DeFi governance tokens are NOT covered. Assume they are unregistered securities unless explicitly cleared.
                   </span>
@@ -868,15 +849,15 @@ export default function SECCFTCRulingGuide() {
           </section>
 
           {/* FAQ Section */}
-          <section id="faq" className="space-y-4 mt-8 pt-8 border-t border-[#30363d]">
-            <h2 className="text-3xl font-bold text-[#e6edf3]">Frequently Asked Questions</h2>
+          <section id="faq" className="space-y-4 mt-8 pt-8 border-t border-[var(--color-border)]">
+            <h2 className="text-3xl font-bold text-[var(--color-text)]">Frequently Asked Questions</h2>
             <FAQAccordion faqs={faqs} />
           </section>
 
           {/* Disclaimer */}
-          <section className="mt-8 pt-8 border-t border-[#30363d]">
-            <h2 className="text-lg font-bold text-[#e6edf3]">Disclaimer</h2>
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 text-sm text-[#8b949e] space-y-3">
+          <section className="mt-8 pt-8 border-t border-[var(--color-border)]">
+            <h2 className="text-lg font-bold text-[var(--color-text)]">Disclaimer</h2>
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-4 text-sm text-[var(--color-text-secondary)] space-y-3">
               <p>
                 This guide is for educational purposes only and does not constitute legal, financial, investment, or tax advice. The March 17, 2026 SEC/CFTC ruling is interpretive guidance and could be reversed or modified by future regulatory action or Congressional legislation.
               </p>
@@ -893,56 +874,56 @@ export default function SECCFTCRulingGuide() {
           </section>
 
           {/* Related Resources */}
-          <section id="related-resources" className="space-y-4 mt-8 pt-8 border-t border-[#30363d]">
-            <h2 className="text-lg font-bold text-[#e6edf3]">Related Resources</h2>
+          <section id="related-resources" className="space-y-4 mt-8 pt-8 border-t border-[var(--color-border)]">
+            <h2 className="text-lg font-bold text-[var(--color-text)]">Related Resources</h2>
             <div className="space-y-3">
-              <Link href="#"
-                className="block p-4 bg-[#161b22] border border-[#30363d] rounded-lg hover:border-[#58a6ff] transition-colors group"
+              <Link href="/learn/solana-etf-spot-funds-staking-guide-2026"
+                className="block p-4 bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg hover:border-[var(--color-primary-light)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]"
               >
-                <p className="font-semibold text-[#58a6ff] group-hover:underline">
+                <p className="font-semibold text-[var(--color-primary-light)] group-hover:underline">
                   Solana ETF Spot Funds & Staking Guide
                 </p>
-                <p className="text-[#8b949e] text-sm mt-1">
+                <p className="text-[var(--color-text-secondary)] text-sm mt-1">
                   16 SEC-approved SOL spot ETFs, fee comparisons, and staking yields.
                 </p>
               </Link>
 
-              <Link href="#"
-              >
-                <p className="font-semibold text-[#58a6ff] group-hover:underline">
+              <Link href="/learn/altcoin-etf-guide-2026"
+                className="block p-4 bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg hover:border-[var(--color-primary-light)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]">
+                <p className="font-semibold text-[var(--color-primary-light)] group-hover:underline">
                   Complete Crypto ETF Guide 2026
                 </p>
-                <p className="text-[#8b949e] text-sm mt-1">
+                <p className="text-[var(--color-text-secondary)] text-sm mt-1">
                   Compare spot ETFs across Bitcoin, Ethereum, Solana, and 13 other commodities.
                 </p>
               </Link>
 
-              <Link href="#"
-              >
-                <p className="font-semibold text-[#58a6ff] group-hover:underline">
+              <Link href="/learn/advanced-staking-strategies-guide-2026"
+                className="block p-4 bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg hover:border-[var(--color-primary-light)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]">
+                <p className="font-semibold text-[var(--color-primary-light)] group-hover:underline">
                   Crypto Staking Guide 2026
                 </p>
-                <p className="text-[#8b949e] text-sm mt-1">
+                <p className="text-[var(--color-text-secondary)] text-sm mt-1">
                   Earn yields through staking: strategies, risks, and best practices post-March ruling.
                 </p>
               </Link>
 
-              <Link href="#"
-              >
-                <p className="font-semibold text-[#58a6ff] group-hover:underline">
+              <Link href="/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026#clarity-act"
+                className="block p-4 bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg hover:border-[var(--color-primary-light)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]">
+                <p className="font-semibold text-[var(--color-primary-light)] group-hover:underline">
                   CLARITY Act & Stablecoin Regulation Guide
                 </p>
-                <p className="text-[#8b949e] text-sm mt-1">
+                <p className="text-[var(--color-text-secondary)] text-sm mt-1">
                   What permanent statutory law means for crypto and how CLARITY codifies the ruling.
                 </p>
               </Link>
 
-              <Link href="#"
-              >
-                <p className="font-semibold text-[#58a6ff] group-hover:underline">
+              <Link href="/learn/mica-eu-crypto-regulation-guide-2026"
+                className="block p-4 bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg hover:border-[var(--color-primary-light)] transition-colors group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]">
+                <p className="font-semibold text-[var(--color-primary-light)] group-hover:underline">
                   MiCA EU Crypto Regulation Compliance Guide
                 </p>
-                <p className="text-[#8b949e] text-sm mt-1">
+                <p className="text-[var(--color-text-secondary)] text-sm mt-1">
                   Compare U.S. SEC/CFTC approach to EU's Markets in Crypto Assets (MiCA) regulation.
                 </p>
               </Link>
@@ -950,28 +931,22 @@ export default function SECCFTCRulingGuide() {
           </section>
         
         {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+        <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg px-5 py-4 mt-10 mb-5">
+          <p className="text-[13px] text-[var(--color-text-secondary)] leading-relaxed m-0">
+            <strong className="text-[var(--color-primary-light)]">Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <Link href="/about" className="text-[var(--color-primary-light)] hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] rounded">our team</Link>.
           </p>
         </div>
       
-        {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
-          </p>
-        </div>
+
       </article>
 
         {/* Sidebar - TOC */}
         <aside className="lg:col-span-1">
           <div className="sticky top-[120px] space-y-6">
             {/* Table of Contents */}
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-4">
-              <h3 className="font-bold text-[#e6edf3] mb-4">Table of Contents</h3>
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-4">
+              <h3 className="font-bold text-[var(--color-text)] mb-4">Table of Contents</h3>
               <nav className="space-y-2 text-sm">
                 {[
                   { id: 'what-ruling', label: 'What the Ruling Says' },
@@ -987,7 +962,8 @@ export default function SECCFTCRulingGuide() {
                 ].map((item) => (
                   <a
                     key={item.id}
-                    className="block px-3 py-1 text-[#8b949e] hover:text-[#58a6ff] transition-colors rounded hover:bg-[#0d1117]"
+                    href={`#${item.id}`}
+                    className="block px-3 py-1 text-[var(--color-text-secondary)] hover:text-[var(--color-primary-light)] transition-colors rounded hover:bg-[var(--color-bg)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]"
                   >
                     {item.label}
                   </a>
@@ -996,69 +972,69 @@ export default function SECCFTCRulingGuide() {
             </div>
 
             {/* Key Facts */}
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 space-y-3">
-              <h3 className="font-bold text-[#e6edf3]">Key Facts</h3>
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-4 space-y-3">
+              <h3 className="font-bold text-[var(--color-text)]">Key Facts</h3>
               <div className="space-y-3 text-sm">
                 <div>
-                  <p className="text-[#8b949e]">Ruling Date</p>
-                  <p className="text-lg font-bold text-[#22c55e]">March 17, 2026</p>
+                  <p className="text-[var(--color-text-secondary)]">Ruling Date</p>
+                  <p className="text-lg font-bold text-[var(--color-success)]">March 17, 2026</p>
                 </div>
                 <div>
-                  <p className="text-[#8b949e]">Digital Commodities</p>
-                  <p className="text-lg font-bold text-[#22c55e]">16 Assets</p>
+                  <p className="text-[var(--color-text-secondary)]">Digital Commodities</p>
+                  <p className="text-lg font-bold text-[var(--color-success)]">16 Assets</p>
                 </div>
                 <div>
-                  <p className="text-[#8b949e]">Document Length</p>
-                  <p className="text-lg font-bold text-[#22c55e]">68 Pages</p>
+                  <p className="text-[var(--color-text-secondary)]">Document Length</p>
+                  <p className="text-lg font-bold text-[var(--color-success)]">68 Pages</p>
                 </div>
                 <div>
-                  <p className="text-[#8b949e]">ETF Approval Timeline</p>
-                  <p className="text-lg font-bold text-[#22c55e]">75 Days</p>
+                  <p className="text-[var(--color-text-secondary)]">ETF Approval Timeline</p>
+                  <p className="text-lg font-bold text-[var(--color-success)]">75 Days</p>
                 </div>
                 <div>
-                  <p className="text-[#8b949e]">Pending ETF Apps</p>
-                  <p className="text-lg font-bold text-[#22c55e]">90+</p>
+                  <p className="text-[var(--color-text-secondary)]">Pending ETF Apps</p>
+                  <p className="text-lg font-bold text-[var(--color-success)]">90+</p>
                 </div>
               </div>
             </div>
 
             {/* The 16 Assets */}
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 space-y-3">
-              <h3 className="font-bold text-[#e6edf3]">The 16 Commodities</h3>
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-4 space-y-3">
+              <h3 className="font-bold text-[var(--color-text)]">The 16 Commodities</h3>
               <div className="space-y-2 text-xs">
-                <div className="font-mono text-[#58a6ff]">
+                <div className="font-mono text-[var(--color-primary-light)]">
                   ETH, SOL, XRP, ADA, LINK, AVAX, DOT, HBAR, LTC, DOGE, SHIB, XTZ, BCH, APT, XLM, ALGO
                 </div>
               </div>
             </div>
 
             {/* Regulatory Status */}
-            <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-4 space-y-3">
-              <h3 className="font-bold text-[#e6edf3]">Regulatory Status</h3>
+            <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-lg p-4 space-y-3">
+              <h3 className="font-bold text-[var(--color-text)]">Regulatory Status</h3>
               <div className="space-y-2 text-sm">
                 <div>
-                  <p className="text-[#8b949e]">Ruling Type</p>
-                  <p className="font-semibold text-[#c9d1d9]">Interpretive Guidance</p>
+                  <p className="text-[var(--color-text-secondary)]">Ruling Type</p>
+                  <p className="font-semibold text-[var(--color-text)]">Interpretive Guidance</p>
                 </div>
                 <div>
-                  <p className="text-[#8b949e]">Permanent Law?</p>
-                  <p className="font-semibold text-[#ff6b6b]">Not Yet</p>
+                  <p className="text-[var(--color-text-secondary)]">Permanent Law?</p>
+                  <p className="font-semibold text-[var(--color-danger)]">Not Yet</p>
                 </div>
                 <div>
-                  <p className="text-[#8b949e]">CLARITY Act Status</p>
-                  <p className="font-semibold text-[#22c55e]">In Senate</p>
+                  <p className="text-[var(--color-text-secondary)]">CLARITY Act Status</p>
+                  <p className="font-semibold text-[var(--color-success)]">In Senate</p>
                 </div>
               </div>
             </div>
 
             {/* CTA */}
-            <div className="bg-gradient-to-br from-[#6366f1] to-[#06b6d4] rounded-lg p-4 text-white">
+            <div className="bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-secondary)] rounded-lg p-4 text-white">
               <p className="text-sm font-semibold mb-2">Want institutional clarity?</p>
               <p className="text-xs mb-4">
                 Monitor CLARITY Act progress for permanent statutory law.
               </p>
               <a
-                className="inline-block px-3 py-2 bg-white text-[#6366f1] rounded font-semibold text-xs hover:bg-gray-100 transition-colors"
+                className="inline-block px-3 py-2 bg-white text-[var(--color-primary)] rounded font-semibold text-xs hover:bg-gray-100 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
               >
                 Learn About CLARITY
               </a>
@@ -1068,71 +1044,32 @@ export default function SECCFTCRulingGuide() {
       </div>
 
       {/* Footer */}
-      <footer className="border-t border-[#30363d] bg-[#0d1117] mt-12">
-        <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8 text-center text-sm text-[#8b949e]">
+      <footer className="border-t border-[var(--color-border)] bg-[var(--color-bg)] mt-12">
+        <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8 text-center text-sm text-[var(--color-text-secondary)]">
           <p>
             © 2026 degen0x. All rights reserved. This content is for educational purposes only.
           </p>
         </div>
       </footer>
-          <div style={{
-        marginTop: "32px",
-        padding: "24px",
-        backgroundColor: "#111827",
-        borderRadius: "12px",
-        border: "1px solid #374151"
-      }}>
-        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
-          <Link href="/learn" style={{
-            padding: "12px 16px",
-            backgroundColor: "#1f2937",
-            borderRadius: "8px",
-            color: "#60a5fa",
-            textDecoration: "none",
-            border: "1px solid #374151",
-            display: "block",
-            textAlign: "center",
-            transition: "all 0.2s"
-          }}>
+          <div className="mt-8 p-6 bg-[var(--color-bg-card)] rounded-xl border border-[var(--color-border)]">
+        <h3 className="mb-4 text-[var(--color-text)]">Explore More</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <Link href="/learn" className="block py-3 px-4 bg-[var(--color-bg-card)] rounded-lg text-[var(--color-primary-light)] no-underline border border-[var(--color-border)] text-center transition-all hover:border-[var(--color-primary-light)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]">
             All Learning Guides
           </Link>
-          <Link href="/tools" style={{
-            padding: "12px 16px",
-            backgroundColor: "#1f2937",
-            borderRadius: "8px",
-            color: "#60a5fa",
-            textDecoration: "none",
-            border: "1px solid #374151",
-            display: "block",
-            textAlign: "center",
-            transition: "all 0.2s"
-          }}>
+          <Link href="/tools" className="block py-3 px-4 bg-[var(--color-bg-card)] rounded-lg text-[var(--color-primary-light)] no-underline border border-[var(--color-border)] text-center transition-all hover:border-[var(--color-primary-light)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]">
             Crypto Tools
           </Link>
-          <Link href="/compare" style={{
-            padding: "12px 16px",
-            backgroundColor: "#1f2937",
-            borderRadius: "8px",
-            color: "#60a5fa",
-            textDecoration: "none",
-            border: "1px solid #374151",
-            display: "block",
-            textAlign: "center",
-            transition: "all 0.2s"
-          }}>
+          <Link href="/compare" className="block py-3 px-4 bg-[var(--color-bg-card)] rounded-lg text-[var(--color-primary-light)] no-underline border border-[var(--color-border)] text-center transition-all hover:border-[var(--color-primary-light)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]">
             Compare Projects
           </Link>
         </div>
       </div>
     
-        <nav style={{ marginTop: "2rem", padding: "1rem", borderTop: "1px solid #30363d", fontSize: "14px" }}>
-          <span style={{ color: "#8b949e" }}>Related: </span>
-          <a href="/learn/defi-yield-aggregators-guide-2026" style={{ color: "#fb923c", marginRight: "1rem" }}>Defi Yield Aggregators Guide 2026</a>
+        <nav className="mt-8 p-4 border-t border-[var(--color-border)] text-sm">
+          <span className="text-[var(--color-text-secondary)]">Related: </span>
+          <Link href="/learn/defi-yield-aggregators-guide-2026" className="text-[var(--color-accent)] mr-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] rounded">Defi Yield Aggregators Guide 2026</Link>
         </nav>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "SEC/CFTC Crypto Commodities Ruling March 2026 \u2014 Digital", "description": "Complete guide to the March 17, 2026 SEC/CFTC joint ruling classifying 16 digital commodities including ETH, SOL, XRP, and more. Learn how the 68-page", "url": "https://degen0x.com/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <RelatedContent category="learn" currentSlug="/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026" />
-<AuthoritySources url="/learn/sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026" />
 </main>
   );
 }
