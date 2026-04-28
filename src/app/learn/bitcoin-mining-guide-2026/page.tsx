@@ -1,13 +1,6 @@
 import { Metadata } from 'next';
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
 import Link from 'next/link';
-import AutoTOC from '@/components/AutoTOC';
-import ReadingTime from '@/components/ReadingTime';
-import LastUpdated from '@/components/LastUpdated';
-
-import ArticleSchema from "@/components/ArticleSchema";
-
-import AuthoritySources from "@/components/AuthoritySources";
 
 export const metadata: Metadata = {
   title: "Bitcoin Mining Guide 2026: Hardware, Costs & Profitability",
@@ -144,22 +137,14 @@ export default function BitcoinMiningGuide() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-      <ArticleSchema
-        headline="Bitcoin Mining Guide 2026: Hardware, Costs & Profitability"
-        description="Complete guide to Bitcoin mining in 2026. Compare ASIC miners, calculate profitability, understand electricity costs, and learn if mining BTC is still worth it."
-        url="https://degen0x.com/learn/bitcoin-mining-guide-2026"
-        datePublished="2024-06-01"
-        dateModified="2026-04-17"
-        section="Learn"
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <article
         style={{
-          background: '#0d1117',
-          color: '#e6edf3',
+          background: 'var(--background)',
+          color: 'var(--foreground)',
           minHeight: '100vh',
           padding: '40px 20px',
           fontFamily:
@@ -172,15 +157,15 @@ export default function BitcoinMiningGuide() {
             style={{
               fontSize: 14,
               marginBottom: 24,
-              color: '#8b949e',
+              color: 'var(--muted)',
             }}
     >
-            <Link href="/" style={{ color: '#58a6ff', textDecoration: 'none' }}>
+            <Link href="/" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}>
               Home
             </Link>
             {' > '}
             <Link href="#"
-              style={{ color: '#58a6ff', textDecoration: 'none' }}
+              className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
               Learn
             </Link>
@@ -198,8 +183,8 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 600,
                 marginRight: 8,
                 marginBottom: 16,
-                background: '#f7931a',
-                color: '#000',
+                background: 'var(--bitcoin)',
+                color: 'var(--background-strong)',
               }}
     >
               Bitcoin
@@ -213,8 +198,8 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 600,
                 marginRight: 8,
                 marginBottom: 16,
-                background: '#6366f1',
-                color: '#fff',
+                background: 'var(--accent-badge)',
+                color: 'var(--foreground-strong)',
               }}
     >
               Intermediate
@@ -228,7 +213,7 @@ export default function BitcoinMiningGuide() {
               fontWeight: 700,
               marginBottom: 16,
               lineHeight: 1.3,
-              background: 'linear-gradient(135deg, #f7931a, #f9d62c)',
+              background: 'linear-gradient(135deg, var(--bitcoin), var(--bitcoin-light))',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               backgroundClip: 'text',
@@ -237,13 +222,10 @@ export default function BitcoinMiningGuide() {
             Bitcoin Mining Guide 2026
           </h1>
 
-          <LastUpdated pathKey="/learn/bitcoin-mining-guide-2026" />
-          <ReadingTime />
-          <AutoTOC />
           <p
             style={{
               fontSize: 18,
-              color: '#8b949e',
+              color: 'var(--muted)',
               marginBottom: 32,
               lineHeight: 1.8,
             }}
@@ -256,83 +238,83 @@ export default function BitcoinMiningGuide() {
           {/* Table of Contents */}
           <div
             style={{
-              background: '#161b22',
-              border: '1px solid #30363d',
+              background: 'var(--card)',
+              border: '1px solid var(--border)',
               borderRadius: 12,
               padding: 20,
               marginBottom: 40,
             }}
     >
-            <h3 style={{ marginTop: 0, marginBottom: 16, color: '#e6edf3' }}>
+            <h3 style={{ marginTop: 0, marginBottom: 16, color: 'var(--foreground)' }}>
               Table of Contents
             </h3>
             <ul style={{ marginBottom: 0, paddingLeft: 20 }}>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Is Bitcoin Mining Still Profitable in 2026?
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   How Bitcoin Mining Works
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Mining Hardware: ASIC Comparison 2026
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Mining Pools vs Solo Mining
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Electricity Costs & Location Strategy
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Calculating Mining Profitability
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Setting Up Your Mining Operation
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Cloud Mining & Alternatives
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Environmental Impact & Sustainability
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Frequently Asked Questions
                 </Link>
@@ -351,7 +333,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Is Bitcoin Mining Still Profitable in 2026?
@@ -371,12 +353,12 @@ export default function BitcoinMiningGuide() {
               hardware, low electricity costs, and efficient operations.
             </p>
         {/* editorial-voice */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+        <div style={{ background: 'var(--card-alt)', border: '1px solid var(--border-alt)', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
             <span style={{ fontSize: 18 }}>💡</span>
-            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+            <strong style={{ color: 'var(--accent)', fontSize: 15 }}>Why This Matters</strong>
           </div>
-          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+          <p style={{ fontSize: 14, color: 'var(--foreground)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
             We wrote this guide because the existing explanations online are either too simplified or assume PhD-level knowledge. Neither serves most readers.
           </p>
         </div>
@@ -398,8 +380,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -443,7 +425,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               How Bitcoin Mining Works
@@ -479,8 +461,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -556,7 +538,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Mining Hardware: ASIC Comparison 2026
@@ -605,60 +587,60 @@ export default function BitcoinMiningGuide() {
                   <tr>
                     <th
                       style={{
-                        background: '#0d1117',
-                        border: '1px solid #30363d',
+                        background: 'var(--background)',
+                        border: '1px solid var(--border)',
                         padding: 12,
                         textAlign: 'left',
                         fontWeight: 600,
-                        color: '#e6edf3',
+                        color: 'var(--foreground)',
                       }}
     >
                       Model
                     </th>
                     <th
                       style={{
-                        background: '#0d1117',
-                        border: '1px solid #30363d',
+                        background: 'var(--background)',
+                        border: '1px solid var(--border)',
                         padding: 12,
                         textAlign: 'left',
                         fontWeight: 600,
-                        color: '#e6edf3',
+                        color: 'var(--foreground)',
                       }}
     >
                       Hash Rate
                     </th>
                     <th
                       style={{
-                        background: '#0d1117',
-                        border: '1px solid #30363d',
+                        background: 'var(--background)',
+                        border: '1px solid var(--border)',
                         padding: 12,
                         textAlign: 'left',
                         fontWeight: 600,
-                        color: '#e6edf3',
+                        color: 'var(--foreground)',
                       }}
     >
                       Power Draw
                     </th>
                     <th
                       style={{
-                        background: '#0d1117',
-                        border: '1px solid #30363d',
+                        background: 'var(--background)',
+                        border: '1px solid var(--border)',
                         padding: 12,
                         textAlign: 'left',
                         fontWeight: 600,
-                        color: '#e6edf3',
+                        color: 'var(--foreground)',
                       }}
     >
                       Efficiency
                     </th>
                     <th
                       style={{
-                        background: '#0d1117',
-                        border: '1px solid #30363d',
+                        background: 'var(--background)',
+                        border: '1px solid var(--border)',
                         padding: 12,
                         textAlign: 'left',
                         fontWeight: 600,
-                        color: '#e6edf3',
+                        color: 'var(--foreground)',
                       }}
     >
                       Price (USD)
@@ -669,92 +651,92 @@ export default function BitcoinMiningGuide() {
                   <tr>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#e6edf3',
+                        color: 'var(--foreground)',
                       }}
     >
                       Bitmain S21 XP
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       193 TH/s
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       3,010W
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       15.6 J/TH
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       $7,500–$9,000
                     </td>
                   </tr>
-                  <tr style={{ background: '#0d111722' }}>
+                  <tr style={{ background: 'var(--background-translucent)' }}>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#e6edf3',
+                        color: 'var(--foreground)',
                       }}
     >
                       MicroBT M60S
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       150 TH/s
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       3,344W
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       22.3 J/TH
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       $5,000–$6,500
@@ -763,92 +745,92 @@ export default function BitcoinMiningGuide() {
                   <tr>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#e6edf3',
+                        color: 'var(--foreground)',
                       }}
     >
                       Bitmain S21
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       180 TH/s
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       3,010W
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       16.7 J/TH
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       $6,500–$8,000
                     </td>
                   </tr>
-                  <tr style={{ background: '#0d111722' }}>
+                  <tr style={{ background: 'var(--background-translucent)' }}>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#e6edf3',
+                        color: 'var(--foreground)',
                       }}
     >
                       MicroBT M50S
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       140 TH/s
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       3,520W
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       25.1 J/TH
                     </td>
                     <td
                       style={{
-                        border: '1px solid #30363d',
+                        border: '1px solid var(--border)',
                         padding: 12,
-                        color: '#8b949e',
+                        color: 'var(--muted)',
                       }}
     >
                       $4,500–$5,500
@@ -860,8 +842,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -919,7 +901,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Mining Pools vs Solo Mining
@@ -954,8 +936,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -996,8 +978,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1046,7 +1028,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Electricity Costs & Location Strategy
@@ -1068,8 +1050,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1126,8 +1108,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1180,7 +1162,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Calculating Mining Profitability
@@ -1198,8 +1180,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1233,8 +1215,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1259,8 +1241,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1278,8 +1260,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1332,7 +1314,7 @@ export default function BitcoinMiningGuide() {
     >
               Use online calculators like our{' '}
               <Link href="#"
-                style={{ color: '#58a6ff', textDecoration: 'none' }}
+                className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                 DCA Calculator
               </Link>{' '}
@@ -1354,7 +1336,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Setting Up Your Mining Operation
@@ -1374,8 +1356,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1423,8 +1405,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1467,8 +1449,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1524,7 +1506,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Cloud Mining & Alternatives
@@ -1556,8 +1538,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1616,8 +1598,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1625,7 +1607,7 @@ export default function BitcoinMiningGuide() {
               }}
     >
               <strong>Comparison: Mining vs Alternatives:</strong>
-              <ul style={{ marginTop: 12, marginmarginBottom: 0, paddingLeft: 20 }}>
+              <ul style={{ marginTop: 12, marginBottom: 0, paddingLeft: 20 }}>
                 <li>
                   <strong>Hardware Mining:</strong> High upfront cost, operational
                   complexity, lowest fees, best long-term returns if profitable
@@ -1653,13 +1635,13 @@ export default function BitcoinMiningGuide() {
     >
               For most individuals, buying Bitcoin through platforms like {' '}
               <Link href="#"
-                style={{ color: '#58a6ff', textDecoration: 'none' }}
+                className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                 regulated exchanges
               </Link>{' '}
               or using{' '}
               <Link href="#"
-                style={{ color: '#58a6ff', textDecoration: 'none' }}
+                className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                 dollar-cost averaging
               </Link>{' '}
@@ -1679,7 +1661,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Environmental Impact & Sustainability
@@ -1711,8 +1693,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1766,8 +1748,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1833,7 +1815,7 @@ export default function BitcoinMiningGuide() {
                 fontWeight: 700,
                 marginTop: 40,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Frequently Asked Questions
@@ -1841,8 +1823,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1852,13 +1834,13 @@ export default function BitcoinMiningGuide() {
                 style={{
                   marginTop: 0,
                   marginBottom: 12,
-                  color: '#e6edf3',
+                  color: 'var(--foreground)',
                   fontSize: 16,
                 }}
     >
                 Is Bitcoin mining profitable in 2026?
               </h3>
-              <p style={{ marginBottom: 0, color: '#8b949e', lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 0, color: 'var(--muted)', lineHeight: 1.8 }}>
                 Profitability depends on electricity costs, hardware efficiency,
                 and BTC price. Operations with costs below $0.04/kWh using modern
                 ASIC hardware can be profitable. However, higher electricity costs
@@ -1870,8 +1852,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1881,13 +1863,13 @@ export default function BitcoinMiningGuide() {
                 style={{
                   marginTop: 0,
                   marginBottom: 12,
-                  color: '#e6edf3',
+                  color: 'var(--foreground)',
                   fontSize: 16,
                 }}
     >
                 What is the best ASIC miner in 2026?
               </h3>
-              <p style={{ marginBottom: 0, color: '#8b949e', lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 0, color: 'var(--muted)', lineHeight: 1.8 }}>
                 The Bitmain S21 XP offers best-in-class efficiency at 15.6 J/TH,
                 making it ideal if electricity is your limiting factor. The MicroBT
                 M60S provides better value, balancing price and performance. Choose
@@ -1899,8 +1881,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1910,13 +1892,13 @@ export default function BitcoinMiningGuide() {
                 style={{
                   marginTop: 0,
                   marginBottom: 12,
-                  color: '#e6edf3',
+                  color: 'var(--foreground)',
                   fontSize: 16,
                 }}
     >
                 How do mining pools work?
               </h3>
-              <p style={{ marginBottom: 0, color: '#8b949e', lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 0, color: 'var(--muted)', lineHeight: 1.8 }}>
                 Mining pools combine computational power from many miners,
                 increasing odds of finding blocks. When the pool finds a block,
                 rewards are distributed based on each miner&apos;s contributed work
@@ -1928,8 +1910,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1939,13 +1921,13 @@ export default function BitcoinMiningGuide() {
                 style={{
                   marginTop: 0,
                   marginBottom: 12,
-                  color: '#e6edf3',
+                  color: 'var(--foreground)',
                   fontSize: 16,
                 }}
     >
                 What electricity cost makes mining profitable?
               </h3>
-              <p style={{ marginBottom: 0, color: '#8b949e', lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 0, color: 'var(--muted)', lineHeight: 1.8 }}>
                 Below $0.03/kWh is highly profitable. Between $0.03–$0.05/kWh is
                 profitable with modern hardware. Between $0.05–$0.08/kWh is marginal
                 and depends on BTC price and hardware efficiency. Above $0.08/kWh is
@@ -1957,8 +1939,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1968,13 +1950,13 @@ export default function BitcoinMiningGuide() {
                 style={{
                   marginTop: 0,
                   marginBottom: 12,
-                  color: '#e6edf3',
+                  color: 'var(--foreground)',
                   fontSize: 16,
                 }}
     >
                 Can I mine Bitcoin at home in 2026?
               </h3>
-              <p style={{ marginBottom: 0, color: '#8b949e', lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 0, color: 'var(--muted)', lineHeight: 1.8 }}>
                 Technically yes, but economically challenging. ASIC miners generate
                 3,000+ watts continuously, producing extreme heat and noise. Home
                 electricity costs (typically $0.10–$0.15/kWh) make profitability
@@ -1987,8 +1969,8 @@ export default function BitcoinMiningGuide() {
 
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 marginBottom: 24,
@@ -1998,13 +1980,13 @@ export default function BitcoinMiningGuide() {
                 style={{
                   marginTop: 0,
                   marginBottom: 12,
-                  color: '#e6edf3',
+                  color: 'var(--foreground)',
                   fontSize: 16,
                 }}
     >
                 Is cloud mining a good alternative?
               </h3>
-              <p style={{ marginBottom: 0, color: '#8b949e', lineHeight: 1.8 }}>
+              <p style={{ marginBottom: 0, color: 'var(--muted)', lineHeight: 1.8 }}>
                 Cloud mining carries significant risks including scams, poor returns
                 after fees, and lack of transparency. Many providers have failed or
                 proven unprofitable. Even legitimate cloud mining typically generates
@@ -2025,8 +2007,8 @@ export default function BitcoinMiningGuide() {
     >
             <div
               style={{
-                background: '#161b22',
-                border: '1px solid #30363d',
+                background: 'var(--card)',
+                border: '1px solid var(--border)',
                 borderRadius: 12,
                 padding: 20,
                 lineHeight: 1.8,
@@ -2036,7 +2018,7 @@ export default function BitcoinMiningGuide() {
                 style={{
                   marginTop: 0,
                   marginBottom: 16,
-                  color: '#e6edf3',
+                  color: 'var(--foreground)',
                   fontSize: 20,
                 }}
     >
@@ -2083,7 +2065,7 @@ export default function BitcoinMiningGuide() {
             style={{
               marginTop: 40,
               marginBottom: 40,
-              borderTop: '1px solid #30363d',
+              borderTop: '1px solid var(--border)',
               paddingTop: 32,
             }}
     >
@@ -2092,7 +2074,7 @@ export default function BitcoinMiningGuide() {
                 fontSize: 20,
                 fontWeight: 700,
                 marginBottom: 16,
-                color: '#e6edf3',
+                color: 'var(--foreground)',
               }}
     >
               Related Resources
@@ -2100,28 +2082,28 @@ export default function BitcoinMiningGuide() {
             <ul style={{ paddingLeft: 20 }}>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Bitcoin Halving Explained: History & Impact on Mining
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Dollar-Cost Averaging (DCA) Calculator
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Buying Bitcoin: Exchanges & Platforms
                 </Link>
               </li>
               <li>
                 <Link href="#"
-                  style={{ color: '#58a6ff', textDecoration: 'none' }}
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--primary)', textDecoration: 'none' }}
     >
                   Bitcoin Investing Guides
                 </Link>
@@ -2132,8 +2114,8 @@ export default function BitcoinMiningGuide() {
           {/* Disclaimer */}
           <section
             style={{
-              background: '#161b22',
-              border: '1px solid #30363d',
+              background: 'var(--card)',
+              border: '1px solid var(--border)',
               borderRadius: 12,
               padding: 20,
               marginTop: 40,
@@ -2145,7 +2127,7 @@ export default function BitcoinMiningGuide() {
                 marginTop: 0,
                 marginBottom: 0,
                 fontSize: 12,
-                color: '#8b949e',
+                color: 'var(--muted)',
                 lineHeight: 1.8,
               }}
     >
@@ -2166,62 +2148,54 @@ export default function BitcoinMiningGuide() {
         </div>
       
         {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
-          </p>
-        </div>
-      
-        {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+        <div style={{ background: 'var(--card-alt)', border: '1px solid var(--border-alt)', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: 'var(--accent)' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{ color: 'var(--accent)' }}>our team</a>.
           </p>
         </div>
             <div style={{
         marginTop: "32px",
         padding: "24px",
-        backgroundColor: "#111827",
+        backgroundColor: "var(--card)",
         borderRadius: "12px",
-        border: "1px solid #374151"
+        border: "1px solid var(--border)"
       }}>
-        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <h3 style={{ marginBottom: "16px", color: "var(--foreground)" }}>Explore More</h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
-          <Link href="/learn" style={{
+          <Link href="/learn" className="hover:brightness-125 hover:border-[var(--primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{
             padding: "12px 16px",
-            backgroundColor: "#1f2937",
+            backgroundColor: "var(--card-alt)",
             borderRadius: "8px",
-            color: "#60a5fa",
+            color: "var(--primary)",
             textDecoration: "none",
-            border: "1px solid #374151",
+            border: "1px solid var(--border)",
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
           }}>
             All Learning Guides
           </Link>
-          <Link href="/tools" style={{
+          <Link href="/tools" className="hover:brightness-125 hover:border-[var(--primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{
             padding: "12px 16px",
-            backgroundColor: "#1f2937",
+            backgroundColor: "var(--card-alt)",
             borderRadius: "8px",
-            color: "#60a5fa",
+            color: "var(--primary)",
             textDecoration: "none",
-            border: "1px solid #374151",
+            border: "1px solid var(--border)",
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
           }}>
             Crypto Tools
           </Link>
-          <Link href="/compare" style={{
+          <Link href="/compare" className="hover:brightness-125 hover:border-[var(--primary)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--primary)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded-sm" style={{
             padding: "12px 16px",
-            backgroundColor: "#1f2937",
+            backgroundColor: "var(--card-alt)",
             borderRadius: "8px",
-            color: "#60a5fa",
+            color: "var(--primary)",
             textDecoration: "none",
-            border: "1px solid #374151",
+            border: "1px solid var(--border)",
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
@@ -2230,25 +2204,7 @@ export default function BitcoinMiningGuide() {
           </Link>
         </div>
       </div>
-    <AuthoritySources url="/learn/bitcoin-mining-guide-2026" />
     </article>
-    
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "Bitcoin Mining Guide 2026",
-              "author": { "@type": "Organization", "name": "degen0x" },
-              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
-              "datePublished": "2026-04-01",
-              "dateModified": "2026-04-12",
-              "mainEntityOfPage": "https://degen0x.com/learn/bitcoin-mining-guide-2026"
-            })
-          }}
-        />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Bitcoin Mining Guide 2026: Hardware, Costs & Profitability", "description": "Complete guide to Bitcoin mining in 2026. Compare ASIC miners, calculate profitability, understand electricity costs, and learn if mining BTC is still worth it.", "url": "https://degen0x.com/learn/bitcoin-mining-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
 </>
   );
 }
