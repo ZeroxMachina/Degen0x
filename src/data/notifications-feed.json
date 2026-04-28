@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-28-011",
+    "type": "news",
+    "title": "\ud83d\udcf0 BTC stalls at $80K wall as crypto market sheds 2.3% to $2.65T",
+    "message": "Bitcoin failed a fourth attempt at $80,000 and slid to $77,005, pulling total crypto market cap down 2.3% to $2.65 trillion ahead of this week's Fed decision.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
     "id": "feed-2026-04-28-010",
     "type": "news",
     "title": "\ud83d\udcf0 SEC's Atkins teases tokenization sandbox via 'innovation exemptions' window",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 SEC and CFTC officially label BTC, ETH, SOL, XRP and LINK as digital commodities",
     "message": "A joint SEC-CFTC interpretation classifies the five biggest tokens as commodities and lays out a unified taxonomy for stablecoins, collectibles and digital securities.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-005",
-    "type": "news",
-    "title": "\ud83d\udcf0 Hyperliquid whales flip aggressively long on BTC even as funding stays deeply negative",
-    "message": "Large Hyperliquid traders have moved from net short to their most net-long BTC positioning since early March, despite persistently negative funding rates.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }

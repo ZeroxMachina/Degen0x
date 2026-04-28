@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T09:08:00Z",
-  "briefing_id": "briefing-2026-04-28-09",
+  "generated_at": "2026-04-28T10:07:43Z",
+  "briefing_id": "briefing-2026-04-28-10",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-09-001",
-      "headline": "SEC's Atkins teases tokenization sandbox via 'innovation exemptions' window",
-      "slug": "sec-atkins-innovation-exemptions-tokenization-sandbox",
-      "tldr": "SEC Chair Paul Atkins said the agency will launch innovation exemptions in the coming weeks, letting firms pilot on-chain tokenization and securitization under a regulated carve-out.",
-      "why_it_matters": "Why it matters: A formal SEC sandbox is the first credible path for U.S. issuers to tokenize equities and funds without a Howey landmine — and it pulls forward institutional product launches by quarters.",
+      "id": "story-2026-04-28-10-001",
+      "headline": "BTC stalls at $80K wall as crypto market sheds 2.3% to $2.65T",
+      "slug": "btc-stalls-80k-market-sheds",
+      "tldr": "Bitcoin failed a fourth attempt at $80,000 and slid to $77,005, pulling total crypto market cap down 2.3% to $2.65 trillion ahead of this week's Fed decision.",
+      "why_it_matters": "Why it matters: Concentrated sell orders are capping every rally despite record stablecoin liquidity, signaling distribution by large holders right as macro risk peaks.",
       "the_details": [
-        "Atkins announced the framework live at Bitcoin 2026 in Las Vegas, alongside CFTC and White House officials in a coordinated 'unified approach' message.",
-        "Senator Lummis simultaneously pinned the CLARITY Act for an August advance, sequencing the legislative track behind the SEC's exemption launch.",
-        "White House Presidential Advisory Council on Digital Assets flagged a separate Strategic Bitcoin Reserve announcement also coming in 'the coming weeks.'"
-      ],
-      "source": "TradingKey / SEC.gov",
-      "source_url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261829066-crypto-bitcoin-btc-price-sec-cftc-white-house-paul-atkins-clarity-tradingkey",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-28T08:45:00Z"
-    },
-    {
-      "id": "story-2026-04-28-09-002",
-      "headline": "Four central banks set rates this week — BOJ, Fed, ECB, BOE all on deck",
-      "slug": "four-central-banks-rate-decisions-week",
-      "tldr": "BOJ, Fed, ECB and BOE all hand down policy decisions this week, the densest cluster of major-economy rate prints crypto has faced in 2026.",
-      "why_it_matters": "Why it matters: BTC's correlation to dollar moves has hit its most extreme negative in nearly four years — a hawkish Fed Wednesday could detonate the leveraged long book that built up around the $80K reclaim.",
-      "the_details": [
-        "Markets are pricing the Fed to hold at 3.50%–3.75% on April 29; any hawkish-hold language reprices crypto risk premia immediately.",
-        "Kevin Warsh takes the Fed chair on May 15, so this is Powell's final FOMC — adding lame-duck communication risk on top of the decision itself.",
-        "BTC sold off nearly 3% to under $77,000 on April 28 on geopolitics and rate jitters, after failing to break the $80,000 ceiling this weekend."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-28T07:30:00Z"
-    },
-    {
-      "id": "story-2026-04-28-09-003",
-      "headline": "Crypto ETF AUM jumps to $155B as BTC funds soak up $933M weekly inflow",
-      "slug": "crypto-etf-aum-155b-btc-933m-weekly-inflow",
-      "tldr": "Total crypto ETF AUM has rebounded to $155 billion — the highest reading since February — driven by a $933 million weekly inflow into Bitcoin funds.",
-      "why_it_matters": "Why it matters: Sidelined institutional capital is back on the bid even as spot BTC slips below $77K, signalling that ETF allocators see this dip as accumulation, not exit.",
-      "the_details": [
-        "Onchain data shows billions in fresh stablecoin deposits hitting exchanges alongside the ETF inflows, a classic dry-powder setup ahead of the FOMC.",
-        "Goldman Sachs filed for its first Bitcoin ETF product earlier in April, deepening the traditional-finance bench beyond BlackRock and Fidelity.",
-        "Concentrated sell orders capped the rally near $80,000 — analysts flagged the level as the next breakout trigger if FOMC clears risk."
+        "BTC -2.75% to $77,005 on $35.2B volume; ETH -4.3% to $2,293 with $16B turnover.",
+        "Bitcoin still up ~13.6% in April, on pace for its best month in a year if it holds.",
+        "BTC dominance climbs to 58.1% as altcoins absorb the brunt of the selloff."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T06:45:00Z"
+      "timestamp": "2026-04-28T10:00:00Z"
     },
     {
-      "id": "story-2026-04-28-09-004",
-      "headline": "TOKEN2049 Dubai postponed to 2027 as UAE security risks scrap May event",
-      "slug": "token2049-dubai-postponed-2027-uae-security",
-      "tldr": "TOKEN2049 organizers pushed the Dubai conference from May 2026 to 2027, citing heightened security risks across the UAE.",
-      "why_it_matters": "Why it matters: Dubai has been the unofficial off-site capital of the bull-cycle conference circuit — losing it for a year reroutes deal-flow and BD calendars to Singapore and the U.S. through 2026.",
+      "id": "story-2026-04-28-10-002",
+      "headline": "Aave rallies DeFi partners to contain $292M Kelp DAO contagion",
+      "slug": "aave-rallies-defi-kelp-bailout",
+      "tldr": "Aave is coordinating a multi-protocol bailout after Kelp DAO's $292M LayerZero exploit left $10B of Aave deposits drained in a deposit run last week.",
+      "why_it_matters": "Why it matters: This is the first real-world test of cross-chain DeFi solvency \u2014 if the coalition fails, restaking-collateralized lending may not survive 2026.",
       "the_details": [
-        "The cancellation lands the same week the U.S.–Iran ceasefire ended, putting Gulf-region risk back in the macro frame for crypto events.",
-        "The Singapore edition of TOKEN2049 in October 2026 is now the next major industry-wide gathering on the calendar.",
-        "Sponsors and side-event hosts who had committed Dubai budgets are scrambling to redeploy spend toward Bitcoin 2026 Vegas and Token2049 SG."
+        "Attacker minted 116,500 unbacked rsETH by abusing Kelp's LayerZero bridge messaging.",
+        "Aave TVL plunged $10B post-exploit as lenders pulled funds from impaired collateral.",
+        "Coalition includes restakers and bridge operators trying to reissue backing across 20 chains."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/business/2026/04/23/aave-rallies-defi-partners-to-contain-fallout-from-usd292-million-kelpdao-hack",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-28T10:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-10-003",
+      "headline": "Crypto's worst month in a year: $606M stolen in 18 days of April",
+      "slug": "april-606m-hack-surge",
+      "tldr": "Hackers have lifted $606.2M from crypto protocols in just the first 18 days of April \u2014 3.7x what the entire first quarter of 2026 lost combined.",
+      "why_it_matters": "Why it matters: Two state-actor-grade exploits inside three weeks suggest pre-signed transaction and bridge-layer attacks are the new attack surface, not smart-contract bugs.",
+      "the_details": [
+        "April 1: Drift Protocol drained $285M via Solana 'durable nonces' \u2014 North Korea suspected.",
+        "April 19: Kelp DAO hit for $292M through LayerZero bridge messaging exploit.",
+        "Smaller hits: CoW Swap, Zerion, Rhea Finance and Silo Finance also compromised this month."
+      ],
+      "source": "AInvest",
+      "source_url": "https://www.ainvest.com/news/april-606m-hack-surge-liquidity-flow-shock-2604/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-28T10:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-10-004",
+      "headline": "TOKEN2049 Dubai pushed to April 2027 over UAE security risks",
+      "slug": "token2049-dubai-postponed-2027",
+      "tldr": "TOKEN2049 organizers postponed the Dubai conference by a full year to April 21\u201322, 2027, citing deteriorating security conditions across the United Arab Emirates.",
+      "why_it_matters": "Why it matters: Losing the Middle East's flagship crypto gathering reroutes deal flow and capital introductions to Singapore and Hong Kong for the rest of 2026.",
+      "the_details": [
+        "Original 2026 dates scrapped; venue and sponsors expected to roll forward intact.",
+        "Decision follows heightened regional security concerns across UAE in recent weeks.",
+        "TOKEN2049 Singapore in October now becomes the year's only flagship event."
       ],
       "source": "The Block",
       "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-28T05:20:00Z"
+      "timestamp": "2026-04-28T10:00:00Z"
     },
     {
-      "id": "story-2026-04-28-09-005",
-      "headline": "Jupiter unlocks $9.67M JUP — 1.54% of supply — into a fragile altcoin tape",
-      "slug": "jupiter-jup-unlock-967m-april-28",
-      "tldr": "Solana DEX aggregator Jupiter releases 1.54% of circulating supply, worth $9.67 million in JUP, on April 28 amid a fading altcoin season.",
-      "why_it_matters": "Why it matters: The unlock hits while the CMC Altcoin Season Index sits at 39/100 firmly in 'Bitcoin Season,' meaning weakened bid depth could amplify any dump from early backers.",
+      "id": "story-2026-04-28-10-005",
+      "headline": "Jupiter unlocks 1.54% of supply today \u2014 $9.67M JUP hits market",
+      "slug": "jupiter-jup-unlock-april-28",
+      "tldr": "Solana DEX aggregator Jupiter is unlocking 1.54% of circulating JUP supply today, releasing roughly $9.67M of tokens into a market already wobbling under L1 weakness.",
+      "why_it_matters": "Why it matters: SOL is already pinned near $86 with 92% of ETF inflows gone \u2014 fresh JUP supply tests whether Solana's flagship app token can absorb dilution mid-correction.",
       "the_details": [
-        "Bitcoin dominance has climbed to 60% in April 2026, draining liquidity from mid-cap altcoins like JUP into BTC and ETF-driven majors.",
-        "Solana spot ETF inflows already collapsed 92% from their $419M peak to just $34M in April, removing one of JUP's macro tailwinds.",
-        "Bittensor (TAO) is the standout altcoin counter-trend, up 47% YTD with $43M in Q1 revenue, drawing capital that might otherwise rotate into JUP."
+        "Unlock represents 1.54% of circulating JUP, valued at ~$9.67M at current prices.",
+        "Comes as Solana spot ETF inflows collapsed from $419M (Nov 2025) to $34M in April.",
+        "Firedancer upgrade still on track for 1M TPS, providing the bull case if supply absorbs."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-28T04:00:00Z"
+      "timestamp": "2026-04-28T10:00:00Z"
     }
   ]
 }
