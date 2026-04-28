@@ -1,38 +1,39 @@
 # degen0x — Hourly Ops Agenda
 
-**Timestamp (UTC):** 2026-04-28T09:15Z
-**Hour:** 09 UTC (their internal "Hour 33")
-**Sandbox:** `vigilant-kind-goodall` (45th distinct standup sandbox)
-**Last hour standup:** `1fc61afbb` + addendum `114fc1fd1` (Hour 08 — DESIGN-POLISH 7th-consec via `8d04a7795` INTERMITTENT-CANONICAL 3-consec post-blip HARDENED; system SLO 24-of-41 = 58.54% NEW LOCAL HIGH 3rd-consec; T-BRIEFING-NOVELTY-V2 P1 REGIME-COLLAPSE 4-CONSEC CANONICAL at 60% boundary; DIVERGENCE-CONTRACTS 1-cycle-watch filed; next-index-8.lock RECLASSIFIED DAEMON-OWNED-secondary)
+**Timestamp (UTC):** 2026-04-28T10:15Z
+**Hour:** 10 UTC
+**Sandbox:** `nifty-serene-bell` (46th distinct standup sandbox)
+**Last hour standup:** `2e18a756e` (Hour 09 — DESIGN-POLISH 1-cycle-skip after cluster-7 ship pattern reclassifies cluster-7-ship-1-skip 87.5% canonical density; system SLO 24-of-42 = 57.14% 1ST-REGRESSION-IN-4-CYCLES; T-BRIEFING-NOVELTY-V2 P1 REGIME-COLLAPSE 5-CONSEC modal-restoration-to-40%; DIVERGENCE-REVERTS-WIDENING; both Hour-08 bounce signals retired as 1-cycle-incidental)
 
 ---
 
 ## Incidents / Overrides
 
-- **None P0.** No production breakage. Briefing-09 GREEN ~7min fresh; Vercel auto-deploy presumed live for `194d92968` briefing-09. T-EOD-QA-EGRESS 30th-consecutive (degen0x.com still 403'd by sandbox proxy — Jefe direct-read fallback awaiting allowlist).
-- **Hour 08 forward-predictions BOTH FALSIFIED at the 1-cycle gate.** (1) Design-polish "8th-consec ship locks-canonical 4-consec post-blip" → **DID NOT LAND** — no design ship on origin this hour, INTERMITTENT-CANONICAL pattern reclassifies to **INTERMITTENT-CANONICAL-1-skip-after-3-ship cluster** (1-cycle blip post hardening). (2) V2 "Hour-09 disambiguation: ≤50% deepens vs >60% bounces vs =60% double-flatline" → **40% deepens-but-modal-restoration**. Reading: the Hour-08 +20pp bounce was 1-cycle-incidental, not recovery-direction-emerging; modal rests at 40%. **Both Hour-08 bounce signals (V2 +20pp + DIVERGENCE-CONTRACTS −4) now CONFIRMED 1-cycle-incidental** — symmetry across two independent metrics is signal-grade, see §What's-at-risk T1+T4.
-- **DIVERGENCE-CONTRACTS REVERTS to widening — Hour 09 disambiguation gate RESOLVED → 1-CYCLE-INCIDENTAL confirmed.** master+93 / origin+69 = **162 commit gap**, NET **+3 vs Hour 08** (159). Hour 08 contraction (−4) was 1-cycle-incidental, matching Hour 02 worldcoin-rebase-artifact precedent. 6-of-7 cycles are widening; 2 isolated contractions never sustain. Plan-B reset gate: linear-extrapolation re-engages — at +3/cycle current rate, 200-gap threshold reached ~Hour 21 (12 cycles).
-- **next-index-8.lock 4-CYCLE PERSISTENT — DAEMON-OWNED-secondary CONFIRMED stable.** mtime 05:22:32Z, size 561856 bytes (unchanged Hours 06→07→08→09). Hour-08 reclassification holds; both locks DO-NOT-mv. mv-recipe scope remains narrowed to `.git/index.lock` only (clean this cycle, no stale).
+- **None P0.** No production breakage. Briefing-10 GREEN ~9min fresh (mtime 10:07:43Z); Vercel auto-deploy presumed live for `cfc3d09e7` briefing-10. T-EOD-QA-EGRESS 31st-consecutive (degen0x.com still 403'd by sandbox proxy).
+- **Hour 09 forward-predictions — BOTH RESOLVED INTO ADVERSE BRANCHES.** (1) Design-polish "ship resumes → 58.14% blip-confirmed" vs "2nd-consec skip → 55.81% trend-onset" → **2nd-consec-skip lands** — system SLO 24-of-43 = **55.81%**, exact match to prestaged trend-onset arithmetic. **1st time below Hour-04 prior peak (56.76%) since Hour-06.** (2) V2 "40% triple-flatline" vs "≤30% deepening" vs "≥60% second bounce confirms quasi-cyclic 60↔40 oscillation" → **60% bounce lands** — quasi-cyclic-oscillation hypothesis VINDICATED. Regime reclassifies REGIME-COLLAPSE → **QUASI-CYCLIC-OSCILLATION 60↔40 mode-toggle**. Both forward-predictions had explicit prestaged thresholds; both verified directionally and within 2 decimal places where arithmetic applied.
+- **DESIGN-POLISH 2-CYCLE-SKIP — channel-decay-onset hypothesis revives.** No design commit on origin/main since `8d04a7795` Hour 07 (07:41:42Z, ~2.5h stale). Pattern downgrade trajectory: `INTERMITTENT-CANONICAL-1-skip-tolerance` (Hour 08) → `cluster-7-ship-1-skip 87.5% density` (Hour 09) → **`cluster-7-ship-2-skip 77.78% density CHANNEL-DECAY-ONSET-WATCH`** (this hour). Channel was the only active build path for ~36h (since `53359ca77` Hour 21 yesterday); back-to-back skip is the strongest decay signal observed in this regime.
+- **DIVERGENCE re-widens 2nd-consec-cycle.** master+94 / origin+70 = **164 commit gap**, NET **+2 vs Hour 09** (162). Hour-08 contraction permanently classified 1-cycle-incidental at 2-of-2 historic occurrences; linear-extrapolation re-engaged. At current ~+2-3/cycle widening rate, 200-gap threshold reached **~Hour 21-25** (11–15 cycles out).
+- **next-index-6.lock 3-CYCLE-PERSISTENT — 3rd lock-family member candidacy.** mtime 08:22:07Z, size 563217 bytes, present at session entry (Hours 08→09→10). If still present at Hour 11 it should be reclassified DAEMON-OWNED-tertiary alongside next-index-8 (5-cycle-invariant) and maintenance (10-cycle-invariant). Current `index.lock` is 0-min (concurrent porcelain race) — mv-recipe still applicable to it only.
 
 ---
 
-## What shipped last hour (Hour 08 → Hour 09)
+## What shipped last hour (Hour 09 → Hour 10)
 
-- `194d92968` *news (origin):* briefing-2026-04-28-09 at **09:08:28Z** (mtime 09:08:28Z, generated_at 09:08:00Z; ~7min fresh; **40th consecutive green briefing hour** — round-number milestone). Story slate: SEC Atkins tokenization-sandbox-innovation-exemptions (NEW vector — first appearance, semi-related to Senate/Clarity-Act regulatory cluster), Four central banks rates this week BOJ+Fed+ECB+BOE (RECUR-broadened — H08 BTC-FOMC widens to all-four-CB), Crypto ETF AUM $155B + BTC ETFs $933M weekly (NEW — ETF-AUM angle vs H08 Solana-ETF-collapse), TOKEN2049 Dubai 2027 (RECUR direct — 6th-consec appearance: H07 → H08 → H09), Jupiter $9.67M JUP 1.54%-supply unlock (NEW vector).
-- `1fc61afbb` *ops (master):* Hour 08 UTC standup at 08:15Z (master only — runner ops/ commit, **33rd consecutive** ops-commit success).
-- `114fc1fd1` *ops (master):* Hour 08 addendum HOURLY_AGENDA.md sync.
-- **No design ship this cycle on either branch.** First design-polish skip since Hour 05 (4-cycle-back blip). Pattern downgrades from "INTERMITTENT-CANONICAL-1-skip-tolerance hardened" to **"INTERMITTENT-CANONICAL-with-cluster-3-ship-followed-by-1-skip"** — actual realized cluster 7-of-7 ships post-Hour-00 resume followed by Hour-09 skip; ratio 7/8 = 87.5% canonical density.
+- `cfc3d09e7` *news (origin):* briefing-2026-04-28-10 at **10:08:01Z** (mtime 10:07:43Z, generated_at 10:07:43Z; ~9min fresh; **41st consecutive green briefing hour**). Story slate: BTC-stalls-at-80K-wall-market-sheds-2.3pct (RECUR-broadened-via-H09-skip from H08 BTC-77K-FOMC), Aave-rallies-DeFi-partners-292M-Kelp-DAO-contagion-bailout (NEW-angle — H05 Kelp-292M-LayerZero MAJOR-NEW reframed as Aave-coordinating-bailout, 5-cycle-gap), April-606M-Lazarus-worst-month-in-a-year (NEW-angle — H18/H21/H01 prior, multi-cycle-gap, refreshed monthly tally), TOKEN2049-Dubai-2027 (RECUR-direct **8th-consec appearance** H03→H10), Jupiter-$9.67M-JUP-unlock (RECUR-direct 2nd-consec H09→H10).
+- `2e18a756e` *ops (master):* Hour 09 UTC standup at 09:21Z (master only — runner ops/ commit, **34th-consecutive** ops-commit success).
+- **No design-polish ship this cycle on either branch.** 2nd-consecutive-skip after the post-Hour-00-resume 7-cycle ship cluster (`390b39910 → ecf0c6fd9 → 5e96de402 → e26001d08 → 36d33f4a7 → 531b01ed6 → 8d04a7795`). Realized cluster: 7-ships-then-2-skips → ratio 7/9 = **77.78% canonical density** (−9.72pp vs Hour 09 87.5%). Pattern downgrade is direction-confirmed, not blip.
+- **No `feat()` runner-channel src commit** — 12th consecutive cycle of runner-only silence (~36h since `53359ca77` Hour 21 yesterday).
 
 ---
 
 ## What's at risk
 
-- **T-BRIEFING-NOVELTY-V2 P1 — REGIME-COLLAPSE 5-CONSEC CANONICAL, modal-restoration to 40%.** Briefing-09 lenient recurrence = **2-of-5 = 40%** (TOKEN2049-Dubai-2027 RECUR-direct + Four-central-banks RECUR-broadened-from-FOMC; SEC-Atkins-tokenization scored NEW — different angle from H08 100-firms-Clarity, ETF-AUM scored NEW — different angle from H08 Solana-ETF-collapse, Jupiter-unlock NEW). Trajectory: `60→60→100→80→60→80→80→40→40→40→60→**40%**` — RETURNS to 40% modal after 1-cycle 60% bounce. **Reading: Hour-08 bounce was 1-cycle-incidental (NOT recovery-direction-emerging); 40% is the durable modal of the post-Hour-00 regime-collapse era.** 5-CONSEC ≤60% confirms canonical-collapse extends; V2 trend-up doctrine fully retired. Hour-10 watchpoint: `40% triple-flatline-restored 6-CONSEC ≤60%` vs `≤30% genuine deepening` vs `≥60% second bounce confirms quasi-cyclic 60↔40 oscillation`. CEO-route URGENT escalation status RETAINED Hour-08 → Hour-09 (5-CONSEC trigger does NOT auto-escalate; V2 self-elevation moratorium per Hour-09 doctrine remains in force).
-- **System SLO 1st REGRESSION in 4 cycles — blip vs decay disambiguation Hour-10.** **24-of-42 = 57.14%** (−1.40pp vs Hour 08 NEW LOCAL HIGH 58.54%). Per Hour-08 prestaged forward-prediction (`skip → SLO 24-of-42 = 57.14% (1st regression in 4 cycles, blip vs decay)`), this lands EXACTLY at the prestaged value — design-polish-skip arithmetic VERIFIED. Reading: 1-cycle skip after 7-cycle ship cluster could be either pure-blip (mean-reverting) or trend-onset (decay). Hour-10 disambiguation gate: `design-polish ship resumes → SLO 25-of-43 = 58.14% blip-confirmed` vs `2nd-consec skip → SLO 24-of-43 = 55.81% trend-onset, would fall below Hour-04 prior peak 56.76% for 1st time since Hour-06`.
-- **Runner-only SLO monotonic decline 11th-consec cycle** (round-number+1 milestone). **7-of-42 = 16.67%** (−0.40pp vs Hour 08 17.07%). ~35h runner-silence since `53359ca77`. **Bifurcation gap NARROWS for 1st time in 11 cycles: 40.47pp** (−0.99pp vs Hour 08 41.46pp) — narrowing driven by system-leg-falls-faster-than-runner-leg-this-cycle, NOT by runner recovery. Forward rule: 11-cycle directional-reversal trend remains; 1-cycle narrowing is structural artifact of system-skip + runner-monotonic-decline-continuing.
-- **T-PUBLISH-QUEUE-DRIFT-BUIDL P1 — Cycle 44.** Bundle `cdea9186f` BUIDL learn page now **~43.24h queued, ~20.97h bundle-stale, 44-cycle no-Jefe-action**. Cycle-count monotonic-widening continues — 44-cycle no-action without explicit deferral is itself a meta-signal for **T-CMS-BACKLOG-CHANNEL-INERTIA**. 3 prerequisite `/learn/` refs still MISSING. Delta-only follow-up filed per recurrence-rule active doctrine.
-- **DIVERGENCE reverts widening — Plan-B linear-extrapolation re-engages.** master+93 / origin+69 = **gap 162**, NET **+3 vs Hour 08** (159). 1-cycle-incidental contraction rule confirmed at 2-of-2 historic occurrences (Hour 02, Hour 08). Linear-extrapolation: at current widening rate (~+3/cycle), 200-gap threshold reached **~Hour 21 (12 cycles out)**. Forward rule: stop watching for active-reverse-sync regime; resume linear widening as base case.
-- **T-LOCK-ESCALATION — locks family stable 2-member.** `.git/objects/maintenance.lock` 9-CYCLE-INVARIANT (mtime 23:36:20Z 04-27, zero-byte, ~9h39min persistence). `.git/next-index-8.lock` 4-CYCLE PERSISTENT (mtime 05:22:32Z 04-28, 561856 bytes unchanged) — DAEMON-OWNED-secondary stable. Both DO-NOT-mv. mv-recipe scope: `.git/index.lock` only (clean this entry).
+- **T-DESIGN-POLISH-CHANNEL-DECAY P1 — 2nd-consec-skip + below-prior-peak (NEW NAMED RISK).** System SLO **24-of-43 = 55.81%** (−1.33pp vs Hour 09 57.14%). **1st time below Hour-04 prior peak 56.76% since Hour-06** — recovery-channel broken. Design-polish was the sole active build channel for ~36h. Hour-11 disambiguation gate: `design-polish ship resumes → 25/44 = 56.82% decay-onset-1-cycle-blip pattern reclassifies cluster-7-ship-2-skip-1-resume mean-reversion` vs `3rd-consec-skip → 24/44 = 54.55% decay-confirmed, full-channel-collapse, would cross below 55% floor for 1st time since Hour-02`. Forward rule: 3-skips-in-a-row crosses the same 2-of-2-historic threshold that retired Hour-08-bounce-as-1-cycle-incidental — symmetric criterion would name decay durable.
+- **T-BRIEFING-NOVELTY-V2 P1 — QUASI-CYCLIC-OSCILLATION 60↔40 mode-toggle CONFIRMED, regime reclassified.** Briefing-10 lenient recurrence = **3-of-5 = 60%** (TOKEN2049-Dubai-2027 RECUR-direct 8th-consec + Jupiter-unlock RECUR-direct 2nd-consec + BTC-80K-wall RECUR-broadened-via-H09-skip-from-H08-BTC-77K; Aave-Kelp scored NEW-angle despite H05 5-cycle-gap; April-606M scored NEW-angle despite H18/H01 multi-cycle-gap). Trajectory: `60→60→100→80→60→80→80→40→40→40→60→40→**60%**` — Hour-09 prestaged Hour-10 watchpoint "≥60% second bounce confirms quasi-cyclic 60↔40 oscillation" **CONFIRMED**. Regime updates from monotonic-collapse-to-40%-modal → 2-regime alternation 60↔40 mode-toggle (period ~2 cycles). Content-pool topology has hidden state — likely briefing-runner topic-rotation behavior or genuine news-flow oscillation. CEO-route URGENT status RETAINED. Hour-11 watchpoint: `40% return confirms 2-cycle-oscillation period-2-canonical` vs `60% triple-flatline establishes new modal at 60%` vs `≥80% overshoots oscillation, suggests trend-up-restoration`.
+- **Runner-only SLO 12th-consec monotonic decline** (round-number+2 milestone). **7-of-43 = 16.28%** (−0.39pp vs Hour 09 16.67%). **Bifurcation gap NARROWS 2nd-consec: 39.53pp** (−0.94pp vs Hour 09 40.47pp). Narrowing this cycle is "both-legs-fall" not "runner-recovery": system-leg fell faster than runner-leg because no design ship absorbed system-leg's monotonic-rise. ~36h runner-silence since `53359ca77`. Bifurcation falls below 40pp round-number for 1st time since Hour-08 41.46pp peak — not because the bifurcation is closing structurally but because the system-leg is now decaying alongside the runner-leg.
+- **T-PUBLISH-QUEUE-DRIFT-BUIDL P1 — Cycle 45.** Bundle `cdea9186f` BUIDL learn page now **~44.24h queued, ~21.97h bundle-stale, 45-cycle no-Jefe-action**. 3 prerequisite `/learn/` refs still MISSING (franklin-templeton-benji-fobxx-guide, rwa-risk-framework-guide, wormhole-bridge-guide). T-CMS-BACKLOG-CHANNEL-INERTIA meta-signal hardens 2nd-cycle. Delta-only follow-up filed.
+- **DIVERGENCE re-widens.** master+94 / origin+70 = **gap 164**, NET **+2 vs Hour 09** (162). 2-cycles-of-widening since the 1-cycle-incidental Hour-08 contraction (−4). Plan-B linear-extrapolation: 200-gap threshold **~Hour 21-25 (11-15 cycles out)** at current rate.
+- **T-LOCK-ESCALATION — locks family 3-member-candidacy.** `.git/objects/maintenance.lock` 10-CYCLE-INVARIANT (mtime 23:36:20Z 04-27, zero-byte, ~10h40min persistence). `.git/next-index-8.lock` 5-CYCLE-INVARIANT (mtime 05:22:32Z 04-28, 561856 bytes — wait, current is 563301 — minor drift watch). `.git/next-index-6.lock` 3-CYCLE-PERSISTENT (mtime 08:22:07Z 04-28, 563217 bytes). `index.lock` 0-min concurrent — mv-safe per recipe (entry attempt this cycle returned EPERM `Operation not permitted`, falls back to `cp index /tmp` workaround per project_publish_deploy_gate.md Hour-03-2026-04-27 precedent). Hour-11 watchpoint: next-index-6 4-cycle-persistent → reclassify DAEMON-OWNED-tertiary; family 3-member.
 
 ---
 
@@ -40,54 +41,58 @@
 
 | Metric | Value | Source | Note |
 |---|---|---|---|
-| Origin/main HEAD | `194d92968` (briefing-09, 09:08:28Z) | `git log origin/main` | — |
-| Latest design ship (origin) | `8d04a7795` (07:41:42Z, ~1.5h stale) | `git log origin/main` | **Skip this cycle** — INTERMITTENT-CANONICAL pattern downgrades to cluster-7-then-skip |
-| Master HEAD | `114fc1fd1` (Hour 08 addendum) | `git log master` | runner-only; +2 since last cycle (standup + addendum) |
-| Briefing freshness | **~7min** (mtime 09:08:28Z, now 09:15Z) | `stat src/data/news-briefing.json` | GREEN |
-| Briefing green-streak | **40 consecutive hours** (round-number milestone) | derived | +1 |
-| Indexed pages (proxy) | unverifiable from sandbox (T-EOD-QA-EGRESS 30th) | — | degen0x.com still 403'd by corp proxy |
-| Organic traffic 24h | unverifiable from sandbox (GSC blocked) | — | T-EOD-QA-EGRESS 30th |
-| Master/origin divergence | master+93 / origin+69 (gap **162**) | `git rev-list --left-right --count master...origin/main` | **+3 vs Hour 08** (159); REVERTS WIDENING — 1-cycle-incidental contraction confirmed |
-| Build-cycle SLO (system) | **24-of-42 = 57.14%** | derived | ⬇ −1.40pp **1st regression in 4 cycles** (blip vs decay disambig Hour-10); matches Hour-08 prestaged skip-arithmetic exactly |
-| Build-cycle SLO (runner-only) | **7-of-42 = 16.67%** | derived | ⬇ −0.40pp; monotonic decline **11th-consec cycle** (~35h runner-silence) |
-| Bifurcation gap | **40.47pp** | derived | ⬇ −0.99pp 1st-narrowing-in-11-cycles (structural — system fell faster than runner) |
-| BUIDL queue | Cycle 44 / 43.24h queued / 20.97h bundle-stale | `git log` cdea9186f | T-PUBLISH-QUEUE-DRIFT-BUIDL P1 |
-| Maintenance lock | 9-cycle-invariant DAEMON-OWNED primary | `ls .git/objects/maintenance.lock` | DO-NOT-mv |
-| next-index-8 lock | 4-cycle-invariant DAEMON-OWNED-secondary | `ls .git/next-index-8.lock` | stable; DO-NOT-mv |
-| Working-tree dirty files | 982 | `git status --short \| wc -l` | publish-deploy gate state |
+| Origin/main HEAD | `cfc3d09e7` (briefing-10, 10:08:01Z) | `git log origin/main` | — |
+| Latest design ship (origin) | `8d04a7795` (07:41:42Z, ~2.5h stale) | `git log origin/main --grep='^design:'` | **2nd-consec-skip** — channel-decay-onset-watch |
+| Master HEAD | `2e18a756e` (Hour 09 standup) | `git log master` | runner-only; +1 since Hour 09 |
+| Briefing freshness | **~9min** (mtime 10:07:43Z, now 10:15Z) | `stat src/data/news-briefing.json` | GREEN |
+| Briefing green-streak | **41 consecutive hours** | derived | +1 |
+| Indexed pages (proxy) | unverifiable from sandbox (T-EOD-QA-EGRESS 31st) | — | degen0x.com 403'd by sandbox proxy |
+| Organic traffic 24h | unverifiable from sandbox (GSC blocked) | — | T-EOD-QA-EGRESS 31st |
+| Master/origin divergence | master+94 / origin+70 (gap **164**) | `git rev-list --left-right --count master...origin/main` | **+2 vs Hour 09** (162); re-widens 2nd-consec-cycle |
+| Build-cycle SLO (system) | **24-of-43 = 55.81%** | derived | ⬇ −1.33pp **2nd-consec-decline; 1st-below-Hour-04-peak-since-Hour-06**; matches prestaged trend-onset arithmetic exactly |
+| Build-cycle SLO (runner-only) | **7-of-43 = 16.28%** | derived | ⬇ −0.39pp; monotonic decline **12th-consec cycle** (~36h runner-silence) |
+| Bifurcation gap | **39.53pp** | derived | ⬇ −0.94pp 2nd-consec-narrowing; falls below 40pp for 1st time since Hour-08 (41.46pp peak); both-legs-fall pattern |
+| BUIDL queue | Cycle 45 / 44.24h queued / 21.97h bundle-stale | `git log` cdea9186f | T-PUBLISH-QUEUE-DRIFT-BUIDL P1 + T-CMS-BACKLOG-CHANNEL-INERTIA |
+| Maintenance lock | 10-cycle-invariant DAEMON-OWNED-primary | `ls .git/objects/maintenance.lock` | DO-NOT-mv |
+| next-index-8 lock | 5-cycle-invariant DAEMON-OWNED-secondary | `ls .git/next-index-8.lock` | stable; DO-NOT-mv |
+| next-index-6 lock | **3-cycle-persistent** (3rd-member-candidacy) | `ls .git/next-index-6.lock` | Hour-11 watchpoint: 4-cycle = reclassify DAEMON-OWNED-tertiary |
+| Working-tree dirty files | 983 | `git status --short` | publish-deploy gate state (codemod-not-mine, +1 vs Hour 09 982) |
 
 ---
 
-## Top 3 priorities for this hour (Hour 09)
+## Top 3 priorities for this hour (Hour 10)
 
-### T1 — `community-growth` — V2 5-CONSEC modal-restoration to 40% + briefing-09 snapshot
+### T1 — `build-cycle` — Resume design-polish ship to break 2-skip + recover above Hour-04 peak (HIGHEST LEVERAGE, MUST-SHIP)
 
-V2 trajectory falls back to 40% after 1-cycle 60% bounce — **5-CONSEC ≤60% confirms canonical-collapse extends; Hour-08 bounce was 1-cycle-incidental, not recovery-direction-emerging**. Briefing-09 vs briefing-08 lenient overlap: TOKEN2049-Dubai-2027 (RECUR-direct — 6th-consec appearance), Four-central-banks (RECUR-broadened from H08 BTC-FOMC). NEW vectors: SEC-Atkins-tokenization-sandbox (different regulatory angle from H08 100-firms-Clarity), $155B-ETF-AUM (different ETF-flow angle from H08 Solana-collapse), Jupiter-$9.67M-unlock (token-supply vector — first appearance).
+This is unambiguous priority #1. Three converging signals make a Hour-10 design-polish ship the single highest-leverage action:
+
+1. **Channel-decay-onset risk.** Design-polish has been the sole active build channel for ~36h (since `53359ca77` Hour 21 yesterday). 2-cycle skip just dropped system SLO below Hour-04 prior peak (56.76%) for 1st time in 4 cycles. 3rd-consec skip would confirm decay durable at the same 2-of-2-historic threshold that retired Hour-08-bounce as incidental.
+2. **Mean-reversion likely.** Cluster-7-ship-then-2-skip is anomalous against the prior 7-cycle hourly cadence. Base-rate suggests reversion probable; the question is whether it lands this hour or slips to Hour 11.
+3. **One commit unwinds the regression.** A single design-polish commit pushes SLO to 25/44 = 56.82% — partial-recovery branch confirmed, decay-onset reframes as 1-cycle-blip (cluster-7-ship-2-skip-1-resume), Hour-04-peak-broach absorbed.
+
+**Actions for build-cycle / design-polish agents:**
+- **Ship 1 design-polish commit before 11:00Z.** Candidate guide pages still bearing hex tokens (per ~150+ guides remaining un-polished in `src/app/learn/`): `crypto-derivatives-guide-2026`, `dydx-trading-guide-2026`, `gmx-perpetuals-guide-2026`, `synthetix-perps-guide-2026`, `pendle-yield-trading-guide-2026`. Pick whichever has highest hex-density and ship in the 10:30–10:50Z window so news-briefing-11 doesn't collide with the design-runner.
+- **File build-cycle log:** `ops/build-cycle/2026-04-28T10-15Z-design-polish-2-cycle-skip-channel-decay-onset-Hour-11-disambiguation-gate.md` with 3-branch decision tree (ship / 1-skip / 3-skip) and prestaged SLO arithmetic.
+- **Hour-11 disambiguation gate codified:** `ship lands → 25/44 = 56.82% mean-reversion-1-cycle-blip` vs `3rd-consec-skip → 24/44 = 54.55% decay-confirmed crosses below 55% floor` vs `2 ships catch-up → 26/44 = 59.09% restores above Hour-08 NEW LOCAL HIGH` (lowest-probability branch given 36h-silence base rate).
+
+### T2 — `community-growth` — V2 60% bounce confirms quasi-cyclic 60↔40 oscillation; snapshot briefing-10 + escalate to CEO-route methodology
+
+V2 trajectory bounces back to 60% per the Hour-09 prestaged Hour-10 watchpoint. Regime reclassifies from REGIME-COLLAPSE-monotonic-40%-modal → **QUASI-CYCLIC-OSCILLATION 60↔40 mode-toggle (period ~2 cycles)**. This is a structural finding: content-pool topology has hidden state. Two competing hypotheses for the mechanism: (a) briefing-runner has implicit topic-rotation logic that alternates "news-of-the-day" vs "ongoing-cycle-recap" framings; (b) genuine news-flow oscillates because publishers themselves alternate. (a) is testable via prompt audit; (b) is testable by comparing trajectories across publication tiers.
+
+**Actions for community-growth agents:**
+- **Snapshot briefing-10 NOW** to `ops/snapshots/briefing-2026-04-28-10.json` before next runner overwrite at ~11:08Z (per Hour-19 codified methodology).
+- Draft community-growth note `ops/community/2026-04-28T10-15Z-briefing-novelty-v2-60pct-bounce-quasi-cyclic-oscillation-confirmed-regime-reclassification.md` capturing: trajectory, regime reclassification (REGIME-COLLAPSE → QUASI-CYCLIC-OSCILLATION 60↔40), Hour-09-prestaged-watchpoint VINDICATION, two-mechanism-hypothesis (runner-rotation vs publisher-flow-oscillation), Hour-11 prediction (40%-return = period-2-canonical, 60%-flatline-3-cycle = new-modal-at-60, ≥80%-overshoots = trend-up-restoration).
+- **CEO-route URGENT retained.** New methodology-question for next CEO touchpoint: should briefing-runner prompt explicitly bias toward novelty (e.g., penalize topics that appeared in any of the last 3 briefings)? If oscillation is mechanism (a), this is a 1-line prompt fix. If mechanism (b), no prompt change helps.
+
+### T3 — `design-polish` (secondary) / `publish` — BUIDL Cycle 45 + lock-state delta + EOD-QA-egress 31st
+
+T-PUBLISH-QUEUE-DRIFT-BUIDL Cycle 45 widens (44.24h queued, 21.97h bundle-stale, 45-cycle no-Jefe-action). T-CMS-BACKLOG-CHANNEL-INERTIA hardens 2nd-cycle. T-EOD-QA-EGRESS 31st-consecutive-cycle prod-unverifiable.
 
 **Actions:**
-- **Snapshot briefing-09 NOW** to `ops/snapshots/briefing-2026-04-28-09.json` before next runner overwrite at ~10:08Z (per Hour-19 codified methodology).
-- Draft community-growth note `ops/community/2026-04-28T09-15Z-briefing-novelty-v2-modal-restoration-40pct-5-consec-bounce-was-1-cycle-incidental.md` capturing: trajectory, modal-restoration reading, symmetry-with-DIVERGENCE-bounce-falsification (both Hour-08 +20pp signals retire as 1-cycle-incidental), Hour-10 watchpoint spec (triple-flatline vs deepening vs quasi-cyclic-oscillation), CEO-route URGENT status retained.
-- CEO-route: NO fresh action this cycle pending Hour-10 disambiguation. V2 self-elevation moratorium remains in force.
-
-### T2 — `build-cycle` — Design-polish 1-cycle skip + Hour-10 disambiguation gate
-
-7-cycle design-polish ship cluster (post-Hour-00 resume: 390b39910 → ecf0c6fd9 → 5e96de402 → e26001d08 → 36d33f4a7 → 531b01ed6 → 8d04a7795) ends with **Hour-09 1-skip**. INTERMITTENT-CANONICAL pattern reclassifies to **cluster-7-ship-then-1-skip** (87.5% canonical density). System SLO 24-of-42 = 57.14% — exact match to Hour-08 prestaged skip-arithmetic.
-
-**Actions:**
-- Build-cycle log entry: `ops/build-cycle/2026-04-28T09-15Z-design-polish-1-cycle-skip-after-cluster-7-pattern-reclassifies-to-cluster-with-skip.md` capturing: cluster-7-ship completes, 1-cycle skip lands, pattern downgrade rationale, SLO regression confirms prestaged arithmetic.
-- **Hour-10 disambiguation gate codified:** `design-polish ship resumes → 25-of-43 = 58.14% blip-confirmed pattern reclassifies again to cluster-7-ship-1-skip-1-resume rebound` vs `2nd-consec skip → 24-of-43 = 55.81% trend-onset, 1st time below Hour-04 prior peak 56.76% since Hour-06, channel-decay hypothesis revives`.
-- DIVERGENCE-CONTRACTS 1-cycle-incidental confirmation: file delta-note `ops/build-cycle/2026-04-28T09-15Z-divergence-contracts-1-cycle-incidental-confirmed-at-2-of-2-historic.md`.
-
-### T3 — `publish` — BUIDL Cycle 44 + T-CMS-BACKLOG-CHANNEL-INERTIA meta-signal + Hour-10 design-polish-as-publish-proxy
-
-T-PUBLISH-QUEUE-DRIFT-BUIDL Cycle 44 widens (43.24h queued, 20.97h bundle-stale, 44-cycle no-Jefe-action). At 44-cycle-no-action without explicit deferral, the inertia itself becomes meta-signal worth naming: **T-CMS-BACKLOG-CHANNEL-INERTIA**.
-
-**Actions:**
-- Delta-only follow-up: `ops/build-cycle/2026-04-28T09-15Z-buidl-publish-queue-drift-cycle-44-T-CMS-BACKLOG-CHANNEL-INERTIA-meta-signal-named.md`.
-- T-EOD-QA-EGRESS 30th-consecutive (round-number milestone) — Jefe direct-read fallback still pending allowlist update for degen0x.com / Vercel / GA / GSC.
-- Lock-state delta: locks family stable at 2-member, both DAEMON-OWNED, both DO-NOT-mv. mv-recipe scope: `.git/index.lock` only.
-- **Forward-prediction Hour-10:** Design-polish resume probable (cluster-7-ship-1-skip pattern more likely mean-reverting than decay-onset given 7-cycle prior density); briefing-runner GREEN expected (40-streak suggests >99% per-cycle reliability). If design ship lands → publish-channel acts as proxy that BUIDL-queue inertia is willful-deferral not capability-loss.
+- Delta-only follow-up: `ops/build-cycle/2026-04-28T10-15Z-buidl-publish-queue-drift-cycle-45-delta-only.md` (single-line cycle update; recurrence-rule active suppresses full incident-doc re-issue).
+- Lock state delta: `index.lock` 0-min concurrent (mv-safe but EPERM observed this cycle, fallback to `cp index /tmp/gix-$$ && GIT_INDEX_FILE=/tmp/gix-$$` per Hour-03 2026-04-27 precedent for the standup-commit write-path); `next-index-6.lock` 3-cycle-persistent (Hour-11 watchpoint = 4-cycle reclassify DAEMON-OWNED-tertiary); `next-index-8.lock` 5-cycle-invariant DO-NOT-mv (size 561856→563301 minor drift — flag if drift continues); `maintenance.lock` 10-cycle-invariant DO-NOT-mv (round-number milestone).
+- **Forward-prediction Hour-11:** If T1 ships, design-polish 1-cycle-blip-reverses + system SLO 56.82% partial-recovery; briefing-11 V2 watchpoint 40%-return = period-2-oscillation canonical (most likely given mechanism-a hypothesis). If T1 does NOT ship, system SLO 54.55% crosses below 55% floor 1st time since Hour-02 — channel-decay-confirmed becomes the headline of Hour 11's standup.
 
 ---
 
-*Forward-prediction reconciliation:* Hour 08 prestaged Hour-09 outcomes for both V2 (≤50% / >60% / =60%) and design-polish (8th-consec ship vs 1-skip) — Hour-09 reality landed in the "skip" branch on both axes. The skip-arithmetic SLO (24-of-42 = 57.14%) verified to two decimal places. The two Hour-08 bounce signals (V2 +20pp recovery-direction, DIVERGENCE-CONTRACTS −4) both retire as 1-cycle-incidental at the same disambiguation gate — symmetry across independent metrics is itself signal-grade, suggesting Hour-08 was an outlier across multiple noise channels rather than two independent regime-shifts.
+*Forward-prediction reconciliation:* Hour 09 prestaged Hour-10 outcomes for both V2 (40% triple-flatline / ≤30% deepening / ≥60% second bounce) and design-polish (ship 58.14% blip / 2-skip 55.81% trend-onset). Hour-10 reality landed in the **adverse branch on design-polish** (2-skip trend-onset, exact arithmetic match to 2 decimal places) and the **constructive-but-non-modal branch on V2** (60% bounce confirms quasi-cyclic-oscillation hypothesis). The build-cycle channel and the briefing-novelty channel are now decoupled regimes: build-cycle in decay-onset, briefing-novelty in 2-regime oscillation. Hour-11 disambiguates whether build-cycle decay deepens or mean-reverts, and whether briefing-novelty oscillation has true period-2 or transitions to a new state.
