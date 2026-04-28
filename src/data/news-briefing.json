@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T10:07:43Z",
-  "briefing_id": "briefing-2026-04-28-10",
+  "generated_at": "2026-04-28T11:05:00Z",
+  "briefing_id": "briefing-2026-04-28-11",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-10-001",
-      "headline": "BTC stalls at $80K wall as crypto market sheds 2.3% to $2.65T",
-      "slug": "btc-stalls-80k-market-sheds",
-      "tldr": "Bitcoin failed a fourth attempt at $80,000 and slid to $77,005, pulling total crypto market cap down 2.3% to $2.65 trillion ahead of this week's Fed decision.",
-      "why_it_matters": "Why it matters: Concentrated sell orders are capping every rally despite record stablecoin liquidity, signaling distribution by large holders right as macro risk peaks.",
+      "id": "story-2026-04-28-11-001",
+      "headline": "TOKEN2049 Dubai postponed to 2027 amid heightened UAE security risks",
+      "slug": "token2049-dubai-postponed-2027-uae-security",
+      "tldr": "TOKEN2049 organizers delayed the flagship Dubai conference to 2027, citing escalating security risks across the UAE region.",
+      "why_it_matters": "Why it matters: A premier global crypto event retreating from Dubai signals broader regional instability that could redirect institutional crypto activity away from the Gulf.",
       "the_details": [
-        "BTC -2.75% to $77,005 on $35.2B volume; ETH -4.3% to $2,293 with $16B turnover.",
-        "Bitcoin still up ~13.6% in April, on pace for its best month in a year if it holds.",
-        "BTC dominance climbs to 58.1% as altcoins absorb the brunt of the selloff."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
-      "category": "markets",
-      "impact": "high",
-      "timestamp": "2026-04-28T10:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-10-002",
-      "headline": "Aave rallies DeFi partners to contain $292M Kelp DAO contagion",
-      "slug": "aave-rallies-defi-kelp-bailout",
-      "tldr": "Aave is coordinating a multi-protocol bailout after Kelp DAO's $292M LayerZero exploit left $10B of Aave deposits drained in a deposit run last week.",
-      "why_it_matters": "Why it matters: This is the first real-world test of cross-chain DeFi solvency \u2014 if the coalition fails, restaking-collateralized lending may not survive 2026.",
-      "the_details": [
-        "Attacker minted 116,500 unbacked rsETH by abusing Kelp's LayerZero bridge messaging.",
-        "Aave TVL plunged $10B post-exploit as lenders pulled funds from impaired collateral.",
-        "Coalition includes restakers and bridge operators trying to reissue backing across 20 chains."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/business/2026/04/23/aave-rallies-defi-partners-to-contain-fallout-from-usd292-million-kelpdao-hack",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-28T10:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-10-003",
-      "headline": "Crypto's worst month in a year: $606M stolen in 18 days of April",
-      "slug": "april-606m-hack-surge",
-      "tldr": "Hackers have lifted $606.2M from crypto protocols in just the first 18 days of April \u2014 3.7x what the entire first quarter of 2026 lost combined.",
-      "why_it_matters": "Why it matters: Two state-actor-grade exploits inside three weeks suggest pre-signed transaction and bridge-layer attacks are the new attack surface, not smart-contract bugs.",
-      "the_details": [
-        "April 1: Drift Protocol drained $285M via Solana 'durable nonces' \u2014 North Korea suspected.",
-        "April 19: Kelp DAO hit for $292M through LayerZero bridge messaging exploit.",
-        "Smaller hits: CoW Swap, Zerion, Rhea Finance and Silo Finance also compromised this month."
-      ],
-      "source": "AInvest",
-      "source_url": "https://www.ainvest.com/news/april-606m-hack-surge-liquidity-flow-shock-2604/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-28T10:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-10-004",
-      "headline": "TOKEN2049 Dubai pushed to April 2027 over UAE security risks",
-      "slug": "token2049-dubai-postponed-2027",
-      "tldr": "TOKEN2049 organizers postponed the Dubai conference by a full year to April 21\u201322, 2027, citing deteriorating security conditions across the United Arab Emirates.",
-      "why_it_matters": "Why it matters: Losing the Middle East's flagship crypto gathering reroutes deal flow and capital introductions to Singapore and Hong Kong for the rest of 2026.",
-      "the_details": [
-        "Original 2026 dates scrapped; venue and sponsors expected to roll forward intact.",
-        "Decision follows heightened regional security concerns across UAE in recent weeks.",
-        "TOKEN2049 Singapore in October now becomes the year's only flagship event."
+        "Original 2026 Dubai dates scrapped after consultations with UAE authorities and venue partners over deteriorating security conditions",
+        "TOKEN2049 Singapore in October 2026 remains on schedule and now becomes the year's marquee global gathering",
+        "Dubai stop has drawn 15,000-plus attendees in prior years, anchoring the Middle East crypto calendar"
       ],
       "source": "The Block",
       "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
       "category": "adoption",
-      "impact": "medium",
-      "timestamp": "2026-04-28T10:00:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-28T08:30:00Z"
     },
     {
-      "id": "story-2026-04-28-10-005",
-      "headline": "Jupiter unlocks 1.54% of supply today \u2014 $9.67M JUP hits market",
-      "slug": "jupiter-jup-unlock-april-28",
-      "tldr": "Solana DEX aggregator Jupiter is unlocking 1.54% of circulating JUP supply today, releasing roughly $9.67M of tokens into a market already wobbling under L1 weakness.",
-      "why_it_matters": "Why it matters: SOL is already pinned near $86 with 92% of ETF inflows gone \u2014 fresh JUP supply tests whether Solana's flagship app token can absorb dilution mid-correction.",
+      "id": "story-2026-04-28-11-002",
+      "headline": "Bitcoin ETFs vacuum up $933M, ride 9-day streak as crypto funds hit $155B AUM",
+      "slug": "bitcoin-etfs-933m-inflow-streak-155b-aum",
+      "tldr": "Bitcoin spot ETFs pulled in $933 million last week and notched their longest inflow streak since February.",
+      "why_it_matters": "Why it matters: Sticky institutional demand is decoupling BTC's price floor from retail sentiment heading into a macro-heavy central bank week.",
       "the_details": [
-        "Unlock represents 1.54% of circulating JUP, valued at ~$9.67M at current prices.",
-        "Comes as Solana spot ETF inflows collapsed from $419M (Nov 2025) to $34M in April.",
-        "Firedancer upgrade still on track for 1M TPS, providing the bull case if supply absorbs."
+        "Total crypto fund AUM climbed to $155 billion, the highest level since February 2026 per CoinShares data",
+        "Spot Bitcoin ETFs logged 9 consecutive sessions of net inflows totaling more than $2 billion",
+        "Inflows accelerating despite BTC repeatedly rejecting the $80,000 resistance ceiling and slipping below $77,000"
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-is-on-track-for-its-best-month-in-a-year-usd5-billion-usdt-growth-fuels-the-rebound",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T07:45:00Z"
+    },
+    {
+      "id": "story-2026-04-28-11-003",
+      "headline": "Fed, BoJ, ECB, BoE rate decisions converge as crypto braces for macro super-week",
+      "slug": "fed-boj-ecb-boe-rate-decisions-macro-super-week",
+      "tldr": "Four major central banks set policy in a 72-hour window, with Wednesday's FOMC the highest-stakes event for risk assets.",
+      "why_it_matters": "Why it matters: A synchronized policy week could detonate cross-asset volatility just as BTC clings to support and ETH battles $2,400 resistance.",
+      "the_details": [
+        "Federal Reserve decision lands Wednesday April 29, with traders pricing rate-path uncertainty into the front of the curve",
+        "Bank of Japan, ECB, and Bank of England all schedule rate verdicts within the same 72-hour window this week",
+        "BTC slipped below $77,000 Tuesday morning after rejecting the $79,000 breakout zone for the fourth time"
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T06:15:00Z"
+    },
+    {
+      "id": "story-2026-04-28-11-004",
+      "headline": "Solana ETF inflows crash 92% from $419M peak as institutional rotation stalls",
+      "slug": "solana-etf-inflows-crash-92-percent-institutional-rotation",
+      "tldr": "Spot Solana ETF inflows dropped to $34 million in April from $419 million in November, signaling sharp institutional fatigue.",
+      "why_it_matters": "Why it matters: Capital is consolidating into Bitcoin while alt-ETF demand evaporates, blocking the rotation thesis altcoin bulls are pricing.",
+      "the_details": [
+        "SOL trades near $86 with a $49.8 billion market cap, ranked seventh by total crypto market value",
+        "Death cross persists with the 200-day moving average at $131.2, well above current spot price",
+        "Firedancer upgrade still targets 1 million TPS, but ETF demand has not rewarded the technical roadmap"
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
       "category": "altcoins",
       "impact": "medium",
-      "timestamp": "2026-04-28T10:00:00Z"
+      "timestamp": "2026-04-28T05:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-11-005",
+      "headline": "Ripple CTO flags sophisticated Robinhood phishing campaign targeting crypto users",
+      "slug": "ripple-cto-robinhood-phishing-campaign-warning",
+      "tldr": "David Schwartz publicly warned of a polished Robinhood email phishing operation that impersonates official communications convincingly.",
+      "why_it_matters": "Why it matters: With $606M already lost to crypto attacks this month, retail-facing phishing now compounds the institutional exploit wave.",
+      "the_details": [
+        "Phishing emails clone Robinhood's templates, headers, and sender domains to harvest user credentials at scale",
+        "Schwartz urged users to verify all account alerts inside the Robinhood app rather than clicking email links",
+        "Attack coincides with attackers pivoting from smart-contract exploits toward social engineering and signing infrastructure"
+      ],
+      "source": "The Coin Republic",
+      "source_url": "https://www.thecoinrepublic.com/2026/04/27/crypto-news-ripple-cto-sounds-alarm-over-robinhood-email-phishing-attack/",
+      "category": "security",
+      "impact": "medium",
+      "timestamp": "2026-04-27T22:00:00Z"
     }
   ]
 }
