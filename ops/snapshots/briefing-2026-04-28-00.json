@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-28T00:08:00Z",
+  "briefing_id": "briefing-2026-04-28-00",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-28-00-001",
+      "headline": "Strategy stockpile hits 818,334 BTC at $62B cost basis, ~3.9% of supply",
+      "slug": "strategy-818k-btc-corporate-treasury-milestone",
+      "tldr": "Saylor's Strategy now holds 818,334 BTC bought for nearly $62 billion at an average $75,537 per coin, the largest corporate stash ever.",
+      "why_it_matters": "Why it matters: A single public company has absorbed almost 4% of bitcoin's circulating supply, anchoring spot demand even as ETF flows cool.",
+      "the_details": [
+        "Average cost basis $75,537 per BTC, currently in the money with spot near $78,100.",
+        "Bitmine now holds over 5 million ETH after a 10-month sprint, while most digital asset treasuries have stopped accumulating.",
+        "Concentration risk grows as corporate buyers replace retail and miners as marginal demand."
+      ],
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-price-today-monday-april-27-2026-prices-hold-ahead-of-potential-peace-talks-and-fed-meeting-114927492.html",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-27T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-00-002",
+      "headline": "SEC schedules CLARITY Act roundtable to settle SEC vs. CFTC crypto turf war",
+      "slug": "sec-clarity-act-roundtable-sec-cftc-jurisdiction",
+      "tldr": "The SEC has officially scheduled a CLARITY Act roundtable to define which regulator oversees digital assets and lay out a US market framework.",
+      "why_it_matters": "Why it matters: This could end seven years of jurisdictional whiplash and unlock listings, custody, and clearing decisions that have been on ice.",
+      "the_details": [
+        "Builds on the March 17 SEC-CFTC 68-page joint interpretive release that supersedes the 2019 Framework.",
+        "Coalition of 100+ firms including Coinbase and Ripple is pushing the Senate Banking Committee to mark up CLARITY now.",
+        "Stablecoin rulemaking under the GENIUS Act is moving in parallel, with FDIC NPRM for permitted payment issuers."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T18:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-00-003",
+      "headline": "Spot Solana ETF inflows crater 92% to $34M as treasury bid evaporates",
+      "slug": "solana-spot-etf-inflows-collapse-92-percent",
+      "tldr": "Spot Solana ETF inflows have collapsed from $419M in November 2025 to just $34M in April 2026 as SOL hovers near $86.50.",
+      "why_it_matters": "Why it matters: SOL was the marquee post-BTC ETF launch; cooling demand here weakens the bull case for a wider altcoin ETF wave in 2026.",
+      "the_details": [
+        "Solana market cap sits near $49.8B, ranking 7th by total value.",
+        "Agave 4.1 client targeting Q3 2026 testnet, mainnet finality cut to 100-150ms slated for Q4.",
+        "Tokamak Network bucked the tape with a 15.65% rip on April 27, taking the #4 Upbit volume spot."
+      ],
+      "source": "AMBCrypto",
+      "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
+      "category": "markets",
+      "impact": "medium",
+      "timestamp": "2026-04-27T16:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-00-004",
+      "headline": "Aave plants flag on Solana via Sunrise DeFi, redirecting $14.7B TVL strategy",
+      "slug": "aave-expands-to-solana-sunrise-defi",
+      "tldr": "Aave has launched on Solana through Sunrise DeFi, routing Ethereum-backed liquidity into faster, cheaper execution on the SVM.",
+      "why_it_matters": "Why it matters: The largest lending protocol going multi-VM signals that Ethereum-only DeFi is officially over — even for blue chips.",
+      "the_details": [
+        "Inflows so far reflect repositioning from existing Aave users, not net new capital.",
+        "Aave's $14.7B TVL is the benchmark every other money market is now chasing onto Solana.",
+        "Move pressures Solend, MarginFi, and Kamino to defend share against a battle-tested incumbent."
+      ],
+      "source": "AMBCrypto",
+      "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
+      "category": "defi",
+      "impact": "medium",
+      "timestamp": "2026-04-27T14:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-00-005",
+      "headline": "Bhutan moves another 250 BTC; 2026 outflows now top $240M, holdings down 73%",
+      "slug": "bhutan-bitcoin-outflows-240-million-2026",
+      "tldr": "Bhutan moved 250 BTC on April 13, pushing 2026 outflows past $240M as the country's stash sits 73% below its October 2024 peak.",
+      "why_it_matters": "Why it matters: A sovereign holder quietly distributing into rallies is a structurally bearish counter to the Strategy accumulation narrative.",
+      "the_details": [
+        "Outflows tracked on-chain by Arkham Intelligence across 2026 transfers.",
+        "Bhutan was once a marquee sovereign bitcoin miner; current treasury thesis is unclear.",
+        "Block (XYZ) holds 8,780 BTC at $674.3M; XXI (CEP) holds 43,514 BTC at $3.28B for context."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/397558/bhutan-moves-250-btc-as-2026-outflows-top-240-million-arkham-data",
+      "category": "bitcoin",
+      "impact": "medium",
+      "timestamp": "2026-04-27T12:00:00Z"
+    }
+  ]
+}
