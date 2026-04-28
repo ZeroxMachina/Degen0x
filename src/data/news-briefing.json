@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-27T19:10:00Z",
-  "briefing_id": "briefing-2026-04-27-19",
+  "generated_at": "2026-04-28T08:08:00Z",
+  "briefing_id": "briefing-2026-04-28-08",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-27-19-001",
-      "headline": "Four central banks — Fed, ECB, BoJ, BoE — all set rates this week as crypto holds $2.71T",
-      "slug": "central-banks-rate-week-crypto-271t",
-      "tldr": "Bank of Japan, Federal Reserve, ECB and Bank of England each deliver policy decisions this week, the densest macro window of 2026 so far.",
-      "why_it_matters": "Why it matters: Synchronized rate signals will reset the dollar trade that has moved in near-perfect opposition to BTC for nearly four years, dictating whether the $79K wall finally breaks.",
+      "id": "story-2026-04-28-08-001",
+      "headline": "Bitcoin slips below $77K, ETH wobbles at $2,328 as traders eye Wednesday FOMC",
+      "slug": "bitcoin-slips-below-77k-eth-wobbles-pre-fomc",
+      "tldr": "BTC failed to hold the $80K wall and dropped under $77K with ETH at $2,328 as macro-cautious traders position into the Fed's April 29 decision.",
+      "why_it_matters": "Why it matters: Markets are derisking despite a 9-day spot ETF inflow streak — Powell's tone Wednesday will dictate whether April's rebound has legs or stalls.",
       "the_details": [
-        "Crypto market cap sits at $2.71T, up 1.7% in 24 hours, with $66.6B in trading volume.",
-        "Q1 GDP and March PCE inflation print alongside Visa, Mastercard, Robinhood and Galaxy earnings.",
-        "BTC-dollar inverse correlation is at its most extreme reading in almost four years per CoinDesk."
+        "BTC trades $78,112 (+0.56%), ETH $2,328 (+0.61%), with $80K rejected as concentrated sell wall.",
+        "US Bitcoin spot ETFs notched 9 straight inflow days, topping $2B in the streak.",
+        "Fed FOMC press conference lands April 29; ECB, BoE, BoJ also decide rates this week."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/27/bitcoin-hits-wall-at-usd80-000-one-analyst-says-the-pullback-is-temporary",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-27T13:00:00Z"
+      "timestamp": "2026-04-28T07:45:00Z"
     },
     {
-      "id": "story-2026-04-27-19-002",
-      "headline": "Spot Solana ETF inflows crater 92% to $34M as institutional risk appetite cools",
-      "slug": "solana-etf-inflows-crater-92-percent",
-      "tldr": "Spot SOL ETF net inflows fell from $419M in November 2025 to just $34M in April 2026, a 92% collapse signaling weakening institutional demand.",
-      "why_it_matters": "Why it matters: Solana was supposed to be the next ETF growth story after BTC and ETH, but the flow drought caps near-term price upside and undercuts the L1 rotation thesis.",
+      "id": "story-2026-04-28-08-002",
+      "headline": "Solana spot ETF inflows collapse 92% — from $419M peak to just $34M in April",
+      "slug": "solana-spot-etf-inflows-collapse-92-percent",
+      "tldr": "SOL spot ETF inflows have cratered from $419M last November to $34M this month as institutional appetite for alt L1s thins out.",
+      "why_it_matters": "Why it matters: The 92% drop signals the post-launch SOL ETF bid has fully exhausted, putting downside pressure on alt L1 narratives just as Firedancer ships.",
       "the_details": [
-        "SOL trades near $86.47 with a $49.8B market cap, ranking seventh.",
-        "Solana Fear & Greed Index sits at 33, deeper into Fear than the broader market's 47.",
-        "Firedancer is still targeting 1M TPS in 2026; Alpenglow has cut finality below 200ms."
+        "SOL trades near $86.47 with a $49.8B market cap, holding seventh by market cap.",
+        "November 2025 monthly inflows hit $419M; April 2026 has captured just $34M.",
+        "Firedancer upgrade still targeting a move from ~1,300 TPS toward 1M TPS in 2026."
       ],
-      "source": "AMBCrypto",
-      "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
       "category": "altcoins",
       "impact": "high",
-      "timestamp": "2026-04-27T10:30:00Z"
+      "timestamp": "2026-04-27T16:00:00Z"
     },
     {
-      "id": "story-2026-04-27-19-003",
-      "headline": "SEC staff says crypto UI providers can skip broker-dealer registration under new conditions",
-      "slug": "sec-crypto-ui-broker-dealer-no-action",
-      "tldr": "The SEC's Trading and Markets division issued guidance on April 13 telling Covered User Interface Providers they will not face enforcement absent broker-dealer registration if conditions are met.",
-      "why_it_matters": "Why it matters: This is the first explicit safe harbor for front-end aggregators and DEX UIs — directly de-risking products like Uniswap interface, 1inch and Jupiter under U.S. law.",
+      "id": "story-2026-04-28-08-003",
+      "headline": "100+ crypto firms led by Coinbase, Ripple push Senate to mark up Clarity Act",
+      "slug": "crypto-firms-push-senate-clarity-act-markup",
+      "tldr": "A coalition of more than 100 crypto firms is pressing the Senate Banking Committee to advance the Clarity Act, building on March's SEC-CFTC joint guidance.",
+      "why_it_matters": "Why it matters: Without Senate action this cycle, the SEC-CFTC March framework risks becoming the de facto rulebook — companies want statutory cover before any 2027 enforcement pivot.",
       "the_details": [
-        "Joint SEC-CFTC March 17 release classifies BTC, ETH, SOL, XRP and LINK as digital commodities.",
-        "FDIC, Treasury and FinCEN/OFAC GENIUS Act stablecoin rules are out for comment through June 2-9.",
-        "SEC Chair Atkins has shifted the agency from 'enforcement heavy' to 'rulemaking mode' at his one-year mark."
+        "Coinbase, Ripple, and 100+ firms signed a letter urging Senate Banking markup of the Clarity Act.",
+        "Builds on the March 17 SEC-CFTC 68-page joint release that set a five-category token taxonomy.",
+        "SEC staff said April 13 it won't object to DEX UI providers operating without broker-dealer registration."
       ],
-      "source": "SEC.gov",
-      "source_url": "https://www.sec.gov/newsroom/press-releases/2026-30-sec-clarifies-application-federal-securities-laws-crypto-assets",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
       "category": "regulation",
       "impact": "high",
-      "timestamp": "2026-04-27T08:00:00Z"
+      "timestamp": "2026-04-23T14:00:00Z"
     },
     {
-      "id": "story-2026-04-27-19-004",
-      "headline": "Aave plants $14.7B TVL flag on Solana via Sunrise DeFi as cross-chain liquidity war heats up",
-      "slug": "aave-solana-sunrise-defi-launch",
-      "tldr": "Aave's deployment to Solana through Sunrise DeFi routes Ethereum-backed liquidity into SVM execution, layering on top of Solana's existing $5.6B DeFi base.",
-      "why_it_matters": "Why it matters: This tests whether Solana speed actually drives net-new lending demand or just siphons Ethereum liquidity — the answer will set the template for every L1 expansion.",
+      "id": "story-2026-04-28-08-004",
+      "headline": "TOKEN2049 Dubai pushed to 2027 as UAE security risks escalate",
+      "slug": "token2049-dubai-postponed-to-2027",
+      "tldr": "The TOKEN2049 Dubai conference has been postponed to 2027 amid heightened security risks in the UAE, sidelining one of crypto's biggest annual gatherings.",
+      "why_it_matters": "Why it matters: Losing the spring Dubai event tears a hole in the Middle East crypto deal calendar and forces VCs and exchanges to recut their 2026 BD pipeline.",
       "the_details": [
-        "Ethereum still anchors over $12B of Aave's $14.7B total TVL.",
-        "Aave saw $8.4B in deposits leave in 48 hours after the April KelpDAO and Drift exploits.",
-        "Solana DeFi TVL stands near $5.6B, the largest non-EVM DeFi base."
-      ],
-      "source": "AMBCrypto",
-      "source_url": "https://ambcrypto.com/aave-shifts-14-7b-tvl-strategy-yet-new-demand-is-missing-why/",
-      "category": "defi",
-      "impact": "medium",
-      "timestamp": "2026-04-27T09:15:00Z"
-    },
-    {
-      "id": "story-2026-04-27-19-005",
-      "headline": "The Block names Steve Chung CEO alongside $10M Foresight Ventures raise",
-      "slug": "the-block-steve-chung-ceo-foresight",
-      "tldr": "Crypto media outlet The Block appointed veteran media operator Steve Chung as CEO with a fresh $10M check from Foresight Ventures.",
-      "why_it_matters": "Why it matters: Crypto media has been bleeding for years; a fresh raise plus an outside CEO signals the data-and-research playbook is the model investors will fund next cycle.",
-      "the_details": [
-        "Larry Cermak shifts to President, focused on research and product.",
-        "Foresight Ventures is leading the round, doubling down on info infrastructure.",
-        "TOKEN2049 Dubai was just pushed to 2027 amid heightened UAE security risks."
+        "Organizers cited heightened security risks across the UAE for the postponement to 2027.",
+        "Singapore TOKEN2049 stays on the calendar for fall 2026, partially absorbing displaced BD demand.",
+        "Sidelines a key Q2 deal-flow venue; funds are recutting Middle East travel plans."
       ],
       "source": "The Block",
-      "source_url": "https://www.theblock.co/post/398948/the-block-appoints-steve-chung-ceo",
-      "category": "infrastructure",
+      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-27T14:00:00Z"
+      "timestamp": "2026-04-27T10:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-08-005",
+      "headline": "Vercel breach forces crypto devs into mass API key and secret rotation",
+      "slug": "vercel-breach-crypto-api-key-rotation",
+      "tldr": "A security incident at Vercel sent crypto developers scrambling to rotate API keys and lock down secrets stored in the popular hosting platform.",
+      "why_it_matters": "Why it matters: Vercel underpins much of crypto's frontend — a lasting compromise of cached env vars could expose RPC keys, signer endpoints and price-feed credentials.",
+      "the_details": [
+        "Vercel disclosed an internal security incident on April 20, 2026.",
+        "Crypto teams using Vercel for dApp frontends were urged to rotate all API keys and tokens.",
+        "Lands inside April's $606M DeFi exploit tally, the worst hack month in over a year."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
+      "category": "security",
+      "impact": "medium",
+      "timestamp": "2026-04-20T15:00:00Z"
     }
   ]
 }
