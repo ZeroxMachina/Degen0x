@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T14:08:00Z",
-  "briefing_id": "briefing-2026-04-28-14",
+  "generated_at": "2026-04-28T15:05:00Z",
+  "briefing_id": "briefing-2026-04-28-15",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-14-001",
-      "headline": "SEC's Atkins unveils tokenization sandbox as Lummis vows CLARITY Act push",
-      "slug": "sec-atkins-tokenization-sandbox-lummis-clarity-act",
-      "tldr": "U.S. regulators flashed a unified pro-crypto signal at Bitcoin 2026, with the SEC, CFTC and White House aligning on a tokenization framework.",
-      "why_it_matters": "Why it matters: A coordinated SEC-CFTC posture removes the agency-shopping ambiguity that has kept institutional desks on the sidelines for years.",
+      "id": "story-2026-04-28-15-001",
+      "headline": "BTC slides under $77K, ETH below $2,300 ahead of Fed as $2.65T crypto market sheds 2.3%",
+      "slug": "btc-eth-slide-fed-week",
+      "tldr": "Bitcoin pulled back to $76,472 and Ether to $2,278 as traders de-risked into Wednesday's FOMC, lopping 2.3% off total crypto market cap.",
+      "why_it_matters": "Why it matters: A hawkish hold while Brent trades above $104 would extend the breakdown from $80K, with analysts flagging $74,182 as the next bid zone before structure breaks.",
       "the_details": [
-        "SEC Chair Paul Atkins said an innovation exemption letting firms test on-chain tokenization will launch in coming weeks.",
-        "White House digital-assets head Patrick Witt teased an imminent Strategic Bitcoin Reserve announcement at the conference.",
-        "Senator Cynthia Lummis vowed to push the CLARITY Act into review, targeting a final U.S. crypto market-structure law."
+        "BTC opened at $77,368 and printed $76,472 by 7:10am ET; ETH down 2.8% from Monday's open, per Yahoo Finance.",
+        "Total crypto market cap fell 2.3% to $2.65T as Strait of Hormuz closure kept Brent above $104 a barrel.",
+        "CoinDesk pegs the 24-hour BTC range at $74,182-$78,290 with bulls needing a reclaim of $80,000 to invalidate the pullback."
       ],
-      "source": "TradingKey",
-      "source_url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/261829066-crypto-bitcoin-btc-price-sec-cftc-white-house-paul-atkins-clarity-tradingkey",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-28T13:45:00Z"
-    },
-    {
-      "id": "story-2026-04-28-14-002",
-      "headline": "April crypto hacks hit $606M in 18 days, worst run since Bybit breach",
-      "slug": "april-2026-crypto-hacks-606m-worst-since-bybit",
-      "tldr": "Crypto protocols lost $606M to 47 hacks in just 18 days of April, the worst stretch since Bybit's $1.5B breach in February 2025.",
-      "why_it_matters": "Why it matters: Bridge-design and key-management assumptions baked into 2025 valuations are no longer defensible — TVL is repricing security risk in real time.",
-      "the_details": [
-        "Lazarus-linked Drift Protocol drain on April 1 took $285M after social engineers compromised an admin key.",
-        "Kelp DAO bridge exploit on April 19 siphoned ~116,500 rsETH worth roughly $293M via LayerZero.",
-        "Attack frequency is up 68% YoY with 47 separate DeFi incidents recorded in the first four-and-a-half months of 2026."
-      ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-28T13:20:00Z"
-    },
-    {
-      "id": "story-2026-04-28-14-003",
-      "headline": "Michigan consumer sentiment craters to record 49.8 as inflation expectations spike",
-      "slug": "michigan-sentiment-record-low-inflation-expectations-spike",
-      "tldr": "U.S. consumer sentiment fell to an all-time low of 49.8 in April with one-year inflation expectations jumping to 4.8% from 3.8% the prior month.",
-      "why_it_matters": "Why it matters: Stagflation prints kill the soft-landing bid for risk assets and complicate the Fed's rate path right as Powell hands the gavel to Warsh.",
-      "the_details": [
-        "University of Michigan consumer sentiment index hit 49.8 in April, the lowest reading on record.",
-        "One-year inflation expectations surged to 4.8% from 3.8%, driven largely by Iran-conflict supply shocks.",
-        "Long-term five-to-ten-year inflation expectations rose to 3.5%, the highest reading since October 2025."
-      ],
-      "source": "CoinDesk",
+      "source": "Yahoo Finance / CoinDesk",
       "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T12:50:00Z"
+      "timestamp": "2026-04-28T13:00:00Z"
     },
     {
-      "id": "story-2026-04-28-14-004",
-      "headline": "ETH ETFs bleed $75.9M as BTC, SOL and XRP funds pull fresh inflows",
-      "slug": "eth-etf-outflow-btc-sol-xrp-inflows-rotation",
-      "tldr": "Spot Ethereum ETFs posted $75.9M in net outflows while Bitcoin, Solana and XRP funds attracted inflows, exposing a clean rotation out of ETH.",
-      "why_it_matters": "Why it matters: Allocators are pricing the newly SEC-blessed XRP and SOL products as cleaner directional bets, putting fee and narrative pressure on ETH issuers.",
+      "id": "story-2026-04-28-15-002",
+      "headline": "Four central banks set rates this week as Brent above $104 keeps inflation hot",
+      "slug": "four-central-banks-rate-week",
+      "tldr": "The BOJ, Fed, ECB and BOE all decide policy this week into a $104 oil tape, the most concentrated rate-setting cluster of 2026.",
+      "why_it_matters": "Why it matters: Crypto's near-perfect inverse correlation with the dollar is at a four-year extreme, so any hawkish surprise lands directly on BTC's $76K bid.",
       "the_details": [
-        "Ethereum spot ETFs logged $75.9M in net outflows in the latest session.",
-        "Bitcoin, Solana and XRP ETFs all posted positive net inflows on the same day.",
-        "U.S. spot XRP ETFs now hold $1.53B in AUM with 773M XRP in custody after their March launch."
+        "BOJ, Federal Reserve, ECB and Bank of England all release decisions within the same trading week per CoinDesk's Crypto Week Ahead.",
+        "Brent crude held above $104 and WTI above $90 as the Iran conflict keeps Strait of Hormuz supply offline.",
+        "BTC and the DXY are moving in the most extreme opposition since 2022, raising the stakes on every central bank tone."
       ],
-      "source": "Crypto Briefing",
-      "source_url": "https://cryptobriefing.com/bitcoin-solana-xrp-etfs-see-inflows-ethereum-faces-759m-outflow/",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
       "category": "markets",
-      "impact": "medium",
-      "timestamp": "2026-04-28T12:30:00Z"
+      "impact": "high",
+      "timestamp": "2026-04-28T12:00:00Z"
     },
     {
-      "id": "story-2026-04-28-14-005",
-      "headline": "TOKEN2049 Dubai pushed to 2027 as UAE security risks rattle organizers",
-      "slug": "token2049-dubai-postponed-2027-uae-security",
-      "tldr": "TOKEN2049 organizers postponed the Dubai 2026 edition to 2027, citing heightened security risks across the UAE amid regional geopolitical tension.",
-      "why_it_matters": "Why it matters: Crypto's marquee Middle East summit slipping a year is a tangible read on geopolitical premium — sponsors and family offices are already redirecting Q4 calendars.",
+      "id": "story-2026-04-28-15-003",
+      "headline": "DOJ's Blanche tells crypto devs under probe: keep the line open or pay later",
+      "slug": "doj-blanche-crypto-developer-cooperation",
+      "tldr": "Deputy AG Todd Blanche urged crypto developers under DOJ investigation to maintain active communication with prosecutors, signaling room for charging leniency.",
+      "why_it_matters": "Why it matters: The guidance hardens a post-Tornado Cash thaw and tells founders that silence, not the code, is now the trigger for max-charge outcomes.",
       "the_details": [
-        "Organizers cited heightened security risks in the UAE as the reason for the year-long delay.",
-        "TOKEN2049 Dubai is one of the largest crypto industry conferences globally for Middle East deal flow.",
-        "The postponement pushes the next Dubai edition out to 2027, per The Block."
+        "Blanche addressed developers directly, framing cooperation as the dividing line between civil resolution and indictment.",
+        "Comes days after the SEC's April 13 'Covered User Interface' staff statement carved out front-end builders from broker-dealer registration.",
+        "Pairs with the SEC-CFTC March 17 joint release whose five-category token taxonomy is now the operative federal framework."
       ],
-      "source": "The Block",
-      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
-      "category": "adoption",
+      "source": "Yahoo Finance / Sidley",
+      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
+      "category": "regulation",
       "impact": "medium",
-      "timestamp": "2026-04-28T11:45:00Z"
+      "timestamp": "2026-04-28T11:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-15-004",
+      "headline": "Solana ETF inflows crater 92% to $34M as SOL stalls at $83",
+      "slug": "solana-etf-inflows-crash-92-percent",
+      "tldr": "Spot Solana ETF inflows collapsed from $419M in November 2025 to just $34M in April 2026 as SOL trades 32% below its 2025 high.",
+      "why_it_matters": "Why it matters: ETF demand was the bull-case bridge between Firedancer hype and price; without it, $52 becomes the next technical magnet.",
+      "the_details": [
+        "Spot SOL ETF inflows fell from $419M (Nov 2025) to $34M (Apr 2026), a 92% drawdown per cryptopolitan data.",
+        "SOL trades at $83.17 with a $47.9B market cap, 32% off its 2025 YTD high.",
+        "Analysts target $52 if SOL fails to reclaim $86; Firedancer upgrade still on track for 1M TPS in 2026."
+      ],
+      "source": "CoinMarketCap / Cryptopolitan",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-28T10:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-15-005",
+      "headline": "Solana flips Ethereum on weekly dApp revenue for fifth straight week",
+      "slug": "solana-flips-ethereum-dapp-revenue-fifth-week",
+      "tldr": "Solana out-earned Ethereum on weekly decentralized application revenue for the fifth consecutive week, per CoinDesk tracking.",
+      "why_it_matters": "Why it matters: Sustained revenue dominance, not TVL, is the metric ETH bulls can't easily explain away — and it lands while spot SOL ETFs are bleeding.",
+      "the_details": [
+        "Fifth consecutive weekly win on dApp revenue, a streak not seen since the 2024 memecoin peak.",
+        "Comes as Alpenglow upgrade has cut transaction finality below 200ms on mainnet.",
+        "Major issuers have additional spot SOL products in the filing pipeline despite the inflow slump."
+      ],
+      "source": "CoinDesk / CoinGecko",
+      "source_url": "https://www.coindesk.com/tag/solana",
+      "category": "defi",
+      "impact": "medium",
+      "timestamp": "2026-04-28T09:00:00Z"
     }
   ]
 }
