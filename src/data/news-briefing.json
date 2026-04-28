@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T17:07:00Z",
-  "briefing_id": "briefing-2026-04-28-17",
+  "generated_at": "2026-04-28T18:05:00Z",
+  "briefing_id": "briefing-2026-04-28-18",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-17-001",
-      "headline": "BTC slides to $76.5K, ETH to $2,278 as four central banks line up rate decisions",
-      "slug": "btc-76k-fed-week-rate-decisions",
-      "tldr": "Bitcoin gave back the $80K reclaim attempt as traders de-risk into a Fed, BOJ, ECB and BOE rate-decision week.",
-      "why_it_matters": "Why it matters: Crypto's correlation to macro is back near 4-year highs, so the FOMC dot plot will set risk appetite for May regardless of on-chain narratives.",
+      "id": "story-2026-04-28-18-001",
+      "headline": "U Michigan sentiment craters to 49.8 ATL, inflation expectations spike to 4.8% — BTC stalls at $76.5K",
+      "slug": "umich-sentiment-low-btc-76k",
+      "tldr": "Consumer confidence hit a record low and one-year inflation expectations jumped a full point, freezing Bitcoin's bid back to $80K.",
+      "why_it_matters": "Why it matters: A stagflationary print this hot before tomorrow's Fed boxes Powell into a hawkish hold — bad for risk, bad for any near-term BTC breakout.",
       "the_details": [
-        "BTC traded at $76,342 at 9am ET Tuesday, down ~$1,356 in 24 hours after three sessions opening above $78,000.",
-        "ETH printed its lowest weekly open at $2,278; SOL hovered at $83.17 with a $47.9B cap, per CoinDesk and CoinMarketCap.",
-        "Fed, BOJ, ECB and BOE all set policy this week with U-Mich consumer sentiment at an all-time low of 49.8."
+        "U Michigan consumer sentiment index fell to 49.8 in April, an all-time low driven by Iran-conflict inflation pressure.",
+        "One-year inflation expectations surged to 4.8% from 3.8% the prior month, the largest monthly jump since 2022.",
+        "BTC pulled back from $79K+ earlier in the week to $76,472; ETH off 2.8% to $2,278 ahead of the Fed."
       ],
       "source": "CoinDesk",
       "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T13:30:00Z"
+      "timestamp": "2026-04-28T13:00:00Z"
     },
     {
-      "id": "story-2026-04-28-17-002",
-      "headline": "April 2026 already crypto's worst hack month since Bybit, with $606M stolen in 18 days",
-      "slug": "april-2026-worst-hack-month-606m",
-      "tldr": "Drift and Kelp DAO together account for roughly 95% of April losses, marking the worst stretch for crypto theft since the $1.4B Bybit breach in February 2025.",
-      "why_it_matters": "Why it matters: Two suspected DPRK-linked admin-key exploits on top-20 protocols in 18 days will harden insurance pricing, slow institutional DeFi allocations, and re-open the cross-chain bridge debate.",
+      "id": "story-2026-04-28-18-002",
+      "headline": "Bitcoin ETFs absorb $933M as crypto fund AUM rebounds to $155B — highest since February",
+      "slug": "bitcoin-etf-933m-aum-155b",
+      "tldr": "Spot Bitcoin ETFs took in $933 million as total crypto fund AUM climbed back to $155 billion, the strongest level in over two months.",
+      "why_it_matters": "Why it matters: Institutional bid is absorbing supply even with BTC stalling sub-$80K — a structural floor that didn't exist in prior corrections.",
       "the_details": [
-        "Drift Protocol lost $285M on April 1 via a fake CarbonVote token and compromised admin key that drained vaults in 12 minutes.",
-        "Kelp DAO was drained for $292M on April 18 after an attacker minted 116,500 unbacked rsETH through a misconfigured LayerZero bridge.",
-        "CoW Swap lost $1.2M to a domain hijack on April 14; Grinex was drained of $13.74M in USDT on April 15."
+        "Crypto ETFs hit highest combined AUM since February at $155B, per CoinShares flow data.",
+        "Bitcoin funds led with $933M of weekly inflows; Ethereum products saw smaller positive flows.",
+        "Inflows arrive despite BTC retracing from $79K to $76.5K and macro headwinds from Iran/Hormuz crisis."
       ],
-      "source": "crypto.news",
-      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
-      "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-28T10:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-17-003",
-      "headline": "Atkins-led SEC pivots to 'innovation exemption' for tokenized securities, ends enforcement-first era",
-      "slug": "sec-atkins-innovation-exemption-tokenized",
-      "tldr": "SEC Chair Paul Atkins formally ended the agency's 'regulation by enforcement' stance and previewed a joint SEC-CFTC exemption for onchain tokenized securities trading.",
-      "why_it_matters": "Why it matters: A live innovation exemption would unlock compliant tokenized equities and treasuries on public chains, the single biggest TradFi-onramp catalyst of 2026.",
-      "the_details": [
-        "Atkins said joint SEC-CFTC guidance is being drafted to operationalize the March 17 68-page interpretive release with its five-category token taxonomy.",
-        "The exemption builds on the SEC's April 13 carve-out letting Covered User Interface Providers operate without broker-dealer registration.",
-        "FDIC issued a proposed rule for FDIC-supervised stablecoin issuers under the GENIUS Act, advancing the parallel stablecoin track."
-      ],
-      "source": "CFTC / Norton Rose Fulbright",
-      "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9198-26",
-      "category": "regulation",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
+      "category": "bitcoin",
       "impact": "high",
       "timestamp": "2026-04-28T12:00:00Z"
     },
     {
-      "id": "story-2026-04-28-17-004",
-      "headline": "Solana spot ETF inflows collapse 92% to $34M even as Alpenglow ships sub-200ms finality",
-      "slug": "solana-etf-inflows-collapse-firedancer",
-      "tldr": "SOL ETF flows fell from $419M in November 2025 to $34M in April 2026, a sharp institutional fade just as Alpenglow lands and Firedancer eyes 1M TPS.",
-      "why_it_matters": "Why it matters: Tech is shipping while capital is leaving — a classic narrative-vs-flow dislocation that historically resolves with violent re-rating in either direction once macro clears.",
+      "id": "story-2026-04-28-18-003",
+      "headline": "SEC frees DeFi frontends: 'Covered UI Providers' exempt from broker-dealer registration",
+      "slug": "sec-defi-frontend-broker-exemption",
+      "tldr": "SEC staff said it won't object to non-custodial DeFi interfaces operating without broker-dealer registration, a structural win for the frontend layer.",
+      "why_it_matters": "Why it matters: Removes an existential threat to Uniswap, Jupiter and dozens of other DEX UIs — clearing legal cover for US-domiciled DeFi product teams.",
       "the_details": [
-        "Alpenglow upgrade is live and pushed transaction finality below 200 ms, opening real-time DeFi and HFT-style MEV strategies on Solana.",
-        "Firedancer remains targeted to lift throughput from ~1,300 to 1M TPS by end of 2026.",
-        "Solana DeFi TVL sits near $6B with $15B in stablecoins, but spot ETF demand has cratered 92% in five months."
+        "Staff statement issued April 13 created a 'Covered User Interface Provider' carve-out for software that prepares/submits crypto-security trades.",
+        "Follows the SEC-CFTC March 17 joint guidance establishing a five-bucket token taxonomy.",
+        "Pairs with Atkins' April 27 'innovation exemption' announcement for onchain tokenized securities trading."
       ],
-      "source": "CoinMarketCap CMC AI",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
-      "category": "altcoins",
-      "impact": "medium",
-      "timestamp": "2026-04-28T08:00:00Z"
+      "source": "Sidley Data Matters",
+      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-28T11:00:00Z"
     },
     {
-      "id": "story-2026-04-28-17-005",
-      "headline": "TOKEN2049 Dubai pushed to 2027 as organizers cite heightened UAE security risks",
+      "id": "story-2026-04-28-18-004",
+      "headline": "TOKEN2049 Dubai pushed to 2027 as UAE security risks spike from Hormuz closure",
       "slug": "token2049-dubai-postponed-2027",
-      "tldr": "The flagship Middle East crypto conference is sliding a full year on regional security grounds, gutting the spring 2026 deal-flow calendar.",
-      "why_it_matters": "Why it matters: TOKEN2049 Dubai is the largest non-U.S. crypto deal venue; postponing it removes the main April-May fundraising window for MENA-focused funds and exchanges.",
+      "tldr": "Crypto's largest annual conference postponed its 2026 Dubai edition citing heightened regional security risks tied to the closed Strait of Hormuz.",
+      "why_it_matters": "Why it matters: Removes a major Q4 catalyst for MENA dealflow and signals crypto sponsorship dollars rotating to Singapore, Abu Dhabi, and Hong Kong.",
       "the_details": [
-        "Organizers cited heightened security risks tied to the Iran conflict and the closed Strait of Hormuz as the basis for the move.",
-        "Brent crude has surged back above $104/bbl as U.S.-Iran negotiations stalled, per Yahoo Finance.",
-        "Blockchain Capital is meanwhile raising $700M across two new funds, signaling deal flow is moving back to U.S. venues."
+        "TOKEN2049 organizers cited 'heightened security risks in UAE' from the ongoing Iran conflict and Hormuz closure.",
+        "Brent crude is back above $104 amid the standoff, with US-Iran negotiations stalled.",
+        "Dubai event drew over 15,000 attendees in 2025; 2026 slot will roll forward to 2027."
       ],
       "source": "The Block",
       "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-28T06:00:00Z"
+      "timestamp": "2026-04-28T10:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-18-005",
+      "headline": "Jupiter unlocks $9.67M JUP today as Solana DEX leader faces 1.54% supply dilution",
+      "slug": "jupiter-jup-unlock-april-28",
+      "tldr": "Jupiter is unlocking 1.54% of circulating JUP supply worth roughly $9.67 million on April 28, adding fresh sell-side pressure to the Solana DEX aggregator.",
+      "why_it_matters": "Why it matters: Token unlock lands into the weakest macro tape in a month — a real test of whether Jupiter's fee-buyback program can absorb the supply.",
+      "the_details": [
+        "Today's unlock equals roughly 1.54% of circulating JUP supply, valued at $9.67 million at current prices.",
+        "Jupiter remains the dominant Solana DEX aggregator with multi-billion daily routed volume.",
+        "Unlock arrives as BTC stalls and altcoin season index sits at 39/100 — squarely 'Bitcoin Season.'"
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-28T09:00:00Z"
     }
   ]
 }

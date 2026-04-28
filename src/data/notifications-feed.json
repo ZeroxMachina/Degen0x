@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-28-019",
+    "type": "news",
+    "title": "\ud83d\udcf0 U Michigan sentiment craters to 49.8 ATL, inflation expectations spike to 4.8% \u2014 BTC stalls at $76.5K",
+    "message": "Consumer confidence hit a record low and one-year inflation expectations jumped a full point, freezing Bitcoin's bid back to $80K.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
     "id": "feed-2026-04-28-018",
     "type": "news",
     "title": "\ud83d\udcf0 BTC slides to $76.5K, ETH to $2,278 as four central banks line up rate decisions",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 Bitcoin stalls at $80K as $5B USDT liquidity meets oil-driven selloff",
     "message": "BTC reversed from $79,500 Monday as a fresh oil surge triggered a broader crypto pullback, capping a four-week run that delivered its best monthly gains in a year.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-013",
-    "type": "news",
-    "title": "\ud83d\udcf0 Bitcoin 2026 opens in Vegas with FBI's Patel, acting AG Blanche keynoting Day 1",
-    "message": "The world's largest Bitcoin conference kicks off Monday in Las Vegas with a federal law enforcement headline panel framing code as free speech.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }
