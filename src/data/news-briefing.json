@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T12:08:00Z",
-  "briefing_id": "briefing-2026-04-28-12",
+  "generated_at": "2026-04-28T13:08:00Z",
+  "briefing_id": "briefing-2026-04-28-13",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-12-001",
-      "headline": "Bitcoin slips back to $78K as $80K wall holds before Wednesday's FOMC",
-      "slug": "bitcoin-slips-78k-80k-wall-fomc",
-      "tldr": "Bitcoin pulled back from above $79,000 to trade near $78,100 as macro headwinds and a consumer sentiment crash keep bulls bottled up.",
-      "why_it_matters": "Why it matters: BTC is now moving in near-perfect opposition to the dollar, the most extreme decoupling since 2022, raising the stakes of Wednesday's FOMC.",
+      "id": "story-2026-04-28-13-001",
+      "headline": "Bitcoin loses $77K as Hormuz standoff lifts oil to 3-week high",
+      "slug": "bitcoin-loses-77k-hormuz-oil-3-week-high",
+      "tldr": "Bitcoin slid below $77,000 and ether and Solana followed lower as the closed Strait of Hormuz pushed oil to its highest level in three weeks.",
+      "why_it_matters": "Why it matters: The geopolitical-driven oil spike resurrects inflation fears the Fed is trying to tame, capping crypto's risk-on bid right as Powell heads into his final FOMC.",
       "the_details": [
-        "BTC up 0.56% on the day to $78,112; ETH up 0.61% to $2,328 per CoinDesk",
-        "FOMC decision lands April 29 with BoJ, ECB and BoE all setting policy this week",
-        "U. Michigan sentiment hit all-time low of 49.8; 1Y inflation expectation jumped to 4.8% in April"
+        "BTC opened at $77,368 Tuesday, down 1.6%, then slipped to $76,472 by 7:10am ET as ETH dropped to $2,278.",
+        "Brent crude pushed past $100 with the Strait of Hormuz closed; U.S.–Iran negotiations remain stalled.",
+        "Coinbase premium index turned negative and BTC futures open interest fell 1% to $120 billion in 24 hours."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
+      "source_url": "https://www.coindesk.com/markets/2026/04/28/bitcoin-loses-usd77-000-ether-solana-slide-as-hormuz-standoff-lifts-oil-to-3-week-high",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T12:00:00Z"
+      "timestamp": "2026-04-28T12:45:00Z"
     },
     {
-      "id": "story-2026-04-28-12-002",
-      "headline": "Kelp DAO bridge drained for $292M as April crypto hack tally hits $606M",
-      "slug": "kelp-dao-292m-bridge-april-hacks-606m",
-      "tldr": "An attacker drained 116,500 rsETH (~$292M) from Kelp DAO's LayerZero bridge, making April the worst hack month since February 2025.",
-      "why_it_matters": "Why it matters: Kelp and Drift alone account for 95% of $606M lost in 18 days of April, 3.7x all of Q1 combined and a wake-up call for bridge security.",
+      "id": "story-2026-04-28-13-002",
+      "headline": "Industry pours hundreds of millions into Aave rescue plan after Kelp hack",
+      "slug": "aave-rescue-plan-kelp-hack-defi",
+      "tldr": "Crypto leaders are funding a hundreds-of-millions rescue for Aave users left exposed by the $292M KelpDAO bridge exploit, the largest hit of 2026.",
+      "why_it_matters": "Why it matters: A coordinated industry bailout signals DeFi is willing to backstop systemic shocks itself, but it also confirms how much exposure leveraged restaking has buried inside lending markets.",
       "the_details": [
-        "Drained ~18% of rsETH circulating supply; emergency freezes hit Aave, SparkLend, Fluid and Upshift",
-        "Chainalysis attributes the attack to North Korea's Lazarus Group via off-chain bridge compromise",
-        "Drift Protocol lost $285M on April 1 via fake-token oracle manipulation and a compromised admin key"
+        "KelpDAO's rsETH bridge was drained for $292M on April 18 via a LayerZero single-point-of-failure exploit.",
+        "Aave users carrying rsETH collateral became the largest downstream victims, prompting the rescue facility.",
+        "DefiLlama clocks April losses at $606M across 18 days — 3.7x all of Q1 2026 — with Lazarus Group fingered."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/19/2026-s-biggest-crypto-exploit-kelp-dao-hit-for-usd292-million-with-wrapped-ether-stranded-across-20-chains",
-      "category": "security",
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "defi",
       "impact": "high",
-      "timestamp": "2026-04-19T12:00:00Z"
+      "timestamp": "2026-04-28T11:30:00Z"
     },
     {
-      "id": "story-2026-04-28-12-003",
-      "headline": "SEC carves out DeFi front-ends from broker rules in landmark April ruling",
-      "slug": "sec-defi-frontend-broker-exception",
-      "tldr": "SEC staff said Covered User Interface Providers can offer software for trading crypto-asset securities without broker-dealer registration, subject to conditions.",
-      "why_it_matters": "Why it matters: This finally answers the existential threat hanging over DeFi front-ends since the 2022 ENS subpoenas, unlocking U.S. UI development and L2 launches.",
+      "id": "story-2026-04-28-13-003",
+      "headline": "Powell's last FOMC: markets price 94.8% hold before Warsh takes over May 15",
+      "slug": "powell-last-fomc-warsh-takeover-rate-hold",
+      "tldr": "Traders give a 94.8% probability the Fed leaves rates unchanged Wednesday in what is likely Jerome Powell's final FOMC, with Kevin Warsh sworn in May 15.",
+      "why_it_matters": "Why it matters: A hawkish hold from a lame-duck Powell sets the tone for crypto into the Warsh era, where the market is already betting on a more dovish framework — or a messy regime change.",
       "the_details": [
-        "Statement issued April 13, 2026; covers UIs that prepare and submit crypto-security transactions",
-        "Builds on the March 17 SEC-CFTC joint release establishing a five-category token taxonomy",
-        "Over 100 firms including Coinbase and Ripple are pressing the Senate to mark up the Clarity Act"
+        "CME FedWatch shows 94.8% odds of no change at the April 28-29 meeting; oil and weak Michigan sentiment cloud cuts ahead.",
+        "DOJ recently closed its probe into Powell, lifting near-term rate-cut odds further out the curve.",
+        "Crypto fund AUM hit $155B last week — the highest since February 1 — heading into the decision."
       ],
-      "source": "Sidley Austin",
-      "source_url": "https://datamatters.sidley.com/2026/04/21/u-s-sec-clears-path-for-decentralized-crypto-asset-security-trading-with-broker-registration-exception-for-user-interfaces/",
-      "category": "regulation",
+      "source": "CoinGape",
+      "source_url": "https://coingape.com/trending/fomc-meeting-april-2026-date-and-schedule/",
+      "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-21T16:00:00Z"
+      "timestamp": "2026-04-28T10:00:00Z"
     },
     {
-      "id": "story-2026-04-28-12-004",
-      "headline": "Solana ETF inflows crater 92% to $34M as SOL trades near $86",
-      "slug": "solana-etf-inflows-crater-92pct",
-      "tldr": "Spot Solana ETF inflows collapsed from $419M in November 2025 to just $34M in April 2026 as SOL trades near $86 with a $49.8B market cap.",
-      "why_it_matters": "Why it matters: The collapse signals institutional fatigue with non-BTC/ETH ETF products and validates concerns about altcoin ETF saturation.",
+      "id": "story-2026-04-28-13-004",
+      "headline": "Goldman Sachs files for its first in-house Bitcoin ETF product",
+      "slug": "goldman-sachs-first-bitcoin-etf-filing",
+      "tldr": "Goldman Sachs filed earlier this month for its first proprietary spot Bitcoin ETF, joining the wave of TradFi giants stamping their own brand onto crypto wrappers.",
+      "why_it_matters": "Why it matters: A house-branded Goldman BTC ETF ends the era of Wall Street merely distributing other issuers' funds — it's a direct challenge to BlackRock's IBIT for institutional flows.",
       "the_details": [
-        "SOL ranks 7th by market cap; futures open interest at $827M with 68.2% long positioning",
-        "Firedancer upgrade still targets 1M TPS by 2026; Alpenglow already cut finality below 200ms",
-        "Altcoin season index sits at 33-38/100 with BTC dominance holding firm at 58.1%"
+        "Filing comes as crypto fund AUM swelled to $155B, the highest level since February 1, 2026.",
+        "Goldman joins a packed 2026 ETF lineup with regulators waving through filings under SEC Chair Atkins.",
+        "Spot BTC and ETH ETFs collectively pulled in $31B of net inflows during 2025, per The Block data."
       ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
-      "category": "altcoins",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-28T08:00:00Z"
+      "timestamp": "2026-04-28T09:15:00Z"
     },
     {
-      "id": "story-2026-04-28-12-005",
-      "headline": "Vercel breach sends crypto developers scrambling to rotate API keys",
-      "slug": "vercel-breach-crypto-api-key-rotation",
-      "tldr": "A security incident at Vercel exposed environment variables, forcing crypto teams to rotate every key and webhook secret deployed through the platform.",
-      "why_it_matters": "Why it matters: Vercel hosts a huge share of crypto frontend infra — wallet providers, dApps and indexers all rely on its env-var pipeline.",
+      "id": "story-2026-04-28-13-005",
+      "headline": "Thailand's KBank deploys Ripple's Palisade wallet under $4B crypto push",
+      "slug": "kbank-ripple-palisade-wallet-thailand",
+      "tldr": "Thailand's KBank is rolling out Palisade, the wallet software Ripple acquired as part of its $4 billion crypto-investment spree, marking a marquee Asian bank integration.",
+      "why_it_matters": "Why it matters: A top-tier Thai bank standardizing on Ripple infrastructure is a real-world stress test for institutional self-custody — and a quiet expansion of XRP's enterprise moat.",
       "the_details": [
-        "Hack disclosed April 20 by CoinDesk; affected blast radius still being audited by teams",
-        "Devs urged to rotate RPC keys, Alchemy and Infura tokens, and webhook secrets immediately",
-        "Follows CoW Swap's $1.2M loss on April 14 from an unrelated domain-hijack attack"
+        "KBank is among Thailand's largest commercial banks; Palisade powers wallet provisioning and key management.",
+        "Ripple has now committed $4B in crypto-related investments and acquisitions over the cycle.",
+        "Deal lands as Asian banks face MAS, HKMA and BoT pressure to formalize digital-asset custody stacks."
       ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/20/hack-at-vercel-sends-crypto-developers-scrambling-to-lock-down-api-keys",
-      "category": "infrastructure",
+      "source": "Yahoo Finance",
+      "source_url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-tuesday-april-28-2026-values-falling-ahead-of-fed-meeting-114535390.html",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-20T16:00:00Z"
+      "timestamp": "2026-04-28T08:30:00Z"
     }
   ]
 }
