@@ -1,14 +1,7 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
-import AutoTOC from '@/components/AutoTOC';
-import ReadingTime from '@/components/ReadingTime';
-import LastUpdated from '@/components/LastUpdated';
 
-
-import ArticleSchema from "@/components/ArticleSchema";
-
-import AuthoritySources from "@/components/AuthoritySources";
 
 export const metadata: Metadata = {
   title: "Solana DeFi Ecosystem Guide 2026 — Protocols & Trading",
@@ -109,191 +102,195 @@ export default function SolanaDeFiGuide() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }}
       />
-      <ArticleSchema
-        headline="Solana DeFi Ecosystem Guide 2026 — Protocols & Trading"
-        description="Complete Solana DeFi ecosystem guide 2026: Jupiter DEX aggregator, Raydium AMM, Magic Eden NFTs, TVL analysis, MEV mechanisms, validators, and staking."
-        url="https://degen0x.com/learn/solana-defi-ecosystem-guide-2026"
-        datePublished="2024-06-01"
-        dateModified="2026-04-17"
-        section="Learn"
-      />
       <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <div className="min-h-screen bg-[#0d1117] text-[#e6edf3]">
-        <div className="max-w-3xl mx-auto px-6 py-16">
-          <div className="mb-8">
-            <span className="text-[#8b949e] text-sm">Learn / DeFi</span>
-            <h1 className="text-4xl font-bold mt-2 mb-4 bg-gradient-to-r from-[#3b82f6] to-[#8b5cf6] bg-clip-text text-transparent">
+      <style dangerouslySetInnerHTML={{ __html: `
+        a:focus-visible, button:focus-visible {
+          outline: 2px solid var(--primary);
+          outline-offset: 2px;
+        }
+        summary:focus-visible {
+          outline: 2px solid var(--primary);
+          outline-offset: 2px;
+        }
+      `}} />
+      <div style={{ minHeight: "100vh", background: "var(--background)", color: "var(--foreground)" }}>
+        <div style={{ maxWidth: 768, margin: "0 auto", padding: "64px 24px" }}>
+          <div style={{ marginBottom: 32 }}>
+            <span style={{ color: "var(--muted)", fontSize: 14 }}>Learn / DeFi</span>
+            <h1 style={{
+              fontSize: 36, fontWeight: 700, marginTop: 8, marginBottom: 16,
+              background: "linear-gradient(to right, var(--primary), var(--secondary))",
+              WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}>
               Solana DeFi Ecosystem Guide 2026
             </h1>
-            <LastUpdated pathKey="/learn/solana-defi-ecosystem-guide-2026" />
-            <ReadingTime />
-            <AutoTOC />
-            <p className="text-[#8b949e] text-lg">
+            <p style={{ color: "var(--muted)", fontSize: 18 }}>
               Complete guide to Jupiter DEX, Raydium AMM, Magic Eden, and key DeFi protocols.
             </p>
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">Solana DeFi Overview</h2>
-            <p className="text-[#e6edf3] mb-4">
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>Solana DeFi Overview</h2>
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               Solana has emerged as a leading DeFi chain despite 2022-2023 outages and FTX collapse.
               Network characteristics: 400ms+ average block time, &lt;$0.001 transaction fees, parallel
               processing via Sealevel runtime. These enable high-frequency trading, MEV-resistant
               applications, and composable smart contracts.
             </p>
-            <p className="text-[#e6edf3] mb-4">
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               Solana DeFi TVL approximately $3-4B as of April 2026 (recovered from $0.5B low post-FTX).
               Jupiter dominates DEX aggregation, Raydium leads AMM category, Magic Eden leads NFTs.
               Derivative platforms (Drift, Orca) provide complementary services.
             </p>
-            <p className="text-[#e6edf3]">
+            <p style={{ color: "var(--foreground)" }}>
               Firedancer upgrade (rollout expected 2026+) will dramatically improve throughput to
               800K+ TPS and reduce latency to &lt;100ms. Client diversity via Firedancer enhances
               network resilience.
             </p>
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">Jupiter: DEX Aggregator</h2>
-            <p className="text-[#e6edf3] mb-4">
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>Jupiter: DEX Aggregator</h2>
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               Jupiter is Solana&apos;s dominant DEX aggregator, handling 90%+ of spot trading volume.
               Routes trades through Raydium, Orca, Marinade pools to find optimal prices. Smart
               routing splits orders across multiple liquidity sources.
             </p>
-            <p className="text-[#e6edf3] mb-4">
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               JUP token launched April 2023 with airdrop to community. Token enables governance
               voting on fee structures, routing algorithms, feature development. Jupiter Limit
               Orders (JLO) and Perpetuals (newest feature) compete with centralized exchanges.
             </p>
-            <p className="text-[#e6edf3]">
+            <p style={{ color: "var(--foreground)" }}>
               Jupiter SDK widely integrated into wallets and DeFi apps. DCA (Dollar Cost Averaging)
               orders and Flash Fills streamline trading. Low fees (typically 0.03-0.10%) make
               Jupiter default choice for traders.
             </p>
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">Raydium: AMM & Liquidity Pools</h2>
-            <p className="text-[#e6edf3] mb-4">
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>Raydium: AMM & Liquidity Pools</h2>
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               Raydium is Solana&apos;s largest Automated Market Maker (AMM) with &gt;$3B TVL. Uses
               constant product formula x*y=k similar to Uniswap V2. Liquidity providers earn swap
               fees proportional to share of pool.
             </p>
-            <p className="text-[#e6edf3] mb-4">
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               Fusion Pools (v4) enable concentrated liquidity and farming incentives. AcceleRaytor
               IDO platform launches new tokens. RAY token governance enables fee voting and yield
               farming rewards. Yield farming APYs vary 50-300%+ depending on token risk.
             </p>
-            <p className="text-[#e6edf3]">
+            <p style={{ color: "var(--foreground)" }}>
               Risk: impermanent loss for LPs in volatile token pairs. SlipScissors tool helps LPs
               minimize slippage. Position management essential for capital preservation.
             </p>
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">Magic Eden: NFT Marketplace</h2>
-            <p className="text-[#e6edf3] mb-4">
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>Magic Eden: NFT Marketplace</h2>
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               Magic Eden dominates Solana NFT trading with 2-3% fees (vs OpenSea 2.5%). Supports
               Solana, Ethereum, Polygon, Bitcoin Ordinals. Strong community, exclusive collections,
               and active creator community.
             </p>
-            <p className="text-[#e6edf3] mb-4">
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               ME token launched for governance. Launchpad for new NFT projects, Creator Program for
               artist support. Royalty enforcement protects creator earnings. Magic Eden Wallet
               integrates NFT management with DeFi connectivity.
             </p>
-            <p className="text-[#e6edf3]">
+            <p style={{ color: "var(--foreground)" }}>
               NFT market highly speculative. Do your own research before investing. Celebrity
               collections and floor prices volatile.
             </p>
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">Derivatives & Perpetuals Trading</h2>
-            <div className="space-y-4">
-              <div className="border-l-2 border-[#3b82f6] pl-4">
-                <h3 className="font-bold text-[#58a6ff] mb-1">Drift Protocol</h3>
-                <p className="text-[#8b949e]">
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>Derivatives & Perpetuals Trading</h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              <div style={{ borderLeft: "2px solid var(--primary)", paddingLeft: 16 }}>
+                <h3 style={{ fontWeight: 700, color: "var(--primary)", marginBottom: 4 }}>Drift Protocol</h3>
+                <p style={{ color: "var(--muted)" }}>
                   Leading perpetual DEX. 10-25x leverage. Insurance fund protects against insolvency.
                 </p>
               </div>
-              <div className="border-l-2 border-[#8b5cf6] pl-4">
-                <h3 className="font-bold text-[#58a6ff] mb-1">Jupiter Perpetuals</h3>
-                <p className="text-[#8b949e]">
+              <div style={{ borderLeft: "2px solid var(--secondary)", paddingLeft: 16 }}>
+                <h3 style={{ fontWeight: 700, color: "var(--primary)", marginBottom: 4 }}>Jupiter Perpetuals</h3>
+                <p style={{ color: "var(--muted)" }}>
                   New perpetuals product from Jupiter aggregator. Native integration with spot market.
                 </p>
               </div>
-              <div className="border-l-2 border-[#3b82f6] pl-4">
-                <h3 className="font-bold text-[#58a6ff] mb-1">Orca: Whirlpools</h3>
-                <p className="text-[#8b949e]">
+              <div style={{ borderLeft: "2px solid var(--primary)", paddingLeft: 16 }}>
+                <h3 style={{ fontWeight: 700, color: "var(--primary)", marginBottom: 4 }}>Orca: Whirlpools</h3>
+                <p style={{ color: "var(--muted)" }}>
                   Concentrated liquidity positions with precise price ranges. Lower risk than v2 pools.
                 </p>
               </div>
             </div>
-
-        <AuthorAttribution
-          author="DegenSensei"
-          role="Content Lead"
-          publishedDate="2026-04-03"
-          updatedDate="2026-04-10"
-          readingTime={3}
-          section="learn"
-        />
-
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">MEV & Jito Bundles</h2>
-            <p className="text-[#e6edf3] mb-4">
+          <AuthorAttribution
+            author="DegenSensei"
+            role="Content Lead"
+            publishedDate="2026-04-03"
+            updatedDate="2026-04-10"
+            readingTime={3}
+            section="learn"
+          />
+
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>MEV & Jito Bundles</h2>
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               MEV (Maximal Extractable Value) is profit validators extract by reordering transactions.
               Solana&apos;s parallel processing reduces MEV but doesn&apos;t eliminate it. Jito MEV-Share allows
               validators to share MEV revenue with users.
             </p>
-            <p className="text-[#e6edf3] mb-4">
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               Jito Bundles: encrypted transaction bundles prevent front-running. Users submit bundles
               to validators directly, bypassing public mempool. Protects traders from sandwich attacks.
             </p>
-            <p className="text-[#e6edf3]">
+            <p style={{ color: "var(--foreground)" }}>
               JTO token rewards Jito stakers. Encrypted mempool adoption improves UX and safety.
             </p>
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">Firedancer: Performance Upgrade</h2>
-            <p className="text-[#e6edf3] mb-4">
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>Firedancer: Performance Upgrade</h2>
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               Firedancer is Jump Crypto&apos;s high-performance Solana validator client written in C++.
               Processes 5x more transactions than current Solana validator. Reduces latency to
               &lt;100ms from current 400ms+.
             </p>
-            <p className="text-[#e6edf3] mb-4">
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               Client diversity via Firedancer improves network resilience. Expected mainnet rollout
               2026. Will unlock new DeFi capabilities and higher throughput. Anticipated 800K+ TPS
               vs current 400TPS.
             </p>
-            <p className="text-[#e6edf3]">
+            <p style={{ color: "var(--foreground)" }}>
               Validator infrastructure investment required for Firedancer adoption. Major institutions
               (Figment, Lido) already testing.
             </p>
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">Solana Network Health 2026</h2>
-            <p className="text-[#e6edf3] mb-4">
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>Solana Network Health 2026</h2>
+            <p style={{ color: "var(--foreground)", marginBottom: 16 }}>
               After 2022 FTX collapse and 2023 recovery, Solana network stabilized with 1000+
               validators. Validator decentralization improved but concentrated among major operators.
               Network health remains strong with 99%+ uptime in 2025-2026.
             </p>
-            <p className="text-[#e6edf3]">
+            <p style={{ color: "var(--foreground)" }}>
               SOL staking attractive: 8-10% APY from inflation and MEV rewards. Major staking
               providers: Lido (liquid staking), Marinade, Jito. Delegation through wallets or exchanges.
             </p>
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">Getting Started with Solana DeFi</h2>
-            <ol className="space-y-3 text-[#e6edf3] list-decimal list-inside">
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>Getting Started with Solana DeFi</h2>
+            <ol style={{ display: "flex", flexDirection: "column", gap: 12, color: "var(--foreground)", listStyleType: "decimal", listStylePosition: "inside" }}>
               <li>Create wallet: Phantom (browser), Solflare (mobile/browser)</li>
               <li>Bridge SOL from Ethereum/Polygon or purchase on exchanges</li>
               <li>Use Jupiter for swaps (best prices, low fees)</li>
@@ -304,84 +301,69 @@ export default function SolanaDeFiGuide() {
             </ol>
           </div>
 
-          <div className="bg-[#161b22] border border-[#30363d] rounded-lg p-6 mb-12">
-            <h2 className="text-2xl font-bold mb-4">FAQ</h2>
-            <div className="space-y-6">
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 8, padding: 24, marginBottom: 48 }}>
+            <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16 }}>FAQ</h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
               {faqData.map((item, idx) => (
                 <div key={idx}>
-                  <h3 className="font-bold text-[#58a6ff] mb-2">{item.question}</h3>
-                  <p className="text-[#8b949e]">{item.answer}</p>
+                  <h3 style={{ fontWeight: 700, color: "var(--primary)", marginBottom: 8 }}>{item.question}</h3>
+                  <p style={{ color: "var(--muted)" }}>{item.answer}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="flex gap-4 mt-12">
-            <Link href="#"
-              className="flex-1 bg-[#1f6feb] hover:bg-[#388bfd] text-center py-3 rounded-lg font-bold transition"
+          <div style={{ display: "flex", gap: 16, marginTop: 48 }}>
+            <Link href="/learn"
+              style={{
+                flex: 1, background: "var(--primary)", textAlign: "center", padding: "12px 0",
+                borderRadius: 8, fontWeight: 700, color: "var(--foreground-strong)", textDecoration: "none",
+                transition: "opacity 0.2s",
+              }}
             >
               Back to Learn
             </Link>
-            <Link href="#"
-              className="flex-1 bg-[#161b22] hover:bg-[#30363d] border border-[#30363d] text-center py-3 rounded-lg font-bold transition"
+            <Link href="/learn/jupiter-dex-aggregator-guide-2026"
+              style={{
+                flex: 1, background: "var(--card)", border: "1px solid var(--border)", textAlign: "center",
+                padding: "12px 0", borderRadius: 8, fontWeight: 700, color: "var(--foreground-strong)",
+                textDecoration: "none", transition: "opacity 0.2s",
+              }}
             >
               Next: Jupiter DEX
             </Link>
           </div>
         </div>
-            <div style={{
-        marginTop: "32px",
-        padding: "24px",
-        backgroundColor: "#111827",
-        borderRadius: "12px",
-        border: "1px solid #374151"
-      }}>
-        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
-          <Link href="/learn" style={{
-            padding: "12px 16px",
-            backgroundColor: "#1f2937",
-            borderRadius: "8px",
-            color: "#60a5fa",
-            textDecoration: "none",
-            border: "1px solid #374151",
-            display: "block",
-            textAlign: "center",
-            transition: "all 0.2s"
-          }}>
-            All Learning Guides
-          </Link>
-          <Link href="/tools" style={{
-            padding: "12px 16px",
-            backgroundColor: "#1f2937",
-            borderRadius: "8px",
-            color: "#60a5fa",
-            textDecoration: "none",
-            border: "1px solid #374151",
-            display: "block",
-            textAlign: "center",
-            transition: "all 0.2s"
-          }}>
-            Crypto Tools
-          </Link>
-          <Link href="/compare" style={{
-            padding: "12px 16px",
-            backgroundColor: "#1f2937",
-            borderRadius: "8px",
-            color: "#60a5fa",
-            textDecoration: "none",
-            border: "1px solid #374151",
-            display: "block",
-            textAlign: "center",
-            transition: "all 0.2s"
-          }}>
-            Compare Projects
-          </Link>
+        <div style={{
+          marginTop: 32, padding: 24, background: "var(--card-alt)", borderRadius: 12,
+          border: "1px solid var(--border-alt)",
+        }}>
+          <h3 style={{ marginBottom: 16, color: "var(--foreground-strong)" }}>Explore More</h3>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12 }}>
+            <Link href="/learn" style={{
+              padding: "12px 16px", background: "var(--card)", borderRadius: 8, color: "var(--primary)",
+              textDecoration: "none", border: "1px solid var(--border-alt)", display: "block",
+              textAlign: "center", transition: "all 0.2s",
+            }}>
+              All Learning Guides
+            </Link>
+            <Link href="/tools" style={{
+              padding: "12px 16px", background: "var(--card)", borderRadius: 8, color: "var(--primary)",
+              textDecoration: "none", border: "1px solid var(--border-alt)", display: "block",
+              textAlign: "center", transition: "all 0.2s",
+            }}>
+              Crypto Tools
+            </Link>
+            <Link href="/compare" style={{
+              padding: "12px 16px", background: "var(--card)", borderRadius: 8, color: "var(--primary)",
+              textDecoration: "none", border: "1px solid var(--border-alt)", display: "block",
+              textAlign: "center", transition: "all 0.2s",
+            }}>
+              Compare Projects
+            </Link>
+          </div>
         </div>
       </div>
-    <AuthoritySources url="/learn/solana-defi-ecosystem-guide-2026" />
-    </div>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Solana DeFi Ecosystem Guide 2026 \u2014 Protocols & Trading", "description": "Complete Solana DeFi ecosystem guide 2026: Jupiter DEX aggregator, Raydium AMM, Magic Eden NFTs, TVL analysis, MEV mechanisms, validators, and staking.", "url": "https://degen0x.com/learn/solana-defi-ecosystem-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-</>
+    </>
   );
 }
