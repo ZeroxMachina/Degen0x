@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T22:05:00Z",
-  "briefing_id": "briefing-2026-04-28-22",
+  "generated_at": "2026-04-28T23:06:49Z",
+  "briefing_id": "briefing-2026-04-28-23",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-22-001",
-      "headline": "FOMC verdict lands Wednesday with BTC pinned below $78K, futures market eyes 25bp cut",
-      "slug": "fomc-april-2026-decision-btc-78k",
-      "tldr": "The Fed wraps its two-day meeting Wednesday with crypto traders de-risked and BTC stalling under $78,000 ahead of the rate call.",
-      "why_it_matters": "Why it matters: A dovish surprise could ignite the bid that BTC has failed to find at $80K all month; a hawkish tone risks unwinding April's 13% rebound.",
+      "id": "story-2026-04-28-23-001",
+      "headline": "BTC slides to $76.3K as UMich sentiment hits ATL 49.8, $281M longs liquidated pre-FOMC",
+      "slug": "btc-slides-76k-umich-sentiment-atl-281m-liquidations",
+      "tldr": "Bitcoin failed at $80K and bled to $76,342 Tuesday as consumer sentiment crashed to a record low and traders unwound risk hours before the Fed.",
+      "why_it_matters": "Why it matters: Macro is now overriding crypto-native flows \u2014 a dovish Powell tomorrow is the only thing standing between BTC and a retest of the $65K March lows.",
       "the_details": [
-        "BTC has rejected $80,000 four times this month and slipped to ~$77,500 as the Coinbase premium turned negative for the first time since April 8.",
-        "BTC's 30-day correlation with the U.S. Dollar Index sits at -0.90, the most negative reading since 2022, making the Fed call the dominant variable.",
-        "Bitcoin futures open interest dropped over 6% in 24 hours into the meeting as traders unwound leverage and waited on Powell."
+        "BTC opened at $77,368 and printed an intraday low of $76,342.57 by 9 a.m. ET; long liquidations topped $281M.",
+        "University of Michigan consumer sentiment fell to 49.8, an all-time low, with 1-year inflation expectations jumping to 4.8% from 3.8%.",
+        "Total crypto market cap dropped 2.53% to $2.54T as the Fear & Greed Index slid to 39 \u2014 back in fear territory."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/markets/2026/04/24/bitcoin-stalls-below-at-usd77-500-as-volatility-cools-traders-unwind-leverage",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
       "category": "markets",
       "impact": "high",
-      "timestamp": "2026-04-28T22:00:00Z"
+      "timestamp": "2026-04-28T23:06:49Z"
     },
     {
-      "id": "story-2026-04-28-22-002",
-      "headline": "Atkins kills 'regulation by enforcement,' teases SEC innovation exemption for tokenized securities",
-      "slug": "sec-atkins-innovation-exemption-tokenized-securities",
-      "tldr": "SEC Chair Paul Atkins formally ended the agency's enforcement-first crypto stance and said an innovation exemption for onchain tokenized securities is weeks away.",
-      "why_it_matters": "Why it matters: A workable carve-out for onchain securities would unlock RWA issuance from regulated US issuers and finally give DeFi venues a legal lane to host them.",
+      "id": "story-2026-04-28-23-002",
+      "headline": "DeFi United unveils rescue plan for $292M Kelp DAO exploit with 107K rsETH stuck in Aave",
+      "slug": "defi-united-kelp-dao-rescue-plan-aave-rseth",
+      "tldr": "A coalition of crypto projects released a technical proposal Tuesday to restore rsETH backing after the Lazarus-linked Kelp DAO bridge drain.",
+      "why_it_matters": "Why it matters: Roughly 107,000 unbacked rsETH are still collateralizing positions in Aave and Compound \u2014 a coordinated unwind is the only way to avoid cascading liquidations across DeFi blue chips.",
       "the_details": [
-        "Atkins announced the pivot on April 27, pairing it with planned joint guidance from the SEC and CFTC under their March 17 MOU.",
-        "On April 13, SEC's Division of Trading and Markets said it won't object to qualifying user-interface providers operating without broker-dealer registration.",
-        "Coalition of 100+ crypto firms is still pressing the Senate Banking Committee to mark up the CLARITY Act before a Memorial Day drop-dead window."
+        "Attacker forged a bridge message that minted 116,500 rsETH on Ethereum without backing on April 18, draining ~$292M.",
+        "Coalition spans multiple blockchain teams aiming to socialize losses and reseed reserves rather than freeze contracts.",
+        "Drift Protocol's earlier $285M Solana drain on April 1 \u2014 also tied to North Korea's Lazarus Group \u2014 pushed April hack losses past $606M."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/26/running-out-of-time-on-clarity-state-of-crypto",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-28T18:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-22-003",
-      "headline": "April becomes worst crypto-hack month in over a year as losses cross $606M across 12 incidents",
-      "slug": "april-2026-crypto-hacks-606m-worst-month",
-      "tldr": "Twelve exploits have drained $606M from crypto in April, eclipsing all of Q1's losses combined and capping a contagion wave that started with Drift on April 1.",
-      "why_it_matters": "Why it matters: Cross-chain bridge risk and supply-chain attacks on web infra are now the dominant DeFi tail risk — TVL flight and insurance repricing follow.",
-      "the_details": [
-        "Drift Protocol on Solana lost ~$285M on April 1 in an attack authorities tie to North Korea-linked social engineering.",
-        "Kelp DAO's LayerZero bridge was drained for ~$292M on April 19, minting 116,500 unbacked rsETH across 20 chains.",
-        "CoW Swap lost $1.2M to an April 14 domain hijack, and a Vercel breach forced crypto teams to rotate API keys days later."
-      ],
-      "source": "24/7 Wall St.",
-      "source_url": "https://247wallst.com/investing/2026/04/24/the-crypto-industry-just-had-its-worst-month-of-hacks-in-over-a-year-and-the-bigger-threat-is-still-coming/",
+      "source_url": "https://www.coindesk.com/tech/2026/04/28/a-crypto-coalition-releases-technical-proposal-to-save-aave-users-from-a-massive-token-exploit",
       "category": "security",
       "impact": "high",
-      "timestamp": "2026-04-28T16:00:00Z"
+      "timestamp": "2026-04-28T23:06:49Z"
     },
     {
-      "id": "story-2026-04-28-22-004",
-      "headline": "Polygon hard fork triggers Upbit POL halt at 11:00 UTC April 29, sPOL launch teed up next",
-      "slug": "polygon-hard-fork-upbit-pol-halt-spol-launch",
-      "tldr": "Upbit will pause POL deposits and withdrawals at 11:00 UTC on April 29 ahead of a Polygon hard fork that paves the way for the sPOL liquid staking unlock.",
-      "why_it_matters": "Why it matters: sPOL is Polygon's bid to recapture institutional staking flows lost to ETH and SOL, and the fork is the gating event for that liquidity narrative.",
+      "id": "story-2026-04-28-23-003",
+      "headline": "100+ crypto firms led by Coinbase, Ripple press Senate to mark up Clarity Act now",
+      "slug": "100-firms-press-senate-clarity-act-markup",
+      "tldr": "A coalition of more than 100 crypto firms is pushing the Senate Banking Committee to advance the Clarity Act and codify the SEC-CFTC division of crypto oversight.",
+      "why_it_matters": "Why it matters: Without legislation, the March SEC-CFTC joint interpretive release is just guidance \u2014 a future administration could rip it up overnight, leaving builders back in regulatory limbo.",
       "the_details": [
-        "Upbit's pause covers POL and GMT and is described as standard precaution for the upcoming Polygon network upgrade.",
-        "The fork advances the MATIC-to-POL migration and lifts scalability and security parameters across the PoS chain.",
-        "Polygon team frames sPOL as the major DeFi liquidity unlock and a hook for institutional staking allocators."
+        "March 17 SEC-CFTC joint release laid out a 5-category token taxonomy across 68 pages, superseding the 2019 framework.",
+        "Coalition demands include developer protections, easier disclosure rules, and locked-in stablecoin reward preservation.",
+        "April 13 SEC statement already cleared 'Covered User Interface Providers' to operate without broker-dealer registration."
       ],
-      "source": "CoinMarketCap",
-      "source_url": "https://coinmarketcap.com/cmc-ai/polygon-ecosystem-token/latest-updates/",
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-28T23:06:49Z"
+    },
+    {
+      "id": "story-2026-04-28-23-004",
+      "headline": "Injective v1.19.0 mainnet upgrade goes live with new INJ buyback mechanism",
+      "slug": "injective-v119-mainnet-upgrade-inj-buyback",
+      "tldr": "Injective shipped its v1.19.0 mainnet upgrade at 14:30 UTC Tuesday, activating a new token buyback engine that reroutes protocol revenue into INJ.",
+      "why_it_matters": "Why it matters: Hardcoded buybacks turn Injective's exchange fees into a structural sink for INJ supply \u2014 an aggressive flywheel pitch as L1 token economics come back into vogue.",
+      "the_details": [
+        "Bybit, Binance and other CEXs paused INJ deposits and withdrawals from 13:30 UTC for the upgrade window.",
+        "New buyback module is positioned as a competitive answer to Hyperliquid's revenue-driven HYPE bid.",
+        "Upgrade lands as Bittensor (TAO) and other AI-adjacent alts log +47% YTD even with BTC dominance pinned at 60%."
+      ],
+      "source": "CryptoNewsZ",
+      "source_url": "https://www.cryptonewsz.com/injective-mainnet-upgrade-april-28-rollout/",
       "category": "infrastructure",
       "impact": "medium",
-      "timestamp": "2026-04-28T20:00:00Z"
+      "timestamp": "2026-04-28T23:06:49Z"
     },
     {
-      "id": "story-2026-04-28-22-005",
-      "headline": "Bittensor TAO rips +47% YTD as Q1 AI-services revenue prints $43M, market cap nears $3.5B",
-      "slug": "bittensor-tao-47-ytd-43m-q1-revenue",
-      "tldr": "Bittensor's TAO is up roughly 47% year-to-date with a market cap near $3.5B, after the network booked $43M in Q1 AI-services revenue.",
-      "why_it_matters": "Why it matters: TAO is the cleanest 'crypto AI' revenue story right now and is decoupling from BTC's chop, pulling capital toward AI-native L1s ahead of summer.",
+      "id": "story-2026-04-28-23-005",
+      "headline": "TOKEN2049 Dubai pushed to 2027 as organizers cite heightened UAE security risks",
+      "slug": "token2049-dubai-postponed-2027-uae-security",
+      "tldr": "TOKEN2049's Dubai stop has been moved to 2027, with organizers pointing to elevated regional security risks tied to the Iran conflict.",
+      "why_it_matters": "Why it matters: Losing the Middle East's flagship crypto event for a year strips a major deal-flow venue and signals that geopolitics is now bleeding into the conference and capital-formation calendar.",
       "the_details": [
-        "TAO sits among ETH, XRP, SOL, and Hyperliquid as altcoins building independent momentum while BTC corrects ~20% from ATH.",
-        "Q1 2026 revenue of $43M comes from AI services running on Bittensor's subnet architecture.",
-        "Drivers cited include institutional flows, regulatory clarity from the SEC-CFTC MOU, and protocol-level upgrades."
+        "Organizers cited heightened security concerns in the UAE, the same Iran-tension backdrop driving the latest UMich inflation spike.",
+        "Singapore stop remains the only confirmed 2026 TOKEN2049 \u2014 concentrating Asian crypto activity into a single venue.",
+        "Move follows a wave of relocated industry events as funds rebalance travel and side-event spend toward Asia and the U.S."
       ],
-      "source": "Spotedcrypto",
-      "source_url": "https://www.spotedcrypto.com/top-5-altcoins-april-2026-3/",
-      "category": "altcoins",
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-28T17:00:00Z"
+      "timestamp": "2026-04-28T23:06:49Z"
     }
   ]
 }

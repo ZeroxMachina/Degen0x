@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-28-024",
+    "type": "news",
+    "title": "\ud83d\udcf0 BTC slides to $76.3K as UMich sentiment hits ATL 49.8, $281M longs liquidated pre-FOMC",
+    "message": "Bitcoin failed at $80K and bled to $76,342 Tuesday as consumer sentiment crashed to a record low and traders unwound risk hours before the Fed.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
     "id": "feed-2026-04-28-023",
     "type": "news",
     "title": "\ud83d\udcf0 FOMC verdict lands Wednesday with BTC pinned below $78K, futures market eyes 25bp cut",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 April crypto hacks blow past $606M in 18 days as Lazarus Group bags two of three biggest hauls",
     "message": "Crypto protocols lost $606M across 12 incidents in the first 18 days of April, the worst month since February 2025.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-018",
-    "type": "news",
-    "title": "\ud83d\udcf0 Aave V3 USDC pool stuck at 99.87% utilization with under $3M left as Circle pushes urgent fix",
-    "message": "Aave's flagship USDC market is effectively drained, leaving lenders unable to withdraw and triggering Circle to demand emergency rate action.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }
