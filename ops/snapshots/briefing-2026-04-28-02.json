@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-28T02:08:00Z",
+  "briefing_id": "briefing-2026-04-28-02",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-28-02-001",
+      "headline": "Four central banks decide rates this week, with FOMC the main event for crypto",
+      "slug": "four-central-banks-rate-decisions-fomc-week",
+      "tldr": "Bank of Japan, Federal Reserve, ECB and Bank of England all set rate policy this week, with markets pricing zero Fed cuts.",
+      "why_it_matters": "Why it matters: A simultaneous hawkish surprise from any of the four would yank dollar liquidity and cap the BTC rebound just as it threatens $80K resistance.",
+      "the_details": [
+        "Markets price 3.50%-3.75% as the most likely Fed hold, with no cut expected at the FOMC decision midweek.",
+        "BoJ kicks off the week of decisions, followed by the Fed, ECB and BoE in rapid succession.",
+        "BTC pinned near $78,100 and ETH near $2,328 ahead of the prints, both holding key supports."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T01:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-02-002",
+      "headline": "Strategy adds 3,273 BTC, now holds 818,334 BTC en route to 1M target",
+      "slug": "strategy-adds-3273-btc-818k-treasury",
+      "tldr": "Michael Saylor's Strategy bought 3,273 more BTC, pushing its treasury to 818,334 coins acquired for roughly $62B at $75,537 average.",
+      "why_it_matters": "Why it matters: Persistent corporate bid below $80K is mopping up the supply that's keeping BTC range-bound and shrinks the float available for spot ETFs.",
+      "the_details": [
+        "Strategy's stack of 818,334 BTC is now within 22% of its publicly stated 1 million BTC target.",
+        "Average cost basis sits at $75,537 — roughly 3% in the money against a $78K spot price.",
+        "Bitmine separately bought $236M of ether as Tom Lee branded ETH a 'wartime store of value'."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/",
+      "category": "bitcoin",
+      "impact": "high",
+      "timestamp": "2026-04-28T00:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-02-003",
+      "headline": "100+ crypto firms push Senate to mark up CLARITY Act before summer recess",
+      "slug": "100-crypto-firms-clarity-act-senate-markup",
+      "tldr": "A coalition led by Coinbase and Ripple is pressuring the Senate Banking Committee to mark up the CLARITY Act and finally split SEC and CFTC jurisdiction.",
+      "why_it_matters": "Why it matters: A markup would cement the SEC-CFTC token taxonomy from March's joint guidance into law and unlock a wave of US-based DeFi launches that have been waiting on rules.",
+      "the_details": [
+        "More than 100 firms signed the April 23 letter urging committee action this session.",
+        "The bill would codify the five-bucket taxonomy (commodities, collectibles, tools, stablecoins, securities) issued by SEC-CFTC on March 17.",
+        "It builds on the SEC's April 13 statement clearing DEX front-end operators from broker-dealer registration."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-27T22:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-02-004",
+      "headline": "Spot Solana ETF inflows collapse 92% from November peak as DeFi confidence cracks",
+      "slug": "solana-etf-inflows-collapse-92-percent",
+      "tldr": "Spot SOL ETF inflows fell from $419M in November 2025 to just $34M in April 2026 as Drift's $285M exploit dented Solana DeFi appetite.",
+      "why_it_matters": "Why it matters: The 92% drop signals institutional demand is concentrating in BTC and ETH products, leaving altcoin ETF launches with much less than issuers projected.",
+      "the_details": [
+        "SOL trades near $86.47 with a $49.8B market cap, ranking seventh by market value.",
+        "Drift's April 1 exploit drained $270M+ via Solana's 'durable nonces' feature, suspected to be North Korean-affiliated.",
+        "Multiple US spot SOL ETF filings remain pending with no approval timeline confirmed."
+      ],
+      "source": "Investing.com",
+      "source_url": "https://www.investing.com/analysis/solana-faces-a-confidence-test-after-drift-losses-hit-defi-activity-200677804",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-27T20:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-02-005",
+      "headline": "TOKEN2049 Dubai postponed to 2027 amid heightened UAE security risks",
+      "slug": "token2049-dubai-postponed-2027-uae-security",
+      "tldr": "Organizers pushed TOKEN2049 Dubai out to 2027, citing heightened security risks across the UAE that made hosting in 2026 untenable.",
+      "why_it_matters": "Why it matters: One of crypto's biggest annual gatherings going dark in the Gulf shifts deal-making energy back to Singapore and pulls forward sponsor dollars to other 2026 events.",
+      "the_details": [
+        "TOKEN2049 Dubai is the largest Gulf-region crypto conference and a key venue for Middle East fund LPs.",
+        "Organizers cited heightened security risks across the UAE as the trigger for the postponement.",
+        "TOKEN2049 Singapore remains on the 2026 calendar and is expected to absorb displaced sponsorships."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-27T18:00:00Z"
+    }
+  ]
+}
