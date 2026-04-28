@@ -1,119 +1,116 @@
 # degen0x — Hourly Ops Agenda
 
-**Timestamp (UTC):** 2026-04-28T22:15Z
-**Hour:** 22 UTC
-**Sandbox:** `charming-nifty-cannon` (57th distinct standup sandbox)
-**Latest origin/main SHA:** `4a556d6a4` (briefing-22, 22:04:28Z)
-**Latest master SHA:** `9d653b5f0` (H21 standup, 21:23:42Z) — about to advance to H22 standup
-**Methodology:** Cycle-8 mid-cycle; both H21 prestaged design-tree branches resolved (cherry-pick lands + runner spawns new design-push-v2 commit) — Cycle-8 design-tree closes 2-of-2 = 100%. V2-tree open at 0-of-1 from H21 black-swan → mid-cycle 1-of-2 if H22 V2-band counts as prestaged-resolve.
+**Timestamp (UTC):** 2026-04-28T23:15Z
+**Hour:** 23 UTC
+**Sandbox:** `nice-charming-cori` (58th distinct standup sandbox)
+**Latest origin/main SHA:** `b878d3774` (briefing-23, 23:07:06Z)
+**Latest master SHA:** `9d653b5f0` (H21 standup, 21:24:49Z) — H22 standup commit ABSENT from local master (sandbox-ephemerality artifact); about to advance to H23 standup
+**Methodology:** Cycle-8 mid-cycle continues; H22 prestaged design-tree branches PARTIALLY-resolved (fomc-fed-rate-crypto-guide landed direct-to-main 22:58:06Z = bypass-design-push-v2 PATTERN-CONFIRMED-2nd-instance), but cherry-pick-batch-of-3 NOT EXECUTED → 3 strands persist on design-push-v2.
 
 ---
 
 ## Headline
 
-H21 priority #1 **EXECUTED CLEANLY** — `809aaf766` cherry-pick of `76e6e8e02 sec-crypto-commodities` PUSHED to origin/main at 22:01:52Z. **PLUS** a parallel ship `b513e7532 erc-8183-agentic-commerce` at 21:40:51Z = **2-DESIGN-SHIPS-THIS-CYCLE on origin/main**. T-DESIGN-POLISH-CHANNEL-DECAY P0-CHANNEL-COLLAPSE-PENDING **RETIRES → P2-RECOVERED-WATCH** (3-of-3 historic-threshold recovers via 2-ship-catchup, mirror of H17 cluster). **HOWEVER:** the disambiguation gate fires the OTHER way too — **3 NEW commits stranded on `origin/design-push-v2` since the cherry-pick** (`f222a8a83 zk-rollups @ 19:36Z`, `7724950f2 lrt @ 20:35Z`, `e13dc96c5 erc-8183-redo @ 21:38Z`). **Mode-(a) mirror-broke CONFIRMED**, runner alive at ~1/hour. **Manual cherry-pick-rescue is now a recurring tax**; without a systemic fix the side-branch will keep growing. **Priority #1 escalates: cherry-pick-batch-of-3 + assign devops to fix the auto-mirror runner permanently.**
+**TWO-CHANNEL DESIGN-RUNNER REGIME CONFIRMED.** H22 ships `a69c9dda8 fomc-fed-rate-crypto-guide` direct-to-origin/main at 22:58:06Z — **NOT** present on `origin/design-push-v2`. Combined with H21's `b513e7532 erc-8183-agentic-commerce` (also direct-to-main), this is the **2nd-consecutive-cycle of a runner that targets main directly**, while a separate runner continues appending to design-push-v2 (which is broken at the mirror step). **T-DESIGN-PUSH-BRANCH-DRIFT bifurcates into two named subtrees:** Channel-A (design-push-v2 → mirror-broken, 3 strands persist), Channel-B (direct-to-main → healthy, ~1/cycle). **H22 priority #1 cherry-pick-batch-of-3 NOT EXECUTED** (zk-rollups / lrt / erc-8183-redo still stranded). **H22 priorities #2 (Bittensor-TAO thread) and #3 (BUIDL-prereq-1) ALSO NOT EXECUTED.** **0-of-3 H22 priorities shipped — worst priority-completion-rate of Cycle-8.** H23 priority #1 escalates: cherry-pick-batch + LATCH the rotating priority on BUIDL-prereq before it crosses 8-consec.
 
 ---
 
 ## Incidents / Overrides
 
-- **None P0 (production user-facing).** Site live, briefing-22 GREEN ~10min fresh (`4a556d6a4`, mtime 22:04:04Z, generated_at 22:05:00Z). **53-CONSEC-GREEN, NEW LOCAL HIGH +1**. Notifs feed @ 22:04:11Z (~10min fresh). Vercel auto-deploy presumed live on origin/main `4a556d6a4`. T-EOD-QA-EGRESS 44th-consecutive cycle (degen0x.com 403 from sandbox proxy).
+- **None P0 (production user-facing).** Site live, briefing-23 GREEN ~7min fresh (`b878d3774`, 23:07:06Z, generated_at 23:06:49Z). **54-CONSEC-GREEN, NEW LOCAL HIGH +1**. Notifications feed updated in same commit. Vercel auto-deploy presumed live on origin/main `b878d3774`. T-EOD-QA-EGRESS 45th-consec cycle (sandbox proxy 403 on degen0x.com, deferred to Vercel CI).
 
-- **T-DESIGN-PUSH-BRANCH-DRIFT P0-PERSISTENT — runner alive, mirror still broken — CHERRY-PICK-RESCUE PATTERN HARDENS.** Per H21 disambiguation gate: cherry-pick of `76e6e8e02` lands cleanly **AND** 3 NEW design-push-v2 commits appear (zk-rollups 19:36Z, lrt 20:35Z, erc-8183-redo 21:38Z) → **Mode-(a) mirror-broke CONFIRMED, Mode-(b) runner-decayed FALSIFIED** (runner producing ~1/hour against the side-branch). Side-branch is now **24-ahead/4-behind main, 3 unique-fresh stranded** (vs 1-unique-fresh at H21). Tactical fix (cherry-pick-per-cycle) works but is unsustainable; **systemic fix required**: auto-mirror runner needs a manual rerun OR runner config needs to write to main directly OR a dedicated mirror cron.
+- **T-DESIGN-PUSH-BRANCH-DRIFT P0-PERSISTENT — bifurcates into Channel-A / Channel-B subtrees.** Channel-A (`origin/design-push-v2`): runner alive, last commit `e13dc96c5 erc-8183-redo @ 21:38:19Z` (~1h45m stale at standup), **3 strands persist** (zk-rollups 19:36Z / lrt 20:35Z / erc-8183-redo 21:38Z), mirror-to-main BROKEN since H17. Channel-B (direct-to-main): `b513e7532 erc-8183 @ 21:40:51Z` + `a69c9dda8 fomc-fed-rate @ 22:58:06Z` = **2-of-2 last-2-cycles**, ~1/cycle cadence. **Hypothesis:** Channel-A is the legacy GitHub-Actions-mirror path (broken); Channel-B is a NEW direct-push runner that started ~H21 and replaced the mirror function for new content but does NOT backfill stranded commits. **Action:** Channel-B is doing the right thing for forward-progress; Channel-A's strand-backlog must be drained manually until decommission. **Cherry-pick rescue is now strictly a backlog-drain task, not a recurring tax.**
 
-- **T-DESIGN-POLISH-CHANNEL-DECAY → P2-RECOVERED-WATCH (mirror H17 2-of-2 catchup).** H21 ships 2 design-polishes on origin/main (`b513e7532 erc-8183` + `809aaf766 sec-crypto-commodities-cherry-pick`). Density bumps **13-of-20 = 65% → 15-of-21 = 71.43%** → **+6.43pp in 1 cycle, largest single-cycle channel-density gain in 6 cycles**. 60% round-floor breach AVERTED. System-SLO mid-cycle climbs **33-of-55 (60.00%) → 35-of-56 (62.50%) = +2.50pp NEW LOCAL HIGH-OF-HIGHS**. 3-cycle-stable observation window opens.
+- **T-DESIGN-POLISH-CHANNEL-DENSITY → P3-RECOVERED-STABLE.** H22 ships 1 design-polish on origin/main (`a69c9dda8 fomc-fed-rate`). Density holds **15-of-21 = 71.43% → 16-of-22 = 72.73%** → **+1.30pp**, channel-density now stable above 70% for 2-CONSEC cycles. System-SLO mid-cycle climbs **35-of-56 (62.50%) → 37-of-57 (64.91%) = +2.41pp NEW LOCAL HIGH-OF-HIGHS** (briefing + design = +2 advances). 60% round-floor breach RETIRES from named-risk roster.
 
-- **T-BRIEFING-NOVELTY-V2 — 20-40pct band, DEEP-COLLAPSE PERSISTS — 2-CONSEC potential REGIME SHIFT.** Briefing-22 stories: (1) `fomc-april-2026-decision-btc-78k` — V2-RECUR (FOMC + BTC-78K both 5+ cycle direct-recur, fresh "Wednesday verdict" event-anchor); (2) `sec-atkins-innovation-exemption-tokenized-securities` — V2-RECUR (H09/H17 direct lineage); (3) `april-2026-crypto-hacks-606m-worst-month` — V2-RECUR (H17/H19 direct numerics carryover); (4) `polygon-hard-fork-upbit-pol-halt-spol-launch` — V2-LENIENT-RECUR-WITH-FRESH-EVENT-ANCHOR (H20 polygon-sPOL evaporated H21, returns H22 with fresh "Upbit POL halt 11:00 UTC April 29" event-anchor); (5) `bittensor-tao-47-ytd-43m-q1-revenue` — **CLEAN-NEW** (TAO/Bittensor frame, first appearance in observed cycle). **Lenient 4-of-5 = 80% recur → 20% novelty (strict)** OR **3-of-5 = 60% recur → 40% novelty (lenient on Polygon mutation)**. **Strict-byte-match 0-of-5, 9th-consec-zero**. Trajectory H17→H22: **100→100→100→60→20→20-40 (band)** = **2nd-CONSECUTIVE-DEEP-COLLAPSE under strict reading**. **Mechanism-e (runner-content-pool gravitational-pull) STRENGTHENS to 2-cycle floor** under strict — the 20pct floor is regime, not excursion. Polygon-sPOL returning with date-specific event-anchor (Apr 29 hard-fork) is informative — runner CAN re-introduce evaporated frames when there's a hard event-anchor. **Bittensor-TAO is the only fully-fresh frame** → community-thread candidate (priority #2). H22-prestaged forecast-tree: 5-branch (≤20-deepens / 20-30-strict-band / 30-50-recovery / 60-snapback / 80-100-overshoot) → resolves to **20-30-strict-band OR 30-50-recovery** (both H21-prestaged) → **1-of-1 V2-tree resolves on prestaged-branch this cycle**.
+- **T-BRIEFING-NOVELTY-V2 — RECOVERY FROM 20PCT FLOOR — 40-100pct band (lenient reading).** Briefing-23 stories: (1) `btc-76-3k-umich-49-8-atl-281m-longs-liq-fomc` — V2-RECUR-WITH-FRESH-NUMERICS (BTC+FOMC frame H22-recur, but UMich-49.8-ATL + $281M-liqs + 76.3K-print are FRESH event-anchors); (2) `defi-united-292m-kelp-dao-rescue-107k-rseth-aave` — V2-LENIENT-RECUR (Kelp-DAO surfaced H21 in Babylon-coalition; $292M-rescue + 107K-rsETH-stuck-Aave is fresh-event-anchor); (3) `100-firms-coinbase-ripple-senate-clarity-act` — V2-RECUR-WITH-FRESH-EVENT (Coinbase/Ripple/Clarity-Act multi-cycle frame, "100+ firms mark up now" advocacy-push is fresh); (4) `injective-v1-19-0-inj-buyback` — **CLEAN-NEW** (Injective frame, first appearance); (5) `token2049-dubai-2027-uae-security-risks` — **CLEAN-NEW** (TOKEN2049 frame, first appearance). **Strict-byte-match 0-of-5, 10th-consec-zero**. **Strict-novelty-reading: 2-of-5 CLEAN-NEW = 40%** (Injective + TOKEN2049). **Lenient-reading: +3-of-5 fresh-event-anchors = 100% fresh-or-recur-with-fresh-anchor**. Trajectory H17→H23 strict: **100→100→100→60→20→20→40** = **+20pp from H22 floor, REGIME-RECOVERY signal-1**. **Mechanism-e (runner-content-pool gravitational-pull) STILL OPERATIVE** — FOMC-saturation persists in stories 1+3, but runner re-introduces 2 fully-fresh frames. **Bittensor-TAO frame from H22 EVAPORATES H23** (1-cycle-half-life mirrors mechanism-d) — confirms H22 priority #2 narrative-window was ~1h. **H23-prestaged forecast-tree:** 6-branch (≤20-redeepens / 20-30-band-stable / 30-50-recovery-light / 40-60-recovery-band / 60-100-snapback / >100-overshoot) → resolves to **40-60-recovery-band (strict)** → **1-of-1 prestaged-branch resolves**. Cumulative V2-forecast 24-of-25 = 96%.
 
-- **T-DIVERGENCE +4 — ACCELERATION RESURFACES — multimodal +2/+3/+4 broadens.** master+105 / origin+91 = **gap 196**, NET **+4 vs H21 (192)**. Master+1 (H21 standup `9d653b5f0`); origin+3 (`b513e7532 erc-8183 21:40Z` + `809aaf766 cherry-pick 22:01Z` + `4a556d6a4 briefing-22 22:04Z`). Trajectory last 11: ...,+2,+3,+3,+2,+4,+3,+2,+2,**+4** → +4-2nd-instance-in-6-cycles. +2-modal at 4-of-11 trailing, +3 modal at 3-of-11, +4 at **2-of-11 (was 1-of-10)**. **Hypothesis CONFIRMED-2nd-cycle**: divergence-rate = briefing-baseline (~+1) + 1-per-design-polish-shipped-on-origin (3 ships this hour = +3 origin → +4 net gap). **Bimodal +2-briefing-only / +4-with-2-ships HARDENING** as canonical regime. 200-threshold projection: at sustained +4/cycle, breach at **Hour-23 (1 cycle out)**; blended ~2.8 → breach H23-24. **Ceremonial milestone, no operational consequence** (master is local-only ops residue).
+- **T-DIVERGENCE +2 — RETURN TO BIMODAL-LOW-MODE.** master+105 / origin+93 = **gap 198**, NET **+2 vs H22 (196)**. Master+0 (no H22 standup commit on local master — sandbox-ephemerality); origin+2 (`a69c9dda8 fomc-fed @ 22:58Z` + `b878d3774 briefing-23 @ 23:07Z`). Trajectory last 12: ...,+3,+3,+2,+4,+3,+2,+2,+4,**+2** → **+2-modal at 5-of-12 trailing** (now MODAL-LEADER), +3 modal at 3-of-12, +4 at 2-of-12. **Bimodal +2-low-mode (briefing+1-design) / +4-high-mode (briefing+2-design) HARDENS** — H22's +2 is the +2-low-mode (1 design + 1 briefing). **200-threshold projection:** at +2 next cycle (H23 standup adds +1 master), **breach at H00 (1 cycle out, ceremonial)**. Master-gap context: H22 standup commit absent from local master suggests **ops-channel-1-cycle-skip-sandbox-ephemerality** — write H23 standup commit on local master then push to origin/master to advance.
 
-- **T-LOCK-FAMILY — 5-MEMBER EQUILIBRIUM HARDENS — 5-cycle stable post-quinary-promotion.** No 6th-spawn. Maintenance lock 22-cycle invariant; next-index-8 13-cycle; next-index-6 11-cycle; next-index-7 5-cycle; next-index-18 5-cycle. mv-recipe narrowed to index-lock-only.
+- **T-LOCK-FAMILY — 5-MEMBER EQUILIBRIUM HARDENS — 6-cycle stable post-quinary-promotion.** No 6th-spawn. Maintenance lock 23-cycle invariant; next-index-8 14-cycle; next-index-6 12-cycle; next-index-7 6-cycle; next-index-18 6-cycle. mv-recipe narrowed to index-lock-only (`master.lock.stale` present, untouched).
 
-- **T-PUBLISH-BUIDL CYCLE-57 — 6-CONSEC-NO-JEFE-ACTION on franklin-templeton-benji-fobxx-prereq-1 — UNADDRESSED FROM H21.** 56-24h-queued, 32-97h-bundle-stale. H21 priority #3 (strip-forward evergreen reframe) **NOT EXECUTED** (no `feat:` commit on origin/main creates the page). **NEW T-PUBLISH-BUIDL-PREREQ-CHANNEL-DECAY P1 NEW-NAMED-RISK** opens by symmetric-rule with design-polish (6-consec = 2× the 3-of-3 threshold; BUIDL-prereq-cycle is naturally slower).
+- **T-PUBLISH-BUIDL CYCLE-58 — 7-CONSEC-NO-JEFE-ACTION on franklin-templeton-benji-fobxx-prereq-1 — UNADDRESSED FROM H21 + H22.** 57-24h-queued, 33-97h-bundle-stale. H22 priority #3 (strip-forward evergreen reframe) **NOT EXECUTED**. **T-PUBLISH-BUIDL-PREREQ-CHANNEL-DECAY P1 → P0-CANDIDATE if H23 also skips** (8-consec = 2.67× the 3-of-3 design-symmetric threshold). **Decision-fork at H24:** (a) ship strip-forward, OR (b) drop prereq-1 from BUIDL bundle, OR (c) abandon BUIDL slate entirely. Lowest-friction is (a) — promoted in this hour's priority-2 slot.
 
-- **T-CMS-BACKLOG-CHANNEL-INERTIA — 13th-consecutive cycle.** No movement.
+- **T-CMS-BACKLOG-CHANNEL-INERTIA — 14th-consecutive cycle.** No movement.
 
-- **T-RUNNER-CHANNEL-SILENCE — 24th-consec, 48h+.** Runner SLO 7-of-56 = 12.50%. New local low.
+- **T-RUNNER-CHANNEL-SILENCE — 25th-consec, 49h+.** Runner SLO 7-of-57 = 12.28%, NEW LOCAL LOW.
 
-- **NEW T-MIRROR-RUNNER-DECAY P1-NAMED-RISK (carve-out from T-DESIGN-PUSH-BRANCH-DRIFT).** Auto-mirror step that historically copied design-push-v2 → main has not fired since H17 cluster (last unambiguous mirrors were 4ace710b5/886a6638c at H17). 4 design-push-v2 commits since then (76e6e8e02, e13dc96c5, 7724950f2, f222a8a83) reached main only via manual cherry-pick (1 of 4 so far via H21 rescue). H22 priority #1 includes a **devops-track investigation**.
+- **T-MIRROR-RUNNER-DECAY P1-NAMED-RISK — 1-cycle-old, EVIDENCE WIDENS.** Channel-A mirror still not firing on H22 strands. Channel-B confirmed as separate runner (not the same mirror coming back to life). **Diagnosis-path narrows:** investigate mirror GitHub-Actions workflow specifically; Channel-B runner can stand alone if Channel-A is decommissioned (clean cut-over candidate).
+
+- **T-OPS-CHANNEL-SANDBOX-EPHEMERALITY P3-NEW-OBSERVATION.** Local master at H21 standup (`9d653b5f0`) but origin/main has H22 briefing + design-polish — confirms each scheduled-task runs in fresh sandbox without git-clone-with-full-master. **Operational implication:** every standup commit MUST push to origin/master immediately or it's lost on sandbox tear-down. (Already standard practice — calling out for clarity.)
 
 ---
 
-## What shipped last hour (H21 close → H22 open, 21:24Z–22:14Z)
+## What shipped last hour (H22 close → H23 open, 22:15Z–23:14Z)
 
-- **`b513e7532` design-polish #1** — `erc-8183-agentic-commerce-guide` theme-token polish landed on origin/main at 21:40:51Z (~223 hex → CSS vars, JSON-LD dedup, focus-rings, FAQ rendering bugfix, 6 broken hrefs fixed). **NOT a cherry-pick** — appears to have been a parallel-runner ship that DID make it to main (possibly the auto-mirror fired for this one specifically, or a different runner channel handled it). **Worth a forensic check** — if it landed via the same path as the design-push-v2 strands, why did this one make it but not zk-rollups/lrt?
-- **`809aaf766` design-polish #2 (CHERRY-PICK)** — H21 priority #1 EXECUTED. `sec-crypto-commodities-ruling-digital-asset-regulation-guide-2026` cherry-picked from `76e6e8e02` on design-push-v2 to origin/main at 22:01:52Z. 219+/282- diff, 208 var-tokens, 0 residual hex, 1075 lines. Surgical-checkout-recipe (parent-blob == main-blob → clean apply). URL spotcheck blocked (sandbox egress 403); deferred to Vercel CI.
-- **`4a556d6a4` briefing-22** — news/hourly-briefing landed at 22:04:28Z. Cadence ~3min after last commit. **53-CONSEC-GREEN, NEW LOCAL HIGH +1**. 5 stories: FOMC/BTC-78K, Atkins-tokenization, 606M-hacks, Polygon-Upbit-sPOL-Apr29, Bittensor-TAO-47pct.
-- **3 NEW design-push-v2 commits** — `f222a8a83 zk-rollups @ 19:36Z`, `7724950f2 lrt @ 20:35Z`, `e13dc96c5 erc-8183-redo @ 21:38Z`. Stranded.
-- **0 build-cycle commits** on origin or master — 6-CONSEC-NO-JEFE-ACTION on franklin-templeton-benji-fobxx prereq-1.
-- **0 community-growth commits.** H21 priority #2 (Aave-balance-sheet thread) not committed.
-- **0 new `/learn/` pages indexed.** 6-cycle-CMS-drought.
+- **`a69c9dda8` design-polish #1 (DIRECT-TO-MAIN, Channel-B)** — `fomc-fed-rate-crypto-guide` theme-token polish landed on origin/main at 22:58:06Z. **NOT** present on `origin/design-push-v2` → Channel-B direct-to-main runner pattern continues (2-of-2 last-2-cycles). Author: Jefe (manual or runner-as-Jefe). FOMC-frame timing-aligned with briefing-23's BTC-FOMC story-1.
+- **`b878d3774` briefing-23** — news/hourly-briefing landed at 23:07:06Z. Cadence ~9min after design-polish (vs typical 3-7min). **54-CONSEC-GREEN, NEW LOCAL HIGH +1**. 5 stories: BTC-76.3K-UMich-FOMC, Kelp-292M-rescue-Aave-107K, 100+firms-Clarity-Act-Senate, Injective-v1.19.0-INJ-buyback, TOKEN2049-Dubai-2027-pushed.
+- **0 cherry-picks** — H22 priority #1 (cherry-pick-batch-of-3 from design-push-v2) **NOT EXECUTED**. zk-rollups / lrt / erc-8183-redo all still stranded.
+- **0 build-cycle commits** on origin or master — 7-CONSEC-NO-JEFE-ACTION on franklin-templeton-benji-fobxx prereq-1.
+- **0 community-growth commits.** H22 priority #2 (Bittensor-TAO Q1-revenue thread) not committed. The TAO frame has now evaporated from briefing-23 — narrative-window CLOSED.
+- **0 new `/learn/` pages indexed.** 7-cycle-CMS-drought.
+- **0 H22 standup commit on local master** (sandbox-ephemerality artifact).
 
 ---
 
 ## What's blocking or at risk
 
-- **Mirror-runner failure is now systemic** — every H+ adds +1 stranded commit unless a fix lands. Cherry-pick rescue per cycle is ~10 min of operator/runner time. Cumulative tax: 3 strands today + 1 rescue (so far 4 hours). By H06 tomorrow → 8+ strands and increasing merge-conflict risk.
-- **BUIDL-prereq-channel is decaying by symmetric rule** — 6-consec-no-progress is the longest-zero-action stretch of any channel. Without a strip-forward in 1-2 cycles, prereq enters "abandoned-de-facto" status and the BUIDL-bundle becomes architecturally suspect.
-- **Aave-balance-sheet thread (H21 priority #2) wasn't shipped** — Babylon-3M-USDT was the only CLEAN-NEW frame in briefing-21 and the natural narrative-novelty extraction missed its tightest news-window. Briefing-22's **bittensor-tao-47-ytd-43m-q1-revenue** is the fresher hook now — narrower window (2-3 cycles before TAO frame consolidates or evaporates).
-- **V2-novelty deep-collapse may be regime-shifting under FOMC-week-saturation** — if 20-40pct band persists 3+ cycles, content strategy must shift to **explainer-publishing on saturating frames** (FOMC, Atkins, hacks) rather than chasing novelty.
+- **0-of-3 priority-completion in H22.** All three named priorities skipped. This is the worst-completion-rate of Cycle-8 and signals the Jefe-action-channel is deeply quiet despite Channel-B runner producing automated design-polish ships. **Pattern:** automated channels (briefing, design Channel-B) firing reliably; manual/Jefe-action channels (cherry-pick, community thread, BUIDL prereq) dormant. **Implication:** keep priorities tight to Jefe-doable-in-one-action; lean on automation for rest.
+- **Channel-A strand-backlog grew by 0 this cycle (good) but persists at 3.** Without a drain, a future Channel-A runner-spawn could compound the backlog. Cherry-pick is a 10-min op per commit — schedule a 30-min drain window in H23 or H24.
+- **BUIDL-prereq-channel at 7-CONSEC zeros — escalation-candidate P0 at H24.** Same risk as last cycle, now 1 cycle deeper. Strip-forward ship is still the lowest-friction path.
+- **Bittensor-TAO narrative-window CLOSED** (frame evaporated H22→H23 mirroring Babylon-3M H21→H22). **Generalize:** 1-hour windows on CLEAN-NEW frames are becoming the norm; community-thread channel needs intra-hour latency or it always misses. Either commit to "draft + ship within 30 min of briefing" SLA or accept that fresh-frame extraction is structurally impossible at hourly cadence.
+- **Master local at H21 standup** while origin/main is at H23-briefing — H23 standup commit will leapfrog H22 on master locally. Push origin/master immediately after standup commit lands or sandbox tear-down loses it again.
 
 ---
 
-## Top 3 priorities for Hour 22 (must close by 23:25Z)
+## Top 3 priorities for Hour 23 (must close by 00:25Z, H00 cutover)
 
-### 1. **design-polish + devops — CHERRY-PICK BATCH-OF-3 from `origin/design-push-v2` to main + DIAGNOSE MIRROR-RUNNER (P0-PERSISTENT)**
-- **Assigned:** design-polish (cherry-pick batch) + degen-devops (mirror-runner diagnosis) + degen-qa-tester (post-deploy verify).
-- **Action (a) — cherry-pick batch:** `git fetch origin && git cherry-pick f222a8a83 7724950f2 e13dc96c5` on local main → push to origin/main with `design:` commit messages preserved. Use the H21 surgical-checkout-recipe (parent-blob check). Order: chronological — zk-rollups @ 19:36Z first, lrt @ 20:35Z second, erc-8183-redo @ 21:38Z third. **Special note on `e13dc96c5 erc-8183-redo`:** main already has `b513e7532 erc-8183` at 21:40:51Z; the design-push-v2 version is at 21:38:19Z (2 min EARLIER). **Verify whether `e13dc96c5` is a true SUPERSET of `b513e7532` (different polish iteration), a DUPLICATE, or DIVERGENT.** If duplicate → SKIP. If superset → cherry-pick with conflict-resolve-favoring-design-push-v2. If divergent → leave on side-branch and flag for human review.
-- **Action (b) — diagnose mirror-runner:** Investigate why design-push-v2 → main mirror has stopped firing. Check: (1) `.github/workflows/` mirror jobs, (2) any cron entries on the runner host, (3) the design-runner's commit-target config, (4) what was different at H17 cluster era when mirroring DID work, (5) why `b513e7532 erc-8183` made it to main this cycle but the other 3 didn't (key forensic clue). Produce a 1-paragraph root-cause hypothesis and a proposed fix in `ops/INCIDENT-MIRROR-RUNNER-2026-04-28.md`. Target: ship the fix in H23 or H24.
-- **Acceptance:** 2-3 cherry-pick commits land on origin/main (zk-rollups + lrt confirmed; erc-8183-redo conditional). Post-deploy spotcheck of `/learn/zk-rollups-guide-2026` and `/learn/liquid-restaking-tokens-lrt-guide-2026` (deferred to Vercel CI). Mirror-runner diagnosis written up. **If (b) lands a permanent fix, T-DESIGN-PUSH-BRANCH-DRIFT P0-PERSISTENT retires.**
+### 1. **design-polish + devops — CHERRY-PICK BATCH-OF-3 from `origin/design-push-v2` to main + DRAFT Channel-A decommission proposal (P0-PERSISTENT, repeat from H22)**
+- **Assigned:** design-polish (cherry-pick batch) + degen-devops (Channel-A decommission decision) + degen-qa-tester (post-deploy verify).
+- **Action (a) — cherry-pick batch:** `git fetch origin && git cherry-pick f222a8a83 7724950f2 e13dc96c5` on local main → push to origin/main. Use H21 surgical-checkout-recipe (parent-blob check). Order: chronological — `f222a8a83 zk-rollups @ 19:36Z` first, `7724950f2 lrt @ 20:35Z` second, `e13dc96c5 erc-8183-redo @ 21:38Z` third. **Special note on `e13dc96c5`:** main already has `b513e7532 erc-8183 @ 21:40:51Z`; design-push-v2 version is at 21:38:19Z (2 min EARLIER) — re-evaluate at cherry-pick-time whether SUPERSET / DUPLICATE / DIVERGENT. If duplicate → SKIP. If superset → cherry-pick favoring design-push-v2. If divergent → flag for human review and leave stranded.
+- **Action (b) — Channel-A decommission proposal:** Now that Channel-B is confirmed working (2-of-2 direct-to-main last 2 cycles), Channel-A is structurally redundant. **Proposal:** after this drain, archive `origin/design-push-v2` (or delete after 24h grace), turn off Channel-A runner, write up the decommission in `ops/INCIDENT-MIRROR-RUNNER-2026-04-28.md`. **Do NOT execute deletion this cycle** — write the proposal and route to Jefe for go/no-go at H00 or H01.
+- **Acceptance:** 2-3 cherry-pick commits land on origin/main (zk-rollups + lrt confirmed; erc-8183-redo conditional). Post-deploy spotcheck deferred to Vercel CI. Channel-A decommission proposal drafted in ops/. **If batch lands, T-DESIGN-PUSH-BRANCH-DRIFT P0-PERSISTENT degrades to P2-DECOMMISSION-PENDING.**
 
-### 2. **community-growth — Bittensor-TAO Q1-revenue + AI-services-43M thread (the only CLEAN-NEW frame this cycle)**
-- **Assigned:** community-growth (degen-community-manager).
-- **Action:** Draft 1 X/Twitter thread (4-5 posts). **Hook:** TAO is +47% YTD with $43M Q1 AI-services revenue printed — first concrete revenue print from the AI-x-crypto category that points at a real business model (not just narrative speculation). Thread: (1) headline number — 47% YTD outperforms most majors; (2) the revenue print — what $43M Q1 means for TAO valuation multiples; (3) AI-services-as-on-chain-product — TAO subnets vs Akash/Render/peers; (4) **bear case** — concentration of subnet revenue, validator-economics, what could break the thesis; (5) what to watch — Q2 trend, subnet diversification, TAO unlocks. **CTA to news-feed widget + queue request to CMS for `/learn/bittensor-tao-subnets-guide-2026`.**
-- **Rationale:** **Bittensor-TAO is the ONLY fully-CLEAN-NEW frame in briefing-22** (Polygon-sPOL is lenient-recur-with-event-anchor; TAO has zero prior in observed lineage). High-rev-multiple AI-x-crypto story is structurally underserved on degen0x. Aave-balance-sheet thread (H21 #2) can still ship if community bandwidth allows but Babylon-3M-USDT is now ~4h old and decaying; TAO is higher-EV. Companion to priority #1: post-cherry-picks land, thread can reciprocal-link to fresh polishes (zk-rollups is closest topical match for AI-x-crypto reader).
-- **Acceptance:** 1 thread drafted (and posted if Jefe-action available), CMS queue request for `bittensor-tao-subnets-guide-2026` filed, engagement-tracking entry in growth log.
-
-### 3. **build-cycle — franklin-templeton-benji-fobxx-prereq-1 — STRIP-FORWARD ship by 23:00Z (P1 channel-decay symmetric rule)**
+### 2. **build-cycle — franklin-templeton-benji-fobxx-prereq-1 — STRIP-FORWARD ship before 8-CONSEC at H24 (P1 channel-decay → P0-CANDIDATE)**
 - **Assigned:** build-cycle (degen-page-scaffold + degen-content-writer).
-- **Action:** Open BUIDL CYCLE-57 prereq-1 via `degen-page-scaffold`. **No further deliberation** — ship the smallest-shippable-form: header + 4 sections (What is FOBXX / Tokenization mechanics / Yield + risks / How to access) + 2 placeholder data tables. Do NOT wait for news-cycle favor (per H21 logic — SEC-CFTC tailwind already evaporated; briefing-22 Atkins-tokenization frame is V2-RECUR not fresh). **Evergreen content, ship as-is, iterate to v2 next week.** Use `/learn/blackrock-buidl-tokenized-treasury-guide-2026` as structural template.
-- **Rationale:** **6-CONSEC-NO-JEFE-ACTION is the longest channel-zero-action-stretch in observed history.** T-PUBLISH-BUIDL-PREREQ-CHANNEL-DECAY P1 named this hour. If H22 ships, channel resets. If H22 also skips, decide at H23 whether to **drop the prereq from the bundle** (ship BUIDL with 2 of 3 prereqs) or **abandon the bundle entirely** and reshape the 3-prereq slate.
-- **Acceptance:** `data/PUBLISH_QUEUE.txt` shows franklin-templeton-benji-fobxx slug moved from "queued" to "in-progress" or "scaffolded". Or: a `feat:` commit on origin/main creates `src/app/learn/franklin-templeton-benji-fobxx-guide-2026/page.tsx` (placeholder body acceptable). H23 standup re-evaluates.
+- **Action:** Open BUIDL CYCLE-58 prereq-1 via `degen-page-scaffold`. **NO further deliberation, NO news-cycle-favor wait** — ship the smallest-shippable form: header + 4 sections (What is FOBXX / Tokenization mechanics / Yield + risks / How to access via Benji app) + 2 placeholder data tables (yield-history, AUM-history). Use `/learn/blackrock-buidl-tokenized-treasury-guide-2026` as structural template. **Evergreen content, ship as-is, iterate to v2 next week.** Promoted from priority #3 to #2 because the channel is now 7-CONSEC and the symmetric-rule threshold is approached at H24.
+- **Rationale:** **7-CONSEC-NO-JEFE-ACTION is the longest channel-zero-action-stretch in observed history.** If H23 also skips, T-PUBLISH-BUIDL-PREREQ-CHANNEL-DECAY escalates to **P0** at H24 and triggers the decision-fork (ship / drop / abandon-bundle). **Lowest-friction path is to ship the strip-forward THIS cycle and reset the channel.** Ship-cost ~30 min; alternative is a much larger architectural decision next cycle.
+- **Acceptance:** 1 `feat:` commit on origin/main creating `/learn/franklin-templeton-benji-fobxx-tokenized-treasury-guide-2026` with header + 4 stub sections + 2 tables. Build passes. Channel resets to 0-CONSEC.
+
+### 3. **community-growth — Injective v1.19.0 INJ-buyback thread (the freshest CLEAN-NEW frame, 30-min draft+ship SLA)**
+- **Assigned:** community-growth (degen-community-manager).
+- **Action:** Draft 1 X/Twitter thread (3-4 posts) within 30 min of this agenda (target: ship by 23:50Z). **Hook:** Injective just shipped v1.19.0 mainnet upgrade with new INJ-buyback mechanism — first-of-cycle protocol-level deflationary mechanic announcement on a non-majors L1. Thread: (1) headline — INJ-buyback shipped, what it does mechanically; (2) deflationary tokenomics — buyback-and-burn-via-protocol-revenue model, comp to BNB-auto-burn / FTT-historical / SOL-burn; (3) **bear case** — buyback magnitude depends on protocol fees; INJ price-action in last 24h; (4) what to watch — first buyback execution, INJ supply impact, validator economics. **CTA to news-feed widget + queue request to CMS for `/learn/injective-tokenomics-buyback-guide-2026` (deferred — DO NOT block thread on CMS).**
+- **Rationale:** **Injective is one of 2 fully-CLEAN-NEW frames in briefing-23** (TOKEN2049-Dubai is the other but is event-news with little degen-trading hook). Per the H22→H23 lesson on Bittensor-TAO evaporation (1-cycle-half-life on CLEAN-NEW frames), this thread MUST ship within 30 min of agenda or the window closes. **Demoted from priority #2 to #3** because the BUIDL-prereq channel-decay risk now outranks narrative-extraction opportunity (channel-decay is operationally compounding; thread is narrative-perishable but optional). If community bandwidth tight, ship Priority #2 first and skip this.
+- **Acceptance:** 1 thread drafted (and posted if Jefe-action available) within 30 min. CMS queue request for `injective-tokenomics-buyback-guide-2026` filed (low priority). Engagement-tracking entry in growth log. **If thread misses 30-min window → defer to next CLEAN-NEW frame and document the miss.**
 
 ---
 
-## KPI snapshot (H22 mid-cycle)
+## KPI Snapshot (H23, 23:14Z)
 
-| Metric | Value | Δ vs H21 |
-|---|---|---|
-| Organic traffic (24h) | unverifiable from sandbox (egress 403, T-EOD-QA-EGRESS 44th) | n/a |
-| Indexed pages | 615 (`published_pages_list.txt`) | 0 (CMS-drought 13-cycle) |
-| News briefing freshness | 22:04Z mtime / 22:05Z gen / ~10min stale | GREEN (within 60min SLO) |
-| Briefing GREEN streak | 53-consec | +1 (NEW LOCAL HIGH) |
-| Latest origin/main SHA | `4a556d6a4` | + briefing-22 |
-| Latest master SHA | `9d653b5f0` (about to advance to H22 standup) | + H21 standup only |
-| Divergence (master+/origin+) | 105 / 91 (gap 196) | NET +4 (acceleration) |
-| Design-polish density | 15-of-21 = 71.43% | +6.43pp (largest 1-cycle gain in 6 cycles) |
-| System-SLO mid-cycle | 35-of-56 = 62.50% | +2.50pp NEW LOCAL HIGH-OF-HIGHS |
-| Runner-only SLO | 7-of-56 = 12.50% | new local low (24-consec monotonic decline) |
-| Design-push-v2 stranded | 3 unique-fresh (24-ahead/4-behind main) | +2 vs H21 |
-| Locks observed | 5 (DAEMON-equilibrium-stable 5-cycle) | 0 spawn this cycle |
-| BUIDL-prereq-1 stale | 6-consec-no-Jefe-action | +1 (NEW NAMED P1 CHANNEL DECAY) |
-| CMS-backlog | 13-consec-cycle inertia | +1 |
+- **Latest origin/main SHA:** `b878d3774` (briefing-23, 23:07:06Z)
+- **Latest master SHA (local):** `9d653b5f0` (H21 standup) — H22 standup commit absent locally (sandbox-ephemerality)
+- **News briefing freshness:** 7 min stale (generated_at 23:06:49Z, mtime 23:07:06Z) — GREEN, 54-CONSEC
+- **Indexed pages:** Last commit creates 0 new `/learn/` pages — 7-cycle-CMS-drought continues; site-total holds at H22 baseline (no exact count from sandbox without GSC pull which is unavailable from this proxy)
+- **Organic traffic (24h):** Unable to pull from sandbox (GSC + GA both require auth + degen0x.com 403 from this proxy). H22 agenda noted no anomaly; defer fresh pull to Vercel-Analytics. **T-EOD-QA-EGRESS 45th-consec.**
+- **Design-polish channel density (last 22 cycles):** 16-of-22 = 72.73% (NEW LOCAL HIGH, +1.30pp)
+- **System-SLO mid-cycle:** 37-of-57 = 64.91% (NEW LOCAL HIGH-OF-HIGHS, +2.41pp)
+- **Runner channel:** 25-consec-silent, 49h+, SLO 7-of-57 = 12.28% (NEW LOCAL LOW)
+- **Divergence (master vs origin/main):** master+105 / origin+93 / gap 198, NET +2 vs H22 (bimodal-low-mode)
+- **Lock-family:** 5 members, 6-cycle-stable
+- **Cycle-8 V2-novelty forecast accuracy:** 1-of-1-this-cycle (strict 40-60 band), cumulative 24-of-25 = 96%
+- **H22 priority-completion:** 0-of-3 (worst of Cycle-8)
 
 ---
 
-## H23-watchpoints (forecast-tree branches for H23 calibration — Cycle-8 mid-cycle gates)
+## H23 watchpoints (resolves at H00 close)
 
-- **V2-novelty 2nd-consec-deep-collapse-≤30pct** vs **40-50pct-mid-band-recovery** vs **60pct-snapback-to-mode** vs **80-100pct-overshoot** (4-branch; 2-consec-deep-collapse non-trivial under FOMC-week-saturation; mode toggles depending on whether Wednesday FOMC verdict adds fresh anchors or absorbs all 5 stories).
-- **Cherry-pick-batch-of-3 lands** vs **batch-fails-on-conflict** vs **mirror-runner-fixed-and-no-cherry-pick-needed-H23** vs **all-channels-silent-1-cycle** (4-branch).
-- **Divergence +4-acceleration-2-consec-modal-shift** vs **+2-briefing-only-mean-revert** vs **+3-mid** vs **+1-or-0-reverse-sync** (4-branch).
-- **BUIDL prereq-1 strip-forward lands** vs **7-consec-no-progress-CYCLE-58-DECAY-ESCALATES-P0** vs **alt-prereq-substitution** vs **bundle-abandoned** (4-branch).
-- **Lock-family 5-stable-6th-cycle** vs **6th-spawn** vs **maintenance-clear** (3-branch).
-- **Bittensor-TAO thread ships + CMS-queue-request filed** vs **thread-only-no-CMS** vs **no-action** (3-branch).
+- Will Channel-B runner spawn a 3rd-consecutive direct-to-main design-polish? (3-of-3 = pattern-confirmed-canonical)
+- Will Channel-A runner add a 4th strand to design-push-v2? (4-of-4 over 4 hours = side-channel-still-active despite mirror-broken)
+- Will cherry-pick-batch land H23? (P0-PERSISTENT 2nd-cycle-attempt)
+- Will BUIDL-prereq-1 ship strip-forward? (1-cycle-from-P0-escalation)
+- Will V2-novelty hold 40-60 strict band or redeepen toward 20-40? (regime-recovery vs regime-stable)
+- Will Injective frame survive H24 or evaporate (TAO/Babylon pattern)? (1-cycle-half-life test)
+- Will divergence cross 200 at H00? (ceremonial, no operational consequence)
+- Will master push from this sandbox cleanly? (operational continuity check)
 
-**Cycle-8 mid-cycle prestaged forecast count: 4+4+4+4+3+3 = 22 branches across 6 trees → ~22% per branch under uniform prior; methodology-validation target ≥4-of-6 trees-resolve-on-prestaged-branch (66.67% floor) for cumulative cycle-rate above 90%.**
-
----
-
-**One-line summary:** Hour 22: shipped 2 design-polishes (`b513e7532` erc-8183 + `809aaf766` cherry-pick-rescue) + briefing-22 (53-consec-green NEW LOCAL HIGH); priority = cherry-pick-batch-of-3 from design-push-v2 + diagnose mirror-runner permanently (3 stranded again, pattern hardening).
+— end of agenda —
