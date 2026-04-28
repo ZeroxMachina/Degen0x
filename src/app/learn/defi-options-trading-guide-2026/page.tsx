@@ -112,7 +112,7 @@ export default function DefiOptionsGuide() {
         <span className="bg-[var(--color-primary)]/20 text-[var(--color-primary)] text-xs font-semibold px-3 py-1 rounded-full border border-[var(--color-primary)]/40">
           DeFi Derivatives
         </span>
-        <span className="bg-[var(--color-primary)]/20 text-[var(--color-primary-light,#79c0ff)] text-xs font-semibold px-3 py-1 rounded-full border border-[var(--color-primary)]/40">
+        <span className="bg-[var(--color-primary)]/20 text-[var(--color-primary-light)] text-xs font-semibold px-3 py-1 rounded-full border border-[var(--color-primary)]/40">
           Intermediate
         </span>
       </div>
@@ -159,12 +159,12 @@ export default function DefiOptionsGuide() {
           or on a specific date (the expiry). You pay a premium upfront for this right.
         </p>
         {/* editorial-voice */}
-        <div style={{ background: 'var(--color-bg-card)', border: '1px solid var(--color-border)', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
-            <span style={{ fontSize: 18 }}>💡</span>
-            <strong style={{ color: 'var(--color-primary)', fontSize: 15 }}>Why This Matters</strong>
+        <div className="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-[10px] px-6 py-5 mt-8 mb-8">
+          <div className="flex items-center gap-2 mb-2.5">
+            <span className="text-lg">💡</span>
+            <strong className="text-[var(--color-primary)] text-[15px]">Why This Matters</strong>
           </div>
-          <p style={{ fontSize: 14, color: 'var(--color-text)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+          <p className="text-sm text-[var(--color-text)] leading-[1.7] m-0 italic">
             Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
           </p>
         </div>
@@ -179,7 +179,7 @@ export default function DefiOptionsGuide() {
           <h4 className="text-[var(--color-primary)] font-semibold mb-4">📊 The Two Types of Options</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p className="text-[var(--color-success,#22c55e)] font-semibold mb-2">Call Option</p>
+              <p className="text-[var(--color-success)] font-semibold mb-2">Call Option</p>
               <p className="text-[var(--color-text)] text-sm">
                 Right to <strong className="text-[var(--color-text)]">buy</strong> an asset at the strike price.
                 You buy a call when you're bullish. If ETH is at $3,000 and you buy a $3,200 call,
@@ -187,7 +187,7 @@ export default function DefiOptionsGuide() {
               </p>
             </div>
             <div>
-              <p className="text-[var(--color-danger,#ef4444)] font-semibold mb-2">Put Option</p>
+              <p className="text-[var(--color-danger)] font-semibold mb-2">Put Option</p>
               <p className="text-[var(--color-text)] text-sm">
                 Right to <strong className="text-[var(--color-text)]">sell</strong> an asset at the strike price.
                 You buy a put when you're bearish or want downside protection. If ETH drops below your
@@ -195,6 +195,9 @@ export default function DefiOptionsGuide() {
               </p>
             </div>
           </div>
+
+
+        </div>
 
         <AuthorAttribution
           author="DegenSensei"
@@ -204,8 +207,6 @@ export default function DefiOptionsGuide() {
           readingTime={8}
           section="learn"
         />
-
-        </div>
 
         <h3 className="text-xl font-semibold text-[var(--color-text)] mt-6 mb-4">Key Options Vocabulary</h3>
         <div className="overflow-x-auto mb-6">
@@ -268,33 +269,33 @@ export default function DefiOptionsGuide() {
             <tbody>
               <tr className="border-t border-[var(--color-border)]">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Custody</td>
-                <td className="py-3 px-4 text-[var(--color-danger,#ef4444)]">Exchange holds funds</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)]">Self-custodial, wallet-only</td>
+                <td className="py-3 px-4 text-[var(--color-danger)]">Exchange holds funds</td>
+                <td className="py-3 px-4 text-[var(--color-success)]">Self-custodial, wallet-only</td>
               </tr>
               <tr className="border-t border-[var(--color-border)] bg-[var(--color-bg-card)]/30">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Liquidity</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)]">Very deep (billions in OI)</td>
+                <td className="py-3 px-4 text-[var(--color-success)]">Very deep (billions in OI)</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">Growing (~$500M+ monthly volume)</td>
               </tr>
               <tr className="border-t border-[var(--color-border)]">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Access</td>
-                <td className="py-3 px-4 text-[var(--color-danger,#ef4444)]">KYC required, geo-restricted</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)]">Permissionless, wallet connect</td>
+                <td className="py-3 px-4 text-[var(--color-danger)]">KYC required, geo-restricted</td>
+                <td className="py-3 px-4 text-[var(--color-success)]">Permissionless, wallet connect</td>
               </tr>
               <tr className="border-t border-[var(--color-border)] bg-[var(--color-bg-card)]/30">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Counterparty Risk</td>
-                <td className="py-3 px-4 text-[var(--color-danger,#ef4444)]">Exchange insolvency risk</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)]">Smart contract risk only</td>
+                <td className="py-3 px-4 text-[var(--color-danger)]">Exchange insolvency risk</td>
+                <td className="py-3 px-4 text-[var(--color-success)]">Smart contract risk only</td>
               </tr>
               <tr className="border-t border-[var(--color-border)]">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Markets Available</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)]">BTC, ETH, SOL + majors</td>
+                <td className="py-3 px-4 text-[var(--color-success)]">BTC, ETH, SOL + majors</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">Growing, ETH + L2 tokens</td>
               </tr>
               <tr className="border-t border-[var(--color-border)] bg-[var(--color-bg-card)]/30">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Settlement</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">Cash or physical (exchange-controlled)</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)]">On-chain, transparent, verifiable</td>
+                <td className="py-3 px-4 text-[var(--color-success)]">On-chain, transparent, verifiable</td>
               </tr>
             </tbody>
           </table>
@@ -355,8 +356,8 @@ export default function DefiOptionsGuide() {
 
         <h3 className="text-xl font-semibold text-[var(--color-text)] mt-6 mb-4">Pros & Cons</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-[var(--color-success,#22c55e)]/10 border border-[var(--color-success,#22c55e)]/30 rounded-lg p-4">
-            <p className="text-[var(--color-success,#22c55e)] font-semibold mb-2 text-sm">✅ Pros</p>
+          <div className="bg-[var(--color-success)]/10 border border-[var(--color-success)]/30 rounded-lg p-4">
+            <p className="text-[var(--color-success)] font-semibold mb-2 text-sm">✅ Pros</p>
             <ul className="text-[var(--color-text)] text-sm space-y-1">
               <li>• Deepest DeFi options liquidity</li>
               <li>• Professional-grade order book UX</li>
@@ -364,8 +365,8 @@ export default function DefiOptionsGuide() {
               <li>• Active governance via DRV token</li>
             </ul>
           </div>
-          <div className="bg-[var(--color-danger,#ef4444)]/10 border border-[var(--color-danger,#ef4444)]/30 rounded-lg p-4">
-            <p className="text-[var(--color-danger,#ef4444)] font-semibold mb-2 text-sm">❌ Cons</p>
+          <div className="bg-[var(--color-danger)]/10 border border-[var(--color-danger)]/30 rounded-lg p-4">
+            <p className="text-[var(--color-danger)] font-semibold mb-2 text-sm">❌ Cons</p>
             <ul className="text-[var(--color-text)] text-sm space-y-1">
               <li>• Off-chain order book adds centralization risk</li>
               <li>• Fewer exotic expiries vs Deribit</li>
@@ -424,8 +425,8 @@ export default function DefiOptionsGuide() {
 
         <h3 className="text-xl font-semibold text-[var(--color-text)] mt-6 mb-4">Pros & Cons</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-[var(--color-success,#22c55e)]/10 border border-[var(--color-success,#22c55e)]/30 rounded-lg p-4">
-            <p className="text-[var(--color-success,#22c55e)] font-semibold mb-2 text-sm">✅ Pros</p>
+          <div className="bg-[var(--color-success)]/10 border border-[var(--color-success)]/30 rounded-lg p-4">
+            <p className="text-[var(--color-success)] font-semibold mb-2 text-sm">✅ Pros</p>
             <ul className="text-[var(--color-text)] text-sm space-y-1">
               <li>• Capital-efficient dual-earning LPs</li>
               <li>• Novel approach to options liquidity</li>
@@ -433,8 +434,8 @@ export default function DefiOptionsGuide() {
               <li>• STRYKE token incentives for early users</li>
             </ul>
           </div>
-          <div className="bg-[var(--color-danger,#ef4444)]/10 border border-[var(--color-danger,#ef4444)]/30 rounded-lg p-4">
-            <p className="text-[var(--color-danger,#ef4444)] font-semibold mb-2 text-sm">❌ Cons</p>
+          <div className="bg-[var(--color-danger)]/10 border border-[var(--color-danger)]/30 rounded-lg p-4">
+            <p className="text-[var(--color-danger)] font-semibold mb-2 text-sm">❌ Cons</p>
             <ul className="text-[var(--color-text)] text-sm space-y-1">
               <li>• More complex mechanics than standard options</li>
               <li>• Liquidity still thinner than Derive for large trades</li>
@@ -564,8 +565,8 @@ export default function DefiOptionsGuide() {
           7. Risks to Understand Before Trading
         </h2>
 
-        <div className="bg-[var(--color-bg)] border border-[var(--color-danger,#ef4444)]/30 rounded-lg p-6 mb-6">
-          <h4 className="text-[var(--color-danger,#ef4444)] font-semibold mb-3">⚠️ Important Disclaimer</h4>
+        <div className="bg-[var(--color-bg)] border border-[var(--color-danger)]/30 rounded-lg p-6 mb-6">
+          <h4 className="text-[var(--color-danger)] font-semibold mb-3">⚠️ Important Disclaimer</h4>
           <p className="text-[var(--color-text)] text-sm">
             This guide is for informational purposes only. Options trading involves significant risk,
             including the possibility of losing your entire investment. DeFi options carry additional
@@ -628,13 +629,13 @@ export default function DefiOptionsGuide() {
             <tbody>
               <tr className="border-t border-[var(--color-border)]">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">DeFi Market Share</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)] font-semibold">~70% ✓</td>
+                <td className="py-3 px-4 text-[var(--color-success)] font-semibold">~70% ✓</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">Growing</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">Early stage</td>
               </tr>
               <tr className="border-t border-[var(--color-border)] bg-[var(--color-bg-card)]/30">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Monthly Volume</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)] font-semibold">$369M+ ✓</td>
+                <td className="py-3 px-4 text-[var(--color-success)] font-semibold">$369M+ ✓</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">$50M+</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">Growing</td>
               </tr>
@@ -648,13 +649,13 @@ export default function DefiOptionsGuide() {
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Expiries</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">Weekly / Monthly</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">Weekly epochs</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)] font-semibold">No expiry ✓</td>
+                <td className="py-3 px-4 text-[var(--color-success)] font-semibold">No expiry ✓</td>
               </tr>
               <tr className="border-t border-[var(--color-border)]">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Token Support</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">ETH, BTC</td>
                 <td className="py-3 px-4 text-[var(--color-text)]">ETH, major L2 tokens</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)] font-semibold">Any Uni v3 pair ✓</td>
+                <td className="py-3 px-4 text-[var(--color-success)] font-semibold">Any Uni v3 pair ✓</td>
               </tr>
               <tr className="border-t border-[var(--color-border)] bg-[var(--color-bg-card)]/30">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Best For</td>
@@ -664,9 +665,9 @@ export default function DefiOptionsGuide() {
               </tr>
               <tr className="border-t border-[var(--color-border)]">
                 <td className="py-3 px-4 text-[var(--color-text-secondary)]">Fully On-Chain</td>
-                <td className="py-3 px-4 text-[var(--color-danger,#ef4444)]">Partial (off-chain OB)</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)] font-semibold">Yes ✓</td>
-                <td className="py-3 px-4 text-[var(--color-success,#22c55e)] font-semibold">Yes ✓</td>
+                <td className="py-3 px-4 text-[var(--color-danger)]">Partial (off-chain OB)</td>
+                <td className="py-3 px-4 text-[var(--color-success)] font-semibold">Yes ✓</td>
+                <td className="py-3 px-4 text-[var(--color-success)] font-semibold">Yes ✓</td>
               </tr>
             </tbody>
           </table>
