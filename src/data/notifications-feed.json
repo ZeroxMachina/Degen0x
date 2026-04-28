@@ -1,5 +1,13 @@
 [
   {
+    "id": "feed-2026-04-28-018",
+    "type": "news",
+    "title": "\ud83d\udcf0 BTC slides to $76.5K, ETH to $2,278 as four central banks line up rate decisions",
+    "message": "Bitcoin gave back the $80K reclaim attempt as traders de-risk into a Fed, BOJ, ECB and BOE rate-decision week.",
+    "actionUrl": "/news",
+    "date": "2026-04-28"
+  },
+  {
     "id": "feed-2026-04-28-017",
     "type": "news",
     "title": "\ud83d\udcf0 Aave-led DeFi rescue tops $300M as industry tries to plug Kelp DAO's $292M hole",
@@ -228,14 +236,6 @@
     "type": "news",
     "title": "\ud83d\udcf0 Bitcoin 2026 opens in Vegas with FBI's Patel, acting AG Blanche keynoting Day 1",
     "message": "The world's largest Bitcoin conference kicks off Monday in Las Vegas with a federal law enforcement headline panel framing code as free speech.",
-    "actionUrl": "/news",
-    "date": "2026-04-27"
-  },
-  {
-    "id": "feed-2026-04-27-012",
-    "type": "news",
-    "title": "\ud83d\udcf0 Aave coalition raises ~80% of $200M needed to plug Kelp DAO bad debt",
-    "message": "Aave-led DeFi consortium has secured roughly $160M of the $200M shortfall left by the April 19 Kelp DAO exploit, easing systemic contagion fears.",
     "actionUrl": "/news",
     "date": "2026-04-27"
   }

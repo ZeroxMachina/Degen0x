@@ -1,93 +1,93 @@
 {
-  "generated_at": "2026-04-28T16:10:00Z",
-  "briefing_id": "briefing-2026-04-28-16",
+  "generated_at": "2026-04-28T17:07:00Z",
+  "briefing_id": "briefing-2026-04-28-17",
   "story_count": 5,
   "model": "claude-opus-4-7",
   "stories": [
     {
-      "id": "story-2026-04-28-16-001",
-      "headline": "Aave-led DeFi rescue tops $300M as industry tries to plug Kelp DAO's $292M hole",
-      "slug": "aave-led-defi-rescue-tops-300m-kelp-dao",
-      "tldr": "Consensys, Lido, EtherFi and others have pledged into a $300M+ recovery vehicle to backstop Aave bad debt from the April 19 Kelp DAO exploit.",
-      "why_it_matters": "Why it matters: A coordinated industry bailout — not protocol insurance — is becoming the de facto safety net for cross-chain liquid restaking risk.",
+      "id": "story-2026-04-28-17-001",
+      "headline": "BTC slides to $76.5K, ETH to $2,278 as four central banks line up rate decisions",
+      "slug": "btc-76k-fed-week-rate-decisions",
+      "tldr": "Bitcoin gave back the $80K reclaim attempt as traders de-risk into a Fed, BOJ, ECB and BOE rate-decision week.",
+      "why_it_matters": "Why it matters: Crypto's correlation to macro is back near 4-year highs, so the FOMC dot plot will set risk appetite for May regardless of on-chain narratives.",
       "the_details": [
-        "Attacker minted 116,500 unbacked rsETH via a misconfigured LayerZero bridge setting and borrowed ~$230M against it on Aave.",
-        "Pledged contributors include Consensys, Lido, EtherFi and Aave-aligned DAOs; most commitments still need governance approval to land.",
-        "Researchers attribute the exploit to DPRK-linked Trader Traitor, the same cluster suspected behind Drift's $285M April 1 drain."
+        "BTC traded at $76,342 at 9am ET Tuesday, down ~$1,356 in 24 hours after three sessions opening above $78,000.",
+        "ETH printed its lowest weekly open at $2,278; SOL hovered at $83.17 with a $47.9B cap, per CoinDesk and CoinMarketCap.",
+        "Fed, BOJ, ECB and BOE all set policy this week with U-Mich consumer sentiment at an all-time low of 49.8."
       ],
       "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/tech/2026/04/27/industry-leaders-are-pouring-hundreds-of-millions-into-a-rescue-plan-for-aave-users-after-massive-crypto-hack",
+      "source_url": "https://www.coindesk.com/daybook-us/2026/04/28/bulls-want-bitcoin-back-above-usd80-000-macro-says-not-so-fast",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T13:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-17-002",
+      "headline": "April 2026 already crypto's worst hack month since Bybit, with $606M stolen in 18 days",
+      "slug": "april-2026-worst-hack-month-606m",
+      "tldr": "Drift and Kelp DAO together account for roughly 95% of April losses, marking the worst stretch for crypto theft since the $1.4B Bybit breach in February 2025.",
+      "why_it_matters": "Why it matters: Two suspected DPRK-linked admin-key exploits on top-20 protocols in 18 days will harden insurance pricing, slow institutional DeFi allocations, and re-open the cross-chain bridge debate.",
+      "the_details": [
+        "Drift Protocol lost $285M on April 1 via a fake CarbonVote token and compromised admin key that drained vaults in 12 minutes.",
+        "Kelp DAO was drained for $292M on April 18 after an attacker minted 116,500 unbacked rsETH through a misconfigured LayerZero bridge.",
+        "CoW Swap lost $1.2M to a domain hijack on April 14; Grinex was drained of $13.74M in USDT on April 15."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
       "category": "security",
-      "impact": "high",
-      "timestamp": "2026-04-28T13:00:00Z"
-    },
-    {
-      "id": "story-2026-04-28-16-002",
-      "headline": "100+ crypto firms hand Senate Banking a deadline: mark up the market structure bill now",
-      "slug": "crypto-firms-senate-banking-market-structure-markup",
-      "tldr": "A coalition led by Coinbase and Ripple is publicly pressuring the Senate Banking Committee to schedule a markup of the Clarity Act before recess.",
-      "why_it_matters": "Why it matters: Without a Senate markup this cycle, the SEC-CFTC March joint release becomes the de facto US framework — leaving structural rules to agency staff, not statute.",
-      "the_details": [
-        "Letter signed by 100+ firms argues the bill is needed to lock in the SEC and CFTC's March 17 token-taxonomy framework.",
-        "Lobby push follows the SEC's April 13 staff statement carving a broker-dealer exception for DEX-style user interfaces.",
-        "Industry wants statutory clarity ahead of any administration change that could reverse the agencies' joint posture."
-      ],
-      "source": "CoinDesk",
-      "source_url": "https://www.coindesk.com/policy/2026/04/23/more-than-100-crypto-firms-urge-senate-to-move-on-u-s-market-structure-bill",
-      "category": "regulation",
-      "impact": "high",
-      "timestamp": "2026-04-28T11:30:00Z"
-    },
-    {
-      "id": "story-2026-04-28-16-003",
-      "headline": "SEC's April 13 user-interface carve-out gives DEX front-ends a no-action lane",
-      "slug": "sec-user-interface-no-action-dex-front-ends",
-      "tldr": "SEC staff said it will not object to 'Covered User Interface Providers' offering software that lets users submit crypto-asset-security trades without broker-dealer registration.",
-      "why_it_matters": "Why it matters: It's the clearest signal yet that interface-only DeFi front-ends can operate onshore — but the conditions attached will define how far that lane really runs.",
-      "the_details": [
-        "Statement issued April 13, 2026 sets conditions on custody, order routing and disclosure for the exception to apply.",
-        "Move follows the joint SEC-CFTC interpretive release from March 17 that supersedes the 2019 framework.",
-        "Law firms note the carve-out narrows enforcement risk for non-custodial UIs but leaves smart-contract issuers in scope."
-      ],
-      "source": "Sidley Austin",
-      "source_url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-clears-path-for-decentralized-crypto-asset-security-trading",
-      "category": "regulation",
       "impact": "high",
       "timestamp": "2026-04-28T10:00:00Z"
     },
     {
-      "id": "story-2026-04-28-16-004",
-      "headline": "Spot SOL ETF inflows collapse 92% from $419M November peak to just $34M in April",
-      "slug": "spot-sol-etf-inflows-collapse-92-percent",
-      "tldr": "Spot Solana ETF net inflows have fallen from $419M in November 2025 to $34M month-to-date in April as institutional appetite cools.",
-      "why_it_matters": "Why it matters: The ETF wrapper isn't a one-way bid — and SOL's collapse in flows undercuts the thesis that listed altcoin products would create durable institutional demand.",
+      "id": "story-2026-04-28-17-003",
+      "headline": "Atkins-led SEC pivots to 'innovation exemption' for tokenized securities, ends enforcement-first era",
+      "slug": "sec-atkins-innovation-exemption-tokenized",
+      "tldr": "SEC Chair Paul Atkins formally ended the agency's 'regulation by enforcement' stance and previewed a joint SEC-CFTC exemption for onchain tokenized securities trading.",
+      "why_it_matters": "Why it matters: A live innovation exemption would unlock compliant tokenized equities and treasuries on public chains, the single biggest TradFi-onramp catalyst of 2026.",
       "the_details": [
-        "SOL trades near $86.47 with a $49.8B market cap, down ~32% from its 2025 YTD high.",
-        "Bitcoin dominance is back at 58.1% and the altcoin season index sits at just 33–38/100.",
-        "Firedancer rollout and a sub-200ms Alpenglow finality upgrade haven't yet revived ETF demand."
+        "Atkins said joint SEC-CFTC guidance is being drafted to operationalize the March 17 68-page interpretive release with its five-category token taxonomy.",
+        "The exemption builds on the SEC's April 13 carve-out letting Covered User Interface Providers operate without broker-dealer registration.",
+        "FDIC issued a proposed rule for FDIC-supervised stablecoin issuers under the GENIUS Act, advancing the parallel stablecoin track."
       ],
-      "source": "Spoted Crypto",
-      "source_url": "https://www.spotedcrypto.com/solana-avax-l1-bottom-april-2026/",
-      "category": "markets",
-      "impact": "medium",
-      "timestamp": "2026-04-28T09:00:00Z"
+      "source": "CFTC / Norton Rose Fulbright",
+      "source_url": "https://www.cftc.gov/PressRoom/PressReleases/9198-26",
+      "category": "regulation",
+      "impact": "high",
+      "timestamp": "2026-04-28T12:00:00Z"
     },
     {
-      "id": "story-2026-04-28-16-005",
-      "headline": "TOKEN2049 Dubai pushed to 2027 as UAE security backdrop reroutes crypto's biggest stage",
-      "slug": "token2049-dubai-postponed-2027",
-      "tldr": "Organizers are postponing the Dubai edition of TOKEN2049 to 2027, citing heightened security risks across the UAE region.",
-      "why_it_matters": "Why it matters: With Iran-Israel tensions still freezing energy and travel risk, the conference circuit — a key liquidity event for deal-making — is being reshuffled around geopolitics.",
+      "id": "story-2026-04-28-17-004",
+      "headline": "Solana spot ETF inflows collapse 92% to $34M even as Alpenglow ships sub-200ms finality",
+      "slug": "solana-etf-inflows-collapse-firedancer",
+      "tldr": "SOL ETF flows fell from $419M in November 2025 to $34M in April 2026, a sharp institutional fade just as Alpenglow lands and Firedancer eyes 1M TPS.",
+      "why_it_matters": "Why it matters: Tech is shipping while capital is leaving — a classic narrative-vs-flow dislocation that historically resolves with violent re-rating in either direction once macro clears.",
       "the_details": [
-        "TOKEN2049 confirmed the move, pointing to elevated regional security risk in the UAE.",
-        "Singapore remains TOKEN2049's flagship event and is unaffected by the rescheduling.",
-        "Comes alongside Brent crude above $104 and a closed Strait of Hormuz weighing on risk assets."
+        "Alpenglow upgrade is live and pushed transaction finality below 200 ms, opening real-time DeFi and HFT-style MEV strategies on Solana.",
+        "Firedancer remains targeted to lift throughput from ~1,300 to 1M TPS by end of 2026.",
+        "Solana DeFi TVL sits near $6B with $15B in stablecoins, but spot ETF demand has cratered 92% in five months."
+      ],
+      "source": "CoinMarketCap CMC AI",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "altcoins",
+      "impact": "medium",
+      "timestamp": "2026-04-28T08:00:00Z"
+    },
+    {
+      "id": "story-2026-04-28-17-005",
+      "headline": "TOKEN2049 Dubai pushed to 2027 as organizers cite heightened UAE security risks",
+      "slug": "token2049-dubai-postponed-2027",
+      "tldr": "The flagship Middle East crypto conference is sliding a full year on regional security grounds, gutting the spring 2026 deal-flow calendar.",
+      "why_it_matters": "Why it matters: TOKEN2049 Dubai is the largest non-U.S. crypto deal venue; postponing it removes the main April-May fundraising window for MENA-focused funds and exchanges.",
+      "the_details": [
+        "Organizers cited heightened security risks tied to the Iran conflict and the closed Strait of Hormuz as the basis for the move.",
+        "Brent crude has surged back above $104/bbl as U.S.-Iran negotiations stalled, per Yahoo Finance.",
+        "Blockchain Capital is meanwhile raising $700M across two new funds, signaling deal flow is moving back to U.S. venues."
       ],
       "source": "The Block",
       "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
       "category": "adoption",
       "impact": "medium",
-      "timestamp": "2026-04-28T08:00:00Z"
+      "timestamp": "2026-04-28T06:00:00Z"
     }
   ]
 }
