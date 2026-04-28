@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-04-28T07:05:00Z",
+  "briefing_id": "briefing-2026-04-28-07",
+  "story_count": 5,
+  "model": "claude-opus-4-7",
+  "stories": [
+    {
+      "id": "story-2026-04-28-07-001",
+      "headline": "April crypto hacks hit $606M in 18 days — worst month since Bybit's Feb 2025 breach",
+      "slug": "april-2026-crypto-hacks-606m-worst-month-since-bybit",
+      "tldr": "Crypto protocols have lost $606M to hacks in just the first 18 days of April, the worst monthly tally since Bybit's February 2025 breach.",
+      "why_it_matters": "Why it matters: Attackers have pivoted from smart contracts to private keys and signing infrastructure, and DefiLlama's data shows incidents now hitting roughly every 2.9 days in 2026 — insurance, custody, and audit assumptions all need a rewrite.",
+      "the_details": [
+        "KelpDAO's rsETH bridge was drained for $292M on April 18; LayerZero and Kelp say evidence points to a state-backed actor, with North Korea's Lazarus Group as the lead suspect.",
+        "Drift Protocol on Solana lost $285M on April 1 via a long-running social engineering campaign that planted hidden pre-signed authorizations.",
+        "Together those two events account for roughly 95% of April's losses, with the remaining ~$30M spread across smaller DeFi exploits."
+      ],
+      "source": "crypto.news",
+      "source_url": "https://crypto.news/april-2026-worst-month-for-crypto-hacks/",
+      "category": "security",
+      "impact": "high",
+      "timestamp": "2026-04-28T06:45:00Z"
+    },
+    {
+      "id": "story-2026-04-28-07-002",
+      "headline": "DeFi exodus accelerates: Aave bleeds $8.4B and TVL drops $13B post-KelpDAO",
+      "slug": "defi-exodus-aave-8b-tvl-drop-kelpdao",
+      "tldr": "More than $8.4B in deposits left Aave in the 48 hours after the KelpDAO and Drift hacks, dragging total DeFi TVL down by over $13B.",
+      "why_it_matters": "Why it matters: The flow shock is a confidence event, not a yield one — depositors are de-risking restaking and bridge exposure faster than protocols can re-onboard them, which compresses borrow rates and hits LST issuers' fee runways.",
+      "the_details": [
+        "Aave's $8.4B outflow is the lender's largest 48-hour deposit drop on record outside of stablecoin depegs.",
+        "Liquid restaking tokens including rsETH and ezETH traded at sustained discounts to ETH as bridge confidence eroded.",
+        "Stablecoin reallocation to centralized venues spiked, with on-chain analysts flagging a parallel $5B USDT supply expansion as redeployment cushion."
+      ],
+      "source": "AInvest",
+      "source_url": "https://www.ainvest.com/news/april-606m-hack-surge-liquidity-flow-shock-2604/",
+      "category": "defi",
+      "impact": "high",
+      "timestamp": "2026-04-28T06:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-07-003",
+      "headline": "Four central banks set rates this week as crypto braces for synchronized macro pivot",
+      "slug": "four-central-banks-rates-crypto-week-ahead",
+      "tldr": "The Fed, BoJ, ECB and BoE all deliver policy decisions during the week of April 27, the first synchronized rate week of 2026.",
+      "why_it_matters": "Why it matters: A coordinated dovish read would unlock the dollar bid that's been capping bitcoin at $80K, while any hawkish surprise from the BoJ would tighten the yen carry trade that has quietly funded much of this cycle's risk-on flow.",
+      "the_details": [
+        "BTC and DXY are running in their most negatively-correlated stretch in nearly four years, per CoinDesk daybook data.",
+        "Robinhood and Galaxy Digital both report earnings the same week, giving the first read on retail crypto activity since Q1.",
+        "Bitcoin is on track for its best month in a year, helped by a $5B expansion in USDT supply over April."
+      ],
+      "source": "CoinDesk",
+      "source_url": "https://www.coindesk.com/markets/2026/04/27/global-interest-rates-robinhood-galaxy-earnings-crypto-week-ahead",
+      "category": "markets",
+      "impact": "high",
+      "timestamp": "2026-04-28T05:50:00Z"
+    },
+    {
+      "id": "story-2026-04-28-07-004",
+      "headline": "Solana Alpenglow goes live with sub-200ms finality, but spot SOL ETF inflows crater 92%",
+      "slug": "solana-alpenglow-live-sub-200ms-sol-etf-inflows-crater",
+      "tldr": "Solana's Alpenglow upgrade has cut transaction finality below 200ms in production, even as spot SOL ETF inflows collapsed 92% from November highs.",
+      "why_it_matters": "Why it matters: The tech is delivering on its roadmap, but the institutional demand thesis isn't keeping pace — issuers are now competing for a much smaller pool of dedicated SOL allocators than the November launch suggested.",
+      "the_details": [
+        "Spot SOL ETF inflows fell to $34M in April from $419M in November 2025, a 92% drop in five months.",
+        "Anza and Jump Crypto's Firedancer team independently converged on Falcon-based post-quantum signatures for SOL.",
+        "Agave 4.1 client is targeting Q3 2026 testnet and Q4 2026 mainnet for the next finality push."
+      ],
+      "source": "CoinMarketCap",
+      "source_url": "https://coinmarketcap.com/cmc-ai/solana/latest-updates/",
+      "category": "infrastructure",
+      "impact": "medium",
+      "timestamp": "2026-04-28T05:30:00Z"
+    },
+    {
+      "id": "story-2026-04-28-07-005",
+      "headline": "TOKEN2049 Dubai pushed to 2027 over heightened UAE security risks",
+      "slug": "token2049-dubai-pushed-to-2027-uae-security",
+      "tldr": "TOKEN2049's flagship Dubai event has been pushed from 2026 to April 21–22, 2027, with organizers citing heightened security risks across the UAE.",
+      "why_it_matters": "Why it matters: Dubai has been the de facto hub for sovereign-wealth and Gulf-family-office crypto capital — losing the on-the-ground convening window will reroute deal flow toward Singapore and Abu Dhabi events for the rest of the year.",
+      "the_details": [
+        "Organizers confirmed the move on The Block, citing the broader regional security environment rather than a venue-specific issue.",
+        "TOKEN2049 Singapore remains scheduled, keeping at least one major APAC convening anchor on the 2026 calendar.",
+        "Sponsorship contracts are being rolled forward, per organizers, with no refund window opened."
+      ],
+      "source": "The Block",
+      "source_url": "https://www.theblock.co/post/393543/token2049-dubai-moved-to-2027-amid-heightened-security-risks-in-uae",
+      "category": "adoption",
+      "impact": "medium",
+      "timestamp": "2026-04-28T05:00:00Z"
+    }
+  ]
+}
