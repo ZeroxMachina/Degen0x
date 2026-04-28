@@ -4,14 +4,7 @@ import { generateArticleSchema, generateFAQSchema, combineSchemas } from "@/lib/
 import StructuredData from "@/components/StructuredData";
 import BackToTop from "@/components/BackToTop";
 import AuthorAttribution, { getAuthorForSection } from "@/components/AuthorAttribution";
-import RelatedContent from '@/components/RelatedContent';
-import Diagram from '@/components/Diagram';
-import AutoTOC from '@/components/AutoTOC';
-import ReadingTime from '@/components/ReadingTime';
-import LastUpdated from '@/components/LastUpdated';
 
-
-import AuthoritySources from "@/components/AuthoritySources";
 
 // ─── SEO Metadata ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
@@ -254,17 +247,17 @@ const breadcrumbData = {
 
 export default function CrossChainInteroperabilityGuidePage() {
   return (
-    <div style={{ minHeight: "100vh", background: "#0d1117", color: "#e6edf3" }}>
+    <div style={{ minHeight: "100vh", background: "var(--background)", color: "var(--foreground-strong)" }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
       {/* eslint-disable-next-line react/no-unknown-property */}
       <style>{`
         .cross-chain-article a:focus-visible {
-          outline: 2px solid #6366f1;
+          outline: 2px solid var(--primary);
           outline-offset: 2px;
           border-radius: 4px;
         }
         .cross-chain-article button:focus-visible {
-          outline: 2px solid #6366f1;
+          outline: 2px solid var(--primary);
           outline-offset: 2px;
           border-radius: 4px;
         }
@@ -272,8 +265,8 @@ export default function CrossChainInteroperabilityGuidePage() {
           transition: background 0.2s, border-color 0.2s, transform 0.2s;
         }
         .cross-chain-article .related-link:hover {
-          background: #1c2333 !important;
-          border-color: #6366f1 !important;
+          background: var(--card-alt) !important;
+          border-color: var(--primary) !important;
           transform: translateY(-2px);
         }
         .cross-chain-article .table-scroll-hint {
@@ -285,7 +278,7 @@ export default function CrossChainInteroperabilityGuidePage() {
           top: 8px;
           right: 8px;
           font-size: 11px;
-          color: #6e7681;
+          color: var(--muted);
           pointer-events: none;
           opacity: 1;
           transition: opacity 0.3s;
@@ -301,10 +294,10 @@ export default function CrossChainInteroperabilityGuidePage() {
       <article className="cross-chain-article" style={{ maxWidth: 820, margin: "0 auto", padding: "40px 20px 80px" }}>
 
         {/* ── Breadcrumb ── */}
-        <nav aria-label="Breadcrumb" style={{ fontSize: 13, color: "#8b949e", marginBottom: 24 }}>
-          <a href="/" style={{ color: "#58a6ff", textDecoration: "none" }}>Home</a>
+        <nav aria-label="Breadcrumb" style={{ fontSize: 13, color: "var(--muted)", marginBottom: 24 }}>
+          <Link href="/" style={{ color: "var(--primary)", textDecoration: "none" }}>Home</Link>
           <span style={{ margin: "0 8px" }}>/</span>
-          <a href="/learn" style={{ color: "#58a6ff", textDecoration: "none" }}>Learn</a>
+          <Link href="/learn" style={{ color: "var(--primary)", textDecoration: "none" }}>Learn</Link>
           <span style={{ margin: "0 8px" }}>/</span>
           <span>Cross-chain Interoperability Guide 2026</span>
         </nav>
@@ -314,19 +307,19 @@ export default function CrossChainInteroperabilityGuidePage() {
           <div style={{ display: "flex", gap: 8, marginBottom: 14, flexWrap: "wrap" }}>
             <span style={{
               padding: "3px 10px", borderRadius: 6, fontSize: 12, fontWeight: 600,
-              background: "#6366f120", color: "#818cf8", border: "1px solid #6366f140",
+              background: "var(--accent-badge)/13", color: "var(--secondary)", border: "1px solid var(--accent-badge)/25",
             }}>
               Infrastructure
             </span>
             <span style={{
               padding: "3px 10px", borderRadius: 6, fontSize: 12, fontWeight: 600,
-              background: "#0369a120", color: "#38bdf8", border: "1px solid #0369a140",
+              background: "var(--primary)/13", color: "var(--primary)", border: "1px solid var(--primary)/25",
             }}>
               Intermediate
             </span>
             <span style={{
               padding: "3px 10px", borderRadius: 6, fontSize: 12, fontWeight: 600,
-              background: "#7c3aed20", color: "#a78bfa", border: "1px solid #7c3aed40",
+              background: "var(--secondary)/13", color: "var(--secondary)", border: "1px solid var(--secondary)/25",
             }}>
               Bridges
             </span>
@@ -336,80 +329,77 @@ export default function CrossChainInteroperabilityGuidePage() {
             fontWeight: 800,
             lineHeight: 1.2,
             marginBottom: 14,
-            background: "linear-gradient(135deg, #6366f1, #06b6d4)",
+            background: "linear-gradient(135deg, var(--primary), var(--secondary))",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
           }}>
             Cross-chain Interoperability Guide: LayerZero, Wormhole &amp; Beyond
           </h1>
-          <LastUpdated pathKey="/learn/cross-chain-interoperability-guide-2026" />
-          <ReadingTime />
-          <AutoTOC />
-          <p style={{ color: "#c9d1d9", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
+          <p style={{ color: "var(--foreground)", fontSize: 17, lineHeight: 1.7, marginBottom: 10 }}>
             The multi-chain world created a fragmentation problem: liquidity scattered across Ethereum, Solana, Arbitrum,
             and dozens of other chains. Cross-chain messaging protocols solve this by enabling communication and asset transfers
             between blockchains. LayerZero dominates with $100B+ in cumulative volume across 165+ chains, while Wormhole, Chainlink CCIP,
             Axelar, Hyperlane, and Across each offer unique approaches to interoperability. This guide explains how these protocols work,
             compares their security models, and explores real-world applications from omnichain tokens to chain abstraction.
           </p>
-          <div style={{ fontSize: 13, color: "#8b949e" }}>Updated March 2026 · 12 min read</div>
+          <div style={{ fontSize: 13, color: "var(--muted)" }}>Updated March 2026 · 12 min read</div>
         </header>
 
         {/* ── Table of Contents ── */}
         <nav aria-label="Table of Contents" style={{
-          background: "#161b22", border: "1px solid #30363d", borderRadius: 12,
+          background: "var(--card)", border: "1px solid var(--border)", borderRadius: 12,
           padding: 20, marginBottom: 40,
         }}>
-          <h2 style={{ fontSize: 14, fontWeight: 700, marginBottom: 12, color: "#58a6ff" }}>
+          <h2 style={{ fontSize: 14, fontWeight: 700, marginBottom: 12, color: "var(--primary)" }}>
             Table of Contents
           </h2>
-          <ol style={{ paddingLeft: 20, color: "#8b949e", fontSize: 14, lineHeight: 2.1, margin: 0 }}>
-            <li><a href="#what-is" style={{ color: "#58a6ff", textDecoration: "none" }}>What Is Cross-chain Interoperability?</a></li>
-            <li><a href="#why-matters" style={{ color: "#58a6ff", textDecoration: "none" }}>Why Cross-chain Messaging Matters in 2026</a></li>
-            <li><a href="#how-it-works" style={{ color: "#58a6ff", textDecoration: "none" }}>How Cross-chain Messaging Works</a></li>
-            <li><a href="#protocols" style={{ color: "#58a6ff", textDecoration: "none" }}>Top Cross-chain Protocols Compared</a></li>
-            <li><a href="#verification" style={{ color: "#58a6ff", textDecoration: "none" }}>Security Models &amp; Trust Assumptions</a></li>
-            <li><a href="#use-cases" style={{ color: "#58a6ff", textDecoration: "none" }}>Real-world Use Cases</a></li>
-            <li><a href="#risks" style={{ color: "#58a6ff", textDecoration: "none" }}>Risks &amp; Challenges</a></li>
-            <li><a href="#future" style={{ color: "#58a6ff", textDecoration: "none" }}>The Future of Interoperability</a></li>
-            <li><a href="#faq" style={{ color: "#58a6ff", textDecoration: "none" }}>FAQ</a></li>
+          <ol style={{ paddingLeft: 20, color: "var(--muted)", fontSize: 14, lineHeight: 2.1, margin: 0 }}>
+            <li><a href="#what-is" style={{ color: "var(--primary)", textDecoration: "none" }}>What Is Cross-chain Interoperability?</a></li>
+            <li><a href="#why-matters" style={{ color: "var(--primary)", textDecoration: "none" }}>Why Cross-chain Messaging Matters in 2026</a></li>
+            <li><a href="#how-it-works" style={{ color: "var(--primary)", textDecoration: "none" }}>How Cross-chain Messaging Works</a></li>
+            <li><a href="#protocols" style={{ color: "var(--primary)", textDecoration: "none" }}>Top Cross-chain Protocols Compared</a></li>
+            <li><a href="#verification" style={{ color: "var(--primary)", textDecoration: "none" }}>Security Models &amp; Trust Assumptions</a></li>
+            <li><a href="#use-cases" style={{ color: "var(--primary)", textDecoration: "none" }}>Real-world Use Cases</a></li>
+            <li><a href="#risks" style={{ color: "var(--primary)", textDecoration: "none" }}>Risks &amp; Challenges</a></li>
+            <li><a href="#future" style={{ color: "var(--primary)", textDecoration: "none" }}>The Future of Interoperability</a></li>
+            <li><a href="#faq" style={{ color: "var(--primary)", textDecoration: "none" }}>FAQ</a></li>
           </ol>
         </nav>
 
         {/* ── Section 1: What Is Cross-chain Interoperability ── */}
         <section id="what-is" style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "var(--foreground-strong)" }}>
             1. What Is Cross-chain Interoperability?
           </h2>
-          <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
-            <strong style={{ color: "#e6edf3" }}>Cross-chain interoperability</strong> is the ability for separate blockchains
+          <p style={{ color: "var(--foreground)", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+            <strong style={{ color: "var(--foreground-strong)" }}>Cross-chain interoperability</strong> is the ability for separate blockchains
             to communicate, transfer assets, and coordinate transactions across their networks. It solves a critical problem in crypto:
             blockchain fragmentation. Ethereum, Solana, Arbitrum, and dozens of other chains operate as isolated islands. Users, liquidity,
             and applications are scattered. Cross-chain protocols bridge these islands.
           </p>
         {/* editorial-voice */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
+        <div style={{ background: 'var(--card-alt)', border: '1px solid var(--border-alt)', borderRadius: 10, padding: '20px 24px', marginTop: 32, marginBottom: 32 }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 10 }}>
             <span style={{ fontSize: 18 }}>💡</span>
-            <strong style={{ color: '#a78bfa', fontSize: 15 }}>Why This Matters</strong>
+            <strong style={{ color: 'var(--secondary)', fontSize: 15 }}>Why This Matters</strong>
           </div>
-          <p style={{ fontSize: 14, color: '#c9d1d9', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
+          <p style={{ fontSize: 14, color: 'var(--foreground)', lineHeight: 1.7, margin: 0, fontStyle: 'italic' }}>
             Understanding this concept is a prerequisite for making informed decisions in DeFi. Most losses in crypto come from misunderstanding the fundamentals.
           </p>
         </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 12, marginBottom: 20 }}>
-            <div style={{ background: "#161b22", border: "1px solid #6366f130", borderRadius: 12, padding: 18 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#6366f1", marginBottom: 8 }}>Single-chain</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
+            <div style={{ background: "var(--card)", border: "1px solid var(--accent-badge)/19", borderRadius: 12, padding: 18 }}>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "var(--accent-badge)", marginBottom: 8 }}>Single-chain</h3>
+              <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
                 Deploy app on Ethereum → Users locked on Ethereum → Liquidity isolated.{" "}
-                <strong style={{ color: "#e6edf3" }}>Limited market access.</strong>
+                <strong style={{ color: "var(--foreground-strong)" }}>Limited market access.</strong>
               </p>
             </div>
-            <div style={{ background: "#161b22", border: "1px solid #22c55e30", borderRadius: 12, padding: 18 }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#22c55e", marginBottom: 8 }}>Multi-chain with Interoperability</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
+            <div style={{ background: "var(--card)", border: "1px solid var(--color-success)/19", borderRadius: 12, padding: 18 }}>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "var(--color-success)", marginBottom: 8 }}>Multi-chain with Interoperability</h3>
+              <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
                 Deploy app on Ethereum + Arbitrum + Solana → Users can interact across chains → Unified liquidity.{" "}
-                <strong style={{ color: "#e6edf3" }}>Global market access.</strong>
+                <strong style={{ color: "var(--foreground-strong)" }}>Global market access.</strong>
               </p>
             </div>
           </div>
@@ -423,8 +413,8 @@ export default function CrossChainInteroperabilityGuidePage() {
           section="learn"
         />
 
-          <div style={{ background: "#161b2280", border: "1px solid #6366f140", borderRadius: 12, padding: 16 }}>
-            <p style={{ color: "#818cf8", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
+          <div style={{ background: "var(--card-alt)", border: "1px solid var(--accent-badge)/25", borderRadius: 12, padding: 16 }}>
+            <p style={{ color: "var(--secondary)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
               💡 <strong>Core insight:</strong> Cross-chain protocols eliminate the need to choose one blockchain.
               Instead, protocols span multiple chains. A token lives everywhere. A lending pool exists on all chains simultaneously.
               Users can send funds from Ethereum to Arbitrum in one transaction.
@@ -434,26 +424,26 @@ export default function CrossChainInteroperabilityGuidePage() {
 
         {/* ── Section 2: Why It Matters in 2026 ── */}
         <section id="why-matters" style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "var(--foreground-strong)" }}>
             2. Why Cross-chain Messaging Matters in 2026
           </h2>
-          <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+          <p style={{ color: "var(--foreground)", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             The multi-chain future is here. Ethereum dominates DeFi by TVL, but Solana owns user base and speed,
             Arbitrum leads L2 adoption, and Polygon connects enterprises. Users want to leverage all these ecosystems
             without managing ten different wallets and liquidity pools.
           </p>
-          <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 16 }}>
-            <h3 style={{ fontSize: 14, fontWeight: 700, color: "#58a6ff", marginBottom: 10 }}>Three Critical Problems Solved</h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 12 }}>
-              <strong style={{ color: "#e6edf3" }}>Liquidity Fragmentation:</strong> The same token (USDC) exists on 15+ chains with separate supply.
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 12, padding: 20, marginBottom: 16 }}>
+            <h3 style={{ fontSize: 14, fontWeight: 700, color: "var(--primary)", marginBottom: 10 }}>Three Critical Problems Solved</h3>
+            <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, marginBottom: 12 }}>
+              <strong style={{ color: "var(--foreground-strong)" }}>Liquidity Fragmentation:</strong> The same token (USDC) exists on 15+ chains with separate supply.
               Cross-chain messaging enables a single unified liquidity pool accessible everywhere.
             </p>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 12 }}>
-              <strong style={{ color: "#e6edf3" }}>User Experience:</strong> Without interoperability, users must manually bridge assets between chains, manage different apps on each chain,
+            <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, marginBottom: 12 }}>
+              <strong style={{ color: "var(--foreground-strong)" }}>User Experience:</strong> Without interoperability, users must manually bridge assets between chains, manage different apps on each chain,
               and accept longer times and more failures. With interop, one transaction spans chains.
             </p>
-            <p style={{ color: "#8b949e", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
-              <strong style={{ color: "#e6edf3" }}>Application Limitations:</strong> Developers had to choose one chain or duplicate their code on many.
+            <p style={{ color: "var(--muted)", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
+              <strong style={{ color: "var(--foreground-strong)" }}>Application Limitations:</strong> Developers had to choose one chain or duplicate their code on many.
               Cross-chain protocols enable true omnichain applications that live everywhere simultaneously.
             </p>
           </div>
@@ -462,10 +452,10 @@ export default function CrossChainInteroperabilityGuidePage() {
 
         {/* ── Section 3: How It Works ── */}
         <section id="how-it-works" style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "var(--foreground-strong)" }}>
             3. How Cross-chain Messaging Works
           </h2>
-          <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+          <p style={{ color: "var(--foreground)", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             The fundamental challenge: how can Chain A trust messages from Chain B when they don't share validators?
             Each cross-chain protocol solves this differently. Here are the major verification models:
           </p>
@@ -474,23 +464,23 @@ export default function CrossChainInteroperabilityGuidePage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 14, marginBottom: 20 }}>
             {verificationModels.map((vm) => (
               <div key={vm.model} style={{
-                background: "#161b22", border: `1px solid ${vm.color}30`,
+                background: "var(--card)", border: `1px solid ${vm.color}30`,
                 borderRadius: 12, padding: 18,
               }}>
                 <h3 style={{ fontSize: 14, fontWeight: 700, color: vm.color, marginBottom: 8 }}>{vm.model} Verification</h3>
-                <p style={{ color: "#c9d1d9", fontSize: 13, lineHeight: 1.7, marginBottom: 10 }}>
+                <p style={{ color: "var(--foreground)", fontSize: 13, lineHeight: 1.7, marginBottom: 10 }}>
                   {vm.description}
                 </p>
-                <div style={{ fontSize: 11, color: "#8b949e", lineHeight: 1.8 }}>
-                  <div><strong style={{ color: "#e6edf3" }}>Example:</strong> {vm.example}</div>
-                  <div><strong style={{ color: "#e6edf3" }}>Tradeoff:</strong> {vm.tradeoff}</div>
+                <div style={{ fontSize: 11, color: "var(--muted)", lineHeight: 1.8 }}>
+                  <div><strong style={{ color: "var(--foreground-strong)" }}>Example:</strong> {vm.example}</div>
+                  <div><strong style={{ color: "var(--foreground-strong)" }}>Tradeoff:</strong> {vm.tradeoff}</div>
                 </div>
               </div>
             ))}
           </div>
 
-          <div style={{ background: "#161b2280", border: "1px solid #d2992240", borderRadius: 12, padding: 16 }}>
-            <p style={{ color: "#d29922", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
+          <div style={{ background: "var(--card-alt)", border: "1px solid var(--color-warning, #d29922)/25", borderRadius: 12, padding: 16 }}>
+            <p style={{ color: "var(--color-warning, #d29922)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
               🔐 <strong>Security Principle:</strong> Cross-chain security is only as strong as the weakest link.
               If the verification model relies on Guardians/validators, a compromise of enough validators breaks the protocol.
               This is why many 2026 protocols are migrating to ZK proofs.
@@ -500,30 +490,30 @@ export default function CrossChainInteroperabilityGuidePage() {
 
         {/* ── Section 4: Protocols Compared ── */}
         <section id="protocols" style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "var(--foreground-strong)" }}>
             4. Top Cross-chain Protocols Compared
           </h2>
-          <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+          <p style={{ color: "var(--foreground)", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Six protocols dominate the cross-chain landscape in 2026:
           </p>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16, marginBottom: 24 }}>
             {protocols.map((p) => (
               <div key={p.name} style={{
-                background: "#161b22", border: `1px solid ${p.color}30`,
+                background: "var(--card)", border: `1px solid ${p.color}30`,
                 borderRadius: 12, padding: 20,
               }}>
                 <div style={{ marginBottom: 12 }}>
                   <h3 style={{ fontSize: 17, fontWeight: 700, color: p.color, marginBottom: 2 }}>{p.name}</h3>
-                  <span style={{ fontSize: 11, color: "#8b949e" }}>{p.subtitle}</span>
+                  <span style={{ fontSize: 11, color: "var(--muted)" }}>{p.subtitle}</span>
                 </div>
-                <p style={{ color: "#c9d1d9", fontSize: 13, lineHeight: 1.7, marginBottom: 12 }}>
+                <p style={{ color: "var(--foreground)", fontSize: 13, lineHeight: 1.7, marginBottom: 12 }}>
                   {p.description}
                 </p>
-                <div style={{ fontSize: 12, color: "#8b949e", lineHeight: 1.9 }}>
-                  <div>📊 Volume: <strong style={{ color: "#e6edf3" }}>{p.volume}</strong></div>
-                  <div>🔗 Chains: <strong style={{ color: "#e6edf3" }}>{p.chains}</strong></div>
-                  <div>💰 Status: <span style={{ color: "#c9d1d9" }}>{p.tvl}</span></div>
+                <div style={{ fontSize: 12, color: "var(--muted)", lineHeight: 1.9 }}>
+                  <div>📊 Volume: <strong style={{ color: "var(--foreground-strong)" }}>{p.volume}</strong></div>
+                  <div>🔗 Chains: <strong style={{ color: "var(--foreground-strong)" }}>{p.chains}</strong></div>
+                  <div>💰 Status: <span style={{ color: "var(--foreground)" }}>{p.tvl}</span></div>
                 </div>
               </div>
             ))}
@@ -533,12 +523,12 @@ export default function CrossChainInteroperabilityGuidePage() {
           <div role="region" aria-label="Cross-chain protocol comparison table" className="table-scroll-hint" style={{ overflowX: "auto", WebkitOverflowScrolling: "touch" as const }}>
             <table style={{
               width: "100%", minWidth: 700, borderCollapse: "collapse", fontSize: 12,
-              background: "#161b22", borderRadius: 12, overflow: "hidden",
+              background: "var(--card)", borderRadius: 12, overflow: "hidden",
             }}>
               <thead>
-                <tr style={{ background: "#21262d" }}>
+                <tr style={{ background: "var(--card)" }}>
                   {["Feature", "LayerZero", "Wormhole", "CCIP", "Axelar", "Hyperlane", "Across"].map((h) => (
-                    <th key={h} style={{ padding: "10px 12px", textAlign: "left", color: "#8b949e", fontWeight: 600, fontSize: 11 }}>{h}</th>
+                    <th key={h} style={{ padding: "10px 12px", textAlign: "left", color: "var(--muted)", fontWeight: 600, fontSize: 11 }}>{h}</th>
                   ))}
                 </tr>
               </thead>
@@ -551,14 +541,14 @@ export default function CrossChainInteroperabilityGuidePage() {
                   { feature: "Finality", lz: "Medium", wh: "Medium", ccip: "High", ax: "Medium", hl: "Medium", ac: "Fast" },
                   { feature: "Best for", lz: "Omnichain", wh: "Developers", ccip: "Enterprise", ax: "New chains", hl: "Flexibility", ac: "Speed" },
                 ].map((row, i) => (
-                  <tr key={row.feature} style={{ borderTop: "1px solid #30363d", background: i % 2 === 0 ? "transparent" : "#0d111780" }}>
-                    <td style={{ padding: "10px 12px", color: "#58a6ff", fontWeight: 600, fontSize: 11 }}>{row.feature}</td>
-                    <td style={{ padding: "10px 12px", color: "#c9d1d9", fontSize: 11 }}>{(row as any).lz}</td>
-                    <td style={{ padding: "10px 12px", color: "#c9d1d9", fontSize: 11 }}>{(row as any).wh}</td>
-                    <td style={{ padding: "10px 12px", color: "#c9d1d9", fontSize: 11 }}>{(row as any).ccip}</td>
-                    <td style={{ padding: "10px 12px", color: "#c9d1d9", fontSize: 11 }}>{(row as any).ax}</td>
-                    <td style={{ padding: "10px 12px", color: "#c9d1d9", fontSize: 11 }}>{(row as any).hl}</td>
-                    <td style={{ padding: "10px 12px", color: "#c9d1d9", fontSize: 11 }}>{(row as any).ac}</td>
+                  <tr key={row.feature} style={{ borderTop: "1px solid var(--border)", background: i % 2 === 0 ? "transparent" : "var(--card-alt)" }}>
+                    <td style={{ padding: "10px 12px", color: "var(--primary)", fontWeight: 600, fontSize: 11 }}>{row.feature}</td>
+                    <td style={{ padding: "10px 12px", color: "var(--foreground)", fontSize: 11 }}>{(row as any).lz}</td>
+                    <td style={{ padding: "10px 12px", color: "var(--foreground)", fontSize: 11 }}>{(row as any).wh}</td>
+                    <td style={{ padding: "10px 12px", color: "var(--foreground)", fontSize: 11 }}>{(row as any).ccip}</td>
+                    <td style={{ padding: "10px 12px", color: "var(--foreground)", fontSize: 11 }}>{(row as any).ax}</td>
+                    <td style={{ padding: "10px 12px", color: "var(--foreground)", fontSize: 11 }}>{(row as any).hl}</td>
+                    <td style={{ padding: "10px 12px", color: "var(--foreground)", fontSize: 11 }}>{(row as any).ac}</td>
                   </tr>
                 ))}
               </tbody>
@@ -568,66 +558,66 @@ export default function CrossChainInteroperabilityGuidePage() {
 
         {/* ── Section 5: Security Models ── */}
         <section id="verification" style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "var(--foreground-strong)" }}>
             5. Security Models: Trust Assumptions &amp; Trade-offs
           </h2>
-          <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+          <p style={{ color: "var(--foreground)", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Each protocol makes different trust assumptions. Understanding these assumptions is critical for evaluating
             security and risk tolerance.
           </p>
 
-          <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 16 }}>
-            <h3 style={{ fontSize: 14, fontWeight: 700, color: "#58a6ff", marginBottom: 12 }}>LayerZero: Configurable Security</h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 10 }}>
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 12, padding: 20, marginBottom: 16 }}>
+            <h3 style={{ fontSize: 14, fontWeight: 700, color: "var(--primary)", marginBottom: 12 }}>LayerZero: Configurable Security</h3>
+            <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, marginBottom: 10 }}>
               LayerZero lets developers choose their security providers: a Relayer (transport) and an Oracle (attestation).
               The developers can run their own Relayer, use LayerZero Labs' default, or hire a third party. This flexibility
               means LayerZero protocol itself isn't a security bottleneck — the application is.
             </p>
-            <p style={{ color: "#8b949e", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
-              <strong style={{ color: "#e6edf3" }}>Trade-off:</strong> High flexibility but places security responsibility on developers.
+            <p style={{ color: "var(--muted)", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
+              <strong style={{ color: "var(--foreground-strong)" }}>Trade-off:</strong> High flexibility but places security responsibility on developers.
               A misconfigured LayerZero integration is less secure than using a battle-tested standard like CCIP.
             </p>
           </div>
 
-          <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20, marginBottom: 16 }}>
-            <h3 style={{ fontSize: 14, fontWeight: 700, color: "#58a6ff", marginBottom: 12 }}>Wormhole: Transitioning from Guardians to ZK</h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 10 }}>
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 12, padding: 20, marginBottom: 16 }}>
+            <h3 style={{ fontSize: 14, fontWeight: 700, color: "var(--primary)", marginBottom: 12 }}>Wormhole: Transitioning from Guardians to ZK</h3>
+            <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, marginBottom: 10 }}>
               Originally, Wormhole relied on 19 Guardian validators who needed to unanimously sign off on messages.
               A 2022 hack compromised one validator and drained $325M. In 2026, Wormhole is migrating to ZK proofs
               to replace the Guardian model, reducing centralization and validator compromise risk.
             </p>
-            <p style={{ color: "#8b949e", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
-              <strong style={{ color: "#e6edf3" }}>Trade-off:</strong> ZK proofs improve decentralization but add computational complexity.
+            <p style={{ color: "var(--muted)", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
+              <strong style={{ color: "var(--foreground-strong)" }}>Trade-off:</strong> ZK proofs improve decentralization but add computational complexity.
               Transition period may see both models in operation.
             </p>
           </div>
 
-          <div style={{ background: "#161b22", border: "1px solid #30363d", borderRadius: 12, padding: 20 }}>
-            <h3 style={{ fontSize: 14, fontWeight: 700, color: "#58a6ff", marginBottom: 12 }}>Hyperlane: Permissionless Validators</h3>
-            <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, marginBottom: 10 }}>
+          <div style={{ background: "var(--card)", border: "1px solid var(--border)", borderRadius: 12, padding: 20 }}>
+            <h3 style={{ fontSize: 14, fontWeight: 700, color: "var(--primary)", marginBottom: 12 }}>Hyperlane: Permissionless Validators</h3>
+            <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, marginBottom: 10 }}>
               Hyperlane allows <strong>any entity</strong> to run a validator. A chain can be its own validator,
               or a user can run their own private validator set. This is the most decentralized approach but places
               responsibility on each protocol to choose trustworthy validators.
             </p>
-            <p style={{ color: "#8b949e", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
-              <strong style={{ color: "#e6edf3" }}>Trade-off:</strong> Maximum flexibility and decentralization but requires developers to understand validator selection.
+            <p style={{ color: "var(--muted)", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
+              <strong style={{ color: "var(--foreground-strong)" }}>Trade-off:</strong> Maximum flexibility and decentralization but requires developers to understand validator selection.
             </p>
           </div>
         </section>
 
         {/* ── Section 6: Use Cases ── */}
         <section id="use-cases" style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "var(--foreground-strong)" }}>
             6. Real-world Use Cases
           </h2>
-          <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+          <p style={{ color: "var(--foreground)", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Cross-chain messaging enables applications that were impossible in a siloed blockchain world.
           </p>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: 14, marginBottom: 20 }}>
             {useCases.map((uc) => (
               <div key={uc.name} style={{
-                background: "#161b22", border: `1px solid ${uc.color}30`,
+                background: "var(--card)", border: `1px solid ${uc.color}30`,
                 borderRadius: 12, padding: 18,
               }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 8 }}>
@@ -639,15 +629,15 @@ export default function CrossChainInteroperabilityGuidePage() {
                     {uc.category}
                   </span>
                 </div>
-                <p style={{ color: "#c9d1d9", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
+                <p style={{ color: "var(--foreground)", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
                   {uc.description}
                 </p>
               </div>
             ))}
           </div>
 
-          <div style={{ background: "#161b2280", border: "1px solid #6366f140", borderRadius: 12, padding: 16 }}>
-            <p style={{ color: "#818cf8", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
+          <div style={{ background: "var(--card-alt)", border: "1px solid var(--accent-badge)/25", borderRadius: 12, padding: 16 }}>
+            <p style={{ color: "var(--secondary)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
               🌐 <strong>The Pattern:</strong> Any application that needs liquidity, users, or security across multiple chains
               benefits from cross-chain messaging. In 2026, the trend is "chain abstraction" — hiding chains entirely from users.
             </p>
@@ -657,10 +647,10 @@ export default function CrossChainInteroperabilityGuidePage() {
 
         {/* ── Section 7: Risks & Challenges ── */}
         <section id="risks" style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "var(--foreground-strong)" }}>
             7. Risks &amp; Challenges
           </h2>
-          <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+          <p style={{ color: "var(--foreground)", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             Cross-chain protocols have a history of high-profile breaches. Understanding these risks is essential.
           </p>
 
@@ -673,16 +663,16 @@ export default function CrossChainInteroperabilityGuidePage() {
             { title: "Regulatory Uncertainty", body: "Bridges move value across jurisdictions. Regulators haven't settled how to classify cross-chain protocols. Future regulation could restrict certain models or require licensing, potentially breaking existing bridges." },
           ].map((risk) => (
             <div key={risk.title} style={{
-              background: "#161b22", border: "1px solid #f8514920",
+              background: "var(--card)", border: "1px solid var(--color-danger)/13",
               borderRadius: 12, padding: 16, marginBottom: 10,
             }}>
-              <h3 style={{ fontSize: 14, fontWeight: 700, color: "#f85149", marginBottom: 6 }}>⚠️ {risk.title}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{risk.body}</p>
+              <h3 style={{ fontSize: 14, fontWeight: 700, color: "var(--color-danger)", marginBottom: 6 }}>⚠️ {risk.title}</h3>
+              <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{risk.body}</p>
             </div>
           ))}
 
-          <div style={{ background: "#161b2280", border: "1px solid #d2992240", borderRadius: 12, padding: 16, marginTop: 16 }}>
-            <p style={{ color: "#d29922", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
+          <div style={{ background: "var(--card-alt)", border: "1px solid var(--color-warning, #d29922)/25", borderRadius: 12, padding: 16, marginTop: 16 }}>
+            <p style={{ color: "var(--color-warning, #d29922)", fontSize: 13, lineHeight: 1.7, margin: 0 }}>
               ⚠️ Cross-chain bridging carries significant risk including loss of funds due to bridge hacks, smart contract bugs,
               or verification failures. Never bridge funds you cannot afford to lose. This guide is for informational purposes only
               and is not investment or financial advice.
@@ -692,10 +682,10 @@ export default function CrossChainInteroperabilityGuidePage() {
 
         {/* ── Section 8: The Future ── */}
         <section id="future" style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 16, color: "var(--foreground-strong)" }}>
             8. The Future of Interoperability: 2026 and Beyond
           </h2>
-          <p style={{ color: "#c9d1d9", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
+          <p style={{ color: "var(--foreground)", fontSize: 15, lineHeight: 1.8, marginBottom: 16 }}>
             The cross-chain landscape is evolving rapidly toward chain abstraction and improved security models.
           </p>
 
@@ -727,18 +717,18 @@ export default function CrossChainInteroperabilityGuidePage() {
             },
           ].map((item) => (
             <div key={item.title} style={{
-              background: "#161b22", border: `1px solid ${item.color}30`,
+              background: "var(--card)", border: `1px solid ${item.color}30`,
               borderRadius: 12, padding: 18, marginBottom: 12,
             }}>
               <h3 style={{ fontSize: 15, fontWeight: 700, color: item.color, marginBottom: 8 }}>{item.title}</h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{item.body}</p>
+              <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>{item.body}</p>
             </div>
           ))}
         </section>
 
         {/* ── FAQ ── */}
         <section id="faq" style={{ marginBottom: 40 }}>
-          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 20, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 24, fontWeight: 700, marginBottom: 20, color: "var(--foreground-strong)" }}>
             Frequently Asked Questions
           </h2>
           {[
@@ -768,13 +758,13 @@ export default function CrossChainInteroperabilityGuidePage() {
             },
           ].map((item, i) => (
             <div key={i} style={{
-              background: "#161b22", border: "1px solid #30363d",
+              background: "var(--card)", border: "1px solid var(--border)",
               borderRadius: 12, padding: 20, marginBottom: 12,
             }}>
-              <h3 style={{ fontSize: 15, fontWeight: 700, color: "#e6edf3", marginBottom: 8 }}>
+              <h3 style={{ fontSize: 15, fontWeight: 700, color: "var(--foreground-strong)", marginBottom: 8 }}>
                 {item.q}
               </h3>
-              <p style={{ color: "#c9d1d9", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
+              <p style={{ color: "var(--foreground)", fontSize: 14, lineHeight: 1.7, margin: 0 }}>
                 {item.a}
               </p>
             </div>
@@ -783,7 +773,7 @@ export default function CrossChainInteroperabilityGuidePage() {
 
         {/* ── Related Articles ── */}
         <section>
-          <h2 style={{ fontSize: 20, fontWeight: 700, marginBottom: 16, color: "#e6edf3" }}>
+          <h2 style={{ fontSize: 20, fontWeight: 700, marginBottom: 16, color: "var(--foreground-strong)" }}>
             Related Articles
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 12 }}>
@@ -794,14 +784,14 @@ export default function CrossChainInteroperabilityGuidePage() {
               { href: "/learn/zero-knowledge-proofs", label: "Zero-Knowledge Proofs" },
               { href: "/tools/bridge-aggregator", label: "Bridge Aggregator Tool" },
             ].map((link) => (
-              <a key={link.href} href={link.href} className="related-link" style={{
+              <Link key={link.href} href={link.href} className="related-link" style={{
                 display: "block", padding: "14px 16px",
-                background: "#161b22", border: "1px solid #30363d",
-                borderRadius: 10, color: "#58a6ff", fontSize: 14,
+                background: "var(--card)", border: "1px solid var(--border)",
+                borderRadius: 10, color: "var(--primary)", fontSize: 14,
                 textDecoration: "none", fontWeight: 500,
               }}>
                 {link.label} →
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -809,58 +799,44 @@ export default function CrossChainInteroperabilityGuidePage() {
       
         
         {/* related-guides */}
-        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: '#161b22', border: '1px solid #30363d', borderRadius: 12 }}>
-          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: '#e6edf3' }}>Continue Reading</h3>
+        <nav aria-label="Related guides" style={{ marginTop: 48, padding: 24, background: 'var(--card)', border: '1px solid var(--border)', borderRadius: 12 }}>
+          <h3 style={{ fontSize: 18, fontWeight: 700, marginBottom: 16, color: 'var(--foreground-strong)' }}>Continue Reading</h3>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'grid', gap: 12 }}>
-            <li><a href="/compare/uniswap-vs-sushiswap-vs-curve" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Uniswap Vs Sushiswap Vs Curve</a></li>
-            <li><a href="/courses/solidity-smart-contract-course" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Solidity Smart Contract Course</a></li>
-            <li><a href="/investing/best-defi-tokens-to-buy-2026" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Defi Tokens To Buy 2026</a></li>
-            <li><a href="/investing/best-perpetual-dex-tokens" style={{ color: '#58a6ff', textDecoration: 'none', fontSize: 15 }}>Best Perpetual Dex Tokens</a></li>
+            <li><Link href="/compare/uniswap-vs-sushiswap-vs-curve" style={{ color: 'var(--primary)', textDecoration: 'none', fontSize: 15 }}>Uniswap Vs Sushiswap Vs Curve</Link></li>
+            <li><Link href="/courses/solidity-smart-contract-course" style={{ color: 'var(--primary)', textDecoration: 'none', fontSize: 15 }}>Solidity Smart Contract Course</Link></li>
+            <li><Link href="/investing/best-defi-tokens-to-buy-2026" style={{ color: 'var(--primary)', textDecoration: 'none', fontSize: 15 }}>Best Defi Tokens To Buy 2026</Link></li>
+            <li><Link href="/investing/best-perpetual-dex-tokens" style={{ color: 'var(--primary)', textDecoration: 'none', fontSize: 15 }}>Best Perpetual Dex Tokens</Link></li>
           </ul>
         </nav>
 
         {/* section-footer */}
-        <div style={{ background: '#1a1625', border: '1px solid #2d2254', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
-          <p style={{ fontSize: 13, color: '#8b949e', lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: '#a78bfa' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
-            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: '#a78bfa' }}>our team</a>.
+        <div style={{ background: 'var(--card-alt)', border: '1px solid var(--border-alt)', borderRadius: 8, padding: '16px 20px', marginTop: 40, marginBottom: 20 }}>
+          <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.7, margin: 0 }}>
+            <strong style={{ color: 'var(--secondary)' }}>Educational disclaimer:</strong> This guide is for informational purposes only and does not constitute financial advice.
+            Crypto involves significant risk — do your own research before making any decisions. Learn more about <a href="/about" style={{ color: 'var(--secondary)' }}>our team</a>.
           </p>
         </div>
       
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Article",
-              "headline": "Cross Chain Interoperability Guide 2026",
-              "author": { "@type": "Organization", "name": "degen0x" },
-              "publisher": { "@type": "Organization", "name": "degen0x", "url": "https://degen0x.com" },
-              "datePublished": "2026-04-01",
-              "dateModified": "2026-04-12",
-              "mainEntityOfPage": "https://degen0x.com/learn/cross-chain-interoperability-guide-2026"
-            })
-          }}
-        />
+
       </article>
 
       <BackToTop />
           <div style={{
         marginTop: "32px",
         padding: "24px",
-        backgroundColor: "#111827",
+        backgroundColor: "var(--card)",
         borderRadius: "12px",
-        border: "1px solid #374151"
+        border: "1px solid var(--border)"
       }}>
-        <h3 style={{ marginBottom: "16px", color: "#f3f4f6" }}>Explore More</h3>
+        <h3 style={{ marginBottom: "16px", color: "var(--foreground-strong)" }}>Explore More</h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "12px" }}>
           <Link href="/learn" style={{
             padding: "12px 16px",
-            backgroundColor: "#1f2937",
+            backgroundColor: "var(--card-alt)",
             borderRadius: "8px",
-            color: "#60a5fa",
+            color: "var(--primary)",
             textDecoration: "none",
-            border: "1px solid #374151",
+            border: "1px solid var(--border)",
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
@@ -869,11 +845,11 @@ export default function CrossChainInteroperabilityGuidePage() {
           </Link>
           <Link href="/tools" style={{
             padding: "12px 16px",
-            backgroundColor: "#1f2937",
+            backgroundColor: "var(--card-alt)",
             borderRadius: "8px",
-            color: "#60a5fa",
+            color: "var(--primary)",
             textDecoration: "none",
-            border: "1px solid #374151",
+            border: "1px solid var(--border)",
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
@@ -882,11 +858,11 @@ export default function CrossChainInteroperabilityGuidePage() {
           </Link>
           <Link href="/compare" style={{
             padding: "12px 16px",
-            backgroundColor: "#1f2937",
+            backgroundColor: "var(--card-alt)",
             borderRadius: "8px",
-            color: "#60a5fa",
+            color: "var(--primary)",
             textDecoration: "none",
-            border: "1px solid #374151",
+            border: "1px solid var(--border)",
             display: "block",
             textAlign: "center",
             transition: "all 0.2s"
@@ -895,10 +871,7 @@ export default function CrossChainInteroperabilityGuidePage() {
           </Link>
         </div>
       </div>
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context": "https://schema.org", "@type": "WebPage", "name": "Cross-chain Interoperability Guide 2026: LayerZero,", "description": "Complete guide to cross-chain messaging and interoperability in 2026. Understand LayerZero, Wormhole, Chainlink CCIP, Axelar, and Hyperlane. Compare", "url": "https://degen0x.com/learn/cross-chain-interoperability-guide-2026", "datePublished": "2026-04-13", "dateModified": "2026-04-13"}) }} />
-      <Diagram slug="bridging-flow" />
-      <RelatedContent category="learn" currentSlug="/learn/cross-chain-interoperability-guide-2026" />
-<AuthoritySources url="/learn/cross-chain-interoperability-guide-2026" />
+
 </div>
   );
 }
